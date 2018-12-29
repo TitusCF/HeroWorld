@@ -1,0 +1,24 @@
+Object spell_vitriol
+name vitriol
+name_pl vitriol
+face spell_praying.111
+level 5
+grace 15
+casting_time 10
+path_attuned 512
+other_arch vitriol
+dam 100
+dam_modifier 25
+duration 4
+duration_modifier 4
+maxgrace 6
+skill praying
+type 101
+subtype 5
+value 50
+attacktype 64
+no_drop 1
+invisible 1
+range 10
+food 20
+end

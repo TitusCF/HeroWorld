@@ -1,0 +1,69 @@
+treasureone pyro_book_low
+  arch spell_burning_hands
+    chance 8
+  more
+  arch spell_small_fireball
+    chance 8
+  more
+  arch spell_sm_lightning
+    chance 8
+  more
+  arch spell_firebolt
+    chance 4
+  more
+  arch spell_medium_fireball
+    chance 6
+  more
+  arch spell_faery_fire
+    chance 2
+  more
+  arch spell_large_lightning
+    chance 3
+  more
+  arch spell_rune_of_fire
+    chance 5
+  more
+  arch spell_large_fireball
+    chance 2
+end
+
+treasureone pyro_book_medium
+  arch spell_create_bomb
+    chance 3
+  more
+  arch spell_create_fire_wall
+    chance 3
+  more
+  arch spell_rune_of_shocking
+    chance 3
+  more
+  arch spell_rune_of_blasting
+    chance 2
+end
+
+treasureone pyro_book_high
+  arch spell_firetrap
+    chance 1
+  more
+  arch spell_build_fireball_wall
+    chance 1
+  more
+  arch spell_build_lightning_wall
+    chance 1
+end
+
+treasureone pyromancy_book
+  list pyro_book_low
+    chance 20
+    nrof 1
+  more
+  list pyro_book_medium
+    chance 30
+    magic 6
+    nrof 1
+  more
+  list pyro_book_high
+    chance 40
+    magic 11
+    nrof 1
+end

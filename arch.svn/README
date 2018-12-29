@@ -1,0 +1,53 @@
+This is a generic README file for the arch directory.
+You should also read the CHANGES for and Naming.doc file.
+
+ The color bitmap files use the XPM library (called xpm-3.4f on
+most ftp sites.  A later version may be out now.)
+
+ This library is needed in order to compile crossfire with the color
+pixmap support.
+
+ The pixmap files have the same name as the bitmap file with ".xpm"
+concatenated to the end.  If your system has short filename length
+limits, this may cause a problem.
+
+ I use 'pixmap' to edit the xpm files.  This should be available the
+same place the xpm library can be found.  It does require the xpm
+library.
+
+All of the XPM files have been colored.  However, only a small number
+have actually been done so properly - that is, by hand, and with the
+proper outlines.  Many people are working on fixing more of these up.
+
+ If you do start to work on colorizing the other directories, please
+let me know.  Otherwise, you may start working on something that someone
+else has already done.
+
+The file xpm.template in the dev directory is a XPM file that has all of
+the colors that are allowable for XPM files.  This is to limit the total
+number of colors used, in order not of overrun color spaces on systems.
+If you really need a color not in that file, please send mail to Mark
+Wedel (mwedel@pyramid.com), and it might be added to the list of
+acceptable colors.
+
+For a list of colors to use, look at the dev/xpm.template file.
+
+
+ Mark Wedel
+mwedel@pyramid.com
+----
+Some coloring/perspective hints/clarifications from David Sundqvist:
+
+Perspective in Crossfire is based on the XY coordinate system of possible
+player movements, with a slight tilting of the graphics to allow for
+greater detail and more interesting graphics, since walls have to be in
+that perspective to allow joining. X and Y in graphics should correspond
+to X and Y in the object. Z in the object is represented with 2 Y/X.
+Keeping perspective consistency is mainly important in fixed objects
+like buildings, walls and other background.
+
+Light should generally come from the right side, so the left side of
+buildings should be darker or shaded, as needed. 
+
+Wind is generally coming from the left side, so smoke or other things
+affected by wind should be travelling towards the right side.

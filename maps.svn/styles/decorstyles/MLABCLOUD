@@ -1,0 +1,249 @@
+arch map
+name rugged
+reset_timeout 7200
+difficulty 1
+width 6
+height 6
+enter_x 1
+enter_y 1
+msg
+Creator: Gnat the Gnu
+Email: gnu@foo.bar
+Date: Sat Dec 26 17:28:31 1998
+endmsg
+end
+arch blocked
+name cloud
+name_pl cloud
+face fog.112
+no_pass 0
+end
+arch blocked
+name cloud
+name_pl cloud
+face fog.112
+y 1
+no_pass 0
+end
+arch sign_w
+name exit sign
+name_pl exit sign
+msg
+<<that way<<
+endmsg
+y 2
+end
+arch blocked
+name cloud
+name_pl cloud
+face fog.112
+y 3
+no_pass 0
+end
+arch blocked
+name cloud
+name_pl cloud
+face fog.112
+y 4
+no_pass 0
+end
+arch blocked
+name cloud
+name_pl cloud
+face fog.112
+y 5
+no_pass 0
+end
+arch pearl
+x 1
+end
+arch sign_e
+name exit sign
+name_pl exit sign
+msg
+>>that way>> 
+endmsg
+x 1
+y 1
+end
+arch chest_2
+x 1
+y 2
+arch random_treasure
+end
+arch random_treasure
+end
+arch random_treasure
+end
+end
+arch blocked
+name cloud
+name_pl cloud
+face fog.112
+x 1
+y 3
+no_pass 0
+end
+arch blocked
+name cloud
+name_pl cloud
+face fog.112
+x 1
+y 4
+no_pass 0
+end
+arch blocked
+name cloud
+name_pl cloud
+face fog.112
+x 1
+y 5
+no_pass 0
+end
+arch pearl
+x 2
+end
+arch gem
+x 2
+y 1
+end
+arch random_potion
+x 2
+y 2
+end
+arch lightningwall
+name cloud
+name_pl cloud
+face fog.112
+x 2
+y 3
+end
+arch lightningwall
+name cloud
+name_pl cloud
+face fog.112
+x 2
+y 4
+end
+arch lightningwall
+name cloud
+name_pl cloud
+face fog.112
+x 2
+y 5
+end
+arch blocked
+name cloud
+name_pl cloud
+face fog.112
+x 3
+no_pass 0
+end
+arch water
+x 3
+y 1
+end
+arch random_gem
+x 3
+y 2
+end
+arch rune_heal
+x 3
+y 3
+end
+arch rune_restoration
+x 3
+y 4
+end
+arch chalice
+x 3
+y 5
+end
+arch fountain
+x 4
+end
+arch rose_white
+x 4
+y 1
+end
+arch blocked
+name cloud
+name_pl cloud
+face fog.112
+x 4
+y 2
+no_pass 0
+end
+arch w_glass
+x 4
+y 3
+end
+arch wine
+x 4
+y 4
+end
+arch random_gem
+x 4
+y 5
+end
+arch blocked
+name cloud
+name_pl cloud
+face fog.112
+x 5
+no_pass 0
+end
+arch stair_down_2
+name ladder leading up
+name_pl ladder leading up to the forever  mazes of myst
+slaying /!
+msg
+layoutstyle maze
+floorstyle MLABCLOUD
+wallstyle MLABCLOUD
+exitstyle ladder
+monsterstyle angel
+decorstyle MLABCLOUD
+xsize 50
+ysize 50
+dungeon_depth 20
+orientation 2
+treasureoptions 73
+endmsg
+face ladder2_up.111
+x 5
+y 1
+end
+arch stair_down_2
+name ladder leading up
+name_pl ladder leading up to the forever  mazes of myst
+slaying /!
+msg
+layoutstyle maze
+floorstyle MLABCLOUD
+wallstyle MLABCLOUD
+exitstyle ladder
+monsterstyle angel
+decorstyle MLABCLOUD
+xsize 70
+ysize 50
+dungeon_depth 30
+orientation 2
+treasureoptions 73
+endmsg
+face ladder2_up.111
+x 5
+y 2
+end
+arch mint
+x 5
+y 3
+end
+arch crown
+x 5
+y 4
+end
+arch gem
+x 5
+y 5
+end

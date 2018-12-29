@@ -1,0 +1,38 @@
+This directory includes some scripts I wrote to update various archetypes
+with certain new values.
+
+These scripts were written to get the job done - they are certainly not
+in the best style.  In many cases, the same script was modified for a new
+purpose, so the variable names reflect the individual script purpose.
+
+Most all of them take a list of files to work on.  You can typically
+do something like script.pl *.arc */*.arc */*/*.arc, etc to update
+a large number of files at once.
+
+Mark Wedel
+July 2002
+
+update_armor.pl: Replaces the last_heal variables with gen_sp_armour.
+Note that this doesn't look at object type, and just does a straight
+replacement, so should only be run against armor .arc files.
+
+update_body.pl: Adds appropriate body_.. to equipment objects.  It
+looks at the type of equipment it is to determine what body locations
+to add.
+
+update_monster.pl: Looks at the various can_use... flags and forms
+body information for the object.
+
+update_object.pl: Used to add the name_pl and client_type fields to
+the objects.  The first parameter to this script is the client
+type to set to, the rest of the parameters are the files to operate on.
+
+update_shield.pl: add can_use_shield values to players/monsters.
+Basically, it takes the value of can_use_armor and duplicates it for
+can_use_shield.  Doesn't care about object type.
+
+updatearch: This is a shell script which is a bit different - basically,
+you provide a perl expression as its parameter, and it runs this
+against all the .arc files in the directory you run it in - example:
+updatearch 's/armor/prot_phys/' will make the substitution.
+

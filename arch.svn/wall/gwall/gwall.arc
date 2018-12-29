@@ -1,0 +1,176 @@
+Object gwall_0
+name wall
+face gwall_0.111
+color_bg dark_orange
+no_pick 1
+no_pass 1
+blocksview 1
+editable 512
+visibility 100
+magicmap dark_orange
+end
+Object gwall_1_2
+name wall
+face gwall_1.111
+color_bg dark_orange
+no_pick 1
+no_pass 1
+blocksview 1
+editable 512
+visibility 100
+magicmap dark_orange
+end
+Object gwall_1_4
+name wall
+face gwall_2.111
+color_bg dark_orange
+no_pick 1
+no_pass 1
+blocksview 1
+editable 512
+visibility 100
+magicmap dark_orange
+end
+Object gwall_2_2_1
+name wall
+face gwall_3.111
+color_bg dark_orange
+no_pick 1
+no_pass 1
+blocksview 1
+editable 512
+visibility 100
+magicmap dark_orange
+end
+Object gwall_1_1
+name wall
+face gwall_4.111
+color_bg dark_orange
+no_pick 1
+no_pass 1
+blocksview 1
+editable 512
+visibility 100
+magicmap dark_orange
+end
+Object gwall_2_1_1
+name wall
+face gwall_5.111
+color_bg dark_orange
+no_pick 1
+no_pass 1
+blocksview 1
+editable 512
+visibility 100
+magicmap dark_orange
+end
+Object gwall_2_2_2
+name wall
+face gwall_6.111
+color_bg dark_orange
+no_pick 1
+no_pass 1
+blocksview 1
+editable 512
+visibility 100
+magicmap dark_orange
+end
+Object gwall_3_2
+name wall
+face gwall_7.111
+color_bg dark_orange
+no_pick 1
+no_pass 1
+blocksview 1
+editable 512
+visibility 100
+magicmap dark_orange
+end
+Object gwall_1_3
+name wall
+face gwall_8.111
+color_bg dark_orange
+no_pick 1
+no_pass 1
+blocksview 1
+editable 512
+visibility 100
+magicmap dark_orange
+end
+Object gwall_2_2_4
+name wall
+face gwall_9.111
+color_bg dark_orange
+no_pick 1
+no_pass 1
+blocksview 1
+editable 512
+visibility 100
+magicmap dark_orange
+end
+Object gwall_2_1_2
+name wall
+face gwall_A.111
+color_bg dark_orange
+no_pick 1
+no_pass 1
+blocksview 1
+editable 512
+visibility 100
+magicmap dark_orange
+end
+Object gwall_3_1
+name wall
+face gwall_B.111
+color_bg dark_orange
+no_pick 1
+no_pass 1
+blocksview 1
+editable 512
+visibility 100
+magicmap dark_orange
+end
+Object gwall_2_2_3
+name wall
+face gwall_C.111
+color_bg dark_orange
+no_pick 1
+no_pass 1
+blocksview 1
+editable 512
+visibility 100
+magicmap dark_orange
+end
+Object gwall_3_4
+name wall
+face gwall_D.111
+color_bg dark_orange
+no_pick 1
+no_pass 1
+blocksview 1
+editable 512
+visibility 100
+magicmap dark_orange
+end
+Object gwall_3_3
+name wall
+face gwall_E.111
+color_bg dark_orange
+no_pick 1
+no_pass 1
+blocksview 1
+editable 512
+visibility 100
+magicmap dark_orange
+end
+Object gwall_4
+name wall
+face gwall_F.111
+color_bg dark_orange
+no_pick 1
+no_pass 1
+blocksview 1
+editable 512
+visibility 100
+magicmap dark_orange
+end

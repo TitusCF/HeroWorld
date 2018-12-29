@@ -1,0 +1,24 @@
+Object spell_sunspear
+name sunspear
+name_pl sunspears
+face spell_praying.111
+level 6
+grace 8
+dam 8
+dam_modifier 3
+duration 8
+duration_modifier 9
+casting_time 8
+maxgrace 30
+other_arch sunspear
+skill praying
+path_attuned 524288
+type 101
+subtype 4
+value 60
+slaying undead,troll
+attacktype 4194308
+range 6
+no_drop 1
+invisible 1
+end

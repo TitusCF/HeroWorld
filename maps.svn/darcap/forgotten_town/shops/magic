@@ -1,0 +1,1355 @@
+arch map
+name Magicshop
+region Forgotten Town
+msg
+Creator: Knut Ahlers
+Date:    7/21/2005
+endmsg
+width 17
+height 15
+enter_x 13
+enter_y 13
+shopitems scroll:60;ring:60;amulet:60;potion:40;wand:50;rod:50;*:-60
+shopmin 500
+shopmax 80000
+end
+arch stonefloor2
+end
+arch wwall_2_2_2
+end
+arch stonefloor2
+y 1
+end
+arch wwall_2_1_1
+y 1
+end
+arch stonefloor2
+y 2
+end
+arch wwall_2_1_1
+y 2
+end
+arch stonefloor2
+y 3
+end
+arch wwall_2_1_1
+y 3
+end
+arch stonefloor2
+y 4
+end
+arch wwall_win1
+y 4
+end
+arch stonefloor2
+y 5
+end
+arch wwall_2_1_1
+y 5
+end
+arch stonefloor2
+y 6
+end
+arch wwall_2_1_1
+y 6
+end
+arch stonefloor2
+y 7
+end
+arch wwall_2_1_1
+y 7
+end
+arch stonefloor2
+y 8
+end
+arch wwall_2_1_1
+y 8
+end
+arch stonefloor2
+y 9
+end
+arch wwall_2_1_1
+y 9
+end
+arch stonefloor2
+y 10
+end
+arch wwall_win1
+y 10
+end
+arch stonefloor2
+y 11
+end
+arch wwall_2_1_1
+y 11
+end
+arch stonefloor2
+y 12
+end
+arch wwall_2_1_1
+y 12
+end
+arch stonefloor2
+y 13
+end
+arch wwall_2_1_1
+y 13
+end
+arch stonefloor2
+y 14
+end
+arch wwall_2_2_1
+y 14
+end
+arch stonefloor2
+x 1
+end
+arch wwall_2_1_2
+x 1
+end
+arch stonefloor2
+no_magic 1
+damned 1
+x 1
+y 1
+end
+arch altar
+slaying heavy rod of the ancient mages
+food 1
+connected 1
+x 1
+y 1
+end
+arch stonefloor2
+no_magic 1
+damned 1
+x 1
+y 2
+end
+arch stonefloor2
+no_magic 1
+damned 1
+x 1
+y 3
+end
+arch stonefloor2
+no_magic 1
+damned 1
+x 1
+y 4
+end
+arch shop_wands
+x 1
+y 5
+end
+arch shop_wands
+x 1
+y 6
+end
+arch shop_wands
+x 1
+y 7
+end
+arch shop_wands
+x 1
+y 8
+end
+arch shop_wands
+x 1
+y 9
+end
+arch shop_wands
+x 1
+y 10
+end
+arch shop_wands
+x 1
+y 11
+end
+arch shop_wands
+x 1
+y 12
+end
+arch shop_wands
+x 1
+y 13
+end
+arch stonefloor2
+x 1
+y 14
+end
+arch wwall_2_1_2
+x 1
+y 14
+end
+arch stonefloor2
+x 2
+end
+arch wwall_2_1_2
+x 2
+end
+arch stonefloor2
+no_magic 1
+damned 1
+x 2
+y 1
+end
+arch guildmaster
+name ancient mage
+face wizard_yellow.151
+msg
+@match altar|why
+The merchant in the generalshop came
+to me and have stolen my rod. That rod
+was a gift from the high council of the
+ancient mages for me. I had it in the cage
+here in the shop. As I were outside the
+merchant came and have stolen it. Would
+you help me to get it back?
+@match yes
+Ok you must go to the generalshop. In
+the basement there is a personal depot
+of the merchant. It is guarded by two old
+and very strong creatures. You must be
+very careful. There is only one rod. Please
+bring it to me and put it on the altar next
+to me. You will get a reward for it.
+@match *
+I'm too angry to help you.
+endmsg
+randomitems standard
+hp 100
+maxhp 100
+friendly 1
+stand_still 1
+sleep 1
+pick_up 0
+x 2
+y 1
+end
+arch stonefloor2
+no_magic 1
+damned 1
+x 2
+y 2
+end
+arch stonefloor2
+no_magic 1
+damned 1
+x 2
+y 3
+end
+arch stonefloor2
+no_magic 1
+damned 1
+x 2
+y 4
+end
+arch shop_empty
+x 2
+y 5
+end
+arch shop_empty
+x 2
+y 6
+end
+arch shop_empty
+x 2
+y 7
+end
+arch shop_empty
+x 2
+y 8
+end
+arch shop_empty
+x 2
+y 9
+end
+arch shop_empty
+x 2
+y 10
+end
+arch shop_empty
+x 2
+y 11
+end
+arch shop_empty
+x 2
+y 12
+end
+arch shop_wands
+x 2
+y 13
+end
+arch stonefloor2
+x 2
+y 14
+end
+arch wwall_2_1_2
+x 2
+y 14
+end
+arch stonefloor2
+x 3
+end
+arch wwall_2_1_2
+x 3
+end
+arch stonefloor2
+no_magic 1
+damned 1
+x 3
+y 1
+end
+arch stonefloor2
+no_magic 1
+damned 1
+x 3
+y 2
+end
+arch stonefloor2
+no_magic 1
+damned 1
+x 3
+y 3
+end
+arch stonefloor2
+no_magic 1
+damned 1
+x 3
+y 4
+end
+arch shop_potions
+x 3
+y 5
+end
+arch shop_potions
+x 3
+y 6
+end
+arch shop_potions
+x 3
+y 7
+end
+arch shop_potions
+x 3
+y 8
+end
+arch shop_potions
+x 3
+y 9
+end
+arch shop_potions
+x 3
+y 10
+end
+arch shop_empty
+x 3
+y 11
+end
+arch shop_empty
+x 3
+y 12
+end
+arch shop_wands
+x 3
+y 13
+end
+arch stonefloor2
+x 3
+y 14
+end
+arch wwall_2_1_2
+x 3
+y 14
+end
+arch stonefloor2
+x 4
+end
+arch wwall_win2
+x 4
+end
+arch stonefloor2
+no_magic 1
+damned 1
+x 4
+y 1
+end
+arch stonefloor2
+no_magic 1
+damned 1
+x 4
+y 2
+end
+arch stonefloor2
+no_magic 1
+damned 1
+x 4
+y 3
+end
+arch stonefloor2
+no_magic 1
+damned 1
+x 4
+y 4
+end
+arch shop_potions
+x 4
+y 5
+end
+arch shop_potions
+x 4
+y 6
+end
+arch shop_potions
+x 4
+y 7
+end
+arch shop_potions
+x 4
+y 8
+end
+arch shop_potions
+x 4
+y 9
+end
+arch shop_potions
+x 4
+y 10
+end
+arch shop_empty
+x 4
+y 11
+end
+arch shop_empty
+x 4
+y 12
+end
+arch shop_wands
+x 4
+y 13
+end
+arch stonefloor2
+x 4
+y 14
+end
+arch wwall_win2
+x 4
+y 14
+end
+arch stonefloor2
+x 5
+end
+arch wwall_2_1_2
+x 5
+end
+arch shop_books
+x 5
+y 1
+end
+arch shop_empty
+x 5
+y 2
+end
+arch shop_empty
+x 5
+y 3
+end
+arch shop_empty
+x 5
+y 4
+end
+arch shop_empty
+x 5
+y 5
+end
+arch shop_empty
+x 5
+y 6
+end
+arch shop_empty
+x 5
+y 7
+end
+arch shop_empty
+x 5
+y 8
+end
+arch shop_empty
+x 5
+y 9
+end
+arch shop_empty
+x 5
+y 10
+end
+arch shop_empty
+x 5
+y 11
+end
+arch shop_empty
+x 5
+y 12
+end
+arch shop_wands
+x 5
+y 13
+end
+arch stonefloor2
+x 5
+y 14
+end
+arch wwall_2_1_2
+x 5
+y 14
+end
+arch stonefloor2
+x 6
+end
+arch wwall_2_1_2
+x 6
+end
+arch shop_books
+x 6
+y 1
+end
+arch shop_empty
+x 6
+y 2
+end
+arch shop_amulets
+x 6
+y 3
+end
+arch shop_amulets
+x 6
+y 4
+end
+arch shop_amulets
+x 6
+y 5
+end
+arch shop_amulets
+x 6
+y 6
+end
+arch shop_amulets
+x 6
+y 7
+end
+arch shop_amulets
+x 6
+y 8
+end
+arch shop_amulets
+x 6
+y 9
+end
+arch shop_amulets
+x 6
+y 10
+end
+arch shop_empty
+x 6
+y 11
+end
+arch shop_empty
+x 6
+y 12
+end
+arch shop_wands
+x 6
+y 13
+end
+arch stonefloor2
+x 6
+y 14
+end
+arch wwall_2_1_2
+x 6
+y 14
+end
+arch stonefloor2
+x 7
+end
+arch wwall_2_1_2
+x 7
+end
+arch shop_books
+x 7
+y 1
+end
+arch shop_empty
+x 7
+y 2
+end
+arch shop_amulets
+x 7
+y 3
+end
+arch shop_amulets
+x 7
+y 4
+end
+arch shop_amulets
+x 7
+y 5
+end
+arch shop_amulets
+x 7
+y 6
+end
+arch shop_amulets
+x 7
+y 7
+end
+arch shop_amulets
+x 7
+y 8
+end
+arch shop_amulets
+x 7
+y 9
+end
+arch shop_amulets
+x 7
+y 10
+end
+arch shop_empty
+x 7
+y 11
+end
+arch shop_empty
+x 7
+y 12
+end
+arch shop_wands
+x 7
+y 13
+end
+arch stonefloor2
+x 7
+y 14
+end
+arch wwall_2_1_2
+x 7
+y 14
+end
+arch stonefloor2
+x 8
+end
+arch wwall_2_1_2
+x 8
+end
+arch shop_books
+x 8
+y 1
+end
+arch shop_empty
+x 8
+y 2
+end
+arch shop_empty
+x 8
+y 3
+end
+arch shop_empty
+x 8
+y 4
+end
+arch shop_empty
+x 8
+y 5
+end
+arch shop_empty
+x 8
+y 6
+end
+arch shop_empty
+x 8
+y 7
+end
+arch shop_empty
+x 8
+y 8
+end
+arch shop_empty
+x 8
+y 9
+end
+arch shop_empty
+x 8
+y 10
+end
+arch shop_empty
+x 8
+y 11
+end
+arch shop_empty
+x 8
+y 12
+end
+arch shop_wands
+x 8
+y 13
+end
+arch stonefloor2
+x 8
+y 14
+end
+arch wwall_2_1_2
+x 8
+y 14
+end
+arch stonefloor2
+x 9
+end
+arch wwall_2_1_2
+x 9
+end
+arch shop_books
+x 9
+y 1
+end
+arch shop_empty
+x 9
+y 2
+end
+arch shop_scrolls
+x 9
+y 3
+end
+arch shop_scrolls
+x 9
+y 4
+end
+arch shop_scrolls
+x 9
+y 5
+end
+arch shop_scrolls
+x 9
+y 6
+end
+arch shop_scrolls
+x 9
+y 7
+end
+arch shop_scrolls
+x 9
+y 8
+end
+arch shop_scrolls
+x 9
+y 9
+end
+arch shop_scrolls
+x 9
+y 10
+end
+arch shop_empty
+x 9
+y 11
+end
+arch shop_empty
+x 9
+y 12
+end
+arch shop_wands
+x 9
+y 13
+end
+arch stonefloor2
+x 9
+y 14
+end
+arch wwall_2_1_2
+x 9
+y 14
+end
+arch stonefloor2
+x 10
+end
+arch wwall_win2
+x 10
+end
+arch shop_books
+x 10
+y 1
+end
+arch shop_empty
+x 10
+y 2
+end
+arch shop_scrolls
+x 10
+y 3
+end
+arch shop_scrolls
+x 10
+y 4
+end
+arch shop_scrolls
+x 10
+y 5
+end
+arch shop_scrolls
+x 10
+y 6
+end
+arch shop_scrolls
+x 10
+y 7
+end
+arch shop_scrolls
+x 10
+y 8
+end
+arch shop_scrolls
+x 10
+y 9
+end
+arch shop_scrolls
+x 10
+y 10
+end
+arch shop_empty
+x 10
+y 11
+end
+arch shop_empty
+x 10
+y 12
+end
+arch shop_empty
+x 10
+y 13
+end
+arch shop_mat
+x 10
+y 13
+end
+arch stonefloor2
+x 10
+y 14
+end
+arch wwall_win2
+x 10
+y 14
+end
+arch stonefloor2
+x 11
+end
+arch wwall_2_1_2
+x 11
+end
+arch shop_books
+x 11
+y 1
+end
+arch shop_empty
+x 11
+y 2
+end
+arch shop_empty
+x 11
+y 3
+end
+arch shop_empty
+x 11
+y 4
+end
+arch shop_empty
+x 11
+y 5
+end
+arch shop_empty
+x 11
+y 6
+end
+arch shop_empty
+x 11
+y 7
+end
+arch shop_empty
+x 11
+y 8
+end
+arch shop_empty
+x 11
+y 9
+end
+arch shop_empty
+x 11
+y 10
+end
+arch stonefloor2
+x 11
+y 11
+end
+arch wwall_2_2_2
+x 11
+y 11
+end
+arch stonefloor2
+x 11
+y 12
+end
+arch wwall_win1
+x 11
+y 12
+end
+arch stonefloor2
+x 11
+y 13
+end
+arch wwall_win1
+x 11
+y 13
+end
+arch stonefloor2
+x 11
+y 14
+end
+arch wwall_3_1
+x 11
+y 14
+end
+arch stonefloor2
+x 12
+end
+arch wwall_2_1_2
+x 12
+end
+arch shop_books
+x 12
+y 1
+end
+arch shop_empty
+x 12
+y 2
+end
+arch shop_ring
+x 12
+y 3
+end
+arch shop_ring
+x 12
+y 4
+end
+arch shop_ring
+x 12
+y 5
+end
+arch shop_ring
+x 12
+y 6
+end
+arch shop_ring
+x 12
+y 7
+end
+arch shop_ring
+x 12
+y 8
+end
+arch shop_ring
+x 12
+y 9
+end
+arch shop_ring
+x 12
+y 10
+end
+arch stonefloor2
+x 12
+y 11
+end
+arch wwall_win2
+x 12
+y 11
+end
+arch stonefloor2
+x 12
+y 12
+end
+arch shop_mat
+x 12
+y 12
+end
+arch stonefloor2
+x 12
+y 13
+end
+arch stonefloor2
+x 12
+y 14
+end
+arch wwall_2_1_2
+x 12
+y 14
+end
+arch stonefloor2
+x 13
+end
+arch wwall_2_1_2
+x 13
+end
+arch shop_books
+x 13
+y 1
+end
+arch shop_empty
+x 13
+y 2
+end
+arch shop_ring
+x 13
+y 3
+end
+arch shop_ring
+x 13
+y 4
+end
+arch shop_ring
+x 13
+y 5
+end
+arch shop_ring
+x 13
+y 6
+end
+arch shop_ring
+x 13
+y 7
+end
+arch shop_ring
+x 13
+y 8
+end
+arch shop_ring
+x 13
+y 9
+end
+arch shop_ring
+x 13
+y 10
+end
+arch stonefloor2
+x 13
+y 11
+end
+arch wwall_win2
+x 13
+y 11
+end
+arch stonefloor2
+x 13
+y 12
+end
+arch menu
+x 13
+y 12
+end
+arch stonefloor2
+x 13
+y 13
+end
+arch oakdoor
+slaying /darcap/forgotten_town/city
+hp 19
+sp 3
+x 13
+y 13
+end
+arch stonefloor2
+x 13
+y 14
+end
+arch wwall_2_1_2
+x 13
+y 14
+end
+arch stonefloor2
+x 14
+end
+arch wwall_2_2_3
+x 14
+end
+arch stonefloor2
+x 14
+y 1
+end
+arch wwall_2_1_1
+x 14
+y 1
+end
+arch stonefloor2
+x 14
+y 2
+end
+arch wwall_2_1_1
+x 14
+y 2
+end
+arch stonefloor2
+x 14
+y 3
+end
+arch wwall_2_1_1
+x 14
+y 3
+end
+arch stonefloor2
+x 14
+y 4
+end
+arch wwall_win1
+x 14
+y 4
+end
+arch stonefloor2
+x 14
+y 5
+end
+arch wwall_2_1_1
+x 14
+y 5
+end
+arch stonefloor2
+x 14
+y 6
+end
+arch wwall_2_1_1
+x 14
+y 6
+end
+arch stonefloor2
+x 14
+y 7
+end
+arch wwall_2_1_1
+x 14
+y 7
+end
+arch stonefloor2
+x 14
+y 8
+end
+arch wwall_2_1_1
+x 14
+y 8
+end
+arch stonefloor2
+x 14
+y 9
+end
+arch wwall_2_1_1
+x 14
+y 9
+end
+arch stonefloor2
+x 14
+y 10
+end
+arch wwall_win1
+x 14
+y 10
+end
+arch stonefloor2
+x 14
+y 11
+end
+arch wwall_3_4
+x 14
+y 11
+end
+arch stonefloor2
+x 14
+y 12
+end
+arch wwall_2_1_1
+x 14
+y 12
+end
+arch stonefloor2
+x 14
+y 13
+end
+arch wwall_2_1_1
+x 14
+y 13
+end
+arch stonefloor2
+x 14
+y 14
+end
+arch wwall_2_2_4
+x 14
+y 14
+end
+arch blocked
+x 15
+end
+arch blocked
+x 15
+y 1
+end
+arch blocked
+x 15
+y 2
+end
+arch blocked
+x 15
+y 3
+end
+arch blocked
+x 15
+y 4
+end
+arch blocked
+x 15
+y 5
+end
+arch blocked
+x 15
+y 6
+end
+arch pit_closed
+connected 1
+hp 1
+sp 2
+x 15
+y 7
+end
+arch random_gem
+x 15
+y 7
+end
+arch random_gem
+x 15
+y 7
+end
+arch random_potion
+x 15
+y 7
+end
+arch random_potion
+x 15
+y 7
+end
+arch random_scroll
+x 15
+y 7
+end
+arch random_scroll
+x 15
+y 7
+end
+arch random_reading
+x 15
+y 7
+end
+arch random_spells
+x 15
+y 7
+end
+arch random_wealth
+x 15
+y 7
+end
+arch random_wealth
+x 15
+y 7
+end
+arch random_wealth
+x 15
+y 7
+end
+arch blocked
+x 15
+y 8
+end
+arch blocked
+x 15
+y 9
+end
+arch blocked
+x 15
+y 10
+end
+arch blocked
+x 15
+y 11
+end
+arch blocked
+x 15
+y 12
+end
+arch blocked
+x 15
+y 13
+end
+arch blocked
+x 15
+y 14
+end
+arch blocked
+x 16
+end
+arch blocked
+x 16
+y 1
+end
+arch blocked
+x 16
+y 2
+end
+arch blocked
+x 16
+y 3
+end
+arch blocked
+x 16
+y 4
+end
+arch blocked
+x 16
+y 5
+end
+arch blocked
+x 16
+y 6
+end
+arch blocked
+x 16
+y 7
+end
+arch blocked
+x 16
+y 8
+end
+arch blocked
+x 16
+y 9
+end
+arch blocked
+x 16
+y 10
+end
+arch blocked
+x 16
+y 11
+end
+arch blocked
+x 16
+y 12
+end
+arch blocked
+x 16
+y 13
+end
+arch blocked
+x 16
+y 14
+end

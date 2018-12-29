@@ -1,0 +1,771 @@
+arch map
+name Imperial Post Office
+difficulty 2
+region navar
+width 10
+height 10
+enter_x 5
+enter_y 8
+msg
+Creator: Commander Gros
+Email: yann.chachkoff@mailandnews.com
+Date: Wed Sep  5 22:09:24 2001
+Following a Lord MiDS idea
+endmsg
+end
+arch tile_tan_floor
+end
+arch bwall_2_2_2
+end
+arch tile_tan_floor
+y 1
+end
+arch bwall_2_1_1
+y 1
+end
+arch tile_tan_floor
+y 2
+end
+arch bwall_2_1_1
+y 2
+end
+arch tile_tan_floor
+y 3
+end
+arch dungeon_magic
+y 3
+end
+arch bwall_3_2
+y 3
+end
+arch tile_tan_floor
+y 4
+end
+arch bwall_2_1_1
+y 4
+end
+arch tile_tan_floor
+y 5
+end
+arch bwall_2_1_1
+y 5
+end
+arch tile_tan_floor
+y 6
+end
+arch bwall_2_1_1
+y 6
+end
+arch tile_tan_floor
+y 7
+end
+arch bwall_2_1_1
+y 7
+end
+arch tile_tan_floor
+y 8
+end
+arch bwall_2_1_1
+y 8
+end
+arch tile_tan_floor
+y 9
+end
+arch bwall_2_2_1
+y 9
+end
+arch tile_tan_floor
+x 1
+end
+arch bwall_2_1_2
+x 1
+end
+arch tile_tan_floor
+x 1
+y 1
+end
+arch bookshelf
+x 1
+y 1
+end
+arch tile_tan_floor
+x 1
+y 2
+end
+arch tile_tan_floor
+x 1
+y 3
+end
+arch wall_2_1_2
+x 1
+y 3
+end
+arch dungeon_magic
+x 1
+y 3
+end
+arch bwall_1_3
+x 1
+y 3
+end
+arch tile_tan_floor
+x 1
+y 4
+end
+arch greater_dwarven_guard
+msg
+@match hi|hello
+Greetings.  Have a pleasant day.
+@match *
+We donna tollerate no shenanigans around these parts.
+endmsg
+exp 0
+
+x 1
+y 4
+friendly 1
+unaggressive 1
+stand_still 1
+end
+arch tile_tan_floor
+x 1
+y 5
+end
+arch tile_tan_floor
+x 1
+y 6
+end
+arch tile_tan_floor
+x 1
+y 7
+end
+arch tile_tan_floor
+x 1
+y 8
+end
+arch sign
+name Navar Message Board
+name_pl Navar Message Board
+msg
+I am a talking board, please say something to me.
+If you don't know what to say, say help.
+endmsg
+x 1
+y 8
+arch event_say
+name Navar board
+name_pl Navar board
+title Python
+slaying /python/IPO/board.py
+end
+end
+arch tile_tan_floor
+x 1
+y 9
+end
+arch bwall_2_1_2
+x 1
+y 9
+end
+arch tile_tan_floor
+x 2
+end
+arch bwall_2_1_2
+x 2
+end
+arch tile_tan_floor
+x 2
+y 1
+end
+arch halfling2
+name Gofer
+name_pl Gofer
+x 2
+y 1
+friendly 1
+end
+arch tile_tan_floor
+x 2
+y 2
+end
+arch tile_tan_floor
+x 2
+y 3
+end
+arch window_win2
+x 2
+y 3
+end
+arch dungeon_magic
+x 2
+y 3
+end
+arch tile_tan_floor
+x 2
+y 4
+end
+arch tile_tan_floor
+x 2
+y 5
+end
+arch tile_tan_floor
+x 2
+y 6
+end
+arch tile_tan_floor
+x 2
+y 7
+end
+arch tile_tan_floor
+x 2
+y 8
+end
+arch tile_tan_floor
+x 2
+y 9
+end
+arch bwall_2_1_2
+x 2
+y 9
+end
+arch tile_tan_floor
+x 3
+end
+arch bwall_2_1_2
+x 3
+end
+arch tile_tan_floor
+x 3
+y 1
+end
+arch bookshelf
+x 3
+y 1
+end
+arch tile_tan_floor
+x 3
+y 2
+end
+arch table_2
+x 3
+y 2
+end
+arch cauldron
+name Coffee supplies
+name_pl Coffee supplies
+x 3
+y 2
+end
+arch tile_tan_floor
+x 3
+y 3
+end
+arch wall_2_1_2
+x 3
+y 3
+end
+arch dungeon_magic
+x 3
+y 3
+end
+arch bwall_0
+x 3
+y 3
+end
+arch tile_tan_floor
+x 3
+y 4
+end
+arch tile_tan_floor
+x 3
+y 5
+end
+arch tile_tan_floor
+x 3
+y 6
+end
+arch tile_tan_floor
+x 3
+y 7
+end
+arch tile_tan_floor
+x 3
+y 8
+end
+arch tile_tan_floor
+x 3
+y 9
+end
+arch bwall_2_1_2
+x 3
+y 9
+end
+arch tile_tan_floor
+x 4
+end
+arch bwall_2_1_2
+x 4
+end
+arch tile_tan_floor
+x 4
+y 1
+end
+arch tile_tan_floor
+x 4
+y 2
+end
+arch chair_2.1
+x 4
+y 2
+end
+arch c_woman
+name Babs
+name_pl Babs
+msg
+@match *
+I'm on a break.
+endmsg
+x 4
+y 2
+monster 0
+stand_still 1
+arch event_say
+title Python
+slaying /python/IPO/say.py
+end
+end
+arch tile_tan_floor
+x 4
+y 3
+end
+arch window_win2
+x 4
+y 3
+end
+arch dungeon_magic
+x 4
+y 3
+end
+arch tile_tan_floor
+x 4
+y 4
+end
+arch tile_tan_floor
+x 4
+y 5
+end
+arch tile_tan_floor
+x 4
+y 6
+end
+arch tile_tan_floor
+x 4
+y 7
+end
+arch tile_tan_floor
+x 4
+y 8
+end
+arch tile_tan_floor
+x 4
+y 9
+end
+arch bwall_1_3
+x 4
+y 9
+end
+arch tile_tan_floor
+x 5
+end
+arch bwall_2_1_2
+x 5
+end
+arch tile_tan_floor
+x 5
+y 1
+end
+arch tile_tan_floor
+x 5
+y 2
+end
+arch table_2
+x 5
+y 2
+end
+arch tile_tan_floor
+x 5
+y 3
+end
+arch wall_2_1_2
+x 5
+y 3
+end
+arch dungeon_magic
+x 5
+y 3
+end
+arch bwall_0
+x 5
+y 3
+end
+arch tile_tan_floor
+x 5
+y 4
+end
+arch tile_tan_floor
+x 5
+y 5
+end
+arch tile_tan_floor
+x 5
+y 6
+end
+arch tile_tan_floor
+x 5
+y 7
+end
+arch tile_tan_floor
+x 5
+y 8
+end
+arch invis_exit
+slaying /world/world_122_117
+hp 1
+sp 7
+x 5
+y 9
+end
+arch tile_tan_floor
+x 5
+y 9
+end
+arch tile_tan_floor
+x 6
+end
+arch bwall_2_1_2
+x 6
+end
+arch tile_tan_floor
+x 6
+y 1
+end
+arch bookshelf
+x 6
+y 1
+end
+arch tile_tan_floor
+x 6
+y 2
+end
+arch tile_tan_floor
+x 6
+y 3
+end
+arch window_win2
+x 6
+y 3
+end
+arch dungeon_magic
+x 6
+y 3
+end
+arch tile_tan_floor
+x 6
+y 4
+end
+arch tile_tan_floor
+x 6
+y 5
+end
+arch tile_tan_floor
+x 6
+y 6
+end
+arch tile_tan_floor
+x 6
+y 7
+end
+arch chair_2.4
+x 6
+y 7
+end
+arch tile_tan_floor
+x 6
+y 8
+end
+arch tile_tan_floor
+x 6
+y 9
+end
+arch bwall_1_4
+x 6
+y 9
+end
+arch tile_tan_floor
+x 7
+end
+arch bwall_2_1_2
+x 7
+end
+arch tile_tan_floor
+x 7
+y 1
+end
+arch tile_tan_floor
+x 7
+y 2
+end
+arch tile_tan_floor
+x 7
+y 3
+end
+arch wall_2_1_2
+x 7
+y 3
+end
+arch dungeon_magic
+x 7
+y 3
+end
+arch bwall_1_4
+x 7
+y 3
+end
+arch tile_tan_floor
+x 7
+y 4
+end
+arch tile_tan_floor
+x 7
+y 5
+end
+arch tile_tan_floor
+x 7
+y 6
+end
+arch tile_tan_floor
+x 7
+y 7
+end
+arch table_3
+x 7
+y 7
+end
+arch scroll
+name Prospectus
+name_pl Prospectus
+msg
+Imperial Post Services
+-----------------------
+Thank you for choosing the IPS to
+take care of your messages. Want to
+get more ? We have a wide range of
+products and services to offer to
+anyone. Pirate ? Try  our
+TalkParrots(tm) ! Beholder ? Enjoy
+our fabulous non-stereoscopical cards
+! And don't forget:
+The Empire Is Everywhere For You
+endmsg
+x 7
+y 7
+end
+arch book_read
+name Manual
+name_pl Manual
+msg
+Receiving Mail
+-----------------------
+Open the mailbox and get the scrolls,
+read them by applying.
+Sending Mail
+-----------------------
+Get a pencil and be sure that you are
+able to use the literacy skill. You can
+get both at the office, ask Colette for
+help.
+Get a preaddressed mailscroll, mark it
+and write on it with:
+use_skill inscription <text>
+You can write multiple lines, when done
+drop the scroll in the mailbox and it
+will be send.
+endmsg
+x 7
+y 7
+end
+arch tile_tan_floor
+x 7
+y 8
+end
+arch chair_2.3
+x 7
+y 8
+end
+arch tile_tan_floor
+x 7
+y 9
+end
+arch bwall_2_1_2
+x 7
+y 9
+end
+arch tile_tan_floor
+x 8
+end
+arch bwall_2_1_2
+x 8
+end
+arch tile_tan_floor
+x 8
+y 1
+end
+arch bookshelf
+x 8
+y 1
+end
+arch tile_tan_floor
+x 8
+y 2
+end
+arch tile_tan_floor
+x 8
+y 3
+end
+arch dungeon_magic
+x 8
+y 3
+end
+arch bwall_2_1_2
+x 8
+y 3
+end
+arch tile_tan_floor
+x 8
+y 4
+end
+arch mailbox
+x 8
+y 4
+material 0
+weight 0
+no_pick 1
+arch event_apply
+title Python
+slaying /python/IPO/receive.py
+end
+arch event_close
+title Python
+slaying /python/IPO/send.py
+end
+end
+arch tile_tan_floor
+x 8
+y 5
+end
+arch tile_tan_floor
+x 8
+y 6
+end
+arch tile_tan_floor
+x 8
+y 7
+end
+arch chair_2.2
+x 8
+y 7
+end
+arch tile_tan_floor
+x 8
+y 8
+end
+arch tile_tan_floor
+x 8
+y 9
+end
+arch bwall_2_1_2
+x 8
+y 9
+end
+arch tile_tan_floor
+x 9
+end
+arch bwall_2_2_3
+x 9
+end
+arch tile_tan_floor
+x 9
+y 1
+end
+arch bwall_2_1_1
+x 9
+y 1
+end
+arch tile_tan_floor
+x 9
+y 2
+end
+arch bwall_2_1_1
+x 9
+y 2
+end
+arch tile_tan_floor
+x 9
+y 3
+end
+arch dungeon_magic
+x 9
+y 3
+end
+arch bwall_3_4
+x 9
+y 3
+end
+arch tile_tan_floor
+x 9
+y 4
+end
+arch bwall_2_1_1
+x 9
+y 4
+end
+arch tile_tan_floor
+x 9
+y 5
+end
+arch bwall_2_1_1
+x 9
+y 5
+end
+arch tile_tan_floor
+x 9
+y 6
+end
+arch bwall_2_1_1
+x 9
+y 6
+end
+arch tile_tan_floor
+x 9
+y 7
+end
+arch bwall_2_1_1
+x 9
+y 7
+end
+arch tile_tan_floor
+x 9
+y 8
+end
+arch bwall_2_1_1
+x 9
+y 8
+end
+arch tile_tan_floor
+x 9
+y 9
+end
+arch bwall_2_2_4
+x 9
+y 9
+end

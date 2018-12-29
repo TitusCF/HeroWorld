@@ -1,0 +1,27 @@
+treasureone tentacle_victims
+  arch bones1
+    nrof 1
+  more
+  arch bones2
+    nrof 1
+  more
+  arch bones3
+    nrof 1
+  more
+  arch bones4
+    nrof 1
+  more
+  arch bones5
+    nrof 1
+  end
+#
+treasure tentacle
+  list tentacle_victims
+    chance 5
+  more
+  list random_wealth
+    chance 3
+  more
+  arch tentacle_hook
+    chance 20
+  end

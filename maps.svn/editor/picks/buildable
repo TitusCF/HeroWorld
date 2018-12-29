@@ -1,0 +1,48 @@
+arch map
+reset_timeout 7200
+difficulty 1
+width 16
+height 16
+enter_x 1
+enter_y 1
+msg
+Creator: Gnat the Gnu
+Email: gnu@foo.bar
+Date: Tue Aug  3 03:14:40 2004
+endmsg
+end
+arch blocked
+name buildable lot
+name_pl nothing
+no_pass 0
+blocksview 0
+unique 1
+is_buildable 1
+end
+arch evergreens
+name buildable lot
+name_pl cloud
+face fog.111
+y 1
+unique 1
+is_buildable 1
+end
+arch grass
+name buildable lot
+name_pl buildable lot
+y 2
+unique 1
+is_buildable 1
+end
+arch woodfloor
+name buildable woodfloor
+y 3
+unique 1
+is_buildable 1
+end
+arch flagstone
+name buildable flagstone
+y 4
+unique 1
+is_buildable 1
+end

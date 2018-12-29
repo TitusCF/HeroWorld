@@ -1,0 +1,126 @@
+treasureone sorcery_book_low
+  arch spell_detect_magic
+    chance 10
+  more
+  arch spell_magic_bullet
+    chance 10
+  more
+  arch spell_magic_missile
+    chance 8
+  more
+  arch spell_marking_rune
+    chance 5
+  more
+  arch spell_probe
+    chance 6
+  more
+  arch spell_slow
+    chance 7
+  more
+  arch spell_confusion
+    chance 7
+  more
+  arch spell_paralyze
+    chance 8
+  more
+  arch spell_poison_cloud
+    chance 6
+  more
+  arch spell_strength
+    chance 6
+  more
+  arch spell_charisma
+    chance 4
+  more
+  arch spell_dexterity
+    chance 4
+  more
+  arch spell_constitution
+    chance 4
+  more
+  arch spell_disarm
+    chance 1
+  more
+  arch spell_fear
+    chance 5
+  more
+  arch spell_dark_vision
+    chance 2
+  more
+  arch spell_magic_mapping
+    chance 5
+  more
+  arch spell_steambolt
+    chance 1
+  more
+  arch spell_transference
+    chance 1
+end
+
+treasureone sorcery_book_medium
+  arch spell_invisible
+    chance 4
+  more
+  arch spell_levitate
+    chance 2
+  more
+  arch spell_rune_of_transference
+    chance 1
+  more
+  arch spell_animate_weapon
+    chance 4
+  more
+  arch spell_antimagic_rune
+    chance 1
+  more
+  arch spell_mass_confusion
+    chance 3
+  more
+  arch spell_missile_swarm
+    chance 1
+  more
+  arch spell_identify
+    chance 5
+  more
+  arch spell_improved_invisibility
+    chance 1
+  more
+  arch spell_dimension_door
+    chance 1
+  more
+  arch spell_xray
+    chance 1
+end
+
+treasureone sorcery_book_high
+  arch spell_magic_drain
+    chance 1
+  more
+  arch spell_magic_rune
+    chance 1
+  more
+  arch spell_rune_of_death
+    chance 1
+  more
+  arch spell_destruction
+    chance 1
+  more
+  arch spell_town_portal
+    chance 1
+end
+
+treasureone sorcery_book
+  list sorcery_book_low
+    chance 20
+    nrof 1
+  more
+  list sorcery_book_medium
+    chance 30
+    magic 6
+    nrof 1
+  more
+  list sorcery_book_high
+    chance 40
+    magic 11
+    nrof 1
+end

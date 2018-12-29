@@ -1,0 +1,602 @@
+arch map
+name nethack_2
+msg
+Creator: Gnat the Gnu
+Email: gnu@foo.bar
+Date: Sat May  5 16:44:39 2001
+endmsg
+width 6
+height 20
+end
+arch serp_man
+name Iguana
+Con 1
+hp 15
+maxhp 15
+exp 100
+randomitems none
+end
+arch dwarf
+name dwarf zombie
+hp 20
+maxhp 20
+exp 50
+y 1
+attacktype 4128
+end
+arch dwarf
+hp 25
+maxhp 25
+y 2
+end
+arch mouse
+name rabid rat
+hp 10
+wc -3
+y 3
+speed 0.300000
+randomitems needle_diseases
+generator 0
+end
+arch holy_servant
+name paper golem
+hp 25
+maxhp 25
+y 5
+resist_magic 0
+resist_fire -100
+end
+arch gnome
+name gnome lord
+Con 1
+hp 50
+maxhp 10
+exp 100
+dam 8
+wc 2
+ac -1
+y 6
+speed 0.250000
+attacktype 1
+resist_fire 0
+resist_cold 0
+resist_confusion 0
+run_away 85
+reflect_spell 0
+can_cast_spell 0
+end
+arch wight
+name Barrow wight
+y 7
+end
+arch ogre
+name bugbear
+y 8
+end
+arch pixie
+name wood nymph
+y 9
+end
+arch mouse
+name woodchuck
+hp 16
+exp 25
+wc 8
+y 10
+generator 0
+end
+arch holy_servant
+name rope golem
+hp 125
+maxhp 25
+exp 250
+dam 15
+y 14
+resist_magic 0
+resist_fire -100
+end
+arch zombie
+y 16
+end
+arch dwarf
+name dwarf lord
+hp 125
+maxhp 25
+exp 300
+y 17
+end
+arch mouse
+name wererat
+hp 8
+x 1
+generator 0
+end
+arch guard_ant
+name Giant Ant
+hp 10
+exp 30
+dam 8
+x 1
+y 1
+end
+arch holy_servant
+name homunculus
+hp 25
+maxhp 25
+x 1
+y 2
+end
+arch centipede
+x 1
+y 3
+end
+arch holy_servant
+name straw golem
+hp 25
+maxhp 25
+x 1
+y 5
+resist_magic 0
+resist_fire -100
+end
+arch gnome
+name gnomish wizard
+Con 1
+hp 50
+maxhp 10
+exp 100
+dam 8
+wc 2
+ac -1
+x 1
+y 6
+speed 0.250000
+attacktype 1
+resist_fire 0
+resist_cold 0
+resist_confusion 0
+randomitems rich
+run_away 85
+reflect_spell 0
+can_cast_spell 0
+end
+arch ghast
+name ghoul
+exp 250
+x 1
+y 7
+attacktype 4097
+end
+arch imp
+x 1
+y 8
+end
+arch pixie
+name water nymph
+x 1
+y 9
+end
+arch para_air
+name fog cloud
+x 1
+y 10
+end
+arch elf
+name Woodland-elf
+Con 0
+hp 180
+exp 300
+dam 10
+x 1
+y 14
+speed 0.200000
+type 0
+attacktype 4192
+monster 1
+unaggressive 1
+end
+arch generate_zombie
+x 1
+y 16
+end
+arch black_pudding
+name blue jelly
+dam 8
+x 1
+y 17
+attacktype 1040
+end
+arch giant_bat
+hp 15
+maxhp 15
+exp 50
+dam 7
+x 2
+end
+arch dog
+name little dog
+x 2
+y 1
+end
+arch kobold
+name kobold lord
+hp 6
+exp 35
+dam 5
+wc 15
+x 2
+y 2
+level 5
+end
+arch snake
+name baby crocodile
+hp 25
+x 2
+y 5
+end
+arch light_guard
+name Keystone Lieutenant
+Con 0
+maxhp 0
+exp 100
+dam 15
+x 2
+y 6
+speed 0.100000
+unaggressive 0
+sleep 0
+end
+arch elf
+name elf zombie
+Con 0
+hp 80
+exp 300
+dam 10
+x 2
+y 7
+speed 0.200000
+type 0
+attacktype 4192
+monster 1
+undead 1
+end
+arch imp
+name lemure
+hp 55
+exp 250
+dam 4
+x 2
+y 8
+speed 0.150000
+attacktype 4097
+randomitems none
+end
+arch pixie
+name mountain nymph
+x 2
+y 9
+end
+arch para_lightning
+name yellow light
+x 2
+y 10
+end
+arch bird
+name raven
+x 2
+y 14
+end
+arch dog
+x 2
+y 16
+end
+arch air_elemental
+name dust vortex
+x 2
+y 18
+end
+arch light_guard
+name Keystone Sergeant
+Con 0
+hp 40
+maxhp 0
+exp 40
+dam 8
+x 3
+unaggressive 0
+sleep 0
+end
+arch dog
+name were jackal
+hp 15
+x 3
+y 1
+attacktype 1025
+end
+arch kobold
+name kobold shaman
+hp 6
+exp 50
+dam 5
+wc 15
+x 3
+y 2
+level 5
+attacktype 1025
+end
+arch blob
+name jellyfish
+x 3
+y 5
+speed 0.050000
+end
+arch kobold
+name kobold mummy
+hp 20
+x 3
+y 6
+attacktype 4129
+undead 1
+end
+arch war_ant
+name Fire Ant
+x 3
+y 7
+attacktype 5
+resist_fire 100
+end
+arch imp
+name Quasit
+hp 55
+exp 250
+dam 4
+x 3
+y 8
+speed 0.050000
+attacktype 1025
+randomitems none
+end
+arch orc
+name Uruk-Hai
+hp 40
+exp 250
+dam 8
+wc 5
+ac 0
+x 3
+y 9
+level 4
+end
+arch light_guard
+name Keystone Kaptain
+Con 0
+hp 180
+maxhp 0
+exp 300
+dam 20
+ac -2
+x 3
+y 14
+speed 0.100000
+unaggressive 0
+sleep 0
+end
+arch dog
+name dingo
+x 3
+y 16
+end
+arch kobold
+name monkey
+x 4
+end
+arch beholder
+name floating eye
+hp 30
+maxhp 30
+exp 200
+dam 8
+x 4
+y 1
+attacktype 4096
+randomitems none
+end
+arch orc
+name hill orc
+hp 15
+dam 5
+x 4
+y 2
+end
+arch fungus
+name shrieker
+x 4
+y 5
+generator 0
+end
+arch orc
+name Mordor Orc
+hp 40
+exp 250
+dam 8
+wc 5
+ac 0
+x 4
+y 8
+level 4
+end
+arch earth_elemental
+name rock piercer
+dam 15
+x 4
+y 9
+end
+arch gnome
+name gnome mummy
+Con 1
+hp 250
+maxhp 10
+exp 350
+dam 8
+wc 2
+ac -1
+x 4
+y 14
+speed 0.100000
+attacktype 16417
+resist_fire 0
+resist_cold 0
+resist_confusion 0
+randomitems rich
+run_away 85
+undead 1
+reflect_spell 0
+can_cast_spell 0
+end
+arch small_troll
+name ape
+x 4
+y 15
+end
+arch panther
+name jaguar
+x 4
+y 16
+end
+arch orc
+name orc zombie
+hp 10
+dam 2
+x 5
+attacktype 4128
+undead 1
+end
+arch neko
+name kitten
+exp 8
+x 5
+y 1
+end
+arch pet_necro
+name rothe
+hp 10
+maxhp 10
+exp 50
+dam 5
+wc 0
+ac 5
+x 5
+y 2
+level 5
+hitback 0
+end
+arch fungus
+x 5
+y 5
+end
+arch green_slime
+name gray ooze
+maxhp 2
+exp 350
+dam 3
+x 5
+y 6
+attacktype 1109
+end
+arch war_ant
+name Soldier Ant
+x 5
+y 7
+end
+arch orc
+name Orc Shaman
+hp 40
+exp 350
+dam 8
+wc 5
+ac 0
+x 5
+y 8
+level 4
+randomitems rich
+can_cast_spell 1
+sleep 0
+end
+arch mouse
+name rock mole
+hp 16
+exp 25
+wc 8
+x 5
+y 9
+generator 0
+end
+arch neko
+name cat
+hp 3
+x 5
+y 16
+end
+arch cobra
+name Black Naga Hatchling
+Wis 1
+hp 50
+exp 300
+dam 15
+y 11
+attacktype 1089
+unaggressive 1
+end
+arch serpent
+name snake
+y 15
+attacktype 1025
+end
+arch unicorn
+y 18
+end
+arch cobra
+name Golden Naga Hatchling
+Wis 1
+hp 80
+exp 300
+dam 15
+x 1
+y 11
+unaggressive 1
+end
+arch cobra
+name Guardian Naga Hatchling
+Wis 1
+hp 150
+exp 300
+dam 15
+x 2
+y 11
+attacktype 1089
+unaggressive 1
+end
+arch serpent
+name water moccasin
+x 2
+y 15
+attacktype 1025
+end
+arch unicorn
+name grey unicorn
+x 2
+y 17
+end
+arch cobra
+name Red Naga Hatchling
+exp 250
+dam 5
+x 4
+y 6
+attacktype 1029
+end
+arch unicorn
+name black unicorn
+x 4
+y 17
+end

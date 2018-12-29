@@ -1,0 +1,23 @@
+Object spell_peace
+name peace
+name_pl peace
+face spell_praying.111
+level 20
+grace 80
+casting_time 10
+path_attuned 1
+other_arch peace
+dam 0
+dam_modifier 0
+range 4
+duration 2
+range_modifier 9
+maxgrace 36
+type 101
+subtype 7
+value 200
+attacktype 0
+no_drop 1
+invisible 1
+skill praying
+end

@@ -1,0 +1,737 @@
+arch map
+name Imperial Post Office
+difficulty 2
+region brest
+width 10
+height 10
+enter_x 5
+enter_y 8
+msg
+Creator: Commander Gros, slightly modified for brest by mikeeusa
+Email: yann.chachkoff@mailandnews.com
+Date: Wed Sep  5 22:09:24 2001
+Following a Lord MiDS idea
+endmsg
+end
+arch woodfloor
+end
+arch woodwall_2_2_2
+end
+arch woodfloor
+y 1
+end
+arch woodwall_2_1_1
+y 1
+end
+arch woodfloor
+y 2
+end
+arch woodwall_2_1_1
+y 2
+end
+arch dungeon_magic
+y 3
+end
+arch woodfloor
+y 3
+end
+arch swall_2_2_2
+y 3
+end
+arch woodwall_2_1_1
+y 3
+end
+arch woodfloor
+y 4
+end
+arch swall_1_2
+y 4
+end
+arch woodwall_2_1_1
+y 4
+end
+arch woodfloor
+y 5
+end
+arch woodwall_2_1_1
+y 5
+end
+arch woodfloor
+y 6
+end
+arch woodwall_2_1_1
+y 6
+end
+arch woodfloor
+y 7
+end
+arch woodwall_2_1_1
+y 7
+end
+arch woodfloor
+y 8
+end
+arch woodwall_2_1_1
+y 8
+end
+arch woodfloor
+y 9
+end
+arch woodwall_2_2_1
+y 9
+end
+arch woodfloor
+x 1
+end
+arch woodwall_2_1_2
+x 1
+end
+arch woodfloor
+x 1
+y 1
+end
+arch woodfloor
+x 1
+y 2
+end
+arch woodfloor
+x 1
+y 3
+end
+arch longtable_1_4
+x 1
+y 3
+end
+arch swall_2_1_2
+x 1
+y 3
+end
+arch dungeon_magic
+x 1
+y 3
+end
+arch woodfloor
+x 1
+y 4
+end
+arch mailbox
+arch event_close
+slaying /python/IPO/send.py
+title Python
+end
+arch event_apply
+slaying /python/IPO/receive.py
+title Python
+end
+x 1
+y 4
+material 0
+weight 0
+no_pick 1
+end
+arch woodfloor
+x 1
+y 5
+end
+arch woodfloor
+x 1
+y 6
+end
+arch woodfloor
+x 1
+y 7
+end
+arch woodfloor
+x 1
+y 8
+end
+arch woodfloor
+x 1
+y 9
+end
+arch woodwall_win2
+x 1
+y 9
+end
+arch woodfloor
+x 2
+end
+arch woodwall_2_1_2
+x 2
+end
+arch woodfloor
+x 2
+y 1
+end
+arch woodfloor
+x 2
+y 2
+end
+arch chair_2.1
+x 2
+y 2
+end
+arch merchant
+name Postmaster Seruvvo
+name_pl Postmaster Seruvvo
+msg
+@match *
+Seems the mail's down... sorry, come
+back once the required law is passed.
+endmsg
+arch event_say
+slaying /python/IPO/say.py
+title Python
+end
+x 2
+y 2
+level 115
+end
+arch woodfloor
+x 2
+y 3
+end
+arch longtable_2_1_2
+x 2
+y 3
+end
+arch swall_2_1_2
+x 2
+y 3
+end
+arch dungeon_magic
+x 2
+y 3
+end
+arch woodfloor
+x 2
+y 4
+end
+arch woodfloor
+x 2
+y 5
+end
+arch woodfloor
+x 2
+y 6
+end
+arch woodfloor
+x 2
+y 7
+end
+arch woodfloor
+x 2
+y 8
+end
+arch woodfloor
+x 2
+y 9
+end
+arch woodwall_2_1_2
+x 2
+y 9
+end
+arch woodfloor
+x 3
+end
+arch woodwall_2_1_2
+x 3
+end
+arch woodfloor
+x 3
+y 1
+end
+arch woodfloor
+x 3
+y 2
+end
+arch woodfloor
+x 3
+y 3
+end
+arch longtable_1_3
+x 3
+y 3
+end
+arch swall_2_1_2
+x 3
+y 3
+end
+arch dungeon_magic
+x 3
+y 3
+end
+arch woodfloor
+x 3
+y 4
+end
+arch woodfloor
+x 3
+y 5
+end
+arch woodfloor
+x 3
+y 6
+end
+arch woodfloor
+x 3
+y 7
+end
+arch woodfloor
+x 3
+y 8
+end
+arch woodfloor
+x 3
+y 9
+end
+arch woodwall_win2
+x 3
+y 9
+end
+arch woodfloor
+x 4
+end
+arch woodwall_2_1_2
+x 4
+end
+arch woodfloor
+x 4
+y 1
+end
+arch woodfloor
+x 4
+y 2
+end
+arch dungeon_magic
+x 4
+y 3
+end
+arch woodfloor
+x 4
+y 3
+end
+arch swall_1_3
+x 4
+y 3
+end
+arch woodwall_1_4
+x 4
+y 3
+end
+arch woodfloor
+x 4
+y 4
+end
+arch woodfloor
+x 4
+y 5
+end
+arch woodfloor
+x 4
+y 6
+end
+arch woodfloor
+x 4
+y 7
+end
+arch woodfloor
+x 4
+y 8
+end
+arch woodfloor
+x 4
+y 9
+end
+arch woodwall_1_3
+x 4
+y 9
+end
+arch woodfloor
+x 5
+end
+arch woodwall_2_1_2
+x 5
+end
+arch woodfloor
+x 5
+y 1
+end
+arch woodfloor
+x 5
+y 2
+end
+arch dungeon_magic
+x 5
+y 3
+end
+arch woodfloor
+x 5
+y 3
+end
+arch woodwall_2_1_2
+x 5
+y 3
+end
+arch woodfloor
+x 5
+y 4
+end
+arch woodfloor
+x 5
+y 5
+end
+arch woodfloor
+x 5
+y 6
+end
+arch woodfloor
+x 5
+y 7
+end
+arch woodfloor
+x 5
+y 8
+end
+arch invis_exit
+slaying /world/world_107_123
+hp 35
+sp 29
+x 5
+y 9
+end
+arch woodfloor
+x 5
+y 9
+end
+arch door_2
+x 5
+y 9
+no_pass 0
+end
+arch woodfloor
+x 6
+end
+arch woodwall_2_1_2
+x 6
+end
+arch woodfloor
+x 6
+y 1
+end
+arch woodfloor
+x 6
+y 2
+end
+arch dungeon_magic
+x 6
+y 3
+end
+arch woodfloor
+x 6
+y 3
+end
+arch woodwall_2_1_2
+x 6
+y 3
+end
+arch woodfloor
+x 6
+y 4
+end
+arch woodfloor
+x 6
+y 5
+end
+arch woodfloor
+x 6
+y 6
+end
+arch woodfloor
+x 6
+y 7
+end
+arch chair_2.4
+x 6
+y 7
+end
+arch woodfloor
+x 6
+y 8
+end
+arch woodfloor
+x 6
+y 9
+end
+arch woodwall_1_4
+x 6
+y 9
+end
+arch woodfloor
+x 7
+end
+arch woodwall_2_1_2
+x 7
+end
+arch woodfloor
+x 7
+y 1
+end
+arch woodfloor
+x 7
+y 2
+end
+arch dungeon_magic
+x 7
+y 3
+end
+arch woodfloor
+x 7
+y 3
+end
+arch woodwall_2_1_2
+x 7
+y 3
+end
+arch woodfloor
+x 7
+y 4
+end
+arch sign
+name Brest Message Board
+name_pl Brest Message Board
+msg
+I am a talking board, please say something to me.
+If you don't know what to say, say help.
+endmsg
+arch event_say
+slaying /python/IPO/board.py
+title Python
+name Brest board
+end
+x 7
+y 4
+end
+arch woodfloor
+x 7
+y 5
+end
+arch woodfloor
+x 7
+y 6
+end
+arch woodfloor
+x 7
+y 7
+end
+arch table_3
+x 7
+y 7
+end
+arch scroll
+name Prospectus
+name_pl Prospectus
+msg
+Imperial Post Services
+-----------------------
+Thank you for choosing the IPS to
+take care of your messages. Want to
+get more ? We have a wide range of
+products and services to offer to
+anyone. Pirate ? Try  our
+TalkParrots(tm) ! Beholder ? Enjoy
+our fabulous non-stereoscopical cards
+! And don't forget:
+The Empire Is Everywhere For You
+endmsg
+x 7
+y 7
+end
+arch book_read
+name Manual
+name_pl Manual
+msg
+Receiving Mail
+-----------------------
+Open the mailbox and get the scrolls,
+read them by applying.
+Sending Mail
+-----------------------
+Get a pencil and be sure that you are
+able to use the literacy skill. You can
+get both at the office, ask Colette for
+help.
+Get a preaddressed mailscroll, mark it
+and write on it with:
+use_skill inscription <text>
+You can write multiple lines, when done
+drop the scroll in the mailbox and it
+will be send.
+endmsg
+x 7
+y 7
+end
+arch woodfloor
+x 7
+y 8
+end
+arch chair_2.3
+x 7
+y 8
+end
+arch woodfloor
+x 7
+y 9
+end
+arch woodwall_2_1_2
+x 7
+y 9
+end
+arch woodfloor
+x 8
+end
+arch woodwall_2_1_2
+x 8
+end
+arch woodfloor
+x 8
+y 1
+end
+arch woodfloor
+x 8
+y 2
+end
+arch dungeon_magic
+x 8
+y 3
+end
+arch woodfloor
+x 8
+y 3
+end
+arch woodwall_2_1_2
+x 8
+y 3
+end
+arch woodfloor
+x 8
+y 4
+end
+arch clock
+msg
+No matter when you look at it, it is
+always too slow
+endmsg
+x 8
+y 4
+end
+arch woodfloor
+x 8
+y 5
+end
+arch woodfloor
+x 8
+y 6
+end
+arch woodfloor
+x 8
+y 7
+end
+arch chair_2.2
+x 8
+y 7
+end
+arch woodfloor
+x 8
+y 8
+end
+arch woodfloor
+x 8
+y 9
+end
+arch woodwall_2_1_2
+x 8
+y 9
+end
+arch woodfloor
+x 9
+end
+arch woodwall_2_2_3
+x 9
+end
+arch woodfloor
+x 9
+y 1
+end
+arch woodwall_2_1_1
+x 9
+y 1
+end
+arch woodfloor
+x 9
+y 2
+end
+arch woodwall_2_1_1
+x 9
+y 2
+end
+arch dungeon_magic
+x 9
+y 3
+end
+arch woodfloor
+x 9
+y 3
+end
+arch woodwall_3_4
+x 9
+y 3
+end
+arch woodfloor
+x 9
+y 4
+end
+arch woodwall_2_1_1
+x 9
+y 4
+end
+arch woodfloor
+x 9
+y 5
+end
+arch woodwall_2_1_1
+x 9
+y 5
+end
+arch woodfloor
+x 9
+y 6
+end
+arch woodwall_2_1_1
+x 9
+y 6
+end
+arch woodfloor
+x 9
+y 7
+end
+arch woodwall_2_1_1
+x 9
+y 7
+end
+arch woodfloor
+x 9
+y 8
+end
+arch woodwall_2_1_1
+x 9
+y 8
+end
+arch woodfloor
+x 9
+y 9
+end
+arch woodwall_2_2_4
+x 9
+y 9
+end

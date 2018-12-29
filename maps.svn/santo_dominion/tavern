@@ -1,0 +1,4003 @@
+arch map
+name tavern
+region santodominion
+msg
+Creator: Andreas Vogl
+Email: red.blaze@gmx.net
+Date: Tue Apr  5 17:23:51 1994
+endmsg
+width 27
+height 23
+enter_x 14
+enter_y 18
+end
+arch grass
+end
+arch mine2
+end
+arch grass
+y 1
+end
+arch grass
+y 2
+end
+arch grass
+y 3
+end
+arch grass
+y 4
+end
+arch grass
+y 5
+end
+arch grass
+y 6
+end
+arch grass
+y 7
+end
+arch grass
+y 8
+end
+arch grass
+y 9
+end
+arch grass
+y 10
+end
+arch grass
+y 11
+end
+arch grass
+y 12
+end
+arch grass
+y 13
+end
+arch grass
+y 14
+end
+arch grass
+y 15
+end
+arch grass
+y 16
+end
+arch grass
+y 17
+end
+arch grass
+y 18
+end
+arch grass
+y 19
+end
+arch grass
+y 20
+end
+arch cobblestones
+y 21
+end
+arch cobblestones
+y 22
+end
+arch grass
+x 1
+end
+arch mine2
+x 1
+end
+arch grass
+x 1
+y 1
+end
+arch tree4
+x 1
+y 1
+end
+arch grass
+x 1
+y 2
+end
+arch grass
+x 1
+y 3
+end
+arch grasspond
+x 1
+y 4
+end
+arch grass
+x 1
+y 5
+end
+arch grass
+x 1
+y 6
+end
+arch woodfloor
+x 1
+y 7
+end
+arch wwall_2_2_2
+x 1
+y 7
+end
+arch woodfloor
+x 1
+y 8
+end
+arch wwall_2_1_1
+x 1
+y 8
+end
+arch dungeon_magic
+x 1
+y 9
+end
+arch woodfloor
+x 1
+y 9
+end
+arch wwall_win1
+x 1
+y 9
+end
+arch woodfloor
+x 1
+y 10
+end
+arch wwall_2_1_1
+x 1
+y 10
+end
+arch woodfloor
+x 1
+y 11
+end
+arch wwall_2_1_1
+x 1
+y 11
+end
+arch woodfloor
+x 1
+y 12
+end
+arch wwall_2_1_1
+x 1
+y 12
+end
+arch dungeon_magic
+x 1
+y 13
+end
+arch woodfloor
+x 1
+y 13
+end
+arch wwall_win1
+x 1
+y 13
+end
+arch woodfloor
+x 1
+y 14
+end
+arch wwall_2_1_1
+x 1
+y 14
+end
+arch woodfloor
+x 1
+y 15
+end
+arch wwall_2_2_1
+x 1
+y 15
+end
+arch grass
+x 1
+y 16
+end
+arch grass
+x 1
+y 17
+end
+arch grass
+x 1
+y 18
+end
+arch grass
+x 1
+y 19
+end
+arch tree4
+x 1
+y 19
+end
+arch grass
+x 1
+y 20
+end
+arch cobblestones
+x 1
+y 21
+end
+arch cobblestones
+x 1
+y 22
+end
+arch grass
+x 2
+end
+arch mine2
+x 2
+end
+arch grass
+x 2
+y 1
+end
+arch grass
+x 2
+y 2
+end
+arch grass
+x 2
+y 3
+end
+arch grass
+x 2
+y 4
+end
+arch grass
+x 2
+y 5
+end
+arch grass
+x 2
+y 6
+end
+arch tree4
+x 2
+y 6
+end
+arch woodfloor
+x 2
+y 7
+end
+arch wwall_2_1_2
+x 2
+y 7
+end
+arch woodfloor
+x 2
+y 8
+end
+arch woodfloor
+x 2
+y 9
+end
+arch chair_1.4
+x 2
+y 9
+end
+arch woodfloor
+x 2
+y 10
+end
+arch woodfloor
+x 2
+y 11
+end
+arch woodfloor
+x 2
+y 12
+end
+arch woodfloor
+x 2
+y 13
+end
+arch chair_1.4
+x 2
+y 13
+end
+arch woodfloor
+x 2
+y 14
+end
+arch woodfloor
+x 2
+y 15
+end
+arch wwall_2_1_2
+x 2
+y 15
+end
+arch grass
+x 2
+y 16
+end
+arch tree4
+x 2
+y 16
+end
+arch grass
+x 2
+y 17
+end
+arch grass
+x 2
+y 18
+end
+arch grass
+x 2
+y 19
+end
+arch grass
+x 2
+y 20
+end
+arch cobblestones
+x 2
+y 21
+end
+arch cobblestones
+x 2
+y 22
+end
+arch grass
+x 3
+end
+arch mine2
+x 3
+end
+arch grass
+x 3
+y 1
+end
+arch brush
+x 3
+y 1
+end
+arch grass
+x 3
+y 2
+end
+arch tree4
+x 3
+y 2
+end
+arch grass
+x 3
+y 3
+end
+arch grass
+x 3
+y 4
+end
+arch grass
+x 3
+y 5
+end
+arch grass
+x 3
+y 6
+end
+arch woodfloor
+x 3
+y 7
+end
+arch wwall_2_1_2
+x 3
+y 7
+end
+arch woodfloor
+x 3
+y 8
+end
+arch chair_1.1
+x 3
+y 8
+end
+arch man
+msg
+@match mudman
+He lives in the swamp to the south.
+You should avoid that place!
+@match yes
+Grmbl... Leave me alone!
+@match no|stig
+He lives north of this town. There's
+one big mess in his house, but you
+migth find some useful stuff too.
+@match *
+Do you know Stig?
+endmsg
+friendly 1
+unaggressive 0
+x 3
+y 8
+end
+arch woodfloor
+x 3
+y 9
+end
+arch table_3
+x 3
+y 9
+end
+arch booze
+x 3
+y 9
+end
+arch woodfloor
+x 3
+y 10
+end
+arch chair_1.3
+x 3
+y 10
+end
+arch woodfloor
+x 3
+y 11
+end
+arch woodfloor
+x 3
+y 12
+end
+arch chair_1.1
+x 3
+y 12
+end
+arch woodfloor
+x 3
+y 13
+end
+arch table_3
+x 3
+y 13
+end
+arch woodfloor
+x 3
+y 14
+end
+arch chair_1.3
+x 3
+y 14
+end
+arch woodfloor
+x 3
+y 15
+end
+arch wwall_2_1_2
+x 3
+y 15
+end
+arch grass
+x 3
+y 16
+end
+arch grass
+x 3
+y 17
+end
+arch grass
+x 3
+y 18
+end
+arch grass
+x 3
+y 19
+end
+arch grass
+x 3
+y 20
+end
+arch cobblestones
+x 3
+y 21
+end
+arch cobblestones
+x 3
+y 22
+end
+arch grass
+x 4
+end
+arch mine2
+x 4
+end
+arch woodfloor
+x 4
+y 1
+end
+arch wwall_2_2_2
+x 4
+y 1
+end
+arch woodfloor
+x 4
+y 2
+end
+arch wwall_2_1_1
+x 4
+y 2
+end
+arch woodfloor
+x 4
+y 3
+end
+arch wwall_2_1_1
+x 4
+y 3
+end
+arch dungeon_magic
+x 4
+y 4
+end
+arch woodfloor
+x 4
+y 4
+end
+arch wwall_win1
+x 4
+y 4
+end
+arch woodfloor
+x 4
+y 5
+end
+arch wwall_2_1_1
+x 4
+y 5
+end
+arch woodfloor
+x 4
+y 6
+end
+arch wwall_2_1_1
+x 4
+y 6
+end
+arch woodfloor
+x 4
+y 7
+end
+arch wwall_3_1
+x 4
+y 7
+end
+arch woodfloor
+x 4
+y 8
+end
+arch woodfloor
+x 4
+y 9
+end
+arch chair_1.2
+x 4
+y 9
+end
+arch woodfloor
+x 4
+y 10
+end
+arch woodfloor
+x 4
+y 11
+end
+arch woodfloor
+x 4
+y 12
+end
+arch woodfloor
+x 4
+y 13
+end
+arch chair_1.2
+x 4
+y 13
+end
+arch woodfloor
+x 4
+y 14
+end
+arch woodfloor
+x 4
+y 15
+end
+arch wwall_2_2_3
+x 4
+y 15
+end
+arch woodfloor
+x 4
+y 16
+end
+arch wwall_2_1_1
+x 4
+y 16
+end
+arch dungeon_magic
+x 4
+y 17
+end
+arch woodfloor
+x 4
+y 17
+end
+arch wwall_win1
+x 4
+y 17
+end
+arch woodfloor
+x 4
+y 18
+end
+arch wwall_2_1_1
+x 4
+y 18
+end
+arch woodfloor
+x 4
+y 19
+end
+arch wwall_2_2_1
+x 4
+y 19
+end
+arch grass
+x 4
+y 20
+end
+arch cobblestones
+x 4
+y 21
+end
+arch cobblestones
+x 4
+y 22
+end
+arch grass
+x 5
+end
+arch mine2
+x 5
+end
+arch woodfloor
+x 5
+y 1
+end
+arch wwall_2_1_2
+x 5
+y 1
+end
+arch woodfloor
+x 5
+y 2
+end
+arch table_4
+x 5
+y 2
+end
+arch random_food
+x 5
+y 2
+end
+arch woodfloor
+x 5
+y 3
+end
+arch woodfloor
+x 5
+y 4
+end
+arch woodfloor
+x 5
+y 5
+end
+arch barrel
+x 5
+y 5
+end
+arch woodfloor
+x 5
+y 6
+end
+arch barrel
+x 5
+y 6
+end
+arch woodfloor
+x 5
+y 7
+end
+arch wwall_2_1_2
+x 5
+y 7
+end
+arch woodfloor
+x 5
+y 8
+end
+arch woodfloor
+x 5
+y 9
+end
+arch chair_1.4
+x 5
+y 9
+end
+arch woodfloor
+x 5
+y 10
+end
+arch woodfloor
+x 5
+y 11
+end
+arch woodfloor
+x 5
+y 12
+end
+arch woodfloor
+x 5
+y 13
+end
+arch chair_1.4
+x 5
+y 13
+end
+arch woodfloor
+x 5
+y 14
+end
+arch woodfloor
+x 5
+y 15
+end
+arch woodfloor
+x 5
+y 16
+end
+arch woodfloor
+x 5
+y 17
+end
+arch chair_1.4
+x 5
+y 17
+end
+arch fighter
+name TCI Representative
+msg
+@match TCI|tci
+Training Centers Incorporated is the best dang training
+you'll ever get. We have locations all over the world in
+exotic settings. Come fight with us! (heh, they tell us we
+have to say all that)
+@match Location|location
+Well, I don't know about all of them. But our local TCI
+is off the road south of here. Just look for one of our
+signs!
+@match Hello|hello|Hi|hi
+Well, hello there! Sit down and chat with me a bit. I am
+always looking for new people to tell about TCI.
+@match *
+Hi there young'un. Wanna join TCI?
+endmsg
+reflect_missile 1
+reflect_spell 1
+friendly 1
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
+resist_weaponmagic 100
+resist_ghosthit 100
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_fear 100
+resist_deplete 100
+resist_turn_undead 100
+resist_death 100
+resist_chaos 100
+resist_blind 100
+resist_holyword 100
+resist_godpower 100
+x 5
+y 17
+end
+arch woodfloor
+x 5
+y 18
+end
+arch woodfloor
+x 5
+y 19
+end
+arch wwall_2_1_2
+x 5
+y 19
+end
+arch grass
+x 5
+y 20
+end
+arch cobblestones
+x 5
+y 21
+end
+arch cobblestones
+x 5
+y 22
+end
+arch grass
+x 6
+end
+arch mine2
+x 6
+end
+arch woodfloor
+x 6
+y 1
+end
+arch wwall_2_1_2
+x 6
+y 1
+end
+arch woodfloor
+x 6
+y 2
+end
+arch table_4
+x 6
+y 2
+end
+arch random_food
+x 6
+y 2
+end
+arch woodfloor
+x 6
+y 3
+end
+arch woodfloor
+x 6
+y 4
+end
+arch woodfloor
+x 6
+y 5
+end
+arch woodfloor
+x 6
+y 6
+end
+arch barrel
+x 6
+y 6
+end
+arch woodfloor
+x 6
+y 7
+end
+arch wwall_2_1_2
+x 6
+y 7
+end
+arch woodfloor
+x 6
+y 8
+end
+arch chair_1.1
+x 6
+y 8
+end
+arch woodfloor
+x 6
+y 9
+end
+arch table_3
+x 6
+y 9
+end
+arch woodfloor
+x 6
+y 10
+end
+arch chair_1.3
+x 6
+y 10
+end
+arch woodfloor
+x 6
+y 11
+end
+arch woodfloor
+x 6
+y 12
+end
+arch chair_1.1
+x 6
+y 12
+end
+arch woodfloor
+x 6
+y 13
+end
+arch table_3
+x 6
+y 13
+end
+arch woodfloor
+x 6
+y 14
+end
+arch chair_1.3
+x 6
+y 14
+end
+arch woodfloor
+x 6
+y 15
+end
+arch woodfloor
+x 6
+y 16
+end
+arch chair_1.1
+x 6
+y 16
+end
+arch woodfloor
+x 6
+y 17
+end
+arch table_3
+x 6
+y 17
+end
+arch woodfloor
+x 6
+y 18
+end
+arch chair_1.3
+x 6
+y 18
+end
+arch dungeon_magic
+x 6
+y 19
+end
+arch woodfloor
+x 6
+y 19
+end
+arch wwall_win2
+x 6
+y 19
+end
+arch grass
+x 6
+y 20
+end
+arch cobblestones
+x 6
+y 21
+end
+arch cobblestones
+x 6
+y 22
+end
+arch grass
+x 7
+end
+arch mine2
+x 7
+end
+arch woodfloor
+x 7
+y 1
+end
+arch wwall_3_3
+x 7
+y 1
+end
+arch woodfloor
+x 7
+y 2
+end
+arch wwall_1_2
+x 7
+y 2
+end
+arch woodfloor
+x 7
+y 3
+end
+arch woodfloor
+x 7
+y 4
+end
+arch glue
+name sticky stuff
+x 7
+y 4
+end
+arch woodfloor
+x 7
+y 5
+end
+arch woodfloor
+x 7
+y 6
+end
+arch woodfloor
+x 7
+y 7
+end
+arch wwall_1_3
+x 7
+y 7
+end
+arch woodfloor
+x 7
+y 8
+end
+arch woodfloor
+x 7
+y 9
+end
+arch chair_1.2
+x 7
+y 9
+end
+arch woodfloor
+x 7
+y 10
+end
+arch woodfloor
+x 7
+y 11
+end
+arch woodfloor
+x 7
+y 12
+end
+arch woodfloor
+x 7
+y 13
+end
+arch chair_1.2
+x 7
+y 13
+end
+arch woodfloor
+x 7
+y 14
+end
+arch woodfloor
+x 7
+y 15
+end
+arch woodfloor
+x 7
+y 16
+end
+arch woodfloor
+x 7
+y 17
+end
+arch chair_1.2
+x 7
+y 17
+end
+arch woodfloor
+x 7
+y 18
+end
+arch woodfloor
+x 7
+y 19
+end
+arch wwall_2_1_2
+x 7
+y 19
+end
+arch grass
+x 7
+y 20
+end
+arch cobblestones
+x 7
+y 21
+end
+arch cobblestones
+x 7
+y 22
+end
+arch grass
+x 8
+end
+arch mine2
+x 8
+end
+arch woodfloor
+x 8
+y 1
+end
+arch wwall_2_1_2
+x 8
+y 1
+end
+arch permanent_lava
+name fireplace
+x 8
+y 2
+end
+arch cauldron
+material 0
+no_pick 1
+no_pass 1
+is_cauldron 0
+x 8
+y 2
+end
+arch woodfloor
+x 8
+y 3
+end
+arch crone
+name cook
+msg
+@match *
+I'm busy here.
+endmsg
+hp 80
+maxhp 80
+friendly 1
+unaggressive 0
+x 8
+y 3
+end
+arch woodfloor
+x 8
+y 4
+end
+arch woodfloor
+x 8
+y 5
+end
+arch woodfloor
+x 8
+y 6
+end
+arch woodfloor
+x 8
+y 7
+end
+arch door_look_1
+hp 0
+exp 0
+ac 0
+level 0
+material 0
+randomitems none
+alive 0
+no_pass 0
+pass_thru 0
+x 8
+y 7
+end
+arch woodfloor
+x 8
+y 8
+end
+arch woodfloor
+x 8
+y 9
+end
+arch chair_1.4
+x 8
+y 9
+end
+arch woodfloor
+x 8
+y 10
+end
+arch woodfloor
+x 8
+y 11
+end
+arch woodfloor
+x 8
+y 12
+end
+arch woodfloor
+x 8
+y 13
+end
+arch chair_1.4
+x 8
+y 13
+end
+arch sailor
+msg
+@match mudman
+Huh... Mudman? What's that?
+@match *
+St. Dominion is a nice little town.
+I bought one of the appartments and
+now I'm staying here for the weekends.
+endmsg
+hp 100
+maxhp 100
+friendly 1
+unaggressive 0
+random_movement 0
+x 8
+y 13
+end
+arch woodfloor
+x 8
+y 14
+end
+arch woodfloor
+x 8
+y 15
+end
+arch woodfloor
+x 8
+y 16
+end
+arch woodfloor
+x 8
+y 17
+end
+arch chair_1.4
+x 8
+y 17
+end
+arch woodfloor
+x 8
+y 18
+end
+arch woodfloor
+x 8
+y 19
+end
+arch wwall_2_1_2
+x 8
+y 19
+end
+arch grass
+x 8
+y 20
+end
+arch tree4
+x 8
+y 20
+end
+arch cobblestones
+x 8
+y 21
+end
+arch cobblestones
+x 8
+y 22
+end
+arch grass
+x 9
+end
+arch mine2
+x 9
+end
+arch woodfloor
+x 9
+y 1
+end
+arch wwall_3_3
+x 9
+y 1
+end
+arch woodfloor
+x 9
+y 2
+end
+arch wwall_1_2
+x 9
+y 2
+end
+arch woodfloor
+x 9
+y 3
+end
+arch woodfloor
+x 9
+y 4
+end
+arch woodfloor
+x 9
+y 5
+end
+arch glue
+name sticky stuff
+x 9
+y 5
+end
+arch woodfloor
+x 9
+y 6
+end
+arch woodfloor
+x 9
+y 7
+end
+arch wwall_1_4
+x 9
+y 7
+end
+arch woodfloor
+x 9
+y 8
+end
+arch chair_1.1
+x 9
+y 8
+end
+arch woodfloor
+x 9
+y 9
+end
+arch table_3
+x 9
+y 9
+end
+arch woodfloor
+x 9
+y 10
+end
+arch chair_1.3
+x 9
+y 10
+end
+arch woodfloor
+x 9
+y 11
+end
+arch woodfloor
+x 9
+y 12
+end
+arch chair_1.1
+x 9
+y 12
+end
+arch woodfloor
+x 9
+y 13
+end
+arch table_3
+x 9
+y 13
+end
+arch random_food
+x 9
+y 13
+end
+arch woodfloor
+x 9
+y 14
+end
+arch chair_1.3
+x 9
+y 14
+end
+arch woodfloor
+x 9
+y 15
+end
+arch woodfloor
+x 9
+y 16
+end
+arch chair_1.1
+x 9
+y 16
+end
+arch woodfloor
+x 9
+y 17
+end
+arch table_3
+x 9
+y 17
+end
+arch woodfloor
+x 9
+y 18
+end
+arch chair_1.3
+x 9
+y 18
+end
+arch dungeon_magic
+x 9
+y 19
+end
+arch woodfloor
+x 9
+y 19
+end
+arch wwall_win2
+x 9
+y 19
+end
+arch grass
+x 9
+y 20
+end
+arch cobblestones
+x 9
+y 21
+end
+arch cobblestones
+x 9
+y 22
+end
+arch grass
+x 10
+end
+arch mine2
+x 10
+end
+arch woodfloor
+x 10
+y 1
+end
+arch wwall_2_1_2
+x 10
+y 1
+end
+arch woodfloor
+x 10
+y 2
+end
+arch chair_2.1
+x 10
+y 2
+end
+arch woodfloor
+x 10
+y 3
+end
+arch woodfloor
+x 10
+y 4
+end
+arch glue
+name sticky stuff
+x 10
+y 4
+end
+arch woodfloor
+x 10
+y 5
+end
+arch woodfloor
+x 10
+y 6
+end
+arch woodfloor
+x 10
+y 7
+end
+arch wwall_2_1_2
+x 10
+y 7
+end
+arch woodfloor
+x 10
+y 8
+end
+arch woodfloor
+x 10
+y 9
+end
+arch chair_1.2
+x 10
+y 9
+end
+arch woodfloor
+x 10
+y 10
+end
+arch woodfloor
+x 10
+y 11
+end
+arch woodfloor
+x 10
+y 12
+end
+arch woodfloor
+x 10
+y 13
+end
+arch chair_1.2
+x 10
+y 13
+end
+arch woodfloor
+x 10
+y 14
+end
+arch woodfloor
+x 10
+y 15
+end
+arch woodfloor
+x 10
+y 16
+end
+arch woodfloor
+x 10
+y 17
+end
+arch chair_1.2
+x 10
+y 17
+end
+arch woodfloor
+x 10
+y 18
+end
+arch woodfloor
+x 10
+y 19
+end
+arch wwall_2_1_2
+x 10
+y 19
+end
+arch grass
+x 10
+y 20
+end
+arch cobblestones
+x 10
+y 21
+end
+arch cobblestones
+x 10
+y 22
+end
+arch grass
+x 11
+end
+arch mine2
+x 11
+end
+arch woodfloor
+x 11
+y 1
+end
+arch wwall_2_1_2
+x 11
+y 1
+end
+arch woodfloor
+x 11
+y 2
+end
+arch fireplace
+x 11
+y 2
+end
+arch woodfloor
+x 11
+y 3
+end
+arch woodfloor
+x 11
+y 4
+end
+arch woodfloor
+x 11
+y 5
+end
+arch woodfloor
+x 11
+y 6
+end
+arch chest
+x 11
+y 6
+end
+arch woodfloor
+x 11
+y 7
+end
+arch wwall_2_1_2
+x 11
+y 7
+end
+arch woodfloor
+x 11
+y 8
+end
+arch woodfloor
+x 11
+y 9
+end
+arch woodfloor
+x 11
+y 10
+end
+arch woodfloor
+x 11
+y 11
+end
+arch woodfloor
+x 11
+y 12
+end
+arch woodfloor
+x 11
+y 13
+end
+arch woodfloor
+x 11
+y 14
+end
+arch woodfloor
+x 11
+y 15
+end
+arch wwall_2_2_2
+x 11
+y 15
+end
+arch woodfloor
+x 11
+y 16
+end
+arch wwall_2_1_1
+x 11
+y 16
+end
+arch woodfloor
+x 11
+y 17
+end
+arch wwall_2_1_1
+x 11
+y 17
+end
+arch woodfloor
+x 11
+y 18
+end
+arch wwall_2_1_1
+x 11
+y 18
+end
+arch woodfloor
+x 11
+y 19
+end
+arch wwall_3_1
+x 11
+y 19
+end
+arch grass
+x 11
+y 20
+end
+arch cobblestones
+x 11
+y 21
+end
+arch cobblestones
+x 11
+y 22
+end
+arch grass
+x 12
+end
+arch mine2
+x 12
+end
+arch woodfloor
+x 12
+y 1
+end
+arch wwall_3_3
+x 12
+y 1
+end
+arch woodfloor
+x 12
+y 2
+end
+arch wwall_2_1_1
+x 12
+y 2
+end
+arch woodfloor
+x 12
+y 3
+end
+arch wwall_1_2
+x 12
+y 3
+end
+arch woodfloor
+x 12
+y 4
+end
+arch door_look_2
+hp 0
+exp 0
+ac 0
+level 0
+material 0
+randomitems none
+alive 0
+no_pass 0
+pass_thru 0
+x 12
+y 4
+end
+arch woodfloor
+x 12
+y 5
+end
+arch wwall_1_1
+x 12
+y 5
+end
+arch woodfloor
+x 12
+y 6
+end
+arch wwall_2_1_1
+x 12
+y 6
+end
+arch woodfloor
+x 12
+y 7
+end
+arch wwall_3_1
+x 12
+y 7
+end
+arch woodfloor
+x 12
+y 8
+end
+arch clock
+x 12
+y 8
+end
+arch woodfloor
+x 12
+y 9
+end
+arch woodfloor
+x 12
+y 10
+end
+arch woodfloor
+x 12
+y 11
+end
+arch woodfloor
+x 12
+y 12
+end
+arch woodfloor
+x 12
+y 13
+end
+arch woodfloor
+x 12
+y 14
+end
+arch woodfloor
+x 12
+y 15
+end
+arch wwall_2_1_2
+x 12
+y 15
+end
+arch woodfloor
+x 12
+y 16
+end
+arch woodfloor
+x 12
+y 17
+end
+arch woodfloor
+x 12
+y 18
+end
+arch flowers_permanent
+no_pick 1
+x 12
+y 18
+end
+arch woodfloor
+x 12
+y 19
+end
+arch wwall_2_1_2
+x 12
+y 19
+end
+arch grass
+x 12
+y 20
+end
+arch statue2
+x 12
+y 20
+end
+arch cobblestones
+x 12
+y 21
+end
+arch cobblestones
+x 12
+y 22
+end
+arch grass
+x 13
+end
+arch mine2
+x 13
+end
+arch woodfloor
+x 13
+y 1
+end
+arch wwall_2_1_2
+x 13
+y 1
+end
+arch woodfloor
+x 13
+y 2
+end
+arch barrel
+x 13
+y 2
+end
+arch woodfloor
+x 13
+y 3
+end
+arch woodfloor
+x 13
+y 4
+end
+arch woodfloor
+x 13
+y 5
+end
+arch booze
+x 13
+y 5
+end
+arch woodfloor
+x 13
+y 6
+end
+arch spider_web
+x 13
+y 6
+end
+arch woodfloor
+x 13
+y 7
+end
+arch wwall_2_1_2
+x 13
+y 7
+end
+arch woodfloor
+x 13
+y 8
+end
+arch woodfloor
+x 13
+y 9
+end
+arch woodfloor
+x 13
+y 10
+end
+arch woodfloor
+x 13
+y 11
+end
+arch woodfloor
+x 13
+y 12
+end
+arch woodfloor
+x 13
+y 13
+end
+arch woodfloor
+x 13
+y 14
+end
+arch woodfloor
+x 13
+y 15
+end
+arch wwall_2_1_2
+x 13
+y 15
+end
+arch woodfloor
+x 13
+y 16
+end
+arch woodfloor
+x 13
+y 17
+end
+arch woodfloor
+x 13
+y 18
+end
+arch woodfloor
+x 13
+y 19
+end
+arch wwall_1_3
+x 13
+y 19
+end
+arch dungeon_magic
+x 13
+y 20
+end
+arch cobblestones
+x 13
+y 20
+end
+arch cobblestones
+x 13
+y 21
+end
+arch cobblestones
+x 13
+y 22
+end
+arch grass
+x 14
+end
+arch mine2
+x 14
+end
+arch woodfloor
+x 14
+y 1
+end
+arch wwall_2_1_2
+x 14
+y 1
+end
+arch woodfloor
+x 14
+y 2
+end
+arch barrel
+x 14
+y 2
+end
+arch woodfloor
+x 14
+y 3
+end
+arch random_food
+x 14
+y 3
+end
+arch woodfloor
+x 14
+y 4
+end
+arch woodfloor
+x 14
+y 5
+end
+arch woodfloor
+x 14
+y 6
+end
+arch random_food
+x 14
+y 6
+end
+arch woodfloor
+x 14
+y 7
+end
+arch wwall_2_1_2
+x 14
+y 7
+end
+arch woodfloor
+x 14
+y 8
+end
+arch woman
+msg
+@match mudman
+Shhh! You must not speak HIS name!
+It's not healthy to be that curious.
+@match warrior|wound|upstairs
+Maybe you should look after him?
+@match *
+There's a wounded warrior in one of the
+rooms upstairs. That guy is in real bad
+shape. I wonder what happened to him?
+endmsg
+unaggressive 0
+friendly 1
+x 14
+y 8
+end
+arch woodfloor
+x 14
+y 9
+end
+arch woodfloor
+x 14
+y 10
+end
+arch woodfloor
+x 14
+y 11
+end
+arch woodfloor
+x 14
+y 12
+end
+arch woodfloor
+x 14
+y 13
+end
+arch woodfloor
+x 14
+y 14
+end
+arch woodfloor
+x 14
+y 15
+end
+arch wwall_2_1_2
+x 14
+y 15
+end
+arch woodfloor
+x 14
+y 16
+end
+arch woodfloor
+x 14
+y 17
+end
+arch woodfloor
+x 14
+y 18
+end
+arch invis_exit
+slaying /world/world_102_108
+hp 16
+sp 7
+x 14
+y 19
+end
+arch woodfloor
+x 14
+y 19
+end
+arch door_look_1
+hp 0
+exp 0
+ac 0
+level 0
+material 0
+randomitems none
+alive 0
+no_pass 0
+pass_thru 0
+x 14
+y 19
+end
+arch dungeon_magic
+x 14
+y 20
+end
+arch cobblestones
+x 14
+y 20
+end
+arch cobblestones
+x 14
+y 21
+end
+arch cobblestones
+x 14
+y 22
+end
+arch grass
+x 15
+end
+arch mine2
+x 15
+end
+arch woodfloor
+x 15
+y 1
+end
+arch wwall_2_1_2
+x 15
+y 1
+end
+arch woodfloor
+x 15
+y 2
+end
+arch woodfloor
+x 15
+y 3
+end
+arch booze
+x 15
+y 3
+end
+arch woodfloor
+x 15
+y 4
+end
+arch random_food
+x 15
+y 4
+end
+arch woodfloor
+x 15
+y 5
+end
+arch woodfloor
+x 15
+y 6
+end
+arch barrel
+x 15
+y 6
+end
+arch woodfloor
+x 15
+y 7
+end
+arch wwall_2_1_2
+x 15
+y 7
+end
+arch mover_7
+attacktype 1
+x 15
+y 8
+end
+arch woodfloor
+x 15
+y 8
+end
+arch woodfloor
+x 15
+y 9
+end
+arch woodfloor
+x 15
+y 10
+end
+arch wwall_1_4
+x 15
+y 10
+end
+arch woodfloor
+x 15
+y 11
+end
+arch woodfloor
+x 15
+y 12
+end
+arch woodfloor
+x 15
+y 13
+end
+arch wwall_1_4
+x 15
+y 13
+end
+arch woodfloor
+x 15
+y 14
+end
+arch door_look_2
+hp 0
+exp 0
+ac 0
+level 0
+material 0
+randomitems none
+alive 0
+no_pass 0
+pass_thru 0
+x 15
+y 14
+end
+arch woodfloor
+x 15
+y 15
+end
+arch wwall_1_3
+x 15
+y 15
+end
+arch woodfloor
+x 15
+y 16
+end
+arch woodfloor
+x 15
+y 17
+end
+arch woodfloor
+x 15
+y 18
+end
+arch sign
+msg
+Welcome to the Golden Lion!
+endmsg
+x 15
+y 18
+end
+arch woodfloor
+x 15
+y 19
+end
+arch wwall_1_4
+x 15
+y 19
+end
+arch dungeon_magic
+x 15
+y 20
+end
+arch cobblestones
+x 15
+y 20
+end
+arch cobblestones
+x 15
+y 21
+end
+arch cobblestones
+x 15
+y 22
+end
+arch grass
+x 16
+end
+arch mine2
+x 16
+end
+arch woodfloor
+x 16
+y 1
+end
+arch wwall_2_1_2
+x 16
+y 1
+end
+arch woodfloor
+x 16
+y 2
+end
+arch stair_down_2
+name cellar
+slaying tavern.downstairs
+hp 21
+sp 19
+x 16
+y 2
+end
+arch woodfloor
+x 16
+y 3
+end
+arch random_food
+x 16
+y 3
+end
+arch woodfloor
+x 16
+y 4
+end
+arch barrel
+x 16
+y 4
+end
+arch woodfloor
+x 16
+y 5
+end
+arch barrel
+x 16
+y 5
+end
+arch woodfloor
+x 16
+y 6
+end
+arch barrel
+x 16
+y 6
+end
+arch woodfloor
+x 16
+y 7
+end
+arch wwall_2_1_2
+x 16
+y 7
+end
+arch mover_7
+attacktype 1
+x 16
+y 8
+end
+arch woodfloor
+x 16
+y 8
+end
+arch stair_3_up
+slaying tavern.2ndfloor
+hp 16
+sp 14
+x 16
+y 8
+end
+arch woodfloor
+x 16
+y 9
+end
+arch woodfloor
+x 16
+y 10
+end
+arch wwall_2_1_2
+x 16
+y 10
+end
+arch woodfloor
+x 16
+y 11
+end
+arch woodfloor
+x 16
+y 12
+end
+arch woodfloor
+x 16
+y 13
+end
+arch wwall_2_1_2
+x 16
+y 13
+end
+arch woodfloor
+x 16
+y 14
+end
+arch woodfloor
+x 16
+y 15
+end
+arch woodfloor
+x 16
+y 16
+end
+arch woodfloor
+x 16
+y 17
+end
+arch woodfloor
+x 16
+y 18
+end
+arch flowers_permanent
+no_pick 1
+x 16
+y 18
+end
+arch woodfloor
+x 16
+y 19
+end
+arch wwall_2_1_2
+x 16
+y 19
+end
+arch grass
+x 16
+y 20
+end
+arch statue2
+x 16
+y 20
+end
+arch cobblestones
+x 16
+y 21
+end
+arch cobblestones
+x 16
+y 22
+end
+arch grass
+x 17
+end
+arch mine2
+x 17
+end
+arch woodfloor
+x 17
+y 1
+end
+arch wwall_3_3
+x 17
+y 1
+end
+arch woodfloor
+x 17
+y 2
+end
+arch wwall_2_1_1
+x 17
+y 2
+end
+arch woodfloor
+x 17
+y 3
+end
+arch wwall_2_1_1
+x 17
+y 3
+end
+arch woodfloor
+x 17
+y 4
+end
+arch wwall_2_1_1
+x 17
+y 4
+end
+arch woodfloor
+x 17
+y 5
+end
+arch wwall_2_1_1
+x 17
+y 5
+end
+arch woodfloor
+x 17
+y 6
+end
+arch wwall_2_1_1
+x 17
+y 6
+end
+arch woodfloor
+x 17
+y 7
+end
+arch wwall_4
+x 17
+y 7
+end
+arch woodfloor
+x 17
+y 8
+end
+arch wwall_2_1_1
+x 17
+y 8
+end
+arch woodfloor
+x 17
+y 9
+end
+arch wwall_2_1_1
+x 17
+y 9
+end
+arch woodfloor
+x 17
+y 10
+end
+arch wwall_2_2_4
+x 17
+y 10
+end
+arch woodfloor
+x 17
+y 11
+end
+arch woodfloor
+x 17
+y 12
+end
+arch woodfloor
+x 17
+y 13
+end
+arch wwall_2_2_3
+x 17
+y 13
+end
+arch woodfloor
+x 17
+y 14
+end
+arch wwall_2_1_1
+x 17
+y 14
+end
+arch woodfloor
+x 17
+y 15
+end
+arch wwall_2_1_1
+x 17
+y 15
+end
+arch woodfloor
+x 17
+y 16
+end
+arch wwall_2_1_1
+x 17
+y 16
+end
+arch woodfloor
+x 17
+y 17
+end
+arch wwall_2_1_1
+x 17
+y 17
+end
+arch woodfloor
+x 17
+y 18
+end
+arch wwall_2_1_1
+x 17
+y 18
+end
+arch woodfloor
+x 17
+y 19
+end
+arch wwall_3_1
+x 17
+y 19
+end
+arch grass
+x 17
+y 20
+end
+arch cobblestones
+x 17
+y 21
+end
+arch cobblestones
+x 17
+y 22
+end
+arch grass
+x 18
+end
+arch mine2
+x 18
+end
+arch woodfloor
+x 18
+y 1
+end
+arch wwall_2_1_2
+x 18
+y 1
+end
+arch woodfloor
+x 18
+y 2
+end
+arch brazier
+x 18
+y 2
+end
+arch woodfloor
+x 18
+y 3
+end
+arch flowers_permanent
+x 18
+y 3
+end
+arch woodfloor
+x 18
+y 4
+end
+arch chair_1.4
+x 18
+y 4
+end
+arch woodfloor
+x 18
+y 5
+end
+arch flowers_permanent
+x 18
+y 5
+end
+arch woodfloor
+x 18
+y 6
+end
+arch brazier
+x 18
+y 6
+end
+arch woodfloor
+x 18
+y 7
+end
+arch wwall_2_1_2
+x 18
+y 7
+end
+arch woodfloor
+x 18
+y 8
+end
+arch woodfloor
+x 18
+y 9
+end
+arch chair_1.4
+x 18
+y 9
+end
+arch woodfloor
+x 18
+y 10
+end
+arch woodfloor
+x 18
+y 11
+end
+arch woodfloor
+x 18
+y 12
+end
+arch woodfloor
+x 18
+y 13
+end
+arch chair_1.4
+x 18
+y 13
+end
+arch woodfloor
+x 18
+y 14
+end
+arch woodfloor
+x 18
+y 15
+end
+arch woodfloor
+x 18
+y 16
+end
+arch woodfloor
+x 18
+y 17
+end
+arch chair_1.4
+x 18
+y 17
+end
+arch woodfloor
+x 18
+y 18
+end
+arch woodfloor
+x 18
+y 19
+end
+arch wwall_2_1_2
+x 18
+y 19
+end
+arch grass
+x 18
+y 20
+end
+arch cobblestones
+x 18
+y 21
+end
+arch cobblestones
+x 18
+y 22
+end
+arch grass
+x 19
+end
+arch mine2
+x 19
+end
+arch woodfloor
+x 19
+y 1
+end
+arch wwall_2_1_2
+x 19
+y 1
+end
+arch woodfloor
+x 19
+y 2
+end
+arch random_wealth
+x 19
+y 2
+end
+arch woodfloor
+x 19
+y 3
+end
+arch chair_1.1
+x 19
+y 3
+end
+arch woodfloor
+x 19
+y 4
+end
+arch table_3
+x 19
+y 4
+end
+arch random_talisman
+exp 3
+x 19
+y 4
+end
+arch woodfloor
+x 19
+y 5
+end
+arch chair_1.3
+x 19
+y 5
+end
+arch woodfloor
+x 19
+y 6
+end
+arch random_wealth
+x 19
+y 6
+end
+arch woodfloor
+x 19
+y 7
+end
+arch wwall_1_3
+x 19
+y 7
+end
+arch woodfloor
+x 19
+y 8
+end
+arch chair_1.1
+x 19
+y 8
+end
+arch wizard
+name blue wizard
+face wizard_blue.151
+msg
+@match mudman|hero|yes|gate
+The inhabitants of St. Dominion are
+scared of the Mudman. Kill him and
+put his residue on my table. Then I
+will open the gate for you.
+@match *
+Do you see this room behind me? It's
+the "hero's room". You may enter if
+you prove yourself worthy by killing
+the Mudman.
+endmsg
+type 0
+Str 10
+Con 20
+hp 300
+maxhp 300
+level 15
+monster 1
+friendly 1
+x 19
+y 8
+end
+arch altar
+name 1
+slaying Mudman's residue
+food 1
+protected 1
+connected 1
+x 19
+y 9
+end
+arch magic_mouth
+name 1
+msg
+The blue wizard says:
+You defeated the Mudman, you are
+truely a hero! Take your reward.
+endmsg
+protected 1
+connected 1
+walk_on 0
+fly_on 0
+x 19
+y 9
+end
+arch woodfloor
+x 19
+y 9
+end
+arch table_3
+material 0
+no_pick 1
+x 19
+y 9
+end
+arch woodfloor
+x 19
+y 10
+end
+arch chair_1.3
+x 19
+y 10
+end
+arch woodfloor
+x 19
+y 11
+end
+arch woodfloor
+x 19
+y 12
+end
+arch chair_1.1
+x 19
+y 12
+end
+arch woodfloor
+x 19
+y 13
+end
+arch table_3
+x 19
+y 13
+end
+arch woodfloor
+x 19
+y 14
+end
+arch chair_1.3
+x 19
+y 14
+end
+arch woodfloor
+x 19
+y 15
+end
+arch woodfloor
+x 19
+y 16
+end
+arch chair_1.1
+x 19
+y 16
+end
+arch woodfloor
+x 19
+y 17
+end
+arch table_3
+x 19
+y 17
+end
+arch woodfloor
+x 19
+y 18
+end
+arch chair_1.3
+x 19
+y 18
+end
+arch dungeon_magic
+x 19
+y 19
+end
+arch woodfloor
+x 19
+y 19
+end
+arch wwall_win2
+x 19
+y 19
+end
+arch grass
+x 19
+y 20
+end
+arch cobblestones
+x 19
+y 21
+end
+arch cobblestones
+x 19
+y 22
+end
+arch grass
+x 20
+end
+arch mine2
+x 20
+end
+arch woodfloor
+x 20
+y 1
+end
+arch wwall_2_1_2
+x 20
+y 1
+end
+arch woodfloor
+x 20
+y 2
+end
+arch random_wealth
+x 20
+y 2
+end
+arch woodfloor
+x 20
+y 3
+end
+arch chair_1.1
+x 20
+y 3
+end
+arch woodfloor
+x 20
+y 4
+end
+arch table_3
+x 20
+y 4
+end
+arch random_potion
+exp 5
+x 20
+y 4
+end
+arch woodfloor
+x 20
+y 5
+end
+arch chair_1.3
+x 20
+y 5
+end
+arch woodfloor
+x 20
+y 6
+end
+arch random_wealth
+x 20
+y 6
+end
+arch dungeon_magic
+x 20
+y 7
+end
+arch woodfloor
+x 20
+y 7
+end
+arch grate_closed_1
+speed 0.500000
+protected 1
+connected 1
+x 20
+y 7
+end
+arch woodfloor
+x 20
+y 8
+end
+arch woodfloor
+x 20
+y 9
+end
+arch chair_1.2
+x 20
+y 9
+end
+arch woodfloor
+x 20
+y 10
+end
+arch woodfloor
+x 20
+y 11
+end
+arch woodfloor
+x 20
+y 12
+end
+arch woodfloor
+x 20
+y 13
+end
+arch chair_1.2
+x 20
+y 13
+end
+arch woodfloor
+x 20
+y 14
+end
+arch woodfloor
+x 20
+y 15
+end
+arch woodfloor
+x 20
+y 16
+end
+arch woodfloor
+x 20
+y 17
+end
+arch chair_1.2
+x 20
+y 17
+end
+arch woodfloor
+x 20
+y 18
+end
+arch woodfloor
+x 20
+y 19
+end
+arch wwall_2_1_2
+x 20
+y 19
+end
+arch grass
+x 20
+y 20
+end
+arch cobblestones
+x 20
+y 21
+end
+arch cobblestones
+x 20
+y 22
+end
+arch grass
+x 21
+end
+arch mine2
+x 21
+end
+arch woodfloor
+x 21
+y 1
+end
+arch wwall_2_1_2
+x 21
+y 1
+end
+arch woodfloor
+x 21
+y 2
+end
+arch random_wealth
+x 21
+y 2
+end
+arch woodfloor
+x 21
+y 3
+end
+arch chair_1.1
+x 21
+y 3
+end
+arch woodfloor
+x 21
+y 4
+end
+arch table_3
+x 21
+y 4
+end
+arch random_potion
+exp 5
+x 21
+y 4
+end
+arch woodfloor
+x 21
+y 5
+end
+arch chair_1.3
+x 21
+y 5
+end
+arch woodfloor
+x 21
+y 6
+end
+arch random_wealth
+x 21
+y 6
+end
+arch dungeon_magic
+x 21
+y 7
+end
+arch woodfloor
+x 21
+y 7
+end
+arch grate_closed_1
+speed 0.500000
+protected 1
+connected 1
+x 21
+y 7
+end
+arch woodfloor
+x 21
+y 8
+end
+arch woodfloor
+x 21
+y 9
+end
+arch chair_1.4
+x 21
+y 9
+end
+arch woodfloor
+x 21
+y 10
+end
+arch woodfloor
+x 21
+y 11
+end
+arch woodfloor
+x 21
+y 12
+end
+arch woodfloor
+x 21
+y 13
+end
+arch chair_1.4
+x 21
+y 13
+end
+arch woodfloor
+x 21
+y 14
+end
+arch woodfloor
+x 21
+y 15
+end
+arch woodfloor
+x 21
+y 16
+end
+arch lesser_dwarven_guard
+name dwarf
+msg
+@match *
+Damn! Those chairs are too high for
+me. I hate this world...
+endmsg
+friendly 1
+x 21
+y 16
+end
+arch woodfloor
+x 21
+y 17
+end
+arch chair_1.4
+x 21
+y 17
+end
+arch woodfloor
+x 21
+y 18
+end
+arch woodfloor
+x 21
+y 19
+end
+arch wwall_2_1_2
+x 21
+y 19
+end
+arch grass
+x 21
+y 20
+end
+arch cobblestones
+x 21
+y 21
+end
+arch cobblestones
+x 21
+y 22
+end
+arch grass
+x 22
+end
+arch mine2
+x 22
+end
+arch woodfloor
+x 22
+y 1
+end
+arch wwall_2_1_2
+x 22
+y 1
+end
+arch woodfloor
+x 22
+y 2
+end
+arch random_wealth
+x 22
+y 2
+end
+arch woodfloor
+x 22
+y 3
+end
+arch chair_1.1
+x 22
+y 3
+end
+arch woodfloor
+x 22
+y 4
+end
+arch table_3
+x 22
+y 4
+end
+arch random_talisman
+exp 3
+x 22
+y 4
+end
+arch woodfloor
+x 22
+y 5
+end
+arch chair_1.3
+x 22
+y 5
+end
+arch woodfloor
+x 22
+y 6
+end
+arch random_wealth
+x 22
+y 6
+end
+arch woodfloor
+x 22
+y 7
+end
+arch wwall_1_4
+x 22
+y 7
+end
+arch woodfloor
+x 22
+y 8
+end
+arch chair_1.1
+x 22
+y 8
+end
+arch woodfloor
+x 22
+y 9
+end
+arch table_3
+x 22
+y 9
+end
+arch woodfloor
+x 22
+y 10
+end
+arch chair_1.3
+x 22
+y 10
+end
+arch woodfloor
+x 22
+y 11
+end
+arch woodfloor
+x 22
+y 12
+end
+arch chair_1.1
+x 22
+y 12
+end
+arch woodfloor
+x 22
+y 13
+end
+arch table_3
+x 22
+y 13
+end
+arch woodfloor
+x 22
+y 14
+end
+arch chair_1.3
+x 22
+y 14
+end
+arch woodfloor
+x 22
+y 15
+end
+arch woodfloor
+x 22
+y 16
+end
+arch chair_1.1
+x 22
+y 16
+end
+arch woodfloor
+x 22
+y 17
+end
+arch table_3
+x 22
+y 17
+end
+arch booze
+x 22
+y 17
+end
+arch woodfloor
+x 22
+y 18
+end
+arch chair_1.3
+x 22
+y 18
+end
+arch dungeon_magic
+x 22
+y 19
+end
+arch woodfloor
+x 22
+y 19
+end
+arch wwall_win2
+x 22
+y 19
+end
+arch grass
+x 22
+y 20
+end
+arch cobblestones
+x 22
+y 21
+end
+arch cobblestones
+x 22
+y 22
+end
+arch grass
+x 23
+end
+arch mine2
+x 23
+end
+arch woodfloor
+x 23
+y 1
+end
+arch wwall_2_1_2
+x 23
+y 1
+end
+arch woodfloor
+x 23
+y 2
+end
+arch brazier
+x 23
+y 2
+end
+arch woodfloor
+x 23
+y 3
+end
+arch flowers_permanent
+x 23
+y 3
+end
+arch woodfloor
+x 23
+y 4
+end
+arch chair_1.2
+x 23
+y 4
+end
+arch woodfloor
+x 23
+y 5
+end
+arch flowers_permanent
+x 23
+y 5
+end
+arch woodfloor
+x 23
+y 6
+end
+arch brazier
+x 23
+y 6
+end
+arch woodfloor
+x 23
+y 7
+end
+arch wwall_2_1_2
+x 23
+y 7
+end
+arch woodfloor
+x 23
+y 8
+end
+arch woodfloor
+x 23
+y 9
+end
+arch chair_1.2
+x 23
+y 9
+end
+arch woodfloor
+x 23
+y 10
+end
+arch woodfloor
+x 23
+y 11
+end
+arch woodfloor
+x 23
+y 12
+end
+arch woodfloor
+x 23
+y 13
+end
+arch chair_1.2
+x 23
+y 13
+end
+arch woodfloor
+x 23
+y 14
+end
+arch woodfloor
+x 23
+y 15
+end
+arch woodfloor
+x 23
+y 16
+end
+arch woodfloor
+x 23
+y 17
+end
+arch chair_1.2
+x 23
+y 17
+end
+arch woodfloor
+x 23
+y 18
+end
+arch woodfloor
+x 23
+y 19
+end
+arch wwall_2_1_2
+x 23
+y 19
+end
+arch grass
+x 23
+y 20
+end
+arch cobblestones
+x 23
+y 21
+end
+arch cobblestones
+x 23
+y 22
+end
+arch grass
+x 24
+end
+arch mine2
+x 24
+end
+arch woodfloor
+x 24
+y 1
+end
+arch wwall_2_2_3
+x 24
+y 1
+end
+arch woodfloor
+x 24
+y 2
+end
+arch wwall_2_1_1
+x 24
+y 2
+end
+arch woodfloor
+x 24
+y 3
+end
+arch wwall_2_1_1
+x 24
+y 3
+end
+arch dungeon_magic
+x 24
+y 4
+end
+arch woodfloor
+x 24
+y 4
+end
+arch wwall_win1
+x 24
+y 4
+end
+arch woodfloor
+x 24
+y 5
+end
+arch wwall_2_1_1
+x 24
+y 5
+end
+arch woodfloor
+x 24
+y 6
+end
+arch wwall_2_1_1
+x 24
+y 6
+end
+arch woodfloor
+x 24
+y 7
+end
+arch wwall_3_4
+x 24
+y 7
+end
+arch woodfloor
+x 24
+y 8
+end
+arch wwall_2_1_1
+x 24
+y 8
+end
+arch dungeon_magic
+x 24
+y 9
+end
+arch woodfloor
+x 24
+y 9
+end
+arch wwall_win1
+x 24
+y 9
+end
+arch woodfloor
+x 24
+y 10
+end
+arch wwall_2_1_1
+x 24
+y 10
+end
+arch woodfloor
+x 24
+y 11
+end
+arch wwall_2_1_1
+x 24
+y 11
+end
+arch woodfloor
+x 24
+y 12
+end
+arch wwall_2_1_1
+x 24
+y 12
+end
+arch dungeon_magic
+x 24
+y 13
+end
+arch woodfloor
+x 24
+y 13
+end
+arch wwall_win1
+x 24
+y 13
+end
+arch woodfloor
+x 24
+y 14
+end
+arch wwall_2_1_1
+x 24
+y 14
+end
+arch woodfloor
+x 24
+y 15
+end
+arch wwall_2_1_1
+x 24
+y 15
+end
+arch woodfloor
+x 24
+y 16
+end
+arch wwall_2_1_1
+x 24
+y 16
+end
+arch dungeon_magic
+x 24
+y 17
+end
+arch woodfloor
+x 24
+y 17
+end
+arch wwall_win1
+x 24
+y 17
+end
+arch woodfloor
+x 24
+y 18
+end
+arch wwall_2_1_1
+x 24
+y 18
+end
+arch woodfloor
+x 24
+y 19
+end
+arch wwall_2_2_4
+x 24
+y 19
+end
+arch grass
+x 24
+y 20
+end
+arch cobblestones
+x 24
+y 21
+end
+arch cobblestones
+x 24
+y 22
+end
+arch grass
+x 25
+end
+arch mine2
+x 25
+end
+arch grass
+x 25
+y 1
+end
+arch brush
+x 25
+y 1
+end
+arch grass
+x 25
+y 2
+end
+arch grass
+x 25
+y 3
+end
+arch grass
+x 25
+y 4
+end
+arch grass
+x 25
+y 5
+end
+arch tree4
+x 25
+y 5
+end
+arch grass
+x 25
+y 6
+end
+arch grass
+x 25
+y 7
+end
+arch grass
+x 25
+y 8
+end
+arch grass
+x 25
+y 9
+end
+arch grass
+x 25
+y 10
+end
+arch grass
+x 25
+y 11
+end
+arch grass
+x 25
+y 12
+end
+arch grass
+x 25
+y 13
+end
+arch grass
+x 25
+y 14
+end
+arch grass
+x 25
+y 15
+end
+arch tree4
+x 25
+y 15
+end
+arch grass
+x 25
+y 16
+end
+arch grass
+x 25
+y 17
+end
+arch grass
+x 25
+y 18
+end
+arch grass
+x 25
+y 19
+end
+arch grass
+x 25
+y 20
+end
+arch cobblestones
+x 25
+y 21
+end
+arch cobblestones
+x 25
+y 22
+end
+arch grass
+x 26
+end
+arch mine2
+x 26
+end
+arch grass
+x 26
+y 1
+end
+arch grass
+x 26
+y 2
+end
+arch grass
+x 26
+y 3
+end
+arch grass
+x 26
+y 4
+end
+arch grass
+x 26
+y 5
+end
+arch grass
+x 26
+y 6
+end
+arch grass
+x 26
+y 7
+end
+arch grasspond
+x 26
+y 8
+end
+arch grass
+x 26
+y 9
+end
+arch grass
+x 26
+y 10
+end
+arch grass
+x 26
+y 11
+end
+arch tree4
+x 26
+y 11
+end
+arch grass
+x 26
+y 12
+end
+arch grass
+x 26
+y 13
+end
+arch grass
+x 26
+y 14
+end
+arch grass
+x 26
+y 15
+end
+arch grass
+x 26
+y 16
+end
+arch grass
+x 26
+y 17
+end
+arch grass
+x 26
+y 18
+end
+arch grass
+x 26
+y 19
+end
+arch grass
+x 26
+y 20
+end
+arch cobblestones
+x 26
+y 21
+end
+arch cobblestones
+x 26
+y 22
+end

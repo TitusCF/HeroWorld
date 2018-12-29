@@ -1,0 +1,89 @@
+#!/bin/bash
+#
+# creator: josh@woosworld.net
+# Simple script to replicate changes made to pshop1
+# to the rest of the pshops and keep the correct
+# keys and exits working.
+# 
+# Obviously this is based on some conventions I have
+# don't use pshop1 anywhere else in the file etc...
+#
+
+#first rename the pshop1 dir so we don't erase it
+mv pshop1 PSHOP
+
+#then remove all the pshop files
+rm -f pshop*/*
+
+#copy PSHOP to all the pshop directories
+for FILE in pshop*;do
+  if [ -d "$FILE" ]
+  then
+    #copy the files into the pshops directories
+    cp PSHOP/* "$FILE"/
+    
+    #go there
+    cd $FILE
+    
+    #for each file in the pshop directory
+    for MYFILE in *;do
+      #correct the key values on inventory checkers
+      sed s/pshop1/$FILE/ $MYFILE > "$MYFILE"_2
+      rm -f $MYFILE
+      mv "$MYFILE"_2 $MYFILE      
+    done
+
+    #get the pshopnum
+    PSHOPNUM=`echo "$FILE" | cut -d p -f3`
+    
+    #calculate HP and SP based on pshopnum
+    if [ $PSHOPNUM -lt 14 ]
+    then
+      #top row of shops
+      SP="2"
+      TEMPHP=`expr $PSHOPNUM \* 3`
+      HP=`expr $TEMPHP + 1`
+    else
+      #bottom row of shops
+      SP="6"
+      MODPSHOPNUM=`expr $PSHOPNUM - 14`
+      TEMPHP=`expr $MODPSHOPNUM \* 3`
+      HP=`expr $TEMPHP + 1`
+    fi
+    
+    #fix the exit on gfloor
+    while read LINE
+    do
+      if [ "$LINE" == "slaying ../pshops_main" ]
+      then
+        #remove the 2 lines
+        read dummy_hp_line
+	read dummp_sp_line
+	
+	#add the original back
+	echo "$LINE" >> gfloor2
+	
+	#write the new lines
+	echo "hp $HP" >> gfloor2
+	echo "sp $SP" >> gfloor2
+	
+      else 	
+        #just add it back to the file
+	echo "$LINE" >> gfloor2
+      fi
+    done < gfloor
+    
+    #replace gfloor with gfloor2
+    rm -f gfloor
+    mv gfloor2 gfloor
+    
+    #go back up
+    cd ..
+  fi
+done
+
+#put pshop1 back
+mv PSHOP pshop1
+
+#bye
+exit 0

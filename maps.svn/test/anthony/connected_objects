@@ -1,0 +1,664 @@
+arch map
+name gate_tests
+msg
+Creator: Anthony Thyssen
+Email: anthony@cit.gu.edu.au
+Date: Mon Dec 21 16:48:56 1998
+endmsg
+hp 12
+sp 8
+x 12
+y 14
+end
+arch sign_e
+name Boulders
+msg
+Boulders of different types
+to push around for testing.
+1/ Normal Boulder
+2/ Treasure Boulder
+3/ Large treasure Boulder
+4/ Rock
+5/ Barrel
+endmsg
+x 1
+y 1
+end
+arch sign_e
+name Gates
+msg
+Gates...
+* Comes in a huge variety
+* Has a definate on and off state
+* Objects on top of a closing gate will
+  roll off if a free space is availble.
+  Boudlers is one of the few objects
+  which can NOT coexist with itself.
+* Needs quite a long period to change
+  state, and takes even longer if more
+  than two objects needs to be rolled
+  off.
+endmsg
+x 1
+y 6
+end
+arch sign_e
+name Trapdoors & Teleports
+msg
+Trapdoors & Teleports...
+The first two `pits' are connectable.
+ALL the rest activate when a player
+walks on then. Except the one with
+`brick work'. This trapdoor is weight
+activated. EG: a player can walk on it
+but a boulder can not!
+(See special_objects for more)
+endmsg
+x 1
+y 9
+end
+arch sign_e
+name Magic Mouths
+msg
+Magic Mouths...
+These handle/trigger/button are each
+connected to a seperate magic mouth to
+check how `connected mouths' work.
+Particularly to try and avoid having 
+the mouth repeat itself.
+--
+Results...
+ * The mouth is triggered whenever
+   1/ Player steps on magic mouth
+   2/ On any connected event weather
+      that is a on, off or a trigger 
+   3/ A player `applys' a button!
+   4/ A player walks on any button
+      weather or not the button itself
+      activates! This includes plate
+      buttons!
+ * Result 2 means a button in a cascade
+   will always trigger a mouth at least 
+   twice! Once when `token' rolls on
+   and again when it rolls off. It will
+   remain so unless we can get a 
+   ``trigger button'' (or alturnative).
+ * A mouth can be heard ANYWHERE on the
+   map when triggered (via connection?)
+   Great! No radius limits?
+endmsg
+x 1
+y 11
+end
+arch boulder
+x 2
+y 1
+end
+arch button_handle
+x 2
+y 4
+connected 1
+end
+arch spikes_open
+x 2
+y 5
+speed 0.500000
+value 1
+connected 1
+end
+arch spikes_closed
+x 2
+y 6
+speed 0.500000
+connected 1
+end
+arch spikes_moving
+x 2
+y 7
+speed 0.500000
+speed_left -0.860000
+connected 1
+end
+arch pit_open
+x 2
+y 9
+connected 1
+end
+arch button_handle
+x 2
+y 11
+connected 10
+end
+arch trigger
+x 2
+y 12
+connected 11
+end
+arch button_small
+x 2
+y 13
+connected 12
+end
+arch t_boulder
+x 3
+y 1
+connected 1
+end
+arch button_lever
+x 3
+y 4
+connected 1
+end
+arch ggate_open
+x 3
+y 5
+connected 1
+end
+arch ggate_closed
+x 3
+y 6
+connected 1
+end
+arch gate_open_2
+x 3
+y 7
+speed 0.500000
+value 1
+connected 1
+end
+arch pit_closed
+x 3
+y 9
+connected 1
+end
+arch t_lboulder
+x 4
+y 1
+end
+arch sign
+name Handles and Buttons
+msg
+Handles and Buttons...
+* Devices have a definate on/off state
+* When state is changed ALL connected
+  gates buttons and handles also change
+  state. (Though it may take some time)
+* Note this means a button can be `on'
+  without any objects on top.
+Button Specific...
+* The trigger weight of buttons is
+  setable. EG: You could use it to sort
+  objects in a `cascade' for example.
+* The trigger weight is also the button
+  actual weight! As such any EXTRA
+  buttons stacked underneath must
+  include the weight of all the buttons
+  above it before adding the desired
+  trigger weight. EG: button trigger
+  weight from top down: 1, 2, 4, 8, etc
+* A button can be used to reset a handle
+  which started a `cascade', when a
+  object rolls on and then latter off
+  the button.
+Pedistals..
+* Activates on specific object placed
+  on it. Default is the player himself.
+  In this case the `test_key'
+* Only seems to activate trigger gates!
+endmsg
+x 4
+y 3
+end
+arch button_small
+x 4
+y 4
+connected 1
+end
+arch grate_open_1
+x 4
+y 5
+speed 0.500000
+value 1
+connected 1
+end
+arch grate_closed_2
+x 4
+y 6
+speed 0.500000
+connected 1
+end
+arch gate_closed_1
+x 4
+y 7
+speed 0.500000
+connected 1
+end
+arch trapdoor_4
+x 4
+y 9
+connected 1
+end
+arch magic_mouth
+msg
+Handle Changed
+endmsg
+x 4
+y 11
+connected 10
+end
+arch magic_mouth
+msg
+You just triggered a bomb. Run!
+endmsg
+x 4
+y 12
+connected 11
+end
+arch magic_mouth
+msg
+Groan! You are heavy aren't you!
+endmsg
+x 4
+y 13
+connected 12
+end
+arch rock
+x 5
+y 1
+end
+arch button_plate
+x 5
+y 4
+connected 1
+end
+arch igate_open_2
+x 5
+y 5
+speed 0.500000
+value 1
+connected 1
+end
+arch igate_closed_1
+x 5
+y 6
+speed 0.500000
+connected 1
+end
+arch stwall_closed_1
+x 5
+y 7
+connected 1
+end
+arch trapdoor_3
+x 5
+y 9
+connected 1
+end
+arch barrel
+x 6
+y 1
+end
+arch pedestal
+name pedestal (only effects trigger gates)
+slaying test_key
+x 6
+y 4
+connected 1
+end
+arch block_door_open
+x 6
+y 5
+speed 0.500000
+value 1
+connected 1
+end
+arch block_door_closed
+x 6
+y 6
+speed 0.500000
+connected 1
+end
+arch stwall_open_1
+x 6
+y 7
+connected 1
+end
+arch trapdoor_2
+x 6
+y 9
+connected 1
+end
+arch sign_e
+name Boulder Bounce
+msg
+Boulder Bounce...
+This shows that if you have a button
+under a boulder in say a cascade, and
+the boulder can't `roll' then it will
+bounce on and off the button. 
+--
+We can see this in this case as a magic
+mouth will ``mouth off'' everytime
+boulder leaves and falls back onto the
+button. This happens too quickly to
+properly effect any other device, but
+shows that it is present!
+--
+What it does mean is that if a trigger
+gate is connected to that button with a
+bouncing boulder, the `reset timer' will
+constantally reset, and the gate will
+never close.
+--
+Also, if we ever do get a `button
+trigger' you can not use it in a
+`up cascade' (see cascades) due to
+this `boulder bounce'. In a Raffles
+like down cascade however their should
+be no problem.
+endmsg
+x 6
+y 11
+end
+arch button_handle
+x 6
+y 12
+connected 13
+end
+arch magic_mouth
+msg
+Bounce!
+endmsg
+x 6
+y 13
+connected 14
+end
+arch sign
+name Triggers
+msg
+Triggers...
+* Activate once and reset
+* Inverts the state of ALL connected
+    gates/handles/buttons/etc...
+* Can leave things in a odd state
+* Only really useful for trigger gates
+  or `once only' gates (from an altar?)
+* Trigger buttons do not exist, though
+  they could be useful. EG: turn on
+  then later in a cascade turn off.
+* A pedistal trigger also exists.
+--
+Trigger pedistals here are set to work
+with the `test_key'. But I can get it to
+do anything.
+endmsg
+x 7
+y 3
+end
+arch trigger
+x 7
+y 4
+connected 1
+end
+arch gateTrg1
+x 7
+y 6
+connected 1
+end
+arch igateTrg1
+x 7
+y 7
+connected 1
+end
+arch trapdoor_1
+x 7
+y 9
+connected 1
+end
+arch swall_2_2_2
+x 7
+y 11
+end
+arch swall_2_1_1
+x 7
+y 12
+end
+arch swall_2_2_1
+x 7
+y 13
+end
+arch gratedoor_1
+x 8
+connected 1
+end
+arch detector
+name detector (what does it do)
+slaying test_key
+x 8
+y 1
+connected 1
+end
+arch pedestal_trigger
+name pedestal trigger
+slaying test_key
+x 8
+y 4
+connected 1
+end
+arch gateTrg2
+x 8
+y 6
+connected 1
+end
+arch igateTrg2
+x 8
+y 7
+connected 1
+end
+arch teleporter
+hp 8
+sp 10
+x 8
+y 9
+end
+arch swall_2_1_2
+x 8
+y 11
+end
+arch button_small
+x 8
+y 12
+connected 14
+end
+arch spikes_open
+x 8
+y 12
+speed 0.500000
+value 1
+connected 13
+end
+arch boulder
+x 8
+y 12
+end
+arch swall_2_1_2
+x 8
+y 13
+end
+arch gratedoor_2
+x 9
+connected 1
+end
+arch creator
+name creator (what does it do?)
+other_arch goldcoin
+x 9
+y 1
+connected 1
+lifesave 1
+end
+arch sign_e
+name Magic Ear
+msg
+Magic Ear...
+Say anything, anything at all
+This will send 1 trigger signal.
+endmsg
+x 9
+y 2
+end
+arch sign_e
+name Check Inv
+msg
+Check Inv..
+To the left is a ``check_inv'' square
+looking for the ``test_key'' lockcode.
+It activates like a button without
+player needing to drop tested object.
+endmsg
+x 9
+y 3
+end
+arch sign_e
+name Check Floor
+msg
+Check Floor..
+To the left is a ``check_floor''
+For some reason however the image says
+``check inv'' however (in blue)!
+It also looks for the ``test_key''.
+It activates like a trigger, Once only
+when player moves onto square.
+endmsg
+x 9
+y 4
+end
+arch sign_e
+name Altars
+msg
+Altars...
+* Altars make dropped items disappear.
+* They work only once, until map reset!
+* Item type and amount can be set.
+--
+In order top down.
+* Altar (1 food -- can't get to work)
+* Trigger Altar (1 food)
+* Gold Floor (1 gp)
+endmsg
+x 9
+y 5
+end
+arch sign_w
+name Trigger Gates
+msg
+Trigger Gates...
+* On event (any event, including 
+  handle/button off) will open the
+  gate and start (or restart) a timer.
+* Gate automatically closes when no
+  futher signal is received after a
+  very long period of time.
+* Can't seem to change the time the
+  gate takes to close.
+endmsg
+x 9
+y 6
+end
+arch swall_2_2_3
+x 9
+y 11
+end
+arch swall_2_1_1
+x 9
+y 12
+end
+arch swall_2_2_4
+x 9
+y 13
+end
+arch sign_w
+name Grate Door
+msg
+Grate Doors..
+I can't figure out if these open!
+Do they do anything? I can't tell!
+endmsg
+x 10
+end
+arch sign_w
+name Unknown Devices
+msg
+Unknown Devices...
+To the left are
+* Detector
+* Creator
+But I do not know what they do.
+endmsg
+x 10
+y 1
+end
+arch magic_ear
+msg
+@match *
+I hear you, I hear you!
+endmsg
+x 10
+y 2
+connected 1
+end
+arch check_inv
+slaying test_key
+x 10
+y 3
+connected 1
+end
+arch check_floor
+slaying test_key
+x 10
+y 4
+connected 1
+end
+arch altar
+food 1
+x 10
+y 5
+connected 1
+end
+arch altar_trigger
+food 1
+x 10
+y 6
+connected 1
+end
+arch goldfloor
+name drop 1 gold peice (not working)
+food 1
+x 10
+y 7
+connected 1
+end
+arch food
+x 10
+y 8
+nrof 5
+end
+arch goldcoin
+x 10
+y 9
+nrof 5
+end
+arch key2
+name Key of Testing
+slaying test_key
+x 10
+y 10
+end
+arch magic_mouth
+msg
+A distant magic mouth says ``click''
+endmsg
+x 11
+y 13
+connected 1
+end

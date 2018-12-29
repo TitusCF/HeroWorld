@@ -1,0 +1,90 @@
+treasureone evoker_book_low
+  arch spell_armour
+    chance 5
+  more
+  arch spell_icestorm
+    chance 4
+  more
+  arch spell_small_snowstorm
+    chance 8
+  more
+  arch spell_small_bullet
+    chance 8
+  more
+  arch spell_detect_monster
+    chance 8
+  more
+  arch spell_mana_blast
+    chance 2
+  more
+  arch spell_small_manaball
+    chance 3
+  more
+  arch spell_frostbolt
+    chance 3
+  more
+  arch spell_manabolt
+    chance 2
+  more
+  arch spell_medium_snowstorm
+    chance 6
+  more
+  arch spell_lg_magic_bullet
+    chance 4
+  more
+  arch spell_rune_of_frost
+    chance 3
+  more
+  arch spell_medium_manaball
+    chance 2
+  more
+  arch spell_large_snowstorm
+    chance 2
+end
+
+treasureone evoker_book_medium
+  arch spell_bullet_swarm
+    chance 1
+  more
+  arch spell_large_manaball
+    chance 1
+  more
+  arch spell_create_frost_wall
+    chance 2
+  more
+  arch spell_bullet_storm
+    chance 1
+  more
+  arch spell_cancellation
+    chance 1
+  more
+  arch spell_create_pool_of_chaos
+    chance 1
+end
+
+treasureone evoker_book_high
+  arch spell_build_bullet_wall
+    chance 1
+  more
+  arch spell_large_icestorm
+    chance 1
+  more
+  arch spell_sigil
+    chance 1
+end
+
+treasureone evocation_book
+  list evoker_book_low
+    chance 20
+    nrof 1
+  more
+  list evoker_book_medium
+    chance 20
+    magic 6
+    nrof 1
+  more
+  list evoker_book_high
+    chance 20
+    magic 11
+    nrof 1
+end

@@ -1,0 +1,425 @@
+Changes for CVS top of tree:
+
+Add new force archetype monk_no_use_weapon. It will be inserted into
+inventories of monk players to prevent them from using weapons.
+Andreas Kirschbaum 2005-11-01
+
+
+Make bullet swarm fire small bullets instead of magic bullets. Previously
+bullet swarm (which is an evocation spell) gave sorcery exp.
+Andreas Kirschbaum 2005-10-28
+
+
+Correct rune definitions. Some runes did use obsolete fields or had
+inconsistent definitions.
+Andreas Kirschbaum 2004-09-14
+
+
+Many many changes since last entry due to new server code and 
+maintenance efforts.  Highlights - large image support allows 
+for images larger than 32x32 - many images consolidated for easier 
+maintenance (ongoing).  Spell and skill code changes heavily
+modified spells and skill arches (more arch based now).
+four point animation added to most player race and classes, smoothing
+images added to support smoothing code and ground arches changed
+to accommodate.  Arches added for weather system, new monsters,
+new items, new npcs, triggered traps and trigger marker added.
+New images added for classic set as well.  See server changelog
+for more info.  Hope to maintain this file better in the future.
+TM 2004-01-26
+
+
+
+Add archetypes from Todd Mitchell.  These add wolfs and bears,
+with bodyparts for them.  Also changes races for readable scroll
+objects so that scrollcase objects can be used.  Add ruined tower.
+New images for some objects.
+Commited by MSW 2002-08-20
+
+Fix monster arcs that had incorrect wrists/foot (1 instead of 2)
+Fix update_monster script that generated the errors in the first place.
+Add body information to the player/old/*.arc for very old player files.
+Move crown from misc directory to armour/helmet, add appropriate body_info.
+Add needed body info for elven boots.
+MSW 2002-07-15
+
+
+Update arcs to use body_info for equipping items.
+Update armor to use gen_sp_armour instead of last_heal.
+can_use_shield added to necessary arcs.
+Add dev/scripts directory, which contains some handy scripts I wrote
+for updating on the items.
+Add item_power to the armours - needs to be done for rest of equippable
+items.
+MSW 2002-07-14
+
+
+MSW 2000-12-26:
+Added new archetypes & god changes for new god code.  Changes by Jan E.,
+checked in my MSW.
+
+PeterM  2000-12-3:  Convert
+protected/immune/vulnerable/armour to new PR system for
+all arcs.
+
+MSW 2000-12-3:
+Commit for PR code.  General changes was to clean up archetypes that
+were immune/protected/vulnerable to the same attacktype (ie, protected &
+immune).  Disease code changed to use last_grace instead of armour for
+contagious values.  Gods still need to be fixed up.
+
+------------------------------------------------------------------------------
+
+MSW 2000-11-22: talisman/ring_drain.arc - give object speed 0.1
+so it will animate (animation already in place, just was not being
+used.)
+
+PeterM:  Totally reorganized player/*, splitting it into races and
+classes.  Classes are themselves split into four main subtypes.  
+New images from dnh were also added, as well as new classes/races.
+See http://langmuir.eecs.berkeley.edu/~peterm/Race.html and
+    http://langmuir.eecs.berkeley.edu/~peterm/Class.html
+
+
+
+
+Changes for Crossfire 0.95.7:
+
+ground/Lake/blake_*.png:  Remove transperancies from these images so they
+display properly.  MSW 9/20/2000
+
+ground/sea*png: Remove transperancies from png images since they should not
+be transparent.  MSW 8/23/2000
+
+door/Locked/key2.arc, misc/Container/bag.arc, misc/Container/bookshelf.arc,
+misc/Container/cauldron.arc, misc/Container/chest_2.arc,
+misc/Container/depositbox.arc, misc/Container/key_ring.arc,
+misc/Container/mailbox.arc, misc/Container/pouch.arc,
+misc/Container/r_sack.arc misc/Container/sack.arc: Remove the 'a' from the
+objects name.  The client adds it anyways, so you see 'a a bag' for example,
+but also when using the commands like 'drop that match on an item name, having
+to match against the 'a ' is a bit non intuitive.  MSW 6/27/2000
+
+------------------------------------------------------------------------------
+Changes for Crossfire 0.95.6:
+
+also skills/holysymbol and lockpicks.
+skills/tailsman.arc:  added nrof to archetype so these things will join.
+	-PeterM
+
+--- BEGIN apply() cleanup patch --- Jan Echternach 5/26/2000
+
+Added level 1 to all archetypes with type 88 (CONE) that can do damage.
+
+
+ground/chaos.arc, arch chaos and arch major_chaos
+ground/lava.arc, arch lava and arch permanent_lava
+Added walk_on 1.
+
+ground/chaos_ball.arc, arch chaos_ball
+magic/banishment.arc, arch banishment
+magic/colorspray.arc, arch color_spray
+magic/counterspell.arc, arch counterspell
+magic/face_of_death.arc, arch face_of_death
+magic/shockwave.arc, arch shockwave
+dev/unused/0.91.1/Flyingnote/flyingnote.arc, arch flyingnote
+magic/Cold/icestorm.arc, arch icestorm
+magic/Fire/firebreath.arc, arch firebreath
+magic/Effect/confuse.arc, arch confuse
+magic/Effect/fear.arc, arch fear
+magic/Effect/holy_word.arc, arch holy_word
+magic/Effect/paralyze.arc, arch paralyze
+magic/Effect/slow.arc, arch slow
+magic/Effect/turnundead.arc, arch turn_undead
+magic/Mana/manablast.arc, arch manablast
+Added walk_on 1 and fly_on 1.
+
+connect/trig_altar.arc
+connect/trig_lever.arc
+connect/trig_pedes.arc
+Changes to support bug fixes for trigger types:  Replace speed with exp.
+Set is_animated 0.  Remove last face from animation sequence.
+
+connect/trig_altar.arc
+Bugfix:  Faces where swapped.
+
+connect/trig_button.arc, arch button_trigger
+New archetype.
+
+--- END apply() cleanup patch --- Jan Echternach 5/26/2000
+
+
+Added level 1 to all archetypes with type 5 (POTION), because these
+archetypes are spellcasters and therefore need a level.
+- Jan Echternach 5/24/2000
+
+skills/scroll_set_traps
+Name of the skill is 'skill_set_trap', not 'skill_set_traps'.
+- Jan Echternach 5/22/2000
+
+Added level 1 to all archetypes with type 62 (FIREWALL) which didn't have
+a level yet, because these archetypes are spellcasters and therefore need
+a level.  - Jan Echternach 5/16/2000
+
+
+dev/unused/0.91.1/grave.arc, arch grave_close
+Removed type 37 from archetype, because this type will be removed from
+the server code.  - Jan Echternach 5/16/2000
+
+
+Some archetypes had fly_on or walk_on set, although they were not handled
+by move_apply().  - Jan Echternach 5/16/2000
+
+ground/sea.arc, arch sea1
+Removed walk_on 1.
+
+ground/meteor.arc, arch fire_trail
+Removed walk_on 1 and fly_on 1.
+
+
+spell/gu_horn.arc, spell/horn.arc, spell/horn1.arc, spell/horn3.arc
+Added level 1 to fix the problem that most horns were casting spells
+without a level.  - Jan Echternach 4/19/2000
+
+
+Too many items gave Pow bonus.  - Jan Echternach 4/17/2000
+
+armour/helmet/wiz_hat.arc
+Changed (Int +1, Pow +1) back to (Int +2).
+
+armour/mail/robe_midnight.arc
+Changed (Pow +2) back to (Wis +2).
+
+weapon/artifact/magi_staff.arc
+Reduced (Pow +2) to (Pow +1).
+
+
+Set level 1 for all archetypes that had alive 1 but no level.
+- Jan Echternach 4/17/2000
+
+Naming.doc:  Fixed a typo.  - Jan Echternach 4/17/2000
+
+
+---BEGIN BATCH UPDATE--- DAMN 9/17/1999
+Added "nrof 1" to the following archetypes:
+armour/boots/elvenboots.arc
+armour/boots/idaten.arc
+armour/boots/lev_boots.arc
+armour/boots/speedboots.arc
+armour/cloak/magic_resist.arc
+armour/helmet/helmet_bri.arc
+armour/helmet/helmetxray.arc
+armour/mail/Pdragonmail.arc
+armour/mail/dragonmail.arc
+armour/mail/gale.arc
+armour/mail/wdsm.arc
+armour/shield/DShield.arc
+armour/shield/DShieldm.arc
+armour/shield/DShieldms.arc
+armour/shield/DShields.arc
+armour/shield/dragon_shi.arc
+armour/shield/eyeshield.arc
+armour/shield/holyshield.arc
+armour/shield/reflector.arc
+armour/shield/uw_shield.arc
+armour/shield/wds.arc
+flesh/human/corpse.arc
+flesh/human/corpse1.arc
+flesh/human/corpse_pl.arc
+indoor/clock.arc
+misc/Bagpipe/bagpipe.arc
+misc/chalice.arc
+misc/crown.arc
+misc/torch_cyan.arc
+misc/torch_indigo.arc
+misc/torch_vermilion.arc
+readable/bookRead.arc
+readable/book_clasp.arc
+readable/card.arc
+readable/diploma.arc
+readable/letter.arc
+readable/note.arc
+readable/quarto.arc
+readable/scroll.arc
+readable/scroll_2.arc
+readable/tome.arc
+spell/gu_horn.arc
+spell/horn.arc
+spell/horn2.arc
+spell/horn3.arc
+talisman/collar.arc
+weapon/artifact/ChaosSword/CSword.arc
+weapon/artifact/Darkblade/darkblade.arc
+weapon/artifact/Demonbane/demonbane.arc
+weapon/artifact/Fhammer/frost_hammer.arc
+weapon/artifact/Firestar/fakefirestar.arc
+weapon/artifact/Firestar/firestar.arc
+weapon/artifact/Gram/gram.arc
+weapon/artifact/Kdagger/k_dagger.arc
+weapon/artifact/Lslasher/lava_s.arc
+weapon/artifact/Masamune/masamune.arc
+weapon/artifact/Sting/sting.arc
+weapon/artifact/UW_Sword/uw_sword.arc
+weapon/artifact/bonecrush.arc
+weapon/artifact/defender.arc
+weapon/artifact/dragonslay.arc
+weapon/artifact/excalibur.arc
+weapon/artifact/firebrand.arc
+weapon/artifact/frostbrand.arc
+weapon/artifact/harakiri.arc
+weapon/artifact/mjoellnir.arc
+weapon/artifact/skullcleav.arc
+weapon/chained/nunchacu_1.arc
+weapon/chained/nunchacu_2.arc
+weapon/chained/shootingstar.arc
+weapon/misc/shovel_1.arc
+weapon/misc/stake.arc
+weapon/misc/taifu_1.arc
+weapon/sword/katana_1.arc
+
+armour/helmet/wiz_hat.arc
+Changed (Int +2) to (Int +1, Pow +1)
+Added nrof 1
+
+armour/mail/mithril_ar_ele.arc
+Changed (Cha +2) to (Cha +1, speed +1)
+reduced penalties to sp regen and movement speed
+
+armour/mail/robe_midnight.arc
+Changed (Wis +2) to (Pow +2)
+Added nrof 1
+
+spell/power_crystal.arc
+removed duplicate weight entry
+Did _not_ add nrof 1
+
+weapon/artifact/HolyAvenger/holyave.arc
+Added attacktype: blinding and nrof 1
+
+weapon/artifact/Usword/uk_sd.arc
+changed weight 1qq000 (yes, the letter Q) to 11100
+added nrof 1
+
+weapon/artifact/deathbring.arc
+added attacktype: depletion and nrof 1
+
+weapon/artifact/magi_staff.arc
+changed name from Staff of Magi to Staff of the Magi
+changed stat bonuses from (Int +2, Wis +1) to (Int +1, Pow +2)
+added wc +5 and nrof 1
+
+weapon/artifact/mournblade.arc
+changed attacktype: magic, drain to attacktype: drain, weaponmagic
+added nrof 1
+
+weapon/artifact/stormbring.arc
+changed prot: magic to prot: magic, electricity
+changed attacktype: magic, drain to attacktype: electricity, drain
+added nrof 1
+---END BATCH UPDATE--- DAMN 9/17/1999
+
+Give power crystal a weight of one.  This allows it to be picked up - msw
+
+------------------------------------------------------------------------------
+Changes for Crossfire 0.93.3:
+
+Number of images cleaned up/improved/created by David Sundqvist.
+
+Several new images/archetyps added - new wall types, dedicated altars for
+the gods (very nicely looking), and some other changes by David.
+
+------------------------------------------------------------------------------
+Changes for Crossfire 0.92.7
+
+Cleaned up the dev directory some - got rid of a bunch of files that have
+since been merged.  Also, got rid of things that should no longer be
+applicable (via code changes), and stuff in which there was only and archetype
+object - there should be enough examples out there on how to create new
+archetyps.
+
+Weight for some monsters updated to be in more in line with what should be
+expected.
+
+Editable cleaned up for a bunch of objects.
+
+Half orc and halfling player types added.
+
+Some archetyps for throwing added
+
+------------------------------------------------------------------------------
+Changes for Crossfire 0.92.6
+
+Several objects added for Brian Thomas valley quest maps - some disabled
+archetypes moved back into palce.
+
+Changes for Crossfire 0.92.5
+
+Many archetypes added for the kunji maps.
+
+Changes for Crossfire 0.91.7
+
+Many new archetypes added by Brian Thomas (thomas@nomad.astro.psu.edu).
+These are spread out in many different directories.
+
+Spectres are no longer animated.  In this way, invisibilty on them works
+properly.
+
+Changes for Crossfire 0.90.5:
+
+Changed editable value in some items so they appear in the proper
+place for crossedit.
+
+Moved all files in the 'item' directory into misc.
+
+Changes for Crossfire 0.90.4:
+
+Added DarkOrange to xpm.template file.  Before, there were only
+two oranges, and the dark orange was closer to a brown.
+
+Cleaned up some of the X Pixmaps.  Eliminated some colors from the
+various files that are not in the official xpm.template file.
+
+Merged the soda archetypes in.  Like Chico, they were at least
+partially colored as I transfered them.
+
+Tried to clean up the directories some.  All spell effects should
+now be in magic, where as items that are related to spells (wands,
+books, horns, rods, etc) are in spells.  Either item or misc should
+be removed, as the stuff in them seems like it could be placed
+in the other directory.
+
+Changes for crossfire 0.90.3:
+Merged chico archetypes in their proper location, instead of being
+in a separate directly.  Colored them as I went.
+
+-----------------------------------------------------------------------------
+
+Archetypes
+
+old name	new name	comment
+
+steinblokk	bwall_0		duplicates
+dun1		blocked
+dun15		blocked
+mine1		blocked
+mine15		blocked
+
+thief		thief_1		conficts with player archetypes
+warrior		warrior_1
+elf		elf_1
+ninja		ninja_1
+
+
+skilt				obsolete
+guarddd[13]			empty archetypes (bitmaps are in dev)
+
+------------------------------------------------------
+Bitmaps
+
+barbarian[1-3]			old barbarian animation ?
+halbert[1-3]			old human animation ?
+cleric[1-3]			old cleric animation ?
+dun1, mine1			black square
+slime_acid			some test version of green slime ?
+spider*				hevi's bitmaps
+pouch				identical with sack.111 and not used

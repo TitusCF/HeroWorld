@@ -1,0 +1,89 @@
+#!/bin/sh
+
+# this script calls normalize on all maps that we touch
+# it is to be used whenever we do local changes and
+# used before importing upstream map changes, to reduce
+# cvs conflicts.
+
+# those are typo fixes or other stuff that is
+# small enough to not cause conflicts
+#   navar_city/spyhouse		\
+#   start/newbieshouse		\
+#   pup_land/lone_town/mshop	\
+#   pup_land/rainbow/station	\
+#   dragonisland/house7		\
+#   lake_country/Butakis/gate_outer
+#   lake_country/Butakis/prison_e
+#   lake_country/Butakis/prison_n
+#   lake_country/Butakis/prison_s
+#   lake_country/Mwizard/Mwizard0
+#   lake_country/Mwizard/Mwizard1
+#   lake_country/Mwizard/Mwizard2
+#   lake_country/Mwizard/Mwizard3
+#   lake_country/Mwizard/Mwizard4
+#   lake_country/Mwizard/Mwizard5
+#   lake_country/Mwizard/Mwizard6
+#   lake_country/Mwizard/MwizardG
+#   lake_country/shops/Olds_jewel
+#   lake_country/shops/clems_archery
+#   lake_country/small_buildings/hut_Galmorus
+#   navar_city/city1houses3
+#   pup_land/barrier
+#   pup_land/world
+#   pup_land/castle_eureca/castle_eureca1
+#   pup_land/kurte/hut2
+#   pup_land/lone_town/gemshop
+#   pup_land/lone_town/guild_law
+#   pup_land/nurnberg/alshop
+#   pup_land/nurnberg/aqueduct
+#   pup_land/nurnberg/ashop
+#   pup_land/nurnberg/bshop
+#   pup_land/nurnberg/pshop
+#   pup_land/nurnberg/washop
+#   pup_land/nurnberg/dick/house
+#   pup_land/nurnberg/reception/reception
+#   pup_land/rainbow/shore
+#   pup_land/rainbow/station
+#   pup_land/rainbow/Lv1/hut1
+#   pup_land/rainbow/Lv1/hut2
+#   pup_land/rainbow/Lv1/hut3
+#   pup_land/rainbow/Lv1/hut4
+#   pup_land/s_f/Kira
+#   pup_land/s_f/ki
+#   pup_land/s_f/to-jyo
+#   quests/peterm/FireTemple/FifthFloor
+#   scorn/houses/jones
+#   scorn/misc/drywell
+#   scorn/misc/castle2
+#   scorn/oldcity/oldcity6
+#   scorn/shops/bowshop
+
+# there is no need to normalise maps we don't get from upstream, such as
+# aldwulf/ elmex/ schmorp/ onefang/
+
+cfmap-normalize \
+   navar_city/city1enter	\
+   navar_city/casino_infernal/casino_infernal1 \
+   scorn/oldcity/oldcity7	\
+   scorn/shops/bank		\
+   pup_land/lone_town/apartment/groundfloor \
+   pup_land/lone_town/bank	\
+   pup_land/nurnberg/bank	\
+   quests/todd/aljwaf/crypt6	\
+   scorn/temples/valriel	\
+   scorn/misc/gatehouse		\
+   scorn/temples/gorokh		\
+   scorn/temples/valriel2	\
+   scorn/peterm/undead_quest	\
+   scorn/misc/HallOfQuests	\
+   scorn/anthony/portgate	\
+   world/world_104_116		\
+   world/world_104_115		\
+   world/world_105_115		\
+   world/world_105_116		\
+   world/world_106_115		\
+   world/world_106_116		\
+   world/world_110_118		\
+   world/world_121_117		\
+   world/world_122_117		\
+;

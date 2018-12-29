@@ -1,0 +1,81 @@
+treasureone summoner_book_low
+  arch spell_create_missile
+    chance 1
+  more
+  arch spell_lesser_summon_golem
+    chance 4
+  more
+  arch spell_earth_to_dust
+    chance 2
+  more
+  arch spell_summon_fog
+    chance 2
+  more
+  arch spell_summon_golem
+    chance 8
+  more
+  arch spell_summon_pet_monster
+    chance 7
+  more
+  arch spell_alchemy
+    chance 5
+  more
+  arch spell_create_earth_wall
+    chance 6
+  more
+  arch spell_summon_earth_elemental
+    chance 3
+  more
+  arch spell_counterspell
+    chance 1
+  more
+  arch spell_charm_monsters
+    chance 1
+  more
+  arch spell_summon_water_elemental
+    chance 4
+  more
+  arch spell_mystic_fist
+    chance 1
+end
+
+treasureone summoner_book_medium
+  arch spell_create_food
+    chance 4
+  more
+  arch spell_counterwall
+    chance 1
+  more
+  arch spell_summon_air_elemental
+    chance 5
+  more
+  arch spell_summon_fire_elemental
+    chance 2
+  more
+  arch spell_build_director
+    chance 1
+end
+
+treasureone summoner_book_high
+  arch spell_dancing_sword
+    chance 1
+  more
+  arch spell_pentagram
+    chance 1
+end
+
+treasureone summoner_book
+  list summoner_book_low
+    chance 20
+    nrof 1
+  more
+  list summoner_book_medium
+    chance 30
+    magic 6
+    nrof 1
+  more
+  list summoner_book_high
+    chance 40
+    magic 11
+    nrof 1
+end

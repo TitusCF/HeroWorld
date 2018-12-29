@@ -1,0 +1,26 @@
+#!/opt/bin/perl
+
+# output mv commands to rename all map files in . to *.map
+# quite hackish
+
+open my $find, "find . -type f -print0 |"
+   or die;
+
+$/ = "\x00";
+
+while (<$find>) {
+   next if /\/CVS\//;
+   chomp;
+   next if /\.map$/;
+   next if /\.map,v$/;
+   open my $map, "<:raw", $_
+      or die "$_: $!";
+   sysread $map, my $buf, 4096;
+   if (s/,v$//) {
+      next unless $buf =~ /^text\n\@arch map$/m;
+      print "mv -v \Q$_\E,v \Q$_\E.map,v\n";
+   } else {
+      next unless $buf =~ /^arch map$/m;
+      print "mv -v \Q$_\E \Q$_\E.map\n";
+   }
+}

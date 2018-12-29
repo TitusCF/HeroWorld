@@ -1,0 +1,27 @@
+==============================================================================
+arch/dev/wip
+==============================================================================
+
+This directory is a holding area for archetypes that are under development or
+are good ideas, but have frozen mid-development for some reason.  That said,
+this is not a holding area for large volumes of aborted works.  The primary
+use should be to retain works-in-progress for collaborative use and/or to
+pass an incomplete work on to another (future?) developer.
+
+It is suggested that each work-in-progress is created in a sub-directory and
+that this directory (dev/wip) be used primarily for persistent files.
+
+The archetypes under this directory are invisible to Gridarta CrossfireEditor
+by default.  The following is an example of how to easily make these files
+accessible in the map editor.
+
+If an archetype in this directory is put into service, remove any unneeded
+files and and place the archetype in a directory outside this arch/dev area.
+
+In cases where an archetype is under test, it may be advantageous to provide a
+patch that may be used to hook the arch into a map so that other developers
+are able to reproduce results.
+
+  $ cd /path/to/sandbox/arch/trunk
+  $ ln -s dev/wip wip
+

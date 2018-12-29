@@ -1,0 +1,83 @@
+This contains various directories of presently unused archetypes
+or pixmaps.  Some of the archetypes are here because they are not
+needed now, but might be useful in future versoins.  Others are
+archetypes that were once used, but no longer.  These are here so that
+if an old map containing these archetypes is used, it will be known
+what these archetypes did.
+
+Directories:
+Britan,Gloran,Kanji:  Contains just bitmaps.  Could be useful for
+future rune code.
+
+merged:  This contains merged version os archetypes that use
+several pixmaps to make one large pixmap (ie, a shop is a 2x2
+pixmap.  In the merged directory, it might be stored in 2x2 format).
+This makes editing of pixmaps of this type easier.
+
+old: contains old versions of some archetypes.
+
+unused:  archetypes and pixmaps that are presently not used.
+
+xpm_pref: Contains various colored XPM files.  These are files that
+have been replace by better colored/nicer looking (IMHO) images.  But rather
+than delete thod replaced XPM images, at least keep them around in
+case someone would rather use them.
+
+Files:
+xpm.template: Contains a template file that has all the 'standard'
+colors that will be used for the game.  All pixmaps should only use
+these colors.
+
+This directory contains all bitmaps and archetypes which are in 
+development phase. Also all unused bitmaps are collected here.
+These are very mixed series bitmaps and archetypes and hope that 
+this directory (specially obsolete sub-directory) is cleaned 
+before distrubution of new version of crossfire.
+
+In obsolete directory contains some bitmaps and archetypes, which 
+has become obsolete. Most these are simple duplicates  with existing 
+ones or cause other confilcts.
+
+Note that these archetypes and bitmaps are NOT included font, pixmap 
+or archetype files used by game. 
+
+Since some archetypes have changed, all maps have to be converted 
+(again ;). But this isn't big problem since they have to be converted 
+anyway to get face numbers to strings.
+
+Few notes a files in obsolete directory:
+
+Archetypes
+
+old name	new name	comments
+---------------------------------------
+steinblokk	bwall_0		duplicates
+dun1		blocked		4 identical black square !
+dun15		blocked
+mine1		blocked
+mine15		blocked
+
+thief		thief_1		conficts with player archetypes
+warrior		warrior_1	(now renamed with _1 suffix) 
+elf		elf_1
+ninja		ninja_1
+
+brygge		pier
+
+skilt				obsolete (sign is used archetype)
+
+guarddd[13]			empty archetypes (bitmaps are in dev)
+guardd[13]
+
+------------------------------------------------------
+Bitmaps
+
+barbarian[1-3]			old barbarian, human and cleric animation ?
+halbert[1-3]			(can be moved in dev, if they have some use)
+cleric[1-3]			
+dun1, mine1			black square (blocked.111)
+slime_acid			some test version of green slime ?
+spider*				hevi's bitmaps
+pouch				identical with sack.111 and not used
+stinger				old version of artifacts ?
+skull_cleaver

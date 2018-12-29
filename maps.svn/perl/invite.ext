@@ -1,0 +1,121 @@
+#! perl
+
+# level 1: invite to private rooms only ~lvl 10
+# level 2: private rooms and saving maps (guilds, some other public saving maps)
+# level 3: invite everywhere where no monsters are on the map
+# level 4: invite everywhere
+
+# implement a 'follow' command
+
+#TODO: fon't invite on damned ground
+
+my $TIMEOUT = 60;
+
+# determine level available to the player
+sub player_level {
+   my ($ob) = @_;
+
+   return 4
+      if $ob->flag (cf::FLAG_WIZ);
+
+   List::Util::max
+      map $_->type == cf::FORCE && $_->slaying =~ /^Invitor Level (\d+)$/ ? $1 : 0,
+         $ob->inv
+}
+
+# determine level required for the given location
+sub map_level {
+   my ($map, $x, $y) = @_;
+
+   for my $x (0 .. $map->width - 1) {
+      for my $y (0 .. $map->height - 1) {
+         return 4
+            if grep $_->flag (cf::FLAG_MONSTER),
+                  $map->at ($x, $y);
+      }
+   }
+
+   my $path = $map->path;
+   my $player = sprintf "%s/%s/", cf::localdir, cf::playerdir;
+   
+   if ($player eq substr $path, 0, length $player) {
+      1
+   } elsif (grep $_->flag (cf::FLAG_UNIQUE) && $_->flag (cf::FLAG_IS_FLOOR), $map->at ($x, $y)) {
+      2
+   } else {
+      3
+   }
+}
+
+my @maplevel = (
+   "some mysterious hideout",
+   "his home",
+   "his guild", # wrong, this is any unique place !player-specific
+   "a nice place",
+   "a place with monsters",
+);
+
+my %invite;
+
+cf::register_command invite => 10, sub {
+   my ($who, $args) = @_;
+
+   my $name = $who->name;
+
+   if ($args ne "" && $name ne $args) {
+      my ($map, $x, $y) = ($who->map, $who->x, $who->y);
+
+      my $plevel = player_level $who;
+      my $mlevel = map_level $map, $x, $y;
+
+      if ($plevel >= $mlevel) {
+         if (my $other = cf::player::find $args) {
+            $who->message ("inviting player '$args', to cancel, type: 'invite or wait $TIMEOUT seconds");
+            $other->ob->message ("$name invites you to $maplevel[$mlevel], to accept, use 'accept-invitation $name");
+            $invite{$name}{$args} = [time + $TIMEOUT, $map, $x, $y];
+         } else {
+            $who->message ("cannot invite '$args': no such player");
+         }
+      } elsif ($plevel) {
+         $who->message ("Valriel deems you not worthy yet. Gorokh is annoyed by your sacrilege.");
+      } else {
+         $who->message ("You haven't proven your worthyness in the mountain maze.");
+      }
+   } else {
+      $who->message ("canceling all invites");
+      delete $invite{$name};
+   }
+};
+
+sub teleport {
+   my ($pl, $map, $x, $y) = @_;
+
+   my $portal = cf::object::new ("exit");
+
+   $portal->set_slaying ($map->path);
+   $portal->set_hp      ($x);
+   $portal->set_sp      ($y);
+
+   $portal->apply ($pl);
+
+   $portal->free;
+}
+
+cf::register_command "accept-invitation" => 10, sub {
+   my ($who, $args) = @_;
+
+   my $name = $who->name;
+
+   if (!exists $invite{$args} || !exists $invite{$args}{$name}) {
+      $who->message ("Sorry, $args hasn't invited you.");
+   } elsif ($invite{$args}{$name}[0] < time) {
+      $who->message ("Sorry, $args\'s invitation has expired.");
+   } else {
+      my $inv = delete $invite{$args}{$name};
+      $who->message ("A godly force starts to pull you up...");
+      teleport $who, @{$inv}[1,2,3];
+      $who->message ("... and sets you down where $args invited you to.");
+
+   }
+}
+

@@ -1,0 +1,86 @@
+treasure c_m_priest
+  list all_spell_skills
+  more
+  list human_parts
+  more
+  arch staff
+  magic 1
+  more
+  list random_books
+  chance 50
+  more
+  list random_books
+  chance 50
+  more
+  arch staff
+  chance 30
+  more
+  arch spell_paralyze
+  chance 50
+  no
+    arch spell_summon_pet_monster
+    end
+  more
+  arch abil_poison_cloud
+  chance 50
+  more
+  arch spell_paralyze
+  chance 20
+  no
+    arch abil_fear
+    end
+  more
+  arch spell_magic_missile
+  chance 20
+  no
+    arch spell_cause_medium_wounds
+    end
+  more
+  arch spell_create_pool_of_chaos
+  chance 20
+  end
+#
+treasure c_priest
+  list all_spell_skills
+  more
+  list human_parts
+  more
+  arch staff
+  magic 3
+  more
+  arch cleric_book
+  chance 50
+  more
+  arch cleric_book
+  more
+  arch staff
+  chance 80
+  more
+  arch rod_light
+  chance 30
+  no
+    arch rod_heavy
+    chance 30
+    end
+  more
+  arch spell_paralyze
+  more
+  arch spell_summon_pet_monster
+  more
+  arch abil_poison_cloud
+  more
+  arch spell_paralyze
+  more
+  arch abil_fear
+  more
+  arch abil_burning_hands
+  more
+  arch spell_hellfire
+  chance 20
+  no
+    arch spell_cause_heavy_wounds
+    end
+  more
+  arch spell_create_pool_of_chaos
+  chance 80
+  end

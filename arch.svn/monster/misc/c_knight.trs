@@ -1,0 +1,29 @@
+treasure c_knight
+  arch skill_use_magic_item
+  more
+  list human_parts
+  more
+  arch sword_2
+  magic 3
+  chance 30
+  no
+    arch sword_2
+    magic 1
+    end
+  more
+  arch plate_mail
+  more
+  arch ring
+  chance 30
+  more
+  arch bow
+  magic 1
+  chance 30
+  yes
+    arch arrow
+    nrof 20
+    end
+  more
+  arch wand
+  chance 20
+  end

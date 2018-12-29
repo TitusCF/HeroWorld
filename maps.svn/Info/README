@@ -1,0 +1,160 @@
+In this directory is utilities, gif images of the maps, and other notes.
+
+------------------------------------------------------------------------------
+Developer guidelines:
+
+Read the mapguide for guidelines on making a good map.
+
+Use the comment field that the maps have - put in who the author is,
+what level the map is, and any other special notes.
+
+------------------------------------------------------------------------------
+Naming Scheme:
+
+Note that these rules are ordered in importance, eg, if a rule conflicts,
+the lower number rule takes precedence.
+
+1) If the map is currently off the main world (eg, pupland), it should have
+   its own top level ldirectory which all the maps in that area are located.
+
+2) Each city should have it own top level directory (eg, scorn,
+   navar_city, santo_dominion).  All buildings in the city and located
+   nearby or related to it are in the respective city directory.
+
+For maps that are placed directly on the world map and are not in the city,
+the follow guidelines should be used:
+
+3) If the map is part of a larger quest, a /quest/name_of_quest directory
+   should be made, and all the maps for the quest placed in there.  If
+   some portions of the quest has maps in cities or other places, a README
+   should be included explaining this.  Note in general, having README's
+   for all quests explaining the flow probably isn't a bad idea in the
+   case someone else needs to work on it.
+
+4) If a map is independent (eg, the map is one you just go there, kill and
+   get exp), it should be in the /dungeons directory (Ill named I know).
+   If the dungeon is comprised of several map (eg, multilevel dungeon), a
+   sub directory should be made to hold all of these maps.
+
+5) Maps should fall into one of the category above - if it does not, and
+   you are not sure, send a message to crossfire-devel@lists.real-time.com.
+   Maps should not be sorted by author, as this does not make maintaining
+   them easy.
+
+
+------------------------------------------------------------------------------
+GIF files:
+
+el_map.gif is an elevation map - it is color coded based on elevations.
+
+terrain_map.gif is color coded based on the type of terrain - I tried to match
+the coloration on what the image looks like in the png set.
+
+ann_map.gif is a annotated version of the map, showing the roads and
+locations of the main cities.
+
+world.gif: This is a map of how the world looks.  This was done by
+converting all of the world maps into images, scaling those down, and
+then merging them into one large image. If you look carefully, you can
+make out the towns, roads, etc.
+
+------------------------------------------------------------------------------
+Important landmarks
+
+The list of translation values below have been used in the update_maps
+script.  The values are recoreded here in that they might be useful for
+updating other maps that are contributed later.
+
+The format is:
+OLD_MAP_NAME, OLD_MAP_STARTX, OLD_MAP_STARTY, OLD_MAP_ENDX, OLD_MAP_ENDY ->
+	NEW_MAP_NAME, NEW_MAP_OFFX, NEW_MAP_OFFY
+
+Translation values used:
+/city/city, 10, 0 (100,100) -> 		/world/world_105_115, -10, 18
+/brittany/Brest/Brest 0,0 (100,100) -> 	/world/world_107_123, +17, +16
+/santo_dominion/town 3,12 (100,100) -> 	/world/world_102_108, 0, -9
+/navar_city/city1 15, 13 (100,100) -> 	/world/world_122_117, -15, -13
+/navar_city/city1 15, 0 (100,12) -> 	/world/world_122_116, -15, 37
+/navar_city/city1 0, 0 (14,12) -> 	/world/world_121_116, 35, 37
+/navar_city/city1 0,13 (14,100) -> 	/world/world_121_116, 35, -13
+/Lake_County/kundi_area 0,0 -> 		/world/world_109_126 (+13, +17)
+/dragonisland/stonevile 0,0 (13,0)	/world/world_102_127 (+36, +1)
+/dragonisland/stonevile 14,0 (100,100)	/world/world_103_127 (-14, +1)
+/dtabb/darcap 0,0 (100,100)		/world/world_116_102 (+18, +26)
+
+dragonisland note:  Some of the buildings in stoneville were moved
+   slightly to better fit them onto the layout of the island.
+
+kar (euthville):				/world/world_105_113
+Kar doesn't have simple values, as the town was shrunk a bit and
+re-arrange some.
+
+ This information can be used to see where some of the
+notable maps are.
+
+------------------------------------------------------------------------------
+land.c:
+This is the program that generated the new world map.
+
+The file land.c just gets compiled - if your system has a math
+library (-lm) you probably need to link that in.
+
+Given the same seed and other parameters, it will generate the same
+results if on the same platform.  Eg, two different intel systems running
+redhat 7.2 should generate the same results, but a redhat compared to
+solaris system, or linux intel vs linux power pc may very well generate
+different results.
+
+
+The generated map was run with the follow parameters on my system:
+-x 1500 -y 1500 -s 1007623715 -p 300 -n 170 -w 40000 -l 200000
+------------------------------------------------------------------------------
+
+Note about unique maps:
+
+The update_exits.pl script can be used to update the exit of per player
+unique maps.    IT can also be used with the unique-items map, but
+the check in the script for a valid map file would need to be removed.
+
+The update_apart.pl script should properly deal with per player apartments
+and unique maps - just run it with the appropriate target (eg,
+'update_apart.pl players ' and 'update_apart.pl unique-items'.  The script
+works, but it is certainly possible I'm missing some paths that should
+be substitued in there.
+
+Per player unique maps:
+
+_city_* -> _scorn_...
+
+Guild maps:
+
+guilds@black_shield	-> brest@black_shield
+guilds@damned_heretics  -> wolfsburg@guilds@damned_heretics
+guilds@dreaming_sage	-> navar_city@guilds@dreaming_sage
+guilds@drunken_barbarian-> santo_dominion@guilds@drunken_barbarian
+guilds@guildhousesinc 	-> scorn@guilds@guildhousesinc
+guilds@laughing_skull	-> pup_land@guilds@laughing_skull
+guilds@mailed_fist	-> scorn@guilds@mailed_fist
+guilds@poisoned_dagger  -> darcap@darcap@guilds@poisoned_dagger
+guilds@purple_butterfly -> pup_land@guilds@purple_butterfly
+guilds@smoking_cauldron -> darcap@darcap@guilds@smoking_cauldron
+
+------------------------------------------------------------------------------
+rewrite_exits.pl:
+
+This is a perl script that basically goes through and updates the slaying
+fields for maps, which makes renaming maps easy.
+
+However, for this to work, map names must be unique.  Often the case, but
+not always.  If it gets a duplicate, it doesn't do anything.
+
+Run it from the top level map directory - it then does it works updating
+all the maps.
+
+------------------------------------------------------------------------------
+rewrite_styles.pl:
+
+Similar to rewrite_exits, but instead for styles.  Designed to fix up the
+uppercase style names that the mlab maps used, and also put them in
+a subdirectory so that the styles won't show up for maps that use random
+styles.

@@ -1,0 +1,938 @@
+arch map
+name Demonology WaterStudy
+reset_timeout 7200
+difficulty 7
+width 9
+height 15
+enter_x 1
+enter_y 1
+msg
+Creator: peterm
+Email: peterm@soda.berkeley.edu
+Date: Sat Apr 30 20:50:08 1994
+endmsg
+end
+arch woodfloor
+end
+arch dwall_2_2_2
+end
+arch woodfloor
+y 1
+end
+arch dwall_2_1_1
+y 1
+end
+arch woodfloor
+y 2
+end
+arch dwall_2_1_1
+y 2
+end
+arch woodfloor
+y 3
+end
+arch dwall_2_1_1
+y 3
+end
+arch woodfloor
+y 4
+end
+arch dwall_2_1_1
+y 4
+end
+arch woodfloor
+y 5
+end
+arch dwall_2_1_1
+y 5
+end
+arch woodfloor
+y 6
+end
+arch dwall_2_1_1
+y 6
+end
+arch woodfloor
+y 7
+end
+arch dwall_2_1_1
+y 7
+end
+arch woodfloor
+y 8
+end
+arch dwall_2_2_1
+y 8
+end
+arch blocked
+msg
+endmsg
+y 9
+end
+arch blocked
+msg
+endmsg
+y 10
+end
+arch blocked
+msg
+endmsg
+y 11
+end
+arch blocked
+msg
+endmsg
+y 12
+end
+arch blocked
+msg
+endmsg
+y 13
+end
+arch blocked
+msg
+endmsg
+y 14
+end
+arch woodfloor
+x 1
+end
+arch dwall_2_1_2
+x 1
+end
+arch woodfloor
+x 1
+y 1
+end
+arch stair_down
+slaying WaterMaster
+hp 1
+sp 1
+x 1
+y 1
+end
+arch woodfloor
+x 1
+y 2
+end
+arch woodfloor
+x 1
+y 3
+end
+arch woodfloor
+x 1
+y 4
+end
+arch random_wealth
+x 1
+y 4
+end
+arch woodfloor
+x 1
+y 5
+end
+arch random_wealth
+x 1
+y 5
+end
+arch woodfloor
+x 1
+y 6
+end
+arch random_wealth
+x 1
+y 6
+end
+arch woodfloor
+x 1
+y 7
+end
+arch random_wealth
+x 1
+y 7
+end
+arch woodfloor
+x 1
+y 8
+end
+arch dwall_2_1_2
+x 1
+y 8
+end
+arch blocked
+msg
+endmsg
+x 1
+y 9
+end
+arch cave24
+x 1
+y 10
+end
+arch cave3
+x 1
+y 11
+end
+arch cave3
+x 1
+y 12
+end
+arch cave3
+x 1
+y 13
+end
+arch cave23
+x 1
+y 14
+end
+arch woodfloor
+x 2
+end
+arch dwall_2_1_2
+x 2
+end
+arch woodfloor
+x 2
+y 1
+end
+arch woodfloor
+x 2
+y 2
+end
+arch woodfloor
+x 2
+y 3
+end
+arch woodfloor
+x 2
+y 4
+end
+arch random_talisman
+x 2
+y 4
+end
+arch woodfloor
+x 2
+y 5
+end
+arch random_talisman
+x 2
+y 5
+end
+arch woodfloor
+x 2
+y 6
+end
+arch random_talisman
+x 2
+y 6
+end
+arch woodfloor
+x 2
+y 7
+end
+arch random_talisman
+x 2
+y 7
+end
+arch woodfloor
+x 2
+y 8
+end
+arch dwall_2_1_2
+x 2
+y 8
+end
+arch blocked
+msg
+endmsg
+x 2
+y 9
+end
+arch cave4
+x 2
+y 10
+end
+arch pentagram_111
+hp 6
+sp 6
+x 2
+y 11
+connected 2
+end
+arch cave2
+x 2
+y 14
+end
+arch woodfloor
+x 3
+end
+arch dwall_2_1_2
+x 3
+end
+arch woodfloor
+x 3
+y 1
+end
+arch woodfloor
+x 3
+y 2
+end
+arch magic_ear
+msg
+@match Rukmahalthalreay
+endmsg
+x 3
+y 3
+connected 2
+end
+arch woodfloor
+x 3
+y 3
+end
+arch woodfloor
+x 3
+y 4
+end
+arch random_spells
+x 3
+y 4
+end
+arch woodfloor
+x 3
+y 5
+end
+arch random_spells
+x 3
+y 5
+end
+arch woodfloor
+x 3
+y 6
+end
+arch random_spells
+x 3
+y 6
+end
+arch woodfloor
+x 3
+y 7
+end
+arch random_spells
+x 3
+y 7
+end
+arch woodfloor
+x 3
+y 8
+end
+arch dwall_2_1_2
+x 3
+y 8
+end
+arch blocked
+msg
+endmsg
+x 3
+y 9
+end
+arch cave4
+x 3
+y 10
+end
+arch water_elemental
+name Rukmahalthalreay
+msg
+@match master|Master
+You are NOT my master!
+@match name|Name
+I will not tell you my name nor will i
+tell you the name of my master, i am
+not stupid.
+@match Rukmahalthalreay
+Aaaagh, stop torturing me.  My master's
+name is Brenlorien, why don't you
+summon him from the grave and make him
+suffer?  Please Banish me back to my
+prison, it is at least damp there.
+endmsg
+Con 40
+hp 4000
+maxhp 4000
+exp 8000
+wc -4
+x 3
+y 12
+speed 0.200000
+speed_left -1.850000
+level 30
+resist_fire 100
+resist_electricity 100
+end
+arch cave2
+x 3
+y 14
+end
+arch woodfloor
+x 4
+end
+arch dwall_2_1_2
+x 4
+end
+arch woodfloor
+x 4
+y 1
+end
+arch woodfloor
+x 4
+y 2
+end
+arch woodfloor
+x 4
+y 3
+end
+arch magic_ear
+msg
+@match Banish|banish
+endmsg
+x 4
+y 4
+connected 1
+end
+arch woodfloor
+x 4
+y 4
+end
+arch marker
+slaying Water_V
+food 400
+x 4
+y 4
+end
+arch pentagram
+x 4
+y 4
+end
+arch woodfloor
+x 4
+y 5
+end
+arch woodfloor
+x 4
+y 6
+end
+arch woodfloor
+x 4
+y 7
+end
+arch woodfloor
+x 4
+y 8
+end
+arch dwall_2_1_2
+x 4
+y 8
+end
+arch blocked
+msg
+endmsg
+x 4
+y 9
+end
+arch cave4
+x 4
+y 10
+end
+arch cave2
+x 4
+y 14
+end
+arch woodfloor
+x 5
+end
+arch dwall_2_1_2
+x 5
+end
+arch woodfloor
+x 5
+y 1
+end
+arch woodfloor
+x 5
+y 2
+end
+arch woodfloor
+x 5
+y 3
+end
+arch woodfloor
+x 5
+y 4
+end
+arch woodfloor
+x 5
+y 5
+end
+arch mover_4
+x 5
+y 5
+speed 1.000000
+speed_left -1.180000
+end
+arch creator
+x 5
+y 5
+connected 2
+lifesave 1
+end
+arch pentagram_111
+hp 3
+sp 12
+x 5
+y 5
+connected 1
+end
+arch woodfloor
+x 5
+y 6
+end
+arch mover_3
+x 5
+y 6
+speed 1.000000
+speed_left -0.990000
+end
+arch creator
+x 5
+y 6
+connected 2
+lifesave 1
+end
+arch woodfloor
+x 5
+y 7
+end
+arch mover_2
+x 5
+y 7
+speed 1.000000
+speed_left -0.610000
+end
+arch creator
+x 5
+y 7
+connected 2
+lifesave 1
+end
+arch woodfloor
+x 5
+y 8
+end
+arch dwall_2_1_2
+x 5
+y 8
+end
+arch blocked
+msg
+endmsg
+x 5
+y 9
+end
+arch cave25
+x 5
+y 10
+end
+arch cave1
+x 5
+y 11
+end
+arch cave1
+x 5
+y 12
+end
+arch cave1
+x 5
+y 13
+end
+arch cave22
+x 5
+y 14
+end
+arch woodfloor
+x 6
+end
+arch dwall_2_1_2
+x 6
+end
+arch woodfloor
+x 6
+y 1
+end
+arch trident
+name Trident of Sea Mastery
+Cha 3
+dam 25
+x 6
+y 1
+attacktype 33
+resist_confusion 100
+resist_acid 75
+resist_drain -30
+value 50000
+magic 5
+end
+arch woodfloor
+x 6
+y 2
+end
+arch chair
+x 6
+y 2
+end
+arch woodfloor
+x 6
+y 3
+end
+arch rod_heavy
+name Rod of Changes
+hp 50
+maxhp 50
+sp 85
+x 6
+y 3
+level 15
+end
+arch woodfloor
+x 6
+y 4
+end
+arch woodfloor
+x 6
+y 5
+end
+arch mover_5
+x 6
+y 5
+speed 1.000000
+speed_left -0.160000
+end
+arch creator
+x 6
+y 5
+connected 2
+lifesave 1
+end
+arch woodfloor
+x 6
+y 6
+end
+arch woodfloor
+x 6
+y 7
+end
+arch mover_1
+x 6
+y 7
+speed 1.000000
+speed_left -1.850000
+end
+arch creator
+x 6
+y 7
+connected 2
+lifesave 1
+end
+arch woodfloor
+x 6
+y 8
+end
+arch dwall_2_1_2
+x 6
+y 8
+end
+arch blocked
+msg
+endmsg
+x 6
+y 9
+end
+arch blocked
+msg
+endmsg
+x 6
+y 10
+end
+arch blocked
+msg
+endmsg
+x 6
+y 11
+end
+arch blocked
+msg
+endmsg
+x 6
+y 12
+end
+arch blocked
+msg
+endmsg
+x 6
+y 13
+end
+arch blocked
+msg
+endmsg
+x 6
+y 14
+end
+arch woodfloor
+x 7
+end
+arch dwall_2_1_2
+x 7
+end
+arch woodfloor
+x 7
+y 1
+end
+arch table_3
+x 7
+y 1
+end
+arch woodfloor
+x 7
+y 2
+end
+arch table_3
+x 7
+y 2
+end
+arch book_read
+name Water Master's Book of Names
+msg
+This is the Water Master's book of
+names. You open the pages and flip
+through.
+Inside are the names of many 
+water elementals.
+One page in particular is very
+dog-eared.  The Water Master apparently
+had many uses for this particular
+elemental.
+The name is written as 
+Rukmahalthalreay
+endmsg
+x 7
+y 2
+end
+arch woodfloor
+x 7
+y 3
+end
+arch table_3
+x 7
+y 3
+end
+arch woodfloor
+x 7
+y 4
+end
+arch woodfloor
+x 7
+y 5
+end
+arch mover_6
+x 7
+y 5
+speed 1.000000
+speed_left -0.410000
+end
+arch creator
+x 7
+y 5
+connected 2
+lifesave 1
+end
+arch woodfloor
+x 7
+y 6
+end
+arch mover_7
+x 7
+y 6
+speed 1.000000
+speed_left -0.230000
+end
+arch creator
+x 7
+y 6
+connected 2
+lifesave 1
+end
+arch woodfloor
+x 7
+y 7
+end
+arch mover_8
+x 7
+y 7
+speed 1.000000
+speed_left -0.130000
+end
+arch creator
+x 7
+y 7
+connected 2
+lifesave 1
+end
+arch woodfloor
+x 7
+y 8
+end
+arch dwall_2_1_2
+x 7
+y 8
+end
+arch blocked
+msg
+endmsg
+x 7
+y 9
+end
+arch blocked
+msg
+endmsg
+x 7
+y 10
+end
+arch blocked
+msg
+endmsg
+x 7
+y 11
+end
+arch blocked
+msg
+endmsg
+x 7
+y 12
+end
+arch blocked
+msg
+endmsg
+x 7
+y 13
+end
+arch blocked
+msg
+endmsg
+x 7
+y 14
+end
+arch woodfloor
+x 8
+end
+arch dwall_2_2_3
+x 8
+end
+arch woodfloor
+x 8
+y 1
+end
+arch dwall_2_1_1
+x 8
+y 1
+end
+arch woodfloor
+x 8
+y 2
+end
+arch dwall_2_1_1
+x 8
+y 2
+end
+arch woodfloor
+x 8
+y 3
+end
+arch dwall_2_1_1
+x 8
+y 3
+end
+arch woodfloor
+x 8
+y 4
+end
+arch dwall_2_1_1
+x 8
+y 4
+end
+arch woodfloor
+x 8
+y 5
+end
+arch dwall_2_1_1
+x 8
+y 5
+end
+arch woodfloor
+x 8
+y 6
+end
+arch dwall_2_1_1
+x 8
+y 6
+end
+arch woodfloor
+x 8
+y 7
+end
+arch dwall_2_1_1
+x 8
+y 7
+end
+arch woodfloor
+x 8
+y 8
+end
+arch dwall_2_2_4
+x 8
+y 8
+end
+arch blocked
+msg
+endmsg
+x 8
+y 9
+end
+arch blocked
+msg
+endmsg
+x 8
+y 10
+end
+arch blocked
+msg
+endmsg
+x 8
+y 11
+end
+arch blocked
+msg
+endmsg
+x 8
+y 12
+end
+arch blocked
+msg
+endmsg
+x 8
+y 13
+end
+arch blocked
+msg
+endmsg
+x 8
+y 14
+end

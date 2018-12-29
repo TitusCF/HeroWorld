@@ -1,0 +1,86 @@
+archetype-file	NAME.arc
+
+image-file	NAME.PDA
+
+	where
+		P - part number
+		D - coding, or any other instance
+		    coding in 
+		A - animation phase
+numbering, PDA
+	- 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F,G,...,Z
+	- alphanumerics
+	- can be thought as hexadecimals
+
+name NAME:
+	- maximum 10 characters long, so max file name is 14 characters,
+	  that fit into portability requirements:
+
+Part numbers
+	3x3
+		1 2 3
+		4 5 6
+		7 8 9
+	2x2
+		1 2
+		3 4
+	3x2
+		1 2 3
+		4 5 6
+	2x3
+		1 2
+		3 4
+		5 6
+codings:
+	direction:
+
+		8  1  2
+		 \ | /
+		7- 0 -3
+		 / | \
+		6  5  4
+	
+	- same as in crossfire
+
+	turnable (reflecting objects):
+		0 to left, vertical
+		1 to right, horizontal
+	- also in gates,signs, ...
+
+walls:
+		   1
+		   |
+		8 -+- 2
+		   |
+		   4
+
+	- bit-combination; eg. 8 + 4 + 2 + 1 = F is cross,
+	  4 + 1 = 5 is vertical wall.
+
+river:
+
+    The non branched rivers are stored as river_XY.arc and river_XY.PDA
+    The XY use the direction scheme above (that is, river_15 runs
+    north/south).  As of now, D and A are always 1.  P will be up to
+    3, as rivers that run diagonally have wedges for the corners of the
+    adjacent spaces.  These wedges are stored as river_48.211, river_48.311,
+    river_26.211 and river_26.311.  The archetypes for these are stored
+    in river_48.arc and river_26.arc.
+
+    Junctions are of the form branch_XYZ.[arc/111].  XYZ reperesent the
+    three directions the river exits.  367 would be east,southwest, and
+    west.  Junctions may also have multiple parts - this happens when
+    the junction has a diagonal direction.
+
+    By convention, all directions for the river parts are in ascending
+    order.  That is to say if the exit locations are 2,6,3, that would
+    be stored as branch_236.
+
+cave:
+	-complex
+
+modified:
+	93/08 hevi@lut.fi - created
+	94/05 master@rahul.net - updated river definitions.
+
+### end of README ###

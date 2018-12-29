@@ -1,0 +1,665 @@
+arch map
+name Castle Saromok, Front Gate
+difficulty 75
+region wilderness
+width 10
+height 8
+enter_x 5
+enter_y 6
+msg
+Created:  2008-08-11 Chad Opperman | cromagic@sbcglobal.net
+Modified: 2012-01-01 Rick Tanner
+endmsg
+end
+arch cobblestones2
+end
+arch cwall_2_2_2
+end
+arch firepot
+name Giant Torch
+glow_radius 10
+end
+arch cobblestones2
+y 1
+end
+arch cwall_2_1_1
+y 1
+end
+arch cobblestones2
+y 2
+end
+arch cwall_2_1_1
+y 2
+end
+arch cobblestones2
+y 3
+end
+arch cwall_3_2
+y 3
+end
+arch cobblestones2
+y 4
+end
+arch cwall_3_2
+y 4
+end
+arch cobblestones2
+y 5
+end
+arch cwall_2_1_1
+y 5
+end
+arch cobblestones2
+y 6
+end
+arch cwall_2_1_1
+y 6
+end
+arch cobblestones2
+y 7
+end
+arch cwall_2_2_1
+y 7
+end
+arch firepot
+name Giant Torch
+y 7
+glow_radius 10
+end
+arch cobblestones2
+x 1
+end
+arch cwall_2_1_2
+x 1
+end
+arch cobblestones2
+x 1
+y 1
+end
+arch cobblestones2
+x 1
+y 2
+end
+arch cobblestones2
+x 1
+y 3
+end
+arch cwall_2_1_2
+x 1
+y 3
+end
+arch cobblestones2
+x 1
+y 4
+end
+arch cwall_2_1_2
+x 1
+y 4
+end
+arch cobblestones2
+x 1
+y 5
+end
+arch cobblestones2
+x 1
+y 6
+end
+arch cobblestones2
+x 1
+y 7
+end
+arch cwall_2_1_2
+x 1
+y 7
+end
+arch cobblestones2
+x 2
+end
+arch cwall_2_1_2
+x 2
+end
+arch cobblestones2
+x 2
+y 1
+end
+arch cobblestones2
+x 2
+y 2
+end
+arch cobblestones2
+x 2
+y 3
+end
+arch cwall_2_1_2
+x 2
+y 3
+end
+arch cobblestones2
+x 2
+y 4
+end
+arch cwall_2_1_2
+x 2
+y 4
+end
+arch cobblestones2
+x 2
+y 5
+end
+arch cobblestones2
+x 2
+y 6
+end
+arch cobblestones2
+x 2
+y 7
+end
+arch cwall_2_1_2
+x 2
+y 7
+end
+arch cobblestones2
+x 3
+end
+arch cwall_1_3
+x 3
+end
+arch cobblestones2
+x 3
+y 1
+end
+arch cobblestones2
+x 3
+y 2
+end
+arch cobblestones2
+x 3
+y 3
+end
+arch cwall_1_3
+x 3
+y 3
+end
+arch cobblestones2
+x 3
+y 4
+end
+arch cwall_1_3
+x 3
+y 4
+end
+arch magic_mouth
+msg
+It's settled then, here is the key to the volcano.  I will enjoy watching my pet destroy you.  Should you manage to survive however, my pet dragon has a key to this gate.
+endmsg
+x 3
+y 5
+connected 5
+move_on 0
+end
+arch magic_ear
+msg
+@match yes|Yes|ok|Ok
+endmsg
+x 3
+y 5
+connected 5
+end
+arch duplicator
+other_arch merchant
+x 3
+y 5
+connected 5
+end
+arch duplicator
+other_arch merchant
+x 3
+y 5
+connected 1
+end
+arch cobblestones2
+x 3
+y 5
+end
+arch merchant
+name Saromok's Projection
+msg
+@match hi|hey|hello
+He he heh... you really think you can stop me, mortal?  I am the most powerful sorceror in the universe, as you will see in due time, I assure you.  Many adventurers have visited my fortress...however, none have even made it past my guards yet!  Though my true form is currently atop my tower, I could even remotely kill you right now by merely willing it, however I think it would be more entertaining to pit you against my guards...Hmm, how about this: I will allow you to further entertain me inside the walls if you first prove yourself by slaying my pet dragon in the volcano.  What say you to this?
+endmsg
+face wraith.111
+animation wraith
+x 3
+y 5
+level 200
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
+resist_weaponmagic 100
+resist_ghosthit 100
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_turn_undead 100
+resist_fear 100
+resist_deplete 100
+resist_death 100
+resist_chaos 100
+resist_godpower 100
+resist_holyword 100
+resist_blind 100
+randomitems none
+monster 0
+friendly 1
+undead 1
+unaggressive 0
+reflect_missile 1
+reflect_spell 1
+can_cast_spell 0
+stand_still 1
+no_damage 1
+end
+arch cobblestones2
+x 3
+y 6
+end
+arch creator
+x 3
+y 6
+connected 5
+arch key2
+name Volcano Key
+name_pl Volcano Keys
+slaying volcano_key
+end
+end
+arch cobblestones2
+x 3
+y 7
+end
+arch cwall_1_3
+x 3
+y 7
+end
+arch invis_exit
+slaying castlesaromok_inside
+hp 14
+sp 23
+x 4
+move_on all
+end
+arch afloor_left
+x 4
+end
+arch afloor_left
+x 4
+y 1
+end
+arch afloor_left
+x 4
+y 2
+end
+arch magic_mouth
+msg
+You feel nervous as you enter Saromok's grand fortress.
+endmsg
+food 1
+x 4
+y 3
+move_on all
+end
+arch afloor_left
+x 4
+y 3
+end
+arch gate_closed_1
+x 4
+y 3
+connected 1
+no_magic 1
+damned 1
+end
+arch afloor_left
+x 4
+y 4
+end
+arch gate_closed_1
+x 4
+y 4
+connected 1
+no_magic 1
+damned 1
+end
+arch check_inv
+slaying saromokgatekey
+x 4
+y 5
+last_heal 1
+connected 1
+end
+arch afloor_left
+x 4
+y 5
+end
+arch afloor_left
+x 4
+y 6
+end
+arch invis_exit
+slaying ../../world/world_111_100
+hp 41
+sp 36
+x 4
+y 7
+move_on all
+end
+arch afloor_left
+x 4
+y 7
+end
+arch invis_exit
+slaying castlesaromok_inside
+hp 14
+sp 23
+x 5
+move_on all
+end
+arch afloor_left
+x 5
+end
+arch afloor_left
+x 5
+y 1
+end
+arch afloor_left
+x 5
+y 2
+end
+arch magic_mouth
+msg
+You feel nervous as you enter Saromok's grand fortress.
+endmsg
+food 1
+x 5
+y 3
+move_on all
+end
+arch afloor_left
+x 5
+y 3
+end
+arch gate_closed_1
+x 5
+y 3
+connected 1
+no_magic 1
+damned 1
+end
+arch afloor_left
+x 5
+y 4
+end
+arch gate_closed_1
+x 5
+y 4
+connected 1
+no_magic 1
+damned 1
+end
+arch check_inv
+slaying saromokgatekey
+x 5
+y 5
+last_heal 1
+connected 1
+end
+arch afloor_left
+x 5
+y 5
+end
+arch afloor_left
+x 5
+y 6
+end
+arch invis_exit
+slaying ../../world/world_111_100
+hp 41
+sp 36
+x 5
+y 7
+move_on all
+end
+arch afloor_left
+x 5
+y 7
+end
+arch cobblestones2
+x 6
+end
+arch cwall_1_4
+x 6
+end
+arch cobblestones2
+x 6
+y 1
+end
+arch cobblestones2
+x 6
+y 2
+end
+arch cobblestones2
+x 6
+y 3
+end
+arch cwall_1_4
+x 6
+y 3
+end
+arch cobblestones2
+x 6
+y 4
+end
+arch cwall_1_4
+x 6
+y 4
+end
+arch cobblestones2
+x 6
+y 5
+end
+arch cobblestones2
+x 6
+y 6
+end
+arch cobblestones2
+x 6
+y 7
+end
+arch cwall_1_4
+x 6
+y 7
+end
+arch cobblestones2
+x 7
+end
+arch cwall_2_1_2
+x 7
+end
+arch cobblestones2
+x 7
+y 1
+end
+arch cobblestones2
+x 7
+y 2
+end
+arch cobblestones2
+x 7
+y 3
+end
+arch cwall_2_1_2
+x 7
+y 3
+end
+arch cobblestones2
+x 7
+y 4
+end
+arch cwall_2_1_2
+x 7
+y 4
+end
+arch cobblestones2
+x 7
+y 5
+end
+arch cobblestones2
+x 7
+y 6
+end
+arch cobblestones2
+x 7
+y 7
+end
+arch cwall_2_1_2
+x 7
+y 7
+end
+arch cobblestones2
+x 8
+end
+arch cwall_2_1_2
+x 8
+end
+arch cobblestones2
+x 8
+y 1
+end
+arch cobblestones2
+x 8
+y 2
+end
+arch cobblestones2
+x 8
+y 3
+end
+arch cwall_2_1_2
+x 8
+y 3
+end
+arch cobblestones2
+x 8
+y 4
+end
+arch cwall_2_1_2
+x 8
+y 4
+end
+arch cobblestones2
+x 8
+y 5
+end
+arch cobblestones2
+x 8
+y 6
+end
+arch cobblestones2
+x 8
+y 7
+end
+arch cwall_2_1_2
+x 8
+y 7
+end
+arch cobblestones2
+x 9
+end
+arch cwall_2_2_3
+x 9
+end
+arch firepot
+name Giant Torch
+x 9
+glow_radius 10
+end
+arch cobblestones2
+x 9
+y 1
+end
+arch cwall_2_1_1
+x 9
+y 1
+end
+arch cobblestones2
+x 9
+y 2
+end
+arch cwall_2_1_1
+x 9
+y 2
+end
+arch bulletwall
+name Daylight
+face stfloor.111
+dam 160
+x 9
+y 3
+level 110
+invisible 1
+move_block 0
+blocksview 0
+no_damage 1
+arch spell_daylight
+end
+end
+arch cobblestones2
+x 9
+y 3
+end
+arch cwall_3_4
+x 9
+y 3
+end
+arch cobblestones2
+x 9
+y 4
+end
+arch cwall_3_4
+x 9
+y 4
+end
+arch cobblestones2
+x 9
+y 5
+end
+arch cwall_2_1_1
+x 9
+y 5
+end
+arch cobblestones2
+x 9
+y 6
+end
+arch cwall_2_1_1
+x 9
+y 6
+end
+arch cobblestones2
+x 9
+y 7
+end
+arch cwall_2_2_4
+x 9
+y 7
+end
+arch firepot
+name Giant Torch
+x 9
+y 7
+glow_radius 10
+end

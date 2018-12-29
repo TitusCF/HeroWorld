@@ -1,0 +1,612 @@
+arch map
+name nethack_2
+msg
+Creator: Gnat the Gnu
+Email: gnu@foo.bar
+Date: Sat May  5 16:44:39 2001
+endmsg
+width 6
+height 20
+end
+arch holy_servant
+name paper golem
+hp 25
+maxhp 25
+resist_magic 0
+resist_fire -100
+end
+arch gnome
+name gnome lord
+Con 1
+hp 50
+maxhp 10
+exp 100
+dam 8
+wc 2
+ac -1
+y 1
+speed 0.250000
+attacktype 1
+resist_fire 0
+resist_cold 0
+resist_confusion 0
+run_away 85
+reflect_spell 0
+can_cast_spell 0
+end
+arch wight
+name Barrow wight
+y 2
+end
+arch ogre
+name bugbear
+y 3
+end
+arch pixie
+name wood nymph
+y 4
+end
+arch mouse
+name woodchuck
+hp 16
+exp 25
+wc 8
+y 5
+generator 0
+end
+arch holy_servant
+name rope golem
+hp 125
+maxhp 25
+exp 250
+dam 15
+y 9
+resist_magic 0
+resist_fire -100
+end
+arch zombie
+y 11
+end
+arch dwarf
+name dwarf lord
+hp 125
+maxhp 25
+exp 300
+y 12
+end
+arch serp_man
+name Lizard
+y 15
+end
+arch black_pudding
+name brown pudding
+exp 1200
+y 16
+attacktype 1088
+end
+arch dog
+name winter wolf cub
+hp 150
+exp 300
+dam 10
+y 17
+attacktype 17
+resist_fire -100
+end
+arch scorpion
+y 18
+end
+arch holy_servant
+name straw golem
+hp 25
+maxhp 25
+x 1
+resist_magic 0
+resist_fire -100
+end
+arch gnome
+name gnomish wizard
+Con 1
+hp 50
+maxhp 10
+exp 100
+dam 8
+wc 2
+ac -1
+x 1
+y 1
+speed 0.250000
+attacktype 1
+resist_fire 0
+resist_cold 0
+resist_confusion 0
+randomitems rich
+run_away 85
+reflect_spell 0
+can_cast_spell 0
+end
+arch ghast
+name ghoul
+exp 250
+x 1
+y 2
+attacktype 4097
+end
+arch imp
+x 1
+y 3
+end
+arch pixie
+name water nymph
+x 1
+y 4
+end
+arch para_air
+name fog cloud
+x 1
+y 5
+end
+arch elf
+name Woodland-elf
+Con 0
+hp 180
+exp 300
+dam 10
+x 1
+y 9
+speed 0.200000
+type 0
+attacktype 4192
+monster 1
+unaggressive 1
+end
+arch generate_zombie
+x 1
+y 11
+end
+arch black_pudding
+name blue jelly
+dam 8
+x 1
+y 12
+attacktype 1040
+end
+arch giant_bat
+name vampire bat
+x 1
+y 15
+end
+arch small_troll
+name yeti
+hp 290
+exp 850
+dam 15
+x 1
+y 16
+attacktype 17
+resist_cold 100
+end
+arch panther
+name lynx
+hp 150
+exp 350
+dam 15
+x 1
+y 17
+level 6
+end
+arch generate_scorpion
+x 1
+y 18
+end
+arch snake
+name baby crocodile
+hp 25
+x 2
+end
+arch light_guard
+name Keystone Lieutenant
+Con 0
+maxhp 0
+exp 100
+dam 15
+x 2
+y 1
+speed 0.100000
+unaggressive 0
+sleep 0
+end
+arch elf
+name elf zombie
+Con 0
+hp 80
+exp 300
+dam 10
+x 2
+y 2
+speed 0.200000
+type 0
+attacktype 4192
+monster 1
+undead 1
+end
+arch imp
+name lemure
+hp 55
+exp 250
+dam 4
+x 2
+y 3
+speed 0.150000
+attacktype 4097
+randomitems none
+end
+arch pixie
+name mountain nymph
+x 2
+y 4
+end
+arch para_lightning
+name yellow light
+x 2
+y 5
+end
+arch bird
+name raven
+x 2
+y 9
+end
+arch dog
+x 2
+y 11
+end
+arch air_elemental
+name dust vortex
+x 2
+y 13
+end
+arch gnome
+name gnome king
+Con 1
+hp 250
+maxhp 10
+exp 300
+dam 8
+wc 2
+ac -1
+x 2
+y 15
+speed 0.250000
+attacktype 1
+resist_fire 0
+resist_cold 0
+resist_confusion 0
+randomitems rich
+run_away 85
+reflect_spell 0
+can_cast_spell 0
+end
+arch small_troll
+name owlbear
+hp 350
+dam 20
+x 2
+y 16
+attacktype 1
+resist_fire 0
+end
+arch panther
+x 2
+y 17
+end
+arch spider
+name giant spider
+hp 15
+x 2
+y 18
+end
+arch blob
+name jellyfish
+x 3
+speed 0.050000
+end
+arch kobold
+name kobold mummy
+hp 20
+x 3
+y 1
+attacktype 4129
+undead 1
+end
+arch war_ant
+name Fire Ant
+x 3
+y 2
+attacktype 5
+resist_fire 100
+end
+arch imp
+name Quasit
+hp 55
+exp 250
+dam 4
+x 3
+y 3
+speed 0.050000
+attacktype 1025
+randomitems none
+end
+arch orc
+name Uruk-Hai
+hp 40
+exp 250
+dam 8
+wc 5
+ac 0
+x 3
+y 4
+level 4
+end
+arch light_guard
+name Keystone Kaptain
+Con 0
+hp 180
+maxhp 0
+exp 300
+dam 20
+ac -2
+x 3
+y 9
+speed 0.100000
+unaggressive 0
+sleep 0
+end
+arch dog
+name dingo
+x 3
+y 11
+end
+arch orc
+name orc mummy
+hp 340
+exp 450
+dam 8
+wc 5
+ac 0
+x 3
+y 15
+level 6
+attacktype 4097
+end
+arch blob
+name quivering blob
+x 3
+y 16
+end
+arch green_slime
+name spotted jelly
+x 3
+y 17
+end
+arch air_elemental
+name ice vortex
+exp 350
+dam 15
+wc 2
+x 3
+y 18
+attacktype 17
+resist_physical 0
+resist_electricity 0
+resist_cold 100
+end
+arch fungus
+name shrieker
+x 4
+generator 0
+end
+arch orc
+name Mordor Orc
+hp 40
+exp 250
+dam 8
+wc 5
+ac 0
+x 4
+y 3
+level 4
+end
+arch earth_elemental
+name rock piercer
+dam 15
+x 4
+y 4
+end
+arch gnome
+name gnome mummy
+Con 1
+hp 250
+maxhp 10
+exp 350
+dam 8
+wc 2
+ac -1
+x 4
+y 9
+speed 0.100000
+attacktype 16417
+resist_fire 0
+resist_cold 0
+resist_confusion 0
+randomitems rich
+run_away 85
+undead 1
+reflect_spell 0
+can_cast_spell 0
+end
+arch small_troll
+name ape
+x 4
+y 10
+end
+arch panther
+name jaguar
+x 4
+y 11
+end
+arch dwarf
+name dwarf mummy
+hp 325
+maxhp 25
+exp 450
+x 4
+y 15
+level 6
+attacktype 4097
+end
+arch dog
+name wolf
+hp 150
+exp 300
+dam 10
+x 4
+y 16
+end
+arch gnome
+name leprechaun
+x 4
+y 17
+end
+arch fungus
+x 5
+end
+arch green_slime
+name gray ooze
+maxhp 2
+exp 350
+dam 3
+x 5
+y 1
+attacktype 1109
+end
+arch war_ant
+name Soldier Ant
+x 5
+y 2
+end
+arch orc
+name Orc Shaman
+hp 40
+exp 350
+dam 8
+wc 5
+ac 0
+x 5
+y 3
+level 4
+randomitems rich
+can_cast_spell 1
+sleep 0
+end
+arch mouse
+name rock mole
+hp 16
+exp 25
+wc 8
+x 5
+y 4
+generator 0
+end
+arch neko
+name cat
+hp 3
+x 5
+y 11
+end
+arch ogre
+x 5
+y 15
+end
+arch dog
+name were wolf
+hp 150
+exp 300
+dam 10
+x 5
+y 16
+attacktype 1025
+end
+arch orc
+name orc captain
+hp 340
+exp 550
+dam 12
+wc 2
+ac 0
+x 5
+y 17
+level 6
+end
+arch cobra
+name Black Naga Hatchling
+Wis 1
+hp 50
+exp 300
+dam 15
+y 6
+attacktype 1089
+unaggressive 1
+end
+arch serpent
+name snake
+y 10
+attacktype 1025
+end
+arch unicorn
+y 13
+end
+arch cobra
+name Golden Naga Hatchling
+Wis 1
+hp 80
+exp 300
+dam 15
+x 1
+y 6
+unaggressive 1
+end
+arch cobra
+name Guardian Naga Hatchling
+Wis 1
+hp 150
+exp 300
+dam 15
+x 2
+y 6
+attacktype 1089
+unaggressive 1
+end
+arch serpent
+name water moccasin
+x 2
+y 10
+attacktype 1025
+end
+arch unicorn
+name grey unicorn
+x 2
+y 12
+end
+arch cobra
+name Red Naga Hatchling
+exp 250
+dam 5
+x 4
+y 1
+attacktype 1029
+end
+arch unicorn
+name black unicorn
+x 4
+y 12
+end

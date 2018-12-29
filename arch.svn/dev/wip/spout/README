@@ -1,0 +1,90 @@
+===============================================================================
+SPOUT OVERLAYS by Kevin Bulgrien
+===============================================================================
+
+This is a first run at creating a set of overlays that may be reused in a
+number of combinations:
+
+pour_spout.arc
+pour_spout.base.111.png : A wall spout with nothing coming out of it.  To be
+                          placed on top of wall facings A or B, or possibly
+                          even 2 and 8.  Not designed for use with "short"
+                          walls like bwall, cave, dun, etc, but, a spout
+                          could be created for them too.
+
+pour_h2o.arc
+pour_h2o.base.111.png
+pour_h2o.base.112.png
+pour_h2o.base.113.png
+pour_h2o.base.114.png   : Animated pouring water to be placed over top of
+                          the pour spout.  This arch and associated graphics
+                          are not quite perfected.  The water color is suited
+                          for pouring into sea arch tiles.
+
+===============================================================================
+GRAPHICS
+===============================================================================
+
+The spout.xcf contains many individual layers of components used to create the
+above artwork.  Included are various wall styles and a sea tile for reference.
+Note that the water design was quite easy.  A single color of water was drawn,
+then GIMP's Filters | Noise | HSV Noise... was used to vary the color.  The
+effect of the filter is somewhat random, so it was a simple matter to generate
+variants of the water to make the water look like it was flowing.  The filter
+was applied, undone, and applied repeatedly until each frame had a good mix of
+colors with few dark pixels.  Further, the animation frames were each checked
+to be sure the sequence looked like water falling.
+
+HSV Noise settings that seemed reasonable were as follows:
+
+  Holdness:    8
+  Hue:         8
+  Saturation: 80
+  Value:      160
+
+The flowing water is visible on 32x32 tiles but if pixel size is small, it is
+not very obvious.  It is possible that picking a few more lighter color pixels
+might improve that, but the water looks pretty good at 64x64 bits in jxclient.
+
+The graphics in spout.xcf are in RGB format instead of INDEXED form, so they
+are not compressed as well as they could be.  This is partly because there is
+no point to converting to indexed while various layers have art not part of
+either the spout or water.
+
+To minimize file size, when exporting the the graphics to .png files, save
+each frame to a .png.  Close the .xcf, then open each .png and convert it to
+indexed mode, resave, and close it.  This ensures that each graphic's pallete
+can be as small as possible.
+
+Furthermore, when saving, use Save As so that you get the Save as PNG dialog
+which lets you choose the compression level and option.  Uncheck all options
+and select maximum compression before saving the .png.
+
+===============================================================================P
+POSSIBILITIES
+===============================================================================
+
+The possibilities of modular overlays becomes more evident if one considers
+things like the following.
+
+  Use the same pour_spout.arc on any "tall" wall for a number of variations
+  on the wall/spout theme.
+
+  Create a few more spout styles that eject fluid in the same place to add
+  even more variety.
+
+  Then, increase the variability by creating new replacements for the water
+  along the lines of pour_blood.arc, pour_sewage.arc, pour_fire.arc, etc.
+
+===============================================================================
+MAP CONSIDERATIONS
+===============================================================================
+
+The pour_spout.arc and pour_h2o.arc are no_pick 1 and will be placed by default
+onn a no_pick layer.  For some reason this causes the a wall piece under the
+spout and pouring water to disappear, showing only the floor piece underneath.
+For the wall to not disappear, the spout and water need to be on the items
+layer.  This can be done in a map file with `map_layer item`, but has been set
+in the pour_spout.arc and pour_h20.arc files so mapmakers will not have to be
+aware of this.
+

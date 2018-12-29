@@ -1,0 +1,12 @@
+#!/bin/csh
+
+foreach i ( *.arc ) 
+        mv $i $i.bak 
+#	echo "using $* on $i.bak"
+        perl -p -e "$*" $i.bak > $i 
+	if ($status == 0) then
+		rm $i.bak
+	else
+		mv $i.bak $i
+	endif
+end

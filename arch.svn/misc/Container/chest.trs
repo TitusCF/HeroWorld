@@ -1,0 +1,55 @@
+treasure chest
+  list chest_items
+    chance 80
+   no
+     list traps
+     more
+     list chest_items
+     more
+     list chest_items
+     more
+     list chest_items
+     chance 50
+  end
+end
+treasureone chest_items
+  arch goldcoin
+    chance 5
+    nrof 1
+  more
+  arch silvercoin
+    chance 5
+    nrof 9
+  more
+  list random_weapon
+    chance 30
+  more
+  list random_armour
+     chance 30
+  more
+  list random_food
+    chance 10
+  more
+  list random_special
+    chance 5
+    magic 6
+  more
+  list random_wealth
+    chance 5
+    magic 5
+  more
+  list random_wealth
+     chance 5
+     magic 10
+  more
+  list random_potion
+    chance 5
+    magic 5
+  more
+  list containers
+    chance 3
+  more
+  list random_scroll
+    chance 5
+  end
+

@@ -1,0 +1,21 @@
+Dialog 'Pre' block check handlers:
+
+Every .py file in this directory corresponds to a handler for a class of checks in a dialog file.
+Each file describes in its comments the check that it performs.
+
+When writing a new check, you have the variable 'verdict' which you are able to write to. 
+It is passed in with the value 'True' In order to have a check be treated as 'passed' then 
+ensure that this variable is still true when you are done, if you want to have your check fail
+then set the verdict to 'False' at the point where control goes back to your caller.
+
+The following variables are also avaiable to you:
+
+character, speaker, location
+which hold the CFObject of the player and the NPC and the location where tokens are being 
+written to and read from.
+
+These should probably be treated as read-only by your check, otherwise you might cause strange
+side-effects on other checks.
+
+Other than that, there are no technical limits on what you can do with a check, although it is 
+probably good form not to make drastic changes to the player's character.

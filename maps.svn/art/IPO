@@ -1,0 +1,812 @@
+arch map
+region tindervale
+name Imperial Post Office
+msg
+Creator: Commander Gros
+Email: yann.chachkoff@mailandnews.com
+Date: Wed Sep  5 22:09:24 2001
+Following a Lord MiDS idea
+endmsg
+width 10
+height 10
+enter_x 5
+enter_y 8
+end
+arch marble
+end
+arch awall_2_2_2
+end
+arch marble
+y 1
+end
+arch awall_2_1_1
+y 1
+end
+arch marble
+y 2
+end
+arch awall_2_1_1
+y 2
+end
+arch marble
+y 3
+end
+arch awall_3_2
+y 3
+end
+arch dungeon_magic
+y 3
+end
+arch marble
+y 4
+end
+arch awall_2_1_1
+y 4
+end
+arch marble
+y 5
+end
+arch awall_2_1_1
+y 5
+end
+arch marble
+y 6
+end
+arch awall_2_1_1
+y 6
+end
+arch marble
+y 7
+end
+arch awall_2_1_1
+y 7
+end
+arch marble
+y 8
+end
+arch awall_2_1_1
+y 8
+end
+arch marble
+y 9
+end
+arch awall_2_2_1
+y 9
+end
+arch marble
+x 1
+end
+arch awall_2_1_2
+x 1
+end
+arch marble
+x 1
+y 1
+end
+arch bookshelf
+x 1
+y 1
+end
+arch marble
+x 1
+y 2
+end
+arch table_2
+x 1
+y 2
+end
+arch cauldron
+name Coffee supplies
+x 1
+y 2
+end
+arch marble
+x 1
+y 3
+end
+arch awall_2_1_2
+x 1
+y 3
+end
+arch dungeon_magic
+x 1
+y 3
+end
+arch marble
+x 1
+y 4
+end
+arch mailbox
+material 0
+weight 0
+no_pick 1
+x 1
+y 4
+arch event_close
+title Python
+slaying /python/IPO/send.py
+end
+arch event_apply
+title Python
+slaying /python/IPO/receive.py
+end
+end
+arch marble
+x 1
+y 5
+end
+arch marble
+x 1
+y 6
+end
+arch marble
+x 1
+y 7
+end
+arch marble
+x 1
+y 8
+end
+arch fireborn
+name Elite Fireborn Guard
+msg
+@Match*
+please don't cause a ruckus...
+endmsg
+type 0
+no_pick 1
+randomitems standard
+level 10
+exp 100
+dam 3
+hp 100
+maxhp 100
+Con 10
+monster 1
+unaggressive 1
+stand_still 1
+resist_physical 100
+resist_magic 100
+resist_cold 100
+x 1
+y 8
+end
+arch marble
+x 1
+y 9
+end
+arch awall_2_1_2
+x 1
+y 9
+end
+arch marble
+x 2
+end
+arch awall_2_1_2
+x 2
+end
+arch marble
+x 2
+y 1
+end
+arch marble
+x 2
+y 2
+end
+arch chair_2.1
+x 2
+y 2
+end
+arch fireborn
+msg
+@match * I'm on a break.
+endmsg
+x 2
+y 2
+arch event_say
+title Python
+slaying /python/IPO/say.py
+end
+end
+arch marble
+x 2
+y 3
+end
+arch table
+name II
+no_pass 1
+x 2
+y 3
+end
+arch dungeon_magic
+x 2
+y 3
+end
+arch marble
+x 2
+y 4
+end
+arch marble
+x 2
+y 5
+end
+arch marble
+x 2
+y 6
+end
+arch marble
+x 2
+y 7
+end
+arch marble
+x 2
+y 8
+end
+arch marble
+x 2
+y 9
+end
+arch awall_2_1_2
+x 2
+y 9
+end
+arch marble
+x 3
+end
+arch awall_2_1_2
+x 3
+end
+arch marble
+x 3
+y 1
+end
+arch bookshelf
+x 3
+y 1
+end
+arch marble
+x 3
+y 2
+end
+arch table_2
+x 3
+y 2
+end
+arch marble
+x 3
+y 3
+end
+arch awall_2_1_2
+x 3
+y 3
+end
+arch dungeon_magic
+x 3
+y 3
+end
+arch marble
+x 3
+y 4
+end
+arch marble
+x 3
+y 5
+end
+arch marble
+x 3
+y 6
+end
+arch marble
+x 3
+y 7
+end
+arch marble
+x 3
+y 8
+end
+arch marble
+x 3
+y 9
+end
+arch awall_2_1_2
+x 3
+y 9
+end
+arch marble
+x 4
+end
+arch awall_2_1_2
+x 4
+end
+arch marble
+x 4
+y 1
+end
+arch marble
+x 4
+y 2
+end
+arch marble
+x 4
+y 3
+end
+arch awall_2_1_2
+x 4
+y 3
+end
+arch dungeon_magic
+x 4
+y 3
+end
+arch marble
+x 4
+y 4
+end
+arch marble
+x 4
+y 5
+end
+arch marble
+x 4
+y 6
+end
+arch marble
+x 4
+y 7
+end
+arch sign
+name Tindervale Message Board
+msg
+I am a talking board, please say something to me.
+If you don't know what to say, say help.
+endmsg
+x 4
+y 7
+arch event_say
+title Python
+slaying /python/IPO/board.py
+name Tindervale board
+end
+end
+arch marble
+x 4
+y 8
+end
+arch marble
+x 4
+y 9
+end
+arch awall_1_3
+x 4
+y 9
+end
+arch marble
+x 5
+end
+arch awall_2_1_2
+x 5
+end
+arch marble
+x 5
+y 1
+end
+arch marble
+x 5
+y 2
+end
+arch marble
+x 5
+y 3
+end
+arch awall_2_1_2
+x 5
+y 3
+end
+arch dungeon_magic
+x 5
+y 3
+end
+arch marble
+x 5
+y 4
+end
+arch marble
+x 5
+y 5
+end
+arch marble
+x 5
+y 6
+end
+arch marble
+x 5
+y 7
+end
+arch marble
+x 5
+y 8
+end
+arch invis_exit
+slaying keepgrounds
+hp 2
+sp 4
+x 5
+y 9
+end
+arch marble
+x 5
+y 9
+end
+arch marble
+x 6
+end
+arch awall_2_1_2
+x 6
+end
+arch marble
+x 6
+y 1
+end
+arch bookshelf
+x 6
+y 1
+end
+arch marble
+x 6
+y 2
+end
+arch table_2
+x 6
+y 2
+end
+arch cauldron
+name Coffee supplies
+x 6
+y 2
+end
+arch marble
+x 6
+y 3
+end
+arch awall_2_1_2
+x 6
+y 3
+end
+arch dungeon_magic
+x 6
+y 3
+end
+arch marble
+x 6
+y 4
+end
+arch marble
+x 6
+y 5
+end
+arch marble
+x 6
+y 6
+end
+arch marble
+x 6
+y 7
+end
+arch chair_2.4
+x 6
+y 7
+end
+arch marble
+x 6
+y 8
+end
+arch marble
+x 6
+y 9
+end
+arch awall_1_4
+x 6
+y 9
+end
+arch marble
+x 7
+end
+arch awall_2_1_2
+x 7
+end
+arch marble
+x 7
+y 1
+end
+arch marble
+x 7
+y 2
+end
+arch chair_2.1
+x 7
+y 2
+end
+arch fireborn
+msg
+@ match *
+waiting for today's packages to arrive, so I can go home for the day...
+endmsg
+type 0
+randomitems standard
+level 10
+exp 100
+dam 3
+hp 100
+maxhp 100
+Con 10
+monster 1
+unaggressive 1
+x 7
+y 2
+end
+arch marble
+x 7
+y 3
+end
+arch table
+name I
+no_pass 1
+x 7
+y 3
+end
+arch dungeon_magic
+x 7
+y 3
+end
+arch marble
+x 7
+y 4
+end
+arch fireborn
+name elderly fireborn
+msg
+@match *
+I'm waiting for my package...
+endmsg
+type 0
+randomitems standard
+level 10
+exp 100
+dam 3
+hp 100
+maxhp 100
+Con 10
+unaggressive 1
+stand_still 1
+x 7
+y 4
+end
+arch marble
+x 7
+y 5
+end
+arch marble
+x 7
+y 6
+end
+arch marble
+x 7
+y 7
+end
+arch table_3
+x 7
+y 7
+end
+arch scroll
+name Prospectus
+msg
+Imperial Post Services
+-----------------------
+Thank you for choosing the IPS to
+take care of your messages. Want to
+get more ? We have a wide range of
+products and services to offer to
+anyone. Pirate ? Try  our
+TalkParrots(tm) ! Beholder ? Enjoy
+our fabulous non-stereoscopical cards
+! And don't forget:
+The Empire Is Everywhere For You
+endmsg
+x 7
+y 7
+end
+arch book_read
+name Manual
+msg
+Receiving Mail
+-----------------------
+Open the mailbox and get the scrolls,
+read them by applying.
+Sending Mail
+-----------------------
+Get a pencil and be sure that you are
+able to use the literacy skill. You can
+get both at the office, ask Colette for
+help.
+Get a preaddressed mailscroll, mark it
+and write on it with:
+use_skill inscription <text>
+You can write multiple lines, when done
+drop the scroll in the mailbox and it
+will be send.
+endmsg
+x 7
+y 7
+end
+arch marble
+x 7
+y 8
+end
+arch chair_2.3
+x 7
+y 8
+end
+arch marble
+x 7
+y 9
+end
+arch awall_2_1_2
+x 7
+y 9
+end
+arch marble
+x 8
+end
+arch awall_2_1_2
+x 8
+end
+arch marble
+x 8
+y 1
+end
+arch bookshelf
+x 8
+y 1
+end
+arch marble
+x 8
+y 2
+end
+arch table_2
+x 8
+y 2
+end
+arch marble
+x 8
+y 3
+end
+arch awall_2_1_2
+x 8
+y 3
+end
+arch dungeon_magic
+x 8
+y 3
+end
+arch marble
+x 8
+y 4
+end
+arch clock
+msg
+No matter when you look at it, it is
+always too slow
+endmsg
+x 8
+y 4
+end
+arch marble
+x 8
+y 5
+end
+arch marble
+x 8
+y 6
+end
+arch marble
+x 8
+y 7
+end
+arch chair_2.2
+x 8
+y 7
+end
+arch marble
+x 8
+y 8
+end
+arch marble
+x 8
+y 9
+end
+arch awall_2_1_2
+x 8
+y 9
+end
+arch marble
+x 9
+end
+arch awall_2_2_3
+x 9
+end
+arch marble
+x 9
+y 1
+end
+arch awall_2_1_1
+x 9
+y 1
+end
+arch marble
+x 9
+y 2
+end
+arch awall_2_1_1
+x 9
+y 2
+end
+arch marble
+x 9
+y 3
+end
+arch awall_3_4
+x 9
+y 3
+end
+arch dungeon_magic
+x 9
+y 3
+end
+arch marble
+x 9
+y 4
+end
+arch awall_2_1_1
+x 9
+y 4
+end
+arch marble
+x 9
+y 5
+end
+arch awall_2_1_1
+x 9
+y 5
+end
+arch marble
+x 9
+y 6
+end
+arch awall_2_1_1
+x 9
+y 6
+end
+arch marble
+x 9
+y 7
+end
+arch awall_2_1_1
+x 9
+y 7
+end
+arch marble
+x 9
+y 8
+end
+arch awall_2_1_1
+x 9
+y 8
+end
+arch marble
+x 9
+y 9
+end
+arch awall_2_2_4
+x 9
+y 9
+end

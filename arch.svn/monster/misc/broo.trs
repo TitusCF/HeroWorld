@@ -1,0 +1,91 @@
+treasure broo
+  arch skill_use_magic_item
+  more
+  list goblin_parts
+    chance 40
+  more
+  arch skill_one_handed_weapon
+  more
+  arch skill_two_handed_weapon
+  more
+  arch club
+  chance 40
+  magic 1
+  no
+    arch spear
+    chance 30
+    magic 2
+    no
+      arch lspear
+      chance 20
+      magic 3
+      no
+        arch poleaxe
+        chance 10
+        magic 4
+        end
+      end
+    end
+  more
+  arch scale_mail
+  chance 10
+  magic 1
+  no
+   arch plate_mail
+   chance 5
+   magic 3
+   no
+     arch leather_armour
+     chance 40
+     magic 1
+     end
+   end
+  more
+  arch small_shield
+  magic 2
+  chance 50
+  no
+    arch high_shield
+    magic 1
+    chance 10
+    end
+  more
+  arch helmet
+  magic 1
+  chance 30
+  more
+  arch bow
+  chance 30
+  magic 1
+  yes
+    arch arrow
+    nrof 30
+    magic 3
+    end
+  more
+  arch silvercoin
+  nrof 30
+  chance 60
+  no
+    arch goldcoin
+    nrof 10
+    chance 30
+    no
+      arch platinacoin
+      nrof 10
+      chance 10
+      end
+    end
+  more
+  arch scroll_new
+  chance 10
+  nrof 3
+  no
+    arch wand
+    chance 20
+    no
+      arch ring
+      chance 10
+      end
+    end
+  end

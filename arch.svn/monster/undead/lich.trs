@@ -1,0 +1,77 @@
+treasure lich_old
+  arch spell_paralyze
+  more
+  arch abil_fear
+  more
+  arch spell_summon_pet_monster
+  more
+  arch spell_magic_bullet
+  more
+  arch abil_large_icestorm
+  more
+  arch abil_icestorm
+  more
+  arch sword_2
+  chance 90
+  magic 5
+  more
+  arch cloak
+  more
+  arch shield
+  magic 4
+  chance 70
+  no
+    arch small_shield
+    magic 5
+    chance 40
+    end
+  more
+  arch full_helmet
+  magic 3
+  chance 50
+  no
+    arch helmet
+    magic 3
+    chance 50
+    end
+  more
+  arch goldcoin
+  chance 90
+  nrof 100
+  more
+  arch wand
+  chance 80
+  more
+  arch staff
+  chance 20
+  more
+  list random_books
+  more
+  list random_books
+  chance 70
+  more
+  arch ring
+  more
+  arch ring
+  chance 50
+  more
+  arch scroll_new
+  chance 90
+  more
+  arch scroll_new
+  chance 90
+  more
+  arch gem
+  chance 70
+  nrof 3
+  end
+#
+treasure lich
+  list all_spell_skills
+  more
+  arch lich_dust
+  more
+  arch leprosy
+  more
+  list lich_old
+  end

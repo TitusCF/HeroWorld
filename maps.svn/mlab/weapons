@@ -1,0 +1,106 @@
+arch map
+reset_timeout 7200
+difficulty 1
+width 16
+height 16
+enter_x 1
+enter_y 1
+msg
+Creator: mikeeusa
+Email: gnu@foo.bar
+Date: Fri Aug 23 16:48:05 2002
+endmsg
+end
+arch sword
+name spinning blades
+name_pl spinning blades
+face blades.111
+ac 1
+resist_physical 5
+value 500
+weight 9000
+last_sp 35
+end
+arch sword
+name cheap spinning blades
+name_pl spinning blades
+face blades.111
+dam 7
+y 1
+resist_physical 2
+value 50
+weight 9500
+last_sp 15
+end
+arch dagger
+name circular throwing blade
+name_pl disc
+face blades.111
+dam 9
+y 3
+weight 1000
+end
+arch woodfloor
+y 4
+end
+arch table_2
+y 4
+end
+arch dagger
+name destructive circular throwing blade
+name_pl disc
+face blades.111
+dam 9
+y 4
+nrof 20
+attacktype 1093
+weight 1000
+end
+arch sword
+name spinning blades of quickness
+name_pl spinning blades
+face blades.111
+dam 10
+ac 2
+x 1
+resist_physical 5
+value 800
+weight 6000
+last_sp 50
+end
+arch sword
+name spinning blades of frost
+name_pl spinning blades
+face blades.111
+dam 13
+ac 2
+x 1
+y 1
+attacktype 17
+resist_physical 5
+resist_fire 32
+material 258
+value 100000
+weight 6000
+magic 6
+last_sp 50
+end
+arch dagger
+name poisoned throwing wheeldisc
+name_pl disc
+face spinner.11B
+dam 3
+x 1
+y 3
+attacktype 1025
+weight 1500
+end
+arch dagger
+name static mana flux ball
+name_pl mana ball
+face exit.111
+dam 4
+x 2
+y 3
+attacktype 4099
+end

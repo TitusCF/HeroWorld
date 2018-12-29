@@ -1,0 +1,2856 @@
+arch map
+name <unnamed>
+width 28
+height 14
+enter_y 7
+msg
+Creator: ??
+Email: ??
+Date: Fri Oct 15 13:44:49 1993
+Modified: 2018-12-27 Acer
+Email: anthony@cit.gu.edu.au
+Date: Mon Dec 28 17:02:35 1998
+endmsg
+outdoor 1
+end
+arch flagstone
+end
+arch flagstone
+y 1
+end
+arch flagstone
+y 2
+end
+arch flagstone
+y 3
+end
+arch flagstone
+y 4
+end
+arch exit
+slaying /world/world_105_115
+hp 20
+sp 37
+y 5
+invisible 1
+end
+arch cobblestones2
+y 5
+end
+arch exit
+slaying /world/world_105_115
+hp 20
+sp 37
+y 6
+invisible 1
+end
+arch cobblestones2
+y 6
+end
+arch exit
+slaying /world/world_105_115
+hp 20
+sp 37
+y 7
+invisible 1
+end
+arch cobblestones2
+y 7
+end
+arch exit
+slaying /world/world_105_115
+hp 20
+sp 37
+y 8
+invisible 1
+end
+arch cobblestones2
+y 8
+end
+arch flagstone
+y 9
+end
+arch flagstone
+y 10
+end
+arch flagstone
+y 11
+end
+arch flagstone
+y 12
+end
+arch flagstone
+y 13
+end
+arch flagstone
+x 1
+end
+arch flagstone
+x 1
+y 1
+end
+arch flagstone
+x 1
+y 2
+end
+arch flagstone
+x 1
+y 3
+end
+arch flagstone
+x 1
+y 4
+end
+arch cobblestones2
+x 1
+y 5
+end
+arch cobblestones2
+x 1
+y 6
+end
+arch cobblestones2
+x 1
+y 7
+end
+arch cobblestones2
+x 1
+y 8
+end
+arch flagstone
+x 1
+y 9
+end
+arch flagstone
+x 1
+y 10
+end
+arch flagstone
+x 1
+y 11
+end
+arch flagstone
+x 1
+y 12
+end
+arch flagstone
+x 1
+y 13
+end
+arch flagstone
+x 2
+end
+arch flagstone
+x 2
+y 1
+end
+arch flagstone
+x 2
+y 2
+end
+arch flagstone
+x 2
+y 3
+end
+arch lamppost
+x 2
+y 3
+end
+arch flagstone
+x 2
+y 4
+end
+arch guard
+name gatehouse guard
+msg
+@match monster
+They keep trying to sneak in, but we
+always kill them.
+@match gate|open
+The gate opens only for certain people.
+@match people|who
+Only those who are
+* Citizens of Scorn with a Password
+* Have a merchants ``Gate Pass''
+* Or knighted ``G<Hero|Heroine>'' by the king
+may pass through these gates.
+@match gate|pass
+See the ``Office of Gate Passes''
+next to the Port Gate.
+@match door|password|secret|wall
+I can't tell you that!
+Do you want to be thrown in JAIL?
+@match chain
+@trigger 21
+Well, you know the password, so you must be ok.
+Pass, Friend.
+@match *
+Good to see a friend!
+Have you seen any monsters lately?
+endmsg
+x 2
+y 4
+friendly 1
+unaggressive 0
+end
+arch cobblestones2
+x 2
+y 5
+end
+arch check_floor
+slaying gate_pass
+x 2
+y 5
+connected 13
+end
+arch check_floor
+slaying hero_of_scorn
+x 2
+y 5
+connected 14
+end
+arch cobblestones2
+x 2
+y 6
+end
+arch check_floor
+slaying gate_pass
+x 2
+y 6
+connected 13
+end
+arch check_floor
+slaying hero_of_scorn
+x 2
+y 6
+connected 14
+end
+arch cobblestones2
+x 2
+y 7
+end
+arch check_floor
+slaying gate_pass
+x 2
+y 7
+connected 13
+end
+arch check_floor
+slaying hero_of_scorn
+x 2
+y 7
+connected 14
+end
+arch cobblestones2
+x 2
+y 8
+end
+arch check_floor
+slaying gate_pass
+x 2
+y 8
+connected 13
+end
+arch check_floor
+slaying hero_of_scorn
+x 2
+y 8
+connected 14
+end
+arch flagstone
+x 2
+y 9
+end
+arch flagstone
+x 2
+y 10
+end
+arch lamppost
+x 2
+y 10
+end
+arch flagstone
+x 2
+y 11
+end
+arch flagstone
+x 2
+y 12
+end
+arch flagstone
+x 2
+y 13
+end
+arch flagstone
+x 3
+end
+arch flagstone
+x 3
+y 1
+end
+arch mine_2_2_2
+x 3
+y 1
+end
+arch cobblestones
+x 3
+y 2
+end
+arch mine_2_1_1
+x 3
+y 2
+end
+arch cobblestones
+x 3
+y 3
+end
+arch mine_2_1_1
+x 3
+y 3
+end
+arch cobblestones
+x 3
+y 4
+end
+arch mine_2_2_1
+x 3
+y 4
+end
+arch cobblestones2
+x 3
+y 5
+end
+arch grate_closed_2
+x 3
+y 5
+speed 0.500000
+connected 10
+end
+arch cobblestones2
+x 3
+y 6
+end
+arch grate_closed_2
+x 3
+y 6
+speed 0.500000
+connected 10
+end
+arch cobblestones2
+x 3
+y 7
+end
+arch grate_closed_2
+x 3
+y 7
+speed 0.500000
+connected 10
+end
+arch cobblestones2
+x 3
+y 8
+end
+arch grate_closed_2
+x 3
+y 8
+speed 0.500000
+connected 10
+end
+arch flagstone
+x 3
+y 9
+end
+arch mine_2_2_2
+x 3
+y 9
+end
+arch cobblestones
+x 3
+y 10
+end
+arch mine_2_1_1
+x 3
+y 10
+end
+arch cobblestones
+x 3
+y 11
+end
+arch mine_2_1_1
+x 3
+y 11
+end
+arch cobblestones
+x 3
+y 12
+end
+arch mine_2_2_1
+x 3
+y 12
+end
+arch flagstone
+x 3
+y 13
+end
+arch flagstone
+x 4
+end
+arch cobblestones
+x 4
+y 1
+end
+arch mine_2_1_2
+x 4
+y 1
+end
+arch cobblestones
+x 4
+y 2
+end
+arch cobblestones
+x 4
+y 3
+end
+arch bed_save
+x 4
+y 3
+end
+arch cobblestones
+x 4
+y 4
+end
+arch mine_2_1_2
+x 4
+y 4
+end
+arch cobblestones2
+x 4
+y 5
+end
+arch cobblestones2
+x 4
+y 6
+end
+arch cobblestones2
+x 4
+y 7
+end
+arch cobblestones2
+x 4
+y 8
+end
+arch guard
+name gatehouse guard
+msg
+@match monster
+They keep trying to sneak in, but we
+always kill them.
+@match gate|open
+The gate opens only for certain people.
+@match people|who
+Only those who are
+* Citizens of Scorn with a Password
+* Have a merchants ``Gate Pass''
+* Or knighted ``G<Hero|Heroine>'' by the king
+may pass through these gates.
+@match gate|pass
+See the ``Office of Gate Passes''
+next to the Port Gate.
+@match door|password|secret|wall
+I can't tell you that!
+Do you want to be thrown in JAIL?
+@match *
+Good to see a friend!
+Have you seen any monsters lately?
+endmsg
+x 4
+y 8
+friendly 1
+unaggressive 0
+end
+arch cobblestones
+x 4
+y 9
+end
+arch mine_2_1_2
+x 4
+y 9
+end
+arch cobblestones
+x 4
+y 10
+end
+arch booze
+x 4
+y 10
+end
+arch cobblestones
+x 4
+y 11
+end
+arch cobblestones
+x 4
+y 12
+end
+arch mine_2_1_2
+x 4
+y 12
+end
+arch flagstone
+x 4
+y 13
+end
+arch flagstone
+x 5
+end
+arch cobblestones
+x 5
+y 1
+end
+arch mine_2_1_2
+x 5
+y 1
+end
+arch cobblestones
+x 5
+y 2
+end
+arch light3
+x 5
+y 2
+end
+arch cobblestones
+x 5
+y 3
+end
+arch chest
+x 5
+y 3
+end
+arch cobblestones
+x 5
+y 4
+end
+arch mine_2_1_2
+x 5
+y 4
+end
+arch cobblestones2
+x 5
+y 5
+end
+arch cobblestones2
+x 5
+y 6
+end
+arch cobblestones2
+x 5
+y 7
+end
+arch cobblestones2
+x 5
+y 8
+end
+arch trigger
+x 5
+y 8
+connected 11
+end
+arch cobblestones
+x 5
+y 9
+end
+arch mine_2_1_2
+x 5
+y 9
+end
+arch cobblestones
+x 5
+y 10
+end
+arch food
+x 5
+y 10
+end
+arch cobblestones
+x 5
+y 11
+end
+arch food
+x 5
+y 11
+end
+arch cobblestones
+x 5
+y 12
+end
+arch mine_2_1_2
+x 5
+y 12
+end
+arch flagstone
+x 5
+y 13
+end
+arch flagstone
+x 6
+end
+arch cobblestones
+x 6
+y 1
+end
+arch mine_2_1_2
+x 6
+y 1
+end
+arch cobblestones
+x 6
+y 2
+end
+arch cobblestones
+x 6
+y 3
+end
+arch cobblestones
+x 6
+y 4
+end
+arch mine_1_3
+x 6
+y 4
+end
+arch cobblestones2
+x 6
+y 5
+end
+arch cobblestones2
+x 6
+y 6
+end
+arch cobblestones2
+x 6
+y 7
+end
+arch cobblestones2
+x 6
+y 8
+end
+arch cobblestones
+x 6
+y 9
+end
+arch mine_1_3
+x 6
+y 9
+end
+arch cobblestones
+x 6
+y 10
+end
+arch cobblestones
+x 6
+y 11
+end
+arch cobblestones
+x 6
+y 12
+end
+arch mine_2_1_2
+x 6
+y 12
+end
+arch flagstone
+x 6
+y 13
+end
+arch dungeon_magic
+x 7
+end
+arch mine_1_1
+x 7
+end
+arch dungeon_magic
+x 7
+y 1
+end
+arch cobblestones
+x 7
+y 1
+end
+arch mine_3_1
+x 7
+y 1
+end
+arch cobblestones
+x 7
+y 2
+end
+arch cobblestones
+x 7
+y 3
+end
+arch cobblestones
+x 7
+y 4
+end
+arch cobblestones2
+x 7
+y 5
+end
+arch cobblestones2
+x 7
+y 6
+end
+arch cobblestones2
+x 7
+y 7
+end
+arch cobblestones2
+x 7
+y 8
+end
+arch cobblestones
+x 7
+y 9
+end
+arch cobblestones
+x 7
+y 10
+end
+arch cobblestones
+x 7
+y 11
+end
+arch dungeon_magic
+x 7
+y 12
+end
+arch cobblestones
+x 7
+y 12
+end
+arch mine_3_3
+x 7
+y 12
+end
+arch dungeon_magic
+x 7
+y 13
+end
+arch mine_1_2
+x 7
+y 13
+end
+arch dungeon_magic
+x 8
+end
+arch button_small
+x 8
+connected 10
+end
+arch gateTrg1
+x 8
+connected 13
+end
+arch dungeon_magic
+x 8
+y 1
+end
+arch cobblestones
+x 8
+y 1
+end
+arch mine_2_1_2
+x 8
+y 1
+end
+arch cobblestones
+x 8
+y 2
+end
+arch bed_1
+x 8
+y 2
+end
+arch cobblestones
+x 8
+y 3
+end
+arch cobblestones
+x 8
+y 4
+end
+arch mine_1_4
+x 8
+y 4
+end
+arch cobblestones2
+x 8
+y 5
+end
+arch cobblestones2
+x 8
+y 6
+end
+arch cobblestones2
+x 8
+y 7
+end
+arch cobblestones2
+x 8
+y 8
+end
+arch lamppost
+x 8
+y 8
+end
+arch cobblestones
+x 8
+y 9
+end
+arch mine_1_4
+x 8
+y 9
+end
+arch cobblestones
+x 8
+y 10
+end
+arch cobblestones
+x 8
+y 11
+end
+arch chair_1.1
+x 8
+y 11
+end
+arch dungeon_magic
+x 8
+y 12
+end
+arch cobblestones
+x 8
+y 12
+end
+arch mine_2_1_2
+x 8
+y 12
+end
+arch dungeon_magic
+x 8
+y 13
+end
+arch button_small
+x 8
+y 13
+connected 10
+end
+arch gateTrg1
+x 8
+y 13
+connected 11
+end
+arch dungeon_magic
+x 9
+end
+arch button_small
+face button_sma.112
+x 9
+value 1
+connected 16
+end
+arch spikes_open
+x 9
+speed 0.500000
+connected 16
+end
+arch boulder
+x 9
+end
+arch dungeon_magic
+x 9
+y 1
+end
+arch cobblestones
+x 9
+y 1
+end
+arch mine_2_1_2
+x 9
+y 1
+end
+arch cobblestones
+x 9
+y 2
+end
+arch light3
+x 9
+y 2
+end
+arch cobblestones
+x 9
+y 3
+end
+arch cobblestones
+x 9
+y 4
+end
+arch mine_2_1_2
+x 9
+y 4
+end
+arch cobblestones2
+x 9
+y 5
+end
+arch cobblestones2
+x 9
+y 6
+end
+arch cobblestones2
+x 9
+y 7
+end
+arch cobblestones2
+x 9
+y 8
+end
+arch cobblestones
+x 9
+y 9
+end
+arch mine_2_1_2
+x 9
+y 9
+end
+arch cobblestones
+x 9
+y 10
+end
+arch cobblestones
+x 9
+y 11
+end
+arch fighter
+name Off duty Guard
+msg
+@match monsters
+Yeah! Its like they were coming out of
+the walls, one got into the gatehouse
+and killed Lodus while he was sleeping,
+poor chap.
+@match *
+I can't understand where those monsters are
+coming from
+endmsg
+x 9
+y 11
+end
+arch dungeon_magic
+x 9
+y 12
+end
+arch cobblestones
+x 9
+y 12
+end
+arch mine_2_1_2
+x 9
+y 12
+end
+arch dungeon_magic
+x 9
+y 13
+end
+arch button_small
+face button_sma.112
+x 9
+y 13
+value 1
+connected 15
+end
+arch spikes_open
+x 9
+y 13
+speed 0.500000
+connected 15
+end
+arch boulder
+x 9
+y 13
+end
+arch dungeon_magic
+x 10
+end
+arch button_small
+x 10
+connected 10
+end
+arch gateTrg1
+x 10
+connected 14
+end
+arch dungeon_magic
+x 10
+y 1
+end
+arch cobblestones
+x 10
+y 1
+end
+arch mine_2_1_2
+x 10
+y 1
+end
+arch cobblestones
+x 10
+y 2
+end
+arch bed_1
+x 10
+y 2
+end
+arch ninja2
+msg
+@match *
+Zzzzzzzzzzzzzz
+endmsg
+x 10
+y 2
+end
+arch cobblestones
+x 10
+y 3
+end
+arch cobblestones
+x 10
+y 4
+end
+arch mine_2_1_2
+x 10
+y 4
+end
+arch cobblestones2
+x 10
+y 5
+end
+arch cobblestones2
+x 10
+y 6
+end
+arch cobblestones2
+x 10
+y 7
+end
+arch cobblestones2
+x 10
+y 8
+end
+arch cobblestones
+x 10
+y 9
+end
+arch mine_2_1_2
+x 10
+y 9
+end
+arch cobblestones
+x 10
+y 10
+end
+arch chair_1.1
+x 10
+y 10
+end
+arch ninja_1
+name Mercenary
+msg
+@match *
+Go AWAY MAGGOT!
+endmsg
+x 10
+y 10
+end
+arch cobblestones
+x 10
+y 11
+end
+arch table_2
+x 10
+y 11
+end
+arch light3
+x 10
+y 11
+end
+arch dungeon_magic
+x 10
+y 12
+end
+arch cobblestones
+x 10
+y 12
+end
+arch mine_2_1_2
+x 10
+y 12
+end
+arch dungeon_magic
+x 10
+y 13
+end
+arch button_small
+x 10
+y 13
+connected 10
+end
+arch gateTrg1
+x 10
+y 13
+connected 12
+end
+arch dungeon_magic
+x 11
+end
+arch mine_1_1
+x 11
+end
+arch dungeon_magic
+x 11
+y 1
+end
+arch cobblestones
+x 11
+y 1
+end
+arch mine_3_1
+x 11
+y 1
+end
+arch cobblestones
+x 11
+y 2
+end
+arch cobblestones
+x 11
+y 3
+end
+arch cobblestones
+x 11
+y 4
+end
+arch mine_2_1_2
+x 11
+y 4
+end
+arch cobblestones2
+x 11
+y 5
+end
+arch cobblestones2
+x 11
+y 6
+end
+arch cobblestones2
+x 11
+y 7
+end
+arch cobblestones2
+x 11
+y 8
+end
+arch cobblestones
+x 11
+y 9
+end
+arch mine_3_3
+x 11
+y 9
+end
+arch cobblestones
+x 11
+y 10
+end
+arch mine_2_1_1
+x 11
+y 10
+end
+arch cobblestones
+x 11
+y 11
+end
+arch mine_2_1_1
+x 11
+y 11
+end
+arch dungeon_magic
+x 11
+y 12
+end
+arch cobblestones
+x 11
+y 12
+end
+arch mine_4
+x 11
+y 12
+end
+arch dungeon_magic
+x 11
+y 13
+end
+arch mine_1_2
+x 11
+y 13
+end
+arch dungeon_magic
+x 12
+end
+arch magic_mouth
+name magic_mouth (gate open/close)
+msg
+You hear from behind the northern wall,
+the sound of great wheels turning as
+the inner gates are set in motion.
+endmsg
+x 12
+connected 10
+end
+arch dungeon_magic
+x 12
+y 1
+end
+arch cobblestones
+x 12
+y 1
+end
+arch mine_2_1_2
+x 12
+y 1
+end
+arch cobblestones
+x 12
+y 2
+end
+arch bed_1
+x 12
+y 2
+end
+arch cobblestones
+x 12
+y 3
+end
+arch cobblestones
+x 12
+y 4
+end
+arch mine_2_1_2
+x 12
+y 4
+end
+arch cobblestones2
+x 12
+y 5
+end
+arch cobblestones2
+x 12
+y 6
+end
+arch cobblestones2
+x 12
+y 7
+end
+arch cobblestones2
+x 12
+y 8
+end
+arch cobblestones
+x 12
+y 9
+end
+arch mine_2_1_2
+x 12
+y 9
+end
+arch cobblestones
+x 12
+y 10
+end
+arch chair_1.1
+x 12
+y 10
+end
+arch cobblestones
+x 12
+y 11
+end
+arch table_3
+x 12
+y 11
+end
+arch key
+x 12
+y 11
+end
+arch dungeon_magic
+x 12
+y 12
+end
+arch cobblestones
+x 12
+y 12
+end
+arch mine_2_1_2
+x 12
+y 12
+end
+arch dungeon_magic
+x 12
+y 13
+end
+arch dungeon_magic
+x 13
+end
+arch magic_mouth
+name magic_mouth (gate pass)
+msg
+On seeing you have a gate pass the guard
+turns the handle nearby and says...
+Arrhh, a merchant off on trade.. Pass..
+endmsg
+x 13
+connected 13
+end
+arch dungeon_magic
+x 13
+y 1
+end
+arch cobblestones
+x 13
+y 1
+end
+arch mine_2_1_2
+x 13
+y 1
+end
+arch cobblestones
+x 13
+y 2
+end
+arch light3
+x 13
+y 2
+end
+arch cobblestones
+x 13
+y 3
+end
+arch cobblestones
+x 13
+y 4
+end
+arch mine_2_1_2
+x 13
+y 4
+end
+arch cobblestones2
+x 13
+y 5
+end
+arch lamppost
+x 13
+y 5
+end
+arch cobblestones2
+x 13
+y 6
+end
+arch cobblestones2
+x 13
+y 7
+end
+arch cobblestones2
+x 13
+y 8
+end
+arch cobblestones
+x 13
+y 9
+end
+arch mine_secret_1_1
+x 13
+y 9
+move_block -all
+end
+arch cobblestones
+x 13
+y 10
+end
+arch cobblestones
+x 13
+y 11
+end
+arch light3
+x 13
+y 11
+end
+arch dungeon_magic
+x 13
+y 12
+end
+arch cobblestones
+x 13
+y 12
+end
+arch mine_2_1_2
+x 13
+y 12
+end
+arch dungeon_magic
+x 13
+y 13
+end
+arch dungeon_magic
+x 14
+end
+arch magic_mouth
+name magic_mouth (hero of scorn)
+msg
+A guard yells.. The G<Hero|Heroine> of Scorn!
+Open the gates, open, we can't keep
+the G<Hero|Heroine> waiting. Hurry Hurry.
+endmsg
+x 14
+connected 14
+end
+arch dungeon_magic
+x 14
+y 1
+end
+arch cobblestones
+x 14
+y 1
+end
+arch mine_2_1_2
+x 14
+y 1
+end
+arch cobblestones
+x 14
+y 2
+end
+arch bed_1
+x 14
+y 2
+end
+arch cobblestones
+x 14
+y 3
+end
+arch cobblestones
+x 14
+y 4
+end
+arch mine_2_1_2
+x 14
+y 4
+end
+arch cobblestones2
+x 14
+y 5
+end
+arch cobblestones2
+x 14
+y 6
+end
+arch cobblestones2
+x 14
+y 7
+end
+arch cobblestones2
+x 14
+y 8
+end
+arch cobblestones
+x 14
+y 9
+end
+arch cobblestones
+x 14
+y 10
+end
+arch cobblestones
+x 14
+y 11
+end
+arch dungeon_magic
+x 14
+y 12
+end
+arch cobblestones
+x 14
+y 12
+end
+arch mine_2_1_2
+x 14
+y 12
+end
+arch dungeon_magic
+x 14
+y 13
+end
+arch magic_mouth
+name magic_mouth (hero of scorn)
+msg
+The guard shouts....
+The brave G<Hero|Heroine> of Scorn returns to us!
+Open the gates, prepare the way!
+You think you hear muffled laughing
+from somewhere...
+endmsg
+x 14
+y 13
+connected 24
+end
+arch dungeon_magic
+x 15
+end
+arch dungeon_magic
+x 15
+y 1
+end
+arch cobblestones
+x 15
+y 1
+end
+arch mine_2_1_2
+x 15
+y 1
+end
+arch cobblestones
+x 15
+y 2
+end
+arch cobblestones
+x 15
+y 3
+end
+arch cobblestones
+x 15
+y 4
+end
+arch mine_1_3
+x 15
+y 4
+end
+arch cobblestones2
+x 15
+y 5
+end
+arch cobblestones2
+x 15
+y 6
+end
+arch cobblestones2
+x 15
+y 7
+end
+arch cobblestones2
+x 15
+y 8
+end
+arch cobblestones
+x 15
+y 9
+end
+arch mine_2_1_2
+x 15
+y 9
+end
+arch cobblestones
+x 15
+y 10
+end
+arch cobblestones
+x 15
+y 11
+end
+arch stair_down
+slaying /scorn/oldcity/oldcity1
+x 15
+y 11
+end
+arch ninja2
+name Mercenery
+msg
+@match monster|monsters
+What about them!
+@match *
+And where do you think your GOING?
+Not downstairs!....
+You'll have to kill me first!
+endmsg
+x 15
+y 11
+end
+arch dungeon_magic
+x 15
+y 12
+end
+arch cobblestones
+x 15
+y 12
+end
+arch mine_2_1_2
+x 15
+y 12
+end
+arch dungeon_magic
+x 15
+y 13
+end
+arch magic_mouth
+name magic_mouth (gate pass)
+msg
+Halt! Who wishes to enter?
+You show your gate pass...
+Oh a G<merchant|female merchant>, Pass Friend.
+endmsg
+x 15
+y 13
+connected 23
+end
+arch dungeon_magic
+x 16
+end
+arch dungeon_magic
+x 16
+y 1
+end
+arch cobblestones
+x 16
+y 1
+end
+arch mine_2_1_2
+x 16
+y 1
+end
+arch cobblestones
+x 16
+y 2
+end
+arch bed_1
+x 16
+y 2
+end
+arch ninja2
+name guard
+msg
+@match *
+Zzzzzzzzzzzzzzzz
+endmsg
+x 16
+y 2
+end
+arch cobblestones
+x 16
+y 3
+end
+arch cobblestones
+x 16
+y 4
+end
+arch cobblestones2
+x 16
+y 5
+end
+arch cobblestones2
+x 16
+y 6
+end
+arch cobblestones2
+x 16
+y 7
+end
+arch cobblestones2
+x 16
+y 8
+end
+arch cobblestones
+x 16
+y 9
+end
+arch mine_3_3
+x 16
+y 9
+end
+arch cobblestones
+x 16
+y 10
+end
+arch mine_2_1_1
+x 16
+y 10
+end
+arch cobblestones
+x 16
+y 11
+end
+arch mine_2_1_1
+x 16
+y 11
+end
+arch dungeon_magic
+x 16
+y 12
+end
+arch cobblestones
+x 16
+y 12
+end
+arch mine_3_1
+x 16
+y 12
+end
+arch dungeon_magic
+x 16
+y 13
+end
+arch magic_mouth
+name magic_mouth (gate open/close)
+msg
+The rusted outer gate is set in motion
+with loud noise emanating from the
+southern wall.
+endmsg
+x 16
+y 13
+connected 20
+end
+arch dungeon_magic
+x 17
+end
+arch mine_1_1
+x 17
+end
+arch dungeon_magic
+x 17
+y 1
+end
+arch cobblestones
+x 17
+y 1
+end
+arch mine_3_1
+x 17
+y 1
+end
+arch cobblestones
+x 17
+y 2
+end
+arch light3
+x 17
+y 2
+end
+arch cobblestones
+x 17
+y 3
+end
+arch cobblestones
+x 17
+y 4
+end
+arch mine_1_4
+x 17
+y 4
+end
+arch cobblestones2
+x 17
+y 5
+end
+arch trigger
+x 17
+y 5
+connected 21
+end
+arch cobblestones2
+x 17
+y 6
+end
+arch cobblestones2
+x 17
+y 7
+end
+arch cobblestones2
+x 17
+y 8
+end
+arch cobblestones
+x 17
+y 9
+end
+arch mine_2_1_2
+x 17
+y 9
+end
+arch cobblestones
+x 17
+y 10
+end
+arch cobblestones
+x 17
+y 11
+end
+arch dungeon_magic
+x 17
+y 12
+end
+arch cobblestones
+x 17
+y 12
+end
+arch mine_3_3
+x 17
+y 12
+end
+arch dungeon_magic
+x 17
+y 13
+end
+arch mine_1_2
+x 17
+y 13
+end
+arch dungeon_magic
+x 18
+end
+arch button_small
+x 18
+connected 20
+end
+arch gateTrg1
+x 18
+connected 22
+end
+arch dungeon_magic
+x 18
+y 1
+end
+arch cobblestones
+x 18
+y 1
+end
+arch mine_2_1_2
+x 18
+y 1
+end
+arch cobblestones
+x 18
+y 2
+end
+arch bed_1
+x 18
+y 2
+end
+arch cobblestones
+x 18
+y 3
+end
+arch cobblestones
+x 18
+y 4
+end
+arch mine_2_1_2
+x 18
+y 4
+end
+arch cobblestones2
+x 18
+y 5
+end
+arch guard
+name gatehouse guard
+msg
+@match monster
+They keep trying to sneak in, but we
+always kill them.
+@match gate|open
+The gate opens only for certain people.
+@match people|who
+Only those who are
+* Citizens of Scorn with a Password
+* Have a merchants ``Gate Pass''
+* Or knighted ``G<Hero|Heroine>'' by the king
+may pass through these gates.
+@match gate|pass
+See the ``Office of Gate Passes''
+next to the Port Gate.
+@match door|password|secret|wall
+I can't tell you that!
+Do you want to be thrown in JAIL?
+@match *
+Good to see a friend!
+Have you seen any monsters lately?
+endmsg
+x 18
+y 5
+friendly 1
+unaggressive 0
+end
+arch cobblestones2
+x 18
+y 6
+end
+arch cobblestones2
+x 18
+y 7
+end
+arch cobblestones2
+x 18
+y 8
+end
+arch lamppost
+x 18
+y 8
+end
+arch cobblestones
+x 18
+y 9
+end
+arch mine_2_1_2
+x 18
+y 9
+end
+arch cobblestones
+x 18
+y 10
+end
+arch cobblestones
+x 18
+y 11
+end
+arch dungeon_magic
+x 18
+y 12
+end
+arch cobblestones
+x 18
+y 12
+end
+arch mine_2_1_2
+x 18
+y 12
+end
+arch dungeon_magic
+x 18
+y 13
+end
+arch button_small
+x 18
+y 13
+connected 20
+end
+arch gateTrg1
+x 18
+y 13
+connected 24
+end
+arch dungeon_magic
+x 19
+end
+arch button_small
+face button_sma.112
+x 19
+value 1
+connected 25
+end
+arch spikes_open
+x 19
+speed 0.500000
+connected 25
+end
+arch boulder
+x 19
+end
+arch dungeon_magic
+x 19
+y 1
+end
+arch cobblestones
+x 19
+y 1
+end
+arch mine_2_1_2
+x 19
+y 1
+end
+arch cobblestones
+x 19
+y 2
+end
+arch cobblestones
+x 19
+y 3
+end
+arch cobblestones
+x 19
+y 4
+end
+arch mine_2_1_2
+x 19
+y 4
+end
+arch cobblestones2
+x 19
+y 5
+end
+arch grate_closed_2
+x 19
+y 5
+speed 0.500000
+connected 20
+end
+arch cobblestones2
+x 19
+y 6
+end
+arch grate_closed_2
+x 19
+y 6
+speed 0.500000
+connected 20
+end
+arch cobblestones2
+x 19
+y 7
+end
+arch grate_closed_2
+x 19
+y 7
+speed 0.500000
+connected 20
+end
+arch cobblestones2
+x 19
+y 8
+end
+arch grate_closed_2
+x 19
+y 8
+speed 0.500000
+connected 20
+end
+arch cobblestones
+x 19
+y 9
+end
+arch mine_2_1_2
+x 19
+y 9
+end
+arch cobblestones
+x 19
+y 10
+end
+arch random_weapon
+x 19
+y 10
+end
+arch cobblestones
+x 19
+y 11
+end
+arch random_shield
+x 19
+y 11
+end
+arch dungeon_magic
+x 19
+y 12
+end
+arch cobblestones
+x 19
+y 12
+end
+arch mine_2_1_2
+x 19
+y 12
+end
+arch dungeon_magic
+x 19
+y 13
+end
+arch button_small
+face button_sma.112
+x 19
+y 13
+value 1
+connected 26
+end
+arch spikes_open
+x 19
+y 13
+speed 0.500000
+connected 26
+end
+arch boulder
+x 19
+y 13
+end
+arch dungeon_magic
+x 20
+end
+arch button_small
+x 20
+connected 20
+end
+arch gateTrg1
+x 20
+connected 21
+end
+arch dungeon_magic
+x 20
+y 1
+end
+arch cobblestones
+x 20
+y 1
+end
+arch mine_2_1_2
+x 20
+y 1
+end
+arch cobblestones
+x 20
+y 2
+end
+arch cobblestones
+x 20
+y 3
+end
+arch cobblestones
+x 20
+y 4
+end
+arch mine_2_1_2
+x 20
+y 4
+end
+arch cobblestones2
+x 20
+y 5
+end
+arch check_floor
+slaying gate_pass
+x 20
+y 5
+connected 23
+end
+arch check_floor
+slaying hero_of_scorn
+x 20
+y 5
+connected 24
+end
+arch cobblestones2
+x 20
+y 6
+end
+arch check_floor
+slaying gate_pass
+x 20
+y 6
+connected 23
+end
+arch check_floor
+slaying hero_of_scorn
+x 20
+y 6
+connected 24
+end
+arch cobblestones2
+x 20
+y 7
+end
+arch check_floor
+slaying gate_pass
+x 20
+y 7
+connected 23
+end
+arch check_floor
+slaying hero_of_scorn
+x 20
+y 7
+connected 24
+end
+arch cobblestones2
+x 20
+y 8
+end
+arch check_floor
+slaying gate_pass
+x 20
+y 8
+connected 23
+end
+arch check_floor
+slaying hero_of_scorn
+x 20
+y 8
+connected 24
+end
+arch cobblestones
+x 20
+y 9
+end
+arch mine_2_1_2
+x 20
+y 9
+end
+arch cobblestones
+x 20
+y 10
+end
+arch random_shield
+x 20
+y 10
+end
+arch cobblestones
+x 20
+y 11
+end
+arch random_weapon
+x 20
+y 11
+end
+arch dungeon_magic
+x 20
+y 12
+end
+arch cobblestones
+x 20
+y 12
+end
+arch mine_2_1_2
+x 20
+y 12
+end
+arch dungeon_magic
+x 20
+y 13
+end
+arch button_small
+x 20
+y 13
+connected 20
+end
+arch gateTrg1
+x 20
+y 13
+connected 23
+end
+arch dungeon_floor
+x 21
+end
+arch dungeon_magic
+x 21
+end
+arch dwall_2_2_2
+x 21
+end
+arch mine_1_1
+x 21
+end
+arch dungeon_magic
+x 21
+y 1
+end
+arch dungeon_floor
+x 21
+y 1
+end
+arch dwall_3_2
+x 21
+y 1
+end
+arch mine_3_4
+x 21
+y 1
+end
+arch dungeon_floor
+x 21
+y 2
+end
+arch dwall_2_2_1
+x 21
+y 2
+end
+arch mine_2_1_1
+x 21
+y 2
+end
+arch dungeon_floor
+x 21
+y 3
+end
+arch mine_2_1_1
+x 21
+y 3
+end
+arch dungeon_floor
+x 21
+y 4
+end
+arch mine_2_2_4
+x 21
+y 4
+end
+arch cobblestones
+x 21
+y 5
+end
+arch cobblestones
+x 21
+y 6
+end
+arch cobblestones
+x 21
+y 7
+end
+arch cobblestones
+x 21
+y 8
+end
+arch cobblestones
+x 21
+y 9
+end
+arch mine_2_2_3
+x 21
+y 9
+end
+arch cobblestones
+x 21
+y 10
+end
+arch mine_1_2
+x 21
+y 10
+end
+arch cobblestones
+x 21
+y 11
+end
+arch door_1
+x 21
+y 11
+end
+arch dungeon_magic
+x 21
+y 12
+end
+arch cobblestones
+x 21
+y 12
+end
+arch dwall_2_2_2
+x 21
+y 12
+end
+arch mine_2_2_3
+x 21
+y 12
+end
+arch dungeon_floor
+x 21
+y 13
+end
+arch dungeon_magic
+x 21
+y 13
+end
+arch dwall_2_2_1
+x 21
+y 13
+end
+arch mine_1_2
+x 21
+y 13
+end
+arch flagstone
+x 22
+end
+arch dwall_2_2_3
+x 22
+end
+arch flagstone
+x 22
+y 1
+end
+arch dwall_4
+x 22
+y 1
+end
+arch flagstone
+x 22
+y 2
+end
+arch dwall_3_1
+x 22
+y 2
+end
+arch flagstone
+x 22
+y 3
+end
+arch flagstone
+x 22
+y 4
+end
+arch cobblestones
+x 22
+y 5
+end
+arch cobblestones
+x 22
+y 6
+end
+arch cobblestones
+x 22
+y 7
+end
+arch cobblestones
+x 22
+y 8
+end
+arch flagstone
+x 22
+y 9
+end
+arch guard
+name gatehouse guard
+msg
+@match monster
+They keep trying to sneak in, but we
+always kill them.
+@match gate|open
+The gate opens only for certain people.
+@match people|who
+Only those who are
+* Citizens of Scorn with a Password
+* Have a merchants ``Gate Pass''
+* Or knighted ``G<Hero|Heroine>'' by the king
+may pass through these gates.
+@match gate|pass
+See the ``Office of Gate Passes''
+next to the Port Gate.
+@match door|password|secret|wall
+I can't tell you that!
+Do you want to be thrown in JAIL?
+@match chain
+@trigger 12
+Well, you know the password, so you must be ok.
+Pass, Friend.
+@match *
+Good to see a friend!
+Have you seen any monsters lately?
+endmsg
+x 22
+y 9
+friendly 1
+unaggressive 0
+end
+arch flagstone
+x 22
+y 10
+end
+arch flagstone
+x 22
+y 11
+end
+arch flagstone
+x 22
+y 12
+end
+arch dwall_3_3
+x 22
+y 12
+end
+arch flagstone
+x 22
+y 13
+end
+arch dwall_2_2_4
+x 22
+y 13
+end
+arch brush
+x 23
+end
+arch flagstone
+x 23
+y 1
+end
+arch dwall_2_2_3
+x 23
+y 1
+end
+arch flagstone
+x 23
+y 2
+end
+arch dwall_3_1
+x 23
+y 2
+end
+arch flagstone
+x 23
+y 3
+end
+arch flagstone
+x 23
+y 4
+end
+arch cobblestones
+x 23
+y 5
+end
+arch cobblestones
+x 23
+y 6
+end
+arch cobblestones
+x 23
+y 7
+end
+arch cobblestones
+x 23
+y 8
+end
+arch flagstone
+x 23
+y 9
+end
+arch flagstone
+x 23
+y 10
+end
+arch flagstone
+x 23
+y 11
+end
+arch dwall_2_2_2
+x 23
+y 11
+end
+arch flagstone
+x 23
+y 12
+end
+arch dwall_2_2_4
+x 23
+y 12
+end
+arch brush
+x 23
+y 13
+end
+arch brush
+x 24
+end
+arch grass
+x 24
+y 1
+end
+arch flagstone
+x 24
+y 2
+end
+arch dwall_2_1_2
+x 24
+y 2
+end
+arch flagstone
+x 24
+y 3
+end
+arch flagstone
+x 24
+y 4
+end
+arch cobblestones
+x 24
+y 5
+end
+arch cobblestones
+x 24
+y 6
+end
+arch cobblestones
+x 24
+y 7
+end
+arch cobblestones
+x 24
+y 8
+end
+arch flagstone
+x 24
+y 9
+end
+arch flagstone
+x 24
+y 10
+end
+arch flagstone
+x 24
+y 11
+end
+arch dwall_2_1_2
+x 24
+y 11
+end
+arch brush
+x 24
+y 12
+end
+arch brush
+x 24
+y 13
+end
+arch brush
+x 25
+end
+arch brush
+x 25
+y 1
+end
+arch flagstone
+x 25
+y 2
+end
+arch dwall_2_2_3
+x 25
+y 2
+end
+arch flagstone
+x 25
+y 3
+end
+arch dwall_1_2
+x 25
+y 3
+end
+arch flagstone
+x 25
+y 4
+end
+arch lamppost
+x 25
+y 4
+end
+arch cobblestones
+x 25
+y 5
+end
+arch cobblestones
+x 25
+y 6
+end
+arch cobblestones
+x 25
+y 7
+end
+arch cobblestones
+x 25
+y 8
+end
+arch flagstone
+x 25
+y 9
+end
+arch lamppost
+x 25
+y 9
+end
+arch flagstone
+x 25
+y 10
+end
+arch dwall_1_1
+x 25
+y 10
+end
+arch flagstone
+x 25
+y 11
+end
+arch dwall_2_2_4
+x 25
+y 11
+end
+arch brush
+x 25
+y 12
+end
+arch brush
+x 25
+y 13
+end
+arch grass
+x 26
+end
+arch brush
+x 26
+y 1
+end
+arch brush
+x 26
+y 2
+end
+arch medium_stones
+x 26
+y 3
+end
+arch medium_stones
+x 26
+y 4
+end
+arch cobblestones
+x 26
+y 5
+end
+arch cobblestones
+x 26
+y 6
+end
+arch cobblestones
+x 26
+y 7
+end
+arch cobblestones
+x 26
+y 8
+end
+arch medium_stones
+x 26
+y 9
+end
+arch sign
+name WARNING...
+msg
+WARNING: Once beyond the city walls,
+you are on your OWN!
+endmsg
+x 26
+y 9
+end
+arch grass
+x 26
+y 10
+end
+arch brush
+x 26
+y 11
+end
+arch brush
+x 26
+y 12
+end
+arch grass
+x 26
+y 12
+end
+arch brush
+x 26
+y 13
+end
+arch brush
+x 27
+end
+arch grass
+x 27
+y 1
+end
+arch brush
+x 27
+y 2
+end
+arch brush
+x 27
+y 3
+end
+arch grass
+x 27
+y 4
+end
+arch exit
+slaying /world/world_105_115
+hp 22
+sp 37
+x 27
+y 5
+invisible 1
+end
+arch cobblestones
+x 27
+y 5
+end
+arch exit
+slaying /world/world_105_115
+hp 22
+sp 37
+x 27
+y 6
+invisible 1
+end
+arch cobblestones
+x 27
+y 6
+end
+arch exit
+slaying /world/world_105_115
+hp 22
+sp 37
+x 27
+y 7
+invisible 1
+end
+arch cobblestones
+x 27
+y 7
+end
+arch exit
+slaying /world/world_105_115
+hp 22
+sp 37
+x 27
+y 8
+invisible 1
+end
+arch cobblestones
+x 27
+y 8
+end
+arch grass
+x 27
+y 9
+end
+arch brush
+x 27
+y 10
+end
+arch brush
+x 27
+y 11
+end
+arch brush
+x 27
+y 12
+end
+arch brush
+x 27
+y 13
+end

@@ -1,0 +1,23 @@
+Object spell_spiderweb
+name spiderweb
+name_pl spiderweb
+face spell_praying.111
+level 4
+grace 10
+casting_time 10
+path_attuned 2048
+other_arch spiderweb_cone
+dam 0
+dam_modifier 0
+range 10
+duration 2
+range_modifier 5
+maxgrace 50
+type 101
+subtype 7
+value 40
+attacktype 0
+no_drop 1
+invisible 1
+skill praying
+end

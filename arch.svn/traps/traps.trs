@@ -1,0 +1,92 @@
+treasureone traps
+  list physical_traps
+    chance 50
+  more
+  list magical_traps
+    chance 50
+  end
+treasureone physical_traps
+  arch trap_diseased_needle
+    chance 70
+  more
+  arch trap_blades
+    chance 33
+  more
+  arch trap_needle
+    chance 33
+  more
+  arch trap_spikes2
+    chance 33
+  end
+treasureone magical_traps
+  arch rune_medium_fireball
+  chance 8
+  more
+  arch rune_burning_hands
+  chance 8
+  more
+  arch rune_poison_cloud
+  chance 8
+  more
+  arch rune_create_bomb
+  chance 8
+  more
+  arch rune_paralysis
+  chance 8
+  more
+  arch rune_shock
+  chance 8
+  more
+  arch rune_confusion
+  chance 8
+  more
+  arch rune_icestorm
+  chance 8
+  more
+  arch rune_drain_magic
+  chance 8
+  more
+  arch rune_blast
+  chance 8
+  more
+  arch rune_fire
+  chance 8
+  more
+  arch rune_frost
+  chance 8
+  more
+  list nastier_magical_traps
+  magic 6
+  chance 20
+  end
+treasureone nastier_magical_traps
+  arch rune_summon_air_elemental
+    chance 10  
+  more
+  arch rune_dragonbreath
+    chance 10  
+  more
+  arch rune_large_icestorm
+    chance 10  
+  more
+  arch rune_large_fireball
+    chance 10  
+  more
+  arch rune_ball_lightning
+    chance 10  
+  more
+  arch rune_summon_devil
+    chance 10  
+  more
+  arch rune_summon_earth_elemental
+    chance 10  
+  more
+  arch rune_summon_fire_elemental
+    chance 10  
+  more
+  arch rune_summon_water_elemental
+    chance 10  
+  more
+  arch rune_death
+    chance 10  
+end

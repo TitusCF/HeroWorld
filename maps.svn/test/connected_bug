@@ -1,0 +1,92 @@
+arch map
+name Advenurer's Guild
+msg
+Creator: Florian Beck
+Email: h729ihqu@sun1.cip.fak14.uni-muenchen.de
+Date: Sun Jun 16 23:35:14 1996
+endmsg
+hp 15
+sp 28
+x 6
+y 6
+level 1
+weight 3600
+invisible 1
+end
+arch food
+x 2
+y 5
+end
+arch button_handle
+x 3
+connected 1
+end
+arch pedestal
+x 3
+y 1
+connected 2
+end
+arch magic_mouth
+x 3
+y 3
+connected 4
+end
+arch altar
+slaying trigger
+food 1
+x 3
+y 3
+connected 3
+end
+arch magic_mouth
+x 3
+y 3
+connected 3
+walk_on 0
+fly_on 0
+end
+arch altar
+food 1
+x 3
+y 3
+connected 3
+end
+arch check_inv
+slaying trigger
+x 3
+y 3
+connected 3
+end
+arch round_shield
+name trigger
+slaying trigger
+x 3
+y 5
+end
+arch check_inv
+slaying trigger
+x 4
+y 3
+connected 3
+end
+arch sign
+msg
+This works. 
+endmsg
+x 5
+connected 1
+end
+arch sign
+msg
+This doesn't work. The message is
+displayed twice!
+endmsg
+x 5
+y 1
+connected 2
+end
+arch gateTrg2
+x 5
+y 3
+connected 3
+end

@@ -1,0 +1,51 @@
+Mail and Messageboard Python scripts for Crossfire
+Joris Bontje <jbontje@suespammers.org>
+
+Updated Oct. 2005 by Gros
+
+This collection offers scripts and a map that allow you
+to send mail (including items) to your fellow players and place public
+messageboards in the game.  There is also a banking system.
+It also allows for NPCs who can report on player login activity (seen.py).
+(note the bank script has been moved to banksay.py)
+
+Requirements:
+- Crossfire (October 19th, 2005 CVS code or later, requires v2.0 plugin interface)
+- Python (2.0 or higher)
+- Python Crossfire plugin (latest)
+
+Installation:
+Should work by default if python plugin is running
+
+It is possible to place multiple messageboards in your
+game, copy the example in the map from /ImperialPost/IPO and
+change 'event_say_options GENERALBOARD' and give it an
+unique name.
+
+Hooking up other NPCs to the seen script is pretty simple.
+
+There are currently two post offices and two banking outlets, one each
+in Navar and Scorn.  If you add more please follow these guidelines:
+
+*******Imperial Post**************
+The mailboxes could be put in different places, there should be a few around out there.
+
+
+*******Imperial Banking**************
+These are Imperial bank (actually Scuds Bank) if you want to
+add some banks to non-imperial cities (?) maybe consider making different
+scripts to and use a different currency and a new account database
+so players can have other bank account (bankdatabase="<your bank>Bank_DB")
+changing the bank notes is harder since it involves making a new arch, but
+you should be able to do so with little problems.
+
+But remember less is more....
+
+Right now the only place to get imperial script is the bank.  I think it is better
+to keep it this way and not use imperial script as treasure or make converters.
+Maybe on a rare occasion have imperials as a quest reward, but remember all Python
+stuff should be optional.  Do however consider using imperials for python gadgetry
+(like slot machines or other such optional gizmos), but only in the Imperial lands.
+
+Make sure you have updated the python_remove.py script to remove accounts when players quit
+if you have a custom one.

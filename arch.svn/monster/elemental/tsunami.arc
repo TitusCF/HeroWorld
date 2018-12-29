@@ -1,0 +1,23 @@
+Object tsunami
+name tsunami
+hp 400
+maxhp 400
+exp 5000
+race water_elemental
+face elem_water.111
+animation water_elemental
+monster 1
+move_type walk
+alive 1
+ac 4
+wc 8
+dam 40
+speed -0.1
+weight 50000
+level 11
+resist_confusion 100
+resist_blind 100
+attacktype 17
+resist_cold 50
+resist_fire -50
+end

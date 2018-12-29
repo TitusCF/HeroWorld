@@ -1,0 +1,34 @@
+Object cloudfloor
+name cloud
+face fog.111        
+no_pick 1
+is_floor 1
+editable 8
+end
+
+
+Object cloudwall
+name cloud
+face fog.112
+blocksview 1
+no_pick 1
+no_pass 1
+editable 512
+end
+
+Object snowstorm_0
+other_arch spell_icestorm
+name snowstorm
+type 62
+activate_on_push 1
+activate_on_release 1
+level 10
+face icestorm.113
+sp 0
+dam 1
+speed -0.02
+no_pass 0
+blocksview 0
+invisible 1
+editable 32
+end

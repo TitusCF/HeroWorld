@@ -1,0 +1,75 @@
+#############################################################
+# Gaea - Goddess of peace, Guardian of life, Mother of nature
+#
+treasure Gaea
+ arch gaea_avatar_info
+  more
+ arch gaea_holy_servant_info
+  more
+ arch god_restore_grace
+  more
+ arch god_restore_hitpoints
+  more
+ arch god_cure_confusion
+  more
+ arch god_cure_poison
+  more
+ arch god_remove_curse
+   chance 50
+  more
+ arch god_remove_damnation
+   chance 50
+  more
+ arch god_remove_depletion
+   chance 50
+  more
+ arch gaea_general_info
+   chance 10
+  more
+ arch god_grace_limit_low
+  more
+ arch spell_spiderweb
+   chance 20
+  more
+ arch spell_wall_of_thorns
+  more
+ arch spell_insect_plague
+  more
+ arch spell_iron_skin
+  more
+ arch god_grace_limit_medium
+  more
+ arch spell_raise_dead
+  more
+ arch spell_remove_damnation
+  more
+ arch spell_nightfall
+  more
+ arch spell_sanctuary
+  more
+ arch spell_daylight
+  more
+ arch spell_resurrection
+  more
+ arch spell_peace
+  more
+ arch glovesofsun
+  chance 10
+  more
+ arch god_grace_limit_high
+  more
+   arch spell_reincarnation
+    more
+   list gaea_treasure
+     chance 30
+   more
+  arch shield_gaea
+    chance 5
+end
+treasure gaea_treasure
+  list random_plant
+    chance 50
+  no
+    arch tear_gaea
+  end
+end

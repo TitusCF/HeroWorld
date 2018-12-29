@@ -1,0 +1,34 @@
+Object renegade_priest
+Str 25
+name renegade priest
+Con 15
+Wis 15
+Pow 40
+hp 1500
+maxhp 1500
+sp 100
+maxsp 100
+exp 50000
+dam 20
+wc -10
+ac -4
+speed -0.400000
+attack_movement 7
+level 20
+resist_magic 30
+resist_confusion 100
+resist_paralyze 100
+resist_fear 100
+carrying 100
+see_invisible 1
+unaggressive 0
+race dwarf
+randomitems renegade_priest
+animation dwarf_priest
+face dwarf_pr.111
+monster 1
+move_type walk
+alive 1
+weight 50000
+can_cast_spell 1
+end

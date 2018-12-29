@@ -1,0 +1,55 @@
+arch map
+name trigger
+msg
+Creator: Gnat the Gnu
+Email: gnu@foo.bar
+Date: Wed May 24 17:19:50 2000
+endmsg
+x 10
+y 10
+end
+arch spikes_open
+type 83
+other_arch platinacoin
+level 10
+x 7
+y 2
+connected 1
+end
+arch spikes_open
+x 7
+y 3
+connected 2
+end
+arch spikes_open
+x 7
+y 4
+connected 3
+end
+arch spikes_open
+x 7
+y 5
+connected 4
+end
+arch altar_trigger
+food 1
+x 9
+y 2
+connected 1
+end
+arch trigger
+x 9
+y 3
+connected 2
+end
+arch pedestal_trigger
+x 9
+y 4
+connected 3
+end
+arch button_trigger
+x 9
+y 5
+weight 1000
+connected 4
+end

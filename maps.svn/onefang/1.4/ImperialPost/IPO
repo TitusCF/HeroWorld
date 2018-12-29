@@ -1,0 +1,752 @@
+arch map
+name Imperial Post Office
+msg
+Creator: Commander Gros
+Email: yann.chachkoff@mailandnews.com
+Date: Wed Sep  5 22:09:24 2001
+Following a Lord MiDS idea
+endmsg
+width 10
+height 10
+enter_x 5
+enter_y 8
+end
+arch marble
+end
+arch awall_2_2_2
+end
+arch marble
+y 1
+end
+arch awall_2_1_1
+y 1
+end
+arch marble
+y 2
+end
+arch awall_2_1_1
+y 2
+end
+arch marble
+y 3
+end
+arch awall_3_2
+y 3
+end
+arch marble
+y 4
+end
+arch awall_2_1_1
+y 4
+end
+arch marble
+y 5
+end
+arch awall_2_1_1
+y 5
+end
+arch marble
+y 6
+end
+arch awall_2_1_1
+y 6
+end
+arch marble
+y 7
+end
+arch awall_2_1_1
+y 7
+end
+arch marble
+y 8
+end
+arch awall_2_1_1
+y 8
+end
+arch marble
+y 9
+end
+arch awall_2_2_1
+y 9
+end
+arch marble
+x 1
+end
+arch awall_2_1_2
+x 1
+end
+arch marble
+x 1
+y 1
+end
+arch bookshelf
+x 1
+y 1
+end
+arch marble
+x 1
+y 2
+end
+arch table_2
+x 1
+y 2
+end
+arch cauldron
+name Coffee supplies
+x 1
+y 2
+end
+arch marble
+x 1
+y 3
+end
+arch awall_2_1_2
+x 1
+y 3
+end
+arch marble
+x 1
+y 4
+end
+arch mailbox
+event_close_plugin Python
+event_close /onefang/python/PO/send.py
+event_apply_plugin Python
+event_apply /onefang/python/PO/receive.py
+material 0
+weight 0
+no_pick 1
+msg
+Recieving Mail
+-----------------------
+Open the mailbox and get the scrolls,
+read them by applying.
+
+Sending Mail
+-----------------------
+Get a pen and be sure that you are
+able to use the literacy skill. You can
+get both, as well as mailscrolls at any 
+post office, ask the clerk for help.
+Mark a preadressed mailscroll,
+and write on it with:
+  mark mailscroll
+  use_skill inscription <text>
+
+You can write multiple lines, when done
+drop the scoll in any mailbox and it
+will be sent.
+-----------------------
+NOTE - Multiple lines doesn't
+work yet.
+endmsg
+x 1
+y 4
+end
+arch marble
+x 1
+y 5
+end
+arch marble
+x 1
+y 6
+end
+arch marble
+x 1
+y 7
+end
+arch marble
+x 1
+y 8
+end
+arch greater_dwarven_guard
+unaggressive 1
+x 1
+y 8
+end
+arch marble
+x 1
+y 9
+end
+arch awall_2_1_2
+x 1
+y 9
+end
+arch marble
+x 2
+end
+arch marble
+x 2
+y 1
+end
+arch marble
+x 2
+y 2
+end
+arch chair_2.1
+x 2
+y 2
+end
+arch c_woman
+name Colette
+event_say_plugin Python
+event_say /onefang/python/bank/clerk.py
+x 2
+y 2
+end
+arch marble
+x 2
+y 3
+end
+arch table
+name II
+no_pass 1
+x 2
+y 3
+end
+arch marble
+x 2
+y 4
+end
+arch marble
+x 2
+y 5
+end
+arch marble
+x 2
+y 6
+end
+arch marble
+x 2
+y 7
+end
+arch marble
+x 2
+y 8
+end
+arch marble
+x 2
+y 9
+end
+arch awall_2_1_2
+x 2
+y 9
+end
+arch marble
+x 3
+end
+arch awall_2_1_2
+x 3
+end
+arch marble
+x 3
+y 1
+end
+arch bookshelf
+x 3
+y 1
+end
+arch marble
+x 3
+y 2
+end
+arch table_2
+x 3
+y 2
+end
+arch marble
+x 3
+y 3
+end
+arch awall_2_1_2
+x 3
+y 3
+end
+arch marble
+x 3
+y 4
+end
+arch marble
+x 3
+y 5
+end
+arch marble
+x 3
+y 6
+end
+arch marble
+x 3
+y 7
+end
+arch marble
+x 3
+y 8
+end
+arch marble
+x 3
+y 9
+end
+arch awall_2_1_2
+x 3
+y 9
+end
+arch marble
+x 4
+end
+arch awall_2_1_2
+x 4
+end
+arch marble
+x 4
+y 1
+end
+arch marble
+x 4
+y 2
+end
+arch marble
+x 4
+y 3
+end
+arch awall_2_1_2
+x 4
+y 3
+end
+arch marble
+x 4
+y 4
+end
+arch marble
+x 4
+y 5
+end
+arch marble
+x 4
+y 6
+end
+arch marble
+x 4
+y 7
+end
+arch sign
+name General Board
+event_say_plugin Python
+event_say /onefang/python/PO/board.py
+event_say_options_plugin Python
+event_say_options SCORN
+msg
+I am a talking board, please say something to me.
+If you don't know what to say, say help.
+endmsg
+x 4
+y 7
+end
+arch marble
+x 4
+y 8
+end
+arch marble
+x 4
+y 9
+end
+arch awall_1_3
+x 4
+y 9
+end
+arch marble
+x 5
+end
+arch awall_2_1_2
+x 5
+end
+arch marble
+x 5
+y 1
+end
+arch marble
+x 5
+y 2
+end
+arch marble
+x 5
+y 3
+end
+arch awall_2_1_2
+x 5
+y 3
+end
+arch marble
+x 5
+y 4
+end
+arch marble
+x 5
+y 5
+end
+arch marble
+x 5
+y 6
+end
+arch marble
+x 5
+y 7
+end
+arch marble
+x 5
+y 8
+end
+arch marble
+x 5
+y 9
+end
+arch invis_exit
+slaying /city/city
+hp 9
+sp 19
+x 5
+y 9
+end
+arch marble
+x 6
+end
+arch awall_2_1_2
+x 6
+end
+arch marble
+x 6
+y 1
+end
+arch bookshelf
+x 6
+y 1
+end
+arch marble
+x 6
+y 2
+end
+arch table_2
+x 6
+y 2
+end
+arch cauldron
+name Coffee supplies
+x 6
+y 2
+end
+arch marble
+x 6
+y 3
+end
+arch awall_2_1_2
+x 6
+y 3
+end
+arch marble
+x 6
+y 4
+end
+arch marble
+x 6
+y 5
+end
+arch marble
+x 6
+y 6
+end
+arch marble
+x 6
+y 7
+end
+arch chair_2.4
+x 6
+y 7
+end
+arch marble
+x 6
+y 8
+end
+arch marble
+x 6
+y 9
+end
+arch awall_1_4
+x 6
+y 9
+end
+arch marble
+x 7
+end
+arch marble
+x 7
+y 1
+end
+arch marble
+x 7
+y 2
+end
+arch chair_2.1
+x 7
+y 2
+end
+arch c_woman
+name Giselle
+msg
+@match *
+I'm busy right now - come back later or ask Colette for help.
+@match coffee
+The Coffee Controls The Post
+Whoever Controls The Post Controls The Empire
+endmsg
+x 7
+y 2
+end
+arch marble
+x 7
+y 3
+end
+arch table
+name I
+no_pass 1
+x 7
+y 3
+end
+arch marble
+x 7
+y 4
+end
+arch c_sage
+name Very old man
+msg
+@match *
+I am waiting here forever...
+endmsg
+x 7
+y 4
+end
+arch marble
+x 7
+y 5
+end
+arch marble
+x 7
+y 6
+end
+arch marble
+x 7
+y 7
+end
+arch table_3
+x 7
+y 7
+end
+arch scroll
+name Prospectus
+msg
+Imperial Post Services
+-----------------------
+Thank you for choosing the IPS to
+take care of your messages. Want to
+get more ? We have a wide range of
+products ans services to offer to
+anyone. Pirate ? Try  our
+TalkParrots(tm) ! Beholder ? Enjoy
+our fabulous non-stereoscopical cards
+! And don't forget:
+The Empire Is Everywhere For You
+endmsg
+x 7
+y 7
+end
+arch book_read
+name Manual
+msg
+Recieving Mail
+-----------------------
+Open the mailbox and get the scrolls,
+read them by applying.
+
+Sending Mail
+-----------------------
+Get a pen and be sure that you are
+able to use the literacy skill. You can
+get both, as well as mailscrolls at any 
+post office, ask the clerk for help.
+Mark a preadressed mailscroll,
+and write on it with:
+  mark mailscroll
+  use_skill inscription <text>
+
+You can write multiple lines, when done
+drop the scoll in any mailbox and it
+will be sent.
+-----------------------
+NOTE - Multiple lines doesn't
+work yet.
+endmsg
+x 7
+y 7
+end
+arch marble
+x 7
+y 8
+end
+arch chair_2.3
+x 7
+y 8
+end
+arch marble
+x 7
+y 9
+end
+arch awall_2_1_2
+x 7
+y 9
+end
+arch marble
+x 8
+end
+arch awall_2_1_2
+x 8
+end
+arch marble
+x 8
+y 1
+end
+arch bookshelf
+x 8
+y 1
+end
+arch marble
+x 8
+y 2
+end
+arch table_2
+x 8
+y 2
+end
+arch marble
+x 8
+y 3
+end
+arch awall_2_1_2
+x 8
+y 3
+end
+arch marble
+x 8
+y 4
+end
+arch clock
+msg
+No matter when you look at it, it is
+always too slo
+endmsg
+x 8
+y 4
+end
+arch marble
+x 8
+y 5
+end
+arch marble
+x 8
+y 6
+end
+arch marble
+x 8
+y 7
+end
+arch chair_2.2
+x 8
+y 7
+end
+arch marble
+x 8
+y 8
+end
+arch marble
+x 8
+y 9
+end
+arch awall_2_1_2
+x 8
+y 9
+end
+arch marble
+x 9
+end
+arch awall_2_2_3
+x 9
+end
+arch marble
+x 9
+y 1
+end
+arch awall_2_1_1
+x 9
+y 1
+end
+arch marble
+x 9
+y 2
+end
+arch awall_2_1_1
+x 9
+y 2
+end
+arch marble
+x 9
+y 3
+end
+arch awall_3_4
+x 9
+y 3
+end
+arch marble
+x 9
+y 4
+end
+arch awall_2_1_1
+x 9
+y 4
+end
+arch marble
+x 9
+y 5
+end
+arch awall_2_1_1
+x 9
+y 5
+end
+arch marble
+x 9
+y 6
+end
+arch awall_2_1_1
+x 9
+y 6
+end
+arch marble
+x 9
+y 7
+end
+arch awall_2_1_1
+x 9
+y 7
+end
+arch marble
+x 9
+y 8
+end
+arch awall_2_1_1
+x 9
+y 8
+end
+arch marble
+x 9
+y 9
+end
+arch awall_2_2_4
+x 9
+y 9
+end

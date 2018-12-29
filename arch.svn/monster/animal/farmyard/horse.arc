@@ -1,0 +1,41 @@
+Object horse
+race animal
+name horse
+monster 1
+move_type walk
+friendly 1
+Wis 13
+face horse.171
+animation horse
+exp 1000
+wc 9
+no_pick 1
+alive 1
+level 8
+ac 13
+hp 125
+maxhp 125
+run_away 35
+Con 2
+Str 16
+Int 6
+dam 12
+speed -0.07
+pick_up 1
+can_see_in_dark 1
+attacktype 1
+attack_movement 56
+resist_physical 25
+resist_slow 50
+resist_fear -10
+weight 50000
+end
+More
+Object horse_2
+name horse
+face horse.171
+animation horse
+alive 1
+no_pick 1
+x 1
+end

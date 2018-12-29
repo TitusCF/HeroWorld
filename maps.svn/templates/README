@@ -1,0 +1,13 @@
+Templates README
+
+This directory is for map templates - these maps should not be accessed directly but instead used to create instances of maps.  Some special considerations - each folder is a template consisting of a set of maps linked relatively.  Some special fields used:
+
+"slaying OWNER_MARKER" 
+
+- replace this with a string to represent the map owner(s) inventory object which gives them access to things like doors and switches.
+
+"slaying mainexit
+ hp x
+ sp x
+"
+-replace with the actual return exit info back to where the template has been placed 

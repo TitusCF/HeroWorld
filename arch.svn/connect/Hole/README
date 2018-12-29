@@ -1,0 +1,80 @@
+-----------------------------------------------------------------------------
+manhole
+-----------------------------------------------------------------------------
+
+manhole.arc
+
+  manhole_closed_1
+
+    A HOLE modeled after arch/trunk/connect/Hole/pit.arc pit_closed, except
+    that it is a multi-tile archetype, and that the non-head pieces are
+    deliberately set to the wrong face so that the animation works.  The
+    cover is over the hole by default when a map loads or is reset.
+
+  manhole_open_1
+
+    A HOLE modeled after arch/trunk/connect/Hole/pit.arc pit_open that has
+    its lid off the hole by default when a map loads or is reset.
+
+manhole.base.xcf
+
+    This is a GIMP 64 x 64 bit image with layers and transparency.
+
+    The elements used to construct the manhole .png files.  This file does
+    also contain some variations of the archetype that could be used to
+    produce different manholes (rust- colored vs. bronze, for example).
+    Ideally, graphic design changes are made in this file, and then .pngs
+    are exported.
+
+manhole.base.111.png
+manhole.base.112.png
+manhole.base.113.png
+manhole.base.114.png
+
+    A bronze manhole animation set.  111 is an open manhole. 112 and 113 are
+    transitional shots of a manhole opening or closing, and 114 is the closed
+    manhole.  A ladder is shown going down the hole underneath the lid when
+    it is open.
+
+Using the manhole:
+
+  1) This is a pit.  It can only transfer a player to a location on the same
+     map.
+
+  2) The manhole can be used to drop players in another map by pointing it to
+     a hidden coordinate that has a teleporter in it.  The teleporter can then
+     transfer the player on to another map.  Though the transfer is very fast,
+     it may be wise to place the same flooring, and a ladder going down arch
+     at the transfer coordinates and on top of the teleporter so that it does
+     not look too wierd if the player notices.
+
+     To get back up the manhole, in the lower map, just place a ladder going
+     up directly to the manhole map location.
+
+  3) The manhole is unlikely to be useful on a world map since there are no
+     hidden places where a teleport can be placed to transfer to another map.
+
+  4) The manhole needs a trigger (connection) to activate.  This can be a
+     lever, button, script, etc., but a very effective connection for a closed
+     manhole is an activate_on_push and activate_on_release player pedestal.
+     Place the pedestal under the manhole.  When the player steps on the
+     manhole, the open animation begins and if the player continues to stand
+     on the manhole, they will "fall in".  The reason for using push and
+     release is that after the player has fallen in, the manhole "resets" to
+     the shut position, much like a door.  The animation is slow enough that
+     the player can step off the manhole to avoid going down.
+
+     When a pedestal is used to open the manhole when it is stepped on, make
+     sure that the exit back to the manhole location returns the player to a
+     coordinate beside the manhole cover, and not right on the lid so they do
+     not automatically fall back in when they come out.
+
+  5) If an item (i.e. rock) is placed on top of the manhole to obscure it,
+     sometimes the manhole is rendered on top of the item.  If this is the
+     case, one workaround is to set "map_layer no_pick" in the manhole on the
+     map, and "map_layer item" on the obscuring item.
+
+The concept of the manhole was developed by Kevin Bulgrien, but would not have
+been possible if Nicolas Weeger had not figured out how to modify the server
+code to operate and animate the pit when it was placed in a multi-tile arch.
+

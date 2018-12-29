@@ -1,0 +1,50 @@
+treasure EDK
+  list all_spell_skills
+  more
+  arch abil_burning_hands
+  more
+  arch abil_medium_fireball
+  more
+  arch spell_paralyze
+  more
+  arch abil_fear
+  more
+  arch plate_mail
+  more
+  arch bighorned_helmet
+  more
+  arch ring
+  more
+  list random_books
+  more
+  arch ring
+  more
+  arch gem
+  nrof 30
+  chance 80
+  more
+  arch gem
+  nrof 20
+  chance 80
+  more
+  arch firestar
+  chance 10
+  no
+    arch lamestar
+    chance 50
+    end
+  more
+  arch DShieldms
+  chance 7
+  no
+    arch DShield
+    chance 60
+    no
+      arch DShieldm
+      chance 50
+      no
+        arch DShields
+        end
+      end
+    end
+  end

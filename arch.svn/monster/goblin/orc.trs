@@ -1,0 +1,50 @@
+treasure orc
+  arch skill_use_magic_item
+  more
+  list goblin_parts
+    chance 20
+    no
+      arch orcchop
+      chance 25
+    end
+  more
+  arch cloak
+  chance 3
+  more
+#  arch orcchop
+#  chance 25
+#  more
+  arch bow
+  chance 10
+  yes
+    arch arrow
+    nrof 6
+    end
+  more
+  arch b_ssword_2
+  magic 1
+  chance 5
+  no
+    arch b_ssword_1
+    chance 10
+    no
+      arch b_dagger
+      chance 15
+      no
+        arch stoneaxe
+        chance 20
+        no
+          arch club
+          chance 25
+          end
+        end
+      end
+    end
+  more
+  arch b_small_shield
+  chance 10
+  more
+  arch silvercoin
+  nrof 80
+  chance 10
+  end

@@ -1,0 +1,621 @@
+arch map
+name Witherspoon's Manor Attic
+difficulty 5
+region scorn
+darkness 4
+width 18
+height 8
+enter_x 16
+enter_y 5
+msg
+Creator: 2007-06-03 Nicolas Weeger
+Modified: 2008-11-15 Kevin Bulgrien
+endmsg
+end
+arch woodfloor
+x 2
+y 2
+end
+arch woodwall_2_2_2
+x 2
+y 2
+end
+arch woodfloor
+x 2
+y 3
+end
+arch woodwall_2_1_1
+x 2
+y 3
+end
+arch woodfloor
+x 2
+y 4
+end
+arch woodwall_2_1_1
+x 2
+y 4
+end
+arch woodfloor
+x 2
+y 5
+end
+arch woodwall_2_1_1
+x 2
+y 5
+end
+arch woodfloor
+x 2
+y 6
+end
+arch woodwall_2_2_1
+x 2
+y 6
+end
+arch woodfloor
+x 3
+y 2
+end
+arch woodwall_2_1_2
+x 3
+y 2
+end
+arch woodfloor
+x 3
+y 3
+end
+arch woodfloor
+x 3
+y 4
+end
+arch woodfloor
+x 3
+y 5
+end
+arch spider_gen
+x 3
+y 5
+end
+arch woodfloor
+x 3
+y 6
+end
+arch woodwall_2_1_2
+x 3
+y 6
+end
+arch woodfloor
+x 4
+y 2
+end
+arch woodwall_2_1_2
+x 4
+y 2
+end
+arch woodfloor
+x 4
+y 3
+end
+arch woodfloor
+x 4
+y 4
+end
+arch woodfloor
+x 4
+y 5
+end
+arch woodfloor
+x 4
+y 6
+end
+arch woodwall_2_1_2
+x 4
+y 6
+end
+arch woodfloor
+x 5
+y 2
+end
+arch woodwall_2_1_2
+x 5
+y 2
+end
+arch woodfloor
+x 5
+y 3
+end
+arch woodfloor
+x 5
+y 4
+end
+arch woodfloor
+x 5
+y 5
+end
+arch woodfloor
+x 5
+y 6
+end
+arch woodwall_2_1_2
+x 5
+y 6
+end
+arch woodfloor
+x 6
+y 2
+end
+arch woodwall_2_1_2
+x 6
+y 2
+end
+arch woodfloor
+x 6
+y 3
+end
+arch woodfloor
+x 6
+y 4
+end
+arch ghost
+name tortured ghost
+Str 29
+Con 40
+Pow 60
+Int 25
+hp 16000
+maxhp 16000
+sp 100
+maxsp 200
+exp 500000
+dam 60
+wc -40
+ac -10
+x 6
+y 4
+speed 0.15
+level 50
+attacktype 20745
+resist_physical 75
+resist_magic 100
+resist_fire 75
+resist_electricity 100
+resist_cold 75
+resist_confusion 100
+resist_drain 100
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_godpower 80
+resist_holyword 30
+resist_blind 100
+weight 150000
+pick_up 24
+will_apply 2
+can_use_shield 1
+see_invisible 1
+unaggressive 1
+reflect_spell 1
+run_away 18
+can_cast_spell 1
+can_use_scroll 1
+can_use_range 1
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+can_use_ring 1
+sleep 0
+can_use_skill 1
+one_hit 0
+no_damage 1
+body_range 1
+body_arm 2
+body_torso 1
+body_head 1
+body_skill 1
+body_finger 2
+body_shoulder 1
+body_foot 2
+body_hand 2
+body_wrist 2
+body_waist 1
+random_movement 1
+arch event_timer
+title Python
+slaying /python/maps/witherspoon_manor/ghost.py
+end
+arch event_say
+title Python
+slaying /python/maps/witherspoon_manor/ghost.py
+end
+arch spell_ball_lightning
+end
+arch spell_bullet_storm
+end
+arch spell_cause_cold
+end
+arch spell_cause_rabies
+end
+arch spell_cause_red_death
+end
+arch spell_cause_white_death
+end
+arch spell_color_spray
+end
+arch spell_dragonbreath
+end
+end
+arch woodfloor
+x 6
+y 5
+end
+arch woodfloor
+x 6
+y 6
+end
+arch woodwall_2_1_2
+x 6
+y 6
+end
+arch woodfloor
+x 7
+y 2
+end
+arch woodwall_2_1_2
+x 7
+y 2
+end
+arch woodfloor
+x 7
+y 3
+end
+arch woodfloor
+x 7
+y 4
+end
+arch woodfloor
+x 7
+y 5
+end
+arch woodfloor
+x 7
+y 6
+end
+arch woodwall_2_1_2
+x 7
+y 6
+end
+arch woodfloor
+x 8
+y 2
+end
+arch woodwall_2_1_2
+x 8
+y 2
+end
+arch woodfloor
+x 8
+y 3
+end
+arch woodfloor
+x 8
+y 4
+end
+arch woodfloor
+x 8
+y 5
+end
+arch woodfloor
+x 8
+y 6
+end
+arch woodwall_2_1_2
+x 8
+y 6
+end
+arch woodfloor
+x 9
+y 2
+end
+arch woodwall_2_1_2
+x 9
+y 2
+end
+arch woodfloor
+x 9
+y 3
+end
+arch woodfloor
+x 9
+y 4
+end
+arch woodfloor
+x 9
+y 5
+end
+arch woodfloor
+x 9
+y 6
+end
+arch woodwall_2_1_2
+x 9
+y 6
+end
+arch woodfloor
+x 10
+y 2
+end
+arch woodwall_2_1_2
+x 10
+y 2
+end
+arch woodfloor
+x 10
+y 3
+end
+arch spider_gen
+x 10
+y 3
+end
+arch woodfloor
+x 10
+y 4
+end
+arch woodfloor
+x 10
+y 5
+end
+arch woodfloor
+x 10
+y 6
+end
+arch woodwall_2_1_2
+x 10
+y 6
+end
+arch woodfloor
+x 11
+y 2
+end
+arch woodwall_2_1_2
+x 11
+y 2
+end
+arch woodfloor
+x 11
+y 3
+end
+arch woodfloor
+x 11
+y 4
+end
+arch woodfloor
+x 11
+y 5
+end
+arch woodfloor
+x 11
+y 6
+end
+arch woodwall_2_2_3
+x 11
+y 6
+end
+arch woodfloor
+x 11
+y 7
+end
+arch woodwall_2_2_1
+x 11
+y 7
+end
+arch woodfloor
+x 12
+y 2
+end
+arch woodwall_2_1_2
+x 12
+y 2
+end
+arch woodfloor
+x 12
+y 3
+end
+arch woodfloor
+x 12
+y 4
+end
+arch woodfloor
+x 12
+y 5
+end
+arch woodfloor
+x 12
+y 6
+end
+arch spider_gen
+x 12
+y 6
+end
+arch woodfloor
+x 12
+y 7
+end
+arch woodwall_2_1_2
+x 12
+y 7
+end
+arch woodfloor
+x 13
+y 2
+end
+arch woodwall_2_1_2
+x 13
+y 2
+end
+arch woodfloor
+x 13
+y 3
+end
+arch woodfloor
+x 13
+y 4
+end
+arch woodfloor
+x 13
+y 5
+end
+arch woodfloor
+x 13
+y 6
+end
+arch woodfloor
+x 13
+y 7
+end
+arch woodwall_2_1_2
+x 13
+y 7
+end
+arch woodfloor
+x 14
+y 2
+end
+arch woodwall_2_1_2
+x 14
+y 2
+end
+arch woodfloor
+x 14
+y 3
+end
+arch woodfloor
+x 14
+y 4
+end
+arch woodfloor
+x 14
+y 5
+end
+arch woodfloor
+x 14
+y 6
+end
+arch woodfloor
+x 14
+y 7
+end
+arch woodwall_2_1_2
+x 14
+y 7
+end
+arch woodfloor
+x 15
+y 2
+end
+arch woodwall_2_1_2
+x 15
+y 2
+end
+arch woodfloor
+x 15
+y 3
+end
+arch woodfloor
+x 15
+y 4
+end
+arch woodfloor
+x 15
+y 5
+end
+arch woodfloor
+x 15
+y 6
+end
+arch woodwall_2_2_2
+x 15
+y 6
+end
+arch woodfloor
+x 15
+y 7
+end
+arch woodwall_2_2_4
+x 15
+y 7
+end
+arch woodfloor
+x 16
+y 2
+end
+arch woodwall_2_1_2
+x 16
+y 2
+end
+arch woodfloor
+x 16
+y 3
+end
+arch woodfloor
+x 16
+y 4
+end
+arch woodfloor
+x 16
+y 5
+end
+arch ladder_down
+slaying witherspoon_manor
+hp 16
+sp 5
+x 16
+y 5
+end
+arch woodfloor
+x 16
+y 6
+end
+arch woodwall_2_1_2
+x 16
+y 6
+end
+arch woodfloor
+x 17
+y 2
+end
+arch woodwall_2_2_3
+x 17
+y 2
+end
+arch woodfloor
+x 17
+y 3
+end
+arch woodwall_2_1_1
+x 17
+y 3
+end
+arch woodfloor
+x 17
+y 4
+end
+arch woodwall_2_1_1
+x 17
+y 4
+end
+arch woodfloor
+x 17
+y 5
+end
+arch woodwall_2_1_1
+x 17
+y 5
+end
+arch woodfloor
+x 17
+y 6
+end
+arch woodwall_2_2_4
+x 17
+y 6
+end

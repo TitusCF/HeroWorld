@@ -1,0 +1,20 @@
+Object spell_cancellation
+name cancellation
+name_pl cancellation
+face spell_evocation.111
+level 10
+sp 30
+casting_time 10
+path_attuned 128
+other_arch cancellation
+skill evocation
+type 101
+subtype 4
+value 100
+attacktype 32770
+range 12
+duration 1
+no_drop 1
+invisible 1
+duration 8
+end

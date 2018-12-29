@@ -1,0 +1,164 @@
+#
+# Map building stuff
+#
+treasureone building_material
+  arch building_woodfloor
+    chance 50
+  more
+  arch building_woodfloor2
+    chance 5
+  more
+  arch building_wall
+    chance 25
+  more
+  arch building_vertical_gate
+    chance 10
+  more
+  arch building_horizontal_gate
+    chance 10
+  more
+  arch building_pedestal
+    chance 8
+  more
+  arch building_lever
+    chance 8
+  more
+  arch building_button
+    chance 3
+  more
+  list building_marbles
+    chance 5
+  more
+  list building_objects
+   chance 5
+  more
+  arch building_vertical_gate_inv
+    chance 1
+  more
+  arch building_horizontal_gate_inv
+    chance 1
+  more
+  list building_talking_objects
+   chance 1
+end
+treasureone shop_building
+  arch building_builder
+    chance 2
+  more
+  arch building_destroyer
+    chance 2
+  more
+  list building_material
+    chance 78
+  more
+  list building_material_stonewall_norm
+    chance 20  
+end
+treasureone shop_building_fant
+  arch building_builder
+    chance 2
+  more
+  arch building_destroyer
+    chance 2
+  more
+  list building_material
+    chance 78
+  more
+  list building_material_stonewall_fant
+    chance 20  
+end
+treasureone shop_building_west
+  arch building_builder
+    chance 2
+  more
+  arch building_destroyer
+    chance 2
+  more
+  list building_material
+    chance 78
+  more
+  list building_material_stonewall_west
+    chance 20  
+end
+treasureone shop_building_east
+  arch building_builder
+    chance 2
+  more
+  arch building_destroyer
+    chance 2
+  more
+  list building_material
+    chance 78
+  more
+  list building_material_stonewall_east
+    chance 20  
+end
+treasureone shop_building_abyss
+  arch building_builder
+    chance 2
+  more
+  arch building_destroyer
+    chance 2
+  more
+  list building_material
+    chance 63
+  more
+  list building_objects_abyssonly
+    chance 15
+  more
+  list building_material_stonewall_abyss
+    chance 20  
+end
+treasureone shop_building_goth
+  arch building_builder
+    chance 2
+  more
+  arch building_destroyer
+    chance 2
+  more
+  list building_material
+    chance 78
+  more
+  list building_material_stonewall_goth
+    chance 20  
+end
+##For areas like scorn area, sells DWall
+treasureone building_material_stonewall_norm
+  arch building_wall2
+end
+##For brest area, sells Red Cwall rather then DWall
+treasureone building_material_stonewall_fant
+  arch building_wall4
+end
+##For navar area, sells West Cwall and BBWall (yellow earthen) rather then DWall
+treasureone building_material_stonewall_west
+  arch building_wall3
+    chance 50
+  more
+  arch building_wall9
+    chance 50
+end
+##For areas like azumauindo area, sells DWall and EastWall (japanese paper wall)
+treasureone building_material_stonewall_east
+  arch building_wall2
+    chance 50
+  more
+  arch building_wall5
+    chance 50
+end
+##For mlabhell sells West West Cwall and BurningWall
+treasureone building_material_stonewall_abyss
+  arch building_wall3
+    chance 50
+  more
+  arch building_wall6
+    chance 50
+end
+##For Gotischerbereich, sells STWall and WWall rather then DWall
+treasureone building_material_stonewall_goth
+  arch building_wall7
+    chance 50
+  more
+  arch building_wall8
+    chance 50
+end

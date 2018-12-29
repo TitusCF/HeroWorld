@@ -1,0 +1,96 @@
+#! perl
+
+# TODO: skip arena
+# TODO: check for player leaving
+
+# implement a 'follow' command
+# don't follow on damned ground
+
+my %follow;
+
+cf::register_command follow => 0, sub {
+   my ($who, $args) = @_;
+
+   my $name = $who->name;
+
+   if ($args ne "" && $name ne $args) {
+      if (my $other = cf::player::find $args) {
+         if ($other->ob->map->path eq $who->map->path
+             && abs ($other->ob->x - $who->x) <= 1
+             && abs ($other->ob->y - $who->y) <= 1) {
+            $who->message ("Following player '$args', to stop, type: 'follow");
+            $other->ob->message ("$name is now following your every step...");
+            $follow{$name} = [
+               $args,
+               [$other->ob->map->path, $other->ob->x, $other->ob->y],
+               [$who->map->path,       $who->x,       $who->y],
+            ];
+         } else {
+            $who->message ("You must stand directly beside '$args' to follow her/him");
+            delete $follow{$name};
+         }
+      } else {
+         $who->message ("Cannot follow '$args': no such player");
+         delete $follow{$name};
+      }
+   } else {
+      $who->message ("follow mode off");
+      delete $follow{$name};
+   }
+};
+
+sub teleport {
+   my ($pl, $map, $x, $y) = @_;
+
+   return if $pl->ob->map->path eq $map
+          && abs ($pl->ob->x - $x) <= 1
+          && abs ($pl->ob->y - $y) <= 1;
+
+   my $portal = cf::object::new ("exit");
+
+   $portal->set_slaying ($map);
+   $portal->set_hp      ($x);
+   $portal->set_sp      ($y);
+
+   $portal->apply ($pl->ob);
+
+   $portal->free;
+}
+
+sub on_clock {
+   my ($event) = @_;
+
+   return unless %follow;
+
+   while (my ($name, $v) = each %follow) {
+      my ($target, $his, $mine) = @$v;
+      my ($who, $other) = (cf::player::find $name, cf::player::find $target);
+
+      if ($who && $other && $other->ob->map) {
+         my ($map, $x, $y) = ($other->ob->map->path, $other->ob->x, $other->ob->y);
+
+         if ($map ne $his->[0] || $x != $his->[1] || $y != $his->[2]) {
+            @$mine = @$his;
+            @$his = ($map, $x, $y);
+         }
+
+         my $map;
+
+         if ($map = cf::map::map $mine->[0]
+             and !grep $_->flag (cf::FLAG_UNIQUE) && $_->flag (cf::FLAG_IS_FLOOR),
+                       $map->at ($mine->[1], $mine->[2])) {
+            teleport $who, @$mine;
+         } else {
+            delete $follow{$name};
+            $who->ob->message ("You can't follow $target anymore!");
+         }
+      } else {
+         delete $follow{$name};
+         $who->ob->message ("$target is gone...");
+      }
+   }
+}
+
+
+
+

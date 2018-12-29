@@ -1,0 +1,1670 @@
+arch map
+reset_timeout 7200
+difficulty 1
+width 16
+height 32
+enter_x 1
+enter_y 1
+msg
+Creator: Gnat the Gnu
+Email: gnu@foo.bar
+Date: Sun Aug 25 22:54:32 2002
+endmsg
+end
+arch bulletwall_3
+smoothface lava.115 lava_S.115
+name magic lava
+name_pl magic lava
+face lava.111
+animation permanent_lava
+speed -0.070000
+level 100
+smoothlevel 28
+is_animated 1
+arch spell_small_fireball
+name lava shower
+name_pl lava shower
+msg
+endmsg
+other_arch lava
+dam 20
+level 100
+attacktype 4
+range 18
+end
+end
+arch flagstone
+name ice path
+name_pl floor
+face ice.111
+y 1
+end
+arch blocked
+name nothing
+name_pl nothing
+y 2
+no_pass 0
+blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
+y 3
+end
+arch pstone_3
+face rstone_3.111
+y 4
+end
+arch pstone_3
+face rstone_4.111
+y 5
+end
+arch grass
+name ice
+name_pl ice
+face icestorm.111
+y 6
+end
+arch grass
+name ice
+name_pl ice
+face icestorm.112
+y 7
+end
+arch grass
+name ice
+name_pl ice
+face icestorm.113
+y 8
+end
+arch evergreens
+name thick cloud
+name_pl thick cloud
+face fog.111
+exp 4000
+
+y 9
+blocksview 1
+slow_move 4.000000
+end
+arch cave3
+name rock
+name_pl mountain top
+y 10
+no_pass 0
+blocksview 0
+end
+arch sign
+name walls
+name_pl walls
+msg
+wall
+endmsg
+y 11
+end
+arch bwall_0
+name ice wall
+name_pl ice wall
+face icecube.111
+y 12
+end
+arch bwall_0
+name concrete
+name_pl concrete
+face rock.111
+y 13
+end
+arch bwall_0
+name very thick cloud
+name_pl very thick cloud
+face fog.112
+y 14
+end
+arch wwall_0
+y 15
+blocksview 0
+end
+arch blocked
+y 16
+end
+arch mover_8
+y 17
+speed -1.000000
+level 1
+attacktype 1
+end
+arch mover_7
+y 18
+speed -1.000000
+level 1
+attacktype 1
+end
+arch mover_6
+y 19
+speed -1.000000
+level 1
+attacktype 1
+end
+arch blocked
+name The Abyss
+name_pl nothing
+y 21
+no_pass 0
+blocksview 0
+end
+arch cave2
+name mist
+name_pl mists
+face fog.111
+x 1
+end
+arch blocked
+name nothing
+name_pl nothing
+face blocked_cyan.111
+x 1
+y 1
+no_pass 0
+blocksview 0
+end
+arch shop_empty
+name perm tiles
+name_pl perm tiles
+x 1
+y 2
+unique 1
+end
+arch shop_empty
+name perm tiles
+name_pl perm tiles
+face stfloor.111
+x 1
+y 3
+unique 1
+end
+arch snow
+x 1
+y 4
+end
+arch snow2
+x 1
+y 5
+end
+arch permanent_lava
+name boiling lava
+name_pl boiling lava
+dam 15
+x 1
+y 6
+end
+arch cave4
+name rock
+name_pl mountain top
+x 1
+y 7
+no_pass 0
+blocksview 0
+end
+arch cave2
+name rock
+name_pl mountain top
+x 1
+y 8
+no_pass 0
+blocksview 0
+end
+arch angry_floor
+x 1
+y 9
+speed 0.000000
+last_sp 4
+connected 4
+end
+arch flagstone
+x 1
+y 9
+end
+arch cave1
+name rock
+name_pl mountain top
+x 1
+y 10
+no_pass 0
+blocksview 0
+end
+arch blocked
+x 1
+y 16
+end
+arch mover_1
+x 1
+y 17
+speed -1.000000
+level 1
+attacktype 1
+end
+arch mover_turn
+x 1
+y 18
+speed -1.000000
+level 1
+attacktype 1
+end
+arch mover_5
+x 1
+y 19
+speed -1.000000
+level 1
+attacktype 1
+end
+arch blocked
+name nothing
+name_pl nothing
+face blocked_blue.111
+x 2
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+face blocked_darkblue.111
+x 2
+y 1
+no_pass 0
+blocksview 0
+end
+arch cave20
+name rock
+name_pl mountain top
+x 2
+y 2
+no_pass 0
+blocksview 0
+end
+arch cave17
+name rock
+name_pl mountain top
+x 2
+y 3
+no_pass 0
+blocksview 0
+end
+arch cave19
+name rock
+name_pl mountain top
+x 2
+y 4
+no_pass 0
+blocksview 0
+end
+arch cave18
+name rock
+name_pl mountain top
+x 2
+y 5
+no_pass 0
+blocksview 0
+end
+arch mountain
+face dung_floor.111
+x 2
+y 6
+end
+arch blocked
+x 2
+y 16
+end
+arch mover_2
+x 2
+y 17
+speed -1.000000
+level 1
+attacktype 1
+end
+arch mover_3
+x 2
+y 18
+speed -1.000000
+level 1
+attacktype 1
+end
+arch mover_4
+x 2
+y 19
+speed -1.000000
+level 1
+attacktype 1
+end
+arch sign
+name creatures
+name_pl creatures
+msg
+creature
+endmsg
+x 3
+end
+arch fog
+name cloud
+name_pl cloud
+x 3
+y 2
+blocksview 0
+end
+arch table_3
+name cloud
+name_pl cloud
+face fog.111
+dam 0
+x 3
+y 3
+material 0
+value 0
+weight 0
+last_sp 0
+no_pick 1
+end
+arch door_2
+name stone block
+name_pl rocks
+face rock.111
+x 3
+y 4
+material 64
+randomitems none
+arch rubble
+end
+end
+arch guard
+name Elite Mikhovian Gaurd
+name_pl Elite Mikhovian Gaurd
+msg
+@match *
+endmsg
+hp 350
+x 3
+y 5
+carrying 119500
+can_use_scroll 1
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+can_use_ring 1
+can_use_skill 1
+arch high_boots
+end
+arch high_shield
+end
+arch chain_mail
+end
+arch bighorned_helmet
+name Makhovian horned helmet
+name_pl Makhovian horned helmet
+ac 2
+end
+arch longbow
+end
+arch sword
+end
+end
+arch knight
+name Elite Mikhovian Solider
+name_pl Elite Mikhovian Solider
+Str 50
+Con 50
+Wis 50
+Pow 50
+Int 50
+hp 2000
+maxhp 2000
+dam 111
+x 3
+y 6
+speed 1.500000
+nrof 100
+level 40
+carrying 155300
+can_use_range 1
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+can_use_ring 1
+can_use_skill 1
+can_use_rod 1
+can_see_in_dark 1
+arch sword
+end
+arch high_shield
+end
+arch plate_mail
+end
+arch full_helmet
+end
+arch gauntlets
+end
+arch high_boots
+end
+end
+arch snowstorm_0
+name cool snowstorm
+name_pl cool snowstorm
+x 3
+y 7
+level 25
+arch spell_small_fireball
+end
+end
+arch dwarf
+x 3
+y 8
+unaggressive 0
+end
+arch lesser_dwarven_guard
+x 3
+y 9
+end
+arch greater_dwarven_guard
+x 3
+y 10
+end
+arch door_1
+x 3
+y 11
+no_pass 0
+end
+arch door_2
+x 3
+y 12
+no_pass 0
+end
+arch altar_none
+name stove
+name_pl stove
+face altarrugg.111
+x 3
+y 14
+no_pass 1
+end
+arch blocked
+x 3
+y 16
+end
+arch ladder_down
+name clear sky
+name_pl clear sky
+slaying skycoastalb1
+face blocked_blue.111
+hp 2
+sp 2
+x 4
+walk_on 1
+fly_on 1
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
+x 4
+y 1
+is_floor 0
+end
+arch snowstorm_0
+name freezing snowstorm
+name_pl freezing snowstorm
+x 4
+y 6
+level 100
+arch spell_small_fireball
+end
+end
+arch snowstorm_0
+name cold snowstorm
+name_pl cold snowstorm
+x 4
+y 7
+level 50
+arch spell_small_fireball
+end
+end
+arch dwarf
+name dwarf cook
+name_pl dwarf cook
+hp 80
+x 4
+y 8
+carrying 13200
+randomitems none
+unaggressive 0
+arch sabre
+name large serrated meat cutter
+name_pl large serrated meat cutters
+dam 8
+value 43
+weight 11100
+end
+arch low_boots
+end
+arch gloves
+end
+end
+arch door_look_2
+x 4
+y 11
+no_pass 0
+end
+arch door_look_1
+x 4
+y 12
+no_pass 0
+end
+arch altar_none
+name grill
+name_pl grill
+x 4
+y 14
+no_pass 1
+end
+arch blocked
+x 4
+y 16
+end
+arch wraith
+name soul
+name_pl soul
+x 4
+y 17
+unaggressive 1
+end
+arch ghost
+name soul
+name_pl soul
+x 4
+y 18
+flying 0
+unaggressive 1
+end
+arch killer_bee
+name bee
+name_pl bee
+x 4
+y 19
+flying 0
+unaggressive 1
+end
+arch xan
+name wasp
+name_pl wasp
+x 4
+y 20
+flying 0
+unaggressive 1
+end
+arch dim_torch
+food 10000
+x 5
+no_pick 1
+end
+arch goldcoin
+name gold doubloon
+name_pl gold doubloons
+x 5
+y 1
+value 60
+end
+arch teleporter
+name tocourt
+name_pl tocourt
+slaying smtcourthouse
+hp 15
+sp 12
+x 5
+y 2
+speed 0.000000
+invisible 1
+connected 73139
+end
+arch statue
+face statue_gold.111
+x 5
+y 3
+end
+arch statue
+face statue_bronze.111
+x 5
+y 4
+end
+arch statue
+x 5
+y 5
+end
+arch statue
+face statue_gargoyle.111
+x 5
+y 6
+end
+arch permanent_lava
+name hot lava
+name_pl hot lava
+dam 55
+x 5
+y 7
+end
+arch tree4
+name stout tree
+name_pl stout tree
+x 5
+y 8
+no_pass 1
+end
+arch tree5
+name large dark pine
+name_pl stout pine
+x 5
+y 10
+no_pass 1
+blocksview 1
+end
+arch bookshelf
+name heavy bookshelf
+name_pl heavy bookshelf
+x 5
+y 11
+arch random_reading
+end
+arch random_reading
+end
+end
+arch chest_2
+x 5
+y 12
+carrying 47000
+end
+arch chest_2
+name heavy chest
+name_pl heavy chest
+x 5
+y 14
+arch random_treasure
+end
+arch random_treasure
+end
+end
+arch blocked
+x 5
+y 16
+end
+arch torch_1
+food 10000
+x 6
+no_pick 1
+end
+arch statue2
+face statue2_gold.111
+x 6
+y 3
+end
+arch statue2
+face statue2_bronze.111
+x 6
+y 4
+end
+arch statue2
+x 6
+y 5
+end
+arch statue
+face statue_knight.111
+x 6
+y 6
+end
+arch tree5
+name tall stout pine
+name_pl stout pine
+x 6
+y 7
+no_pass 1
+blocksview 1
+end
+arch tree5
+name stout pine
+name_pl stout pine
+x 6
+y 8
+no_pass 1
+end
+arch tree6
+name strange tree
+name_pl strange tree
+x 6
+y 10
+no_pass 1
+blocksview 1
+end
+arch blocked
+x 6
+y 16
+end
+arch permanent_lava
+name freezing water
+name_pl freezing water
+face deep_sea.111
+animation deep_sea
+dam 5
+x 6
+y 17
+attacktype 16
+end
+arch door_look_1
+name ice
+name_pl ice
+face icecube.111
+x 6
+y 18
+resist_physical 100
+resist_cold 100
+unaggressive 1
+end
+arch sign
+name No pick stones
+name_pl creatures
+msg
+creature
+endmsg
+x 7
+end
+arch pearl
+x 7
+y 2
+no_pick 1
+end
+arch emerald
+x 7
+y 3
+no_pick 1
+end
+arch sapphire
+x 7
+y 4
+no_pick 1
+end
+arch ruby
+x 7
+y 5
+no_pick 1
+end
+arch sign
+name nopass trees
+name_pl creatures
+msg
+endmsg
+x 7
+y 7
+end
+arch tree3
+name stout tree
+name_pl stout tree
+x 7
+y 8
+no_pass 1
+end
+arch goldfloor
+name drop 50 imperials
+name_pl drop 50 imperials
+slaying imperial
+msg
+Ding! 
+endmsg
+food 50
+x 7
+y 9
+end
+arch sign
+name battlefields
+name_pl creatures
+msg
+endmsg
+x 7
+y 11
+end
+arch battleground
+x 7
+y 12
+end
+arch battleground
+face stfloor.111
+x 7
+y 13
+end
+arch holy_orb
+name holy power
+name_pl holy power
+x 7
+y 14
+type 0
+attacktype 0
+fly_on 0
+end
+arch blocked
+x 7
+y 16
+end
+arch permanent_lava
+x 7
+y 17
+end
+arch goldcoin
+x 8
+nrof 100
+end
+arch chest
+name large chest
+name_pl large chest
+x 8
+y 3
+carrying 51000
+randomitems none
+no_pick 1
+arch chest_2
+name large chest
+name_pl large chest
+no_pick 1
+end
+arch bones5
+end
+end
+arch chest
+name large chest
+name_pl large chest
+x 8
+y 4
+carrying 43000
+randomitems none
+no_pick 1
+arch chest_2
+name large chest
+name_pl large chest
+no_pick 1
+end
+arch bones2
+end
+arch bones3
+end
+end
+arch chest
+name large chest
+name_pl large chest
+x 8
+y 5
+carrying 41500
+randomitems none
+no_pick 1
+arch chest_2
+name large chest
+name_pl large chest
+no_pick 1
+end
+arch skull
+end
+end
+arch ytree_2
+name stout tree
+name_pl stout tree
+x 8
+y 8
+no_pass 1
+end
+arch emerald
+title of great value
+face pretty_emerald.111
+x 8
+y 11
+value 1600
+weight 55
+is_animated 0
+end
+arch meteor
+name weaponmagic
+name_pl weaponmagic
+x 8
+y 14
+type 0
+end
+arch blocked
+x 8
+y 16
+end
+arch chest
+name large chest
+name_pl large chest
+x 9
+carrying 40000
+randomitems none
+no_pick 1
+arch chest_2
+name large chest
+name_pl large chest
+no_pick 1
+end
+arch random_wealth
+end
+arch random_wealth
+end
+end
+arch cave1
+name mountain top
+name_pl mountain top
+x 9
+y 2
+blocksview 0
+end
+arch bones5
+x 9
+y 3
+end
+arch bones2
+x 9
+y 4
+end
+arch skull
+x 9
+y 5
+end
+arch cave15
+name mountain top
+name_pl mountain top
+x 9
+y 6
+blocksview 0
+end
+arch cave14
+name mountain top
+name_pl mountain top
+x 9
+y 7
+blocksview 0
+end
+arch ytree
+name stout tree
+name_pl stout tree
+x 9
+y 8
+no_pass 1
+end
+arch shallow_sea
+x 9
+y 10
+no_pass 0
+end
+arch sea
+x 9
+y 11
+no_pass 0
+end
+arch deep_sea
+x 9
+y 12
+no_pass 0
+end
+arch blocked
+x 9
+y 16
+end
+arch statue
+name lesbian in agony
+name_pl writhing feminists in agony
+msg
+@match *
+
+Women MUST HAVE RIGHTS. I would
+rather be here in HELL then worship a
+diety that gives power over WOMEN to
+men. I have rejected man and I have
+rejected his diety. 
+
+@match women|woman
+WOMAN's Rights is a MUST! Men should
+be killed untill they are only 10
+percent of the population so that
+they may serve US, WOMAN! A WOMAN has
+the RIGHT to murder her children at
+will. A WOMAN has the RIGHT to murder
+her husband a will. A WOMAN has the
+right to have SEX with anyone she
+pleases. A WOMAN has the RIGHT to
+have multiple husbands. A WOMAN has
+the RIGHT to work or not work at her
+will. A WOMAN has the RIGHT to
+divorce. A WOMAN has the RIGHT to
+take her husbands children away from
+him.
+
+
+endmsg
+face dancing_girl.111
+animation dancing_girl
+x 9
+y 20
+speed -0.200000
+is_animated 1
+end
+arch statue
+name writhing lesbian feminist whore
+name_pl writhing feminists in agony
+msg
+@match *
+WOMAN's Rights is a MUST! Men should
+be killed untill they are only 10
+percent of the population so that
+they may serve US, WOMAN! A WOMAN has
+the RIGHT to murder her children at
+will. A WOMAN has the RIGHT to murder
+her husband a will. A WOMAN has the
+right to have SEX with anyone she
+pleases. A WOMAN has the RIGHT to
+have multiple husbands. A WOMAN has
+the RIGHT to work or not work at her
+will. A WOMAN has the RIGHT to
+divorce. A WOMAN has the RIGHT to
+take her husbands children away from
+him.
+endmsg
+face dancing_girl.111
+animation dancing_girl
+x 9
+y 21
+speed -0.200000
+is_animated 1
+end
+arch random_wealth
+x 10
+end
+arch cave2
+name mountain top
+name_pl mountain top
+x 10
+y 1
+blocksview 0
+end
+arch cave4
+name mountain top
+name_pl mountain top
+x 10
+y 3
+blocksview 0
+end
+arch bones3
+x 10
+y 4
+end
+arch cave20
+name mountain top
+name_pl mountain top
+x 10
+y 5
+blocksview 0
+end
+arch chest
+name large chest
+name_pl large chest
+x 10
+y 6
+carrying 40000
+randomitems none
+no_pick 1
+arch chest_2
+name large chest
+name_pl large chest
+no_pick 1
+end
+arch random_potion
+end
+end
+arch chest
+name large chest
+name_pl large chest
+x 10
+y 7
+carrying 40100
+randomitems none
+no_pick 1
+arch chest_2
+name large chest
+name_pl large chest
+no_pick 1
+end
+arch fl_corpse
+end
+end
+arch cave19
+name mountain top
+name_pl mountain top
+x 10
+y 8
+blocksview 0
+end
+arch permanent_lava
+name boiling lava
+name_pl boiling lava
+dam 15
+x 10
+y 10
+no_pass 1
+end
+arch woodfloor
+x 10
+y 13
+end
+arch slotmachine2
+name Golden Nugget
+name_pl Golden Nugget
+event_apply /python/casino/goldslots.py
+event_apply_plugin Python
+food 0
+x 10
+y 13
+end
+arch blocked
+x 10
+y 16
+end
+arch random_wealth
+x 11
+end
+arch cave3
+name mountain top
+name_pl mountain top
+x 11
+y 2
+blocksview 0
+end
+arch chest
+name large chest
+name_pl large chest
+x 11
+y 3
+carrying 70000
+randomitems none
+no_pick 1
+arch chest_2
+name large chest
+name_pl large chest
+no_pick 1
+end
+arch random_wealth
+end
+arch skeleton
+end
+arch skeleton
+end
+end
+arch chest
+name large chest
+name_pl large chest
+x 11
+y 4
+carrying 84000
+randomitems none
+no_pick 1
+arch chest_2
+name large chest
+name_pl large chest
+no_pick 1
+end
+arch skeleton
+end
+arch skeleton
+end
+arch skeletalmage
+end
+end
+arch random_potion
+x 11
+y 6
+end
+arch fl_corpse
+x 11
+y 7
+end
+arch lava_river_w-e
+name blood
+name_pl blood
+x 11
+y 11
+end
+arch lava_biglake_1_1
+name blood
+name_pl blood
+x 11
+y 12
+end
+arch woodfloor
+x 11
+y 13
+end
+arch slotmachine3
+name Silver Sliver
+name_pl Silver Sliver
+slaying silvercoin
+event_apply /python/casino/silverslots.py
+event_apply_plugin Python
+food 0
+x 11
+y 13
+end
+arch blocked
+x 11
+y 16
+end
+arch deathtree
+name a suicide
+name_pl a suicide
+x 11
+y 21
+end
+arch chest
+name large chest
+name_pl large chest
+x 12
+carrying 40000
+randomitems none
+no_pick 1
+arch chest_2
+name large chest
+name_pl large chest
+no_pick 1
+end
+end
+arch chest
+name large chest
+name_pl large chest
+x 12
+y 1
+carrying 70000
+randomitems none
+no_pick 1
+arch chest_2
+name large chest
+name_pl large chest
+no_pick 1
+end
+arch skeleton
+end
+arch skeleton
+end
+end
+arch chest
+name large chest
+name_pl large chest
+x 12
+y 2
+carrying 40000
+randomitems none
+no_pick 1
+arch chest_2
+name large chest
+name_pl large chest
+no_pick 1
+end
+arch random_wealth
+end
+end
+arch random_wealth
+x 12
+y 3
+end
+arch skeletalmage
+x 12
+y 4
+end
+arch cave17
+name mountain top
+name_pl mountain top
+x 12
+y 5
+blocksview 0
+end
+arch cave18
+name mountain top
+name_pl mountain top
+x 12
+y 8
+blocksview 0
+end
+arch lava_biglake_nw
+name blood
+name_pl blood
+x 12
+y 10
+end
+arch blackrock
+x 12
+y 11
+end
+arch lava_biglake_ew
+name blood
+name_pl blood
+x 12
+y 11
+end
+arch lava_biglake_sw
+name blood
+name_pl blood
+x 12
+y 12
+end
+arch slotmachine1
+name Double Platnum Diamond
+name_pl Double Platnum Diamond
+slaying platnumcoin
+event_apply /python/casino/platnumslots.py
+event_apply_plugin Python
+x 12
+y 13
+end
+arch blocked
+x 12
+y 16
+end
+arch mover_8
+x 12
+y 18
+speed 1.000000
+level 1
+attacktype 1
+end
+arch mover_7
+x 12
+y 19
+speed 1.000000
+level 1
+attacktype 1
+end
+arch mover_6
+x 12
+y 20
+speed 1.000000
+level 1
+attacktype 1
+end
+arch skeleton
+x 13
+y 1
+end
+arch random_wealth
+x 13
+y 2
+end
+arch skeleton
+x 13
+y 3
+end
+arch skeleton
+x 13
+y 4
+end
+arch chest
+name large chest
+name_pl large chest
+x 13
+y 5
+carrying 55000
+randomitems none
+no_pick 1
+arch chest_2
+name large chest
+name_pl large chest
+no_pick 1
+end
+arch skeleton
+end
+end
+arch cave16
+name mountain top
+name_pl mountain top
+x 13
+y 6
+blocksview 0
+end
+arch cave13
+name mountain top
+name_pl mountain top
+x 13
+y 7
+blocksview 0
+end
+arch blackrock
+x 13
+y 9
+end
+arch lava_biglake_ew
+name blood
+name_pl blood
+x 13
+y 9
+end
+arch burning_fountain
+name fountain of blood
+name_pl fountain of blood
+x 13
+y 9
+end
+arch lava_biglake_w
+name blood
+name_pl blood
+x 13
+y 10
+end
+arch lava_biglake_ew
+name blood
+name_pl blood
+x 13
+y 11
+end
+arch lava_biglake_ew
+name blood
+name_pl blood
+x 13
+y 12
+end
+arch lava_biglake_ew
+name shallow blood
+name_pl blood
+x 13
+y 14
+no_pass 0
+end
+arch blocked
+x 13
+y 16
+end
+arch mover_1
+x 13
+y 18
+speed 1.000000
+level 1
+attacktype 1
+end
+arch mover_5
+x 13
+y 20
+speed 1.000000
+level 1
+attacktype 1
+end
+arch woman2
+name lesbian
+name_pl lesbian
+msg
+@match *
+Women MUST HAVE RIGHTS. I would
+rather be here in HELL then worship a
+diety that gives power over WOMEN to
+men. I have rejected man and I have
+rejected his diety.
+
+
+endmsg
+x 13
+y 21
+end
+arch skeleton
+x 14
+y 1
+end
+arch skeleton
+x 14
+y 3
+end
+arch skeleton
+x 14
+y 4
+end
+arch skeleton
+x 14
+y 5
+end
+arch lava_biglake_ne
+x 14
+y 10
+end
+arch blackrock
+x 14
+y 11
+end
+arch lava_biglake_ew
+name blood
+name_pl blood
+x 14
+y 11
+end
+arch lava_biglake_se
+name blood
+name_pl blood
+x 14
+y 12
+end
+arch blocked
+x 14
+y 16
+end
+arch lightningwall_7
+name forkedlightningwall
+name_pl forkedlightningwall
+x 14
+y 17
+arch spell_forked_lightning
+end
+end
+arch mover_2
+x 14
+y 18
+speed 1.000000
+level 1
+attacktype 1
+end
+arch mover_3
+x 14
+y 19
+speed 1.000000
+level 1
+attacktype 1
+end
+arch mover_4
+x 14
+y 20
+speed 1.000000
+level 1
+attacktype 1
+end
+arch dancing_girl
+name lesbian feminist whore
+name_pl lesbian feminist whore
+msg
+@match *
+WOMAN's Rights is a MUST! Men should
+be killed untill they are only 10
+percent of the population so that
+they may serve US, WOMAN! A WOMAN has
+the RIGHT to murder her children at
+will. A WOMAN has the RIGHT to murder
+her husband a will. A WOMAN has the
+right to have SEX with anyone she
+pleases. A WOMAN has the RIGHT to
+have multiple husbands. A WOMAN has
+the RIGHT to work or not work at her
+will. A WOMAN has the RIGHT to
+divorce. A WOMAN has the RIGHT to
+take her husbands children away from
+him.
+endmsg
+x 14
+y 21
+end
+arch tree6
+name thorn bush
+name_pl thorn bush
+face thorns.111
+dam 3
+x 15
+y 14
+end
+arch firewall_5
+name snowstorm
+name_pl snowstorm
+face icestorm.113
+sp 0
+dam 17
+x 15
+y 15
+speed -0.050000
+level 3
+invisible 1
+arch spell_icestorm
+end
+end
+arch blocked
+x 15
+y 16
+end
+arch detector
+slaying rod of ali
+x 15
+y 17
+speed 0.100000
+invisible 1
+connected 1
+end
+arch shallow_sea
+name water
+name_pl water
+x 15
+y 18
+no_pass 0
+end
+arch blocked
+name The Abyss
+name_pl nothing
+x 15
+y 19
+no_pass 0
+blocksview 0
+end
+arch quicksilver_sea
+x 15
+y 20
+no_pass 0
+end
+arch man
+name homosexual man
+name_pl homosexual man
+msg
+@match *
+Gosh darn it! Women should have
+rights! Women should have equal
+rights to men! Women are superior to
+men, I am not worthy to be with them!
+endmsg
+x 15
+y 21
+end

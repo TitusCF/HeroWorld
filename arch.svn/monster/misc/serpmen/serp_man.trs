@@ -1,0 +1,25 @@
+treasure serp_man
+  arch skill_use_magic_item
+  more
+  arch serp_sword
+  magic 2
+  chance 15
+  no
+    arch serp_sword
+    end
+  more
+  arch bow
+  magic 1
+  chance 30
+  yes
+    arch arrow
+    nrof 20
+    end
+  more
+  arch wand
+  chance 5
+  more
+  arch goldcoin
+  nrof 10
+  chance 50
+  end

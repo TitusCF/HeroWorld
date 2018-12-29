@@ -1,0 +1,956 @@
+arch map
+name Bogustest
+msg
+Creator: Gnat the Gnu
+Email: gnu@foo.bar
+Date: Sun Apr  9 23:46:05 2000
+endmsg
+end
+arch holy_priest
+name Priest
+msg
+@match *
+This is the one true path, give
+yourself to the devourers and the
+way shall ope
+endmsg
+Con 15
+Wis 0
+Pow 40
+Int 0
+hp 1500
+maxhp 1500
+sp 75
+maxsp 75
+exp 20000
+dam 20
+wc -10
+ac -8
+y 2
+speed 0.200000
+level 13
+immune 2
+carrying 100
+undead 1
+stand_still 1
+arch ability_paralyze
+end
+arch ability_fear
+end
+arch ability_coldspell
+end
+arch ability_cold
+end
+arch ability_cold
+end
+arch key2
+name Priest of Devourers head
+slaying cp_head_d
+face head.111
+end
+end
+arch c_knight
+Str 40
+Dex 0
+Con 25
+Wis 15
+Int 0
+hp 2000
+maxhp 2000
+exp 35000
+dam 20
+wc -20
+ac -15
+y 4
+speed -0.700000
+level 20
+immune 282665
+attacktype 262145
+carrying 13000
+see_invisible 1
+arch falchion
+name wicked sabre
+dam 25
+attacktype 262145
+vulnerable 256
+last_sp 4
+end
+end
+arch sailor
+name Blade Dancer
+Str 40
+Dex 0
+Con 25
+Wis 15
+Int 0
+hp 2000
+maxhp 2000
+exp 35000
+dam 20
+wc -20
+ac -15
+y 7
+speed -0.800000
+level 20
+immune 20512
+protected 1
+attacktype 256
+carrying 20000
+see_invisible 1
+unaggressive 0
+can_use_skill 0
+arch katana_1
+name sleek katana
+slaying unnatural
+dam 15
+nrof 2
+attacktype 256
+vulnerable 128
+weight 10000
+magic 4
+last_sp 0
+end
+end
+arch a_priest
+name acolyte
+msg
+@match *
+Let yourself be devoured and you shall
+know true power
+endmsg
+Con 11
+Wis 0
+Pow 30
+Int 0
+hp 1000
+maxhp 1000
+sp 50
+maxsp 50
+exp 10000
+dam 10
+wc -10
+ac -8
+x 1
+y 2
+speed 0.400000
+level 10
+immune 20496
+see_invisible 1
+undead 1
+stand_still 1
+arch ability_coldspell
+end
+arch ability_cold
+end
+end
+arch c_priest
+Str 25
+Dex 0
+Con 15
+Wis 15
+Pow 30
+Int 0
+hp 1500
+maxhp 1500
+sp 100
+maxsp 100
+exp 35000
+dam 20
+wc -10
+ac -8
+x 1
+y 4
+speed -0.400000
+level 13
+immune 282662
+see_invisible 1
+arch ability_hellfire
+end
+arch ability_dragon
+end
+end
+arch dwarf_priest
+name renegade priest
+Str 25
+Con 15
+Wis 15
+Pow 40
+hp 1500
+maxhp 1500
+sp 100
+maxsp 100
+exp 50000
+dam 20
+wc -10
+ac -8
+x 1
+y 7
+speed -0.400000
+attack_movement 7
+level 20
+immune 20512
+protected 2
+see_invisible 1
+unaggressive 0
+arch ability_heal
+end
+arch ability_petsummoning
+end
+arch ability_cause_ser_wound
+end
+arch ability_cause_med_wound
+end
+arch ability_cause_ser_wound
+end
+end
+arch holy_priest
+name Priest
+msg
+@match *
+In fire we walk and in fire we will be reborn
+endmsg
+Con 15
+Wis 0
+Pow 40
+Int 0
+hp 1500
+maxhp 1500
+sp 75
+maxsp 30
+exp 20000
+dam 20
+wc -10
+ac -8
+x 2
+speed 0.200000
+level 13
+carrying 100
+stand_still 1
+arch ability_dragon
+end
+arch ability_wyvern
+end
+arch ability_paralyze
+end
+arch ability_fear
+end
+arch ability_dragon
+end
+arch ability_fire
+end
+arch key2
+name Priest of Ruggillis head
+slaying cp_head_d
+face head.111
+end
+end
+arch a_priest
+name acolyte
+msg
+@match *
+Ruggilli will burn your sins away
+endmsg
+Con 11
+Wis 0
+Pow 15
+Int 0
+hp 1000
+maxhp 1000
+sp 50
+maxsp 50
+exp 10000
+dam 10
+wc -10
+ac -8
+x 2
+y 1
+speed 0.400000
+level 10
+see_invisible 1
+stand_still 1
+arch ability_summon_fire
+end
+arch ability_fire
+end
+arch ability_fire
+end
+arch ability_firespell
+end
+end
+arch broo
+name Hulking Beast
+Str 30
+Dex 0
+Con 20
+Wis 15
+Pow 45
+Int 0
+hp 3500
+maxhp 3500
+sp 150
+maxsp 150
+exp 100000
+dam 25
+wc -20
+ac -12
+x 2
+y 4
+speed -0.400000
+level 22
+immune 283684
+see_invisible 1
+can_cast_spell 1
+arch ability_paralyze
+end
+arch ability_firespell
+end
+arch ability_fire
+end
+arch ability_fear
+end
+end
+arch dark_elf
+name shadow elf
+Str 15
+Dex 0
+Con 15
+Wis 15
+Pow 45
+Int 0
+hp 3500
+maxhp 3500
+sp 150
+maxsp 150
+exp 100000
+dam 25
+wc -20
+ac -12
+x 2
+y 7
+speed -0.400000
+level 22
+immune 20528
+protected 2
+see_invisible 1
+arch ability_mass_confusion
+end
+arch ability_cold
+end
+arch ability_coldspell
+end
+arch ability_fear
+end
+end
+arch a_priest
+name acolyte
+msg
+@match *
+Give yourself to Gorokh and he will
+show you the true meaning of power
+endmsg
+Con 11
+Wis 0
+Pow 15
+Int 0
+hp 1000
+maxhp 1000
+sp 50
+maxsp 50
+exp 10000
+dam 10
+wc -10
+ac -8
+x 3
+y 2
+speed 0.400000
+level 10
+see_invisible 1
+stand_still 1
+arch ability_missile
+end
+arch ability_cause_lig_wound
+end
+arch ability_cause_med_wound
+end
+arch ability_cause_ser_wound
+end
+end
+arch unusual_kobold
+name insane kobold
+Wis 20
+exp 50000
+x 3
+y 4
+speed -0.900000
+end
+arch holy_priest
+name Priest
+msg
+@match *
+INFIDEL! 
+Gorokh will punish you for your blasfem
+endmsg
+Con 15
+Wis 0
+Pow 40
+Int 0
+hp 1500
+maxhp 1500
+sp 75
+maxsp 30
+exp 20000
+dam 20
+wc -10
+ac -8
+x 4
+y 2
+speed 0.200000
+level 13
+carrying 100
+stand_still 1
+arch ability_speedball
+end
+arch ability_cause_med_wound
+end
+arch ability_paralyze
+end
+arch ability_fear
+end
+arch ability_cause_ser_wound
+end
+arch ability_cause_ser_wound
+end
+arch key2
+name Priest of Gorokhs head
+slaying cp_head_g
+face head.111
+end
+end
+arch h_kobold
+name rabid kobold
+Wis 20
+hp 5000
+x 4
+y 4
+speed -1.200000
+end
+arch deathtree
+name wandering terror
+Str 80
+Con 56
+Wis 15
+Pow 50
+hp 8000
+maxhp 8000
+sp 150
+maxsp 150
+exp 150000
+dam 50
+wc -15
+ac -10
+armour 50
+x 5
+y 4
+speed -0.350000
+level 25
+immune 282658
+protected 1
+see_invisible 1
+can_cast_spell 1
+stand_still 0
+arch ability_fear
+end
+arch ability_paralyze
+end
+end
+arch gargolye
+name large gargoyle
+Str 80
+Con 56
+hp 8000
+maxhp 8000
+exp 150000
+dam 50
+wc -15
+ac -10
+x 5
+y 7
+speed -0.400000
+level 25
+immune 152254
+protected 1
+vulnerable 64
+end
+arch c_priest
+name High Priest of Chaos
+Str 30
+Dex 0
+Con 20
+Wis 0
+Pow 55
+Int 0
+hp 2500
+maxhp 2000
+sp 150
+maxsp 150
+exp 50000
+dam 25
+wc -15
+ac -13
+x 6
+level 25
+immune 262150
+stand_still 1
+arch ability_pool_chaos
+end
+arch ability_slow
+end
+arch ability_paralyze
+end
+arch ability_fear
+end
+arch ability_dragon
+end
+arch ability_hellfire
+end
+arch ability_hellfire
+end
+end
+arch c_priest
+Str 25
+Dex 0
+Con 15
+Wis 15
+Pow 30
+Int 0
+hp 1500
+maxhp 1500
+sp 100
+maxsp 100
+exp 35000
+dam 20
+wc -10
+ac -8
+x 6
+y 2
+speed -0.400000
+level 13
+immune 262150
+see_invisible 1
+stand_still 1
+arch ability_hellfire
+end
+arch ability_dragon
+end
+end
+arch lokanth
+name likanth
+Dex 0
+Con 20
+Wis 15
+Pow 80
+hp 5000
+maxhp 5000
+sp 300
+maxsp 300
+exp 250000
+dam 25
+wc -20
+ac -15
+x 6
+y 4
+speed -0.400000
+level 31
+immune 21600
+see_invisible 1
+arch ability_fear
+end
+arch ability_poison
+end
+arch ability_paralyze
+end
+arch ability_poison
+end
+end
+arch pixie
+name twisted sprite
+Pow 80
+hp 5500
+maxhp 4000
+sp 200
+maxsp 200
+exp 250000
+dam 25
+wc -20
+ac -15
+armour 30
+x 6
+y 7
+speed -0.600000
+level 31
+immune 20514
+attacktype 2
+arch ability_speedball
+end
+arch ability_missile
+end
+arch ability_mass_confusion
+end
+arch ability_lightning
+end
+arch ability_maj_heal
+end
+end
+arch crawling_chaos
+name creeping chaos
+Con 20
+Wis 15
+Pow 50
+hp 8000
+maxhp 8000
+sp 200
+maxsp 200
+exp 300000
+dam 40
+wc -35
+ac -30
+x 7
+y 4
+speed -0.400000
+level 40
+immune 283680
+attacktype 283648
+see_invisible 1
+can_cast_spell 1
+arch ability_fear
+end
+arch ability_fear
+end
+arch ability_pool_chaos
+end
+end
+arch dwarf_wiz
+name renegade wizard
+Con 30
+Wis 20
+Pow 13
+hp 8000
+maxhp 8000
+sp 300
+maxsp 300
+exp 300000
+dam 25
+wc -30
+ac -25
+x 7
+y 7
+speed -0.400000
+level 40
+immune 20512
+protected 30
+see_invisible 1
+unaggressive 0
+arch ability_slow
+end
+arch ability_paralyze
+end
+arch ability_fire
+end
+arch ability_cold
+end
+arch ability_lightning
+end
+end
+arch book
+name rainbow colored spellbook
+msg
+This spellbook ripples with the
+colors of the rainbow
+endmsg
+sp 85
+x 7
+y 11
+value 30000
+end
+arch turban
+name shimmering turban
+title of the heavens
+Str 2
+Dex 2
+Con 2
+Wis 2
+Pow 2
+Cha 2
+Int 2
+hp 1
+sp 1
+ac 2
+armour 5
+x 9
+y 12
+value 1000000
+last_heal 0
+glow_radius 2
+identified 1
+end
+arch key2
+name a sharpedged key
+slaying up1-2 key
+x 10
+y 1
+end
+arch evil_master4
+name Rancid
+Str 35
+Wis 35
+Pow 75
+hp 15000
+maxhp 15000
+sp 500
+maxsp 500
+exp 1000000
+dam 80
+ac -40
+armour 50
+x 10
+y 4
+speed -0.600000
+attack_movement 0
+level 99
+immune 393728
+protected 21679
+attacktype 262657
+vulnerable 0
+carrying 4250
+see_invisible 1
+unaggressive 0
+can_cast_spell 1
+arch ability_slow
+end
+arch ability_speedball
+end
+arch ability_paralyze
+end
+arch ability_lightning
+end
+arch ability_fire
+end
+arch ability_cold
+end
+arch ability_cold
+end
+arch wine
+name a bottle filled with blood
+material 0
+end
+arch gem
+title of exceptional beauty
+face pretty_crystal.111
+speed 0.000000
+nrof 50
+value 40000
+weight 65
+is_animated 0
+end
+end
+arch ologhi
+name Vultoor
+Str 80
+Dex 45
+Con 50
+Wis 30
+Pow 50
+Int 20
+hp 15000
+maxhp 15000
+sp 250
+maxsp 250
+exp 1000000
+dam 85
+wc -50
+ac -40
+x 10
+y 7
+speed -0.500000
+attack_movement 0
+level 99
+immune 151557
+protected 3504
+attacktype 257
+vulnerable 2
+carrying 3254
+see_invisible 1
+can_cast_spell 1
+arch ability_bullet
+end
+arch ability_fire
+end
+arch ability_fear
+end
+arch ability_heal
+end
+arch ability_paralyze
+end
+arch heart
+name a still beating heart
+material 0
+end
+arch gem
+title of exceptional beauty
+face pretty_crystal.111
+speed 0.000000
+nrof 50
+value 40000
+weight 65
+is_animated 0
+end
+end
+arch uk_sd
+name twilight vengeance
+slaying human
+dam 65
+x 10
+y 12
+protected 262144
+attacktype 256
+material 256
+magic 5
+last_sp 2
+identified 1
+end
+arch liteangel
+name Lorkas the fallen
+Str 99
+Dex 99
+Con 99
+Wis 99
+Pow 127
+Int 99
+hp 30000
+maxhp 32766
+sp 1000
+maxsp 1000
+exp 3000000
+dam 80
+wc -70
+ac -60
+x 12
+y 5
+speed 1.000000
+speed_left -0.860000
+attack_movement 8
+level 127
+immune 1529461
+protected 394
+attacktype 22817
+carrying 100
+reflect_spell 1
+arch key2
+name a white shimmering key
+slaying Lorkas treasure key
+end
+arch ability_speedball
+end
+arch ability_poison
+end
+arch ability_paralyze
+end
+arch ability_mass_confusion
+name comet spell
+sp 90
+attacktype 0
+end
+arch ability_lightning
+end
+arch ability_heal
+end
+arch ability_fear
+end
+arch ability_dragon
+end
+arch ability_cold
+end
+end
+arch byakie
+name cave byakie
+Str 90
+Dex 65
+Con 90
+Wis 20
+Pow 75
+Int 30
+hp 10000
+maxhp 8000
+sp 200
+maxsp 200
+exp 700000
+dam 60
+wc -50
+ac -40
+x 8
+y 4
+speed -0.700000
+level 50
+immune 283683
+carrying 25000
+arch gem
+nrof 500
+end
+arch ability_cold
+end
+arch ability_dragon
+end
+arch ability_slow
+end
+end
+arch djinn
+Str 75
+Dex 60
+Con 90
+Wis 30
+Pow 127
+Int 75
+hp 10000
+maxhp 10000
+sp 500
+maxsp 500
+exp 750000
+dam 40
+wc -45
+ac -60
+x 8
+y 6
+speed 0.900000
+level 75
+immune 153215
+carrying 650
+arch gem
+title of exceptional beauty
+face pretty_crystal.111
+speed 0.000000
+nrof 10
+value 40000
+weight 65
+is_animated 0
+end
+arch ability_cold
+end
+arch ability_fire
+end
+arch ability_fear
+end
+arch ability_heal
+end
+arch ability_lightning
+end
+arch ability_paralyze
+end
+arch ability_poison
+end
+arch ability_mass_confusion
+end
+arch ability_paralyze
+end
+arch ability_speedball
+end
+end

@@ -2,7 +2,7 @@ Object small_troll
 randomitems troll
 race troll
 name small troll
-face smalltroll.111
+face smalltroll.clsn.111
 anim
 smalltroll.base.111
 smalltroll.base.112

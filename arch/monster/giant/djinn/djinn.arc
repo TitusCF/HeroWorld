@@ -70,7 +70,7 @@ end
 More
 Object djinn_2
 name Major djinn
-face djinn.231
+face djinn.base.231
 anim
 facings 2
 djinn.base.231

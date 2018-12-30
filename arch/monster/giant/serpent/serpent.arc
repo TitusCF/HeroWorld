@@ -2,7 +2,7 @@ Object serpent
 name serpent
 race reptile
 randomitems serpent
-face serpent.131
+face serpent.base.131
 monster 1
 Wis 15
 anim
@@ -34,13 +34,13 @@ end
 More
 Object serpent_2
 name serpent
-face serpent.231
+face serpent.base.231
 anim
 facings 2
-serpent.231
-serpent.232
-serpent.271
-serpent.272
+serpent.base.231
+serpent.base.232
+serpent.base.271
+serpent.base.272
 mina
 monster 1
 alive 1

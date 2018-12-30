@@ -7,7 +7,7 @@ msg
   Putting this shell to your ear, you hear 
   the crashing sound of ocean waves.
 endmsg
-type 35
+type 3
 level 30
 value 590
 weight 1000

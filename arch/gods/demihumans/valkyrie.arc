@@ -24,6 +24,7 @@ resist_magic 100
 wc 6
 dam 20
 hp 350
+max hp 350
 last_sp -5
 level 15
 speed 0.20

@@ -8,10 +8,10 @@ sleep 1
 Wis 25
 anim
 facings 2
-djinn.131
-djinn.132
-djinn.171
-djinn.172
+djinn.base.131
+djinn.base.132
+djinn.base.171
+djinn.base.172
 mina
 level 40
 Con 10
@@ -73,10 +73,10 @@ name Major djinn
 face djinn.231
 anim
 facings 2
-djinn.231
-djinn.232
-djinn.271
-djinn.272
+djinn.base.231
+djinn.base.232
+djinn.base.271
+djinn.base.272
 mina
 monster 1
 alive 1

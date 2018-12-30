@@ -7,7 +7,7 @@ msg
   Putting this shell to your ear, you hear a
   strange and haunting melody.
 endmsg
-type 35
+type 3
 level 40
 value 590
 weight 1500

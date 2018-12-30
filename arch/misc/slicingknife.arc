@@ -1,6 +1,6 @@
 Object b_slicingknife
 nrof 1
-type 163
+type 15
 face b_slicingknife.111
 material 2
 materialname bronze
@@ -16,7 +16,7 @@ end
 
 Object slicingknife
 nrof 1
-type 163
+type 15
 face slicingknife.111
 material 2
 weight 1000

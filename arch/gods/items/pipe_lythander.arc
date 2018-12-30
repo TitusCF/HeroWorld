@@ -8,7 +8,7 @@ msg
     seen.  Imagine the smoke rings you 
     could blow with it...
 endmsg
-type 35
+type 3
 luck 1
 material 256
 hp 60

@@ -4,10 +4,10 @@ race angel
 name angel of darkness
 face darkangel.111
 anim
-darkangel.111
-darkangel.113
-darkangel.112
-darkangel.113
+darkangel.base.111
+darkangel.base.113
+darkangel.base.112
+darkangel.base.113
 mina
 monster 1
 sleep 1

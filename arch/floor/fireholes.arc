@@ -1,6 +1,6 @@
 Object fireholes_moving
 name holes
-type 108
+type 0
 face fireholes.111
 color_bg white
 no_pick 1

@@ -7,10 +7,10 @@ monster 1
 Wis 15
 anim
 facings 2
-serpent.131
-serpent.132
-serpent.171
-serpent.172
+serpent.base.131
+serpent.base.132
+serpent.base.171
+serpent.base.172
 mina
 level 7
 Con 3.2

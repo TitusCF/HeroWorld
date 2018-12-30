@@ -1,6 +1,6 @@
 Object vial_poison
 nrof 1
-type 163
+type 7
 face vial_yellow.111
 material 4
 materialname glass

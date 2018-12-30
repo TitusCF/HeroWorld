@@ -5,7 +5,6 @@ randomitems gnome
 alive 1
 monster 1
 no_pick 1
-type 120
 face gardengnome.111
 anim
 gardengnome.111

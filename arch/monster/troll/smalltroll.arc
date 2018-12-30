@@ -4,8 +4,8 @@ race troll
 name small troll
 face smalltroll.111
 anim
-smalltroll.111
-smalltroll.112
+smalltroll.base.111
+smalltroll.base.112
 mina
 color_fg brown
 monster 1

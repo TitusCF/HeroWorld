@@ -18,7 +18,7 @@ violin.11C
 violin.11D
 mina
 speed -0.3
-type 35
+type 3
 level 1
 value 20000
 weight 1800

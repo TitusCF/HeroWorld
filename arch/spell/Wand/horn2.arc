@@ -5,7 +5,7 @@ face horn2.111
 color_fg orange
 color_bg khaki
 speed 0.1
-type 35
+type 3
 level 1
 value 5900
 weight 4000

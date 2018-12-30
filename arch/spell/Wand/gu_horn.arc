@@ -16,7 +16,7 @@ gu_horn.115
 mina
 color_fg orange
 speed 0.3
-type 35
+type 3
 material 2
 weight 5000
 msg

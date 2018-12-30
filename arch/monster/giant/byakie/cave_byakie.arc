@@ -7,7 +7,7 @@ Wis 20
 Pow 75
 Int 30
 hp 10000
-maxhp 8000
+maxhp 11000
 sp 200
 maxsp 200
 exp 500000
@@ -20,7 +20,7 @@ resist_confusion 100
 resist_paralyze 100
 carrying 25000
 randomitems cave_byakie
-face byakie.x11
+face byakie.base.x11
 animation byakie
 race chaos
 monster 1
@@ -48,7 +48,7 @@ end
 More
 Object cave_byakie_2
 name cave byakie
-face byakie.x11
+face byakie.base.x11
 animation byakie
 monster 1
 move_type walk
@@ -60,7 +60,7 @@ end
 More
 Object cave_byakie_3
 name cave byakie
-face byakie.x11
+face byakie.base.x11
 animation byakie
 monster 1
 move_type walk
@@ -72,7 +72,7 @@ end
 More
 Object cave_byakie_4
 name cave byakie
-face byakie.x11
+face byakie.base.x11
 animation byakie
 monster 1
 move_type walk

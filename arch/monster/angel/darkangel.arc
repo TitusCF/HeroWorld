@@ -2,7 +2,7 @@ Object darkangel
 randomitems darkangel
 race angel
 name angel of darkness
-face darkangel.111
+face darkangel.base.111
 anim
 darkangel.base.111
 darkangel.base.113

@@ -1,0 +1,85 @@
+/**
+@fn obj::other_arch
+@section Use
+<table>
+	<tr>
+		<th>Type(s)</th>
+		<th>Description</th>
+	</tr>	<tr>
+		<td>
+@ref page_type_122
+		</td><td>            This is used for a certain kind of... "animation" when opening the
+            container. Stick to the default arches here and you won't get into
+            trouble.</td>
+	</tr>
+	<tr>
+		<td>
+@ref page_type_103
+		</td><td>            &lt;receive arch&gt; is the name of the archetype to convert into.
+            This field is ignored if the converter has items in inventory. In
+            this case one of the inventory items is duplicated. The duplicated
+            item is randomly chosen from all items present.</td>
+	</tr>
+	<tr>
+		<td>
+@ref page_type_42
+		</td><td>            This string defines the object that will be created. You can choose
+            any of the existing arches. This field is ignored if the creator has
+            items in inventory. In this case one of the inventory items is
+            duplicated. The duplicated item is randomly chosen from all items
+            present.</td>
+	</tr>
+	<tr>
+		<td>
+@ref page_type_158
+		</td><td>                If set, the specified arch is created and dropped every time the
+                symptoms strike.
+
+                This can be various things: farts, body pieces, eggs ... Even
+                monsters can be created that way. You could also make a disease
+                where some exotic stuff like money/gems is created.</td>
+	</tr>
+	<tr>
+		<td>
+@ref page_type_23
+		</td><td>            This string defines the object that will be created when the door
+            was defeated.</td>
+	</tr>
+	<tr>
+		<td>
+@ref page_type_83
+		</td><td>            Only objects of matching archetype, lying on top of the duplicator
+            will be duplicated, multiplied or removed. All other objects will be
+            ignored.</td>
+	</tr>
+	<tr>
+		<td>
+@ref page_type_56
+		</td><td>            The altar belongs to the god of the given name. Possible options for
+            &lt;god name&gt; are: Devourers, Lythander, Mostrai, Gaea, Ruggilli,
+            Gnarg, Gorokh, Valriel and Sorig.
+
+            If you want to have an unconsecrated altar, set &lt;god name&gt; 0
+            and eventually &lt;reconsecrate level&gt; 0.</td>
+	</tr>
+	<tr>
+		<td>
+@ref page_type_213, @ref page_type_28
+		</td><td>            This only takes effect if &lt;multiply&gt; is enabled. The monster
+            will create a &lt;breed monster&gt; every once in a while. &lt;breed
+            monster&gt; can be set to any valid arch-name of a monster.</td>
+	</tr>
+	<tr>
+		<td>
+@ref page_type_154
+		</td><td>                This string defines the spell in the rune, if any. &lt;spell
+                arch&gt; is optional, but if present, overrides the &lt;spell&gt;
+                setting. You can choose any of the existing arches.</td>
+	</tr>
+	<tr>
+		<td>
+@ref page_type_101
+		</td><td>            For spells creating or launching things, the archetype to use.</td>
+	</tr>
+
+*/

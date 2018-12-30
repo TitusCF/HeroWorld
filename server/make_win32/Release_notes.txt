@@ -1,0 +1,77 @@
+Release notes for Crossfire Server (Windows), September, 3rd, 2006
+------------------------------------------------------------------
+
+This is version 1.9.1 (snapshot) of the Crossfire server.
+
+--------------------------------------------------------------
+For complete changes, see the Changelog file included with the software. Major
+changes since version 1.9.1:
+* add setting "create_home_portals" which allows server admins to allow town
+portals to be created in apartments.
+* fix player count reporting to the metaserver. It now excludes connections with
+not-yet-logged-in players and AFK/WIZ/BOT players.
+* Python script caching.
+* fix DM command addexp not working on skills.
+* consecrate spell now changes altar face.
+* add "passwd" command to change player password.
+* added a plugin function to get time. Add Python wrapper.
+* scatter objects dropped from a multi-tile object being freed.
+* make counterspell not effect permenant spell effects.
+* swamp will now kill players with woodsman, but slower than players without that skill.
+* weather system is hopefully fixed.
+* misc bug fixes.
+--------------------------------------------------------------
+
+Once you have installed the server, you MUST download a map set.
+Note: this server has been tested only with 'bigworld maps'.
+
+You have three options for maps:
+
+1) Grab one of the installers for either 'smallworld maps' or 'bigworld maps'.
+
+Launch it, point to where you installed Crossfire Server, install.
+
+
+2) Grab map set from official SourceForge page.
+
+The following sets are available:
+* big world maps, at http://sourceforge.net/project/showfiles.php?group_id=13833&package_id=15918
+
+Note: you need Winzip, ZipGenius, UltimateZip or equivalent to unzip the files.
+Note: Make SURE that this tool will NOT convert Unix newline to Windows, else it will NOT work.
+
+Unzip the maps in the share/maps of where you installed Crossfire Server
+(typically C:\Program Files\Crossfire Server)
+
+
+3) Get maps from CVS
+
+This ensures you always have the latest maps.
+
+CVS instructions for Crossfire are located at
+http://sourceforge.net/cvs/?group_id=13833
+
+Fire you favorite CVS tool, and get either 'maps' or 'maps-bigworld'
+module.
+Make SURE, ABSOLUTELY SURE, that your tool will NOT convert Unix newline
+to Windows newline. It will NOT work if conversion occurs.
+
+Move'em to share/maps of where you installed Crossfire Server.
+(if you picked 'maps-bigworld', rename the directory to 'maps')
+
+
+WARNING: server has only been tested with 'bigworld' maps. Small world
+maps are not supported anymore.
+
+Fixed Windows issues since previous release
+-------------------------------------------
+* (none)
+
+Troubleshooting
+---------------
+If something goes wrong, report your troubles to:
+* Crossfire's messageboard: http://www.metalforge.net/cfmb/index.php
+* Crossfire's mailing list: see http://crossfire.real-time.com for instructions on how to join it
+* #crossfire on irc.freenode.org
+
+Also check Crossfire's bugs page at http://sourceforge.net/tracker/?group_id=13833&atid=113833

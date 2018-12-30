@@ -1,0 +1,215 @@
+<html>
+<head>
+<title>Crossfire Playerbook - Chapter 5</title>
+</head>
+<body>
+
+<h1>Skills System</h1>
+
+<h2><a name="5.1.0">Description</h2>
+
+Under the skills system the flow of play changes dramatically.  Instead of
+gaining experience for basically just killing monsters (and disarming traps)
+players will now gain a variety of experience through the use of skills.
+Some skills replicate old functions in the game (e.g. melee weapons skill,
+missile weapon skill) while others add new functionality (e.g. stealing,
+hiding, writing, etc).  A complete list of the available skills can be found
+in table <a href="#table_skill_stats">skill statistics</a>. Appendix <a
+href="appB.html">B (skills)</a> contains descriptions for many of the
+skills.  <p>
+
+<em>Note:</em> The skills system is enabled as the default option
+as of version 0.92.0<p>
+<em>Note2:</em> The new skills/experience system is compatible
+with character files from at least version 0.91.1 onward.
+
+<a name="table_skill_stats">
+<center>
+<table border=1 cellpadding=5">
+<tr><th>Skill</th><th>Experience Category</th><th colspan=3>Associated Stats</th></tr>
+<tr><th></th><th></th><th>Stat 1</th><th>Stat 2</th><th>Stat 3</th></tr>
+<!--#include file="skill_stat.html"-->
+</table>
+Skills</center>
+<p>
+<h2><a name="5.2.0">About experience and skills</h2>
+<h3><a name="5.2.1">Associated and miscellaneous skills</h3>
+
+In <em>Crossfire</em> two types of skills exist; The first kind, ``associated''
+skills, are those skills which are <em>associated with a category of
+experience</em>.  The other kind of skill, ``miscellaneous'' skills,
+are <em>not</em> related to any experience category.
+<p>
+The main difference between these two kinds of skills is in the
+result of their use.
+When associated skills are used <em>successfully</em> experience is
+accrued in the experience category <em>associated with that skill</em>.
+In contrast, the use of miscellaneous skills <em>never</em> gains
+the player any experience regardless of the success in using it.
+<p>
+<em>Both</em> miscellaneous and associated skills can <em>fail</em>. This means
+that the attempt to use the skill was unsuccessful. <em>Both</em>
+miscellaneous and associated skills <em>can</em> have certain
+primary stats <em>associated</em> with them. These associated stats can help
+to determine if the use of a skill is successful and to what
+<em>degree</em> it is successful.
+<p>
+All gained experience is modified by the associated
+stats for that skill (table <a href="#table_skill_stats">skill statistics</a>) and then the
+appropriate experience category automatically updated as needed.
+<p>
+<h3><a name="5.2.2">Restrictions on skills use and gaining experience</h3>
+
+Neither a character's stats nor the character class restricts the
+player from gaining experience in any of the experience
+categories. Also, there are no inherent
+restrictions on character skill use-any player may
+use any <em>acquired</em> skill.
+<p>
+<center>
+<table border=1 cellpadding=5><col align=center>
+<a name="table_exp_stat_mod">
+<tr><th>Average of associated stats</th>
+<th>Experience gained multiplier</th>
+<th>Average of associated stats</th>
+<th>Experience gained multiplier</th></tr>
+<!--#include file="statskmod.html"-->
+</table>
+How stats associated with a skill modify gained experience<p>
+</center>
+<p>
+<h3><a name="5.2.3">Algorithm for Experience Gain under the skills system</h3>
+<p>
+Here we take the view that a player must 'overcome an opponent'
+in order to gain experience. Examples include foes killed in combat,
+finding/disarming a trap, stealing from some being, identifying
+an object, etc.
+<p>
+Gained experience is based primarily on the difference in levels
+between 'opponents', experience point value of a ``vanquished foe'',
+the values of the associated stats of the skill being used and
+two factors that are set internally <em>Note:</em> If you want to
+know more about this, check out the skills_developers.doc.)
+<p>
+Below the algorithm for experience gain is given where player ``pl''
+that has ``vanquished'' opponent ``op'' using skill ``sk'':<p>
+<quote>
+EXP GAIN = (EXP(op) + EXP(sk)) * lvl_mult * stat_mult<p>
+</quote>
+where EXP(sk) is a constant award based on the skill used,
+EXP(op) is the base experience award for `op' which depends
+on what op is (see below),
+stat_mult is taken from table <a href="#table_exp_stat_mod">experience modification</a>,
+and lvl_mult is:
+<p>
+For level(pl) &lt level(op):: <p>
+<samp>
+lvl_mult = FACTOR(sk) * (level(op) - level(pl))<p>
+</samp>
+For level(pl) = level(op):: <p>
+<samp>
+lvl_mult = FACTOR(sk)<p>
+</samp>
+For level(pl) &gt level(op):: <p>
+<samp>
+lvl_mult = (level(op)/level(pl)); <p>
+</samp>
+where level(op) is the level of `op', level(pl) is the level
+of the player, and FACTOR(sk) is an internal factor based on
+the skill used by pl.
+<p>
+There are three different cases for how EXP(op) can be computed:
+<ol>
+<li> <strong>op is a living creature</strong>: EXP(op) is just the base
+experience award given in the <A href="../spoiler-html/spoiler.html">spoiler</a> .
+
+<li><strong>op is a trap</strong>: EXP(op) = 1/(fraction of the time which the
+trap is visible). Thus, traps which are highly <em>visible</em> get <em>lower</em>
+values.
+
+<li><strong>op is not a trap but is non-living</strong>: EXP(op) = internal
+experience award of the item. Also, the lvl_mult is multiplied by
+any <samp>magic</samp> enchantment on the item.
+</ol>
+
+<p>
+<h2><a name="5.3.0">How skills are used</h2>
+<centeR>
+<a name="table_skill_cmd">
+<table cellpadding=5 border=1>
+<tr><td><samp>skills</samp></td><td> This command lists all the player's
+ 		 current known skills, their level
+ 		 of use and the associated experience
+ 		 category of each skill.   </td></tr>
+
+<tr><td> <samp>ready_skill &ltskill&gt</samp></td><td> This command changes
+				 the player's current readied skill to
+				 <samp>&ltskill&gt</samp>.  </td></tr>
+
+<tr><Td> <samp>use_skill &ltskill&gt &ltstring&gt</samp></td><td> This
+				 command changes the player's current
+				 readied skill <em>and</em> then executes it
+				 in the facing direction of the player.
+				 Similar in action to the <samp>invoke</samp>
+				 command.  </td></tr>
+</table>
+Skills commands<p>
+</center>
+
+Three player commands are related to skills use: <samp>ready_skill</samp>,
+<samp>use_skill</samp>, and <Samp>skills</samp> (see table <a
+href="#table_skill_cmd">skill commands</a>).  Generally, a player will use a
+skill by first readying the right one, with the <samp>ready_skill</samp>
+command and then making a ranged ``attack'' to activate the skill; using
+most skills is just like firing a wand or a bow.  In a few cases however, a
+skill is be used just by having it <em>readied</em>. For example, the
+<samp>mountaineer</samp> skill allows favorable movement though hilly
+terrain while it is readied.<p>
+
+To change to a new skill, a player can use either the <samp>use_skill</samp>
+or <samp>ready_skill</samp> commands, but note that the use of several
+common items can automatically change the player's current skill too.
+Examples of this include readying a bow (which will cause the code to make
+the player's current skill <samp>missile_weapons</samp>) or readying a melee
+weapon (current skill auto-matically becomes <samp>melee weapons</samp>).
+Also, some player actions can cause a change in the current skill.  Running
+into a monster while you have a readied weapon in your inventory causes the
+code to automatically make our current skill <samp>melee weapons</samp>.  As
+another example of this-casting a spell will cause the code to switch the
+current skill to <samp>wizardry</samp> or <samp>praying</samp> (as
+appropriate to the spell type).<p>
+
+It is not possible to use more than one skill at a time.<p>
+
+<h2><a name="5.4.0">Acquiring skills</h2>
+
+Skills may be gained in two ways. In the first, new skills may
+<em>learned</em>.  This is done by reading a ``skill scroll'' and the
+process is very similar to learning a spell. Just as in attempts to learn
+incantations, success in learning skills is dependent on a random test based
+on the learner's INT.  Using your INT stat, look in the learn% column in
+table <a href="chap2.html#table_pri_eff">primary stat effects</a> to find
+your % chance of learning a skill.  Once you hit 100%, you will always be
+successfull in learning new skills.  <p>
+
+The acquisition of a <em>skill tool</em> will also allow the player to use
+a new skill. An example of a skill tool is ``lockpicks''
+<!--#include file="lockpicks.html"-->
+(which allow the
+player to pick door locks). The player merely applies the skill
+tool in order to gain use of the new skill. If the tool is unapplied,
+the player loses the use of the skill associated with the tool.
+<p>
+
+After a new skill is gained (either learned or if player has an applied
+skill tool) it will appear on the player's skill roster (use the 'skills'
+command to view its status). If the new skill is an associated skill, then
+it will automatically be gained at the player's current level in the
+appropriate experience category. For example, Stilco the Wraith, who is 5th
+level in <samp>agility</samp>, buys a set of lockpicks and applies them.  He
+may now use the skill lockpicking at 5th level of ability since that is an
+<samp>agility</samp> associated skill.
+<p>
+<a href="handbook.html"><img src="fig/book.gif">Back to table of contents</a><br>
+<a href="chap4.html"><img src="fig/stairup.gif">Go to chapter 4</a><br>
+<a href="chap6.html"><img src="fig/stairdown.gif">Go to chapter 6</a><br>

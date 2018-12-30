@@ -1,0 +1,70 @@
+/**
+@fn obj::last_sp
+@section Use
+<table>
+	<tr>
+		<th>Type(s)</th>
+		<th>Description</th>
+	</tr>	<tr>
+		<td>
+@ref page_type_31
+		</td><td>            If this attribute is enabled, the altar_trigger won't push the
+            connected value by altar reset. Only ONCE by dropping the sacrifice.
+            This is typically used when the altar is connected to a creator,
+            e.g. for selling tickets.
+
+            If this attribute is disabled (default), the altar_trigger will push
+            the connected value TWICE per sacrifice: First by dropping
+            sacrifice, second by reset. This mode is typically used for altars
+            being connected to gates, resulting in the gate being opened and
+            closed again.</td>
+	</tr>
+	<tr>
+		<td>
+@ref page_type_16
+		</td><td>            Slowdown penalty reduces the player's walking speed when wearing the
+            armor. Bigger values are worse - zero is best.</td>
+	</tr>
+	<tr>
+		<td>
+@ref page_type_158
+		</td><td>                If set, the disease imposes a &lt;slowdown penalty&gt; while
+                being infected. The player's speed is reduced by &lt;slowdown
+                penalty&gt; % of normal value.</td>
+	</tr>
+	<tr>
+		<td>
+@ref page_type_64
+		</td><td>            Enabled means having that object is a match. Disabled means not
+            having that object is a match.</td>
+	</tr>
+	<tr>
+		<td>
+@ref page_type_65
+		</td><td>            &lt;mood&gt; is used to determine what will happen to the
+            monster when affected by the mood floor:
+            <ul>
+            <li>&lt;mood&gt; 'furious': Makes all monsters aggressive
+
+            <li>&lt;mood&gt; 'angry': As above but pets are unaffected
+
+            <li>&lt;mood&gt; 'calm': Makes all monsters unaggressive
+
+            <li>&lt;mood&gt; 'sleep': Puts all monsters to sleep
+
+            <li>&lt;mood&gt; 'charm': Turns monster into a pet of person
+                who triggers the square. <br> This setting is not
+                enabled for continuous operation, you need to
+                insert a &lt;connection&gt; value!
+            </ul></td>
+	</tr>
+	<tr>
+		<td>
+@ref page_type_15
+		</td><td>            The weapon speed determines how often the wielder can swing the
+            weapon during a certain period of time. The lower the faster, &lt;weapon
+            speed&gt; 1 is best (that is lightning- fast). A typical average
+            value is 8. Speed and damage should be kept in reasonable relation.</td>
+	</tr>
+
+*/

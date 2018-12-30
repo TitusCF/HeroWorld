@@ -1,0 +1,28 @@
+
+BEGIN {
+        # Read the array data from living.c
+        while ((getline buff < living_c) == 1) {
+                if (buff ~ /spellpathnames\[/) {
+			get_values(buff);
+			fth = (tind-1)/4;
+			for(i=1;i<tind;i+=5)
+		           printf("<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>\n",array[i],
+				array[i+1],array[i+2],array[i+3],array[i+4]);
+			break;
+                }
+        }
+        close(living_c);
+}
+
+function get_values (buff) {
+        tind = 1;
+        while (1) {
+           getline buff < living_c;
+           if (buff ~ /};/)
+              break;
+           gsub("[ \t]*\"", "", buff);
+           nr = split(buff, val, ",");
+           for (i = 1; i<=nr ; i++)
+               if(val[i]!="") array[tind++]=val[i];
+        }
+}

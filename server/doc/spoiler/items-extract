@@ -1,0 +1,175 @@
+# items-extract - parse the archetypes-file and output the
+# artifacts in a structured format.
+
+# Variables passed when invoked:
+#   living_c - filename where the array attacks is defined.
+
+BEGIN {
+	# These stats will be added to the "magik" string according
+	# to the pattern. "%s" should be "%+d", but that isn't
+	# portable.
+	magic["Str"] = "strength %s";
+	magic["Dex"] = "dexterity %s";
+	magic["Con"] = "constitution %s";
+	magic["Int"] = "intelligence %s";
+	magic["Wis"] = "wisdom %s";
+	magic["Cha"] = "charisma %s";
+      magic["Pow"] = "power %s";
+
+	magic["luck"] = "luck %s";
+	magic["exp"] = "speed %s";
+	magic["sp"] = "spell-point regeneration %s";
+	magic["hp"] = "hit-point regeneration %s";
+#	magic["dam"] = "damage %s";
+
+	magic["reflect_spell"] = "reflect spells";
+	magic["xrays"] = "X-ray vision";
+	magic["stealth"] = "stealth";
+	magic["flying"] = "flying";
+
+	# Read the attack-types (and immune/protection)
+	while ((getline buff < living_c) == 1) {
+		if (buff ~ /attacks\[/) {
+			att = 0;
+			while (1) {
+				getline buff < living_c;
+				if (buff ~ "^}")
+					break;
+				gsub("[ \t]*\"", "", buff);
+				nr = split(buff, arr, ",");
+				for (i = 1; i <= nr && arr[i]; i++)
+					attack[++att] = arr[i];
+			}
+			break;
+		}
+	}
+	close(living_c);
+
+	# These types are always artifacts:
+	artifact[99] = artifact[14] = artifact[16] = artifact[33] = 1;
+	artifact[34] = artifact[100] = artifact[113] = artifact[915] = 1;
+
+	weapons[15] = weapons[915] = 1;
+	armours[16] = armours[33] = armours[34] = armours[99] = 1;
+
+	worthless["chair"] = worthless["table"] = worthless["bed"] = 1;
+}
+
+/^Object/ {
+	slay = magik = "";
+	name = obj = $2;
+	x = y = 0;
+	xmin = xmax = ymin = ymax = 0;
+	More = 0;
+	dam = type = magical = ac = armour = weight = last_sp = 0;
+	att = prot = immune = 0;
+}
+
+$1 in magic {
+	if ($1 == "sp" && type == 14)
+		ac = $2;
+	else
+		add_magik(magic[$1], $2);
+}
+
+/^type/		{ type = $2 }
+/^last_sp/	{ last_sp = $2 }
+/^dam/		{ dam = $2 }
+/^ac/		{ ac = $2 }
+/^armour/	{ armour = $2 }
+/^weight/	{ weight = $2 }
+/^attacktype/	{ att = $2 }
+/^protected/	{ prot = $2 }
+/^immune/	{ immune = $2 }
+/^slaying/	{ slay = $2; }
+/^magic/	{ magical = $2 }
+/^name /		{ name = substr($0, 6) }
+
+/^end/ {
+	# Type 15 are artifacts if they are magical
+	if (type == 15 && magical)
+	    type += 900;
+	# It can also be chairs and beds, but they are in the worthless
+	# array...
+	if (artifact[type] || (type == 15 && !worthless[name])) {
+		if (dam && ! (type in weapons))
+			add_magik("damage %s", dam);
+		if (ac && ! (type in armours))
+			add_magik("ac %s", ac);
+		if (armour && ! (type in armours))
+			add_magik("armour %s", armour);
+
+		magik = magik attacktype(att, "Attacks:");
+		magik = magik attacktype(prot, "Protected:");
+		magik = magik attacktype(immune, "Immune:");
+		if (slay)
+			magik = magik "\\newline " capitalize(slay=="wall" ? "excavation" : slay "-slaying");
+
+		if (magical)
+			name = name " +" magical;
+
+		sub("^\\\\newline ", "", magik);
+		magik = capitalize(magik);
+		name = capitalize(name);
+		sub("_", " ", name);
+
+		if (type in armours)
+			speed = last_sp/10;
+		else if (type in weapons) {
+			# Horrible, I know. Blame vidarl@ifi.uio.no -- Fy Vidar!
+			# I assume the player has max Str and Dex
+			# and speed of 6 here.
+
+			# weapon_speed = (last_sp*2 - magical) / 2;
+			# if (weapon_speed < 0) weapon_speed = 0;
+
+			# M = (300-121)/121.0;
+			# M2 = 300/100.0;
+			# W = weight/20000.0;
+			# s = 2 - weapon_speed/10.0;
+
+			# D = (30-14)/14.0;
+			# K = 1 + M/3.0 - W/(3*M2) + 6/5.0 + D/2.0;
+			# K *= (4 + 99)/(6 + 99) * 1.2;
+			# if ( K <= 0) K = 0.01
+
+			# W = weight/20000; s = 2 - ((last_sp*2 - magical) / 2)/10;
+			# K = 1.177*(4 - W/30 + 6/5)
+			# if (K <= 0) K = 0.01;
+
+			# speed = 6/(K*s);
+
+			speed = last_sp;
+		} else
+			speed = 0;
+
+		printf("%d &%s &%s &%s &%d &%.1f &%d &%d &%d &~~%s~~ &%.2f\n",
+			type, obj, name, magik, dam, (weight/1000), ac,
+			armour, magical, obj, speed);
+	}
+}
+
+END {
+	close("items");
+}
+
+
+# Given a bitmask, give a string enumerating the meaning of the bits.
+function attacktype(at, type,   i, str) {
+	for (i = 1; i in attack; i++) {
+		if (at % 2)
+			str = (str ? str ", " : "") attack[i];
+		at = int(at/2);
+	}
+	return str ? "\\newline " type " " str : "";
+}
+
+function add_magik(str, val) {
+      if (str ~ /%[0-9-]*s/)
+              str = sprintf(str, val < 0 ? val : "+" val);
+      magik = magik ? magik ", " str : str;
+}
+
+function capitalize(str) {
+	return toupper(substr(str, 1, 1)) substr(str, 2);
+}

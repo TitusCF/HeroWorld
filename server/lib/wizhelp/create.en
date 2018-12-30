@@ -1,0 +1,14 @@
+Syntax: create <number> <bonus> <archetype> <variable1> <value1> <variable2> <value2> ...
+
+Creating items is rather dangerous and tends to crash the server when creating some items.
+
+The number and bonus attributes may be left off, or the bonus itself may be left off any time. If a bonus is desired, number must be specified as well. Archetype must be specified in all cases. Variable and values may be left off at any time, but specifying a variable requires a value also be specified.
+
+Multipart values such as for an item name must be quoted.
+
+Example:
+    create 5 +1 sword name "Spiffy Sword" face chicken.171
+
+This would create 5 +1 longswords named 'Spiffy Sword' that look like chickens.
+
+See also: patch, dump

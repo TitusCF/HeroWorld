@@ -1,0 +1,300 @@
+TECHNICAL INFORMATION ABOUT MAPS:
+
+This documented is intended to convey technical information on how
+crossfire deals with the map objects and objects placed on the maps.  For
+the most part, I only intend document how the new code works, and not
+go too much into history on the older methods.  A lot of the map
+code was re-written in early July 2001, which changed how many things are
+dealt with.
+
+Mark Wedel
+July 7, 2001
+------------------------------------------------------------------------------
+Contents:
+
+1. THE MAP HEADER
+2. THE MAP OBJECTS
+3. Map Tiling
+4. STACKING OF OBJECTS ON THE MAP
+
+------------------------------------------------------------------------------
+1. THE MAP HEADER:
+
+The map header is the section at the start of the map file that
+describes the maps characteristics.  The values are described below.
+
+The map variables now make some sense, and are only stored in the
+map structure itself.  I still include the old value (the 'was') so
+if you are looking at old maps, you know what they mean.  Generally
+speaking, the values in the map files themselves match the same element
+name in the map structure.
+
+'width','height', was 'x','y': Size of the map.
+
+'enter_x', 'enter_y', was ('hp','sp') = (x,y) of the destination on the
+	new map.  These are only used if the exit does not have a specific
+	location set.
+
+'reset_timeout', was 'weight': stores the number of seconds that need
+   to elapse before this map will be reset.  Ie, if 1800, it means this
+   map expires after 30 minutes.  This value is not modified once loaded -
+   instead reset_time is used to track this.  The value 0 means to use
+   a default timeout (MAP_DEFAULTRESET).
+
+'swap_time', was 'value': This controls how many ticks must elapse
+    after the map has not been used before it gets swapped out.
+    Swapping out is different than reset, as a swapped out map will
+    get loaded back into memory if someone re-visits it before it is due to
+    reset.
+
+'difficulty', was 'level' stores the map difficulty.  If not set to
+    anything, the server code will try to come up with some difficulty value.
+
+'fixed_resettime', was 'stand_still': If nonzero, the map reset time will not
+	be updated when someone enters/exits the map.  Thus, once the map has
+	been loaded, it will reset in 'reset time' no matter what access
+	happen.  This is useful for shops and towns, which are constantly
+	accessed, but should be reset periodically.
+
+'darkness', was 'invisible'.  Light/darkness of map (overall).  If 0,
+	all of map is fully bright.
+
+'unique' - if set, this entire map is unique.  Exactly unique to what
+	will depend on how it was created (it could be a per player
+	unique map, or maybe a common map that is just permanent for
+	all the players.
+
+'nosmooth' - if set, no faces in this map will be smoothed.
+
+'outdoor' - if set, this is a hint that this is an outdoor map.
+	If this is not set, weather and dawn/dusk will not occur on this
+	map.  It is highly advised that this be set appropriately.
+
+tile_path_<x> - Used with map tiling.  <x> is a number, 1 is north,
+	2 is east, 3 south, 4 west.  This determines what map is tiled
+	in that direction.  See the section below for more information about
+	map tiling.
+
+'shopitems', 'shopgreed', 'shoprace', 'shopmin', 'shopmax' - the type of thing
+	the shop trades in, see doc/Developers/shops for more details
+
+'temp'  - The base temperature in Farenheit for this map.  The temperature
+	is modified by the season and weather conditions.  In a map without
+	weather effects, this temperature will be used as the static
+	temperature for the entire map.  This can be useful to make an ice
+	cave actually cold.
+
+'pressure' - This should really never be set on a map.  The pressure in
+	millibars.
+
+'humid' - Again, should rarely be set on a map.  The humidity in percent.
+
+'windspeed' - Rarely set.  The windspeed in kph/h.
+
+'winddir' - Rarely set.  Direction of wind, 1-8, 1 is north, clockwise.
+
+'sky' - The sky conditions for this map.  See weather.h.  Don't set this
+	unless you really know what you are doing.
+
+------------------------------------------------------------------------------
+2. THE MAP OBJECTS:
+
+The objects within the map are saved in standard 'object save' form
+(same as is used for the players objects).  Other files document the
+actual meaning, but the general form is:
+
+arch <some name>
+x <some value>
+y <some value>
+<other object specific values>
+end
+
+Note that x and y are in fact optional.  If not present, the values
+default to zero.
+
+Multipart objects:
+
+Multipart objects pose a tricky problem, in that they have to
+appear together in the map file - this makes proper handling of
+layers hard to deal with.
+
+In old map code, all the single spaces objects were saved, and
+then all the multi part objects were saved.  This effectively
+means that the multi part objects always ended up on top.  The multipart
+objects were saved with all their parts.  For example:
+
+slaying shops/magicshop
+hp 14
+sp 14
+x 1
+y 13
+end
+More
+arch store_magic_2
+name Magic Shop
+slaying shops/magicshop
+hp 14
+sp 14
+x 2
+y 13
+end
+<snip - there are really two more parts>
+
+This method does not work very well with the map tiling however (how do you
+reasonably deal with a monster that may be straddling the two maps?)  Current
+code now only saves the head of the object.  When the map is loaded, the
+objects on the map are examined to see what objects need to have more objects
+added on.  Additional parts linked in are put just above floor level when
+linked in, so things like shops won't hide items that someone drops on them.
+For monsters, this linking shouldn't be a problem - once they start moving,
+they will get relinked as normal (on top).
+
+The effect of saving only the head does have the effect of not being
+able to customize the non head parts of the object.  This generally should not
+be a problem (in the case of shops/building, the exit code now knows to look
+only at the head for valid information).  The case where this may not work as
+well as expected is for buildings where setting the move_block to non
+archetype defaults will get lost.
+
+------------------------------------------------------------------------------
+3. Map Tiling:
+
+Map tiling is a feature that lets multiple maps be connected, effectively
+forming a much larger single map.  This is most useful for the outdoor
+world maps, where it is not practical to have on massive map, but
+the old style tiling method (copying areas of the adjoining map to the next
+one) are not very efficient.
+
+The transfer of objects from one map to another tiled map are automatic.
+Presuming the proper macros are used (out_of_map, get_map_..), minimal extra
+work is necessary for everything to work right
+
+Notes:
+Tiled maps must be the same width/height along the side they are tiled with.
+If map1 has a height of 15, and you want to tile along one of the sides, the
+map(s) it gets tiled with along that side should also be 15.  Given
+the following diagram (not to scale):
+
+
++---x1----+----x2---+
+|         |         |
+| map1    |  map2   y2
+y1        |         |
+|         |         |
++---------+---------+
+
+x1 is the width of map1, y1 is its height.
+x2 is the width of map2, y2 is its height.
+map1 will tile map2 as indicated in the above diagram.
+
+ Given that, the following must be true:
+y1 must equal y2
+x1 must be greater than 12
+x2 must be greater than 12
+x1 and x2 do not need to be equal
+
+The value is derived as being half the maximum viewable area.  The reason
+for this is that the line of sight code (and likely some other code) will only
+look one map away from a source coordinate.  While the values can be less
+than 12, they should be at least 12 if the map tiles with another one in
+that direction.  If the map is an 'end' map (ie, no further tiling in a
+specific direction), then having a value less than 12 should work just fine.
+
+Note that tiles maps do not have to be symmetric - several maps
+could tile to a common map.  That common map can only tile back to one of
+those.  And example of where this might be used is for a courtyard of
+a multi floor house - that courtyard should be visible (and be the same)
+from all the levels, but you can only go from the courtyard to first floor
+rooms off the courtyard.  This may not be ideal (ie, if flying, you should
+be able to go to any floor), but this tiling for elevation is just an
+example that can be used.
+
+------------------------------------------------------------------------------
+4. STACKING OF OBJECTS ON THE MAP
+
+The stacking of objects on a map is somewhat confusing.  This is because there
+are really two stacks a designer may care about - the actual stacking of
+objects on the map (as op->above points to) and the stacking of objects as they
+appear to the client.
+
+It is usually the appearance in the client the designers care most about.
+However, actual stacking in the code can be important - some objects only look
+for objects above them - if you put a teleporter above a sword, that is
+different than if you put the teleporter below the sword.
+
+When loading a map from disk, the server will keep the same stacking order as
+set in the map.  Note however that multipart (big) objects are handled
+specially - because only the head of the object is saved, the stacking for the
+non head objects is always right above the floor.  So if you put a troll down,
+with its head above a sword, when the rest of it is linked in, those other
+parts will be below any items on the ground.
+
+Additional objects put on the space during play will generally be in stack
+order - newest object is on top.  The one real exception is that flying
+objects (spells typically) will always be put on the top of the space, and
+then followed by non flying objects.  So if a sword is dropped on a space with
+a bunch of active spell objects, within the server stacking, the sword will be
+below the spell objects, but above other objects on the space.
+
+This ordering of objects in the server has little relation to how things
+appear in the client.  With the client (and map2 protocol command), there are
+10 visible layers, displayed in following order (from bottom up):
+
+Floor (by definition, nothing beneath a floor is visible)
+no_pick (2) - things like signs, savebeds, runes
+item (3) - swords, armor, scrolls, arrows, etc
+living (2) - monsters
+fly (2) - spells, arrows, some monsters
+
+The number in parentheses are the number of layers for those type of objects.
+So while there are 10 visible layers, in most cases, at least a few will not
+be used.  If there are 50 items (swords, bows) on a space, the client will
+still only be sent information on 3 of them.  It will not use the other
+layers, as only items will be sent in the items layer.
+
+In most all cases, the server automatically figures out what layer an object
+belongs to based on various flags (FLAG_IS_FLOOR, FLAG_NO_PICK, etc).
+
+An object/map maker can override these values with the 'map_layer' object
+parameter.  For example, if a map maker wanted to make what appears to be a
+flying statue, they would just put in 'map_layer fly' in the object
+definition.  The names listed above are the correct names used for the loading
+of objects.
+
+There can be other cases where map maker want to change layering.  A current
+case is levitation boots - because they seem to fly, they would normally
+always be drawn on top of other objects.  The archetype sets the map_layer
+flag to item, so that they will be drawn with the rest of the pickable
+objects.
+
+In cases of there being more objects of a type than can be displayed on a
+space, the first fallback is to look at the visibility of the defined face.
+Visibility is a face, not object, attribute, but is used when certain objects
+should take viewing precedence over others.  An example of its use is
+buildings and exits - you pretty much always want those visible, even if there
+are other non pickable objects on the space (or a player casts some runes).
+
+If the visibility for the face is the same, the last fallback is server (map)
+stacking.  In this case, the object on the top of the stack will take
+precedence of objects further down.  Note however that visibility is always
+used to put important objects higher on the space as far as the clients sees
+them.  For example, suppose we have the following space with objects with the
+hypothetical visibilities:
+
+mace (50)
+sword (50)
+bow (100)
+shield (50)
+floor (50) (this is included just to make stacking order clear).
+
+One might look at that and think that since shield is at the bottom and
+doesn't have high visibility, order would be mace, sword, bow, floor (shield
+getting dropped).
+
+But that is not the case - the high visibility of the bow causes it to be
+virtually placed above the other objects in the map view, so actual view would
+be bow, mace, sword, floor
+
+Because visibility is not an object attribute, there is generally little that
+can be done to control this, other than to set up the appropriate stacking.
+

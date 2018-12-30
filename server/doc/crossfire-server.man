@@ -1,0 +1,112 @@
+.TH crossfire 6 "Feb 04 2004" "" "CrossFire Game Server Manual"
+
+.SH NAME
+CrossFire \- a multiplayer adventure and arcade game server
+
+.SH SYNOPSIS
+crossfire-server [-<options>]
+
+.SH DESCRIPTION
+.B CrossFire
+is a multiplayer graphical arcade and adventure game, which has certain
+flavours from other games, especially
+.B Gauntlet (TM), NetHack, Moria, Angband,
+and
+.B Ragnarok.
+Any number of players can move around in their own window, finding and using
+items and battling monsters.  They can choose to cooperate or compete in the
+same world.
+.PP
+.B CrossFire
+runs as a client/server model. You will also need one of the clients to
+play. With them you can either connect to a server someone else has set up,
+or run your own server and connect to that. At now clients exit for the
+X-Windows, GTK, Java, and Windows NT environment.
+
+.SH OPTIONS
+.TP
+.B -csport <port number>
+Specifies the port to that should be used for the client/server
+connection.
+.TP
+.B -d
+Turns on some debugging.
+.TP
+.B +d
+Turns off debugging. Useful if DEBUG was defined at compile time.
+.TP
+.B -detach
+This will run the server as a demon.
+.TP
+.B -h
+Prints out a list of server options.
+.TP
+.B -log <file>
+Specifies a file to send output to.  Only has meaning if
+.B -detach
+is specified.
+.TP
+.B -mon
+Turns on monster-debugging.
+.TP
+.B -o
+Prints out info on what was defined at compile time.
+.TP
+.B -s
+Displays the highscore list.
+.TP
+.B -score <name | class>
+Displays all highscores with matching name or class.
+.TP
+.B -v
+Prints out version and contributors.
+.PP
+The following options are only available if DUMP_SWITCHES was defined at
+compile time. You can only use one of them without any other option.
+.TP
+.B -m
+Dumps out suggested experience for all monsters.
+.TP
+.B -m2
+Dumps out abilities.
+.TP
+.B -m3
+Dumps out artifact information.
+.TP
+.B -m4
+Dumps out spell information.
+.TP
+.B -m5
+Dumps out skill information.
+.TP
+.B -m6
+Dumps out race information.
+.TP
+.B -m7
+Dumps out alchemy information.
+.TP
+.B -m8
+Dumps out gods information.
+.TP
+.B -m9
+Dumps out more alchemy information.
+.TP
+.B -mt <name>
+Dumps out a list of treasures for a monster.
+.TP
+.B -mexp
+Dumps out the experience table.
+.TP
+.B -mq
+Dumps out the list of defined quests.
+
+.SH SEE ALSO
+.B cfclient(6)
+
+.SH BUGS
+Please read the REPORTING BUGS section in
+.I README.
+
+.SH AUTHOR
+ (C) 1994 Mark Wedel (mwedel@scruznet.com)
+ (C) 1992 Frank Tore Johansen (frankj@ifi.uio.no)

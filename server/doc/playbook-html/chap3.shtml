@@ -1,0 +1,589 @@
+<html>
+<head>
+<title>Crossfire Playerbook - Chapter 2</title>
+</head>
+<body>
+
+<H1>Playing <em>Crossfire</em></h1>
+
+<H2><a name="3.1.0">Section 3.1.  Basics</a></h2>
+
+In this section, several basic bits of information are detailed in a concise
+way in rough order of importance.  Various pointers to other sections of
+this document will help you to round out your knowledge if you want to. All
+of the available player commands are concisely explained in appendix <a
+href="appA.html">A (commands)</a>. You can always get a summary of available
+commands while playing the game; hit ``<samp>?</samp>'' for help.<p>
+
+<h4><a name="3.1.1">How to do simple stuff</a></h4>
+
+<Strong>Move around and attack</strong><p>
+Movement is accomplished with the mouse, or
+with the same keys that some rouge-like computer games use. To move using
+the mouse, position the cursor over a square you wish to move to
+in the view window
+then click the right hand button. If you want to use the keys, here's a
+simple diagram of where the various movement keys will take you:<p>
+<center>
+<a name="table_keys">
+<table cellpadding=3>
+<tr><th>y</th><th></th><th>k</th><th></th><th>u</th></tr>
+<tr><th></th><th><img src="fig/nwarrow.gif"></th><th><img src="fig/narrow.gif"></th><th><img src="fig/nearrow.gif"</th><th></th></tr>
+<tr><th>h</th><th><img src="fig/warrow.gif"></th><th>.</th><th><img src="fig/earrow.gif"></th><th>l</th></tr>
+<tr><th></th><th><img src="fig/swarrow.gif"></th><th><img src="fig/sarrow.gif"></th><th><img src="fig/searrow.gif"</th><th></th></tr>
+<tr><th>b</th><th></th><th>j</th><th></th><th>n</th></tr>
+</table>
+</center>
+
+The ``<samp>.</samp>'' refers to yourself; you don't move anywhere when you
+press it.
+In order to ``run'' in a particular direction (i.e. move continuously
+without having to repeatedly punch the key) hold down the control
+key then hit any movement key or the right hand mouse button to
+start moving. Release the <samp>&ltcontrol&gt</samp> key when you wish to stop running. <p>
+
+If you move into something, you will attack it. This means walls,
+doors, and monsters will be damaged if you hit them. Players and
+friendly monsters may also be attacked in this way, but only if
+you set the peaceful flag to ``off''. To learn more about the combat
+system see section <a href="chap3.html#3.2.1">combat</a>.<p>
+
+<strong>Picking up items</strong><p>
+
+To pickup items, move over the item, then either hit the ``<samp>,</samp>''
+key or move the cursor over to the look window, position it over the desired
+item and click the left mouse button. You will see the item appear in your
+inventory window. If you pick up too much stuff, you won't be able to see it
+all at once. Use the ``<samp>&lt</samp>'' and ``<samp>&gt</samp>'' keys to
+rotate through the inventory list. <p>
+
+<strong>Applying stuff: wear armour, wield a weapon, eat, and so on.</strong><p>
+Most of the time, in order to manipulate or ``<samp>apply</samp>'' items you have
+to be holding them. Move the cursor over to the desired item in the
+inventory window. By using the middle button on the mouse, you may
+toggle the status (ie between ``applied'' or ``unapplied'') of items.
+Note that
+some items when applied will be used up (they disappear from the
+inventory window). Examples of these kind of
+items include ``food''
+<!--#include file="foodone.html"-->
+, ``potions''
+<!--#include file="potions.html"-->
+and ``scrolls''
+<!--#include file="scrolls.html"-->
+To learn more
+about the uses of various items see chapter <a href="chap6.html">6 (Equipment)</a>. <p>
+
+<Strong>Shoot a ranged weapon</Strong><p>
+Ranged weapons include bows
+<!--#include file="bows.html"-->
+wands
+<!--#include file="wands.html"-->
+rods
+<!--#include file="rods.html"-->
+, or horns
+<!--#include file="horns.html"-->
+. Apply the desired
+weapon, then check to see that the <samp>Range:</samp> slot in the status
+window indicates that item is ``readied'' (yes...you can have something
+applied but not readied). If its not ready, use either the plus or minus
+keys to rotate though all of the slots. Once readied, use the
+``<samp>&lotshift&gt</samp>'' key followed by a movement key to fire the
+object in that direction. Alternatively, place the cursor in the view
+window, then hit the middle mouse button to fire. <p>
+
+<strong>Enter a building or boat.</strong><p>
+<!--#include file="guild.html"-->
+Move over on top of the desired structure. Then hit either middle mouse
+button while the cursor is on the icon of the structure in the look window,
+or hit the <samp>A</samp> key. If there is a link to a map drawn of the ``inside''
+you will be taken there. If no link exists, you will get the message
+``<samp>the &ltstructure&gt is closed.</samp>''. <p>
+
+<strong>Use a skill</strong><p>
+
+ In order to use a skill, it must first be readied. You can ready any skill
+you have with the <samp>ready_skill</samp> command. Also, some skills will
+automatically be readied when you undertake certain actions. For example, if
+you run into a hostile monster with a wielded weapon the <samp>melee
+weapons</samp> skill is readied. A ready skill will show up in the stat
+window in the <samp>Range:</samp> slot. If a skill doesn't appear in the
+slot, rotate the range slot to check for the skill. When a skill is readied,
+the range slot will appear as ``<samp>Skill:  &ltskill&gt</samp>''
+(otherwise it appears as ``<samp>Skill: none</samp>'').  To use the skill,
+make a ``ranged attack'' (ie hit the same keys or mouse button as for firing
+a wand). To learn more about the skills system see chapter
+<a href="chap5.html">5 (Skills)</a>. <p>
+
+<strong>Cast a spell</strong><p> In order to ``<samp>cast</samp>'' spells
+(either incantations or prayers), you must have the skills of
+<samp>wizardry</samp> (incantations) or <samp>praying</samp> (prayers).
+Possession of a ``talisman''
+<!--#include file="talisman.html"-->
+ or a ``holy symbol''
+<!--#include file="holysymbol.html"-->
+ will also allow you to respectively
+<samp>cast</samp> incantations or prayers). You can only <samp>cast</samp>
+those spells you have </em>learned</em>. Issue the meta-command <samp>`cast
+&ltspell&gt</samp> to ready a spell in the <samp>Range:</samp> slot. To
+``fire'' the spell, make a ranged attack. Note: if you don't have enough
+mana an incantation will fail.  If you don't have enough grace a prayer
+<em>may</em> work. For more information concerning the magic system see
+chapter <a href="chap4.html">4 (Magic)</a>.<p>
+
+<h4><a name="3.1.2">Saving the game and ending the <em>Crossfire</em> session:</a></h4>
+
+The <samp>save</samp> command is to provide an emergency backup in case of a
+game crash.  To save your player at the end of your game session you must
+find a ``Bed to reality''
+<!--#include file="savebed.html"-->
+, move your player
+over it and <samp>apply</samp> it (``<samp>A</samp>''). These beds can
+usually be found in the inns and taverns dotted around the maps (especially
+in cities). This prevents you just saving anywhere and forces you to finish
+what you are doing and return somewhere safe.<p>
+
+<h4><a name="3.1.3">About NPCs</a></h4>
+
+<em>N</em>on <em>P</em>layer <em>C</em>haracters are special ``monsters''
+which have ``intelligence''. Players may be able to interact with these
+monsters to help solve puzzles and find items of interest. To speak with a
+monster you suspect to be a NPC, simply move to an adjacent square to them
+and push the double-quote, ie. <samp>"</samp>. Enter your message, and press
+<samp>&ltreturn&gt</samp>. You can also use the meta-command
+<samp>'say</samp> if you feel like typing a little extra.<p>
+
+Other NPCs may not speak to you, but display intelligence with their
+movement. Some monsters can be friendly, and may attack the nearest of your
+enemies. Others can be ``pets'', in that they follow you around and help you
+in your quest to kill enemies and find treasure.<p>
+
+
+<h4><a name="3.1.4">Important special items</a></h4>
+
+There are many special items which can be found in <em>Crossfire</em>, of
+those shown below, the most important may be the signs. <p>
+
+<UL>
+<li><strong>Signs:</strong>
+<!--#include file="sign.html"-->
+
+Signs often have messages that might clue you in on quests and puzzles
+or even refer you to NPCs. It is your job as a player to make sure you
+read every sign to make sure you do not miss things. <p>
+
+<li> <strong>Handles and Buttons:</strong>
+<!--#include file="handbutt.html"-->
+
+These items can often be manipulated to open up new areas of the map.
+In the case of handles, all a player must do is apply the handle. In
+the case of buttons, the player must move items over the button to
+"hold" it down. Some of the larger buttons may need very large items to
+be moved onto them, before they can be activated. <p>
+
+<li> <strong>Gates and locked doors:</strong>
+<!--#include file="gatedoor.html"-->
+
+Gates are often tied to a handle or button and can only be opened by
+manipulating the the handle/button. Doors that are locked can either be
+smashed down by attacking the door, by using keys
+<!--#include file="keys.html"-->
+which can be found
+throughout the game, or by picking the lock. <p>
+
+<li> <strong>Pits:</strong>
+<!--#include file="pit.html"-->
+
+Pits can be doorways to new areas of the map too, but be careful, for
+you could fall down into a pit full of ghosts or dragons and not be
+able to get back out! <p>
+
+<li> <strong>Break away walls:</strong>
+<!--#include file="br_wall.html"-->
+
+Are a common occurrence in <em>Crossfire</em> . These type of walls can be
+"destroyed" by attacking them. Thus, sometimes it may be worth a
+player's time to test the walls of a map for ``secret doors''. <p>
+
+<li> <strong>Fire walls:</strong>
+<!--#include file="fr_wall.html"-->
+
+Will shoot missiles (including bullets, lightning, etc.) at players.
+Some firewalls can be destroyed while others cannot. <p>
+
+<li> <strong>Spinners and Directors:</strong>
+<!--#include file="dir_spin.html"-->
+
+These odd items will change the direction of any item flying over them,
+such as missile weapons and spells. <p>
+</ul>
+
+<h2><a name="3.2.0">Matters of life and death</h2>
+
+
+<h4><a name="3.2.1">Attack system</h4>
+
+Every time you make an attack, your attack is classified with one or more
+``attacktypes''. For example, an attack made with a ordinary sword
+results in the attack being made with the attacktype of ``physical''.
+For another example, if a Mage attacks with a fireball spell the
+attack is made with the ``magic'' and ``fire'' attacktypes. In
+similar fashion, a defender may be protected, vulnerable, or immune
+to any attacktype. <p>
+
+Here is a summary of the attack system; in fact, its a
+bit more complicated. <p>
+
+<strong>Hitting an opponent</strong><p>
+ Several quantities are involved in
+determining whether an attack will hit its target.  The attacker will hit if
+his <samp>Wc</samp> is less than or equal to the defender's <samp>Ac</samp>
++ 1D20 (Note: 1D20 is a random number between 1 and 20) or if the D20 gives
+a 20 (remember, both <samp>Wc</samp> and <samp>Ac</samp> improve as their
+value drops <em>lower</em>).<p>
+
+<strong>Damaging a hit opponent</strong><p>
+Damages are randomly generated, with the magnitude of the random number
+being based on the attacker's <samp>Dam</samp> stat.
+If defender is immune to an attacktype
+in the attack, he receives no damage, if he's protected he receives
+half damage, if he's vulnerable to this kind of
+attacktype, he receives double damage. For physical attacks, the percent
+of your <samp>Arm</samp> value is subtracted from incoming damage.
+Some magic weapons can ``slay'' various races of creatures. If the weapon
+slays the defender, the attack damage is tripled. <p>
+
+
+<h4><a name="3.2.2">Experience</h4>
+
+Accumulation of experience will result in increasing the <samp>level</samp>
+of the player's character. In a <em>Crossfire</em> game where skills are
+<em>not</em> present, experience is only gained for removing traps and
+killing monsters.  A player will gain a new <samp>level</samp> when their
+experience total reaches a new amount in the hierarchy shown in the
+following table:<p>
+
+<center>
+<a name="table_exp_level">
+<table border=1 cellpadding = 5>
+<tr><th>Level</th><th>Experience</th></tr>
+<!--#include file="levels.html"-->
+</table>
+Relationship between experience and <samp>level</samp> for the first
+10 levels.<p>
+</center>
+
+In the skills-based game, <em>several</samp> kinds of experience exist. The
+<samp>score</samp> represents the ``<em>overall</em>'' proficiency of the
+player and is the <em>sum</em> of all the differing kinds of experience
+possessed.<p>
+
+The player accumulates experience into various ``<em>experience
+categories</em>'' according to their actions.
+Another way of putting this is that you become better
+at what you do most often and most successfully. For example,
+a player who kills monsters with incantations gains experience in
+casting incantations. A player who steals from creatures often will
+get better at stealing, and so on.  <p>
+
+Each experience category will have a <samp>level</samp> assigned to it based
+on the amount of experience accumulated in it (using the same schedule shown
+in the table above.)  Use the <samp>skills</samp> command to investigate
+which skills your character has and to see the <samp>level</samp> of ability
+you have in each experience category. See chapter <a href="chap5.html">5 (Skills)</a> for more
+information about skills and skill-based experience.<p>
+
+As an aside, monsters <em>also</em> are assigned a <samp>level</samp> of
+proficiency and may gain experience. The main way which monsters gain
+experience is by <em>killing</em> players! Beware going after a monster that
+has killed several players, it will be much more difficult to challenge!
+
+
+<h4><a name="3.2.3">Calculation of selected secondary stats</h4>
+
+Both the primary stats and <samp>level</samp> of the character will influence
+the secondary stats given below. In the skills-based game, the
+appropriate experience category is identified for purposes of determining
+which <samp>level</samp> is used in the calculation. In the non-skills
+game, the <em>overall</em> <samp>level</samp> is always used.<p>
+
+Note: categories
+are given for the default settings, and this can be changed by the
+server administrator<p>
+
+Refer to table <a href="chap2.html#table_pri_eff">primary stat effects</a> if a quantity in a calculation is
+left unexplained. <p>
+
+<strong>Weapon class (<samp>Wc</samp>)</strong><p>
+The <samp>Wc</samp> calculation is:
+<p><quote>
+class <samp>Wc</samp> - <samp>thaco</samp>(STR) - weapon <samp>Wc</samp> - <samp>level</samp> - 1 every 6 <samp>level</samp>s
+</quote><p>
+
+where <samp>thaco</samp> is found using the STR stat on table <a
+href="chap2.html#table_pri_eff">primary stat effects</a>, the weapon
+<samp>Wc</samp> can be determined from the <a
+href="../spoiler-html/spoiler.html">Crossfire Spoiler</a> and the
+<samp>level</samp> is taken from the <samp>physique</samp> experience
+category. <p>
+
+<strong>Weapon Speed</strong><p>
+
+The calculation for weapon speed is quite complex (but here it is!).
+The value for the weapon speed is:<p>
+<quote>
+<samp>speed</samp>/(<samp>LF</samp> * <em>NastyFactor</em> * <em>LessNastyFactor</em>)<p>
+</quote>
+
+where <samp>LF</samp> (``level factor'') is a number between 0.8 and 1.2
+that increases with the <samp>level</samp> as
+(4+<samp>level</samp>)/(6+<samp>level</samp>)*1.2, (the <samp>level</samp>
+is taken from the overall <samp>level</samp>), and both <em>NastyFactor</em>
+and <em>LessNastyFactor</em> are calculated below.<p>
+
+The value of <em>NastyFactor</em> is:<p>
+<quote>
+2/3 + <samp>MaxC</samp>/363 - ((0.00167*<samp>WpnW</samp>)/<samp>MaxC</samp>) + (<samp>speed</samp>/5) + ((Dex-14)/28)
+</quote><p>
+
+where <samp>MaxC</samp> is the maximum carrying
+limit of the character, <samp>WpnW</samp> is
+the weapon weight. Weapon weight can be determined from examining the given
+weapon (ie look at the number to the right side of the weapon icon in the
+inventory window).<p>
+
+The value of <em>LessNastyFactor</em> is:<p>
+<quote>
+2 - ((WpnF - <samp>magic</samp>/2)/10)
+</quote>
+where <samp>WpnF</samp> is the ``weapon factor'' and <samp>magic</samp> is the
+value of the enchantment on the weapon (i.e. +1, +2, etc.).
+Weapon factor is given for some weapons
+in the table below. <p>
+
+<center>
+<a name="table_weap_factor">
+<table border=1 cellpadding = 5>
+<tr><th>  1.6 </th><th> nunchacu </th></tr>
+<tr><th>  1.5 </th><th> dagger </th></tr>
+<tr><th>  1.4 </th><th> Sting, katana, shortsword, taifu </th></tr>
+<tr><th>  1.3 </th><th> Belzebub's sword, Darkblade, Excalibur </th></tr>
+<tr><th>  1.2 </th><th> Firebrand, Frostbrand, Mjoellnir, Mournblade,
+	Stormbringer, broadsword, falchion, light sword <
+	long sword, quarterstaff, sabre, sword, trident </th></tr>
+<tr><th>  1.1 </th><th> Deathbringer, Demonbane, Dragonslayer, Holy Avenger
+	club, hammer, mace, unicorn horn </th></tr>
+<tr><th>  1.0 </th><th> axe, stonehammer </th></tr>
+<tr><th>  0.9 </th><th> Skullcleaver, morningstar, stake, stoneaxe </th></tr>
+<tr><th>  0.8 </th><th> large morningstar </th></tr>
+<tr><th>  0.5 </th><th> Bonecrusher, Gram, shovel </th></tr>
+<tr><th>  0.3 </th><th> large club </th></tr>
+<tr><th>  0.1-0.4 </th><th> chair </th></tr>
+<tr><th>  0.1 </th><th> bed </th></tr>
+</table>
+Weapon factor (<samp>WpnF</samp>) for selected weapons<p>
+</center>
+
+
+
+<h4>Damage (<samp>Dam</samp>)</h4>
+
+Current weapon, character class (table <a
+href="chap2.html#table2.2>character classes</a>) and STR (<samp>DmB</samp>
+in table <a href="chap2.html#table_pri_eff">primary stat effects</a>) all
+effect the value of <samp>Dam</samp>. The calculation for <samp>Dam</samp>
+is:<p>
+
+<quote> Class bonus + <samp>DmB</samp> + Weapon damage + Skill damage
+<p> </quote>
+
+In addition, for every 4 levels of fighting expertise (<samp>physique</samp>
+experience category level) 1+(<samp>Dmb</samp>/5)) is added to
+<samp>Dam</samp>.  Some skills (namely the hand-to-hand, or martial arts
+skills) can add significant damage to the overall total. The amount that is
+added depends on the user's <samp>level</samp> in that skill.  Note that
+weapon damage is automatically added to your damage rating in the stat
+window when you wield any weapon.
+
+
+<h4>Armour class (<samp>Ac</samp>)</h4>
+
+For characters that cannot wear armour (ex. Fireborn), their <samp>Ac</samp>
+can improve as their score increases. The calculation for <samp>Ac</samp> is
+then: <p>
+
+<quote>
+Class <samp>Ac</samp> - <samp>level</samp>/3<p>
+</quote>
+
+The value of the character <samp>Ac</samp> may decrease to the value of -10.
+After that, no more improvement is made regardless of earned
+experience. The overall <samp>level</samp> is
+<em>always</em> used for this calculation.
+
+
+<h4>Hit points (<samp>Hp</samp>)</h4>
+
+A character will gain the following number of <samp>Hp</samp> for <em>each</em<
+new overall <samp>level</samp> gained between levels 1-10:<p>
+
+<quote>
+(<samp>HpB</samp>)/2 + D4 + D4 + 1 + 1/every even <samp>level</samp>
+<em>if</em> <samp>HpB</samp> is even.<p>
+</quote>
+
+Where D4 is a random number between 1 and 4 and you always get 1 hit point
+gained per <samp>level</samp>, regardless of <samp>HpB</samp>.  For levels
+after 10th, <samp>Hp</samp> grow 2 per <samp>level</samp>.  The overall
+<samp>level</samp> provides the correct value for <samp>level</samp> in the
+calculation.
+
+
+<h4>Mana (<samp>Sp</samp>)</h4>
+
+A character will gain the following number of <samp>Sp</samp> for <em>each</em> new
+<samp>magic</samp> experience category <samp>level</samp> gained between levels 1-10:<p>
+
+<quote>
+(<samp>MgB</samp>(POW))/2 + D3 + D3 + 1 every even <samp>level</samp> <em>if</em> <samp>MgB</samp> is even.<p>
+</quote>
+
+Where D3 is a random number between 1 and 3 and you always get 1 mana gained
+per new <samp>level</samp>. For <samp>magic</samp> levels past the 10th,
+mana grows 2 per level.
+
+
+<h4>Grace (<samp>Gr</samp>)</h4>
+
+A character will gain the following number of <samp>Gr</samp> for <em>each</em> new
+<samp>wisdom</samp> experience category <samp>level</samp> gained between levels 1-10:<p>
+
+<quote>
+(<samp>MgB</samp>(WIS) + <samp>MgB</samp>(POW))/8 + D3<p>
+</quote>
+Where D3 is a random number between 1 and 3 and you always get 1 grace gained
+per new <samp>level</samp>. For levels past the 10th,
+grace grows 1 per <samp>wisdom</samp> <samp>level</samp>.
+
+<h4><a name="3.2.4">Death --- the ultimate penalty?</h4>
+
+Should your hit point total drop below 0 you will die
+<!--#include file="gravestone.html"-->
+What happens next depends on how the game is compiled. If the
+<samp>NOT_PERMDEATH</samp> option is being
+used (this is the default) then your character (and his all of his
+<em>carried</em>
+equipment at the instant of death) will appear in the base map (the one
+you first started out in). <p>
+
+For each time you die, your character loses 20% of their experience (in all
+categories) and a random primary stat decreases by 1.  At low levels, the
+stat loss is bad news, while it is the experience loss that <em>really</em>
+hurts at those high levels. You may still re-gain lost stats (up to your
+natural limit) by drinking potions.<p>
+
+If the server administrator has made death permanent, there is still hope
+for your character. When the <samp>RESURRECTION</samp> option is enabled (the default option
+when <samp>NOT_PERMDEATH</samp> is <em>not</em> being used) other characters may bring you back
+from the beyond. There are 3 spells that are capable of doing this, but
+remember to retrieve the corpse
+<!--#include file="corpse.html"-->
+of the character
+that is to be resurrected! <p>
+
+
+<h2><a name="3.3.0">Some advanced stuff</h2>
+
+<h4><a name="3.3.1">Some useful advanced commands</h4>
+
+<h4>Meta-command (<samp>'</samp>)</h4>
+
+Any command listed by the use of help (<samp>?</samp> key) can be used by
+spelling it out after the meta-command is issued. For example, you can use
+the command <samp>say</samp> either by hitting the double-quote
+(<samp>"</samp> key) or by issuing the command string <samp>'say</samp>.
+
+<h4>Binding commands (<samp>'bind</samp> and <samp>'unbind</samp>)</h4>
+
+You may bind any key with a complex command. For example, you could bind the
+use of the meditation skill to the key ``<samp>m</samp>''. To do this first
+type:<p>
+
+<quote>
+<samp>'bind use_skill meditation </samp> <p>
+</quote>
+
+then press <samp>&ltreturn&gt</samp>. The game will then ask you for a key to bind the
+command to, you then hit <samp>m</samp>. You can also re-bind this key to something
+else later if you wish too. Issue the command:<p>
+<quote>
+<samp>'unbind reset </samp> <p>
+</quote>
+to totally reset bindings on keys. <p>
+
+<h4>Pick up toggle (<samp>@</samp>)</h4>
+
+This allows you to change your pickup status. Eight different modes
+for pick up exist: ``don't pick up'',``pick up 1 item'', ``pick up 1 item and
+stop'', ``stop before picking up'', ``pick up all items'', pick up all items
+and stop'', ``pick up all magic items'', ``pick up all coins and gems''.
+Whenever you move over a pile of stuff your pickup mode controls
+if and what you collect. You can always pickup stuff using the pickup
+command (<samp>,</samp>) regardless of your current pickup mode. <p>
+
+<h4>Invoke (<samp>'invoke</samp>)</h4>
+
+A useful way to quickly cast both incantations and prayers is via the invoke
+command. To use it effectively, <samp>bind invoke &ltspell&gt</samp> to any
+key. Then, when that binded key is pressed, your character will cast that magic
+in the direction they're currently facing.
+
+<h4><a name="3.3.2">Playing with other people</h4>
+
+As a general rule, other <em>Crossfire</em> players will prefer to
+co-operate or at least leave each other alone. If you go about killing other
+player's characters you may not only risk their continued wrath, but the
+anger of the server administrator as well. Check out the house rules before
+you start slaying players.<p>
+
+<h4>Useful multi-player commands</h4>
+
+Here are some useful commands for playing with other players:<p>
+
+<ul>
+<li><strong>shout</strong>
+This meta-command will broadcast your message to every player currently
+logged in. The say command only sends messages to players who share your
+current map. Invoke this command just like <samp>say</samp>.<p>
+
+<li><strong>who</strong>
+This will give you a listing of all the current players and the maps
+they are on currently. Invoke this command as <samp>'who</samp>.<p>
+
+<li><strong>tell</strong>
+Will send your message only to the player indicated. It is invoked as:
+<samp>'tell &ltcharacter name&gt &ltmessage string&gt</samp>.<p>
+</ul>
+
+<h4>The simple party system</h4>
+
+If the <samp>SIMPLE_PARTY_SYSTEM</samp> has been enabled on your server you
+can use this to adventure with other players. All experience gained by
+members of the party is split equally, and in addition, party members are
+always peaceful towards each other. Here's 2 useful party commands:<p>
+
+1) To form a party issue the command: <p>
+<quote>
+<samp>'party form &ltparty name&gt</samp><p>
+</quote>
+
+2) To join a party, type:<p>
+<quote>
+<samp>'party join &ltparty name&gt</samp><p>
+</quote>
+To see all of the options, type <samp>'party help</samp>.
+<p>
+
+<a href="handbook.html"><img src="fig/book.gif">Back to table of contents</a><br>
+<a href="chap2.html"><img src="fig/stairup.gif">Go to chapter 2</a><br>
+<a href="chap4.html"><img src="fig/stairdown.gif">Go to chapter 4</a><br>

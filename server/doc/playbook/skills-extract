@@ -1,0 +1,93 @@
+# treas-extract - parse the treasures-file and output the
+# player's stats in a structured format.
+
+# read in the list of player randomitems from randitem
+BEGIN {
+	# yeah, its kludgey, but hey, I've been programming awk for
+	# all of 1 day!
+
+	noticeitem["holy_symbol"] = 1;
+	noticeitem["random_knowledge"] = 1;
+
+	ignoreitem["basic_skills"] = 1;
+	ignoreitem["skill_melee_weapon"] = 1;
+
+	newname["skill_climbing"] = "mountaineer";
+	newname["spell_skills"] = "spellcasting";
+	newname["wizard_skills"] = "spellcasting, Praying";
+	newname["skill_missile_weapon"] = "Missile weapons";
+	newname["fighter_skills"] = "Missile weapons";
+	newname["mage_skills"] = "spellcasting (talisman)";
+	newname["holy_symbol"] = "praying (holy symbol)";
+	newname["random_knowledge"] = "random skill";
+
+       # Read the player treasure types
+	pl = 0;
+        while ((getline buff < eqitems) == 1) {
+		nr = split(buff, line, ",");
+                player[pl] = line[1];
+                list[pl] = line[2];
+		pl++;
+        }
+        close(playerlist);
+
+}
+
+$1 == "treasure" {
+       	for ( i=0; i < pl ; i++ ) {
+	    	  if ($2 == list[i]) {  # matched players list
+			nrloop=0;
+			do {
+			  getline;
+			  if($1 in ignoreitem) continue;
+			  if($1 == ("yes"||"no")) {
+				nrloop++;
+				continue;
+			  } else if($1 == "end") {
+				if(nrloop==0) { break; } else { nrloop--; }
+				continue;
+			  }
+			  if(!($2 in noticeitem)) {
+			    if(!($2 ~ "skill")) continue;
+			    if($2 in ignoreitem) continue;
+			  }
+			  equip = $2;
+			  if(equip in plural) equip = sprintf("%ss",equip);
+			  if(equip in newname) equip = newname[equip];
+			  equiplist[i] = sprintf("%s,%s",equiplist[i],equip);
+		        } while ( $1 != ("treasure" || "treasureone" || "list" ) )
+	    	  }
+	}
+}
+
+END {
+	close("trease");
+	# now print this stuff out in correct order!
+        for(i=0;i<pl;i++) {
+                printf("%s & ",capitalize(player[i]));
+                nr = split(equiplist[i], eq, ",");
+		if(nr==0) {
+	      # hmm. This can happen if 2 or more character classes
+	      # share the same treaure list. Lets find it.
+		   for(j=0;j<pl;j++)
+			if(list[i]==list[j]) break;
+                   nr = split(equiplist[j], eq, ",");
+		}
+                sub("skill_", "", eq[nr]);
+                sub("_", " ", eq[nr]);
+                printf("%s",capitalize(eq[nr--]));
+                do {
+                        printf(", ");
+                        sub("skill_", "", eq[nr]);
+                        sub("_", " ", eq[nr]);
+                        # printf("& %s\\\\\n",capitalize(eq[nr]));
+                        printf("%s",capitalize(eq[nr]));
+                } while (--nr>1);
+                printf(" \\\\\n");
+        }
+}
+
+function capitalize(str) {
+	return toupper(substr(str, 1, 1)) substr(str, 2);
+}
+

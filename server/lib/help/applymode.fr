@@ -1,0 +1,17 @@
+Applymode contrôle ce qui se passe lorsque vous équipez votre personnage d'un objet qui demande qu'autre-chose soit enlevé.
+
+Options:
+
+nochoice: Dans ce cas, la substitution est effectuée seulement si il n'y a pas de choix possible sur l'objet à enlever. Exemple typique: les baguettes, puisque vous ne pouvez en porter qu'une à la fois. Notez que dans le cas d'objets qui demandent les deux mains pour être utilisés (comme un arc par exemple), plusieurs objets peuvent malgré tout se retrouver enlevés pour vous permettre d'utiliser celui-ci.
+
+never: Dans ce cas, rien n'est enlevé automatiquement. Il vous sera plutôt demandé confirmation.
+
+always: Enlève tout ce qui est nécessaire pour vous équiper du nouvel objet.
+
+Exemple:
+
+Si votre personnage porte deux anneaux, et tente d'en mettre un troisième, le mode nochoice affichera les deux anneaux dont il est déjà équipé. Le mode always ôtera automatiquement l'un de ces deux anneaux (celui qui sera enlevé est déterminé en fonction de l'agencement interne au serveur de vos objets d'inventaire, et est difficile à prédéterminer).
+
+Si votre personnage porte une armure et que vous tentez de lui en faire revêtir une autre, nochoice et always feront tous deux en sorte que le nouvel équipement remplace automatiquement l'ancien.
+
+Voir aussi: apply

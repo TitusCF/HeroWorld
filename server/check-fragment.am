@@ -1,0 +1,116 @@
+LOG_ROOT=$(top_builddir)/test/logs
+LOGDIR=$(LOG_ROOT)/$(CHECK_FOLDER)
+TEMPLATE_ROOT = $(top_srcdir)/test/templates
+XSLTENGINE= @XSLTENGINE@
+BUILT_SOURCES=$(LOGDIR)
+AM_CPPFLAGS = -I$(top_srcdir)/include -I$(top_srcdir)/test/include -DRESSOURCES=\"$(srcdir)/../../resources\" -DBUILD_ROOT=\"$(top_builddir)/\" -DLOGDIR=\"$(top_builddir)/test/logs\" -DSOURCE_ROOT=\"$(top_srcdir)/\"
+$(LOGDIR):
+	mkdir -p $(LOGDIR)
+$(LOG_ROOT):
+	mkdir -p $(LOG_ROOT)
+automenu:
+	@echo "Building menu entry..."
+	@subdirs='$(SUBDIRS)';\
+	list='$(TESTS)'; \
+	dir='$(LOGDIR)'; \
+	srcdir='$(top_srcdir)'; \
+	output_menu="$${dir}/.automenu.xml"; \
+	parentfoldername='$(CHECK_PARENT_NAME)'; \
+	echo '<?xml version="1.0"?><menu>' > $$output_menu; \
+	echo '<parentMenu>$(CHECK_PARENT_NAME)</parentMenu>' >> $$output_menu;\
+	for tst in $$list; do \
+	  tst="$${tst/check_/}" ; \
+	  tst="$${tst/-/_}" ; \
+	  xml="$(LOGDIR)/$${tst}.xml" ;\
+	  if test -e "$$xml"; then \
+	      successCount=`grep -c 'result="success"' $$xml`;\
+	      errorCount=`grep -c 'result="error"' $$xml`;\
+	      failureCount=`grep -c 'result="failure"' $$xml`;\
+	      echo '<entry success="'$${successCount}'" error="'$${errorCount}'" failure="'$${failureCount}'">'$$tst'</entry>' >> $$output_menu; \
+	  fi; \
+	done; \
+	for sub in $$subdirs; do \
+	    if test -e "$${dir}/$${sub}/.automenu.xml"; then \
+	       echo '<subDirectory name="'$${sub}'"/>' >> $$output_menu; \
+	    fi; \
+	done;\
+	echo "</menu>" >> $$output_menu
+
+logreport: automenu $(LOG_ROOT)/logresult.xsl
+	@echo "processing logs to html..."
+	@list='$(TESTS)'; \
+	builddir='$(top_builddir)'; \
+	xsl="$${builddir}/test/logs/logresult.xsl" ; \
+	xsltproc='$(XSLTENGINE)';\
+	xsltproc=$${xsltproc/\%2/$$xsl};\
+	xml_siteuri='$(CHECK_ROOT)' ;\
+	xml_check_folder='../logs/$(CHECK_FOLDER)' ;\
+	runxml='.autorun.xml';\
+	if test -n "$$list"; then \
+	  for tst in $$list; do \
+	    tst="$${tst/check_/}" ; \
+	    tst="$${tst/-/_}" ; \
+	    checkFile="$${tst}.xml" ;\
+	    echo '<?xml version="1.0"?><config>' > $$runxml;\
+	    echo "<baseSiteUri>$$xml_siteuri</baseSiteUri>" >> $$runxml;\
+	    echo "<checkFile>$$checkFile</checkFile>" >> $$runxml;\
+	    echo "<checkFolder>$$xml_check_folder</checkFolder></config>" >> $$runxml;\
+	    html=$(LOGDIR)/$${tst}.html ;\
+	    if test -e "$(LOGDIR)/$$xml"; then \
+	        torun="$${xsltproc/\%1/$$runxml}";\
+	        torun="$${torun/\%3/$$html}";\
+	        echo "running $$torun";\
+	        $$torun; \
+	    fi; \
+	  done; \
+	else :; fi; \
+	echo '<?xml version="1.0"?><config>' > $$runxml;\
+	echo "<baseSiteUri>$$xml_siteuri</baseSiteUri>" >> $$runxml;\
+	echo "<checkFolder>$$xml_check_folder</checkFolder></config>" >> $$runxml;\
+	html='$(LOGDIR)/.index.html' ;\
+	torun="$${xsltproc/\%1/$$runxml}";\
+	torun="$${torun/\%3/$$html}";\
+	echo "running $$torun";\
+	$$torun;
+
+$(LOG_ROOT)/logresult.xsl: $(LOG_ROOT) $(TEMPLATE_ROOT)/logresult.xsl
+	cp "$(TEMPLATE_ROOT)/logresult.xsl" '$(LOG_ROOT)'/;
+
+$(LOG_ROOT)/checkTextResult.xsl: $(LOG_ROOT) $(TEMPLATE_ROOT)/checkTextResult.xsl
+	cp "$(TEMPLATE_ROOT)/checkTextResult.xsl" '$(LOG_ROOT)'/;
+
+$(LOG_ROOT)/checkReport.css: $(LOG_ROOT) $(TEMPLATE_ROOT)/checkReport.css
+	cp "$(TEMPLATE_ROOT)/checkReport.css" '$(LOG_ROOT)'/;
+
+template-copy: $(LOGDIR)
+	@echo copying template
+	@if test -d "$(top_srcdir)/test/templates/$(CHECK_FOLDER)"; then \
+	    cp "$(top_srcdir)/test/templates/$(CHECK_FOLDER)/"[^C]* '$(LOGDIR)'/;\
+	fi
+textlog: automenu $(LOG_ROOT)/checkTextResult.xsl
+	@echo "processing logs to text..."
+	@builddir='$(top_builddir)'; \
+	xsl="$${builddir}/test/logs/checkTextResult.xsl" ; \
+	xsltproc='$(XSLTENGINE)';\
+	xsltproc="$${xsltproc/\%2/$$xsl}";\
+	xml_siteuri='$(CHECK_ROOT)' ;\
+	xml_check_folder='../logs/$(CHECK_FOLDER)' ;\
+	runxml='.autorun.xml';\
+	echo '<?xml version="1.0"?><config>' > $$runxml;\
+	echo "<baseSiteUri>$$xml_siteuri</baseSiteUri>" >> $$runxml;\
+	echo "<checkFolder>$$xml_check_folder</checkFolder></config>" >> $$runxml;\
+	txt='$(LOGDIR)/testlog.txt' ;\
+	torun="$${xsltproc/\%1/$$runxml}";\
+	torun="$${torun/\%3/$$txt}";\
+	echo "running $$torun";\
+	$$torun;
+
+if PROCESS_XSLT
+CHECK_HTML = logreport template-copy
+CHECK_TXT= textlog
+endif
+check-html: $(CHECK_HTML)
+check-text: $(CHECK_TXT)
+clean-unit:
+	rm -f autorun.xml
+noinst_PROGRAMS=$(TESTS)

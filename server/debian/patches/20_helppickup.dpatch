@@ -1,0 +1,57 @@
+#!/bin/sh -e
+## 20_helppickup.dpatch by  <tanner@debian>
+##
+## All lines beginning with `## DP:' are a description of the patch.
+## DP: No description.
+
+if [ $# -lt 1 ]; then
+    echo >&2 "`basename $0`: script expects -patch|-unpatch as argument"
+    exit 1
+fi
+
+[ -f debian/patches/00patch-opts ] && . debian/patches/00patch-opts
+patch_opts="${patch_opts:--f --no-backup-if-mismatch}"
+
+case "$1" in
+       -patch) patch $patch_opts -p1 < $0;;
+       -unpatch) patch $patch_opts -p1 -R < $0;;
+        *)
+                echo >&2 "`basename $0`: script expects -patch|-unpatch as argument"
+                exit 1;;
+esac
+
+exit 0
+
+@DPATCH@
+diff -urNad /home/tanner/projects/crossfire/crossfire-snapshot/lib/help/pickup crossfire-snapshot/lib/help/pickup
+--- /home/tanner/projects/crossfire/crossfire-snapshot/lib/help/pickup	1999-04-02 13:10:08.000000000 -0600
++++ crossfire-snapshot/lib/help/pickup	2004-02-04 23:02:23.000000000 -0600
+@@ -1,17 +1,18 @@
+ 'pickup' changes how you pick up items when you step on them.
+ to pickup an item manually, use the ',' key.
+ 
+-Mode 0: Don't pick up items.
+-Mode 1: Pick up one item 
+-Mode 2: Pickup up one item and stop
+-Mode 3: Stop before picking up items
+-Mode 4: Pick up all items
+-Mode 5: Pick up all items and stop
+-Mode 6: Pick up all magical items
+-Mode 7: Pick up all coins and gems
++Flag all: Pickup all items.
++Flag none: Don't pick up items.
++Flag ammo: Pickup arrows and bolts.
++Flag equip: Pickup containers, keys, lighters.
++Flag armor: Pickup up armor, shiels, helmets, shoes and cloths.
++Flag weapons: Pickup blades, bows, and other weapons.
++Flag magic: Pickup all magical items
++Flag food: Pickup food and drink.  Includes poisons.
++Flag money: Pickup coins and gems
+ 
+-Modes above 7: Pickup items with
+-a value density greater than the pickup mode.
++Flag density n: Pickup items with a value density
++density greater than 'n'.
+ 
+ Value density is value in gold/weight in kilograms.
+ 

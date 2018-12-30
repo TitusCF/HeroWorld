@@ -1,0 +1,31 @@
+Bind permet de relier une touche à une action ou suite d'actions.
+
+Syntaxe:
+
+    bind  [-nfreg] <commande>
+
+Paramètres:
+
+    -n: Commande en mode normal
+    -f: Commande en mode "tir"
+    -r: Commande en mode "course"
+    -e: Laisse la commande dans la ligne d'édition (utile pour say/tell/chat, par exemple)
+    -g: Raccourci global (non recommandé)
+
+Plusieurs commandes peuvent être reliées à une seule touche en séparant chacune par un point-virgule.
+
+Raccourcis spéciaux:
+
+    bind commandkey: définit la touche pour entrer en mode de commandes
+    bind firekey1: définit la première touche de tir
+    bind firekey2: définit la seconde touche de tir
+    bind runkey1: définit la première touche de course
+    bind runkey2: définit la seconde touche de course
+
+Exemples:
+
+    bind -f cast fireball (F3)
+    Signifie que Shift+F3 permettra de sélectionner le sort de boule de feu, Shift étant la touche de tir par défaut.
+
+    bind use_skill sense curse; use_skill sense magic (S)
+    Signifie que la touche S déclenchera l'usage successif de ces deux compétences.

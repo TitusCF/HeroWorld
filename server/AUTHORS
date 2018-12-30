@@ -1,0 +1,157 @@
+Source:
+  crossfire: (try "crossfire -v")
+    Presently maintained by Mark Wedel (mwedel@sonic.net)
+    Original code by Frank Tore Johansen (frankj@ifi.uio.no)
+    _Lots_ of additions, improvements, bugfixes, patches, etc, by:
+      kjetilho@ifi.uio.no (Kjetil Torgrim Homme)
+      tvangod@ecst.csuchico.edu (Tyler Van Gorder)
+      elmroth@cd.chalmers.se  (Tony Elmroth)
+      dougal.scott@fcit.monash.edu.au (Dougal Scott)
+      wchuang@athena.mit.edu  (William)
+      ftww@cs.su.oz.au (Geoff Bailey)
+      jorgens@flipper.pvv.unit.no (Kjetil Wiekhorst Jxrgensen)
+      c.blackwood@rdt.monash.edu.au (Cameron Blackwood)
+      jtraub@dragoncat.net  (Joseph L. Traub)
+      rgg@aaii.oz.au (Rupert G. Goldie)
+      eanders@cs.berkeley.edu (Eric A. Anderson)
+      eneq@Prag.DoCS.UU.SE (Rickard Eneqvist)
+      Jarkko.Sonninen@lut.fi (Jarkko Sonninen)
+      kholland@sunlab.cit.cornell.edu (Karl Holland)
+      vick@bern.docs.uu.se (Mikael Lundgren)
+      mol@meryl.csd.uu.se (Mikael Olsson)
+      Tero.Haatanen@tel.vtt.fi (Tero Haatanen)
+      ylitalo@student.docs.uu.se (Lasse Ylitalo)
+      anipa@guru.magic.fi (Niilo Neuvo)
+      mta@modeemi.cs.tut.fi (Markku J{rvinen)
+      meunier@inf.enst.fr (Sylvain Meunier)
+      jfosback@darmok.uoregon.edu (Jason Fosback)
+      cedman@capitalist.princeton.edu (Carl Edman)
+      henrich@crh.cl.msu.edu (Charles Henrich)
+      schmid@fb3-s7.math.tu-berlin.de (Gregor Schmid)
+      quinet@montefiore.ulg.ac.be (Raphael Quinet)
+      jam@modeemi.cs.tut.fi (Jari Vanhala)
+      kivinen@joker.cs.hut.fi (Tero Kivinen)
+      peterm@soda.berkeley.edu (Peter Mardahl)
+      matt@cs.odu.edu (Matthew Zeher)
+      srt@sun-dimas.aero.org (Scott R. Turner)
+      smurf@soda.berkeley.edu (Scott MacFiggen)
+      tpeland@utu.fi (Tero Jyri Michael Pelander)
+      raytrace@soda.berkeley.edu (Rachel Yotter)
+      huma@netcom.com (Ben Fennema)
+      njw@cs.city.ac.uk (Nick Williams)
+      Wacren@Gin.ObsPM.Fr (Laurent Wacrenier)
+      thomas@astro.psu.edu (Brian Thomas)
+      jsm@axon.ksc.nasa.gov (John Steven Moerk)
+      swedel@tymnet.com (Scott Wedel)
+      s-nisita@urdr.ics.es.osaka-u.ac.jp (Nishita Seikoh)
+      stieber@informatik.tu-muenchen.de (Christian Stieber)
+
+  crossclient:
+    Frank Tore Johansen
+  crossedit
+    Petri Heinila (hevi@lut.fi) and Jarkko Sonninen.
+  xbmtobdf.c and shstr.c:
+    Kjetil Torgrim Homme
+
+Documentation and spoilers:
+  General documentation on playing and getting started:
+    Tyler Van Gorder (tvangod@ecst.csuchico.edu)
+  spoiler.ps:
+    Lars Henrik Olafsen (larso@ifi.uio.no)
+  Spell-documentation:
+    Chris Carpinello (chrisc@cs.odu.edu)
+  Handbook (Playbook)
+    Brian Thomas (thomas@astro.psu.edu)
+
+Graphics:
+  Vidar Lund (vidarl@ifi.uio.no) [Did all the *cool* graphics]
+  Frank Tore Johansen
+  wchuang@athena.mit.edu
+  Oeystein Tvedten
+  Kjetil Torgrim Homme
+  Christian Berg
+  Stig Rune Kristoffersen (iconified window)
+  Asbjorn Bjornstad
+  Kjetil Wiekhorst J|rgensen (colored numerous XPM images)
+  Peter Gardner (chess pieces, dwarfs, ent, various sub dragons, pirates,
+	unicorn & horn, longship, dog, panther, corpse, para-elementals,
+	conjurer, prisoner, princess, sphinx, viking)
+
+  David Gervais       [david_eg@mail.com]
+  Mitsuhiro Itakura   [ita@gold.koma.jaeri.go.jp]
+  Hansjoerg Malthaner [hansjoerg.malthaner@danet.de]
+  Mårten Woxberg      [maxmc@telia.com]
+        (The above four are responsible for much of the cooler single-tile
+         artwork.)
+  Devin Watson  (alternate set exit.111.png)
+
+  And countless more by now...
+  (if you have any 24x24 bitmaps you want to contribute with, mail them to me.)
+
+Maps:
+    Peter Gardner (basic parts of Wolfsburg)
+
+
+There are also countless bugtesters around in Usenet/Internet who also
+deserve due credits...
+
+The maps are made by various people.  The map quality is now pretty good -
+some still need a bit of work.  Credits for the different maps can usually
+be found on signs, books, or similar items in the maps, usually at the start
+of an area.
+
+Current projects (and people working on them) can be found at:
+http://wiki.metalforge.net/doku.php/dev_todo
+
+Current list of developers with SVN access can be found at:
+http://sourceforge.net/p/crossfire/_members/
+
+The list below are people that have worked on crossfire and things
+they have worked on.  Some are still active, some are not:
+------------------------------------------------------------------------------
+Mark Wedel ("cvs", mwedel@sonic.net) - core maintainer, handles patches
+	submitted by those not having CVS access, investigates bugs,
+	and future long term developement.
+Peter Mardahl <"peterm", peterm@eecs.berkeley.edu> runes, new spells, changing
+	of spell parameters, new archetypes, random maps, traps, race/class,
+	diseases, graded lighting, movers, creators, peterm/* maps
+David Andrew Michael Noelle ("damn", dave@straylight.org)-
+	fixing things that ain't broke (and occasionally some that is)
+	primarily in the server, maps, and archetypes
+Raphael Quinet ("quinet", Raphael Quinet) - sounds (originally using rplay),
+	client/server split, various small changes to the server.
+Frank Tore Johansen ("ftj", frankj@osc.no) - misc.
+Kjetil Torgrim Homme ("kjetilho", kjetilho@ifi.uio.no)
+David Sundqvist ("azzi") - images
+? ("dragonm",  dragonm@absolut.tegris.com) - Client/server
+John Cater ("cater", john.cater@eng.monash.edu.au) - Maps, navar etc, bug fixing
+Bob Tanner ("tanner", tanner@real-time.com) - .spec files
+Jan Echternach ("jec", jan.echternach@informatik.uni-rostock.de) - bug fixing
+Andreas Vogl ("red_blaze", andi.vogl@gmx.net) - bug fixing, creating maps,
+              maintaining pupland.
+David Hurst "dnh@hawthorn.csse.monash.edu.au" - gods rebalancing, images
+       for classes and other images, spell testing and concepts
+Hwei Sheng Teoh hsteoh@quickfur.yi.org -- random_maps expand2x, also,
+       images for Fiend, dread, beholder generator, grimreaper.
+Tim Rightnour ("garbled", root@garbled.net) - luck, attackmessages, time,
+	weather, new alchemy, overlay maps, emotions.
+Todd Mitchell ("Avion", temichell@sympatico.ca) -general busybody,
+	graphics and arches(player animation, winter graphics, many others),
+	metadata (lore),python scripts, creating maps, getting Tim to add
+	Orcknuckle...
+Nicolas Weeger ("Ryo", nicolas.weeger@laposte.net) - some work on Win32 port,
+	some bugfixes & improvements.
+David Seikel ("onefang", won_fang@yahoo.com.au) - bug fixing, weather tweaking,
+	weather god, visualisations, large forest, ice castle and ant farm
+	maps.
+Phil Brown (phil@bolthole.com)- Java Client
+Brian Thomas (thomas@astro.psu.edu)- Skills, alchemy, altars
+Tyler Van Gorder <tvangod@ecst.csuchico.edu> added color stuff,
+	interested in working on client side (user interface)
+David.M.Fisher@Dartmouth.EDU (David M. Fisher)
+Rupert G. Goldie <rgg@aaii.oz.au> testing under Purify, new spells,
+	spell paths, and gifts.
+'Evil' ERic Mehlhaff <mehlhaff@ocf.Berkeley.EDU> Client server, also
+	works with Peter Mardahl
+"Eric A. Anderson" <eanders+@CMU.EDU> - general bug fixing
+Michael Martin (martinm@millner.bevc.blacksburg.va.us) - Java client

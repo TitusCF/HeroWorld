@@ -1,0 +1,24 @@
+This is a basic resource viewer for Crossfire, written in C++/Qt.
+
+Resources are only readonly, but may become writable at some point.
+
+Requirements:
+
+  Qt 4.62 and newer is required.  The project does not build under Qt 3.
+  The crossfire-server must be compiled before this project.
+  A `make install` of crossfire server is required for CRE to run.
+
+To build:
+
+  qmake && make
+    (Builds in debug mode; change .qmake.cache to suit other needs better.)
+
+Notes:
+
+  PNG files in the 'resources' folder were taken from Gridarta's
+  'resource/system' directory and are supposed to be under a free license.
+
+  On some systems (Solaris), -lsocket -lnsl need to get added to the link list
+  for cre.  Easiest way is to just edit the Makefile (after running qmake)
+  and add them.
+

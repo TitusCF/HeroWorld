@@ -1,0 +1,671 @@
+Random Map Deployment Guide
+
+ Using random maps:
+
+  Any exit with "/!" as the destination map will generate a random map.
+To specify random map parameters, you put parameters in the message field
+for the exit.
+To use the standalone random map generator, you do this:
+random_map inputfile <map path>
+where "inputfile" is a plaintext file containing the map parameters, andthat
+<map path> is the destination of the generated map, relative to
+LIBDIR/maps.
+
+ How styles work:
+
+  A "style" is usually a small map which contains only objects which
+define the "style".  For example, a monsterstyle "orc" might be a map
+generated with Gridarta which has six orcs, a kobold, and a troll in it.
+When monsters are placed, the generator will randomly choose monsters from the
+"orc" style, and for this example, on average, it will generate 6 orcs/troll
+and 1 kobold/troll.  So orcs will be very common, and there'll be occasional
+trolls and kobolds.
+
+
+  In principle, you may put any object in any style map.  However, the map
+generator will do special things with the object depending on which directory
+it is in.  Style maps are located in
+maps/styles/*,
+you may use Gridarta to modify the style maps, or create new ones.
+
+
+ Style Parameters::
+
+  layoutstyle <style>	(special!) Pick the layout style for the map.  Currently,
+			"rogue", "spiral", "maze", "snake", "onion",
+                        and "squarespiral"  are allowed.
+                        See below for more detail.
+
+  floorstyle <style>	Load /styles/floorstyles/<style> and pick a random
+			floortype from that style map for the random map.
+			The entire map will be tiled with the floortype.
+
+  multiple_floors <0/1> If set to 1, different rooms of the map will have
+                        different floors (from the same map style though).
+			This only works if there are doors, as the filling
+			uses them to find rooms.
+
+  wallstyle <style>	Load /styles/wallstyles/<style> and pick a random
+			walltype from that style for the random map.  All
+			the walls in the map will be of this type.  The walls
+			are modified on insertion so that players cannot go
+			through them:  this is expected for walls, but
+			the random map generator makes sure of it. A <style>
+                        of "none" causes no walls or doors to be generated.
+
+  doorstyle <style>	Load /styles/doorstyles/<style> and pick a random
+			doortype from that style for the random map. A <style>
+                        of "none" causes no doors to generated.
+
+  exitstyle <style>	Put one or two exits in the map, one leading back
+			to the map where we entered from (origin_map,
+			origin_x, origin_y), and, if appropriate, one leading
+			to another, harder, random map. A style of "none"
+                        causes no exits to be generated.
+
+  decorstyle <style>	Load /styles/decorstyles/<style> and pick the decor
+			objects from that style to insert in the map.  Decor
+			objects are modified on insertion so that they do
+			NOT block movement, regardless of the archetype.
+			They are placed randomly. A style of "none" causes no
+                        decor objects to be generated.
+
+  monsterstyle <style>  Load /styles/monsterstyles/<style>, if it exists.
+			If it doesn't exist, then it will look for a directory
+			of that name.  If it finds a directory, it will choose
+			a style based on dungeon_level.  It will pick the style
+			with the name <name>_# with the # closest to the
+			dungeon_level.  Monster objects are copied from the
+			style map, so you may form style maps with modified
+			monsters which are weaker or stronger than the default
+			archetype.A style of "none" causes no monsters to be
+                        generated.
+
+  treasurestyle <style> (Special) If the style name chosen is contained in
+			the lib/treasures file, it will use that for making
+			treasures.  If it is NOT in the lib/treasures file,
+			it will look up /styles/treasurestyle/<style>, and
+			pick random treasures from there.  If <style> matches
+			neither of these, it will generate treasures
+			using the "chest" treasurelist.  A style of "none"
+			causes no treasures to be placed.
+
+
+
+ Layout Parameters::
+
+
+ 'xsize'		size of the map:  if not set, random from 10 to 70
+
+
+ 'ysize'		size of the map:  if not set, random from 10 to 70
+
+
+ 'expand2x'             Do we double the size of the layout?  This has
+                        the effect of increasing the corridor widths by about
+                        2x.  Set it to a non-zero integer if this is desired.
+
+
+ 'symmetry <sym>'	symmetry of the layout:  You can cause the map generator
+			to generate a symmetrical layout by using this flag.
+			symmetry 0   random symmetry
+			symmetry 1  no symmetry
+			symmetry 2  symmetry about the vertical centerline
+			symmetry 3  symmetry about the horizontal centerline
+			symmetry 4  both 2 and 3 symmetry
+
+
+  Layout Style:	Parameter:			Effect:
+
+
+  maze		layoutoptions1 0 (default)	Sparse maze:  a maze with
+						"rooms" will be made
+
+
+  maze		layoutoptions1 1		Full maze:  a maze with
+						no "open" spaces will be made.
+
+
+   50% of the time a maze layout will be "doorified", meaning that doors
+will be placed at random in the maze.
+
+
+  onion		layoutoptions1 0 (default)	Pick random options
+		See "Onion Rooms" below for
+		the rest of the options.
+
+  onion		layoutoptions2 0 (default)	Pick a random number of
+						"onion layers"
+
+
+ Map generation parameters:
+
+
+  'difficulty'		Set the map difficulty.  Has no relation to the
+			"difficulty" defined in common/*.c.
+			If nonzero, this map and its descendants will
+			have the same difficulty.  If zero, it'll be set
+			to the value of dungeon_level and incremented with
+			each recursive map.
+
+  'difficulty_increase'	Sets how fast the difficulty increases.  This value
+			is a float - the default value is 1.0.  Reducing
+			This only applies to map without a default
+			difficulty set (but that could change in the
+			future).  For each level of a map, the difficulty
+			is set to depth * difficulty_increase.  Setting
+			this parameter to 0.5 (or other values between 0
+			and 1) is a way to have deep dungeons that do not
+			increase in difficulty all that rapidly.
+
+
+  'dungeon_level'	Another way of setting the map difficulty.  This
+			has no relation to the "difficulty" defined in
+			the common/*.c source code.  The effect is to pick
+			which monsters to use:  for example, if the
+			monsterstyle
+			is "humanoid" and the dungeonlevel is 9, the style
+			map /styles/monsterstyles/humanoid/humanoid_9 will be
+			the style from which monsters are chosen.  After the
+			monsters are placed, the map
+			difficulty is set according
+			to the server's rule, for treasure purposes.
+
+  'dungeon_depth'	The map generated will have an exit to another
+			random map of the same style if
+			dungeon_level < dungeon_depth.  The next random map
+			will have dungeon_level incremented.  If dungeon_level
+			>= dungeon_depth, no exit to a more difficult map
+			will be made.
+
+  'orientation'		How the exits look:
+			0		random "orientation"
+			1		player arrives in the map at
+					a "stairs up", he goes to harder
+					levels by finding a "stairs down"
+			2		reverse of 1
+			3-6		exits are horizontal.  In the future
+					these will be made to make exits to
+					rightward, leftward, north and south.
+
+  'origin_x'		<You shouldn't need to set this>  The exit which
+			leads back from this map will go to this x.
+
+  'origin_y'		Like origin_x
+
+  'random_seed'		Set the random seed number used.  This number
+			completely determines the random numbers:  a map
+			with the same random seed and other parameters
+			will always produce exactly the same map.
+
+  'final_map'		When dungeon_level >= dungeon_depth, another exit
+			isn't usually made.  However, if final_map is set
+			to a map's name, then an exit to this map will
+			be made.
+
+  'exit_on_final_map'	The default action is to place an exit on
+            the final map.  When explicitly set to 'no' this will
+			not place a return exit on the final_map.
+			If you use this setting YOU MUST PROVIDE A WAY BACK IN THE FINAL MAP!
+
+
+ Misc. Parameters:
+
+
+  'decoroptions' <option>	Currently, ignored.  Possibly in the future it
+			will cause the decor to be patterned in some way,
+			such as <put decor along walls> or <put decor
+			in center of rooms>
+
+
+  'treasureoptions' <opt>	Parameterizes how the treasure is placed and protected.
+		0	choose random treasure options
+		1	concentrate the treasure on the map in a few locations
+		2	hide the treasure behind hidden doors
+		4	put the treasure in a chest which must be unlocked.
+			(a key will be placed somewhere in the map, probably
+			in a monster.)
+		8	Put locked doors around the treasure (a key to each
+			door will be placed in a monster or somewhere reachable
+			by the player:  one key on each side of the door.)
+			In onion maps, the treasure is co-located with the
+			exit to harder levels, so this makes the exit harder
+			to get to.
+		16	Trap the treasure.  A trap from /styles/trapstyles/traps
+			is selected and inserted into the treasure chest.
+		32	sparse treasure.  1/2 as much treasure is generated.
+		64	rich treasure.  2x as much treasure is generated.
+
+		If option 1 is not set, options 2-16 are ignored.  Options
+		may be added together:  treasureoptions 3 means treasure
+		optons 1 and 2 are set.
+
+ Map Layout styles:
+
+
+  Onion Maps:
+
+   Onion rooms are like this::
+
+    regular			   random
+    centered, linear onion:        bottom/right centered, nonlinear:
+
+    #########################     #########################
+    #                       #     #                       #
+    # ########  ##########  #     #   #####################
+    # #                  #  #     #   #                   #
+    # # ######  ######## #  #     #   #                   #
+    # # #              # #  #     #   #   ######## ########
+    # # # ####  ###### # #  #     #   #   #               #
+    # # # #          # # #  #     #   #   #               #
+    # # # ############ # #  #     #   #   #  ########### ##
+    # # #              # #  #     #   #   #  #            #
+    # # ################ #  #     #   #   #  #    #########
+    # #                  #  #     #       #  #    #       #
+    # ####################  #     #   #   #  #            #
+    #                       #     #   #   #  #    #       #
+    #########################     #########################
+
+    options:
+    0	Pick random options below
+    1	"centered"
+    2	linear doors (default is nonlinear)
+    4	bottom "centered"
+    8  	bottom-right centered
+    16	outer wall off:  i.e., no outer wall.
+    32	irregularly/randomly spaced layers (default: regular)
+
+
+  Maze Maps:
+
+   Maze maps are like this:
+
+   A "sparse" maze::
+
+    ########################################
+    #   # # # #  #  #  #  #  #  #   #   #  #
+    #         #  #  #     #  #  # # # # #  #
+    ####   ## ## #  # ### #  ##   #   # # ##
+    #  #####   # ## # # # ##  ### ##  ###  #
+    ##              ### #  #       #       #
+    #           ###     #  #    ####   ### #
+    #           # ##    ## ##   #      # ###
+    # ######    #  ###      #   # ##   #   #
+    #      #   ##    ####   ##  #  #   # # #
+    #  #  ##  ##  ##    ###  ## #  #   # # #
+    #### ##  ##    ##     ##  ###  # ### ###
+    #    #  ##      #####  #       ###     #
+    ##  ##  #   ###     # ##              ##
+    #  ##  ##  ## #    ## #           ###  #
+    ## #   #   #  #    #  #           # ## #
+    #  ### ### ## #   ## ##  ####    ##  # #
+    ##   #   #  # #   #  #   #  #### #   ###
+    #  ###  ## ## #   ## ##  ##    # ###   #
+    ## #   ##  #  #    #  #   # # ##   #  ##
+    #  #####  ## ## #### ##   # # #    ##  #
+    ##        #  #  #    #   ## # ###      #
+    #  # # #  #     # #  # #    #   #  # # #
+    ########################################
+
+   A "full" maze::
+
+    ########################################
+    #   #    # # #                 #       #
+    #   # #  #   # # #  # # # # #    #  #  #
+    ###   ## ##    ######## ### ### ### #  #
+    #   # #     ##     #  ### ### #   ### ##
+    # ##### ###  ##### ##         ## ## #  #
+    #  #    # ## #   #  ##  ####   #  # # ##
+    # #### ##  ### ####  # ##  ## ### # #  #
+    #   #  #    #     #  ###    #   # #    #
+    # ### ## ## ### ####      #### ## #  ###
+    #  #  #  #    #  # ####  ##  # #  ## # #
+    #  # ##  #### ##      # ##   # ##  #   #
+    # ####  ## #   ### #### #  ### #  #### #
+    #  #    #  # #   # #    # ##   #### #  #
+    # #####   ####  ## ###    #  #      ## #
+    #     ## ## #  ##    ##  ## ##### #  # #
+    #  #   #  # ## #   #  # ##  # # ###  # #
+    ## ### # ##  # # #### ###   # #   # ## #
+    #  # # #    ## # #  #      ## ###   #  #
+    ## # ####  ##  # #    ######  # # #### #
+    #     # ####   # ######      ## ###  # #
+    ### #      ## ##   #    # # ##         #
+    #   #  # #    #  #    # # #    # #  #  #
+    ########################################
+
+
+  Spiral Maps:
+
+   A Spiral Map::
+
+    ###########################
+    ###########################
+    ########### D    ##########
+    #########   ####   ########
+    ########  ########  #######
+    #######  ##########  ######
+    ######  ############  #####
+    ###### ####     #####D#####
+    #####  ###  ###  ####  ####
+    ##### #### #####  #### ####
+    #####D#### ###### ####D####
+    #####  ###  #C### #### ####
+    ###### ####  >###D#### ####
+    ######D########## ####D####
+    ######  ########  ###  ####
+    #######  ######  #### #####
+    ######## D D  D ####  #####
+    #################### ######
+    ###################  ######
+    #################   #######
+    ################# <########
+    ###########################
+    ###########################
+
+    layoutoptions1:
+
+    0  pick random options
+    1  Regular spiral:  distance increases constantly with angle
+    2  Fine spiral:  most coils possible are fit in
+    4  Fit Spiral:  scale spiral to fit rectangular region
+      (i.e., the spiral will look elliptical)
+
+
+  Rogue-like Maps:
+
+   A Rogue-like Map::
+
+    ###############################
+    #############       ###########
+    #          ##       ###########
+    #          DD       ###########
+    #          ##       ###########
+    #          ##       ####     ##
+    #          #####D#######     ##
+    #          D           D     ##
+    ###D######D##### #######     ##
+    ### ##       ###      ##     ##
+    ###D D       ###       ###D####
+    ### ##       D  D  <   ### ####
+    ### ######D#####       ### ####
+    ###D###### #####      #### ####
+    ##    #### ##### #   ##### ####
+    ##    #### ##### ######### ####
+    ##    ####D##### ######### ####
+    ##    ##     ### #     ### ####
+    ##    ##     ### #     ###D####
+    ##    ##     ### #     ###   ##
+    ########     ### #     ###    #
+    ########     D D D     ### >  #
+    ########     #####     ###    #
+    ########     #####     ###   ##
+    ########     #####     ########
+    ##################     ########
+    ###############################
+
+    layoutoptions1:
+
+    0  pick random room shapes (i.e., mix it up)
+    1  Always use rectangular rooms
+    2  Always use "circular" rooms
+
+
+  Snake layouts:
+
+   No options are available for snake layouts.
+   A player must touch every room to descend deeper in a snake.
+
+   This is a basic snake layout::
+
+    ############################
+    #>                         #
+    #                          #
+    #                          #
+    ##########################D#
+    #                          #
+    #                          #
+    #                          #
+    #D##########################
+    #                          #
+    #                          #
+    #                          #
+    ##########################D#
+    #                          #
+    #                          #
+    #                          #
+    #D##########################
+    #                          #
+    #                          #
+    #                          #
+    #                          #
+    #                         <#
+    ############################
+
+   This is a roomified, xy-symmetric snake layout::
+
+    ###################################
+    #>       #     #   #     #       >#
+    #        #     #   #     #        #
+    ##D#######     D   D     #######D##
+    #        #     #   #     #        #
+    #        #     #   #     #        #
+    #        D     # < #     D        #
+    #        #     #   #     #        #
+    #        #     #   #     #        #
+    ##D#######     D   D     #######D##
+    #        #     #   #     #        #
+    #>       #     #   #     #       >#
+    ###################################
+
+
+  Square spirals
+
+   No options are available for square spirals
+   A player must touch every room to descend in a square spiral.
+
+   This is a basic square spiral layout::
+
+    ###############################
+    #   #                         #
+    #   D                         #
+    #   #####################D#####
+    #   #   #               #     #
+    #   #   #               #     #
+    #   #   D               #     #
+    #   #   #############D###     #
+    #   #   #   #       #   #     #
+    #   #   #   #       #   #     #
+    #   #   #   D       #   #     #
+    #   #   #   #####D###   #     #
+    #   #   #   # > #   #   #     #
+    #   #   #   D   #   #   #     #
+    #   #   #########   #   #     #
+    #   #   #       D   #   #     #
+    #   #   #       #   #   #     #
+    #   #   D       #   #   #     #
+    #   #################   #     #
+    #   #               D   #     #
+    #   #               #   #     #
+    #   D               #   #     #
+    #########################     #
+    #                       D     #
+    #                       #     #
+    #                       #     #
+    #<                      #     #
+    ###############################
+
+   This is an xy-symmetric  square spiral layout::
+
+    #####################################
+    #             #   <   #             #
+    ##D##########D#       #D##########D##
+    #  #    #     ####D####     #    #  #
+    #  ###DD###   #       #   ###DD###  #
+    #  #   #> #   ##D###D##   # >#   #  #
+    #  #   ####D###       ###D####   #  #
+    #  #   D      #       #      D   #  #
+    #  ############D#####D############  #
+    #  D                             D  #
+    #  #                             #  #
+    #  D                             D  #
+    #  ############D#####D############  #
+    #  #   D      #       #      D   #  #
+    #  #   ####D###       ###D####   #  #
+    #  #   #> #   ##D###D##   # >#   #  #
+    #  ###DD###   #       #   ###DD###  #
+    #  #    #     ####D####     #    #  #
+    ##D##########D#       #D##########D##
+    #             #   <   #             #
+    #####################################
+
+
+ An example input file::
+
+  layoutstyle onion
+  monsterstyle humanoid
+  dungeon_depth 3
+  xsize 15
+  ysize 15
+  exitstyle cstair
+  orientation 1
+  decorstyle furniture
+  floorstyle dirt
+  wallstyle wooden
+  symmetry 1
+
+
+Below is the original proposal:
+
+ Random Maps
+
+  The major thing still missing from Gridarta, I think, is a good facility
+for generating random maps:
+
+  1.  They can be used by map creators to create a basic layout for his
+quest or whatever, so that he need not start from a blank canvas.
+
+  2.  Buildings with nothing else in them can have a random map in them.
+In fact, we could have the same random map generated every time someone
+enters a particular building (pick the seed off of the parent map name
+and the entrance location!)  This would transform the world from finite
+to infinite.
+
+ Needed Features:
+
+  Styles:
+
+   Random maps would need to be "styled":  walls, doors, monsters, and other
+decor should be picked from certain subsets of the total object set.  An inn
+has a very different style than a castle, and from a dungeon, in both walls,
+decor, and monsters.
+
+  Ubiquity: (map configurable:  unspecified==no random maps)
+
+   Any exit which does not have a destination specified should lead to
+a random map, but WITH a sign saying "this is a random map".
+
+  Identifiability:  (configurable)
+
+   Random maps includes a sign
+which states that the map is random.
+
+  Recursion:
+
+   Random maps should optionally have another entrance to a random map of
+the same style.  The depth of recursion should be specifiable.
+
+  Difficulty:
+
+   Difficulty should be specifiable.  Also, whether the map advances in
+difficult with recursion should be specified.
+
+  Quests:
+
+   It would be cool if random quests could be implemented, too.  I won't
+put this in immediately.
+
+  Standalone operation:
+
+   It'd be cool if the random map generator operated standalone, so that
+map designers could use it easily as well as the server could at exits.
+
+  Size:
+
+   Random maps should be sized.  A big, multi-square exit should have a bigger
+random map to it, while a small house should have a small interior.
+
+  Inheritance:
+
+   The type and location of the exit should imply something about its random
+interior.  A shop exit should have a shop interior, a house should have a
+home interior, etc, a difficult map should have difficult sub-maps.
+
+  Directedness:
+
+   Buildings should have random maps with stairs up to the next random map,
+dungeons with stairs down, etc.
+
+ What does everyone think?  Anyone willing to help?  Has anyone already
+ made so much progress on this that I should just help them instead of
+ starting one myself?
+
+
+ Algorithms:
+
+  Maze algorithm:  start from a wall point, move forward left or right
+or start from a new wall point, at random, recursively.  If blocked,
+pop the stack until you can walk again.  If you return all the way,
+a maze is generated.
+
+
+  Specs for a room algorithm:
+  Can you write for a function:
+
+  char **room_gen_corridored(int xsize, int ysize, int option);
+
+  which allocates and returns a char[xsize][ysize], with # being a wall
+  and a char value of 0 indicating nothing.
+  like::
+
+   ######################
+   #       #   #        #
+   #       #   #        #
+   #                    #
+   #       #   #        #
+   #########   ##########
+   #       #   #        #
+   #                    #
+   #       #   #        #
+   #       #   #        #
+   #########   ##########
+   #       #   #        #
+   #                    #
+   #       #   #        #
+   ######################
+
+   Some suggested options:
+   option:
+   0   random choice of one of the other options below *
+   1   vertical centered corridor *
+   2   horizontal centered corridor *
+   4   vertical corridor on the right-hand wall *
+   8   vertical corridor on the left-hand wall
+   16  horizontal corridor on the bottom wall *
+   32  horizontal corridor on the top wall
+
+   The *'d ones are the important ones.
+
+   Options 4 and 16 are important so I can easily create reasonable
+  bilaterally and 4-way symmetric maps, as in a castle.
+
+  If you're really ambitious, you could make it so you could ADD the
+  options to get something like 10:  centered vertical corridor and right-hand
+  corridor.
+
+  One restriction you must satisfy, however, is that every place on the map
+  be accessible from everywhere else.
+
+  Feel free to contact me with any questons.
+
+  peterm@langmuir.eecs.berkeley.edu

@@ -1,0 +1,16 @@
+{
+	type = $1 + 0;
+	if (type == 99 || type == 100 || type == 113) {
+		if (type == 99) {
+			name = capitalize($2);
+			gsub("_", " ", name);
+		} else
+			name = capitalize($3);
+
+		printf("<tr><th>%s</th><td>%s</td><td>%d</td><td>%s</td></tr>\n", name, $10, $8, $4);
+	}
+}
+
+function capitalize(str) {
+	return toupper(substr(str, 1, 1)) substr(str, 2);
+}

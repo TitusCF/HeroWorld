@@ -1,0 +1,43 @@
+BEGIN {
+	oldFS=FS; FS=":";
+	crosscmd = crosscmd " 2>&1";
+	while (crosscmd | getline == 1) {
+		if ($2 != "(null)" && $2 != "null" )
+			before[$1] = $2;
+		if ($3 != "(null)" && $3 != "null" )
+			after[$1] = $3;
+	}
+	close(crosscmd);
+	FS=oldFS;
+}
+
+/^spell spells/,/^}/ {
+	++line;
+	if (line < 3 || $0 ~ /^}/)
+		next;
+	if ($4 > 0 || $7 > 0 || $8 > 0) {
+		spell = $1; sub("^[{ \t]*", "", spell);
+		level = $2; sp = $3;
+		checks = sprintf("%s</td><td>%s</td><td>%s",
+				check($4), check($7), check($8));
+				# wand, scroll, book
+		# Skip the next line, we have the info needed in the mappings
+		getline;
+
+		arch_b = (spell in before) ? "~~" before[spell] "~~" : "";
+		arch_a = (spell in after) ? "~~" after[spell] "~~" : "";
+
+		printf("<tr><th>%s</th><td>%s</td><td>%s</td><td>%d</td><td>%d</td><td>%s</td></tr>\n",
+			capitalize(spell), arch_b, arch_a, level, sp, checks);
+	}
+}
+
+function check(i) {
+/* I suggest the 'x' is replaced by a cool checkmark gif */
+
+	return 	(i+0 != 0) ? "x" : " ";
+}
+
+function capitalize(str) {
+	return toupper(substr(str, 1, 1)) substr(str, 2);
+}

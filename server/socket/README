@@ -1,0 +1,61 @@
+This directory contains the socket related code.
+
+When to differentiate socket related code and code that should belong
+in either the server or common directory is a bit of a grey area.  A
+good test is that if the codes primary purpose is to send data to the
+client or receive/parse client commands, it should be here.
+
+Certainly the low level communication commands need to be here (setting
+up the socket, and the primitive reads/writes which more format the data
+but don't originate it).   The functions that encapsulate the item
+details to send to the client are also located in this directory, as
+are some of the protocol commands the client sends to us.
+
+ The higher level commands (ie, north, maps, cast, ...) are not included
+here.  Some of them probably should be, since they do little more than
+just output data (who, maps for example.)  The problem with this approach
+is the main dispatch routine is still in the server directory, as it should
+be (commands to move the player primary function is to do just that - move
+the player.  updating the players view is the result of that move).  So
+it probably makes sense to keep all those commands clustered there.
+
+ The commands where moved out because I wanted a cleaner seperation of
+the client/server protocol area and the actual server functions - this
+makes it easier to find code that your are looking for and reduces
+the number of files in the server directory.  Down the road, I see
+this as more of an issue as the common directory will likely get incorporated
+into the server directory and that then get broken out into a few
+more specific subdirectories (objects, map, maybe a few more).
+
+Description of the files:
+
+info.c:  Contains the drawinfo and magic map commands.  Was
+called sockio.c
+
+init.c: Handles basic initialization of data needed for the client
+server, initialization of data structure for new clients, and the freeing
+of data when done.  This also contains the declarations for the global
+variables that are used.
+
+item.c:  Commands dealing with objects.  This includes both
+server updates to the clients, and request from the client to perform
+an action on some item.  Some requests from the client may get passed
+back to functions in the server directory - more commands from the
+server probably need to get moved.
+
+loop.c: Main socket event loop.  This includes the select calls and
+the main dispatch loop for data read from the sockets.
+
+lowlevel.c:  Low level socket commands.  The actual calls to read and
+write data to the socket.  This file also includes the glue to format
+packets per the protocol definition, decompress the packets, and the
+utility functions to add/remove stuff from the SockLists.  This
+only really deals with moving the data back and forth at a low
+level (intergers/bytes), not at the object level.  It also contains
+the statistics recording functions.
+
+request.c:  Handles requests to/from the client.  This is the
+low level protocol commands, not the higher level game commands.
+This includes sending the players attributes and map to the client.
+
+sounds.c: Calls for sending sound information to the client.

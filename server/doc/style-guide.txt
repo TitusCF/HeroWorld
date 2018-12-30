@@ -1,0 +1,280 @@
+I've redone this file to hopefully make it a little easier to read through
+and quickly get some idea what to do.  There are 3 sections -
+section 1 is current programming style/hints for developers to make
+things easier.  Section 2 is programming guide for new addition.
+Section 3 is notes for making patches.
+
+------------------------------------------------------------------------------
+Section 1 - currently used conventions/hints for new code writers:
+
+1) variable abbreviations - op is short for object pointer, ob is for
+object, and pl is for player.
+
+2) Some functions are named using the conventions above - the naming reflects
+what options they take (insert_ob_in_ob takes 2 object structures)
+
+3) Indentation is 4 spaces.
+
+4) Some structure elements should never be accessed directly - rather,
+there are other functions to use the values.
+
+     	object->owner:  This contains the owner id for this object.  Use
+	set_owner and get_owner instead.  Directly using object->owner
+	is likely to get unpredictable results.
+
+	object->nrof:  This contains the number of an object.
+	Since changing this will change the weight of an object, direct
+	access should also be avoided.  Use decrease_ob_nr, split_ob,
+	and insert_ob_in_... - the later will merge the objects if
+	applicable.
+
+5) If using insert_ob_in_map and plan to do further actions with the object,
+check and make sure the object still exists after insertion - it is possible
+that the object gets destroyed while being inserted.
+
+------------------------------------------------------------------------------
+Section 2 - Style guide for new additions:
+
+1) Use descriptive variable names.  op and pl should only be used for
+temporary variables (cycling through the list or the like).  For variables
+well defined, use an accurate name (ie, hitter, sack, etc).
+
+2) Only add name options with #ifdef's to the config file if the behaviour
+seriously changes the game.  Adding a new spell does not warrant an
+#ifdef.  There are already too many options in the config.h file.
+
+3) Log errors/diagnostics with the LOG function.  When doing so,
+please include the function name - this is especially true for errors.
+
+4) If you want to add special debug code for certain compiles, generate
+a unique #define for it - don't use the global DEBUG.  For example,
+NEWCS_DEBUG.
+
+5) Try to use the [s/u]int[8/16/32] whenever possible.  Use the one
+of appropriate size/type.  If not sure, go for the next size up.  Do
+not ever write code assuming that any of those will have an exact number
+of bits - those types only mean that you will get at least that many
+bits - you may get more.
+
+6) The exception to #5 above is strings.  Continue to use 'char', since
+the signedness of functions that take string options can differ system
+to system, and generate excessive warnings if the wrong sign is used.
+
+7) When adding new function, include a comment of what the function is
+supposed to do, what options it takes, and what if any value it returns.
+This makes debugging of such functions easier, and also makes it better
+known to other developers if that function might be useful to them.
+
+8) Try to keep lines to less than 80 columns when possible.  This is not
+a strict requirement - don't break up some complex comparison because the
+line would otherwise be 83 characters long.  Xterms can be resized to most
+any width.  However, use your judgement on whether breaking up a long
+line would make something more or less readable.
+
+9) Assume all names use one namespace.  For example, if there is a
+struct called spell, don't make the name of an optional parameter spell.
+This will break on ANSI C compilers that follow the spec strictly
+(gcc does not, even with -strict -ansi)
+
+10) As a followup on 9 above, don't use nonstandard gcc extensions
+(// for comment lines, ability to nest functions, declare arrays with
+variable bounds, etc.)  Likewise, don't use special system functions - don't
+assume the target system will be bsd or svr4 - if using a potentially non
+standard function, add checks in the autoconf script and include a version
+of the function in case it is not on that system.  They key word here is
+portability - don't assume everyone else has the same system as you do.
+
+11) Write code that can easily be maintained in the future, not code that
+is easiest to write at that second.  This basically means don't do the
+quick and ugly hack, but instead fix it properly.
+
+12) Use 4 space indentation.  While a lot of old code may have 2 space,
+the move to 4 space will make future readability easier.
+
+Take from http://www.jwz.org/doc/tabs-vs-spaces.html
+
+In Emacs, to set the mod-N indentation used when you hit the TAB key, do this:
+
+      (setq c-basic-indent 2)
+      or (setq c-basic-indent 4)
+
+To cause the TAB file-character to be interpreted as mod-N indentation, do this:
+
+      (setq tab-width 4)
+      or (setq tab-width 8)
+
+To cause TAB characters to not be used in the file for compression, and for only
+spaces to be used, do this:
+
+(setq indent-tabs-mode nil)
+
+To keep myself honest (that is, to ensure that no tabs ever end up in source
+files that I am editing) I also do this in my .emacs file:
+
+(defun java-mode-untabify ()
+    (save-excursion
+      (goto-char (point-min))
+      (while (re-search-forward "[ \t]+$" nil t)
+        (delete-region (match-beginning 0) (match-end 0)))
+      (goto-char (point-min))
+      (if (search-forward "\t" nil t)
+          (untabify (1- (point)) (point-max))))
+    nil)
+
+  (add-hook 'java-mode-hook
+            '(lambda ()
+               (make-local-variable 'write-contents-hooks)
+               (add-hook 'write-contents-hooks 'java-mode-untabify)))
+
+That ensures that, even if I happened to insert a literal tab in the file by
+hand (or if someone else did when editing this file earlier), those tabs get
+expanded to spaces when I save. This assumes that you never use tabs in places
+where they are actually significant, like in string or character constants, but
+I never do that: when it matters that it is a tab, I always use '\t' instead.
+
+To get vim to interpret tab as an ``indent'' command instead of an insert-a-tab
+command, do this:
+
+set softtabstop=2
+
+To set the mod-N indentation used when you hit the tab key in vim (what Emacs
+calls c-basic-indent), do this:
+
+set shiftwidth=2
+
+To cause the TAB file-character to be displayed as mod-N in vi and vim (what
+Emacs calls tab-width), do this:
+
+set tabstop=4
+
+To cause TAB characters to not be used in the file for compression, and for only
+spaces to be used (what emacs calls indent-tabs-mode), do this:
+
+set expandtab
+
+12.1) I work on several projects and each uses a different indent format. What
+      do I do?
+
+Taken from an email from Eric Estabrooks <estabroo@talkware.net>, which is
+based on info found in the linux kernel.
+
+add to your .emacs
+; linux kernel c mode
+(defun linux-c-mode ()
+   "C mode with adjusted defaults for use with the Linux kernel."
+   (interactive)
+   (c-mode)
+   (c-set-style "K&R")
+   (setq c-basic-offset 8))
+
+; set linux kernel mode for anything in /usr/src/linux*
+(setq auto-mode-alist (cons '("/usr/src/linux.*/.*\\.[ch]$" . linux-c-mode)
+                        auto-mode-alist))
+
+13)
+ /*
+  * do block
+  * comment like
+  * this
+  */
+
+  /*
+    and not
+    like this
+   */
+
+  /* if you are doing a single line comment, this method is fine */
+
+  Its much easier to spot the block comments if they all start with *,
+  and these comments tend to be worth noticing.
+
+14) As discussed on irc, the preferred style for expressions is like this:
+
+if (expression) {
+  statement;
+  statement;
+}
+
+if <space> (expression), the space between the if and expression is required.
+
+NOT like this:
+
+if (expression)
+{
+  statement;
+  statement;
+}
+
+15) The preferred style of formal parameters:
+
+void myFooFunction(param1, param2, param3) {
+  statement;
+  statement;
+}
+
+No space after the left paren, no space before the right paren.
+Comma right after the formal param, space right after the comma.
+
+
+16) Local variable names. Just a rules of thumb.
+
+This are ok:
+
+  int mylongvarname;
+  int my_long_var_name;
+
+Please do NOT use caps expect for typedefs, enums and defines.
+
+------------------------------------------------------------------------------
+Section 3 - sending in patches:
+
+1) Please send patches on a bug fix or feature enhancement basis
+individually, and not make mega patches.  A diff that changes 10
+things is first more difficult for me to look over and understand as
+unrelated changes might be going on.  It is also harder for me to reject
+part of a patch (feature X is nice, but Y doesn't work).
+
+2) Please state in the message included with the patch what it fixes/changes.
+Too often, I get patches which is just a bunch of source code, and I have
+no idea if I want to incorporate it, or even if the bug is still there.
+Please also state what version of crossfire the diff is for.
+
+3) I will assume any patches mailed directly to me are to be included.
+If posting a patch on the mailing list (either source or ftp location),
+please explicity state whether or not you want that patch incorporated
+into the master source.  Many times, a patch may be made available on
+an expiremental basis which is not ready for widespread distribution.
+
+4) When making patches, please make context diffs.  Please also include
+the directory that the file is in (run the diff in the top level
+directory).  Please make 5 line context diffs - large line context diffs
+are fine if you think that may make it easier.
+
+ Example:
+
+	   'diff -c5 (oldfile) (newfile)'
+
+	You can also do diffs of entire directories.  Do do this, type:
+
+	    'diff -c5 -r (old_directory) (new_directory)'
+
+	An example:
+
+	    'diff -c5 -r crossfire-0.90.1 crossfire-0.90.2'
+
+5) Gnu diff will include files that did not exist before.  Other diff
+programs may not do this.
+
+6) If your diff looks excessively long and you made a lot of formatting
+changes, you can add -w to the diff options to have it ignore whitespace.
+Note that this will then mean that those formatting changes will then be lost.
+
+7) There is no need to make a seperate diff file for each file
+different (ie, treasure.diff, player.diff, etc).  Assuming you follow steps
+1-6, all the diffs can be contained in one file, and patch will deal with
+it just fine.
+
+8) If you need to send a map, new archetypes, or other new files where
+a diff doesn't make since, a uuencoded tar file will work just fine.
+
+Mail all patches to crossfire-devel@lists.real-time.com

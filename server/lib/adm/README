@@ -1,0 +1,28 @@
+This directory contains various scripts and utilities.  This file attempts
+to describe them:
+
+dilate_xpm_files: Try to figure out what pixels on a xpm file should be
+transparent, and then makes the changes.
+
+fix_xpm_colors:  Takes and .arc file, and converts all black and
+white xpm files that archetype uses to color xpm files, using the colors
+in the archetype description.
+
+dilate_xpm_files and fix_xpm_colors should no longer be needed - all the old
+bitmaps have been converted to XPM images, and any new ones should be
+created in XPM mode to better use multiple colors.
+
+map_info: (From Tero Haatanen <Tero.Haatanen@lut.fi>).  It goes through
+the map files in the specified directory, printing out problems and
+also generating a list of used objects.
+
+map_check:  Another program that goes through and checks maps.  This one
+starts at the starting map, and then visits all the maps connected to it,
+and so on.  Thus, its output and the output of do a 'find . -type f -print'
+in the maps directory, can be compared after some modification, to find maps
+in the map directory that are not connected to anything.  I think that
+map_info does a better job about other map errors, however.
+
+getfaces: Reads an archetype tree and outputs as list of faces used by
+objects that fit certain criteria. It has many options so be sure to check
+it's usage.

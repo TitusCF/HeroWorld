@@ -1,0 +1,57 @@
+#$Id: settings.txt 18981 2013-09-04 21:19:20Z partmedia $
+
+This document describes the various settings in the "settings" file, and
+what they do.
+
+# metaserver values.
+# notification on/off controls the notification to the metaserver.
+# server and port is the metaserver host and port to connect to.
+# comment is sent to the metaserver.  It can be specific settings to on
+# the server, play behaviour, etc.
+# host is the name of this host as we should report it to the metaserver
+
+metaserver_notification off
+metaserver_server crossfire.real-time.com
+metaserver_host put.your.hostname.here
+metaserver_port 13326
+metaserver_comment Put a comment here.
+
+
+worldmapstartx  the starting name of the worldmap.  usually 100.
+worldmapstarty  the starting name of the worldmap, also usually 100.
+worldmaptilesx  how many tiles across is the worldmap?  30
+worldmaptilesy  see above.  30
+worldmaptilesizex
+worldmaptilesizey  How big is each tile?  50.
+
+The above defines a worldmap starting at world_100_100 and ending at
+world_129_129, each a 50x50 map. (900 files)
+
+dynamiclevel  Obsolete. This setting has been removed.
+
+fastclock Make the timeclock run ultra-fast.  Debugging use usually.
+
+dm_mail 	add your email address here.
+not_permadeth 	usually true.  If false, death is the final end.
+resurrection 	usually false.  If death is permament, can you be ressurected?
+set_title 	can players set their titles?  true
+search_items 	can players search through thier items?  true
+spell_encumbrance	Does wieght of armor affect spells?  true
+spell_failure_effects	If you fumble, does it hurt alot?  false
+casting_time	Does it take forever to cast a spell? false
+motd		name of the motd file.  motd
+real_wiz	can wizards mangle objects for player use?  true
+recycle_tmp_maps	Do the same maps allways reappear?  false.  Not
+			good for multiplayer servers.
+spellpoint_level_depend	Do spell costs go up as level increases?  true
+stat_loss_on_death	if set, player loses stat when they die.  false
+permanent_experience_percentage This percentage of the player's exp will be
+				'permanent' and not lost on death: 25
+death_penalty_percentage	The amount of exp a player can lose on
+				death: 20
+death_penalty_levels		The maximum number of levels a player could
+				lose from dying: 3
+balanced_stat_loss	if set, death stat depletion is balanced by
+			level. False
+no_player_stealing	if set, players cannot steal from other players. False
+create_home_portals	if set, town portal can be cast inside of player-unique maps. False.

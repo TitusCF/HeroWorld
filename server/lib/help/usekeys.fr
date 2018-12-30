@@ -1,0 +1,17 @@
+La commande usekeys contrôle la manière dont les clefs du joueur sont choisies et utilisées.
+
+Usage:
+
+    usekeys <valeur>
+
+où <valeur> peut être l'une des options suivantes:
+
+inventory: Seules les clefs de l'inventaire principal sont utilisées. C'est le comportement par défaut.
+
+keyrings: Seules les clefs dans le trousseau actif seront utilisées.
+
+containers: Seules les clefs dans les conteneurs actifs seront utilisées.
+
+Notez que les trousseaux sont juste un type particulier de container, aussi sont-ils inclus dans la recherche si l'option "containers" est utilisée.
+
+Seuls les containers actifs sont employés. Les clefs ne sortiront donc jamais d'un container. Par contre, si une telle clef est nécessaire pour l'action envisagée, un message d'indice vous rappellera son existence.

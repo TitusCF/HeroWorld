@@ -1,0 +1,16 @@
+Drop usage:
+
+drop [number] name
+
+name is the name of the item(s) to drop. It may match multiple items. The name is matched against the start of the objects in your inventory. The name matching is case insensitive.
+
+There are a few special name values:
+
+    all: matches any item.
+    unpaid: matches unpaid items
+    cursed: drops items known to be cursed or damned.
+    unlocked: drops items not locked in your inventory
+
+number is optional. This acts as the number of the object to drop. The objects number must be at least the number for it to be dropped. For example, if you do 'drop 10 scroll', only groupings of 10 or more scrolls will be dropped. A collection of 5 scrolls will not be dropped.
+
+See also 'dropall' and mouse button control within client for dropping objects.

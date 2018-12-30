@@ -1,0 +1,102 @@
+# items-extract - parse the archetypes-file and output the
+# artifacts in a structured format.
+
+# Variables passed when invoked:
+#   living_c - filename where the array attacks is defined.
+
+BEGIN {
+	# These types are always artifacts:
+	# containers, gems, rods, wands
+	artifact[122] = artifact[60] = artifact[3] = artifact[109] = 1;
+	# money, rings, runes, scrolls
+	artifact[36] = artifact[70] = artifact[154] = artifact[111] = 1;
+	# map, id altars, shop mat, lighters
+	artifact[22] = artifact[139] = artifact[69] = artifact[75] = 1;
+	# food, flesh, horn
+	artifact[6] = artifact[72] = artifact[35] = 1;
+
+	# armour improver, weapon improver, skills
+	artifact[123] = artifact[124] = artifact[43] = 1;
+
+	# exits --- lots and lots of stuff!
+	artifact[66] = 1;
+
+	# armour, bows, gravestone
+	artifact[16] = artifact[14] = artifact[38] = 1;
+
+	# book, altar, corpse
+  	artifact[8] = artifact[18] = artifact[157] = 1;
+
+	# lock_door, special_key, door, keys
+  	artifact[20] = artifact[21] = artifact[23] = artifact[24] = 1;
+
+	# potion,  sign, savebed
+  	artifact[5] = artifact[98] = artifact[106] = 1;
+
+	# button, handle, gate, trapdoor
+  	artifact[92] = artifact[93] = artifact[91] = artifact[95] = 1;
+
+	# earthwall, firewall, spinner, director
+  	artifact[45] = artifact[62] = artifact[90] = artifact[112] = 1;
+
+        # skill tools, spells
+  	artifact[74] = artifact[101] = 1;
+  	force[101] = 1;
+
+	# Don't eleminate repeat occurances
+	keeprepeat[66] = keeprepeat[98] = keeprepeat[24] = 1;
+
+	# will take only matching names
+	valuable[154] = "Magical Rune,Rune of Fire,Rune of Frost,Rune of Death,Rune of Shocking,Rune of Blasting"
+	valuable[123] = "prepare";
+	valuable[66] = "guild,shop";
+	valuable[43] = "talisman,holy symbol,lockpicks";
+
+	# throw out all matching names
+	worthless["chalice"] = worthless["acid spit"] = 1;
+	worthless["pyromaniac"] = worthless["rock thrower"] = 1;
+	worthless["a cracked cauldron"] = 1;
+	worthless["small bagpipe"] = worthless["magic_mouth"] = worthless["trap"] = 1;
+ 	worthless["spikes"] = worthless["stoneblock"] = worthless["cannon"] = 1;
+ 	worthless["volcano"] = worthless["rock thrower"] = 1;
+	worthless["drop 10 goldcoins"] = 1;
+}
+
+/^Object/ {
+        slay = magik = "";
+        name = obj = $2;
+        x = y = 0;
+        xmin = xmax = ymin = ymax = 0;
+        More = 0;
+        dam = type = magical = ac = armour = weight = last_sp = 0;
+        att = prot = immune = invisible = 0;
+}
+
+/^type/         { type = $2 }
+/^last_sp/      { last_sp = $2 }
+/^dam/          { dam = $2 }
+/^ac/           { ac = $2 }
+/^armour/       { armour = $2 }
+/^weight/       { weight = $2 }
+/^attacktype/   { att = $2 }
+/^protected/    { prot = $2 }
+/^immune/       { immune = $2 }
+/^slaying/      { slay = $2; }
+/^magic/        { magical = $2 }
+/^name/         { name = substr($0, 6) }
+/^invisible/	{ invisible = $2 }
+/^end/ {
+	# but they are in the worthless, we ignore it
+	if (artifact[type] && !worthless[name] && (!invisible || force[type])) {
+
+		if(!valuable[type] || (valuable[type] ~ name))
+		   if(keeprepeat[type] || !(oldname ~ name))
+			printf("%d &~~%s~~ \n", type, obj);
+		oldname = name;
+
+	}
+}
+
+END {
+	close("items");
+}

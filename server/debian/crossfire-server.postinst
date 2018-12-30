@@ -1,0 +1,47 @@
+#! /bin/sh -e
+
+. /usr/share/debconf/confmodule
+
+case "$1" in
+  configure)
+	#remove world writable bits from files in /var/games/crossfire. These
+	#are left from old packages
+	if [ -d /var/games/crossfire/ ]; then
+	    if [ "`find /var/games/crossfire/ -type f -perm 0666 | wc -l`" -gt 0 ]; then
+		echo "removing world writable bits from crossfire files in /var/games/crossfire/"
+		find /var/games/crossfire/ -type f -perm 0666 |xargs chmod o-w
+	    fi
+	fi
+
+	#pre-1.0.0 versions may have left world writable logfiles
+	if [ -d /var/log/crossfire/ ]; then
+	    if [ "`find /var/log/crossfire/ -type f -perm 0666 | wc -l`" -gt 0 ]; then
+		echo "removing world writable bits from crossfire log files in /var/log/crossfire/"
+		find /var/log/crossfire/ -type f -perm 0666 |xargs chmod o-w
+	    fi
+	 fi
+	 ;;
+
+  abort-upgrade)
+    # do nothing
+    ;;
+
+  abort-remove)
+    # do nothing
+    ;;
+
+  abort-deconfigure)
+    # do nothing
+    ;;
+
+  *)
+    echo "$0: incorrect arguments: $*" >&2
+    exit 1
+    ;;
+
+esac
+
+#crossfire seems to be buggy regarding fd handling, FIXME!
+db_stop || true
+
+#DEBHELPER#

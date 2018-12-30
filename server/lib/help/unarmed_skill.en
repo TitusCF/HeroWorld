@@ -1,0 +1,10 @@
+The unarmed_skill command determines what skill you will use in unarmed combat.
+
+If unarmed_skill is not set, a default skill will be used. That default will be karate, clawing, flame touch, punching, and wraith feed. For dragons, clawing will be tried first, then the rest in that same order.
+
+The unarmed skill can always be overridden by explicitly using ready_skill for the desired skill.
+
+For example, you have set the unarmed_skill to flame touch. However, you are fighting a flame resistant creature, you can use karate by doing a 'ready_skill karate'. You will continue to use karate until you change it again or use some other skill (equip a weapon, cast a spell, etc)
+
+This value is saved and is persistent across logins. It is a property of the character, so different characters can be set with different unarmed_skill values.
+

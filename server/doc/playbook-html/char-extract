@@ -1,0 +1,112 @@
+# stats-extract - parse the archetypes-file and output the
+# player's stats in a structured format.
+
+# July 96 - this was modified slightly for the player's handbook.
+# -b.t. thomas@astro.psu.edu
+
+# Variables passed when invoked:
+#   living_c - filename where the array attacks is defined.
+
+BEGIN {
+	# These stats will be added to the "magik" string according
+	# to the pattern. "%s" should be "%+d", but that isn't
+	# portable.
+	magic["luck"] = "luck %s";
+	magic["exp"] = "speed %s";
+	magic["sp"] = "spell-point regeneration %s";
+	magic["hp"] = "hit-point regeneration %s";
+	magic["dam"] = "Dam %s";
+	magic["wc"] = "Wc %s";
+	magic["ac"] = "Ac %s";
+	magic["armour"] = "armour %s";
+
+	magic["reflect_spell"] = "reflect spells";
+	magic["xrays"] = "X-ray vision";
+	magic["stealth"] = "stealth";
+	magic["flying"] = "flying";
+
+	# Read the attack-types (and immune/protection)
+	while ((getline buff < living_c) == 1) {
+		if (buff ~ /attacks\[/) {
+			att = 0;
+			while (1) {
+				getline buff < living_c;
+				if (buff ~ "^}")
+					break;
+				gsub("[ \t]*\"", "", buff);
+				nr = split(buff, arr, ",");
+				for (i = 1; i <= nr && arr[i]; i++)
+					attack[++att] = arr[i];
+			}
+			break;
+		}
+	}
+	close(living_c);
+}
+
+/^Object/ {
+	slay = magik = "";
+	name = obj = $2;
+	type = weight = last_sp = 0;
+	att = prot = immune = 0;
+	stat["Str"] = stat["Dex"] = stat["Con"] = 0;
+	stat["Int"] = stat["Wis"] = stat["Pow"] = stat["Cha"] = 0;
+}
+
+/^Str|^Dex|^Con|^Int|^Wis|^Pow|^Cha/	{ stat[$1] = $2; next }
+
+$1 in magic	{ add_magik(magic[$1], $2) }
+
+/^type/		{ type = $2 }
+/^last_sp/	{ last_sp = $2 }
+/^weight/	{ weight = $2 }
+/^attacktype/	{ att = $2 }
+/^protected/	{ prot = $2 }
+/^immune/	{ immune = $2 }
+/^slaying/	{ slay = $2; }
+/^name/		{ name = substr($0, 6) }
+
+/^end/ {
+	if (type == 1) {	# Players
+		if (att % 2) --att;	# Skip physical attack
+		magik = magik attacktype(att , "Attacks:");
+		magik = magik attacktype(prot, "Protected:");
+		magik = magik attacktype(immune, "Immune:");
+		if (slay)
+			magik = magik "<br>" capitalize(slay=="wall" ? "excavation" : slay "-slaying");
+		sub("^<br>", "", magik);
+		magik = capitalize(magik);
+		name = capitalize(name);
+		sub("_", " ", name);
+		printf("<tr><td>%s</td><td>~~%s~~</td><td>%d</td><td>%d</td><td>%d</td><td>%d</td><td>%d</td><td>%d</td><td>%d</td><td>%s</tr>\n",
+		       name, obj,
+		       20+stat["Str"], 20+stat["Dex"], 20+stat["Con"],
+		       20+stat["Int"], 20+stat["Wis"], 20+stat["Pow"],
+		       20+stat["Cha"], magik);
+	}
+}
+
+END {
+	close("items");
+}
+
+
+# Given a bitmask, give a string enumerating the meaning of the bits.
+function attacktype(at, type,   i, str) {
+	for (i = 1; i in attack; i++) {
+		if (at % 2)
+			str = (str ? str ", " : "") attack[i];
+		at = int(at/2);
+	}
+	return str ? "<br>" type " " str : "";
+}
+
+function add_magik(str, val) {
+	str = sprintf(str, val < 0 ? val : val);
+	if (str)
+		magik = magik ? magik ", " str : str;
+}
+
+function capitalize(str) {
+	return toupper(substr(str, 1, 1)) substr(str, 2);
+}

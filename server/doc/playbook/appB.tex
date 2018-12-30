@@ -1,0 +1,131 @@
+\chapter{Skills}
+\label{app:skills}
+\index{skills, description}
+
+The following is the current (7/15/96) roster of skills and the
+description for each. Use the command {\tt crossfire -m5} to see the array
+of skills and experience in your version of crossfire.
+(Note: you need to have compiled with the {\tt DUMP\_SWITCHES} and
+{\tt ALLOW\_SKILLS} flags for this to work!)
+
+Emphasis on type denotes a skill which monsters/NPC's may also use.
+
+\begin{longtable}{|p{4cm}|p{9cm}|} \hline
+alchemy &  User can identify potions, containers, flesh parts, \\
+	&  and amulets. \\
+ &  \\
+bargaining   	& While this skill is readied the user has added CHA \\
+	 	& for purposes of purchase and selling of items only. \\
+		& Cha is never allowed to exceed 30. \\
+ &  \\
+bowyer  &  User can identify missile weapons and missiles. \\
+ &  \\
+{\em clawing}	& User can make a {\em bare-handed attack}. Damage \\
+                & is based on the user's Str and {\tt level}. This is the \\
+		& default ``hand-to-hand'' fighting skill for the  \\
+		& Quetzecoatl character class. \\
+ &  \\
+find traps	& User can search (more effectively) for traps. \\
+		& Not a 'passive' skill, it is applied in order \\
+		& to gain the advantage in discovering traps. \\
+ &  \\
+{\em flame touch} & User can make a {\em bare-handed attack}. Damage \\
+		& is based on the user's Str and {\tt level}. This \\
+		& is the default hand-to-hand fighting skill \\
+		& for the Fireborn character class. \\
+ &  \\
+{\em hide}	& User enjoys limited form of invisibility. If \\
+		& they attack or move too much they become visible. \\
+ & \\
+jeweler		& User can ident gems and rings that they hold. \\
+ & \\
+{\em jumping}	& User can 'skip' over 1-2 spaces in a selected \\
+		& direction. Distance depends on weight carried, \\
+		& STR and DEX of the user. This skill may also \\
+		& be used as an attack. \\
+ & \\
+{\em karate}	& User can make a {\em bare-handed attack}. Damage \\
+		& is based on the user's Str and {\tt level}. This attack \\
+		& is the fastest and (at higher levels) most deadly \\
+		& of the hand-to-hand attacks available. \\
+ & \\
+literacy	& User can ident books and scrolls that they hold. \\
+		& It also allows the player to read scrolls, books, \\
+		& \wizbook s and praybooks. \\
+ & \\
+{\em lockpicking} & User may 'pick locks' (open doors). User needs \\
+		& to have readied 'lockpicks' to use this skill. \\
+ & \\
+meditation	& Player can regain mana/hp at an accelerated rate. \\
+		& Player must first strip off encumbering armour \\
+		& however. This skill is only available to the Monk \\
+		& character class. \\
+ & \\
+melee weapons	& User may use hand-held weapons (eg swords, \\
+		& spears, mace, etc). \\
+ & \\
+missile weapons	& The user is allowed to make attacks with \\
+		& ranged weapons (eg bow, crossbow). \\
+ & \\
+mountaineer	& While the skill is readied, the possessor will \\
+		& move faster through "hilly" terrain (hills, \\
+		& mountains, etc.) \\
+ & \\
+oratory		& User may 'recruit' followers. Recruitees must be \\
+		& of lower {\tt level}, and unaggressive to start. Use \\
+		& of this skill may anger the audience. Also, \\
+		& 'special' monsters are immune to recruitment. \\
+		& Success depends on User Cha and {\tt level}. \\
+ & \\
+praying		& User is allowed to cast ``priest'' spells. In addition, \\
+		& this skill may be used to accelerate the accumulation \\
+		& of grace. This skill may be either {\em learned} or \\
+		& acquired through the use of a {\em holy symbol}. \\
+ & \\
+{\em punching}	& User can make a {\em bare-handed attack}. Damage \\
+		& is based on the user's Str and {\tt level}. This is \\
+		& the most feeble of the hand-to-hand attacks. \\
+ & \\
+remove traps 	& User may remove previously discovered traps. \\
+ & \\
+sense curse	& User may discover whether items that they hold \\
+		& are {\em cursed}. \\
+ & \\
+sense magic	& User may discover whether items that they hold \\
+		& are {\em magic}. \\
+ & \\
+set traps	& Unimplemented. \\
+ & \\
+singing		& User may pacify hostile monsters with this skill. \\
+		& Certain kinds of monsters are immune. Success \\
+		& depends on user {\tt level} and CHA. \\
+ & \\
+smithery	& User may ident arms and armour that they hold. \\
+ & \\
+\spellcasting\ 	& User is allowed to cast ``wizard'' spells. This \\
+		& skill may be acquired either through the use \\
+		& of a {\em talisman} or {\em learned} via a skill scroll. \\
+ & \\
+{\em stealing}	& User can steal items from other creatures. \\
+ & \\
+thaumagragist	& User can ident rods, wands and horns that they \\
+		& are holding. \\
+ & \\
+throwing	& Unimplemented. \\
+ & \\
+use magic item	& User can use magic items like rods/wands/horns. \\
+ & \\
+woodsman	& While the skill is readied, the possessor will \\
+		& move faster through ``wooded'' terrain (forest, \\
+		& grasslands, brush, jungle, etc.). If actively used, \\
+		& this skill will identify foods and flesh parts. \\
+ & \\
+writing		& User may both write messages in books {\em and} rewrite \\
+		& spell scrolls with a previously known spell. For \\
+		& new spell scrolls mana, time and an old scroll are \\
+		& needed. Backfire effects are possible. To write \\
+		& text in a book, use the skill as: {\tt use\_skill} \\
+		& {\tt writing $<$msg$>$}. This skills is only available as a \\
+		& 'writing pen'; the literacy skill must be possessed \\
+		& before this can be used. \\ \hline
+\end{longtable}

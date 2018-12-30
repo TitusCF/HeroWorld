@@ -1,0 +1,413 @@
+#
+# Message file for books
+#
+# Message entries contained in this file will
+# appear randomly in readable objects like books, scrolls
+# and such (op->type==BOOK).
+#
+# File format:
+# ------------
+# MSG <identifier>: start of new message. The identifier is optional and free-form,
+#  and must be unique.
+#  If set then players will keep the message as part of their knowledge when read.
+#  Do NOT reuse identifiers if changing messages.
+# TITLE <title>: message's title, for knowledge management. Mandatory if
+#  the message has an identifier, else unused.
+# CHANCE <chance>: optional chance of the message appearing in a book, relative
+#  to the sum of all chances. 0 or no line means this message will never appear.
+# TEXT: start of the message's body
+# ENDMSG: marks the end of a message's body and message.
+# QUEST: optional quest internal code and state this message will activate.
+#  Example: "QUEST TempleOfDoom 0>10" will set the quest 'TempleOfDoom' to state 10
+#  if the player didn't yet do it.
+#
+# TEXT must be the last item in a MSG block.
+#
+# When designing messages please keep in mind:
+# -------------------------------------------
+#    1) Message length shouldn't exceed the maximum
+# buffer size for books (you'll generate a warning message
+# if you do this). Check the file include/read.h for the
+# current message size limit (BOOK_BUF).
+#    2) Only put newlines where significant. Clients will
+# automatically wrap the text.
+#
+#
+MSG
+CHANCE 1
+TEXT
+ <undecipherable text>
+ENDMSG
+#
+#
+MSG G-001
+TITLE Fortress of Barad-Dur
+QUEST quests/BaradDur 0>10
+CHANCE 1
+TEXT
+"In the mountains north-west of the great city we found it at last -- the hidden fortress of Barad-Dur.
+
+What treasures could lie in it I do not know for our party never gained its way past the entryway.
+
+Skulls, pixies, and a horrible creature I hesitate to name decimated my friends and I."
+ENDMSG
+#
+#
+MSG G-002
+TITLE Fortress of Ang
+QUEST quests/FortressAng 0>10
+CHANCE 1
+TEXT
+In ancient times past the great fortress of Ang was raised on the eastern shore. Many inhabitants it has had, but the last known was the most unusual.
+
+A titan of rare power is said to live in Ang now. There he serves as guardian of an artifact of unusual might.
+
+The exact location is now lost, but rumors locate it east, north-east of Navar, near the southern shore.
+ENDMSG
+#
+#
+MSG G-003
+TITLE About the northern country
+CHANCE 1
+TEXT
+Many have ventured into the northern country. Up beyond the mountains, alone in the wastes lies a vast domain of mines that delve deep into the earth.
+
+Know that these tunnels and shafts are quite perilous; for only once in recent times have I heard of an expedition returning from them.
+ENDMSG
+#
+#
+MSG G-004
+TITLE Map of western world
+CHANCE 1
+TEXT
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~
+~~~~~~~~~
+~~~~~~~~~              ^^^^^^^^^^^^^
+~~~~~~~~X==========   ^  %%%%%%^%^^^^^
+~~~~~~~ santo	  =     %%%%%%%%%%%%%%
+~~~~~~~	dominion  =      %%%The%%%%%%%
+~~~~~~	^^        =      %%%%%%%%%%%%%
+~~~~~~	^^        =      %%Great%%%%%%
+~~~~~~^	^         =       %%%%%%%%%%%%
+~~~~~~X===============================
+~~~~~~ Scorn  ^^^  =      %%%%%%%%%%%%
+~~~~~	     ^^^^  =  %% %%Forest%%%%%
+~~~          ^^^   =    %%%%%%%%%%%%%%
+~~~           ^^^  =    %%%%%%%%%%%%%%
+~~~         ^^   ===     %%%%%%%%%%%%%
+~~~              X Brest
+~~~~           ~~~~~
+~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------Map of Western World--------
+ENDMSG
+#
+#
+MSG G-005
+TITLE Alchemy attempt
+CHANCE 1
+TEXT
+...and then did the Alchemist agree to make me my potion.
+
+First he called to his grimm servants who hauld forth a great iron cauldron. Into this black device did he deposit his ingredients and, opening his spell book for reference, then did he cast his spell of alchemy therepon the cauldron.
+
+Greatly did the tub shake and move!
+
+I thought that the Alchemist had broke his device, but he chuckled at my ignorance. Into the cauldron did he reach an brought forth a filled bottle of golden amber fluid...
+ENDMSG
+#
+#
+MSG G-006
+TITLE Alchemy basics
+CHANCE 1
+TEXT
+  Know that there are 4 principle philosophical ingredients. In order, they are:
+
+   - philosophical salt
+   - philosophical sulphur
+   - philosophical phosphorus
+   - philosophical oil
+
+  The great alchemist has often said that all living things are made of these ingredients. Proper combination of these with other base objects can often create potions of power and might.
+ENDMSG
+#
+#
+# (C)2007 Y.E.J. Chachkoff. All rights reserved.
+# The author agreed to have his work distributed with the original Crossfire RPG game, any fork excluded.
+MSG G-007
+TITLE Commandeer's story
+CHANCE 1
+TEXT
+11 Tromisian 5211EK: We made a strange encounter while we were travelling down the ancient road to Lake Country. Plunderers from Jangk were attacking a caravan near the Iron Doors.
+
+We of course helped the merchants, and easily defeated the bandits, some fleeing. But merchants seemed... uneasy, once they recognized our Guard uniforms.
+
+We soon understood why: their twelve heavily sealed wagons were filled with Goblins, Orcs, and other creatures with the gift of speaking. They refused to tell us anything, so we decided to defer to the Lord's Justice. I don't know what will happen to them.
+
+From some testimonies we could gather, this traffic has been going on for years, for the benefit of the biggest domains of Lake Country.
+
+Me and my men will try to learn more about this.
+ENDMSG
+#
+#
+# (C)2007 Y.E.J. Chachkoff. All rights reserved.
+# The author agreed to have his work distributed with the original Crossfire RPG game, any fork excluded.
+MSG G-008
+TITLE Port Joseph's Bottle Riots
+CHANCE 1
+TEXT
+In 5122EK, Bottle Riots, only reprimed with difficulty, in Port Joseph drove local authorities to totally forbid taverns and other drink-related places, with the sole exception of shops controlled by the Sea Princes themselves.
+
+However, Josephians rapidly found a loophole in the decree, noticing it only applied to buildings on or above the ground level. They thus refurbished to taverns caves in individual houses; they are indicated by their green frontage.
+ENDMSG
+#
+# The following extracts are from the Crossfire wiki at http://wiki.metalforge.net/doku.php
+# and are supposed to be GPL or at least reusable ingame. If not the case, please tell and we'll remove
+MSG G-009
+TITLE Skorn foundation
+CHANCE 1
+TEXT
+The colony of Skorn was founded in 435EK by Skud the Great, when his expedition reached the shores of the continent. It is said that he first pitched his tent on the site where the inn now stands.
+ENDMSG
+MSG G-010
+TITLE Scorn's war against Dragons
+CHANCE 1
+TEXT
+The war against the Dragons rages from 1064 to 1135EK. Scorn is destroyed. Most of its inhabitants flee to the south. After 1115EK, the city is progressively rebuilt on top of the now buried ruins nowadays known as the Old City.
+ENDMSG
+MSG G-011
+TITLE The Sea Princes
+CHANCE 1
+TEXT
+The War of the Sea Princes took place in 1177EK. The last imperial ship reaches Scorn. Contacts with Khelens are now broken. Scorn becomes an independent kingdom.
+ENDMSG
+MSG G-012
+TITLE About Khelens
+CHANCE 1
+TEXT
+Khelens is the name of both a city and an Empire, that once ruled the world. The cities of Scorn and Navar were initially colonies of the Empire of Khelens.
+
+The fate of Khelens is currently unknown. According to the last known historical records, a political crisis shattered the very foundations of the Empire 5000 years ago, creating a civil war that ended by the independence of Scorn and the other colonies from it. Since that time, no imperial ship ever sailed back to Scorn, and the location of Khelens is now forgotten.
+ENDMSG
+MSG G-013
+TITLE Skud the Great
+CHANCE 1
+TEXT
+One of the first Builders, Skud the Great created many famous places, like the Scorn’s First Inn or the Newbie Tower.
+
+The reasons of the disappearance of Skud are mostly unknown. The Codex Skudensis mentions that it could have been because of the negative influence of the Arch-Demon Neth Aq. It is thought that The Tower of Skud, although left unfinished by its creator, may contain informations about the fate of one of the most famous Builder.
+ENDMSG
+MSG G-014
+TITLE History of Scorn
+CHANCE 1
+TEXT
+It is said that Scorn, as we currently know it, was built on an older version of itself, now buried underground.
+
+When the colony of Skorn was founded by Skud, the whole west was infested by dragons and wyverns. The imperial armies successfully fought the monsters, pushing them back on the other side of the mountains, and kept a vigilant guard to ensure that the huge monsters wouldn’t sneak in and attack their settlements.
+
+But there are always men who think they’re smarter than everybody else. Enteranni the Red was one of those men. Trying to take control of Scorn for himself, he decided to unleash a couple dragons against the city, after which he’d banish them and be seen as a savior. But so blind and thirsty of power he had become that dragons easily tricked him. His plan failed, and the flame of the dragonbreath destroyed Scorn.
+
+When dragon were finally vainquished, Scorn was rebuilt on top of its own ruins. The Old City of Scorn is now a dark, forgotten maze of crypts and halls infested by vermin of all sorts. Rumors say that some treasures from the glorious past of the city still sleep there, waiting to be found. Who knows? Maybe it is true, after all.
+ENDMSG
+MSG G-015
+TITLE Navar's location
+CHANCE 1
+TEXT
+Straddling the corner of the Imperial highway as it turns North near the Eastern border of the known world, and surrounded by dangerous territory, Navar is an unlikely site for one of the world’s grandest cities. Yet there it stands, dominating the skyline for miles around and showing the same bustling activity expected of any thriving market town.
+ENDMSG
+MSG G-016
+TITLE Darcap's foundation
+CHANCE 1
+TEXT
+In 2264 EK, the Kingdom of the Masts founded a colony called Darcap in the north of the continent. But before this colony could become autonomous the kingdom was destroyed, in 2287 EK, leaving it totally isolated.
+
+The inhabitants endured many hardships, many died of hunger. Some tried to reach, by small boat or on foot, a better land – none of them ever came back.
+
+One of the colonists, named Andreas, succeeded in persuading many inhabitants to worship Devourers, whose followers don’t suffer hunger. The other inhabitants argued, logically, that since many did convert they would have enough food, and refused to convert.
+
+After his death, Andreas was nicknamed “Andreas the Ravenous” – because he always liked good jokes –, and the church of Devourers was named after him.
+ENDMSG
+MSG G-017
+TITLE Darcap's rediscovery
+CHANCE 1
+TEXT
+In 6138 EK, a famous explorer named Herghist Appelnisht set foot in Darcap, the first stranger in four millenia. He stayed 2 years, learning the history and customs of Darcap and teaching the whereabouts of the rest of the world to the inhabitants. He then travelled back to Navar with a delegation in order to establish relations between Darcap and the other towns.
+ENDMSG
+MSG G-018
+TITLE Julio's story
+CHANCE 1
+TEXT
+In 6795 EK, a magician named Julio, wishing to take some distance with the agitation of the world, came to live in Darcap. He was expert in the four elements and spent the rest of his life studying the interactions of those, transforming four houses in the center of the town in laboratories. He was at the origin of many incidents and many inhabitants came to hate him.
+
+It is only many years after his death, in 6813 EK, that his major contribution to the town was made public. He had advised leaders on the affairs of the world, giving advice, solving many conflicts. A status was made as a token of gratitude and his house, which was once considered for destruction, was restored to display his work.
+ENDMSG
+MSG G-019
+TITLE The Imperial Highway
+CHANCE 1
+TEXT
+The proverbial “Yellow Brick Road” (nicknamed because the durable yellow clay used to make the bricks) which strings its way across the Main continent of BigWorld, the Imperial Highway was created during the time of the Empire and is a lasting legacy of a more peaceful time. Travel along the Imperial Highway is still reasonable safe as the road is maintained and there are inns and shops along this road.
+ENDMSG
+MSG G-020
+TITLE The Sannista
+CHANCE 1
+TEXT
+Shortly summarized, the Sannista is a legendary flying boat that was powered by the reaction of a fire and a water elemental. It was built by the tenth Commander of Euthville, Farkennis, as a gift for the 18th Birthday of his daughter, Sannista. That’s the boat that was stolen by Fax when he fled from Euthville, and that he used to get to Khelens. Giusitta the Verbous then sailed it back to the Continent, and hid it “somewhere in the mountains of Euth”.
+ENDMSG
+MSG G-021
+TITLE Euthville's foundation
+CHANCE 1
+TEXT
+If you went there about half a millenia ago, you’d have seen something very different than the field of haunted ruins Euthville has since become. It was initially founded by a handful of industrious, clever dwarves, that had found a mystical way to locate fields of precious Karitta, the famous metal that is as transparent as a pearl of the North Sea, yet as strong as the best irons of Navar.
+
+And thus, they found at the location of Euthville a lot of that raw metal, which quickly made the city one of the richest of all. And for a long time, it stayed so. The inhabitants of Euthville weren’t interested by war, work, or anything else too tiresome - they preferred to pay somebody else to do all of this. And with the advanced technical knowledge brought by the dwarves, working was less and less an issue for them.
+ENDMSG
+MSG G-022
+TITLE Euthville's destruction
+CHANCE 1
+TEXT
+Finally, the Commander decided that the city couldn’t stand this anymore, and ordered that the Demons had to be attracted faraway from the city. On this fateful day, a whole fanfare left the city, hoping that the demons would follow, attracted by the music.
+
+And so, they did. One after another, they climbed out of Earth itself, and walked in the direction of the music, obviously unaware of the hundreds of buildings they were crushing by their giant footsteps, and the thousands of inhabitants that they toasted with their dark fire. Seeing that, even the bravest ones went mad, and ran for their lives, leaving pipes, clavicelles and harpsichords fall on the ground.
+
+The rest of the story is easy to understand: Demons, free from the magical music that enslaved them, crushed what remained of the city, in a bloody fest that they will forever keep in their twisted memories.
+
+The Commander went mad, of course, and it is said that his madness was so strong that his mind was unable to understand that he was dead. If you search enough in the ruins of Euthville, you’ll probably encounter his ghost, as well as those of the many who perished for having believed that mortals could enslave the hell. Some demons stayed there, obviously enjoying the area and its newborn ashes that smelled fresh blood and carnage. Euthville is now, of course, a dangerous, deserted place, and the richesses that are still sleeping below the ruins of its former palaces are now guarded by powerful entities of the 9th Circle.
+ENDMSG
+MSG G-023
+TITLE The Enchanted Music
+CHANCE 1
+TEXT
+Many said that, if the Enchanted Music could be found, it would open the gates of many treasures, but because none of the former Euthvillians survived, and because nobody knows where the Boy went afterwards, those gates are still closed. I’ve heard that the School of Daemonology was precisely founded to rediscover that spell. But who am I to claim this to be true? I’m only a man of the past that tells stories before a fire, and the fire is dying, and so has my tale reached the end.
+ENDMSG
+MSG G-024
+TITLE Euthville's power hunger
+CHANCE 1
+TEXT
+Yet they were facing a problem. All their devices, all their machineries, all their tricks to cheat with nature required energy. Lots of energy. They relied first on the strength of horses and donkeys, but it wasn’t enough. Then, they tamed the dangerous Wyverns of Kal-Durandasi, so that the hot lizards would provide them with the full force of their steamy breath. But soon, it wasn’t enough. They also used the hidden power provided by the Faeries of the Tarniska river, building a dam, so that they could put the invisible horses of water that the sylphids are rumored to breed in use.
+
+But even so, their hunger for power wasn’t satisfied, and became an increasing nuisance for them. So, the Commander of Euthville (which was, more or less, the equivalent to our King at Scorn), finally decided to send messengers across the whole Continent, calling the world for a challenge. Whoever would be able to fulfill the needs of Euthvillians of energy would become the new Commander, thus the ruler of the richest city ever built since Khelens.
+ENDMSG
+MSG G-025
+TITLE Euthville's salvation
+CHANCE 1
+TEXT
+And then came a boy. He wasn’t a wizard, nor pretended to be one. He was young, but the story didn’t kept the record of his name, and some now think it is because he was damned. Who knows? The Boy sat in the middle of the city, playing with his flute, laughing whenever he saw one of the demonstrations of the powerful wizards and engineers, who were failing again and again.
+
+After several days, the Commander noticed the Boy, and said: “who are you to laugh, you, who has only a flute ?” “I have only a flute for sure - but there’s more in my simple pipe than in those legions of wizards.” “Really ?” said the Commander, half-laughing, half-curious, “so you think you can solve my challenge ?”
+
+The Boy smiled. “Not only I can, but I shall - and my price will be quite acceptable to give you the energy you need.” “And that would be...?” - “A new pipe.” came the reply “That one is becoming old.” “Agreed, you have your chance.”
+
+The Boy then started to play an amused melody. It sounded like an invitation to a great feast, the opening of a meeting where everybody was invited. And then came from earth itself sounds of steps, climbing from the depth. The fountain that stood in the middle of the place crumbled, leaving a great hole from which flames emerged. But the fire seemed to dance at the rythm of the music itself.
+
+The Boy then said to the Commander: “As long as you keep playing for the Demons there, at least 23 hours each day, you’ll get them to make whatever you need.” And he gave them the score, took a brand new silver flute, and left, and never was seen again at Euthville.
+ENDMSG
+MSG G-026
+TITLE Euthville's destruction
+CHANCE 1
+TEXT
+At first, things seemed fine, and the Commander couldn’t believe his luck, as a pipe was a feeble price to pay for such a powerful recipe of prosperity. Who wouldn’t want to tame the Demons themselves? Quickly, though, it appeared obvious that, for enough demons to be there, that music needed to be played rather loudly. And if, at first, it sounded entertaining, joyous, and funny, it quickly grew on the nerves of many. And especially because it was played 23 hours a day.
+
+Finally, the Commander decided that the city couldn’t stand this anymore, and ordered that the Demons had to be attracted faraway from the city. On this fateful day, a whole fanfare left the city, hoping that the demons would follow, attracted by the music.
+ENDMSG
+# End of extract from the wiki
+MSG G-027
+TITLE Temple of Justice
+QUEST darcap/TempleJustice 0>10
+CHANCE 1
+TEXT
+And so the Temple of Justice was founded, to show Valriel's Glory to the whole world!
+
+Oh, it was magnificient, located on the north side of the Continent, west of Darcap.
+
+And for years followers of Valriel came as pilgrims, to worship His Altar.
+
+But things started to fall over, and slowly the priests started to accumulate wealth instead of giving it back, and using it for their glory instead of Valriel's.
+
+So the Temple was slowly abandonned by pilgrims, who sought other Places Of Glory.
+
+It probably still exists, but who knows what secrets it bears.
+ENDMSG
+MSG G-028
+TITLE The Tower of Grukk
+QUEST navar/grukk 0>10
+CHANCE 1
+TEXT
+Grukk was a rich merchant from Navar, who accumulated wealth by being the right person at the right place.
+
+Alas, all his influcence couldn't prevent him from being ostracised when Navar decided to banish all undead creatures.
+
+For some time he still stayed in his house, but then decided he couldn't bear anymore this situation.
+
+So he had a tower built, somewhere on the east shore of the continent, south of Navar, and moved all belongings here.
+
+There are rumours he still deals in some goods through intermediaries, but no one has any proof.
+ENDMSG
+MSG G-029
+TITLE Glowing Crystals
+CHANCE 1
+TEXT
+Glowing Crystals are the dream of every magician.
+
+They enable to store mana energy up to a certain quantity, and recover it at will.
+
+Thus a magician cast more spells without needing to rest to recover his energy.
+
+Such Crystals are unfortunately pretty rare, so magicians have to figure by themselves how to find some.
+ENDMSG
+MSG G-030
+TITLE The Dark Forest
+CHANCE 1
+QUEST scorn/DarkForest 0>10
+TEXT
+And thus the Glowing Crystal was stolen from Scorn's City Hall.
+
+The thieves fled to the Dark Forest, which is said to be cursed.
+
+According to rumors the Crystal was put at the heart of the Dark Temple, to be used for some religious ceremony.
+
+No one has yet to claim it.
+
+The Forest is a well-known cursed place, located on the road from Scorn to Navar, approximately 50 chains west of Hermes's Inn and 10 chains north of the road.
+
+ENDMSG
+MSG G-031
+TITLE Narcopin
+CHANCE 1
+QUEST quests/Narcopin 0>10
+TEXT
+Once there stood upon the desert, west of Navar, a city called Narcopin, ruled by a dynasty of kings, wise and powerful.
+In time the monarchs grew less wise but more powerful.
+
+The last of their line was Aljwaf the terrible.  His reign was bloody and he made enemies of all
+the neighbouring lands.  His troops put women and children to the sword, he consorted with evil forces.
+It is said he cared for nothing save a single concubine.
+
+He fashioned a necklace for her made of one ruby, two emeralds and three sapphires.
+
+His reign ended when he was stricken with an unknown wasting disease and died horribly after a long illness.
+Some said the illness came from his evil dealings, they were quickly impaled for treason.
+
+Narcopin was razed to the ground by the surrounding kingdoms within six months of his death.
+
+Now only ruins remain, though some say spirits guard the tomb Aljwaf made for himself...
+ENDMSG
+MSG G-032
+TITLE The hunt for Nilplur
+CHANCE 1
+QUEST quests/Nilplur 0>10
+TEXT
+As per your instructions, I've hunted down Nilplur the dragon to its lair.
+
+It is located in a mountain range east of the lake between Scorn and Euthville, but seems heavily guarded.
+
+The cave is richely decorated, adding some weight to the rumours Nilplur accumulated much wealth -- including powerful spells.
+
+I will try to slay the beast, but in case I don't return I thus dispatch this message so others can take over my duty.
+
+Your humble servitor
+
+Kolgar
+
+ENDMSG

@@ -1,0 +1,132 @@
+This document describes the sound support for Crossfire, and how the client should handle the commands it receives.
+
+-----------------------------------------
+Client-side support
+-----------------------------------------
+
+Sound support is activated by issuing a 'setup sound2 x' command, with x a combination of:
+- 1 for sounds
+- 2 for background music
+
+When sound is activated, the server will send 'sound2' commands to client.
+
+The format of the command is:
+    sound2 <x><y><dir><volume><type><len of action>action<len of name>name
+
+with
+- 'x' and 'y' are bytes, position of the sound relative to the player.
+- 'dir' is a byte from 0 to 8, the direction the sound is moving to.
+- 'volume' is a byte from 1 to 100, arbitrary intensity of the sound.
+- 'type' is a byte, the major sound type.
+- 'len of action' is a byte, length of action.
+- 'action' is a string, specifying an arbitrary filename.
+- 'len of name' is a byte, length of name.
+- 'name' is the name of the sound emitter, that can be used to find a specific sound.
+
+Using the type, action and name, the client can determine what sound to play:
+- 'type' gives a base directory
+- 'action' is the actual sound to play, without the extension
+- 'name' specifies a subdirectory in type's directory, in which client should first search
+
+If no sound can be found in 'name', client should search in the base directory.
+
+This enables to override sounds for specific monsters or races.
+
+'type' can be:
+- 1: living sound (moving, dying, ...)
+- 2: spell casting sound
+- 3: item sound (potion, weapon ...)
+- 4: ground sound (door, trap opening, ...)
+- 5: hit something
+- 6: hit by something
+
+Each type will have an associated subdirectory, in which will be the sound files.
+
+Examples:
+(<x> indicates a byte of value x)
+
+sound2 <3><2><5><40><1><8>fireball<4>wand
+Something cast (<1>) a spell from a 'wand', at position (3,2) relative to the player,
+in direction south (<5>).
+The spell is a 'fireball'.
+Client will first look for a 'cast/wand/fireball' file. If not found,
+it will look for 'cast/fireball'.
+
+sound2 <0><0><0><80><2><5>apply<17>potion
+player applies a potion of something.
+Client should first look for 'item/apply/potion', then 'item/apply'.
+
+
+-----------------------------------------
+Conventions for 'action' field
+-----------------------------------------
+For living sounds, the 'action' will be things like 'move', 'death', ...
+
+For spell casting, 'action' will be the spell name. This enables to have spell-specific sounds.
+
+For item sounds, 'action' will be things like 'apply', 'burn' and such.
+
+Ground sounds will have actions like 'hole open', 'trap spring' and such.
+
+For 'hit' and 'hit by' types, the 'action' will be the skill name used to attack.
+
+
+-----------------------------------------
+Name meaning
+-----------------------------------------
+Name will be the base name of the emitter, so 'wand', 'mouse', 'door'.
+
+For players, it will be the player's race.
+
+
+-----------------------------------------
+Server-side support
+-----------------------------------------
+Objects have a 'sound_chance' field, 0 to 100, that is the probability of sending a sound.
+
+The volume will be randomly determined at each sound for more variability.
+
+Players receive a maximum of MAX_SOUNDS_TICK sounds per tick, to not send too many.
+
+Server doesn't really care of the actions, that are arbitrary.
+
+
+-----------------------------------------
+Existing sounds
+-----------------------------------------
+Please update this section as you add sounds.
+
+living:
+- push: something is pushed
+- death: something dies
+
+spell:
+- fumble: spell failure
+- learn: learnt a spell
+
+item:
+- explode
+- evaporate
+- fire: arrow or equivalent is fired
+- poof: wand has no more charges
+- tick: clock sound
+- turn handle: handle is activated
+- apply
+
+ground
+- open: door opens
+- fall hole: something falls in a hole
+- poison: someone drank poison
+
+hit something:
+- one attack skill
+- low: inflict low damage
+- medium: inflict medium damage
+- high: inflict high damage
+- kill: killed something
+
+hit by something:
+- one per attack skill
+- low: took low damage
+- medium: took medium damage
+- high: took high damage

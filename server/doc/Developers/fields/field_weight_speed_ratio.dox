@@ -1,0 +1,31 @@
+/**
+@page page_custom_attribute_weight_speed_ratio weight_speed_ratio
+This is a @ref page_custom_attributes "custom attribute".
+
+@section Use
+<table>
+	<tr>
+		<th>Type(s)</th>
+		<th>Description</th>
+	</tr>	<tr>
+		<td>
+@ref page_type_2
+		</td><td>            This value is taken as a percentage which is multiplied against
+            against the weight this transport is carrying (the player) - this is
+            then divided by weight_limit to determine the effective loading to
+            determine effective object speed, eg:
+
+            speed = &lt;base speed&gt; - (&lt;base speed&gt; * &lt;weight in
+            transport&gt; * &lt;weight speed ratio&gt;) / (&lt;weight limit&gt;
+            * 100)
+
+            Thus, if &lt;weight factor&gt; is 0, this object will move the same
+            speed no matter how loaded it is. If it is 100, then if the
+            transport is fully loaded, it moves at a crawl. In a sense, this
+            somewhat mimics the player movement speed. Large transports, like
+            boats, should likely be largely unaffected by weight (maybe have
+            this value at 10), where something like a horse would have a
+            relatively high value.</td>
+	</tr>
+
+*/

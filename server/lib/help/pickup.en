@@ -1,0 +1,52 @@
+'pickup' changes how you pick up items when you step on them. To pickup an item manually, use the ',' key.
+
+Mode 0: Don't pick up items.
+Mode 1: Pick up one item
+Mode 2: Pickup up one item and stop
+Mode 3: Stop before picking up items
+Mode 4: Pick up all items
+Mode 5: Pick up all items and stop
+Mode 6: Pick up all magical items
+Mode 7: Pick up all coins and gems
+
+Modes above 7: Pickup items with a value density greater than the pickup mode.
+
+Value density is value in gold/weight in kilograms.
+
+The value in gold is what the item is worth if you sold it in the shop.
+
+Gold coins have a value density of 66,
+
+Density 10 will pickup silver, gold, rings, wands, books, and scrolls. Artifacts are also picked up.
+
+You can also use the syntax 'pickup +<type>' to just add the specified type to what you pickup.
+
+Valid types are:
+- debug
+- inhibit
+- stop
+- food
+- drink
+- valuables
+- bow
+- arrow
+- helmet
+- shield
+- armour
+- boots
+- gloves
+- cloak
+- key
+- missile
+- allweapon
+- magical
+- potion
+- spellbook
+- skillscroll
+- readables
+- magicdevice
+- notcursed
+- jewels
+- flesh
+
+Three options are possible for the first character: + will make you pick the item type, - will make you stop picking the item type and ! will toggle the pick mode.

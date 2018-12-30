@@ -1,0 +1,24 @@
+/**
+ @page page_animations Compound animations
+
+Compound animations are a way to temporarily change an object's animation in reaction to events like spellcasting, fighting, etc.
+
+The basic principle is:
+- an archetype defines a suffix, like "sword" or "spellcasting"
+- when an object does the related action, the code checks for an animation named "object's animation to which is appended the suffix"
+- if the animation exists, it replaces the object's animation for one iteration
+- if no suffix is defined, no animation is applied.
+
+Animation suffixes are stored in objects in their obj::anim_suffix 's field.
+
+It is defined in archetypes with 'anim_suffix name'.
+
+Existing animation events:
+- when a player attacks with a weapon, the weapon is checked for an animation suffix
+- when an object casts a spell, the spell being cast is checked for an animation suffix
+- when an object uses a skill, the skill is checked for an animation suffix
+- when a player applies an item, the item is checked for an animation suffix.
+
+
+From a code's point of view, the main function is apply_anim_suffix(), which does the work to apply a suitable animation.
+*/

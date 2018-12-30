@@ -1,0 +1,265 @@
+#
+# the races file
+#
+# To start a new race category w/ 'RACE' identifier
+# list the name of the archetypes singly on lines below
+#
+# Each arch entered will have thei op->race reset to
+# the value listed for the last occuring 'RACE'. Also,
+# if the arch is a creature, it is added to a linked
+# list of monsters that all have the same race.
+# Any type of archetype may be listed, but monsters
+# should be ordered by inherent level value/exp
+#
+# Prepending a '!' will prevent an item from having its
+# op->race field reset to RACE.
+#
+# Prepending a '@' will prevent a creature from having its
+# arch listed on the summoning list.
+#
+# You can have an entry with both '@' and '!' (ie "@!<name>")
+# but that is the same as not listing the arch!
+#
+#
+RACE undead
+  generate_ghost
+  generate_zombie
+  generate_skeleton
+  generate_skull
+  generate_vampire
+  ghost
+  zombie
+  skeleton
+  grimreaper
+  wight
+  wraith
+  ghast
+  nightmare
+  spectre
+  vampire
+  skull
+  lich
+  demilich
+  dave
+  nazgul
+RACE demon
+  generate_devil
+  imp
+  devil
+  raas
+  big_demon
+  demon_lord
+  Greater_Demon
+  belzebub
+  jessyb
+  bone_head
+  evil_master1
+  evil_master2
+  evil_master3
+  evil_master4
+RACE angel
+  angel
+  liteangel
+  mesangel
+  ArchAngel
+RACE goblin
+  generate_kobold
+  generate_goblin
+  generate_orc
+  generate_gnoll
+  kobold
+  goblin
+  orc
+  gnoll
+  ologhi
+  h_kobold
+  unusual_kobold
+RACE troll
+  small_troll
+  troll
+  gaelotroll
+RACE faerie
+  generate_pixie
+  generate_stalker
+  pixie
+  elf_1
+  sandy
+  stalker
+  dark_elf
+  unicorn
+  faerie_dragon
+  deathtree
+  ent
+  lamia
+RACE animal
+  generate_bat
+  generate_mouse
+  generate_panther
+  generate_scorpion
+  mouse
+  bat
+  dog
+  panther
+  giant_bat
+  scorpion
+  wolf
+  bear
+  rustmonster
+  shadowpup
+  polarbear
+  dire_wolf
+  behemoth
+  shadowtiger
+  giantrat
+  pet_necro
+  neko
+RACE bird
+  generate_bird
+  chicken
+  goose
+  bird
+RACE reptile
+  generate_serp_man
+  snake
+  serpent
+  serp_man
+  cobra
+  serp_priest
+  fire_serpent
+RACE slime
+  blob
+  slime
+  fungus
+  acid_sphere
+  green_slime
+  black_pudding
+RACE unnatural
+  generate_beholder
+  beholder
+  sphinx
+  baslic
+  dread
+  golem_necro
+RACE dragon
+  generate_dragon
+  @pl_dragon
+  dragon
+  baby_dragon
+  chinese_dragon
+  big_elec
+  big_dragon
+  dragonman
+  Cwyvern
+  big_dragon_worthless
+RACE water_elemental
+  !para_mud
+  para_water
+  para_ice
+  water_elemental
+  water_witch
+RACE fire_elemental
+  para_fire
+  para_lava
+  fire_elemental
+  fire_witch
+RACE air_elemental
+  para_air
+  para_lightning
+  air_elemental
+  air_witch
+RACE earth_elemental
+  para_mud
+  para_earth
+  earth_elemental
+  earth_witch
+RACE giant
+  generate_ogre
+  generate_giant
+  ogre
+  giant
+  titan
+  DK
+  big_wiz
+  cyclops
+  EDK
+  mabu
+RACE human
+  generate_madman
+  charwoman
+  prisoner
+  crone
+  guildmaster
+  sage
+  woman
+  man
+  c_sage
+  c_woman
+  c_man
+  princess
+  fighter
+  thief_1
+  ninja_1
+  ninja2
+  conjurer2
+  warrior_1
+  pirate
+  northman
+  pirate_lass
+  madman
+  conjurer
+  guard
+  light_guard
+  pyromaniac
+  medium_guard
+  knight
+  lord_e
+  necromancer
+  siegfried
+RACE chess
+  chess_pawn
+  chess_rook
+  chess_knight
+  chess_bishop
+  chess_queen
+  chess_king
+RACE chaos
+  living_chaos
+  chaos_witch
+RACE dwarf
+  gnome
+  dwarf
+  @dwarf_player
+  dwarf_priest
+  dwarf_wiz
+  lesser_dwarven_guard
+  greater_dwarven_guard
+RACE insect
+  generate_ant
+  generate_bee
+  spider_gen
+  generate_xan
+  beehive
+  ant
+  bee
+  centipede
+  killer_bee
+  spider
+  xan
+# this is the summoning list for the god ruggilli
+RACE consuming_fire_creatures
+  !para_fire
+  !fire_serpent
+  !fire_elemental
+  !fire_witch
+  !dragon
+  !baby_dragon
+  !big_dragon
+# this is the summoning list for the goddess Ixalovh
+RACE chaotic_water_creatures
+  !para_water
+  !water_elemental
+  !lokanth
+  !tentacle
+  !water_witch
+  !tentacle2
+  !chinese_dragon

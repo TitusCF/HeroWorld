@@ -1,0 +1,231 @@
+Included herein is a description of the Region system, as implemented in March 2005.
+
+If by the time you read this, this date is old, then this file may not have been kept
+up to date, either that or no relevant changes have occurred, the Changelog should help
+you determine which is the case.
+
+*****Contents*****
+
+How to read this file
+Overview
+Struct values and meaning
+Sample region file entry and meaning.
+Functions exposed and purpose thereof
+player visible changes
+Known/suspected bugs.
+Future plans
+
+*****How to read this file*****
+
+If you are a mapper and want to create a new region for your maps
+read:
+Overview
+Sample region file entry and meaning.
+
+If you want to add new features to regions, read
+Struct values and meaning.
+Known/suspected bugs.
+Future plans
+maybe the rest if you can be bothered.
+
+If you are developing something else and want to interact with region information read:
+Functions exposed and purpose thereof
+Known/suspected bugs.
+
+If you are merely a curious player who stumbled upon this by accident, read:
+player visible changes
+and, if you care enough...
+Future plans
+
+*****Overview*****
+Regions are connected to maps, they allow a set of common properties to be associated with
+the maps in the game.
+The map struct has had a pointer to a region struct added. This pointer points to the region
+that the map is in.
+
+The map files are altered to have a new field in the header
+
+The line should read
+region name
+
+where 'name' is the name of a region defined in the regions file.
+
+The maps are linked to their regions at load time.
+
+Each region is guaranteed only to have 3 values, a name, next and a parent
+ exception to this, there is a base region with a NULL parent pointer, this should have *all*
+ other fields defined, if a region doesn't have a field defined, then it traverses up the
+ inheritance tree, until it finds a definition of the field.
+
+Look to the next section to see what the values stored in the region are.
+
+Example of this.
+region world, this is the base region, with no parent.
+region scorn, this has parent world, and longname "Kingdom of scorn"
+	it has msg "you are in scorn"
+region scornoldcity, this has parent scorn, and no longname, it has msg
+	"you are under scorn"
+
+if we call get_region_msg(region) with scornoldcity as the region, it will return
+"you are under scorn"
+if we call get_region_longname(region) with scornoldcity as the region, it will return
+"Kingdom of scorn"
+
+This means that any combination of values can be used scoped appropriately.
+
+Next the values themselves....
+
+*****Struct Values and Meaning*****
+This contains a list of the information about the regions and what the fields mean.
+*next;
+ we construct a singly-linked list of regions, to check all, you go through one by one
+ calling region->next until such time as next is NULL. This is the same as the way most
+ other structures in the game work.
+
+*name
+ This field is compulsory, it is the name of the region, which is used to connect the maps to the
+ regions.
+
+*parent_name
+ This is the name of the parent, only used during initialisation
+
+*parent
+ pointer to the parent region.
+
+*longname
+ The title of the region, this should be the full, verbose title, with lots of pompousness
+
+*counter
+ This doesn't really have a fixed meaning, it is just somewhere to count things
+ (at the moment the number of players)
+
+*msg
+ The description of the region, think guidebook entry.
+ Displayed to provide some background flavour.
+
+*fallback
+ If a map has a misspelling, say scron instead of scorn, then we can't match the name.
+ One region should have this set, so that the map can still be assigned a region
+ until such time the map creator learns to spell.
+
+*jailmap
+ The path to the map that a player who is arrested in this region (or any
+ subregion hereof) will go to
+
+*jailx, jaily
+ The x and y coordinates on the jailmap the player will go to.
+
+*****Sample Regions file entry*****
+
+region scorn
+longname The Kingdom of Scorn
+msg
+Nestled snugly in a sheltered bay at the west of the Imperial Highway, etc
+endmsg
+parent world
+end
+
+Here we see a relatively high level region, it has a longname, that is the title of the kingdom
+It has a description, and a parent.
+the region is called scorn, and all maps containing the line 'region scorn' will be in this region
+
+The msg field (description) is contained within the lines msg and endmsg
+NB see Known Bugs section about this...
+
+The other line that it could have contained was
+fallback 1
+this would've made it the default region for maps with no region set.
+However Scorn isn't a sensible choice for this.
+
+Each entry in the regions file is finished with a line saying
+end
+
+The regions file stops being parsed when a line saying
+nomore
+
+is encountered.
+
+*****Functions exposed and purpose thereof*****
+
+The following functions are currently accessible, this list is still fluid, expect it to change.
+
+Note, I am describing the functions' specification, what they should be doing, look at the
+source code to see what they /are/ doing....
+
+extern char *get_region_longname(region *r);
+	returns the longname that the region should use
+
+extern object *get_jail_exit(object *op);
+	returns an object through which the player op should enter to be jailed.
+
+extern char *get_region_msg(region *r);
+	returns the description of the region.
+
+extern region *get_region_by_name(char *region_name);
+	given a name returns the region with that name, or the fallback if there isn't one.
+	Used by the map loader and stuff using get_name_of_region_for_map at the moment.
+
+extern int region_is_child_of_region(region *child, region *r);
+	1 if the child is a subregion of r
+	0 otherwise
+
+extern region *get_region_from_string(char *name);
+	tries to guess which region 'name' corresponds to
+
+extern region *get_region_by_map(mapstruct *m);
+	takes a map returns the region it is in.
+
+extern char *get_name_of_region_for_map(mapstruct *m);
+	takes a map and returns the name of the region it is in.
+
+extern void parse_regions();
+	used to load the values for the regions at startup
+	called by init regions, may end up being called during runtime if region updating is added.
+
+extern void init_regions();
+	calls parse regions, performs some checks beforehand.
+	called by the startup code.
+
+extern region *get_region_struct();
+	calloc's a new region struct and blanks it for use
+	shouldn't really be used externally yet (maybe later though)
+
+extern void assign_region_parents();
+	called after parse regions, makes the child regions find their parents.
+	shouldn't be called externally yet (maybe later though)
+
+*****Player visible changes*****
+
+The command mapinfo now returns the region name (not longname, but what is included in the map file)
+
+There is a command whereami that prints the regions name and description.
+
+There is a command whereabouts that shows region names and the number of players there.
+
+who can be given regions as arguments, and only show the players in that region.
+
+*****Known/suspected bugs*****
+
+The region parser is not particularly robust, it dies if the 'endmsg' line is missing,
+or if 'nomore' is missing, or if the 'end' line is missing. These stop the server from
+starting, if it starts, it should be fine afterwards.
+
+*****Future plans*****
+
+medium term:
+
+Have the regions file 'compiled' in the same way the archetypes are.
+
+Limit word of recall's range based upon region, add a default savebed to each region,
+and store in the player the savebeds for each region.
+
+add a 'capabilities' field to the region, defining what the region can do. eg,
+limits_word_of_recall, if set then casting Word of recall takes to the savebed for
+that region, otherwise for the parent region.
+
+Long term:
+
+All sorts of other things, regional leaders, governments, economies, justice systems,
+wars, import restrictions, citizenship, etc, etc
+
+Look on CFMB for some of the things that have been suggested.

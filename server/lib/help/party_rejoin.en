@@ -1,0 +1,11 @@
+party_rejoin [mode]
+
+Controls whether to rejoin or not party at login.
+
+Valid modes are:
+
+    no: don't rejoin party
+    if_exists: if the party exists when you login, and has the same password as when you logged off, you'll join it
+    always: if the party doesn't exist, create it with last password; else behaves like if_exists.
+
+With no argument, displays the mode.

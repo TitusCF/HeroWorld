@@ -1,0 +1,104 @@
+%
+%
+
+%\documentstyle[local,A4,longtable,psfig,12pt]{report}
+
+\documentclass[12pt, a4paper]{report}
+\usepackage{local}
+\usepackage{longtable}
+\usepackage{epsfig}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+
+\def\inputimage#1{ \input{#1}}
+
+% uncomment in the following line if you
+% DONT want to have icons in your text.
+
+% \def\inputimage#1{}
+
+
+% TEXT DEFINITIONS
+\def\etal{{\it et al.}}
+\def\cf{{\sl Crossfire}}
+\def\playbook{{\sl Crossfire} {\bf Player's Handbook}}
+\def\spoiler{{\sl Crossfire} {\bf Spoiler}}
+\def\spellcasting{wizardry} % name of the skill that allows casting incantations
+\def\wizbook{grimore} % name of the text you learn incantations from
+\def\divinemagic{divine magic}
+\def\wizardry{wizardry}
+\def\alchemy{{\tt alchemy}} % name of the spell to use alchemy code
+\def\mage{magery} % mage experience category name
+\def\priest{wisdom} % priest experience category name
+\def\incantation{incantation}
+% this is the case a/an for 'incantation' def
+\def\ina{n}
+% using this caus Klaus yelled at me ;)
+\def\emdash{{\em $-$}}
+% here are some names
+\def\angband{{\sl Angband}}
+\def\ragnarok{{\sl Ragnarok}}
+\def\gauntlet{{\sl Gauntlet (TM)}}
+\def\rogue{{\sl Rogue}}
+\def\hack{{\sl NetHack}}
+\def\moria{{\sl Moria}}
+\def\sngc#1{\multicolumn{1}{c}{#1}}
+\def\snglc#1{\multicolumn{1}{|c}{#1}}
+\def\sngLc#1{\multicolumn{1}{|c|}{#1}}
+\def\tplc#1{\multicolumn{3}{c|}{#1}}
+
+
+%\pssilent
+
+\pagestyle{empty}
+
+\title{Player's Handbook for Crossfire}
+\author{Brian Thomas\footnote{thomas@astro.psu.edu}}
+
+\makeindex
+
+\begin{document}
+\pagestyle{plain}
+\renewcommand{\thepage}{\roman{page}}
+
+% TITLE PAGE
+\input{title}
+
+\snglsp
+%\dblesp
+
+% CONTENTS
+\tableofcontents
+% \listoffigures
+\listoftables
+
+\pagebreak
+
+\sloppy
+\setcounter{page}{1}
+\renewcommand{\thepage}{\arabic{page}}
+
+% CHAPTERS
+\input{chap1}
+\input{chap2}
+\input{chap3}
+\input{chap4}
+\input{chap5}
+\input{chap6}
+\input{chap7}
+
+% APPENDICES
+\appendix
+\input{appA}
+\input{appB}
+\input{appC}
+
+% Index
+\input{index}
+
+% REFERENCES
+% \input{references}
+
+\end{document}		   % You are done !
+

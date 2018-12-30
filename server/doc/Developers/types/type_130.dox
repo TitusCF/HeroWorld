@@ -1,0 +1,254 @@
+/**
+@var SKILLSCROLL
+See @ref page_type_130
+*/
+
+/**
+@page page_type_130 Skill Scroll
+
+
+@section Description
+            By reading a skill scroll, a player has a chance to learn the
+            contained skill. 
+
+
+
+Type defined by:
+- @ref object::type = 130
+
+
+@section Attributes
+
+<table>
+	<tr>
+		<th>Attribute</th>
+		<th>Field</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>artifact</td>
+		<td>@ref obj::artifact</td>
+		<td>            If defined, refers to an artifact to get values from.
+		</td>
+	</tr>
+	<tr>
+		<td>block view</td>
+		<td>@ref FLAG_BLOCKSVIEW</td>
+		<td>            If an item is set to block view, players (and monsters) cannot see
+            beyond it unless they cross it or manage to stand on top.
+		</td>
+	</tr>
+	<tr>
+		<td>changing</td>
+		<td>@ref FLAG_CHANGING</td>
+		<td>            A &lt;changing&gt; object converts to &lt;food&gt; &lt;other_arch&gt;
+            objects; when it's animation is done. For non-living objects &lt;food&gt;
+            is checked: if it is zero, the change happens; otherwise &lt;food&gt;
+            is decreased by one. I suggest you don't mess with this value -
+            leave the default in place.
+		</td>
+	</tr>
+	<tr>
+		<td>elevation</td>
+		<td>@ref page_custom_attribute_elevation "elevation"</td>
+		<td>            The elevation (height above sea level) of this square. It is used
+            for weather calculations and should be in the range -32000..32000.
+            The elevation of a tile must be set in the bottom-most game object;
+            elevation values for non-bottom-most game objects are ignored by the
+            Crossfire server.
+		</td>
+	</tr>
+	<tr>
+		<td>glow radius</td>
+		<td>@ref obj::glow_radius</td>
+		<td>            If &lt;glow radius&gt; is set to a value greater zero, the object
+            appears lit up on dark maps. &lt;glow radius&gt; can be a value
+            between 0 and 4, the higher, the more light does the object emit.
+		</td>
+	</tr>
+	<tr>
+		<td>identified</td>
+		<td>@ref FLAG_IDENTIFIED</td>
+		<td>            If an item is identified, the player has full knowledge about it.
+		</td>
+	</tr>
+	<tr>
+		<td>identified animation</td>
+		<td>@ref page_custom_attribute_identified_animation "identified_animation"</td>
+		<td>            If defined, then the object will take this animation when identified.
+		</td>
+	</tr>
+	<tr>
+		<td>identified animation speed</td>
+		<td>@ref page_custom_attribute_identified_anim_speed "identified_anim_speed"</td>
+		<td>            If defined, then the object will have this animation speed when identified.
+		</td>
+	</tr>
+	<tr>
+		<td>identified image</td>
+		<td>@ref page_custom_attribute_identified_face "identified_face"</td>
+		<td>            If defined, then the object will take this appareance when identified.
+		</td>
+	</tr>
+	<tr>
+		<td>identified random animation?</td>
+		<td>@ref page_custom_attribute_identified_anim_random "identified_anim_random"</td>
+		<td>            If defined, then the object's animation is in a random sequence when identified.
+		</td>
+	</tr>
+	<tr>
+		<td>identified_name</td>
+		<td>@ref page_custom_attribute_identified_name "identified_name"</td>
+		<td>            If defined, then the object will take this name when identified.
+		</td>
+	</tr>
+	<tr>
+		<td>identified_name_pl</td>
+		<td>@ref page_custom_attribute_identified_name_pl "identified_name_pl"</td>
+		<td>            If defined, then the object will take this plural name when identified.
+		</td>
+	</tr>
+	<tr>
+		<td>image</td>
+		<td>@ref obj::face</td>
+		<td>            The image-name defines what image is displayed for this object
+            in-game.
+		</td>
+	</tr>
+	<tr>
+		<td>invisible</td>
+		<td>@ref obj::invisible</td>
+		<td>            Generally makes the object invisible. Depending on the object-type,
+            some can be made visible by the show_invisible spell. If in doubt,
+            test it. Putting an invisible object under the floor always prevents
+            it from being shown.
+		</td>
+	</tr>
+	<tr>
+		<td>material</td>
+		<td>@ref obj::material</td>
+		<td>            This bitmask-value informs the player of which material(s) the
+            object consists. Material does also affect how likely the object can
+            be destroyed by hazardous spell-effects.
+		</td>
+	</tr>
+	<tr>
+		<td>name</td>
+		<td>@ref obj::name</td>
+		<td>            This is the name of the object, displayed to the player.
+		</td>
+	</tr>
+	<tr>
+		<td>non-pickable</td>
+		<td>@ref FLAG_NO_PICK</td>
+		<td>            If set, the object cannot be picked up (Neither by players nor
+            monsters).
+		</td>
+	</tr>
+	<tr>
+		<td>number</td>
+		<td>@ref obj::nrof</td>
+		<td>            This value determines the number of objects in one stack (for
+            example: 100 gold coins =&gt; "number = 100"). You should set this
+            at least to one, for any pickable object - otherwise it won't be
+            mergeable into a stack.
+		</td>
+	</tr>
+	<tr>
+		<td>plural name</td>
+		<td>@ref obj::name_pl</td>
+		<td>            This is the plural name of the object. A plural name must be set for
+            all items that can be picked up and collected by the player.
+		</td>
+	</tr>
+	<tr>
+		<td>price adjustment</td>
+		<td>@ref page_custom_attribute_price_adjustment "price_adjustment"</td>
+		<td>            If set, this is the buy and sell price adjustment ratio for the
+            item.
+		</td>
+	</tr>
+	<tr>
+		<td>price adjustment for buying</td>
+		<td>@ref page_custom_attribute_price_adjustment_buy "price_adjustment_buy"</td>
+		<td>            If set, this is the adjustment ratio when buying the item. Ignored
+            if &lt;price&gt; adjustment is set.
+		</td>
+	</tr>
+	<tr>
+		<td>price adjustment for selling</td>
+		<td>@ref page_custom_attribute_price_adjustment_sell "price_adjustment_sell"</td>
+		<td>            If set, this is the adjustment ratio when selling the item. Ignored
+            if &lt;price&gt; adjustment is set.
+		</td>
+	</tr>
+	<tr>
+		<td>race restriction</td>
+		<td>@ref page_custom_attribute_race_restriction "race_restriction"</td>
+		<td>            If this is set to a : separated (with leading and trailing :) list
+            of races, only players of this race will be able to apply the item.
+		</td>
+	</tr>
+	<tr>
+		<td>skill name</td>
+		<td>@ref obj::skill</td>
+		<td>            The &lt;skill name&gt; matches the skill object that can be learned
+            from this scroll.
+		</td>
+	</tr>
+	<tr>
+		<td>smooth level</td>
+		<td>@ref obj::smoothlevel</td>
+		<td>            If &lt;smooth level&gt; is set to a value greater zero, the object
+            will be drawn partially over adjacent squares having a lower &lt;smooth
+            level&gt; value. The value must be between 0 and 255 (inclusive); 0
+            means &quot;never overlap adjacent squares&quot;.
+		</td>
+	</tr>
+	<tr>
+		<td>splitting</td>
+		<td>@ref FLAG_SPLITTING</td>
+		<td>            A &lt;splitting&gt; object converts to &lt;food&gt; &lt;other_arch&gt;
+            objects; when it is hit physically. For non-living objects &lt;food&gt;
+            is checked: if it is zero, the change happens; otherwise &lt;food&gt;
+            is decreased by one. I suggest you don't mess with this value -
+            leave the default in place.
+		</td>
+	</tr>
+	<tr>
+		<td>title</td>
+		<td>@ref obj::title</td>
+		<td>            This is the object's title. Once an object is identified the title
+            is attached to the name. Typical titles are "of Mostrai", "of xray
+            vision" etc.
+		</td>
+	</tr>
+	<tr>
+		<td>unpaid</td>
+		<td>@ref FLAG_UNPAID</td>
+		<td>            An &lt;unpaid&gt; item cannot be used unless a player carried it
+            over a shop mat, paying the demanded price. Setting this flag makes
+            sense only for pickable items inside shops.
+		</td>
+	</tr>
+	<tr>
+		<td>value</td>
+		<td>@ref obj::value</td>
+		<td>            Adds a certain value to the object: It will be worth that many times
+            the default value from it's archetype (E.g. "value = 3" means three
+            times worth the default value). Value for buying/selling will be
+            further modified by various factors. Hence, testing values in-game
+            is usually inevitable.
+		</td>
+	</tr>
+	<tr>
+		<td>weight</td>
+		<td>@ref obj::weight</td>
+		<td>            This value defines the object's weight in grams (1000g is 1kg).
+            Objects with zero weight are not pickable for players. Still, set
+            the "non-pickable"-flag for explicitly non-pickable objects (hey,
+            this is open source.. you never know ;) ).
+		</td>
+	</tr>
+</table>
+*/

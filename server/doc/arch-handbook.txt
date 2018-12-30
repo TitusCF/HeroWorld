@@ -1,0 +1,770 @@
+Crossfire Architecture Handbook
+===============================
+Crossfire Development Team <crossfire@metalforge.org>
+1.71.0, April 2014
+:toc:
+:numbered:
+
+Alchemy
+-------
+This is a brief description of the ALCHEMY hack.
+
+Introduction
+~~~~~~~~~~~~
+As always, the general intention is to enhance the enjoyability and
+playability of CF. In this code, I have created a system whereby players may
+assemble various ingredients to make artifacts.
+
+The amount of work I put into this was substantial; other than new code -- I
+created new archetypes, revised archetypes, altered the treasures file and
+created 2 new object types and a flag.
+
+It therefore may be enjoyable to install this patch (incl code) and *not*
+define ALCHEMY in define.h. In particular, this patch does the following
+things:
+
+. more varieties of potions are available in shops.
+
+. new gems and types of food.
+
+. monsters will now leave behind body parts when you kill them.
+
+. if ALCHEMY is defined players may make potions/artifacts.
+
+I have included instructions for installation, an install script and a brief
+document for using the code (pretty simple).
+
+Finally, as always, feedback is appreciated.
+
+b.t.  thomas@astro.psu.edu
+
+Player Instructions
+~~~~~~~~~~~~~~~~~~~
+Using the alchemy code (to make artifacts) is easy. You need the following
+things: 1) be able to use the alchemy skill, 2) have access to a cauldron,
+and 3) have the right ingredients.
+
+To create an artifact, put ingredients in the cauldron, then use 'alchemy'
+skill. You might make something :) Backfire effects are possible.
+Books found in shops (and elsewhere) will give you formulae for making
+stuff. Of course, you can always 'experiment' on your own, but this may be
+dangerous.
+
+Implementation Details
+~~~~~~~~~~~~~~~~~~~~~~
+The bulk fo the alchemy code resides in 2 files - recipe.c and alchemy.c.
+The basic features of the code are:
+
+. allow players to make artifacts from formulae. As players
+gain xp and levels, their ability to create stuff improves
+
+. fast lookup of formulae. Lookup is randomized so that the
+list is attempted for a match based on # levels the player has. Obviously,
+higher level players get more attempts to match the list--and thereby have a
+grater chance of successfully completing a formula.
+
+. There are ~80 formulae in this version. You can dump
+the formulalists using the crossfire -m7 option.
+
+Basically, a simple linked list, ordered by the number of different archs in
+a formulae, is used to lookup 'recipe' matches. An indexed value for each
+formulae allows a quick comparison for a match with the cauldron contents.
+When a player casts alchemy on a cauldron, we first determine # archs inside
+the cauldron, pick the correct formulalist, randomly match against that list
+to see if we got a match. If matched, we remove the ingredients, and insert
+the artifact into the cauldron. Exp is awarded to the players alchemy skill
+(if they have it).
+
+Player Knowledge Management
+---------------------------
+Date: 2010-01-18, by N. Weeger
+
+Note: this document doesn't concern the technical aspects of the knowledge,
+for such information refer to the server/knowledge.c file.
+
+Any player will automatically keep trace of various information found
+ingame.
+
+To display the known information, the 'knowledge list' command should be
+used.  Next to each item is a number, which can be used to get details of
+the knowledge through the 'knowledge show <number>' command.  Note that
+numbers will change when new knowledge is gained, or when joining the game.
+
+Currently, such knowledge is permanent and inalterable - no forgetting, no
+'corruption'.
+
+Ideally, a client-side interface should present such information in a
+structured way.
+
+Quest Management
+----------------
+Current quest support is low-level only.  That is the server provides
+routines to query and store quest status, and that's all.
+
+It is the responsibility of the quest writer to call the functions, hook
+what needs to be handled, and such.
+
+The server does no internal state check, and it doesn't know how to handle
+anything except the status.
+
+Currently, a quest is composed of:
+
+* an internal code, which should be unique
+* a player title, a short sentence describing the quest
+* a longer description of the quest
+* the current player state (integer value, any positive value is ok, quest-specific meaning)
+* the current state description for the player, so she knows what to do next
+
+The information is stored in the player's directory, in a file named <player's name>.quest
+
+File is saved at each state modification, to ensure consistency.
+
+Metaserver
+----------
+NOTE: This document is partly out-of-date; it was updated by reverse engineering the
+client code accessing the metaserver. It therefore describes the as-is state
+rather than what was intended. Communication between server and metaserver was
+not updated; this information may not reflect the current implementation.
+
+
+This brief document is meant to describe the operation of the crossfire
+metaserver, as well as the form of the data.
+
+The metaserver listens on port 80 for tcp and on port 13326 for udp packets.
+
+The server sends updates to the metaserver via udp.  The metaserver only
+does basic checking on the data that server sends.  It trusts the server
+for the ip name it provides.  The metaserver does add the ip address
+and also tracks the idle time (time since last packet received).
+
+The client gets its information from the metaserver through connecting by means
+of tcp. The client should retrieve
+http://crossfire.real-time.com/metaserver2/meta_client.php and parse the
+response body if successful; the body's content type is text/plain.
+
+The current metaserver implementation is in Perl.  But the metaserver could be
+in any language.  Currently, perl is fast enough for the amount of data
+that is being exchanged.
+
+The response includes zero or more server entries. Each entry begins with the
+line "START_SERVER_DATA" and ends with the line "END_SERVER_DATA". Between
+these lines key-value pairs ("key=value") may be present.
+
+The entries are sent in arbitrary order. A client should apply some ordering
+when displaying the entries to the user.
+
+TODO: is there any ordering of key-value pairs?
+
+TODO: which fields are mandatory? which are optional? what are default values
+for optional fields? how should the client behave if an unexpected field is
+present? how should if behave if a critical field (hostname) is missing?
+
+TODO: how should the client behave in case of syntax errors? a) incorrect
+key-value pair syntax; b) additional information outside
+BEGIN_SERVER_DATA..END_SERVER_DATA?
+
+TODO: are duplicate key fields allowed? how should the client behave if
+duplicates are present?
+
+TODO: The current gtk clients accept lines "START_SERVER_DATA=value" and
+"END_SERVER_DATA=value" as well. This is probably not intentional since the
+metaserver does not send such lines and since the client ignores the value
+present.
+
+TODO: How are newline characters encoded in the comment field?
+
+The following key values are used:
+
+- hostname: The hostname of the server. It is the host the client should
+  connect to.
+
+- port: The port of the server. It is the port the client should connect to.
+
+- html_comment, text_comment: A comment describing the server in either HTML or
+  plain text. It can contain most any character or data. It is used by clients
+  to describe the server to the user.
+
+  TODO: recommended maximum size that clients should be able to display
+  correctly
+
+- archbase, mapbase, codebase: The archetypes, maps, and server code the server
+  uses.
+
+  TODO: specify allowed/recommended values; currently either "Standard" or
+  <version> is used for information as present in SVN; non-standard information
+  is not specified.
+
+- num_players: The number of players currently on the server.
+
+  TODO: does it include WIZ players? does it include BOTs?
+
+- in_bytes, out_bytes: The number of bytes the server has taken in or written
+  out over the socket over the lifetime of that server instance.
+
+- uptime: The number of seconds this server instance has been up. When
+  referring to server instance for the in_bytes, out_bytes, or uptime fields,
+  this means how long since the executable has been started. A particular host
+  may have been running a server for quite a long time, but due to updates or
+  crashes, the length of time the server instance has been up may be much
+  shorter.
+
+- version: The version of the server.
+
+- sc_version, cs_version: The protocol version the server supports.
+
+- last_update: The timestamp (seconds since 1970-01-01 00:00:00) at which the
+  metaserver last received and update from this server.
+
+
+An example of an entry from metaserver output:
+----
+START_SERVER_DATA
+hostname=crossfire.metalforge.net
+port=13327
+html_comment=Latest SVN 1.x branch.<br>Eden Prairie, MN US<br>4.65Mb link<br><a href="http://crossfire.real-time.com">crossfire.real-time.com</a>
+text_comment=Latest SVN 1.x branch, Eden Prairie, MN US
+archbase=Standard
+mapbase=Standard
+codebase=Standard
+num_players=3
+in_bytes=142050710
+out_bytes=-1550812829
+uptime=909914
+version=1.11.0
+sc_version=1027
+cs_version=1023
+last_update=1214541369
+END_SERVER_DATA
+----
+
+Multigod
+--------
+This is a brief description of the MULTIGOD hack. It is preserved here for mostly historical reasons.
+
+Introduction
+~~~~~~~~~~~~
+The intention of this code is to enhance the enjoy-ability and playability
+of clerical characters in the new skills/exp scheme.
+
+This is done by giving players gods to worship who in turn effect clerical
+magic and powers. Included in this patch are several new spells which
+(hopefully) will allow the priest characters a better chance to gain xp at
+higher levels. Notably, the "holy orb" and "holy word" spells have been
+revamped.
+
+When MULTIPLE_GODS flag is defined in include/config.h, this code is
+enabled. This code (described below) encompasses 3 main parts: an array of
+gods that players/NPCs may worship, new clerical spells which rely on the
+worshiped god's attrib- utes in Gods[] array and, altars/praying--the
+interface between a worshiper and their god.
+
+b.t.  thomas@astro.psu.edu
+
+Implementation Details
+~~~~~~~~~~~~~~~~~~~~~~
+This code is flexible and easy to configure (just edit the god archetypes).
+Part of the reason for creating this code was to allow server maintainers to
+develop their own "mythos". From my personal point of view, I hate having
+the old "Christian" aligned mythos, but if that's what you like, you can
+replicate it with this code too (see below).
+
+Properties of the Gods
+~~~~~~~~~~~~~~~~~~~~~~
+Here is a fuller description of Gods archetype values.
+
+----
+name         - name of the god  (required)
+other_arch   - archetype that will be used for the summon holy
+servant spell.
+title	     - diametrically opposed god, leave blank if none exists
+attacktype   - favored attack of this god, used in spells of summon
+avatar, holy word. Recipients of "holy possession" get
+this too.
+immune       - Avatars/holy servants/recipient of "holy possession"
+gets this.
+protected    - all of the above AND recipient of god's blessing and the
+priest of this god gets this.
+vulnerable   - Avatar/servant/recipient of gods curse/priest of this god
+get this.
+path_attuned - priest of this god and recipient of "bless" gets this
+path_repelled - priest and recipient of "curse" gets this
+path_denied  - priest and recipient of "curse" gets this
+slaying	     - comma delimited list of the races of creatures that are
+aligned with the god. "summon cult monsters" uses.
+this list to find creatures. Summon avatar/call servant
+code assigns this value to prevent them from attacking
+aligned races.  Value is blank if no race(s) exists.
+race   	     - comma delimited list of the races of creatures "holy word",
+"holy possession" spells will effect. Value entry is
+blank if no such race(s) exists.
+hp,dam,ac,wc - base stats for the summoned avatar.
+----
+
+IF MORE_PRIEST_GIFTS is defined (in gods.c) then ADDITIONAL gifts/limitations
+will be assigned to the priest:
+
+Flags
+^^^^^
+Now, the following flags, in addition to being used by the god (if planted
+on a map) are assigned to the worshiping priest:
+
+can_use_weapon, can_use_armour, is_undead, is_blind, reflect_missile,
+reflect_spell, make_invisible, stealth, can_see_in_dark, xrays
+
+NOTE: if can_use_armour/can_use_weapon flags are NOT present, then
+the priest will be forbidden the use of these items.
+
+Stats
+^^^^^
+The following stats are used:
+
+----
+luck	      - how lucky the god (and the priest) are.
+last_eat   - how fast priest digestion is
+last_hp    - how fast priest healing is
+last_sp    - how fast priest mana regeneration is
+last_grace - how fast priest grace regeneration is
+----
+
+Designing New Gods
+~~~~~~~~~~~~~~~~~~
+To examine the gods properties, use the '-m8' flag (ie 'crossfire -m8').
+Note some of the big differences here in terms of spell_paths, races, etc.
+Most of these entries were designed with roughly polar opposite gods.
+
+For designing new gods. You should make sure that worshiping a god will
+be "unique" in some way. But playbalance first! You must consider the balance
+between the following:
+. spellpaths
+. priest gifts
+. priest limitations
+. special spells
+. attacktypes
+. summoned monster lists
+. properties of the avatar and holy servant.
+
+Here are some hard and fast rules for designing gods:
+- Decide how the cleric will get experience. The god should be either
+a 'summoning', 'turning' *or* a 'wounding' god. If summoning/turning,
+make sure the aligned_race/enemy_race list(s) has enough creatures
+to summon/slay at low, medium and high levels. DONT give a god attuned
+to wounding AND turning||summoning (in fact, at minimum, one of these
+3 paths should be repelled/denied).
+- make sure the summoned avatar is stronger than the servant (!)
+- examine the avatar/servant stats. If set inproperly, you will give
+wimpy/super values. For example, Avatars/servants with less than 50 hp
+(and a high ac/no armour) will vanish quickly. Shoot for stats like:
+
+----
+type      |	   A V E R A G E  S T A T S
+          |  hp | ac | wc | arm | dam | speed
+----------|-----------------------------------
+servant   |  50 |  5 |  5 |  20 |   5 |  0.15
+avatar    | 350 | -5 | -1 |  50 |  50 |  0.25
+----
+
+Its difficult to give measurements on how to trade these off. To help
+guide your choices try to conserve the value of speed*dam and
+(armour+1)*hp.
+
+* avoid giving the potent attacktypes of death, weaponmagic and paralysis.
+* gods have a vulnerability for every immunity. Not all attacktypes
+are the same. Immunity to physical, magic and common attacktypes
+(like fire/cold/electric) are very potent. Similarly, vuln to these
+is a big negative.
+
+* SPELL paths. Carefull treatment is needed here. Give a path_denied/
+or a couple path_repelled for every path_attuned. BUT note: not all
+paths are of equal use. (ex path_abjuration has a very large list of
+spells). The main clerical paths are restoration, abjuration,
+protection, turning, wounding and summoning. For balance, make 3-4
+of these repelled/denied and 1 or 2 attuned. Be sure to check out the
+special spells list (below). Attuned paths like DEATH, WOUNDING and
+(especially) PROTECTION are very potent. Allow for some balance else
+where if you assign (one!) of these as a path_attuned.
+
+* If using the MORE_PRIEST_GIFTS define: priest limitations of no weapons
+and no armour are very negative, be sure to compensate with more than
+an attunded path.
+
+Of course, you may break these 'rules' to create your god. When you do that,
+you had better make up for the bonus elsewhere! Otherwise, you will create a
+'mega-god' whose worship (by the player priests) will unbalance the game.
+Designing a good god takes a bit of work.
+
+Special Spells
+~~~~~~~~~~~~~~
+Here is a possibly *incomplete* list of the special spells that a god may
+grant use to a worshiper. Check the file spellist.h for the 0 bookchance
+clerical spells to find all of these. (This list was complete on 10/96).
+
+----
+INFO				perceive self
+PROTECTION			defense; immuntity to cold, fire, electricity,
+poison, slow, paralysis, draining, attack,
+and magic
+RESTORE			remove damnation; reincarnation; raise dead;
+resurrection; regeneration
+WOUNDING			cause critical wounds; retributive strike
+LIGHT				daylight; nightfall
+DEATH				face of death; finger of death
+SUMMONING			insect plague
+CREATE			wall of thorns
+----
+
+Ideas
+~~~~~
+* Allow sacrifices. This is an excellent way to give a cleric xp.  Need to
+create enemy_race creatures w/ bodyparts we can sacrifice, and designate a
+pointer in Gods to the appropriate array of stuff we can sacrifice for xp.
+
+Experience
+----------
+Obsolete file kept for historical reasons.
+
+Introduction
+~~~~~~~~~~~~
+This patch represents a "developer's" version of the exp/skills
+system. While I have now achieved all of the objectives
+in sections "B" and "C" of the coding proposal (see README.PROPOSAL)
+and have play-tested as much of the code as possible, I am sure some
+big bugs must remain. (One for sure is that exp gained when using
+rod/horn/wand is wrong.)
+
+Below this section I outline 1) coding philosophy, 2) gross
+description of how the code impinges/interacts within older
+code. 3) designer's notes on the changes to the code.
+
+Comments on any area of this coding would be appreciated. Personally,
+I would like to see the Pow stat and a 2-type system of magic
+come into being. After all of you check out the code, I would
+like to discuss enhancements/bug fixes/implementation. For instance,
+is it too hard to figure out how to use the code!
+
+Sometime tomorrow exp2.tar.gz will be available in pub/thomas on
+ftp.astro.psu.edu.
+
+b.t.
+
+Code Philosophy
+^^^^^^^^^^^^^^^
+To move CF over to a new skills-based experience system. In this
+implementation several kinds of experience will exist. Players will gain
+experience in each kind of experience (or category) based on their actions
+in the game. The sum of all the various categories of experience equals the
+player "score", from which dam, wc, and hp are determined.
+
+All experience gaining actions will be through the use of certain skills --
+so called "associated skills". Associated skills are each related to 1 kind
+of experience. Thus, for example, "stealing" is a skill associated with
+"agility" experience.  There exists also "miscellaneous" skills which allow
+the use of a unique skill, but which are not related to any kind of
+experience and whose use does not generate experience points.
+
+In this implementation, skills and objects are both treated as objects in
+the inventory of the user. Experience "objects" each represent one kind of
+experience and are always invisible.  Skills objects each represent one kind
+of skill available in the game. Skills objects may either be invisible or
+have an associated bitmap (in which case they are "tools").
+
+All experience gaining actions will be through the use of certain skills --
+called "associated skills". Associated skills are each related to 1 kind of
+experience. Thus, for example, "stealing" is a skill associated with
+"agility" experience.
+
+Both Players and NPC's may only use skills which are in their inventories.
+NPC's do not use experience objects.
+
+A breakdown of the properties of skills and exp objects objects is as
+follows:
+
+----
+Object	Property 				NPC use?
+------	-----------------------------------	-------
+Experience   Each represents a different kind of 	 NO
+experience in the game. The object
+in the player inventory keeps track
+of player experience in that category.
+Always is invisible.
+
+Skill-	Represents a skill the player may 	 YES
+associated perform. May be either invisible or
+visible as a "tool". Successful use
+of this skill generates experience.
+Experience is allocated to appropriate
+experience object.
+
+Skill-	Same as above, *but* this skill is not   YES
+miscell.	related to any experience category, and
+use of this skill generates *no*
+experience.
+----
+
+Linking of associated skills to experience categories is done during
+initialization of the code (in init()) based on the shared stats of both.
+
+How skills and experience categories are named and linked may be changed by
+editing the skills/experience object archetypes.
+
+Implementation Details
+~~~~~~~~~~~~~~~~~~~~~~
+The most important thing is that I moved most of the code into the
+server/skills.c and server/skill_util.c files. The skills code is loosely
+implemented along the lines of the spell code. This is to say that:
+
+. skills use (do_skill) is called from fire().
+. there is a skills[] table similar to spells[].
+. server files skills.c and skill_util.c parallel spell_effect.c and
+  spell_util.c in respective functionallity.
+
+Particular notes about the implementation are outlined below.
+
+Defines
+^^^^^^^
+
+#define	MAX_EXP_CAT	maximum number of exp categories. Must
+be >= number in the game. Always include
+the "NULL" exp object - EXP_NONE.
+#define EXP_NONE (MAX_EXP_CAT - 1)
+#define NROFSKILLS	Equal to the number of elements in the
+skills[] array. See skillist.h for more
+info.
+#define MAX_EXP_IN_OBJ (MAX_EXPERIENCE/MAX_EXP_CAT) the maximum
+experience that an experience object
+may have. See fuller description in
+common/living.c
+
+Dump Switches
+^^^^^^^^^^^^^
+How the experience and skills archetypes are configured in
+any CF session can be seen by using the "-m5" flag. You must have
+DUMP_SWITCHES defined.
+
+Global Parameters
+^^^^^^^^^^^^^^^^^
+Unfortunately, I had to make use of several global parameters. These are:
+----
+exp_cat[]  -	the default experience objects
+nrofexpcat -	number of exp categories in the current session.
+----
+
+New Flags
+^^^^^^^^^
+FLAG_IS_WOODED -- needed by the woodsman skill. Should be set
+on all "wooded" terrain (eg woods2, swamp, etc.)
+
+FLAG_IS_HILLY  -- needed by the mountaineer skill. Should be
+set on all "mountainous" terrain.
+
+FLAG_READY_WEAPON -- Code needs this for both players and monsters,
+and its use differs for each.
+
+FLAG_READY_SKILL -- Code needs this for both players and monsters,
+and its use differs for each.
+
+New Structures
+^^^^^^^^^^^^^^
+A couple of changes to the object structure where made:
+(following excerpt taken from structs.h)
+
+/* These are used by the skills code */
+struct obj *chosen_skill;     /* the skill chosen to use */
+struct obj *exp_obj;          /* the exp. obj (category) assoc. w/ this object */
+uint32 hide;                  /* The object is hidden, not invisible */
+
+And the 'skill' structure used by the skills[] table is:
+
+typedef struct skill_struct {
+char *name;         /* how to describe it to the player */
+short category;     /* the experience category to which this skill belongs */
+long time;          /* How many ticks it takes to use the skill */
+long bexp;          /* base exp gain for this skill */
+float lexp;         /* level multiplier of exp gain for using this skill */
+short stat1;        /* primary stat effecting use of this skill */
+short stat2;        /* secondary stat for this skill */
+short stat3;        /* tertiary stat for this skill */
+} skill;
+
+Interaction of the skills patch with older code
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Interaction of the skills "patch" with older code is minimized.
+below is an outline of how skills/exp code impinges on older CF
+code (did I miss anything here??)):
+
+* in apply() and apply_special() changes were made to allow
+the use of skill "tools" and to better handle the readying of
+combat weapons (swords, bows, etc).
+
+* in hit_player() changes made to allow skills control attacking.
+
+* cosmetic changes (as in c_object.c to make pick_up() routine
+monster friendly) Changes in c_wiz.c, input.c fall into this
+category.
+
+* new commands are inserted into the code 'skills' and
+'use_skills'.
+
+* In init() init_new_exp_system() is called. Linking of
+exp objects/skills is done here.
+
+* add_exp() was rewritten to accommodate changes needed.
+new add_exp() is called from all same locations as before,
+plus it is called by do_skill(). See calc_skill_exp() in
+skills_util.c for details of how experience is calculated
+in skill use.
+
+* fix_player() changed to allow skills to affect player/monster
+status.
+
+* skill_attack() is called by hit_player().
+
+* do_skill() is called from fire(). This is the core routine for
+the use of skills. Only other way to use skills is by player
+undertaking an action requiring a skill (a "key" skill). These
+are currently:
+(unimplemented skills in parenthesis)
+
+----
+action		skill(s) auto-readied	Notes
+------		---------------------	----------------------
+combat	- 	hand_weapons,		Occurs when player:
+missile_weapons.		1. readies a weapon
+2. runs into opponent
+*and* has ready weapon
+
+wand/rod/horn-	use magic item		Occurs when player zaps
+approprite item.
+
+magic use -	spellcasting,		Occurs when player
+(praying)		attempts to cast a
+spell of appropriate nature
+
+rod/horn/wand - (magic item use) 	Occurs when player
+use					uses wand/rod/horn.
+
+In all of these cases, skills are used merely as "keys" needed
+by the player in order to perform an action. For example, if
+a player doesn't have "spellcasting", they are unable to cast
+spells.
+----
+
+Designer's Notes
+~~~~~~~~~~~~~~~~
+I have just taken the objectives from the crossfire proposal I made earlier.
+Each is discussed one-by-one:
+
+----
+>        Part B - Multiple experience categories
+>        --------
+>         B1 - Multiple categories in which a player may gain experience.
+----
+
+Experience objects owned by the player are not directly
+viewed. The "skills" command does give some information.
+
+----
+>        B3 - Each experience category will have an associated stat(s)-
+----
+
+There must exist an experience category with Str and Int
+set. Otherwise, no wc, or sp will be gained after 1st
+level. Multiple Str, Int experience objects could exist,
+but will only accelerate player wc, sp gains.
+
+----
+>        B4 - Wc, hp and dam will become related to the appropriate
+----
+
+Right now hp are related to the player "score" which
+is the total of all player experience.
+
+----
+>       Part C - Skills
+>       --------
+
+>        C1 - Two kinds of skills will be available: "associated" skills
+
+Implemented. Seems to work well.
+
+>        C2 - Skills will be objects in the character inventory. These
+
+Implemented. Seems to work well.
+
+>        C3 - experience will be now only be gained through the use of
+>            skills associated to one of the categories of experience.
+
+Implemented. Seems to work well.
+
+>        C4 - Both NPC and players will be able to use skills.
+
+Implemented. Seems to work well.
+
+>        C5 - Players will be able to learn skills by reading scrolls of
+
+Fixed a minor bug in this.
+----
+
+
+General background note on why experience objects change stats from
+Brian Thomas, Aug 20, 1997:
+
+Nope. Stats are used by experience objects to 'tag' the
+category of experience, ie
+
+"physique" exp objects have Str 1
+"wisdom" exp object have Wis 1
+
+There shouldnt be an increase in the stat in question.
+
+now for a bit of explaination, longish...
+
+This setup seems a bit arcane I know..so why this way?  Why not hardcode the
+experience archetypes, eg have type EXP_FIGHTING, EXP_MAGIC, and so on?
+
+Well... at the time I did this, there was some debate about what experience
+system was the best, as some ppl wanted to have only 4 instead of 6
+categories, and so on .. (*sigh*).
+
+In the attempt to make the experience system as flexible as possible, I
+coded the experience 'categories' to be defined by the archetypes and using
+various stats to differentiate them. Properities of the experience
+categories are set by the stat(s) they have defined. To my knowledge the
+stats have the following properties:
+
+----
+str --> gains experience, from fighting
+con --> controls hp progression somewhat (if a define
+in living.c is set).
+dex --> gains exp from agility skills
+wis --> gains exp from priest skills, effects grace
+calculation
+int --> gain exp from mental skills
+cha --> gain exp from personality skills
+pow --> gain exp from wizard skills, effects mana calc.
+----
+
+So, If you didnt like the current 6 experience catagories and
+wanted only 3 for your server, say "fighting" "presense" and
+"holyness" you could  remove all of the old experience archetypes
+and define the following new ones:
+
+----
+Name      Properties           Explaination
+fighting  Str 1, Con 1, Dex 1  Combines old physique, agility exp
+presence  Pow 1, Cha 1         Combines old magic, personality exp
+holyness  Wis 1                same as old wisdom exp
+----
+
+So, every player on this server would only see 3 types of experience to be
+gained. If you fight or steal something, then experience points go to the
+"fighting" category.
+
+And note, since we DIDNT design an arch with Int 1, there will be NO
+experience gained for use of mental skills (at least in theory this should
+be the case. I dont recogmend leaving out a stat, eg you should have a every
+stat covered between all of your new experience archetypes).
+
+Even though I wrote a doc to help explain how to do this, probably nobody
+but me (or maybe Peter) really is knowledgeable enough (and has the desire)
+to reconfigure the game experience to suit their individual tastes. This
+might be some code we could 'simplify' (heh, remove it).

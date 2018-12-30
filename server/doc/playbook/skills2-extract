@@ -1,0 +1,42 @@
+BEGIN {
+	exper["NONE"] = 1;
+# *sigh* I couldnt make this completely right. I had
+# to add kludges for skills that use the word "magic"
+# in them (since) this collides with the use of this
+# word as an experience category too.
+	skill["use"] = skill["sense"] = 1;
+	crosscmd = crosscmd " 2>&1";
+	printit = 0;
+	while (crosscmd | getline buff == 1) {
+		if(printit) {
+			finish = 0;
+			nr = split(buff, var, " ");
+			if(var[2] in skill && var[3] in exper)
+			  problem = 1;
+			else
+			  problem = 0;
+			printf(" &%s",var[2]);
+		        for(i=3;i<=nr;i++) {
+			   if(var[i]==" ") continue;
+			   if(var[i] in exper)
+				if(!problem)
+				   finish = 1;
+				else
+				   problem = 0;
+			   if(!finish)
+			     printf(" %s",var[i]);
+			   else {
+			     printf("	& %s & %s & %s & %s & \\\\\n",
+				var[i], var[nr-2], var[nr-1], var[nr]);
+			     break;
+			   }
+			}
+		} else {
+			nr = split(buff, var, "-");
+			nr2 = split(var[2], var2, " ");
+			exper[var2[1]] = 1;
+		}
+		if(buff ~ "---") printit = 1;
+	}
+	close(crosscmd);
+}

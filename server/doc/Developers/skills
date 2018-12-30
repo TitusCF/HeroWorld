@@ -1,0 +1,279 @@
+SKILLS/EXPERIENCE DOCUMENTATION for DEVELOPERS
+----------------------------------------------
+
+- Summary -
+
+0. Introduction
+
+1. Sketch of system
+   a. Initialization - how skills and experience are linked
+
+2. How to add new skills
+   a. creation of new skill: outline of needed steps
+
+3. Detail of skill archetype values.
+
+4. Skill Tools
+
+5. Skill Scrolls
+
+6. Other Objects
+
+7. Workings of the Skill System
+
+8. Changes & Limitations
+
+-------------------------------------------------------------------------
+0. Introduction
+---------------
+
+Skills were redone to a large extent in April 2003.  This document has been
+updated to reflect how the skills work.
+
+The main change is that experience categories were removed from the game.
+Instead, experience goes to the skill itself.  Thus. how good a player is at
+the skills is directly proportional to how good they are at that skill, and
+not the category itself.
+
+1. Sketch of system
+-------------------
+
+In the skills/experience code, players gain experience for the activities
+which they perform in the game ("You are what you do").  The activities a
+player may engage in are controlled by the skills they possess. All players
+start with a basic set of skills which they may expand through adventuring.
+While monsters do not gain experience from the use of skills, they may use any
+skills which exist in their inventory if they have the can_use_skill flag set.
+
+In the code, skills are objects which exist in the player/monster inventory.
+Both NPC/monsters and players use the same skill archetypes. Not all skills
+are however enabled for monster use. Check the Skills_players.doc for
+available NPC skills.
+
+The experience one gets for a skill is greatly simplified.  No longer
+is it weighted based on the stats of the player.  Rather, the experience is
+based on what the skill was used for - opening a tough trap gets more
+exp than opening an easy trap.  The stats the player has will improve
+the chances of success in most cases - this is bonus enough without also
+gaining additional experience.
+
+The chracters total experience is no longer related to the sum of experience
+in the players skills - A player could for example only of 1000 exp, but have
+skills with 2500 exp, 300 exp, etc.  Removing the tie between skills and total
+experience allows for reasonable skill advancement - you can allow a player
+to easily get to level 20 in a skill without them now being level 20 player.
+
+Note also that the only tunables are now in the code or in the archetypes -
+if the exp for disarming is out of whack, the code would need to be changed
+to give more appropriate amounts.
+
+2. How to add new skills
+-------------------------
+
+Adding a new skill to CF is not overly difficult, it is little more difficult
+than adding new archetypes and a spell to the game.
+
+a. creation of new skill: outline of needed steps
+
+A number of steps are required to create a new skill.
+
+1) Edit a new skills archetype. See below for appropriate parameters.  If
+   you desire the skill to be a skill tool, edit a "face" for the new skill.
+   If you want to have the skill to be learned via a skill scroll, edit a
+   skillscroll for the skill.  Place the new archetype(s) in the
+   lib/arch/skills directory.  Remember to name your new skill appropriately
+   (ie skill_<new skill name>).  Make sure you select a unique subtype
+   for your new skill.
+
+2) Edit skill_util.c. Add an entry for the skill in do_skill() (so that it may
+   be used as a "long-range attack"). If the new skill is a hth attack take a
+   look at the attack_hth_skills[] table in do_skill_attack() -- where does
+   the hth attack rank? The most useful attacks should occur earlier in the
+   table.
+
+3) Create the skill code. If you created a hth attack, you probably can get
+   away with just using attack_hth. For other skills, put the skill code in
+   skills.c. If your new skill is to be an "associated" skill, then make sure
+   that it returns the value of calc_skill_exp().
+
+4) Edit treasures/artifacts file as needed (esp. if your skill will become one
+   of the starting skills, or will show up in shops.)
+
+
+
+3. Detail of skill archetype values.
+------------------------------------
+
+This section details the various object/archetype values.
+
+First, we detail skill objects:
+type: SKILL (43)
+subtype: subtype of skill
+invisible: 1
+no_drop: 1
+
+name: Name of the skill, used by things like 'use_skill', as well as output
+    of 'skills' command.
+
+skill: Same as name - this simplifies code, so that we can look at
+    op->skill for both skills and skill tools. It also means that if a skill
+    named is passed, we can verify we have the matching entry.
+
+stats (Str, Dex, sp, grace, etc): These modify the abilities of the player,
+    in a sense giving bonuses.
+
+expmul: this is the ratio of experience the players total should increase by
+    when this skill is use.  If this is zero, then experience only goes to
+    to the skill.  Values higher than 1 are allowed.  Note that experience
+    rewarded to the players total is in addition to that given to the
+    skill.  Eg, if player should get 500 exp for using a skill, and
+    expmul is 1, the player will get 500 added to that skill as well as
+    500 to their total.
+
+exp: The exp the player has in the skill (object).  If this is an archetype,
+   this contains the base amount the player gets for using the skill.
+   exp will be set to 0 when the skill is given to the player.
+
+level: Object: The level of this skill - this is just determined from the exp
+   above based on the experience table.  Archetype: This is a percentage value
+   that determines how the level difference effects experience rewards (like
+   the old lexp value).  Basically, if it is set to 100, the ratio is normal
+   (eg, if opponent is twice level of player, player would get twice as much
+   normal exp).  If level is 200, player would get 4 times.  If level if 50,
+   player would half normal.  If level is 0, then we don't adjust exp reward
+   based on level.
+
+can_use_skill (flag): If this is set, the player knows the skill natively
+   (eg, does not need a skill tool, see below).  If this is not set,
+   then this skill object is acting as a container for experience.
+   For example, if a player is using a holy symbol in order to get his
+   praying skill, we still need to have skill_praying in the players
+   inventory to store the experience in.  However, the player can't
+   use that praying skill without a holy symbole until they learn it from a
+   skill scroll.
+
+Note that specific skills may use other fields to convey more information
+about the skills.
+
+For combat skills (karate, punching, one handed weapons, etc):
+dam: Every 10 levels of the skill, characters does 'dam' more damage.
+wc: Increases characters wc by this amount.
+wc_increase_rate: This is a divisor - skill level is divided by this
+    to determine improvement to wc.  Lower values are better.
+
+
+
+4. Skill Tools
+-----------------
+
+Skill tools are items that let a player use a skill they do not otherwise
+know.  Skill tools may also have advantages, eg, spellpaths they grant to the
+caster, stat bonuses, etc.
+
+Most of the values for the skill tools are just like normal equipment
+(value, weight, face, body_..., ) fields.
+
+type: skill_tool (74)
+skill: Name of the skill this object allows the user of.
+
+Note - the old skill code used 'sp' to denote the skill to use.
+
+5. Skill Scrolls
+----------------
+type: SKILLSCROLL
+skill: Name of the skill to be learned
+Rest of the values are per normal equipment (weight, value, identified,
+ etc).
+
+
+6. Other Objects
+----------------
+
+Many other objects will use the 'skill' field in their object to denote
+what skill is needed to use this object.  Thus, for examples, readable
+objects have 'skill literacy' to denote that the literacy skill is
+needed to read them.  Weapons have 'skill' values to denote what
+skill is needed to use the weapon.  Same for spells.
+
+
+-------------------------------
+7. Workings of the Skill System
+-------------------------------
+
+This section attempts to briefly explain how this all works.
+
+Due to the addition of the skill pointer, it is no longer required
+that a skill be in the ready_skill position to gain experience.
+
+Whenever a player tries to use skill either directly (ready_skill ..)
+or indirectly (cast a spell which requires knowledge of the skill), the
+code will examine the players inventory to see if they an in fact
+use the skill.  This first checks to see if the player has the appropriate
+skill archetype in their object.  If they do, and can_use_skill is set
+to 1, nothing more is done.  If that is not the case, we then look for
+a skill tool.  If none is found, we tell the player the can't use the
+skill.  If one is found, we try to apply the skill tool - if this can not
+be done, we also error out.
+
+Only if the player explicitly activates a skill with ready_skill do
+we change the players range pointer.  Otherwise, it will remain as is
+(but not that casting a spell might also change the range pointer).
+
+add_exp has been modified to take two additional parameters -
+skill_name and flag.
+
+skill_name is the skill to add the experience to.  By passing this
+to add exp, a lot of the code no longer needs to change chosen_skill,
+then reset it back again.
+
+
+flag determines what to do if the player does not currently have the
+skill pointer in their inventory.  This can arise if the player
+is using a skill tool, or part of a party.
+
+In the default case of flag being 0, if the player does not currently
+have the skill in their inventory, this is added (with can_use_skill 0).
+If flag is 1, we add the exp to the players total exp, but don't
+give them any in the skill.  If it is 2, the player gets nothing.
+
+This fixes many of the abuses of party combat - if a member of your
+party is killing things with wizardry, you'll get wizardry exp.  If
+you don't have wizardry, you'll get some general exp, but you can't
+funnel it into things like alchemy anymore.
+
+The effect of flag 1 to add exp is so that that a player can't have
+thousands of exp in a skill and never have used in themselves - for a player
+to have any exp in a skill, he will have had to use it at least once.  Note
+however that a player could have used the skill just once (to say kill a
+kobold) and yet get a bunch more exp from party members that are actually good
+wizards.
+
+The handling of add_exp with skill_name is pretty simple.  In most cases, we
+know immediately the skill that was used (eg, melee combat, search, disarm,
+etc).  In cases of indirect death (spells), we set the skill in the spell
+object to the skill that it should get awarded to.
+
+------------------------
+8. Changes & Limitations
+------------------------
+
+The old skill system had the idea of stats that effect the skill.  There
+is no good way to do that within the new system - instead, the code
+the executes the skill will do this.  This really isn't much worse
+than the old system anyways - the old code still did things like
+'stat average * 3' or otherwise determine how important the stats are.
+
+ In addition, this allows for more flexibility for multi faceted
+skills.  For example, the identification portion of some skills should
+probably use int, but the creation portion should perhaps be dex and strength.
+
+There is no more SK_level function - while this could still be useful
+to replace code like
+
+level= op->chosen_skill?op->chosen_skill->level:op->level;
+
+the use of automatically de-referencing the op->chosen_skill is not
+suggested - the new skill system is much more lenient on passing the
+appropriate skill object to functions that need it, so calls to
+SK_level in most cases may not really be the right approach - in many
+cases, the chosen_skill may not be what the code is really expecting.

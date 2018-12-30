@@ -1,0 +1,262 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage{epsfig}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{longtable}
+\begin{document}
+\title{Crossfire in vital numbers}
+\author{
+\input version
+}
+\maketitle
+\LTchunksize=1000
+\setlongtables
+
+
+\section*{General}
+This guide is intended to present the player to his opponents and the
+``tools'' of his trade.  The tables in this guide are generated
+completely from the crossfire source, so you may sometimes see
+monsters or items here before they can be encountered in the game.
+
+\subsection*{Enchantments}
+Enchanted items are items that is better than the basic type.
+They are identified by the {\it +1}, {\it +2}, {\it +3} or {\it +4} at
+the end of the item name.
+Also, the higher the number, the rarer the item is.
+The enchantments affect the value, weight and effect of the item;
+i.e. for armour its {\it ac} (armour class),
+for weapons its {\it wc} (weapon class).
+Items that already have a magical effect are never enchanted.
+
+
+\section*{Maxstats}
+
+The following table shows the maximum value the different player
+classes can reach in a stat. It also shows how your basic stats will
+be changed by choosing a different class. When you roll your
+character, the stats displayed are the stats you will get as a human.
+When satisfied, you can step through a number of classes, each with
+special bonuses in stats.
+
+{\small
+\begin{center}
+\begin{tabular}{|c|c|l|l|l|l|l|l|l|p{4cm}|}
+\hline
+Type& &         Str&    Dex&    Con&    Int&    Wis&    Pow& Cha &Special\\
+\hline
+\hline
+\input stats.tex
+\hline
+\end{tabular}
+\end{center}
+}
+
+A barbarian has a maximum strength which is 4 higher than a human --
+that means he will begin with an additional 4 points added to his
+strength roll. On the other hand, a barbarian can never get above 12
+in intelligence.  This means that your rolled character will have 8
+less in intelligence if you choose that class.  It also means that you
+can't be a barbarian if you roll less than 8 in intelligence -- the
+poor barbarian would have had a negative stat.
+
+You can never roll a character with better stats than an average of
+straight 15's, and you can't roll higher than 18 in a stat. These
+values are the maximum values for your ``natural'' dexterity,
+constitution etc. You can raise your natural stats by drinking
+potions.
+
+However, there are plenty of items which give you bonuses to your
+stats even {\em beyond} your class' limit -- swords, armours and rings to
+name the most important. You can also read scrolls or cast spells to
+temporarily raise your stats.  The absolute maximum value is 30, and
+the player class doesn't matter here.
+
+\section*{Weapons}
+
+\subsection*{Weapons}
+Notice that the weight and damage differs on seemingly equal weapons.
+We suggest that you wield the {\em identified} weapons,
+to choose the better one.
+
+{\small
+\begin{longtable}{|c|c|r|r|r|c|c|r|r|r|}
+\hline
+Name&&Dam&Speed&Weight&Name&&Dam&Speed&Weight\\
+\hline
+\hline
+\endhead
+\hline
+\endfoot
+\input weap.tex
+\end{longtable}
+}
+
+Some weapons also have a separate effect:
+
+{\small
+\begin{tabular}{l c p{10cm}}
+\input weapmag.tex
+\end{tabular}
+}
+\subsection*{Bows}
+
+The {\em rate} column in the following table shows the relative rate
+of fire. E.g. to cock a bow with a ``rate of fire'' of $^1/_2$, you
+need only half the time of what is needed with a bow with a ``rate of
+fire'' of $^1/_1$.
+
+The damage done by the impact of a bolt fired from a crossbow is
+constant.  However, with an ordinary bow you can pull the arrow
+further back if you are strong, and it would thus do more damage.
+
+{\small
+\begin{center}
+\begin{tabular} {|c|c|r|r|r|}
+\hline
+Name&&Rate&Dam&Weight\\
+\hline
+\hline
+\input bow.tex
+\hline
+\end{tabular}
+\end{center}
+}
+
+\subsection*{Special weapons}
+
+This section shows the different ``Special weapons'' which exist in
+crossfire.  Although the weapons are supposed to be unique, there may
+exist several of them...
+
+{\small
+\begin{longtable}{|c|c|r|r|p{7cm}|}
+\hline
+Name&&Dam&Max. speed&Special\\
+\hline
+\hline
+\endhead
+\hline
+\endfoot
+\input arche.tex
+\end{longtable}
+}
+
+\section*{Armour}
+
+Armour is essential to surviving in Crossfire.
+The basic idea is that the less {\it ac} (armour class) you have -- the more
+difficult you are to hit.
+The {\it armour} value represents the reduction in physical damage in percent.
+There are several types of armour in Crossfire.You may only wear {\em one}
+of the different main types of armour (except magical armour).
+
+The different main types consist of these :
+\subsection*{Body Armour}
+
+{\small
+\begin{center}
+\begin{tabular}{|c|c|r|r|r|r|p{4cm}|}
+\hline
+Type&&Ac& Armour&Weight&Max. speed&Magic\\
+\hline
+\hline
+\input arm.tex
+\hline
+\end{tabular}
+\end{center}
+}
+\subsection*{Helmets}
+
+{\small
+\begin{center}
+\begin{tabular}{|c|c|r|r|r|p{6cm}|}
+\hline
+Type&&Ac&Armour&Weight&Magic\\
+\hline
+\hline
+\input helmet.tex
+\hline
+\end{tabular}
+\end{center}
+}
+\subsection*{Shields}
+
+{\small
+\begin{center}
+\begin{tabular}{|c|c|r|r|r|p{5cm}|}
+\hline
+Type&&Ac&Armour&Weight&Magic\\
+\hline
+\hline
+\input shield.tex
+\hline
+\end{tabular}
+\end{center}
+}
+
+\subsection*{Other Clothing}
+
+{\small
+\begin{center}
+\begin{tabular}{|c|c|r|l|}
+\hline
+Type&&Armour&Magic\\
+\hline
+\hline
+\input mag.tex
+\hline
+\end{tabular}
+\end{center}
+}
+
+\section*{Magic}
+
+Magic is brought into play by various means.  The only way to actually
+learn the spells, is to read them from a book. Both scrolls and books
+will disappear after being read ({\em applied} actually). Magic that
+comes from quaffing ({\em applying}) a potion will stay in effect over
+a period of time. Naturally not all magic found in wands
+would be found in e.g. scrolls etc.{\it Scroll of large fireball} or
+{\it Potion of poison} would be ridiculous.
+
+The {\it Wonder} spell will produce random magic (rather unpredictable).
+
+{\small
+\begin{longtable}{|l|c|c|r|r|c|c|c|}
+\hline
+Name& & &Level&Sp.&Wands&Scrolls&Books\\
+\hline
+\hline
+\endhead
+\hline
+\endfoot
+\input spells.tex
+\end{longtable}
+}
+
+\section*{Monsters}
+
+The monsters are your opponents in Crossfire.  Actually the only way
+to gain experience in this game is to bash monsters (or your fellow
+players, but you probably won't last long if you choose that route to
+``fame'').  The more {\it hitpoints} the monsters have, the longer it
+takes to kill the suckers.  Unfortunately, the monsters tend to strike
+back...  Thus the stronger the monsters are -- the more damage you
+take, and vice versa.
+
+{\small
+\subsection*{The monsters}
+\begin{longtable}{|p{2cm}|c|c|r|r|r|p{5cm}|}
+\hline
+Name&&Gen&Exp&Hp&Ac&Special\\
+\hline
+\hline
+\endhead
+\hline
+\endfoot
+\input monput.tex
+\end{longtable}
+}
+\end{document}

@@ -1,0 +1,32 @@
+# BANFILE
+# A file which contains users or sites which are banned from playing.
+# wildcards can be used in the file.  Valid entries are put on seperate lines.
+# For a ban to result, both the user and ip must be true.
+# Note: Crossfire does not do a ip -> dns name, so matches for the
+# second part must be by ip.
+#
+# Syntax is "user@ip.address".  Note that when actually putting in lines, the
+# double quotes should be ignored.  user can be "*" to match any user.  The
+# line may be prefixed by '~' to allow an entry.  The lines are matched in the
+# given order; the first match is used.
+#
+# The ip address portion is done as a substring and not wildcard
+# match.  Some examples, and results:
+#
+# "mark@tavern.us" - won't work - tavern.us would not match - must be ip
+#                    address.
+# "*@10.1.31.1"    - users from 10.1.31.1 will not be able to play.
+# "*@10.1.31.*"    - will not work - * is not a wildcard for host matches.
+# "*@10.1.31."     - will do above - every ip that has 10.1.31. will be banned.
+# "*@10.1.31"      - will ban above, but would also ban things like
+#                    "129.10.1.31".
+# "mark@10.1.31.1" - user mark from 10.1.31.1 will not be able to play.
+# "mark@"          - user mark will not be able to play.
+# "mark@*"         - user mark will not be able to play - * matches any host
+#                    name.
+# "~mark@1.2.3.4"  - accept user mark from 1.2.3.4, regardless if a following
+#                    line would forbid it.  For example, together with a
+#                    following line "mark@*" would allow mark to play only if
+#                    he connects from 1.2.3.4.
+#
+# Ip address can be determined by looking at the logs, or with the who command.

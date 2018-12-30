@@ -1,0 +1,695 @@
+/**
+@var GIRDLE
+See @ref page_type_113
+*/
+
+/**
+@page page_type_113 Girdle
+
+
+@section Description
+            Wearing a girdle, the object's stats will directly be inherited to
+            the player. Girdles usually provide stats- or damage bonuses and no
+            defense. 
+
+
+
+Type defined by:
+- @ref object::type = 113
+
+
+@section Attributes
+
+<table>
+	<tr>
+		<th>Attribute</th>
+		<th>Field</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>armor class</td>
+		<td>@ref liv::ac</td>
+		<td>            This value defines the amount of armor-class bonus for wearing this
+            item. &lt;Armor class&gt; lessens the chance of being hit. Lower
+            values are better. It should usually be set only for armor-like
+            equipment.
+		</td>
+	</tr>
+	<tr>
+		<td>artifact</td>
+		<td>@ref obj::artifact</td>
+		<td>            If defined, refers to an artifact to get values from.
+		</td>
+	</tr>
+	<tr>
+		<td>attuned paths</td>
+		<td>@ref obj::path_attuned</td>
+		<td>                Click on the &lt;attuned paths&gt; button to select spellpaths.
+                The player will get attuned to the specified spellpaths while
+                wearing this item.
+		</td>
+	</tr>
+	<tr>
+		<td>block view</td>
+		<td>@ref FLAG_BLOCKSVIEW</td>
+		<td>            If an item is set to block view, players (and monsters) cannot see
+            beyond it unless they cross it or manage to stand on top.
+		</td>
+	</tr>
+	<tr>
+		<td>changing</td>
+		<td>@ref FLAG_CHANGING</td>
+		<td>            A &lt;changing&gt; object converts to &lt;food&gt; &lt;other_arch&gt;
+            objects; when it's animation is done. For non-living objects &lt;food&gt;
+            is checked: if it is zero, the change happens; otherwise &lt;food&gt;
+            is decreased by one. I suggest you don't mess with this value -
+            leave the default in place.
+		</td>
+	</tr>
+	<tr>
+		<td>charisma</td>
+		<td>@ref liv::Cha</td>
+		<td>                The player's charisma will rise/fall by the given value while
+                wearing this piece of equipment.
+		</td>
+	</tr>
+	<tr>
+		<td>constitution</td>
+		<td>@ref liv::Con</td>
+		<td>                The player's constitution will rise/fall by the given value
+                while wearing this piece of equipment.
+		</td>
+	</tr>
+	<tr>
+		<td>curse</td>
+		<td>@ref FLAG_CURSED</td>
+		<td>            A cursed piece of equipment cannot be unwielded unless the curse is
+            removed.
+		</td>
+	</tr>
+	<tr>
+		<td>damnation</td>
+		<td>@ref FLAG_DAMNED</td>
+		<td>            A damned piece of equipment cannot be unwielded unless the curse is
+            removed. Removing damnations is a tick harder than removing curses.
+		</td>
+	</tr>
+	<tr>
+		<td>denied paths</td>
+		<td>@ref obj::path_denied</td>
+		<td>                Click on the &lt;denied paths&gt; button to select spellpaths.
+                The specified spellpaths will be denied to the player while
+                wearing this item.
+		</td>
+	</tr>
+	<tr>
+		<td>description</td>
+		<td>@ref obj::msg</td>
+		<td>            This text describes the item's "story". Every decent artifact should
+            have such a description.
+		</td>
+	</tr>
+	<tr>
+		<td>dexterity</td>
+		<td>@ref liv::Dex</td>
+		<td>                The player's dexterity will rise/fall by the given value while
+                wearing this piece of equipment.
+		</td>
+	</tr>
+	<tr>
+		<td>elevation</td>
+		<td>@ref page_custom_attribute_elevation "elevation"</td>
+		<td>            The elevation (height above sea level) of this square. It is used
+            for weather calculations and should be in the range -32000..32000.
+            The elevation of a tile must be set in the bottom-most game object;
+            elevation values for non-bottom-most game objects are ignored by the
+            Crossfire server.
+		</td>
+	</tr>
+	<tr>
+		<td>food bonus</td>
+		<td>@ref liv::food</td>
+		<td>                Positive &lt;food bonus&gt; slows down the player's digestion,
+                thus he consumes less food. Negative values speed it up.
+
+                Note that food is consumed not only for "being alive", but also
+                for healing and mana-regeneration. &lt;food bonus&gt; only
+                affects the amount of food consumed for "being alive". Hence,
+                even with high &lt;food bonus&gt;, during a fight a player can
+                run out of food quickly.
+		</td>
+	</tr>
+	<tr>
+		<td>glow radius</td>
+		<td>@ref obj::glow_radius</td>
+		<td>            If &lt;glow radius&gt; is set to a value greater zero, the object
+            appears lit up on dark maps. &lt;glow radius&gt; can be a value
+            between 0 and 4, the higher, the more light does the object emit.
+		</td>
+	</tr>
+	<tr>
+		<td>godgiven item</td>
+		<td>@ref FLAG_STARTEQUIP</td>
+		<td>            A godgiven item vanishes as soon as the player drops it to the
+            ground.
+		</td>
+	</tr>
+	<tr>
+		<td>grace regen.</td>
+		<td>@ref liv::grace</td>
+		<td>                Positive &lt;grace regen.&gt; bonus speeds up the player's grace
+                regeneration. Negative values slow it down. Since grace can be
+                regenerated rather easy with praying, additional &lt;grace
+                regen.&gt; bonus should be VERY RARE!!
+		</td>
+	</tr>
+	<tr>
+		<td>granted movement</td>
+		<td>@ref obj::move_type</td>
+		<td>                As soon as the player applies a piece of equipment, the player
+                will start using the granted movement types.
+		</td>
+	</tr>
+	<tr>
+		<td>health regen.</td>
+		<td>@ref liv::hp</td>
+		<td>                Positive &lt;health regen.&gt; bonus speeds up the player's
+                healing process. Negative values slow it down.
+		</td>
+	</tr>
+	<tr>
+		<td>identified</td>
+		<td>@ref FLAG_IDENTIFIED</td>
+		<td>            If an item is identified, the player has full knowledge about it.
+		</td>
+	</tr>
+	<tr>
+		<td>identified animation</td>
+		<td>@ref page_custom_attribute_identified_animation "identified_animation"</td>
+		<td>            If defined, then the object will take this animation when identified.
+		</td>
+	</tr>
+	<tr>
+		<td>identified animation speed</td>
+		<td>@ref page_custom_attribute_identified_anim_speed "identified_anim_speed"</td>
+		<td>            If defined, then the object will have this animation speed when identified.
+		</td>
+	</tr>
+	<tr>
+		<td>identified image</td>
+		<td>@ref page_custom_attribute_identified_face "identified_face"</td>
+		<td>            If defined, then the object will take this appareance when identified.
+		</td>
+	</tr>
+	<tr>
+		<td>identified random animation?</td>
+		<td>@ref page_custom_attribute_identified_anim_random "identified_anim_random"</td>
+		<td>            If defined, then the object's animation is in a random sequence when identified.
+		</td>
+	</tr>
+	<tr>
+		<td>identified_name</td>
+		<td>@ref page_custom_attribute_identified_name "identified_name"</td>
+		<td>            If defined, then the object will take this name when identified.
+		</td>
+	</tr>
+	<tr>
+		<td>identified_name_pl</td>
+		<td>@ref page_custom_attribute_identified_name_pl "identified_name_pl"</td>
+		<td>            If defined, then the object will take this plural name when identified.
+		</td>
+	</tr>
+	<tr>
+		<td>image</td>
+		<td>@ref obj::face</td>
+		<td>            The image-name defines what image is displayed for this object
+            in-game.
+		</td>
+	</tr>
+	<tr>
+		<td>intelligence</td>
+		<td>@ref liv::Int</td>
+		<td>                The player's intelligence will rise/fall by the given value
+                while wearing this piece of equipment.
+		</td>
+	</tr>
+	<tr>
+		<td>invisible</td>
+		<td>@ref obj::invisible</td>
+		<td>            Generally makes the object invisible. Depending on the object-type,
+            some can be made visible by the show_invisible spell. If in doubt,
+            test it. Putting an invisible object under the floor always prevents
+            it from being shown.
+		</td>
+	</tr>
+	<tr>
+		<td>is applied</td>
+		<td>@ref FLAG_APPLIED</td>
+		<td>            If you put this item into the inventory of a monster, and you want
+            the monster to use/wear the item - you must set &lt;is applied&gt;.
+            Enabling this flag doesn't make any sense if the item is NOT in a
+            monster's inventory.
+		</td>
+	</tr>
+	<tr>
+		<td>item power</td>
+		<td>@ref obj::item_power</td>
+		<td>            The &lt;item power&gt; value measures how "powerful" an artifact is.
+            Players will only be able to wear equipment with a certain total
+            amount of &lt;item power&gt;, depending on their own level. This is
+            the only way to prevent low level players to wear "undeserved"
+            equipment (like gifts from other players or cheated items).
+
+            It is very important to adjust the &lt;item power&gt; value
+            carefully for every artifact you create! If zero/unset, the CF
+            server will calculate a provisional value at runtime, but this is
+            never going to be an accurate measurement of &lt;item power&gt;.
+		</td>
+	</tr>
+	<tr>
+		<td>luck bonus</td>
+		<td>@ref liv::luck</td>
+		<td>                With positive luck bonus, the player is more likely to succeed
+                in all sorts of things (spell-casting, praying,...). Unless the
+                &lt;luck bonus&gt; is very high, the effect will be barely
+                visible in-game. Luck bonus on one piece of equipment should
+                never exceed 3, and such bonus should not be too frequently
+                available.
+		</td>
+	</tr>
+	<tr>
+		<td>magic bonus</td>
+		<td>@ref obj::magic</td>
+		<td>            &lt;magic bonus&gt; works just like ac, except that it can be
+            improved by "scrolls of Enchant Armour" or reduced by acid. It is
+            less useful than direct armor-class bonus on the helmet.
+
+            Important: &lt;magic bonus&gt; on girdles has no effect if there is
+            no &lt;armor class&gt; set. Girdles shouldn't have &lt;armor class&gt;,
+            thus &lt;magic bonus&gt; is pointless here.
+		</td>
+	</tr>
+	<tr>
+		<td>mana regen.</td>
+		<td>@ref liv::sp</td>
+		<td>                Positive &lt;mana regen.&gt; bonus speeds up the player's mana
+                regeneration. Negative values slow it down.
+		</td>
+	</tr>
+	<tr>
+		<td>material</td>
+		<td>@ref obj::material</td>
+		<td>            This bitmask-value informs the player of which material(s) the
+            object consists. Material does also affect how likely the object can
+            be destroyed by hazardous spell-effects.
+		</td>
+	</tr>
+	<tr>
+		<td>name</td>
+		<td>@ref obj::name</td>
+		<td>            This is the name of the object, displayed to the player.
+		</td>
+	</tr>
+	<tr>
+		<td>non-pickable</td>
+		<td>@ref FLAG_NO_PICK</td>
+		<td>            If set, the object cannot be picked up (Neither by players nor
+            monsters).
+		</td>
+	</tr>
+	<tr>
+		<td>number</td>
+		<td>@ref obj::nrof</td>
+		<td>            This value determines the number of objects in one stack (for
+            example: 100 gold coins =&gt; "number = 100"). You should set this
+            at least to one, for any pickable object - otherwise it won't be
+            mergeable into a stack.
+		</td>
+	</tr>
+	<tr>
+		<td>plural name</td>
+		<td>@ref obj::name_pl</td>
+		<td>            This is the plural name of the object. A plural name must be set for
+            all items that can be picked up and collected by the player.
+		</td>
+	</tr>
+	<tr>
+		<td>power</td>
+		<td>@ref liv::Pow</td>
+		<td>                The player's power will rise/fall by the given value while
+                wearing this piece of equipment.
+		</td>
+	</tr>
+	<tr>
+		<td>price adjustment</td>
+		<td>@ref page_custom_attribute_price_adjustment "price_adjustment"</td>
+		<td>            If set, this is the buy and sell price adjustment ratio for the
+            item.
+		</td>
+	</tr>
+	<tr>
+		<td>price adjustment for buying</td>
+		<td>@ref page_custom_attribute_price_adjustment_buy "price_adjustment_buy"</td>
+		<td>            If set, this is the adjustment ratio when buying the item. Ignored
+            if &lt;price&gt; adjustment is set.
+		</td>
+	</tr>
+	<tr>
+		<td>price adjustment for selling</td>
+		<td>@ref page_custom_attribute_price_adjustment_sell "price_adjustment_sell"</td>
+		<td>            If set, this is the adjustment ratio when selling the item. Ignored
+            if &lt;price&gt; adjustment is set.
+		</td>
+	</tr>
+	<tr>
+		<td>race restriction</td>
+		<td>@ref page_custom_attribute_race_restriction "race_restriction"</td>
+		<td>            If this is set to a : separated (with leading and trailing :) list
+            of races, only players of this race will be able to apply the item.
+		</td>
+	</tr>
+	<tr>
+		<td>reflect missiles</td>
+		<td>@ref FLAG_REFL_MISSILE</td>
+		<td>                If a player is wearing any piece of equipment with the ability
+                to &lt;reflect missiles&gt;, all kinds of projectiles (e.g.
+                arrows, bolts, boulders) will bounce off him. This works only
+                about 90% of all times, to avoid players being completely immune
+                to certain types of attacks.
+		</td>
+	</tr>
+	<tr>
+		<td>reflect spells</td>
+		<td>@ref FLAG_REFL_SPELL</td>
+		<td>                If a player is wearing any piece of equipment with the ability
+                to &lt;reflect spells&gt;, all kinds of spell-bullets and -beams
+                will bounce off him. This works only about 90% of all times, to
+                avoid players being completely immune to certain types of
+                attacks.
+
+                This is a very powerful ability and it shouldn't be handed out
+                cheap!
+		</td>
+	</tr>
+	<tr>
+		<td>repelled paths</td>
+		<td>@ref obj::path_repelled</td>
+		<td>                Click on the &lt;repelled paths&gt; button to select spellpaths.
+                The player will get repelled to the specified spellpaths while
+                wearing this item.
+		</td>
+	</tr>
+	<tr>
+		<td>resist acid %</td>
+		<td>@ref obj::resist</td>
+		<td>                This adds acid resistance to the item. The number is a
+                percent-value in the range 0-100. Treat this with CARE. Look at
+                other maps and what they require to do for getting this-and-that
+                artifact.
+		</td>
+	</tr>
+	<tr>
+		<td>resist blinding %</td>
+		<td>@ref obj::resist</td>
+		<td>                This adds blinding resistance to the item. The number is a
+                percent-value in the range 0-100. Treat this with CARE. Look at
+                other maps and what they require to do for getting this-and-that
+                artifact.
+		</td>
+	</tr>
+	<tr>
+		<td>resist chaos %</td>
+		<td>@ref obj::resist</td>
+		<td>                This adds chaos resistance to the item. The number is a
+                percent-value in the range 0-100. Treat this with CARE. Look at
+                other maps and what they require to do for getting this-and-that
+                artifact. Note that chaos is not a stand-alone attack type.
+                Chaos "contains" a combination of other attack types.
+		</td>
+	</tr>
+	<tr>
+		<td>resist cold %</td>
+		<td>@ref obj::resist</td>
+		<td>                This adds fire resistance to the item. The number is a
+                percent-value in the range 0-100. Treat this with CARE. Look at
+                other maps and what they require to do for getting this-and-that
+                artifact.
+		</td>
+	</tr>
+	<tr>
+		<td>resist confusion %</td>
+		<td>@ref obj::resist</td>
+		<td>                This adds confusion resistance to the item. The number is a
+                percent-value in the range 0-100. Confusion resistance is not
+                very effective unless the value comes close to 100 (= perfect
+                immunity).
+		</td>
+	</tr>
+	<tr>
+		<td>resist death-attack %</td>
+		<td>@ref obj::resist</td>
+		<td>                This adds death-attack resistance to the item. The number is a
+                percent-value in the range 0-100. Death-attack resistance is
+                little effective unless the value is 100 (= perfect immunity).
+                Generally, resistance to death-attack is not supposed to be
+                available to players!
+		</td>
+	</tr>
+	<tr>
+		<td>resist depletion %</td>
+		<td>@ref obj::resist</td>
+		<td>                This adds depletion resistance to the item. The number is a
+                percent-value in the range 0-100. Depletion resistance is little
+                effective unless the value is 100 (= perfect immunity).
+		</td>
+	</tr>
+	<tr>
+		<td>resist draining %</td>
+		<td>@ref obj::resist</td>
+		<td>                This adds draining resistance to the item. The number is a
+                percent-value in the range 0-100. Draining resistance is little
+                effective unless the value is 100 (= perfect immunity).
+		</td>
+	</tr>
+	<tr>
+		<td>resist electricity %</td>
+		<td>@ref obj::resist</td>
+		<td>                This adds electricity resistance to the item. The number is a
+                percent-value in the range 0-100. Treat this with CARE. Look at
+                other maps and what they require to do for getting this-and-that
+                artifact.
+		</td>
+	</tr>
+	<tr>
+		<td>resist fear %</td>
+		<td>@ref obj::resist</td>
+		<td>                This adds fear resistance to the item. The number is a
+                percent-value in the range 0-100. Resistance to fear is pretty
+                useless.
+		</td>
+	</tr>
+	<tr>
+		<td>resist fire %</td>
+		<td>@ref obj::resist</td>
+		<td>                This adds fire resistance to the item. The number is a
+                percent-value in the range 0-100. Treat this with CARE. Look at
+                other maps and what they require to do for getting this-and-that
+                artifact.
+		</td>
+	</tr>
+	<tr>
+		<td>resist ghosthit %</td>
+		<td>@ref obj::resist</td>
+		<td>                This adds ghosthit resistance to the item. The number is a
+                percent-value in the range 0-100. Treat this with CARE. Look at
+                other maps and what they require to do for getting this-and-that
+                artifact.
+		</td>
+	</tr>
+	<tr>
+		<td>resist holy power %</td>
+		<td>@ref obj::resist</td>
+		<td>                This adds holy power resistance to the item. The number is a
+                percent-value in the range 0-100. Holy power is the attack type
+                that holyword-type spells use to hurt undead creatures. This
+                kind of resistance is only reasonable for undead players (wraith
+                or devourer cult). Generally, resistance to holy word should not
+                be available for players.
+		</td>
+	</tr>
+	<tr>
+		<td>resist magic %</td>
+		<td>@ref obj::resist</td>
+		<td>                This adds magic resistance to the item. The number is a
+                percent-value in the range 0-100. Treat this with CARE. Look at
+                other maps and what they require to do for getting this-and-that
+                artifact.
+		</td>
+	</tr>
+	<tr>
+		<td>resist paralyze %</td>
+		<td>@ref obj::resist</td>
+		<td>                This adds paralyze resistance to the item. The number is a
+                percent-value in the range 0-100. Paralyze resistance is little
+                effective unless the value is 100 (= perfect immunity).
+		</td>
+	</tr>
+	<tr>
+		<td>resist physical %</td>
+		<td>@ref obj::resist</td>
+		<td>                This adds physical resistance to the item (= armor value). The
+                number is a percent-value in the range 0-100. Treat this with
+                CARE. Look at other maps and what they require to do for getting
+                this-and-that artifact.
+		</td>
+	</tr>
+	<tr>
+		<td>resist poison %</td>
+		<td>@ref obj::resist</td>
+		<td>                This adds poison resistance to the item. The number is a
+                percent-value in the range 0-100. Treat this with CARE. Look at
+                other maps and what they require to do for getting this-and-that
+                artifact.
+		</td>
+	</tr>
+	<tr>
+		<td>resist slow %</td>
+		<td>@ref obj::resist</td>
+		<td>                This adds fear resistance to the item. The number is a
+                percent-value in the range 0-100. Resistance to fear is pretty
+                useless.
+		</td>
+	</tr>
+	<tr>
+		<td>resist turn undead %</td>
+		<td>@ref obj::resist</td>
+		<td>                This adds turn undead resistance to the weapon. The number is a
+                percent-value in the range 0-100. This is mostly useful for
+                undead monsters or players.
+		</td>
+	</tr>
+	<tr>
+		<td>resist weaponmagic %</td>
+		<td>@ref obj::resist</td>
+		<td>                This adds weaponmagic resistance to the item. The number is a
+                percent-value in the range 0-100. Weaponmagic resistance
+                generally should not exist on equipment at all. Spells/Monsters
+                doing weaponmagic damage (e.g. comet spell) are not meant to be
+                easily resisted.
+		</td>
+	</tr>
+	<tr>
+		<td>save life</td>
+		<td>@ref FLAG_LIFESAVE</td>
+		<td>            An item with this flag enabled will save the players life for one
+            time: When the player is wearing this item and his health points
+            reach zero, the item disappears, replenishing half of the player's
+            health.
+
+            An item with &lt;save life&gt; should not have any decent additional
+            bonuses!
+		</td>
+	</tr>
+	<tr>
+		<td>smooth level</td>
+		<td>@ref obj::smoothlevel</td>
+		<td>            If &lt;smooth level&gt; is set to a value greater zero, the object
+            will be drawn partially over adjacent squares having a lower &lt;smooth
+            level&gt; value. The value must be between 0 and 255 (inclusive); 0
+            means &quot;never overlap adjacent squares&quot;.
+		</td>
+	</tr>
+	<tr>
+		<td>splitting</td>
+		<td>@ref FLAG_SPLITTING</td>
+		<td>            A &lt;splitting&gt; object converts to &lt;food&gt; &lt;other_arch&gt;
+            objects; when it is hit physically. For non-living objects &lt;food&gt;
+            is checked: if it is zero, the change happens; otherwise &lt;food&gt;
+            is decreased by one. I suggest you don't mess with this value -
+            leave the default in place.
+		</td>
+	</tr>
+	<tr>
+		<td>stealth</td>
+		<td>@ref FLAG_STEALTH</td>
+		<td>                Stealth allows the player to move silently. This comes to effect
+                if a player turns himself invisible and tries to sneak around
+                monsters. (At least that was the idea behind it)
+		</td>
+	</tr>
+	<tr>
+		<td>strength</td>
+		<td>@ref liv::Str</td>
+		<td>                The player's strength will rise/fall by the given value while
+                wearing this piece of equipment.
+		</td>
+	</tr>
+	<tr>
+		<td>title</td>
+		<td>@ref obj::title</td>
+		<td>            This is the object's title. Once an object is identified the title
+            is attached to the name. Typical titles are "of Mostrai", "of xray
+            vision" etc.
+		</td>
+	</tr>
+	<tr>
+		<td>unique item</td>
+		<td>@ref FLAG_UNIQUE</td>
+		<td>            Unique items exist only one time on a server. If the item is taken,
+            lost or destroyed - it's gone for good.
+		</td>
+	</tr>
+	<tr>
+		<td>unpaid</td>
+		<td>@ref FLAG_UNPAID</td>
+		<td>            An &lt;unpaid&gt; item cannot be used unless a player carried it
+            over a shop mat, paying the demanded price. Setting this flag makes
+            sense only for pickable items inside shops.
+		</td>
+	</tr>
+	<tr>
+		<td>value</td>
+		<td>@ref obj::value</td>
+		<td>            Adds a certain value to the object: It will be worth that many times
+            the default value from it's archetype (E.g. "value = 3" means three
+            times worth the default value). Value for buying/selling will be
+            further modified by various factors. Hence, testing values in-game
+            is usually inevitable.
+		</td>
+	</tr>
+	<tr>
+		<td>weapon class</td>
+		<td>@ref liv::wc</td>
+		<td>            The &lt;weapon class&gt; value adds to the overall weapon class of
+            the wielder's melee attacks. Weapon class improves the chance of
+            hitting the opponent. Weapon class is the "counter piece" of &lt;armor
+            class&gt;. It should usually be set only for weapon-like items.
+            Lower values are better.
+		</td>
+	</tr>
+	<tr>
+		<td>weight</td>
+		<td>@ref obj::weight</td>
+		<td>            This value defines the object's weight in grams (1000g is 1kg).
+            Objects with zero weight are not pickable for players. Still, set
+            the "non-pickable"-flag for explicitly non-pickable objects (hey,
+            this is open source.. you never know ;) ).
+		</td>
+	</tr>
+	<tr>
+		<td>wisdom</td>
+		<td>@ref liv::Wis</td>
+		<td>                The player's wisdom will rise/fall by the given value while
+                wearing this piece of equipment.
+		</td>
+	</tr>
+	<tr>
+		<td>xray vision</td>
+		<td>@ref FLAG_XRAYS</td>
+		<td>                Xray vision allows the player to see through obstacles in a
+                two-square-wide radius. This is extremely helpful and desirable,
+                so don't give it away for cheap on equipment.
+		</td>
+	</tr>
+</table>
+*/

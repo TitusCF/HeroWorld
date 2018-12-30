@@ -1,0 +1,104 @@
+#!/bin/bash
+#
+# This is a replacement for the crosserv.pl perl script.,
+# No point in using perl for such a simple task.
+# This script 'archives' relevent crash information in some
+# directory, and sends a mail message informing people of
+# the crash.  The mail message includes the backtrace info.
+# This was originally written by Bob Tanner, modified by Mark Wedel
+
+# NOTE: Before using this script, some of the variables at the top
+# will need to be changed.  Also note that make install will not
+# overwrite this file if it already exists.
+
+# Note2: This script uses $HOME/.gdbweb as the script used to
+# feed to gdb.  This file should be like:
+# echo \n(gdb) Executing command "bt full":\n\n
+# bt full
+# echo \n(gdb) Executing command "up" (20 times):\n\n
+# up
+# up (repeat 18 more times)
+#
+
+# due to variable substitution, we need all of this for it to
+# work.
+prefix="@prefix@"
+exec_prefix="@exec_prefix@"
+bindir="@bindir@"
+
+CROSSFIRE="$bindir/crossfire-server"
+
+# This can include multiple people, just seperate them by commas.
+MAILTO="master@hugin"
+
+# This is the program used to send out the mail message.  It needs
+# to support the -s (subject) option.  On SysV systems, this may be
+# /usr/ucb/mail.
+MAIL=/usr/bin/Mail
+
+# URL that contains the publicly available crash information.
+# Thi is only used in the mail message that is sent out to make it
+# easier for people to go to the web site.
+URL="http://www.metalforge.org/core/"
+
+MAXRESTART=500
+
+# This is the publicly available directory that will contain the log
+# and core files.
+HTMLDIR="$HOME/public_html"
+
+# This is where the source resides on the server.  This is used to
+# get better information on backtraces.
+SRCDIR="/export/home/crossfire/crossfire-CVS"
+
+
+ulimit -c unlimited
+
+logcount=0
+
+if [ ! -d $HTMLDIR ]; then
+    echo "$HTMLDIR does not exist.  Aborting."
+    exit 1
+fi
+
+
+while [ ! "$logcount"x = "$MAXRESTART"x ]; do
+  echo "Starting Crossfire `date` for the $logcount time..." 1>$HTMLDIR/server.$$.$logcount.log 2>&1
+  $CROSSFIRE -d 2>>$HTMLDIR/server.$$.$logcount.log 1>&2
+  if [ -f core ] ; then
+
+	echo "<html><pre>" > $HTMLDIR/backtrace.$$.$logcount.html
+	/usr/bin/gdb -batch -d $SRCDIR -x $HOME/.gdbweb $CROSSFIRE core >> $HTMLDIR/backtrace.$$.$logcount.html
+	if [ $? -ne 0 ]; then
+	  echo "gdb failed for some reaons." >> $HTMLDIR/backtrace.$$.$logcount.html
+ 	fi
+	echo "</pre></html>" >> $HTMLDIR/backtrace.$$.$logcount.html
+
+
+        mv core $HTMLDIR/core.$$.$logcount
+	if [ $? -ne 0 ]; then
+	  echo "Could not move core file."
+      	  break
+	fi
+
+	@GZIP@ -9 $HTMLDIR/core.$$.$logcount &
+	@GZIP@ -9 $HTMLDIR/server.$$.$logcount.log &
+	/bin/chmod 644 $HTMLDIR/core*.gz
+
+	echo "Crossfired crashed at `date`.  Crash instance is $logcount." > /tmp/crossloop.web.$$
+	echo "The core files and server log can be found at" >> /tmp/crossloop.web.$$
+	echo "$URL/backtrace.$$.$logcount.html" >> /tmp/crossloop.web.$$
+	echo "$URL/core.$$.$logcount.gz" >> /tmp/crossloop.web.$$
+	echo "$URL/server.$$.$logcount.log.gz" >> /tmp/crossloop.web.$$
+
+	cat /tmp/crossloop.web.$$  $HTMLDIR/backtrace.$$.$logcount.html | $MAIL -s "Crossfire crashed." $MAILTO
+	@RM@ /tmp/crossloop.web.$$
+  else
+	# may or may not want to keep the old one around.
+	#@RM@ $HTMLDIR/backtrace.$$.$logcount.html
+	# Need some statement here for the else/fi to work.
+	/bin/false
+  fi
+  logcount=`expr $logcount + 1`
+  sleep 10s
+done

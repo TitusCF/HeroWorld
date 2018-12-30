@@ -1,0 +1,71 @@
+\chapter{Player Commands}
+\label{app:commands}
+{\scriptsize
+\begin{longtable}{p{4cm}p{9cm}}
+apply $<$string$>$ & Without any parameter, applies the top object in the ground view. With a string, applies the first object matching the string. \\
+bind & Used to bind commands to keys. \\
+brace & Toggles brace status. While braced you will not move. \\
+cast $<$spell$>$ & Readies named spell. \\
+clearinfo & Clears the text screen. \\
+disarm & Executes a disarming action in facing direction. \\
+dm $<$password$>$ & Player becomes the dm. You character is unsavable after this. \\
+drop $<$object$>$ & Drops object from player inventory. All items matching $<$object$>$ are dropped, unless they are locked or cursed. \\
+dropall &  Drops all but locked objects in inventory. \\
+east & Execute a move east. \\
+examine $<$object$>$ & Examines object, defaults to top object in look window. \\
+get & Picks up top object in look window. \\
+gsay & Sends a message only to members of your party.\\
+help $<$subject$>$ & Help on subject, defaults to shows list of available help. If $<$subject$>$ is {\tt commands}, will display a list of available commands. \\
+hiscore & Show list of highest player scores. \\
+inventory & Lists all objects in your inventory in text window. \\
+invoke $<$spell$>$ $<$string$>$ & Readies, then casts a spell. String is optional \\
+listen & Changes the level of your hearing. \\
+mapinfo & Show information about current map. \\
+maps $<$name$>$ & Show status of all active maps. If $<$name$>$ is provided, only lists maps with matching name. \\
+motd & Show message of the day again. \\
+north & Execute a move north. \\
+northeast & Ditto to north east. \\
+northwest & Ditto to the north west. \\
+output-count & Toggles message grouping, so that identical messages are put together. \\
+output-sync &  No idea what this does. \\
+party $<$command$>$ & Set of commands used with simple party system. \\
+peaceful & Toggle peaceful status. \\
+pickup $<$command$>$ & Change pickup status by number or value density. \\
+prepare & Alias for cast command. \\
+quit & Quit the game and totally removes your character. \\
+ready\_skill $<$skill$>$ & Prepare a skill for use. \\
+rotateshoottype & Rotate the range slot by 1. \\
+save & Save your current position and status. \\
+savewinpos & Save your current window layout. \\
+say & Say something to all players on your map. \\
+search & Execute a search in all nearby squares.\\
+search-items $<$command$>$ & Change the status of items searched for. \\
+shout & Send a message to all players regardless of map.\\
+show & \\
+showinvicon & Toggle status of invicon in inventory window. \\
+skills & Show all available skills, experience categories and level. If a string is provided, only lists matching skills.\\
+south & Execute a move south.\\
+southeast & Ditto to southeast. \\
+southwest & Ditto to southwest. \\
+stay & \\
+take & Alias for pickup. \\
+tell $<$who$>$ $<$msg$>$ & Tell character who the msg. \\
+throw & Throws an item. \\
+time & Displays the ingame time \\
+title $<$string$>$ & Change your title to string.\\
+unbind $<$command$>$ & A set of commands to reverse key bindings. \\
+use\_skill $<$skill$>$ $<$string$>$ & Ready, then use a skill. \\
+version & Print out all the contributors to \cf .\\
+west & Execute a move west. \\
+who & Show what players are currently logged on. If a parameter is specified, only displays players in regions with matching name. \\
+wimpy $<$percent$>$ & Auto-matically run away when hp$<$\%$\times$Max hp. \\
+\end{longtable}
+
+Commands for Dungeon Masters only:
+\begin{longtable}{p{4cm}p{9cm}}
+malloc & Shows which stuff is taking up how much memory. \\
+sstable & Sends to the server log statistics about shared strings. \\
+strings & Shows the status of shared sting parameters. \\
+sync $<$integer$>$ & Change sync value to integer. \\
+\end{longtable}
+}

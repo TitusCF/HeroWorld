@@ -1,0 +1,143 @@
+<html>
+<head>
+<title>Crossfire Playbook - Appendix B</title>
+</head>
+<body>
+
+<h1>Skills</h1>
+
+The following is the current (7/15/96) roster of skills and the description
+for each. Use the command <samp>crossfire -m5</samp> to see the array of
+skills and experience in your version of crossfire.  (Note: you need to have
+compiled with the <samp>DUMP_SWITCHES</samp> and <samp>ALLOW_SKILLS</samp>
+flags for this to work!)<p>
+
+Emphasis on type denotes a skill which monsters/NPC's may also use.<p>
+
+<table border=1 cellpadding=3>
+<tr><td>alchemy </td><td>  User can identify potions, containers, flesh parts,
+	 and amulets. </td></tr>
+
+<tr><td>bargaining   	</td><td> While this skill is readied the user has added CHA
+ for purposes of purchase and selling of items only.
+ Cha is never allowed to exceed 30. </td></tr>
+
+
+<tr><td>bowyer  </td><td>  User can identify missile weapons and missiles. </td></tr>
+
+<tr><td><em>clawing</em>	</td><td> User can make a <em> bare-handed attack</em>. Damage
+ is based on the user's Str and <samp>level</samp>. This is the
+ default ``hand-to-hand'' fighting skill for the
+ Quetzecoatl character class.
+ </td><td>  </td></tr>
+
+<tr><td>find traps	</td><td> User can search (more effectively) for traps.
+Not a 'passive' skill, it is applied in order
+ to gain the advantage in discovering traps. </td></tr>
+
+<tr><td><em>flame touch</em> </td><td> User can make a <em> bare-handed attack</em>. Damage
+ is based on the user's Str and <samp>level</samp>. This
+ is the default hand-to-hand fighting skill
+ for the Fireborn character class. </td></tr>
+
+<tr><td><em>hide</em>	</td><td> User enjoys limited form of invisibility. If
+ they attack or move too much they become visible. </td></tr>
+
+<tr><td>jeweler		</td><td> User can ident gems and rings that they hold. </td></tr>
+
+<tr><td><em>jumping</em>	</td><td> User can 'skip' over 1-2 spaces in a selected
+ direction. Distance depends on weight carried,
+ STR and DEX of the user. This skill may also
+ be used as an attack. </td></tr>
+
+<tr><td><em>karate</em>	</td><td> User can make a <em> bare-handed attack</em>. Damage
+ is based on the user's Str and <samp>level</samp>. This attack
+ is the fastest and (at higher levels) most deadly
+ of the hand-to-hand attacks available. </td></tr>
+
+<tr><td>literacy	</td><td> User can ident books and scrolls that they hold.
+ It also allows the player to read scrolls, books,
+ grimores and praybooks. </td></tr>
+
+<tr><td><em>lockpicking</em> </td><td> User may 'pick locks' (open doors). User needs
+ to have readied 'lockpicks' to use this skill. </td></tr>
+
+<tr><td>meditation	</td><td> Player can regain mana/hp at an accelerated rate.
+ Player must first strip off encumbering armour
+ however. This skill is only available to the Monk
+ character class. </td></tr>
+
+<tr><td>melee weapons	</td><td> User may use hand-held weapons (eg swords,
+ spears, mace, etc). </td></tr>
+
+<tr><td>missile weapons	</td><td> The user is allowed to make attacks with
+ ranged weapons (eg bow, crossbow). </td></tr>
+
+<tr><td>mountaineer	</td><td> While the skill is readied, the possessor will
+ move faster through "hilly" terrain (hills,
+ mountains, etc.) </td></tr>
+
+<tr><td>oratory		</td><td> User may 'recruit' followers. Recruitees must be
+ of lower <samp>level</samp>, and unaggressive to start. Use
+ of this skill may anger the audience. Also,
+ 'special' monsters are immune to recruitment.
+ Success depends on User Cha and <samp>level</samp>. </td></tr>
+
+<tr><td>praying		</td><td> User is allowed to cast ``priest'' spells. In addition,
+ this skill may be used to accelerate the accumulation
+of grace. This skill may be either <em>learned</em> or
+acquired through the use of a <em>holy symbol</em>. </td></tr>
+
+<tr><td><em>punching</em>	</td><td> User can make a <em> bare-handed attack</em>. Damage
+is based on the user's Str and <samp>level</samp>. This is
+the most feeble of the hand-to-hand attacks.
+
+<tr><td>remove traps 	</td><td> User may remove previously discovered traps. </td></tr>
+
+<tr><td>sense curse	</td><td> User may discover whether items that they hold
+are <em>cursed</em>. </td></tr>
+
+<tr><td>sense magic	</td><td> User may discover whether items that they hold
+are <em>magic</em>. </td></tr>
+
+<tr><td>set traps	</td><td> Unimplemented. </td></tr>
+
+<tr><td>singing		</td><td> User may pacify hostile monsters with this skill.
+Certain kinds of monsters are immune. Success
+depends on user <samp>level</samp> and CHA. </td></tr>
+
+<tr><td>smithery	</td><td> User may ident arms and armour that they hold. </td></tr>
+
+<tr><td><em>stealing</em>	</td><td> User can steal items from other creatures. </td></tr>
+
+<tr><td>thaumagragist	</td><td> User can ident rods, wands and horns that they
+ are holding. </td></tr>
+
+<tr><td>throwing	</td><td> Unimplemented. </td></tr>
+
+<tr><td>use magic item	</td><td> User can use magic items like rods/wands/horns. </td></tr>
+
+<tr><td>wizardry	</td><td> User is allowed to cast ``wizard'' spells. This
+skill may be acquired either through the use
+of a <em>talisman</em> or <em>learned</em> via a skill scroll. </td></tr>
+
+<tr><td>woodsman	</td><td> While the skill is readied, the possessor will
+move faster through ``wooded'' terrain (forest,
+ grasslands, brush, jungle, etc.). If actively used,
+ this skill will identify foods and flesh parts.
+
+<tr><td>writing		</td><td> User may both write messages in books <em>and</em> rewrite
+ spell scrolls with a previously known spell. For
+ new spell scrolls mana, time and an old scroll are
+ needed. Backfire effects are possible. To write
+ text in a book, use the skill as: <samp>use_skill</samp>
+ <samp>writing &ltmsg&gt</samp>. This skills is only available as a
+ 'writing pen'; the literacy skill must be possessed
+ before this can be used. </td></tr>
+
+</table>
+<p>
+<a href="handbook.html"><img src="fig/book.gif">Back to table of contents</a><br>
+<a href="appA.html"><img src="fig/stairup.gif">Go to Appendix A</a><br>
+<a href="appC.html"><img src="fig/stairdown.gif">Go to Appendix C</a><br>
+

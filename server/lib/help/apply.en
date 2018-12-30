@@ -1,0 +1,13 @@
+Apply applies an object.
+
+If no options are given, it applies an object you are standing on.
+
+If a name follows the command, an object of that name is affected.  The name does not have to be complete as long as the text uniquely matches the first part of an item name.
+
+Apply options:
+
+-a: Always apply an object and never unapply it when already applied.
+-u: Always unapply an object and never apply it when already unapplied.
+-b: Apply an item on the ground or in the active container, but not one in the characters main inventory.
+
+As -a and -u do not toggle the applied status of an item, they are useful for making keybinds that work even when the current state of the object is unknown.

@@ -1,0 +1,41 @@
+\chapter{Description of Gods}
+\label{app:gods}
+\index{gods, description}
+
+Below in boxes, the gods in your compiled version of \cf\ are shown.
+Use the command {\tt crossfire -m8} to check if the information
+presented here is accurate.
+(Note: you need to have compiled with the {\tt DUMP\_SWITCHES} and
+{\tt MULTIPLE\_GODS} flags for this to work!) The boxed attributes
+have meaning as follows:
+\vskip 12pt
+\begin{tabular}{ll}
+Enemy cult: & Name of the enemy god \\
+Aligned race(s): & Names of races friendly to the cult. The priest \\
+	 & of this cult has greater power over these creatures. \\
+	 & In some cases the prayer {\tt summon cult monsters} \\
+	 & will summon these monsters to help the priest. \\
+Enemy race(s): & Names of races hated by the cult. ``Holy word'' \\
+	 & prayers of this god may be used to kill these \\
+	 & creatures. \\
+Attacktype(s): & Attacktypes used by this god's avatar and \\
+	 & by cult {\tt cause wounds} prayers. \\
+Immunity: & Granted by the {\tt holy possession} prayer. \\
+Protected: & Granted to a cult priest and by the {\tt bless} \\
+	 & prayer. \\
+Vulnerable: & Given to a cult priest and by the {\tt curse } \\
+	 & prayer. \\
+Attunded: & The cult priest is attuned to these spellpaths. \\
+Repelled: & The cult priest is repelled to these spellpaths. \\
+Denied: & The cult priest is denied use of these spellpaths. \\
+Added gifts/limits: & A cult priest has these addtional benefits\\
+ 	& and restrictions. \\
+\end{tabular}
+\vskip 12pt
+Note that not all gods have values for all possible attributes. In
+this case, no attribute will appear in that god's box.
+
+\begin{longtable}{|p{4cm}p{9cm}|} \hline
+\input{gods.tex}
+\end{longtable}
+

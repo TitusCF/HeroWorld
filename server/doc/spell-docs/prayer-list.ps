@@ -1,0 +1,154 @@
+%!PS-Adobe-1.0
+%%Creator: offa:chrisc (Christopher Carpinello)
+%%Title: prayer-list.txt
+%%CreationDate: Fri Mar 26 17:01:35 1993
+%%DocumentFonts: ZapfChancery-MediumItalic ZapfChancery-MediumItalic
+% Start of enscript.pro -- prolog for text file translator
+% Copyright (c) 1984,1985,1987 Adobe Systems Incorporated. All Rights Reserved. 
+% GOVERNMENT END USERS: See Notice file in TranScript library directory
+% -- probably /usr/lib/ps/Notice
+% RCSID: $Header$
+save/EnscriptJob exch def
+/StartEnscriptDoc{$enscript begin}def
+/$enscript 50 dict def $enscript begin
+/EndEnscriptDoc{end}def
+/S/show load def
+/X{exch 0 rmoveto S}def
+/Y{exch 0 exch rmoveto S}def
+/B{3 1 roll moveto S}def
+/F{$fd exch get setfont}def
+/StartPage{/svpg save def .05 dup scale}def
+/EndPage{svpg restore showpage}def
+/DoPreFeed{/statusdict where{pop
+ statusdict/prefeed known{statusdict exch/prefeed exch put 0}if}if pop}def
+/Landscape{90 rotate 0 -15840 translate}def
+/SetStTime{statusdict /manualfeedtimeout 120 put} def
+/SetStatus{statusdict /manualfeed true put
+   statusdict /product get (LaserWriter) eq 
+   {version (23.0) eq  % Don't redefine EndPage if printer is not "Classic LW"
+     {/EndPage {svpg restore
+	 {statusdict /printerstatus get exec 16#22000000 and 0 eq{exit}if}loop
+	 showpage}def}if }if}def
+
+/ISO-Latin-1 [
+/.notdef /.notdef /.notdef /.notdef /.notdef  /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef  /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef  /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef  /.notdef /.notdef /.notdef
+/space /exclam   /quotedbl   /numbersign   /dollar  /percent  /ampersand
+/quoteright /parenleft   /parenright  /asterisk   /plus  /comma  /hyphen
+/period /slash  /zero /one  /two /three  /four /five  /six /seven /eight
+/nine /colon /semicolon /less /equal /greater /question /at /A  /B /C /D
+/E /F /G /H /I /J /K  /L /M  /N /O  /P /Q  /R /S  /T /U  /V /W  /X /Y /Z
+/bracketleft /backslash     /bracketright    /asciicircum    /underscore
+/quoteleft /a /b /c /d /e /f /g /h /i /j /k /l /m /n /o  /p /q  /r /s /t
+/u /v  /w  /x  /y  /z  /braceleft /bar  /braceright /asciitilde /.notdef
+/dotlessi /dieresis/ring    /grave   /acute    /circumflex/tilde /macron
+/brev  /dotaccent /cedilla /.notdef /.notdef  /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef  /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef  /.notdef /.notdef /.notdef
+/space /exclamdown /cent /sterling /currency /yen /brokenbar /section
+/dieresis /copyright /ordfeminine /guillemotleft /logicalnot /endash /registered 
+/macron /degree /plusminus /twosuperior /threesuperior /acute /mu
+/paragraph /bullet /cedilla /onesuperior /ordmasculine /guillemotright
+/onequarter /onehalf /threequarters /questiondown /Agrave /Aacute /Acircumflex
+/Atilde /Adieresis /Aring /AE /Ccedilla /Egrave /Eacute /Ecircumflex
+/Edieresis /Igrave /Iacute /Icircumflex /Idieresis /Eth /Ntilde
+/Ograve /Oacute /Ocircumflex /Otilde /Odieresis /multiply /Oslash /Ugrave
+/Uacute /Ucircumflex /Udieresis /Yacute /Thorn /germandbls /agrave
+/aacute /acircumflex /atilde /adieresis /aring /ae /ccedilla /egrave
+/eacute /ecircumflex /edieresis /igrave /iacute /icircumflex /idieresis
+/eth /ntilde /ograve /oacute /ocircumflex /otilde /odieresis
+/divide /oslash /ugrave /uacute /ucircumflex /udieresis /yacute
+/thorn /ydieresis ] def
+
+/SetUpFonts
+ {dup/$fd exch array def{
+     findfont dup maxlength dict begin
+	{ 1 index /FID ne { def } { pop pop } ifelse } forall
+	/Encoding ISO-Latin-1 def
+	/FontName /Null def
+	FontName currentdict definefont
+     end
+     exch scalefont $fd 3 1 roll put}repeat}def
+
+/InitGaudy{/TwoColumn exch def /BarLength exch def
+ /ftD /Times-Bold findfont 12 UP scalefont def
+ /ftF /Times-Roman findfont 14 UP scalefont def
+ /ftP /Helvetica-Bold findfont 30 UP scalefont def}def
+/U{1440 mul}def
+/UP{U 72 div}def
+/LB{/pts exch UP def /charcolor exch def /boxcolor exch def /font exch def
+ /label exch def /dy exch def /dx exch def /lly exch def /llx exch def
+ gsave boxcolor setgray
+ llx lly moveto dx 0 rlineto 0 dy rlineto dx neg 0 rlineto closepath fill
+ /lines label length def
+ /yp lly dy add dy lines pts mul sub 2 div sub pts .85 mul sub def
+ font setfont charcolor setgray
+ label {dup stringwidth pop 2 div llx dx 2 div add exch sub yp moveto show
+   /yp yp pts sub def}forall grestore}def
+/Gaudy{/Page exch def /Date exch def /File exch def /Comment exch def
+ .25 U 10.2 U BarLength .1 sub U .25 U [File] ftF .97 0 14 LB
+ .25 U 10.45 U BarLength .1 sub U .25 U [Comment] ftF 1 0 14 LB
+ .25 U 10.2 U 1 U .5 U Date ftD .7 0 12 LB
+ BarLength .75 sub U 10.2 U 1 U .5 U [Page] ftP .7 1 30 LB
+ TwoColumn{BarLength 2 div .19 add U 10.2 U moveto 0 -10 U rlineto stroke}if
+}def
+end
+StartEnscriptDoc % end fixed prolog
+1 240 /ZapfChancery-MediumItalic
+0 240 /ZapfChancery-MediumItalic
+2 SetUpFonts
+%%EndProlog
+%%Page: ? 1
+StartPage
+1 F
+432 14860 (Crossfire Prayers)B
+0 F
+432 14340(level 1  )B
+432 14080(=========)B
+432 13820(minor healing                 )B
+432 13560(turn undead                   )B
+432 13040(level 2  )B
+432 12780(=========)B
+432 12520(perceive self                 )B
+432 12000(level 3  )B
+432 11740(=========)B
+432 11480(protection from cold          )B
+432 11220(create food                   )B
+432 10700(level 4  )B
+432 10440(=========)B
+432 10180(medium healing                )B
+432 9920(holy word                     )B
+432 9660(protection from electricity   )B
+432 9140(level 5  )B
+432 8880(=========)B
+432 8620(protection from fire          )B
+432 8100(level 6  )B
+432 7840(=========)B
+432 7580(protection from poison        )B
+432 7060(level 7  )B
+432 6800(=========)B
+432 6540(protection from slow          )B
+432 6020(level 8  )B
+432 5760(=========)B
+432 5500(protection from paralysis     )B
+432 5240(major healing                 )B
+432 4720(level 9  )B
+432 4460(=========)B
+432 4200(protection from draining      )B
+432 3940(invisible to undead           )B
+432 3420(level 10 )B
+432 3160(=========)B
+432 2900(protection from magic         )B
+432 2640(heal                          )B
+432 2120(level 13 )B
+432 1860(=========)B
+432 1600(protection from attack        )B
+432 1080(level 15 )B
+432 820(=========)B
+6120 14340(word of recall                )B
+EndPage
+%%Trailer
+EndEnscriptDoc
+EnscriptJob restore

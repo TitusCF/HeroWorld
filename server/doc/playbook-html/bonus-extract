@@ -1,0 +1,64 @@
+
+BEGIN {
+        # Read the array data from living.c
+        while ((getline buff < living_c) == 1) {
+                if (buff ~ /con_bonus\[/) {
+			get_values(buff);
+		        for(i=1;i<=30;i++) con[i]=array[i];
+                }
+                if (buff ~ /sp_bonus\[/) {
+                        get_values(buff);
+                        for(i=1;i<=30;i++) sp[i]=array[i];
+                }
+                if (buff ~ /dex_bonus\[/) {
+                        get_values(buff);
+                        for(i=1;i<=30;i++) ac[i]=-1*array[i];
+                }
+                if (buff ~ /dam_bonus\[/) {
+                        get_values(buff);
+                        for(i=1;i<=30;i++) dam[i]=array[i];
+                }
+                if (buff ~ /float cha_bonus\[/) {
+                        get_values(buff);
+                        for(i=1;i<=30;i++) {
+			   diff = (array[i] - 1)/(array[i] + 1);
+			   buy[i] = diff + 1;
+			   sell[i] = 1 - diff;
+			}
+                }
+                if (buff ~ /speed_bonus\[/) {
+                        get_values(buff);
+                        for(i=1;i<=30;i++) speed[i]= 1 + array[i];
+                }
+                if (buff ~ /thaco_bonus\[/) {
+                        get_values(buff);
+                        for(i=1;i<=30;i++) thaco[i]=array[i];
+                }
+                if (buff ~ /learn_spell\[/) {
+                        get_values(buff);
+                        for(i=1;i<=30;i++) learn[i]=array[i];
+			break;
+                }
+        }
+	# print it out
+	for(i=1; i<=30 ; i++) {
+		printf("<tr><td>%d</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%6.3f/%6.3f</td></tr>\n",i,
+		   con[i],sp[i],ac[i],dam[i],thaco[i],"",speed[i],learn[i],buy[i],sell[i]);
+	}
+
+        close(living_c);
+}
+
+function get_values (buff) {
+        tind = 0;
+        while (1) {
+           getline buff < living_c;
+           # if(lev==1) getline buff < living_c;
+           if (buff ~ /};/)
+              break;
+           gsub("[ \t]*\"", "", buff);
+           nr = split(buff, val, ",");
+           for (i = 1; i<=nr ; i++)
+               if(val[i]!="") array[tind++]=val[i];
+        }
+}

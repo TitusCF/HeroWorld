@@ -1,0 +1,48 @@
+#!/bin/sh
+#
+#	/etc/rc.d/init.d/crossfire
+#
+# Starts crossfire as a gameserver.
+#
+# chkconfig: 345 99 1
+# description: Server for Crossfire, a nethack/Gauntlet(TM) type \
+#              game for X Windows.
+
+# Source function library.
+. /etc/rc.d/init.d/functions
+
+#
+#	See how we were called.
+#
+case "$1" in
+  start)
+	# Check if crossfire is already running
+	if [ ! -f /var/lock/subsys/crossfire ]; then
+	    echo -n 'Starting crossfire server: '
+	    daemon /usr/games/crossloop &
+	    echo
+	    touch /var/lock/subsys/crossfire
+	fi
+	;;
+  stop)
+	echo -n 'Stopping crossfire server: '
+	killall crossloop
+	echo -n "crossloop "
+	killproc crossfire
+	echo
+	rm -f /var/lock/subsys/crossfire
+	;;
+  reload|restart)
+	echo -n 'Restarting crossfire server: '
+	killproc crossfire
+	echo
+	;;
+  status)
+	status /usr/games/crossfire
+	;;
+  *)
+	echo "Usage: /etc/rc.d/init.d/crossfire {start|stop|restart|reload|status}"
+	exit 1
+esac
+
+exit 0

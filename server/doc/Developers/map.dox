@@ -1,0 +1,72 @@
+/**
+@page page_map Maps
+
+Maps are where the player and monsters roam. They contain objects, and some pre-computed information for each map square.
+
+All objects without the ::FLAG_REMOVED set are ultimately on a map, either directly or because their top-level container is on a map. The only exception are objects for archetypes and artifacts, which aren't anywhere.
+
+Maps reset after some time, reverting to their default state. It is possible that the map is temporarily saved to disk to reclaim memory, in which case it will be reloaded when a player tried to enter it.
+
+When a map resets, all objects on it are lost except when:
+- the object has ::FLAG_UNIQUE set. It is then persisted to an overlay
+- the ::FLOOR the object is on has the ::FLAG_UNIQUE set. Note that objects below the ::FLOOR will be lost. Persisted on an overlay
+- the map has the mapstruct::unique flag set. The whole map is saved.
+
+Maps can have different types:
+- regular maps, currently loaded in memory
+- temporary maps, identified by mapstruct::in_memory == ::MAP_SWAPPED. Those are maps currently not loaded ingame to spare memory, but considered not reset. They will be reloaded when the need arises by ready_map_name()
+- unique maps. Each player entering such a map will have her own instance of the map, all objects on the map are always saved, regardless of their ::FLAG_UNIQUE set or not
+- overlay maps. Those contain unique items that were in a regular map last time it was reset
+
+
+Storage location for maps:
+- regular maps are, read only, located in datadir/mapdir
+- overlay maps are in localdir/mapdir, replicating the regular maps's directory structure
+- temporary maps are in localdir/tmpdir, with a random name in map::tmpname
+- unique maps are in the player's directory, with a mangled name
+
+@section maps_base Map creation, load, save and reset
+
+The ::mapstruct structure contains all the map information, objects it contains, precomputed fields for fast access.
+
+The usual function to call to obtain a valid ::mapstruct structure is ready_map_name(). It is responsible for loading a map from disk, adding unique items and overlays, reloading a map if it was swapped out. The flag parameter controls what should or not be done.
+
+Other ways to get a map are:
+- call get_linked_map(). This does not initialize the map's mapstruct::spaces field, though
+- call get_empty_map(), which initializes this field.
+
+In any case the map is linked to the map list.
+
+Random maps use get_empty_map() to create the map, and plugins can access both functions if needed.
+
+
+Maps are reset when they have been loaded more than map::reset_timeout seconds for fixed reset, or when the last player left it more than mapstruct::reset_timeout seconds.
+
+
+The saving mechanism, as implemented by save_map(), uses two files to store the map: one for regular items, one for unique items. For unique maps or when swapping a map, the two files are equals to save everything in the same place.
+
+Unless the flag parameter is 2, the objects on the map will be removed.
+
+
+When a map is to be deleted totally, delete_map() should be called to clean the structure and associated fields, and remove the map from the linked list.
+
+Main map-related functions:
+- check_active_map() is responsible for swapping out maps
+- ready_map_name() is the main map loading function
+- delete_map() totally frees a map structure
+- free_map() removes the objects from a map, and clears the mapstruct::spaces field, but doesn't delete the map structure itself. Map is considered swapped.
+- flush_old_maps() resets maps
+- load_original_map(), load_temporary_map(), load_overlay_map() and load_unique_objects() load the various map types
+- enter_exit() is the main function used when a player moves between maps. It uses the following subfunctions: enter_unique_map(), enter_random_template_map(), enter_fixed_template_map() and enter_random_map() depending on the exit parameters
+
+
+@section maps_style Style maps
+
+Random maps use style maps to gather random objects, and to insert random submaps into generated maps. These style maps are loaded through ready_map_name() with the ::MAP_STYLE flag so that the active objects are not put on the active object list, then removed from the linked map list and put on the random map style list (first item is ::styles). Thus those special maps are not really part of the active maps.
+
+
+@todo
+- link plugin API, random map documentation, directory information
+- check save_map() flags and meaning
+
+*/

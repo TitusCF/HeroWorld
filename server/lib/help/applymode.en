@@ -1,0 +1,17 @@
+Applymode controls what happens when you are equipping something that would require something else to be unequipped.
+
+The options are:
+
+nochoice:  In this case, if there is no choice for the item(s) being removed in order to equip your new item. An example of this is a wand - there can only be one other item needed to be unequipped for the new item to be equipped. Note that in the case of two handed objects, like bows, it can result in two (or more) items being unequipped to equip your new item.
+
+never: In this case, it will never unequip something for you. It will instead tell you want you need to unequip - this can be a list of many objects.
+
+always: This will unequip whatever is needed to equip your new item.
+
+An example of how the above works:
+
+If your character currently has two rings, and tries to equip a third, the nochoice mode will print the two rings you currently have equipped. The always mode will unequip one of the rings in your inventory. The ring unequipped is fairly indeterminate - it depends on how the server has ordered your inventory (which is not the same as the order your window displays).
+
+If your character is currently wearing a suit of armor, and you try to equip another suit, both nochoice and always will cause the new suit to get equipped.
+
+See also: apply

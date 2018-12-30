@@ -1,0 +1,117 @@
+#!/usr/bin/make -f
+
+# Uncomment this to turn on verbose mode.
+export DH_VERBOSE=1
+
+LIB_DIR = var/games/crossfire
+DATADIR = usr/share/games/crossfire
+
+build: patch build-stamp
+build-stamp:
+	dh_testdir
+
+# What max debug info, so turn it on
+	CFLAGS="-g3" 					\
+	./configure	--prefix=/$(LIB_DIR) 		\
+			--datadir=/usr/share/games 	\
+		        --bindir=/usr/games     	\
+			--mandir=/usr/share/man		\
+			--localstatedir=/var/games	\
+			--sysconfdir=/etc
+
+	# Add here commands to compile the package.
+	$(MAKE) all
+
+	touch build-stamp
+
+clean: clean-patched unpatch
+
+clean-patched:
+	dh_testdir
+	dh_testroot
+	-rm -f build-stamp
+	-rm -f install-stamp
+	-rm -rf debian/crossfire-server
+
+	# Add here commands to clean up after the build process.
+	-$(MAKE) distclean
+
+	dh_clean
+
+patch: patch-stamp
+patch-stamp:
+	dpatch apply-all --verbose
+	touch patch-stamp
+
+unpatch:
+	dpatch deapply-all --verbose
+	rm -rf patch-stamp debian/patched
+
+install: binary-indep binary-arch
+
+# Build architecture-independent files here.
+binary-indep:
+	dh_testdir
+	dh_testroot
+	dh_clean -k -i
+	dh_installdirs -i
+
+	cd lib && \
+	$(MAKE) install DESTDIR=$(CURDIR)/debian/tmp
+
+	cd lib && \
+	$(MAKE) install DESTDIR=$(CURDIR)/debian/tmp
+
+	cd utils && \
+	$(MAKE) install DESTDIR=$(CURDIR)/debian/tmp
+
+	# Clean up some
+	-rm -f $(CURDIR)/debian/tmp/usr/games/crossloop.pl
+	-rm -f $(CURDIR)/debian/tmp/usr/games/player_dl.pl
+
+	cd doc && \
+	$(MAKE) install DESTDIR=$(CURDIR)/debian/tmp
+
+	dh_installdocs -A
+	dh_installdocs -pcrossfire-doc
+	dh_install -i
+
+# Build architecture-dependent files here.
+binary-arch:
+	dh_testdir
+	dh_testroot
+	dh_installchangelogs
+
+	cd random_maps && \
+	$(MAKE) install DESTDIR=$(CURDIR)/debian/tmp
+
+	cd server && \
+	$(MAKE) install DESTDIR=$(CURDIR)/debian/tmp
+
+	cd plugin && \
+	$(MAKE) install DESTDIR=$(CURDIR)/debian/tmp
+
+	cd devel && \
+	$(MAKE) install DESTDIR=$(CURDIR)/debian/tmp
+
+	cd crossedit && \
+	$(MAKE) install DESTDIR=$(CURDIR)/debian/tmp
+	dh_movefiles -pcrossfire-edit
+
+	dh_installlogrotate
+	dh_installinit -r -- defaults 99 01
+	dh_installman
+	dh_strip --dbg-package=crossfire-server
+	dh_compress
+	dh_fixperms
+	dh_makeshlibs -V
+	dh_installdeb
+	dh_gencontrol
+	dh_md5sums
+	dh_builddeb
+
+source diff:
+	@echo >&2 'source and diff are obsolete - use dpkg-source -b'; false
+
+binary: binary-indep binary-arch
+.PHONY: build clean binary-indep binary-arch binary install install-indep install-arch

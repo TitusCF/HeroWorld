@@ -1,0 +1,13 @@
+La commande party_rejoin permet de rejoindre automatiquement un groupe lors de votre connexion.
+
+Usage:
+
+    party_rejoin <mode>
+
+Les modes valides sont:
+
+    no: Désactive ce système;
+    if_exists: Si le groupe existe lorsque vous vous connectez et si il a le même mot de passe que lors de votre dernière connexion, le rejoindre;
+    always: Comme if_exists, sauf si le groupe n'existe pas - dans ce dernier cas, un nouveau groupe avec le même nom et le même mot de passe que celui dont vous faisiez partie lors de votre dernière déconnexion sera créé.
+
+Si l'argument <mode> est omis, cette commande affiche le mode actuellement défini.

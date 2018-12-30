@@ -1,0 +1,3545 @@
+# formulae -- herein lie the formulae for alchemical products
+#
+# The code is designed so that any combination of objects may be combined to
+# comprise a formula. Because the code only requires that the 'names' (see def
+# below) of cauldron ingredients match those listen in the formula, you can
+# use anything found in the game as a possible ingredient. Legal names include
+# both 'obj->name' and a title field, if it exists. For example, it is legal
+# to use an artifact like a "cloak of protection" as an ingredient.
+#
+# Definitions of fields:
+#
+#  "Object" This is the title of the formula. In
+#	    conjunction with a value in "arch" these
+#	    are used to lookup artifacts from the
+#	    artifacts file (ie. <arch> of <title>).
+#	    If you want to just create the arch w/o
+#	    making it an artifact, designate the
+#	    object field as "NONE".
+#
+#  "chance" is how likely a formula is to appear in
+#	    an alchemical grimore. Chance of 0 indicates
+#	    the formula never appears.
+#
+#  "arch"   indicates the possible archetype that may
+# 	    be used to generate the item.
+#
+#  "ingred" is a comma delimited list of ingredients
+#	    that are needed to create the item. Each
+#	    alchemical formula *should* be unique! but
+#	    note that this is not required. Values of
+# 	    ingredients must be the object names. Prepend
+#	    an integer value to denote the number of that
+#	    ingredient ("1" is not needed for single
+#	    ingredients). Note that the ordering of the
+#	    ingredients is *not* important.
+#
+#  "yield"  is the theoretical possible maximum # of
+#	    items the recipe can generate.
+#           It is fundamentally useful for balancing
+#	    reward/effort for these recipes.  One intention
+#           is to enforce conservation of mass by means
+#           of this #.
+#
+#  "trans"  defaults to '0' and is not explicitly needed.
+#	    If you define it to any value (ie '1') then
+#	    one of the ingredients will be used as the base
+#	    arch for the product. Obviously, the ingredient
+#	    so used *must* have the same archetype as the
+#	    product so don't be a fool and leave out a
+#	    common archetype ingredient!! See bolt of Dragon
+#	    slaying for an example of a transmution formula.
+#
+#  "keycode"  A string, such as "fire".  In order for the alchemist
+#           to execute this recipe, he must have a FORCE with a
+#	    slaying field matching the keycode
+#
+#  "skill"  A string, such as "alchemy".  This is the name of the skill
+#	    that is used to create this formula. Must be set if this is
+#           an alchemy recipe, in which case it must match one of the
+#           following:
+#           smithery, bowyer, jeweler, alchemy, thaumaturgy, literacy,
+#	    woodsman
+#
+#  "cauldron"  A string, which must be the valid archetype name for an
+#	    archetype.  In the example of a true alchemy formula, this
+#	    would be a cauldron.  A smithery formula might use something
+#	    like a forge.  You can create formulae that are only usable
+#	    with a specific facilities.  This field is required unless the
+#           formula describes an item transformation.
+#
+#  "exp"    A required integer.  This is the amount of experience a user
+#           gets by using this formula.  You should factor difficulty in
+#           when setting exp.  The game does not do this for you.
+#
+#  "diff"  A required integer.  This is the percentage difficulty out of
+#   	    100 of how hard this formula is.  This is the only factor used in
+#           determining success or failure of the creation.
+#
+#  "failure_arch" An optional string, which must be the valid archetype name for an
+#           archetype. Instead of a random effect, this item will be generated in case
+#           of alchemy failure.
+#
+#  "failure_message" An optional string. If set, a failure in alchemy will
+#           display this message instead of a server-decided message. Only used if
+#           failure_arch is set too.
+#
+#  "min_level" An optional integer. If set, this is the minimum required level
+#           needed to attempt the formulae.
+#
+#  "combination" An optional integer. If set (and non-zero), the formula will never
+#           appear in the randomly generated books.
+#
+#  "tool"   An optional comma delimited list of archetypes names. If set, the formula
+#           explains what items can be transformed into when a 'tool' is used.
+#           'arch' then lists all generated products, and 'ingred' what is transformed.
+#
+#
+# IMPORTANT NOTE ---->
+#	    It is not enough to construct ad-hoc lists of
+#	    ingredients to make a formula. Playbalance will
+#	    be adversely effected if you make a formula for
+#	    a powerful artifact (potion of stat raising, for
+#	    example) that is common, and/or easy to assemble
+#	    the ingredients, and/or has few ingredients. Thus,
+#	    here are some general guidelines for making formulae:
+#
+#		1) no fewer than 2 ingredients
+#		2) at least one ingredient needs to be found
+#		   in the dungeon, or is rarely appearing in shop.
+#		3) more ingredients for more powerful stuff.
+#		4) more 'expensive' ingredients for more powerful
+#		   stuff. 'expensive' here means its harder to get,
+#		   more costly to buy, rarer to find.
+#		5) Run crossfire with the -m9 switch to check your formula -
+#		   It does some sanity checking and price checking
+#
+#
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#		F O R M U L A E  B E G I N
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#
+# --------------
+# Basic formulae - these formulae make some of the most often used
+#		   ingredients.
+# --------------
+#
+# true lead
+Object NONE
+arch true_lead
+yield 3
+chance 5
+diff 20
+exp 100000
+skill alchemy
+cauldron cauldron
+ingred lead,pile of philosophical salt,bottle of philosophical oil,pile of philosophical sulphur,pile of philosophical phosphorus
+#
+# fixed mercury
+Object NONE
+arch fix_mercury
+yield 3
+chance 5
+diff 20
+exp 100000
+skill alchemy
+cauldron cauldron
+ingred mercury,pile of philosophical salt,bottle of philosophical oil,pile of philosophical sulphur,pile of philosophical phosphorus
+#
+# mercury
+Object NONE
+arch mercury
+chance 10
+diff 5
+exp 1000
+skill alchemy
+cauldron cauldron
+ingred 3 pile of cinnabar
+#
+# philosophical salt
+Object NONE
+arch phil_salt
+chance 10
+diff 5
+exp 1000
+yield 7
+skill alchemy
+cauldron cauldron
+ingred 7 pile of salt
+#
+# philosophical sulphur
+Object NONE
+arch phil_sulphur
+chance 10
+diff 5
+exp 1000
+yield 7
+skill alchemy
+cauldron cauldron
+ingred 7 pile of sulphur
+#
+# philosophical phosphorus
+Object NONE
+arch phil_phosphorus
+chance 10
+diff 5
+exp 1000
+yield 7
+skill alchemy
+cauldron cauldron
+ingred 7 pile of phosphorus
+#
+# philosophical oil
+Object NONE
+arch phil_oil
+chance 9
+diff 5
+exp 1000
+yield 7
+skill alchemy
+cauldron cauldron
+ingred 7 bottle of mineral oil
+#
+# water of the wise
+Object the wise
+arch water
+chance 30
+diff 8
+exp 1000
+yield 7
+skill alchemy
+cauldron cauldron
+ingred 7 water
+#
+# water of diamond
+Object diamond
+arch water
+chance 30
+diff 10
+exp 5000
+yield 1
+skill alchemy
+cauldron cauldron
+ingred water of the wise,3 diamond
+#
+# water of ruby
+Object ruby
+arch water
+diff 10
+exp 5000
+chance 35
+skill alchemy
+cauldron cauldron
+ingred 3 ruby,water of the wise
+#
+# water of sapphire
+Object sapphire
+arch water
+diff 10
+exp 5000
+chance 40
+skill alchemy
+cauldron cauldron
+ingred 3 sapphire,water of the wise
+#
+# water of emerald
+Object emerald
+arch water
+chance 40
+diff 10
+exp 5000
+skill alchemy
+cauldron cauldron
+ingred 3 emerald,water of the wise
+#
+# water of pearl
+Object pearl
+arch water
+chance 40
+diff 10
+exp 5000
+skill alchemy
+cauldron cauldron
+ingred 3 pearl,water of the wise
+#
+#
+# --------------
+# Potions     -- incl. balms, figurines, and dusts
+# --------------
+#
+#  -- Balms of protection. Since balm is rubbed on, I made only
+#     protections vs. things that 'physically' must touch you.
+#     Other protections are in potion.
+#
+# -- balms of protection --
+#
+# -- fire prot.
+Object asbestos
+arch balm_generic
+chance 25
+diff 15
+exp 8000
+skill alchemy
+cauldron cauldron
+ingred 3 red dragon scale,water of the wise
+#
+# -- cold prot. #1
+Object warmth
+arch balm_generic
+chance 25
+diff 16
+exp 12000
+yield 6
+skill alchemy
+cauldron cauldron
+ingred vampire's heart,water of the wise,icecube
+#
+# -- cold prot. #2
+Object warmth
+arch balm_generic
+chance 25
+diff 14
+exp 6000
+yield 3
+skill alchemy
+cauldron cauldron
+ingred water of the wise,water of pearl,icecube
+#
+# -- elect prot.
+Object insulation
+arch balm_generic
+chance 25
+diff 14
+exp 7000
+skill alchemy
+cauldron cauldron
+ingred beholdereye,water of the wise,2 key
+#
+# -- phys. prot.
+Object aethereality
+arch balm_generic
+chance 28
+diff 17
+exp 8000
+skill alchemy
+cauldron cauldron
+ingred 3 ghost's ectoplasm,water of emerald
+#
+# -- misc. balms --
+#
+# -- word of recall
+Object return home
+arch balm_generic
+chance 2
+diff 12
+exp 6000
+yield 3
+skill alchemy
+cauldron cauldron
+ingred 3 xan's wing,3 pixie's wings,3 water of sapphire
+#
+# -- invisible
+Object transparency
+arch balm_generic
+chance 8
+diff 14
+exp 7000
+skill alchemy
+cauldron cauldron
+ingred ghost's ectoplasm,water of emerald,3 onion
+#
+# -- invisible to undead
+Object invisible to undead
+arch balm_generic
+chance 15
+diff 10
+exp 5000
+skill alchemy
+cauldron cauldron
+ingred zombie's corpse,graveyard dirt
+#
+# -- minor heal
+Object first aid
+arch balm_generic
+chance 27
+diff 9
+exp 4000
+skill alchemy
+cauldron cauldron
+yield 7
+ingred water of the wise,mandrake root
+#
+# -- levitation
+Object flying
+arch balm_generic
+chance 20
+diff 13
+exp 7000
+skill alchemy
+cauldron cauldron
+ingred 2 giant bat's wing,water of the wise
+#
+# -- serpent to snake (you rub it on your staff!)
+Object the serpent
+arch balm_generic
+chance 12
+diff 12
+exp 6000
+skill alchemy
+cauldron cauldron
+ingred snake's skin,bottle of philosophical oil
+#
+#  Figurines -- these devices should only summon 'golems'; never any
+#	        other effects.
+#
+#  -- summon golem
+Object clay
+arch figurine_generic
+chance 8
+diff 8
+exp 3000
+skill alchemy
+cauldron cauldron
+ingred 3 graveyard dirt,water of the wise
+#
+#  -- summon air elem
+Object whirlwind
+arch figurine_generic
+chance 7
+diff 20
+exp 20000
+yield 4
+skill alchemy
+cauldron cauldron
+ingred air para-elemental's residue,7 pile of gypsum,bottle of philosophical oil
+#
+#  -- summon earth elem
+Object stone
+arch figurine_generic
+chance 5
+diff 20
+exp 20000
+yield 4
+skill alchemy
+cauldron cauldron
+ingred earth para-elemental's residue,7 pile of pyrite,bottle of philosophical oil
+#
+#  -- summon water elem
+Object a great wave
+arch figurine_generic
+chance 4
+diff 20
+exp 20000
+yield 4
+skill alchemy
+cauldron cauldron
+ingred water para-elemental's residue,7 water,bottle of philosophical oil
+#
+#  -- summon fire elem
+Object a flame
+arch figurine_generic
+chance 3
+diff 20
+exp 20000
+yield 4
+skill alchemy
+cauldron cauldron
+ingred fire para-elemental's residue,7 pile of sulphur,bottle of philosophical oil
+#
+#  -- mystic fist
+Object a clenched hand
+arch figurine_generic
+chance 1
+yield 7
+diff 14
+exp 10000
+skill alchemy
+cauldron cauldron
+ingred figurine of clay,hill giant's hand,bottle of philosophical oil
+#
+#  Dusts -- these either allow 360 deg 'attacks' or effect some kind of
+#	    detection.
+#
+# -- dusts w/ 360 effect --
+#
+# -- paralyze
+Object stasis
+arch dust_generic
+chance 15
+diff 10
+exp 5000
+skill alchemy
+cauldron cauldron
+ingred mountain stone,goblin's liver
+#
+# -- mass confusion
+Object madness
+arch dust_generic
+chance 15
+diff 12
+exp 6000
+yield 2
+skill alchemy
+cauldron cauldron
+ingred madman's corpse,2 water of the wise
+#
+# -- burning hands
+Object ignition
+arch dust_generic
+chance 19
+yield 4
+diff 15
+exp 8000
+skill alchemy
+cauldron cauldron
+ingred water of diamond,pile of salt,pile of phosphorus,pile of sulphur
+#
+# -- hellfire
+Object conflagration
+arch dust_generic
+chance 5
+yield 4
+diff 20
+exp 20000
+skill alchemy
+cauldron cauldron
+ingred water of diamond,pile of philosophical salt,pile of philosophical phosphorus,pile of philosophical sulphur
+#
+# -- counterspell
+Object countermagic
+arch dust_generic
+chance 23
+diff 15
+exp 9000
+yield 4
+skill alchemy
+cauldron cauldron
+ingred 2 lead,pile of philosophical phosphorus
+#
+# -- slow
+Object lethargy
+arch dust_generic
+chance 23
+diff 15
+exp 9000
+yield 6
+skill alchemy
+cauldron cauldron
+ingred water of pearl,slug's slime,river stone
+#
+# -- icestorm #1
+Object frost
+arch dust_generic
+chance 18
+diff 12
+exp 10000
+yield 4
+skill alchemy
+cauldron cauldron
+ingred icecube,icecube,icecube,water of diamond
+#
+# -- icestorm #2
+Object frost
+arch dust_generic
+chance 18
+diff 14
+exp 8000
+yield 3
+skill alchemy
+cauldron cauldron
+ingred water of pearl,water of diamond,pile of gypsum
+#
+# -- shockwave
+Object concussion
+arch dust_generic
+chance 8
+diff 10
+exp 5000
+yield 2
+skill alchemy
+cauldron cauldron
+ingred dust of conflagration,dust of ignition
+#
+# -- fear
+Object fright
+arch dust_generic
+chance 16
+diff 12
+exp 6000
+yield 2
+skill alchemy
+cauldron cauldron
+ingred orc's heart,water of the wise
+#
+# -- turn undead
+Object repelling undead
+arch dust_generic
+chance 11
+diff 9
+exp 4500
+yield 6
+skill alchemy
+cauldron cauldron
+ingred pile of salt,graveyard dirt
+#
+# -- face of death -- this is potent stuff!!
+# unfortuneately its currently buggy :<
+#Object Necrocritis
+#arch dust_generic
+#chance 0
+#ingred 3 graveyard dirt,vampire's heart,zombie corpse,lich dust
+#
+# -- dusts of detection --
+#
+# -- magic mapping
+Object clairvoyance
+arch dust_generic
+chance 14
+diff 7
+exp 4000
+yield 6
+skill alchemy
+cauldron cauldron
+ingred 2 beholdereye,water of sapphire
+#
+# -- show invisible
+Object revealing
+arch dust_generic
+chance 3
+diff 9
+exp 4500
+yield 5
+skill alchemy
+cauldron cauldron
+ingred 3 pile of gypsum,Dread's eye,water of emerald
+#
+# -- detect magic
+Object show enchantment
+arch dust_generic
+chance 38
+diff 5
+exp 2000
+yield 5
+skill alchemy
+cauldron cauldron
+ingred pixie dust,pile of pyrite
+#
+# -- dark vision
+Object night vision
+arch dust_generic
+chance 17
+diff 15
+exp 9000
+yield 10
+skill alchemy
+cauldron cauldron
+ingred beholdereye,3 carrots,water of the wise
+#
+# -- xray
+Object piercing vision
+arch dust_generic
+chance 11
+yield 10
+diff 9
+exp 4500
+skill alchemy
+cauldron cauldron
+ingred water of sapphire,7 carrots
+#
+# -- faery fire
+Object clinging glow
+arch dust_generic
+chance 21
+diff 14
+exp 8000
+yield 10
+skill alchemy
+cauldron cauldron
+ingred pile of pyrite,3 pixie dust,water of the wise
+#
+# -- fog, ok, ok. Not a detection spell. Not 360. But where else
+#    to put it? And after all the work I put in this game,
+#	can't I name an artifact after a favorite character? :)
+#    -- b.t.
+Object Biren's mist
+arch dust_generic
+chance 6
+diff 15
+exp 7000
+yield 3
+skill alchemy
+cauldron cauldron
+ingred water of the wise,icecube,booze
+#
+# biren's mist #2
+Object Biren's mist
+arch dust_generic
+chance 6
+yield 6
+diff 14
+exp 7500
+skill alchemy
+cauldron cauldron
+ingred water of the wise,water of pearl,booze
+#
+# -- command undead
+Object the Dead
+arch dust_generic
+chance 14
+diff 14
+exp 7000
+yield 5
+skill alchemy
+cauldron cauldron
+ingred skull's tongue,zombie's corpse,graveyard dirt
+#
+# -- light
+Object brightness
+arch dust_generic
+chance 24
+diff 12
+exp 6000
+yield 6
+skill alchemy
+cauldron cauldron
+ingred torch,water of ruby,pile of sulphur
+#
+# -- darkness
+Object impenatrability
+arch dust_generic
+chance 15
+diff 18
+exp 12000
+yield 3
+skill alchemy
+cauldron cauldron
+ingred burnt out torch,lead,dust of Biren's mist
+#
+# -- mana blast
+Object consuming wrath
+arch dust_generic
+chance 16
+diff 18
+exp 12000
+yield 5
+skill alchemy
+cauldron cauldron
+ingred water of diamond,pile of phosphorus,lead,pile of sulphur
+#
+# -- medium mana ball
+Object encompassing rage
+arch dust_generic
+chance 4
+diff 20
+exp 20000
+yield 5
+skill alchemy
+cauldron cauldron
+ingred water of diamond,pile of philosophical phosphorus,lead,pile of philosophical sulphur
+#
+#
+# -- medium snowstowm
+Object blizzards
+arch dust_generic
+chance 5
+yield 5
+diff 15
+exp 10000
+skill alchemy
+cauldron cauldron
+ingred water of sapphire,dust of frost,bottle of philosophical oil
+#
+#    Potions -- these give 'non-contact' protections, have
+#	        attack effects on the 'drinker' (or one it is
+#		thrown at ;), give immunities, give cures and
+#	  	have the more powerfull	misc. effects.
+#
+# -- stat enchancing potion. (temporary, allowing players to make
+#    permantent stat raising items is a playbalance no no I think).
+#
+# -- strength spell
+Object strength
+arch potion_generic
+chance 18
+diff 16
+exp 12000
+skill alchemy
+cauldron cauldron
+yield 7
+ingred 3 water of the wise,ogre's arm,pile of philosophical salt
+#
+# -- dex spell
+Object agility
+arch potion_generic
+chance 18
+diff 16
+exp 12000
+yield 7
+skill alchemy
+cauldron cauldron
+ingred 3 water of the wise,pixie dust,pile of philosophical salt
+#
+# -- con spell
+Object fortitude
+arch potion_generic
+chance 17
+diff 16
+exp 12000
+yield 7
+skill alchemy
+cauldron cauldron
+ingred 3 water of the wise,small troll's liver,pile of philosophical salt
+#
+# -- cha spell (gets rid of wrinkles, better as balm! :)
+Object beauty
+arch balm_generic
+chance 5
+diff 16
+exp 12000
+yield 7
+skill alchemy
+cauldron cauldron
+ingred woman's head,3 mint sprig,water of the wise
+#
+# -- heroism
+Object NONE
+arch potion_heroism
+chance 11
+diff 16
+exp 12000
+yield 8
+skill alchemy
+cauldron cauldron
+ingred ogre's heart,3 water of the wise,pile of philosophical salt,pirate's heart
+#
+# -- immunity potion, these are separate archs each already --
+#    Note the 0 chance--these formulae are quest items.
+#
+# -- fire immune
+# (quest: peterm/FireTemple)
+Object NONE
+arch potion_cold
+chance 0
+diff 50
+exp 500000
+yield 10
+skill alchemy
+cauldron cauldron
+ingred fire para-elemental's residue,3 balm of asbestos,dragon's steak,7 water of ruby
+keycode fire alchemist
+#
+# -- cold immune
+Object NONE
+arch potion_fire
+chance 1
+diff 50
+exp 500000
+yield 10
+skill alchemy
+cauldron cauldron
+ingred ice para-elemental's residue,3 balm of warmth,chinese dragon's steak,7 water of sapphire
+#
+# -- renamed potion of invulnerability to potion of shielding
+Object NONE
+arch potion_shielding
+chance 0
+diff 50
+exp 500000
+yield 4
+skill alchemy
+cauldron cauldron
+ingred Spectre's ectoplasm,demon's head,7 water of ruby,3 balm of aethereality
+#
+# -- magic immunity (very powerful)
+Object magic resistance
+arch potion_generic
+chance 0
+diff 50
+exp 500000
+yield 14
+skill alchemy
+cauldron cauldron
+ingred block of true lead,demon's heart,7 water of diamond,3 potion of resist magic
+#
+# -- electric immunity (very powerful)
+Object shock resistance
+arch potion_generic
+chance 0
+diff 50
+exp 500000
+yield 14
+skill alchemy
+cauldron cauldron
+ingred lightning para-elemental's residue,block of fixed mercury,titan's head,7 water of ruby
+#
+# -- prot from magic
+Object resist magic
+arch potion_generic
+chance 25
+diff 20
+exp 20000
+yield 2
+skill alchemy
+cauldron cauldron
+ingred water of ruby,beholder's tongue,mandrake root
+#
+# -- prot from confusion
+Object resist confusion
+arch potion_generic
+chance 22
+diff 20
+exp 20000
+skill alchemy
+cauldron cauldron
+ingred madman's head,beholdereye,water of ruby
+#
+# -- prot from draining
+Object resist draining
+arch potion_generic
+chance 21
+diff 15
+exp 12000
+yield 10
+skill alchemy
+cauldron cauldron
+ingred wight's corpse,water of ruby,graveyard dirt
+#
+# -- prot from paralysis
+Object resist paralysis
+arch potion_generic
+chance 24
+diff 14
+exp 11000
+yield 10
+skill alchemy
+cauldron cauldron
+ingred mercury,water of ruby,cunning gnome's corpse
+#
+# -- prot from slow
+Object resist slow
+arch potion_generic
+chance 24
+diff 14
+exp 11000
+yield 10
+skill alchemy
+cauldron cauldron
+ingred water of ruby,2 xan's wing
+#
+# -- prot from poison
+Object resist poison
+arch potion_generic
+chance 20
+diff 15
+exp 12000
+yield 10
+skill alchemy
+cauldron cauldron
+ingred scorpion's stinger,water of ruby,clover
+#
+# -- curative potion
+#
+# -- cure blindness
+Object cure vision
+arch potion_generic
+chance 15
+diff 12
+exp 9000
+yield 5
+skill alchemy
+cauldron cauldron
+ingred man's eye,carrots,balm of first aid
+#
+# -- cure poison
+Object cure poison
+arch potion_generic
+chance 16
+diff 12
+exp 9000
+yield 5
+skill alchemy
+cauldron cauldron
+ingred snake's skin,apple,balm of first aid
+#
+# -- cure confusion
+Object cure madness
+arch potion_generic
+chance 17
+diff 12
+exp 9000
+yield 9
+skill alchemy
+cauldron cauldron
+ingred madman's head,apple,balm of first aid
+#
+#  -- potion casting other magic,  dedicated archs first, then potion_gen
+#
+# -- sp regen. Recipe #1
+Object NONE
+arch potion_magic
+chance 0
+diff 20
+exp 20000
+yield 5
+skill alchemy
+cauldron cauldron
+ingred 3 potion of mystic power,block of fixed mercury,water of diamond
+#
+# -- sp regen. Recipe #2
+Object NONE
+arch potion_magic
+chance 0
+diff 20
+exp 25000
+yield 4
+skill alchemy
+cauldron cauldron
+ingred potion of mystic power,mushroom of Magic,water of diamond
+#
+# -- restoration
+Object NONE
+arch potion_restoration
+chance 7
+diff 10
+exp 10000
+yield 5
+skill alchemy
+cauldron cauldron
+ingred unicorn horn,3 booze
+#
+# -- healing recipe #1
+Object NONE
+arch potion_heal
+cauldron cauldron
+chance 8
+diff 13
+exp 2600
+skill alchemy
+yield 1
+ingred mushroom of Healing,water of emerald,water of diamond
+#
+# -- healing recipe #2
+Object NONE
+arch potion_heal
+cauldron cauldron
+chance 4
+diff 13
+exp 13000
+skill alchemy
+yield 1
+ingred balm of first aid,red rose,unicorn horn
+#
+# -- regeneration
+Object recuperation
+arch potion_generic
+chance 9
+diff 13
+exp 13000
+yield 7
+skill alchemy
+cauldron cauldron
+ingred troll's liver,water of the wise,3 booze
+#
+# -- haste
+Object speed
+arch potion_generic
+chance 1
+diff 20
+exp 20000
+yield 4
+skill alchemy
+cauldron cauldron
+ingred pixie's wings,xan's wing,water of diamond
+#
+# -- transfer
+Object mystic power
+arch potion_generic
+chance 8
+diff 12
+exp 12000
+yield 6
+skill alchemy
+cauldron cauldron
+ingred 3 water of diamond,sage's head,clover
+#
+# -- perceive self
+Object self knowledge
+arch potion_generic
+chance 20
+diff 10
+exp 10000
+yield 3
+skill alchemy
+cauldron cauldron
+ingred sage's head,water of the wise
+#
+# -- probe
+Object testing monsters
+arch potion_generic
+chance 20
+diff 10
+exp 10000
+yield 3
+skill alchemy
+cauldron cauldron
+ingred magnifying glass,tissue paper,7 water
+#
+# -- cure disease
+Object cure disease
+arch potion_generic
+chance 20
+diff 5
+exp 5000
+yield 5
+skill alchemy
+cauldron cauldron
+ingred booze,balm of first aid,red rose
+#
+# -- attack potion. Drinker/target is effected adversely
+#
+# -- sm. lightning
+Object electric shock
+arch potion_generic
+chance 4
+diff 10
+exp 10000
+yield 3
+skill alchemy
+cauldron cauldron
+ingred lightning para-elemental's residue,water of diamond
+#
+# -- firebolt
+Object fire
+arch potion_generic
+chance 4
+diff 10
+exp 10000
+yield 3
+skill alchemy
+cauldron cauldron
+ingred fire para-elemental's residue,water of ruby
+#
+# -- frostbolt
+Object freezing
+arch potion_generic
+chance 4
+diff 10
+exp 10000
+yield 3
+skill alchemy
+cauldron cauldron
+ingred ice para-elemental's residue,water of sapphire
+#
+# -- sunspear
+Object sunfire
+arch potion_generic
+chance 4
+diff 10
+exp 10000
+yield 3
+skill alchemy
+cauldron cauldron
+ingred lava para-elemental's residue,water of diamond
+#
+# -- comet
+Object black fire
+arch potion_generic
+chance 2
+diff 10
+exp 10000
+yield 5
+skill alchemy
+cauldron cauldron
+ingred potion of fire,potion of sunfire,water of diamond
+#
+# -- meteor storm, very powerful.
+Object fiery destruction
+arch potion_generic
+chance 0
+diff 50
+exp 50000
+yield 6
+skill alchemy
+cauldron cauldron
+ingred potion of black fire,water of diamond,water of ruby,water of sapphire,water of emerald
+#
+# -- s. fireball
+Object firestorm
+arch potion_generic
+chance 12
+diff 18
+exp 18000
+yield 7
+skill alchemy
+cauldron cauldron
+ingred dust of ignition,3 booze,bottle of philosophical oil
+#
+# -- m. fireball
+Object great firestorm
+arch potion_generic
+chance 4
+diff 18
+exp 18000
+yield 7
+skill alchemy
+cauldron cauldron
+ingred dust of conflagration,3 booze,bottle of philosophical oil
+#
+# -- poison cloud
+Object noxious fumes
+arch potion_generic
+chance 15
+diff 18
+exp 18000
+yield 7
+skill alchemy
+cauldron cauldron
+ingred 3 xan's wing,water of emerald
+#
+# -- color spray. very powerful, probably should be a quest item
+Object Rainbow Wave
+arch potion_generic
+chance 0
+diff 50
+exp 100000
+yield 6
+skill alchemy
+cauldron cauldron
+ingred wyvern of chaos's steak,7 water of diamond,potion of electric shock,skull's tongue
+#
+# -- ball lightning
+Object lasting shock
+arch potion_generic
+chance 3
+diff 28
+exp 40000
+yield 3
+skill alchemy
+cauldron cauldron
+ingred 3 water of diamond,3 potion of electric shock,electric dragon's steak
+#
+# -------------------
+# Missile weapons
+# -------------------
+#
+Object Slay Dragon
+arch arrow
+chance 3
+trans 1
+diff 5
+exp 5000
+yield 20
+skill bowyer
+cauldron workbench
+ingred 20 arrow,dragon's claw
+#
+Object Slay Dragon
+arch bolt
+chance 4
+diff 5
+exp 5000
+trans 1
+yield 20
+skill bowyer
+cauldron workbench
+ingred 20 bolt,dragon's claw
+#
+#
+Object Assassinating Dragons
+arch bolt
+chance 0
+diff 30
+exp 50000
+yield 20
+trans 1
+skill bowyer
+cauldron workbench
+ingred 20 bolt,dragon's heart,water of emerald,scorpion's stinger
+#
+#
+Object Assassinating Dragons
+arch arrow
+chance 0
+diff 30
+exp 50000
+yield 20
+trans 1
+skill bowyer
+cauldron workbench
+ingred 20 arrow,dragon's heart,water of emerald,scorpion's stinger
+#
+Object Assassinating Trolls
+arch bolt
+chance 0
+diff 30
+exp 50000
+trans 1
+yield 20
+skill bowyer
+cauldron workbench
+ingred 20 bolt,troll's heart,scorpion's stinger
+#
+#
+Object Assassinating Trolls
+arch arrow
+chance 0
+diff 30
+exp 50000
+yield 20
+trans 1
+skill bowyer
+cauldron workbench
+ingred 20 arrow,troll's heart,scorpion's stinger
+#
+#
+Object Blessedness
+arch bolt
+chance 0
+diff 30
+exp 50000
+trans 1
+yield 20
+skill bowyer
+cauldron workbench
+ingred 20 bolt,unicorn horn,2 water of sapphire
+#
+#
+Object Blessedness
+arch arrow
+chance 0
+diff 30
+exp 50000
+trans 1
+yield 20
+skill bowyer
+cauldron workbench
+ingred 20 arrow,unicorn horn,2 water of sapphire
+#
+#
+Object Magic
+arch arrow
+chance 4
+diff 5
+exp 5000
+trans 1
+yield 20
+skill bowyer
+cauldron workbench
+ingred 20 arrow,potion of mystic power
+#
+#
+Object Magic
+arch bolt
+chance 4
+diff 5
+exp 5000
+trans 1
+yield 20
+skill bowyer
+cauldron workbench
+ingred 20 bolt,potion of mystic power
+#
+#
+Object Fire
+arch arrow
+chance 4
+trans 1
+diff 5
+exp 5000
+yield 20
+skill bowyer
+cauldron workbench
+ingred 20 arrow,wyvern's steak
+#
+#
+Object Fire
+arch bolt
+chance 4
+diff 5
+exp 5000
+trans 1
+yield 20
+skill bowyer
+cauldron workbench
+ingred 20 bolt,wyvern's steak
+#
+#
+Object Frost
+arch arrow
+chance 4
+diff 5
+exp 5000
+trans 1
+yield 20
+skill bowyer
+cauldron workbench
+ingred 20 arrow,ghost's ectoplasm
+#
+#
+Object Frost
+arch bolt
+chance 4
+diff 5
+exp 5000
+trans 1
+yield 20
+skill bowyer
+cauldron workbench
+ingred 20 bolt,ghost's ectoplasm
+#
+#
+Object Lightning
+arch arrow
+chance 4
+diff 5
+exp 5000
+trans 1
+yield 20
+skill bowyer
+cauldron workbench
+ingred 20 arrow,skull's tooth
+#
+#
+Object Lightning
+arch bolt
+chance 4
+diff 5
+exp 5000
+trans 1
+yield 20
+skill bowyer
+cauldron workbench
+ingred 20 bolt,skull's tooth
+#
+#
+Object Paralysis
+arch arrow
+chance 4
+diff 5
+exp 5000
+trans 1
+yield 20
+skill bowyer
+cauldron workbench
+ingred 20 arrow,beholdereye
+#
+#
+Object Paralysis
+arch bolt
+chance 4
+diff 5
+exp 5000
+trans 1
+yield 20
+skill bowyer
+cauldron workbench
+ingred 20 bolt,beholdereye
+#
+#
+Object Poison
+arch arrow
+chance 4
+diff 5
+exp 5000
+trans 1
+yield 20
+skill bowyer
+cauldron workbench
+ingred 20 arrow,scorpion's stinger
+#
+#
+Object Poison
+arch bolt
+chance 4
+diff 5
+exp 5000
+trans 1
+yield 20
+skill bowyer
+cauldron workbench
+ingred 20 bolt,scorpion's stinger
+#
+# -------------------
+# Cloaks
+# -------------------
+#
+Object minor protection
+arch cloak
+chance 5
+diff 5
+exp 5000
+trans 1
+yield 1
+skill woodsman
+cauldron tanbench
+ingred cloak,balm of aethereality
+#
+Object intermediate protection
+arch cloak
+chance 4
+diff 10
+exp 15000
+trans 1
+yield 1
+skill woodsman
+cauldron tanbench
+ingred cloak,ghost's ectoplasm,balm of aethereality
+#
+Object greater protection
+arch cloak
+chance 2
+diff 20
+exp 30000
+trans 1
+yield 1
+skill woodsman
+cauldron tanbench
+ingred cloak,Spectre's ectoplasm,potion of aethereality
+#
+Object Insulation
+arch cloak
+chance 3
+diff 10
+exp 10000
+trans 1
+yield 1
+skill woodsman
+cauldron tanbench
+ingred cloak,3 electric dragon's steak,balm of insulation
+#
+Object Warmth
+arch cloak
+diff 10
+exp 10000
+chance 3
+trans 1
+yield 1
+skill woodsman
+cauldron tanbench
+ingred cloak,3 chinese dragon's steak,balm of insulation
+#
+Object Asbestos
+arch cloak
+chance 3
+diff 10
+exp 10000
+trans 1
+yield 1
+skill woodsman
+cauldron tanbench
+ingred cloak,3 dragon's steak,balm of insulation
+#
+Object Acid Proofing
+arch cloak
+chance 3
+diff 25
+exp 50000
+trans 1
+yield 1
+skill woodsman
+cauldron tanbench
+ingred cloak,gaelotroll's corpse,block of true lead
+#
+Object Lythander
+arch cloak
+chance 1
+diff 25
+exp 50000
+trans 1
+yield 1
+skill woodsman
+cauldron tanbench
+ingred cloak,Dread's eye,holy symbol,2 potion of power
+#
+Object Gaea
+arch cloak
+chance 1
+yield 1
+diff 26
+trans 1
+exp 55000
+skill woodsman
+cauldron tanbench
+ingred cloak,balm of asbestos,balm of insulation,balm of warmth,holy symbol
+#
+Object the Magi
+arch cloak
+chance 1
+diff 26
+exp 80000
+trans 1
+yield 1
+skill woodsman
+cauldron tanbench
+ingred cloak,potion of wisdom,2 potion of power
+#
+Object Unholy Protection
+arch cloak
+chance 3
+diff 25
+exp 50000
+trans 1
+yield 1
+skill woodsman
+cauldron tanbench
+ingred cloak,ring of Doom,amulet of Unholiness,lich dust,vampire's heart
+#
+# -------------------
+# Boots
+# -------------------
+#
+Object granite
+arch high_boots,high_boots_b,high_boots_w
+chance 5
+diff 5
+exp 10000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred jack boots,3 lead
+#
+Object granite
+arch low_boots
+chance 5
+diff 5
+exp 10000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred pair of shoes,3 lead
+#
+Object mobility
+arch low_boots
+chance 3
+diff 10
+exp 20000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred pair of shoes,beholdereye,3 lead
+#
+Object mobility
+arch elvenboots
+chance 1
+diff 10
+exp 20000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred elven boots,Dread's eye,block of true lead
+#
+Object mobility
+arch levitationboots
+chance 1
+diff 20
+exp 50000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred levitation boots,Dread's eye,block of true lead
+#
+Object clawing
+arch low_boots
+chance 5
+diff 10
+exp 20000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred pair of shoes,goblin's head,lead
+#
+Object clawing
+arch high_boots,high_boots_b,high_boots_w
+chance 5
+diff 10
+exp 20000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred jack boots,goblin's head,lead
+#
+Object steel
+arch high_boots,high_boots_b,high_boots_w
+chance 5
+diff 15
+exp 25000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred jack boots,3 mithril crystal
+#
+Object steel
+arch low_boots
+chance 5
+diff 15
+exp 25000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred pair of shoes,3 mithril crystal
+#
+# -------------------
+# Armour
+# -------------------
+#
+Object Gorokh
+arch scale_mail,b_scale_mail
+chance 3
+diff 12
+exp 20000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred scale mail,potion of magic resistance,demon's head
+#
+Object Gorokh
+arch plate_mail,b_plate_mail
+chance 3
+diff 12
+exp 25000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred plate mail,potion of magic resistance,demon's head
+#
+Object Gnarg
+arch scale_mail,b_scale_mail
+chance 4
+diff 15
+exp 30000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred scale mail,potion of resist poison,troll's heart
+#
+Object Gnarg
+arch plate_mail,b_plate_mail
+chance 4
+diff 18
+exp 40000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred plate mail,potion of resist poison,troll's heart
+#
+Object Protection
+arch scale_mail,b_scale_mail
+chance 6
+diff 25
+exp 80000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred scale mail,amulet of Shielding,lead
+#
+Object Protection
+arch plate_mail,b_plate_mail
+chance 6
+diff 30
+exp 100000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred plate mail,amulet of Shielding,3 lead
+#
+Object Berwean
+arch plate_mail,b_plate_mail
+chance 4
+diff 10
+exp 20000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred plate mail,3 pixie's wings,3 xan's wing
+#
+Object Berwean
+arch mithril_chainmail
+chance 2
+diff 20
+exp 40000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred mithril chainmail,3 pixie's wings,3 xan's wing,potion of speed
+#
+Object Blazing Fires
+arch dragon_mail
+chance 1
+diff 30
+exp 100000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred red dragon mail,3 dragon's steak,dragon's eye,red dragon scale,fire para-elemental's residue
+#
+Object Blazing Fires
+arch scale_mail,b_scale_mail
+chance 2
+diff 25
+exp 80000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred scale mail,wyvern's steak,red dragon scale,fire para-elemental's residue
+#
+Object Gaea
+arch leather_armour
+chance 3
+diff 15
+exp 30000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred armour,potion of resist draining,potion of recuperation
+#
+Object Gaea
+arch ring_mail
+chance 3
+diff 12
+exp 20000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred hauberk,potion of resist draining,potion of recuperation
+#
+Object Protection
+arch chain_mail
+chance 5
+diff 20
+exp 40000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred chain mail,balm of aethereality,lead
+#
+Object Protection
+arch ring_mail2
+chance 5
+diff 20
+exp 40000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred ring mail,balm of aethereality,lead
+#
+Object Power
+arch plate_mail,b_plate_mail
+chance 2
+diff 40
+exp 150000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred plate mail,3 dragon's steak,balm of aethereality,potion of strength
+#
+Object Displacement
+arch robe,robe2
+diff 20
+exp 50000
+chance 4
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred robe,balm of transparency,3 mercury
+#
+Object metal weave
+arch robe,robe2
+diff 10
+exp 20000
+chance 4
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred robe,lead,balm of aethereality
+#
+Object NONE
+arch elven_robe
+diff 40
+exp 150000
+chance 2
+yield 1
+skill smithery
+cauldron forge
+ingred robe,potion of dexterity,3 potion of resist confusion,clover,unicorn horn
+#
+# ------------------
+# Helmets
+# ------------------
+#
+Object Xebinon
+arch helmet,a_helmet,b_helmet
+chance 2
+diff 5
+exp 10000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred helmet,magic power potion,bottle of philosophical oil
+#
+Object Dark Vision
+arch helmet,a_helmet,b_helmet
+chance 3
+diff 5
+exp 10000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred helmet,3 dust of night vision,bottle of philosophical oil
+#
+Object Might
+arch full_helmet,b_full_helmet
+chance 3
+diff 10
+exp 20000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred full helmet,potion of strength,ogre's corpse,bottle of philosophical oil
+#
+Object Valriel
+arch full_helmet,b_full_helmet
+chance 4
+diff 10
+exp 20000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred full helmet,3 balm of beauty,bottle of philosophical oil
+#
+Object Argoth
+arch full_helmet,b_full_helmet
+chance 2
+diff 12
+exp 25000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred full helmet,3 dragon's steak,mithril crystal,bottle of philosophical oil
+#
+Object Lythander
+arch helmet,a_helmet,b_helmet
+chance 5
+diff 6
+exp 12000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred helmet,clover,bottle of philosophical oil
+#
+Object Sorig
+arch crown,crown_dark,crown_gray,crown_r,crown_white
+chance 3
+diff 20
+exp 40000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred crown,lightning para-elemental's residue,balm of insulation,bottle of philosophical oil
+#
+# ------------------
+# Shields
+# ------------------
+#
+Object Deflection
+arch high_shield
+chance 5
+diff 5
+exp 10000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred high shield,balm of aethereality,3 lead
+#
+Object Mostrai
+arch small_shield,b_small_shield
+chance 3
+diff 7
+exp 10000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred small shield,balm of asbestos,mithril crystal
+#
+Object Mostrai
+arch high_shield
+chance 3
+diff 7
+exp 10000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred high shield,balm of asbestos,mithril crystal
+#
+Object Gnarg
+arch spiked_shield
+chance 3
+diff 7
+exp 5000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred spiked shield,pixie dust,booze
+#
+# ------------------
+# Gauntlets / Gloves
+# ------------------
+#
+Object Havok
+arch gloves,gloves_b,gloves_w
+chance 4
+diff 5
+exp 12000
+trans 1
+yield 1
+skill woodsman
+cauldron tanbench
+ingred gloves,ogre's corpse,bottle of philosophical oil
+#
+Object marksmanship
+arch gloves,gloves_b,gloves_w
+chance 5
+trans 1
+yield 1
+diff 8
+exp 16000
+skill woodsman
+cauldron tanbench
+ingred gloves,5 arrow of Accuracy,bottle of mineral oil
+#
+Object Sorig
+arch gloves,gloves_b,gloves_w
+chance 3
+trans 1
+yield 1
+diff 13
+exp 20000
+skill woodsman
+cauldron tanbench
+ingred gloves,hill giant's hand,lightning para-elemental's residue,bottle of philosophical oil
+#
+Object the Titans
+arch gauntlets,b_gauntlets
+chance 3
+diff 14
+exp 22000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred gauntlets,hill giant's heart,bottle of philosophical oil
+#
+Object bladed steel
+arch gloves,gloves_b,gloves_w
+chance 5
+diff 10
+exp 20000
+trans 1
+yield 1
+skill woodsman
+cauldron tanbench
+ingred gloves,hill giant's hand,bottle of mineral oil
+#
+Object Sorig
+arch gauntlets,b_gauntlets
+chance 1
+diff 35
+exp 120000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred gauntlets,hill giant's hand,lightning para-elemental's residue,bottle of philosophical oil,electric dragon's steak
+#
+# ------------------
+# Bows / Crossbows
+# ------------------
+#
+Object Auriga
+arch bow
+chance 1
+trans 1
+yield 1
+diff 15
+exp 15000
+skill bowyer
+cauldron workbench
+ingred bow,3 potion of strength,hill giant's corpse,troll's heart
+#
+Object Thunder
+arch bow
+chance 3
+diff 16
+exp 16000
+trans 1
+yield 1
+skill bowyer
+cauldron workbench
+ingred bow,titan's head,dust of stasis
+#
+Object Thunder
+arch crossbow
+chance 3
+diff 16
+exp 16500
+trans 1
+yield 1
+skill bowyer
+cauldron workbench
+ingred crossbow,titan's head,dust of stasis
+#
+Object Lythander
+arch longbow
+chance 5
+diff 10
+exp 10000
+trans 1
+yield 1
+skill bowyer
+cauldron workbench
+ingred long bow,4 clover,troll's liver
+#
+Object Ruggilli
+arch crossbow
+chance 4
+diff 12
+exp 11000
+trans 1
+yield 1
+skill bowyer
+cauldron workbench
+ingred crossbow,3 potion of fire,dragon's wing
+#
+Object Sorig
+arch huntersbow
+chance 5
+diff 12
+exp 11500
+trans 1
+yield 1
+skill bowyer
+cauldron workbench
+ingred hunter's bow,potion of lasting shock,lightning para-elemental's residue
+#
+Object Accuracy
+arch bow
+chance 10
+diff 3
+exp 4000
+trans 1
+yield 1
+skill bowyer
+cauldron workbench
+ingred bow,3 mushroom of Quickness,mercury
+#
+Object Valriel
+arch compositebow
+chance 9
+diff 5
+exp 6000
+trans 1
+yield 1
+skill bowyer
+cauldron workbench
+ingred composite bow,demon's head,3 dust of frost
+#
+Object Gorokh
+arch longbow
+chance 2
+diff 20
+exp 18000
+trans 1
+yield 1
+skill bowyer
+cauldron workbench
+ingred long bow,3 dust of conflagration,gaelotroll's liver,ogre's heart
+#
+Object Mostrai
+arch crossbow
+diff 18
+chance 3
+diff 18
+exp 17500
+trans 1
+yield 1
+skill bowyer
+cauldron workbench
+ingred crossbow,3 dust of consuming wrath,hill giant's heart,3 mithril crystal
+#
+# ------------------
+# Weapons
+# ------------------
+#
+Object Madness
+arch dagger,b_dagger
+chance 5
+diff 5
+exp 8000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred dagger,madman's head,bottle of mineral oil
+#
+Object Poisoning
+arch dagger,b_dagger
+chance 5
+diff 5
+exp 5000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred dagger,xan's wing,bottle of mineral oil
+#
+Object Poisoning
+arch falchion
+chance 3
+diff 6
+exp 6000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred falchion,3 xan's wing,bottle of philosophical oil
+#
+Object Fear
+arch morningstar
+chance 5
+diff 8
+exp 10000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred morningstar,wyvern's steak,bottle of philosophical oil
+#
+Object Fear
+arch club
+chance 5
+diff 4
+exp 5000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred club,wyvern's steak,bottle of philosophical oil
+#
+Object Fear
+arch big_club
+chance 5
+diff 5
+exp 6000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred large club,wyvern's steak,bottle of philosophical oil
+#
+Object Gnarg
+arch sword,b_sword_1,b_sword_2,sword_2
+chance 5
+diff 8
+exp 8000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred long sword,3 xan's wing,bottle of philosophical oil
+#
+Object Gnarg
+arch stonehammer
+chance 5
+diff 8
+exp 8000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred stonehammer,3 xan's wing,bottle of philosophical oil
+#
+Object Kragi
+arch sword_4
+chance 10
+trans 1
+yield 1
+diff 10
+exp 10000
+skill smithery
+cauldron forge
+ingred sword,healing potion,bottle of philosophical oil
+#
+Object Kragi
+arch hammer
+chance 10
+diff 11
+exp 12000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred hammer,healing potion,bottle of philosophical oil
+#
+Object Slay Ogre
+arch sword_4
+chance 6
+diff 7
+exp 8000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred sword,ogre's heart,bottle of philosophical oil
+#
+Object Slay Ogre
+arch axe_5
+chance 6
+diff 6
+exp 7000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred vicious axe,ogre's heart,bottle of philosophical oil
+#
+Object Valriel
+arch morningstar
+chance 3
+diff 12
+exp 15000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred morningstar,demon's head,bottle of philosophical oil
+#
+Object Valriel
+arch katana_1
+diff 13
+exp 16000
+chance 3
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred katana,demon's head,bottle of philosophical oil
+#
+Object Gorokh
+arch broadsword,b_bsword_1,b_bsword_2,broadsword_2
+chance 3
+diff 15
+exp 20000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred broadsword,light angel's head,bottle of philosophical oil
+#
+Object Gorokh
+arch poleaxe
+chance 3
+diff 16
+exp 21000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred poleaxe,light angel's head,bottle of philosophical oil
+#
+Object the Devourers
+arch mace,mace_2
+diff 20
+exp 32000
+chance 3
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred mace,ice para-elemental's residue,bottle of philosophical oil
+#
+Object the Devourers
+arch nunchacu_1,nunchacu_2
+chance 3
+diff 25
+exp 43000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred nunchacu,ice para-elemental's residue,bottle of mineral oil
+#
+Object Slay Troll
+arch sword,b_sword_1,b_sword_2,sword_2
+chance 5
+diff 10
+exp 13000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred long sword,small troll's heart,bottle of philosophical oil
+#
+Object Slay Troll
+arch b_ssword_1,b_ssword_2,shortsword,shortsword_2
+chance 5
+diff 10
+exp 13000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred shortsword,small troll's heart,bottle of philosophical oil
+#
+Object Slay Undead
+arch axe,axe_2,axe_3,axe_4,b_axe1,dhaxe2,shaxe1
+chance 5
+yield 1
+diff 6
+trans 1
+exp 8000
+skill smithery
+cauldron forge
+ingred axe,zombie's corpse,bottle of philosophical oil
+#
+Object Slay Undead
+arch shortsword_2,b_ssword_1,b_ssword_2,shortsword
+chance 5
+diff 5
+exp 7000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred shortsword,zombie's corpse,bottle of philosophical oil
+#
+# this ones just an upgrade - robbing it of possible god enchantments
+Object Slay Undead
+arch skullcleaver
+chance 5
+diff 30
+exp 50000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred Skullcleaver,vampire's heart,bottle of philosophical oil
+#
+Object Slay Beholder
+arch lspear
+chance 5
+diff 15
+exp 15000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred long spear,3 beholdereye,bottle of philosophical oil
+#
+Object Slay Beholder
+arch taifu_1
+chance 5
+diff 18
+exp 23000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred Taifu,3 beholdereye,bottle of philosophical oil
+#
+Object Slay Dragon
+arch mace,mace_2
+diff 20
+exp 40000
+chance 5
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred mace,3 dragon's steak,bottle of philosophical oil
+#
+# frostbrand and firebrand have only fire/cold attacks - so will do no damage
+# to the wrong kind of dragon. Again we rob potential god enchantments
+Object Slay Dragon
+arch firebrand
+chance 5
+diff 30
+exp 90000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred Firebrand,3 chinese dragon's steak,chinese dragon's heart,bottle of philosophical oil
+#
+Object Slay Dragon
+arch frostbrand
+chance 5
+diff 30
+exp 90000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred Frostbrand,3 dragon's steak,dragon's heart,bottle of philosophical oil
+#
+Object Glamdri
+arch sabre
+diff 10
+exp 12000
+chance 2
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred sabre,potion of resist magic,beholdereye,bottle of philosophical oil
+#
+Object Glamdri
+arch light_sword,b_lsword
+chance 2
+diff 11
+exp 13000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred light sword,potion of resist magic,beholdereye,bottle of philosophical oil
+#
+Object Sorig
+arch scimitar,b_scimitar
+chance 3
+diff 14
+exp 15000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred scimitar,lightning para-elemental's residue,bottle of philosophical oil
+#
+Object Sorig
+arch poleaxe
+chance 3
+diff 16
+exp 20000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred poleaxe,lightning para-elemental's residue,bottle of philosophical oil
+#
+Object Ruggilli
+arch large_morningstar
+chance 3
+diff 14
+exp 17000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred large morningstar,wyvern's steak,bottle of philosophical oil
+#
+Object Ruggilli
+arch trident
+chance 3
+diff 15
+exp 18000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred trident,wyvern's steak,bottle of philosophical oil
+#
+Object Paralysis
+arch dagger,b_dagger
+chance 6
+diff 8
+exp 8000
+trans 1
+yield 1
+skill smithery
+cauldron forge
+ingred dagger,dust of stasis,bottle of mineral oil
+#
+# -------------------
+# Amulets
+# -------------------
+#
+Object Shielding
+arch amulet
+chance 5
+yield 1
+diff 5
+exp 8000
+skill jeweler
+cauldron jeweler_bench
+ingred amulet,potion of aethereality,3 ruby of great value
+#
+Object Sustenance
+arch amulet
+chance 5
+diff 6
+exp 9000
+yield 1
+skill jeweler
+cauldron jeweler_bench
+ingred amulet,vampire's heart,diamond of great value
+#
+Object Empowerment
+arch amulet
+chance 3
+diff 7
+exp 10000
+yield 1
+skill jeweler
+cauldron jeweler_bench
+ingred amulet,magic power potion,3 sapphire of great value
+#
+Object Aethereality
+arch amulet
+chance 3
+diff 20
+exp 40000
+yield 1
+skill jeweler
+cauldron jeweler_bench
+ingred amulet of lifesaving,3 potion of aethereality,3 ruby of exceptional beauty
+#
+Object the Magi
+arch amulet
+chance 1
+yield 1
+diff 35
+exp 150000
+skill jeweler
+cauldron jeweler_bench
+ingred amulet of Empowerment,3 potion of intelligence,3 potion of power,3 potion of magic resistance,3 diamond of flawless beauty
+#
+Object Deflection
+arch amulet
+chance 1
+yield 1
+diff 35
+exp 150000
+skill jeweler
+cauldron jeweler_bench
+ingred amulet of Aethereality,block of true lead,amulet of lifesaving,3 emerald of flawless beauty
+#
+Object Free Action
+arch amulet
+chance 2
+diff 35
+exp 150000
+yield 1
+skill jeweler
+cauldron jeweler_bench
+ingred amulet of lifesaving,ring of Free Action,3 potion of resist paralysis,3 sapphire of exceptional beauty
+#
+Object Holiness
+arch amulet
+chance 3
+diff 20
+exp 40000
+yield 1
+skill jeweler
+cauldron jeweler_bench
+ingred amulet,2 potion of wisdom,holy symbol,30 pearl
+#
+# -------------------
+# Rings
+# -------------------
+#
+Object Thieves
+arch ring
+chance 3
+yield 1
+diff 15
+exp 25000
+skill jeweler
+cauldron jeweler_bench
+ingred ring,3 potion of dexterity,potion of speed,3 emerald of exceptional beauty
+#
+Object Combat
+arch ring
+chance 5
+diff 20
+exp 50000
+yield 1
+skill jeweler
+cauldron jeweler_bench
+ingred ring of Fighting,potion of constitution,3 sapphire of exceptional beauty
+#
+Object Strife
+arch ring
+chance 3
+diff 25
+exp 75000
+yield 1
+skill jeweler
+cauldron jeweler_bench
+ingred ring of Combat,potion of dexterity,potion of constitution,potion of strength,3 ruby of flawless beauty
+#
+Object Ice
+arch ring
+chance 5
+yield 1
+diff 15
+exp 25000
+skill jeweler
+cauldron jeweler_bench
+ingred ring,3 potion of cold resistance,chinese dragon's steak,3 sapphire of great value
+#
+Object Fire
+arch ring
+chance 5
+diff 15
+exp 25000
+yield 1
+skill jeweler
+cauldron jeweler_bench
+ingred ring,3 potion of fire resistance,dragon's steak,3 ruby of great value
+#
+Object Storm
+arch ring
+chance 5
+diff 15
+exp 25000
+yield 1
+skill jeweler
+cauldron jeweler_bench
+ingred ring,3 potion of shock resistance,electric dragon's steak,3 emerald of great value
+#
+Object Acid
+arch ring
+diff 16
+exp 27000
+chance 5
+yield 1
+skill jeweler
+cauldron jeweler_bench
+ingred ring,3 balm of aethereality,gaelotroll's liver,7 pearl
+#
+Object Magic
+arch ring
+chance 5
+diff 15
+exp 25000
+yield 1
+skill jeweler
+cauldron jeweler_bench
+ingred ring,potion of magic resistance,potion of power,3 diamond of great value
+#
+Object Ancient Magic
+arch ring
+chance 4
+diff 20
+exp 35000
+yield 1
+skill jeweler
+cauldron jeweler_bench
+ingred ring of Magic,potion of intelligence,lich dust,3 diamond of exceptional beauty
+#
+Object High Magic
+arch ring
+chance 2
+diff 25
+exp 45000
+yield 1
+skill jeweler
+cauldron jeweler_bench
+ingred ring of Ancient Magic,potion of intelligence,potion of power,Spectre's ectoplasm,3 diamond of flawless beauty
+#
+Object Mithrandir
+arch ring
+chance 1
+diff 25
+exp 40000
+yield 1
+skill jeweler
+cauldron jeweler_bench
+ingred ring of High Magic,3 potion of fire resistance,dragon's heart,3 ruby of flawless beauty
+#
+Object Beguilement
+arch ring
+chance 10
+diff 15
+exp 25000
+yield 1
+skill jeweler
+cauldron jeweler_bench
+ingred ring,potion of charisma,3 diamond of great value
+#
+Object the Dark Priest
+arch ring
+chance 3
+diff 15
+exp 25000
+yield 1
+skill jeweler
+cauldron jeweler_bench
+ingred ring,potion of wisdom,vampire's heart,3 ruby of great value
+#
+Object the Demon Priest
+arch ring
+chance 1
+diff 35
+exp 70000
+yield 1
+skill jeweler
+cauldron jeweler_bench
+ingred ring of the Dark Priest,potion of power,3 potion of fire resistance,3 ruby of flawless beauty
+#
+Object the Healer
+arch ring
+chance 5
+diff 20
+exp 35000
+yield 1
+skill jeweler
+cauldron jeweler_bench
+ingred ring,potion of wisdom,holy symbol,3 emerald of great value
+#
+Object the Paladin
+arch ring
+chance 5
+diff 20
+exp 35000
+yield 1
+skill jeweler
+cauldron jeweler_bench
+ingred ring,potion of wisdom,holy symbol,3 sapphire of great value
+#
+Object the Prelate
+arch ring
+chance 3
+diff 30
+exp 75000
+yield 1
+skill jeweler
+cauldron jeweler_bench
+ingred ring of the Healer,potion of wisdom,holy symbol of Turning,3 emerald of exceptional beauty
+#
+Object the Crusade
+arch ring
+chance 2
+diff 30
+exp 75000
+yield 1
+skill jeweler
+cauldron jeweler_bench
+ingred strange ring,potion of power,holy symbol of Great Virtue,3 emerald of exceptional beauty
+#
+Object Benevolence
+arch ring
+chance 1
+diff 30
+exp 75000
+yield 1
+skill jeweler
+cauldron jeweler_bench
+ingred ring,3 potion of magic resistance,potion of wisdom,holy symbol of Probity,3 emerald of flawless beauty
+#
+Object Halvor
+arch ring
+chance 4
+diff 10
+exp 15000
+yield 1
+skill jeweler
+cauldron jeweler_bench
+ingred ring,cunning gnome's corpse,3 sapphire of great value
+#
+Object Free Action
+arch ring
+chance 2
+diff 15
+exp 25000
+yield 1
+skill jeweler
+cauldron jeweler_bench
+ingred ring of Halvor,potion of resist confusion,3 sapphire of exceptional beauty
+#
+Object Life
+arch ring
+chance 4
+diff 14
+exp 23000
+yield 1
+skill jeweler
+cauldron jeweler_bench
+ingred strange ring,3 potion of recuperation,3 diamond of great value
+#
+Object Yordan
+arch ring
+chance 8
+diff 10
+exp 15000
+yield 1
+skill jeweler
+cauldron jeweler_bench
+ingred ring,3 potion of agility,3 diamond
+#
+Object Occidental Mages
+arch ring
+chance 7
+diff 5
+exp 8000
+yield 1
+skill jeweler
+cauldron jeweler_bench
+ingred ring,potion of Rainbow Wave,3 sapphire
+#
+# -------------------
+# Horns
+# -------------------
+#
+Object NONE
+arch horn_base
+chance 30
+diff 5
+exp 4000
+yield 1
+skill thaumaturgy
+cauldron thaumaturg_desk
+ingred quarterstaff,amethyst
+#
+Object Plenty
+arch horn2
+chance 15
+diff 20
+exp 20000
+yield 1
+skill thaumaturgy
+cauldron thaumaturg_desk
+ingred horn base,3 mushroom of Gourmet,3 waybread of Aelingas
+#
+Object Fire
+arch horn2
+chance 10
+diff 20
+exp 20000
+yield 1
+skill thaumaturgy
+cauldron thaumaturg_desk
+ingred horn base,3 dust of ignition
+#
+Object Frost
+arch horn2
+chance 10
+diff 20
+exp 20000
+yield 1
+skill thaumaturgy
+cauldron thaumaturg_desk
+ingred horn base,3 dust of frost
+#
+Object Eorlingas
+arch horn2
+chance 5
+diff 20
+exp 20000
+yield 1
+skill thaumaturgy
+cauldron thaumaturg_desk
+ingred horn base,3 dust of ignition,potion of mystic power
+#
+# -------------------
+# Talismans
+# -------------------
+#
+Object Fire
+arch talisman_pyromancy
+chance 5
+diff 25
+exp 35000
+yield 1
+skill thaumaturgy
+cauldron thaumaturg_desk
+ingred talisman of pyromancy,ring of Fire,dragon's heart
+#
+Object Frost
+arch talisman_evocation
+chance 5
+diff 25
+exp 35000
+yield 1
+skill thaumaturgy
+cauldron thaumaturg_desk
+ingred talisman of evocation,ring of Ice,chinese dragon's heart
+#
+Object Elements
+arch talisman_pyromancy
+chance 2
+diff 35
+exp 75000
+yield 1
+skill thaumaturgy
+cauldron thaumaturg_desk
+ingred talisman of Fire,talisman of Frost,3 electric dragon's steak,3 diamond of flawless beauty
+#
+Object Unified Mind
+arch talisman_sorcery
+chance 10
+diff 25
+exp 35000
+yield 1
+skill thaumaturgy
+cauldron thaumaturg_desk
+ingred talisman of sorcery,potion of intelligence,helmet of Xebinon
+#
+Object Creation
+arch talisman_evocation
+chance 3
+diff 25
+exp 35000
+yield 1
+skill thaumaturgy
+cauldron thaumaturg_desk
+ingred talisman of evocation,3 figurine of a clenched hand,3 balm of traveling
+#
+# -------------------
+# Holy Symbols
+# -------------------
+#
+# exp is maybe high, but demon's icor can't be stored, and messenger's head are rare,
+# so that should be ok
+# chance is 0 because this recipe is given as a quest reward
+Object NONE
+arch holy_symbol
+chance 0
+diff 7
+exp 20000
+yield 1
+skill thaumaturgy
+cauldron thaumaturg_desk
+ingred demon's icor,messenger's head
+#
+Object Probity
+arch holy_symbol
+chance 7
+diff 25
+exp 35000
+yield 1
+skill thaumaturgy
+cauldron thaumaturg_desk
+ingred holy symbol,balm of asbestos,balm of warmth,balm of insulation
+#
+Object Turning
+arch holy_symbol
+chance 10
+diff 25
+exp 35000
+yield 1
+skill thaumaturgy
+cauldron thaumaturg_desk
+ingred holy symbol,7 dust of repelling undead,bottle of philosophical oil
+#
+Object Calling
+arch holy_symbol
+chance 10
+diff 25
+exp 35000
+yield 1
+skill thaumaturgy
+cauldron thaumaturg_desk
+ingred holy symbol,figurine of stone,figurine of a great wave,figurine of a flame
+#
+Object The Dark Path
+arch holy_symbol
+chance 5
+diff 25
+exp 35000
+yield 1
+skill thaumaturgy
+cauldron thaumaturg_desk
+ingred holy symbol,10 arrow of Assassinating dragons,vampire's heart
+#
+Object Great Virtue
+arch holy_symbol
+chance 2
+diff 25
+exp 35000
+yield 1
+skill thaumaturgy
+cauldron thaumaturg_desk
+ingred holy symbol,figurine of a clenched hand,3 healing potion,3 dust of clairvoyance,2 potion of wisdom
+#
+# -------------------
+# Food
+# -------------------
+#
+Object Gourmet
+arch mushroom_1
+chance 40
+diff 5
+exp 2000
+yield 7
+skill woodsman
+cauldron stove
+ingred 7 mushroom,water of the wise
+failure_arch ashes
+failure_message Oops, you totally burn the mushrooms!
+#
+Object Magic
+arch mushroom_2
+chance 20
+diff 8
+exp 4000
+yield 7
+skill woodsman
+cauldron stove
+ingred 7 mushroom of Gourmet,potion of mystic power
+#
+Object Healing
+arch mushroom_3
+chance 20
+diff 8
+exp 4000
+yield 7
+skill woodsman
+cauldron stove
+ingred 7 mushroom of Gourmet,balm of first aid
+#
+Object Stamina
+arch food
+chance 30
+diff 5
+exp 2000
+yield 7
+skill woodsman
+cauldron stove
+ingred 7 food,potion of recuperation
+#
+Object Aelingas
+arch waybread
+chance 30
+diff 10
+exp 6000
+yield 7
+skill woodsman
+cauldron stove
+ingred 7 waybread,potion of heroism
+#
+Object Strength
+arch mushroom_2
+chance 30
+diff 10
+exp 7000
+yield 7
+skill woodsman
+cauldron stove
+ingred 7 mushroom of Gourmet,potion of strength
+#
+Object Quickness
+arch mushroom_3
+chance 30
+diff 12
+exp 8000
+yield 7
+skill woodsman
+cauldron stove
+ingred 7 mushroom of Gourmet,potion of agility
+#
+Object Heat Resistance
+arch mushroom_1
+chance 20
+diff 8
+exp 7000
+yield 7
+skill woodsman
+cauldron stove
+ingred 7 mushroom of Gourmet,balm of asbestos
+#
+Object Frost Resistance
+arch mushroom_2
+chance 20
+diff 8
+exp 7000
+yield 7
+skill woodsman
+cauldron stove
+ingred 7 mushroom of Gourmet,balm of warmth
+#
+Object Bravery
+arch mushroom_3
+chance 30
+diff 8
+exp 7000
+yield 7
+skill woodsman
+cauldron stove
+ingred 7 mushroom of Gourmet,dust of fright
+#
+Object Magic Resistance
+arch mushroom_3
+chance 20
+diff 8
+exp 7000
+yield 7
+skill woodsman
+cauldron stove
+ingred 7 mushroom of Gourmet,potion of resist magic
+#
+Object Life
+arch mushroom_3
+diff 8
+exp 7000
+chance 30
+yield 7
+skill woodsman
+cauldron stove
+ingred 7 mushroom of Gourmet,potion of resist draining
+#
+# Misc items that don't fit anywhere else
+Object NONE
+arch dice
+diff 5
+chance 10
+exp 1000
+yield 2
+skill jeweler
+cauldron jeweler_bench
+ingred 6 diamond,rock
+#
+# Item combinations
+Object NONE
+arch apple_half
+yield 2
+ingred apple
+chance 0
+combination 1
+tool slicingknife,b_slicingknife
+Object NONE
+arch apple_fourth
+yield 2
+ingred apple halve
+chance 0
+combination 1
+tool slicingknife,b_slicingknife
+Object NONE
+arch apple_eighth
+yield 2
+ingred apple fourth
+chance 0
+combination 1
+tool slicingknife,b_slicingknife
+#
+# gem combos
+Object NONE
+arch raw_diamond_great_value
+yield 1
+ingred 20 diamond
+chance 1
+skill thaumaturgy
+cauldron thaumaturg_desk
+diff 2
+exp 2000
+Object great value
+arch gem
+yield 1
+ingred raw diamond of great value
+chance 1
+skill jeweler
+cauldron jeweler_bench
+diff 2
+exp 2000
+
+Object NONE
+arch raw_diamond_exceptional_beauty
+yield 1
+ingred 20 diamond of great value
+chance 1
+skill thaumaturgy
+cauldron thaumaturg_desk
+diff 6
+exp 6000
+Object exceptional beauty
+arch gem
+yield 1
+ingred raw diamond of exceptional beauty
+chance 1
+skill jeweler
+cauldron jeweler_bench
+diff 6
+exp 6000
+
+Object NONE
+arch raw_diamond_flawless_beauty
+yield 1
+ingred 20 diamond of exceptional beauty
+chance 1
+skill thaumaturgy
+cauldron thaumaturg_desk
+diff 12
+exp 12000
+Object flawless beauty
+arch gem
+yield 1
+ingred raw diamond of flawless beauty
+chance 1
+skill jeweler
+cauldron jeweler_bench
+diff 12
+exp 12000
+
+Object NONE
+arch raw_ruby_great_value
+yield 1
+ingred 20 ruby
+chance 1
+skill thaumaturgy
+cauldron thaumaturg_desk
+diff 2
+exp 2000
+Object great value
+arch ruby
+yield 1
+ingred raw ruby of great value
+chance 1
+skill jeweler
+cauldron jeweler_bench
+diff 2
+exp 2000
+
+Object NONE
+arch raw_ruby_exceptional_beauty
+yield 1
+ingred 20 ruby of great value
+chance 1
+skill thaumaturgy
+cauldron thaumaturg_desk
+diff 6
+exp 6000
+Object exceptional beauty
+arch ruby
+yield 1
+ingred raw ruby of exceptional beauty
+chance 1
+skill jeweler
+cauldron jeweler_bench
+diff 6
+exp 6000
+
+Object NONE
+arch raw_ruby_flawless_beauty
+yield 1
+ingred 20 ruby of exceptional beauty
+chance 1
+skill thaumaturgy
+cauldron thaumaturg_desk
+diff 12
+exp 12000
+Object flawless beauty
+arch ruby
+yield 1
+ingred raw ruby of flawless beauty
+chance 1
+skill jeweler
+cauldron jeweler_bench
+diff 12
+exp 12000
+
+Object NONE
+arch raw_sapphire_great_value
+yield 1
+ingred 20 sapphire
+chance 1
+skill thaumaturgy
+cauldron thaumaturg_desk
+diff 2
+exp 2000
+Object great value
+arch sapphire
+yield 1
+ingred raw sapphire of great value
+chance 1
+skill jeweler
+cauldron jeweler_bench
+diff 2
+exp 2000
+
+Object NONE
+arch raw_sapphire_exceptional_beauty
+yield 1
+ingred 20 sapphire of great value
+chance 1
+skill thaumaturgy
+cauldron thaumaturg_desk
+diff 6
+exp 6000
+Object exceptional beauty
+arch sapphire
+yield 1
+ingred raw sapphire of exceptional beauty
+chance 1
+skill jeweler
+cauldron jeweler_bench
+diff 6
+exp 6000
+
+Object NONE
+arch raw_sapphire_flawless_beauty
+yield 1
+ingred 20 sapphire of exceptional beauty
+chance 1
+skill thaumaturgy
+cauldron thaumaturg_desk
+diff 12
+exp 12000
+Object flawless beauty
+arch sapphire
+yield 1
+ingred raw sapphire of flawless beauty
+chance 1
+skill jeweler
+cauldron jeweler_bench
+diff 12
+exp 12000
+
+Object NONE
+arch raw_emerald_great_value
+yield 1
+ingred 20 emerald
+chance 1
+skill thaumaturgy
+cauldron thaumaturg_desk
+diff 2
+exp 2000
+Object great value
+arch emerald
+yield 1
+ingred raw emerald of great value
+chance 1
+skill jeweler
+cauldron jeweler_bench
+diff 2
+exp 2000
+
+Object NONE
+arch raw_emerald_exceptional_beauty
+yield 1
+ingred 20 emerald of great value
+chance 1
+skill thaumaturgy
+cauldron thaumaturg_desk
+diff 6
+exp 6000
+Object exceptional beauty
+arch emerald
+yield 1
+ingred raw emerald of exceptional beauty
+chance 1
+skill jeweler
+cauldron jeweler_bench
+diff 6
+exp 6000
+
+Object NONE
+arch raw_emerald_flawless_beauty
+yield 1
+ingred 20 emerald of exceptional beauty
+chance 1
+skill thaumaturgy
+cauldron thaumaturg_desk
+diff 12
+exp 12000
+Object flawless beauty
+arch emerald
+yield 1
+ingred raw emerald of flawless beauty
+chance 1
+skill jeweler
+cauldron jeweler_bench
+diff 12
+exp 12000
+
+
+Object NONE
+arch raw_amethyst_great_value
+yield 1
+ingred 20 amethyst
+chance 1
+skill thaumaturgy
+cauldron thaumaturg_desk
+diff 2
+exp 2000
+Object great value
+arch amethyst
+yield 1
+ingred raw amethyst of great value
+chance 1
+skill jeweler
+cauldron jeweler_bench
+diff 2
+exp 2000
+
+Object NONE
+arch raw_amethyst_exceptional_beauty
+yield 1
+ingred 20 amethyst of great value
+chance 1
+skill thaumaturgy
+cauldron thaumaturg_desk
+diff 6
+exp 6000
+Object exceptional beauty
+arch amethyst
+yield 1
+ingred raw amethyst of exceptional beauty
+chance 1
+skill jeweler
+cauldron jeweler_bench
+diff 6
+exp 6000
+
+Object NONE
+arch raw_amethyst_flawless_beauty
+yield 1
+ingred 20 amethyst of exceptional beauty
+chance 1
+skill thaumaturgy
+cauldron thaumaturg_desk
+diff 12
+exp 12000
+Object flawless beauty
+arch amethyst
+yield 1
+ingred raw amethyst of flawless beauty
+chance 1
+skill jeweler
+cauldron jeweler_bench
+diff 12
+exp 12000

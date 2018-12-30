@@ -1,0 +1,71 @@
+Plugin animator file specs
+
+[Config]
+name= "anystring"
+victimtype=  player|object|any|byname
+victim= who|activator|who_owner|activator_owner|object's name
+unique= yes|no
+always_delete= yes|no
+delete_event_end= yes to have the event be removed when the animation end, no else
+parallel= yes|no
+paralyzed= yes|no
+time_representation= second|tick
+errors_allowed= yes|no
+verbose= yes|no
+animation= Animation
+invisible= yes|no
+wizard= yes|no
+[Animation]
+time command parameters
+#comment
+ #not a comment. wrong line!!
+time command parameters
+time command parameters
+.
+.
+.
+.
+
+
+
+commands available:
+
+command			parameters				description
+north								Moves in the specified direction
+north_east							Moves in the specified direction
+east								Moves in the specified direction
+south_east							Moves in the specified direction
+south								Moves in the specified direction
+south_west							Moves in the specified direction
+west								Moves in the specified direction
+north_west							Moves in the specified direction
+fire_north							Fire in the specified direction
+fire_north_east							Fire in the specified direction
+fire_east							Fire in the specified direction
+fire_south_east							Fire in the specified direction
+fire_south							Fire in the specified direction
+fire_south_west							Fire in the specified direction
+fire_west							Fire in the specified direction
+fire_north_west							Fire in the specified direction
+turn_north							Turn in the specified direction
+turn_north_east							Turn in the specified direction
+turn_east							Turn in the specified direction
+turn_south_east							Turn in the specified direction
+turn_south							Turn in the specified direction
+turn_south_west							Turn in the specified direction
+turn_west							Turn in the specified direction
+turn_north_west							Turn in the specified direction
+say			saywhat: string				Says saywhat (behaviour depend on victim being object or player
+apply								Apply first applyable object on ground
+apply_object		object_name				Apply object object_name (ground checked first then inventory)
+drop_object		object_name				Drop object object_name from inventory
+pickup								Pickup first object on ground
+pickup_object		object_name				Pickup object_name from ground
+ghosted			yes or no				Player leave its corpse at the current location and become a soul.
+								Usefull for camera effects. Puts the invisible and wizards flag to yes
+invisible		yes or no				Show or hide player
+wizard			yes or no				Can or not walk through walls and monster (dungeon master)
+teleport		x y mapname				Teleport object ot mapname at position x,y
+notice			noticewhat				Put a beautifull text (noticewhat) in Navy in the console of player
+moveto                  x y                                     Will make the object move towards the specified point in its map
+trigger     connection      Trigger the specified connection on the map the victim is

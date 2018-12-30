@@ -1,0 +1,9 @@
+#not world readable because being able to read these files could give
+#players an unfair advantage
+crossfire-server: non-standard-dir-perm var/log/crossfire/ 0775 != 0755
+crossfire-server: non-standard-dir-perm var/games/crossfire/ 0775 != 0755
+crossfire-server: non-standard-dir-perm var/games/crossfire/tmp/ 0770 != 0755
+crossfire-server: non-standard-dir-perm var/games/crossfire/unique-items/ 0770 != 0755
+crossfire-server: non-standard-file-perm var/games/crossfire/highscore 0664 != 0644
+crossfire-server: non-standard-dir-perm var/games/crossfire/players/ 0770 != 0755
+

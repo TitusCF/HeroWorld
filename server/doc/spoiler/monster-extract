@@ -1,0 +1,60 @@
+BEGIN {
+	# special is a list of what special things we should look for.
+	# The value of the array is how many commas we should skip.
+	special["attacks"] = 1;
+	special["protected"] = 1;
+	special["immune"] = 1;
+	special["vulnerable"] = 1;
+	special["spell abilities"] = 1;
+}
+
+{
+
+# Old stuff:
+#	if ($2 > 25000)	z =  "Ordeal";
+# 	else if ($2 > 10000)	z =  "Mighty";
+# 	else if ($2 > 5000)	z =  "Powerful";
+#	else if ($2 > 1000)	z =  "Dangerous";
+#	else if ($2 > 400)	z =  "Tough";
+#	else if ($2 > 200)	z =  "Tricky";
+#	else if ($2 > 100)	z =  "Hard";
+#	else if ($2 > 50)	z =  "Easy";
+#	else if ($2 > 25)	z =  "Simple";
+#       else if ($2 > 14)	z =  "Weak";
+#	else if ($2 > 8)	z =  "Feeble";
+#	else			z =  "Defenseless";
+
+# Expl:
+# name 		- ..
+# comma 	- Print a comma or not
+# antall 	- number of (sub)fields in the 'Special' field; antall(Nor) <-> "number of".
+# i	 	- counter. Should start as values 2.
+
+	name = capitalize($1);
+	sub("_", " ", name);
+	comma = 0;
+	# The split allows "(", ")(", ", ", ":", ":)(" etc. as delimiters
+	antall = split($5, field, "([():,][():,]*) *");
+
+       	printf("%s &~~%s~~ &%s &%s &%s &%s &",
+		name, $6, $7 ? "~~" $7 "~~" : "", $2, $3, $4);
+       	for (i = 2; i < antall; i++) {
+		if (field[i] in special) {
+			if (comma > 0)
+				printf("\\newline ");
+			printf("%s: ", capitalize(field[i]));
+			comma = 1 - special[field[i]];
+		} else {
+	       		if (comma > 0)
+				printf(", ");
+			else
+				++comma;
+	       		printf(i == 2 ? capitalize(field[i]) : field[i]);
+		}
+       	}
+        printf("\\\\\n");
+}
+
+function capitalize(str) {
+	return toupper(substr(str, 1, 1)) substr(str, 2);
+}

@@ -1,0 +1,35 @@
+/**
+@page page_i18n Internationalisation and localisation
+
+i18n's routines are located in the @ref languages.c file.
+
+To use i18n in the server code, instead of putting strings, use
+
+<code>
+i18n(who, "This is a translatable message.");
+</code>
+
+with <code>who</code> the player's <code>object</code> you wish to translate for.
+
+The string can be anything you want, and will get replaced by the localised version. They must not contain a <code>|</code> character. If the string doesn't exist for the language, the code will be returned.
+
+The recommanded strategy for translation is:
+- use English sentences anywhere they are required, as usual but with the <code>i18n</code> call
+- translate them using the language files, but don't write the English (<code>messages.en</code> file) version
+- if the sentence contains a <code>|</code>, then use an arbitrary code, and do put it in the <code>messages.en</code> file
+
+Language files are located in lib/i18n/messages.xx files, with xx the language's code, "en" or "fr" for instance.
+
+They are installed as part of <code>make install</code>.
+
+The format is straightforward:
+- any line starting with <code>#</code> is a comment
+- a line is in the format <code>sentence code|localised version</code>
+- if the line is simply <code>sentence code</code>, without any <code>|</code>, the localised version is the code
+- newlines can be written as <code>\\n</code>
+- there must be a line with the code <code>LN</code>, which contains the native language's name
+- lines can contain printf format specifiers, it is your responsability to give the correct arguments
+
+Warning: currently the order of arguments is fixed, as defined by the print call (English version if you followed this guide) in the code.
+
+*/

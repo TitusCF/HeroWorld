@@ -1,0 +1,132 @@
+/**
+@defgroup page_treasure_list Treasure lists
+
+@section sec_tl_intro Introduction
+
+Treasure lists specify what items an @ref page_object "object" can have when it is first created during a map initialisation.
+
+Treasure lists contain items with a certain probability of apparition. When the list is instancied, so that for instance a monster can receive its items, the items are randomly chosen based on this probability, and inserted at the desired location.
+
+Lists can reference other lists to group commony-used definitions.
+
+The list format enables a yes-no structure, so that the presence of an item implies the presence of another (so arrows are given with a bow) or the absence of an item enables another item to be present (so a bow or a crossbow can be given, but not both).
+
+Each item in the list has a \e chance factor, that determines its probability to be generated.
+
+Treasure lists exist in two variations:
+- a \e treasure list will try to insert all its items in the object. Each item has a probability \e chance % to be generated.
+- a \e treasureone list will only select a random item to be inserted. An item has a probability of \e chance on (sum of all \e chance for the items in the list) to be generated
+
+@section sec_tl_files Treasure files
+
+Treasures are defined in two places:
+- in the lib/treasures file
+- in individual .trs files in the archetypes tree
+
+During the @ref page_collect "collect process", all .trs files will be aggregated to the lib/treasures files to produce the final treasures files.
+
+
+@section sec_tl_gen Treasure generation
+
+When a treasure must be generated, a \e magic level is used to determine what items are eligible for generation. An item on a treasure list can only be generated if its \e magic field is less then the magic level specified.
+
+Some flags can alter the generating behaviour. In particular, ::GT_ONLY_GOOD will forbid the generation of cursed or damned items.
+
+A maximum of 100 tries will be done to generate an item, after which the generation is considered to have failed.
+
+@section sec_tl_format Treasure file format
+
+The format is a line by line description of the treasure, and its options. The text before the first space is the field, remaining of the line is the value.
+
+A treasure list definition starts by a \e treasure, \e treasureone, \e yes, \e no or \e more parameter. If \e treasure or \e treasureone is used, the part on the right of the first space is the treasure list name. The definition must end by a \e end line.
+
+The line can start by spaces that will be ignored. A line starting by # is a comment and will be totally ignored.
+
+The following fields are available:
+- treasure: starts a new treasure list, from which all items may be generated
+- treasureone: starts a new treasure list, from which only one item may be generated
+- arch: archetype name of the item to generate
+- list: treasure list name to reference
+- change_name: what name to give to the generated item
+- change_title: what title to give to the generated item
+- change_slaying: what slaying to give to the generated item
+- chance: probability of the item appearing, in % for a \e treasure list or relative to the sum of all \e chance for \e treasureone. Defaults to 100
+- nrof: maximum number of items to generate. Omitted means archetype default
+- magic: minimum magic required for this item to be generated
+- yes: starts a new treasure that will be generated if the current item is generated
+- no: starts a new treasure that will be generated if the current item is not generated
+- end: ends the current treasure definition
+- more: starts a new treasure that will be in the same list as the current one
+
+Either \e arch or \e list must be set.
+
+@section sec_tl_example_1 Simple example
+
+\verbatim
+
+treasure rod
+ arch rod_light
+ chance 2
+ no
+  arch rod_heavy
+  chance 1
+  end
+end
+\endverbatim
+
+This treasure means:
+- there's a probability of 2% to give a \e rod_light
+- if no \e rod_light is given, then there is a probability of 1% to give a \e rod_heavy
+
+@section sec_tl_example_2 Complex example
+
+\verbatim
+
+ treasure poor_old
+   arch bow
+   chance 5
+   yes
+    arch arrow
+     nrof 6
+     end
+   more
+   arch b_ssword_2
+   magic 1
+   chance 5
+   no
+     arch b_ssword_1
+     chance 10
+     no
+       arch b_dagger
+       chance 15
+       no
+         arch stoneaxe
+        chance 20
+        no
+          arch club
+          chance 25
+          end
+        end
+      end
+    end
+  more
+  arch b_small_shield
+  chance 4
+  more
+  arch silvercoin
+  nrof 8
+  chance 10
+  end
+
+\endverbatim
+
+Given the magic of 1 or more, this list has:
+- a 5% chance of generating a bow and up to 6 arrows
+- a 5% chance of generating a b_ssword_2
+- a 95% * 10% chance of generating a b_ssword_1
+- a 95% * 90% * 15% chance of generating a b_dagger
+- (and so on)
+- a 4% chance of generating a b_small_shield
+- a 10% chance of generating silver coins, from 1 to 8
+
+*/

@@ -1,0 +1,1420 @@
+This documentation is not uptodate. Latest version is in the python.ps file,
+or available online from http://wiki.metalforge.net/doku.php/cfpython
+
+
+
+THE PYTHON PLUGIN, VERSION 2.0
+===============================
+
+What is the Python Plugin ?
+---------------------------
+It is a plugin part of the Crossfire server that allows map-makers to create
+object behaviors using Python scripts instead of having to hardcode them in C.
+
+
+Converting from CFPython 0.x and 1.0
+------------------------------------
+A lot of things have changed which hopefully make your Python coder's life a
+little more comfortable.
+
+1. The library name is now "Crossfire", instead of the previous "CFPython". No,
+   that's not to annoy you without purpose. It will force you to think about
+   reading your old Python code and make the necessary conversions.
+2. Objects and Maps are now wrapped into Python objects. It means that instead
+   of writing "CFPython.Teleport(object,map,x,y)", you'll now have to write
+   "object.Teleport(map,x,y)". It is somewhat more logical and contributes to
+   cleaner Python code.
+3. The plugin event hook mechanism is now based on event objects contained in
+   WhoAmI's inventory.
+
+To make the transition as easy as possible, most functions of CFPython were
+converted using the following rules:
+- If the function was a getter/setter of an object or map attribute, it is now
+  available as a Python object attribute.
+  Examples: print CFPython.GetDamage(object) --> print object.Damage
+            CFPython.SetDamage(object, value) --> object.Damage = value
+- If the function was an action performed by an object/a map, or related to a
+  specific object/map, it is now available as a Python object method.
+  Examples: CFPython.Take(object, what) --> object.Take(what)
+            CFPython.CheckMap(what, map, x, y) --> map.Check(what,x,y)
+
+Only a few methods/attributes have changed names (this is the case for the seven
+base attributes STR,DEX,CON,INT,WIS,POW,CHA for example).
+
+Note that although it may seem that converting your old scripts to the new
+format will be a huge job, it is rather straightforward in most cases. It only
+took me an afternoon to convert and test all the scripts supplied with the
+default map set, and I wasn't even their original author.
+
+
+How do I hook a script to an object?
+------------------------------------
+
+There are special archetypes named event_xxx available. You need to put those in
+the inventory of the objects to which you want to connect your script.
+
+Some fields of the event_xxx archetypes have a special meaning:
+
+- name: all parameters you want to pass to the scripts should go there;
+- title: this is the plugin identifier. For the Python plugin, it is "Python"
+         (without the quotes);
+- slaying: the name of the script file to execute when the event is triggered.
+        Note that this name is relative to the map base directory.
+
+Example:
+
+arch event_apply
+name parms
+title Python
+slaying test.py
+end
+
+The event will be triggered when the container object is applied and will run
+share/crossfire/maps/test.py, passing "parms" as a parameter string to the
+script.
+
+You of course need to write some Python code too... You do as usual, but
+remember to add an "import Crossfire" to make all crossfire-specific functions
+available in your script.
+
+
+How do I hook a global event?
+-----------------------------
+
+Each global event is bound to a specific Python script file. Those files are
+located in the python/events/ subdirectory of your crossfire map directory.
+They have specific names, too: python_xxx.py, where xxx is the name of the
+global event you want to intercept. For example, a script that should be run
+each time a player logs in ("login" event) should be named python_login.py.
+
+
+What functions are currently supported?
+---------------------------------------
+
+A complete list of those functions is given below.
+
+Last count (2005-03-06) result: 217 functions (not including attack type/event
+type wrapper functions). This of course does not include all the Python
+functions, just the crossfire-specific ones.
+
+In the following, I use the following type naming convention:
+int   : An integer.
+long  : A long.
+float : A float.
+object: A crossfire object. (In fact, it is a long).
+map   : A crossfire map. (In fact, it is a long).
+string: A character string.
+
+1. Global Methods
++++++++++++++++++
+
+Those are provided by the Crossfire library directly, so to call them, you have
+to write something like: Crossfire.Method().
+
+ConfigDirectory()    (1.x name: GetConfigurationDirectory())
+  Return the name of the base directory containing Crossfire configuration
+  files.
+  Returns the directory name as a string.
+
+DirectionN()
+  Wrapper for the North direction.
+  Return value: an integer representing the direction.
+
+DirectionNE()
+  Wrapper for the North-East direction.
+  Return value: an integer representing the direction.
+
+DirectionE()
+  Wrapper for the East direction.
+  Return value: an integer representing the direction.
+
+DirectionSE()
+  Wrapper for the South-East direction.
+  Return value: an integer representing the direction.
+
+DirectionS()
+  Wrapper for the South direction.
+  Return value: an integer representing the direction.
+
+DirectionSW()
+  Wrapper for the South-West direction.
+  Return value: an integer representing the direction.
+
+DirectionW()
+  Wrapper for the West direction.
+  Return value: an integer representing the direction.
+
+DirectionNW()
+  Wrapper for the North-West direction.
+  Return value: an integer representing the direction.
+
+2. Object-Specific Methods
+++++++++++++++++++++++++++
+
+Those are provided by the Python object wrapper.
+
+ActivateRune(object activator)
+  Trigger the rune. Note that both the rune and its activator must be in the
+  same or in adjacent tiles of the same map.
+  Does not return a value.
+
+  Example:
+    who = Crossfire.WhoIsActivator()
+    rune = who.Map.CreateObject("rune_burning_hands", who.X, who.Y)
+    rune.ActivateRune(who)
+
+Apply(object what, int flags)
+  Make the object apply an object 'what'. The applying object can be a
+  player or a monster. The applied object need not be on the same tile as
+  the applier. 'flags' specifies how to apply the object:
+   - 0=toggle (apply/unapply) the object
+   - 1=always apply the object
+   - 2=always unapply the object
+  Additionally, you can specify some modifier bits:
+   - 16=do not merge an unapplied object with other objects
+   - 32=unapply the item even if it is cursed
+   - 64=print the object name but do not apply/unapply it
+
+  Return value: integer denoting the result:
+   - 0=player or monster can't apply an object of that type
+   - 1=object has been applied, or there was an error applying the object
+   - 2=objects of that type can't be applied if not in inventory
+
+  Example:
+    who = Crossfire.WhoIsActivator()
+
+# create and apply a trigger object
+    trigger = who.Map.CreateObject("trigger", who.X, who.Y)
+    result = who.Apply(trigger, 0); # returns 1
+
+# create and apply an amulet
+    food = who.Map.CreateObject("amulet of sustenance", who.X, who.Y)
+    result = who.Apply(food, 0); # returns 2
+
+# create and apply/unapply a cursed shield
+    shield = who.CreateObject("small shield")
+    shield.Cursed = 1;
+    result = who.Apply(shield, 1); # returns 1
+    result = who.Apply(shield, 2); # returns 1 (it does not unapply the item)
+    result = who.Apply(shield, 2|32); # returns 1
+
+LearnSpell(object spell)   (1.x name: AcquireSpell)
+  Learn the spell identified by a spell object.
+  Does not return a value.
+
+  Example:
+    who = Crossfire.WhoIsActivator()
+    spell = Crossfire.CreateObjectByName("spell_large_fireball")
+    who.LearnSpell(spell)
+    spell.Remove()
+
+Say(message text)
+  Say 'text'.
+  Does not return a value.
+
+3. Object-Specific Attributes
++++++++++++++++++++++++++++++
+
+CanCastSpell
+  Test if the object can cast spells.
+  Return value: test result as an integer - 0 if and only if false.
+
+CanPassThru
+  Test if the object has the 'pass through' ability.
+  Return value: test result as an integer - 0 if and only if false.
+
+CanPickUp
+  Test if the object can pick up stuff.
+  Return value: test result as an integer - 0 if and only if false.
+
+CanRoll
+  Test if the object can roll.
+  Return value: test result as an integer - 0 if and only if false.
+
+CanSeeInDark
+  Test if object has got infravision capabilities.
+  Return value: test result as an integer - 0 if and only if false.
+
+CanSeeInvisible
+  Test if the object can see invisible things.
+  Return value: test result as an integer - 0 if and only if false.
+
+CanUseArmour
+  Test if the object can wear armor.
+  Return value: test result as an integer - 0 if and only if false.
+
+CanUseBow
+  Test if the object can use a bow.
+  Return value: test result as an integer - 0 if and only if false.
+
+CanUseHorn
+  Test if the object can use a horn (and other musical instruments).
+  Return value: test result as an integer - 0 if and only if false.
+
+CanUseRing
+  Test if the object can use rings.
+  Return value: test result as an integer - 0 if and only if false.
+
+CanUseRod
+  Test if the object can use magical rods.
+  Return value: test result as an integer - 0 if and only if false.
+
+CanUseScroll
+  Test if the object can read scrolls.
+  Return value: test result as an integer - 0 if and only if false.
+
+CanUseSkill
+  Test if the object can use skills.
+  Return value: test result as an integer - 0 if and only if false.
+
+CanUseWand
+  Test if the object can use a magical wand.
+  Return value: test result as an integer - 0 if and only if false.
+
+CanUseWeapon
+  Test if the object can use a weapon.
+  Return value: test result as an integer - 0 if and only if false.
+
+
+4. Map-Specific Methods
++++++++++++++++++++++++
+
+Those are provided by the Python map wrapper.
+
+5. Map-Specific Attributes
+++++++++++++++++++++++++++
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+TODO: Finish converting the 1.x docs.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+A
+AttackTypeXxx()
+  Wrapper for attack type Xxx. Possible values for Xxx are: Acid Blind
+  Cancellation Chaos Cold Confusion Counterspell Death Depletion Disease Drain
+  Electricity Fear Fire Ghosthit Godpower HolyWord LifeStealing Magic Paralyze
+  Physical Poison Slow TurnUndead Weaponmagic.
+  Return value: an integer representing the attack type.
+
+B
+BlocksView(object obj)
+  Check if 'obj' can block the line-of-sight.
+  Return value: test result as in integer - 0 if and only if false.
+
+C
+
+CastAbility(object who, object caster, string spell, int direction, string
+  options)
+  Make the object 'caster' cast a 'spell'. 'who' is the owner of the casting
+  object; 'who' and 'caster' may be the same item. The spell is identified by
+  the spell name and cast into the given direction. 'options' can hold some
+  options.
+  Does not return a value.
+
+  Note: to cast a spell by a spell object, use CastSpell().
+
+  Example:
+    who = CFPython.WhoIsActivator()
+    caster = CFPython.CreateObjectInside("horn of Fire", who)
+    CFPython.CastAbility(who, caster, "spell_firebolt", CFPython.DirectionE(), "")
+
+  Example:
+    who = CFPython.WhoIsActivator()
+    CFPython.CastAbility(who, who, "spell_create_food", 0, "booze")
+
+CastSpell(object who, object spell, int direction, string options)
+
+  Make 'who' cast a spell, identified by a spell object, into one direction.
+  'options' can hold some options.
+  Does not return a value.
+
+  Note: this function is similar to CastAbility() except that a spell object
+  (instead of a spell name) is used and that 'caster' is set to 'who'.
+
+  Note: the spell will be cast even if the 'who' has not sufficient spell
+  points; in fact, 'who' may end with negative spell points.
+
+  Example:
+    # make the activator cast a large fireball (if he knows that spell)
+    who = CFPython.WhoIsActivator()
+    spell = CFPython.DoKnowSpell(who, "large fireball")
+    if spell: CFPython.CastSpell(who, spell, CFPython.DirectionSE(), "")
+
+CheckArchInventory(object who, string arch_name)
+  Check if 'who' has an object with the archetype 'arch_name' in his inventory.
+  Return value: the first matching object or 0 if the archetype was not found.
+
+  Example:
+    who = CFPython.WhoIsActivator()
+    obj = CFPython.CheckArchInventory(who, 'key2')
+    if obj: CFPython.Write(CFPython.GetName(obj), who)
+
+CheckInventory(object who, string name)
+  Check if 'who' has an object named 'name' in his inventory. It first checks
+  for any item with a matching archetype name, then for an object with a name
+  beginning with 'name'.
+  Return value: the matching object or 0 if no object was found.
+
+CheckInvisibleObjectInside(object who, string id)
+  Check for the existence of an force object with a slaying field 'id' inside
+  'who'.
+  Return value: The force object found or 0.
+
+CheckMap(string what, map map, (int x, int y))
+  Check for an item with the archetype name 'what' in a map at a given
+  position. The function works for tiled maps.
+  Return value: The object found or 0.
+
+CheckTrigger(object trigger, object what)
+  Try to trigger an object 'trigger' by 'what'. The object 'what' may be
+  destroyed. (For example if 'trigger' is an altar.)
+  Does not return a value.
+
+  Example:
+    # create and trigger an altar
+    altar = CFPython.CreateObject("altar_trigger", (0, 0))
+    food = CFPython.CreateObject("food", (1, 0))
+    CFPython.SetQuantity(food, 5)
+    CFPython.CheckTrigger(altar, food)
+
+CostFlagXxx()
+  Wrapper for flags to use as the third parameter of GetObjectCost(). You must
+  always choose one of FBuy, FSell, or FTrue. You may add any other flags as
+  well. Possible Values for Xxx are:
+   - FBuy: item value for a player buying the item
+   - FSell: item value for a player selling the item
+   - FTrue: true value of the item
+   - FNoBargain: disable modifications due to bargaining skill
+   - FIdentified: pretend the item as identified
+   - FNotCursed: pretend the item as not cursed
+  Return value: integer integer representing the flag.
+
+CreateInvisibleObjectInside(object where, string name)
+  Create a force object with a slaying field of 'name'. The object is placed in
+  the inventory of 'where'.
+  Return value: the created force object.
+
+  Note: The statement "obj = CFPython.CreateInvisibleObjectInside(who, 'slay')"
+  is basically the same as:
+    obj = CFPython.CreateObjectInside('force', who)
+    CFPython.SetSlaying(obj, 'slay')
+    CFPython.SetSpeed(obj, 0)
+
+CreateObject(string name, (int x, int y)[, string map])
+  Create an object from the archetype 'name', or with the name 'name'. Insert
+  it at position (x,y) in the map. If map is omitted, it defaults to
+  GetMap(WhoAmI()).
+  Return value: the created object. Note that the returned object may have
+  nrof>1 if the new item has been merged with other objects.
+
+  Note: Not all types of objects can be created; for example, objects of type
+  PLAYER will crash the server.
+
+  Note: Not all kinds of objects are created correctly; for example, currently
+  a "horn of Fire" cannot be created: it creates a working horn but it is blue
+  with message "Putting this shell to you ear, you hear a strange and haunting
+  melody" and it is god-given.
+
+  Note: This function does not work correctly if the object contains a
+  "randomitems" field in the archetype.
+
+CreateObjectInside(string name, object where)
+  Create an object from the archetype 'name', or with the name 'name'. Insert
+  it into the inventory of 'where'.
+  Return value: the created object
+
+  Note: see CreateObject()
+
+  Examples:
+    CFPython.CreateObjectInside("stylus", CFPython.WhoAmI()) # archetype name
+    CFPython.CreateObjectInside("writing pen", CFPython.WhoAmI()) # object name
+    CFPython.CreateObjectInside("levitation boots of mobility", CFPython.WhoAmI()) # artifact object
+
+D
+DecreaseObjectNr(object ob, int nrof)
+  Remove the given number of items from ob. If nrof is equal or more
+  than the items left in ob, ob is removed.
+  Return value: the object ob if some items are still remaining or 0 if all
+  objects are removed.
+
+DoKnowSpell(object who, string spell)
+  Check if 'who' knows the spell by the name of 'spell'.
+  Returns the spell object if 'who' knows the spell or 0 if not.
+
+  Example: see CastSpell()
+
+Drop(object who, string name)
+  Let 'who' drop the items named 'name'.
+  Does not return a value.
+
+E
+EventXxx()
+  Wrapper for event type Xxx. Possible values are: Apply Attack Close Death
+  Drop Pickup Say Stop Throw Time Timer Trigger.
+  Return value: an integer representing the event type.
+
+F
+FindPlayer(string name)
+  Check for a player with the given name. Note: the comparison is
+  case-sensitive and does not allow for partial matches.
+  Return value: the player object or 0 if not found.
+
+FixObject(object who)
+  Update all abilities granted by applied objects in the inventory of the
+  given object. This functions starts from base values (archetype or player
+  object) and then adjusts them according to what the object has equipped.
+  Does not return a value.
+
+ForgetSpell(object who, string spell)
+  Cause who to forget the spell named 'spell'.  who must be a player.
+  Does not return a value.
+
+  Example:
+    who = CFPython.WhoIsActivator()
+    CFPython.ForgetSpell(who, "large fireball")
+
+G
+GetAC(object who)
+  Get the Armor Class coefficient associated with the given object.
+  Returns the armor class coefficient as an integer.
+
+GetArchType(object who)
+  Get the archtype name of an object.
+  Returns the archtype as a string.
+
+GetAttackType(object who)
+  Determine the attack type of an object.
+  Returns the attack type as an integer.
+
+GetCharisma(object who)
+  Get the Charisma value of the given object.
+  Returns the charisma value as an integer.
+
+GetConstitution(object who)
+  Get the Constitution value of the given object.
+  Returns the constitution value as an integer.
+
+GetDamage(object who)
+  Get the amount of damage associated with the given object.
+  Returns the damage value as an integer.
+
+GetDataDirectory()
+  Return the name of the base directory containing the Crossfire read only data
+  files.
+  Returns the directory name as a string.
+
+GetDexterity(object who)
+  Get the Dexterity value of the given object.
+  Returns the dexterity value as an integer.
+
+GetDirection(object who)
+  Determine the direction an turnable object 'who' is currently moving. Use
+  IsTurnable(who) to determine if an object is turnable.
+  Returns the direction as an integer.
+
+GetEventHandler(object who, int event)
+  Get the event handler of 'who' for the event number 'event'. The parameter
+  'event' should be a value returned by EventXxx().
+  Returns the event handler name as a string or no object if the handler is not
+  used.
+
+GetEventOptions(object who, int event)
+  Get the event options of 'who' for the event number 'event'. The parameter
+  'event' should be a value returned by EventXxx().
+  Returns the event options as a string or no object if the handler is not
+  used.
+
+GetEventPlugin(object who, int event)
+  Get the event plugin name of 'who' for the event number 'event'. The
+  parameter 'event' should be a value returned by EventXxx().
+  Returns the event options as a string or no object if the handler is not
+  used.
+
+GetExperience(object who)
+  Get the amount of experience associated with the object.
+  Returns the event options as a long.
+
+GetFacing(object who)
+  Determine the direction an turnable object 'who' is currently facing. It
+  is similar to GetDirection except it works for non-moving objects too. See
+  GetDirection for details.
+  Returns the direction as an integer.
+
+GetFirstObjectOnSquare(map map, int x, int y)
+  Get the first object at position (x,y) in the map 'map'. Use
+  GetPreviousObject() to find the next item(s).
+  Returns the object or 0 if the position is empty.
+
+GetFood(object who)
+  Get the food level of the given object.
+  Returns the food level as an integer.
+
+GetGod(object who)
+  Get the name of the god associated with the given object. Usually, this will
+  be the god 'who' is worshipping.
+  Return value: the god name as a string or no object if 'who' has no god.
+
+GetGrace(object obj)
+  Get the grace amount of the given object.
+  Returns the grace amount as an integer.
+
+GetHP(object who)
+  Get the amount of Hit Points associated with the given object.
+  Returns the amount of hit points as an integer.
+
+GetHumidity(int x, int y, map map)
+  Get the humidity level of a given square of a map.
+  Returns the humidity level as an integer.
+
+  Remark: not implemented. Always returns zero.
+
+GetIntelligence(object who)
+  Get the Intelligence value of the given object.
+  Returns the intelligence value as an integer.
+
+GetInternalName(object who)
+  Get the name of 'who' without any modifications.
+  Returns the object name as a string.
+
+GetInventory(object who)
+  Get the first inventory object of 'who'. Use GetNextObject() to find the next
+  inventory objects.
+  Returns the object or 0 if the inventory is empty.
+
+GetIP(object player)
+  Get the ip address of 'player'. The given object should be a player object.
+  Returns the ip address as a string or no value if the object is not a player
+  object.
+
+GetLastGrace(object who)
+  Get the last_grace parameter value associated with the given object.
+  Returns the last_grace value as an integer.
+
+GetLastSP(object who)
+  Get the last_sp parameter value associated with the given object.
+  Returns the last_sp value as an integer.
+
+GetLevel(object who)
+  Get the level of a given object.
+  Returns the level as an integer.
+
+GetLocalDirectory()
+  Return the name of the base directory containing the Crossfire read-write
+  data files.
+  Returns the directory name as a string.
+
+GetMap(object who)
+  Determine the map the object 'who' is currently in.
+  Returns the map as a map or 0 if the items is not part of a map.
+
+GetMapDirectory()
+  Return the name of the base directory containing the Crossfire maps. You need
+  to concatenate the result with the value returned by GetDataDirectory() to
+  get an absolute path.
+  Returns the directory as a string.
+
+GetMapHeight(map map)
+  Get the height (the number of tiles) of a map.
+  Returns the height as an integer.
+
+GetMapObject()
+  This function should not be used anymore. It always throws an exception.
+
+GetMapPath(map map)
+  Get the path name of the map.
+  Returns the path name as a string.
+
+GetMapWidth(map map)
+  Get the width (the number of tiles) of a map.
+  Returns the width as an integer.
+
+GetMaxHP(object who)
+  Get the maximum amount of Hit Points the given object can get.
+  Returns the amount of hit points as an integer.
+
+GetMaxSP(object who)
+  Get the maximum amount of mana the given object can get.
+  Returns the maximum amount of mana as an integer.
+
+GetMessage(object obj)
+  Get the message contained in the specified object. The message is what
+  appears inside msg...endmsg tags.
+  Returns the message as a string.
+
+GetName(object who)
+  Get the 'clear name' of the given object.
+  Returns the name as a string.
+
+GetNextObject(object obj)
+  Get the next object below 'obj'.
+  Returns the next object or 0 if 'obj' is the last object.
+
+GetObjectAt(map map, int x, int y)
+  Get the first object at position (x,y) in the map.
+  Returns the object or 0 if the position is empty.
+
+GetObjectCost(object who, object obj, int type)
+  Determine the cost of an object 'obj' if 'who' would buy or sell it. The
+  parameter 'type' should be one or more values returned by CostFlagXxx().
+  Returns the cost in silver coins as an integer.
+
+GetObjectMoney(object who)
+  Determine how much money 'who' is carrying, including what is in containers.
+  Returns the amount in silver coins as an integer.
+
+GetPlayerDirectory()
+  Return the name of the base directory containing the Crossfire players files.
+  You need to concatenate the result with the value returned by
+  GetLocalDirectory() to get an absolute path.
+  Returns the directory as a string.
+
+GetPower(object who)
+  Get the Power value of the given object.
+  Returns the power value as an integer.
+
+GetPressure(int x, int y, map map)
+  Get the humidity level of a given square of a map.
+  Returns the humidity level as an integer.
+
+  Remark: not implemented. Always returns zero.
+
+GetPreviousObject(object obj)
+  Get the object before 'obj'.
+  Returns the previous object or 0 if 'obj' is the first object.
+
+GetQuantity(object obj)
+  Return the number of items this object represents.
+  Returns the number as a long.
+
+GetReturnValue()
+  Return the current exit status of the event script as an integer. See below
+  for an overview of events that use the exit value.
+
+GetSkillExperience(object who, string skill)
+  Get the experience of skill 'skill' the object 'who' has. 'skill' should
+  skill name.
+  Returns the skill experience as a long or no value if 'who' does not know the
+  skill.
+  Example:
+    who = CFPython.WhoIsActivator()
+    exp = CFPython.GetSkillExperience(who, "alchemy")
+    if exp != None:
+        CFPython.Write("Alchemy experience %d"%(exp), who)
+    else:
+        CFPython.Write("Alchemy skill is unknown", who)
+
+GetSlaying(object obj)
+  Get the "slaying" field of an object.
+  Returns the slaying value as a string.
+
+GetSP(object who)
+  Get the amount of mana possessed by the given object.
+  Returns the amount of mana as an integer.
+
+GetSpeed(object who)
+  Get the speed of the given object.
+  Returns the speed as a float.
+
+GetStrength(object who)
+  Get the Strength value of the given object.
+  Returns the strength as an integer.
+
+GetTempDirectory()
+  Return the name of the base directory containing temporary Crossfire files
+  (for example swapped-out maps).
+  Returns the directory as a string.
+
+GetTemperature(int x, int y, map map)
+  Get the temperature of a given square of a map.
+  Returns the temperature as an integer.
+
+  Remark: not implemented. Always returns zero.
+
+GetTitle(object who)
+  Get the title of 'who'. The "title" is the artifact suffix of in item. For
+  example, an "gauntlets of the Titans" has the title "of the Titans".
+  Returns the title as a string or no value if the object has no title.
+
+  Note: this function does not return the title the player has chosen for
+  himself.
+
+GetType(object who)
+  Get the type of a given object, as a numerical identifier.
+  Returns the type as an integer.
+
+GetUniqueDirectory()
+  Return the name of the base directory containing the Crossfire Unique items.
+  You need to concatenate the result with the value returned by
+  GetLocalDirectory() to get an absolute path.
+  Returns the directory as a string.
+
+GetValue(object who)
+  Get the "value" field of an object.
+  Returns the value as an integer.
+
+GetWC(object who)
+  Get the Weapon Class coefficient associated with the given object.
+  Returns the weapon class coefficient as an integer.
+
+GetWeight(object who)
+  Determine the weight of the given object. The weight does not include the
+  inventory.
+  Returns the weight in grams as an integer.
+
+GetWisdom(object who)
+  Get the Wisdom value of the given object.
+  Returns the wisdom value as an integer.
+
+GetXPosition(object obj)
+  Get the x-position of an object in its map.
+  Returns the x-position as an integer.
+
+GetYPosition()
+  Get the y-position of an object in its map.
+  Returns the y-position as an integer.
+
+H
+HasBeenApplied(object obj)
+  Check whether the object has been applied before.
+  Return value: test result as an integer - 0 if and only if false.
+
+HasStealth(object obj)
+  Check whether the object is stealthy.
+  Return value: test result as an integer - 0 if and only if false.
+
+HasXRays()
+  Check whether the object uses or grants x-rays.
+  Return value: test result as an integer - 0 if and only if false.
+
+HitBack()
+  Check whether the object has the hitback flag set.
+  Return value: test result as an integer - 0 if and only if false.
+
+I
+InsertObjectInside(object obj, object environment)
+  Insert the object 'obj' into 'environment'.
+  Does not return a value.
+
+  Example: see SetSlaying()
+
+IsAlive(object who)
+  Test if the given object is alive.
+  Return value: test result as an integer - 0 if and only if false.
+
+IsApplied(object who)
+  Test if the given object is applied.
+  Return value: test result as an integer - 0 if and only if false.
+
+IsBlind(object who)
+  Test if the given object causes blindness. For players, tests if he is blind.
+  Return value: test result as an integer - 0 if and only if false.
+
+IsCanBePicked(object who)
+  Test if on object can be picked up.
+  Return value: test result as an integer - 0 if and only if false.
+
+IsConfused(object who)
+  Test if the given object is confused.
+  Return value: test result as an integer - 0 if and only if false.
+
+IsCursed(object who)
+  Test if the given object is cursed. Not that not all "damned" objects are
+  cursed as well.
+  Return value: test result as an integer - 0 if and only if false.
+
+IsDamned(object who)
+  Test if the given object is damned.
+  Return value: test result as an integer - 0 if and only if false.
+
+IsDungeonMaster(object who)
+  Test if the given object is a DM.
+  Return value: test result as an integer - 0 if and only if false.
+
+IsFloor(object who)
+  Test if the given object is a floor tile.
+  Return value: test result as an integer - 0 if and only if false.
+
+IsFlying(object who)
+  Test if the given object is flying.
+  Return value: test result as an integer - 0 if and only if false.
+
+IsFriendly(object who)
+  Test if the given object is in friendly mode.
+  Return value: test result as an integer - 0 if and only if false.
+
+IsGenerator(object who)
+  Test if the given object is a generator.
+  Return value: test result as an integer - 0 if and only if false.
+
+IsIdentified(object who)
+  Test if the given object is identified.
+  Return value: test result as an integer - 0 if and only if false.
+
+IsInvisible(object who)
+  Test if the given object is invisible.
+  Return value: test result as an integer - 0 if and only if false.
+
+IsKnownCursed(object who)
+  Test if the given object is known to be a cursed one.
+  Return value: test result as an integer - 0 if and only if false.
+
+IsKnownMagical(object who)
+  Test if the given object is known to be a magical one.
+  Return value: test result as an integer - 0 if and only if false.
+
+IsLifesaver(object who)
+  Test if the given object is a Lifesaver. For players, tests if he wears an
+  object that is a Lifesaver.
+  Return value: test result as an integer - 0 if and only if false.
+
+IsMonster(object who)
+  Test if the given object is a monster.
+  Return value: test result as an integer - 0 if and only if false.
+
+IsOfType(object obj, int type)
+  Check if the object is of the given type.
+  Return value: test result as an integer - 0 if and only if false.
+
+  Note: There is no function to determine the type values by name.
+
+  Example:
+    if CFPython.IsOfType(CFPython.CreateObject("ring", (0, 0)), 70): # 70=RING
+      # item is a ring
+
+IsOutOfMap(object obj, int x, int y)
+  Check if the object would be outside of the current map if moved to (x,y).
+  This function works for tiled maps.
+  Return value: test result as an integer - 0 if and only if false.
+
+IsRunningAway(object who)
+  Test if the given object is running away.
+  Return value: test result as an integer - 0 if and only if false.
+
+IsScared(object who)
+  Test if the given object is scared.
+  Return value: test result as an integer - 0 if and only if false.
+
+IsSleeping(object who)
+  Test if the given object is sleeping.
+  Return value: test result as an integer - 0 if and only if false.
+
+IsSplitting(object who)
+  Test if the given object can split.
+  Return value: test result as an integer - 0 if and only if false.
+
+IsThrown(object who)
+  Test if the given object is designed to be thrown.
+  Return value: test result as an integer - 0 if and only if false.
+
+IsTurnable(object who)
+  Test if the given object can change its face with direction.
+  Return value: test result as an integer - 0 if and only if false.
+
+  Note: use SetDirection(who) to change the direction of turnable objects.
+
+IsUnaggressive(object who)
+  Test if the given object is in unaggressive mode.
+  Return value: test result as an integer - 0 if and only if false.
+
+IsUndead(object who)
+  Test if the given object is an undead.
+  Return value: test result as an integer - 0 if and only if false.
+
+IsUnique(object who)
+  Test if the given object is unique.
+  Return value: test result as an integer - 0 if and only if false.
+
+IsUnpaid(object who)
+  Test if the given object is paid.
+  Return value: test result as an integer - 0 if and only if false.
+
+IsUsedUp(object who)
+  Test if the given object has the flag "FLAG_IS_USED_UP" set.
+  Return value: test result as an integer - 0 if and only if false.
+
+  Example:
+    who = CFPython.WhoIsActivator()
+    obj = CFPython.CreateObject("burning item", (0, 0))
+    CFPython.Write("IsUsedUp(%s)=%d"%(CFPython.GetName(obj), CFPython.IsUsedUp(obj)), who)
+
+
+J
+K
+KillObject(object who, object what, int type)
+  Kill the object 'what' in an combat-like fashion. 'who' is the object killing
+  'what'. 'type' is the attack type; it should be one or more values returned
+  by AttackTypeXxx().
+  Does not return a value.
+
+  Note: the death event of 'what' will be called.
+
+L
+LoadObject(string str)
+  Construct an object from its string representation. Use SaveObject() to
+  convert an object into its string representation.
+  Returns the created object or 0 if the object could no be created.
+
+M
+MakeInvisible(object obj)
+  Test if the given object makes the wielder invisible. For players, tests if
+  he is invisible.
+  Return value: test result as an integer - 0 if and only if false.
+
+MatchString(string str, string regex)
+  Try to match the string 'str' to a regular expression 'regex'.
+  Return value: test result as an integer - 0 if and only if false.
+
+Message(string text, object who[, int color])
+  Write the message 'text' to the map of 'who'. 'color' determines the color
+  and flags to use. (Consult the crossfire source code for all available flags
+  NDI_*.) If 'color' if omitted, NDI_BLUE|NDI_UNIQUE is used.
+  Does not return a value.
+
+  Note: to write a message to just one player, use Write().
+
+N
+O
+OnlyAttack(object who)
+  Test if the given object evaporates if it has no enemy.
+  Return value: test result as an integer - 0 if and only if false.
+
+P
+PayAmount(object buyer, int silver)
+  Remove a given amount of silver coins from the buyer object. It uses money
+  from the inventory or from pouches in the inventory of 'buyer'.
+  Returns an integer, 1 for success or 0 for failure.
+
+PayForItem(object buyer, object what)
+  Make 'buyer' to buy the object 'what'. Removes the necessary money from the
+  inventory or from pouches in the inventory. It grants bargaining experience
+  for a successful completion.
+  Returns an integer, 1 for success or 0 for failure.
+
+PickUp(object who, object what)
+  Make 'who' pick up the object 'what'.
+  Does not return a value.
+
+Q
+R
+ReadyMap(string mapname)
+  Return the map with the name 'mapname'. The functions loads (or swaps in) the
+  map if necessary.
+  Returns the map or 0 if the map could not be loaded.
+
+  Example:
+    # teleport activator to another map
+    map = CFPython.ReadyMap("/scorn/misc/beginners")
+    CFPython.Teleport(CFPython.WhoIsActivator(), map, 10, 10)
+
+ReflectMissiles(object obj)
+  Test if the given object reflects missiles. For players, tests if he reflects
+  missiles.
+  Return value: test result as an integer - 0 if and only if false.
+
+ReflectSpells(object obj)
+  Test if the given object reflects spells. For players, tests if he reflects
+  spells.
+  Return value: test result as an integer - 0 if and only if false.
+
+RegisterCommand(string command, string script, float speed)
+  Define a new command that players can call. 'script' is the Python script to
+  execute if a player issues 'command'. 'speed' determines how long the command
+  will paralyze the player.
+
+  When the script is run, WhoAmI() will return the player that issued the
+  command. WhatIsMessage() returns the command parameters (if any).
+  Throws an exception if the command is already registered or if 'speed' is
+  negative.
+  If the script fails, it should call SetReturnValue(0).
+
+  Note: It is possible to overwrite internal commands.
+
+RemoveObject(object obj)
+  Remove an object from its environment (and frees it).
+  Does not return a value.
+
+  Note: do not use the object 'obj' afterwards.
+
+  Note: if the removed object is a container, the objects inside are not freed,
+  they are dropped to the ground.
+
+S
+
+
+SendCustomCommand(object player, string cmd)
+  Send 'cmd' to the crossfire client of 'player'. Consult the crossfire
+  protocol specification for valid commands. 'player' must be a player object.
+  Does not return a value.
+
+  Example:
+    CFPython.SendCustomCommand(CFPython.WhoIsActivator(), "drawinfo 1 text")
+
+SetAC(object obj, int value)
+  Set the Armor Class coefficient if the given object to 'value'.
+  Does not return a value.
+  Throws an exception if the value is less than -120 or higher than 120.
+
+SetAttackType(object obj, int type)
+  Sets the attack type of an object. The type can be one or more return values
+  of AttackTypeXxx().
+  Does not return a value.
+
+  Example:
+    # create a sword with fire and cold attack type
+    sword = CFPython.CreateObject("sword", (1, 3))
+    CFPython.SetAttackType(sword, CFPython.AttackTypeFire()|CFPython.AttackTypeCold())
+    CFPython.SetIdentified(sword, 1)
+
+SetBeenApplied(object obj, int flag)
+  Mark the object as been applied before (flag != 0) or has never been applied
+  (flag = 0).
+  Does not return a value.
+
+SetCharisma(object obj, int value)
+  Set the Charisma value of the given object.
+  Does not return a value.
+  Throws an exception if the value is less than -30 or higher than 30.
+
+SetConstitution(object obj, int value)
+  Set the Constitution value of the given object.
+  Does not return a value.
+  Throws an exception if the value is less than -30 or higher than 30.
+
+SetCursed(object obj, int flag)
+  Make the object cursed (flag != 0) or removes a curse (flag = 0).
+  Does not return a value.
+
+  Note: does not remove the damned flag - use SetDamned() to change the damned
+  status.
+
+SetDamage(object obj, int value)
+  Set the amount of damage associated with the given object.
+  Does not return a value.
+  Throws an exception if the value is negative or higher than 120.
+
+SetDamned(object obj, int flag)
+  Make the object damned (flag != 0) or removes a damnation (flag = 0).
+  Does not return a value.
+
+  Note: does not affect the cursed flag - use SetCursed() to change the cursed
+  status.
+
+SetDexterity(object obj, int value)
+  Set the Dexterity value of the given object.
+  Does not return a value.
+  Throws an exception if the value is less than -30 or higher than 30.
+
+SetDirection(object who, int dir)
+  Set the direction 'who' is currently moving.
+  Does not return a value.
+
+SetFace(object obj, string anim)
+  Set the face of an object 'obj' to 'anim'. 'anim' is an animation name.
+  Does not return a value.
+
+  Example:
+    # make a pair of speed boots look like Idaten boots
+    obj = CFPython.CreateObject("speedboots", (1, 3))
+    CFPython.SetFace(obj, "idaten")
+
+SetFood(object who, int food)
+  Set the food level of the given object.
+  Does not return a value.
+  Throws an exception if the value is negative or higher than 999.
+
+SetGod(object who, string god)
+  Make 'who' to become a follower of 'god'.
+  Does not return a value.
+  Throws an exception if 'god' is invalid.
+
+  Note: Does nothing if 'who' does not know the skill 'praying'.
+
+SetGrace(object obj, int value)
+  Set the grace amount of the given object.
+  Does not return a value.
+  Throws an exception if the value is less than -32000 or higher than 32000.
+
+SetHP(object obj, int value)
+  Set the amount of Hit Points associated with the given object.
+  Does not return a value.
+  Throws an exception if the value is negative or higher than 32000.
+
+SetIdentified(object obj, int flag)
+  Mark the object as identified (flag != 0) or not identified (flag = 0).
+  Does not return a value.
+
+SetIntelligence(object who, int value)
+  Set the Intelligence value of the given object.
+  Does not return a value.
+  Throws an exception if the value is less than -30 or higher than 30.
+
+SetInvisible(object obj, int flag)
+  Set (flag != 0) or clears (flag = 0) the invisible flag of the object.
+  Does not return a value.
+
+SetLastGrace(object who, int value)
+  Set the last_grace parameter value associated with the given object.
+  Does not return a value.
+  Throws an exception if the value is negative or higher than 32000.
+
+SetLastSP(object who, int value)
+  Set the last_sp parameter value associated with the given object.
+  Does not return a value.
+  Throws an exception if the value is negative or higher than 32000.
+
+SetMaxHP(object who, int value)
+  Set the maximum amount of Hit Points the given object can get.
+  Does not return a value.
+  Throws an exception if the value is negative or higher than 32000.
+
+SetMaxSP(object who, int value)
+  Set the maximum amount of mana the given object can get.
+  Does not return a value.
+  Throws an exception if the value is negative or higher than 32000.
+
+SetMessage(object obj, string msg)
+  Set the message contained in the specified object. The message is what
+  appears inside msg...endmsg tags.
+  Does not return a value.
+
+SetName(object name, string name[, string name_pl])
+  Set the 'clear name' of the given object. If 'name_pl' (name to use for
+  multiple objects) is not given, 'name' is used.
+  Does not return a value.
+
+  Example:
+    # create a scroll with a custom name
+    key = CFPython.CreateObject("scroll", (0, 0))
+    CFPython.SetName(key, "warning scroll", "warning scrolls")
+    CFPython.SetMessage(key, "<unreadable text>")
+
+SetNickname(object obj, string name)
+  Set the title of a player or an object.
+  Does not return a value.
+
+SetPosition(object obj, (int x, int y))
+  Move an object to another spot on the same map. The object must not be part
+  of an inventory. Places the item in a nearby spot if the destination spot is
+  blocked. The object will no be moved if no free spot can be found.
+  Does not return a value.
+
+SetPower(object obj, int value)
+  Set the Power value of the given object.
+  Does not return a value.
+  Throws an exception if the value is less than -30 or higher than 30.
+
+SetQuantity(object obj, int nrof)
+  Set the number of items this object represents.
+  Does not return a value.
+  Throws an exception if the value is negative.
+
+  Note: the object should not be in a player's inventory because the client
+  view will not be updated.
+
+  Note: "nrof=0" does not mean "destroy the item".
+
+SetReturnValue(int value)
+  Set the current exit status of the event script. See below for an overview of
+  events that use the exit value.
+  Does not return a value.
+
+SetSkillExperience(object who, string skill, long exp)
+  Set the experience of skill 'skill' the object 'who' has. 'skill' should be a
+  skill name.
+  Does not return a value.
+  Throws an exception if 'who' does not know the 'skill'.
+  Throws an exception if the value is negative.
+
+  Note: If the new experience value is less than the current value, 'who'
+  looses the difference from his total experience.
+
+SetSlaying(object obj, string value)
+  Set the "slaying" field of an object.
+  Does not return a value.
+
+  Example:
+    # create a key and set its lock-code
+    key = CFPython.CreateObject("key2", (0, 0))
+    CFPython.SetName(key, "treasure key")
+    CFPython.SetSlaying(key, "treasure-code")
+    CFPython.InsertObjectInside(key, CFPython.WhoIsActivator())
+
+SetSP(object obj, int value)
+  Set the amount of mana possessed by the given object.
+  Does not return a value.
+  Throws an exception if the value is negative or higher than 32000.
+
+SetSpeed(object obj, float value)
+  Set the speed value of the given object.
+  Does not return a value.
+  Throws an exception if the speed value is less than -9.99 or higher than
+  9.99.
+
+SetStrength(object obj, int value)
+  Set the Strength value of the given object.
+  Does not return a value.
+  Throws an exception if the value is less than -30 or higher than 30.
+
+SetTitle(object obj, string title)
+  Set the title of the given object.
+  Note: to set the title of a player, use SetNickname() instead.
+  Does not return a value.
+
+SetUnaggressive(object obj, int flag)
+  Make the given object unaggressive (flag != 0) or aggressive (flag = 0).
+  Does not return a value.
+
+SetValue(object obj, int silver)
+  Set the "value" field of an object in silver coins.
+  Does not return a value.
+  Throws an exception if the value is negative.
+
+SetVariable(object obj, string value)
+  Change an object according to an argument string. It is equivalent of the DM
+  patch command.
+  Does not return a value.
+
+SetWC(object obj. int value)
+  Set the Weapon Class coefficient associated with the given object.
+  Does not return a value.
+  Throws an exception if the value is less than -120 or higher than 120.
+
+SetWeight(object obj, long weight)
+  Set the weight (in grams) of the given object.
+  Does not return a value.
+  Throws an exception if the value is negative or higher than 1000000000.
+
+SetWisdom(object obj, int value)
+  Set the Wisdom value of the given object.
+  Does not return a value.
+  Throws an exception if the value is less than -30 or higher than 30.
+
+StandStill(object obj)
+  Test if the given object has the flag "FLAG_STAND_STILL" set.
+  Return value: test result as an integer - 0 if and only if false.
+
+T
+Take(object who, string what)
+  Make 'who' to pick up 'what'. The syntax of 'what' is the same as what is
+  allowed for the client command 'get'.
+  Does not return a value.
+
+Teleport(object who, map map, int x, int y)
+  Move the given object to (x,y) in map 'map'. The object to be moved may be
+  part of a map or in some object's inventory. If the destination position is
+  blocked, the object is placed in a nearby space.
+  Does not return a value.
+
+  Note: if the destination coordinates are outside of the map or if no free
+  space could be found, this function does not move the object.
+
+  Note: the object to be moved should not be part of a player's inventory.
+
+U
+V
+W
+WasDungeonMaster(object who)
+  Test if the given object is or has been a DM.
+  Return value: test result as an integer - 0 if and only if false.
+
+WhatIsMessage()
+  Return the message related to the current event as a string or no object if
+  no message is applicable.
+
+  Note: see below for an overview of events with messages.
+
+WhoAmI()
+  Return the object related to the current event or 0 if not applicable.
+
+  Note: the related object is frequently (but not always) the object containing
+  the script. See below for an overview of events with related objects.
+
+WhoIsActivator()
+  Return the object that caused the script to run or 0 if not applicable.
+  Note: See below for an overview of events with activator objects.
+
+WhoIsOther()
+  Return an auxiliary object for the current event or 0 if not applicable.
+
+  Note: See below for an overview of events with auxiliary objects.
+
+Write(string text, object who[, int color])
+  Write the message 'text' to the player 'who'. 'color' determines the color
+  and flags to use. (Consult the crossfire source code for all available flags
+  NDI_*.) If 'color' if omitted, NDI_BLUE|NDI_UNIQUE is used.
+  Does not return a value.
+
+  Note: to write a message to all players in a map, use Message().
+
+X
+Y
+Z
+
+
+What parameters are available to a script?
+------------------------------------------
+
+The following table contains all events that can be tied to objects.
+
+event Activator WhoAmI Other Message parm1 parm2 parm3 result comment
+----- --------- ------ ----- ------- ----- ----- ----- ------ --------------
+apply   op     ALTAR     -      -    0     0     0     yes    'op' prays at 'altar'
+apply   op     BOOK      -      -    0     0     0     no     'op' reads 'book'
+apply   op     ITEM      -      -    aflag 0     0     yes    'op' applies 'item'
+attack  hitter hitter    OP     -    0     dam   wc    no     'hitter' hits 'op'
+attack  hitter ITEM      op     -    0     dam   wc    no     'hitter' hits 'op' with 'item'
+close   op     CONTAINER -      -    0     0     0     yes    'op' closes 'container'
+death   -      PLAYER    -      -    0     0     0     yes    'player' dies
+death   hitter OP        -      -    atype 0     0     yes    'hitter' kills 'op'
+drop    op     ITEM      -      -    nrof  0     0     yes    'op' drops 'item'
+pickup                                                        (not implemented)
+say     op     ITEM      npc    msg  0     0     0     always 'op' tells 'msg' to 'item' in 'npc''s inventory
+say     op     NPC       -      msg  0     0     0     always 'op' tells 'msg' to 'npc'
+stop    -      OP        -      -    0     0     0     no     thrown object 'op' is stopped
+throw   op     ITEM      -      -    0     0     0     no     'op' throws 'item'
+time    -      OP        -      -    0     0     0     no     'op' takes a turn
+timer   OP     -         -      -    0     0     0     no     timer of 'op' has expired
+trigger OP     item      -      msg  0     0     0     always 'op' writes 'msg' into 'item'
+trigger TELEPORTER op    -      -    0     0     0     yes    'teleporter' moves 'op'
+trigger TRAP  originator victim -    0     0     0     yes    'originator' causes 'victim' to trigger 'trap'
+
+Notes:
+- the object that contains the event script is written in capitals.
+- result column: indicates how the result value set by SetReturnValue() is
+  used: no=result value is not used; yes=non-zero result value prevents the
+  normal action; always=prevents the normal action regardless of result value.
+- apply event: aflag: Consult the crossfire source code for all available flags
+  AP_*.
+- death event: atype=attacktype
+- trigger event: originator is unset if the trap (pedestal/button) someone left
+  it.
+- parm1..3 are not currently available to the script.
+- attack event: 'item' can be a weapon or a missile.
+
+
+The following table contains all global events.
+
+event Activator WhoAmI Other Message  comment
+----- --------- ------ ----- -------- --------------
+born     op     -      -     -        new player 'op' was created
+clock    -      -      -     -        called each tick
+crash                                 (not implemented)
+gdeath                                player 'op' dies (not implemented)
+gkill                                 'hitter' kills 'op' (not implemented)
+kick     op     -      -     name     player 'op' named 'name' is kicked out of the game
+login    op     op     -     ip       player 'op' logged in from IP address 'ip'
+logout   op     op     -     ip       player 'op' logged out from IP address 'ip'
+mapenter op     -      -     -        player 'op' has entered a new map
+mapleave op     -      -     -        player 'op' is leaving a map
+mapreset -      -      -     mappath  map 'mappath' is resetting
+muzzle   op     -      -     name     player 'op' named 'name' is muzzled
+remove   op     -      -     -        player 'op' quits the game
+shout    op     -      -     message  player 'op' shouts 'message'
+tell                                  (not implemented)
+
+Notes:
+- kick event: param is either the player name or None if all players are
+  kicked.
+- login event: this event is also called when a new player was created.

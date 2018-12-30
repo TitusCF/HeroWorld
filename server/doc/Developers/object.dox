@@ -1,0 +1,81 @@
+/**
+
+@page page_object Objects
+
+@section sec_obj_introduction Introduction
+
+Objects are one of the main structures in Crossfire. They represent every item the player can interact with, including skills, experience, spells and their effects, monsters, walls...
+
+Objects in Crossfire are represented by the ::obj structure. One important field is object::type, which defines the object type (wall, monster, exit, ...). Another important field is object::flags "the flags", that indicate some special properties of the object.
+@todo link to types, flags, ...
+
+This structure should not be created directly, but managed through suitable functions (see @ref sec_obj_functions below).
+
+An object can exist in the following states:
+
+- freed, with its ::FLAG_FREED set. Such an object should never be manipulated
+- removed, with its ::FLAG_REMOVED set. The object is in an indeterminate state, between insertion in a map or in another object and destruction
+- in another object, in which case its object::env field points to the containing object
+- on a map, in which case the object::map, object::x and object::x fields specify where it is located.
+
+Objects are managed on lists, one object can be on different lists.
+
+The following global object lists are defined, the object::next and object::prev fields are used to link to the other objects:
+- a freed object list, containing all objects once used and now unused. Items on this list can be recycled and reused later. The pointer to the first item is ::free_objects
+- an allocated object list, containing all objects currently used, on a map or in another object. The pointer to the first item is ::objects
+- an active object list, containing all objects that change over time (with object::speed not 0). The pointer to the first item is ::active_objects. Fields used to specify next and previous items are object::active_next and object::active_prev.
+
+The following local object lists are defined:
+- each map spot contains a pointer to the bottom and top objects, accessible through the ::GET_MAP_OB and ::GET_MAP_TOP macros respectively. Other objects are linked through the object::below and object::above fields.
+- an object containing other objects will use its object::inv field to point to the first object, subsequent objects are linked through the object::below and object::above fields.
+
+@section sec_obj_multipart Multipart objects
+
+@todo write :)
+
+@section sec_obj_unique Unique objects
+
+@section sec_obj_functions Object manipulation functions
+
+Most of the object manipulation functions are defined in the @ref object.c file.
+
+@subsection subsec_obj_fct_getting Object construction
+
+An object can be obtained:
+- through ::object_new(), which returns an empty object. It is the responsibility of the caller to correctly initialize it, including the pointer to the archetype structure
+- through an archetype function, in which case the object has its fields set to the default archetype values. Available functions are create_archetype_by_object_name(), arch_to_object(), create_archetype(), object_create_arch()
+- from another object, via functions such as get_split_ob() and object_create_clone(), in which case the object has the properties of the source object.
+
+@subsection subsec_obj_fct_releasing Object destruction
+
+An object will be freed, thus become invalid:
+- through a call to free_object()
+- when its object::nrof reaches 0 during a call to get_split_ob() or decrease_ob_nr()
+- when the map it is on is reset or deleted
+- when the item it is into is freed.
+
+@subsection subsec_obj_client Object and remote client
+
+When you manipulate an object that interacts with a player, thus with a remote client, the client needs to be informed of changes to the manipulated object.
+
+The general object manipulation functions like remove_ob(), insert_ob_in_ob() and such will automatically update the client's status if needed when used with such an obecjt.
+
+If you change some fields of the objets that the client knows about (name, weight, cursed status, ...), you need to call esrv_update_item() with the correct flags. See @ref sec_client_known_fields "this section" for fields the client knows about.
+
+@subsection subsec_obj_misc Various functions
+
+Various functions exist to manipulate objects. They should be used instead of modifying the field directly, because the field has side-effects.
+
+- update_ob_speed() should be called when changing the speed from 0 to a non 0 value or vice-versa
+- add_weight() and sub_weight() should be called when an object changes weight. Containers can reduce the weight of items they contain, thus there is a need for full weight update of containers
+- fix_object() will reset an object to its archetype values and apply all modifiers from items in inventory. This is mostly called for living things (players and monsters).
+
+@section sec_special_objects Special objects
+
+There are special objects that, even if they use the ::obj structure, should not be manipulated through the usual functions.
+
+@ref page_archetype "Archetypes" have a archetype::clone field that is an ::obj structure. This object is never on any list, even if active.
+
+@ref page_artifact "Artifacts" have a malloc()'d artifact::item object structure, that isn't on any list either. Those objects should never be manipulated directly.
+
+*/

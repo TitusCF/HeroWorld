@@ -1,0 +1,171 @@
+Refactoring changes in the type-specific subsystem. A few notes when putting entries in this
+file:
+1) Please included your name and a date in the form yyyy-mm-dd, consistat with the top
+level ChangeLog file.
+2) Please follow the conventions set out by existing entries here
+3) You should still put entries in the top-level ChangeLog
+4) Only refactoring of functuality to and/or from the type-specific subsystem
+should be inlcluded here. Other changes should simply be in the top level
+ChangeLog.
+
+Ob types   : POISONING
+Events     : process
+Moved from : ../server/time.c, legacy/process.c
+Moved to   : poisoning/poisoning.c
+Comment    : Moved process code for POISONING.
+2007-11-28 - Alex Schultz
+--
+Ob types   : PEACEMAKER
+Events     : process
+Moved from : ../server/spell_effect.c, legacy/process.c
+Moved to   : peacemaker/peacemaker.c
+Comment    : Moved process code for PEACEMAKER.
+2007-11-25 - Alex Schultz
+--
+Ob types   : GATE, TIMED_GATE
+Events     : process
+Moved from : ../server/time.c, legacy/process.c
+Moved to   : gate/gate.c
+Comment    : Moved process code for GATE and TIMED_GATE.
+2007-11-23 - Alex Schultz
+--
+Ob types   : SAVEBED, POISON, CF_HANDLE, TREASURE, WEAPON_IMPROVER
+Events     : apply
+Moved from : ../server/apply.c, legacy/apply.c
+Moved to   : savebed/savebed.c, poison/poison.c, cf_handle/cf_handle.c,
+             treasure/treasure.c, weapon_improver/weapon_improver.c
+Comment    : Moved apply code for savebeds, poison, cf_handle, treasure and
+             weapon_improver. Now the only ob types left for apply, are
+             containers and equippable items.
+2007-11-21 - Alex Schultz
+--
+Ob types   : FOOD, DRINK, FLESH
+Events     : apply
+Moved from : ../server/apply.c, legacy/apply.c
+Moved to   : food/food.c
+Comment    : Move apply code for food.
+2007-06-09 - Alex Schultz
+--
+Ob types   : SCROLL, POTION
+Events     : apply
+Moved from : ../server/apply.c, legacy/apply.c
+Moved to   : scroll/scroll.c, potion/potion.c
+Comment    : Move apply code for scrolls and potions.
+2007-06-08 - Alex Schultz
+--
+Ob types   : SKILLSCROLL, SPELLBOOK
+Events     : apply
+Moved from : ../server/apply.c, legacy/apply.c
+Moved to   : skillscroll/skillscroll.c, spellbook/spellbook.c
+Comment    : Move apply code for skillscrolls and spellbooks.
+2007-06-07 - Alex Schultz
+--
+Ob types   : TRAP, RUNE
+Events     : process
+Moved from : ../server/rune.c, legacy/process.c
+Moved to   : trap/common_trap.c
+Comment    : Move process code for traps and runes.
+2007-06-06 - Alex Schultz
+--
+Ob types   : TRAP, RUNE
+Events     : move_on
+Moved from : trap/trap.c, rune/rune.c
+Moved to   : trap/common_trap.c, trap/rune.c
+Comment    : Merged rune and trap directories
+2007-06-06 - Alex Schultz
+--
+Ob types   : LAMP
+Events     : apply
+Moved from : legacy/apply.c, server/apply.c
+Moved to   : lamp/lamp.c
+Comment    : Moved apply handling for lamps.
+2007-06-02 - Nicolas Weeger
+-------------------------------------------------------------------------------
+Ob types   : ARMOUR_IMPROVER
+Events     : apply
+Moved from : legacy/apply.c
+Moved to   : armour_improver/armour_improver.c
+Comment    : Moved apply handling for Enchant armor.
+2007-06-02 - Nicolas Weeger
+-------------------------------------------------------------------------------
+Ob types   : SHOP_INVENTORY (former MENU)
+Events     : apply
+Moved from : legacy/apply.c
+Moved to   : shop_inventory/shop_inventory.c
+Comment    : Moved apply handling for shop inventory.
+2007-06-02 - Nicolas Weeger
+-------------------------------------------------------------------------------
+Ob types   : LIGHTER
+Events     : apply
+Moved from : legacy/apply.c
+Moved to   : lighter/lighter.c
+Comment    : Moved apply handling for lighter.
+2007-06-02 - Nicolas Weeger
+-------------------------------------------------------------------------------
+Ob types   : EXIT, CLOCK
+Events     : apply
+Moved from : legacy/apply.c
+Moved to   : exit/exit.c, clock/clock.c
+Comment    : Moved apply handling for exits and clocks.
+2007-04-05 - Alex Schultz
+-------------------------------------------------------------------------------
+Ob types   : SPELL_EFFECT
+Events     : process
+Moved from : ../server/{spell_attack.c, spell_util.c, spell_effect.c}
+Moved to   : spell_effect/spell_effect.c
+Comment    : Moved ob_process logic into the ob_method system. Should probably
+             split spell_effect.c into multiple files by subtype.
+2007-04-03 - Alex Schultz
+-------------------------------------------------------------------------------
+Ob types   : THROWN_OBJ, ARROW
+Events     : process
+Moved from : ../server/time.c
+Moved to   : common/projectile.c, arrow/arrow.c, thrown_object/thrown_object.c
+Comment    : Implimented process method for the given object types taking code
+             from move_arrow() and stop_arrow().
+2007-02-19 - Alex Schultz
+-------------------------------------------------------------------------------
+Ob types   : ALTAR, ARROW, BUTTON, CHECK_INV, CONTAINER, CONVERTER, DEEPSWAMP,
+             DIRECTOR, EXIT, HOLE, IDENTIFY_ALTAR, PEDESTAL, PLAYERMOVER,
+             RUNE, SHOP_MAT, SIGN, SPELL_EFFECT, SPINNER, THROWN_OBJ, TRAP,
+             TRAPDOOR, TRIGGER_ALTAR, TRIGGER_BUTTON, TRIGGER_PEDESTAL
+Events     : move_on
+Moved from : ../server/apply.c, ../server/time.c
+Moved to   : common/common_apply.c, altar/altar.c, arrow/arrow.c, button/button.c,
+             check_inv/check_inv.c, container/container.c, converter/converter.c,
+             deep_swamp/deep_swamp.c, director/director.c, exit/exit.c,
+             hole/hole.c, identify_altar/identify_altar.c, pedestal/pedestal.c,
+             player_mover/player_mover.c, rune/rune.c, shop_mat/shop_mat.c,
+             sign/sign.c, spell_effect/spell_effect.c, spinner/spinner.c,
+             thrown_object/thrown_object.c, trap/trap.c, trapdoor/trapdoor.c,
+             trigger_altar/trigger_altar.c, trigger_button/trigger_button.c,
+             trigger_pedestal/trigger_pedestal.c
+Comment    : Implemented the move_on method for the given object types.
+2007-01-21 - Yann Chachkoff
+-------------------------------------------------------------------------------
+Ob types   : TRIGGER
+Events     : apply, process
+Moved from : ../server/apply.c, ../server/time.c
+Moved to   : trigger/trigger.c
+Comment    : Implemented apply and process methods for the given object type.
+2007-01-14 - Yann Chachkoff
+-------------------------------------------------------------------------------
+Ob types   : TRANSPORT, POWER_CRYSTAL, ITEM_TRANSFORMER, BOOK
+Events     : apply, process, describe
+Moved from : ../server/apply.c, ../server/time.c, ../server/c_object.c
+Moved to   : legacy/apply.c, legacy/legacy_describe.c, legacy/process.c,
+             common/describe.c, transport/transport.c,
+             power_crystal/power_crystal.c, item_transformer/item_transformer.c,
+             book/book.c
+Comment    : Implemented apply, process and describe methods for the given
+             object types.
+2007-01-14 - Yann Chachkoff
+-------------------------------------------------------------------------------
+--EXAMPLE--
+Ob types: ALL
+Events: APPLY
+Functunality moved from: ../server/apply.c:foobar()
+Functunality moved to: legacy/apply.c
+Comment: Move legacy apply code into a temporary location.
+Alex Schultz 2006-11-29
+--EXAMPLE--

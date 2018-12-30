@@ -1,0 +1,125 @@
+
+\chapter{Introduction}
+
+\section{What is \cf\ ? }
+
+In the words of its original author Frank Tore Johansen :
+\begin{quote}
+``\cf\ is a multi-player graphical arcade and adventure game made for the
+X Windows systems environment. It has certain flavours from other games,
+especially \gauntlet\ and the rogue-like  games (mainly \hack , \moria ,
+\angband , and \ragnarok ). Any number of players can move around in their
+own window, finding and using items and battling monsters. They can
+choose to cooperate or compete in the same {\em world}.''
+\end{quote}
+In the years of development that have followed, \cf\ has grown to
+encompass over 150 monsters, $\sim$3000 maps to explore, an elaborate
+magic system, over 15 character types, a system of skills, and
+many, many artifacts and treasures.
+
+\cf\ is freely distributed under the GNU license and the code may be
+obtained from a number of FTP sites (see section \ref{sec:obtain}).
+{\bf Take note:} you will need at least an ANSI C compiler (i.e. {\tt gcc})
+to build the game. A screen shot of the \cf\ display appears in Figure \ref{fig:dis}.
+
+\begin{figure}
+\mongovaryboth fig/screen_dia.ps 3.5in 5.5in
+\caption{Screen shot of the game display which comprises of six
+different windows. \label{fig:dis}}
+\end{figure}
+
+\cf\ is currently being maintained by Mark Wedel ({\tt mwedel@sonic.net}).
+Crossfire is uses the client server model - clients for unix (using
+gtk or straight X11) and windows are readily available.  SDL client
+is being worked on.
+
+To be notified of new releases of \cf\ ,
+subscribe to the announcement mailing list
+(see section \ref{sec:mlist}) to get notified of updates.
+
+\subsection{What is included in this document?}
+
+This document is a guide intended to focus on the game-play aspects of \cf .
+The original intention of this text was to
+help aspiring players create and play a character and more quickly initiate
+them into the intricacies of \cf . But, as things went along, many of the
+older docs began to be incorporated and lots of good reference material
+slipped in; this document may also be a good resource for more experienced
+players.
+
+Having said all of that, lets point out that each release contains
+a fair amount of documentation and the \playbook\ is definitely not the
+last word! Certainly, every player will want to obtain the \spoiler ,
+and while this may sound flippant, its still true\emdash a good place to
+start tracking down much of the information you may want is the
+README document in the top directory of your release.
+
+
+\subsection{Getting started: beginning players}\index{beginning players}
+
+First-time players may want to skim over sections
+\ref{sec:char_attr}, \ref{sec:char_gen}, \ref{sec:basic},
+and \ref{sec:first} before playing the game. Don't be daunted by
+the apparent complexity of \cf \emdash in reality \cf\ is quite easy
+to play and character generation
+is simple. Later on, when you have some experience
+playing the game, you may wish to go back and re-read skimmed material
+and expand your knowledge of the unread sections.
+
+If you just want to damn the torpedoes and ``roll''\footnote{This archaic
+term comes from paper and pencil role-playing games which used dice in
+the character generation process.} up a character quickly then proceed
+to section \ref{sec:char_gen} in this text. You may {\em still}
+find section \ref{sec:first} helpful reading.
+
+
+\section{\cf\ Mailing lists}\index{mailing lists}\label{sec:mlist}
+
+Two mailing-lists exist; the first is for discussing bugs and
+development while the second is for just announcing new versions.
+If you want to join or leave any of the lists, send mail to
+{\tt crossfire-}{\tt request@}{\tt ifi.uio.no} with the subject ``{\tt subscribe}'',
+``{\tt unsubscribe}'',``{\tt subscribe announce}'' or ``{\tt unsubscribe
+announce}''.  If you use the subject ``{\tt subscribe}'' or
+``{\tt unsubscribe}'' you will (un)subscribe to {\em both} lists.
+
+To send messages directly to the list, mail {\tt crossfire@ifi.uio.no}.
+While the development/bug list is not supposed to be used for helping
+players solve problems, sometimes a knowledgeable reader of the
+list can be tempted into answering your question.
+
+An archive of old messages can be found at {\tt ftp.ifi.uio.no} in the
+directory {\tt /pub/crossfire/archive}.
+
+\section{Obtaining \cf } \label{sec:obtain}
+
+FTP sites\index{FTP sites} where you can look for the latest versions are: \\
+
+\noindent{\tt ra.pyramid.com:/pub/crossfire} (129.214.1.102) \\
+{\tt ftp.ifi.uio.no:/pub/crossfire} (129.240.64.44) \\
+{\tt ftp.real-time.com/pub/games/crossfire} (206.10.252.12) \\
+{\tt ftp.cs.city.ac.uk:/pub/games/crossfire} (138.40.91.9)\\
+{\tt ftp.sunet.se:/pub/unix/games/crossfire} (130.238.127.3) \\
+{\tt ftp.cs.titech.ac.jp:/pub/games/crossfire} (131.112.90.201) \\
+
+Please use the one nearest to you.  ``.se'', ``.no'' or ``.uk'' in Europe,
+``.au'' in Australia, ``.net'' in North America, and ``.jp'' in Asia.
+
+\section{DOCUMENT CREDITS}
+
+B.T. provided the bulk of the written material; K.E. and
+(to a lesser extent) J.K provided expert editing and typesetting advice.
+The \playbook\ uses material borrowed from older documentation written
+by the following people (in rough order of borrowing magnitude):
+\begin{quote}
+Sam Mackrill (lots of bits from the old FAQ) \\
+Laurent Wacrenier \\
+Kjetil T. Homme \\
+Lars H. B. Olafsen \\
+Peter Mardal \\
+Rupert G. Goldie \\
+Frank T. Johansen
+\end{quote}
+If I left anyone out, please send me some email! \\
+
+\noindent{Brian Thomas} \\ {\tt thomas@astro.psu.edu} \\

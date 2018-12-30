@@ -1,0 +1,222 @@
+
+\chapter{Equipment}\label{chap:equip}
+
+\section{Going to market..}\index{equipment, value}
+\inputimage{shops}
+
+You can find equipment for sale at easily recognizable buildings. To buy an
+item just pick it up and walk out of the building by stepping on a
+shop mat\inputimage{shopmat}. The cost of the item will auto-matically be
+deducted from your money\inputimage{money}. To sell an item,
+enter the shop and drop the item
+on the shop floor. Money from the sale will auto-matically be placed in your
+inventory. Use the {\tt examine} command, or the cursor and left button
+of the mouse to examine the price of an item {\em before} you buy or sell.
+
+\subsection{Some notes about shopping}
+\index{shopping}
+
+Most items will have a value based on their ``standard'' cost
+multiplied by a factor based on your charisma (see table \ref{tab:pri_eff}).
+You can never look good enough that you can buy stuff then sell
+it at a profit. \\
+
+\noindent{Some} notable exceptions to the above:
+\begin{quote}
+   $\bullet$ Gems\index{gems}\inputimage{gems} will always be sold or bought 3\% more or less their standard value. \\
+   $\bullet$ For magic stuff value is 3$\times$({\tt magic})$^{3}$ of standard value. \\
+   $\bullet$ Unidentified items value is 2/3 of standard.
+\end{quote}
+
+\subsection{Plundering shops}
+\index{stealing from shops}
+
+It is not possible to steal from shops (sorry!). If you somehow make
+it out of a shop with ``unpaid'' items, you will find that they will
+be unusable until paid for. On another note, if you save yourself with
+unpaid items in a shop, then crash the game and reload, you will
+find that the unpaid items will not be saved.
+
+\section{Items}
+\label{sec:items}
+
+In this section we detail some interesting properties of various
+bits of equipment which may be found in \cf . \\
+
+\indent{\bf Books:}\inputimage{books} \\
+\index{books}
+% \index{spells, how to learn}
+This is how players can obtain magical spells, sometimes a player can
+learn the spell, other times they cannot. The chance depends on the type
+of spell, either INT (\incantation s) or WIS (prayers) is used to help
+determine the percentage chance that the spell might be learned (see section
+\ref{sec:spell_learn} for details).
+
+There are many, many different types of books out there,
+as well as being spell books (\wizbook s and prayerbooks), the
+following information can
+appear in books generated in shops and/or monster treasure hoards$-$
+\begin{quote}
+        $\bullet$ Compendiums on monsters. Their powers/abilities are
+            described as in the \spoiler .
+
+        $\bullet$ Compendiums of \incantation s/prayers by spell Path. Higher
+            level texts are more complete in their description of
+            available spells.
+
+        $\bullet$ ``Bibles'': various aspects, properties, and characteristics
+            of a God/cult are described. Higher level texts
+            have more/better information.
+
+        $\bullet$ Compendiums explaining the powers of magic items. Higher
+            level texts have more items detailed.
+
+        $\bullet$ Alchemical Formulae.
+
+        $\bullet$ Other randomly generated information.
+\end{quote}
+Book level is assigned when the book is generated as treasure.
+Level is based on the difficulty of the map the book is
+generated on. All information is {\em server} specific. \\
+
+{\bf Scrolls and Potions:}\inputimage{potions}\inputimage{scrolls}
+\index{scrolls}\index{potions}\\
+
+	Most of these items provide a one-shot use of a spell without
+	making the user expend either mana or grace. Scroll use
+	depends on the user's {\tt literacy} skill and may fail. Potions
+	always work, but are more expensive to buy. Several kinds
+	of items are classed as "potions": balms, figurines, and
+	dusts. Some potions don't cast spells, but instead raise
+	the drinker's stats. Beware cursed potions. They can {\em lower}
+	your stats instead! \\
+
+{\bf Wands(Staves)/Rods/Horns:}\inputimage{wands}\inputimage{rods}
+\inputimage{horns}\index{wands}\index{rods}\index{horns} \\
+	These items provide use of spells. Wands have a limited
+	number of charges, while horns and rods will recharge
+	(but don't fire as much damage in a small amount of time).
+	Horns are used at the overall level of ability of the
+	user, while rods and wands cast spells at the item level.\\
+
+{\bf Rings:}\inputimage{rings} \\ \index{rings}
+     Many different types, rings can be worn to add/remove different
+     immunities, gain/lose spell Paths and alter all types of stats. \\
+
+{\bf Food/Flesh:}\inputimage{food}\inputimage{flesh}\index{food}\index{flesh} \\
+	These items provide sustenance. Food is generally more healthy
+	to eat, while some flesh items can be sold for good cash. Both
+	types may temporarily alter your stats, and/or be poisonous.
+	Many flesh items inherit the properties of the monster they
+	came from. For example, a ``poisonous'' monster will leave
+	behind poisonous flesh. Don't eat it if you know what's good
+	for you!!\\
+
+{\bf Weapons/Armour: }\index{armour}\index{weapons}\\
+     Tons of items, it is up to you as the player to figure out which work
+     better then others. Take a look at weapon/armour weight in the \spoiler\
+	to get an idea of how enchanted unidentified items are. \\
+
+{\bf Artifacts:}\index{artifacts}\\
+     These are the real treasures of the game. There are more than 20
+     artifacts out there, but they are very hard to come by. \\
+
+\section{Encumbrance}\label{sec:encumberance}\index{equipment, encumbrance}\index{encumbrance}
+Armour, weapons, shields will encumber a wizard and cause spell
+failure.  Light equipment causes no failure at all whereas heavy equipment
+causes mondo failures.
+
+The reasoning is that the bulkiness of objects, not their weight exactly, is
+what causes failures. So the basic idea of encumbrance is that items get in the
+way more than they weigh down. Unfortunately, our only measure of 'getting
+in the way' was the weight.
+
+\subsection{How encumbrance is calculated}
+Encumbrance points are tallied only from {\em applied} objects. Weapons
+give
+3x their weight in kg in encumbrance points. Shields give 1/2 their weight
+in kg in encumbrance points. Armour gives its weight in encumbrance points.
+
+There's an allowance of encumbrance points which all players get before they
+start losing \incantation s, this was about 35-45, not too much.
+
+The formula works like this: You make a roll of 1-200. You compare it to a
+failure threshold. This threshold is: encumbrance + \incantation\ {\tt level}
+ - caster {\tt level} - 35
+
+For example, lets say a 4th {\tt level} wizard is casting a 5th {\tt level}
+\incantation . The wizard is wearing plate mail (100 kg), a 20 kg shield and
+wielding a 15 kg weapon. His encumbrance is 100 + 10 + 45 = 155. Thus, his
+threshold for failure is 155 + 5 - 4 = 156 or just about 3/4 failure rate.
+
+There is no special bonuses for using magical equipment, although, it is
+clear that magical armour and weapons make things better through their weight.
+
+\section{Enchantments}\label{sec:enchant}
+\index{equipment, magic}
+
+Some items will have numerical values such as +1, +2, +3, etc.
+trailing their names. These {\em magic} values indicate that the item
+is enchanted,
+and in some way may be better or (if the value is negative) worse
+than ordinary runaday items of its kind.
+
+\subsection{Enchanting armour}\index{enchantment, armour}\index{armour}
+
+Enchantment of armour is achieved with the
+{\em enchant armour}\inputimage{scrolls}\ scrolls.
+Each time you successfully use a scroll, you will
+add a plus value, more armour to the piece of equipment and
+some fractional amount of weight.
+
+You may only add up to 1 + (overall {\tt level}/10) (rounded down like an
+integer) in pluses to any one piece of armour. How much
+armour value you add to the item is also dependent on your
+overall {\tt level}. You may never enchant a piece of armour to
+have an armour rating greater than their overall {\tt level} or 99.
+
+\subsection{Enchanting weapons}\index{enchantment, weapons}
+\index{weapons}
+
+This is done via a series of scrolls\inputimage{scrolls} that you
+may find or buy in
+shops. The procedure is done in two steps. Use the {\em prepare weapon} scroll
+to lay a magic matrix on your weapon. Then use any of the other
+scrolls to add enchantments you want. Note that some of these scrolls will
+also require a ``sacrifice'' to be made when they are read. To sacrifice
+an object just stand over it when you read the weapon scroll. Scrolls
+for weapon enchantment are: \\
+
+{\bf Prepare weapon} \\
+Diamonds are required for the sacrifice. The item
+can be enchanted the square root of the number of diamonds sacrificed. Thus,
+if 100 diamonds are sacrificed, the weapon can have 10 other enchant scrolls
+read. \\
+
+{\bf Improve damage} \\
+     There is no sacrifice. Each scroll read will increase the damage by 5
+     points, and the weight by 5 kilograms. \\
+
+{\bf Lower (Improve) Weight} \\
+     There is no sacrifice. Each scroll read will reduce the weight by 20\%.
+     The minimum weight a weapon can have is 1 gram. \\
+
+{\bf Enchant weapon} \\
+     This does not require any sacrifices, and increases the magic by 1. \\
+
+{\bf Improve Stat} (ie, Strength, Dexterity, etc) \\
+     The sacrifice is the potion\inputimage{potion} of the same type
+as the ability to be
+     increased (ie, Improve Strength requires strength potions). The number
+     of potions needed is the sum of all the abilities the weapon presently
+     gives multiplied by 2. The ability will then be increased by 1 point.
+     Thus, if a sword is Int +2 and Str +2, then 8 potions would be needed to
+     raise any stat by one point. But if the sword was Int +2, Str +2, and Wis -2,
+     then only 4 potions. A minimum of 2 potions will be needed. \\
+
+{\bf WARNING:} something to keep in mind before you start enchanting
+like crazy$-$you can only use a weapon that has 5 + 1 enchantments
+for every 5 levels of
+{\tt physique} experience you possess. So, a character with
+10th level in the {\tt physique} experience category may only be able to
+use a weapon with a maximum of 7 enchantments!

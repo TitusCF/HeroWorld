@@ -1,0 +1,58 @@
+/**
+@fn obj::move_on
+@section Use
+<table>
+	<tr>
+		<th>Type(s)</th>
+		<th>Description</th>
+	</tr>	<tr>
+		<td>
+@ref page_type_112
+		</td><td>            The movement types this director affects.</td>
+	</tr>
+	<tr>
+		<td>
+@ref page_type_66
+		</td><td>            If set, the player will auto-apply the exit with these movement
+            types. This must be set for the invisible exits for example. If
+            unset, the player has to step onto the exit and press 'a' to get
+            transferred.</td>
+	</tr>
+	<tr>
+		<td>
+@ref page_type_40
+		</td><td>                Move creatures using these movement types..</td>
+	</tr>
+	<tr>
+		<td>
+@ref page_type_94
+		</td><td>            Make creatures using these movement types fall into the pit.
+            Movement types other than walking is not the behavior expected from
+            a pit, and it should only be used for map-mechanisms (e.g. for
+            transporting flying monsters). An interesting side-effect: If this
+            flag is enabled, spell effects like fire/snow also make their way
+            through the pit.</td>
+	</tr>
+	<tr>
+		<td>
+@ref page_type_69
+		</td><td>            If set, the player can enter/leave the shop by using these movement
+            types.</td>
+	</tr>
+	<tr>
+		<td>
+@ref page_type_98
+		</td><td>            If set, the player gets the message when using these movement types
+            on top of the object. "invisible 1" should be set in this case. This
+            is the typical configuration for a "magic_mouth": The player walks
+            through a dungeon and suddenly he gets a message. Use this to create
+            some roleplay atmosphere, and to inform the player about possible
+            dangers or secrets.</td>
+	</tr>
+	<tr>
+		<td>
+@ref page_type_90
+		</td><td>            The movement types this spinner affects.</td>
+	</tr>
+
+*/

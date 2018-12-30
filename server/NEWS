@@ -1,0 +1,15 @@
+Latest revision news:
+
+If updating from 1.3 or earlier to 1.4, be aware that the location
+of some configuration files has moved from ${PREFIX}/share/crossfire
+to ${PREFIX}/etc/crossfire. The files in question are:
+
+ban_file  dm_file  exp_table  forbid  motd
+settings  skill_params  spell_params
+
+ If you have customized these files, you should manually copy them
+over from the old location to the new location.  Like before, the install
+process will not clobber these files if they exist.
+
+Mark Wedel
+Sept 14, 2002

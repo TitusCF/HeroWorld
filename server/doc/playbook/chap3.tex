@@ -1,0 +1,548 @@
+
+\chapter{Playing \cf}
+
+\section{Basics}\label{sec:basic}
+
+In this section, several basic bits of information are detailed in
+a concise way in rough order of importance.
+Various pointers to other sections of this document will help you to
+round out your knowledge if you want to. All of the available player
+commands are concisely explained in appendix \ref{app:commands}. You
+can always get a summary of available commands while playing the game;
+hit ``{\tt ?}'' for help. \\
+
+\subsection{How to do simple stuff} \index{How to do simple stuff}
+
+\subsubsection{Move around and attack}\index{commands, movement}\index{movement}\index{combat}\index{running}
+Movement is accomplished with the mouse, or
+with the same keys that some rouge-like computer games use. To move using
+the mouse, position the cursor over a square you wish to move to
+in the view window
+then click the right hand button. If you want to use the keys, here's a
+simple diagram of where the various movement keys will take you: \\
+\begin{center}
+\begin{tabular}{ccccc}
+{\tt y} &  & {\tt k} &  & {\tt u} \\
+  & $\nwarrow$  & $\uparrow$  & $\nearrow$ &   \\
+{\tt h} & $\longleftarrow$ & .  & $\longrightarrow$ & {\tt l} \\
+  & $\swarrow$  & $\downarrow$  & $\searrow$ &   \\
+{\tt b} &  & {\tt j} &  & {\tt n} \\
+\end{tabular}
+\end{center}
+The ``{\tt .}'' refers to yourself; you don't move anywhere when you
+press it.
+In order to ``run'' in a particular direction (i.e. move continuously
+without having to repeatedly punch the key) hold down the control
+key then hit any movement key or the right hand mouse button to
+start moving. Release the {\tt $<$control$>$} key when you wish to stop running.
+
+If you move into something, you will attack it. This means walls,
+doors, and monsters will be damaged if you hit them. Players and
+friendly monsters may also be attacked in this way, but only if
+you set the peaceful flag to ``off''. To learn more about the combat
+system see section \ref{sec:combat}. \\
+
+\subsubsection{Pickup stuff}\index{commands, pickup}\index{picking up items}
+To pickup items, move over the item, then either hit the ``{\tt ,}'' key
+or move the cursor over to the look window, position it over the desired
+item and click the left mouse button. You will see the item appear in your
+inventory window. If you pick up too much stuff, you won't be
+able to see it all at once. Use the ``{\tt $<$}'' and ``{\tt $>$}'' keys
+to rotate through the inventory list. \\
+
+\subsubsection{Applying stuff: wear armour, wield a weapon, eat, and so on.}\index{commands, apply}
+Most of the time, in order to manipulate or ``{\tt apply}'' items you have
+to be holding them. Move the cursor over to the desired item in the
+inventory window. By using the middle button on the mouse, you may
+toggle the status (ie between ``applied'' or ``unapplied'') of items.
+Note that
+some items when applied will be used up (they disappear from the
+inventory window). Examples of these kind of
+items include ``food''\inputimage{foodone}, ``potions''\inputimage{potion},
+and ``scrolls''\inputimage{scrolls}.
+To learn more
+about the uses of various items see chapter \ref{chap:equip}. \\
+
+\subsubsection{Shoot a ranged weapon}\index{commands, fire}\index{bows}
+\index{wands}\index{rods}\index{horns}
+Ranged weapons include bows\inputimage{bows}, wands\inputimage{wands},
+rods\inputimage{rods}, or horns\inputimage{horns}. Apply the desired
+weapon, then check to see that the {\tt Range:} slot in the status window
+indicates that item is ``readied'' (yes...you can have something applied but
+not readied). If its not ready, use either the plus or minus keys to
+rotate though all of the slots. Once readied, use the ``{\tt $<$shift$>$}'' key
+followed by a movement key to fire the object in that direction. Alternatively,
+place the cursor in the view window, then hit the middle mouse button to fire. \\
+
+\subsubsection{Enter a building or boat.}\index{commands, apply}
+\index{entering buildings}\index{movement}\inputimage{guild}
+Move over on top of the desired structure. Then hit either middle mouse
+button while the cursor is on the icon of the structure in the look window,
+or hit the {\tt A} key. If there is a link to a map drawn of the ``inside''
+you will be taken there. If no link exists, you will get the message
+``{\tt the $<$structure$>$ is closed.}''. \\
+
+\subsubsection{Use a skill}\index{commands, ready\_skill}
+\index{skills, how to use}
+In order to use a skill, it must first be readied. You can ready any skill
+you have with the {\tt ready\_skill} command. Also, some skills will
+auto-matically be readied when you undertake certain
+actions. For example, if you run into a hostile monster with a wielded weapon
+the {\tt melee weapons} skill is readied. A ready skill will show up in the
+stat window in the {\tt Range:} slot. If a skill doesn't appear in the slot, rotate
+the range slot to check for the skill. When a skill is readied, the range slot will
+appear as ``{\tt Skill: $<$skill$>$}'' (otherwise it appears as
+``{\tt Skill: none}'').
+To use the skill, make a ``ranged attack'' (ie hit the same keys or
+mouse button as for firing a wand). To learn more about the skills
+system see chapter \ref{chap:skills}. \\
+
+\subsubsection{Cast a spell}\index{spells, how to use}\index{commands, cast}
+\index{talisman}\index{holy symbol}
+In order to ``{\tt cast}'' spells (either \incantation s or prayers), you must have
+the skills of {\tt \spellcasting\ } (\incantation s) or {\tt praying} (prayers).
+Possession
+of a ``talisman''\inputimage{talisman}\ or a ``holy symbol''\inputimage{holysymbol}\
+will also allow you to respectively {\tt cast} \incantation s or prayers). You can
+only {\tt cast} those spells you have {\em learned}. Issue the meta-command
+{\tt `cast $<$spell$>$} to ready a spell in the {\tt Range:} slot. To
+``fire'' the spell, make
+a ranged attack. Note! if you don't have enough mana a\ina\ \incantation\
+{\em} will fail.
+If you don't have enough grace a prayer {\em may} work. For more information
+concerning the magic system see chapter \ref{chap:magic}.
+
+\subsection{Saving the game and ending the \cf\ session:}\index{commands, quit}
+\index{commands, save}\index{quitting}\index{saving}
+
+The {\tt save} command is to provide an emergency backup in case of a game crash.
+To save your player at the end of your game session you must find a ``Bed to
+reality''\inputimage{savebed}, move your player over it and
+{\tt apply} it (``{\tt A}''). These beds can usually be
+found in the inns and
+taverns dotted around the maps (especially in cities). This prevents you
+just saving anywhere and forces you to finish what you are doing and return
+somewhere safe.
+
+\subsection{About NPCs}\index{commands, say}\index{commands, \"}
+\index{NPC}\index{talking}
+{\em N}on {\em P}layer {\em C}haracters are special
+``monsters'' which have ``intelligence''. Players
+may be able to interact with these monsters to help solve puzzles and find
+items of interest. To speak with a monster you suspect to be a NPC, simply
+move to an adjacent square to them and push the double-quote, ie. {\tt "}. Enter
+your message, and press {\tt $<$return$>$}. You can also use the meta-command
+{\tt 'say} if you feel like typing a little extra.
+
+Other NPCs may not speak to you, but display intelligence with their
+movement. Some monsters can be friendly, and may attack the nearest of your
+enemies. Others can be ``pets'', in that they follow you around and help you
+in your quest to kill enemies and find treasure.
+
+
+\subsection{Important special items}
+
+There are many special items which can be found in \cf , of those shown
+below, the most important may be the signs. \\
+
+$\bullet$ {\bf Signs:}\index{signs}\inputimage{sign}
+
+Signs often have messages that might clue you in on quests and puzzles
+or even refer you to NPCs. It is your job as a player to make sure you
+read every sign to make sure you do not miss things. \\
+
+$\bullet$ {\bf Handles and Buttons:}\index{handles}\index{buttons}
+\inputimage{handbutt}
+
+These items can often be manipulated to open up new areas of the map.
+In the case of handles, all a player must do is apply the handle. In
+the case of buttons, the player must move items over the button to
+"hold" it down. Some of the larger buttons may need very large items to
+be moved onto them, before they can be activated. \\
+
+$\bullet$ {\bf Gates and locked doors:} \inputimage{gatedoor}
+\index{doors}\index{gates}
+
+Gates are often tied to a handle or button and can only be opened by
+manipulating the the handle/button. Doors that are locked can either be
+smashed down by attacking the door, by using keys\inputimage{keys}\
+which can be found
+throughout the game, or by picking the lock. \\
+
+$\bullet$ {\bf Pits:}\inputimage{pit}
+\index{pits}
+
+Pits can be doorways to new areas of the map too, but be careful, for
+you could fall down into a pit full of ghosts or dragons and not be
+able to get back out! \\
+
+$\bullet$ {\bf Break away walls:}\inputimage{br_wall}
+\index{walls}
+
+Are a common occurrence in \cf . These type of walls can be
+"destroyed" by attacking them. Thus, sometimes it may be worth a
+player's time to test the walls of a map for ``secret doors''. \\
+
+$\bullet$ {\bf Fire walls:} \inputimage{fr_wall}
+
+Will shoot missiles (including bullets, lightning, etc.) at players.
+Some firewalls can be destroyed while others cannot. \\
+
+$\bullet$ {\bf Spinners and Directors:} \inputimage{dir_spin}
+\index{spinners}\index{directors}
+
+These odd items will change the direction of any item flying over them,
+such as missile weapons and spells. \\
+
+
+\section{Matters of life and death}
+
+\subsection{Attack system}
+\label{sec:combat}
+\index{combat}\index{attacktypes}\index{slaying}\index{Dam}\index{Wc}\index{Ac}
+
+Every time you make an attack, your attack is classified with one or more
+``attacktypes''. For example, an attack made with a ordinary sword
+results in the attack being made with the attacktype of ``physical''.
+For another example, if a Mage attacks with a fireball spell the
+attack is made with the ``magic'' and ``fire'' attacktypes. In
+similar fashion, a defender may be protected, vulnerable, or immune
+to any attacktype. \\
+
+\noindent{Here} is a summary of the attack system; in fact, its a
+bit more complicated. \\
+
+\subsubsection{Hitting an opponent}
+\indent{Several} quantities are involved in determining whether an attack will
+hit its target.  The attacker will hit if his {\tt Wc} is less than or equal
+to the
+defender's {\tt Ac} + 1D20\footnote{a random number between 1 and 20} or
+if the D20 gives a 20 (remember, both {\tt Wc} and {\tt Ac} improve as
+their value drops {\em lower}).\\
+
+\subsubsection{Damaging a hit opponent}
+\indent{Damages} are randomly generated, with the magnitude of the random number
+being based on the attacker's {\tt Dam} stat.
+If defender is immune to an attacktype
+in the attack, he receives no damage, if he's protected he receives
+half damage, if he's vulnerable to this kind of
+attacktype, he receives double damage. For physical attacks, the percent
+of your {\tt Arm} value is subtracted from incoming damage.
+Some magic weapons can ``slay'' various races of creatures. If the weapon
+slays the defender, the attack damage is tripled.
+
+
+\subsection{Experience}\label{sec:experience}\index{experience}
+\index{experience, categories}\index{level, overall}\index{level}
+
+Accumulation of experience will result in increasing the {\tt level} of the
+player's character. In a \cf\ game where skills are {\em not} present,
+experience is only gained for removing traps and killing monsters.
+A player will gain a new {\tt level} when their
+experience total reaches a new amount in the hierarchy shown
+in table \ref{tab:exp_level}.
+
+In the skills-based game, {\em several} kinds of experience exist. The
+{\tt score} represents the ``{\em overall}'' proficiency of the player
+and is the
+{\em sum} of all the differing kinds of experience possessed.
+
+The player accumulates experience into various ``{\em experience
+categories}'' according to their actions.
+Another way of putting this is that you become better
+at what you do most often and most successfully. For example,
+a player who kills monsters with \incantation s gains experience in
+casting \incantation s. A player who steals from creatures often will
+get better at stealing, and so on.
+
+Each experience category will have a {\tt level} assigned to it based on
+the amount of experience accumulated in it (using the same schedule
+ shown in table
+\ref{tab:exp_level}). Use the {\tt skills} command to
+investigate which skills your character has and to see the {\tt level} of
+ability you have in each experience category. See chapter
+\ref{chap:skills} for more information about skills and skill-based
+experience.
+
+As an aside, monsters {\em also} are assigned a {\tt level} of proficiency
+and may gain experience. The main way which monsters gain experience
+is by {\em killing} players! Beware going after a monster that has
+killed several players, it will be much more difficult to challenge!
+
+\begin{table}
+\begin{center}
+\caption{Relationship between experience and {\tt level} for the first
+10 levels. \label{tab:exp_level}}
+\vskip 12pt
+\small
+\begin{tabular}{|rl|}
+\hline
+{\tt Level}	& \multicolumn{1}{c|}{Experience} \\ \hline\hline
+\input{levels}
+... & ... \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\subsection{Calculation of selected secondary stats}\label{sec:stat_calc}
+\index{stats, secondary}
+
+Both the primary stats and {\tt level} of the character will influence
+the secondary stats given below. In the skills-based game, the
+appropriate experience category\footnote{categories
+are given for the default settings, this can be changed by the
+server administrator} is identified for purposes of determining
+which {\tt level} is used in the calculation. In the non-skills
+game, the {\em overall} {\tt level}\index{level, overall} is always used.
+
+Refer to table \ref{tab:pri_eff} if a quantity in a calculation is
+left unexplained.
+
+\subsubsection{Weapon class ({\tt Wc})}\index{Wc}\index{stats, Wc}
+The {\tt Wc} calculation is:
+\begin{quote}
+class {\tt Wc} - {\tt thaco}(STR)\index{thaco} - weapon {\tt Wc} - {\tt level} - 1 every 6 {\tt level}s
+\end{quote}
+where {\tt thaco} is found using the STR stat on table \ref{tab:pri_eff},
+the weapon {\tt Wc}
+can be determined from the \spoiler\ and the {\tt level} is taken from the
+{\tt physique} experience category.
+
+\subsubsection{Weapon Speed}\index{stats, weapon speed}
+\index{weapon speed}
+The calculation for weapon speed is quite complex (but here it is!).
+The value for the weapon speed is:
+\begin{quote}
+{\tt speed}/({\tt LF} * {\sl NastyFactor} * {\sl LessNastyFactor})
+\end{quote}
+where {\tt LF} (``level factor'') is a number between 0.8 and 1.2 that
+increases with the {\tt level} as (4+{\tt level})/(6+{\tt level})*1.2,
+(the {\tt level} is taken from the overall {\tt level}),
+and both {\sl NastyFactor} and {\sl LessNastyFactor} are calculated below.
+
+The value of {\sl NastyFactor} is:
+{\small
+\begin{quote}
+2/3 + {\tt MaxC}/363 - ((0.00167*{\tt WpnW})/{\tt MaxC}) + ({\tt speed}/5) + ((Dex-14)/28)
+\end{quote}
+}
+\noindent{where} {\tt MaxC} is the maximum carrying
+limit of the character, {\tt WpnW} is
+the weapon weight. Weapon weight can be determined from examining the given
+weapon (ie look at the number to the right side of the weapon icon in the
+inventory window).
+
+The value of {\sl LessNastyFactor} is:
+\begin{quote}
+2 - ((WpnF - {\tt magic}/2)/10)
+\end{quote}
+where {\tt WpnF} is the ``weapon factor'' and {\tt magic} is the
+value of the enchantment on the weapon (i.e. $+$1, $+$2, etc.).
+Weapon factor\index{weapon factor} is given for some weapons
+in table \ref{tab:weap_factor}. \\
+
+\begin{table}
+\begin{center}
+\caption{Weapon factor ({\tt WpnF}) for selected weapons}\label{tab:weap_factor}
+\small
+\vskip 12pt
+\begin{tabular}{|crlc|} \hline
+	& & & \\
+       &  1.6 & nunchacu &  \\
+       &  1.5 & dagger & \\
+       &  1.4 & Sting, katana, shortsword, taifu & \\
+       &  1.3 & Belzebub's sword, Darkblade, Excalibur & \\
+       &  1.2 & Firebrand, Frostbrand, Mjoellnir, Mournblade, &  \\
+       &      & Stormbringer, broadsword, falchion, light sword & \\
+       &      & long sword, quarterstaff, sabre, sword, trident & \\
+       &  1.1 & Deathbringer, Demonbane, Dragonslayer, Holy Avenger & \\
+       &      & club, hammer, mace, unicorn horn & \\
+       &  1.0 & axe, stonehammer & \\
+       &  0.9 & Skullcleaver, morningstar, stake, stoneaxe & \\
+       &  0.8 & large morningstar & \\
+       &  0.5 & Bonecrusher, Gram, shovel & \\
+       &  0.3 & large club &  \\
+       &  0.1-0.4 & chair & \\
+       &  0.1 & bed & \\
+	& & & \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+\subsubsection{Damage ({\tt Dam})}\index{stats, Dam}\index{damage}
+
+Current weapon, character class
+(table \ref{tab:char_cls}) and STR ({\tt DmB} in table \ref{tab:pri_eff})
+all effect the value of {\tt Dam}. The calculation for {\tt Dam} is:
+\begin{quote}
+Class bonus $+$ {\tt DmB} $+$ Weapon damage $+$ Skill damage
+\end{quote}
+In addition, for every 4 levels of fighting expertise ({\tt physique}
+experience category level) 1$+$({\tt Dmb}/5)) is added to {\tt Dam}.
+Some skills (namely the hand-to-hand, or martial arts skills)
+can add significant damage to the overall total. The amount
+that is added depends on the user's {\tt level} in that skill.
+Note that weapon damage is automatically added to your damage
+rating in the stat window when you wield any weapon.
+
+
+\subsubsection{Armour class ({\tt Ac})}\index{stats, Ac}\index{Ac}
+
+For characters that cannot wear armour (ex. Fireborn), their
+{\tt Ac} can improve as their score increases. The calculation for {\tt Ac} is then:
+\begin{quote}
+Class {\tt Ac} $-$ {\tt level}/3
+\end{quote}
+The value of the character {\tt Ac} may decrease to the value of -10.
+After that, no more improvement is made regardless of earned
+experience. The overall {\tt level}\index{level, overall} is
+{\em always} used for this calculation.
+
+
+\subsubsection{Hit points ({\tt Hp})}\index{hit points}\index{stats, Hp}
+
+A character will gain the following number of {\tt Hp} for {\em each} new
+overall {\tt level} gained between levels 1$-$10:
+\begin{quote}
+({\tt HpB})/2 + D4 + D4 + 1 + 1/every even {\tt level} {\em if} {\tt HpB} is even.
+\end{quote}
+Where D4 is a random number between 1 and 4 and you always get 1 hit point
+gained per {\tt level}, regardless of {\tt HpB}.
+For levels after 10th, {\tt Hp} grow 2 per {\tt level}.
+The overall {\tt level} provides the correct value for {\tt level} in
+the calculation.
+
+
+\subsubsection{Mana ({\tt Sp})}\index{mana}\index{stats, mana}
+
+A character will gain the following number of {\tt Sp} for {\em each} new
+{\tt magic} experience category {\tt level} gained between levels 1$-$10:
+\begin{quote}
+({\tt MgB}(POW))/2 + D3 + D3 + 1 every even {\tt level} {\em if} {\tt MgB} is even.
+\end{quote}
+Where D3 is a random number between 1 and 3 and you always get 1 mana gained
+per new {\tt level}. For {\tt magic} levels past the 10th, mana grows 2 per level.
+
+
+\subsubsection{Grace ({\tt Gr})}\index{stats, grace}\index{grace}
+
+A character will gain the following number of {\tt Gr} for {\em each} new
+{\tt wisdom} experience category {\tt level} gained between levels 1$-$10:
+\begin{quote}
+({\tt MgB}(WIS) + {\tt MgB}(POW))/8 + D3
+\end{quote}
+Where D3 is a random number between 1 and 3 and you always get 1 grace gained
+per new {\tt level}. For levels past the 10th,
+grace grows 1 per {\tt wisdom} {\tt level}.
+
+\subsection{Death $---$ the ultimate penalty?}\label{sec:death}
+
+Should your hit point total drop below 0 you will die\inputimage{gravestone}.
+What happens next depends on the options the server administrator choose.
+
+If the {\tt NOT\_PERMDEATH} option is being used (this is the default) then your character
+ (and his all of his {\em carried}
+equipment at the instant of death) will appear at the last savebed you used.
+
+For each time you die, your character loses 20\% (this is the default and can be different
+depending on the server).
+of their experience (in all categories) and a random primary stat decreases by 1.
+At low levels, the stat loss is bad news, while it is the experience loss that
+{\em really} hurts at those high levels. You may still re-gain lost stats (up to your
+natural limit) by drinking potions.
+
+If the server administrator has made death permanent, there is still hope
+for your character. When the {\tt RESURRECTION} option is enabled (the default option
+when {\tt NOT\_PERMDEATH} is {\em not} being used) other characters may bring you back
+from the beyond. There are 3 spells that are capable of doing this, but
+you may need to retrieve the corpse\inputimage{corpse}\ of the character
+that is to be resurrected!
+
+
+\section{Some advanced stuff}
+
+\subsection{Some useful advanced commands}
+
+\subsubsection{Meta-command ({\tt '}) }\index{meta-command}\index{commands, meta}
+Any command listed by the use of help ({\tt ?} key) can be
+used by spelling it out after the meta-command is issued. For example, you
+can use the command {\tt say} either by hitting the double-quote ({\tt "} key) or
+by issuing the command string {\tt 'say}.
+
+\subsubsection{Binding commands ({\tt 'bind} and {\tt 'unbind})}\index{binding}\index{unbinding}
+\index{commands, bind}
+\index{commands, unbind}
+You may bind any key with a complex command. For example, you could
+bind the use of the meditation skill to the key ``{\tt m}''. To do this first
+type:
+\begin{quote}
+{\tt 'bind use\_skill meditation }
+\end{quote}
+then press {\tt $<$return$>$}. The game will then ask you for a key to bind the
+command to, you then hit {\tt m}. You can also re-bind this key to something
+else later if you wish too. Issue the command:
+command:
+\begin{quote}
+{\tt 'unbind reset }
+\end{quote}
+to totally reset bindings on keys.
+
+\subsubsection{Pick up toggle ({\tt @})}\index{picking up items}\index{commands, pickup}
+This allows you to change your pickup status. Eight different modes
+for pick up exist: ``don't pick up'',``pick up 1 item'', ``pick up 1 item and
+stop'', ``stop before picking up'', ``pick up all items'', pick up all items
+and stop'', ``pick up all magic items'', ``pick up all coins and gems''.
+Whenever you move over a pile of stuff your pickup mode controls
+if and what you collect. You can always pickup stuff using the pickup
+command ({\tt ,}) regardless of your current pickup mode.
+
+\subsubsection{Invoke ({\tt 'invoke})} \index{commands, invoke}
+A useful way to quickly cast both \incantation s and prayers is via the invoke
+command. To use it effectively, {\tt bind invoke $<$spell$>$} to any
+key. Then, when that binded key is pressed, your character will cast that magic
+in the direction they're currently facing.
+
+\subsection{Playing with other people}
+
+As a general rule, other \cf\ players will prefer to co-operate or
+at least leave each other alone. If you go about killing other player's
+characters you may not only risk their continued wrath, but the anger of
+the server administrator as well. Check out the house rules before you
+start slaying players.
+
+\subsubsection{Useful multi-player commands}
+
+Here are some useful commands for playing with other players: \\
+
+\noindent{\bf\tt shout}\index{commands, shout} \\
+This meta-command will broadcast your message to every player currently
+logged in. The say command only sends messages to players who share your
+current map. Invoke this command just like {\tt say}.\\
+
+\noindent{\bf\tt  who}\index{commands, who} \\
+This will give you a listing of all the current players and the maps
+they are on currently. Invoke this command as {\tt 'who}.\\
+
+\noindent{\bf\tt tell}\index{commands, tell} \\
+Will send your message only to the player indicated. It is invoked as:
+{\tt 'tell $<$character name$>$ $<$message string$>$}.\\
+
+\subsubsection{The simple party system}\index{party system}\index{commands, party}
+If the {\tt SIMPLE\_PARTY\_SYSTEM} has been enabled on your server you can
+use this to adventure with other players. All experience gained by
+members of the party is split equally, and in addition, party members
+are always peaceful towards each other. Here's 2 useful party commands:\\
+
+\noindent{1)} To form a party issue the command:
+\begin{quote}
+{\tt 'party form $<$party name$>$ }
+\end{quote}
+2) To join a party, type:
+\begin{quote}
+{\tt 'party join $<$party name$>$ }
+\end{quote}
+To see all of the options, type {\tt 'party help}.
+
+

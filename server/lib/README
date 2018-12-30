@@ -1,0 +1,96 @@
+Generated files:
+----------------
+
+The "collect.pl" file is a script to generate the other files in this section.
+To run it, one inserts a symlink to the arch directory in the current directory,
+and then runs "make collect".
+
+These files are moved into $PREFIX/share/crossfire by default.
+
+The "archetypes" file contains lots of generalized objects which makes it
+easier for the program to use similar items over and over again.
+
+The "smooth" file contains data for the tile smoothing feature.
+
+The "animations" file contains named animations.
+
+The "bmaps" file contains as list of which face name is associated with which
+face number.
+
+The "bmaps.paths" file contains as list of which image path is associated with
+which face number.
+
+The "crossfire.0" and "crossfire.1" files contain all of the image files from
+the archetypes.
+
+The "faces" file contains a list of what magicmap colors are associated with
+which image faces.
+
+The "treasures.bld" file contains all kinds of randomized treasure. This file
+is created the "treasures" file in addition to the archetypes.
+
+
+Non-generated game data files:
+------------------------------
+
+These files are moved into $PREFIX/share/crossfire by default.
+
+The "treasures" file contains all kinds of randomized treasure, to be used when
+an archetype is generated from the "archetypes" file.
+
+The "artifacts" file defines artifacts, which are modified versions of normal
+objects, which randomly appear.
+
+The "image_info" file defines different tilesets.
+
+The "messages" file contains messages to be inserted in random books.
+
+The "formulae" file contains "alchemy formulae" for alchemy and other crafting
+skills.
+
+The "races" file contains a list of defined races (archetypes don't have to
+use those races though), it also serves as a summoning list file.
+
+The "attackmess" file contains messages for players to recieve when they hit
+something or are hit by something.
+
+The "materials" file defines named materials.
+
+The "def_help" file contains the help message to display to players when they
+type the "help" command with no parameter.
+
+The "help" directory contains entries for the "help" command.
+
+The "wizhelp" directory contains entries for the "help" command for dm commands.
+
+The directory "adm", if it is here, contains administrive scripts and their
+log-files.
+
+
+Settings files:
+---------------
+
+These files are moved into $PREFIX/etc/crossfire by default.
+
+The "motd" file contains any messages to the players as they connect. In the
+motd you can also use mediaTags, as defined in ../doc/mediaTags.
+
+The "news" is intended for server news, and it is also displayed to players as
+they commect. mediaTags can be used as in the motd.
+
+The "rules" is intended for server rules, and it is also displayed to players as
+they commect. mediaTags can be used as in the motd.
+
+The "forbid" file, us for settings times that playing on the server is
+disallowed.
+
+The "ban_file" file contains a list of users or sites that are banned from the
+server.
+
+The "dm_file" file contains a list of which users/passwords/hosts are allowed
+dm access.
+
+The "exp_table" file contains the table of how much experience is required for
+each level.
+
+The "settings" file contains settings for the server

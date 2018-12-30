@@ -1,0 +1,26 @@
+# stats-extract - parse the archetypes-file and output the
+# player's stats in a structured format.
+
+/^Object/ {
+	randomitems = "";
+	name = obj = $2;
+	type = 0;
+}
+
+/^type/         { type = $2 }
+/^randomitems/	{ randomitems = $2 }
+/^name/		{ name = substr($0, 6) }
+
+/^end/ {
+	if (type == 1) {	# Players
+		printf("%s,%s\n", decapitalize(name), randomitems);
+	}
+}
+
+END {
+	close("items");
+}
+
+function decapitalize(str) {
+        return tolower (substr(str, 1, 1)) substr(str, 2);
+}

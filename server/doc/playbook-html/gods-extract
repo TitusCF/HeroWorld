@@ -1,0 +1,80 @@
+
+# parse the crossfire -m8 output
+
+BEGIN {
+	crosscmd = crosscmd " 2>&1";
+	god = 0;
+	while (crosscmd | getline buff == 1) {
+	   if(buff ~ /GOD/) { god++; gift[god] =0; name[god] = get_entry(buff,2," "); }
+	   if(!god) continue;
+	   if(buff ~ /enemy:/) enemy[god] = get_entry(buff,2," ");
+	   if(buff ~ /aligned/) aligned[god] = get_entry(buff,2," ");
+	   if(buff ~ /enemy_race/) erace[god] = get_entry(buff,2," ");
+	   if(buff ~ /servant/) servant[god] = get_entry(get_entry(get_entry(buff,2,": "),1,")"),2"(");
+	   if(buff ~ /Attacks:/) atype[god] = get_entry(get_entry(buff,2,": "),1,")");
+	   if(buff ~ /Immune:/) immune[god] = get_entry(get_entry(buff,2,": "),1,")");
+	   if(buff ~ /Prot:/) prot[god] = get_entry(get_entry(buff,2,": "),1,")");
+	   if(buff ~ /Vuln:/) vuln[god] = get_entry(get_entry(buff,2,": "),1,")");
+	   if(buff ~ /Attuned:/) attuned[god] = get_entry(get_entry(buff,2,": "),1,")");
+	   if(buff ~ /Repelled:/) repelled[god] = get_entry(get_entry(buff,2,": "),1,")");
+	   if(buff ~ /Denied:/) denied[god] = get_entry(get_entry(buff,2,": "),1,")");
+	   if(buff ~ /Desc:/) desc[god] = get_entry(get_entry(buff,2,": "),1,",");
+	   if(buff ~ /Priest/ || gift[god]) {
+	        if(!buff) continue;
+		special[god,gift[god]++] = buff;
+  	   }
+	   # printf(" %s \n", buff);
+	}
+	close(crosscmd);
+	for(i=1;i<=god;i++) {
+	  printf("<table border=1 cellpadding=3 width=100%%><tr><th width=20%%>%s</th><td>%s</td></tr>\n", name[i], capitalize(desc[i]));
+	  if(enemy[i]) 		printf("<tr><td>Enemy cult:</td><td>%s</td></tr>\n", enemy[i]);
+	  # if(servant[i])	printf("<tr><td>Servant:</td><td>%s</td></tr>\n ", servant[i]);
+	  if(aligned[i]) 	prt_var("<tr><td>Aligned race(s):",aligned[i],",",3);
+	  if(erace[i]) 		prt_var("<tr><td>Enemy race(s): ",erace[i],",",3);
+	  if(atype[i]) 		prt_var("<tr><td>Attacktype(s): ",atype[i],",",3);
+	  if(immune[i]) 	prt_var("<tr><td>Immunity: ",immune[i],",",3);
+	  if(prot[i]) 	 	prt_var("<tr><td>Protected: ",prot[i],",",3);
+	  if(vuln[i]) 		prt_var("<tr><td>Vulnerable: ",vuln[i],",",3);
+	  if(attuned[i])  	prt_var("<tr><td>Attuned: ",attuned[i],",",3);
+	  if(repelled[i])  	prt_var("<tr><td>Repelled: ",repelled[i],",",3);
+	  if(denied[i]) 	prt_var("<tr><td>Denied: ",denied[i],",",3);
+	  for(j=1;j<gift[i];j++) {
+	    if(j==1) printf("<tr><td>Added gifts/limits:</td><td> ");
+	    if (j!=1) print(", ");
+	    printf("%s",special[i,j]);
+	  }
+   	  if (gift[i]!=0) print("</td></tr>\n");
+	  print("</table><p>");
+	}
+}
+
+function prt_var (hstr,vstr,sep,len) {
+  printf("%s </td><td> ",hstr); prtlong(vstr,sep,len);
+}
+
+
+function get_entry (str,start,sep) {
+	nr = split(str, var, sep);
+        for(k=start;k<=nr;k++) {
+            if(var[k]==" ") continue;
+	    break;
+	}
+	while(var[k] ~ /_/ ) { sub("_", " ", var[k]); }
+  	return var[k];
+}
+
+function prtlong (str,sep,max) {
+	nr = split(str, var, sep);
+	printf("\n");
+        for(l=1;l<=nr;l++) {
+	    if(var[l] == "(null)") var[l] = "None";
+	    if(l==nr) printf("%s </td></tr>\n",capitalize(var[l]));
+	    else printf("%s,",capitalize(var[l]));
+	}
+}
+
+function capitalize(str) {
+        return toupper(substr(str, 1, 1)) substr(str, 2);
+}
+

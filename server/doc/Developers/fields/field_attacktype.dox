@@ -1,0 +1,91 @@
+/**
+@fn obj::attacktype
+@section Use
+<table>
+	<tr>
+		<th>Type(s)</th>
+		<th>Description</th>
+	</tr>	<tr>
+		<td>
+@ref page_type_158
+		</td><td>                The disease will attack the host with the given &lt;attack type&gt;.
+                Godpower attack type is commonly used for "unresistable"
+                diseases.</td>
+	</tr>
+	<tr>
+		<td>
+@ref page_type_88
+		</td><td>            This attribute specifies the attack types that this floor uses to
+            damage it's victims. Attack types are: physical, fire, cold.. etc.
+            If you want a real tough hazard floor, add more than just one attack
+            type.</td>
+	</tr>
+	<tr>
+		<td>
+@ref page_type_213, @ref page_type_28
+		</td><td>                This number is a bitmask, specifying the monster's attack types
+                for melee damage. Attack types are: physical, magical, fire,
+                cold.. etc. Strong monsters often have more than just physical
+                attack type.
+
+                When a monster with multiple attack types hits an opponent, it
+                will do as much damage as the "best" of it's attack types does.
+                So, the more attack types, the more dangerous. Attack types
+                "magic" and "chaos" are somehow exceptions.</td>
+	</tr>
+	<tr>
+		<td>
+@ref page_type_40
+		</td><td>            If forced movement is enabled, the mover "freezes" anyone it moves
+            (so they are forced to move along a chain). For players there is no
+            way to escape this forced movement, except being pushed by a second
+            player.</td>
+	</tr>
+	<tr>
+		<td>
+@ref page_type_5
+		</td><td>            There are two types of special effects for potions: 'life
+            restoration' - restore the player's stats lost by death or draining
+            (this has nothing in common with the restoration spell!)
+            'improvement' - increase the player's maximum health/mana/grace by a
+            very small amount.</td>
+	</tr>
+	<tr>
+		<td>
+@ref page_type_13
+		</td><td>            This number is a bitmask, specifying the projectile's attack types.
+            Attack types are: physical, magical, fire, cold.. etc. This works
+            identical to melee weapons. Note that shooting weapons cannot have
+            attack types.</td>
+	</tr>
+	<tr>
+		<td>
+@ref page_type_154
+		</td><td>            If there isn't any spell (and &lt;summon monster&gt; is unset), this
+            attribute defines what attack type to use for direct damage when the
+            rune detonates.</td>
+	</tr>
+	<tr>
+		<td>
+@ref page_type_155
+		</td><td>            This attribute defines what attack type to use for direct damage
+            when the trap detonates.</td>
+	</tr>
+	<tr>
+		<td>
+@ref page_type_15
+		</td><td>            This number is a bitmask, specifying the weapon's attack types.
+            Attack types are: physical, magical, fire, cold.. etc. Most artifact
+            weapons have no more than one or two attack types. Keep in mind that
+            all weapons can be blessed by the player's deity, thus adding an
+            additional attack type.
+
+            When a player hits a monster with a weapon that has more than one
+            attack type, then he will do as much damage as the "best" of his
+            attack types does. So, the more attack types you've got, the better
+            your chance to take advantage of a monster's vulnerabilities. (Btw:
+            Same rule applies for monster vs. player.). Attack types "magic" and
+            "chaos" are somehow exceptions.</td>
+	</tr>
+
+*/

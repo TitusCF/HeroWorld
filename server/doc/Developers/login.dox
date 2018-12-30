@@ -1,0 +1,57 @@
+/**
+
+@page page_connection Login, player creation
+
+The core connection structure is ::socket_struct.
+
+The ::init_sockets array, length contained in Socket_Info::allocated_sockets, contains starting at indice 0 the listening sockets for the server, initialized through init_server(). These sockets are always in use. For all listening sockets ::init_sockets[i].listen is non-NULL, for client connections it is NULL.
+
+When a client connects, a socket from ::init_sockets is reused or reallocated in do_server(). During the first connection phase, the client can issue any command in the ::client_commands array - mostly, commands to negociate the connection, request faces and various game-related information -, 'add_me' and 'reply' commands, processed by add_me_cmd() and reply_cmd() respectively.
+
+When the client sends the 'add_me' command (handled through add_me_cmd()), the socket is copied from the ::init_sockets array to the player.socket field, in add_player(), and the socket in ::init_sockets is marked as reusable.
+
+The function add_player() is responsible from initializing the player structure, and putting the player in the first map.
+
+The player then enters the ::ST_GET_NAME mode (as defined in player.state field), to get the name, then password and such.
+
+The main socket handling function is do_server(), which is responsible for reading data from sockets, both ::init_sockets and players's, and also accepting new connections. It will also close connection to dropped clients, and check for banned hosts trying to connect.
+
+The life-cycle of a connection is thus:
+<ul>
+<li> do_server() receives a new connection, and allocates a socket in ::init_sockets
+<li> handle_client() processes data from the socket, with a pl argument NULL - thus the client can only request information
+<li> the client sends add_me_cmd(). A player structure gets created in add_player(), the new player's mode is set to ::ST_GET_NAME. Socket in ::init_sockets is marked a reusable for future connections
+<li> from now on and until the player is totally logged on, client will mostly reply through reply_cmd() commands
+<li> player enters her name, and switches to ::ST_GET_PASSWORD mode
+<li> player enters her password, check_login() is called.
+ <ul>
+  <li> if the name and password match an existing player, player is loaded from disk and inserted at the last savebed, with state ::ST_PLAYING. If there is a logged on player with same name and password, she will get disconnected, thus enabling reconnection if connection was dropped.
+  <li> if the password is wrong, the player is asked again for her name, returning to ::ST_GET_NAME state
+  <li> if player doesn't exist, the player is asked for password confirmation, switching to ::ST_CONFIRM_PASSWORD
+ </ul>
+<li> when player applies a bed of reality or dies, state switches to ST_PLAY_AGAIN through a call to play_again()
+<li> if player issues the quit command, state is set to ::ST_CONFIRM_QUIT through command_quit()
+</ul>
+
+The main player creation routine is reply_cmd(), one of the few the player can issue while not playing. Creation cycle is:
+- from ::ST_CONFIRM_PASSWORD, set by check_login(), receive_player_password() will call roll_stats() and switch to ::ST_ROLL_STAT. If passwords don't match, player is returned to ::ST_GET_NAME state
+- key_roll_stat() handles the statistics management, and when completed switches player state to ::ST_CHANGE_CLASS
+- key_change_class() handles class selection. When completed, player state is set to ::ST_PLAYING, and the player can start actually playing.
+
+Function responsibilities:
+- init_server() initializes the listening server socket, detects closed / in error socket connections and drops them
+- do_server() accepts new connections, main socket handling
+- handle_client() lets the client request ingame information, and the players actually play
+- add_me_cmd() instructs the server to setup a player for the client
+- add_player() sets up a new player, and marks the the ::init_sockets socket as reusable after copying it to player.socket
+- reply_cmd() will dispatch to the various player creation/login functions
+- receive_player_name() just sets the player's name to received value, and switches to ::ST_GET_PASSWORD state
+- receive_player_password() handles password verification during creation, password modification while playing
+- check_login() handles password verification and actual player loading from disk
+- key_roll_stat() handles statistics dispatch during player creation
+- key_change_class() handles class selection
+- play_again() asks the player if she wants to play again when applying a bed of reality or dying
+- receive_play_again() handles the reply
+- leave() marks the player's socket as dead, leaving do_server() clean it
+- final_free_player() totally deletes the player structure
+*/

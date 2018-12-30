@@ -1,0 +1,24 @@
+BEGIN {
+a=11;
+b=12;
+halv=int(lengde/2);
+hopp=lengde-(2*halv);
+lim=halv+hopp;
+}
+{
+   str = toupper(substr($0, 1, 1)) substr($0, 2);
+   if (NR>lim) { num=b; b+=2;}
+   else { num=a; a+=2;}
+
+   if (NR>halv) hale="\\\\\n";
+   else hale="& \n";
+
+   if (hopp && NR==lim)
+   {
+      hale="";
+      for (i=0; i<NF ; i++) hale=hale "& ";
+      hale=hale "\\\\\n";
+   }
+
+   printf("%d &%s %s", num, str, hale);
+}

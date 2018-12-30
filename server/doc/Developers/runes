@@ -1,0 +1,95 @@
+Map Maker's Guide to Runes and Traps	(by peterm@soda.berkeley.edu)
+
+* in this document, 'rune' and 'trap' are interchangeable terms.
+
+A rune is a magical enscription on the dungeon floor.  Traps
+are just like runes except they are not magical in nature, and
+generally have a physical attack.
+
+Runes hit any monster or person who steps on them for dam damage
+in 'attacktype' attacktype.  In addition, there is a generalized
+rune which can contain any spell at all, and will cast this spell
+when it detonates.
+
+Many traps and runes are already defined in the archetypes.
+
+  Here's a guide the the fields in a Rune:  (archetype)
+
+level		--	Level the rune will cast the spell it contains at,
+			if applicable.   A level 99 rune casts a very,
+			very mean spell of whatever.  (Warning: level 0
+			runes won't detonate at all!)  Also effects
+			how easily a trap may be found and disarmed.
+
+Cha		--	Determines what fraction of the time the
+			rune is visible:  randomly visible 1/Cha of the
+			time.  Also effects how easily the trap
+			may be found.
+
+sp		--	Spell in the rune, if any (the index of the spell)
+
+slaying		--	name of the spell in the rune, if any.
+			Optional, but if present, overrides sp.
+			recommended for use by mapmakers to ensure portability.
+
+other_arch	--	spell archetype of the spell in the rune, if any.
+			Optional, but if present, overrides sp and slaying.
+
+hp		--	How many times the rune detonates before disappearing
+
+attacktype	--	If there isn't any spell, what attacktype to use
+			when the rune detonates
+
+face		--	face the rune has
+
+msg		--	What the rune says to the victim when it detonates
+
+dam		--	How much damage is done by the rune, if it does
+			not cast a spell
+
+anim		--	face1 is the default face of the rune.
+face1			face2 is the face of a rune detonation.
+face2			A detonating rune inserts a dummy object
+mina			with face2 on the square.
+
+direction	--	Direction to cast the spell the rune contains
+
+maxhp		--	Number of spells to cast
+
+
+Predefined runes for your convenience:  See the Runes pickmap on the editor
+
+
+IMPORTANT:  When making rune archetypes for spells, name the rune
+Object rune_[spell-name].  This convention makes it possible for someone
+who does 'cast magic rune <spell>' to create a rune that looks like
+your archetype.  Examples:
+Object rune_large_fireball
+Object rune_invisibility
+Object rune_improved_invisibility
+  If they're not named this way, someone can write a rune of < >
+what looks nothing like the one in the archetypes, even though it does
+exactly the same thing.
+
+All runes should be editable.  For example you might want to call up
+a rune of fire, and set its slaying so that it casts large fireball
+instead of simply burning its victim.
+
+
+Ideas:  you could blanket a floor with 1pt dam runes of fire, but with
+many hp.  Anyone walking across this blanket will be badly hurt if he's
+slow or sits on them for a long time, but could cross more or less unhurt
+if he's quick.  You could encourage a player to do something rash this
+way.
+
+  You could place Runes of Healing behind altar-controlled doors in
+temples.  Dump enough money on the altar, and you get access to the
+Rune of Healing.  (Or restoration.)
+
+  Also, you could implement a magic bank with runes of transferrence
+in the same way.  (Roscoe's energy emporium!)
+
+  A rune of Polymorph with the beam directed down a long passageway
+of monsters could REALLY cause chaos.  Oohhhhh, fun, fun fun!!
+Runes of lightning oriented down long passageways could be lots of
+fun as well!

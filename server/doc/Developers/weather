@@ -1,0 +1,118 @@
+Note: weather was removed in trunk.
+
+This file is for historical purposes only.
+
+
+
+
+$Id: weather 13746 2010-09-06 17:38:57Z ryo_saeba $
+Guide to basic crossfire weather system:
+
+1) As a DM, how do I turn on the weather?
+
+In your settings file, there are a few settings that affect weather.  To
+turn on weather, you must turn on the worldmap* settings.  Simply
+uncomment them, and leave them as the defaults.  Second, you want to set
+dynamiclevel to something you are happy with:
+
+Dynamiclevel:
+
+0) No weather.
+1) Weather happens, players are affected, but there are no visual cues.
+2) Weather creates visual effects on the map, like puddles, rain, fog, etc.
+3) Weather creates items on the map, like herbs, flowers, apples in
+trees, etc.  Possibly trees defoliate in the winter, etc.
+4) Rivers and lakes will appear as a product of rainfall, snowmelt.
+5) The map will be entirely dynamic.  Trees and deserts will appear
+depending on the weather conditions in those areas.
+
+When you first start the weather system, it will generate all the basic
+maps for the weather.  These maps are located in your var directory.
+Each map will contain data for the world on things like elevation,
+humidity, sky conditions, temperature, etc.  The initial generation of
+the elevation, water and humidity maps takes about 30 minutes on a fast
+machine.  You will only have to suffer through this once, unless you
+delete one of those maps.  If you delete one, it is advised to delete all
+three of those, as they are generated in one pass.  If you feel some part
+of the weather has gone out of control, you can delete the maps at any
+time, and regenerate them at startup.
+
+As the game sits idle, it will slowly process the worldmap, adding
+weather.  For a newly started server, this can lead to blockiness in the
+weather.  It is advised that you set the fastclock setting to 1, and run
+the game for an hour or two (without players), to let the weather smooth
+out.  As it runs, it will depost overlay maps of the world in
+var/maps/world.  When you have 900 of these, it has made one pass.  It's
+not advised to run the game in fastclock mode normally.
+
+If you want to see the weather visually, compile the "maps" program in
+the utils directory.  (gcc -o maps maps.c).  Go to your var directory,
+and run it there.  It will process your *map files, and generate ppm's
+you can look at, to see the weather formations.
+
+
+2) How does the weather work?
+
+There are two types of things in the weather system.  Computed values,
+and random values.
+
+Pressure is the only random value.
+
+The world is divided into a 100x100 grid of "weathermap squares" (WM).  Each
+square is computed every game hour.
+
+The game computes humidity by looking at the amount of water in the
+current WM.  It then compares the pressure of nearby squares, to compute
+wind direction and speed.  Humidity is pushed to nearby squares, via the
+wind.  The temperature is mostly static, but is computed by the distance
+from the poles (NW and SE corners of the map) and the current season.  In
+addition, the elevation of the area is taken into effect, as is
+windspeed.  The equator moves up and down the map, as the seasons change,
+to simulate a reverse season for north and south hemispheres.
+
+Once the game has all of these values, it compares them against
+eachother, and computes the sky conditions for the current WM.  After
+computing the sky conditions, the game then performs the actual changes
+(if any) to the maps.
+
+Changes to the map occur under two conditions:  1)  The map was entered
+by a player.   2) The game loads and saves 1 tile per game hour, slowly
+moving across the world.
+
+3) I want to make a special snow to cover "some arch".
+
+Look at the table at the beginning of weather.c.  Add your special snow,
+and the name of the arch to that table.  Also, add your snowtype to the
+avoidance table, to allow it to melt, and avoid the game double-stacking
+the snow on your square.
+
+4) Can we make spells to affect weather?
+
+Yes.  But remember that the game is constantly recalculating the
+weather.  If you want something that will affect an area of the world for
+a long period of time, you will need to modify the weather code to
+special case that.  Temperature, for example, is constantly recalculated,
+your spell will only work for 1 game hour.
+
+That being said.. some amount of player fiddling can be done without
+special code.  For example, if you were to crank the pressure of a WM
+square up really high, and put the humidity of that square at 100%, over
+a few game hours, that square would essentially become the eye of a
+storm, as the wind would pick up moving outwards from it, spreading the
+humidity.  Eventually, the game will flatten it out on it's own, but
+there will be a lingering effect for many hours to come.  Feel free to
+experiment with such things.
+
+Things that are recaulculated:
+temperature
+sky conditions
+
+Things that are smoothed/spread:
+humidity
+pressure
+wind
+
+I advise that you do not mess with the elevation or water maps, as those
+are not recalculated over time.  If you change the water % of a WM
+square, and don't put it back, it will stay that way until the DM deletes
+the watermap and regenerates.

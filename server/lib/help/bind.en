@@ -1,0 +1,29 @@
+Syntax:
+
+    bind [-nfreg] <command>
+
+Flags (default -nrf):
+
+    -n: used in normal-mode
+    -f: used in fire-mode
+    -r: used in run-mode
+    -e: leave command in line edit
+    -g: global key (not recommended)
+
+Multiple commands can be bound to the same key be separating them with semicolons.
+
+Special bind's:
+
+    bind commandkey - sets commandkey
+    bind firekey1 - sets first firekey
+    bind firekey2 - sets second firekey
+    bind runkey1 - sets first runkey
+    bind runkey2 - sets second runkey
+
+Examples:
+
+    bind -f cast paralyzed (F3)
+    will typically mean that Shift-F3 is used to select that spell (Shift being the fire key)
+
+    bind use_skill sense curse; use_skill sense magic (S)
+    will bind those two commands to the S key.

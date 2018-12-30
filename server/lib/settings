@@ -1,0 +1,342 @@
+# This file is used various system settings.  It removes the need for
+# some config.h files.  Format is:
+# variable<space>value which can have spaces
+#
+# Lines starting with # are comments.
+#
+# Some fields may be numeric, other string.  The program will skip over
+# spaces after the setting.
+#
+
+# metaserver values.
+# metaserver1 support has been removed.  Update metaserver2
+# file instead
+
+# Character creation values.
+# The min, max, and points values are used for new (in client)
+# creation method - this determines those values as one would expect.
+# Note - the order here is relevant as the server has built in defaults
+# it will use, and it ensures that all the values are reasonable - thus
+# if one increase the points value to 140 before increasing the max value,
+# it will generate an error.
+#
+# the roll_stat_points is used for the legacy system where stats are rolled
+# up.
+# The reason for that difference is with the new client method, the player
+# can choose their stat points, so even with 84 points, they could generate
+# a character with 3 18 stats (it would mean the remaining stats average
+# 7.5) - with the roll method, it is very unlikely to generate such
+# characters, so if the same number of stat points were given, while
+# the characters total stats would be higher, the character itself
+# would likely be worse.
+#
+starting_stat_min 3
+starting_stat_max 18
+starting_stat_points 84
+roll_stat_points 105
+
+# values for the new big worldmap, and weather. Only use if you are using the
+# new bigmap.
+#
+
+worldmapstartx 100
+worldmapstarty 100
+worldmaptilesx 30
+worldmaptilesy 30
+worldmaptilesizex 50
+worldmaptilesizey 50
+
+# If this is set, when there is no player, the ingame clock will tick really fast.
+# If not set, it will not move and wait for a player to join.
+fastclock 0
+
+# item_power_factor is the relation of how the players equipped item_power
+# total relates to there overall level.  If 1.0, then sum of the characters
+# equipped item's item_power can not be greater than their overall level.
+# if 2.0, then that sum can not exceed twice the character overall level.
+# by setting this to a high enough value, you can effectively disable
+# the item_power code.
+
+item_power_factor 1.0
+
+# Sets the output format for the who command. This is what a player will see
+# about all the other players on the server when they type 'who' The string
+# has escapes that are filled with the relevant values for each character.
+# Currently the following escapes are supported:
+#
+# %N	Name of character
+# %t	title of character
+# %c	count of the player (for dumping/patching)
+# %n	newline
+# %h	[Hostile] if character is hostile, nothing otherwise
+# %d	[WIZ] if character is a dm, nothing otherwise
+# %a	[AFK] if character is afk, nothing otherwise
+# %b	[BOT] if character is a bot, nothing otherwise
+# %l	the level of the character
+# %m	the map path the character is currently on
+# %M	the map name of the map the character is currently on
+# %r	the short region name (as shown by mapinfo)
+# %R	the formal region title.(as shown by whereami)
+# %i	player's ip address
+# %%	a literal %
+# %_	a literal underscore
+#
+# an underscore that is not escaped gives a space (or you can use a real space
+# if you prefer)
+# who_wiz_format is the same but for those with dm powers
+
+who_format %N %t%h%d%a%b%n<%m>
+who_wiz_format %N %t%h%d%a%b%nLevel %l <%m>(@%i)(%c)
+
+# See notes for most of these in include/config.h
+
+# dm_mail your_email@addr.here
+
+# Makes death non permanent.  If enabled and you die, you lose a bunch of
+# exp, a random stat, and go back to starting town.
+# If not defined, if you die, you are dead.  If an a multiplayer server,
+# resurrection may be possible
+#
+# This option changes the game significantly one way or the other - it makes
+# adventuring right at the edge of death something more reasonable to do
+# (death still hurts here).  On the other hand, it certainly makes the
+# game a bit safer and easier.
+# not_permadeth true
+
+# define resurrection if you want to let players bring other players
+# back to life via some spells.  If resurrection is undefined, then a
+# death is permanent.  NOTE: resurrection (either defined or undefined)
+# has no meaning if not_permadeth is true.
+
+resurrection false
+
+# set the following if you wish to allow players to set their title
+# and to save it on the disk.  There really isn't much reason not
+# allow players to set this.
+
+set_title true
+
+
+# Enables the 'search-item command; a method to find equipment
+# in shops.  Like set_title, probably no reason to ever disable this.
+
+search_items true
+
+# SPELL_ENCUMBRANCE -- If you're carrying a weapon or wearing heavy armour,
+# you have a chance of fumbling your spellcasting with this on.  More
+# armors/weapons, higher chance of failure.  If this is false, then
+# you can basically always cast a spell, no matter what you are wearing.
+
+spell_encumbrance true
+
+# spell_failure_effects only has meaning if spell_encumbrance is true.
+# What it does, is that when the player fails a spell, various effects
+# will happen (player is paralyzed, confused, wonder spell is cast, etc.)
+# I disabled it because I think it would make life much too hazardous
+# for low level casters.  They either need to wear light armor (which
+# means that they will get pounded on by monsters), or will get
+# confused/paralyzed/other effects often.  High level casters would
+# be mostly unaffected, since they would be casting spells that are
+# below their level.
+# Note-  it seems that you still get some failure effects even with this
+# not defined - most notably when reading scrolls and fail to read
+# them properly.
+#
+
+spell_failure_effects false
+
+# casting times for spells, if you have this defined then it takes a
+# specific amount of time for a spell to go off. You may attack or
+# be hit during this time, and this will cause you to lose the spell.
+# I commented this out on my copy - I don't like the 'double clutch'
+# needed to cast it (first direction key starts casting, the
+# next actually puts the spell into effect.)  It could perhaps
+# be changed so that the initial direction is where it goes, and it
+# is cast automatically in that direction (so only 1 key is needed.)
+# But this could be undesirable as various things move while you cast it.
+# this also slows down the rate you can cast spells considerably.
+
+casting_time false
+
+# Name of the motd file - really no reason to change this.
+motd motd
+
+# Calling this real_Wiz is probably not really good.  Something like
+# mud_wiz might be a better name.
+#
+# Basically, if real_wiz is set then the WIZ/WAS_WIZ flags for objects
+# are not set - instead, wizard created/manipulated objects appear as
+# normal objects.  This makes the wizard a little more mudlike, since
+# manipulated items will be usable by normal players.
+
+real_wiz true
+
+# Set this if you want the temporary maps to be saved and reused across
+# crossfire runs.  This can be especially useful for single player
+# servers, but even holds use for multiplayer servers - you can
+# restart a public server, and not have all the maps reset
+# The file temp_maps  is updated each time a temp map is updated.
+# Note that the file used to store this information is stored in
+# the LIB directory.  Running multiple crossfires with the same LIB
+# directory will cause serious problems, simply because in order for
+# this to really work, the filename must be constant so the next run
+# knows where to find the information.
+
+recycle_tmp_maps false
+
+# spellpoint_level_depend  --  Causes the spellpoint cost
+# of spells to vary with their power.  Spells that become very
+# powerful at high level cost more.  The damage/time of
+# characters increases though.
+
+spellpoint_level_depend true
+
+# Set this to false if you don't want characters to loose a random stat when
+# they die - instead, they just get depleted.
+# Setting it to true keeps the old behaviour.  This can be
+# changed at run time via -stat_loss_on_death or +stat_loss_on_death.
+
+stat_loss_on_death false
+
+# This makes repeated stat loss at lower levels more merciful. Basically,
+# the more stats you have lost, the less likely that
+# you will lose more. Additionally, lower level characters are shown
+# a lot more mercy (there are caps on how much of a stat you can lose too).
+# On the nasty side, if you are higher level, you can lose multiple stats
+# _at_once_ and are shown less mercy when you die. But when you're higher
+# level, it is much easier to buy back your stats with potions.
+# Turn this on if you want death-based stat loss to be more merciful
+# at low levels and more cruel at high levels.
+# Only works when stats are depleted rather than lost. This option has
+# no effect if you are using genuine stat loss.
+
+balanced_stat_loss false
+
+# This defines how much of a player's experience should be 'permanent' and
+# not able to be lost on death. A high value makes multiple frequent deaths
+# less devastating, and also ensures that any character will make some
+# gradual progress even if they die all of the time. This value is the minimum
+# amount of a player's exp that can ever be 'permanent' so setting this to 0
+# would allow all exp to be lost, and setting it to 100 would stop exp loss
+# entirely (the same effect would be achieved by setting the two
+# death_penalty settings below to 0).
+
+permanent_experience_percentage 50
+
+# When a player dies, they lose a proportion of their experience, which is
+# defined by the following two values. They will lose either
+# death_penalty_percentage% of their experience, or no more than
+# death_penalty_levels levels, or half of their non-permenent experience,
+# whichever is the least of these. Note that this is calculated per-skill,
+# so which method is used could vary for different skills.
+
+death_penalty_percentage 20
+death_penalty_levels 3
+
+# This is the penalty to luck that is given to a player who kills another
+# player (PK's). The value here is deducted from their luck value, so set this
+# high to discourage PK-ing and zero (or negative) to encourage it.
+# Range is limited to -100 to 100, since this is the value range that the luck
+# stat can be within.
+
+pk_luck_penalty 1
+
+# This handles maximum experience one can get for pking another player.
+# If pk_max_experience is 0 or positive, experience will never exceed that value.
+# If negative, all experience can be gained.
+# pk_max_experience_percent represents the percentage of victim's experience that will be
+# given to the killer. It can be greater than 100.
+# Note that experience given will never exceed experience the victim
+# can lose considering permanent experience.
+
+pk_max_experience 5000000
+pk_max_experience_percent 10
+
+# This allows reduced damage against other players when in
+# peaceful mode.  The value is the percent of damage done
+# compared to normal.  This does not change damage done
+# by not targeted things like walls, explosions, cone spells, disease, poison...
+
+set_friendly_fire 5
+
+# This deals with armor enchantment.
+#
+# armor_max_enchant: maximum enchantments an armor will take.
+# default: 5
+#
+# armor_weight_reduction (in percent) and armor_weight_linear control how weight is reduced:
+#  * when armor_weight_linear is TRUE, armor weight is
+#   'base weight - armor enchantment * armor_weight_reduction'
+#  * when armor_weight_linear is FALSE, armor weight is reduced by armor_weight_reduction %
+#   per enchantment.
+#
+#   example:
+#    * with 10 and TRUE, if armor base weight is 100, it'll become:
+#      100 -> 90 -> 80 -> 70 -> 60 -> ...
+#    * with 10 and FALSE, it'll be:
+#      100 -> 90 -> 81 -> 73 -> 66 -> ...
+#
+# Note that the code will enforce a minimum weight of 1, else players can't pick up armor.
+#
+# default values: 10 and TRUE.
+#
+# armor_speed_improvement and armor_speed_linear do the same for speed increase.
+# default values: 10 and TRUE
+
+#armor_max_enchant       5
+#armor_weight_reduction  10
+#armor_weight_linear     TRUE
+#armor_speed_improvement 10
+#armor_speed_linear      TRUE
+
+# disable stealing from other players, if you wish to enable stealing from other players
+# then replace the below with: no_player_stealing FALSE
+no_player_stealing       TRUE
+
+# disable creation of town portals inside of unique maps (apartments). To enable, replace
+# the below with: create_home_portals TRUE
+create_home_portals      FALSE
+
+# If personalized blessings are activated, the weapon can bite the wielder
+# if he/she is not the one who initially blessed it.
+# Chances of being hurt depend on the experience amount ("willpower") the
+# object has, compared to the experience amount of the wielder.
+personalized_blessings      TRUE
+
+# If set to TRUE, players can inscribe scrolls of spells they can't cast (denied path, ...)
+allow_denied_spells_writing FALSE
+
+# If set to TRUE or ON, converters will work even if the price of generated item is higher
+# than the price of converted items
+allow_broken_converters TRUE
+
+# If set, log will comport a timestamp, in the specified format.
+log_timestamp TRUE
+log_timestamp_format %y/%m/%d %H:%M:%S
+
+# port is the port the server listens to.  If using metaserver2, you can pretty
+# much change this to anything and clients will figure it out.  If using
+# metaserver1, changing from default (13327) may cause problems as the port
+# number isn't publicized.  Unless there is a specific reason (firewall/nat,
+# running multiple servers on same host), probably best not to change
+# this
+port 13327
+
+# When generating random maps, can a special map break the map's layout to be inserted?
+# TRUE by default for historical purposes
+special_break_map TRUE
+
+# If set to TRUE, then the plugin version won't be checked at load time.
+# When set to FALSE, versions must match else a plugin is not loaded.
+# This is mostly intended for development purposes, to not have to 'make install'
+# all the time.
+ignore_plugin_compatibility FALSE
+
+# By default anyone can connect to the server and create an account.
+# When enabled, only clients connecting from the host defined by
+# account_trusted_host can create an account.
+account_block_create FALSE
+
+# When account_block_create is enabled, only the IP address given here
+# can create accounts. If not defined, defaults to 127.0.0.1.
+account_trusted_host 127.0.0.1

@@ -1,0 +1,354 @@
+<html>
+<head>
+<title>Crossfire Playbook - Chapter 2</title>
+</head>
+<body>
+
+<H1>About Characters</h1>
+
+<h2><a name="2.1.0">Character Attributes</h2>
+
+Each player interacts in the <em>Crossfire</em> world through the persona of
+a character. In turn, the interaction between the character and the game
+world is mediated by the ``attributes'' of the character.  After all, the
+player is not going to play him/herself! In <em>Crossfire</em> we chose to
+parameterize the acceptable limits of player behavior via the values of the
+character attributes which, in turn, help to determine the success of any
+action taken by the player. There are no limits per se on what you can
+attempt to do with your character; rather, the attributes of a character
+indicate the certain ``natural'' talents and inclinations.  Two concepts
+which are relevant to <em>Crossfire</em> character attributes are ``stats''
+and ``class''.<p>
+
+<h2><a name="2.1.1">2.1.1. Character Stats</h2>
+
+Character statistics (or ``stats'' for short) can be
+divided into two types: primary and secondary. What's the difference
+between them? Secondary stats are calculated from a number of things
+including the primary stats. But the reverse isn't true, secondary
+stats never have any influence on the primary stats. In playing the game, the
+player may find that either of these kinds of stats may be changed
+for better or worse. In general, the primary stats change much less
+often than the secondary stats. Equipment, magic, and death are
+just three examples of the many things which can alter the values of
+the character stats. The current values of both the primary and
+secondary stats may be viewed in the stat window. Four important
+secondary stats - food, grace, hitpoints and mana also appear
+again in the stat-bar window. <p>
+
+
+<h4>Primary stats</h4>
+
+The seven primary stats are:<p>
+<UL>
+<li><strong>Strength</strong> (``STR'') - a measure of the physical strength.<br>
+<li><strong>Dexterity</strong> (``DEX'') -measures physical agility and speed.<br>
+<li><strong>Constitution</strong> (``CON'') -
+measures physical health and toughness.<br>
+<li><strong>Intelligence</strong> (``INT'') -
+measures ability to learn skills and incantations.<br>
+<li><strong>Wisdom</strong> (``WIS'') -
+measures the ability to learn/use divine magic .<br>
+<li><strong>Power</strong> (``POW'') -
+measures magical/spiritual potential.<br>
+<li><strong>Charisma</strong> (``CHA'') -
+measures social and leadership abilities.
+</UL>
+<p>
+
+Primary stats have a ``natural'' range between 0 and ~20. The actual upper
+limit on each primary stat is set by the chosen character class (see <a
+href="#2.1.2">character classes</a>.) You can raise your primary stats by
+drinking potions up to your class natural limit.<p>
+
+There are plenty of items which give you bonuses to your stats even
+<em>beyond</em> your class limit - swords, armour and rings to name the most
+important. You can also read scrolls or cast spells (incantations or
+prayers) to temporarily raise your stats.  The ultimate maximum value is 30,
+and the player class doesn't matter here.
+
+Some quantitative effects of the primary stats are summarized in the table
+below. The top row in the column header specifies a particular bonus (i.e.
+<samp>HpB</samp>, <samp>MgB</samp>, <samp>AcB</samp>, <samp>DmB</samp>,
+etc.) while the second row in the header indicates the stat which is used to
+calculate the value of that column. Where no stat appears, one of
+<em>several</em> stats may be used to calculate that value. See later parts
+of the text (particularly section <a href="chap3.html#3.2.3">statistics calculation</a>) for further details. <p>
+
+<center>
+<a name="table_pri_eff">
+<table border=1 cellpadding = 5>
+<tr><th>Stat</th><th>HpB</th><th>MgB&sup1</th><th>AcB</th><th>DmB</th>
+<th>Thac0</th><th>Max Carry</th><th>Speed</th>
+<th>%learn&sup2</th><th>Buy/Sell</th></tr>
+<tr><th></th><th>(CON)</th><th></th><th>(DEX)</th><th>(STR)</th><th>(STR)</th>
+<th>(STR)</th><th>(DEX)</th><th></th><th>(CHA)</th></tr>
+<!--#include file="bonus.html"-->
+</table>
+Selected primary stat bonuses/penalties.</center><p>
+
+&sup1 Either POW or WIS can be used to calculate MgB (magic bonus).<br>
+&sup2 Percentage for learning either skills (INT), incantations (INT) or prayers (WIS).<br>
+
+<h4>Secondary stats</h4>
+
+The secondary stats are :<p>
+
+<UL>
+<li><strong>score</strong> - The total accumulated
+experience of the character. <samp>score</samp> is increased
+as a reward for appropriate player action and may decrease as a
+result of a magical attack or character death (see section
+<a href="chap3.html#3.2.4">death</a> for more about death). The <samp>score</samp> starts at a value
+of 0. <p>
+
+<li><strong>level</strong> - A rating of overall ability whose value is
+determined from the <samp>score</samp>.  As the <samp>level</samp> of the
+character increases, the character becomes able to succeed at more difficult
+tasks. <samp>level</samp> starts at a value of 0 and may range up beyond
+100. The value of the stat which appears in the stat window is sometimes
+known as the <em>overall</em> <samp>level</samp>. See section
+<a href="chap3.html#3.2.2">experience</a> for more details.<p>
+
+<li><strong>hit points</strong><samp> ("Hp")</samp> - Measures of how much
+damage the player can take before dying. Hit points are determined from the
+player <samp>level</samp> and are influenced by the value of the character
+CON (see section <a href="chap3.html#3.2.3">statistics calculation</a>).  <samp>Hp</samp> value may range
+between 1 to beyond 500 and higher values indicate a greater ability to
+withstand punishment.<p>
+
+<li><strong>mana</strong><samp> ("Sp")</samp> - Measures of how much ``fuel''
+the player has for casting incantations.  Mana is calculated from the
+character <samp>level</samp> and the value of the character POW (see section
+<a href="chap3.html#3.2.3">statistics calculation</a>).  Mana values can range between 1 to beyond 500. Higher
+values indicate greater amounts of mana.<p>
+
+<li><strong>grace</strong><samp>("Gr")</samp> - How favored the character is
+by the gods. In game terms, how much divine magic a character can cast.
+Character <samp>level</samp>, WIS and POW effect what the value of grace is
+(see section
+<a href="chap3.html#3.2.3">statistics calculation</a>).  During play, grace values <em>may</em> exceed the
+character maximum; grace can take on large positive and negative values.
+Positive values indicate favor by the gods.<p>
+
+<li><strong>weapon class</strong> <samp>("Wc")</samp> - How skilled the
+characters melee/missile attack is. Lower values indicate a more potent,
+skilled attack. Current weapon, user <samp>level</samp> and STR are some
+things which effect the value of <samp>Wc</samp>. The value of
+<samp>Wc</samp> may range between 25 and -72.  See section
+<a href="chap3.html#3.2.3">statistics calculation</a> for a more detailed explanation of weapon class. See
+section <a href="chap3.html#3.2.1">combat</a> to see how <samp>Wc</samp> works in attacking.<p>
+
+<li><strong>damage</strong> <samp>("Dam")</samp> - How much damage a
+melee/missile attack by the character will inflict. Higher values indicate a
+greater amount of damage will be inflicted with each attack.  See section
+<a href="chap3.html#3.2.3">statistics calculation</a> for a calculation of the character <samp>Dam</samp>.<p>
+
+
+<li><strong>armour class</strong> <samp>("Ac</samp>") - How protected the
+character is from being hit by any attack. Lower values are better.
+<samp>Ac</samp> is based on the character class <a href="#table2.2">table
+character classes</a> and is modified by the DEX (<samp>AcB</samp> column in
+table <a href="chap2.html#table_pri_eff">primary stat effects</a>) and
+current armour worn. For characters that cannot wear armour, <samp>Ac</samp>
+improves as their level increases (see section
+<a href="chap3.html#3.2.3">statistics calculation</a>).<p>
+
+<li><strong>armour</strong> <samp>("Arm")</strong> -
+How much damage will be subtracted from successful hits made upon
+the character. This value ranges between 0 to 99%. Current armour worn
+primarily determines <samp>Arm</samp> value.<p>
+
+<li><strong>speed</strong> - How fast the player may move.  The value of
+<samp>speed</samp> may range between nearly 0 (``very slow'') to higher than
+5 (``lightning fast''). Base <samp>speed</samp> is determined from the DEX
+and modified downward proportionally by the amount of weight carried which
+<em>exceeds</em> the <samp>Max Carry</samp> limit (table <a href="chap2.html#table_pri_eff">primary stat effects</a>). The
+armour worn also sets the upper limit on <samp>speed</samp> (see the
+<A href="../spoiler-html/spoiler.html">spoiler</a> for these limits).<p>
+
+<li><strong>weapon speed</strong> - Appears in parentheses after the
+<samp>speed</samp> in the stat window. This quantity is how many attacks the
+player may make per unit of time.  Higher values indicate faster attack
+speed. Current weapon and user DEX effect the value of weapon speed. See
+section <a href="chap3.html#3.2.3">statistics calculation</a> for a calculation of weapon speed.<p>
+
+<li><strong>food</strong> - How full the character's stomach is.
+Ranges between 0 (starving) and 999 (satiated).  At a value of 0 the
+character begins to die. Some magic can speed up or slow down the
+character digestion. Healing wounds will speed up digestion too.
+</ul><p>
+
+<h2><a name="2.1.2">Character Classes</h2>
+
+Much like the older ``paper and pencil'' role-playing games
+<em>Crossfire</em> has adopted the idea of character ``class''.
+Each class is meant to be a template of a particular ``style'' of play;
+therefore each choice of class modifies both the starting
+values and sets the natural upper limit on the primary stats.
+<em>Important note:</em> character class is chosen at the time a
+character is created and can't be changed later on.<p>
+
+<center>
+<A name="table2.2">
+<table border=1 cellpadding = 5>
+<tr><th>Type</th><th> </th><th>Str</th><th>Dex</th><th>Con</th><th>Int</th><th>Wis</th><th>Pow</th><th>Cha</th><th>Special</th></tr>
+<!--#include file="char.html"-->
+</table>
+Table 2.2 <em>Crossfire</em> character classes</em><p>
+</center>
+
+The table shows the various available character classes with
+the natural stat limits for each.
+Under the ``special'' column several bits of information are included. ``<samp>Ac</samp>''
+indicates the base armour class
+for the character; ``damage''
+indicates the base <samp>Dam</samp> value.
+Some character classes have special attack abilities and certain vulnerabilities,
+protections from, and immunities to various attacktypes. Read section
+<a href="chap3.html#3.2.1">combat</a> for more information about what effect these can have.<p>
+
+<h4Sizing up the character classes</h4>
+
+Generally, the titles of the character classes speak for themselves. But you
+can get a better idea of the potential of a class by checking out a few
+things. Take a look at the starting equipment (table <a
+href="#table2.3">starting equipment</a>) and, if you are using
+<em>Crossfire</em> compiled with the skills system, checkout the starting
+skills for those classes your interested in (table <a href="#table2.4">starting
+skills</a>).<p>
+
+
+<center>
+<table border=1 cellpadding = 5>
+<tr><th>Type</th><th>Starting Equipment </th></tr>
+<!--#include file="equip.html"-->
+
+</table>
+<A name="table2.3">Table 2.3 Starting equipment by character class.</em><p>
+</center>
+<p>
+
+<center>
+<table border=1 cellpadding = 5>
+<tr><th>Character Class</th><th>Additional Skills&sup1</th></tr>
+<!--#include file="skills.html"-->
+</table>
+<A name="table2.4">Table 2.4 Starting skills.</em><p>
+</center>
+<p>
+
+&sup1 All character classes start with the skills <samp>melee
+weapons</samp>, <samp>find traps</samp>, <samp>use magic item</samp>,
+<samp>literacy</samp>, and <samp>disarm traps</samp>.<p>
+
+Finally, here are some notes concerning a couple of the more ``exotic'' classes:<p>
+
+<strong>Fireborn</strong><br>
+<em>Attacks:</em> fire, physical<br>
+<em>Protections:</em> immune: fire, poison; vulnerable: ghosthit, drain, cold<br>
+<em>Special:</em> fly, no armour, no weapons. <samp>Ac</samp> 0<br>
+Fireborns are fire spirits. They're closely in tune with
+magic and learn all types of magic easily.
+Being fire spirits, they are
+immune to fire and poison, and vulnerable to cold. They are vulnerable to
+ghosthit and drain because being mostly non-physical, anything which strikes
+directly at the spirit hits them harder.<p>
+
+<strong>Monk</strong><br> <em>Attacks:</em> physical<br>
+<em>Protections:</em> none<br> <em>Special:</em> no weapons.<br>
+
+Monks are members of various martial arts orders. They have devoted
+themselves to a life of contemplation and revelation though physical
+fighting! Their life-long secret vows keep them from using all hand-held
+melee weapons, but in return they are allowed to learn secret techniques of
+meditation.<p>
+
+<strong>Quetzalcoatl</strong><br>
+<em>Attacks:</em> physical<br>
+<em>Protections:</em> immune: fire; vulnerable: paralyze, poison, cold<br>
+<em>Special:</em> no armour, <samp>Ac</samp> 5<br>
+Quetzalcoatls are an odd mixture of magic and combat abilities. They are
+born knowing the spell of burning hands (heh, its their ``dragon breath'').
+But because of their low natural intelligence/wisdom, they have a very hard
+time learning new spells. All the same, they may become potent
+wizards/priests as they have the highest power bonus, and they will
+typically have a large amount of mana and a fair amount of grace.
+Quetzalcoatls can be very
+devastating fighters at low level. A combination of  their low natural <samp>Ac</samp>
+and high base damage tend to make mincemeat
+out of low-level monsters. However, at mid-level, they really begin to have
+problems because they cannot use armour.<p>
+
+<strong>Wraith</strong><br>
+<em>Attacks:</em> cold, physical<br>
+<em>Protections:</em> immune: drain, ghosthit; protected: physical, cold; vulnerable: fire<br>
+<em>Special:</em> <samp>Ac</samp> 6<br>
+
+The Wraith is a creature of the undead. These characters represent
+revenging spirits come back to life to work their unholy will on the living.
+Their undead nature makes them immune to life-damaging forces and their
+etherealness protects them from physical harm. Like all undead, they succumb
+to fire readily. <p>
+
+<h2>Generating a character</h2>
+
+When you start up <em>Crossfire</em> , you will be asked for a character name
+followed by a password. If you are playing for the first time, type
+any name you like; this will be your character name for the rest of
+the life of that character. Next, type in any password.
+<em>Remember!:</em>
+you will need to type the same password again to play that character
+again! One more note: its not a good idea to use ``real'' passwords
+to your computer accounts! Doing so may make your system vulnerable
+to unscrupulous <em>Crossfire</em> server administrators. <p>
+
+Your next step will be to generate random (primary) stats for your
+character.  You aren't limited to the number of times you can roll your
+stats - so have fun.  Notice that the stats are always arranged that the STR
+stat has the highest value, the CHA stat has the lowest. You may re-arrange
+the order of these values when you decide that you have rolled some decent
+stats.  <em>Two points:</em> you can never roll a character with better
+stats than an average of straight 15's, and you can't roll higher than 18 in
+a stat. <p>
+
+When you roll your character, the stats displayed are the stats you
+will get as a human (which are unmodified).
+When satisfied, you can step through a number
+of classes, each with special bonuses in stats.<p>
+
+<a href="#table2.2">Table 2.2</a> shows how your basic stats will
+be changed by choosing a different class.
+The difference between the natural stat limit and 20 indicates the
+bonus/penalty assigned to rolled primary stats. For example, a
+barbarian has a maximum strength which is 4 higher than 20-that
+means he will begin with an additional 4 points added to his
+strength roll. On the other hand, a barbarian can never get above 14
+in intelligence.  This means that your rolled character will have 6
+less in intelligence if you choose that class.  It also means that you
+can't be a barbarian if you roll less than 7 in intelligence; the
+poor barbarian would have had a stat below 1.<p>
+
+<h4><a name="2.2.1">Selecting a character</h4>
+
+While each class has its particular strengths and weaknesses, in summary
+its just a fact that some classes are easier to play than others.<p>
+
+For beginning players, the ``simple fighter'' characters are the easiest to
+play successfully. The Dwarf, Human, and Warrior are among good earlier
+choices. As you gain experience with using <em>Crossfire</em> you may wish
+to branch out into other ``fighter'' characters such as the Thief or Elf, or
+try your hand at playing ``spellcaster'' characters like the Wizard, Mage,
+Cleric or Priest.  The ``exotic'' classes (e.g. Fireborn, Monk,
+Quetzalcoatl, and Wraith) are the hardest classes to master. <p>
+
+One more note: If you are using the default game (compiled with the skills
+system), you will probably find any character class that has a low natural
+INT (for example, the Barbarian class) will have a fairly difficult time at
+higher levels. Skills, and most importantly, spells, will be more difficult
+learn. Plan to spend a lot of loot on grimores, prayer books and skill
+scrolls.<p>
+
+<a href="handbook.html"><img src="fig/book.gif">Back to table of contents</a><br>
+<a href="chap1.html"><img src="fig/stairup.gif">Go to chapter 1</a><br>
+<a href="chap3.html"><img src="fig/stairdown.gif">Go to chapter 3</a><br>

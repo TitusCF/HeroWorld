@@ -1,0 +1,76 @@
+#!/bin/bash
+# Copyright (C) 1999 Bob Tanner
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#
+
+version="0.96.0"
+server="true"
+maps="true"
+arch="true"
+
+export CVS_RSH="@SSH@"
+
+usage() {
+  echo ""
+  echo "Usage get_release -v version [-s] [-m] [-a] [-h]"
+  echo "  -v version of release"
+  echo "  -s turn OFF getting server source code"
+  echo "  -m turn OFF getting maps"
+  echo "  -a turn OFF getting arch files"
+  echo "  -h help"
+  echo ""
+  echo "By default script will get all files."
+  exit 1
+}
+
+while getopts v:hsma option
+do
+  case "$option"
+  in
+    v)	version=$OPTARG;;
+    s)  server="false";;
+    m)  maps="false";;
+    a)  arch="false";;
+    h)  usage;;
+  esac
+done
+
+# Get source code
+if [ "$server" == "true" ]; then
+  @CVS@ -z3 export -d crossfire-$version -D now crossfire
+  if [ $? -ne 0 ]; then
+    echo "Could not get crossfire source code."
+  fi
+  (@TAR@ -cf crossfire-$version.tar crossfire-$version; @GZIP@ -9 crossfire-$version.tar) &
+fi
+
+if [ "$maps" == "true" ]; then
+  @CVS@ -z3 export -d crossfire-$version.maps -D now maps
+  if [ $? -ne 0 ]; then
+    echo "Could not get crossfire maps."
+  fi
+  (@TAR@ -cf crossfire-$version.maps.tar  crossfire-$version.maps; @GZIP@ -9 crossfire-$version.maps.tar) &
+fi
+
+
+
+if [ "$arch" == "true" ]; then
+  @CVS@ -z3 export -d crossfire-$version.arch -D now arch
+  if [ $? -ne 0 ]; then
+    echo "Could not get crossfire arch."
+  fi
+  (@TAR@ -cf crossfire-$version.arch.tar  crossfire-$version.arch; @GZIP@ -9 crossfire-$version.arch.tar) &
+fi

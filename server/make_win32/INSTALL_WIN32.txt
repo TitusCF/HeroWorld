@@ -1,0 +1,54 @@
+How to Install a Crossfire Server on Windows:
+
+Please follow the steps in the right order!
+
+o First step: Before you can compile the Crossfire source,
+  you must install a python script engine on your computer.
+  Python is the default script engine of Crossfire.
+  You can find the python engine here: http://www.python.org/.
+  The current Crossfire server use Python 2.1.1 .
+  The Package comes with Installer and pre compiled libs & dlls,
+  you have only to install them. The VisualC Crossfire settings are for
+  d:\python21 . You can install the package of course on a different
+  spot, but you habe then to change the pathes in the VC settings.
+  Go in Settings/C++ and Settings/Link and change the optional
+  include and libs path to the new python installation path.
+
+o 2nd step: Go in make_win32 (this is the same folder where this
+  doc should be) and run "installwin32.bat"! Be sure you do this before
+  you compile! The bat-file will make & copy all folders and files
+  you need to run the server later, except the maps!
+  You must download a map package and install them the share folder.
+  Its must look like this: crossfire\share\maps\... .
+
+o 3rd step: You must compile the program. You'll need
+  Visual C++ to do this (or some other ANSI C-compiler that can
+  read *.dsw files). After unpacking the crossfire package, doubleclick
+  on "crossfire32.dsw".
+  There are 3 projects in your Workspace: Crossfire32 (the server),
+  libcross.lib and plugin_python . You need to compile all 3. Easiest
+  way is to select the plugin_python - ReleaseLog as active Project,
+  this will compile all others too.
+  Then - in Visual C++ - press <F7> to compile.
+  If you don't have an appropriate compiler you can try to get
+  the binary (crossfire32.exe file and plugin_python.dll) from *somewhere*.
+  After the compiler is successul, the VC copies the crossfire32.exe in the
+  "crossfire" folder and the plugin_python.dll in the crossfire/share/plugins
+  folder.
+
+  NOTE: The compiling will give you >400 warning messages. Thats
+  some casting warnings from the original unix source - they are
+  not harmfull. Ignore them, we will remove it when we get
+  time for it.
+
+o Last step: Run the program "crossfire32.exe" (in the directory
+  "crossfire"). A dos-prompt should open now, showing lots of
+  weird text: the server logs.
+  You're done - the server is up and ready for connections. :-)
+
+If you still have troubles, write to the Crossfire mailing list:
+<crossfire-list@lists.real-time.com>. Doing so, please
+provide as much information on your problem as possible!
+Most important: Tell us exactly what version of crossfire
+you've used. If it's an old version, update first and see if
+that solves your problem.

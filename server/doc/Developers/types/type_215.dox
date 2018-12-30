@@ -1,0 +1,411 @@
+/**
+@page page_type_215 Weak Wall
+
+
+@section Description
+            A weak wall is a breakable spot amidst a solid wall. Typically these
+            weak walls look similar to their solid "relatives" except for a
+            small crack or little chunks of wall on the ground. 
+
+
+
+Type defined by:
+- @ref FLAG_IS_FLOOR unset
+- @ref FLAG_ALIVE set
+- @ref FLAG_TEAR_DOWN set
+
+
+@section Attributes
+
+<table>
+	<tr>
+		<th>Attribute</th>
+		<th>Field</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>armor class</td>
+		<td>@ref liv::ac</td>
+		<td>            Weak walls of high &lt;armor class&gt; are less likely to get hit.
+            &lt;armor class&gt; can be considered the "counter piece" to &lt;weapon
+            class&gt;.
+		</td>
+	</tr>
+	<tr>
+		<td>artifact</td>
+		<td>@ref obj::artifact</td>
+		<td>            If defined, refers to an artifact to get values from.
+		</td>
+	</tr>
+	<tr>
+		<td>block view</td>
+		<td>@ref FLAG_BLOCKSVIEW</td>
+		<td>            If an item is set to block view, players (and monsters) cannot see
+            beyond it unless they cross it or manage to stand on top.
+		</td>
+	</tr>
+	<tr>
+		<td>changing</td>
+		<td>@ref FLAG_CHANGING</td>
+		<td>            A &lt;changing&gt; object converts to &lt;food&gt; &lt;other_arch&gt;
+            objects; when it's animation is done. For non-living objects &lt;food&gt;
+            is checked: if it is zero, the change happens; otherwise &lt;food&gt;
+            is decreased by one. I suggest you don't mess with this value -
+            leave the default in place.
+		</td>
+	</tr>
+	<tr>
+		<td>elevation</td>
+		<td>@ref page_custom_attribute_elevation "elevation"</td>
+		<td>            The elevation (height above sea level) of this square. It is used
+            for weather calculations and should be in the range -32000..32000.
+            The elevation of a tile must be set in the bottom-most game object;
+            elevation values for non-bottom-most game objects are ignored by the
+            Crossfire server.
+		</td>
+	</tr>
+	<tr>
+		<td>glow radius</td>
+		<td>@ref obj::glow_radius</td>
+		<td>            If &lt;glow radius&gt; is set to a value greater zero, the object
+            appears lit up on dark maps. &lt;glow radius&gt; can be a value
+            between 0 and 4, the higher, the more light does the object emit.
+		</td>
+	</tr>
+	<tr>
+		<td>health points</td>
+		<td>@ref liv::hp</td>
+		<td>            The &lt;health points&gt; of a weak wall define how long it takes to
+            tear it down. With every successful hit from an opponent, &lt;health
+            points&gt; get drained.
+		</td>
+	</tr>
+	<tr>
+		<td>identified</td>
+		<td>@ref FLAG_IDENTIFIED</td>
+		<td>            If an item is identified, the player has full knowledge about it.
+		</td>
+	</tr>
+	<tr>
+		<td>identified animation</td>
+		<td>@ref page_custom_attribute_identified_animation "identified_animation"</td>
+		<td>            If defined, then the object will take this animation when identified.
+		</td>
+	</tr>
+	<tr>
+		<td>identified animation speed</td>
+		<td>@ref page_custom_attribute_identified_anim_speed "identified_anim_speed"</td>
+		<td>            If defined, then the object will have this animation speed when identified.
+		</td>
+	</tr>
+	<tr>
+		<td>identified image</td>
+		<td>@ref page_custom_attribute_identified_face "identified_face"</td>
+		<td>            If defined, then the object will take this appareance when identified.
+		</td>
+	</tr>
+	<tr>
+		<td>identified random animation?</td>
+		<td>@ref page_custom_attribute_identified_anim_random "identified_anim_random"</td>
+		<td>            If defined, then the object's animation is in a random sequence when identified.
+		</td>
+	</tr>
+	<tr>
+		<td>identified_name</td>
+		<td>@ref page_custom_attribute_identified_name "identified_name"</td>
+		<td>            If defined, then the object will take this name when identified.
+		</td>
+	</tr>
+	<tr>
+		<td>identified_name_pl</td>
+		<td>@ref page_custom_attribute_identified_name_pl "identified_name_pl"</td>
+		<td>            If defined, then the object will take this plural name when identified.
+		</td>
+	</tr>
+	<tr>
+		<td>image</td>
+		<td>@ref obj::face</td>
+		<td>            The image-name defines what image is displayed for this object
+            in-game.
+		</td>
+	</tr>
+	<tr>
+		<td>invisible</td>
+		<td>@ref obj::invisible</td>
+		<td>            Generally makes the object invisible. Depending on the object-type,
+            some can be made visible by the show_invisible spell. If in doubt,
+            test it. Putting an invisible object under the floor always prevents
+            it from being shown.
+		</td>
+	</tr>
+	<tr>
+		<td>level</td>
+		<td>@ref obj::level</td>
+		<td>            The &lt;level&gt; of a weak wall works similar to monster levels.
+            Due to the fact that weak walls cannot attack, the level is much
+            less important though.
+		</td>
+	</tr>
+	<tr>
+		<td>material</td>
+		<td>@ref obj::material</td>
+		<td>            This bitmask-value informs the player of which material(s) the
+            object consists. Material does also affect how likely the object can
+            be destroyed by hazardous spell-effects.
+		</td>
+	</tr>
+	<tr>
+		<td>max health</td>
+		<td>@ref liv::maxhp</td>
+		<td>            &lt;max health&gt; is the maximum amount of &lt;health points&gt;
+            this weak wall can have. Since walls generally don't heal, I doubt
+            this has much real effect.
+		</td>
+	</tr>
+	<tr>
+		<td>name</td>
+		<td>@ref obj::name</td>
+		<td>            This is the name of the object, displayed to the player.
+		</td>
+	</tr>
+	<tr>
+		<td>no damage</td>
+		<td>@ref FLAG_NO_DAMAGE</td>
+		<td>            If set to non-zero, the wall cannot be destroyed by attacking it.
+		</td>
+	</tr>
+	<tr>
+		<td>non-pickable</td>
+		<td>@ref FLAG_NO_PICK</td>
+		<td>            If set, the object cannot be picked up (Neither by players nor
+            monsters).
+		</td>
+	</tr>
+	<tr>
+		<td>number</td>
+		<td>@ref obj::nrof</td>
+		<td>            This value determines the number of objects in one stack (for
+            example: 100 gold coins =&gt; "number = 100"). You should set this
+            at least to one, for any pickable object - otherwise it won't be
+            mergeable into a stack.
+		</td>
+	</tr>
+	<tr>
+		<td>plural name</td>
+		<td>@ref obj::name_pl</td>
+		<td>            This is the plural name of the object. A plural name must be set for
+            all items that can be picked up and collected by the player.
+		</td>
+	</tr>
+	<tr>
+		<td>price adjustment</td>
+		<td>@ref page_custom_attribute_price_adjustment "price_adjustment"</td>
+		<td>            If set, this is the buy and sell price adjustment ratio for the
+            item.
+		</td>
+	</tr>
+	<tr>
+		<td>price adjustment for buying</td>
+		<td>@ref page_custom_attribute_price_adjustment_buy "price_adjustment_buy"</td>
+		<td>            If set, this is the adjustment ratio when buying the item. Ignored
+            if &lt;price&gt; adjustment is set.
+		</td>
+	</tr>
+	<tr>
+		<td>price adjustment for selling</td>
+		<td>@ref page_custom_attribute_price_adjustment_sell "price_adjustment_sell"</td>
+		<td>            If set, this is the adjustment ratio when selling the item. Ignored
+            if &lt;price&gt; adjustment is set.
+		</td>
+	</tr>
+	<tr>
+		<td>race</td>
+		<td>@ref obj::race</td>
+		<td>            For weak walls, &lt;race&gt; should always be set to "wall", unless
+            you create something fancy like a building which is in fact meant to
+            be a huge animal. Note that shovels slay walls, so they do triple
+            damage against weak walls.
+		</td>
+	</tr>
+	<tr>
+		<td>resist acid %</td>
+		<td>@ref obj::resist</td>
+		<td>(no description)
+		</td>
+	</tr>
+	<tr>
+		<td>resist blinding %</td>
+		<td>@ref obj::resist</td>
+		<td>(no description)
+		</td>
+	</tr>
+	<tr>
+		<td>resist chaos %</td>
+		<td>@ref obj::resist</td>
+		<td>(no description)
+		</td>
+	</tr>
+	<tr>
+		<td>resist cold %</td>
+		<td>@ref obj::resist</td>
+		<td>(no description)
+		</td>
+	</tr>
+	<tr>
+		<td>resist confusion %</td>
+		<td>@ref obj::resist</td>
+		<td>(no description)
+		</td>
+	</tr>
+	<tr>
+		<td>resist death-attack %</td>
+		<td>@ref obj::resist</td>
+		<td>(no description)
+		</td>
+	</tr>
+	<tr>
+		<td>resist depletion %</td>
+		<td>@ref obj::resist</td>
+		<td>(no description)
+		</td>
+	</tr>
+	<tr>
+		<td>resist draining %</td>
+		<td>@ref obj::resist</td>
+		<td>(no description)
+		</td>
+	</tr>
+	<tr>
+		<td>resist electricity %</td>
+		<td>@ref obj::resist</td>
+		<td>(no description)
+		</td>
+	</tr>
+	<tr>
+		<td>resist fear %</td>
+		<td>@ref obj::resist</td>
+		<td>(no description)
+		</td>
+	</tr>
+	<tr>
+		<td>resist fire %</td>
+		<td>@ref obj::resist</td>
+		<td>(no description)
+		</td>
+	</tr>
+	<tr>
+		<td>resist ghosthit %</td>
+		<td>@ref obj::resist</td>
+		<td>(no description)
+		</td>
+	</tr>
+	<tr>
+		<td>resist godpower %</td>
+		<td>@ref obj::resist</td>
+		<td>(no description)
+		</td>
+	</tr>
+	<tr>
+		<td>resist holy power %</td>
+		<td>@ref obj::resist</td>
+		<td>(no description)
+		</td>
+	</tr>
+	<tr>
+		<td>resist magic %</td>
+		<td>@ref obj::resist</td>
+		<td>(no description)
+		</td>
+	</tr>
+	<tr>
+		<td>resist paralyze %</td>
+		<td>@ref obj::resist</td>
+		<td>(no description)
+		</td>
+	</tr>
+	<tr>
+		<td>resist physical %</td>
+		<td>@ref obj::resist</td>
+		<td>(no description)
+		</td>
+	</tr>
+	<tr>
+		<td>resist poison %</td>
+		<td>@ref obj::resist</td>
+		<td>(no description)
+		</td>
+	</tr>
+	<tr>
+		<td>resist slow %</td>
+		<td>@ref obj::resist</td>
+		<td>(no description)
+		</td>
+	</tr>
+	<tr>
+		<td>resist turn undead %</td>
+		<td>@ref obj::resist</td>
+		<td>(no description)
+		</td>
+	</tr>
+	<tr>
+		<td>resist weaponmagic %</td>
+		<td>@ref obj::resist</td>
+		<td>(no description)
+		</td>
+	</tr>
+	<tr>
+		<td>smooth level</td>
+		<td>@ref obj::smoothlevel</td>
+		<td>            If &lt;smooth level&gt; is set to a value greater zero, the object
+            will be drawn partially over adjacent squares having a lower &lt;smooth
+            level&gt; value. The value must be between 0 and 255 (inclusive); 0
+            means &quot;never overlap adjacent squares&quot;.
+		</td>
+	</tr>
+	<tr>
+		<td>splitting</td>
+		<td>@ref FLAG_SPLITTING</td>
+		<td>            A &lt;splitting&gt; object converts to &lt;food&gt; &lt;other_arch&gt;
+            objects; when it is hit physically. For non-living objects &lt;food&gt;
+            is checked: if it is zero, the change happens; otherwise &lt;food&gt;
+            is decreased by one. I suggest you don't mess with this value -
+            leave the default in place.
+		</td>
+	</tr>
+	<tr>
+		<td>title</td>
+		<td>@ref obj::title</td>
+		<td>            This is the object's title. Once an object is identified the title
+            is attached to the name. Typical titles are "of Mostrai", "of xray
+            vision" etc.
+		</td>
+	</tr>
+	<tr>
+		<td>unpaid</td>
+		<td>@ref FLAG_UNPAID</td>
+		<td>            An &lt;unpaid&gt; item cannot be used unless a player carried it
+            over a shop mat, paying the demanded price. Setting this flag makes
+            sense only for pickable items inside shops.
+		</td>
+	</tr>
+	<tr>
+		<td>value</td>
+		<td>@ref obj::value</td>
+		<td>            Adds a certain value to the object: It will be worth that many times
+            the default value from it's archetype (E.g. "value = 3" means three
+            times worth the default value). Value for buying/selling will be
+            further modified by various factors. Hence, testing values in-game
+            is usually inevitable.
+		</td>
+	</tr>
+	<tr>
+		<td>weight</td>
+		<td>@ref obj::weight</td>
+		<td>            This value defines the object's weight in grams (1000g is 1kg).
+            Objects with zero weight are not pickable for players. Still, set
+            the "non-pickable"-flag for explicitly non-pickable objects (hey,
+            this is open source.. you never know ;) ).
+		</td>
+	</tr>
+</table>
+*/

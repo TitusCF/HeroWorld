@@ -1,0 +1,104 @@
+Since many of the subdirectories in here have some things in common, I
+figured it would be a good idea to merge them.  Quick not on what some things
+are:
+
+playbook:  This is a good guide on how to play crossfire.  This is in latex/
+	postscript format.
+playbook-html:  This is an html version of the playbook.
+spoiler:  This is a generation of 'spoilers' for the game.  It is in latex/
+	postscript format.  Some stuff really shouldn't be considered
+	spoilers (character stat bonuses).  Other stuff (monster stats,
+	what type of items spells appear in) is.  It could be more thorough.
+spoiler-html:  An html version of the spoiler.
+
+Postscript versions of the spoiler and playbook should be distributed
+with the game.  However, a lot of the information in this guides is machine
+generated, and you may wish to rebuilt it.  Here are some requirements for
+all the the above:
+
+   -  a real awk, like the free AT&T awk, mawk or gawk
+   -  xpmtoppm from NETPBM, with _undefined_ PGM_BIGGRAYS in pbmplus.h
+   -  pnmtops, pnmscale, pgmtoppm. If you install NetPbm, you should also
+      have these
+   -  a crossfire binary compiled with DUMP_SWITCHES defined in
+      include/config.h.
+   -  the arch.tar file extracted in the Crossfire lib dir.
+
+If you are generating any of the latex guides, you also need the following:
+   -  LaTeX with psfig (web-6.1)
+   -  dvips (5.58)
+   -  longtable.sty,babel.*,psfig.* files, available at any TeX ftp site
+
+The latest version of latex/tex should generate the spoiler fine.  The format
+of latex changed in some version or another, so old version will not be
+able to compile the spoiler.  Prior to 0.92.5 or so, the spoiler was set
+for the old version of latex, now it is set for the new version.
+
+Note that the spoiler needs more memory that is on the default versions
+of tetex.  If you are using tetex, you should increase
+the main_memory, extra_mem_top and extra_mem_bot in the
+texmf.cnf (located at /usr/share/texmf/web2c on by redhat system). The
+following values work for me:
+main_memory = 5120000 % words of inimemory available; also applies to inimf&mp
+extra_mem_top = 100000    % extra high memory for chars, tokens, etc.
+extra_mem_bot = 100000    % extra low memory for boxes, glue, breakpoints, etc.
+
+
+If you are generating any of the html guide, you may want to use giftrans.
+This produces transparent gifs, which look a lot nicer in the guides.  You
+can change a flag near the top of makeps in these directories to use/not
+to use giftrans (by default, it is used.)
+
+By default, the postscript images generated from the latex source uses
+greyscale images.  This is largely due to space considerations (a color
+version is much larger), and the fact that most printers aren't color.  If
+you are just going to view it with ghostscript, you are probably better
+off looking at the html versions instead.
+
+ By default, a top level make will not descend into these directories and
+recreate them when thing change.  Instead, you need to cd into the directory
+and manually run make.  In some cases, you may need to rename/remove the
+finished product for this to still work.
+
+specific notes:
+
+HANDBOOK:
+
+ If you don't want the icons, edit input image in the handbook.tex file.
+
+HTML notes (both spoiler and playbook):
+
+Most of these documents use server side includes (files that end in .shtml
+mean this).  Unfortunately, if you are just loading them up in a web browser,
+it won't take these includes.  I have written a simple perl script
+(include_html.pl) that will take the .shtml file and write and a .html file
+with the files included.
+
+PLAYBOOK HTML note:
+
+There are several referances in the playbook to the spoiler.  I have these
+set up as ../spoiler/spoiler.html.  Depending on where you store the
+spoiler, you may need to change these links for it to work properly.
+
+GENERAL NOTE:
+
+The playbook and spoiler could probably be stored in the same directory, and
+this would increase recreation time (since they share the same version.)
+This goes for the latex versions (store together) and the html version (store
+together).  However, I think keeping them seperate at least helps out on
+maintaining them.  But if you are putting them on a web page, storing them
+together is probably a good thing.
+
+Most of the original docs were done by:
+
+			Lars Olafsen <larso@ifi.uio.no>
+			Kjetil T. Homme <kjetilho@ifi.uio.no>
+
+The html spoiler was done by:
+			Lars Olafsen <larso@ifi.uio.no>
+
+The playbook was done by:
+			Brian Thomas (thomas@astro.psu.edu)
+
+The playbook was converted to html by:
+			Mark Wedel (mwedel@scruz.net)

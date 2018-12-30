@@ -1,0 +1,389 @@
+
+\chapter{Magic System} \label{chap:magic}
+
+\section{Description}
+\index{magic}\index{magic, system}\index{\wizardry\}\index{\divinemagic\}
+\index{spells}
+
+Two broad categories of magic exist in \cf : ``\wizardry '' and
+``\divinemagic ''. The fundamental difference between the two comes
+down to the source that powers the magic of each.
+In \divinemagic\ the practitioners, ``priests'', do not use their own power
+but rather channel power from divine entities (``gods''). They utilize
+various ``prayers\index{prayers}'' to cast their magic and grace is the measure
+of how much magic the priest may channel. The higher the
+level of the priest and the better his wisdom and power, the more
+grace the priest will have in the eyes of his god.
+In the practice of \wizardry\  a ``wizard'' calls upon his own lifeforce
+(or ``mana'') to power his arcane \incantation s.\index{\incantation s} Mana
+is based on of the wizard's innate power but may be increased through
+his skill in \wizardry .
+
+The scope and sphere of these two magics are different. Through the use of
+\divinemagic\ the priest has access to powerful spells\footnote{ A ``spell''
+is a common name referring to both prayers and \incantation s.\index{spells}}
+of protection,
+healing, and of slaying {\em unholy} creatures. If the multiple gods
+option is used\footnote{this is the default}, the god a priest worships
+will have other impacts on the priest's magic and abilities (see section
+\ref{sec:multigod}).
+In contrast, \wizardry\ is more oriented towards the harnessing of elemental
+forces of creation, alteration and
+destruction. There are two minor variants of \wizardry : alchemy (section
+\ref{sec:alchemy}) and rune magic (section \ref{sec:rune}).
+
+Each form of magic is orthogonal to the other. In some {\em no magic}
+areas, the wizard is blocked from accessing his store of mana, but the
+priest may operate his magic normally. Similarly, there are {\em unholy}
+areas in which the priest loses his contact with his god and cannot
+cast magic; in unholy areas the wizard is unhindered. Of course, no
+magic and unholy areas can sometimes coincide.
+
+In addition, wizards
+have the handicap that if they are encumbered with 'stuff', they are
+less effective at \incantation s.  Heavy weapons and
+heavy armour are the main cause spell-failures. See the section
+on encumbrance\index{encumbrance} (section \ref{sec:encumberance}) for details.
+Weapons and armour have no effect on the practice of \divinemagic\
+but grace regenerates slower than mana, and the amount of grace
+that a priest possesses helps to determine the success of their
+prayers.
+
+\section{Learning spells}\label{sec:spell_learn}
+\index{spells, how to learn}
+
+Both types of spells may be learned by reading books (see section
+\ref{sec:items}).
+The overall chance of learning a spell uses the following formula \\
+\begin{center}
+\% chance to learn $=$ (base chance $+$ (2$\times${\tt level}))/1.5 \\
+\end{center}
+The base chance that a prayer/\incantation\ will be learnt is based on WIS/INT
+respectively. Look at table \ref{tab:pri_eff} to find your {\em base}
+chance in the learn\% column. If you are attempting to learn a {\em prayer},
+you would use your WIS stat to find the base chance. Likewise, the {\tt level}
+used in the formula is related to the type of spell. If you are attempting
+to learn an \incantation , the value of level to use is your \mage\ experience
+level (and you use the \priest\ experience level for learning prayers).
+Once your chance to learn a spell exceeds 100%, you always suceed in
+all attempts to learn spells.
+
+
+\section{Magic paths} \label{sec:magicpath}
+\index{magic, paths}
+
+Long ago a number of archmages discovered patterns in the web that spells
+weave in the aether. They found that some spells had structural similarities
+to others and some of the mages took to studying particular groups of spells.
+These mages found that by molding their thought patterns to match the patterns
+of the spells they could better utilize all the spells of the group. Because
+of their disciplined approach, the mages were described as following spell
+Paths. As they attuned themselves to particular spell Paths they found that
+they would become repelled from others, and in some cases found they were
+denied any access to some paths. The legacy of these mages remains in some
+of the magical items to be found around the world. Use of these ``attuned''
+items will strongly effect the quality of the \incantation s and prayers cast by
+the magician. See section \ref{sec:multigod} to see how the worship of
+a god might effect the spell casting of the magician.
+
+
+\subsubsection{Technical details}
+
+The Paths themselves are given in table \ref{tab:spath}.
+
+A character (or NPC) that is attuned to a Path can cast \incantation s/prayers from that
+Path at 80\% of the mana/grace cost and in addition receives duration/damage
+bonuses as if the caster were five levels higher. A person that is repelled
+from a Path casts \incantation s/prayers from that Path
+at 125\% of the mana/grace cost and receives duration/damage bonuses as if
+the caster were five levels lower (minimum of first level).
+The casting time is also modified by 80\% and 125\% respectively.
+If a wizard or priest is denied access to a Path they cannot cast any spells from it.
+
+\begin{table}
+\begin{center}
+\caption{Known Spell Paths \label{tab:spath}}
+\index{magic, paths}
+\small
+\vskip 12pt
+\begin{tabular}{|clllllc|} \hline
+& & & & & & \\
+\input{spellpath}
+& & & & & & \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+Paths are quite powerful; they don't come cheaply. Most magical items
+with path\_attuned attributes will have path\_repelled and path\_denied
+attributes as well, to balance them out.
+% The same goes for worshiping
+% gods; most gods will prevent you from casting one or more paths of magic.
+
+\section{Multiple gods} \label{sec:multigod}
+\index{cults}\index{altars}\index{gods}\index{\divinemagic\}
+\index{magic, gods}
+
+Gods in \cf\ are not omnipotent beings. Each is thought of possessing
+a certain sphere of influence, indeed, some philosophers have thought
+that the gods might spring from the same mystical patterns that form
+the spell Paths. Certainly it appears that each of the gods embodies
+one or more of these Paths (but not all of them!!). Because the gods
+are not omnipotent, we often speak of their religions as being 'cults'.
+
+Under the multigod option, priests are allowed
+to select from an array of different gods. Worship of each god is unique,
+and brings differing capabilities to the priest.
+See appendix \ref{app:gods} for a listing of the gods and some of the
+attributes/effects of worshiping of these cults.
+
+
+\subsection{Joining a cult}
+\index{gods, worship}\index{cults}
+
+Praying at {\em aligned} altars\inputimage{altar}\ is the usual way
+in which a priest interacts
+with their god/cult. Aligned altars are identified by their name (e.g.
+altar of $<$god's name$>$) and may be found in various maps all over the
+world of \cf .
+When a player prays over an aligned altar, one of three things may happen based
+on the players currently worshiped god:
+\begin{quote}
+
+        (1) {\bf "Unaligned" player prays over an altar} $-$
+	results in that player
+        becoming a worshiper of the god the altar is dedicated to.
+
+        (2) {\bf Player prays over their god's altar} $-$
+	results in faster grace
+        regeneration. In addition, player may pray to gain up to twice their
+        normal amount of grace. Also, from time to time your god might
+	give you information, blessings, or something really good; it depends
+	on your WIS, POW and \priest\ experience.
+
+        (3) {\bf Player prays over alien god's altar} $-$
+	results in punishment
+        of the player (generally they lose some of their \priest\ experience).
+	This action {\em can} result in the defection of the player to the alien
+	god's cult.
+\end{quote}
+Note that once a player has joined a cult, it is impossible to go back
+to being ``unaligned'' to any god.
+
+
+\subsubsection{Summary of benefits/penalties for joining}
+
+The following things happen when a worshiper joins a god's cult:
+\begin{quote}
+
+- the worshiper gains access to the special flavor of magic belonging
+to the cult (see table \ref{tab:priest_prayer}).
+
+- the ability to cast magic is altered to reflect the powers
+of the worshiper's god. Some spells will be easier to cast; others
+will be more difficult, and some spell Paths will be forbidden.
+It is impossible to regain forbidden spells by any means except
+leaving the cult.
+
+- the worshiper becomes protected and/or vulnerable to certain attacks.
+\end{quote}
+Note that a player can belong to only {\em one} cult at any one time.
+
+\begin{table}
+\begin{center}
+\footnotesize
+\caption{Special priest prayers. \label{tab:priest_prayer}} \index{prayers}
+\vskip 12pt
+\begin{tabular}{|p{0.5cm}llp{0.5cm}|} \hline
+& Prayer & Description & \\ \hline\hline
+ & & & \\
+    &    Bless                   &  Enhances the recipients combat ability & \\
+    &                                 &  and confers some of the gods special & \\
+    &					& sphere of protection. & \\
+ & & & \\
+   &     Banishment 		&  An {\tt AT\_DEATH}\tablenotemark{1} attack is made versus & \\
+	& & enemies of the caster's god. &  \\
+ & & & \\
+   &     Call holy servant     &  Weaker version of an avatar is summoned.& \\
+ & & & \\
+   &     Cause wounds	    &  These prayers use the attacktype of & \\
+   &                                  &  ``godpower''. This means they will effect & \\
+&				     & magic immune creatures AND each prayer has & \\
+&				     & the special attacktype(s) of the priest's god. & \\
+ & & & \\
+&        Consecrate            &  Dedicates an altar to the caster's god.& \\
+ & & & \\
+&        Curse                  &  Decreases the recipients combat ability & \\
+&                                     &  and confers some vulnerabilities particular & \\
+&                                     &  to the caster's god. & \\
+ & & & \\
+&        Holy orb              &  Its like a fireball, but has the same effect & \\
+&			     &  as holy word\tablenotemark{2}. This prayer is most effective & \\
+&			& against single creatures. & \\
+ & & & \\
+&        Holy word\tablenotemark{2} &  This prayer shoots forth a cone of power & \\
+&				     &  that will damage only enemies of the caster's & \\
+       &                              &  god. & \\
+ & & & \\
+       & Holy wrath           &  Currently the most powerful ``holy word''\tablenotemark{2} & \\
+       &                              &  prayer available. & \\
+ & & & \\
+       & Summon avatar         &  Summons a "golem" that is tailored to & \\
+       &                              &  the powers of the worshiped god. This & \\
+       &                              &  prayer is more powerful (in general) & \\
+       &                              &  than a summoned elemental and is one & \\
+       &                              &  of the priest's most potent attack spells. & \\
+ & & & \\
+       & Summon cult monsters  &  	Summons creatures friendly to the priest's & \\
+       &                              &  god. Depending on the god this can be a & \\
+       &                              &   powerful or wimpy prayer. & \\
+ & & & \\
+\hline
+\end{tabular}
+\end{center}
+\tablenotetext{1}{The target and caster's {\tt levels} are compared. If the caster's
+{\tt level} is higher, then the creature will probably be destroyed.}
+\tablenotetext{2}{``holy word'' also defines a class of prayers. These spells are
+all designed to slay only the enemies of the priest's god.}
+\end{table}
+
+\subsection{Example god}
+
+Lets create an example god$-$the ``god of the undead''. If you worship
+the god of the undead, don't expect to be able to gain priest
+experience\footnote{i.e. experience for the {\tt wisdom} experience category}
+for killing the undead! But you might gain, as a priest of the
+undead, greater powers of commanding undead, and experience for
+killing certain (living) creatures that serve an enemy god. Each priest
+takes on a portion of the ``aura'' of their god; this means that our
+priest will probably become protected to life-damaging magic like draining
+and death, while conversely becoming more vulnerable to fire. Such a
+priest, because their god's domain does not include the living, probably wont be
+capable of healing either.
+
+
+\section{Alchemy} \label{sec:alchemy}
+\index{alchemy}\index{magic, alchemy}\index{\wizardry\}
+
+Alchemy is a sub-type of \wizardry .  Being an alchemist is easy;
+you only need satisfy the following:
+\begin{quote}
+1) be able to cast the \alchemy\ spell.  \\
+2) have access to a cauldron\inputimage{cauldron}. \\
+3) have some ingredients.
+\end{quote}
+To create something put ingredients in the cauldron, then
+cast the '\alchemy ' \incantation . You might make something :).
+Be warned though! backfire effects are possible, especially if you
+throw a lot of stuff in the pot. In fact, the more junk which is
+in the cauldron, the
+{\em worse} any potential backfire is likely to be. Backfire generally
+occurs when you get the ingredients wrong but low-level alchemists
+attempting very difficult (4$+$ ingredient) formulae may have
+problems too!
+
+In order to get better at making stuff, you will need to learn the
+{\tt alchemy} {\em skill}. Books found in shops (and elsewhere) will give you
+formulae for making stuff.  There is no hard limit on the number of
+formulae which might make something (the code is pretty flexible),
+so you can always {\em experiment} on your own, but this will be dangerous!
+
+
+\section{Rune magic} \label{sec:rune}
+\index{magic, rune}\index{\wizardry\}\index{runes}
+
+Runes are another special form of \wizardry ; essentially runes are
+magical inscriptions on the dungeon floor which cast a spell (or
+``detonate'') when something steps on them.  Flying
+objects don't detonate runes.  Beware!  Runes are invisible
+most of the time!
+
+  There are several runes which are specialized;  these can be set as
+your range spell.  Some of these are:
+\vskip 12pt
+\begin{quote}
+\begin{tabular}{lcl} \index{runes, types}
+  Rune of Fire\inputimage{runefire}    &    -    &         does fire damage \\
+                   &          &         when it detonates \\
+  Rune of Frost\inputimage{runefrost}    &    -    &         does cold damage\\
+  Rune of Blasting\inputimage{runeblast} &    -    &         does physical damage \\
+  Rune of Shocking\inputimage{runeshock} &    -    &         does electric damage \\
+  Rune of Death\inputimage{runedeath}    &    -    &         attacks with attacktype \\
+		   &		&	"death" at caster level \\
+ & & \\
+ \multicolumn{3}{l}{ + some others you may discover in \wizbook s.} \\
+\end{tabular}
+\end{quote}
+
+  The spell 'disarm'\index{runes, disarming} may be used to try and destroy a rune you've
+discovered.  In addition, there are some special runes which may only
+be called with the 'invoke' command:
+\vskip 12pt
+\begin{quote}
+\begin{tabular}{lcl}
+  Magic Rune\inputimage{runegen}     &      -    &         You may store any \incantation\ \\
+                 &            &         in this rune that you know and \\
+                 &            &         have the mana to cast. \\
+ & & \\
+  Marking Rune\inputimage{runemark}   &      -    &         this is basically a sign.  You \\
+                 &            &         may store any words you like in \\
+                 &            &         this rune, and people may apply \\
+                 &            &         it to read it.  Maybe useful for \\
+                 &            &         mazes!  This rune will not detonate, \\
+                 &            &         nor is it ordinarily invisible. \\
+\end{tabular}
+\end{quote}
+
+\subsubsection{Partial Visibility of Runes}
+
+  Your runes will be partially invisible.  That is, they'll be visible
+only part of the time.  They have a 1/(your {\tt level}/2) chance of being
+visible in any given round, so the higher your level, the better hidden
+the runes you make are.
+
+\subsubsection{Examples of usage}\index{runes, usage}
+
+Here are several examples of how you can use the runes.\\
+
+{\tt 'invoke magic rune heal}
+\begin{quote}
+will place a magic rune of healing one square ahead of you, whichever
+  way you're facing.
+\end{quote}
+
+{\tt 'invoke magic rune transfer}
+\begin{quote}
+as above, except the rune will contain the spell of transference
+\end{quote}
+
+{\tt 'invoke magic rune large fireball}
+\begin{quote}
+as above, except the spell large fireball will be cast when someone
+     steps on the rune.  the fireball will fly in the direction the caster
+     was facing when he created the rune.
+\end{quote}
+
+{\tt 'cast rune of fire}
+\begin{quote}
+prepares the rune of fire as the range spell.  Use the direction
+      keys to use up your mana and place a rune.
+\end{quote}
+
+{\tt 'invoke marking rune fubar}
+\begin{quote}
+  places a rune of marking, which says "fubar" when someone applies it.
+\end{quote}
+
+{\tt 'invoke marking rune touch my stuff and I will hunt you down!}
+\begin{quote}
+  places the marking rune warning would-be thieves of their danger.
+\end{quote}
+
+
+\subsubsection{Restrictions on runes:}
+
+  You may not place runes underneath monsters or other players.  You
+may not place a new rune on a square which already has a rune.  Any
+attempt to do the latter strengthens the pre-existing rune.
+

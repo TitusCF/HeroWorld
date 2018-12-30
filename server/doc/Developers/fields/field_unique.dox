@@ -1,0 +1,56 @@
+/**
+@fn FLAG_UNIQUE
+@section Use
+<table>
+	<tr>
+		<th>Type(s)</th>
+		<th>Description</th>
+	</tr>	<tr>
+		<td>
+@ref page_type_39, @ref page_type_8, @ref page_type_99, @ref page_type_104, @ref page_type_16, @ref page_type_160, @ref page_type_161, @ref page_type_87, @ref page_type_113, @ref page_type_100, @ref page_type_34, @ref page_type_13, @ref page_type_70, @ref page_type_33, @ref page_type_14, @ref page_type_15
+		</td><td>            Unique items exist only one time on a server. If the item is taken,
+            lost or destroyed - it's gone for good.</td>
+	</tr>
+	<tr>
+		<td>
+@ref page_type_122
+		</td><td>            Unique items exist only one time on a server. If the item is taken,
+            lost or destroyed - it's gone for good. All contents of a unique
+            container are unique as well.</td>
+	</tr>
+	<tr>
+		<td>
+@ref page_type_116
+		</td><td>            If set, then the event happens only once.</td>
+	</tr>
+	<tr>
+		<td>
+@ref page_type_66
+		</td><td>            This flag defines the destined map as "personal unique map". If set,
+            there will be a separate version of that map for every player out
+            there. This feature is used for the permanent apartments (in
+            Scorn/Nuernberg/Caterham...). It should not be used for anything
+            else than apartments, since Crossfire is a *multi*player game. In
+            such a permanent apartment don't forget to set the unique-flag for
+            all floor squares too (see floors). An exit pointing outside of a
+            personal unique map must have the "unique destination"-flag unset.</td>
+	</tr>
+	<tr>
+		<td>
+@ref page_type_212, @ref page_type_67, @ref page_type_88
+		</td><td>            Unique floor means that any items dropped on that spot will be saved
+            beyond map reset. For permanent apartments, all floor squares must
+            be set &lt;unique map&gt;.</td>
+	</tr>
+	<tr>
+		<td>
+@ref page_type_21
+		</td><td>            Unique items exist only one time on a server. If the item is taken,
+            lost or destroyed - it's gone for good.
+
+            This can be used if you want to sell apartments on your map: Simply
+            sell a unique passport/key, and place an inventory checker at the
+            entrance of your apartment.</td>
+	</tr>
+
+*/

@@ -1,0 +1,6 @@
+# This awk-script will find and print out all of the 'normal'
+# weapons that have an additional magical effect - e.g. stake..
+
+$4 ~ /[A-Za-z]/ && $4 !~ /Attacks: physical $/ {
+	printf(" %s & - & %s \\\\\n",$3,$4);
+}

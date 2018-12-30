@@ -1,0 +1,834 @@
+/**
+@page page_type_213 Monster &amp; NPC
+
+
+@section Description
+            Monsters can behave in various kinds of ways. They can be
+            aggressive, attacking the player. Or peaceful, helping the player -
+            maybe joining him as pet. The unaggressive creatures who communicate
+            with players are usually called "NPCs" (Non Player Character), a
+            well-known term in role-play environments. 
+
+
+
+Type defined by:
+- @ref FLAG_IS_FLOOR unset
+- @ref FLAG_ALIVE set
+- @ref FLAG_TEAR_DOWN unset
+
+
+@section Attributes
+
+<table>
+	<tr>
+		<th>Attribute</th>
+		<th>Field</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>armor class</td>
+		<td>@ref liv::ac</td>
+		<td>                Monsters of low &lt;armor class&gt; are less likely to get hit
+                from their opponent. &lt;armor class&gt; can be considered the
+                "counter piece" to &lt;weapon class&gt;. Values typically range
+                between +20 (very bad) to -20 (quite good).
+		</td>
+	</tr>
+	<tr>
+		<td>artifact</td>
+		<td>@ref obj::artifact</td>
+		<td>            If defined, refers to an artifact to get values from.
+		</td>
+	</tr>
+	<tr>
+		<td>asleep</td>
+		<td>@ref FLAG_SLEEP</td>
+		<td>                Being &lt;asleep&gt;, a monster won't move unless a player
+                enters the &lt;sensing range&gt; of the monster. Usually the
+                sensing range is larger than the players line of sight. Due to
+                that, in most cases the player won't ever notice whether a
+                monster was asleep or not.
+		</td>
+	</tr>
+	<tr>
+		<td>attack movement</td>
+		<td>@ref obj::attack_movement</td>
+		<td>(no description)
+		</td>
+	</tr>
+	<tr>
+		<td>attack type</td>
+		<td>@ref obj::attacktype</td>
+		<td>                This number is a bitmask, specifying the monster's attack types
+                for melee damage. Attack types are: physical, magical, fire,
+                cold.. etc. Strong monsters often have more than just physical
+                attack type.
+
+                When a monster with multiple attack types hits an opponent, it
+                will do as much damage as the "best" of it's attack types does.
+                So, the more attack types, the more dangerous. Attack types
+                "magic" and "chaos" are somehow exceptions.
+		</td>
+	</tr>
+	<tr>
+		<td>attuned paths</td>
+		<td>@ref obj::path_attuned</td>
+		<td>                Click on the &lt;attuned paths&gt; button to select spellpaths.
+                The creature will get attuned to the specified spellpaths.
+		</td>
+	</tr>
+	<tr>
+		<td>block view</td>
+		<td>@ref FLAG_BLOCKSVIEW</td>
+		<td>            If an item is set to block view, players (and monsters) cannot see
+            beyond it unless they cross it or manage to stand on top.
+		</td>
+	</tr>
+	<tr>
+		<td>breed monster</td>
+		<td>@ref obj::other_arch</td>
+		<td>            This only takes effect if &lt;multiply&gt; is enabled. The monster
+            will create a &lt;breed monster&gt; every once in a while. &lt;breed
+            monster&gt; can be set to any valid arch-name of a monster.
+		</td>
+	</tr>
+	<tr>
+		<td>can cast spell</td>
+		<td>@ref FLAG_CAST_SPELL</td>
+		<td>                If &lt;can cast spell&gt; is disabled, the monster cannot cast
+                any spell. Only wands/rods/etc can be used, given the
+                appropriate abilities.
+		</td>
+	</tr>
+	<tr>
+		<td>can use armor</td>
+		<td>@ref FLAG_USE_ARMOUR</td>
+		<td>                Monster is able to wear protective equipment like breastplate
+                armor, helmets etc.
+		</td>
+	</tr>
+	<tr>
+		<td>can use bows</td>
+		<td>@ref FLAG_USE_BOW</td>
+		<td>                Monster is able to use missile-weapon type objects.
+		</td>
+	</tr>
+	<tr>
+		<td>can use ranged weapons</td>
+		<td>@ref FLAG_USE_RANGE</td>
+		<td>                Monster is able to use wands, staves, and rods.
+		</td>
+	</tr>
+	<tr>
+		<td>can use rings</td>
+		<td>@ref FLAG_USE_RING</td>
+		<td>                Monster is able to wear rings.
+		</td>
+	</tr>
+	<tr>
+		<td>can use scrolls</td>
+		<td>@ref FLAG_USE_SCROLL</td>
+		<td>                Monster is able to read scrolls.
+		</td>
+	</tr>
+	<tr>
+		<td>can use shield</td>
+		<td>@ref FLAG_USE_SHIELD</td>
+		<td>                Monster is able to wear shields.
+		</td>
+	</tr>
+	<tr>
+		<td>can use skills</td>
+		<td>@ref FLAG_CAN_USE_SKILL</td>
+		<td>                Monster is able to use skills from it's inventory. For example,
+                you can put a throwing skill object and some boulders into the
+                monster's object and set &lt;can use skills&gt;.
+		</td>
+	</tr>
+	<tr>
+		<td>can use weapons</td>
+		<td>@ref FLAG_USE_WEAPON</td>
+		<td>                Monster is able to wield weapon type objects.
+		</td>
+	</tr>
+	<tr>
+		<td>carries weight</td>
+		<td>@ref obj::carrying</td>
+		<td>            If a monster has something in the inventory, this value can be set
+            to reflect the slowdown due to the carried weight.
+		</td>
+	</tr>
+	<tr>
+		<td>changing</td>
+		<td>@ref FLAG_CHANGING</td>
+		<td>            A &lt;changing&gt; object converts to &lt;food&gt; &lt;other_arch&gt;
+            objects; when it's animation is done. For non-living objects &lt;food&gt;
+            is checked: if it is zero, the change happens; otherwise &lt;food&gt;
+            is decreased by one. I suggest you don't mess with this value -
+            leave the default in place.
+		</td>
+	</tr>
+	<tr>
+		<td>damage</td>
+		<td>@ref liv::dam</td>
+		<td>                Among other parameters, &lt;damage&gt; affects how much melee
+                damage a monster inflicts. &lt;damage&gt; is used as base value
+                for damage per hit. &lt;level&gt;, &lt;speed&gt;, &lt;weapon
+                class&gt; and resistances also take effect on the melee damage
+                of a monster.
+		</td>
+	</tr>
+	<tr>
+		<td>death animation</td>
+		<td>@ref page_custom_attribute_death_animation "death_animation"</td>
+		<td>            If set to an archetype name, this item will be inserted in the map
+            when the monster dies.
+		</td>
+	</tr>
+	<tr>
+		<td>denied paths</td>
+		<td>@ref obj::path_denied</td>
+		<td>                Click on the &lt;denied paths&gt; button to select spellpaths.
+                The creature won't be able to cast spells of the specified
+                paths.
+		</td>
+	</tr>
+	<tr>
+		<td>detect hidden</td>
+		<td>@ref liv::Int</td>
+		<td>                The &lt;detect hidden&gt; value gives monsters the ability to
+                find hidden/invisible creatures. Higher values make for better
+                detection-skills. Enabling &lt;see invisible&gt; makes this
+                value obsolete.
+		</td>
+	</tr>
+	<tr>
+		<td>elevation</td>
+		<td>@ref page_custom_attribute_elevation "elevation"</td>
+		<td>            The elevation (height above sea level) of this square. It is used
+            for weather calculations and should be in the range -32000..32000.
+            The elevation of a tile must be set in the bottom-most game object;
+            elevation values for non-bottom-most game objects are ignored by the
+            Crossfire server.
+		</td>
+	</tr>
+	<tr>
+		<td>experience</td>
+		<td>@ref liv::exp</td>
+		<td>            When a player kills this monster, he will get exactly this amount of
+            &lt;experience&gt;. The experience will flow into the skill-category
+            the player used for the kill.
+
+            If you create special monsters of tweaked strength/abilities, always
+            make sure that the &lt;experience&gt; is set to a reasonable value.
+            Compare with existing arches to get a feeling what reasonable means.
+            Keep in mind that spell-casting monsters are a lot harder to kill
+            than non spell casters!
+		</td>
+	</tr>
+	<tr>
+		<td>friendly</td>
+		<td>@ref FLAG_FRIENDLY</td>
+		<td>                &lt;friendly&gt; monsters help the player, attacking any
+                non-friendly monsters in range.
+		</td>
+	</tr>
+	<tr>
+		<td>glow radius</td>
+		<td>@ref obj::glow_radius</td>
+		<td>            If &lt;glow radius&gt; is set to a value greater zero, the object
+            appears lit up on dark maps. &lt;glow radius&gt; can be a value
+            between 0 and 4, the higher, the more light does the object emit.
+		</td>
+	</tr>
+	<tr>
+		<td>healing rate</td>
+		<td>@ref liv::Con</td>
+		<td>                Monsters regenerate this many health points each 4 ticks. Hence,
+                the healing rate is independent of &lt;speed&gt;.
+		</td>
+	</tr>
+	<tr>
+		<td>health points</td>
+		<td>@ref liv::hp</td>
+		<td>                The &lt;health points&gt; of a monster define how long it takes
+                to kill it. With every successful hit from an opponent, &lt;health
+                points&gt; get drained - The monster dies by zero &lt;health
+                points&gt;.
+		</td>
+	</tr>
+	<tr>
+		<td>hitback</td>
+		<td>@ref FLAG_HITBACK</td>
+		<td>                Monsters with &lt;hitback&gt; enabled hurt the attacker in
+                proportion to the amount of damage the *attacker* inflicted.
+                This damage is additional to the regular melee damage of the
+                monster. As far as I know, hitback uses acid attack type, and it
+                only takes effect if the monster actually has acid attacktype at
+                it's disposal. Acid spheres for example use this feature.
+		</td>
+	</tr>
+	<tr>
+		<td>identified</td>
+		<td>@ref FLAG_IDENTIFIED</td>
+		<td>            If an item is identified, the player has full knowledge about it.
+		</td>
+	</tr>
+	<tr>
+		<td>identified animation</td>
+		<td>@ref page_custom_attribute_identified_animation "identified_animation"</td>
+		<td>            If defined, then the object will take this animation when identified.
+		</td>
+	</tr>
+	<tr>
+		<td>identified animation speed</td>
+		<td>@ref page_custom_attribute_identified_anim_speed "identified_anim_speed"</td>
+		<td>            If defined, then the object will have this animation speed when identified.
+		</td>
+	</tr>
+	<tr>
+		<td>identified image</td>
+		<td>@ref page_custom_attribute_identified_face "identified_face"</td>
+		<td>            If defined, then the object will take this appareance when identified.
+		</td>
+	</tr>
+	<tr>
+		<td>identified random animation?</td>
+		<td>@ref page_custom_attribute_identified_anim_random "identified_anim_random"</td>
+		<td>            If defined, then the object's animation is in a random sequence when identified.
+		</td>
+	</tr>
+	<tr>
+		<td>identified_name</td>
+		<td>@ref page_custom_attribute_identified_name "identified_name"</td>
+		<td>            If defined, then the object will take this name when identified.
+		</td>
+	</tr>
+	<tr>
+		<td>identified_name_pl</td>
+		<td>@ref page_custom_attribute_identified_name_pl "identified_name_pl"</td>
+		<td>            If defined, then the object will take this plural name when identified.
+		</td>
+	</tr>
+	<tr>
+		<td>image</td>
+		<td>@ref obj::face</td>
+		<td>            The image-name defines what image is displayed for this object
+            in-game.
+		</td>
+	</tr>
+	<tr>
+		<td>invisible</td>
+		<td>@ref obj::invisible</td>
+		<td>            Generally makes the object invisible. Depending on the object-type,
+            some can be made visible by the show_invisible spell. If in doubt,
+            test it. Putting an invisible object under the floor always prevents
+            it from being shown.
+		</td>
+	</tr>
+	<tr>
+		<td>level</td>
+		<td>@ref obj::level</td>
+		<td>            A monster's &lt;level&gt; is the most important attribute. &lt;level&gt;
+            affects the power of a monster in various ways.
+		</td>
+	</tr>
+	<tr>
+		<td>max health</td>
+		<td>@ref liv::maxhp</td>
+		<td>                &lt;max health&gt; is the maximum amount of &lt;health points&gt;
+                this monster can have.
+		</td>
+	</tr>
+	<tr>
+		<td>max spellpoints</td>
+		<td>@ref liv::maxsp</td>
+		<td>                &lt;max spellpoints&gt; is the maximum number of spellpoints a
+                monster can hold. Setting this to high values has little effect
+                unless the monster has a decent &lt;spellpoint regen.&gt;, or
+                the spell "regenerate mana" at it's disposal.
+
+                Warning: Do not create spell-casting and breeding monsters since
+                this field is also used as &lt;multiply speed&gt;.
+		</td>
+	</tr>
+	<tr>
+		<td>misc. actions</td>
+		<td>@ref obj::will_apply</td>
+		<td>                This entry defines which kinds of environment actions the
+                creature is able to perform.
+		</td>
+	</tr>
+	<tr>
+		<td>monster behavior</td>
+		<td>@ref FLAG_MONSTER</td>
+		<td>                When &lt;monster behavior&gt; is enabled, this object will
+                behave like a monster: It can move and attack enemies (which are
+                typically players). This flag should be set for all monsters
+                as-such. Monsters which don't move, like guards, should also
+                have &lt;monster behavior&gt;, but in combination with &lt;stand
+                still&gt;. It should *not* be set for things like immobile
+                generators.
+		</td>
+	</tr>
+	<tr>
+		<td>movement type</td>
+		<td>@ref obj::move_type</td>
+		<td>            Determines which movement types this monster can use. Flying
+            monsters won't get slowed down in rough terrain and they won't be
+            affected by movers.
+		</td>
+	</tr>
+	<tr>
+		<td>multiply</td>
+		<td>@ref FLAG_GENERATOR</td>
+		<td>            Monsters with &lt;generator&gt; enabled will create a &lt;breed
+            monster&gt; every once in a while. Mice are a good example for this
+            effect. If enabled, you must also set &lt;breed monster&gt; or check
+            &lt;template generation&gt; and put other monsters in the inventory.
+		</td>
+	</tr>
+	<tr>
+		<td>multiply limit</td>
+		<td>@ref page_custom_attribute_generator_limit "generator_limit"</td>
+		<td>            If &lt;multiply&gt; is enabled, this limits how many &lt;breed
+            monster&gt; are created. When the maximum is reached, the generator
+            is destroyed.
+		</td>
+	</tr>
+	<tr>
+		<td>multiply map code</td>
+		<td>@ref page_custom_attribute_generator_code "generator_code"</td>
+		<td>            If &lt;multiply map limit&gt; is set, this groups generators for
+            counting purposes. If not set, defaults to the generator's name.
+		</td>
+	</tr>
+	<tr>
+		<td>multiply map limit</td>
+		<td>@ref page_custom_attribute_generator_max_map "generator_max_map"</td>
+		<td>            If &lt;multiply&gt; is enabled, this limits how many alive monsters
+            at the same time will be on the map.
+		</td>
+	</tr>
+	<tr>
+		<td>multiply radius</td>
+		<td>@ref page_custom_attribute_generator_radius "generator_radius"</td>
+		<td>            If &lt;multiply&gt; is enabled, this is the radius, in square, in
+            which the generator will try to put a new monster. Default value is
+            1.
+		</td>
+	</tr>
+	<tr>
+		<td>name</td>
+		<td>@ref obj::name</td>
+		<td>            This is the name of the object, displayed to the player.
+		</td>
+	</tr>
+	<tr>
+		<td>no damage</td>
+		<td>@ref FLAG_NO_DAMAGE</td>
+		<td>                If set to non-zero, the monster cannot be hurt by attacking it.
+		</td>
+	</tr>
+	<tr>
+		<td>no mood change</td>
+		<td>@ref page_custom_attribute_no_mood_change "no_mood_change"</td>
+		<td>            If set, this monster is not affected by spells like 'charm monster'
+            and such.
+		</td>
+	</tr>
+	<tr>
+		<td>non-pickable</td>
+		<td>@ref FLAG_NO_PICK</td>
+		<td>            If set, the object cannot be picked up (Neither by players nor
+            monsters).
+		</td>
+	</tr>
+	<tr>
+		<td>npc message</td>
+		<td>@ref obj::msg</td>
+		<td>            This text field contains the keyword-matching-syntax. The text
+            should have the following format: "@match &lt;keyword1&gt;|&lt;keyword2&gt;|...
+            ". Any number of keywords from one to infinite is allowed. Make sure
+            they are separated by a '|'.
+
+            Examples: "@match yes", "@match gold|treasure". The monster or NPC
+            will respond when the player speaks any of the given keywords within
+            a two-square radius. IMPORTANT: Upper/lower case does not make a
+            difference!
+		</td>
+	</tr>
+	<tr>
+		<td>one hit only</td>
+		<td>@ref FLAG_ONE_HIT</td>
+		<td>                Monsters with &lt;one hit only&gt; disappear after one
+                successful hit to a player.
+		</td>
+	</tr>
+	<tr>
+		<td>pick up</td>
+		<td>@ref obj::pick_up</td>
+		<td>                Click on the &lt;pick up&gt; button and select which types of
+                objects the creature should try to pick up.
+
+                Note also that if &lt;can use armor&gt;, &lt;can use weapon&gt;,
+                &lt;can use ring&gt;... etc are set, then the creature will pick
+                up the matching items even if this is not set here.
+		</td>
+	</tr>
+	<tr>
+		<td>price adjustment</td>
+		<td>@ref page_custom_attribute_price_adjustment "price_adjustment"</td>
+		<td>            If set, this is the buy and sell price adjustment ratio for the
+            item.
+		</td>
+	</tr>
+	<tr>
+		<td>price adjustment for buying</td>
+		<td>@ref page_custom_attribute_price_adjustment_buy "price_adjustment_buy"</td>
+		<td>            If set, this is the adjustment ratio when buying the item. Ignored
+            if &lt;price&gt; adjustment is set.
+		</td>
+	</tr>
+	<tr>
+		<td>price adjustment for selling</td>
+		<td>@ref page_custom_attribute_price_adjustment_sell "price_adjustment_sell"</td>
+		<td>            If set, this is the adjustment ratio when selling the item. Ignored
+            if &lt;price&gt; adjustment is set.
+		</td>
+	</tr>
+	<tr>
+		<td>race</td>
+		<td>@ref obj::race</td>
+		<td>            Every monster should have a race set to categorize it. The monster's
+            &lt;race&gt; can have different effects: Slaying weapons inflict
+            triple damage against enemy races and holy word kills only enemy
+            races of the god.
+		</td>
+	</tr>
+	<tr>
+		<td>random movement</td>
+		<td>@ref FLAG_RANDOM_MOVE</td>
+		<td>            Living things with the &lt;random_movement&gt; flag set
+            automatically move about in a random fashion.
+		</td>
+	</tr>
+	<tr>
+		<td>reflect missiles</td>
+		<td>@ref FLAG_REFL_MISSILE</td>
+		<td>                A monster with this flag has the ability to &lt;reflect missiles&gt;,
+                all kinds of projectiles (e.g. arrows, bolts, boulders) will
+                bounce off.
+		</td>
+	</tr>
+	<tr>
+		<td>reflect spells</td>
+		<td>@ref FLAG_REFL_SPELL</td>
+		<td>                A monster with this flag has the ability to &lt;reflect spells&gt;,
+                all kinds of spell-bullets and -beams will bounce off.
+
+                Generally this flag should not be set because it puts
+                wizard-type players at an unfair disadvantage.
+		</td>
+	</tr>
+	<tr>
+		<td>repelled paths</td>
+		<td>@ref obj::path_repelled</td>
+		<td>                Click on the &lt;repelled paths&gt; button to select spellpaths.
+                The creature will get repelled to the specified spellpaths.
+		</td>
+	</tr>
+	<tr>
+		<td>resist acid %</td>
+		<td>@ref obj::resist</td>
+		<td>(no description)
+		</td>
+	</tr>
+	<tr>
+		<td>resist blinding %</td>
+		<td>@ref obj::resist</td>
+		<td>(no description)
+		</td>
+	</tr>
+	<tr>
+		<td>resist chaos %</td>
+		<td>@ref obj::resist</td>
+		<td>(no description)
+		</td>
+	</tr>
+	<tr>
+		<td>resist cold %</td>
+		<td>@ref obj::resist</td>
+		<td>(no description)
+		</td>
+	</tr>
+	<tr>
+		<td>resist confusion %</td>
+		<td>@ref obj::resist</td>
+		<td>(no description)
+		</td>
+	</tr>
+	<tr>
+		<td>resist death-attack %</td>
+		<td>@ref obj::resist</td>
+		<td>(no description)
+		</td>
+	</tr>
+	<tr>
+		<td>resist depletion %</td>
+		<td>@ref obj::resist</td>
+		<td>(no description)
+		</td>
+	</tr>
+	<tr>
+		<td>resist draining %</td>
+		<td>@ref obj::resist</td>
+		<td>(no description)
+		</td>
+	</tr>
+	<tr>
+		<td>resist electricity %</td>
+		<td>@ref obj::resist</td>
+		<td>(no description)
+		</td>
+	</tr>
+	<tr>
+		<td>resist fear %</td>
+		<td>@ref obj::resist</td>
+		<td>(no description)
+		</td>
+	</tr>
+	<tr>
+		<td>resist fire %</td>
+		<td>@ref obj::resist</td>
+		<td>(no description)
+		</td>
+	</tr>
+	<tr>
+		<td>resist ghosthit %</td>
+		<td>@ref obj::resist</td>
+		<td>(no description)
+		</td>
+	</tr>
+	<tr>
+		<td>resist godpower %</td>
+		<td>@ref obj::resist</td>
+		<td>(no description)
+		</td>
+	</tr>
+	<tr>
+		<td>resist holy power %</td>
+		<td>@ref obj::resist</td>
+		<td>(no description)
+		</td>
+	</tr>
+	<tr>
+		<td>resist magic %</td>
+		<td>@ref obj::resist</td>
+		<td>(no description)
+		</td>
+	</tr>
+	<tr>
+		<td>resist paralyze %</td>
+		<td>@ref obj::resist</td>
+		<td>(no description)
+		</td>
+	</tr>
+	<tr>
+		<td>resist physical %</td>
+		<td>@ref obj::resist</td>
+		<td>(no description)
+		</td>
+	</tr>
+	<tr>
+		<td>resist poison %</td>
+		<td>@ref obj::resist</td>
+		<td>(no description)
+		</td>
+	</tr>
+	<tr>
+		<td>resist slow %</td>
+		<td>@ref obj::resist</td>
+		<td>(no description)
+		</td>
+	</tr>
+	<tr>
+		<td>resist turn undead %</td>
+		<td>@ref obj::resist</td>
+		<td>(no description)
+		</td>
+	</tr>
+	<tr>
+		<td>resist weaponmagic %</td>
+		<td>@ref obj::resist</td>
+		<td>(no description)
+		</td>
+	</tr>
+	<tr>
+		<td>run at % health</td>
+		<td>@ref FLAG_RUN_AWAY</td>
+		<td>                This is a percentage value in the range 0-100. When the
+                monster's health points drop below this percentage (relative to
+                max health), it attempts to run away from the attacker.
+		</td>
+	</tr>
+	<tr>
+		<td>see in darkness</td>
+		<td>@ref FLAG_SEE_IN_DARK</td>
+		<td>                A monster with the ability to &lt;see in darkness&gt; cannot be
+                fooled by spells of darkness or dark maps. This flag is a
+                "should-have" for high-level monsters. When a monster is unable
+                to see in darkness, players can cast darkness and sneak around
+                it safely.
+		</td>
+	</tr>
+	<tr>
+		<td>see invisible</td>
+		<td>@ref FLAG_SEE_INVISIBLE</td>
+		<td>                A monster with the ability to &lt;see invisible&gt; cannot be
+                fooled with by invisible or hiding players. This flag is a
+                must-have for high-level monsters. When a monster is unable to
+                detect invisible players, it can be killed without fighting
+                back.
+		</td>
+	</tr>
+	<tr>
+		<td>sensing range</td>
+		<td>@ref liv::Wis</td>
+		<td>                &lt;sensing range&gt; determines how close a player needs to be
+                before the creature wakes up. This is done as a square, for
+                reasons of speed. Thus, if the &lt;sensing range&gt; is 11, any
+                player that moves within the 11x11 square of the monster will
+                wake the monster up. If the player has stealth, the size of this
+                square is reduced in half plus 1.
+		</td>
+	</tr>
+	<tr>
+		<td>smooth level</td>
+		<td>@ref obj::smoothlevel</td>
+		<td>            If &lt;smooth level&gt; is set to a value greater zero, the object
+            will be drawn partially over adjacent squares having a lower &lt;smooth
+            level&gt; value. The value must be between 0 and 255 (inclusive); 0
+            means &quot;never overlap adjacent squares&quot;.
+		</td>
+	</tr>
+	<tr>
+		<td>speed</td>
+		<td>@ref obj::speed</td>
+		<td>            The &lt;speed&gt; determines how fast a monster will both move and
+            fight. High &lt;speed&gt; makes a monster considerably stronger.
+		</td>
+	</tr>
+	<tr>
+		<td>spellpoint regen.</td>
+		<td>@ref liv::Pow</td>
+		<td>                Monsters regenerate this many spellpoints each 16 ticks. Hence,
+                the spellpoint regeneration rate is independent of &lt;speed&gt;.
+
+                To make a real tough spell-casting monster, the rate of
+                spellpoint regeneration is most important. If your monster is
+                still not casting fast enough, give it the spell-ability of
+                "regenerate mana". That, paired with high &lt;max spellpoints&gt;,
+                is the ultimate thing.
+		</td>
+	</tr>
+	<tr>
+		<td>spellpoints</td>
+		<td>@ref liv::sp</td>
+		<td>                Like players, monsters need &lt;spellpoints&gt; to do magic.
+                Monsters use them for both wizard- and prayer-spells. However,
+                this value defines only the amount of *initial* spellpoints the
+                monster starts with. When creating a spell-casting monster,
+                remember that &lt;max spellpoints&gt; and &lt;spellpoint regen.&gt;
+                are more important than just initial &lt;spellpoints&gt;.
+		</td>
+	</tr>
+	<tr>
+		<td>splitting</td>
+		<td>@ref FLAG_SPLITTING</td>
+		<td>            A &lt;splitting&gt; object converts to &lt;food&gt; &lt;other_arch&gt;
+            objects; when it is hit physically. For non-living objects &lt;food&gt;
+            is checked: if it is zero, the change happens; otherwise &lt;food&gt;
+            is decreased by one. I suggest you don't mess with this value -
+            leave the default in place.
+		</td>
+	</tr>
+	<tr>
+		<td>stand still</td>
+		<td>@ref FLAG_STAND_STILL</td>
+		<td>                Monsters which &lt;stand still&gt; won't move to leave their
+                position. When aggressive, they will attack all enemies who get
+                close to them. This behavior is commonly known from castle
+                guards.
+
+                In older versions of Crossfire it was possible to eventually
+                push a &lt;stand still&gt;-monster out of position by force. I
+                believe this is no longer possible. Nevertheless, you should
+                still be cautious when lining up &lt;stand still&gt;-monster in
+                order to "defend" something: Such monsters are rather easy to
+                kill. It's good for low level maps, but not much more.
+		</td>
+	</tr>
+	<tr>
+		<td>template generation</td>
+		<td>@ref FLAG_CONTENT_ON_GEN</td>
+		<td>            This only takes effect if &lt;multiply&gt; is enabled. The monster
+            will create a new monster every once in a while by duplicating it's
+            inventory. In this case, the &lt;breed monster&gt; value is never
+            used and can be forgotten. Each time the monster need to generate an
+            object, it will be a randomly chosen item from the inventory. When
+            generator is destroyed, inventory is destroyed.
+		</td>
+	</tr>
+	<tr>
+		<td>title</td>
+		<td>@ref obj::title</td>
+		<td>            This is the object's title. Once an object is identified the title
+            is attached to the name. Typical titles are "of Mostrai", "of xray
+            vision" etc.
+		</td>
+	</tr>
+	<tr>
+		<td>treasurelist</td>
+		<td>@ref obj::randomitems</td>
+		<td>            When the monster is killed, items from the treasurelist will drop to
+            the ground. This is a common way to reward players for killing
+            (masses of) monsters.
+
+            Note that you can always put items into the monster's inventory.
+            Those will drop-at-kill just like the stuff from the &lt;treasurelist&gt;.
+		</td>
+	</tr>
+	<tr>
+		<td>unaggressive</td>
+		<td>@ref FLAG_UNAGGRESSIVE</td>
+		<td>                &lt;unaggressive&gt; monsters do not attack players unless
+                attacked first.
+		</td>
+	</tr>
+	<tr>
+		<td>undead</td>
+		<td>@ref FLAG_UNDEAD</td>
+		<td>            Several spells only affect undead monsters: turn undead, banish
+            undead, holy word, etc.
+		</td>
+	</tr>
+	<tr>
+		<td>weapon class</td>
+		<td>@ref liv::wc</td>
+		<td>                Monsters of high &lt;weapon class&gt; are more likely to really
+                hit their opponent. &lt;weapon class&gt; can be considered the
+                "counter piece" to &lt;armor class&gt;.
+		</td>
+	</tr>
+	<tr>
+		<td>weight</td>
+		<td>@ref obj::weight</td>
+		<td>            This value defines the object's weight in grams (1000g is 1kg).
+            Objects with zero weight are not pickable for players. Still, set
+            the "non-pickable"-flag for explicitly non-pickable objects (hey,
+            this is open source.. you never know ;) ).
+		</td>
+	</tr>
+</table>
+*/

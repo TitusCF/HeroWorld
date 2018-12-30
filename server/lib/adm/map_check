@@ -1,0 +1,383 @@
+#!/usr/bin/perl
+#
+# (C) Copyright Markus Weber, 1994. All rights reserved.
+#     Permission is granted to use, copy, and modify for non-commercial use.
+#
+
+# usage: check-consistency.pl [options]...
+# Options:
+# archdb=pathname-of-archetype-database		*** not used ***
+#	default	./ARCHDB .{dir,pag}
+# archetypes=pathname-of-archetypes-file
+#	default	$cfdir/share/crossfire/archetypes
+# cfdir=pathname-to-crossfire-installation
+#	default /opt/cf0901	(hardcoded)
+# mapdir=pathname-of-map-directory
+#	default $cfdir/share/crossfire/maps
+# start-map=map-path-of-starting map
+#	default (init in archetypes)
+
+# %% make it a command line option
+$debug = 1;
+
+#
+#	ARGUMENT PROCESSING
+#
+# preset options
+$cfdir = "/export/home/crossfire/cf-installroot";
+
+# loop thru arg vector
+while (@ARGV) {
+	$_ = @ARGV[0];
+	if (/^archdb=/) {
+		($junk,$archdb) = split(/=/,$ARGV[0]);
+		shift;
+	}
+	elsif (/^archetypes=/) {
+		($junk,$archetypes) = split(/=/,$ARGV[0]);
+		shift;
+	}
+	elsif (/^cfdir=/) {
+		($junk,$cfdir) = split(/=/,$ARGV[0]);
+		shift;
+	}
+	elsif (/^mapdir=/) {
+		($junk,$mapdir) = split(/=/,$ARGV[0]);
+		shift;
+	}
+	elsif (/^start-map=/) {
+		($junk,$start_map) = split(/=/,$ARGV[0]);
+		shift;
+	}
+	else {
+		print "Unknown option $ARGV[0]\n";
+		exit;
+	}
+}
+
+# post-process
+$mapdir = "$cfdir/share/crossfire/maps" unless defined($mapdir);
+$archetypes = "$cfdir/share/crossfire/archetypes" unless defined($archetypes);
+print STDERR "DBG: archetypes=$archetypes\n" if $debug > 5;
+print STDERR "DBG: archdb=$archdb\n" if $debug > 5;
+print STDERR "DBG: mapdir=$mapdir\n" if $debug > 5;
+
+
+#
+#	INIT ARCHETYPES DATABASE
+#
+print STDERR "DBG: initializing archetype database...\n" if $debug;
+&init_archetypes_database;	# unless $skip_db_init;
+print STDERR "DBG: ...done\n" if $debug;
+
+defined($start_map) || die "FATAL: no starting map";
+print STDERR "DBG: start_map=$start_map\n" if $debug;
+
+
+print STDERR "DBG: scanning for archetypes of special interest...\n" if $debug;
+
+while ( ($arch,$type) = each(%ARCHDB) ) {
+
+	next if !defined($type);	# skip if not special
+
+	$_ = $type;			# see below
+
+	if ($type == 41 || $type == 66 || $type == 94) {
+		# EXITS: archetypes with exits to other maps
+		$EXITS{$arch} = 1;
+	}
+		# Bad Programming Style Alert. Don't try this at home!
+	elsif (/^1[78]$/ || /^2[679]$/ || /^3[012]$/ || /^9[123]$/) {
+		# CONNECT: "connected" archetypes,
+		# e.g. buttons, handles, gates, ...
+		$CONNECT{$arch} = 1;
+	}
+	if ($type == 85) {
+		$SB{$arch} = 1;
+	}
+
+}
+
+print STDERR "DBG: ...done.\n" if $debug;
+
+#
+#	MAIN LOOP
+#
+
+# pathname of start_map is assumed to be absolute (e.g. /village/village
+push(@MAPS,$start_map);
+
+while ($map = pop(@MAPS)) {
+
+#	print STDERR "array stack size is $#MAPS\n";
+	next if $visited{$map};		# skip if been here before
+	$visited{$map} = 1;		# flag it if not
+
+	# skip random maps
+	next if ($map =~ m#/!#);
+
+	print STDERR "DBG: visiting $map\n" if $debug;
+	#print "visiting $map\n" if $debug;
+
+	#
+	# side effect: check_map pushes any (legal) exits found on stack
+	#
+	&check_map($map);
+}
+
+print "Unused archetypes:\n";
+foreach $key (sort(keys %ARCHDB)) {
+	print "$key\n" if (!defined($USED{$key}))
+}
+
+
+
+exit;
+
+#
+#	++++++++++++++++++++ END OF MAIN ++++++++++++++++++
+#
+
+#
+# INIT ARCHETYPES DATABASE
+#
+# store (archname,type) pairs
+#
+sub init_archetypes_database {
+	local($arch_lines,$arches);	# counters
+	local($arch,$type,$slaying);	# values
+	local($junk);
+
+print STDERR "DBG: opening archetypes: $archetypes\n" if $debug > 5;
+	open(ARCHETYPES,$archetypes) || die "can't open $archetypes";
+
+	$arch_lines = 0;
+	$arches = 0;
+	$type = 0;
+
+	while ( <ARCHETYPES> ) {
+		$arch_lines++;
+		if (/^Object\s/) {
+			($junk,$arch) = split;
+			if (!defined($arch)) {
+		print STDERR "$archetypes: bad Object, line $arch_lines\n";
+			}
+		}
+		elsif (/^type\s/) {
+			($junk,$type) = split;
+			if (!defined($type)) {
+		print STDERR "$archetypes: bad type, line $arch_lines\n";
+			}
+		}
+		elsif (/^slaying\s/ && $arch eq "map") {
+			($junk,$slaying) = split;
+			# don't care if defined or not (yet)
+		}
+		elsif (/^end$/) {
+print STDERR "DBG: entered arch=$arch, optional type=$type\n" if $debug > 10;
+			next if (!defined($arch));
+			# don't care whether $type defined or not
+			$ARCHDB{$arch} = $type;
+			$arches++;
+			$type = 0;
+		}
+		elsif (/^end\s*$/) {
+			print STDERR "DBG: arch $arch is using end with space before newline\n";
+			next if (!defined($arch));
+			# don't care whether $type defined or not
+			$ARCHDB{$arch} = $type;
+			$arches++;
+			$type = 0;
+		}
+	}
+
+	#
+	# find start map
+	# print error message iff "map" arch not found or missing path
+	# assign start map (unless pre-defined on cmd line)
+	#
+	if (!defined($slaying)) {
+		print STDERR "***ERROR*** no map object or map path missing\n";
+	}
+	elsif (!defined($start_map)) {
+		$start_map = $slaying;
+	}
+#print STDERR "DBG: start_map=$start_map\n";
+
+	close(ARCHETYPES);
+print STDERR "DBG: closed $archetypes, $arch_lines lines, $arches arches\n"
+		if $debug > 5;
+}
+
+#
+# CHECK MAP FOR ELEMENTARY CONSISTENCY
+#
+
+sub check_map {
+	local($map) = @_;
+	local($arch,$connected,$slaying,$exit,$x,$y, $rx, $ry);
+	local($lines,$fullmap);
+	local($junk);
+	$depth=0;
+
+	# build full pathname (nb: map path starts with /) and open map file
+	$fullmap = "$mapdir$map";
+	open(MAP,$fullmap) || die "can't open $fullmap";
+	print STDERR "DBG: opened $map\n" if $debug > 5;
+
+	$lines = 0;
+
+	while ( <MAP> ) {
+		if (/^tile_path_/) {
+			($junk,$slaying) = split;
+			$_ = "$map $slaying";	# easy matching :-)
+			s@^(/.*/)([^/]*)\s([^\./].*)$@\1\2 \1\3@;
+			s@^(/.*/)([^/]*)\s(\.\./.*)$@\1\2 \1\3@;
+			s@/[^/]*/\.\./@/@g;
+			($junk,$exit) = split;
+			next if $visited{$exit};
+
+			if ( (! -r "$mapdir$exit")  && ( $exit ne "/!") ) {
+				print "ERROR: map $map, arch $arch, line $lines, no such exit $exit ($rx, $ry, to $x, $y)\n";
+				next;
+			}
+			push(@MAPS,$exit);
+		}
+
+
+		$lines++;
+		if (/^arch\s/) {
+			# Note we have to do some checks here - that is because
+			# if an object is inside an object, the value of $arch
+			# is clobbered.
+			($junk,$arch) = split;
+#			if ($SB{$arch}) {
+#				print "WARNING: spellbook found at map $map, line $lines, arch $arch\n";
+#			}
+			if (!defined($ARCHDB{$arch})) {
+				print "FATAL: map $map, line $lines, bad archetype: $arch ($rx, $ry)\n";
+			}
+			$USED{$arch}=1;
+			undef($slaying);
+			undef($x);
+			undef($y);
+			undef($rx);
+			undef($ry);
+			undef($connected);
+			$depth++;
+		}
+		elsif (/^connected\s/) {
+			($junk,$connected) = split;
+		}
+		elsif (/^slaying\s/) {
+			($junk,$slaying) = split;
+		}
+		elsif (/^hp\s/) {
+			($junk,$x) = split;
+		}
+		elsif (/^sp\s/) {
+			($junk,$y) = split;
+		}
+		elsif (/^x\s/) {
+			($junk, $rx) = split;
+		}
+		elsif (/^y\s/) {
+			($junk, $ry) = split;
+		}
+		elsif (/^anim$/) {
+			print "Map $fullmap has an anim command in it\n";
+		}
+
+		next if !/^end$/;	# continue iff not end of arch
+		$depth--;
+
+		#
+		# CHECK 2: connect-arch actually connected?
+		#	NB: if not, that's perfectly legal, but suspicious
+		#
+#		if ($CONNECT{$arch}) {
+#			if (!$connected) {
+#print STDERR "WARNING: map $map, line $lines, arch $arch, not connected\n";
+#print "WARNING: map $map, line $lines, arch $arch, not connected\n";
+#			}
+#			next;
+#		}
+
+		next if !$EXITS{$arch};	# continue if not an exit
+
+
+		#
+		# CHECK 3: exit-type arch, but no path given
+		#	Presumably the path defaults to the local map,
+		#	but in all probability this is an error
+		#
+		if (!defined($slaying)) {
+			if ($x || $y) {
+#print STDERR "ERROR: map $map, line $lines, arch $arch, exit defaults\n";
+#print "ERROR: map $map, line $lines, arch $arch, exit defaults\n";
+			}
+			else {
+#print STDERR "INFO: map $map, line $lines, arch $arch, no exit defined\n";
+#print "INFO: map $map, line $lines, arch $arch, no exit defined\n";
+			}
+			next;
+		}
+
+		#
+		# CHECK 4: verify that exit map exists
+		#	if not, the game (hopefully!) won't crash, but
+		#	chances are this _is_ an error
+		#
+
+		#
+		# normalize exit path	(FullyQualifiedPathName :-)))
+		# (i.e. construct absolute pathname, rooted in CLibDir/maps)
+		# E.g.:
+		# current map: /village/somewhere
+		#	EXIT PATH		YIELDS
+		#	/village/building	/village/building
+		#	townhouse		/village/townhouse
+		#	../island		/island
+		#
+		$_ = "$map $slaying";	# easy matching :-)
+		#	/path/map exit		--> /path/map /path/exit
+		s@^(/.*/)([^/]*)\s([^\./].*)$@\1\2 \1\3@;
+		#	/path/map ../exit	--> /path/map /path/../exit
+		s@^(/.*/)([^/]*)\s(\.\./.*)$@\1\2 \1\3@;
+		#	/dir/../		--> /	(all occurances)
+		s@/[^/]*/\.\./@/@g;
+
+		($junk,$exit) = split;
+#print STDERR "DBG: exit $map $exit\n" if $debug > 5;
+#print "exit $map $exit\n";
+
+		#
+		# shortcut: if the exit map was already checked, don't bother
+		#	stacking it again.
+		# %% if a map is never pushed twice in the first place,
+		#    the corresponding test in the main loop is probably
+		#    in vain.
+		#
+		next if $visited{$exit};
+
+		#
+		# this is check 4, finally.
+		# if exit map can't be opened, complain and continue
+		#
+		if ( (! -r "$mapdir$exit")  && ( $exit ne "/!") ) {
+#print STDERR "ERROR: map $map, arch $arch, line $lines, no such exit $exit\n";
+print "ERROR: map $map, arch $arch, line $lines, no such exit $exit ($rx, $ry, to $x, $y)\n";
+			next;
+		}
+
+		#
+		# the exit map looks good; push it and continue
+		push(@MAPS,$exit);
+	}
+
+	close(MAP);
+	if ($depth != 0) {
+		print "ERROR: map $map, mismatched arch/end, $depth\n";
+	}
+}
+

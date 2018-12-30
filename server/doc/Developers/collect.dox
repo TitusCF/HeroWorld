@@ -1,0 +1,37 @@
+/**
+
+@page page_collect Collect process
+
+@todo link to relevant documentation. Add file extension to the relevant places also.
+
+Because it is easier to group all of an object's definitions, including archetype, face and treasure, rather than have the definition split apart, everything can be defined in individual files in the arch tree. All those individual files will be grouped during the build process (under Linux only. Under Windows, this is not automated).
+
+The following files will be collected.
+
+<table>
+	<tr>
+		<th>Extension</th>
+		<th>Collected to</th>
+		<th>Meaning</th>
+	</tr>
+	<tr>
+		<td>arc</td>
+		<td>archetypes</td>
+		<td>archetype definition</td>
+	</tr>
+	<tr>
+		<td>trs</td>
+		<td>treasures.bld</td>
+		<td>treasure definition</td>
+	</tr>
+	<tr>
+		<td>face</td>
+		<td>faces</td>
+		<td>face definition</td>
+	</tr>
+</table>
+
+The collect process is handled by the lib/collect.pl script, which accepts as parameter the path to the archetypes tree.
+
+@todo write about faces also, and animations
+*/

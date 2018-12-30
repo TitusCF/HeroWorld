@@ -1,0 +1,80 @@
+##############################################################################
+# metaserver2 values - the new metaserver logic
+# The only thing contained in this file is information related to metaserver2
+# notification.  If you do not want to advertise your server to the world
+# through the metaserver, you do not need to change anything in this file
+#
+# If you do choose to use the metaservers, all information here must
+# be accurate - if you falsify information (claiming your server is something
+# it is not), you may get blacklisted from the metaservers, and getting
+# yourself back on may be difficult.
+#
+# This file is broken into 2 sections:  Information about the
+# metaservers themselves (noted with metaserver2 in the start
+# of the variable names) and information describing the server -
+# those names are not prefixed.
+#
+
+# set notification to on to send updated to metaservers
+
+metaserver2_notification off
+
+# metaserver2_servers list the metaservers - there can be
+# multiple lines to list multiple servers
+
+metaserver2_server http://crossfire.real-time.com/metaserver2/meta_update.php
+#metaserver2_server some other URL
+
+# Use localhostname to set your local host name.  Many
+# systems want to advertise themselves differently than can be locally
+# resolved.  Note: The hostname you put here must resolve to the
+# IP address that the update to the metaservers will come from, OR
+# the ip address must resolve to this hostname.  In other words,
+# either a forward lookup or reverse lookup must point to this
+# host.  You must put something here, even if it is just your ip
+# address.
+
+localhostname put.your.hostname.here
+
+# Generally, you will not need to use this - it will use the port number
+# that the server is using.  However, if you are doing port redirection
+# at the firewall level, you may need to change this.  The port number
+# the server will use is defined in include/config.h
+
+#portnumber 13327
+
+# Two comments for the metaserver.  The html comment will
+# be used on the web pages.  The text comment will be used by
+# the client.  Note that the client doesn't have as much space
+# to display the information, so you should generally put shorter
+# comments there.  There is not any requirement that the
+# comments be the same.  If you do use html in your comments, make
+# sure that it is all correct - no dangling markups, etc, as
+# that would likely result in messed up output on the web page,
+# and may warrant blacklisting.
+
+html_comment <b>Put an html comment here.</b>
+text_comment Put a comment here.
+
+# The codebase fields are used to note if your server is using
+# non standard set of maps, archetypes, or server.  This is free
+# form text, but should be kept short.
+
+archbase	Standard
+mapbase		Standard
+codebase	Standard
+
+# Flags are single character representations of aspects of the
+# server - useful if there is limited screen real estate to display
+# metaserver information.  Only non standard behavior options are listed -
+# there isn't much point to list that a server is free, since most all servers
+# are free.  So it is interesting to note is a server is pay for play.
+# List of defined flags so far:
+#
+# $ - pay to play (some form of payment necessary to play on server)
+# D - permanent death is set on server
+# K - killing of other players allowed (player killing)
+#
+# These will likely be extended in the future.
+
+#flags

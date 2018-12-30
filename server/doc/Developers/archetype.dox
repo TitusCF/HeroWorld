@@ -1,0 +1,32 @@
+/**
+@page page_archetype Archetypes
+
+Archetypes define the standard properties of predefined objects: monsters, weapons, armours, walls, spells, etc. Most objects in a map are equivalent to their archetype definition, but it is of course possible to define special properties for specific needs.
+
+Archetypes are not manipulated at runtime (with the exception of @ref sec_arch_temporary "temporary archetypes", see below), and are loaded into memory during the server startup.
+
+Archetypes are defined in the <tt>arch</tt> Subversion module. The definition is split in many <tt>.arc</tt> files, usually one per predefined item.
+
+Archetype manipulation functions are defined in the @ref arch.c file, and the structure is ::archt.
+
+@section sec_arch_collect Archetypes collection
+
+In order for archetypes to be usable by the server, they need to be collected into the <tt>lib/archetypes</tt> file. This is merely the concatenation of all <tt>.arc</tt> files, bundled together for distribution/installation ease.
+
+The <tt>lib/collect.pl</tt> script handles this collecting process.
+
+@section sec_arch_inventory Objects in objects
+
+It is possible to add objects in an archetype's inventory. All objects created from this archetype will have a copy of those objects, and additional objects if defined.
+
+To add an object in an archetype, just add a <tt>arch archetype_name</tt> in the file, followed by custom values for the objects, finished by an <tt>end</tt> tag. This is equivalent to the format used for saving objects on maps.
+
+@section sec_arch_temporary Temporary archetypes
+
+Temporary archetypes are special archetypes used for custom monsters. When the map loading code detects a customized monster, it will create a temporary archetype that will contain the initial values of the monster.
+
+This temporary archetype is required for the custom values to survive a call to fix_object(), call that will happen when the monster picks/drops items, is cursed, etc.
+
+Temporary archetypes will be automatically destroyed when the last object they are linked to is free_object()'d.
+
+*/

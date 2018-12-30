@@ -1,0 +1,20 @@
+/**
+@page page_general General concepts
+
+The aim of this page is to describe the general concepts used in the Crossfire sources.
+
+\b Objects are the base components of Crossfire. They represent everything the player can interact with (items, monsters, walls, exits, ...), and also skills, experience information, diseases, spells, ... See @ref page_object "the page about objects" for detailed explanations.
+
+\b Players are obviously players in the game. They move one particular object. See @ref page_player "the page about players" for detailed explanations.
+
+\b Maps are where players and monsters dwelve. Maps contain objects, and are the basic loading/saving unit. See @ref page_map "the page about maps" for details explanations.
+
+\b Regions are groups of maps, linked to a geographical location in the Crossfire world. See @ref page_region "the page about regions" for detailed explanations.
+
+\b Archetypes are templates for the objects. Objects in maps reference one specific archetype, and only fields not equal to the archetype value need to be saved/loaded. See @ref page_archetype "the page about archetypes" for detailed explanations.
+
+\b Artifacts define variations from the predefined object, by providing for instance a different title, specific properties and such. See @ref page_artifact "the page about artifacts" for detailed explanations.
+
+<b>Treasure lists</b> define random objects to be found in other objects. This include what is found into chests, the traps that can be put on a door, items a monster can have, ... See @ref page_treasure_list "the page about treasure lists" for detailed explanations.
+
+*/

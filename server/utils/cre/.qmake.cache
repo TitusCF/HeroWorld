@@ -1,0 +1,7 @@
+CONFIG -= release
+
+CONFIG += debug
+
+QMAKE_CXXFLAGS_DEBUG += -O0 -pg -g -DDEBUG
+QMAKE_LFLAGS_DEBUG += -pg
+

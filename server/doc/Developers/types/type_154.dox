@@ -1,0 +1,294 @@
+/**
+@var RUNE
+See @ref page_type_154
+*/
+
+/**
+@page page_type_154 Rune
+
+
+@section Description
+            A rune is a magical inscription on the dungeon floor.
+            <br>
+            <br>
+            Runes hit any monster or person who steps on them for 'dam' damage
+            in 'attack type' attack type. Alternatively, the rune could contain
+            any spell, and will cast this spell when it detonates. Yet another
+            kind is the "summoning rune", summoning predefined monsters of any
+            kind, at detonation.
+            <br>
+            <br>
+            Many runes are already defined in the archetypes. 
+
+
+
+Type defined by:
+- @ref object::type = 154
+
+
+@section Attributes
+
+<table>
+	<tr>
+		<th>Attribute</th>
+		<th>Field</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>artifact</td>
+		<td>@ref obj::artifact</td>
+		<td>            If defined, refers to an artifact to get values from.
+		</td>
+	</tr>
+	<tr>
+		<td>attack type</td>
+		<td>@ref obj::attacktype</td>
+		<td>            If there isn't any spell (and &lt;summon monster&gt; is unset), this
+            attribute defines what attack type to use for direct damage when the
+            rune detonates.
+		</td>
+	</tr>
+	<tr>
+		<td>block view</td>
+		<td>@ref FLAG_BLOCKSVIEW</td>
+		<td>            If an item is set to block view, players (and monsters) cannot see
+            beyond it unless they cross it or manage to stand on top.
+		</td>
+	</tr>
+	<tr>
+		<td>changing</td>
+		<td>@ref FLAG_CHANGING</td>
+		<td>            A &lt;changing&gt; object converts to &lt;food&gt; &lt;other_arch&gt;
+            objects; when it's animation is done. For non-living objects &lt;food&gt;
+            is checked: if it is zero, the change happens; otherwise &lt;food&gt;
+            is decreased by one. I suggest you don't mess with this value -
+            leave the default in place.
+		</td>
+	</tr>
+	<tr>
+		<td>detonation text</td>
+		<td>@ref obj::msg</td>
+		<td>            When the rune detonates, this text is displayed to the victim. For
+            especially powerful runes, create an appropriate thrilling
+            description. ;)
+		</td>
+	</tr>
+	<tr>
+		<td>direct damage</td>
+		<td>@ref liv::dam</td>
+		<td>            &lt;direct damage&gt; specifies how much damage is done by the rune,
+            if it doesn't contain a spell. This should be set in reasonable
+            relation to the rune's level.
+		</td>
+	</tr>
+	<tr>
+		<td>direction</td>
+		<td>@ref liv::maxsp</td>
+		<td>                If set, the rune will cast it's containing spell (if any) in
+                this &lt;direction&gt;.In most cases this appears useless
+                because the spell directly hits the player.
+		</td>
+	</tr>
+	<tr>
+		<td>elevation</td>
+		<td>@ref page_custom_attribute_elevation "elevation"</td>
+		<td>            The elevation (height above sea level) of this square. It is used
+            for weather calculations and should be in the range -32000..32000.
+            The elevation of a tile must be set in the bottom-most game object;
+            elevation values for non-bottom-most game objects are ignored by the
+            Crossfire server.
+		</td>
+	</tr>
+	<tr>
+		<td>glow radius</td>
+		<td>@ref obj::glow_radius</td>
+		<td>            If &lt;glow radius&gt; is set to a value greater zero, the object
+            appears lit up on dark maps. &lt;glow radius&gt; can be a value
+            between 0 and 4, the higher, the more light does the object emit.
+		</td>
+	</tr>
+	<tr>
+		<td>identified</td>
+		<td>@ref FLAG_IDENTIFIED</td>
+		<td>            If an item is identified, the player has full knowledge about it.
+		</td>
+	</tr>
+	<tr>
+		<td>identified animation</td>
+		<td>@ref page_custom_attribute_identified_animation "identified_animation"</td>
+		<td>            If defined, then the object will take this animation when identified.
+		</td>
+	</tr>
+	<tr>
+		<td>identified animation speed</td>
+		<td>@ref page_custom_attribute_identified_anim_speed "identified_anim_speed"</td>
+		<td>            If defined, then the object will have this animation speed when identified.
+		</td>
+	</tr>
+	<tr>
+		<td>identified image</td>
+		<td>@ref page_custom_attribute_identified_face "identified_face"</td>
+		<td>            If defined, then the object will take this appareance when identified.
+		</td>
+	</tr>
+	<tr>
+		<td>identified random animation?</td>
+		<td>@ref page_custom_attribute_identified_anim_random "identified_anim_random"</td>
+		<td>            If defined, then the object's animation is in a random sequence when identified.
+		</td>
+	</tr>
+	<tr>
+		<td>identified_name</td>
+		<td>@ref page_custom_attribute_identified_name "identified_name"</td>
+		<td>            If defined, then the object will take this name when identified.
+		</td>
+	</tr>
+	<tr>
+		<td>identified_name_pl</td>
+		<td>@ref page_custom_attribute_identified_name_pl "identified_name_pl"</td>
+		<td>            If defined, then the object will take this plural name when identified.
+		</td>
+	</tr>
+	<tr>
+		<td>image</td>
+		<td>@ref obj::face</td>
+		<td>            The image-name defines what image is displayed for this object
+            in-game.
+		</td>
+	</tr>
+	<tr>
+		<td>invisible</td>
+		<td>@ref obj::invisible</td>
+		<td>            Generally makes the object invisible. Depending on the object-type,
+            some can be made visible by the show_invisible spell. If in doubt,
+            test it. Putting an invisible object under the floor always prevents
+            it from being shown.
+		</td>
+	</tr>
+	<tr>
+		<td>name</td>
+		<td>@ref obj::name</td>
+		<td>            This is the name of the object, displayed to the player.
+		</td>
+	</tr>
+	<tr>
+		<td>number</td>
+		<td>@ref obj::nrof</td>
+		<td>            This value determines the number of objects in one stack (for
+            example: 100 gold coins =&gt; "number = 100"). You should set this
+            at least to one, for any pickable object - otherwise it won't be
+            mergeable into a stack.
+		</td>
+	</tr>
+	<tr>
+		<td>number of charges</td>
+		<td>@ref liv::hp</td>
+		<td>            The rune will detonate &lt;number of charges&gt; times before
+            disappearing.
+
+            Should be not 0 if 'unlimited charges' is set.
+		</td>
+	</tr>
+	<tr>
+		<td>price adjustment</td>
+		<td>@ref page_custom_attribute_price_adjustment "price_adjustment"</td>
+		<td>            If set, this is the buy and sell price adjustment ratio for the
+            item.
+		</td>
+	</tr>
+	<tr>
+		<td>price adjustment for buying</td>
+		<td>@ref page_custom_attribute_price_adjustment_buy "price_adjustment_buy"</td>
+		<td>            If set, this is the adjustment ratio when buying the item. Ignored
+            if &lt;price&gt; adjustment is set.
+		</td>
+	</tr>
+	<tr>
+		<td>price adjustment for selling</td>
+		<td>@ref page_custom_attribute_price_adjustment_sell "price_adjustment_sell"</td>
+		<td>            If set, this is the adjustment ratio when selling the item. Ignored
+            if &lt;price&gt; adjustment is set.
+		</td>
+	</tr>
+	<tr>
+		<td>rune level</td>
+		<td>@ref obj::level</td>
+		<td>            This value sets the level the rune will cast the spell it contains
+            at, if applicable. A level 99 rune casts a very, very mean spell of
+            whatever. (&lt;rune level&gt; 0 runes won't detonate at all!)
+
+            Level Also effects how easily a rune may be found and disarmed, and
+            how much experience the player gets for doing so. Beware: High level
+            runes can be quite a cheap source of experience! So either make them
+            tough, or keep the level low.
+		</td>
+	</tr>
+	<tr>
+		<td>smooth level</td>
+		<td>@ref obj::smoothlevel</td>
+		<td>            If &lt;smooth level&gt; is set to a value greater zero, the object
+            will be drawn partially over adjacent squares having a lower &lt;smooth
+            level&gt; value. The value must be between 0 and 255 (inclusive); 0
+            means &quot;never overlap adjacent squares&quot;.
+		</td>
+	</tr>
+	<tr>
+		<td>spell arch</td>
+		<td>@ref obj::other_arch</td>
+		<td>                This string defines the spell in the rune, if any. &lt;spell
+                arch&gt; is optional, but if present, overrides the &lt;spell&gt;
+                setting. You can choose any of the existing arches.
+		</td>
+	</tr>
+	<tr>
+		<td>spell name</td>
+		<td>@ref obj::slaying</td>
+		<td>                Name of the spell in the rune, if any. &lt;spell name&gt; is
+                optional, but if present, overrides the &lt;spell&gt; setting.
+		</td>
+	</tr>
+	<tr>
+		<td>splitting</td>
+		<td>@ref FLAG_SPLITTING</td>
+		<td>            A &lt;splitting&gt; object converts to &lt;food&gt; &lt;other_arch&gt;
+            objects; when it is hit physically. For non-living objects &lt;food&gt;
+            is checked: if it is zero, the change happens; otherwise &lt;food&gt;
+            is decreased by one. I suggest you don't mess with this value -
+            leave the default in place.
+		</td>
+	</tr>
+	<tr>
+		<td>summon amount</td>
+		<td>@ref liv::maxhp</td>
+		<td>                This should only be set to a summoning rune. It will then summon
+                that many creatures of the kind &lt;summon monster&gt;.
+		</td>
+	</tr>
+	<tr>
+		<td>summon monster</td>
+		<td>@ref obj::race</td>
+		<td>                If this is set to the arch name of any monster, together with
+                &lt;spell name&gt; "summon evil monster", the rune will summon a
+                bunch of those on detonation. (dam and attack type will still be
+                ignored in this case). Runes are even capable of summoning
+                multi-square monsters, given enough space. You'd better test it
+                though.
+		</td>
+	</tr>
+	<tr>
+		<td>unlimited charges</td>
+		<td>@ref FLAG_LIFESAVE</td>
+		<td>            If set, then the rune will detonate forever if the number of charges
+            is not 0.
+		</td>
+	</tr>
+	<tr>
+		<td>visibility</td>
+		<td>@ref liv::Cha</td>
+		<td>            This value determines what fraction of the time the rune is visible:
+            It'll be randomly visible 1/&lt;visibility&gt; of the time. Also
+            effects how easily the rune may be found.
+		</td>
+	</tr>
+</table>
+*/

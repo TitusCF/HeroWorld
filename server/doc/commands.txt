@@ -1,0 +1,202 @@
+Run Time Commands:
+
+  This section contains all the commands that can be used while
+playing Crossfire, along with a description of what they do.
+
+  The first thing a player will see when they run crossfire are the
+game windows. (Note: There are 6 windows, even by default, although
+they may look as if they are one.) If the -w option is used on the
+command line then the player will be allowed to place each window and
+resize the windows to any size they wish. (Note: The map window can be
+resized but the area of the map displayed will remain the same,
+surrounded by black area. Also, when one player resizes a window, it
+will "freeze" the game for the other players, until the person is
+finished resizing.)
+
+  Crossfire can display graphics in two forms: either by using a
+special font or by using pixmaps. The first method is default as it is
+much quicker than using pixmaps. A common problem with X terminals is
+that whoever compiled the game does not have write access to a font
+directory the terminal can read, in which case pixmaps must be used.
+When using pixmaps, all 1600+ bitmaps must be loaded before the game
+can proceed.
+
+  Once the game has loaded the graphics, the player will be greeted
+with a message of the day and a login prompt. At this prompt users can
+enter specific a character name to be used. If the player has played
+before and saved his/her character, he/she will be restored at the last
+point of the save.
+
+  After choosing a name, if the character is new, then the player must
+roll the character's stats, which will affect how well the character
+can survive in the crossfire world. A player can press 'Y' to reroll
+their stats or 'N' to continue. They may also type 'Q' to quit the
+game.  A player must also choose a profession/class for a new
+character. After rolling stats, the player can cycle through all
+available professions for that character by pressing any key, except
+'D'. When they are happy with their profession, they may continue by
+hitting 'D' for 'done'. The player's stats affect what professions he
+or she may be. (See Player Stats)
+
+  Once a player is into the game they can hit "?" for help which will
+list the commands available.
+
+Command Summary:
+
+Movement :  A player can move in any of 8 directions:
+
+  The defaults are as follows. The 's' key is called the brace key,
+what this will do is brace a player so they may attack in any of the
+given directions without actually moving in that direction.
+
+                      y         k         u
+
+                         \      |      /
+                          \     |     /
+                           \    |    /
+                            \   |   /
+                             \  |  /
+                              \ | /
+                      h  ------ s ------  l
+                              / | \
+                             /  |  \
+                            /   |   \
+                           /    |    \
+                          /     |     \
+                         /      |      \
+
+                      b         j         n
+
+
+  To fire a missile weapon or cast a spell in any of the given
+direction, the player can use the shift key: Example <SHIFT> - l will
+cast a missile to the right.
+
+  A player can use the control key to run in a given direction instead
+of just moving one square: Example <CTRL> - l will make the character
+run to the right.
+
+  These movement keys can all be redefined to the player's liking by
+using the 'C' configure command. (Note: Do not define a key to
+movement, if it already has a predetermined function.) Many people
+like to reconfigure the movement keys to the number pad, which is
+fine.
+
+  To attack a monster in hand to hand combat, all a player must do is
+move into that monster, if that monster is in an adjacent square.
+
+Mouse commands:
+
+     Left Mouse Button   : examine
+
+     Right Mouse Button  : drop / get
+
+     Middle Mouse Button : apply
+
+
+
+Keyboard commands:
+
+      "  speak, used to talk to monsters and other players.
+
+     "i" inventory, list the player's inventory in the message window,
+         not to be confused with the inventory window.
+
+ "<",">" rotate inventory, used to shift a new item to the top of a
+         player's inventory.
+
+     "a" apply the item at the top of the inventory. This command is
+         used to ready/unready items, eat food, use wands, etc. that
+         the character is carrying with them. (Note: It only effects
+         the top item in the inventory.)
+
+     "e" examine the item at the top of the inventory. This command is
+         used to to determine what an item is made of, if an item has
+         special properties, the cost, etc. (Note: It only examines
+         the top item in the inventory.)
+
+     "A" apply the item immediately underneath a player. Thus, if a
+         player is on top of a chest, they can open that chest by
+         using this command.  This is also how a player can enter
+         buildings, open doors, and apply handles.
+
+     "E" Examines the item immediately underneath a player.
+
+     "," Get the item immediately underneath a player.
+
+     "d" Drop the top item in the inventory.
+
+ "+","-" Cycle through the players range attacks, such as bows,
+         crossbows, and spells.
+
+     ":" look
+
+     "@" Autopick, wether to automatically pick up items the player
+         walks over.
+
+     "t" throw, still not available.
+
+     "X" If the player is using split window mode, this toggles the
+         save window position flag.
+
+"Ctrl-R" Refresh screen.
+
+"Ctrl-C" Clear message window.
+
+     "v" Print version number.
+
+  One can repeat a command many times by preceding it with a number.
+Thus, if a player types '12l' then the player will move twelve squares
+to the right.  Or if a player types '3d' then the player will drop
+three of the given item type at the top of the inventory.
+
+Extended Commands:
+
+   Extended commands are more complex commands that require typing. To
+enter extended command mode, type "'" followed by the command.
+
+
+ 'help           : List the available extended commands.
+
+ 'name           : Change your name.
+
+ 'cast <spell>   : Cast a given type of spell. Example: "'cast small
+                   fireball" will set the player's active range attack
+                   to small fireball, if that player has the learned
+                   spell. If no spell is given, then this command will
+                   list the spells that a player knows.
+
+ 'scroll         : Turn message window scrolling on/off.
+
+ 'peaceful       : Turn on/off "peaceful with other players" flag.
+
+ 'bind [str]   	 : bind a key to some command.  try 'help bind for
+		   more information.
+
+
+ 'unbind [str]	 : unbind a string.
+
+ 'quit           : Quit game, and destroy character.
+
+ 'who            : A list of other players in the same game.
+
+ 'shout <text>   : Shout to all other players in the same game.
+
+ 'tell <p> <text>: Tell the player with the name <p> the message <text>.
+
+ 'bell           : Bell a player.
+
+ 'listen <1-15>  : Set listening level. This level determines which
+                   messages will be seen by the player. 1 only
+                   important messages, such as when a player shouts,
+                   15 Verbose, every message.
+
+ 'add <display>  : Add a new display to the game.
+
+ 'hiscore        : Show the highscore list.
+
+ 'dm : enter dungeon master mode. Note: only certain players can enter DM
+		   mode (determined by site administrator) and any player
+		   that enters into dm mode cannot be saved! Any players
+		   recieving assistance or items from the dm, will also not
+		   be saved.

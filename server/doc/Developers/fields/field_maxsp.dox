@@ -1,0 +1,55 @@
+/**
+@fn liv::maxsp
+@section Use
+<table>
+	<tr>
+		<th>Type(s)</th>
+		<th>Description</th>
+	</tr>	<tr>
+		<td>
+@ref page_type_158
+		</td><td>                Every time the disease "moves", the player's mana is reduced by
+                the value of &lt;mana depletion&gt;. For negative values, a
+                %-based amount is taken.</td>
+	</tr>
+	<tr>
+		<td>
+@ref page_type_213, @ref page_type_28
+		</td><td>                &lt;max spellpoints&gt; is the maximum number of spellpoints a
+                monster can hold. Setting this to high values has little effect
+                unless the monster has a decent &lt;spellpoint regen.&gt;, or
+                the spell "regenerate mana" at it's disposal.
+
+                Warning: Do not create spell-casting and breeding monsters since
+                this field is also used as &lt;multiply speed&gt;.</td>
+	</tr>
+	<tr>
+		<td>
+@ref page_type_40
+		</td><td>            The player will be "frozen" for that many moves. If &lt;freeze
+            duration&gt; is zero, with &lt;forced movement&gt; enabled, then
+            &lt;freeze duration&gt; gets assigned the "default value" 2
+            automatically.</td>
+	</tr>
+	<tr>
+		<td>
+@ref page_type_156
+		</td><td>            The &lt;mana capacity&gt; defines how much mana can be stored in the
+            crystal. This is what makes the crystal interesting. Wizard-players
+            will always seek for crystals with large capacities.</td>
+	</tr>
+	<tr>
+		<td>
+@ref page_type_154
+		</td><td>                If set, the rune will cast it's containing spell (if any) in
+                this &lt;direction&gt;.In most cases this appears useless
+                because the spell directly hits the player.</td>
+	</tr>
+	<tr>
+		<td>
+@ref page_type_101
+		</td><td>            If non zero, the spellpoint cost will increase &lt;spellpoint cost&gt;
+            per this value levels.</td>
+	</tr>
+
+*/

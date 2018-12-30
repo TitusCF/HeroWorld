@@ -1,0 +1,216 @@
+This document has 3 sections - section 1 is current programming style/hints for
+developers to make things easier.  Section 2 is a programming guide for new
+addition.  Section 3 contains notes for making patches.
+
+-------------------------------------------------------------------------------
+Section 1 - currently used conventions/hints for new code writers:
+
+1)  Variable abbreviations - op is short for object pointer, ob is for object,
+    and pl is for player.
+
+2)  Some functions are named using the conventions above - the naming reflects
+    what options they take (insert_ob_in_ob takes 2 object structures)
+
+3)  Identation is either 2 spaces or 4 spaces.  This can be a pain to read, but
+    most functions should be consistent through the function.
+
+4)  Some structure elements should never be accessed directly - rather, there
+    are other functions to use the values.
+
+        object->owner:  This contains the owner id for this object.  Use
+        set_owner and get_owner instead.  Directly using object->owner
+        is likely to get unpredictable results.
+
+        object->nrof:  This contains the number of an object.
+        Since changing this will change the weight of an object, direct
+        access should also be avoided.  Use decrease_ob_nr, split_ob,
+        and insert_ob_in_... - the later will merge the objects if
+        applicable.
+
+5)  If using insert_ob_in_map and plan to do further actions with the object,
+    check and make sure the object still exists after insertion - it is
+    possible that the object gets destroyed while being inserted.
+
+-------------------------------------------------------------------------------
+Section 2 - Style guide for new additions:
+
+1)  Use descriptive variable names.  op and pl should only be used for
+    temporary variables (cycling through the list or the like).  For variables
+    well defined, use an accurate name (ie, hitter, sack, etc).
+
+2)  Only add name options with #ifdef's to the config file if the behaviour
+    seriously changes the game.  Adding a new spell does not warrant an #ifdef.
+    There are already too many options in the config.h file.
+
+3)  Log errors/diagnostics with the LOG function.  When doing so, please
+    include the function name - this is especially true for errors.
+
+4)  If you want to add special debug code for certain compiles, generate a
+    unique #define for it - don't use the global DEBUG.  For example,
+    NEWCS_DEBUG.
+
+5)  Try to use the [s/u]int[8/16/32] whenever possible.  Use the one of
+    appropriate size/type.  If not sure, go for the next size up.  Do not ever
+    write code assuming that any of those will have an exact number of bits -
+    those types only mean that you will get at least that many bits - you may
+    get more.
+
+6)  The exception to #5 above is strings.  Continue to use 'char', since the
+    signedness of functions that take string options can differ system to
+    system, and generate excessive warnings if the wrong sign is used.
+
+7)  When adding new function, include a comment of what the function is
+    supposed to do, what options it takes, and what if any value it returns.
+    This makes debugging of such functions easier, and also makes it better
+    known to other developers if that function might be useful to them.
+
+8)  Try to keep lines to less than 80 columns when possible.  This is not a
+    strict requirement - don't break up some complex comparison because the
+    line would otherwise be 83 characters long.  Xterms can be resized to most
+    any width.  However, use your judgement on whether breaking up a long line
+    would make something more or less readable.
+
+9)  Assume all names use one namespace.  For example, if there is a struct
+    called spell, don't make the name of an optional parameter spell.  This
+    will break on ANSI C compilers that follow the spec strictly (gcc does not,
+    even with -strict -ansi)
+
+10) As a followup on 9 above, don't use nonstandard gcc extensions (// for
+    comment lines, ability to nest functions, declare arrays with variable
+    bounds, etc.)  Likewise, don't use special system functions - don't assume
+    the target system will be bsd or svr4 - if using a potentially non standard
+    function, add checks in the autoconf script and include a version of the
+    function in case it is not on that system.  They key word here is
+    portability - don't assume everyone else has the same system as you do.
+
+11) Write code that can easily be maintained in the future, not code that is
+    easiest to write at that second.  This basically means don't do the quick
+    and ugly hack, but instead fix it properly.
+
+12) Use 4 space indentation.  While a lot of old code may have 2 space indents,
+    a move to 4 space will improve readability in the future.
+
+13) /*
+     * do block
+     * comment like
+     * this
+     */
+
+    /*
+      and not
+      like this
+     */
+
+     /* If you are doing a single line comment, this method is fine */
+
+    It is much easier to spot the block comments if they all start with *,
+    and these comments tend to be worth noticing.
+
+14) /**
+     * Functions should be commented like this.
+     *
+     * @param bla
+     * this is a parameter
+     * @return
+     * returns NULL
+     */
+
+    This lets doxygen generate nice documentation.
+
+15) As discussed on IRC, the preferred style for expressions is like this:
+
+    if (expression) {
+        statement;
+        statement;
+    }
+
+    If <space> (expression), the space between the if and expression is
+    required.
+
+    NOT like this:
+
+    if (expression)
+    {
+        statement;
+        statement;
+    }
+
+16) The preferred style of formal parameters:
+
+    void myFooFunction(param1, param2, param3) {
+        statement;
+        statement;
+    }
+
+    There is no space after the left paren, no space before the right paren,
+    comma right after the formal param, and space right after the comma.
+
+17) Local variable names. Just a rules of thumb.
+
+    These are ok:
+
+        int mylongvarname;
+        int my_long_var_name;
+
+    Please do NOT use caps except for typedefs, enums and defines.
+
+-------------------------------------------------------------------------------
+Section 3 - Submitting Patches:
+
+1)  Please send patches on a bug fix or feature enhancement basis individually,
+    and not make mega patches.  A diff that changes 10 things is first more
+    difficult for me to look over and understand as unrelated changes might be
+    going on.  It is also harder for me to reject part of a patch (feature X is
+    nice, but Y doesn't work).
+
+2)  Please state in the message included with the patch what it fixes/changes.
+    Too often, I get patches which is just a bunch of source code, and I have
+    no idea if I want to incorporate it, or even if the bug is still there.
+    Please also state what version of crossfire the diff is for.
+
+3)  I will assume any patches mailed directly to me are to be included.  If
+    posting a patch on the mailing list (either source or ftp location), please
+    explicity state whether or not you want that patch incorporated into the
+    master source.  Many times, a patch may be made available on an
+    expiremental basis which is not ready for widespread distribution.
+
+4)  When making patches, please make context diffs.  Please also include the
+    directory that the file is in (run the diff in the top level directory).
+    Please make 5 line context diffs - large line context diffs are fine if you
+    think that may make it easier.
+
+     Example:
+
+	 'diff -c5 (oldfile) (newfile)'
+
+     You can also do diffs of entire directories.  Do do this, type:
+
+          'diff -c5 -r (old_directory) (new_directory)'
+
+     An example:
+
+           'diff -c5 -r crossfire-0.90.1 crossfire-0.90.2'
+
+5)  Gnu diff will include files that did not exist before.  Other diff programs
+    may not do this.
+
+6)  If your diff looks excessively long and you made a lot of formatting
+    changes, you can add -w to the diff options to have it ignore whitespace.
+    Note that this will then mean that those formatting changes will then be
+    lost.
+
+7)  There is no need to make a seperate diff file for each file different (ie,
+    treasure.diff, player.diff, etc).  Assuming you follow steps 1-6, all the
+    diffs can be contained in one file, and patch will deal with it just fine.
+
+8)  If you need to send a map, new archetypes, or other new files where a diff
+    doesn't make since, a uuencoded tar file will work just fine.
+
+9)  Submit all patches to the Sourceforge patch tracker on Sourceforge:
+
+        http://sourceforge.net/projects/crossfire
+
+    After posting the patch, mail an announcement to:
+
+        Crossfire Discussion Mailing List <crossfire@metalforge.org>
+

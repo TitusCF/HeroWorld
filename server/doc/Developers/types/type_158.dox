@@ -1,0 +1,461 @@
+/**
+@var DISEASE
+See @ref page_type_158
+*/
+
+/**
+@page page_type_158 Disease
+
+
+@section Description
+            Diseases are an interesting form of spellcraft in Crossfire.
+            Once casted, they can spread out and infect creatures in a large
+            area. Being infected can have various effects, from amusing farts
+            to horrible damage - almost everything is possible. 
+
+
+
+Type defined by:
+- @ref object::type = 158
+
+
+@section Attributes
+
+<table>
+	<tr>
+		<th>Attribute</th>
+		<th>Field</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>artifact</td>
+		<td>@ref obj::artifact</td>
+		<td>            If defined, refers to an artifact to get values from.
+		</td>
+	</tr>
+	<tr>
+		<td>attack type</td>
+		<td>@ref obj::attacktype</td>
+		<td>                The disease will attack the host with the given &lt;attack type&gt;.
+                Godpower attack type is commonly used for "unresistable"
+                diseases.
+		</td>
+	</tr>
+	<tr>
+		<td>attenuation</td>
+		<td>@ref obj::last_grace</td>
+		<td>                The &lt;attenuation&gt; value reduces the diseases' &lt;infectiousness&gt;
+                every time it infects someone new. This limits how many
+                generations a disease can propagate.
+		</td>
+	</tr>
+	<tr>
+		<td>block view</td>
+		<td>@ref FLAG_BLOCKSVIEW</td>
+		<td>            If an item is set to block view, players (and monsters) cannot see
+            beyond it unless they cross it or manage to stand on top.
+		</td>
+	</tr>
+	<tr>
+		<td>changing</td>
+		<td>@ref FLAG_CHANGING</td>
+		<td>            A &lt;changing&gt; object converts to &lt;food&gt; &lt;other_arch&gt;
+            objects; when it's animation is done. For non-living objects &lt;food&gt;
+            is checked: if it is zero, the change happens; otherwise &lt;food&gt;
+            is decreased by one. I suggest you don't mess with this value -
+            leave the default in place.
+		</td>
+	</tr>
+	<tr>
+		<td>charisma</td>
+		<td>@ref liv::Cha</td>
+		<td>                The player's charisma will rise by the given value while being
+                infected. (Negative values make charisma fall)
+		</td>
+	</tr>
+	<tr>
+		<td>constitution</td>
+		<td>@ref liv::Con</td>
+		<td>                The player's constitution will rise by the given value while
+                being infected. (Negative values make constitution fall)
+		</td>
+	</tr>
+	<tr>
+		<td>create arch</td>
+		<td>@ref obj::other_arch</td>
+		<td>                If set, the specified arch is created and dropped every time the
+                symptoms strike.
+
+                This can be various things: farts, body pieces, eggs ... Even
+                monsters can be created that way. You could also make a disease
+                where some exotic stuff like money/gems is created.
+		</td>
+	</tr>
+	<tr>
+		<td>curing duration</td>
+		<td>@ref liv::maxgrace</td>
+		<td>                The disease will last in the host for &lt;curing duration&gt;
+                "disease moves" (Assuming the host survives and doesn't use a
+                curing spell). After this period the disease is naturally cured,
+                which provides the host with immunity from this particular
+                disease of lower or equal level.
+
+                A negative value means the disease can never be cured naturally.
+
+                Note that this value can be further modulated by
+                spell-parameters, if the disease is registered as spell in the
+                code. Due to that, most default diseases take a lot longer to
+                cure than it seems.
+		</td>
+	</tr>
+	<tr>
+		<td>damage</td>
+		<td>@ref liv::dam</td>
+		<td>                A disease with a positive &lt;damage&gt; value will strike the
+                player for that amount of damage every time the symptoms occur.
+                A negative &lt;damage&gt; value produces %-based damage: "&lt;damage&gt;
+                -10" means the player's health is reduced by 10% every time the
+                symptoms strike.
+
+                Diseases with %-based damage can be dangerous - but not deadly -
+                for players of all levels.
+		</td>
+	</tr>
+	<tr>
+		<td>dexterity</td>
+		<td>@ref liv::Dex</td>
+		<td>                The player's dexterity will rise by the given value while being
+                infected. (Negative values make dexterity fall)
+		</td>
+	</tr>
+	<tr>
+		<td>elevation</td>
+		<td>@ref page_custom_attribute_elevation "elevation"</td>
+		<td>            The elevation (height above sea level) of this square. It is used
+            for weather calculations and should be in the range -32000..32000.
+            The elevation of a tile must be set in the bottom-most game object;
+            elevation values for non-bottom-most game objects are ignored by the
+            Crossfire server.
+		</td>
+	</tr>
+	<tr>
+		<td>exp. for curing</td>
+		<td>@ref liv::exp</td>
+		<td>                When the player manages to cure this disease (with a curing
+                spell), he is awarded with &lt;exp. for curing&gt; experience.
+		</td>
+	</tr>
+	<tr>
+		<td>food depletion</td>
+		<td>@ref obj::last_eat</td>
+		<td>                Every time the disease "moves", the player's food is reduced by
+                the value of &lt;food depletion&gt;. For negative values, a
+                %-based amount is taken.
+		</td>
+	</tr>
+	<tr>
+		<td>glow radius</td>
+		<td>@ref obj::glow_radius</td>
+		<td>            If &lt;glow radius&gt; is set to a value greater zero, the object
+            appears lit up on dark maps. &lt;glow radius&gt; can be a value
+            between 0 and 4, the higher, the more light does the object emit.
+		</td>
+	</tr>
+	<tr>
+		<td>health regen.</td>
+		<td>@ref liv::hp</td>
+		<td>                This value increases the player's healing rate. Negative values
+                decrease it.
+		</td>
+	</tr>
+	<tr>
+		<td>identified</td>
+		<td>@ref FLAG_IDENTIFIED</td>
+		<td>            If an item is identified, the player has full knowledge about it.
+		</td>
+	</tr>
+	<tr>
+		<td>identified animation</td>
+		<td>@ref page_custom_attribute_identified_animation "identified_animation"</td>
+		<td>            If defined, then the object will take this animation when identified.
+		</td>
+	</tr>
+	<tr>
+		<td>identified animation speed</td>
+		<td>@ref page_custom_attribute_identified_anim_speed "identified_anim_speed"</td>
+		<td>            If defined, then the object will have this animation speed when identified.
+		</td>
+	</tr>
+	<tr>
+		<td>identified image</td>
+		<td>@ref page_custom_attribute_identified_face "identified_face"</td>
+		<td>            If defined, then the object will take this appareance when identified.
+		</td>
+	</tr>
+	<tr>
+		<td>identified random animation?</td>
+		<td>@ref page_custom_attribute_identified_anim_random "identified_anim_random"</td>
+		<td>            If defined, then the object's animation is in a random sequence when identified.
+		</td>
+	</tr>
+	<tr>
+		<td>identified_name</td>
+		<td>@ref page_custom_attribute_identified_name "identified_name"</td>
+		<td>            If defined, then the object will take this name when identified.
+		</td>
+	</tr>
+	<tr>
+		<td>identified_name_pl</td>
+		<td>@ref page_custom_attribute_identified_name_pl "identified_name_pl"</td>
+		<td>            If defined, then the object will take this plural name when identified.
+		</td>
+	</tr>
+	<tr>
+		<td>image</td>
+		<td>@ref obj::face</td>
+		<td>            The image-name defines what image is displayed for this object
+            in-game.
+		</td>
+	</tr>
+	<tr>
+		<td>infect race</td>
+		<td>@ref obj::race</td>
+		<td>            The disease will only infect creatures of the specified &lt;race&gt;.
+            "&lt;race&gt; *" means every creature can be infected.
+		</td>
+	</tr>
+	<tr>
+		<td>infection range</td>
+		<td>@ref obj::magic</td>
+		<td>                &lt;infection range&gt; sets the range at which infection may
+                occur. If positive, the &lt;infection range&gt; is level
+                dependant - If negative, it is not: E.g. "&lt;infection range&gt;
+                -6" means creatures can be infected in six square range, and
+                &lt;plaque level&gt; doesn't modify that.
+		</td>
+	</tr>
+	<tr>
+		<td>infectiousness</td>
+		<td>@ref liv::wc</td>
+		<td>                The &lt;infectiousness&gt; defines the chance of new creatures
+                getting infected. If you set this too high, the disease is very
+                likely to be too effective.
+
+                &lt;infectiousness&gt;/127 is the chance of someone in range
+                catching it.
+		</td>
+	</tr>
+	<tr>
+		<td>intelligence</td>
+		<td>@ref liv::Int</td>
+		<td>                The player's intelligence will rise by the given value while
+                being infected. (Negative values make intelligence fall)
+		</td>
+	</tr>
+	<tr>
+		<td>invisible</td>
+		<td>@ref obj::invisible</td>
+		<td>            Generally makes the object invisible. Depending on the object-type,
+            some can be made visible by the show_invisible spell. If in doubt,
+            test it. Putting an invisible object under the floor always prevents
+            it from being shown.
+		</td>
+	</tr>
+	<tr>
+		<td>mana depletion</td>
+		<td>@ref liv::maxsp</td>
+		<td>                Every time the disease "moves", the player's mana is reduced by
+                the value of &lt;mana depletion&gt;. For negative values, a
+                %-based amount is taken.
+		</td>
+	</tr>
+	<tr>
+		<td>mana regen.</td>
+		<td>@ref liv::sp</td>
+		<td>                This value increases the player's rate of mana regeneration.
+                Negative values decrease it.
+		</td>
+	</tr>
+	<tr>
+		<td>material</td>
+		<td>@ref obj::material</td>
+		<td>            This bitmask-value informs the player of which material(s) the
+            object consists. Material does also affect how likely the object can
+            be destroyed by hazardous spell-effects.
+		</td>
+	</tr>
+	<tr>
+		<td>message</td>
+		<td>@ref obj::msg</td>
+		<td>            This text is displayed to the player every time the symptoms strike.
+		</td>
+	</tr>
+	<tr>
+		<td>moving speed</td>
+		<td>@ref obj::speed</td>
+		<td>                The &lt;speed&gt; of the disease determines how fast the disease
+                will "move", thus how fast the symptoms strike the host.
+		</td>
+	</tr>
+	<tr>
+		<td>name</td>
+		<td>@ref obj::name</td>
+		<td>            This is the name of the object, displayed to the player.
+		</td>
+	</tr>
+	<tr>
+		<td>non-pickable</td>
+		<td>@ref FLAG_NO_PICK</td>
+		<td>            If set, the object cannot be picked up (Neither by players nor
+            monsters).
+		</td>
+	</tr>
+	<tr>
+		<td>number</td>
+		<td>@ref obj::nrof</td>
+		<td>            This value determines the number of objects in one stack (for
+            example: 100 gold coins =&gt; "number = 100"). You should set this
+            at least to one, for any pickable object - otherwise it won't be
+            mergeable into a stack.
+		</td>
+	</tr>
+	<tr>
+		<td>persistence</td>
+		<td>@ref liv::maxhp</td>
+		<td>                &lt;persistence&gt; defines how long the disease can persist
+                OUTSIDE a host. The disease can "move" &lt;persistence&gt; times
+                outside a host before it vanishes. A negative value means the
+                disease lasts for permanent (which is only recommended to use in
+                maps without monsters).
+		</td>
+	</tr>
+	<tr>
+		<td>plaque level</td>
+		<td>@ref obj::level</td>
+		<td>            The &lt;plaque level&gt; is proportional to the disease's
+            deadliness. This mainly reflects in the &lt;damage&gt;. It has no
+            effect on most other symptoms. Nevertheless, it is a very important
+            value for all damage-inflicting diseases.
+		</td>
+	</tr>
+	<tr>
+		<td>plural name</td>
+		<td>@ref obj::name_pl</td>
+		<td>            This is the plural name of the object. A plural name must be set for
+            all items that can be picked up and collected by the player.
+		</td>
+	</tr>
+	<tr>
+		<td>power</td>
+		<td>@ref liv::Pow</td>
+		<td>                The player's power will rise by the given value while being
+                infected. (Negative values make power fall)
+		</td>
+	</tr>
+	<tr>
+		<td>price adjustment</td>
+		<td>@ref page_custom_attribute_price_adjustment "price_adjustment"</td>
+		<td>            If set, this is the buy and sell price adjustment ratio for the
+            item.
+		</td>
+	</tr>
+	<tr>
+		<td>price adjustment for buying</td>
+		<td>@ref page_custom_attribute_price_adjustment_buy "price_adjustment_buy"</td>
+		<td>            If set, this is the adjustment ratio when buying the item. Ignored
+            if &lt;price&gt; adjustment is set.
+		</td>
+	</tr>
+	<tr>
+		<td>price adjustment for selling</td>
+		<td>@ref page_custom_attribute_price_adjustment_sell "price_adjustment_sell"</td>
+		<td>            If set, this is the adjustment ratio when selling the item. Ignored
+            if &lt;price&gt; adjustment is set.
+		</td>
+	</tr>
+	<tr>
+		<td>progressiveness</td>
+		<td>@ref liv::ac</td>
+		<td>            Every time the disease "moves" the severity of the symptoms are
+            increased by &lt;progressiveness&gt;/100. (severity = 1 +
+            (accumulated progression)/100)
+		</td>
+	</tr>
+	<tr>
+		<td>slowdown penalty</td>
+		<td>@ref obj::last_sp</td>
+		<td>                If set, the disease imposes a &lt;slowdown penalty&gt; while
+                being infected. The player's speed is reduced by &lt;slowdown
+                penalty&gt; % of normal value.
+		</td>
+	</tr>
+	<tr>
+		<td>smooth level</td>
+		<td>@ref obj::smoothlevel</td>
+		<td>            If &lt;smooth level&gt; is set to a value greater zero, the object
+            will be drawn partially over adjacent squares having a lower &lt;smooth
+            level&gt; value. The value must be between 0 and 255 (inclusive); 0
+            means &quot;never overlap adjacent squares&quot;.
+		</td>
+	</tr>
+	<tr>
+		<td>splitting</td>
+		<td>@ref FLAG_SPLITTING</td>
+		<td>            A &lt;splitting&gt; object converts to &lt;food&gt; &lt;other_arch&gt;
+            objects; when it is hit physically. For non-living objects &lt;food&gt;
+            is checked: if it is zero, the change happens; otherwise &lt;food&gt;
+            is decreased by one. I suggest you don't mess with this value -
+            leave the default in place.
+		</td>
+	</tr>
+	<tr>
+		<td>strength</td>
+		<td>@ref liv::Str</td>
+		<td>                The player's strength will rise by the given value while being
+                infected. (Negative values make strength fall)
+		</td>
+	</tr>
+	<tr>
+		<td>title</td>
+		<td>@ref obj::title</td>
+		<td>            This is the object's title. Once an object is identified the title
+            is attached to the name. Typical titles are "of Mostrai", "of xray
+            vision" etc.
+		</td>
+	</tr>
+	<tr>
+		<td>unpaid</td>
+		<td>@ref FLAG_UNPAID</td>
+		<td>            An &lt;unpaid&gt; item cannot be used unless a player carried it
+            over a shop mat, paying the demanded price. Setting this flag makes
+            sense only for pickable items inside shops.
+		</td>
+	</tr>
+	<tr>
+		<td>value</td>
+		<td>@ref obj::value</td>
+		<td>            Adds a certain value to the object: It will be worth that many times
+            the default value from it's archetype (E.g. "value = 3" means three
+            times worth the default value). Value for buying/selling will be
+            further modified by various factors. Hence, testing values in-game
+            is usually inevitable.
+		</td>
+	</tr>
+	<tr>
+		<td>weight</td>
+		<td>@ref obj::weight</td>
+		<td>            This value defines the object's weight in grams (1000g is 1kg).
+            Objects with zero weight are not pickable for players. Still, set
+            the "non-pickable"-flag for explicitly non-pickable objects (hey,
+            this is open source.. you never know ;) ).
+		</td>
+	</tr>
+	<tr>
+		<td>wisdom</td>
+		<td>@ref liv::Wis</td>
+		<td>                The player's wisdom will rise by the given value while being
+                infected. (Negative values make wisdom fall)
+		</td>
+	</tr>
+</table>
+*/

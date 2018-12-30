@@ -1,0 +1,35 @@
+
+BEGIN {
+        # Read the array data from living.c
+        while ((getline buff < living_c) == 1) {
+                if (buff ~ /stat_exp_mult\[/) {
+			get_values(buff);
+			haf = (tind-1)/2;
+			for(i=1;i<=haf;i++)
+		           printf("<tr><td align=center>%d</td><td align=center>%s</td><td align=center>%d</td><td align=center>%s</td></tr>\n",i,array[i],i+haf,array[i+haf]);
+			break;
+                }
+        }
+        close(living_c);
+}
+
+function get_values (buff) {
+        tind = 0;
+        while (1) {
+           getline buff < living_c;
+           if (buff ~ /};/)
+              break;
+           gsub("[ \t]*\"", "", buff);
+           nr = split(buff, val, ",");
+           for (i = 1; i<=nr ; i++) {
+		  if(val[i]!="") {
+               	     if(val[i] ~ "/") {
+           	       nmb = split(val[i], subval, "/");
+		       if(subval[1] ~ " ")
+			  array[tind++]=subval[1];
+		     } else
+			array[tind++]=val[i];
+		  }
+	   }
+        }
+}

@@ -1,0 +1,74 @@
+Magical Runes
+
+  Runes are magical inscriptions on the dungeon floor,
+which cast a spell or detonate when something steps on them.  Flying
+objects don't detonate runes.  Beware!  Runes are invisible
+most of the time.  They are only visible occasionally!
+
+  There are several runes which are specialized:  these can be set as
+your range spell.  Some of these are:
+
+  Rune of Fire		--		does ??hp of fire damage
+					when it detonates
+  Rune of Frost		--		??hp cold
+  Rune of Blasting	--		??hp physical
+  Rune of Shocking	--		??hp electric
+  Rune of Death		--		AT_DEATH at caster level
+
+  + some others you may discover spellbooks of.
+
+  The spell 'disarm' may be used to try and destroy a rune you've
+discovered.
+
+  In addition, there are some special runes which may only be called
+with the 'invoke' command:
+
+  Magic Rune		--		You may store any magic spell
+					in this rune that you know and
+					have the spellpoints to cast.
+
+  Marking Rune		--		this is basically a sign.  You
+					may store any words you like in
+					this rune, and people may apply
+					it to read it.  Maybe useful for
+					mazes!  This rune will not detonate,
+					nor is it ordinarily invisible.
+
+Partial Visibility of Runes:
+  Your runes will be partially invisible.  That is, they'll be visible
+only part of the time.  They have a 1/(your level/2) chance of being
+visible in any given round, so the higher your level, the better hidden
+the runes you make are.
+
+Examples of usage:
+
+'invoke magic rune heal
+  -- will place a magic rune of healing one square ahead of you, whichever
+     way you're facing.
+
+'invoke magic rune transfer
+  -- as above, except the rune will contain the spell of transferrence
+
+'invoke magic rune large fireball
+  -- as above, except the spell large fireball will be cast when someone
+     steps on the rune.  the fireball will fly in the direction the caster
+     was facing when he created the rune.
+
+'cast rune of fire
+  --  prepares the rune of fire as the range spell.  Use the direction
+      keys to use up your spellpoints and place a rune.
+
+'invoke marking rune fubar
+  --  places a rune of marking, which says "fubar" when someone
+      applies it.
+
+'invoke marking rune touch my stuff and I will hunt you down and kill you
+  --  places the marking rune warning would-be thieves of their danger
+
+
+
+Restrictions on runes:
+
+  You may not place runes underneath monsters or other players.  You
+may not place a new rune on a square which already has a rune.  Any
+attempt to do the latter strengthens the pre-existing rune.

@@ -1,0 +1,122 @@
+This guide explains how to implement shop headers on maps.
+
+There are 5 headers related to shops that can be present in a map. Any given map may have some, all or none of them (although in the later case, it isn't considered to be a shop).
+
+The headers are.
+
+shopitems.
+
+this is a semi-colon deliminated list of item types and values.
+each entry is a name of an item type (from the array in common/item.c)
+followed by an optional colon then a value in the range -100 to 100.
+(if this is missing, the default value of 0 is used.
+This value is a measure of how much items of that type are preferred.
+Neutrality is represented by 0 (so a theoretical 'general' store would
+have 0 for everything), a positive preference for certain item types
+is a positive value, and negative preference for item types is a negative value.
+
+As a special note, the character * may be used once to set a preference for
+everything not explicitly listed otherwise (this value would in most cases be negative).
+
+for example, a typical magic shop might have the string:
+shopitems amulet:25;ring:40;potion:40;book:35;scroll:40;spellbook:40;skillscroll:50;wand:40;*:-50
+
+and an armour shop might have the string:
+shopitems armour:50;shield:50;helmet:40;cloak:40;boots:40;gloves:40;bracers:50;girdle:50;*:-50
+
+all possible name values for items are listed in common/item.c, however there are only some
+that are likely to be used (doors are not sold very often....) this list is not definitive or
+neccesarily up-to-date, but is a reasonable starting point for constructing a new shop.
+
+rod
+book
+horn
+amulet
+potion
+ring
+inorganic
+spellbook
+wand
+scroll
+power_crystal
+
+arrow
+bow
+weapon
+
+armour
+shield
+helmet
+cloak
+boots
+gloves
+bracers
+girdle
+
+flesh
+food
+drink
+treasure
+gem
+skill tool
+lighter
+light source
+lamp
+tool
+container
+item_transformer
+
+armour improver
+weapon improver
+skillscroll
+
+building material
+
+
+shopmin
+This is an integer value. It is the minimum value that the object must have in
+order to be considered by purchase for a shop. This is not the same as the price
+offered, which can be substantially below shopmin.
+
+
+shopmax
+This is an integer value. It uses value like shopmin does, however it is not a
+fixed upper limit.
+
+The value is adjusted downwards if it is in excess of one half of shopmax. The
+output value is the minimum of shopmax and one half of shopmax plus the square root
+of one half of shopmax
+
+Note that the value is only an aspect of the final price, and the actual price offered for an item
+can be substantially less than shopmax, even when the item's value in in excess of that.
+
+
+shoprace
+if the player matches shoprace, this has no effect, if they do not, the price offered
+is only 80% of what it would otherwise be.
+
+
+shopgreed
+This is a multiplier on all prices offered, items brought from the player are done
+so at a price divided by the greed, items sold to a player are overcharged by a factor of shopgreed.
+
+
+Recognising different types of shops:
+
+Whilst a hit and miss approach will work if there are items of known value to measure
+prices with, it is possible to also guage the manner in which a shop will trade with
+the bargaining skill. Merely use_skill bargaining on an appropriate shop, and the
+details about the shop will be displayed.
+
+
+Value estimation:
+no longer does examining an item display the exact sale price you will get (not least
+because there /is/ no exact sale price anymore...). Instead an estimate is given, the
+quality of this estimate is based on your knowledge of any skills that could identify
+the item, and the bargaining skill, as well as a fair degree of luck. Remember, just
+because you think an item is worth a lot, doesn't mean any shopkeepers do.
+
+The estimate given can be improved by leveling skills related to the class of item in question,
+and the bargaining skill. Also, by acquiring other objects that are similar, and comparing and
+merging them, your evaluation of the value of the objects can change. This does not always mean
+greater accuracy however.

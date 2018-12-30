@@ -1,0 +1,116 @@
+This directory is for the object-type dependent code, in addition to also
+storing some generic methods for objects which an object-type may want to
+override.
+
+==Organization==
+ -Place object-type specific code in this directory either as "foobar.c" or in a
+  directory, as "foobar/*.c" with logical and clear individual file names. Use
+  your discretion on if the code for the type should be split across multiple
+  C files or not
+ -If multiple type numbers are the same in behavior (i.e. armor types, though
+  those should be fixed later), it is fine to put them in the same grouping of
+  code.
+ -Code used by multiple types, that is specific to an action controlled by this
+  subsystem is put in "common/*.c" under a logical filename. This includes
+  generic code for dropping, picking up, etc.
+ -Code for an action controlled by this system, but not yet split in to
+  type-specific segments may be stored in "legacy/*.c" for the moment. This will
+  obviously be removed after refactoring is complete.
+
+==API==
+ -The api for this system is in "server/ob_types.c" and "server/ob_methods.c" at
+  the top level. Read the comments in those files for more complete
+  documentation.
+ -The following types are initialized and defined in init_ob_methods(), which
+  you should edit to modify.
+   -The base_type is for defining default actions for all object types. It
+    inherits from legacy_type.
+   -legacy_type is for references to code in "legacy/*.c", and does not have a
+    fallback. It will be removed when the refactoring is complete.
+ -Functions:
+   -The function, init_ob_method_struct(ob_method *methods, ob_methods *fallback)
+    initializes an ob_method struct and sets it's fallback to fallback.
+   -All functions in the form of ob_foobar(object *ob, ...) are for calling object
+    methods. They search though fallbacks when the object's type.
+   -All functions named register_foobar(int ob_type, ...) are for registering a
+    callback with the array storing object methods for different types. Use this
+    to register object_type_specific callbacks
+ -Defined types:
+   -Always make sure your callback functions match the typedefs such as
+    apply_func, as defined in ob_methods.h
+
+==Adding new object methods==
+As a quick reference, here is a checklist for adding a new object method for use
+in this section of the code.
+ 1) Define "foobar_func" in ob_methods.h
+ 2) Add "foobar" to the "ob_methods" struct  in ob_methods.h
+ 3) Add a line to set it to NULL in init_ob_method_struct() in ob_methods.c
+ 4) Add the boring handler function, "ob_foobar(object *ob, ...)" in
+    ob_methods.c
+ 5) Add the boring "register_foobar(int ob_type, foobar_func *methodptr)"
+    function in ob_types.c
+ 6) Add handler functions for base_type and/or legacy_type if applicable.
+    Reference to in init_ob_methods() in ob_methods.c
+ 7) Add type-specific methods and register them in an init function for the
+    type, using register_foobar(). Call this init function in init_ob_types() in
+    ob_types.c
+
+==Notes on refactoring into here==
+ -Always make a note in the ChangeLog file in this directory, but don't
+  neglect the top level ChangeLog either when making changes here.
+ -Try to refactor one whole object type at a time, adding whatever object
+  methods are required.
+ -Commit often, in fact, as often as you can so long as things don't break
+ -Try not to change in-game behavior here; unless it's a really obvious bug, try
+  to leave that for separate commits either before or after moving the code.
+ -When moving code here, always review it entirely, clean up the comments, and
+  code style.
+
+==Example==
+
+/** @file example.c
+ * An example of how to define a type for the object 'method' system. This
+ * example is for a simple food type with no special behavoir except for when it
+ * is applied it gives the food value to the player. Do not use this for real code,
+ and just consider it an example of how to
+ */
+
+/**
+ * Initialize the food object type. Call this from init_ob_types in
+ * server/ob_types.c
+ */
+void init_type_food() {
+    register_apply(FOOD, food_type_apply);
+    register_apply(FLESH, food_type_apply);
+    register_apply(DRINK, food_type_apply);
+}
+
+/**
+ * ob_method handler for FOOD, FLESH and DRINK object types.
+ * @todo Handle cursed food
+ * @todo Add hook for dragon resistance gaining
+ * @todo Give special messages when full
+ * @note Remember this is just an example ;-)
+ */
+method_ret food_type_apply(ob_methods *context, object *ob, object *pl) {
+    method_ret can_apply;
+
+    /*
+     * Call the 'can_apply' method for the player to check if the player can
+     * indeed apply it (checking if the player can reach it, etc).
+     */
+    can_apply = ob_can_apply(pl, ob);
+    if (can_apply == METHOD_OK) {
+        char name[MAX_BUF];
+        query_name(ob, name, MAX_BUF);
+        pl->stats.food += ob->stats.food;
+        if (pl->stats.food > 999)
+            pl->stats.food = 999;
+        draw_ext_info_format(NDI_UNIQUE, 0, pl, MSG_TYPE_APPLY, MSG_TYPE_APPLY_SUCCESS,
+             "You eat the %s!",
+             "You eat the %s!",
+             );
+        decrease_ob(ob);
+    }
+    return METHOD_OK;
+}

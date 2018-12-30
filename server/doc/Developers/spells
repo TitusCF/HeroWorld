@@ -1,0 +1,1400 @@
+SPELLS:
+------------------------------------------------------------------------------
+Index:
+
+1. Background
+2. Spell Objects
+3. Spell Paths
+4. Spell Subtypes
+5. Spell Casting Objects
+6. Arch Directory Layout
+7. Programming Notes
+8. Abilities
+9. Spell Merging
+
+------------------------------------------------------------------------------
+1. BACKGROUND
+
+This document describe all things spell and spell related that developers
+need to know.  This document outlines the new spell objects and how
+this all works.
+
+------------------------------------------------------------------------------
+2. SPELL OBJECTS
+
+In the old model, each spell had a specific number associated with it.
+Monster spell abilities, while objects, just said to use spell number
+X.  Given that everything else in the game is object, this hardcoding
+of spells was less than ideal.
+
+In the new system, spells are objects.  The spell object the player knows
+has the characteristics of the spell.  As a first pass, the existing
+spells are just converted to object form.  As time passes, new spells
+can be easily added in this system.  It also simplifies the code - the
+spells a player knows are now objects in his inventory.  The spell
+a wand casts is the spell in its inventory.  The spell a scroll casts
+is the spell in its inventory, and the spell you learn by reading
+a spellbook is the spell in its inventory.
+
+This model makes it very easy to make variations of some spells.  Want
+to make an extra large fireball?  All this is needed is to take the
+large fireball arch, increase a few parameters, and your all set.
+
+The following is the fields in the object structure, and how they
+correspond to a spell.  Fields that are not mentioned are not used.
+
+char *name: Name of the spell (large fireball, icestorm, etc)
+
+char *lore: Description of the spell to be put in books, or perhaps even
+   to just let the player see.  In a sense, this puts documentation of
+   the spells within the object, instead of having to maintain separate
+   files.
+
+sint16 casting_time :  How long it takes to cast the spell (was time)
+   This is the number of ticks it takes for the player to cast the spell,
+   and is thus not a fixed time.
+
+    Suggested casting time values:
+    5: Combat spells (cones, bolts, balls, etc - ones you cast when in
+	danger)
+    10-15: Protection spells, other often cast spells.  Summoning spells
+	would fall into this category, as they are often cast when not
+	in immediate danger.
+    ~25: Detection spells, or other spells done when times are safe.
+	Many ability improvement spells might fall into this category.
+
+    These are only suggestions - they more or less match when the spell will
+    be used and usefulness.  An attack spell that takes forever to cast
+    isn't very useful.  There are really two things to keep in mind - when
+    the spell is cast, and how long the spell itself last.  A long lasting
+    spell can have a longer casting time, simply because it isn't cast
+    that often and will last for a while (thus, smart players won't cast
+    it in combat).
+
+face/anim: If the spells is a generic spell that doesn't have an other_arch
+   pointer, this is the face (or animation to use when the spell is
+   cast.
+
+uint8 type: SPELL (101) (to denote this is spell object)
+sint16 resist[] values: For protection spells, resistance they provide.
+uint32 attacktype: Attacktype of the spell.
+
+uint32 path_*: spell path information.  Note as of this writing, only
+    path_attuned is expected to mean anything.  However, I can envision
+    the user of path_repelled/denied to denote that if the caster is
+    attuned to some path, they have penalties in casting this spell.
+
+sint32 value: Base value of this spell for scroll, spellbooks, wands, rods.
+sint16 level: Level of the spell
+
+other_arch: archetype this spell uses.  In the case of bolts, this
+    is the bolt that is fired.
+
+char *skill (new): Skill needed to cast this spell.
+
+sint32 subtype (new): Sub classification for this spell.  It sort of
+    relates to the existing spell number, but in a more general form.
+    At first pass, subtypes would fall into protection spells, bolt
+    spells, ball spells, cone spells, stat increase spells.  There
+    are a number of spells which can not be abstracted and are unique
+    in their own right (dimension door, word of recall, polymorph, etc).
+    In these cases, there will be one value for that spell type.
+
+invisible: Always set to 1, so that the player can't directly see it in their
+    inventory.
+
+no_drop: Always 1, so when a spell object is destroyed, the spell it
+    contains is dropped and not freed.
+
+
+From living/stats substructure:
+Str, Dex, etc: If spell changes and ability, this is the ability it changes.
+sint16 dam: Base damage the spell does:
+sint16 sp: how many spellpoints the spell costs
+sint16 grace: how much grace the spell costs
+sint16 maxsp/maxgrace: Every 'maxsp/maxgrace' levels beyond its base level,
+    the spell cost doubles (this is pro rated like the old code.  For example,
+    if a first level spell costs 5 sp, and maxsp is 5, then at level 6 it
+    would cost 10 sp.  However, at level 2, it is 6 sp, level 3 is 7 sp,
+    etc.
+New fields added to object structure:
+
+uint8 dam_modifier:
+    for every maxdam levels above what is needed to cast the spell, it does an
+    extra point of damage.  Note if you want a spell to double its damage
+    every X levels, the maxdam may have to be quite low (1) if the spell does
+    high damage.  For example, suppose you have a 10'th level spell that does
+    50 damage.  If dam_modifier is 5, then every 5 levels it does one extra
+    point, so at level 25, it would do 53.  If dam_modifier is 1, then at
+    level 25 it would do 65.
+
+sint16 duration: Base duration of the spell (was bdur)
+uint8 duration_modifier: Modifies duration of spell, acts the same way
+   as dam_modifier.
+
+uint8 range: Range of the spell - this could be how far a lightning
+    bolt goes, how big that fireball is, etc.  Spells with range 0
+    are personal only spells.  Spells with range 1 can touch
+    a person on a neighboring space.  range will not change based
+    on level of the caster - if higher range is desired, different
+    spell should be made.
+uint8 range_modifier: Modifies range of spell, acts ame way as dam_modifier
+
+TBD:
+There are also many fields in the spell structure which are not
+copied - charges, scrolls, scroll_chance, books, defensive,
+cleric, onself.
+
+The defensive, and onself can largely be derived from the
+subtype above.  if subtype is protection or healing, it'd be
+self.
+
+cleric is basically redundant now - the skill says what skill to use
+for this spell.  Note that a spell could in theory cost both mana
+and grace - what it costs is not necessarily tied to a skill.  However,
+it would be bad practice to make a wizardry spell use grace.  However,
+I could potentially see hybrid skills that have some various benefits,
+or if we have say a 'magic' god, perhaps some special spells it grants
+use mana and not grace.
+
+So lets next touch on the idea of treasurelist for spell objects.
+
+As mentioned above, spell objects, like wands, spellbooks, scrolls,
+etc, contain the spell they cast.  The way spells end up in those
+objects is via a mechanism there is already code for - treasurelists.
+
+Currently, the treasure generation code notices if a wand, rod, spellbook,
+or scroll is generated.  If so, it calls special code that looks
+at the field of the spell structure and randomly chooses a spell.
+
+Instead, this is just replaced with treasurelists.  The scroll object
+would have a 'randomitems scroll', wands a 'randomitems wand',etc.  These
+may be big treasure lists, but that shouldn't post any problem.  More
+likely, these lists would be broken up into smaller pieces (eg,
+scroll_low_level, scroll_medium_level, scroll_high_level).
+
+ This provides finer resolution than is currently allowed in the spell
+structure - you could make some spell available only in rods, but not
+wands.  you can better adjust things to better spells show up in
+tougher dungeons, etc,
+
+When a spell is cast, often it copies over certain values into the
+SPELL_EFFECT (102).  The subtype of the SPELL_EFFECT, which should generally
+match that of SPELL itself, determines what the spell does.
+
+------------------------------------------------------------------------------
+3. SPELL PATHS DOCUMENTATION
+
+Long ago a number of archmages discovered patterns in the web that spells
+weave in the aether. They found that some spells had structural similarities
+to others and some of the mages took to studying particular groups of spells.
+These mages found that by molding their thought patterns to match the patterns
+of the spells they could better utilise all the spells of the group. Because
+of their disciplined approach, the mages were described as following spell
+Paths. As they attuned themselves to particular spell Paths they found that
+they would become repelled from others, and in some cases found they were
+denied any access to some paths. The legacy of these mages remains in some
+of the magical items to be found around the world.
+
+Technical details:
+In the same way that players and objects can be protected, immune, and
+vulnerable to the different types of attacks, they can now be attuned,
+repelled, or denied access to the different spell Paths. An object that
+is attuned to a Path cast spells from that Path at 80% of the spell point
+cost and receives duration/damage bonuses as if the caster were five levels
+higher. An object that is repelled from a Path casts spells from that Path
+at 125% of the spell point cost and receives duration/damage bonuses as if
+the caster were five levels lower (minimum of first level). An object that
+is denied access to a Path cannot cast any spells from it. The casting
+time is also modified by 80% and 125% respectively. These values are
+defined in PATH_SP_MULT (from spells.h), PATH_TIME_MULT (from spells.h), and
+path_level_mod (from spells.c)
+
+The Paths themselves are the following:
+  "Nothing",
+  "Protection",
+  "Fire",
+  "Frost",
+  "Electricity",
+  "Missiles",
+  "Self",
+  "Summoning",
+  "Abjuration",
+  "Restoration",
+  "Detonation",
+  "Mind",
+  "Creation",
+  "Teleportation",
+  "Information",
+  "Transmutation",
+  "Transferrence".
+
+See define.h for the number values corresponding to the Path.
+
+Some more will be added in the near future. Some spells do not currently
+belong to a Path, this is probably appropriate for some spells.
+Paths are inherited just like protection/immunity/vulnerability, ie if a
+ring contains "path_attuned 1", the wearer becomes attuned to the Path of
+Protection.
+
+Paths are quite powerful and shouldn't be given away cheaply. Ideally, most
+objects with path_attuned attributes should have path_repelled and path_denied
+attributes as well, to balance out (eg attuned to Fire, repelled from
+Protection, and denied from Restoration)
+
+------------------------------------------------------------------------------
+4. Spell Subtypes
+
+This section lists specific spell subtypes and what they really
+do.  The idea is to try and generalize the object types (cones,
+bolts, balls, etc).  However, some number of spells, most notably
+detection spells, must have their own entries because the code that
+is actually executed needs to re-act accordingly.
+
+SP_RAISE_DEAD (1)
+    These spells bring back dead players.  These spells are only useful
+    on servers that use PERMADEATH.
+
+    Con: The number of con points the target character loses.
+    exp: the experience loss ratio (eg, exp -= exp/spell->stats.exp.
+	If zero, no exp is lost
+    last_heal: If set, corpse isn't required, just character name
+    randomitems: If set, then when the spell fails, the  treasurelist is used
+	to determine what nasty monsters to summon.  Note that this
+        list is not processed as a normal list - rather, everything
+	on the list is created, so chance values are meaningless.
+    race: If set, this is used as a treasurelist to determine what
+      class to change the character to (reincarnation).  Basically,
+      it just looks up the treasurelist that is using the race name.  This
+      should be a treasureone type list.
+
+SP_RUNE (2)
+    Runes are objects that embed another spell in them, and are activated
+    when someone walks on top of the rune.  Runes can be disarmed.
+
+    other_arch: This can be set to one of 3 values:
+	Name of rune (type = rune): If this is the case, rune is put on
+	   the map with few changes.
+	name of spell: In this case, the spell is embedded into the the rune.
+	   generic_rune object will be used, with the face updated.
+	NULL: in this case, the player specifies the rune to embed.
+    face: Face that the rune object will use.
+
+    If other_arch is set in the spell object, then it is assumed that
+    the sp (or grace) cost in the spell object is the total that should
+    be used.  If it is an embedded spell, then the cost will be in
+    addition to that to cast the spell.
+
+    Special rules for runes where player can choose what spell to embed:
+    skill for the embedded spell must match the rune
+    Player must have enough mana/grace to embed the spell as well as cast
+    the actual rune.
+
+    Note that runes created by players/monsters will have the spell put into
+    the rune's inventory.  However, archetype runes will still use the other
+    arch, as inventory in archetypes isn't really supported.
+
+    This really works fine - This allows custom spells to be embedded into
+    runes.  For archetypes, using the default spell archetypes work fine.
+
+SP_MAKE_MARK (3): This makes a 'mark' that contains a message.  In the old
+    system, this used to be part of the rune code, but it really doesn't
+    have anything in common with runes (except in name).
+
+    other_arch: Object used to store the message.
+
+SP_BOLT (4):
+   This fires a bolt (other_arch) of the spell object.  All of the
+   following values are copied from the spell object and into the
+   bolt object (other_arch in the spell object).
+
+   damage, attacktype, slaying have normal meaning
+
+   range (exp): How many more spaces this will go before it ends.
+   duration (hp): How long it stays on each space.
+   Dex: chane (percentage) the bolt has of forking
+   Con: Chance that the bolt forks left.
+
+   Note if duration is less than range, which it should typically be,
+   then a bolt will only be in a subsection of the entire range.
+
+   A bolt object can have the generator flag set, in which case as
+   the bolt moves along, it will create an other_arch object.  The
+   steambolt is an example of this.  This can not be set in the spell object,
+   and is instead set in the other_arch field that the spell refers to.
+
+SP_BULLET (5):
+    Bullets are single objects that go in a direction and hit
+    something.  The simplest case here is magic bullet, that hits
+    something and does damage.
+
+    exploding ball type spells are a more complicated variation.  These
+    object start out as a bullet, but when they hit something, they
+    explode, into fire or poison or the like.  The other_arch field
+    determines what they explode into.
+
+    Values for spell object
+    range: diameter of the explosion (copied into maxhp).
+	Note that for the bullet itself, the range is always set to 50.
+    other_arch: bullet object to create.
+    dam: how much damage the bullet does.
+    attacktype: copied to the bullet.
+    slaying: copied to the bullet.
+    duration: How long the explosion lasts for.  Not used for bullet
+	only spells.  copied into hp field of the bullet object.
+    food (& dam adjust): Damage the explosion does.  copied into the bullet
+       	dam_modifier field.
+
+    See notes about explosion below.
+
+SP_EXPLOSION (6):
+    Objects of subtype explosion are really only useful when attached
+    to a bullet - you don't really want to explode something on yourself.
+
+    Note that the set up of the below values is also the same for
+    SP_CONE types if a cone is attached to a bullet.
+
+    attacktype: from other_arch, but add magic if bullet has it.
+    damage: this is copied over the the bullet dam_modifier.  The
+      bullet dam_modifier is based on the 'food' value
+    range: Copied over from stats.maxhp.  This determines the radius of the
+	explosion.
+    duration: copied over from stats.hp.  This determines how long the
+	explosion lingers.
+
+    Given two objects are created from one spell, tuning this/creating
+    new spells of this type is tricky.   We can only use the range for
+    the bullet or explosion.  Likewise, adjusting damage is difficult.
+    Ideally, perhaps, some additional fields in the spell object itself
+    are used to fully implement this, eg, these two fields determine the
+    range/damage of the bullet, and these 3 determine range/blast/damage
+    of the ball itself.  That is the only real way to make a ball
+    spell fully adjustable.
+
+SP_CONE (7):
+    sp is the overall direction of the cone is moving in.
+    other_arch: object to create as it moves along.
+    flag_lifesave: if true, object never goes away (eg, lava)
+    duration: This is how many ticks the spell stays on space.
+    flag_stand_still (was food): Causes the object not to progress
+
+    Note that SP_CONE can be the other_arch of a SP_BULLET.  In this
+    case, the set up of the cone values is as described in SP_EXPLOSION
+    setting.
+
+    Note 2: The other_arch that is in the cone can really be any object.
+    As such, the code does not modify this object, other than to
+    set proper ownership.  As such, you can't set what values will be
+    set in the arch thus created
+
+    vitriol is the best example of both of these notes - it starts out
+    as a bullet, which then turns into a cone, which then drops acid
+    pools.
+
+SP_BOMB (8):
+    Bombs are as they are described - objects that sit around for
+    a little while before exploding.
+
+    The bomb itself is harmless - its not until it explodes do bad
+    things happen.
+
+    In the bomb object, the following attributes are set up:
+    dam: damage of the flying fragments/explosion
+    range: how far the fragments/explosion extends.
+    duration: How long the explosion lasts.
+    attacktype: Type of damage the bomb does.
+
+    bombs tick at a constant rate, as defined by there speed.  They explode
+    when the finish their last animation.  There is no way to adjust
+    this rate of ticking in the spell object, other than to point
+    other_arch at a customized bomb.
+
+    A bomb then explodes.  It explodes into 'splints' (this is
+    unfortunately hardcode), and the other_arch pointer of the bomb,
+    which default is of SP_EXPLOSION.
+
+SP_WONDER(9):
+    wonder is a spell that will cast another spell.  It will also sometimes
+    cast a cone of flowers (other_arch).
+
+    randomitems: treasure list to look for spell to cast.
+
+    Note old wonder code would only cast spell that would be found in
+    books.  This new code can be used to cast most any spell, as defined
+    as in the treasurelist.
+
+    Note 2: Ideally, the flower effect should also be in this treasure list,
+    so the occurrence could be accurately controlled.
+
+SP_SMITE(10):
+    smite spells are target spells - the spell looks for an appropriate
+    enemy in the direction pointed, and if one is found, hits them with
+    whatever is in the other_arch.  It is generally assumed that other_arch
+    will point to another spell.
+
+    other_arch: Object to create.
+    dam, range, duration (& modifiers) are copied into the spell effect
+    that other_arch points to.
+    attacktype: Attacktype to give to the spell effect.
+
+    Special notes if attacktype includes a death attacktype (finger
+    of death):
+    Won't work on undead - makes them strong.
+    the level of the created object is set to the dam (& modifier)
+    of the spell.
+
+
+SP_MAGIC_MISSILE(11):
+    magic missiles are really just a bullet type object that have
+    some more intelligence in their guiding (but not much).  Basically,
+    a magic missile will more or less go in the direction it is fired,
+    but will adjust course to hit a monster.  Thus, if something isn't
+    perfectly lined up, magic missile will still hit it.
+    range, attacktype, etc, all have normal meanings.
+
+
+SP_SUMMON_GOLEM(12):
+    This spell summons a friendly creature/object that helps out the
+    player.
+
+    other_arch: Pet/object this spell creates.
+    race: If set to 'holy servant' or 'avatar', this is now a
+	summon avatar spell, whose monster is determined based on the
+ 	god being worshipped.  Note that these names are just passed
+	to determine_holy_arch()
+    dam: How much damage the golem will do.  dam_modifier alters this in the
+	expected way.  If zero, damage from the golem is used, but damage
+  	modifier will still be added.
+    duration: increases the golems hp, which basically amounts to duration.
+    attacktype: If set, golem gets this attacktype instead of the
+  	normal arch attacktype.
+    range_modifier: This adjust the wc and speed of the creature.
+
+    golems lose 1 hp each time they do something.  This effectively
+    limits their duration, but does mean it can be extended by healing
+    the golem.  Not sure if this is the way to go, or if duration
+    should really just be used.
+
+    Note - the old code had ldam and ldur have multiple meanings, and
+    the code multipled them by 10 internally.  This is no longer done -
+    instead, the archetype itself should have the real value (10 times
+    the old compiled in values)
+
+SP_DIMENSION_DOOR(13):
+    dimension door lets the player move some large number of spaces.
+    One still can not teleport through no magic areas.
+    range: How far we will move the player
+    maxsp, level_modifier: Normal spell meaning.
+
+SP_MAGIC_MAPPING(14):
+    This draws an overview of the map around the player.  There are currently
+    no parameters the spell takes - the results are always the same.  One could
+    forsee parameters to change how far one sees, what one sees, etc.
+
+SP_MAGIC_WALL(15):
+    This spell creates a magic wall.  Walls can have a wide set of
+    properties.  Many are determined by the other_arch or race (the wall
+    the spell creates).
+
+    other_arch: wall to create.
+
+    race: Name of the object to summon.  This should include the %d.
+    eg, 'director_%d'.  Note that if the object is non directional,
+    just don't include the %d in the race.  Note that if both other_arch
+    and race is set, then other_arch takes precedence
+
+    move_block: If set, then the object can not be created on the space the
+	player is standing on.  In all cases, the object can not be
+	created on a space that is blocked by an object.
+
+    is_used_up: If set, then this flag is set in the created object
+
+    tear_down: If set, this flag is then set in created object, as well
+    as flag_alive
+
+    range (and range_modifier): How many spaces in each direction the wall
+       should go.  If this is 1, the wall will be 3 spaces total (1 + 1 in
+       each direction).  If this is 0, the wall is a single space.
+
+    attacktype: Attacktype to set on the created wall.
+    duration (and duration_modifier): The number of hit points/duration
+      of the wall.
+    dam and dam_modifier: Damage the wall does.
+
+    Exactly how the a attacktype, duration, and damage values play out
+    depend on what is being created and the spell.
+
+    Created object is of type SPELL_EFFECT: attacktype, dam, and duration
+    are copied into fields of same name.
+
+    Created object is alive: duration becomes the objects hit points.
+
+    is_used_up (either in spell, or created object): duration put
+    into objects food value.
+
+    tear_down (in spell only): Spells damage value is copied into
+	objects hp/maxhp
+
+    The level of the created object is always set to half that of
+	the caster level.
+
+SP_DESTRUCTION(16):
+    Destruction hits all the spaces within some distance of the player
+    with damage.
+
+    range (& modifier): Number of spaces in each direction to do damage to.
+    dam (& modifier): Amount of damage to do to each creature.
+    attacktype: Attacktype to hit the creatures with.
+    other_arch: This can in practice be anything, but is typically just used
+      as an effect to show what spaces where hit.
+    race
+
+    Note: As converted to a spell object, this is now usable by monsters.
+    The rule for what is damaged is basically this:
+    If cast by a player/friendly creature, damages non players/non friendlies.
+    If cast by a monster (non friendly), damages players/friendlies.
+
+SP_PERCEIVE_SELF(17):
+    This is really just a hook to know to call the right routine - at
+    current time, none of the dam/range/duration fields of the spell
+    have any meaning - only think that is used is the grace and skill
+    pointers.
+    perceive self basically presents information to the player about themselves,
+    eg, race, any depletions, etc.  Generally, isn't that useful since most
+    all the same information is available with built in commands.
+
+SP_WORD_OF_RECALL(18)
+    Word of recall teleports the player back 'home' after some amount
+    of time.  Parameters:
+    duration: How many ticks until the player is returned hom.
+    duration_modifier: This _reduces_ the duration above so that the player
+      return home quicker.
+
+
+SP_INVISIBLE(19):
+     Makes the character invisible to monsters.
+     duration (& duration_modifier): How long to be invisible for.
+     race: What to make the player invisible against.  Note this
+        only applies for when players cast invisible - monsters
+        will always be invisible to players, and not care about
+        the race field.  race 'undead' has a bit special meaning,
+        as it will chack against the flag_undead field.  race can
+        be NULL, in which case it will make the player invisible
+        to everything _but_ undead.  Note also that check is done that
+	'race' a subset of the race of the monster (eg, don't use
+        comma separated values).
+        It is not possible to be invisible to both undead and non
+        undead at the same time.
+     make_invisible: if set, this is 'improved' invisible vs temporary
+        invisibility that disappears when attacking.
+
+SP_PROBE (20): This spell looks in some direction (as specified by the player)
+      and returns information about a monster.
+      range (& modifier): How far off in a direction to look.
+
+SP_HEALING(21): This spell heals a character/monster.  Creature must
+     be where the player is.
+     attacktype: Attacktypes to heal:
+       	AT_DISEASE: cure diseases.
+	AT_POISON: remove poisoning.
+	AT_CONFUSION: remove confusion.
+	AT_BLIND: remove blindness
+    stats.food: Food amount to add to character.
+    stats.dam: how much to heal.
+    stats.hp: Number of d6 to roll for healing.
+    last_sp: Regenerate this number of spell points.
+    last_grace: Regenerate this number of grace points.
+	(since the sp and grace fields are used for how much it costs
+	to use the spell, we can't re-use those fields unfortunately)
+    other_arch: seems unused - kept could be used as a spell effect
+ 	indicator.
+    Note that any number of these fields can be combined.
+
+SP_CREATE_FOOD(22): This creates food for the player.  The food is
+    not worth any money, but otherwise normal food.
+    food: Base amount of food to create.
+    duration_modifier: Creates an addition 50 food/increase of this value.
+
+    The formula for how much food value is created is:
+    food_value=spell_ob->stats.food +
+              + 50 * SP_level_duration_adjust(caster,spell_ob);
+
+SP_EARTH_TO_DUST(23): This destroys earthwalls near the player.
+   range (& modifier): Radius to destroy earthwalls in.  Note that
+   this is a 'square' radius.
+
+SP_CHANGE_ABILITY(24): this adjust some ability the player has (str,
+    dex, attacktypes, etc).  This is only for beneficial effects - this
+    is mostly because of the targetting logic (negative effect would
+    still target friendly creature).
+
+    By default, only one benefit spell of each time can be active at a
+    time (eg, you could have a strength and a dex, but not two strength
+    spells).  This is normally tracked by changing the force name to
+    be the same name as the spell, but see the race attribute below.
+
+    If a spell is already in effect, the duration of the existing
+    spell will be increased, but otherwise none of the spell effects
+    will be changed.
+
+    race: If this is set, this is used instead of the spell name when
+    renaming the force.  This is useful if you only want one of a group
+    of spells active at once (this is currently used for bless &
+    holy possession - you're allowed only one.)  name_pl of the force
+    will always contain the other spell name.
+
+    duration (& modifier): How long the spell lasts for.  Note that duration
+    is in ticks.  Note old system used damage for duration, and each
+    point of damage was basically 50 ticks.  Note also that duration_modifier
+    is a bit difference - this increases durations in 50 ticks - this
+    is because most of these spells are long duration, and increasing
+    a 200 duration spell by 15 ticks if the caster is really high
+    level is pretty meaningless.
+
+    resist_*: The protection the spell grants.  Note that the code does
+    no sanity checking on these values, other than to make sure they
+    do not exceed 100.  Before spell objects, there was code to put
+    caps on these values.  There is no practical way to say what the
+    caps should be if so put on - instead, just make sure that
+    that dam_modifier is a sane value.
+
+    dam_modifier: Increases the resistance granted by 1 point.
+
+    ac: Benefit to armor class.  This is copied over unmodified.
+    wc: Benefit to weapon class.  This is copied over unmodified
+    hp: Copied over, but damage adjustment added as a bonus.  hp
+       in the form of a force increases characters hp regen rate.
+
+    Str, Dex, Con, Wis, Int, Pow, Cha: Attempted adjustment to the
+    stat.  These values are number of d3's rolled to adjust.  In
+    addition, these values also determine the max benefit based on the
+    recipient - the table is 15 + 5 * attr_value.  If 1, then the
+    highest the recipients stat after this would be 20.  If 2, highest
+    would be 25, if 3, highest would be 30, etc.
+
+    flying, can_see_in_dark, xrays: Copied over to force -
+	 gives caster this ability.
+
+    attacktype: Added to force object, giving the caster the attacktype.
+
+    exp: Copied over - this acts as bonus speed.  This value is adjusted
+	so really fast players get less a benefit than slower players.
+
+SP_BLESS(25):
+    This blesses the character - the character gets various benefits
+    based on the god he worships.  Note that BLESS spells use the same
+    type of force object as ability change above, include the race
+    to prevent multiple castings.  Note that most of all of the values
+    are copied _from the god_.  The value in the spell_object is only
+    really used to know if the value from the god should be copied.
+
+
+    resist_godpower: The character gets the resistance benefits that his
+    god gives (which can be anything).  resist_godpower is the upper limit
+    of any benefit the character will get.
+
+    last_grace: If set, players get same attunement as their god.
+
+    attacktype: If non zero, the player gets the attacktype of the god.
+    The character also gets the slaying of the god if attacktype is set.
+
+    ac, wc: Copied over from spell_ob to force.
+
+SP_CURSE(26):
+    This is a lot like BLESS.  Notable difference is that this is a bad
+    effect for the recipient.
+
+    ac,wc: Copied over from spell_ob - should be negative, since these
+    should be penalties.
+
+    last_grace: If set, recipient is denied/repelled to spellpath that the
+    god is denied/repelled with.
+
+    race: Same as for SP_BLESS, in that it can be used to limit number
+    of course type effects.
+
+    range: Range of the spell.
+
+SP_SUMMON_MONSTER (27):
+    This covers a large subtype of monster/object summoning.  At its
+    very basic, this spell will create an object that is unchanged
+    from the archetype, and thus can be used to basically create any object.
+
+    other_arch: Object to create.
+
+    randomitems: If set, a treasurelist to use to select the monster from.
+    The randomitems list for these spells is a bit special - the magic
+    entry is what the monsters effective level is.  One can not summon
+    monsters of higher level than they are.  Note that magic values
+    should be unique, as the list will use the highest value available.
+    So if two identical magic values are used, for different objects,
+    only the second entry would actually have monsters created.
+    In addition, the magic values should be in order.
+
+    race: If set to "GODCULTMON", this is a special spell that will
+	create monsters associated with the players god.  We can't use
+	either of the two fields to denote this, because they point to
+	other structures, and what monsters we should create can not be
+	defined easily in the archs, as it will depend on what god the player
+	worships.
+
+    If multiple fields above are set, the order used is other_arch,
+    random_items, race.  Only one of the values will be used - you can't
+    get multiple things created by setting up multiple values.
+
+    attack_movement (move_type): If set, this is set in the monster.  Thus, if
+    the object should be a pet, move_type should be set to PET_MOVE.
+
+    dam (& modifier): Number of creatures to create.  In the case of
+    spells that use randomitems (which can specify their own nrof), this
+    is acted as additional monsters.
+
+    flag_monster: If set, creature will not be friendly.  If cleared,
+    flag_friendly will be set on the monster (using the flag_friendly
+    in the spell_ob itself is problematic in that there is a special
+    list for friendly objects, and we really don't want the spell on that
+    list.
+    The reason not all summoned monsters are friendly is because there are
+    some spells that create monsters specifically meant to be aggressive
+    to the player.
+    If flag_monster is set, the monster/created object is not changed.
+    Only if it is not set, do we set a value (flag_friendly).
+
+SP_RECHARGE (28):
+    This spell is used to recharge a wand.
+
+    dam (& modifier): Number of 'spell levels' to recharge.  Basically,
+    the number of charges increase in the wand by dam / wand spell level.
+    Thus, very low level wands are easier to recharge than high
+    level wands.
+
+SP_POLYMORPH (29):
+    This spell by default is disabled because of various abuses within
+    the spell.
+
+    The spell normally turns one object into another similar type of
+    object (eg, orc to goblin, sword to dagger, etc).
+
+    range (& modifier) How far the polymorph spell extends.
+    other_arch: Visual effect to draw on the map as it moves along.
+
+SP_ALCHEMY (30)
+    This turns nearby objects into gold nuggets.
+
+    duration (& modifier): This is multiplied by 1000 to determine the
+    amount of material that will be converted (think of these values
+    as the amount of kilograms to be converted)
+
+SP_REMOVE_CURSE (31)
+    This removes the cursed/damned status of objects.  It only
+    effects objects equipped by the player.
+
+    cursed: uncurse cursed objects.
+    damned: remove damnation.
+
+SP_IDENTIFY(32)
+    This identifies objects in the players inventory and on the ground.
+    dam (& modifier): The number of objects to identify
+
+SP_DETECTION(33)
+    This detects nearby objects (including ones in the players inventory).
+    Detection in this context typically means revealing properties about
+    the objects.
+
+    range (& modifier): How big a radius to look for objects.  Radius
+    in this context is really a square - the size of the square would
+    be 2*range + 1, with the player being in the center.
+
+    other_arch: The spell effect to draw on the map for spaces that match
+    the object.  Note that for some detection types, the face is replaced
+    by the face of the matching object.
+
+    This following attributes determine what objects to show.  Note that
+    more than one of these can be set (for a 'detect all spell' for example).
+
+    make_invisible: If true, show invisible objects
+    known_magical: If set, detect magical objects.
+    flag_monster: If set, detect monsters
+    known_cursed: If set, detects cursed objects.
+    race: If set, only detects creatures of this race.  if race is
+	'GOD', then it uses the god's slaying race for the match.
+
+SP_MOOD_CHANGE (34):
+    This changes the 'mood' of a monster.  See below for how moods are
+    changed.
+
+    range (& modifier): How for this spell effects, just like SP_DETECT above.
+    race: If set, only monsters of matching race are effected.  Can be set
+       to GOD_SLAYING, in which enemy races of the god are effected.
+       if set to GOD_FRIEND, then races aligned with the god are effected.
+    attacktype: Attacktype the spell hits with.  The spell doesn't do any
+	damage - this instead is used for saving throw information.  Note
+        that the monster uses its best resistance for the saving throw.
+        EG, the more attacktype the spell has, the better the odds.
+
+    berserk (flag): Set the monster to be berserk, which basically means
+	it attacks anything (conflict spell)
+    unaggressive (flag): Sets the monster to be unaggressive. (pacify)
+    undead (flag): By default, undead are immune to mood changes.  however, if
+	this flag is set, undead will be effected (limited by other criteria
+	above, like race (if set) and saving throw)
+    no_attack (flag): Make the creature friendly (charm & charm monster))
+    monster (flag): Wakes the monster up, makes it an enemy of the player
+	(aggravation)
+
+    Note that a spell could set multiple of these fields, but it wouldn't
+    really do much - a monster can really only have one mood.
+
+SP_MOVING_BALL (35): This is really only used as a spell effect.  Values
+    of note:
+
+    path_repelled:  If set, the player must be attuned to these paths
+      to cast the spell.  This can basically be used to control
+      who can cast the spell.
+
+    duration (& modifier): Copied into food of the object - this is
+	    basically how long the spell lasts for.
+    dam & attacktype have expected meaning.
+    other_arch: Object that is used for the manifestation of the spell.
+      Must be set for spell to work.
+
+SP_SWARM (36)
+    swarms are spells that fire other spells.   It fires the same spell,
+    but multiple times (eg, 5 lightning bolts).
+
+    Set during casting:
+    duration: Number of d3 to roll to determine number of sub bolts.
+    duration_modifier: Added to duration as a bonus.
+    other_arch: Name of the other spell it fires.
+
+SP_CHANGE_MANA (37)
+    This gives/takes spellpoints to the target of the spell.  If this spell
+    gives sp, the the cost should be more than the sp it gives.  target must
+    be in the same or adjacent space.
+
+    dam (& modifier): number of sp to transfer.  If dam is negative, then this
+	spell takes away, and dam and modifier represent what percentage of sp
+	to drain (dam_modifier should still be positive).  These sp are then
+	given to the caster of the spell.
+
+    This subtypes corresponds to the old transferrence and drain magic
+    spells.
+
+SP_DISPEL_RUNE (38)
+    This removes runes from the ground.  There are currently no
+    tunables for this spell.
+
+SP_CREATE_MISSILE (39)
+    Creates bolts or arrows.
+
+    dam (& modifier): max plus of arrow that can be created.
+    duration (& modifier): Number of arrows to create.
+
+    Note that making good (highly magical) arrows reduces
+    number of arrows to be made.
+
+SP_CONSECRATE (40)
+    This converts an altar to that of players god.  There are currently
+    no tunables to this spell.
+
+SP_ANIMATE_WEAPON (41)
+    This spell is similar to the GOLEM spells - it basically creates
+    a golem, but uses a donor weapon for the face, basic attributes,
+    etc.  To implement this, it puts the donor weapon in the inventory
+    of the golem, so when the golem dies, the weapon is returned
+    to the ground.  Note that in the conversion, I modified this
+    spell to use the weapon 'marked' by the player, instead of the
+    equipped weapon.
+
+    other_arch: The object used to encapsulate the weapon.
+    race: If set, the donor weapon must match this name.  If this is not
+	set, then the face of the golem will be set to the weapon.
+	The reason for this is that if race is set, then since it
+	is matching a specific weapon, it is presumed that the
+	other_arch field can be appropriate set.
+    range_adjust: Bonus to wc and speed for the spell
+    duration & modifier: Bonus to creatures hp.
+    dam & modifier: Adjust to damage the golem does.
+
+SP_LIGHT (42)
+    Arguably, such a basic spell wouldn't seem to need its own subtype.
+    However, looking at the other spells, it really didn't fit in
+    very well elsewhere - the magic_wall code passes most of its
+    parameters to the object it creates.  Something like summon_monster
+    doesn't work, because it wants a free space to put the object.
+    And while it would be nice to somehow merge create food, create
+    missile, and this, they are sufficiently different that they don't
+    work very well.  So instead, I try to abstract this as much
+    as I can.
+
+    attacktype: If set, and there is a monster on the target
+	space, the monster gets hit with the attacktype and the
+	damage setting.  If this happens, the spell progresses no
+	further.
+    dam: As per note above, how much damage this does.
+
+    other_arch: Object to place on the map.
+    duration: set the the 'food' value in the created object -
+	if is_used_up is set in the arch, this is how long the
+	spell lasts for.
+    range: If the created object has a glow radius, range
+	is used to replace it.  In this way, we don't make non
+	glowing objects glow, but do make ones that do glow
+	glow brighter.
+
+SP_CHANGE_MAP_LIGHT (43)
+    This changes the light level on the map.   There is only one
+    tunable:
+
+    dam: amount to change the lightlevel.  This is passed to
+	change_map_light, as such, negative values are lighter,
+	positive is darker
+
+SP_FAERY_FIRE (44)
+    Faery fire makes creatures within the area of effect glow.
+    This code uses the cast_destruction routine, but just handles
+    what happens when it finds a valid target.
+
+    range (& modifier): Number of spaces in each direction to do damage to.
+    duration & modifier: Potency of the spell - determines how long the
+	creature will glow for (in 10's of ticks)
+    other_arch: This can in practice be anything, but is typically just used
+      as an effect to show what spaces where hit.
+
+    Note: As converted to a spell object, this is now usable by monsters.
+    The rule for what is damaged is basically this:
+    If cast by a player/friendly creature, damages non players/non friendlies.
+    If cast by a monster (non friendly), damages players/friendlies.
+
+SP_DISEASE (45)
+    disease spells infect players with a harmful disease.
+
+    range (& modifier): How far to look in the line for matching
+    targets.
+    other_arch: Disease to infect the target with.
+    duration_modifier:    This is used to adjust the disease stats
+	in several ways:
+	wc += mod/2
+	magic += mod / 4
+	maxhp, maxgrace += mod
+
+    dam_modifier: Modifiers other aspects of the disease:
+	dam, maxsp, ac, last_eat, hp, sp: modified by full mod
+	last_sp: modifier by mod * 2
+
+    The disease code treats these modified values in its own way.
+
+
+SP_AURA (46)/SP_ELEM_SHIELD(50):
+    Auras create fields around the players that effect anyone that steps
+    into them.  Elemental shields work largely the same, but instead of
+    inserting a bunch of objects onto the map, instead the aura itself
+    (from the player arch) causes the damage.
+
+    other_arch: aura type to insert
+    duration: How long the aura lasts for.  For this spell, each
+	duration_modifier is 10 ticks.
+    dam & modifier: How much damage the aura does.
+    attacktype: Attacktype of the aura.
+    resist_*: resistance value to give to the player.  This is copied
+    into a separate FORCE object.
+
+
+SP_TOWN_PORTAL (47):
+    This creates two linked portals which the player can use to get
+    back and forth quickly.
+
+    other_arch: Name of the force object to use to mark the first portal
+	target location (town_portal).
+    race: Name of the object used to mark where the portals go
+	(town_portal_active)
+    slaying: Name of the object used for the actual exit objects
+	(town_portal_magic)
+
+    Note the spell otherwise doesn't have any tunables.
+    It should be noted that if different archetypes were made it,
+    it should be possible to have multiple town portal type spells that
+    lead to different destinations.
+
+
+Old values:
+hp: duration
+exp: range
+maxhp: set to a ->count variable, so spells can be uniquely identified.
+
+SP_PARTY_SPELL (48):
+ document, or clean totally broken spell :)
+
+SP_ITEM_CURSE_BLESS (49):
+    This will curse or bless player's marked item. Curse will not change
+    weight, just set the cursed flag. Bless will make the item god-given.
+
+    cursed: if set, item gets cursed.
+    blessed: if set, item gets blessed.
+
+    Note that if both cursed and blessed are set, cursed only applies.
+    Also, no check is made to not have an item both cursed and blessed.
+
+------------------------------------------------------------------------------
+5. Spell Casting Objects
+
+As described in section 2 above, objects that cast spells (wands, rods,
+scrolls, etc) contain the spell they cast in their inventory.  When the player
+uses the object, the code looks for an object in the inventory, and uses that
+as the type of spell to cast.
+
+Treasure lists are used to determine what spell goes in the object.  Thus,
+what spells show up in the objects is determined purely by the treasure lists,
+and unique lists can be made for potions, scrolls, wands, horns, and even
+different lists for heavy and light rods.
+
+The value of the finished object is the value field in the spell object
+multiplied by the value object in the original object (rod, wand, scroll).
+
+For items that come in different levels, the value is also adjusted based on
+the level of the object based on the difference of level.  The
+code for this is in common/treasure.c
+
+The nrof field for the treasurelists for these objects have special meanings -
+since the spell objects are invisible objects within the spell casting object,
+the nrof field has no actual meaning.  However, we borrow that meaning for use
+in the parent object.
+
+For wands, nrof is used for the number of charges the item has.
+For scrolls, nrof is the number of scrolls to make.  This overrides the
+nrof value for the scroll itself - this allows for fine tuning number
+of scrolls that show up for different spells.
+
+RODS/HORNS:
+----------
+hp is the amount of 'energy' the rod currently has.  when a spell is
+cast, hp is reduced by the amount of sp/grace the spell takes up.
+speed: how often the rod recharges.  There used to be a much more complicated
+way of of regenerating charges.  Instead, each time a rod activates,
+it regenerates 10% of its total power.  Thus, a rod of speed 1.0 would
+fully recharge in 10 ticks, a rod with speed 0.1 would fully recharge in 100
+ticks.
+
+This change in the way rods recharge now mean the speed of a rod can
+be set in a map (or elsewhere), and that change would stick.
+
+Within the archetype itself, the maxhp value determines the number of
+spells the rod can hold before it needs to recharge again.
+
+POTIONS/DUSTS:
+--------------
+potions and dusts (which were really just potions with a is_dust flag set)
+have been redone in several ways.
+
+First, potions had varying meanings for the same archetype.  You could
+have potions that improve stats permanently, ones that cast spells,
+and dust.
+
+
+There is now a SPELL_POTION (116) type. This is used for potions that
+ast spells.  These type of potions really never should have been the
+same type in the first place - other than name, they really had
+none of the same code.
+
+
+FIREWALL (62)
+----------------------------
+These objects are very basic - they cast a spell whenever they activate.
+If they have a spell object in their inventory
+(must be first item), that is the spell that is cast.  Otherwise, they
+cast what other_arch points to.
+
+Firewalls can be activated by buttons, and can also cast spells in specific
+directions.  The direction the firewalls fire in is stored in the 'sp' field
+of the firewall.
+
+Note that FIRECHEST (61) got folded into FIREWALLS, because functionally,
+they were identical - just set 'sp 0' in the firechest, and it fires
+in a random direction.
+
+------------------------------------------------------------------------------
+6. Arch Directory Layout
+
+This section describes the basic layout of the archetypes in the arch
+directory.  This explanation is here to try and prevent confusion (where
+should this arch go), where would I find an arch, etc.
+
+I thought about this a bit - would it be better to organize spells by
+attacktype (eg, all fire spells together, all cold spells, etc), or by type of
+spell (bolt spells, bullet spells, cone spells, etc).
+
+I think both methods have valid reasons for and against them.  I decided to do
+it by spell type because I think it will make it easier to compare spells.
+
+For example, if one bolt spell does 20 damage, and another does 30 damage,
+even if by another attacktype, pretty easy to see that the later is more
+potent.
+
+This also organizes the spells more by their subtype, which is the more
+standard way the arch's have been done in the past.  It makes for designing
+new spells much easier (you'd just copy a starter arch from the same
+directory, and not need to hunt for another one - imagine something like
+acid bolt).
+
+That said, the organization (all relative to the arch top level directory)
+
+magic:  This directory goes away.  There are many things that are magical
+   that are not spells, so having a directory named magic is IMO not the
+   best of name:
+
+spell: top level directory.  This directory is for the spell archetypes,
+  and is not meant to contain non related spell code.  thus, the
+  pentagram (actually a teleporter), and the weapon improver scrolls
+  (not really in any way related to spells) would get relocated.
+
+    Bolt: Contains the bolt spells
+    Bullet: Bullet spells.
+    Common: Contains objects that are related to spells in many areas,
+	eg, the burnout is used by many types of spells, and things like
+	a flaming square or icy square are used for cone, bolt, and
+	exploding ball spells - those would be located here.
+    Cone: Contains cone spells
+    Healing: healing spells
+    Potions: Contain the various potions.
+    SeekingBall: spells like ball lightning
+    Spellbook: spellbook/prayerbook objects.
+    Wand: Contain the wand, staff, rod archetypes.
+
+There are almost certainly sub types I'm missing that I'll have to fill in.
+The idea here is to try to sketch something out that gives me a working
+layout to fill things in.
+
+Within each of the spell subtype directories, the entries for the spell
+information would be needed.  And example below:
+
+spell_lightning_bolt.arc: This is the spell object that goes in the player/
+   monster inventory that says they know the lightning bolt spell.  As
+   per other documentation, this also contains things like the skill needed
+   to use this spell, spell point cost, level cost, etc.
+
+lightning_bolt.arc: this is the other_arch of the spell_lightning_bolt.arc.
+   Few values in this are actually used - most of the values come from
+   the parent arc.  However, this (lightning_bolt.arc) contains the
+   information like what the animation for the spell look like.
+
+lightning_bolt.base.111.png (and so on) are the images used by the
+    lightning_bolt.arc arch.
+
+In the case of subtype directories with lots of entries, it is likely that the
+directories may then get broken up by things like attacktype of the spells.
+
+------------------------------------------------------------------------------
+7. PROGRAMMING NOTES
+
+The number of top level object types is reduced - instead, many are now
+SPELL_EFFECT, with the subtype being the same as the spell that created
+them.
+
+The server/time.c still has a dispatch for the SPELL_EFFECT, but it
+is in server/spell_util.c which determines how each subtype should
+be handled.
+
+I try to keep all the same spell related code together, eg, put the
+code that casts the cone as well as moves the cone in the same file
+next to each other.  This should reduce bugs - if someone changes
+one piece, they are more likely to notice the other piece and also update
+that.  This is better than having the function in a completely different
+file.
+
+spell_util.c really only contains very general code - dispatch routines,
+funcitons to adjust spells, etc.  The actual work is done in either
+spell_attack.c, spell_effect.c, rune.c, or pets.c.
+
+basically all the defines are in include/spells.h.  This is a much simpler
+file than once was here.  Remember, all the data now comes from the
+archetypes.
+
+------------------------------------------------------------------------------
+8. ABILITIES
+
+In the old code, abilities had some special meaning in terms of what
+spells the monster would cast.
+
+In the new system, abilities are no different than spells, and use the
+same type/subtype.
+
+Abilities may still be separate for a few reasons: 1) monsters are not
+likely to have all the needed skills. 2) sp/grace costs may be
+different. 3) Many abilities shouldn't add attacktype magic. 4) Abilities
+generally have a very fast casting time, since monsters move slower.
+
+It should be noted that many creatures just use the spell, and not
+the ability.  Only some spells have ability counterparts.
+
+Note: Before giving spell abilities to monsters, be sure that the monster
+will actually use them - the code in monster.c results in monsters only
+casting spells of certain subtypes.
+
+maxsp: This increased the likelihood of monster choosing the spell.
+(eg, maxsp 3 vs maxsp 1 would mean 3 times as likely).  This should
+instead by done in the treasurelist, so that more of that ability
+is created.
+
+hp/sp: Index for the spell that is used.  One was 'short' range vs
+   long range.
+
+------------------------------------------------------------------------------
+9. SPELL MERGING
+
+In May 2007, I (Mark Wedel) added code added causes spells to merge.  This
+section briefly defines what was done, performance impact, and other random
+thoughts.
+
+Before this merge logic, each spell, no matter how similar, was its own object
+on a space.  This meant that for some spells, there would be hundreds of
+objects on a space.  This doesn't seem that large until one looks closely at
+the code - for each object inserted, all the other objects on the space had to
+be examined, making this on O(n^2) operation.
+
+Even reducing the number of objects on the space makes a significant
+difference - the difference between 20 and 10 objects isn't a factor of 2, it
+is a factor of 4.
+
+The first step in the process was to write a test program
+(test/unit/server/comet_perf.c) to provide consistent test runs - this not
+only let me get performance numbers with a known environment, it also let me
+generate a test case to make sure that the amount of damage comes out the
+same (or close enough - in the revised code, the results were +/- 3%)
+
+In the end, through the various changes, the code ran 70% faster than before.
+
+Breakdown of gains:
+Setting op->range in explosion() after propagating spell:	32%
+Making was_destroyed() a macro:					 9%
+was_destroyed() + op->range changes				48%
+Allowing spells to merge:					21%
+
+As is noted, many of these changes have interactions - the range +
+was_destroyed() makes a bigger change together than separately.  And
+the spell merging requires op->range=0 change, as described below.
+
+Notes on the changes:
+
+op->range=0 in explosion:
+-------------------------
+Each time the explosion object got an action, if op->range>0, it would try
+to propagate to all neighboring squares.  In almost all cases this is a
+futile exercise, because if that neighboring square has an instance of this
+spell, it won't put another one there (one thing that ok_to_put_more()
+checks on).  By setting the range to 0, we prevent this attempt.  It also
+has the side benefit of allowing more spells to merge (we can not merge
+spells with different ranges).  The one visible change this has is that if a
+door/gate is closed but in the explosion area, in the old code, the
+explosion would go through the space if that door is open - in the revised
+code it won't do that, since it has already attempted to do so and was
+unsuccessful.
+
+The op->range check in explosion is actually a very important change -
+important enough that we will only merge spells if the range is zero.
+
+This can be illustrated with a small example.  Use this diagram of spaces:
+
+12
+34
+
+If a spell (A) is cast from the top, it will hit spaces 1&2 at the same time.
+If there is another spell (B) cast from the right, it will hit spaces 2 and 4.
+
+When the spells merge, there is now a single spell object on space 2 that
+includes the tags of spells A & B.  Spell AB@2 will not move to space 1 -
+space 1 already has spell A, so ok_to_put_more() says no.  Now spell B@4 could
+move to 1, but if A@1 moves first, it merges with B@4, so now there is AB@4,
+and like AB@2, it will not move to space 1 (spell is already there).
+
+But enforcing the range==0 check, this works fine - if the spells are still
+propagating to different spaces, we don't merge.  So in the above example,
+spells A & B @ 2 do not merge, but instead remain individual spell object - B
+can move to 1, A can move to 4, and after doing so, the range to each spell is
+set to zero, and they can then merge at that point
+
+Making was_destroyed() a macro:
+-------------------------------
+This is pretty clear cut - by making it a macro, it reduces the function
+call overhead.  This was also a trivial 1 line function, so making it
+a macro was not particularly messy.
+
+Allowing spells to merge:
+-------------------------
+The simplest aspect of this is to have like spells be merged in
+insert_ob_in_map().  However, as noted above, we won't propagate a spell to a
+space if there is already an instance of that spell from the same casting.  So
+to do this, we needed to record the tags of the parent spell that we merge in,
+so the spell_tags array (dynamically allocated) is created.  For speed, a
+simple hash is used to access the data in that array.
+
+When merging spells, we make sure the spells are similar in many respects -
+must be same type of spell, same owner, same level, etc.  We then adjust the
+damage and duration of the merged spell.  We can not merge spells of different
+ranges - one can not really associate what effect that should have on damage
+
+There are some player noticeable effects to this - players will not see as many
+spell objects on a space they are on, as some could have been merged together.
+
+Also, the test case makes it so that damage for objects not moving within the
+spell are the same.  With different duration spells, if a character ducks out
+quickly from the effect, they will take slightly less damage than before the
+changes.  Example: two spells with dam 50 each and duration 10 & 20.  In the
+first case, for the first 10 ticks, you would take 100 damage/tick, and for
+the last 10, you would take 50.  Under the merging, you would take 75 damage
+for all 20 ticks.  In most cases, the differences in duration will not be as
+extreme, so the actual difference in damage will no be so much.
+
+There is a single tunable to this right now - the SPELL_TAG_SIZE in object.h -
+this determines the size of the hash table.  In my testing, a size of 16
+worked out pretty good.  Note that the hashing method is very basic - if we
+get a conflict in the hash table between 2 objects, we just say they can not
+be merged - we do not use backoff methods, etc, which would complicate other
+aspects of the code, notable merging the tables together.  So a too small hash
+table would result in not enough objects getting merged.
+
+In the test case above, following results on my system with the 16 slot table:
+Got 201640 suppressions, 8421 spell merges, 289 full tables
+3.623u 0.060s 0:03.90 94.3%     0+0k 0+0io 0pf+0w
+
+With a 32 slot table:
+3.462u 0.031s 0:03.98 87.6%     0+0k 0+0io 0pf+0w
+Got 201641 suppressions, 8748 spell merges, 249 full tables
+
+Doubling the size of the table makes a minor improvement in full tables as
+well as performance (.16 seconds is about 4%).  And there is definitely a
+trade off - if the tables are very large, it will take longer to merge the
+tables when the objects are merged.
+
+One note with the merge code - while the other changes give some definite
+benefits, merging should show better results with the new objects - my tests
+were done with castings of 30 comets - a reason for this was that with larger
+number of comets, the old code would just never finish (it had run for several
+minutes before I gave).  Running the new code with it casting 100 comets now
+actually still had it finish relatively quickly - under 10 seconds.  The more
+spells around, the more that could be merged to give a benefit - in
+comparison, the op->range=0, while reducing the load quite a bit, still would
+not reduce the number of objects on the different spaces.
+
+Other Thoughts Related on Merging:
+----------------------------------
+After the changes above, this is the top CPU users when run in the test
+program:
+
+ 63.42      1.82     1.82   687168     0.00     0.00  hit_map
+ 17.07      2.31     0.49     1500     0.33     1.86  process_events
+  2.79      2.39     0.08    37118     0.00     0.00  remove_ob
+  2.44      2.46     0.07   784262     0.00     0.00  update_object
+  2.44      2.53     0.07   713910     0.00     0.00  animate_object
+
+ok_to_put_more() could be optimized - store the necessary information (spell
+tags, attacktypes) in the MapCell itself, but it is far enough down the
+performance chart there isn't a big win there.  hit_map() has the same problem
+as other routines - it needs to examine every object on the space.  And in
+most cases, the only things on the space are other spell objects, so it is
+wasting time.  It could be useful to store more useful information in the
+MapCell about what is on the map space so that hit_map() could quickly decide
+that there is nothing interesting and just not do anything.  In particular,
+hit map really only cares about 3 object types right now - living objects,
+transports (which may contain living objects) and items that can be destroyed
+by spells.
+

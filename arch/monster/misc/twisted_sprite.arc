@@ -4,7 +4,7 @@ name twisted sprite
 Con 20
 Pow 80
 hp 5500
-maxhp 4000
+maxhp 6000
 sp 200
 maxsp 200
 exp 200000

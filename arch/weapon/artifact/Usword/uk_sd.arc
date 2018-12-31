@@ -1,29 +1,21 @@
 Object uk_sd
 name Unknown Sword
+anim_suffix double_sword
 nrof 1
 last_sp 6
 type 15
 face uk_sd.111
-anim
-uk_sd.111
-uk_sd.112
-uk_sd.113
-uk_sd.114
-uk_sd.115
-uk_sd.116
-uk_sd.117
-mina
-speed .4
+animation uk_sd
+anim_speed 2
+client_anim_random 1
 material 2
 Str 2
 Dex 2
 dam 40
 weight 111000
 value 1000000
-editable 1024
 attacktype 1
 weapontype 1
-magicmap grey
 name_pl Unknown Swords
 client_type 100
 body_arm -2

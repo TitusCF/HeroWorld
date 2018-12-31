@@ -15,9 +15,7 @@ ac 0
 last_eat 1
 exp 100
 msg
-You feel more hungry than usual.  You also 
-feel an urge to refer to yourself in the 
-plural.
+You feel more hungry than usual.  You also feel an urge to refer to yourself in the plural.
 endmsg
 race *
 level 5

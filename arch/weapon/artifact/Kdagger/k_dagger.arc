@@ -13,8 +13,6 @@ value 60000
 weight 6000
 magic 3
 last_sp 2
-editable 5120
-magicmap grey
 name_pl Kobold Daggers
 client_type 100
 body_arm -1

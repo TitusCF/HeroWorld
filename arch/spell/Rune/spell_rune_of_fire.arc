@@ -1,7 +1,8 @@
 Object spell_rune_of_fire
+anim_suffix spellcasting
 name rune of fire
 name_pl rune of fire
-face spell_pyromancy.111
+face spell_rune_of_fire.111
 type 101
 subtype 2
 no_drop 1
@@ -14,7 +15,6 @@ skill pyromancy
 path_attuned 2
 other_arch rune_fire
 msg
-This creates a rune that detonates in fire
-when a creature triggers it.
+Creates a rune trap that delivers fire damage when it is triggered.
 endmsg
 end

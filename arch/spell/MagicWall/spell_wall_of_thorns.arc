@@ -1,8 +1,9 @@
 Object spell_wall_of_thorns
+anim_suffix spellcasting
 name wall of thorns
 name_pl wall of thorns
-face spell_praying.111
-level 6
+face spell_wall_of_thorns.111
+level 12
 grace 20
 casting_time 5
 path_attuned 2048
@@ -21,5 +22,8 @@ maxgrace 50
 attacktype 1
 range 2
 range_modifier 14
-no_pass 1
+move_block all
+msg
+Creates a wall of thorns on the ground that slows and damages creatures that attempt to cross through it.  Both Gaea and Mostrai grant this spell.
+endmsg
 end

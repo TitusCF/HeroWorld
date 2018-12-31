@@ -10,11 +10,9 @@ resist_physical 3
 weight 1000
 value 120000
 material 8
-editable 5120
 nrof 1
 resist_acid 70
 magic -4
 damned 1
-magicmap grey
 body_shoulder -1
 end

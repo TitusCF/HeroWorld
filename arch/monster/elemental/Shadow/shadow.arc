@@ -3,11 +3,9 @@ name shadow
 face shadow.111
 race shadow
 randomitems shadow
-anim
-shadow.111
-shadow.112
-mina
+animation shadow
 monster 1
+move_type walk
 sleep 1
 Wis 20
 alive 1
@@ -16,7 +14,7 @@ maxhp 900
 Con 20
 speed -0.4
 exp 30000
-ac -20
+ac -10
 dam 13
 wc -15
 level 30
@@ -39,8 +37,6 @@ can_use_skill 1
 sp 20
 maxsp 30
 Pow 5
-editable 1
 run_away 5
 attack_movement 3
-color_fg black
 end

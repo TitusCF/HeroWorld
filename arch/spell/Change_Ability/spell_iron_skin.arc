@@ -1,7 +1,8 @@
 Object spell_iron_skin
+anim_suffix spellcasting
 name iron skin
 name_pl iron skin
-face spell_praying.111
+face spell_iron_skin.111
 level 1
 grace 8
 casting_time 10
@@ -17,12 +18,8 @@ duration 500
 dam_modifier 5
 resist_physical 20
 ac 2
-maxgrace 8
+maxgrace 24
 msg
-Iron skin toughens the skin of the recipient,
-making them harder to hit and reducing the
-amount of damage they take from physical
-attacks.  It does not provide any additional
-protection to non-physical attacks.
+Iron skin toughens the skin of the recipient, making them harder to hit and reducing the amount of damage they take from physical attacks.  It does not provide any additional protection to non-physical attacks.  Gaea grants this prayer.
 endmsg
 end

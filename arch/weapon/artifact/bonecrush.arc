@@ -10,10 +10,8 @@ value 70000
 magic 3
 dam 50
 material 64
-editable 5120
 attacktype 1
 weapontype 7
-magicmap brown
 name_pl Bonecrushers
 client_type 100
 body_arm -2

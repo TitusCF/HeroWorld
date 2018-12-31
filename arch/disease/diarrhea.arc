@@ -15,8 +15,7 @@ maxsp 0
 last_eat 0
 exp 100
 msg
-You can't control your sphincter.  You have 
-a messy accident.  Yuck!
+You can't control your sphincter.  You have a messy accident.  Yuck!
 endmsg
 race *
 level 5
@@ -25,6 +24,10 @@ Object disgusting_puddle
 name stinking puddle of diarrhea
 type 72
 face icor.111
+animation disgusting_puddle
+is_used_up 1
+speed 0.005
 food 1
 weight 20
+nrof 1
 end

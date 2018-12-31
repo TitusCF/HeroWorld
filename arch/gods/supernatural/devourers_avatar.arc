@@ -4,6 +4,7 @@ race undead
 animation grimreaper
 is_animated 1
 monster 1
+move_type walk
 alive 1
 Str 30
 Con 30
@@ -22,14 +23,14 @@ resist_drain 100
 resist_fire -50
 resist_cold 50
 resist_physical 20
-ac -12
-wc -1
+ac 1
+wc 10
 hp 350
 maxhp 350
-dam 50
+dam 40
 last_eat -3
 last_heal -1
-level 15
+level 19
 speed 0.35
 can_cast_spell 1
 can_use_weapon 1
@@ -39,5 +40,4 @@ undead 1
 can_see_in_dark 1
 exp 1
 weight 1
-editable 0
 end

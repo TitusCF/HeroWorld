@@ -3,15 +3,10 @@ name pedestal
 slaying player
 type 32
 face pedestal.112
-anim
-pedestal.112
-pedestal.111
-mina
+animation pedestal_trigger
 is_animated 0
 exp 30
 no_pick 1
-walk_on 1
-walk_off 1
-editable 48
-visibility 50
+move_on walk
+move_off walk
 end

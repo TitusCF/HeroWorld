@@ -1,7 +1,8 @@
 Object spell_dimension_door
+anim_suffix spellcasting
 name dimension door
 name_pl dimension door
-face spell_sorcery.111
+face spell_dimension_door.111
 level 10
 value 100
 sp 25
@@ -16,17 +17,10 @@ subtype 13
 no_drop 1
 invisible 1
 msg
-Dimension door allows for a short range
-teleportation: the character is transported
-in the direction the spell is cast.  Zones 
-where magic is blocked cannot be passed
-through, and the character will not end up in
-the space space as a monster.
+A short-range teleportation spell that transports the character in the direction the spell is cast.
 
-If the player specifies a count, the spell
-will attempt to transport the character that
-specific number of spaces.  Otherwise, the
-spell will attempt to transport the character
-the maximum number of spaces.
+Zones where magic is blocked defeat this spell, but it is possible to pass through areas that seem impassable to other movement types.  The spell also fails if it would cause the caster to land in the same space as a monster.
+
+Normally the spell will transport the character the maximum possible distance, but if the player specifies a count, the spell tries to transport the character the specified number of spaces.
 endmsg
 end

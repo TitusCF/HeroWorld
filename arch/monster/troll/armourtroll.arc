@@ -3,12 +3,9 @@ randomitems troll
 race troll
 name small armoured troll
 face armourtroll2.111
-anim
-armourtroll2.111
-armourtroll2.112
-mina
-color_fg brown
+animation armour_troll2
 monster 1
+move_type walk
 sleep 1
 Wis 10
 Int 5
@@ -18,24 +15,22 @@ no_pick 1
 alive 1
 resist_fire -100
 can_see_in_dark 1
-exp 550
-ac -10
-wc 4
+exp 1500
+ac 3
+wc 7
 dam 12
-hp 180
+hp 150
 Con 5
-maxhp 180
-level 7
+maxhp 150
+level 8
 speed 0.12
 weight 100000
 run_away 5
-will_apply 2
+will_apply 12
 pick_up 8
-can_apply 8
 can_use_ring 1
 can_use_weapon 1
 can_use_skill 1
-editable 1
 body_finger 2
 body_skill 1
 body_arm 2
@@ -46,8 +41,8 @@ randomitems troll
 race troll
 name small armoured troll
 face armourtroll3.111
-color_fg brown
 monster 1
+move_type walk
 sleep 1
 Wis 10
 Int 5
@@ -57,24 +52,22 @@ no_pick 1
 alive 1
 resist_fire -100
 can_see_in_dark 1
-exp 550
-ac -15
-wc 4
+exp 1500
+ac 3
+wc 7
 dam 14
-hp 180
+hp 150
 Con 5
-maxhp 180
-level 7
+maxhp 150
+level 8
 speed 0.12
 weight 100000
 run_away 5
-will_apply 2
+will_apply 12
 pick_up 8
-can_apply 8
 can_use_ring 1
 can_use_weapon 1
 can_use_skill 1
-editable 1
 body_finger 2
 body_skill 1
 body_arm 2
@@ -85,8 +78,8 @@ randomitems troll
 race troll
 name small armoured troll
 face armourtroll4.111
-color_fg brown
 monster 1
+move_type walk
 sleep 1
 Wis 10
 Int 5
@@ -96,26 +89,23 @@ no_pick 1
 alive 1
 resist_fire -100
 can_see_in_dark 1
-exp 550
-ac -15
-wc 4
+exp 2000
+ac 3
+wc 7
 dam 16
-hp 180
+hp 150
 Con 5
-maxhp 180
-level 7
+maxhp 150
+level 8
 speed 0.12
 weight 100000
 run_away 5
-will_apply 2
+will_apply 12
 pick_up 8
-can_apply 8
 can_use_ring 1
 can_use_weapon 1
 can_use_skill 1
-editable 1
 body_finger 2
 body_skill 1
 body_arm 2
 end
-

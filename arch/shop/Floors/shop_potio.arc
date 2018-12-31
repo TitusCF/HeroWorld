@@ -7,7 +7,5 @@ no_magic 1
 type 68
 auto_apply 1
 randomitems shop_potions
-editable 64
-magicmap grey
 damned 1
 end

@@ -8,9 +8,7 @@ weight 10
 container 80000
 Str 10
 value 50
-editable 128
 identified 1
-magicmap khaki
 name_pl bags
 client_type 51
 end
@@ -21,6 +19,4 @@ type 121
 no_pick 1
 no_drop 1
 identified 1
-editable 0
-magicmap khaki
 end

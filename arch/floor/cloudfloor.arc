@@ -2,7 +2,10 @@ Object cloudfloor
 name cloud
 face fog.111
 no_pick 1
-is_floor 1
-editable 8
-magicmap grey
+smoothlevel 1
+end
+Object thickcloudfloor
+name thick cloud
+face fog_2.111
+no_pick 1
 end

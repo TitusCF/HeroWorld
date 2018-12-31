@@ -1,10 +1,12 @@
 Object abil_slow
+anim_suffix spellcasting
 name slow ability
 name_pl slow ability
+face spell_slow.111
 level 1
 sp 5
 casting_time 10
-path_attuned 0
+path_attuned 1024
 other_arch slow
 dam 5
 dam_modifier 0
@@ -18,4 +20,5 @@ value 10
 attacktype 2048
 no_drop 1
 invisible 1
+skill sorcery                                                                
 end

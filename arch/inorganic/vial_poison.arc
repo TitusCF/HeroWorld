@@ -11,10 +11,8 @@ name_pl vials
 title poison
 client_type 649
 slaying taint
-food 2
+food 5
 msg
-A poison of some sort.
-Maybe it could be used
-to taint someone's food.
+A poison of some sort. Maybe it could be used to taint someone's food.
 endmsg
 end

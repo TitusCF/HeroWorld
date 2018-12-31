@@ -8,9 +8,7 @@ dam 5
 weapontype 8
 weight 9000
 value 20
-editable 1024
 attacktype 1
-magicmap khaki
 name_pl quarterstaffs
 client_type 121
 body_arm -2

@@ -8,8 +8,6 @@ level 1
 material 4
 weight 1500
 value 400
-editable 2048
-magicmap green
 name_pl figurines
 client_type 653
 skill use magic item

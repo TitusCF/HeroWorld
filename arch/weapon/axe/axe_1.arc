@@ -7,10 +7,8 @@ material 18
 dam 7
 weight 9000
 value 20
-editable 1024
 attacktype 1
 weapontype 3
-magicmap brown
 name_pl axes
 client_type 106
 body_arm -1

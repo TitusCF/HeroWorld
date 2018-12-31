@@ -1,8 +1,9 @@
 Object spell_vitriol
+anim_suffix spellcasting
 name vitriol
 name_pl vitriol
-face spell_praying.111
-level 5
+face spell_vitriol.111
+level 10
 grace 15
 casting_time 10
 path_attuned 512
@@ -21,4 +22,7 @@ no_drop 1
 invisible 1
 range 10
 food 20
+msg
+Fires a ball of acid that explodes on contact and does acid damage to creatures that are hit.  The spell is granted by Gorokh.
+endmsg
 end

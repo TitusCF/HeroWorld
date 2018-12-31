@@ -2,17 +2,7 @@ Object ent
 randomitems giant
 race faerie
 face ent.x11
-color_fg brown
-anim
-ent.x11
-ent.x11
-ent.x11
-ent.x12
-ent.x12
-ent.x13
-ent.x13
-ent.x12
-mina
+animation ent
 msg
 @match *
 Hey! Careful of my roots, stranger.
@@ -33,30 +23,21 @@ alive 1
 speed -0.3
 weight 3000000
 monster 1
+move_type walk
 sleep 1
 Wis 15
 level 12
 run_away 3
 can_use_weapon 1
-editable 1
 body_arm 2
 end
 More
 Object ent_2
 name ent
 face ent.x11
-color_fg brown
-anim
-ent.x11
-ent.x11
-ent.x11
-ent.x12
-ent.x12
-ent.x13
-ent.x13
-ent.x12
-mina
+animation ent
 monster 1
+move_type walk
 alive 1
 x 1
 weight 3000000
@@ -65,18 +46,9 @@ More
 Object ent_3
 name ent
 face ent.x11
-color_fg brown
-anim
-ent.x11
-ent.x11
-ent.x11
-ent.x12
-ent.x12
-ent.x13
-ent.x13
-ent.x12
-mina
+animation ent
 monster 1
+move_type walk
 alive 1
 y 1
 weight 3000000
@@ -85,18 +57,9 @@ More
 Object ent_4
 name ent
 face ent.x11
-color_fg brown
-anim
-ent.x11
-ent.x11
-ent.x11
-ent.x12
-ent.x12
-ent.x13
-ent.x13
-ent.x12
-mina
+animation ent
 monster 1
+move_type walk
 alive 1
 x 1
 y 1

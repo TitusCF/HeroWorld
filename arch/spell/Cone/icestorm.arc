@@ -3,19 +3,12 @@ name icestorm
 type 102
 subtype 7
 level 1
-walk_on 1
-fly_on 1
+move_on walk fly_low
 face icestorm.111
-color_fg light_blue
-color_bg white
-anim
-icestorm.111
-icestorm.112
-icestorm.113
-mina
+animation icestorm
 speed 1
 wc -30
-flying 1
+move_type fly_low
 no_pick 1
-editable 0
+weight 500
 end

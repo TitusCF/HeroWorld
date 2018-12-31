@@ -2,18 +2,11 @@ Object turn_undead
 name fear
 type 102
 subtype 7
-walk_on 1
-fly_on 1
+move_on walk fly_low
 face turnundead.111
-anim
-turnundead.111
-turnundead.112
-turnundead.113
-mina
+animation turn_undead
 speed 1
 wc -30
-flying 1
+move_type fly_low
 no_pick 1
-editable 0
-color_fg black
 end

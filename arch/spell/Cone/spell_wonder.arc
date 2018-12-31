@@ -1,7 +1,8 @@
 Object spell_wonder
+anim_suffix spellcasting
 name wonder
 name_pl wonder
-face spell_sorcery.111
+face spell_wonder.111
 level 3
 sp 10
 casting_time 0
@@ -21,4 +22,7 @@ no_drop 1
 invisible 1
 skill sorcery
 randomitems wonder_spells
+msg
+Casts a randomly selected spell, or, about 1/3 of the time, creates harmless flowers.  Low-level spells appear more frequently than high-level ones.
+endmsg
 end

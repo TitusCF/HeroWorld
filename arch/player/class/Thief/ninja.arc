@@ -1,18 +1,9 @@
 Object ninja_class
 name ninja
+anim_suffix class_ninja
 randomitems ninja_class_items
 face ninja.151
-anim
-ninja.111
-ninja.112
-ninja.131
-ninja.132
-ninja.151
-ninja.152
-ninja.171
-ninja.172
-facings 4
-mina
+animation ninja_class
 is_animated 1
 anim_speed -1
 type 37
@@ -23,4 +14,8 @@ Int 0
 Wis -2
 Pow -2
 Cha -1
+msg
+As a member of the secret society of the Ninja, you've been taught archery, the use of weapons, and also the art of combat without weapons.  Your style of combat, leans very much toward the sneak attack, so you've been taught how to be inconspicuous and to appear in places you're not expected.
+You have had no introduction to either religious devotion or magic.
+endmsg
 end

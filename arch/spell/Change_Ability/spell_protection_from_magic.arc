@@ -1,7 +1,8 @@
 Object spell_protection_from_magic
+anim_suffix spellcasting
 name protection from magic
 name_pl protection from magic
-face spell_praying.111
+face spell_protection_from_magic.111
 level 10
 grace 30
 casting_time 12
@@ -18,10 +19,6 @@ maxgrace 40
 resist_magic 30
 dam_modifier 3
 msg
-Protection from magic reduces damage from
-magical attacks or spells.  There are a few
-spells that do not hit with a magical attack;
-this spell does nothing to reduce those
-effects.
+Protection from magic reduces damage from magical attacks or spells.  There are a few spells that do not hit with a magical attack, so it does not offer protection from them.
 endmsg
 end

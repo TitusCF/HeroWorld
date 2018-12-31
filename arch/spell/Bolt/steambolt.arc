@@ -1,18 +1,12 @@
 Object steambolt
-type 101
-other_arch temp_fog
+type 102
+subtype 4
+other_arch temp_fog_moving
 face steam.111
-anim
-steam.111
-steam.112
-steam.111
-steam.112
-mina
-color_fg red
-color_bg khaki
-flying 1
+animation steambolt
+move_type fly_low
 generator 1
 speed 1
 no_pick 1
-editable 0
+weight 500
 end

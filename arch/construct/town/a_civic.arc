@@ -3,8 +3,7 @@ name civic building
 face a_civic.x11
 type 66
 no_pick 1
-no_pass 1
-editable 2
+move_block all
 client_type 25012
 end
 More
@@ -13,7 +12,7 @@ name civic building
 face a_civic.x11
 type 66
 no_pick 1
-no_pass 1
+move_block all
 x 1
 end
 More
@@ -22,7 +21,6 @@ name civic building
 face a_civic.x11
 type 66
 no_pick 1
-visibility 100
 x 2
 end
 More
@@ -31,7 +29,6 @@ name civic building
 face a_civic.x11
 type 66
 no_pick 1
-visibility 100
 y 1
 end
 More
@@ -40,7 +37,6 @@ name civic building
 face a_civic.x11
 type 66
 no_pick 1
-visibility 100
 x 1
 y 1
 end
@@ -50,7 +46,6 @@ name civic building
 face a_civic.x11
 type 66
 no_pick 1
-visibility 100
 x 2
 y 1
 end
@@ -60,7 +55,6 @@ name civic building
 face a_civic.x11
 type 66
 no_pick 1
-visibility 100
 y 2
 end
 More
@@ -69,7 +63,6 @@ name civic building
 face a_civic.x11
 type 66
 no_pick 1
-visibility 100
 x 1
 y 2
 end
@@ -79,7 +72,6 @@ name civic building
 face a_civic.x11
 type 66
 no_pick 1
-visibility 100
 x 2
 y 2
 end

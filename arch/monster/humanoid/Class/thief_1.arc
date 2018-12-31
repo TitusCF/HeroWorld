@@ -2,26 +2,22 @@ Object thief_1
 race human
 randomitems thief_1
 face thief.151
-anim
-facings 4
-thief.111
-thief.131
-thief.151
-thief.171
-mina
+animation thief_1
 monster 1
+move_type walk
 alive 1
 Str 10
 Dex 25
 Int 13
-ac 0
-wc 10
+dam 4
+ac 5
+wc 14
 hp 25
 maxhp 25
-exp 50
+exp 35
 speed 0.28
 weight 52000
-level 1
+level 3
 will_apply 8
 pick_up 26
 can_use_ring 1
@@ -29,7 +25,6 @@ can_use_skill 1
 can_use_shield 1
 can_use_armour 1
 can_use_weapon 1
-editable 1
 body_finger 2
 body_skill 1
 body_torso 1

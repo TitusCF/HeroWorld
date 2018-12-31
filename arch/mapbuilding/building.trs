@@ -32,6 +32,9 @@ treasureone building_material
   list building_objects
    chance 5
   more
+  arch building_window
+   chance 2
+  more
   arch building_vertical_gate_inv
     chance 1
   more
@@ -93,23 +96,7 @@ treasureone shop_building_east
   list building_material_stonewall_east
     chance 20  
 end
-treasureone shop_building_abyss
-  arch building_builder
-    chance 2
-  more
-  arch building_destroyer
-    chance 2
-  more
-  list building_material
-    chance 63
-  more
-  list building_objects_abyssonly
-    chance 15
-  more
-  list building_material_stonewall_abyss
-    chance 20  
-end
-treasureone shop_building_goth
+treasureone shop_building_pupland
   arch building_builder
     chance 2
   more
@@ -119,24 +106,37 @@ treasureone shop_building_goth
   list building_material
     chance 78
   more
-  list building_material_stonewall_goth
+  list building_material_stonewall_pupland
     chance 20  
 end
-##For areas like scorn area, sells DWall
+##For areas like scorn area, sells DWall and fences
 treasureone building_material_stonewall_norm
   arch building_wall2
+    chance 80
+  more
+  arch building_swall
+    chance 20
 end
 ##For brest area, sells Red Cwall rather then DWall
+# Added dark wood floor here too rather than create a whole new list for
+# dark floors in Brest (Gene Alexander)
 treasureone building_material_stonewall_fant
   arch building_wall4
-end
-##For navar area, sells West Cwall and BBWall (yellow earthen) rather then DWall
-treasureone building_material_stonewall_west
-  arch building_wall3
     chance 50
   more
-  arch building_wall9
-    chance 50
+  arch building_woodfloor2
+    chance 40
+  more
+  arch building_swall
+    chance 10
+end
+##For navar area, sells West Cwall rather then DWall
+treasureone building_material_stonewall_west
+  arch building_wall3
+    chance 80
+  more
+  arch building_swall
+    chance 20
 end
 ##For areas like azumauindo area, sells DWall and EastWall (japanese paper wall)
 treasureone building_material_stonewall_east
@@ -146,19 +146,14 @@ treasureone building_material_stonewall_east
   arch building_wall5
     chance 50
 end
-##For mlabhell sells West West Cwall and BurningWall
-treasureone building_material_stonewall_abyss
-  arch building_wall3
+## Dark wood floor is more likely in pupland (Gene Alexander)
+treasureone building_material_stonewall_pupland
+  arch building_wall2
+    chance 40
+  more
+  arch building_woodfloor2
     chance 50
   more
-  arch building_wall6
-    chance 50
-end
-##For Gotischerbereich, sells STWall and WWall rather then DWall
-treasureone building_material_stonewall_goth
-  arch building_wall7
-    chance 50
-  more
-  arch building_wall8
-    chance 50
+  arch building_swall
+    chance 10
 end

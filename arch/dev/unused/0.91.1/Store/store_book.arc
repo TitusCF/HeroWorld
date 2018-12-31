@@ -3,8 +3,7 @@ name Book shop
 face store_book.111
 type 66
 no_pick 1
-no_pass 1
-editable 64
+move_block all
 end
 More
 Object store_book_2
@@ -13,7 +12,7 @@ face store_book.211
 type 66
 x 1
 no_pick 1
-no_pass 1
+move_block all
 end
 More
 Object store_book_3

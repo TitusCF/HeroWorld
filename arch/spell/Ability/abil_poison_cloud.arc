@@ -1,6 +1,8 @@
 Object abil_poison_cloud
+anim_suffix spellcasting
 name poison cloud ability
 name_pl poison cloud ability
+face spell_poison_cloud.111
 level 2
 sp 5
 casting_time 10
@@ -17,5 +19,6 @@ value 20
 attacktype 1024
 no_drop 1
 invisible 1
+skill sorcery                                                                
 food 5
 end

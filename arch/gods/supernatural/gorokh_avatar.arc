@@ -11,6 +11,7 @@ Int 30
 Wis 30
 Pow 30
 monster 1
+move_type walk
 alive 1
 attacktype 16385
 path_attuned 393216
@@ -18,12 +19,12 @@ path_denied 1025
 resist_physical 50
 resist_fear 100
 resist_magic 20
-ac -5
-wc -3
+ac 5
+wc 3
 dam 40
 hp 350
 maxhp 350
-level 15
+level 19
 speed 0.25
 can_cast_spell 1
 can_use_armour 1
@@ -31,5 +32,4 @@ can_use_weapon 1
 can_use_shield 1
 exp 1
 weight 400000
-editable 0
 end

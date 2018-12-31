@@ -1,172 +1,141 @@
 Object darkhold
 name darkhold
 type 66
-face darkhold.111
+face darkhold.x11
 no_pick 1
-no_pass 1
-editable 2
-visibility 100
-magicmap grey
+move_block all
 client_type 25012
 end
 More
 Object darkhold_2
 name darkhold
 type 66
-face darkhold.211
+face darkhold.x11
 x 1
 no_pick 1
-no_pass 1
-visibility 100
-magicmap grey
+move_block all
 end
 More
 Object darkhold_3
 name darkhold
 type 66
-face darkhold.311
+face darkhold.x11
 x 2
 no_pick 1
-no_pass 1
-visibility 100
-magicmap grey
+move_block all
 end
 More
 Object darkhold_4
 name darkhold
 type 66
-face darkhold.411
+face darkhold.x11
 y 1
 no_pick 1
-no_pass 1
-visibility 100
-magicmap grey
+move_block all
 end
 More
 Object darkhold_5
 name darkhold
 type 66
-face darkhold.511
+face darkhold.x11
 x 1
 y 1
 no_pick 1
-no_pass 1
-visibility 100
-magicmap grey
+move_block all
 end
 More
 Object darkhold_6
 name darkhold
 type 66
-face darkhold.611
+face darkhold.x11
 x 2
 y 1
 no_pick 1
-no_pass 1
-visibility 100
-magicmap grey
+move_block all
 end
 More
 Object darkhold_7
 name darkhold
 type 66
-face darkhold.711
+face darkhold.x11
 y 2
 no_pick 1
-no_pass 1
-visibility 100
-magicmap grey
+move_block all
 end
 More
 Object darkhold_8
 name darkhold
 type 66
-face darkhold.811
+face darkhold.x11
 x 1
 y 2
 no_pick 1
-no_pass 1
-visibility 100
-magicmap grey
+move_block all
 end
 More
 Object darkhold_9
 name darkhold
 type 66
-face darkhold.911
+face darkhold.x11
 x 2
 y 2
 no_pick 1
-no_pass 1
-visibility 100
-magicmap grey
+move_block all
 end
 More
 Object darkhold_10
 name darkhold
 type 66
-face darkhold.A11
+face darkhold.x11
 y 3
 no_pick 1
-no_pass 1
-visibility 100
-magicmap grey
+move_block all
 end
 More
 Object darkhold_11
 name darkhold
 type 66
-face darkhold.B11
+face darkhold.x11
 x 1
 y 3
 no_pick 1
-no_pass 1
-visibility 100
-magicmap grey
+move_block all
 end
 More
 Object darkhold_12
 name darkhold
 type 66
-face darkhold.C11
+face darkhold.x11
 x 2
 y 3
 no_pick 1
-no_pass 1
-visibility 100
-magicmap grey
+move_block all
 end
 More
 Object darkhold_13
 name darkhold
 type 66
-face darkhold.D11
+face darkhold.x11
 y 4
 no_pick 1
-no_pass 1
-visibility 100
-magicmap grey
+move_block all
 end
 More
 Object darkhold_14
 name darkhold
 type 66
-face darkhold.E11
+face darkhold.x11
 x 1
 y 4
 no_pick 1
-visibility 100
-magicmap grey
 end
 More
 Object darkhold_15
 name darkhold
 type 66
-face darkhold.F11
+face darkhold.x11
 x 2
 y 4
 no_pick 1
-no_pass 1
-visibility 100
-magicmap grey
+move_block all
 end

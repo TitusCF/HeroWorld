@@ -2,7 +2,7 @@ Object spell_word_of_penalty
 name word of penalty
 name_pl word of penalty
 face spell_praying.111
-level 20
+level 111
 grace 40
 casting_time 15
 path_attuned 4096

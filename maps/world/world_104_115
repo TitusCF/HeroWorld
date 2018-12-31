@@ -11,7 +11,7 @@ msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Dec 16 20:41:49 2001
-Modified: 2018-12-28 Acer
+Modified: 2018-12-31 Acer
 endmsg
 outdoor 1
 tile_path_1 /world/world_104_114
@@ -8383,6 +8383,10 @@ x 32
 y 41
 is_floor 1
 end
+arch river_bridge_we
+x 32
+y 41
+end
 arch grass
 x 32
 y 42
@@ -9386,12 +9390,6 @@ arch cobblestones2
 x 36
 y 33
 end
-arch bridge_we
-x 36
-y 33
-is_floor 1
-color_bg dark_orange
-end
 arch grass
 x 36
 y 34
@@ -9420,21 +9418,17 @@ arch cobblestones2
 x 36
 y 37
 end
-arch bridge_we
+arch river_bridge_we
 x 36
 y 37
-is_floor 1
-color_bg dark_orange
 end
 arch cobblestones2
 x 36
 y 38
 end
-arch bridge_we
+arch river_bridge_we
 x 36
 y 38
-is_floor 1
-color_bg dark_orange
 end
 arch grass
 x 36
@@ -9464,11 +9458,9 @@ arch cobblestones2
 x 36
 y 41
 end
-arch bridge_we
+arch river_bridge_we
 x 36
 y 41
-is_floor 1
-color_bg dark_orange
 end
 arch grass
 x 36
@@ -10062,7 +10054,7 @@ arch brush
 x 38
 y 46
 end
-arch bridge_we
+arch river_junct_ns-sw
 x 38
 y 46
 end
@@ -10070,7 +10062,7 @@ arch brush
 x 38
 y 47
 end
-arch rjunct_ns-w
+arch river_junct_ns-w
 x 38
 y 47
 end
@@ -11210,7 +11202,7 @@ arch grass
 x 43
 y 34
 end
-arch barrack_small_goth
+arch house_small
 name Permanent Apartments
 slaying /scorn/apartment/apartments
 x 43

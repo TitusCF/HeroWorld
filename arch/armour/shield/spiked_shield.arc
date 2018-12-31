@@ -1,4 +1,4 @@
-Object spiked_shield 
+Object spiked_shield
 nrof 1
 name spiked shield
 name_pl spiked shields
@@ -11,7 +11,5 @@ resist_physical 3
 weight 2000
 value 21
 material 18
-editable 1024
-magicmap orange
 body_arm -1
 end

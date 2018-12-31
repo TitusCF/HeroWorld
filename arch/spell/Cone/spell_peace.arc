@@ -1,8 +1,9 @@
 Object spell_peace
+anim_suffix spellcasting
 name peace
 name_pl peace
-face spell_praying.111
-level 20
+face spell_peace.111
+level 40
 grace 80
 casting_time 10
 path_attuned 1
@@ -20,4 +21,7 @@ attacktype 0
 no_drop 1
 invisible 1
 skill praying
+msg
+Fires a cone of peacemakers that convert aggressive monsters into unaggressive creatures that run away from battle and assume random movement.  They are no longer considered to be monsters, so things like mood floors cannot make them aggressive again.  This spell is granted by Gaea.
+endmsg
 end

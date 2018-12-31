@@ -5,6 +5,7 @@ slaying undead,unnatural
 animation panther
 is_animated 1
 monster 1
+move_type walk
 alive 1
 Str 30
 Con 30
@@ -20,15 +21,15 @@ resist_drain 100
 resist_deplete 100
 resist_death 100
 resist_fear -100
-armour 50
-ac -5
-wc -1
+resist_physical 50
+ac 5
+wc 5
 dam 40
 hp 500
 last_heal 2
 last_grace 3
 maxhp 500
-level 15
+level 19
 speed 0.18
 can_cast_spell 1
 can_use_armour 1

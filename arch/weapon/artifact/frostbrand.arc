@@ -1,5 +1,6 @@
 Object frostbrand
 name Frostbrand
+anim_suffix double_sword
 nrof 1
 last_sp 8
 type 15
@@ -12,8 +13,6 @@ magic 3
 resist_fire 30
 attacktype 16
 weapontype 1
-editable 5120
-magicmap white
 name_pl Frostbrands
 client_type 100
 body_arm -2

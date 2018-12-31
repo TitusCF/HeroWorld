@@ -7,7 +7,6 @@ skill literacy
 material 1
 value 20
 weight 5000
-editable 2048
 nrof 1
 client_type 1002
 randomitems prayer_book
@@ -22,7 +21,6 @@ skill literacy
 material 1
 value 20
 weight 5000
-editable 2048
 nrof 1
 client_type 1002
 randomitems praying_l1

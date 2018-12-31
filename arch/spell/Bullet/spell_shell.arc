@@ -2,6 +2,7 @@
 # as such, most of the values aren't that meaningful compared
 # to spells players casts.
 Object spell_shell
+anim_suffix spellcasting
 name cannon shell
 name_pl cannon shell
 level 1
@@ -11,6 +12,7 @@ path_attuned 2
 other_arch shell
 dam 7
 dam_modifier 0
+skill pyromancy                                                              
 range 8
 duration 4
 maxsp 0

@@ -12,6 +12,7 @@ Int 30
 Wis 30
 Pow 30
 monster 1
+move_type walk
 alive 1
 attacktype 8
 resist_electricity 100
@@ -35,5 +36,4 @@ endmsg
 exp 1
 weight 1
 randomitems Sorig
-editable 0
 end

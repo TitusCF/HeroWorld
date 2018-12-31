@@ -1,9 +1,8 @@
 Object generate_pixie
 race faerie
 other_arch pixie
-name generator
+name pixie generator
 face pixie_gen.111
-color_fg dark_orange
 generator 1
 hp 60
 maxhp 60
@@ -15,5 +14,5 @@ no_pick 1
 speed -0.003
 maxsp 1
 weight 1000
-editable 1
+generator_limit 5
 end

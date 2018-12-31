@@ -3,18 +3,13 @@ name swamp
 type 138
 face deep_swamp.111
 speed -0.07
-anim
-deep_swamp.111
-deep_swamp.112
-mina
-color_fg green
-color_bg grey
+animation deep_swamp
 no_pick 1
 is_water 1
-walk_on 1
-slow_move 5
+move_on walk
+move_slow walk
+move_slow_penalty 5
 is_wooded 1
-editable 8
 smoothlevel 8
 smoothface deep_swamp.111 deep_swamp_S.111
 smoothface deep_swamp.112 deep_swamp_S.112

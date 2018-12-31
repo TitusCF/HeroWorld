@@ -4,9 +4,6 @@ face jcity_0.111
 blocksview 1
 no_pick 1
 type 66
-editable 2
-visibility 100
-magicmap grey
 client_type 25012
 end
 Object jcity_1_2
@@ -15,9 +12,6 @@ face jcity_1.111
 blocksview 1
 no_pick 1
 type 66
-editable 2
-visibility 100
-magicmap grey
 client_type 25012
 end
 Object jcity_1_4
@@ -26,9 +20,6 @@ face jcity_2.111
 blocksview 1
 no_pick 1
 type 66
-editable 2
-visibility 100
-magicmap grey
 client_type 25012
 end
 Object jcity_2_2_1
@@ -37,9 +28,6 @@ face jcity_3.111
 blocksview 1
 no_pick 1
 type 66
-editable 2
-visibility 100
-magicmap grey
 client_type 25012
 end
 Object jcity_1_1
@@ -48,9 +36,6 @@ face jcity_4.111
 blocksview 1
 no_pick 1
 type 66
-editable 2
-visibility 100
-magicmap grey
 client_type 25012
 end
 Object jcity_2_1_1
@@ -59,9 +44,6 @@ face jcity_5.111
 blocksview 1
 no_pick 1
 type 66
-editable 2
-visibility 100
-magicmap grey
 client_type 25012
 end
 Object jcity_2_2_2
@@ -70,9 +52,6 @@ face jcity_6.111
 blocksview 1
 no_pick 1
 type 66
-editable 2
-visibility 100
-magicmap grey
 client_type 25012
 end
 Object jcity_3_2
@@ -81,9 +60,6 @@ face jcity_7.111
 blocksview 1
 no_pick 1
 type 66
-editable 2
-visibility 100
-magicmap grey
 client_type 25012
 end
 Object jcity_1_3
@@ -92,9 +68,6 @@ face jcity_8.111
 blocksview 1
 no_pick 1
 type 66
-editable 2
-visibility 100
-magicmap grey
 client_type 25012
 end
 Object jcity_2_2_4
@@ -103,9 +76,6 @@ face jcity_9.111
 blocksview 1
 no_pick 1
 type 66
-editable 2
-visibility 100
-magicmap grey
 client_type 25012
 end
 Object jcity_2_1_2
@@ -114,9 +84,6 @@ face jcity_A.111
 blocksview 1
 no_pick 1
 type 66
-editable 2
-visibility 100
-magicmap grey
 client_type 25012
 end
 Object jcity_3_1
@@ -125,9 +92,6 @@ face jcity_B.111
 blocksview 1
 no_pick 1
 type 66
-editable 2
-visibility 100
-magicmap grey
 client_type 25012
 end
 Object jcity_2_2_3
@@ -136,9 +100,6 @@ face jcity_C.111
 blocksview 1
 no_pick 1
 type 66
-editable 2
-visibility 100
-magicmap grey
 client_type 25012
 end
 Object jcity_3_4
@@ -147,9 +108,6 @@ face jcity_D.111
 blocksview 1
 no_pick 1
 type 66
-editable 2
-visibility 100
-magicmap grey
 client_type 25012
 end
 Object jcity_3_3
@@ -158,9 +116,6 @@ face jcity_E.111
 blocksview 1
 no_pick 1
 type 66
-editable 2
-visibility 100
-magicmap grey
 client_type 25012
 end
 Object jcity_4
@@ -169,8 +124,5 @@ face jcity_F.111
 blocksview 1
 no_pick 1
 type 66
-editable 2
-visibility 100
-magicmap grey
 client_type 25012
 end

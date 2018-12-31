@@ -15,8 +15,7 @@ maxsp 0
 last_eat 0
 exp 100
 msg
-You can't control your bladder.  You have a
-messy accident.  Yuck!
+You can't control your bladder.  You have a messy accident.  Yuck!
 endmsg
 race *
 level 5
@@ -25,6 +24,9 @@ Object reeking_urine
 name reeking puddle of urine
 type 72
 face residue.111
+is_used_up 1
+speed 0.0002
 food 1
 weight 20
+nrof 1
 end

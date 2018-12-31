@@ -6,5 +6,4 @@ type 79
 material 32
 weight 2
 value 5
-editable 128
 end

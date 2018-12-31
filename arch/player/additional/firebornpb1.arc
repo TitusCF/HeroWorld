@@ -1,8 +1,0 @@
-Object firebornpb1anim
-anim
-fireborn_blue_pulse.111
-fireborn_blue_pulse.222
-fireborn_blue_pulse.333
-fireborn_blue_pulse.444
-mina
-end

@@ -5,9 +5,7 @@ type 103
 other_arch serp_cloak
 slaying serp_skin
 food 3
+sp 1
 no_pick 1
-walk_on 1
-editable 64
-visibility 100
-color_fg black
+move_on walk
 end

@@ -1,8 +1,9 @@
 Object spell_create_fire_wall
+anim_suffix spellcasting
 name create fire wall
 name_pl create fire wall
-face spell_pyromancy.111
-level 6
+face spell_create_fire_wall.111
+level 12
 sp 5
 casting_time 10
 path_attuned 2048
@@ -17,9 +18,12 @@ duration 260
 duration_modifier 1
 dam 4
 dam_modifier 3
-maxsp 8
+maxsp 20 
 attacktype 6
 range 2
 range_modifier 10
-no_pass 1
+move_block all
+msg
+Create a line of fire in front of the caster. Creatures crossing the line take fire damage. Casting the spell multiple times on the same area increases the damage the wall delivers.
+endmsg
 end

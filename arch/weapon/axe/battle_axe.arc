@@ -11,7 +11,6 @@ material 18
 value 30000
 weight 10000
 last_sp 8
-editable 1024
 name_pl Battle Axes
 client_type 106
 body_arm -2

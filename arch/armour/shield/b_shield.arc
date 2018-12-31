@@ -11,7 +11,5 @@ ac 1
 resist_physical 3
 weight 15000
 value 6
-editable 1024
-magicmap grey
 body_arm -1
 end

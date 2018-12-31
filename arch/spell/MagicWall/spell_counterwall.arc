@@ -1,8 +1,9 @@
 Object spell_counterwall
+anim_suffix spellcasting
 name counterwall
 name_pl counterwall
-face spell_summoner.111
-level 8
+face spell_counterwall.111
+level 16
 sp 8
 attacktype 524288
 casting_time 14
@@ -20,12 +21,7 @@ maxsp 20
 range 2
 range_modifier 15
 msg
-Counterwall creates a wall that fires
-counterspells.  Counterspells are cone spells
-that prevent spells from passing through the
-affected area.  Counterwalls can be useful to
-constantly neutralize spell effects.  The
-counterwall itself has a finite duration.
+Counterwall creates a wall that fires counterspells.  Counterspells are cone spells that prevent spells from passing through the affected area.  Counterwalls can be useful to constantly neutralize spell effects.  The counterwall itself has a finite duration.
 endmsg
-no_pass 1
+move_block all
 end

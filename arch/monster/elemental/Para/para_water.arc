@@ -3,27 +3,20 @@ race water_elemental
 name water para-elemental
 face para_water.111
 randomitems para_elemental
-color_fg blue
-anim
-para_water.111
-para_water.112
-para_water.113
-mina
+animation para_water
 monster 1
+move_type walk
 alive 1
 ac 6
-wc 9
+wc 10
 dam 30
-hp 120
-maxhp 120
-speed -0.1
-exp 200
+hp 60
+maxhp 60
+speed -0.2
+exp 1400
 weight 50000
-level 6
+level 7
 resist_confusion 100
-
 attacktype 1
 resist_cold -100
-
-editable 1
 end

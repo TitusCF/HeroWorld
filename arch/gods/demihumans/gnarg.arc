@@ -8,6 +8,7 @@ race goblin,giant,troll
 animation small_troll
 is_animated 1
 monster 1
+move_type walk
 alive 1
 Str 30
 Con 30
@@ -32,8 +33,7 @@ can_use_weapon 1
 can_use_armour 1
 can_cast_spell 1
 msg
-Father of goblins, Lord Troll, Master of 
-poisons, Patron of assassins
+Father of goblins, Lord Troll, Master of poisons, Patron of assassins
 endmsg
 exp 1
 weight 500000

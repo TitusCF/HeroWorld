@@ -9,9 +9,7 @@ weapontype 7
 dam 8
 weight 17500
 value 42
-editable 1024
 attacktype 1
-magicmap grey
 name_pl maces
 client_type 129
 body_arm -1

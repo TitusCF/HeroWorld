@@ -3,8 +3,7 @@ name slum
 face slum3.111
 type 66
 no_pick 1
-no_pass 1
-editable 2
+move_block all
 end
 More
 Object slum3_2

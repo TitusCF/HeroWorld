@@ -1,4 +1,2069 @@
-Changes for CVS top of tree:
+Changes for SVN top of tree:
+==============================================================================
+
+Change Wraith to wraith in the Player archetype, so it shows up consistently
+in the character creation dialoge.
+player/race/wraithp.arc
+RJT 2014-02-19
+
+Cleaned up stray pixels in wall borders to make them look smoother.
+construct/town/t_house2.base.x11.png
+RJT 2014-02-19
+
+Commented out the x and y default attributes on map arch.
+They were being added to the x and y values when the arch was placed
+on a map and can cause segfaults by placing the map arch off the map.
+system/map.arc
+SilverNexus 2013-12-03
+
+Pixel cleanup on the map arch face.
+system/map.base.111.png
+SilverNexus 2013-12-03
+
+Ripened and shaded pear, making it follow perspective guidlines.
+Moved old image to classic imageset.
+food/pear.base.111.png
+food/pear.clsc.111.png
+SilverNexus 2013-12-03
+
+Added back facing for beholder. Added placeholder images
+to classic imageset. Changed default facing to 151.
+monster/beholder/beholder.base.111.png
+monster/beholder/beholder.clsc.111.png
+monster/beholder/beholder.base.112.png
+monster/beholder/beholder.clsc.112.png
+monster/beholder/beholder.base.113.png
+monster/beholder/beholder.clsc.113.png
+monster/beholder/beholder.base.114.png
+monster/beholder/beholder.clsc.114.png
+monster/beholder/beholder.base.151.png
+monster/beholder/beholder.clsc.151.png
+monster/beholder/beholder.base.152.png
+monster/beholder/beholder.clsc.152.png
+monster/beholder/beholder.base.153.png
+monster/beholder/beholder.clsc.153.png
+monster/beholder/beholder.base.154.png
+monster/beholder/beholder.clsc.154.png
+monster/beholder/beholder.face
+monster/beholder/beholder.arc
+SilverNexus 2013-12-02
+
+Added image for empty popcorn bag to classic imageset.
+potion/bag_empty.clsc.111.png
+SilverNexus 2013-12-02
+
+New images for helmet of xrays.
+Moved old images to classic image set.
+armour/helmet/helmetxray.base.111.png
+armour/helmet/helmetxray.base.112.png
+armour/helmet/helmetxray.clsc.111.png
+armour/helmet/helmetxray.clsc.112.png
+SilverNexus 2013-11-07
+
+New images for small and large gold nuggets
+Moved old images to the classic image set
+jewel/nugget_sma.base.111.png
+jewel/nugget_sma.clsc.111.png
+jewel/nugget_lar.base.111.png
+jewel/nugget_lar.clsc.111.png
+SilverNexus 2013-10-27
+
+New scale for chaos dragons: black dragon scale
+Includes a black dragon mail to use the scales with
+Chaos Wyverns and Dragons now drop black dragon scales
+armour/mail/blackdragonmail.base.111.png
+armour/mail/blackdragonmail.face
+armour/mail/dragonmail.arc
+flesh/dragon/dragon_black_scale.base.111.png
+flesh/dragon/dragon_black_scale.face
+flesh/dragon/dragon_sca.arc
+monster/dragon/Cwyvern.trs
+monster/dragon/Chaos_Dra/chaos_dragon.trs
+monster/dragon/dragon.trs
+shop/crea_dra_m.arc
+SilverNexus 2013-07-08
+
+New images and archetypes for Draughts
+misc/draughts/draught_red.arc
+misc/draughts/r-draughts.base.111.png
+misc/draughts/b-draughts.base.111.png
+misc/draughts/draught_black.arc
+misc/draughts/r-king-draughts.base.111.png
+misc/draughts/b-king-draughts.base.111.png
+misc/draughts/draught_red_king.arc
+misc/draughts/draught_black_king.arc
+RJT 2013-04-02
+
+New graphic and archetype for Draughts House
+construct/house/draughts_house.arc
+construct/house/draughts_house.base.x11.png
+RJT 2013-04-02
+
+Redesigned holy shield face graphic, making it bigger and
+lit in perspective. Moved old image to the classic set.
+armour/shield/holyshield.base.111.png
+armour/shield/holyshield.clsc.111.png
+SilverNexus 2013-02-25
+
+Redesigned the river graphics to match the lake design.
+Moved old images to classic image set.
+river/branch_125.base.111.png
+river/branch_125.clsc.111.png
+river/branch_125.base.211.png
+river/branch_125.clsc.211.png
+river/branch_135.base.111.png
+river/branch_135.clsc.111.png
+river/branch_137.base.111.png
+river/branch_137.clsc.111.png
+river/branch_145.base.111.png
+river/branch_145.clsc.111.png
+river/branch_145.base.211.png
+river/branch_145.clsc.211.png
+river/branch_156.base.111.png
+river/branch_156.clsc.111.png
+river/branch_156.base.211.png
+river/branch_156.clsc.211.png
+river/branch_157.base.111.png
+river/branch_157.clsc.111.png
+river/branch_158.base.111.png
+river/branch_158.clsc.111.png
+river/branch_158.base.211.png
+river/branch_158.clsc.211.png
+river/branch_237.base.111.png
+river/branch_237.clsc.111.png
+river/branch_237.base.211.png
+river/branch_237.clsc.211.png
+river/branch_347.base.111.png
+river/branch_347.clsc.111.png
+river/branch_347.base.211.png
+river/branch_347.clsc.211.png
+river/branch_357.base.111.png
+river/branch_357.clsc.111.png
+river/branch_367.base.111.png
+river/branch_367.clsc.111.png
+river/branch_367.base.211.png
+river/branch_367.clsc.211.png
+river/branch_378.base.111.png
+river/branch_378.clsc.111.png
+river/branch_378.base.211.png
+river/branch_378.clsc.211.png
+river/bridge_15.base.111.png
+river/bridge_15.clsc.111.png
+river/bridge_37.base.111.png
+river/bridge_37.clsc.111.png
+river/ford_ns.base.111.png
+river/ford_ns.clsc.111.png
+river/ford_we.base.111.png
+river/ford_we.clsc.111.png
+river/river_14.base.111.png
+river/river_14.clsc.111.png
+river/river_15.base.111.png
+river/river_15.clsc.111.png
+river/river_16.base.111.png
+river/river_16.clsc.111.png
+river/river_25.base.111.png
+river/river_25.clsc.111.png
+river/river_26.base.111.png
+river/river_26.clsc.111.png
+river/river_26.base.211.png
+river/river_26.clsc.211.png
+river/river_26.base.311.png
+river/river_26.clsc.311.png
+river/river_27.base.111.png
+river/river_27.clsc.111.png
+river/river_36.base.111.png
+river/river_36.clsc.111.png
+river/river_37.base.111.png
+river/river_37.clsc.111.png
+river/river_38.base.111.png
+river/river_38.clsc.111.png
+river/river_47.base.111.png
+river/river_47.clsc.111.png
+river/river_48.base.111.png
+river/river_48.clsc.111.png
+river/river_48.base.211.png
+river/river_48.clsc.211.png
+river/river_48.base.311.png
+river/river_48.clsc.311.png
+river/river_58.base.111.png
+river/river_58.clsc.111.png
+SilverNexus 2012-12-17
+
+Removed outlines around planes in lamp post image.
+misc/lampost.base.111.png
+SilverNexus 2012-11-29
+
+Minor touch-up on some stores.
+shop/store_alch.base.x11.png
+shop/store_armo.base.x11.png
+shop/store_bow.base.x11.png
+SilverNexus 2012-11-19
+
+Recolored air elemental image to create new dust elemental image.
+Moved old images to classic image set.
+monster/elemental/elem_dust.base.111.png
+monster/elemental/elem_dust.base.112.png
+monster/elemental/elem_dust.clsc.111.png
+monster/elemental/elem_dust.clsc.112.png
+SilverNexus 2012-11-29
+
+Redesigned the wine glass faces to be in perspective.
+Moved old images to the classic image set.
+food/w_glass.base.111.png
+food/w_glass_empty.base.111.png
+food_w_glass.clsc.111.png
+food/w_glass_empty.clsc.111.png
+SilverNexus 2012-11-29
+
+Used warrior class image to fix perspective on several nonplayer warrior humanoids.
+Moved old images to the classic image set.
+monster/humanoid/Class/Warrior/warrior.face
+monster/humanoid/Class/Warrior/warrior_blue.base.111.png
+monster/humanoid/Class/Warrior/warrior_blue.base.112.png
+monster/humanoid/Class/Warrior/warrior_blue.base.131.png
+monster/humanoid/Class/Warrior/warrior_blue.base.132.png
+monster/humanoid/Class/Warrior/warrior_blue.base.151.png
+monster/humanoid/Class/Warrior/warrior_blue.base.152.png
+monster/humanoid/Class/Warrior/warrior_blue.base.171.png
+monster/humanoid/Class/Warrior/warrior_blue.base.172.png
+monster/humanoid/Class/Warrior/warrior_green.base.111.png
+monster/humanoid/Class/Warrior/warrior_green.base.112.png
+monster/humanoid/Class/Warrior/warrior_green.base.131.png
+monster/humanoid/Class/Warrior/warrior_green.base.132.png
+monster/humanoid/Class/Warrior/warrior_green.base.151.png
+monster/humanoid/Class/Warrior/warrior_green.base.152.png
+monster/humanoid/Class/Warrior/warrior_green.base.171.png
+monster/humanoid/Class/Warrior/warrior_green.base.172.png
+monster/humanoid/Class/Warrior/warrior_grey.base.111.png
+monster/humanoid/Class/Warrior/warrior_grey.base.112.png
+monster/humanoid/Class/Warrior/warrior_grey.base.131.png
+monster/humanoid/Class/Warrior/warrior_grey.base.132.png
+monster/humanoid/Class/Warrior/warrior_grey.base.151.png
+monster/humanoid/Class/Warrior/warrior_grey.base.152.png
+monster/humanoid/Class/Warrior/warrior_grey.base.171.png
+monster/humanoid/Class/Warrior/warrior_grey.base.172.png
+monster/humanoid/Class/Warrior/warrior_lblue.base.111.png
+monster/humanoid/Class/Warrior/warrior_lblue.base.112.png
+monster/humanoid/Class/Warrior/warrior_lblue.base.131.png
+monster/humanoid/Class/Warrior/warrior_lblue.base.132.png
+monster/humanoid/Class/Warrior/warrior_lblue.base.151.png
+monster/humanoid/Class/Warrior/warrior_lblue.base.152.png
+monster/humanoid/Class/Warrior/warrior_lblue.base.171.png
+monster/humanoid/Class/Warrior/warrior_lblue.base.172.png
+monster/humanoid/Class/Warrior/warrior_red.base.111.png
+monster/humanoid/Class/Warrior/warrior_red.base.112.png
+monster/humanoid/Class/Warrior/warrior_red.base.131.png
+monster/humanoid/Class/Warrior/warrior_red.base.132.png
+monster/humanoid/Class/Warrior/warrior_red.base.151.png
+monster/humanoid/Class/Warrior/warrior_red.base.152.png
+monster/humanoid/Class/Warrior/warrior_red.base.171.png
+monster/humanoid/Class/Warrior/warrior_red.base.172.png
+monster/humanoid/Class/Warrior/warrior_blue.clsc.111.png
+monster/humanoid/Class/Warrior/warrior_blue.clsc.112.png
+monster/humanoid/Class/Warrior/warrior_blue.clsc.131.png
+monster/humanoid/Class/Warrior/warrior_blue.clsc.132.png
+monster/humanoid/Class/Warrior/warrior_blue.clsc.151.png
+monster/humanoid/Class/Warrior/warrior_blue.clsc.152.png
+monster/humanoid/Class/Warrior/warrior_blue.clsc.171.png
+monster/humanoid/Class/Warrior/warrior_blue.clsc.172.png
+monster/humanoid/Class/Warrior/warrior_grey.clsc.111.png
+monster/humanoid/Class/Warrior/warrior_grey.clsc.112.png
+monster/humanoid/Class/Warrior/warrior_grey.clsc.131.png
+monster/humanoid/Class/Warrior/warrior_grey.clsc.132.png
+monster/humanoid/Class/Warrior/warrior_grey.clsc.151.png
+monster/humanoid/Class/Warrior/warrior_grey.clsc.152.png
+monster/humanoid/Class/Warrior/warrior_grey.clsc.171.png
+monster/humanoid/Class/Warrior/warrior_grey.clsc.172.png
+monster/humanoid/Class/Warrior/warrior_red.clsc.111.png
+monster/humanoid/Class/Warrior/warrior_red.clsc.112.png
+monster/humanoid/Class/Warrior/warrior_red.clsc.131.png
+monster/humanoid/Class/Warrior/warrior_red.clsc.132.png
+monster/humanoid/Class/Warrior/warrior_red.clsc.151.png
+monster/humanoid/Class/Warrior/warrior_red.clsc.152.png
+monster/humanoid/Class/Warrior/warrior_red.clsc.171.png
+monster/humanoid/Class/Warrior/warrior_red.clsc.172.png
+monster/humanoid/Class/Warrior/warrior_green.clsc.111.png
+monster/humanoid/Class/Warrior/warrior_green.clsc.112.png
+monster/humanoid/Class/Warrior/warrior_green.clsc.131.png
+monster/humanoid/Class/Warrior/warrior_green.clsc.132.png
+monster/humanoid/Class/Warrior/warrior_green.clsc.151.png
+monster/humanoid/Class/Warrior/warrior_green.clsc.152.png
+monster/humanoid/Class/Warrior/warrior_green.clsc.171.png
+monster/humanoid/Class/Warrior/warrior_green.clsc.172.png
+monster/humanoid/Class/Warrior/warrior_lblue.clsc.111.png
+monster/humanoid/Class/Warrior/warrior_lblue.clsc.112.png
+monster/humanoid/Class/Warrior/warrior_lblue.clsc.131.png
+monster/humanoid/Class/Warrior/warrior_lblue.clsc.132.png
+monster/humanoid/Class/Warrior/warrior_lblue.clsc.151.png
+monster/humanoid/Class/Warrior/warrior_lblue.clsc.152.png
+monster/humanoid/Class/Warrior/warrior_lblue.clsc.171.png
+monster/humanoid/Class/Warrior/warrior_lblue.clsc.172.png
+SilverNexus 2012-11-28
+
+Added seperate face for rune of icestorm. Changed rune of icestorm
+and rune of large icestorm to use the new image.
+spell/Rune/rune_frost.arc
+spell/Rune/rune_icestorm.base.111.png
+spell/Rune/rune_icestorm.face
+spell/Rune/rune_large_icestorm.face
+SilverNexus 2012-11-28
+
+Redesigned coffee cups (full & empty) to be in perspective.
+Moved old images to the classic image set
+food/coffee.base.111.png
+food/coffee_empty.base.111.png
+food/coffee.clsc.111.png
+food/coffee_empty.clsc.111.png
+SilverNexus 2012-11-28
+
+Darkened skull images for Evil Master Bonehead images.
+Moved old images to classic image set.
+monster/demon/bone_head.base.111.png
+monster/demon/bone_head.base.112.png
+monster/demon/bone_head.base.113.png
+monster/demon/bone_head.clsc.111.png
+monster/demon/bone_head.clsc.112.png
+monster/demon/bone_head.clsc.113.png
+SilverNexus 2012-11-27
+
+Used fire elemental image to make black fire elemental image in perspective.
+Moved old image to classic image set.
+monster/elemental/elem_fire_black.base.111.png
+monster/elemental/elem_fire_black.base.112.png
+monster/elemental/elem_fire_black.clsc.111.png
+monster/elemental/elem_fire_black.clsc.112.png
+SilverNexus 2012-11-27
+
+Redesigned the cheeseburger face graphic to be in
+perspective. Moved the old image to the classic image set.
+food/ch_burger.base.111.png
+food/ch_burger.clsc.111.png
+SilverNexus 2012-11-26
+
+Redesigned the smallt_green image to be in perspective.
+Moved the old classic smalltroll image to the smallt_green
+image and recolored the smalltroll classic image to red
+for the classic smalltroll faceset.
+monsters/troll/smallt_green.base.111.png
+monsters/troll/smallt_green.base.112.png
+monsters/troll/smallt_green.clsc.111.png
+monsters/troll/smallt_green.clsc.112.png
+monsters/troll/smalltroll.clsc.111.png
+monsters/troll/smalltroll.clsc.112.png
+SilverNexus 2012-11-17
+
+Redesigned the face for Dave. Also added a back facing.
+Changed the dave.arc file to have the .151 image (facing
+forward) as the starting image. Added classic images for
+the new facing, as well.
+monsters/undead/dave.arc
+monsters/undead/dave.face
+monsters/undead/dave.base.111.png
+monsters/undead/dave.base.112.png
+monsters/undead/dave.base.113.png
+monsters/undead/dave.base.151.png
+monsters/undead/dave.base.152.png
+monsters/undead/dave.base.153.png
+monsters/undead/dave.clsc.151.png
+monsters/undead/dave.clsc.152.png
+monsters/undead/dave.clsc.153.png
+SilverNexus 2012-11-17
+
+Redesigned speed boots to be in perspective
+armour/boots/speedboots.base.111.png
+armour/boots/speedboots.base.112.png
+armour/boots/speedboots.base.113.png
+SilverNexus 2012-11-16
+
+Redesigned giant generator to be in perspective.
+monsters/giant/giant_gen.base.111.png
+SilverNexus 2012-11-16
+
+Altered the true lead and fixed mercury graphics to be in perspective.
+Moved the old images to the classic image set.
+inorganic/fix_mercury.base.111.png
+inorganic/fix_mercury.base.111.png
+inorganic/true_lead.base.111.png
+inorganic/fix_mercury.clsc.111.png
+inorganic/fix_mercury.clsc.111.png
+inorganic/true_lead.clsc.111.png
+SilverNexus 2012-11-12
+
+Added name attribute to gargoyle to correct spelling.
+monsters/misc/gargoyle.arc
+SilverNexus 2012-11-11
+
+Recolored the dragon image to make a worthless dragon
+image set that is in perspective. Also copied the xx2
+classic extensions and renamed the copy to xx4, since
+the base image now has four frames of animation.
+monster/dragon/WDragon/worthless_dragon.base.x31.png
+monster/dragon/WDragon/worthless_dragon.base.x32.png
+monster/dragon/WDragon/worthless_dragon.base.x33.png
+monster/dragon/WDragon/worthless_dragon.base.x34.png
+monster/dragon/WDragon/worthless_dragon.base.x71.png
+monster/dragon/WDragon/worthless_dragon.base.x72.png
+monster/dragon/WDragon/worthless_dragon.base.x73.png
+monster/dragon/WDragon/worthless_dragon.base.x74.png
+monster/dragon/WDragon/worthless_dragon.clsc.x34.png
+monster/dragon/WDragon/worthless_dragon.clsc.x74.png
+monster/dragon/WDragon/worthless_dragon.face
+SilverNexus 2012-11-09
+
+Redesigned the bag_popcorn archetype to put it
+in perspecitve. Also added a bag_empty archetype
+for when the popcorn is consumed.
+food/bag_popcorn.base.111.png
+food/bag_empty.face
+food/bag_popcorn.arc
+food/bag_empty.base.111.png
+potion/emptybottles.arc
+SilverNexus 2012-11-10
+
+Redesigned my own redesigned nondirectional sign,
+keeping borders more even on all four side. Instead
+of a third line of text, the text is expanded in a
+fashion similar to that of the directional signs.
+readable/sign.base.111.png
+SilverNexus 2012-11-08
+
+Animated first facing for goblin leader.
+Added three facings for the goblin leader image set.
+Changed starting image to match correct facing.
+monsters/goblin/goblin_leader_arc.arc
+monsters/goblin/goblin_leader_arc.face
+monsters/goblin/goblin_leader.face
+monsters/goblin/goblin_leader.base.111.png
+monsters/goblin/goblin_leader.base.112.png
+monsters/goblin/goblin_leader.base.131.png
+monsters/goblin/goblin_leader.base.132.png
+monsters/goblin/goblin_leader.base.151.png
+monsters/goblin/goblin_leader.base.152.png
+monsters/goblin/goblin_leader.base.171.png
+monsters/goblin/goblin_leader.base.172.png
+SilverNexus 2012-11-7
+
+Removed solid black line around sign images. They look much more detailed without
+the line, despite being the exact same size. Also resized text to compensate
+for extra space on the signs.
+readable/sign_e.base.111.png
+readable/sign_w.base.111.png
+readable/sign.base.111.png
+SilverNexus 2012-11-04
+
+Redesigned ogre generator face graphic, putting it in perspective with the game view.
+monster/goblin/ogre_gen.base.111.png
+SilverNexus 2012-10-25
+
+Additional new graphic and archetype for Dragon Guild.  Based on existing guild
+graphics but with a sign or banner on the front.
+construct/town/dragon_guild2.arc
+construct/town/dragon_guild2.base.x11.png
+RJT 2012-09-23
+
+New graphic and archetype for Dragon Guild.  Based on existing guild graphics
+but with a sign or banner on the front.
+construct/town/dragon_guild.arc
+construct/town/dragon_guild.base.x11.png
+RJT 2012-09-21
+
+New Graphic and archetype for West Guild building and West Guild Storage building.
+Based on existing guild graphics but with a sign or banner on the front. 
+construct/town/guild2storage_west.base.x11.png
+construct/town/guild2storage_west.arc
+construct/town/guild2_west.arc
+construct/town/guild2_west.base.x11.png
+RJT 2012-09-19
+
+New graphic and archetype for Northwest Guild sorage building.  Based on existing
+guild graphic but with a sign or banner on the front.
+construct/town/guild2storage_northwest.base.x11.png
+construct/town/guild2storage_northwest.arc
+RJT 2012-09-015
+
+New graphic and archetype for Northwest Guild building.  Based on existing
+guild graphic but with a sign or banner on the front.
+construct/town/guild2_northwest.base.x11.png
+construct/town/guild2_northwest.arc
+RJT 2012-09-14
+
+New graphic and archetype for Fantasy Guild Storage building.  Based on existing
+guild graphics but with three dormers and a sign or banner on the front.
+construct/town/guild2storage_fant.arc
+construct/town/guild2storage_fant.base.x11.png
+RJT 2012-09-12
+
+New graphic and archetype for Fantasy Guild building.  Based on the original fantasy
+guild graphic but with new roof color and a sign or banner on the front.
+construct/town/guild2_fant.arc
+construct/town/guild2_fant.base.x11.png
+RJT 2012-09-11
+
+New graphic and archetype for Guild Storage building.  Based on existing guild
+graphics but with three dormers and a sign or banner on the front.
+construct/town/guild2storage.base.x11.png
+construct/town/guild2storage.arc
+RJT 2012-09-10
+
+New graphic and archetype for a Guild building.  Based on the original guild graphic
+but with new roof color and a sign or banner on the front.
+construct/town/guild2.arc
+construct/town/guild2.base.x11.png
+RJT 2012-09-08
+
+Pixel color clean up on various Afloor graphics.
+floor/Afloor/ahole_blue.base.171.png
+floor/Afloor/afloor.base.131.png
+floor/Afloor/afloor_magenta.base.171.png
+floor/Afloor/ahole_magenta.base.131.png
+floor/Afloor/afloor.base.171.png
+floor/Afloor/ahole.base.131.png
+floor/Afloor/ahole_magenta.base.171.png
+floor/Afloor/ahole.base.171.png
+floor/Afloor/afloor_blue.base.171.png
+floor/Afloor/ahole_blue.base.131.png
+RJT 2012-09-08
+
+Removed hyphen in woodlarge-vertical archetype as it was causing overlap with woodlarge
+archetype.
+floor/woodlargevertical.arc
+floor/woodlargevertical.base.111.png
+Deleted:
+floor/woodlarge-vertical.arc
+floor/woodlarge-vertical.base.111.png
+floor/woodlarge-vertical.face
+RJT 2012-09-07
+
+New woodfloor tile running in vertical pattern, based on woodfloor.arc
+floor/woodfloorvert.base.111.png
+floor/woodfloorvert.arc
+RJT 2012-09-05
+
+New woodfloor tile running in vertical pattern, based on woodlarge.arc
+floor/woodlarge-vertical.arc
+floor/woodlarge-vertical.base.111.png
+floor/woodlarge-vertical.face
+RJT 2012-09-04
+
+Enable players to generate sound effects.
+Andreas Kirschbaum 2012-06-19
+
+Add grey background around the BANK letters to the West Bank graphic for
+easier reading.
+shop/bank_west.base.x11.png
+RJT 2012-05-20
+
+Pixel touch up and colourize the sign outside the General Store, West.
+shop/store_gene_west.base.x11.png
+RJT 2012-05-16
+
+Colourize the sign outside of the General Store.
+shop/store_gene.base.x11.png
+RJT 2012-05-13
+
+Adjust (increase) width of hedge wall sections to align or match other sections.
+wall/hedge/hedge_1.base.111.png
+wall/hedge/hedge_9.base.111.png
+wall/hedge/hedge_4.base.111.png
+RJT 2012-05-13
+
+Adjust width of hedge on three sections by removing one column of green on the
+left side.
+wall/hedge/hedge_1.base.111.png
+wall/hedge/hedge_5.base.111.png
+wall/hedge/hedge_4.base.111.png
+RJT 2012-05-12
+
+Convert Castle Wall Marble column and Castle Wall Gray Marble column to Indexed
+(was gray scale) images.  Now they appear with transparent backgrounds in the
+map editor and are in the same format as the other images.
+wall/cwall/cwall_marble.base.111.png
+wall/cwall/cwall_graymarble.base.111.png
+RJT 2012-05-12
+
+Very minor pixel touch up and color replacement on the sign to Fantasy
+Store graphic.
+shop/store_gene_fant.base.x11.png
+RJT 2012-05-10
+
+Modify Alchemy Store graphic so it looks more different then the Armour Store.
+shop/store_alch.base.x11.png
+RJT 2012-05-10
+
+Very minor pixel touch up to all cult churches - completed a row of shingles
+next to the steeple.
+construct/temple/gorokh_church.base.x11.png
+construct/temple/gnarg_church.base.x11.png
+construct/temple/devourers_church.base.x11.png
+construct/temple/sorig_church.base.x11.png
+construct/temple/valkyrie_church.base.x11.png
+construct/temple/lythander_church.base.x11.png
+construct/temple/gaea_church.base.x11.png
+construct/temple/ruggilli_church.base.x11.png
+construct/temple/valriel_church.base.x11.png
+construct/temple/ixalovh_church.base.x11.png
+construct/temple/mostrai_church.base.x11.png
+RJT 2012-05-10
+
+Very minor pixel touch up to Fantasy Church graphic.
+construct/town/church_fant.base.x11.png
+RJT 2012-05-10
+
+Made doors larger and more evenly sized on the base Church graphic.
+construct/town/church.base.x11.png
+RJT 2012-05-09
+
+Minor color clean-up and pixel tweaks on the front door and windows to
+Symmetrical Keep graphic.
+construct/keep/keep_sym.base.111.png
+RJT 2012-05-09S
+
+Made doors larger and more evenly sized on the Church of Valkyrie.
+construct/temple/valkyrie_church.base.x11.png
+RJT 2012-05-07
+
+Made doors larger and more evenly sized on the Church of Sorig.
+construct/temple/sorig_church.base.x11.png
+RJT 2012-05-07
+
+Made doors larger and more evenly sized on the Church of Ruggilli.
+construct/temple/ruggilli_church.base.x11.png
+RJT 2012-05-07
+
+Made doors larger and more evenly sized on the Church of Mostrai.
+construct/temple/mostrai_church.base.x11.png
+RJT 2012-05-06
+
+Made doors larger and more evenly sized on the Church of Lythander.
+construct/temple/lythander_church.base.x11.png
+RJT 2012-05-06
+
+Made doors larger and more evenly sized on the Church of Ixalovh.
+construct/temple/ixalovh_church.base.x11.png
+RJT 2012-05-06
+
+Made doors larger and more evenly sized on the Church of Gorokh.
+construct/temple/gorokh_church.base.x11.png
+RJT 2011-05-06
+
+Made doors larger and more evenly sized on the Church of Gnarg.
+construct/temple/gnarg_church.base.x11.png
+RJT 2012-05-06
+
+Made doors larger and more evenly sized on the Church of Gaea.
+construct/temple/gaea_church.base.x11.png
+RJT 2012-05-06
+
+Made doors larger and more evenly sized on the Church of Valriel.
+construct/temple/valriel_church.base.x11.png
+RJT 2012-05-05
+
+Made doors larger and more evenly sized on the Church of Devourers.
+construct/temple/devourers_church.base.x11.png
+RJT 2012-05-05
+
+New graphic and archetype, Church of Valkyrie.
+construct/temple/valkyrie_church.base.x11.png
+construct/temple/valkyrie_church.arc
+RJT 2012-05-03
+
+New graphic and archetype, Church of Mostrai.
+construct/temple/mostrai_church.base.x11.png
+construct/temple/mostrai_church.arc
+RJT 2012-05-03
+
+New graphic and archetype, Church of Ruggilli.
+construct/temple/ruggilli_church.base.x11.png
+construct/temple/ruggilli_church.arc
+RJT 2012-05-03
+
+New graphic and archetype, Church of Gnarg.
+construct/temple/gnarg_church.base.x11.png
+construct/temple/gnarg_church.arc
+RJT 2012-05-02
+
+New graphic and archetype, Church of Devourers.
+construct/temple/devourers_church.base.x11.png
+construct/temple/devourers_church.arc
+RJT 2012-05-02
+
+New graphic and archetype, Church of Lythander.
+construct/temple/lythander_church.base.x11.png
+construct/temple/lythander_church.arc
+RJT 2012-05-01
+
+New graphic and archetype, Church of Gaea.
+construct/temple/gaea_church.base.x11.png
+construct/temple/gaea_church.arc
+RJT 2012-05-01
+
+New graphic and archetype, Church of Sorig.
+construct/temple/sorig_church.base.x11.png
+construct/temple/sorig_church.arc
+RJT 2012-04-30
+
+New graphic and archetype, Cathedral of Sorig.
+construct/temple/sorig_cathedral.base.x11.png
+construct/temple/sorig_cathedral.arc
+RJT 2012-04-29
+
+New graphic and archetype, Church of Ixalovh.
+construct/temple/ixalovh_church.base.x11.png
+construct/temple/ixalovh_church.arc
+RJT 2012-04-28
+
+New graphic and archetype, Church of Gorokh.
+construct/temple/gorokh_church.base.x11.png
+construct/temple/gorokh_church.arc
+RJT 2012-04-28
+
+New graphic and archetype, Church of Valriel.
+construct/temple/valriel_church.base.x11.png
+construct/temple/valriel_church.arc
+RJT 2012-04-28
+
+Update and fix broken and incomplete archetype files
+for the recently added Cathedrals.
+construct/temple/ixalovh_cathedral.arc
+construct/temple/mostrai_cathedral.arc
+construct/temple/gaea_cathedral.arc
+construct/temple/gnarg_cathedral.arc
+construct/temple/devourers_cathedral.arc
+construct/temple/valkyrie_cathedral.arc
+construct/temple/gorokh_cathedral.arc
+construct/temple/lythander_cathedral.arc
+construct/temple/ruggilli_cathedral.arc
+construct/temple/valriel_cathedral.arc
+RJT 2012-04-26
+
+New graphic and archetype, Cathedral of Valriel.
+construct/temple/valriel_cathedral.base.x11.png
+construct/temple/valriel_cathedral.arc
+RJT 2012-04-26
+
+New graphic and archetype, Cathedral of Valkyrie.
+construct/temple/valkyrie_cathedral.base.x11.png
+construct/temple/valkyrie_cathedral.arc
+RJT 2012-04-25
+
+New graphic and archetype, Cathedral of Ruggilli.
+construct/temple/ruggilli_cathedral.base.x11.png
+construct/temple/ruggilli_cathedral.arc
+RJT 2012-04-24
+
+New graphic and archetype, Cathedral of Gnarg.
+construct/temple/gnarg_cathedral.base.x11.png
+construct/temple/gnarg_cathedral.arc
+RJT 2012-04-24
+
+New graphic and archetype, Cathedral of Devourers.
+construct/temple/devourers_cathedral.base.x11.png
+construct/temple/devourers_cathedral.arc
+RJT 2012-04-24
+
+New graphic and archetype, Cathedral of Gaea.
+construct/temple/gaea_cathedral.base.x11.png
+construct/temple/gaea_cathedral.arc
+RJT 2012-04-24
+
+New graphic and archetype, Cathedral of Mostrai.
+construct/temple/mostrai_cathedral.base.x11.png
+construct/temple/mostrai_cathedral.arc
+RJT 2012-04-23
+
+New graphic and archetype, Cathedral of Lythander.
+construct/temple/lythander_cathedral.base.x11.png
+construct/temple/lythander_cathedral.arc
+RJT 2012-04-23
+
+New graphic and archetype, Cathedral of Ixalovh.
+construct/temple/ixalovh_cathedral.base.x11.png
+construct/temple/ixalovh_cathedral.arc
+RJT 2012-04-22
+
+New graphic and archetype, Cathedral of Gorokh.
+construct/temple/gorokh_cathedral.base.x11.png
+construct/temple/gorokh_cathedral.arc
+RJT 2012-04-22
+
+Very minor pixel clean up in Cathedral graphic.
+construct/temple/cathedral.base.x11.png
+RJT 2012-04-22
+
+Pixel and color touch up on the club graphic used for Altar of Gnarg.
+gods/altars/altargnarg.base.111.png
+RJT 2012-04-21
+
+New graphic and archetype, Temple of Gnarg.
+construct/temple/gnarg_temple.base.111.png
+construct/temple/gnarg_temple.arc
+RJT 2012-04-21
+
+Pixel and color cleanup to the Civic Building graphic.
+construct/town/a_civic.base.x11.png
+RJT 2012-04-21
+
+New graphic and archetype, Temple of Valkyrie.
+construct/temple/valkyrie_temple.base.111.png
+construct/temple/valkyrie_temple.arc
+RJT 2012-04-20
+
+New graphic and archetype, Temple of Valriel.
+construct/temple/valriel_temple.base.111.png
+construct/temple/valriel_temple.arc
+RJT 2012-04-20
+
+New graphic and archetype, Temple of Devourers.
+construct/temple/devourers_temple.base.111.png
+construct/temple/devourers_temple.arc
+RJT 2012-04-20
+
+New graphic and archetype, Temple of Ruggilli.
+construct/temple/ruggilli_temple.base.111.png
+construct/temple/ruggilli_temple.arc
+RJT 2012-04-19
+
+New graphic and archetype, Temple of Gaea.
+construct/temple/gaea_temple.base.111.png
+construct/temple/gaea_temple.arc
+RJT 2012-04-19
+
+New graphic and archetype, Temple of Ixalovh.
+construct/temple/ixalovh_temple.arc
+construct/temple/ixalovh_temple.base.111.png
+RJT 2012-04-17
+
+New graphic and archetype, Temple of Gorokh.
+construct/temple/gorokh_temple.base.111.png
+construct/temple/gorokh_temple.arc
+RJT 2012-04-17
+
+New graphic and archetype, Temple of Sorig.
+construct/temple/sorig_temple.arc
+construct/temple/sorig_temple.base.111.png
+RJT 2012-04-17
+
+Touch up colors to the dome on the Temple1 graphic for better blending.
+construct/temple/temple1.base.x11.png
+RJT 2012-04-17
+
+Redesign of the shovel graphic.
+weapon/misc/shovel_1.base.113.png
+weapon/misc/shovel_1.base.114.png
+weapon/misc/shovel_1.base.115.png
+weapon/misc/shovel_1.base.111.png
+weapon/misc/shovel_1.base.112.png
+RJT 2012-04-17
+
+Pixel and color clean up for spear graphic.
+weapon/misc/spear.base.111.png
+weapon/misc/spear.base.131.png
+weapon/misc/spear.base.151.png
+weapon/misc/spear.base.171.png
+weapon/misc/spear.base.101.png
+weapon/misc/spear.base.121.png
+weapon/misc/spear.base.141.png
+weapon/misc/spear.base.161.png
+weapon/misc/spear.base.181.png
+RJT 2012-04-16
+
+Pixel and color clean up for Large Western house graphic.
+construct/house/house_larg_west.base.x11.png
+RJT 2012-04-07
+
+==============================================================================
+Changes for 1.70.0
+==============================================================================
+Consistently rename river archetypes.
+Andreas Kirschbaum 2011-11-05
+
+Additional fishing pole graphic and archetype.
+skills/Skill_Tools/fishing_pole2.base.111.png
+skills/Skill_Tools/fishing_pole2.face
+skills/Skill_Tools/fishing_pole2.arc
+RJT 2011-10-20
+
+Pixel and color clean up for the wrench (weapon) graphic.
+weapon/other/wrench.base.111.png
+RJT 2011-10-20
+
+Pixel and color clean up for the pipe (weapon) graphic.
+weapon/other/pipe.base.111.png
+RJT 2011-10-20
+
+Color updates to make the dungeon wall sections the same color.
+(#010101 vs #000000)
+wall/dun/dun_10.base.111.png
+wall/dun/dun_20.base.111.png
+wall/dun/dun_12.base.111.png
+wall/dun/dun_C.base.111.png
+wall/dun/dun_22.base.111.png
+wall/dun/dun_14.base.111.png
+wall/dun/dun_E.base.111.png
+wall/dun/dun_24.base.111.png
+wall/dun/dun_16.base.111.png
+wall/dun/dun_18.base.111.png
+wall/dun/dun_6.base.111.png
+wall/dun/dun_11.base.111.png
+wall/dun/dun_B.base.111.png
+wall/dun/dun_21.base.111.png
+wall/dun/dun_13.base.111.png
+wall/dun/dun_D.base.111.png
+wall/dun/dun_23.base.111.png
+wall/dun/dun_15.base.111.png
+wall/dun/dun_F.base.111.png
+wall/dun/dun_17.base.111.png
+wall/dun/dun_19.base.111.png
+wall/dun/dun_9.base.111.png
+RJT 2011-10-18
+
+More new graphics, faces and archetypes for the carved cave wall. They match the
+existing cave wall coloring, and do not stand out like the (black) mine graphics.
+cave_23.base.111.png
+cave_24.base.111.png
+cave_24.face
+cave_24.arc
+cave_23.face
+cave_23.arc
+RJT 2011-10-17
+
+New graphics, faces and archetypes for the carved cave wall. They match the
+existing cave wall coloring, and do not stand out like the (black) mine graphics.
+cave_21.base.111.png
+cave_17.base.111.png
+cave_19.base.111.png
+cave_20.base.111.png
+cave_16.base.111.png
+cave_22.base.111.png
+cave_18.base.111.png
+cave_17.arc
+cave_19.arc
+cave_20.arc
+cave_22.arc
+cave_16.arc
+cave_18.arc
+cave_21.arc
+cave_18.face
+cave_21.face
+cave_17.face
+cave_19.face
+cave_20.face
+cave_16.face
+cave_22.face
+RJT 2011-10-16
+
+Refactored bench graphics - less pixelation and colors were cleaned up.
+wall/bench/bench_E.base.111.png
+wall/bench/bench_0.base.111.png
+wall/bench/bench_2.base.111.png
+wall/bench/bench_4.base.111.png
+wall/bench/bench_6.base.111.png
+wall/bench/bench_8.base.111.png
+wall/bench/bench_B.base.111.png
+wall/bench/bench_D.base.111.png
+wall/bench/bench_F.base.111.png
+wall/bench/bench_1.base.111.png
+wall/bench/bench_3.base.111.png
+wall/bench/bench_5.base.111.png
+wall/bench/bench_7.base.111.png
+wall/bench/bench_9.base.111.png
+wall/bench/bench_A.base.111.png
+wall/bench/bench_C.base.111.png
+RJT 2011-10-12
+
+Refactored holy_word graphics to resolve transparency issue as reported under bug
+ID 3330490 - PNG Transparency.
+spell/Cone/turnundead.base.111.png
+spell/Cone/turnundead.base.112.png
+spell/Cone/turnundead.base.113.png
+RJT 2011-10-10
+
+Add additional pixel to the roof line to the cwall-west and cwall-red Guard Houses
+so they merge nicer with nearby wall sections.
+wall/cwall-west/westguard_ho_2.base.111.png
+wall/cwall-red/redguard_ho_2.base.111.png
+RJT 2011-09-18
+
+Redisgned the roof of RL House 1 (rl_house1) graphic.
+construct/town/rl_house1.base.x11.png
+RJT 2011-09-18
+
+Refactor and pixel color clean up of RL House 2 (rl_house2) graphic.
+construct/town/rl_house2.base.x11.png
+RJT 2011-09-18
+
+Touch up the roof line and other edges of RL House West (rl_house_west) graphic.
+construct/town/rl_house_west.base.x11.png
+RJT 2011-09-18
+
+Refactor and pixel color clean up of RL House 3 (rl_house3) graphic.
+construct/town/rl_house3.base.x11.png
+RJT 2011-09-18
+
+Refactor and pixel color clean up of Collesium graphic.
+construct/town/collesium.base.x11.png
+RJT 2011-09-12
+
+New graphic, west facing Big Galeon ship.
+transport/biggalleon.base.x71.png
+RTJ 2011-09-11
+
+Lighten the colors used for the Burning Stronghold and pixel clean up.
+planes/fire/burning_stronghold.base.x11.png
+RJT 2011-09-09
+
+Modifed shop signs or banners to make them easier to read in the game. Lightened the background for the magic shop banner.
+planes/fire/burning_store_armo.base.x11.png
+planes/fire/burning_store_gene.base.x11.png
+planes/fire/burning_store_weap.base.x11.png
+planes/fire/burning_store_alch.base.x11.png
+planes/fire/burning_store_magi.base.x11.png
+RJT 2011-09-09
+
+Lighten the colors used for the Burning Shop - recolorized the l_shop1 graphic to match other buildings.
+planes/fire/burning_l_shop1.base.x11.png
+RJT 2011-09-09
+
+Touch up the windows on the l_shop1 graphic, make them more similar to the original version.
+construct/town/l_shop1.base.x11.png
+RJT 2011-09-09
+
+Lighten the colors used for the Burning Fort Sym - this allows more details of the walls to show through.
+planes/fire/burning_fort_sym.base.111.png
+RJT 2011-09-08
+
+Lighten the colors used for the Burning Fort - this allows more details of the walls to show through.
+planes/fire/burning_fort.base.x11.png
+RJT 2011-09-07
+
+Lighten the colors used for the Burning Cathedral - this allows the details of the walls and roof to
+be more visible. And also cleaned up all the miscolored stray pixels.
+planes/fire/burning_cathedral.base.x11.png
+RJT 2011-09-06
+
+Lighten the colors used for the Burning Barn - this allows the details of the walls and roof to
+be more visible.
+planes/fire/burning_barn.base.x11.png
+RJT 2011-09-06
+
+Color touch up on the unlit torch, replaced the white pixels with light brown colors.
+light/torch_unlit.base.111.png
+RJT 2011-09-06
+
+Minor color touch up and corrections for the Light Bulb graphics used by the map editor.
+light/light_bulb_2.base.111.png
+light/light_bulb_4.base.111.png
+light/light_bulb_1.base.111.png
+light/light_bulb_3.base.111.png
+RJT 2011-09-05
+
+Color changes to stair graphics to emphasize the pseudo 3d aspect of the stairs.
+exit/Up_down/stair_up_1.base.111.png
+exit/Up_down/stair_up.base.111.png
+exit/Up_down/stair_up_2.base.111.png
+exit/Up_down/stair_up_4.base.111.png
+RJT 2011-09-05
+
+Color updates and changes to oakdoor graphic.
+exit/oakdoor.base.111.png
+RJT 2011-09-05
+
+Pixel color clean up for Door graphics.
+door/Door/door_1.base.111.png
+door/Door/door_3.base.111.png
+door/Door/door_5.base.111.png
+door/Door/door_7.base.111.png
+door/Door/door_9.base.111.png
+door/Door/door_A.base.111.png
+door/Door/door_C.base.111.png
+door/Door/door_E.base.111.png
+door/Door/door_0.base.111.png
+door/Door/door_2.base.111.png
+door/Door/door_4.base.111.png
+door/Door/door_6.base.111.png
+door/Door/door_8.base.111.png
+door/Door/door_B.base.111.png
+door/Door/door_D.base.111.png
+door/Door/door_F.base.111.png
+RJT 2011-09-05
+
+Pixel color clean up of rl house west graphic.
+construct/town/rl_house_west.base.x11.png
+RJT 2011-09-05
+
+Refactor and pixel color clean up of cathedral graphic.
+construct/temple/cathedral.base.x11.png
+RJT 2011-09-04
+
+Refactor and pixel color clean up of slum graphic.
+construct/town/slum1.base.x11.png
+construct/town/slum3.base.x11.png
+construct/town/slum2.base.x11.png
+RJT 2011-09-03
+
+Refactor and pixel color clean up for darkhold graphic.
+construct/hold/darkhold.base.x11.png
+RJT 2011-09-02
+
+Refactor and pixel color clean up for stronghold graphic.
+construct/hold/stronghold.base.x11.png
+RJT 2011-09-01
+
+Refactor and pixel color clean up for s_house1, r_house1 and r_house2 graphic.
+construct/town/s_house1.base.111.png
+construct/town/r_house1.base.111.png
+construct/town/r_house2.base.111.png
+RJT 2011-08-29
+
+Reworked the roof tiles for hovels2 graphic.
+construct/town/hovels2.base.x11.png
+RJT 2011-08-29
+
+Refactor and pixel color clean up for t_house1 graphic.
+construct/town/t_house1.base.x11.png
+RJT 2011-08-28
+
+Refactor and pixel color clean up for l_shop1 graphic.
+construct/town/l_shop1.base.x11.png
+RJT 2011-08-27
+
+Added face and arch for falling rain and falling snow.
+arch/trunk/ground/Weather/rain2.arc
+arch/trunk/ground/Weather/rain5.arc
+arch/trunk/ground/Weather/rain.arc
+arch/trunk/ground/Weather/rain.base.111.png
+arch/trunk/ground/Weather/rain.base.112.png
+arch/trunk/ground/Weather/rain.base.113.png
+arch/trunk/ground/Weather/rain.base.114.png
+arch/trunk/ground/Weather/rain.face
+arch/trunk/ground/Weather/snow.arc
+arch/trunk/ground/Weather/snow_c.base.111.png
+arch/trunk/ground/Weather/snow_c.base.112.png
+arch/trunk/ground/Weather/snow_c.base.113.png
+arch/trunk/ground/Weather/snow_c.base.114.png
+Alestan 2011-08-25
+
+Added another column of pixels to the vertical hedge wall for better alignment
+with adjacent hedge graphics.  Cosmetic change only.
+wall/hedge/hedge_5.base.111.png
+wall/hedge/hedge_9.base.111.png
+RJT 2011-08-01
+
+Remove stray attributes "tall_height".
+construct/roof/chemney.arc
+Andreas Kirschbaum 2011-06-11
+
+Touch up of the front gate on the western castle graphics.
+construct/castle/castle_a_western.base.x11.png
+construct/castle/castle_a_western.base.x12.png
+construct/castle/castle_west.base.111.png
+RJT 05-02-2011
+
+Pixel clean up and color correction around the windows and roofline for the
+Chess Club graphic. Removed the plant (green pixels) from the windows as well.
+construct/house/chess_club.base.111.png
+RJT 05-01-2011
+
+Clean up extra blue pixels and straightened out border on far left wall,
+just outside the door on the small tavern graphic.
+construct/house/tavern.base.111.png
+RJT 04-30-2011
+
+House small border tweaks to make it similar to other small houses.  Removed
+black pixels and replaced them with dark grey.
+construct/house/housesmall.base.111.png
+RJT 04-30-2011
+
+Some pixel recoloring to make the windows more apparent Fort Sym graphic.
+construct/fort/fort_sym.base.111.png
+RJT 04-30-2011
+
+Refactor and pixel color clean up for hovels2.
+construct/town/hovels2.base.x11.png
+RJT 04-30-2010
+
+Redesign the door for the hovel graphic.
+construct/town/hovels.base.111.png
+RJT 04-27-2011
+
+Refactor and pixel color clean up for the rl house1 graphic.
+construct/town/rl_house1.base.x11.png
+RJT 2011-04-26
+
+Refactor and pixel color clean up for the house large graphic.
+construct/house/house_larg.base.x11.png
+RJT 2011-04-24
+
+Refactor and pixel color clean up for the farmhouse graphic.
+construct/house/farmhouse.base.x11.png
+RJT 2011-04-24
+
+Based on feedback - cosmetic changes to the flag on the roof, and some
+additional pixel touch ups on the 64x64 fort graphic.
+construct/fort/fort.base.x11.png
+RJT 2011-04-23
+
+Refactor and pixel color cleanup of the 64x64 fort graphic.
+construct/fort/fort.base.x11.png
+RJT 2011-04-23
+
+Very minor graphic update - added a black pixel to the roof line to make for
+nicer merging. Cosmetic change only.
+wall/cwall/guard_ho_2.base.111.png
+RJT 2011-04-21
+
+New graphic for an archery (weapon) shop, based on the existing weapon store
+graphic.  Also new archetype for the archery shop, also based on the existing
+weapon store archetype.
+shop/store_bow.base.x11.png
+shop/store_bow.arc
+RJT 2011-04-12
+
+Based on feedback, removed a pixel in the letter "R" on the building labels.
+Now it's more recognizable.
+construct/town/prison_fant.base.x11.png
+construct/town/prison.base.x11.png
+construct/town/prison.clsc.x11.png
+shop/store_armo.base.x11.png
+shop/store_gene.base.x11.png
+shop/store_gene_west.base.x11.png
+shop/store_armo_fant.base.x11.png
+shop/store_gene_fant.base.x11.png
+RJT 2011-04-11
+
+Refactor and pixel color cleanup of the prison building graphic.
+construct/town/prison.base.x11.png
+RJT 2011-04-10
+
+Modifed building signs to make them easier to read in the game.
+construct/house/inn.base.x11.png
+construct/Snow/s_inn.base.x11.png
+construct/town/prison_fant.base.x11.png
+construct/town/prison.clsc.x11.png
+RJT 2011-04-10
+
+Modifed shop signs or banners to make them easier to read in the game.
+shop/bank_west.base.x11.png
+shop/store_magi_fant.base.x11.png
+shop/store_magi_northwest.base.x11.png
+shop/store_gene_west.base.x11.png
+shop/bank.base.x11.png
+shop/store_weap_fant.base.x11.png
+shop/store_armo_fant.base.x11.png
+shop/store_magi_west.base.x11.png
+RJT 2011-04-09
+
+Modifed shop signs or banners to make them easier to read in the game.
+shop/store_gene.base.x11.png
+shop/store_gene_fant.base.x11.png
+shop/store_weap.base.x11.png
+RJT 2011-04-09
+
+Reworked graphics from previous commit, weird drop shadow like artifact
+appeared for some reason.
+shop/store_magi.base.x11.png
+shop/store_armo.base.x11.png
+shop/store_alch.base.x11.png
+RJT 2011-04-09
+
+Modifed shop signs or banners to make them easier to read in the game.
+shop/store_magi.base.x11.png
+shop/store_armo.base.x11.png
+shop/store_alch.base.x11.png
+RJT 2011-04-09
+
+New face or image (shop/store_gems.base.x11.png) and object (shop/store_gems.arc)
+for a gems/jewels shop, based on the General Store graphic and archetype.
+RJT 2011-04-03
+
+==============================================================================
+Changes for 1.60.0
+==============================================================================
+
+Remove some smoothface for cases where the smoothface does not exist -
+eliminates error during startup of server.
+MSW 2011-01-26
+
+Tweak base value of some weapons.
+MSW 2010-11-26
+
+Update dragon players to provide a choice for starting focus for clients
+that support it.
+MSW 2010-11-14
+
+Mark cannon archetypes as "no_pick 1".
+Andreas Kirschbaum 2010-11-06
+
+Fix incorrect type 139 (IDENTIFY_ALTAR) for pyromaniac.
+Andreas Kirschbaum 2010-11-06
+
+Changes for new character creation:
+system/map.arc: Add subtype to existing starting map, add new ones for
+  player to be able to choose.
+player/...: Make race/class names lowercase - most already were, so make
+   few that were not lowercase so they are all consistent.
+MSW 2010-10-20
+
+Fix incorrect svn properties, for example .png should not have svn:keywords
+set, that could in worst case result in corruption. While we are updating
+properties anyway, clean up incorrect (but mostly harmless) svn:mime-type,
+svn:executable and so on.
+Arvid Norlander 2010-10-11
+
+Copy descriptions (msg/endmsg) from HallOfSelection map to class archetypes.
+Comment out some class archetypes that are currently unused - may get
+re-used with class rebalancing.
+MSW 2010-06-17
+
+Move various road/path/bridge arches from the wall and construct folders into
+a new road folder to make them easier to locate by folder name when working
+in gridarta.  Road items in the river and planes foldersare unmoved as they
+are stylistically tied very hard to the arches in those locations.  Affected:
+  construct/s_bridge*          --> road/s_bridge/*
+  construct/bridge/footbridge  --> road/footbridge
+  construct/bridge/stonebridge --> road/stonebridge
+  construct/town/a_bridge*     --> road/a_bridge
+  wall/paved                   --> road/paved
+  wall/yellow                  --> road/yellow
+  wall/footpath                --> road/footpath
+  wall/dirtroad                --> road/dirtroad
+  wall/gwall/bridge*           --> road/bridgemoati
+  wall/gwall/d*                --> road/drawbridge
+Kevin Bulgrien 2010-06-15
+
+Add giant_leader and giant_chief arches created by Jesse F. Hughes
+Brendan Lally 2010-06-11
+
+Upgrade the dirtroad arch set to include a basic set of diagonals that allow
+the zig-zag diagonal roads to be converted to a more realistic looking road.
+Additional diagonal tiles are able to be added, but these offer a significant
+enough improvement to stand on their own.
+Kevin Bulgrien 2010-06-07
+
+Major update of Naming.doc to improve description of existing content and add
+information on how to name related Objects in the .arc file.  Add a new naming
+convention that offers a standard way of naming diagonal items like walls and
+roads.  The diagonal naming merges well with the legacy naming and uses a
+similar hex/bit-based notation and avoids use of compass points like NE, SW,
+etc. in the file name (that do not merge for arches with many connecting
+points).  Add a note suggesting that the "river" naming be deprecated in favor
+of the new "extended" wall naming scheme as it is more flexible than the
+original river notation.  Because the notation is based on the existing wall
+format, it is also conceivable that an "auto-router" for diagonals could be
+developed in the future.
+Kevin Bulgrien 2010-06-07
+
+Update several archetypes which had type of CLASS (37) but were not in
+fact class archetypes and instead more often used as NPC or monsters.
+Remove type so they default to monsters and give them some real stats.
+Also fixes bug in that requestinfo class_list would return these bogus
+entries.
+MSW 2010-05-20
+
+Update player race descriptions to explicitly state skills, resistances
+and other special ability - makes it easier to see what one gets without
+needing to read full description.
+MSW 2010-05-20
+
+Add faces for timer and time events
+Brendan Lally 2010-05-15
+
+Add faces for pickup, drop, apply, say and death events, so that they are
+more easily identifiable in gridarta
+Brendan Lally 2010-05-15
+
+Move dev/wip/manhole to connect/Hole as it is tested and ready to use.  The
+test patch is removed as it is out of date, and the README is moved to the
+Hole directory as documentation.
+Kevin Bulgrien 2010-05-13
+
+Add a ships wheel based on a heavily modified down-scale of an image found at
+dreadnoughtproject.org.  Permission obtained for use of the image as a model
+to produce this free image.  Other use of the original image is not free.
+Kevin Bulgrien 2010-05-13
+
+Add large wood and iron ships anchor created from a public domain image.
+Kevin Bulgrien 2010-05-10
+
+Add Wheelbarrow This uses an image drawn by Kevin Bulgrien.
+Brendan Lally 2010-04-28
+
+Change the names of dragon scales and dragon mail to be red dragon
+scales/mail, this makes the naming consistant with green/blue/orange/etc
+dragon stuff. The arch names are not changed, so existing items will inherit
+the name change smoothly unless they have set a custom name.
+Brendan Lally 2010-04-27
+
+Add NPC_Gift_Box, a no-drop container that can be put in NPCs inventory to
+hold items they should be able to give away, but not drop on being killed.
+Brendan Lally 2010-04-26
+
+==============================================================================
+Changes for 1.50.0
+==============================================================================
+
+Change AC of doors to make them easier to hit.  Doors in general should not
+be difficult to hit.
+MSW 2010-04-25
+
+Add a new subtype for the magic mouths so that the client does not get invalid
+(zero) type codes.  The magic mouth is a sign, but a very unique sign, so a
+new sign subtype is added just for the magic mouth.
+Kevin Bulgrien 2010-03-30
+
+Modify pentagram and glyph msg/endmsg to indicate limitations and to add an
+example of use.
+Kevin Bulgrien 2009-08-08
+
+Add the last of the msg/endmsg descriptions, fixing some previously entered
+without the msg/endmsg tags.  A few non-player spells still do not have
+descriptions.  They are:  spell_create_lava.arc, spell_shell.arc,
+spell_regen_sp.arc, spell_haste.arc, spell_heroism.arc.
+Kevin Bulgrien 2009-07-30
+
+Add msg/endmsg descriptions to various spells with names starting with R.
+Kevin Bulgrien 2009-07-29
+
+Add msg/endmsg descriptions to various spells including those that start with
+the letters N-P and update Conflict.  Fix Slow (prior commit did not include
+msg/endmsg tags around the message).
+Kevin Bulgrien 2009-07-28
+
+Add msg/endmsg descriptions to various spells including those that start with
+the letters L-M and S-Z.
+Kevin Bulgrien 2009-07-26
+
+Add msg/endmsg descriptions to asteroid, show invisible, and other spells with
+names that begin with the letters D through K.
+Kevin Bulgrien 2009-07-24
+
+Add msg/endmsg descriptions to spells with names that begin with C and the
+antimagic rune skipped previously.
+Kevin Bulgrien 2009-07-21
+
+Add msg/endmsg descriptions to spells A-B that do not have them (except for
+antimagic rune).  This allows the descriptions to be displayed in the client
+spell window.
+Kevin Bulgrien 2009-07-20
+
+Pixies get wands/staffs. So make them use these items.
+Andreas Kirchbaum 2009-07-14
+
+Make big demons be able to break doors and earthwalls.
+Andreas Kirschbaum 2009-06-24
+
+Make most trolls and giants pick up items.
+Andreas Kirschbaum 2009-06-22
+
+Remove 'type 15' (weapon) from boulders. Reverts r11291 as the server now can
+handle 'type 0' (misc) objects.
+Andreas Kirschbaum 2009-06-17
+
+Reduce the range of the charm spell from +1/3 levels to +1/20 levels
+spell/MoodChange/spell_charm_monsters.arc
+James Lopeman 2009-06-15
+
+Replace obsolete attributes can_use_rod, can_use_wand, and can_use_horn with
+can_use_range.
+Andreas Kirschbaum 2009-06-09
+
+monster/animal/farmyard/horse.arc
+monster/animal/farmyard/horse.face
+monster/animal/farmyard/horse.base.131.png
+monster/animal/farmyard/horse.base.171.png: A horse.  It looks ok, but as this
+  is my first monster arch, it might need some adjustments, but it is fairly
+  similar to various other comparable creatures.
+Kevin Bulgrien 2009-06-02
+
+Lake/blake_D.base.111.png
+Lake/blake_9.base.111.png
+Lake/blake_E.base.111.png
+Lake/blake_6.base.111.png
+Lake/blake_B.base.111.png
+Lake/blake_3.base.111.png
+Lake/blake_C.base.111.png: fixed bad pixels, shapes, etc.
+Kevin Bulgrien 2009-06-02
+
+wall/slevel/dlevel_0.base.111.png
+wall/slevel/dlevel_1.base.111.png
+wall/slevel/dlevel_2.base.111.png
+wall/slevel/dlevel_3.base.111.png
+wall/slevel/dlevel_4.base.111.png
+wall/slevel/dlevel_5.base.111.png
+wall/slevel/dlevel_6.base.111.png
+wall/slevel/dlevel_7.base.111.png
+wall/slevel/dlevel_9.base.111.png: fixed discolored pixels.
+Kevin Bulgrien 2009-06-01
+
+wall/slevel/dlevel_7sw.base.111.png
+wall/slevel/dlevel_7sw.face
+wall/slevel/dlevel_Bse.base.111.png
+wall/slevel/dlevel_Bse.face
+wall/slevel/dlevel_Bsw.base.111.png
+wall/slevel/dlevel_Bsw.face
+wall/slevel/dlevel_Dse.base.111.png
+wall/slevel/dlevel_Dse.face
+wall/slevel/dlevel_se.base.111.png
+wall/slevel/dlevel_se.face
+wall/slevel/dlevel_seB.base.111.png
+wall/slevel/dlevel_seB.face
+wall/slevel/dlevel_seD.base.111.png
+wall/slevel/dlevel_seD.face
+wall/slevel/dlevel_sese.base.111.png
+wall/slevel/dlevel_sese.face
+wall/slevel/dlevel_sw.base.111.png
+wall/slevel/dlevel_sw.face
+wall/slevel/dlevel_sw7.base.111.png
+wall/slevel/dlevel_sw7.face
+wall/slevel/dlevel_swB.base.111.png
+wall/slevel/dlevel_swB.face
+wall/slevel/dlevel_swsw.base.111.png
+wall/slevel/dlevel_swsw.face
+wall/slevel/dlevel.arc: Add new depression graphics to support drawing of
+  diagonal channels.  These arches support the south edges of the diagonal
+  channels.  Additional tiles are needed for the north edges.  The idea behind
+  these graphics are to allow depressions to contain rivers or lava streams
+  that are flowing in diagonal directions.  Another idea is to make slots that
+  rolling boulders could follow.  A map is being developed that uses these
+  graphics.
+Kevin Bulgrien 2009-06-01
+
+food/fish.arc: Make the item fishing_pole work (this item is not found on any
+map currently). The fish in shallow_sea inventory didn't have harvestable set.
+Arvid Norlander 2009-03-04
+
+skills/karate.arc, punching.arc, flame_touch.arc, one_handed_weapons.arc,
+missile_weap.arc, throwing.arc, clawing.arc, two_handed_weapons.arc,
+wraith_feed.arc:  Related to server change 11576 - add wc_increase_rate
+to these skills - for non weapon using skills, make that a lower value so
+that it should be better balanced, and also give it a starting bonus.
+MSW 2009-02-22
+
+connect/Garden_gate/ggate_closed.face
+Fix a typo introduced in revision 11294 (part of change to using .face files)
+that caused closed garden gates to disappear when opened.
+Arvid Norlander 2009-02-02
+
+Move all anim...mina blocks and all magicmap and visibility fields into .face
+files.
+Andreas Kirschbaum 2009-02-02
+
+ground/deep_sea.arc
+Fix name of deep_sea archetype which was broken in revision 11299.
+Arvid Norlander 2009-02-02
+
+flesh/dragon/dragon_sca.arc
+Give dragons scales object type 73 (inorganic), this avoids alerts in
+server logs: "Query_cost: item green dragon scale hasn't got a valid type"
+but with all scale colors.  Note: object type 72 (flesh) caused the dragon
+scales weight to increase from 25Kg to 50000Kg and made the scales edible -
+neither is desirable.
+Rick Tanner 2009-01-31
+
+misc/t_boulder.arc
+Give throwing boulders object type 15 (weapon), this avoids this alert in
+the server logs: "Query_cost: item boulder hasn't got a valid type"
+Rick Tanner 2009-01-31
+
+Lots of *.png (not listing all files because it is almost all *.png)
+Losslessly recompress most all PNG images for smaller size to reduce the
+bandwidth needed for sending images to clients.
+Arvid Norlander 2009-01-25
+
+player/race/dwarf_p.arc, player/race/halfling.arc, player/race/pl_half_orc.arc
+Add "race" to player races missing it. Based on what races the equivalent
+monsters have.
+Arvid Norlander 2009-01-25
+
+disease/tapeworms.arc
+Removed linebreaks from disease message so the breaks can be done by the client.
+Kevin Bulgrien 2008-12-20
+
+readable/scrollr.base.111.png
+New graphic (face) for readable scroll
+
+indoor/bed_save.base.111.png,
+misc/icecube.base.111.png,
+spell/Scroll/scroll.base.111.png
+New graphics (face) for bed, ice cube and magic scroll
+
+floor/cloudfloor.arc
+Removed "is_floor 1" to allow colors and other tiles to show through the transparent
+portions of the clouds
+Rick Tanner 2008-12-19
+
+floor/cloudfloor.arc,
+ground/fog_2.base.111.png
+New graphic and archetype for a thicker/heavier cloudfloor, using less transparency
+Rick Tanner 2008-12-19
+
+ground/new/grassdark.arc,
+ground/smooth/grassdark_S.base.111.png
+Update "dark grass" (grassdark.arc) to use new smoothing template (grassdark_S.base.111.png)
+Rick Tanner 2008-12-18
+
+ground/new/grassmedium.arc
+Update archetype to use existing smoothing template (grassmedium_S.base.111.png)
+Rick Tanner 2008-12-18
+
+ground/Pstone/pstone_4.arc
+Update "big stones" archetype to use smoothing (missed in earlier commit)
+Rick Tanner 2008-12-18
+
+ground/smooth/pstone_4_S.base.111.png
+New smoothing template for pstone_4.base.111.png (big stones) tile
+Rick Tanner 2008-12-18
+
+ground/smooth/dunes_S.base.111.png
+Minor color changes to the dunes smoothing template
+Rick Tanner 2008-12-18
+
+misc/sky/sky.arc
+Add "move_block all" to the sky tiles to prevent players from
+being able to walk "on the sky like they are levitating"
+Rick Tanner 2008-12-16
+
+gods/items/torc.base.111.png,
+gods/items/valkyrie_amulet_lifesave.arc
+New graphic for Valkyrie's gift (amulet of lifesaving),
+referred as Valkyrie's Torc
+Rick Tanner 2008-12-15
+
+misc/sky/sky.arc
+misc/sky/sky.base.111.png
+New sky archetype for use on airborn cities, castles, islands, etc.
+such as Pupland Terminal
+Rick Tanner 2008-12-14
+
+construct/window/intermediate_window.arc, construct/window/window.arc
+Remove redundant fields.
+Andreas Kirschbaum 2008-12-12
+
+monster/troll/Troll/troll.arc
+Fix duplicate archetype definition for "troll".
+Andreas Kirschbaum 2008-12-12
+
+gods/items/valkyrie_amulet_lifesave.arc
+Changes to the amulet so that the item appears as
+"Valkyrie's Amulet of Lifesaving" instead of
+"Valkyrie's Amulet of Lifesaving (lifesaving)" in a
+players inventory
+Rick Tanner 2008-12-09
+
+gods/items/valkyrie_amulet_lifesave.arc, gods/demihumans/valkyrie.trs
+Tentative bug fix for '[ 1990180 ] 2.0 godgiven Valkyrie lifesaving amulet bug?'
+- created a new amulet archetype that is godgiven and inventory locked by default,
+updated gods/demihumans/valkyrie.trs file to reference the new amulet archetype
+(Previous checkin had a bug - missed the .arc file at the end of the file name)
+Rick Tanner 2008-12-08
+
+/construct/window/intermediate_window_1.base.111.png, /construct/window/intermediate_window.arc,
+/construct/window/intermediate_window_2.base.111.png, /construct/window/window_2.base.111.png,
+/construct/window/window_4.base.111.png, /construct/window/window_arcade_1.base.111.png,
+/construct/window/window_3.base.111.png, /construct/window/window.arc
+2.0 Elements: Windows.
+Yann Chachkoff 2008-12-07
+
+/construct/roof/chemney_1.base.111.png, /construct/roof/chemney.arc,
+/construct/roof/chemney_2.base.111.png, /construct/roof/roof_1.base.111.png,
+/construct/roof/roof_1blue.base.111.png, /construct/roof/roof_1red.base.111.png,
+/construct/roof/roof_2blue.base.111.png, /construct/roof/roof_2red.base.111.png,
+/construct/roof/roof_1green.base.111.png, /construct/roof/roof_2.base.111.png,
+/construct/roof/roof_2green.base.111.png, /construct/roof/roof.arc
+2.0 Elements: Roof and chemney pieces.
+Yann Chachkoff 2008-12-07
+
+/wall/dun/dungeon.arc
+Removed newline at the end of the file, it was
+causing this to appear in the server logs:
+Warning: failed to find arch dun33
+Rick Tanner 2008-12-06
+
+/wall/wall/wall.arc
+Missing object delcaration in wall.arc
+Rick Tanner 2008-12-06
+
+/wall/wall/wall.arc
+Updated .arc file to use already existing Wooden Wall graphics
+Rick Tanner 2008-12-05
+
+/wall/cave/cave_15.base.111.png, /wall/cave/cave_15.arc
+Solid grey color wall to use in cave areas instead of the
+solid black Block - looks nicer in mapper (IMO)
+Rick Tanner 2008-12-05
+
+/wall/dun/dun_10.base.111.png, /wall/dun/dun_11.base.111.png,
+/wall/dun/dun_12.base.111.png, /wall/dun/dun_13.base.111.png,
+/wall/dun/dun_14.base.111.png, /wall/dun/dun_15.base.111.png,
+/wall/dun/dun_16.base.111.png, /wall/dun/dun_17.base.111.png,
+/wall/dun/dun_18.base.111.png, /wall/dun/dun_19.base.111.png,
+/wall/dun/dun_20.base.111.png, /wall/dun/dun_21.base.111.png,
+/wall/dun/dun_22.base.111.png, /wall/dun/dun_23.base.111.png,
+/wall/dun/dun_24.base.111.png, /wall/dun/dun_25.base.111.png,
+/wall/dun/dungeon.arc
+New graphics and archetypes for Dungeon wall set.  Similar
+to the curved and circular sections from the Cave wall set,
+but colored black (vs. grey)
+Rick Tanner 2008-12-04
+
+exit/oakdoor_1.arc, exit/oakdoor_1.base.111.png, exit/oakdoor_2.arc,
+exit/oakdoor_2.base.111.png
+New graphics to replace the old xpm oakdoor, also has two
+facings - vertical (oakdoor_1) and horizontal (oakdoor_2)
+Rick Tanner 2008-12-01
+
+/wall/wwall/wwall.arc,  /wall/wwall/wwall_right.base.111.png,
+/wall/wwall/wwall_left.base.111.png
+New graphic for use in doorways or as a short wall
+Rick Tanner 2008-11-25
+
+wall/white/white_wall.arc, white_wall_right.base.111.png
+New graphic for use in doorways or as a short wall
+Rick Tanner 2008-11-25
+
+exit/Up_down/cave_stair_up_2.base.111.png, exit/Up_down/stair_up_2.arc
+New pic -- stairs going up in a cave
+(rejoice all ye nethackers)
+Lalo Martins 2008-11-25
+
+treasures.trs, /monster/goblin/orc.trs
+Increase chance and amount of silver coins dropped by lower
+level monsters such as orcs, goblins, gnolls, ogres so that
+low level players have easier access to "cash." Change made
+by meflin.
+Rick Tanner 2008-11-11
+
+/ground/Lake/*.png
+New lake graphics using the current graphic style.  Still needs
+smoothing and animation.
+Rick Tanner 2008-11-03
+
+*.arc
+Remove obsolete 'editable' attributes.
+Andreas Kirschbaum 2008-11-02
+
+wall/hedgehedge_5.base.111.png
+Image adjustment; moved the wall to the right by 1 pixel so it has better
+alignment with other hedge walls.
+Rick Tanner 2008-09-14
+
+mapbuilding/objects.trs, mapbuilding/objects.arc: Applied slightly modified
+patch #2084099 "buildable altars", courtesy of meflin.
+mapbuilding/mbaltar_none.base.111.png: New image.
+Raphaël Quinet 2008-08-30
+
+monster/animal/giant_worm/purple_worm.arc, ground/nimground/Nimground3_purple.arc:
+Replaced purple (unrecognized color) with black in magicmap and color_fg fields.
+Rick Tanner 2008-08-20
+
+mapbuilding/building.arc, mapbuilding/building.trs: Added new archetype
+building_window, a building material using the new subtype 4.  This allows
+the player to build windows in existing walls.
+mapbuilding/mbwindow.base.111.png: New image
+Raphaël Quinet 2008-08-04
+
+mapbuilding/building.arc, mapbuilding/building.trs: Added new buildable
+fence.  This is useful for those who want walls that do not block the view.
+Fixed a bug in the treasure list shop_building_pupland that prevented it
+from including any walls (replaced the treasure list
+build_material_floor_pupland by building_material_stonewall_pupland).
+mapbuilding/mbswall_0.base.111.png: New image.
+Raphaël Quinet 2008-08-03
+
+wall/swall/swall.arc: The name "fence" is more appropriate for the archetype
+"swall" (spiked wall).
+Raphaël Quinet 2008-08-03
+
+shop/Floors/shopweapoeast.trs: Fixed a broken treasure list that prevented
+the nine ring sword from being created.
+Raphaël Quinet 2008-08-01
+
+disease/incontinence.arc, disease/diarrhea.arc, disease/rabies.arc: Make puddles
+from diseases go away after some time, for incontinence and rabies we should
+probably have shrinking animations, like for icor (and thus also for diarrhea),
+but I can't draw.
+Arvid Norlander 2008-06-12
+
+ground/Pstone/pstone_1.arc: Add move_block for boats.
+Arvid Norlander 2008-05-29
+
+mapbuilding/building.arc: Add missing "damned 1" to shop tiles.
+Andreas Kirschbaum 2008-04-24
+
+monster/humanoid/Arabic/a_guard_*.base.111.png: New arabian guards images,
+courtesy of Miguel Ghobangieno.
+Yann Chachkoff 2008-04-16
+
+monster/demon/imp.base.1**.png: New imp images, based on the kobold.
+Meegwun Southall 2008-04-11
+
+monster/humanoid/sigfried.base.11*.png: Make new sigfried images, no new
+directions, but a style update.
+Alex Schultz 2008-02-26
+
+wall/dwall/arc: Remove incorrect Object dwall3_3 and associated comment.
+Kevin Bulgrien 2008-01-18
+
+monster/*: Rebalance monsters.  In many cases, hp, ac, exp, and level
+were adjusted.  This also incluedes the gods avatars and some spells that
+create monster like objects.
+player/race/*.arc: Give all playable races a 30 sp/hp/grace boost, so
+starting values are higher, making things more playable.
+MSW 2008-01-13
+
+wall/slevel/dlevel.arc corrected to provide reused face from slevel set.
+traps/tspikes.base.111.png changed from greyscale to indexed to fix a
+transparency problem.
+Kevin Bulgrien 2007-01-12
+
+Re-add misc/machine.arc and machine.base.x11.png under the GFDL after obtaining
+permission from the original author to relicense the image under the GFDL or
+the GPL as appropriate. Though neither does address images, the GFDL has been
+applied to images by other organizations and is somewhat clearer in how it may
+be applied to graphic art.
+Kevin Bulgrien 2007-01-12
+
+Remove misc/machine.arc and machine.base.x11.png and newly added LICENCE (as it
+was added specifically to address Creative Commons licensing) due to concerns
+about Creative Commons ShareAlike licensing requirements, and most especially
+concerning a possible perception that this project or a distribution might be
+construed to be a "collection" as defined by Creative Commons.
+Kevin Bulgrien 2007-01-11
+
+Correct the license text to show that this derivation is released under
+version 3.0 Creative Commons licensing to improve compatibility with
+Debian.
+
+Add misc/machine.arc, misc/machine.base.x11.png under terms of a Creative
+Commons Attribution-ShareAlike license described in misc/machine.arc and
+as an attributed derivative work of a copyrighted image.  The inspiration
+for this graphic was provided by Yann (gros) Chachkoff.  Added a LICENSE
+file to communicate the fact that this type of license now governs some
+material in the arch collection.
+Kevin Bulgrien 2007-01-10
+
+Rework dev/wip/spout to make water wider and more visible.  Also adjust the
+color to better match the sea arch set.  Add a reference layer of a sea tile
+to spout.xcf.  Convert all the .png files to indexed mode to reduce size.
+Update README with methods used to produce the graphics and remove comments
+about issues with the original revision.  The .arc files have been modified
+to add 'map_layer item' to prevent wall pieces from disappearing when these
+archs are placed on top of them.
+Kevin Bulgrien 2007-01-09
+
+Add a set of "overlay" archs that are designed to sit on top of walls to form
+a spout with water pouring out.  The art is designed to separate the liquid
+and spout to allow spout and fluid variations.  The archs are WIP because they
+cause the wall underneath them to disappear.  This is probably a map layer
+issue.  It may not take much to fix, but are not presently releasable.
+The files are in dev/wip/spout, and are: pour_h2o.arc, pour_h2o.base.111.png,
+pour_h2o.base.112.png, pour_h2o.base.113.png, pour_h2o.base.114.png,
+pour_h2o.face, pour_spout.arc, pour_spout.base.111.png, README, spout.xcf.
+Note that maps/trunk/unlinked/kbulgrien/rayvins_house.1 contains these arches.
+
+Add wall/wall/wall_door_0.base.111.png and wall_door_1.base.111.png to make
+it possible to have tight-fitting doors (no gaps due to perspective) in the
+wall arch set.  wall/wall/wall.arc modified.  Decided to use the numbering
+of the window archs.  Also, per naming of the stwall window archs, rename
+wall/stwall/stwall_2_door.base.111.png and stwall_5_door.base.111.png to
+stwall_door_1.base.111.png and stwall_door_0.base.111.png and update
+stwall.arc.
+Kevin Bulgrien 2007-01-08
+
+Add wall/stwall/stwall_2_door.base.111.png and stwall_5_door.base.111.png to
+make it possible to have tight-fitting doors (no gaps due to perspective).
+wall/stwall/stwall.arc modified.
+Kevin Bulgrien 2007-01-07
+
+Add wall/slevel/dlevel*.png and wall/slevel/dlevel.arc.  The slevel arches are
+raised "elevation" marks that are supposed to overlay other tiles to give the
+appearance of a raised platform.  The dlevel arches are the same graphics but
+flipped in X and/or Y as appropriate to present a depression.  Both arch sets
+rely on the Crossfire perspective to give the hint of a ridge or depression.
+In an elevation, the leading edges are long and the receding edges are short.
+For the depression the leading edges are short and receding edges long.
+Kevin Bulgrien 2007-01-07
+
+Add wall/bwall/bwall_hole_5.base.111.png,wall/bwall/bwall_hole_A.base.111.png,
+and wall/bwall/bwall_hole.arc.  The vertical wall has a transparent hole in
+the left face, and the horizontal wall has a transparent hole in the bottom
+face.  The holes could be drains for flowing rivers, or might even be an exit.
+Kevin Bulgrien 2007-01-07
+
+Add dev/wip directory for commiting work-in-progress archetypes.  The directory
+is not visible in Gridarta CrossfireEditor, but can be made so with a soft link
+like arch/trunk/wip --> arch/trunk/dev/wip.
+Add dev/wip/README describing the use of the directory.
+Add dev/wip/manhole as a manhole archetype work-in-progress to facilitate some
+collaboration on getting a multi-tile HOLE animation to work.  Included is a
+README and a world_105_115.patch test case.
+Kevin Bulgrien 2007-12-29
+
+Add names to woodfloor, woodfloor2, woodlarge, and dirtfloor.
+Nicolas Weeger 2007-12-29
+
+Nicer mountain1, 2, 3, 4 5.
+Update woods_4 archetype so it's not anymore acting as a ground (transparency
+parts, it is *NOT* a ground, visually speaking)
+Make the fireball and firebreath smooth
+Tchize 2007-12-28
+
+Add smooth image for light snow + source file + empty layer file (use it to help building smooth images)
+Tchize 2007-12-24
+
+Add the archetype hook for user-defined plugin events.
+Yann (gros) Chachkoff 2007-12-23
+
+Add various lighthouse archetypes to replace use of huts and towers that are
+called "lighthouse" in various maps.  A base archetype is added along with
+west, northwest, and snowy variants.
+Kevin Bulgrien 2007-12-22
+
+Singing anim_suffix.
+Nicolas Weeger 2007-12-21
+
+Singing animation for Fenx.
+Nicolas Weeger 2007-12-18
+
+Add missing faces for spider (for now, always the same sprite).
+Nicolas Weeger 2007-12-16
+
+Add ne, se, sw, and nw corners to the mine walls to fix the Scorn port gate
+house with consistent walls.
+Kevin Bulgrien 2007-12-10
+
+Four facings for angel, and sword animation.
+Facings for whim.
+Nicolas Weeger 2007-12-09
+
+Basic animation for Ruggilli's altar.
+Basic animation for Sorig's altar.
+Nicolas Weeger 2007-12-07
+
+Commit spellcasting animations for chinese dragons
+Andreas Kirchbaum 2007-11-30
+
+Added a spellcasting animation for the Big Dragon. Courtesy of Rednaxela.
+Yann (gros) Chachkoff 2007-11-29
+
+Add anim_suffix spellcasting to all spells.
+Alex Schultz 2007-11-29
+
+Add correct plural name to flowers_permanent.
+Andreas Kirschbaum 2007-11-23
+
+Add sample support for spellcasting compound animations.
+Try to cast minor healing with a Fenx
+Yann (gros) Chachkoff 2007-11-18
+
+Update spellcasting objects to use inventory objects.
+Andreas Kirschbaum 2007-11-04
+
+Rename low_boots from "shoes" to "pair of shoes".
+Andreas Kirschbaum 2007-11-03
+
+New archetypes goldflagstone.arc  to avoid using creator tricks.
+Nicholas Weeger 2007-10-20
+
+Revert previous change of dragon's steaks weight.
+Andreas Kirschbaum 2007-10-15
+
+Increase weight of dragon's steaks to 500g.
+Andreas Kirschbaum 2007-10-08
+
+player/class/Wizardry/sorcerer_class.arc
+  - Add body_head -1 to Sorceror's Hat.
+Kevin R. Bulgrien 2007-10-05
+
+Rename treasure lists human_player->human_player_items and
+halfling_player->halfling_player_items to match the names of similar treasure
+lists.
+Andreas Kirschbaum 2007-09-28
+
+Renamed "potion of invulnerability" to "potion of shielding." Hopefully this
+will remove player confusion as to why one takes damage from all attack types
+(except physical) when drinking this potion.
+RJT 2007-09-26
+
+Updated Valkyrie's granted attack types, replaced godpower with weaponmagic.
+RJT 2007-09-26
+
+Fix treefort3, make it 1 tile instead of weird missing square.
+Nicolas Weeger 2007-08-18
+
+Add client_anim_... support for all objects that support it, remove
+their speed attributes if the only reason they had speed set was for
+animation.
+MSW 2007-07-09
+
+Remove all 'editable' fields, obsolete with Crossedit removal.
+ (almost all .arc impacted)
+Nicolas Weeger 2007-06-13
+
+Replace "object xxx" with "Object xxx".
+Andreas Kirschbaum 2007-06-12
+
+Fix bug #1687761: Archetype using undefined type number.
+Nicolas Weeger 2007-05-07
+
+Fix incorrectly converted jessyb.base.x13.png multi-part image.
+Andreas Kirschbaum 2007-05-06
+
+Replace "no_pass 1" with "move_block all".
+Andreas Kirschbaum 2007-04-05
+
+spell/Bolt/steambolt.arc: Remove old LIGHTNING(12) type.
+Alex Schultz 2007-04-03
+
+Fix bug #1687729: Spell "create repulsion wall" is broken. Missing
+ move_block field. Also replace obsolete no_pass with move_block all.
+ spell/MagicWall/spell_create_earth_wall.arc spell_repelwall.arc
+Nicolas Weeger 2007-03-25
+
+Make event_xxx invisible, avoids many issues in the object handling
+routines.
+---
+Start splitting server/lib/treasures file in many files.
+Rename player class files/random items for coherence.
+Nicolas Weeger 2007-03-17
+
+Converted all remaining multi-part base images into single images
+with the facename.base.x??.png format.  Deleted the old multi-part
+images and adjusted the archetypes accordingly.  This is a huge
+commit, but I thought it best to do it all in one commit so that if
+something is horribly wrong, it can be reverted with one command.
+Most of the conversion was automated, so if there's a problem I'm not
+seeing, it probably affects them all.
+Aaron Baugher 2007-02-16
+
+
+Created addition shoreline tiles for the ground/sea.arc tile set to
+add sea_F.base.111.png and sea_F.clsc.111.png that form a round pool
+surrounded by transparency.  This tile might be used to fix indoor
+water pools by providing a replacement for blake_0 which has grass
+surrounding the water.  Also modified sea.arc accordingly.
+Kevin Bulgrien 2007-02-12
+
+
+Created additional shoreline tiles for the sea.arc tile set to
+fix some maps that use the blake.arc tile set to allow shorelines
+to have rounded edges instead of corners.  The blake.arc tile set
+is not the same color as the sea.arc tile set unless you are using
+the classic png's, so the seas sometimes are shown in different
+colors of blue.  The tiles added are "coves" that have transparency
+on three sides.  The naming convention used is consistent with the
+big lake tile set.  The naming.doc rules for walls is followed if
+you consider a shoreline to be a sort of wall.
+Kevin Bulgrien 2007-02-10
+
+
+Add new archetype and images for the IPO package, from Mike B.
+Aaron Baugher 2007-02-10
+
+
+Add new archetype and images for the IPO carton box, from Mike B.
+Aaron Baugher 2007-02-08
+
 
 Add new force archetype monk_no_use_weapon. It will be inserted into
 inventories of monk players to prevent them from using weapons.
@@ -15,9 +2080,9 @@ inconsistent definitions.
 Andreas Kirschbaum 2004-09-14
 
 
-Many many changes since last entry due to new server code and 
-maintenance efforts.  Highlights - large image support allows 
-for images larger than 32x32 - many images consolidated for easier 
+Many many changes since last entry due to new server code and
+maintenance efforts.  Highlights - large image support allows
+for images larger than 32x32 - many images consolidated for easier
 maintenance (ongoing).  Spell and skill code changes heavily
 modified spells and skill arches (more arch based now).
 four point animation added to most player race and classes, smoothing
@@ -75,7 +2140,7 @@ so it will animate (animation already in place, just was not being
 used.)
 
 PeterM:  Totally reorganized player/*, splitting it into races and
-classes.  Classes are themselves split into four main subtypes.  
+classes.  Classes are themselves split into four main subtypes.
 New images from dnh were also added, as well as new classes/races.
 See http://langmuir.eecs.berkeley.edu/~peterm/Race.html and
     http://langmuir.eecs.berkeley.edu/~peterm/Class.html

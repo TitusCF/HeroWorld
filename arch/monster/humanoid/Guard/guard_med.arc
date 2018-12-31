@@ -2,16 +2,15 @@ Object medium_guard
 race human
 name castle guard
 face guard_med.111
-color_fg grey
 speed 0.06
 alive 1
 monster 1
+move_type walk
 sleep 1
 Wis 10
 see_invisible 1
 no_pick 1
 resist_magic 30
-
 reflect_missile 1
 hp 120
 maxhp 120
@@ -30,5 +29,4 @@ stand_still 1
 unaggressive 1
 Str 25
 can_cast_spell 1
-editable 1
 end

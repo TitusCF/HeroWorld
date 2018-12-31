@@ -3,26 +3,13 @@ other_arch snowstorm
 type 102
 subtype 5
 face snowball.111
-color_fg white
-color_bg light_blue
-anim
-snowball.111
-snowball.111
-snowball.121
-snowball.131
-snowball.141
-snowball.151
-snowball.161
-snowball.171
-snowball.181
-mina
+animation snowball
 is_animated 0
 is_turnable 1
-walk_on 1
-fly_on 1
+move_on walk fly_low
 glow_radius 2
 speed 1
-flying 1
+move_type fly_low
 no_pick 1
-editable 0
+weight 1000
 end

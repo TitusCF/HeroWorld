@@ -2,19 +2,14 @@ Object firebreath
 name fire
 type 102
 subtype 7
-walk_on 1
-fly_on 1
+move_on walk fly_low
 face fireball.111
-color_fg red
-anim
-fireball.111
-fireball.112
-fireball.113
-mina
+animation firebreath
+smoothlevel 200
 speed 1
 wc -30
-flying 1
+move_type fly_low
 glow_radius 1
 no_pick 1
-editable 0
+weight 500
 end

@@ -1,9 +1,8 @@
 Object generate_stalker
 race faerie
-name generator
+name stalker generator
 other_arch stalker
 face stalkergen.111
-color_fg blue
 generator 1
 hp 150
 maxhp 150
@@ -13,7 +12,7 @@ alive 1
 no_pick 1
 speed -0.002
 maxsp 1
-flying 1
+move_type fly_low
 level 5
-editable 1
+generator_limit 5
 end

@@ -8,16 +8,11 @@ hp 1
 msg
 You set off a Rune of Heal
 endmsg
-anim
-rune_heal.111
-rune_heal.111
-mina
-color_fg green
+animation rune_heal
 level 1
 is_animated 0
 invisible 1
 no_pick 1
-walk_on 1
-editable 32
+move_on walk
 Cha 1
 end

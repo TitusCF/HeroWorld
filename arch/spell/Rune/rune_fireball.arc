@@ -8,17 +8,12 @@ face rune_fireball.111
 msg
 You set off a fireball!
 endmsg
-anim
-rune_fireball.111
-rune_fireball.111
-mina
+animation rune_medium_fireball
 level 1
-color_fg red
 is_animated 0
 invisible 1
 no_pick 1
-walk_on 1
-editable 32
+move_on walk
 attacktype 6
 dam 90
 Cha 20
@@ -33,17 +28,12 @@ face rune_fireball.111
 msg
 You set off a large fireball!
 endmsg
-anim
-rune_fireball.111
-rune_fireball.111
-mina
+animation rune_large_fireball
 level 1
-color_fg red
 is_animated 0
 invisible 1
 no_pick 1
-walk_on 1
-editable 32
+move_on walk
 attacktype 6
 dam 90
 Cha 20

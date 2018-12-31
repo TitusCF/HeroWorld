@@ -1,5 +1,6 @@
 Object dragonslayer
 name Dragonslayer
+anim_suffix double_sword
 nrof 1
 last_sp 9
 type 15
@@ -11,10 +12,8 @@ value 85000
 magic 3
 slaying dragon
 resist_fire 30
-editable 5120
 attacktype 1
 weapontype 1
-magicmap white
 name_pl Dragonslayers
 client_type 100
 body_arm -2

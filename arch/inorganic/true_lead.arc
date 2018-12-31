@@ -10,8 +10,6 @@ materialname lead
 type 73
 nrof 1
 weight 5000
-editable 2048
-magicmap grey
 name_pl blocks
 client_type 642
 end

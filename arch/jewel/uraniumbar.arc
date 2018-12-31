@@ -2,7 +2,6 @@ Object uraniumbar
 name uranium bar
 race gold and jewels
 face uraniumbar.111
-color_fg grey
 nrof 1
 type 73
 material 2
@@ -10,7 +9,6 @@ materialname uranium
 value 50
 weight 10000
 identified 1
-editable 2048
 name_pl uranium bars
 client_type 2005
 end
@@ -26,7 +24,6 @@ face uraniumbar.111
 attacktype 4
 dam 5
 speed 0.100000
-color_fg grey
 nrof 1
 type 73
 material 2
@@ -36,7 +33,6 @@ value 400000
 # adeb0
 weight 10000
 identified 1
-editable 2048
 name_pl enriched uranium bars
 client_type 2005
 end
@@ -47,7 +43,6 @@ Object depleteduraniumbar
 name depleted uranium bar
 race gold and jewels
 face uraniumbar.111
-color_fg grey
 nrof 1
 type 73
 material 2
@@ -55,7 +50,6 @@ materialname depleted uranium
 value 20
 weight 10000
 identified 1
-editable 2048
 name_pl depleted uranium bars
 client_type 2005
 end

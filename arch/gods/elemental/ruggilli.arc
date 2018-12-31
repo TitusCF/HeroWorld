@@ -13,6 +13,7 @@ Int 30
 Wis 30
 Pow 30
 monster 1
+move_type walk
 alive 1
 type 50
 attacktype 5

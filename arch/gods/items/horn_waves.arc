@@ -4,8 +4,7 @@ title of Ocean Waves
 face shellhorn2.111
 randomitems horn_waves
 msg
-  Putting this shell to your ear, you hear 
-  the crashing sound of ocean waves.
+  Putting this shell to your ear, you hear the crashing sound of ocean waves.
 endmsg
 type 3
 level 30
@@ -15,7 +14,6 @@ material 2
 hp 24
 maxhp 24
 speed 0.1
-editable 2048
 name_pl horns
 client_type 721
 startequip 1

@@ -9,9 +9,8 @@ weight 2500
 type 99
 material 8
 resist_physical 3
-flying 1
-editable 5120
-magicmap white
+move_type fly_low
 body_foot -2
 item_power 1
+map_layer item
 end

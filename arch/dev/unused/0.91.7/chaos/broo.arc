@@ -1,11 +1,6 @@
 Object broo
 face broo.111
-anim
-broo.111
-broo.112
-broo.113
-broo.112
-mina
+animation broo
 monster 1
 Wis 10
 no_pick 1
@@ -27,10 +22,9 @@ will_apply 2
 pick_up 50
 can_apply 20
 can_use_scroll 1
-can_use_wand 1
+can_use_range 1
 can_use_bow 1
 can_use_ring 1
 can_use_armour 1
 can_use_weapon 1
-editable 1
 end

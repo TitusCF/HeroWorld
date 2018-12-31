@@ -11,8 +11,6 @@ ac 4
 resist_physical 20
 weight 40000
 value 85
-editable 1024
-magicmap black
 body_torso -1
 gen_sp_armour 15
 end

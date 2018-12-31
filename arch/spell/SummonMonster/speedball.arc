@@ -1,10 +1,6 @@
 Object speedball
 face speedball.111
-color_fg red
-anim
-speedball.111
-speedball.112
-mina
+animation speedball
 exp 2
 is_used_up 1
 food 20
@@ -17,9 +13,8 @@ speed 1
 monster 1
 see_invisible 1
 no_pick 1
-flying 1
+move_type fly_low
 weight 1000
 only_attack 1
-editable 0
 one_hit 1
 end

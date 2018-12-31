@@ -1,5 +1,6 @@
 Object defender
 name Defender
+anim_suffix double_sword
 nrof 1
 last_sp 8
 ac -1
@@ -12,10 +13,8 @@ resist_drain 50
 resist_physical 50
 magic 3
 value 150000
-editable 5120
 attacktype 1
 weapontype 1
-magicmap grey
 name_pl Defenders
 client_type 100
 body_arm -1

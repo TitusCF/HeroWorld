@@ -4,14 +4,12 @@ type 14
 nrof 1
 material 16
 face crossbow.111
-color_fg brown
-dam 15
+dam 7
 weight 25000
-sp 19
+sp 40
 wc 1
-value 75
+value 40
 no_strength 1
-editable 1024
 attacktype 1
 name_pl crossbows
 client_type 161

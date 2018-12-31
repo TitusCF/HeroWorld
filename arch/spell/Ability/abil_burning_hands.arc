@@ -1,6 +1,8 @@
 Object abil_burning_hands
+anim_suffix spellcasting
 name burning hands ability
 name_pl burning hands ability
+face spell_burning_hands.111
 level 1
 sp 5
 casting_time 5
@@ -18,4 +20,5 @@ value 10
 attacktype 4
 no_drop 1
 invisible 1
+skill pyromancy
 end

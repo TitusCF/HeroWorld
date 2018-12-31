@@ -8,6 +8,7 @@ slaying goblin,troll
 animation elf_1
 is_animated 1
 monster 1
+move_type walk
 alive 1
 Str 30
 Con 30
@@ -36,11 +37,9 @@ can_use_weapon 1
 can_use_armour 1
 can_use_shield 1
 msg
-Elven god of luck, Huntsman of Goblins, 
-Trollslayer, the Trickster
+Elven god of luck, Huntsman of Goblins, Trollslayer, the Trickster
 endmsg
 exp 1
 weight 500000
 randomitems Lythander
-editable 0
 end

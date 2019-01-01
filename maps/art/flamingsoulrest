@@ -1,12 +1,13 @@
 arch map
 name flamingsoulrest
 region tindervale
+width 25
+height 10
 msg
 Creator: Art
 Date:    5/3/2006
+Modified: 2019-01-01 Acer
 endmsg
-width 25
-height 10
 end
 arch woodfloor
 end
@@ -93,18 +94,18 @@ msg
 @match *
 mind if I smoke?
 endmsg
-type 0
-randomitems standard
-level 10
-exp 100
-dam 3
+Con 10
 hp 100
 maxhp 100
-Con 10
-monster 1
-unaggressive 1
+exp 100
+dam 3
 x 1
 y 3
+level 10
+type 0
+randomitems standard
+monster 1
+unaggressive 1
 end
 arch woodfloor
 x 1
@@ -189,18 +190,18 @@ msg
 @match *
 I'm waiting for my food...
 endmsg
-type 0
-randomitems standard
-level 10
-exp 100
-dam 3
+Con 10
 hp 100
 maxhp 100
-Con 10
-monster 1
-unaggressive 1
+exp 100
+dam 3
 x 2
 y 6
+level 10
+type 0
+randomitems standard
+monster 1
+unaggressive 1
 end
 arch woodfloor
 x 2
@@ -254,18 +255,18 @@ msg
 @match *
 I'ts been too long since I've eaten away from the corps...
 endmsg
-type 0
-randomitems standard
-level 10
-exp 100
-dam 3
+Con 10
 hp 100
 maxhp 100
-Con 10
-monster 1
-unaggressive 1
+exp 100
+dam 3
 x 3
 y 4
+level 10
+type 0
+randomitems standard
+monster 1
+unaggressive 1
 end
 arch woodfloor
 x 3
@@ -460,18 +461,18 @@ msg
 @match *
 Man... this should be good...
 endmsg
-type 0
-randomitems standard
-level 10
-exp 100
-dam 3
+Con 10
 hp 100
 maxhp 100
-Con 10
-monster 1
-unaggressive 1
+exp 100
+dam 3
 x 7
 y 1
+level 10
+type 0
+randomitems standard
+monster 1
+unaggressive 1
 end
 arch woodfloor
 x 7
@@ -503,10 +504,10 @@ y 5
 end
 arch altar_trigger
 slaying pix_wing
-connected 1
-last_sp 1
 x 7
 y 6
+last_sp 1
+connected 1
 end
 arch woodfloor
 x 7
@@ -564,9 +565,9 @@ y 4
 end
 arch creator
 other_arch potion_restoration
-connected 1
 x 8
 y 5
+connected 1
 end
 arch woodfloor
 x 8
@@ -578,7 +579,7 @@ y 6
 end
 arch guildmaster
 name dragon hatchling
-face pl_dragon.171
+race dragon
 msg
 @match demon
 I came all the way from scorn to this place... the rooms are good, AND the cook is amazing
@@ -591,15 +592,15 @@ If you give me 5 pixie wings, I'll reward you... If you have them, put 'em on th
 @match *
 Wow... I did not know they made this... demon head is a delicacy...
 endmsg
-randomitems standard
-race dragon
+face pl_dragon_r.151
 hp 100
 maxhp 100
-monster 0
-stand_still 1
-pick_up 0
 x 8
 y 6
+randomitems standard
+pick_up 0
+monster 0
+stand_still 1
 end
 arch woodfloor
 x 8
@@ -690,18 +691,18 @@ msg
 @match *
 I've had my supper, but now the Cook is making my desert
 endmsg
-type 0
-randomitems standard
-level 10
-exp 100
-dam 3
+Con 10
 hp 100
 maxhp 100
-Con 10
-monster 1
-unaggressive 1
+exp 100
+dam 3
 x 10
 y 3
+level 10
+type 0
+randomitems standard
+monster 1
+unaggressive 1
 end
 arch woodfloor
 x 10
@@ -1035,27 +1036,27 @@ x 16
 y 6
 end
 arch bench_2_2_2
-no_pass 1
 x 16
 y 6
+no_pass 1
 end
 arch woodfloor
 x 16
 y 7
 end
 arch bench_2_1_1
-no_pass 1
 x 16
 y 7
+no_pass 1
 end
 arch woodfloor
 x 16
 y 8
 end
 arch bench_1_2
-no_pass 1
 x 16
 y 8
+no_pass 1
 end
 arch woodfloor
 x 16
@@ -1096,9 +1097,9 @@ x 17
 y 6
 end
 arch bench_2_1_2
-no_pass 1
 x 17
 y 6
+no_pass 1
 end
 arch woodfloor
 x 17
@@ -1111,18 +1112,18 @@ msg
 welcome to the flamig soul's rest. the rooms are upstairs, and the kitchen is right behind me.
 enjoy your stay
 endmsg
-type 0
-randomitems standard
-level 10
-exp 100
-dam 3
+Con 10
 hp 100
 maxhp 100
-Con 10
-monster 1
-unaggressive 1
+exp 100
+dam 3
 x 17
 y 7
+level 10
+type 0
+randomitems standard
+monster 1
+unaggressive 1
 end
 arch woodfloor
 x 17
@@ -1167,9 +1168,9 @@ x 18
 y 6
 end
 arch bench_1_3
-no_pass 1
 x 18
 y 6
+no_pass 1
 end
 arch woodfloor
 x 18
@@ -1299,18 +1300,18 @@ msg
 shh... don't want the souflee to fall...
 If you want something to eat, the tables over there have some...
 endmsg
-type 0
-randomitems standard
-level 10
-exp 100
-dam 3
+Con 10
 hp 100
 maxhp 100
-Con 10
-monster 1
-unaggressive 1
+exp 100
+dam 3
 x 20
 y 7
+level 10
+type 0
+randomitems standard
+monster 1
+unaggressive 1
 end
 arch woodfloor
 x 20
@@ -1592,4 +1593,3 @@ arch flagstone_2_2_4
 x 24
 y 9
 end
-

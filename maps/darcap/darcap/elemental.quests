@@ -1,0 +1,164 @@
+quest darcap/Elemental
+title Darcap's Elemental quest
+face quest_darcap_elemental.111
+description
+Solve the four elemental quests, and get some equipment as a reward.
+end_description
+restart 1
+step 10
+description
+I must solve the four elemental quests.
+end_description
+end_step
+step 20
+description
+I have solved the four elemental quests, I can now claim my reward.
+end_description
+setwhen
+darcap/Elemental 10
+darcap/Elemental-Fire 20
+darcap/Elemental-Water 20
+darcap/Elemental-Air 20
+darcap/Elemental-Earth 20
+end_setwhen
+end_step
+step 30
+finishes_quest
+description
+I claimed my reward, and completed the quest.
+end_description
+end_step
+end_quest
+
+quest darcap/Elemental-Fire
+title Darcap's Fire Elemental quest
+face elem_fire.111
+description
+I must solve the fire elemental quest.
+end_description
+parent darcap/Elemental
+restart 1
+step 10
+description
+I must solve the fire elemental quest.
+end_description
+setwhen
+darcap/Elemental 10
+end_setwhen
+end_step
+step 20
+description
+I have solved the fire elemental quest, and need to solve the others.
+end_description
+end_step
+step 30
+finishes_quest
+description
+I have solved the fire elemental quest.
+end_description
+setwhen
+darcap/Elemental 0
+darcap/Elemental-Fire 20
+end_setwhen
+end_step
+end_quest
+
+quest darcap/Elemental-Air
+title Darcap's Air Elemental quest
+face elem_air.111
+description
+I must solve the air elemental quest.
+end_description
+parent darcap/Elemental
+restart 1
+step 10
+description
+I must solve the air elemental quest.
+end_description
+setwhen
+darcap/Elemental 10
+end_setwhen
+end_step
+step 20
+description
+I have solved the air elemental quest, and need to solve the others.
+end_description
+end_step
+step 30
+finishes_quest
+description
+I have solved the air elemental quest.
+end_description
+setwhen
+darcap/Elemental 0
+darcap/Elemental-Air 20
+end_setwhen
+end_step
+end_quest
+
+quest darcap/Elemental-Earth
+title Darcap's Earth Elemental quest
+face elem_earth.111
+description
+I must solve the earth elemental quest.
+end_description
+parent darcap/Elemental
+restart 1
+step 10
+description
+I must solve the earth elemental quest.
+end_description
+setwhen
+darcap/Elemental 10
+end_setwhen
+end_step
+step 20
+description
+I have solved the earth elemental quest, and need to solve the others.
+end_description
+end_step
+step 30
+finishes_quest
+description
+I have solved the earth elemental quest.
+end_description
+setwhen
+darcap/Elemental 0
+darcap/Elemental-Earth 20
+end_setwhen
+end_step
+end_quest
+
+quest darcap/Elemental-Water
+title Darcap's Water Elemental quest
+face elem_water.111
+description
+I must solve the water elemental quest.
+end_description
+parent darcap/Elemental
+restart 1
+step 10
+description
+I must solve the water elemental quest.
+end_description
+setwhen
+darcap/Elemental 10
+end_setwhen
+end_step
+step 20
+description
+I have solved the water elemental quest, and need to solve the others.
+end_description
+end_step
+step 30
+finishes_quest
+description
+I have solved the water elemental quest.
+end_description
+setwhen
+darcap/Elemental 0
+darcap/Elemental-Water 20
+end_setwhen
+end_step
+end_quest
+

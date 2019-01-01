@@ -1,0 +1,44 @@
+# Quest definition file
+# This file describes the various quests known to the game, and used through the functions in quest.c
+#
+# Format is pretty simple:
+# quest "internal code, whatever you wand but must be unique"
+# title "one-line to describe the quest"
+# description
+# "multi-line"
+# "description if you feel like it"
+# end_description
+# restart "optional integer, if non zero the quest can be done multiple times"
+# (then multiple "step/end_step" blocks)
+# step "integer value for the step"
+# description
+# "multi-line step"
+# "description"
+# end_description
+# end_step
+# (then after all steps)
+# end_quest
+# you can include other quest files by using
+# include path/to/file.quests
+# the include path can be either relative or absolute to the maps/ directory 
+# (this can be done by starting the path with a /)
+# any files that are included may have other files included from them.
+
+include darcap/darcap.quests
+
+include scorn/scorn.quests
+
+include test/test.quests
+
+include start/start.quests
+
+include wolfsburg/wolfsburg.quests
+
+include darcap/darcap/elemental.quests
+
+include santo_dominion/santo_dominion.quests
+
+include lake_country/lake_country.quests
+
+include navar_city/navar_city.quests
+

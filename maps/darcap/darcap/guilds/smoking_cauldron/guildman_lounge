@@ -1,0 +1,4277 @@
+arch map
+name Guild of Smoking Cauldron, Guildman's Lounge
+reset_timeout 300
+difficulty 1
+region darcap
+width 22
+height 18
+enter_x 1
+enter_y 8
+msg
+Created:  2004-05-12
+Modified: 2011-10-30 Rick Tanner
+endmsg
+end
+arch woodfloor
+type 71
+unique 1
+end
+arch wall_2_2_2
+type 77
+end
+arch woodfloor
+y 1
+type 71
+unique 1
+end
+arch wall_3_2
+y 1
+type 77
+end
+arch woodfloor
+y 2
+type 71
+unique 1
+end
+arch wall_3_2
+y 2
+type 77
+end
+arch woodfloor
+y 3
+type 71
+unique 1
+end
+arch wall_3_2
+y 3
+type 77
+end
+arch woodfloor
+y 4
+type 71
+unique 1
+end
+arch wall_3_2
+y 4
+type 77
+end
+arch woodfloor
+y 5
+type 71
+unique 1
+end
+arch wall_3_2
+y 5
+type 77
+end
+arch woodfloor
+y 6
+type 71
+unique 1
+end
+arch wall_3_2
+y 6
+type 77
+end
+arch woodfloor
+y 7
+type 71
+unique 1
+end
+arch wall_3_2
+y 7
+type 77
+end
+arch woodfloor
+y 8
+type 71
+unique 1
+end
+arch wall_2_1_1
+y 8
+type 77
+end
+arch woodfloor
+y 9
+type 71
+unique 1
+end
+arch wall_3_2
+y 9
+type 77
+end
+arch woodfloor
+y 10
+type 71
+unique 1
+end
+arch wall_2_1_1
+y 10
+type 77
+end
+arch woodfloor
+y 11
+type 71
+unique 1
+end
+arch wall_3_2
+y 11
+type 77
+end
+arch woodfloor
+y 12
+type 71
+unique 1
+end
+arch wall_3_2
+y 12
+type 77
+end
+arch woodfloor
+y 13
+type 71
+unique 1
+end
+arch wall_3_2
+y 13
+type 77
+end
+arch woodfloor
+y 14
+type 71
+unique 1
+end
+arch wall_3_2
+y 14
+type 77
+end
+arch woodfloor
+y 15
+type 71
+unique 1
+end
+arch wall_3_2
+y 15
+type 77
+end
+arch woodfloor
+y 16
+type 71
+unique 1
+end
+arch wall_3_2
+y 16
+type 77
+end
+arch woodfloor
+y 17
+type 71
+unique 1
+end
+arch wall_2_2_1
+y 17
+type 77
+end
+arch woodfloor
+x 1
+type 71
+unique 1
+end
+arch wall_3_3
+x 1
+type 77
+end
+arch woodfloor
+x 1
+y 1
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 1
+y 1
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 1
+y 2
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 1
+y 2
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 1
+y 3
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 1
+y 3
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 1
+y 4
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 1
+y 4
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 1
+y 5
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 1
+y 5
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 1
+y 6
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 1
+y 6
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 1
+y 7
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_3_1
+x 1
+y 7
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 1
+y 8
+type 71
+unique 1
+end
+arch stair_up
+slaying novice_lounge
+hp 1
+sp 10
+x 1
+y 8
+end
+arch trap_blades
+msg
+endmsg
+Cha 200000
+hp 1000
+dam 0
+x 1
+y 8
+level 100
+attacktype 0
+arch event_trigger
+name SmokingCauldron Initiate A
+title Python
+slaying /python/guilds/arrest.py
+end
+end
+arch woodfloor
+x 1
+y 9
+type 71
+unique 1
+end
+arch wall_2_1_2
+x 1
+y 9
+type 77
+end
+arch woodfloor
+x 1
+y 10
+type 71
+unique 1
+end
+arch stair_down_2
+slaying journeyman_lounge
+hp 1
+sp 8
+x 1
+y 10
+end
+arch woodfloor
+x 1
+y 11
+type 71
+unique 1
+end
+arch wall_3_3
+x 1
+y 11
+type 77
+end
+arch woodfloor
+x 1
+y 12
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 1
+y 12
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 1
+y 13
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 1
+y 13
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 1
+y 14
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 1
+y 14
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 1
+y 15
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 1
+y 15
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 1
+y 16
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 1
+y 16
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 1
+y 17
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_3_1
+x 1
+y 17
+type 77
+end
+arch woodfloor
+x 2
+type 71
+unique 1
+end
+arch wall_3_3
+x 2
+type 77
+end
+arch woodfloor
+x 2
+y 1
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 2
+y 1
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 2
+y 2
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 2
+y 2
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 2
+y 3
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 2
+y 3
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 2
+y 4
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 2
+y 4
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 2
+y 5
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 2
+y 5
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 2
+y 6
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 2
+y 6
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 2
+y 7
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_3_1
+x 2
+y 7
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 2
+y 8
+type 71
+unique 1
+is_buildable 1
+end
+arch woodfloor
+x 2
+y 9
+type 71
+unique 1
+end
+arch wall_2_1_2
+x 2
+y 9
+type 77
+end
+arch button_small
+x 2
+y 10
+connected 9998
+end
+arch woodfloor
+x 2
+y 10
+type 71
+unique 1
+end
+arch trap_blades
+msg
+endmsg
+Cha 200000
+hp 1000
+dam 0
+x 2
+y 10
+level 100
+attacktype 0
+arch event_trigger
+name SmokingCauldron Initiate A
+title Python
+slaying /python/guilds/arrest.py
+end
+end
+arch woodfloor
+x 2
+y 11
+type 71
+unique 1
+end
+arch wall_3_3
+x 2
+y 11
+type 77
+end
+arch woodfloor
+x 2
+y 12
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 2
+y 12
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 2
+y 13
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 2
+y 13
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 2
+y 14
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 2
+y 14
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 2
+y 15
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 2
+y 15
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 2
+y 16
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 2
+y 16
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 2
+y 17
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_3_1
+x 2
+y 17
+type 77
+end
+arch woodfloor
+x 3
+type 71
+unique 1
+end
+arch wall_3_3
+x 3
+type 77
+end
+arch woodfloor
+x 3
+y 1
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 3
+y 1
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 3
+y 2
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 3
+y 2
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 3
+y 3
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 3
+y 3
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 3
+y 4
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 3
+y 4
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 3
+y 5
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 3
+y 5
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 3
+y 6
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 3
+y 6
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 3
+y 7
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_3_1
+x 3
+y 7
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 3
+y 8
+type 71
+unique 1
+is_buildable 1
+end
+arch book_clasp
+name Note to the Lucky Owners
+msg
+As you are certainly aware, we at Guild Houses Inc. take great care of our customer's satisfaction.
+Unfortunately this is not the case of all our suppliers.
+Thus the roof of the Big Storage Room collapsed last time a dragon flew too low.
+While we sue the indelicate supplier who made the roof up to his last silver coin, and the dragon to its last scale, we decided to let you, the Customer, pay for the repairs. You will, this way, be able to customize this Big Storage Room to your tastes, and pay our partner organization Acme Inc. many building fees.
+We hope you will enjoy building this place!
+endmsg
+x 3
+y 8
+value 0
+identified 1
+end
+arch woodfloor
+x 3
+y 9
+type 71
+unique 1
+end
+arch wall_1_3
+x 3
+y 9
+type 77
+end
+arch woodfloor
+x 3
+y 10
+type 71
+unique 1
+is_buildable 1
+end
+arch dungeon_magic
+x 3
+y 10
+end
+arch grate_closed_2
+x 3
+y 10
+connected 9998
+end
+arch woodfloor
+x 3
+y 11
+type 71
+unique 1
+end
+arch wall_3_3
+x 3
+y 11
+type 77
+end
+arch woodfloor
+x 3
+y 12
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 3
+y 12
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 3
+y 13
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 3
+y 13
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 3
+y 14
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 3
+y 14
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 3
+y 15
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 3
+y 15
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 3
+y 16
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 3
+y 16
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 3
+y 17
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_3_1
+x 3
+y 17
+type 77
+end
+arch woodfloor
+x 4
+type 71
+unique 1
+end
+arch wall_3_3
+x 4
+type 77
+end
+arch woodfloor
+x 4
+y 1
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 4
+y 1
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 4
+y 2
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 4
+y 2
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 4
+y 3
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 4
+y 3
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 4
+y 4
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 4
+y 4
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 4
+y 5
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 4
+y 5
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 4
+y 6
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 4
+y 6
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 4
+y 7
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_3_1
+x 4
+y 7
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 4
+y 8
+type 71
+unique 1
+is_buildable 1
+end
+arch woodfloor
+x 4
+y 9
+type 71
+unique 0
+is_buildable 1
+end
+arch guard
+x 4
+y 9
+level 1000
+attacktype 5201023
+monster 0
+friendly 1
+hitback 1
+reflect_missile 0
+reflect_spell 0
+can_use_scroll 1
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+can_use_ring 1
+can_use_skill 1
+can_use_rod 1
+can_see_in_dark 1
+can_use_wand 1
+arch event_say
+name SmokingCauldron Journeyman 9991
+title Python
+slaying /python/guilds/guild_entry.py
+end
+end
+arch woodfloor
+x 4
+y 10
+type 71
+unique 1
+is_buildable 1
+end
+arch woodfloor
+x 4
+y 11
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_3_3
+x 4
+y 11
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 4
+y 12
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 4
+y 12
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 4
+y 13
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 4
+y 13
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 4
+y 14
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 4
+y 14
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 4
+y 15
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 4
+y 15
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 4
+y 16
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 4
+y 16
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 4
+y 17
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_3_1
+x 4
+y 17
+type 77
+end
+arch woodfloor
+x 5
+type 71
+unique 1
+end
+arch wall_3_3
+x 5
+type 77
+end
+arch woodfloor
+x 5
+y 1
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 5
+y 1
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 5
+y 2
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 5
+y 2
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 5
+y 3
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 5
+y 3
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 5
+y 4
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 5
+y 4
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 5
+y 5
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 5
+y 5
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 5
+y 6
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 5
+y 6
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 5
+y 7
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_3_1
+x 5
+y 7
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 5
+y 8
+type 71
+unique 1
+is_buildable 1
+end
+arch woodfloor
+x 5
+y 9
+type 71
+unique 1
+is_buildable 1
+end
+arch woodfloor
+x 5
+y 10
+type 71
+unique 1
+is_buildable 1
+end
+arch woodfloor
+x 5
+y 11
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_3_3
+x 5
+y 11
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 5
+y 12
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 5
+y 12
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 5
+y 13
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 5
+y 13
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 5
+y 14
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 5
+y 14
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 5
+y 15
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 5
+y 15
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 5
+y 16
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 5
+y 16
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 5
+y 17
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_3_1
+x 5
+y 17
+type 77
+end
+arch woodfloor
+x 6
+type 71
+unique 1
+end
+arch wall_3_3
+x 6
+type 77
+end
+arch woodfloor
+x 6
+y 1
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 6
+y 1
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 6
+y 2
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 6
+y 2
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 6
+y 3
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 6
+y 3
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 6
+y 4
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 6
+y 4
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 6
+y 5
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 6
+y 5
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 6
+y 6
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 6
+y 6
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 6
+y 7
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 6
+y 7
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 6
+y 8
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_3_2
+x 6
+y 8
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 6
+y 9
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_3_2
+x 6
+y 9
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 6
+y 10
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_3_2
+x 6
+y 10
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 6
+y 11
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 6
+y 11
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 6
+y 12
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 6
+y 12
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 6
+y 13
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 6
+y 13
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 6
+y 14
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 6
+y 14
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 6
+y 15
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 6
+y 15
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 6
+y 16
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 6
+y 16
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 6
+y 17
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_3_1
+x 6
+y 17
+type 77
+end
+arch woodfloor
+x 7
+type 71
+unique 1
+end
+arch wall_3_3
+x 7
+type 77
+end
+arch woodfloor
+x 7
+y 1
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 7
+y 1
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 7
+y 2
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 7
+y 2
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 7
+y 3
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 7
+y 3
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 7
+y 4
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 7
+y 4
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 7
+y 5
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 7
+y 5
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 7
+y 6
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 7
+y 6
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 7
+y 7
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 7
+y 7
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 7
+y 8
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 7
+y 8
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 7
+y 9
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 7
+y 9
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 7
+y 10
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 7
+y 10
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 7
+y 11
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 7
+y 11
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 7
+y 12
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 7
+y 12
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 7
+y 13
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 7
+y 13
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 7
+y 14
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 7
+y 14
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 7
+y 15
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 7
+y 15
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 7
+y 16
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 7
+y 16
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 7
+y 17
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_3_1
+x 7
+y 17
+type 77
+end
+arch woodfloor
+x 8
+type 71
+unique 1
+end
+arch wall_3_3
+x 8
+type 77
+end
+arch woodfloor
+x 8
+y 1
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 8
+y 1
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 8
+y 2
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 8
+y 2
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 8
+y 3
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 8
+y 3
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 8
+y 4
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 8
+y 4
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 8
+y 5
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 8
+y 5
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 8
+y 6
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 8
+y 6
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 8
+y 7
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 8
+y 7
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 8
+y 8
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 8
+y 8
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 8
+y 9
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 8
+y 9
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 8
+y 10
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 8
+y 10
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 8
+y 11
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 8
+y 11
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 8
+y 12
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 8
+y 12
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 8
+y 13
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 8
+y 13
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 8
+y 14
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 8
+y 14
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 8
+y 15
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 8
+y 15
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 8
+y 16
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 8
+y 16
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 8
+y 17
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_3_1
+x 8
+y 17
+type 77
+end
+arch woodfloor
+x 9
+type 71
+unique 1
+end
+arch wall_3_3
+x 9
+type 77
+end
+arch woodfloor
+x 9
+y 1
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 9
+y 1
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 9
+y 2
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 9
+y 2
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 9
+y 3
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 9
+y 3
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 9
+y 4
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 9
+y 4
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 9
+y 5
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 9
+y 5
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 9
+y 6
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 9
+y 6
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 9
+y 7
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 9
+y 7
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 9
+y 8
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 9
+y 8
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 9
+y 9
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 9
+y 9
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 9
+y 10
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 9
+y 10
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 9
+y 11
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 9
+y 11
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 9
+y 12
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 9
+y 12
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 9
+y 13
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 9
+y 13
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 9
+y 14
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 9
+y 14
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 9
+y 15
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 9
+y 15
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 9
+y 16
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 9
+y 16
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 9
+y 17
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_3_1
+x 9
+y 17
+type 77
+end
+arch woodfloor
+x 10
+type 71
+unique 1
+end
+arch wall_3_3
+x 10
+type 77
+end
+arch woodfloor
+x 10
+y 1
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 10
+y 1
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 10
+y 2
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 10
+y 2
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 10
+y 3
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 10
+y 3
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 10
+y 4
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 10
+y 4
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 10
+y 5
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 10
+y 5
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 10
+y 6
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 10
+y 6
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 10
+y 7
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 10
+y 7
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 10
+y 8
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 10
+y 8
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 10
+y 9
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 10
+y 9
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 10
+y 10
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 10
+y 10
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 10
+y 11
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 10
+y 11
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 10
+y 12
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 10
+y 12
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 10
+y 13
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 10
+y 13
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 10
+y 14
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 10
+y 14
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 10
+y 15
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 10
+y 15
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 10
+y 16
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 10
+y 16
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 10
+y 17
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_3_1
+x 10
+y 17
+type 77
+end
+arch woodfloor
+x 11
+type 71
+unique 1
+end
+arch wall_3_3
+x 11
+type 77
+end
+arch woodfloor
+x 11
+y 1
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 11
+y 1
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 11
+y 2
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 11
+y 2
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 11
+y 3
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 11
+y 3
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 11
+y 4
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 11
+y 4
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 11
+y 5
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 11
+y 5
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 11
+y 6
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 11
+y 6
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 11
+y 7
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 11
+y 7
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 11
+y 8
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 11
+y 8
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 11
+y 9
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 11
+y 9
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 11
+y 10
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 11
+y 10
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 11
+y 11
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 11
+y 11
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 11
+y 12
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 11
+y 12
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 11
+y 13
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 11
+y 13
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 11
+y 14
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 11
+y 14
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 11
+y 15
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 11
+y 15
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 11
+y 16
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 11
+y 16
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 11
+y 17
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_3_1
+x 11
+y 17
+type 77
+end
+arch woodfloor
+x 12
+type 71
+unique 1
+end
+arch wall_3_3
+x 12
+type 77
+end
+arch woodfloor
+x 12
+y 1
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 12
+y 1
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 12
+y 2
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 12
+y 2
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 12
+y 3
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 12
+y 3
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 12
+y 4
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 12
+y 4
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 12
+y 5
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 12
+y 5
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 12
+y 6
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 12
+y 6
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 12
+y 7
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 12
+y 7
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 12
+y 8
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 12
+y 8
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 12
+y 9
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 12
+y 9
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 12
+y 10
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 12
+y 10
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 12
+y 11
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 12
+y 11
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 12
+y 12
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 12
+y 12
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 12
+y 13
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 12
+y 13
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 12
+y 14
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 12
+y 14
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 12
+y 15
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 12
+y 15
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 12
+y 16
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 12
+y 16
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 12
+y 17
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_3_1
+x 12
+y 17
+type 77
+end
+arch woodfloor
+x 13
+type 71
+unique 1
+end
+arch wall_3_3
+x 13
+type 77
+end
+arch woodfloor
+x 13
+y 1
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 13
+y 1
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 13
+y 2
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 13
+y 2
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 13
+y 3
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 13
+y 3
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 13
+y 4
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 13
+y 4
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 13
+y 5
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 13
+y 5
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 13
+y 6
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 13
+y 6
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 13
+y 7
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 13
+y 7
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 13
+y 8
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 13
+y 8
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 13
+y 9
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 13
+y 9
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 13
+y 10
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 13
+y 10
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 13
+y 11
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 13
+y 11
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 13
+y 12
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 13
+y 12
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 13
+y 13
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 13
+y 13
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 13
+y 14
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 13
+y 14
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 13
+y 15
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 13
+y 15
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 13
+y 16
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 13
+y 16
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 13
+y 17
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_3_1
+x 13
+y 17
+type 77
+end
+arch woodfloor
+x 14
+type 71
+unique 1
+end
+arch wall_3_3
+x 14
+type 77
+end
+arch woodfloor
+x 14
+y 1
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 14
+y 1
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 14
+y 2
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 14
+y 2
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 14
+y 3
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 14
+y 3
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 14
+y 4
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 14
+y 4
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 14
+y 5
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 14
+y 5
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 14
+y 6
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 14
+y 6
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 14
+y 7
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 14
+y 7
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 14
+y 8
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 14
+y 8
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 14
+y 9
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 14
+y 9
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 14
+y 10
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 14
+y 10
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 14
+y 11
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 14
+y 11
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 14
+y 12
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 14
+y 12
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 14
+y 13
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 14
+y 13
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 14
+y 14
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 14
+y 14
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 14
+y 15
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 14
+y 15
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 14
+y 16
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 14
+y 16
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 14
+y 17
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_3_1
+x 14
+y 17
+type 77
+end
+arch woodfloor
+x 15
+type 71
+unique 1
+end
+arch wall_3_3
+x 15
+type 77
+end
+arch woodfloor
+x 15
+y 1
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 15
+y 1
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 15
+y 2
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 15
+y 2
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 15
+y 3
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 15
+y 3
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 15
+y 4
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 15
+y 4
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 15
+y 5
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 15
+y 5
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 15
+y 6
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 15
+y 6
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 15
+y 7
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 15
+y 7
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 15
+y 8
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 15
+y 8
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 15
+y 9
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 15
+y 9
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 15
+y 10
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 15
+y 10
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 15
+y 11
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 15
+y 11
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 15
+y 12
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 15
+y 12
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 15
+y 13
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 15
+y 13
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 15
+y 14
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 15
+y 14
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 15
+y 15
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 15
+y 15
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 15
+y 16
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 15
+y 16
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 15
+y 17
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_3_1
+x 15
+y 17
+type 77
+end
+arch woodfloor
+x 16
+type 71
+unique 1
+end
+arch wall_3_3
+x 16
+type 77
+end
+arch woodfloor
+x 16
+y 1
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 16
+y 1
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 16
+y 2
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 16
+y 2
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 16
+y 3
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 16
+y 3
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 16
+y 4
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 16
+y 4
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 16
+y 5
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 16
+y 5
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 16
+y 6
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 16
+y 6
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 16
+y 7
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 16
+y 7
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 16
+y 8
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 16
+y 8
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 16
+y 9
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 16
+y 9
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 16
+y 10
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 16
+y 10
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 16
+y 11
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 16
+y 11
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 16
+y 12
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 16
+y 12
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 16
+y 13
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 16
+y 13
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 16
+y 14
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 16
+y 14
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 16
+y 15
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 16
+y 15
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 16
+y 16
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_4
+x 16
+y 16
+type 77
+is_buildable 1
+end
+arch woodfloor
+x 16
+y 17
+type 71
+unique 1
+is_buildable 1
+end
+arch wall_3_1
+x 16
+y 17
+type 77
+end
+arch woodfloor
+x 17
+type 71
+unique 1
+end
+arch wall_2_2_3
+x 17
+type 77
+end
+arch woodfloor
+x 17
+y 1
+type 71
+unique 1
+end
+arch wall_3_4
+x 17
+y 1
+type 77
+end
+arch woodfloor
+x 17
+y 2
+type 71
+unique 1
+end
+arch wall_3_4
+x 17
+y 2
+type 77
+end
+arch woodfloor
+x 17
+y 3
+type 71
+unique 1
+end
+arch wall_3_4
+x 17
+y 3
+type 77
+end
+arch woodfloor
+x 17
+y 4
+type 71
+unique 1
+end
+arch wall_3_4
+x 17
+y 4
+type 77
+end
+arch woodfloor
+x 17
+y 5
+type 71
+unique 1
+end
+arch wall_3_4
+x 17
+y 5
+type 77
+end
+arch woodfloor
+x 17
+y 6
+type 71
+unique 1
+end
+arch wall_3_4
+x 17
+y 6
+type 77
+end
+arch woodfloor
+x 17
+y 7
+type 71
+unique 1
+end
+arch wall_3_4
+x 17
+y 7
+type 77
+end
+arch woodfloor
+x 17
+y 8
+type 71
+unique 1
+end
+arch wall_3_4
+x 17
+y 8
+type 77
+end
+arch woodfloor
+x 17
+y 9
+type 71
+unique 1
+end
+arch wall_3_4
+x 17
+y 9
+type 77
+end
+arch woodfloor
+x 17
+y 10
+type 71
+unique 1
+end
+arch wall_3_4
+x 17
+y 10
+type 77
+end
+arch woodfloor
+x 17
+y 11
+type 71
+unique 1
+end
+arch wall_3_4
+x 17
+y 11
+type 77
+end
+arch woodfloor
+x 17
+y 12
+type 71
+unique 1
+end
+arch wall_3_4
+x 17
+y 12
+type 77
+end
+arch woodfloor
+x 17
+y 13
+type 71
+unique 1
+end
+arch wall_3_4
+x 17
+y 13
+type 77
+end
+arch woodfloor
+x 17
+y 14
+type 71
+unique 1
+end
+arch wall_3_4
+x 17
+y 14
+type 77
+end
+arch woodfloor
+x 17
+y 15
+type 71
+unique 1
+end
+arch wall_3_4
+x 17
+y 15
+type 77
+end
+arch woodfloor
+x 17
+y 16
+type 71
+unique 1
+end
+arch wall_3_4
+x 17
+y 16
+type 77
+end
+arch woodfloor
+x 17
+y 17
+type 71
+unique 1
+end
+arch wall_2_2_4
+x 17
+y 17
+type 77
+end
+arch blocked
+x 18
+end
+arch blocked
+x 18
+y 1
+end
+arch blocked
+x 18
+y 2
+end
+arch blocked
+x 18
+y 3
+end
+arch blocked
+x 18
+y 4
+end
+arch blocked
+x 18
+y 5
+end
+arch blocked
+x 18
+y 6
+end
+arch blocked
+x 18
+y 7
+end
+arch blocked
+x 18
+y 8
+end
+arch blocked
+x 18
+y 9
+end
+arch blocked
+x 18
+y 10
+end
+arch blocked
+x 18
+y 11
+end
+arch blocked
+x 18
+y 12
+end
+arch blocked
+x 18
+y 13
+end
+arch blocked
+x 18
+y 14
+end
+arch blocked
+x 18
+y 15
+end
+arch blocked
+x 18
+y 16
+end
+arch blocked
+x 18
+y 17
+end
+arch button_small
+x 21
+connected 9991
+end
+arch lightningwall_5
+x 21
+y 1
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_5
+x 21
+y 1
+end
+arch detector
+slaying lightning
+x 21
+y 2
+speed 1.0
+connected 9998
+end
+arch lightningwall_5
+sp 1
+x 21
+y 3
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 21
+y 3
+end
+arch lightningwall_5
+sp 1
+x 21
+y 4
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 21
+y 4
+end
+arch lightningwall_5
+sp 1
+x 21
+y 5
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 21
+y 5
+end
+arch lightningwall_5
+sp 1
+x 21
+y 6
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 21
+y 6
+end
+arch lightningwall_5
+sp 1
+x 21
+y 7
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 21
+y 7
+end
+arch lightningwall_5
+sp 1
+x 21
+y 8
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 21
+y 8
+end
+arch lightningwall_5
+sp 1
+x 21
+y 9
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 21
+y 9
+end
+arch lightningwall_5
+sp 1
+x 21
+y 10
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 21
+y 10
+end
+arch lightningwall_5
+sp 1
+x 21
+y 11
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 21
+y 11
+end

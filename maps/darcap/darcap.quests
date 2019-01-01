@@ -1,0 +1,62 @@
+include darcap/cameron.quests
+
+
+quest darcap/Spike
+title Spike's aching back
+face vial_red.111
+description
+Spike, the weapon shop owner, has backaches, and needs a potion to endure his pains.
+end_description
+restart 1
+step 10
+description
+You need to get a potion from the potion shop.
+end_description
+end_step
+step 20
+description
+You need to get some smaprh roots from Bob's shop in the south of Darcap.
+end_description
+end_step
+step 30
+description
+Bring back the smaprh roots to Molthir.
+end_description
+end_step
+step 40
+description
+Bring back the potion to Spike.
+end_description
+end_step
+step 50
+finishes_quest
+description
+You brought the potion back to Spike.
+end_description
+end_step
+end_quest
+
+quest darcap/TempleJustice
+title Temple Justice
+face quest_darcap_temple_justice.111
+description
+Find the legendary Temple of Justice.
+end_description
+step 10
+description
+You've heard there is a temple, named "Temple of Justice", somewhere west of Darcap. Reaching it implies to go around some lakes.
+end_description
+end_step
+step 20
+description
+You've found the Temple of Justice, but didn't yet reach its top.
+end_description
+end_step
+step 30
+finishes_quest
+description
+You've reached the top of the Temple of Justice.
+end_description
+end_step
+end_quest
+

@@ -1,12 +1,13 @@
 arch map
 name keepgrounds
 region tindervale
+width 25
+height 25
 msg
 Creator: CF Java Map Editor
 Date:    5/2/2006
+Modified: 2019-01-01 Acer
 endmsg
-width 25
-height 25
 end
 arch grass
 end
@@ -230,6 +231,10 @@ arch grass
 x 1
 y 17
 end
+arch farmhouse
+x 1
+y 17
+end
 arch grass
 x 1
 y 18
@@ -390,18 +395,18 @@ msg
 @match *
 I'm getting pissed... he's not pulling his weight...
 endmsg
-type 0
-randomitems standard
-level 10
-exp 100
-dam 3
+Con 10
 hp 100
 maxhp 100
-Con 10
-monster 1
-unaggressive 1
+exp 100
+dam 3
 x 2
 y 20
+level 10
+type 0
+randomitems standard
+monster 1
+unaggressive 1
 end
 arch grass
 x 2
@@ -607,11 +612,27 @@ arch grass
 x 4
 y 3
 end
+arch barrack_long
+x 4
+y 3
+end
 arch grass
 x 4
 y 4
 end
+arch barrack_long
+x 4
+y 4
+end
 arch grass
+x 4
+y 5
+end
+arch barrack_long
+name the pit
+slaying thepitentry
+hp 8
+sp 14
 x 4
 y 5
 end
@@ -802,6 +823,10 @@ arch grass
 x 5
 y 16
 end
+arch barn
+x 5
+y 16
+end
 arch grass
 x 5
 y 17
@@ -881,19 +906,19 @@ x 6
 y 3
 end
 arch fireborn
-type 0
-level 10
-exp 100
-randomitems standard
-dam 3
+Con 10
+Cha 10
 hp 100
 maxhp 100
-Con 10
-unaggressive 1
-monster 1
-Cha 10
+exp 100
+dam 3
 x 6
 y 3
+level 10
+type 0
+randomitems standard
+monster 1
+unaggressive 1
 end
 arch grass
 x 6
@@ -908,6 +933,14 @@ x 6
 y 6
 end
 arch grass
+x 6
+y 7
+end
+arch store_general
+name Jadus's gems
+slaying jadusgems
+hp 3
+sp 19
 x 6
 y 7
 end
@@ -1005,18 +1038,18 @@ msg
 @match *
 I guess someone has to work these fields...
 endmsg
-type 0
-randomitems standard
-level 10
-exp 100
-dam 3
+Con 10
 hp 100
 maxhp 100
-Con 10
-monster 1
-unaggressive 1
+exp 100
+dam 3
 x 6
 y 22
+level 10
+type 0
+randomitems standard
+monster 1
+unaggressive 1
 end
 arch grass
 x 6
@@ -1388,6 +1421,14 @@ arch grass
 x 9
 y 10
 end
+arch l_shop1
+name ACME building supplies
+slaying acme1
+hp 4
+sp 24
+x 9
+y 10
+end
 arch grass
 x 9
 y 11
@@ -1418,6 +1459,10 @@ x 9
 y 15
 end
 arch grass
+x 9
+y 16
+end
+arch barn
 x 9
 y 16
 end
@@ -1523,7 +1568,7 @@ arch grass
 x 10
 y 8
 end
-arch rjunct_we-sw
+arch river_crook_we-ne
 x 10
 y 8
 end
@@ -1633,15 +1678,23 @@ arch grass
 x 11
 y 4
 end
-arch grass
-no_pass 1
+arch stronghold
+name Art's keep
+slaying begin
+hp 9
+sp 18
 x 11
-y 5
+y 4
 end
 arch grass
+x 11
+y 5
 no_pass 1
+end
+arch grass
 x 11
 y 6
+no_pass 1
 end
 arch grass
 x 11
@@ -1655,7 +1708,11 @@ arch grass
 x 11
 y 8
 end
-arch rjunct_we-sw
+arch river_crook_we-ne
+x 11
+y 8
+end
+arch river_bridge_ns
 x 11
 y 8
 end
@@ -1825,26 +1882,15 @@ x 12
 y 4
 end
 arch grass
-no_pass 1
 x 12
 y 5
-end
-arch check_inv
-slaying art's key
-connected 1
-x 12
-y 6
+no_pass 1
 end
 arch grass
 x 12
 y 6
 end
 arch grass
-x 12
-y 7
-end
-arch grate_closed_1
-connected 1
 x 12
 y 7
 end
@@ -1852,17 +1898,11 @@ arch cityport_a
 x 12
 y 7
 end
-arch check_inv
-slaying art's key
-connected 1
-x 12
-y 8
-end
 arch grass
 x 12
 y 8
 end
-arch bridge_ns
+arch river_bridge_ns
 x 12
 y 8
 end
@@ -2051,14 +2091,14 @@ x 13
 y 4
 end
 arch grass
-no_pass 1
 x 13
 y 5
+no_pass 1
 end
 arch grass
-no_pass 1
 x 13
 y 6
+no_pass 1
 end
 arch grass
 x 13
@@ -2072,7 +2112,11 @@ arch grass
 x 13
 y 8
 end
-arch rjunct_we-sw
+arch river_crook_we-ne
+x 13
+y 8
+end
+arch river_bridge_ns
 x 13
 y 8
 end
@@ -2273,7 +2317,7 @@ arch grass
 x 14
 y 8
 end
-arch rjunct_we-se
+arch river_crook_we-ne
 x 14
 y 8
 end
@@ -2310,6 +2354,14 @@ x 14
 y 15
 end
 arch grass
+x 14
+y 16
+end
+arch store_magic
+name Babus's Books
+slaying bookstore
+hp 2
+sp 19
 x 14
 y 16
 end
@@ -2701,6 +2753,11 @@ arch grass
 x 17
 y 16
 end
+arch store_alchemy
+name Amy's Alchemy
+x 17
+y 16
+end
 arch grass
 x 17
 y 17
@@ -2881,6 +2938,11 @@ arch grass
 x 19
 y 4
 end
+arch store_magic
+name Rolan's Rods
+x 19
+y 4
+end
 arch grass
 x 19
 y 5
@@ -2901,6 +2963,14 @@ x 19
 y 7
 end
 arch grass
+x 19
+y 8
+end
+arch inn
+name Flaming Soul's Rest
+slaying flamingsoulrest
+hp 15
+sp 9
 x 19
 y 8
 end
@@ -2929,6 +2999,13 @@ x 19
 y 13
 end
 arch grass
+x 19
+y 14
+end
+arch cathedral
+slaying cathedral
+hp 10
+sp 48
 x 19
 y 14
 end
@@ -3658,89 +3735,3 @@ arch cwall_2_2_4
 x 24
 y 24
 end
-arch farmhouse
-x 1
-y 17
-end
-arch barrack_long
-x 4
-y 3
-end
-arch barrack_long
-x 4
-y 4
-end
-arch barrack_long
-name the pit
-slaying thepitentry
-hp 8
-sp 14
-x 4
-y 5
-end
-arch barn
-x 5
-y 16
-end
-arch store_general
-name Jadus's gems
-slaying jadusgems
-hp 3
-sp 19
-x 6
-y 7
-end
-arch l_shop1
-name ACME building supplies
-slaying acme1
-hp 4
-sp 24
-x 9
-y 10
-end
-arch barn
-x 9
-y 16
-end
-arch stronghold
-name Art's keep
-slaying begin
-hp 9
-sp 18
-x 11
-y 4
-end
-arch store_magic
-name Babus's Books
-slaying bookstore
-hp 2
-sp 19
-x 14
-y 16
-end
-arch store_alchemy
-name Amy's Alchemy
-x 17
-y 16
-end
-arch store_magic
-name Rolan's Rods
-x 19
-y 4
-end
-arch inn
-name Flaming Soul's Rest
-slaying flamingsoulrest
-hp 15
-sp 9
-x 19
-y 8
-end
-arch cathedral
-slaying cathedral
-hp 10
-sp 48
-x 19
-y 14
-end
-

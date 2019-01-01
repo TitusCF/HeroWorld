@@ -1,0 +1,2265 @@
+arch map
+name Sentrio's farmhouse
+difficulty 35
+region lakecountry
+width 20
+height 20
+enter_x 4
+enter_y 18
+msg
+Created:  2007-05-23 Nicolas Weeger
+Modified: 2012-02-03 Rick Tanner
+endmsg
+maplore
+@quest Lursendis
+Place to get the eggs, assuming the player has the right items for that.
+endmaplore
+outdoor 1
+end
+arch woodfloor
+end
+arch woodwall_2_2_2
+end
+arch woodfloor
+y 1
+end
+arch woodwall_2_1_1
+y 1
+end
+arch woodfloor
+y 2
+end
+arch woodwall_2_1_1
+y 2
+end
+arch woodfloor
+y 3
+end
+arch woodwall_2_1_1
+y 3
+end
+arch woodfloor
+y 4
+end
+arch woodwall_3_2
+y 4
+end
+arch woodfloor
+y 5
+end
+arch woodwall_2_1_1
+y 5
+end
+arch woodfloor
+y 6
+end
+arch woodwall_2_1_1
+y 6
+end
+arch woodfloor
+y 7
+end
+arch woodwall_2_1_1
+y 7
+end
+arch woodfloor
+y 8
+end
+arch woodwall_2_1_1
+y 8
+end
+arch woodfloor
+y 9
+end
+arch woodwall_2_1_1
+y 9
+end
+arch woodfloor
+y 10
+end
+arch woodwall_3_2
+y 10
+end
+arch small_stones
+y 11
+end
+arch woodwall_2_1_1
+y 11
+end
+arch small_stones
+y 12
+end
+arch woodwall_2_1_1
+y 12
+end
+arch small_stones
+y 13
+end
+arch woodwall_2_1_1
+y 13
+end
+arch small_stones
+y 14
+end
+arch woodwall_2_1_1
+y 14
+end
+arch small_stones
+y 15
+end
+arch woodwall_2_1_1
+y 15
+end
+arch small_stones
+y 16
+end
+arch woodwall_2_1_1
+y 16
+end
+arch small_stones
+y 17
+end
+arch woodwall_2_1_1
+y 17
+end
+arch small_stones
+y 18
+end
+arch woodwall_2_1_1
+y 18
+end
+arch small_stones
+y 19
+end
+arch woodwall_2_2_1
+y 19
+end
+arch woodfloor
+x 1
+end
+arch woodwall_2_1_2
+x 1
+end
+arch dirtfloor
+x 1
+y 1
+end
+arch random_food
+x 1
+y 1
+end
+arch dirtfloor
+x 1
+y 2
+end
+arch random_food
+x 1
+y 2
+end
+arch dirtfloor
+x 1
+y 3
+end
+arch random_food
+x 1
+y 3
+end
+arch dirtfloor
+x 1
+y 4
+end
+arch woodwall_1_3
+x 1
+y 4
+end
+arch woodfloor
+x 1
+y 5
+end
+arch woodfloor
+x 1
+y 6
+end
+arch woodfloor
+x 1
+y 7
+end
+arch woodfloor
+x 1
+y 8
+end
+arch woodfloor
+x 1
+y 9
+end
+arch woodfloor
+x 1
+y 10
+end
+arch woodwall_2_1_2
+x 1
+y 10
+end
+arch small_stones
+x 1
+y 11
+end
+arch small_stones
+x 1
+y 12
+end
+arch small_stones
+x 1
+y 13
+end
+arch small_stones
+x 1
+y 14
+end
+arch small_stones
+x 1
+y 15
+end
+arch small_stones
+x 1
+y 16
+end
+arch small_stones
+x 1
+y 17
+end
+arch small_stones
+x 1
+y 18
+end
+arch small_stones
+x 1
+y 19
+end
+arch woodwall_2_1_2
+x 1
+y 19
+end
+arch woodfloor
+x 2
+end
+arch woodwall_2_1_2
+x 2
+end
+arch dirtfloor
+x 2
+y 1
+end
+arch random_plant
+x 2
+y 1
+end
+arch dirtfloor
+x 2
+y 2
+end
+arch random_food
+x 2
+y 2
+end
+arch dirtfloor
+x 2
+y 3
+end
+arch random_food
+x 2
+y 3
+end
+arch dirtfloor
+x 2
+y 4
+end
+arch woodfloor
+x 2
+y 5
+end
+arch woodfloor
+x 2
+y 6
+end
+arch woodwall_1_4
+x 2
+y 6
+end
+arch woodfloor
+x 2
+y 7
+end
+arch woodfloor
+x 2
+y 8
+end
+arch woodfloor
+x 2
+y 9
+end
+arch woodfloor
+x 2
+y 10
+end
+arch woodwall_2_1_2
+x 2
+y 10
+end
+arch small_stones
+x 2
+y 11
+end
+arch small_stones
+x 2
+y 12
+end
+arch small_stones
+x 2
+y 13
+end
+arch chicken
+name Combat Chicken
+msg
+@match *
+... cluck ... cluck ... cluck ...
+endmsg
+Con 11
+Wis 20
+Pow 26
+hp 3500
+maxhp 3500
+sp 60
+maxsp 60
+exp 90000
+dam 25
+wc -20
+ac -12
+x 2
+y 13
+speed -0.4
+attack_movement 32
+level 18
+resist_magic 50
+resist_fire 100
+resist_cold -100
+resist_confusion -100
+resist_fear 100
+resist_blind 100
+weight 400000
+no_pick 1
+see_invisible 1
+unaggressive 1
+can_cast_spell 1
+arch event_time
+title Python
+slaying /python/monsters/combat_chicken.py
+end
+arch spell_dragonbreath
+end
+arch spell_color_spray
+end
+arch spell_comet
+end
+end
+arch small_stones
+x 2
+y 14
+end
+arch small_stones
+x 2
+y 15
+end
+arch small_stones
+x 2
+y 16
+end
+arch small_stones
+x 2
+y 17
+end
+arch small_stones
+x 2
+y 18
+end
+arch small_stones
+x 2
+y 19
+end
+arch woodwall_2_1_2
+x 2
+y 19
+end
+arch woodfloor
+x 3
+end
+arch woodwall_2_1_2
+x 3
+end
+arch dirtfloor
+x 3
+y 1
+end
+arch random_food
+x 3
+y 1
+end
+arch dirtfloor
+x 3
+y 2
+end
+arch random_plant
+x 3
+y 2
+end
+arch dirtfloor
+x 3
+y 3
+end
+arch random_plant
+x 3
+y 3
+end
+arch dirtfloor
+x 3
+y 4
+end
+arch woodwall_1_4
+x 3
+y 4
+end
+arch woodfloor
+x 3
+y 5
+end
+arch woodfloor
+x 3
+y 6
+end
+arch woodwall_2_2_3
+x 3
+y 6
+end
+arch woodfloor
+x 3
+y 7
+end
+arch woodwall_2_1_1
+x 3
+y 7
+end
+arch woodfloor
+x 3
+y 8
+end
+arch woodwall_2_1_1
+x 3
+y 8
+end
+arch woodfloor
+x 3
+y 9
+end
+arch woodwall_2_1_1
+x 3
+y 9
+end
+arch woodfloor
+x 3
+y 10
+end
+arch woodwall_2_2_4
+x 3
+y 10
+end
+arch light2
+x 3
+y 10
+end
+arch small_stones
+x 3
+y 11
+end
+arch small_stones
+x 3
+y 12
+end
+arch small_stones
+x 3
+y 13
+end
+arch small_stones
+x 3
+y 14
+end
+arch small_stones
+x 3
+y 15
+end
+arch small_stones
+x 3
+y 16
+end
+arch small_stones
+x 3
+y 17
+end
+arch small_stones
+x 3
+y 18
+end
+arch small_stones
+x 3
+y 19
+end
+arch woodwall_1_3
+x 3
+y 19
+end
+arch woodfloor
+x 4
+end
+arch woodwall_3_3
+x 4
+end
+arch dirtfloor
+x 4
+y 1
+end
+arch woodwall_2_1_1
+x 4
+y 1
+end
+arch dirtfloor
+x 4
+y 2
+end
+arch woodwall_2_1_1
+x 4
+y 2
+end
+arch dirtfloor
+x 4
+y 3
+end
+arch woodwall_2_1_1
+x 4
+y 3
+end
+arch dirtfloor
+x 4
+y 4
+end
+arch woodwall_3_1
+x 4
+y 4
+end
+arch woodfloor
+x 4
+y 5
+end
+arch woodfloor
+x 4
+y 6
+end
+arch woodfloor
+x 4
+y 7
+end
+arch woodfloor
+x 4
+y 8
+end
+arch woodfloor
+x 4
+y 9
+end
+arch woodfloor
+x 4
+y 10
+end
+arch door_look_1
+x 4
+y 10
+move_block 0
+end
+arch small_stones
+x 4
+y 11
+end
+arch small_stones
+x 4
+y 12
+end
+arch small_stones
+x 4
+y 13
+end
+arch small_stones
+x 4
+y 14
+end
+arch small_stones
+x 4
+y 15
+end
+arch small_stones
+x 4
+y 16
+end
+arch small_stones
+x 4
+y 17
+end
+arch small_stones
+x 4
+y 18
+end
+arch exit
+slaying /world/world_108_126
+hp 15
+sp 39
+x 4
+y 19
+end
+arch small_stones
+x 4
+y 19
+end
+arch woodfloor
+x 5
+end
+arch woodwall_2_1_2
+x 5
+end
+arch woodfloor
+x 5
+y 1
+end
+arch woodfloor
+x 5
+y 2
+end
+arch woodfloor
+x 5
+y 3
+end
+arch woodfloor
+x 5
+y 4
+end
+arch woodwall_2_1_2
+x 5
+y 4
+end
+arch woodfloor
+x 5
+y 5
+end
+arch woodfloor
+x 5
+y 6
+end
+arch woodfloor
+x 5
+y 7
+end
+arch woodfloor
+x 5
+y 8
+end
+arch woodfloor
+x 5
+y 9
+end
+arch woodfloor
+x 5
+y 10
+end
+arch door_look_1
+x 5
+y 10
+move_block 0
+end
+arch small_stones
+x 5
+y 11
+end
+arch small_stones
+x 5
+y 12
+end
+arch small_stones
+x 5
+y 13
+end
+arch small_stones
+x 5
+y 14
+end
+arch small_stones
+x 5
+y 15
+end
+arch small_stones
+x 5
+y 16
+end
+arch small_stones
+x 5
+y 17
+end
+arch small_stones
+x 5
+y 18
+end
+arch exit
+slaying /world/world_108_126
+hp 15
+sp 39
+x 5
+y 19
+end
+arch small_stones
+x 5
+y 19
+end
+arch woodfloor
+x 6
+end
+arch woodwall_2_1_2
+x 6
+end
+arch woodfloor
+x 6
+y 1
+end
+arch woodfloor
+x 6
+y 2
+end
+arch woodfloor
+x 6
+y 3
+end
+arch woodfloor
+x 6
+y 4
+end
+arch woodwall_1_3
+x 6
+y 4
+end
+arch woodfloor
+x 6
+y 5
+end
+arch woodfloor
+x 6
+y 6
+end
+arch woodfloor
+x 6
+y 7
+end
+arch woodwall_1_1
+x 6
+y 7
+end
+arch woodfloor
+x 6
+y 8
+end
+arch woodwall_2_1_1
+x 6
+y 8
+end
+arch woodfloor
+x 6
+y 9
+end
+arch woodwall_2_1_1
+x 6
+y 9
+end
+arch woodfloor
+x 6
+y 10
+end
+arch woodwall_2_2_1
+x 6
+y 10
+end
+arch light2
+x 6
+y 10
+end
+arch small_stones
+x 6
+y 11
+end
+arch small_stones
+x 6
+y 12
+end
+arch small_stones
+x 6
+y 13
+end
+arch small_stones
+x 6
+y 14
+end
+arch small_stones
+x 6
+y 15
+end
+arch small_stones
+x 6
+y 16
+end
+arch small_stones
+x 6
+y 17
+end
+arch small_stones
+x 6
+y 18
+end
+arch small_stones
+x 6
+y 19
+end
+arch woodwall_1_4
+x 6
+y 19
+end
+arch woodfloor
+x 7
+end
+arch woodwall_2_1_2
+x 7
+end
+arch woodfloor
+x 7
+y 1
+end
+arch woodfloor
+x 7
+y 2
+end
+arch woodfloor
+x 7
+y 3
+end
+arch woodfloor
+x 7
+y 4
+end
+arch woodfloor
+x 7
+y 5
+end
+arch woodfloor
+x 7
+y 6
+end
+arch woodfloor
+x 7
+y 7
+end
+arch woodfloor
+x 7
+y 8
+end
+arch woodfloor
+x 7
+y 9
+end
+arch woodfloor
+x 7
+y 10
+end
+arch woodwall_2_1_2
+x 7
+y 10
+end
+arch small_stones
+x 7
+y 11
+end
+arch small_stones
+x 7
+y 12
+end
+arch small_stones
+x 7
+y 13
+end
+arch small_stones
+x 7
+y 14
+end
+arch small_stones
+x 7
+y 15
+end
+arch small_stones
+x 7
+y 16
+end
+arch small_stones
+x 7
+y 17
+end
+arch small_stones
+x 7
+y 18
+end
+arch small_stones
+x 7
+y 19
+end
+arch woodwall_2_1_2
+x 7
+y 19
+end
+arch woodfloor
+x 8
+end
+arch woodwall_2_1_2
+x 8
+end
+arch woodfloor
+x 8
+y 1
+end
+arch woodfloor
+x 8
+y 2
+end
+arch woodfloor
+x 8
+y 3
+end
+arch woodfloor
+x 8
+y 4
+end
+arch woodfloor
+x 8
+y 5
+end
+arch woodfloor
+x 8
+y 6
+end
+arch woodfloor
+x 8
+y 7
+end
+arch woodfloor
+x 8
+y 8
+end
+arch woodfloor
+x 8
+y 9
+end
+arch woodfloor
+x 8
+y 10
+end
+arch woodwall_2_1_2
+x 8
+y 10
+end
+arch small_stones
+x 8
+y 11
+end
+arch small_stones
+x 8
+y 12
+end
+arch small_stones
+x 8
+y 13
+end
+arch small_stones
+x 8
+y 14
+end
+arch small_stones
+x 8
+y 15
+end
+arch small_stones
+x 8
+y 16
+end
+arch small_stones
+x 8
+y 17
+end
+arch chicken
+name Combat Chicken
+msg
+@match *
+... cluck ... cluck ... cluck ...
+endmsg
+Con 11
+Wis 20
+Pow 26
+hp 3500
+maxhp 3500
+sp 60
+maxsp 60
+exp 90000
+dam 25
+wc -20
+ac -12
+x 8
+y 17
+speed -0.4
+attack_movement 32
+level 18
+resist_magic 50
+resist_fire 100
+resist_cold -100
+resist_confusion -100
+resist_fear 100
+resist_blind 100
+weight 400000
+no_pick 1
+see_invisible 1
+unaggressive 1
+can_cast_spell 1
+arch event_time
+title Python
+slaying /python/monsters/combat_chicken.py
+end
+arch spell_dragonbreath
+end
+arch spell_color_spray
+end
+arch spell_comet
+end
+end
+arch small_stones
+x 8
+y 18
+end
+arch small_stones
+x 8
+y 19
+end
+arch woodwall_2_1_2
+x 8
+y 19
+end
+arch woodfloor
+x 9
+end
+arch woodwall_2_1_2
+x 9
+end
+arch woodfloor
+x 9
+y 1
+end
+arch woodfloor
+x 9
+y 2
+end
+arch woodfloor
+x 9
+y 3
+end
+arch woodfloor
+x 9
+y 4
+end
+arch woodfloor
+x 9
+y 5
+end
+arch woodfloor
+x 9
+y 6
+end
+arch woodfloor
+x 9
+y 7
+end
+arch woodfloor
+x 9
+y 8
+end
+arch woodfloor
+x 9
+y 9
+end
+arch woodfloor
+x 9
+y 10
+end
+arch woodwall_2_1_2
+x 9
+y 10
+end
+arch small_stones
+x 9
+y 11
+end
+arch small_stones
+x 9
+y 12
+end
+arch small_stones
+x 9
+y 13
+end
+arch small_stones
+x 9
+y 14
+end
+arch small_stones
+x 9
+y 15
+end
+arch small_stones
+x 9
+y 16
+end
+arch small_stones
+x 9
+y 17
+end
+arch small_stones
+x 9
+y 18
+end
+arch small_stones
+x 9
+y 19
+end
+arch woodwall_2_1_2
+x 9
+y 19
+end
+arch woodfloor
+x 10
+end
+arch woodwall_2_1_2
+x 10
+end
+arch woodfloor
+x 10
+y 1
+end
+arch woodfloor
+x 10
+y 2
+end
+arch woodfloor
+x 10
+y 3
+end
+arch woodfloor
+x 10
+y 4
+end
+arch woodfloor
+x 10
+y 5
+end
+arch woodfloor
+x 10
+y 6
+end
+arch woodfloor
+x 10
+y 7
+end
+arch woodfloor
+x 10
+y 8
+end
+arch woodfloor
+x 10
+y 9
+end
+arch woodfloor
+x 10
+y 10
+end
+arch woodwall_3_3
+x 10
+y 10
+end
+arch woodfloor
+x 10
+y 11
+end
+arch woodwall_2_1_1
+x 10
+y 11
+end
+arch woodfloor
+x 10
+y 12
+end
+arch woodwall_2_1_1
+x 10
+y 12
+end
+arch woodfloor
+x 10
+y 13
+end
+arch woodwall_2_2_1
+x 10
+y 13
+end
+arch dirtfloor
+x 10
+y 14
+end
+arch dirtfloor
+x 10
+y 15
+end
+arch dirtfloor
+x 10
+y 16
+end
+arch dirtfloor
+x 10
+y 17
+end
+arch dirtfloor
+x 10
+y 18
+end
+arch woodfloor
+x 10
+y 19
+end
+arch woodwall_2_1_2
+x 10
+y 19
+end
+arch woodfloor
+x 11
+end
+arch woodwall_2_1_2
+x 11
+end
+arch woodfloor
+x 11
+y 1
+end
+arch woodfloor
+x 11
+y 2
+end
+arch woodfloor
+x 11
+y 3
+end
+arch woodfloor
+x 11
+y 4
+end
+arch woodfloor
+x 11
+y 5
+end
+arch woodfloor
+x 11
+y 6
+end
+arch woodfloor
+x 11
+y 7
+end
+arch woodfloor
+x 11
+y 8
+end
+arch woodfloor
+x 11
+y 9
+end
+arch woodfloor
+x 11
+y 10
+end
+arch woodwall_2_1_2
+x 11
+y 10
+end
+arch woodfloor
+x 11
+y 11
+end
+arch bed_1
+x 11
+y 11
+end
+arch woodfloor
+x 11
+y 12
+end
+arch woodfloor
+x 11
+y 13
+end
+arch woodwall_2_1_2
+x 11
+y 13
+end
+arch dirtfloor
+x 11
+y 14
+end
+arch dirtfloor
+x 11
+y 15
+end
+arch dirtfloor
+x 11
+y 16
+end
+arch dirtfloor
+x 11
+y 17
+end
+arch dirtfloor
+x 11
+y 18
+end
+arch woodfloor
+x 11
+y 19
+end
+arch woodwall_2_1_2
+x 11
+y 19
+end
+arch woodfloor
+x 12
+end
+arch woodwall_2_1_2
+x 12
+end
+arch woodfloor
+x 12
+y 1
+end
+arch woodfloor
+x 12
+y 2
+end
+arch woodfloor
+x 12
+y 3
+end
+arch woodfloor
+x 12
+y 4
+end
+arch woodfloor
+x 12
+y 5
+end
+arch woodfloor
+x 12
+y 6
+end
+arch woodfloor
+x 12
+y 7
+end
+arch woodfloor
+x 12
+y 8
+end
+arch woodfloor
+x 12
+y 9
+end
+arch woodfloor
+x 12
+y 10
+end
+arch woodwall_1_3
+x 12
+y 10
+end
+arch woodfloor
+x 12
+y 11
+end
+arch woodfloor
+x 12
+y 12
+end
+arch woodfloor
+x 12
+y 13
+end
+arch woodwall_2_1_2
+x 12
+y 13
+end
+arch dirtfloor
+x 12
+y 14
+end
+arch dirtfloor
+x 12
+y 15
+end
+arch dirtfloor
+x 12
+y 16
+end
+arch dirtfloor
+x 12
+y 17
+end
+arch dirtfloor
+x 12
+y 18
+end
+arch woodfloor
+x 12
+y 19
+end
+arch woodwall_2_1_2
+x 12
+y 19
+end
+arch woodfloor
+x 13
+end
+arch woodwall_2_1_2
+x 13
+end
+arch woodfloor
+x 13
+y 1
+end
+arch woodfloor
+x 13
+y 2
+end
+arch woodfloor
+x 13
+y 3
+end
+arch woodfloor
+x 13
+y 4
+end
+arch woodfloor
+x 13
+y 5
+end
+arch woman
+name Sentrio's farmer
+msg
+@match food
+Err...
+
+That is...
+
+I forgot exactly what they eat...
+@match egg|eggs
+Of course they lay eggs.  But they require special food, mind you, since they are special chicken!
+@match chicken|chickens
+Yes, those are special chicken, trained for combat.  Trust me, you don't want to bother them!
+@match *
+Hello, I don't often see visitors.  Please feel free to look around, but don't bother the chickens, please.
+endmsg
+x 13
+y 5
+end
+arch woodfloor
+x 13
+y 6
+end
+arch woodfloor
+x 13
+y 7
+end
+arch woodfloor
+x 13
+y 8
+end
+arch woodfloor
+x 13
+y 9
+end
+arch woodfloor
+x 13
+y 10
+end
+arch woodfloor
+x 13
+y 11
+end
+arch woodfloor
+x 13
+y 12
+end
+arch woodfloor
+x 13
+y 13
+end
+arch woodwall_2_1_2
+x 13
+y 13
+end
+arch dirtfloor
+x 13
+y 14
+end
+arch dirtfloor
+x 13
+y 15
+end
+arch dirtfloor
+x 13
+y 16
+end
+arch dirtfloor
+x 13
+y 17
+end
+arch dirtfloor
+x 13
+y 18
+end
+arch woodfloor
+x 13
+y 19
+end
+arch woodwall_2_1_2
+x 13
+y 19
+end
+arch woodfloor
+x 14
+end
+arch woodwall_2_1_2
+x 14
+end
+arch woodfloor
+x 14
+y 1
+end
+arch woodfloor
+x 14
+y 2
+end
+arch woodfloor
+x 14
+y 3
+end
+arch woodfloor
+x 14
+y 4
+end
+arch woodfloor
+x 14
+y 5
+end
+arch woodfloor
+x 14
+y 6
+end
+arch woodfloor
+x 14
+y 7
+end
+arch woodfloor
+x 14
+y 8
+end
+arch woodfloor
+x 14
+y 9
+end
+arch woodfloor
+x 14
+y 10
+end
+arch woodwall_1_4
+x 14
+y 10
+end
+arch woodfloor
+x 14
+y 11
+end
+arch bookshelf
+x 14
+y 11
+end
+arch woodfloor
+x 14
+y 12
+end
+arch woodfloor
+x 14
+y 13
+end
+arch woodwall_2_1_2
+x 14
+y 13
+end
+arch dirtfloor
+x 14
+y 14
+end
+arch dirtfloor
+x 14
+y 15
+end
+arch dirtfloor
+x 14
+y 16
+end
+arch dirtfloor
+x 14
+y 17
+end
+arch dirtfloor
+x 14
+y 18
+end
+arch woodfloor
+x 14
+y 19
+end
+arch woodwall_2_1_2
+x 14
+y 19
+end
+arch woodfloor
+x 15
+end
+arch woodwall_2_1_2
+x 15
+end
+arch woodfloor
+x 15
+y 1
+end
+arch woodfloor
+x 15
+y 2
+end
+arch woodfloor
+x 15
+y 3
+end
+arch woodfloor
+x 15
+y 4
+end
+arch woodfloor
+x 15
+y 5
+end
+arch woodfloor
+x 15
+y 6
+end
+arch woodfloor
+x 15
+y 7
+end
+arch woodfloor
+x 15
+y 8
+end
+arch woodfloor
+x 15
+y 9
+end
+arch woodfloor
+x 15
+y 10
+end
+arch woodwall_2_1_2
+x 15
+y 10
+end
+arch woodfloor
+x 15
+y 11
+end
+arch bookshelf
+x 15
+y 11
+end
+arch woodfloor
+x 15
+y 12
+end
+arch woodfloor
+x 15
+y 13
+end
+arch woodwall_2_1_2
+x 15
+y 13
+end
+arch dirtfloor
+x 15
+y 14
+end
+arch dirtfloor
+x 15
+y 15
+end
+arch dirtfloor
+x 15
+y 16
+end
+arch dirtfloor
+x 15
+y 17
+end
+arch dirtfloor
+x 15
+y 18
+end
+arch woodfloor
+x 15
+y 19
+end
+arch woodwall_2_1_2
+x 15
+y 19
+end
+arch woodfloor
+x 16
+end
+arch woodwall_2_1_2
+x 16
+end
+arch woodfloor
+x 16
+y 1
+end
+arch woodfloor
+x 16
+y 2
+end
+arch woodfloor
+x 16
+y 3
+end
+arch woodfloor
+x 16
+y 4
+end
+arch woodfloor
+x 16
+y 5
+end
+arch woodfloor
+x 16
+y 6
+end
+arch woodfloor
+x 16
+y 7
+end
+arch woodfloor
+x 16
+y 8
+end
+arch woodfloor
+x 16
+y 9
+end
+arch woodfloor
+x 16
+y 10
+end
+arch woodwall_2_1_2
+x 16
+y 10
+end
+arch woodfloor
+x 16
+y 11
+end
+arch bookshelf
+x 16
+y 11
+end
+arch woodfloor
+x 16
+y 12
+end
+arch woodfloor
+x 16
+y 13
+end
+arch woodwall_2_1_2
+x 16
+y 13
+end
+arch dirtfloor
+x 16
+y 14
+end
+arch dirtfloor
+x 16
+y 15
+end
+arch dirtfloor
+x 16
+y 16
+end
+arch dirtfloor
+x 16
+y 17
+end
+arch dirtfloor
+x 16
+y 18
+end
+arch woodfloor
+x 16
+y 19
+end
+arch woodwall_2_1_2
+x 16
+y 19
+end
+arch woodfloor
+x 17
+end
+arch woodwall_2_1_2
+x 17
+end
+arch woodfloor
+x 17
+y 1
+end
+arch woodfloor
+x 17
+y 2
+end
+arch woodfloor
+x 17
+y 3
+end
+arch woodfloor
+x 17
+y 4
+end
+arch woodfloor
+x 17
+y 5
+end
+arch woodfloor
+x 17
+y 6
+end
+arch woodfloor
+x 17
+y 7
+end
+arch woodfloor
+x 17
+y 8
+end
+arch woodfloor
+x 17
+y 9
+end
+arch woodfloor
+x 17
+y 10
+end
+arch woodwall_2_1_2
+x 17
+y 10
+end
+arch woodfloor
+x 17
+y 11
+end
+arch bookshelf
+x 17
+y 11
+end
+arch woodfloor
+x 17
+y 12
+end
+arch woodfloor
+x 17
+y 13
+end
+arch woodwall_2_1_2
+x 17
+y 13
+end
+arch dirtfloor
+x 17
+y 14
+end
+arch random_plant
+x 17
+y 14
+end
+arch dirtfloor
+x 17
+y 15
+end
+arch random_food
+x 17
+y 15
+end
+arch dirtfloor
+x 17
+y 16
+end
+arch random_plant
+x 17
+y 16
+end
+arch dirtfloor
+x 17
+y 17
+end
+arch random_food
+x 17
+y 17
+end
+arch dirtfloor
+x 17
+y 18
+end
+arch random_plant
+x 17
+y 18
+end
+arch woodfloor
+x 17
+y 19
+end
+arch woodwall_2_1_2
+x 17
+y 19
+end
+arch woodfloor
+x 18
+end
+arch woodwall_2_1_2
+x 18
+end
+arch woodfloor
+x 18
+y 1
+end
+arch clock_grand
+x 18
+y 1
+end
+arch woodfloor
+x 18
+y 2
+end
+arch woodfloor
+x 18
+y 3
+end
+arch woodfloor
+x 18
+y 4
+end
+arch woodfloor
+x 18
+y 5
+end
+arch woodfloor
+x 18
+y 6
+end
+arch desk
+x 18
+y 6
+no_pick 1
+arch scroll
+name invoice
+name_pl invoices
+msg
+In conformance with your order, we <unreadable text>.
+
+Please pay in the delays we agreed on.
+
+
+Cordially.
+
+
+Scorn's Trappers, Scorn port
+endmsg
+end
+end
+arch woodfloor
+x 18
+y 7
+end
+arch woodfloor
+x 18
+y 8
+end
+arch woodfloor
+x 18
+y 9
+end
+arch woodfloor
+x 18
+y 10
+end
+arch woodwall_2_1_2
+x 18
+y 10
+end
+arch woodfloor
+x 18
+y 11
+end
+arch bookshelf
+x 18
+y 11
+end
+arch woodfloor
+x 18
+y 12
+end
+arch woodfloor
+x 18
+y 13
+end
+arch woodwall_2_1_2
+x 18
+y 13
+end
+arch dirtfloor
+x 18
+y 14
+end
+arch random_food
+x 18
+y 14
+end
+arch dirtfloor
+x 18
+y 15
+end
+arch random_plant
+x 18
+y 15
+end
+arch dirtfloor
+x 18
+y 16
+end
+arch random_food
+x 18
+y 16
+end
+arch dirtfloor
+x 18
+y 17
+end
+arch random_plant
+x 18
+y 17
+end
+arch dirtfloor
+x 18
+y 18
+end
+arch random_food
+x 18
+y 18
+end
+arch woodfloor
+x 18
+y 19
+end
+arch woodwall_2_1_2
+x 18
+y 19
+end
+arch woodfloor
+x 19
+end
+arch woodwall_2_2_3
+x 19
+end
+arch woodfloor
+x 19
+y 1
+end
+arch woodwall_2_1_1
+x 19
+y 1
+end
+arch woodfloor
+x 19
+y 2
+end
+arch woodwall_2_1_1
+x 19
+y 2
+end
+arch woodfloor
+x 19
+y 3
+end
+arch woodwall_2_1_1
+x 19
+y 3
+end
+arch woodfloor
+x 19
+y 4
+end
+arch woodwall_2_1_1
+x 19
+y 4
+end
+arch woodfloor
+x 19
+y 5
+end
+arch woodwall_2_1_1
+x 19
+y 5
+end
+arch woodfloor
+x 19
+y 6
+end
+arch woodwall_2_1_1
+x 19
+y 6
+end
+arch woodfloor
+x 19
+y 7
+end
+arch woodwall_2_1_1
+x 19
+y 7
+end
+arch woodfloor
+x 19
+y 8
+end
+arch woodwall_2_1_1
+x 19
+y 8
+end
+arch woodfloor
+x 19
+y 9
+end
+arch woodwall_2_1_1
+x 19
+y 9
+end
+arch woodfloor
+x 19
+y 10
+end
+arch woodwall_3_4
+x 19
+y 10
+end
+arch woodfloor
+x 19
+y 11
+end
+arch woodwall_2_1_1
+x 19
+y 11
+end
+arch woodfloor
+x 19
+y 12
+end
+arch woodwall_2_1_1
+x 19
+y 12
+end
+arch woodfloor
+x 19
+y 13
+end
+arch woodwall_3_4
+x 19
+y 13
+end
+arch woodfloor
+x 19
+y 14
+end
+arch woodwall_2_1_1
+x 19
+y 14
+end
+arch woodfloor
+x 19
+y 15
+end
+arch woodwall_2_1_1
+x 19
+y 15
+end
+arch woodfloor
+x 19
+y 16
+end
+arch woodwall_2_1_1
+x 19
+y 16
+end
+arch woodfloor
+x 19
+y 17
+end
+arch woodwall_2_1_1
+x 19
+y 17
+end
+arch woodfloor
+x 19
+y 18
+end
+arch woodwall_2_1_1
+x 19
+y 18
+end
+arch woodfloor
+x 19
+y 19
+end
+arch woodwall_2_2_4
+x 19
+y 19
+end

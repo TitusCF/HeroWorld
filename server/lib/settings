@@ -57,7 +57,7 @@ fastclock 0
 # by setting this to a high enough value, you can effectively disable
 # the item_power code.
 
-item_power_factor 1.0
+item_power_factor 1.60
 
 # Sets the output format for the who command. This is what a player will see
 # about all the other players on the server when they type 'who' The string
@@ -85,7 +85,7 @@ item_power_factor 1.0
 # if you prefer)
 # who_wiz_format is the same but for those with dm powers
 
-who_format %N %t%h%d%a%b%n<%m>
+who_format %N %t%h%d%a%bLevel %l<%m>
 who_wiz_format %N %t%h%d%a%b%nLevel %l <%m>(@%i)(%c)
 
 # See notes for most of these in include/config.h
@@ -239,7 +239,7 @@ death_penalty_levels 3
 # Range is limited to -100 to 100, since this is the value range that the luck
 # stat can be within.
 
-pk_luck_penalty 1
+pk_luck_penalty -5
 
 # This handles maximum experience one can get for pking another player.
 # If pk_max_experience is 0 or positive, experience will never exceed that value.
@@ -283,11 +283,11 @@ set_friendly_fire 5
 # armor_speed_improvement and armor_speed_linear do the same for speed increase.
 # default values: 10 and TRUE
 
-#armor_max_enchant       5
+#armor_max_enchant       35
 #armor_weight_reduction  10
-#armor_weight_linear     TRUE
+#armor_weight_linear     FALSE
 #armor_speed_improvement 10
-#armor_speed_linear      TRUE
+#armor_speed_linear      FALSE
 
 # disable stealing from other players, if you wish to enable stealing from other players
 # then replace the below with: no_player_stealing FALSE
@@ -304,7 +304,7 @@ create_home_portals      FALSE
 personalized_blessings      TRUE
 
 # If set to TRUE, players can inscribe scrolls of spells they can't cast (denied path, ...)
-allow_denied_spells_writing FALSE
+allow_denied_spells_writing TRUE
 
 # If set to TRUE or ON, converters will work even if the price of generated item is higher
 # than the price of converted items

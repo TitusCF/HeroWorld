@@ -1,0 +1,803 @@
+arch map
+name house
+reset_timeout 300
+fixed_resettime 1
+width 11
+height 11
+msg
+Created:  2010-09-11 Chad
+Modified: 2010-09-12 Chad
+endmsg
+end
+arch woodfloor
+end
+arch woodwall_2_2_2
+end
+arch woodfloor
+y 1
+end
+arch woodwall_2_1_1
+y 1
+end
+arch woodfloor
+y 2
+end
+arch woodwall_2_1_1
+y 2
+end
+arch woodfloor
+y 3
+end
+arch woodwall_2_1_1
+y 3
+end
+arch woodfloor
+y 4
+end
+arch woodwall_3_2
+y 4
+end
+arch woodfloor
+y 5
+end
+arch woodwall_2_1_1
+y 5
+end
+arch woodfloor
+y 6
+end
+arch woodwall_2_1_1
+y 6
+end
+arch woodfloor
+y 7
+end
+arch woodwall_2_1_1
+y 7
+end
+arch woodfloor
+y 8
+end
+arch woodwall_2_1_1
+y 8
+end
+arch woodfloor
+y 9
+end
+arch woodwall_2_1_1
+y 9
+end
+arch woodfloor
+y 10
+end
+arch woodwall_2_2_1
+y 10
+end
+arch woodfloor
+x 1
+end
+arch woodwall_2_1_2
+x 1
+end
+arch woodfloor
+x 1
+y 1
+end
+arch barrel
+x 1
+y 1
+end
+arch woodfloor
+x 1
+y 2
+end
+arch bed_1
+x 1
+y 2
+no_pick 1
+end
+arch woodfloor
+x 1
+y 3
+end
+arch woodfloor
+x 1
+y 4
+end
+arch woodwall_2_1_2
+x 1
+y 4
+end
+arch woodfloor
+x 1
+y 5
+end
+arch woodfloor
+x 1
+y 6
+end
+arch woodfloor
+x 1
+y 7
+end
+arch chair_2.4
+x 1
+y 7
+no_pick 1
+end
+arch woodfloor
+x 1
+y 8
+end
+arch woodfloor
+x 1
+y 9
+end
+arch woodfloor
+x 1
+y 10
+end
+arch woodwall_2_1_2
+x 1
+y 10
+end
+arch woodfloor
+x 2
+end
+arch woodwall_2_1_2
+x 2
+end
+arch woodfloor
+x 2
+y 1
+end
+arch desk
+x 2
+y 1
+no_pick 1
+end
+arch woodfloor
+x 2
+y 2
+end
+arch woodfloor
+x 2
+y 3
+end
+arch woodfloor
+x 2
+y 4
+end
+arch woodwall_2_1_2
+x 2
+y 4
+end
+arch woodfloor
+x 2
+y 5
+end
+arch woodfloor2
+x 2
+y 6
+end
+arch woodfloor2
+x 2
+y 7
+end
+arch woodfloor2
+x 2
+y 8
+end
+arch woodfloor
+x 2
+y 9
+end
+arch woodfloor
+x 2
+y 10
+end
+arch woodwall_2_1_2
+x 2
+y 10
+end
+arch woodfloor
+x 3
+end
+arch woodwall_2_1_2
+x 3
+end
+arch woodfloor
+x 3
+y 1
+end
+arch bookshelf
+x 3
+y 1
+no_pick 1
+end
+arch woodfloor
+x 3
+y 2
+end
+arch woodfloor
+x 3
+y 3
+end
+arch woodfloor
+x 3
+y 4
+end
+arch woodwall_2_1_2
+x 3
+y 4
+end
+arch woodfloor
+x 3
+y 5
+end
+arch clock
+x 3
+y 5
+no_pick 1
+end
+arch woodfloor2
+x 3
+y 6
+end
+arch woodfloor2
+x 3
+y 7
+end
+arch woodfloor2
+x 3
+y 8
+end
+arch woodfloor
+x 3
+y 9
+end
+arch woodfloor
+x 3
+y 10
+end
+arch woodwall_2_1_2
+x 3
+y 10
+end
+arch woodfloor
+x 4
+end
+arch woodwall_2_1_2
+x 4
+end
+arch woodfloor
+x 4
+y 1
+end
+arch woodfloor
+x 4
+y 2
+end
+arch guildmaster
+name Trapped Mage
+race none
+msg
+@match hi|Hi|hey|Hey|hello|Hello
+Ahh thanks! I was trying a spell way out of my league and accidentally summoned some *spiders* which attacked me...
+@match spiders
+You saw the one in the front room, but there are more in the basement...please kill them for me!
+endmsg
+face mage.151
+hp 100
+maxhp 100
+dam 0
+x 4
+y 2
+level 150
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
+resist_weaponmagic 100
+resist_ghosthit 100
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_turn_undead 100
+resist_fear 100
+resist_deplete 100
+resist_death 100
+resist_chaos 100
+resist_godpower 100
+resist_holyword 100
+resist_blind 100
+randomitems none
+pick_up 0
+undead 1
+can_cast_spell 0
+stand_still 1
+no_damage 1
+end
+arch woodfloor
+x 4
+y 3
+end
+arch woodfloor
+x 4
+y 4
+end
+arch woodwall_1_3
+x 4
+y 4
+end
+arch woodfloor
+x 4
+y 5
+end
+arch woodfloor2
+x 4
+y 6
+end
+arch woodfloor2
+x 4
+y 7
+end
+arch woodfloor2
+x 4
+y 8
+end
+arch woodfloor
+x 4
+y 9
+end
+arch sign
+name press 'a' to read me
+msg
+If this map is empty, come back after a few minutes and it should be reset.
+endmsg
+x 4
+y 9
+end
+arch woodfloor
+x 4
+y 10
+end
+arch woodwall_1_3
+x 4
+y 10
+end
+arch woodfloor
+x 5
+end
+arch woodwall_2_1_2
+x 5
+end
+arch woodfloor
+x 5
+y 1
+end
+arch stair_down_1
+slaying house2_basement
+hp 5
+sp 1
+x 5
+y 1
+end
+arch woodfloor
+x 5
+y 2
+end
+arch woodfloor
+x 5
+y 3
+end
+arch woodfloor
+x 5
+y 4
+end
+arch door_look_1
+x 5
+y 4
+end
+arch woodfloor
+x 5
+y 5
+end
+arch key
+x 5
+y 5
+end
+arch woodfloor2
+x 5
+y 6
+end
+arch woodfloor2
+x 5
+y 7
+end
+arch spider
+x 5
+y 7
+end
+arch woodfloor2
+x 5
+y 8
+end
+arch check_inv
+race spider
+x 5
+y 9
+last_sp 0
+move_block all
+end
+arch woodfloor
+x 5
+y 9
+end
+arch check_inv
+race spider
+x 5
+y 10
+last_sp 0
+move_block all
+end
+arch invis_exit
+slaying Port
+hp 3
+sp 7
+x 5
+y 10
+move_on all
+end
+arch woodfloor
+x 5
+y 10
+end
+arch woodfloor
+x 6
+end
+arch woodwall_2_1_2
+x 6
+end
+arch woodfloor
+x 6
+y 1
+end
+arch woodfloor
+x 6
+y 2
+end
+arch woodfloor
+x 6
+y 3
+end
+arch woodfloor
+x 6
+y 4
+end
+arch woodwall_1_4
+x 6
+y 4
+end
+arch woodfloor
+x 6
+y 5
+end
+arch woodfloor2
+x 6
+y 6
+end
+arch woodfloor2
+x 6
+y 7
+end
+arch woodfloor2
+x 6
+y 8
+end
+arch woodfloor
+x 6
+y 9
+end
+arch woodfloor
+x 6
+y 10
+end
+arch woodwall_1_4
+x 6
+y 10
+end
+arch woodfloor
+x 7
+end
+arch woodwall_2_1_2
+x 7
+end
+arch woodfloor
+x 7
+y 1
+end
+arch woodfloor
+x 7
+y 2
+end
+arch chair_1.4
+x 7
+y 2
+no_pick 1
+end
+arch woodfloor
+x 7
+y 3
+end
+arch woodfloor
+x 7
+y 4
+end
+arch woodwall_2_1_2
+x 7
+y 4
+end
+arch woodfloor
+x 7
+y 5
+end
+arch fireplace
+x 7
+y 5
+end
+arch woodfloor2
+x 7
+y 6
+end
+arch woodfloor2
+x 7
+y 7
+end
+arch woodfloor2
+x 7
+y 8
+end
+arch woodfloor
+x 7
+y 9
+end
+arch woodfloor
+x 7
+y 10
+end
+arch woodwall_2_1_2
+x 7
+y 10
+end
+arch woodfloor
+x 8
+end
+arch woodwall_2_1_2
+x 8
+end
+arch woodfloor
+x 8
+y 1
+end
+arch chair_1.1
+x 8
+y 1
+no_pick 1
+end
+arch woodfloor
+x 8
+y 2
+end
+arch table_4
+x 8
+y 2
+no_pick 1
+end
+arch plate
+x 8
+y 2
+end
+arch mushroom_3
+x 8
+y 2
+end
+arch woodfloor
+x 8
+y 3
+end
+arch chair_1.3
+x 8
+y 3
+no_pick 1
+end
+arch woodfloor
+x 8
+y 4
+end
+arch woodwall_2_1_2
+x 8
+y 4
+end
+arch woodfloor
+x 8
+y 5
+end
+arch woodfloor2
+x 8
+y 6
+end
+arch woodfloor2
+x 8
+y 7
+end
+arch woodfloor2
+x 8
+y 8
+end
+arch woodfloor
+x 8
+y 9
+end
+arch woodfloor
+x 8
+y 10
+end
+arch woodwall_2_1_2
+x 8
+y 10
+end
+arch woodfloor
+x 9
+end
+arch woodwall_2_1_2
+x 9
+end
+arch woodfloor
+x 9
+y 1
+end
+arch woodfloor
+x 9
+y 2
+end
+arch chair_1.2
+x 9
+y 2
+no_pick 1
+end
+arch woodfloor
+x 9
+y 3
+end
+arch woodfloor
+x 9
+y 4
+end
+arch woodwall_2_1_2
+x 9
+y 4
+end
+arch woodfloor
+x 9
+y 5
+end
+arch woodfloor
+x 9
+y 6
+end
+arch woodfloor
+x 9
+y 7
+end
+arch chair_2.2
+x 9
+y 7
+no_pick 1
+end
+arch woodfloor
+x 9
+y 8
+end
+arch woodfloor
+x 9
+y 9
+end
+arch woodfloor
+x 9
+y 10
+end
+arch woodwall_2_1_2
+x 9
+y 10
+end
+arch woodfloor
+x 10
+end
+arch woodwall_2_2_3
+x 10
+end
+arch woodfloor
+x 10
+y 1
+end
+arch woodwall_2_1_1
+x 10
+y 1
+end
+arch woodfloor
+x 10
+y 2
+end
+arch woodwall_2_1_1
+x 10
+y 2
+end
+arch woodfloor
+x 10
+y 3
+end
+arch woodwall_2_1_1
+x 10
+y 3
+end
+arch woodfloor
+x 10
+y 4
+end
+arch woodwall_3_4
+x 10
+y 4
+end
+arch woodfloor
+x 10
+y 5
+end
+arch woodwall_2_1_1
+x 10
+y 5
+end
+arch woodfloor
+x 10
+y 6
+end
+arch woodwall_2_1_1
+x 10
+y 6
+end
+arch woodfloor
+x 10
+y 7
+end
+arch woodwall_2_1_1
+x 10
+y 7
+end
+arch woodfloor
+x 10
+y 8
+end
+arch woodwall_2_1_1
+x 10
+y 8
+end
+arch woodfloor
+x 10
+y 9
+end
+arch woodwall_2_1_1
+x 10
+y 9
+end
+arch woodfloor
+x 10
+y 10
+end
+arch woodwall_2_2_4
+x 10
+y 10
+end

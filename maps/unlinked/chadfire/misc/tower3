@@ -1,0 +1,680 @@
+arch map
+name tower
+width 11
+height 11
+msg
+Created:  2010-09-08 Chad
+Modified: 2010-09-10 Chad
+endmsg
+end
+arch blocked
+end
+arch blocked
+y 1
+end
+arch stonefloor2
+y 2
+end
+arch dwall_2_2_2
+y 2
+end
+arch stonefloor2
+y 3
+end
+arch dwall_2_1_1
+y 3
+end
+arch stonefloor2
+y 4
+end
+arch dwall_2_1_1
+y 4
+end
+arch stonefloor2
+y 5
+end
+arch dwall_2_1_1
+y 5
+end
+arch stonefloor2
+y 6
+end
+arch dwall_2_1_1
+y 6
+end
+arch stonefloor2
+y 7
+end
+arch dwall_2_1_1
+y 7
+end
+arch stonefloor2
+y 8
+end
+arch dwall_2_2_1
+y 8
+end
+arch blocked
+y 9
+end
+arch blocked
+y 10
+end
+arch blocked
+x 1
+end
+arch stonefloor2
+x 1
+y 1
+end
+arch dwall_2_2_2
+x 1
+y 1
+end
+arch stonefloor2
+x 1
+y 2
+end
+arch dwall_2_2_4
+x 1
+y 2
+end
+arch stonefloor2
+x 1
+y 3
+end
+arch stonefloor2
+x 1
+y 4
+end
+arch stonefloor2
+x 1
+y 5
+end
+arch stonefloor2
+x 1
+y 6
+end
+arch stonefloor2
+x 1
+y 7
+end
+arch stonefloor2
+x 1
+y 8
+end
+arch dwall_2_2_3
+x 1
+y 8
+end
+arch stonefloor2
+x 1
+y 9
+end
+arch dwall_2_2_1
+x 1
+y 9
+end
+arch blocked
+x 1
+y 10
+end
+arch stonefloor2
+x 2
+end
+arch dwall_2_2_2
+x 2
+end
+arch stonefloor2
+x 2
+y 1
+end
+arch dwall_2_2_4
+x 2
+y 1
+end
+arch stonefloor2
+x 2
+y 2
+end
+arch stonefloor2
+x 2
+y 3
+end
+arch stonefloor2
+x 2
+y 4
+end
+arch blocked
+x 2
+y 5
+blocksview 0
+end
+arch stonefloor2
+x 2
+y 5
+end
+arch guildmaster
+name Tower Guard
+race none
+msg
+@match hi|Hi
+One of these days the seal is going to wear off, and *it* will get us all...
+@match it|It
+Trust me, you don't want to know...its easier to tolerate life here that way.
+endmsg
+face guard_med.111
+hp 100
+maxhp 100
+dam 0
+x 2
+y 5
+level 150
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
+resist_weaponmagic 100
+resist_ghosthit 100
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_turn_undead 100
+resist_fear 100
+resist_deplete 100
+resist_death 100
+resist_chaos 100
+resist_godpower 100
+resist_holyword 100
+resist_blind 100
+randomitems none
+pick_up 0
+undead 1
+can_cast_spell 0
+stand_still 1
+no_damage 1
+end
+arch stonefloor2
+x 2
+y 6
+end
+arch stonefloor2
+x 2
+y 7
+end
+arch stonefloor2
+x 2
+y 8
+end
+arch stonefloor2
+x 2
+y 9
+end
+arch dwall_2_2_3
+x 2
+y 9
+end
+arch stonefloor2
+x 2
+y 10
+end
+arch dwall_2_2_1
+x 2
+y 10
+end
+arch stonefloor2
+x 3
+end
+arch dwall_2_1_2
+x 3
+end
+arch stonefloor2
+x 3
+y 1
+end
+arch stonefloor2
+x 3
+y 2
+end
+arch stonefloor2
+x 3
+y 3
+end
+arch stonefloor2
+x 3
+y 4
+end
+arch stonefloor2
+x 3
+y 5
+end
+arch stonefloor2
+x 3
+y 6
+end
+arch stonefloor2
+x 3
+y 7
+end
+arch stonefloor2
+x 3
+y 8
+end
+arch stonefloor2
+x 3
+y 9
+end
+arch stonefloor2
+x 3
+y 10
+end
+arch dwall_2_1_2
+x 3
+y 10
+end
+arch stonefloor2
+x 4
+end
+arch dwall_2_1_2
+x 4
+end
+arch stonefloor2
+x 4
+y 1
+end
+arch stonefloor2
+x 4
+y 2
+end
+arch stonefloor2
+x 4
+y 3
+end
+arch stonefloor2
+x 4
+y 4
+end
+arch stonefloor2
+x 4
+y 5
+end
+arch stonefloor2
+x 4
+y 6
+end
+arch stonefloor2
+x 4
+y 7
+end
+arch stonefloor2
+x 4
+y 8
+end
+arch stonefloor2
+x 4
+y 9
+end
+arch stonefloor2
+x 4
+y 10
+end
+arch dwall_2_1_2
+x 4
+y 10
+end
+arch stonefloor2
+x 5
+end
+arch dwall_1_3
+x 5
+end
+arch stonefloor2
+x 5
+y 1
+end
+arch stonefloor2
+x 5
+y 2
+end
+arch stonefloor2
+x 5
+y 3
+end
+arch stonefloor2
+x 5
+y 4
+end
+arch stonefloor2
+x 5
+y 5
+end
+arch ladder_bi_up
+slaying tower3
+msg
+You're not allowed up there...
+endmsg
+hp 5
+sp 5
+x 5
+y 5
+end
+arch stonefloor2
+x 5
+y 6
+end
+arch stonefloor2
+x 5
+y 7
+end
+arch stonefloor2
+x 5
+y 8
+end
+arch stonefloor2
+x 5
+y 9
+end
+arch stonefloor2
+x 5
+y 10
+end
+arch dwall_2_1_2
+x 5
+y 10
+end
+arch invis_exit
+slaying Port
+hp 2
+sp 17
+x 6
+move_on all
+end
+arch stonefloor2
+x 6
+end
+arch stonefloor2
+x 6
+y 1
+end
+arch stonefloor2
+x 6
+y 2
+end
+arch stonefloor2
+x 6
+y 3
+end
+arch stonefloor2
+x 6
+y 4
+end
+arch stonefloor2
+x 6
+y 5
+end
+arch stonefloor2
+x 6
+y 6
+end
+arch stonefloor2
+x 6
+y 7
+end
+arch stonefloor2
+x 6
+y 8
+end
+arch stonefloor2
+x 6
+y 9
+end
+arch stonefloor2
+x 6
+y 10
+end
+arch dwall_2_1_2
+x 6
+y 10
+end
+arch stonefloor2
+x 7
+end
+arch dwall_1_4
+x 7
+end
+arch stonefloor2
+x 7
+y 1
+end
+arch stonefloor2
+x 7
+y 2
+end
+arch stonefloor2
+x 7
+y 3
+end
+arch stonefloor2
+x 7
+y 4
+end
+arch stonefloor2
+x 7
+y 5
+end
+arch stonefloor2
+x 7
+y 6
+end
+arch stonefloor2
+x 7
+y 7
+end
+arch stonefloor2
+x 7
+y 8
+end
+arch stonefloor2
+x 7
+y 9
+end
+arch stonefloor2
+x 7
+y 10
+end
+arch dwall_2_1_2
+x 7
+y 10
+end
+arch stonefloor2
+x 8
+end
+arch dwall_2_2_3
+x 8
+end
+arch stonefloor2
+x 8
+y 1
+end
+arch dwall_2_2_1
+x 8
+y 1
+end
+arch stonefloor2
+x 8
+y 2
+end
+arch stonefloor2
+x 8
+y 3
+end
+arch stonefloor2
+x 8
+y 4
+end
+arch stonefloor2
+x 8
+y 5
+end
+arch stonefloor2
+x 8
+y 6
+end
+arch stonefloor2
+x 8
+y 7
+end
+arch stonefloor2
+x 8
+y 8
+end
+arch stonefloor2
+x 8
+y 9
+end
+arch dwall_2_2_2
+x 8
+y 9
+end
+arch stonefloor2
+x 8
+y 10
+end
+arch dwall_2_2_4
+x 8
+y 10
+end
+arch blocked
+x 9
+end
+arch stonefloor2
+x 9
+y 1
+end
+arch dwall_2_2_3
+x 9
+y 1
+end
+arch stonefloor2
+x 9
+y 2
+end
+arch dwall_2_2_1
+x 9
+y 2
+end
+arch stonefloor2
+x 9
+y 3
+end
+arch stonefloor2
+x 9
+y 4
+end
+arch stonefloor2
+x 9
+y 5
+end
+arch stonefloor2
+x 9
+y 6
+end
+arch stonefloor2
+x 9
+y 7
+end
+arch stonefloor2
+x 9
+y 8
+end
+arch dwall_2_2_2
+x 9
+y 8
+end
+arch stonefloor2
+x 9
+y 9
+end
+arch dwall_2_2_4
+x 9
+y 9
+end
+arch blocked
+x 9
+y 10
+end
+arch blocked
+x 10
+end
+arch blocked
+x 10
+y 1
+end
+arch stonefloor2
+x 10
+y 2
+end
+arch dwall_2_2_3
+x 10
+y 2
+end
+arch stonefloor2
+x 10
+y 3
+end
+arch dwall_2_1_1
+x 10
+y 3
+end
+arch stonefloor2
+x 10
+y 4
+end
+arch dwall_2_1_1
+x 10
+y 4
+end
+arch stonefloor2
+x 10
+y 5
+end
+arch dwall_2_1_1
+x 10
+y 5
+end
+arch stonefloor2
+x 10
+y 6
+end
+arch dwall_2_1_1
+x 10
+y 6
+end
+arch stonefloor2
+x 10
+y 7
+end
+arch dwall_2_1_1
+x 10
+y 7
+end
+arch stonefloor2
+x 10
+y 8
+end
+arch dwall_2_2_4
+x 10
+y 8
+end
+arch blocked
+x 10
+y 9
+end
+arch blocked
+x 10
+y 10
+end

@@ -1,13 +1,14 @@
 arch map
 name city
 region nurnberg
+width 30
+height 30
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Feb  7 16:36:07 1996
+Modified: 2019-01-01 Acer
 endmsg
-width 30
-height 30
 end
 arch grass
 end
@@ -141,19 +142,26 @@ arch sea
 y 25
 end
 arch sea
+y 26
 no_pass 0
+end
+arch s_ship
+name To the Port
+slaying ../port_e
+hp 15
+sp 6
 y 26
 end
 arch sea
-no_pass 0
 y 27
+no_pass 0
 end
 arch sea
 y 28
 end
 arch sea
-no_pass 0
 y 29
+no_pass 0
 end
 arch grass
 x 1
@@ -206,6 +214,14 @@ arch grass
 x 1
 y 9
 end
+arch guild
+name Dungeon of Death
+slaying dick/hell
+hp 19
+sp 2
+x 1
+y 9
+end
 arch grass
 x 1
 y 10
@@ -219,6 +235,14 @@ x 1
 y 12
 end
 arch grass
+x 1
+y 13
+end
+arch guild
+name Dungeon of Life
+slaying dick/heaven
+hp 19
+sp 2
 x 1
 y 13
 end
@@ -279,14 +303,14 @@ x 1
 y 25
 end
 arch sea
-no_pass 0
 x 1
 y 26
+no_pass 0
 end
 arch sea
-no_pass 0
 x 1
 y 27
+no_pass 0
 end
 arch sea
 x 1
@@ -435,18 +459,18 @@ x 2
 y 25
 end
 arch sea
-no_pass 0
 x 2
 y 26
+no_pass 0
 end
 arch pier_2_2_2
 x 2
 y 26
 end
 arch sea
-no_pass 0
 x 2
 y 27
+no_pass 0
 end
 arch pier_1_2
 x 2
@@ -575,9 +599,9 @@ x 3
 y 25
 end
 arch sea
-no_pass 0
 x 3
 y 26
+no_pass 0
 end
 arch pier_2_1_2
 x 3
@@ -756,18 +780,18 @@ x 4
 y 25
 end
 arch sea
-no_pass 0
 x 4
 y 26
+no_pass 0
 end
 arch pier_3_3
 x 4
 y 26
 end
 arch sea
-no_pass 0
 x 4
 y 27
+no_pass 0
 end
 arch pier_1_2
 x 4
@@ -895,7 +919,23 @@ arch grass
 x 5
 y 19
 end
+arch city_tower
+name Reception Office
+slaying reception/reception
+hp 17
+sp 34
+x 5
+y 19
+end
 arch grass
+x 5
+y 20
+end
+arch city_tower
+name Reception Office
+slaying reception/reception
+hp 17
+sp 34
 x 5
 y 20
 end
@@ -920,9 +960,9 @@ x 5
 y 25
 end
 arch sea
-no_pass 0
 x 5
 y 26
+no_pass 0
 end
 arch pier_2_1_2
 x 5
@@ -944,12 +984,12 @@ arch cobblestones2
 x 6
 end
 arch mover_5
-level 1
 x 6
+level 1
 end
 arch river_n-s
-no_pass 0
 x 6
+no_pass 0
 end
 arch cityport_a
 x 6
@@ -959,23 +999,23 @@ x 6
 y 1
 end
 arch mover_4
-level 1
 x 6
 y 1
+level 1
 end
 arch river_se-n
-no_pass 0
 x 6
 y 1
+no_pass 0
 end
 arch pstone_1
 x 6
 y 2
 end
 arch river_nw-se_l
-no_pass 0
 x 6
 y 2
+no_pass 0
 end
 arch pstone_1
 x 6
@@ -1077,7 +1117,23 @@ arch evergreens
 x 6
 y 19
 end
+arch city_tower
+name Reception Office
+slaying reception/reception
+hp 17
+sp 34
+x 6
+y 19
+end
 arch grass
+x 6
+y 20
+end
+arch city_tower
+name Reception Office
+slaying reception/reception
+hp 17
+sp 34
 x 6
 y 20
 end
@@ -1136,32 +1192,32 @@ x 7
 y 1
 end
 arch river_nw-se_u
-no_pass 0
 x 7
 y 1
+no_pass 0
 end
 arch pstone_1
 x 7
 y 2
 end
 arch mover_4
-level 1
 x 7
 y 2
+level 1
 end
 arch river_nw-se
-no_pass 0
 x 7
 y 2
+no_pass 0
 end
 arch pstone_1
 x 7
 y 3
 end
 arch river_nw-se_l
-no_pass 0
 x 7
 y 3
+no_pass 0
 end
 arch grass
 x 7
@@ -1326,23 +1382,23 @@ x 8
 y 2
 end
 arch river_nw-se_u
-no_pass 0
 x 8
 y 2
+no_pass 0
 end
 arch pstone_1
 x 8
 y 3
 end
 arch mover_3
-level 1
 x 8
 y 3
+level 1
 end
 arch river_nw-e
-no_pass 0
 x 8
 y 3
+no_pass 0
 end
 arch pstone_1
 x 8
@@ -1488,14 +1544,14 @@ x 9
 y 3
 end
 arch mover_3
-level 1
 x 9
 y 3
+level 1
 end
 arch river_w-e
-no_pass 0
 x 9
 y 3
+no_pass 0
 end
 arch grass
 x 9
@@ -1506,6 +1562,14 @@ x 9
 y 5
 end
 arch grass
+x 9
+y 6
+end
+arch keep
+name Headquater of the Regular Army
+slaying hq
+hp 9
+sp 18
 x 9
 y 6
 end
@@ -1586,9 +1650,9 @@ name Permanent Apartments
 slaying apartment/main
 hp 6
 sp 1
-unique 1
 x 9
 y 21
+unique 1
 end
 arch cobblestones
 x 9
@@ -1646,14 +1710,14 @@ x 10
 y 3
 end
 arch mover_3
-level 1
 x 10
 y 3
+level 1
 end
 arch river_w-e
-no_pass 0
 x 10
 y 3
+no_pass 0
 end
 arch pstone_1
 x 10
@@ -1715,6 +1779,14 @@ arch grass
 x 10
 y 15
 end
+arch store_magic
+name Invulnerable
+slaying pshop
+hp 23
+sp 1
+x 10
+y 15
+end
 arch grass
 x 10
 y 16
@@ -1744,9 +1816,9 @@ name Permanent Apartments
 slaying apartment/main
 hp 6
 sp 1
-unique 1
 x 10
 y 21
+unique 1
 end
 arch cobblestones
 x 10
@@ -1807,14 +1879,14 @@ x 11
 y 3
 end
 arch mover_3
-level 1
 x 11
 y 3
+level 1
 end
 arch river_w-e
-no_pass 0
 x 11
 y 3
+no_pass 0
 end
 arch pstone_1
 x 11
@@ -1952,14 +2024,14 @@ x 12
 y 3
 end
 arch mover_3
-level 1
 x 12
 y 3
+level 1
 end
 arch river_w-e
-no_pass 0
 x 12
 y 3
+no_pass 0
 end
 arch pstone_1
 x 12
@@ -1986,6 +2058,13 @@ x 12
 y 9
 end
 arch grass
+x 12
+y 10
+end
+arch store_magic
+slaying washop
+hp 23
+sp 7
 x 12
 y 10
 end
@@ -2029,6 +2108,13 @@ arch grass
 x 12
 y 20
 end
+arch church
+slaying church
+hp 4
+sp 9
+x 12
+y 20
+end
 arch grass
 x 12
 y 21
@@ -2044,6 +2130,14 @@ end
 arch grass
 x 12
 y 24
+end
+arch store_magic
+slaying alshop
+hp 25
+sp 3
+x 12
+y 24
+no_pass 0
 end
 arch grass
 x 12
@@ -2095,14 +2189,14 @@ x 13
 y 3
 end
 arch mover_3
-level 1
 x 13
 y 3
+level 1
 end
 arch river_w-e
-no_pass 0
 x 13
 y 3
+no_pass 0
 end
 arch pstone_1
 x 13
@@ -2245,7 +2339,7 @@ arch pstone_1
 x 14
 y 3
 end
-arch bridge_ns
+arch river_bridge_ns
 x 14
 y 3
 end
@@ -2391,7 +2485,7 @@ arch pstone_1
 x 15
 y 3
 end
-arch bridge_ns
+arch river_bridge_ns
 x 15
 y 3
 end
@@ -2467,6 +2561,14 @@ arch grass
 x 15
 y 19
 end
+arch store_general
+name Orcchop
+slaying fshop
+hp 1
+sp 11
+x 15
+y 19
+end
 arch grass
 x 15
 y 20
@@ -2488,6 +2590,14 @@ x 15
 y 23
 end
 arch grass
+x 15
+y 24
+end
+arch store_armour
+name White Dragon Scale
+slaying ashop
+hp 1
+sp 9
 x 15
 y 24
 end
@@ -2541,14 +2651,14 @@ x 16
 y 3
 end
 arch mover_7
-level 1
 x 16
 y 3
+level 1
 end
 arch river_w-e
-no_pass 0
 x 16
 y 3
+no_pass 0
 end
 arch pstone_1
 x 16
@@ -2573,6 +2683,13 @@ end
 arch grass
 x 16
 y 9
+end
+arch guild
+name Guild of the Laughing Skull
+slaying /pup_land/guilds/laughing_skull/ground
+x 16
+y 9
+no_pass 0
 end
 arch grass
 x 16
@@ -2686,14 +2803,14 @@ x 17
 y 3
 end
 arch mover_7
-level 1
 x 17
 y 3
+level 1
 end
 arch river_w-e
-no_pass 0
 x 17
 y 3
+no_pass 0
 end
 arch pstone_1
 x 17
@@ -2834,14 +2951,14 @@ x 18
 y 3
 end
 arch mover_7
-level 1
 x 18
 y 3
+level 1
 end
 arch river_w-e
-no_pass 0
 x 18
 y 3
+no_pass 0
 end
 arch grass
 x 18
@@ -2891,6 +3008,14 @@ arch grass
 x 18
 y 13
 end
+arch store_general
+name Flawless Beauty
+slaying jshop
+hp 11
+sp 23
+x 18
+y 13
+end
 arch grass
 x 18
 y 14
@@ -2906,6 +3031,15 @@ end
 arch grass
 x 18
 y 17
+end
+arch store_magic
+name Sunspear
+slaying bshop
+hp 8
+sp 1
+x 18
+y 17
+no_pass 0
 end
 arch grass
 x 18
@@ -2929,8 +3063,8 @@ y 22
 end
 arch house_2
 name evergreen
-face tree_2.111
 slaying dick/maze
+face tree_2.111
 hp 11
 x 18
 y 22
@@ -2991,14 +3125,14 @@ x 19
 y 3
 end
 arch mover_7
-level 1
 x 19
 y 3
+level 1
 end
 arch river_w-e
-no_pass 0
 x 19
 y 3
+no_pass 0
 end
 arch pstone_1
 x 19
@@ -3136,14 +3270,14 @@ x 20
 y 3
 end
 arch mover_7
-level 1
 x 20
 y 3
+level 1
 end
 arch river_w-e
-no_pass 0
 x 20
 y 3
+no_pass 0
 end
 arch grass
 x 20
@@ -3237,6 +3371,14 @@ arch grass
 x 20
 y 24
 end
+arch store_weapons
+name Muramasa!
+slaying wshop
+hp 12
+sp 23
+x 20
+y 24
+end
 arch grass
 x 20
 y 25
@@ -3280,23 +3422,23 @@ x 21
 y 2
 end
 arch river_sw-ne_u
-no_pass 0
 x 21
 y 2
+no_pass 0
 end
 arch pstone_1
 x 21
 y 3
 end
 arch mover_7
-level 1
 x 21
 y 3
+level 1
 end
 arch river_ne-w
-no_pass 0
 x 21
 y 3
+no_pass 0
 end
 arch pstone_1
 x 21
@@ -3311,6 +3453,14 @@ x 21
 y 5
 end
 arch grass
+x 21
+y 6
+end
+arch guild
+name Laughing Skull's Storage Room
+slaying /pup_land/guilds/laughing_skull/storage_room
+hp 1
+sp 10
 x 21
 y 6
 end
@@ -3350,6 +3500,14 @@ arch grass
 x 21
 y 13
 end
+arch guild
+name Guild of Law
+slaying guild
+hp 10
+sp 20
+x 21
+y 13
+end
 arch grass
 x 21
 y 14
@@ -3363,6 +3521,14 @@ x 21
 y 16
 end
 arch grass
+x 21
+y 17
+end
+arch house_long
+name Night Flower Bar
+slaying nf_bar
+hp 12
+sp 1
 x 21
 y 17
 end
@@ -3429,32 +3595,32 @@ x 22
 y 1
 end
 arch river_sw-ne_u
-no_pass 0
 x 22
 y 1
+no_pass 0
 end
 arch pstone_1
 x 22
 y 2
 end
 arch mover_6
-level 1
 x 22
 y 2
+level 1
 end
 arch river_sw-ne
-no_pass 0
 x 22
 y 2
+no_pass 0
 end
 arch pstone_1
 x 22
 y 3
 end
 arch river_sw-ne_l
-no_pass 0
 x 22
 y 3
+no_pass 0
 end
 arch grass
 x 22
@@ -3506,8 +3672,8 @@ y 12
 end
 arch minihouse
 name jungle
-face jungle_2.111
 slaying guild
+face jungle_2.111
 hp 17
 x 22
 y 12
@@ -3588,12 +3754,12 @@ arch cobblestones2
 x 23
 end
 arch mover_5
-level 1
 x 23
+level 1
 end
 arch river_n-s
-no_pass 0
 x 23
+no_pass 0
 end
 arch cityport_a
 x 23
@@ -3603,23 +3769,23 @@ x 23
 y 1
 end
 arch mover_6
-level 1
 x 23
 y 1
+level 1
 end
 arch river_sw-n
-no_pass 0
 x 23
 y 1
+no_pass 0
 end
 arch pstone_1
 x 23
 y 2
 end
 arch river_sw-ne_l
-no_pass 0
 x 23
 y 2
+no_pass 0
 end
 arch pstone_1
 x 23
@@ -3713,6 +3879,14 @@ arch grass
 x 23
 y 21
 end
+arch guild
+name Bank of berg
+slaying bank
+hp 23
+sp 7
+x 23
+y 21
+end
 arch grass
 x 23
 y 22
@@ -3726,6 +3900,14 @@ x 23
 y 24
 end
 arch grass
+x 23
+y 25
+end
+arch inn
+name hotel
+slaying hotel
+hp 16
+sp 19
 x 23
 y 25
 end
@@ -4059,6 +4241,14 @@ arch grass
 x 26
 y 8
 end
+arch barn
+name storehouse
+slaying storehouse
+hp 14
+sp 32
+x 26
+y 8
+end
 arch grass
 x 26
 y 9
@@ -4121,10 +4311,10 @@ y 19
 end
 arch s_shop2
 name Imperial Post
+slaying /pup_land/nurnberg/IPO_nurnberg
 msg
 Ding!
 endmsg
-slaying /pup_land/nurnberg/IPO_nurnberg
 hp 1
 sp 5
 x 26
@@ -4143,6 +4333,14 @@ x 26
 y 22
 end
 arch grass
+x 26
+y 23
+end
+arch barn
+name Dragon Hangar
+slaying /pup_land/nurnberg/dragonhangar/hangar
+hp 15
+sp 1
 x 26
 y 23
 end
@@ -4671,7 +4869,7 @@ x 29
 y 14
 end
 arch invis_exit
-slaying ../world
+slaying /world/world_103_104
 hp 29
 sp 17
 x 29
@@ -4682,7 +4880,7 @@ x 29
 y 15
 end
 arch invis_exit
-slaying ../world
+slaying /world/world_103_104
 hp 29
 sp 17
 x 29
@@ -4747,201 +4945,4 @@ end
 arch grass
 x 29
 y 29
-end
-arch s_ship
-name To the Port
-slaying ../port_e
-hp 15
-sp 6
-y 26
-end
-arch guild
-name Dungeon of Death
-slaying dick/hell
-hp 19
-sp 2
-x 1
-y 9
-end
-arch guild
-name Dungeon of Life
-slaying dick/heaven
-hp 19
-sp 2
-x 1
-y 13
-end
-arch city_tower
-name Reception Office
-slaying reception/reception
-hp 17
-sp 34
-x 5
-y 19
-end
-arch city_tower
-name Reception Office
-slaying reception/reception
-hp 17
-sp 34
-x 5
-y 20
-end
-arch city_tower
-name Reception Office
-slaying reception/reception
-hp 17
-sp 34
-x 6
-y 19
-end
-arch city_tower
-name Reception Office
-slaying reception/reception
-hp 17
-sp 34
-x 6
-y 20
-end
-arch keep
-name Headquater of the Regular Army
-slaying hq
-hp 9
-sp 18
-x 9
-y 6
-end
-arch store_magic
-name Invulnerable
-slaying pshop
-hp 23
-sp 1
-x 10
-y 15
-end
-arch store_magic
-slaying washop
-hp 23
-sp 7
-x 12
-y 10
-end
-arch church
-slaying church
-hp 4
-sp 9
-x 12
-y 20
-end
-arch store_magic
-slaying alshop
-hp 25
-sp 3
-no_pass 0
-x 12
-y 24
-end
-arch store_general
-name Orcchop
-slaying fshop
-hp 1
-sp 11
-x 15
-y 19
-end
-arch store_armour
-name White Dragon Scale
-slaying ashop
-hp 1
-sp 9
-x 15
-y 24
-end
-arch guild
-name Guild of the Laughing Skull
-no_pass 0
-slaying /pup_land/guilds/laughing_skull/ground
-x 16
-y 9
-end
-arch store_general
-name Flawless Beauty
-slaying jshop
-hp 11
-sp 23
-x 18
-y 13
-end
-arch store_magic
-name Sunspear
-slaying bshop
-hp 8
-sp 1
-no_pass 0
-x 18
-y 17
-end
-arch store_weapons
-name Muramasa!
-slaying wshop
-hp 12
-sp 23
-x 20
-y 24
-end
-arch guild
-name Laughing Skull's Storage Room
-slaying /pup_land/guilds/laughing_skull/storage_room
-hp 1
-sp 10
-x 21
-y 6
-end
-arch guild
-name Guild of Law
-slaying guild
-hp 10
-sp 20
-x 21
-y 13
-end
-arch house_long
-name Night Flower Bar
-slaying nf_bar
-hp 12
-sp 1
-x 21
-y 17
-end
-arch guild
-name Bank of berg
-slaying bank
-hp 23
-sp 7
-x 23
-y 21
-end
-arch inn
-name hotel
-slaying hotel
-hp 16
-sp 19
-x 23
-y 25
-end
-arch barn
-name storehouse
-slaying storehouse
-hp 14
-sp 32
-x 26
-y 8
-end
-arch barn
-name Dragon Hangar
-slaying /pup_land/nurnberg/dragonhangar/hangar
-hp 15
-sp 1
-x 26
-y 23
 end

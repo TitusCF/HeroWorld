@@ -1,13 +1,14 @@
 arch map
-region pupland
 name port_w
+region pupland
+width 32
+height 20
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Jan 29 00:14:36 1996
+Modified: 2019-01-01 Acer
 endmsg
-width 32
-height 20
 end
 arch sea
 end
@@ -18,7 +19,7 @@ arch evergreens
 y 2
 end
 arch invis_exit
-slaying world
+slaying /world/world_103_104
 hp 17
 sp 11
 y 3
@@ -27,7 +28,7 @@ arch evergreens
 y 3
 end
 arch invis_exit
-slaying world
+slaying /world/world_103_104
 hp 17
 sp 11
 y 4
@@ -36,7 +37,7 @@ arch evergreens
 y 4
 end
 arch invis_exit
-slaying world
+slaying /world/world_103_104
 hp 17
 sp 11
 y 5
@@ -45,7 +46,7 @@ arch evergreens
 y 5
 end
 arch invis_exit
-slaying world
+slaying /world/world_103_104
 hp 17
 sp 11
 y 6
@@ -54,7 +55,7 @@ arch evergreens
 y 6
 end
 arch invis_exit
-slaying world
+slaying /world/world_103_104
 hp 17
 sp 11
 y 7
@@ -63,7 +64,7 @@ arch grass
 y 7
 end
 arch invis_exit
-slaying world
+slaying /world/world_103_104
 hp 17
 sp 11
 y 8
@@ -72,7 +73,7 @@ arch grass
 y 8
 end
 arch invis_exit
-slaying world
+slaying /world/world_103_104
 hp 17
 sp 11
 y 9
@@ -81,7 +82,7 @@ arch grass
 y 9
 end
 arch invis_exit
-slaying world
+slaying /world/world_103_104
 hp 17
 sp 11
 y 10
@@ -90,7 +91,7 @@ arch grass
 y 10
 end
 arch invis_exit
-slaying world
+slaying /world/world_103_104
 hp 17
 sp 11
 y 11
@@ -99,7 +100,7 @@ arch evergreens
 y 11
 end
 arch invis_exit
-slaying world
+slaying /world/world_103_104
 hp 17
 sp 11
 y 12
@@ -108,7 +109,7 @@ arch evergreens
 y 12
 end
 arch invis_exit
-slaying world
+slaying /world/world_103_104
 hp 17
 sp 11
 y 13
@@ -117,7 +118,7 @@ arch evergreens
 y 13
 end
 arch invis_exit
-slaying world
+slaying /world/world_103_104
 hp 17
 sp 11
 y 14
@@ -126,7 +127,7 @@ arch evergreens
 y 14
 end
 arch invis_exit
-slaying world
+slaying /world/world_103_104
 hp 17
 sp 11
 y 15
@@ -1468,10 +1469,10 @@ msg
 @match siegfried
 Click.
 endmsg
-protected 1
-connected 1
 x 10
 y 9
+connected 1
+protected 1
 end
 arch pstone_1
 x 10
@@ -1495,12 +1496,12 @@ Go away!
 endmsg
 hp 180
 maxhp 180
+x 10
+y 10
 speed_left -1.750000
 pick_up 0
 friendly 1
 unaggressive 0
-x 10
-y 10
 end
 arch dungeon_magic
 x 10
@@ -1657,10 +1658,10 @@ x 11
 y 9
 end
 arch igateTrg2
-protected 1
-connected 1
 x 11
 y 9
+connected 1
+protected 1
 end
 arch grass
 x 11
@@ -1835,12 +1836,12 @@ Go away!
 endmsg
 hp 180
 maxhp 180
+x 12
+y 8
 speed_left -1.750000
 pick_up 0
 friendly 1
 unaggressive 0
-x 12
-y 8
 end
 arch dungeon_magic
 x 12
@@ -1851,10 +1852,10 @@ msg
 @match siegfried
 Click.
 endmsg
-protected 1
+x 12
+y 9
 connected 1
-x 12
-y 9
+protected 1
 end
 arch pstone_1
 x 12
@@ -3210,7 +3211,14 @@ x 23
 y 12
 end
 arch sea
+x 23
+y 13
 no_pass 0
+end
+arch longship
+slaying port_e_house
+hp 6
+sp 6
 x 23
 y 13
 end
@@ -3302,9 +3310,9 @@ x 24
 y 12
 end
 arch sea
-no_pass 0
 x 24
 y 13
+no_pass 0
 end
 arch sea
 x 24
@@ -3914,11 +3922,4 @@ end
 arch sea
 x 31
 y 19
-end
-arch longship
-slaying port_e_house
-hp 6
-sp 6
-x 23
-y 13
 end

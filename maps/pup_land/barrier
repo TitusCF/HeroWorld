@@ -1,12 +1,14 @@
 arch map
-region pupland
 name customhouse
+region pupland
+width 34
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Jan 28 03:18:06 1996
+Modified: 2019-01-01 Acer
 endmsg
-x 34
 end
 arch cobblestones2
 end
@@ -49,7 +51,7 @@ arch dwall_2_2_1
 y 6
 end
 arch invis_exit
-slaying world
+slaying /world/world_103_104
 hp 19
 sp 33
 y 7
@@ -653,7 +655,7 @@ You may pass :-).
 Please bring up it.
 @match no|No
 .. Are you a member of resistance,
-aren't you? 
+aren't you?
 @match *
 Do you have passport?
 endmsg
@@ -1071,7 +1073,7 @@ msg
 Please bring it up.
 @match no|No
 .. So you're a member of resistance,
-aren't you? 
+aren't you?
 @match *
 Do you have a Passport?
 endmsg
@@ -1256,7 +1258,7 @@ msg
 Please bring it up.
 @match no|No
 .. So you're a member of resistance,
-aren't you? 
+aren't you?
 @match *
 Do you have a Passport?
 endmsg
@@ -1295,8 +1297,8 @@ arch check_inv
 slaying regular_army
 x 13
 y 6
-protected 1
 connected 1
+protected 1
 end
 arch cobblestones2
 x 13
@@ -1306,8 +1308,8 @@ arch check_inv
 slaying regular_army
 x 13
 y 7
-protected 1
 connected 1
+protected 1
 end
 arch cobblestones2
 x 13
@@ -1317,8 +1319,8 @@ arch check_inv
 slaying regular_army
 x 13
 y 8
-protected 1
 connected 1
+protected 1
 end
 arch cobblestones2
 x 13
@@ -1394,8 +1396,8 @@ The huge gate is set into motion...
 endmsg
 x 14
 y 4
-protected 2
 connected 2
+protected 2
 end
 arch cobblestones2
 x 14
@@ -1407,7 +1409,7 @@ msg
 Please bring it up.
 @match no|No
 .. So you're a member of resistance,
-aren't you? 
+aren't you?
 @match *
 Do you have a Passport?
 endmsg
@@ -1438,8 +1440,8 @@ arch grate_closed_2
 x 14
 y 6
 speed 0.500000
-protected 2
 connected 2
+protected 2
 end
 arch dungeon_magic
 x 14
@@ -1453,8 +1455,8 @@ arch grate_closed_2
 x 14
 y 7
 speed 0.500000
-protected 2
 connected 2
+protected 2
 end
 arch dungeon_magic
 x 14
@@ -1468,8 +1470,8 @@ arch grate_closed_2
 x 14
 y 8
 speed 0.500000
-protected 2
 connected 2
+protected 2
 end
 arch dungeon_magic
 x 14
@@ -1490,8 +1492,8 @@ The guards examine your Passport.
 endmsg
 x 14
 y 10
-protected 3
 connected 3
+protected 3
 end
 arch cobblestones2
 x 14
@@ -1503,7 +1505,7 @@ msg
 Please bring it up.
 @match no|No
 .. So you're a member of resistance,
-aren't you? 
+aren't you?
 @match *
 Do you have a Passport?
 endmsg
@@ -1532,7 +1534,7 @@ msg
 Please bring it up.
 @match no|No
 .. So you're a member of resistance,
-aren't you? 
+aren't you?
 @match *
 Do you have a Passport?
 endmsg
@@ -1567,7 +1569,7 @@ msg
 Please bring it up.
 @match no|No
 .. So you're a member of resistance,
-aren't you? 
+aren't you?
 @match *
 Do you have a Passport?
 endmsg
@@ -1606,8 +1608,8 @@ arch check_inv
 slaying regular_army
 x 15
 y 6
-protected 1
 connected 1
+protected 1
 end
 arch cobblestones2
 x 15
@@ -1617,8 +1619,8 @@ arch check_inv
 slaying regular_army
 x 15
 y 7
-protected 1
 connected 1
+protected 1
 end
 arch cobblestones2
 x 15
@@ -1628,8 +1630,8 @@ arch check_inv
 slaying regular_army
 x 15
 y 8
-protected 1
 connected 1
+protected 1
 end
 arch cobblestones2
 x 15
@@ -1987,7 +1989,7 @@ msg
 Please bring it up.
 @match no|No
 .. So you're a member of resistance,
-aren't you? 
+aren't you?
 @match *
 Do you have a Passport?
 endmsg
@@ -3045,7 +3047,7 @@ x 31
 y 6
 end
 arch invis_exit
-slaying world
+slaying /world/world_103_104
 hp 22
 sp 33
 x 31
@@ -3189,9 +3191,9 @@ arch button_small
 name 2 - open gate
 x 33
 y 1
-protected 2
 weight 100000
 connected 2
+protected 2
 end
 arch igateTrg1
 name 1 - trigger
@@ -3199,17 +3201,17 @@ dam 0
 wc 0
 x 33
 y 1
-protected 1
 connected 1
+protected 1
 end
 arch igate_open_1
 name 1
 x 33
 y 2
 speed 0.500000
-protected 1
 value 1
 connected 1
+protected 1
 end
 arch t_boulder
 x 33
@@ -3260,26 +3262,26 @@ arch button_small
 name 3
 x 33
 y 13
-protected 3
 weight 1000
 connected 3
+protected 3
 end
 arch block_door_closed
 name 1
 x 33
 y 13
 speed 0.500000
-protected 1
 connected 1
+protected 1
 end
 arch block_door_open
 name 1
 x 33
 y 14
 speed 0.500000
-protected 1
 value 1
 connected 1
+protected 1
 end
 arch t_boulder
 x 33

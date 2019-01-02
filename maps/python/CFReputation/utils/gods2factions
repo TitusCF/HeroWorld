@@ -1,0 +1,21 @@
+#!/usr/bin/env python
+# gods2factions -- convert `crossfire-server -m6` output to factions SQL
+import sys
+
+def print_rels(faction, rel_str, rel):
+    rels = rel_str.split(',')
+    for r in rels:
+        print("insert into relations values ('%s', '%s', %d);"
+                % (faction, r, rel))
+
+for l in sys.stdin.read().splitlines():
+    xs = map(str.strip, l.split(':'))
+    if len(xs) < 1:
+        continue
+    if xs[0] == 'GOD':
+        curr_god = xs[1]
+        print("insert into regions values ('%s', 'ALL', 0.25);" % curr_god)
+    elif xs[0] == 'aligned_race(s)':
+        print_rels(curr_god, xs[1], 1)
+    elif xs[0] == 'enemy_race(s)':
+        print_rels(curr_god, xs[1], -1)

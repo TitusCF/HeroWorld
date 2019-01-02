@@ -939,6 +939,73 @@ int cast_word_of_recall(object *op, object *caster, object *spell_ob) {
 }
 
 /**
+ * Word of penalty causes the player to return 'home'.
+ * we put a force into the player object, so that there is a
+ * time delay effect.
+ *
+ * @param op
+ * who is casting.
+ * @param caster
+ * what is casting.
+ * @param spell_ob
+ * actual spell object.
+ * @retval 0
+ * op isn't a player.
+ * @retval 1
+ * word of penalty initiated.
+ */
+int cast_word_of_penalty(object *op, object *caster, object *spell_ob) {
+    object *dummy;
+    int time;
+
+    if (op->type != PLAYER)
+        return 0;
+
+    dummy = create_archetype(FORCE_NAME);
+    if (dummy == NULL) {
+        draw_ext_info(NDI_UNIQUE, 0, op, MSG_TYPE_SPELL, MSG_TYPE_SPELL_ERROR,
+                      "Oops, program error!");
+        LOG(llevError, "cast_word_of_penalty: create_archetype(force) failed!\n");
+        return 0;
+    }
+    time = spell_ob->duration-SP_level_duration_adjust(caster, spell_ob);
+    if (time < 1)
+        time = 1;
+
+    /* value of speed really doesn't make much difference, as long as it is
+     * positive.  Lower value may be useful so that the problem doesn't
+     * do anything really odd if it say a -1000 or something.
+     */
+    dummy->speed = 0.002;
+    object_update_speed(dummy);
+    dummy->speed_left = -dummy->speed*time;
+    dummy->type = SPELL_EFFECT;
+    dummy->subtype = SP_WORD_OF_RECALL;
+
+    sint64 loss;
+    sint64 percentage_loss;  /* defined by the setting 'death_penalty_percent' */
+    sint64 level_loss;   /* defined by the setting 'death_penalty_levels */
+    
+    FOR_INV_PREPARE(op, tmp)
+        if (tmp->type == SKILL && tmp->stats.exp) {
+            loss = check_exp_loss(tmp, 10);
+
+            tmp->stats.exp -= loss;
+            player_lvl_adj(op, tmp);
+        }
+    FOR_INV_FINISH();
+
+    EXIT_PATH(dummy) = add_string(op->contr->savebed_map);
+    EXIT_X(dummy) = op->contr->bed_x;
+    EXIT_Y(dummy) = op->contr->bed_y;
+
+    (void)object_insert_in_ob(dummy, op);
+    draw_ext_info(NDI_UNIQUE, 0, op, MSG_TYPE_SPELL, MSG_TYPE_SPELL_SUCCESS,
+                  "You take a penalty for reviving this way.");
+    return 1;
+}
+
+/**
  * wonder is really just a spell that will likely cast another
  * spell.
  *

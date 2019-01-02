@@ -1822,6 +1822,10 @@ int cast_spell(object *op, object *caster, int dir, object *spell_ob, char *stri
     case SP_WORD_OF_RECALL:
         success = cast_word_of_recall(op, caster, spell_ob);
         break;
+    
+    case SP_WORD_OF_PENALTY:
+        success = cast_word_of_penalty(op, caster, spell_ob);
+        break;
 
     case SP_INVISIBLE:
         success = cast_invisible(op, caster, spell_ob);

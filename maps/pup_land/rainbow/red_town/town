@@ -1,13 +1,14 @@
 arch map
-region pupland
 name town
+region pupland
+width 15
+height 15
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Jun 11 21:51:12 1997
+Modified: 2019-01-01 Acer
 endmsg
-width 15
-height 15
 end
 arch woods
 end
@@ -128,6 +129,14 @@ arch grass
 x 1
 y 5
 end
+arch store_general
+name Bobo's shop
+slaying shop
+hp 6
+sp 12
+x 1
+y 5
+end
 arch grass
 x 1
 y 6
@@ -223,9 +232,9 @@ x 2
 y 4
 end
 arch hedge_1_4
-blocksview 0
 x 2
 y 4
+blocksview 0
 end
 arch grass
 x 2
@@ -302,27 +311,27 @@ x 3
 y 4
 end
 arch hedge_2_2_3
-blocksview 0
 x 3
 y 4
+blocksview 0
 end
 arch grass
 x 3
 y 5
 end
 arch hedge_2_1_1
-blocksview 0
 x 3
 y 5
+blocksview 0
 end
 arch grass
 x 3
 y 6
 end
 arch hedge_1_2
-blocksview 0
 x 3
 y 6
+blocksview 0
 end
 arch cobblestones2
 x 3
@@ -661,9 +670,9 @@ x 7
 y 13
 end
 arch invis_exit
-slaying ../islands
-hp 21
-sp 20
+slaying /world/world_103_105
+hp 24
+sp 1
 x 7
 y 14
 end
@@ -1029,6 +1038,10 @@ arch grass
 x 12
 y 10
 end
+arch barrack_long
+x 12
+y 10
+end
 arch grass
 x 12
 y 11
@@ -1117,14 +1130,14 @@ y 12
 end
 arch biglake_new
 name sea
-no_pass 0
 x 13
 y 12
+no_pass 0
 end
 arch galleon
-slaying ../islands
-hp 24
-sp 23
+slaying /world/world_103_105
+hp 27
+sp 4
 x 13
 y 12
 end
@@ -1245,16 +1258,4 @@ end
 arch sea
 x 14
 y 14
-end
-arch store_general
-name Bobo's shop
-slaying shop
-hp 6
-sp 12
-x 1
-y 5
-end
-arch barrack_long
-x 12
-y 10
 end

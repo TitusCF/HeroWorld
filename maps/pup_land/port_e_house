@@ -1,14 +1,14 @@
 arch map
-region pupland
 name port_e_house
+region pupland
+width 15
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Jan 29 00:23:08 1996
+Modified: 2019-01-01 Acer
 endmsg
-hp 7
-sp 14
-x 15
 end
 arch sea
 no_pass 0
@@ -526,6 +526,13 @@ x 6
 y 6
 no_pass 0
 end
+arch longship
+slaying port_w
+hp 23
+sp 13
+x 6
+y 6
+end
 arch pstone_1
 x 6
 y 7
@@ -649,8 +656,8 @@ Click.
 endmsg
 x 7
 y 11
-protected 1
 connected 1
+protected 1
 end
 arch woodfloor
 x 7
@@ -668,8 +675,8 @@ arch grate_closed_1
 x 7
 y 12
 speed 0.500000
-protected 1
 connected 1
+protected 1
 end
 arch magic_ear
 msg
@@ -678,8 +685,8 @@ Click.
 endmsg
 x 7
 y 13
-protected 1
 connected 1
+protected 1
 end
 arch woodfloor
 x 7
@@ -1336,11 +1343,4 @@ end
 arch cobblestones2
 x 14
 y 15
-end
-arch longship
-slaying port_w
-hp 23
-sp 13
-x 6
-y 6
 end

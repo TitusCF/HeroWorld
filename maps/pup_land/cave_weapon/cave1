@@ -1,17 +1,17 @@
 arch map
-region pupland
 name cave1
+region pupland
+width 32
+height 20
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Feb  7 22:55:26 1996
+Modified: 2019-01-01 Acer
 endmsg
-x 32
-y 20
-level 10
 end
 arch exit
-slaying ../world
+slaying /world/world_103_104
 hp 33
 sp 24
 speed_left -0.400000
@@ -19,7 +19,7 @@ end
 arch evergreens
 end
 arch exit
-slaying ../world
+slaying /world/world_103_104
 hp 33
 sp 24
 y 1
@@ -29,17 +29,16 @@ arch evergreens
 y 1
 end
 arch exit
-slaying ../world
+slaying /world/world_103_104
 hp 33
 sp 24
 y 2
-speed_left -0.400000
 end
 arch grass
 y 2
 end
 arch exit
-slaying ../world
+slaying /world/world_103_104
 hp 33
 sp 24
 y 3
@@ -49,7 +48,7 @@ arch grass
 y 3
 end
 arch exit
-slaying ../world
+slaying /world/world_103_104
 hp 33
 sp 24
 y 4
@@ -59,7 +58,7 @@ arch evergreens
 y 4
 end
 arch exit
-slaying ../world
+slaying /world/world_103_104
 hp 33
 sp 24
 y 5
@@ -69,7 +68,7 @@ arch evergreens
 y 5
 end
 arch exit
-slaying ../world
+slaying /world/world_103_104
 hp 33
 sp 24
 y 6
@@ -79,7 +78,7 @@ arch evergreens
 y 6
 end
 arch exit
-slaying ../world
+slaying /world/world_103_104
 hp 33
 sp 24
 y 7
@@ -89,7 +88,7 @@ arch grass
 y 7
 end
 arch exit
-slaying ../world
+slaying /world/world_103_104
 hp 33
 sp 24
 y 8
@@ -99,7 +98,7 @@ arch evergreens
 y 8
 end
 arch exit
-slaying ../world
+slaying /world/world_103_104
 hp 33
 sp 24
 y 9
@@ -109,7 +108,7 @@ arch evergreens
 y 9
 end
 arch exit
-slaying ../world
+slaying /world/world_103_104
 hp 33
 sp 24
 y 10
@@ -119,7 +118,7 @@ arch grass
 y 10
 end
 arch exit
-slaying ../world
+slaying /world/world_103_104
 hp 33
 sp 24
 y 11
@@ -129,7 +128,7 @@ arch grass
 y 11
 end
 arch exit
-slaying ../world
+slaying /world/world_103_104
 hp 33
 sp 24
 y 12
@@ -139,7 +138,7 @@ arch evergreens
 y 12
 end
 arch exit
-slaying ../world
+slaying /world/world_103_104
 hp 33
 sp 24
 y 13
@@ -149,7 +148,7 @@ arch evergreens
 y 13
 end
 arch exit
-slaying ../world
+slaying /world/world_103_104
 hp 33
 sp 24
 y 14
@@ -159,7 +158,7 @@ arch evergreens
 y 14
 end
 arch exit
-slaying ../world
+slaying /world/world_103_104
 hp 33
 sp 24
 y 15
@@ -169,7 +168,7 @@ arch evergreens
 y 15
 end
 arch exit
-slaying ../world
+slaying /world/world_103_104
 hp 33
 sp 24
 y 16
@@ -179,17 +178,16 @@ arch evergreens
 y 16
 end
 arch exit
-slaying ../world
+slaying /world/world_103_104
 hp 33
 sp 24
 y 17
-speed_left -0.400000
 end
 arch tree
 y 17
 end
 arch exit
-slaying ../world
+slaying /world/world_103_104
 hp 33
 sp 24
 y 18
@@ -199,7 +197,7 @@ arch grass
 y 18
 end
 arch exit
-slaying ../world
+slaying /world/world_103_104
 hp 33
 sp 24
 y 19
@@ -2787,7 +2785,6 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 28
 y 15
 attack_movement 7
@@ -2795,9 +2792,10 @@ level 12
 type 0
 monster 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
+armour 28
+can_use_wand 1
 end
 arch dungeon_floor
 x 28

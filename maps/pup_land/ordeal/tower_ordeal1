@@ -1,12 +1,14 @@
 arch map
-region pupland
 name test2
+region pupland
+width 23
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Jun 29 02:41:58 1997
+Modified: 2019-01-01 Acer
 endmsg
-x 23
 end
 arch afloor_right
 end
@@ -1299,7 +1301,7 @@ x 5
 y 15
 end
 arch exit
-slaying ../world
+slaying /world/world_103_104
 hp 13
 sp 10
 x 5
@@ -1328,8 +1330,6 @@ y 2
 end
 arch sign
 name spellcast enable [on/off]
-msg
-endmsg
 x 6
 y 2
 end
@@ -1586,10 +1586,6 @@ y 8
 last_sp 0
 end
 arch afloor_right
-x 7
-y 8
-end
-arch potion_invulnerability
 x 7
 y 8
 end

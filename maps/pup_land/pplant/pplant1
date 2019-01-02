@@ -1,14 +1,15 @@
 arch map
-region pupland
 name pplant1
+difficulty 5
+region pupland
+width 23
+height 23
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Feb  4 21:37:57 1996
+Modified: 2019-01-01 Acer
 endmsg
-width 23
-height 23
-difficulty 5
 end
 arch dungeon_floor
 end
@@ -1721,7 +1722,7 @@ x 10
 y 22
 end
 arch oakdoor
-slaying ../world
+slaying /world/world_103_104
 hp 7
 sp 12
 x 10
@@ -1870,7 +1871,7 @@ x 11
 y 22
 end
 arch oakdoor
-slaying ../world
+slaying /world/world_103_104
 hp 7
 sp 12
 x 11
@@ -2048,10 +2049,10 @@ arch zombie
 name floor chief
 Con 2
 hp 50
-carrying 100
-unaggressive 1
 x 13
 y 2
+carrying 100
+unaggressive 1
 arch key2
 name zombi key
 slaying 1235567

@@ -1,10 +1,13 @@
 arch map
-region pupland
 name station
+region pupland
+width 16
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu May 30 05:55:24 1996
+Modified: 2019-01-01 Acer
 endmsg
 end
 arch pstone_1
@@ -447,8 +450,8 @@ end
 arch button_lever
 x 4
 y 10
-protected 1
 connected 1
+protected 1
 end
 arch woodfloor
 x 4
@@ -539,8 +542,8 @@ end
 arch grate_closed_2
 x 5
 y 10
-protected 1
 connected 1
+protected 1
 end
 arch woodfloor
 x 5
@@ -581,6 +584,14 @@ x 6
 y 1
 end
 arch pstone_2
+x 6
+y 2
+end
+arch dragon_exit
+name To terminal
+slaying /world/world_103_100
+hp 27
+sp 40
 x 6
 y 2
 end
@@ -641,8 +652,8 @@ arch altar
 slaying platinacoin
 x 6
 y 10
-protected 1
 connected 1
+protected 1
 end
 arch woodfloor
 x 6
@@ -735,9 +746,9 @@ x 7
 y 14
 end
 arch invis_exit
-slaying islands
-hp 17
-sp 17
+slaying /world/world_103_104
+hp 20
+sp 48
 x 7
 y 15
 end
@@ -812,9 +823,9 @@ x 8
 y 14
 end
 arch invis_exit
-slaying islands
-hp 17
-sp 17
+slaying /world/world_103_104
+hp 20
+sp 48
 x 8
 y 15
 end
@@ -1476,12 +1487,4 @@ end
 arch wwall_2_2_4
 x 15
 y 15
-end
-arch dragon_exit
-name To terminal
-slaying /pup_land/terminal
-hp 10
-sp 16
-x 6
-y 2
 end

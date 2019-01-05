@@ -37,9 +37,237 @@ treasure all_spell_skills
 end
 #
 ##############################################################
+# ability-treasure for dragon players
+##############################################################
+treasure dragon_ability_fire
+  arch direct_attune_fire
+  more
+  arch fire_clawing
+  more
+  arch spell_dragonbreath
+end
+treasure dragon_ability_cold
+  arch direct_attune_cold
+  more
+  arch ice_clawing
+  more
+  arch spell_large_icestorm
+end
+treasure dragon_ability_elec
+  arch direct_attune_elec
+  more
+  arch electric_clawing
+  more
+  arch spell_ball_lightning
+  more
+  arch dragon_ability_xrays
+end
+treasure dragon_ability_poison
+  arch spell_poison_cloud
+  more
+  arch poison_clawing
+end
+##############################################################
 #
 # BODY PARTS - 
 #
+treasureone beholder_parts
+  arch beholdereye
+    chance 70
+  more
+#  arch tentacle
+#    nrof 2
+#    chance 10
+#  more
+  arch tongue
+    chance 10
+   more
+  arch brain
+    chance 3
+  end
+treasureone skull_parts
+  arch tooth
+    chance 95
+more
+  arch tongue
+    chance 5
+  end
+treasureone demon_parts
+  arch icor
+    chance 70
+  more
+  arch heart
+    chance 15
+  more
+  arch demon_head
+    chance 15
+  end
+treasureone troll_parts
+  arch head
+    chance 80
+  more
+  arch heart
+    chance 5
+  more
+  arch liver
+    chance 15
+  more
+  arch brain
+    chance 3
+  end
+treasureone behemoth_parts
+  arch heart
+    chance 5
+  more
+  arch hide_black
+    chance 10
+  end
+treasureone wolf_parts
+  arch hide_grey
+    chance 50
+  more
+  arch liver
+    chance 15
+  more
+  arch heart
+   chance 15
+  end
+treasureone bear_parts
+  arch hide_brown
+    chance 50
+  more
+  arch liver
+    chance 15
+  more
+  arch heart
+    chance 10
+  end
+treasureone polarbear_parts
+  arch hide_white
+     chance 25
+  more
+  arch liver
+     chance 15
+  more
+  arch heart
+     chance 10
+  end
+treasureone giantrat_parts
+ arch liver
+    chance 20
+ more
+ arch heart
+    chance 10
+ more
+ arch hide_brown
+    chance 10
+ end
+treasureone ape_parts
+ arch liver
+    chance 30
+ more
+ arch heart
+    chance 20
+ more
+ arch tooth
+   chance 10
+ more
+ arch hand
+    chance 10
+  more
+  arch hide_brown
+    chance 10
+ more
+ arch brain
+    chance 5
+ end
+# gnoll/giant parts
+treasureone giant_parts
+  arch fl_corpse
+    chance 15
+  more
+  arch head
+    chance 20
+  more
+  arch foot
+    chance 8
+  more
+  arch hand
+    chance 8
+  more
+  arch heart
+    chance 5
+  more
+  arch liver
+    chance 8
+  more
+  arch brain
+    chance 3
+  end
+# orc/goblin parts
+treasureone goblin_parts
+  arch fl_corpse
+    chance 30
+  more
+  arch goblin_head
+    chance 30
+  more
+  arch foot
+    chance 10
+  more
+  arch hand
+    chance 10
+  more
+  arch liver
+    chance 10
+  more
+  arch heart
+    chance 10
+  end
+# Big dragon body parts
+treasureone big_dragon_parts
+  arch dragon_steak
+    nrof 3
+    chance 90
+  more
+  arch dragon_scale
+    chance 80
+    nrof 2
+  more
+  arch dragonclaw
+    chance 30
+    nrof 12
+  more
+  arch dragon_wing
+    chance 30
+    nrof 2
+  more
+  arch dragon_eye
+    chance 30
+  more
+  arch heart
+    chance 10
+  more
+  arch brain
+    chance 1
+  end
+# more appropriate for wyvern/baby dragon
+treasureone dragon_parts
+  arch dragon_steak
+    chance 30
+  more
+  arch dragonclaw
+    chance 10
+  more
+  arch dragon_wing
+    chance 25
+  more
+  arch dragon_scale 
+    chance 5
+  more
+  arch brain
+    chance 1
+  end
 # human/man-sized body parts
 treasureone human_parts
   arch fl_corpse
@@ -82,11 +310,70 @@ treasureone human_parts
     chance 1
   end
 #
+treasureone neko_parts
+  arch dead_neko
+    chance 99
+  end
+#
 treasure door
   list traps
   chance 30
 end
 #
+treasure chest
+  list chest_items
+    chance 80
+   no
+     list traps
+     more
+     list chest_items
+     more
+     list chest_items
+     more
+     list chest_items
+     chance 50
+  end
+end
+treasureone chest_items
+  arch goldcoin
+    chance 5
+    nrof 1
+  more
+  arch silvercoin
+    chance 5
+    nrof 9
+  more
+  list random_weapon
+    chance 30
+  more
+  list random_armour
+     chance 30
+  more
+  list random_food
+    chance 10
+  more
+  list random_special
+    chance 5
+    magic 6
+  more
+  list random_wealth
+    chance 5
+    magic 5
+  more
+  list random_wealth
+     chance 5
+     magic 10
+  more
+  list random_potion
+    chance 5
+    magic 5
+  more
+  list containers
+    chance 3
+  more
+  list random_scroll
+    chance 5
+  end
 # skill scrolls
 # better scrolls are harder to find 
 # ordered by skill names
@@ -225,6 +512,98 @@ treasureone needle_diseases
   arch flaming_fart
     chance 20
   end
+treasureone traps
+  list physical_traps
+    chance 50
+  more
+  list magical_traps
+    chance 50
+  end
+treasureone physical_traps
+  arch trap_diseased_needle
+    chance 70
+  more
+  arch trap_blades
+    chance 33
+  more
+  arch trap_needle
+    chance 33
+  more
+  arch trap_spikes2
+    chance 33
+  end
+treasureone magical_traps
+  arch rune_medium_fireball
+  chance 8
+  more
+  arch rune_burning_hands
+  chance 8
+  more
+  arch rune_poison_cloud
+  chance 8
+  more
+  arch rune_create_bomb
+  chance 8
+  more
+  arch rune_paralysis
+  chance 8
+  more
+  arch rune_shock
+  chance 8
+  more
+  arch rune_confusion
+  chance 8
+  more
+  arch rune_icestorm
+  chance 8
+  more
+  arch rune_drain_magic
+  chance 8
+  more
+  arch rune_blast
+  chance 8
+  more
+  arch rune_fire
+  chance 8
+  more
+  arch rune_frost
+  chance 8
+  more
+  list nastier_magical_traps
+  magic 6
+  chance 20
+  end
+treasureone nastier_magical_traps
+  arch rune_summon_air_elemental
+    chance 10  
+  more
+  arch rune_dragonbreath
+    chance 10  
+  more
+  arch rune_large_icestorm
+    chance 10  
+  more
+  arch rune_large_fireball
+    chance 10  
+  more
+  arch rune_ball_lightning
+    chance 10  
+  more
+  arch rune_summon_devil
+    chance 10  
+  more
+  arch rune_summon_earth_elemental
+    chance 10  
+  more
+  arch rune_summon_fire_elemental
+    chance 10  
+  more
+  arch rune_summon_water_elemental
+    chance 10  
+  more
+  arch rune_death
+    chance 10  
+end
 treasureone random_shop
   list random_weapon
     chance 15
@@ -390,6 +769,70 @@ treasureone random_armour
   arch cloak
     chance 10
   end
+treasureone random_food
+  arch food
+    chance 35
+  more
+  arch booze
+    chance 14
+  more
+  arch poison
+    chance 13
+  more
+  arch water
+    chance 8
+  more
+  arch apple
+    chance 3
+  more
+  arch wine
+    chance 3
+  more
+  arch coffee
+    chance 1
+  more
+  arch chocolate
+    chance 3
+  more
+  arch carrot
+    chance 1
+  more
+  arch fishfood
+    chance 4
+  more
+  arch mandrake_root
+    chance 1
+  more
+  arch cabbage
+    chance 2
+  more
+  arch potato
+    chance 3
+  more
+  arch loaf
+    chance 8
+  more
+  arch roast_bird
+    chance 3
+  more
+  arch mint
+    chance 1
+  more
+  arch clover
+    chance 1
+  more
+  arch onion
+    chance 1
+  more
+  arch orange
+    chance 1
+  more
+  arch cake
+    chance 8
+  more
+  arch waybread
+    chance 4
+  end
 treasure random_mushroom
   arch mushroom_1
    chance 50
@@ -468,15 +911,15 @@ treasureone random_special
     chance 5
     nrof 16
   more
-  list special_uncommon
+  list list9
     magic 10
     chance 5
   more
-  list special_uncommon
+  list list9
     magic 8
     chance 5
   more
-  list special_uncommon
+  list list9
     magic 5
     chance 5
   more
@@ -691,6 +1134,31 @@ treasureone starting_wealth
     nrof 40
     chance 5
   end
+treasureone shop_alchemy
+  list random_minerals
+    chance 30
+  more
+  arch water
+    chance 10
+  more
+  list shop_potions
+    chance 20
+  more
+  list containers
+    chance 2
+  more
+  list random_amulet
+    chance 3
+  more
+  list random_food
+    chance 1
+  more
+  list random_plant
+    chance 15
+  more
+  list random_alchemy
+    chance 25
+  end
 treasureone random_plant
   arch rose_pink
     nrof 5
@@ -838,25 +1306,25 @@ treasureone random_potion
     nrof 1
     chance 5
   more
-  list special_uncommon
+  list list9
     magic 14
     nrof 1
     chance 5
   more
-  list special_uncommon
+  list list9
     magic 13
     nrof 1
     chance 5
   more
-  list special_uncommon
+  list list9
     magic 12
     chance 5
   more
-  list special_uncommon
+  list list9
     magic 10
     chance 5
   more
-  list special_uncommon
+  list list9
     magic 7
     chance 5
   more
@@ -864,7 +1332,7 @@ treasureone random_potion
     magic 3
     chance 5
   end
-treasureone special_uncommon
+treasureone list9
   list NONE
     chance 5
   more
@@ -944,11 +1412,15 @@ treasureone containers
   arch quiver
     chance 10
   more
-  arch quiver_throwing
-    chance 5
-  more
   arch scrollcase
     chance 5
+  end
+treasureone shop_general
+  list containers
+    chance 70
+  more
+  arch key
+    chance 30
   end
 treasureone missile_weapons
   arch bow
@@ -1007,15 +1479,11 @@ treasureone throw_weapons
   more
   arch t_star1
     magic 4
-    nrof 12
     chance 5
   more
   arch trident
     magic 3
     nrof 3
-    chance 5
-  more
-  arch quiver_throwing
     chance 5
 end
 # melee_weapons combines old list 11 and list 12 together.  List 26
@@ -1272,7 +1740,7 @@ treasureone uncommon_weapons
   end
 # uncommon artifacts 
 treasureone uncommon_artifacts
-  arch potion_shielding
+  arch potion_invulnerability
     chance 5
   more
   arch mjoellnir
@@ -1329,7 +1797,7 @@ treasureone uncommon_artifacts
   arch elvenboots
     chance 5
   end
-treasureone random_magical
+treasureone list14
   arch amulet
     chance 10
   more
@@ -1351,15 +1819,6 @@ treasureone random_magical
   arch scroll_new
     nrof 9
     chance 30
-  more
-  arch minor_potion_restoration
-    chance 15
-  more
-  arch medium_potion_restoration
-    chance 10
-  more
-  arch major_potion_restoration
-    chance 5
   more
   arch potion_restoration
     chance 5
@@ -1384,7 +1843,7 @@ treasureone random_magical
     chance 5
     nrof 5
   more
-  list special_uncommon
+  list list9
     magic 9
     chance 5
   end
@@ -1526,6 +1985,22 @@ treasureone random_wands
   arch rod_heavy
     chance 1
   end
+treasure shop_rings
+  arch ring
+  end
+treasureone shop_light
+  arch flint_and_steel
+    chance 40
+  more
+  arch torch_unlit
+    chance 40
+  more
+  arch lantern_unlit
+    chance 15
+  more
+  arch lantern2_unlit
+    chance 5
+  end
 # for shop
 treasureone random_books
   arch cleric_book
@@ -1559,6 +2034,82 @@ treasureone random_read
   more
   arch scroll_2
     chance 35
+  end
+treasureone shop_gems
+  arch gem
+    chance 5
+    nrof 1
+  more
+  arch gem
+    chance 5
+    nrof 2
+  more
+  arch gem
+    chance 5
+    nrof 4
+  more
+  arch pearl
+    chance 5
+    nrof 6
+  more
+  arch pearl
+    chance 5
+    nrof 12
+  more
+  arch pearl
+    chance 5
+    nrof 24
+  more
+  arch ruby
+    chance 5
+    nrof 2
+  more
+  arch ruby
+    chance 5
+    nrof 4
+  more
+  arch ruby
+    chance 5
+    nrof 8
+  more
+  arch sapphire
+    chance 5
+    nrof 3
+  more
+  arch sapphire
+    chance 5
+    nrof 5
+  more
+  arch sapphire
+    chance 5
+    nrof 9
+  more
+  arch emerald
+    chance 5
+    nrof 3
+  more
+  arch emerald
+    chance 5
+    nrof 6
+  more
+  arch emerald
+    chance 5
+    nrof 10
+    more
+  arch amethyst
+    chance 1
+    nrof 8
+  more
+  arch amethyst
+    chance 1
+    nrof 3
+  end
+treasureone shop_minerals
+  list random_minerals
+     chance 80
+  more
+  list random_stone
+     chance 20
   end
 treasureone random_stone
   arch mountain_stone
@@ -1624,6 +2175,58 @@ treasureone random_minerals
     chance 10
     nrof 4
   end
+treasureone shop_potions
+  arch potion_generic
+    chance 20
+  more
+  arch dust_generic
+    chance 15
+  more
+  arch balm_generic
+    chance 10
+  more
+  arch figurine_generic
+    chance 3
+  more
+  arch potion_heal
+    chance 5
+  more
+  arch potion_magic
+    chance 5
+  more
+  arch potion_fire
+    chance 5
+  more
+  arch potion_fire2
+    chance 1
+  more
+  arch potion_cold
+    chance 5
+  more
+  arch potion_cold2
+    chance 1
+  more
+  arch potion_invulnerability
+    chance 5
+  more
+  arch potion_aethereality
+    chance 1
+  more
+  arch potion_improve
+    chance 5
+  more
+  arch potion_restoration
+    chance 10
+  more
+  arch potion_heroism
+    chance 10
+  more
+  arch vial_poison
+    chance 1
+  more
+  list list14
+    chance 10
+  end
 treasureone random_spells
   arch scroll_new
     chance 15
@@ -1648,7 +2251,7 @@ treasureone random_talisman
   list talisman
     chance 5
   more
-  list special_uncommon
+  list list9
     chance 5
   end
 treasureone random_artifact
@@ -1713,8 +2316,55 @@ treasure poor_old
   chance 4
   more
   arch silvercoin
-  nrof 80
-  chance 20
+  nrof 8
+  chance 10
+  end
+treasure raas
+  arch icor
+    chance 20
+  end
+treasure sphinx
+  list standard_old
+  more
+  arch head
+  end
+treasure wight
+  arch fl_corpse
+    chance 50
+  end
+treasure zombie
+  arch fl_corpse
+    chance 20
+  end
+treasure skeleton
+  list standard_old
+# more
+# list human_bones
+  end
+treasure bear
+  list bear_parts
+    chance 40
+  end
+treasure ape
+  list ape_parts
+    chance 30
+  end
+treasure polarbear
+  list polarbear_parts
+    chance 40
+  end
+treasure wolf
+  list wolf_parts
+    chance 40
+  end
+treasure gnoll
+  list giant_parts
+    chance 30
+  more
+  arch skill_throwing
+    chance 30
+  more
+  list poor_old
   end
 treasure rich
   list rich_old
@@ -1938,6 +2588,35 @@ treasure rich_old
   arch cloak
   chance 10
   end
+treasure snake
+  arch serp_skin
+    chance 3
+  end
+treasure sage
+  list random_books
+  more
+  arch skill_literacy
+  more
+  arch skill_alchemy
+    chance 50
+    no
+    arch skill_jeweler
+    end
+  more
+  list human_parts
+  end
+treasure scorpion
+  arch insect_stinger
+    chance 10
+  end
+treasure xan
+  arch insect_wing
+    chance 10
+  end
+treasure giant_bat
+  arch bat_wing
+    chance 10
+  end
 treasure rod
   arch rod_light
   chance 2
@@ -1972,6 +2651,344 @@ treasure throw_rich
     chance 35
   more
   list rich
+  end
+treasure troll
+  list giant_old
+  more
+  arch skill_throwing
+    chance 40
+    yes
+    arch t_boulder
+      nrof 5
+    end
+  more
+  list troll_parts
+  end
+treasure giant
+  list giant_old
+  more
+  arch skill_throwing
+  more
+  arch t_boulder
+  nrof 8
+  more
+  list giant_parts
+    chance 10
+  end
+treasure giant_old
+  arch big_club
+  more
+  arch goldcoin
+  chance 6
+  nrof 80
+  end
+treasure beholder_big
+  arch big_eye
+    chance 85
+  more
+  arch spell_paralyze
+  more
+  arch abil_fear
+  more
+  arch abil_poison_cloud
+  more
+  arch spell_sm_lightning
+  more
+  arch spell_large_lightning
+  more
+  arch abil_large_icestorm
+  more
+  arch abil_icestorm
+  more
+  arch spell_burning_hands
+  more
+  arch spell_medium_fireball
+  more
+  arch spell_magic_missile
+  more
+  arch spell_magic_bullet
+  more
+  arch spell_small_speedball
+  more
+  arch spell_mass_confusion
+  more
+  arch abil_slow
+  more
+  arch spell_cancellation
+#  more
+#  arch beholdereye
+  end
+treasure beholder
+  list beholder_parts
+    chance 20
+  more
+  arch spell_paralyze
+  chance 50
+  more
+  arch abil_fear
+  chance 75
+  more
+  arch abil_poison_cloud
+  chance 50
+  more
+  arch spell_sm_lightning
+  more
+  arch spell_large_lightning
+  more
+  arch abil_large_icestorm
+  chance 25
+  more
+  arch abil_icestorm
+  chance 25
+  more
+  arch spell_burning_hands
+  more
+  arch spell_medium_fireball
+  more
+  arch spell_magic_missile
+  more
+  arch spell_magic_bullet
+  more
+  arch spell_small_speedball
+  more
+  arch spell_mass_confusion
+  more
+  arch abil_slow
+  more
+  arch gem
+  nrof 1
+  chance 10
+  end
+treasure skull 
+  list skull_parts
+    chance 20
+  more
+  arch spell_paralyze
+  chance 50
+  more
+  arch abil_fear
+  chance 75
+  more
+  arch abil_poison_cloud
+  chance 50
+  more
+  arch spell_sm_lightning
+  more
+  arch spell_large_lightning
+  more
+  arch abil_large_icestorm
+  chance 25
+  more
+  arch abil_icestorm
+  chance 25
+  more
+  arch spell_burning_hands
+  more
+  arch spell_medium_fireball
+  more
+  arch spell_magic_missile
+  more
+  arch spell_magic_bullet
+  more
+  arch spell_small_speedball
+  more
+  arch spell_mass_confusion
+  more
+  arch abil_slow
+  more
+  arch gem
+  nrof 1
+  chance 10
+  end
+treasure demonlord
+  arch spell_hellfire
+  more
+  arch abil_burning_hands
+  more
+  arch abil_fear
+  more
+  arch spell_sm_lightning
+  more
+  arch spell_large_lightning
+  more
+  arch spell_magic_missile
+  more
+  arch spell_paralyze
+  end
+treasure wyvern
+  list dragon_parts
+    chance 80
+  more
+  arch abil_burning_hands
+    nrof 3
+  more
+  arch abil_medium_fireball
+    nrof 3
+  more
+  arch abil_fear
+#  more
+#  arch dragon_steak
+#  chance 90
+  end
+treasure drake
+  arch dragonclaw
+    chance 10
+  more
+  arch dragon_wing
+    chance 30
+  end
+treasure chinese
+  list big_dragon_parts
+    chance 50
+  more
+#  arch dragon_steak
+#  nrof 2
+#  chance 90
+#  more
+  arch abil_icestorm
+    nrof 3
+  more
+  arch abil_large_icestorm
+    nrof 3
+  more
+  arch abil_fear
+  more
+  arch abil_poison_cloud
+  more
+  arch gem
+    chance 10
+    nrof 1
+    no
+      arch ruby
+        nrof 1
+        chance 30
+        no
+          arch sapphire
+          nrof 3
+          chance 30
+          no
+            arch emerald
+              nrof 4
+              chance 50
+        end
+      end
+    end
+  more
+  arch platinacoin
+    nrof 2
+    chance 10
+    no
+    arch goldcoin
+      nrof 7
+      chance 50
+      no
+      arch silvercoin
+        nrof 30
+      end
+    end
+  end
+treasure dragon
+  list big_dragon_parts
+    chance 80
+  more
+#  arch dragon_steak
+#  nrof 3
+#  chance 90
+#  more
+  arch ability_dragonbreath
+    nrof 5
+  more
+  arch abil_fear
+  more
+#  arch dragon_scale
+#  more
+  arch wand
+  more
+  arch wand
+  chance 50
+  more
+  arch staff
+  chance 50
+  more
+  arch rod_light
+  chance 20
+  more
+  arch rod_heavy
+  chance 5
+  more
+  arch ring
+  more
+  arch ring
+  chance 50
+  more
+  arch gem
+  chance 50
+  nrof 2
+  more
+  arch ruby
+  nrof 2
+  more
+  arch sapphire
+  nrof 3
+  more
+  arch emerald
+  nrof 4
+  more
+  arch pearl
+  nrof 10
+  more
+  arch platinacoin
+  nrof 5
+  more
+  arch goldcoin
+  nrof 100
+  more
+  arch silvercoin
+  nrof 1000
+  more
+  arch scroll_new
+  more
+  arch scroll_new
+  chance 50
+  more
+  arch sword_2
+  magic 5
+  chance 20
+  more
+  arch cloak
+  chance 30
+  end
+treasure para_elemental
+  arch residue
+    chance 20
+  end
+treasure ghost
+  arch ectoplasm
+    chance 5
+  end
+treasure grave
+  arch gravedirt
+  end
+treasure pyromaniac
+  arch spell_create_bomb
+  end
+treasure demilich
+  arch insanity
+  more
+  arch spell_paralyze
+  more
+  arch abil_fear
+  more
+  arch abil_poison_cloud
+  more
+  arch abil_large_icestorm
+  more
+  arch abil_icestorm
+  more
+  arch spell_mass_confusion
+  more
+  arch gem  
+  nrof 1
   end
 ##############################################################################
 # start of starting equipment for players.
@@ -2021,6 +3038,29 @@ treasure prayer_skills
   arch skill_praying
   end
 #
+treasure monk_class_items
+  list basic_skills
+  more
+  arch skill_missile_weapon
+  more
+  arch skill_meditation
+  more
+  arch skill_karate
+  more
+  arch skill_sense_magic
+  more
+  arch robe
+  more
+  arch r_sack
+  more
+  arch sandals
+  more
+  arch skill_praying
+  more
+  arch skill_sense_curse
+  more
+  arch monk_no_use_weapon
+  end
 treasure monk
   list basic_skills
   more
@@ -2037,6 +3077,91 @@ treasure monk
   arch r_sack
   more
   arch sandals
+  end
+treasure troll_player_items
+  arch troll_player_force
+  end
+treasure gnome_player_items
+  arch skill_praying
+  end
+treasure dwarf_player_items
+  arch skill_smithery
+  end
+treasure dwarf
+  list fighter_skills
+  more
+  arch hammer
+  more
+  arch shield
+  more
+  arch chain_mail
+  more
+  arch helmet
+  more
+  arch skill_smithery
+  end
+treasure half_orc_player_items
+  arch skill_stealing
+  end
+treasure pl_half_orc
+  list fighter_skills
+  more
+  arch mace
+  more
+  arch round_shield
+  more
+  arch scale_mail
+  more
+  arch sack
+  more
+  arch skill_stealing
+  end
+treasure halfling_player
+  arch skill_stealing
+  more
+  arch skill_hide
+  end
+treasure halfling
+  list fighter_skills
+  more
+  arch leather_armour
+  more
+  arch dagger
+  more
+  arch skill_stealing
+  more
+  arch skill_hide
+  end
+treasure pl_troll
+  arch skill_clawing
+  more
+  arch skill_one_handed_weapon
+  more
+  arch skill_two_handed_weapon
+  more
+  list basic_skills
+  more
+  arch club
+  more
+  arch sack
+  end
+treasure elf_player_items
+  arch elf_player_force
+  more
+  arch bow
+    magic 2
+  more
+  arch arrow
+    magic 3
+    nrof 100
+  more
+  arch quiver
+  more
+  arch skill_bowyer
+  more
+  arch skill_woodsman
+  more
+  arch skill_missile_weapon
   end
 treasure elf
   list fighter_skills
@@ -2055,6 +3180,9 @@ treasure elf
   arch arrow
   nrof 50
   end
+treasure human_player
+  list random_knowledge
+  end
 treasure human
   list fighter_skills
   more
@@ -2069,6 +3197,25 @@ treasure human
   arch sack
   more
   arch cloak
+  end
+treasure ninja_class_items
+  list fighter_skills
+  more
+  arch skill_jumping
+  more
+  arch skill_hide
+  more
+  arch guide_melee
+  more
+  arch nunchacu_1
+  more
+  arch leather_armour
+  more
+  arch bag
+  more
+  arch cloak
+  more
+  arch skill_karate
   end
 treasure ninja
   list fighter_skills
@@ -2085,6 +3232,40 @@ treasure ninja
   more
   arch cloak
   end
+treasure warrior_class_items
+  list fighter_skills
+  more
+  arch guide_melee
+  more
+  arch b_sword_2
+  more
+  arch chain_mail
+  more
+  arch b_shield
+  more
+  arch sack
+  end
+treasure paladin_class_items
+  list fighter_skills
+  more
+  arch guide_melee
+  more
+  arch b_bsword_1
+  more
+  arch b_plate_mail
+  more
+  arch b_shield
+  more
+  arch b_full_helmet
+  more
+  arch cleric_book_l1
+  more
+  arch paladin_holy_symbol
+  more
+  arch skill_oratory
+  more
+  arch sack
+  end
 treasure warrior
   list fighter_skills
   more
@@ -2097,6 +3278,188 @@ treasure warrior
   arch plate_mail
   more
   arch sack
+  end
+treasure sorcerer_class_items
+  list basic_skills
+  more
+  arch skill_sorcery
+  more
+  arch guide_wizard
+  more
+  arch sorcerer_book_l1
+  more
+  arch sorcerer_book_l1
+  more
+  arch sorcerer_book_l1
+  more
+  arch skill_sense_magic
+  more
+  arch skill_thaumaturgy
+  more
+  arch sorcerer_hat
+  more
+  arch robe
+  end
+treasure evoker_class_items
+  list basic_skills
+  more
+  arch skill_one_handed_weapon
+  more
+  arch talisman_evoker
+  more
+  arch robe
+  more
+  arch evoker_book_l1
+  more
+  arch evoker_book_l1
+  more
+  arch b_ssword_1
+  more
+  arch staff
+  end
+treasure alchemist_class_items
+  list basic_skills
+  more
+  arch skill_one_handed_weapon
+  more
+  arch talisman_alchemist
+  more
+  arch skill_alchemy
+  more
+  arch skill_thaumaturgy
+  more
+  arch spell_alchemy
+  more
+  arch guide_alchemy
+  more
+  arch cauldron
+  more
+  arch robe
+  more
+  arch evoker_book_l1
+  more
+  arch sorcerer_book_l1
+  more
+  arch b_dagger
+  end
+treasure summoner_class_items
+  list basic_skills
+  more
+  arch skill_one_handed_weapon
+  more
+  arch skill_praying
+  more
+  arch guide_summon
+  more
+  arch talisman_summoner
+  more
+  arch robe
+  more
+  arch summoner_book_l1
+  more
+  arch summoner_book_l1
+  more
+  arch b_ssword_1
+  end
+treasure wizard_class_items
+  list wizard_skills
+  more
+  arch skill_sorcery
+  more
+  arch guide_wizard
+  more
+  arch robe
+  more
+  arch sorcerer_book_l1
+  more
+  arch sorcerer_book_l1
+  more
+  arch sorcerer_book_l1
+  more
+  arch b_dagger
+  end
+treasure devotee_class_items
+  list wizard_skills
+  more
+  arch skill_evocation
+  more
+  arch guide_priest
+  more
+  arch robe
+  more
+  arch cleric_book_l1
+  more
+  arch evoker_book_l1
+  more
+  arch evoker_book_l1
+  more
+  arch b_dagger
+  end
+treasure wizard
+  list wizard_skills
+  more
+  arch skill_sorcery
+  more
+  arch robe
+  more
+  arch sorcerer_book_l1
+  more
+  arch sorcerer_book_l1
+  more
+  arch b_dagger
+  end
+treasure wraith_player_items
+  arch wraith_player_force
+  more
+  arch no_class_face_change
+  end
+treasure cleric
+  list fighter_skills
+  more
+  arch morningstar
+  more
+  arch ring_mail
+  more
+  arch holy_symbol
+  more
+  arch skill_oratory
+  more
+  arch cleric_book_l1
+  more
+  arch b_small_shield
+  end
+treasure barbarian_class_items
+  arch skill_one_handed_weapon
+  more
+  arch skill_two_handed_weapon
+  more
+  arch skill_missile_weapon
+  more
+  arch skill_throwing
+  more
+  arch skill_find_traps
+  more
+  arch skill_remove_trap
+  more
+  arch skill_use_magic_item
+  more
+  arch guide_melee
+  more
+  arch leather_armour
+  more
+  arch mace
+  more
+  arch skill_climbing
+  more
+  arch skill_woodsman
+  more
+  arch b_horned_helmet
+  more
+  arch sack
+  more
+  arch round_shield
+  more
+  arch high_boots
   end
 treasure barbarian
   list fighter_skills
@@ -2113,6 +3476,29 @@ treasure barbarian
   more
   arch sack
   end
+treasure priest_class_items
+  list basic_skills
+  more
+  arch skill_praying
+  more
+  arch skill_one_handed_weapon
+  more
+  arch skill_two_handed_weapon
+  more
+  arch guide_priest
+  more
+  arch robe
+  more
+  arch quarterstaff
+  more
+  arch cleric_book_l1
+  more
+  arch cleric_book_l1
+  more
+  arch skill_sense_curse
+  more
+  arch amulet
+  end
 treasure priest
   list wizard_skills
   more
@@ -2128,6 +3514,19 @@ treasure priest
   more
   arch amulet
   end
+treasure warlock_class_items
+  list fighter_skills
+  more
+  arch talisman_evocation
+  more
+  arch b_lsword
+  more
+  arch leather_armour
+  more
+  arch evoker_book_l1
+  more
+  arch evoker_book_l1
+  end
 treasure mage
   list fighter_skills
   more
@@ -2140,6 +3539,256 @@ treasure mage
   arch sorcerer_book_l1
   more
   arch evoker_book_l1
+  end
+treasure northman_player_items
+  arch bighorned_helmet
+end
+treasure viking
+  list fighter_skills
+  more
+  arch leather_armour
+  more
+  arch sword
+  more
+  arch skill_bargaining
+  more
+  arch b_small_shield
+  more
+  arch bighorned_helmet
+  end
+treasure swashbuckler_class_items
+  list fighter_skills
+  more
+  arch b_lsword
+  more
+  arch skill_stealing
+  more
+  arch skill_singing
+  more
+  arch b_dagger
+  more
+  arch amulet
+  more
+  arch sack
+  end
+treasure swashbuckler
+  list fighter_skills
+  more
+  arch light_sword
+  more
+  arch skill_stealing
+  more
+  arch skill_singing
+  more
+  arch dagger
+  more
+  arch amulet
+  more
+  arch sack
+  end
+treasure thief_class_items
+  list fighter_skills
+  more
+  arch cloak
+  more
+  arch shortsword
+  more
+  arch skill_stealing
+  more
+  arch lockpicks
+  more
+  arch sack
+  more
+  arch leather_armour
+  end
+treasure thief
+  list fighter_skills
+  more
+  arch cloak
+  more
+  arch dagger
+  more
+  arch skill_stealing
+  more
+  arch lockpicks
+  more
+  arch leather_armour
+  more
+  arch sack
+  end
+treasure fireborn_player_items
+  arch skill_levitate
+  more
+  arch fireborn_player_force
+  more
+  arch skill_flame_touch
+  more
+  arch skill_pyromancy
+  more
+  arch skill_praying
+  more
+  arch no_class_face_change
+  more
+  arch ring
+  magic 5
+  more
+  arch power_crystal
+  more
+  arch amulet
+  magic 3
+  more
+  arch pyro_book_l1
+  more
+  arch cleric_book_l1
+  end
+treasure fireborn
+  arch skill_levitate
+  more
+  arch skill_missile_weapon
+  more
+  list basic_skills
+  more
+  arch skill_flame_touch
+  more
+  arch skill_pyromancy
+  more
+  arch skill_praying
+  more
+  arch ring
+  magic 5
+  more
+  arch power_crystal
+  more
+  arch amulet
+  magic 3
+  more
+  arch cleric_book_l1
+  more
+  arch pyro_book_l1
+  more
+  arch pyro_book_l1
+  more
+  arch pyro_book_l1
+  end
+treasure quetzalcoatl_player_items
+  arch skill_levitate
+  more
+  arch skill_clawing
+  more
+  arch abil_burning_hands
+  more
+  arch abil_medium_fireball
+  more
+  arch no_class_face_change
+  more
+  arch skill_pyromancy
+  end
+treasure dragon_player_items
+  arch dragon_skin_force
+  more
+  arch dragon_ability_force
+  more
+  arch skill_levitate
+  more
+  arch skill_clawing
+  more
+  arch skill_woodsman
+  more
+  arch abil_burning_hands
+  more
+  arch abil_medium_fireball
+  more
+  arch no_class_face_change
+  more
+  arch skill_evocation
+  end
+treasure quetzalcoatl
+  arch skill_levitate
+  more
+  arch skill_one_handed_weapon
+  more
+  arch skill_two_handed_weapon
+  more
+  arch skill_missile_weapon
+  more
+  arch skill_clawing
+  more
+  list basic_skills
+  more
+  arch skill_pyromancy
+  more
+  arch pyro_book_l1
+  more
+  arch pyro_book
+  more
+  arch abil_burning_hands
+  more
+  arch abil_medium_fireball
+  end
+treasure acdc
+  arch abil_fear
+  more
+  arch spell_sm_lightning
+    nrof 3
+  more
+  arch spell_large_lightning
+    nrof 3
+  more
+  arch dragon_steak
+  nrof 2
+  chance 90
+  more
+  arch dragon_scale
+  more
+  arch wand
+  more
+  arch staff
+  chance 50
+  more
+  arch wand
+  chance 50
+  more
+  arch ring
+  more
+  arch ring
+  chance 50
+  more
+  arch gem
+  chance 80
+  nrof 2
+  more
+  arch ruby
+  nrof 3
+  more
+  arch sapphire
+  nrof 3
+  more
+  arch emerald
+  nrof 4
+  more
+  arch pearl
+  nrof 6
+  more
+  arch platinacoin
+  nrof 5
+  more
+  arch goldcoin
+  nrof 30
+  more
+  arch silvercoin
+  nrof 500
+  more
+  arch scroll_new
+  more
+  arch scroll_new
+  chance 50
+  more
+  arch scroll_new
+  chance 50
+  more
+  arch sword_2
+  chance 10
+  magic 3
   end
 treasure avatar
   arch spell_summon_pet_monster
@@ -2160,26 +3809,58 @@ treasure avatar
   chance 50
   nrof 3
   end
-#treasure suprise
-#  arch firechest
-#  chance 30
-#  no
-#    arch ghost
-#    chance 20
-#    no
-#      arch gauntlets_str
-#      chance 2
-#      no
-#        arch elvenboots
-#        chance 2
-#        no
-#          arch black_pudding
-#          chance 10
-#          end
-#        end
-#      end
-#    end
-#  end
+treasure unicorn
+  arch u_horn
+  end
+treasure banshee
+  arch spell_paralyze
+  more
+  arch abil_fear
+  more
+  arch spell_paralyze
+  more
+  arch skill_clawing
+  more
+  arch spell_cause_medium_wounds
+  more
+  arch ring
+  chance 50
+  more
+  arch amulet
+  chance 15
+  more
+  arch gem
+  chance 30
+  nrof 2
+  more
+  arch sapphire
+  chance 25
+  nrof 3
+  more
+  arch emerald
+  chance 50
+  nrof 4
+  end
+treasure suprise
+  arch firechest
+  chance 30
+  no
+    arch ghost
+    chance 20
+    no
+      arch gauntlets_str
+      chance 2
+      no
+        arch elvenboots
+        chance 2
+        no
+          arch black_pudding
+          chance 10
+          end
+        end
+      end
+    end
+  end
 treasure spark
   arch spell_sm_lightning
     nrof 6
@@ -2187,7 +3868,6772 @@ treasure spark
   arch spell_large_lightning
     nrof 6
   end
+treasure cold_dragon
+  arch abil_icestorm
+    nrof 2
+  more
+  arch abil_large_icestorm
+   nrof 2
+  end
+treasure Cwyvern
+  list dragon_parts
+    chance 70
+  more
+  arch abil_fear
+  more
+  arch ability_dragonbreath
+    nrof 5
+  more
+  arch abil_icestorm
+  more
+  arch abil_large_icestorm
+  more
+  arch spell_sm_lightning
+  more
+  arch spell_large_lightning
+  more
+  arch abil_poison_cloud
+  more
+  arch spell_create_pool_of_chaos
+  more
+  arch gem
+    nrof 40
+  more
+  arch gem
+    nrof 15
+    chance 60
+  more
+  arch ring
+    chance 30
+  more
+  arch ring
+    chance 30
+  end
+treasure fire_serpent
+  arch abil_burning_hands
+  chance 50
+  more
+  arch abil_medium_fireball
+  chance 50
+  end
+treasure serpent
+  arch poisoning
+  chance 50
+  more
+  arch serp_skin
+  chance 20
+  end
+treasure imp
+  arch abil_burning_hands
+  more
+  arch abil_medium_fireball
+  end
+treasure liv_chaos
+  arch spell_create_pool_of_chaos
+  end
+treasure lokanth
+  list standard
+  more
+  arch skill_clawing
+  end
 treasure queen_ant
   arch gem
+  end
+treasure spit_ant
+  arch ability_spit_acid
+  more
+  arch acid_spit
+  nrof 30
+  end
+treasure guard_l
+  arch scale_mail
+  more
+  arch spear
+  end
+treasure guard_m
+  arch chain_mail
+  more
+  arch lspear
+  end
+treasure guard_h
+  arch chain_mail
+  more
+  arch poleaxe
+  end
+treasure slave
+  list human_parts
+    chance 20
+  more
+  arch turban
+  more
+  arch sandals
+  end
+treasure byakie
+  arch abil_fear
+  end
+treasure gargoyle
+  list melee_weapons
+  chance 30
+  more
+  arch gem
+  chance 50
+  nrof 1
+  end
+treasure neko
+  list neko_parts
+    chance 99
+  end
+treasure witch_fire
+  arch abil_burning_hands
+  more
+  arch abil_medium_fireball
+  more
+  arch abil_create_fire_wall
+  more
+  arch spell_summon_fire_elemental
+ end
+treasure witch_earth
+  arch skill_throwing
+  more
+  arch ability_stone_throw
+  more
+  arch rock2
+   chance 50
+   nrof 20
+   no
+     arch gem
+     nrof 2
+     end
+  more
+  arch abil_fear
+  more
+  arch spell_wall_of_thorns
+  more
+  arch spell_summon_earth_elemental
+ end
+treasure witch_air
+  arch spell_sm_lightning
+  more
+  arch spell_large_lightning
+  more
+  arch abil_poison_cloud
+  more
+  arch spell_windstorm
+  more
+  arch spell_summon_air_elemental
+ end
+treasure witch_water
+  arch abil_icestorm
+  more
+  arch abil_large_icestorm
+  more
+  arch spell_summon_fog
+  more
+  arch abil_slow
+   more
+  arch abil_create_frost_wall
+  more
+  arch spell_summon_water_elemental
+ end
+treasure witch_chaos
+  arch spell_color_spray
+  more
+  arch abil_ball_lightning
+    nrof 3
+  more
+  arch spell_create_pool_of_chaos
+  more
+  arch spell_summon_water_elemental
+  more
+  arch spell_summon_air_elemental
+  more
+  arch spell_summon_earth_elemental
+  more
+  arch spell_summon_fire_elemental
+  end
+treasure giantrat
+  list giantrat_parts
+    chance 30
+ end
+treasure shadow
+  arch spell_negaball
+  more
+  arch spell_cancellation
+ end
+treasure s_wyvern
+  arch spell_negabolt
+  more
+  arch spell_cancellation
+ end
+treasure giant_worm
+  arch spell_magic_bullet
+  more
+  arch spell_vitriol
+  more
+  arch abil_slow
+  more
+  arch eye
+  chance 30
+  no
+    arch residue
+    chance 10
+    end
+  more
+  arch gem
+    chance 60
+    nrof 7
+  end
+treasure skree
+  arch abil_fear
+  more
+  arch spell_paralyze
+  more
+  arch abil_slow
+  more
+  list skree_bits
+  end
+treasure skree_bits
+  arch skreeclaw
+    chance 40
+    nrof 2  
+  more
+  arch skreeeye
+    chance 10
+    nrof 1
+  end
+treasure behemoth
+  list behemoth_parts
+    chance 30
+end
+#
+treasureone sheep
+  arch sheepskin
+    chance 5
+  more
+  arch liver
+    chance 5
+  more
+  arch heart
+    chance 5
+  more
+  arch haggis
+    chance 2
+  more
+  arch leg_mutton
+    chance 15
+  end
+#
+# Start of collected .trs files
+#
+#############################################################
+# Gnarg - Father of goblins, Lord Troll, Master of poisons,
+#         Patron of assassins, The Unclean one
+treasure Gnarg
+  arch gnarg_avatar_info
+  more
+  arch gnarg_holy_servant_info
+  more
+  arch god_restore_grace
+  more
+  arch god_restore_hitpoints
+  more
+  arch god_cure_confusion
+  more
+  arch god_remove_damnation
+    chance 30
+  more
+  arch god_remove_depletion
+    chance 50
+  more
+  arch gnarg_general_info
+    chance 10
+  more
+  arch god_enchant_weapon_high
+    chance 50
+  more
+arch god_grace_limit_low
+more
+  arch helmet_gnarg
+    chance 5
+  more
+  arch spell_poison_fog
+  more
+arch god_grace_limit_medium
+more
+  arch spell_cause_smallpox
+  more
+  arch bracers_gnarg
+    chance 2
+  more
+arch god_grace_limit_high
+more
+  arch spell_cause_rabies
+end
+#############################################################
+# Lythander - Elven god of luck, Huntsman of Goblins, Trollslayer,
+#             the Trickster
+treasure Lythander
+ arch lythander_avatar_info
+  more
+ arch lythander_holy_servant_info
+  more
+ arch god_restore_grace
+  more
+ arch god_restore_hitpoints
+  more
+ arch god_cure_poison
+  more
+ arch god_remove_damnation
+   chance 50
+  more
+ arch god_remove_depletion
+   chance 50
+  more
+ arch lythander_general_info
+   chance 10
+  more
+ arch god_enchant_weapon_medium
+   chance 50
+  more
+ arch god_grace_limit_low
+  more
+   arch pipe_lythander
+     chance 3
+  more
+ arch god_grace_limit_medium
+  more
+   arch bow_lythander
+     chance 5
+    more
+   arch spell_conflict
+    more
+   arch spell_defense 
+end
+#############################################################
+# Mostrai - Dwarven deity of metal smithing and warcraft,
+#           Giant basher, Delver of secrets
+treasure Mostrai
+  arch mostrai_avatar_info
+  more
+  arch mostrai_holy_servant_info
+  more
+  arch god_restore_grace
+  more
+  arch god_restore_hitpoints
+  more
+  arch god_cure_confusion
+  more
+  arch god_cure_poison
+  more
+  arch god_remove_damnation
+    chance 40
+  more
+  arch god_remove_depletion
+    chance 50
+  more
+  arch mostrai_general_info
+    chance 10
+  more
+  arch god_enchant_weapon_high
+    chance 50
+  more
+arch god_grace_limit_low
+more
+  arch mail_mostrai
+    chance 3
+  more
+arch god_grace_limit_medium
+more
+  arch spell_wall_of_thorns
+end
+#############################################################
+# Valkyrie - goddess of warriors
+treasure Valkyrie
+  arch god_restore_grace
+  more
+  arch god_restore_hitpoints
+  more
+  arch god_cure_confusion
+  more
+  arch god_remove_curse
+    chance 50
+  more
+  arch god_remove_damnation
+    chance 30
+  more
+  arch god_remove_depletion
+    chance 50
+  more
+  arch valkyrie_general_info
+    chance 10
+  more
+arch god_grace_limit_wimpy
+  more
+  arch god_enchant_weapon_low
+    chance 50
+  more
+arch god_grace_limit_low
+  more
+  arch god_enchant_weapon_medium
+    chance 50
+  more
+arch god_grace_limit_medium
+  more
+  arch amulet_lifesave
+    chance 10
+  more
+arch god_grace_limit_high
+  more
+  arch god_enchant_weapon_high
+end
+treasure altar_valkyrie
+  arch altar_valkyrie_pray_event
+end
+#############################################################
+# Gaea - Goddess of peace, Guardian of life, Mother of nature
+#
+treasure Gaea
+ arch gaea_avatar_info
+  more
+ arch gaea_holy_servant_info
+  more
+ arch god_restore_grace
+  more
+ arch god_restore_hitpoints
+  more
+ arch god_cure_confusion
+  more
+ arch god_cure_poison
+  more
+ arch god_remove_curse
+   chance 50
+  more
+ arch god_remove_damnation
+   chance 50
+  more
+ arch god_remove_depletion
+   chance 50
+  more
+ arch gaea_general_info
+   chance 10
+  more
+ arch god_grace_limit_low
+  more
+ arch spell_spiderweb
+   chance 20
+  more
+ arch spell_wall_of_thorns
+  more
+ arch spell_insect_plague
+  more
+ arch spell_iron_skin
+  more
+ arch god_grace_limit_medium
+  more
+ arch spell_raise_dead
+  more
+ arch spell_remove_damnation
+  more
+ arch spell_nightfall
+  more
+ arch spell_sanctuary
+  more
+ arch spell_daylight
+  more
+ arch spell_resurrection
+  more
+ arch spell_peace
+  more
+ arch glovesofsun
+  chance 10
+  more
+ arch god_grace_limit_high
+  more
+   arch spell_reincarnation
+    more
+   list gaea_treasure
+     chance 30
+   more
+  arch shield_gaea
+    chance 5
+end
+treasure gaea_treasure
+  list random_plant
+    chance 50
+  no
+    arch tear_gaea
+  end
+end
+#############################################################
+# Ixalovh - Chaos Goddess of frozen tentacles, Sea Serpent,
+#            Ocean Waves
+treasure Ixalovh
+ arch ixalovh_avatar_info
+  more
+ arch ixalovh_holy_servant_info
+  more
+ arch god_restore_grace
+  more
+ arch god_restore_spellpoints_high
+  more
+ arch god_heal
+  more
+ arch god_cure_poison
+  more
+ arch god_remove_depletion
+   chance 50
+  more
+ arch god_remove_curse
+   chance 20
+  more
+ arch ixalovh_general_info
+   chance 10
+  more
+ arch god_enchant_weapon_high
+   chance 40
+  more
+ arch god_grace_limit_low
+   more
+    arch spell_wave
+   more
+    arch spell_insect_plague
+  more
+ arch god_grace_limit_medium
+   more
+    arch spell_siren_call
+  more
+ arch god_grace_limit_high
+  more
+    arch spear_ixalovh
+    chance 2
+end
+#############################################################
+# Ruggilli - Chaos God of slaughter and terror, Consuming worm,
+#            Greedy gut
+treasure Ruggilli
+  arch ruggilli_avatar_info
+  more
+  arch ruggilli_holy_servant_info
+  more
+  arch god_restore_grace
+  more
+  arch god_restore_hitpoints
+  more
+  arch god_cure_confusion
+  more
+  arch immolation
+  more
+  arch immolation_immunity
+  more
+  arch god_cure_poison
+  more
+  arch god_remove_depletion
+    chance 50
+  more
+  arch god_remove_curse
+    chance 10
+  more
+  arch ruggilli_general_info
+    chance 10
+  more
+  arch god_enchant_weapon_medium
+    chance 50
+  more
+arch god_grace_limit_medium
+more
+  arch spell_flaming_aura
+  more
+  arch spell_rage
+  more
+arch god_grace_limit_high
+more
+  arch spell_retributive_strike
+more
+  arch burningtail
+    chance 2
+end
+#############################################################
+# Sorig - Lord of Storms, King of Thunder and Lightning, Sky Lord
+#
+treasure Sorig
+  arch sorig_avatar_info
+  more
+  arch sorig_holy_servant_info
+  more
+  arch god_restore_grace
+  more
+  arch god_restore_hitpoints
+  more
+  arch god_cure_confusion
+  more
+  arch god_cure_poison
+  more
+  arch god_remove_depletion
+    chance 50
+  more
+  arch god_remove_curse
+    chance 20
+  more
+  arch sorig_general_info
+    chance 10
+  more
+  arch god_enchant_weapon_medium
+    chance 50
+  more
+  arch god_grace_limit_low
+  more
+  arch spell_divine_shock
+    chance 20
+  more
+  arch spell_forked_lightning
+    chance 20
+  more
+  arch god_grace_limit_medium
+  more
+  arch spell_cause_critical_wounds
+  more
+  arch spell_windstorm
+  more
+  arch spell_cause_many_wounds
+  more
+  arch god_grace_limit_high
+  more
+  arch mithril_ar_ele_sorig
+    chance 2
+end
+treasureone horn_siren
+ arch spell_siren_call
+ chance 1
+end
+treasureone horn_waves
+ arch spell_wave
+ chance 1
+end
+treasureone pipe_lythander
+ arch spell_mass_confusion
+ chance 1
+end
+#############################################################
+# Devourers - Soul Eaters, Harbingers of Death, Nameless Lords
+#             of the Tomb
+treasure Devourers
+  arch devourers_avatar_info
+  more
+  arch devourers_holy_servant_info
+  more
+  arch god_restore_grace
+  more
+  arch god_cure_confusion
+  more
+  arch god_cure_poison
+  more
+  arch devourers_general_info
+    chance 10
+  more
+  arch god_enchant_weapon_medium
+    chance 50
+  more
+arch god_grace_limit_medium
+more
+  arch spell_nightfall
+  more
+  arch spell_finger_of_death
+  more
+  arch spell_face_of_death
+  more
+  arch spell_cause_many_wounds
+  more
+  arch spell_cause_red_death
+  more
+arch god_grace_limit_high
+  more
+  arch spell_cause_black_death
+    chance 10
+end
+#############################################################
+# Gorokh - Demon King, Duke of Hell, Temptor and Tormentor
+#
+treasure Gorokh
+  arch gorokh_avatar_info
+  more
+  arch gorokh_holy_servant_info
+  more
+  arch god_restore_grace
+  more
+  arch god_restore_hitpoints
+  more
+  arch god_cure_confusion
+  more
+  arch god_cure_poison
+  more
+  arch god_remove_curse
+    chance 10
+  more
+  arch god_remove_depletion
+    chance 40
+  more
+  arch gorokh_general_info
+    chance 10
+  more
+  arch god_enchant_weapon_medium
+    chance 50
+  more
+  arch spell_flaming_aura
+  more
+arch god_grace_limit_medium
+more
+  arch spell_rage
+  more
+  arch spell_vitriol
+end
+#############################################################
+# Hanuk - Followers of the Dark Angel
+treasure Hanuk
+  arch hanuk_avatar_info
+  more
+  arch hanuk_holy_servant_info
+  more
+  arch god_restore_grace
+  more
+  arch hanuk_general_info
+    chance 10
+  more
+arch god_grace_limit_medium
+more
+  arch spell_nightfall
+  	chance 80
+  more
+  arch spell_create_blackfire_wall
+  	chance 70
+  more
+  arch spell_small_blackfireball
+  	chance 60
+  more
+  arch spell_medium_blackfireball
+  	chance 50
+  more
+arch god_grace_limit_high
+more
+  arch spell_large_blackfireball
+    chance 10
+  more
+  arch spell_flame_of_the_ifrit
+    chance 5
+  more
+  list hanuk_treasure
+     chance 10
+end
+treasure hanuk_treasure
+   arch heart_hanuk_str
+     chance 25
+     more
+   arch heart_hanuk_pow
+     chance 25
+     more
+   arch heart_hanuk_fire
+     chance 20
+     more
+   arch heart_hanuk_cold
+     chance 20
+     more
+   arch heart_hanuk_chaos
+     chance 10
+end
+#########################################################
+# Valriel - Lord of Angels, Duke of the Heavens, Healer and Protector
+#
+treasure Valriel
+  arch valriel_avatar_info
+  more
+  arch valriel_holy_servant_info
+  more
+  arch god_restore_grace
+  more
+  arch god_restore_hitpoints
+  more
+  arch god_cure_confusion
+  more
+  arch god_cure_poison
+  more
+  arch valriel_player_glow
+  more
+  arch god_remove_curse
+    chance 10
+  more
+  arch god_remove_damnation
+    chance 60
+  more
+  arch god_remove_depletion
+    chance 50
+  more
+  arch valriel_general_info
+    chance 10
+  more
+  arch god_enchant_weapon_low
+    chance 30
+  more
+arch god_grace_limit_medium
+more
+  arch spell_sunspear
+  more
+  arch spell_daylight
+  more
+  arch spell_wrathful_eye
+end
+#
+# Map building stuff
+#
+treasureone building_material
+  arch building_woodfloor
+    chance 50
+  more
+  arch building_woodfloor2
+    chance 5
+  more
+  arch building_wall
+    chance 25
+  more
+  arch building_vertical_gate
+    chance 10
+  more
+  arch building_horizontal_gate
+    chance 10
+  more
+  arch building_pedestal
+    chance 8
+  more
+  arch building_lever
+    chance 8
+  more
+  arch building_button
+    chance 3
+  more
+  list building_marbles
+    chance 5
+  more
+  list building_objects
+   chance 5
+  more
+  arch building_vertical_gate_inv
+    chance 1
+  more
+  arch building_horizontal_gate_inv
+    chance 1
+  more
+  list building_talking_objects
+   chance 1
+end
+treasureone shop_building
+  arch building_builder
+    chance 2
+  more
+  arch building_destroyer
+    chance 2
+  more
+  list building_material
+    chance 78
+  more
+  list building_material_stonewall_norm
+    chance 20  
+end
+treasureone shop_building_fant
+  arch building_builder
+    chance 2
+  more
+  arch building_destroyer
+    chance 2
+  more
+  list building_material
+    chance 78
+  more
+  list building_material_stonewall_fant
+    chance 20  
+end
+treasureone shop_building_west
+  arch building_builder
+    chance 2
+  more
+  arch building_destroyer
+    chance 2
+  more
+  list building_material
+    chance 78
+  more
+  list building_material_stonewall_west
+    chance 20  
+end
+treasureone shop_building_east
+  arch building_builder
+    chance 2
+  more
+  arch building_destroyer
+    chance 2
+  more
+  list building_material
+    chance 78
+  more
+  list building_material_stonewall_east
+    chance 20  
+end
+treasureone shop_building_abyss
+  arch building_builder
+    chance 2
+  more
+  arch building_destroyer
+    chance 2
+  more
+  list building_material
+    chance 63
+  more
+  list building_objects_abyssonly
+    chance 15
+  more
+  list building_material_stonewall_abyss
+    chance 20  
+end
+treasureone shop_building_goth
+  arch building_builder
+    chance 2
+  more
+  arch building_destroyer
+    chance 2
+  more
+  arch building_woodfloormc0
+    chance 5
+  more
+  arch building_woodfloormc1
+    chance 5
+  more
+  arch building_woodfloormc2
+    chance 5
+  more
+  list building_material
+    chance 63
+  more
+  list building_material_stonewall_goth
+    chance 20  
+end
+##For areas like scorn area, sells DWall
+treasureone building_material_stonewall_norm
+  arch building_wall2
+end
+##For brest area, sells Red Cwall rather then DWall
+treasureone building_material_stonewall_fant
+  arch building_wall4
+end
+##For navar area, sells West Cwall and BBWall (yellow earthen) rather then DWall
+treasureone building_material_stonewall_west
+  arch building_wall3
+    chance 50
+  more
+  arch building_wall9
+    chance 50
+end
+##For areas like azumauindo area, sells DWall and EastWall (japanese paper wall)
+treasureone building_material_stonewall_east
+  arch building_wall2
+    chance 50
+  more
+  arch building_wall5
+    chance 50
+end
+##For mlabhell sells West West Cwall and BurningWall
+treasureone building_material_stonewall_abyss
+  arch building_wall3
+    chance 50
+  more
+  arch building_wall6
+    chance 50
+end
+##For Gotischerbereich, sells STWall and WWall rather then DWall
+treasureone building_material_stonewall_goth
+  arch building_wall7
+    chance 50
+  more
+  arch building_wall8
+    chance 50
+end
+treasureone building_marbles
+  arch building_marble
+    chance 8
+  more
+  arch building_blackmarble
+    chance 8
+  more
+  arch building_pinkmarble
+    chance 1
+  more
+  arch building_greenmarble
+    chance 1
+  more
+  arch building_cyanmarble
+    chance 1
+  more
+  arch building_lightmagentamarble
+    chance 1
+end
+treasureone building_objects
+  arch building_firepot
+    chance 10
+  more
+  arch building_brazier
+    chance 8
+  more
+  arch building_fireplace
+    chance 6
+  more
+  arch building_sign
+    chance 4
+  more
+  arch building_fountain
+    chance 3
+end
+treasureone building_objects_abyssonly
+  arch building_altar_none
+    chance 15
+  more
+  arch  building_hangingfirepot
+    chance 15
+  more
+  arch building_magma
+    chance 38
+  more
+  arch building_redmarble
+    chance 10
+  more
+  arch building_graymarble
+    chance 10
+  more
+  arch building_redrugfloor1
+    chance 2
+  more
+  arch building_whiterugfloor1
+    chance 2
+  more
+  arch building_grammarnazirugfloor1
+    chance 2
+  more
+  arch building_grammarnazirugfloor2
+    chance 2
+  more
+  arch building_grammarnazirugfloor3
+    chance 2
+  more
+  arch building_grammarnazirugfloor4
+    chance 2
+end
+treasureone building_talking_objects
+  arch building_earbook
+    chance 1
+  more
+  arch building_mouthbook
+    chance 2
+end
+treasure gps
+	arch gps_event
+end
+treasure angel
+  list all_spell_skills
+  more
+  list rich_old
+  end
+treasure high_angel
+  list rich
+  more
+  list all_spell_skills
+end
+treasure archangel
+  list all_spell_skills
+  more
+  list rich_old
+  more
+  arch spell_wrathful_eye
+    nrof 3
+  more
+  arch spell_paralyze
+end
+treasure darkangel
+  list all_spell_skills
+  more
+  list rich_old
+  end
+treasure liteangel
+  list rich
+  more
+  list all_spell_skills
+  end
+treasure mesangel
+  list rich
+  more
+  list all_spell_skills
+  end
+treasure behemoth
+  list behemoth_parts
+    chance 30
+end
+treasure giantrat
+  list giantrat_parts
+    chance 30
+ end
+treasure neko
+  list neko_parts
+    chance 99
+  end
+treasure dwolf
+  arch hide_white
+     chance 25
+  more
+  arch liver
+     chance 15
+  more
+  arch heart
+     chance 10
+  more
+  arch abil_frostbolt
+end
+treasure dwolf_sire
+  arch hide_white
+     chance 20
+  more
+  arch liver
+     chance 12
+  more
+  arch heart
+     chance 10
+  more
+   arch abil_large_icestorm
+  more
+   arch abil_frostbolt
+  more
+   arch abil_fear
+end
+treasure cockatrice
+  arch event_attack_cockatrice
+  end
+treasureone sheep
+  arch sheepskin
+    chance 5
+  more
+  arch liver
+    chance 5
+  more
+  arch heart
+    chance 5
+  more
+  arch haggis
+    chance 2
+  more
+  arch leg_mutton
+    chance 15
+  end
+treasure giant_worm
+  arch spell_magic_bullet
+  more
+  arch spell_vitriol
+  more
+  arch abil_slow
+  more
+  arch eye
+  chance 30
+  no
+    arch residue
+    chance 10
+    end
+  more
+  arch gem
+    chance 60
+    nrof 7
+  end
+treasure long_worm
+  arch spell_cause_black_death
+  more
+  arch spell_cause_leprosy
+  more
+  arch spell_cause_anthrax
+  more
+  arch spell_cause_typhoid
+  more
+  arch spell_vitriol
+  more
+  arch abil_slow
+  more
+  arch gem
+    chance 60
+    nrof 7
+  end
+treasure orange_worm
+  arch spell_magic_bullet
+  more
+  arch spell_vitriol
+  nrof 5
+  more
+  arch abil_slow
+  more
+  arch event_attack_orange_worm
+  more
+  arch gem
+    chance 60
+    nrof 7
+  end
+treasure purple_worm
+  arch spell_magic_bullet
+  more
+  arch spell_vitriol
+  more
+  arch abil_slow
+  more
+  arch event_attack_purple_worm
+  more
+  arch gem
+    chance 60
+    nrof 7
+  end
+treasure yellow_worm
+  arch spell_magic_bullet
+  more
+  arch spell_vitriol
+  nrof 5
+  more
+  arch abil_slow
+  more
+  arch event_attack_yellow_worm
+  more
+  arch gem
+    chance 60
+    nrof 7
+  end
+treasure gryphon
+  arch skill_use_magic_item
+  more
+  arch spell_paralyze
+  more
+  arch abil_fear
+  more
+  arch abil_poison_cloud
+  more
+  arch spell_sm_lightning
+  more
+  arch spell_large_lightning
+  more
+  arch abil_large_icestorm
+  more
+  arch abil_icestorm
+  more
+  arch spell_burning_hands
+  more
+  arch spell_medium_fireball
+  more
+  arch spell_magic_missile
+  more
+  arch spell_magic_bullet
+  more
+  arch abil_slow
+  more
+  list random_books
+  more
+  list random_books
+  more
+  list random_books
+  more
+  arch wand
+  more
+  arch wand
+  more
+  arch wand
+  more
+  arch wand
+  more
+  arch staff
+  more
+  arch rod_light
+  more
+  arch rod_light
+  more
+  arch rod_heavy
+  more
+  arch scroll_new
+  more
+  arch scroll_new
+  more
+  arch scroll_new
+  more
+  arch scroll_new
+  more
+  arch scroll_new
+  more
+  arch scroll_new
+  more
+  arch scroll_new
+  more
+  arch scroll_new
+  more
+  arch scroll_new
+  more
+  arch ring
+  chance 90
+  nrof 2
+  more
+  arch cloak
+  end
+treasure leech
+  arch blood
+    chance 40
+  no
+    arch potion_restoration
+    chance 5
+    end
+  end
+treasure witch_chaos
+  arch spell_color_spray
+  more
+  arch abil_ball_lightning
+    nrof 3
+  more
+  arch spell_create_pool_of_chaos
+  more
+  arch spell_summon_water_elemental
+  more
+  arch spell_summon_air_elemental
+  more
+  arch spell_summon_earth_elemental
+  more
+  arch spell_summon_fire_elemental
+  end
+treasure Balrog
+  list all_spell_skills
+  more
+  arch spell_paralyze
+  more
+  arch abil_fear
+  more
+  arch abil_burning_hands
+  more
+  arch abil_medium_fireball
+  more
+  arch spell_summon_fire_elemental
+  more
+  arch ring
+  chance 90
+  nrof 2
+  more
+  arch cloak
+  more
+  arch mithril_chainmail
+  more
+  arch firebrand
+  end
+treasure demonlord
+  arch spell_hellfire
+  more
+  arch abil_burning_hands
+  more
+  arch abil_fear
+  more
+  arch spell_sm_lightning
+  more
+  arch spell_large_lightning
+  more
+  arch spell_magic_missile
+  more
+  arch spell_paralyze
+  end
+treasure devil
+  list all_spell_skills
+  more
+  list rich_old
+  more
+  list demon_parts
+    chance 40
+  end
+treasure fiend
+  list all_spell_skills
+  more
+  list rich_old
+  more
+  list demon_parts
+    chance 40
+  more
+  arch abil_burning_hands
+  more
+  arch abil_medium_fireball
+  end
+treasure hellhound
+  arch hide_black
+    chance 25
+  more
+  arch liver
+    chance 15
+  more
+  arch heart
+   chance 15
+  more
+  arch skill_clawing
+  more
+  arch abil_burning_hands
+  more
+  arch spell_hellfire
+  more
+  arch abil_fear
+end
+treasure gr_hellhound
+  arch hide_black
+    chance 25
+  more
+  arch liver
+    chance 15
+  more
+  arch heart
+   chance 15
+  more
+  arch skill_clawing
+  more
+  arch spell_cause_medium_wounds
+  more
+  arch abil_burning_hands
+  more
+  arch spell_hellfire
+  more
+  arch abil_fear
+end
+treasure chaosdragon
+  list big_dragon_parts
+    chance 80
+  more
+  arch abil_fear
+  more
+  arch ability_dragonbreath
+    nrof 5
+  more
+  arch abil_icestorm
+  more
+  arch abil_large_icestorm
+  more
+  arch spell_sm_lightning
+  more
+  arch spell_large_lightning
+  more
+  arch abil_poison_cloud
+  more
+  arch spell_create_pool_of_chaos
+  more
+  arch black_dragon_scale
+  more
+  arch gem
+    nrof 40
+  more
+  arch gem
+    nrof 15
+    chance 60
+  more
+  arch ring
+    chance 30
+  more
+  arch wand
+  more
+  arch wand
+    chance 50
+  more
+  arch staff
+    chance 50
+  more
+  arch rod_light
+    chance 20
+  more
+  arch rod_heavy
+    chance 5
+  more
+  arch ring
+  more
+  arch ring
+    chance 50
+  more
+  arch gem
+    chance 50
+    nrof 20
+  more
+  arch ruby
+    nrof 6
+  more
+  arch sapphire
+    nrof 9
+  more
+  arch emerald
+    nrof 12
+  more
+  arch pearl
+    nrof 40
+  more
+  arch platinacoin
+    nrof 20
+  more
+  arch goldcoin
+    nrof 400
+  more
+  arch silvercoin
+    nrof 4000
+  more
+  arch scroll_new
+  more
+  arch scroll_new
+    chance 50
+  more
+  arch sword_2
+    magic 5
+    chance 20
+  more
+  arch cloak
+    chance 30
+  more
+  arch ring
+    chance 30
+end
+treasure chinese
+  arch dragon_steak
+    nrof 3
+    chance 45
+  more
+  arch green_dragon_scale
+    chance 40
+    nrof 2
+  more
+  arch dragonclaw
+    chance 15
+    nrof 12
+  more
+  arch dragon_wing
+    chance 15
+    nrof 2
+  more
+  arch dragon_eye
+    chance 15
+  more
+  arch heart
+    chance 5
+  more
+  arch brain
+    chance 1
+  more
+  arch abil_icestorm
+    nrof 3
+  more
+  arch abil_large_icestorm
+    nrof 3
+  more
+  arch abil_fear
+  more
+  arch abil_poison_cloud
+  more
+  arch gem
+    chance 10
+    nrof 1
+    no
+      arch ruby
+        nrof 1
+        chance 30
+        no
+          arch sapphire
+          nrof 3
+          chance 30
+          no
+            arch emerald
+              nrof 4
+              chance 50
+        end
+      end
+    end
+  more
+  arch platinacoin
+    nrof 2
+    chance 10
+    no
+    arch goldcoin
+      nrof 7
+      chance 50
+      no
+      arch silvercoin
+        nrof 30
+      end
+    end
+  end
+treasure big_elec
+  arch abil_fear
+  more
+  arch spell_sm_lightning
+    nrof 3
+  more
+  arch spell_large_lightning
+    nrof 3
+  more
+  arch dragon_steak
+  nrof 2
+  chance 90
+  more
+  arch blue_dragon_scale
+  more
+  arch wand
+  more
+  arch staff
+  chance 50
+  more
+  arch wand
+  chance 50
+  more
+  arch ring
+  more
+  arch ring
+  chance 50
+  more
+  arch gem
+  chance 80
+  nrof 2
+  more
+  arch ruby
+  nrof 3
+  more
+  arch sapphire
+  nrof 3
+  more
+  arch emerald
+  nrof 4
+  more
+  arch pearl
+  nrof 6
+  more
+  arch platinacoin
+  nrof 5
+  more
+  arch goldcoin
+  nrof 30
+  more
+  arch silvercoin
+  nrof 500
+  more
+  arch scroll_new
+  more
+  arch scroll_new
+  chance 50
+  more
+  arch scroll_new
+  chance 50
+  more
+  arch sword_2
+  chance 10
+  magic 3
+  end
+treasure gray_dr
+  arch abil_fear
+  more
+  arch spell_mana_blast
+    nrof 6
+  more
+  arch spell_spark_shower
+    nrof 3
+  more
+  arch spell_small_manaball
+    nrof 2
+  more
+  arch spell_large_manaball
+    nrof 2
+  more
+  arch spell_manabolt
+    nrof 3
+  more
+  arch spell_magic_missile
+    nrof 3
+  more
+  arch dragon_steak
+  nrof 2
+  chance 90
+  more
+  arch gray_dragon_scale
+  more
+  arch wand
+  more
+  arch staff
+  chance 50
+  more
+  arch wand
+  chance 50
+  more
+  arch ring
+  more
+  arch ring
+  chance 50
+  more
+  arch gem
+  chance 80
+  nrof 2
+  more
+  list random_gem_new
+  more
+  list random_gem_new
+  more
+  list random_gem_new
+  more
+  list random_gem_new
+  more
+  arch platinacoin
+  nrof 5
+  more
+  arch goldcoin
+  nrof 30
+  more
+  arch silvercoin
+  nrof 500
+  more
+  arch scroll_new
+  more
+  arch scroll_new
+  chance 50
+  more
+  arch scroll_new
+  chance 50
+  more
+  arch sword_2
+  chance 10
+  magic 3
+  end
+treasure orange_dr
+  arch abil_fear
+  more
+  arch spell_paralyze
+    nrof 3
+  more
+  arch dragon_steak
+  nrof 2
+  chance 90
+  more
+  arch orange_dragon_scale
+  more
+  arch wand
+  more
+  arch staff
+  chance 50
+  more
+  arch wand
+  chance 50
+  more
+  arch ring
+  more
+  arch ring
+  chance 50
+  more
+  arch gem
+  chance 80
+  nrof 2
+  more
+  list random_gem_new
+  more
+  list random_gem_new
+  more
+  list random_gem_new
+  more
+  list random_gem_new
+  more
+  arch platinacoin
+  nrof 5
+  more
+  arch goldcoin
+  nrof 30
+  more
+  arch silvercoin
+  nrof 500
+  more
+  arch scroll_new
+  more
+  arch scroll_new
+  chance 50
+  more
+  arch scroll_new
+  chance 50
+  more
+  arch sword_2
+  chance 10
+  magic 3
+  end
+treasure white_dr
+  arch abil_fear
+  more
+  arch spell_frostbolt
+    nrof 6
+  more
+  arch spell_icestorm
+    nrof 3
+  more
+  arch spell_large_snowstorm
+    nrof 2
+  more
+  arch spell_asteroid
+    nrof 4
+  more
+  arch spell_small_snowstorm
+    nrof 3
+  more
+  arch dragon_steak
+  nrof 2
+  chance 90
+  more
+  arch white_dragon_scale
+  more
+  arch wand
+  more
+  arch staff
+  chance 50
+  more
+  arch wand
+  chance 50
+  more
+  arch ring
+  more
+  arch ring
+  chance 50
+  more
+  arch gem
+  chance 80
+  nrof 2
+  more
+  list random_gem_new
+  more
+  list random_gem_new
+  more
+  list random_gem_new
+  more
+  list random_gem_new
+  more
+  arch platinacoin
+  nrof 5
+  more
+  arch goldcoin
+  nrof 30
+  more
+  arch silvercoin
+  nrof 500
+  more
+  arch scroll_new
+  more
+  arch scroll_new
+  chance 50
+  more
+  arch scroll_new
+  chance 50
+  more
+  arch sword_2
+  chance 10
+  magic 3
+  end
+treasure bonedrakeitems
+  arch dragon_steak
+    nrof 3
+    chance 45
+  more
+  arch beige_dragon_scale
+    chance 40
+    nrof 2
+  more
+  arch dragonclaw
+    chance 15
+    nrof 12
+  more
+  arch dragon_wing
+    chance 15
+    nrof 2
+  more
+  arch dragon_eye
+    chance 15
+  more
+  arch heart
+    chance 5
+  more
+  arch brain
+    chance 1
+  more
+  arch abil_icestorm
+    nrof 3
+  more
+  arch abil_large_icestorm
+    nrof 3
+  more
+  arch abil_fear
+  more
+  arch abil_poison_cloud
+  more
+  arch gem
+    chance 10
+    nrof 1
+    no
+      arch ruby
+        nrof 1
+        chance 30
+        no
+          arch sapphire
+          nrof 3
+          chance 30
+          no
+            arch emerald
+              nrof 4
+              chance 50
+        end
+      end
+    end
+  more
+  arch platinacoin
+    nrof 2
+    chance 10
+    no
+    arch goldcoin
+      nrof 7
+      chance 50
+      no
+      arch silvercoin
+        nrof 30
+      end
+    end
+  end
+treasure dragon
+  list big_dragon_parts
+    chance 80
+  more
+#  arch dragon_steak
+#  nrof 3
+#  chance 90
+#  more
+  arch ability_dragonbreath
+    nrof 5
+  more
+  arch abil_fear
+  more
+#  arch dragon_scale
+#  more
+  arch wand
+  more
+  arch wand
+  chance 50
+  more
+  arch staff
+  chance 50
+  more
+  arch rod_light
+  chance 20
+  more
+  arch rod_heavy
+  chance 5
+  more
+  arch ring
+  more
+  arch ring
+  chance 50
+  more
+  arch gem
+  chance 50
+  nrof 2
+  more
+  arch ruby
+  nrof 2
+  more
+  arch sapphire
+  nrof 3
+  more
+  arch emerald
+  nrof 4
+  more
+  arch pearl
+  nrof 10
+  more
+  arch platinacoin
+  nrof 5
+  more
+  arch goldcoin
+  nrof 100
+  more
+  arch silvercoin
+  nrof 1000
+  more
+  arch scroll_new
+  more
+  arch scroll_new
+  chance 50
+  more
+  arch sword_2
+  magic 5
+  chance 20
+  more
+  arch cloak
+  chance 30
+  end
+treasure drake
+  arch dragonclaw
+    chance 10
+  more
+  arch dragon_wing
+    chance 30
+  end
+treasure wyvern
+  list dragon_parts
+    chance 80
+  more
+  arch abil_burning_hands
+    nrof 3
+  more
+  arch abil_medium_fireball
+    nrof 3
+  more
+  arch abil_fear
+#  more
+#  arch dragon_steak
+#  chance 90
+  end
+treasure witch_air
+  arch spell_sm_lightning
+  more
+  arch spell_large_lightning
+  more
+  arch abil_poison_cloud
+  more
+  arch spell_windstorm
+  more
+  arch spell_summon_air_elemental
+ end
+treasure witch_earth
+  arch skill_throwing
+  more
+  arch ability_stone_throw
+  more
+  arch rock2
+   chance 50
+   nrof 20
+   no
+     arch gem
+     nrof 2
+     end
+  more
+  arch abil_fear
+  more
+  arch spell_wall_of_thorns
+  more
+  arch spell_summon_earth_elemental
+ end
+treasure witch_fire
+  arch abil_burning_hands
+  more
+  arch abil_medium_fireball
+  more
+  arch abil_create_fire_wall
+  more
+  arch spell_summon_fire_elemental
+ end
+treasure witch_water
+  arch abil_icestorm
+  more
+  arch abil_large_icestorm
+  more
+  arch spell_summon_fog
+  more
+  arch abil_slow
+   more
+  arch abil_create_frost_wall
+  more
+  arch spell_summon_water_elemental
+ end
+treasure belzebub
+  list all_spell_skills
+  more
+  arch spell_summon_pet_monster
+  more
+  arch ring_mail
+  magic 4
+  more
+  arch uw_shield
+  more
+  arch uw_sword
+  more
+  arch ring
+  more
+  arch gem
+  chance 50
+  nrof 3
+  more
+  arch cloak
+  chance 50
+  end
+treasure big_wizard
+  list all_spell_skills
+  more
+  arch spell_paralyze
+  more
+  arch abil_fear
+  more
+  arch abil_poison_cloud
+  more
+  arch spell_sm_lightning
+  more
+  arch spell_large_lightning
+  more
+  arch abil_large_icestorm
+  more
+  arch abil_icestorm
+  more
+  arch spell_burning_hands
+  more
+  arch spell_medium_fireball
+  more
+  arch spell_magic_missile
+  more
+  arch spell_magic_bullet
+  more
+  arch abil_slow
+  more
+  list random_books
+  more
+  list random_books
+  more
+  list random_books
+  more
+  arch wand
+  more
+  arch wand
+  more
+  arch wand
+  more
+  arch wand
+  more
+  arch staff
+  more
+  arch rod_light
+  more
+  arch rod_light
+  more
+  arch rod_heavy
+  more
+  arch scroll_new
+  more
+  arch scroll_new
+  more
+  arch scroll_new
+  more
+  arch scroll_new
+  more
+  arch scroll_new
+  more
+  arch scroll_new
+  more
+  arch scroll_new
+  more
+  arch scroll_new
+  more
+  arch scroll_new
+  more
+  arch ring
+  chance 90
+  nrof 2
+  more
+  arch cloak
+  end
+treasure DK
+  list all_spell_skills
+  more
+  arch spell_paralyze
+  more
+  arch spell_small_speedball
+  more
+  arch plate_mail
+  more
+  arch bighorned_helmet
+  more
+  arch ring
+  more
+  arch ring
+  more
+  arch gem
+  nrof 20
+  chance 80
+  more
+  arch mace
+  chance 10
+  no
+    arch mace_2
+    chance 12
+    no
+      arch lamestar
+      chance 40
+      end
+    end
+  more
+  arch high_shield
+  chance 50
+  no
+    arch DShield
+    chance 50
+    no
+      arch DShieldm
+      chance 25
+      no
+        arch DShields
+        chance 40
+        end
+      end
+    end
+  end
+treasure EDK
+  list all_spell_skills
+  more
+  arch abil_burning_hands
+  more
+  arch abil_medium_fireball
+  more
+  arch spell_paralyze
+  more
+  arch abil_fear
+  more
+  arch plate_mail
+  more
+  arch bighorned_helmet
+  more
+  arch ring
+  more
+  list random_books
+  more
+  arch ring
+  more
+  arch gem
+  nrof 30
+  chance 80
+  more
+  arch gem
+  nrof 20
+  chance 80
+  more
+  arch firestar
+  chance 10
+  no
+    arch lamestar
+    chance 50
+    end
+  more
+  arch DShieldms
+  chance 7
+  no
+    arch DShield
+    chance 60
+    no
+      arch DShieldm
+      chance 50
+      no
+        arch DShields
+        end
+      end
+    end
+  end
+treasure titan
+  list all_spell_skills
+  more
+  arch head
+  more
+  arch spell_paralyze
+  more
+  arch abil_fear
+    nrof 2
+  more
+  arch spell_sm_lightning
+    nrof 2
+  more
+  arch spell_large_lightning
+    nrof 2
+  more
+  arch abil_slow
+  more
+  arch bow
+  more
+  arch arrow
+  nrof 100
+  more
+  arch high_shield
+  more
+  arch bonecrusher
+  more
+  arch plate_mail
+  more
+  arch full_helmet
+  more
+  arch cloak
+  chance 50
+  end
+treasure cyclops
+  arch skill_use_magic_item
+  more
+  arch big_club
+  more
+  arch ability_stone_throw
+  more
+  arch t_lboulder
+  nrof 20
+  more
+  arch platinacoin
+  nrof 40
+  end
+treasure djinn
+  list all_spell_skills
+  more
+  arch spell_paralyze
+  more
+  arch spell_major_healing
+  more
+  arch abil_fear
+  more
+  arch spell_sm_lightning
+  more
+  arch spell_large_lightning
+  more
+  arch abil_large_icestorm
+  more
+  arch abil_icestorm
+  more
+  arch abil_icestorm
+  more
+  arch abil_large_icestorm
+  more
+  arch abil_burning_hands
+  more
+  arch spell_hellfire
+  more
+  arch spell_summon_fire_elemental
+  more
+  arch spell_summon_water_elemental
+  more
+  arch spell_summon_earth_elemental
+  more
+  arch spell_summon_air_elemental
+  more
+  arch abil_slow
+  more
+  arch rod_heavy
+  end
+treasure djinn_magenta
+  list all_spell_skills
+  more
+  arch spell_paralyze
+  more
+  arch spell_major_healing
+  more
+  arch abil_fear
+  more
+  arch spell_sm_lightning
+  more
+  arch spell_large_lightning
+  more
+  arch abil_frostbolt
+  more
+  arch abil_large_icestorm
+  more
+  arch abil_icestorm
+  more
+  arch abil_large_icestorm
+  more
+  arch abil_burning_hands
+  more
+  arch spell_hellfire
+  more
+  arch spell_comet
+  more
+  arch spell_steambolt
+  more
+  arch spell_firebolt
+  more
+  arch spell_large_fireball
+  more
+  arch spell_summon_fire_elemental
+  more
+  arch spell_summon_water_elemental
+  more
+  arch spell_summon_earth_elemental
+  more
+  arch spell_summon_air_elemental
+  more
+  arch abil_slow
+  more
+  arch turban
+  more
+  arch rod_heavy
+  end
+treasure minor_djinn
+  list all_spell_skills
+  more
+  arch spell_paralyze
+  more
+  arch abil_fear
+  more
+  arch spell_major_healing
+  more
+  arch spell_sm_lightning
+  more
+  arch spell_large_lightning
+  more
+  arch abil_large_icestorm
+    chance 50
+  no
+    arch abil_burning_hands
+    more
+    arch abil_medium_fireball
+    end
+  more
+  arch spell_summon_fire_elemental
+  chance 50
+  no
+    arch spell_summon_water_elemental
+    end
+  more
+  arch spell_summon_earth_elemental
+  chance 50
+  no
+    arch spell_summon_air_elemental
+    end
+  more
+  arch abil_slow
+  end
+treasure giant_poor
+  list giant_old_poor
+  more
+  arch skill_throwing
+  more
+  arch t_boulder
+  nrof 8
+  more
+  list giant_parts
+    chance 10
+  end
+treasure giant_old_poor
+  arch big_club
+  more
+  arch silvercoin
+  chance 6
+  nrof 80
+  end
+treasure stonegiant_poor
+  list stonegiant_old_poor
+  more
+  arch skill_throwing
+  more
+  arch t_boulder
+  nrof 8
+  end
+treasure stonegiant_old_poor
+  arch stonebig_club
+  more
+  arch silvercoin
+  chance 6
+  nrof 80
+  end
+treasure gnoll_poor
+  list giant_parts
+    chance 30
+  more
+  arch skill_throwing
+    chance 30
+  more
+  list real_poor_old
+  end
+treasure goblin
+  arch skill_use_magic_item
+  more
+  list goblin_parts
+    chance 10
+  more
+  list real_poor_old
+  end
+treasure ogre
+  arch skill_use_magic_item
+  more
+  list giant_parts
+    chance 30
+  more
+  arch arm
+    chance 10
+  more
+  arch skill_throwing
+  more
+  list throw_weapons
+    chance 15
+  more
+  list real_poor_old
+  end
+treasure orc
+  arch skill_use_magic_item
+  more
+  list goblin_parts
+    chance 20
+    no
+      arch orcchop
+      chance 25
+    end
+  more
+  arch cloak
+  chance 3
+  more
+#  arch orcchop
+#  chance 25
+#  more
+  arch bow
+  chance 10
+  yes
+    arch arrow
+    nrof 6
+    end
+  more
+  arch b_ssword_2
+  magic 1
+  chance 5
+  no
+    arch b_ssword_1
+    chance 10
+    no
+      arch b_dagger
+      chance 15
+      no
+        arch stoneaxe
+        chance 20
+        no
+          arch club
+          chance 25
+          end
+        end
+      end
+    end
+  more
+  arch b_small_shield
+  chance 10
+  more
+  arch coppercoin
+  nrof 5
+  more  
+  arch silvercoin
+  nrof 1
+  chance 5
+  end
+treasure real_poor_old
+  arch bow
+  chance 5
+  yes
+    arch arrow
+    nrof 6
+    end
+  more
+  arch b_ssword_2
+  magic 1
+  chance 5
+  no
+    arch b_ssword_1
+    chance 10
+    no
+      arch b_dagger
+      chance 15
+      no
+        arch stoneaxe
+        chance 20
+        no
+          arch club
+          chance 25
+          end
+        end
+      end
+    end
+  more
+  arch b_small_shield
+  chance 4
+  more
+  arch coppercoin
+  nrof 2
+  chance 10
+  more
+  arch coppercoin
+  nrof 6
+  chance 10
+  more
+  arch silvercoin
+  nrof 1
+  chance 1
+  more
+  arch silvercoin
+  nrof 1
+  chance 1
+  end
+treasure a_priest
+  list all_spell_skills
+  more
+  list human_parts
+    chance 20
+  more
+  arch spell_paralyze
+  more
+  arch spell_cause_medium_wounds
+  more
+  arch spell_summon_pet_monster
+  more
+  arch spell_magic_missile
+  more
+  arch robe
+  more
+  arch sandals
+  end
+treasure beggar
+  arch skill_use_magic_item
+  more
+  list slave
+  end
+treasure dancing_girl
+  arch skill_use_magic_item
+end
+treasure holy_priest
+  list all_spell_skills
+  more
+  list human_parts
+  more
+  arch spell_paralyze
+  more
+  arch spell_cause_heavy_wounds
+  more
+  arch spell_summon_pet_monster
+  more
+  arch spell_magic_missile
+  more
+  arch robe
+  more
+  arch sandals
+  end
+treasure merchant
+  arch skill_use_magic_item
+  more
+  list throw_stnd
+  end
+treasure warrior_1
+  list all_spell_skills
+  more
+  arch skill_oratory
+  more
+  list throw_stnd
+  end
+treasure conjurer
+  list all_spell_skills
+  more
+  arch skill_literacy
+  more
+  arch spell_summon_fire_elemental
+  more
+  arch spell_summon_air_elemental
+  more
+  arch spell_summon_water_elemental
+  more
+  arch spell_summon_earth_elemental
+  more
+  arch cloak
+    chance 60
+  more
+  list rich
+  end
+treasure conjurer2
+  list all_spell_skills
+  more
+  list poor
+end
+treasure fighter
+  list all_spell_skills
+  more
+  list throw_stnd
+end
+treasure npc_ninja
+  list all_spell_skills
+  more
+  arch skill_jumping
+  more
+  list poor
+  more
+  arch skill_hide
+    chance 50
+    no
+    arch skill_karate
+    end
+  end
+# note: punching and throwing arent good
+# combination to give to NPC's. They wind
+# throwing away their melee weapons!
+treasure pirate
+  arch skill_use_magic_item
+  more
+  arch skill_stealing
+    chance 50
+  more
+  arch skill_throwing
+    chance 75
+    no
+      arch skill_punching
+    end
+  more
+  arch heart
+     chance 5
+  more
+  list standard
+  end
+treasure dwarf
+  list all_spell_skills
+  more
+  list standard
+  end
+treasure gdwar_guard
+  list all_spell_skills
+  more
+  arch axe_5
+  more
+  arch bighorned_helmet
+  more
+  arch plate_mail
+  more
+  arch crossbow
+  more
+  arch bolt
+  nrof 30
+  more
+  arch mithril
+  nrof 3
+  end
+treasure ldwar_guard
+  list all_spell_skills
+  more
+  arch axe_5
+  more
+  arch bighorned_helmet
+  more
+  arch plate_mail
+  more
+  arch crossbow
+  more
+  arch bolt
+  nrof 20
+  more
+  arch mithril
+  nrof 1
+  end
+treasure dark_elf
+  arch skill_use_magic_item
+  more
+  arch skill_literacy
+    chance 50
+    no
+    arch skill_bowyer
+    end
+  more
+  list throw_rich
+  end
+treasure elf_1
+  list all_spell_skills
+  more
+  list throw_stnd
+end
+treasure gnome
+  list all_spell_skills
+  more
+  list throw_stnd
+end
+treasure halfling
+  list all_spell_skills
+  more
+  list throw_stnd
+end
+treasure child
+  arch skill_use_magic_item
+  more
+  arch chocolate
+  chance 5
+  end
+treasure c_thief
+  arch skill_use_magic_item
+  more
+  arch dagger
+  more
+  arch skill_stealing
+  more
+  arch goldcoin
+  nrof 50
+  chance 20
+  end
+treasure courier
+  list standard
+  more
+  arch skill_use_magic_item
+end
+treasure evilclown
+  list human_parts
+    chance 50
+  more
+  arch spell_ball_lightning
+  more
+  arch spell_large_lightning
+  more
+  arch spell_paralyze
+  more
+  arch spell_sunspear
+  more
+  arch abil_slow
+  more
+  arch emerald
+  nrof 20
+  chance 50
+  more
+  arch amethyst
+  nrof 20
+  chance 50
+  end
+treasure farmer
+  list throw_stnd
+  more
+  list all_spell_skills
+end
+treasure jail
+  list all_spell_skills
+  more
+  arch knight
+  more
+  arch knight
+  more
+  arch knight
+  end
+treasure man
+  list all_spell_skills
+  more
+  list throw_stnd
+end
+treasure postman
+  arch skill_use_magic_item
+  more
+  list human_parts
+    chance 20
+  more
+  arch letter
+  nrof 10
+  chance 20
+  more
+  arch r_sack
+  chance 1
+  end
+treasure princess
+  list all_spell_skills
+  more
+  list throw_stnd
+end
+treasure madman
+  list all_spell_skills
+  more
+  list throw_stnd
+end
+treasure chess
+  list all_spell_skills
+  more
+  list throw_stnd
+end
+treasure unicorn
+  arch u_horn
+  end
+treasure unicorn_black
+  arch u_horn_black
+  end
+treasure unicorn_gray
+  arch u_horn_gray
+  end
+treasure broo
+  arch skill_use_magic_item
+  more
+  list goblin_parts
+    chance 40
+  more
+  arch skill_one_handed_weapon
+  more
+  arch skill_two_handed_weapon
+  more
+  arch club
+  chance 40
+  magic 1
+  no
+    arch spear
+    chance 30
+    magic 2
+    no
+      arch lspear
+      chance 20
+      magic 3
+      no
+        arch poleaxe
+        chance 10
+        magic 4
+        end
+      end
+    end
+  more
+  arch scale_mail
+  chance 10
+  magic 1
+  no
+   arch plate_mail
+   chance 5
+   magic 3
+   no
+     arch leather_armour
+     chance 40
+     magic 1
+     end
+   end
+  more
+  arch small_shield
+  magic 2
+  chance 50
+  no
+    arch high_shield
+    magic 1
+    chance 10
+    end
+  more
+  arch helmet
+  magic 1
+  chance 30
+  more
+  arch bow
+  chance 30
+  magic 1
+  yes
+    arch arrow
+    nrof 30
+    magic 3
+    end
+  more
+  arch silvercoin
+  nrof 30
+  chance 60
+  no
+    arch goldcoin
+    nrof 10
+    chance 30
+    no
+      arch platinacoin
+      nrof 10
+      chance 10
+      end
+    end
+  more
+  arch scroll_new
+  chance 10
+  nrof 3
+  no
+    arch wand
+    chance 20
+    no
+      arch ring
+      chance 10
+      end
+    end
+  end
+treasure c_knight
+  arch skill_use_magic_item
+  more
+  list human_parts
+  more
+  arch sword_2
+  magic 3
+  chance 30
+  no
+    arch sword_2
+    magic 1
+    end
+  more
+  arch plate_mail
+  more
+  arch ring
+  chance 30
+  more
+  arch bow
+  magic 1
+  chance 30
+  yes
+    arch arrow
+    nrof 20
+    end
+  more
+  arch wand
+  chance 20
+  end
+treasure c_m_priest
+  list all_spell_skills
+  more
+  list human_parts
+  more
+  arch staff
+  magic 1
+  more
+  list random_books
+  chance 50
+  more
+  list random_books
+  chance 50
+  more
+  arch staff
+  chance 30
+  more
+  arch spell_paralyze
+  chance 50
+  no
+    arch spell_summon_pet_monster
+    end
+  more
+  arch abil_poison_cloud
+  chance 50
+  more
+  arch spell_paralyze
+  chance 20
+  no
+    arch abil_fear
+    end
+  more
+  arch spell_magic_missile
+  chance 20
+  no
+    arch spell_cause_medium_wounds
+    end
+  more
+  arch spell_create_pool_of_chaos
+  chance 20
+  end
+#
+treasure c_priest
+  list all_spell_skills
+  more
+  list human_parts
+  more
+  arch staff
+  magic 3
+  more
+  arch cleric_book
+  chance 50
+  more
+  arch cleric_book
+  more
+  arch staff
+  chance 80
+  more
+  arch rod_light
+  chance 30
+  no
+    arch rod_heavy
+    chance 30
+    end
+  more
+  arch spell_paralyze
+  more
+  arch spell_summon_pet_monster
+  more
+  arch abil_poison_cloud
+  more
+  arch spell_paralyze
+  more
+  arch abil_fear
+  more
+  arch abil_burning_hands
+  more
+  arch spell_hellfire
+  chance 20
+  no
+    arch spell_cause_heavy_wounds
+    end
+  more
+  arch spell_create_pool_of_chaos
+  chance 80
+  end
+treasure gargoyle
+  list melee_weapons
+  chance 30
+  more
+  arch gem
+  chance 50
+  nrof 1
+  end
+treasure lamia
+  list all_spell_skills
+  more
+  arch spell_paralyze
+  more
+  arch abil_fear
+  more
+  arch ability_spit_acid
+  more
+  arch acid_spit
+  nrof 30
+  more
+  arch acid_spit
+  nrof 30
+  more
+  arch acid_spit
+  nrof 30
+  more
+  arch acid_spit
+  nrof 30
+  more
+  arch acid_spit
+  nrof 30
+  more
+  arch acid_spit
+  nrof 30
+  more
+  arch acid_spit
+  nrof 30
+  more
+  arch ring
+  chance 50
+  more
+  arch wand
+  chance 50
+  more
+  arch staff
+  chance 30
+  more
+  arch wand
+  chance 50
+  more
+  arch rod_heavy
+  chance 5
+  no
+    arch rod_light
+    chance 20
+    end
+  more
+  arch goldcoin
+  nrof 100
+  more
+  arch big_club
+  end
+treasure papergolem
+  arch scroll_new
+  end
+treasure pixie
+  list all_spell_skills
+  more
+  arch wand
+    chance 4
+  more
+  arch pix_dust
+    chance 15
+    no
+    arch pix_wing
+      chance 20
+    end
+  end
+treasure serp_man
+  arch skill_use_magic_item
+  more
+  arch serp_sword
+  magic 2
+  chance 15
+  no
+    arch serp_sword
+    end
+  more
+  arch bow
+  magic 1
+  chance 30
+  yes
+    arch arrow
+    nrof 20
+    end
+  more
+  arch wand
+  chance 5
+  more
+  arch goldcoin
+  nrof 10
+  chance 50
+  end
+treasure serp_priest
+  list all_spell_skills
+  more
+  arch dagger
+  magic 3
+  more
+  list random_books
+  chance 50
+  more
+  list random_books
+  more
+  arch staff
+  chance 80
+  more
+  arch rod_light
+  chance 30
+  more
+  arch abil_burning_hands
+  chance 20
+  more
+  arch abil_medium_fireball
+  chance 20
+  more
+  arch spell_paralyze
+  chance 80
+  more
+  arch abil_fear
+  more
+  arch spell_sm_lightning
+  more
+  arch spell_large_lightning
+  more
+  arch spell_create_pool_of_chaos
+  chance 20
+  more
+  arch spell_magic_missile
+  chance 20
+  end
+treasure stonegolem
+  arch rubble
+  end
+treasureone tentacle_victims
+  arch bones1
+    nrof 1
+  more
+  arch bones2
+    nrof 1
+  more
+  arch bones3
+    nrof 1
+  more
+  arch bones4
+    nrof 1
+  more
+  arch bones5
+    nrof 1
+  end
+#
+treasure tentacle
+  list tentacle_victims
+    chance 5
+  more
+  list random_wealth
+    chance 3
+  more
+  arch tentacle_hook
+    chance 20
+  end
+treasure skeletalmage
+  arch skill_use_magic_item
+  more
+  list standard_old
+  more
+  arch abil_fear
+  more
+  arch abil_frostbolt
+    chance 67
+end
+treasure skeletalmage_fire
+  arch skill_use_magic_item
+  more
+  arch abil_fear
+  more
+  arch abil_burning_hands
+  more
+  arch abil_medium_fireball
+  more
+  arch abil_create_fire_wall
+  more
+  arch bones5_fire
+    chance 67
+end
+treasure banshee
+  arch spell_paralyze
+  more
+  arch abil_fear
+  more
+  arch spell_paralyze
+  more
+  arch skill_clawing
+  more
+  arch spell_cause_medium_wounds
+  more
+  arch ring
+  chance 50
+  more
+  arch amulet
+  chance 15
+  more
+  arch gem
+  chance 30
+  nrof 2
+  more
+  arch sapphire
+  chance 25
+  nrof 3
+  more
+  arch emerald
+  chance 50
+  nrof 4
+  end
+treasure deathshead 
+  list skull_parts
+    chance 50
+  more
+  arch spell_paralyze
+  more
+  arch abil_fear
+  more
+  arch spell_cause_black_death
+  more
+  arch spell_cause_red_death
+  chance 50
+  more
+  arch spell_face_of_death
+  more
+  arch spell_deathshead_comet
+  more
+  arch spell_hellfire
+  more
+  arch spell_burning_hands
+  more
+  arch spell_large_fireball
+  more
+  arch spell_mass_confusion
+  more
+  arch spell_negabolt
+  more
+  arch spell_negaball
+  more
+  arch abil_slow
+  more
+  arch gem
+  nrof 20
+  chance 50
+  more
+  arch gem
+  nrof 40
+  chance 20
+  end
+treasure lich_old
+  arch spell_paralyze
+  more
+  arch abil_fear
+  more
+  arch spell_summon_pet_monster
+  more
+  arch spell_magic_bullet
+  more
+  arch abil_large_icestorm
+  more
+  arch abil_icestorm
+  more
+  arch sword_2
+  chance 90
+  magic 5
+  more
+  arch cloak
+  more
+  arch shield
+  magic 4
+  chance 70
+  no
+    arch small_shield
+    magic 5
+    chance 40
+    end
+  more
+  arch full_helmet
+  magic 3
+  chance 50
+  no
+    arch helmet
+    magic 3
+    chance 50
+    end
+  more
+  arch goldcoin
+  chance 90
+  nrof 100
+  more
+  arch wand
+  chance 80
+  more
+  arch staff
+  chance 20
+  more
+  list random_books
+  more
+  list random_books
+  chance 70
+  more
+  arch ring
+  more
+  arch ring
+  chance 50
+  more
+  arch scroll_new
+  chance 90
+  more
+  arch scroll_new
+  chance 90
+  more
+  arch gem
+  chance 70
+  nrof 3
+  end
+#
+treasure lich
+  list all_spell_skills
+  more
+  arch lich_dust
+  more
+  arch leprosy
+  more
+  list lich_old
+  end
+treasure skeleton_fire
+  arch bones2_fire
+    chance 50
+  more
+  arch bones3_fire
+    chance 50   
+end
+treasure skeleton_poorer
+  list standard_old_poorer
+  more
+# list human_bones
+  arch bones2
+    chance 50
+  more
+  arch bones3
+    chance 50 
+  end
+treasure skree
+  arch abil_fear
+  more
+  arch spell_paralyze
+  more
+  arch abil_slow
+  more
+  list skree_bits
+  end
+treasure skree_bits
+  arch skreeclaw
+    chance 40
+    nrof 2  
+  more
+  arch skreeeye
+    chance 10
+    nrof 1
+  end
+treasure spectre
+  list all_spell_skills
+  more
+  arch ectoplasm
+  more
+  arch arthritis
+  more
+  list lich_old
+  end
+treasure standard_old_poorer
+  arch bow
+  magic 1
+  chance 10
+  yes
+    arch arrow
+    nrof 10
+    end
+  no
+    arch crossbow
+    magic 2
+    chance 5
+    yes
+      arch bolt
+      nrof 10
+      end
+    end
+  more
+  arch club
+  magic 1
+  chance 50
+  no
+    arch b_dagger
+    magic 2
+    chance 40
+    no
+      arch quarterstaff
+      magic 2
+      chance 30
+      no
+        arch b_ssword_2
+        magic 2
+        chance 20
+        no
+          arch b_sword_1
+          magic 2
+          chance 10
+          end
+        end
+      end
+    end
+  more
+  arch b_small_shield
+  magic 2
+  chance 5
+  no
+   arch b_shield
+   magic 2
+   chance 5
+   no
+    arch small_shield
+    magic 2
+    chance 4
+    no
+    	arch shield
+  	magic 2
+  	chance 2
+  	no
+      	   arch high_shield
+      	   magic 2
+      	   chance 1
+      	   end
+        end
+    end
+   end
+  more
+  arch b_helmet
+  magic 1
+  chance 5
+  no
+    arch b_horned_helmet
+    magic 1
+    chance 5
+    no
+      arch b_full_helmet
+      magic 1
+      chance 2
+      no
+        arch bighorned_helmet
+        magic 1
+        chance 1
+        end
+      end
+    end
+  more
+  arch silvercoin
+  chance 8
+  nrof 2
+  more
+  arch coppercoin
+  chance 10
+  nrof 5
+  more
+  arch wand
+  chance 2
+  more
+  arch staff
+  chance 1
+  more
+  arch ring
+  chance 2
+  more
+  arch scroll_new
+  chance 2
+ end
+treasure vampire
+  list all_spell_skills
+  more
+  arch abil_fear
+    nrof 3
+  more
+  arch abil_slow
+  more
+  arch spell_paralyze
+  more
+  arch heart
+    chance 50
+  more
+  arch cloak
+  more
+  list random_books
+  more
+  list random_books
+  chance 50
+  more
+  arch ring
+  chance 70
+  more
+  arch ring
+  chance 50
+  end
+treasure grammarnazi_class_items
+  arch skill_throwing
+  more
+  arch skill_find_traps
+  more
+  arch skill_remove_trap
+  more
+  arch skill_use_magic_item
+  more
+  arch skill_punching
+  more
+  arch skill_one_handed_weapon
+  more
+  arch skill_two_handed_weapon
+  more
+  arch skill_missile_weapon
+  more
+  arch skill_literacy
+  more
+  arch b_lsword
+  more
+  arch b_dagger
+  more
+  arch eyeglasses
+  more
+  arch grammarnazishirt
+  more
+  arch gloves_b
+  more
+  arch high_boots_b
+  more
+  arch grammarnazi_force
+  end
+treasure thief_class_items
+  list fighter_skills
+  more
+  arch cloak
+  more
+  arch shortsword
+  more
+  arch skill_bargaining
+  more
+  arch skill_stealing
+  more
+  arch lockpicks
+  more
+  arch sack
+  more
+  arch leather_armour
+  end
+treasure thief
+  list fighter_skills
+  more
+  arch cloak
+  more
+  arch dagger
+  more
+  arch skill_stealing
+  more
+  arch lockpicks
+  more
+  arch leather_armour
+  more
+  arch sack
+  end
+treasure swashbuckler_class_items
+  list fighter_skills
+  more
+  arch b_lsword
+  more
+  arch skill_stealing
+  more
+  arch skill_singing
+  more
+  arch b_dagger
+  more
+  arch amulet
+  more
+  arch sack
+  end
+treasure swashbuckler
+  list fighter_skills
+  more
+  arch light_sword
+  more
+  arch skill_stealing
+  more
+  arch skill_singing
+  more
+  arch dagger
+  more
+  arch amulet
+  more
+  arch sack
+  end
+# This is a list of the first level spells for each magic
+# skill - needed to give new characters spellbooks they can use.
+#
+treasureone evocation_l1
+  arch spell_icestorm
+    chance 5
+  more
+  arch spell_small_snowstorm
+    chance 5
+  more
+  arch spell_small_bullet
+    chance 5
+end
+#
+treasureone praying_l1
+  arch spell_cause_light_wounds
+    chance 5
+  more
+  arch spell_holy_word
+    chance 5
+  more
+  arch spell_light
+    chance 2
+  more
+  arch spell_minor_healing
+    chance 5
+  more
+  arch spell_turn_undead
+    chance 3
+end
+#
+treasureone sorcery_l1
+  arch spell_detect_magic
+    chance 2
+  more
+  arch spell_magic_bullet
+    chance 5
+  more
+  arch spell_magic_missile
+    chance 5
+  more
+  arch spell_slow
+    chance 2
+  more
+  arch spell_spark_shower
+    chance 5 
+end
+#
+treasureone pyromancy_l1
+  arch spell_burning_hands
+    chance 5
+  more
+  arch spell_small_fireball
+    chance 5
+  more
+  arch spell_sm_lightning
+    chance 5
+end
+#
+treasureone summoning_l1
+  arch spell_lesser_summon_golem
+end
+##############################################################
+# ability-treasure for dragon players
+##############################################################
+treasure dragon_ability_fire
+  arch direct_attune_fire
+  more
+  arch fire_clawing
+  more
+  arch spell_dragonbreath
+end
+treasure dragon_ability_cold
+  arch direct_attune_cold
+  more
+  arch ice_clawing
+  more
+  arch spell_large_icestorm
+end
+treasure dragon_ability_elec
+  arch direct_attune_elec
+  more
+  arch electric_clawing
+  more
+  arch spell_ball_lightning
+  more
+  arch dragon_ability_xrays
+end
+treasure dragon_ability_poison
+  arch spell_poison_cloud
+  more
+  arch poison_clawing
+end
+##############################################################
+treasure fenx_player_items
+  arch fenx_player_force
+  more
+  arch bow
+  more
+  arch arrow
+    nrof 100
+  more
+  arch quiver
+  more
+  arch skill_woodsman
+  more
+  arch skill_missile_weapon
+  more
+  arch no_class_face_change
+  more
+  arch skill_jumping
+  more
+  arch skill_singing
+end
+treasure fireborn_player_items
+  arch skill_levitate
+  more
+  arch fireborn_player_force
+  more
+  arch skill_flame_touch
+  more
+  arch skill_pyromancy
+  more
+  arch skill_praying
+  more
+  arch no_class_face_change
+  more
+  arch ring
+  magic 5
+  more
+  arch power_crystal
+  more
+  arch amulet
+  magic 3
+  more
+  arch pyro_book_l1
+  more
+  arch cleric_book_l1
+  end
+treasure fireborn
+  arch skill_levitate
+  more
+  arch skill_missile_weapon
+  more
+  list basic_skills
+  more
+  arch skill_flame_touch
+  more
+  arch skill_pyromancy
+  more
+  arch skill_praying
+  more
+  arch ring
+  magic 5
+  more
+  arch power_crystal
+  more
+  arch amulet
+  magic 3
+  more
+  arch cleric_book_l1
+  more
+  arch pyro_book_l1
+  more
+  arch pyro_book_l1
+  more
+  arch pyro_book_l1
+  end
+treasure quetzalcoatl_player_items
+  arch skill_levitate
+  more
+  arch skill_clawing
+  more
+  arch abil_burning_hands
+  more
+  arch abil_medium_fireball
+  more
+  arch no_class_face_change
+  more
+  arch skill_pyromancy
+  end
+treasure quetzalcoatl
+  arch skill_levitate
+  more
+  arch skill_one_handed_weapon
+  more
+  arch skill_two_handed_weapon
+  more
+  arch skill_missile_weapon
+  more
+  arch skill_clawing
+  more
+  list basic_skills
+  more
+  arch skill_pyromancy
+  more
+  arch pyro_book_l1
+  more
+  arch pyro_book
+  more
+  arch abil_burning_hands
+  more
+  arch abil_medium_fireball
+  end
+treasure serpentman_player_items
+  arch no_class_face_change
+  more
+  arch skill_clawing
+  more
+  arch skill_jumping
+end
+treasure troll_player_items_new
+  arch troll_player_force
+  more
+  arch no_class_face_change
+  end
+treasure viking
+  list fighter_skills
+  more
+  arch leather_armour
+  more
+  arch sword
+  more
+  arch skill_bargaining
+  more
+  arch b_small_shield
+  more
+  arch bighorned_helmet
+  end
+treasure wolf_player_items
+  arch wolf_player_force
+  more
+  arch no_class_face_change
+  more
+  arch skill_clawing
+  more
+  list basic_skills
+end
+treasureone random_food
+  arch food
+    chance 35
+  more
+  arch booze
+    chance 14
+  more
+  arch poison
+    chance 13
+  more
+  arch water
+    chance 8
+  more
+  arch apple
+    chance 3
+  more
+  arch wine
+    chance 3
+  more
+  arch coffee
+    chance 1
+  more
+  arch chocolate
+    chance 3
+  more
+  arch carrot
+    chance 1
+  more
+  arch fishfood
+    chance 4
+  more
+  arch mandrake_root
+    chance 1
+  more
+  arch cabbage
+    chance 2
+  more
+  arch potato
+    chance 3
+  more
+  arch loaf
+    chance 8
+  more
+  arch roast_bird
+    chance 3
+  more
+  arch mint
+    chance 1
+  more
+  arch clover
+    chance 1
+  more
+  arch onion
+    chance 1
+  more
+  arch orange
+    chance 1
+  more
+  arch cake
+    chance 8
+  more
+  arch waybread
+    chance 4
+  end
+treasureone random_gem_amethyst
+  arch amethyst
+    chance 30
+    nrof 1
+  more
+  arch amethyst
+    chance 20
+    nrof 2
+  more
+  arch amethyst
+    chance 20
+    nrof 3
+  more
+  arch amethyst
+    chance 10
+    nrof 4
+  more
+  arch amethyst
+    chance 5
+    nrof 5
+  more
+  arch amethyst
+    chance 5
+    nrof 6
+  more
+  arch amethyst
+    chance 5
+    nrof 7
+  more
+  arch amethyst
+    chance 5
+    nrof 8
+  end
+treasureone random_gem_mine_emerald
+  arch emerald
+    chance 30
+    nrof 20
+  more
+  arch emerald
+    chance 20
+    nrof 30
+  more
+  arch emerald
+    chance 20
+    nrof 50
+  more
+  arch emerald
+    chance 10
+    nrof 70
+  more
+  arch emerald
+    chance 5
+    nrof 100
+  more
+  arch emerald
+    chance 5
+    nrof 200
+  more
+  arch emerald
+    chance 5
+    nrof 300
+  more
+  arch emerald
+    chance 5
+    nrof 500
+  end
+treasureone random_gem_mine_ruby
+  arch ruby
+    chance 30
+    nrof 20
+  more
+  arch ruby
+    chance 20
+    nrof 30
+  more
+  arch ruby
+    chance 20
+    nrof 50
+  more
+  arch ruby
+    chance 10
+    nrof 70
+  more
+  arch ruby
+    chance 5
+    nrof 100
+  more
+  arch ruby
+    chance 5
+    nrof 200
+  more
+  arch ruby
+    chance 5
+    nrof 300
+  more
+  arch ruby
+    chance 5
+    nrof 500
+  end
+treasureone random_gem_mine_sapphire
+  arch sapphire
+    chance 30
+    nrof 20
+  more
+  arch sapphire
+    chance 20
+    nrof 30
+  more
+  arch sapphire
+    chance 20
+    nrof 50
+  more
+  arch sapphire
+    chance 10
+    nrof 70
+  more
+  arch sapphire
+    chance 5
+    nrof 100
+  more
+  arch sapphire
+    chance 5
+    nrof 200
+  more
+  arch sapphire
+    chance 5
+    nrof 300
+  more
+  arch sapphire
+    chance 5
+    nrof 500
+  end
+treasureone random_gem_mine_gem
+  arch gem
+    chance 30
+    nrof 20
+  more
+  arch graphite
+    chance 20
+    nrof 30
+  more
+  arch gem
+    chance 20
+    nrof 30
+  more
+  arch graphite
+    chance 10
+    nrof 70
+  more
+  arch gem
+    chance 5
+    nrof 50
+  more
+  arch graphite
+    chance 5
+    nrof 200
+  more
+  arch gem
+    chance 5
+    nrof 100
+  more
+  arch gem
+    chance 5
+    nrof 200
+  end
+treasureone random_gem_mine_amethyst
+  arch amethyst
+    chance 30
+    nrof 20
+  more
+  arch amethyst
+    chance 20
+    nrof 30
+  more
+  arch amethyst
+    chance 20
+    nrof 50
+  more
+  arch amethyst
+    chance 10
+    nrof 70
+  more
+  arch amethyst
+    chance 5
+    nrof 100
+  more
+  arch amethyst
+    chance 5
+    nrof 200
+  more
+  arch amethyst
+    chance 5
+    nrof 300
+  more
+  arch amethyst
+    chance 5
+    nrof 500
+  end
+treasureone random_gem_mine_onyx
+  arch onyx
+    chance 30
+    nrof 20
+  more
+  arch onyx
+    chance 20
+    nrof 30
+  more
+  arch onyx
+    chance 20
+    nrof 50
+  more
+  arch onyx
+    chance 10
+    nrof 70
+  more
+  arch onyx
+    chance 5
+    nrof 100
+  more
+  arch onyx
+    chance 5
+    nrof 200
+  more
+  arch onyx
+    chance 5
+    nrof 300
+  more
+  arch onyx
+    chance 5
+    nrof 500
+  end
+treasureone random_gem_mine_tourmaline
+  arch tourmaline
+    chance 30
+    nrof 20
+  more
+  arch tourmaline
+    chance 20
+    nrof 30
+  more
+  arch tourmaline
+    chance 20
+    nrof 50
+  more
+  arch tourmaline
+    chance 10
+    nrof 70
+  more
+  arch tourmaline
+    chance 5
+    nrof 100
+  more
+  arch tourmaline
+    chance 5
+    nrof 200
+  more
+  arch tourmaline
+    chance 5
+    nrof 300
+  more
+  arch tourmaline
+    chance 5
+    nrof 500
+  end
+treasureone random_gem_mine_topaz
+  arch topaz
+    chance 30
+    nrof 20
+  more
+  arch topaz
+    chance 20
+    nrof 30
+  more
+  arch topaz
+    chance 20
+    nrof 50
+  more
+  arch topaz
+    chance 10
+    nrof 70
+  more
+  arch topaz
+    chance 5
+    nrof 100
+  more
+  arch topaz
+    chance 5
+    nrof 200
+  more
+  arch topaz
+    chance 5
+    nrof 300
+  more
+  arch topaz
+    chance 5
+    nrof 500
+  end
+treasureone random_gem_mine_quartz
+  arch quartz
+    chance 30
+    nrof 20
+  more
+  arch quartz
+    chance 20
+    nrof 30
+  more
+  arch quartz
+    chance 20
+    nrof 50
+  more
+  arch quartz
+    chance 10
+    nrof 70
+  more
+  arch quartz
+    chance 5
+    nrof 100
+  more
+  arch quartz
+    chance 5
+    nrof 200
+  more
+  arch quartz
+    chance 5
+    nrof 300
+  more
+  arch quartz
+    chance 5
+    nrof 500
+  end
+treasureone random_gem_mine_peridot
+  arch peridot
+    chance 30
+    nrof 20
+  more
+  arch peridot
+    chance 20
+    nrof 30
+  more
+  arch peridot
+    chance 20
+    nrof 50
+  more
+  arch peridot
+    chance 10
+    nrof 70
+  more
+  arch peridot
+    chance 5
+    nrof 100
+  more
+  arch peridot
+    chance 5
+    nrof 200
+  more
+  arch peridot
+    chance 5
+    nrof 300
+  more
+  arch peridot
+    chance 5
+    nrof 500
+  end
+treasureone random_gem_mine_mithril
+  arch mithril
+    chance 30
+    nrof 20
+  more
+  arch mithril
+    chance 20
+    nrof 30
+  more
+  arch mithril
+    chance 20
+    nrof 50
+  more
+  arch mithril
+    chance 10
+    nrof 70
+  more
+  arch mithril
+    chance 5
+    nrof 100
+  more
+  arch mithril
+    chance 5
+    nrof 200
+  more
+  arch mithril
+    chance 5
+    nrof 300
+  more
+  arch mithril
+    chance 5
+    nrof 500
+  end
+treasureone random_gem_mine_jacinth
+  arch jacinth
+    chance 30
+    nrof 20
+  more
+  arch jacinth
+    chance 20
+    nrof 30
+  more
+  arch jacinth
+    chance 20
+    nrof 50
+  more
+  arch jacinth
+    chance 10
+    nrof 70
+  more
+  arch jacinth
+    chance 5
+    nrof 100
+  more
+  arch jacinth
+    chance 5
+    nrof 200
+  more
+  arch jacinth
+    chance 5
+    nrof 300
+  more
+  arch jacinth
+    chance 5
+    nrof 500
+  end
+treasureone random_gem_mine_garnet
+  arch garnet
+    chance 30
+    nrof 20
+  more
+  arch garnet
+    chance 20
+    nrof 30
+  more
+  arch garnet
+    chance 20
+    nrof 50
+  more
+  arch garnet
+    chance 10
+    nrof 70
+  more
+  arch garnet
+    chance 5
+    nrof 100
+  more
+  arch garnet
+    chance 5
+    nrof 200
+  more
+  arch garnet
+    chance 5
+    nrof 300
+  more
+  arch garnet
+    chance 5
+    nrof 500
+  end  
+treasureone random_gem_mine_chrysoberyl
+  arch chrysoberyl
+    chance 30
+    nrof 20
+  more
+  arch chrysoberyl
+    chance 20
+    nrof 30
+  more
+  arch chrysoberyl
+    chance 20
+    nrof 50
+  more
+  arch chrysoberyl
+    chance 10
+    nrof 70
+  more
+  arch chrysoberyl
+    chance 5
+    nrof 100
+  more
+  arch chrysoberyl
+    chance 5
+    nrof 200
+  more
+  arch chrysoberyl
+    chance 5
+    nrof 300
+  more
+  arch chrysoberyl
+    chance 5
+    nrof 500
+  end
+treasureone random_gem_mine_chalcedony
+  arch chalcedony
+    chance 30
+    nrof 20
+  more
+  arch chalcedony
+    chance 20
+    nrof 30
+  more
+  arch chalcedony
+    chance 20
+    nrof 50
+  more
+  arch chalcedony
+    chance 10
+    nrof 70
+  more
+  arch chalcedony
+    chance 5
+    nrof 100
+  more
+  arch chalcedony
+    chance 5
+    nrof 200
+  more
+  arch chalcedony
+    chance 5
+    nrof 300
+  more
+  arch chalcedony
+    chance 5
+    nrof 500
+  end
+treasureone random_gem_mine_aquamarine_gem
+  arch aquamarine_gem
+    chance 30
+    nrof 20
+  more
+  arch aquamarine_gem
+    chance 20
+    nrof 30
+  more
+  arch aquamarine_gem
+    chance 20
+    nrof 50
+  more
+  arch aquamarine_gem
+    chance 10
+    nrof 70
+  more
+  arch aquamarine_gem
+    chance 5
+    nrof 100
+  more
+  arch aquamarine_gem
+    chance 5
+    nrof 200
+  more
+  arch aquamarine_gem
+    chance 5
+    nrof 300
+  more
+  arch aquamarine_gem
+    chance 5
+    nrof 500
+  end
+treasureone random_gem_mine_agate
+  arch agate
+    chance 30
+    nrof 20
+  more
+  arch agate
+    chance 20
+    nrof 30
+  more
+  arch agate
+    chance 20
+    nrof 50
+  more
+  arch agate
+    chance 10
+    nrof 70
+  more
+  arch agate
+    chance 5
+    nrof 100
+  more
+  arch agate
+    chance 5
+    nrof 200
+  more
+  arch agate
+    chance 5
+    nrof 300
+  more
+  arch agate
+    chance 5
+    nrof 500
+  end
+treasureone random_gem_new
+  arch coloredglass_white
+    chance 3
+    nrof 1
+  more
+  arch coloredglass_white
+    chance 3
+    nrof 2
+  more
+  arch coloredglass_yellow
+    chance 2
+    nrof 1
+  more
+  arch coloredglass_yellow
+    chance 2
+    nrof 2
+  more
+  arch coloredglass_green
+    chance 3
+    nrof 1
+  more
+  arch coloredglass_green
+    chance 3
+    nrof 2
+  more
+  arch coloredglass_red
+    chance 2
+    nrof 1
+  more
+  arch coloredglass_red
+    chance 2
+    nrof 2
+  more
+  arch coloredglass_blue
+    chance 3
+    nrof 1
+  more
+  arch coloredglass_blue
+    chance 3
+    nrof 2
+  more
+  arch gem_faux
+    chance 5
+    nrof 2
+  more
+  arch ruby_faux
+    chance 5
+    nrof 2
+  more
+  arch ruby_faux
+    chance 5
+    nrof 4
+  more
+  arch sapphire_faux
+    chance 5
+    nrof 2
+  more
+  arch sapphire_faux
+    chance 5
+    nrof 4
+  more
+  arch emerald_faux
+    chance 5
+    nrof 10
+  more
+  arch emerald_faux
+    chance 5
+    nrof 4
+  more
+  arch gem
+    chance 5
+    nrof 1
+  more
+  arch gem
+    chance 5
+    nrof 2
+  more
+  arch pearl
+    chance 5
+    nrof 4
+  more
+  arch pearl
+    chance 5
+    nrof 6
+  more
+  arch ruby
+    chance 5
+    nrof 2
+  more
+  arch ruby
+    chance 5
+    nrof 4
+  more
+  arch sapphire
+    chance 5
+    nrof 2
+  more
+  arch sapphire
+    chance 5
+    nrof 4
+  more
+  arch topaz
+    chance 5
+    nrof 2
+  more
+  arch topaz
+    chance 5
+    nrof 4
+  more
+  arch onyx
+    chance 5
+    nrof 2
+  more
+  arch onyx
+    chance 5
+    nrof 4
+  more
+  arch peridot
+    chance 5
+    nrof 3
+  more
+  arch peridot
+    chance 5
+    nrof 5
+  more
+  arch garnet
+    chance 5
+    nrof 2
+  more
+  arch garnet
+    chance 5
+    nrof 4
+  more
+  arch aquamarine_gem
+    chance 5
+    nrof 2
+  more
+  arch aquamarine_gem
+    chance 5
+    nrof 5
+  more
+  arch topaz_faux
+    chance 5
+    nrof 2
+  more
+  arch topaz_faux
+    chance 5
+    nrof 4
+  more
+  arch onyx_faux
+    chance 5
+    nrof 2
+  more
+  arch onyx_faux
+    chance 5
+    nrof 4
+  more
+  arch peridot_faux
+    chance 5
+    nrof 3
+  more
+  arch peridot_faux
+    chance 5
+    nrof 5
+  more
+  arch garnet_faux
+    chance 5
+    nrof 2
+  more
+  arch garnet_faux
+    chance 5
+    nrof 4
+  more
+  arch aquamarine_gem_faux
+    chance 5
+    nrof 2
+  more
+  arch aquamarine_gem_faux
+    chance 5
+    nrof 5
+  more
+  arch quartz
+    chance 5
+    nrof 3
+  more
+  arch quartz
+    chance 5
+    nrof 4
+  more
+  arch tourmaline
+    chance 5
+    nrof 3
+  more
+  arch tourmaline
+    chance 5
+    nrof 4
+  more
+  arch quartz_faux
+    chance 5
+    nrof 3
+  more
+  arch quartz_faux
+    chance 5
+    nrof 4
+  more
+  arch tourmaline_faux
+    chance 5
+    nrof 3
+  more
+  arch tourmaline_faux
+    chance 5
+    nrof 4
+  more
+  arch amethyst
+    chance 5
+    nrof 1
+  more
+  arch amethyst
+    chance 5
+    nrof 2
+  more
+  arch amethyst_faux
+    chance 5
+    nrof 1
+  more
+  arch amethyst_faux
+    chance 5
+    nrof 2
+  more
+  arch chalcedony
+    chance 5
+    nrof 4
+  more
+  arch chalcedony
+    chance 5
+    nrof 6
+  more
+  arch chalcedony_faux
+    chance 5
+    nrof 4
+  more
+  arch chalcedony_faux
+    chance 5
+    nrof 6
+  more
+  arch jacinth
+    chance 5
+    nrof 4
+  more
+  arch jacinth
+    chance 5
+    nrof 6
+  more
+  arch agate
+    chance 5
+    nrof 4
+  more
+  arch agate
+    chance 5
+    nrof 6
+  more
+  arch chrysoberyl
+    chance 5
+    nrof 4
+  more
+  arch chrysoberyl
+    chance 5
+    nrof 6
+  more
+  arch jacinth_faux
+    chance 5
+    nrof 4
+  more
+  arch jacinth_faux
+    chance 5
+    nrof 6
+  more
+  arch agate_faux
+    chance 5
+    nrof 4
+  more
+  arch agate_faux
+    chance 5
+    nrof 6
+  more
+  arch chrysoberyl_faux
+    chance 5
+    nrof 4
+  more
+  arch chrysoberyl_faux
+    chance 5
+    nrof 6
+  more
+  arch emerald
+    chance 5
+    nrof 10
+  more
+  arch emerald
+    chance 5
+    nrof 4
+  end
+treasureone random_gem_poor
+  arch coloredglass_white
+    chance 15
+    nrof 1
+  more
+  arch pearl
+    chance 8
+    nrof 2
+  more
+  arch pearl
+    chance 2
+    nrof 3
+  more
+  arch coloredglass_blue
+    chance 15
+    nrof 1
+  more
+  arch pearl
+    chance 8
+    nrof 2
+  more
+  arch coloredglass_yellow
+    chance 2
+    nrof 3
+  more
+  arch coloredglass_red
+    chance 10
+    nrof 1
+  more
+  arch ruby
+    chance 4
+    nrof 2
+  more
+  arch ruby
+    chance 1
+    nrof 2
+  more
+  arch coloredglass_green
+    chance 25
+    nrof 1
+  more
+  arch sapphire
+    chance 8
+    nrof 2
+  more
+  arch sapphire
+    chance 2
+    nrof 3
+  end
+treasureone random_wealth_new
+  arch goldcoin
+    chance 5
+    nrof 5
+  more
+  arch goldcoin
+    chance 5
+    nrof 10
+  more
+  arch goldcoin
+    chance 5
+    nrof 15
+  more
+  arch goldcoin
+    chance 5
+    nrof 20
+  more
+  arch goldcoin
+    chance 5
+    nrof 25
+  more
+  arch silvercoin
+    chance 5
+    nrof 25
+  more
+  arch silvercoin
+    chance 5
+    nrof 50
+  more
+  arch silvercoin
+    chance 5
+    nrof 75
+  more
+  arch silvercoin
+    chance 5
+    nrof 100
+  more
+  arch silvercoin
+    chance 5
+    nrof 150
+  more
+  arch platinacoin
+    chance 5
+    nrof 1
+  more
+  arch platinacoin
+    chance 5
+    nrof 2
+  more
+  arch platinacoin
+    chance 5
+    nrof 4
+  more
+  arch platinacoin
+    chance 5
+    nrof 6
+  more
+  arch gem_faux
+    chance 5
+    nrof 1
+  more
+  arch gem_faux
+    chance 10
+    nrof 2
+  more
+  arch ruby_faux
+    chance 10
+    nrof 2
+  more
+  arch ruby_faux
+    chance 5
+    nrof 4
+  more
+  arch sapphire_faux
+    chance 10
+    nrof 2
+  more
+  arch sapphire_faux
+    chance 5
+    nrof 4
+  more
+  arch emerald_faux
+    chance 10
+    nrof 10
+  more
+  arch emerald_faux
+    chance 5
+    nrof 4
+  more
+  arch gem
+    chance 5
+    nrof 1
+  more
+  arch gem
+    chance 5
+    nrof 1
+  more
+  arch pearl
+    chance 5
+    nrof 2
+  more
+  arch pearl
+    chance 5
+    nrof 4
+  more
+  arch ruby
+    chance 5
+    nrof 1
+  more
+  arch ruby
+    chance 5
+    nrof 2
+  more
+  arch sapphire
+    chance 5
+    nrof 1
+  more
+  arch sapphire
+    chance 5
+    nrof 3
+  more
+  arch faux_platinacoin
+    chance 3
+    nrof 6
+  more
+  arch faux_silvercoin
+    chance 3
+    nrof 150
+  more
+  arch faux_goldcoin
+    chance 3
+    nrof 25
+  more
+  arch faux_platinacoin_old
+    chance 3
+    nrof 6
+  more
+  arch faux_silvercoin_old
+    chance 3
+    nrof 150
+  more
+  arch faux_goldcoin_old
+    chance 3
+    nrof 25
+  more
+  arch emerald
+    chance 5
+    nrof 2
+  more
+  arch emerald
+    chance 5
+    nrof 5
+  end
+treasureone random_wealth_poor
+  arch silvercoin
+    chance 5
+    nrof 5
+  more
+  arch silvercoin
+    chance 5
+    nrof 10
+  more
+  arch coloredglass_green
+    chance 5
+    nrof 1
+  more
+  arch coloredglass_red
+    chance 5
+    nrof 1
+  more
+  arch silvercoin
+    chance 5
+    nrof 25
+  more
+  arch coppercoin
+    chance 5
+    nrof 25
+  more
+  arch coppercoin
+    chance 5
+    nrof 50
+  more
+  arch coppercoin
+    chance 5
+    nrof 75
+  more
+  arch coppercoin
+    chance 5
+    nrof 100
+  more
+  arch coppercoin
+    chance 5
+    nrof 150
+  more
+  arch coppercoin
+    chance 5
+    nrof 1
+  more
+  arch coppercoin
+    chance 5
+    nrof 2
+  more
+  arch coppercoin
+    chance 5
+    nrof 4
+  more
+  arch coloredglass_blue
+    chance 5
+    nrof 1
+  more
+  arch coppercoin
+    chance 5
+    nrof 1
+  more
+  arch silvercoin
+    chance 5
+    nrof 1
+  more
+  arch silvercoin
+    chance 5
+    nrof 2
+  more
+  arch silvercoin
+    chance 5
+    nrof 4
+  more
+  arch silvercoin
+    chance 5
+    nrof 1
+  more
+  arch silvercoin
+    chance 5
+    nrof 2
+  more
+  arch silvercoin
+    chance 5
+    nrof 1
+  more
+  arch sapphire
+    chance 5
+    nrof 3
+  more
+  arch silvercoin
+    chance 5
+    nrof 2
+  more
+  arch pearl
+    chance 2
+    nrof 1
+  more
+  arch sapphire
+    chance 2
+    nrof 1
+  more
+  arch sapphire_faux
+    chance 4
+    nrof 1
+  more
+  arch faux_coppercoin
+    chance 3
+    nrof 150
+  more
+  arch faux_silvercoin
+    chance 3
+    nrof 150
+  more
+  arch faux_coppercoin_old
+    chance 3
+    nrof 6
+  more
+  arch faux_silvercoin_old
+    chance 3
+    nrof 5
+  more
+  arch silvercoin
+    chance 5
+    nrof 5
+  end
+treasureone random_food_fant
+  arch food
+    chance 35
+  more
+  arch vodka
+    chance 14
+  more
+  arch vodka_poison
+    chance 13
+  more
+  arch water
+    chance 8
+  more
+  arch apple
+    chance 3
+  more
+  arch wine
+    chance 3
+  more
+  arch coffee
+    chance 1
+  more
+  arch chocolate
+    chance 3
+  more
+  arch carrot
+    chance 1
+  more
+  arch fishfood
+    chance 4
+  more
+  arch mandrake_root
+    chance 1
+  more
+  arch cabbage
+    chance 2
+  more
+  arch potato
+    chance 3
+  more
+  arch loaf
+    chance 8
+  more
+  arch roast_bird
+    chance 3
+  more
+  arch mint
+    chance 1
+  more
+  arch clover
+    chance 1
+  more
+  arch onion
+    chance 1
+  more
+  arch orange
+    chance 1
+  more
+  arch cake
+    chance 8
+  more
+  arch waybread
+    chance 4
+  end
+treasureone shoparchery
+  list missile_weapons
+    chance 99
+    more
+  list shoparcheryonly
+    chance 1
+end
+#
+treasureone shoparcheryonly
+  arch reflexbow
+    magic 3
+    chance 25
+  more
+  arch reflexbow_ivory
+    magic 3
+    chance 5
+  more
+  arch handcrossbow
+    magic 3
+    chance 18
+  more
+  arch handcrossbow_ivory
+    magic 3
+    chance 2
+  more
+  arch arrow
+    magic 3
+    chance 50
+    nrof 30
+end
+treasureone shopweapoancient
+  list random_weapon
+    chance 30
+    more
+  list shopweapoancientbronze
+    chance 30
+    more
+  list shopweapoancientweaps
+    chance 40
+end
+#
+treasureone shopweapoancientbronze
+  arch b_dagger
+    magic 4
+    chance 10
+  more
+  arch b_bsword_1
+    magic 4
+    chance 10
+  more
+  arch b_bsword_2
+    magic 4
+    chance 10
+  more
+  arch b_lsword
+    magic 4
+    chance 10
+  more
+  arch b_scimitar
+    magic 4
+    chance 10
+  more
+  arch b_ssword_1
+    magic 4
+    chance 10
+  more
+  arch b_ssword_2
+    magic 4
+    chance 10
+  more
+  arch b_sword_1
+    magic 4
+    chance 10
+  more
+  arch b_axe1
+    magic 4
+    chance 20
+end
+#
+treasureone shopweapoancientweaps
+  arch b_sicklesword
+     magic 3
+    chance 20
+  more
+  arch sicklesword
+    magic 3
+    chance 5
+  more
+  arch cudgel
+    magic 3
+    chance 25
+  more
+  arch b_spikeballmace
+    magic 3
+    chance 20
+  more  
+  arch spikeballmace
+    magic 3
+    chance 5
+  more
+  arch chakram
+    magic 3
+    chance 25
+end
+treasureone shopweapoeast
+  list random_weapon
+    chance 60
+    more
+  list shopweapoeastweaps
+    chance 40
+end
+#
+treasureone shopweapoeastweaps
+  arch kama1
+    magic 3
+    chance 5
+  more
+  arch kama2
+    magic 3
+    chance 5
+  more
+  arch sai1
+    magic 3
+    chance 5
+  more
+  arch sai2
+    magic 3
+    chance 5
+  more
+  arch butterflysword_1
+    magic 3
+    chance 5
+  more
+  arch butterflysword_2
+    magic 3
+    chance 5
+  more
+  arch nunchacu_1
+     magic 3
+    chance 5
+  more
+  arch nunchacu_2
+    magic 3
+    chance 5
+  more
+  arch taifu_1
+    magic 3
+    chance 10
+  more
+  arch t_star1
+    magic 3
+    chance 10
+  more
+  arch hooksword
+    magic 3
+    chance 10
+  more
+  arch yari1
+    magic 3
+    chance 8
+  more
+  arch yari2
+    magic 3
+    chance 2
+  more
+  arch  nineringsword
+    magic 3
+    chance 10
+  more
+  arch katana_1
+    magic 3
+    chance 10
+end
+treasureone shopweapowest
+  list random_weapon
+    chance 60
+    more
+  list shopweapowestweaps
+    chance 40
+end
+#
+treasureone shopweapowestweaps
+  arch kilij1
+    magic 3
+    chance 50
+  more
+  arch kilij2
+    magic 3
+    chance 20
+  more
+  arch kilij3
+    magic 3
+    chance 30
+end
+treasureone talisman
+  arch talisman_sorcery
+    chance 1
+  more
+  arch talisman_summoning
+    chance 1
+  more
+  arch talisman_evocation
+    chance 1
+  more
+  arch talisman_pyromancy
+    chance 1
+end
+treasure nukeexplosion
+  arch crater
+  end
+treasure nukeexplosion
+  arch crater
+  end
+treasure raise_dead_failure
+    arch devil
+	nrof 5
+    more
+    arch skull
+     	nrof 3
+end
+#
+treasure resurrection_failure
+    arch skull
+	nrof 5
+    more
+    arch lich
+	nrof 3
+end
+#
+treasure reincarnation_failure
+    arch lich
+	nrof 5
+    more
+    arch demilich
+	nrof 3
+    more
+    arch spectre
+	nrof 1
+end
+#
+# this basically taken from the code.  Not sure if this
+# is still really accurate.
+treasureone reincarnation_races
+    arch barbarian
+	chance 1
+    more
+    arch cleric
+	chance 1
+    more
+    arch elf
+	chance 1
+    more
+    arch human
+	chance 1
+    more
+    arch mage
+	chance 1
+    more
+    arch ninja
+	chance 1
+    more
+    arch priest
+	chance 1
+    more
+    arch swashbuckler
+	chance 1
+    more
+    arch thief
+	chance 1
+    more
+    arch viking
+	chance 1
+    more
+    arch warrior
+	chance 1
+    more
+    arch wizard
+	chance 1
+end
+treasureone scroll
+  arch spell_create_bomb
+    chance 1
+    nrof 1
+  more
+  arch spell_summon_golem
+    chance 1
+    nrof 1
+  more
+  arch spell_summon_fire_elemental
+    chance 1
+    nrof 1
+  more
+  arch spell_summon_earth_elemental
+    chance 1
+    nrof 1
+  more
+  arch spell_summon_water_elemental
+    chance 1
+    nrof 1
+  more
+  arch spell_summon_air_elemental
+    chance 1
+    nrof 1
+  more
+  arch spell_magic_mapping
+    chance 3
+    nrof 2
+  more
+  arch spell_destruction
+    chance 4
+    nrof 3
+  more
+  arch spell_invisible
+    nrof 3
+    chance 2
+  more
+  arch spell_improved_invisibility
+    nrof 1
+    chance 1
+  more
+  arch spell_armour
+    chance 2
+    nrof 3
+  more
+  arch spell_strength
+    nrof 3
+    chance 2
+  more
+  arch spell_dexterity
+    nrof 3
+    chance 2
+  more
+  arch spell_constitution
+    nrof 3
+    chance 2
+  more
+  arch spell_levitate
+    nrof 3
+    chance 1
+  more
+  arch spell_confusion
+    nrof 3
+    chance 2
+  more
+  arch spell_dark_vision
+    nrof 3
+    chance 2
+  more
+  arch spell_xray
+    nrof 3
+    chance 1
+  more
+  arch spell_summon_pet_monster
+    nrof 3
+    chance 1
+  more
+  arch spell_charging
+    nrof 3
+    chance 1
+  more
+  arch spell_alchemy
+    nrof 3
+    chance 2
+  more
+  arch spell_identify
+    nrof 9
+    chance 10
+  more
+  arch spell_detect_magic
+    nrof 9
+    chance 10
+  more
+  arch spell_detect_monster
+    nrof 3
+    chance 6
+  more
+  arch spell_ball_lightning
+    nrof 3
+    chance 1
+  more
+  arch spell_faery_fire
+    nrof 3
+    chance 2
+###################################################
+# cleric spells
+  more
+  arch spell_perceive_self
+    chance 2
+    nrof 2
+  more
+  arch spell_word_of_recall
+    chance 2
+    nrof 1
+  more
+  arch spell_invisible_to_undead
+    chance 2
+    nrof 2
+  more
+  arch spell_cure_confusion
+    chance 4
+    nrof 1
+  more
+  arch spell_cure_blindness
+    chance 1
+    nrof 1
+  more
+  arch spell_cure_disease
+    chance 5
+    nrof 3
+  more
+  arch spell_restoration
+    chance 1
+    nrof 1
+  more
+  arch spell_protection_from_cold
+    nrof 3
+    chance 1
+  more
+  arch spell_protection_from_electricity
+    nrof 3
+    chance 1
+  more
+  arch spell_protection_from_fire
+    nrof 3
+    chance 1
+  more
+  arch spell_protection_from_poison
+    nrof 3
+    chance 1
+  more
+  arch spell_protection_from_slow
+    nrof 3
+    chance 1
+  more
+  arch spell_protection_from_paralysis
+    nrof 3
+    chance 1
+  more
+  arch spell_protection_from_draining
+    nrof 3
+    chance 1
+  more
+  arch spell_protection_from_magic
+    nrof 3
+    chance 1
+  more
+  arch spell_protection_from_attack
+    nrof 3
+    chance 1
+  more
+  arch spell_protection_from_confusion
+    nrof 3
+    chance 1
+  more
+  arch spell_protection_from_cancellation
+    nrof 3
+    chance 1
+  more
+  arch spell_protection_from_depletion
+    nrof 3
+    chance 1
+  more
+  arch spell_remove_curse
+    nrof 2
+    chance 4
+  more
+  arch spell_remove_damnation
+    nrof 1
+    chance 1
+  more
+  arch spell_detect_evil
+    nrof 3
+    chance 5
+  more
+  arch spell_detect_curse
+    nrof 5
+    chance 3
+  more
+  arch spell_show_invisible
+    nrof 3
+    chance 1
+  more
+  arch spell_cause_flu
+    nrof 3
+    chance 2
+  more
+  arch spell_cause_leprosy
+    nrof 3
+    chance 1
+  more
+  arch spell_cause_anthrax
+    nrof 3
+    chance 1
+  more
+  arch spell_cause_typhoid
+    nrof 3
+    chance 1
+  more
+  arch spell_cause_cold
+    nrof 3
+    chance 2
+end
+treasureone evoker_book_low
+  arch spell_armour
+    chance 5
+  more
+  arch spell_icestorm
+    chance 4
+  more
+  arch spell_small_snowstorm
+    chance 8
+  more
+  arch spell_small_bullet
+    chance 8
+  more
+  arch spell_detect_monster
+    chance 8
+  more
+  arch spell_mana_blast
+    chance 2
+  more
+  arch spell_small_manaball
+    chance 3
+  more
+  arch spell_frostbolt
+    chance 3
+  more
+  arch spell_manabolt
+    chance 2
+  more
+  arch spell_medium_snowstorm
+    chance 6
+  more
+  arch spell_lg_magic_bullet
+    chance 4
+  more
+  arch spell_rune_of_frost
+    chance 3
+  more
+  arch spell_medium_manaball
+    chance 2
+  more
+  arch spell_large_snowstorm
+    chance 2
+end
+treasureone evoker_book_medium
+  arch spell_bullet_swarm
+    chance 1
+  more
+  arch spell_large_manaball
+    chance 1
+  more
+  arch spell_create_frost_wall
+    chance 2
+  more
+  arch spell_bullet_storm
+    chance 1
+  more
+  arch spell_cancellation
+    chance 1
+  more
+  arch spell_create_pool_of_chaos
+    chance 1
+end
+treasureone evoker_book_high
+  arch spell_build_bullet_wall
+    chance 1
+  more
+  arch spell_large_icestorm
+    chance 1
+  more
+  arch spell_sigil
+    chance 1
+end
+treasureone evocation_book
+  list evoker_book_low
+    chance 20
+    nrof 1
+  more
+  list evoker_book_medium
+    chance 20
+    magic 6
+    nrof 1
+  more
+  list evoker_book_high
+    chance 20
+    magic 11
+    nrof 1
+end
+# These are arranged in level, then alphabetical order
+#
+treasureone prayer_book_low
+  arch spell_cause_light_wounds
+    chance 4
+  more
+  arch spell_holy_word
+    chance 4
+  more
+  arch spell_light
+    chance 3
+  more
+  arch spell_minor_healing
+    chance 5
+  more
+  arch spell_turn_undead
+    chance 4
+  more
+  arch spell_bless
+    chance 3
+  more
+  arch spell_cause_cold
+    chance 5
+  more
+  arch spell_cause_flu
+    chance 5
+  more
+  arch spell_curse
+    chance 3
+  more
+  arch spell_staff_to_snake
+    chance 1
+  more
+  arch spell_cause_medium_wounds
+    chance 3
+  more
+  arch spell_detect_evil
+    chance 5
+  more
+  arch spell_protection_from_cold
+    chance 3
+  more
+  arch spell_summon_cult_monsters
+    chance 2
+  more
+  arch spell_consecrate
+    chance 1
+  more
+  arch spell_cure_poison
+    chance 5
+  more
+  arch spell_medium_healing
+    chance 5
+  more
+  arch spell_pacify
+    chance 3
+  more
+  arch spell_protection_from_electricity
+    chance 3
+  more
+  arch spell_banishment
+    chance 1
+  more
+  arch spell_cause_heavy_wounds
+    chance 2
+  more
+  arch spell_cause_leprosy
+    chance 5
+  more
+  arch spell_command_undead
+    chance 3
+  more
+  arch spell_cure_disease
+    chance 4
+  more
+  arch spell_darkness
+    chance 1
+  more
+  arch spell_detect_curse
+    chance 3
+  more
+  arch spell_protection_from_fire
+    chance 2
+end
+#
+treasureone prayer_book_medium
+  arch spell_call_holy_servant
+    chance 3
+  more
+  arch spell_protection_from_poison
+    chance 2
+  more
+  arch spell_cure_confusion
+    chance 2
+  more
+  arch spell_holy_orb
+    chance 3
+  more
+  arch spell_protection_from_confusion
+    chance 2
+  more
+  arch spell_protection_from_depletion
+    chance 2
+  more
+  arch spell_protection_from_slow
+    chance 2
+  more
+  arch spell_regeneration
+    chance 1
+  more
+  arch spell_show_invisible
+    chance 1
+  more
+  arch spell_cause_typhoid
+    chance 1
+  more
+  arch spell_major_healing
+    chance 3
+  more
+  arch spell_protection_from_paralysis
+    chance 2
+  more
+  arch spell_remove_curse
+    chance 1
+  more
+  arch spell_cure_blindness
+    chance 2
+  more
+  arch spell_holy_possession
+    chance 3
+  more
+  arch spell_protection_from_draining
+    chance 2
+  more
+  arch spell_heal
+    chance 1
+  more
+  arch spell_protection_from_magic
+    chance 1
+  more
+#  arch spell_raise_dead
+#    chance 1
+#  more
+  arch spell_summon_avatar
+    chance 1
+  more
+  arch spell_word_of_recall
+    chance 1
+end
+#
+treasureone prayer_book_high
+  arch spell_protection_from_cancellation
+    chance 2
+  more
+  arch spell_cause_anthrax
+    chance 1
+  more
+  arch spell_glyph
+    chance 1
+  more
+  arch spell_holy_wrath
+    chance 1
+  more
+  arch spell_protection_from_attack
+    chance 1
+  more
+  arch spell_restoration
+    chance 1
+#  more
+#  arch spell_resurrection
+#    chance 1
+#  more
+#  arch spell_reincarnation
+#    chance 1
+end
+#
+treasureone prayer_book
+  list prayer_book_low
+    chance 20
+    nrof 1
+  more
+  list prayer_book_medium
+    chance 30
+    magic 6
+    nrof 1
+  more
+  list prayer_book_high
+    chance 40
+    magic 11
+    nrof 1
+end
+treasureone pyro_book_low
+  arch spell_burning_hands
+    chance 8
+  more
+  arch spell_small_fireball
+    chance 8
+  more
+  arch spell_sm_lightning
+    chance 8
+  more
+  arch spell_firebolt
+    chance 4
+  more
+  arch spell_medium_fireball
+    chance 6
+  more
+  arch spell_faery_fire
+    chance 2
+  more
+  arch spell_large_lightning
+    chance 3
+  more
+  arch spell_rune_of_fire
+    chance 5
+  more
+  arch spell_large_fireball
+    chance 2
+end
+treasureone pyro_book_medium
+  arch spell_create_bomb
+    chance 3
+  more
+  arch spell_create_fire_wall
+    chance 3
+  more
+  arch spell_rune_of_shocking
+    chance 3
+  more
+  arch spell_rune_of_blasting
+    chance 2
+end
+treasureone pyro_book_high
+  arch spell_firetrap
+    chance 1
+  more
+  arch spell_build_fireball_wall
+    chance 1
+  more
+  arch spell_build_lightning_wall
+    chance 1
+end
+treasureone pyromancy_book
+  list pyro_book_low
+    chance 20
+    nrof 1
+  more
+  list pyro_book_medium
+    chance 30
+    magic 6
+    nrof 1
+  more
+  list pyro_book_high
+    chance 40
+    magic 11
+    nrof 1
+end
+treasureone sorcery_book_low
+  arch spell_detect_magic
+    chance 10
+  more
+  arch spell_magic_bullet
+    chance 10
+  more
+  arch spell_magic_missile
+    chance 8
+  more
+  arch spell_marking_rune
+    chance 5
+  more
+  arch spell_probe
+    chance 6
+  more
+  arch spell_slow
+    chance 7
+  more
+  arch spell_confusion
+    chance 7
+  more
+  arch spell_paralyze
+    chance 8
+  more
+  arch spell_poison_cloud
+    chance 6
+  more
+  arch spell_strength
+    chance 6
+  more
+  arch spell_charisma
+    chance 4
+  more
+  arch spell_dexterity
+    chance 4
+  more
+  arch spell_constitution
+    chance 4
+  more
+  arch spell_disarm
+    chance 1
+  more
+  arch spell_fear
+    chance 5
+  more
+  arch spell_dark_vision
+    chance 2
+  more
+  arch spell_magic_mapping
+    chance 5
+  more
+  arch spell_steambolt
+    chance 1
+  more
+  arch spell_transference
+    chance 1
+end
+treasureone sorcery_book_medium
+  arch spell_invisible
+    chance 4
+  more
+  arch spell_levitate
+    chance 2
+  more
+  arch spell_rune_of_transference
+    chance 1
+  more
+  arch spell_animate_weapon
+    chance 4
+  more
+  arch spell_antimagic_rune
+    chance 1
+  more
+  arch spell_mass_confusion
+    chance 3
+  more
+  arch spell_missile_swarm
+    chance 1
+  more
+  arch spell_identify
+    chance 5
+  more
+  arch spell_improved_invisibility
+    chance 1
+  more
+  arch spell_dimension_door
+    chance 1
+  more
+  arch spell_xray
+    chance 1
+end
+treasureone sorcery_book_high
+  arch spell_magic_drain
+    chance 1
+  more
+  arch spell_magic_rune
+    chance 1
+  more
+  arch spell_rune_of_death
+    chance 1
+  more
+  arch spell_destruction
+    chance 1
+  more
+  arch spell_town_portal
+    chance 1
+end
+treasureone sorcery_book
+  list sorcery_book_low
+    chance 20
+    nrof 1
+  more
+  list sorcery_book_medium
+    chance 30
+    magic 6
+    nrof 1
+  more
+  list sorcery_book_high
+    chance 40
+    magic 11
+    nrof 1
+end
+treasureone summoner_book_low
+  arch spell_create_missile
+    chance 1
+  more
+  arch spell_lesser_summon_golem
+    chance 4
+  more
+  arch spell_earth_to_dust
+    chance 2
+  more
+  arch spell_summon_fog
+    chance 2
+  more
+  arch spell_summon_golem
+    chance 8
+  more
+  arch spell_summon_pet_monster
+    chance 7
+  more
+  arch spell_alchemy
+    chance 5
+  more
+  arch spell_create_earth_wall
+    chance 6
+  more
+  arch spell_summon_earth_elemental
+    chance 3
+  more
+  arch spell_counterspell
+    chance 1
+  more
+  arch spell_charm_monsters
+    chance 1
+  more
+  arch spell_summon_water_elemental
+    chance 4
+  more
+  arch spell_mystic_fist
+    chance 1
+end
+treasureone summoner_book_medium
+  arch spell_create_food
+    chance 4
+  more
+  arch spell_counterwall
+    chance 1
+  more
+  arch spell_summon_air_elemental
+    chance 5
+  more
+  arch spell_summon_fire_elemental
+    chance 2
+  more
+  arch spell_build_director
+    chance 1
+end
+treasureone summoner_book_high
+  arch spell_dancing_sword
+    chance 1
+  more
+  arch spell_pentagram
+    chance 1
+end
+treasureone summoner_book
+  list summoner_book_low
+    chance 20
+    nrof 1
+  more
+  list summoner_book_medium
+    chance 30
+    magic 6
+    nrof 1
+  more
+  list summoner_book_high
+    chance 40
+    magic 11
+    nrof 1
+end
+##############################################################
+#
+# Mage Hound
+#
+treasure mage_hound
+  arch dog
+    nrof 1
+    magic 5
+  more
+  arch wolf
+    nrof 1
+    magic 7
+  more
+  arch mastif
+    nrof 1
+    magic 12
+  more
+  arch dire_wolf
+    nrof 1
+    magic 15
+  more
+  arch hellhound
+    nrof 1
+    magic 20
+  more
+  arch dire_wolf_sire
+    nrof 1
+    magic 30
+  more
+  arch s_mastif
+    nrof 1
+    magic 45
+  more
+  arch gr_hellhound
+    nrof 1
+    magic 60
+end
+##############################################################
+#
+# Pet Monsters -
+#
+treasure mage_pet_monster
+  arch bat
+    nrof 2
+    magic 1
+  more
+  arch bird
+    nrof 1
+    magic 3
+  more
+  arch bee
+    nrof 3
+    magic 4
+  more
+  arch spider
+    nrof 1
+    magic 5
+  more
+  arch killer_bee
+    nrof 2
+    magic 6
+  more
+  arch pixie
+    nrof 1
+    magic 7
+  more
+  arch skeleton
+    nrof 2
+    magic 8
+  more
+  arch stalker
+    nrof 1
+    magic 9
+  more
+  arch devil
+    nrof 2
+    magic 11
+  more
+  arch beholder
+    nrof 2
+    magic 13
+  more
+  arch dark_elf
+    nrof 3
+    magic 15
+  more
+  arch skull
+    nrof 1
+    magic 17
+  more
+  arch angel
+    nrof 2
+    magic 20
+  more
+  arch vampire
+    nrof 1
+    magic 25
+end
+##############################################################
+#
+# Summon Dark Angel
+#
+treasure summon_dark_angel
+  arch darkangel
+    nrof 1
+    magic 5
+end
+# This could be really customized a lot further instead
+# of using the default staff/wand lists.  Set this
+# balance simply because there are a lot more mage type spells
+# then priest ones.
+treasureone rod_spell
+  list wand
+    chance 7
+  more
+  list staff
+    chance 3
+end
+treasureone staff
+  arch spell_sunspear
+    nrof 35
+    chance 10
+  more
+  arch spell_turn_undead
+    nrof 40
+    chance 10
+  more
+  arch spell_banishment
+    nrof 3
+    chance 5
+  more
+  arch spell_darkness
+    nrof 10
+    chance 10
+  more
+  arch spell_perceive_self
+    nrof 20
+    chance 5
+  more
+  arch spell_word_of_recall
+    nrof 3
+    chance 5
+  more
+  arch spell_minor_healing
+    nrof 40
+    chance 5
+  more
+  arch spell_medium_healing
+    nrof 12
+    chance 5
+  more
+  arch spell_heal
+    nrof 5
+    chance 5
+  more
+  arch spell_show_invisible
+    nrof 8
+    chance 4
+  more
+  arch spell_cause_flu
+    nrof 5
+    chance 2
+  more
+  arch spell_cause_cold
+    nrof 5
+    chance 2
+end
+treasureone wand
+  arch spell_firebolt
+    nrof 35
+    chance 10
+  more
+  arch spell_frostbolt
+    nrof 30
+    chance 10
+  more
+  arch spell_sm_lightning
+    nrof 40
+    chance 10
+  more
+  arch spell_large_lightning
+    nrof 20
+    chance 10
+  more
+  arch spell_steambolt
+    nrof 10
+    chance 10
+  more
+  arch spell_magic_bullet
+    nrof 99
+    chance 15
+  more
+  arch spell_lg_magic_bullet
+    nrof 33
+    chance 10
+  more
+  arch spell_small_fireball
+    nrof 40
+    chance 15
+  more
+  arch spell_medium_fireball
+    nrof 20
+    chance 10
+  more
+  arch spell_large_fireball
+    nrof 10
+    chance 6
+  more
+  arch spell_small_snowstorm
+    nrof 40
+    chance 15
+  more
+  arch spell_medium_snowstorm
+    nrof 20
+    chance 10
+  more
+  arch spell_large_snowstorm
+    nrof 10
+    chance 5
+  more
+  arch spell_poison_cloud
+    nrof 30
+    chance 10
+  more
+  arch spell_icestorm
+    nrof 15
+    chance 15
+  more
+  arch spell_create_bomb
+    nrof 5
+    chance 5
+  more
+  arch spell_fear
+    nrof 25
+    chance 8
+  more
+  arch spell_slow
+    nrof 30
+    chance 10
+  more
+  arch spell_counterspell
+    nrof 20
+    chance 8
+  more
+  arch spell_wonder
+    nrof 20
+    chance 4
+  more
+  arch spell_burning_hands
+    nrof 20
+    chance 10
+  more
+  arch spell_mass_confusion
+    nrof 15
+    chance 5
+  more
+  arch spell_magic_missile
+    nrof 75
+    chance 10
+  more
+  arch spell_summon_golem
+    nrof 10
+    chance 10
+  more
+  arch spell_summon_fire_elemental
+    nrof 4
+    chance 5
+  more
+  arch spell_summon_fire_elemental
+    nrof 10
+    chance 5
+  more
+  arch spell_summon_water_elemental
+    nrof 8
+    chance 5
+  more
+  arch spell_summon_air_elemental
+    nrof 6
+    chance 5
+  more
+  arch spell_dimension_door
+    nrof 8
+    chance 10
+  more
+  arch spell_magic_mapping
+    nrof 20
+    chance 10
+  more
+  arch spell_create_earth_wall
+    nrof 12
+    chance 8
+  more
+  arch spell_create_pool_of_chaos
+    nrof 10
+    chance 6
+  more
+  arch spell_counterwall
+    nrof 30
+    chance 10
+  more
+  arch spell_probe
+    nrof 40
+    chance 10
+  more
+  arch spell_summon_pet_monster
+    nrof 15
+    chance 10
+  more
+  arch spell_summon_fog
+    nrof 10
+    chance 8
+  more
+  arch spell_cancellation
+    nrof 10
+    chance 3
+  more
+  arch spell_detect_magic
+    nrof 50
+    chance 5
+  more
+  arch spell_ball_lightning
+    nrof 30
+    chance 1
+# Polymorph is disabled by default.
+#  more
+#  arch spell_polymorph
+#    nrof 20
+#    chance 2
+end
+# end of wand
+# this is really used for wonder - need a source of
+# all spells it should cast - currently, just take all
+# that show up in books.  This should probably be reworked
+# to be more selective, so wonder could at least be considered
+# somewhat useful - maybe toss in some spell that are quest items
+# even to make things interesting.
+treasureone wonder_spells
+  list evocation_book
+     chance 5
+  more
+  list sorcery_book
+     chance 5
+  more
+  list pyromancy_book
+     chance 5
+  more
+  list summoner_book
+     chance 5
+end
+treasureone traps
+  list physical_traps
+    chance 50
+  more
+  list magical_traps
+    chance 50
+  end
+treasureone physical_traps
+  arch trap_diseased_needle
+    chance 70
+  more
+  arch trap_blades
+    chance 33
+  more
+  arch trap_needle
+    chance 33
+  more
+  arch trap_spikes2
+    chance 33
+  end
+treasureone magical_traps
+  arch rune_medium_fireball
+  chance 8
+  more
+  arch rune_burning_hands
+  chance 8
+  more
+  arch rune_poison_cloud
+  chance 8
+  more
+  arch rune_create_bomb
+  chance 8
+  more
+  arch rune_paralysis
+  chance 8
+  more
+  arch rune_shock
+  chance 8
+  more
+  arch rune_confusion
+  chance 8
+  more
+  arch rune_icestorm
+  chance 8
+  more
+  arch rune_drain_magic
+  chance 8
+  more
+  arch rune_blast
+  chance 8
+  more
+  arch rune_fire
+  chance 8
+  more
+  arch rune_frost
+  chance 8
+  more
+  list nastier_magical_traps
+  magic 6
+  chance 20
+  end
+treasureone nastier_magical_traps
+  arch rune_summon_air_elemental
+    chance 10  
+  more
+  arch rune_dragonbreath
+    chance 10  
+  more
+  arch rune_large_icestorm
+    chance 10  
+  more
+  arch rune_large_fireball
+    chance 10  
+  more
+  arch rune_ball_lightning
+    chance 10  
+  more
+  arch rune_summon_devil
+    chance 10  
+  more
+  arch rune_summon_earth_elemental
+    chance 10  
+  more
+  arch rune_summon_fire_elemental
+    chance 10  
+  more
+  arch rune_summon_water_elemental
+    chance 10  
+  more
+  arch rune_death
+    chance 10  
+end
+treasure glass_sword
+  arch glass_sword_event_attack
+  end
+treasure arrow_petrify
+  arch event_attack_arrow_petrify
+  more
+  arch event_pickup_arrow_petrify
   end
 #

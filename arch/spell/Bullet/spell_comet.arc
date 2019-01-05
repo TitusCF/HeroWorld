@@ -1,9 +1,8 @@
 Object spell_comet
-anim_suffix spellcasting
 name comet
 name_pl comet
-face spell_comet.111
-level 16
+face spell_pyromancy.111
+level 8
 value 80
 sp 15
 casting_time 10
@@ -23,6 +22,9 @@ invisible 1
 skill pyromancy
 food 10
 msg
-Fires a comet that delivers damage in three forms: physical, fire-based, and weaponmagic.
+The comet spells fires a comet in a specified
+direction.  This comet inflicts serious
+physical harm on whatever it hits, and then
+bursts into fire.
 endmsg
 end

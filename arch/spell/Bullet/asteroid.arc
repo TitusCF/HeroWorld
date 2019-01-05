@@ -1,13 +1,26 @@
 Object asteroid
 other_arch snowstorm
+face asteroid.112
 type 102
 subtype 5
-face asteroid.112
-animation asteroid
-is_animated 0
+anim
+asteroid.112
+asteroid.111
+asteroid.121
+asteroid.131
+asteroid.141
+asteroid.151
+asteroid.161
+asteroid.171
+asteroid.181
+mina
+is_animated 0   
 is_turnable 1
-move_on walk fly_low
-move_type fly_low
+walk_on 1
+fly_on 1
+flying 1
 speed 1
+editable 0
+magicmap grey
 no_pick 1
 end

@@ -1,9 +1,8 @@
 Object spell_hellfire
-anim_suffix spellcasting
 name hellfire
 name_pl hellfire
-face spell_hellfire.111
-level 16
+face spell_pyromancy.111
+level 8
 sp 13
 casting_time 8
 path_attuned 2
@@ -22,6 +21,13 @@ invisible 1
 skill pyromancy
 food 10
 msg
-This spell is similar to a magical fireball. It fires a small bullet of fire, that then explodes into a large area of fire.  Hellfire is non-magical, and can damage magic-immune creatures.
+This spell is related to fireball. It  fires
+a small bullet of fire, that then explodes
+into a large area of fire.  Its main
+difference compared to the traditional
+fireball spell is that this spell is pure
+fire, with no magical elements, which enables
+it to damage creatures that are immune to
+magic.
 endmsg
 end

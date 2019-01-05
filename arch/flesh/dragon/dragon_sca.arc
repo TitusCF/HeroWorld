@@ -25,6 +25,15 @@ weight 25000
 name_pl green dragon scales
 client_type 627
 end
+Object grey_dragon_scale
+name grey dragon scale
+nrof 1
+type 73
+face dragon_grey_scale.111
+weight 25000
+name_pl grey dragon scales
+client_type 627
+end
 Object black_dragon_scale
 name black dragon scale
 nrof 1

@@ -1,0 +1,53 @@
+#############################################################
+# Hanuk - Followers of the Dark Angel
+treasure Hanuk
+  arch hanuk_avatar_info
+  more
+  arch hanuk_holy_servant_info
+  more
+  arch god_restore_grace
+  more
+  arch hanuk_general_info
+    chance 10
+  more
+arch god_grace_limit_medium
+more
+  arch spell_nightfall
+  	chance 80
+  more
+  arch spell_create_blackfire_wall
+  	chance 70
+  more
+  arch spell_small_blackfireball
+  	chance 60
+  more
+  arch spell_medium_blackfireball
+  	chance 50
+  more
+arch god_grace_limit_high
+more
+  arch spell_large_blackfireball
+    chance 10
+  more
+  arch spell_flame_of_the_ifrit
+    chance 5
+  more
+  list hanuk_treasure
+     chance 10
+end
+treasure hanuk_treasure
+   arch heart_hanuk_str
+     chance 25
+     more
+   arch heart_hanuk_pow
+     chance 25
+     more
+   arch heart_hanuk_fire
+     chance 20
+     more
+   arch heart_hanuk_cold
+     chance 20
+     more
+   arch heart_hanuk_chaos
+     chance 10
+end

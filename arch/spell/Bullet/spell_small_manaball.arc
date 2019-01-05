@@ -1,9 +1,8 @@
 Object spell_small_manaball
-anim_suffix spellcasting
 name small manaball
 name_pl small manaball
-face spell_small_manaball.111
-level 4
+face spell_evocation.111
+level 2
 sp 12
 casting_time 9
 path_attuned 32768
@@ -21,7 +20,4 @@ no_drop 1
 invisible 1
 skill evocation
 food 15
-msg
-Fires a ball of magical energy that explodes in a small burst of magical energy when it hits something.  Few creatures can resist magical attacks.
-endmsg
 end

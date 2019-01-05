@@ -1,9 +1,8 @@
 Object spell_asteroid
-anim_suffix spellcasting
 name asteroid
 name_pl asteroid
-face spell_asteroid.111
-level 16
+face spell_evocation.111
+level 8
 value 80
 sp 15
 casting_time 10
@@ -23,6 +22,6 @@ invisible 1
 skill evocation
 food 10
 msg
-Fires an asteroid bullet that delivers a weaponmagic attack.
+Info.
 endmsg
 end

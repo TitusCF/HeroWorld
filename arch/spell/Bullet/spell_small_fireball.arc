@@ -1,8 +1,7 @@
 Object spell_small_fireball
-anim_suffix spellcasting
 name small fireball
 name_pl small fireball
-face spell_small_fireball.111
+face spell_pyromancy.111
 level 1
 sp 6
 casting_time 5
@@ -21,7 +20,4 @@ no_drop 1
 invisible 1
 skill pyromancy
 food 4
-msg
-Fires a bullet that explodes into a small fire storm when it hits something. Items caught in the blaze may be destroyed.
-endmsg
 end

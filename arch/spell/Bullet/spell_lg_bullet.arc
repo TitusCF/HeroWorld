@@ -1,9 +1,8 @@
 Object spell_lg_magic_bullet
-anim_suffix spellcasting
 name large bullet
 name_pl large bullet
-face spell_lg_magic_bullet.111
-level 8
+face spell_evocation.111
+level 4
 sp 3
 casting_time 6
 path_attuned 16
@@ -18,7 +17,4 @@ value 40
 attacktype 2
 no_drop 1
 invisible 1
-msg
-Fires a magical bullet that travels in one direction until striking something.
-endmsg
 end

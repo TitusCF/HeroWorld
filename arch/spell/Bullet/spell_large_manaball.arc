@@ -1,9 +1,8 @@
 Object spell_large_manaball
-anim_suffix spellcasting
 name large manaball
 name_pl large manaball
-face spell_large_manaball.111
-level 12
+face spell_evocation.111
+level 6
 sp 32
 casting_time 9
 path_attuned 32768
@@ -22,6 +21,11 @@ invisible 1
 skill evocation
 food 15
 msg
-Fires a ball of magical energy that explodes in a large burst of magical energy when it hits something.  Few creatures can resist magical attacks.
+Manaball fires a small bullet of magical
+energy, that then explodes when it hits
+something into a burst of magical energy.
+The great advantage of using pure magical
+energy is that few creatures are resistant to
+it.
 endmsg
 end

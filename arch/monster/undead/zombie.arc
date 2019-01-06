@@ -2,9 +2,14 @@ Object zombie
 race undead
 face zombie.111
 randomitems zombie
-animation zombie
+anim
+zombie.111
+zombie.112
+zombie.113
+zombie.112
+mina
+color_fg grey
 monster 1
-move_type walk
 sleep 1
 Wis 10
 undead 1
@@ -15,12 +20,13 @@ wc 8
 dam 5
 hp 35
 maxhp 35
-level 3
-speed -0.1
-exp 30
+level 4
+speed -0.05
+exp 60
 weight 15000
 attacktype 1
 resist_cold 50
 resist_fear 100
 can_see_in_dark 1
+editable 1
 end

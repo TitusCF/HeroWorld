@@ -1,9 +1,8 @@
 Object spell_spiderweb
-anim_suffix spellcasting
 name spiderweb
 name_pl spiderweb
-face spell_spiderweb.111
-level 8
+face spell_praying.111
+level 4
 grace 10
 casting_time 10
 path_attuned 2048
@@ -21,7 +20,4 @@ attacktype 0
 no_drop 1
 invisible 1
 skill praying
-msg
-Fires a cone of cobwebs that can nearly immobilize any creatures caught in it. Gaea grants this to her worshippers.
-endmsg
 end

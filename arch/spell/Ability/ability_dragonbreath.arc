@@ -1,10 +1,8 @@
 # Basically same as the spell, but does a little less damage.
 #
 Object ability_dragonbreath
-anim_suffix spellcasting
 name dragonbreath ability
 name_pl dragonbreath ability
-face spell_dragonbreath.111
 level 12
 sp 13
 casting_time 5

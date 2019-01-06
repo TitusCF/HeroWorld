@@ -1,9 +1,8 @@
 Object spell_negabolt
-anim_suffix spellcasting
 name negative energy bolt
 name_pl negative energy bolts
 face spell_evocation.111
-level 8
+level 4
 sp 13
 casting_time 6
 path_attuned 8
@@ -21,6 +20,8 @@ range 24
 no_drop 1
 invisible 1
 msg
-Fires a negative energy bolt that hits creatures and drains them of experience and also hits them with a cold attack.
+The negative energe bolt hits creatures,
+draining them of experience and also
+hitting them with a cold attack.
 endmsg
 end

@@ -9,6 +9,8 @@ type 104
 Dex 2
 value 65000
 weight 3000
+editable 5120
+magicmap grey
 body_wrist -2
 item_power 2
 end

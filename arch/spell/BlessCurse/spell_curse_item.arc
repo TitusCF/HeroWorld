@@ -1,5 +1,4 @@
 Object spell_curse_item
-anim_suffix spellcasting
 name curse item
 name_pl curse item
 face spell_praying.111
@@ -16,6 +15,8 @@ invisible 1
 cursed 1
 maxgrace 30
 msg
-This spell concentrates, with some help of your god, your hate against something to curse the item, and leave you only your love for your god.
+This spell concentrates, with some help of
+your god, your hate against something to curse
+the item, and leave you only your love for your god.
 endmsg
 end

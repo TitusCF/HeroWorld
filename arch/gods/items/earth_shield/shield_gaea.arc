@@ -1,14 +1,22 @@
 Object shield_gaea
 name Gaea's Shield of Earth
 face earth_shield.111
-animation shield_gaea
+anim
+earth_shield.111
+earth_shield.112
+earth_shield.113
+earth_shield.114
+earth_shield.113
+earth_shield.112
+mina
 msg
-  This shield is highly enchanted by the forces of life and nature. It is a personal gift from Gaea, to protect her beloved children.
+  This shield is highly enchanted by the forces
+  of life and nature. It is a personal gift from
+  Gaea, to protect her beloved children.
 endmsg
 is_animated 1
 ac 4
-anim_speed 5
-client_anim_random 1
+speed 0.2
 nrof 1
 startequip 1
 type 33

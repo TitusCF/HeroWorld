@@ -2,7 +2,6 @@
 # by spell_poison_cloud. Nevertheless it cannot be deleted because existing
 # players may contain such an object.
 Object spelldirect_poison_cloud
-anim_suffix spellcasting
 name poison cloud
 name_pl poison cloud
 face spell_sorcery.111
@@ -24,4 +23,4 @@ no_drop 1
 invisible 1
 skill sorcery
 food 5
-end
+end 

@@ -3,9 +3,10 @@ name high mountains
 face mountain2.111
 type 67
 race /terrain/mountain
-move_on walk
+walk_on 1
+color_fg white
 no_pick 1
-move_slow walk
-move_slow_penalty 10
+slow_move 10
 blocksview 1
+editable 8
 end

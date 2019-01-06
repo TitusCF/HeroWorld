@@ -140,3 +140,4 @@ editable 8
 visibility 100
 magicmap blue
 end
+

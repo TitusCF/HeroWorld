@@ -5,13 +5,21 @@ Object god_power
 name godly retribution
 type 102
 subtype 6
-face god_power.111
-animation god_power
+face destruction.111
+anim
+destruction.111
+destruction.112
+destruction.113
+destruction.114
+destruction.113
+destruction.114
+mina
 speed 1
 range 4
 duration 4
-move_type fly_low
+flying 1
 wc -30
 no_pick 1
 attacktype 1048576
+editable 0
 end

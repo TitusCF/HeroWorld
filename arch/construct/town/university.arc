@@ -3,6 +3,7 @@ name university
 face university.x11
 type 66
 no_pick 1
+editable 2
 client_type 25012
 end
 More
@@ -19,6 +20,7 @@ name university
 face university.x11
 type 66
 no_pick 1
+visibility 100
 x 2
 end
 More
@@ -27,6 +29,7 @@ name university
 face university.x11
 type 66
 no_pick 1
+visibility 100
 x 3
 end
 More
@@ -35,6 +38,7 @@ name university
 face university.x11
 type 66
 no_pick 1
+visibility 100
 x 4
 end
 More
@@ -43,6 +47,7 @@ name university
 face university.x11
 type 66
 no_pick 1
+visibility 100
 y 1
 end
 More
@@ -51,6 +56,7 @@ name university
 face university.x11
 type 66
 no_pick 1
+visibility 100
 x 1
 y 1
 end
@@ -60,6 +66,7 @@ name university
 face university.x11
 type 66
 no_pick 1
+visibility 100
 x 2
 y 1
 end
@@ -69,6 +76,7 @@ name university
 face university.x11
 type 66
 no_pick 1
+visibility 100
 x 3
 y 1
 end
@@ -78,6 +86,7 @@ name university
 face university.x11
 type 66
 no_pick 1
+visibility 100
 x 4
 y 1
 end
@@ -87,6 +96,7 @@ name university
 face university.x11
 type 66
 no_pick 1
+visibility 100
 y 2
 end
 More
@@ -95,6 +105,7 @@ name university
 face university.x11
 type 66
 no_pick 1
+visibility 100
 x 1
 y 2
 end
@@ -104,6 +115,7 @@ name university
 face university.x11
 type 66
 no_pick 1
+visibility 100
 x 2
 y 2
 end
@@ -113,6 +125,7 @@ name university
 face university.x11
 type 66
 no_pick 1
+visibility 100
 x 3
 y 2
 end
@@ -122,6 +135,7 @@ name university
 face university.x11
 type 66
 no_pick 1
+visibility 100
 x 4
 y 2
 end
@@ -131,6 +145,7 @@ name university
 face university.x11
 type 66
 no_pick 1
+visibility 100
 y 3
 end
 More
@@ -139,6 +154,7 @@ name university
 face university.x11
 type 66
 no_pick 1
+visibility 100
 x 1
 y 3
 end
@@ -148,6 +164,7 @@ name university
 face university.x11
 type 66
 no_pick 1
+visibility 100
 x 2
 y 3
 end
@@ -157,6 +174,7 @@ name university
 face university.x11
 type 66
 no_pick 1
+visibility 100
 x 3
 y 3
 end
@@ -166,6 +184,7 @@ name university
 face university.x11
 type 66
 no_pick 1
+visibility 100
 x 4
 y 3
 end

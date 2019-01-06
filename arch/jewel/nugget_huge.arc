@@ -6,8 +6,10 @@ nrof 1
 material 2
 materialname gold
 type 73
-value 700000000
+color_fg orange
+value 177777
 weight 700000000
+editable 2048
 name_pl huge gold nuggets
 client_type 2005
 end

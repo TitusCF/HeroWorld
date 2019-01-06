@@ -18,7 +18,8 @@ ac 3
 last_eat 0
 exp 10000
 msg
-You start gibbering incoherently.  You forget where you are and what you were doing.
+You start gibbering incoherently.  You 
+forget where you are and what you were doing.
 endmsg
 race *
 level 15

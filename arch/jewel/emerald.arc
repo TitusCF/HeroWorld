@@ -2,13 +2,18 @@ Object emerald
 face emerald.111
 race gold and jewels
 type 60
-animation emerald
+anim
+emerald.111
+emerald.112
+mina
+color_fg green
 nrof 1
-anim_speed 10
-client_anim_random 1
+speed -0.1
 value 160
+need_an 1
 weight 50
-identified 1
+editable 2048
+identified 0
 name_pl emeralds
 client_type 2011
 end

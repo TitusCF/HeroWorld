@@ -9,6 +9,7 @@ subtype 31
 invisible 1
 attacktype 4
 no_drop 1
+editable 0
 skill clawing
 animation pl_dragon_r
 end
@@ -24,6 +25,7 @@ subtype 31
 invisible 1
 attacktype 16
 no_drop 1
+editable 0
 skill clawing
 animation pl_dragon_bl
 end
@@ -40,6 +42,7 @@ skill clawing
 invisible 1
 attacktype 8
 no_drop 1
+editable 0
 animation pl_dragon_blue
 end
 #
@@ -56,6 +59,7 @@ invisible 1
 attacktype 1024
 no_drop 1
 animation pl_dragon_g
+editable 0
 end
 
 

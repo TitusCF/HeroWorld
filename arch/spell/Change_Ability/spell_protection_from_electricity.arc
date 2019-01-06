@@ -1,10 +1,8 @@
 Object spell_protection_from_electricity
-anim_suffix spellcasting
 name protection from electricity
 name_pl protection from electricity
-face spell_protection_from_electricity.111
-other_arch protection_electricity_effect
-level 3
+face spell_praying.111
+level 4
 grace 15
 casting_time 10
 path_attuned 1
@@ -19,7 +17,4 @@ duration 500
 maxgrace 40
 resist_electricity 30
 dam_modifier 3
-msg
-Improves the caster's protection against electrical attacks.
-endmsg
 end

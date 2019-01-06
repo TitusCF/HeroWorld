@@ -1,4 +1,4 @@
-Object attache
+object attache
 name attache case
 other_arch close_attache
 race scrolls
@@ -10,12 +10,14 @@ weight 900
 container 14000
 Str 10
 identified 1
+editable 128
 end
-Object close_attache
+object close_attache
 name close the attache case
 face close_attache.111
 type 121
 no_drop 1
 no_pick 1
 identified 1
+editable 0
 end

@@ -8,6 +8,7 @@ material 18
 dam 14
 weight 29500
 value 485
+editable 1024
 attacktype 1
 weapontype 1
 name_pl scythes

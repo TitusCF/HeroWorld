@@ -1,13 +1,18 @@
 Object slotmachine3
 name slotmachine
-slaying goldcoin
+slaying neverusethisarch
 food 1
 type 31
 exp 30
 face slotmachine3.111
-animation slotmachine3
+anim
+slotmachine3.111
+slotmachine3.112
+mina
 is_animated 0
 no_pick 1
-move_on walk
+walk_on 1
+editable 48
+visibility 50
 client_type 25041
 end

@@ -1,21 +1,25 @@
 Object kobold
 face kobold.111
 race goblin
-animation kobold
+anim
+kobold.111
+kobold.112
+mina
 monster 1
-move_type walk
 sleep 1
 Wis 8
 no_pick 1
 alive 1
-exp 2
-ac 9
-wc 21
+exp 5
+ac 18
+wc 27
 dam 2
-hp 10
-maxhp 10
+hp 2
+maxhp 2
 level 1
 speed 0.2
 weight 30000
 run_away 90
+editable 1
+magicmap brown
 end

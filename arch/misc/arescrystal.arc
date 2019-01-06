@@ -6,7 +6,7 @@ material 0
 materialname crystal
 editable 8
 visibility 100
-magicmap red
+magicmap magenta
 end
 
 Object arescrystal2
@@ -17,7 +17,7 @@ material 0
 materialname crystal
 editable 8
 visibility 100
-magicmap red
+magicmap magenta
 end
 
 Object arescrystal3
@@ -28,7 +28,7 @@ material 0
 materialname crystal
 editable 8
 visibility 100
-magicmap red
+magicmap magenta
 end
 
 Object arescrystal4
@@ -39,7 +39,7 @@ material 0
 materialname crystal
 editable 8
 visibility 100
-magicmap red
+magicmap magenta
 end
 
 Object arescrystal5
@@ -50,7 +50,7 @@ material 0
 materialname crystal
 editable 8
 visibility 100
-magicmap red
+magicmap magenta
 end
 
 Object arescrystal6
@@ -61,7 +61,7 @@ material 0
 materialname crystal
 editable 8
 visibility 100
-magicmap red
+magicmap magenta
 end
 
 Object arescrystal7
@@ -72,7 +72,7 @@ material 0
 materialname crystal
 editable 8
 visibility 100
-magicmap red
+magicmap magenta
 end
 
 Object arescrystal8
@@ -83,7 +83,7 @@ material 0
 materialname crystal
 editable 8
 visibility 100
-magicmap red
+magicmap magenta
 end
 
 Object arescrystal9
@@ -94,7 +94,7 @@ material 0
 materialname crystal
 editable 8
 visibility 100
-magicmap red
+magicmap magenta
 end
 
 Object arescrystal10
@@ -105,7 +105,7 @@ material 0
 materialname crystal
 editable 8
 visibility 100
-magicmap red
+magicmap magenta
 end
 
 Object arescrystal11
@@ -116,7 +116,7 @@ material 0
 materialname crystal
 editable 8
 visibility 100
-magicmap red
+magicmap magenta
 end
 
 Object arescrystal12
@@ -127,7 +127,7 @@ material 0
 materialname crystal
 editable 8
 visibility 100
-magicmap red
+magicmap magenta
 end
 
 Object arescrystal13
@@ -138,6 +138,6 @@ material 0
 materialname crystal
 editable 8
 visibility 100
-magicmap red
+magicmap magenta
 end
 

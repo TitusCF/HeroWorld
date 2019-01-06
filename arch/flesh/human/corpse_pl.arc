@@ -1,5 +1,6 @@
 Object corpse_pl
 face corpse1.111
+color_fg blue
 nrof 1
 type 157
 material 32
@@ -23,6 +24,7 @@ resist_cancellation 100
 resist_deplete 100
 resist_death 100
 
+editable 2048
 name_pl corpse_pls
 client_type 622
 end

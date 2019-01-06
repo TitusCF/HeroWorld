@@ -1,11 +1,23 @@
 Object fogexit
-name mysterious fog
+name mysterous fog
 face fog.111
-anim_speed 5
-client_anim_random 1
+speed 0.2
 type 66
 no_pick 1
-animation fogexit
-move_on walk fly_low
+anim
+fog.111
+blank.111
+fog.111
+fog.112
+fog.111
+fog.112
+fog.111
+blank.111
+blank.111
+mina
+walk_on 1
+fly_on 1
+editable 2
+visibility 100
 client_type 25012
 end

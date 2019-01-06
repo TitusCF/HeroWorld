@@ -17,7 +17,8 @@ ac 1
 last_eat 0
 exp 10000
 msg
-Your joints are swollen.  You feel weak and less dextrous.
+Your joints are swollen.  You feel weak and
+less dextrous.
 endmsg
 race *
 level 7

@@ -3,11 +3,20 @@ name ancient red dragon
 race dragon
 randomitems dragon
 monster 1
-move_type walk
 sleep 1
 Wis 20
 face dragon_ac.x71
-animation big_dragon_ancient
+anim
+facings 2
+dragon_ac.x71
+dragon_ac.x72
+dragon_ac.x73
+dragon_ac.x74
+dragon_ac.x31
+dragon_ac.x32
+dragon_ac.x33
+dragon_ac.x34
+mina
 level 26
 Con 11
 Pow 26
@@ -26,7 +35,7 @@ resist_blind 100
 resist_cold -50
 resist_confusion -100
 resist_paralyze 80
-ac -8
+ac -16
 wc -25
 dam 40
 attacktype 5
@@ -37,61 +46,113 @@ no_pick 1
 speed -0.5
 weight 400000
 run_away 3
+editable 1
+magicmap red
 end
 More
 Object big_dragon_ancient2
 name dragon
 face dragon_ac.x71
-animation big_dragon_ancient
+anim
+facings 2
+dragon_ac.x71
+dragon_ac.x72
+dragon_ac.x73
+dragon_ac.x74
+dragon_ac.x31
+dragon_ac.x32
+dragon_ac.x33
+dragon_ac.x34
+mina
 monster 1
-move_type walk
 alive 1
 x 1
 weight 4000000
+magicmap red
 end
 More
 Object big_dragon_ancient3
 name dragon
 face dragon_ac.x71
-animation big_dragon_ancient
+anim
+facings 2
+dragon_ac.x71
+dragon_ac.x72
+dragon_ac.x73
+dragon_ac.x74
+dragon_ac.x31
+dragon_ac.x32
+dragon_ac.x33
+dragon_ac.x34
+mina
 monster 1
-move_type walk
 alive 1
 x 2
 weight 4000000
+magicmap red
 end
 More
 Object big_dragon_ancient4
 name dragon
 face dragon_ac.x71
-animation big_dragon_ancient
+anim
+facings 2
+dragon_ac.x71
+dragon_ac.x72
+dragon_ac.x73
+dragon_ac.x74
+dragon_ac.x31
+dragon_ac.x32
+dragon_ac.x33
+dragon_ac.x34
+mina
 monster 1
-move_type walk
 alive 1
 y 1
 weight 4000000
+magicmap red
 end
 More
 Object big_dragon_ancient5
 name dragon
 face dragon_ac.x71
-animation big_dragon_ancient
+anim
+facings 2
+dragon_ac.x71
+dragon_ac.x72
+dragon_ac.x73
+dragon_ac.x74
+dragon_ac.x31
+dragon_ac.x32
+dragon_ac.x33
+dragon_ac.x34
+mina
 monster 1
-move_type walk
 alive 1
 x 1
 y 1
 weight 4000000
+magicmap red
 end
 More
 Object big_dragon_ancient6
 name dragon
 face dragon_ac.x71
-animation big_dragon_ancient
+anim
+facings 2
+dragon_ac.x71
+dragon_ac.x72
+dragon_ac.x73
+dragon_ac.x74
+dragon_ac.x31
+dragon_ac.x32
+dragon_ac.x33
+dragon_ac.x34
+mina
 monster 1
-move_type walk
 alive 1
 x 2
 y 1
 weight 4000000
+magicmap red
 end

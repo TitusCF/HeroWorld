@@ -18,4 +18,5 @@ type 121
 no_pick 1
 no_drop 1
 identified 1
+magicmap khaki
 end

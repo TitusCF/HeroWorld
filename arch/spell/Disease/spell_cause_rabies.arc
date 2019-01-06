@@ -1,11 +1,10 @@
 Object spell_cause_rabies
-anim_suffix spellcasting
 name cause rabies
 name_pl cause rabies
-face spell_cause_rabies.111
+face spell_praying.111
 type 101
 subtype 45
-level 24
+level 12
 value 120
 grace 120
 casting_time 10
@@ -16,10 +15,7 @@ range 5
 range_modifier 10
 dam_modifier 1
 duration_modifier 1
-maxgrace 18
+maxgrace 12
 no_drop 1
 invisible 1
-msg
-Causes the disease of rabies.  The spell is granted by Gnarg.
-endmsg
 end

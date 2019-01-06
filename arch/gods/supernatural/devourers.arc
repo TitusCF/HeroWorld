@@ -7,7 +7,6 @@ race undead
 animation grimreaper
 is_animated 1
 monster 1
-move_type walk
 alive 1
 Str 30
 Con 30
@@ -43,9 +42,11 @@ can_use_shield 1
 undead 1
 can_see_in_dark 1
 msg
-Soul Eaters, Harbingers of Death, Nameless Lords of the Tomb
+Soul Eaters, Harbingers of Death, Nameless 
+Lords of the Tomb
 endmsg
 exp 1
 weight 1
 randomitems Devourers
+editable 0
 end

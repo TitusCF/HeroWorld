@@ -1,8 +1,7 @@
 Object spell_rune_of_death
-anim_suffix spellcasting
 name rune of death
 name_pl rune of death
-face spell_rune_of_death.111
+face spell_sorcery.111
 type 101
 subtype 2
 no_drop 1
@@ -15,6 +14,10 @@ skill sorcery
 path_attuned 262144
 other_arch rune_death
 msg
-Creates a rune that, when triggered, hits the target with death magic that either results in the death of the creature, with no respect to its hit points, or, does no harm at all.
+This creates a rune that, when triggered,
+hits the target with death magic.  This
+either results in the death of the creature,
+no matter the creatures hit points, or no
+harm at all.
 endmsg
 end

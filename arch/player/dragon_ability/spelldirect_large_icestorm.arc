@@ -2,7 +2,6 @@
 # by spell_large_icestorm. Nevertheless it cannot be deleted because existing
 # players may contain such an object.
 Object spelldirect_large_icestorm
-anim_suffix spellcasting
 name large icestorm
 name_pl large icestorm
 face spell_evocation.111
@@ -24,4 +23,4 @@ attacktype 18
 no_drop 1
 invisible 1
 skill evocation
-end
+end 

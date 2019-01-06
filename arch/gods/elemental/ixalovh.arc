@@ -4,7 +4,10 @@ title Ruggilli
 race chaotic_water_creatures
 slaying consuming_fire_creatures
 face witch_water.111
-animation Ixalovh
+anim
+witch_water.111
+witch_water.112
+mina
 is_animated 1
 Str 30
 Con 30
@@ -13,7 +16,6 @@ Int 30
 Wis 30
 Pow 30
 monster 1
-move_type walk
 alive 1
 type 50
 attacktype 17

@@ -7,7 +7,9 @@ subtype 7
 face flowers.111
 material 32
 speed 0.5
-move_type fly_low
+flying 1
+weight 20
 nrof 1
-weight 500
+editable 0
+color_fg green
 end

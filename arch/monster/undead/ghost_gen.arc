@@ -1,9 +1,10 @@
 Object generate_ghost
 race undead
 other_arch ghost
-name ghost generator
+name generator
 generator 1
 face ghost_gen.111
+color_fg red
 speed 0.01
 exp 70
 alive 1
@@ -13,6 +14,6 @@ ac 5
 maxsp 1
 weight 25000
 resist_cold 50
+editable 1
 undead 1
-generator_limit 5
 end

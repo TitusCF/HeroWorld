@@ -48,3 +48,33 @@ subtype 1
 face mblightmagentamarble.111
 slaying lightmagentamarble
 end
+Object building_cyanmarble
+name Cyan Marble floor material
+nrof 1
+weight 1500
+value 62500
+type 161
+subtype 1
+face mbcyanmarble.111
+slaying cyanmarble
+end
+Object building_redmarble
+name Red Marble floor material
+nrof 1
+weight 1500
+value 55000
+type 161
+subtype 1
+face mbredmarble.111
+slaying redmarble
+end
+Object building_graymarble
+name Gray Marble floor material
+nrof 1
+weight 1500
+value 43040
+type 161
+subtype 1
+face mbgraymarble.111
+slaying graymarble
+end

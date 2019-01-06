@@ -2,9 +2,14 @@ Object wight
 race undead
 face wight.111
 randomitems wight
-animation wight
+anim
+wight.111
+wight.112
+wight.113
+wight.114
+mina
+color_fg green
 monster 1
-move_type walk
 sleep 1
 Wis 10
 undead 1
@@ -13,15 +18,16 @@ alive 1
 ac 6
 wc 13
 dam 5
-hp 65
-maxhp 65
-level 3
+hp 75
+maxhp 75
+level 5
 speed .10
-exp 35
+exp 75
 weight 15000
 attacktype 16385
 can_see_in_dark 1
 resist_electricity 50
 resist_cold 100
 resist_fear 100
+editable 1
 end

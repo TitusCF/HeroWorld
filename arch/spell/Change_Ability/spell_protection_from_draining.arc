@@ -1,9 +1,8 @@
 Object spell_protection_from_draining
-anim_suffix spellcasting
 name protection from draining
 name_pl protection from draining
-face spell_protection_from_draining.111
-level 8
+face spell_praying.111
+level 9
 grace 25
 casting_time 10
 path_attuned 1
@@ -19,6 +18,10 @@ maxgrace 40
 resist_drain 35
 dam_modifier 3
 msg
-Protection from draining reduces the experience loss when the character is hit with a draining attack.  The character will still lose some experience, but not as much.
+Protection from draining reduces the
+experience loss when the character is hit
+with a draining attack.  The character will
+still lose some experience, but not as much
+as if they do not have the spell cast.
 endmsg
 end

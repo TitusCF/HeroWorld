@@ -2,9 +2,18 @@ Object s_mastif
 name shadow mastif
 face s_mastif.131
 race shadow
-animation s_mastif
+anim
+facings 2
+s_mastif.131
+s_mastif.132
+s_mastif.133
+s_mastif.132
+s_mastif.171
+s_mastif.172
+s_mastif.173
+s_mastif.172
+mina
 monster 1
-move_type walk
 sleep 1
 Wis 20
 alive 1
@@ -13,7 +22,7 @@ maxhp 600
 Con 20
 speed -0.4
 exp 20000
-ac -10
+ac -20
 dam 13
 wc -15
 level 25
@@ -31,6 +40,8 @@ resist_deplete 100
 resist_blind 100
 attacktype 32912
 weight 1000
+editable 1
 run_away 5
 attack_movement 3
+color_fg black
 end

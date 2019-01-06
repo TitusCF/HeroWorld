@@ -2,6 +2,7 @@ Object university
 face university.111
 type 66
 no_pick 1
+editable 2
 end
 More
 Object university_2
@@ -41,9 +42,9 @@ is_floor 1
 end
 More
 Object university_6
-name university
+name university 
 face university.611
-type 66
+type 66  
 no_pick 1
 x 2
 y 1

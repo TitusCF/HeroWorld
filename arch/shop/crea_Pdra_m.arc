@@ -5,7 +5,9 @@ type 103
 other_arch Pdragon_mail
 slaying dragon_scale
 food 60
-sp 1
 no_pick 1
-move_on walk
+walk_on 1
+editable 64
+visibility 100
+color_fg black
 end

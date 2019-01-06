@@ -5,7 +5,8 @@ type 103
 other_arch mithril_ar_ele
 slaying mithril
 food 500
-sp 1
 no_pick 1
-move_on walk
+walk_on 1
+editable 64
+visibility 100
 end

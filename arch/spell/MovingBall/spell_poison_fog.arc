@@ -1,11 +1,10 @@
 Object spell_poison_fog
-anim_suffix spellcasting
 name poison fog
 name_pl poison fog
-face spell_poison_fog.111
+face spell_praying.111
 type 101
 subtype 35
-level 10
+level 5
 value 50
 grace 15
 casting_time 10
@@ -16,11 +15,8 @@ dam 10
 dam_modifier 5
 duration 5
 duration_modifier 4
-maxgrace 20
+maxgrace 10
 attacktype 1024
 no_drop 1
 invisible 1
-msg
-Creates a moving ball of poisonous vapor that pursues and poisons the caster's enemies.  The spell is granted by Gnarg.
-endmsg
 end

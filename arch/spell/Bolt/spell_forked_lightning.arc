@@ -1,9 +1,8 @@
 Object spell_forked_lightning
-anim_suffix spellcasting
 name forked lightning
 name_pl forked lightnings
-face spell_forked_lightning.111
-level 8
+face spell_praying.111
+level 5
 grace 15
 maxgrace 24
 casting_time 10
@@ -22,7 +21,4 @@ attacktype 10
 range 24
 no_drop 1
 invisible 1
-msg
-Fires a lightning bolt that forks into multiple smaller bolts that can cover a somewhat cone-shaped area.  It reflects off of walls, so can fill a small dungeon with a devastating effect, and is granted by Sorig.
-endmsg
 end

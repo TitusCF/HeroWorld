@@ -1,9 +1,8 @@
 Object spell_charisma
-anim_suffix spellcasting
 name charisma
 name_pl charisma
-face spell_charisma.111
-level 6
+face spell_sorcery.111
+level 3
 sp 12
 casting_time 20
 path_attuned 32
@@ -16,7 +15,4 @@ invisible 1
 duration_modifier 4
 duration 500
 Cha 1
-msg
-May increase the caster's Charisma stat temporarily. The magnitude of the effect depends on the caster's current Charisma stat and sorcery skill level.
-endmsg
 end

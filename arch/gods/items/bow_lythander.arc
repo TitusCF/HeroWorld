@@ -5,7 +5,9 @@ client_type 150
 race arrows
 face elven_bow.111
 msg
-  You look at this wonderful bow with pride. It is only granted to the best of Lythander's disciples.
+  You look at this wonderful bow with
+  pride. It is only granted to the best
+  of Lythander's disciples.
 endmsg
 luck 1
 sp 70

@@ -6,7 +6,10 @@ alive 1
 level 1
 no_pick 1
 face acid_pool.111
-animation acid_pool
+anim
+acid_pool.111
+acid_pool.112
+mina
 other_arch acid_sphere
 hp 100
 maxhp 100
@@ -17,5 +20,6 @@ resist_blind 100
 speed 0.01
 anim_speed 10
 weight 750000
-generator_limit 5
+editable 1
+magicmap green
 end

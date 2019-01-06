@@ -8,12 +8,17 @@ speed 1
 msg
 You detonate a Rune of Ball Lightning
 endmsg
-animation rune_ball_lightning
+anim
+rune_blightning.111
+rune_blightning.111
+mina
+color_fg yellow
 level 1
 is_animated 0
 invisible 1
 no_pick 1
-move_on walk
+walk_on 1
+editable 32
 attacktype 10
 dam 1
 Cha 20

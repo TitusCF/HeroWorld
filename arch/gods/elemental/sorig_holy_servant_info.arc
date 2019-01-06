@@ -3,4 +3,5 @@ type 8
 invisible 1
 name holy servant
 other_arch para_lightning
+editable 0
 end

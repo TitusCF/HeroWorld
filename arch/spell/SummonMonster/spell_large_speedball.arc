@@ -1,8 +1,7 @@
 Object spell_large_speedball
-anim_suffix spellcasting
 name large speedball
 name_pl large speedball
-face spell_large_speedball.111
+face spell_evocation.111
 type 101
 subtype 27
 level 6
@@ -16,6 +15,10 @@ no_drop 1
 invisible 1
 monster 1
 msg
-Creates a large bundle of magical energy that hunts down enemies to hit.  The target is damaged and slowed when hit, then the speedball dissipates.
+Speedballs are bundles of magical energy that
+hunt out enemies to hit.  They do a small
+amount of damage and slow the creatures they
+strike.  After speedballs hit a creature,
+they dissipate.
 endmsg
 end

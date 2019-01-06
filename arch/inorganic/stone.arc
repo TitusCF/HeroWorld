@@ -6,6 +6,8 @@ value 1
 resist_acid 100
 type 73
 weight 800
+editable 2048
+magicmap green
 nrof 1
 name_pl river stones
 client_type 641
@@ -18,6 +20,7 @@ value 1
 resist_acid 100
 type 73
 weight 800
+editable 2048
 nrof 1
 name_pl mountain stones
 client_type 641
@@ -30,6 +33,7 @@ value 1
 resist_acid 100
 type 73
 weight 800
+editable 2048
 nrof 1
 name_pl stones
 client_type 641

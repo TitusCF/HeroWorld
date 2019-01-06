@@ -8,8 +8,10 @@ materialname bronze
 dam 1
 weight 2000
 value 10
+editable 1024
 attacktype 1
 weapontype 2
+magicmap grey
 name dagger
 name_pl daggers
 client_type 101

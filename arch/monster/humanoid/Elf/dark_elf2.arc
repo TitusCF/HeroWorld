@@ -3,17 +3,22 @@ race faerie
 name dark elf captain
 randomitems dark_elf
 face dark_elf2.131
-animation dark_elf2
+anim
+facings 2
+dark_elf2.131
+dark_elf2.132
+dark_elf2.171
+dark_elf2.172
+mina
 monster 1
-move_type walk
 sleep 1
 Wis 25
 no_pick 1
 alive 1
-exp 75
-ac 8
-wc 16
-dam 6
+exp 40
+ac 1
+wc 1
+dam 8
 Pow 2
 Int 15
 Str 13
@@ -22,21 +27,25 @@ maxsp 40
 can_cast_spell 1
 hp 40
 maxhp 40
-level 4
+level 18
 speed 0.5
 weight 50000
 pick_up 24
 will_apply 2
+can_apply 24
 run_away 30
 can_use_scroll 1
 can_use_skill 1
-can_use_range 1
+can_use_wand 1
+can_use_rod 1
 can_use_bow 1
 can_use_ring 1
 can_use_shield 1
 can_use_armour 1
 can_use_weapon 1
 attack_movement 1
+editable 1
+color_fg black
 body_skill 1
 body_finger 2
 body_torso 1

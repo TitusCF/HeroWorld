@@ -1,6 +1,5 @@
 Object mournblade
 name Mournblade
-anim_suffix double_sword
 nrof 1
 last_sp 8
 Str 1
@@ -16,6 +15,8 @@ resist_magic 30
 resist_drain 100
 attacktype 384
 weapontype 1
+editable 5120
+magicmap grey
 name_pl Mournblades
 client_type 100
 body_arm -2

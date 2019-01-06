@@ -5,4 +5,5 @@ name message
 msg
 Your blood chills and you can feel the waves of the world.
 endmsg
+editable 0
 end

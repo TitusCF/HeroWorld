@@ -1,10 +1,8 @@
 Object spell_protection_from_cold
-anim_suffix spellcasting
 name protection from cold
 name_pl protection from cold
-face spell_protection_from_cold.111
-other_arch protection_cold_effect
-level 2
+face spell_praying.111
+level 3
 grace 15
 casting_time 10
 path_attuned 1
@@ -19,7 +17,4 @@ duration 500
 maxgrace 40
 resist_cold 30
 dam_modifier 3
-msg
-Improves the caster's protection against cold-based attacks.
-endmsg
 end

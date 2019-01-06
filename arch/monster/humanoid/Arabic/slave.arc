@@ -7,7 +7,6 @@ speed 0.10
 alive 1
 level 1
 monster 1
-move_type walk
 no_pick 1
 hp 10
 maxhp 10
@@ -23,6 +22,7 @@ can_use_bow 1
 can_use_weapon 1
 can_use_shield 1
 can_use_armour 1
+editable 1
 body_torso 1
 body_head 1
 body_shoulder 1

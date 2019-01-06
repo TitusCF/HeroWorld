@@ -1,9 +1,8 @@
 Object spell_protection_from_cancellation
-anim_suffix spellcasting
 name protection from cancellation
 name_pl protection from cancellation
-face spell_protection_from_cancellation.111
-level 12
+face spell_praying.111
+level 11
 grace 30
 casting_time 10
 path_attuned 1
@@ -18,7 +17,4 @@ duration 500
 maxgrace 40
 resist_cancellation 40
 dam_modifier 3
-msg
-Improves the caster's protection against attacks that remove magical (+/-) bonuses from items.
-endmsg
 end

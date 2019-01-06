@@ -8,10 +8,9 @@ face knight.111
 animation knight
 race human,troll
 monster 1
-move_type walk
 alive 1
-# weaponmagic, physical
-attacktype 257
+# godpower, physical
+attacktype 1048577
 Str 30
 Con 30
 Dex 30
@@ -38,4 +37,5 @@ endmsg
 exp 1
 weight 100000
 randomitems Valkyrie
+editable 0
 end

@@ -7,6 +7,8 @@ material 2
 resist_physical 3
 weight 12300
 value 1700
+magicmap orange
+editable 128
 name_pl crowns
 client_type 271
 body_head -1
@@ -21,6 +23,8 @@ material 2
 resist_physical 3
 weight 12300
 value 1700
+magicmap orange
+editable 128
 name_pl crowns
 client_type 271
 body_head -1
@@ -35,6 +39,8 @@ material 2
 resist_physical 3
 weight 12300
 value 1700
+magicmap orange
+editable 128
 name_pl crowns
 client_type 271
 body_head -1
@@ -49,6 +55,8 @@ material 2
 resist_physical 3
 weight 12300
 value 1700
+magicmap orange
+editable 128
 name_pl crowns
 client_type 271
 body_head -1
@@ -63,6 +71,8 @@ material 2
 resist_physical 3
 weight 12300
 value 1700
+magicmap orange
+editable 128
 name_pl crowns
 client_type 271
 body_head -1

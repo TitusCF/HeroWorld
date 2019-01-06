@@ -11,5 +11,7 @@ alive 1
 level 1
 no_pick 1
 resist_fire 100
+editable 1
+color_fg black
 sp 0
 end

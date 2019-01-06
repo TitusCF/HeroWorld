@@ -7,7 +7,9 @@ material 64
 materialname uraniumoxide
 type 73
 value 2
+color_fg yellow
 weight 5000
+editable 2048
 name_pl piles
 client_type 641
 end

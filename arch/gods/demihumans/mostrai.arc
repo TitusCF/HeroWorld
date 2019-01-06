@@ -8,7 +8,6 @@ slaying goblin,giant
 animation dwarf
 is_animated 1
 monster 1
-move_type walk
 alive 1
 attacktype 256
 Str 30
@@ -34,9 +33,11 @@ can_use_weapon 1
 can_use_armour 1
 can_use_shield 1
 msg
-Dwarven deity of metal smithing and warcraft, Giant basher, Delver of secrets
+Dwarven deity of metal smithing and warcraft, 
+Giant basher, Delver of secrets
 endmsg
 exp 1
 weight 100000
 randomitems Mostrai
+editable 0
 end

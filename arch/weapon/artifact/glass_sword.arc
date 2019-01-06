@@ -20,7 +20,7 @@ attacktype 1
 weapontype 4
 material 12
 magic 3
-magicmap grey
+magicmap gray
 name_pl glass swords
 client_type 100
 body_arm -1

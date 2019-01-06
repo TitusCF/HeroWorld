@@ -5,10 +5,24 @@ activate_on_push 1
 activate_on_release 1
 no_pick 1
 face hole.11A
-animation pit_closed
+anim
+hole.111
+hole.112
+hole.113
+hole.114
+hole.115
+hole.116
+hole.117
+hole.118
+hole.119
+hole.11A
+mina
 is_animated 0
 wc 10
 maxsp 0
+editable 18
+visibility 50
+magicmap black
 end
 Object pit_open
 name pit
@@ -17,9 +31,23 @@ activate_on_push 1
 activate_on_release 1
 no_pick 1
 face hole.111
-animation pit_open
+anim
+hole.111
+hole.112
+hole.113
+hole.114
+hole.115
+hole.116
+hole.117
+hole.118
+hole.119
+hole.11A
+mina
 is_animated 0
-move_on walk
+walk_on 1
 wc 0
 maxsp 1
+editable 18
+visibility 50
+magicmap black
 end

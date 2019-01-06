@@ -9,8 +9,10 @@ dam 4
 weight 10000
 value 45
 type 15
+editable 1024
 attacktype 1
 weapontype 5
+magicmap white
 client_type 101
 body_arm -1
 skill one handed weapons

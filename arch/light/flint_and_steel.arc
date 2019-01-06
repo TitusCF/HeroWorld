@@ -7,7 +7,8 @@ food 500
 weight 300
 value 2000
 material 66
+editable 128
+magicmap grey
 name_pl flints and steels
 client_type 1101
-nrof 1
 end

@@ -1,9 +1,8 @@
 Object spell_create_bomb
-anim_suffix spellcasting
 name create bomb
 name_pl create bomb
-face spell_create_bomb.111
-level 12
+face spell_pyromancy.111
+level 6
 sp 10
 casting_time 5
 path_attuned 512
@@ -21,7 +20,12 @@ attacktype 1
 no_drop 1
 invisible 1
 msg
-Creates a bomb in the direction the spell is fired.  The bomb detonates after a few seconds, firing shrapnel and encompassing the area in an explosion. Creatures are wounded if they are in the explosion or if they are hit by the flying shrapnel.
+Create bomb does just that - it creates a
+bomb in the direction the spell is fired.
+The bomb detonates after a few seconds,
+firing shrapnel as well as encompassing the
+area in an explosions.  Creatures will be
+wounded if they are in the explosion or are
+hit by the flying shrapnel.
 endmsg
-weight 750
 end

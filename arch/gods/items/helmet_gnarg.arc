@@ -4,7 +4,8 @@ name_pl Gnarg's Orc Helmets
 client_type 270
 face bighorn_he.111
 msg
-  This helmet good protection. From mighty Gnarg it is.
+  This helmet good protection. From mighty
+  Gnarg it is.
 endmsg
 Dex 1
 ac 3

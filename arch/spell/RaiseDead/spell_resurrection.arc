@@ -1,8 +1,7 @@
 Object spell_resurrection
-anim_suffix spellcasting
 name resurrection
 name_pl resurrection
-face spell_resurrection.111
+face spell_praying.111
 type 101
 subtype 1
 level 20
@@ -17,6 +16,12 @@ Con 1
 exp 10
 randomitems resurrection_failure
 msg
-Casting this spell on the corpse of a slain character will bring the character back to life with full health, at the cost of some loss of experience points and constitution, though the loss is less than that of the raise dead spell. Gaea grants this spell.  This spell is only useful on permanent death servers.
+This spell brings back a dead character.  The
+character suffers less experience and
+constitution loss than that caused by the raise
+dead spell.
+
+Note: This spell is only useful on servers
+which use the permanent death mode of play.
 endmsg
 end

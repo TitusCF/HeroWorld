@@ -1,9 +1,8 @@
 Object spell_remove_curse
-anim_suffix spellcasting
 name remove curse
 name_pl remove curse
-face spell_remove_curse.111
-level 16
+face spell_praying.111
+level 8
 grace 80
 casting_time 20
 path_attuned 256
@@ -16,6 +15,10 @@ invisible 1
 cursed 1
 maxgrace 30
 msg
-Eliminates the cursed status of objects the character currently is wearing to allow the items to be unequipped.  It does not alter the cursed status for objects that are not equipped.
+Remove curse eliminates the cursed status of
+any objects the character currently has
+equipped, allowing the character to unequip
+these items.  It does not alter the cursed
+status for objects that are not equipped.
 endmsg
 end

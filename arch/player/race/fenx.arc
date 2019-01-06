@@ -4,16 +4,29 @@ race fenx
 randomitems fenx_player_items
 face fenx.150
 msg
-Skills: Woodsman, Missile Weapons, Jumping, Singing
-Resistances: None
-Attunements: None
-Special: Slow HP regeneration, fast SP regeneration, low food consumption, start with bow & arrows, See in dark
-
-Description:
-Fenxes, also called Fendrakhis by other speaking races, are humanoids that have some fox-like attributes. A little smaller than humans, they are agile and clever, but usually share little affinity with magical forces.
-Once an important race of Bigworld, they were forced to hide into the Great Forest after they lost an important war against Humans, a long time ago.
+Fenxes, also called Fendrakhis by other
+speaking races, are humanoids that have
+some fox-like attributes. A little smaller
+than humans, they are agile and clever,
+but usually share little affinity with
+magical forces.
+Once an important race of Bigworld, they
+were forced to hide into the Great Forest
+after they lost an important war against
+Humans, a long time ago.
 endmsg
-animation fenx_player
+color_fg black
+anim
+fenx.111
+fenx.112
+fenx.131
+fenx.132
+fenx.151
+fenx.152
+fenx.171
+fenx.172
+facings 4
+mina
 is_animated 1
 anim_speed -1
 type 1
@@ -36,6 +49,7 @@ Wis -2
 Cha 2
 Int 2
 Pow -4
+editable 0
 body_range 1
 body_arm 2
 body_torso 1
@@ -48,11 +62,6 @@ body_foot 2
 body_hand 2
 body_wrist 2
 body_waist 1
-body_leg 2
-maxhp 30
-maxsp 30
-maxgrace 30
-sound_chance 100
 end
 Object fenx_player_force
 name fenx_force

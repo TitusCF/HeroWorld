@@ -1,8 +1,7 @@
 Object spell_armour
-anim_suffix spellcasting
 name armour
 name_pl armour
-face spell_armour.111
+face spell_evocation.111
 level 1
 sp 8
 casting_time 10
@@ -18,8 +17,12 @@ duration 500
 dam_modifier 5
 resist_physical 20
 ac 2
-maxsp 24
+maxsp 8
 msg
-Armour creates fields of force around the player, reducing the amount of damage the character takes from physical attacks.  It does not provide any additional protection to non-physical attacks.
+Armour creates fields of force around the
+player, reducing the amount of damage the
+character takes from physical attacks.  It
+does not provide any additional protection to
+non-physical attacks.
 endmsg
 end

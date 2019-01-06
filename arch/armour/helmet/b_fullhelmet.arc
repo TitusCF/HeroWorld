@@ -11,6 +11,8 @@ weight 12000
 value 4
 material 2
 materialname bronze
+editable 1024
+magicmap grey
 body_head -1
 gen_sp_armour 10
 end

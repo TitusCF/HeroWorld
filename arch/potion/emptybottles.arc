@@ -9,8 +9,10 @@ material 4
 dam 1
 weight 50
 value 1
+editable 1024
 attacktype 1
 weapontype 8
+magicmap brown
 client_type 611
 body_arm -1
 skill one handed weapons
@@ -27,8 +29,10 @@ material 4
 dam 1
 weight 500
 value 1
+editable 1024
 attacktype 1
 weapontype 8
+magicmap brown
 client_type 611
 body_arm -1
 skill one handed weapons
@@ -45,8 +49,10 @@ material 4
 dam 1
 weight 1000
 value 3
+editable 1024
 attacktype 1
 weapontype 8
+magicmap brown
 client_type 611
 body_arm -1
 skill one handed weapons
@@ -63,8 +69,10 @@ material 4
 dam 1
 weight 600
 value 3
+editable 1024
 attacktype 1
 weapontype 8
+magicmap brown
 client_type 611
 body_arm -1
 skill one handed weapons
@@ -81,8 +89,10 @@ material 4
 dam 1
 weight 700
 value 3
+editable 1024
 attacktype 1
 weapontype 8
+magicmap brown
 client_type 611
 body_arm -1
 skill one handed weapons
@@ -99,8 +109,10 @@ material 4
 dam 1
 weight 700
 value 3
+editable 1024
 attacktype 1
 weapontype 8
+magicmap brown
 client_type 611
 body_arm -1
 skill one handed weapons
@@ -117,27 +129,32 @@ material 4
 dam 1
 weight 70
 value 3
+editable 1024
 attacktype 1
 weapontype 8
+magicmap brown
 client_type 611
 body_arm -1
 skill one handed weapons
 end
 
-Object bag_empty
-name empty bag
-name_pl empty bags
+Object vodka_empty
+name empty bottle
+name_pl empty bottles
 nrof 1
 last_sp 10
 type 15
-face bag_empty.111
-material 1
-dam -5
-weight 25
-value 1
+face vodka_empty.111
+material 4
+dam 1
+weight 2000
+value 3
+editable 1024
 attacktype 1
 weapontype 8
+magicmap white
 client_type 611
 body_arm -1
 skill one handed weapons
 end
+

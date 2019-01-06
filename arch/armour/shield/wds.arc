@@ -13,6 +13,7 @@ value 45000
 weight 6000
 magic 2
 identified 1
+editable 5120
 body_arm -1
 item_power 4
 end

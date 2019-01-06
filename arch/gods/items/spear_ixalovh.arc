@@ -5,9 +5,12 @@ last_sp 9
 type 15
 face spear_ixalovh.111
 weapontype 5
-animation spear_ixalovh
-anim_speed 10
-client_anim_random 1
+anim
+spear_ixalovh.111
+spear_ixalovh.112
+spear_ixalovh.113
+mina
+speed -0.02
 Pow 1
 sp 1
 material 256
@@ -19,6 +22,8 @@ resist_magic 10
 resist_fire 15
 attacktype 17
 startequip 1
+editable 5120
+magicmap red
 name_pl Ixalovh's spears
 client_type 136
 can_impale 1

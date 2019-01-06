@@ -15,7 +15,8 @@ maxsp 0
 last_eat 0
 exp 100
 msg
-You blow a great fart.  It ignites.  My God, the REEK!
+You blow a great fart.  It ignites.  My God,
+the REEK!
 endmsg
 race *
 level 5

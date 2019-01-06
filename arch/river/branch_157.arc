@@ -1,7 +1,10 @@
-Object river_junct_ns-w
+Object rjunct_ns-w
 face branch_157.111
 name river junction
-move_block all
+no_pass 1
 no_pick 1
+color_fg blue
+editable 8
+visibility 100
 is_water 1
 end

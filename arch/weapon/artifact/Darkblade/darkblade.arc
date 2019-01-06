@@ -1,12 +1,24 @@
 Object darkblade
 name Darkblade
-anim_suffix sword
 nrof 1
 type 15
 face darkblade.111
-animation darkblade
-anim_speed 5
-client_anim_random 1
+anim
+darkblade.111
+darkblade.112
+darkblade.113
+darkblade.114
+darkblade.115
+darkblade.116
+darkblade.117
+darkblade.116
+darkblade.115
+darkblade.114
+darkblade.113
+darkblade.112
+darkblade.111
+mina
+speed 0.2
 Cha -1
 Con 2
 hp 1
@@ -18,7 +30,9 @@ weight 20000
 last_sp 7
 dam 10
 magic 4
-value 143000
+value 53000
+editable 5120
+magicmap black
 name_pl Darkblades
 client_type 100
 body_arm -1

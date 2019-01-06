@@ -3,7 +3,8 @@ name spiral tower
 face s_tower2.111
 type 66
 no_pick 1
-move_block all
+no_pass 1
+editable 2
 end
 More
 Object s_tower2_2

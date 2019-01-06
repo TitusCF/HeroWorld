@@ -6,10 +6,24 @@ activate_on_push 1
 activate_on_release 1
 no_pick 1
 face white-red-c-marble.111
-animation pit_white-red-c-marble_111_closed
+anim
+hole_white-any-c-marble.111
+hole_white-any-c-marble.111
+hole_white-any-c-marble.111
+hole_white-any-c-marble.111
+hole_white-any-c-marble.111
+hole_white-any-c-marble.111
+hole_white-any-c-marble.111
+hole_white-any-c-marble.111
+hole_white-any-c-marble.111
+white-red-c-marble.111
+mina
 is_animated 0
 wc 10
 maxsp 0
+editable 18
+visibility 50
+magicmap black
 end
 Object pit_white-red-c-marble_111_open
 name pit
@@ -19,11 +33,25 @@ activate_on_push 1
 activate_on_release 1
 no_pick 1
 face hole_white-any-c-marble.111
-animation pit_white-red-c-marble_111_open
+anim
+hole_white-any-c-marble.111
+hole_white-any-c-marble.111
+hole_white-any-c-marble.111
+hole_white-any-c-marble.111
+hole_white-any-c-marble.111
+hole_white-any-c-marble.111
+hole_white-any-c-marble.111
+hole_white-any-c-marble.111
+hole_white-any-c-marble.111
+white-red-c-marble.111
+mina
 is_animated 0
-move_on walk
+walk_on 1
 wc 0
 maxsp 1
+editable 18
+visibility 50
+magicmap black
 end
 
 
@@ -35,10 +63,24 @@ activate_on_push 1
 activate_on_release 1
 no_pick 1
 face white-red-c-marble.112
-animation pit_white-red-c-marble_112_closed
+anim
+hole_white-any-c-marble.112
+hole_white-any-c-marble.112
+hole_white-any-c-marble.112
+hole_white-any-c-marble.112
+hole_white-any-c-marble.112
+hole_white-any-c-marble.112
+hole_white-any-c-marble.112
+hole_white-any-c-marble.112
+hole_white-any-c-marble.112
+white-red-c-marble.112
+mina
 is_animated 0
 wc 10
 maxsp 0
+editable 18
+visibility 50
+magicmap black
 end
 Object pit_white-red-c-marble_112_open
 name pit
@@ -48,11 +90,25 @@ activate_on_push 1
 activate_on_release 1
 no_pick 1
 face hole_white-any-c-marble.112
-animation pit_white-red-c-marble_112_open
+anim
+hole_white-any-c-marble.112
+hole_white-any-c-marble.112
+hole_white-any-c-marble.112
+hole_white-any-c-marble.112
+hole_white-any-c-marble.112
+hole_white-any-c-marble.112
+hole_white-any-c-marble.112
+hole_white-any-c-marble.112
+hole_white-any-c-marble.112
+white-red-c-marble.112
+mina
 is_animated 0
-move_on walk
+walk_on 1
 wc 0
 maxsp 1
+editable 18
+visibility 50
+magicmap black
 end
 
 
@@ -64,10 +120,24 @@ activate_on_push 1
 activate_on_release 1
 no_pick 1
 face white-red-c-marble.113
-animation pit_white-red-c-marble_113_closed
+anim
+hole_white-any-c-marble.113
+hole_white-any-c-marble.113
+hole_white-any-c-marble.113
+hole_white-any-c-marble.113
+hole_white-any-c-marble.113
+hole_white-any-c-marble.113
+hole_white-any-c-marble.113
+hole_white-any-c-marble.113
+hole_white-any-c-marble.113
+white-red-c-marble.113
+mina
 is_animated 0
 wc 10
 maxsp 0
+editable 18
+visibility 50
+magicmap black
 end
 Object pit_white-red-c-marble_113_open
 name pit
@@ -77,11 +147,25 @@ activate_on_push 1
 activate_on_release 1
 no_pick 1
 face hole_white-any-c-marble.113
-animation pit_white-red-c-marble_113_open
+anim
+hole_white-any-c-marble.113
+hole_white-any-c-marble.113
+hole_white-any-c-marble.113
+hole_white-any-c-marble.113
+hole_white-any-c-marble.113
+hole_white-any-c-marble.113
+hole_white-any-c-marble.113
+hole_white-any-c-marble.113
+hole_white-any-c-marble.113
+white-red-c-marble.113
+mina
 is_animated 0
-move_on walk
+walk_on 1
 wc 0
 maxsp 1
+editable 18
+visibility 50
+magicmap black
 end
 
 
@@ -93,10 +177,24 @@ activate_on_push 1
 activate_on_release 1
 no_pick 1
 face white-red-c-marble.114
-animation pit_white-red-c-marble_114_closed
+anim
+hole_white-any-c-marble.114
+hole_white-any-c-marble.114
+hole_white-any-c-marble.114
+hole_white-any-c-marble.114
+hole_white-any-c-marble.114
+hole_white-any-c-marble.114
+hole_white-any-c-marble.114
+hole_white-any-c-marble.114
+hole_white-any-c-marble.114
+white-red-c-marble.114
+mina
 is_animated 0
 wc 10
 maxsp 0
+editable 18
+visibility 50
+magicmap black
 end
 Object pit_white-red-c-marble_114_open
 name pit
@@ -106,9 +204,23 @@ activate_on_push 1
 activate_on_release 1
 no_pick 1
 face hole_white-any-c-marble.114
-animation pit_white-red-c-marble_114_open
+anim
+hole_white-any-c-marble.114
+hole_white-any-c-marble.114
+hole_white-any-c-marble.114
+hole_white-any-c-marble.114
+hole_white-any-c-marble.114
+hole_white-any-c-marble.114
+hole_white-any-c-marble.114
+hole_white-any-c-marble.114
+hole_white-any-c-marble.114
+white-red-c-marble.114
+mina
 is_animated 0
-move_on walk
+walk_on 1
 wc 0
 maxsp 1
+editable 18
+visibility 50
+magicmap black
 end

@@ -5,7 +5,6 @@ race goblin,giant,troll
 animation small_troll
 is_animated 1
 monster 1
-move_type walk
 alive 1
 Str 20
 Con 30
@@ -21,10 +20,10 @@ resist_magic -10
 resist_physical 40
 hp 500
 maxhp 500
-ac 5
-wc 3
+ac -5
+wc -3
 dam 30
-level 19
+level 15
 speed 0.25
 can_use_shield 1
 can_use_weapon 1

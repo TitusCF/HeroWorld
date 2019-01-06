@@ -7,12 +7,17 @@ hp 1
 msg
 You set off a Blades trap!
 endmsg
-animation trap_blades
+anim
+blades.111
+blades.111
+mina
 level 1
+color_fg black
 is_animated 0
 invisible 1
 no_pick 1
-move_on walk
+walk_on 1
+editable 32
 attacktype 1
 dam 90
 Cha 20

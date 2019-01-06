@@ -6,5 +6,7 @@ face rune_mark.111
 level 0
 is_animated 0
 no_pick 1
-move_on walk
+walk_on 1
+editable 32
+color_fg black
 end

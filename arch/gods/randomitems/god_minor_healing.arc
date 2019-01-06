@@ -3,4 +3,5 @@ type 8
 invisible 1
 name heal spell
 slaying minor healing
+editable 0
 end

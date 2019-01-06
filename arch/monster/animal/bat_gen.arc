@@ -1,5 +1,5 @@
 Object generate_bat
-name bat generator
+name generator
 other_arch bat
 race animal
 face bat_gen.111
@@ -11,5 +11,7 @@ exp 20
 speed 0.015
 hp 100
 resist_physical 30
-generator_limit 5
+
+editable 1
+magicmap black
 end

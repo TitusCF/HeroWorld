@@ -3,9 +3,14 @@ name red dragon
 race dragon
 randomitems dragon_player_items
 face pl_dragon_r.151
-animation red_dragon1
+anim
+facings 2
+pl_dragon_r.151
+pl_dragon_r.152
+pl_dragon_r.171
+pl_dragon_r.172
+mina
 monster 1
-move_type walk
 unaggressive 1
 level 1
 ac 5
@@ -16,6 +21,8 @@ weight 70000
 food 999
 speed -0.3
 attacktype 1
+editable 1
+color_fg red
 can_use_shield 0
 can_use_armour 0
 can_use_weapon 0

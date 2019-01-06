@@ -1,6 +1,5 @@
 Object uw_sword
 name Belzebub's sword
-anim_suffix double_sword
 nrof 1
 last_sp 7
 dam 17
@@ -19,10 +18,17 @@ magic 5
 weight 30000
 attacktype 65
 weapontype 1
-value 175000
-anim_speed 10
-client_anim_random 1
-animation uw_sword
+value 986
+speed 0.1
+anim
+uw_sword.111
+uw_sword.112
+uw_sword.113
+uw_sword.114
+uw_sword.115
+mina
+editable 5120
+magicmap white
 name_pl Belzebub's swords
 client_type 100
 body_arm -2

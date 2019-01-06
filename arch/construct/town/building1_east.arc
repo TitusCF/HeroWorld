@@ -3,7 +3,10 @@ face building1_east.111
 name tatemono
 type 66
 no_pick 1
-move_block all
+no_pass 1
+editable 2
+visibility 100
+magicmap brown
 client_type 25012
 end
 More
@@ -12,8 +15,10 @@ name tatemono
 face building1_east.111
 type 66
 no_pick 1
-move_block all
+no_pass 1
 x 1
+visibility 100
+magicmap brown
 end
 More
 Object building1_3_east
@@ -22,6 +27,8 @@ face building1_east.111
 type 66
 no_pick 1
 y 1
+visibility 100
+magicmap brown
 end
 More
 Object building1_4_east
@@ -31,4 +38,6 @@ type 66
 no_pick 1
 x 1
 y 1
+visibility 100
+magicmap brown
 end

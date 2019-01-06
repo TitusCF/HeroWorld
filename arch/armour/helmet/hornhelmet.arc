@@ -10,6 +10,8 @@ resist_physical 2
 weight 6000
 value 12
 material 18
+editable 1024
+magicmap grey
 body_head -1
 gen_sp_armour 2
 end

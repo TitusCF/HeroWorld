@@ -1,9 +1,8 @@
 Object spell_manabolt
-anim_suffix spellcasting
 name mana bolt
 name_pl mana bolts
-face spell_manabolt.111
-level 6
+face spell_evocation.111
+level 3
 sp 18
 maxsp 30
 casting_time 9
@@ -20,7 +19,4 @@ attacktype 2
 range 12
 no_drop 1
 invisible 1
-msg
-Fires a bolt of magical energy that few creatures have resistance to.
-endmsg
 end

@@ -1,12 +1,13 @@
 Object cyanbrush
 face cyanbrush.111
 type 67
-move_on walk
+walk_on 1
 race /terrain/plains
+color_fg green
 no_pick 1
-move_slow walk
-move_slow_penalty 2
+slow_move 2
 is_wooded 1
+editable 8
 is_floor 1
 smoothlevel 45
 smoothface cyanbrush.111 cyangrass_S.111

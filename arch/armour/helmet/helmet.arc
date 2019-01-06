@@ -10,6 +10,8 @@ ac 1
 resist_physical 5
 value 14
 material 2
+editable 1024
+magicmap black
 body_head -1
 gen_sp_armour 5
 end

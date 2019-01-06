@@ -5,9 +5,13 @@ client_type 250
 nrof 1
 type 16
 face robe_midnight.111
-animation robe_midnight
-anim_speed 10
-client_anim_random 1
+anim
+robe_midnight.111
+robe_midnight.112
+robe_midnight.113
+mina
+speed 0.1
+magicmap black
 ac 5
 Dex 1
 Int 2
@@ -25,6 +29,7 @@ magic 5
 weight 5000
 value 100000
 material 128
+editable 5120
 body_torso -1
 item_power 25
 end

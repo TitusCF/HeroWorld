@@ -8,8 +8,10 @@ material 18
 dam 11
 weight 10000
 value 600
+editable 1024
 attacktype 1
 weapontype 3
+magicmap white
 name_pl war axes
 client_type 106
 body_arm -1

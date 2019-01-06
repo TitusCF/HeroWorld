@@ -22,7 +22,8 @@ exp 10000
 hp 1
 sp 1
 msg
-You have a nasty rash all over you.  Are those pustules?
+You have a nasty rash all over you.  Are those 
+pustules?
 endmsg
 race goblin,human,troll,giant,dwarf
 level 20

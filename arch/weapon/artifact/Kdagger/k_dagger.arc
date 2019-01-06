@@ -9,10 +9,12 @@ type 15
 attacktype 1
 weapontype 2
 material 2
-value 60000
+value 30000
 weight 6000
 magic 3
 last_sp 2
+editable 5120
+magicmap grey
 name_pl Kobold Daggers
 client_type 100
 body_arm -1

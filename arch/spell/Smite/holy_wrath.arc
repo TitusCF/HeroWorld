@@ -3,12 +3,18 @@ type 102
 subtype 6
 name holy wrath
 slaying undead,demon
-face holy_wrath.111
-animation holy_wrath
+face turnundead.111
+anim
+turnundead.111
+turnundead.112
+turnundead.113
+mina
 wc -40
 speed 0.2
 speed_left -0.21
-move_type fly_low
+flying 1
 no_pick 1
-move_on walk fly_low
+editable 0
+walk_on 1
+fly_on 1
 end

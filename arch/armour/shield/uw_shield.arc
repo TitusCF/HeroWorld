@@ -12,6 +12,8 @@ value 80000
 ac 4
 resist_physical 15
 resist_deplete 100
+editable 5120
+magicmap black
 body_arm -1
 item_power 5
 end

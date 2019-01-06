@@ -1,8 +1,7 @@
 Object spell_dexterity
-anim_suffix spellcasting
 name dexterity
 name_pl dexterity
-face spell_dexterity.111
+face spell_sorcery.111
 level 3
 sp 12
 casting_time 20
@@ -16,7 +15,4 @@ invisible 1
 duration_modifier 4
 duration 500
 Dex 1
-msg
-May increase the caster's Dexterity stat temporarily. The magnitude of increase depends on the caster's Dexterity stat and sorcery skill level.
-endmsg
 end

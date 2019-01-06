@@ -7,7 +7,9 @@ material 2
 materialname uranium
 type 73
 value 25
+color_fg black
 weight 5000
+editable 2048
 name_pl piles
 client_type 641
 end
@@ -22,7 +24,9 @@ materialname enriched uranium
 type 73
 glow_radius 1
 value 4000
+color_fg black
 weight 5000
+editable 2048
 name_pl piles
 client_type 641
 end
@@ -36,7 +40,9 @@ material 2
 materialname depleted uranium
 type 73
 value 10
+color_fg black
 weight 5000
+editable 2048
 name_pl piles
 client_type 641
 end

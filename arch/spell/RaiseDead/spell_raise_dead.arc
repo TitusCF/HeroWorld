@@ -1,8 +1,7 @@
 Object spell_raise_dead
-anim_suffix spellcasting
 name raise dead
 name_pl raise dead
-face spell_raise_dead.111
+face spell_praying.111
 type 101
 subtype 1
 level 10
@@ -17,6 +16,11 @@ Con 2
 exp 5
 randomitems raise_dead_failure
 msg
-Casting this spell on the corpse of a slain character will bring the character back to life with 1 hit point, at the cost of some loss of experience points and Constitution.  Gaea grants this spell.  This spell is only useful on permanent death servers.
+This spell brings back a dead character.  The
+raised character loses some experience and
+their constitution is diminished.
+
+Note: This spell is only useful on servers
+which use the permanent death mode of play.
 endmsg
 end

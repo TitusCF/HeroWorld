@@ -3,11 +3,17 @@
 Object fog_wall
 name fog
 face fog.111
-animation fog_wall
+anim
+fog.111
+fog.112
+fog.111
+mina
 type 102
 subtype 7
-move_type fly_low
+flying 1
 no_pick 1
+color_fg white
+color_bg khaki
 resist_fire 100
 resist_electricity 100
 resist_confusion 100
@@ -25,6 +31,8 @@ resist_deplete 100
 resist_death 100
 material 1
 changing 1
+visibility 100
 speed 0.001
 blocksview 1
+editable 8
 end

@@ -1,8 +1,7 @@
 Object spell_sm_lightning
-anim_suffix spellcasting
 name small lightning
 name_pl small lightnings
-face spell_sm_lightning.111
+face spell_pyromancy.111
 level 1
 sp 6
 casting_time 5
@@ -20,7 +19,4 @@ attacktype 10
 range 12
 no_drop 1
 invisible 1
-msg
-A bolt spell that inflicts electrical damage on creatures in its path.  It can reflect off of walls (and can return to strike the caster).
-endmsg
 end

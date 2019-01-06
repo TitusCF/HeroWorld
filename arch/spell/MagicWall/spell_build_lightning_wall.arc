@@ -1,11 +1,10 @@
 Object spell_build_lightning_wall
-anim_suffix spellcasting
 name build lightning wall
 name_pl build lightning wall
-face spell_build_lightning_wall.111
+face spell_pyromancy.111
 type 101
 subtype 15
-level 28
+level 14
 value 140
 sp 40
 casting_time 14
@@ -19,11 +18,15 @@ duration_modifier 1
 dam 80
 dam_modifier 1
 range 0
-maxsp 20
+maxsp 10
 is_used_up 1
 tear_down 1
-move_block all
 msg
-Build lightning wall creates a wall that fires lightning bolts.  The wall fires in the direction the spell is cast.  The wall can be torn down by creatures, and will eventually expire of its own accord.
+Build lightning wall creates a wall that
+fires lightning bolts.  The wall fires in the
+direction the spell is cast.  The wall can be
+torn down by creatures, and will eventually
+expire of its own accord.
 endmsg
+no_pass 1
 end

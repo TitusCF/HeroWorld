@@ -8,12 +8,17 @@ face rune_lightning.111
 msg
 You set off a bolt of lightning!
 endmsg
-animation rune_small_lightning
+anim
+rune_lightning.111
+rune_lightning.111
+mina
 level 1
+color_fg yellow
 is_animated 0
 invisible 1
 no_pick 1
-move_on walk
+walk_on 1
+editable 32
 attacktype 10
 dam 90
 Cha 20

@@ -12,4 +12,6 @@ maxhp 1
 speed -1.0
 invisible 1
 is_used_up 1
+editable 9
+color_fg black
 end

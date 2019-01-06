@@ -4,4 +4,5 @@ face blank.111
 invisible 1
 type 8
 level 10
-end
+editable 0
+end 

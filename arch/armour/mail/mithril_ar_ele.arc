@@ -7,10 +7,16 @@ type 16
 material 2
 materialname mithril
 face mithril_ar_ele.111
-animation mithril_ar_ele
-anim_speed 3
-client_anim_random 1
-ac 6
+anim
+mithril_ar_ele.111
+mithril_ar_ele.111
+mithril_ar_ele.112
+mithril_ar_ele.112
+mithril_ar_ele.113
+mithril_ar_ele.113
+mina
+speed 0.3
+ac 4
 resist_physical 40
 resist_electricity 30
 Cha 1
@@ -20,6 +26,7 @@ magic 3
 last_sp 27
 weight 15000
 value 4000
+editable 5120
 body_torso -1
 gen_sp_armour 2
 item_power 9

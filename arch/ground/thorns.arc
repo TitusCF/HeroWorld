@@ -8,13 +8,14 @@ wc -1
 food 1
 name thorns
 face thorns.111
+color_fg brown
 no_pick 1
-move_on walk
+walk_on 1
 is_wooded 1
-move_slow walk
-move_slow_penalty 3
+slow_move 3
 attacktype 1
 speed 0.2
 dam 3
+editable 8
 move_block boat swim
 end

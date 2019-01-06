@@ -8,9 +8,11 @@ material 18
 dam 9
 weight 8500
 value 515
+editable 1024
 can_impale 1
 attacktype 1
 weapontype 3
+magicmap white
 name_pl axes
 client_type 106
 body_arm -1

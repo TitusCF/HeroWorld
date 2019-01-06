@@ -7,7 +7,6 @@ slaying undead,unnatural
 animation panther
 is_animated 1
 monster 1
-move_type walk
 alive 1
 Str 30
 Con 30

@@ -2,7 +2,10 @@ Object merchant
 name Merchant
 randomitems standard
 face merchant.111
-animation merchant
+anim
+merchant.171
+merchant.131
+mina
 is_turning 1
 sp 10
 maxsp 10
@@ -22,11 +25,13 @@ level 3
 will_apply 8
 pick_up 24
 can_apply 25
-can_use_range 1
+can_use_wand 1
+can_use_rod 1
 can_cast_spell 1
 can_use_bow 1
 can_use_ring 1
 can_use_armour 1
 can_use_weapon 1
 can_use_scroll 1
+editable 1
 end

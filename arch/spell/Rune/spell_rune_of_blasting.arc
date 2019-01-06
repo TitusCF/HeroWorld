@@ -1,8 +1,7 @@
 Object spell_rune_of_blasting
-anim_suffix spellcasting
 name rune of blasting
 name_pl rune of blasting
-face spell_rune_of_blasting.111
+face spell_pyromancy.111
 type 101
 subtype 2
 no_drop 1
@@ -15,6 +14,8 @@ skill pyromancy
 path_attuned 512
 other_arch rune_blast
 msg
-Creates a rune that, when triggered, hits the creature with physical and magical damage.
+This creates a rune that will hit the
+creature that activates it with physical and
+magical damage.
 endmsg
 end

@@ -1,9 +1,8 @@
 Object spell_wrathful_eye
-anim_suffix spellcasting
 name wrathful eye
 name_pl wrathful eye
-face spell_wrathful_eye.111
-level 10
+face spell_praying.111
+level 5
 grace 30
 casting_time 8
 path_attuned 32
@@ -13,7 +12,7 @@ dam_modifier 3
 range 5
 duration 2
 range_modifier 5
-maxgrace 24
+maxgrace 7
 type 101
 subtype 7
 value 50
@@ -22,6 +21,10 @@ no_drop 1
 invisible 1
 skill praying
 msg
-Summons an image of Valriel's Eye that may blind creatures in the cone-shaped area in front of it.  The spell is granted to Valriel.
+Wrathful eye emanates as cone.  Creatures
+caught within the area may become blinded.
+Blinded creatures have a harder time
+attacking other creatures.  The blinding is
+not permanent, and will eventually wear off.
 endmsg
 end

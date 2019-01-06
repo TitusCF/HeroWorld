@@ -3,10 +3,10 @@ race human
 name Medium guard
 randomitems guard_m
 face a_guard_m.111
+color_fg grey
 speed 0.06
 alive 1
 monster 1
-move_type walk
 sleep 1
 Wis 10
 see_invisible 1
@@ -35,6 +35,7 @@ can_cast_spell 1
 can_use_weapon 1
 can_use_shield 1
 can_use_armour 1
+editable 1
 body_torso 1
 body_head 1
 body_shoulder 1

@@ -3,9 +3,18 @@ name hellhound
 face hellhound.131
 randomitems hellhound
 race demon
-animation hellhound
+anim
+facings 2
+hellhound.131
+hellhound.132
+hellhound.133
+hellhound.132
+hellhound.171
+hellhound.172
+hellhound.173
+hellhound.172
+mina
 monster 1
-move_type walk
 sleep 1
 Wis 20
 alive 1
@@ -14,7 +23,7 @@ maxhp 800
 Con 6
 speed -0.2
 exp 5000
-ac -4
+ac -9
 dam 9
 wc -20
 level 20
@@ -29,15 +38,28 @@ resist_fire 100
 resist_cold -10
 resist_magic 20
 weight 40000
+editable 1
 run_away 5
 attack_movement 5
+color_fg brown
 end
+
 Object gr_hellhound
 name greater hellhound
 randomitems gr_hellhound
 race demon
-face greater_hellhound.131
-animation gr_hellhound
+face hellhound.131
+anim
+facings 2
+hellhound.131
+hellhound.132
+hellhound.133
+hellhound.132
+hellhound.171
+hellhound.172
+hellhound.173
+hellhound.172
+mina
 Con 40
 Pow 60
 can_cast_spell 1
@@ -48,7 +70,7 @@ maxsp 150
 hp 6000
 maxhp 6000
 exp 300000
-ac -5
+ac -11
 dam 70
 wc -30
 weight 130000
@@ -68,10 +90,11 @@ level 40
 speed -0.2
 alive 1
 monster 1
-move_type walk
 sleep 1
 Wis 20
 see_invisible 1
 run_away 2
+editable 1
+magicmap red
 end
 

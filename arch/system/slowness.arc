@@ -6,4 +6,5 @@ speed 0.05
 no_drop 1
 food 5
 is_used_up 1
+editable 0
 end

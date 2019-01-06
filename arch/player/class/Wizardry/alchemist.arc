@@ -1,9 +1,18 @@
 Object alchemist_class
 name alchemist
-anim_suffix class_alchemist
 randomitems alchemist_class_items
 face alchemist.151
-animation alchemist_class
+anim
+alchemist.111
+alchemist.112
+alchemist.131
+alchemist.132
+alchemist.151
+alchemist.152
+alchemist.171
+alchemist.172
+facings 4
+mina
 is_animated 1
 anim_speed -1
 type 37
@@ -13,12 +22,7 @@ Con -1
 Int 3
 Wis 0
 Pow 1
-msg
-Your specialty is magical devices and concoctions, but you've also had some training in weaponry, so that you could fend off townsfolk angered by the vile reeks that frequently emanate from your workshop.
-Searching for the ultimate recipe and trying to recover lost knowledge has sharpened your wits considerably.
-Your focus, however, has left little time for physical training, and your sedentary lifestyle has weakened you.
-Your dependence on magical devices extends to the use of a talisman to channel mana.  The talisman has become attuned to detonation and transmutation because of the way you have used it.
-endmsg
+editable 0
 end
 Object talisman_alchemist
 name Alchemist's talisman
@@ -28,6 +32,7 @@ weight 1000
 value 3000
 nrof 1
 material 12
+editable 2048
 path_attuned 16896
 client_type 451
 body_skill -1

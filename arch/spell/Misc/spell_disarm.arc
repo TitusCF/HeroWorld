@@ -1,8 +1,7 @@
 Object spell_disarm
-anim_suffix spellcasting
 name disarm
 name_pl disarm
-face spell_disarm.111
+face spell_sorcery.111
 type 101
 subtype 38
 level 4
@@ -14,6 +13,8 @@ path_attuned 128
 no_drop 1
 invisible 1
 msg
-Attempts a disarm of a trap without risk of triggering it. The chance of success ranges from about 1/2 to about 1/20 and is dependent on the caster level, trap level, and somewhat upon the caster's dexterity stat. It may also be used to remove marking runes.
+Disarm is a safe way to disarm traps.  It
+never fails, but one must cast the spell, and
+thus use up spell points to do so.
 endmsg
 end

@@ -12,7 +12,9 @@ resist_physical 3
 resist_magic 30
 weight 15000
 value 30000
+editable 5120
 identified 1
+magicmap white
 body_arm -1
 item_power 2
 end

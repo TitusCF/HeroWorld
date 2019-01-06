@@ -1,5 +1,4 @@
 Object spell_repelwall
-anim_suffix spellcasting
 name create repulsion wall
 name_pl create repulsion wall
 face spell_sorcery.111
@@ -21,8 +20,8 @@ is_used_up 1
 maxsp 20
 range 1
 range_modifier 60
-move_block all
 msg
-Creates a wall that repels all creatures except those that can fly.
+Create repulsion wall creates a wall that will repel any creature unless
+it flies. However it requires alot of mana to cast and has limited duration.
 endmsg
 end

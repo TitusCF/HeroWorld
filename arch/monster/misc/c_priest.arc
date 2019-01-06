@@ -2,9 +2,14 @@ Object c_minor_priest
 name Minor Chaos Priest
 randomitems c_m_priest
 face c_priest.131
-animation c_minor_priest
+anim
+facings 2
+c_priest.131
+c_priest.132
+c_priest.171
+c_priest.172
+mina
 monster 1
-move_type walk
 Wis 10
 Str 10
 Int 20
@@ -16,12 +21,12 @@ no_pick 1
 alive 1
 exp 1500
 level 8
-ac 5
+ac -1
 hp 100
 maxhp 100
 Con 10
-wc 10
-dam 15
+wc 1
+dam 8
 speed 0.15
 resist_magic 50
 resist_confusion -100
@@ -33,11 +38,13 @@ attack_movement 7
 can_use_skill 1
 can_cast_spell 1
 can_use_scroll 1
+can_use_wand 1
 can_use_bow 1
 can_use_ring 1
 can_use_shield 1
 can_use_armour 1
 can_use_weapon 1
+editable 1
 body_skill 1
 body_finger 2
 body_torso 1
@@ -55,9 +62,14 @@ Object c_priest
 name Chaos Priest
 randomitems c_priest
 face c_priest.131
-animation c_priest
+anim
+facings 2
+c_priest.131
+c_priest.132
+c_priest.171
+c_priest.172
+mina
 monster 1
-move_type walk
 Wis 10
 Int 23
 Pow 25
@@ -67,15 +79,16 @@ maxsp 200
 sp 200
 no_pick 1
 alive 1
-exp 8000
+exp 5000
 level 12
-ac 5
-hp 250
-maxhp 250
+ac -5
+hp 400
+maxhp 400
 Con 10
-wc 8
+wc -1
 dam 16
-speed 0.25
+color_fg red
+speed 0.2
 resist_physical 30
 resist_magic 30
 resist_confusion -100
@@ -89,11 +102,13 @@ attack_movement 7
 can_cast_spell 1
 can_use_skill 1
 can_use_scroll 1
+can_use_wand 1
 can_use_bow 1
 can_use_ring 1
 can_use_shield 1
 can_use_armour 1
 can_use_weapon 1
+editable 1
 body_skill 1
 body_finger 2
 body_torso 1

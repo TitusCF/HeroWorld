@@ -78,5 +78,3 @@ editable 2048
 name_pl beige dragon scales
 client_type 627
 end
-
-

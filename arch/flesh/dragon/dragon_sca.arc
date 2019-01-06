@@ -20,7 +20,7 @@ Object green_dragon_scale
 name green dragon scale
 nrof 1
 type 73
-face dragon_green_scale.111
+face green_dragon_scale.111
 weight 25000
 name_pl green dragon scales
 client_type 627

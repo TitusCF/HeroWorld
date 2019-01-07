@@ -30,6 +30,7 @@ Spell for making items unique </br>
 TODO: </br>
 
 Method for turning on Permadeath/Hardcore Mode </br>
+Graveyard which generated a named gravesite upon the death of a Hardcore character </br>
 Further expansion of world by populating '/antarcticworld' and tiling it to the southern and northern boarders of Bigworld </br>
 Vertical expansion of buildable side of /world (bottomworld) to include elevated build levels and underground building levels connectable by buildable stairs </br>
 Necromancy Spell Set </br>

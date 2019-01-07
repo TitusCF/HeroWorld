@@ -8,13 +8,13 @@ Contact tituss on Crossfire IRC to discuss participating in this project
 
 Map modification:
 
-pup_land incorperated into Bigworld
-Bottomworld tiled to Bigworld hopefully becoming a globe
-Mlab deloused of content unsuitable for public play and reintigrated
-Greycastle rebalanced, reinigrated
-Guilds downgraded to a more simple form
-world_105_115 and surroundings modified
-Death dimension in progress, currently Room of Return is complete
+pup_land incorperated into Bigworld </br>
+Bottomworld tiled to Bigworld hopefully becoming a globe </br>
+Mlab deloused of content unsuitable for public play and reintigrated </br>
+Greycastle rebalanced, reinigrated </br>
+Guilds downgraded to a more simple form </br>
+world_105_115 and surroundings modified </br>
+Death dimension in progress, currently Room of Return is complete </br>
 
 
 Current Mods:

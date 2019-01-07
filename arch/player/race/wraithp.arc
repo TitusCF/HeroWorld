@@ -4,38 +4,16 @@ race undead
 randomitems wraith_player_items
 face wraithp.151
 msg
-A Wraith is the spirit of a person who has
-made an evil bargain in order to persist
-after natural death, or has been forced
-involuntarily into its current undead state.
-This transformation frees them of the limits
-of a natural lifespan, and grants them
-immunity to diseases, poison, and loss of
-lifeforce.  Wraiths also need feel little
-fear of cold, and they can see well in the
-dark.  A Wraith's corporeal form has terrible
-vulnerabilities: fire and most godpower are
-dangerous to Wraiths. Their tenuous form
-makes them quick and somewhat hard to hit,
-but also weaker and less hardy.
+Skills: Wraith Feed
+Resistances: Fire -25, Cold +30, Immune to Poison, Ghosthit, and Draining
+Attunements: Denied fire spells, Attune cold spells
+Special: Undead (immune to disease), can see in dark
 
-Wraiths have a strong affinity to magic,
-especially cold spells, and are very strong
-spellcasters. However, they cannot use fire
-spells for fear of self-destruction.
+Description:
+A Wraith is the spirit of a person who has made an evil bargain in order to persist after natural death, or has been forced involuntarily into its current undead state. This transformation frees them of the limits of a natural lifespan, and grants them immunity to diseases, poison, and loss of lifeforce. Wraiths also need feel little fear of cold, and they can see well in the dark. A Wraith's corporeal form has terrible vulnerabilities: fire and most godpower are dangerous to Wraiths. Their tenuous form makes them quick and somewhat hard to hit, but also weaker and less hardy.
+Wraiths have a strong affinity to magic, especially cold spells, and are very strong spellcasters. However, they cannot use fire spells for fear of self-destruction. Wraith also do not heal naturally, or gain sustenance from food. Instead they have to feed off the living.
 endmsg
-color_fg black
-anim
-wraithp.111
-wraithp.112
-wraithp.131
-wraithp.132
-wraithp.151
-wraithp.152
-wraithp.171
-wraithp.172
-facings 4
-mina
+animation wraith_player
 is_animated 1
 anim_speed -1
 type 1
@@ -66,7 +44,6 @@ Int 2
 Wis -3
 Pow 3
 Cha -4
-editable 0
 body_range 1
 body_arm 2
 body_torso 1
@@ -79,6 +56,10 @@ body_foot 2
 body_hand 2
 body_wrist 2
 body_waist 1
+body_leg 2
+maxhp 30
+maxsp 30
+maxgrace 30
 end
 Object wraith_player_force
 name Wraith_Force

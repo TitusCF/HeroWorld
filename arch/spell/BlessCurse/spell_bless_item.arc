@@ -1,4 +1,5 @@
 Object spell_bless_item
+anim_suffix spellcasting
 name bless item
 name_pl bless item
 face spell_praying.111
@@ -15,8 +16,6 @@ invisible 1
 blessed 1
 maxgrace 30
 msg
-Your god, moved by the piety you show, blesses
-one of your item, which will now have some special
-properties.
+Your god, moved by the piety you show, blesses one of your item, which will now have some special properties.
 endmsg
 end

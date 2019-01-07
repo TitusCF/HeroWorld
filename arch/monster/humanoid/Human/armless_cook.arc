@@ -3,13 +3,7 @@ race human
 name armless cook
 randomitems man
 face armless_cook.151
-anim
-facings 4
-armless_cook.111
-armless_cook.131
-armless_cook.151
-armless_cook.171
-mina
+animation armless_cook
 sp 10
 maxsp 10
 Str 12
@@ -35,7 +29,6 @@ can_use_skill 1
 can_cast_spell 1
 can_use_armour 1
 can_use_scroll 1
-color_fg black
 body_skill 1
 body_torso 1
 body_head 1

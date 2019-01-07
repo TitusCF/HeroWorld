@@ -1,18 +1,9 @@
 Object warrior_class
-name Warrior
+name warrior
 randomitems warrior_class_items
+anim_suffix class_warrior
 face warrior.151
-anim
-warrior.111
-warrior.112
-warrior.131
-warrior.132
-warrior.151
-warrior.152
-warrior.171
-warrior.172
-facings 4
-mina
+animation warrior_class
 is_animated 1
 anim_speed -1
 type 37
@@ -22,5 +13,9 @@ Con 1
 Int -2
 Wis -1
 Pow -1
-editable 0
+msg
+As a Warrior you've been trained in the art of combat with weapons and in archery.
+Because of your training, you're stronger, more agile, and hardier than you would be otherwise.
+Your education, however, has not included studies in the magical arts or religious devotion, and, in general, lacks breadth.
+endmsg
 end

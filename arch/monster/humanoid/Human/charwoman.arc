@@ -2,14 +2,9 @@ Object charwoman
 name cleaning woman
 race human
 face charwoman.171
-anim
-facings 2
-charwoman.131
-charwoman.132
-charwoman.171
-charwoman.172
-mina
+animation charwoman
 monster 1
+move_type walk
 unaggressive 1
 random_movement 1
 alive 1
@@ -26,6 +21,4 @@ speed 0.15
 weight 50000
 level 1
 run_away 90
-editable 1
-color_fg black
 end

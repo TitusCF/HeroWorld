@@ -2,6 +2,7 @@
 # by spell_ball_lightning. Nevertheless it cannot be deleted because existing
 # players may contain such an object.
 Object spelldirect_ball_lightning
+anim_suffix spellcasting
 name ball lightning
 name_pl ball lightning
 face spell_evocation.111
@@ -22,4 +23,4 @@ maxsp 15
 attacktype 10
 no_drop 1
 invisible 1
-end 
+end

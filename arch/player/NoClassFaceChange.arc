@@ -1,4 +1,4 @@
-Object no_class_face_change 
+Object no_class_face_change
 name NOCLASSFACECHANGE
 invisible 1
 applied 1

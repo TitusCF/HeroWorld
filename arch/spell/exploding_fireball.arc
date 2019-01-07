@@ -9,6 +9,7 @@ dam_modifier 10
 maxhp 10
 hp 15
 speed 1.0
+weight 1000
 speed_left 1.0
 end
 

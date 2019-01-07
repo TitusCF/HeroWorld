@@ -2,18 +2,7 @@ Object westweak_wall_3
 name wall
 race wall
 face westcwall_w_0.111
-anim
-westcwall_w_0.111
-westcwall_w_0.112
-westcwall_w_0.113
-westcwall_w_0.114
-westcwall_w_0.115
-westcwall_w_0.116
-westcwall_w_0.117
-westcwall_w_0.118
-westcwall_w_0.119
-westcwall_w_0.11A
-mina
+animation westweak_wall_3
 is_animated 0
 tear_down 1
 hp 100
@@ -30,25 +19,13 @@ no_pick 1
 blocksview 1
 alive 1
 level 1
-editable 768
-visibility 100
-magicmap grey
+move_block all
 end
 Object westweak_wall_4
 name wall
 race wall
 face westcwall_w_1.111
-anim
-westcwall_w_1.111
-westcwall_w_1.112
-westcwall_w_1.113
-westcwall_w_1.114
-westcwall_w_1.115
-westcwall_w_1.116
-westcwall_w_1.117
-westcwall_w_1.118
-westcwall_w_1.119
-mina
+animation westweak_wall_4
 is_animated 0
 tear_down 1
 hp 100
@@ -65,7 +42,5 @@ no_pick 1
 blocksview 1
 alive 1
 level 1
-editable 768
-visibility 100
-magicmap grey
+move_block all
 end

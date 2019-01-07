@@ -1,8 +1,9 @@
 Object spell_curse
+anim_suffix spellcasting
 name curse
 name_pl curse
-face spell_praying.111
-level 2
+face spell_curse.111
+level 4
 grace 8
 casting_time 5
 path_attuned 128
@@ -19,4 +20,7 @@ resist_godpower 35
 ac -1
 wc -1
 range 30
+msg
+The caster's god afflicts the recipient with a curse that may negatively affect AC and WC.
+endmsg
 end

@@ -10,6 +10,5 @@ value 0
 weight 5000
 identified 1
 startequip 1
-editable 2048
 nrof 1
 end

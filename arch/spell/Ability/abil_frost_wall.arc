@@ -1,6 +1,8 @@
 Object abil_create_frost_wall
+anim_suffix spellcasting
 name create frost wall ability
 name_pl create frost wall ability
+face spell_create_frost_wall.111
 level 8
 sp 8
 casting_time 3
@@ -19,5 +21,5 @@ dam_modifier 3
 maxsp 8
 attacktype 16
 range 2
-no_pass 1
+move_block all
 end

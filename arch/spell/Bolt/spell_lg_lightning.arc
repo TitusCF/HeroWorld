@@ -1,8 +1,9 @@
 Object spell_large_lightning
+anim_suffix spellcasting
 name large lightning
 name_pl large lightnings
-face spell_pyromancy.111
-level 4
+face spell_large_lightning.111
+level 8
 sp 13
 casting_time 7
 path_attuned 8
@@ -20,9 +21,6 @@ range 24
 no_drop 1
 invisible 1
 msg
-Large lightning creates a bolt of lightning.
-The large lightning spell has a longer range,
-the bolt persists longer, and it does more
-damage than the small lightning spell.
+Creates a large bolt of lightning with extended range that does more electrical damage than its smaller counterpart. The bolt can reflect off walls and return to hit the caster.
 endmsg
 end

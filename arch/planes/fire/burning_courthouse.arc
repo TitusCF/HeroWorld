@@ -1,42 +1,33 @@
 Object burning_courthouse
-face burning_courthouse.111
+face burning_courthouse.x11
 type 66
 no_pick 1
-no_pass 1
-editable 2
-visibility 100
-magicmap white
+move_block all
 client_type 25012
 end
 More
 Object burning_courthouse_2
 name burning courthouse
-face burning_courthouse.211
+face burning_courthouse.x11
 type 66
 no_pick 1
-no_pass 1
+move_block all
 x 1
-visibility 100
-magicmap white
 end
 More
 Object burning_courthouse_3
 name burning courthouse
-face burning_courthouse.311
+face burning_courthouse.x11
 type 66
 no_pick 1
 y 1
-visibility 100
-magicmap white
 end
 More
 Object burning_courthouse_4
 name burning courthouse
-face burning_courthouse.411
+face burning_courthouse.x11
 type 66
 no_pick 1
 x 1
 y 1
-visibility 100
-magicmap white
 end

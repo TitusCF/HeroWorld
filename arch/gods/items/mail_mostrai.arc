@@ -4,11 +4,7 @@ name_pl Thorin's Plate Mails
 client_type 250
 face plate_mail.111
 msg
-  This shining plate mail is Mostrai's
-  gift to the bravest of his warriors.
-  It is highly enchanted, increasing the
-  strength of the wearer and protecting
-  against fire.
+  This shining plate mail is Mostrai's gift to the bravest of his warriors. It is highly enchanted, increasing the strength of the wearer and protecting against fire.
 endmsg
 ac 3
 Str 1

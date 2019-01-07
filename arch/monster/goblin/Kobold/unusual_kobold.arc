@@ -2,11 +2,9 @@ Object unusual_kobold
 name unusual kobold
 face unusual_kobold.111
 race goblin
-anim
-unusual_kobold.111
-unusual_kobold.112
-mina
+animation unusual_kobold
 monster 1
+move_type walk
 sleep 1
 Str 30
 Dex 30
@@ -16,10 +14,10 @@ no_pick 1
 alive 1
 hp 10000
 maxhp 10000
-exp 5000
+exp 30000
 dam 70
-wc -50
-ac -100
+wc -20
+ac -15
 resist_physical 100
 speed .4
 level 30
@@ -27,6 +25,4 @@ resist_cold -100
 carrying 6000
 weight 30000
 is_animated 1
-editable 1
-magicmap brown
 end

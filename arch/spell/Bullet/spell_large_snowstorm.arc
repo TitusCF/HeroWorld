@@ -1,8 +1,9 @@
 Object spell_large_snowstorm
+anim_suffix spellcasting
 name large snowstorm
 name_pl large snowstorm
-face spell_evocation.111
-level 5
+face spell_large_snowstorm.111
+level 10
 sp 16
 casting_time 6
 path_attuned 4
@@ -21,9 +22,6 @@ invisible 1
 skill evocation
 food 8
 msg
-Large snowstorm fires a small snowball that
-explodes into a ice and cold, freezing
-anything within it.  The small snowball
-explodes when it hits something.
+Fires a snowball that explodes into a large flurry of ice and cold when it hits something.  It delivers cold damage, and items caught in the explosion are encased in blocks of ice.
 endmsg
 end

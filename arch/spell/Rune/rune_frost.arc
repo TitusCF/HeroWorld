@@ -7,17 +7,12 @@ speed 1
 msg
 You detonate a Rune of Frost!
 endmsg
-anim
-rune_frost.111
-icestorm.111
-mina
-color_fg light_blue
+animation rune_frost
 level 1
 is_animated 0
 invisible 1
 no_pick 1
-walk_on 1
-editable 32
+move_on walk
 attacktype 18
 dam 35
 Cha 20
@@ -32,17 +27,12 @@ speed 1
 msg
 You detonate a Rune of Icestorm
 endmsg
-anim
-rune_frost.111
-icestorm.111
-mina
-color_fg light_blue
+animation rune_icestorm
 level 1
 is_animated 0
 invisible 1
 no_pick 1
-walk_on 1
-editable 32
+move_on walk
 Cha 20
 end
 Object rune_large_icestorm
@@ -55,16 +45,11 @@ speed 1
 msg
 You detonate a Rune of Large Icestorm!
 endmsg
-anim
-rune_frost.111
-icestorm.111
-mina
-color_fg light_blue
+animation rune_large_icestorm
 level 1
 is_animated 0
 invisible 1
 no_pick 1
-walk_on 1
-editable 32
+move_on walk
 Cha 20
 end

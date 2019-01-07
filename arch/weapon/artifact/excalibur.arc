@@ -1,5 +1,6 @@
 Object excalibur
 name Excalibur
+anim_suffix double_sword
 nrof 1
 last_sp 7
 Str 1
@@ -10,13 +11,11 @@ material 2
 dam 12
 magic 5
 weight 25000
-value 120000
+value 220000
 resist_magic 30
 resist_drain 100
 attacktype 256
 weapontype 1
-editable 5120
-magicmap white
 name_pl Excaliburs
 client_type 100
 body_arm -2

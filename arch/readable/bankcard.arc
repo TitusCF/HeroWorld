@@ -8,7 +8,6 @@ material 1
 skill literacy
 value 8
 weight 2
-editable 128
 name_pl bank cards
 client_type 1041
 end

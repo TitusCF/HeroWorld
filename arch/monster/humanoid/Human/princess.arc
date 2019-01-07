@@ -3,17 +3,12 @@ name princess
 randomitems princess
 race human
 face princess.111
-anim
-princess.111
-princess.112
-princess.113
-princess.112
-mina
-color_fg black
+animation princess
 maxsp 9
 sp 9
 Pow 9
 monster 1
+move_type walk
 unaggressive 1
 alive 1
 ac 5
@@ -27,16 +22,13 @@ weight 50000
 level 2
 will_apply 2
 pick_up 24
-can_apply 25
 can_use_scroll 1
-can_use_wand 1
 can_cast_spell 1
 can_use_bow 1
 can_use_ring 1
 can_use_shield 1
 can_use_armour 1
 can_use_weapon 1
-editable 1
 body_finger 2
 body_torso 1
 body_head 1

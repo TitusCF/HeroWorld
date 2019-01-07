@@ -4,7 +4,6 @@ face corpse.111
 material 32
 type 72
 weight 100
-editable 128
 nrof 1
 value 50
 food 600

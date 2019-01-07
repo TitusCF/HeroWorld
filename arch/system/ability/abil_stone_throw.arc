@@ -9,6 +9,5 @@ sp 40
 wc 1
 no_strength 0
 invisible 1
-editable 0
 skill missile weapons
 end

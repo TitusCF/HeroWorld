@@ -1,8 +1,9 @@
 Object spell_frostbolt
+anim_suffix spellcasting
 name frostbolt
 name_pl frostbolts
-face spell_evocation.111
-level 3
+face spell_frostbolt.111
+level 6
 sp 12
 casting_time 10
 path_attuned 4
@@ -19,4 +20,7 @@ attacktype 18
 range 12
 no_drop 1
 invisible 1
+msg
+Fires a directed bolt of frost that does cold damage.
+endmsg
 end

@@ -1,8 +1,9 @@
 Object spell_cause_heavy_wounds
+anim_suffix spellcasting
 name cause heavy wounds
 name_pl cause heavy wounds
-face spell_praying.111
-level 5
+face spell_cause_heavy_wounds.111
+level 10
 grace 16
 casting_time 5
 path_attuned 131072
@@ -17,4 +18,7 @@ value 50
 attacktype 1048576
 no_drop 1
 invisible 1
+msg
+Fires a bullet that damages creatures in its path.
+endmsg
 end

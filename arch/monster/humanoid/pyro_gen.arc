@@ -1,6 +1,5 @@
 Object pyro_gen
 race human
-type 140
 name a bottleful of bombers
 other_arch pyromaniac
 generator 1
@@ -14,6 +13,5 @@ alive 1
 level 1
 sp 130
 maxsp 1
-editable 1
-magicmap yellow
+generator_limit 5
 end

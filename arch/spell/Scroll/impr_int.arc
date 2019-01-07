@@ -1,8 +1,10 @@
 Object improve_int
-name Improve Intelligence Bonus
+name scroll
+name_pl scrolls
 face scroll.111
+identified_name Improve Intelligence Bonus
+identified_face improve_int.111
 race scrolls
-color_fg white
 nrof 1
 type 124
 material 1
@@ -10,8 +12,6 @@ value 10000
 weight 200
 sp 10
 slaying potionint
-editable 2048
-identified 1
-name_pl Improve Intelligence Bonus
+identified_name_pl Improve Intelligence Bonus
 client_type 1016
 end

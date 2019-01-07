@@ -1,4 +1,5 @@
 Object spell_sigil
+anim_suffix spellcasting
 name sigil
 name_pl sigil
 type 101
@@ -11,12 +12,8 @@ sp 5
 casting_time 15
 skill evocation
 path_attuned 2048
-face penta.111
+face spell_sigil.111
 msg
-Sigil is a special rune - when casting the
-spell, the caster specifies what other spell
-should be encapsulated in the sigil.  When
-the sigil is activated, that other spell is
-cast on the target.
+Creates a special rune that may be used to encapsulate another spell.  When casting the spell, the caster specifies the spell that should be encapsulated in the firetrap.  When the sigil is triggered, the specified spell is cast on the target.
 endmsg
 end

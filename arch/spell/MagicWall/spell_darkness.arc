@@ -1,8 +1,9 @@
 Object spell_darkness
+anim_suffix spellcasting
 name darkness
 name_pl darkness
-face spell_praying.111
-level 5
+face spell_darkness.111
+level 10
 grace 15
 casting_time 5
 path_attuned 524288
@@ -15,8 +16,11 @@ no_drop 1
 invisible 1
 duration 50
 duration_modifier 2
-maxgrace 50
+maxgrace 30
 range 2
 range_modifier 13
-no_pass 1
+move_block all
+msg
+Places a wall of darkness in front of the caster. The wall can be crossed, but creatures cannot see through it.
+endmsg
 end

@@ -1,8 +1,9 @@
 Object spell_protection_from_slow
+anim_suffix spellcasting
 name protection from slow
 name_pl protection from slow
-face spell_praying.111
-level 7
+face spell_protection_from_slow.111
+level 4
 grace 20
 casting_time 10
 path_attuned 1
@@ -17,4 +18,7 @@ duration 500
 maxgrace 40
 resist_slow 50
 dam_modifier 4
+msg
+Improves the caster's protection against slow spells.
+endmsg
 end

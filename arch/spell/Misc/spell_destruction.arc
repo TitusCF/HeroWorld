@@ -1,11 +1,12 @@
 Object spell_destruction
+anim_suffix spellcasting
 name destruction
 name_pl destruction
-face spell_sorcery.111
-level 18
+face spell_destruction.111
+level 30
 sp 30
 casting_time 10
-path_attuned 0
+path_attuned 512
 other_arch destruction
 skill sorcery
 type 101
@@ -13,18 +14,13 @@ subtype 16
 value 180
 no_drop 1
 invisible 1
-range 5
-range_modifier 6
-dam 15
-dam_modifier 3
-maxsp 15
+range 4
+range_modifier 12
+dam 60
+dam_modifier 1
+maxsp 20
 attacktype 2
 msg
-Destruction damages all creatures around the
-player.  Unlike most spells, destruction will
-work through walls and doors.  Thus, the
-caster need not see all the targets for this
-spell to work.  The damage is all magical in
-nature.
+Destruction damages all creatures around the player.  Unlike most spells, this one works through walls and doors so the caster need not see targets to attack them.  The damage delivered is entirely magical in nature, and increases as sorcery skill level, Intelligence, Wisdom, and Power stats increase.
 endmsg
 end

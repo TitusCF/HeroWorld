@@ -18,16 +18,6 @@ subtype 3
 face mbbrazier.111
 slaying brazier
 end
-Object building_hangingfirepot
-name Hanging Firepot material
-nrof 1
-weight 1500
-value 8500
-type 161
-subtype 3
-face mbhangingfirepot.111
-slaying hangingfirepot
-end
 Object building_fireplace
 name Fireplace material
 nrof 1
@@ -58,13 +48,24 @@ subtype 3
 face mbsign.111
 slaying sign
 end
-Object building_altar_none
-name Altar material
+Object building_bed_save
+name Bed of reality material
 nrof 1
-weight 1500
-value 2500000
+weight 50000
+value 100000
 type 161
 subtype 3
-face mbaltarnone.111
+face mbbed_save.111
+slaying bed_save
+end
+Object building_altar
+name Altar material
+nrof 1
+weight 25000
+value 900000
+type 161
+subtype 3
+level 30
+face mbaltar_none.111
 slaying altar_none
 end

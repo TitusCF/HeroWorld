@@ -1,8 +1,8 @@
-# Obsolete spell - here for backward compatibility
 Object spell_defense
+anim_suffix spellcasting
 name defense
 name_pl defense
-face spell_praying.111
+face spell_defense.111
 level 40
 grace 75
 casting_time 30
@@ -33,4 +33,7 @@ resist_fear 30
 resist_deplete 30
 resist_death 30
 resist_blind 30
+msg
+Granted by Lythander to enable a worshipper to request resistance to various damaging attack types.
+endmsg
 end

@@ -6,8 +6,5 @@ other_arch Pdragon_mail
 slaying dragon_scale
 food 60
 no_pick 1
-walk_on 1
-editable 64
-visibility 100
-color_fg black
+move_on walk
 end

@@ -1,6 +1,8 @@
 Object spell_heroism
+anim_suffix spellcasting
 name heroism
 name_pl heroism
+face spell_heroism.111
 level 10
 sp 50
 casting_time 10

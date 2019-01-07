@@ -1,19 +1,10 @@
 Object paladin_class
 name paladin
+anim_suffix class_paladin
 randomitems paladin_class_items
 face paladin.171
 type 37
-anim
-paladin.111
-paladin.112
-paladin.131
-paladin.132
-paladin.151
-paladin.152
-paladin.171
-paladin.172
-facings 4
-mina
+animation paladin_class
 is_animated 1
 anim_speed -1
 Str 0
@@ -23,6 +14,11 @@ Int -2
 Wis 2
 Pow 1
 Cha 1
+msg
+You are a militant priest, with an emphasis on 'priest'.
+You've been taught archery and the use of weapons, but great care has been taken that you're doctrinally correct.  Now you've been sent out in the world to convert the unrighteous and destroy the enemies of the faith.  Your churchmembers have been charged a pretty penny to equip you for the job!
+All other areas of your education have been neglected.  Perhaps aware of your deficiency, your superiors have given you some measure of protection from magic.
+endmsg
 end
 Object paladin_holy_symbol
 name Paladin's holy symbol
@@ -33,7 +29,6 @@ material 20
 nrof 1
 value 1500
 weight 5000
-editable 2048
 resist_magic 30
 body_skill -1
 client_type 451

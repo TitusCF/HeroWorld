@@ -1,86 +1,262 @@
-archetype-file	NAME.arc
+archetype-file  NAME.arc
 
-image-file	NAME.PDA
+image-file
 
-	where
-		P - part number
-		D - coding, or any other instance
-		    coding in 
-		A - animation phase
+    NAME.PDA
+
+        where
+            P - part number
+            D - coding, or any other instance
+                coding in
+            A - animation phase
+
 numbering, PDA
-	- 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F,G,...,Z
-	- alphanumerics
-	- can be thought as hexadecimals
+
+    - 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F, ..., Z
+    - Alphanumeric
+    - Can be thought as hexadecimals
 
 name NAME:
-	- maximum 10 characters long, so max file name is 14 characters,
-	  that fit into portability requirements:
 
-Part numbers
-	3x3
-		1 2 3
-		4 5 6
-		7 8 9
-	2x2
-		1 2
-		3 4
-	3x2
-		1 2 3
-		4 5 6
-	2x3
-		1 2
-		3 4
-		5 6
-codings:
-	direction:
+    - Maximum of 10 characters long, so max file name is 14 characters,
+      that fit into portability requirements
 
-		8  1  2
-		 \ | /
-		7- 0 -3
-		 / | \
-		6  5  4
-	
-	- same as in crossfire
+Part numbers:
 
-	turnable (reflecting objects):
-		0 to left, vertical
-		1 to right, horizontal
-	- also in gates,signs, ...
+    3x3 : 1 2 3
+          4 5 6
+          7 8 9
 
-walls:
-		   1
-		   |
-		8 -+- 2
-		   |
-		   4
+    2x2 : 1 2
+          3 4
 
-	- bit-combination; eg. 8 + 4 + 2 + 1 = F is cross,
-	  4 + 1 = 5 is vertical wall.
+    3x2 : 1 2 3
+          4 5 6
 
-river:
+    2x3 : 1 2
+          3 4
+          5 6
 
-    The non branched rivers are stored as river_XY.arc and river_XY.PDA
-    The XY use the direction scheme above (that is, river_15 runs
-    north/south).  As of now, D and A are always 1.  P will be up to
-    3, as rivers that run diagonally have wedges for the corners of the
-    adjacent spaces.  These wedges are stored as river_48.211, river_48.311,
-    river_26.211 and river_26.311.  The archetypes for these are stored
-    in river_48.arc and river_26.arc.
+Codings:
 
-    Junctions are of the form branch_XYZ.[arc/111].  XYZ reperesent the
-    three directions the river exits.  367 would be east,southwest, and
-    west.  Junctions may also have multiple parts - this happens when
-    the junction has a diagonal direction.
+    Direction:
 
-    By convention, all directions for the river parts are in ascending
-    order.  That is to say if the exit locations are 2,6,3, that would
-    be stored as branch_236.
+        8  1  2
+         \ | /
+        7- 0 -3
+         / | \
+        6  5  4
 
-cave:
-	-complex
+        Same as in Crossfire
 
-modified:
-	93/08 hevi@lut.fi - created
-	94/05 master@rahul.net - updated river definitions.
+    Turnable (reflecting objects):
 
-### end of README ###
+        0 to left, vertical
+        1 to right, horizontal
+
+    - also in gates, signs, ...
+
+Walls:
+
+    Name format: name_X.arc, name_X.PDA.png
+
+           1
+           |
+        8 -+- 2
+           |
+           4
+
+    X is a bit-wise combination expressed in hexadecimal form.  For example,
+    8 + 4 + 2 + 1 = F describes a vertical cross, and 4 + 1 = 5 identifies a
+    vertical wall.
+
+    P, D, and A are always 1.
+
+ f diagonal connecting points are not
+    offered by the arch.  If d   Object Names:
+
+        When creating .arc files, the object name is determined by a similar,
+        but distinctly different, scheme.  See the server code in
+        server/build_map.c and random_maps/wall.c for the source of the
+        information that follows.  The arch name (ie. awall) must not have any
+        underscores.  A suffix in the form _U[_V[_W]] is appended to the arch
+        name.
+
+        U is the number of connection points (ie. for a pillar U == 0, and for
+        a cross U == 4).
+
+        At the time of this writing, the formulae for calculating V and W is
+        not known, but, U, V, and W can be determined as follows.  Calculate a
+        value called "connect" by adding the values of the connecting points:
+
+               4
+               |
+            1 -0- 2
+               |
+               8
+
+        Then use "connect" to pick a suffix:
+
+            0:  _0
+            1:  _1_3
+            2:  _1_4
+            3:  if (has_window)
+                    _win2
+                else
+                    _2_1_2
+            4:  _1_2
+            5:  _2_2_4
+            6:  _2_2_1
+            7:  _3_1
+            8:  _1_1
+            9:  _2_2_3
+            10: _2_2_2
+            11: _3_3
+            12: if (has_window)
+                    _win1
+                else
+                    _2_1_1
+            13: _3_4
+            14: _3_2
+            15: _4
+
+    For a complete example, a vertical cross wall graphic in an awall arch set
+    is named awall_F.base.111.png.  Face information is kept in awall_F.face,
+    and the archetype data is in awall.arc.  Inside awall.arc, the Object name
+    is awall_4.
+
+Diagonal (extended) walls, roads, etc.
+
+    The legacy wall-naming convention is used in conjunction with the
+    extension to the name format described here to provide a uniform naming
+    scheme that supports corner connections.  Legacy names do not need to
+    change to simply add diagonal versions of the legacy graphics.
+
+    The name format is name_XY.arc, name_XY.PDA.png
+
+    X follows the same rules as used for the legacy wall format, except that
+    when there are no NSEW connecting points, X == 0.
+
+    Y may be omitted, or may be 0 if diagonal connecting points are not
+    offered by the arch.  If diagonal connecting points are implemented, Y is
+    a bit-wise combination computed in the same manner as X, and is also
+    expressed as a hexadecimal digit.  The difference is that it refers to
+    corner connections:
+
+        1   2
+         \ /
+          X
+         / \
+        8   4
+
+    For example, name_0F refers to a diagonal cross, or connecting points in
+    all four corners.  name_05 and name_0A refer to pure diagonals.
+
+    Since diagonal pieces require corner fills, P is used to differentiate the
+    component parts of the diagonal.
+
+        P (part number) ranges from 1 to 3.
+
+            1 : used for "normal" pieces that connect direction points.
+
+            2 : used for a top corner fill needed to complete diagonal
+                connections.
+
+            3 : used for a bottom corner fill needed to complete diagonal
+                connections.
+
+            Examples of diagonal files are dirtroad_05.211, dirtroad_05.311,
+            dirtroad_0A.211, and dirtroad_0A.311.  The archetypes for these
+            are stored in dirtroad_05.arc and dirtroad_0A.arc.  The corner
+            fill is a "part" of a diagonal, and is not really useful on its
+            own.
+
+            The .211 and .311 file names are based on the full diagonal, but
+            are used for all diagonal connecting points.  Usually it is not
+            necessary to customize the corner piece to fit each and every
+            possible XY combinationi that incorporates a diagonal connecting
+            point.
+
+     Object Names:
+
+         When creating object names, use a different format (_U_XYP) unless
+         the legacy naming format can be figured out and adapted to the
+         diagonal set - in which case, it should be documented here.  This
+         format allows consistent object naming in the event that renaming is
+         desirable in the future, and it does not collide with the legacy
+         object naming.
+
+         U  = Number of connecting points.
+         XY = Where X and Y are re-used as described above.
+         P  = Where P is the part number.
+
+Cave:
+
+    Complex
+
+River names:
+
+    NOTE:  Consider deprecation of this format in favor of the extended wall
+    naming.  It is more flexible than this format.
+
+    Simple diagonals, like non-branched rivers, are saved as name_XY.arc and
+    name_XY.PDA.png.
+
+        X and Y use the direction scheme shown above (and copied here for
+        ease of reference).  For example, river_15 runs north/south; river_26
+        runs from the northeast to the southwest.
+
+            8  1  2
+             \ | /
+            7- 0 -3
+             / | \
+            6  5  4
+
+        X and Y do not define direction of water flow.  They are simply
+        connecting points to neighboring arches of the same set.  X and Y are
+        ordered low to high, so it is not expected that a river_62 exist;
+        instead the piece is named river_26.
+
+        A cul-de-sac, or dead-end could have X == 0 and Y set to the connect
+        point.  Conceptually, a pool could follow this same naming convention
+        and set X == Y == 0.
+
+        D and A are presently always set to 1.
+
+        P ranges from 1 to 3.
+
+            1 : used for "normal" pieces that connect direction points.
+
+            2 : used for a top corner wedge used to fill in diagonals (i.e. A
+                wedge in the top right or top left corner).
+
+            3 : used for a bottom corner wedge used to fill in diagonals (i.e.
+                A wedge in the bottom right or bottom left corner).
+
+            Examples of wedges are river_48.211, river_48.311, river_26.211,
+            and river_26.311.  The archetypes for these are stored in
+            river_48.arc and river_26.arc.  The wedge is a "part" of a
+            diagonal, and is not really useful on its own.
+
+    River junctions, add another digit to the format used by simple diagonals,
+    and are stored as name_XYZ.arc and name_XYZ.PDA.
+
+        X, Y, and Z represent the three directions the river exits.  367 would
+        be east,southwest, and west.  Junctions, or branchesi, may also have
+        multiple parts - this happens when the junction has a diagonal
+        direction.
+
+        By convention, directions for the river parts are in ascending order.
+        That is, if the exit locations are 2, 6, 3, the name could be
+        branch_236 (not branch_326, or branch_623, etc).
+
+    Complex branching paths could be set by adding digits to allow four or
+    more connecting points, but use of the extended walls format is
+    recommended instead.
+
+Modified:
+
+    93/08 hevi@lut.fi - created
+    94/05 master@rahul.net - updated river definitions.
+    10/06 kbulgrien - rewrite & add extended wall name format.
+

@@ -12,8 +12,6 @@ resist_poison 15
 resist_fear 50
 value 140
 material 128
-editable 1024
-color_fg black
 body_head -1
 gen_sp_armour 1
 end

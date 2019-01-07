@@ -1,11 +1,7 @@
 Object golem
 type 46
 face golem.111
-color_fg brown
-anim
-golem.111
-golem.112
-mina
+animation golem
 monster 1
 alive 1
 ac 5
@@ -14,9 +10,9 @@ dam 8
 attacktype 1
 hp 50
 maxhp 50
-level 5
+level 4
 speed 0.1
-exp 50
+exp 65
 weight 200000
-editable 33
+move_type walk
 end

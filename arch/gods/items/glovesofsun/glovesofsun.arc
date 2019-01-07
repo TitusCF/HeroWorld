@@ -3,18 +3,14 @@ name Gloves of the Sun
 name_pl Gloves of the Sun
 client_type 300
 msg
-  This pair of gloves will aid any of Gaea's 
-  most faithful in seeing her will protected.
-endmsg 
+  This pair of gloves will aid any of Gaea's most faithful in seeing her will protected.
+endmsg
 nrof 1
 type 100
 face glovesofsun.111
-anim
-glovesofsun.111
-glovesofsun.112
-glovesofsun.113
-mina
-speed 0.25
+animation glovesofsun
+anim_speed 4
+client_anim_random 1
 material 8
 weight 900
 value 20000

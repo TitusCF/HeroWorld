@@ -5,7 +5,6 @@ face pix_dust.111
 material 4
 weight 100
 value 800
-editable 2048
 identified 1
 name_pl lich dusts
 client_type 628

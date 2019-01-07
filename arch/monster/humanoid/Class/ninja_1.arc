@@ -5,6 +5,7 @@ randomitems npc_ninja
 face ninja.171
 animation ninja
 monster 1
+move_type walk
 maxsp 7
 sp 7
 Pow 1
@@ -24,17 +25,14 @@ weight 50000
 level 1
 will_apply 2
 pick_up 24
-can_apply 25
 can_use_scroll 1
 can_use_skill 1
-can_use_wand 1
 can_cast_spell 1
 can_use_bow 1
 can_use_ring 1
 can_use_shield 1
 can_use_armour 1
 can_use_weapon 1
-editable 1
 body_skill 1
 body_finger 2
 body_torso 1

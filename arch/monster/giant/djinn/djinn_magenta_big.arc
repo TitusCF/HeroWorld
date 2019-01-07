@@ -3,16 +3,11 @@ race faerie
 name djinn
 randomitems djinn_magenta
 face djinn_magenta_big.x11
+animation djinn_magenta_big
 monster 1
+move_type walk
 sleep 1
 Wis 50
-anim
-facings 2
-djinn_magenta_big.x11
-djinn_magenta_big.x12
-djinn_magenta_big.x21
-djinn_magenta_big.x22
-mina
 level 116
 Con 70
 Int 70
@@ -35,7 +30,7 @@ attack_movement 7
 attacktype 15
 see_invisible 1
 exp 800000
-ac -50
+ac -25
 wc -45
 dam 90
 hp 31000
@@ -45,15 +40,13 @@ no_pick 1
 speed -0.50
 weight 900000
 run_away 5
-editable 1
 can_use_weapon 1
 can_use_shield 1
 can_use_armour 1
-can_use_rod 1
-can_use_horn 1
+can_use_range 1
 can_use_ring 1
-can_use_wand 1
 can_use_scroll 1
+will_apply 12
 body_torso 1
 body_head 1
 body_shoulder 1
@@ -69,14 +62,9 @@ More
 Object djinn_magenta_big_2
 name djinn
 face djinn_magenta_big.x11
-anim
-facings 2
-djinn_magenta_big.x11
-djinn_magenta_big.x12
-djinn_magenta_big.x21
-djinn_magenta_big.x22
-mina
+animation djinn_magenta_big
 monster 1
+move_type walk
 alive 1
 no_pick 1
 y 1
@@ -86,14 +74,9 @@ More
 Object djinn_magenta_big_3
 name djinn
 face djinn_magenta_big.x11
-anim
-facings 2
-djinn_magenta_big.x11
-djinn_magenta_big.x12
-djinn_magenta_big.x21
-djinn_magenta_big.x22
-mina
+animation djinn_magenta_big
 monster 1
+move_type walk
 alive 1
 no_pick 1
 y 2
@@ -103,14 +86,9 @@ More
 Object djinn_magenta_big_4
 name djinn
 face djinn_magenta_big.x11
-anim
-facings 2
-djinn_magenta_big.x11
-djinn_magenta_big.x12
-djinn_magenta_big.x21
-djinn_magenta_big.x22
-mina
+animation djinn_magenta_big
 monster 1
+move_type walk
 alive 1
 no_pick 1
 y 3
@@ -120,14 +98,9 @@ More
 Object djinn_magenta_big_5
 name djinn
 face djinn_magenta_big.x11
-anim
-facings 2
-djinn_magenta_big.x11
-djinn_magenta_big.x12
-djinn_magenta_big.x21
-djinn_magenta_big.x22
-mina
+animation djinn_magenta_big
 monster 1
+move_type walk
 alive 1
 no_pick 1
 y 4
@@ -137,14 +110,9 @@ More
 Object djinn_magenta_big_6
 name djinn
 face djinn_magenta_big.x11
-anim
-facings 2
-djinn_magenta_big.x11
-djinn_magenta_big.x12
-djinn_magenta_big.x21
-djinn_magenta_big.x22
-mina
+animation djinn_magenta_big
 monster 1
+move_type walk
 alive 1
 no_pick 1
 y 5
@@ -154,14 +122,9 @@ More
 Object djinn_magenta_big_7
 name djinn
 face djinn_magenta_big.x11
-anim
-facings 2
-djinn_magenta_big.x11
-djinn_magenta_big.x12
-djinn_magenta_big.x21
-djinn_magenta_big.x22
-mina
+animation djinn_magenta_big
 monster 1
+move_type walk
 alive 1
 no_pick 1
 x 1
@@ -171,14 +134,9 @@ More
 Object djinn_magenta_big_8
 name djinn
 face djinn_magenta_big.x11
-anim
-facings 2
-djinn_magenta_big.x11
-djinn_magenta_big.x12
-djinn_magenta_big.x21
-djinn_magenta_big.x22
-mina
+animation djinn_magenta_big
 monster 1
+move_type walk
 alive 1
 no_pick 1
 x 1
@@ -189,14 +147,9 @@ More
 Object djinn_magenta_big_9
 name djinn
 face djinn_magenta_big.x11
-anim
-facings 2
-djinn_magenta_big.x11
-djinn_magenta_big.x12
-djinn_magenta_big.x21
-djinn_magenta_big.x22
-mina
+animation djinn_magenta_big
 monster 1
+move_type walk
 alive 1
 no_pick 1
 x 1
@@ -207,14 +160,9 @@ More
 Object djinn_magenta_big_10
 name djinn
 face djinn_magenta_big.x11
-anim
-facings 2
-djinn_magenta_big.x11
-djinn_magenta_big.x12
-djinn_magenta_big.x21
-djinn_magenta_big.x22
-mina
+animation djinn_magenta_big
 monster 1
+move_type walk
 alive 1
 no_pick 1
 x 1
@@ -225,14 +173,9 @@ More
 Object djinn_magenta_big_12
 name djinn
 face djinn_magenta_big.x11
-anim
-facings 2
-djinn_magenta_big.x11
-djinn_magenta_big.x12
-djinn_magenta_big.x21
-djinn_magenta_big.x22
-mina
+animation djinn_magenta_big
 monster 1
+move_type walk
 alive 1
 no_pick 1
 x 1
@@ -243,14 +186,9 @@ More
 Object djinn_magenta_big_13
 name djinn
 face djinn_magenta_big.x11
-anim
-facings 2
-djinn_magenta_big.x11
-djinn_magenta_big.x12
-djinn_magenta_big.x21
-djinn_magenta_big.x22
-mina
+animation djinn_magenta_big
 monster 1
+move_type walk
 alive 1
 no_pick 1
 x 1
@@ -261,14 +199,9 @@ More
 Object djinn_magenta_big_14
 name djinn
 face djinn_magenta_big.x11
-anim
-facings 2
-djinn_magenta_big.x11
-djinn_magenta_big.x12
-djinn_magenta_big.x21
-djinn_magenta_big.x22
-mina
+animation djinn_magenta_big
 monster 1
+move_type walk
 alive 1
 no_pick 1
 x 2
@@ -278,14 +211,9 @@ More
 Object djinn_magenta_big_15
 name djinn
 face djinn_magenta_big.x11
-anim
-facings 2
-djinn_magenta_big.x11
-djinn_magenta_big.x12
-djinn_magenta_big.x21
-djinn_magenta_big.x22
-mina
+animation djinn_magenta_big
 monster 1
+move_type walk
 alive 1
 no_pick 1
 x 2
@@ -296,14 +224,9 @@ More
 Object djinn_magenta_big_16
 name djinn
 face djinn_magenta_big.x11
-anim
-facings 2
-djinn_magenta_big.x11
-djinn_magenta_big.x12
-djinn_magenta_big.x21
-djinn_magenta_big.x22
-mina
+animation djinn_magenta_big
 monster 1
+move_type walk
 alive 1
 no_pick 1
 x 2
@@ -314,14 +237,9 @@ More
 Object djinn_magenta_big_17
 name djinn
 face djinn_magenta_big.x11
-anim
-facings 2
-djinn_magenta_big.x11
-djinn_magenta_big.x12
-djinn_magenta_big.x21
-djinn_magenta_big.x22
-mina
+animation djinn_magenta_big
 monster 1
+move_type walk
 alive 1
 no_pick 1
 x 2
@@ -332,14 +250,9 @@ More
 Object djinn_magenta_big_18
 name djinn
 face djinn_magenta_big.x11
-anim
-facings 2
-djinn_magenta_big.x11
-djinn_magenta_big.x12
-djinn_magenta_big.x21
-djinn_magenta_big.x22
-mina
+animation djinn_magenta_big
 monster 1
+move_type walk
 alive 1
 no_pick 1
 x 2
@@ -350,14 +263,9 @@ More
 Object djinn_magenta_big_19
 name djinn
 face djinn_magenta_big.x11
-anim
-facings 2
-djinn_magenta_big.x11
-djinn_magenta_big.x12
-djinn_magenta_big.x21
-djinn_magenta_big.x22
-mina
+animation djinn_magenta_big
 monster 1
+move_type walk
 alive 1
 no_pick 1
 x 2

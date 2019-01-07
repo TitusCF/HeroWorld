@@ -1,8 +1,9 @@
 Object spell_large_fireball
+anim_suffix spellcasting
 name large fireball
 name_pl large fireball
-face spell_pyromancy.111
-level 5
+face spell_large_fireball.111
+level 10
 sp 16
 casting_time 8
 path_attuned 2
@@ -21,8 +22,6 @@ invisible 1
 skill pyromancy
 food 4
 msg
-This spell fires a small bullet of fire, that
-explodes into a large area of fire when it
-hits something.
+Fires a bullet that explodes into a large fire storm when it hits something. Items caught in the blaze may be destroyed.
 endmsg
 end

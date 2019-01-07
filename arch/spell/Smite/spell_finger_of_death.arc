@@ -1,10 +1,11 @@
 Object spell_finger_of_death
+anim_suffix spellcasting
 name finger of death
 name_pl finger of death
-face spell_praying.111
+face spell_finger_of_death.111
 type 101
 subtype 10
-level 14
+level 28
 value 140
 grace 50
 casting_time 5
@@ -19,4 +20,7 @@ maxgrace 35
 attacktype 131072
 no_drop 1
 invisible 1
+msg
+A spell granted by the Devourers that can to kill a target outright without respect to hit points.
+endmsg
 end

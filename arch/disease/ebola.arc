@@ -3,7 +3,6 @@ name Red Death
 type 158
 invisible 1
 attacktype 1048576
-other_arch blood
 wc 30
 magic -1
 Str -3

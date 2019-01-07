@@ -7,17 +7,12 @@ hp 1
 msg
 You set off a trap!
 endmsg
-anim
-trap.111
-trap.111
-mina
+animation trap
 level 1
-color_fg black
 is_animated 0
 invisible 1
 no_pick 1
-walk_on 1
-editable 32
+move_on walk
 attacktype 1
 dam 90
 Cha 20

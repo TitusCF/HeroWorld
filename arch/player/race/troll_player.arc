@@ -1,36 +1,19 @@
 Object troll_player
 name troll
 race troll
-randomitems troll_player_items_new
+randomitems troll_player_items
 face troll_p.151
 msg
-Trolls are usually nasty creatures: scions
-of Gnarg. They have amazing strength and
-hardiness, but they're a bit clumsy, very
-stupid, impious, and bad at handling and
-obtaining magic.  They heal with amazing
-rapidity and can see in the dark.  Because of
-the above attributes, they're great in any
-fight.  Well, they're great until someone
-waves torches at them: fire presents great
-peril to trolls.
+Skills: None
+Resistances: Fire -30, Cold +30
+Attunements: Repelled fire
+Special: Fast HP regeneration, slow SP regeneration
 
-Most trolls are destroyed on sight by
-civilized people: but a few have proved
-deserving of tolerance and are permitted to
-enter cities.
+Description:
+Trolls are usually nasty creatures: scions of Gnarg. They have amazing strength and hardiness, but they're a bit clumsy, very stupid, impious, and bad at handling and obtaining magic. They heal with amazing rapidity and can see in the dark. Because of the above attributes, they're great in any fight. Well, they're great until someone waves torches at them: fire presents great peril to trolls.
+Most trolls are destroyed on sight by civilized people: but a few have proved deserving of tolerance and are permitted to enter cities.
 endmsg
-anim
-troll_p.111
-troll_p.112
-troll_p.131
-troll_p.132
-troll_p.151
-troll_p.152
-troll_p.171
-troll_p.172
-facings 4
-mina
+animation troll_player
 is_animated 1
 anim_speed -1
 type 1
@@ -57,8 +40,6 @@ Cha -4
 resist_fire -30
 resist_cold 30
 path_repelled 2
-editable 0
-magicmap blue
 body_range 1
 body_arm 2
 body_torso 1
@@ -71,6 +52,10 @@ body_foot 2
 body_hand 2
 body_wrist 2
 body_waist 1
+body_leg 2
+maxhp 30
+maxsp 30
+maxgrace 30
 end
 Object troll_player_force
 name troll_force

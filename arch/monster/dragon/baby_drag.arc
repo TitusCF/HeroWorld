@@ -3,16 +3,12 @@ name baby dragon
 race dragon
 randomitems dragon
 monster 1
+move_type walk
 sleep 1
 Wis 20
 face baby_drag.111
-anim
-baby_drag.111
-baby_drag.112
-baby_drag.113
-mina
-color_fg red
-level 10
+animation baby_dragon
+level 25
 Con 8
 Pow 8
 can_cast_spell 1
@@ -24,7 +20,7 @@ resist_fear 100
 resist_blind 50
 resist_magic 30
 resist_cold -100
-ac -8
+ac -4
 wc -10
 dam 10
 exp 55000
@@ -34,5 +30,4 @@ no_pick 1
 speed -0.3
 weight 225000
 run_away 3
-editable 1
 end

@@ -1,7 +1,8 @@
 Object spell_glyph
+anim_suffix spellcasting
 name glyph
 name_pl glyph
-face glyph.111
+face spell_glyph.111
 type 101
 subtype 2
 no_drop 1
@@ -13,10 +14,9 @@ casting_time 15
 skill praying
 path_attuned 2048
 msg
-Glyph is a special rune - when casting the
-spell, the caster specifies what other spell
-should be encapsulated in the glyph spell.
-When the glyph is activated, the encapsulated
-spell is cast on the target.
+Creates a special rune that may be used to encapsulate another spell.  When casting the spell, the caster specifies a praying spell to encapsulate in the glyph.  When the glyph is triggered, the specified spell is cast on the target.
+
+An example of how to create a glyph is:
+ cast glyph summon cult monsters
 endmsg
 end

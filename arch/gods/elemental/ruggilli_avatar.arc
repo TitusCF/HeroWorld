@@ -10,6 +10,7 @@ Int 30
 Wis 30
 Pow 30
 monster 1
+move_type walk
 alive 1
 attacktype 5
 path_attuned 131074
@@ -19,12 +20,12 @@ resist_fire 100
 resist_cold -100
 resist_magic 30
 resist_physical 40
-ac -5
-wc -3
-dam 60
+ac 5
+wc 11
+dam 40
 hp 400
 maxhp 400
-level 15
+level 19
 speed 0.50
 can_use_weapon 1
 can_cast_spell 1

@@ -1,108 +1,103 @@
 Object diamond_converter
-name drop gold to buy diamonds
+name drop gold to buy diamonds, 40 for 1
 other_arch gem
 slaying goldcoin
 food 40
 type 103
 no_pick 1
-face conv.111
-walk_on 1
-editable 64
-visibility 100
-magicmap light_blue
+face diamond_converter.111
+move_on walk
 end
 Object pearl_converter
-name drop gold to buy pearls
+name drop gold to buy pearls, 5 for 1
 other_arch pearl
 slaying goldcoin
 type 103
 food 5
 no_pick 1
-face conv.111
-walk_on 1
-editable 64
-visibility 100
+face pearl_converter.111
+move_on walk
 end
 Object ruby_converter
-name drop gold to buy rubies
+name drop gold to buy rubies, 20 for 1
 other_arch ruby
 slaying goldcoin
 food 20
 type 103
 no_pick 1
-face conv.111
-walk_on 1
-editable 64
-visibility 100
+face ruby_converter.111
+move_on walk
 end
 Object silver_converter
-name convert silver into gold
+name convert silver into gold, 10 for 1
 other_arch goldcoin
 slaying silvercoin
 food 10
 type 103
 no_pick 1
-face conv.111
-walk_on 1
-editable 64
-visibility 100
+face silver_converter.111
+move_on walk
 end
 Object gold_converter
-name convert gold into platinum
+name convert gold into platinum, 5 for 1
 other_arch platinacoin
 slaying goldcoin
 food 5
 type 103
 no_pick 1
-face conv.111
-walk_on 1
-editable 64
-visibility 100
+face gold_converter.111
+move_on walk
 end
 Object platinum_converter
-name convert platinum into gold
+name convert platinum into gold, 1 for 5
 other_arch goldcoin
 slaying platinacoin
 food 1
 sp 5
 type 103
 no_pick 1
-face conv.111
-walk_on 1
-editable 64
-visibility 100
+face platinum_converter.111
+move_on walk
 end
-# DON'T USE THIS OBJECT YET
-# it needs some server code which is under discussion
-# a character having amberium or jade coins without the server code in
-# place would be able to simply walk out of shops with stuff, without
-# actually paying anything.
 Object platinum_converter2
-name convert platinum into jade
+name convert platinum into jade, 100 for 1
 other_arch jadecoin
 slaying platinacoin
 food 100
 type 103
 no_pick 1
-face conv.111
-walk_on 1
-editable 64
-visibility 100
+face platinum_converter2.111
+move_on walk
 end
-# DON'T USE THIS OBJECT YET
-# it needs some server code which is under discussion
-# a character having amberium or jade coins without the server code in
-# place would be able to simply walk out of shops with stuff, without
-# actually paying anything.
 Object jade_converter
-name convert jade into amberium
+name convert jade into amberium, 100 for 1
 other_arch ambercoin
 slaying jadecoin
 food 100
 type 103
 no_pick 1
-face conv.111
-walk_on 1
-editable 64
-visibility 100
+face jade_converter.111
+move_on walk
+end
+Object jade_converter2
+name convert jade into platinum, 1 for 100
+other_arch platinacoin
+slaying jadecoin
+food 1
+sp 100
+type 103
+no_pick 1
+face jade_converter2.111
+move_on walk
+end
+Object amberium_converter
+name convert amberium into jade, 1 for 100
+other_arch jadecoin
+slaying ambercoin
+food 100
+sp 1
+type 103
+no_pick 1
+face amberium_converter.111
+move_on walk
 end

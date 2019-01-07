@@ -1,8 +1,9 @@
 Object spell_create_frost_wall
+anim_suffix spellcasting
 name create frost wall
 name_pl create frost wall
-face spell_evocation.111
-level 8
+face spell_create_frost_wall.111
+level 16
 sp 8
 casting_time 10
 path_attuned 2048
@@ -17,9 +18,12 @@ duration 240
 duration_modifier 1
 dam 2
 dam_modifier 3
-maxsp 8
+maxsp 20
 attacktype 18
 range 2
 range_modifier 12
-no_pass 1
+move_block all
+msg
+Creates a wall of frost in front of the caster. Creatures that cross the wall take cold damage. If the spell is cast multiple times on the same spot, the damage the wall delivers increases.
+endmsg
 end

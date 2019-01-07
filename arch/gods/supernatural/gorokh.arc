@@ -14,6 +14,7 @@ Int 30
 Wis 30
 Pow 30
 monster 1
+move_type walk
 alive 1
 attacktype 16384
 path_attuned 131072
@@ -41,5 +42,4 @@ endmsg
 exp 1
 weight 400000
 randomitems Gorokh
-editable 0
 end

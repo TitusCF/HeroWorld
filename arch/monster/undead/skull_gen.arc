@@ -1,7 +1,7 @@
 Object generate_skull
 other_arch skull
 race undead
-name generator
+name skull generator
 face skull_gen.111
 generator 1
 hp 500
@@ -14,7 +14,6 @@ no_pick 1
 speed 0.0002
 maxsp 1
 weight 2000
-editable 1
 undead 1
-magicmap white
+generator_limit 5
 end

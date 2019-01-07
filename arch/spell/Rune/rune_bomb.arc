@@ -8,17 +8,12 @@ hp 1
 msg
 RUN!  The timer's ticking!
 endmsg
-anim
-rune_bomb.111
-rune_bomb.111
-mina
+animation rune_create_bomb
 level 1
-color_fg orange
 is_animated 0
 invisible 1
 no_pick 1
-walk_on 1
-editable 32
+move_on walk
 attacktype 1
 dam 90
 Cha 20

@@ -8,6 +8,15 @@ Contact tituss on Crossfire IRC to discuss participating in this project
 
 Map modification:
 
+pup_land incorperated into Bigworld
+Bottomworld tiled to Bigworld hopefully becoming a globe
+Mlab deloused of content unsuitable for public play and reintigrated
+Greycastle rebalanced, reinigrated
+Guilds downgraded to a more simple form
+world_105_115 and surroundings modified
+Death dimension in progress, currently Room of Return is complete
+
+
 Current Mods:
 
 Modifier crafting on all gear & weapons
@@ -22,5 +31,7 @@ TODO:
 
 Method for turning on Permadeath/Hardcore Mode
 Further expansion of world by populating '/antarcticworld' and tiling it to the southern and northern boarders of Bigworld
-Expansion of buildable side of /world (bottomworld) to include elevated build levels and underground building levels
+Vertical expansion of buildable side of /world (bottomworld) to include elevated build levels and underground building levels connectable by buildable stairs
 Necromancy Spell Set
+Nix apartments from cities to encourage more use of Bottomworld build mechanics
+More buildable archs

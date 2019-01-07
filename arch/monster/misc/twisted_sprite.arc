@@ -1,0 +1,41 @@
+Object twisted_sprite
+Str 20
+name twisted sprite
+Con 20
+Pow 80
+hp 5500
+maxhp 4000
+sp 200
+maxsp 200
+exp 200000
+dam 25
+wc -20
+ac -7
+speed -0.600000
+level 35
+attacktype 2
+resist_physical 30
+resist_magic 100
+resist_confusion 100
+resist_paralyze 100
+resist_fear 100
+resist_godpower 90
+race faerie
+randomitems twisted_sprite
+face pixie.111
+animation pixie
+monster 1
+move_type walk fly_low
+sleep 1
+Wis 15
+see_invisible 1
+no_pick 1
+weight 10000
+alive 1
+run_away 15
+can_cast_spell 1
+can_use_range 1
+pick_up 1
+attack_movement 3
+body_range 1
+end

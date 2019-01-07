@@ -1,0 +1,165 @@
+Object horse1
+name horse
+race horse
+monster 1
+sleep 1
+Wis 6
+face horse1.131
+magicmap brown
+level 6
+Con 6
+Pow 6
+hp 200
+maxhp 200
+resist_fear -100
+attacktype 1
+unaggressive 1
+ac 4
+wc 4
+dam 20
+exp 20
+alive 1
+no_pick 1
+speed -0.07
+weight 600000
+run_away 5
+editable 1
+end
+
+Object horse1u
+name untamed horse
+race horse
+monster 1
+sleep 1
+Wis 6
+face horse1.131
+magicmap brown
+level 6
+Con 6
+Pow 6
+hp 200
+maxhp 200
+resist_fear -100
+attacktype 1
+ac 4
+wc 4
+dam 23
+exp 20
+alive 1
+no_pick 1
+speed -0.1
+weight 600000
+run_away 5
+editable 1
+end
+
+Object horse2
+name horse
+race horse
+monster 1
+sleep 1
+Wis 6
+face horse2.131
+magicmap white
+level 8
+Con 6
+Pow 6
+hp 200
+maxhp 200
+resist_fear -100
+attacktype 1
+unaggressive 1
+ac 4
+wc 4
+dam 22
+exp 22
+alive 1
+no_pick 1
+speed -0.07
+weight 600000
+run_away 5
+editable 1
+end
+
+Object horse2u
+name untamed horse
+race horse
+monster 1
+sleep 1
+Wis 6
+face horse2.131
+magicmap white
+level 8
+Con 6
+Pow 6
+hp 200
+maxhp 200
+resist_fear -100
+attacktype 1
+ac 4
+wc 4
+dam 25
+exp 22
+alive 1
+no_pick 1
+speed -0.1
+weight 600000
+run_away 5
+editable 1
+end
+
+Object horse3
+name horse
+race horse
+monster 1
+sleep 1
+Wis 6
+face horse3.131
+magicmap pink
+level 6
+Con 6
+Pow 6
+hp 200
+maxhp 200
+resist_fear -100
+attacktype 1
+unaggressive 1
+ac 4
+wc 4
+dam 18
+exp 18
+alive 1
+no_pick 1
+speed -0.07
+weight 600000
+run_away 5
+editable 1
+end
+
+Object horse3u
+name untamed horse
+race horse
+monster 1
+sleep 1
+Wis 6
+face horse3.131
+magicmap pink
+level 6
+Con 6
+Pow 6
+hp 200
+maxhp 200
+resist_fear -100
+attacktype 1
+ac 4
+wc 4
+dam 20
+exp 18
+alive 1
+no_pick 1
+speed -0.1
+weight 600000
+run_away 5
+editable 1
+end
+

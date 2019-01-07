@@ -1,0 +1,34 @@
+Object creeping_chaos
+name creeping chaos
+Con 20
+Wis 15
+Pow 50
+hp 8000
+maxhp 8000
+sp 200
+maxsp 200
+exp 300000
+dam 40
+wc -35
+ac -15
+speed -0.400000
+level 40
+attacktype 283648
+randomitems creeping_chaos
+resist_confusion 100
+resist_paralyze 100
+see_invisible 1
+can_cast_spell 1
+face crawling_chaos.111
+animation crawling_chaos
+alive 1
+resist_poison 100
+resist_fear 100
+resist_chaos 100
+resist_blind 100
+resist_electricity -100
+weight 750000
+monster 1
+move_type walk
+no_pick 1
+end

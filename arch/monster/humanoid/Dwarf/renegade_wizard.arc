@@ -1,0 +1,34 @@
+Object renegade_wizard
+name renegade wizard
+Con 30
+Wis 20
+Pow 13
+hp 8000
+maxhp 8000
+sp 300
+maxsp 300
+exp 300000
+dam 25
+wc -30
+ac -12
+speed -0.400000
+level 40
+resist_magic 30
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_confusion 100
+resist_paralyze 100
+resist_fear 100
+see_invisible 1
+unaggressive 0
+race dwarf
+randomitems renegade_wizard
+animation dwarf_wiz
+face dwarf_wiz.111
+monster 1
+move_type walk
+alive 1
+weight 50000
+can_cast_spell 1
+end

@@ -1,12 +1,12 @@
 # HeroWorld
 Crossfire Fork, Hero World Server/Maps/Arch
 
-Experimental, Sponsored Fork
+Experimental, Sponsored Fork </br>
 Optimised for player perminance
 
 Contact tituss on Crossfire IRC to discuss participating in this project
 
-Map modification:
+Map modification: </br>
 
 pup_land incorperated into Bigworld </br>
 Bottomworld tiled to Bigworld hopefully becoming a globe </br>
@@ -17,21 +17,21 @@ world_105_115 and surroundings modified </br>
 Death dimension in progress, currently Room of Return is complete </br>
 
 
-Current Mods:
+Current Mods: </br>
 
-Modifier crafting on all gear & weapons
-Word_of_penalty spell used for returning to life from the death dimension
+Modifier crafting on all gear & weapons </br>
+Word_of_penalty spell used for returning to life from the death dimension </br>
 
-Coming Soon:
+Coming Soon: </br>
 
-HP bars above mobs
-Spell for making items unique
+HP bars above mobs </br>
+Spell for making items unique </br>
 
-TODO:
+TODO: </br>
 
-Method for turning on Permadeath/Hardcore Mode
-Further expansion of world by populating '/antarcticworld' and tiling it to the southern and northern boarders of Bigworld
-Vertical expansion of buildable side of /world (bottomworld) to include elevated build levels and underground building levels connectable by buildable stairs
-Necromancy Spell Set
-Nix apartments from cities to encourage more use of Bottomworld build mechanics
-More buildable archs
+Method for turning on Permadeath/Hardcore Mode </br>
+Further expansion of world by populating '/antarcticworld' and tiling it to the southern and northern boarders of Bigworld </br>
+Vertical expansion of buildable side of /world (bottomworld) to include elevated build levels and underground building levels connectable by buildable stairs </br>
+Necromancy Spell Set </br>
+Nix apartments from cities to encourage more use of Bottomworld build mechanics </br>
+More buildable archs </br>

@@ -1,7 +1,7 @@
 Object gargolye
 randomitems gargoyle
 face gargoyle.111
-animation gargolye
+animation gargoyle
 monster 1
 move_type walk fly_low
 Str 30

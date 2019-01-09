@@ -11,7 +11,7 @@ msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Dec 16 20:53:13 2001
-Modified: 2018-12-28 Acer
+Modified: 2019-01-08 Acer
 endmsg
 outdoor 1
 tile_path_1 /world/world_105_114
@@ -645,6 +645,16 @@ x 2
 y 18
 elevation -2256
 end
+arch galleon
+name sailing galleon
+x 2
+y 18
+speed 0.5
+type 2
+container 10000000
+move_type boat
+passenger_limit 2
+end
 arch sea
 x 2
 y 19
@@ -665,7 +675,7 @@ arch dungeon_magic
 x 2
 y 21
 end
-arch sea
+arch sea1
 x 2
 y 21
 end
@@ -1709,13 +1719,6 @@ x 6
 y 10
 elevation -84
 move_block 0
-end
-arch fishboat
-slaying world_105_115
-hp 11
-sp 20
-x 6
-y 10
 end
 arch sea
 x 6
@@ -3133,17 +3136,6 @@ arch sea1
 x 11
 y 19
 end
-arch fishboat
-name to shrine
-slaying world_105_115
-msg
-A nice day for a sail.
-endmsg
-hp 5
-sp 10
-x 11
-y 19
-end
 arch dungeon_magic
 x 11
 y 20
@@ -3437,15 +3429,21 @@ y 19
 end
 arch dungeon_magic
 x 12
-y 19
-end
-arch dungeon_magic
-x 12
 y 20
 end
 arch sea
 x 12
 y 20
+end
+arch galleon
+name sailing galleon
+x 12
+y 20
+speed 0.5
+type 2
+container 10000000
+move_type boat
+passenger_limit 2
 end
 arch dungeon_magic
 x 12
@@ -3709,16 +3707,6 @@ end
 arch sea
 x 13
 y 20
-end
-arch big_galleon
-name sailing big galleon
-x 13
-y 20
-speed 0.5
-type 2
-container 10000000
-move_type boat
-passenger_limit 4
 end
 arch dungeon_magic
 x 13
@@ -4289,6 +4277,10 @@ x 15
 y 29
 end
 arch house_long
+name Shop Shop
+slaying /scorn/shops/shipshop
+hp 4
+sp 8
 x 15
 y 29
 end
@@ -5067,14 +5059,6 @@ x 18
 y 25
 end
 arch sea
-x 18
-y 26
-end
-arch big_galleon
-name to Port Joseph
-slaying world_101_114
-hp 16
-sp 43
 x 18
 y 26
 end

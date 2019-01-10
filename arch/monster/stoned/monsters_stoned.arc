@@ -3,7 +3,7 @@ name statue
 face air_elemental_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -15,7 +15,7 @@ name statue
 face air_witch_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -27,7 +27,7 @@ name statue
 face fire_witch_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -39,7 +39,7 @@ name statue
 face avatar_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -51,7 +51,7 @@ name statue
 face devil_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -63,7 +63,7 @@ name statue
 face earth_elemental_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -75,7 +75,7 @@ name statue
 face earth_witch_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -87,7 +87,7 @@ name statue
 face fire_elemental_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -99,7 +99,7 @@ name statue
 face golem_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -111,7 +111,7 @@ name statue
 face holy_servant_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -123,7 +123,7 @@ name statue
 face mystic_fist_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -155,7 +155,7 @@ name statue
 face water_elemental_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -167,7 +167,7 @@ name statue
 face water_witch_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -179,7 +179,7 @@ name statue
 face chaos_witch_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -191,7 +191,7 @@ name statue
 face ape_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -203,7 +203,7 @@ name statue
 face bat_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -215,7 +215,7 @@ name statue
 face bird_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -227,7 +227,7 @@ name statue
 face cobra_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -239,7 +239,7 @@ name statue
 face cobra_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -251,7 +251,7 @@ name statue
 face fungus_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -263,7 +263,7 @@ name statue
 face giant_bat_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -275,7 +275,7 @@ name statue
 face horse_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -287,7 +287,7 @@ name statue
 face horse_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -299,7 +299,7 @@ name statue
 face horse_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -311,7 +311,7 @@ name statue
 face horse_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -323,7 +323,7 @@ name statue
 face horse_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -335,7 +335,7 @@ name statue
 face horse_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -347,7 +347,7 @@ name statue
 face mouse_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -359,7 +359,7 @@ name statue
 face panther_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -371,7 +371,7 @@ name statue
 face scorpion_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -383,7 +383,7 @@ name statue
 face snake_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -395,7 +395,7 @@ name statue
 face bear_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -407,7 +407,7 @@ name statue
 face bear_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -419,7 +419,7 @@ name statue
 face polarbear_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -431,7 +431,7 @@ name statue
 face polarbear_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -443,7 +443,7 @@ name statue
 face behemoth_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -455,7 +455,7 @@ name statue
 face behemoth_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -467,7 +467,7 @@ name statue
 face behemoth_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -479,7 +479,7 @@ name statue
 face behemoth_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -491,7 +491,7 @@ name statue
 face dog_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -503,7 +503,7 @@ name statue
 face mastif_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -515,7 +515,7 @@ name statue
 face pup_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -527,7 +527,7 @@ name statue
 face chicken_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -539,7 +539,7 @@ name statue
 face goose_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -551,7 +551,7 @@ name statue
 face sheep_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -563,7 +563,7 @@ name statue
 face neko_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -575,7 +575,7 @@ name statue
 face giantrat_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -587,7 +587,7 @@ name statue
 face giantrat_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -599,7 +599,7 @@ name statue
 face giantrat_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -611,7 +611,7 @@ name statue
 face giantrat_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -623,7 +623,7 @@ name statue
 face g_worm_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -635,7 +635,7 @@ name statue
 face g_worm_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -647,7 +647,7 @@ name statue
 face g_worm_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -659,7 +659,7 @@ name statue
 face g_worm_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -671,7 +671,7 @@ name statue
 face gryphon_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -683,7 +683,7 @@ name statue
 face gryphon_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -695,7 +695,7 @@ name statue
 face gryphon_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -707,7 +707,7 @@ name statue
 face gryphon_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -719,7 +719,7 @@ name statue
 face gryphon_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -731,7 +731,7 @@ name statue
 face gryphon_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -743,7 +743,7 @@ name statue
 face gryphon_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -755,7 +755,7 @@ name statue
 face gryphon_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -767,7 +767,7 @@ name statue
 face gryphon_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -779,7 +779,7 @@ name statue
 face leech_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -791,7 +791,7 @@ name statue
 face panther_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -803,7 +803,7 @@ name statue
 face shadowtiger_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -815,7 +815,7 @@ name statue
 face shadowtiger_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -827,7 +827,7 @@ name statue
 face shadowtiger_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -839,7 +839,7 @@ name statue
 face shadowtiger_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -851,7 +851,7 @@ name statue
 face dire_wolf_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -863,7 +863,7 @@ name statue
 face dire_wolf_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -875,7 +875,7 @@ name statue
 face wolf_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -887,7 +887,7 @@ name statue
 face beholder_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -899,7 +899,7 @@ name statue
 face beholder_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -911,7 +911,7 @@ name statue
 face dread_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -923,7 +923,7 @@ name statue
 face dread_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -935,7 +935,7 @@ name statue
 face dread_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -947,7 +947,7 @@ name statue
 face dread_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -959,7 +959,7 @@ name statue
 face archon_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -971,7 +971,7 @@ name statue
 face living_chaos_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -983,7 +983,7 @@ name statue
 face imp_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -995,7 +995,7 @@ name statue
 face hellhound_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1007,7 +1007,7 @@ name statue
 face hellhound_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1019,7 +1019,7 @@ name statue
 face raas_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1031,7 +1031,7 @@ name statue
 face devil_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1043,7 +1043,7 @@ name statue
 face ant_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1055,7 +1055,7 @@ name statue
 face bee_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1067,7 +1067,7 @@ name statue
 face centipede_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1079,7 +1079,7 @@ name statue
 face centipede_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1091,7 +1091,7 @@ name statue
 face killer_bee_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1103,7 +1103,7 @@ name statue
 face spider_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1115,7 +1115,7 @@ name statue
 face xan_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1127,7 +1127,7 @@ name statue
 face ant_larvae_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1139,7 +1139,7 @@ name statue
 face breeder_ant_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1151,7 +1151,7 @@ name statue
 face breeder_ant_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1163,7 +1163,7 @@ name statue
 face ant_egg_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1175,7 +1175,7 @@ name statue
 face fly_ant_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1187,7 +1187,7 @@ name statue
 face work_ant_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1199,7 +1199,7 @@ name statue
 face war_ant_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1211,7 +1211,7 @@ name statue
 face spit_ant_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1223,7 +1223,7 @@ name statue
 face war_ant_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1235,7 +1235,7 @@ name statue
 face banshee_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1247,7 +1247,7 @@ name statue
 face skeletalmage_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1259,7 +1259,7 @@ name statue
 face skeletalmage_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1271,7 +1271,7 @@ name statue
 face dave_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1283,7 +1283,7 @@ name statue
 face deathshead_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1295,7 +1295,7 @@ name statue
 face demilich_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1307,7 +1307,7 @@ name statue
 face ghast_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1319,7 +1319,7 @@ name statue
 face ghost_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1331,7 +1331,7 @@ name statue
 face grimreaper_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1343,7 +1343,7 @@ name statue
 face grimreaper_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1355,7 +1355,7 @@ name statue
 face lich_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1367,7 +1367,7 @@ name statue
 face nightmare_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1379,7 +1379,7 @@ name statue
 face skeleton_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1391,7 +1391,7 @@ name statue
 face skeleton_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1403,7 +1403,7 @@ name statue
 face skeleton_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1415,7 +1415,7 @@ name statue
 face skeleton_leader_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1427,7 +1427,7 @@ name statue
 face skeleton_chief_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1439,7 +1439,7 @@ name statue
 face skull_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1451,7 +1451,7 @@ name statue
 face spectre_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1463,7 +1463,7 @@ name statue
 face vampire_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1475,7 +1475,7 @@ name statue
 face wight_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1487,7 +1487,7 @@ name statue
 face ghost_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1499,7 +1499,7 @@ name statue
 face zombie_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1511,7 +1511,7 @@ name statue
 face skree_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1523,7 +1523,7 @@ name statue
 face skree_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1535,7 +1535,7 @@ name statue
 face skree_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1547,7 +1547,7 @@ name statue
 face skree_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1559,7 +1559,7 @@ name statue
 face medium_demon_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1571,7 +1571,7 @@ name statue
 face medium_demon_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1583,7 +1583,7 @@ name statue
 face medium_demon_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1595,7 +1595,7 @@ name statue
 face medium_demon_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1607,7 +1607,7 @@ name statue
 face cold_dragon_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1619,7 +1619,7 @@ name statue
 face elec_dragon_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1631,7 +1631,7 @@ name statue
 face fire_dragon_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1643,7 +1643,7 @@ name statue
 face baby_dragon_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1655,7 +1655,7 @@ name statue
 face Cwyvern_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1667,7 +1667,7 @@ name statue
 face Cwyvern_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1679,7 +1679,7 @@ name statue
 face wyvern_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1691,7 +1691,7 @@ name statue
 face wyvern_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1861,7 +1861,7 @@ name statue
 face a_guard_h_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1872,7 +1872,7 @@ name statue
 face a_guard_m_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1883,7 +1883,7 @@ name statue
 face a_guard_l_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1894,7 +1894,7 @@ name statue
 face a_townsman_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1905,7 +1905,7 @@ name statue
 face a_townsman2_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1916,7 +1916,7 @@ name statue
 face a_townsman3_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1927,7 +1927,7 @@ name statue
 face small_troll_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1938,7 +1938,7 @@ name statue
 face dark_elf2_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1949,7 +1949,7 @@ name statue
 face dark_elf_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1960,7 +1960,7 @@ name statue
 face elf_1_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1971,7 +1971,7 @@ name statue
 face elf_guard_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1982,7 +1982,7 @@ name statue
 face elf_lass_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -1993,7 +1993,7 @@ name statue
 face elf_man_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2004,7 +2004,7 @@ name statue
 face big_dragon_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2015,7 +2015,7 @@ name statue
 face big_dragon_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2026,7 +2026,7 @@ name statue
 face big_dragon_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2037,7 +2037,7 @@ name statue
 face big_dragon_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2048,7 +2048,7 @@ name statue
 face big_dragon_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2059,7 +2059,7 @@ name statue
 face big_dragon_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2070,7 +2070,7 @@ name statue
 face big_dragon_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2081,7 +2081,7 @@ name statue
 face big_dragon_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2092,7 +2092,7 @@ name statue
 face big_dragon_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2103,7 +2103,7 @@ name statue
 face big_dragon_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2114,7 +2114,7 @@ name statue
 face big_dragon_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2125,7 +2125,7 @@ name statue
 face big_dragon_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2136,7 +2136,7 @@ name statue
 face big_dragon_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2147,7 +2147,7 @@ name statue
 face chinese_dragon_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2158,7 +2158,7 @@ name statue
 face chinese_dragon_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2169,7 +2169,7 @@ name statue
 face chinese_dragon_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2180,7 +2180,7 @@ name statue
 face chinese_dragon_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2191,7 +2191,7 @@ name statue
 face big_elec_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2202,7 +2202,7 @@ name statue
 face big_elec_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2214,7 +2214,7 @@ name statue
 face big_elec_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2225,7 +2225,7 @@ name statue
 face big_elec_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2236,7 +2236,7 @@ name statue
 face big_elec_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2247,7 +2247,7 @@ name statue
 face big_elec_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2258,7 +2258,7 @@ name statue
 face dragonman_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2269,7 +2269,7 @@ name statue
 face dragonman_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2280,7 +2280,7 @@ name statue
 face drake_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2291,7 +2291,7 @@ name statue
 face bone_drake_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2302,7 +2302,7 @@ name statue
 face bone_drake_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2313,7 +2313,7 @@ name statue
 face bone_drake_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2324,7 +2324,7 @@ name statue
 face bone_drake_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2335,7 +2335,7 @@ name statue
 face big_elec_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2346,7 +2346,7 @@ name statue
 face big_elec_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2358,7 +2358,7 @@ name statue
 face big_elec_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2369,7 +2369,7 @@ name statue
 face big_elec_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2380,7 +2380,7 @@ name statue
 face big_elec_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2391,7 +2391,7 @@ name statue
 face big_elec_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2402,7 +2402,7 @@ name statue
 face big_elec_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2413,7 +2413,7 @@ name statue
 face big_elec_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2425,7 +2425,7 @@ name statue
 face big_elec_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2436,7 +2436,7 @@ name statue
 face big_elec_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2447,7 +2447,7 @@ name statue
 face big_elec_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2458,7 +2458,7 @@ name statue
 face big_elec_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2469,7 +2469,7 @@ name statue
 face big_elec_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2480,7 +2480,7 @@ name statue
 face big_elec_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2492,7 +2492,7 @@ name statue
 face big_elec_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2503,7 +2503,7 @@ name statue
 face big_elec_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2514,7 +2514,7 @@ name statue
 face big_elec_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2525,7 +2525,7 @@ name statue
 face big_elec_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2536,7 +2536,7 @@ name statue
 face purple_worm_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2548,7 +2548,7 @@ name statue
 face purple_worm_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2560,7 +2560,7 @@ name statue
 face purple_worm_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2572,7 +2572,7 @@ name statue
 face purple_worm_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2584,7 +2584,7 @@ name statue
 face long_worm_stoned.111
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2596,7 +2596,7 @@ name statue
 face long_worm_stoned.222
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2608,7 +2608,7 @@ name statue
 face long_worm_stoned.222
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2620,7 +2620,7 @@ name statue
 face long_worm_stoned.222
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2632,7 +2632,7 @@ name statue
 face long_worm_stoned.222
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2644,7 +2644,7 @@ name statue
 face long_worm_stoned.222
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2656,7 +2656,7 @@ name statue
 face long_worm_stoned.222
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2668,7 +2668,7 @@ name statue
 face g_worm_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2680,7 +2680,7 @@ name statue
 face g_worm_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2692,7 +2692,7 @@ name statue
 face g_worm_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2704,7 +2704,7 @@ name statue
 face g_worm_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2716,7 +2716,7 @@ name statue
 face g_worm_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2728,7 +2728,7 @@ name statue
 face g_worm_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2740,7 +2740,7 @@ name statue
 face g_worm_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black
@@ -2752,7 +2752,7 @@ name statue
 face g_worm_stoned.x11
 type 98
 subtype 45
-no_pick 1
+no_pick 0
 no_pass 0
 editable 128
 magicmap black

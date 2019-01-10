@@ -69,3 +69,76 @@ level 30
 face mbaltar_none.111
 slaying altar_none
 end
+Object building_jeweler_bench
+name Jeweler Bench Material
+nrof 1
+weight 2500
+value 10000
+type 161
+subtype 3
+face mbjeweler_bench.111
+slaying jeweler_bench
+end
+Object building_forge
+name Forge Material
+nrof 1
+weight 2500
+value 10000
+type 161
+subtype 3
+face mbforge_bench.111
+slaying forge
+end
+Object building_d_stair
+name Downstair Material
+nrof 1
+weight 2500
+value 10000
+type 161
+subtype 3
+face mbstairs_down.111
+slaying stair_down
+end
+Object building_u_stair
+name Upstair Material
+nrof 1
+weight 2500
+value 10000
+type 161
+subtype 3
+face mbstairs_up.111
+slaying stair_up
+end
+Object building_stove
+name Stove Material
+nrof 1
+weight 2500
+value 10000
+type 161
+subtype 3
+face mbstove.111
+slaying stove
+end
+Object building_thaumaturg_desk
+name Thaumaturgist's Desk Material
+nrof 1
+weight 2500
+value 10000
+type 161
+subtype 3
+face mbthaumaturgy_desk.111
+slaying thaumaturg_desk
+end
+Object building_workbench
+name Workbench Material
+nrof 1
+weight 2500
+value 10000
+type 161
+subtype 3
+face mbworkbench.111
+slaying workbench
+end
+
+
+

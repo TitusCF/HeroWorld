@@ -109,14 +109,14 @@ subtype 3
 face mbstairs_up.111
 slaying stair_up
 end
-Object building_stove
-name Stove Material
+Object building_kitchen_stove
+name Kitchen Stove Material
 nrof 1
 weight 2500
 value 10000
 type 161
 subtype 3
-face mbstove.111
+face mbkitchenstove.111
 slaying stove
 end
 Object building_thaumaturg_desk

@@ -53,4 +53,11 @@ body_leg 2
 maxhp 30
 maxsp 30
 maxgrace 30
+sound_chance 100
+end
+Object dwarf_player_force
+name dwarf_force
+invisible 1
+type 114
+speed 0
 end

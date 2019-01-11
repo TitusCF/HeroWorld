@@ -3,6 +3,7 @@ nrof 1
 face icor.111
 animation icor
 is_used_up 1
+used_up_message vanishes in a cloud of smoke
 material 32
 food 40
 type 72

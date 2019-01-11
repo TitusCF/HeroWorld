@@ -37,7 +37,7 @@ resist_poison 70
 resist_slow 100
 resist_paralyze 100
 resist_fear 100
-resist_depletion 100
+resist_deplete 100
 resist_death 100
 resist_chaos 70
 resist_blind 100

@@ -53,6 +53,7 @@ maxgrace 30
 # Key/value list
 race_choice_1 dragon_ability_force_fire dragon_ability_force_cold dragon_ability_force_electricity dragon_ability_force_poison
 race_choice_description_1 Choose a dragon focus
+sound_chance 100
 end
 Object dragon_skin_force
 name dragon skin

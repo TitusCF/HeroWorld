@@ -1,7 +1,7 @@
 Object beholder
 randomitems beholder
 race unnatural
-face beholder.111
+face beholder.151
 animation beholder
 monster 1
 move_type walk fly_low

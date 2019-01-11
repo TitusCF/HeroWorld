@@ -54,4 +54,13 @@ body_leg 2
 maxhp 30
 maxsp 30
 maxgrace 30
+sound_chance 100
+end
+Object gnome_player_force
+name gnome force
+invisible 1
+speed 0
+type 114
+applied 1
+no_drop 1
 end

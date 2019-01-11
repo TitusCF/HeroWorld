@@ -2,6 +2,7 @@ Object horn2
 name horn
 nrof 1
 face horn2.111
+animation horn2
 speed 0.1
 type 3
 level 1

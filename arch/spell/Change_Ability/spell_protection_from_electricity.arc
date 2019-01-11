@@ -3,6 +3,7 @@ anim_suffix spellcasting
 name protection from electricity
 name_pl protection from electricity
 face spell_protection_from_electricity.111
+other_arch protection_electricity_effect
 level 3
 grace 15
 casting_time 10

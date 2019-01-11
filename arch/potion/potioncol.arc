@@ -10,6 +10,7 @@ value 5800
 resist_cold 90
 name_pl potions of cold resistance
 on_use_yield potion_empty
+other_arch protection_cold_effect
 client_type 651
 end
 Object potion_cold2
@@ -24,6 +25,7 @@ value 28000
 resist_cold 95
 name_pl potions of frost resistance
 on_use_yield potion_empty
+other_arch protection_cold_effect
 client_type 651
 end
 

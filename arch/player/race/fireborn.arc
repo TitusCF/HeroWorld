@@ -52,6 +52,7 @@ glow_radius 4
 maxhp 30
 maxsp 30
 maxgrace 30
+sound_chance 100
 end
 Object fireborn_player_force
 name Fireborn_Force

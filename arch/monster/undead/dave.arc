@@ -1,7 +1,7 @@
 Object dave
 name Dave
 race undead
-face dave.111
+face dave.151
 animation dave
 Str 100
 Dex 100

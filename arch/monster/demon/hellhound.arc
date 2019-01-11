@@ -36,7 +36,7 @@ Object gr_hellhound
 name greater hellhound
 randomitems gr_hellhound
 race demon
-face hellhound.131
+face greater_hellhound.131
 animation gr_hellhound
 Con 40
 Pow 60

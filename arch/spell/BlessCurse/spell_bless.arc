@@ -23,4 +23,5 @@ wc 1
 msg
 This spell grants the character a blessing from the god they worship.  It affects resistances and stats, but the specific effect varies depending on the god the character worships.  Some protection from godpower is granted.
 endmsg
+other_arch bless_effect
 end

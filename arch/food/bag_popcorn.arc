@@ -1,6 +1,7 @@
 Object bag_popcorn
 name bag of popcorn
 face bag_popcorn.111
+on_use_yield bag_empty
 food 50
 nrof 1
 type 6

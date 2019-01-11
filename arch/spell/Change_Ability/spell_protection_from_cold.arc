@@ -3,6 +3,7 @@ anim_suffix spellcasting
 name protection from cold
 name_pl protection from cold
 face spell_protection_from_cold.111
+other_arch protection_cold_effect
 level 2
 grace 15
 casting_time 10

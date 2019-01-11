@@ -26,3 +26,13 @@ type 66
 no_pick 1
 client_type 25012
 end
+Object archway_black
+name dark archway
+face archblack.111
+animation archblack
+type 66
+no_pick 1
+client_type 25012
+anim_speed 3
+client_anim_random 1
+end

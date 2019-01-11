@@ -1,6 +1,12 @@
 Object hedge
 face hedge.111
-animation hedge
+color_fg green
+anim
+hedge.111
+hedge.112
+hedge.113
+blank.111
+mina
 is_animated 0
 tear_down 1
 hp 24
@@ -13,9 +19,13 @@ resist_cold 100
 resist_confusion 100
 resist_acid 100
 resist_drain 100
+
 resist_fire 30
+
 no_pick 1
 blocksview 1
 alive 1
 level 1
+pass_thru 1
+editable 768
 end

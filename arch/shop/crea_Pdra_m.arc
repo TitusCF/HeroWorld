@@ -5,6 +5,7 @@ type 103
 other_arch Pdragon_mail
 slaying dragon_scale
 food 60
+sp 1
 no_pick 1
 move_on walk
 end

@@ -3,6 +3,7 @@ anim_suffix spellcasting
 name protection from fire
 name_pl protection from fire
 face spell_protection_from_fire.111
+other_arch protection_fire_effect
 level 2
 grace 20
 casting_time 10

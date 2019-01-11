@@ -20,7 +20,7 @@ end
 Object rune_icestorm
 name Rune of Icestorm
 type 154
-face rune_frost.111
+face rune_icestorm.111
 hp 1
 other_arch spell_icestorm
 speed 1
@@ -38,7 +38,7 @@ end
 Object rune_large_icestorm
 name Rune of Large Icestorm
 type 154
-face rune_frost.111
+face rune_icestorm.111
 hp 1
 other_arch spell_large_icestorm
 speed 1

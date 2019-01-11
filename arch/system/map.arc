@@ -4,8 +4,9 @@ subtype 1
 slaying /HallOfSelection
 race /start/HallsOfSelection
 face map.111
-x 16
-y 16
+# Let's see... does this help?
+# x 16
+# y 16
 hp 1
 sp 1
 value 300

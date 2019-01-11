@@ -1,14 +1,20 @@
-Object river_crook_ns-nw
+Object rcrook_ns-nw
 face branch_158.111
 name river junction
-move_block all
+no_pass 1
 no_pick 1
+color_fg blue
+editable 8
+visibility 100
 is_water 1
 end
-Object river_junct_ns-nw
+Object rjunct_ns-nw
 face branch_158.211
 name river junction
-move_block all
+no_pass 1
 no_pick 1
+color_fg blue
+editable 8
+visibility 100
 is_water 1
 end

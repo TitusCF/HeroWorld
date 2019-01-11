@@ -124,3 +124,20 @@ body_arm -1
 skill one handed weapons
 end
 
+Object bag_empty
+name empty bag
+name_pl empty bags
+nrof 1
+last_sp 10
+type 15
+face bag_empty.111
+material 1
+dam -5
+weight 25
+value 1
+attacktype 1
+weapontype 8
+client_type 611
+body_arm -1
+skill one handed weapons
+end

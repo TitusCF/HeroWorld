@@ -1,4 +1,5 @@
 Object barn2
+name barn
 type 66
 face barn2.x11
 no_pick 1

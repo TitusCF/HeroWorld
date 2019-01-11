@@ -10,6 +10,7 @@ value 5200
 resist_fire 90
 name_pl potions of fire resistance
 on_use_yield potion_empty
+other_arch protection_fire_effect
 client_type 651
 end
 Object potion_fire2
@@ -24,6 +25,7 @@ value 28000
 resist_fire 95
 name_pl potions of lava resistance
 on_use_yield potion_empty
+other_arch protection_fire_effect
 client_type 651
 end
 

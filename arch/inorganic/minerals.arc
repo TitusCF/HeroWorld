@@ -7,11 +7,11 @@ material 4
 type 73
 value 40
 resist_fire -100
-
 weight 2500
 name_pl bottles
 client_type 641
 end
+
 Object salt
 name pile
 title of salt
@@ -25,6 +25,7 @@ weight 500
 name_pl piles
 client_type 641
 end
+
 Object sulphur
 name pile
 title of sulphur
@@ -35,9 +36,7 @@ materialname sulphur
 type 73
 value 15
 resist_fire -100
-
 resist_acid 100
-
 weight 500
 name_pl piles
 client_type 641
@@ -71,13 +70,12 @@ type 73
 value 45
 resist_fire -100
 resist_electricity -100
-
 resist_acid 100
-
 weight 1000
 name_pl piles
 client_type 641
 end
+
 Object cinnabar
 name pile
 title of cinnabar
@@ -91,6 +89,7 @@ weight 3000
 name_pl piles
 client_type 641
 end
+
 Object pyrite
 name pile
 title of pyrite
@@ -104,6 +103,7 @@ weight 2000
 name_pl piles
 client_type 641
 end
+
 Object gypsum
 name pile
 title of gypsum
@@ -114,7 +114,6 @@ materialname gypsum
 type 73
 value 9
 resist_acid 100
-
 weight 1500
 name_pl piles
 client_type 641

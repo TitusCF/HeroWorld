@@ -2,7 +2,7 @@ Object goblin_leader_arc
 name goblin champion
 randomitems goblin
 race goblin
-face goblin_leader.111
+face goblin_leader.151
 animation goblin_leader_arc
 monster 1
 move_type walk

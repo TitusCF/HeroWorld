@@ -56,6 +56,7 @@ body_leg 2
 maxhp 30
 maxsp 30
 maxgrace 30
+sound_chance 100
 end
 Object troll_player_force
 name troll_force

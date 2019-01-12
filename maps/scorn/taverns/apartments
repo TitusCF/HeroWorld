@@ -149,6 +149,17 @@ x 1
 y 8
 unique 1
 end
+arch perm_magic_portal
+name Big Chest
+slaying bigchest
+face chest_1.111
+hp 1
+sp 1
+x 1
+y 8
+is_animated 0
+unique 1
+end
 arch afloor_right
 x 1
 y 9
@@ -329,6 +340,17 @@ end
 arch afloor_right
 x 2
 y 14
+unique 1
+end
+arch perm_magic_portal
+name Big Chest
+slaying bigchest
+face chest_1.111
+hp 1
+sp 1
+x 2
+y 14
+is_animated 0
 unique 1
 end
 arch afloor_right
@@ -518,7 +540,6 @@ name Key for Apartment 2
 slaying apartment2
 x 4
 y 8
-unique 1
 end
 arch dungeon_magic
 x 4
@@ -544,7 +565,6 @@ food 5000
 x 4
 y 10
 connected 2
-unique 1
 end
 arch afloor_right
 x 4
@@ -561,7 +581,6 @@ food 5000
 x 4
 y 12
 connected 3
-unique 1
 end
 arch dungeon_magic
 x 4
@@ -585,7 +604,6 @@ name Key for Apartment 3
 slaying apartment3
 x 4
 y 14
-unique 1
 end
 arch afloor_right
 x 4
@@ -770,6 +788,17 @@ x 6
 y 8
 unique 1
 end
+arch perm_magic_portal
+name Big Chest
+slaying bigchest
+face chest_1.111
+hp 1
+sp 1
+x 6
+y 8
+is_animated 0
+unique 1
+end
 arch afloor_right
 x 6
 y 9
@@ -950,6 +979,17 @@ end
 arch afloor_right
 x 7
 y 14
+unique 1
+end
+arch perm_magic_portal
+name Big Chest
+slaying bigchest
+face chest_1.111
+hp 1
+sp 1
+x 7
+y 14
+is_animated 0
 unique 1
 end
 arch afloor_right
@@ -1139,7 +1179,6 @@ name Key for Apartment 1
 slaying apartment1
 x 9
 y 8
-unique 1
 end
 arch dungeon_magic
 x 9
@@ -1165,7 +1204,6 @@ food 5000
 x 9
 y 10
 connected 1
-unique 1
 end
 arch afloor_right
 x 9
@@ -1182,7 +1220,6 @@ food 5000
 x 9
 y 12
 connected 4
-unique 1
 end
 arch dungeon_magic
 x 9
@@ -1206,7 +1243,6 @@ name Key for Apartment 4
 slaying apartment4
 x 9
 y 14
-unique 1
 end
 arch afloor_right
 x 9
@@ -1427,8 +1463,8 @@ y 1
 end
 arch invis_exit
 slaying /world/world_104_115
-hp 12
-sp 2
+hp 38
+sp 43
 x 12
 y 2
 end
@@ -1516,7 +1552,9 @@ x 13
 y 1
 end
 arch invis_exit
-slaying *scorn_old_apartments_exit
+slaying /world/world_104_115
+hp 38
+sp 43
 x 13
 y 2
 end
@@ -1648,6 +1686,18 @@ x 14
 y 9
 end
 arch marble
+x 14
+y 10
+end
+arch sign
+msg
+The chests in this inn have been magically charmed to
+contain reveal  only the belongings of the opener.
+
+NOTICE:
+DO NOT PURCHASE MULTIPLE ROOMS, ALL THE CHESTS HAVE BEEN CHARMED
+TO SHARE AN INVENTORY.
+endmsg
 x 14
 y 10
 end
@@ -1876,6 +1926,17 @@ end
 arch afloor_right
 x 16
 y 9
+unique 1
+end
+arch perm_magic_portal
+name Big Chest
+slaying bigchest
+face chest_1.111
+hp 1
+sp 1
+x 16
+y 9
+is_animated 0
 unique 1
 end
 arch afloor_right
@@ -2128,7 +2189,6 @@ name Key for Apartment 10
 slaying apartment10
 x 18
 y 11
-unique 1
 end
 arch dungeon_magic
 x 18
@@ -2154,7 +2214,6 @@ food 25000
 x 18
 y 13
 connected 10
-unique 1
 end
 arch afloor_right
 x 18
@@ -2351,6 +2410,17 @@ end
 arch afloor_right
 x 20
 y 9
+unique 1
+end
+arch perm_magic_portal
+name Big Chest
+slaying bigchest
+face chest_1.111
+hp 1
+sp 1
+x 20
+y 9
+is_animated 0
 unique 1
 end
 arch afloor_right
@@ -2603,7 +2673,6 @@ name Key for Apartment 11
 slaying apartment11
 x 22
 y 11
-unique 1
 end
 arch dungeon_magic
 x 22
@@ -2629,7 +2698,6 @@ food 25000
 x 22
 y 13
 connected 11
-unique 1
 end
 arch afloor_right
 x 22
@@ -3053,18 +3121,32 @@ x 26
 y 11
 unique 1
 end
-arch chair_3.2
+arch perm_magic_portal
+name Big Chest
+slaying bigchest
+face chest_1.111
+hp 1
+sp 1
 x 26
 y 11
+is_animated 0
+unique 1
 end
 arch afloor_right
 x 26
 y 12
 unique 1
 end
-arch chair_3.2
+arch perm_magic_portal
+name Big Chest
+slaying bigchest
+face chest_1.111
+hp 1
+sp 1
 x 26
 y 12
+is_animated 0
+unique 1
 end
 arch afloor_right
 x 26
@@ -3326,7 +3408,6 @@ name Key for Suite 1
 slaying apartment12
 x 28
 y 11
-unique 1
 end
 arch dungeon_magic
 x 28
@@ -3352,7 +3433,6 @@ food 30000
 x 28
 y 13
 connected 12
-unique 1
 end
 arch afloor_right
 x 28

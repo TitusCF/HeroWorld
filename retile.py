@@ -119,11 +119,14 @@ def mapfile_replace_tiles(m, tiles):
     m = list(filter(lambda x: not isTile(x), m))
     return splice(m, tiles, index)
 
-def retile_map(path):
+def retile_map(path, mf):
     m = read_mapname(path)
     new_tiles = show_tiling(map(show_mapname, tile_map(m)))
+    return mapfile_replace_tiles(mf, new_tiles)
+
+def process_map(path):
     mf = mapfile_read(path)
-    nf = mapfile_replace_tiles(mf, new_tiles)
+    nf = retile_map(path, mf)
     if nf != mf:
         mapfile_write(path, nf)
 
@@ -132,7 +135,7 @@ def main():
         print(help_text)
         return 1
     p = multiprocessing.Pool()
-    p.map(retile_map, sys.argv[1:])
+    p.map(process_map, sys.argv[1:])
 
 if __name__ == '__main__':
     main()

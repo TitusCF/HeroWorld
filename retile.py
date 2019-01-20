@@ -119,6 +119,22 @@ def mapfile_replace_tiles(m, tiles):
     m = list(filter(lambda x: not isTile(x), m))
     return splice(m, tiles, index)
 
+def set_all_buildable_unique(path, mf):
+    def add_buildable_unique(mf):
+        for l in mf:
+            yield l
+            parts = l.strip().split(" ")
+            if len(parts) == 2:
+                key, val = parts
+                if key == "arch" and val != "map":
+                    yield "is_buildable 1\n"
+                    yield "unique 1\n"
+
+    mf = filter(lambda x: not x.startswith("is_buildable"), mf)
+    mf = filter(lambda x: not x.startswith("unique"), mf)
+    mf = list(add_buildable_unique(mf))
+    return mf
+
 def retile_map(path, mf):
     m = read_mapname(path)
     new_tiles = show_tiling(map(show_mapname, tile_map(m)))
@@ -127,6 +143,7 @@ def retile_map(path, mf):
 def process_map(path):
     mf = mapfile_read(path)
     nf = retile_map(path, mf)
+    nf = set_all_buildable_unique(path, mf)
     if nf != mf:
         mapfile_write(path, nf)
 

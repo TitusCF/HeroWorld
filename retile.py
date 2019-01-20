@@ -119,11 +119,31 @@ def mapfile_replace_tiles(m, tiles):
     m = list(filter(lambda x: not isTile(x), m))
     return splice(m, tiles, index)
 
-def retile_map(path):
+def set_all_buildable_unique(path, mf):
+    def add_buildable_unique(mf):
+        for l in mf:
+            yield l
+            parts = l.strip().split(" ")
+            if len(parts) == 2:
+                key, val = parts
+                if key == "arch" and val != "map":
+                    yield "is_buildable 1\n"
+                    yield "unique 1\n"
+
+    mf = filter(lambda x: not x.startswith("is_buildable"), mf)
+    mf = filter(lambda x: not x.startswith("unique"), mf)
+    mf = list(add_buildable_unique(mf))
+    return mf
+
+def retile_map(path, mf):
     m = read_mapname(path)
     new_tiles = show_tiling(map(show_mapname, tile_map(m)))
+    return mapfile_replace_tiles(mf, new_tiles)
+
+def process_map(path):
     mf = mapfile_read(path)
-    nf = mapfile_replace_tiles(mf, new_tiles)
+    nf = retile_map(path, mf)
+    nf = set_all_buildable_unique(path, mf)
     if nf != mf:
         mapfile_write(path, nf)
 
@@ -132,7 +152,7 @@ def main():
         print(help_text)
         return 1
     p = multiprocessing.Pool()
-    p.map(retile_map, sys.argv[1:])
+    p.map(process_map, sys.argv[1:])
 
 if __name__ == '__main__':
     main()

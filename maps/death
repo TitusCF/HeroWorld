@@ -5,7 +5,7 @@ width 11
 height 16
 msg
 Created:  2018-12-19 Acer
-Modified: 2019-01-02 Acer
+Modified: 2019-01-20 Acer
 endmsg
 unique 1
 end
@@ -316,79 +316,25 @@ arch bluemarblemedium
 x 3
 y 9
 end
-arch magic_ear
-msg
-@match challenge
-Click.
-endmsg
-x 3
-y 9
-connected -1923267926
-end
 arch bluemarblemedium
 x 3
 y 10
-end
-arch magic_ear
-msg
-@match challenge
-Click.
-endmsg
-x 3
-y 10
-connected -1923267926
 end
 arch bluemarblemedium
 x 3
 y 11
 end
-arch magic_ear
-msg
-@match challenge
-Click.
-endmsg
-x 3
-y 11
-connected -1923267926
-end
 arch bluemarblemedium
 x 3
 y 12
-end
-arch magic_ear
-msg
-@match challenge
-Click.
-endmsg
-x 3
-y 12
-connected -1923267926
 end
 arch bluemarblemedium
 x 3
 y 13
 end
-arch magic_ear
-msg
-@match challenge
-Click.
-endmsg
-x 3
-y 13
-connected -1923267926
-end
 arch bluemarblemedium
 x 3
 y 14
-end
-arch magic_ear
-msg
-@match challenge
-Click.
-endmsg
-x 3
-y 14
-connected -1923267926
 end
 arch bluemarblemedium
 x 3
@@ -436,76 +382,9 @@ arch bluemarblemedium
 x 4
 y 8
 end
-arch djinn_magenta_big
-name Guardian of Death
-msg
-@match hi
-you are dead.
-@match dead
-reflect and consider if you are worthy to return.
-@match death
-I am death, I am the end of all things.
-@match well
-I am the guardian of the well, I will only
-allow entrance to those who defeat me.
-If you think you can defeat me say 'challenge'.
-
-
-endmsg
-Wis 1
-x 4
-y 8
-attacktype 131072
-resist_confusion 100
-resist_drain 100
-resist_weaponmagic 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_deplete 100
-resist_death 100
-resist_chaos 100
-resist_godpower 75
-resist_holyword 100
-resist_blind 100
-hitback 1
-unaggressive 1
-reflect_missile 1
-reflect_spell 1
-run_away 0
-can_cast_spell 0
-sleep 0
-stand_still 1
-arch key2
-name Misty Key
-slaying deathkey
-end
-end
-arch magic_ear
-msg
-@match challenge
-Click.
-endmsg
-x 4
-y 8
-connected -1923267926
-end
 arch bluemarblemedium
 x 4
 y 9
-end
-arch bluemarble
-x 4
-y 9
-end
-arch magic_ear
-msg
-@match challenge
-Click.
-endmsg
-x 4
-y 9
-connected -1923267926
 end
 arch bluemarble
 x 4
@@ -526,15 +405,6 @@ end
 arch bluemarblemedium
 x 4
 y 14
-end
-arch magic_ear
-msg
-@match challenge
-Click.
-endmsg
-x 4
-y 14
-connected -1923267926
 end
 arch bluemarblemedium
 x 4
@@ -577,18 +447,19 @@ y 4
 invisible 0
 connected 9999
 end
-arch bluemarble
+arch bluemarblemedium
 x 5
 y 5
 end
-arch button_small
+arch creator
 x 5
 y 5
-connected 4444
+connected 9999
+lifesave 1
+arch key2
+name Mercy
+slaying deathkeyyyyyyyyyyy
 end
-arch rune_restoration
-x 5
-y 5
 end
 arch bluemarble
 x 5
@@ -602,15 +473,6 @@ arch bluemarble
 x 5
 y 8
 end
-arch magic_ear
-msg
-@match challenge
-Click.
-endmsg
-x 5
-y 8
-connected -1923267926
-end
 arch bluemarble
 x 5
 y 9
@@ -623,19 +485,9 @@ arch bluemarble
 x 5
 y 11
 end
-arch angry_floor
-x 5
-y 11
-connected -1923267926
-end
 arch bluemarble
 x 5
 y 12
-end
-arch calm_floor
-x 5
-y 12
-connected 4444
 end
 arch bluemarble
 x 5
@@ -644,17 +496,6 @@ end
 arch bluemarblemedium
 x 5
 y 14
-end
-arch well
-slaying /death/deathproper
-x 5
-y 14
-end
-arch locked_door2
-slaying deathkey
-x 5
-y 14
-invisible 1
 end
 arch bluemarblemedium
 x 5
@@ -702,31 +543,9 @@ arch bluemarblemedium
 x 6
 y 8
 end
-arch magic_ear
-msg
-@match challenge
-Click.
-endmsg
-x 6
-y 8
-connected -1923267926
-end
 arch bluemarblemedium
 x 6
 y 9
-end
-arch bluemarble
-x 6
-y 9
-end
-arch magic_ear
-msg
-@match challenge
-Click.
-endmsg
-x 6
-y 9
-connected -1923267926
 end
 arch bluemarble
 x 6
@@ -747,15 +566,6 @@ end
 arch bluemarblemedium
 x 6
 y 14
-end
-arch magic_ear
-msg
-@match challenge
-Click.
-endmsg
-x 6
-y 14
-connected -1923267926
 end
 arch bluemarblemedium
 x 6
@@ -829,79 +639,25 @@ arch bluemarblemedium
 x 7
 y 9
 end
-arch magic_ear
-msg
-@match challenge
-Click.
-endmsg
-x 7
-y 9
-connected -1923267926
-end
 arch bluemarblemedium
 x 7
 y 10
-end
-arch magic_ear
-msg
-@match challenge
-Click.
-endmsg
-x 7
-y 10
-connected -1923267926
 end
 arch bluemarblemedium
 x 7
 y 11
 end
-arch magic_ear
-msg
-@match challenge
-Click.
-endmsg
-x 7
-y 11
-connected -1923267926
-end
 arch bluemarblemedium
 x 7
 y 12
-end
-arch magic_ear
-msg
-@match challenge
-Click.
-endmsg
-x 7
-y 12
-connected -1923267926
 end
 arch bluemarblemedium
 x 7
 y 13
 end
-arch magic_ear
-msg
-@match challenge
-Click.
-endmsg
-x 7
-y 13
-connected -1923267926
-end
 arch bluemarblemedium
 x 7
 y 14
-end
-arch magic_ear
-msg
-@match challenge
-Click.
-endmsg
-x 7
-y 14
-connected -1923267926
 end
 arch bluemarblemedium
 x 7
@@ -924,16 +680,6 @@ end
 arch bluemarblemedium
 x 8
 y 2
-end
-arch creator
-x 8
-y 2
-connected 9999
-lifesave 1
-arch key2
-name Mercy
-slaying deathkeyyyyyyyyyyy
-end
 end
 arch bluemarblemedium
 x 8

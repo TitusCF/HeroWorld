@@ -143,7 +143,7 @@ def retile_map(path, mf):
 def process_map(path):
     mf = mapfile_read(path)
     nf = retile_map(path, mf)
-    nf = set_all_buildable_unique(path, mf)
+    nf = set_all_buildable_unique(path, nf)
     if nf != mf:
         mapfile_write(path, nf)
 

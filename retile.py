@@ -10,6 +10,8 @@ There are some configurable options at the top of the script.
 ENABLE_UPDOWN = True
 WORLD_BASE = 100
 WORLD_SIZE = 30
+MIN_LEVEL = -2
+MAX_LEVEL = 2
 
 import multiprocessing
 import re
@@ -63,6 +65,10 @@ def tile_map(m):
             (n, l+1, x, y),   # Up
             (n, l-1, x, y)    # Down
         ]))
+        if l+1 > MAX_LEVEL: # no upstairs
+            up_down[0] = None
+        elif l-1 < MIN_LEVEL: # no downstairs
+            up_down[1] = None
         return nesw + up_down
     else:
         return nesw
@@ -70,7 +76,8 @@ def tile_map(m):
 def show_tiling(ts):
     s = []
     for n, t in enumerate(ts, 1):
-        s.append("tile_path_%d %s\n" % (n, t))
+        if t is not None:
+            s.append("tile_path_%d %s\n" % (n, t))
     return s
 
 def read_mapname(name:str):
@@ -89,6 +96,8 @@ def read_mapname(name:str):
         return None
 
 def show_mapname(m):
+    if m is None:
+        return None
     if m[1] == 0:
         return "%s_%d_%d" % (m[0], m[2], m[3])
     else:

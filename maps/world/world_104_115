@@ -12,7 +12,7 @@ Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Dec 16 20:41:49 2001
 arch
-Modified: 2019-01-25 Acer
+Modified: 2019-01-27 Acer
 endmsg
 outdoor 1
 tile_path_1 world_104_114
@@ -8607,10 +8607,6 @@ arch grass
 x 33
 y 35
 end
-arch tree4
-x 33
-y 35
-end
 arch store_weapons
 name Bow Shop
 slaying /scorn/shops/bowshop
@@ -9963,13 +9959,6 @@ arch grass
 x 38
 y 34
 end
-arch house_2
-slaying /scorn/houses/scorn1inc
-hp 5
-sp 9
-x 38
-y 34
-end
 arch grass
 x 38
 y 35
@@ -10940,6 +10929,14 @@ arch grass
 x 42
 y 32
 end
+arch market1_east
+name Library
+slaying /scorn/misc/library
+hp 9
+sp 15
+x 42
+y 32
+end
 arch cobblestones2
 x 42
 y 33
@@ -11178,6 +11175,14 @@ arch grass
 x 43
 y 32
 tag scorn_library_exit
+end
+arch market3_east
+name Library
+slaying /scorn/misc/library
+hp 10
+sp 15
+x 43
+y 32
 end
 arch cobblestones2
 x 43
@@ -12821,7 +12826,7 @@ end
 arch sign
 name More Information
 msg
-<PLAYER KILLING IS TOLERATED., TROLLING IS NOT>
+<PLAYER KILLING IS TOLERATED, TROLLING & GRIEFING IS NOT>
 
 --oOo--
 
@@ -12845,12 +12850,14 @@ Do you have any problems that require dungeon master interaction?
 Do you want to know more about this server?
 Don't be shy with the chat command! (chat {message})
 
-Introducing The Builders expanion pack:
+Includes:
+The Builders Expanion Pack:
 A 100% buildable zone, completely player run.
 Carve out your place in BigWorld history,
 Build your empire, Amass your hoard and change the face
 of BigWorld for years to come.
 (Far from the shores of the know world you will find The Builders Archipelago.)
+
 
 endmsg
 x 49

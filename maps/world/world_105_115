@@ -11,7 +11,7 @@ msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Dec 16 20:53:13 2001
-Modified: 2019-01-10 Acer
+Modified: 2019-01-27 Acer
 endmsg
 outdoor 1
 tile_path_1 world_105_114
@@ -595,6 +595,15 @@ arch sea
 x 2
 y 9
 elevation -2256
+end
+arch rowboat
+x 2
+y 9
+speed 0.5
+type 2
+container 10000000
+move_type boat
+passenger_limit 2
 end
 arch sea
 x 2
@@ -2139,13 +2148,6 @@ x 7
 y 33
 end
 arch grass
-x 7
-y 34
-end
-arch house_2
-slaying /scorn/kar/somehouse
-hp 14
-sp 0
 x 7
 y 34
 end
@@ -3741,7 +3743,7 @@ y 31
 end
 arch store_magic
 name House of Mana
-slaying /scorn/misc/Powerhouse
+slaying /scorn/misc/PowerHouse
 hp 10
 sp 33
 x 13
@@ -5312,8 +5314,8 @@ end
 arch prison
 name Prison
 slaying /scorn/misc/prison
-hp 9
-sp 23
+hp 1
+sp 51
 x 19
 y 31
 end

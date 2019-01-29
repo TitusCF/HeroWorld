@@ -1,14 +1,18 @@
 arch map
+name The Adventurous Shop, 6th Floor
+difficulty 45
 region stoneville
-name advshop5
-msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Wed Jul 23 15:02:59 1997
-endmsg
 shopitems inorganic:30;amulet:30;scroll:30;potion:10;ring:10;book:10;spellbook:10;*:-25
-shopmax 40000
 shopmin 3000
+shopmax 40000
+width 16
+height 16
+enter_x 12
+enter_y 3
+msg
+Created:  1997-07-23
+Modified: 2012-01-31 Rick Tanner
+endmsg
 end
 arch woodfloor
 end
@@ -273,6 +277,10 @@ x 2
 y 8
 end
 arch wall_1_1
+x 2
+y 8
+end
+arch wall_2_short
 x 2
 y 8
 end
@@ -1098,7 +1106,7 @@ end
 arch corpse
 name adventurer corpse
 msg
-This corpse is dead. Too sad, really.
+This corpse is dead.  Too sad, really.
 endmsg
 x 12
 y 2

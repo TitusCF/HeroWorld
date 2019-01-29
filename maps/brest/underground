@@ -1,16 +1,15 @@
 arch map
-region brest
-name underground
+name Underground, Level 1
 reset_timeout 7200
-difficulty 12
+difficulty 30
+region brest
 width 48
 height 66
 enter_x 1
 enter_y 1
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue May 31 01:19:04 1994
+Created:  1994-05-31
+Modified: 2011-10-30 Rick Tanner
 endmsg
 end
 arch pstone_2
@@ -222,10 +221,8 @@ arch woodfloor
 x 1
 y 1
 end
-arch oakdoor
-name ladder going up
+arch ladder_up
 slaying /world/world_107_123
-face ladder2_up.111
 hp 33
 sp 31
 x 1
@@ -960,7 +957,7 @@ arch pstone_2
 x 2
 y 25
 end
-arch random_food_fant
+arch random_food
 x 2
 y 25
 end
@@ -968,7 +965,7 @@ arch pstone_2
 x 2
 y 26
 end
-arch random_food_fant
+arch random_food
 x 2
 y 26
 end
@@ -976,7 +973,7 @@ arch pstone_2
 x 2
 y 27
 end
-arch random_food_fant
+arch random_food
 x 2
 y 27
 end
@@ -1069,7 +1066,7 @@ arch pstone_2
 x 2
 y 38
 end
-arch random_food_fant
+arch random_food
 x 2
 y 38
 end
@@ -1097,7 +1094,7 @@ arch pstone_2
 x 2
 y 41
 end
-arch vodka
+arch booze
 x 2
 y 41
 end
@@ -1487,7 +1484,6 @@ y 24
 end
 arch sage
 name invocator
-name_pl invocator
 x 3
 y 24
 speed_left -0.340000
@@ -1584,7 +1580,7 @@ arch pstone_2
 x 3
 y 38
 end
-arch random_food_fant
+arch random_food
 x 3
 y 38
 end
@@ -1612,7 +1608,7 @@ arch pstone_2
 x 3
 y 41
 end
-arch vodka
+arch booze
 x 3
 y 41
 end
@@ -1878,7 +1874,7 @@ arch woodfloor
 x 4
 y 12
 end
-arch random_food_fant
+arch random_food
 x 4
 y 12
 end
@@ -2046,7 +2042,7 @@ arch pstone_2
 x 4
 y 38
 end
-arch random_food_fant
+arch random_food
 x 4
 y 38
 end
@@ -2074,7 +2070,7 @@ arch pstone_2
 x 4
 y 41
 end
-arch vodka
+arch booze
 x 4
 y 41
 end
@@ -2293,7 +2289,7 @@ arch small_stones
 x 5
 y 6
 end
-arch random_food_fant
+arch random_food
 x 5
 y 6
 end
@@ -2333,7 +2329,7 @@ arch woodfloor
 x 5
 y 11
 end
-arch random_food_fant
+arch random_food
 x 5
 y 11
 end
@@ -2451,7 +2447,6 @@ y 30
 end
 arch sage
 name invocator
-name_pl invocator
 x 5
 y 30
 speed_left -0.340000
@@ -2508,7 +2503,7 @@ arch pstone_2
 x 5
 y 38
 end
-arch random_food_fant
+arch random_food
 x 5
 y 38
 end
@@ -2536,7 +2531,7 @@ arch pstone_2
 x 5
 y 41
 end
-arch vodka
+arch booze
 x 5
 y 41
 end
@@ -2743,7 +2738,7 @@ arch small_stones
 x 6
 y 4
 end
-arch random_food_fant
+arch random_food
 x 6
 y 4
 end
@@ -2959,7 +2954,7 @@ arch pstone_2
 x 6
 y 38
 end
-arch random_food_fant
+arch random_food
 x 6
 y 38
 end
@@ -2987,7 +2982,7 @@ arch pstone_2
 x 6
 y 41
 end
-arch vodka
+arch booze
 x 6
 y 41
 end
@@ -3310,7 +3305,6 @@ y 21
 end
 arch sage
 name invocator
-name_pl invocator
 x 7
 y 21
 speed_left -0.340000
@@ -3377,7 +3371,7 @@ arch pstone_2
 x 7
 y 32
 end
-arch random_food_fant
+arch random_food
 x 7
 y 32
 end
@@ -3417,7 +3411,7 @@ arch pstone_2
 x 7
 y 38
 end
-arch random_food_fant
+arch random_food
 x 7
 y 38
 end
@@ -3445,7 +3439,7 @@ arch pstone_2
 x 7
 y 41
 end
-arch vodka
+arch booze
 x 7
 y 41
 end
@@ -3647,7 +3641,7 @@ arch small_stones
 x 8
 y 5
 end
-arch random_food_fant
+arch random_food
 x 8
 y 5
 end
@@ -3815,7 +3809,7 @@ arch pstone_2
 x 8
 y 32
 end
-arch random_food_fant
+arch random_food
 x 8
 y 32
 end
@@ -3879,7 +3873,7 @@ arch pstone_2
 x 8
 y 41
 end
-arch vodka
+arch booze
 x 8
 y 41
 end
@@ -4085,7 +4079,7 @@ arch small_stones
 x 9
 y 6
 end
-arch random_food_fant
+arch random_food
 x 9
 y 6
 end
@@ -4309,7 +4303,7 @@ arch pstone_2
 x 9
 y 41
 end
-arch vodka
+arch booze
 x 9
 y 41
 end
@@ -4657,7 +4651,6 @@ y 30
 end
 arch sage
 name invocator
-name_pl invocator
 x 10
 y 30
 speed_left -0.340000
@@ -4742,7 +4735,7 @@ arch pstone_2
 x 10
 y 41
 end
-arch vodka
+arch booze
 x 10
 y 41
 end
@@ -4866,7 +4859,7 @@ arch small_stones
 x 10
 y 56
 end
-arch random_food_fant
+arch random_food
 x 10
 y 56
 end
@@ -4874,7 +4867,7 @@ arch small_stones
 x 10
 y 57
 end
-arch random_food_fant
+arch random_food
 x 10
 y 57
 end
@@ -5331,7 +5324,7 @@ arch random_treasure
 x 11
 y 56
 end
-arch random_food_fant
+arch random_food
 x 11
 y 56
 end
@@ -5343,7 +5336,7 @@ arch random_wealth
 x 11
 y 57
 end
-arch random_food_fant
+arch random_food
 x 11
 y 57
 end
@@ -5445,7 +5438,7 @@ arch small_stones
 x 12
 y 6
 end
-arch random_food_fant
+arch random_food
 x 12
 y 6
 end
@@ -5457,7 +5450,7 @@ arch small_stones
 x 12
 y 8
 end
-arch random_food_fant
+arch random_food
 x 12
 y 8
 end
@@ -5496,6 +5489,10 @@ end
 arch pstone_2
 x 12
 y 13
+end
+arch pstone_2
+x 12
+y 14
 end
 arch bwall_0
 x 12
@@ -5571,7 +5568,6 @@ y 24
 end
 arch sage
 name invocator
-name_pl invocator
 x 12
 y 24
 speed_left -0.340000
@@ -6063,7 +6059,7 @@ arch pstone_2
 x 13
 y 25
 end
-arch random_food_fant
+arch random_food
 x 13
 y 25
 end
@@ -6071,7 +6067,7 @@ arch pstone_2
 x 13
 y 26
 end
-arch random_food_fant
+arch random_food
 x 13
 y 26
 end
@@ -6079,7 +6075,7 @@ arch pstone_2
 x 13
 y 27
 end
-arch random_food_fant
+arch random_food
 x 13
 y 27
 end
@@ -6220,7 +6216,7 @@ arch pstone_2
 x 13
 y 45
 end
-arch random_food_fant
+arch random_food
 x 13
 y 45
 end
@@ -6228,7 +6224,7 @@ arch pstone_2
 x 13
 y 46
 end
-arch random_food_fant
+arch random_food
 x 13
 y 46
 end
@@ -6272,7 +6268,7 @@ arch gem
 x 13
 y 52
 end
-arch random_food_fant
+arch random_food
 x 13
 y 52
 end
@@ -6288,7 +6284,7 @@ arch ruby
 x 13
 y 53
 end
-arch random_food_fant
+arch random_food
 x 13
 y 53
 end
@@ -6324,7 +6320,7 @@ arch pstone_2
 x 13
 y 58
 end
-arch random_food_fant
+arch random_food
 x 13
 y 58
 end
@@ -6336,7 +6332,7 @@ arch pstone_2
 x 13
 y 59
 end
-arch random_food_fant
+arch random_food
 x 13
 y 59
 end
@@ -6485,6 +6481,10 @@ end
 arch pstone_2
 x 14
 y 13
+end
+arch pstone_2
+x 14
+y 14
 end
 arch bwall_0
 x 14
@@ -6714,7 +6714,7 @@ arch pstone_2
 x 14
 y 45
 end
-arch random_food_fant
+arch random_food
 x 14
 y 45
 end
@@ -6722,7 +6722,7 @@ arch pstone_2
 x 14
 y 46
 end
-arch random_food_fant
+arch random_food
 x 14
 y 46
 end
@@ -6750,7 +6750,7 @@ arch pstone_2
 x 14
 y 52
 end
-arch random_food_fant
+arch random_food
 x 14
 y 52
 end
@@ -6758,7 +6758,7 @@ arch pstone_2
 x 14
 y 53
 end
-arch random_food_fant
+arch random_food
 x 14
 y 53
 end
@@ -6786,7 +6786,7 @@ arch pstone_2
 x 14
 y 58
 end
-arch random_food_fant
+arch random_food
 x 14
 y 58
 end
@@ -6794,7 +6794,7 @@ arch pstone_2
 x 14
 y 59
 end
-arch random_food_fant
+arch random_food
 x 14
 y 59
 end
@@ -6971,6 +6971,10 @@ arch small_stones
 x 15
 y 21
 end
+arch small_stones
+x 15
+y 22
+end
 arch bwall_0
 x 15
 y 22
@@ -7295,7 +7299,7 @@ arch small_stones
 x 15
 y 63
 end
-arch random_food_fant
+arch random_food
 x 15
 y 63
 end
@@ -7441,6 +7445,10 @@ arch small_stones
 x 16
 y 21
 end
+arch small_stones
+x 16
+y 22
+end
 arch bwall_0
 x 16
 y 22
@@ -7617,7 +7625,7 @@ arch small_stones
 x 16
 y 49
 end
-arch random_food_fant
+arch random_food
 x 16
 y 49
 end
@@ -7633,7 +7641,7 @@ arch gem
 x 16
 y 50
 end
-arch random_food_fant
+arch random_food
 x 16
 y 50
 end
@@ -7721,7 +7729,7 @@ arch small_stones
 x 16
 y 63
 end
-arch random_food_fant
+arch random_food
 x 16
 y 63
 end
@@ -8079,7 +8087,7 @@ arch gem
 x 17
 y 49
 end
-arch random_food_fant
+arch random_food
 x 17
 y 49
 end
@@ -8087,7 +8095,7 @@ arch small_stones
 x 17
 y 50
 end
-arch random_food_fant
+arch random_food
 x 17
 y 50
 end
@@ -8159,7 +8167,7 @@ arch small_stones
 x 17
 y 63
 end
-arch random_food_fant
+arch random_food
 x 17
 y 63
 end
@@ -8373,7 +8381,7 @@ arch pstone_2
 x 18
 y 27
 end
-arch random_food_fant
+arch random_food
 x 18
 y 27
 end
@@ -8445,7 +8453,7 @@ arch pstone_2
 x 18
 y 37
 end
-arch random_food_fant
+arch random_food
 x 18
 y 37
 end
@@ -8484,6 +8492,10 @@ end
 arch beholder
 x 18
 y 42
+end
+arch small_stones
+x 18
+y 43
 end
 arch bwall_0
 x 18
@@ -8649,7 +8661,7 @@ arch gem
 x 18
 y 63
 end
-arch random_food_fant
+arch random_food
 x 18
 y 63
 end
@@ -8859,7 +8871,7 @@ arch pstone_2
 x 19
 y 25
 end
-arch random_food_fant
+arch random_food
 x 19
 y 25
 end
@@ -8883,7 +8895,7 @@ arch gem
 x 19
 y 27
 end
-arch random_food_fant
+arch random_food
 x 19
 y 27
 end
@@ -8951,7 +8963,7 @@ arch pstone_2
 x 19
 y 37
 end
-arch random_food_fant
+arch random_food
 x 19
 y 37
 end
@@ -9039,7 +9051,7 @@ arch gem
 x 19
 y 48
 end
-arch random_food_fant
+arch random_food
 x 19
 y 48
 end
@@ -9051,7 +9063,7 @@ arch small_stones
 x 19
 y 49
 end
-arch random_food_fant
+arch random_food
 x 19
 y 49
 end
@@ -9063,7 +9075,7 @@ arch small_stones
 x 19
 y 50
 end
-arch random_food_fant
+arch random_food
 x 19
 y 50
 end
@@ -9075,7 +9087,7 @@ arch small_stones
 x 19
 y 51
 end
-arch random_food_fant
+arch random_food
 x 19
 y 51
 end
@@ -9087,7 +9099,7 @@ arch small_stones
 x 19
 y 52
 end
-arch random_food_fant
+arch random_food
 x 19
 y 52
 end
@@ -9103,7 +9115,7 @@ arch gem
 x 19
 y 53
 end
-arch random_food_fant
+arch random_food
 x 19
 y 53
 end
@@ -9377,7 +9389,7 @@ arch pstone_2
 x 20
 y 25
 end
-arch random_food_fant
+arch random_food
 x 20
 y 25
 end
@@ -9397,7 +9409,7 @@ arch pstone_2
 x 20
 y 27
 end
-arch random_food_fant
+arch random_food
 x 20
 y 27
 end
@@ -9477,7 +9489,7 @@ arch pstone_2
 x 20
 y 37
 end
-arch random_food_fant
+arch random_food
 x 20
 y 37
 end
@@ -9772,11 +9784,10 @@ x 21
 y 10
 end
 arch altar
-slaying goldcoin
-food 20
+slaying money
+food 200
 x 21
 y 10
-resist_fire 30
 connected 4
 end
 arch pstone_2
@@ -9786,7 +9797,7 @@ end
 arch sign
 msg
    Quit or double...
-  put 20 goldcoins,
+  put 20 gold coins,
 kill your opponent,
   and double your bet..
 endmsg
@@ -9901,7 +9912,7 @@ arch pstone_2
 x 21
 y 25
 end
-arch random_food_fant
+arch random_food
 x 21
 y 25
 end
@@ -9921,7 +9932,7 @@ arch pstone_2
 x 21
 y 27
 end
-arch random_food_fant
+arch random_food
 x 21
 y 27
 end
@@ -9985,7 +9996,7 @@ arch pstone_2
 x 21
 y 35
 end
-arch random_food_fant
+arch random_food
 x 21
 y 35
 end
@@ -9997,7 +10008,7 @@ arch pstone_2
 x 21
 y 36
 end
-arch random_food_fant
+arch random_food
 x 21
 y 36
 end
@@ -10009,7 +10020,7 @@ arch pstone_2
 x 21
 y 37
 end
-arch random_food_fant
+arch random_food
 x 21
 y 37
 end
@@ -10327,7 +10338,7 @@ arch pstone_2
 x 22
 y 27
 end
-arch random_food_fant
+arch random_food
 x 22
 y 27
 end
@@ -10657,7 +10668,7 @@ arch ruby
 x 23
 y 29
 end
-arch random_food_fant
+arch random_food
 x 23
 y 29
 end
@@ -10967,7 +10978,7 @@ arch pstone_2
 x 24
 y 29
 end
-arch random_food_fant
+arch random_food
 x 24
 y 29
 end
@@ -10975,7 +10986,7 @@ arch pstone_2
 x 24
 y 30
 end
-arch random_food_fant
+arch random_food
 x 24
 y 30
 end
@@ -11146,12 +11157,10 @@ x 25
 y 10
 end
 arch altar
-slaying goldcoin
-food 40
+slaying money
+food 400
 x 25
 y 10
-resist_physical 30
-resist_fire 30
 connected 5
 end
 arch pstone_2
@@ -12245,13 +12254,25 @@ arch bwall_0
 x 29
 y 24
 end
-arch bwall_0
+arch pstone_2
 x 29
 y 25
 end
 arch bwall_0
 x 29
+y 25
+end
+arch pstone_2
+x 29
 y 26
+end
+arch bwall_0
+x 29
+y 26
+end
+arch pstone_2
+x 29
+y 27
 end
 arch bwall_0
 x 29
@@ -12269,17 +12290,33 @@ arch bwall_0
 x 29
 y 29
 end
-arch bwall_0
+arch pstone_2
 x 29
 y 30
 end
 arch bwall_0
 x 29
+y 30
+end
+arch pstone_2
+x 29
 y 31
 end
 arch bwall_0
 x 29
+y 31
+end
+arch pstone_2
+x 29
 y 32
+end
+arch bwall_0
+x 29
+y 32
+end
+arch pstone_2
+x 29
+y 33
 end
 arch bwall_0
 x 29
@@ -12293,6 +12330,10 @@ arch door_look_2
 x 29
 y 34
 end
+arch pstone_2
+x 29
+y 35
+end
 arch bwall_0
 x 29
 y 35
@@ -12305,9 +12346,17 @@ arch door_look_2
 x 29
 y 36
 end
+arch pstone_2
+x 29
+y 37
+end
 arch bwall_0
 x 29
 y 37
+end
+arch pstone_2
+x 29
+y 38
 end
 arch bwall_0
 x 29
@@ -12513,7 +12562,7 @@ arch pstone_2
 x 30
 y 22
 end
-arch random_food_fant
+arch random_food
 x 30
 y 22
 end
@@ -12533,7 +12582,7 @@ arch pstone_2
 x 30
 y 25
 end
-arch random_food_fant
+arch random_food
 x 30
 y 25
 end
@@ -12541,7 +12590,7 @@ arch pstone_2
 x 30
 y 26
 end
-arch random_food_fant
+arch random_food
 x 30
 y 26
 end
@@ -12549,7 +12598,7 @@ arch pstone_2
 x 30
 y 27
 end
-arch random_food_fant
+arch random_food
 x 30
 y 27
 end
@@ -12572,6 +12621,10 @@ randomitems none
 arch spell_magic_bullet
 end
 end
+arch pstone_2
+x 30
+y 30
+end
 arch bwall_0
 x 30
 y 30
@@ -12592,7 +12645,7 @@ arch pstone_2
 x 30
 y 32
 end
-arch random_food_fant
+arch random_food
 x 30
 y 32
 end
@@ -12778,12 +12831,10 @@ x 31
 y 11
 end
 arch altar
-slaying goldcoin
-food 80
+slaying money
+food 800
 x 31
 y 11
-resist_magic 30
-resist_fire 30
 connected 6
 end
 arch pstone_2
@@ -12814,13 +12865,10 @@ x 31
 y 15
 end
 arch altar
-slaying goldcoin
-food 160
+slaying money
+food 1600
 x 31
 y 15
-resist_physical 30
-resist_magic 30
-resist_fire 30
 connected 7
 end
 arch pstone_2
@@ -12852,11 +12900,10 @@ x 31
 y 20
 end
 arch altar
-slaying goldcoin
-food 320
+slaying money
+food 3200
 x 31
 y 20
-resist_electricity 30
 connected 8
 end
 arch pstone_2
@@ -12899,6 +12946,10 @@ arch pstone_2
 x 31
 y 29
 end
+arch pstone_2
+x 31
+y 30
+end
 arch bwall_0
 x 31
 y 30
@@ -12907,7 +12958,7 @@ arch pstone_2
 x 31
 y 31
 end
-arch random_food_fant
+arch random_food
 x 31
 y 31
 end
@@ -12947,7 +12998,7 @@ arch pstone_2
 x 31
 y 39
 end
-arch random_food_fant
+arch random_food
 x 31
 y 39
 end
@@ -13185,6 +13236,10 @@ arch pstone_2
 x 32
 y 29
 end
+arch pstone_2
+x 32
+y 30
+end
 arch bwall_0
 x 32
 y 30
@@ -13233,7 +13288,7 @@ arch pstone_2
 x 32
 y 39
 end
-arch random_food_fant
+arch random_food
 x 32
 y 39
 end
@@ -13486,6 +13541,10 @@ end
 arch pstone_2
 x 33
 y 29
+end
+arch pstone_2
+x 33
+y 30
 end
 arch bwall_0
 x 33
@@ -13784,6 +13843,10 @@ arch generate_devil
 x 34
 y 29
 end
+arch pstone_2
+x 34
+y 30
+end
 arch bwall_0
 x 34
 y 30
@@ -13804,7 +13867,7 @@ arch pstone_2
 x 34
 y 32
 end
-arch random_food_fant
+arch random_food
 x 34
 y 32
 end
@@ -14022,12 +14085,10 @@ x 35
 y 13
 end
 arch altar
-slaying goldcoin
-food 1280
+slaying money
+food 12800
 x 35
 y 13
-resist_magic 30
-resist_electricity 30
 connected 10
 end
 arch pstone_2
@@ -14058,12 +14119,10 @@ x 35
 y 18
 end
 arch altar
-slaying goldcoin
-food 640
+slaying money
+food 6400
 x 35
 y 18
-resist_physical 30
-resist_electricity 30
 connected 9
 end
 arch pstone_2
@@ -14346,13 +14405,10 @@ x 36
 y 10
 end
 arch altar
-slaying goldcoin
-food 2560
+slaying money
+food 25600
 x 36
 y 10
-resist_physical 30
-resist_magic 30
-resist_electricity 30
 connected 11
 end
 arch pstone_2
@@ -14496,7 +14552,7 @@ arch pstone_2
 x 36
 y 30
 end
-arch random_food_fant
+arch random_food
 x 36
 y 30
 end
@@ -14504,7 +14560,7 @@ arch pstone_2
 x 36
 y 31
 end
-arch random_food_fant
+arch random_food
 x 36
 y 31
 end
@@ -14512,7 +14568,7 @@ arch pstone_2
 x 36
 y 32
 end
-arch random_food_fant
+arch random_food
 x 36
 y 32
 end
@@ -14536,7 +14592,7 @@ arch pstone_2
 x 36
 y 35
 end
-arch random_food_fant
+arch random_food
 x 36
 y 35
 end
@@ -14544,7 +14600,7 @@ arch pstone_2
 x 36
 y 36
 end
-arch random_food_fant
+arch random_food
 x 36
 y 36
 end
@@ -14552,7 +14608,7 @@ arch pstone_2
 x 36
 y 37
 end
-arch random_food_fant
+arch random_food
 x 36
 y 37
 end
@@ -14618,7 +14674,7 @@ arch small_stones
 x 37
 y 3
 end
-arch vodka
+arch booze
 x 37
 y 3
 end
@@ -14924,7 +14980,7 @@ arch small_stones
 x 38
 y 4
 end
-arch vodka
+arch booze
 x 38
 y 4
 end
@@ -15665,7 +15721,7 @@ arch random_spells
 x 41
 y 4
 end
-arch random_food_fant
+arch random_food
 x 41
 y 4
 end
@@ -15673,7 +15729,7 @@ arch small_stones
 x 41
 y 5
 end
-arch random_food_fant
+arch random_food
 x 41
 y 5
 end
@@ -15681,7 +15737,7 @@ arch small_stones
 x 41
 y 6
 end
-arch random_food_fant
+arch random_food
 x 41
 y 6
 end
@@ -15689,7 +15745,7 @@ arch small_stones
 x 41
 y 7
 end
-arch random_food_fant
+arch random_food
 x 41
 y 7
 end
@@ -15697,7 +15753,7 @@ arch small_stones
 x 41
 y 8
 end
-arch random_food_fant
+arch random_food
 x 41
 y 8
 end
@@ -15738,12 +15794,10 @@ x 41
 y 13
 end
 arch altar
-slaying goldcoin
-food 5120
+slaying money
+food 51200
 x 41
 y 13
-resist_fire 30
-resist_electricity 30
 connected 12
 end
 arch pstone_2
@@ -15784,13 +15838,10 @@ x 41
 y 19
 end
 arch altar
-slaying goldcoin
-food 10240
+slaying money
+food 102400
 x 41
 y 19
-resist_physical 30
-resist_fire 30
-resist_electricity 30
 connected 13
 end
 arch pstone_2
@@ -15839,11 +15890,11 @@ y 26
 end
 arch sign
 msg
-You kill all the monster, 
+You kill all the monster,
 and lost your money...
 Don't forget that experience is
-the bigest treasure!
-          dixit El Barchio.
+the biggest treasure!
+           dixit El Barchio.
 endmsg
 x 41
 y 26
@@ -16300,7 +16351,7 @@ arch pstone_2
 x 43
 y 8
 end
-arch random_food_fant
+arch random_food
 x 43
 y 8
 end
@@ -16882,7 +16933,7 @@ arch pstone_2
 x 45
 y 17
 end
-arch random_food_fant
+arch random_food
 x 45
 y 17
 end
@@ -16890,7 +16941,7 @@ arch pstone_2
 x 45
 y 18
 end
-arch random_food_fant
+arch random_food
 x 45
 y 18
 end
@@ -16898,7 +16949,7 @@ arch pstone_2
 x 45
 y 19
 end
-arch random_food_fant
+arch random_food
 x 45
 y 19
 end

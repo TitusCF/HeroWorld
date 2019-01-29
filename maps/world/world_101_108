@@ -4,7 +4,7 @@ difficulty 1
 width 50
 height 50
 msg
-
+Modified: 2019-01-28 Acer
 endmsg
 outdoor 1
 tile_path_1 world_101_107
@@ -10478,12 +10478,6 @@ arch dungeon_magic
 x 42
 y 11
 end
-arch check_inv
-slaying diploma_of_seafaringjd
-x 42
-y 11
-connected 1
-end
 arch grass
 x 42
 y 11
@@ -10493,20 +10487,6 @@ arch grass
 x 42
 y 12
 elevation 336
-end
-arch sailor
-name bart the sailor
-name_pl bart the sailor
-msg
-@match *
-You don't look like no capee!
-Where's your Seafairing dimploma?
-Don't have one? Heh. You ain't
-renting no damn boat without one!
-HAHAHAHAHAHAHAHAHAHAHAHAHAHA!
-endmsg
-x 42
-y 12
 end
 arch deep_swamp
 x 42
@@ -10743,20 +10723,12 @@ elevation -202
 end
 arch dungeon_magic
 x 43
-y 9
-end
-arch dungeon_magic
-x 43
 y 10
 end
 arch grass
 x 43
 y 10
 elevation 89
-end
-arch dwall_1_1
-x 43
-y 10
 end
 arch dungeon_magic
 x 43
@@ -10767,16 +10739,6 @@ x 43
 y 11
 elevation 257
 end
-arch grate_closed_2
-x 43
-y 11
-speed 0.500000
-connected 1
-end
-arch cityport_b
-x 43
-y 11
-end
 arch dungeon_magic
 x 43
 y 12
@@ -10786,18 +10748,10 @@ x 43
 y 12
 elevation 180
 end
-arch dwall_1_2
-x 43
-y 12
-end
 arch sea
 x 43
 y 13
 elevation -755
-end
-arch dungeon_magic
-x 43
-y 13
 end
 arch shallow_sea
 x 43
@@ -11013,52 +10967,20 @@ x 44
 y 6
 elevation -708
 end
-arch dungeon_magic
-x 44
-y 6
-end
-arch swall_1_1
-x 44
-y 6
-end
 arch sea
 x 44
 y 7
 elevation -619
-end
-arch dungeon_magic
-x 44
-y 7
-end
-arch swall_2_1_1
-x 44
-y 7
 end
 arch sea
 x 44
 y 8
 elevation -501
 end
-arch dungeon_magic
-x 44
-y 8
-end
-arch swall_2_1_1
-x 44
-y 8
-end
 arch sea
 x 44
 y 9
 elevation -350
-end
-arch dungeon_magic
-x 44
-y 9
-end
-arch swall_2_1_1
-x 44
-y 9
 end
 arch sea
 x 44
@@ -11067,47 +10989,22 @@ elevation -197
 end
 arch dungeon_magic
 x 44
-y 10
-end
-arch swall_1_2
-x 44
-y 10
-end
-arch dungeon_magic
-x 44
 y 11
-end
-arch pedestal_trigger
-x 44
-y 11
-connected 1
 end
 arch shallow_sea
 x 44
 y 11
 elevation -93
 end
-arch pier_2_1_2
-x 44
-y 11
-end
 arch sea
 x 44
 y 12
 elevation -755
 end
-arch dungeon_magic
-x 44
-y 12
-end
 arch sea
 x 44
 y 13
 elevation -755
-end
-arch dungeon_magic
-x 44
-y 13
 end
 arch sea
 x 44
@@ -11325,33 +11222,12 @@ elevation -840
 end
 arch dungeon_magic
 x 45
-y 6
-end
-arch grate_closed_1
-x 45
-y 6
-speed 0.500000
-connected 11
-end
-arch dungeon_magic
-x 45
 y 7
 end
 arch sea
 x 45
 y 7
 elevation -754
-end
-arch fishboat
-type 2
-move_allow walk
-slaying rentedboat
-speed 0.3
-container 10000000
-move_type boat
-passenger_limit 2
-x 45
-y 7
 end
 arch dungeon_magic
 x 45
@@ -11362,32 +11238,14 @@ x 45
 y 8
 elevation -648
 end
-arch pier_1_1
-x 45
-y 8
-end
-arch button_lever
-x 45
-y 8
-connected 11
-end
 arch dungeon_magic
 x 45
 y 9
 end
-arch dungeon_floor
+arch sea
 x 45
 y 9
-end
-arch slevel_2_1_1
-x 45
-y 9
-end
-arch grate_closed_1
-x 45
-y 9
-speed 0.500000
-connected 4
+elevation -588
 end
 arch dungeon_magic
 x 45
@@ -11396,20 +11254,7 @@ end
 arch sea
 x 45
 y 10
-elevation -1001
-end
-arch pier_2_1_1
-x 45
-y 10
-end
-arch altar
-name Rent a Fishingboat: 5000 Plat
-name_pl Rent a Fishingboat: 5000 Plat
-slaying platinacoin
-food 5000
-x 45
-y 10
-connected 4
+elevation -588
 end
 arch dungeon_magic
 x 45
@@ -11419,10 +11264,6 @@ arch sea
 x 45
 y 11
 elevation -319
-end
-arch pier_3_1
-x 45
-y 11
 end
 arch dungeon_magic
 x 45
@@ -11435,28 +11276,12 @@ elevation -259
 end
 arch dungeon_magic
 x 45
-y 12
-end
-arch swall_1_1
-x 45
-y 12
-end
-arch dungeon_magic
-x 45
 y 13
 end
 arch sea
 x 45
 y 13
 elevation -223
-end
-arch dungeon_magic
-x 45
-y 13
-end
-arch swall_2_1_1
-x 45
-y 13
 end
 arch dungeon_magic
 x 45
@@ -11469,14 +11294,6 @@ elevation -192
 end
 arch dungeon_magic
 x 45
-y 14
-end
-arch swall_2_1_1
-x 45
-y 14
-end
-arch dungeon_magic
-x 45
 y 15
 end
 arch sea
@@ -11486,28 +11303,12 @@ elevation -155
 end
 arch dungeon_magic
 x 45
-y 15
-end
-arch swall_2_1_1
-x 45
-y 15
-end
-arch dungeon_magic
-x 45
 y 16
 end
 arch sea
 x 45
 y 16
 elevation -108
-end
-arch dungeon_magic
-x 45
-y 16
-end
-arch swall_1_2
-x 45
-y 16
 end
 arch shallow_sea
 x 45
@@ -11724,16 +11525,6 @@ elevation -974
 end
 arch dungeon_magic
 x 46
-y 6
-end
-arch grate_closed_1
-x 46
-y 6
-speed 0.500000
-connected 11
-end
-arch dungeon_magic
-x 46
 y 7
 end
 arch sea
@@ -11762,24 +11553,12 @@ elevation -588
 end
 arch dungeon_magic
 x 46
-y 10
-end
-arch swall_1_4
-x 46
-y 10
-end
-arch dungeon_magic
-x 46
 y 11
 end
 arch sea
 x 46
 y 11
 elevation -494
-end
-arch pier_3_3
-x 46
-y 11
 end
 arch dungeon_magic
 x 46
@@ -11790,36 +11569,14 @@ x 46
 y 12
 elevation -1001
 end
-arch pier_2_1_1
-x 46
-y 12
-end
-arch altar
-name Rent a Rowboat: 2000 Plat
-name_pl Rent a Rowboat: 2000 Plat
-slaying platinacoin
-food 2000
-x 46
-y 12
-connected 2
-end
 arch dungeon_magic
 x 46
 y 13
 end
-arch dungeon_floor
+arch sea
 x 46
 y 13
-end
-arch slevel_2_1_1
-x 46
-y 13
-end
-arch grate_closed_1
-x 46
-y 13
-speed 0.500000
-connected 2
+elevation -588
 end
 arch dungeon_magic
 x 46
@@ -11830,15 +11587,6 @@ x 46
 y 14
 elevation -282
 end
-arch pier_1_2
-x 46
-y 14
-end
-arch button_lever
-x 46
-y 14
-connected 12
-end
 arch dungeon_magic
 x 46
 y 15
@@ -11848,17 +11596,6 @@ x 46
 y 15
 elevation -218
 end
-arch rowboat
-type 2
-move_allow walk
-slaying rentedboat
-speed 0.15
-container 10000000
-move_type boat
-passenger_limit 2
-x 46
-y 15
-end
 arch dungeon_magic
 x 46
 y 16
@@ -11867,16 +11604,6 @@ arch sea
 x 46
 y 16
 elevation -149
-end
-arch dungeon_magic
-x 46
-y 16
-end
-arch grate_closed_1
-x 46
-y 16
-speed 0.500000
-connected 12
 end
 arch sea
 x 46
@@ -12077,52 +11804,20 @@ x 47
 y 6
 elevation -1106
 end
-arch dungeon_magic
-x 47
-y 6
-end
-arch swall_1_1
-x 47
-y 6
-end
 arch sea
 x 47
 y 7
 elevation -1030
-end
-arch dungeon_magic
-x 47
-y 7
-end
-arch swall_2_1_1
-x 47
-y 7
 end
 arch sea
 x 47
 y 8
 elevation -940
 end
-arch dungeon_magic
-x 47
-y 8
-end
-arch swall_2_1_1
-x 47
-y 8
-end
 arch sea
 x 47
 y 9
 elevation -841
-end
-arch dungeon_magic
-x 47
-y 9
-end
-arch swall_2_1_1
-x 47
-y 9
 end
 arch dungeon_magic
 x 47
@@ -12135,24 +11830,12 @@ elevation -739
 end
 arch dungeon_magic
 x 47
-y 10
-end
-arch swall_2_2_4
-x 47
-y 10
-end
-arch dungeon_magic
-x 47
 y 11
 end
 arch sea
 x 47
 y 11
 elevation -640
-end
-arch pier_2_1_2
-x 47
-y 11
 end
 arch dungeon_magic
 x 47
@@ -12162,14 +11845,6 @@ arch sea
 x 47
 y 12
 elevation -546
-end
-arch dungeon_magic
-x 47
-y 12
-end
-arch swall_1_4
-x 47
-y 12
 end
 arch dungeon_magic
 x 47
@@ -12206,16 +11881,6 @@ arch sea
 x 47
 y 16
 elevation -191
-end
-arch dungeon_magic
-x 47
-y 16
-end
-arch grate_closed_1
-x 47
-y 16
-speed 0.500000
-connected 12
 end
 arch sea
 x 47
@@ -12423,20 +12088,12 @@ elevation -1156
 end
 arch dungeon_magic
 x 48
-y 7
-end
-arch dungeon_magic
-x 48
 y 8
 end
 arch sea
 x 48
 y 8
 elevation -1069
-end
-arch pier_1_1
-x 48
-y 8
 end
 arch dungeon_magic
 x 48
@@ -12447,10 +12104,6 @@ x 48
 y 9
 elevation -972
 end
-arch pier_2_1_1
-x 48
-y 9
-end
 arch dungeon_magic
 x 48
 y 10
@@ -12460,10 +12113,6 @@ x 48
 y 10
 elevation -870
 end
-arch pier_2_1_1
-x 48
-y 10
-end
 arch dungeon_magic
 x 48
 y 11
@@ -12472,10 +12121,6 @@ arch sea
 x 48
 y 11
 elevation -764
-end
-arch pier_2_2_4
-x 48
-y 11
 end
 arch dungeon_magic
 x 48
@@ -12488,28 +12133,12 @@ elevation -658
 end
 arch dungeon_magic
 x 48
-y 12
-end
-arch swall_2_2_3
-x 48
-y 12
-end
-arch dungeon_magic
-x 48
 y 13
 end
 arch sea
 x 48
 y 13
 elevation -553
-end
-arch swall_1_2
-x 48
-y 13
-end
-arch dungeon_magic
-x 48
-y 13
 end
 arch dungeon_magic
 x 48
@@ -12522,16 +12151,6 @@ elevation -447
 end
 arch dungeon_magic
 x 48
-y 14
-end
-arch grate_closed_2
-x 48
-y 14
-speed 0.500000
-connected 12
-end
-arch dungeon_magic
-x 48
 y 15
 end
 arch sea
@@ -12541,32 +12160,12 @@ elevation -340
 end
 arch dungeon_magic
 x 48
-y 15
-end
-arch grate_closed_2
-x 48
-y 15
-speed 0.500000
-connected 12
-end
-arch dungeon_magic
-x 48
 y 16
 end
 arch sea
 x 48
 y 16
 elevation -231
-end
-arch dungeon_magic
-x 48
-y 16
-end
-arch spikes_closed
-x 48
-y 16
-speed 0.500000
-connected 12
 end
 arch sea
 x 48
@@ -12786,54 +12385,30 @@ x 49
 y 7
 elevation -1270
 end
-arch dungeon_magic
-x 49
-y 7
-end
 arch sea
 x 49
 y 8
 elevation -1184
-end
-arch dungeon_magic
-x 49
-y 8
 end
 arch sea
 x 49
 y 9
 elevation -1087
 end
-arch dungeon_magic
-x 49
-y 9
-end
 arch sea
 x 49
 y 10
 elevation -982
-end
-arch dungeon_magic
-x 49
-y 10
 end
 arch sea
 x 49
 y 11
 elevation -870
 end
-arch dungeon_magic
-x 49
-y 11
-end
 arch sea
 x 49
 y 12
 elevation -755
-end
-arch dungeon_magic
-x 49
-y 12
 end
 arch sea
 x 49

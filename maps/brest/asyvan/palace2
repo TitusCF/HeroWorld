@@ -1,19 +1,21 @@
 arch map
+name Kingdom Palace, Level 2
+difficulty 12
 region brest
-name palace2
+width 17
+height 17
+enter_x 8
+enter_y 8
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue Sep 20 12:45:08 1994
+Created:  1994-09-20
+Modified: 2012-03-17 Rick Tanner
 endmsg
-x 17
-y 17
 end
 arch dungeon_magic
 end
 arch afloor_left
 end
-arch wwall_2_2_2
+arch white_wall_2_2_2
 end
 arch dungeon_magic
 y 1
@@ -21,7 +23,7 @@ end
 arch afloor_left
 y 1
 end
-arch wwall_2_1_1
+arch white_wall_2_1_1
 y 1
 end
 arch dungeon_magic
@@ -30,7 +32,7 @@ end
 arch afloor_left
 y 2
 end
-arch wwall_3_2
+arch white_wall_3_2
 y 2
 end
 arch dungeon_magic
@@ -39,7 +41,7 @@ end
 arch afloor_left
 y 3
 end
-arch wwall_2_1_1
+arch white_wall_2_1_1
 y 3
 end
 arch dungeon_magic
@@ -48,7 +50,7 @@ end
 arch afloor_left
 y 4
 end
-arch wwall_2_1_1
+arch white_wall_2_1_1
 y 4
 end
 arch dungeon_magic
@@ -57,7 +59,7 @@ end
 arch afloor_left
 y 5
 end
-arch wwall_2_1_1
+arch white_wall_2_1_1
 y 5
 end
 arch dungeon_magic
@@ -66,7 +68,7 @@ end
 arch afloor_left
 y 6
 end
-arch wwall_3_2
+arch white_wall_3_2
 y 6
 end
 arch dungeon_magic
@@ -75,7 +77,7 @@ end
 arch afloor_left
 y 7
 end
-arch wwall_2_1_1
+arch white_wall_2_1_1
 y 7
 end
 arch dungeon_magic
@@ -84,7 +86,7 @@ end
 arch afloor_left
 y 8
 end
-arch wwall_2_1_1
+arch white_wall_2_1_1
 y 8
 end
 arch dungeon_magic
@@ -93,7 +95,7 @@ end
 arch afloor_left
 y 9
 end
-arch wwall_2_1_1
+arch white_wall_2_1_1
 y 9
 end
 arch dungeon_magic
@@ -102,7 +104,7 @@ end
 arch afloor_left
 y 10
 end
-arch wwall_3_2
+arch white_wall_3_2
 y 10
 end
 arch dungeon_magic
@@ -111,7 +113,7 @@ end
 arch afloor_left
 y 11
 end
-arch wwall_2_1_1
+arch white_wall_2_1_1
 y 11
 end
 arch dungeon_magic
@@ -120,7 +122,7 @@ end
 arch afloor_left
 y 12
 end
-arch wwall_2_1_1
+arch white_wall_2_1_1
 y 12
 end
 arch dungeon_magic
@@ -129,7 +131,7 @@ end
 arch afloor_left
 y 13
 end
-arch wwall_2_1_1
+arch white_wall_2_1_1
 y 13
 end
 arch dungeon_magic
@@ -138,7 +140,7 @@ end
 arch afloor_left
 y 14
 end
-arch wwall_3_2
+arch white_wall_3_2
 y 14
 end
 arch dungeon_magic
@@ -147,7 +149,7 @@ end
 arch afloor_left
 y 15
 end
-arch wwall_2_1_1
+arch white_wall_2_1_1
 y 15
 end
 arch dungeon_magic
@@ -156,7 +158,7 @@ end
 arch afloor_left
 y 16
 end
-arch wwall_2_2_1
+arch white_wall_2_2_1
 y 16
 end
 arch dungeon_magic
@@ -165,7 +167,7 @@ end
 arch afloor_left
 x 1
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 1
 end
 arch dungeon_magic
@@ -188,13 +190,9 @@ arch afloor_left
 x 1
 y 2
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 1
 y 2
-end
-arch afloor_left
-x 1
-y 3
 end
 arch dungeon_magic
 x 1
@@ -206,20 +204,20 @@ y 3
 end
 arch teleporter
 slaying palace1
-hp 8
-sp 2
+hp 12
+sp 5
 x 1
 y 3
-end
-arch afloor_left
-x 1
-y 4
 end
 arch dungeon_magic
 x 1
 y 4
 end
-arch oakdoor
+arch afloor_left
+x 1
+y 4
+end
+arch exit
 slaying gate3
 hp 9
 sp 11
@@ -234,10 +232,6 @@ arch afloor_left
 x 1
 y 5
 end
-arch afloor_left
-x 1
-y 6
-end
 arch dungeon_magic
 x 1
 y 6
@@ -246,13 +240,9 @@ arch afloor_left
 x 1
 y 6
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 1
 y 6
-end
-arch afloor_left
-x 1
-y 7
 end
 arch dungeon_magic
 x 1
@@ -264,20 +254,20 @@ y 7
 end
 arch teleporter
 slaying palace1
-hp 8
-sp 2
+hp 12
+sp 5
 x 1
 y 7
-end
-arch afloor_left
-x 1
-y 8
 end
 arch dungeon_magic
 x 1
 y 8
 end
-arch oakdoor
+arch afloor_left
+x 1
+y 8
+end
+arch exit
 slaying gate2
 hp 11
 sp 10
@@ -292,10 +282,6 @@ arch afloor_left
 x 1
 y 9
 end
-arch afloor_left
-x 1
-y 10
-end
 arch dungeon_magic
 x 1
 y 10
@@ -304,13 +290,9 @@ arch afloor_left
 x 1
 y 10
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 1
 y 10
-end
-arch afloor_left
-x 1
-y 11
 end
 arch dungeon_magic
 x 1
@@ -322,20 +304,20 @@ y 11
 end
 arch teleporter
 slaying palace1
-hp 8
-sp 2
+hp 12
+sp 5
 x 1
 y 11
-end
-arch afloor_left
-x 1
-y 12
 end
 arch dungeon_magic
 x 1
 y 12
 end
-arch oakdoor
+arch afloor_left
+x 1
+y 12
+end
+arch exit
 slaying gate1
 hp 1
 sp 1
@@ -350,10 +332,6 @@ arch afloor_left
 x 1
 y 13
 end
-arch afloor_left
-x 1
-y 14
-end
 arch dungeon_magic
 x 1
 y 14
@@ -362,22 +340,22 @@ arch afloor_left
 x 1
 y 14
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 1
 y 14
 end
-arch afloor_left
+arch dungeon_magic
 x 1
 y 15
 end
-arch dungeon_magic
+arch afloor_left
 x 1
 y 15
 end
 arch stair_3_down
-slaying /brest/asyvan/palace1
-hp 1
-sp 15
+slaying palace1
+hp 5
+sp 19
 x 1
 y 15
 end
@@ -389,7 +367,7 @@ arch afloor_left
 x 1
 y 16
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 1
 y 16
 end
@@ -399,7 +377,7 @@ end
 arch afloor_left
 x 2
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 2
 end
 arch dungeon_magic
@@ -422,7 +400,7 @@ arch afloor_left
 x 2
 y 2
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 2
 y 2
 end
@@ -458,7 +436,7 @@ arch afloor_left
 x 2
 y 6
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 2
 y 6
 end
@@ -494,7 +472,7 @@ arch afloor_left
 x 2
 y 10
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 2
 y 10
 end
@@ -530,7 +508,7 @@ arch afloor_left
 x 2
 y 14
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 2
 y 14
 end
@@ -550,7 +528,7 @@ arch afloor_left
 x 2
 y 16
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 2
 y 16
 end
@@ -560,7 +538,7 @@ end
 arch afloor_left
 x 3
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 3
 end
 arch dungeon_magic
@@ -583,7 +561,7 @@ arch afloor_left
 x 3
 y 2
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 3
 y 2
 end
@@ -631,7 +609,7 @@ arch afloor_left
 x 3
 y 6
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 3
 y 6
 end
@@ -679,7 +657,7 @@ arch afloor_left
 x 3
 y 10
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 3
 y 10
 end
@@ -727,7 +705,7 @@ arch afloor_left
 x 3
 y 14
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 3
 y 14
 end
@@ -747,7 +725,7 @@ arch afloor_left
 x 3
 y 16
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 3
 y 16
 end
@@ -757,7 +735,7 @@ end
 arch afloor_left
 x 4
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 4
 end
 arch dungeon_magic
@@ -780,7 +758,7 @@ arch afloor_left
 x 4
 y 2
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 4
 y 2
 end
@@ -816,7 +794,7 @@ arch afloor_left
 x 4
 y 6
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 4
 y 6
 end
@@ -852,7 +830,7 @@ arch afloor_left
 x 4
 y 10
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 4
 y 10
 end
@@ -888,7 +866,7 @@ arch afloor_left
 x 4
 y 14
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 4
 y 14
 end
@@ -908,7 +886,7 @@ arch afloor_left
 x 4
 y 16
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 4
 y 16
 end
@@ -918,7 +896,7 @@ end
 arch afloor_left
 x 5
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 5
 end
 arch dungeon_magic
@@ -941,7 +919,11 @@ arch afloor_left
 x 5
 y 2
 end
-arch wwall_2_2_3
+arch swall_1_4_half
+x 5
+y 2
+end
+arch white_wall_2_2_3
 x 5
 y 2
 end
@@ -953,7 +935,7 @@ arch afloor_left
 x 5
 y 3
 end
-arch wwall_1_2
+arch white_wall_1_2
 x 5
 y 3
 end
@@ -981,7 +963,7 @@ arch afloor_left
 x 5
 y 5
 end
-arch wwall_1_1
+arch white_wall_1_1
 x 5
 y 5
 end
@@ -993,7 +975,7 @@ arch afloor_left
 x 5
 y 6
 end
-arch wwall_3_4
+arch white_wall_3_4
 x 5
 y 6
 end
@@ -1005,7 +987,7 @@ arch afloor_left
 x 5
 y 7
 end
-arch wwall_1_2
+arch white_wall_1_2
 x 5
 y 7
 end
@@ -1033,7 +1015,7 @@ arch afloor_left
 x 5
 y 9
 end
-arch wwall_1_1
+arch white_wall_1_1
 x 5
 y 9
 end
@@ -1045,7 +1027,7 @@ arch afloor_left
 x 5
 y 10
 end
-arch wwall_3_4
+arch white_wall_3_4
 x 5
 y 10
 end
@@ -1057,7 +1039,7 @@ arch afloor_left
 x 5
 y 11
 end
-arch wwall_1_2
+arch white_wall_1_2
 x 5
 y 11
 end
@@ -1085,7 +1067,7 @@ arch afloor_left
 x 5
 y 13
 end
-arch wwall_1_1
+arch white_wall_1_1
 x 5
 y 13
 end
@@ -1097,7 +1079,7 @@ arch afloor_left
 x 5
 y 14
 end
-arch wwall_2_2_4
+arch white_wall_2_2_4
 x 5
 y 14
 end
@@ -1117,7 +1099,7 @@ arch afloor_left
 x 5
 y 16
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 5
 y 16
 end
@@ -1127,7 +1109,7 @@ end
 arch afloor_left
 x 6
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 6
 end
 arch dungeon_magic
@@ -1154,7 +1136,7 @@ arch afloor_left
 x 6
 y 2
 end
-arch swall_1_4
+arch swall_2_1_2
 x 6
 y 2
 end
@@ -1270,7 +1252,7 @@ arch afloor_left
 x 6
 y 16
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 6
 y 16
 end
@@ -1280,7 +1262,7 @@ end
 arch afloor_left
 x 7
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 7
 end
 arch dungeon_magic
@@ -1293,10 +1275,7 @@ y 1
 end
 arch note
 msg
-Congatulations! The biggest reward is
-not the treasure that you have gotten,
-it is the work you have done to get
-here..
+Congratulations! The biggest reward is not the treasure that you have gotten, it is the work you have done to get here..
 endmsg
 x 7
 y 1
@@ -1409,7 +1388,7 @@ arch afloor_left
 x 7
 y 14
 end
-arch wwall_1_1
+arch white_wall_1_1
 x 7
 y 14
 end
@@ -1421,7 +1400,7 @@ arch afloor_left
 x 7
 y 15
 end
-arch wwall_2_1_1
+arch white_wall_2_1_1
 x 7
 y 15
 end
@@ -1433,7 +1412,7 @@ arch afloor_left
 x 7
 y 16
 end
-arch wwall_3_1
+arch white_wall_3_1
 x 7
 y 16
 end
@@ -1443,7 +1422,7 @@ end
 arch afloor_left
 x 8
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 8
 end
 arch dungeon_magic
@@ -1469,7 +1448,6 @@ end
 arch grate_closed_1
 x 8
 y 2
-protected 99
 connected 99
 end
 arch dungeon_magic
@@ -1516,11 +1494,11 @@ arch afloor_left
 x 8
 y 7
 end
-arch afloor_left
+arch dungeon_magic
 x 8
 y 8
 end
-arch dungeon_magic
+arch afloor_left
 x 8
 y 8
 end
@@ -1586,9 +1564,7 @@ end
 arch locked_door1
 slaying treasure
 msg
-Go through all nine gates of hell and
-you will have the special key that
-opens this door.
+Go through all nine gates of hell and you will have the special key that opens this door.
 endmsg
 x 8
 y 14
@@ -1604,7 +1580,6 @@ end
 arch button_handle
 x 8
 y 15
-protected 99
 connected 99
 end
 arch dungeon_magic
@@ -1615,7 +1590,7 @@ arch afloor_left
 x 8
 y 16
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 8
 y 16
 end
@@ -1625,7 +1600,7 @@ end
 arch afloor_left
 x 9
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 9
 end
 arch dungeon_magic
@@ -1748,7 +1723,7 @@ arch afloor_left
 x 9
 y 14
 end
-arch wwall_1_1
+arch white_wall_1_1
 x 9
 y 14
 end
@@ -1760,7 +1735,7 @@ arch afloor_left
 x 9
 y 15
 end
-arch wwall_2_1_1
+arch white_wall_2_1_1
 x 9
 y 15
 end
@@ -1772,7 +1747,7 @@ arch afloor_left
 x 9
 y 16
 end
-arch wwall_3_1
+arch white_wall_3_1
 x 9
 y 16
 end
@@ -1782,7 +1757,7 @@ end
 arch afloor_left
 x 10
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 10
 end
 arch dungeon_magic
@@ -1805,7 +1780,7 @@ arch afloor_left
 x 10
 y 2
 end
-arch swall_1_3
+arch swall_2_1_2
 x 10
 y 2
 end
@@ -1921,7 +1896,7 @@ arch afloor_left
 x 10
 y 16
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 10
 y 16
 end
@@ -1931,7 +1906,7 @@ end
 arch afloor_left
 x 11
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 11
 end
 arch dungeon_magic
@@ -1954,7 +1929,11 @@ arch afloor_left
 x 11
 y 2
 end
-arch wwall_2_2_2
+arch swall_1_3_half
+x 11
+y 2
+end
+arch white_wall_2_2_2
 x 11
 y 2
 end
@@ -1966,7 +1945,7 @@ arch afloor_left
 x 11
 y 3
 end
-arch wwall_1_2
+arch white_wall_1_2
 x 11
 y 3
 end
@@ -1994,7 +1973,7 @@ arch afloor_left
 x 11
 y 5
 end
-arch wwall_1_1
+arch white_wall_1_1
 x 11
 y 5
 end
@@ -2006,7 +1985,7 @@ arch afloor_left
 x 11
 y 6
 end
-arch wwall_3_2
+arch white_wall_3_2
 x 11
 y 6
 end
@@ -2018,7 +1997,7 @@ arch afloor_left
 x 11
 y 7
 end
-arch wwall_1_2
+arch white_wall_1_2
 x 11
 y 7
 end
@@ -2046,7 +2025,7 @@ arch afloor_left
 x 11
 y 9
 end
-arch wwall_1_1
+arch white_wall_1_1
 x 11
 y 9
 end
@@ -2058,7 +2037,7 @@ arch afloor_left
 x 11
 y 10
 end
-arch wwall_3_2
+arch white_wall_3_2
 x 11
 y 10
 end
@@ -2070,7 +2049,7 @@ arch afloor_left
 x 11
 y 11
 end
-arch wwall_1_2
+arch white_wall_1_2
 x 11
 y 11
 end
@@ -2098,7 +2077,7 @@ arch afloor_left
 x 11
 y 13
 end
-arch wwall_1_1
+arch white_wall_1_1
 x 11
 y 13
 end
@@ -2110,7 +2089,7 @@ arch afloor_left
 x 11
 y 14
 end
-arch wwall_2_2_1
+arch white_wall_2_2_1
 x 11
 y 14
 end
@@ -2130,7 +2109,7 @@ arch afloor_left
 x 11
 y 16
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 11
 y 16
 end
@@ -2140,7 +2119,7 @@ end
 arch afloor_left
 x 12
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 12
 end
 arch dungeon_magic
@@ -2163,7 +2142,7 @@ arch afloor_left
 x 12
 y 2
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 12
 y 2
 end
@@ -2203,7 +2182,7 @@ arch afloor_left
 x 12
 y 6
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 12
 y 6
 end
@@ -2243,7 +2222,7 @@ arch afloor_left
 x 12
 y 10
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 12
 y 10
 end
@@ -2283,7 +2262,7 @@ arch afloor_left
 x 12
 y 14
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 12
 y 14
 end
@@ -2303,7 +2282,7 @@ arch afloor_left
 x 12
 y 16
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 12
 y 16
 end
@@ -2313,7 +2292,7 @@ end
 arch afloor_left
 x 13
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 13
 end
 arch dungeon_magic
@@ -2336,7 +2315,7 @@ arch afloor_left
 x 13
 y 2
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 13
 y 2
 end
@@ -2376,7 +2355,7 @@ arch afloor_left
 x 13
 y 6
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 13
 y 6
 end
@@ -2416,7 +2395,7 @@ arch afloor_left
 x 13
 y 10
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 13
 y 10
 end
@@ -2456,7 +2435,7 @@ arch afloor_left
 x 13
 y 14
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 13
 y 14
 end
@@ -2476,7 +2455,7 @@ arch afloor_left
 x 13
 y 16
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 13
 y 16
 end
@@ -2486,7 +2465,7 @@ end
 arch afloor_left
 x 14
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 14
 end
 arch dungeon_magic
@@ -2509,7 +2488,7 @@ arch afloor_left
 x 14
 y 2
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 14
 y 2
 end
@@ -2549,7 +2528,7 @@ arch afloor_left
 x 14
 y 6
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 14
 y 6
 end
@@ -2589,7 +2568,7 @@ arch afloor_left
 x 14
 y 10
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 14
 y 10
 end
@@ -2629,7 +2608,7 @@ arch afloor_left
 x 14
 y 14
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 14
 y 14
 end
@@ -2649,7 +2628,7 @@ arch afloor_left
 x 14
 y 16
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 14
 y 16
 end
@@ -2659,7 +2638,7 @@ end
 arch afloor_left
 x 15
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 15
 end
 arch dungeon_magic
@@ -2682,7 +2661,7 @@ arch afloor_left
 x 15
 y 2
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 15
 y 2
 end
@@ -2696,30 +2675,26 @@ y 3
 end
 arch teleporter
 slaying palace1
-hp 8
-sp 2
+hp 12
+sp 5
 x 15
 y 3
-end
-arch afloor_left
-x 15
-y 4
 end
 arch dungeon_magic
 x 15
 y 4
 end
-arch oakdoor
+arch afloor_left
+x 15
+y 4
+end
+arch exit
 slaying gate4
 hp 3
 sp 18
 x 15
 y 4
 end
-arch afloor_left
-x 15
-y 5
-end
 arch dungeon_magic
 x 15
 y 5
@@ -2732,10 +2707,6 @@ arch random_wealth
 x 15
 y 5
 end
-arch afloor_left
-x 15
-y 6
-end
 arch dungeon_magic
 x 15
 y 6
@@ -2744,13 +2715,9 @@ arch afloor_left
 x 15
 y 6
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 15
 y 6
-end
-arch afloor_left
-x 15
-y 7
 end
 arch dungeon_magic
 x 15
@@ -2762,30 +2729,26 @@ y 7
 end
 arch teleporter
 slaying palace1
-hp 8
-sp 2
+hp 12
+sp 5
 x 15
 y 7
-end
-arch afloor_left
-x 15
-y 8
 end
 arch dungeon_magic
 x 15
 y 8
 end
-arch oakdoor
+arch afloor_left
+x 15
+y 8
+end
+arch exit
 slaying gate5
 hp 1
 sp 4
 x 15
 y 8
 end
-arch afloor_left
-x 15
-y 9
-end
 arch dungeon_magic
 x 15
 y 9
@@ -2798,10 +2761,6 @@ arch random_wealth
 x 15
 y 9
 end
-arch afloor_left
-x 15
-y 10
-end
 arch dungeon_magic
 x 15
 y 10
@@ -2810,13 +2769,9 @@ arch afloor_left
 x 15
 y 10
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 15
 y 10
-end
-arch afloor_left
-x 15
-y 11
 end
 arch dungeon_magic
 x 15
@@ -2828,29 +2783,25 @@ y 11
 end
 arch teleporter
 slaying palace1
-hp 8
-sp 2
+hp 12
+sp 5
 x 15
 y 11
-end
-arch afloor_left
-x 15
-y 12
 end
 arch dungeon_magic
 x 15
 y 12
 end
-arch oakdoor
+arch afloor_left
+x 15
+y 12
+end
+arch exit
 slaying gate6
 hp 1
 sp 1
 x 15
 y 12
-end
-arch afloor_left
-x 15
-y 13
 end
 arch dungeon_magic
 x 15
@@ -2864,10 +2815,6 @@ arch random_wealth
 x 15
 y 13
 end
-arch afloor_left
-x 15
-y 14
-end
 arch dungeon_magic
 x 15
 y 14
@@ -2876,29 +2823,25 @@ arch afloor_left
 x 15
 y 14
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 15
 y 14
 end
-arch afloor_left
+arch dungeon_magic
 x 15
 y 15
 end
-arch dungeon_magic
+arch afloor_left
 x 15
 y 15
 end
 arch stair_3_down
-slaying /brest/asyvan/palace1
-hp 15
-sp 15
+slaying palace1
+hp 19
+sp 19
 x 15
 y 15
 end
-arch afloor_left
-x 15
-y 16
-end
 arch dungeon_magic
 x 15
 y 16
@@ -2907,7 +2850,7 @@ arch afloor_left
 x 15
 y 16
 end
-arch wwall_2_1_2
+arch white_wall_2_1_2
 x 15
 y 16
 end
@@ -2917,7 +2860,7 @@ end
 arch afloor_left
 x 16
 end
-arch wwall_2_2_3
+arch white_wall_2_2_3
 x 16
 end
 arch dungeon_magic
@@ -2928,7 +2871,7 @@ arch afloor_left
 x 16
 y 1
 end
-arch wwall_2_1_1
+arch white_wall_2_1_1
 x 16
 y 1
 end
@@ -2940,7 +2883,7 @@ arch afloor_left
 x 16
 y 2
 end
-arch wwall_3_4
+arch white_wall_3_4
 x 16
 y 2
 end
@@ -2952,7 +2895,7 @@ arch afloor_left
 x 16
 y 3
 end
-arch wwall_2_1_1
+arch white_wall_2_1_1
 x 16
 y 3
 end
@@ -2964,7 +2907,7 @@ arch afloor_left
 x 16
 y 4
 end
-arch wwall_2_1_1
+arch white_wall_2_1_1
 x 16
 y 4
 end
@@ -2976,7 +2919,7 @@ arch afloor_left
 x 16
 y 5
 end
-arch wwall_2_1_1
+arch white_wall_2_1_1
 x 16
 y 5
 end
@@ -2988,7 +2931,7 @@ arch afloor_left
 x 16
 y 6
 end
-arch wwall_3_4
+arch white_wall_3_4
 x 16
 y 6
 end
@@ -3000,7 +2943,7 @@ arch afloor_left
 x 16
 y 7
 end
-arch wwall_2_1_1
+arch white_wall_2_1_1
 x 16
 y 7
 end
@@ -3012,7 +2955,7 @@ arch afloor_left
 x 16
 y 8
 end
-arch wwall_2_1_1
+arch white_wall_2_1_1
 x 16
 y 8
 end
@@ -3024,7 +2967,7 @@ arch afloor_left
 x 16
 y 9
 end
-arch wwall_2_1_1
+arch white_wall_2_1_1
 x 16
 y 9
 end
@@ -3036,7 +2979,7 @@ arch afloor_left
 x 16
 y 10
 end
-arch wwall_3_4
+arch white_wall_3_4
 x 16
 y 10
 end
@@ -3048,7 +2991,7 @@ arch afloor_left
 x 16
 y 11
 end
-arch wwall_2_1_1
+arch white_wall_2_1_1
 x 16
 y 11
 end
@@ -3060,7 +3003,7 @@ arch afloor_left
 x 16
 y 12
 end
-arch wwall_2_1_1
+arch white_wall_2_1_1
 x 16
 y 12
 end
@@ -3072,7 +3015,7 @@ arch afloor_left
 x 16
 y 13
 end
-arch wwall_2_1_1
+arch white_wall_2_1_1
 x 16
 y 13
 end
@@ -3084,7 +3027,7 @@ arch afloor_left
 x 16
 y 14
 end
-arch wwall_3_4
+arch white_wall_3_4
 x 16
 y 14
 end
@@ -3096,7 +3039,7 @@ arch afloor_left
 x 16
 y 15
 end
-arch wwall_2_1_1
+arch white_wall_2_1_1
 x 16
 y 15
 end
@@ -3108,7 +3051,7 @@ arch afloor_left
 x 16
 y 16
 end
-arch wwall_2_2_4
+arch white_wall_2_2_4
 x 16
 y 16
 end

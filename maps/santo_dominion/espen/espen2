@@ -1,10 +1,13 @@
 arch map
-region santodominion
 name espen2a
+region santodominion
+width 16
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu Jun  8 01:23:31 1995
+Modified: 2019-01-28 Acer
 endmsg
 end
 arch dungeon_floor
@@ -491,6 +494,10 @@ x 4
 y 11
 end
 arch dungeon_floor
+x 4
+y 12
+end
+arch big_dragon
 x 4
 y 12
 end
@@ -1111,6 +1118,16 @@ arch dungeon_floor
 x 12
 y 4
 end
+arch big_dragon
+hp 4500
+x 12
+y 4
+carrying 100
+arch key2
+name mansion key
+slaying set_individual_value man_drag
+end
+end
 arch dungeon_floor
 x 12
 y 5
@@ -1485,18 +1502,4 @@ end
 arch bwall_2_2_4
 x 15
 y 15
-end
-arch big_dragon
-x 4
-y 12
-end
-arch big_dragon
-hp 4500
-x 12
-y 4
-carrying 100
-arch key2
-name mansion key
-slaying set_individual_value man_drag
-end
 end

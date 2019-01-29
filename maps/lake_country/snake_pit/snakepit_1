@@ -1,22 +1,20 @@
 arch map
+name Snake Pit, Level 1
+difficulty 85
 region lakecountry
-name snakepit1
+darkness 5
+width 36
+height 36
+enter_x 7
+enter_y 16
 msg
-Creator: Kundi, Xue
-Email: xkd@soda.berkeley.edu
-Date: Wed Apr 26 00:15:00 1995
-endmsg
-x 36
-y 36
-invisible 5
-end
-arch blocked
-msg
+Created:  1995-04-26 Kundi, Xue (xkd@soda.berkeley.edu)
+Modified: 2012-02-10 Rick Tanner
 endmsg
 end
-arch blocked
-msg
-endmsg
+arch cave_15
+end
+arch cave_15
 y 1
 end
 arch cave18
@@ -31,38 +29,29 @@ end
 arch cave17
 y 5
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 6
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 7
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 8
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 9
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 10
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 11
 end
 arch cave18
 y 12
+end
+arch small_stones
+y 13
 end
 arch cave3
 y 13
@@ -100,19 +89,13 @@ end
 arch cave23
 y 20
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 21
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 22
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 23
 end
 arch cave18
@@ -151,24 +134,16 @@ end
 arch cave17
 y 33
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 34
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 1
 end
@@ -232,9 +207,7 @@ arch cave17
 x 1
 y 10
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 11
 end
@@ -306,6 +279,10 @@ arch cave24
 x 1
 y 22
 end
+arch small_stones
+x 1
+y 23
+end
 arch cave3
 x 1
 y 23
@@ -386,15 +363,11 @@ arch cave17
 x 1
 y 34
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 end
 arch cave18
@@ -461,9 +434,7 @@ arch cave17
 x 2
 y 11
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 12
 end
@@ -500,6 +471,20 @@ x 2
 y 16
 end
 arch small_stones
+x 2
+y 17
+end
+arch sphinx
+msg
+@match chaos
+Chaos is the order of the place.  Go down deeper and follow your ears for the roarings.  And then you will find what you look for.
+@match death|undead|undeads
+The place the undeads live.  You can job them easily there as so many have proven.  The entrance is a hole at the end of a twisted passage deeper below.
+@match *
+I don't know any riddles right now....GO AWAY!!!
+Or you can go down explore and find all the secret of these cryptic and unearthly underground caverns.  What are you looking for stranger?
+endmsg
+hp 1800
 x 2
 y 17
 end
@@ -587,9 +572,7 @@ arch cave17
 x 2
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 end
 arch cave19
@@ -627,6 +610,21 @@ end
 arch large_stones
 x 3
 y 6
+end
+arch cobra
+name black metallic serpent
+hp 500
+exp 10000
+dam 30
+x 3
+y 6
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 3
@@ -772,14 +770,10 @@ arch cave2
 x 3
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 1
 end
@@ -806,6 +800,21 @@ end
 arch large_stones
 x 4
 y 6
+end
+arch cobra
+name black metallic serpent
+hp 500
+exp 10000
+dam 30
+x 4
+y 6
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 4
@@ -955,14 +964,10 @@ arch cave22
 x 4
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 5
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 5
 y 1
 end
@@ -1050,9 +1055,7 @@ arch cave20
 x 5
 y 13
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 5
 y 14
 end
@@ -1104,19 +1107,19 @@ arch small_stones
 x 5
 y 25
 end
+arch small_stones
+x 5
+y 26
+end
 arch cave2
 x 5
 y 26
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 5
 y 27
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 5
 y 28
 end
@@ -1156,24 +1159,22 @@ arch generate_ghost
 x 5
 y 33
 end
+arch small_stones
+x 5
+y 34
+end
 arch cave2
 x 5
 y 34
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 5
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 6
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 6
 y 1
 end
@@ -1229,9 +1230,7 @@ arch cave23
 x 6
 y 11
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 6
 y 12
 end
@@ -1311,27 +1310,25 @@ arch cave22
 x 6
 y 26
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 6
 y 27
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 6
 y 28
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 6
 y 29
 end
 arch cave24
 x 6
 y 30
+end
+arch small_stones
+x 6
+y 31
 end
 arch cave3
 x 6
@@ -1361,14 +1358,10 @@ arch cave17
 x 6
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 7
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 7
 y 1
 end
@@ -1526,15 +1519,11 @@ arch cave23
 x 7
 y 27
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 7
 y 28
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 7
 y 29
 end
@@ -1574,14 +1563,10 @@ arch cave2
 x 7
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 8
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 8
 y 1
 end
@@ -1604,6 +1589,21 @@ end
 arch large_stones
 x 8
 y 5
+end
+arch cobra
+name black metallic serpent
+hp 500
+exp 10000
+dam 30
+x 8
+y 5
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 8
@@ -1716,6 +1716,10 @@ end
 arch cave12
 x 8
 y 27
+end
+arch small_stones
+x 8
+y 28
 end
 arch cave3
 x 8
@@ -1836,6 +1840,21 @@ arch large_stones
 x 9
 y 13
 end
+arch cobra
+name black metallic serpent
+hp 500
+exp 10000
+dam 30
+x 9
+y 13
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
+end
 arch large_stones
 x 9
 y 14
@@ -1982,6 +2001,21 @@ end
 arch large_stones
 x 10
 y 4
+end
+arch cobra
+name black metallic serpent
+hp 500
+exp 10000
+dam 30
+x 10
+y 4
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 10
@@ -2081,7 +2115,7 @@ y 24
 end
 arch magic_ear
 msg
-@match Yes|yes|open|close
+@match yes|open|close
 Gnar.. rr..
 endmsg
 x 10
@@ -2106,6 +2140,10 @@ arch small_stones
 x 10
 y 27
 end
+arch small_stones
+x 10
+y 28
+end
 arch cave2
 x 10
 y 28
@@ -2113,6 +2151,10 @@ end
 arch cave24
 x 10
 y 29
+end
+arch small_stones
+x 10
+y 30
 end
 arch cave3
 x 10
@@ -2159,9 +2201,7 @@ arch cave2
 x 10
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 11
 end
 arch medium_stones
@@ -2244,27 +2284,19 @@ arch cave22
 x 11
 y 16
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 11
 y 17
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 11
 y 18
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 11
 y 19
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 11
 y 20
 end
@@ -2306,8 +2338,7 @@ y 25
 end
 arch magic_mouth
 msg
-  A male voice asks,
-  "Do you wish to enter?
+A male voice asks, "Do you wish to enter?"
 endmsg
 x 11
 y 26
@@ -2319,6 +2350,10 @@ end
 arch small_stones
 x 11
 y 27
+end
+arch small_stones
+x 11
+y 28
 end
 arch cave2
 x 11
@@ -2364,9 +2399,7 @@ arch cave22
 x 11
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 12
 end
 arch medium_stones
@@ -2396,6 +2429,21 @@ end
 arch large_stones
 x 12
 y 4
+end
+arch cobra
+name black metallic serpent
+hp 500
+exp 10000
+dam 30
+x 12
+y 4
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 12
@@ -2453,15 +2501,11 @@ arch cave2
 x 12
 y 15
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 12
 y 16
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 12
 y 17
 end
@@ -2533,9 +2577,7 @@ arch cave22
 x 12
 y 28
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 12
 y 29
 end
@@ -2563,6 +2605,10 @@ arch cave11
 x 12
 y 32
 end
+arch small_stones
+x 12
+y 33
+end
 arch cave1
 x 12
 y 33
@@ -2571,15 +2617,11 @@ arch cave20
 x 12
 y 34
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 12
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 13
 end
 arch cave19
@@ -2662,9 +2704,7 @@ arch cave22
 x 13
 y 15
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 13
 y 16
 end
@@ -2720,9 +2760,7 @@ arch cave20
 x 13
 y 27
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 13
 y 28
 end
@@ -2758,32 +2796,22 @@ arch cave17
 x 13
 y 33
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 13
 y 34
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 13
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 14
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 14
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 14
 y 2
 end
@@ -2847,9 +2875,7 @@ arch cave2
 x 14
 y 14
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 14
 y 15
 end
@@ -2921,6 +2947,10 @@ arch cave12
 x 14
 y 26
 end
+arch small_stones
+x 14
+y 27
+end
 arch cave3
 x 14
 y 27
@@ -2961,44 +2991,30 @@ arch cave17
 x 14
 y 34
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 14
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 15
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 15
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 15
 y 2
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 15
 y 3
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 15
 y 4
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 15
 y 5
 end
@@ -3086,6 +3102,10 @@ arch cave10
 x 15
 y 21
 end
+arch small_stones
+x 15
+y 22
+end
 arch cave2
 x 15
 y 22
@@ -3122,6 +3142,10 @@ arch cave12
 x 15
 y 28
 end
+arch small_stones
+x 15
+y 29
+end
 arch cave3
 x 15
 y 29
@@ -3129,6 +3153,10 @@ end
 arch cave23
 x 15
 y 30
+end
+arch small_stones
+x 15
+y 31
 end
 arch cave1
 x 15
@@ -3162,38 +3190,26 @@ arch cave17
 x 15
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 16
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 16
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 16
 y 2
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 16
 y 3
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 16
 y 4
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 16
 y 5
 end
@@ -3220,6 +3236,21 @@ end
 arch large_stones
 x 16
 y 10
+end
+arch cobra
+name black metallic serpent
+hp 500
+exp 10000
+dam 30
+x 16
+y 10
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 16
@@ -3253,7 +3284,7 @@ arch cave14
 name illusionary wall
 x 16
 y 16
-no_pass 0
+move_block 0
 end
 arch small_stones
 x 16
@@ -3267,15 +3298,11 @@ arch cave20
 x 16
 y 18
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 16
 y 19
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 16
 y 20
 end
@@ -3287,9 +3314,7 @@ arch cave22
 x 16
 y 22
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 16
 y 23
 end
@@ -3361,44 +3386,30 @@ arch cave2
 x 16
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 17
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 17
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 17
 y 2
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 17
 y 3
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 17
 y 4
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 17
 y 5
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 17
 y 6
 end
@@ -3454,33 +3465,23 @@ arch cave23
 x 17
 y 17
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 17
 y 18
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 17
 y 19
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 17
 y 20
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 17
 y 21
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 17
 y 22
 end
@@ -3532,6 +3533,10 @@ arch cave23
 x 17
 y 32
 end
+arch small_stones
+x 17
+y 33
+end
 arch cave4
 x 17
 y 33
@@ -3545,6 +3550,7 @@ name a beautiful metal box
 slaying 301
 x 17
 y 34
+material 0
 carrying 65000
 arch dragon_mail
 name shining dragon mail
@@ -3567,50 +3573,34 @@ arch cave2
 x 17
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 18
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 18
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 18
 y 2
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 18
 y 3
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 18
 y 4
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 18
 y 5
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 18
 y 6
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 18
 y 7
 end
@@ -3637,6 +3627,21 @@ end
 arch large_stones
 x 18
 y 12
+end
+arch cobra
+name black metallic serpent
+hp 500
+exp 10000
+dam 30
+x 18
+y 12
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 18
@@ -3666,21 +3671,15 @@ arch cave23
 x 18
 y 18
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 18
 y 19
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 18
 y 20
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 18
 y 21
 end
@@ -3772,56 +3771,38 @@ arch cave2
 x 18
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 19
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 19
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 19
 y 2
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 19
 y 3
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 19
 y 4
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 19
 y 5
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 19
 y 6
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 19
 y 7
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 19
 y 8
 end
@@ -3857,6 +3838,21 @@ arch large_stones
 x 19
 y 15
 end
+arch cobra
+name black metallic serpent
+hp 500
+exp 10000
+dam 30
+x 19
+y 15
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
+end
 arch large_stones
 x 19
 y 16
@@ -3873,15 +3869,11 @@ arch cave2
 x 19
 y 18
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 19
 y 19
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 19
 y 20
 end
@@ -3933,6 +3925,10 @@ arch cave10
 x 19
 y 27
 end
+arch small_stones
+x 19
+y 28
+end
 arch cave2
 x 19
 y 28
@@ -3957,6 +3953,10 @@ arch small_stones
 x 19
 y 32
 end
+arch small_stones
+x 19
+y 33
+end
 arch cave2
 x 19
 y 33
@@ -3969,56 +3969,38 @@ arch cave20
 x 19
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 20
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 20
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 20
 y 2
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 20
 y 3
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 20
 y 4
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 20
 y 5
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 20
 y 6
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 20
 y 7
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 20
 y 8
 end
@@ -4070,9 +4052,7 @@ arch cave20
 x 20
 y 18
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 20
 y 19
 end
@@ -4104,9 +4084,7 @@ arch cave22
 x 20
 y 24
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 20
 y 25
 end
@@ -4154,56 +4132,38 @@ arch cave17
 x 20
 y 34
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 20
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 21
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 21
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 21
 y 2
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 21
 y 3
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 21
 y 4
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 21
 y 5
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 21
 y 6
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 21
 y 7
 end
@@ -4226,6 +4186,21 @@ end
 arch large_stones
 x 21
 y 11
+end
+arch cobra
+name black metallic serpent
+hp 500
+exp 10000
+dam 30
+x 21
+y 11
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 21
@@ -4291,9 +4266,7 @@ arch cave17
 x 21
 y 24
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 21
 y 25
 end
@@ -4329,6 +4302,10 @@ arch cave9
 x 21
 y 29
 end
+arch small_stones
+x 21
+y 30
+end
 arch cave2
 x 21
 y 30
@@ -4361,44 +4338,30 @@ arch cave17
 x 21
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 22
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 22
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 22
 y 2
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 22
 y 3
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 22
 y 4
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 22
 y 5
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 22
 y 6
 end
@@ -4474,6 +4437,21 @@ arch large_stones
 x 22
 y 21
 end
+arch cobra
+name black metallic serpent
+hp 500
+exp 10000
+dam 30
+x 22
+y 21
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
+end
 arch large_stones
 x 22
 y 22
@@ -4490,9 +4468,7 @@ arch cave2
 x 22
 y 24
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 22
 y 25
 end
@@ -4556,38 +4532,26 @@ arch cave2
 x 22
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 23
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 23
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 23
 y 2
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 23
 y 3
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 23
 y 4
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 23
 y 5
 end
@@ -4622,6 +4586,21 @@ end
 arch large_stones
 x 23
 y 12
+end
+arch cobra
+name black metallic serpent
+hp 500
+exp 10000
+dam 30
+x 23
+y 12
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 23
@@ -4658,6 +4637,21 @@ end
 arch large_stones
 x 23
 y 21
+end
+arch cobra
+name black metallic serpent
+hp 500
+exp 10000
+dam 30
+x 23
+y 21
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 23
@@ -4701,8 +4695,6 @@ y 28
 end
 arch lich
 name Dusanki, Lusanka's brother
-msg
-endmsg
 hp 4000
 exp 200000
 x 23
@@ -4762,32 +4754,22 @@ arch cave2
 x 23
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 2
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 3
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 4
 end
@@ -4810,6 +4792,21 @@ end
 arch large_stones
 x 24
 y 8
+end
+arch cobra
+name black metallic serpent
+hp 500
+exp 10000
+dam 30
+x 24
+y 8
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 24
@@ -4842,6 +4839,21 @@ end
 arch large_stones
 x 24
 y 14
+end
+arch cobra
+name black metallic serpent
+hp 500
+exp 10000
+dam 30
+x 24
+y 14
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 24
@@ -4951,32 +4963,22 @@ arch cave2
 x 24
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 25
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 25
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 25
 y 2
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 25
 y 3
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 25
 y 4
 end
@@ -5136,32 +5138,22 @@ arch cave2
 x 25
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 26
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 26
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 26
 y 2
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 26
 y 3
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 26
 y 4
 end
@@ -5180,6 +5172,21 @@ end
 arch large_stones
 x 26
 y 7
+end
+arch cobra
+name black metallic serpent
+hp 500
+exp 10000
+dam 30
+x 26
+y 7
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 26
@@ -5220,6 +5227,21 @@ end
 arch large_stones
 x 26
 y 15
+end
+arch cobra
+name black metallic serpent
+hp 500
+exp 10000
+dam 30
+x 26
+y 15
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 26
@@ -5281,6 +5303,10 @@ arch cave25
 x 26
 y 27
 end
+arch small_stones
+x 26
+y 28
+end
 arch cave1
 x 26
 y 28
@@ -5321,26 +5347,18 @@ arch cave22
 x 26
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 27
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 27
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 27
 y 2
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 27
 y 3
 end
@@ -5375,6 +5393,21 @@ end
 arch large_stones
 x 27
 y 10
+end
+arch cobra
+name black metallic serpent
+hp 500
+exp 10000
+dam 30
+x 27
+y 10
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 27
@@ -5436,6 +5469,21 @@ arch large_stones
 x 27
 y 23
 end
+arch cobra
+name black metallic serpent
+hp 500
+exp 10000
+dam 30
+x 27
+y 23
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
+end
 arch large_stones
 x 27
 y 24
@@ -5455,6 +5503,10 @@ end
 arch cave17
 x 27
 y 27
+end
+arch small_stones
+x 27
+y 28
 end
 arch cave24
 x 27
@@ -5484,30 +5536,26 @@ arch small_stones
 x 27
 y 33
 end
+arch small_stones
+x 27
+y 34
+end
 arch cave2
 x 27
 y 34
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 27
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 28
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 28
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 28
 y 2
 end
@@ -5567,6 +5615,21 @@ arch large_stones
 x 28
 y 12
 end
+arch cobra
+name black metallic serpent
+hp 500
+exp 10000
+dam 30
+x 28
+y 12
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
+end
 arch large_stones
 x 28
 y 13
@@ -5599,9 +5662,7 @@ arch cave17
 x 28
 y 18
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 28
 y 19
 end
@@ -5624,6 +5685,21 @@ end
 arch large_stones
 x 28
 y 23
+end
+arch cobra
+name black metallic serpent
+hp 500
+exp 10000
+dam 30
+x 28
+y 23
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 28
@@ -5648,6 +5724,10 @@ end
 arch cave2
 x 28
 y 27
+end
+arch small_stones
+x 28
+y 28
 end
 arch cave4
 x 28
@@ -5693,20 +5773,14 @@ arch cave17
 x 28
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 29
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 29
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 29
 y 2
 end
@@ -5790,15 +5864,11 @@ arch cave2
 x 29
 y 18
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 29
 y 19
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 29
 y 20
 end
@@ -5878,20 +5948,14 @@ arch cave22
 x 29
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 30
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 30
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 30
 y 2
 end
@@ -5906,6 +5970,21 @@ end
 arch large_stones
 x 30
 y 4
+end
+arch cobra
+name black metallic serpent
+hp 500
+exp 10000
+dam 30
+x 30
+y 4
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 30
@@ -5951,6 +6030,21 @@ arch large_stones
 x 30
 y 13
 end
+arch cobra
+name black metallic serpent
+hp 500
+exp 10000
+dam 30
+x 30
+y 13
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
+end
 arch large_stones
 x 30
 y 14
@@ -5979,21 +6073,15 @@ arch cave2
 x 30
 y 18
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 30
 y 19
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 30
 y 20
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 30
 y 21
 end
@@ -6025,15 +6113,11 @@ arch cave2
 x 30
 y 26
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 30
 y 27
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 30
 y 28
 end
@@ -6073,20 +6157,14 @@ arch cave23
 x 30
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 31
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 31
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 31
 y 2
 end
@@ -6233,9 +6311,17 @@ arch cave24
 x 31
 y 27
 end
+arch small_stones
+x 31
+y 28
+end
 arch cave3
 x 31
 y 28
+end
+arch small_stones
+x 31
+y 29
 end
 arch cave3
 x 31
@@ -6273,20 +6359,14 @@ arch cave22
 x 31
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 32
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 32
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 32
 y 2
 end
@@ -6312,6 +6392,21 @@ end
 arch large_stones
 x 32
 y 5
+end
+arch cobra
+name black metallic serpent
+hp 500
+exp 10000
+dam 30
+x 32
+y 5
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 32
@@ -6413,6 +6508,10 @@ arch cave12
 x 32
 y 22
 end
+arch small_stones
+x 32
+y 23
+end
 arch cave3
 x 32
 y 23
@@ -6449,48 +6548,40 @@ arch depositbox
 name a beautiful metal box
 x 32
 y 28
+material 0
 carrying 7900
 arch scroll
 msg
 My friend Dusanki,
-  I do not dare to go down to the lair
-of chaos; because the masters of chaos
-are fierce and dispise lowly creature
-as me. They would kill me. 
-  I do not think it's a good idea for
-you to pose as Chaos Lord's visiting
-guest to enter his chamber. The Chaos
-Lord would destroy you with disdain.
-  I think you could bring him some
-sacrifice and see what happens.
-                     Kasnuk
+I do not dare to go down to the lair of chaos; because the masters of chaos are fierce and dispise lowly creature as me.  They would kill me.  I do not think it's a good idea for you to pose as Chaos Lord's visiting guest to enter his chamber.  The Chaos Lord would destroy you with disdain.  I think you could bring him some sacrifice and see what happens.
+ - Kasnuk
 endmsg
 end
 arch scroll
 msg
 Dear Dusanki,
-  As we agreed to each other, as a
-safety measure, I entrust you to guard
-my Venomtooth. In exchange I will guard
-your diamonds.
-                     Kasnuk
+As we agreed to each other, as a safety measure, I entrust you to guard my Venomtooth.  In exchange I will guard your diamonds.
+ - Kasnuk
 endmsg
 end
 arch key2
 name a blue crystal
 slaying blue_crystal
 msg
-It pulsates a pattern attuned to some
-unknown device
+It pulsates a pattern attuned to some unknown device.
 endmsg
 face blue_crystal.111
 value 60000
 end
 arch potion_heal
 nrof 2
+arch spell_heal
+end
 end
 arch potion_magic
 nrof 2
+arch spell_regenerate_spellpoints
+end
 end
 end
 arch small_stones
@@ -6533,20 +6624,14 @@ arch cave23
 x 32
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 33
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 33
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 33
 y 2
 end
@@ -6572,6 +6657,21 @@ end
 arch large_stones
 x 33
 y 5
+end
+arch cobra
+name black metallic serpent
+hp 500
+exp 10000
+dam 30
+x 33
+y 5
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 33
@@ -6605,35 +6705,29 @@ arch cave22
 x 33
 y 12
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 33
 y 13
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 33
 y 14
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 33
 y 15
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 33
 y 16
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 33
 y 17
+end
+arch small_stones
+x 33
+y 18
 end
 arch cave4
 x 33
@@ -6649,8 +6743,7 @@ y 19
 end
 arch magic_mouth
 msg
-Chest with an enscription on it. 
-It read, "Kasnuk"
+Chest with an enscription on it.  It reads, "Kasnuk."   
 endmsg
 x 33
 y 20
@@ -6664,6 +6757,7 @@ name nicely make metal chest
 slaying jade_snake
 x 33
 y 20
+material 0
 carrying 30000
 arch gram
 name Venomtooth
@@ -6697,8 +6791,7 @@ connected 12
 end
 arch magic_mouth
 msg
-  A harsh voice asks,
-  "Who's this?"
+A harsh voice asks, "Who's this?"
 endmsg
 x 33
 y 23
@@ -6747,9 +6840,17 @@ arch cave15
 x 33
 y 30
 end
+arch small_stones
+x 33
+y 31
+end
 arch cave22
 x 33
 y 31
+end
+arch small_stones
+x 33
+y 32
 end
 arch cave25
 x 33
@@ -6779,20 +6880,14 @@ arch cave2
 x 33
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 34
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 34
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 34
 y 2
 end
@@ -6820,6 +6915,21 @@ arch large_stones
 x 34
 y 7
 end
+arch cobra
+name black metallic serpent
+hp 500
+exp 10000
+dam 30
+x 34
+y 7
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
+end
 arch large_stones
 x 34
 y 8
@@ -6840,39 +6950,27 @@ arch cave22
 x 34
 y 11
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 34
 y 12
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 34
 y 13
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 34
 y 14
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 34
 y 15
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 34
 y 16
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 34
 y 17
 end
@@ -6911,9 +7009,9 @@ end
 arch cave10
 msg
 @match Dusanki|Kasnuk
-  "Ah! If you wish to enter please?"
+"Ah! If you wish to enter please?"
 @match *
-  "Be gone, before I call the guardian!
+"Be gone, before I call the guardian!"
 endmsg
 x 34
 y 22
@@ -6962,21 +7060,25 @@ arch cave11
 x 34
 y 29
 end
+arch small_stones
+x 34
+y 30
+end
 arch cave22
 x 34
 y 30
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 34
 y 31
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 34
 y 32
+end
+arch small_stones
+x 34
+y 33
 end
 arch cave25
 x 34
@@ -6998,26 +7100,18 @@ arch cave2
 x 34
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 35
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 35
 y 2
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 35
 y 3
 end
@@ -7069,51 +7163,35 @@ arch cave22
 x 35
 y 10
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 35
 y 11
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 35
 y 12
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 35
 y 13
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 35
 y 14
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 35
 y 15
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 35
 y 16
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 35
 y 17
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 35
 y 18
 end
@@ -7189,27 +7267,19 @@ arch cave22
 x 35
 y 29
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 35
 y 30
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 35
 y 31
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 35
 y 32
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 35
 y 33
 end
@@ -7220,417 +7290,4 @@ end
 arch cave22
 x 35
 y 35
-end
-arch sphinx
-msg
-@match Chaos|chaos
-  Chaos is the order of the place. Go
-down deeper and follow your ears for 
-the roarings. And then you will find
-what you look for.
-@match Death|death|undead|undeads|Undead
-  The place the undeads live. You can
-job them easily there as so many have
-proven. The entrance is a hole at the
-end of a twisted passage deeper below.
-@match *
-  I don't know any riddles right now....GO AWAY!!!
-  Or you can go down explore and find all
-the secret of these cryptic and
-unearthly underground caverns.
-  What are you looking for stranger?
-endmsg
-hp 1800
-x 2
-y 17
-end
-arch cobra
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 3
-y 6
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 4
-y 6
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 8
-y 5
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 9
-y 13
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 10
-y 4
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 12
-y 4
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 16
-y 10
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 18
-y 12
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 19
-y 15
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 21
-y 11
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 22
-y 21
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 23
-y 12
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 23
-y 21
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 24
-y 8
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 24
-y 14
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 26
-y 7
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 26
-y 15
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 27
-y 10
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 27
-y 23
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 28
-y 12
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 28
-y 23
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 30
-y 4
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 30
-y 13
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 32
-y 5
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 33
-y 5
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 34
-y 7
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
 end

@@ -1,18 +1,20 @@
 arch map
-name Acme Inc.
+name Acme Inc. of Brest, First Floor
+difficulty 1
 region brest
-msg
-Creator: Gene Alexander
-Date:    Sat Nov  5 18:42:33 UTC 2005
-Using ideas from Ryo_
-endmsg
-width 29
-height 29
 shopitems building material:95;item builder:95;*:-100
-shoprace human
+shopgreed 1.00000
 shopmin 500
 shopmax 20000
-shopgreed 1.0
+shoprace human
+width 29
+height 29
+enter_x 6
+enter_y 24
+msg
+Created:  2005-11-05 Gene Alexander
+Modified: 2012-03-13 Rick Tanner
+endmsg
 end
 arch flagstone
 end
@@ -637,13 +639,13 @@ For the talking and listening books, you also need to connect them with a markin
 For the listening books, the message must be in this format:
 @match blah
 Click.
-Which will make it activate upon the somebody within two squares saying "blah", and will additionally say "Click." upon activation.
+Which will make it activate when somebody within two squares says "blah", and will additionally say "Click." upon activation.
 endmsg
+x 4
+y 20
 material 0
 no_pick 1
 identified 1
-x 4
-y 20
 end
 arch tile_floor
 x 4
@@ -654,13 +656,13 @@ name Building restrictions
 msg
 To build on a spot, all items on this spot must be 'buildable'.
 Buildable items will display 'this is a buildable item' when examined.
-There are several exceptions though. In all cases you can build on marking runes as they are used for making gates and buttons work together. Also you can build signs and talking books on of books and or scrolls, because they are needed for specifying the message. Also, buttons, levers and pedestals can be build underneath gates. Don't worry, you should have some clear messages on why you can't build.
+There are several exceptions though. In all cases you can build on marking runes as they are used for making gates and buttons work together. Also you can build signs and talking books on of books and or scrolls, because they are needed for specifying the message. Also, buttons, levers and pedestals can be built underneath gates. Don't worry, you should have some clear messages on why you can't build.
 endmsg
+x 4
+y 21
 material 0
 no_pick 1
 identified 1
-x 4
-y 21
 end
 arch tile_floor
 x 4
@@ -673,11 +675,11 @@ All items not requiring any special handling are built simply by marking the app
 Note that, to avoid any issue, those items can not be picked up.
 Note also that you can build an item on another.
 endmsg
+x 4
+y 22
 material 0
 no_pick 1
 identified 1
-x 4
-y 22
 end
 arch tile_floor
 x 4
@@ -696,11 +698,11 @@ To build an item:
 * fire the builder in the desired direction
 Of course, the material is used when you build, so you need to buy quite a few.
 endmsg
+x 4
+y 23
 material 0
 no_pick 1
 identified 1
-x 4
-y 23
 end
 arch tile_floor
 x 4
@@ -832,12 +834,13 @@ Building enables you to put walls and floors where you want.
 Building a floor lets you remove walls. This is the only way to remove them.
 You can change an existing floor by building another on top. Same goes for walls.
 All created floors are magic, and will preserve items you put on them.
+You can add a window in some walls. To remove the window, build a new wall.
 endmsg
+x 5
+y 20
 material 0
 no_pick 1
 identified 1
-x 5
-y 20
 end
 arch tile_floor
 x 5
@@ -863,11 +866,11 @@ Also, it is possible to make buttons, levers, and pedestals underneath gates, ho
 * then build the button underneath it
 This is useful for making a gate avoid crushing people underneath it. Also, you can use this same technique with inverted gates in order to make a square that pushes objects placed on it off of it.
 endmsg
+x 5
+y 21
 material 0
 no_pick 1
 identified 1
-x 5
-y 21
 end
 arch tile_floor
 x 5
@@ -881,11 +884,11 @@ Simply apply it, and fire in the desired direction. It will remove the first bui
 Warning: a destroyer will remove items starting from the lowest order on the spot. Basically, this means the first removed item will be a pedestal (underground), then items on floor.
 Note that the destroyer will not remove walls or floors.
 endmsg
+x 5
+y 22
 material 0
 no_pick 1
 identified 1
-x 5
-y 22
 end
 arch tile_floor
 x 5
@@ -908,15 +911,7 @@ arch tile_floor
 x 5
 y 25
 end
-arch tile_floor
-x 5
-y 25
-end
-arch tile_floor
-x 5
-y 25
-end
-arch wwall_2_1_2
+arch wwall_1_3
 x 5
 y 25
 end
@@ -1051,25 +1046,17 @@ arch tile_floor
 x 6
 y 24
 end
-arch oakdoor
+arch tile_floor
+x 6
+y 25
+end
+arch oakdoor_2
+slaying /world/world_107_123
 msg
 Thank you for your visit!
 endmsg
-slaying /world/world_107_123
 hp 21
-sp 33
-x 6
-y 24
-end
-arch tile_floor
-x 6
-y 25
-end
-arch tile_floor
-x 6
-y 25
-end
-arch wwall_2_1_2
+sp 32
 x 6
 y 25
 end
@@ -1200,7 +1187,7 @@ arch tile_floor
 x 7
 y 25
 end
-arch wwall_win2
+arch wwall_1_4
 x 7
 y 25
 end
@@ -4111,7 +4098,7 @@ x 28
 y 28
 end
 arch river_sw-ne_u
-elevation 1098
 x 28
 y 28
+elevation 1098
 end

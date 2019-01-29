@@ -1,11 +1,15 @@
 arch map
+name Luxory Manor
+difficulty 1
 region stoneville
-name brxzlhouse
+width 16
+height 16
+enter_x 3
+enter_y 4
 msg
-Creator: Bernhard
+Created:  Bernhard
+Modified: 2008-09-15 Rick Tanner
 endmsg
-hp 7
-sp 0
 end
 arch afloor_left
 unique 1
@@ -558,7 +562,7 @@ end
 arch door_look_2
 x 5
 y 4
-no_pass 0
+move_block 0
 end
 arch afloor_left
 x 5
@@ -595,7 +599,7 @@ end
 arch door_look_2
 x 5
 y 8
-no_pass 0
+move_block 0
 end
 arch afloor_left
 x 5
@@ -776,15 +780,15 @@ arch cobblestones
 x 7
 y 1
 end
-arch cobblestones
-x 7
-y 2
-end
 arch check_inv
 slaying firsthousekey
 x 7
 y 2
 connected 122
+end
+arch cobblestones
+x 7
+y 2
 end
 arch afloor_left
 x 7
@@ -796,16 +800,16 @@ x 7
 y 3
 connected 122
 end
-arch afloor_left
-x 7
-y 4
-unique 1
-end
 arch check_inv
 slaying firsthousekey
 x 7
 y 4
 connected 122
+end
+arch afloor_left
+x 7
+y 4
+unique 1
 end
 arch afloor_left
 x 7
@@ -895,15 +899,15 @@ arch cobblestones
 x 8
 y 1
 end
-arch cobblestones
-x 8
-y 2
-end
 arch check_inv
 slaying firsthousekey
 x 8
 y 2
 connected 122
+end
+arch cobblestones
+x 8
+y 2
 end
 arch afloor_left
 x 8
@@ -915,16 +919,16 @@ x 8
 y 3
 connected 122
 end
-arch afloor_left
-x 8
-y 4
-unique 1
-end
 arch check_inv
 slaying firsthousekey
 x 8
 y 4
 connected 122
+end
+arch afloor_left
+x 8
+y 4
+unique 1
 end
 arch afloor_left
 x 8
@@ -1150,7 +1154,7 @@ end
 arch door_look_2
 x 10
 y 4
-no_pass 0
+move_block 0
 end
 arch afloor_left
 x 10
@@ -1187,7 +1191,7 @@ end
 arch door_look_2
 x 10
 y 8
-no_pass 0
+move_block 0
 end
 arch afloor_left
 x 10
@@ -1242,7 +1246,7 @@ end
 arch door_look_2
 x 10
 y 14
-no_pass 0
+move_block 0
 end
 arch afloor_left
 x 10

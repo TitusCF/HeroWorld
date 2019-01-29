@@ -1,15 +1,15 @@
 arch map
+name Brest Trade Market
 reset_timeout 5
 difficulty 1
 region brest
-width 64
-height 64
-enter_x 1
-enter_y 1
+width 15
+height 20
+enter_x 7
+enter_y 15
 msg
-Creator: Mikeeusa
-Email: gnu@foo.bar
-Date: Tue Aug  3 23:32:57 2004
+Created:  2004-08-03 Mikeeusa
+Modified: 2012-03-14 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -1345,6 +1345,9 @@ end
 arch woodwall_2_1_2
 x 6
 end
+arch swall_1_1_half
+x 6
+end
 arch dungeon_magic
 x 6
 y 1
@@ -1503,9 +1506,8 @@ y 13
 end
 arch sign_w
 name Trader 1
-name_pl Trader 1
 msg
-Trader 
+Trader
 endmsg
 x 6
 y 13
@@ -1530,21 +1532,16 @@ arch dungeon_magic
 x 6
 y 16
 end
-arch invis_exit
+arch woodfloor
+x 6
+y 16
+end
+arch oakdoor_2
 slaying /world/world_107_123
 hp 36
 sp 29
 x 6
 y 16
-end
-arch woodfloor
-x 6
-y 16
-end
-arch door_2
-x 6
-y 16
-no_pass 0
 end
 arch dungeon_magic
 x 6
@@ -1565,6 +1562,9 @@ arch woodfloor
 x 7
 end
 arch woodwall_2_1_2
+x 7
+end
+arch swall_1_1_half
 x 7
 end
 arch dungeon_magic
@@ -1725,7 +1725,6 @@ y 13
 end
 arch sign_e
 name Trader 2
-name_pl Trader 2
 x 7
 y 13
 end
@@ -1749,21 +1748,16 @@ arch dungeon_magic
 x 7
 y 16
 end
-arch invis_exit
+arch woodfloor
+x 7
+y 16
+end
+arch oakdoor_2
 slaying /world/world_107_123
 hp 36
 sp 29
 x 7
 y 16
-end
-arch woodfloor
-x 7
-y 16
-end
-arch door_2
-x 7
-y 16
-no_pass 0
 end
 arch dungeon_magic
 x 7
@@ -2001,15 +1995,14 @@ y 15
 end
 arch sign
 name Brest Trademarket
-name_pl Trader Joe's
 msg
 Welcome to the Brest Trademarket.
-Here 2 players may place their
-tradeable goods in the trade zones.
-Then both players can turn their
-levers to complete the trade.
-Note: put only on object on each
-teleporter please.
+...
+Here 2 players may place their tradable goods in the trade zones.
+...
+Then both players can turn their levers to complete the trade.
+...
+Note: put only on object on each teleporter please.
 endmsg
 x 8
 y 15

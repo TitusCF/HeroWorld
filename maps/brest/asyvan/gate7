@@ -1,13 +1,15 @@
 arch map
+name Gates of Hell, Gate 7
+difficulty 28
 region brest
-name gate7
+width 29
+height 29
+enter_x 19
+enter_y 20
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue Sep 20 17:34:35 1994
+Created:  1994-09-20
+Modified: 2008-11-26 Rick Tanner
 endmsg
-x 29
-y 29
 end
 arch sea
 end
@@ -1059,6 +1061,10 @@ arch dirtfloor
 x 8
 y 7
 end
+arch big_dragon
+x 8
+y 7
+end
 arch dirtfloor
 x 8
 y 8
@@ -1395,7 +1401,7 @@ arch dirtfloor
 x 10
 y 20
 end
-arch random_food_fant
+arch random_food
 x 10
 y 20
 end
@@ -1566,7 +1572,7 @@ arch dirtfloor
 x 11
 y 20
 end
-arch random_food_fant
+arch random_food
 x 11
 y 20
 end
@@ -2414,6 +2420,10 @@ arch dirtfloor
 x 17
 y 7
 end
+arch dread
+x 17
+y 7
+end
 arch dirtfloor
 x 17
 y 8
@@ -2488,11 +2498,15 @@ arch dirtfloor
 x 17
 y 18
 end
-arch swall_1_2
+arch swall_2_1_1
 x 17
 y 18
 end
 arch dirtfloor
+x 17
+y 19
+end
+arch swall_1_2_half
 x 17
 y 19
 end
@@ -2504,7 +2518,7 @@ arch dirtfloor
 x 17
 y 20
 end
-arch random_food_fant
+arch random_food
 x 17
 y 20
 end
@@ -2512,7 +2526,7 @@ arch dirtfloor
 x 17
 y 21
 end
-arch random_food_fant
+arch random_food
 x 17
 y 21
 end
@@ -2643,7 +2657,7 @@ arch dirtfloor
 x 18
 y 20
 end
-arch random_food_fant
+arch random_food
 x 18
 y 20
 end
@@ -2651,7 +2665,7 @@ arch dirtfloor
 x 18
 y 21
 end
-arch random_food_fant
+arch random_food
 x 18
 y 21
 end
@@ -2782,7 +2796,7 @@ arch dirtfloor
 x 19
 y 20
 end
-arch oakdoor
+arch exit
 slaying palace3
 hp 4
 sp 11
@@ -2793,7 +2807,7 @@ arch dirtfloor
 x 19
 y 21
 end
-arch random_food_fant
+arch random_food
 x 19
 y 21
 end
@@ -2897,6 +2911,10 @@ x 20
 y 14
 end
 arch dirtfloor
+x 20
+y 15
+end
+arch behemoth
 x 20
 y 15
 end
@@ -3024,6 +3042,10 @@ x 21
 y 9
 end
 arch dirtfloor
+x 21
+y 10
+end
+arch dread
 x 21
 y 10
 end
@@ -3195,6 +3217,10 @@ x 22
 y 19
 end
 arch dirtfloor
+x 22
+y 20
+end
+arch behemoth
 x 22
 y 20
 end
@@ -4015,24 +4041,4 @@ end
 arch sea
 x 28
 y 28
-end
-arch big_dragon
-x 8
-y 7
-end
-arch dread
-x 17
-y 7
-end
-arch behemoth
-x 20
-y 15
-end
-arch dread
-x 21
-y 10
-end
-arch behemoth
-x 22
-y 20
 end

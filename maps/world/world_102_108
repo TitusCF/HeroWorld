@@ -11,7 +11,7 @@ msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun May 19 17:43:59 2002
-Modified: 2019-01-04 Acer
+Modified: 2019-01-28 Acer
 endmsg
 outdoor 1
 tile_path_1 world_102_107
@@ -654,7 +654,7 @@ x 3
 y 20
 end
 arch ruins
-name mudman's place
+name Mudman's Place
 name_pl mudman's place
 slaying /santo_dominion/mudman/mudman.1
 msg
@@ -2359,13 +2359,13 @@ x 11
 y 8
 end
 arch fishboat
-name fishing boat to Greyshield Island
-name_pl fishing boat to Greyshield Island
-slaying world_102_107
-hp 2
-sp 26
 x 11
 y 8
+speed 0.5
+type 2
+container 10000000
+move_type boat
+passenger_limit 2
 end
 arch sea
 x 11
@@ -2408,7 +2408,7 @@ x 11
 y 16
 end
 arch tavern
-name Seafarers Den
+name Seafarer's Den
 name_pl Seafarers Den
 slaying /santo_dominion/den
 hp 12
@@ -3088,13 +3088,14 @@ x 14
 y 9
 end
 arch s_ship
-name Ship to Stoneville
-name_pl Ship to Stoneville
-slaying /world/world_102_127
-hp 43
-sp 11
+name fishing boat
 x 14
 y 9
+speed 0.5
+type 2
+container 10000000
+move_type boat
+passenger_limit 4
 end
 arch sea1
 x 14
@@ -3349,9 +3350,11 @@ x 15
 y 14
 end
 arch shrine
-name St. Dominion Sale
+name St. Dominion Pawn Shop
 name_pl St. Dominion Sale
 slaying /santo_dominion/map.and.sale
+hp 5
+sp 1
 x 15
 y 14
 end
@@ -4015,6 +4018,8 @@ arch store_armour
 name Hanz und Franz Panzer
 name_pl Hanz und Franz Panzer
 slaying /santo_dominion/shops/armour
+hp 1
+sp 14
 x 18
 y 5
 end
@@ -4068,7 +4073,7 @@ x 18
 y 15
 end
 arch market1
-name Permanent Appartments
+name Permanent Apartments
 name_pl Permanent Appartments
 slaying /santo_dominion/sdomino_appartment
 hp 5
@@ -4297,8 +4302,8 @@ x 19
 y 15
 end
 arch market3
-name Permanent Appartments
-name_pl Permanent Appartments
+name Permanent Apartments
+name_pl Permanent Apartments
 slaying /santo_dominion/sdomino_appartment
 hp 5
 sp 1
@@ -4749,7 +4754,7 @@ x 21
 y 12
 end
 arch store_general
-name Eliks General Store
+name Elik's General Store
 name_pl Eliks General Store
 slaying /santo_dominion/shops/eliks
 hp 1
@@ -4966,9 +4971,11 @@ x 22
 y 8
 end
 arch church
-name New Cthulhu Church
+name New Crossfire Church
 name_pl New Cthulhu Church
 slaying /santo_dominion/crossfire
+hp 1
+sp 17
 x 22
 y 8
 end
@@ -5677,11 +5684,11 @@ y 12
 end
 arch guild
 name Guild of the Drunken Barbarian
-name_pl Guild of the Drunken Barbarian
 slaying /santo_dominion/guilds/drunken_barbarian/ground
+hp 12
+sp 23
 x 25
 y 12
-no_pass 0
 end
 arch brush
 x 25
@@ -5700,9 +5707,11 @@ x 25
 y 16
 end
 arch store_weapons
-name Erash Sharp Blades
+name Erash's Sharp Blades
 name_pl Erash Sharp Blades
 slaying /santo_dominion/shops/erash
+hp 10
+sp 1
 x 25
 y 16
 end
@@ -5723,9 +5732,11 @@ x 25
 y 20
 end
 arch store_magic
-name Nosferatu - Specialist
+name Nosferati's Magic Shop
 name_pl Nosferatu - Specialist
 slaying /santo_dominion/shops/nosferatu
+hp 1
+sp 14
 x 25
 y 20
 no_pass 0
@@ -7451,6 +7462,8 @@ y 15
 end
 arch farmhouse
 slaying /santo_dominion/north_farm
+hp 16
+sp 14
 x 33
 y 15
 end
@@ -7886,6 +7899,8 @@ y 13
 end
 arch barn
 slaying /santo_dominion/north_barn
+hp 1
+sp 1
 x 35
 y 13
 end
@@ -7934,10 +7949,6 @@ x 35
 y 23
 end
 arch brush
-x 35
-y 24
-end
-arch farmhouse
 x 35
 y 24
 end
@@ -8564,6 +8575,8 @@ y 21
 end
 arch barn
 slaying /santo_dominion/south_barn
+hp 1
+sp 1
 x 38
 y 21
 end

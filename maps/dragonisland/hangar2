@@ -1,13 +1,15 @@
 arch map
+name Stoneville Dragon Hangar, Restricted Area
+difficulty 35
 region stoneville
-name hangar2
+width 32
+height 32
+enter_x 15
+enter_y 30
 msg
-Creator: Philipp Currlin
-Email: philipp.currlin@epost.de
-Date: Tue Mar  6 23:36:30 2001
+Created:  2001-03-06 Philipp Currlin (philipp.currlin@epost.de)
+Modified: 2012-02-01 Rick Tanner
 endmsg
-x 32
-y 32
 end
 arch dungeon_floor
 end
@@ -410,6 +412,10 @@ arch dungeon_floor
 x 2
 y 10
 end
+arch big_elec
+x 2
+y 10
+end
 arch dungeon_floor
 x 2
 y 11
@@ -588,6 +594,10 @@ arch dungeon_floor
 x 3
 y 16
 end
+arch chinese_dragon
+x 3
+y 16
+end
 arch dungeon_floor
 x 3
 y 17
@@ -703,6 +713,10 @@ x 4
 y 6
 end
 arch dungeon_floor
+x 4
+y 7
+end
+arch chinese_dragon
 x 4
 y 7
 end
@@ -978,6 +992,10 @@ arch awall_2_1_2
 x 6
 end
 arch dungeon_floor
+x 6
+y 1
+end
+arch big_elec
 x 6
 y 1
 end
@@ -1324,13 +1342,9 @@ arch dwarf
 name Dragon Dompteur
 msg
 @match dompteur|yes
-You're the new dompteur? Tame the
-dragons in there to show me your
-qualities.
+You're the new dompteur? Tame the dragons in there to show me your qualities.
 @match *
-A dragon will be delivered any minute
-now, can you help me to get him into the
-large room? 
+A dragon will be delivered any minute now, can you help me to get him into the large room?
 endmsg
 sp 0
 maxsp 0
@@ -1361,7 +1375,6 @@ resist_holyword 100
 resist_blind 100
 pick_up 0
 will_apply 0
-can_apply 0
 friendly 1
 unaggressive 0
 can_cast_spell 0
@@ -1500,6 +1513,10 @@ arch dungeon_floor
 x 8
 y 20
 end
+arch big_elec
+x 8
+y 20
+end
 arch dungeon_floor
 x 8
 y 21
@@ -1596,6 +1613,10 @@ arch dungeon_floor
 x 9
 y 8
 end
+arch big_dragon
+x 9
+y 8
+end
 arch dungeon_floor
 x 9
 y 9
@@ -1612,6 +1633,10 @@ arch dungeon_floor
 x 9
 y 12
 end
+arch dragon
+x 9
+y 12
+end
 arch dungeon_floor
 x 9
 y 13
@@ -1625,6 +1650,10 @@ x 9
 y 15
 end
 arch dungeon_floor
+x 9
+y 16
+end
+arch dragon
 x 9
 y 16
 end
@@ -1770,6 +1799,10 @@ arch dungeon_floor
 x 10
 y 14
 end
+arch big_dragon
+x 10
+y 14
+end
 arch dungeon_floor
 x 10
 y 15
@@ -1905,6 +1938,10 @@ x 11
 y 10
 end
 arch dungeon_floor
+x 11
+y 11
+end
+arch big_dragon
 x 11
 y 11
 end
@@ -2104,6 +2141,10 @@ arch dungeon_floor
 x 12
 y 20
 end
+arch chinese_dragon
+x 12
+y 20
+end
 arch dungeon_floor
 x 12
 y 21
@@ -2170,6 +2211,10 @@ arch dungeon_floor
 x 13
 y 2
 end
+arch chinese_dragon
+x 13
+y 2
+end
 arch dungeon_floor
 x 13
 y 3
@@ -2203,6 +2248,10 @@ x 13
 y 8
 end
 arch dungeon_floor
+x 13
+y 9
+end
+arch dragon
 x 13
 y 9
 end
@@ -2365,6 +2414,15 @@ end
 arch dungeon_floor
 x 14
 y 11
+end
+arch dragonman
+x 14
+y 11
+carrying 100
+arch key2
+name bronze key
+slaying hangar2_key
+end
 end
 arch dungeon_floor
 x 14
@@ -2512,6 +2570,10 @@ arch dungeon_floor
 x 15
 y 8
 end
+arch dragon
+x 15
+y 8
+end
 arch dungeon_floor
 x 15
 y 9
@@ -2533,6 +2595,10 @@ x 15
 y 13
 end
 arch dungeon_floor
+x 15
+y 14
+end
+arch dragon
 x 15
 y 14
 end
@@ -2563,6 +2629,10 @@ x 15
 y 19
 end
 arch dungeon_floor
+x 15
+y 20
+end
+arch chinese_dragon
 x 15
 y 20
 end
@@ -2675,6 +2745,10 @@ arch dungeon_floor
 x 16
 y 9
 end
+arch big_dragon
+x 16
+y 9
+end
 arch dungeon_floor
 x 16
 y 10
@@ -2684,6 +2758,10 @@ x 16
 y 11
 end
 arch dungeon_floor
+x 16
+y 12
+end
+arch dragon
 x 16
 y 12
 end
@@ -2859,6 +2937,10 @@ x 17
 y 15
 end
 arch dungeon_floor
+x 17
+y 16
+end
+arch dragon
 x 17
 y 16
 end
@@ -3072,6 +3154,10 @@ arch dungeon_floor
 x 18
 y 13
 end
+arch big_dragon
+x 18
+y 13
+end
 arch dungeon_floor
 x 18
 y 14
@@ -3105,6 +3191,10 @@ x 18
 y 19
 end
 arch dungeon_floor
+x 18
+y 20
+end
+arch chinese_dragon
 x 18
 y 20
 end
@@ -3430,6 +3520,10 @@ arch dungeon_floor
 x 20
 y 11
 end
+arch big_dragon
+x 20
+y 11
+end
 arch dungeon_floor
 x 20
 y 12
@@ -3443,6 +3537,10 @@ x 20
 y 14
 end
 arch dungeon_floor
+x 20
+y 15
+end
+arch dragon
 x 20
 y 15
 end
@@ -3596,6 +3694,10 @@ arch dungeon_floor
 x 21
 y 8
 end
+arch dragon
+x 21
+y 8
+end
 arch dungeon_floor
 x 21
 y 9
@@ -3682,6 +3784,12 @@ y 25
 speed 0.500000
 connected 11
 end
+arch big_dragon
+name furious dragon
+x 21
+y 25
+level 22
+end
 arch pit_closed
 hp 1
 sp 25
@@ -3701,6 +3809,12 @@ x 21
 y 28
 speed 0.500000
 connected 13
+end
+arch big_elec
+name furious electric dragon
+x 21
+y 28
+level 22
 end
 arch pit_closed
 hp 2
@@ -3736,6 +3850,10 @@ arch dungeon_floor
 x 22
 y 2
 end
+arch big_elec
+x 22
+y 2
+end
 arch dungeon_floor
 x 22
 y 3
@@ -3817,6 +3935,10 @@ x 22
 y 19
 end
 arch dungeon_floor
+x 22
+y 20
+end
+arch big_elec
 x 22
 y 20
 end
@@ -4446,6 +4568,12 @@ y 25
 speed 0.500000
 connected 12
 end
+arch chinese_dragon
+name furious chinese dragon
+x 25
+y 25
+level 20
+end
 arch pit_closed
 hp 1
 sp 26
@@ -4650,6 +4778,10 @@ arch dungeon_floor
 x 27
 y 8
 end
+arch chinese_dragon
+x 27
+y 8
+end
 arch dungeon_floor
 x 27
 y 9
@@ -4671,6 +4803,10 @@ x 27
 y 13
 end
 arch dungeon_floor
+x 27
+y 14
+end
+arch big_elec
 x 27
 y 14
 end
@@ -5463,143 +5599,4 @@ end
 arch blocked
 x 31
 y 27
-end
-arch big_elec
-x 2
-y 10
-end
-arch chinese_dragon
-x 3
-y 16
-end
-arch chinese_dragon
-x 4
-y 7
-end
-arch big_elec
-x 6
-y 1
-end
-arch big_elec
-x 8
-y 20
-end
-arch big_dragon
-x 9
-y 8
-end
-arch dragon
-x 9
-y 12
-end
-arch dragon
-x 9
-y 16
-end
-arch big_dragon
-x 10
-y 14
-end
-arch big_dragon
-x 11
-y 11
-end
-arch chinese_dragon
-x 12
-y 20
-end
-arch chinese_dragon
-x 13
-y 2
-end
-arch dragon
-x 13
-y 9
-end
-arch dragonman
-x 14
-y 11
-carrying 100
-arch key2
-name bronze key
-slaying hangar2_key
-end
-end
-arch dragon
-x 15
-y 8
-end
-arch dragon
-x 15
-y 14
-end
-arch chinese_dragon
-x 15
-y 20
-end
-arch big_dragon
-x 16
-y 9
-end
-arch dragon
-x 16
-y 12
-end
-arch dragon
-x 17
-y 16
-end
-arch big_dragon
-x 18
-y 13
-end
-arch chinese_dragon
-x 18
-y 20
-end
-arch big_dragon
-x 20
-y 11
-end
-arch dragon
-x 20
-y 15
-end
-arch dragon
-x 21
-y 8
-end
-arch big_dragon
-name furious dragon
-x 21
-y 25
-level 22
-end
-arch big_elec
-name furious electric dragon
-x 21
-y 28
-level 22
-end
-arch big_elec
-x 22
-y 2
-end
-arch big_elec
-x 22
-y 20
-end
-arch chinese_dragon
-name furious chinese dragon
-x 25
-y 25
-level 20
-end
-arch chinese_dragon
-x 27
-y 8
-end
-arch big_elec
-x 27
-y 14
 end

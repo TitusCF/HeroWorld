@@ -1,13 +1,15 @@
 arch map
+name Tower of Sorcery, Wizards
+difficulty 85
 region lakecountry
-name MwizardG
-msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Wed Apr 26 06:07:03 1995
-endmsg
 width 37
 height 20
+enter_x 10
+enter_y 10
+msg
+Created:  1995-04-26
+Modified: 2008-11-28 Rick Tanner
+endmsg
 end
 arch flagstone
 end
@@ -251,6 +253,16 @@ arch flagstone
 x 2
 y 7
 end
+arch big_wiz
+name Grey Wizard
+x 2
+y 7
+carrying 100
+arch key2
+name Number 4
+slaying four
+end
+end
 arch flagstone
 x 2
 y 8
@@ -304,7 +316,7 @@ arch flagstone
 x 2
 y 18
 end
-arch potion_invulnerability
+arch potion_shielding
 x 2
 y 18
 end
@@ -365,6 +377,16 @@ end
 arch flagstone
 x 3
 y 11
+end
+arch big_wiz
+name Grey Wizard
+x 3
+y 11
+carrying 100
+arch key2
+name Number 5
+slaying five
+end
 end
 arch flagstone
 x 3
@@ -527,6 +549,16 @@ arch flagstone
 x 5
 y 3
 end
+arch big_wiz
+name White Wizard
+x 5
+y 3
+carrying 100
+arch key2
+name Number 3
+slaying three
+end
+end
 arch flagstone
 x 5
 y 4
@@ -669,6 +701,16 @@ end
 arch flagstone
 x 6
 y 14
+end
+arch big_wiz
+name Grey Wizard
+x 6
+y 14
+carrying 100
+arch key2
+name Number 6
+slaying six
+end
 end
 arch flagstone
 x 6
@@ -886,6 +928,8 @@ end
 arch potion_heroism
 x 8
 y 18
+arch spell_heroism
+end
 end
 arch flagstone
 x 8
@@ -908,6 +952,16 @@ end
 arch flagstone
 x 9
 y 2
+end
+arch big_wiz
+name White Wizard
+x 9
+y 2
+carrying 100
+arch key2
+name Number 2
+slaying two
+end
 end
 arch flagstone
 x 9
@@ -1055,6 +1109,16 @@ end
 arch flagstone
 x 10
 y 14
+end
+arch big_wiz
+name Black Wizard
+x 10
+y 14
+carrying 100
+arch key2
+name Number 7
+slaying seven
+end
 end
 arch flagstone
 x 10
@@ -1272,6 +1336,8 @@ end
 arch potion_magic
 x 12
 y 18
+arch spell_regenerate_spellpoints
+end
 end
 arch flagstone
 x 12
@@ -1298,6 +1364,16 @@ end
 arch flagstone
 x 13
 y 3
+end
+arch big_wiz
+name White Wizard
+x 13
+y 3
+carrying 100
+arch key2
+name Number 1
+slaying one
+end
 end
 arch flagstone
 x 13
@@ -1330,6 +1406,16 @@ end
 arch flagstone
 x 13
 y 11
+end
+arch big_wiz
+name Black Wizard
+x 13
+y 11
+carrying 100
+arch key2
+name Number 8
+slaying eight
+end
 end
 arch flagstone
 x 13
@@ -1465,6 +1551,8 @@ end
 arch potion_magic
 x 14
 y 18
+arch spell_regenerate_spellpoints
+end
 end
 arch flagstone
 x 14
@@ -1507,6 +1595,16 @@ end
 arch flagstone
 x 15
 y 7
+end
+arch big_wiz
+name Black Wizard
+x 15
+y 7
+carrying 100
+arch key2
+name Number 9
+slaying nine
+end
 end
 arch flagstone
 x 15
@@ -1653,10 +1751,10 @@ y 17
 end
 arch check_floor
 slaying nine
-last_sp 0
-connected 999
 x 16
 y 18
+last_sp 0
+connected 999
 end
 arch flagstone
 x 16
@@ -1665,16 +1763,17 @@ end
 arch potion_magic
 x 16
 y 18
+arch spell_regenerate_spellpoints
+end
 end
 arch magic_mouth
 msg
 You get a strange feeling that a key is missing...
 endmsg
-connected 999
-walk_on 0
-fly_on 0
 x 16
 y 19
+connected 999
+move_on 0
 end
 arch flagstone
 x 16
@@ -1764,9 +1863,9 @@ y 17
 end
 arch check_floor
 slaying nine
-no_pass 1
 x 17
 y 18
+move_block all
 end
 arch flagstone
 x 17
@@ -2787,6 +2886,26 @@ arch flagstone
 x 28
 y 7
 end
+arch big_wiz
+name Grand Master
+hp 32500
+sp 2000
+maxsp 2000
+x 28
+y 7
+level 30
+carrying 200
+arch key2
+name Golden Bug
+slaying gbug
+face ant.111
+end
+arch key2
+name a strange smelling flower
+slaying gmaster
+face flowers.111
+end
+end
 arch flagstone
 x 28
 y 8
@@ -2866,7 +2985,7 @@ arch flagstone
 x 29
 y 2
 end
-arch oakdoor
+arch exit
 slaying MwizardT
 hp 10
 sp 10
@@ -2938,6 +3057,8 @@ end
 arch potion_heal
 x 29
 y 15
+arch spell_heal
+end
 end
 arch flagstone
 x 29
@@ -2946,6 +3067,8 @@ end
 arch potion_heal
 x 29
 y 16
+arch spell_heal
+end
 end
 arch flagstone
 x 29
@@ -3623,114 +3746,4 @@ end
 arch flagstone
 x 36
 y 19
-end
-arch big_wiz
-name Grey Wizard
-carrying 100
-x 2
-y 7
-arch key2
-name Number 4
-slaying four
-end
-end
-arch big_wiz
-name Grey Wizard
-carrying 100
-x 3
-y 11
-arch key2
-name Number 5
-slaying five
-end
-end
-arch big_wiz
-name White Wizard
-carrying 100
-x 5
-y 3
-arch key2
-name Number 3
-slaying three
-end
-end
-arch big_wiz
-name Grey Wizard
-carrying 100
-x 6
-y 14
-arch key2
-name Number 6
-slaying six
-end
-end
-arch big_wiz
-name White Wizard
-carrying 100
-x 9
-y 2
-arch key2
-name Number 2
-slaying two
-end
-end
-arch big_wiz
-name Black Wizard
-carrying 100
-x 10
-y 14
-arch key2
-name Number 7
-slaying seven
-end
-end
-arch big_wiz
-name White Wizard
-carrying 100
-x 13
-y 3
-arch key2
-name Number 1
-slaying one
-end
-end
-arch big_wiz
-name Black Wizard
-carrying 100
-x 13
-y 11
-arch key2
-name Number 8
-slaying eight
-end
-end
-arch big_wiz
-name Black Wizard
-carrying 100
-x 15
-y 7
-arch key2
-name Number 9
-slaying nine
-end
-end
-arch big_wiz
-name Grand Master
-hp 32500
-sp 2000
-maxsp 2000
-level 30
-carrying 200
-x 28
-y 7
-arch key2
-name Golden Bug
-face ant.111
-slaying gbug
-end
-arch key2
-name a strange smelling flower
-face flowers.111
-slaying gmaster
-end
 end

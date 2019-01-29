@@ -1,13 +1,14 @@
 arch map
+name Underground, Level 2
+difficulty 40
 region brest
-name underground2
+width 60
+height 60
+enter_y 6
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue May 31 01:21:33 1994
+Created:  1994-02-31
+Modified: 2012-01-25 Rick Tanner
 endmsg
-x 60
-y 60
 end
 arch blocked
 end
@@ -176,8 +177,15 @@ end
 arch blocked
 y 59
 end
+arch small_stones
+x 1
+end
 arch dun2
 x 1
+end
+arch small_stones
+x 1
+y 1
 end
 arch stair_up
 slaying underground
@@ -232,8 +240,7 @@ y 12
 end
 arch sign_e
 msg
-	Let's play Abalone...
-Be careful not to leave the board.
+Let's play Abalone... Be careful not to leave the board.
 endmsg
 x 1
 y 12
@@ -562,6 +569,9 @@ arch blocked
 x 1
 y 59
 end
+arch small_stones
+x 2
+end
 arch dun2
 x 2
 end
@@ -649,7 +659,7 @@ arch pstone_2
 x 2
 y 22
 end
-arch vodka
+arch booze
 x 2
 y 22
 end
@@ -681,7 +691,7 @@ arch pstone_2
 x 2
 y 26
 end
-arch vodka
+arch booze
 x 2
 y 26
 end
@@ -902,6 +912,9 @@ arch blocked
 x 2
 y 59
 end
+arch small_stones
+x 3
+end
 arch dun2
 x 3
 end
@@ -913,29 +926,57 @@ arch small_stones
 x 3
 y 2
 end
-arch dun3
+arch small_stones
 x 3
 y 3
 end
 arch dun3
 x 3
+y 3
+end
+arch small_stones
+x 3
 y 4
 end
 arch dun3
+x 3
+y 4
+end
+arch small_stones
 x 3
 y 5
 end
 arch dun3
 x 3
+y 5
+end
+arch small_stones
+x 3
 y 6
 end
 arch dun3
+x 3
+y 6
+end
+arch small_stones
 x 3
 y 7
 end
 arch dun3
 x 3
+y 7
+end
+arch small_stones
+x 3
 y 8
+end
+arch dun3
+x 3
+y 8
+end
+arch small_stones
+x 3
+y 9
 end
 arch dun4
 x 3
@@ -1167,6 +1208,10 @@ arch dungeon_floor
 x 3
 y 51
 end
+arch big_dragon
+x 3
+y 51
+end
 arch dungeon_floor
 x 3
 y 52
@@ -1219,6 +1264,9 @@ arch blocked
 x 3
 y 59
 end
+arch small_stones
+x 4
+end
 arch dun2
 x 4
 end
@@ -1229,6 +1277,10 @@ end
 arch small_stones
 x 4
 y 2
+end
+arch small_stones
+x 4
+y 3
 end
 arch dun2
 x 4
@@ -1253,6 +1305,10 @@ end
 arch blocked
 x 4
 y 8
+end
+arch small_stones
+x 4
+y 9
 end
 arch dun2
 x 4
@@ -1310,7 +1366,7 @@ arch pstone_2
 x 4
 y 20
 end
-arch vodka
+arch booze
 x 4
 y 20
 end
@@ -1346,7 +1402,7 @@ arch pstone_2
 x 4
 y 28
 end
-arch vodka
+arch booze
 x 4
 y 28
 end
@@ -1524,7 +1580,7 @@ arch dungeon_floor
 x 4
 y 57
 end
-arch vodka
+arch booze
 x 4
 y 57
 end
@@ -1540,6 +1596,9 @@ arch blocked
 x 4
 y 59
 end
+arch small_stones
+x 5
+end
 arch dun2
 x 5
 end
@@ -1550,6 +1609,10 @@ end
 arch small_stones
 x 5
 y 2
+end
+arch small_stones
+x 5
+y 3
 end
 arch dun2
 x 5
@@ -1571,13 +1634,25 @@ arch blocked
 x 5
 y 7
 end
-arch bwall_0
+arch small_stones
 x 5
 y 8
 end
 arch bwall_0
 x 5
+y 8
+end
+arch small_stones
+x 5
 y 9
+end
+arch bwall_0
+x 5
+y 9
+end
+arch small_stones
+x 5
+y 10
 end
 arch bwall_0
 x 5
@@ -1587,13 +1662,25 @@ arch small_stones
 x 5
 y 11
 end
-arch bwall_0
+arch small_stones
 x 5
 y 12
 end
 arch bwall_0
 x 5
+y 12
+end
+arch small_stones
+x 5
 y 13
+end
+arch bwall_0
+x 5
+y 13
+end
+arch small_stones
+x 5
+y 14
 end
 arch bwall_0
 x 5
@@ -1623,7 +1710,7 @@ arch pstone_2
 x 5
 y 20
 end
-arch vodka_poison
+arch poison
 x 5
 y 20
 end
@@ -1659,7 +1746,7 @@ arch pstone_2
 x 5
 y 28
 end
-arch vodka_poison
+arch poison
 x 5
 y 28
 end
@@ -1833,7 +1920,7 @@ arch dungeon_floor
 x 5
 y 57
 end
-arch vodka
+arch booze
 x 5
 y 57
 end
@@ -1849,6 +1936,9 @@ arch blocked
 x 5
 y 59
 end
+arch small_stones
+x 6
+end
 arch dun2
 x 6
 end
@@ -1859,6 +1949,10 @@ end
 arch small_stones
 x 6
 y 2
+end
+arch small_stones
+x 6
+y 3
 end
 arch dun2
 x 6
@@ -1876,13 +1970,25 @@ arch blocked
 x 6
 y 6
 end
-arch bwall_0
+arch small_stones
 x 6
 y 7
 end
 arch bwall_0
 x 6
+y 7
+end
+arch small_stones
+x 6
 y 8
+end
+arch bwall_0
+x 6
+y 8
+end
+arch small_stones
+x 6
+y 9
 end
 arch pit_open
 hp 25
@@ -1891,6 +1997,10 @@ x 6
 y 9
 speed 0.500000
 value 1
+end
+arch small_stones
+x 6
+y 10
 end
 arch pit_open
 hp 25
@@ -1904,6 +2014,10 @@ arch crater
 x 6
 y 11
 end
+arch small_stones
+x 6
+y 12
+end
 arch pit_open
 hp 17
 sp 44
@@ -1911,6 +2025,10 @@ x 6
 y 12
 speed 0.500000
 value 1
+end
+arch small_stones
+x 6
+y 13
 end
 arch pit_open
 hp 17
@@ -1920,9 +2038,17 @@ y 13
 speed 0.500000
 value 1
 end
+arch small_stones
+x 6
+y 14
+end
 arch bwall_0
 x 6
 y 14
+end
+arch small_stones
+x 6
+y 15
 end
 arch bwall_0
 x 6
@@ -1968,6 +2094,10 @@ arch pstone_2
 x 6
 y 23
 end
+arch giant
+x 6
+y 23
+end
 arch pstone_2
 x 6
 y 24
@@ -2164,7 +2294,7 @@ arch dungeon_floor
 x 6
 y 57
 end
-arch vodka
+arch booze
 x 6
 y 57
 end
@@ -2180,6 +2310,9 @@ arch blocked
 x 6
 y 59
 end
+arch small_stones
+x 7
+end
 arch dun2
 x 7
 end
@@ -2190,6 +2323,10 @@ end
 arch small_stones
 x 7
 y 2
+end
+arch small_stones
+x 7
+y 3
 end
 arch dun2
 x 7
@@ -2203,13 +2340,25 @@ arch blocked
 x 7
 y 5
 end
-arch bwall_0
+arch small_stones
 x 7
 y 6
 end
 arch bwall_0
 x 7
+y 6
+end
+arch small_stones
+x 7
 y 7
+end
+arch bwall_0
+x 7
+y 7
+end
+arch small_stones
+x 7
+y 8
 end
 arch pit_open
 hp 25
@@ -2218,6 +2367,10 @@ x 7
 y 8
 speed 0.500000
 value 1
+end
+arch small_stones
+x 7
+y 9
 end
 arch pit_open
 hp 25
@@ -2239,6 +2392,10 @@ arch crater
 x 7
 y 12
 end
+arch small_stones
+x 7
+y 13
+end
 arch pit_open
 hp 17
 sp 44
@@ -2246,6 +2403,10 @@ x 7
 y 13
 speed 0.500000
 value 1
+end
+arch small_stones
+x 7
+y 14
 end
 arch pit_open
 hp 17
@@ -2255,9 +2416,17 @@ y 14
 speed 0.500000
 value 1
 end
+arch small_stones
+x 7
+y 15
+end
 arch bwall_0
 x 7
 y 15
+end
+arch small_stones
+x 7
+y 16
 end
 arch bwall_0
 x 7
@@ -2296,6 +2465,10 @@ x 7
 y 22
 end
 arch pstone_2
+x 7
+y 23
+end
+arch giant
 x 7
 y 23
 end
@@ -2439,6 +2612,10 @@ arch dungeon_magic
 x 7
 y 45
 end
+arch big_wiz
+x 7
+y 45
+end
 arch dungeon_floor
 x 7
 y 46
@@ -2507,7 +2684,7 @@ arch dungeon_floor
 x 7
 y 57
 end
-arch vodka
+arch booze
 x 7
 y 57
 end
@@ -2523,6 +2700,9 @@ arch blocked
 x 7
 y 59
 end
+arch small_stones
+x 8
+end
 arch dun2
 x 8
 end
@@ -2534,6 +2714,10 @@ arch small_stones
 x 8
 y 2
 end
+arch small_stones
+x 8
+y 3
+end
 arch dun2
 x 8
 y 3
@@ -2542,13 +2726,25 @@ arch blocked
 x 8
 y 4
 end
-arch bwall_0
+arch small_stones
 x 8
 y 5
 end
 arch bwall_0
 x 8
+y 5
+end
+arch small_stones
+x 8
 y 6
+end
+arch bwall_0
+x 8
+y 6
+end
+arch small_stones
+x 8
+y 7
 end
 arch pit_open
 hp 25
@@ -2557,6 +2753,10 @@ x 8
 y 7
 speed 0.500000
 value 1
+end
+arch small_stones
+x 8
+y 8
 end
 arch pit_open
 hp 25
@@ -2586,6 +2786,10 @@ arch crater
 x 8
 y 13
 end
+arch small_stones
+x 8
+y 14
+end
 arch pit_open
 hp 17
 sp 44
@@ -2593,6 +2797,10 @@ x 8
 y 14
 speed 0.500000
 value 1
+end
+arch small_stones
+x 8
+y 15
 end
 arch pit_open
 hp 17
@@ -2602,9 +2810,17 @@ y 15
 speed 0.500000
 value 1
 end
+arch small_stones
+x 8
+y 16
+end
 arch bwall_0
 x 8
 y 16
+end
+arch small_stones
+x 8
+y 17
 end
 arch bwall_0
 x 8
@@ -2639,6 +2855,10 @@ x 8
 y 22
 end
 arch pstone_2
+x 8
+y 23
+end
+arch giant
 x 8
 y 23
 end
@@ -2870,6 +3090,9 @@ arch blocked
 x 8
 y 59
 end
+arch small_stones
+x 9
+end
 arch dun2
 x 9
 end
@@ -2881,6 +3104,10 @@ arch small_stones
 x 9
 y 2
 end
+arch small_stones
+x 9
+y 3
+end
 arch dun2
 x 9
 y 3
@@ -2889,9 +3116,17 @@ arch blocked
 x 9
 y 4
 end
+arch small_stones
+x 9
+y 5
+end
 arch bwall_0
 x 9
 y 5
+end
+arch small_stones
+x 9
+y 6
 end
 arch pit_open
 hp 17
@@ -2899,6 +3134,10 @@ sp 20
 x 9
 y 6
 end
+arch small_stones
+x 9
+y 7
+end
 arch pit_open
 hp 25
 sp 44
@@ -2944,6 +3183,10 @@ arch skull
 x 9
 y 14
 end
+arch small_stones
+x 9
+y 15
+end
 arch pit_open
 hp 17
 sp 44
@@ -2952,11 +3195,19 @@ y 15
 speed 0.500000
 value 1
 end
+arch small_stones
+x 9
+y 16
+end
 arch pit_open
 hp 2
 sp 25
 x 9
 y 16
+end
+arch small_stones
+x 9
+y 17
 end
 arch bwall_0
 x 9
@@ -2978,7 +3229,7 @@ arch pstone_2
 x 9
 y 20
 end
-arch vodka_poison
+arch poison
 x 9
 y 20
 end
@@ -2991,6 +3242,10 @@ x 9
 y 22
 end
 arch pstone_2
+x 9
+y 23
+end
+arch giant
 x 9
 y 23
 end
@@ -3014,7 +3269,7 @@ arch pstone_2
 x 9
 y 28
 end
-arch vodka_poison
+arch poison
 x 9
 y 28
 end
@@ -3226,6 +3481,9 @@ arch blocked
 x 9
 y 59
 end
+arch small_stones
+x 10
+end
 arch dun2
 x 10
 end
@@ -3237,6 +3495,10 @@ arch small_stones
 x 10
 y 2
 end
+arch small_stones
+x 10
+y 3
+end
 arch dun2
 x 10
 y 3
@@ -3245,9 +3507,17 @@ arch blocked
 x 10
 y 4
 end
+arch small_stones
+x 10
+y 5
+end
 arch bwall_0
 x 10
 y 5
+end
+arch small_stones
+x 10
+y 6
 end
 arch pit_open
 hp 17
@@ -3309,11 +3579,19 @@ arch skull
 x 10
 y 15
 end
+arch small_stones
+x 10
+y 16
+end
 arch pit_open
 hp 2
 sp 25
 x 10
 y 16
+end
+arch small_stones
+x 10
+y 17
 end
 arch bwall_0
 x 10
@@ -3335,7 +3613,7 @@ arch pstone_2
 x 10
 y 20
 end
-arch vodka
+arch booze
 x 10
 y 20
 end
@@ -3371,7 +3649,7 @@ arch pstone_2
 x 10
 y 28
 end
-arch vodka
+arch booze
 x 10
 y 28
 end
@@ -3555,6 +3833,9 @@ arch blocked
 x 10
 y 59
 end
+arch small_stones
+x 11
+end
 arch dun2
 x 11
 end
@@ -3566,6 +3847,10 @@ arch small_stones
 x 11
 y 2
 end
+arch small_stones
+x 11
+y 3
+end
 arch dun2
 x 11
 y 3
@@ -3574,9 +3859,17 @@ arch blocked
 x 11
 y 4
 end
+arch small_stones
+x 11
+y 5
+end
 arch bwall_0
 x 11
 y 5
+end
+arch small_stones
+x 11
+y 6
 end
 arch pit_open
 hp 17
@@ -3647,11 +3940,19 @@ arch skull
 x 11
 y 15
 end
+arch small_stones
+x 11
+y 16
+end
 arch pit_open
 hp 2
 sp 25
 x 11
 y 16
+end
+arch small_stones
+x 11
+y 17
 end
 arch bwall_0
 x 11
@@ -3915,6 +4216,9 @@ arch blocked
 x 11
 y 59
 end
+arch small_stones
+x 12
+end
 arch dun2
 x 12
 end
@@ -3926,6 +4230,10 @@ arch small_stones
 x 12
 y 2
 end
+arch small_stones
+x 12
+y 3
+end
 arch dun2
 x 12
 y 3
@@ -3934,9 +4242,17 @@ arch blocked
 x 12
 y 4
 end
+arch small_stones
+x 12
+y 5
+end
 arch bwall_0
 x 12
 y 5
+end
+arch small_stones
+x 12
+y 6
 end
 arch pit_open
 hp 17
@@ -4007,11 +4323,19 @@ arch skull
 x 12
 y 15
 end
+arch small_stones
+x 12
+y 16
+end
 arch pit_open
 hp 2
 sp 25
 x 12
 y 16
+end
+arch small_stones
+x 12
+y 17
 end
 arch bwall_0
 x 12
@@ -4245,6 +4569,8 @@ end
 arch firechest
 x 12
 y 53
+arch spell_magic_bullet
+end
 end
 arch dungeon_floor
 x 12
@@ -4278,6 +4604,9 @@ arch blocked
 x 12
 y 59
 end
+arch small_stones
+x 13
+end
 arch dun2
 x 13
 end
@@ -4289,6 +4618,10 @@ arch small_stones
 x 13
 y 2
 end
+arch small_stones
+x 13
+y 3
+end
 arch dun2
 x 13
 y 3
@@ -4297,9 +4630,17 @@ arch blocked
 x 13
 y 4
 end
+arch small_stones
+x 13
+y 5
+end
 arch bwall_0
 x 13
 y 5
+end
+arch small_stones
+x 13
+y 6
 end
 arch pit_open
 hp 17
@@ -4370,11 +4711,19 @@ arch skull
 x 13
 y 15
 end
+arch small_stones
+x 13
+y 16
+end
 arch pit_open
 hp 2
 sp 25
 x 13
 y 16
+end
+arch small_stones
+x 13
+y 17
 end
 arch bwall_0
 x 13
@@ -4412,7 +4761,7 @@ arch pstone_2
 x 13
 y 22
 end
-arch vodka
+arch booze
 x 13
 y 22
 end
@@ -4444,7 +4793,7 @@ arch pstone_2
 x 13
 y 26
 end
-arch vodka
+arch booze
 x 13
 y 26
 end
@@ -4644,6 +4993,8 @@ end
 arch firechest
 x 13
 y 52
+arch spell_magic_bullet
+end
 end
 arch dungeon_floor
 x 13
@@ -4652,6 +5003,8 @@ end
 arch firechest
 x 13
 y 53
+arch spell_magic_bullet
+end
 end
 arch dungeon_floor
 x 13
@@ -4692,6 +5045,9 @@ arch blocked
 x 13
 y 59
 end
+arch small_stones
+x 14
+end
 arch dun2
 x 14
 end
@@ -4710,6 +5066,10 @@ end
 arch door_look_2
 x 14
 y 2
+end
+arch small_stones
+x 14
+y 3
 end
 arch dun2
 x 14
@@ -4719,9 +5079,17 @@ arch blocked
 x 14
 y 4
 end
+arch small_stones
+x 14
+y 5
+end
 arch bwall_0
 x 14
 y 5
+end
+arch small_stones
+x 14
+y 6
 end
 arch pit_open
 hp 17
@@ -4783,11 +5151,19 @@ arch skull
 x 14
 y 15
 end
+arch small_stones
+x 14
+y 16
+end
 arch pit_open
 hp 2
 sp 25
 x 14
 y 16
+end
+arch small_stones
+x 14
+y 17
 end
 arch bwall_0
 x 14
@@ -5143,15 +5519,27 @@ arch blocked
 x 15
 y 4
 end
+arch small_stones
+x 15
+y 5
+end
 arch bwall_0
 x 15
 y 5
+end
+arch small_stones
+x 15
+y 6
 end
 arch pit_open
 hp 17
 sp 20
 x 15
 y 6
+end
+arch small_stones
+x 15
+y 7
 end
 arch pit_open
 hp 2
@@ -5198,11 +5586,19 @@ arch skull
 x 15
 y 14
 end
+arch small_stones
+x 15
+y 15
+end
 arch pit_open
 hp 17
 sp 32
 x 15
 y 15
+end
+arch small_stones
+x 15
+y 16
 end
 arch pit_open
 hp 2
@@ -5210,6 +5606,10 @@ sp 25
 x 15
 y 16
 end
+arch small_stones
+x 15
+y 17
+end
 arch bwall_0
 x 15
 y 17
@@ -5412,13 +5812,25 @@ arch blocked
 x 16
 y 4
 end
-arch bwall_0
+arch small_stones
 x 16
 y 5
 end
 arch bwall_0
 x 16
+y 5
+end
+arch small_stones
+x 16
 y 6
+end
+arch bwall_0
+x 16
+y 6
+end
+arch small_stones
+x 16
+y 7
 end
 arch pit_open
 hp 2
@@ -5427,6 +5839,10 @@ x 16
 y 7
 speed 0.500000
 value 1
+end
+arch small_stones
+x 16
+y 8
 end
 arch pit_open
 hp 2
@@ -5456,9 +5872,7 @@ arch crater
 x 16
 y 13
 end
-arch pit_open
-hp 17
-sp 32
+arch small_stones
 x 16
 y 14
 end
@@ -5466,14 +5880,32 @@ arch pit_open
 hp 17
 sp 32
 x 16
+y 14
+end
+arch small_stones
+x 16
 y 15
 end
-arch bwall_0
+arch pit_open
+hp 17
+sp 32
+x 16
+y 15
+end
+arch small_stones
 x 16
 y 16
 end
 arch bwall_0
 x 16
+y 16
+end
+arch small_stones
+x 16
+y 17
+end
+arch bwall_0
+x 16
 y 17
 end
 arch blocked
@@ -5830,13 +6262,25 @@ arch blocked
 x 17
 y 5
 end
-arch bwall_0
+arch small_stones
 x 17
 y 6
 end
 arch bwall_0
 x 17
+y 6
+end
+arch small_stones
+x 17
 y 7
+end
+arch bwall_0
+x 17
+y 7
+end
+arch small_stones
+x 17
+y 8
 end
 arch pit_open
 hp 2
@@ -5845,6 +6289,10 @@ x 17
 y 8
 speed 0.500000
 value 1
+end
+arch small_stones
+x 17
+y 9
 end
 arch pit_open
 hp 2
@@ -5866,9 +6314,7 @@ arch crater
 x 17
 y 12
 end
-arch pit_open
-hp 17
-sp 32
+arch small_stones
 x 17
 y 13
 end
@@ -5876,11 +6322,29 @@ arch pit_open
 hp 17
 sp 32
 x 17
+y 13
+end
+arch small_stones
+x 17
 y 14
+end
+arch pit_open
+hp 17
+sp 32
+x 17
+y 14
+end
+arch small_stones
+x 17
+y 15
 end
 arch bwall_0
 x 17
 y 15
+end
+arch small_stones
+x 17
+y 16
 end
 arch bwall_0
 x 17
@@ -6169,13 +6633,25 @@ arch blocked
 x 18
 y 6
 end
-arch bwall_0
+arch small_stones
 x 18
 y 7
 end
 arch bwall_0
 x 18
+y 7
+end
+arch small_stones
+x 18
 y 8
+end
+arch bwall_0
+x 18
+y 8
+end
+arch small_stones
+x 18
+y 9
 end
 arch pit_open
 hp 2
@@ -6184,6 +6660,10 @@ x 18
 y 9
 speed 0.500000
 value 1
+end
+arch small_stones
+x 18
+y 10
 end
 arch pit_open
 hp 2
@@ -6195,11 +6675,19 @@ arch crater
 x 18
 y 11
 end
+arch small_stones
+x 18
+y 12
+end
 arch pit_open
 hp 2
 sp 32
 x 18
 y 12
+end
+arch small_stones
+x 18
+y 13
 end
 arch pit_open
 hp 17
@@ -6207,9 +6695,17 @@ sp 32
 x 18
 y 13
 end
+arch small_stones
+x 18
+y 14
+end
 arch bwall_0
 x 18
 y 14
+end
+arch small_stones
+x 18
+y 15
 end
 arch bwall_0
 x 18
@@ -6319,6 +6815,10 @@ arch pstone_2
 x 18
 y 35
 end
+arch chinese_dragon
+x 18
+y 35
+end
 arch pstone_2
 x 18
 y 36
@@ -6327,11 +6827,19 @@ arch pstone_2
 x 18
 y 37
 end
+arch chinese_dragon
+x 18
+y 37
+end
 arch pstone_2
 x 18
 y 38
 end
 arch pstone_2
+x 18
+y 39
+end
+arch chinese_dragon
 x 18
 y 39
 end
@@ -6358,6 +6866,8 @@ end
 arch speedballwall
 x 18
 y 43
+arch spell_large_speedball
+end
 end
 arch dungeon_floor
 x 18
@@ -6493,17 +7003,23 @@ arch blocked
 x 19
 y 7
 end
-arch bwall_0
+arch small_stones
 x 19
 y 8
 end
 arch bwall_0
 x 19
+y 8
+end
+arch small_stones
+x 19
 y 9
 end
-arch pit_open
-hp 2
-sp 32
+arch bwall_0
+x 19
+y 9
+end
+arch small_stones
 x 19
 y 10
 end
@@ -6511,7 +7027,21 @@ arch pit_open
 hp 2
 sp 32
 x 19
+y 10
+end
+arch small_stones
+x 19
 y 11
+end
+arch pit_open
+hp 2
+sp 32
+x 19
+y 11
+end
+arch small_stones
+x 19
+y 12
 end
 arch pit_open
 hp 2
@@ -6519,9 +7049,17 @@ sp 32
 x 19
 y 12
 end
+arch small_stones
+x 19
+y 13
+end
 arch bwall_0
 x 19
 y 13
+end
+arch small_stones
+x 19
+y 14
 end
 arch bwall_0
 x 19
@@ -6797,21 +7335,41 @@ arch blocked
 x 20
 y 8
 end
-arch bwall_0
+arch small_stones
 x 20
 y 9
 end
 arch bwall_0
 x 20
+y 9
+end
+arch small_stones
+x 20
 y 10
 end
 arch bwall_0
+x 20
+y 10
+end
+arch small_stones
 x 20
 y 11
 end
 arch bwall_0
 x 20
+y 11
+end
+arch small_stones
+x 20
 y 12
+end
+arch bwall_0
+x 20
+y 12
+end
+arch small_stones
+x 20
+y 13
 end
 arch bwall_0
 x 20
@@ -6913,6 +7471,10 @@ arch pstone_2
 x 20
 y 34
 end
+arch chinese_dragon
+x 20
+y 34
+end
 arch pstone_2
 x 20
 y 35
@@ -6921,11 +7483,19 @@ arch pstone_2
 x 20
 y 36
 end
+arch chinese_dragon
+x 20
+y 36
+end
 arch pstone_2
 x 20
 y 37
 end
 arch pstone_2
+x 20
+y 38
+end
+arch chinese_dragon
 x 20
 y 38
 end
@@ -6956,6 +7526,8 @@ end
 arch lbulletwall_5
 x 20
 y 43
+arch spell_lg_magic_bullet
+end
 end
 arch dungeon_floor
 x 20
@@ -7489,11 +8061,23 @@ arch large_stones
 x 22
 y 23
 end
+arch dragon
+x 22
+y 23
+end
 arch large_stones
 x 22
 y 24
 end
+arch dragon
+x 22
+y 24
+end
 arch large_stones
+x 22
+y 25
+end
+arch dragon
 x 22
 y 25
 end
@@ -7554,11 +8138,19 @@ arch pstone_2
 x 22
 y 34
 end
+arch chinese_dragon
+x 22
+y 34
+end
 arch pstone_2
 x 22
 y 35
 end
 arch pstone_2
+x 22
+y 36
+end
+arch chinese_dragon
 x 22
 y 36
 end
@@ -7979,6 +8571,10 @@ x 23
 y 38
 end
 arch pstone_2
+x 23
+y 39
+end
+arch chinese_dragon
 x 23
 y 39
 end
@@ -8301,6 +8897,10 @@ arch large_stones
 x 24
 y 24
 end
+arch dragon
+x 24
+y 24
+end
 arch large_stones
 x 24
 y 25
@@ -8367,6 +8967,10 @@ x 24
 y 35
 end
 arch pstone_2
+x 24
+y 36
+end
+arch chinese_dragon
 x 24
 y 36
 end
@@ -8756,6 +9360,10 @@ arch pstone_2
 x 25
 y 34
 end
+arch chinese_dragon
+x 25
+y 34
+end
 arch pstone_2
 x 25
 y 35
@@ -9573,6 +10181,10 @@ x 27
 y 35
 end
 arch pstone_2
+x 27
+y 36
+end
+arch chinese_dragon
 x 27
 y 36
 end
@@ -9894,7 +10506,7 @@ arch large_stones
 x 28
 y 20
 end
-arch random_food_fant
+arch random_food
 x 28
 y 20
 end
@@ -10348,7 +10960,7 @@ arch large_stones
 x 29
 y 25
 end
-arch random_food_fant
+arch random_food
 x 29
 y 25
 end
@@ -11972,7 +12584,7 @@ arch dungeon_floor
 x 33
 y 18
 end
-arch random_food_fant
+arch random_food
 x 33
 y 18
 end
@@ -11980,7 +12592,7 @@ arch dungeon_floor
 x 33
 y 19
 end
-arch random_food_fant
+arch random_food
 x 33
 y 19
 end
@@ -11988,7 +12600,7 @@ arch dungeon_floor
 x 33
 y 20
 end
-arch random_food_fant
+arch random_food
 x 33
 y 20
 end
@@ -11996,7 +12608,7 @@ arch dungeon_floor
 x 33
 y 21
 end
-arch random_food_fant
+arch random_food
 x 33
 y 21
 end
@@ -12008,7 +12620,7 @@ arch dungeon_floor
 x 33
 y 22
 end
-arch random_food_fant
+arch random_food
 x 33
 y 22
 end
@@ -12020,7 +12632,7 @@ arch dungeon_floor
 x 33
 y 23
 end
-arch random_food_fant
+arch random_food
 x 33
 y 23
 end
@@ -12032,7 +12644,7 @@ arch dungeon_floor
 x 33
 y 24
 end
-arch random_food_fant
+arch random_food
 x 33
 y 24
 end
@@ -12084,7 +12696,7 @@ arch dungeon_floor
 x 33
 y 28
 end
-arch random_food_fant
+arch random_food
 x 33
 y 28
 end
@@ -12100,7 +12712,7 @@ arch dungeon_floor
 x 33
 y 29
 end
-arch random_food_fant
+arch random_food
 x 33
 y 29
 end
@@ -12116,7 +12728,7 @@ arch dungeon_floor
 x 33
 y 30
 end
-arch random_food_fant
+arch random_food
 x 33
 y 30
 end
@@ -12132,7 +12744,7 @@ arch dungeon_floor
 x 33
 y 31
 end
-arch random_food_fant
+arch random_food
 x 33
 y 31
 end
@@ -12144,7 +12756,7 @@ arch dungeon_floor
 x 33
 y 32
 end
-arch random_food_fant
+arch random_food
 x 33
 y 32
 end
@@ -12152,7 +12764,7 @@ arch dungeon_floor
 x 33
 y 33
 end
-arch random_food_fant
+arch random_food
 x 33
 y 33
 end
@@ -12160,7 +12772,7 @@ arch dungeon_floor
 x 33
 y 34
 end
-arch random_food_fant
+arch random_food
 x 33
 y 34
 end
@@ -12168,7 +12780,7 @@ arch dungeon_floor
 x 33
 y 35
 end
-arch random_food_fant
+arch random_food
 x 33
 y 35
 end
@@ -12510,7 +13122,7 @@ arch dungeon_floor
 x 34
 y 18
 end
-arch random_food_fant
+arch random_food
 x 34
 y 18
 end
@@ -12518,7 +13130,7 @@ arch dungeon_floor
 x 34
 y 19
 end
-arch random_food_fant
+arch random_food
 x 34
 y 19
 end
@@ -12526,7 +13138,7 @@ arch dungeon_floor
 x 34
 y 20
 end
-arch random_food_fant
+arch random_food
 x 34
 y 20
 end
@@ -12626,7 +13238,7 @@ arch dungeon_floor
 x 34
 y 33
 end
-arch random_food_fant
+arch random_food
 x 34
 y 33
 end
@@ -12634,7 +13246,7 @@ arch dungeon_floor
 x 34
 y 34
 end
-arch random_food_fant
+arch random_food
 x 34
 y 34
 end
@@ -12642,7 +13254,7 @@ arch dungeon_floor
 x 34
 y 35
 end
-arch random_food_fant
+arch random_food
 x 34
 y 35
 end
@@ -12747,6 +13359,10 @@ x 34
 y 55
 end
 arch dungeon_floor
+x 34
+y 56
+end
+arch chinese_dragon
 x 34
 y 56
 end
@@ -12912,7 +13528,7 @@ arch dungeon_floor
 x 35
 y 18
 end
-arch random_food_fant
+arch random_food
 x 35
 y 18
 end
@@ -12920,7 +13536,7 @@ arch dungeon_floor
 x 35
 y 19
 end
-arch random_food_fant
+arch random_food
 x 35
 y 19
 end
@@ -13028,7 +13644,7 @@ arch dungeon_floor
 x 35
 y 34
 end
-arch random_food_fant
+arch random_food
 x 35
 y 34
 end
@@ -13036,7 +13652,7 @@ arch dungeon_floor
 x 35
 y 35
 end
-arch random_food_fant
+arch random_food
 x 35
 y 35
 end
@@ -13306,7 +13922,7 @@ arch dungeon_floor
 x 36
 y 18
 end
-arch random_food_fant
+arch random_food
 x 36
 y 18
 end
@@ -13422,7 +14038,7 @@ arch dungeon_floor
 x 36
 y 35
 end
-arch random_food_fant
+arch random_food
 x 36
 y 35
 end
@@ -13523,11 +14139,19 @@ arch dungeon_floor
 x 36
 y 54
 end
+arch chinese_dragon
+x 36
+y 54
+end
 arch dungeon_floor
 x 36
 y 55
 end
 arch dungeon_floor
+x 36
+y 56
+end
+arch chinese_dragon
 x 36
 y 56
 end
@@ -14683,11 +15307,19 @@ arch dungeon_floor
 x 39
 y 54
 end
+arch chinese_dragon
+x 39
+y 54
+end
 arch dungeon_floor
 x 39
 y 55
 end
 arch dungeon_floor
+x 39
+y 56
+end
+arch chinese_dragon
 x 39
 y 56
 end
@@ -15659,9 +16291,6 @@ x 42
 y 39
 end
 arch button_plate
-msg
-
-endmsg
 x 42
 y 39
 connected 2
@@ -15682,6 +16311,10 @@ arch dungeon_floor
 x 42
 y 42
 end
+arch chinese_dragon
+x 42
+y 42
+end
 arch dungeon_floor
 x 42
 y 43
@@ -15706,11 +16339,19 @@ arch dungeon_floor
 x 42
 y 48
 end
+arch chinese_dragon
+x 42
+y 48
+end
 arch dungeon_floor
 x 42
 y 49
 end
 arch dungeon_floor
+x 42
+y 50
+end
+arch chinese_dragon
 x 42
 y 50
 end
@@ -15726,6 +16367,10 @@ arch dungeon_floor
 x 42
 y 53
 end
+arch chinese_dragon
+x 42
+y 53
+end
 arch dungeon_floor
 x 42
 y 54
@@ -15735,6 +16380,10 @@ x 42
 y 55
 end
 arch dungeon_floor
+x 42
+y 56
+end
+arch chinese_dragon
 x 42
 y 56
 end
@@ -15768,6 +16417,10 @@ arch dungeon_floor
 x 43
 y 2
 end
+arch big_dragon
+x 43
+y 2
+end
 arch dungeon_floor
 x 43
 y 3
@@ -15776,11 +16429,19 @@ arch dungeon_floor
 x 43
 y 4
 end
+arch big_dragon
+x 43
+y 4
+end
 arch dungeon_floor
 x 43
 y 5
 end
 arch dungeon_floor
+x 43
+y 6
+end
+arch big_dragon
 x 43
 y 6
 end
@@ -15996,6 +16657,10 @@ arch dungeon_floor
 x 43
 y 45
 end
+arch chinese_dragon
+x 43
+y 45
+end
 arch dungeon_floor
 x 43
 y 46
@@ -16322,6 +16987,10 @@ arch dungeon_floor
 x 44
 y 40
 end
+arch chinese_dragon
+x 44
+y 40
+end
 arch dungeon_floor
 x 44
 y 41
@@ -16354,6 +17023,10 @@ arch dungeon_floor
 x 44
 y 48
 end
+arch chinese_dragon
+x 44
+y 48
+end
 arch dungeon_floor
 x 44
 y 49
@@ -16366,6 +17039,10 @@ arch dungeon_floor
 x 44
 y 51
 end
+arch chinese_dragon
+x 44
+y 51
+end
 arch dungeon_floor
 x 44
 y 52
@@ -16375,6 +17052,10 @@ x 44
 y 53
 end
 arch dungeon_floor
+x 44
+y 54
+end
+arch chinese_dragon
 x 44
 y 54
 end
@@ -16597,6 +17278,10 @@ arch dungeon_floor
 x 45
 y 42
 end
+arch chinese_dragon
+x 45
+y 42
+end
 arch dungeon_floor
 x 45
 y 43
@@ -16653,6 +17338,10 @@ arch dungeon_floor
 x 45
 y 56
 end
+arch chinese_dragon
+x 45
+y 56
+end
 arch dungeon_floor
 x 45
 y 57
@@ -16683,11 +17372,19 @@ arch dungeon_floor
 x 46
 y 2
 end
+arch big_dragon
+x 46
+y 2
+end
 arch dungeon_floor
 x 46
 y 3
 end
 arch dungeon_floor
+x 46
+y 4
+end
+arch big_dragon
 x 46
 y 4
 end
@@ -16756,11 +17453,19 @@ arch dungeon_floor
 x 46
 y 18
 end
+arch big_dragon
+x 46
+y 18
+end
 arch dungeon_floor
 x 46
 y 19
 end
 arch dungeon_floor
+x 46
+y 20
+end
+arch big_dragon
 x 46
 y 20
 end
@@ -16772,11 +17477,19 @@ arch dungeon_floor
 x 46
 y 22
 end
+arch big_dragon
+x 46
+y 22
+end
 arch dungeon_floor
 x 46
 y 23
 end
 arch dungeon_floor
+x 46
+y 24
+end
+arch big_dragon
 x 46
 y 24
 end
@@ -16788,6 +17501,10 @@ arch dungeon_floor
 x 46
 y 26
 end
+arch big_dragon
+x 46
+y 26
+end
 arch dungeon_floor
 x 46
 y 27
@@ -16796,11 +17513,19 @@ arch dungeon_floor
 x 46
 y 28
 end
+arch big_dragon
+x 46
+y 28
+end
 arch dungeon_floor
 x 46
 y 29
 end
 arch dungeon_floor
+x 46
+y 30
+end
+arch big_dragon
 x 46
 y 30
 end
@@ -16880,6 +17605,10 @@ arch dungeon_floor
 x 46
 y 46
 end
+arch chinese_dragon
+x 46
+y 46
+end
 arch dungeon_floor
 x 46
 y 47
@@ -16888,11 +17617,19 @@ arch dungeon_floor
 x 46
 y 48
 end
+arch chinese_dragon
+x 46
+y 48
+end
 arch dungeon_floor
 x 46
 y 49
 end
 arch dungeon_floor
+x 46
+y 50
+end
+arch chinese_dragon
 x 46
 y 50
 end
@@ -16905,6 +17642,10 @@ x 46
 y 52
 end
 arch dungeon_floor
+x 46
+y 53
+end
+arch chinese_dragon
 x 46
 y 53
 end
@@ -16963,6 +17704,10 @@ x 47
 y 5
 end
 arch dungeon_floor
+x 47
+y 6
+end
+arch big_dragon
 x 47
 y 6
 end
@@ -17119,11 +17864,19 @@ arch dungeon_floor
 x 47
 y 39
 end
+arch chinese_dragon
+x 47
+y 39
+end
 arch dungeon_floor
 x 47
 y 40
 end
 arch dungeon_floor
+x 47
+y 41
+end
+arch chinese_dragon
 x 47
 y 41
 end
@@ -17136,6 +17889,10 @@ x 47
 y 43
 end
 arch dungeon_floor
+x 47
+y 44
+end
+arch chinese_dragon
 x 47
 y 44
 end
@@ -17184,6 +17941,10 @@ x 47
 y 55
 end
 arch dungeon_floor
+x 47
+y 56
+end
+arch chinese_dragon
 x 47
 y 56
 end
@@ -18002,6 +18763,10 @@ x 50
 y 36
 end
 arch dungeon_magic
+x 50
+y 36
+end
+arch big_wiz
 x 50
 y 36
 end
@@ -18454,6 +19219,10 @@ arch dungeon_floor
 x 52
 y 2
 end
+arch big_dragon
+x 52
+y 2
+end
 arch dungeon_floor
 x 52
 y 3
@@ -18462,11 +19231,19 @@ arch dungeon_floor
 x 52
 y 4
 end
+arch big_dragon
+x 52
+y 4
+end
 arch dungeon_floor
 x 52
 y 5
 end
 arch dungeon_floor
+x 52
+y 6
+end
+arch big_dragon
 x 52
 y 6
 end
@@ -19013,6 +19790,10 @@ x 53
 y 39
 end
 arch dungeon_magic
+x 53
+y 39
+end
+arch big_wiz
 x 53
 y 39
 end
@@ -19930,6 +20711,10 @@ x 56
 y 36
 end
 arch dungeon_magic
+x 56
+y 36
+end
+arch big_wiz
 x 56
 y 36
 end
@@ -20392,7 +21177,7 @@ arch dungeon_floor
 x 57
 y 47
 end
-arch random_food_fant
+arch random_food
 x 57
 y 47
 end
@@ -20408,7 +21193,7 @@ arch dungeon_floor
 x 57
 y 49
 end
-arch vodka
+arch booze
 x 57
 y 49
 end
@@ -20416,7 +21201,7 @@ arch dungeon_floor
 x 57
 y 50
 end
-arch vodka
+arch booze
 x 57
 y 50
 end
@@ -20424,7 +21209,7 @@ arch dungeon_floor
 x 57
 y 51
 end
-arch vodka
+arch booze
 x 57
 y 51
 end
@@ -20432,7 +21217,7 @@ arch dungeon_floor
 x 57
 y 52
 end
-arch vodka
+arch booze
 x 57
 y 52
 end
@@ -20440,7 +21225,7 @@ arch dungeon_floor
 x 57
 y 53
 end
-arch vodka
+arch booze
 x 57
 y 53
 end
@@ -20448,7 +21233,7 @@ arch dungeon_floor
 x 57
 y 54
 end
-arch vodka
+arch booze
 x 57
 y 54
 end
@@ -20460,7 +21245,7 @@ arch dungeon_floor
 x 57
 y 55
 end
-arch vodka
+arch booze
 x 57
 y 55
 end
@@ -20468,7 +21253,7 @@ arch dungeon_floor
 x 57
 y 56
 end
-arch vodka
+arch booze
 x 57
 y 56
 end
@@ -20476,7 +21261,7 @@ arch dungeon_floor
 x 57
 y 57
 end
-arch vodka
+arch booze
 x 57
 y 57
 end
@@ -20488,7 +21273,7 @@ arch dungeon_floor
 x 57
 y 58
 end
-arch vodka
+arch booze
 x 57
 y 58
 end
@@ -20572,8 +21357,7 @@ y 14
 end
 arch sign
 msg
-Glowing and Cold potions
-  may be very usefull
+Glowing and Cold potions may be very useful.
 endmsg
 x 58
 y 14
@@ -20792,7 +21576,7 @@ arch dungeon_floor
 x 58
 y 47
 end
-arch random_food_fant
+arch random_food
 x 58
 y 47
 end
@@ -20856,7 +21640,7 @@ arch dungeon_floor
 x 58
 y 55
 end
-arch vodka
+arch booze
 x 58
 y 55
 end
@@ -20864,7 +21648,7 @@ arch dungeon_floor
 x 58
 y 56
 end
-arch vodka
+arch booze
 x 58
 y 56
 end
@@ -20876,7 +21660,7 @@ arch dungeon_floor
 x 58
 y 57
 end
-arch vodka
+arch booze
 x 58
 y 57
 end
@@ -20884,7 +21668,7 @@ arch dungeon_floor
 x 58
 y 58
 end
-arch vodka
+arch booze
 x 58
 y 58
 end
@@ -21373,268 +22157,4 @@ end
 arch bwall_0
 x 59
 y 59
-end
-arch big_dragon
-x 3
-y 51
-end
-arch giant
-x 6
-y 23
-end
-arch giant
-x 7
-y 23
-end
-arch big_wiz
-x 7
-y 45
-end
-arch giant
-x 8
-y 23
-end
-arch giant
-x 9
-y 23
-end
-arch chinese_dragon
-x 18
-y 35
-end
-arch chinese_dragon
-x 18
-y 37
-end
-arch chinese_dragon
-x 18
-y 39
-end
-arch chinese_dragon
-x 20
-y 34
-end
-arch chinese_dragon
-x 20
-y 36
-end
-arch chinese_dragon
-x 20
-y 38
-end
-arch dragon
-x 22
-y 23
-end
-arch dragon
-x 22
-y 24
-end
-arch dragon
-x 22
-y 25
-end
-arch chinese_dragon
-x 22
-y 34
-end
-arch chinese_dragon
-x 22
-y 36
-end
-arch chinese_dragon
-x 23
-y 39
-end
-arch dragon
-x 24
-y 24
-end
-arch chinese_dragon
-x 24
-y 36
-end
-arch chinese_dragon
-x 25
-y 34
-end
-arch chinese_dragon
-x 27
-y 36
-end
-arch chinese_dragon
-x 34
-y 56
-end
-arch chinese_dragon
-x 36
-y 54
-end
-arch chinese_dragon
-x 36
-y 56
-end
-arch chinese_dragon
-x 39
-y 54
-end
-arch chinese_dragon
-x 39
-y 56
-end
-arch chinese_dragon
-x 42
-y 42
-end
-arch chinese_dragon
-x 42
-y 48
-end
-arch chinese_dragon
-x 42
-y 50
-end
-arch chinese_dragon
-x 42
-y 53
-end
-arch chinese_dragon
-x 42
-y 56
-end
-arch big_dragon
-x 43
-y 2
-end
-arch big_dragon
-x 43
-y 4
-end
-arch big_dragon
-x 43
-y 6
-end
-arch chinese_dragon
-x 43
-y 45
-end
-arch chinese_dragon
-x 44
-y 40
-end
-arch chinese_dragon
-x 44
-y 48
-end
-arch chinese_dragon
-x 44
-y 51
-end
-arch chinese_dragon
-x 44
-y 54
-end
-arch chinese_dragon
-x 45
-y 42
-end
-arch chinese_dragon
-x 45
-y 56
-end
-arch big_dragon
-x 46
-y 2
-end
-arch big_dragon
-x 46
-y 4
-end
-arch big_dragon
-x 46
-y 18
-end
-arch big_dragon
-x 46
-y 20
-end
-arch big_dragon
-x 46
-y 22
-end
-arch big_dragon
-x 46
-y 24
-end
-arch big_dragon
-x 46
-y 26
-end
-arch big_dragon
-x 46
-y 28
-end
-arch big_dragon
-x 46
-y 30
-end
-arch chinese_dragon
-x 46
-y 46
-end
-arch chinese_dragon
-x 46
-y 48
-end
-arch chinese_dragon
-x 46
-y 50
-end
-arch chinese_dragon
-x 46
-y 53
-end
-arch big_dragon
-x 47
-y 6
-end
-arch chinese_dragon
-x 47
-y 39
-end
-arch chinese_dragon
-x 47
-y 41
-end
-arch chinese_dragon
-x 47
-y 44
-end
-arch chinese_dragon
-x 47
-y 56
-end
-arch big_wiz
-x 50
-y 36
-end
-arch big_dragon
-x 52
-y 2
-end
-arch big_dragon
-x 52
-y 4
-end
-arch big_dragon
-x 52
-y 6
-end
-arch big_wiz
-x 53
-y 39
-end
-arch big_wiz
-x 56
-y 36
 end

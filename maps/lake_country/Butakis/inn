@@ -1,13 +1,15 @@
 arch map
-region lakecountry
-name <untitled>
-msg
-Creator: Kundi, Xue
-Email: xkd@soda.csua.berkeley.edu
-Date: Tue Mar 28 19:01:08 1995
-endmsg
+name White Pigeon Inn
+difficulty 20
+region butakisfortress
 width 16
 height 16
+enter_x 7
+enter_y 14
+msg
+Created:  1995-03-28 Kundi, Xue (xkd@soda.csua.berkeley.edu)
+Modified: 2012-02-05 Rick Tanner
+endmsg
 end
 arch woodfloor
 end
@@ -313,7 +315,7 @@ arch woodfloor
 x 3
 y 3
 end
-arch wwall_2_2_2
+arch wwall_1_1
 x 3
 y 3
 end
@@ -346,9 +348,9 @@ x 3
 y 7
 end
 arch door_look_2
-no_pass 0
 x 3
 y 7
+move_block 0
 end
 arch woodfloor
 x 3
@@ -370,7 +372,7 @@ arch woodfloor
 x 3
 y 10
 end
-arch wwall_3_1
+arch wwall_2_2_4
 x 3
 y 10
 end
@@ -425,9 +427,9 @@ x 4
 y 3
 end
 arch door_look_1
-no_pass 0
 x 4
 y 3
+move_block 0
 end
 arch woodfloor
 x 4
@@ -458,9 +460,9 @@ x 4
 y 10
 end
 arch door_look_1
-no_pass 0
 x 4
 y 10
+move_block 0
 end
 arch woodfloor
 x 4
@@ -516,7 +518,7 @@ arch woodfloor
 x 5
 y 3
 end
-arch wwall_3_1
+arch wwall_2_2_1
 x 5
 y 3
 end
@@ -550,19 +552,18 @@ y 8
 end
 arch human
 name The axeman
-type 0
 Con 5
-hp 50
-maxhp 50
 dam 13
 wc 5
-armour 30
-level 5
-randomitems none
-monster 1
-unaggressive 1
 x 5
 y 8
+level 5
+type 0
+resist_physical 30
+randomitems none
+move_type walk
+monster 1
+unaggressive 1
 end
 arch woodfloor
 x 5
@@ -572,7 +573,7 @@ arch woodfloor
 x 5
 y 10
 end
-arch wwall_3_3
+arch wwall_2_2_2
 x 5
 y 10
 end
@@ -676,28 +677,22 @@ msg
 @match what|hear
 I have heard nothing interesting yet.
 @match why|who|you|money|bribe
-Oh, my boss bid me to do this job. I
-have to do it, since now I am in the
-guild.
+Oh, my boss bid me to do this job.  I have to do it, since now I am in the guild.
 @match guild|boss
-It's the guild of ebony tiger, thieves'
-guild. My boss is one of the low
-guildmasters. He's in the room left. If
-you want to join the guild, talk to
-him.
+It's the guild of ebony tiger, thieves' guild.  My boss is one of the low guildmasters.  He's in the room left.  If you want to join the guild, talk to him.
 @match they
 Those sitting near the main door.
 @match *
-Shh.. I am trying to hear what they
-are talking
+Shh.. I am trying to hear what they are talking.
 endmsg
-type 0
 hp 10
-randomitems none
-monster 1
-unaggressive 1
 x 6
 y 6
+type 0
+randomitems none
+move_type walk
+monster 1
+unaggressive 1
 end
 arch woodfloor
 x 6
@@ -708,7 +703,6 @@ x 6
 y 7
 end
 arch ninja
-type 0
 Con 3
 hp 45
 maxhp 45
@@ -716,11 +710,13 @@ exp 100
 dam 8
 wc -3
 ac 4
-speed 0.600000
-monster 1
-unaggressive 1
 x 6
 y 7
+speed 0.600000
+type 0
+move_type walk
+monster 1
+unaggressive 1
 end
 arch woodfloor
 x 6
@@ -740,7 +736,6 @@ y 9
 end
 arch wizard
 name Blacktooth the wizard
-type 0
 Pow 10
 hp 50
 maxhp 100
@@ -750,14 +745,18 @@ exp 10
 dam 5
 wc 15
 ac 2
+x 6
+y 9
 speed 0.600000
 level 10
-protected 7
+type 0
+resist_physical 30
+resist_magic 30
+resist_fire 30
+move_type walk
 monster 1
 unaggressive 1
 can_cast_spell 1
-x 6
-y 9
 end
 arch woodfloor
 x 6
@@ -864,9 +863,9 @@ x 7
 y 10
 end
 arch door_look_1
-no_pass 0
 x 7
 y 10
+move_block 0
 end
 arch woodfloor
 x 7
@@ -884,10 +883,6 @@ arch woodfloor
 x 7
 y 14
 end
-arch woodfloor
-x 7
-y 15
-end
 arch exit
 name inn
 slaying Butakis0
@@ -896,10 +891,14 @@ sp 8
 x 7
 y 15
 end
-arch door_look_1
-no_pass 0
+arch woodfloor
 x 7
 y 15
+end
+arch door_look_1
+x 7
+y 15
+move_block 0
 end
 arch woodfloor
 x 8
@@ -924,9 +923,9 @@ x 8
 y 3
 end
 arch door_look_1
-no_pass 0
 x 8
 y 3
+move_block 0
 end
 arch woodfloor
 x 8
@@ -961,9 +960,9 @@ x 8
 y 10
 end
 arch door_look_1
-no_pass 0
 x 8
 y 10
+move_block 0
 end
 arch woodfloor
 x 8
@@ -981,10 +980,6 @@ arch woodfloor
 x 8
 y 14
 end
-arch woodfloor
-x 8
-y 15
-end
 arch exit
 name inn
 slaying Butakis0
@@ -993,10 +988,14 @@ sp 8
 x 8
 y 15
 end
-arch door_look_1
-no_pass 0
+arch woodfloor
 x 8
 y 15
+end
+arch door_look_1
+x 8
+y 15
+move_block 0
 end
 arch woodfloor
 x 9
@@ -1046,7 +1045,6 @@ y 6
 end
 arch viking
 name Svenhard the viking
-type 0
 Str 20
 Con 5
 Int 10
@@ -1054,12 +1052,14 @@ hp 130
 exp 150
 dam 15
 wc 1
-speed 0.400000
-level 6
-monster 1
-unaggressive 1
 x 9
 y 6
+speed 0.400000
+level 6
+type 0
+move_type walk
+monster 1
+unaggressive 1
 end
 arch woodfloor
 x 9
@@ -1085,7 +1085,11 @@ arch woodfloor
 x 9
 y 10
 end
-arch wwall_3_1
+arch swall_1_2_half
+x 9
+y 10
+end
+arch wwall_1_4
 x 9
 y 10
 end
@@ -1143,7 +1147,7 @@ arch woodfloor
 x 10
 y 3
 end
-arch wwall_3_1
+arch wwall_2_2_4
 x 10
 y 3
 end
@@ -1175,13 +1179,12 @@ arch swall_2_1_2
 x 10
 y 8
 end
-arch woodfloor
+arch dungeon_floor
 x 10
 y 9
 end
-arch firewall
-name fire place
-face fireball.111
+arch campfire
+name fire
 x 10
 y 9
 end
@@ -1206,18 +1209,18 @@ x 10
 y 12
 end
 arch door_look_2
-no_pass 0
 x 10
 y 12
+move_block 0
 end
 arch woodfloor
 x 10
 y 13
 end
 arch door_look_2
-no_pass 0
 x 10
 y 13
+move_block 0
 end
 arch woodfloor
 x 10
@@ -1254,9 +1257,9 @@ x 11
 y 3
 end
 arch door_look_1
-no_pass 0
 x 11
 y 3
+move_block 0
 end
 arch woodfloor
 x 11
@@ -1286,13 +1289,12 @@ arch swall_2_1_2
 x 11
 y 8
 end
-arch woodfloor
+arch dungeon_floor
 x 11
 y 9
 end
-arch firewall
-name fire place
-face fireball.111
+arch campfire
+name fire
 x 11
 y 9
 end
@@ -1346,7 +1348,7 @@ arch woodfloor
 x 12
 y 3
 end
-arch wwall_2_2_3
+arch wwall_1_1
 x 12
 y 3
 end
@@ -1379,15 +1381,19 @@ x 12
 y 7
 end
 arch door_look_2
-no_pass 0
 x 12
 y 7
+move_block 0
 end
 arch woodfloor
 x 12
 y 8
 end
-arch wwall_3_4
+arch wwall_1_1
+x 12
+y 8
+end
+arch swall_1_3_half
 x 12
 y 8
 end
@@ -1494,12 +1500,10 @@ name Sneaky, the thief
 msg
 @match join
 What?! *YOU* want to join the 'Guild'?
-Hahahaha, ok you can join *IF* you can find it.
-Hope you have better eyesight than that other chump - hahaha.
+Hahahaha, ok you can join *IF* you can find it.  Hope you have better eyesight than that other chump - hahaha.
 @match *
-Get out of here! This is my room
+Get out of here! This is my room.
 endmsg
-type 0
 Dex 25
 Con 10
 Pow 3
@@ -1508,13 +1512,15 @@ hp 100
 maxhp 200
 dam 10
 ac -5
+x 13
+y 9
 speed 0.800000
 level 10
+type 0
+move_type walk
 monster 1
 unaggressive 1
 can_use_skill 1
-x 13
-y 9
 end
 arch woodfloor
 x 13
@@ -1529,36 +1535,36 @@ x 13
 y 11
 end
 arch table_3
-no_pass 1
 x 13
 y 11
+move_block all
 end
 arch woodfloor
 x 13
 y 12
 end
 arch table_3
-no_pass 1
 x 13
 y 12
+move_block all
 end
 arch woodfloor
 x 13
 y 13
 end
 arch table_3
-no_pass 1
 x 13
 y 13
+move_block all
 end
 arch woodfloor
 x 13
 y 14
 end
 arch table_3
-no_pass 1
 x 13
 y 14
+move_block all
 end
 arch woodfloor
 x 13

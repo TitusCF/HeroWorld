@@ -1,13 +1,12 @@
 arch map
-name dol-guldur
+name Dol-Guldur, Library
 region brest
-msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Thu Jun  2 00:55:21 1994
-endmsg
 width 27
 height 32
+msg
+Created:  1994-06-02
+Modified: 2012-01-25 Rick Tanner
+endmsg
 end
 arch dirtfloor
 end
@@ -361,11 +360,19 @@ arch dirtfloor
 x 1
 y 22
 end
+arch chinese_dragon
+x 1
+y 22
+end
 arch dirtfloor
 x 1
 y 23
 end
 arch dirtfloor
+x 1
+y 24
+end
+arch chinese_dragon
 x 1
 y 24
 end
@@ -378,6 +385,10 @@ x 1
 y 26
 end
 arch dirtfloor
+x 1
+y 27
+end
+arch chinese_dragon
 x 1
 y 27
 end
@@ -547,11 +558,19 @@ arch dirtfloor
 x 2
 y 17
 end
+arch dread
+x 2
+y 17
+end
 arch dirtfloor
 x 2
 y 18
 end
 arch dirtfloor
+x 2
+y 19
+end
+arch chinese_dragon
 x 2
 y 19
 end
@@ -809,9 +828,9 @@ arch dirtfloor
 x 3
 y 29
 end
-arch oakdoor
+arch oakdoor_2
 slaying dol-guldur.4
-hp 3
+hp 4
 sp 1
 x 3
 y 29
@@ -970,11 +989,23 @@ arch dirtfloor
 x 4
 y 17
 end
+arch dread
+x 4
+y 17
+end
+arch dread
+x 4
+y 17
+end
 arch dirtfloor
 x 4
 y 18
 end
 arch dirtfloor
+x 4
+y 19
+end
+arch chinese_dragon
 x 4
 y 19
 end
@@ -1022,7 +1053,7 @@ arch dirtfloor
 x 4
 y 29
 end
-arch oakdoor
+arch oakdoor_2
 slaying dol-guldur.4
 hp 4
 sp 1
@@ -1215,6 +1246,10 @@ arch dirtfloor
 x 5
 y 24
 end
+arch chinese_dragon
+x 5
+y 24
+end
 arch dirtfloor
 x 5
 y 25
@@ -1224,6 +1259,10 @@ x 5
 y 26
 end
 arch dirtfloor
+x 5
+y 27
+end
+arch chinese_dragon
 x 5
 y 27
 end
@@ -2217,11 +2256,19 @@ arch dirtfloor
 x 10
 y 1
 end
+arch giant
+x 10
+y 1
+end
 arch dirtfloor
 x 10
 y 2
 end
 arch dirtfloor
+x 10
+y 3
+end
+arch troll
 x 10
 y 3
 end
@@ -2238,6 +2285,10 @@ x 10
 y 5
 end
 arch dirtfloor
+x 10
+y 6
+end
+arch dread
 x 10
 y 6
 end
@@ -2435,6 +2486,10 @@ arch dirtfloor
 x 11
 y 1
 end
+arch giant
+x 11
+y 1
+end
 arch dirtfloor
 x 11
 y 2
@@ -2653,6 +2708,10 @@ arch dirtfloor
 x 12
 y 1
 end
+arch giant
+x 12
+y 1
+end
 arch dirtfloor
 x 12
 y 2
@@ -2669,6 +2728,10 @@ arch dirtfloor
 x 12
 y 4
 end
+arch dragon
+x 12
+y 4
+end
 arch dirtfloor
 x 12
 y 5
@@ -2678,6 +2741,10 @@ x 12
 y 5
 end
 arch dirtfloor
+x 12
+y 6
+end
+arch dread
 x 12
 y 6
 end
@@ -2872,6 +2939,10 @@ arch bwall_0
 x 13
 end
 arch dirtfloor
+x 13
+y 1
+end
+arch troll
 x 13
 y 1
 end
@@ -3094,6 +3165,10 @@ x 14
 y 3
 end
 arch dirtfloor
+x 14
+y 4
+end
+arch dragon
 x 14
 y 4
 end
@@ -3303,6 +3378,10 @@ arch dirtfloor
 x 15
 y 1
 end
+arch troll
+x 15
+y 1
+end
 arch dirtfloor
 x 15
 y 2
@@ -3522,6 +3601,10 @@ x 16
 y 3
 end
 arch dirtfloor
+x 16
+y 4
+end
+arch dragon
 x 16
 y 4
 end
@@ -3742,6 +3825,10 @@ arch dirtfloor
 x 17
 y 1
 end
+arch giant
+x 17
+y 1
+end
 arch dirtfloor
 x 17
 y 2
@@ -3984,6 +4071,10 @@ arch dirtfloor
 x 18
 y 1
 end
+arch giant
+x 18
+y 1
+end
 arch dirtfloor
 x 18
 y 2
@@ -3997,6 +4088,10 @@ x 18
 y 3
 end
 arch dirtfloor
+x 18
+y 4
+end
+arch dragon
 x 18
 y 4
 end
@@ -4191,6 +4286,10 @@ arch bwall_0
 x 19
 end
 arch dirtfloor
+x 19
+y 1
+end
+arch giant
 x 19
 y 1
 end
@@ -4352,9 +4451,7 @@ y 28
 end
 arch book_read
 msg
-Once in the Mines :
-Try to find a way from
-west-door to east gate...
+Once in the Mines: Try to find a way from west-door to east gate...
 endmsg
 x 19
 y 28
@@ -4390,6 +4487,10 @@ arch bwall_0
 x 20
 end
 arch dirtfloor
+x 20
+y 1
+end
+arch giant
 x 20
 y 1
 end
@@ -4560,6 +4661,8 @@ end
 arch firewall_3
 x 20
 y 29
+arch spell_small_fireball
+end
 end
 arch dungeon_floor
 x 20
@@ -4591,6 +4694,10 @@ arch bwall_0
 x 21
 end
 arch dirtfloor
+x 21
+y 1
+end
+arch giant
 x 21
 y 1
 end
@@ -4788,6 +4895,10 @@ arch dirtfloor
 x 22
 y 1
 end
+arch giant
+x 22
+y 1
+end
 arch dirtfloor
 x 22
 y 2
@@ -4801,6 +4912,10 @@ x 22
 y 3
 end
 arch dirtfloor
+x 22
+y 4
+end
+arch dragon
 x 22
 y 4
 end
@@ -4874,7 +4989,7 @@ y 15
 end
 arch random_scroll
 msg
-MITHRANDIR STAFF :
+MITHRANDIR STAFF:
 magic +2
 Wis +2
 Cha +2
@@ -4964,6 +5079,8 @@ end
 arch firewall_7
 x 22
 y 29
+arch spell_small_fireball
+end
 end
 arch dungeon_floor
 x 22
@@ -4995,6 +5112,10 @@ arch bwall_0
 x 23
 end
 arch dirtfloor
+x 23
+y 1
+end
+arch giant
 x 23
 y 1
 end
@@ -5192,6 +5313,10 @@ arch bwall_0
 x 24
 end
 arch dirtfloor
+x 24
+y 1
+end
+arch giant
 x 24
 y 1
 end
@@ -5417,334 +5542,322 @@ arch dungeon_floor
 x 25
 y 2
 end
-arch oakdoor
+arch dirtfloor
+x 25
+y 3
+end
+arch bwall_0
+x 25
+y 3
+end
+arch dirtfloor
+x 25
+y 4
+end
+arch bwall_0
+x 25
+y 4
+end
+arch dirtfloor
+x 25
+y 5
+end
+arch bwall_0
+x 25
+y 5
+end
+arch dungeon_floor
+x 25
+y 6
+end
+arch dirtfloor
+x 25
+y 7
+end
+arch bwall_0
+x 25
+y 7
+end
+arch dirtfloor
+x 25
+y 8
+end
+arch bwall_0
+x 25
+y 8
+end
+arch dungeon_floor
+x 25
+y 9
+end
+arch bwall_0
+x 25
+y 9
+end
+arch dungeon_floor
+x 25
+y 10
+end
+arch dungeon_floor
+x 25
+y 11
+end
+arch bwall_0
+x 25
+y 11
+end
+arch dungeon_floor
+x 25
+y 12
+end
+arch bwall_0
+x 25
+y 12
+end
+arch dungeon_floor
+x 25
+y 13
+end
+arch bwall_0
+x 25
+y 13
+end
+arch dungeon_floor
+x 25
+y 14
+end
+arch bwall_0
+x 25
+y 14
+end
+arch dungeon_floor
+x 25
+y 15
+end
+arch bwall_0
+x 25
+y 15
+end
+arch dungeon_floor
+x 25
+y 16
+end
+arch bwall_0
+x 25
+y 16
+end
+arch dungeon_floor
+x 25
+y 17
+end
+arch bwall_0
+x 25
+y 17
+end
+arch dungeon_floor
+x 25
+y 18
+end
+arch bwall_0
+x 25
+y 18
+end
+arch dungeon_floor
+x 25
+y 19
+end
+arch bwall_0
+x 25
+y 19
+end
+arch dungeon_floor
+x 25
+y 20
+end
+arch bwall_0
+x 25
+y 20
+end
+arch dungeon_floor
+x 25
+y 21
+end
+arch bwall_0
+x 25
+y 21
+end
+arch dungeon_floor
+x 25
+y 22
+end
+arch bwall_0
+x 25
+y 22
+end
+arch dungeon_floor
+x 25
+y 23
+end
+arch bwall_0
+x 25
+y 23
+end
+arch dungeon_floor
+x 25
+y 24
+end
+arch bwall_0
+x 25
+y 24
+end
+arch dungeon_floor
+x 25
+y 25
+end
+arch bwall_0
+x 25
+y 25
+end
+arch dungeon_floor
+x 25
+y 26
+end
+arch bwall_0
+x 25
+y 26
+end
+arch dungeon_floor
+x 25
+y 27
+end
+arch bwall_0
+x 25
+y 27
+end
+arch dungeon_floor
+x 25
+y 28
+end
+arch bwall_0
+x 25
+y 28
+end
+arch dungeon_floor
+x 25
+y 29
+end
+arch bwall_0
+x 25
+y 29
+end
+arch dungeon_floor
+x 25
+y 30
+end
+arch bwall_0
+x 25
+y 30
+end
+arch dungeon_floor
+x 25
+y 31
+end
+arch bwall_0
+x 25
+y 31
+end
+arch dirtfloor
+x 26
+end
+arch bwall_0
+x 26
+end
+arch dirtfloor
+x 26
+y 1
+end
+arch bwall_0
+x 26
+y 1
+end
+arch dungeon_floor
+x 26
+y 2
+end
+arch oakdoor_1
 slaying dol-guldur.1
 hp 1
 sp 14
-x 25
+x 26
 y 2
 end
 arch dirtfloor
-x 25
+x 26
 y 3
 end
 arch bwall_0
-x 25
+x 26
 y 3
 end
 arch dirtfloor
-x 25
+x 26
 y 4
 end
 arch bwall_0
-x 25
+x 26
 y 4
 end
 arch dirtfloor
-x 25
+x 26
 y 5
 end
 arch bwall_0
-x 25
+x 26
 y 5
 end
 arch dungeon_floor
-x 25
+x 26
 y 6
 end
-arch oakdoor
+arch oakdoor_1
 slaying dol-guldur.1
 hp 1
 sp 18
-x 25
+x 26
 y 6
 end
 arch dirtfloor
-x 25
+x 26
 y 7
 end
 arch bwall_0
-x 25
+x 26
 y 7
 end
 arch dirtfloor
-x 25
+x 26
 y 8
 end
 arch bwall_0
-x 25
+x 26
 y 8
 end
 arch dungeon_floor
-x 25
+x 26
 y 9
 end
 arch bwall_0
-x 25
+x 26
 y 9
 end
 arch dungeon_floor
-x 25
+x 26
 y 10
 end
-arch oakdoor
+arch oakdoor_1
 slaying dol-guldur.1
 hp 1
 sp 22
-x 25
-y 10
-end
-arch dungeon_floor
-x 25
-y 11
-end
-arch bwall_0
-x 25
-y 11
-end
-arch dungeon_floor
-x 25
-y 12
-end
-arch bwall_0
-x 25
-y 12
-end
-arch dungeon_floor
-x 25
-y 13
-end
-arch bwall_0
-x 25
-y 13
-end
-arch dungeon_floor
-x 25
-y 14
-end
-arch bwall_0
-x 25
-y 14
-end
-arch dungeon_floor
-x 25
-y 15
-end
-arch bwall_0
-x 25
-y 15
-end
-arch dungeon_floor
-x 25
-y 16
-end
-arch bwall_0
-x 25
-y 16
-end
-arch dungeon_floor
-x 25
-y 17
-end
-arch bwall_0
-x 25
-y 17
-end
-arch dungeon_floor
-x 25
-y 18
-end
-arch bwall_0
-x 25
-y 18
-end
-arch dungeon_floor
-x 25
-y 19
-end
-arch bwall_0
-x 25
-y 19
-end
-arch dungeon_floor
-x 25
-y 20
-end
-arch bwall_0
-x 25
-y 20
-end
-arch dungeon_floor
-x 25
-y 21
-end
-arch bwall_0
-x 25
-y 21
-end
-arch dungeon_floor
-x 25
-y 22
-end
-arch bwall_0
-x 25
-y 22
-end
-arch dungeon_floor
-x 25
-y 23
-end
-arch bwall_0
-x 25
-y 23
-end
-arch dungeon_floor
-x 25
-y 24
-end
-arch bwall_0
-x 25
-y 24
-end
-arch dungeon_floor
-x 25
-y 25
-end
-arch bwall_0
-x 25
-y 25
-end
-arch dungeon_floor
-x 25
-y 26
-end
-arch bwall_0
-x 25
-y 26
-end
-arch dungeon_floor
-x 25
-y 27
-end
-arch bwall_0
-x 25
-y 27
-end
-arch dungeon_floor
-x 25
-y 28
-end
-arch bwall_0
-x 25
-y 28
-end
-arch dungeon_floor
-x 25
-y 29
-end
-arch bwall_0
-x 25
-y 29
-end
-arch dungeon_floor
-x 25
-y 30
-end
-arch bwall_0
-x 25
-y 30
-end
-arch dungeon_floor
-x 25
-y 31
-end
-arch bwall_0
-x 25
-y 31
-end
-arch dirtfloor
-x 26
-end
-arch bwall_0
-x 26
-end
-arch dirtfloor
-x 26
-y 1
-end
-arch bwall_0
-x 26
-y 1
-end
-arch dirtfloor
-x 26
-y 2
-end
-arch bwall_0
-x 26
-y 2
-end
-arch dirtfloor
-x 26
-y 3
-end
-arch bwall_0
-x 26
-y 3
-end
-arch dirtfloor
-x 26
-y 4
-end
-arch bwall_0
-x 26
-y 4
-end
-arch dirtfloor
-x 26
-y 5
-end
-arch bwall_0
-x 26
-y 5
-end
-arch dirtfloor
-x 26
-y 6
-end
-arch bwall_0
-x 26
-y 6
-end
-arch dirtfloor
-x 26
-y 7
-end
-arch bwall_0
-x 26
-y 7
-end
-arch dirtfloor
-x 26
-y 8
-end
-arch bwall_0
-x 26
-y 8
-end
-arch dungeon_floor
-x 26
-y 9
-end
-arch bwall_0
-x 26
-y 9
-end
-arch dungeon_floor
-x 26
-y 10
-end
-arch bwall_0
 x 26
 y 10
 end
@@ -5915,128 +6028,4 @@ end
 arch bwall_0
 x 26
 y 31
-end
-arch chinese_dragon
-x 1
-y 22
-end
-arch chinese_dragon
-x 1
-y 24
-end
-arch chinese_dragon
-x 1
-y 27
-end
-arch dread
-x 2
-y 17
-end
-arch chinese_dragon
-x 2
-y 19
-end
-arch dread
-x 4
-y 17
-end
-arch dread
-x 4
-y 17
-end
-arch chinese_dragon
-x 4
-y 19
-end
-arch chinese_dragon
-x 5
-y 24
-end
-arch chinese_dragon
-x 5
-y 27
-end
-arch giant
-x 10
-y 1
-end
-arch troll
-x 10
-y 3
-end
-arch dread
-x 10
-y 6
-end
-arch giant
-x 11
-y 1
-end
-arch giant
-x 12
-y 1
-end
-arch dragon
-x 12
-y 4
-end
-arch dread
-x 12
-y 6
-end
-arch troll
-x 13
-y 1
-end
-arch dragon
-x 14
-y 4
-end
-arch troll
-x 15
-y 1
-end
-arch dragon
-x 16
-y 4
-end
-arch giant
-x 17
-y 1
-end
-arch giant
-x 18
-y 1
-end
-arch dragon
-x 18
-y 4
-end
-arch giant
-x 19
-y 1
-end
-arch giant
-x 20
-y 1
-end
-arch giant
-x 21
-y 1
-end
-arch giant
-x 22
-y 1
-end
-arch dragon
-x 22
-y 4
-end
-arch giant
-x 23
-y 1
-end
-arch giant
-x 24
-y 1
 end

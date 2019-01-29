@@ -1,17 +1,16 @@
 arch map
+name Tower of Sorcery, Vault
+reset_timeout 7200
+difficulty 85
 region lakecountry
-name MwizardT
-msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Wed Apr 26 06:58:40 1995
-endmsg
 width 21
 height 21
-enter_x 1
-enter_y 1
-reset_timeout 7200
-difficulty 20
+enter_x 10
+enter_y 10
+msg
+Created:  1995-04-26
+Modified: 2012-03-17 Nicolas Weeger
+endmsg
 end
 arch flagstone
 end
@@ -122,16 +121,16 @@ y 17
 end
 arch cwall_2_1_1
 name fake wall
-no_pass 0
 y 17
+move_block 0
 end
 arch flagstone
 y 18
 end
 arch cwall_2_1_1
 name fake wall
-no_pass 0
 y 18
+move_block 0
 end
 arch flagstone
 y 19
@@ -301,9 +300,9 @@ y 19
 end
 arch wall_2_2_1
 name fake wall
-no_pass 0
 x 1
 y 19
+move_block 0
 end
 arch flagstone
 x 1
@@ -735,13 +734,14 @@ x 4
 y 10
 end
 arch horn2
-face horn3.111
 title of efreet
+face horn3.111
 hp 100
 maxhp 100
-sp 10
 x 4
 y 10
+arch spell_summon_fire_elemental
+end
 end
 arch flagstone
 x 4
@@ -908,9 +908,9 @@ x 5
 y 10
 end
 arch random_talisman
-randomitems talisman
 x 5
 y 10
+randomitems talisman
 end
 arch flagstone
 x 5
@@ -1067,27 +1067,27 @@ x 6
 y 9
 end
 arch random_talisman
-randomitems talisman
 x 6
 y 9
+randomitems talisman
 end
 arch flagstone
 x 6
 y 10
 end
 arch random_talisman
-randomitems talisman
 x 6
 y 10
+randomitems talisman
 end
 arch flagstone
 x 6
 y 11
 end
 arch random_talisman
-randomitems talisman
 x 6
 y 11
+randomitems talisman
 end
 arch flagstone
 x 6
@@ -1126,15 +1126,9 @@ x 6
 y 16
 end
 arch amulet
-face amulet_lif.111
-title of the Magi
-Wis 2
-Int 2
-sp 5
-resist_magic 30
-value 1250000
 x 6
 y 16
+artifact the Magi
 end
 arch flagstone
 x 6
@@ -1251,9 +1245,9 @@ x 7
 y 10
 end
 arch random_talisman
-randomitems talisman
 x 7
 y 10
+randomitems talisman
 end
 arch flagstone
 x 7
@@ -1688,15 +1682,12 @@ end
 arch dragon_shield
 name Dragon Shield
 msg
-This Dragon Shield has both red
-and green scales carefully
-smithed in. It will protect
-you well from fire and cold alike.
+This Dragon Shield has both red and green scales carefully smithed in.  It will protect you well from fire and cold alike.
 endmsg
-resist_cold 30
-magic 4
 x 10
 y 2
+resist_cold 30
+magic 4
 end
 arch flagstone
 x 10
@@ -1716,7 +1707,7 @@ y 4
 end
 arch magic_mouth
 msg
-The floor here is missing something made of gold
+The floor here is missing something made of gold.
 endmsg
 x 10
 y 5
@@ -1726,20 +1717,20 @@ x 10
 y 5
 end
 arch pit_closed
-invisible 1
-connected 10
 hp 20
 sp 0
 x 10
 y 5
+invisible 1
+connected 10
 end
 arch altar
-invisible 1
 slaying goldenkey
 food 1
-connected 10
 x 10
 y 5
+invisible 1
+connected 10
 end
 arch flagstone
 x 10
@@ -1754,10 +1745,10 @@ x 10
 y 7
 end
 arch uw_sword
-weight 15000
-magic 7
 x 10
 y 7
+weight 15000
+magic 7
 end
 arch flagstone
 x 10
@@ -1779,7 +1770,7 @@ arch flagstone
 x 10
 y 10
 end
-arch rod_heavy
+arch random_talisman
 x 10
 y 10
 end
@@ -1805,20 +1796,16 @@ y 13
 end
 arch uw_shield
 msg
-This shield is renowned throughout
-time, a fairy tale item for the
-wizard and warrior alike.
-The last time this was seen was
-on the mighty demon Belzebub.
+This shield is renowned throughout time, a fairy tale item for the wizard and warrior alike.  The last time this was seen was on the mighty demon Belzebub.
 endmsg
+x 10
+y 13
 resist_fire 20
 resist_acid 40
 value 40000
 weight 14
 magic 4
 reflect_missile 1
-x 10
-y 13
 end
 arch flagstone
 x 10
@@ -2746,9 +2733,9 @@ y 4
 end
 arch power_crystal
 sp 1000
-value 100000
 x 16
 y 4
+value 100000
 end
 arch flagstone
 x 16
@@ -2798,9 +2785,10 @@ arch horn
 title of fear
 hp 100
 maxhp 100
-sp 20
 x 16
 y 10
+arch spell_fear
+end
 end
 arch flagstone
 x 16
@@ -3159,7 +3147,7 @@ arch flagstone
 x 18
 y 13
 end
-arch rod_heavy
+arch random_talisman
 x 18
 y 13
 end
@@ -3389,8 +3377,8 @@ arch flagstone
 x 20
 end
 arch cwall_2_2_3
-no_pass 0
 x 20
+move_block 0
 end
 arch perm_magic_portal
 slaying Mwizard0

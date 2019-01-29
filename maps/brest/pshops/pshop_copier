@@ -4,7 +4,7 @@
 # Simple script to replicate changes made to pshop1
 # to the rest of the pshops and keep the correct
 # keys and exits working.
-# 
+#
 # Obviously this is based on some conventions I have
 # don't use pshop1 anywhere else in the file etc...
 #
@@ -16,70 +16,80 @@ mv pshop1 PSHOP
 rm -f pshop*/*
 
 #copy PSHOP to all the pshop directories
-for FILE in pshop*;do
-  if [ -d "$FILE" ]
-  then
-    #copy the files into the pshops directories
-    cp PSHOP/* "$FILE"/
-    
-    #go there
-    cd $FILE
-    
-    #for each file in the pshop directory
-    for MYFILE in *;do
-      #correct the key values on inventory checkers
-      sed s/pshop1/$FILE/ $MYFILE > "$MYFILE"_2
-      rm -f $MYFILE
-      mv "$MYFILE"_2 $MYFILE      
-    done
+for FILE in pshop*; do
+    if [[ -d "$FILE" ]]; then
+        #copy the files into the pshops directories
+        cp PSHOP/* "${FILE}/"
 
-    #get the pshopnum
-    PSHOPNUM=`echo "$FILE" | cut -d p -f3`
-    
-    #calculate HP and SP based on pshopnum
-    if [ $PSHOPNUM -lt 14 ]
-    then
-      #top row of shops
-      SP="2"
-      TEMPHP=`expr $PSHOPNUM \* 3`
-      HP=`expr $TEMPHP + 1`
-    else
-      #bottom row of shops
-      SP="6"
-      MODPSHOPNUM=`expr $PSHOPNUM - 14`
-      TEMPHP=`expr $MODPSHOPNUM \* 3`
-      HP=`expr $TEMPHP + 1`
+        #go there
+        cd $FILE
+
+        #get the pshopnum
+        PSHOPNUM=$(cut -d p -f3 <<< "$FILE")
+
+        #for each file in the pshop directory
+        for MYFILE in *; do
+            #correct the key values on inventory checkers
+            sed "s/pshop1/${FILE}/;s/^name Private Shop 1,/name Private Shop ${PSHOPNUM},/" "$MYFILE" > "${MYFILE}_2"
+            rm -f $MYFILE
+            mv "${MYFILE}_2" $MYFILE
+        done
+
+        #calculate HP and SP based on pshopnum
+        if [[ $PSHOPNUM -lt 14 ]]; then
+            #top row of shops
+            SP="2"
+            HP=$(( PSHOPNUM * 3 + 1 ))
+        else
+            #bottom row of shops
+            SP="6"
+            MODPSHOPNUM=$(( PSHOPNUM - 14 ))
+            HP=$(( MODPSHOPNUM * 3 + 1 ))
+        fi
+
+        # Keep track of state when parsing.
+        # 0 Before/after exit, looking for slaying
+        # 1 During exit, looking for hp and sp
+        state=0
+        hadhp=0
+        hadsp=0
+        #fix the exit on gfloor
+        while read LINE; do
+            case $state in
+                0)
+                    if [[ "$LINE" == "slaying ../pshops_main" ]]; then
+                    state=1
+                    fi
+                    echo "$LINE" >> gfloor2
+                ;;
+                1)
+                    case $LINE in
+                        "hp "*)
+                            echo "hp $HP" >> gfloor2
+                            hadhp=1
+                        ;;
+                        "sp "*)
+                            echo "sp $SP" >> gfloor2
+                            hadsp=1
+                        ;;
+                        *)
+                            echo "$LINE" >> gfloor2
+                        ;;
+                    esac
+                    if [[ ( $hadhp == 1 ) && ( $hadsp == 1 ) ]]; then
+                        state=0
+                    fi
+                ;;
+            esac
+        done < gfloor
+
+        #replace gfloor with gfloor2
+        rm -f gfloor
+        mv gfloor2 gfloor
+
+        #go back up
+        cd ..
     fi
-    
-    #fix the exit on gfloor
-    while read LINE
-    do
-      if [ "$LINE" == "slaying ../pshops_main" ]
-      then
-        #remove the 2 lines
-        read dummy_hp_line
-	read dummp_sp_line
-	
-	#add the original back
-	echo "$LINE" >> gfloor2
-	
-	#write the new lines
-	echo "hp $HP" >> gfloor2
-	echo "sp $SP" >> gfloor2
-	
-      else 	
-        #just add it back to the file
-	echo "$LINE" >> gfloor2
-      fi
-    done < gfloor
-    
-    #replace gfloor with gfloor2
-    rm -f gfloor
-    mv gfloor2 gfloor
-    
-    #go back up
-    cd ..
-  fi
 done
 
 #put pshop1 back

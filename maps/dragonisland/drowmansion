@@ -1,13 +1,14 @@
 arch map
+name Dark Elf House
+difficulty 12
 region stoneville
-name drowmansion
+width 16
+height 16
+enter_y 8
 msg
-Creator: Viola Krings
-Email: gnu@foo.bar
-Date: Wed Jun 18 15:32:20 METDST 1997
+Created:  1997-06-18 Viola Krings
+Modified: 2012-01-31 Rick Tanner
 endmsg
-hp 0
-sp 8
 end
 arch dirtfloor
 end
@@ -58,7 +59,7 @@ end
 arch dirtfloor
 y 8
 end
-arch oakdoor
+arch oakdoor_1
 slaying /world/world_103_127
 hp 7
 sp 13
@@ -196,6 +197,9 @@ end
 arch wand
 x 1
 y 11
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch devil
 x 1
@@ -292,9 +296,9 @@ x 2
 y 8
 end
 arch sign
-name All trust is foolish
+name All trust is foolish...
 msg
-All trust is foolish
+All trust is foolish...
 endmsg
 x 2
 y 8
@@ -643,6 +647,9 @@ end
 arch wand
 x 5
 y 11
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch devil
 x 5

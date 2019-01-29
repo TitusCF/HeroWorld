@@ -1,13 +1,15 @@
 arch map
-region lakecountry
-name p_ghouse_s
-msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Thu Apr 13 22:04:25 1995
-endmsg
+name Fortress of Lord Butakis Prison, South Gatehouse
+difficulty 25
+region butakisfortress
 width 16
 height 16
+enter_x 7
+enter_y 14
+msg
+Created:  1995-04-13
+Modified: 2012-02-06 Rick Tanner
+endmsg
 end
 arch dun10
 end
@@ -410,9 +412,9 @@ msg
 @match open|close|Open|Close
 Click.
 endmsg
-connected 1
 x 4
 y 7
+connected 1
 end
 arch cobblestones
 x 4
@@ -466,20 +468,14 @@ arch guard
 msg
 @match visit|meet|see|talk
 Who are you visiting?
-Let me guess. Wist? or Twis? Duan?
-Fiery? Joey?
+Let me guess.  Wist? or Twis? Duan? Fiery? Joey?
 @match Wist|Twis|Duan|Fiery|Joey
-Okay. But be careful.
-OPEN THE GATE!!! ...
+Okay. But be careful.  OPEN THE GATE!!! ...
 @match monster|treasure
-There is no monsters or treasure here.
-This is prison. Only the most dangerous
-criminals of the lands are imprisoned
-here.
+There is no monsters or treasure here.  This is prison. Only the most dangerous criminals of the lands are imprisoned here.
 @match *
 Stranger! What are you doing here?
-No loitering here! Go to the bar and
-get a drink if you have nothing to do.
+No loitering here! Go to the bar and get a drink if you have nothing to do.
 endmsg
 x 4
 y 14
@@ -612,9 +608,9 @@ arch cobblestones
 x 6
 end
 arch button_small
-connected 1
 x 6
 y 1
+connected 1
 end
 arch cobblestones
 x 6
@@ -657,40 +653,40 @@ x 6
 y 10
 end
 arch spikes_closed
-speed 0.500000
-connected 1
 x 6
 y 10
+speed 0.500000
+connected 1
 end
 arch cobblestones
 x 6
 y 11
 end
 arch spikes_closed
-speed 0.500000
-connected 1
 x 6
 y 11
+speed 0.500000
+connected 1
 end
 arch cobblestones
 x 6
 y 12
 end
 arch spikes_closed
-speed 0.500000
-connected 1
 x 6
 y 12
+speed 0.500000
+connected 1
 end
 arch cobblestones
 x 6
 y 13
 end
 arch spikes_closed
-speed 0.500000
-connected 1
 x 6
 y 13
+speed 0.500000
+connected 1
 end
 arch cobblestones
 x 6
@@ -717,9 +713,9 @@ arch cobblestones
 x 7
 end
 arch button_small
-connected 1
 x 7
 y 1
+connected 1
 end
 arch cobblestones
 x 7
@@ -758,9 +754,9 @@ msg
 @match open|close|Open|Close
 Click.
 endmsg
-connected 1
 x 7
 y 9
+connected 1
 end
 arch cobblestones
 x 7
@@ -771,49 +767,49 @@ x 7
 y 10
 end
 arch spikes_closed
-speed 0.500000
-connected 1
 x 7
 y 10
+speed 0.500000
+connected 1
 end
 arch cobblestones
 x 7
 y 11
 end
 arch spikes_closed
-speed 0.500000
-connected 1
 x 7
 y 11
+speed 0.500000
+connected 1
 end
 arch cobblestones
 x 7
 y 12
 end
 arch spikes_closed
-speed 0.500000
-connected 1
 x 7
 y 12
+speed 0.500000
+connected 1
 end
 arch cobblestones
 x 7
 y 13
 end
 arch spikes_closed
-speed 0.500000
-connected 1
 x 7
 y 13
+speed 0.500000
+connected 1
 end
 arch magic_ear
 msg
 @match Joey|Fiery|Wist|Twis|Duan
 Click.
 endmsg
-connected 1
 x 7
 y 14
+connected 1
 end
 arch cobblestones
 x 7
@@ -840,9 +836,9 @@ arch cobblestones
 x 8
 end
 arch button_small
-connected 1
 x 8
 y 1
+connected 1
 end
 arch cobblestones
 x 8
@@ -885,40 +881,40 @@ x 8
 y 10
 end
 arch spikes_closed
-speed 0.500000
-connected 1
 x 8
 y 10
+speed 0.500000
+connected 1
 end
 arch cobblestones
 x 8
 y 11
 end
 arch spikes_closed
-speed 0.500000
-connected 1
 x 8
 y 11
+speed 0.500000
+connected 1
 end
 arch cobblestones
 x 8
 y 12
 end
 arch spikes_closed
-speed 0.500000
-connected 1
 x 8
 y 12
+speed 0.500000
+connected 1
 end
 arch cobblestones
 x 8
 y 13
 end
 arch spikes_closed
-speed 0.500000
-connected 1
 x 8
 y 13
+speed 0.500000
+connected 1
 end
 arch cobblestones
 x 8
@@ -1101,9 +1097,9 @@ msg
 @match open|close|Open|Close
 Click.
 endmsg
-connected 1
 x 10
 y 7
+connected 1
 end
 arch cobblestones
 x 10
@@ -1157,20 +1153,14 @@ arch guard
 msg
 @match visit|meet|see|talk
 Who are you visiting?
-Let me guess. Wist? or Twis? Duan?
-Fiery? Joey?
+Let me guess.  Wist? or Twis? Duan? Fiery? Joey?
 @match Wist|Twis|Duan|Fiery|Joey
-Okay. But be careful.
-OPEN THE GATE!!! ...
+Okay. But be careful.  OPEN THE GATE!!! ...
 @match monster|treasure
-There is no monsters or treasure here.
-This is prison. Only the most dangerous
-criminals of the lands are imprisoned
-here.
+There is no monsters or treasure here.  This is prison. Only the most dangerous criminals of the lands are imprisoned here.
 @match *
 Stranger! What are you doing here?
-No loitering here! Go to the bar and
-get a drink if you have nothing to do.
+No loitering here! Go to the bar and get a drink if you have nothing to do.
 endmsg
 x 10
 y 14

@@ -1,14 +1,14 @@
 arch map
+name Galmorus' Hut
+difficulty 15
 region lakecountry
-name hut_Galmorus
-msg
-Creator: Kundi, Xue
-Email: xkd@soda.csua.berkeley.edu
-Date: Fri Mar 24 11:46:19 1995
-endmsg
 width 21
 height 24
 enter_x 9
+msg
+Created:  1995-03-24 Kundi, Xue (xkd@soda.csua.berkeley.edu)
+Modified: 2012-03-12 Rick Tanner
+endmsg
 end
 arch grass
 end
@@ -243,18 +243,18 @@ x 2
 y 1
 end
 arch locked_door2
+slaying Thievery
 msg
 Show me your proof of guild membership.
 endmsg
-slaying Thievery
 x 2
 y 1
 end
 arch wwall_2_1_1
 name strange wall
-no_pass 0
 x 2
 y 1
+move_block 0
 end
 arch woodfloor
 x 2
@@ -300,7 +300,7 @@ arch woodfloor
 x 2
 y 7
 end
-arch wwall_2_1_1
+arch wwall_win1
 x 2
 y 7
 end
@@ -423,9 +423,9 @@ x 3
 y 2
 end
 arch booze
-nrof 6
 x 3
 y 2
+nrof 6
 end
 arch woodfloor
 x 3
@@ -444,9 +444,9 @@ x 3
 y 5
 end
 arch door_look_1
-no_pass 0
 x 3
 y 5
+move_block 0
 end
 arch woodfloor
 x 3
@@ -547,9 +547,9 @@ x 4
 y 2
 end
 arch food
-nrof 6
 x 4
 y 2
+nrof 6
 end
 arch woodfloor
 x 4
@@ -610,22 +610,19 @@ end
 arch priest
 name Artheus
 msg
-@match key|Key
-This is the key to the private study.
-If Galmorus send you for it, you may
-get it.
+@match key
+This is the key to the private study.  If Galmorus send you for it, you may get it.
 @match *
 Hello!
-I don't know much. Talk to Galmorus if
-you have any questions. If you don't
-mind I'd be alone.
+I don't know much.  Talk to Galmorus if you have any questions.  If you don't mind I'd be alone.
 endmsg
-type 0
 hp 200
-monster 1
-unaggressive 1
 x 4
 y 14
+type 0
+move_type walk
+monster 1
+unaggressive 1
 end
 arch woodfloor
 x 4
@@ -766,6 +763,13 @@ arch jungle_2
 x 5
 y 18
 end
+arch unicorn
+hp 500
+x 5
+y 18
+speed 0.500000
+speed_left -23.389999
+end
 arch jungle_2
 x 5
 y 19
@@ -806,12 +810,8 @@ y 2
 end
 arch scroll
 msg
-If you see this note, I am either out
-or don't want to meet guests at the
-moment. So please come visit me again
-some other time. Take some refreshment
-and food before you leave.
--Galmorus
+If you see this note, I am either out or don't want to meet guests at the moment.  So please come visit me again some other time.  Take some refreshment and food before you leave.
+ -Galmorus
 endmsg
 x 6
 y 2
@@ -872,7 +872,7 @@ arch woodfloor
 x 6
 y 10
 end
-arch wwall_3_2
+arch wwall_2_1_1
 x 6
 y 10
 end
@@ -1082,7 +1082,7 @@ end
 arch woodfloor
 x 8
 end
-arch wwall_2_1_2
+arch wwall_1_3
 x 8
 end
 arch woodfloor
@@ -1090,20 +1090,20 @@ x 8
 y 1
 end
 arch block_door_closed
-speed 0.500000
-connected 12
 x 8
 y 1
+speed 0.500000
+connected 12
 end
 arch woodfloor
 x 8
 y 2
 end
 arch block_door_closed
-speed 0.500000
-connected 12
 x 8
 y 2
+speed 0.500000
+connected 12
 end
 arch woodfloor
 x 8
@@ -1118,9 +1118,9 @@ x 8
 y 4
 end
 arch door_look_2
-no_pass 0
 x 8
 y 4
+move_block 0
 end
 arch woodfloor
 x 8
@@ -1158,7 +1158,7 @@ arch woodfloor
 x 8
 y 10
 end
-arch wwall_3_3
+arch wwall_2_2_2
 x 8
 y 10
 end
@@ -1197,19 +1197,13 @@ end
 arch book_read
 name Galmorus' Diary
 msg
-One of the recent notes and the few
-that are not encrypted:
-... I suspect someone in this house is
-associated with Guild of Ebony Tiger.
-Maybe thing has gone far worst than I
-think.
+One of the recent notes and the few that are not encrypted:
+... I suspect someone in this house is associated with Guild of Ebony Tiger.
+Maybe thing has gone far worst than I think.
 ...
 Another note:
 ...
-Today I discovered the secret passage
-in my own house! Someone made it
-behide my back.
-I will investigate into it later.
+Today I discovered the secret passage in my own house! Someone made it behind my back.  I will investigate into it later.
 ...
 endmsg
 x 8
@@ -1258,7 +1252,7 @@ end
 arch woodfloor
 x 9
 end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_109_126
 hp 26
 sp 42
@@ -1277,10 +1271,10 @@ x 9
 y 3
 end
 arch block_door_closed
-speed 0.500000
-connected 13
 x 9
 y 3
+speed 0.500000
+connected 13
 end
 arch woodfloor
 x 9
@@ -1389,7 +1383,7 @@ end
 arch woodfloor
 x 10
 end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_109_126
 hp 26
 sp 42
@@ -1402,11 +1396,11 @@ end
 arch button_small
 name Door bell
 msg
-Ding! Dong
+Ding! Dong!!
 endmsg
-connected 11
 x 10
 y 1
+connected 11
 end
 arch woodfloor
 x 10
@@ -1417,10 +1411,10 @@ x 10
 y 3
 end
 arch block_door_closed
-speed 0.500000
-connected 13
 x 10
 y 3
+speed 0.500000
+connected 13
 end
 arch woodfloor
 x 10
@@ -1429,7 +1423,7 @@ end
 arch sign_e
 msg
 Welcome!
-Go to the east wing to meet me
+Go to the east wing to meet me.
 endmsg
 x 10
 y 4
@@ -1447,18 +1441,18 @@ x 10
 y 6
 end
 arch door_look_2
-no_pass 0
 x 10
 y 6
+move_block 0
 end
 arch woodfloor
 x 10
 y 7
 end
 arch door_look_2
-no_pass 0
 x 10
 y 7
+move_block 0
 end
 arch woodfloor
 x 10
@@ -1555,7 +1549,7 @@ end
 arch woodfloor
 x 11
 end
-arch wwall_3_3
+arch wwall_2_2_2
 x 11
 end
 arch woodfloor
@@ -1587,9 +1581,9 @@ x 11
 y 4
 end
 arch door_look_2
-no_pass 0
 x 11
 y 4
+move_block 0
 end
 arch woodfloor
 x 11
@@ -1775,9 +1769,7 @@ y 14
 end
 arch magic_mouth
 msg
-The wall dissolves under your touch.
-You step through the wall and enter the
-wooded backyard.
+The wall dissolves under your touch.  You step through the wall and enter the wooded backyard.
 endmsg
 x 12
 y 15
@@ -1788,9 +1780,9 @@ y 15
 end
 arch wwall_2_1_2
 name illusionary wall
-no_pass 0
 x 12
 y 15
+move_block 0
 end
 arch woods
 x 12
@@ -1859,9 +1851,9 @@ x 13
 y 6
 end
 arch door_look_2
-no_pass 0
 x 13
 y 6
+move_block 0
 end
 arch woodfloor
 x 13
@@ -1916,9 +1908,9 @@ x 13
 y 13
 end
 arch door_look_2
-no_pass 0
 x 13
 y 13
+move_block 0
 end
 arch woodfloor
 x 13
@@ -2049,8 +2041,7 @@ end
 arch scroll
 name faint scroll
 msg
-The password the fortress gateguard
-need is:
+The password the fortress gateguard need is:
 "Windwalk"
 endmsg
 x 14
@@ -2077,9 +2068,7 @@ name Yellow book
 msg
 [You find the following interesting]
 ...
-There are two ways to access the Sunset
-Castle. One is by underwater current.
-The other is by way of the druids.
+There are two ways to access the Sunset Castle.  One is by underwater current.  The other is by way of the druids.
 ...
 endmsg
 x 14
@@ -2147,7 +2136,7 @@ arch woodfloor
 x 15
 y 4
 end
-arch wwall_2_2_2
+arch wwall_1_1
 x 15
 y 4
 end
@@ -2203,20 +2192,7 @@ arch book_read
 name book of the floating castle
 msg
 ...
-The flying castle was ancient and only
-registered in forgotten legends.
-According to the legend, it is a
-citadal hidden in the cloud.
-The only way to it was rumored to be
-carried by a mysterious tornado that
-constantly appeared in the north
-mountains. But the trip is very
-dangerous. One ghost of an courageous
-warrior returned to warn me, when I was
-seeking the flying castle myself.
-"Keep to the right path to the
-forbidden peak, or you would end up in
-the catacomb.
+The flying castle was ancient and only registered in forgotten legends.  According to the legend, it is a citadal hidden in the cloud.  The only way to it was rumored to be carried by a mysterious tornado that constantly appeared in the north mountains.  But the trip is very dangerous.  One ghost of an courageous warrior returned to warn me, when I was seeking the flying castle myself. "Keep to the right path to the forbidden peak, or you would end up in the catacomb."
 endmsg
 x 15
 y 14
@@ -2284,9 +2260,9 @@ x 16
 y 4
 end
 arch door_look_1
-no_pass 0
 x 16
 y 4
+move_block 0
 end
 arch woodfloor
 x 16
@@ -2315,67 +2291,35 @@ end
 arch mage
 name Galmorus
 msg
-@match password|Password
-There are a lot of passwords
-corresponding to different mechanisms
-in different parts of the land. Which
-password are you referring to?
+@match password
+There are a lot of passwords corresponding to different mechanisms in different parts of the land.  Which password are you referring to?
 @match marsh|swamp
-Ah, the swamp!
-There is a password to activate the
-portal to go directly to the tower from
-the edge of the swamp.
-The portal should be situated
-somewhere near the west side of the
-swamp. The activation word should be
-the name of one of the famous people.
+Ah, the swamp!  There is a password to activate the portal to go directly to the tower from the edge of the swamp.  The portal should be situated somewhere near the west side of the swamp.  The activation word should be the name of one of the famous people.
 @match famous
-There were quite a few famous people
-in the past. Ragnarok, Zykie, Kashu
-are the few, now that I recall.
-@match fortress|Fortress
+There were quite a few famous people in the past.  Ragnarok, Zykie, Kashu are the few, now that I recall.
+@match fortress
 Which fortress are you talking about?
 @match Butakis
-Butakis has a royal library in his
-inner city. There are a lot of useful
-information you can find from the books
-there.
-There password to enter the fortress
-of Butakis is 'windwalk'.
-@match the Sunset|sunset
+Butakis has a royal library in his inner city.  There are a lot of useful information you can find from the books there.  There password to enter the fortress of Butakis is 'windwalk'.
+@match the sunset
 The Sunset Fortress?
-There is a password you need to tell
-the giant oak tree in the middle of the
-forest for the oak tree to transport
-you to the island on Sunset lake, where
-the fortress is. The word is the name
-of the great druid of the land. His
-name is Twak.
+There is a password you need to tell the giant oak tree in the middle of the forest for the oak tree to transport you to the island on Sunset lake, where the fortress is.  The word is the name of the great druid of the land.  His name is Twak.
 @match Mopoon
 Mopoon's Weaponary?
-Well there are two portals in his
-cave, that the old wizard Wist used to
-use as his laboratory. The password is
-Kashu, the legendary warrior king.
-However the portals are not common and
-may be disguised as something unlikely.
-One of the portal is supposed to
-transport you to the old wizard's
-tower.
-@match Hello|hello
-Hello fellow. My time is precious.
-What do you want to ask me?
+Well there are two portals in his cave, that the old wizard Wist used to use as his laboratory.  The password is Kashu, the legendary warrior king.  However the portals are not common and may be disguised as something unlikely.  One of the portal is supposed to transport you to the old wizard's tower.
+@match hello|hi
+Hello fellow.  My time is precious.  What do you want to ask me?
 @match *
-I am very busy. There are a few books
-in the room. You may read them quietly
+I am very busy.  There are a few books in the room.  You may read them quietly.
 endmsg
-type 0
 hp 200
-carrying 2120
-monster 1
-unaggressive 1
 x 16
 y 9
+type 0
+carrying 2120
+move_type walk
+monster 1
+unaggressive 1
 arch eyeglasses
 end
 arch magnifier
@@ -2433,17 +2377,14 @@ arch book_read
 name ragged book
 msg
 ...
-There was a catacomb dwelled by ancient
-undeads. It was rumored that one can
-reach it climbing the mountains of
-north in this land. But all that is
-waiting is death. Many in search of it
-as a final challenge but fail to
-return.
+There was a catacomb dwelled by ancient undeads.  It was rumored that one can reach it climbing the mountains of north in this land.  But all that is waiting is death.  Many in search of it as a final challenge but fail to return.
 ...
 endmsg
 x 16
 y 14
+arch quest_advance_apply
+name lake_country/undead_catacomb 0>10
+end
 end
 arch woodfloor
 x 16
@@ -2519,7 +2460,7 @@ arch woodfloor
 x 17
 y 4
 end
-arch wwall_3_4
+arch wwall_2_1_1
 x 17
 y 4
 end
@@ -2543,7 +2484,7 @@ arch woodfloor
 x 17
 y 7
 end
-arch wwall_2_1_1
+arch wwall_win1
 x 17
 y 7
 end
@@ -2644,33 +2585,33 @@ x 17
 y 23
 end
 arch woods
-no_pass 1
-no_magic 1
 x 18
+move_block all
+no_magic 1
 end
 arch woods
-no_pass 1
-no_magic 1
 x 18
 y 1
+move_block all
+no_magic 1
 end
 arch woods
-no_pass 1
-no_magic 1
 x 18
 y 2
+move_block all
+no_magic 1
 end
 arch woods
-no_pass 1
-no_magic 1
 x 18
 y 3
+move_block all
+no_magic 1
 end
 arch woods
-no_pass 1
-no_magic 1
 x 18
 y 4
+move_block all
+no_magic 1
 end
 arch woods
 x 18
@@ -2756,25 +2697,25 @@ arch blocked
 x 19
 end
 arch button_plate
-connected 12
 x 19
 y 1
+connected 12
 end
 arch spikes_open
+x 19
+y 2
 speed 0.500000
 value 1
 connected 11
-x 19
-y 2
 end
 arch boulder
 x 19
 y 2
 end
 arch button_plate
-connected 13
 x 19
 y 3
+connected 13
 end
 arch blocked
 x 19
@@ -2928,9 +2869,9 @@ x 20
 y 1
 end
 arch button_plate
-connected 12
 x 20
 y 2
+connected 12
 end
 arch blocked
 x 20
@@ -3015,11 +2956,4 @@ end
 arch blocked
 x 20
 y 23
-end
-arch unicorn
-hp 500
-speed 0.500000
-speed_left -23.389999
-x 5
-y 18
 end

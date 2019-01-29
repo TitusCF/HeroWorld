@@ -1,13 +1,15 @@
 arch map
+name Stoneville Dragon Hangar, Rookery
+difficulty 35
 region stoneville
-name hangar3
+width 32
+height 32
+enter_x 14
+enter_y 15
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sat Mar 17 17:21:11 2001
+Created:  2001-03-17
+Modified: 2012-01-31 Rick Tanner
 endmsg
-x 32
-y 32
 end
 arch dirtfloor
 end
@@ -365,6 +367,10 @@ arch dirtfloor
 x 2
 y 2
 end
+arch big_elec
+x 2
+y 2
+end
 arch dirtfloor
 x 2
 y 3
@@ -425,6 +431,10 @@ arch dirtfloor
 x 2
 y 16
 end
+arch chinese_dragon
+x 2
+y 16
+end
 arch dirtfloor
 x 2
 y 17
@@ -438,6 +448,10 @@ x 2
 y 18
 end
 arch dirtfloor
+x 2
+y 19
+end
+arch big_dragon
 x 2
 y 19
 end
@@ -533,6 +547,10 @@ arch dirtfloor
 x 3
 y 6
 end
+arch big_elec
+x 3
+y 6
+end
 arch dirtfloor
 x 3
 y 7
@@ -554,6 +572,10 @@ x 3
 y 10
 end
 arch dirtfloor
+x 3
+y 11
+end
+arch chinese_dragon
 x 3
 y 11
 end
@@ -614,6 +636,10 @@ x 3
 y 24
 end
 arch dirtfloor
+x 3
+y 25
+end
+arch big_dragon
 x 3
 y 25
 end
@@ -718,6 +744,10 @@ x 4
 y 13
 end
 arch dirtfloor
+x 4
+y 14
+end
+arch chinese_dragon
 x 4
 y 14
 end
@@ -915,6 +945,10 @@ x 5
 y 21
 end
 arch dirtfloor
+x 5
+y 22
+end
+arch big_dragon
 x 5
 y 22
 end
@@ -952,7 +986,7 @@ y 29
 end
 arch sign
 msg
-Out of order 
+Out of order
 endmsg
 x 5
 y 29
@@ -1129,6 +1163,10 @@ arch dirtfloor
 x 7
 y 2
 end
+arch big_elec
+x 7
+y 2
+end
 arch dirtfloor
 x 7
 y 3
@@ -1142,6 +1180,10 @@ x 7
 y 5
 end
 arch dirtfloor
+x 7
+y 6
+end
+arch big_elec
 x 7
 y 6
 end
@@ -1182,6 +1224,10 @@ x 7
 y 14
 end
 arch dirtfloor
+x 7
+y 15
+end
+arch chinese_dragon
 x 7
 y 15
 end
@@ -1315,6 +1361,10 @@ arch dirtfloor
 x 8
 y 11
 end
+arch chinese_dragon
+x 8
+y 11
+end
 arch dirtfloor
 x 8
 y 12
@@ -1368,6 +1418,10 @@ x 8
 y 23
 end
 arch dirtfloor
+x 8
+y 24
+end
+arch big_dragon
 x 8
 y 24
 end
@@ -1501,6 +1555,10 @@ arch dirtfloor
 x 9
 y 20
 end
+arch big_dragon
+x 9
+y 20
+end
 arch dirtfloor
 x 9
 y 21
@@ -1583,6 +1641,10 @@ arch dirtfloor
 x 10
 y 6
 end
+arch big_elec
+x 10
+y 6
+end
 arch dirtfloor
 x 10
 y 7
@@ -1624,6 +1686,10 @@ x 10
 y 15
 end
 arch dirtfloor
+x 10
+y 16
+end
+arch chinese_dragon
 x 10
 y 16
 end
@@ -1713,6 +1779,10 @@ arch dirtfloor
 x 11
 y 2
 end
+arch big_elec
+x 11
+y 2
+end
 arch dirtfloor
 x 11
 y 3
@@ -1899,6 +1969,10 @@ arch dirtfloor
 x 12
 y 11
 end
+arch chinese_dragon
+x 12
+y 11
+end
 arch dirtfloor
 x 12
 y 12
@@ -1943,6 +2017,10 @@ arch dirtfloor
 x 12
 y 21
 end
+arch big_dragon
+x 12
+y 21
+end
 arch dirtfloor
 x 12
 y 22
@@ -1956,6 +2034,10 @@ x 12
 y 24
 end
 arch dirtfloor
+x 12
+y 25
+end
+arch big_dragon
 x 12
 y 25
 end
@@ -2002,6 +2084,10 @@ x 13
 y 1
 end
 arch dirtfloor
+x 13
+y 2
+end
+arch big_elec
 x 13
 y 2
 end
@@ -2062,6 +2148,10 @@ x 13
 y 15
 end
 arch dirtfloor
+x 13
+y 16
+end
+arch chinese_dragon
 x 13
 y 16
 end
@@ -2833,7 +2923,7 @@ end
 arch sign_w
 name To the teleporter
 msg
-To the teleporte
+To the teleporter
 endmsg
 x 17
 y 30
@@ -2943,7 +3033,7 @@ end
 arch sign_e
 name Room 2
 msg
-Room 2 
+Room 2
 endmsg
 x 18
 y 18
@@ -3420,8 +3510,7 @@ end
 arch scroll
 name note
 msg
-The teleporter is not working. An
-engineer has been called to fix it.
+The teleporter is not working.  An engineer has been called to fix it.
 endmsg
 x 20
 y 27
@@ -3920,7 +4009,7 @@ y 24
 end
 arch magic_mouth
 msg
-Stop. Where are you going?
+Stop.  Where are you going?
 endmsg
 x 23
 y 25
@@ -3951,9 +4040,9 @@ arch dwarf
 name Dragon Dompteur
 msg
 @match fix teleporter|fix the teleporter
-Ah. You're the engineer. Wait, I'll open the door for you. 
+Ah.  You're the engineer.  Wait, I'll open the door for you.
 @match *
-Go back to where you came from.  
+Go back to where you came from.
 endmsg
 sp 0
 maxsp 0
@@ -3984,7 +4073,6 @@ resist_holyword 100
 resist_blind 100
 pick_up 0
 will_apply 0
-can_apply 0
 friendly 1
 unaggressive 0
 can_cast_spell 0
@@ -4393,6 +4481,10 @@ arch dirtfloor
 x 26
 y 5
 end
+arch big_dragon
+x 26
+y 5
+end
 arch dirtfloor
 x 26
 y 6
@@ -4655,6 +4747,10 @@ arch dirtfloor
 x 27
 y 21
 end
+arch chinese_dragon
+x 27
+y 21
+end
 arch dirtfloor
 x 27
 y 22
@@ -4683,8 +4779,7 @@ arch dwarf
 name Dragon Dompteur
 msg
 @match *
-This is the breeding area. Only
-Dompteurs are allowed beyond this door. 
+This is the breeding area.  Only Dompteurs are allowed beyond this door.
 endmsg
 sp 0
 maxsp 0
@@ -4715,7 +4810,6 @@ resist_holyword 100
 resist_blind 100
 pick_up 0
 will_apply 0
-can_apply 0
 friendly 1
 unaggressive 0
 can_cast_spell 0
@@ -4981,6 +5075,10 @@ x 29
 y 11
 end
 arch dirtfloor
+x 29
+y 12
+end
+arch big_elec
 x 29
 y 12
 end
@@ -5500,104 +5598,4 @@ end
 arch awall_2_2_4
 x 31
 y 31
-end
-arch big_elec
-x 2
-y 2
-end
-arch chinese_dragon
-x 2
-y 16
-end
-arch big_dragon
-x 2
-y 19
-end
-arch big_elec
-x 3
-y 6
-end
-arch chinese_dragon
-x 3
-y 11
-end
-arch big_dragon
-x 3
-y 25
-end
-arch chinese_dragon
-x 4
-y 14
-end
-arch big_dragon
-x 5
-y 22
-end
-arch big_elec
-x 7
-y 2
-end
-arch big_elec
-x 7
-y 6
-end
-arch chinese_dragon
-x 7
-y 15
-end
-arch chinese_dragon
-x 8
-y 11
-end
-arch big_dragon
-x 8
-y 24
-end
-arch big_dragon
-x 9
-y 20
-end
-arch big_elec
-x 10
-y 6
-end
-arch chinese_dragon
-x 10
-y 16
-end
-arch big_elec
-x 11
-y 2
-end
-arch chinese_dragon
-x 12
-y 11
-end
-arch big_dragon
-x 12
-y 21
-end
-arch big_dragon
-x 12
-y 25
-end
-arch big_elec
-x 13
-y 2
-end
-arch chinese_dragon
-x 13
-y 16
-end
-arch big_dragon
-x 26
-y 5
-end
-arch chinese_dragon
-x 27
-y 21
-end
-arch big_elec
-x 29
-y 12
 end

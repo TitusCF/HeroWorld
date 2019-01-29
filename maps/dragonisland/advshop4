@@ -1,13 +1,18 @@
 arch map
+name The Adventurous Shop, 4th Floor
+difficulty 40
 region stoneville
-msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Wed Jul 23 14:51:32 1997
-endmsg
 shopitems book:60;spellbook:70;amulet:30;ring:40;*:-50
-shopmax 30000
 shopmin 2000
+shopmax 30000
+width 16
+height 16
+enter_x 7
+enter_y 4
+msg
+Created:  1997-07-23
+Modified: 2008-12-21 Rick Tanner
+endmsg
 end
 arch woodfloor
 end
@@ -226,6 +231,10 @@ arch woodfloor
 x 2
 y 4
 end
+arch big_elec
+x 2
+y 4
+end
 arch woodfloor
 x 2
 y 5
@@ -243,6 +252,10 @@ x 2
 y 8
 end
 arch wall_1_1
+x 2
+y 8
+end
+arch wall_2_short
 x 2
 y 8
 end
@@ -712,6 +725,10 @@ arch woodfloor
 x 8
 y 8
 end
+arch chinese_dragon
+x 8
+y 8
+end
 arch woodfloor
 x 8
 y 9
@@ -985,6 +1002,13 @@ x 12
 y 2
 end
 arch woodfloor
+x 12
+y 3
+end
+arch dragon_exit
+slaying advguild3
+hp 16
+sp 18
 x 12
 y 3
 end
@@ -1334,19 +1358,4 @@ end
 arch wall_2_2_4
 x 15
 y 15
-end
-arch big_elec
-x 2
-y 4
-end
-arch chinese_dragon
-x 8
-y 8
-end
-arch dragon_exit
-slaying advguild3
-hp 16
-sp 18
-x 12
-y 3
 end

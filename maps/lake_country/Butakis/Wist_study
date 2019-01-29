@@ -1,13 +1,15 @@
 arch map
-region lakecountry
-name Wist_study
-msg
-Creator: Kundi, Xue
-Email: xkd@soda.berkeley.edu
-Date: Thu Apr 13 02:47:04 1995
-endmsg
+name Wist Study
+difficulty 50
+region butakisfortress
 width 26
 height 30
+enter_x 14
+enter_y 21
+msg
+Created:  1995-04-13 Kundi, Xue (xkd@soda.berkeley.edu)
+Modified: 2011-08-27 Andreas Kirschbaum
+endmsg
 end
 arch jungle_2
 end
@@ -53,11 +55,23 @@ end
 arch jungle_2
 y 14
 end
+arch unicorn
+y 14
+speed 1.000000
+speed_left -62.000000
+unaggressive 0
+end
 arch jungle_2
 y 15
 end
 arch jungle_2
 y 16
+end
+arch unicorn
+y 16
+speed 1.000000
+speed_left -62.430000
+unaggressive 0
 end
 arch jungle_2
 y 17
@@ -154,54 +168,54 @@ x 1
 y 13
 end
 arch mover_5
-attacktype 1
 x 1
 y 13
+attacktype 1
 end
 arch jungle_2
 x 1
 y 14
 end
 arch mover_5
-attacktype 1
 x 1
 y 14
+attacktype 1
 end
 arch jungle_2
 x 1
 y 15
 end
 arch mover_5
-attacktype 1
 x 1
 y 15
+attacktype 1
 end
 arch jungle_2
 x 1
 y 16
 end
 arch mover_5
-attacktype 1
 x 1
 y 16
+attacktype 1
 end
 arch jungle_2
 x 1
 y 17
 end
 arch mover_5
-attacktype 1
 x 1
 y 17
+attacktype 1
 end
 arch jungle_2
 x 1
 y 18
 end
 arch mover_5
-attacktype 1
 x 1
 y 18
+attacktype 1
 end
 arch grass
 x 1
@@ -475,125 +489,123 @@ y 18
 end
 arch sea
 name blue waves
-no_pass 0
 x 3
 y 19
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 3
 y 20
+move_block 0
 end
 arch locked_door2
-msg
-A gentle force pushes you back to
-protect you from the scorching heat.
-endmsg
 slaying none
+msg
+A gentle force pushes you back to protect you from the scorching heat.
+endmsg
 x 3
 y 20
 end
 arch bwall_0
 name fire wall
 face fireball.111
-no_pass 0
 x 3
 y 20
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 3
 y 21
+move_block 0
 end
 arch locked_door2
-msg
-A gentle force pushes you back to
-protect you from the scorching heat.
-endmsg
 slaying none
+msg
+A gentle force pushes you back to protect you from the scorching heat.
+endmsg
 x 3
 y 21
 end
 arch bwall_0
 name fire wall
 face fireball.111
-no_pass 0
 x 3
 y 21
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 3
 y 22
+move_block 0
 end
 arch power_crystal
-speed 1.000000
-no_pick 1
 x 3
 y 22
+speed 1.000000
+no_pick 1
 end
 arch sea
 name blue waves
-no_pass 0
 x 3
 y 23
+move_block 0
 end
 arch power_crystal
-speed 1.000000
-no_pick 1
 x 3
 y 23
+speed 1.000000
+no_pick 1
 end
 arch sea
 name blue waves
-no_pass 0
 x 3
 y 24
+move_block 0
 end
 arch power_crystal
-speed 1.000000
-no_pick 1
 x 3
 y 24
+speed 1.000000
+no_pick 1
 end
 arch sea
 name blue waves
-no_pass 0
 x 3
 y 25
+move_block 0
 end
 arch power_crystal
-speed 1.000000
-no_pick 1
 x 3
 y 25
+speed 1.000000
+no_pick 1
 end
 arch sea
 name blue waves
-no_pass 0
 x 3
 y 26
+move_block 0
 end
 arch power_crystal
-speed 1.000000
-no_pick 1
 x 3
 y 26
+speed 1.000000
+no_pick 1
 end
 arch sea
 name blue waves
-no_pass 0
 x 3
 y 27
+move_block 0
 end
 arch power_crystal
-speed 1.000000
-no_pick 1
 x 3
 y 27
+speed 1.000000
+no_pick 1
 end
 arch biglake_sn
 x 3
@@ -688,125 +700,123 @@ y 18
 end
 arch sea
 name blue waves
-no_pass 0
 x 4
 y 19
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 4
 y 20
+move_block 0
 end
 arch locked_door2
-msg
-A gentle force pushes you back to
-protect you from the scorching heat.
-endmsg
 slaying none
+msg
+A gentle force pushes you back to protect you from the scorching heat.
+endmsg
 x 4
 y 20
 end
 arch bwall_0
 name fire wall
 face fireball.111
-no_pass 0
 x 4
 y 20
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 4
 y 21
+move_block 0
 end
 arch locked_door2
-msg
-A gentle force pushes you back to
-protect you from the scorching heat.
-endmsg
 slaying none
+msg
+A gentle force pushes you back to protect you from the scorching heat.
+endmsg
 x 4
 y 21
 end
 arch bwall_0
 name fire wall
 face fireball.111
-no_pass 0
 x 4
 y 21
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 4
 y 22
+move_block 0
 end
 arch power_crystal
-speed 1.000000
-no_pick 1
 x 4
 y 22
+speed 1.000000
+no_pick 1
 end
 arch sea
 name blue waves
-no_pass 0
 x 4
 y 23
+move_block 0
 end
 arch power_crystal
-speed 1.000000
-no_pick 1
 x 4
 y 23
+speed 1.000000
+no_pick 1
 end
 arch sea
 name blue waves
-no_pass 0
 x 4
 y 24
+move_block 0
 end
 arch power_crystal
-speed 1.000000
-no_pick 1
 x 4
 y 24
+speed 1.000000
+no_pick 1
 end
 arch sea
 name blue waves
-no_pass 0
 x 4
 y 25
+move_block 0
 end
 arch power_crystal
-speed 1.000000
-no_pick 1
 x 4
 y 25
+speed 1.000000
+no_pick 1
 end
 arch sea
 name blue waves
-no_pass 0
 x 4
 y 26
+move_block 0
 end
 arch power_crystal
-speed 1.000000
-no_pick 1
 x 4
 y 26
+speed 1.000000
+no_pick 1
 end
 arch sea
 name blue waves
-no_pass 0
 x 4
 y 27
+move_block 0
 end
 arch power_crystal
-speed 1.000000
-no_pick 1
 x 4
 y 27
+speed 1.000000
+no_pick 1
 end
 arch biglake_sn
 x 4
@@ -909,93 +919,93 @@ y 18
 end
 arch sea
 name blue waves
-no_pass 0
 x 5
 y 19
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 5
 y 20
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 5
 y 21
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 5
 y 22
+move_block 0
 end
 arch power_crystal
-speed 1.000000
-no_pick 1
 x 5
 y 22
+speed 1.000000
+no_pick 1
 end
 arch sea
 name blue waves
-no_pass 0
 x 5
 y 23
+move_block 0
 end
 arch power_crystal
-speed 1.000000
-no_pick 1
 x 5
 y 23
+speed 1.000000
+no_pick 1
 end
 arch sea
 name blue waves
-no_pass 0
 x 5
 y 24
+move_block 0
 end
 arch power_crystal
-speed 1.000000
-no_pick 1
 x 5
 y 24
+speed 1.000000
+no_pick 1
 end
 arch sea
 name blue waves
-no_pass 0
 x 5
 y 25
+move_block 0
 end
 arch power_crystal
-speed 1.000000
-no_pick 1
 x 5
 y 25
+speed 1.000000
+no_pick 1
 end
 arch sea
 name blue waves
-no_pass 0
 x 5
 y 26
+move_block 0
 end
 arch power_crystal
-speed 1.000000
-no_pick 1
 x 5
 y 26
+speed 1.000000
+no_pick 1
 end
 arch sea
 name blue waves
-no_pass 0
 x 5
 y 27
+move_block 0
 end
 arch power_crystal
-speed 1.000000
-no_pick 1
 x 5
 y 27
+speed 1.000000
+no_pick 1
 end
 arch biglake_sn
 x 5
@@ -1045,9 +1055,9 @@ x 6
 y 6
 end
 arch mover_1
-attacktype 1
 x 6
 y 6
+attacktype 1
 end
 arch grass
 x 6
@@ -1107,93 +1117,93 @@ y 18
 end
 arch sea
 name blue waves
-no_pass 0
 x 6
 y 19
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 6
 y 20
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 6
 y 21
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 6
 y 22
+move_block 0
 end
 arch power_crystal
-speed 1.000000
-no_pick 1
 x 6
 y 22
+speed 1.000000
+no_pick 1
 end
 arch sea
 name blue waves
-no_pass 0
 x 6
 y 23
+move_block 0
 end
 arch power_crystal
-speed 1.000000
-no_pick 1
 x 6
 y 23
+speed 1.000000
+no_pick 1
 end
 arch sea
 name blue waves
-no_pass 0
 x 6
 y 24
+move_block 0
 end
 arch power_crystal
-speed 1.000000
-no_pick 1
 x 6
 y 24
+speed 1.000000
+no_pick 1
 end
 arch sea
 name blue waves
-no_pass 0
 x 6
 y 25
+move_block 0
 end
 arch power_crystal
-speed 1.000000
-no_pick 1
 x 6
 y 25
+speed 1.000000
+no_pick 1
 end
 arch sea
 name blue waves
-no_pass 0
 x 6
 y 26
+move_block 0
 end
 arch power_crystal
-speed 1.000000
-no_pick 1
 x 6
 y 26
+speed 1.000000
+no_pick 1
 end
 arch sea
 name blue waves
-no_pass 0
 x 6
 y 27
+move_block 0
 end
 arch power_crystal
-speed 1.000000
-no_pick 1
 x 6
 y 27
+speed 1.000000
+no_pick 1
 end
 arch biglake_sn
 x 6
@@ -1247,9 +1257,9 @@ x 7
 y 8
 end
 arch mover_8
-attacktype 1
 x 7
 y 8
+attacktype 1
 end
 arch grass
 x 7
@@ -1309,134 +1319,131 @@ y 18
 end
 arch sea
 name blue waves
-no_pass 0
 x 7
 y 19
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 7
 y 20
+move_block 0
 end
 arch locked_door2
-msg
-A gentle force pushes you back to
-protect you from the scorching heat.
-endmsg
 slaying none
+msg
+A gentle force pushes you back to protect you from the scorching heat.
+endmsg
 x 7
 y 20
 end
 arch bwall_0
 name fire wall
 face fireball.111
-no_pass 0
 x 7
 y 20
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 7
 y 21
+move_block 0
 end
 arch locked_door2
-msg
-A gentle force pushes you back to
-protect you from the scorching heat.
-endmsg
 slaying none
+msg
+A gentle force pushes you back to protect you from the scorching heat.
+endmsg
 x 7
 y 21
 end
 arch bwall_0
 name fire wall
 face fireball.111
-no_pass 0
 x 7
 y 21
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 7
 y 22
+move_block 0
 end
 arch power_crystal
-speed 1.000000
-no_pick 1
 x 7
 y 22
+speed 1.000000
+no_pick 1
 end
 arch sea
 name blue waves
-no_pass 0
 x 7
 y 23
+move_block 0
 end
 arch power_crystal
-speed 1.000000
-no_pick 1
 x 7
 y 23
+speed 1.000000
+no_pick 1
 end
 arch sea
 name blue waves
-no_pass 0
 x 7
 y 24
+move_block 0
 end
 arch power_crystal
-speed 1.000000
-no_pick 1
 x 7
 y 24
+speed 1.000000
+no_pick 1
 end
 arch sea
 name blue waves
-no_pass 0
 x 7
 y 25
+move_block 0
 end
 arch power_crystal
-speed 1.000000
-no_pick 1
 x 7
 y 25
+speed 1.000000
+no_pick 1
 end
 arch sea
 name blue waves
-no_pass 0
 x 7
 y 26
+move_block 0
 end
 arch power_crystal
-speed 1.000000
-no_pick 1
 x 7
 y 26
+speed 1.000000
+no_pick 1
 end
 arch sea
 name blue waves
-no_pass 0
 x 7
 y 27
+move_block 0
 end
 arch power_crystal
+x 7
+y 27
 speed 1.000000
 no_pick 1
-x 7
-y 27
 end
 arch power_crystal
-name Glowing Crystal
 sp 1000
 maxsp 2500
-value 1000000
-weight 1000
 x 7
 y 27
+value 1000000
+weight 1000
 end
 arch biglake_sn
 x 7
@@ -1462,9 +1469,9 @@ x 8
 y 3
 end
 arch mover_3
-attacktype 1
 x 8
 y 3
+attacktype 1
 end
 arch grass
 x 8
@@ -1491,9 +1498,9 @@ x 8
 y 9
 end
 arch mover_8
-attacktype 1
 x 8
 y 9
+attacktype 1
 end
 arch grass
 x 8
@@ -1549,125 +1556,123 @@ y 18
 end
 arch sea
 name blue waves
-no_pass 0
 x 8
 y 19
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 8
 y 20
+move_block 0
 end
 arch locked_door2
-msg
-A gentle force pushes you back to
-protect you from the scorching heat.
-endmsg
 slaying none
+msg
+A gentle force pushes you back to protect you from the scorching heat.
+endmsg
 x 8
 y 20
 end
 arch bwall_0
 name fire wall
 face fireball.111
-no_pass 0
 x 8
 y 20
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 8
 y 21
+move_block 0
 end
 arch locked_door2
-msg
-A gentle force pushes you back to
-protect you from the scorching heat.
-endmsg
 slaying none
+msg
+A gentle force pushes you back to protect you from the scorching heat.
+endmsg
 x 8
 y 21
 end
 arch bwall_0
 name fire wall
 face fireball.111
-no_pass 0
 x 8
 y 21
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 8
 y 22
+move_block 0
 end
 arch power_crystal
-speed 1.000000
-no_pick 1
 x 8
 y 22
+speed 1.000000
+no_pick 1
 end
 arch sea
 name blue waves
-no_pass 0
 x 8
 y 23
+move_block 0
 end
 arch power_crystal
-speed 1.000000
-no_pick 1
 x 8
 y 23
+speed 1.000000
+no_pick 1
 end
 arch sea
 name blue waves
-no_pass 0
 x 8
 y 24
+move_block 0
 end
 arch power_crystal
-speed 1.000000
-no_pick 1
 x 8
 y 24
+speed 1.000000
+no_pick 1
 end
 arch sea
 name blue waves
-no_pass 0
 x 8
 y 25
+move_block 0
 end
 arch power_crystal
-speed 1.000000
-no_pick 1
 x 8
 y 25
+speed 1.000000
+no_pick 1
 end
 arch sea
 name blue waves
-no_pass 0
 x 8
 y 26
+move_block 0
 end
 arch power_crystal
-speed 1.000000
-no_pick 1
 x 8
 y 26
+speed 1.000000
+no_pick 1
 end
 arch sea
 name blue waves
-no_pass 0
 x 8
 y 27
+move_block 0
 end
 arch power_crystal
-speed 1.000000
-no_pick 1
 x 8
 y 27
+speed 1.000000
+no_pick 1
 end
 arch biglake_sn
 x 8
@@ -1762,121 +1767,117 @@ y 18
 end
 arch sea
 name blue waves
-no_pass 0
 x 9
 y 19
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 9
 y 20
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 9
 y 21
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 9
 y 22
+move_block 0
 end
 arch locked_door2
-msg
-A gentle force pushes you back to
-protect you from the scorching heat.
-endmsg
 slaying none
+msg
+A gentle force pushes you back to protect you from the scorching heat.
+endmsg
 x 9
 y 22
 end
 arch bwall_0
 name fire wall
 face fireball.111
-no_pass 0
 x 9
 y 22
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 9
 y 23
+move_block 0
 end
 arch locked_door2
-msg
-A gentle force pushes you back to
-protect you from the scorching heat.
-endmsg
 slaying none
+msg
+A gentle force pushes you back to protect you from the scorching heat.
+endmsg
 x 9
 y 23
 end
 arch bwall_0
 name fire wall
 face fireball.111
-no_pass 0
 x 9
 y 23
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 9
 y 24
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 9
 y 25
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 9
 y 26
+move_block 0
 end
 arch locked_door2
-msg
-A gentle force pushes you back to
-protect you from the scorching heat.
-endmsg
 slaying none
+msg
+A gentle force pushes you back to protect you from the scorching heat.
+endmsg
 x 9
 y 26
 end
 arch bwall_0
 name fire wall
 face fireball.111
-no_pass 0
 x 9
 y 26
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 9
 y 27
+move_block 0
 end
 arch locked_door2
-msg
-A gentle force pushes you back to
-protect you from the scorching heat.
-endmsg
 slaying none
+msg
+A gentle force pushes you back to protect you from the scorching heat.
+endmsg
 x 9
 y 27
 end
 arch bwall_0
 name fire wall
 face fireball.111
-no_pass 0
 x 9
 y 27
+move_block 0
 end
 arch biglake_sn
 x 9
@@ -1967,121 +1968,117 @@ y 18
 end
 arch sea
 name blue waves
-no_pass 0
 x 10
 y 19
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 10
 y 20
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 10
 y 21
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 10
 y 22
+move_block 0
 end
 arch locked_door2
-msg
-A gentle force pushes you back to
-protect you from the scorching heat.
-endmsg
 slaying none
+msg
+A gentle force pushes you back to protect you from the scorching heat.
+endmsg
 x 10
 y 22
 end
 arch bwall_0
 name fire wall
 face fireball.111
-no_pass 0
 x 10
 y 22
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 10
 y 23
+move_block 0
 end
 arch locked_door2
-msg
-A gentle force pushes you back to
-protect you from the scorching heat.
-endmsg
 slaying none
+msg
+A gentle force pushes you back to protect you from the scorching heat.
+endmsg
 x 10
 y 23
 end
 arch bwall_0
 name fire wall
 face fireball.111
-no_pass 0
 x 10
 y 23
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 10
 y 24
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 10
 y 25
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 10
 y 26
+move_block 0
 end
 arch locked_door2
-msg
-A gentle force pushes you back to
-protect you from the scorching heat.
-endmsg
 slaying none
+msg
+A gentle force pushes you back to protect you from the scorching heat.
+endmsg
 x 10
 y 26
 end
 arch bwall_0
 name fire wall
 face fireball.111
-no_pass 0
 x 10
 y 26
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 10
 y 27
+move_block 0
 end
 arch locked_door2
-msg
-A gentle force pushes you back to
-protect you from the scorching heat.
-endmsg
 slaying none
+msg
+A gentle force pushes you back to protect you from the scorching heat.
+endmsg
 x 10
 y 27
 end
 arch bwall_0
 name fire wall
 face fireball.111
-no_pass 0
 x 10
 y 27
+move_block 0
 end
 arch biglake_sn
 x 10
@@ -2111,21 +2108,21 @@ x 11
 y 4
 end
 arch mover_4
-attacktype 1
 x 11
 y 4
+attacktype 1
 end
 arch pixie
 name dancing pixie
-exp 10000
+Wis 30
 hp 100
 maxhp 100
 sp 100
 maxsp 100
-unaggressive 1
-Wis 30
+exp 10000
 x 11
 y 4
+unaggressive 1
 arch spell_mass_confusion
 end
 end
@@ -2142,21 +2139,21 @@ x 11
 y 7
 end
 arch mover_6
-attacktype 1
 x 11
 y 7
+attacktype 1
 end
 arch pixie
 name dancing pixie
-exp 10000
+Wis 30
 hp 100
 maxhp 100
 sp 100
 maxsp 100
-unaggressive 1
-Wis 30
+exp 10000
 x 11
 y 7
+unaggressive 1
 arch spell_small_speedball
 end
 end
@@ -2210,51 +2207,51 @@ y 18
 end
 arch sea
 name blue waves
-no_pass 0
 x 11
 y 19
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 11
 y 20
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 11
 y 21
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 11
 y 22
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 11
 y 23
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 11
 y 24
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 11
 y 25
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 11
 y 26
+move_block 0
 end
 arch table
 x 11
@@ -2302,18 +2299,18 @@ y 26
 end
 arch sea
 name blue waves
-no_pass 0
 x 11
 y 27
+move_block 0
 end
 arch table
 x 11
 y 27
 end
 arch chest_2
-carrying 39720
 x 11
 y 27
+carrying 39720
 arch helmet_of_brilliance
 end
 arch eyeglasses
@@ -2329,6 +2326,8 @@ nrof 3
 end
 arch potion_magic
 nrof 2
+arch spell_regenerate_spellpoints
+end
 end
 arch potionint
 end
@@ -2452,66 +2451,66 @@ y 18
 end
 arch sea
 name blue waves
-no_pass 0
 x 12
 y 19
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 12
 y 20
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 12
 y 21
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 12
 y 22
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 12
 y 23
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 12
 y 24
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 12
 y 25
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 12
 y 26
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 12
 y 27
+move_block 0
 end
 arch table
 x 12
 y 27
 end
 arch chest_2
-carrying 800
 x 12
 y 27
+carrying 800
 arch improve_damage
 end
 arch improve_enchantment
@@ -2567,6 +2566,26 @@ end
 arch grass
 x 13
 y 7
+end
+arch unicorn
+name greater unicorn
+hp 1000
+maxhp 1000
+exp 10000
+x 13
+y 7
+speed 1.0
+speed_left -13.210000
+attack_movement 4
+resist_physical 100
+carrying 5000
+arch dragon_scale
+name figurine of a faerie dragon
+face fae_drag.171
+weight 5000
+end
+arch spell_paralyze
+end
 end
 arch grass
 x 13
@@ -2638,57 +2657,57 @@ y 18
 end
 arch sea
 name blue waves
-no_pass 0
 x 13
 y 19
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 13
 y 20
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 13
 y 21
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 13
 y 22
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 13
 y 23
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 13
 y 24
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 13
 y 25
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 13
 y 26
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 13
 y 27
+move_block 0
 end
 arch biglake_sn
 x 13
@@ -2722,9 +2741,9 @@ x 14
 y 4
 end
 arch mover_6
-attacktype 1
 x 14
 y 4
+attacktype 1
 end
 arch tree
 x 14
@@ -2751,9 +2770,9 @@ x 14
 y 7
 end
 arch mover_4
-attacktype 1
 x 14
 y 7
+attacktype 1
 end
 arch grass
 x 14
@@ -2821,57 +2840,57 @@ y 18
 end
 arch sea
 name blue waves
-no_pass 0
 x 14
 y 19
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 14
 y 20
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 14
 y 21
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 14
 y 22
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 14
 y 23
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 14
 y 24
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 14
 y 25
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 14
 y 26
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 14
 y 27
+move_block 0
 end
 arch biglake_sn
 x 14
@@ -2933,21 +2952,21 @@ x 15
 y 8
 end
 arch mover_3
-attacktype 1
 x 15
 y 8
+attacktype 1
 end
 arch pixie
 name dancing pixie
-exp 10000
+Wis 30
 hp 100
 maxhp 100
 sp 100
 maxsp 100
-unaggressive 1
-Wis 30
+exp 10000
 x 15
 y 8
+unaggressive 1
 arch abil_fear
 end
 end
@@ -3005,57 +3024,57 @@ y 18
 end
 arch sea
 name blue waves
-no_pass 0
 x 15
 y 19
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 15
 y 20
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 15
 y 21
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 15
 y 22
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 15
 y 23
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 15
 y 24
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 15
 y 25
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 15
 y 26
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 15
 y 27
+move_block 0
 end
 arch biglake_sn
 x 15
@@ -3093,9 +3112,9 @@ x 16
 y 5
 end
 arch mover_8
-attacktype 1
 x 16
 y 5
+attacktype 1
 end
 arch grass
 x 16
@@ -3155,57 +3174,57 @@ y 18
 end
 arch sea
 name blue waves
-no_pass 0
 x 16
 y 19
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 16
 y 20
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 16
 y 21
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 16
 y 22
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 16
 y 23
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 16
 y 24
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 16
 y 25
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 16
 y 26
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 16
 y 27
+move_block 0
 end
 arch biglake_sn
 x 16
@@ -3255,21 +3274,21 @@ x 17
 y 7
 end
 arch mover_1
-attacktype 1
 x 17
 y 7
+attacktype 1
 end
 arch pixie
 name dancing pixie
-exp 10000
+Wis 30
 hp 100
 maxhp 100
 sp 100
 maxsp 100
-unaggressive 1
-Wis 30
+exp 10000
 x 17
 y 7
+unaggressive 1
 end
 arch grass
 x 17
@@ -3317,39 +3336,39 @@ y 18
 end
 arch sea
 name blue waves
-no_pass 0
 x 17
 y 19
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 17
 y 20
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 17
 y 21
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 17
 y 22
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 17
 y 23
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 17
 y 24
+move_block 0
 end
 arch teleporter
 name teleporter to portal chamber
@@ -3361,21 +3380,21 @@ y 24
 end
 arch sea
 name blue waves
-no_pass 0
 x 17
 y 25
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 17
 y 26
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 17
 y 27
+move_block 0
 end
 arch biglake_sn
 x 17
@@ -3494,33 +3513,33 @@ y 18
 end
 arch sea
 name blue waves
-no_pass 0
 x 18
 y 19
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 18
 y 20
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 18
 y 21
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 18
 y 22
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 18
 y 23
+move_block 0
 end
 arch biglake_nw
 x 18
@@ -3532,9 +3551,9 @@ y 24
 end
 arch sea
 name blue waves
-no_pass 0
 x 18
 y 25
+move_block 0
 end
 arch biglake_sw
 x 18
@@ -3542,15 +3561,15 @@ y 25
 end
 arch sea
 name blue waves
-no_pass 0
 x 18
 y 26
+move_block 0
 end
 arch sea
 name blue waves
-no_pass 0
 x 18
 y 27
+move_block 0
 end
 arch biglake_sn
 x 18
@@ -3695,9 +3714,16 @@ x 20
 y 1
 end
 arch mover_1
-attacktype 1
 x 20
 y 1
+attacktype 1
+end
+arch unicorn
+x 20
+y 1
+speed 1.000000
+speed_left -60.970001
+unaggressive 0
 end
 arch jungle_2
 x 20
@@ -3748,9 +3774,16 @@ x 20
 y 13
 end
 arch mover_1
-attacktype 1
 x 20
 y 13
+attacktype 1
+end
+arch unicorn
+x 20
+y 13
+speed 1.000000
+speed_left -61.889999
+unaggressive 0
 end
 arch grass
 x 20
@@ -4060,9 +4093,9 @@ y 6
 end
 arch altar
 food 1
-connected 23
 x 23
 y 7
+connected 23
 end
 arch mine2
 x 23
@@ -4075,6 +4108,13 @@ end
 arch boulder
 x 23
 y 13
+end
+arch pentagram_111
+hp 17
+sp 23
+x 23
+y 13
+connected 23
 end
 arch boulder
 x 23
@@ -4089,11 +4129,11 @@ x 24
 y 6
 end
 arch spikes_open
-connected 22
-speed 0.500000
-value 1
 x 24
 y 7
+speed 0.500000
+value 1
+connected 22
 end
 arch food
 x 24
@@ -4105,15 +4145,15 @@ y 8
 end
 arch button_plate
 name Pentagram trigger
-connected 22
 x 24
 y 9
+connected 22
 end
 arch spikes_moving
-speed 0.500000
-speed_left -0.860000
 x 24
 y 10
+speed 0.500000
+speed_left -0.860000
 end
 arch boulder
 x 24
@@ -4121,9 +4161,9 @@ y 10
 end
 arch button_plate
 name Pentagram trigger
-connected 22
 x 24
 y 11
+connected 22
 end
 arch mine16
 x 24
@@ -4163,31 +4203,31 @@ y 12
 end
 arch wizard
 name Wist, Twis' evil twin
-type 0
-level 50
-exp 1000000
-speed 1.0
-carrying 5000
-dam 30
+Str 10
+Con 6
+Wis 30
+Int 12
 hp 8191
 maxhp 8191
-ac -8
-Con 6
-can_cast_spell 1
 sp 600
 maxsp 600
-Int 12
-can_use_scroll 1
-monster 1
-Wis 30
-attack_movement 4
-Str 10
-Dex 10
-immune 29
-protected 3
-unique 1
+exp 1000000
+dam 30
+ac -8
 x 25
 y 13
+speed 1.0
+attack_movement 4
+level 50
+type 0
+resist_physical 100
+resist_magic 100
+carrying 5000
+move_type walk
+monster 1
+unique 1
+can_cast_spell 1
+can_use_scroll 1
 arch skill_pyromancy
 end
 arch skill_evocation
@@ -4220,57 +4260,4 @@ end
 arch mine7
 x 25
 y 16
-end
-arch unicorn
-speed 1.000000
-speed_left -62.000000
-unaggressive 0
-y 14
-end
-arch unicorn
-speed 1.000000
-speed_left -62.430000
-unaggressive 0
-y 16
-end
-arch unicorn
-name greater unicorn
-exp 10000
-speed 1.0
-carrying 5000
-hp 1000
-maxhp 1000
-attack_movement 4
-speed_left -13.210000
-immune 4097
-x 13
-y 7
-arch dragon_scale
-name figurine of a faerie dragon
-face fae_drag.171
-weight 5000
-end
-arch spell_paralyze
-end
-end
-arch unicorn
-speed 1.000000
-speed_left -60.970001
-unaggressive 0
-x 20
-y 1
-end
-arch unicorn
-speed 1.000000
-speed_left -61.889999
-unaggressive 0
-x 20
-y 13
-end
-arch pentagram_111
-hp 17
-sp 23
-connected 23
-x 23
-y 13
 end

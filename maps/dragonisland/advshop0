@@ -1,13 +1,18 @@
 arch map
+name The Adventurous Shop, Entrance
+difficulty 20
 region stoneville
-msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue Jul 22 13:55:47 1997
-endmsg
 shopitems food:5;armour:5;*:2
-shopmax 10000
 shopmin 300
+shopmax 10000
+width 16
+height 16
+enter_x 7
+enter_y 15
+msg
+Created:  1997-02-22
+Modified: 2012-01-31 Rick Tanner
+endmsg
 end
 arch woodfloor
 end
@@ -253,6 +258,10 @@ x 2
 y 7
 end
 arch wall_1_2
+x 2
+y 7
+end
+arch wall_2_short
 x 2
 y 7
 end
@@ -599,11 +608,7 @@ end
 arch sign
 msg
 Welcome to the adventurours shop!
-In order to gain access to a shop
-level, you will first have to win
-against the monsters guarding it.
-Please take care, they get more
-dangerous the more you advance upwards!
+In order to gain access to a shop level, you will first have to win against the monsters guarding it.  Please take care, they get more dangerous the more you advance upwards!
 endmsg
 x 6
 y 11
@@ -714,7 +719,7 @@ arch woodfloor
 x 7
 y 15
 end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_103_127
 hp 2
 sp 17
@@ -799,7 +804,7 @@ arch woodfloor
 x 8
 y 15
 end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_103_127
 hp 2
 sp 17
@@ -867,14 +872,10 @@ end
 arch madman
 name shopkeeper
 msg
-@match [Hh][ae]llo|[Hh]i
-Hello there! Welcome to this fantastic
-shop! It is full of monsters, so
-please be careful!
+@match h[ae]llo|hi
+Hello there! Welcome to this fantastic shop! It is full of monsters, so please be careful!
 @match monster|monsters|careful
-Well, there's even a nice collection
-of demiliches on the upper floor, just
-above the skulls.
+Well, there's even a nice collection of demiliches on the upper floor, just above the skulls.
 endmsg
 x 9
 y 11
@@ -1384,6 +1385,10 @@ x 15
 y 10
 end
 arch wall_2_1_1
+x 15
+y 10
+end
+arch wall_2_short
 x 15
 y 10
 end

@@ -1,13 +1,15 @@
 arch map
-region lakecountry
-name luck3
+name Towers of Luck, 3rd Floor
+difficulty 60
+region butakisfortress
+width 32
+height 32
+enter_x 30
+enter_y 17
 msg
-Creator: Kundi, Xue
-Email: xkd@soda.berkeley.edu
-Date: Mon May  1 22:34:39 1995
+Created:  1995-05-01 Kundi, Xue (xkd@soda.berkeley.edu)
+Modified: 2012-02-06 Rick Tanner
 endmsg
-x 32
-y 32
 end
 arch button_plate
 connected 11
@@ -229,10 +231,6 @@ y 5
 end
 arch wizard
 name Mad wizard
-msg
-@match *
-Die! DIE DIE!!
-endmsg
 Str 10
 Dex 10
 Con 6
@@ -247,34 +245,39 @@ dam 30
 ac -8
 x 1
 y 5
-speed 1.000000
+speed 1.0
 attack_movement 7
 level 50
 type 0
 resist_physical 30
-resist_magic 30
+resist_magic 100
 resist_fire 100
 resist_electricity 100
 resist_cold 100
+resist_confusion 100
+resist_weaponmagic 100
+resist_fear 100
 carrying 5000
+move_type walk
 monster 1
 unique 1
 can_cast_spell 1
 can_use_scroll 1
-arch ability_cold
+arch spell_comet
 end
-arch ability_lightning
+arch spell_icestorm
 end
-arch ability_mass_confusion
+arch spell_frostbolt
 end
-arch ability_forced_dance
+arch spell_sm_lightning
 end
-arch ability_fear
+arch spell_fear
 end
-arch book
-sp 26
+arch spell_mass_confusion
 end
-arch ability_dragon
+arch spell_small_speedball
+end
+arch spell_dragonbreath
 end
 end
 arch dungeon_floor
@@ -300,6 +303,42 @@ end
 arch dungeon_floor
 x 1
 y 10
+end
+arch dragon
+name big wyvern of chaos
+Con 30
+Wis 30
+Int 12
+hp 6000
+sp 300
+maxsp 300
+exp 400000
+dam 30
+x 1
+y 10
+speed 0.800000
+speed_left -1.840000
+level 30
+attacktype 29
+resist_physical 100
+resist_electricity 30
+resist_cold 100
+resist_paralyze 100
+carrying 100000
+move_type walk fly_low
+arch gem
+nrof 2000
+end
+arch ability_dragonbreath
+end
+arch abil_create_frost_wall
+end
+arch abil_icestorm
+end
+arch abil_large_icestorm
+end
+arch abil_ball_lightning
+end
 end
 arch dungeon_floor
 x 1
@@ -368,6 +407,42 @@ end
 arch dungeon_floor
 x 1
 y 24
+end
+arch dragon
+name big wyvern of chaos
+Con 30
+Wis 30
+Int 12
+hp 6000
+sp 300
+maxsp 300
+exp 400000
+dam 30
+x 1
+y 24
+speed 0.800000
+speed_left -1.840000
+level 30
+attacktype 29
+resist_physical 100
+resist_electricity 30
+resist_cold 100
+resist_paralyze 100
+carrying 100000
+move_type walk fly_low
+arch gem
+nrof 2000
+end
+arch ability_dragonbreath
+end
+arch abil_create_frost_wall
+end
+arch abil_icestorm
+end
+arch abil_large_icestorm
+end
+arch abil_ball_lightning
+end
 end
 arch dungeon_floor
 x 1
@@ -490,6 +565,10 @@ arch dungeon_floor
 x 2
 y 15
 end
+arch titan
+x 2
+y 15
+end
 arch dungeon_floor
 x 2
 y 16
@@ -507,6 +586,10 @@ x 2
 y 18
 end
 arch dungeon_floor
+x 2
+y 19
+end
+arch titan
 x 2
 y 19
 end
@@ -568,10 +651,9 @@ y 30
 carrying 78300
 arch scroll
 msg
-  Congratulations winner(s)!!!
-  Nothing is better than some cold beer
-and good health, right?
-  Later buddy(ies). Come again
+Congratulations winner(s)!!!
+Nothing is better than some cold beer and good health, right? 
+Later buddy(ies).  Come again!
 endmsg
 end
 arch booze
@@ -1472,6 +1554,10 @@ arch dungeon_floor
 x 7
 y 29
 end
+arch titan
+x 7
+y 29
+end
 arch dungeon_floor
 x 7
 y 30
@@ -1517,6 +1603,18 @@ end
 arch pstone_2
 x 8
 y 5
+end
+arch big_elec
+name Ancient Blue Dragon
+hp 7000
+maxhp 7000
+exp 140000
+dam 40
+ac -15
+x 8
+y 5
+speed -0.500000
+level 25
 end
 arch dungeon_floor
 x 8
@@ -2160,6 +2258,21 @@ arch dungeon_floor
 x 11
 y 27
 end
+arch jessyb
+name Grunter
+hp 16000
+dam 60
+x 11
+y 27
+speed 1.000000
+level 80
+carrying 100
+arch key2
+name Heart of Joey
+slaying Heart_Joey
+face pyro_gen.111
+end
+end
 arch dungeon_floor
 x 11
 y 28
@@ -2213,6 +2326,18 @@ end
 arch pstone_2
 x 12
 y 5
+end
+arch big_elec
+name Ancient Blue Dragon
+hp 7000
+maxhp 7000
+exp 140000
+dam 40
+ac -15
+x 12
+y 5
+speed -0.500000
+level 25
 end
 arch dungeon_floor
 x 12
@@ -2612,8 +2737,7 @@ y 15
 end
 arch magic_mouth
 msg
-Sacrify 99 platinum coins for your
-chance
+Sacrify 99 platinum coins for your chance.
 endmsg
 x 14
 y 16
@@ -2826,8 +2950,7 @@ y 15
 end
 arch magic_mouth
 msg
-Sacrify 666 platinum coins for a
-chance
+Sacrify 666 platinum coins for a chance
 endmsg
 x 15
 y 16
@@ -2865,7 +2988,7 @@ connected 5
 end
 arch magic_mouth
 msg
-Sacrify 66 diamonds for a chance
+Sacrify 66 diamonds for a chance.
 endmsg
 x 15
 y 18
@@ -2889,9 +3012,8 @@ end
 arch sign
 msg
 Note:
-  We reserve the right to ignore the
-  request for a chance to anyone.
-  -nevermind.
+We reserve the right to ignore the request for a chance to anyone.
+-nevermind.
 endmsg
 x 15
 y 19
@@ -2919,13 +3041,12 @@ end
 arch magic_mouth
 msg
 You hear a booming voice:
-Who dares to challenge Grunter,
-the mighty?!!
+Who dares to challenge Grunter, the mighty?!!
 endmsg
 x 15
 y 25
 connected 16
-walk_on 0
+move_on 0
 end
 arch dungeon_floor
 x 15
@@ -3026,6 +3147,18 @@ end
 arch pstone_2
 x 16
 y 5
+end
+arch big_elec
+name Ancient Blue Dragon
+hp 7000
+maxhp 7000
+exp 140000
+dam 40
+ac -15
+x 16
+y 5
+speed -0.500000
+level 25
 end
 arch dungeon_floor
 x 16
@@ -3364,6 +3497,10 @@ arch dungeon_floor
 x 17
 y 28
 end
+arch big_wiz
+x 17
+y 28
+end
 arch dungeon_floor
 x 17
 y 29
@@ -3585,6 +3722,18 @@ end
 arch pstone_2
 x 19
 y 5
+end
+arch big_elec
+name Ancient Blue Dragon
+hp 7000
+maxhp 7000
+exp 140000
+dam 40
+ac -15
+x 19
+y 5
+speed -0.500000
+level 25
 end
 arch dungeon_floor
 x 19
@@ -4270,6 +4419,18 @@ arch pstone_2
 x 23
 y 5
 end
+arch big_elec
+name Ancient Blue Dragon
+hp 7000
+maxhp 7000
+exp 140000
+dam 40
+ac -15
+x 23
+y 5
+speed -0.500000
+level 25
+end
 arch dungeon_floor
 x 23
 y 6
@@ -4383,6 +4544,10 @@ x 23
 y 27
 end
 arch dungeon_floor
+x 23
+y 28
+end
+arch big_wiz
 x 23
 y 28
 end
@@ -5101,8 +5266,7 @@ y 16
 end
 arch magic_mouth
 msg
-Open it and do not think of coming
-back
+Open it and do not think of coming back.
 endmsg
 x 27
 y 17
@@ -5145,6 +5309,10 @@ x 27
 y 23
 end
 arch dungeon_floor
+x 27
+y 24
+end
+arch g_worm
 x 27
 y 24
 end
@@ -5323,12 +5491,7 @@ end
 arch sign_w
 msg
 Rules and warnings:
-  This is an arena. You enter and
-cannot come out until your luck is good
-enough to find an exit.
-  This arena is not for the weak. The
-winner will gain the symbol of mightest
-of the realm.
+This is an arena.  You enter and cannot come out until your luck is good enough to find an exit.  This arena is not for the weak.  The winner will gain the symbol of mightiest of the realm.
 endmsg
 x 28
 y 16
@@ -5340,12 +5503,7 @@ end
 arch sign_w
 msg
 Rules and warnings:
-  This is an arena. You enter and
-cannot come out until your luck is good
-enough to find an exit.
-  This arena is not for the weak. The
-winner will gain the symbol of mightest
-of the realm.
+This is an arena.  You enter and cannot come out until your luck is good enough to find an exit.  This arena is not for the weak.  The winner will gain the symbol of mightiest of the realm.
 endmsg
 x 28
 y 17
@@ -5371,6 +5529,10 @@ x 28
 y 21
 end
 arch dungeon_floor
+x 28
+y 22
+end
+arch g_worm
 x 28
 y 22
 end
@@ -5796,8 +5958,7 @@ connected 21
 end
 arch magic_mouth
 msg
-If the entrance is blocked, it means
-it's in use. Come back later.
+If the entrance is blocked, it means it's in use.  Come back later.
 endmsg
 x 30
 y 16
@@ -5815,8 +5976,7 @@ y 16
 end
 arch magic_mouth
 msg
-If the entrance is blocked, it means
-it's in use. Come back later.
+If the entrance is blocked, it means it's in use.  Come back later.
 endmsg
 x 30
 y 17
@@ -5887,9 +6047,7 @@ y 24
 end
 arch magic_mouth
 msg
-If the inner door is closed, you are
-out of luck. Well, still you can get
-closer to take a look of what's inside.
+If the inner door is closed, you are out of luck.  Well, still you can get closer to take a look of what's inside.
 endmsg
 x 30
 y 25
@@ -6210,928 +6368,4 @@ end
 arch mine12
 x 31
 y 31
-end
-arch dragon
-name big wyvern of choas
-Con 30
-Wis 30
-Int 12
-hp 6000
-sp 300
-maxsp 300
-exp 400000
-dam 30
-x 1
-y 10
-speed 0.800000
-speed_left -1.840000
-level 30
-attacktype 29
-resist_physical 100
-resist_electricity 30
-resist_cold 100
-resist_paralyze 100
-carrying 100000
-flying 1
-arch ability_dragon
-end
-arch ability_mass_confusion
-end
-arch ability_lightning
-end
-arch gem
-nrof 2000
-end
-arch ability_cold
-end
-end
-More
-arch dragon_2
-name big wyvern of choas
-Con 30
-Wis 30
-Int 12
-hp 6000
-sp 300
-maxsp 300
-exp 400000
-dam 30
-x 2
-y 10
-speed 0.800000
-level 30
-attacktype 29
-resist_physical 100
-resist_fire 100
-resist_electricity 30
-resist_cold 100
-resist_paralyze 100
-flying 1
-can_cast_spell 1
-end
-arch dragon
-name big wyvern of choas
-Con 30
-Wis 30
-Int 12
-hp 6000
-sp 300
-maxsp 300
-exp 400000
-dam 30
-x 1
-y 24
-speed 0.800000
-speed_left -1.840000
-level 30
-attacktype 29
-resist_physical 100
-resist_electricity 30
-resist_cold 100
-resist_paralyze 100
-carrying 100000
-flying 1
-arch ability_dragon
-end
-arch ability_mass_confusion
-end
-arch ability_lightning
-end
-arch gem
-nrof 2000
-end
-arch ability_cold
-end
-end
-More
-arch dragon_2
-name big wyvern of choas
-Con 30
-Wis 30
-Int 12
-hp 6000
-sp 300
-maxsp 300
-exp 400000
-dam 30
-x 2
-y 24
-speed 0.800000
-level 30
-attacktype 29
-resist_physical 100
-resist_fire 100
-resist_electricity 30
-resist_cold 100
-resist_paralyze 100
-flying 1
-can_cast_spell 1
-end
-arch titan
-x 2
-y 15
-end
-More
-arch titan_2
-x 1
-y 15
-end
-More
-arch titan_3
-x 1
-y 14
-end
-More
-arch titan_4
-x 2
-y 14
-end
-More
-arch titan_5
-x 3
-y 14
-end
-More
-arch titan_6
-x 3
-y 15
-end
-More
-arch titan_7
-x 3
-y 16
-end
-More
-arch titan_8
-x 2
-y 16
-end
-More
-arch titan_9
-x 1
-y 16
-end
-arch titan
-x 2
-y 19
-end
-More
-arch titan_2
-x 1
-y 19
-end
-More
-arch titan_3
-x 1
-y 18
-end
-More
-arch titan_4
-x 2
-y 18
-end
-More
-arch titan_5
-x 3
-y 18
-end
-More
-arch titan_6
-x 3
-y 19
-end
-More
-arch titan_7
-x 3
-y 20
-end
-More
-arch titan_8
-x 2
-y 20
-end
-More
-arch titan_9
-x 1
-y 20
-end
-arch titan
-x 7
-y 29
-end
-More
-arch titan_2
-x 6
-y 29
-end
-More
-arch titan_3
-x 6
-y 28
-end
-More
-arch titan_4
-x 7
-y 28
-end
-More
-arch titan_5
-x 8
-y 28
-end
-More
-arch titan_6
-x 8
-y 29
-end
-More
-arch titan_7
-x 8
-y 30
-end
-More
-arch titan_8
-x 7
-y 30
-end
-More
-arch titan_9
-x 6
-y 30
-end
-arch big_elec
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 8
-y 5
-speed -0.500000
-level 25
-end
-More
-arch big_elec_2
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 9
-y 5
-speed -0.500000
-level 25
-end
-More
-arch big_elec_3
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 8
-y 6
-speed -0.500000
-level 25
-end
-More
-arch big_elec_4
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 9
-y 6
-speed -0.500000
-level 25
-end
-More
-arch big_elec_5
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 8
-y 7
-speed -0.500000
-level 25
-end
-More
-arch big_elec_6
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 9
-y 7
-speed -0.500000
-level 25
-end
-arch jessyb
-name Grunter
-hp 16000
-dam 60
-x 11
-y 27
-speed 1.000000
-level 80
-carrying 100
-arch key2
-name Heart of Joey
-slaying Heart_Joey
-face pyro_gen.111
-end
-end
-More
-arch jessyb_2
-name Grunter
-hp 16000
-dam 60
-x 12
-y 27
-speed 1.000000
-level 80
-end
-More
-arch jessyb_3
-name Grunter
-hp 16000
-dam 60
-x 13
-y 27
-speed 1.000000
-level 80
-end
-More
-arch jessyb_4
-name Grunter
-hp 16000
-dam 60
-x 14
-y 27
-speed 1.000000
-level 80
-end
-More
-arch jessyb_5
-name Grunter
-hp 16000
-dam 60
-x 11
-y 28
-speed 1.000000
-level 80
-end
-More
-arch jessyb_6
-name Grunter
-hp 16000
-dam 60
-x 12
-y 28
-speed 1.000000
-level 80
-end
-More
-arch jessyb_7
-name Grunter
-hp 16000
-dam 60
-x 13
-y 28
-speed 1.000000
-level 80
-end
-More
-arch jessyb_8
-name Grunter
-hp 16000
-dam 60
-x 14
-y 28
-speed 1.000000
-level 80
-end
-More
-arch jessyb_9
-name Grunter
-hp 16000
-dam 60
-x 11
-y 29
-speed 1.000000
-level 80
-end
-More
-arch jessyb_10
-name Grunter
-hp 16000
-dam 60
-x 12
-y 29
-speed 1.000000
-level 80
-end
-More
-arch jessyb_11
-name Grunter
-hp 16000
-dam 60
-x 13
-y 29
-speed 1.000000
-level 80
-end
-More
-arch jessyb_12
-name Grunter
-hp 16000
-dam 60
-x 14
-y 29
-speed 1.000000
-level 80
-end
-More
-arch jessyb_13
-name Grunter
-hp 16000
-dam 60
-x 11
-y 30
-speed 1.000000
-level 80
-end
-More
-arch jessyb_14
-name Grunter
-hp 16000
-dam 60
-x 12
-y 30
-speed 1.000000
-level 80
-end
-More
-arch jessyb_15
-name Grunter
-hp 16000
-dam 60
-x 13
-y 30
-speed 1.000000
-level 80
-end
-More
-arch jessyb_16
-name Grunter
-hp 16000
-dam 60
-x 14
-y 30
-speed 1.000000
-level 80
-end
-arch big_elec
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 12
-y 5
-speed -0.500000
-level 25
-end
-More
-arch big_elec_2
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 13
-y 5
-speed -0.500000
-level 25
-end
-More
-arch big_elec_3
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 12
-y 6
-speed -0.500000
-level 25
-end
-More
-arch big_elec_4
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 13
-y 6
-speed -0.500000
-level 25
-end
-More
-arch big_elec_5
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 12
-y 7
-speed -0.500000
-level 25
-end
-More
-arch big_elec_6
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 13
-y 7
-speed -0.500000
-level 25
-end
-arch big_elec
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 16
-y 5
-speed -0.500000
-level 25
-end
-More
-arch big_elec_2
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 17
-y 5
-speed -0.500000
-level 25
-end
-More
-arch big_elec_3
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 16
-y 6
-speed -0.500000
-level 25
-end
-More
-arch big_elec_4
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 17
-y 6
-speed -0.500000
-level 25
-end
-More
-arch big_elec_5
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 16
-y 7
-speed -0.500000
-level 25
-end
-More
-arch big_elec_6
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 17
-y 7
-speed -0.500000
-level 25
-end
-arch big_wiz
-x 17
-y 28
-end
-More
-arch big_wiz2
-x 18
-y 28
-end
-More
-arch big_wiz3
-x 19
-y 28
-end
-More
-arch big_wiz4
-x 17
-y 29
-end
-More
-arch big_wiz5
-x 18
-y 29
-end
-More
-arch big_wiz6
-x 19
-y 29
-end
-More
-arch big_wiz7
-x 17
-y 30
-end
-More
-arch big_wiz8
-x 18
-y 30
-end
-More
-arch big_wiz9
-x 19
-y 30
-end
-arch big_elec
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 19
-y 5
-speed -0.500000
-level 25
-end
-More
-arch big_elec_2
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 20
-y 5
-speed -0.500000
-level 25
-end
-More
-arch big_elec_3
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 19
-y 6
-speed -0.500000
-level 25
-end
-More
-arch big_elec_4
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 20
-y 6
-speed -0.500000
-level 25
-end
-More
-arch big_elec_5
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 19
-y 7
-speed -0.500000
-level 25
-end
-More
-arch big_elec_6
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 20
-y 7
-speed -0.500000
-level 25
-end
-arch big_elec
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 23
-y 5
-speed -0.500000
-level 25
-end
-More
-arch big_elec_2
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 24
-y 5
-speed -0.500000
-level 25
-end
-More
-arch big_elec_3
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 23
-y 6
-speed -0.500000
-level 25
-end
-More
-arch big_elec_4
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 24
-y 6
-speed -0.500000
-level 25
-end
-More
-arch big_elec_5
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 23
-y 7
-speed -0.500000
-level 25
-end
-More
-arch big_elec_6
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 24
-y 7
-speed -0.500000
-level 25
-end
-arch big_wiz
-x 23
-y 28
-end
-More
-arch big_wiz2
-x 24
-y 28
-end
-More
-arch big_wiz3
-x 25
-y 28
-end
-More
-arch big_wiz4
-x 23
-y 29
-end
-More
-arch big_wiz5
-x 24
-y 29
-end
-More
-arch big_wiz6
-x 25
-y 29
-end
-More
-arch big_wiz7
-x 23
-y 30
-end
-More
-arch big_wiz8
-x 24
-y 30
-end
-More
-arch big_wiz9
-x 25
-y 30
-end
-arch g_worm
-x 27
-y 24
-end
-More
-arch g_worm_2
-x 28
-y 24
-end
-More
-arch g_worm_3
-x 27
-y 25
-end
-More
-arch g_worm_4
-x 28
-y 25
-end
-arch g_worm
-x 28
-y 22
-end
-More
-arch g_worm_2
-x 29
-y 22
-end
-More
-arch g_worm_3
-x 28
-y 23
-end
-More
-arch g_worm_4
-x 29
-y 23
 end

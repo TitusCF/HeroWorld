@@ -1,12 +1,15 @@
 arch map
+name Little House
+difficulty 1
 region stoneville
+width 10
+height 8
+enter_x 1
+enter_y 2
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue Sep 16 17:13:43 1997
+Created:  1997-09-16
+Modified: 2008-09-15 Rick Tanner
 endmsg
-x 10
-y 8
 end
 arch brush
 end
@@ -44,15 +47,15 @@ arch brush
 x 1
 y 1
 end
-arch cobblestones2
-x 1
-y 2
-end
 arch check_inv
 slaying NeuKey
 x 1
 y 2
 connected 2
+end
+arch cobblestones2
+x 1
+y 2
 end
 arch brush
 x 1
@@ -96,9 +99,6 @@ y 2
 unique 1
 end
 arch igate_closed_2
-msg
-
-endmsg
 x 2
 y 2
 connected 2
@@ -160,16 +160,16 @@ x 3
 y 1
 unique 1
 end
-arch dungeon_floor
-x 3
-y 2
-unique 1
-end
 arch check_inv
 slaying NeuKey
 x 3
 y 2
 connected 2
+end
+arch dungeon_floor
+x 3
+y 2
+unique 1
 end
 arch dungeon_floor
 x 3

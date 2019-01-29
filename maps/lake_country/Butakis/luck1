@@ -1,13 +1,15 @@
 arch map
-region lakecountry
-name luck1
+name Towers of Luck, 1st Floor
+difficulty 60
+region butakisfortress
+width 30
+height 24
+enter_x 3
+enter_y 5
 msg
-Creator: Kundi, Xue
-Email: xkd@soda.berkeley.edu
-Date: Tue May  2 01:40:56 1995
+Created:  1995-05-02 Kundi, Xue (xkd@soda.berkeley.edu)
+Modified: 2012-02-06 Rick Tanner
 endmsg
-x 30
-y 24
 end
 arch woodfloor
 end
@@ -316,6 +318,10 @@ arch woodfloor
 x 1
 y 11
 end
+arch big_dragon
+x 1
+y 11
+end
 arch woodfloor
 x 1
 y 12
@@ -334,7 +340,7 @@ y 13
 end
 arch magic_mouth
 msg
-100 platinum coins for another chance
+100 platinum coins for another chance.
 endmsg
 x 1
 y 14
@@ -385,8 +391,7 @@ y 17
 end
 arch magic_mouth
 msg
-To activate teleporter say
-"activate".
+To activate teleporter say, "activate".
 endmsg
 x 1
 y 18
@@ -717,7 +722,7 @@ connected 28
 end
 arch magic_mouth
 msg
-100 platinum coins for a chance
+100 platinum coins for a chance.
 endmsg
 x 3
 y 3
@@ -792,7 +797,7 @@ connected 24
 end
 arch magic_mouth
 msg
-100 platinum coins for another chance
+100 platinum coins for another chance.
 endmsg
 x 3
 y 9
@@ -886,8 +891,7 @@ y 17
 end
 arch magic_mouth
 msg
-100 platinum coins to gamble for
-treasure
+100 platinum coins to gamble for treasure.
 endmsg
 x 3
 y 18
@@ -1323,8 +1327,7 @@ connected 16
 end
 arch magic_mouth
 msg
-100 platinum coins to gamble for
-treasure
+100 platinum coins to gamble for treasure.
 endmsg
 x 5
 y 16
@@ -2189,7 +2192,7 @@ connected 31
 end
 arch magic_mouth
 msg
-100 platinum coins for another chance
+100 platinum coins for another chance.
 endmsg
 x 9
 y 18
@@ -2556,14 +2559,9 @@ maxsp 200
 x 11
 y 9
 level 20
+resist_weaponmagic 100
 carrying 5000
-arch book
-name Fire red spellbook
-msg
-Create a comet that goes in straight
-line. It hit for weaponmagic
-endmsg
-sp 90
+arch spell_comet
 end
 end
 arch woodfloor
@@ -2587,6 +2585,10 @@ x 11
 y 12
 end
 arch woodfloor
+x 11
+y 13
+end
+arch big_dragon
 x 11
 y 13
 end
@@ -2766,6 +2768,10 @@ x 12
 y 15
 end
 arch woodfloor
+x 12
+y 16
+end
+arch big_dragon
 x 12
 y 16
 end
@@ -3182,7 +3188,6 @@ msg
 Die! DIE DIE!!
 endmsg
 Str 10
-Dex 10
 Con 6
 Wis 30
 Int 12
@@ -3194,34 +3199,39 @@ dam 30
 ac -8
 x 15
 y 5
-speed 1.000000
+speed 1.0
 attack_movement 7
 level 50
 type 0
 resist_physical 30
-resist_magic 30
+resist_magic 100
 resist_fire 100
 resist_electricity 100
 resist_cold 100
+resist_confusion 100
+resist_weaponmagic 100
+resist_fear 100
 carrying 5000
+move_type walk
 monster 1
 unique 1
 can_cast_spell 1
 can_use_scroll 1
-arch book
-sp 26
+arch spell_comet
 end
-arch ability_fear
+arch spell_icestorm
 end
-arch ability_forced_dance
+arch spell_frostbolt
 end
-arch ability_mass_confusion
+arch spell_sm_lightning
 end
-arch ability_lightning
+arch spell_fear
 end
-arch ability_cold
+arch spell_mass_confusion
 end
-arch ability_dragon
+arch spell_small_speedball
+end
+arch spell_dragonbreath
 end
 end
 arch dungeon_magic
@@ -3579,7 +3589,7 @@ y 1
 end
 arch magic_mouth
 msg
-100 platinum coins for a chance
+100 platinum coins for a chance.
 endmsg
 x 17
 y 2
@@ -3895,7 +3905,7 @@ y 11
 end
 arch magic_mouth
 msg
-100 platinum coins for a chance
+100 platinum coins for a chance.
 endmsg
 x 18
 y 12
@@ -4591,6 +4601,10 @@ arch woodfloor
 x 21
 y 15
 end
+arch dragon
+x 21
+y 15
+end
 arch woodfloor
 x 21
 y 16
@@ -4675,7 +4689,11 @@ arch woodfloor
 x 22
 y 2
 end
-arch swall_1_3
+arch swall_2_1_2
+x 22
+y 2
+end
+arch dungeon_magic
 x 22
 y 2
 end
@@ -4739,11 +4757,11 @@ arch woodfloor
 x 22
 y 10
 end
-arch swall_1_3
+arch dungeon_magic
 x 22
 y 10
 end
-arch dungeon_magic
+arch swall_2_1_2
 x 22
 y 10
 end
@@ -4875,6 +4893,10 @@ arch woodfloor
 x 23
 y 2
 end
+arch swall_1_3_half
+x 23
+y 2
+end
 arch mine3
 x 23
 y 2
@@ -4936,6 +4958,10 @@ x 23
 y 9
 end
 arch woodfloor
+x 23
+y 10
+end
+arch swall_1_3_half
 x 23
 y 10
 end
@@ -5226,100 +5252,4 @@ arch button_plate
 x 29
 y 22
 connected 61
-end
-arch big_dragon
-x 1
-y 11
-end
-More
-arch big_dragon_2
-x 2
-y 11
-end
-More
-arch big_dragon_3
-x 3
-y 11
-end
-More
-arch big_dragon_4
-x 1
-y 12
-end
-More
-arch big_dragon_5
-x 2
-y 12
-end
-More
-arch big_dragon_6
-x 3
-y 12
-end
-arch big_dragon
-x 11
-y 13
-end
-More
-arch big_dragon_2
-x 12
-y 13
-end
-More
-arch big_dragon_3
-x 13
-y 13
-end
-More
-arch big_dragon_4
-x 11
-y 14
-end
-More
-arch big_dragon_5
-x 12
-y 14
-end
-More
-arch big_dragon_6
-x 13
-y 14
-end
-arch big_dragon
-x 12
-y 16
-end
-More
-arch big_dragon_2
-x 13
-y 16
-end
-More
-arch big_dragon_3
-x 14
-y 16
-end
-More
-arch big_dragon_4
-x 12
-y 17
-end
-More
-arch big_dragon_5
-x 13
-y 17
-end
-More
-arch big_dragon_6
-x 14
-y 17
-end
-arch dragon
-x 21
-y 15
-end
-More
-arch dragon_2
-x 22
-y 15
 end

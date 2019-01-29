@@ -1,12 +1,15 @@
 arch map
+name Adventurers Guild, 2nd Floor
+difficulty 40
 region stoneville
+width 32
+height 32
+enter_x 9
+enter_y 26
 msg
-Creator: Viola Krings
-Email: 
-Date: Tue Jul 15 10:58:35 1997
+Created:  1997-07-15 Viola Krings
+Modified: 2012-02-01 Rick Tanner
 endmsg
-x 32
-y 32
 end
 arch woodfloor
 end
@@ -475,6 +478,10 @@ x 2
 y 11
 end
 arch woodfloor
+x 2
+y 12
+end
+arch dread
 x 2
 y 12
 end
@@ -2233,9 +2240,7 @@ connected 4
 end
 arch magic_mouth
 msg
-Practicing against floating,
-spellcasting monsters - please don't
-damage the generators.
+Practicing against floating, spellcasting monsters - please don't damage the generators.
 endmsg
 x 11
 y 15
@@ -2586,8 +2591,7 @@ arch lich
 name Tarsham, the Lich
 msg
 @match *
-Die, fool! I'm not a practicing
-target, I'm your doom
+Die, fool! I'm not a practicing target, I'm your doom!!
 endmsg
 x 13
 y 5
@@ -2634,9 +2638,7 @@ connected 3
 end
 arch magic_mouth
 msg
-Undead practicing room - please leave
-generators intact to allow some
-practice to those who come after you.
+Undead practicing room - please leave generators intact to allow some practice to those who come after you.
 endmsg
 x 13
 y 11
@@ -3139,7 +3141,7 @@ arch door_look_2
 name temple door
 x 15
 y 29
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 15
@@ -3304,6 +3306,7 @@ x 16
 y 24
 friendly 1
 unaggressive 1
+stand_still 1
 end
 arch woodfloor
 x 16
@@ -3490,6 +3493,7 @@ end
 arch altar_gaea
 x 17
 y 24
+level 120
 end
 arch woodfloor
 x 17
@@ -3666,6 +3670,7 @@ x 18
 y 24
 friendly 1
 unaggressive 1
+stand_still 1
 end
 arch woodfloor
 x 18
@@ -3829,10 +3834,8 @@ end
 arch sign
 name challenge with reward
 msg
-We hope to provide you with a
-challange with this practicing
-compartment.
-              The Guild
+We hope to provide you with a challange with this practicing compartment.
+ - The Guild
 endmsg
 x 19
 y 19
@@ -4101,6 +4104,7 @@ x 20
 y 24
 friendly 1
 unaggressive 1
+stand_still 1
 end
 arch woodfloor
 x 20
@@ -4332,6 +4336,7 @@ end
 arch altar_devourers
 x 21
 y 24
+level 120
 end
 arch woodfloor
 x 21
@@ -4379,6 +4384,10 @@ arch random_wealth
 x 22
 y 1
 end
+arch shadowtiger
+x 22
+y 1
+end
 arch woodfloor
 x 22
 y 2
@@ -4412,6 +4421,11 @@ x 22
 y 5
 end
 arch woodfloor
+x 22
+y 6
+end
+arch big_wiz
+name Barsh, the wizard
 x 22
 y 6
 end
@@ -4476,6 +4490,10 @@ arch woodfloor
 x 22
 y 18
 end
+arch behemoth
+x 22
+y 18
+end
 arch woodfloor
 x 22
 y 19
@@ -4522,6 +4540,7 @@ x 22
 y 24
 friendly 1
 unaggressive 1
+stand_still 1
 end
 arch woodfloor
 x 22
@@ -4625,6 +4644,10 @@ arch woodfloor
 x 23
 y 11
 end
+arch DK
+x 23
+y 11
+end
 arch woodfloor
 x 23
 y 12
@@ -4680,12 +4703,16 @@ hp 500
 maxhp 500
 dam 20
 wc -20
-ac -20
+ac -10
 x 23
 y 20
 level 20
 end
 arch woodfloor
+x 23
+y 21
+end
+arch Cwyvern
 x 23
 y 21
 end
@@ -4906,6 +4933,7 @@ maxsp 20
 x 24
 y 24
 friendly 1
+stand_still 1
 end
 arch woodfloor
 x 24
@@ -4981,6 +5009,10 @@ arch woodfloor
 x 25
 y 5
 end
+arch Balrog
+x 25
+y 5
+end
 arch woodfloor
 x 25
 y 6
@@ -5049,6 +5081,10 @@ arch woodfloor
 x 25
 y 17
 end
+arch dread
+x 25
+y 17
+end
 arch woodfloor
 x 25
 y 18
@@ -5096,6 +5132,7 @@ end
 arch altar_lythander
 x 25
 y 24
+level 120
 end
 arch woodfloor
 x 25
@@ -5275,16 +5312,17 @@ arch elf
 name Nathirel, the elf priest
 msg
 @match *
-Come to Lythanders altar and pray. Of
-you are accepted, you can call
-yourself lucky.
+Come to Lythanders altar and pray.  If you are accepted, you can call yourself lucky.
 endmsg
+face elf.151
 x 26
 y 24
 type 0
+move_type walk
 monster 1
 friendly 1
 unaggressive 1
+stand_still 1
 end
 arch woodfloor
 x 26
@@ -5373,6 +5411,10 @@ x 27
 y 10
 end
 arch woodfloor
+x 27
+y 11
+end
+arch titan
 x 27
 y 11
 end
@@ -5663,13 +5705,12 @@ arch dwarf_priest
 name Bordak, the dwarf priest
 msg
 @match *
-Pray at this altar, my son! It will
-give you strength and protect you from
-fire.
+Pray at this altar, my son! It will give you strength and protect you from fire.
 endmsg
 x 28
 y 24
 friendly 1
+stand_still 1
 end
 arch woodfloor
 x 28
@@ -5805,6 +5846,10 @@ arch woodfloor
 x 29
 y 16
 end
+arch gaelotroll
+x 29
+y 16
+end
 arch woodfloor
 x 29
 y 17
@@ -5860,6 +5905,7 @@ end
 arch altar_mostrai
 x 29
 y 24
+level 120
 end
 arch woodfloor
 x 29
@@ -6015,6 +6061,11 @@ arch woodfloor
 x 30
 y 19
 end
+arch dragonman
+name Sharkharash
+x 30
+y 19
+end
 arch woodfloor
 x 30
 y 20
@@ -6051,13 +6102,12 @@ arch dwarf_priest
 name Lorik, the dwarf priest
 msg
 @match *
-Pray at this altar, my son! It will
-give you strength and protect you from
-fire.
+Pray at this altar, my son! It will give you strength and protect you from fire.
 endmsg
 x 30
 y 24
 friendly 1
+stand_still 1
 end
 arch woodfloor
 x 30
@@ -6352,50 +6402,4 @@ end
 arch wall_2_2_4
 x 31
 y 31
-end
-arch dread
-x 2
-y 12
-end
-arch shadowtiger
-x 22
-y 1
-end
-arch big_wiz
-name Barsh, the wizard
-x 22
-y 6
-end
-arch behemoth
-x 22
-y 18
-end
-arch DK
-x 23
-y 11
-end
-arch Cwyvern
-x 23
-y 21
-end
-arch Balrog
-x 25
-y 5
-end
-arch dread
-x 25
-y 17
-end
-arch titan
-x 27
-y 11
-end
-arch gaelotroll
-x 29
-y 16
-end
-arch dragonman
-name Sharkharash
-x 30
-y 19
 end

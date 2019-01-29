@@ -1,15 +1,15 @@
 arch map
-region lakecountry
+name Marsh Maze
 reset_timeout 7200
-difficulty 5
+difficulty 15
+region lakecountry
 width 20
 height 20
-enter_x 1
-enter_y 1
+enter_x 10
+enter_y 2
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue May  9 03:25:01 1995
+Created:  1995-05-09
+Modified: 2012-02-07 Rick Tanner
 endmsg
 end
 arch swamp
@@ -950,12 +950,7 @@ x 10
 end
 arch magic_mouth
 msg
-  The marsh comes to life at this
-section. Mud stirring and and turns.
-  A big mouth of mud forms. It seems to 
-sense you. It rises and hesitates before
-you, as if regarding you
-for permission.
+The marsh comes to life at this section.  Mud stirring and turns.  A big mouth of mud forms.  It seems to sense you.  It rises and hesitates before you, as if regarding you for permission.
 endmsg
 x 10
 y 1
@@ -966,7 +961,7 @@ y 1
 end
 arch magic_ear
 msg
-@match slurp|Slurp|swallow|Swallow
+@match slurp|swallow
 Click.
 endmsg
 x 10
@@ -1867,12 +1862,7 @@ y 15
 end
 arch magic_mouth
 msg
-  The marsh comes to life at this
-section. Mud stirring and and turns.
-  A big mouth of mud forms. It seems to 
-sense you. It rises and hesitates before
-you, as if regarding you
-for permission.
+The marsh comes to life at this section.  Mud stirring and turns.  A big mouth of mud forms.  It seems to sense you.  It rises and hesitates before you, as if regarding you for permission.
 endmsg
 x 18
 y 16
@@ -1883,7 +1873,7 @@ y 16
 end
 arch magic_ear
 msg
-@match slurp|Slurp|swallow|Swallow
+@match slurp|swallow
 Click.
 endmsg
 x 18

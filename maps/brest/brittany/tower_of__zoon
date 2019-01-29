@@ -1,13 +1,12 @@
 arch map
+name Tower of Zoon
 region brest
-name tower_of__zoon
+width 40
+height 40
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue May 31 16:39:55 1994
+Created:  1994-02-31
+Modified: 2012-01-26 Rick Tanner
 endmsg
-x 40
-y 40
 end
 arch dirtfloor
 end
@@ -22,7 +21,7 @@ end
 arch dirtfloor
 y 2
 end
-arch oakdoor
+arch oakdoor_1
 slaying /world/world_107_123
 hp 30
 sp 0
@@ -263,10 +262,7 @@ end
 arch sign
 name Tower of  Zoon
 msg
-Lord Zoon invites to step in
-And discover his treasures
-Please deposit 50 foods
-On the altar.
+Lord Zoon invites to step in and discover his treasures.  Please deposit 50 foods on the altar.
 endmsg
 x 1
 y 1
@@ -776,6 +772,10 @@ arch dirtfloor
 x 2
 y 25
 end
+arch dragon
+x 2
+y 25
+end
 arch dirtfloor
 x 2
 y 26
@@ -906,7 +906,7 @@ arch dirtfloor
 x 3
 y 2
 end
-arch vodka
+arch booze
 x 3
 y 2
 end
@@ -1050,6 +1050,10 @@ arch dirtfloor
 x 3
 y 20
 end
+arch cobra
+x 3
+y 20
+end
 arch dirtfloor
 x 3
 y 21
@@ -1134,6 +1138,10 @@ arch dirtfloor
 x 3
 y 32
 end
+arch giant
+x 3
+y 32
+end
 arch dirtfloor
 x 3
 y 33
@@ -1155,6 +1163,10 @@ x 3
 y 35
 end
 arch dirtfloor
+x 3
+y 36
+end
+arch giant
 x 3
 y 36
 end
@@ -1196,7 +1208,7 @@ arch dirtfloor
 x 4
 y 2
 end
-arch vodka_poison
+arch poison
 x 4
 y 2
 end
@@ -1332,6 +1344,10 @@ arch dirtfloor
 x 4
 y 19
 end
+arch dragon
+x 4
+y 19
+end
 arch dirtfloor
 x 4
 y 20
@@ -1365,6 +1381,10 @@ x 4
 y 23
 end
 arch dirtfloor
+x 4
+y 24
+end
+arch giant
 x 4
 y 24
 end
@@ -1448,6 +1468,10 @@ arch dirtfloor
 x 4
 y 35
 end
+arch dragon
+x 4
+y 35
+end
 arch dirtfloor
 x 4
 y 36
@@ -1498,7 +1522,7 @@ arch dirtfloor
 x 5
 y 2
 end
-arch vodka
+arch booze
 x 5
 y 2
 end
@@ -2532,11 +2556,19 @@ arch dirtfloor
 x 8
 y 24
 end
+arch dread
+x 8
+y 24
+end
 arch dirtfloor
 x 8
 y 25
 end
 arch dirtfloor
+x 8
+y 26
+end
+arch dread
 x 8
 y 26
 end
@@ -2548,11 +2580,19 @@ arch dirtfloor
 x 8
 y 28
 end
+arch dread
+x 8
+y 28
+end
 arch dirtfloor
 x 8
 y 29
 end
 arch dirtfloor
+x 8
+y 30
+end
+arch dread
 x 8
 y 30
 end
@@ -2679,6 +2719,10 @@ x 9
 y 18
 end
 arch dirtfloor
+x 9
+y 19
+end
+arch big_wiz
 x 9
 y 19
 end
@@ -3110,11 +3154,19 @@ arch dirtfloor
 x 11
 y 24
 end
+arch chinese_dragon
+x 11
+y 24
+end
 arch dirtfloor
 x 11
 y 25
 end
 arch dirtfloor
+x 11
+y 26
+end
+arch chinese_dragon
 x 11
 y 26
 end
@@ -3126,11 +3178,19 @@ arch dirtfloor
 x 11
 y 28
 end
+arch chinese_dragon
+x 11
+y 28
+end
 arch dirtfloor
 x 11
 y 29
 end
 arch dirtfloor
+x 11
+y 30
+end
+arch chinese_dragon
 x 11
 y 30
 end
@@ -3261,6 +3321,10 @@ x 12
 y 13
 end
 arch dirtfloor
+x 12
+y 14
+end
+arch titan
 x 12
 y 14
 end
@@ -3551,6 +3615,10 @@ x 13
 y 29
 end
 arch dirtfloor
+x 13
+y 30
+end
+arch troll
 x 13
 y 30
 end
@@ -3728,11 +3796,23 @@ arch dirtfloor
 x 14
 y 24
 end
+arch dragon
+x 14
+y 24
+end
 arch dirtfloor
 x 14
 y 25
 end
+arch dragon
+x 14
+y 25
+end
 arch dirtfloor
+x 14
+y 26
+end
+arch giant
 x 14
 y 26
 end
@@ -3741,6 +3821,10 @@ x 14
 y 27
 end
 arch dirtfloor
+x 14
+y 28
+end
+arch giant
 x 14
 y 28
 end
@@ -3934,6 +4018,10 @@ arch dirtfloor
 x 15
 y 26
 end
+arch giant
+x 15
+y 26
+end
 arch dirtfloor
 x 15
 y 27
@@ -3942,11 +4030,19 @@ arch dirtfloor
 x 15
 y 28
 end
+arch giant
+x 15
+y 28
+end
 arch dirtfloor
 x 15
 y 29
 end
 arch dirtfloor
+x 15
+y 30
+end
+arch giant
 x 15
 y 30
 end
@@ -4597,6 +4693,8 @@ end
 arch firewall_1
 x 17
 y 32
+arch spell_small_fireball
+end
 end
 arch dirtfloor
 x 17
@@ -5001,6 +5099,8 @@ end
 arch firechest
 x 19
 y 3
+arch spell_magic_bullet
+end
 end
 arch dirtfloor
 x 19
@@ -5009,6 +5109,8 @@ end
 arch firechest
 x 19
 y 4
+arch spell_magic_bullet
+end
 end
 arch dirtfloor
 x 19
@@ -5235,6 +5337,8 @@ end
 arch firechest
 x 20
 y 3
+arch spell_magic_bullet
+end
 end
 arch dirtfloor
 x 20
@@ -5243,6 +5347,8 @@ end
 arch firechest
 x 20
 y 4
+arch spell_magic_bullet
+end
 end
 arch dirtfloor
 x 20
@@ -5328,11 +5434,19 @@ arch dirtfloor
 x 20
 y 20
 end
+arch chinese_dragon
+x 20
+y 20
+end
 arch dirtfloor
 x 20
 y 21
 end
 arch dirtfloor
+x 20
+y 22
+end
+arch chinese_dragon
 x 20
 y 22
 end
@@ -5344,11 +5458,19 @@ arch dirtfloor
 x 20
 y 24
 end
+arch chinese_dragon
+x 20
+y 24
+end
 arch dirtfloor
 x 20
 y 25
 end
 arch dirtfloor
+x 20
+y 26
+end
+arch chinese_dragon
 x 20
 y 26
 end
@@ -5360,11 +5482,19 @@ arch dirtfloor
 x 20
 y 28
 end
+arch chinese_dragon
+x 20
+y 28
+end
 arch dirtfloor
 x 20
 y 29
 end
 arch dirtfloor
+x 20
+y 30
+end
+arch chinese_dragon
 x 20
 y 30
 end
@@ -5465,6 +5595,8 @@ end
 arch firechest
 x 21
 y 3
+arch spell_magic_bullet
+end
 end
 arch dirtfloor
 x 21
@@ -5473,6 +5605,8 @@ end
 arch firechest
 x 21
 y 4
+arch spell_magic_bullet
+end
 end
 arch dirtfloor
 x 21
@@ -5695,6 +5829,8 @@ end
 arch firechest
 x 22
 y 3
+arch spell_magic_bullet
+end
 end
 arch dirtfloor
 x 22
@@ -5703,6 +5839,8 @@ end
 arch firechest
 x 22
 y 4
+arch spell_magic_bullet
+end
 end
 arch dirtfloor
 x 22
@@ -5788,11 +5926,19 @@ arch dirtfloor
 x 22
 y 20
 end
+arch chinese_dragon
+x 22
+y 20
+end
 arch dirtfloor
 x 22
 y 21
 end
 arch dirtfloor
+x 22
+y 22
+end
+arch chinese_dragon
 x 22
 y 22
 end
@@ -5804,11 +5950,19 @@ arch dirtfloor
 x 22
 y 24
 end
+arch chinese_dragon
+x 22
+y 24
+end
 arch dirtfloor
 x 22
 y 25
 end
 arch dirtfloor
+x 22
+y 26
+end
+arch chinese_dragon
 x 22
 y 26
 end
@@ -5820,11 +5974,19 @@ arch dirtfloor
 x 22
 y 28
 end
+arch chinese_dragon
+x 22
+y 28
+end
 arch dirtfloor
 x 22
 y 29
 end
 arch dirtfloor
+x 22
+y 30
+end
+arch chinese_dragon
 x 22
 y 30
 end
@@ -5925,6 +6087,8 @@ end
 arch firechest
 x 23
 y 3
+arch spell_magic_bullet
+end
 end
 arch dirtfloor
 x 23
@@ -5933,6 +6097,8 @@ end
 arch firechest
 x 23
 y 4
+arch spell_magic_bullet
+end
 end
 arch dirtfloor
 x 23
@@ -6155,6 +6321,8 @@ end
 arch firechest
 x 24
 y 3
+arch spell_magic_bullet
+end
 end
 arch dirtfloor
 x 24
@@ -6163,6 +6331,8 @@ end
 arch firechest
 x 24
 y 4
+arch spell_magic_bullet
+end
 end
 arch dirtfloor
 x 24
@@ -6248,11 +6418,19 @@ arch dirtfloor
 x 24
 y 20
 end
+arch chinese_dragon
+x 24
+y 20
+end
 arch dirtfloor
 x 24
 y 21
 end
 arch dirtfloor
+x 24
+y 22
+end
+arch chinese_dragon
 x 24
 y 22
 end
@@ -6264,11 +6442,19 @@ arch dirtfloor
 x 24
 y 24
 end
+arch chinese_dragon
+x 24
+y 24
+end
 arch dirtfloor
 x 24
 y 25
 end
 arch dirtfloor
+x 24
+y 26
+end
+arch chinese_dragon
 x 24
 y 26
 end
@@ -6280,11 +6466,19 @@ arch dirtfloor
 x 24
 y 28
 end
+arch chinese_dragon
+x 24
+y 28
+end
 arch dirtfloor
 x 24
 y 29
 end
 arch dirtfloor
+x 24
+y 30
+end
+arch chinese_dragon
 x 24
 y 30
 end
@@ -6728,7 +6922,15 @@ arch dirtfloor
 x 26
 y 13
 end
+arch dragon
+x 26
+y 13
+end
 arch dirtfloor
+x 26
+y 14
+end
+arch dragon
 x 26
 y 14
 end
@@ -6736,7 +6938,15 @@ arch dirtfloor
 x 26
 y 15
 end
+arch dragon
+x 26
+y 15
+end
 arch dirtfloor
+x 26
+y 16
+end
+arch dragon
 x 26
 y 16
 end
@@ -7244,3125 +7454,2943 @@ arch dirtfloor
 x 28
 y 13
 end
-arch dirtfloor
-x 28
-y 14
-end
-arch dirtfloor
-x 28
-y 15
-end
-arch dirtfloor
-x 28
-y 16
-end
-arch dirtfloor
-x 28
-y 17
-end
-arch generate_dragon
-x 28
-y 17
-end
-arch dirtfloor
-x 28
-y 18
-end
-arch bwall_0
-x 28
-y 18
-end
-arch dirtfloor
-x 28
-y 19
-end
-arch dirtfloor
-x 28
-y 20
-end
-arch dirtfloor
-x 28
-y 21
-end
-arch dirtfloor
-x 28
-y 22
-end
-arch dirtfloor
-x 28
-y 23
-end
-arch dirtfloor
-x 28
-y 24
-end
-arch dirtfloor
-x 28
-y 25
-end
-arch dirtfloor
-x 28
-y 26
-end
-arch dirtfloor
-x 28
-y 27
-end
-arch dirtfloor
-x 28
-y 28
-end
-arch bwall_0
-x 28
-y 28
-end
-arch dirtfloor
-x 28
-y 29
-end
-arch dirtfloor
-x 28
-y 30
-end
-arch dirtfloor
-x 28
-y 31
-end
-arch dirtfloor
-x 28
-y 32
-end
-arch bwall_0
-x 28
-y 32
-end
-arch dirtfloor
-x 28
-y 33
-end
-arch blob
-x 28
-y 33
-end
-arch dirtfloor
-x 28
-y 34
-end
-arch blob
-x 28
-y 34
-end
-arch dirtfloor
-x 28
-y 35
-end
-arch blob
-x 28
-y 35
-end
-arch dirtfloor
-x 28
-y 36
-end
-arch blob
-x 28
-y 36
-end
-arch dirtfloor
-x 28
-y 37
-end
-arch blob
-x 28
-y 37
-end
-arch dirtfloor
-x 28
-y 38
-end
-arch blob
-x 28
-y 38
-end
-arch dirtfloor
-x 28
-y 39
-end
-arch bwall_0
-x 28
-y 39
-end
-arch dirtfloor
-x 29
-end
-arch bwall_0
-x 29
-end
-arch dirtfloor
-x 29
-y 1
-end
-arch kobold
-x 29
-y 1
-end
-arch dirtfloor
-x 29
-y 2
-end
-arch bwall_0
-x 29
-y 2
-end
-arch dirtfloor
-x 29
-y 3
-end
-arch dirtfloor
-x 29
-y 4
-end
-arch dirtfloor
-x 29
-y 5
-end
-arch dirtfloor
-x 29
-y 6
-end
-arch dirtfloor
-x 29
-y 7
-end
-arch dirtfloor
-x 29
-y 8
-end
-arch dirtfloor
-x 29
-y 9
-end
-arch dirtfloor
-x 29
-y 10
-end
-arch dirtfloor
-x 29
-y 11
-end
-arch dirtfloor
-x 29
-y 12
-end
-arch dirtfloor
-x 29
-y 13
-end
-arch dirtfloor
-x 29
-y 14
-end
-arch dirtfloor
-x 29
-y 15
-end
-arch dirtfloor
-x 29
-y 16
-end
-arch dirtfloor
-x 29
-y 17
-end
-arch generate_dragon
-x 29
-y 17
-end
-arch dirtfloor
-x 29
-y 18
-end
-arch bwall_0
-x 29
-y 18
-end
-arch dirtfloor
-x 29
-y 19
-end
-arch dirtfloor
-x 29
-y 20
-end
-arch dirtfloor
-x 29
-y 21
-end
-arch dirtfloor
-x 29
-y 22
-end
-arch dirtfloor
-x 29
-y 23
-end
-arch dirtfloor
-x 29
-y 24
-end
-arch dirtfloor
-x 29
-y 25
-end
-arch dirtfloor
-x 29
-y 26
-end
-arch dirtfloor
-x 29
-y 27
-end
-arch dirtfloor
-x 29
-y 28
-end
-arch bwall_0
-x 29
-y 28
-end
-arch dirtfloor
-x 29
-y 29
-end
-arch dirtfloor
-x 29
-y 30
-end
-arch dirtfloor
-x 29
-y 31
-end
-arch dirtfloor
-x 29
-y 32
-end
-arch bwall_0
-x 29
-y 32
-end
-arch dirtfloor
-x 29
-y 33
-end
-arch door_1
-x 29
-y 33
-end
-arch dirtfloor
-x 29
-y 34
-end
-arch door_1
-x 29
-y 34
-end
-arch dirtfloor
-x 29
-y 35
-end
-arch door_1
-x 29
-y 35
-end
-arch dirtfloor
-x 29
-y 36
-end
-arch door_1
-x 29
-y 36
-end
-arch dirtfloor
-x 29
-y 37
-end
-arch door_1
-x 29
-y 37
-end
-arch dirtfloor
-x 29
-y 38
-end
-arch door_1
-x 29
-y 38
-end
-arch dirtfloor
-x 29
-y 39
-end
-arch bwall_0
-x 29
-y 39
-end
-arch dirtfloor
-x 30
-end
-arch bwall_0
-x 30
-end
-arch dirtfloor
-x 30
-y 1
-end
-arch kobold
-x 30
-y 1
-end
-arch dirtfloor
-x 30
-y 2
-end
-arch bwall_0
-x 30
-y 2
-end
-arch dirtfloor
-x 30
-y 3
-end
-arch dirtfloor
-x 30
-y 4
-end
-arch dirtfloor
-x 30
-y 5
-end
-arch dirtfloor
-x 30
-y 6
-end
-arch dirtfloor
-x 30
-y 7
-end
-arch dirtfloor
-x 30
-y 8
-end
-arch dirtfloor
-x 30
-y 9
-end
-arch dirtfloor
-x 30
-y 10
-end
-arch dirtfloor
-x 30
-y 11
-end
-arch dirtfloor
-x 30
-y 12
-end
-arch dirtfloor
-x 30
-y 13
-end
-arch dirtfloor
-x 30
-y 14
-end
-arch dirtfloor
-x 30
-y 15
-end
-arch dirtfloor
-x 30
-y 16
-end
-arch dirtfloor
-x 30
-y 17
-end
-arch generate_dragon
-x 30
-y 17
-end
-arch dirtfloor
-x 30
-y 18
-end
-arch bwall_0
-x 30
-y 18
-end
-arch dirtfloor
-x 30
-y 19
-end
-arch dirtfloor
-x 30
-y 20
-end
-arch dirtfloor
-x 30
-y 21
-end
-arch dirtfloor
-x 30
-y 22
-end
-arch dirtfloor
-x 30
-y 23
-end
-arch dirtfloor
-x 30
-y 24
-end
-arch dirtfloor
-x 30
-y 25
-end
-arch dirtfloor
-x 30
-y 26
-end
-arch dirtfloor
-x 30
-y 27
-end
-arch dirtfloor
-x 30
-y 28
-end
-arch bwall_0
-x 30
-y 28
-end
-arch dirtfloor
-x 30
-y 29
-end
-arch dirtfloor
-x 30
-y 30
-end
-arch dirtfloor
-x 30
-y 31
-end
-arch dirtfloor
-x 30
-y 32
-end
-arch bwall_0
-x 30
-y 32
-end
-arch dirtfloor
-x 30
-y 33
-end
-arch dirtfloor
-x 30
-y 34
-end
-arch dirtfloor
-x 30
-y 35
-end
-arch dirtfloor
-x 30
-y 36
-end
-arch dirtfloor
-x 30
-y 37
-end
-arch dirtfloor
-x 30
-y 38
-end
-arch dirtfloor
-x 30
-y 39
-end
-arch bwall_0
-x 30
-y 39
-end
-arch dirtfloor
-x 31
-end
-arch bwall_0
-x 31
-end
-arch dirtfloor
-x 31
-y 1
-end
-arch kobold
-x 31
-y 1
-end
-arch dirtfloor
-x 31
-y 2
-end
-arch bwall_0
-x 31
-y 2
-end
-arch dirtfloor
-x 31
-y 3
-end
-arch dirtfloor
-x 31
-y 4
-end
-arch dirtfloor
-x 31
-y 5
-end
-arch dirtfloor
-x 31
-y 6
-end
-arch dirtfloor
-x 31
-y 7
-end
-arch dirtfloor
-x 31
-y 8
-end
-arch dirtfloor
-x 31
-y 9
-end
-arch dirtfloor
-x 31
-y 10
-end
-arch dirtfloor
-x 31
-y 11
-end
-arch dirtfloor
-x 31
-y 12
-end
-arch dirtfloor
-x 31
-y 13
-end
-arch dirtfloor
-x 31
-y 14
-end
-arch dirtfloor
-x 31
-y 15
-end
-arch dirtfloor
-x 31
-y 16
-end
-arch dirtfloor
-x 31
-y 17
-end
-arch generate_dragon
-x 31
-y 17
-end
-arch dirtfloor
-x 31
-y 18
-end
-arch bwall_0
-x 31
-y 18
-end
-arch dirtfloor
-x 31
-y 19
-end
-arch dungeon_magic
-x 31
-y 19
-end
-arch dirtfloor
-x 31
-y 20
-end
-arch dungeon_magic
-x 31
-y 20
-end
-arch dirtfloor
-x 31
-y 21
-end
-arch dirtfloor
-x 31
-y 22
-end
-arch dirtfloor
-x 31
-y 23
-end
-arch dirtfloor
-x 31
-y 24
-end
-arch dungeon_magic
-x 31
-y 24
-end
-arch dirtfloor
-x 31
-y 25
-end
-arch dungeon_magic
-x 31
-y 25
-end
-arch dirtfloor
-x 31
-y 26
-end
-arch dungeon_magic
-x 31
-y 26
-end
-arch dirtfloor
-x 31
-y 27
-end
-arch dungeon_magic
-x 31
-y 27
-end
-arch dirtfloor
-x 31
-y 28
-end
-arch bwall_0
-x 31
-y 28
-end
-arch dirtfloor
-x 31
-y 29
-end
-arch dirtfloor
-x 31
-y 30
-end
-arch dirtfloor
-x 31
-y 31
-end
-arch dirtfloor
-x 31
-y 32
-end
-arch bwall_0
-x 31
-y 32
-end
-arch dirtfloor
-x 31
-y 33
-end
-arch dirtfloor
-x 31
-y 34
-end
-arch dirtfloor
-x 31
-y 35
-end
-arch dirtfloor
-x 31
-y 36
-end
-arch dirtfloor
-x 31
-y 37
-end
-arch dirtfloor
-x 31
-y 38
-end
-arch dirtfloor
-x 31
-y 39
-end
-arch bwall_0
-x 31
-y 39
-end
-arch dirtfloor
-x 32
-end
-arch bwall_0
-x 32
-end
-arch dirtfloor
-x 32
-y 1
-end
-arch kobold
-x 32
-y 1
-end
-arch dirtfloor
-x 32
-y 2
-end
-arch bwall_0
-x 32
-y 2
-end
-arch dirtfloor
-x 32
-y 3
-end
-arch dirtfloor
-x 32
-y 4
-end
-arch dirtfloor
-x 32
-y 5
-end
-arch dirtfloor
-x 32
-y 6
-end
-arch dirtfloor
-x 32
-y 7
-end
-arch dirtfloor
-x 32
-y 8
-end
-arch dirtfloor
-x 32
-y 9
-end
-arch dirtfloor
-x 32
-y 10
-end
-arch dirtfloor
-x 32
-y 11
-end
-arch dirtfloor
-x 32
-y 12
-end
-arch dirtfloor
-x 32
-y 13
-end
-arch dirtfloor
-x 32
-y 14
-end
-arch dirtfloor
-x 32
-y 15
-end
-arch dirtfloor
-x 32
-y 16
-end
-arch dirtfloor
-x 32
-y 17
-end
-arch generate_dragon
-x 32
-y 17
-end
-arch dirtfloor
-x 32
-y 18
-end
-arch bwall_0
-x 32
-y 18
-end
-arch dirtfloor
-x 32
-y 19
-end
-arch dungeon_magic
-x 32
-y 19
-end
-arch dirtfloor
-x 32
-y 20
-end
-arch dungeon_magic
-x 32
-y 20
-end
-arch dirtfloor
-x 32
-y 21
-end
-arch dirtfloor
-x 32
-y 22
-end
-arch dirtfloor
-x 32
-y 23
-end
-arch dirtfloor
-x 32
-y 24
-end
-arch dungeon_magic
-x 32
-y 24
-end
-arch dirtfloor
-x 32
-y 25
-end
-arch dirtfloor
-x 32
-y 26
-end
-arch dirtfloor
-x 32
-y 27
-end
-arch dirtfloor
-x 32
-y 28
-end
-arch bwall_0
-x 32
-y 28
-end
-arch dirtfloor
-x 32
-y 29
-end
-arch dirtfloor
-x 32
-y 30
-end
-arch dirtfloor
-x 32
-y 31
-end
-arch dirtfloor
-x 32
-y 32
-end
-arch bwall_0
-x 32
-y 32
-end
-arch dirtfloor
-x 32
-y 33
-end
-arch dirtfloor
-x 32
-y 34
-end
-arch dirtfloor
-x 32
-y 35
-end
-arch dirtfloor
-x 32
-y 36
-end
-arch dirtfloor
-x 32
-y 37
-end
-arch dirtfloor
-x 32
-y 38
-end
-arch dirtfloor
-x 32
-y 39
-end
-arch bwall_0
-x 32
-y 39
-end
-arch dirtfloor
-x 33
-end
-arch bwall_0
-x 33
-end
-arch dirtfloor
-x 33
-y 1
-end
-arch kobold
-x 33
-y 1
-end
-arch dirtfloor
-x 33
-y 2
-end
-arch bwall_0
-x 33
-y 2
-end
-arch dirtfloor
-x 33
-y 3
-end
-arch fire_elemental
-x 33
-y 3
-end
-arch dirtfloor
-x 33
-y 4
-end
-arch fire_elemental
-x 33
-y 4
-end
-arch dirtfloor
-x 33
-y 5
-end
-arch dirtfloor
-x 33
-y 6
-end
-arch dirtfloor
-x 33
-y 7
-end
-arch dirtfloor
-x 33
-y 8
-end
-arch dirtfloor
-x 33
-y 9
-end
-arch dirtfloor
-x 33
-y 10
-end
-arch dirtfloor
-x 33
-y 11
-end
-arch dirtfloor
-x 33
-y 12
-end
-arch dirtfloor
-x 33
-y 13
-end
-arch dirtfloor
-x 33
-y 14
-end
-arch dirtfloor
-x 33
-y 15
-end
-arch dirtfloor
-x 33
-y 16
-end
-arch dirtfloor
-x 33
-y 17
-end
-arch generate_dragon
-x 33
-y 17
-end
-arch dirtfloor
-x 33
-y 18
-end
-arch bwall_0
-x 33
-y 18
-end
-arch dirtfloor
-x 33
-y 19
-end
-arch dungeon_magic
-x 33
-y 19
-end
-arch dirtfloor
-x 33
-y 20
-end
-arch dungeon_magic
-x 33
-y 20
-end
-arch dirtfloor
-x 33
-y 21
-end
-arch dirtfloor
-x 33
-y 22
-end
-arch dirtfloor
-x 33
-y 23
-end
-arch dirtfloor
-x 33
-y 24
-end
-arch bwall_0
-x 33
-y 24
-end
-arch dirtfloor
-x 33
-y 25
-end
-arch dirtfloor
-x 33
-y 26
-end
-arch dirtfloor
-x 33
-y 27
-end
-arch dirtfloor
-x 33
-y 28
-end
-arch bwall_0
-x 33
-y 28
-end
-arch dirtfloor
-x 33
-y 29
-end
-arch dirtfloor
-x 33
-y 30
-end
-arch dirtfloor
-x 33
-y 31
-end
-arch dirtfloor
-x 33
-y 32
-end
-arch bwall_0
-x 33
-y 32
-end
-arch dirtfloor
-x 33
-y 33
-end
-arch dirtfloor
-x 33
-y 34
-end
-arch dirtfloor
-x 33
-y 35
-end
-arch dirtfloor
-x 33
-y 36
-end
-arch dirtfloor
-x 33
-y 37
-end
-arch dirtfloor
-x 33
-y 38
-end
-arch dirtfloor
-x 33
-y 39
-end
-arch bwall_0
-x 33
-y 39
-end
-arch dirtfloor
-x 34
-end
-arch bwall_0
-x 34
-end
-arch dirtfloor
-x 34
-y 1
-end
-arch kobold
-x 34
-y 1
-end
-arch dirtfloor
-x 34
-y 2
-end
-arch bwall_0
-x 34
-y 2
-end
-arch dirtfloor
-x 34
-y 3
-end
-arch fire_elemental
-x 34
-y 3
-end
-arch dirtfloor
-x 34
-y 4
-end
-arch fire_elemental
-x 34
-y 4
-end
-arch dirtfloor
-x 34
-y 5
-end
-arch dungeon_magic
-x 34
-y 5
-end
-arch dirtfloor
-x 34
-y 6
-end
-arch dungeon_magic
-x 34
-y 6
-end
-arch dirtfloor
-x 34
-y 7
-end
-arch dungeon_magic
-x 34
-y 7
-end
-arch dirtfloor
-x 34
-y 8
-end
-arch dungeon_magic
-x 34
-y 8
-end
-arch dirtfloor
-x 34
-y 9
-end
-arch dungeon_magic
-x 34
-y 9
-end
-arch dirtfloor
-x 34
-y 10
-end
-arch dungeon_magic
-x 34
-y 10
-end
-arch dirtfloor
-x 34
-y 11
-end
-arch dirtfloor
-x 34
-y 12
-end
-arch dirtfloor
-x 34
-y 13
-end
-arch dirtfloor
-x 34
-y 14
-end
-arch dirtfloor
-x 34
-y 15
-end
-arch dirtfloor
-x 34
-y 16
-end
-arch dirtfloor
-x 34
-y 17
-end
-arch generate_dragon
-x 34
-y 17
-end
-arch dirtfloor
-x 34
-y 18
-end
-arch bwall_0
-x 34
-y 18
-end
-arch dirtfloor
-x 34
-y 19
-end
-arch dungeon_magic
-x 34
-y 19
-end
-arch dirtfloor
-x 34
-y 20
-end
-arch dungeon_magic
-x 34
-y 20
-end
-arch dirtfloor
-x 34
-y 21
-end
-arch dirtfloor
-x 34
-y 22
-end
-arch dirtfloor
-x 34
-y 23
-end
-arch dirtfloor
-x 34
-y 24
-end
-arch bwall_0
-x 34
-y 24
-end
-arch dirtfloor
-x 34
-y 25
-end
-arch dungeon_magic
-x 34
-y 25
-end
-arch dirtfloor
-x 34
-y 26
-end
-arch dungeon_magic
-x 34
-y 26
-end
-arch dirtfloor
-x 34
-y 27
-end
-arch dungeon_magic
-x 34
-y 27
-end
-arch dirtfloor
-x 34
-y 28
-end
-arch bwall_0
-x 34
-y 28
-end
-arch dirtfloor
-x 34
-y 29
-end
-arch dirtfloor
-x 34
-y 30
-end
-arch dirtfloor
-x 34
-y 31
-end
-arch dirtfloor
-x 34
-y 32
-end
-arch bwall_0
-x 34
-y 32
-end
-arch dirtfloor
-x 34
-y 33
-end
-arch dirtfloor
-x 34
-y 34
-end
-arch dirtfloor
-x 34
-y 35
-end
-arch dirtfloor
-x 34
-y 36
-end
-arch dirtfloor
-x 34
-y 37
-end
-arch dirtfloor
-x 34
-y 38
-end
-arch dirtfloor
-x 34
-y 39
-end
-arch bwall_0
-x 34
-y 39
-end
-arch dirtfloor
-x 35
-end
-arch bwall_0
-x 35
-end
-arch dirtfloor
-x 35
-y 1
-end
-arch kobold
-x 35
-y 1
-end
-arch dirtfloor
-x 35
-y 2
-end
-arch bwall_0
-x 35
-y 2
-end
-arch dirtfloor
-x 35
-y 3
-end
-arch fire_elemental
-x 35
-y 3
-end
-arch dirtfloor
-x 35
-y 4
-end
-arch fire_elemental
-x 35
-y 4
-end
-arch dirtfloor
-x 35
-y 5
-end
-arch dungeon_magic
-x 35
-y 5
-end
-arch dirtfloor
-x 35
-y 6
-end
-arch dungeon_magic
-x 35
-y 6
-end
-arch dirtfloor
-x 35
-y 7
-end
-arch dungeon_magic
-x 35
-y 7
-end
-arch dirtfloor
-x 35
-y 8
-end
-arch dungeon_magic
-x 35
-y 8
-end
-arch dirtfloor
-x 35
-y 9
-end
-arch dungeon_magic
-x 35
-y 9
-end
-arch dirtfloor
-x 35
-y 10
-end
-arch dungeon_magic
-x 35
-y 10
-end
-arch dirtfloor
-x 35
-y 11
-end
-arch dirtfloor
-x 35
-y 12
-end
-arch dirtfloor
-x 35
-y 13
-end
-arch dirtfloor
-x 35
-y 14
-end
-arch dirtfloor
-x 35
-y 15
-end
-arch dirtfloor
-x 35
-y 16
-end
-arch dirtfloor
-x 35
-y 17
-end
-arch generate_dragon
-x 35
-y 17
-end
-arch dirtfloor
-x 35
-y 18
-end
-arch bwall_0
-x 35
-y 18
-end
-arch dirtfloor
-x 35
-y 19
-end
-arch dungeon_magic
-x 35
-y 19
-end
-arch dirtfloor
-x 35
-y 20
-end
-arch dungeon_magic
-x 35
-y 20
-end
-arch dirtfloor
-x 35
-y 21
-end
-arch dirtfloor
-x 35
-y 22
-end
-arch dirtfloor
-x 35
-y 23
-end
-arch dirtfloor
-x 35
-y 24
-end
-arch bwall_0
-x 35
-y 24
-end
-arch dirtfloor
-x 35
-y 25
-end
-arch dirtfloor
-x 35
-y 26
-end
-arch dungeon_magic
-x 35
-y 26
-end
-arch dirtfloor
-x 35
-y 27
-end
-arch dungeon_magic
-x 35
-y 27
-end
-arch dirtfloor
-x 35
-y 28
-end
-arch dirtfloor
-x 35
-y 29
-end
-arch dirtfloor
-x 35
-y 30
-end
-arch dirtfloor
-x 35
-y 31
-end
-arch dirtfloor
-x 35
-y 32
-end
-arch bwall_0
-x 35
-y 32
-end
-arch dirtfloor
-x 35
-y 33
-end
-arch dirtfloor
-x 35
-y 34
-end
-arch dirtfloor
-x 35
-y 35
-end
-arch dirtfloor
-x 35
-y 36
-end
-arch dirtfloor
-x 35
-y 37
-end
-arch dirtfloor
-x 35
-y 38
-end
-arch dirtfloor
-x 35
-y 39
-end
-arch bwall_0
-x 35
-y 39
-end
-arch dirtfloor
-x 36
-end
-arch bwall_0
-x 36
-end
-arch dirtfloor
-x 36
-y 1
-end
-arch kobold
-x 36
-y 1
-end
-arch dirtfloor
-x 36
-y 2
-end
-arch bwall_0
-x 36
-y 2
-end
-arch dirtfloor
-x 36
-y 3
-end
-arch fire_elemental
-x 36
-y 3
-end
-arch dirtfloor
-x 36
-y 4
-end
-arch fire_elemental
-x 36
-y 4
-end
-arch dirtfloor
-x 36
-y 5
-end
-arch dungeon_magic
-x 36
-y 5
-end
-arch dirtfloor
-x 36
-y 6
-end
-arch dungeon_magic
-x 36
-y 6
-end
-arch dirtfloor
-x 36
-y 7
-end
-arch dungeon_magic
-x 36
-y 7
-end
-arch dirtfloor
-x 36
-y 8
-end
-arch dungeon_magic
-x 36
-y 8
-end
-arch dirtfloor
-x 36
-y 9
-end
-arch dungeon_magic
-x 36
-y 9
-end
-arch dirtfloor
-x 36
-y 10
-end
-arch dungeon_magic
-x 36
-y 10
-end
-arch dirtfloor
-x 36
-y 11
-end
-arch dirtfloor
-x 36
-y 12
-end
-arch dirtfloor
-x 36
-y 13
-end
-arch dirtfloor
-x 36
-y 14
-end
-arch dirtfloor
-x 36
-y 15
-end
-arch dirtfloor
-x 36
-y 16
-end
-arch dirtfloor
-x 36
-y 17
-end
-arch generate_dragon
-x 36
-y 17
-end
-arch dirtfloor
-x 36
-y 18
-end
-arch bwall_0
-x 36
-y 18
-end
-arch dirtfloor
-x 36
-y 19
-end
-arch dungeon_magic
-x 36
-y 19
-end
-arch dirtfloor
-x 36
-y 20
-end
-arch bwall_0
-x 36
-y 20
-end
-arch dirtfloor
-x 36
-y 21
-end
-arch bwall_0
-x 36
-y 21
-end
-arch dirtfloor
-x 36
-y 22
-end
-arch bwall_0
-x 36
-y 22
-end
-arch dirtfloor
-x 36
-y 23
-end
-arch bwall_0
-x 36
-y 23
-end
-arch dirtfloor
-x 36
-y 24
-end
-arch bwall_0
-x 36
-y 24
-end
-arch dirtfloor
-x 36
-y 25
-end
-arch bwall_0
-x 36
-y 25
-end
-arch dirtfloor
-x 36
-y 26
-end
-arch bwall_0
-x 36
-y 26
-end
-arch dirtfloor
-x 36
-y 27
-end
-arch bwall_0
-x 36
-y 27
-end
-arch dirtfloor
-x 36
-y 28
-end
-arch bwall_0
-x 36
-y 28
-end
-arch dirtfloor
-x 36
-y 29
-end
-arch firewall_7
-x 36
-y 29
-end
-arch dirtfloor
-x 36
-y 30
-end
-arch firewall_7
-x 36
-y 30
-end
-arch dirtfloor
-x 36
-y 31
-end
-arch firewall_7
-x 36
-y 31
-end
-arch dirtfloor
-x 36
-y 32
-end
-arch bwall_0
-x 36
-y 32
-end
-arch dirtfloor
-x 36
-y 33
-end
-arch dirtfloor
-x 36
-y 34
-end
-arch dirtfloor
-x 36
-y 35
-end
-arch dirtfloor
-x 36
-y 36
-end
-arch dirtfloor
-x 36
-y 37
-end
-arch dirtfloor
-x 36
-y 38
-end
-arch dirtfloor
-x 36
-y 39
-end
-arch bwall_0
-x 36
-y 39
-end
-arch dirtfloor
-x 37
-end
-arch bwall_0
-x 37
-end
-arch dirtfloor
-x 37
-y 1
-end
-arch kobold
-x 37
-y 1
-end
-arch dirtfloor
-x 37
-y 2
-end
-arch bwall_0
-x 37
-y 2
-end
-arch dirtfloor
-x 37
-y 3
-end
-arch bwall_0
-x 37
-y 3
-end
-arch dirtfloor
-x 37
-y 4
-end
-arch bwall_0
-x 37
-y 4
-end
-arch dirtfloor
-x 37
-y 5
-end
-arch bwall_0
-x 37
-y 5
-end
-arch dirtfloor
-x 37
-y 6
-end
-arch bwall_0
-x 37
-y 6
-end
-arch dirtfloor
-x 37
-y 7
-end
-arch bwall_0
-x 37
-y 7
-end
-arch dirtfloor
-x 37
-y 8
-end
-arch bwall_0
-x 37
-y 8
-end
-arch dirtfloor
-x 37
-y 9
-end
-arch dungeon_magic
-x 37
-y 9
-end
-arch dirtfloor
-x 37
-y 10
-end
-arch bwall_0
-x 37
-y 10
-end
-arch dirtfloor
-x 37
-y 11
-end
-arch dirtfloor
-x 37
-y 12
-end
-arch dirtfloor
-x 37
-y 13
-end
-arch dirtfloor
-x 37
-y 14
-end
-arch dirtfloor
-x 37
-y 15
-end
-arch dirtfloor
-x 37
-y 16
-end
-arch dirtfloor
-x 37
-y 17
-end
-arch generate_dragon
-x 37
-y 17
-end
-arch dirtfloor
-x 37
-y 18
-end
-arch bwall_0
-x 37
-y 18
-end
-arch dirtfloor
-x 37
-y 19
-end
-arch dungeon_magic
-x 37
-y 19
-end
-arch dirtfloor
-x 37
-y 20
-end
-arch door_2
-x 37
-y 20
-end
-arch dirtfloor
-x 37
-y 21
-end
-arch random_treasure
-x 37
-y 21
-end
-arch dirtfloor
-x 37
-y 22
-end
-arch random_treasure
-x 37
-y 22
-end
-arch dirtfloor
-x 37
-y 23
-end
-arch random_treasure
-x 37
-y 23
-end
-arch dirtfloor
-x 37
-y 24
-end
-arch random_treasure
-x 37
-y 24
-end
-arch dirtfloor
-x 37
-y 25
-end
-arch random_treasure
-x 37
-y 25
-end
-arch dirtfloor
-x 37
-y 26
-end
-arch random_treasure
-x 37
-y 26
-end
-arch dirtfloor
-x 37
-y 27
-end
-arch random_treasure
-x 37
-y 27
-end
-arch dirtfloor
-x 37
-y 28
-end
-arch random_treasure
-x 37
-y 28
-end
-arch dirtfloor
-x 37
-y 29
-end
-arch random_wealth
-x 37
-y 29
-end
-arch dirtfloor
-x 37
-y 30
-end
-arch random_wealth
-x 37
-y 30
-end
-arch dirtfloor
-x 37
-y 31
-end
-arch random_artifact
-x 37
-y 31
-end
-arch dirtfloor
-x 37
-y 32
-end
-arch bwall_0
-x 37
-y 32
-end
-arch dirtfloor
-x 37
-y 33
-end
-arch dirtfloor
-x 37
-y 34
-end
-arch dirtfloor
-x 37
-y 35
-end
-arch dirtfloor
-x 37
-y 36
-end
-arch dirtfloor
-x 37
-y 37
-end
-arch dirtfloor
-x 37
-y 38
-end
-arch dirtfloor
-x 37
-y 39
-end
-arch bwall_0
-x 37
-y 39
-end
-arch dirtfloor
-x 38
-end
-arch bwall_0
-x 38
-end
-arch dirtfloor
-x 38
-y 1
-end
-arch kobold
-x 38
-y 1
-end
-arch dirtfloor
-x 38
-y 2
-end
-arch orc
-x 38
-y 2
-end
-arch dirtfloor
-x 38
-y 3
-end
-arch orc
-x 38
-y 3
-end
-arch dirtfloor
-x 38
-y 4
-end
-arch orc
-x 38
-y 4
-end
-arch dirtfloor
-x 38
-y 5
-end
-arch orc
-x 38
-y 5
-end
-arch dirtfloor
-x 38
-y 6
-end
-arch orc
-x 38
-y 6
-end
-arch dirtfloor
-x 38
-y 7
-end
-arch orc
-x 38
-y 7
-end
-arch dirtfloor
-x 38
-y 8
-end
-arch orc
-x 38
-y 8
-end
-arch dirtfloor
-x 38
-y 9
-end
-arch dungeon_magic
-x 38
-y 9
-end
-arch dirtfloor
-x 38
-y 10
-end
-arch bwall_0
-x 38
-y 10
-end
-arch dirtfloor
-x 38
-y 11
-end
-arch generate_dragon
-x 38
-y 11
-end
-arch dirtfloor
-x 38
-y 12
-end
-arch generate_dragon
-x 38
-y 12
-end
-arch dirtfloor
-x 38
-y 13
-end
-arch generate_dragon
-x 38
-y 13
-end
-arch dirtfloor
-x 38
-y 14
-end
-arch generate_dragon
-x 38
-y 14
-end
-arch dirtfloor
-x 38
-y 15
-end
-arch generate_dragon
-x 38
-y 15
-end
-arch dirtfloor
-x 38
-y 16
-end
-arch generate_dragon
-x 38
-y 16
-end
-arch dirtfloor
-x 38
-y 17
-end
-arch generate_dragon
-x 38
-y 17
-end
-arch dirtfloor
-x 38
-y 18
-end
-arch bwall_0
-x 38
-y 18
-end
-arch dirtfloor
-x 38
-y 19
-end
-arch dungeon_magic
-x 38
-y 19
-end
-arch dirtfloor
-x 38
-y 20
-end
-arch door_2
-x 38
-y 20
-end
-arch dirtfloor
-x 38
-y 21
-end
-arch random_treasure
-x 38
-y 21
-end
-arch dirtfloor
-x 38
-y 22
-end
-arch random_treasure
-x 38
-y 22
-end
-arch dirtfloor
-x 38
-y 23
-end
-arch random_treasure
-x 38
-y 23
-end
-arch dirtfloor
-x 38
-y 24
-end
-arch random_treasure
-x 38
-y 24
-end
-arch dirtfloor
-x 38
-y 25
-end
-arch random_treasure
-x 38
-y 25
-end
-arch dirtfloor
-x 38
-y 26
-end
-arch random_treasure
-x 38
-y 26
-end
-arch dirtfloor
-x 38
-y 27
-end
-arch random_treasure
-x 38
-y 27
-end
-arch dirtfloor
-x 38
-y 28
-end
-arch random_treasure
-x 38
-y 28
-end
-arch dirtfloor
-x 38
-y 29
-end
-arch random_wealth
-x 38
-y 29
-end
-arch dirtfloor
-x 38
-y 30
-end
-arch random_wealth
-x 38
-y 30
-end
-arch dirtfloor
-x 38
-y 31
-end
-arch random_artifact
-x 38
-y 31
-end
-arch dirtfloor
-x 38
-y 32
-end
-arch bwall_0
-x 38
-y 32
-end
-arch dirtfloor
-x 38
-y 33
-end
-arch dirtfloor
-x 38
-y 34
-end
-arch dirtfloor
-x 38
-y 35
-end
-arch dirtfloor
-x 38
-y 36
-end
-arch dirtfloor
-x 38
-y 37
-end
-arch dirtfloor
-x 38
-y 38
-end
-arch dirtfloor
-x 38
-y 39
-end
-arch bwall_0
-x 38
-y 39
-end
-arch dirtfloor
-x 39
-end
-arch bwall_0
-x 39
-end
-arch dirtfloor
-x 39
-y 1
-end
-arch bwall_0
-x 39
-y 1
-end
-arch dirtfloor
-x 39
-y 2
-end
-arch bwall_0
-x 39
-y 2
-end
-arch dirtfloor
-x 39
-y 3
-end
-arch bwall_0
-x 39
-y 3
-end
-arch dirtfloor
-x 39
-y 4
-end
-arch bwall_0
-x 39
-y 4
-end
-arch dirtfloor
-x 39
-y 5
-end
-arch bwall_0
-x 39
-y 5
-end
-arch dirtfloor
-x 39
-y 6
-end
-arch bwall_0
-x 39
-y 6
-end
-arch dirtfloor
-x 39
-y 7
-end
-arch bwall_0
-x 39
-y 7
-end
-arch dirtfloor
-x 39
-y 8
-end
-arch bwall_0
-x 39
-y 8
-end
-arch dirtfloor
-x 39
-y 9
-end
-arch bwall_0
-x 39
-y 9
-end
-arch dirtfloor
-x 39
-y 10
-end
-arch bwall_0
-x 39
-y 10
-end
-arch dirtfloor
-x 39
-y 11
-end
-arch bwall_0
-x 39
-y 11
-end
-arch dirtfloor
-x 39
-y 12
-end
-arch bwall_0
-x 39
-y 12
-end
-arch dirtfloor
-x 39
-y 13
-end
-arch bwall_0
-x 39
-y 13
-end
-arch dirtfloor
-x 39
-y 14
-end
-arch bwall_0
-x 39
-y 14
-end
-arch dirtfloor
-x 39
-y 15
-end
-arch bwall_0
-x 39
-y 15
-end
-arch dirtfloor
-x 39
-y 16
-end
-arch bwall_0
-x 39
-y 16
-end
-arch dirtfloor
-x 39
-y 17
-end
-arch bwall_0
-x 39
-y 17
-end
-arch dirtfloor
-x 39
-y 18
-end
-arch bwall_0
-x 39
-y 18
-end
-arch dirtfloor
-x 39
-y 19
-end
-arch bwall_0
-x 39
-y 19
-end
-arch dirtfloor
-x 39
-y 20
-end
-arch bwall_0
-x 39
-y 20
-end
-arch dirtfloor
-x 39
-y 21
-end
-arch bwall_0
-x 39
-y 21
-end
-arch dirtfloor
-x 39
-y 22
-end
-arch bwall_0
-x 39
-y 22
-end
-arch dirtfloor
-x 39
-y 23
-end
-arch bwall_0
-x 39
-y 23
-end
-arch dirtfloor
-x 39
-y 24
-end
-arch bwall_0
-x 39
-y 24
-end
-arch dirtfloor
-x 39
-y 25
-end
-arch bwall_0
-x 39
-y 25
-end
-arch dirtfloor
-x 39
-y 26
-end
-arch bwall_0
-x 39
-y 26
-end
-arch dirtfloor
-x 39
-y 27
-end
-arch bwall_0
-x 39
-y 27
-end
-arch dirtfloor
-x 39
-y 28
-end
-arch bwall_0
-x 39
-y 28
-end
-arch dirtfloor
-x 39
-y 29
-end
-arch bwall_0
-x 39
-y 29
-end
-arch dirtfloor
-x 39
-y 30
-end
-arch bwall_0
-x 39
-y 30
-end
-arch dirtfloor
-x 39
-y 31
-end
-arch bwall_0
-x 39
-y 31
-end
-arch dirtfloor
-x 39
-y 32
-end
-arch bwall_0
-x 39
-y 32
-end
-arch dirtfloor
-x 39
-y 33
-end
-arch bwall_0
-x 39
-y 33
-end
-arch dirtfloor
-x 39
-y 34
-end
-arch bwall_0
-x 39
-y 34
-end
-arch dirtfloor
-x 39
-y 35
-end
-arch bwall_0
-x 39
-y 35
-end
-arch dirtfloor
-x 39
-y 36
-end
-arch bwall_0
-x 39
-y 36
-end
-arch dirtfloor
-x 39
-y 37
-end
-arch bwall_0
-x 39
-y 37
-end
-arch dirtfloor
-x 39
-y 38
-end
-arch bwall_0
-x 39
-y 38
-end
-arch dirtfloor
-x 39
-y 39
-end
-arch bwall_0
-x 39
-y 39
-end
-arch dragon
-x 2
-y 25
-end
-arch cobra
-x 3
-y 20
-end
-arch giant
-x 3
-y 32
-end
-arch giant
-x 3
-y 36
-end
-arch dragon
-x 4
-y 19
-end
-arch giant
-x 4
-y 24
-end
-arch dragon
-x 4
-y 35
-end
-arch dread
-x 8
-y 24
-end
-arch dread
-x 8
-y 26
-end
-arch dread
-x 8
-y 28
-end
-arch dread
-x 8
-y 30
-end
-arch big_wiz
-x 9
-y 19
-end
-arch chinese_dragon
-x 11
-y 24
-end
-arch chinese_dragon
-x 11
-y 26
-end
-arch chinese_dragon
-x 11
-y 28
-end
-arch chinese_dragon
-x 11
-y 30
-end
-arch titan
-x 12
-y 14
-end
-arch troll
-x 13
-y 30
-end
-arch dragon
-x 14
-y 24
-end
-arch dragon
-x 14
-y 25
-end
-arch giant
-x 14
-y 26
-end
-arch giant
-x 14
-y 28
-end
-arch giant
-x 15
-y 26
-end
-arch giant
-x 15
-y 28
-end
-arch giant
-x 15
-y 30
-end
-arch chinese_dragon
-x 20
-y 20
-end
-arch chinese_dragon
-x 20
-y 22
-end
-arch chinese_dragon
-x 20
-y 24
-end
-arch chinese_dragon
-x 20
-y 26
-end
-arch chinese_dragon
-x 20
-y 28
-end
-arch chinese_dragon
-x 20
-y 30
-end
-arch chinese_dragon
-x 22
-y 20
-end
-arch chinese_dragon
-x 22
-y 22
-end
-arch chinese_dragon
-x 22
-y 24
-end
-arch chinese_dragon
-x 22
-y 26
-end
-arch chinese_dragon
-x 22
-y 28
-end
-arch chinese_dragon
-x 22
-y 30
-end
-arch chinese_dragon
-x 24
-y 20
-end
-arch chinese_dragon
-x 24
-y 22
-end
-arch chinese_dragon
-x 24
-y 24
-end
-arch chinese_dragon
-x 24
-y 26
-end
-arch chinese_dragon
-x 24
-y 28
-end
-arch chinese_dragon
-x 24
-y 30
-end
-arch dragon
-x 26
-y 13
-end
-arch dragon
-x 26
-y 14
-end
-arch dragon
-x 26
-y 15
-end
-arch dragon
-x 26
-y 16
-end
 arch dragon
 x 28
 y 13
+end
+arch dirtfloor
+x 28
+y 14
 end
 arch dragon
 x 28
 y 14
 end
-arch dragon
+arch dirtfloor
 x 28
 y 15
 end
 arch dragon
 x 28
+y 15
+end
+arch dirtfloor
+x 28
 y 16
+end
+arch dragon
+x 28
+y 16
+end
+arch dirtfloor
+x 28
+y 17
+end
+arch generate_dragon
+x 28
+y 17
+end
+arch dirtfloor
+x 28
+y 18
+end
+arch bwall_0
+x 28
+y 18
+end
+arch dirtfloor
+x 28
+y 19
+end
+arch dirtfloor
+x 28
+y 20
 end
 arch big_wiz
 x 28
 y 20
 end
+arch dirtfloor
+x 28
+y 21
+end
+arch dirtfloor
+x 28
+y 22
+end
+arch dirtfloor
+x 28
+y 23
+end
+arch dirtfloor
+x 28
+y 24
+end
+arch dirtfloor
+x 28
+y 25
+end
 arch big_wiz
 x 28
 y 25
+end
+arch dirtfloor
+x 28
+y 26
+end
+arch dirtfloor
+x 28
+y 27
+end
+arch dirtfloor
+x 28
+y 28
+end
+arch bwall_0
+x 28
+y 28
+end
+arch dirtfloor
+x 28
+y 29
+end
+arch dirtfloor
+x 28
+y 30
+end
+arch dirtfloor
+x 28
+y 31
+end
+arch dirtfloor
+x 28
+y 32
+end
+arch bwall_0
+x 28
+y 32
+end
+arch dirtfloor
+x 28
+y 33
+end
+arch blob
+x 28
+y 33
+end
+arch dirtfloor
+x 28
+y 34
+end
+arch blob
+x 28
+y 34
+end
+arch dirtfloor
+x 28
+y 35
+end
+arch blob
+x 28
+y 35
+end
+arch dirtfloor
+x 28
+y 36
+end
+arch blob
+x 28
+y 36
+end
+arch dirtfloor
+x 28
+y 37
+end
+arch blob
+x 28
+y 37
+end
+arch dirtfloor
+x 28
+y 38
+end
+arch blob
+x 28
+y 38
+end
+arch dirtfloor
+x 28
+y 39
+end
+arch bwall_0
+x 28
+y 39
+end
+arch dirtfloor
+x 29
+end
+arch bwall_0
+x 29
+end
+arch dirtfloor
+x 29
+y 1
+end
+arch kobold
+x 29
+y 1
+end
+arch dirtfloor
+x 29
+y 2
+end
+arch bwall_0
+x 29
+y 2
+end
+arch dirtfloor
+x 29
+y 3
+end
+arch dirtfloor
+x 29
+y 4
+end
+arch dirtfloor
+x 29
+y 5
+end
+arch dirtfloor
+x 29
+y 6
+end
+arch dirtfloor
+x 29
+y 7
+end
+arch dirtfloor
+x 29
+y 8
+end
+arch dirtfloor
+x 29
+y 9
+end
+arch dirtfloor
+x 29
+y 10
+end
+arch dirtfloor
+x 29
+y 11
+end
+arch dirtfloor
+x 29
+y 12
+end
+arch dirtfloor
+x 29
+y 13
+end
+arch dirtfloor
+x 29
+y 14
+end
+arch dirtfloor
+x 29
+y 15
+end
+arch dirtfloor
+x 29
+y 16
+end
+arch dirtfloor
+x 29
+y 17
+end
+arch generate_dragon
+x 29
+y 17
+end
+arch dirtfloor
+x 29
+y 18
+end
+arch bwall_0
+x 29
+y 18
+end
+arch dirtfloor
+x 29
+y 19
+end
+arch dirtfloor
+x 29
+y 20
+end
+arch dirtfloor
+x 29
+y 21
+end
+arch dirtfloor
+x 29
+y 22
+end
+arch dirtfloor
+x 29
+y 23
+end
+arch dirtfloor
+x 29
+y 24
+end
+arch dirtfloor
+x 29
+y 25
+end
+arch dirtfloor
+x 29
+y 26
+end
+arch dirtfloor
+x 29
+y 27
+end
+arch dirtfloor
+x 29
+y 28
+end
+arch bwall_0
+x 29
+y 28
+end
+arch dirtfloor
+x 29
+y 29
+end
+arch dirtfloor
+x 29
+y 30
+end
+arch dirtfloor
+x 29
+y 31
+end
+arch dirtfloor
+x 29
+y 32
+end
+arch bwall_0
+x 29
+y 32
+end
+arch dirtfloor
+x 29
+y 33
+end
+arch door_1
+x 29
+y 33
+end
+arch dirtfloor
+x 29
+y 34
+end
+arch door_1
+x 29
+y 34
+end
+arch dirtfloor
+x 29
+y 35
+end
+arch door_1
+x 29
+y 35
+end
+arch dirtfloor
+x 29
+y 36
+end
+arch door_1
+x 29
+y 36
+end
+arch dirtfloor
+x 29
+y 37
+end
+arch door_1
+x 29
+y 37
+end
+arch dirtfloor
+x 29
+y 38
+end
+arch door_1
+x 29
+y 38
+end
+arch dirtfloor
+x 29
+y 39
+end
+arch bwall_0
+x 29
+y 39
+end
+arch dirtfloor
+x 30
+end
+arch bwall_0
+x 30
+end
+arch dirtfloor
+x 30
+y 1
+end
+arch kobold
+x 30
+y 1
+end
+arch dirtfloor
+x 30
+y 2
+end
+arch bwall_0
+x 30
+y 2
+end
+arch dirtfloor
+x 30
+y 3
+end
+arch dirtfloor
+x 30
+y 4
+end
+arch dirtfloor
+x 30
+y 5
+end
+arch dirtfloor
+x 30
+y 6
+end
+arch dirtfloor
+x 30
+y 7
 end
 arch demon_lord
 x 30
 y 7
 end
-arch dragon
+arch dirtfloor
+x 30
+y 8
+end
+arch dirtfloor
+x 30
+y 9
+end
+arch dirtfloor
+x 30
+y 10
+end
+arch dirtfloor
+x 30
+y 11
+end
+arch dirtfloor
+x 30
+y 12
+end
+arch dirtfloor
 x 30
 y 13
 end
 arch dragon
 x 30
+y 13
+end
+arch dirtfloor
+x 30
 y 14
 end
 arch dragon
+x 30
+y 14
+end
+arch dirtfloor
 x 30
 y 15
 end
 arch dragon
 x 30
+y 15
+end
+arch dirtfloor
+x 30
 y 16
+end
+arch dragon
+x 30
+y 16
+end
+arch dirtfloor
+x 30
+y 17
+end
+arch generate_dragon
+x 30
+y 17
+end
+arch dirtfloor
+x 30
+y 18
+end
+arch bwall_0
+x 30
+y 18
+end
+arch dirtfloor
+x 30
+y 19
+end
+arch dirtfloor
+x 30
+y 20
+end
+arch dirtfloor
+x 30
+y 21
+end
+arch dirtfloor
+x 30
+y 22
+end
+arch dirtfloor
+x 30
+y 23
+end
+arch dirtfloor
+x 30
+y 24
+end
+arch dirtfloor
+x 30
+y 25
+end
+arch dirtfloor
+x 30
+y 26
+end
+arch dirtfloor
+x 30
+y 27
+end
+arch dirtfloor
+x 30
+y 28
+end
+arch bwall_0
+x 30
+y 28
+end
+arch dirtfloor
+x 30
+y 29
+end
+arch dirtfloor
+x 30
+y 30
+end
+arch dirtfloor
+x 30
+y 31
+end
+arch dirtfloor
+x 30
+y 32
+end
+arch bwall_0
+x 30
+y 32
+end
+arch dirtfloor
+x 30
+y 33
+end
+arch dirtfloor
+x 30
+y 34
+end
+arch dirtfloor
+x 30
+y 35
+end
+arch dirtfloor
+x 30
+y 36
 end
 arch big_dragon
 x 30
 y 36
+end
+arch dirtfloor
+x 30
+y 37
+end
+arch dirtfloor
+x 30
+y 38
+end
+arch dirtfloor
+x 30
+y 39
+end
+arch bwall_0
+x 30
+y 39
+end
+arch dirtfloor
+x 31
+end
+arch bwall_0
+x 31
+end
+arch dirtfloor
+x 31
+y 1
+end
+arch kobold
+x 31
+y 1
+end
+arch dirtfloor
+x 31
+y 2
+end
+arch bwall_0
+x 31
+y 2
+end
+arch dirtfloor
+x 31
+y 3
+end
+arch dirtfloor
+x 31
+y 4
+end
+arch dirtfloor
+x 31
+y 5
+end
+arch dirtfloor
+x 31
+y 6
+end
+arch dirtfloor
+x 31
+y 7
+end
+arch dirtfloor
+x 31
+y 8
+end
+arch dirtfloor
+x 31
+y 9
+end
+arch dirtfloor
+x 31
+y 10
+end
+arch dirtfloor
+x 31
+y 11
+end
+arch dirtfloor
+x 31
+y 12
+end
+arch dirtfloor
+x 31
+y 13
+end
+arch dirtfloor
+x 31
+y 14
+end
+arch dirtfloor
+x 31
+y 15
+end
+arch dirtfloor
+x 31
+y 16
+end
+arch dirtfloor
+x 31
+y 17
+end
+arch generate_dragon
+x 31
+y 17
+end
+arch dirtfloor
+x 31
+y 18
+end
+arch bwall_0
+x 31
+y 18
+end
+arch dirtfloor
+x 31
+y 19
+end
+arch dungeon_magic
+x 31
+y 19
+end
+arch dirtfloor
+x 31
+y 20
+end
+arch dungeon_magic
+x 31
+y 20
+end
+arch dirtfloor
+x 31
+y 21
+end
+arch dirtfloor
+x 31
+y 22
+end
+arch dirtfloor
+x 31
+y 23
+end
+arch dirtfloor
+x 31
+y 24
+end
+arch dungeon_magic
+x 31
+y 24
+end
+arch dirtfloor
+x 31
+y 25
+end
+arch dungeon_magic
+x 31
+y 25
+end
+arch dirtfloor
+x 31
+y 26
+end
+arch dungeon_magic
+x 31
+y 26
+end
+arch dirtfloor
+x 31
+y 27
+end
+arch dungeon_magic
+x 31
+y 27
+end
+arch dirtfloor
+x 31
+y 28
+end
+arch bwall_0
+x 31
+y 28
+end
+arch dirtfloor
+x 31
+y 29
+end
+arch dirtfloor
+x 31
+y 30
+end
+arch dirtfloor
+x 31
+y 31
+end
+arch dirtfloor
+x 31
+y 32
+end
+arch bwall_0
+x 31
+y 32
+end
+arch dirtfloor
+x 31
+y 33
 end
 arch big_dragon
 x 31
 y 33
 end
-arch dragon
+arch dirtfloor
+x 31
+y 34
+end
+arch dirtfloor
+x 31
+y 35
+end
+arch dirtfloor
+x 31
+y 36
+end
+arch dirtfloor
+x 31
+y 37
+end
+arch dirtfloor
+x 31
+y 38
+end
+arch dirtfloor
+x 31
+y 39
+end
+arch bwall_0
+x 31
+y 39
+end
+arch dirtfloor
+x 32
+end
+arch bwall_0
+x 32
+end
+arch dirtfloor
+x 32
+y 1
+end
+arch kobold
+x 32
+y 1
+end
+arch dirtfloor
+x 32
+y 2
+end
+arch bwall_0
+x 32
+y 2
+end
+arch dirtfloor
+x 32
+y 3
+end
+arch dirtfloor
+x 32
+y 4
+end
+arch dirtfloor
+x 32
+y 5
+end
+arch dirtfloor
+x 32
+y 6
+end
+arch dirtfloor
+x 32
+y 7
+end
+arch dirtfloor
+x 32
+y 8
+end
+arch dirtfloor
+x 32
+y 9
+end
+arch dirtfloor
+x 32
+y 10
+end
+arch dirtfloor
+x 32
+y 11
+end
+arch dirtfloor
+x 32
+y 12
+end
+arch dirtfloor
 x 32
 y 13
 end
 arch dragon
 x 32
+y 13
+end
+arch dirtfloor
+x 32
 y 14
 end
 arch dragon
+x 32
+y 14
+end
+arch dirtfloor
 x 32
 y 15
 end
 arch dragon
 x 32
+y 15
+end
+arch dirtfloor
+x 32
 y 16
+end
+arch dragon
+x 32
+y 16
+end
+arch dirtfloor
+x 32
+y 17
+end
+arch generate_dragon
+x 32
+y 17
+end
+arch dirtfloor
+x 32
+y 18
+end
+arch bwall_0
+x 32
+y 18
+end
+arch dirtfloor
+x 32
+y 19
+end
+arch dungeon_magic
+x 32
+y 19
+end
+arch dirtfloor
+x 32
+y 20
+end
+arch dungeon_magic
+x 32
+y 20
+end
+arch dirtfloor
+x 32
+y 21
+end
+arch dirtfloor
+x 32
+y 22
+end
+arch dirtfloor
+x 32
+y 23
+end
+arch dirtfloor
+x 32
+y 24
+end
+arch dungeon_magic
+x 32
+y 24
+end
+arch dirtfloor
+x 32
+y 25
+end
+arch dirtfloor
+x 32
+y 26
+end
+arch dirtfloor
+x 32
+y 27
+end
+arch dirtfloor
+x 32
+y 28
+end
+arch bwall_0
+x 32
+y 28
+end
+arch dirtfloor
+x 32
+y 29
+end
+arch dirtfloor
+x 32
+y 30
+end
+arch dirtfloor
+x 32
+y 31
+end
+arch dirtfloor
+x 32
+y 32
+end
+arch bwall_0
+x 32
+y 32
+end
+arch dirtfloor
+x 32
+y 33
+end
+arch dirtfloor
+x 32
+y 34
+end
+arch dirtfloor
+x 32
+y 35
+end
+arch dirtfloor
+x 32
+y 36
+end
+arch dirtfloor
+x 32
+y 37
+end
+arch dirtfloor
+x 32
+y 38
+end
+arch dirtfloor
+x 32
+y 39
+end
+arch bwall_0
+x 32
+y 39
+end
+arch dirtfloor
+x 33
+end
+arch bwall_0
+x 33
+end
+arch dirtfloor
+x 33
+y 1
+end
+arch kobold
+x 33
+y 1
+end
+arch dirtfloor
+x 33
+y 2
+end
+arch bwall_0
+x 33
+y 2
+end
+arch dirtfloor
+x 33
+y 3
+end
+arch fire_elemental
+x 33
+y 3
+end
+arch dirtfloor
+x 33
+y 4
+end
+arch fire_elemental
+x 33
+y 4
+end
+arch dirtfloor
+x 33
+y 5
+end
+arch dirtfloor
+x 33
+y 6
+end
+arch dirtfloor
+x 33
+y 7
+end
+arch dirtfloor
+x 33
+y 8
+end
+arch dirtfloor
+x 33
+y 9
+end
+arch dirtfloor
+x 33
+y 10
+end
+arch dirtfloor
+x 33
+y 11
+end
+arch dirtfloor
+x 33
+y 12
+end
+arch dirtfloor
+x 33
+y 13
+end
+arch dirtfloor
+x 33
+y 14
+end
+arch dirtfloor
+x 33
+y 15
+end
+arch dirtfloor
+x 33
+y 16
+end
+arch dirtfloor
+x 33
+y 17
+end
+arch generate_dragon
+x 33
+y 17
+end
+arch dirtfloor
+x 33
+y 18
+end
+arch bwall_0
+x 33
+y 18
+end
+arch dirtfloor
+x 33
+y 19
+end
+arch dungeon_magic
+x 33
+y 19
+end
+arch dirtfloor
+x 33
+y 20
+end
+arch dungeon_magic
+x 33
+y 20
+end
+arch dirtfloor
+x 33
+y 21
+end
+arch dirtfloor
+x 33
+y 22
+end
+arch dirtfloor
+x 33
+y 23
+end
+arch dirtfloor
+x 33
+y 24
+end
+arch bwall_0
+x 33
+y 24
+end
+arch dirtfloor
+x 33
+y 25
+end
+arch dirtfloor
+x 33
+y 26
+end
+arch dirtfloor
+x 33
+y 27
+end
+arch dirtfloor
+x 33
+y 28
+end
+arch bwall_0
+x 33
+y 28
+end
+arch dirtfloor
+x 33
+y 29
+end
+arch dirtfloor
+x 33
+y 30
+end
+arch dirtfloor
+x 33
+y 31
+end
+arch dirtfloor
+x 33
+y 32
+end
+arch bwall_0
+x 33
+y 32
+end
+arch dirtfloor
+x 33
+y 33
+end
+arch dirtfloor
+x 33
+y 34
+end
+arch dirtfloor
+x 33
+y 35
+end
+arch dirtfloor
+x 33
+y 36
 end
 arch big_dragon
 x 33
 y 36
 end
-arch dragon
+arch dirtfloor
+x 33
+y 37
+end
+arch dirtfloor
+x 33
+y 38
+end
+arch dirtfloor
+x 33
+y 39
+end
+arch bwall_0
+x 33
+y 39
+end
+arch dirtfloor
+x 34
+end
+arch bwall_0
+x 34
+end
+arch dirtfloor
+x 34
+y 1
+end
+arch kobold
+x 34
+y 1
+end
+arch dirtfloor
+x 34
+y 2
+end
+arch bwall_0
+x 34
+y 2
+end
+arch dirtfloor
+x 34
+y 3
+end
+arch fire_elemental
+x 34
+y 3
+end
+arch dirtfloor
+x 34
+y 4
+end
+arch fire_elemental
+x 34
+y 4
+end
+arch dirtfloor
+x 34
+y 5
+end
+arch dungeon_magic
+x 34
+y 5
+end
+arch dirtfloor
+x 34
+y 6
+end
+arch dungeon_magic
+x 34
+y 6
+end
+arch dirtfloor
+x 34
+y 7
+end
+arch dungeon_magic
+x 34
+y 7
+end
+arch dirtfloor
+x 34
+y 8
+end
+arch dungeon_magic
+x 34
+y 8
+end
+arch dirtfloor
+x 34
+y 9
+end
+arch dungeon_magic
+x 34
+y 9
+end
+arch dirtfloor
+x 34
+y 10
+end
+arch dungeon_magic
+x 34
+y 10
+end
+arch dirtfloor
+x 34
+y 11
+end
+arch dirtfloor
+x 34
+y 12
+end
+arch dirtfloor
 x 34
 y 13
 end
 arch dragon
 x 34
+y 13
+end
+arch dirtfloor
+x 34
 y 14
 end
 arch dragon
+x 34
+y 14
+end
+arch dirtfloor
 x 34
 y 15
 end
 arch dragon
 x 34
+y 15
+end
+arch dirtfloor
+x 34
 y 16
+end
+arch dragon
+x 34
+y 16
+end
+arch dirtfloor
+x 34
+y 17
+end
+arch generate_dragon
+x 34
+y 17
+end
+arch dirtfloor
+x 34
+y 18
+end
+arch bwall_0
+x 34
+y 18
+end
+arch dirtfloor
+x 34
+y 19
+end
+arch dungeon_magic
+x 34
+y 19
+end
+arch dirtfloor
+x 34
+y 20
+end
+arch dungeon_magic
+x 34
+y 20
+end
+arch dirtfloor
+x 34
+y 21
+end
+arch dirtfloor
+x 34
+y 22
+end
+arch dirtfloor
+x 34
+y 23
+end
+arch dirtfloor
+x 34
+y 24
+end
+arch bwall_0
+x 34
+y 24
+end
+arch dirtfloor
+x 34
+y 25
+end
+arch dungeon_magic
+x 34
+y 25
+end
+arch dirtfloor
+x 34
+y 26
+end
+arch dungeon_magic
+x 34
+y 26
+end
+arch dirtfloor
+x 34
+y 27
+end
+arch dungeon_magic
+x 34
+y 27
+end
+arch dirtfloor
+x 34
+y 28
+end
+arch bwall_0
+x 34
+y 28
+end
+arch dirtfloor
+x 34
+y 29
+end
+arch dirtfloor
+x 34
+y 30
+end
+arch dirtfloor
+x 34
+y 31
+end
+arch dirtfloor
+x 34
+y 32
+end
+arch bwall_0
+x 34
+y 32
+end
+arch dirtfloor
+x 34
+y 33
+end
+arch dirtfloor
+x 34
+y 34
+end
+arch dirtfloor
+x 34
+y 35
+end
+arch dirtfloor
+x 34
+y 36
+end
+arch dirtfloor
+x 34
+y 37
+end
+arch dirtfloor
+x 34
+y 38
+end
+arch dirtfloor
+x 34
+y 39
+end
+arch bwall_0
+x 34
+y 39
+end
+arch dirtfloor
+x 35
+end
+arch bwall_0
+x 35
+end
+arch dirtfloor
+x 35
+y 1
+end
+arch kobold
+x 35
+y 1
+end
+arch dirtfloor
+x 35
+y 2
+end
+arch bwall_0
+x 35
+y 2
+end
+arch dirtfloor
+x 35
+y 3
+end
+arch fire_elemental
+x 35
+y 3
+end
+arch dirtfloor
+x 35
+y 4
+end
+arch fire_elemental
+x 35
+y 4
+end
+arch dirtfloor
+x 35
+y 5
+end
+arch dungeon_magic
+x 35
+y 5
+end
+arch dirtfloor
+x 35
+y 6
+end
+arch dungeon_magic
+x 35
+y 6
+end
+arch dirtfloor
+x 35
+y 7
+end
+arch dungeon_magic
+x 35
+y 7
+end
+arch dirtfloor
+x 35
+y 8
+end
+arch dungeon_magic
+x 35
+y 8
+end
+arch dirtfloor
+x 35
+y 9
+end
+arch dungeon_magic
+x 35
+y 9
+end
+arch dirtfloor
+x 35
+y 10
+end
+arch dungeon_magic
+x 35
+y 10
+end
+arch dirtfloor
+x 35
+y 11
+end
+arch dirtfloor
+x 35
+y 12
+end
+arch dirtfloor
+x 35
+y 13
+end
+arch dirtfloor
+x 35
+y 14
+end
+arch dirtfloor
+x 35
+y 15
+end
+arch dirtfloor
+x 35
+y 16
+end
+arch dirtfloor
+x 35
+y 17
+end
+arch generate_dragon
+x 35
+y 17
+end
+arch dirtfloor
+x 35
+y 18
+end
+arch bwall_0
+x 35
+y 18
+end
+arch dirtfloor
+x 35
+y 19
+end
+arch dungeon_magic
+x 35
+y 19
+end
+arch dirtfloor
+x 35
+y 20
+end
+arch dungeon_magic
+x 35
+y 20
+end
+arch dirtfloor
+x 35
+y 21
+end
+arch dirtfloor
+x 35
+y 22
+end
+arch dirtfloor
+x 35
+y 23
+end
+arch dirtfloor
+x 35
+y 24
+end
+arch bwall_0
+x 35
+y 24
+end
+arch dirtfloor
+x 35
+y 25
+end
+arch dirtfloor
+x 35
+y 26
+end
+arch dungeon_magic
+x 35
+y 26
+end
+arch dirtfloor
+x 35
+y 27
+end
+arch dungeon_magic
+x 35
+y 27
+end
+arch dirtfloor
+x 35
+y 28
+end
+arch dirtfloor
+x 35
+y 29
+end
+arch dirtfloor
+x 35
+y 30
+end
+arch dirtfloor
+x 35
+y 31
+end
+arch dirtfloor
+x 35
+y 32
+end
+arch bwall_0
+x 35
+y 32
+end
+arch dirtfloor
+x 35
+y 33
 end
 arch big_dragon
 x 35
 y 33
 end
-arch dragon
+arch dirtfloor
+x 35
+y 34
+end
+arch dirtfloor
+x 35
+y 35
+end
+arch dirtfloor
+x 35
+y 36
+end
+arch dirtfloor
+x 35
+y 37
+end
+arch dirtfloor
+x 35
+y 38
+end
+arch dirtfloor
+x 35
+y 39
+end
+arch bwall_0
+x 35
+y 39
+end
+arch dirtfloor
+x 36
+end
+arch bwall_0
+x 36
+end
+arch dirtfloor
+x 36
+y 1
+end
+arch kobold
+x 36
+y 1
+end
+arch dirtfloor
+x 36
+y 2
+end
+arch bwall_0
+x 36
+y 2
+end
+arch dirtfloor
+x 36
+y 3
+end
+arch fire_elemental
+x 36
+y 3
+end
+arch dirtfloor
+x 36
+y 4
+end
+arch fire_elemental
+x 36
+y 4
+end
+arch dirtfloor
+x 36
+y 5
+end
+arch dungeon_magic
+x 36
+y 5
+end
+arch dirtfloor
+x 36
+y 6
+end
+arch dungeon_magic
+x 36
+y 6
+end
+arch dirtfloor
+x 36
+y 7
+end
+arch dungeon_magic
+x 36
+y 7
+end
+arch dirtfloor
+x 36
+y 8
+end
+arch dungeon_magic
+x 36
+y 8
+end
+arch dirtfloor
+x 36
+y 9
+end
+arch dungeon_magic
+x 36
+y 9
+end
+arch dirtfloor
+x 36
+y 10
+end
+arch dungeon_magic
+x 36
+y 10
+end
+arch dirtfloor
 x 36
 y 11
 end
 arch dragon
 x 36
+y 11
+end
+arch dirtfloor
+x 36
 y 12
 end
 arch dragon
+x 36
+y 12
+end
+arch dirtfloor
 x 36
 y 13
 end
 arch dragon
 x 36
+y 13
+end
+arch dirtfloor
+x 36
 y 14
 end
 arch dragon
+x 36
+y 14
+end
+arch dirtfloor
 x 36
 y 15
 end
 arch dragon
 x 36
+y 15
+end
+arch dirtfloor
+x 36
 y 16
+end
+arch dragon
+x 36
+y 16
+end
+arch dirtfloor
+x 36
+y 17
+end
+arch generate_dragon
+x 36
+y 17
+end
+arch dirtfloor
+x 36
+y 18
+end
+arch bwall_0
+x 36
+y 18
+end
+arch dirtfloor
+x 36
+y 19
+end
+arch dungeon_magic
+x 36
+y 19
+end
+arch dirtfloor
+x 36
+y 20
+end
+arch bwall_0
+x 36
+y 20
+end
+arch dirtfloor
+x 36
+y 21
+end
+arch bwall_0
+x 36
+y 21
+end
+arch dirtfloor
+x 36
+y 22
+end
+arch bwall_0
+x 36
+y 22
+end
+arch dirtfloor
+x 36
+y 23
+end
+arch bwall_0
+x 36
+y 23
+end
+arch dirtfloor
+x 36
+y 24
+end
+arch bwall_0
+x 36
+y 24
+end
+arch dirtfloor
+x 36
+y 25
+end
+arch bwall_0
+x 36
+y 25
+end
+arch dirtfloor
+x 36
+y 26
+end
+arch bwall_0
+x 36
+y 26
+end
+arch dirtfloor
+x 36
+y 27
+end
+arch bwall_0
+x 36
+y 27
+end
+arch dirtfloor
+x 36
+y 28
+end
+arch bwall_0
+x 36
+y 28
+end
+arch dirtfloor
+x 36
+y 29
+end
+arch firewall_7
+x 36
+y 29
+arch spell_small_fireball
+end
+end
+arch dirtfloor
+x 36
+y 30
+end
+arch firewall_7
+x 36
+y 30
+arch spell_small_fireball
+end
+end
+arch dirtfloor
+x 36
+y 31
+end
+arch firewall_7
+x 36
+y 31
+arch spell_small_fireball
+end
+end
+arch dirtfloor
+x 36
+y 32
+end
+arch bwall_0
+x 36
+y 32
+end
+arch dirtfloor
+x 36
+y 33
+end
+arch dirtfloor
+x 36
+y 34
+end
+arch dirtfloor
+x 36
+y 35
+end
+arch dirtfloor
+x 36
+y 36
 end
 arch big_dragon
 x 36
 y 36
+end
+arch dirtfloor
+x 36
+y 37
+end
+arch dirtfloor
+x 36
+y 38
+end
+arch dirtfloor
+x 36
+y 39
+end
+arch bwall_0
+x 36
+y 39
+end
+arch dirtfloor
+x 37
+end
+arch bwall_0
+x 37
+end
+arch dirtfloor
+x 37
+y 1
+end
+arch kobold
+x 37
+y 1
+end
+arch dirtfloor
+x 37
+y 2
+end
+arch bwall_0
+x 37
+y 2
+end
+arch dirtfloor
+x 37
+y 3
+end
+arch bwall_0
+x 37
+y 3
+end
+arch dirtfloor
+x 37
+y 4
+end
+arch bwall_0
+x 37
+y 4
+end
+arch dirtfloor
+x 37
+y 5
+end
+arch bwall_0
+x 37
+y 5
+end
+arch dirtfloor
+x 37
+y 6
+end
+arch bwall_0
+x 37
+y 6
+end
+arch dirtfloor
+x 37
+y 7
+end
+arch bwall_0
+x 37
+y 7
+end
+arch dirtfloor
+x 37
+y 8
+end
+arch bwall_0
+x 37
+y 8
+end
+arch dirtfloor
+x 37
+y 9
+end
+arch dungeon_magic
+x 37
+y 9
+end
+arch dirtfloor
+x 37
+y 10
+end
+arch bwall_0
+x 37
+y 10
+end
+arch dirtfloor
+x 37
+y 11
+end
+arch dirtfloor
+x 37
+y 12
+end
+arch dirtfloor
+x 37
+y 13
+end
+arch dirtfloor
+x 37
+y 14
+end
+arch dirtfloor
+x 37
+y 15
+end
+arch dirtfloor
+x 37
+y 16
+end
+arch dirtfloor
+x 37
+y 17
+end
+arch generate_dragon
+x 37
+y 17
+end
+arch dirtfloor
+x 37
+y 18
+end
+arch bwall_0
+x 37
+y 18
+end
+arch dirtfloor
+x 37
+y 19
+end
+arch dungeon_magic
+x 37
+y 19
+end
+arch dirtfloor
+x 37
+y 20
+end
+arch door_2
+x 37
+y 20
+end
+arch dirtfloor
+x 37
+y 21
+end
+arch random_treasure
+x 37
+y 21
+end
+arch dirtfloor
+x 37
+y 22
+end
+arch random_treasure
+x 37
+y 22
+end
+arch dirtfloor
+x 37
+y 23
+end
+arch random_treasure
+x 37
+y 23
+end
+arch dirtfloor
+x 37
+y 24
+end
+arch random_treasure
+x 37
+y 24
+end
+arch dirtfloor
+x 37
+y 25
+end
+arch random_treasure
+x 37
+y 25
+end
+arch dirtfloor
+x 37
+y 26
+end
+arch random_treasure
+x 37
+y 26
+end
+arch dirtfloor
+x 37
+y 27
+end
+arch random_treasure
+x 37
+y 27
+end
+arch dirtfloor
+x 37
+y 28
+end
+arch random_treasure
+x 37
+y 28
+end
+arch dirtfloor
+x 37
+y 29
+end
+arch random_wealth
+x 37
+y 29
+end
+arch dirtfloor
+x 37
+y 30
+end
+arch random_wealth
+x 37
+y 30
+end
+arch dirtfloor
+x 37
+y 31
+end
+arch random_artifact
+x 37
+y 31
+end
+arch dirtfloor
+x 37
+y 32
+end
+arch bwall_0
+x 37
+y 32
+end
+arch dirtfloor
+x 37
+y 33
+end
+arch dirtfloor
+x 37
+y 34
+end
+arch dirtfloor
+x 37
+y 35
+end
+arch dirtfloor
+x 37
+y 36
+end
+arch dirtfloor
+x 37
+y 37
+end
+arch dirtfloor
+x 37
+y 38
+end
+arch dirtfloor
+x 37
+y 39
+end
+arch bwall_0
+x 37
+y 39
+end
+arch dirtfloor
+x 38
+end
+arch bwall_0
+x 38
+end
+arch dirtfloor
+x 38
+y 1
+end
+arch kobold
+x 38
+y 1
+end
+arch dirtfloor
+x 38
+y 2
+end
+arch orc
+x 38
+y 2
+end
+arch dirtfloor
+x 38
+y 3
+end
+arch orc
+x 38
+y 3
+end
+arch dirtfloor
+x 38
+y 4
+end
+arch orc
+x 38
+y 4
+end
+arch dirtfloor
+x 38
+y 5
+end
+arch orc
+x 38
+y 5
+end
+arch dirtfloor
+x 38
+y 6
+end
+arch orc
+x 38
+y 6
+end
+arch dirtfloor
+x 38
+y 7
+end
+arch orc
+x 38
+y 7
+end
+arch dirtfloor
+x 38
+y 8
+end
+arch orc
+x 38
+y 8
+end
+arch dirtfloor
+x 38
+y 9
+end
+arch dungeon_magic
+x 38
+y 9
+end
+arch dirtfloor
+x 38
+y 10
+end
+arch bwall_0
+x 38
+y 10
+end
+arch dirtfloor
+x 38
+y 11
+end
+arch generate_dragon
+x 38
+y 11
+end
+arch dirtfloor
+x 38
+y 12
+end
+arch generate_dragon
+x 38
+y 12
+end
+arch dirtfloor
+x 38
+y 13
+end
+arch generate_dragon
+x 38
+y 13
+end
+arch dirtfloor
+x 38
+y 14
+end
+arch generate_dragon
+x 38
+y 14
+end
+arch dirtfloor
+x 38
+y 15
+end
+arch generate_dragon
+x 38
+y 15
+end
+arch dirtfloor
+x 38
+y 16
+end
+arch generate_dragon
+x 38
+y 16
+end
+arch dirtfloor
+x 38
+y 17
+end
+arch generate_dragon
+x 38
+y 17
+end
+arch dirtfloor
+x 38
+y 18
+end
+arch bwall_0
+x 38
+y 18
+end
+arch dirtfloor
+x 38
+y 19
+end
+arch dungeon_magic
+x 38
+y 19
+end
+arch dirtfloor
+x 38
+y 20
+end
+arch door_2
+x 38
+y 20
+end
+arch dirtfloor
+x 38
+y 21
+end
+arch random_treasure
+x 38
+y 21
+end
+arch dirtfloor
+x 38
+y 22
+end
+arch random_treasure
+x 38
+y 22
+end
+arch dirtfloor
+x 38
+y 23
+end
+arch random_treasure
+x 38
+y 23
+end
+arch dirtfloor
+x 38
+y 24
+end
+arch random_treasure
+x 38
+y 24
+end
+arch dirtfloor
+x 38
+y 25
+end
+arch random_treasure
+x 38
+y 25
+end
+arch dirtfloor
+x 38
+y 26
+end
+arch random_treasure
+x 38
+y 26
+end
+arch dirtfloor
+x 38
+y 27
+end
+arch random_treasure
+x 38
+y 27
+end
+arch dirtfloor
+x 38
+y 28
+end
+arch random_treasure
+x 38
+y 28
+end
+arch dirtfloor
+x 38
+y 29
+end
+arch random_wealth
+x 38
+y 29
+end
+arch dirtfloor
+x 38
+y 30
+end
+arch random_wealth
+x 38
+y 30
+end
+arch dirtfloor
+x 38
+y 31
+end
+arch random_artifact
+x 38
+y 31
+end
+arch dirtfloor
+x 38
+y 32
+end
+arch bwall_0
+x 38
+y 32
+end
+arch dirtfloor
+x 38
+y 33
+end
+arch dirtfloor
+x 38
+y 34
+end
+arch dirtfloor
+x 38
+y 35
+end
+arch dirtfloor
+x 38
+y 36
+end
+arch dirtfloor
+x 38
+y 37
+end
+arch dirtfloor
+x 38
+y 38
+end
+arch dirtfloor
+x 38
+y 39
+end
+arch bwall_0
+x 38
+y 39
+end
+arch dirtfloor
+x 39
+end
+arch bwall_0
+x 39
+end
+arch dirtfloor
+x 39
+y 1
+end
+arch bwall_0
+x 39
+y 1
+end
+arch dirtfloor
+x 39
+y 2
+end
+arch bwall_0
+x 39
+y 2
+end
+arch dirtfloor
+x 39
+y 3
+end
+arch bwall_0
+x 39
+y 3
+end
+arch dirtfloor
+x 39
+y 4
+end
+arch bwall_0
+x 39
+y 4
+end
+arch dirtfloor
+x 39
+y 5
+end
+arch bwall_0
+x 39
+y 5
+end
+arch dirtfloor
+x 39
+y 6
+end
+arch bwall_0
+x 39
+y 6
+end
+arch dirtfloor
+x 39
+y 7
+end
+arch bwall_0
+x 39
+y 7
+end
+arch dirtfloor
+x 39
+y 8
+end
+arch bwall_0
+x 39
+y 8
+end
+arch dirtfloor
+x 39
+y 9
+end
+arch bwall_0
+x 39
+y 9
+end
+arch dirtfloor
+x 39
+y 10
+end
+arch bwall_0
+x 39
+y 10
+end
+arch dirtfloor
+x 39
+y 11
+end
+arch bwall_0
+x 39
+y 11
+end
+arch dirtfloor
+x 39
+y 12
+end
+arch bwall_0
+x 39
+y 12
+end
+arch dirtfloor
+x 39
+y 13
+end
+arch bwall_0
+x 39
+y 13
+end
+arch dirtfloor
+x 39
+y 14
+end
+arch bwall_0
+x 39
+y 14
+end
+arch dirtfloor
+x 39
+y 15
+end
+arch bwall_0
+x 39
+y 15
+end
+arch dirtfloor
+x 39
+y 16
+end
+arch bwall_0
+x 39
+y 16
+end
+arch dirtfloor
+x 39
+y 17
+end
+arch bwall_0
+x 39
+y 17
+end
+arch dirtfloor
+x 39
+y 18
+end
+arch bwall_0
+x 39
+y 18
+end
+arch dirtfloor
+x 39
+y 19
+end
+arch bwall_0
+x 39
+y 19
+end
+arch dirtfloor
+x 39
+y 20
+end
+arch bwall_0
+x 39
+y 20
+end
+arch dirtfloor
+x 39
+y 21
+end
+arch bwall_0
+x 39
+y 21
+end
+arch dirtfloor
+x 39
+y 22
+end
+arch bwall_0
+x 39
+y 22
+end
+arch dirtfloor
+x 39
+y 23
+end
+arch bwall_0
+x 39
+y 23
+end
+arch dirtfloor
+x 39
+y 24
+end
+arch bwall_0
+x 39
+y 24
+end
+arch dirtfloor
+x 39
+y 25
+end
+arch bwall_0
+x 39
+y 25
+end
+arch dirtfloor
+x 39
+y 26
+end
+arch bwall_0
+x 39
+y 26
+end
+arch dirtfloor
+x 39
+y 27
+end
+arch bwall_0
+x 39
+y 27
+end
+arch dirtfloor
+x 39
+y 28
+end
+arch bwall_0
+x 39
+y 28
+end
+arch dirtfloor
+x 39
+y 29
+end
+arch bwall_0
+x 39
+y 29
+end
+arch dirtfloor
+x 39
+y 30
+end
+arch bwall_0
+x 39
+y 30
+end
+arch dirtfloor
+x 39
+y 31
+end
+arch bwall_0
+x 39
+y 31
+end
+arch dirtfloor
+x 39
+y 32
+end
+arch bwall_0
+x 39
+y 32
+end
+arch dirtfloor
+x 39
+y 33
+end
+arch bwall_0
+x 39
+y 33
+end
+arch dirtfloor
+x 39
+y 34
+end
+arch bwall_0
+x 39
+y 34
+end
+arch dirtfloor
+x 39
+y 35
+end
+arch bwall_0
+x 39
+y 35
+end
+arch dirtfloor
+x 39
+y 36
+end
+arch bwall_0
+x 39
+y 36
+end
+arch dirtfloor
+x 39
+y 37
+end
+arch bwall_0
+x 39
+y 37
+end
+arch dirtfloor
+x 39
+y 38
+end
+arch bwall_0
+x 39
+y 38
+end
+arch dirtfloor
+x 39
+y 39
+end
+arch bwall_0
+x 39
+y 39
 end

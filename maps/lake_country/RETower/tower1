@@ -1,13 +1,15 @@
 arch map
+name Butakis' Elite Training Tower, Level 1
+difficulty 5
 region lakecountry
-name tower1
+width 25
+height 25
+enter_x 12
+enter_y 12
 msg
-Creator: Kundi, Xue
-Email: xkd@soda.csua.berkeley.edu
-Date: Mon Apr  3 15:20:53 1995
+Created:  1995-04-03 Kundi, Xue (xkd@soda.csua.berkeley.edu)
+Modified: 2012-02-07 Rick Tanner
 endmsg
-x 25
-y 25
 end
 arch dungeon_floor
 end
@@ -1822,10 +1824,7 @@ y 23
 end
 arch sign
 msg
-This room is quit a bit harder than the
-room to the north. Monsters move in a
-pattern. You will get a bit more than
-regular experience out of them.
+This room is quit a bit harder than the room to the north.  Monsters move in a pattern.  You will get a bit more than regular experience out of them.
 endmsg
 x 8
 y 23
@@ -2157,13 +2156,7 @@ end
 arch sign
 msg
 <<Hard room>>
-When you are ready, step on the
-teleporter to the right, and say the
-word, 'Charge'. You will be teleported
-within the fences. The exit it located
-at the other end of the room, a
-teleporter. Test you courage and
-strength.
+When you are ready, step on the teleporter to the right, and say the word, 'Charge'.  You will be teleported within the fences.  The exit it located at the other end of the room, a teleporter.  Test you courage and strength.
 endmsg
 x 10
 y 23
@@ -2226,7 +2219,7 @@ y 5
 end
 arch sign
 msg
-Gabadge disposa
+Garbage disposal
 endmsg
 x 11
 y 5
@@ -2268,8 +2261,7 @@ y 11
 end
 arch magic_mouth
 msg
-Drop 10 platinum coins to pay the
-training fee
+Drop 10 platinum coins to pay the training fee.
 endmsg
 x 11
 y 12
@@ -2287,7 +2279,7 @@ connected 1
 end
 arch magic_mouth
 msg
-Drop six foods to pay the training fee
+Drop six foods to pay the training fee.
 endmsg
 x 11
 y 13
@@ -2380,7 +2372,7 @@ y 23
 end
 arch magic_ear
 msg
-@match charge|Charge
+@match charge
 You feel temporarily dizzy.
 endmsg
 x 11
@@ -2417,14 +2409,20 @@ end
 arch firewall
 x 12
 y 1
+arch spell_small_fireball
+end
 end
 arch firewall
 x 12
 y 1
+arch spell_small_fireball
+end
 end
 arch firewall
 x 12
 y 1
+arch spell_small_fireball
+end
 end
 arch dungeon_floor
 x 12
@@ -2490,7 +2488,7 @@ connected 1
 end
 arch magic_mouth
 msg
-Drop six foods to pay the training fee
+Drop six foods to pay the training fee.
 endmsg
 x 12
 y 11
@@ -2530,8 +2528,7 @@ y 13
 end
 arch magic_mouth
 msg
-Drop 10 platinum coins to pay the
-training fee
+Drop 10 platinum coins to pay the training fee.
 endmsg
 x 12
 y 14
@@ -2697,8 +2694,7 @@ connected 1
 end
 arch magic_mouth
 msg
-Drop 10 platinum coins to pay the
-training fee
+Drop 10 platinum coins to pay the training fee.
 endmsg
 x 13
 y 11
@@ -2738,7 +2734,7 @@ y 13
 end
 arch magic_mouth
 msg
-Drop six foods to pay the training fee
+Drop six foods to pay the training fee.
 endmsg
 x 13
 y 14
@@ -2909,7 +2905,7 @@ y 11
 end
 arch magic_mouth
 msg
-Drop six foods to pay the training fee
+Drop six foods to pay the training fee.
 endmsg
 x 14
 y 12
@@ -2927,8 +2923,7 @@ connected 1
 end
 arch magic_mouth
 msg
-Drop 10 platinum coins to pay the
-training fee
+Drop 10 platinum coins to pay the training fee.
 endmsg
 x 14
 y 13
@@ -3259,15 +3254,11 @@ y 2
 end
 arch sign
 msg
-To go in, step on the teleporter and
-say, 'in'.
-To come out, step on the inside
-teleporter and say, 'out'.
-One of the dark elf inside has a key to
-the treasure room.
+To go in, step on the teleporter and say, 'in'.
+To come out, step on the inside teleporter and say, 'out'.
+One of the dark elf inside has a key to the treasure room.
 Good luck!!
-Warning: Littering on teleporter will
-make it malfunction.
+Warning: Littering on teleporter will make it malfunction.
 endmsg
 x 16
 y 2
@@ -3573,11 +3564,7 @@ x 18
 end
 arch magic_mouth
 msg
-If you can't teleport out with the
-right activation word, it is only
-because someone litter here and made
-the teleporter malfunction. Clear it
-up and it will function again.
+If you can't teleport out with the right activation word, it is only because someone litter here and made the teleporter malfunction.  Clear it up and it will function again.
 endmsg
 x 18
 y 1
@@ -3873,11 +3860,7 @@ y 5
 end
 arch magic_mouth
 msg
-If you can't teleport out with the
-right activation word, it is only
-because someone litter here and made
-the teleporter malfunction. Clear it
-up and it will function again.
+If you can't teleport out with the right activation word, it is only because someone litter here and made the teleporter malfunction.  Clear it up and it will function again.
 endmsg
 x 19
 y 6
@@ -4220,9 +4203,7 @@ y 14
 end
 arch sign
 msg
-One dark elf at the end of the room
-hold the key to the treasure room. Kill
-him, get the key and take your rewards.
+One dark elf at the end of the room holds the key to the treasure room.  Kill him, get the key and take your rewards.
 endmsg
 x 20
 y 14
@@ -4319,11 +4300,7 @@ x 21
 end
 arch magic_mouth
 msg
-If you can't teleport out with the
-right activation word, it is only
-because someone litter here and made
-the teleporter malfunction. Clear it
-up and it will function again.
+If you can't teleport out with the right activation word, it is only because someone litter here and made the teleporter malfunction.  Clear it up and it will function again.
 endmsg
 x 21
 y 1
@@ -4368,11 +4345,7 @@ y 3
 end
 arch magic_mouth
 msg
-If you can't teleport out with the
-right activation word, it is only
-because someone litter here and made
-the teleporter malfunction. Clear it
-up and it will function again.
+If you can't teleport out with the right activation word, it is only because someone litter here and made the teleporter malfunction.  Clear it up and it will function again.
 endmsg
 x 21
 y 4
@@ -4844,11 +4817,7 @@ y 3
 end
 arch magic_mouth
 msg
-If you can't teleport out with the
-right activation word, it is only
-because someone litter here and made
-the teleporter malfunction. Clear it
-up and it will function again.
+If you can't teleport out with the right activation word, it is only because someone litter here and made the teleporter malfunction.  Clear it up and it will function again.
 endmsg
 x 23
 y 4
@@ -4998,8 +4967,7 @@ end
 arch locked_door1
 slaying 21
 msg
-You need the key from the dark elf to
-open this.
+You need the key from the dark elf to open this door.
 endmsg
 x 23
 y 20
@@ -5015,8 +4983,7 @@ end
 arch locked_door1
 slaying 20
 msg
-You need a key from another dark elf to
-open this door.
+You need a key from another dark elf to open this door.
 endmsg
 x 23
 y 21

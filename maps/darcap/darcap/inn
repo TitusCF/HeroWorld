@@ -1,15 +1,15 @@
 arch map
+name Waterfront Inn
+difficulty 1
 region darcap
-name inn
+width 33
+height 22
+enter_x 5
+enter_y 8
 msg
-Creator: Cater/Wade
-Email: john_cater@yahoo.com
-Date: Fri Jan 15 13:04:54 1999
+Created:  1999-01-15 Cater/Wade (john_cater@yahoo.com)
+Modified: 2012-03-15 Rick Tanner
 endmsg
-hp 5
-sp 8
-x 33
-y 22
 end
 arch sea
 end
@@ -458,6 +458,14 @@ arch sea
 x 4
 y 4
 end
+arch exit
+slaying /world/world_116_102
+hp 32
+sp 44
+x 4
+y 5
+invisible 1
+end
 arch sea
 x 4
 y 5
@@ -709,7 +717,7 @@ end
 arch door_look_1
 x 5
 y 15
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -814,8 +822,7 @@ end
 arch sign
 name Help
 msg
-To save, go into a room
-and press <A>pply on the bed.
+To save, go into a room and press <A>pply on the bed.
 endmsg
 x 6
 y 12
@@ -1053,7 +1060,7 @@ end
 arch door_look_1
 x 8
 y 11
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -1075,7 +1082,7 @@ end
 arch door_look_1
 x 8
 y 15
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -1315,7 +1322,7 @@ end
 arch door_look_1
 x 10
 y 11
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -1476,7 +1483,7 @@ end
 arch door_look_1
 x 11
 y 15
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -1708,7 +1715,7 @@ end
 arch door_look_1
 x 13
 y 11
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -1869,7 +1876,7 @@ end
 arch door_look_1
 x 14
 y 15
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -1991,9 +1998,7 @@ arch guildmaster
 name Old Man
 msg
 @match *
-I'm too busy to help you.
-My friend Rufus might help - he's in
-here somewhere ...
+I'm too busy to help you.  My friend Rufus might help - he's in here somewhere ...
 endmsg
 x 15
 y 13
@@ -2113,7 +2118,7 @@ end
 arch door_look_1
 x 16
 y 11
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -2266,7 +2271,7 @@ end
 arch door_look_1
 x 17
 y 15
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -2641,7 +2646,7 @@ end
 arch door_look_1
 x 20
 y 11
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -2663,7 +2668,7 @@ end
 arch door_look_1
 x 20
 y 15
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -2924,7 +2929,7 @@ endmsg
 x 22
 y 14
 connected 1
-walk_off 1
+move_off walk
 end
 arch gate_closed_2
 x 22
@@ -3085,10 +3090,8 @@ end
 arch sign
 name Info
 msg
-Tourists : Visit the courthouse
-Adventurers : Apparently the well 
-on the south side of town is a good 
-place to start
+Tourists: Visit the courthouse.
+Adventurers: Apparently the well on the south side of town is a good place to start.
 endmsg
 x 23
 y 16
@@ -3100,9 +3103,7 @@ end
 arch sign
 name More Info
 msg
-To claim the rewards in the courthouse
-all four parts of the quest must be
-tackled :
+To claim the rewards in the courthouse all four parts of the quest must be tackled:
    Water
    Earth
    Air
@@ -3193,7 +3194,7 @@ end
 arch door_look_1
 x 24
 y 11
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -3434,11 +3435,9 @@ arch guildmaster
 name Rufus
 msg
 @match quest|help
-You need to "open" the gate into the
-closed room here ...
+You need to "open" the gate into the closed room here ...
 @match *
-I can help you with the elemental
-quest...
+I can help you with the elemental quest...
 endmsg
 x 26
 y 10
@@ -3487,11 +3486,7 @@ end
 arch letter
 msg
 My friend,
-I write to tell you of our trials in 
-the land of Dtabb. We went south - to 
-a volcano where all manner of firey
-creatures attacked us. We were forced
-to retreat ..
+I write to tell you of our trials in the land of Dtabb.  We went south - to a volcano where all manner of firey creatures attacked us.  We were forced to retreat ..
 endmsg
 x 26
 y 16

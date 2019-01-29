@@ -1,14 +1,16 @@
 arch map
+name Lord Lynn's Keep, Dungeon
+difficulty 12
 region darcap
-name castle1
+darkness 1
+width 20
+height 19
+enter_x 1
+enter_y 5
 msg
-Creator: Cater & Wade
-Email: john_cater@yahoo.com
-Date: Sun Jan 17 20:29:10 1999
+Created:  1999-01-17 Cater & Wade (john_cater@yahoo.com)
+Modified: 2008-12-01 Rick Tanner
 endmsg
-x 20
-y 19
-invisible 1
 end
 arch dungeon_floor
 end
@@ -414,7 +416,7 @@ arch dungeon_floor
 x 3
 y 11
 end
-arch wall_3_3
+arch wall_2_2_3
 x 3
 y 11
 end
@@ -422,7 +424,7 @@ arch dungeon_floor
 x 3
 y 12
 end
-arch wall_2_1_1
+arch wall_1_2
 x 3
 y 12
 end
@@ -438,7 +440,7 @@ arch dungeon_floor
 x 3
 y 14
 end
-arch wall_2_1_1
+arch wall_1_1
 x 3
 y 14
 end
@@ -446,7 +448,7 @@ arch dungeon_floor
 x 3
 y 15
 end
-arch wall_3_1
+arch wall_2_2_4
 x 3
 y 15
 end
@@ -567,6 +569,7 @@ end
 arch torch_indigo
 x 4
 y 17
+no_pick 1
 end
 arch dungeon_floor
 x 4
@@ -602,7 +605,7 @@ arch dungeon_floor
 x 5
 y 3
 end
-arch wall_2_1_1
+arch wall_1_2
 x 5
 y 3
 end
@@ -618,7 +621,7 @@ arch dungeon_floor
 x 5
 y 5
 end
-arch wall_2_1_1
+arch wall_1_1
 x 5
 y 5
 end
@@ -666,7 +669,7 @@ arch dungeon_floor
 x 5
 y 11
 end
-arch wall_3_1
+arch wall_2_2_1
 x 5
 y 11
 end
@@ -694,7 +697,7 @@ arch dungeon_floor
 x 5
 y 15
 end
-arch wall_3_3
+arch wall_2_2_2
 x 5
 y 15
 end
@@ -788,7 +791,7 @@ arch dungeon_floor
 x 6
 y 11
 end
-arch wall_2_1_2
+arch wall_1_3
 x 6
 y 11
 end
@@ -812,7 +815,7 @@ arch dungeon_floor
 x 6
 y 15
 end
-arch wall_2_1_2
+arch wall_1_3
 x 6
 y 15
 end
@@ -1012,7 +1015,7 @@ arch dungeon_floor
 x 8
 y 11
 end
-arch wall_2_1_2
+arch wall_1_4
 x 8
 y 11
 end
@@ -1032,7 +1035,7 @@ arch dungeon_floor
 x 8
 y 15
 end
-arch wall_2_1_2
+arch wall_1_4
 x 8
 y 15
 end
@@ -1082,7 +1085,7 @@ arch dungeon_floor
 x 9
 y 3
 end
-arch wall_2_1_1
+arch wall_1_2
 x 9
 y 3
 end
@@ -1098,7 +1101,7 @@ arch dungeon_floor
 x 9
 y 5
 end
-arch wall_2_1_1
+arch wall_1_1
 x 9
 y 5
 end
@@ -1207,6 +1210,7 @@ end
 arch torch_indigo
 x 10
 y 1
+no_pick 1
 end
 arch dungeon_floor
 x 10
@@ -1243,6 +1247,7 @@ end
 arch torch_indigo
 x 10
 y 7
+no_pick 1
 end
 arch dungeon_floor
 x 10
@@ -1268,7 +1273,7 @@ arch dungeon_floor
 x 10
 y 11
 end
-arch wall_2_1_2
+arch wall_1_3
 x 10
 y 11
 end
@@ -1288,7 +1293,7 @@ arch dungeon_floor
 x 10
 y 15
 end
-arch wall_2_1_2
+arch wall_1_3
 x 10
 y 15
 end
@@ -1472,7 +1477,7 @@ arch dungeon_floor
 x 12
 y 11
 end
-arch wall_2_1_2
+arch wall_1_4
 x 12
 y 11
 end
@@ -1492,7 +1497,7 @@ arch dungeon_floor
 x 12
 y 15
 end
-arch wall_2_1_2
+arch wall_1_4
 x 12
 y 15
 end
@@ -1590,7 +1595,7 @@ arch dungeon_floor
 x 13
 y 12
 end
-arch wall_2_1_1
+arch wall_1_2
 x 13
 y 12
 end
@@ -1606,7 +1611,7 @@ arch dungeon_floor
 x 13
 y 14
 end
-arch wall_2_1_1
+arch wall_1_1
 x 13
 y 14
 end
@@ -1791,6 +1796,7 @@ end
 arch torch_indigo
 x 14
 y 17
+no_pick 1
 end
 arch dungeon_floor
 x 14
@@ -2295,6 +2301,7 @@ end
 arch torch_indigo
 x 18
 y 1
+no_pick 1
 end
 arch unholy_ground
 x 18
@@ -2348,10 +2355,6 @@ arch brazier
 x 18
 y 7
 end
-arch unholy_ground
-x 18
-y 8
-end
 arch dungeon_floor
 x 18
 y 8
@@ -2359,10 +2362,7 @@ end
 arch altar_mostrai
 x 18
 y 8
-end
-arch unholy_ground
-x 18
-y 9
+level 120
 end
 arch dungeon_floor
 x 18
@@ -2371,10 +2371,7 @@ end
 arch altar_mostrai
 x 18
 y 9
-end
-arch unholy_ground
-x 18
-y 10
+level 120
 end
 arch dungeon_floor
 x 18
@@ -2383,6 +2380,7 @@ end
 arch altar_mostrai
 x 18
 y 10
+level 120
 end
 arch unholy_ground
 x 18
@@ -2451,6 +2449,7 @@ end
 arch torch_indigo
 x 18
 y 17
+no_pick 1
 end
 arch dungeon_floor
 x 18

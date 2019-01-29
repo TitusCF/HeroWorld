@@ -1,10 +1,14 @@
 arch map
+name Butakis' Elite Training Tower, Entrance
+difficulty 5
 region lakecountry
-name tower0
+width 16
+height 16
+enter_x 8
+enter_y 25
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Mon Apr  3 14:54:34 1995
+Created:  1995-04-03
+Modified: 2012-02-07 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -178,8 +182,7 @@ end
 arch guard
 msg
 @match *
-If you want to enter, talk to the Ninja
-Master in the admission room.
+If you want to enter, talk to the Ninja Master in the admission room.
 endmsg
 x 1
 y 9
@@ -191,8 +194,7 @@ end
 arch guard
 msg
 @match *
-If you want to enter, talk to the Ninja
-Master in the admission room.
+If you want to enter, talk to the Ninja Master in the admission room.
 endmsg
 x 1
 y 10
@@ -309,7 +311,7 @@ y 13
 end
 arch magic_ear
 msg
-@match yes|Yes
+@match yes
 Click.
 endmsg
 x 2
@@ -323,14 +325,10 @@ end
 arch smith
 name Ninja Master, Galla
 msg
-@match yes|Yes
-Okay. You may go in. On each level you
-have to pay admission fee. Now I have
-opened the doors for you.
-Read the warnings in the lobby!
+@match yes
+Okay.  You may go in.  On each level you have to pay admission fee.  Now I have opened the doors for you.  Read the warnings in the lobby!
 @match *
-Hello advanturer. Do you intend to use
-the training facilities upstairs?
+Hello adventurer.  Do you intend to use the training facilities upstairs?
 endmsg
 face ninja.111
 x 2
@@ -433,7 +431,7 @@ end
 arch woodfloor
 x 4
 end
-arch dwall3_3
+arch dwall_3_3
 x 4
 end
 arch woodfloor
@@ -467,7 +465,7 @@ end
 arch door_look_2
 x 4
 y 4
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 4
@@ -476,7 +474,7 @@ end
 arch door_look_2
 x 4
 y 5
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 4
@@ -570,8 +568,7 @@ end
 arch guard
 msg
 @match *
-If you want to enter, talk to the Ninja
-Master in the admission room.
+If you want to enter, talk to the Ninja Master in the admission room.
 endmsg
 x 5
 y 1
@@ -672,8 +669,7 @@ end
 arch guard
 msg
 @match *
-If you want to enter, talk to the Ninja
-Master in the admission room.
+If you want to enter, talk to the Ninja Master in the admission room.
 endmsg
 x 6
 y 1
@@ -725,8 +721,7 @@ end
 arch guard
 msg
 @match *
-If you want to enter, talk to the Ninja
-Master in the admission room.
+If you want to enter, talk to the Ninja Master in the admission room.
 endmsg
 x 6
 y 12
@@ -738,8 +733,7 @@ end
 arch guard
 msg
 @match *
-If you want to enter, talk to the Ninja
-Master in the admission room.
+If you want to enter, talk to the Ninja Master in the admission room.
 endmsg
 x 6
 y 13
@@ -751,8 +745,7 @@ end
 arch guard
 msg
 @match *
-If you want to enter, talk to the Ninja
-Master in the admission room.
+If you want to enter, talk to the Ninja Master in the admission room.
 endmsg
 x 6
 y 14
@@ -871,7 +864,7 @@ arch woodfloor
 x 7
 y 15
 end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_109_126
 hp 19
 sp 23
@@ -919,9 +912,7 @@ end
 arch sign
 msg
 Warning 1:
-Do not litter on teleporters, or other
-transporters; or have it littered. That
-will stop it from properly functioning.
+Do not litter on teleporters, or other transporters; or have it littered.  That will stop it from properly functioning.
 endmsg
 x 8
 y 8
@@ -941,8 +932,7 @@ end
 arch guard
 msg
 @match *
-If you want to enter, talk to the Ninja
-Master in the admission room.
+If you want to enter, talk to the Ninja Master in the admission room.
 endmsg
 x 8
 y 10
@@ -967,7 +957,7 @@ arch woodfloor
 x 8
 y 15
 end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_109_126
 hp 19
 sp 23
@@ -982,7 +972,7 @@ x 9
 end
 arch magic_ear
 msg
-@match Yes|yes
+@match yes
 Vumm..
 endmsg
 x 9
@@ -1041,10 +1031,7 @@ end
 arch sign
 msg
 Warning 2:
-Specially named monsters maybe a lot
-harder than others of its kind. They
-selected out of its kind to perform
-certain functions.
+Specially named monsters maybe a lot harder than others of its kind.  They selected out of its kind to perform certain functions.
 endmsg
 x 9
 y 8
@@ -1064,8 +1051,7 @@ end
 arch guard
 msg
 @match *
-If you want to enter, talk to the Ninja
-Master in the admission room.
+If you want to enter, talk to the Ninja Master in the admission room.
 endmsg
 x 9
 y 10
@@ -1090,7 +1076,7 @@ arch woodfloor
 x 9
 y 15
 end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_109_126
 hp 19
 sp 23
@@ -1164,8 +1150,7 @@ end
 arch guard
 msg
 @match *
-If you want to enter, talk to the Ninja
-Master in the admission room.
+If you want to enter, talk to the Ninja Master in the admission room.
 endmsg
 x 10
 y 10
@@ -1185,8 +1170,7 @@ end
 arch guard
 msg
 @match *
-If you want to enter, talk to the Ninja
-Master in the admission room.
+If you want to enter, talk to the Ninja Master in the admission room.
 endmsg
 x 10
 y 13
@@ -1198,8 +1182,7 @@ end
 arch guard
 msg
 @match *
-If you want to enter, talk to the Ninja
-Master in the admission room.
+If you want to enter, talk to the Ninja Master in the admission room.
 endmsg
 x 10
 y 14
@@ -1332,7 +1315,7 @@ x 12
 end
 arch magic_ear
 msg
-@match Yes|yes
+@match yes
 Vumm..
 endmsg
 x 12
@@ -1512,7 +1495,7 @@ y 1
 end
 arch magic_ear
 msg
-@match yes|Yes
+@match yes
 Vummm..
 endmsg
 x 14
@@ -1549,7 +1532,7 @@ y 3
 end
 arch magic_ear
 msg
-@match yes|Yes
+@match yes
 Vummm..
 endmsg
 x 14

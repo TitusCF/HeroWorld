@@ -1,13 +1,15 @@
 arch map
+name Administration, Level 1
+difficulty 20
 region brest
-name jes
+width 40
+height 30
+enter_x 21
+enter_y 2
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue May 31 01:54:09 1994
+Created:  1994-05-31
+Modified: 2012-01-25 Rick Tanner
 endmsg
-x 40
-y 30
 end
 arch grass
 end
@@ -3014,6 +3016,7 @@ y 29
 end
 arch grass
 x 18
+move_block all
 end
 arch woodfloor
 x 18
@@ -3185,8 +3188,16 @@ y 29
 end
 arch grass
 x 19
+move_block all
 end
 arch grass
+x 19
+y 1
+end
+arch invis_exit
+slaying /world/world_107_123
+hp 35
+sp 36
 x 19
 y 1
 end
@@ -3316,12 +3327,13 @@ y 29
 end
 arch cobblestones2
 x 20
+move_block all
 end
 arch cobblestones2
 x 20
 y 1
 end
-arch oakdoor
+arch invis_exit
 slaying /world/world_107_123
 hp 35
 sp 36
@@ -3454,12 +3466,13 @@ y 29
 end
 arch cobblestones2
 x 21
+move_block all
 end
 arch cobblestones2
 x 21
 y 1
 end
-arch oakdoor
+arch invis_exit
 slaying /world/world_107_123
 hp 35
 sp 36
@@ -3588,8 +3601,16 @@ y 29
 end
 arch grass
 x 22
+move_block all
 end
 arch grass
+x 22
+y 1
+end
+arch invis_exit
+slaying /world/world_107_123
+hp 35
+sp 36
 x 22
 y 1
 end
@@ -3719,6 +3740,7 @@ y 29
 end
 arch grass
 x 23
+move_block all
 end
 arch woodfloor
 x 23
@@ -4030,8 +4052,7 @@ y 17
 end
 arch magic_mouth
 msg
-You are not allowed in this office.
-Please take an appointment with the Secretary.
+You are not allowed in this office.  Please take an appointment with the Secretary.
 endmsg
 x 24
 y 18
@@ -4087,6 +4108,11 @@ x 24
 y 24
 end
 arch woodfloor
+x 24
+y 25
+end
+arch chinese_dragon
+name Fred
 x 24
 y 25
 end
@@ -4472,6 +4498,10 @@ x 27
 y 5
 end
 arch woodfloor
+x 27
+y 6
+end
+arch dread
 x 27
 y 6
 end
@@ -4839,9 +4869,7 @@ y 17
 end
 arch magic_mouth
 msg
-Mr Bacal is very busy.
-You can't meet him now.
-Please come later.
+Mr. Bacal is very busy.  You can't meet him now.  Please come later.
 endmsg
 x 29
 y 18
@@ -4879,6 +4907,11 @@ x 29
 y 23
 end
 arch woodfloor
+x 29
+y 24
+end
+arch gaelotroll
+name Bacal
 x 29
 y 24
 end
@@ -5454,6 +5487,10 @@ arch woodfloor
 x 33
 y 8
 end
+arch big_dragon
+x 33
+y 8
+end
 arch woodfloor
 x 33
 y 9
@@ -5654,6 +5691,10 @@ x 34
 y 16
 end
 arch woodfloor
+x 34
+y 17
+end
+arch behemoth
 x 34
 y 17
 end
@@ -6563,26 +6604,4 @@ end
 arch grass
 x 39
 y 29
-end
-arch chinese_dragon
-name Fred
-x 24
-y 25
-end
-arch dread
-x 27
-y 6
-end
-arch gaelotroll
-name Bacal
-x 29
-y 24
-end
-arch big_dragon
-x 33
-y 8
-end
-arch behemoth
-x 34
-y 17
 end

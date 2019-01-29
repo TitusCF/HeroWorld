@@ -1,13 +1,15 @@
 arch map
+name Butakis' Elite Training Tower, Level 5
+difficulty 20
 region lakecountry
-name tower5
+width 25
+height 25
+enter_x 12
+enter_y 12
 msg
-Creator: Kundi, Xue
-Email: xkd@soda.berkeley.edu
-Date: Tue Jun 20 07:54:22 1995
+Created:  1995-06-20 Kundi, Xue (xkd@soda.berkeley.edu)
+Modified: 2011-08-27 Andreas Kirschbaum
 endmsg
-x 25
-y 25
 end
 arch permanent_lava
 end
@@ -399,13 +401,14 @@ face fireball.111
 hp 1500
 maxhp 1500
 exp 60000
-dam 10
 x 2
 y 4
 speed 0.040000
 speed_left -0.620000
 level 30
 alive 0
+arch spell_summon_fire_elemental
+end
 end
 arch permanent_lava
 x 2
@@ -1365,13 +1368,14 @@ face fireball.111
 hp 1500
 maxhp 1500
 exp 60000
-dam 10
 x 8
 y 2
 speed 0.040000
 speed_left -0.620000
 level 30
 alive 0
+arch spell_summon_fire_elemental
+end
 end
 arch permanent_lava
 x 8
@@ -1623,8 +1627,7 @@ end
 arch angel
 msg
 @match *
-  No matter what you say, I will not
-give you the key.. No no! Now leave me
+No matter what you say, I will not give you the key.. No no! Now leave me.
 endmsg
 hp 800
 x 9
@@ -2046,6 +2049,8 @@ arch firewall_3
 face fireball.111
 x 11
 y 9
+arch spell_small_fireball
+end
 end
 arch permanent_lava
 x 11
@@ -2063,8 +2068,7 @@ y 11
 end
 arch magic_mouth
 msg
-Drop 500 platinum coins to pay the
-training fee.
+Drop 500 platinum coins to pay the training fee.
 endmsg
 x 11
 y 12
@@ -2083,7 +2087,7 @@ connected 1
 end
 arch magic_mouth
 msg
-Drop sixty diamonds to pay the training fee
+Drop sixty diamonds to pay the training fee.
 endmsg
 x 11
 y 13
@@ -2232,9 +2236,8 @@ y 11
 end
 arch sign
 msg
-  You will die without means to protect
-from fire!! Be warned!
-                           
+You will die without means to protect from fire!! Be warned!
+
 endmsg
 x 12
 y 11
@@ -2453,13 +2456,14 @@ face fireball.111
 hp 1500
 maxhp 1500
 exp 60000
-dam 10
 x 13
 y 22
 speed 0.040000
 speed_left -0.620000
 level 30
 alive 0
+arch spell_summon_fire_elemental
+end
 end
 arch permanent_lava
 x 13
@@ -2498,6 +2502,15 @@ end
 arch permanent_lava
 x 14
 y 4
+end
+arch demon_lord
+hp 5000
+x 14
+y 4
+carrying 100
+arch key2
+slaying tower5
+end
 end
 arch permanent_lava
 x 14
@@ -2675,9 +2688,10 @@ y 11
 end
 arch firewall_3
 face fireball.111
-dam 82
 x 15
 y 11
+arch spell_firebolt
+end
 end
 arch permanent_lava
 x 15
@@ -2685,9 +2699,10 @@ y 12
 end
 arch firewall_4
 face fireball.111
-dam 82
 x 15
 y 12
+arch spell_firebolt
+end
 end
 arch permanent_lava
 x 15
@@ -2705,9 +2720,10 @@ y 14
 end
 arch firewall_3
 face fireball.111
-dam 82
 x 15
 y 14
+arch spell_firebolt
+end
 end
 arch permanent_lava
 x 15
@@ -2725,9 +2741,10 @@ y 16
 end
 arch firewall_3
 face fireball.111
-dam 82
 x 15
 y 16
+arch spell_firebolt
+end
 end
 arch permanent_lava
 x 15
@@ -2967,13 +2984,14 @@ face fireball.111
 hp 1500
 maxhp 1500
 exp 60000
-dam 10
 x 17
 y 4
 speed 0.040000
 speed_left -0.620000
 level 30
 alive 0
+arch spell_summon_fire_elemental
+end
 end
 arch permanent_lava
 x 17
@@ -2997,13 +3015,14 @@ face fireball.111
 hp 1500
 maxhp 1500
 exp 60000
-dam 127
 x 17
 y 8
 speed 0.040000
 speed_left -0.880000
 level 30
 alive 0
+arch spell_small_fireball
+end
 end
 arch permanent_lava
 x 17
@@ -3033,13 +3052,14 @@ face fireball.111
 hp 1500
 maxhp 1500
 exp 60000
-dam 10
 x 17
 y 12
 speed 0.040000
 speed_left -0.620000
 level 30
 alive 0
+arch spell_summon_fire_elemental
+end
 end
 arch permanent_lava
 x 17
@@ -3131,13 +3151,14 @@ face fireball.111
 hp 1500
 maxhp 1500
 exp 60000
-dam 10
 x 18
 y 2
 speed 0.040000
 speed_left -0.620000
 level 30
 alive 0
+arch spell_summon_fire_elemental
+end
 end
 arch permanent_lava
 x 18
@@ -3161,13 +3182,14 @@ face fireball.111
 hp 1500
 maxhp 1500
 exp 60000
-dam 10
 x 18
 y 6
 speed 0.040000
 speed_left -0.620000
 level 30
 alive 0
+arch spell_summon_fire_elemental
+end
 end
 arch permanent_lava
 x 18
@@ -3395,6 +3417,10 @@ x 20
 y 3
 end
 arch permanent_lava
+x 20
+y 4
+end
+arch demon_lord
 x 20
 y 4
 end
@@ -3690,13 +3716,14 @@ face fireball.111
 hp 1500
 maxhp 1500
 exp 60000
-dam 10
 x 22
 y 12
 speed 0.040000
 speed_left -0.620000
 level 30
 alive 0
+arch spell_summon_fire_elemental
+end
 end
 arch permanent_lava
 x 22
@@ -4016,6 +4043,8 @@ arch firewall_7
 face fireball.111
 x 24
 y 9
+arch spell_small_fireball
+end
 end
 arch permanent_lava
 x 24
@@ -4043,9 +4072,10 @@ y 12
 end
 arch firewall_6
 face fireball.111
-dam 82
 x 24
 y 12
+arch spell_firebolt
+end
 end
 arch permanent_lava
 x 24
@@ -4053,9 +4083,10 @@ y 13
 end
 arch firewall_7
 face fireball.111
-dam 82
 x 24
 y 13
+arch spell_firebolt
+end
 end
 arch permanent_lava
 x 24
@@ -4075,6 +4106,8 @@ arch firewall_7
 face fireball.111
 x 24
 y 15
+arch spell_small_fireball
+end
 end
 arch permanent_lava
 x 24
@@ -4102,9 +4135,10 @@ y 18
 end
 arch firewall_7
 face fireball.111
-dam 82
 x 24
 y 18
+arch spell_firebolt
+end
 end
 arch permanent_lava
 x 24
@@ -4165,17 +4199,4 @@ name firewall
 face fireball.111
 x 24
 y 24
-end
-arch demon_lord
-hp 5000
-x 14
-y 4
-carrying 100
-arch key2
-slaying tower5
-end
-end
-arch demon_lord
-x 20
-y 4
 end

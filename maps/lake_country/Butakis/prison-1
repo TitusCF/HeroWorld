@@ -1,13 +1,15 @@
 arch map
-region lakecountry
-name prison-1
-msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue Mar 28 22:47:14 1995
-endmsg
+name Fortress of Lord Butakis Prison, Dungeon
+difficulty 30
+region butakisfortress
 width 16
 height 16
+enter_x 7
+enter_y 1
+msg
+Created:  1995-03-28
+Modified: 2012-02-06 Rick Tanner
+endmsg
 end
 arch dungeon_floor
 end
@@ -114,9 +116,9 @@ x 1
 y 1
 end
 arch button_handle
-connected 1
 x 1
 y 1
+connected 1
 end
 arch guard
 x 1
@@ -131,10 +133,10 @@ x 1
 y 3
 end
 arch grate_closed_1
-speed 0.500000
-connected 1
 x 1
 y 3
+speed 0.500000
+connected 1
 end
 arch dungeon_floor
 x 1
@@ -186,19 +188,19 @@ x 1
 y 13
 end
 arch grate_closed_1
-speed 0.500000
-connected 8
 x 1
 y 13
+speed 0.500000
+connected 8
 end
 arch dungeon_floor
 x 1
 y 14
 end
 arch button_handle
-connected 8
 x 1
 y 14
+connected 8
 end
 arch dungeon_floor
 x 1
@@ -279,6 +281,10 @@ x 2
 y 9
 end
 arch dungeon_floor
+x 2
+y 10
+end
+arch titan
 x 2
 y 10
 end
@@ -407,9 +413,9 @@ x 4
 y 1
 end
 arch button_handle
-connected 2
 x 4
 y 1
+connected 2
 end
 arch guard
 x 4
@@ -424,16 +430,35 @@ x 4
 y 3
 end
 arch grate_closed_1
-speed 0.500000
-connected 2
 x 4
 y 3
+speed 0.500000
+connected 2
 end
 arch dungeon_floor
 x 4
 y 4
 end
 arch dungeon_floor
+x 4
+y 5
+end
+arch dragonman
+name dragonman mercenary
+msg
+@match hello|hi
+What do you want to ask me about?
+Where am I from? what's my business here?
+Well, I can tell you the truth as I have told the others wormheads, who doesn't seem to comprehend the power of the force of chaos.
+@match from|where
+I was under the command of chaos lord himself.  Our lord is going to come soon to visit this land.  If you don't want his wrath upon this fortress.  You'd better tell lord, Butakis to release me and my companions.  The pet division will be on the way soon to visit the fortress.
+@match pet|division
+Pet division is the division of our metallic serpents under the command of lesser chaos lords in the northeast mountains.
+@match purpose|business
+I am here to deliver the notice from our lord to lord Butakis; as this is his last chance to join us to conquest the land cross the sea.
+@match *
+Hmmm ... another wormhead.
+endmsg
 x 4
 y 5
 end
@@ -575,6 +600,25 @@ arch dungeon_floor
 x 5
 y 9
 end
+arch dragonman
+name dragonman mercenary
+msg
+@match hello|hi
+What do you want to ask me about?
+Where am I from? what's my business here?
+Well, I can tell you the truth as I have told the others wormheads, who doesn't seem to comprehend the power of the force of chaos.
+@match from|where
+I was under the command of chaos lord himself.  Our lord is going to come soon to visit this land.  If you don't want his wrath upon this fortress.  You'd better tell lord, Butakis to release me and my companions.  The pet division will be on the way soon to visit the fortress.
+@match pet|division
+Pet division is the division of our metallic serpents under the command of lesser chaos lords in the northeast mountains.
+@match purpose|business
+I am here to deliver the notice from our lord to lord Butakis; as this is his last chance to join us to conquest the land cross the sea.
+@match *
+Hmmm ... another wormhead.
+endmsg
+x 5
+y 9
+end
 arch dungeon_floor
 x 5
 y 10
@@ -625,9 +669,9 @@ x 6
 y 1
 end
 arch button_handle
-connected 3
 x 6
 y 1
+connected 3
 end
 arch guard
 x 6
@@ -697,19 +741,19 @@ x 6
 y 13
 end
 arch grate_closed_1
-speed 0.500000
-connected 7
 x 6
 y 13
+speed 0.500000
+connected 7
 end
 arch dungeon_floor
 x 6
 y 14
 end
 arch button_handle
-connected 7
 x 6
 y 14
+connected 7
 end
 arch dungeon_floor
 x 6
@@ -752,12 +796,31 @@ x 7
 y 3
 end
 arch grate_closed_1
-speed 0.500000
-connected 3
 x 7
 y 3
+speed 0.500000
+connected 3
 end
 arch dungeon_floor
+x 7
+y 4
+end
+arch dragonman
+name dragonman mercenary
+msg
+@match hello|hi
+What do you want to ask me about?
+Where am I from? what's my business here?
+Well, I can tell you the truth as I have told the others wormheads, who doesn't seem to comprehend the power of the force of chaos.
+@match from|where
+I was under the command of chaos lord himself.  Our lord is going to come soon to visit this land.  If you don't want his wrath upon this fortress.  You'd better tell lord, Butakis to release me and my companions.  The pet division will be on the way soon to visit the fortress.
+@match pet|division
+Pet division is the division of our metallic serpents under the command of lesser chaos lords in the northeast mountains.
+@match purpose|business
+I am here to deliver the notice from our lord to lord Butakis; as this is his last chance to join us to conquest the land cross the sea.
+@match *
+Hmmm ... another wormhead.
+endmsg
 x 7
 y 4
 end
@@ -917,6 +980,10 @@ arch dungeon_floor
 x 8
 y 10
 end
+arch sphinx
+x 8
+y 10
+end
 arch dungeon_floor
 x 8
 y 11
@@ -971,9 +1038,9 @@ x 9
 y 1
 end
 arch button_handle
-connected 4
 x 9
 y 1
+connected 4
 end
 arch guard
 x 9
@@ -995,10 +1062,10 @@ x 9
 y 3
 end
 arch grate_closed_1
-speed 0.500000
-connected 4
 x 9
 y 3
+speed 0.500000
+connected 4
 end
 arch dungeon_floor
 x 9
@@ -1091,6 +1158,25 @@ x 10
 y 3
 end
 arch dungeon_floor
+x 10
+y 4
+end
+arch dragonman
+name dragonman mercenary
+msg
+@match hello|hi
+What do you want to ask me about?
+Where am I from? what's my business here?
+Well, I can tell you the truth as I have told the others wormheads, who doesn't seem to comprehend the power of the force of chaos.
+@match from|where
+I was under the command of chaos lord himself.  Our lord is going to come soon to visit this land.  If you don't want his wrath upon this fortress.  You'd better tell lord, Butakis to release me and my companions.  The pet division will be on the way soon to visit the fortress.
+@match pet|division
+Pet division is the division of our metallic serpents under the command of lesser chaos lords in the northeast mountains.
+@match purpose|business
+I am here to deliver the notice from our lord to lord Butakis; as this is his last chance to join us to conquest the land cross the sea.
+@match *
+Hmmm ... another wormhead.
+endmsg
 x 10
 y 4
 end
@@ -1233,10 +1319,10 @@ x 11
 y 10
 end
 arch grate_closed_2
-speed 0.500000
-connected 5
 x 11
 y 10
+speed 0.500000
+connected 5
 end
 arch dungeon_floor
 x 11
@@ -1251,10 +1337,10 @@ x 11
 y 12
 end
 arch grate_closed_2
-speed 0.500000
-connected 6
 x 11
 y 12
+speed 0.500000
+connected 6
 end
 arch dungeon_floor
 x 11
@@ -1433,9 +1519,9 @@ x 13
 y 10
 end
 arch button_handle
-connected 5
 x 13
 y 10
+connected 5
 end
 arch guard
 x 13
@@ -1454,9 +1540,9 @@ x 13
 y 12
 end
 arch button_handle
-connected 6
 x 13
 y 12
+connected 6
 end
 arch guard
 x 13
@@ -1737,156 +1823,4 @@ end
 arch dun7
 x 15
 y 15
-end
-arch titan
-x 2
-y 10
-end
-arch dragonman
-name dragonman mercenary
-msg
-@match Hello|hello
-What do you want to ask me about?
-Where am i from? what's my business
-here?
-Well, I can tell you the truth as I
-have told the others wormheads, who
-doesn't seem to comprehend the power
-of the force of chaos.
-@match from|where
-I was under the command of chaos lord
-himself. Our lord is going to come soon
-to visit this land. If you don't want
-his wrath upon this fortress. You'd
-better tell lord, Butakis to release me
-and my companions.
-The pet division will be on the way
-soon to visit the fortress.
-@match pet|division
-Pet division is the division of our
-metallic serpents under the command of
-lesser chaos lords in the northeast
-mountains.
-@match purpose|business
-I am here to deliver the notice from
-our lord to lord Butakis; as this is
-his last chance to join us to conquest
-the land cross the sea.
-@match *
-Hmmm . another wormhead
-endmsg
-x 4
-y 5
-end
-arch dragonman
-name dragonman mercenary
-msg
-@match Hello|hello
-What do you want to ask me about?
-Where am i from? what's my business
-here?
-Well, I can tell you the truth as I
-have told the others wormheads, who
-doesn't seem to comprehend the power
-of the force of chaos.
-@match from|where
-I was under the command of chaos lord
-himself. Our lord is going to come soon
-to visit this land. If you don't want
-his wrath upon this fortress. You'd
-better tell lord, Butakis to release me
-and my companions.
-The pet division will be on the way
-soon to visit the fortress.
-@match pet|division
-Pet division is the division of our
-metallic serpents under the command of
-lesser chaos lords in the northeast
-mountains.
-@match purpose|business
-I am here to deliver the notice from
-our lord to lord Butakis; as this is
-his last chance to join us to conquest
-the land cross the sea.
-@match *
-Hmmm . another wormhead
-endmsg
-x 5
-y 9
-end
-arch dragonman
-name dragonman mercenary
-msg
-@match Hello|hello
-What do you want to ask me about?
-Where am i from? what's my business
-here?
-Well, I can tell you the truth as I
-have told the others wormheads, who
-doesn't seem to comprehend the power
-of the force of chaos.
-@match from|where
-I was under the command of chaos lord
-himself. Our lord is going to come soon
-to visit this land. If you don't want
-his wrath upon this fortress. You'd
-better tell lord, Butakis to release me
-and my companions.
-The pet division will be on the way
-soon to visit the fortress.
-@match pet|division
-Pet division is the division of our
-metallic serpents under the command of
-lesser chaos lords in the northeast
-mountains.
-@match purpose|business
-I am here to deliver the notice from
-our lord to lord Butakis; as this is
-his last chance to join us to conquest
-the land cross the sea.
-@match *
-Hmmm . another wormhead
-endmsg
-x 7
-y 4
-end
-arch sphinx
-x 8
-y 10
-end
-arch dragonman
-name dragonman mercenary
-msg
-@match Hello|hello
-What do you want to ask me about?
-Where am i from? what's my business
-here?
-Well, I can tell you the truth as I
-have told the others wormheads, who
-doesn't seem to comprehend the power
-of the force of chaos.
-@match from|where
-I was under the command of chaos lord
-himself. Our lord is going to come soon
-to visit this land. If you don't want
-his wrath upon this fortress. You'd
-better tell lord, Butakis to release me
-and my companions.
-The pet division will be on the way
-soon to visit the fortress.
-@match pet|division
-Pet division is the division of our
-metallic serpents under the command of
-lesser chaos lords in the northeast
-mountains.
-@match purpose|business
-I am here to deliver the notice from
-our lord to lord Butakis; as this is
-his last chance to join us to conquest
-the land cross the sea.
-@match *
-Hmmm . another wormhead
-endmsg
-x 10
-y 4
 end

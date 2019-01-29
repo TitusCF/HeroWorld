@@ -1,14 +1,16 @@
 arch map
+name Chaos Lair, Finale
+difficulty 100
 region lakecountry
-name Chaos_lair4
+darkness 4
+width 20
+height 26
+enter_x 9
+enter_y 20
 msg
-Creator: Kundi, Xue
-Email: xkd@soda.berkeley.edu
-Date: Tue Jun  6 17:24:03 1995
+Created:  1995-06-06 Kundi, Xue (xkd@soda.berkeley.edu)
+Modified: 2012-02-10 Rick Tanner
 endmsg
-x 20
-y 26
-invisible 4
 end
 arch button_handle
 connected 1
@@ -18,9 +20,7 @@ speed 0.010000
 speed_left -1.340000
 randomitems none
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 1
 end
 arch large_stones
@@ -107,34 +107,102 @@ end
 arch cave23
 y 15
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 16
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 17
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 18
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 19
 end
-arch blocked
+arch pentagram_111
+hp 9
+sp 18
+y 20
+connected 3
+end
+arch baslic
+name Great Wyrm of Chaos, Lord of Chaos
+Con 16
+Wis 30
+Int 20
+hp 9999
+maxhp 11111
+sp 1000
+maxsp 1000
+exp 8000000
+dam 63
+ac -12
+y 20
+speed 1.0
+speed_left -0.920000
+level 99
+attacktype 327680
+resist_physical 100
+resist_magic 0
+resist_fire 100
+resist_electricity 30
+resist_confusion 30
+resist_acid 30
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_blind 0
+carrying 545050
+move_type walk fly_low
+can_cast_spell 1
+arch spell_create_bomb
+end
+arch Pdragon_mail
+end
+arch dragonslayer
+name Dragonbane
 msg
+Mopoon's Dragonbane.  It was forged long long ago.  The first master of the the sword has been forgotten, together with the arcane magic that forged it.  The Dragonbane glows with hunger for dragon blood.
 endmsg
+Str 3
+exp 3
+dam 81
+weight 64000
+magic 9
+identified 1
+end
+arch spell_mass_confusion
+end
+arch spell_mass_confusion
+end
+arch spell_dragonbreath
+end
+arch abil_icestorm
+end
+arch abil_poison_cloud
+end
+arch spell_sm_lightning
+end
+arch cleric_book
+value 4400
+randomitems none
+arch spell_face_of_death
+end
+end
+arch key2
+name fragment-of-chaos
+slaying Chaos
+face destruction.111
+value 100000
+end
+arch gem
+nrof 9999
+end
+end
+arch cave_15
 x 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 1
 end
@@ -231,21 +299,15 @@ arch cave23
 x 1
 y 16
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 17
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 18
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 19
 end
@@ -364,9 +426,7 @@ arch cave23
 x 2
 y 18
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 19
 end
@@ -481,43 +541,31 @@ arch cave2
 x 3
 y 18
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 19
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 20
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 21
 end
-arch blocked
+arch cave_15
 x 3
 y 22
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 23
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 24
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 25
 end
@@ -555,9 +603,7 @@ arch large_stones
 x 4
 y 5
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 5
 end
@@ -580,6 +626,39 @@ end
 arch large_stones
 x 4
 y 8
+end
+arch dragon
+name big wyvern of chaos
+Con 30
+Wis 30
+Int 12
+hp 6000
+sp 300
+maxsp 300
+exp 400000
+dam 40
+x 4
+y 8
+speed 0.7
+level 30
+attacktype 29
+resist_physical 100
+resist_electricity 30
+resist_cold 100
+resist_paralyze 100
+carrying 35000
+move_type walk fly_low
+arch abil_icestorm
+end
+arch gem
+nrof 700
+end
+arch spell_sm_lightning
+end
+arch spell_mass_confusion
+end
+arch spell_dragonbreath
+end
 end
 arch large_stones
 x 4
@@ -657,15 +736,11 @@ arch cave23
 x 4
 y 20
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 21
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 22
 end
@@ -798,9 +873,7 @@ x 4
 y 24
 connected 3
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 25
 end
@@ -882,9 +955,7 @@ arch large_stones
 x 5
 y 12
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 5
 y 12
 end
@@ -940,27 +1011,19 @@ arch cave22
 x 5
 y 20
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 5
 y 21
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 5
 y 22
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 5
 y 23
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 5
 y 24
 end
@@ -1083,15 +1146,11 @@ arch cave23
 x 6
 y 19
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 6
 y 20
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 6
 y 21
 end
@@ -1194,6 +1253,38 @@ arch large_stones
 x 7
 y 14
 end
+arch big_dragon
+name chaos dragon
+Wis 30
+Int 18
+hp 6500
+sp 100
+maxsp 300
+exp 300000
+x 7
+y 14
+speed 0.4
+level 30
+resist_physical 100
+resist_magic 100
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_paralyze 100
+carrying 35000
+move_type walk fly_low
+arch gem
+nrof 600
+end
+arch spell_sm_lightning
+end
+arch abil_icestorm
+end
+arch spell_mass_confusion
+end
+arch spell_color_spray
+end
+end
 arch large_stones
 x 7
 y 15
@@ -1290,6 +1381,38 @@ arch large_stones
 x 8
 y 5
 end
+arch big_dragon
+name chaos dragon
+Wis 30
+Int 18
+hp 6500
+sp 100
+maxsp 300
+exp 300000
+x 8
+y 5
+speed 0.4
+level 30
+resist_physical 100
+resist_magic 100
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_paralyze 100
+carrying 35000
+move_type walk fly_low
+arch gem
+nrof 600
+end
+arch spell_sm_lightning
+end
+arch abil_icestorm
+end
+arch spell_mass_confusion
+end
+arch spell_color_spray
+end
+end
 arch large_stones
 x 8
 y 6
@@ -1344,8 +1467,7 @@ y 18
 end
 arch magic_mouth
 msg
-  You enter the Lair of the Chaos Lord. 
-  Do you see him? If not, you will soon.
+You enter the Lair of the Chaos Lord.  Do you see him? If not, you will soon.
 endmsg
 x 8
 y 19
@@ -1383,7 +1505,7 @@ end
 arch large_stones
 x 8
 y 22
-no_pass 1
+move_block all
 end
 arch large_stones
 x 8
@@ -1416,7 +1538,7 @@ end
 arch altar
 slaying fragment-of-chaos
 msg
-  You hear sounds of rock moving.
+You hear sounds of rock moving.
 endmsg
 food 1
 x 9
@@ -1522,8 +1644,7 @@ speed_left -12.100000
 end
 arch magic_mouth
 msg
-  You enter the Lair of the Chaos Lord. 
-  Do you see him? If not, you will soon.
+You enter the Lair of the Chaos Lord.  Do you see him? If not, you will soon.
 endmsg
 x 9
 y 19
@@ -1561,7 +1682,7 @@ end
 arch large_stones
 x 9
 y 22
-no_pass 1
+move_block all
 end
 arch large_stones
 x 9
@@ -1679,8 +1800,7 @@ y 18
 end
 arch magic_mouth
 msg
-  You enter the Lair of the Chaos Lord. 
-  Do you see him? If not, you will soon.
+You enter the Lair of the Chaos Lord.  Do you see him? If not, you will soon.
 endmsg
 x 10
 y 19
@@ -1718,7 +1838,7 @@ end
 arch large_stones
 x 10
 y 22
-no_pass 1
+move_block all
 end
 arch large_stones
 x 10
@@ -1732,9 +1852,7 @@ arch large_stones
 x 10
 y 25
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 11
 end
 arch large_stones
@@ -1837,8 +1955,7 @@ y 18
 end
 arch magic_mouth
 msg
-  You enter the Lair of the Chaos Lord. 
-  Do you see him? If not, you will soon.
+You enter the Lair of the Chaos Lord.  Do you see him? If not, you will soon.
 endmsg
 x 11
 y 19
@@ -1901,20 +2018,14 @@ arch cave10
 x 11
 y 25
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 12
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 12
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 12
 y 2
 end
@@ -2058,9 +2169,7 @@ arch cave9
 x 12
 y 25
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 13
 end
 arch large_stones
@@ -2191,6 +2300,10 @@ arch cave3
 x 13
 y 21
 end
+arch medium_stones
+x 13
+y 22
+end
 arch cave23
 x 13
 y 22
@@ -2219,9 +2332,7 @@ arch cave1
 x 13
 y 25
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 14
 end
 arch large_stones
@@ -2247,6 +2358,38 @@ end
 arch large_stones
 x 14
 y 4
+end
+arch big_dragon
+name chaos dragon
+Wis 30
+Int 18
+hp 6500
+sp 100
+maxsp 300
+exp 300000
+x 14
+y 4
+speed 0.4
+level 30
+resist_physical 100
+resist_magic 100
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_paralyze 100
+carrying 35000
+move_type walk fly_low
+arch gem
+nrof 600
+end
+arch spell_sm_lightning
+end
+arch abil_icestorm
+end
+arch spell_mass_confusion
+end
+arch spell_color_spray
+end
 end
 arch large_stones
 x 14
@@ -2307,6 +2450,39 @@ end
 arch large_stones
 x 14
 y 15
+end
+arch dragon
+name big wyvern of chaos
+Con 30
+Wis 30
+Int 12
+hp 6000
+sp 300
+maxsp 300
+exp 400000
+dam 40
+x 14
+y 15
+speed 0.7
+level 30
+attacktype 29
+resist_physical 100
+resist_electricity 30
+resist_cold 100
+resist_paralyze 100
+carrying 35000
+move_type walk fly_low
+arch abil_icestorm
+end
+arch gem
+nrof 700
+end
+arch spell_sm_lightning
+end
+arch spell_mass_confusion
+end
+arch spell_dragonbreath
+end
 end
 arch large_stones
 x 14
@@ -3243,9 +3419,7 @@ arch cave2
 x 18
 y 25
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 19
 end
 arch large_stones
@@ -3375,6 +3549,10 @@ end
 arch cave1
 x 19
 y 16
+end
+arch medium_stones
+x 19
+y 17
 end
 arch cave1
 x 19
@@ -3443,252 +3621,4 @@ end
 arch cave22
 x 19
 y 25
-end
-arch pentagram_111
-hp 9
-sp 18
-y 20
-connected 3
-end
-arch baslic
-name Great Wyrm of Chaos, Lord of Chaos
-Con 16
-Wis 30
-Int 20
-hp 9999
-maxhp 11111
-sp 1000
-maxsp 1000
-exp 8000000
-dam 63
-ac -25
-y 20
-speed 1.000000
-speed_left -0.920000
-level 99
-immune 23573
-protected 104
-attacktype 351389
-carrying 545050
-flying 1
-can_cast_spell 1
-arch spell_create_bomb
-end
-arch Pdragon_mail
-end
-arch dragonslayer
-name Dragonbane
-msg
-  Mopoon's Dragonbane. It was forged
-long long ago. The first master of the
-the sword has been forgotten, together
-with the arcane magic that forged it.
-  The Dragonbane glows with hunger for
-dragon blood.
-endmsg
-Str 3
-exp 3
-dam 81
-x 1
-y 4
-weight 64000
-magic 9
-identified 1
-end
-arch spell_mass_confusion
-end
-arch spell_mass_confusion
-end
-arch spell_dragonbreath
-end
-arch abil_icestorm
-end
-arch abil_poison_cloud
-end
-arch spell_sm_lightning
-end
-arch cleric_book
-value 4400
-randomitems none
-arch spell_face_of_death
-end
-end
-arch key2
-name fragment-of-chaos
-slaying Choas
-face destruction.111
-value 100000
-end
-arch gem
-nrof 9999
-end
-end
-arch dragon
-name big wyvern of chaos
-Con 30
-Wis 30
-Int 12
-hp 6000
-sp 300
-maxsp 300
-exp 400000
-dam 40
-x 4
-y 8
-speed 0.700000
-speed_left -1.840000
-level 30
-immune 4117
-protected 8
-attacktype 29
-carrying 35000
-flying 1
-arch abil_icestorm
-end
-arch gem
-nrof 700
-end
-arch spell_sm_lightning
-end
-arch spell_mass_confusion
-end
-arch spell_dragonbreath
-end
-end
-arch big_dragon
-name chaos dragon
-Wis 30
-Int 18
-hp 6500
-sp 100
-maxsp 300
-exp 300000
-x 7
-y 14
-speed 0.400000
-speed_left -1.260000
-level 30
-immune 4099
-protected 28
-carrying 35000
-flying 1
-arch gem
-nrof 600
-end
-arch sorcerer_book
-name stones
-face largestone.111
-no_pick 1
-randomitems none
-arch spell_color_spray
-end
-end
-arch spell_sm_lightning
-end
-arch abil_icestorm
-end
-arch spell_mass_confusion
-end
-end
-arch big_dragon
-name chaos dragon
-Wis 30
-Int 18
-hp 6500
-sp 100
-maxsp 300
-exp 300000
-x 8
-y 5
-speed 0.400000
-speed_left -1.310000
-level 30
-immune 4099
-protected 28
-carrying 35000
-flying 1
-arch gem
-nrof 600
-end
-arch sorcerer_book
-name stones
-face largestone.111
-no_pick 1
-randomitems none
-arch spell_color_spray
-end
-end
-arch spell_sm_lightning
-end
-arch abil_icestorm
-end
-arch spell_mass_confusion
-end
-end
-arch big_dragon
-name chaos dragon
-Wis 30
-Int 18
-hp 6500
-sp 100
-maxsp 300
-exp 300000
-x 14
-y 4
-speed 0.400000
-speed_left -2.590000
-level 30
-immune 4099
-protected 28
-carrying 35000
-flying 1
-arch gem
-nrof 600
-end
-arch sorcerer_book
-name stones
-face largestone.111
-no_pick 1
-randomitems none
-arch spell_color_spray
-end
-end
-arch spell_sm_lightning
-end
-arch abil_icestorm
-end
-arch spell_mass_confusion
-end
-end
-arch dragon
-name big wyvern of chaos
-Con 30
-Wis 30
-Int 12
-hp 6000
-sp 300
-maxsp 300
-exp 400000
-dam 40
-x 14
-y 15
-speed 0.700000
-speed_left -1.840000
-level 30
-immune 4117
-protected 8
-attacktype 29
-carrying 35000
-flying 1
-arch abil_icestorm
-end
-arch gem
-nrof 700
-end
-arch spell_sm_lightning
-end
-arch spell_mass_confusion
-end
-arch spell_dragonbreath
-end
 end

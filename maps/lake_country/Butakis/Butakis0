@@ -1,13 +1,14 @@
 arch map
-name Butakis0
-region lakecountry
+name Fortress of Lord Butakis
+difficulty 25
+region butakisfortress
 width 24
 height 36
+enter_x 3
+enter_y 5
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Mon Mar 27 12:56:00 1995
-Modified: 2019-01-20 Acer
+Created:  1995-03-27
+Modified: 2012-02-05 Rick Tanner
 endmsg
 end
 arch grass
@@ -554,7 +555,7 @@ y 4
 end
 arch magic_mouth
 msg
-Travel safely
+Travel safely.
 endmsg
 x 2
 y 5
@@ -611,6 +612,14 @@ arch grass
 x 2
 y 14
 end
+arch guild
+name Abandoned Guild Hall
+slaying mockers/mainfloor
+hp 15
+sp 28
+x 2
+y 14
+end
 arch grass
 x 2
 y 15
@@ -632,6 +641,14 @@ x 2
 y 18
 end
 arch grass
+x 2
+y 19
+end
+arch guild
+name Mocker's storage hall
+slaying mockers/storage_room
+hp -1
+sp -1
 x 2
 y 19
 end
@@ -700,7 +717,7 @@ x 2
 y 33
 end
 arch tavern
-name royal blacksmith
+name Royal Blacksmith
 slaying blacksmith
 hp 7
 sp 5
@@ -787,6 +804,10 @@ arch grass
 x 3
 y 9
 end
+arch house_up
+x 3
+y 9
+end
 arch grass
 x 3
 y 10
@@ -800,9 +821,10 @@ x 3
 y 12
 end
 arch store_general
+name Lord Butakis General Shop
 slaying B_gshop
-hp 1
-sp 1
+hp 16
+sp 15
 x 3
 y 12
 end
@@ -978,6 +1000,10 @@ arch grass
 x 4
 y 7
 end
+arch house_1
+x 4
+y 7
+end
 arch grass
 x 4
 y 8
@@ -999,6 +1025,10 @@ x 4
 y 10
 end
 arch grass
+x 4
+y 11
+end
+arch house_1
 x 4
 y 11
 end
@@ -1027,6 +1057,7 @@ x 4
 y 16
 end
 arch house_small
+name Jacob's House
 slaying houses/Jacobs_house
 hp 11
 sp 15
@@ -1191,6 +1222,10 @@ arch grass
 x 5
 y 7
 end
+arch house_1
+x 5
+y 7
+end
 arch cobblestones2
 x 5
 y 8
@@ -1405,11 +1440,16 @@ arch grass
 x 6
 y 7
 end
+arch house_1
+x 6
+y 7
+end
 arch grass
 x 6
 y 8
 end
 arch house_small
+name James' House
 slaying houses/James_house
 hp 11
 sp 15
@@ -1432,6 +1472,10 @@ arch grass
 x 6
 y 11
 end
+arch house_1
+x 6
+y 11
+end
 arch cobblestones2
 x 6
 y 12
@@ -1449,6 +1493,7 @@ x 6
 y 14
 end
 arch house_small
+name Sam's House
 slaying houses/Sams_house
 hp 11
 sp 15
@@ -1464,10 +1509,6 @@ x 6
 y 16
 end
 arch house_small
-name Alchemist
-slaying alchemist
-hp 7
-sp 5
 x 6
 y 16
 end
@@ -1657,6 +1698,10 @@ arch grass
 x 7
 y 8
 end
+arch house_up
+x 7
+y 8
+end
 arch grass
 x 7
 y 9
@@ -1674,9 +1719,6 @@ x 7
 y 11
 end
 arch house_1
-slaying /quests/pippijn/one_eye_joe_house
-hp 9
-sp 18
 x 7
 y 11
 end
@@ -1891,6 +1933,10 @@ x 8
 y 10
 end
 arch grass
+x 8
+y 11
+end
+arch tavern
 x 8
 y 11
 end
@@ -2120,6 +2166,10 @@ arch grass
 x 9
 y 11
 end
+arch tavern
+x 9
+y 11
+end
 arch cobblestones2
 x 9
 y 12
@@ -2133,6 +2183,14 @@ x 9
 y 13
 end
 arch grass
+x 9
+y 14
+end
+arch tavern
+name Gemstone Alchemist
+slaying alchemist
+hp 7
+sp 5
 x 9
 y 14
 end
@@ -2327,7 +2385,15 @@ arch grass
 x 10
 y 8
 end
+arch house_1
+x 10
+y 8
+end
 arch grass
+x 10
+y 9
+end
+arch house_1
 x 10
 y 9
 end
@@ -2340,6 +2406,14 @@ x 10
 y 10
 end
 arch grass
+x 10
+y 11
+end
+arch house_1
+name Jack's House
+slaying houses/Jacks_house
+hp 11
+sp 15
 x 10
 y 11
 end
@@ -2484,7 +2558,7 @@ x 10
 y 30
 end
 arch city_tower
-name towers of luck
+name Towers of Luck
 slaying luck1
 hp 3
 sp 16
@@ -2666,7 +2740,7 @@ x 11
 y 29
 end
 arch city_tower
-name tower of luck
+name Towers of Luck
 slaying luck1
 hp 3
 sp 5
@@ -2682,7 +2756,7 @@ x 11
 y 31
 end
 arch city_tower
-name tower of luck
+name Towers of Luck
 slaying luck1
 hp 19
 sp 15
@@ -2861,16 +2935,7 @@ y 29
 end
 arch sign
 msg
-Prepare enough platinum, rubies and
-diamonds. For you need these to gamble.
-Also prepare scrolls of recall to get
-out of impasses otherwise you may die
-an agonizing death
-On the first level, each altar takes
-100 platinum coins to operate.
-On the second and first level, it
-takes a lot more. Luck are really hard
-to come by there, but rewards are huge.
+Prepare enough platinum, rubies and diamonds.  For you need these to gamble.  Also prepare scrolls of recall to get out of impasses otherwise you may die an agonizing death.  On the first level, each altar takes 100 platinum coins to operate.  On the second and third level, it takes a lot more.  Luck is really hard to come by there, but rewards are huge.
 endmsg
 x 12
 y 29
@@ -2880,7 +2945,7 @@ x 12
 y 30
 end
 arch city_tower
-name tower of luck
+name Towers of Luck
 slaying luck1
 hp 17
 sp 5
@@ -2954,9 +3019,10 @@ x 13
 y 6
 end
 arch store_weapons
+name Weapon Shop
 slaying B_wshop
-hp 1
-sp 8
+hp 11
+sp 19
 x 13
 y 6
 end
@@ -2989,6 +3055,10 @@ x 13
 y 10
 end
 arch grass
+x 13
+y 11
+end
+arch house_1
 x 13
 y 11
 end
@@ -3678,6 +3748,10 @@ arch grass
 x 16
 y 8
 end
+arch house_up
+x 16
+y 8
+end
 arch grass
 x 16
 y 9
@@ -3691,6 +3765,10 @@ x 16
 y 10
 end
 arch grass
+x 16
+y 11
+end
+arch tavern
 x 16
 y 11
 end
@@ -3889,6 +3967,7 @@ x 17
 y 7
 end
 arch house_1
+name Bob's House
 slaying houses/Bobs_house
 hp 11
 sp 15
@@ -3896,6 +3975,10 @@ x 17
 y 7
 end
 arch grass
+x 17
+y 8
+end
+arch house_1
 x 17
 y 8
 end
@@ -3907,7 +3990,15 @@ arch grass
 x 17
 y 10
 end
+arch house_1
+x 17
+y 10
+end
 arch grass
+x 17
+y 11
+end
+arch tavern
 x 17
 y 11
 end
@@ -3944,6 +4035,10 @@ x 17
 y 16
 end
 arch grass
+x 17
+y 17
+end
+arch barrack_long
 x 17
 y 17
 end
@@ -4117,6 +4212,10 @@ x 18
 y 6
 end
 arch grass
+x 18
+y 7
+end
+arch house_1
 x 18
 y 7
 end
@@ -4338,7 +4437,7 @@ x 19
 y 8
 end
 arch inn
-name Inn, White Pigeon
+name White Pigeon Inn
 slaying inn
 hp 8
 sp 14
@@ -4353,7 +4452,15 @@ arch grass
 x 19
 y 10
 end
+arch house_1
+x 19
+y 10
+end
 arch grass
+x 19
+y 11
+end
+arch house_up
 x 19
 y 11
 end
@@ -4528,6 +4635,7 @@ x 20
 y 2
 end
 arch prison
+name Fortress of Lord Butakis Prison
 slaying prison0
 hp 12
 sp 20
@@ -4574,11 +4682,16 @@ arch grass
 x 20
 y 9
 end
+arch house_1
+x 20
+y 9
+end
 arch grass
 x 20
 y 10
 end
 arch house_1
+name Sean's House
 slaying houses/Seans_house
 hp 11
 sp 15
@@ -4606,6 +4719,10 @@ x 20
 y 14
 end
 arch grass
+x 20
+y 15
+end
+arch barn
 x 20
 y 15
 end

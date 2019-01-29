@@ -1,29 +1,31 @@
 arch map
+name Snake Pit, Level 3
+difficulty 85
 region lakecountry
-name snakepit_3
-msg
-Creator: Kundi, Xue
-Email: xkd@soda.berkeley.edu
-Date: Sun Jun  4 13:29:23 1995
-endmsg
+darkness 5
 width 40
 height 40
-darkness 5
+enter_x 18
+enter_y 29
+msg
+Created:  1995-06-04 Kundi, Xue (xkd@soda.berkeley.edu)
+Modified: 2011-08-27 Andreas Kirschbaum
+endmsg
 end
 arch large_stones
 end
-arch blocked
+arch cave_15
 end
 arch large_stones
 y 1
 end
-arch blocked
+arch cave_15
 y 1
 end
 arch large_stones
 y 2
 end
-arch blocked
+arch cave_15
 y 2
 end
 arch large_stones
@@ -47,7 +49,7 @@ end
 arch large_stones
 y 6
 end
-arch blocked
+arch cave_15
 y 6
 end
 arch large_stones
@@ -104,13 +106,13 @@ end
 arch large_stones
 y 16
 end
-arch blocked
+arch cave_15
 y 16
 end
 arch large_stones
 y 17
 end
-arch blocked
+arch cave_15
 y 17
 end
 arch large_stones
@@ -230,7 +232,7 @@ end
 arch large_stones
 y 37
 end
-arch blocked
+arch cave_15
 y 37
 end
 arch large_stones
@@ -646,7 +648,7 @@ arch large_stones
 x 2
 y 20
 end
-arch blocked
+arch cave_15
 x 2
 y 20
 end
@@ -654,7 +656,7 @@ arch large_stones
 x 2
 y 21
 end
-arch blocked
+arch cave_15
 x 2
 y 21
 end
@@ -729,6 +731,29 @@ end
 arch large_stones
 x 2
 y 36
+end
+arch Cwyvern
+Con 30
+Int 12
+maxhp 300
+wc 2
+ac 2
+x 2
+y 36
+speed 0.5
+resist_cold -100
+resist_confusion -100
+resist_fear 100
+resist_blind 50
+carrying 25000
+move_type walk fly_low
+arch spell_dragonbreath
+end
+arch spell_mass_confusion
+end
+arch gem
+nrof 500
+end
 end
 arch large_stones
 x 2
@@ -806,9 +831,9 @@ y 10
 end
 arch cave16
 name illusionary wall
-no_pass 0
 x 3
 y 10
+move_block 0
 end
 arch large_stones
 x 3
@@ -816,9 +841,9 @@ y 11
 end
 arch cave14
 name illusionary wall
-no_pass 0
 x 3
 y 11
+move_block 0
 end
 arch large_stones
 x 3
@@ -963,7 +988,7 @@ end
 arch large_stones
 x 4
 end
-arch blocked
+arch cave_15
 x 4
 end
 arch large_stones
@@ -1012,9 +1037,9 @@ y 10
 end
 arch cave15
 name illusionary wall
-no_pass 0
 x 4
 y 10
+move_block 0
 end
 arch large_stones
 x 4
@@ -1022,9 +1047,9 @@ y 11
 end
 arch cave13
 name illusionary wall
-no_pass 0
 x 4
 y 11
+move_block 0
 end
 arch large_stones
 x 4
@@ -1194,9 +1219,9 @@ y 10
 end
 arch cave16
 name illusionary wall
-no_pass 0
 x 5
 y 10
+move_block 0
 end
 arch large_stones
 x 5
@@ -1204,9 +1229,9 @@ y 11
 end
 arch cave14
 name illusionary wall
-no_pass 0
 x 5
 y 11
+move_block 0
 end
 arch large_stones
 x 5
@@ -1358,6 +1383,27 @@ arch large_stones
 x 6
 y 5
 end
+arch demon_lord
+name Visiting Demon Lord, Orcus
+Wis 30
+Int 13
+hp 9000
+sp 1000
+maxsp 1000
+exp 2000000
+x 6
+y 5
+speed 0.7
+level 70
+attacktype 1167
+resist_physical 100
+resist_electricity 30
+resist_cold 100
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+end
 arch large_stones
 x 6
 y 6
@@ -1380,9 +1426,9 @@ y 10
 end
 arch cave15
 name illusionary wall
-no_pass 0
 x 6
 y 10
+move_block 0
 end
 arch large_stones
 x 6
@@ -1390,9 +1436,9 @@ y 11
 end
 arch cave13
 name illusionary wall
-no_pass 0
 x 6
 y 11
+move_block 0
 end
 arch large_stones
 x 6
@@ -1664,7 +1710,7 @@ arch large_stones
 x 7
 y 27
 end
-arch blocked
+arch cave_15
 x 7
 y 27
 end
@@ -1922,7 +1968,7 @@ arch large_stones
 x 8
 y 38
 end
-arch blocked
+arch cave_15
 x 8
 y 38
 end
@@ -1930,7 +1976,7 @@ arch large_stones
 x 8
 y 39
 end
-arch blocked
+arch cave_15
 x 8
 y 39
 end
@@ -2068,6 +2114,26 @@ arch large_stones
 x 9
 y 27
 end
+arch cobra
+name A lightning speed metallic serpent
+hp 1000
+exp 65000
+dam 30
+x 9
+y 27
+speed 1.0
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
+arch spell_mass_confusion
+end
+arch spell_paralyze
+end
+end
 arch large_stones
 x 9
 y 28
@@ -2087,6 +2153,26 @@ end
 arch large_stones
 x 9
 y 32
+end
+arch cobra
+name A lightning speed metallic serpent
+hp 1000
+exp 65000
+dam 30
+x 9
+y 32
+speed 1.0
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
+arch spell_mass_confusion
+end
+arch spell_paralyze
+end
 end
 arch large_stones
 x 9
@@ -2124,7 +2210,7 @@ arch large_stones
 x 9
 y 38
 end
-arch blocked
+arch cave_15
 x 9
 y 38
 end
@@ -2132,7 +2218,7 @@ arch large_stones
 x 9
 y 39
 end
-arch blocked
+arch cave_15
 x 9
 y 39
 end
@@ -2286,6 +2372,26 @@ arch large_stones
 x 10
 y 27
 end
+arch cobra
+name A lightning speed metallic serpent
+hp 1000
+exp 65000
+dam 30
+x 10
+y 27
+speed 1.0
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
+arch spell_mass_confusion
+end
+arch spell_paralyze
+end
+end
 arch large_stones
 x 10
 y 28
@@ -2305,6 +2411,26 @@ end
 arch large_stones
 x 10
 y 32
+end
+arch cobra
+name A lightning speed metallic serpent
+hp 1000
+exp 65000
+dam 30
+x 10
+y 32
+speed 1.0
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
+arch spell_mass_confusion
+end
+arch spell_paralyze
+end
 end
 arch large_stones
 x 10
@@ -2346,7 +2472,7 @@ arch large_stones
 x 10
 y 38
 end
-arch blocked
+arch cave_15
 x 10
 y 38
 end
@@ -2354,7 +2480,7 @@ arch large_stones
 x 10
 y 39
 end
-arch blocked
+arch cave_15
 x 10
 y 39
 end
@@ -2560,7 +2686,7 @@ arch large_stones
 x 11
 y 35
 end
-arch blocked
+arch cave_15
 x 11
 y 35
 end
@@ -2568,7 +2694,7 @@ arch large_stones
 x 11
 y 36
 end
-arch blocked
+arch cave_15
 x 11
 y 36
 end
@@ -2576,7 +2702,7 @@ arch large_stones
 x 11
 y 37
 end
-arch blocked
+arch cave_15
 x 11
 y 37
 end
@@ -2584,7 +2710,7 @@ arch large_stones
 x 11
 y 38
 end
-arch blocked
+arch cave_15
 x 11
 y 38
 end
@@ -2592,7 +2718,7 @@ arch large_stones
 x 11
 y 39
 end
-arch blocked
+arch cave_15
 x 11
 y 39
 end
@@ -2738,7 +2864,7 @@ arch large_stones
 x 12
 y 22
 end
-arch blocked
+arch cave_15
 x 12
 y 22
 end
@@ -2802,7 +2928,7 @@ arch large_stones
 x 12
 y 35
 end
-arch blocked
+arch cave_15
 x 12
 y 35
 end
@@ -2841,7 +2967,7 @@ end
 arch large_stones
 x 13
 end
-arch blocked
+arch cave_15
 x 13
 end
 arch large_stones
@@ -2908,7 +3034,7 @@ arch large_stones
 x 13
 y 9
 end
-arch blocked
+arch cave_15
 x 13
 y 9
 end
@@ -2984,7 +3110,7 @@ arch large_stones
 x 13
 y 22
 end
-arch blocked
+arch cave_15
 x 13
 y 22
 end
@@ -3091,14 +3217,14 @@ end
 arch large_stones
 x 14
 end
-arch blocked
+arch cave_15
 x 14
 end
 arch large_stones
 x 14
 y 1
 end
-arch blocked
+arch cave_15
 x 14
 y 1
 end
@@ -3154,7 +3280,7 @@ arch large_stones
 x 14
 y 8
 end
-arch blocked
+arch cave_15
 x 14
 y 8
 end
@@ -3162,7 +3288,7 @@ arch large_stones
 x 14
 y 9
 end
-arch blocked
+arch cave_15
 x 14
 y 9
 end
@@ -3170,7 +3296,7 @@ arch large_stones
 x 14
 y 10
 end
-arch blocked
+arch cave_15
 x 14
 y 10
 end
@@ -3234,7 +3360,7 @@ arch large_stones
 x 14
 y 22
 end
-arch blocked
+arch cave_15
 x 14
 y 22
 end
@@ -3257,6 +3383,26 @@ end
 arch large_stones
 x 14
 y 25
+end
+arch cobra
+name A lightning speed metallic serpent
+hp 1000
+exp 65000
+dam 30
+x 14
+y 25
+speed 1.0
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
+arch spell_mass_confusion
+end
+arch spell_paralyze
+end
 end
 arch large_stones
 x 14
@@ -3492,6 +3638,26 @@ arch large_stones
 x 15
 y 25
 end
+arch cobra
+name A lightning speed metallic serpent
+hp 1000
+exp 65000
+dam 30
+x 15
+y 25
+speed 1.0
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
+arch spell_mass_confusion
+end
+arch spell_paralyze
+end
+end
 arch large_stones
 x 15
 y 26
@@ -3536,7 +3702,7 @@ arch large_stones
 x 15
 y 35
 end
-arch blocked
+arch cave_15
 x 15
 y 35
 end
@@ -3803,9 +3969,9 @@ x 17
 y 2
 end
 arch large_stones
-no_pass 1
 x 17
 y 3
+move_block all
 end
 arch magic_banned
 x 17
@@ -3823,11 +3989,11 @@ x 17
 y 4
 end
 arch mover_5
+x 17
+y 5
 speed 1.000000
 speed_left -1.780000
 attacktype 1
-x 17
-y 5
 end
 arch large_stones
 x 17
@@ -4005,9 +4171,9 @@ x 18
 y 2
 end
 arch large_stones
-no_pass 1
 x 18
 y 3
+move_block all
 end
 arch magic_banned
 x 18
@@ -4025,11 +4191,11 @@ x 18
 y 4
 end
 arch mover_5
+x 18
+y 5
 speed 1.000000
 speed_left -1.780000
 attacktype 1
-x 18
-y 5
 end
 arch large_stones
 x 18
@@ -4184,6 +4350,26 @@ arch large_stones
 x 18
 y 34
 end
+arch cobra
+name A lightning speed metallic serpent
+hp 1000
+exp 65000
+dam 30
+x 18
+y 34
+speed 1.0
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
+arch spell_mass_confusion
+end
+arch spell_paralyze
+end
+end
 arch large_stones
 x 18
 y 35
@@ -4220,9 +4406,9 @@ x 19
 y 2
 end
 arch large_stones
-no_pass 1
 x 19
 y 3
+move_block all
 end
 arch magic_banned
 x 19
@@ -4240,11 +4426,11 @@ x 19
 y 4
 end
 arch mover_5
+x 19
+y 5
 speed 1.000000
 speed_left -1.780000
 attacktype 1
-x 19
-y 5
 end
 arch large_stones
 x 19
@@ -4378,6 +4564,26 @@ arch large_stones
 x 19
 y 34
 end
+arch cobra
+name A lightning speed metallic serpent
+hp 1000
+exp 65000
+dam 30
+x 19
+y 34
+speed 1.0
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
+arch spell_mass_confusion
+end
+arch spell_paralyze
+end
+end
 arch large_stones
 x 19
 y 35
@@ -4418,9 +4624,9 @@ x 20
 y 2
 end
 arch large_stones
-no_pass 1
 x 20
 y 3
+move_block all
 end
 arch magic_banned
 x 20
@@ -4438,11 +4644,11 @@ x 20
 y 4
 end
 arch mover_5
+x 20
+y 5
 speed 1.000000
 speed_left -1.780000
 attacktype 1
-x 20
-y 5
 end
 arch large_stones
 x 20
@@ -4604,7 +4810,7 @@ arch large_stones
 x 20
 y 39
 end
-arch blocked
+arch cave_15
 x 20
 y 39
 end
@@ -4620,9 +4826,9 @@ x 21
 y 2
 end
 arch large_stones
-no_pass 1
 x 21
 y 3
+move_block all
 end
 arch magic_banned
 x 21
@@ -4640,11 +4846,11 @@ x 21
 y 4
 end
 arch mover_5
+x 21
+y 5
 speed 1.000000
 speed_left -1.780000
 attacktype 1
-x 21
-y 5
 end
 arch large_stones
 x 21
@@ -4694,6 +4900,32 @@ arch large_stones
 x 21
 y 16
 end
+arch Cwyvern
+name big wyvern of chaos
+Con 30
+Int 12
+hp 6000
+maxhp 300
+exp 400000
+dam 40
+wc 2
+ac 2
+x 21
+y 16
+speed 0.7
+resist_cold -100
+resist_confusion -100
+resist_blind 50
+carrying 35000
+move_type walk fly_low
+arch spell_dragonbreath
+end
+arch spell_mass_confusion
+end
+arch gem
+nrof 700
+end
+end
 arch large_stones
 x 21
 y 17
@@ -4733,6 +4965,28 @@ end
 arch large_stones
 x 21
 y 24
+end
+arch Cwyvern
+Con 30
+Int 12
+maxhp 300
+wc 2
+ac 2
+x 21
+y 24
+speed 0.5
+resist_cold -100
+resist_confusion -100
+resist_blind 50
+carrying 25000
+move_type walk fly_low
+arch spell_dragonbreath
+end
+arch spell_mass_confusion
+end
+arch gem
+nrof 500
+end
 end
 arch large_stones
 x 21
@@ -4794,7 +5048,7 @@ arch large_stones
 x 21
 y 38
 end
-arch blocked
+arch cave_15
 x 21
 y 38
 end
@@ -4802,7 +5056,7 @@ arch large_stones
 x 21
 y 39
 end
-arch blocked
+arch cave_15
 x 21
 y 39
 end
@@ -4818,9 +5072,9 @@ x 22
 y 2
 end
 arch large_stones
-no_pass 1
 x 22
 y 3
+move_block all
 end
 arch magic_banned
 x 22
@@ -4838,11 +5092,11 @@ x 22
 y 4
 end
 arch mover_5
+x 22
+y 5
 speed 1.000000
 speed_left -1.780000
 attacktype 1
-x 22
-y 5
 end
 arch large_stones
 x 22
@@ -5131,7 +5385,7 @@ arch large_stones
 x 23
 y 21
 end
-arch blocked
+arch cave_15
 x 23
 y 21
 end
@@ -5139,7 +5393,7 @@ arch large_stones
 x 23
 y 22
 end
-arch blocked
+arch cave_15
 x 23
 y 22
 end
@@ -5179,6 +5433,26 @@ arch large_stones
 x 23
 y 29
 end
+arch cobra
+name A lightning speed metallic serpent
+hp 1000
+exp 65000
+dam 30
+x 23
+y 29
+speed 1.0
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
+arch spell_mass_confusion
+end
+arch spell_paralyze
+end
+end
 arch large_stones
 x 23
 y 30
@@ -5198,6 +5472,26 @@ end
 arch large_stones
 x 23
 y 34
+end
+arch cobra
+name A lightning speed metallic serpent
+hp 1000
+exp 65000
+dam 30
+x 23
+y 34
+speed 1.0
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
+arch spell_mass_confusion
+end
+arch spell_paralyze
+end
 end
 arch large_stones
 x 23
@@ -5345,7 +5639,7 @@ arch large_stones
 x 24
 y 20
 end
-arch blocked
+arch cave_15
 x 24
 y 20
 end
@@ -5353,7 +5647,7 @@ arch large_stones
 x 24
 y 21
 end
-arch blocked
+arch cave_15
 x 24
 y 21
 end
@@ -5361,7 +5655,7 @@ arch large_stones
 x 24
 y 22
 end
-arch blocked
+arch cave_15
 x 24
 y 22
 end
@@ -5369,7 +5663,7 @@ arch large_stones
 x 24
 y 23
 end
-arch blocked
+arch cave_15
 x 24
 y 23
 end
@@ -5405,6 +5699,26 @@ arch large_stones
 x 24
 y 29
 end
+arch cobra
+name A lightning speed metallic serpent
+hp 1000
+exp 65000
+dam 30
+x 24
+y 29
+speed 1.0
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
+arch spell_mass_confusion
+end
+arch spell_paralyze
+end
+end
 arch large_stones
 x 24
 y 30
@@ -5424,6 +5738,26 @@ end
 arch large_stones
 x 24
 y 34
+end
+arch cobra
+name A lightning speed metallic serpent
+hp 1000
+exp 65000
+dam 30
+x 24
+y 34
+speed 1.0
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
+arch spell_mass_confusion
+end
+arch spell_paralyze
+end
 end
 arch large_stones
 x 24
@@ -5449,21 +5783,21 @@ arch large_stones
 x 24
 y 39
 end
-arch blocked
+arch cave_15
 x 24
 y 39
 end
 arch large_stones
 x 25
 end
-arch blocked
+arch cave_15
 x 25
 end
 arch large_stones
 x 25
 y 1
 end
-arch blocked
+arch cave_15
 x 25
 y 1
 end
@@ -5571,7 +5905,7 @@ arch large_stones
 x 25
 y 19
 end
-arch blocked
+arch cave_15
 x 25
 y 19
 end
@@ -5579,7 +5913,7 @@ arch large_stones
 x 25
 y 20
 end
-arch blocked
+arch cave_15
 x 25
 y 20
 end
@@ -5587,7 +5921,7 @@ arch large_stones
 x 25
 y 21
 end
-arch blocked
+arch cave_15
 x 25
 y 21
 end
@@ -5595,7 +5929,7 @@ arch large_stones
 x 25
 y 22
 end
-arch blocked
+arch cave_15
 x 25
 y 22
 end
@@ -5603,7 +5937,7 @@ arch large_stones
 x 25
 y 23
 end
-arch blocked
+arch cave_15
 x 25
 y 23
 end
@@ -5707,21 +6041,21 @@ arch large_stones
 x 25
 y 39
 end
-arch blocked
+arch cave_15
 x 25
 y 39
 end
 arch large_stones
 x 26
 end
-arch blocked
+arch cave_15
 x 26
 end
 arch large_stones
 x 26
 y 1
 end
-arch blocked
+arch cave_15
 x 26
 y 1
 end
@@ -5745,7 +6079,7 @@ arch large_stones
 x 26
 y 4
 end
-arch blocked
+arch cave_15
 x 26
 y 4
 end
@@ -5753,7 +6087,7 @@ arch large_stones
 x 26
 y 5
 end
-arch blocked
+arch cave_15
 x 26
 y 5
 end
@@ -5761,7 +6095,7 @@ arch large_stones
 x 26
 y 6
 end
-arch blocked
+arch cave_15
 x 26
 y 6
 end
@@ -5825,7 +6159,7 @@ arch large_stones
 x 26
 y 18
 end
-arch blocked
+arch cave_15
 x 26
 y 18
 end
@@ -5833,7 +6167,7 @@ arch large_stones
 x 26
 y 19
 end
-arch blocked
+arch cave_15
 x 26
 y 19
 end
@@ -5925,7 +6259,7 @@ arch large_stones
 x 26
 y 32
 end
-arch blocked
+arch cave_15
 x 26
 y 32
 end
@@ -5969,7 +6303,7 @@ arch large_stones
 x 26
 y 39
 end
-arch blocked
+arch cave_15
 x 26
 y 39
 end
@@ -6023,7 +6357,7 @@ arch large_stones
 x 27
 y 6
 end
-arch blocked
+arch cave_15
 x 27
 y 6
 end
@@ -6031,7 +6365,7 @@ arch large_stones
 x 27
 y 7
 end
-arch blocked
+arch cave_15
 x 27
 y 7
 end
@@ -6103,7 +6437,7 @@ arch large_stones
 x 27
 y 18
 end
-arch blocked
+arch cave_15
 x 27
 y 18
 end
@@ -6111,7 +6445,7 @@ arch large_stones
 x 27
 y 19
 end
-arch blocked
+arch cave_15
 x 27
 y 19
 end
@@ -6264,23 +6598,29 @@ end
 arch depositbox
 name nicely make metal chest
 slaying badge_dragon
-carrying 25100
 x 28
 y 2
+carrying 25100
 arch potion_magic
 nrof 4
+arch spell_regenerate_spellpoints
+end
 end
 arch potion_heal
 nrof 8
+arch spell_heal
+end
 end
 arch rod_light
 name Rod of Knowledge
 hp 120
 maxhp 120
-sp 75
 level 20
 value 1000
+randomitems none
 identified 1
+arch spell_identify
+end
 end
 end
 arch large_stones
@@ -6319,7 +6659,7 @@ arch large_stones
 x 28
 y 7
 end
-arch blocked
+arch cave_15
 x 28
 y 7
 end
@@ -6327,7 +6667,7 @@ arch large_stones
 x 28
 y 8
 end
-arch blocked
+arch cave_15
 x 28
 y 8
 end
@@ -6399,7 +6739,7 @@ arch large_stones
 x 28
 y 19
 end
-arch blocked
+arch cave_15
 x 28
 y 19
 end
@@ -6565,7 +6905,7 @@ arch large_stones
 x 29
 y 8
 end
-arch blocked
+arch cave_15
 x 29
 y 8
 end
@@ -6755,2641 +7095,233 @@ arch large_stones
 x 30
 y 3
 end
-arch large_stones
-x 30
-y 4
-end
-arch large_stones
-x 30
-y 5
-end
-arch large_stones
-x 30
-y 6
-end
-arch large_stones
-x 30
-y 7
-end
-arch cave7
-x 30
-y 7
-end
-arch large_stones
-x 30
-y 8
-end
-arch cave23
-x 30
-y 8
-end
-arch large_stones
-x 30
-y 9
-end
-arch blocked
-x 30
-y 9
-end
-arch large_stones
-x 30
-y 10
-end
-arch cave24
-x 30
-y 10
-end
-arch large_stones
-x 30
-y 11
-end
-arch cave3
-x 30
-y 11
-end
-arch large_stones
-x 30
-y 12
-end
-arch cave9
-x 30
-y 12
-end
-arch large_stones
-x 30
-y 13
-end
-arch large_stones
-x 30
-y 14
-end
-arch large_stones
-x 30
-y 15
-end
-arch large_stones
-x 30
-y 16
-end
-arch large_stones
-x 30
-y 17
-end
-arch large_stones
-x 30
-y 18
-end
-arch large_stones
-x 30
-y 19
-end
-arch cave12
-x 30
-y 19
-end
-arch large_stones
-x 30
-y 20
-end
-arch cave8
-x 30
-y 20
-end
-arch large_stones
-x 30
-y 21
-end
-arch large_stones
-x 30
-y 22
-end
-arch large_stones
-x 30
-y 23
-end
-arch large_stones
-x 30
-y 24
-end
-arch large_stones
-x 30
-y 25
-end
-arch large_stones
-x 30
-y 26
-end
-arch large_stones
-x 30
-y 27
-end
-arch large_stones
-x 30
-y 28
-end
-arch large_stones
-x 30
-y 29
-end
-arch large_stones
-x 30
-y 30
-end
-arch large_stones
-x 30
-y 31
-end
-arch large_stones
-x 30
-y 32
-end
-arch large_stones
-x 30
-y 33
-end
-arch large_stones
-x 30
-y 34
-end
-arch large_stones
-x 30
-y 35
-end
-arch large_stones
-x 30
-y 36
-end
-arch large_stones
-x 30
-y 37
-end
-arch large_stones
-x 30
-y 38
-end
-arch large_stones
-x 30
-y 39
-end
-arch cave2
-x 30
-y 39
-end
-arch large_stones
-x 31
-end
-arch cave25
-x 31
-end
-arch large_stones
-x 31
-y 1
-end
-arch cave5
-x 31
-y 1
-end
-arch large_stones
-x 31
-y 2
-end
-arch large_stones
-x 31
-y 3
-end
-arch large_stones
-x 31
-y 4
-end
-arch large_stones
-x 31
-y 5
-end
-arch large_stones
-x 31
-y 6
-end
-arch large_stones
-x 31
-y 7
-end
-arch large_stones
-x 31
-y 8
-end
-arch cave12
-x 31
-y 8
-end
-arch large_stones
-x 31
-y 9
-end
-arch cave23
-x 31
-y 9
-end
-arch large_stones
-x 31
-y 10
-end
-arch cave25
-x 31
-y 10
-end
-arch large_stones
-x 31
-y 11
-end
-arch cave1
-x 31
-y 11
-end
-arch large_stones
-x 31
-y 12
-end
-arch cave14
-x 31
-y 12
-end
-arch large_stones
-x 31
-y 13
-end
-arch large_stones
-x 31
-y 14
-end
-arch large_stones
-x 31
-y 15
-end
-arch large_stones
-x 31
-y 16
-end
-arch large_stones
-x 31
-y 17
-end
-arch large_stones
-x 31
-y 18
-end
-arch large_stones
-x 31
-y 19
-end
-arch large_stones
-x 31
-y 20
-end
-arch large_stones
-x 31
-y 21
-end
-arch large_stones
-x 31
-y 22
-end
-arch large_stones
-x 31
-y 23
-end
-arch large_stones
-x 31
-y 24
-end
-arch large_stones
-x 31
-y 25
-end
-arch large_stones
-x 31
-y 26
-end
-arch large_stones
-x 31
-y 27
-end
-arch large_stones
-x 31
-y 28
-end
-arch large_stones
-x 31
-y 29
-end
-arch large_stones
-x 31
-y 30
-end
-arch large_stones
-x 31
-y 31
-end
-arch large_stones
-x 31
-y 32
-end
-arch large_stones
-x 31
-y 33
-end
-arch large_stones
-x 31
-y 34
-end
-arch large_stones
-x 31
-y 35
-end
-arch large_stones
-x 31
-y 36
-end
-arch large_stones
-x 31
-y 37
-end
-arch large_stones
-x 31
-y 38
-end
-arch cave11
-x 31
-y 38
-end
-arch large_stones
-x 31
-y 39
-end
-arch cave22
-x 31
-y 39
-end
-arch large_stones
-x 32
-end
-arch cave24
-x 32
-end
-arch large_stones
-x 32
-y 1
-end
-arch cave8
-x 32
-y 1
-end
-arch large_stones
-x 32
-y 2
-end
-arch large_stones
-x 32
-y 3
-end
-arch large_stones
-x 32
-y 4
-end
-arch large_stones
-x 32
-y 5
-end
-arch large_stones
-x 32
-y 6
-end
-arch large_stones
-x 32
-y 7
-end
-arch large_stones
-x 32
-y 8
-end
-arch large_stones
-x 32
-y 9
-end
-arch cave16
-x 32
-y 9
-end
-arch large_stones
-x 32
-y 10
-end
-arch cave17
-x 32
-y 10
-end
-arch large_stones
-x 32
-y 11
-end
-arch blocked
-x 32
-y 11
-end
-arch large_stones
-x 32
-y 12
-end
-arch cave4
-x 32
-y 12
-end
-arch large_stones
-x 32
-y 13
-end
-arch large_stones
-x 32
-y 14
-end
-arch large_stones
-x 32
-y 15
-end
-arch large_stones
-x 32
-y 16
-end
-arch large_stones
-x 32
-y 17
-end
-arch large_stones
-x 32
-y 18
-end
-arch large_stones
-x 32
-y 19
-end
-arch large_stones
-x 32
-y 20
-end
-arch large_stones
-x 32
-y 21
-end
-arch large_stones
-x 32
-y 22
-end
-arch large_stones
-x 32
-y 23
-end
-arch cave11
-x 32
-y 23
-end
-arch large_stones
-x 32
-y 24
-end
-arch cave5
-x 32
-y 24
-end
-arch large_stones
-x 32
-y 25
-end
-arch large_stones
-x 32
-y 26
-end
-arch large_stones
-x 32
-y 27
-end
-arch large_stones
-x 32
-y 28
-end
-arch large_stones
-x 32
-y 29
-end
-arch large_stones
-x 32
-y 30
-end
-arch large_stones
-x 32
-y 31
-end
-arch large_stones
-x 32
-y 32
-end
-arch large_stones
-x 32
-y 33
-end
-arch large_stones
-x 32
-y 34
-end
-arch large_stones
-x 32
-y 35
-end
-arch large_stones
-x 32
-y 36
-end
-arch large_stones
-x 32
-y 37
-end
-arch large_stones
-x 32
-y 38
-end
-arch cave12
-x 32
-y 38
-end
-arch large_stones
-x 32
-y 39
-end
-arch cave23
-x 32
-y 39
-end
-arch large_stones
-x 33
-end
-arch cave4
-x 33
-end
-arch large_stones
-x 33
-y 1
-end
-arch large_stones
-x 33
-y 2
-end
-arch large_stones
-x 33
-y 3
-end
-arch large_stones
-x 33
-y 4
-end
-arch large_stones
-x 33
-y 5
-end
-arch large_stones
-x 33
-y 6
-end
-arch large_stones
-x 33
-y 7
-end
-arch large_stones
-x 33
-y 8
-end
-arch large_stones
-x 33
-y 9
-end
-arch large_stones
-x 33
-y 10
-end
-arch cave16
-x 33
-y 10
-end
-arch large_stones
-x 33
-y 11
-end
-arch cave17
-x 33
-y 11
-end
-arch large_stones
-x 33
-y 12
-end
-arch cave19
-x 33
-y 12
-end
-arch large_stones
-x 33
-y 13
-end
-arch cave5
-x 33
-y 13
-end
-arch large_stones
-x 33
-y 14
-end
-arch large_stones
-x 33
-y 15
-end
-arch large_stones
-x 33
-y 16
-end
-arch large_stones
-x 33
-y 17
-end
-arch large_stones
-x 33
-y 18
-end
-arch large_stones
-x 33
-y 19
-end
-arch large_stones
-x 33
-y 20
-end
-arch large_stones
-x 33
-y 21
-end
-arch large_stones
-x 33
-y 22
-end
-arch cave15
-x 33
-y 22
-end
-arch large_stones
-x 33
-y 23
-end
-arch cave22
-x 33
-y 23
-end
-arch large_stones
-x 33
-y 24
-end
-arch cave25
-x 33
-y 24
-end
-arch large_stones
-x 33
-y 25
-end
-arch cave1
-x 33
-y 25
-end
-arch large_stones
-x 33
-y 26
-end
-arch cave10
-x 33
-y 26
-end
-arch large_stones
-x 33
-y 27
-end
-arch large_stones
-x 33
-y 28
-end
-arch large_stones
-x 33
-y 29
-end
-arch large_stones
-x 33
-y 30
-end
-arch large_stones
-x 33
-y 31
-end
-arch large_stones
-x 33
-y 32
-end
-arch large_stones
-x 33
-y 33
-end
-arch large_stones
-x 33
-y 34
-end
-arch large_stones
-x 33
-y 35
-end
-arch large_stones
-x 33
-y 36
-end
-arch large_stones
-x 33
-y 37
-end
-arch large_stones
-x 33
-y 38
-end
-arch large_stones
-x 33
-y 39
-end
-arch cave2
-x 33
-y 39
-end
-arch large_stones
-x 34
-end
-arch cave4
-x 34
-end
-arch large_stones
-x 34
-y 1
-end
-arch large_stones
-x 34
-y 2
-end
-arch large_stones
-x 34
-y 3
-end
-arch large_stones
-x 34
-y 4
-end
-arch large_stones
-x 34
-y 5
-end
-arch large_stones
-x 34
-y 6
-end
-arch large_stones
-x 34
-y 7
-end
-arch large_stones
-x 34
-y 8
-end
-arch large_stones
-x 34
-y 9
-end
-arch large_stones
-x 34
-y 10
-end
-arch large_stones
-x 34
-y 11
-end
-arch cave12
-x 34
-y 11
-end
-arch large_stones
-x 34
-y 12
-end
-arch cave3
-x 34
-y 12
-end
-arch large_stones
-x 34
-y 13
-end
-arch cave9
-x 34
-y 13
-end
-arch large_stones
-x 34
-y 14
-end
-arch large_stones
-x 34
-y 15
-end
-arch large_stones
-x 34
-y 16
-end
-arch large_stones
-x 34
-y 17
-end
-arch large_stones
-x 34
-y 18
-end
-arch large_stones
-x 34
-y 19
-end
-arch large_stones
-x 34
-y 20
-end
-arch large_stones
-x 34
-y 21
-end
-arch cave11
-x 34
-y 21
-end
-arch large_stones
-x 34
-y 22
-end
-arch cave22
-x 34
-y 22
-end
-arch large_stones
-x 34
-y 23
-end
-arch blocked
-x 34
-y 23
-end
-arch large_stones
-x 34
-y 24
-end
-arch cave24
-x 34
-y 24
-end
-arch large_stones
-x 34
-y 25
-end
-arch cave3
-x 34
-y 25
-end
-arch large_stones
-x 34
-y 26
-end
-arch cave8
-x 34
-y 26
-end
-arch large_stones
-x 34
-y 27
-end
-arch large_stones
-x 34
-y 28
-end
-arch large_stones
-x 34
-y 29
-end
-arch large_stones
-x 34
-y 30
-end
-arch large_stones
-x 34
-y 31
-end
-arch large_stones
-x 34
-y 32
-end
-arch large_stones
-x 34
-y 33
-end
-arch large_stones
-x 34
-y 34
-end
-arch large_stones
-x 34
-y 35
-end
-arch large_stones
-x 34
-y 36
-end
-arch large_stones
-x 34
-y 37
-end
-arch large_stones
-x 34
-y 38
-end
-arch cave6
-x 34
-y 38
-end
-arch large_stones
-x 34
-y 39
-end
-arch cave22
-x 34
-y 39
-end
-arch large_stones
-x 35
-end
-arch cave25
-x 35
-end
-arch large_stones
-x 35
-y 1
-end
-arch cave10
-x 35
-y 1
-end
-arch large_stones
-x 35
-y 2
-end
-arch large_stones
-x 35
-y 3
-end
-arch large_stones
-x 35
-y 4
-end
-arch large_stones
-x 35
-y 5
-end
-arch large_stones
-x 35
-y 6
-end
-arch large_stones
-x 35
-y 7
-end
-arch large_stones
-x 35
-y 8
-end
-arch large_stones
-x 35
-y 9
-end
-arch large_stones
-x 35
-y 10
-end
-arch large_stones
-x 35
-y 11
-end
-arch large_stones
-x 35
-y 12
-end
-arch gate_closed_1
-speed 0.500000
-speed_left -11.100000
-connected 1
-x 35
-y 12
-end
-arch large_stones
-x 35
-y 13
-end
-arch large_stones
-x 35
-y 14
-end
-arch large_stones
-x 35
-y 15
-end
-arch large_stones
-x 35
-y 16
-end
-arch large_stones
-x 35
-y 17
-end
-arch large_stones
-x 35
-y 18
-end
-arch large_stones
-x 35
-y 19
-end
-arch large_stones
-x 35
-y 20
-end
-arch large_stones
-x 35
-y 21
-end
-arch cave7
-x 35
-y 21
-end
-arch large_stones
-x 35
-y 22
-end
-arch cave23
-x 35
-y 22
-end
-arch large_stones
-x 35
-y 23
-end
-arch blocked
-x 35
-y 23
-end
-arch large_stones
-x 35
-y 24
-end
-arch cave25
-x 35
-y 24
-end
-arch large_stones
-x 35
-y 25
-end
-arch cave10
-x 35
-y 25
-end
-arch large_stones
-x 35
-y 26
-end
-arch large_stones
-x 35
-y 27
-end
-arch large_stones
-x 35
-y 28
-end
-arch large_stones
-x 35
-y 29
-end
-arch large_stones
-x 35
-y 30
-end
-arch large_stones
-x 35
-y 31
-end
-arch large_stones
-x 35
-y 32
-end
-arch large_stones
-x 35
-y 33
-end
-arch large_stones
-x 35
-y 34
-end
-arch cave11
-x 35
-y 34
-end
-arch large_stones
-x 35
-y 35
-end
-arch cave1
-x 35
-y 35
-end
-arch large_stones
-x 35
-y 36
-end
-arch cave1
-x 35
-y 36
-end
-arch large_stones
-x 35
-y 37
-end
-arch cave5
-x 35
-y 37
-end
-arch large_stones
-x 35
-y 38
-end
-arch cave2
-x 35
-y 38
-end
-arch large_stones
-x 35
-y 39
-end
-arch blocked
-x 35
-y 39
-end
-arch large_stones
-x 36
-end
-arch blocked
-x 36
-end
-arch large_stones
-x 36
-y 1
-end
-arch cave25
-x 36
-y 1
-end
-arch large_stones
-x 36
-y 2
-end
-arch cave10
-x 36
-y 2
-end
-arch large_stones
-x 36
-y 3
-end
-arch large_stones
-x 36
-y 4
-end
-arch large_stones
-x 36
-y 5
-end
-arch large_stones
-x 36
-y 6
-end
-arch large_stones
-x 36
-y 7
-end
-arch large_stones
-x 36
-y 8
-end
-arch large_stones
-x 36
-y 9
-end
-arch large_stones
-x 36
-y 10
-end
-arch large_stones
-x 36
-y 11
-end
-arch large_stones
-x 36
-y 12
-end
-arch gate_closed_1
-speed 0.500000
-speed_left -11.100000
-connected 1
-x 36
-y 12
-end
-arch large_stones
-x 36
-y 13
-end
-arch large_stones
-x 36
-y 14
-end
-arch large_stones
-x 36
-y 15
-end
-arch large_stones
-x 36
-y 16
-end
-arch large_stones
-x 36
-y 17
-end
-arch large_stones
-x 36
-y 18
-end
-arch large_stones
-x 36
-y 19
-end
-arch large_stones
-x 36
-y 20
-end
-arch large_stones
-x 36
-y 21
-end
-arch large_stones
-x 36
-y 22
-end
-arch cave2
-x 36
-y 22
-end
-arch large_stones
-x 36
-y 23
-end
-arch blocked
-x 36
-y 23
-end
-arch large_stones
-x 36
-y 24
-end
-arch blocked
-x 36
-y 24
-end
-arch large_stones
-x 36
-y 25
-end
-arch cave4
-x 36
-y 25
-end
-arch large_stones
-x 36
-y 26
-end
-arch large_stones
-x 36
-y 27
-end
-arch large_stones
-x 36
-y 28
-end
-arch large_stones
-x 36
-y 29
-end
-arch large_stones
-x 36
-y 30
-end
-arch large_stones
-x 36
-y 31
-end
-arch large_stones
-x 36
-y 32
-end
-arch large_stones
-x 36
-y 33
-end
-arch large_stones
-x 36
-y 34
-end
-arch cave7
-x 36
-y 34
-end
-arch large_stones
-x 36
-y 35
-end
-arch cave23
-x 36
-y 35
-end
-arch large_stones
-x 36
-y 36
-end
-arch blocked
-x 36
-y 36
-end
-arch large_stones
-x 36
-y 37
-end
-arch cave4
-x 36
-y 37
-end
-arch large_stones
-x 36
-y 38
-end
-arch cave12
-x 36
-y 38
-end
-arch large_stones
-x 36
-y 39
-end
-arch cave23
-x 36
-y 39
-end
-arch large_stones
-x 37
-end
-arch blocked
-x 37
-end
-arch large_stones
-x 37
-y 1
-end
-arch cave24
-x 37
-y 1
-end
-arch large_stones
-x 37
-y 2
-end
-arch cave13
-x 37
-y 2
-end
-arch large_stones
-x 37
-y 3
-end
-arch cave11
-x 37
-y 3
-end
-arch large_stones
-x 37
-y 4
-end
-arch cave14
-x 37
-y 4
-end
-arch large_stones
-x 37
-y 5
-end
-arch large_stones
-x 37
-y 6
-end
-arch large_stones
-x 37
-y 7
-end
-arch large_stones
-x 37
-y 8
-end
-arch large_stones
-x 37
-y 9
-end
-arch large_stones
-x 37
-y 10
-end
-arch large_stones
-x 37
-y 11
-end
-arch cave11
-x 37
-y 11
-end
-arch large_stones
-x 37
-y 12
-end
-arch cave1
-x 37
-y 12
-end
-arch large_stones
-x 37
-y 13
-end
-arch cave14
-x 37
-y 13
-end
-arch large_stones
-x 37
-y 14
-end
-arch button_lever
-connected 1
-x 37
-y 14
-end
-arch large_stones
-x 37
-y 15
-end
-arch large_stones
-x 37
-y 16
-end
-arch large_stones
-x 37
-y 17
-end
-arch large_stones
-x 37
-y 18
-end
-arch large_stones
-x 37
-y 19
-end
-arch large_stones
-x 37
-y 20
-end
-arch cave11
-x 37
-y 20
-end
-arch large_stones
-x 37
-y 21
-end
-arch cave1
-x 37
-y 21
-end
-arch large_stones
-x 37
-y 22
-end
-arch cave22
-x 37
-y 22
-end
-arch large_stones
-x 37
-y 23
-end
-arch cave24
-x 37
-y 23
-end
-arch large_stones
-x 37
-y 24
-end
-arch cave3
-x 37
-y 24
-end
-arch large_stones
-x 37
-y 25
-end
-arch cave13
-x 37
-y 25
-end
-arch large_stones
-x 37
-y 26
-end
-arch large_stones
-x 37
-y 27
-end
-arch large_stones
-x 37
-y 28
-end
-arch large_stones
-x 37
-y 29
-end
-arch large_stones
-x 37
-y 30
-end
-arch large_stones
-x 37
-y 31
-end
-arch cave11
-x 37
-y 31
-end
-arch large_stones
-x 37
-y 32
-end
-arch cave1
-x 37
-y 32
-end
-arch large_stones
-x 37
-y 33
-end
-arch cave5
-x 37
-y 33
-end
-arch large_stones
-x 37
-y 34
-end
-arch cave6
-x 37
-y 34
-end
-arch large_stones
-x 37
-y 35
-end
-arch cave20
-x 37
-y 35
-end
-arch large_stones
-x 37
-y 36
-end
-arch cave24
-x 37
-y 36
-end
-arch large_stones
-x 37
-y 37
-end
-arch cave9
-x 37
-y 37
-end
-arch large_stones
-x 37
-y 38
-end
-arch cave11
-x 37
-y 38
-end
-arch large_stones
-x 37
-y 39
-end
-arch cave22
-x 37
-y 39
-end
-arch large_stones
-x 38
-end
-arch blocked
-x 38
-end
-arch large_stones
-x 38
-y 1
-end
-arch cave4
-x 38
-y 1
-end
-arch large_stones
-x 38
-y 2
-end
-arch cave6
-x 38
-y 2
-end
-arch large_stones
-x 38
-y 3
-end
-arch cave22
-x 38
-y 3
-end
-arch large_stones
-x 38
-y 4
-end
-arch cave4
-x 38
-y 4
-end
-arch large_stones
-x 38
-y 5
-end
-arch cave6
-x 38
-y 5
-end
-arch large_stones
-x 38
-y 6
-end
-arch cave14
-x 38
-y 6
-end
-arch large_stones
-x 38
-y 7
-end
-arch large_stones
-x 38
-y 8
-end
-arch large_stones
-x 38
-y 9
-end
-arch button_lever
-connected 1
-x 38
-y 9
-end
-arch large_stones
-x 38
-y 10
-end
-arch cave6
-x 38
-y 10
-end
-arch large_stones
-x 38
-y 11
-end
-arch cave22
-x 38
-y 11
-end
-arch large_stones
-x 38
-y 12
-end
-arch cave24
-x 38
-y 12
-end
-arch large_stones
-x 38
-y 13
-end
-arch cave9
-x 38
-y 13
-end
-arch large_stones
-x 38
-y 14
-end
-arch cave11
-x 38
-y 14
-end
-arch large_stones
-x 38
-y 15
-end
-arch cave5
-x 38
-y 15
-end
-arch large_stones
-x 38
-y 16
-end
-arch large_stones
-x 38
-y 17
-end
-arch large_stones
-x 38
-y 18
-end
-arch cave6
-x 38
-y 18
-end
-arch large_stones
-x 38
-y 19
-end
-arch cave1
-x 38
-y 19
-end
-arch large_stones
-x 38
-y 20
-end
-arch cave22
-x 38
-y 20
-end
-arch large_stones
-x 38
-y 21
-end
-arch blocked
-x 38
-y 21
-end
-arch large_stones
-x 38
-y 22
-end
-arch blocked
-x 38
-y 22
-end
-arch large_stones
-x 38
-y 23
-end
-arch cave25
-x 38
-y 23
-end
-arch large_stones
-x 38
-y 24
-end
-arch cave1
-x 38
-y 24
-end
-arch large_stones
-x 38
-y 25
-end
-arch cave14
-x 38
-y 25
-end
-arch large_stones
-x 38
-y 26
-end
-arch large_stones
-x 38
-y 27
-end
-arch cave11
-x 38
-y 27
-end
-arch large_stones
-x 38
-y 28
-end
-arch cave5
-x 38
-y 28
-end
-arch large_stones
-x 38
-y 29
-end
-arch cave15
-x 38
-y 29
-end
-arch large_stones
-x 38
-y 30
-end
-arch cave14
-x 38
-y 30
-end
-arch large_stones
-x 38
-y 31
-end
-arch cave7
-x 38
-y 31
-end
-arch large_stones
-x 38
-y 32
-end
-arch cave23
-x 38
-y 32
-end
-arch large_stones
-x 38
-y 33
-end
-arch cave25
-x 38
-y 33
-end
-arch large_stones
-x 38
-y 34
-end
-arch cave22
-x 38
-y 34
-end
-arch large_stones
-x 38
-y 35
-end
-arch blocked
-x 38
-y 35
-end
-arch large_stones
-x 38
-y 36
-end
-arch cave25
-x 38
-y 36
-end
-arch large_stones
-x 38
-y 37
-end
-arch cave1
-x 38
-y 37
-end
-arch large_stones
-x 38
-y 38
-end
-arch cave22
-x 38
-y 38
-end
-arch large_stones
-x 38
-y 39
-end
-arch blocked
-x 38
-y 39
-end
-arch large_stones
-x 39
-end
-arch blocked
-x 39
-end
-arch large_stones
-x 39
-y 1
-end
-arch cave25
-x 39
-y 1
-end
-arch large_stones
-x 39
-y 2
-end
-arch cave22
-x 39
-y 2
-end
-arch large_stones
-x 39
-y 3
-end
-arch blocked
-x 39
-y 3
-end
-arch large_stones
-x 39
-y 4
-end
-arch cave25
-x 39
-y 4
-end
-arch large_stones
-x 39
-y 5
-end
-arch cave22
-x 39
-y 5
-end
-arch large_stones
-x 39
-y 6
-end
-arch cave19
-x 39
-y 6
-end
-arch large_stones
-x 39
-y 7
-end
-arch cave1
-x 39
-y 7
-end
-arch large_stones
-x 39
-y 8
-end
-arch cave1
-x 39
-y 8
-end
-arch large_stones
-x 39
-y 9
-end
-arch cave1
-x 39
-y 9
-end
-arch large_stones
-x 39
-y 10
-end
-arch cave22
-x 39
-y 10
-end
-arch large_stones
-x 39
-y 11
-end
-arch blocked
-x 39
-y 11
-end
-arch large_stones
-x 39
-y 12
-end
-arch cave25
-x 39
-y 12
-end
-arch large_stones
-x 39
-y 13
-end
-arch cave1
-x 39
-y 13
-end
-arch large_stones
-x 39
-y 14
-end
-arch cave22
-x 39
-y 14
-end
-arch large_stones
-x 39
-y 15
-end
-arch cave19
-x 39
-y 15
-end
-arch large_stones
-x 39
-y 16
-end
-arch cave1
-x 39
-y 16
-end
-arch large_stones
-x 39
-y 17
-end
-arch cave1
-x 39
-y 17
-end
-arch large_stones
-x 39
-y 18
-end
-arch cave20
-x 39
-y 18
-end
-arch large_stones
-x 39
-y 19
-end
-arch blocked
-x 39
-y 19
-end
-arch large_stones
-x 39
-y 20
-end
-arch blocked
-x 39
-y 20
-end
-arch large_stones
-x 39
-y 21
-end
-arch blocked
-x 39
-y 21
-end
-arch large_stones
-x 39
-y 22
-end
-arch blocked
-x 39
-y 22
-end
-arch large_stones
-x 39
-y 23
-end
-arch blocked
-x 39
-y 23
-end
-arch large_stones
-x 39
-y 24
-end
-arch blocked
-x 39
-y 24
-end
-arch large_stones
-x 39
-y 25
-end
-arch cave25
-x 39
-y 25
-end
-arch large_stones
-x 39
-y 26
-end
-arch cave1
-x 39
-y 26
-end
-arch large_stones
-x 39
-y 27
-end
-arch cave22
-x 39
-y 27
-end
-arch large_stones
-x 39
-y 28
-end
-arch cave25
-x 39
-y 28
-end
-arch large_stones
-x 39
-y 29
-end
-arch cave22
-x 39
-y 29
-end
-arch large_stones
-x 39
-y 30
-end
-arch cave25
-x 39
-y 30
-end
-arch large_stones
-x 39
-y 31
-end
-arch cave1
-x 39
-y 31
-end
-arch large_stones
-x 39
-y 32
-end
-arch cave22
-x 39
-y 32
-end
-arch large_stones
-x 39
-y 33
-end
-arch blocked
-x 39
-y 33
-end
-arch large_stones
-x 39
-y 34
-end
-arch blocked
-x 39
-y 34
-end
-arch large_stones
-x 39
-y 35
-end
-arch blocked
-x 39
-y 35
-end
-arch large_stones
-x 39
-y 36
-end
-arch blocked
-x 39
-y 36
-end
-arch large_stones
-x 39
-y 37
-end
-arch blocked
-x 39
-y 37
-end
-arch large_stones
-x 39
-y 38
-end
-arch blocked
-x 39
-y 38
-end
-arch large_stones
-x 39
-y 39
-end
-arch blocked
-x 39
-y 39
-end
-arch Cwyvern
-speed 0.5
-flying 1
-carrying 25000
-Con 30
-Int 12
-maxhp 300
-resist_fear 100
-resist_blind 50
-resist_cold -100
-resist_confusion -100
-ac 2
-wc 2
-x 2
-y 36
-arch spell_dragonbreath
-end
-arch spell_mass_confusion
-end
-arch gem
-nrof 500
-end
-end
-arch demon_lord
-name Visiting Demon Lord, Orcus
-Wis 30
-Int 13
-hp 9000
-sp 1000
-maxsp 1000
-exp 2000000
-speed 0.700000
-speed_left -17.569998
-level 70
-immune 4117
-protected 8
-attacktype 1167
-x 6
-y 5
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-end
-arch cobra
-name A lightning speed metallic serpent
-hp 1000
-exp 65000
-dam 30
-speed 1.000000
-speed_left -34.419998
-immune 1024
-protected 12
-attacktype 82945
-can_see_in_dark 1
-x 9
-y 27
-arch abil_poison_cloud
-end
-arch spell_mass_confusion
-end
-arch spell_paralyze
-end
-end
-arch cobra
-name A lightning speed metallic serpent
-hp 1000
-exp 65000
-dam 30
-speed 1.000000
-speed_left -34.419998
-immune 1024
-protected 12
-attacktype 82945
-can_see_in_dark 1
-x 9
-y 32
-arch abil_poison_cloud
-end
-arch spell_mass_confusion
-end
-arch spell_paralyze
-end
-end
-arch cobra
-name A lightning speed metallic serpent
-hp 1000
-exp 65000
-dam 30
-speed 1.000000
-speed_left -34.419998
-immune 1024
-protected 12
-attacktype 82945
-can_see_in_dark 1
-x 10
-y 27
-arch abil_poison_cloud
-end
-arch spell_mass_confusion
-end
-arch spell_paralyze
-end
-end
-arch cobra
-name A lightning speed metallic serpent
-hp 1000
-exp 65000
-dam 30
-speed 1.000000
-speed_left -34.419998
-immune 1024
-protected 12
-attacktype 82945
-can_see_in_dark 1
-x 10
-y 32
-arch abil_poison_cloud
-end
-arch spell_mass_confusion
-end
-arch spell_paralyze
-end
-end
-arch cobra
-name A lightning speed metallic serpent
-hp 1000
-exp 65000
-dam 30
-speed 1.000000
-speed_left -34.419998
-immune 1024
-protected 12
-attacktype 82945
-can_see_in_dark 1
-x 14
-y 25
-arch abil_poison_cloud
-end
-arch spell_mass_confusion
-end
-arch spell_paralyze
-end
-end
-arch cobra
-name A lightning speed metallic serpent
-hp 1000
-exp 65000
-dam 30
-speed 1.000000
-speed_left -34.419998
-immune 1024
-protected 12
-attacktype 82945
-can_see_in_dark 1
-x 15
-y 25
-arch abil_poison_cloud
-end
-arch spell_mass_confusion
-end
-arch spell_paralyze
-end
-end
-arch cobra
-name A lightning speed metallic serpent
-hp 1000
-exp 65000
-dam 30
-speed 1.000000
-speed_left -34.419998
-immune 1024
-protected 12
-attacktype 82945
-can_see_in_dark 1
-x 18
-y 34
-arch abil_poison_cloud
-end
-arch spell_mass_confusion
-end
-arch spell_paralyze
-end
-end
-arch cobra
-name A lightning speed metallic serpent
-hp 1000
-exp 65000
-dam 30
-speed 1.000000
-speed_left -34.419998
-immune 1024
-protected 12
-attacktype 82945
-can_see_in_dark 1
-x 19
-y 34
-arch abil_poison_cloud
-end
-arch spell_mass_confusion
-end
-arch spell_paralyze
-end
-end
-arch Cwyvern
-name big wyvern of chaos
-exp 400000
-speed 0.7
-flying 1
-carrying 35000
-dam 40
-hp 6000
-Con 30
-Int 12
-resist_blind 50
-resist_cold -100
-resist_confusion -100
-maxhp 300
-ac 2
-wc 2
-x 21
-y 16
-arch spell_dragonbreath
-end
-arch spell_mass_confusion
-end
-arch gem
-nrof 700
-end
-end
-arch Cwyvern
-speed 0.5
-flying 1
-carrying 25000
-Con 30
-Int 12
-resist_blind 50
-resist_cold -100
-resist_confusion -100
-ac 2
-wc 2
-maxhp 300
-x 21
-y 24
-arch spell_dragonbreath
-end
-arch spell_mass_confusion
-end
-arch gem
-nrof 500
-end
-end
-arch cobra
-name A lightning speed metallic serpent
-hp 1000
-exp 65000
-dam 30
-speed 1.000000
-speed_left -34.419998
-immune 1024
-protected 12
-attacktype 82945
-can_see_in_dark 1
-x 23
-y 29
-arch abil_poison_cloud
-end
-arch spell_mass_confusion
-end
-arch spell_paralyze
-end
-end
-arch cobra
-name A lightning speed metallic serpent
-hp 1000
-exp 65000
-dam 30
-speed 1.000000
-speed_left -34.419998
-immune 1024
-protected 12
-attacktype 82945
-can_see_in_dark 1
-x 23
-y 34
-arch abil_poison_cloud
-end
-arch spell_mass_confusion
-end
-arch spell_paralyze
-end
-end
-arch cobra
-name A lightning speed metallic serpent
-hp 1000
-exp 65000
-dam 30
-speed 1.000000
-speed_left -34.419998
-immune 1024
-protected 12
-attacktype 82945
-can_see_in_dark 1
-x 24
-y 29
-arch abil_poison_cloud
-end
-arch spell_mass_confusion
-end
-arch spell_paralyze
-end
-end
-arch cobra
-name A lightning speed metallic serpent
-hp 1000
-exp 65000
-dam 30
-speed 1.000000
-speed_left -34.419998
-immune 1024
-protected 12
-attacktype 82945
-can_see_in_dark 1
-x 24
-y 34
-arch abil_poison_cloud
-end
-arch spell_mass_confusion
-end
-arch spell_paralyze
-end
-end
 arch dragonman
 name dragonman mercenary
 Wis 30
 hp 5500
 sp 1000
 dam 30
+x 30
+y 3
 speed 0.450000
 speed_left -10.249999
 level 20
-x 30
-y 3
 arch abil_fear
 end
 arch spell_mass_confusion
 end
 arch spell_sm_lightning
 end
+end
+arch large_stones
+x 30
+y 4
+end
+arch large_stones
+x 30
+y 5
+end
+arch large_stones
+x 30
+y 6
+end
+arch large_stones
+x 30
+y 7
+end
+arch cave7
+x 30
+y 7
+end
+arch large_stones
+x 30
+y 8
+end
+arch cave23
+x 30
+y 8
+end
+arch large_stones
+x 30
+y 9
+end
+arch cave_15
+x 30
+y 9
+end
+arch large_stones
+x 30
+y 10
+end
+arch cave24
+x 30
+y 10
+end
+arch large_stones
+x 30
+y 11
+end
+arch cave3
+x 30
+y 11
+end
+arch large_stones
+x 30
+y 12
+end
+arch cave9
+x 30
+y 12
+end
+arch large_stones
+x 30
+y 13
+end
+arch large_stones
+x 30
+y 14
+end
+arch large_stones
+x 30
+y 15
+end
+arch large_stones
+x 30
+y 16
+end
+arch large_stones
+x 30
+y 17
+end
+arch large_stones
+x 30
+y 18
+end
+arch large_stones
+x 30
+y 19
+end
+arch cave12
+x 30
+y 19
+end
+arch large_stones
+x 30
+y 20
+end
+arch cave8
+x 30
+y 20
+end
+arch large_stones
+x 30
+y 21
+end
+arch large_stones
+x 30
+y 22
+end
+arch large_stones
+x 30
+y 23
+end
+arch large_stones
+x 30
+y 24
+end
+arch large_stones
+x 30
+y 25
+end
+arch large_stones
+x 30
+y 26
+end
+arch large_stones
+x 30
+y 27
+end
+arch large_stones
+x 30
+y 28
+end
+arch large_stones
+x 30
+y 29
+end
+arch large_stones
+x 30
+y 30
+end
+arch large_stones
+x 30
+y 31
+end
+arch large_stones
+x 30
+y 32
+end
+arch large_stones
+x 30
+y 33
+end
+arch large_stones
+x 30
+y 34
+end
+arch large_stones
+x 30
+y 35
+end
+arch large_stones
+x 30
+y 36
+end
+arch large_stones
+x 30
+y 37
+end
+arch large_stones
+x 30
+y 38
+end
+arch large_stones
+x 30
+y 39
+end
+arch cave2
+x 30
+y 39
+end
+arch large_stones
+x 31
+end
+arch cave25
+x 31
+end
+arch large_stones
+x 31
+y 1
+end
+arch cave5
+x 31
+y 1
+end
+arch large_stones
+x 31
+y 2
+end
+arch large_stones
+x 31
+y 3
+end
+arch large_stones
+x 31
+y 4
+end
+arch large_stones
+x 31
+y 5
 end
 arch dragonman
 name dragonman mercenary
@@ -9397,17 +7329,397 @@ Wis 30
 hp 5500
 sp 1000
 dam 30
+x 31
+y 5
 speed 0.450000
 speed_left -9.410000
 level 20
-x 31
-y 5
 arch abil_fear
 end
 arch spell_mass_confusion
 end
 arch spell_sm_lightning
 end
+end
+arch large_stones
+x 31
+y 6
+end
+arch large_stones
+x 31
+y 7
+end
+arch large_stones
+x 31
+y 8
+end
+arch cave12
+x 31
+y 8
+end
+arch large_stones
+x 31
+y 9
+end
+arch cave23
+x 31
+y 9
+end
+arch large_stones
+x 31
+y 10
+end
+arch cave25
+x 31
+y 10
+end
+arch large_stones
+x 31
+y 11
+end
+arch cave1
+x 31
+y 11
+end
+arch large_stones
+x 31
+y 12
+end
+arch cave14
+x 31
+y 12
+end
+arch large_stones
+x 31
+y 13
+end
+arch large_stones
+x 31
+y 14
+end
+arch large_stones
+x 31
+y 15
+end
+arch large_stones
+x 31
+y 16
+end
+arch large_stones
+x 31
+y 17
+end
+arch large_stones
+x 31
+y 18
+end
+arch large_stones
+x 31
+y 19
+end
+arch large_stones
+x 31
+y 20
+end
+arch large_stones
+x 31
+y 21
+end
+arch large_stones
+x 31
+y 22
+end
+arch large_stones
+x 31
+y 23
+end
+arch large_stones
+x 31
+y 24
+end
+arch large_stones
+x 31
+y 25
+end
+arch large_stones
+x 31
+y 26
+end
+arch large_stones
+x 31
+y 27
+end
+arch large_stones
+x 31
+y 28
+end
+arch large_stones
+x 31
+y 29
+end
+arch large_stones
+x 31
+y 30
+end
+arch large_stones
+x 31
+y 31
+end
+arch large_stones
+x 31
+y 32
+end
+arch large_stones
+x 31
+y 33
+end
+arch large_stones
+x 31
+y 34
+end
+arch large_stones
+x 31
+y 35
+end
+arch large_stones
+x 31
+y 36
+end
+arch large_stones
+x 31
+y 37
+end
+arch large_stones
+x 31
+y 38
+end
+arch cave11
+x 31
+y 38
+end
+arch large_stones
+x 31
+y 39
+end
+arch cave22
+x 31
+y 39
+end
+arch large_stones
+x 32
+end
+arch cave24
+x 32
+end
+arch large_stones
+x 32
+y 1
+end
+arch cave8
+x 32
+y 1
+end
+arch large_stones
+x 32
+y 2
+end
+arch large_stones
+x 32
+y 3
+end
+arch large_stones
+x 32
+y 4
+end
+arch large_stones
+x 32
+y 5
+end
+arch large_stones
+x 32
+y 6
+end
+arch large_stones
+x 32
+y 7
+end
+arch large_stones
+x 32
+y 8
+end
+arch large_stones
+x 32
+y 9
+end
+arch cave16
+x 32
+y 9
+end
+arch large_stones
+x 32
+y 10
+end
+arch cave17
+x 32
+y 10
+end
+arch large_stones
+x 32
+y 11
+end
+arch cave_15
+x 32
+y 11
+end
+arch large_stones
+x 32
+y 12
+end
+arch cave4
+x 32
+y 12
+end
+arch large_stones
+x 32
+y 13
+end
+arch large_stones
+x 32
+y 14
+end
+arch large_stones
+x 32
+y 15
+end
+arch large_stones
+x 32
+y 16
+end
+arch large_stones
+x 32
+y 17
+end
+arch large_stones
+x 32
+y 18
+end
+arch large_stones
+x 32
+y 19
+end
+arch large_stones
+x 32
+y 20
+end
+arch large_stones
+x 32
+y 21
+end
+arch large_stones
+x 32
+y 22
+end
+arch large_stones
+x 32
+y 23
+end
+arch cave11
+x 32
+y 23
+end
+arch large_stones
+x 32
+y 24
+end
+arch cave5
+x 32
+y 24
+end
+arch large_stones
+x 32
+y 25
+end
+arch large_stones
+x 32
+y 26
+end
+arch large_stones
+x 32
+y 27
+end
+arch large_stones
+x 32
+y 28
+end
+arch large_stones
+x 32
+y 29
+end
+arch large_stones
+x 32
+y 30
+end
+arch large_stones
+x 32
+y 31
+end
+arch large_stones
+x 32
+y 32
+end
+arch large_stones
+x 32
+y 33
+end
+arch large_stones
+x 32
+y 34
+end
+arch large_stones
+x 32
+y 35
+end
+arch large_stones
+x 32
+y 36
+end
+arch large_stones
+x 32
+y 37
+end
+arch large_stones
+x 32
+y 38
+end
+arch cave12
+x 32
+y 38
+end
+arch large_stones
+x 32
+y 39
+end
+arch cave23
+x 32
+y 39
+end
+arch large_stones
+x 33
+end
+arch cave4
+x 33
+end
+arch large_stones
+x 33
+y 1
+end
+arch large_stones
+x 33
+y 2
+end
+arch large_stones
+x 33
+y 3
 end
 arch dragonman
 name dragonman lieutenant
@@ -9415,12 +7727,12 @@ Wis 30
 hp 9500
 sp 1000
 dam 30
+x 33
+y 3
 speed 0.800000
 speed_left -13.200002
 level 20
 carrying 100
-x 33
-y 3
 arch abil_fear
 end
 arch spell_mass_confusion
@@ -9429,26 +7741,243 @@ arch spell_sm_lightning
 end
 arch key2
 name Dragonbadge
-face baby_drag.113
-msg
-This flaming red badge is a symbol of
-status and importance.
-endmsg
 slaying badge_dragon
+msg
+This flaming red badge is a symbol of status and importance.
+endmsg
+face baby_drag.113
 value 10000
 end
 end
+arch large_stones
+x 33
+y 4
+end
+arch large_stones
+x 33
+y 5
+end
+arch large_stones
+x 33
+y 6
+end
+arch large_stones
+x 33
+y 7
+end
+arch large_stones
+x 33
+y 8
+end
+arch large_stones
+x 33
+y 9
+end
+arch large_stones
+x 33
+y 10
+end
+arch cave16
+x 33
+y 10
+end
+arch large_stones
+x 33
+y 11
+end
+arch cave17
+x 33
+y 11
+end
+arch large_stones
+x 33
+y 12
+end
+arch cave19
+x 33
+y 12
+end
+arch large_stones
+x 33
+y 13
+end
+arch cave5
+x 33
+y 13
+end
+arch large_stones
+x 33
+y 14
+end
+arch large_stones
+x 33
+y 15
+end
+arch large_stones
+x 33
+y 16
+end
+arch large_stones
+x 33
+y 17
+end
+arch large_stones
+x 33
+y 18
+end
+arch large_stones
+x 33
+y 19
+end
+arch large_stones
+x 33
+y 20
+end
+arch large_stones
+x 33
+y 21
+end
+arch large_stones
+x 33
+y 22
+end
+arch cave15
+x 33
+y 22
+end
+arch large_stones
+x 33
+y 23
+end
+arch cave22
+x 33
+y 23
+end
+arch large_stones
+x 33
+y 24
+end
+arch cave25
+x 33
+y 24
+end
+arch large_stones
+x 33
+y 25
+end
+arch cave1
+x 33
+y 25
+end
+arch large_stones
+x 33
+y 26
+end
+arch cave10
+x 33
+y 26
+end
+arch large_stones
+x 33
+y 27
+end
+arch large_stones
+x 33
+y 28
+end
+arch large_stones
+x 33
+y 29
+end
+arch large_stones
+x 33
+y 30
+end
+arch large_stones
+x 33
+y 31
+end
+arch large_stones
+x 33
+y 32
+end
+arch large_stones
+x 33
+y 33
+end
+arch large_stones
+x 33
+y 34
+end
+arch large_stones
+x 33
+y 35
+end
+arch large_stones
+x 33
+y 36
+end
+arch large_stones
+x 33
+y 37
+end
+arch large_stones
+x 33
+y 38
+end
+arch large_stones
+x 33
+y 39
+end
+arch cave2
+x 33
+y 39
+end
+arch large_stones
+x 34
+end
+arch cave4
+x 34
+end
+arch large_stones
+x 34
+y 1
+end
+arch large_stones
+x 34
+y 2
+end
+arch large_stones
+x 34
+y 3
+end
+arch large_stones
+x 34
+y 4
+end
+arch large_stones
+x 34
+y 5
+end
+arch large_stones
+x 34
+y 6
+end
+arch large_stones
+x 34
+y 7
+end
 arch dragonman
 name dragonman mercenary
 Wis 30
 hp 5500
 sp 1000
 dam 30
+x 34
+y 7
 speed 0.450000
 speed_left -10.059999
 level 20
-x 34
-y 7
 arch abil_fear
 end
 arch spell_mass_confusion
@@ -9456,23 +7985,462 @@ end
 arch spell_sm_lightning
 end
 end
+arch large_stones
+x 34
+y 8
+end
+arch large_stones
+x 34
+y 9
+end
+arch large_stones
+x 34
+y 10
+end
+arch large_stones
+x 34
+y 11
+end
+arch cave12
+x 34
+y 11
+end
+arch large_stones
+x 34
+y 12
+end
+arch cave3
+x 34
+y 12
+end
+arch large_stones
+x 34
+y 13
+end
+arch cave9
+x 34
+y 13
+end
+arch large_stones
+x 34
+y 14
+end
+arch large_stones
+x 34
+y 15
+end
+arch large_stones
+x 34
+y 16
+end
+arch large_stones
+x 34
+y 17
+end
+arch large_stones
+x 34
+y 18
+end
+arch large_stones
+x 34
+y 19
+end
+arch large_stones
+x 34
+y 20
+end
+arch large_stones
+x 34
+y 21
+end
+arch cave11
+x 34
+y 21
+end
+arch large_stones
+x 34
+y 22
+end
+arch cave22
+x 34
+y 22
+end
+arch large_stones
+x 34
+y 23
+end
+arch cave_15
+x 34
+y 23
+end
+arch large_stones
+x 34
+y 24
+end
+arch cave24
+x 34
+y 24
+end
+arch large_stones
+x 34
+y 25
+end
+arch cave3
+x 34
+y 25
+end
+arch large_stones
+x 34
+y 26
+end
+arch cave8
+x 34
+y 26
+end
+arch large_stones
+x 34
+y 27
+end
+arch large_stones
+x 34
+y 28
+end
+arch large_stones
+x 34
+y 29
+end
+arch large_stones
+x 34
+y 30
+end
+arch large_stones
+x 34
+y 31
+end
+arch large_stones
+x 34
+y 32
+end
+arch large_stones
+x 34
+y 33
+end
+arch large_stones
+x 34
+y 34
+end
+arch large_stones
+x 34
+y 35
+end
+arch large_stones
+x 34
+y 36
+end
+arch large_stones
+x 34
+y 37
+end
+arch large_stones
+x 34
+y 38
+end
+arch cave6
+x 34
+y 38
+end
+arch large_stones
+x 34
+y 39
+end
+arch cave22
+x 34
+y 39
+end
+arch large_stones
+x 35
+end
+arch cave25
+x 35
+end
+arch large_stones
+x 35
+y 1
+end
+arch cave10
+x 35
+y 1
+end
+arch large_stones
+x 35
+y 2
+end
+arch large_stones
+x 35
+y 3
+end
+arch large_stones
+x 35
+y 4
+end
+arch large_stones
+x 35
+y 5
+end
+arch large_stones
+x 35
+y 6
+end
+arch large_stones
+x 35
+y 7
+end
+arch large_stones
+x 35
+y 8
+end
+arch large_stones
+x 35
+y 9
+end
+arch large_stones
+x 35
+y 10
+end
+arch large_stones
+x 35
+y 11
+end
+arch large_stones
+x 35
+y 12
+end
+arch gate_closed_1
+x 35
+y 12
+speed 0.500000
+speed_left -11.100000
+connected 1
+end
+arch large_stones
+x 35
+y 13
+end
+arch large_stones
+x 35
+y 14
+end
+arch large_stones
+x 35
+y 15
+end
+arch large_stones
+x 35
+y 16
+end
+arch large_stones
+x 35
+y 17
+end
+arch large_stones
+x 35
+y 18
+end
+arch large_stones
+x 35
+y 19
+end
+arch large_stones
+x 35
+y 20
+end
+arch large_stones
+x 35
+y 21
+end
+arch cave7
+x 35
+y 21
+end
+arch large_stones
+x 35
+y 22
+end
+arch cave23
+x 35
+y 22
+end
+arch large_stones
+x 35
+y 23
+end
+arch cave_15
+x 35
+y 23
+end
+arch large_stones
+x 35
+y 24
+end
+arch cave25
+x 35
+y 24
+end
+arch large_stones
+x 35
+y 25
+end
+arch cave10
+x 35
+y 25
+end
+arch large_stones
+x 35
+y 26
+end
+arch large_stones
+x 35
+y 27
+end
+arch large_stones
+x 35
+y 28
+end
+arch large_stones
+x 35
+y 29
+end
+arch large_stones
+x 35
+y 30
+end
+arch large_stones
+x 35
+y 31
+end
+arch large_stones
+x 35
+y 32
+end
+arch large_stones
+x 35
+y 33
+end
+arch large_stones
+x 35
+y 34
+end
+arch cave11
+x 35
+y 34
+end
+arch large_stones
+x 35
+y 35
+end
+arch cave1
+x 35
+y 35
+end
+arch large_stones
+x 35
+y 36
+end
+arch cave1
+x 35
+y 36
+end
+arch large_stones
+x 35
+y 37
+end
+arch cave5
+x 35
+y 37
+end
+arch large_stones
+x 35
+y 38
+end
+arch cave2
+x 35
+y 38
+end
+arch large_stones
+x 35
+y 39
+end
+arch cave_15
+x 35
+y 39
+end
+arch large_stones
+x 36
+end
+arch cave_15
+x 36
+end
+arch large_stones
+x 36
+y 1
+end
+arch cave25
+x 36
+y 1
+end
+arch large_stones
+x 36
+y 2
+end
+arch cave10
+x 36
+y 2
+end
+arch large_stones
+x 36
+y 3
+end
+arch large_stones
+x 36
+y 4
+end
+arch large_stones
+x 36
+y 5
+end
 arch dragonman
 name dragonman mercenary
 Wis 30
 hp 5500
 sp 1000
 dam 30
+x 36
+y 5
 speed 0.450000
 speed_left -8.999999
 level 20
-x 36
-y 5
 arch abil_fear
 end
 arch spell_mass_confusion
 end
 arch spell_sm_lightning
 end
+end
+arch large_stones
+x 36
+y 6
+end
+arch large_stones
+x 36
+y 7
+end
+arch large_stones
+x 36
+y 8
+end
+arch large_stones
+x 36
+y 9
 end
 arch dragonman
 name dragonman mercenary
@@ -9480,11 +8448,11 @@ Wis 30
 hp 5500
 sp 1000
 dam 30
+x 36
+y 9
 speed 0.450000
 speed_left -10.129999
 level 20
-x 36
-y 9
 arch abil_fear
 end
 arch spell_mass_confusion
@@ -9492,20 +8460,111 @@ end
 arch spell_sm_lightning
 end
 end
+arch large_stones
+x 36
+y 10
+end
+arch large_stones
+x 36
+y 11
+end
+arch large_stones
+x 36
+y 12
+end
+arch gate_closed_1
+x 36
+y 12
+speed 0.500000
+speed_left -11.100000
+connected 1
+end
+arch large_stones
+x 36
+y 13
+end
+arch large_stones
+x 36
+y 14
+end
+arch large_stones
+x 36
+y 15
+end
+arch large_stones
+x 36
+y 16
+end
+arch large_stones
+x 36
+y 17
+end
+arch large_stones
+x 36
+y 18
+end
+arch large_stones
+x 36
+y 19
+end
+arch large_stones
+x 36
+y 20
+end
+arch large_stones
+x 36
+y 21
+end
+arch large_stones
+x 36
+y 22
+end
+arch cave2
+x 36
+y 22
+end
+arch large_stones
+x 36
+y 23
+end
+arch cave_15
+x 36
+y 23
+end
+arch large_stones
+x 36
+y 24
+end
+arch cave_15
+x 36
+y 24
+end
+arch large_stones
+x 36
+y 25
+end
+arch cave4
+x 36
+y 25
+end
+arch large_stones
+x 36
+y 26
+end
 arch Cwyvern
-speed 0.5
-flying 1
-carrying 25000
 Con 30
 Int 12
+maxhp 300
+wc 2
+ac 2
+x 36
+y 26
+speed 0.5
 resist_cold -100
 resist_confusion -100
 resist_blind 50
-maxhp 300
-ac 2
-wc 2
-x 36
-y 26
+carrying 25000
+move_type walk fly_low
 arch spell_dragonbreath
 end
 arch spell_mass_confusion
@@ -9513,4 +8572,952 @@ end
 arch gem
 nrof 500
 end
+end
+arch large_stones
+x 36
+y 27
+end
+arch large_stones
+x 36
+y 28
+end
+arch large_stones
+x 36
+y 29
+end
+arch large_stones
+x 36
+y 30
+end
+arch large_stones
+x 36
+y 31
+end
+arch large_stones
+x 36
+y 32
+end
+arch large_stones
+x 36
+y 33
+end
+arch large_stones
+x 36
+y 34
+end
+arch cave7
+x 36
+y 34
+end
+arch large_stones
+x 36
+y 35
+end
+arch cave23
+x 36
+y 35
+end
+arch large_stones
+x 36
+y 36
+end
+arch cave_15
+x 36
+y 36
+end
+arch large_stones
+x 36
+y 37
+end
+arch cave4
+x 36
+y 37
+end
+arch large_stones
+x 36
+y 38
+end
+arch cave12
+x 36
+y 38
+end
+arch large_stones
+x 36
+y 39
+end
+arch cave23
+x 36
+y 39
+end
+arch large_stones
+x 37
+end
+arch cave_15
+x 37
+end
+arch large_stones
+x 37
+y 1
+end
+arch cave24
+x 37
+y 1
+end
+arch large_stones
+x 37
+y 2
+end
+arch cave13
+x 37
+y 2
+end
+arch large_stones
+x 37
+y 3
+end
+arch cave11
+x 37
+y 3
+end
+arch large_stones
+x 37
+y 4
+end
+arch cave14
+x 37
+y 4
+end
+arch large_stones
+x 37
+y 5
+end
+arch large_stones
+x 37
+y 6
+end
+arch large_stones
+x 37
+y 7
+end
+arch large_stones
+x 37
+y 8
+end
+arch large_stones
+x 37
+y 9
+end
+arch large_stones
+x 37
+y 10
+end
+arch large_stones
+x 37
+y 11
+end
+arch cave11
+x 37
+y 11
+end
+arch large_stones
+x 37
+y 12
+end
+arch cave1
+x 37
+y 12
+end
+arch large_stones
+x 37
+y 13
+end
+arch cave14
+x 37
+y 13
+end
+arch large_stones
+x 37
+y 14
+end
+arch button_lever
+x 37
+y 14
+connected 1
+end
+arch large_stones
+x 37
+y 15
+end
+arch large_stones
+x 37
+y 16
+end
+arch large_stones
+x 37
+y 17
+end
+arch large_stones
+x 37
+y 18
+end
+arch large_stones
+x 37
+y 19
+end
+arch large_stones
+x 37
+y 20
+end
+arch cave11
+x 37
+y 20
+end
+arch large_stones
+x 37
+y 21
+end
+arch cave1
+x 37
+y 21
+end
+arch large_stones
+x 37
+y 22
+end
+arch cave22
+x 37
+y 22
+end
+arch large_stones
+x 37
+y 23
+end
+arch cave24
+x 37
+y 23
+end
+arch large_stones
+x 37
+y 24
+end
+arch cave3
+x 37
+y 24
+end
+arch large_stones
+x 37
+y 25
+end
+arch cave13
+x 37
+y 25
+end
+arch large_stones
+x 37
+y 26
+end
+arch large_stones
+x 37
+y 27
+end
+arch large_stones
+x 37
+y 28
+end
+arch large_stones
+x 37
+y 29
+end
+arch large_stones
+x 37
+y 30
+end
+arch large_stones
+x 37
+y 31
+end
+arch cave11
+x 37
+y 31
+end
+arch large_stones
+x 37
+y 32
+end
+arch cave1
+x 37
+y 32
+end
+arch large_stones
+x 37
+y 33
+end
+arch cave5
+x 37
+y 33
+end
+arch large_stones
+x 37
+y 34
+end
+arch cave6
+x 37
+y 34
+end
+arch large_stones
+x 37
+y 35
+end
+arch cave20
+x 37
+y 35
+end
+arch large_stones
+x 37
+y 36
+end
+arch cave24
+x 37
+y 36
+end
+arch large_stones
+x 37
+y 37
+end
+arch cave9
+x 37
+y 37
+end
+arch large_stones
+x 37
+y 38
+end
+arch cave11
+x 37
+y 38
+end
+arch large_stones
+x 37
+y 39
+end
+arch cave22
+x 37
+y 39
+end
+arch large_stones
+x 38
+end
+arch cave_15
+x 38
+end
+arch large_stones
+x 38
+y 1
+end
+arch cave4
+x 38
+y 1
+end
+arch large_stones
+x 38
+y 2
+end
+arch cave6
+x 38
+y 2
+end
+arch large_stones
+x 38
+y 3
+end
+arch cave22
+x 38
+y 3
+end
+arch large_stones
+x 38
+y 4
+end
+arch cave4
+x 38
+y 4
+end
+arch large_stones
+x 38
+y 5
+end
+arch cave6
+x 38
+y 5
+end
+arch large_stones
+x 38
+y 6
+end
+arch cave14
+x 38
+y 6
+end
+arch large_stones
+x 38
+y 7
+end
+arch large_stones
+x 38
+y 8
+end
+arch large_stones
+x 38
+y 9
+end
+arch button_lever
+x 38
+y 9
+connected 1
+end
+arch large_stones
+x 38
+y 10
+end
+arch cave6
+x 38
+y 10
+end
+arch large_stones
+x 38
+y 11
+end
+arch cave22
+x 38
+y 11
+end
+arch large_stones
+x 38
+y 12
+end
+arch cave24
+x 38
+y 12
+end
+arch large_stones
+x 38
+y 13
+end
+arch cave9
+x 38
+y 13
+end
+arch large_stones
+x 38
+y 14
+end
+arch cave11
+x 38
+y 14
+end
+arch large_stones
+x 38
+y 15
+end
+arch cave5
+x 38
+y 15
+end
+arch large_stones
+x 38
+y 16
+end
+arch large_stones
+x 38
+y 17
+end
+arch large_stones
+x 38
+y 18
+end
+arch cave6
+x 38
+y 18
+end
+arch large_stones
+x 38
+y 19
+end
+arch cave1
+x 38
+y 19
+end
+arch large_stones
+x 38
+y 20
+end
+arch cave22
+x 38
+y 20
+end
+arch large_stones
+x 38
+y 21
+end
+arch cave_15
+x 38
+y 21
+end
+arch large_stones
+x 38
+y 22
+end
+arch cave_15
+x 38
+y 22
+end
+arch large_stones
+x 38
+y 23
+end
+arch cave25
+x 38
+y 23
+end
+arch large_stones
+x 38
+y 24
+end
+arch cave1
+x 38
+y 24
+end
+arch large_stones
+x 38
+y 25
+end
+arch cave14
+x 38
+y 25
+end
+arch large_stones
+x 38
+y 26
+end
+arch large_stones
+x 38
+y 27
+end
+arch cave11
+x 38
+y 27
+end
+arch large_stones
+x 38
+y 28
+end
+arch cave5
+x 38
+y 28
+end
+arch large_stones
+x 38
+y 29
+end
+arch cave15
+x 38
+y 29
+end
+arch large_stones
+x 38
+y 30
+end
+arch cave14
+x 38
+y 30
+end
+arch large_stones
+x 38
+y 31
+end
+arch cave7
+x 38
+y 31
+end
+arch large_stones
+x 38
+y 32
+end
+arch cave23
+x 38
+y 32
+end
+arch large_stones
+x 38
+y 33
+end
+arch cave25
+x 38
+y 33
+end
+arch large_stones
+x 38
+y 34
+end
+arch cave22
+x 38
+y 34
+end
+arch large_stones
+x 38
+y 35
+end
+arch cave_15
+x 38
+y 35
+end
+arch large_stones
+x 38
+y 36
+end
+arch cave25
+x 38
+y 36
+end
+arch large_stones
+x 38
+y 37
+end
+arch cave1
+x 38
+y 37
+end
+arch large_stones
+x 38
+y 38
+end
+arch cave22
+x 38
+y 38
+end
+arch large_stones
+x 38
+y 39
+end
+arch cave_15
+x 38
+y 39
+end
+arch large_stones
+x 39
+end
+arch cave_15
+x 39
+end
+arch large_stones
+x 39
+y 1
+end
+arch cave25
+x 39
+y 1
+end
+arch large_stones
+x 39
+y 2
+end
+arch cave22
+x 39
+y 2
+end
+arch large_stones
+x 39
+y 3
+end
+arch cave_15
+x 39
+y 3
+end
+arch large_stones
+x 39
+y 4
+end
+arch cave25
+x 39
+y 4
+end
+arch large_stones
+x 39
+y 5
+end
+arch cave22
+x 39
+y 5
+end
+arch large_stones
+x 39
+y 6
+end
+arch cave19
+x 39
+y 6
+end
+arch large_stones
+x 39
+y 7
+end
+arch cave1
+x 39
+y 7
+end
+arch large_stones
+x 39
+y 8
+end
+arch cave1
+x 39
+y 8
+end
+arch large_stones
+x 39
+y 9
+end
+arch cave1
+x 39
+y 9
+end
+arch large_stones
+x 39
+y 10
+end
+arch cave22
+x 39
+y 10
+end
+arch large_stones
+x 39
+y 11
+end
+arch cave_15
+x 39
+y 11
+end
+arch large_stones
+x 39
+y 12
+end
+arch cave25
+x 39
+y 12
+end
+arch large_stones
+x 39
+y 13
+end
+arch cave1
+x 39
+y 13
+end
+arch large_stones
+x 39
+y 14
+end
+arch cave22
+x 39
+y 14
+end
+arch large_stones
+x 39
+y 15
+end
+arch cave19
+x 39
+y 15
+end
+arch large_stones
+x 39
+y 16
+end
+arch cave1
+x 39
+y 16
+end
+arch large_stones
+x 39
+y 17
+end
+arch cave1
+x 39
+y 17
+end
+arch large_stones
+x 39
+y 18
+end
+arch cave20
+x 39
+y 18
+end
+arch large_stones
+x 39
+y 19
+end
+arch cave_15
+x 39
+y 19
+end
+arch large_stones
+x 39
+y 20
+end
+arch cave_15
+x 39
+y 20
+end
+arch large_stones
+x 39
+y 21
+end
+arch cave_15
+x 39
+y 21
+end
+arch large_stones
+x 39
+y 22
+end
+arch cave_15
+x 39
+y 22
+end
+arch large_stones
+x 39
+y 23
+end
+arch cave_15
+x 39
+y 23
+end
+arch large_stones
+x 39
+y 24
+end
+arch cave_15
+x 39
+y 24
+end
+arch large_stones
+x 39
+y 25
+end
+arch cave25
+x 39
+y 25
+end
+arch large_stones
+x 39
+y 26
+end
+arch cave1
+x 39
+y 26
+end
+arch large_stones
+x 39
+y 27
+end
+arch cave22
+x 39
+y 27
+end
+arch large_stones
+x 39
+y 28
+end
+arch cave25
+x 39
+y 28
+end
+arch large_stones
+x 39
+y 29
+end
+arch cave22
+x 39
+y 29
+end
+arch large_stones
+x 39
+y 30
+end
+arch cave25
+x 39
+y 30
+end
+arch large_stones
+x 39
+y 31
+end
+arch cave1
+x 39
+y 31
+end
+arch large_stones
+x 39
+y 32
+end
+arch cave22
+x 39
+y 32
+end
+arch large_stones
+x 39
+y 33
+end
+arch cave_15
+x 39
+y 33
+end
+arch large_stones
+x 39
+y 34
+end
+arch cave_15
+x 39
+y 34
+end
+arch large_stones
+x 39
+y 35
+end
+arch cave_15
+x 39
+y 35
+end
+arch large_stones
+x 39
+y 36
+end
+arch cave_15
+x 39
+y 36
+end
+arch large_stones
+x 39
+y 37
+end
+arch cave_15
+x 39
+y 37
+end
+arch large_stones
+x 39
+y 38
+end
+arch cave_15
+x 39
+y 38
+end
+arch large_stones
+x 39
+y 39
+end
+arch cave_15
+x 39
+y 39
 end

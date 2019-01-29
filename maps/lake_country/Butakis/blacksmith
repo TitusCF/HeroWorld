@@ -1,13 +1,15 @@
 arch map
-region lakecountry
-name <untitled>
-msg
-Creator: Kundi, Xue
-Email:  xkd@soda.berkeley.edu
-Date: Sep 13 01:39:50 1995
-endmsg
+name Royal Blacksmith
+difficulty 1
+region butakisfortress
 width 8
 height 8
+enter_x 7
+enter_y 5
+msg
+Created:  1995-09-13 Kundi, Xue (xkd@soda.berkeley.edu)
+Modified: 2008-12-01 Rick Tanner
+endmsg
 end
 arch pstone_1
 end
@@ -34,7 +36,10 @@ end
 arch pstone_1
 y 4
 end
-arch wwall_3_2
+arch swall_1_4_half
+y 4
+end
+arch wwall_2_1_1
 y 4
 end
 arch pstone_1
@@ -61,19 +66,19 @@ end
 arch wwall_2_1_2
 x 1
 end
-arch pstone_1
-x 1
-y 1
-end
 arch dungeon_magic
 x 1
 y 1
 end
 arch pstone_1
+x 1
+y 1
+end
+arch dungeon_magic
 x 1
 y 2
 end
-arch dungeon_magic
+arch pstone_1
 x 1
 y 2
 end
@@ -93,11 +98,12 @@ end
 arch firewall_5
 name wall
 face swall_8.111
-dam 82
-speed 0.030000
-speed_left -2.330000
 x 1
 y 4
+speed 0.030000
+speed_left -2.330000
+arch spell_firebolt
+end
 end
 arch dungeon_magic
 x 1
@@ -129,19 +135,19 @@ end
 arch wwall_2_1_2
 x 2
 end
-arch pstone_1
-x 2
-y 1
-end
 arch dungeon_magic
 x 2
 y 1
 end
 arch pstone_1
+x 2
+y 1
+end
+arch dungeon_magic
 x 2
 y 2
 end
-arch dungeon_magic
+arch pstone_1
 x 2
 y 2
 end
@@ -188,7 +194,11 @@ arch pstone_1
 x 2
 y 7
 end
-arch wwall_3_1
+arch swall_1_2_half
+x 2
+y 7
+end
+arch wwall_2_1_2
 x 2
 y 7
 end
@@ -198,19 +208,19 @@ end
 arch wwall_2_1_2
 x 3
 end
-arch pstone_1
-x 3
-y 1
-end
 arch dungeon_magic
 x 3
 y 1
 end
 arch pstone_1
+x 3
+y 1
+end
+arch dungeon_magic
 x 3
 y 2
 end
-arch dungeon_magic
+arch pstone_1
 x 3
 y 2
 end
@@ -241,11 +251,11 @@ arch create_mithril_ar_ele
 x 3
 y 5
 end
-arch pstone_1
+arch dungeon_magic
 x 3
 y 6
 end
-arch dungeon_magic
+arch pstone_1
 x 3
 y 6
 end
@@ -275,17 +285,13 @@ arch shop_mat
 x 4
 y 1
 end
-arch pstone_1
-x 4
-y 2
-end
 arch dungeon_magic
 x 4
 y 2
 end
 arch pstone_1
 x 4
-y 3
+y 2
 end
 arch dungeon_magic
 x 4
@@ -293,7 +299,7 @@ y 3
 end
 arch pstone_1
 x 4
-y 4
+y 3
 end
 arch dungeon_magic
 x 4
@@ -301,17 +307,21 @@ y 4
 end
 arch pstone_1
 x 4
-y 5
+y 4
 end
 arch dungeon_magic
 x 4
 y 5
 end
 arch pstone_1
+x 4
+y 5
+end
+arch dungeon_magic
 x 4
 y 6
 end
-arch dungeon_magic
+arch pstone_1
 x 4
 y 6
 end
@@ -329,11 +339,14 @@ end
 arch wwall_2_1_2
 x 5
 end
+arch swall_1_1_half
+x 5
+end
 arch pstone_1
 x 5
 y 1
 end
-arch swall_1_1
+arch swall_2_1_1
 x 5
 y 1
 end
@@ -381,7 +394,11 @@ arch pstone_1
 x 5
 y 7
 end
-arch wwall_3_1
+arch swall_1_2_half
+x 5
+y 7
+end
+arch wwall_2_1_2
 x 5
 y 7
 end
@@ -469,7 +486,7 @@ arch woodfloor
 x 7
 y 5
 end
-arch oakdoor
+arch oakdoor_1
 slaying Butakis0
 hp 2
 sp 33

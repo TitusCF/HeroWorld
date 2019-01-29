@@ -1,13 +1,15 @@
 arch map
-region lakecountry
-name prison_n
-msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Wed Mar 29 00:31:24 1995
-endmsg
+name Fortress of Lord Butakis Prison, Maximum Security Cells
+difficulty 45
+region butakisfortress
 width 16
 height 16
+enter_x 13
+enter_y 15
+msg
+Created:  1995-03-29
+Modified: 2012-02-06 Rick Tanner
+endmsg
 end
 arch dungeon_floor
 end
@@ -113,6 +115,11 @@ arch dungeon_floor
 x 1
 y 1
 end
+arch big_elec
+name Thundermate
+x 1
+y 1
+end
 arch dungeon_floor
 x 1
 y 2
@@ -148,6 +155,17 @@ end
 arch dungeon_floor
 x 1
 y 8
+end
+arch big_wiz
+name Fiery, Wist's fervent pupil
+hp 5500
+x 1
+y 8
+carrying 23700
+invisible 1
+arch chalice
+name chalice of fire
+end
 end
 arch dungeon_floor
 x 1
@@ -207,6 +225,11 @@ arch dungeon_floor
 x 2
 y 5
 end
+arch chinese_dragon
+name Snow
+x 2
+y 5
+end
 arch dungeon_floor
 x 2
 y 6
@@ -240,6 +263,11 @@ x 2
 y 12
 end
 arch dungeon_floor
+x 2
+y 13
+end
+arch titan
+name Tinker
 x 2
 y 13
 end
@@ -355,10 +383,16 @@ arch dungeon_floor
 x 4
 y 4
 end
+arch chinese_dragon
+name Ice
+hp 2000
+x 4
+y 4
+end
 arch mover_1
-attacktype 1
 x 4
 y 5
+attacktype 1
 end
 arch dungeon_floor
 x 4
@@ -435,9 +469,9 @@ x 5
 y 4
 end
 arch mover_1
-attacktype 1
 x 5
 y 5
+attacktype 1
 end
 arch dungeon_floor
 x 5
@@ -498,10 +532,10 @@ x 6
 y 1
 end
 arch igate_closed_2
-speed 0.500000
-connected 1
 x 6
 y 1
+speed 0.500000
+connected 1
 end
 arch dungeon_floor
 x 6
@@ -532,10 +566,10 @@ x 6
 y 5
 end
 arch igate_closed_2
-speed 0.500000
-connected 3
 x 6
 y 5
+speed 0.500000
+connected 3
 end
 arch dungeon_floor
 x 6
@@ -560,19 +594,20 @@ end
 arch firewall_5
 name anti-magic wall
 face dun_1.111
-dam 128
 x 6
 y 8
+arch spell_counterwall
+end
 end
 arch dungeon_floor
 x 6
 y 9
 end
 arch igate_closed_2
+x 6
+y 9
 speed 0.500000
 connected 4
-x 6
-y 9
 end
 arch dungeon_floor
 x 6
@@ -597,19 +632,20 @@ end
 arch firewall_5
 name anti-magic wall
 face dun_1.111
-dam 128
 x 6
 y 12
+arch spell_counterwall
+end
 end
 arch dungeon_floor
 x 6
 y 13
 end
 arch igate_closed_2
-speed 0.500000
-connected 5
 x 6
 y 13
+speed 0.500000
+connected 5
 end
 arch dungeon_floor
 x 6
@@ -638,9 +674,9 @@ x 7
 y 1
 end
 arch button_handle
-connected 1
 x 7
 y 1
+connected 1
 end
 arch dungeon_floor
 x 7
@@ -651,9 +687,9 @@ x 7
 y 3
 end
 arch button_handle
-connected 2
 x 7
 y 3
+connected 2
 end
 arch dungeon_floor
 x 7
@@ -664,9 +700,9 @@ x 7
 y 5
 end
 arch button_handle
-connected 3
 x 7
 y 5
+connected 3
 end
 arch dungeon_floor
 x 7
@@ -689,9 +725,9 @@ x 7
 y 10
 end
 arch button_handle
-connected 4
 x 7
 y 10
+connected 4
 end
 arch dungeon_floor
 x 7
@@ -710,9 +746,9 @@ x 7
 y 14
 end
 arch button_handle
-connected 5
 x 7
 y 14
+connected 5
 end
 arch dungeon_floor
 x 7
@@ -743,19 +779,20 @@ end
 arch firewall_7
 name anti-magic wall
 face dun_1.111
-dam 128
 x 8
 y 2
+arch spell_counterwall
+end
 end
 arch dungeon_floor
 x 8
 y 3
 end
 arch igate_closed_2
-speed 0.500000
-connected 2
 x 8
 y 3
+speed 0.500000
+connected 2
 end
 arch dungeon_floor
 x 8
@@ -764,9 +801,10 @@ end
 arch firewall_7
 name anti-magic wall
 face dun_4.111
-dam 128
 x 8
 y 4
+arch spell_counterwall
+end
 end
 arch dungeon_floor
 x 8
@@ -783,9 +821,10 @@ end
 arch firewall_7
 name anti-magic wall
 face dun_5.111
-dam 128
 x 8
 y 6
+arch spell_counterwall
+end
 end
 arch dungeon_floor
 x 8
@@ -1056,6 +1095,17 @@ end
 arch dungeon_floor
 x 11
 y 3
+end
+arch jessyb
+name Joey
+x 11
+y 3
+carrying 75
+arch note
+msg
+My heart is held by Grunter.  Help me get it back and I will reward you.
+endmsg
+end
 end
 arch dungeon_floor
 x 11
@@ -1317,8 +1367,8 @@ arch dungeon_floor
 x 13
 y 15
 end
-arch oakdoor
-name oakdoor from maximum security cells
+arch oakdoor_2
+name Oakdoor from Maximum Security Cells
 slaying prison1
 hp 4
 x 13
@@ -1418,8 +1468,8 @@ arch dungeon_floor
 x 14
 y 15
 end
-arch oakdoor
-name oakdoor from maximum security cells
+arch oakdoor_2
+name Oakdoor from Maximum Security Cells
 slaying prison1
 hp 5
 x 14
@@ -1550,48 +1600,4 @@ end
 arch dun5
 x 15
 y 15
-end
-arch big_elec
-name Thundermate
-x 1
-y 1
-end
-arch big_wiz
-name Fiery, Wist's fervent pupil
-hp 5500
-carrying 23700
-invisible 1
-x 1
-y 8
-arch chalice
-name chalice of fire
-end
-end
-arch chinese_dragon
-name Snow
-x 2
-y 5
-end
-arch titan
-name Tinker
-x 2
-y 13
-end
-arch chinese_dragon
-name Ice
-hp 2000
-x 4
-y 4
-end
-arch jessyb
-name Joey
-carrying 75
-x 11
-y 3
-arch note
-msg
-My heart is held by Grunter. Help me
-get it back and I will reward you.
-endmsg
-end
 end

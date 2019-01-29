@@ -1,18 +1,22 @@
 arch map
+name Playershops Purchase, Upstairs
+difficulty 1
 region brest
-name pshops_buy
-msg
-Creator: majorwoo josh@woosworld.net
-Date:    10/17/2004
-endmsg
 width 35
 height 14
+msg
+Created:  2004-10-17 majorwoo (josh@woosworld.net)
+Modified: 2012-03-14 Rick Tanner
+endmsg
+end
+arch dungeon_magic
 end
 arch woodfloor
 end
 arch flagstone_2_2_2
 end
 arch dungeon_magic
+y 1
 end
 arch woodfloor
 y 1
@@ -21,7 +25,7 @@ arch flagstone_2_1_1
 y 1
 end
 arch dungeon_magic
-y 1
+y 2
 end
 arch woodfloor
 y 2
@@ -30,7 +34,7 @@ arch flagstone_2_1_1
 y 2
 end
 arch dungeon_magic
-y 2
+y 3
 end
 arch woodfloor
 y 3
@@ -39,7 +43,7 @@ arch flagstone_2_1_1
 y 3
 end
 arch dungeon_magic
-y 3
+y 4
 end
 arch woodfloor
 y 4
@@ -48,7 +52,7 @@ arch flagstone_2_1_1
 y 4
 end
 arch dungeon_magic
-y 4
+y 5
 end
 arch woodfloor
 y 5
@@ -57,7 +61,7 @@ arch flagstone_2_1_1
 y 5
 end
 arch dungeon_magic
-y 5
+y 6
 end
 arch woodfloor
 y 6
@@ -66,7 +70,7 @@ arch flagstone_2_1_1
 y 6
 end
 arch dungeon_magic
-y 6
+y 7
 end
 arch woodfloor
 y 7
@@ -75,7 +79,7 @@ arch flagstone_2_1_1
 y 7
 end
 arch dungeon_magic
-y 7
+y 8
 end
 arch woodfloor
 y 8
@@ -84,7 +88,7 @@ arch flagstone_2_1_1
 y 8
 end
 arch dungeon_magic
-y 8
+y 9
 end
 arch woodfloor
 y 9
@@ -93,15 +97,12 @@ arch flagstone_2_1_1
 y 9
 end
 arch dungeon_magic
-y 9
+y 10
 end
 arch woodfloor
 y 10
 end
 arch flagstone_2_2_1
-y 10
-end
-arch dungeon_magic
 y 10
 end
 arch blocked
@@ -113,6 +114,9 @@ end
 arch blocked
 y 13
 end
+arch dungeon_magic
+x 1
+end
 arch woodfloor
 x 1
 end
@@ -121,6 +125,7 @@ x 1
 end
 arch dungeon_magic
 x 1
+y 1
 end
 arch woodfloor
 x 1
@@ -132,7 +137,7 @@ y 1
 end
 arch dungeon_magic
 x 1
-y 1
+y 2
 end
 arch woodfloor
 x 1
@@ -140,7 +145,7 @@ y 2
 end
 arch dungeon_magic
 x 1
-y 2
+y 3
 end
 arch woodfloor
 x 1
@@ -148,7 +153,7 @@ y 3
 end
 arch dungeon_magic
 x 1
-y 3
+y 4
 end
 arch woodfloor
 x 1
@@ -156,13 +161,13 @@ y 4
 end
 arch dungeon_magic
 x 1
-y 4
+y 5
 end
 arch woodfloor
 x 1
 y 5
 end
-arch stair2_up
+arch stair2_down
 name Stairs going down
 slaying pshopsinc
 hp 1
@@ -172,7 +177,7 @@ y 5
 end
 arch dungeon_magic
 x 1
-y 5
+y 6
 end
 arch woodfloor
 x 1
@@ -180,7 +185,7 @@ y 6
 end
 arch dungeon_magic
 x 1
-y 6
+y 7
 end
 arch woodfloor
 x 1
@@ -188,7 +193,7 @@ y 7
 end
 arch dungeon_magic
 x 1
-y 7
+y 8
 end
 arch woodfloor
 x 1
@@ -196,7 +201,7 @@ y 8
 end
 arch dungeon_magic
 x 1
-y 8
+y 9
 end
 arch woodfloor
 x 1
@@ -208,17 +213,13 @@ y 9
 end
 arch dungeon_magic
 x 1
-y 9
+y 10
 end
 arch woodfloor
 x 1
 y 10
 end
 arch flagstone_2_1_2
-x 1
-y 10
-end
-arch dungeon_magic
 x 1
 y 10
 end
@@ -234,6 +235,9 @@ arch blocked
 x 1
 y 13
 end
+arch dungeon_magic
+x 2
+end
 arch woodfloor
 x 2
 end
@@ -242,6 +246,7 @@ x 2
 end
 arch dungeon_magic
 x 2
+y 1
 end
 arch woodfloor
 x 2
@@ -249,7 +254,7 @@ y 1
 end
 arch dungeon_magic
 x 2
-y 1
+y 2
 end
 arch woodfloor
 x 2
@@ -257,7 +262,7 @@ y 2
 end
 arch dungeon_magic
 x 2
-y 2
+y 3
 end
 arch woodfloor
 x 2
@@ -265,7 +270,7 @@ y 3
 end
 arch dungeon_magic
 x 2
-y 3
+y 4
 end
 arch woodfloor
 x 2
@@ -273,7 +278,7 @@ y 4
 end
 arch dungeon_magic
 x 2
-y 4
+y 5
 end
 arch woodfloor
 x 2
@@ -281,7 +286,7 @@ y 5
 end
 arch dungeon_magic
 x 2
-y 5
+y 6
 end
 arch woodfloor
 x 2
@@ -289,7 +294,7 @@ y 6
 end
 arch dungeon_magic
 x 2
-y 6
+y 7
 end
 arch woodfloor
 x 2
@@ -297,7 +302,7 @@ y 7
 end
 arch dungeon_magic
 x 2
-y 7
+y 8
 end
 arch woodfloor
 x 2
@@ -305,7 +310,7 @@ y 8
 end
 arch dungeon_magic
 x 2
-y 8
+y 9
 end
 arch woodfloor
 x 2
@@ -313,17 +318,13 @@ y 9
 end
 arch dungeon_magic
 x 2
-y 9
+y 10
 end
 arch woodfloor
 x 2
 y 10
 end
 arch flagstone_2_1_2
-x 2
-y 10
-end
-arch dungeon_magic
 x 2
 y 10
 end
@@ -339,6 +340,9 @@ arch blocked
 x 2
 y 13
 end
+arch dungeon_magic
+x 3
+end
 arch woodfloor
 x 3
 end
@@ -347,6 +351,7 @@ x 3
 end
 arch dungeon_magic
 x 3
+y 1
 end
 arch woodfloor
 x 3
@@ -359,7 +364,7 @@ y 1
 end
 arch dungeon_magic
 x 3
-y 1
+y 2
 end
 arch woodfloor
 x 3
@@ -367,7 +372,7 @@ y 2
 end
 arch dungeon_magic
 x 3
-y 2
+y 3
 end
 arch woodfloor
 x 3
@@ -375,7 +380,7 @@ y 3
 end
 arch dungeon_magic
 x 3
-y 3
+y 4
 end
 arch woodfloor
 x 3
@@ -384,11 +389,11 @@ end
 arch guard
 name private guard
 msg
-@match key|Key
+@match key
 Buy your key downstairs.
-@match manager|Manager
+@match manager
 The Manager is downstairs in his office.  Maybe you could ask his wife?
-@match wife|Wife
+@match wife
 The Managers wife is inside, I'm sorry but you can't pass without a key.
 @match *
 Key Holders and their escorted guests only!
@@ -398,196 +403,196 @@ y 4
 end
 arch dungeon_magic
 x 3
-y 4
+y 5
 end
 arch check_floor
 slaying pshop1
-connected 1
-walk_off 1
 x 3
 y 5
+connected 1
+move_off walk
 end
 arch check_floor
 slaying pshop2
-connected 1
-walk_off 1
 x 3
 y 5
+connected 1
+move_off walk
 end
 arch check_floor
 slaying pshop3
-connected 1
-walk_off 1
 x 3
 y 5
+connected 1
+move_off walk
 end
 arch check_floor
 slaying pshop4
-connected 1
-walk_off 1
 x 3
 y 5
+connected 1
+move_off walk
 end
 arch check_floor
 slaying pshop5
-connected 1
-walk_off 1
 x 3
 y 5
+connected 1
+move_off walk
 end
 arch check_floor
 slaying pshop6
-connected 1
-walk_off 1
 x 3
 y 5
+connected 1
+move_off walk
 end
 arch check_floor
 slaying pshop7
-connected 1
-walk_off 1
 x 3
 y 5
+connected 1
+move_off walk
 end
 arch check_floor
 slaying pshop8
-connected 1
-walk_off 1
 x 3
 y 5
+connected 1
+move_off walk
 end
 arch check_floor
 slaying pshop9
-connected 1
-walk_off 1
 x 3
 y 5
+connected 1
+move_off walk
 end
 arch check_floor
 slaying pshop10
-connected 1
-walk_off 1
 x 3
 y 5
+connected 1
+move_off walk
 end
 arch check_floor
 slaying pshop11
-connected 1
-walk_off 1
 x 3
 y 5
+connected 1
+move_off walk
 end
 arch check_floor
 slaying pshop12
-connected 1
-walk_off 1
 x 3
 y 5
+connected 1
+move_off walk
 end
 arch check_floor
 slaying pshop13
-connected 1
-walk_off 1
 x 3
 y 5
+connected 1
+move_off walk
 end
 arch check_floor
 slaying pshop14
-connected 1
-walk_off 1
 x 3
 y 5
+connected 1
+move_off walk
 end
 arch check_floor
 slaying pshop15
-connected 1
-walk_off 1
 x 3
 y 5
+connected 1
+move_off walk
 end
 arch check_floor
 slaying pshop16
-connected 1
-walk_off 1
 x 3
 y 5
+connected 1
+move_off walk
 end
 arch check_floor
 slaying pshop17
-connected 1
-walk_off 1
 x 3
 y 5
+connected 1
+move_off walk
 end
 arch check_floor
 slaying pshop18
-connected 1
-walk_off 1
 x 3
 y 5
+connected 1
+move_off walk
 end
 arch check_floor
 slaying pshop19
-connected 1
-walk_off 1
 x 3
 y 5
+connected 1
+move_off walk
 end
 arch check_floor
 slaying pshop20
-connected 1
-walk_off 1
 x 3
 y 5
+connected 1
+move_off walk
 end
 arch check_floor
 slaying pshop21
-connected 1
-walk_off 1
 x 3
 y 5
+connected 1
+move_off walk
 end
 arch check_floor
 slaying pshop22
-connected 1
-walk_off 1
 x 3
 y 5
+connected 1
+move_off walk
 end
 arch check_floor
 slaying pshop23
-connected 1
-walk_off 1
 x 3
 y 5
+connected 1
+move_off walk
 end
 arch check_floor
 slaying pshop24
-connected 1
-walk_off 1
 x 3
 y 5
+connected 1
+move_off walk
 end
 arch check_floor
 slaying pshop25
-connected 1
-walk_off 1
 x 3
 y 5
+connected 1
+move_off walk
 end
 arch check_floor
 slaying pshop26
-connected 1
-walk_off 1
 x 3
 y 5
+connected 1
+move_off walk
 end
 arch check_floor
 slaying pshop27
-connected 1
-walk_off 1
 x 3
 y 5
+connected 1
+move_off walk
 end
 arch woodfloor
 x 3
@@ -595,7 +600,7 @@ y 5
 end
 arch dungeon_magic
 x 3
-y 5
+y 6
 end
 arch woodfloor
 x 3
@@ -608,7 +613,7 @@ y 6
 end
 arch dungeon_magic
 x 3
-y 6
+y 7
 end
 arch woodfloor
 x 3
@@ -616,54 +621,53 @@ y 7
 end
 arch dungeon_magic
 x 3
-y 7
+y 8
 end
 arch altar_trigger
 name entrance_altar
+slaying money
 msg
 If you get caught, I don't know you.
 endmsg
-slaying money
 food 2000
-connected 2
 x 3
 y 8
+connected 2
 end
 arch altar
 name name_altar
 slaying ruby
 food 1000
-connected 6
 x 3
 y 8
+connected 6
 end
 arch magic_mouth
 msg
 Shhh....
 Her name is Mireya.
 endmsg
-connected 6
-walk_on 0
-fly_on 0
 x 3
 y 8
+connected 6
+move_on 0
 end
 arch woodfloor
 x 3
 y 8
 end
-arch dungeon_magic
-x 3
-y 8
-end
 arch teleporter
-invisible 1
 hp 5
 sp 6
-connected 2
-speed 0.0
 x 3
 y 8
+speed 0.0
+invisible 1
+connected 2
+end
+arch dungeon_magic
+x 3
+y 9
 end
 arch woodfloor
 x 3
@@ -672,40 +676,36 @@ end
 arch thief_1
 name Shady Character
 msg
-@match key|Key
+@match key
 Yes you need a key to get in through that door. Unless...
-@match Unless|unless
+@match unless
 Well I am a bit poor today, and I suppose I could...
 @match could
 Drop 2000 platinum in front of me.
-@match wife|Wife
+@match wife
 The managers wife is one of the most powerful female dragons you will ever meet.  Do not anger her.
-@match name|Name
+@match name
 So you want to know her name do you?  It's going to cost you..
-@match cost|Cost
+@match cost
 Hey man, nothing in this world is free.  If you want her name drop 1000 rubies in front of me.
 @match *
 Don't waste my time with that.
 endmsg
+x 3
+y 9
 no_pick 1
 unaggressive 1
 stand_still 1
-x 3
-y 9
 end
 arch dungeon_magic
 x 3
-y 9
+y 10
 end
 arch woodfloor
 x 3
 y 10
 end
 arch flagstone_2_1_2
-x 3
-y 10
-end
-arch dungeon_magic
 x 3
 y 10
 end
@@ -721,6 +721,9 @@ arch blocked
 x 3
 y 13
 end
+arch dungeon_magic
+x 4
+end
 arch woodfloor
 x 4
 end
@@ -729,6 +732,7 @@ x 4
 end
 arch dungeon_magic
 x 4
+y 1
 end
 arch woodfloor
 x 4
@@ -740,7 +744,7 @@ y 1
 end
 arch dungeon_magic
 x 4
-y 1
+y 2
 end
 arch woodfloor
 x 4
@@ -752,7 +756,7 @@ y 2
 end
 arch dungeon_magic
 x 4
-y 2
+y 3
 end
 arch woodfloor
 x 4
@@ -764,7 +768,7 @@ y 3
 end
 arch dungeon_magic
 x 4
-y 3
+y 4
 end
 arch woodfloor
 x 4
@@ -776,25 +780,25 @@ y 4
 end
 arch dungeon_magic
 x 4
-y 4
+y 5
 end
 arch pedestal
-connected 1
 x 4
 y 5
+connected 1
 end
 arch woodfloor
 x 4
 y 5
 end
 arch grate_closed_2
-connected 1
 x 4
 y 5
+connected 1
 end
 arch dungeon_magic
 x 4
-y 5
+y 6
 end
 arch woodfloor
 x 4
@@ -806,7 +810,7 @@ y 6
 end
 arch dungeon_magic
 x 4
-y 6
+y 7
 end
 arch woodfloor
 x 4
@@ -818,7 +822,7 @@ y 7
 end
 arch dungeon_magic
 x 4
-y 7
+y 8
 end
 arch woodfloor
 x 4
@@ -830,7 +834,7 @@ y 8
 end
 arch dungeon_magic
 x 4
-y 8
+y 9
 end
 arch woodfloor
 x 4
@@ -842,17 +846,13 @@ y 9
 end
 arch dungeon_magic
 x 4
-y 9
+y 10
 end
 arch woodfloor
 x 4
 y 10
 end
 arch flagstone_3_1
-x 4
-y 10
-end
-arch dungeon_magic
 x 4
 y 10
 end
@@ -899,9 +899,9 @@ x 5
 y 4
 end
 arch pedestal
-connected 1
 x 5
 y 5
+connected 1
 end
 arch woodfloor
 x 5
@@ -1005,7 +1005,7 @@ arch woodfloor
 x 6
 y 9
 end
-arch vodka
+arch booze
 x 6
 y 9
 end
@@ -1097,9 +1097,9 @@ y 9
 end
 arch fatman
 name Bartender
-stand_still 1
 x 7
 y 9
+stand_still 1
 end
 arch woodfloor
 x 7
@@ -1398,18 +1398,18 @@ x 11
 y 3
 end
 arch table_4
-no_pick 1
 x 11
 y 3
+no_pick 1
 end
 arch woodfloor
 x 11
 y 4
 end
 arch table_4
-no_pick 1
 x 11
 y 4
+no_pick 1
 end
 arch woodfloor
 x 11
@@ -1502,22 +1502,18 @@ x 12
 y 5
 end
 arch pedestal
-connected 4
 x 12
 y 6
+connected 4
 end
 arch woodfloor
 x 12
 y 6
 end
 arch pedestal
+x 12
+y 7
 connected 4
-x 12
-y 7
-end
-arch woodfloor
-x 12
-y 7
 end
 arch magic_mouth
 msg
@@ -1526,16 +1522,20 @@ endmsg
 x 12
 y 7
 end
-arch mdoor_closed_2
-connected 4
-wc 7
+arch woodfloor
 x 12
 y 7
 end
-arch pedestal
+arch mdoor_closed_2
+wc 7
+x 12
+y 7
 connected 4
+end
+arch pedestal
 x 12
 y 8
+connected 4
 end
 arch woodfloor
 x 12
@@ -1594,7 +1594,7 @@ end
 arch fatwoman
 name Cook
 msg
-@match wife|Wife
+@match wife
 Dragons can eat all day!
 @match *
 Must... cook... faster...
@@ -1603,22 +1603,18 @@ x 13
 y 3
 end
 arch pedestal
-connected 3
 x 13
 y 4
+connected 3
 end
 arch woodfloor
 x 13
 y 4
 end
 arch pedestal
+x 13
+y 5
 connected 3
-x 13
-y 5
-end
-arch woodfloor
-x 13
-y 5
 end
 arch magic_mouth
 msg
@@ -1627,16 +1623,20 @@ endmsg
 x 13
 y 5
 end
-arch mdoor_closed_2
-connected 3
-wc 7
+arch woodfloor
 x 13
 y 5
 end
-arch pedestal
+arch mdoor_closed_2
+wc 7
+x 13
+y 5
 connected 3
+end
+arch pedestal
 x 13
 y 6
+connected 3
 end
 arch woodfloor
 x 13
@@ -1783,18 +1783,18 @@ x 15
 y 3
 end
 arch table_4
-no_pick 1
 x 15
 y 3
+no_pick 1
 end
 arch woodfloor
 x 15
 y 4
 end
 arch table_4
-no_pick 1
 x 15
 y 4
+no_pick 1
 end
 arch woodfloor
 x 15
@@ -2035,45 +2035,45 @@ x 18
 y 3
 end
 arch chair_2.4
-no_pick 1
 x 18
 y 3
+no_pick 1
 end
 arch woodfloor
 x 18
 y 4
 end
 arch chair_2.4
-no_pick 1
 x 18
 y 4
+no_pick 1
 end
 arch woodfloor
 x 18
 y 5
 end
 arch chair_2.4
-no_pick 1
 x 18
 y 5
+no_pick 1
 end
 arch woodfloor
 x 18
 y 6
 end
 arch chair_2.4
-no_pick 1
 x 18
 y 6
+no_pick 1
 end
 arch woodfloor
 x 18
 y 7
 end
 arch chair_2.4
-no_pick 1
 x 18
 y 7
+no_pick 1
 end
 arch woodfloor
 x 18
@@ -2127,54 +2127,54 @@ x 19
 y 3
 end
 arch table_3
-no_pick 1
 x 19
 y 3
+no_pick 1
 end
 arch woodfloor
 x 19
 y 4
 end
 arch table_3
-no_pick 1
 x 19
 y 4
+no_pick 1
 end
 arch woodfloor
 x 19
 y 5
 end
 arch table_3
-no_pick 1
 x 19
 y 5
+no_pick 1
 end
 arch woodfloor
 x 19
 y 6
 end
 arch table_3
-no_pick 1
 x 19
 y 6
+no_pick 1
 end
 arch woodfloor
 x 19
 y 7
 end
 arch table_3
-no_pick 1
 x 19
 y 7
+no_pick 1
 end
 arch woodfloor
 x 19
 y 8
 end
 arch chair_2.3
-no_pick 1
 x 19
 y 8
+no_pick 1
 end
 arch woodfloor
 x 19
@@ -2224,54 +2224,54 @@ x 20
 y 3
 end
 arch table_3
-no_pick 1
 x 20
 y 3
+no_pick 1
 end
 arch woodfloor
 x 20
 y 4
 end
 arch table_3
-no_pick 1
 x 20
 y 4
+no_pick 1
 end
 arch woodfloor
 x 20
 y 5
 end
 arch table_3
-no_pick 1
 x 20
 y 5
+no_pick 1
 end
 arch woodfloor
 x 20
 y 6
 end
 arch table_3
-no_pick 1
 x 20
 y 6
+no_pick 1
 end
 arch woodfloor
 x 20
 y 7
 end
 arch table_3
-no_pick 1
 x 20
 y 7
+no_pick 1
 end
 arch woodfloor
 x 20
 y 8
 end
 arch chair_2.3
-no_pick 1
 x 20
 y 8
+no_pick 1
 end
 arch woodfloor
 x 20
@@ -2316,45 +2316,45 @@ x 21
 y 3
 end
 arch chair_2.2
-no_pick 1
 x 21
 y 3
+no_pick 1
 end
 arch woodfloor
 x 21
 y 4
 end
 arch chair_2.2
-no_pick 1
 x 21
 y 4
+no_pick 1
 end
 arch woodfloor
 x 21
 y 5
 end
 arch chair_2.2
-no_pick 1
 x 21
 y 5
+no_pick 1
 end
 arch woodfloor
 x 21
 y 6
 end
 arch chair_2.2
-no_pick 1
 x 21
 y 6
+no_pick 1
 end
 arch woodfloor
 x 21
 y 7
 end
 arch chair_2.2
-no_pick 1
 x 21
 y 7
+no_pick 1
 end
 arch woodfloor
 x 21
@@ -2421,22 +2421,18 @@ end
 arch dun0
 name Elite Dragon Guard
 face pl_dragon_bl.151
-blocksview 0
 x 22
 y 6
-end
-arch woodfloor
-x 22
-y 7
+blocksview 0
 end
 arch magic_ear
 msg
-@match Mireya|mireya
+@match mireya
 Click.
 endmsg
-connected 5
 x 22
 y 7
+connected 5
 end
 arch magic_mouth
 msg
@@ -2445,10 +2441,18 @@ endmsg
 x 22
 y 7
 end
+arch woodfloor
+x 22
+y 7
+end
+arch dungeon_magic
+x 22
+y 8
+end
 arch magic_mouth
 name Elite Dragon Guard
 msg
-@match Mireya|mireya
+@match mireya
 You may pass.
 @match *
 You may not enter.
@@ -2460,16 +2464,12 @@ arch woodfloor
 x 22
 y 8
 end
-arch dungeon_magic
-x 22
-y 8
-end
 arch dun0
 name Elite Dragon Guard
 face pl_dragon_bl.151
-blocksview 0
 x 22
 y 8
+blocksview 0
 end
 arch woodfloor
 x 22
@@ -2510,65 +2510,69 @@ x 23
 y 1
 end
 arch flagstone_2_1_1
-no_magic 1
-damned 1
 x 23
 y 1
+no_magic 1
+damned 1
 end
 arch woodfloor
 x 23
 y 2
 end
 arch flagstone_2_1_1
-no_magic 1
-damned 1
 x 23
 y 2
+no_magic 1
+damned 1
 end
 arch woodfloor
 x 23
 y 3
 end
 arch flagstone_2_1_1
-no_magic 1
-damned 1
 x 23
 y 3
+no_magic 1
+damned 1
 end
 arch woodfloor
 x 23
 y 4
 end
-arch flagstone_2_1_1
-no_magic 1
-damned 1
+arch swall_1_4_half
 x 23
 y 4
+end
+arch flagstone_2_1_1
+x 23
+y 4
+no_magic 1
+damned 1
 end
 arch woodfloor
 x 23
 y 5
 end
 arch flagstone_2_1_1
-no_magic 1
-damned 1
 x 23
 y 5
+no_magic 1
+damned 1
 end
 arch woodfloor
 x 23
 y 6
 end
 arch flagstone_1_2
-no_magic 1
-damned 1
 x 23
 y 6
+no_magic 1
+damned 1
 end
 arch pedestal
-connected 5
 x 23
 y 7
+connected 5
 end
 arch woodfloor
 x 23
@@ -2576,31 +2580,31 @@ y 7
 end
 arch gate_closed_2
 name Private
+x 23
+y 7
 connected 5
 no_magic 1
 damned 1
-x 23
-y 7
 end
 arch woodfloor
 x 23
 y 8
 end
 arch flagstone_1_1
-no_magic 1
-damned 1
 x 23
 y 8
+no_magic 1
+damned 1
 end
 arch woodfloor
 x 23
 y 9
 end
 arch flagstone_2_1_1
-no_magic 1
-damned 1
 x 23
 y 9
+no_magic 1
+damned 1
 end
 arch woodfloor
 x 23
@@ -2655,10 +2659,10 @@ x 24
 y 4
 end
 arch swall_2_1_2
-no_magic 1
-damned 1
 x 24
 y 4
+no_magic 1
+damned 1
 end
 arch woodfloor
 x 24
@@ -2669,9 +2673,9 @@ x 24
 y 6
 end
 arch pedestal
-connected 5
 x 24
 y 7
+connected 5
 end
 arch woodfloor
 x 24
@@ -2737,10 +2741,10 @@ x 25
 y 4
 end
 arch swall_2_1_2
-no_magic 1
-damned 1
 x 25
 y 4
+no_magic 1
+damned 1
 end
 arch woodfloor
 x 25
@@ -2765,10 +2769,10 @@ end
 arch rock
 name carpet
 face hide_white.111
-no_pass 0
-can_roll 0
 x 25
 y 9
+move_block 0
+can_roll 0
 end
 arch woodfloor
 x 25
@@ -2796,45 +2800,48 @@ end
 arch flagstone_2_1_2
 x 26
 end
+arch swall_1_1_half
+x 26
+end
 arch woodfloor
 x 26
 y 1
 end
 arch swall_2_1_1
-no_magic 1
-damned 1
 x 26
 y 1
+no_magic 1
+damned 1
 end
 arch woodfloor
 x 26
 y 2
 end
 arch swall_2_1_1
-no_magic 1
-damned 1
 x 26
 y 2
+no_magic 1
+damned 1
 end
 arch woodfloor
 x 26
 y 3
 end
 arch swall_2_1_1
-no_magic 1
-damned 1
 x 26
 y 3
+no_magic 1
+damned 1
 end
 arch woodfloor
 x 26
 y 4
 end
 arch swall_2_2_4
-no_magic 1
-damned 1
 x 26
 y 4
+no_magic 1
+damned 1
 end
 arch woodfloor
 x 26
@@ -2855,24 +2862,24 @@ end
 arch rock
 name carpet
 face hide_white.111
-no_pass 0
-can_roll 0
 x 26
 y 8
+move_block 0
+can_roll 0
 end
 arch woodfloor
 x 26
 y 9
 end
 arch dresser
-no_pick 1
 x 26
 y 9
+no_pick 1
 end
 arch crown
-no_pick 1
 x 26
 y 9
+no_pick 1
 end
 arch woodfloor
 x 26
@@ -2906,9 +2913,9 @@ y 1
 end
 arch luggage
 name Dog Food
-no_pick 1
 x 27
 y 1
+no_pick 1
 end
 arch woodfloor
 x 27
@@ -2937,19 +2944,19 @@ end
 arch rock
 name carpet
 face hide_white.111
-no_pass 0
-can_roll 0
 x 27
 y 7
+move_block 0
+can_roll 0
 end
 arch woodfloor
 x 27
 y 8
 end
 arch bed_1
-no_pick 1
 x 27
 y 8
+no_pick 1
 end
 arch woodfloor
 x 27
@@ -2957,9 +2964,9 @@ y 9
 end
 arch luggage
 name Managers Storage
-no_pick 1
 x 27
 y 9
+no_pick 1
 end
 arch woodfloor
 x 27
@@ -3018,19 +3025,19 @@ end
 arch rock
 name carpet
 face hide_white.111
-no_pass 0
-can_roll 0
 x 28
 y 7
+move_block 0
+can_roll 0
 end
 arch woodfloor
 x 28
 y 8
 end
 arch bed_1
-no_pick 1
 x 28
 y 8
+no_pick 1
 end
 arch woodfloor
 x 28
@@ -3038,9 +3045,9 @@ y 9
 end
 arch luggage
 name Managers Wifes Storage
-no_pick 1
 x 28
 y 9
+no_pick 1
 end
 arch woodfloor
 x 28
@@ -3110,24 +3117,24 @@ end
 arch rock
 name carpet
 face hide_white.111
-no_pass 0
-can_roll 0
 x 29
 y 8
+move_block 0
+can_roll 0
 end
 arch woodfloor
 x 29
 y 9
 end
 arch dresser
-no_pick 1
 x 29
 y 9
+no_pick 1
 end
 arch crown
-no_pick 1
 x 29
 y 9
+no_pick 1
 end
 arch woodfloor
 x 29
@@ -3194,10 +3201,10 @@ end
 arch rock
 name carpet
 face hide_white.111
-no_pass 0
-can_roll 0
 x 30
 y 9
+move_block 0
+can_roll 0
 end
 arch woodfloor
 x 30
@@ -3222,15 +3229,15 @@ end
 arch teleporter
 hp 30
 sp 5
-connected 101
-speed 0.0
 x 30
 y 13
+speed 0.0
+connected 101
 end
 arch gem
-nrof 100
 x 30
 y 13
+nrof 100
 end
 arch woodfloor
 x 31
@@ -3257,9 +3264,9 @@ end
 arch altar_trigger
 slaying dozen red roses
 food 1
-connected 101
 x 31
 y 4
+connected 101
 end
 arch magic_mouth
 name Mireya
@@ -3268,11 +3275,10 @@ Mireya says:
 Ahh, how sweet! Thank you!
 Here, I have so many of these lying around, you take some.
 endmsg
-connected 101
-walk_on 0
-fly_on 0
 x 31
 y 4
+connected 101
+move_on 0
 end
 arch woodfloor
 x 31
@@ -3280,34 +3286,34 @@ y 4
 end
 arch desk
 name Vanity
-no_pick 1
 x 31
 y 4
+no_pick 1
 end
 arch magic_mouth
 name Mireya
 msg
-@match hi|Hi|Hello|hello
+@match hi|hello
 Oh, hello!  Did my husband send you?
-@match yes|Yes
+@match yes
 Good!  I forgot what time our date is.  Be a dear and go downstairs ask him.
 @match 7
 Oh that's right, I remember our date is at 7.  Thank you.
-@match pen|Pen
+@match pen
 Here.  My husband left this up here, he will reward you for it.
 @match *
-Your beginning to bother me little man.
+You're beginning to bother me little man.
 endmsg
 x 31
 y 5
 end
 arch magic_ear
 msg
-@match pen|Pen
+@match pen
 endmsg
-connected 100
 x 31
 y 5
+connected 100
 end
 arch woodfloor
 x 31
@@ -3320,9 +3326,9 @@ end
 arch dun0
 name Mireya
 face pl_dragon_g.151
-blocksview 0
 x 31
 y 5
+blocksview 0
 end
 arch woodfloor
 x 31
@@ -3367,10 +3373,10 @@ end
 arch teleporter
 hp 30
 sp 5
-connected 100
-speed 0.0
 x 31
 y 13
+speed 0.0
+connected 100
 end
 arch stylus
 name Contract Pen
@@ -3384,6 +3390,9 @@ end
 arch flagstone_2_1_2
 x 32
 end
+arch swall_1_1_half
+x 32
+end
 arch woodfloor
 x 32
 y 1
@@ -3457,6 +3466,10 @@ x 32
 y 9
 end
 arch woodfloor
+x 32
+y 10
+end
+arch swall_1_2_half
 x 32
 y 10
 end

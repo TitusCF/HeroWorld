@@ -1,16 +1,15 @@
 arch map
+name Castle Zaah, Dungeon
+difficulty 12
 region darcap
-name castle2
+width 43
+height 43
+enter_x 23
+enter_y 24
 msg
-Creator: Gnat the Gnu
-Email: john_cater@yahoo.com
-Date: Thu Jan 21 14:38:50 1999
+Created:  1999-01-21 (john_cater@yahoo.com)
+Modified: 2008-12-21 Rick Tanner
 endmsg
-hp 23
-sp 24
-x 43
-y 43
-level 12
 end
 arch dungeon_floor
 end
@@ -3130,6 +3129,10 @@ arch dungeon_floor
 x 14
 y 26
 end
+arch wall_1_1
+x 14
+y 26
+end
 arch bwall_0
 x 14
 y 26
@@ -3146,7 +3149,7 @@ arch dungeon_floor
 x 14
 y 28
 end
-arch wall_4
+arch wall_2_2_1
 x 14
 y 28
 end
@@ -3408,9 +3411,6 @@ x 15
 y 33
 end
 arch button_handle
-msg
-
-endmsg
 x 15
 y 33
 connected 96
@@ -3952,7 +3952,7 @@ arch dungeon_floor
 x 18
 y 21
 end
-arch wall_2_1_2
+arch wall_1_4
 x 18
 y 21
 end
@@ -3981,6 +3981,10 @@ x 18
 y 27
 end
 arch dungeon_floor
+x 18
+y 28
+end
+arch wall_2_1_2
 x 18
 y 28
 end
@@ -4143,11 +4147,19 @@ arch dungeon_floor
 x 19
 y 19
 end
+arch giant
+x 19
+y 19
+end
 arch dungeon_floor
 x 19
 y 20
 end
 arch dungeon_floor
+x 19
+y 21
+end
+arch wall_1_3
 x 19
 y 21
 end
@@ -4350,7 +4362,7 @@ arch dungeon_floor
 x 20
 y 21
 end
-arch swall_2_1_2
+arch bwall_1_3
 x 20
 y 21
 end
@@ -4525,7 +4537,7 @@ arch dungeon_floor
 x 21
 y 17
 end
-arch bwall_2_1_2
+arch bwall_1_3
 x 21
 y 17
 end
@@ -4901,6 +4913,10 @@ arch dungeon_floor
 x 23
 y 12
 end
+arch big_dragon
+x 23
+y 12
+end
 arch dungeon_floor
 x 23
 y 13
@@ -4980,6 +4996,10 @@ arch dungeon_floor
 x 23
 y 28
 end
+arch wall_2_1_2
+x 23
+y 28
+end
 arch bwall_0
 x 23
 y 28
@@ -5318,7 +5338,7 @@ arch dungeon_floor
 x 25
 y 17
 end
-arch bwall_2_1_2
+arch bwall_1_3
 x 25
 y 17
 end
@@ -5533,6 +5553,10 @@ arch dungeon_floor
 x 26
 y 21
 end
+arch wall_1_1
+x 26
+y 21
+end
 arch bwall_0
 x 26
 y 21
@@ -5565,6 +5589,10 @@ arch dungeon_floor
 x 26
 y 25
 end
+arch wall_3_2
+x 26
+y 25
+end
 arch bwall_0
 x 26
 y 25
@@ -5581,11 +5609,19 @@ arch dungeon_floor
 x 26
 y 27
 end
+arch wall_2_1_1
+x 26
+y 27
+end
 arch bwall_0
 x 26
 y 27
 end
 arch dungeon_floor
+x 26
+y 28
+end
+arch wall_2_2_4
 x 26
 y 28
 end
@@ -5776,7 +5812,7 @@ arch dungeon_floor
 x 27
 y 25
 end
-arch wall_2_1_2
+arch wall_1_3
 x 27
 y 25
 end
@@ -5952,6 +5988,10 @@ x 28
 y 21
 end
 arch dungeon_floor
+x 28
+y 22
+end
+arch giant
 x 28
 y 22
 end
@@ -6569,7 +6609,7 @@ arch dungeon_floor
 x 31
 y 25
 end
-arch wall_2_1_2
+arch wall_1_4
 x 31
 y 25
 end
@@ -6742,6 +6782,10 @@ x 32
 y 19
 end
 arch dungeon_floor
+x 32
+y 20
+end
+arch giant
 x 32
 y 20
 end
@@ -7008,6 +7052,10 @@ arch dungeon_floor
 x 33
 y 34
 end
+arch wall_1_4
+x 33
+y 34
+end
 arch bwall_0
 x 33
 y 34
@@ -7165,6 +7213,8 @@ end
 arch firewall_7
 x 34
 y 14
+arch spell_small_fireball
+end
 end
 arch dungeon_floor
 x 34
@@ -7282,7 +7332,7 @@ arch dungeon_floor
 x 34
 y 29
 end
-arch bwall_2_1_1
+arch bwall_1_2
 x 34
 y 29
 end
@@ -7314,6 +7364,10 @@ arch dungeon_floor
 x 34
 y 33
 end
+arch wall_1_1
+x 34
+y 33
+end
 arch bwall_0
 x 34
 y 33
@@ -7322,7 +7376,7 @@ arch dungeon_floor
 x 34
 y 34
 end
-arch wall_4
+arch wall_2_2_4
 x 34
 y 34
 end
@@ -7346,7 +7400,7 @@ arch dungeon_floor
 x 34
 y 37
 end
-arch wall_2_1_1
+arch wall_1_1
 x 34
 y 37
 end
@@ -9160,20 +9214,4 @@ end
 arch bwall_2_2_4
 x 42
 y 42
-end
-arch giant
-x 19
-y 19
-end
-arch big_dragon
-x 23
-y 12
-end
-arch giant
-x 28
-y 22
-end
-arch giant
-x 32
-y 20
 end

@@ -1,10 +1,14 @@
 arch map
+name House With Apartment
+difficulty 1
 region stoneville
-name apartment2
+width 16
+height 16
+enter_x 7
+enter_y 14
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Wed Jul  9 22:43:11 1997
+Created:  1997-07-09
+Modified: 2012-02-01 Rick Tanner
 endmsg
 end
 arch grass
@@ -227,12 +231,10 @@ msg
 @match Hello|Hallo|Hi
 Hello! Nice to see you!
 @match hurt
-Most people just want to kill me on
-sight, sniff!
+Most people just want to kill me on sight, sniff!
 @match *
-Don't hurt me, please
+Don't hurt me, please.
 endmsg
-maxhp 10
 x 2
 y 1
 speed_left -2.100000
@@ -736,9 +738,7 @@ y 12
 end
 arch sign
 msg
-This is a house with a private
-appartment and a room for foreign
-travellers.
+This is a house with a private apartment and a room for foreign travelers.
 endmsg
 x 6
 y 12
@@ -950,7 +950,7 @@ arch altar
 name key costs 3000 gp
 slaying money
 msg
-Here you can get a key for 3000 g
+Here you can get a key for 3000 gold.
 endmsg
 food 3000
 x 8
@@ -1055,12 +1055,9 @@ arch guildmaster
 name housekeeper
 msg
 @match Hello|Hallo|Hi
-Hello there! To the left is a private
-apartment, to your right is a room you
-may enter if you pay a fee. 
+Hello there! To the left is a private apartment, to your right is a room you may enter if you pay a fee.
 @match apartment
-This apartment is very comfortable,
-trust me! And it's got a cauldron, too!
+This apartment is very comfortable, trust me! And it's got a cauldron, too!
 endmsg
 x 9
 y 7
@@ -1358,8 +1355,7 @@ arch charwoman
 name Nanny, the cleaning woman
 msg
 @match *
-Get out of my way, I have cleaning to
-do!
+Get out of my way, I have cleaning to do!
 endmsg
 x 12
 y 6

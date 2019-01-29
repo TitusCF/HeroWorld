@@ -1,13 +1,15 @@
 arch map
-name enigme
+name Enigme, Level 3
+difficulty 40
 region brest
-msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Wed Jun  1 01:03:38 1994
-endmsg
 width 16
 height 16
+enter_x 1
+enter_y 13
+msg
+Created:  1994-06-01
+Modified: 2012-01-26 Rick Tanner
+endmsg
 end
 arch dungeon_floor
 end
@@ -121,7 +123,7 @@ arch dungeon_floor
 x 1
 y 1
 end
-arch random_food_fant
+arch random_food
 x 1
 y 1
 end
@@ -153,7 +155,7 @@ arch dungeon_floor
 x 1
 y 3
 end
-arch random_food_fant
+arch random_food
 x 1
 y 3
 end
@@ -172,11 +174,12 @@ end
 arch full_helmet
 name Warrior's Helmet
 hp 1
-protected 16386
-material 4
-magic 3
 x 1
 y 4
+resist_magic 30
+resist_fear 30
+material 4
+magic 3
 end
 arch dungeon_floor
 x 1
@@ -196,7 +199,7 @@ y 7
 end
 arch sign
 msg
-First : How many Big-Wizards?
+First: How many Big-Wizards?
 endmsg
 x 1
 y 7
@@ -207,7 +210,7 @@ y 8
 end
 arch sign
 msg
-Second : How many Grimreapers?
+Second: How many Grimreapers?
 endmsg
 x 1
 y 8
@@ -218,7 +221,7 @@ y 9
 end
 arch sign
 msg
-Third : How many Kobolds?
+Third: How many Kobolds?
 endmsg
 x 1
 y 9
@@ -345,27 +348,27 @@ x 2
 y 7
 end
 arch button_lever
-connected 4
 x 2
 y 7
+connected 4
 end
 arch dungeon_floor
 x 2
 y 8
 end
 arch button_lever
-connected 4
 x 2
 y 8
+connected 4
 end
 arch dungeon_floor
 x 2
 y 9
 end
 arch button_lever
-connected 4
 x 2
 y 9
+connected 4
 end
 arch dungeon_floor
 x 2
@@ -373,7 +376,7 @@ y 10
 end
 arch sign_e
 msg
-Increasing way, starting at 0
+Increasing way, starting at 0.
 endmsg
 x 2
 y 10
@@ -468,7 +471,7 @@ arch dungeon_floor
 x 3
 y 3
 end
-arch random_food_fant
+arch random_food
 x 3
 y 3
 end
@@ -505,27 +508,27 @@ x 3
 y 7
 end
 arch button_lever
-connected 1
 x 3
 y 7
+connected 1
 end
 arch dungeon_floor
 x 3
 y 8
 end
 arch button_lever
-connected 4
 x 3
 y 8
+connected 4
 end
 arch dungeon_floor
 x 3
 y 9
 end
 arch button_lever
-connected 4
 x 3
 y 9
+connected 4
 end
 arch dungeon_floor
 x 3
@@ -605,7 +608,7 @@ arch dungeon_floor
 x 4
 y 2
 end
-arch random_food_fant
+arch random_food
 x 4
 y 2
 end
@@ -658,27 +661,27 @@ x 4
 y 7
 end
 arch button_lever
-connected 4
 x 4
 y 7
+connected 4
 end
 arch dungeon_floor
 x 4
 y 8
 end
 arch button_lever
-connected 4
 x 4
 y 8
+connected 4
 end
 arch dungeon_floor
 x 4
 y 9
 end
 arch button_lever
-connected 4
 x 4
 y 9
+connected 4
 end
 arch dungeon_floor
 x 4
@@ -697,29 +700,29 @@ x 4
 y 12
 end
 arch block_door_closed
-speed 0.500000
-connected 8
 x 4
 y 12
+speed 0.500000
+connected 8
 end
 arch dungeon_floor
 x 4
 y 13
 end
 arch button_plate
-connected 5
 x 4
 y 13
+connected 5
 end
 arch dungeon_floor
 x 4
 y 14
 end
 arch block_door_closed
-speed 0.500000
-connected 8
 x 4
 y 14
+speed 0.500000
+connected 8
 end
 arch dungeon_floor
 x 4
@@ -795,7 +798,7 @@ arch dungeon_floor
 x 5
 y 4
 end
-arch random_food_fant
+arch random_food
 x 5
 y 4
 end
@@ -816,27 +819,27 @@ x 5
 y 7
 end
 arch button_lever
-connected 4
 x 5
 y 7
+connected 4
 end
 arch dungeon_floor
 x 5
 y 8
 end
 arch button_lever
-connected 4
 x 5
 y 8
+connected 4
 end
 arch dungeon_floor
 x 5
 y 9
 end
 arch button_lever
-connected 4
 x 5
 y 9
+connected 4
 end
 arch dungeon_floor
 x 5
@@ -855,21 +858,21 @@ x 5
 y 12
 end
 arch block_door_closed
-speed 0.500000
-connected 8
 x 5
 y 12
+speed 0.500000
+connected 8
 end
 arch dungeon_floor
 x 5
 y 13
 end
 arch spikes_open
+x 5
+y 13
 speed 0.500000
 value 1
 connected 1
-x 5
-y 13
 end
 arch boulder
 x 5
@@ -880,10 +883,10 @@ x 5
 y 14
 end
 arch block_door_closed
-speed 0.500000
-connected 8
 x 5
 y 14
+speed 0.500000
+connected 8
 end
 arch dungeon_floor
 x 5
@@ -943,7 +946,7 @@ arch dungeon_floor
 x 6
 y 3
 end
-arch random_food_fant
+arch random_food
 x 6
 y 3
 end
@@ -980,27 +983,27 @@ x 6
 y 7
 end
 arch button_lever
-connected 4
 x 6
 y 7
-end
-arch dungeon_floor
-x 6
-y 8
-end
-arch button_lever
-connected 2
-x 6
-y 8
-end
-arch dungeon_floor
-x 6
-y 9
-end
-arch button_lever
 connected 4
+end
+arch dungeon_floor
+x 6
+y 8
+end
+arch button_lever
+x 6
+y 8
+connected 2
+end
+arch dungeon_floor
 x 6
 y 9
+end
+arch button_lever
+x 6
+y 9
+connected 4
 end
 arch dungeon_floor
 x 6
@@ -1019,30 +1022,30 @@ x 6
 y 12
 end
 arch block_door_closed
-speed 0.500000
-connected 8
 x 6
 y 12
+speed 0.500000
+connected 8
 end
 arch dungeon_floor
 x 6
 y 13
 end
 arch block_door_closed
-speed 0.500000
-connected 8
 x 6
 y 13
+speed 0.500000
+connected 8
 end
 arch dungeon_floor
 x 6
 y 14
 end
 arch block_door_closed
-speed 0.500000
-connected 8
 x 6
 y 14
+speed 0.500000
+connected 8
 end
 arch dungeon_floor
 x 6
@@ -1071,9 +1074,9 @@ x 7
 y 1
 end
 arch igate_closed_2
-connected 5
 x 7
 y 1
+connected 5
 end
 arch dungeon_floor
 x 7
@@ -1128,27 +1131,27 @@ x 7
 y 7
 end
 arch button_lever
-connected 4
 x 7
 y 7
+connected 4
 end
 arch dungeon_floor
 x 7
 y 8
 end
 arch button_lever
-connected 4
 x 7
 y 8
+connected 4
 end
 arch dungeon_floor
 x 7
 y 9
 end
 arch button_lever
-connected 4
 x 7
 y 9
+connected 4
 end
 arch dungeon_floor
 x 7
@@ -1167,29 +1170,29 @@ x 7
 y 12
 end
 arch block_door_closed
-speed 0.500000
-connected 8
 x 7
 y 12
+speed 0.500000
+connected 8
 end
 arch dungeon_floor
 x 7
 y 13
 end
 arch button_plate
-connected 6
 x 7
 y 13
+connected 6
 end
 arch dungeon_floor
 x 7
 y 14
 end
 arch block_door_closed
-speed 0.500000
-connected 8
 x 7
 y 14
+speed 0.500000
+connected 8
 end
 arch dungeon_floor
 x 7
@@ -1218,9 +1221,9 @@ x 8
 y 1
 end
 arch igate_closed_2
-connected 6
 x 8
 y 1
+connected 6
 end
 arch dungeon_floor
 x 8
@@ -1275,27 +1278,27 @@ x 8
 y 7
 end
 arch button_lever
-connected 4
 x 8
 y 7
+connected 4
 end
 arch dungeon_floor
 x 8
 y 8
 end
 arch button_lever
-connected 4
 x 8
 y 8
+connected 4
 end
 arch dungeon_floor
 x 8
 y 9
 end
 arch button_lever
-connected 4
 x 8
 y 9
+connected 4
 end
 arch dungeon_floor
 x 8
@@ -1314,21 +1317,21 @@ x 8
 y 12
 end
 arch block_door_closed
-speed 0.500000
-connected 8
 x 8
 y 12
+speed 0.500000
+connected 8
 end
 arch dungeon_floor
 x 8
 y 13
 end
 arch spikes_open
+x 8
+y 13
 speed 0.500000
 value 1
 connected 2
-x 8
-y 13
 end
 arch boulder
 x 8
@@ -1339,10 +1342,10 @@ x 8
 y 14
 end
 arch block_door_closed
-speed 0.500000
-connected 8
 x 8
 y 14
+speed 0.500000
+connected 8
 end
 arch dungeon_floor
 x 8
@@ -1371,9 +1374,9 @@ x 9
 y 1
 end
 arch igate_closed_2
-connected 7
 x 9
 y 1
+connected 7
 end
 arch dungeon_floor
 x 9
@@ -1428,27 +1431,27 @@ x 9
 y 7
 end
 arch button_lever
-connected 4
 x 9
 y 7
-end
-arch dungeon_floor
-x 9
-y 8
-end
-arch button_lever
 connected 4
+end
+arch dungeon_floor
 x 9
 y 8
+end
+arch button_lever
+x 9
+y 8
+connected 4
 end
 arch dungeon_floor
 x 9
 y 9
 end
 arch button_lever
-connected 3
 x 9
 y 9
+connected 3
 end
 arch dungeon_floor
 x 9
@@ -1467,30 +1470,30 @@ x 9
 y 12
 end
 arch block_door_closed
-speed 0.500000
-connected 8
 x 9
 y 12
+speed 0.500000
+connected 8
 end
 arch dungeon_floor
 x 9
 y 13
 end
 arch block_door_closed
-speed 0.500000
-connected 8
 x 9
 y 13
+speed 0.500000
+connected 8
 end
 arch dungeon_floor
 x 9
 y 14
 end
 arch block_door_closed
-speed 0.500000
-connected 8
 x 9
 y 14
+speed 0.500000
+connected 8
 end
 arch dungeon_floor
 x 9
@@ -1567,27 +1570,27 @@ x 10
 y 7
 end
 arch button_lever
-connected 4
 x 10
 y 7
+connected 4
 end
 arch dungeon_floor
 x 10
 y 8
 end
 arch button_lever
-connected 4
 x 10
 y 8
+connected 4
 end
 arch dungeon_floor
 x 10
 y 9
 end
 arch button_lever
-connected 4
 x 10
 y 9
+connected 4
 end
 arch dungeon_floor
 x 10
@@ -1606,27 +1609,27 @@ x 10
 y 12
 end
 arch block_door_closed
-connected 8
 x 10
 y 12
+connected 8
 end
 arch dungeon_floor
 x 10
 y 13
 end
 arch button_plate
-connected 7
 x 10
 y 13
+connected 7
 end
 arch dungeon_floor
 x 10
 y 14
 end
 arch block_door_closed
-connected 8
 x 10
 y 14
+connected 8
 end
 arch dungeon_floor
 x 10
@@ -1687,27 +1690,27 @@ x 11
 y 7
 end
 arch button_lever
-connected 4
 x 11
 y 7
+connected 4
 end
 arch dungeon_floor
 x 11
 y 8
 end
 arch button_lever
-connected 4
 x 11
 y 8
+connected 4
 end
 arch dungeon_floor
 x 11
 y 9
 end
 arch button_lever
-connected 4
 x 11
 y 9
+connected 4
 end
 arch dungeon_floor
 x 11
@@ -1726,20 +1729,20 @@ x 11
 y 12
 end
 arch block_door_closed
-connected 8
 x 11
 y 12
+connected 8
 end
 arch dungeon_floor
 x 11
 y 13
 end
 arch spikes_open
+x 11
+y 13
 speed 0.500000
 value 1
 connected 3
-x 11
-y 13
 end
 arch boulder
 x 11
@@ -1750,9 +1753,9 @@ x 11
 y 14
 end
 arch block_door_closed
-connected 8
 x 11
 y 14
+connected 8
 end
 arch dungeon_floor
 x 11
@@ -1837,27 +1840,27 @@ x 12
 y 12
 end
 arch block_door_closed
-connected 8
 x 12
 y 12
+connected 8
 end
 arch dungeon_floor
 x 12
 y 13
 end
 arch block_door_closed
-connected 8
 x 12
 y 13
+connected 8
 end
 arch dungeon_floor
 x 12
 y 14
 end
 arch block_door_closed
-connected 8
 x 12
 y 14
+connected 8
 end
 arch dungeon_floor
 x 12
@@ -1878,9 +1881,9 @@ x 13
 y 1
 end
 arch igate_open_2
-connected 8
 x 13
 y 1
+connected 8
 end
 arch dungeon_floor
 x 13
@@ -1955,9 +1958,9 @@ x 13
 y 13
 end
 arch button_plate
-connected 8
 x 13
 y 13
+connected 8
 end
 arch dungeon_floor
 x 13
@@ -2049,9 +2052,9 @@ x 14
 y 13
 end
 arch spikes_open
-connected 4
 x 14
 y 13
+connected 4
 end
 arch boulder
 x 14

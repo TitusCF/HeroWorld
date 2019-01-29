@@ -1,10 +1,14 @@
 arch map
+name Key Sale House
+difficulty 1
 region stoneville
-name keysale
+width 16
+height 16
+enter_x 4
+enter_y 4
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Wed Jul  9 23:21:08 1997
+Created:  1997-07-09
+Modified: 2012-02-01 Rick Tanner
 endmsg
 end
 arch grass_only
@@ -310,6 +314,10 @@ arch wall_1_2
 x 3
 y 3
 end
+arch wall_2_short
+x 3
+y 3
+end
 arch woodfloor
 x 3
 y 4
@@ -436,7 +444,7 @@ end
 arch altar
 name pay 5000 food to get key
 msg
-Pay 5000 food for the key house by the southern wel
+Pay 5000 food for the key house by the southern well.
 endmsg
 food 5000
 x 4
@@ -483,8 +491,7 @@ arch altar
 name pay 500 diamonds to get key
 slaying diamond
 msg
-Pay 500 diamonds to get the key for a
-little house
+Pay 500 diamonds to get the key for a little house.
 endmsg
 food 500
 x 4
@@ -543,6 +550,10 @@ x 5
 y 3
 end
 arch wall_1_2
+x 5
+y 3
+end
+arch wall_2_short
 x 5
 y 3
 end
@@ -643,8 +654,7 @@ arch altar
 name pay 1500 diamonds to get key
 slaying diamond
 msg
-Pay 1500 diamonds for the key to the
-luxory mano
+Pay 1500 diamonds for the key to the luxory manor.
 endmsg
 food 1500
 x 6
@@ -696,12 +706,9 @@ x 6
 y 13
 end
 arch sign
-name explaination sign
+name explanation sign
 msg
-In this house, you can buy keys. These
-key are unique and will open the
-special doors to which others will
-have no access.
+In this house, you can buy keys.  These key are unique and will open the special doors to which others will have no access.
 endmsg
 x 6
 y 13
@@ -741,6 +748,10 @@ x 7
 y 3
 end
 arch wall_2_2_1
+x 7
+y 3
+end
+arch wall_2_short
 x 7
 y 3
 end
@@ -950,8 +961,7 @@ arch altar
 name pay 3000 diamonds to get key
 slaying diamond
 msg
-Pay 3000 diamonds to get the key for
-the manor by the northern wel
+Pay 3000 diamonds to get the key for the manor by the northern well.
 endmsg
 food 3000
 x 9
@@ -992,9 +1002,7 @@ msg
 @match Hello|Hallo|Hi|greet|Greetings
 My Greetings to you!
 @match *
-Get yourself a key here. They are for
-different houses and rooms here in
-Scorn.
+Get yourself a key here.  They are for different houses and rooms here in Stoneville.
 endmsg
 x 9
 y 11
@@ -1043,6 +1051,10 @@ x 10
 y 3
 end
 arch wall_1_2
+x 10
+y 3
+end
+arch wall_2_short
 x 10
 y 3
 end
@@ -1214,6 +1226,10 @@ x 12
 y 3
 end
 arch wall_1_2
+x 12
+y 3
+end
+arch wall_2_short
 x 12
 y 3
 end
@@ -1413,6 +1429,10 @@ x 14
 y 3
 end
 arch wall_2_1_1
+x 14
+y 3
+end
+arch wall_2_short
 x 14
 y 3
 end

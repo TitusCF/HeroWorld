@@ -1,13 +1,12 @@
 arch map
-name <untitled>
+name Dol-Guldur, Master's Chamber
 region brest
-msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Thu Jun  2 02:40:43 1994
-endmsg
 width 35
 height 42
+msg
+Created:  1994-06-02
+Modified: 2012-01-26 Rick Tanner
+endmsg
 end
 arch dirtfloor
 end
@@ -651,15 +650,11 @@ arch bwall_0
 x 2
 y 8
 end
-arch dirtfloor
-x 2
-y 9
-end
 arch dungeon_floor
 x 2
 y 9
 end
-arch oakdoor
+arch oakdoor_2
 slaying dol-guldur.1
 hp 3
 sp 27
@@ -1201,7 +1196,7 @@ arch dungeon_floor
 x 4
 y 2
 end
-arch oakdoor
+arch oakdoor_1
 slaying dol-guldur.1
 hp 5
 sp 20
@@ -1232,15 +1227,11 @@ arch bwall_0
 x 4
 y 5
 end
-arch dirtfloor
-x 4
-y 6
-end
 arch dungeon_floor
 x 4
 y 6
 end
-arch oakdoor
+arch oakdoor_1
 slaying dol-guldur.1
 hp 5
 sp 24
@@ -1645,6 +1636,10 @@ x 5
 y 29
 end
 arch dirtfloor
+x 5
+y 30
+end
+arch demon_lord
 x 5
 y 30
 end
@@ -2134,9 +2129,9 @@ x 7
 y 22
 end
 arch button_small
-connected 11
 x 7
 y 22
+connected 11
 end
 arch dirtfloor
 x 7
@@ -2441,170 +2436,170 @@ x 8
 y 24
 end
 arch block_door_closed
-speed 0.500000
-connected 12
 x 8
 y 24
+speed 0.500000
+connected 12
 end
 arch dirtfloor
 x 8
 y 25
 end
 arch block_door_closed
-speed 0.500000
-connected 12
 x 8
 y 25
+speed 0.500000
+connected 12
 end
 arch dirtfloor
 x 8
 y 26
 end
 arch block_door_closed
-speed 0.500000
-connected 12
 x 8
 y 26
+speed 0.500000
+connected 12
 end
 arch dirtfloor
 x 8
 y 27
 end
 arch block_door_closed
-speed 0.500000
-connected 12
 x 8
 y 27
+speed 0.500000
+connected 12
 end
 arch dirtfloor
 x 8
 y 28
 end
 arch block_door_closed
-speed 0.500000
-connected 12
 x 8
 y 28
+speed 0.500000
+connected 12
 end
 arch dirtfloor
 x 8
 y 29
 end
 arch block_door_closed
-speed 0.500000
-connected 12
 x 8
 y 29
+speed 0.500000
+connected 12
 end
 arch dirtfloor
 x 8
 y 30
 end
 arch block_door_closed
-speed 0.500000
-connected 12
 x 8
 y 30
+speed 0.500000
+connected 12
 end
 arch dirtfloor
 x 8
 y 31
 end
 arch block_door_closed
-speed 0.500000
-connected 12
 x 8
 y 31
+speed 0.500000
+connected 12
 end
 arch dirtfloor
 x 8
 y 32
 end
 arch block_door_closed
-speed 0.500000
-connected 12
 x 8
 y 32
+speed 0.500000
+connected 12
 end
 arch dirtfloor
 x 8
 y 33
 end
 arch block_door_closed
-speed 0.500000
-connected 12
 x 8
 y 33
+speed 0.500000
+connected 12
 end
 arch dirtfloor
 x 8
 y 34
 end
 arch block_door_closed
-speed 0.500000
-connected 12
 x 8
 y 34
+speed 0.500000
+connected 12
 end
 arch dirtfloor
 x 8
 y 35
 end
 arch block_door_closed
-speed 0.500000
-connected 12
 x 8
 y 35
+speed 0.500000
+connected 12
 end
 arch dirtfloor
 x 8
 y 36
 end
 arch block_door_closed
-speed 0.500000
-connected 12
 x 8
 y 36
+speed 0.500000
+connected 12
 end
 arch dirtfloor
 x 8
 y 37
 end
 arch block_door_closed
-speed 0.500000
-connected 12
 x 8
 y 37
+speed 0.500000
+connected 12
 end
 arch dirtfloor
 x 8
 y 38
 end
 arch block_door_closed
-speed 0.500000
-connected 12
 x 8
 y 38
+speed 0.500000
+connected 12
 end
 arch dirtfloor
 x 8
 y 39
 end
 arch block_door_closed
-speed 0.500000
-connected 12
 x 8
 y 39
+speed 0.500000
+connected 12
 end
 arch dirtfloor
 x 8
 y 40
 end
 arch block_door_closed
-speed 0.500000
-connected 12
 x 8
 y 40
+speed 0.500000
+connected 12
 end
 arch dirtfloor
 x 8
@@ -4385,18 +4380,18 @@ x 15
 y 21
 end
 arch button_plate
-connected 12
 x 15
 y 21
+connected 12
 end
 arch dirtfloor
 x 15
 y 22
 end
 arch spikes_open
-connected 11
 x 15
 y 22
+connected 11
 end
 arch boulder
 x 15
@@ -4704,6 +4699,10 @@ arch dirtfloor
 x 16
 y 29
 end
+arch demon_lord
+x 16
+y 29
+end
 arch dirtfloor
 x 16
 y 30
@@ -5358,11 +5357,19 @@ arch dirtfloor
 x 19
 y 10
 end
+arch chinese_dragon
+x 19
+y 10
+end
 arch dirtfloor
 x 19
 y 11
 end
 arch dirtfloor
+x 19
+y 12
+end
+arch chinese_dragon
 x 19
 y 12
 end
@@ -5729,6 +5736,10 @@ x 20
 y 27
 end
 arch dirtfloor
+x 20
+y 28
+end
+arch demon_lord
 x 20
 y 28
 end
@@ -5858,11 +5869,19 @@ arch dirtfloor
 x 21
 y 5
 end
+arch big_dragon
+x 21
+y 5
+end
 arch dirtfloor
 x 21
 y 6
 end
 arch dirtfloor
+x 21
+y 7
+end
+arch behemoth
 x 21
 y 7
 end
@@ -6141,6 +6160,10 @@ x 22
 y 10
 end
 arch dirtfloor
+x 22
+y 11
+end
+arch titan
 x 22
 y 11
 end
@@ -7827,6 +7850,10 @@ arch dirtfloor
 x 27
 y 35
 end
+arch big_wiz
+x 27
+y 35
+end
 arch dirtfloor
 x 27
 y 36
@@ -7934,6 +7961,10 @@ x 28
 y 12
 end
 arch woodfloor
+x 28
+y 13
+end
+arch big_wiz
 x 28
 y 13
 end
@@ -8930,6 +8961,10 @@ arch dirtfloor
 x 31
 y 35
 end
+arch big_wiz
+x 31
+y 35
+end
 arch dirtfloor
 x 31
 y 36
@@ -9308,8 +9343,7 @@ y 4
 end
 arch book_read
 msg
-Careful the wells are
-deep and dangerous in the Mines...
+Careful the wells are deep and dangerous in the Mines...
 endmsg
 x 33
 y 4
@@ -9663,6 +9697,8 @@ end
 arch firewall_7
 x 34
 y 8
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 34
@@ -9671,6 +9707,8 @@ end
 arch firewall_8
 x 34
 y 9
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 34
@@ -9927,48 +9965,4 @@ end
 arch bwall_0
 x 34
 y 41
-end
-arch demon_lord
-x 5
-y 30
-end
-arch demon_lord
-x 16
-y 29
-end
-arch chinese_dragon
-x 19
-y 10
-end
-arch chinese_dragon
-x 19
-y 12
-end
-arch demon_lord
-x 20
-y 28
-end
-arch big_dragon
-x 21
-y 5
-end
-arch behemoth
-x 21
-y 7
-end
-arch titan
-x 22
-y 11
-end
-arch big_wiz
-x 27
-y 35
-end
-arch big_wiz
-x 28
-y 13
-end
-arch big_wiz
-x 31
-y 35
 end

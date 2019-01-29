@@ -1,12 +1,13 @@
 arch map
+name Darcap Circus Show of Strength
+difficulty 1
 region darcapcircus
-name strength
+width 20
+height 16
 msg
-Creator: Cater & Wade
-Email: john_cater@yahoo.com
-Date: Thu Jan 28 17:49:34 1999
+Created:  1999-01-28 Cater & Wade (john_cater@yahoo.com)
+Modified: 2008-11-20 Rick Tanner
 endmsg
-x 20
 end
 arch pstone_1
 end
@@ -467,8 +468,8 @@ x 4
 y 3
 weight 150000
 pick_up 1
+move_block 0
 no_pick 0
-no_pass 0
 end
 arch pstone_1
 x 4
@@ -683,7 +684,7 @@ arch pstone_1
 x 6
 y 3
 end
-arch wwall_win1
+arch woodwall_win1
 x 6
 y 3
 end
@@ -699,7 +700,7 @@ arch pstone_1
 x 6
 y 5
 end
-arch wwall_win1
+arch woodwall_win1
 x 6
 y 5
 end
@@ -715,7 +716,7 @@ arch pstone_1
 x 6
 y 7
 end
-arch wwall_win1
+arch woodwall_win1
 x 6
 y 7
 end
@@ -731,7 +732,7 @@ arch pstone_1
 x 6
 y 9
 end
-arch wwall_win1
+arch woodwall_win1
 x 6
 y 9
 end
@@ -747,7 +748,7 @@ arch pstone_1
 x 6
 y 11
 end
-arch wwall_win1
+arch woodwall_win1
 x 6
 y 11
 end
@@ -1456,7 +1457,7 @@ x 13
 y 6
 end
 arch goldfloor
-name drop 20 goldcoins
+name drop 20 gold coins
 food 20
 x 13
 y 6
@@ -1467,7 +1468,7 @@ x 13
 y 7
 end
 arch goldfloor
-name drop 20 goldcoins
+name drop 20 gold coins
 food 20
 x 13
 y 7
@@ -1478,7 +1479,7 @@ x 13
 y 8
 end
 arch goldfloor
-name drop 20 goldcoins
+name drop 20 gold coins
 food 20
 x 13
 y 8
@@ -1489,7 +1490,7 @@ x 13
 y 9
 end
 arch goldfloor
-name drop 20 goldcoins
+name drop 20 gold coins
 food 20
 x 13
 y 9
@@ -1690,9 +1691,9 @@ x 15
 y 7
 end
 arch exit
-slaying circus
-hp 7
-sp 13
+slaying /world/world_116_102
+hp 31
+sp 20
 x 15
 y 7
 end
@@ -1701,9 +1702,9 @@ x 15
 y 8
 end
 arch exit
-slaying circus
-hp 7
-sp 13
+slaying /world/world_116_102
+hp 31
+sp 20
 x 15
 y 8
 end

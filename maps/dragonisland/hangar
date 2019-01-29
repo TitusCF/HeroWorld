@@ -1,13 +1,15 @@
 arch map
-name hangar
+name Stoneville Dragon Hangar
+difficulty 10
 region stoneville
-msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Thu Jun 19 16:02:47 1997
-endmsg
 width 35
 height 32
+enter_x 15
+enter_y 1
+msg
+Created:  1997-06-19
+Modified: 2012-02-01 Rick Tanner
+endmsg
 end
 arch magic_banned
 end
@@ -370,10 +372,10 @@ end
 arch creator
 slaying Ticket To Port Joseph
 other_arch card
-connected 20
-lifesave 1
 x 1
 y 1
+connected 20
+lifesave 1
 end
 arch cobblestones2
 x 1
@@ -385,8 +387,7 @@ y 2
 end
 arch magic_mouth
 msg
-Drop 100 gold coins to buy a ticket to
-Port Joseph. 
+Drop 100 gold coins to buy a ticket to Port Joseph.
 endmsg
 x 1
 y 2
@@ -399,10 +400,10 @@ arch altar_trigger
 name Ticket Booth
 slaying money
 food 1000
-last_sp 1
-connected 20
 x 1
 y 2
+last_sp 1
+connected 20
 end
 arch magic_banned
 x 1
@@ -1009,10 +1010,10 @@ end
 arch creator
 slaying Ticket To Navar
 other_arch card
-connected 21
-lifesave 1
 x 3
 y 1
+connected 21
+lifesave 1
 end
 arch cobblestones2
 x 3
@@ -1024,8 +1025,7 @@ y 2
 end
 arch magic_mouth
 msg
-Drop 1000 gold coins to buy a ticket to
-Navar.
+Drop 1000 gold coins to buy a ticket to Navar.
 endmsg
 x 3
 y 2
@@ -1038,10 +1038,10 @@ arch altar_trigger
 name Ticket Booth
 slaying money
 food 10000
-last_sp 1
-connected 21
 x 3
 y 2
+last_sp 1
+connected 21
 end
 arch magic_banned
 x 3
@@ -1107,6 +1107,17 @@ arch cobblestones2
 x 3
 y 8
 end
+arch dragon_exit
+name dragon express
+slaying /world/world_101_114
+msg
+Please hurry up or we will be moving without you.
+endmsg
+hp 16
+sp 39
+x 3
+y 8
+end
 arch magic_banned
 x 3
 y 9
@@ -1160,6 +1171,17 @@ x 3
 y 14
 end
 arch cobblestones2
+x 3
+y 14
+end
+arch dragon_exit
+name dragon express
+slaying /pup_land/rainbow/station
+msg
+Please hurry up or we will be moving without you.
+endmsg
+hp 7
+sp 3
 x 3
 y 14
 end
@@ -1216,6 +1238,17 @@ x 3
 y 20
 end
 arch cobblestones2
+x 3
+y 20
+end
+arch dragon_exit
+name dragon express
+slaying /world/world_128_109
+msg
+Please hurry up or we will be moving without you.
+endmsg
+hp 35
+sp 13
 x 3
 y 20
 end
@@ -1272,6 +1305,17 @@ x 3
 y 26
 end
 arch cobblestones2
+x 3
+y 26
+end
+arch dragon_exit
+name dragon express
+slaying /world/world_107_123
+msg
+Please hurry up or we will be moving without you.
+endmsg
+hp 32
+sp 30
 x 3
 y 26
 end
@@ -1648,10 +1692,10 @@ end
 arch creator
 slaying Ticket To Red Town
 other_arch card
-connected 22
-lifesave 1
 x 5
 y 1
+connected 22
+lifesave 1
 end
 arch cobblestones2
 x 5
@@ -1663,8 +1707,7 @@ y 2
 end
 arch magic_mouth
 msg
-Drop 1000 gold coins to buy a ticket to
-Red Town. 
+Drop 1000 gold coins to buy a ticket to Red Town.
 endmsg
 x 5
 y 2
@@ -1677,10 +1720,10 @@ arch altar_trigger
 name Ticket Booth
 slaying money
 food 10000
-last_sp 1
-connected 22
 x 5
 y 2
+last_sp 1
+connected 22
 end
 arch magic_banned
 x 5
@@ -2068,9 +2111,9 @@ x 6
 y 9
 end
 arch grate_closed_2
-connected 40
 x 6
 y 9
+connected 40
 end
 arch magic_banned
 x 6
@@ -2133,9 +2176,9 @@ x 6
 y 15
 end
 arch grate_closed_2
+x 6
+y 15
 connected 3
-x 6
-y 15
 end
 arch magic_banned
 x 6
@@ -2198,9 +2241,9 @@ x 6
 y 21
 end
 arch grate_closed_2
+x 6
+y 21
 connected 5
-x 6
-y 21
 end
 arch magic_banned
 x 6
@@ -2263,9 +2306,9 @@ x 6
 y 27
 end
 arch grate_closed_2
-connected 7
 x 6
 y 27
+connected 7
 end
 arch magic_banned
 x 6
@@ -2323,10 +2366,10 @@ end
 arch creator
 slaying Ticket To Dtabb
 other_arch card
-connected 23
-lifesave 1
 x 7
 y 1
+connected 23
+lifesave 1
 end
 arch cobblestones2
 x 7
@@ -2338,8 +2381,7 @@ y 2
 end
 arch magic_mouth
 msg
-Drop 1250 gold coins to buy a ticket to
-Dtabb.
+Drop 1250 gold coins to buy a ticket to Dtabb.
 endmsg
 x 7
 y 2
@@ -2352,10 +2394,10 @@ arch altar_trigger
 name Ticket Booth
 slaying money
 food 12500
-last_sp 1
-connected 23
 x 7
 y 2
+last_sp 1
+connected 23
 end
 arch magic_banned
 x 7
@@ -2421,9 +2463,9 @@ arch altar_trigger
 name To Port Joseph
 slaying Ticket To Port Joseph
 food 1
-connected 40
 x 7
 y 8
+connected 40
 end
 arch magic_banned
 x 7
@@ -2484,9 +2526,9 @@ arch altar_trigger
 name To Red Town
 slaying Ticket To Red Town
 food 1
-connected 3
 x 7
 y 14
+connected 3
 end
 arch magic_banned
 x 7
@@ -2547,9 +2589,9 @@ arch altar_trigger
 name To Wolfsburg
 slaying Ticket To Wolfsburg
 food 1
-connected 5
 x 7
 y 20
+connected 5
 end
 arch magic_banned
 x 7
@@ -2610,9 +2652,9 @@ arch altar_trigger
 name To Brest
 slaying Ticket To Brest
 food 1
-connected 7
 x 7
 y 26
+connected 7
 end
 arch magic_banned
 x 7
@@ -2782,11 +2824,11 @@ arch princess
 name waiting princess
 msg
 @match *
-I'm waiting for my brother. 
+I'm waiting for my brother.
 endmsg
-friendly 1
 x 8
 y 11
+friendly 1
 end
 arch magic_banned
 x 8
@@ -2968,10 +3010,10 @@ end
 arch creator
 slaying Ticket To Wolfsburg
 other_arch card
-connected 24
-lifesave 1
 x 9
 y 1
+connected 24
+lifesave 1
 end
 arch cobblestones2
 x 9
@@ -2983,8 +3025,7 @@ y 2
 end
 arch magic_mouth
 msg
-Drop 750 gold coins to buy a ticket to
-Wolfsburg.
+Drop 750 gold coins to buy a ticket to Wolfsburg.
 endmsg
 x 9
 y 2
@@ -2997,10 +3038,10 @@ arch altar_trigger
 name Ticket Booth
 slaying money
 food 7500
-last_sp 1
-connected 24
 x 9
 y 2
+last_sp 1
+connected 24
 end
 arch magic_banned
 x 9
@@ -3193,7 +3234,7 @@ end
 arch man
 name crying man
 msg
-@match Hi|Hello|hi|hello
+@match hi|hello
 Leave me alone.
 @match *
 You wouldn't understand.
@@ -3354,9 +3395,9 @@ arch altar_trigger
 name To Navar
 slaying Ticket To Navar
 food 1
-connected 2
 x 10
 y 8
+connected 2
 end
 arch magic_banned
 x 10
@@ -3364,7 +3405,7 @@ y 9
 end
 arch magic_mouth
 msg
-Navar 
+Navar
 endmsg
 x 10
 y 9
@@ -3417,9 +3458,9 @@ arch altar_trigger
 name To Dtabb
 slaying Ticket To Dtabb
 food 1
-connected 4
 x 10
 y 14
+connected 4
 end
 arch magic_banned
 x 10
@@ -3480,9 +3521,9 @@ arch altar_trigger
 name Out Of Order
 slaying Out Of Order
 food 1
-connected 6
 x 10
 y 20
+connected 6
 end
 arch magic_banned
 x 10
@@ -3543,9 +3584,9 @@ arch altar_trigger
 name Out Of Order
 slaying Out Of Order
 food 1
-connected 8
 x 10
 y 26
+connected 8
 end
 arch magic_banned
 x 10
@@ -3553,7 +3594,7 @@ y 27
 end
 arch magic_mouth
 msg
-Out Of Order 
+Out Of Order
 endmsg
 x 10
 y 27
@@ -3614,10 +3655,10 @@ end
 arch creator
 slaying Ticket To Brest
 other_arch card
-connected 25
-lifesave 1
 x 11
 y 1
+connected 25
+lifesave 1
 end
 arch cobblestones2
 x 11
@@ -3629,8 +3670,7 @@ y 2
 end
 arch magic_mouth
 msg
-Drop 1000 gold coins to buy a ticket to
-Brest.
+Drop 1000 gold coins to buy a ticket to Brest.
 endmsg
 x 11
 y 2
@@ -3643,10 +3683,10 @@ arch altar_trigger
 name Ticket Booth
 slaying money
 food 10000
-last_sp 1
-connected 25
 x 11
 y 2
+last_sp 1
+connected 25
 end
 arch magic_banned
 x 11
@@ -3725,9 +3765,9 @@ x 11
 y 9
 end
 arch grate_closed_2
-connected 2
 x 11
 y 9
+connected 2
 end
 arch magic_banned
 x 11
@@ -3790,9 +3830,9 @@ x 11
 y 15
 end
 arch grate_closed_2
+x 11
+y 15
 connected 4
-x 11
-y 15
 end
 arch magic_banned
 x 11
@@ -3855,9 +3895,9 @@ x 11
 y 21
 end
 arch grate_closed_2
+x 11
+y 21
 connected 6
-x 11
-y 21
 end
 arch magic_banned
 x 11
@@ -3920,9 +3960,9 @@ x 11
 y 27
 end
 arch grate_closed_2
-connected 8
 x 11
 y 27
+connected 8
 end
 arch magic_banned
 x 11
@@ -3984,8 +4024,7 @@ end
 arch sign
 name Dragon express
 msg
-Please take your litter with you.
-No alcohol allowed in the terminal!
+Please take your litter with you.  No alcohol allowed in the terminal!
 endmsg
 x 12
 y 1
@@ -4018,14 +4057,13 @@ arch guildmaster
 name old man
 msg
 @match *
-You can pay your ticket either with
-platinum, gold or silver.
+You can pay your ticket either with platinum, gold or silver.
 endmsg
+x 12
+y 4
 randomitems standard
 friendly 1
 unaggressive 0
-x 12
-y 4
 end
 arch magic_banned
 x 12
@@ -4064,6 +4102,17 @@ x 12
 y 8
 end
 arch cobblestones2
+x 12
+y 8
+end
+arch dragon_exit
+name dragon express
+slaying /world/world_121_116
+msg
+Please hurry up or we will be moving without you.
+endmsg
+hp 37
+sp 46
 x 12
 y 8
 end
@@ -4120,6 +4169,17 @@ x 12
 y 14
 end
 arch cobblestones2
+x 12
+y 14
+end
+arch dragon_exit
+name dragon express
+slaying /world/world_116_102
+msg
+Please hurry up or we will be moving without you.
+endmsg
+hp 29
+sp 37
 x 12
 y 14
 end
@@ -4176,6 +4236,14 @@ x 12
 y 20
 end
 arch cobblestones2
+x 12
+y 20
+end
+arch dragon_exit
+name dragon express
+msg
+Please hurry up or we will be moving without you.
+endmsg
 x 12
 y 20
 end
@@ -4232,6 +4300,14 @@ x 12
 y 26
 end
 arch cobblestones2
+x 12
+y 26
+end
+arch dragon_exit
+name dragon express
+msg
+Please hurry up or we will be moving without you.
+endmsg
 x 12
 y 26
 end
@@ -4313,9 +4389,9 @@ x 13
 y 2
 end
 arch door_look_2
-no_pass 0
 x 13
 y 2
+move_block 0
 end
 arch magic_banned
 x 13
@@ -4603,7 +4679,7 @@ end
 arch cobblestones2
 x 14
 end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_103_127
 hp 3
 sp 10
@@ -4635,10 +4711,10 @@ y 3
 end
 arch guard
 name guard
-friendly 1
-unaggressive 0
 x 14
 y 3
+friendly 1
+unaggressive 0
 end
 arch magic_banned
 x 14
@@ -4647,10 +4723,10 @@ end
 arch check_inv
 race booze
 slaying 0
-last_sp 0
-connected 99
 x 14
 y 4
+last_sp 0
+connected 99
 end
 arch cobblestones2
 x 14
@@ -4665,19 +4741,18 @@ x 14
 y 5
 end
 arch igateTrg1
-connected 99
 x 14
 y 5
+connected 99
 end
 arch magic_banned
 x 14
 y 6
 end
 arch button_trigger
-weight 1
-connected 99
 x 14
 y 6
+connected 99
 end
 arch cobblestones2
 x 14
@@ -4798,16 +4873,16 @@ end
 arch beggar
 msg
 @match *
-a penny for a poor beggar
+A penny for a poor beggar?
 endmsg
-can_use_wand 0
+x 14
+y 18
+can_use_range 0
 can_use_bow 0
 can_use_armour 0
 can_use_weapon 0
 can_use_ring 0
 can_use_skill 0
-x 14
-y 18
 end
 arch magic_banned
 x 14
@@ -4939,7 +5014,7 @@ end
 arch cobblestones2
 x 15
 end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_103_127
 hp 3
 sp 10
@@ -4976,10 +5051,10 @@ end
 arch check_inv
 race booze
 slaying 0
-last_sp 0
-connected 99
 x 15
 y 4
+last_sp 0
+connected 99
 end
 arch cobblestones2
 x 15
@@ -4994,19 +5069,18 @@ x 15
 y 5
 end
 arch igateTrg1
-connected 99
 x 15
 y 5
+connected 99
 end
 arch magic_banned
 x 15
 y 6
 end
 arch button_trigger
-weight 1
-connected 99
 x 15
 y 6
+connected 99
 end
 arch cobblestones2
 x 15
@@ -5302,7 +5376,7 @@ end
 arch cobblestones2
 x 16
 end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_103_127
 hp 3
 sp 10
@@ -5339,10 +5413,10 @@ end
 arch check_inv
 race booze
 slaying 0
-last_sp 0
-connected 99
 x 16
 y 4
+last_sp 0
+connected 99
 end
 arch cobblestones2
 x 16
@@ -5357,19 +5431,18 @@ x 16
 y 5
 end
 arch igateTrg1
-connected 99
 x 16
 y 5
+connected 99
 end
 arch magic_banned
 x 16
 y 6
 end
 arch button_trigger
-weight 1
-connected 99
 x 16
 y 6
+connected 99
 end
 arch cobblestones2
 x 16
@@ -5665,7 +5738,7 @@ end
 arch cobblestones2
 x 17
 end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_103_127
 hp 3
 sp 10
@@ -5697,10 +5770,10 @@ y 3
 end
 arch guard
 name guard
-friendly 1
-unaggressive 0
 x 17
 y 3
+friendly 1
+unaggressive 0
 end
 arch magic_banned
 x 17
@@ -5709,10 +5782,10 @@ end
 arch check_inv
 race booze
 slaying 0
-last_sp 0
-connected 99
 x 17
 y 4
+last_sp 0
+connected 99
 end
 arch cobblestones2
 x 17
@@ -5727,19 +5800,18 @@ x 17
 y 5
 end
 arch igateTrg1
-connected 99
 x 17
 y 5
+connected 99
 end
 arch magic_banned
 x 17
 y 6
 end
 arch button_trigger
-weight 1
-connected 99
 x 17
 y 6
+connected 99
 end
 arch cobblestones2
 x 17
@@ -5762,6 +5834,17 @@ x 17
 y 8
 end
 arch cobblestones2
+x 17
+y 8
+end
+arch dragon_exit
+name dragon express
+slaying /pup_land/lone_town/town
+msg
+Please hurry up or we will be moving without you.
+endmsg
+hp 22
+sp 11
 x 17
 y 8
 end
@@ -5818,6 +5901,17 @@ x 17
 y 14
 end
 arch cobblestones2
+x 17
+y 14
+end
+arch dragon_exit
+name dragon express
+slaying /world/world_105_115
+msg
+Please hurry up or we will be moving without you.
+endmsg
+hp 5
+sp 37
 x 17
 y 14
 end
@@ -5874,6 +5968,17 @@ x 17
 y 20
 end
 arch cobblestones2
+x 17
+y 20
+end
+arch dragon_exit
+name dragon express
+slaying /world/world_109_126
+msg
+Please hurry up or we will be moving without you.
+endmsg
+hp 16
+sp 20
 x 17
 y 20
 end
@@ -5930,6 +6035,17 @@ x 17
 y 26
 end
 arch cobblestones2
+x 17
+y 26
+end
+arch dragon_exit
+name dragon express
+slaying hangar
+msg
+Please hurry up or we will be moving without you.
+endmsg
+hp 34
+sp 8
 x 17
 y 26
 end
@@ -6011,9 +6127,9 @@ x 18
 y 2
 end
 arch door_look_2
-no_pass 0
 x 18
 y 2
+move_block 0
 end
 arch magic_banned
 x 18
@@ -6109,9 +6225,9 @@ y 11
 end
 arch sage
 name old traveller
-friendly 1
 x 18
 y 11
+friendly 1
 end
 arch magic_banned
 x 18
@@ -6321,8 +6437,7 @@ end
 arch sign
 name Dragon express
 msg
-Please take your litter with you.
-No alcohol allowed in the terminal!
+Please take your litter with you.  No alcohol allowed in the terminal!
 endmsg
 x 19
 y 1
@@ -6627,10 +6742,10 @@ end
 arch creator
 slaying Ticket To Scorn
 other_arch card
-connected 26
-lifesave 1
 x 20
 y 1
+connected 26
+lifesave 1
 end
 arch cobblestones2
 x 20
@@ -6642,8 +6757,7 @@ y 2
 end
 arch magic_mouth
 msg
-Drop 200 gold coins to buy a ticket to
-Scorn.
+Drop 200 gold coins to buy a ticket to Scorn.
 endmsg
 x 20
 y 2
@@ -6656,10 +6770,10 @@ arch altar_trigger
 name Ticket Booth
 slaying money
 food 2000
-last_sp 1
-connected 26
 x 20
 y 2
+last_sp 1
+connected 26
 end
 arch magic_banned
 x 20
@@ -6738,9 +6852,9 @@ x 20
 y 9
 end
 arch grate_closed_2
-connected 9
 x 20
 y 9
+connected 9
 end
 arch magic_banned
 x 20
@@ -6803,9 +6917,9 @@ x 20
 y 15
 end
 arch grate_closed_2
+x 20
+y 15
 connected 11
-x 20
-y 15
 end
 arch magic_banned
 x 20
@@ -6868,9 +6982,9 @@ x 20
 y 21
 end
 arch grate_closed_2
+x 20
+y 21
 connected 13
-x 20
-y 21
 end
 arch magic_banned
 x 20
@@ -6933,9 +7047,9 @@ x 20
 y 27
 end
 arch grate_closed_2
-connected 15
 x 20
 y 27
+connected 15
 end
 arch magic_banned
 x 20
@@ -7070,9 +7184,9 @@ arch altar_trigger
 name To Lone Town
 slaying Ticket To Lone Town
 food 1
-connected 9
 x 21
 y 8
+connected 9
 end
 arch magic_banned
 x 21
@@ -7133,9 +7247,9 @@ arch altar_trigger
 name To Scorn
 slaying Ticket To Scorn
 food 1
-connected 11
 x 21
 y 14
+connected 11
 end
 arch magic_banned
 x 21
@@ -7196,9 +7310,9 @@ arch altar_trigger
 name To Lake Country
 slaying Ticket To Lake Country
 food 1
-connected 13
 x 21
 y 20
+connected 13
 end
 arch magic_banned
 x 21
@@ -7259,9 +7373,9 @@ arch altar_trigger
 name Random
 slaying Random Ticket
 food 1
-connected 15
 x 21
 y 26
+connected 15
 end
 arch magic_banned
 x 21
@@ -7330,10 +7444,10 @@ end
 arch creator
 slaying Ticket To Lone Town
 other_arch card
-connected 27
-lifesave 1
 x 22
 y 1
+connected 27
+lifesave 1
 end
 arch cobblestones2
 x 22
@@ -7345,8 +7459,7 @@ y 2
 end
 arch magic_mouth
 msg
-Drop 1000 gold coins to buy a ticket to
-Lone Town.
+Drop 1000 gold coins to buy a ticket to Lone Town.
 endmsg
 x 22
 y 2
@@ -7359,10 +7472,10 @@ arch altar_trigger
 name Ticket Booth
 slaying money
 food 10000
-last_sp 1
-connected 27
 x 22
 y 2
+last_sp 1
+connected 27
 end
 arch magic_banned
 x 22
@@ -7834,9 +7947,9 @@ msg
 @match *
 grrr
 endmsg
-unaggressive 1
 x 23
 y 24
+unaggressive 1
 end
 arch magic_banned
 x 23
@@ -7914,10 +8027,10 @@ end
 arch creator
 slaying Ticket To Santo Dominion
 other_arch card
-connected 28
-lifesave 1
 x 24
 y 1
+connected 28
+lifesave 1
 end
 arch cobblestones2
 x 24
@@ -7929,8 +8042,7 @@ y 2
 end
 arch magic_mouth
 msg
-Drop 100 gold coins to buy a ticket to
-Santo Dominion.
+Drop 100 gold coins to buy a ticket to Santo Dominion.
 endmsg
 x 24
 y 2
@@ -7943,10 +8055,10 @@ arch altar_trigger
 name Ticket Booth
 slaying money
 food 1000
-last_sp 1
-connected 28
 x 24
 y 2
+last_sp 1
+connected 28
 end
 arch magic_banned
 x 24
@@ -8012,9 +8124,9 @@ arch altar_trigger
 name To Santo Dominion
 slaying Ticket To Santo Dominion
 food 1
-connected 10
 x 24
 y 8
+connected 10
 end
 arch magic_banned
 x 24
@@ -8075,9 +8187,9 @@ arch altar_trigger
 name Random
 slaying Random Ticket
 food 1
-connected 12
 x 24
 y 14
+connected 12
 end
 arch magic_banned
 x 24
@@ -8138,9 +8250,9 @@ arch altar_trigger
 name To Nurnberg
 slaying Ticket To Nurnberg
 food 1
-connected 14
 x 24
 y 20
+connected 14
 end
 arch magic_banned
 x 24
@@ -8148,7 +8260,7 @@ y 21
 end
 arch cobblestones2
 msg
-Nurnberg 
+Nurnberg
 endmsg
 x 24
 y 21
@@ -8197,9 +8309,9 @@ arch altar_trigger
 name Random
 slaying Random Ticket
 food 1
-connected 16
 x 24
 y 26
+connected 16
 end
 arch magic_banned
 x 24
@@ -8361,9 +8473,9 @@ x 25
 y 9
 end
 arch grate_closed_2
-connected 10
 x 25
 y 9
+connected 10
 end
 arch magic_banned
 x 25
@@ -8426,9 +8538,9 @@ x 25
 y 15
 end
 arch grate_closed_2
+x 25
+y 15
 connected 12
-x 25
-y 15
 end
 arch magic_banned
 x 25
@@ -8491,9 +8603,9 @@ x 25
 y 21
 end
 arch grate_closed_2
+x 25
+y 21
 connected 14
-x 25
-y 21
 end
 arch magic_banned
 x 25
@@ -8556,9 +8668,9 @@ x 25
 y 27
 end
 arch grate_closed_2
-connected 16
 x 25
 y 27
+connected 16
 end
 arch magic_banned
 x 25
@@ -8616,10 +8728,10 @@ end
 arch creator
 slaying Ticket To Lake Country
 other_arch card
-connected 29
-lifesave 1
 x 26
 y 1
+connected 29
+lifesave 1
 end
 arch cobblestones2
 x 26
@@ -8631,8 +8743,7 @@ y 2
 end
 arch magic_mouth
 msg
-Drop 1000 gold coins to buy a ticket to
-Lake Country. 
+Drop 1000 gold coins to buy a ticket to Lake Country.
 endmsg
 x 26
 y 2
@@ -8645,10 +8756,10 @@ arch altar_trigger
 name Ticket Booth
 slaying money
 food 10000
-last_sp 1
-connected 29
 x 26
 y 2
+last_sp 1
+connected 29
 end
 arch magic_banned
 x 26
@@ -8714,6 +8825,17 @@ arch cobblestones2
 x 26
 y 8
 end
+arch dragon_exit
+name dragon express
+slaying /world/world_102_108
+msg
+Please hurry up or we will be moving without you.
+endmsg
+hp 17
+sp 12
+x 26
+y 8
+end
 arch magic_banned
 x 26
 y 9
@@ -8767,6 +8889,17 @@ x 26
 y 14
 end
 arch cobblestones2
+x 26
+y 14
+end
+arch dragon_exit
+name dragon express
+slaying hangar
+msg
+Please hurry up or we will be moving without you.
+endmsg
+hp 34
+sp 8
 x 26
 y 14
 end
@@ -8823,6 +8956,17 @@ x 26
 y 20
 end
 arch cobblestones2
+x 26
+y 20
+end
+arch dragon_exit
+name dragon express
+slaying /pup_land/nurnberg/city
+msg
+Please hurry up or we will be moving without you.
+endmsg
+hp 25
+sp 15
 x 26
 y 20
 end
@@ -8879,6 +9023,17 @@ x 26
 y 26
 end
 arch cobblestones2
+x 26
+y 26
+end
+arch dragon_exit
+name dragon express
+slaying hangar
+msg
+Please hurry up or we will be moving without you.
+endmsg
+hp 34
+sp 8
 x 26
 y 26
 end
@@ -9255,10 +9410,10 @@ end
 arch creator
 slaying Random Ticket
 other_arch card
-connected 30
-lifesave 1
 x 28
 y 1
+connected 30
+lifesave 1
 end
 arch cobblestones2
 x 28
@@ -9270,8 +9425,7 @@ y 2
 end
 arch magic_mouth
 msg
-Drop 500 gold coins to buy a ticket to
-a random place.
+Drop 500 gold coins to buy a ticket to a random place.
 endmsg
 x 28
 y 2
@@ -9284,10 +9438,10 @@ arch altar_trigger
 name Ticket Booth
 slaying money
 food 5000
-last_sp 1
-connected 30
 x 28
 y 2
+last_sp 1
+connected 30
 end
 arch magic_banned
 x 28
@@ -9920,9 +10074,9 @@ arch awall_2_1_2
 x 30
 end
 arch pedestal
-connected 80
 x 30
 y 1
+connected 80
 end
 arch magic_banned
 x 30
@@ -9931,19 +10085,19 @@ end
 arch creator
 slaying Ticket To Nurnberg
 other_arch card
-connected 32
-lifesave 1
 x 30
 y 1
+connected 32
+lifesave 1
 end
 arch cobblestones2
 x 30
 y 1
 end
 arch pedestal
-connected 80
 x 30
 y 2
+connected 80
 end
 arch magic_banned
 x 30
@@ -9951,8 +10105,7 @@ y 2
 end
 arch magic_mouth
 msg
-Drop 1000 gold coins to buy a ticket
-to Nurnberg.
+Drop 1000 gold coins to buy a ticket to Nurnberg.
 endmsg
 x 30
 y 2
@@ -9965,15 +10118,15 @@ arch altar_trigger
 name Ticket Booth
 slaying money
 food 10000
-last_sp 1
-connected 32
 x 30
 y 2
+last_sp 1
+connected 32
 end
 arch pedestal
-connected 80
 x 30
 y 3
+connected 80
 end
 arch magic_banned
 x 30
@@ -9984,9 +10137,9 @@ x 30
 y 3
 end
 arch igateTrg1
-connected 80
 x 30
 y 3
+connected 80
 end
 arch magic_banned
 x 30
@@ -10004,9 +10157,9 @@ msg
 @match siegfried
 Click.
 endmsg
-connected 80
 x 30
 y 4
+connected 80
 end
 arch cobblestones2
 x 30
@@ -10771,17 +10924,16 @@ arch pit_closed
 name 90
 hp 34
 sp 6
-connected 90
 x 33
 y 1
+connected 90
 end
 arch invis_exit
 name navar
-msg
-The random ride is heading for
-Navar City today.
-endmsg
 slaying /world/world_121_116
+msg
+The random ride is heading for Navar City today.
+endmsg
 hp 37
 sp 46
 x 33
@@ -10791,17 +10943,16 @@ arch pit_closed
 name 91
 hp 34
 sp 6
-connected 91
 x 33
 y 2
+connected 91
 end
 arch invis_exit
 name port joseph
-msg
-The random ride is heading for
-Port Joseph today.
-endmsg
 slaying /world/world_101_114
+msg
+The random ride is heading for Port Joseph today.
+endmsg
 hp 16
 sp 39
 x 33
@@ -10811,17 +10962,16 @@ arch pit_closed
 name 92
 hp 34
 sp 6
-connected 92
 x 33
 y 3
+connected 92
 end
 arch invis_exit
 name brest
-msg
-The random ride is heading for
-Brest today.
-endmsg
 slaying /world/world_107_123
+msg
+The random ride is heading for Brest today.
+endmsg
 hp 32
 sp 30
 x 33
@@ -10857,21 +11007,21 @@ y 10
 end
 arch button_small
 name 91
-connected 91
 x 33
 y 11
+connected 91
 end
 arch button_small
 name 92
-connected 92
 x 33
 y 12
+connected 92
 end
 arch button_small
 name 93
-connected 93
 x 33
 y 13
+connected 93
 end
 arch blocked
 x 33
@@ -10892,17 +11042,16 @@ arch pit_closed
 name 93
 hp 34
 sp 6
-connected 93
 x 34
 y 2
+connected 93
 end
 arch invis_exit
 name nurnberg
-msg
-The random ride is heading for
-Nurnberg today.
-endmsg
 slaying ../pup_land/nurnberg/city
+msg
+The random ride is heading for Nurnberg today.
+endmsg
 hp 25
 sp 15
 x 34
@@ -10912,16 +11061,15 @@ arch pit_closed
 name 94
 hp 34
 sp 6
-connected 94
 x 34
 y 3
+connected 94
 end
 arch invis_exit
-msg
-The random ride is heading for
-Lake Country today.
-endmsg
 slaying /world/world_109_126
+msg
+The random ride is heading for Lake Country today.
+endmsg
 hp 16
 sp 20
 x 34
@@ -10937,10 +11085,10 @@ y 5
 end
 arch blocked
 name darkness
-no_pass 0
-is_floor 1
 x 34
 y 6
+move_block 0
+is_floor 1
 end
 arch blocked
 x 34
@@ -10948,18 +11096,18 @@ y 7
 end
 arch blocked
 name darkness
-no_pass 0
-is_floor 1
 x 34
 y 8
+move_block 0
+is_floor 1
 end
 arch teleporter
 hp 34
 sp 6
-speed 1.000000
-invisible 1
 x 34
 y 8
+speed 1.000000
+invisible 1
 end
 arch blocked
 x 34
@@ -10971,15 +11119,15 @@ y 10
 end
 arch button_small
 name 90
-connected 90
 x 34
 y 11
+connected 90
 end
 arch spikes_moving
-speed 0.500000
-speed_left -0.860000
 x 34
 y 12
+speed 0.500000
+speed_left -0.860000
 end
 arch boulder
 x 34
@@ -10987,9 +11135,9 @@ y 12
 end
 arch button_small
 name 94
-connected 94
 x 34
 y 13
+connected 94
 end
 arch blocked
 x 34
@@ -10998,190 +11146,4 @@ end
 arch blocked
 x 34
 y 15
-end
-arch dragon_exit
-name dragon express
-msg
-Please hurry up or we will be moving
-without you.
-endmsg
-slaying /world/world_101_114
-hp 16
-sp 39
-x 3
-y 8
-end
-arch dragon_exit
-name dragon express
-msg
-Please hurry up or we will be moving
-without you.
-endmsg
-slaying /pup_land/rainbow/station
-hp 7
-sp 3
-x 3
-y 14
-end
-arch dragon_exit
-name dragon express
-msg
-Please hurry up or we will be moving
-without you.
-endmsg
-slaying /world/world_128_109
-hp 35
-sp 13
-x 3
-y 20
-end
-arch dragon_exit
-name dragon express
-msg
-Please hurry up or we will be moving
-without you.
-endmsg
-slaying /world/world_107_123
-hp 32
-sp 30
-x 3
-y 26
-end
-arch dragon_exit
-name dragon express
-msg
-Please hurry up or we will be moving
-without you.
-endmsg
-slaying /world/world_121_116
-hp 37
-sp 46
-x 12
-y 8
-end
-arch dragon_exit
-name dragon express
-msg
-Please hurry up or we will be moving
-without you.
-endmsg
-slaying /world/world_116_102
-hp 29
-sp 37
-x 12
-y 14
-end
-arch dragon_exit
-name dragon express
-msg
-Please hurry up or we will be moving
-without you.
-endmsg
-x 12
-y 20
-end
-arch dragon_exit
-name dragon express
-msg
-Please hurry up or we will be moving
-without you.
-endmsg
-x 12
-y 26
-end
-arch dragon_exit
-name dragon express
-msg
-Please hurry up or we will be moving
-without you.
-endmsg
-slaying /pup_land/lone_town/town
-hp 22
-sp 11
-x 17
-y 8
-end
-arch dragon_exit
-name dragon express
-msg
-Please hurry up or we will be moving
-without you.
-endmsg
-slaying /world/world_105_115
-hp 5
-sp 37
-x 17
-y 14
-end
-arch dragon_exit
-name dragon express
-msg
-Please hurry up or we will be moving
-without you.
-endmsg
-slaying /world/world_109_126
-hp 16
-sp 20
-x 17
-y 20
-end
-arch dragon_exit
-name dragon express
-msg
-Please hurry up or we will be moving
-without you.
-endmsg
-slaying hangar
-hp 34
-sp 8
-x 17
-y 26
-end
-arch dragon_exit
-name dragon express
-msg
-Please hurry up or we will be moving
-without you.
-endmsg
-slaying /world/world_102_108
-hp 17
-sp 12
-x 26
-y 8
-end
-arch dragon_exit
-name dragon express
-msg
-Please hurry up or we will be moving
-without you.
-endmsg
-slaying hangar
-hp 34
-sp 8
-x 26
-y 14
-end
-arch dragon_exit
-name dragon express
-msg
-Please hurry up or we will be moving
-without you.
-endmsg
-slaying /pup_land/nurnberg/city
-hp 25
-sp 15
-x 26
-y 20
-end
-arch dragon_exit
-name dragon express
-msg
-Please hurry up or we will be moving
-without you.
-endmsg
-slaying hangar
-hp 34
-sp 8
-x 26
-y 26
 end

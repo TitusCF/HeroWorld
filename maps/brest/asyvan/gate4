@@ -1,13 +1,15 @@
 arch map
+name Gates of Hell, Gate 4
+difficulty 15
 region brest
-name gate4
+width 21
+height 21
+enter_x 7
+enter_y 4
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue Sep 20 16:19:09 1994
+Created:  1994-09-20
+Modified: 2008-11-26 Rick Tanner
 endmsg
-x 21
-y 21
 end
 arch woodfloor
 end
@@ -329,7 +331,7 @@ arch woodfloor
 x 2
 y 6
 end
-arch random_food_fant
+arch random_food
 x 2
 y 6
 end
@@ -345,7 +347,7 @@ arch woodfloor
 x 2
 y 8
 end
-arch random_food_fant
+arch random_food
 x 2
 y 8
 end
@@ -353,7 +355,7 @@ arch woodfloor
 x 2
 y 9
 end
-arch random_food_fant
+arch random_food
 x 2
 y 9
 end
@@ -361,7 +363,7 @@ arch woodfloor
 x 2
 y 10
 end
-arch random_food_fant
+arch random_food
 x 2
 y 10
 end
@@ -413,7 +415,7 @@ arch woodfloor
 x 2
 y 19
 end
-arch random_food_fant
+arch random_food
 x 2
 y 19
 end
@@ -447,7 +449,15 @@ arch woodfloor
 x 3
 y 4
 end
+arch dragon
+x 3
+y 4
+end
 arch woodfloor
+x 3
+y 5
+end
+arch dragon
 x 3
 y 5
 end
@@ -455,7 +465,7 @@ arch woodfloor
 x 3
 y 6
 end
-arch random_food_fant
+arch random_food
 x 3
 y 6
 end
@@ -549,7 +559,7 @@ arch woodfloor
 x 3
 y 18
 end
-arch oakdoor
+arch exit
 slaying palace2
 hp 15
 sp 4
@@ -560,7 +570,7 @@ arch woodfloor
 x 3
 y 19
 end
-arch random_food_fant
+arch random_food
 x 3
 y 19
 end
@@ -602,7 +612,7 @@ arch woodfloor
 x 4
 y 6
 end
-arch random_food_fant
+arch random_food
 x 4
 y 6
 end
@@ -887,11 +897,23 @@ arch woodfloor
 x 6
 y 4
 end
+arch dragon
+x 6
+y 4
+end
 arch woodfloor
 x 6
 y 5
 end
+arch dragon
+x 6
+y 5
+end
 arch woodfloor
+x 6
+y 6
+end
+arch dragon
 x 6
 y 6
 end
@@ -1256,6 +1278,10 @@ x 8
 y 15
 end
 arch woodfloor
+x 8
+y 16
+end
+arch giant
 x 8
 y 16
 end
@@ -1760,6 +1786,10 @@ arch woodfloor
 x 12
 y 5
 end
+arch chinese_dragon
+x 12
+y 5
+end
 arch woodfloor
 x 12
 y 6
@@ -2100,6 +2130,10 @@ arch woodfloor
 x 14
 y 14
 end
+arch troll
+x 14
+y 14
+end
 arch woodfloor
 x 14
 y 15
@@ -2113,6 +2147,10 @@ x 14
 y 17
 end
 arch woodfloor
+x 14
+y 18
+end
+arch troll
 x 14
 y 18
 end
@@ -2276,7 +2314,7 @@ arch woodfloor
 x 16
 y 6
 end
-arch random_food_fant
+arch random_food
 x 16
 y 6
 end
@@ -2399,7 +2437,7 @@ arch woodfloor
 x 17
 y 6
 end
-arch random_food_fant
+arch random_food
 x 17
 y 6
 end
@@ -2523,7 +2561,7 @@ arch woodfloor
 x 18
 y 6
 end
-arch random_food_fant
+arch random_food
 x 18
 y 6
 end
@@ -2539,7 +2577,7 @@ arch woodfloor
 x 18
 y 8
 end
-arch random_food_fant
+arch random_food
 x 18
 y 8
 end
@@ -2547,7 +2585,7 @@ arch woodfloor
 x 18
 y 9
 end
-arch random_food_fant
+arch random_food
 x 18
 y 9
 end
@@ -2555,7 +2593,7 @@ arch woodfloor
 x 18
 y 10
 end
-arch random_food_fant
+arch random_food
 x 18
 y 10
 end
@@ -2587,7 +2625,7 @@ arch woodfloor
 x 18
 y 14
 end
-arch random_food_fant
+arch random_food
 x 18
 y 14
 end
@@ -2955,40 +2993,4 @@ end
 arch timberwall_2_2_4
 x 20
 y 20
-end
-arch dragon
-x 3
-y 4
-end
-arch dragon
-x 3
-y 5
-end
-arch dragon
-x 6
-y 4
-end
-arch dragon
-x 6
-y 5
-end
-arch dragon
-x 6
-y 6
-end
-arch giant
-x 8
-y 16
-end
-arch chinese_dragon
-x 12
-y 5
-end
-arch troll
-x 14
-y 14
-end
-arch troll
-x 14
-y 18
 end

@@ -1,13 +1,15 @@
 arch map
-region lakecountry
-name <untitled>
-msg
-Creator: Kundi, Xue
-Email: xkd@soda.csua.berkeley.edu
-Date: Tue Mar 28 22:12:29 1995
-endmsg
+name Fortress of Lord Butakis Prison, Entrance
+difficulty 25
+region butakisfortress
 width 24
 height 24
+enter_x 11
+enter_y 22
+msg
+Created:  1995-03-28 Kundi, Xue (xkd@soda.csua.berkeley.edu)
+Modified: 2008-12-13 Rick Tanner
+endmsg
 end
 arch dungeon_floor
 end
@@ -162,9 +164,9 @@ x 1
 y 1
 end
 arch pirate_lass
-unaggressive 1
 x 1
 y 1
+unaggressive 1
 end
 arch dungeon_floor
 x 1
@@ -183,9 +185,9 @@ x 1
 y 4
 end
 arch pirate_lass
-unaggressive 1
 x 1
 y 4
+unaggressive 1
 end
 arch dungeon_floor
 x 1
@@ -204,9 +206,9 @@ x 1
 y 7
 end
 arch pirate
-unaggressive 1
 x 1
 y 7
+unaggressive 1
 end
 arch dungeon_floor
 x 1
@@ -225,9 +227,9 @@ x 1
 y 10
 end
 arch pirate
-unaggressive 1
 x 1
 y 10
+unaggressive 1
 end
 arch dungeon_floor
 x 1
@@ -246,9 +248,9 @@ x 1
 y 13
 end
 arch madman
-unaggressive 1
 x 1
 y 13
+unaggressive 1
 end
 arch dungeon_floor
 x 1
@@ -878,10 +880,10 @@ y 1
 end
 arch grate_closed_2
 name grate to cell6
-speed 0.500000
-connected 6
 x 6
 y 1
+speed 0.500000
+connected 6
 end
 arch dungeon_floor
 x 6
@@ -905,10 +907,10 @@ y 4
 end
 arch grate_closed_2
 name grate to cell5
-speed 0.500000
-connected 5
 x 6
 y 4
+speed 0.500000
+connected 5
 end
 arch dungeon_floor
 x 6
@@ -932,10 +934,10 @@ y 7
 end
 arch grate_closed_2
 name grate to cell4
-speed 0.500000
-connected 4
 x 6
 y 7
+speed 0.500000
+connected 4
 end
 arch dungeon_floor
 x 6
@@ -959,10 +961,10 @@ y 10
 end
 arch grate_closed_2
 name grate to cell3
-speed 0.500000
-connected 3
 x 6
 y 10
+speed 0.500000
+connected 3
 end
 arch dungeon_floor
 x 6
@@ -986,10 +988,10 @@ y 13
 end
 arch grate_closed_2
 name grate to cell2
-speed 0.500000
-connected 2
 x 6
 y 13
+speed 0.500000
+connected 2
 end
 arch dungeon_floor
 x 6
@@ -1013,10 +1015,10 @@ y 16
 end
 arch grate_closed_2
 name grate to cell1
-speed 0.500000
-connected 1
 x 6
 y 16
+speed 0.500000
+connected 1
 end
 arch dungeon_floor
 x 6
@@ -1082,9 +1084,9 @@ y 2
 end
 arch button_handle
 name handle to cell6
-connected 6
 x 7
 y 2
+connected 6
 end
 arch dungeon_floor
 x 7
@@ -1104,9 +1106,9 @@ y 5
 end
 arch button_handle
 name handle to cell5
-connected 5
 x 7
 y 5
+connected 5
 end
 arch dungeon_floor
 x 7
@@ -1126,9 +1128,9 @@ y 8
 end
 arch button_handle
 name handle to cell4
-connected 4
 x 7
 y 8
+connected 4
 end
 arch dungeon_floor
 x 7
@@ -1148,9 +1150,9 @@ y 11
 end
 arch button_handle
 name handle to cell3
-connected 3
 x 7
 y 11
+connected 3
 end
 arch dungeon_floor
 x 7
@@ -1170,9 +1172,9 @@ y 14
 end
 arch button_handle
 name handle to cell2
-connected 2
 x 7
 y 14
+connected 2
 end
 arch dungeon_floor
 x 7
@@ -1192,9 +1194,9 @@ y 17
 end
 arch button_handle
 name handle to cell1
+x 7
+y 17
 connected 1
-x 7
-y 17
 end
 arch dungeon_floor
 x 7
@@ -1444,7 +1446,7 @@ arch dungeon_floor
 x 9
 y 21
 end
-arch cave_0
+arch dun18
 x 9
 y 21
 end
@@ -2026,7 +2028,7 @@ arch dungeon_floor
 x 14
 y 21
 end
-arch cave_0
+arch dun18
 x 14
 y 21
 end
@@ -2172,9 +2174,9 @@ y 2
 end
 arch button_handle
 name handle to cell7
-connected 7
 x 16
 y 2
+connected 7
 end
 arch dungeon_floor
 x 16
@@ -2194,9 +2196,9 @@ y 5
 end
 arch button_handle
 name handle to cell8
-connected 8
 x 16
 y 5
+connected 8
 end
 arch dungeon_floor
 x 16
@@ -2216,9 +2218,9 @@ y 8
 end
 arch button_handle
 name handle to cell9
-connected 9
 x 16
 y 8
+connected 9
 end
 arch dungeon_floor
 x 16
@@ -2238,9 +2240,9 @@ y 11
 end
 arch button_handle
 name handle to cell10
-connected 10
 x 16
 y 11
+connected 10
 end
 arch dungeon_floor
 x 16
@@ -2260,9 +2262,9 @@ y 14
 end
 arch button_handle
 name handle to cell11
-connected 11
 x 16
 y 14
+connected 11
 end
 arch dungeon_floor
 x 16
@@ -2282,9 +2284,9 @@ y 17
 end
 arch button_handle
 name handle to cell12
-connected 12
 x 16
 y 17
+connected 12
 end
 arch dungeon_floor
 x 16
@@ -2338,10 +2340,10 @@ y 1
 end
 arch grate_closed_2
 name grate to cell7
-speed 0.500000
-connected 7
 x 17
 y 1
+speed 0.500000
+connected 7
 end
 arch dungeon_floor
 x 17
@@ -2365,10 +2367,10 @@ y 4
 end
 arch grate_closed_2
 name grate to cell8
-speed 0.500000
-connected 8
 x 17
 y 4
+speed 0.500000
+connected 8
 end
 arch dungeon_floor
 x 17
@@ -2392,10 +2394,10 @@ y 7
 end
 arch grate_closed_2
 name grate to cell9
-speed 0.500000
-connected 9
 x 17
 y 7
+speed 0.500000
+connected 9
 end
 arch dungeon_floor
 x 17
@@ -2419,10 +2421,10 @@ y 10
 end
 arch grate_closed_2
 name grate to cell10
-speed 0.500000
-connected 10
 x 17
 y 10
+speed 0.500000
+connected 10
 end
 arch dungeon_floor
 x 17
@@ -2446,10 +2448,10 @@ y 13
 end
 arch grate_closed_2
 name grate to cell11
-speed 0.500000
-connected 11
 x 17
 y 13
+speed 0.500000
+connected 11
 end
 arch dungeon_floor
 x 17
@@ -2473,10 +2475,10 @@ y 16
 end
 arch grate_closed_2
 name grate to cell12
-speed 0.500000
-connected 12
 x 17
 y 16
+speed 0.500000
+connected 12
 end
 arch dungeon_floor
 x 17
@@ -3105,9 +3107,9 @@ x 22
 y 5
 end
 arch raas
-unaggressive 1
 x 22
 y 5
+unaggressive 1
 end
 arch dungeon_floor
 x 22
@@ -3126,9 +3128,9 @@ x 22
 y 8
 end
 arch raas
-unaggressive 1
 x 22
 y 8
+unaggressive 1
 end
 arch dungeon_floor
 x 22
@@ -3147,9 +3149,9 @@ x 22
 y 11
 end
 arch madman
-unaggressive 1
 x 22
 y 11
+unaggressive 1
 end
 arch dungeon_floor
 x 22
@@ -3168,9 +3170,9 @@ x 22
 y 14
 end
 arch madman
-unaggressive 1
 x 22
 y 14
+unaggressive 1
 end
 arch dungeon_floor
 x 22
@@ -3189,9 +3191,9 @@ x 22
 y 17
 end
 arch ogre
-unaggressive 1
 x 22
 y 17
+unaggressive 1
 end
 arch dungeon_floor
 x 22

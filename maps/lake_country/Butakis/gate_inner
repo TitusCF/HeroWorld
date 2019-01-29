@@ -1,12 +1,15 @@
 arch map
-region lakecountry
-name gate_inner
+name Fortress of Lord Butakis, Inner Gate
+difficulty 20
+region butakisfortress
+width 16
+height 17
+enter_x 7
+enter_y 1
 msg
-Creator: Kundi, Xue
-Email: xkd@soda.csua.berkeley.edu
-Date: Tue Mar 28 13:48:24 1995
+Created:  1995-03-28 Kundi, Xue (xkd@soda.csua.berkeley.edu)
+Modified: 2012-02-06 Rick Tanner
 endmsg
-y 17
 end
 arch marble
 end
@@ -131,6 +134,8 @@ end
 arch lightningwall_3
 x 1
 y 4
+arch spell_sm_lightning
+end
 end
 arch cobblestones
 x 1
@@ -139,6 +144,8 @@ end
 arch lightningwall_3
 x 1
 y 5
+arch spell_sm_lightning
+end
 end
 arch cobblestones
 x 1
@@ -147,6 +154,8 @@ end
 arch lightningwall_3
 x 1
 y 6
+arch spell_sm_lightning
+end
 end
 arch cobblestones
 x 1
@@ -155,6 +164,8 @@ end
 arch lightningwall_3
 x 1
 y 7
+arch spell_sm_lightning
+end
 end
 arch cobblestones
 x 1
@@ -163,6 +174,8 @@ end
 arch lightningwall_3
 x 1
 y 8
+arch spell_sm_lightning
+end
 end
 arch cobblestones
 x 1
@@ -171,6 +184,8 @@ end
 arch firewall_3
 x 1
 y 9
+arch spell_small_fireball
+end
 end
 arch cobblestones
 x 1
@@ -179,6 +194,8 @@ end
 arch firewall_3
 x 1
 y 10
+arch spell_small_fireball
+end
 end
 arch cobblestones
 x 1
@@ -187,6 +204,8 @@ end
 arch firewall_3
 x 1
 y 11
+arch spell_small_fireball
+end
 end
 arch cobblestones
 x 1
@@ -195,6 +214,8 @@ end
 arch firewall_3
 x 1
 y 12
+arch spell_small_fireball
+end
 end
 arch cobblestones
 x 1
@@ -203,6 +224,8 @@ end
 arch firewall_3
 x 1
 y 13
+arch spell_small_fireball
+end
 end
 arch marble
 x 1
@@ -217,6 +240,9 @@ x 1
 y 15
 end
 arch teleporter
+slaying mockers/mainfloor
+hp 15
+sp 28
 x 1
 y 15
 end
@@ -467,10 +493,7 @@ connected 6
 end
 arch magic_mouth
 msg
-You enter a dark room hidden from the
-guards view. It must have been used by
-some kind of spy to steal in and out of
-the inner city
+You enter a dark room hidden from the guards view.  It must have been used by some kind of spy to steal in and out of the inner city
 endmsg
 x 3
 y 15
@@ -501,7 +524,7 @@ arch marble
 x 4
 y 1
 end
-arch dwall3_3
+arch dwall_3_3
 x 4
 y 1
 end
@@ -710,7 +733,7 @@ end
 arch dwall_3_4
 x 5
 y 15
-no_pass 0
+move_block 0
 end
 arch marble
 x 5
@@ -825,18 +848,31 @@ y 15
 invisible 1
 connected 9
 end
-arch cobblestones
-x 6
-y 15
-end
 arch magic_ear
 msg
-@match Aoi
+@match nd a good time will be had by all
 endmsg
 x 6
 y 15
 connected 6
 end
+arch magic_mouth
+msg
+A voice whispers to you, "There's a party at Mother's."
+endmsg
+x 6
+y 15
+connected 7
+end
+arch button_trigger
+x 6
+y 15
+connected 7
+end
+arch cobblestones
+x 6
+y 15
+end
 arch exit
 name inner city  gate house
 slaying Butakis0
@@ -901,9 +937,7 @@ y 6
 end
 arch magic_mouth
 msg
-"What's your business to the inner
-royal city?" the High Royal Guard
-asks
+"What's your business to the inner royal city?" the High Royal Guard asks.
 endmsg
 x 7
 y 7
@@ -916,8 +950,7 @@ arch magic_ear
 name ear1
 msg
 @match books|book|read|information
-"Okay, you may enter." the High Royal
-Guard says.
+"Okay, you may enter." the High Royal Guard says.
 endmsg
 x 7
 y 8
@@ -926,9 +959,7 @@ end
 arch magic_ear
 msg
 @match treasure|steal|kill|root
-"How dare you!!! Guards!! Terminate
-this brute right here!". the High Royal
-Guard yells.
+"How dare you!!! Guards!! Terminate this brute right here!" the High Royal Guard yells.
 endmsg
 x 7
 y 8
@@ -937,8 +968,7 @@ end
 arch magic_ear
 msg
 @match knowledge|prince|princess|queen|king
-"Okay, the gates will be opened for
-you." the High Royal Guard says.
+"Okay, the gates will be opened for you." the High Royal Guard says.
 endmsg
 x 7
 y 8
@@ -947,9 +977,7 @@ end
 arch magic_ear
 msg
 @match worsh|church|library|god|hearing
-"Okay, you are granted permission to 
-enter the inner city." the High Royal
-Guard says.
+"Okay, you are granted permission to enter the inner city." the High Royal Guard says.
 endmsg
 x 7
 y 8
@@ -965,8 +993,7 @@ msg
 @match worsh|church|library|god|hearing
 "Okay, you may enter."
 @match *
-"Citizens without proper reasons are not
-welcome to the inner royal city.".
+"Citizens without proper reasons are not welcome to the inner royal city."
 endmsg
 face knight.111
 x 7
@@ -1087,9 +1114,7 @@ y 6
 end
 arch magic_mouth
 msg
-"What's your business to the inner
-royal city?" the High Royal Guard
-asks
+"What's your business to the inner royal city?" the High Royal Guard asks.
 endmsg
 x 8
 y 7
@@ -1102,8 +1127,7 @@ arch magic_ear
 name ear1
 msg
 @match books|book|read|information
-"Okay, you may enter." the High Royal
-Guard says.
+"Okay, you may enter." the High Royal Guard says.
 endmsg
 x 8
 y 8
@@ -1112,9 +1136,7 @@ end
 arch magic_ear
 msg
 @match treasure|steal|kill|root
-"How dare you!!! Guards!! Terminate
-this brute right here!". the High Royal
-Guard yells.
+"How dare you!!! Guards!! Terminate this brute right here!" the High Royal Guard yells.
 endmsg
 x 8
 y 8
@@ -1123,8 +1145,7 @@ end
 arch magic_ear
 msg
 @match knowledge|prince|princess|queen|king
-"Okay, the gates will be opened for
-you." the High Royal Guard says.
+"Okay, the gates will be opened for you." the High Royal Guard says.
 endmsg
 x 8
 y 8
@@ -1133,9 +1154,7 @@ end
 arch magic_ear
 msg
 @match worsh|church|library|god|hearing
-"Okay, you are granted permission to 
-enter the inner city." the High Royal
-Guard says.
+"Okay, you are granted permission to enter the inner city." the High Royal Guard says.
 endmsg
 x 8
 y 8
@@ -1151,8 +1170,7 @@ msg
 @match worsh|church|library|god|hearing
 "Okay, you may enter."
 @match *
-"Citizens without proper reasons are not
-welcome to the inner royal city.".
+"Citizens without proper reasons are not welcome to the inner royal city."
 endmsg
 face knight.111
 x 8
@@ -1470,7 +1488,7 @@ arch marble
 x 11
 y 1
 end
-arch dwall3_3
+arch dwall_3_3
 x 11
 y 1
 end
@@ -1843,6 +1861,8 @@ end
 arch lightningwall_7
 x 14
 y 4
+arch spell_sm_lightning
+end
 end
 arch cobblestones
 x 14
@@ -1851,6 +1871,8 @@ end
 arch lightningwall_7
 x 14
 y 5
+arch spell_sm_lightning
+end
 end
 arch cobblestones
 x 14
@@ -1859,6 +1881,8 @@ end
 arch lightningwall_7
 x 14
 y 6
+arch spell_sm_lightning
+end
 end
 arch cobblestones
 x 14
@@ -1867,6 +1891,8 @@ end
 arch lightningwall_7
 x 14
 y 7
+arch spell_sm_lightning
+end
 end
 arch cobblestones
 x 14
@@ -1875,6 +1901,8 @@ end
 arch lightningwall_7
 x 14
 y 8
+arch spell_sm_lightning
+end
 end
 arch cobblestones
 x 14
@@ -1883,6 +1911,8 @@ end
 arch firewall_7
 x 14
 y 9
+arch spell_small_fireball
+end
 end
 arch cobblestones
 x 14
@@ -1891,6 +1921,8 @@ end
 arch firewall_7
 x 14
 y 10
+arch spell_small_fireball
+end
 end
 arch cobblestones
 x 14
@@ -1899,6 +1931,8 @@ end
 arch firewall_7
 x 14
 y 11
+arch spell_small_fireball
+end
 end
 arch cobblestones
 x 14
@@ -1907,6 +1941,8 @@ end
 arch firewall_7
 x 14
 y 12
+arch spell_small_fireball
+end
 end
 arch cobblestones
 x 14
@@ -1915,12 +1951,14 @@ end
 arch firewall_7
 x 14
 y 13
+arch spell_small_fireball
+end
 end
 arch marble
 x 14
 y 14
 end
-arch dwall3_3
+arch dwall_3_3
 x 14
 y 14
 end

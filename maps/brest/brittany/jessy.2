@@ -1,13 +1,15 @@
 arch map
+name Jessy Castle, Level 2
+difficulty 35
 region brest
-name jessy
+width 25
+height 28
+enter_x 12
+enter_y 1
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Mon Jul 25 18:30:45 1994
+Created:  1994-02-25
+Modified: 2012-01-26 Rick Tanner
 endmsg
-x 25
-y 28
 end
 arch woodfloor
 end
@@ -196,7 +198,7 @@ arch woodfloor
 x 1
 y 2
 end
-arch random_food_fant
+arch random_food
 x 1
 y 2
 end
@@ -332,7 +334,7 @@ arch woodfloor
 x 1
 y 24
 end
-arch random_food_fant
+arch random_food
 x 1
 y 24
 end
@@ -370,7 +372,7 @@ arch woodfloor
 x 2
 y 1
 end
-arch random_food_fant
+arch random_food
 x 2
 y 1
 end
@@ -378,7 +380,7 @@ arch woodfloor
 x 2
 y 2
 end
-arch random_food_fant
+arch random_food
 x 2
 y 2
 end
@@ -498,6 +500,10 @@ arch woodfloor
 x 2
 y 21
 end
+arch big_dragon
+x 2
+y 21
+end
 arch woodfloor
 x 2
 y 22
@@ -514,7 +520,7 @@ arch woodfloor
 x 2
 y 24
 end
-arch random_food_fant
+arch random_food
 x 2
 y 24
 end
@@ -696,7 +702,7 @@ arch woodfloor
 x 3
 y 24
 end
-arch random_food_fant
+arch random_food
 x 3
 y 24
 end
@@ -878,7 +884,7 @@ arch woodfloor
 x 4
 y 24
 end
-arch random_food_fant
+arch random_food
 x 4
 y 24
 end
@@ -1234,6 +1240,10 @@ arch woodfloor
 x 6
 y 20
 end
+arch behemoth
+x 6
+y 20
+end
 arch woodfloor
 x 6
 y 21
@@ -1242,11 +1252,19 @@ arch woodfloor
 x 6
 y 22
 end
+arch behemoth
+x 6
+y 22
+end
 arch woodfloor
 x 6
 y 23
 end
 arch woodfloor
+x 6
+y 24
+end
+arch behemoth
 x 6
 y 24
 end
@@ -1590,11 +1608,19 @@ arch woodfloor
 x 8
 y 20
 end
+arch behemoth
+x 8
+y 20
+end
 arch woodfloor
 x 8
 y 21
 end
 arch woodfloor
+x 8
+y 22
+end
+arch behemoth
 x 8
 y 22
 end
@@ -1614,6 +1640,10 @@ arch woodfloor
 x 8
 y 25
 end
+arch behemoth
+x 8
+y 25
+end
 arch woodfloor
 x 8
 y 26
@@ -1629,7 +1659,10 @@ end
 arch woodfloor
 x 9
 end
-arch cwall_3_3
+arch cwall_2_1_2
+x 9
+end
+arch cwall_0
 x 9
 end
 arch woodfloor
@@ -1644,7 +1677,7 @@ arch woodfloor
 x 9
 y 2
 end
-arch cwall_3_2
+arch cwall_2_2_2
 x 9
 y 2
 end
@@ -1863,20 +1896,11 @@ arch book_read
 name Card to the hole
 slaying bookhole
 msg
-This is the pass to
-the little hole in the
-forest near 
-Douarnenez.
- This is where Jessy
-has hidden his treasure
-and his pet....
+This is the pass to the little hole in the forest near Douarnenez.   This is where Jessy has hidden his treasure and his pet....
 endmsg
 x 10
 y 3
-type 8
 material 4
-value 13
-weight 3000
 end
 arch bat
 x 10
@@ -2014,6 +2038,10 @@ arch woodfloor
 x 10
 y 20
 end
+arch giant
+x 10
+y 20
+end
 arch woodfloor
 x 10
 y 21
@@ -2069,7 +2097,10 @@ end
 arch woodfloor
 x 11
 end
-arch cwall_3_3
+arch cwall_2_1_2
+x 11
+end
+arch cwall_0
 x 11
 end
 arch woodfloor
@@ -2084,7 +2115,7 @@ arch woodfloor
 x 11
 y 2
 end
-arch cwall_3_4
+arch cwall_2_2_3
 x 11
 y 2
 end
@@ -2943,6 +2974,10 @@ arch woodfloor
 x 15
 y 1
 end
+arch troll
+x 15
+y 1
+end
 arch woodfloor
 x 15
 y 2
@@ -3055,6 +3090,10 @@ arch woodfloor
 x 15
 y 20
 end
+arch dread
+x 15
+y 20
+end
 arch woodfloor
 x 15
 y 21
@@ -3071,7 +3110,15 @@ arch woodfloor
 x 15
 y 23
 end
+arch dragon
+x 15
+y 23
+end
 arch woodfloor
+x 15
+y 24
+end
+arch dragon
 x 15
 y 24
 end
@@ -3268,6 +3315,10 @@ arch cwall_2_1_2
 x 17
 end
 arch woodfloor
+x 17
+y 1
+end
+arch troll
 x 17
 y 1
 end
@@ -3648,6 +3699,10 @@ arch cwall_2_1_2
 x 19
 end
 arch woodfloor
+x 19
+y 1
+end
+arch troll
 x 19
 y 1
 end
@@ -4051,7 +4106,7 @@ arch woodfloor
 x 21
 y 3
 end
-arch cwall_3_1
+arch cwall_2_2_4
 x 21
 y 3
 end
@@ -4234,6 +4289,10 @@ arch cwall_2_1_2
 x 22
 end
 arch woodfloor
+x 22
+y 1
+end
+arch dread
 x 22
 y 1
 end
@@ -4645,7 +4704,11 @@ arch woodfloor
 x 24
 y 3
 end
-arch cwall_3_4
+arch cwall_2_1_1
+x 24
+y 3
+end
+arch cwall_0
 x 24
 y 3
 end
@@ -4840,64 +4903,4 @@ end
 arch cwall_2_2_4
 x 24
 y 27
-end
-arch big_dragon
-x 2
-y 21
-end
-arch behemoth
-x 6
-y 20
-end
-arch behemoth
-x 6
-y 22
-end
-arch behemoth
-x 6
-y 24
-end
-arch behemoth
-x 8
-y 20
-end
-arch behemoth
-x 8
-y 22
-end
-arch behemoth
-x 8
-y 25
-end
-arch giant
-x 10
-y 20
-end
-arch troll
-x 15
-y 1
-end
-arch dread
-x 15
-y 20
-end
-arch dragon
-x 15
-y 23
-end
-arch dragon
-x 15
-y 24
-end
-arch troll
-x 17
-y 1
-end
-arch troll
-x 19
-y 1
-end
-arch dread
-x 22
-y 1
 end

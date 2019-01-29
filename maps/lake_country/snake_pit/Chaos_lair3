@@ -1,13 +1,16 @@
 arch map
+name Chaos Lair, Antechamber
+difficulty 90
 region lakecountry
-name Chaos_lair3
+darkness 5
+width 16
+height 41
+enter_x 7
+enter_y 35
 msg
-Creator: Kundi, Xue
-Email: xkd@soda.berkeley.edu
-Date: Tue Jun  6 14:45:11 1995
+Created:  1995-06-06 Kundi, Xue (xkd@soda.berkeley.edu)
+Modified: 2012-02-10 Rick Tanner
 endmsg
-y 41
-invisible 5
 end
 arch large_stones
 end
@@ -25,9 +28,7 @@ end
 arch cave23
 y 2
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 3
 end
 arch small_stones
@@ -186,20 +187,22 @@ end
 arch cave3
 y 29
 end
+arch medium_stones
+y 30
+end
 arch cave3
 y 30
+end
+arch medium_stones
+y 31
 end
 arch cave23
 y 31
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 32
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 33
 end
 arch large_stones
@@ -247,9 +250,7 @@ arch cave2
 x 1
 y 2
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 3
 end
@@ -287,17 +288,21 @@ sp 500
 maxsp 500
 exp 1000000
 dam 60
-ac -15
+ac -8
 x 1
 y 7
-speed 0.800000
-speed_left -4.700000
+speed 0.8
 level 60
-immune 4421
-protected 9
-material 64
+resist_physical 100
+resist_electricity 30
+resist_cold 0
+resist_acid 100
+resist_weaponmagic 100
+resist_paralyze 100
+resist_fear 0
+resist_blind 0
 carrying 5100
-flying 1
+move_type walk fly_low
 arch pyro_book
 value 1600
 randomitems none
@@ -323,11 +328,10 @@ x 1
 y 9
 end
 arch locked_door1
-name permenent ice
+name permanent ice
 slaying celestial
 msg
-You can't seem to be able to force
-yourself through this permenent ice.
+You can't seem to be able to force yourself through this permanent ice.
 endmsg
 face icecube.111
 x 1
@@ -597,16 +601,15 @@ arch bracers_dex
 name Essence of Flame
 name_pl Essences of Flame
 msg
-   It's said to be from the spirit of an
-   efreet. It burns with red hot fury.
+It's said to be from the spirit of an efreet.  It burns with red hot fury.
 endmsg
 face burnout.111
 Cha 1
 dam 5
 x 1
 y 17
-protected 4
 attacktype 5
+resist_fire 30
 path_attuned 2
 path_denied 4
 end
@@ -660,17 +663,17 @@ sp 500
 maxsp 500
 exp 1000000
 dam 50
-ac -15
+ac -8
 x 1
 y 23
-speed 0.600000
-speed_left -11.099999
+speed 0.6
 level 40
-immune 4357
-protected 9
-material 64
+resist_physical 100
+resist_electricity 30
+resist_weaponmagic 100
+resist_paralyze 100
 carrying 5000
-flying 1
+move_type walk fly_low
 arch pyro_book
 value 1600
 randomitems none
@@ -714,19 +717,19 @@ arch large_stones
 x 1
 y 30
 end
+arch medium_stones
+x 1
+y 31
+end
 arch cave2
 x 1
 y 31
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 32
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 33
 end
@@ -816,6 +819,14 @@ end
 arch small_stones
 x 2
 y 6
+end
+arch pentagram_111
+hp 14
+sp 14
+x 2
+y 6
+invisible 1
+connected 2
 end
 arch small_stones
 x 2
@@ -1037,31 +1048,27 @@ arch cave1
 x 2
 y 30
 end
+arch medium_stones
+x 2
+y 31
+end
 arch cave22
 x 2
 y 31
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 32
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 33
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 34
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 35
 end
@@ -1252,9 +1259,7 @@ arch cave22
 x 3
 y 18
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 19
 end
@@ -1311,21 +1316,15 @@ arch cave2
 x 3
 y 29
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 30
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 31
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 32
 end
@@ -1400,17 +1399,17 @@ arch cave23
 x 4
 y 3
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 4
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 5
+end
+arch medium_stones
+x 4
+y 6
 end
 arch cave4
 x 4
@@ -1448,9 +1447,7 @@ arch cave2
 x 4
 y 10
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 11
 end
@@ -1630,7 +1627,7 @@ end
 arch large_stones
 x 4
 y 37
-no_pass 1
+move_block all
 end
 arch large_stones
 x 4
@@ -1857,10 +1854,7 @@ y 35
 end
 arch magic_mouth
 msg
-  You feel the vibrating and burning
-air. Though you have experience thousands
-of battles, this feeling makes you
-suffocate in your own adrenaline.
+You feel the vibrating and burning air.  Though you have experience thousands of battles, this feeling makes you suffocate in your own adrenaline.
 endmsg
 x 5
 y 35
@@ -1887,7 +1881,7 @@ end
 arch large_stones
 x 5
 y 37
-no_pass 1
+move_block all
 end
 arch large_stones
 x 5
@@ -1915,7 +1909,7 @@ end
 arch large_stones
 x 6
 y 3
-no_pass 1
+move_block all
 end
 arch invis_exit
 slaying Chaos_lair4
@@ -1941,9 +1935,7 @@ attacktype 1
 end
 arch magic_mouth
 msg
-  You sense the Chaos Lord is very near.
-  Passing last battle make you feel very
-lucky. But how long will your luck last?
+You sense that the Chaos Lord is very near.  Victory in the last battle makes you feel very lucky.  But how long will your luck last?
 endmsg
 x 6
 y 5
@@ -2116,10 +2108,7 @@ y 34
 end
 arch magic_mouth
 msg
-  You feel the vibrating and burning
-air. Though you have experience thousands
-of battles, this feeling makes you
-suffocate in your own adrenaline.
+You feel the vibrating and burning air around you.  Though you have experienced thousands of battles, this feeling makes you suffocate in your own adrenaline.
 endmsg
 x 6
 y 34
@@ -2154,7 +2143,7 @@ end
 arch large_stones
 x 6
 y 37
-no_pass 1
+move_block all
 end
 arch large_stones
 x 6
@@ -2182,7 +2171,7 @@ end
 arch large_stones
 x 7
 y 3
-no_pass 1
+move_block all
 end
 arch invis_exit
 slaying Chaos_lair4
@@ -2208,9 +2197,7 @@ attacktype 1
 end
 arch magic_mouth
 msg
-  You sense the Chaos Lord is very near.
-  Passing last battle make you feel very
-lucky. But how long will your luck last?
+You sense that the Chaos Lord is very near.  Victory in the last battle makes you feel very lucky.  But how long will your luck last?
 endmsg
 x 7
 y 5
@@ -2234,10 +2221,11 @@ Con 20
 hp 9000
 maxhp 9000
 exp 500000
-dam 89
 x 7
 y 7
 alive 1
+arch spell_meteor_swarm
+end
 end
 arch large_stones
 x 7
@@ -2418,10 +2406,7 @@ y 35
 end
 arch magic_mouth
 msg
-  You feel the vibrating and burning
-air. Though you have experience thousands
-of battles, this feeling makes you
-suffocate in your own adrenaline.
+You feel the vibrating and burning air.  Though you have experience thousands of battles, this feeling makes you suffocate in your own adrenaline.
 endmsg
 x 7
 y 35
@@ -2448,7 +2433,7 @@ end
 arch large_stones
 x 7
 y 37
-no_pass 1
+move_block all
 end
 arch large_stones
 x 7
@@ -2476,7 +2461,7 @@ end
 arch large_stones
 x 8
 y 3
-no_pass 1
+move_block all
 end
 arch invis_exit
 slaying Chaos_lair4
@@ -2502,9 +2487,7 @@ attacktype 1
 end
 arch magic_mouth
 msg
-  You sense the Chaos Lord is very near.
-  Passing last battle make you feel very
-lucky. But how long will your luck last?
+You sense that the Chaos Lord is very near.  Victory in the last battle makes you feel very lucky.  But how long will your luck last?
 endmsg
 x 8
 y 5
@@ -2677,10 +2660,7 @@ y 34
 end
 arch magic_mouth
 msg
-  You feel the vibrating and burning
-air. Though you have experience thousands
-of battles, this feeling makes you
-suffocate in your own adrenaline.
+You feel the vibrating and burning air around you.  Though you have experienced thousands of battles, this feeling makes you suffocate in your own adrenaline.
 endmsg
 x 8
 y 34
@@ -2715,7 +2695,7 @@ end
 arch large_stones
 x 8
 y 37
-no_pass 1
+move_block all
 end
 arch large_stones
 x 8
@@ -2743,7 +2723,7 @@ end
 arch large_stones
 x 9
 y 3
-no_pass 1
+move_block all
 end
 arch invis_exit
 slaying Chaos_lair4
@@ -2769,9 +2749,7 @@ attacktype 1
 end
 arch magic_mouth
 msg
-  You sense the Chaos Lord is very near.
-  Passing last battle make you feel very
-lucky. But how long will your luck last?
+You sense that the Chaos Lord is very near.  Victory in the last battle makes you feel very lucky.  But how long will your luck last?
 endmsg
 x 9
 y 5
@@ -2970,10 +2948,7 @@ y 35
 end
 arch magic_mouth
 msg
-  You feel the vibrating and burning
-air. Though you have experience thousands
-of battles, this feeling makes you
-suffocate in your own adrenaline.
+You feel the vibrating and burning air.  Though you have experience thousands of battles, this feeling makes you suffocate in your own adrenaline.
 endmsg
 x 9
 y 35
@@ -3000,7 +2975,7 @@ end
 arch large_stones
 x 9
 y 37
-no_pass 1
+move_block all
 end
 arch large_stones
 x 9
@@ -3121,6 +3096,10 @@ arch cave1
 x 10
 y 14
 end
+arch medium_stones
+x 10
+y 15
+end
 arch cave22
 x 10
 y 15
@@ -3248,10 +3227,7 @@ y 34
 end
 arch magic_mouth
 msg
-  You feel the vibrating and burning
-air. Though you have experience thousands
-of battles, this feeling makes you
-suffocate in your own adrenaline.
+You feel the vibrating and burning air around you.  Though you have experienced thousands of battles, this feeling makes you suffocate in your own adrenaline.
 endmsg
 x 10
 y 34
@@ -3286,7 +3262,7 @@ end
 arch large_stones
 x 10
 y 37
-no_pass 1
+move_block all
 end
 arch large_stones
 x 10
@@ -3323,21 +3299,15 @@ arch cave22
 x 11
 y 3
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 11
 y 4
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 11
 y 5
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 11
 y 6
 end
@@ -3389,39 +3359,27 @@ arch cave22
 x 11
 y 12
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 11
 y 13
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 11
 y 14
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 11
 y 15
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 11
 y 16
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 11
 y 17
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 11
 y 18
 end
@@ -3545,7 +3503,7 @@ end
 arch large_stones
 x 11
 y 37
-no_pass 1
+move_block all
 end
 arch large_stones
 x 11
@@ -3574,87 +3532,59 @@ arch cave2
 x 12
 y 2
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 12
 y 3
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 12
 y 4
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 12
 y 5
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 12
 y 6
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 12
 y 7
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 12
 y 8
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 12
 y 9
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 12
 y 10
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 12
 y 11
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 12
 y 12
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 12
 y 13
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 12
 y 14
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 12
 y 15
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 12
 y 16
 end
@@ -3696,17 +3626,17 @@ sp 500
 maxsp 500
 exp 1000000
 dam 50
-ac -15
+ac -8
 x 12
 y 20
-speed 0.600000
-speed_left -11.099999
+speed 0.6
 level 40
-immune 4357
-protected 9
-material 64
+resist_physical 100
+resist_electricity 30
+resist_weaponmagic 100
+resist_paralyze 100
 carrying 5000
-flying 1
+move_type walk fly_low
 arch pyro_book
 value 1600
 randomitems none
@@ -3766,17 +3696,23 @@ arch cave2
 x 12
 y 29
 end
+arch medium_stones
+x 12
+y 30
+end
 arch cave24
 x 12
 y 30
+end
+arch medium_stones
+x 12
+y 31
 end
 arch cave23
 x 12
 y 31
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 12
 y 32
 end
@@ -3815,7 +3751,7 @@ end
 arch large_stones
 x 12
 y 37
-no_pass 1
+move_block all
 end
 arch large_stones
 x 12
@@ -3852,63 +3788,43 @@ arch cave23
 x 13
 y 3
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 13
 y 4
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 13
 y 5
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 13
 y 6
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 13
 y 7
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 13
 y 8
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 13
 y 9
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 13
 y 10
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 13
 y 11
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 13
 y 12
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 13
 y 16
 end
@@ -4001,31 +3917,27 @@ arch cave9
 x 13
 y 30
 end
+arch medium_stones
+x 13
+y 31
+end
 arch cave2
 x 13
 y 31
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 13
 y 32
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 13
 y 33
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 13
 y 34
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 13
 y 35
 end
@@ -4076,33 +3988,23 @@ arch cave22
 x 14
 y 3
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 14
 y 4
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 14
 y 5
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 14
 y 6
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 14
 y 7
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 14
 y 8
 end
@@ -4122,44 +4024,30 @@ x 14
 y 10
 connected 2
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 14
 y 11
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 14
 y 12
 end
 arch sign
 msg
-Place where the pillars get teleported.
-The pillars that are teleported need to
-be on top. I put them at the bottom of
-the file to be safe. Same with walls in
-Chaos_lair4.
+Place where the pillars get teleported.  The pillars that are teleported need to be on top.  I put them at the bottom of the file to be safe.  Same with walls in Chaos_lair4.
 endmsg
 x 14
 y 14
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 14
 y 16
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 14
 y 17
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 14
 y 18
 end
@@ -4231,19 +4119,19 @@ arch large_stones
 x 14
 y 30
 end
+arch medium_stones
+x 14
+y 31
+end
 arch cave2
 x 14
 y 31
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 14
 y 32
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 14
 y 33
 end
@@ -4309,76 +4197,54 @@ arch cave22
 x 15
 y 2
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 15
 y 3
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 15
 y 4
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 15
 y 5
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 15
 y 6
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 15
 y 7
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 15
 y 8
 end
 arch sign
 msg
-One third chance the altar is activate
+One third chance the altar is activate.
 endmsg
 x 15
 y 10
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 15
 y 11
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 15
 y 12
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 15
 y 16
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 15
 y 17
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 15
 y 18
 end
@@ -4470,23 +4336,27 @@ arch cave1
 x 15
 y 29
 end
+arch medium_stones
+x 15
+y 30
+end
 arch cave1
 x 15
 y 30
+end
+arch medium_stones
+x 15
+y 31
 end
 arch cave22
 x 15
 y 31
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 15
 y 32
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 15
 y 33
 end
@@ -4529,12 +4399,4 @@ end
 arch large_stones
 x 15
 y 40
-end
-arch pentagram_111
-hp 14
-sp 14
-x 2
-y 6
-invisible 1
-connected 2
 end

@@ -1,17 +1,16 @@
 arch map
-region lakecountry
-name Chaos_lair2
+name Chaos Lair, Passageway
 reset_timeout 7200
-difficulty 16
+difficulty 90
+region lakecountry
 darkness 5
 width 25
 height 41
-enter_x 1
-enter_y 1
+enter_x 12
+enter_y 35
 msg
-Creator: Kundi, Xue
-Email: xkd@soda.berkeley.edu
-Date: Sun Jun  4 17:33:01 1995
+Created:  1995-06-04 Kundi, Xue (xkd@soda.berkeley.edu)
+Modified: 2012-02-10 Rick Tanner
 endmsg
 end
 arch pentagram_111
@@ -38,7 +37,7 @@ resist_electricity 30
 resist_cold 100
 resist_paralyze 100
 carrying 35000
-flying 1
+move_type walk fly_low
 arch abil_icestorm
 end
 arch spell_dragonbreath
@@ -51,29 +50,19 @@ arch gem
 nrof 700
 end
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 3
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 4
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 5
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 6
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 7
 end
 arch large_stones
@@ -94,172 +83,108 @@ end
 arch cave23
 y 10
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 11
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 12
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 13
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 14
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 15
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 16
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 17
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 18
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 19
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 20
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 21
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 22
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 23
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 24
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 25
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 26
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 27
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 28
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 29
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 30
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 31
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 32
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 33
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 34
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 36
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 37
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 38
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 39
 end
-arch blocked
+arch cave_15
 y 40
 end
 arch large_stones
 x 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 3
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 4
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 5
 end
@@ -307,111 +232,75 @@ arch cave23
 x 1
 y 11
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 12
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 13
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 14
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 15
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 16
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 17
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 18
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 19
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 20
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 21
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 22
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 23
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 24
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 25
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 26
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 27
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 28
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 29
 end
@@ -440,16 +329,7 @@ end
 arch spell_sm_lightning
 end
 end
-arch pit_closed
-hp 12
-sp 32
-x 1
-y 31
-connected 2
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 32
 end
@@ -478,16 +358,7 @@ end
 arch spell_sm_lightning
 end
 end
-arch pit_closed
-hp 11
-sp 32
-x 1
-y 34
-connected 2
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 35
 end
@@ -516,44 +387,27 @@ end
 arch spell_sm_lightning
 end
 end
-arch pit_closed
-hp 10
-sp 32
-x 1
-y 37
-connected 2
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 38
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 39
 end
-arch blocked
+arch cave_15
 x 1
 y 40
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 3
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 4
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 5
 end
@@ -575,8 +429,7 @@ face wizard.131
 hp 9000
 maxhp 9000
 exp 100000
-dam 85
-ac -15
+ac -8
 x 2
 y 7
 speed 0.070000
@@ -585,6 +438,8 @@ level 30
 resist_fire 100
 resist_electricity 100
 alive 1
+arch spell_color_spray
+end
 end
 arch large_stones
 x 2
@@ -638,186 +493,126 @@ arch cave23
 x 2
 y 14
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 15
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 16
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 17
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 18
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 19
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 20
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 21
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 22
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 23
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 24
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 25
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 26
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 27
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 28
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 29
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 30
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 31
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 32
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 33
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 34
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 36
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 37
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 38
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 39
 end
-arch blocked
+arch cave_15
 x 2
 y 40
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 2
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 3
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 4
 end
@@ -891,23 +686,17 @@ resist_electricity 30
 resist_cold 30
 resist_paralyze 100
 carrying 35000
-flying 1
+move_type walk fly_low
 arch gem
 nrof 600
-end
-arch sorcerer_book
-name stones
-face largestone.111
-no_pick 1
-randomitems none
-arch spell_color_spray
-end
 end
 arch spell_sm_lightning
 end
 arch abil_icestorm
 end
 arch spell_mass_confusion
+end
+arch spell_color_spray
 end
 end
 arch large_stones
@@ -926,174 +715,118 @@ arch cave22
 x 3
 y 14
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 15
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 16
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 17
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 18
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 19
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 20
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 21
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 22
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 23
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 24
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 25
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 26
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 27
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 28
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 29
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 30
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 31
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 32
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 33
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 34
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 36
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 37
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 38
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 39
 end
-arch blocked
+arch cave_15
 x 3
 y 40
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 2
 end
@@ -1157,180 +890,122 @@ arch cave2
 x 4
 y 13
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 14
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 15
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 16
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 17
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 18
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 19
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 20
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 21
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 22
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 23
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 24
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 25
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 26
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 27
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 28
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 29
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 30
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 31
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 32
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 33
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 34
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 36
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 37
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 38
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 39
 end
-arch blocked
+arch cave_15
 x 4
 y 40
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 5
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 5
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 5
 y 2
 end
@@ -1490,92 +1165,65 @@ arch cave23
 x 5
 y 25
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 5
 y 26
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 5
 y 27
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 5
 y 28
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 5
 y 29
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 5
 y 30
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 5
 y 31
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 5
 y 32
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 5
 y 33
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 5
 y 34
 end
 arch magic_mouth
 name 2
 msg
-You broke the silence and summoned the
-guardians!
+You broke the silence and summoned the guardians!
 endmsg
 food 1
 x 5
 y 35
 connected 2
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 5
 y 36
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 5
 y 37
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 5
 y 38
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 5
 y 39
 end
@@ -1587,20 +1235,14 @@ arch cave24
 x 5
 y 40
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 6
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 6
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 6
 y 2
 end
@@ -1691,8 +1333,7 @@ face baby_drag.113
 hp 9000
 maxhp 9000
 exp 100000
-dam 58
-ac -15
+ac -8
 x 6
 y 15
 speed 0.090000
@@ -1700,6 +1341,8 @@ speed_left -5.330000
 level 30
 resist_physical 100
 alive 1
+arch spell_dragonbreath
+end
 end
 arch large_stones
 x 6
@@ -1727,8 +1370,7 @@ face baby_drag.113
 hp 9000
 maxhp 9000
 exp 100000
-dam 58
-ac -15
+ac -8
 x 6
 y 18
 speed 0.090000
@@ -1736,6 +1378,8 @@ speed_left -5.330000
 level 30
 resist_physical 100
 alive 1
+arch spell_dragonbreath
+end
 end
 arch large_stones
 x 6
@@ -1763,8 +1407,7 @@ face baby_drag.113
 hp 9000
 maxhp 9000
 exp 100000
-dam 58
-ac -15
+ac -8
 x 6
 y 21
 speed 0.090000
@@ -1772,6 +1415,8 @@ speed_left -5.330000
 level 30
 resist_physical 100
 alive 1
+arch spell_dragonbreath
+end
 end
 arch large_stones
 x 6
@@ -1799,8 +1444,7 @@ face baby_drag.113
 hp 9000
 maxhp 9000
 exp 100000
-dam 58
-ac -15
+ac -8
 x 6
 y 24
 speed 0.090000
@@ -1808,6 +1452,8 @@ speed_left -5.330000
 level 30
 resist_physical 100
 alive 1
+arch spell_dragonbreath
+end
 end
 arch large_stones
 x 6
@@ -1825,27 +1471,19 @@ arch cave23
 x 6
 y 26
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 6
 y 27
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 6
 y 28
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 6
 y 29
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 6
 y 30
 end
@@ -1873,33 +1511,23 @@ arch cave23
 x 6
 y 33
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 6
 y 34
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 6
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 6
 y 36
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 6
 y 37
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 6
 y 38
 end
@@ -1915,32 +1543,22 @@ arch cave13
 x 6
 y 40
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 7
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 7
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 7
 y 2
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 7
 y 3
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 7
 y 4
 end
@@ -2127,27 +1745,19 @@ arch cave23
 x 7
 y 34
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 7
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 7
 y 36
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 7
 y 37
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 7
 y 38
 end
@@ -2163,14 +1773,10 @@ arch cave10
 x 7
 y 40
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 8
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 8
 y 1
 end
@@ -2392,9 +1998,7 @@ arch cave23
 x 8
 y 37
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 8
 y 38
 end
@@ -2435,7 +2039,7 @@ end
 arch large_stones
 x 9
 y 3
-no_pass 1
+move_block all
 end
 arch large_stones
 x 9
@@ -2673,7 +2277,7 @@ end
 arch large_stones
 x 10
 y 3
-no_pass 1
+move_block all
 end
 arch magic_banned
 x 10
@@ -2692,8 +2296,7 @@ y 4
 end
 arch magic_mouth
 msg
-  Blasts of hot air coming from inner
-cavern. Hotter than any fire
+Blasts of hot air coming from inner cavern.  Hotter than any fire.
 endmsg
 x 10
 y 5
@@ -2863,7 +2466,7 @@ y 33
 end
 arch magic_mouth
 msg
- It's deathly quiet here.
+It's deathly quiet here.
 endmsg
 x 10
 y 34
@@ -2932,7 +2535,7 @@ end
 arch large_stones
 x 11
 y 3
-no_pass 1
+move_block all
 end
 arch magic_banned
 x 11
@@ -2951,8 +2554,7 @@ y 4
 end
 arch magic_mouth
 msg
-  Blasts of hot air coming from inner
-cavern. Hotter than any fire
+Blasts of hot air coming from inner cavern.  Hotter than any fire.
 endmsg
 x 11
 y 5
@@ -2970,8 +2572,7 @@ y 5
 end
 arch magic_mouth
 msg
-  Blasts of hot air coming from inner
-cavern. Hotter than any fire
+Blasts of hot air coming from inner cavern.  Hotter than any fire.
 endmsg
 x 11
 y 6
@@ -3152,7 +2753,7 @@ y 33
 end
 arch magic_mouth
 msg
- It's deathly quiet here.
+It's deathly quiet here.
 endmsg
 x 11
 y 34
@@ -3221,7 +2822,7 @@ end
 arch large_stones
 x 12
 y 3
-no_pass 1
+move_block all
 end
 arch magic_banned
 x 12
@@ -3436,9 +3037,7 @@ connected 1
 end
 arch magic_mouth
 msg
-  You feel you need to do something to
-open the gate, a password or to identify 
-yourself
+You feel you need to do something to open the gate, a password or to identify yourself.
 endmsg
 x 12
 y 31
@@ -3457,7 +3056,7 @@ y 33
 end
 arch magic_mouth
 msg
- It's deathly quiet here.
+It's deathly quiet here.
 endmsg
 x 12
 y 34
@@ -3526,7 +3125,7 @@ end
 arch large_stones
 x 13
 y 3
-no_pass 1
+move_block all
 end
 arch magic_banned
 x 13
@@ -3746,9 +3345,7 @@ connected 1
 end
 arch magic_mouth
 msg
-You feel you need to do something to
-open the gate - Some identification
-might be required here.
+You feel you need to do something to open the gate - Some identification might be required here.
 endmsg
 x 13
 y 31
@@ -3775,7 +3372,7 @@ y 33
 end
 arch magic_mouth
 msg
- It's deathly quiet here.
+It's deathly quiet here.
 endmsg
 x 13
 y 34
@@ -3844,7 +3441,7 @@ end
 arch large_stones
 x 14
 y 3
-no_pass 1
+move_block all
 end
 arch magic_banned
 x 14
@@ -4043,9 +3640,7 @@ connected 1
 end
 arch magic_mouth
 msg
-  You feel you need to do something to
-open the gate, a password or to identify 
-yourself
+You feel you need to do something to open the gate, a password or to identify yourself.
 endmsg
 x 14
 y 31
@@ -4064,7 +3659,7 @@ y 33
 end
 arch magic_mouth
 msg
- It's deathly quiet here.
+It's deathly quiet here.
 endmsg
 x 14
 y 34
@@ -4133,7 +3728,7 @@ end
 arch large_stones
 x 15
 y 3
-no_pass 1
+move_block all
 end
 arch magic_banned
 x 15
@@ -4163,8 +3758,7 @@ y 5
 end
 arch magic_mouth
 msg
-  Blasts of hot air coming from inner
-cavern. Hotter than any fire
+Blasts of hot air coming from inner cavern.  Hotter than any fire.
 endmsg
 x 15
 y 6
@@ -4175,8 +3769,7 @@ y 6
 end
 arch magic_mouth
 msg
-  Blasts of hot air coming from inner
-cavern. Hotter than any fire
+Blasts of hot air coming from inner cavern.  Hotter than any fire.
 endmsg
 x 15
 y 7
@@ -4331,7 +3924,7 @@ y 33
 end
 arch magic_mouth
 msg
- It's deathly quiet here.
+It's deathly quiet here.
 endmsg
 x 15
 y 34
@@ -4411,7 +4004,7 @@ end
 arch large_stones
 x 16
 y 3
-no_pass 1
+move_block all
 end
 arch large_stones
 x 16
@@ -4431,8 +4024,7 @@ y 5
 end
 arch magic_mouth
 msg
-  Blasts of hot air coming from inner
-cavern. Hotter than any fire
+Blasts of hot air coming from inner cavern.  Hotter than any fire.
 endmsg
 x 16
 y 6
@@ -4638,14 +4230,10 @@ arch large_stones
 x 16
 y 40
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 17
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 17
 y 1
 end
@@ -4707,8 +4295,8 @@ name stones
 face largestone.111
 x 17
 y 9
-no_pick 1
 randomitems none
+no_pick 1
 arch spell_color_spray
 end
 end
@@ -4882,9 +4470,7 @@ arch cave22
 x 17
 y 37
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 17
 y 38
 end
@@ -4900,32 +4486,22 @@ arch cave10
 x 17
 y 40
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 18
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 18
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 18
 y 2
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 18
 y 3
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 18
 y 4
 end
@@ -5102,21 +4678,15 @@ arch cave23
 x 18
 y 36
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 18
 y 37
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 18
 y 38
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 18
 y 39
 end
@@ -5168,9 +4738,7 @@ x 19
 y 1
 connected 31
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 19
 y 2
 end
@@ -5249,12 +4817,11 @@ y 16
 end
 arch firewall_7
 name Enchanted Statue
-face baslic.171
+face grey_drag.172
 hp 9000
 maxhp 9000
 exp 100000
-dam 84
-ac -15
+ac -8
 x 19
 y 16
 speed 0.070000
@@ -5263,6 +4830,8 @@ level 30
 resist_fire 100
 resist_electricity 100
 alive 1
+arch spell_shockwave
+end
 end
 arch large_stones
 x 19
@@ -5278,12 +4847,11 @@ y 19
 end
 arch firewall_7
 name Enchanted Statue
-face baslic.171
+face grey_drag.172
 hp 9000
 maxhp 9000
 exp 100000
-dam 84
-ac -15
+ac -8
 x 19
 y 19
 speed 0.070000
@@ -5292,6 +4860,8 @@ level 30
 resist_fire 100
 resist_electricity 100
 alive 1
+arch spell_shockwave
+end
 end
 arch large_stones
 x 19
@@ -5307,12 +4877,11 @@ y 22
 end
 arch firewall_7
 name Enchanted Statue
-face baslic.171
+face grey_drag.172
 hp 9000
 maxhp 9000
 exp 100000
-dam 84
-ac -15
+ac -8
 x 19
 y 22
 speed 0.070000
@@ -5321,6 +4890,8 @@ level 30
 resist_fire 100
 resist_electricity 100
 alive 1
+arch spell_shockwave
+end
 end
 arch large_stones
 x 19
@@ -5336,12 +4907,11 @@ y 25
 end
 arch firewall_7
 name Enchanted Statue
-face baslic.171
+face grey_drag.172
 hp 9000
 maxhp 9000
 exp 100000
-dam 84
-ac -15
+ac -8
 x 19
 y 25
 speed 0.070000
@@ -5350,6 +4920,8 @@ level 30
 resist_fire 100
 resist_electricity 100
 alive 1
+arch spell_shockwave
+end
 end
 arch large_stones
 x 19
@@ -5367,15 +4939,11 @@ arch cave22
 x 19
 y 27
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 19
 y 28
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 19
 y 29
 end
@@ -5398,8 +4966,7 @@ end
 arch magic_ear
 msg
 @match *
-  You broke the silence and summoned the
-guardians.
+You broke the silence and summoned the guardians.
 endmsg
 x 19
 y 32
@@ -5437,21 +5004,15 @@ arch cave22
 x 19
 y 36
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 19
 y 37
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 19
 y 38
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 19
 y 39
 end
@@ -5463,20 +5024,14 @@ arch cave9
 x 19
 y 40
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 20
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 20
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 20
 y 2
 end
@@ -5644,27 +5199,19 @@ arch cave22
 x 20
 y 26
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 20
 y 27
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 20
 y 28
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 20
 y 29
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 20
 y 30
 end
@@ -5700,33 +5247,23 @@ arch cave22
 x 20
 y 34
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 20
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 20
 y 36
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 20
 y 37
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 20
 y 38
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 20
 y 39
 end
@@ -5738,20 +5275,14 @@ arch cave14
 x 20
 y 40
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 21
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 21
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 21
 y 2
 end
@@ -5862,9 +5393,7 @@ arch cave22
 x 21
 y 15
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 21
 y 16
 end
@@ -5884,9 +5413,7 @@ arch cave22
 x 21
 y 18
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 21
 y 19
 end
@@ -5906,9 +5433,7 @@ arch cave22
 x 21
 y 21
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 21
 y 22
 end
@@ -5928,45 +5453,31 @@ arch cave22
 x 21
 y 24
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 21
 y 25
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 21
 y 26
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 21
 y 27
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 21
 y 28
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 21
 y 29
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 21
 y 30
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 21
 y 31
 end
@@ -5986,39 +5497,27 @@ arch cave22
 x 21
 y 33
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 21
 y 34
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 21
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 21
 y 36
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 21
 y 37
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 21
 y 38
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 21
 y 39
 end
@@ -6030,38 +5529,26 @@ arch cave4
 x 21
 y 40
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 22
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 22
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 22
 y 2
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 22
 y 3
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 22
 y 4
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 22
 y 5
 end
@@ -6083,8 +5570,7 @@ face wizard.171
 hp 9000
 maxhp 9000
 exp 100000
-dam 85
-ac -15
+ac -8
 x 22
 y 7
 speed 0.070000
@@ -6093,6 +5579,8 @@ level 30
 resist_fire 100
 resist_electricity 100
 alive 1
+arch spell_color_spray
+end
 end
 arch large_stones
 x 22
@@ -6129,171 +5617,115 @@ arch cave23
 x 22
 y 12
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 22
 y 13
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 22
 y 14
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 22
 y 15
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 22
 y 16
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 22
 y 17
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 22
 y 18
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 22
 y 19
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 22
 y 20
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 22
 y 21
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 22
 y 22
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 22
 y 23
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 22
 y 24
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 22
 y 25
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 22
 y 26
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 22
 y 27
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 22
 y 28
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 22
 y 29
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 22
 y 30
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 22
 y 31
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 22
 y 32
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 22
 y 33
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 22
 y 34
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 22
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 22
 y 36
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 22
 y 37
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 22
 y 38
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 22
 y 39
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 22
 y 40
 end
@@ -6328,27 +5760,19 @@ x 23
 y 1
 connected 21
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 23
 y 2
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 23
 y 3
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 23
 y 4
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 23
 y 5
 end
@@ -6404,105 +5828,71 @@ arch cave22
 x 23
 y 12
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 23
 y 13
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 23
 y 14
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 23
 y 15
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 23
 y 16
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 23
 y 17
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 23
 y 18
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 23
 y 19
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 23
 y 20
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 23
 y 21
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 23
 y 22
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 23
 y 23
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 23
 y 24
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 23
 y 25
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 23
 y 26
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 23
 y 27
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 23
 y 28
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 23
 y 29
 end
@@ -6531,16 +5921,7 @@ end
 arch spell_sm_lightning
 end
 end
-arch pit_closed
-hp 15
-sp 32
-x 23
-y 31
-connected 2
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 23
 y 32
 end
@@ -6569,16 +5950,7 @@ end
 arch spell_sm_lightning
 end
 end
-arch pit_closed
-hp 14
-sp 32
-x 23
-y 34
-connected 2
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 23
 y 35
 end
@@ -6607,75 +5979,46 @@ end
 arch spell_sm_lightning
 end
 end
-arch pit_closed
-hp 13
-sp 32
-x 23
-y 37
-connected 2
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 23
 y 38
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 23
 y 39
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 23
 y 40
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 2
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 3
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 4
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 5
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 6
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 7
 end
@@ -6703,183 +6046,123 @@ arch cave22
 x 24
 y 10
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 11
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 12
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 13
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 14
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 15
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 16
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 17
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 18
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 19
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 20
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 21
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 22
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 23
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 24
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 25
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 26
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 27
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 28
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 29
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 30
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 31
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 32
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 33
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 34
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 36
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 37
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 38
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 39
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 40
 end

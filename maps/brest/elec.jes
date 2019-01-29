@@ -1,14 +1,15 @@
 arch map
+name Electric Jes
+difficulty 12
 region brest
-name elec
+width 60
+height 48
+enter_x 1
+enter_y 46
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue May 31 02:13:14 1994
+Created:  1994-05-31
+Modified: 2008-12-01 Rick Tanner
 endmsg
-x 60
-y 48
-level 12
 end
 arch dungeon_floor
 end
@@ -287,16 +288,13 @@ end
 arch dungeon_floor
 y 46
 end
-arch oakdoor
-slaying /world/world_107_123
-hp 29
-sp 34
+arch bwall_0
 y 46
 end
 arch dungeon_floor
 y 47
 end
-arch bwall_1_4
+arch bwall_0
 y 47
 end
 arch dungeon_floor
@@ -565,7 +563,11 @@ arch dungeon_floor
 x 1
 y 47
 end
-arch bwall_2_1_2
+arch oakdoor_2
+slaying /world/world_107_123
+face odoor_2_fant_red-yellow.111
+hp 29
+sp 34
 x 1
 y 47
 end
@@ -915,7 +917,7 @@ arch dungeon_floor
 x 2
 y 47
 end
-arch bwall_2_1_2
+arch bwall_0
 x 2
 y 47
 end
@@ -13316,7 +13318,7 @@ arch dungeon_floor
 x 43
 y 1
 end
-arch random_food_fant
+arch random_food
 x 43
 y 1
 end
@@ -13359,6 +13361,14 @@ end
 arch dungeon_floor
 x 43
 y 8
+end
+arch big_elec
+hp 8000
+maxhp 8000
+exp 150000
+x 43
+y 8
+level 20
 end
 arch dungeon_floor
 x 43
@@ -15866,7 +15876,7 @@ arch dungeon_floor
 x 52
 y 1
 end
-arch random_food_fant
+arch random_food
 x 52
 y 1
 end
@@ -17188,7 +17198,7 @@ arch dungeon_floor
 x 57
 y 1
 end
-arch oakdoor
+arch exit
 slaying /world/world_107_123
 hp 29
 sp 34
@@ -17599,7 +17609,7 @@ arch dungeon_floor
 x 58
 y 7
 end
-arch random_food_fant
+arch random_food
 x 58
 y 7
 end
@@ -18270,13 +18280,4 @@ end
 arch bwall_0
 x 59
 y 47
-end
-arch big_elec
-hp 8000
-maxhp 8000
-exp 150000
-x 43
-y 8
-level 20
-vulnerable 0
 end

@@ -1,14 +1,15 @@
 arch map
+name Marposist's Maze
+difficulty 10
 region darcap
-name maze1
+width 91
+height 61
+enter_x 85
+enter_y 30
 msg
-Creator: Cater/Wade
-Email: john_cater@yahoo.com
-Date: Tue Jan 19 11:58:06 1999
+Created:  1999-01-19 Cater/Wade (john_cater@yahoo.com)
+Modified: 2009-04-28 Kevin Bulgrien
 endmsg
-x 91
-y 61
-level 10
 end
 arch woodfloor
 end
@@ -29396,7 +29397,7 @@ arch woodfloor
 x 78
 y 18
 end
-arch wwall_2_2_1
+arch wwall_1_2
 x 78
 y 18
 end
@@ -30153,7 +30154,7 @@ arch woodfloor
 x 80
 y 18
 end
-arch wwall_3_4
+arch wwall_2_1_1
 x 80
 y 18
 end
@@ -30584,14 +30585,14 @@ arch woodfloor
 x 81
 y 15
 end
-arch wwall_2_1_2
+arch wwall_1_3
 x 81
 y 15
 end
 arch grass
 x 81
 y 16
-no_pass 1
+move_block all
 end
 arch grass
 x 81
@@ -30811,7 +30812,7 @@ end
 arch grass
 x 82
 y 5
-no_pass 1
+move_block all
 end
 arch grass
 x 82
@@ -30820,7 +30821,7 @@ end
 arch grass
 x 82
 y 6
-no_pass 1
+move_block all
 end
 arch grass
 x 82
@@ -30829,7 +30830,7 @@ end
 arch grass
 x 82
 y 7
-no_pass 1
+move_block all
 end
 arch grass
 x 82
@@ -30887,7 +30888,7 @@ arch woodfloor
 x 82
 y 15
 end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_116_102
 hp 31
 sp 28
@@ -30897,7 +30898,7 @@ end
 arch grass
 x 82
 y 16
-no_pass 1
+move_block all
 end
 arch grass
 x 82
@@ -31174,14 +31175,14 @@ arch woodfloor
 x 83
 y 15
 end
-arch wwall_2_1_2
+arch wwall_1_4
 x 83
 y 15
 end
 arch grass
 x 83
 y 16
-no_pass 1
+move_block all
 end
 arch grass
 x 83
@@ -31513,7 +31514,7 @@ end
 arch grass
 x 84
 y 16
-no_pass 1
+move_block all
 end
 arch grass
 x 84
@@ -31600,6 +31601,17 @@ arch woodfloor
 x 84
 y 27
 end
+arch d_statue
+name Marposist
+msg
+By decision of the town counsel, this house becomes the town's property, to be run as a place for adventurers to test their skills.
+
+-- 7392 EK
+endmsg
+x 84
+y 27
+move_block 0
+end
 arch dungeon_magic
 x 84
 y 28
@@ -31628,7 +31640,7 @@ arch woodfloor
 x 84
 y 30
 end
-arch wwall_2_1_2
+arch wwall_1_3
 x 84
 y 30
 end
@@ -31639,7 +31651,7 @@ end
 arch grass
 x 84
 y 31
-no_pass 1
+move_block all
 end
 arch grass
 x 84
@@ -31932,7 +31944,7 @@ arch woodfloor
 x 85
 y 30
 end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_116_102
 hp 31
 sp 28
@@ -31946,7 +31958,7 @@ end
 arch grass
 x 85
 y 31
-no_pass 1
+move_block all
 end
 arch grass
 x 85
@@ -32271,7 +32283,7 @@ arch woodfloor
 x 86
 y 30
 end
-arch wwall_2_1_2
+arch wwall_1_4
 x 86
 y 30
 end
@@ -32282,7 +32294,7 @@ end
 arch grass
 x 86
 y 31
-no_pass 1
+move_block all
 end
 arch grass
 x 86
@@ -32555,7 +32567,7 @@ arch woodfloor
 x 87
 y 24
 end
-arch wwall_3_1
+arch wwall_2_1_2
 x 87
 y 24
 end
@@ -32648,7 +32660,7 @@ end
 arch grass
 x 87
 y 31
-no_pass 1
+move_block all
 end
 arch grass
 x 87
@@ -32988,7 +33000,7 @@ end
 arch grass
 x 88
 y 31
-no_pass 1
+move_block all
 end
 arch grass
 x 88
@@ -33321,7 +33333,7 @@ arch woodfloor
 x 89
 y 29
 end
-arch wwall_2_1_1
+arch wwall_1_2
 x 89
 y 29
 end

@@ -1,13 +1,15 @@
 arch map
+name Nasty House
+difficulty 25
 region brest
-name nasty_house
+width 30
+height 30
+enter_x 4
+enter_y 4
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue Oct 18 17:19:24 1994
+Created:  1994-10-18
+Modified: 2008-11-27 Rick Tanner
 endmsg
-x 30
-y 30
 end
 arch woodfloor
 end
@@ -197,7 +199,7 @@ arch woodfloor
 x 1
 y 1
 end
-arch oakdoor
+arch stair_up_1
 slaying /world/world_107_123
 hp 39
 sp 37
@@ -260,6 +262,10 @@ arch woodfloor
 x 1
 y 11
 end
+arch chinese_dragon
+x 1
+y 11
+end
 arch woodfloor
 x 1
 y 12
@@ -462,6 +468,10 @@ arch woodfloor
 x 2
 y 18
 end
+arch chinese_dragon
+x 2
+y 18
+end
 arch woodfloor
 x 2
 y 19
@@ -482,6 +492,10 @@ arch woodfloor
 x 2
 y 22
 end
+arch chinese_dragon
+x 2
+y 22
+end
 arch woodfloor
 x 2
 y 23
@@ -498,11 +512,19 @@ arch woodfloor
 x 2
 y 25
 end
+arch chinese_dragon
+x 2
+y 25
+end
 arch woodfloor
 x 2
 y 26
 end
 arch woodfloor
+x 2
+y 27
+end
+arch chinese_dragon
 x 2
 y 27
 end
@@ -605,6 +627,10 @@ x 3
 y 10
 end
 arch woodfloor
+x 3
+y 11
+end
+arch chinese_dragon
 x 3
 y 11
 end
@@ -862,6 +888,10 @@ arch woodfloor
 x 4
 y 22
 end
+arch chinese_dragon
+x 4
+y 22
+end
 arch woodfloor
 x 4
 y 23
@@ -878,11 +908,19 @@ arch woodfloor
 x 4
 y 25
 end
+arch chinese_dragon
+x 4
+y 25
+end
 arch woodfloor
 x 4
 y 26
 end
 arch woodfloor
+x 4
+y 27
+end
+arch chinese_dragon
 x 4
 y 27
 end
@@ -1363,7 +1401,7 @@ end
 arch cave21
 x 7
 y 3
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 7
@@ -1390,6 +1428,10 @@ x 7
 y 6
 end
 arch woodfloor
+x 7
+y 7
+end
+arch behemoth
 x 7
 y 7
 end
@@ -1446,6 +1488,10 @@ x 7
 y 16
 end
 arch woodfloor
+x 7
+y 17
+end
+arch dread
 x 7
 y 17
 end
@@ -1559,6 +1605,10 @@ arch woodfloor
 x 8
 y 3
 end
+arch big_dragon
+x 8
+y 3
+end
 arch woodfloor
 x 8
 y 4
@@ -1603,6 +1653,10 @@ arch woodfloor
 x 8
 y 11
 end
+arch behemoth
+x 8
+y 11
+end
 arch woodfloor
 x 8
 y 12
@@ -1620,6 +1674,10 @@ x 8
 y 14
 end
 arch woodfloor
+x 8
+y 15
+end
+arch dread
 x 8
 y 15
 end
@@ -1655,11 +1713,19 @@ arch woodfloor
 x 8
 y 22
 end
+arch dread
+x 8
+y 22
+end
 arch woodfloor
 x 8
 y 23
 end
 arch woodfloor
+x 8
+y 24
+end
+arch dread
 x 8
 y 24
 end
@@ -1737,6 +1803,10 @@ arch woodfloor
 x 9
 y 7
 end
+arch behemoth
+x 9
+y 7
+end
 arch woodfloor
 x 9
 y 8
@@ -1782,6 +1852,10 @@ x 9
 y 16
 end
 arch woodfloor
+x 9
+y 17
+end
+arch dread
 x 9
 y 17
 end
@@ -1963,11 +2037,19 @@ arch woodfloor
 x 10
 y 22
 end
+arch dread
+x 10
+y 22
+end
 arch woodfloor
 x 10
 y 23
 end
 arch woodfloor
+x 10
+y 24
+end
+arch dread
 x 10
 y 24
 end
@@ -3181,6 +3263,10 @@ arch woodfloor
 x 17
 y 22
 end
+arch dread
+x 17
+y 22
+end
 arch woodfloor
 x 17
 y 23
@@ -3198,6 +3284,10 @@ x 17
 y 25
 end
 arch woodfloor
+x 17
+y 26
+end
+arch dread
 x 17
 y 26
 end
@@ -3425,6 +3515,10 @@ arch woodfloor
 x 19
 y 12
 end
+arch chinese_dragon
+x 19
+y 12
+end
 arch woodfloor
 x 19
 y 13
@@ -3473,6 +3567,10 @@ arch woodfloor
 x 19
 y 22
 end
+arch dread
+x 19
+y 22
+end
 arch woodfloor
 x 19
 y 23
@@ -3490,6 +3588,10 @@ x 19
 y 25
 end
 arch woodfloor
+x 19
+y 26
+end
+arch dread
 x 19
 y 26
 end
@@ -3551,6 +3653,10 @@ arch woodfloor
 x 20
 y 8
 end
+arch big_dragon
+x 20
+y 8
+end
 arch woodfloor
 x 20
 y 9
@@ -3579,6 +3685,10 @@ arch woodfloor
 x 20
 y 14
 end
+arch chinese_dragon
+x 20
+y 14
+end
 arch woodfloor
 x 20
 y 15
@@ -3596,6 +3706,10 @@ x 20
 y 17
 end
 arch woodfloor
+x 20
+y 18
+end
+arch chinese_dragon
 x 20
 y 18
 end
@@ -3717,6 +3831,10 @@ arch woodfloor
 x 21
 y 12
 end
+arch chinese_dragon
+x 21
+y 12
+end
 arch woodfloor
 x 21
 y 13
@@ -3782,6 +3900,10 @@ x 21
 y 25
 end
 arch woodfloor
+x 21
+y 26
+end
+arch dread
 x 21
 y 26
 end
@@ -3919,6 +4041,10 @@ arch woodfloor
 x 22
 y 22
 end
+arch dread
+x 22
+y 22
+end
 arch woodfloor
 x 22
 y 23
@@ -4315,6 +4441,10 @@ arch woodfloor
 x 24
 y 22
 end
+arch dread
+x 24
+y 22
+end
 arch woodfloor
 x 24
 y 23
@@ -4332,6 +4462,10 @@ x 24
 y 25
 end
 arch woodfloor
+x 24
+y 26
+end
+arch dread
 x 24
 y 26
 end
@@ -4373,11 +4507,19 @@ arch woodfloor
 x 25
 y 3
 end
+arch behemoth
+x 25
+y 3
+end
 arch woodfloor
 x 25
 y 4
 end
 arch woodfloor
+x 25
+y 5
+end
+arch behemoth
 x 25
 y 5
 end
@@ -4646,830 +4788,690 @@ end
 arch woodfloor
 x 26
 y 17
-end
-arch woodfloor
-x 26
-y 18
-end
-arch woodfloor
-x 26
-y 19
-end
-arch woodfloor
-x 26
-y 20
-end
-arch cave21
-x 26
-y 20
-end
-arch woodfloor
-x 26
-y 21
-end
-arch chest
-x 26
-y 21
-end
-arch woodfloor
-x 26
-y 22
-end
-arch woodfloor
-x 26
-y 23
-end
-arch woodfloor
-x 26
-y 24
-end
-arch chest
-x 26
-y 24
-end
-arch woodfloor
-x 26
-y 25
-end
-arch cave21
-x 26
-y 25
-end
-arch woodfloor
-x 26
-y 26
-end
-arch woodfloor
-x 26
-y 27
-end
-arch woodfloor
-x 26
-y 28
-end
-arch woodfloor
-x 26
-y 29
-end
-arch cave21
-x 26
-y 29
-end
-arch woodfloor
-x 27
-end
-arch cave21
-x 27
-end
-arch woodfloor
-x 27
-y 1
-end
-arch woodfloor
-x 27
-y 2
-end
-arch cave21
-x 27
-y 2
-end
-arch woodfloor
-x 27
-y 3
-end
-arch cave21
-x 27
-y 3
-end
-arch woodfloor
-x 27
-y 4
-end
-arch cave21
-x 27
-y 4
-end
-arch woodfloor
-x 27
-y 5
-end
-arch cave21
-x 27
-y 5
-end
-arch woodfloor
-x 27
-y 6
-end
-arch cave21
-x 27
-y 6
-end
-arch woodfloor
-x 27
-y 7
-end
-arch cave21
-x 27
-y 7
-end
-arch woodfloor
-x 27
-y 8
-end
-arch cave21
-x 27
-y 8
-end
-arch woodfloor
-x 27
-y 9
-end
-arch woodfloor
-x 27
-y 10
-end
-arch woodfloor
-x 27
-y 11
-end
-arch faerie_dragon
-x 27
-y 11
-end
-arch woodfloor
-x 27
-y 12
-end
-arch faerie_dragon
-x 27
-y 12
-end
-arch woodfloor
-x 27
-y 13
-end
-arch random_treasure
-x 27
-y 13
-end
-arch woodfloor
-x 27
-y 14
-end
-arch door_look_1
-x 27
-y 14
-end
-arch woodfloor
-x 27
-y 15
-end
-arch woodfloor
-x 27
-y 16
-end
-arch woodfloor
-x 27
-y 17
-end
-arch woodfloor
-x 27
-y 18
-end
-arch woodfloor
-x 27
-y 19
-end
-arch woodfloor
-x 27
-y 20
-end
-arch cave21
-x 27
-y 20
-end
-arch woodfloor
-x 27
-y 21
-end
-arch chest
-x 27
-y 21
-end
-arch woodfloor
-x 27
-y 22
-end
-arch woodfloor
-x 27
-y 23
-end
-arch woodfloor
-x 27
-y 24
-end
-arch chest
-x 27
-y 24
-end
-arch woodfloor
-x 27
-y 25
-end
-arch cave21
-x 27
-y 25
-end
-arch woodfloor
-x 27
-y 26
-end
-arch woodfloor
-x 27
-y 27
-end
-arch woodfloor
-x 27
-y 28
-end
-arch woodfloor
-x 27
-y 29
-end
-arch cave21
-x 27
-y 29
-end
-arch woodfloor
-x 28
-end
-arch cave21
-x 28
-end
-arch woodfloor
-x 28
-y 1
-end
-arch woodfloor
-x 28
-y 2
-end
-arch woodfloor
-x 28
-y 3
-end
-arch woodfloor
-x 28
-y 4
-end
-arch woodfloor
-x 28
-y 5
-end
-arch woodfloor
-x 28
-y 6
-end
-arch woodfloor
-x 28
-y 7
-end
-arch woodfloor
-x 28
-y 8
-end
-arch woodfloor
-x 28
-y 9
-end
-arch woodfloor
-x 28
-y 10
-end
-arch woodfloor
-x 28
-y 11
-end
-arch faerie_dragon
-x 28
-y 11
-end
-arch woodfloor
-x 28
-y 12
-end
-arch faerie_dragon
-x 28
-y 12
-end
-arch woodfloor
-x 28
-y 13
-end
-arch random_treasure
-x 28
-y 13
-end
-arch woodfloor
-x 28
-y 14
-end
-arch door_look_1
-x 28
-y 14
-end
-arch woodfloor
-x 28
-y 15
-end
-arch woodfloor
-x 28
-y 16
-end
-arch woodfloor
-x 28
-y 17
-end
-arch woodfloor
-x 28
-y 18
-end
-arch woodfloor
-x 28
-y 19
-end
-arch woodfloor
-x 28
-y 20
-end
-arch cave21
-x 28
-y 20
-end
-arch woodfloor
-x 28
-y 21
-end
-arch chest
-x 28
-y 21
-end
-arch woodfloor
-x 28
-y 22
-end
-arch chest
-x 28
-y 22
-end
-arch woodfloor
-x 28
-y 23
-end
-arch chest
-x 28
-y 23
-end
-arch woodfloor
-x 28
-y 24
-end
-arch chest
-x 28
-y 24
-end
-arch woodfloor
-x 28
-y 25
-end
-arch cave21
-x 28
-y 25
-end
-arch woodfloor
-x 28
-y 26
-end
-arch chest
-x 28
-y 26
-end
-arch woodfloor
-x 28
-y 27
-end
-arch chest
-x 28
-y 27
-end
-arch woodfloor
-x 28
-y 28
-end
-arch chest
-x 28
-y 28
-end
-arch random_spells
-x 28
-y 28
-end
-arch woodfloor
-x 28
-y 29
-end
-arch cave21
-x 28
-y 29
-end
-arch woodfloor
-x 29
-end
-arch cave21
-x 29
-end
-arch woodfloor
-x 29
-y 1
-end
-arch cave21
-x 29
-y 1
-end
-arch woodfloor
-x 29
-y 2
-end
-arch cave21
-x 29
-y 2
-end
-arch woodfloor
-x 29
-y 3
-end
-arch cave21
-x 29
-y 3
-end
-arch woodfloor
-x 29
-y 4
-end
-arch cave21
-x 29
-y 4
-end
-arch woodfloor
-x 29
-y 5
-end
-arch cave21
-x 29
-y 5
-end
-arch woodfloor
-x 29
-y 6
-end
-arch cave21
-x 29
-y 6
-end
-arch woodfloor
-x 29
-y 7
-end
-arch cave21
-x 29
-y 7
-end
-arch woodfloor
-x 29
-y 8
-end
-arch cave21
-x 29
-y 8
-end
-arch woodfloor
-x 29
-y 9
-end
-arch cave21
-x 29
-y 9
-end
-arch woodfloor
-x 29
-y 10
-end
-arch cave21
-x 29
-y 10
-end
-arch woodfloor
-x 29
-y 11
-end
-arch cave21
-x 29
-y 11
-end
-arch woodfloor
-x 29
-y 12
-end
-arch cave21
-x 29
-y 12
-end
-arch woodfloor
-x 29
-y 13
-end
-arch cave21
-x 29
-y 13
-end
-arch woodfloor
-x 29
-y 14
-end
-arch cave21
-x 29
-y 14
-end
-arch woodfloor
-x 29
-y 15
-end
-arch cave21
-x 29
-y 15
-end
-arch woodfloor
-x 29
-y 16
-end
-arch cave21
-x 29
-y 16
-end
-arch woodfloor
-x 29
-y 17
-end
-arch cave21
-x 29
-y 17
-end
-arch woodfloor
-x 29
-y 18
-end
-arch cave21
-x 29
-y 18
-end
-arch woodfloor
-x 29
-y 19
-end
-arch cave21
-x 29
-y 19
-end
-arch woodfloor
-x 29
-y 20
-end
-arch cave21
-x 29
-y 20
-end
-arch woodfloor
-x 29
-y 21
-end
-arch cave21
-x 29
-y 21
-end
-arch woodfloor
-x 29
-y 22
-end
-arch cave21
-x 29
-y 22
-end
-arch woodfloor
-x 29
-y 23
-end
-arch cave21
-x 29
-y 23
-end
-arch woodfloor
-x 29
-y 24
-end
-arch cave21
-x 29
-y 24
-end
-arch woodfloor
-x 29
-y 25
-end
-arch cave21
-x 29
-y 25
-end
-arch woodfloor
-x 29
-y 26
-end
-arch cave21
-x 29
-y 26
-end
-arch woodfloor
-x 29
-y 27
-end
-arch cave21
-x 29
-y 27
-end
-arch woodfloor
-x 29
-y 28
-end
-arch cave21
-x 29
-y 28
-end
-arch woodfloor
-x 29
-y 29
-end
-arch cave21
-x 29
-y 29
-end
-arch chinese_dragon
-x 1
-y 11
-end
-arch chinese_dragon
-x 2
-y 18
-end
-arch chinese_dragon
-x 2
-y 22
-end
-arch chinese_dragon
-x 2
-y 25
-end
-arch chinese_dragon
-x 2
-y 27
-end
-arch chinese_dragon
-x 3
-y 11
-end
-arch chinese_dragon
-x 4
-y 22
-end
-arch chinese_dragon
-x 4
-y 25
-end
-arch chinese_dragon
-x 4
-y 27
-end
-arch behemoth
-x 7
-y 7
-end
-arch dread
-x 7
-y 17
-end
-arch big_dragon
-x 8
-y 3
-end
-arch behemoth
-x 8
-y 11
-end
-arch dread
-x 8
-y 15
-end
-arch dread
-x 8
-y 22
-end
-arch dread
-x 8
-y 24
-end
-arch behemoth
-x 9
-y 7
-end
-arch dread
-x 9
-y 17
-end
-arch dread
-x 10
-y 22
-end
-arch dread
-x 10
-y 24
-end
-arch dread
-x 17
-y 22
-end
-arch dread
-x 17
-y 26
-end
-arch chinese_dragon
-x 19
-y 12
-end
-arch dread
-x 19
-y 22
-end
-arch dread
-x 19
-y 26
-end
-arch big_dragon
-x 20
-y 8
-end
-arch chinese_dragon
-x 20
-y 14
-end
-arch chinese_dragon
-x 20
-y 18
-end
-arch chinese_dragon
-x 21
-y 12
-end
-arch dread
-x 21
-y 26
-end
-arch dread
-x 22
-y 22
-end
-arch dread
-x 24
-y 22
-end
-arch dread
-x 24
-y 26
-end
-arch behemoth
-x 25
-y 3
-end
-arch behemoth
-x 25
-y 5
 end
 arch big_wiz
 x 26
 y 17
 end
-arch dread
+arch woodfloor
+x 26
+y 18
+end
+arch woodfloor
+x 26
+y 19
+end
+arch woodfloor
+x 26
+y 20
+end
+arch cave21
+x 26
+y 20
+end
+arch woodfloor
+x 26
+y 21
+end
+arch chest
+x 26
+y 21
+end
+arch woodfloor
 x 26
 y 22
 end
 arch dread
 x 26
+y 22
+end
+arch woodfloor
+x 26
+y 23
+end
+arch woodfloor
+x 26
+y 24
+end
+arch chest
+x 26
+y 24
+end
+arch woodfloor
+x 26
+y 25
+end
+arch cave21
+x 26
+y 25
+end
+arch woodfloor
+x 26
 y 26
+end
+arch dread
+x 26
+y 26
+end
+arch woodfloor
+x 26
+y 27
+end
+arch woodfloor
+x 26
+y 28
+end
+arch woodfloor
+x 26
+y 29
+end
+arch cave21
+x 26
+y 29
+end
+arch woodfloor
+x 27
+end
+arch cave21
+x 27
+end
+arch woodfloor
+x 27
+y 1
+end
+arch woodfloor
+x 27
+y 2
+end
+arch cave21
+x 27
+y 2
+end
+arch woodfloor
+x 27
+y 3
+end
+arch cave21
+x 27
+y 3
+end
+arch woodfloor
+x 27
+y 4
+end
+arch cave21
+x 27
+y 4
+end
+arch woodfloor
+x 27
+y 5
+end
+arch cave21
+x 27
+y 5
+end
+arch woodfloor
+x 27
+y 6
+end
+arch cave21
+x 27
+y 6
+end
+arch woodfloor
+x 27
+y 7
+end
+arch cave21
+x 27
+y 7
+end
+arch woodfloor
+x 27
+y 8
+end
+arch cave21
+x 27
+y 8
+end
+arch woodfloor
+x 27
+y 9
+end
+arch woodfloor
+x 27
+y 10
+end
+arch woodfloor
+x 27
+y 11
+end
+arch faerie_dragon
+x 27
+y 11
+end
+arch woodfloor
+x 27
+y 12
+end
+arch faerie_dragon
+x 27
+y 12
+end
+arch woodfloor
+x 27
+y 13
+end
+arch random_treasure
+x 27
+y 13
+end
+arch woodfloor
+x 27
+y 14
+end
+arch door_look_1
+x 27
+y 14
+end
+arch woodfloor
+x 27
+y 15
+end
+arch woodfloor
+x 27
+y 16
+end
+arch woodfloor
+x 27
+y 17
+end
+arch woodfloor
+x 27
+y 18
+end
+arch woodfloor
+x 27
+y 19
+end
+arch woodfloor
+x 27
+y 20
+end
+arch cave21
+x 27
+y 20
+end
+arch woodfloor
+x 27
+y 21
+end
+arch chest
+x 27
+y 21
+end
+arch woodfloor
+x 27
+y 22
+end
+arch woodfloor
+x 27
+y 23
+end
+arch woodfloor
+x 27
+y 24
+end
+arch chest
+x 27
+y 24
+end
+arch woodfloor
+x 27
+y 25
+end
+arch cave21
+x 27
+y 25
+end
+arch woodfloor
+x 27
+y 26
+end
+arch woodfloor
+x 27
+y 27
+end
+arch woodfloor
+x 27
+y 28
+end
+arch woodfloor
+x 27
+y 29
+end
+arch cave21
+x 27
+y 29
+end
+arch woodfloor
+x 28
+end
+arch cave21
+x 28
+end
+arch woodfloor
+x 28
+y 1
+end
+arch woodfloor
+x 28
+y 2
+end
+arch woodfloor
+x 28
+y 3
+end
+arch woodfloor
+x 28
+y 4
+end
+arch woodfloor
+x 28
+y 5
+end
+arch woodfloor
+x 28
+y 6
+end
+arch woodfloor
+x 28
+y 7
+end
+arch woodfloor
+x 28
+y 8
+end
+arch woodfloor
+x 28
+y 9
+end
+arch woodfloor
+x 28
+y 10
+end
+arch woodfloor
+x 28
+y 11
+end
+arch faerie_dragon
+x 28
+y 11
+end
+arch woodfloor
+x 28
+y 12
+end
+arch faerie_dragon
+x 28
+y 12
+end
+arch woodfloor
+x 28
+y 13
+end
+arch random_treasure
+x 28
+y 13
+end
+arch woodfloor
+x 28
+y 14
+end
+arch door_look_1
+x 28
+y 14
+end
+arch woodfloor
+x 28
+y 15
+end
+arch woodfloor
+x 28
+y 16
+end
+arch woodfloor
+x 28
+y 17
+end
+arch woodfloor
+x 28
+y 18
+end
+arch woodfloor
+x 28
+y 19
+end
+arch woodfloor
+x 28
+y 20
+end
+arch cave21
+x 28
+y 20
+end
+arch woodfloor
+x 28
+y 21
+end
+arch chest
+x 28
+y 21
+end
+arch woodfloor
+x 28
+y 22
+end
+arch chest
+x 28
+y 22
+end
+arch woodfloor
+x 28
+y 23
+end
+arch chest
+x 28
+y 23
+end
+arch woodfloor
+x 28
+y 24
+end
+arch chest
+x 28
+y 24
+end
+arch woodfloor
+x 28
+y 25
+end
+arch cave21
+x 28
+y 25
+end
+arch woodfloor
+x 28
+y 26
+end
+arch chest
+x 28
+y 26
+end
+arch woodfloor
+x 28
+y 27
+end
+arch chest
+x 28
+y 27
+end
+arch woodfloor
+x 28
+y 28
+end
+arch chest
+x 28
+y 28
+end
+arch random_spells
+x 28
+y 28
+end
+arch woodfloor
+x 28
+y 29
+end
+arch cave21
+x 28
+y 29
+end
+arch woodfloor
+x 29
+end
+arch cave21
+x 29
+end
+arch woodfloor
+x 29
+y 1
+end
+arch cave21
+x 29
+y 1
+end
+arch woodfloor
+x 29
+y 2
+end
+arch cave21
+x 29
+y 2
+end
+arch woodfloor
+x 29
+y 3
+end
+arch cave21
+x 29
+y 3
+end
+arch woodfloor
+x 29
+y 4
+end
+arch cave21
+x 29
+y 4
+end
+arch woodfloor
+x 29
+y 5
+end
+arch cave21
+x 29
+y 5
+end
+arch woodfloor
+x 29
+y 6
+end
+arch cave21
+x 29
+y 6
+end
+arch woodfloor
+x 29
+y 7
+end
+arch cave21
+x 29
+y 7
+end
+arch woodfloor
+x 29
+y 8
+end
+arch cave21
+x 29
+y 8
+end
+arch woodfloor
+x 29
+y 9
+end
+arch cave21
+x 29
+y 9
+end
+arch woodfloor
+x 29
+y 10
+end
+arch cave21
+x 29
+y 10
+end
+arch woodfloor
+x 29
+y 11
+end
+arch cave21
+x 29
+y 11
+end
+arch woodfloor
+x 29
+y 12
+end
+arch cave21
+x 29
+y 12
+end
+arch woodfloor
+x 29
+y 13
+end
+arch cave21
+x 29
+y 13
+end
+arch woodfloor
+x 29
+y 14
+end
+arch cave21
+x 29
+y 14
+end
+arch woodfloor
+x 29
+y 15
+end
+arch cave21
+x 29
+y 15
+end
+arch woodfloor
+x 29
+y 16
+end
+arch cave21
+x 29
+y 16
+end
+arch woodfloor
+x 29
+y 17
+end
+arch cave21
+x 29
+y 17
+end
+arch woodfloor
+x 29
+y 18
+end
+arch cave21
+x 29
+y 18
+end
+arch woodfloor
+x 29
+y 19
+end
+arch cave21
+x 29
+y 19
+end
+arch woodfloor
+x 29
+y 20
+end
+arch cave21
+x 29
+y 20
+end
+arch woodfloor
+x 29
+y 21
+end
+arch cave21
+x 29
+y 21
+end
+arch woodfloor
+x 29
+y 22
+end
+arch cave21
+x 29
+y 22
+end
+arch woodfloor
+x 29
+y 23
+end
+arch cave21
+x 29
+y 23
+end
+arch woodfloor
+x 29
+y 24
+end
+arch cave21
+x 29
+y 24
+end
+arch woodfloor
+x 29
+y 25
+end
+arch cave21
+x 29
+y 25
+end
+arch woodfloor
+x 29
+y 26
+end
+arch cave21
+x 29
+y 26
+end
+arch woodfloor
+x 29
+y 27
+end
+arch cave21
+x 29
+y 27
+end
+arch woodfloor
+x 29
+y 28
+end
+arch cave21
+x 29
+y 28
+end
+arch woodfloor
+x 29
+y 29
+end
+arch cave21
+x 29
+y 29
 end

@@ -1,12 +1,15 @@
 arch map
+name Timothius' House
+difficulty 1
 region stoneville
+width 10
+height 10
+enter_x 8
+enter_y 8
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Fri Sep 12 15:18:50 1997
+Created:  1997-09-12
+Modified: 2012-01-31 Rick Tanner
 endmsg
-x 10
-y 10
 end
 arch afloor_left
 end
@@ -153,11 +156,8 @@ end
 arch courier
 name Timothius
 msg
-@match [Hh][ae]llo|[Hh]i|[Gg]reet
-My Greetigs to you! Welcome to my
-humble home. Have you heard of my
-friend, Carthon? He was heading of to
-dragon mountain.
+@match h[ae]llo|hi|greet
+My Greetigs to you! Welcome to my humble home.  Have you heard of my friend, Carthon? He was heading off to dragon mountain.
 @match no
 What a pity! I hope he's all right.
 @match dead|corpse|killed
@@ -166,16 +166,12 @@ Oh dear!!!
 Please leave me alone for a while.
 @match yes
 Well, where have you seen him?
-@match [Cc]arthon
-Carthon is a friend of mine. He's an
-adventurer and dragon hunter.
+@match carthon
+Carthon is a friend of mine.  He's an adventurer and dragon hunter.
 @match mountain
-I wish Carthon had never gone to that
-accursed dragon mountain!
+I wish Carthon had never gone to that accursed dragon mountain!
 @match dragon
-Oh, I don't know anything about
-dragons, except that they are
-dangerous, of course!
+Oh, I don't know anything about dragons, except that they are dangerous, of course!
 endmsg
 x 2
 y 2
@@ -262,7 +258,7 @@ end
 arch door_look_1
 x 3
 y 7
-no_pass 0
+move_block 0
 end
 arch afloor_left
 x 3
@@ -297,7 +293,7 @@ end
 arch door_look_2
 x 4
 y 2
-no_pass 0
+move_block 0
 end
 arch afloor_left
 x 4
@@ -369,9 +365,7 @@ no_pick 1
 arch book_read
 name interesting book
 msg
-This book is very interesting, but you
-decide not to spend your hours
-reading, but go adventuring instead.
+This book is very interesting, but you decide not to spend your hours reading, but go adventuring instead.
 endmsg
 end
 end
@@ -440,14 +434,9 @@ carrying 200
 arch letter
 msg
 Dear Timothius,
-I have finally been able to locate the
-famous dragon mountain. It is, as I of
-course suspected, here on dragon
-island. I will enter it today and slay
-the arrogant dragon there. See you
-soon!
-	Yours
-		Carthon
+I have finally been able to locate the famous dragon mountain.  It is, as I of course suspected, here on dragon island.  I will enter it today and slay the arrogant dragon there.  See you soon!
+Yours,
+Carthon
 endmsg
 end
 end
@@ -470,7 +459,7 @@ end
 arch door_look_1
 x 6
 y 4
-no_pass 0
+move_block 0
 end
 arch afloor_left
 x 6
@@ -624,13 +613,6 @@ arch afloor_left
 x 8
 y 8
 end
-arch oakdoor
-slaying /world/world_103_127
-hp 5
-sp 19
-x 8
-y 8
-end
 arch afloor_left
 x 8
 y 9
@@ -697,7 +679,7 @@ arch afloor_left
 x 9
 y 7
 end
-arch wall_3_4
+arch wall_2_2_4
 x 9
 y 7
 end
@@ -705,7 +687,10 @@ arch afloor_left
 x 9
 y 8
 end
-arch wall_2_1_1
+arch oakdoor_1
+slaying /world/world_103_127
+hp 5
+sp 19
 x 9
 y 8
 end
@@ -713,7 +698,7 @@ arch afloor_left
 x 9
 y 9
 end
-arch wall_2_2_4
+arch wall_1_3
 x 9
 y 9
 end

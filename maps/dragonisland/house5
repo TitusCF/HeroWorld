@@ -1,10 +1,14 @@
 arch map
+name Enter at Own Risk
+difficulty 20
 region stoneville
-name house5
+width 16
+height 16
+enter_x 1
+enter_y 13
 msg
-Creator: Viola Krings
-Email: 
-Date: Tue Jun 17 18:07:29 METDST 1997
+Created:  1997-06-17 Viola Krings
+Modified: 2012-01-31 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -389,6 +393,10 @@ x 3
 y 9
 end
 arch dungeon_floor
+x 3
+y 10
+end
+arch giant
 x 3
 y 10
 end
@@ -786,6 +794,9 @@ end
 arch staff
 x 7
 y 1
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch dungeon_floor
 x 7
@@ -952,10 +963,8 @@ end
 arch sign
 name Attention Sign
 msg
-Passing beyond this room is not
-recommended.
-The Owner
-
+Passing beyond this room is not recommended.
+ - The Owner
 endmsg
 x 8
 y 9
@@ -1167,8 +1176,7 @@ end
 arch book_read
 name Love Story
 msg
-This book details the story of Romeo
-and Julie
+This book details the story of Romeo and Julie.
 endmsg
 x 10
 y 7
@@ -1302,9 +1310,7 @@ end
 arch note
 name Journal Entry
 msg
-All I have to do to gain the treaasure
-is slay a few small trolls....
-(The rest of the message is unreadable)
+All I have to do to gain the treasure is slay a few small trolls.... (The rest of the message is unreadable)
 endmsg
 x 11
 y 10
@@ -1401,7 +1407,7 @@ y 7
 end
 arch sign
 msg
-Emergency exit next door
+Emergency exit next door.
 endmsg
 x 12
 y 7
@@ -1813,8 +1819,4 @@ end
 arch awall_2_2_4
 x 15
 y 15
-end
-arch giant
-x 3
-y 10
 end

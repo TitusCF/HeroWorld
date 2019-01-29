@@ -1,13 +1,15 @@
 arch map
-region lakecountry
-name prison1
-msg
-Creator: Kundi, Xue
-Email: xkd@soda.berkeley.edu
-Date: Tue Mar 28 23:20:42 1995
-endmsg
+name Fortress of Lord Butakis Prison, Level 2
+difficulty 25
+region butakisfortress
 width 10
 height 10
+enter_x 4
+enter_y 4
+msg
+Created:  1995-03-28 Kundi, Xue (xkd@soda.berkeley.edu)
+Modified: 2008-12-01 Rick Tanner
+endmsg
 end
 arch dungeon_floor
 end
@@ -34,8 +36,8 @@ end
 arch dungeon_floor
 y 4
 end
-arch oakdoor
-name oakdoor to execution chamber
+arch oakdoor_1
+name Oakdoor to Execution Chamber
 slaying prison_w
 hp 15
 sp 1
@@ -44,8 +46,8 @@ end
 arch dungeon_floor
 y 5
 end
-arch oakdoor
-name oakdoor to execution chamber
+arch oakdoor_1
+name Oakdoor to Execution Chamber
 slaying prison_w
 hp 15
 sp 2
@@ -288,8 +290,8 @@ end
 arch dungeon_floor
 x 4
 end
-arch oakdoor
-name oakdoor to maximum security cells
+arch oakdoor_2
+name Oakdoor to Maximum Security Cells
 slaying prison_n
 hp 13
 sp 15
@@ -338,8 +340,8 @@ arch dungeon_floor
 x 4
 y 9
 end
-arch oakdoor
-name oakdoor to a myterious looking chamber
+arch oakdoor_2
+name Oakdoor to a Heavily Guarded Chamber
 slaying prison_s
 hp 1
 x 4
@@ -348,8 +350,8 @@ end
 arch dungeon_floor
 x 5
 end
-arch oakdoor
-name oakdoor to maximum security cells
+arch oakdoor_2
+name Oakdoor to Maximum Security Cells
 slaying prison_n
 hp 14
 sp 15
@@ -398,8 +400,8 @@ arch dungeon_floor
 x 5
 y 9
 end
-arch oakdoor
-name oakdoor to a myterious looking chamber
+arch oakdoor_2
+name Oakdoor to a Heavily Guarded Chamber
 slaying prison_s
 hp 2
 x 5
@@ -649,8 +651,8 @@ arch dungeon_floor
 x 9
 y 4
 end
-arch oakdoor
-name oakdoor to wizards' cells
+arch oakdoor_1
+name Oakdoor to Wizards' Cells
 slaying prison_e
 sp 13
 x 9
@@ -660,8 +662,8 @@ arch dungeon_floor
 x 9
 y 5
 end
-arch oakdoor
-name oakdoor to wizards' cells
+arch oakdoor_1
+name Oakdoor to Wizards' Cells
 slaying prison_e
 sp 14
 x 9

@@ -7,6 +7,9 @@ width 50
 height 50
 enter_x 1
 enter_y 1
+msg
+Modified: 2019-01-28 Acer
+endmsg
 outdoor 1
 tile_path_1 world_102_106
 tile_path_2 world_103_107
@@ -274,13 +277,13 @@ x 1
 y 26
 end
 arch fishboat
-name fishing boat to Santo Dominion
-name_pl fishing boat to Santo Dominion
-slaying world_102_108
-hp 12
-sp 8
 x 1
 y 26
+speed 0.5
+type 2
+container 10000000
+move_type boat
+passenger_limit 2
 end
 arch sea
 x 1
@@ -1151,6 +1154,8 @@ y 29
 end
 arch ruins
 slaying /greyshield/Ruins
+hp 6
+sp 1
 x 5
 y 29
 end
@@ -1540,7 +1545,7 @@ arch brush
 x 7
 y 24
 end
-arch stronghold_greyshield
+arch dark_palace
 name Grey Castle
 name_pl Grey Castle
 slaying /greyshield/Castle

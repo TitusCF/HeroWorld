@@ -1,13 +1,15 @@
 arch map
+name Butakis' Elite Training Tower, Level 2
+difficulty 10
 region lakecountry
-name tower2
+width 25
+height 25
+enter_x 12
+enter_y 12
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Mon Apr  3 17:39:07 1995
+Created:  1995-04-03
+Modified: 2012-02-08 Rick Tanner
 endmsg
-x 25
-y 25
 end
 arch dungeon_floor
 end
@@ -213,9 +215,7 @@ y 6
 end
 arch sign
 msg
-These are poisonous species.
-Be careful. Poison last more than a
-while sometimes.
+These are poisonous species.  Be careful.  Poison can last more than a while sometimes.
 endmsg
 x 1
 y 6
@@ -267,13 +267,7 @@ connected 5
 end
 arch sign
 msg
-Fast moving gnomes are hard to hit.
-And they have the sneaky strategy of
-hit and run. Hard to deal with
-sometimes.
-Dark elves uses missile weapons and be
-hard also.
-Good luck!
+Fast moving gnomes are hard to hit.  And they have the sneaky strategy of hit and run.  Hard to deal with sometimes.  Dark elves uses missile weapons and can be hard also.  Good luck!
 endmsg
 x 1
 y 12
@@ -480,16 +474,9 @@ connected 4
 end
 arch sign
 msg
-Room upwards contains fast-moving,
-poisonous species that's hard to deal
-with even to higher level players.
-Research the best way to deal with
-them.
-Good Luck!
+Room upwards contains fast-moving, poisonous species that's hard to deal with even to higher level players.  Research the best way to deal with them.  Good Luck!
 P.S.
-Use the middle mouse button to click on
-the handle in your look window to
-correctly turn the handle.
+Use the middle mouse button to click on the handle in your look window to correctly turn the handle.
 endmsg
 x 2
 y 12
@@ -1816,9 +1803,7 @@ y 23
 end
 arch sign
 msg
-Ogres, small trolls, dark elves and
-gnomes.
-Be careful!
+Ogres, small trolls, dark elves and gnomes.  Be careful!
 endmsg
 x 9
 y 23
@@ -2067,7 +2052,7 @@ y 5
 end
 arch sign
 msg
-Gabadge disposa
+Garbage disposal
 endmsg
 x 11
 y 5
@@ -2125,8 +2110,7 @@ y 11
 end
 arch magic_mouth
 msg
-Drop 100 platinum coins to pay the
-training fee
+Drop 100 platinum coins to pay the training fee.
 endmsg
 x 11
 y 12
@@ -2145,7 +2129,7 @@ connected 1
 end
 arch magic_mouth
 msg
-Drop fifteen foods to pay the training fee
+Drop fifteen foods to pay the training fee.
 endmsg
 x 11
 y 13
@@ -2196,6 +2180,10 @@ arch dungeon_floor
 x 11
 y 18
 end
+arch giant
+x 11
+y 18
+end
 arch dungeon_floor
 x 11
 y 19
@@ -2209,6 +2197,10 @@ x 11
 y 20
 end
 arch dungeon_floor
+x 11
+y 21
+end
+arch giant
 x 11
 y 21
 end
@@ -2241,14 +2233,20 @@ end
 arch firewall
 x 12
 y 1
+arch spell_small_fireball
+end
 end
 arch firewall
 x 12
 y 1
+arch spell_small_fireball
+end
 end
 arch firewall
 x 12
 y 1
+arch spell_small_fireball
+end
 end
 arch dungeon_floor
 x 12
@@ -2301,7 +2299,7 @@ end
 arch swall_2_1_1
 x 12
 y 7
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 12
@@ -2389,11 +2387,19 @@ arch dungeon_floor
 x 12
 y 19
 end
+arch giant
+x 12
+y 19
+end
 arch dungeon_floor
 x 12
 y 20
 end
 arch dungeon_floor
+x 12
+y 21
+end
+arch giant
 x 12
 y 21
 end
@@ -2475,8 +2481,7 @@ y 7
 end
 arch sign_w
 msg
-To go to klondor's wand shop, enter
-here
+To go to klondor's wand shop, enter here.
 endmsg
 x 13
 y 7
@@ -2555,6 +2560,10 @@ arch dungeon_floor
 x 13
 y 18
 end
+arch giant
+x 13
+y 18
+end
 arch dungeon_floor
 x 13
 y 19
@@ -2563,11 +2572,19 @@ arch dungeon_floor
 x 13
 y 20
 end
+arch giant
+x 13
+y 20
+end
 arch dungeon_floor
 x 13
 y 21
 end
 arch dungeon_floor
+x 13
+y 22
+end
+arch giant
 x 13
 y 22
 end
@@ -2654,8 +2671,7 @@ y 11
 end
 arch magic_mouth
 msg
-Drop 500 gold coins to pay the
-training fee
+Drop 500 gold coins to pay the training fee.
 endmsg
 x 14
 y 12
@@ -2674,8 +2690,7 @@ connected 1
 end
 arch magic_mouth
 msg
-Drop twelve small diamonds to pay the
-training fee.
+Drop twelve small diamonds to pay the training fee.
 endmsg
 x 14
 y 13
@@ -2732,6 +2747,10 @@ x 14
 y 18
 end
 arch dungeon_floor
+x 14
+y 19
+end
+arch giant
 x 14
 y 19
 end
@@ -2831,7 +2850,7 @@ y 6
 end
 arch magic_ear
 msg
-@match In|in
+@match in
 Vumm..
 endmsg
 x 15
@@ -2857,12 +2876,7 @@ y 8
 end
 arch sign
 msg
-This room you can enter from the
-opposite side and kill your opponents
-or run pass them to the near end to
-teleport out.
-Step on the teleporter, say 'in' to go
-in and 'open' to start the fight.
+This room you can enter from the opposite side and kill your opponents or run pass them to the near end to teleport out.  Step on the teleporter, say 'in' to go in and 'open' to start the fight.
 endmsg
 x 15
 y 8
@@ -3141,9 +3155,7 @@ y 23
 end
 arch sign
 msg
-Giants are big and can't move around
-well. They are slow also.
-There are ways to kill them safely.
+Giants are big and can't move around well.  They are slow also.  There are ways to kill them safely.
 endmsg
 x 16
 y 23
@@ -3360,6 +3372,10 @@ arch dungeon_floor
 x 18
 y 3
 end
+arch dragon
+x 18
+y 3
+end
 arch dungeon_floor
 x 18
 y 4
@@ -3481,6 +3497,10 @@ arch dungeon_floor
 x 18
 y 17
 end
+arch dragon
+x 18
+y 17
+end
 arch dungeon_floor
 x 18
 y 18
@@ -3502,6 +3522,10 @@ x 18
 y 21
 end
 arch dungeon_floor
+x 18
+y 22
+end
+arch dragon
 x 18
 y 22
 end
@@ -3563,6 +3587,10 @@ arch dungeon_floor
 x 19
 y 7
 end
+arch dragon
+x 19
+y 7
+end
 arch dungeon_floor
 x 19
 y 8
@@ -3655,7 +3683,7 @@ end
 arch bwall_2_1_2
 x 19
 y 16
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 19
@@ -3669,7 +3697,15 @@ arch dungeon_floor
 x 19
 y 19
 end
+arch dragon
+x 19
+y 19
+end
 arch dungeon_floor
+x 19
+y 20
+end
+arch dragon
 x 19
 y 20
 end
@@ -3840,6 +3876,10 @@ arch dungeon_floor
 x 20
 y 17
 end
+arch dragon
+x 20
+y 17
+end
 arch dungeon_floor
 x 20
 y 18
@@ -3859,6 +3899,17 @@ end
 arch dungeon_floor
 x 20
 y 22
+end
+arch dragon
+name key-holding wyvern
+hp 1300
+exp 2000
+x 20
+y 22
+carrying 100
+arch key2
+slaying 1
+end
 end
 arch dungeon_floor
 x 20
@@ -3897,6 +3948,17 @@ end
 arch dungeon_floor
 x 21
 y 5
+end
+arch giant
+name key-holding hill giant
+hp 1050
+exp 3000
+x 21
+y 5
+carrying 100
+arch key2
+slaying 3
+end
 end
 arch dungeon_floor
 x 21
@@ -4250,7 +4312,7 @@ end
 arch bwall_1_2
 x 22
 y 23
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 22
@@ -4268,7 +4330,7 @@ x 23
 end
 arch magic_ear
 msg
-@match open|Open
+@match open
 endmsg
 x 23
 y 1
@@ -4341,7 +4403,7 @@ connected 10
 end
 arch magic_ear
 msg
-@match start|Start|Open|open|Out|out
+@match start|open|out
 endmsg
 x 23
 y 11
@@ -4354,17 +4416,7 @@ end
 arch sign
 msg
 <<Surprise room>>
-A lot of dungeon place are like this,
-you don't know what's in there and you
-can't get back out once you get in.
-Also there are places where walls
-seemingly solid can be passed. There is
-a treasure room within and you need
-three keys to access the treasure.
-  Say the word 'start' to reveal the
-surprise. Say the word, 'open' or 'out'
-to come back out.
-Good Luck
+A lot of dungeon place are like this, you don't know what's in there and you can't get back out once you get in.  Also there are places where walls seemingly solid can be passed.  There is a treasure room within and you need three keys to access the treasure.  Say the word 'start' to reveal the surprise.  Say the word, 'open' or 'out' to come back out.  Good Luck!
 endmsg
 x 23
 y 11
@@ -4416,8 +4468,7 @@ attacktype 1
 end
 arch sign
 msg
-That was the famour death tree
-formation by peterm.
+That was the famous death tree formation by peterm.
 endmsg
 x 23
 y 15
@@ -4534,8 +4585,7 @@ end
 arch locked_door1
 slaying 3
 msg
-You need the key from the hill giant to
-open this door.
+You need the key from the hill giant to open this door.
 endmsg
 x 23
 y 20
@@ -4551,8 +4601,7 @@ end
 arch locked_door1
 slaying 2
 msg
-You need the key from the death tree to
-open this door.
+You need the key from the death tree to open this door.
 endmsg
 x 23
 y 21
@@ -4568,8 +4617,7 @@ end
 arch locked_door1
 slaying 1
 msg
-You need the key from the wyvern to
-open this.
+You need the key from the wyvern to open this.
 endmsg
 x 23
 y 22
@@ -4787,86 +4835,4 @@ end
 arch dwall_2_2_4
 x 24
 y 24
-end
-arch giant
-x 11
-y 18
-end
-arch giant
-x 11
-y 21
-end
-arch giant
-x 12
-y 19
-end
-arch giant
-x 12
-y 21
-end
-arch giant
-x 13
-y 18
-end
-arch giant
-x 13
-y 20
-end
-arch giant
-x 13
-y 22
-end
-arch giant
-x 14
-y 19
-end
-arch dragon
-x 18
-y 3
-end
-arch dragon
-x 18
-y 17
-end
-arch dragon
-x 18
-y 22
-end
-arch dragon
-x 19
-y 7
-end
-arch dragon
-x 19
-y 19
-end
-arch dragon
-x 19
-y 20
-end
-arch dragon
-x 20
-y 17
-end
-arch dragon
-name key-holding wyvern
-hp 1300
-exp 2000
-x 20
-y 22
-carrying 100
-arch key2
-slaying 1
-end
-end
-arch giant
-name key-holding hill giant
-hp 1050
-exp 3000
-x 21
-y 5
-carrying 100
-arch key2
-slaying 3
-end
 end

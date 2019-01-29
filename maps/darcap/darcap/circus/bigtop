@@ -1,16 +1,15 @@
 arch map
+name Darcap Circus Bigtop
+difficulty 7
 region darcapcircus
-name bigtop
-msg
-Creator: Cater & Wade & Fouras
-Email: john_cater@yahoo.com
-Date: Wed Jan 27 13:44:11 1999
-endmsg
 width 48
 height 32
 enter_x 17
 enter_y 30
-difficulty 7
+msg
+Created:  1999-01-27 Cater & Wade & Fouras (john_cater@yahoo.com)
+Modified: 2008-11-20 Rick Tanner
+endmsg
 end
 arch grassmedium
 end
@@ -462,9 +461,9 @@ x 2
 y 11
 end
 arch merchant
-speed_left -2.500000
 x 2
 y 11
+speed_left -2.500000
 end
 arch grassmedium
 x 2
@@ -658,9 +657,9 @@ x 3
 y 6
 end
 arch child
-speed_left -3.700000
 x 3
 y 6
+speed_left -3.700000
 end
 arch grassmedium
 x 3
@@ -807,9 +806,9 @@ x 3
 y 24
 end
 arch a_townsman
-speed_left -1.540000
 x 3
 y 24
+speed_left -1.540000
 end
 arch grassmedium
 x 3
@@ -919,9 +918,9 @@ x 4
 y 8
 end
 arch a_townsman2
-speed_left -1.540000
 x 4
 y 8
+speed_left -1.540000
 end
 arch grassmedium
 x 4
@@ -1405,24 +1404,24 @@ x 6
 y 14
 end
 arch ggate_closed
-connected 1
 x 6
 y 14
-end
-arch dungeon_magic
-x 6
-y 15
-end
-arch pstone_1
-x 6
-y 15
-end
-arch goldfloor
-name drop 100 goldcoins
-food 100
 connected 1
+end
+arch dungeon_magic
 x 6
 y 15
+end
+arch pstone_1
+x 6
+y 15
+end
+arch goldfloor
+name drop 100 gold coins
+food 100
+x 6
+y 15
+connected 1
 end
 arch dungeon_magic
 x 6
@@ -1433,11 +1432,11 @@ x 6
 y 16
 end
 arch goldfloor
-name drop 100 goldcoins
+name drop 100 gold coins
 food 100
-connected 5
 x 6
 y 16
+connected 5
 end
 arch dungeon_magic
 x 6
@@ -1448,9 +1447,9 @@ x 6
 y 17
 end
 arch ggate_closed
-connected 5
 x 6
 y 17
+connected 5
 end
 arch pstone_1
 x 6
@@ -1513,9 +1512,9 @@ x 6
 y 28
 end
 arch merchant
-speed_left -2.500000
 x 6
 y 28
+speed_left -2.500000
 end
 arch grassmedium
 x 6
@@ -1552,9 +1551,9 @@ x 7
 y 1
 end
 arch man
-speed_left -3.100000
 x 7
 y 1
+speed_left -3.100000
 end
 arch grassmedium
 x 7
@@ -1709,9 +1708,9 @@ x 7
 y 26
 end
 arch a_townsman2
-speed_left -1.540000
 x 7
 y 26
+speed_left -1.540000
 end
 arch grassmedium
 x 7
@@ -1796,9 +1795,9 @@ x 8
 y 4
 end
 arch merchant
-speed_left -2.500000
 x 8
 y 4
+speed_left -2.500000
 end
 arch grassmedium
 x 8
@@ -2038,6 +2037,10 @@ arch pstone_1
 x 9
 y 10
 end
+arch dread
+x 9
+y 10
+end
 arch pstone_1
 x 9
 y 11
@@ -2103,6 +2106,10 @@ x 9
 y 20
 end
 arch pstone_1
+x 9
+y 21
+end
+arch baslic
 x 9
 y 21
 end
@@ -2423,9 +2430,9 @@ x 11
 y 4
 end
 arch a_townsman3
-speed_left -2.500000
 x 11
 y 4
+speed_left -2.500000
 end
 arch grassmedium
 x 11
@@ -2572,9 +2579,9 @@ x 11
 y 28
 end
 arch a_townsman3
-speed_left -2.500000
 x 11
 y 28
+speed_left -2.500000
 end
 arch grassmedium
 x 11
@@ -2821,9 +2828,9 @@ x 13
 y 1
 end
 arch child
-speed_left -3.700000
 x 13
 y 1
+speed_left -3.700000
 end
 arch grassmedium
 x 13
@@ -2866,9 +2873,9 @@ x 13
 y 7
 end
 arch button_handle
-connected 1
 x 13
 y 7
+connected 1
 end
 arch pstone_1
 x 13
@@ -2963,9 +2970,9 @@ x 13
 y 24
 end
 arch button_handle
-connected 5
 x 13
 y 24
+connected 5
 end
 arch pstone_1
 x 13
@@ -3328,9 +3335,9 @@ x 15
 y 6
 end
 arch button_handle
-connected 2
 x 15
 y 6
+connected 2
 end
 arch pstone_1
 x 15
@@ -3433,9 +3440,9 @@ x 15
 y 25
 end
 arch button_handle
-connected 6
 x 15
 y 25
+connected 6
 end
 arch pstone_1
 x 15
@@ -3676,9 +3683,9 @@ x 16
 y 31
 end
 arch invis_exit
-slaying circus
-hp 11
-sp 10
+slaying /world/world_116_102
+hp 35
+sp 17
 x 17
 end
 arch pstone_1
@@ -3717,6 +3724,10 @@ x 17
 y 7
 end
 arch pstone_1
+x 17
+y 8
+end
+arch Balrog
 x 17
 y 8
 end
@@ -3793,6 +3804,10 @@ x 17
 y 20
 end
 arch pstone_1
+x 17
+y 21
+end
+arch cyclops
 x 17
 y 21
 end
@@ -3847,9 +3862,9 @@ x 17
 y 30
 end
 arch invis_exit
-slaying circus
-hp 11
-sp 12
+slaying /world/world_116_102
+hp 35
+sp 19
 x 17
 y 31
 end
@@ -3884,9 +3899,9 @@ x 18
 y 2
 end
 arch man
-speed_left -3.100000
 x 18
 y 2
+speed_left -3.100000
 end
 arch grassmedium
 x 18
@@ -4033,9 +4048,9 @@ x 18
 y 28
 end
 arch man
-speed_left -3.100000
 x 18
 y 28
+speed_left -3.100000
 end
 arch grassmedium
 x 18
@@ -4334,24 +4349,24 @@ x 20
 y 14
 end
 arch ggate_closed
-connected 2
 x 20
 y 14
-end
-arch dungeon_magic
-x 20
-y 15
-end
-arch pstone_1
-x 20
-y 15
-end
-arch goldfloor
-name drop 200 goldcoins
-food 200
 connected 2
+end
+arch dungeon_magic
 x 20
 y 15
+end
+arch pstone_1
+x 20
+y 15
+end
+arch goldfloor
+name drop 200 gold coins
+food 200
+x 20
+y 15
+connected 2
 end
 arch dungeon_magic
 x 20
@@ -4362,11 +4377,11 @@ x 20
 y 16
 end
 arch goldfloor
-name drop 200 goldcoins
+name drop 200 gold coins
 food 200
-connected 6
 x 20
 y 16
+connected 6
 end
 arch dungeon_magic
 x 20
@@ -4377,9 +4392,9 @@ x 20
 y 17
 end
 arch ggate_closed
-connected 6
 x 20
 y 17
+connected 6
 end
 arch pstone_1
 x 20
@@ -4434,9 +4449,9 @@ x 20
 y 28
 end
 arch fatman
-speed_left -1.100000
 x 20
 y 28
+speed_left -1.100000
 end
 arch grassmedium
 x 20
@@ -4671,9 +4686,9 @@ x 22
 y 1
 end
 arch a_townsman3
-speed_left -2.500000
 x 22
 y 1
+speed_left -2.500000
 end
 arch grassmedium
 x 22
@@ -4692,9 +4707,9 @@ x 22
 y 3
 end
 arch a_townsman3
-speed_left -2.500000
 x 22
 y 3
+speed_left -2.500000
 end
 arch pstone_1
 x 22
@@ -5112,7 +5127,6 @@ y 15
 end
 arch wizard
 name RingMaster
-type 0
 Str 20
 Con 30
 Pow 30
@@ -5121,12 +5135,13 @@ hp 10000
 maxhp 10000
 sp 500
 maxsp 500
+x 23
+y 15
 level 50
+type 0
 unaggressive 1
 can_cast_spell 1
 stand_still 1
-x 23
-y 15
 end
 arch dungeon_magic
 x 23
@@ -5479,9 +5494,9 @@ x 24
 y 28
 end
 arch merchant
-speed_left -2.500000
 x 24
 y 28
+speed_left -2.500000
 end
 arch grassmedium
 x 24
@@ -5852,9 +5867,9 @@ x 26
 y 1
 end
 arch c_woman
-speed_left -1.900000
 x 26
 y 1
+speed_left -1.900000
 end
 arch grassmedium
 x 26
@@ -5865,9 +5880,9 @@ x 26
 y 2
 end
 arch merchant
-speed_left -2.500000
 x 26
 y 2
+speed_left -2.500000
 end
 arch grassmedium
 x 26
@@ -6120,24 +6135,24 @@ x 27
 y 14
 end
 arch ggate_closed
-connected 3
 x 27
 y 14
-end
-arch dungeon_magic
-x 27
-y 15
-end
-arch pstone_1
-x 27
-y 15
-end
-arch goldfloor
-name drop 200 goldcoins
-food 200
 connected 3
+end
+arch dungeon_magic
 x 27
 y 15
+end
+arch pstone_1
+x 27
+y 15
+end
+arch goldfloor
+name drop 200 gold coins
+food 200
+x 27
+y 15
+connected 3
 end
 arch dungeon_magic
 x 27
@@ -6148,11 +6163,11 @@ x 27
 y 16
 end
 arch goldfloor
-name drop 200 goldcoins
+name drop 200 gold coins
 food 200
-connected 7
 x 27
 y 16
+connected 7
 end
 arch dungeon_magic
 x 27
@@ -6163,9 +6178,9 @@ x 27
 y 17
 end
 arch ggate_closed
-connected 7
 x 27
 y 17
+connected 7
 end
 arch pstone_1
 x 27
@@ -6236,9 +6251,9 @@ x 27
 y 30
 end
 arch courier
+x 27
+y 30
 speed_left -2.500000
-x 27
-y 30
 end
 arch grassmedium
 x 27
@@ -6496,6 +6511,10 @@ arch pstone_1
 x 29
 y 9
 end
+arch titan
+x 29
+y 9
+end
 arch pstone_1
 x 29
 y 10
@@ -6568,6 +6587,10 @@ arch pstone_1
 x 29
 y 21
 end
+arch gaelotroll
+x 29
+y 21
+end
 arch pstone_1
 x 29
 y 22
@@ -6629,9 +6652,9 @@ x 29
 y 31
 end
 arch invis_exit
-slaying circus
-hp 13
-sp 10
+slaying /world/world_116_102
+hp 37
+sp 17
 x 30
 end
 arch pstone_1
@@ -6790,9 +6813,9 @@ x 30
 y 30
 end
 arch invis_exit
-slaying circus
-hp 13
-sp 12
+slaying /world/world_116_102
+hp 37
+sp 19
 x 30
 y 31
 end
@@ -7045,9 +7068,9 @@ x 32
 y 6
 end
 arch button_handle
+x 32
+y 6
 connected 3
-x 32
-y 6
 end
 arch pstone_1
 x 32
@@ -7150,9 +7173,9 @@ x 32
 y 25
 end
 arch button_handle
-connected 7
 x 32
 y 25
+connected 7
 end
 arch pstone_1
 x 32
@@ -7499,9 +7522,9 @@ x 34
 y 4
 end
 arch merchant
-speed_left -2.500000
 x 34
 y 4
+speed_left -2.500000
 end
 arch pstone_1
 x 34
@@ -7520,9 +7543,9 @@ x 34
 y 7
 end
 arch button_handle
-connected 4
 x 34
 y 7
+connected 4
 end
 arch pstone_1
 x 34
@@ -7617,9 +7640,9 @@ x 34
 y 24
 end
 arch button_handle
-connected 8
 x 34
 y 24
+connected 8
 end
 arch pstone_1
 x 34
@@ -7666,9 +7689,9 @@ x 34
 y 30
 end
 arch merchant
-speed_left -2.500000
 x 34
 y 30
+speed_left -2.500000
 end
 arch grassmedium
 x 34
@@ -8121,9 +8144,9 @@ x 37
 y 3
 end
 arch a_townsman3
-speed_left -2.500000
 x 37
 y 3
+speed_left -2.500000
 end
 arch grassmedium
 x 37
@@ -8226,6 +8249,10 @@ x 37
 y 19
 end
 arch pstone_1
+x 37
+y 20
+end
+arch troll
 x 37
 y 20
 end
@@ -8262,9 +8289,9 @@ x 37
 y 26
 end
 arch a_townsman2
-speed_left -1.540000
 x 37
 y 26
+speed_left -1.540000
 end
 arch grassmedium
 x 37
@@ -8283,9 +8310,9 @@ x 37
 y 28
 end
 arch a_townsman3
-speed_left -2.500000
 x 37
 y 28
+speed_left -2.500000
 end
 arch grassmedium
 x 37
@@ -8350,9 +8377,9 @@ x 38
 y 4
 end
 arch a_townsman3
-speed_left -2.500000
 x 38
 y 4
+speed_left -2.500000
 end
 arch grassmedium
 x 38
@@ -8383,6 +8410,10 @@ x 38
 y 9
 end
 arch pstone_1
+x 38
+y 10
+end
+arch behemoth
 x 38
 y 10
 end
@@ -8491,9 +8522,9 @@ x 38
 y 27
 end
 arch a_townsman3
-speed_left -2.500000
 x 38
 y 27
+speed_left -2.500000
 end
 arch grassmedium
 x 38
@@ -8986,9 +9017,9 @@ x 41
 y 5
 end
 arch child
-speed_left -3.700000
 x 41
 y 5
+speed_left -3.700000
 end
 arch pstone_1
 x 41
@@ -9035,24 +9066,24 @@ x 41
 y 14
 end
 arch ggate_closed
-connected 4
 x 41
 y 14
-end
-arch dungeon_magic
-x 41
-y 15
-end
-arch pstone_1
-x 41
-y 15
-end
-arch goldfloor
-name drop 100 goldcoins
-food 100
 connected 4
+end
+arch dungeon_magic
 x 41
 y 15
+end
+arch pstone_1
+x 41
+y 15
+end
+arch goldfloor
+name drop 100 gold coins
+food 100
+x 41
+y 15
+connected 4
 end
 arch dungeon_magic
 x 41
@@ -9063,11 +9094,11 @@ x 41
 y 16
 end
 arch goldfloor
-name drop 100 goldcoins
+name drop 100 gold coins
 food 100
-connected 8
 x 41
 y 16
+connected 8
 end
 arch dungeon_magic
 x 41
@@ -9078,10 +9109,10 @@ x 41
 y 17
 end
 arch ggate_closed
-speed 0.500000
-connected 8
 x 41
 y 17
+speed 0.500000
+connected 8
 end
 arch pstone_1
 x 41
@@ -9450,9 +9481,9 @@ x 43
 y 4
 end
 arch beggar
-speed_left -0.700000
 x 43
 y 4
+speed_left -0.700000
 end
 arch grassmedium
 x 43
@@ -9503,9 +9534,9 @@ x 43
 y 10
 end
 arch a_townsman2
-speed_left -1.540000
 x 43
 y 10
+speed_left -1.540000
 end
 arch pstone_1
 x 43
@@ -9687,9 +9718,9 @@ x 44
 y 8
 end
 arch merchant
-speed_left -2.500000
 x 44
 y 8
+speed_left -2.500000
 end
 arch grassmedium
 x 44
@@ -9748,9 +9779,9 @@ x 44
 y 15
 end
 arch a_townsman2
-speed_left -1.540000
 x 44
 y 15
+speed_left -1.540000
 end
 arch grassmedium
 x 44
@@ -9817,9 +9848,9 @@ x 44
 y 23
 end
 arch c_woman
-speed_left -1.900000
 x 44
 y 23
+speed_left -1.900000
 end
 arch grassmedium
 x 44
@@ -9961,9 +9992,9 @@ x 45
 y 12
 end
 arch a_townsman
-speed_left -1.540000
 x 45
 y 12
+speed_left -1.540000
 end
 arch grassmedium
 x 45
@@ -10169,9 +10200,9 @@ x 46
 y 10
 end
 arch courier
-speed_left -2.500000
 x 46
 y 10
+speed_left -2.500000
 end
 arch grassmedium
 x 46
@@ -10198,9 +10229,9 @@ x 46
 y 13
 end
 arch c_woman
-speed_left -1.900000
 x 46
 y 13
+speed_left -1.900000
 end
 arch grassmedium
 x 46
@@ -10259,9 +10290,9 @@ x 46
 y 20
 end
 arch merchant
-speed_left -2.500000
 x 46
 y 20
+speed_left -2.500000
 end
 arch grassmedium
 x 46
@@ -10541,36 +10572,4 @@ end
 arch grassmedium
 x 47
 y 31
-end
-arch dread
-x 9
-y 10
-end
-arch baslic
-x 9
-y 21
-end
-arch Balrog
-x 17
-y 8
-end
-arch cyclops
-x 17
-y 21
-end
-arch titan
-x 29
-y 9
-end
-arch gaelotroll
-x 29
-y 21
-end
-arch troll
-x 37
-y 20
-end
-arch behemoth
-x 38
-y 10
 end

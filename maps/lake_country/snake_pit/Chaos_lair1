@@ -1,25 +1,27 @@
 arch map
-region lakecountry
-name Chaos_lair1
+name Chaos Lair, Entrance
 reset_timeout 7200
-difficulty 15
+difficulty 90
+region lakecountry
 width 36
 height 36
-enter_x 1
-enter_y 1
+enter_x 16
+enter_y 30
 msg
-Creator: Kundi, Xue
-Email: xkd@soda.berkeley.edu
-Date: Sun Jun  4 19:34:16 1995
+Created:  1995-06-04 Kundi, Xue (xkd@soda.berkeley.edu)
+Modified: 2012-03-18 Rick Tanner
 endmsg
+maplore
+@def ChaosLair
+The Lord of Chaos resides in this lair.
+@end
+@quest ChaosLair
+Main entrance, from Snake Pit.
+endmaplore
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 1
 end
 arch large_stones
@@ -64,29 +66,19 @@ end
 arch cave23
 y 8
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 9
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 10
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 11
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 12
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 13
 end
 arch large_stones
@@ -101,24 +93,16 @@ end
 arch cave23
 y 15
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 16
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 17
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 18
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 19
 end
 arch large_stones
@@ -133,77 +117,49 @@ end
 arch cave23
 y 21
 end
-arch blocked
+arch cave_15
 y 22
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 23
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 24
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 25
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 26
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 27
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 28
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 29
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 30
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 31
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 32
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 33
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 34
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 end
 arch large_stones
@@ -276,15 +232,11 @@ arch cave23
 x 1
 y 9
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 10
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 11
 end
@@ -376,45 +328,29 @@ arch cave23
 x 1
 y 22
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 23
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 24
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 25
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 26
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 27
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 28
-end
-arch large_stones
-x 1
-y 29
 end
 arch pit_closed
 hp 8
@@ -442,10 +378,6 @@ end
 arch abil_fear
 end
 end
-arch large_stones
-x 1
-y 30
-end
 arch pit_closed
 hp 8
 sp 18
@@ -453,15 +385,9 @@ x 1
 y 30
 connected 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 31
-end
-arch large_stones
-x 1
-y 32
 end
 arch pit_closed
 hp 11
@@ -489,10 +415,6 @@ end
 arch spell_sm_lightning
 end
 end
-arch large_stones
-x 1
-y 33
-end
 arch pit_closed
 hp 11
 sp 12
@@ -500,15 +422,11 @@ x 1
 y 33
 connected 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 34
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 35
 end
@@ -537,6 +455,8 @@ end
 arch lightningwall_3
 x 2
 y 3
+arch spell_sm_lightning
+end
 end
 arch large_stones
 x 2
@@ -549,6 +469,8 @@ end
 arch lightningwall_3
 x 2
 y 5
+arch spell_sm_lightning
+end
 end
 arch large_stones
 x 2
@@ -596,9 +518,7 @@ arch cave23
 x 2
 y 10
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 11
 end
@@ -666,75 +586,51 @@ arch cave17
 x 2
 y 23
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 24
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 25
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 26
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 27
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 28
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 29
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 30
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 31
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 32
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 33
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 34
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 35
 end
@@ -755,6 +651,8 @@ end
 arch lightningwall_5
 x 3
 y 2
+arch spell_sm_lightning
+end
 end
 arch large_stones
 x 3
@@ -775,6 +673,8 @@ end
 arch lightningwall_1
 x 3
 y 6
+arch spell_sm_lightning
+end
 end
 arch large_stones
 x 3
@@ -872,67 +772,47 @@ arch cave23
 x 3
 y 24
 end
-arch blocked
+arch cave_15
 x 3
 y 25
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 26
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 27
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 28
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 29
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 30
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 31
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 32
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 33
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 34
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 35
 end
@@ -1044,8 +924,7 @@ y 16
 end
 arch magic_mouth
 msg
-A feeling of being discovered creeps up
-your spine
+A feeling of being discovered creeps up your spine.
 endmsg
 x 4
 y 17
@@ -1086,31 +965,21 @@ arch cave2
 x 4
 y 24
 end
-arch blocked
+arch cave_15
 x 4
 y 25
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 26
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 27
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 28
-end
-arch large_stones
-x 4
-y 29
 end
 arch pit_closed
 hp 4
@@ -1138,26 +1007,9 @@ end
 arch abil_fear
 end
 end
-arch large_stones
-x 4
-y 30
-end
-arch pit_closed
-hp 4
-sp 17
-x 4
-y 30
-connected 1
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 31
-end
-arch large_stones
-x 4
-y 32
 end
 arch pit_closed
 hp 17
@@ -1185,26 +1037,11 @@ end
 arch spell_sm_lightning
 end
 end
-arch large_stones
-x 4
-y 33
-end
-arch pit_closed
-hp 17
-sp 14
-x 4
-y 33
-connected 1
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 34
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 35
 end
@@ -1364,57 +1201,39 @@ arch cave23
 x 5
 y 26
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 5
 y 27
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 5
 y 28
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 5
 y 29
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 5
 y 30
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 5
 y 31
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 5
 y 32
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 5
 y 33
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 5
 y 34
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 5
 y 35
 end
@@ -1435,6 +1254,8 @@ end
 arch lightningwall_5
 x 6
 y 2
+arch spell_sm_lightning
+end
 end
 arch large_stones
 x 6
@@ -1455,6 +1276,8 @@ end
 arch lightningwall_1
 x 6
 y 6
+arch spell_sm_lightning
+end
 end
 arch large_stones
 x 6
@@ -1562,57 +1385,39 @@ arch cave22
 x 6
 y 26
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 6
 y 27
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 6
 y 28
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 6
 y 29
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 6
 y 30
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 6
 y 31
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 6
 y 32
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 6
 y 33
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 6
 y 34
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 6
 y 35
 end
@@ -1655,6 +1460,8 @@ end
 arch lightningwall_7
 x 7
 y 3
+arch spell_sm_lightning
+end
 end
 arch large_stones
 x 7
@@ -1667,6 +1474,8 @@ end
 arch lightningwall_7
 x 7
 y 5
+arch spell_sm_lightning
+end
 end
 arch large_stones
 x 7
@@ -1790,9 +1599,7 @@ arch cave23
 x 7
 y 26
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 7
 y 27
 end
@@ -1800,15 +1607,9 @@ arch large_stones
 x 7
 y 28
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 7
 y 28
-end
-arch large_stones
-x 7
-y 29
 end
 arch pit_closed
 hp 7
@@ -1836,26 +1637,9 @@ end
 arch abil_fear
 end
 end
-arch large_stones
-x 7
-y 30
-end
-arch pit_closed
-hp 7
-sp 14
-x 7
-y 30
-connected 1
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 7
 y 31
-end
-arch large_stones
-x 7
-y 32
 end
 arch pit_closed
 hp 15
@@ -1883,26 +1667,11 @@ end
 arch spell_sm_lightning
 end
 end
-arch large_stones
-x 7
-y 33
-end
-arch pit_closed
-hp 15
-sp 17
-x 7
-y 33
-connected 1
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 7
 y 34
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 7
 y 35
 end
@@ -2050,8 +1819,7 @@ y 22
 end
 arch magic_mouth
 msg
-A feeling of being discovered creeps up
-your spine
+A feeling of being discovered creeps up your spine.
 endmsg
 x 8
 y 23
@@ -2080,57 +1848,39 @@ arch cave22
 x 8
 y 26
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 8
 y 27
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 8
 y 28
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 8
 y 29
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 8
 y 30
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 8
 y 31
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 8
 y 32
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 8
 y 33
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 8
 y 34
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 8
 y 35
 end
@@ -2292,57 +2042,39 @@ arch cave23
 x 9
 y 26
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 9
 y 27
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 9
 y 28
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 9
 y 29
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 9
 y 30
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 9
 y 31
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 9
 y 32
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 9
 y 33
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 9
 y 34
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 9
 y 35
 end
@@ -2476,21 +2208,15 @@ arch cave2
 x 10
 y 26
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 10
 y 27
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 10
 y 28
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 10
 y 29
 end
@@ -2527,25 +2253,19 @@ x 10
 y 31
 connected 11
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 10
 y 32
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 10
 y 33
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 10
 y 34
 end
-arch blocked
+arch cave_15
 x 10
 y 35
 end
@@ -2592,9 +2312,7 @@ arch cave23
 x 11
 y 6
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 11
 y 7
 end
@@ -2738,9 +2456,7 @@ arch cave22
 x 11
 y 26
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 11
 y 27
 end
@@ -2772,13 +2488,11 @@ arch large_stones
 x 11
 y 34
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 11
 y 34
 end
-arch blocked
+arch cave_15
 x 11
 y 35
 end
@@ -3077,9 +2791,7 @@ end
 arch invis_exit
 slaying Chaos_lair2
 msg
-You hear sounds of rushing air, like
-dragon breathing, together with
-continuous concussions.
+You hear sounds of rushing air, like dragon breathing, together with continuous concussions.
 endmsg
 hp 10
 sp 35
@@ -3326,9 +3038,7 @@ end
 arch invis_exit
 slaying Chaos_lair2
 msg
-You hear sounds of rushing air, like
-dragon breathing, together with
-continuous concussions.
+You hear sounds of rushing air, like dragon breathing, together with continuous concussions.
 endmsg
 hp 11
 sp 35
@@ -3400,8 +3110,7 @@ y 16
 end
 arch magic_mouth
 msg
-You hope nobody will discover will
-discover you, not too soon
+You hope nobody will discover will discover you, not too soon.
 endmsg
 x 14
 y 17
@@ -3481,9 +3190,7 @@ end
 arch magic_ear
 msg
 @match Orcus|Balrog|Asmodeus|Jessy
-   A parade of guards and guardians
-appeared to greet. You hope no one
-discovers you.
+A parade of guards and guardians appeared to greet.  You hope no one discovers you.
 endmsg
 x 14
 y 23
@@ -3491,9 +3198,8 @@ connected 8
 end
 arch magic_ear
 msg
-@match Kill|KILL|kill
-   A line of guards appeared behide you
-grinning evilly.
+@match kill
+A line of guards appeared behind you grinning evilly.
 endmsg
 x 14
 y 23
@@ -3514,19 +3220,16 @@ end
 arch dragonman
 name dragonman guard
 msg
-@match Open|open|enter|gate|door
-   What's your name? What's your 
-business?
+@match open|enter|gate|door
+What's your name? What's your business?
 @match Orcus|Balrog|Asmodeus|Jessy
-   Gatekeeper! OPEN!!.
-@match Kill|KILL|kill
-   Great! We all need some excercises!
+Gatekeeper! OPEN!!.
+@match kill
+Great! We all need some excercises!
 @match sacrifice
-   Aha, the more fresh flesh the better.
-Put the sacrifice away!!
+Aha, the more fresh flesh the better.  Put the sacrifice away!!
 @match *
-   You'd better leave before I throw
-you out or summon more guards
+You'd better leave before I throw you out or summon more guards!
 endmsg
 Wis 30
 hp 5500
@@ -3559,10 +3262,7 @@ y 26
 end
 arch magic_mouth
 msg
-You hope nobody will discover will
-discover you, not too soon; because you
-hear the noise of lots of dragonmen and
-maybe other creatures.
+You hope nobody will discover will discover you, not too soon; because you hear the noise of lots of dragonmen and maybe other creatures.
 endmsg
 x 14
 y 27
@@ -3608,7 +3308,7 @@ end
 arch large_stones
 x 14
 y 32
-no_pass 1
+move_block all
 end
 arch large_stones
 x 14
@@ -3640,9 +3340,7 @@ end
 arch invis_exit
 slaying Chaos_lair2
 msg
-You hear sounds of rushing air, like
-dragon breathing, together with
-continuous concussions.
+You hear sounds of rushing air, like dragon breathing, together with continuous concussions.
 endmsg
 hp 12
 sp 35
@@ -3698,8 +3396,7 @@ y 12
 end
 arch magic_mouth
 msg
-A feeling of being discovered creeps up
-your spine
+A feeling of being discovered creeps up your spine.
 endmsg
 x 15
 y 13
@@ -3714,8 +3411,7 @@ y 14
 end
 arch magic_mouth
 msg
-You hope nobody will discover will
-discover you, not too soon
+You hope nobody will discover will discover you, not too soon.
 endmsg
 x 15
 y 15
@@ -3845,10 +3541,7 @@ y 26
 end
 arch magic_mouth
 msg
-You hope nobody will discover will
-discover you, not too soon; because you
-hear the noise of lots of dragonmen and
-maybe other creatures.
+You hope nobody will discover will discover you, not too soon; because you hear the noise of lots of dragonmen and maybe other creatures.
 endmsg
 x 15
 y 27
@@ -3894,7 +3587,7 @@ end
 arch large_stones
 x 15
 y 32
-no_pass 1
+move_block all
 end
 arch large_stones
 x 15
@@ -3926,9 +3619,7 @@ end
 arch invis_exit
 slaying Chaos_lair2
 msg
-You hear sounds of rushing air, like
-dragon breathing, together with
-continuous concussions.
+You hear sounds of rushing air, like dragon breathing, together with continuous concussions.
 endmsg
 hp 13
 sp 35
@@ -4008,8 +3699,7 @@ y 18
 end
 arch magic_mouth
 msg
-You hope nobody will discover will
-discover you, not too soon
+You hope nobody will discover will discover you, not too soon.
 endmsg
 x 16
 y 19
@@ -4119,10 +3809,7 @@ y 25
 end
 arch magic_mouth
 msg
-You hope nobody will discover will
-discover you, not too soon; because you
-hear the noise of lots of dragonmen and
-maybe other creatures.
+You hope nobody will discover will discover you, not too soon; because you hear the noise of lots of dragonmen and maybe other creatures.
 endmsg
 x 16
 y 26
@@ -4133,10 +3820,7 @@ y 26
 end
 arch magic_mouth
 msg
-You hope nobody will discover will
-discover you, not too soon; because you
-hear the noise of lots of dragonmen and
-maybe other creatures.
+You hope nobody will discover will discover you, not too soon; because you hear the noise of lots of dragonmen and maybe other creatures.
 endmsg
 x 16
 y 27
@@ -4182,7 +3866,7 @@ end
 arch large_stones
 x 16
 y 32
-no_pass 1
+move_block all
 end
 arch large_stones
 x 16
@@ -4214,9 +3898,7 @@ end
 arch invis_exit
 slaying Chaos_lair2
 msg
-You hear sounds of rushing air, like
-dragon breathing, together with
-continuous concussions.
+You hear sounds of rushing air, like dragon breathing, together with continuous concussions.
 endmsg
 hp 14
 sp 35
@@ -4280,8 +3962,7 @@ y 14
 end
 arch magic_mouth
 msg
-You hope nobody will discover will
-discover you, not too soon
+You hope nobody will discover will discover you, not too soon.
 endmsg
 x 17
 y 15
@@ -4450,7 +4131,7 @@ end
 arch large_stones
 x 17
 y 32
-no_pass 1
+move_block all
 end
 arch large_stones
 x 17
@@ -4482,9 +4163,7 @@ end
 arch invis_exit
 slaying Chaos_lair2
 msg
-You hear sounds of rushing air, like
-dragon breathing, together with
-continuous concussions.
+You hear sounds of rushing air, like dragon breathing, together with continuous concussions.
 endmsg
 hp 15
 sp 35
@@ -4535,8 +4214,7 @@ arch key2
 name Dragonbadge
 slaying badge_dragon
 msg
-  This flaming red badge is a symbol of
-status and importance.
+This flaming red badge is a symbol of status and importance.
 endmsg
 face baby_drag.113
 value 10000
@@ -4586,8 +4264,7 @@ y 16
 end
 arch magic_mouth
 msg
-You hope nobody will discover will
-discover you, not too soon
+You hope nobody will discover will discover you, not too soon.
 endmsg
 x 18
 y 17
@@ -4709,10 +4386,7 @@ y 26
 end
 arch magic_mouth
 msg
-You hope nobody will discover will
-discover you, not too soon; because you
-hear the noise of lots of dragonmen and
-maybe other creatures.
+You hope nobody will discover will discover you, not too soon; because you hear the noise of lots of dragonmen and maybe other creatures.
 endmsg
 x 18
 y 27
@@ -4758,7 +4432,7 @@ end
 arch large_stones
 x 18
 y 32
-no_pass 1
+move_block all
 end
 arch large_stones
 x 18
@@ -4956,9 +4630,7 @@ end
 arch magic_ear
 msg
 @match Orcus|Balrog|Asmodeus|Jessy
-   A parade of guards and guardians
-appeared to greet. You hope no one
-discovers you.
+A parade of guards and guardians appeared to greet.  You hope no one discovers you.
 endmsg
 x 19
 y 23
@@ -4966,9 +4638,8 @@ connected 8
 end
 arch magic_ear
 msg
-@match Kill|KILL|kill
-   A line of guards appeared behide you
-grinning evilly.
+@match kill
+A line of guards appeared behind you grinning evilly.
 endmsg
 x 19
 y 23
@@ -4989,19 +4660,16 @@ end
 arch dragonman
 name dragonman guard
 msg
-@match Open|open|enter|gate|door
-   What's your name? What's your 
-business?
+@match open|enter|gate|door
+What's your name? What's your business?
 @match Orcus|Balrog|Asmodeus|Jessy
-   Gatekeeper! OPEN!!.
-@match Kill|KILL|kill
-   Great! We all need some excercises!
+Gatekeeper! OPEN!!.
+@match kill
+Great! We all need some excercises!
 @match sacrifice
-   Aha, the more fresh flesh the better.
-Put the sacrifice away!!
+Aha, the more fresh flesh the better.  Put the sacrifice away!!
 @match *
-   You'd better leave before I throw
-you out or summon more guards
+You'd better leave before I throw you out or summon more guards!
 endmsg
 Wis 30
 hp 5500
@@ -5030,10 +4698,7 @@ y 25
 end
 arch magic_mouth
 msg
-You hope nobody will discover will
-discover you, not too soon; because you
-hear the noise of lots of dragonmen and
-maybe other creatures.
+You hope nobody will discover will discover you, not too soon; because you hear the noise of lots of dragonmen and maybe other creatures.
 endmsg
 x 19
 y 26
@@ -5083,7 +4748,7 @@ end
 arch large_stones
 x 19
 y 32
-no_pass 1
+move_block all
 end
 arch large_stones
 x 19
@@ -5140,9 +4805,7 @@ arch cave22
 x 20
 y 6
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 20
 y 7
 end
@@ -5384,21 +5047,15 @@ arch cave23
 x 21
 y 5
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 21
 y 6
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 21
 y 7
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 21
 y 8
 end
@@ -5448,8 +5105,7 @@ y 18
 end
 arch magic_mouth
 msg
-A feeling of being discovered creeps up
-your spine
+A feeling of being discovered creeps up your spine.
 endmsg
 x 21
 y 19
@@ -5640,15 +5296,11 @@ arch cave22
 x 22
 y 5
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 22
 y 6
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 22
 y 7
 end
@@ -5784,7 +5436,7 @@ arch cave23
 x 22
 y 26
 end
-arch blocked
+arch cave_15
 x 22
 y 27
 end
@@ -5854,27 +5506,19 @@ arch cave22
 x 23
 y 3
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 23
 y 4
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 23
 y 5
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 23
 y 6
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 23
 y 7
 end
@@ -5962,27 +5606,27 @@ arch cave2
 x 23
 y 26
 end
-arch blocked
+arch cave_15
 x 23
 y 27
 end
-arch blocked
+arch cave_15
 x 23
 y 28
 end
-arch blocked
+arch cave_15
 x 23
 y 29
 end
-arch blocked
+arch cave_15
 x 23
 y 30
 end
-arch blocked
+arch cave_15
 x 23
 y 31
 end
-arch blocked
+arch cave_15
 x 23
 y 32
 end
@@ -6006,9 +5650,7 @@ arch large_stones
 x 23
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 end
 arch large_stones
@@ -6027,39 +5669,27 @@ arch cave22
 x 24
 y 2
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 3
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 4
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 5
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 6
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 7
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 8
 end
@@ -6188,21 +5818,15 @@ x 24
 y 30
 connected 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 31
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 32
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 33
 end
@@ -6218,56 +5842,38 @@ arch cave1
 x 24
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 25
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 25
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 25
 y 2
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 25
 y 3
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 25
 y 4
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 25
 y 5
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 25
 y 6
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 25
 y 7
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 25
 y 8
 end
@@ -6375,73 +5981,40 @@ arch cave22
 x 25
 y 28
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 25
 y 29
 end
-arch blocked
+arch cave_15
 x 25
 y 30
 end
-arch blocked
+arch cave_15
 x 25
 y 31
 end
-arch blocked
+arch cave_15
 x 25
 y 32
 end
-arch blocked
+arch cave_15
 x 25
 y 33
 end
-arch blocked
+arch cave_15
 x 25
 y 34
 end
-arch blocked
+arch cave_15
 x 25
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 26
 end
-arch pit_closed
-msg
-endmsg
-hp 23
-sp 11
-x 26
-y 1
-connected 11
-end
-arch pit_closed
-hp 23
-sp 12
-x 26
-y 2
-connected 11
-end
-arch pit_closed
-hp 23
-sp 13
-x 26
-y 3
-connected 11
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 26
 y 4
-end
-arch large_stones
-x 26
-y 5
 end
 arch pit_closed
 hp 18
@@ -6467,8 +6040,7 @@ arch key2
 name Dragonbadge
 slaying badge_dragon
 msg
-  This flaming red badge is a symbol of
-status and importance.
+This flaming red badge is a symbol of status and importance.
 endmsg
 face baby_drag.113
 value 10000
@@ -6480,26 +6052,11 @@ end
 arch abil_fear
 end
 end
-arch large_stones
-x 26
-y 6
-end
-arch pit_closed
-hp 18
-sp 10
-x 26
-y 6
-connected 1
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 26
 y 7
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 26
 y 8
 end
@@ -6569,8 +6126,7 @@ y 23
 end
 arch magic_mouth
 msg
-A feeling of being discovered creeps up
-your spine
+A feeling of being discovered creeps up your spine.
 endmsg
 x 26
 y 24
@@ -6591,57 +6147,48 @@ arch cave2
 x 26
 y 26
 end
-arch blocked
+arch cave_15
 x 26
 y 27
 end
-arch blocked
+arch cave_15
 x 26
 y 28
 end
-arch blocked
+arch cave_15
 x 26
 y 29
 end
-arch blocked
+arch cave_15
 x 26
 y 30
 end
-arch blocked
+arch cave_15
 x 26
 y 31
 end
-arch blocked
+arch cave_15
 x 26
 y 32
 end
-arch blocked
+arch cave_15
 x 26
 y 33
 end
-arch blocked
+arch cave_15
 x 26
 y 34
 end
-arch blocked
+arch cave_15
 x 26
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 27
 end
 arch pit_closed
-hp 24
+hp 23
 sp 11
-x 27
-y 1
-connected 11
-end
-arch pit_closed
-hp 24
-sp 12
 x 27
 y 2
 connected 11
@@ -6657,34 +6204,19 @@ resist_physical 30
 resist_fire 90
 resist_weaponmagic 30
 end
-arch pit_closed
-hp 24
-sp 13
-x 27
-y 3
-connected 11
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 27
 y 4
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 27
 y 5
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 27
 y 6
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 27
 y 7
 end
@@ -6784,73 +6316,44 @@ arch cave23
 x 27
 y 27
 end
-arch blocked
+arch cave_15
 x 27
 y 28
 end
-arch blocked
+arch cave_15
 x 27
 y 29
 end
-arch blocked
+arch cave_15
 x 27
 y 30
 end
-arch blocked
+arch cave_15
 x 27
 y 31
 end
-arch blocked
+arch cave_15
 x 27
 y 32
 end
-arch blocked
+arch cave_15
 x 27
 y 33
 end
-arch blocked
+arch cave_15
 x 27
 y 34
 end
-arch blocked
+arch cave_15
 x 27
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 28
 end
-arch pit_closed
-hp 25
-sp 11
-x 28
-y 1
-connected 11
-end
-arch pit_closed
-hp 25
-sp 12
-x 28
-y 2
-connected 11
-end
-arch pit_closed
-hp 25
-sp 13
-x 28
-y 3
-connected 11
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 28
 y 4
-end
-arch large_stones
-x 28
-y 5
 end
 arch pit_closed
 hp 20
@@ -6876,8 +6379,7 @@ arch key2
 name Dragonbadge
 slaying badge_dragon
 msg
-  This flaming red badge is a symbol of
-status and importance.
+This flaming red badge is a symbol of status and importance.
 endmsg
 face baby_drag.113
 value 10000
@@ -6889,20 +6391,7 @@ end
 arch abil_fear
 end
 end
-arch large_stones
-x 28
-y 6
-end
-arch pit_closed
-hp 20
-sp 12
-x 28
-y 6
-connected 1
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 28
 y 7
 end
@@ -7002,88 +6491,70 @@ arch cave22
 x 28
 y 27
 end
-arch blocked
+arch cave_15
 x 28
 y 28
 end
-arch blocked
+arch cave_15
 x 28
 y 29
 end
-arch blocked
+arch cave_15
 x 28
 y 30
 end
-arch blocked
+arch cave_15
 x 28
 y 31
 end
-arch blocked
+arch cave_15
 x 28
 y 32
 end
-arch blocked
+arch cave_15
 x 28
 y 33
 end
-arch blocked
+arch cave_15
 x 28
 y 34
 end
-arch blocked
+arch cave_15
 x 28
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 29
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 29
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 29
 y 2
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 29
 y 3
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 29
 y 4
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 29
 y 5
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 29
 y 6
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 29
 y 7
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 29
 y 8
 end
@@ -7175,21 +6646,17 @@ arch cave22
 x 29
 y 26
 end
-arch blocked
+arch cave_15
 x 29
 y 27
 end
-arch blocked
+arch cave_15
 x 29
 y 28
 end
-arch blocked
+arch cave_15
 x 29
 y 29
-end
-arch large_stones
-x 29
-y 30
 end
 arch pit_closed
 hp 14
@@ -7217,24 +6684,9 @@ end
 arch spell_sm_lightning
 end
 end
-arch large_stones
-x 29
-y 31
-end
-arch pit_closed
-hp 14
-sp 13
-x 29
-y 31
-connected 1
-end
-arch blocked
+arch cave_15
 x 29
 y 32
-end
-arch large_stones
-x 29
-y 33
 end
 arch pit_closed
 hp 12
@@ -7262,53 +6714,28 @@ end
 arch spell_sm_lightning
 end
 end
-arch large_stones
-x 29
-y 34
-end
-arch pit_closed
-hp 12
-sp 19
-x 29
-y 34
-connected 1
-end
-arch blocked
+arch cave_15
 x 29
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 30
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 30
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 30
 y 2
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 30
 y 3
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 30
 y 4
-end
-arch large_stones
-x 30
-y 5
 end
 arch pit_closed
 hp 24
@@ -7334,8 +6761,7 @@ arch key2
 name Dragonbadge
 slaying badge_dragon
 msg
-  This flaming red badge is a symbol of
-status and importance.
+This flaming red badge is a symbol of status and importance.
 endmsg
 face baby_drag.113
 value 10000
@@ -7347,32 +6773,15 @@ end
 arch abil_fear
 end
 end
-arch large_stones
-x 30
-y 6
-end
-arch pit_closed
-hp 24
-sp 16
-x 30
-y 6
-connected 1
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 30
 y 7
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 30
 y 8
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 30
 y 9
 end
@@ -7430,8 +6839,7 @@ y 20
 end
 arch magic_mouth
 msg
-A feeling of being discovered creeps up
-your spine
+A feeling of being discovered creeps up your spine.
 endmsg
 x 30
 y 21
@@ -7460,55 +6868,47 @@ arch cave20
 x 30
 y 25
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 30
 y 26
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 30
 y 27
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 30
 y 28
 end
-arch blocked
+arch cave_15
 x 30
 y 29
 end
-arch blocked
+arch cave_15
 x 30
 y 30
 end
-arch blocked
+arch cave_15
 x 30
 y 31
 end
-arch blocked
+arch cave_15
 x 30
 y 32
 end
-arch blocked
+arch cave_15
 x 30
 y 33
 end
-arch blocked
+arch cave_15
 x 30
 y 34
 end
-arch blocked
+arch cave_15
 x 30
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 31
 end
 arch pit_closed
@@ -7526,53 +6926,27 @@ y 1
 resist_physical 30
 resist_weaponmagic 30
 end
-arch pit_closed
-hp 14
-sp 9
-x 31
-y 2
-connected 11
-end
-arch pit_closed
-hp 14
-sp 10
-x 31
-y 3
-connected 11
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 31
 y 4
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 31
 y 5
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 31
 y 6
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 31
 y 7
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 31
 y 8
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 31
 y 9
 end
@@ -7652,37 +7026,25 @@ arch cave20
 x 31
 y 24
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 31
 y 25
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 31
 y 26
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 31
 y 27
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 31
 y 28
 end
-arch blocked
+arch cave_15
 x 31
 y 29
-end
-arch large_stones
-x 31
-y 30
 end
 arch pit_closed
 hp 22
@@ -7710,24 +7072,9 @@ end
 arch spell_sm_lightning
 end
 end
-arch large_stones
-x 31
-y 31
-end
-arch pit_closed
-hp 22
-sp 19
-x 31
-y 31
-connected 1
-end
-arch blocked
+arch cave_15
 x 31
 y 32
-end
-arch large_stones
-x 31
-y 33
 end
 arch pit_closed
 hp 26
@@ -7755,56 +7102,16 @@ end
 arch spell_sm_lightning
 end
 end
-arch large_stones
-x 31
-y 34
-end
-arch pit_closed
-hp 26
-sp 23
-x 31
-y 34
-connected 1
-end
-arch blocked
+arch cave_15
 x 31
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 32
 end
-arch pit_closed
-hp 15
-sp 8
-x 32
-y 1
-connected 11
-end
-arch pit_closed
-hp 15
-sp 9
-x 32
-y 2
-connected 11
-end
-arch pit_closed
-hp 15
-sp 10
-x 32
-y 3
-connected 11
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 32
 y 4
-end
-arch large_stones
-x 32
-y 5
 end
 arch pit_closed
 hp 28
@@ -7830,8 +7137,7 @@ arch key2
 name Dragonbadge
 slaying badge_dragon
 msg
-  This flaming red badge is a symbol of
-status and importance.
+This flaming red badge is a symbol of status and importance.
 endmsg
 face baby_drag.113
 value 10000
@@ -7843,26 +7149,11 @@ end
 arch abil_fear
 end
 end
-arch large_stones
-x 32
-y 6
-end
-arch pit_closed
-hp 28
-sp 13
-x 32
-y 6
-connected 1
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 32
 y 7
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 32
 y 8
 end
@@ -7954,115 +7245,74 @@ arch cave20
 x 32
 y 23
 end
-arch blocked
+arch cave_15
 x 32
 y 24
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 32
 y 25
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 32
 y 26
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 32
 y 27
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 32
 y 28
 end
-arch blocked
+arch cave_15
 x 32
 y 29
 end
-arch blocked
+arch cave_15
 x 32
 y 30
 end
-arch blocked
+arch cave_15
 x 32
 y 31
 end
-arch blocked
+arch cave_15
 x 32
 y 32
 end
-arch blocked
+arch cave_15
 x 32
 y 33
 end
-arch blocked
+arch cave_15
 x 32
 y 34
 end
-arch blocked
+arch cave_15
 x 32
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 33
 end
-arch pit_closed
-hp 16
-sp 8
-x 33
-y 1
-connected 11
-end
-arch pit_closed
-hp 16
-sp 9
-x 33
-y 2
-connected 11
-end
-arch pit_closed
-hp 16
-sp 10
-x 33
-y 3
-connected 11
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 33
 y 4
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 33
 y 5
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 33
 y 6
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 33
 y 7
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 33
 y 8
 end
@@ -8170,55 +7420,37 @@ arch cave2
 x 33
 y 21
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 33
 y 22
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 33
 y 23
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 33
 y 24
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 33
 y 25
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 33
 y 26
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 33
 y 27
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 33
 y 28
 end
-arch blocked
+arch cave_15
 x 33
 y 29
-end
-arch large_stones
-x 33
-y 30
 end
 arch pit_closed
 hp 27
@@ -8246,24 +7478,9 @@ end
 arch spell_sm_lightning
 end
 end
-arch large_stones
-x 33
-y 31
-end
-arch pit_closed
-hp 27
-sp 17
-x 33
-y 31
-connected 1
-end
-arch blocked
+arch cave_15
 x 33
 y 32
-end
-arch large_stones
-x 33
-y 33
 end
 arch pit_closed
 hp 7
@@ -8291,77 +7508,46 @@ end
 arch spell_sm_lightning
 end
 end
-arch large_stones
-x 33
-y 34
-end
-arch pit_closed
-hp 7
-sp 14
-x 33
-y 34
-connected 1
-end
-arch blocked
+arch cave_15
 x 33
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 34
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 34
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 34
 y 2
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 34
 y 3
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 34
 y 4
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 34
 y 5
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 34
 y 6
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 34
 y 7
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 34
 y 8
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 34
 y 9
 end
@@ -8397,15 +7583,11 @@ arch cave22
 x 34
 y 13
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 34
 y 14
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 34
 y 15
 end
@@ -8425,15 +7607,11 @@ arch cave22
 x 34
 y 17
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 34
 y 18
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 34
 y 19
 end
@@ -8453,132 +7631,98 @@ arch cave2
 x 34
 y 21
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 34
 y 22
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 34
 y 23
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 34
 y 24
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 34
 y 25
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 34
 y 26
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 34
 y 27
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 34
 y 28
 end
-arch blocked
+arch cave_15
 x 34
 y 29
 end
-arch blocked
+arch cave_15
 x 34
 y 30
 end
-arch blocked
+arch cave_15
 x 34
 y 31
 end
-arch blocked
+arch cave_15
 x 34
 y 32
 end
-arch blocked
+arch cave_15
 x 34
 y 33
 end
-arch blocked
+arch cave_15
 x 34
 y 34
 end
-arch blocked
+arch cave_15
 x 34
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 35
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 35
 y 2
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 35
 y 3
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 35
 y 4
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 35
 y 5
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 35
 y 6
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 35
 y 7
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 35
 y 8
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 35
 y 9
 end
@@ -8642,9 +7786,7 @@ name 7
 x 35
 y 16
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 35
 y 17
 end
@@ -8682,73 +7824,59 @@ arch cave22
 x 35
 y 21
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 35
 y 22
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 35
 y 23
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 35
 y 24
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 35
 y 25
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 35
 y 26
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 35
 y 27
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 35
 y 28
 end
-arch blocked
+arch cave_15
 x 35
 y 29
 end
-arch blocked
+arch cave_15
 x 35
 y 30
 end
-arch blocked
+arch cave_15
 x 35
 y 31
 end
-arch blocked
+arch cave_15
 x 35
 y 32
 end
-arch blocked
+arch cave_15
 x 35
 y 33
 end
-arch blocked
+arch cave_15
 x 35
 y 34
 end
-arch blocked
+arch cave_15
 x 35
 y 35
 end

@@ -1,13 +1,15 @@
 arch map
+name Gates of Hell, Gate 9
+difficulty 35
 region brest
-name gate9
+width 29
+height 29
+enter_x 23
+enter_y 5
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Wed Sep 21 08:45:37 1994
+Created:  1994-09-21
+Modified: 2008-11-26 Rick Tanner
 endmsg
-x 29
-y 29
 end
 arch sea
 end
@@ -737,6 +739,7 @@ end
 arch swall_2_1_2
 x 5
 y 22
+no_magic 1
 damned 1
 end
 arch dirtfloor
@@ -847,6 +850,8 @@ end
 arch potion_heal
 x 6
 y 14
+arch spell_heal
+end
 end
 arch dirtfloor
 x 6
@@ -855,6 +860,8 @@ end
 arch potion_magic
 x 6
 y 15
+arch spell_regenerate_spellpoints
+end
 end
 arch dirtfloor
 x 6
@@ -895,6 +902,7 @@ end
 arch swall_2_1_2
 x 6
 y 22
+no_magic 1
 damned 1
 end
 arch dirtfloor
@@ -905,6 +913,8 @@ arch grate_closed_2
 x 6
 y 23
 connected 1
+no_magic 1
+damned 1
 end
 arch dirtfloor
 x 6
@@ -1044,6 +1054,7 @@ end
 arch swall_2_1_2
 x 7
 y 22
+no_magic 1
 damned 1
 end
 arch dirtfloor
@@ -1054,6 +1065,8 @@ arch grate_closed_2
 x 7
 y 23
 connected 2
+no_magic 1
+damned 1
 end
 arch dirtfloor
 x 7
@@ -1114,6 +1127,10 @@ arch grass
 x 8
 y 7
 end
+arch mountain_2
+x 8
+y 8
+end
 arch woods_3
 x 8
 y 10
@@ -1169,6 +1186,7 @@ end
 arch swall_1_3
 x 8
 y 22
+no_magic 1
 damned 1
 end
 arch dirtfloor
@@ -1179,6 +1197,8 @@ arch grate_closed_2
 x 8
 y 23
 connected 3
+no_magic 1
+damned 1
 end
 arch dirtfloor
 x 8
@@ -1542,6 +1562,11 @@ arch grass
 x 11
 y 20
 end
+arch jessyb
+x 11
+y 20
+speed_left -6.400000
+end
 arch dirtfloor
 x 11
 y 21
@@ -1743,6 +1768,8 @@ end
 arch potion_magic
 x 13
 y 6
+arch spell_regenerate_spellpoints
+end
 end
 arch grass
 x 13
@@ -1874,6 +1901,8 @@ end
 arch potion_heal
 x 14
 y 6
+arch spell_heal
+end
 end
 arch dirtfloor
 x 14
@@ -2643,6 +2672,10 @@ arch dirtfloor
 x 20
 y 6
 end
+arch volcano_low
+x 20
+y 6
+end
 arch large_stones
 x 20
 y 7
@@ -2853,6 +2886,8 @@ end
 arch potion_magic
 x 21
 y 22
+arch spell_regenerate_spellpoints
+end
 end
 arch mountain
 x 21
@@ -2984,6 +3019,8 @@ end
 arch potion_heal
 x 22
 y 22
+arch spell_heal
+end
 end
 arch mountain
 x 22
@@ -3040,7 +3077,7 @@ arch dirtfloor
 x 23
 y 5
 end
-arch oakdoor
+arch exit
 slaying palace3
 hp 6
 sp 1
@@ -3801,17 +3838,4 @@ end
 arch sea
 x 28
 y 28
-end
-arch mountain_2
-x 8
-y 8
-end
-arch jessyb
-x 11
-y 20
-speed_left -6.400000
-end
-arch volcano_low
-x 20
-y 6
 end

@@ -1,13 +1,14 @@
 arch map
-region lakecountry
-name <untitled>
-msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Wed May  3 23:39:15 1995
-endmsg
+name Arena of Lake Country
+difficulty 25
+region butakisfortress
 width 40
 height 30
+enter_y 20
+msg
+Created:  1995-05-03
+Modified: 2012-02-06 Rick Tanner
+endmsg
 end
 arch dungeon_floor
 end
@@ -130,7 +131,7 @@ end
 arch dungeon_floor
 y 20
 end
-arch oakdoor
+arch oakdoor_1
 slaying Butakis0
 hp 16
 sp 16
@@ -139,7 +140,7 @@ end
 arch dungeon_floor
 y 21
 end
-arch oakdoor
+arch oakdoor_1
 slaying Butakis0
 hp 16
 sp 16
@@ -285,11 +286,8 @@ y 21
 end
 arch sign
 msg
-This arena is used to judge if a
-prisoner should die or allowed to be
-free. If you want to try your luck go
-to the towers of luck in inner city.
--Arena Management
+This arena is used to judge if a prisoner should die or allowed to be free.  If you want to try your luck go to the towers of luck in inner city.
+ -Arena Management
 endmsg
 x 1
 y 21
@@ -489,10 +487,10 @@ x 2
 y 14
 end
 arch locked_door2
-msg
-You need arena key to open this door.
-endmsg
 slaying arena
+msg
+You need the arena key to open this door.
+endmsg
 x 2
 y 14
 end
@@ -810,6 +808,17 @@ arch dungeon_floor
 x 3
 y 13
 end
+arch giant
+name big hill giant
+hp 450
+x 3
+y 13
+carrying 100
+arch key2
+name arena key
+slaying arena
+end
+end
 arch magic_banned
 x 3
 y 14
@@ -823,6 +832,10 @@ x 3
 y 15
 end
 arch dungeon_floor
+x 3
+y 15
+end
+arch giant
 x 3
 y 15
 end
@@ -1040,6 +1053,10 @@ arch dungeon_floor
 x 4
 y 6
 end
+arch behemoth
+x 4
+y 6
+end
 arch magic_banned
 x 4
 y 7
@@ -1112,6 +1129,10 @@ arch dungeon_floor
 x 4
 y 13
 end
+arch giant
+x 4
+y 13
+end
 arch magic_banned
 x 4
 y 14
@@ -1125,6 +1146,10 @@ x 4
 y 15
 end
 arch dungeon_floor
+x 4
+y 15
+end
+arch giant
 x 4
 y 15
 end
@@ -1177,9 +1202,9 @@ x 4
 y 20
 end
 arch button_plate
+x 4
+y 20
 connected 22
-x 4
-y 20
 end
 arch magic_banned
 x 4
@@ -1190,9 +1215,9 @@ x 4
 y 21
 end
 arch button_plate
-connected 21
 x 4
 y 21
+connected 21
 end
 arch magic_banned
 x 4
@@ -1227,9 +1252,9 @@ x 4
 y 24
 end
 arch button_plate
-connected 20
 x 4
 y 24
+connected 20
 end
 arch magic_banned
 x 4
@@ -1240,11 +1265,11 @@ x 4
 y 25
 end
 arch spikes_open
+x 4
+y 25
 speed 0.500000
 value 1
 connected 1
-x 4
-y 25
 end
 arch boulder
 x 4
@@ -1316,6 +1341,15 @@ arch dungeon_floor
 x 5
 y 3
 end
+arch behemoth
+x 5
+y 3
+carrying 100
+arch key2
+name arena key
+slaying arena
+end
+end
 arch magic_banned
 x 5
 y 4
@@ -1408,6 +1442,10 @@ arch dungeon_floor
 x 5
 y 12
 end
+arch giant
+x 5
+y 12
+end
 arch magic_banned
 x 5
 y 13
@@ -1421,6 +1459,10 @@ x 5
 y 14
 end
 arch dungeon_floor
+x 5
+y 14
+end
+arch giant
 x 5
 y 14
 end
@@ -1437,6 +1479,10 @@ x 5
 y 16
 end
 arch dungeon_floor
+x 5
+y 16
+end
+arch giant
 x 5
 y 16
 end
@@ -1481,9 +1527,9 @@ x 5
 y 20
 end
 arch button_plate
-connected 23
 x 5
 y 20
+connected 23
 end
 arch magic_banned
 x 5
@@ -1494,11 +1540,11 @@ x 5
 y 21
 end
 arch spikes_open
+x 5
+y 21
 speed 0.500000
 value 1
 connected 20
-x 5
-y 21
 end
 arch boulder
 x 5
@@ -1549,9 +1595,9 @@ x 5
 y 25
 end
 arch button_plate
-connected 10
 x 5
 y 25
+connected 10
 end
 arch dungeon_floor
 x 5
@@ -1656,6 +1702,10 @@ x 6
 y 7
 end
 arch dungeon_floor
+x 6
+y 7
+end
+arch behemoth
 x 6
 y 7
 end
@@ -1712,10 +1762,10 @@ x 6
 y 12
 end
 arch block_door_closed
-speed 0.500000
-connected 11
 x 6
 y 12
+speed 0.500000
+connected 11
 end
 arch dungeon_floor
 x 6
@@ -1726,10 +1776,10 @@ x 6
 y 13
 end
 arch block_door_closed
-speed 0.500000
-connected 11
 x 6
 y 13
+speed 0.500000
+connected 11
 end
 arch dungeon_floor
 x 6
@@ -1740,10 +1790,10 @@ x 6
 y 14
 end
 arch block_door_closed
-speed 0.500000
-connected 11
 x 6
 y 14
+speed 0.500000
+connected 11
 end
 arch dungeon_floor
 x 6
@@ -1754,10 +1804,10 @@ x 6
 y 15
 end
 arch block_door_closed
-speed 0.500000
-connected 11
 x 6
 y 15
+speed 0.500000
+connected 11
 end
 arch dungeon_floor
 x 6
@@ -1768,10 +1818,10 @@ x 6
 y 16
 end
 arch block_door_closed
-speed 0.500000
-connected 11
 x 6
 y 16
+speed 0.500000
+connected 11
 end
 arch dungeon_floor
 x 6
@@ -1782,10 +1832,10 @@ x 6
 y 17
 end
 arch block_door_closed
-speed 0.500000
-connected 11
 x 6
 y 17
+speed 0.500000
+connected 11
 end
 arch dungeon_floor
 x 6
@@ -1820,9 +1870,9 @@ x 6
 y 20
 end
 arch button_plate
-connected 24
 x 6
 y 20
+connected 24
 end
 arch magic_banned
 x 6
@@ -1833,9 +1883,9 @@ x 6
 y 21
 end
 arch button_plate
+x 6
+y 21
 connected 25
-x 6
-y 21
 end
 arch magic_banned
 x 6
@@ -1846,9 +1896,9 @@ x 6
 y 22
 end
 arch button_plate
-connected 26
 x 6
 y 22
+connected 26
 end
 arch magic_banned
 x 6
@@ -1871,9 +1921,9 @@ x 6
 y 24
 end
 arch button_plate
-connected 11
 x 6
 y 24
+connected 11
 end
 arch magic_banned
 x 6
@@ -1884,9 +1934,9 @@ x 6
 y 25
 end
 arch button_plate
-connected 12
 x 6
 y 25
+connected 12
 end
 arch dungeon_floor
 x 6
@@ -2031,10 +2081,10 @@ x 7
 y 10
 end
 arch block_door_closed
-speed 0.500000
-connected 12
 x 7
 y 10
+speed 0.500000
+connected 12
 end
 arch dungeon_floor
 x 7
@@ -2045,10 +2095,10 @@ x 7
 y 11
 end
 arch block_door_closed
-speed 0.500000
-connected 12
 x 7
 y 11
+speed 0.500000
+connected 12
 end
 arch magic_banned
 x 7
@@ -2203,11 +2253,11 @@ x 7
 y 24
 end
 arch spikes_open
+x 7
+y 24
 speed 0.500000
 value 1
 connected 10
-x 7
-y 24
 end
 arch boulder
 x 7
@@ -2222,9 +2272,9 @@ x 7
 y 25
 end
 arch button_plate
-connected 13
 x 7
 y 25
+connected 13
 end
 arch dungeon_floor
 x 7
@@ -2316,6 +2366,10 @@ arch dungeon_floor
 x 8
 y 5
 end
+arch behemoth
+x 8
+y 5
+end
 arch magic_banned
 x 8
 y 6
@@ -2357,10 +2411,10 @@ x 8
 y 9
 end
 arch block_door_closed
-speed 0.500000
-connected 12
 x 8
 y 9
+speed 0.500000
+connected 12
 end
 arch dungeon_floor
 x 8
@@ -2371,10 +2425,10 @@ x 8
 y 10
 end
 arch block_door_closed
-speed 0.500000
-connected 12
 x 8
 y 10
+speed 0.500000
+connected 12
 end
 arch magic_banned
 x 8
@@ -2541,9 +2595,9 @@ x 8
 y 24
 end
 arch button_plate
-connected 15
 x 8
 y 24
+connected 15
 end
 arch magic_banned
 x 8
@@ -2554,9 +2608,9 @@ x 8
 y 25
 end
 arch button_plate
-connected 14
 x 8
 y 25
+connected 14
 end
 arch dungeon_floor
 x 8
@@ -2609,11 +2663,10 @@ x 9
 y 2
 end
 arch locked_door1
-msg
-You need the arena key to open this
-door.
-endmsg
 slaying arena
+msg
+You need the arena key to open this door.
+endmsg
 x 9
 y 2
 end
@@ -2678,10 +2731,10 @@ x 9
 y 8
 end
 arch block_door_closed
-speed 0.500000
-connected 12
 x 9
 y 8
+speed 0.500000
+connected 12
 end
 arch dungeon_floor
 x 9
@@ -2692,10 +2745,10 @@ x 9
 y 9
 end
 arch block_door_closed
-speed 0.500000
-connected 12
 x 9
 y 9
+speed 0.500000
+connected 12
 end
 arch magic_banned
 x 9
@@ -2819,11 +2872,7 @@ y 19
 end
 arch sign
 msg
-Go to middle of the arena and say
-'start' when you are ready.
-No magic is can be casted in the
-arena and adjacent areas to prevent
-magical means of fleeing..
+Go to middle of the arena and say 'start' when you are ready.  No magic is can be casted in the arena and adjacent areas to prevent magical means of fleeing..
 endmsg
 x 9
 y 19
@@ -2930,8 +2979,7 @@ y 28
 end
 arch sign_w
 msg
-Go left all the way and turn to find
-the exit.
+Go left all the way and turn to find the exit.
 endmsg
 x 9
 y 28
@@ -2956,8 +3004,7 @@ y 1
 end
 arch sign_w
 msg
-Go left all the way and turn to find
-the exit.
+Go left all the way and turn to find the exit.
 endmsg
 x 10
 y 1
@@ -3043,10 +3090,10 @@ x 10
 y 8
 end
 arch block_door_closed
-speed 0.500000
-connected 12
 x 10
 y 8
+speed 0.500000
+connected 12
 end
 arch magic_banned
 x 10
@@ -3326,6 +3373,10 @@ arch dungeon_floor
 x 11
 y 4
 end
+arch dragon
+x 11
+y 4
+end
 arch magic_banned
 x 11
 y 5
@@ -3339,6 +3390,10 @@ x 11
 y 6
 end
 arch dungeon_floor
+x 11
+y 6
+end
+arch dragon
 x 11
 y 6
 end
@@ -3351,10 +3406,10 @@ x 11
 y 7
 end
 arch block_door_closed
+x 11
+y 7
 speed 0.500000
 connected 13
-x 11
-y 7
 end
 arch magic_banned
 x 11
@@ -3533,10 +3588,10 @@ x 11
 y 22
 end
 arch block_door_closed
-speed 0.500000
-connected 26
 x 11
 y 22
+speed 0.500000
+connected 26
 end
 arch magic_banned
 x 11
@@ -3609,11 +3664,10 @@ x 12
 y 2
 end
 arch locked_door1
-msg
-You need the arena key to open this
-door.
-endmsg
 slaying arena
+msg
+You need the arena key to open this door.
+endmsg
 x 12
 y 2
 end
@@ -3625,6 +3679,15 @@ arch dungeon_floor
 x 12
 y 3
 end
+arch dragon
+x 12
+y 3
+carrying 100
+arch key2
+name arena key
+slaying arena
+end
+end
 arch magic_banned
 x 12
 y 4
@@ -3638,6 +3701,10 @@ x 12
 y 5
 end
 arch dungeon_floor
+x 12
+y 5
+end
+arch dragon
 x 12
 y 5
 end
@@ -3658,10 +3725,10 @@ x 12
 y 7
 end
 arch block_door_closed
+x 12
+y 7
 speed 0.500000
 connected 13
-x 12
-y 7
 end
 arch magic_banned
 x 12
@@ -3840,10 +3907,10 @@ x 12
 y 22
 end
 arch block_door_closed
-speed 0.500000
-connected 26
 x 12
 y 22
+speed 0.500000
+connected 26
 end
 arch magic_banned
 x 12
@@ -3860,6 +3927,15 @@ end
 arch dungeon_floor
 x 12
 y 24
+end
+arch big_elec
+x 12
+y 24
+carrying 100
+arch key2
+name arena key
+slaying arena
+end
 end
 arch magic_banned
 x 12
@@ -3882,11 +3958,10 @@ x 12
 y 27
 end
 arch locked_door1
-msg
-You need the arena key to open this
-door.
-endmsg
 slaying arena
+msg
+You need the arena key to open this door.
+endmsg
 x 12
 y 27
 end
@@ -3940,6 +4015,10 @@ arch dungeon_floor
 x 13
 y 4
 end
+arch dragon
+x 13
+y 4
+end
 arch magic_banned
 x 13
 y 5
@@ -3953,6 +4032,10 @@ x 13
 y 6
 end
 arch dungeon_floor
+x 13
+y 6
+end
+arch dragon
 x 13
 y 6
 end
@@ -3965,10 +4048,10 @@ x 13
 y 7
 end
 arch block_door_closed
+x 13
+y 7
 speed 0.500000
 connected 13
-x 13
-y 7
 end
 arch magic_banned
 x 13
@@ -4147,10 +4230,10 @@ x 13
 y 22
 end
 arch block_door_closed
-speed 0.500000
-connected 26
 x 13
 y 22
+speed 0.500000
+connected 26
 end
 arch magic_banned
 x 13
@@ -4271,10 +4354,10 @@ x 14
 y 7
 end
 arch block_door_closed
-speed 0.500000
-connected 13
 x 14
 y 7
+speed 0.500000
+connected 13
 end
 arch magic_banned
 x 14
@@ -4453,10 +4536,10 @@ x 14
 y 22
 end
 arch block_door_closed
-speed 0.500000
-connected 26
 x 14
 y 22
+speed 0.500000
+connected 26
 end
 arch magic_banned
 x 14
@@ -4915,10 +4998,10 @@ x 16
 y 6
 end
 arch block_door_closed
-speed 0.500000
-connected 14
 x 16
 y 6
+speed 0.500000
+connected 14
 end
 arch magic_banned
 x 16
@@ -5121,10 +5204,10 @@ x 16
 y 23
 end
 arch block_door_closed
-speed 0.500000
-connected 25
 x 16
 y 23
+speed 0.500000
+connected 25
 end
 arch magic_banned
 x 16
@@ -5216,6 +5299,15 @@ arch dungeon_floor
 x 17
 y 3
 end
+arch big_dragon
+x 17
+y 3
+carrying 100
+arch key2
+name arena key
+slaying arena
+end
+end
 arch magic_banned
 x 17
 y 4
@@ -5245,10 +5337,10 @@ x 17
 y 6
 end
 arch block_door_closed
-speed 0.500000
-connected 14
 x 17
 y 6
+speed 0.500000
+connected 14
 end
 arch magic_banned
 x 17
@@ -5451,10 +5543,10 @@ x 17
 y 23
 end
 arch block_door_closed
-speed 0.500000
-connected 25
 x 17
 y 23
+speed 0.500000
+connected 25
 end
 arch magic_banned
 x 17
@@ -5579,10 +5671,10 @@ x 18
 y 6
 end
 arch block_door_closed
-speed 0.500000
-connected 14
 x 18
 y 6
+speed 0.500000
+connected 14
 end
 arch magic_banned
 x 18
@@ -5785,10 +5877,10 @@ x 18
 y 23
 end
 arch block_door_closed
-speed 0.500000
-connected 25
 x 18
 y 23
+speed 0.500000
+connected 25
 end
 arch magic_banned
 x 18
@@ -5809,6 +5901,17 @@ end
 arch dungeon_floor
 x 18
 y 25
+end
+arch baslic
+name huge baslic
+hp 2200
+x 18
+y 25
+carrying 100
+arch key2
+name arena key
+slaying arena
+end
 end
 arch magic_banned
 x 18
@@ -5905,10 +6008,10 @@ x 19
 y 6
 end
 arch block_door_closed
-speed 0.500000
-connected 14
 x 19
 y 6
+speed 0.500000
+connected 14
 end
 arch magic_banned
 x 19
@@ -6004,12 +6107,12 @@ y 14
 end
 arch magic_ear
 msg
-@match Start|start
+@match start
 Now fight your opponent.
 endmsg
-connected 1
 x 19
 y 14
+connected 1
 end
 arch pstone_2
 x 19
@@ -6120,10 +6223,10 @@ x 19
 y 23
 end
 arch block_door_closed
-speed 0.500000
-connected 25
 x 19
 y 23
+speed 0.500000
+connected 25
 end
 arch magic_banned
 x 19
@@ -6248,10 +6351,10 @@ x 20
 y 6
 end
 arch block_door_closed
-speed 0.500000
-connected 14
 x 20
 y 6
+speed 0.500000
+connected 14
 end
 arch magic_banned
 x 20
@@ -6454,10 +6557,10 @@ x 20
 y 23
 end
 arch block_door_closed
-speed 0.500000
-connected 25
 x 20
 y 23
+speed 0.500000
+connected 25
 end
 arch magic_banned
 x 20
@@ -6582,10 +6685,10 @@ x 21
 y 6
 end
 arch block_door_closed
-speed 0.500000
-connected 14
 x 21
 y 6
+speed 0.500000
+connected 14
 end
 arch magic_banned
 x 21
@@ -6788,10 +6891,10 @@ x 21
 y 23
 end
 arch block_door_closed
-speed 0.500000
-connected 25
 x 21
 y 23
+speed 0.500000
+connected 25
 end
 arch magic_banned
 x 21
@@ -6868,11 +6971,10 @@ x 22
 y 2
 end
 arch locked_door1
-msg
-You need the arena key to open this
-door.
-endmsg
 slaying arena
+msg
+You need the arena key to open this door.
+endmsg
 x 22
 y 2
 end
@@ -6925,10 +7027,10 @@ x 22
 y 6
 end
 arch block_door_closed
-speed 0.500000
-connected 14
 x 22
 y 6
+speed 0.500000
+connected 14
 end
 arch magic_banned
 x 22
@@ -7131,10 +7233,10 @@ x 22
 y 23
 end
 arch block_door_closed
-speed 0.500000
-connected 25
 x 22
 y 23
+speed 0.500000
+connected 25
 end
 arch magic_banned
 x 22
@@ -7177,11 +7279,10 @@ x 22
 y 27
 end
 arch locked_door1
-msg
-You need the arena key to open this
-door.
-endmsg
 slaying arena
+msg
+You need the arena key to open this door.
+endmsg
 x 22
 y 27
 end
@@ -7209,8 +7310,7 @@ y 1
 end
 arch sign_w
 msg
-Go left all the way and turn to find
-the exit.
+Go left all the way and turn to find the exit.
 endmsg
 x 23
 y 1
@@ -7533,8 +7633,7 @@ y 28
 end
 arch sign_w
 msg
-Go left all the way and turn to find
-the exit.
+Go left all the way and turn to find the exit.
 endmsg
 x 23
 y 28
@@ -7577,6 +7676,17 @@ arch dungeon_floor
 x 24
 y 3
 end
+arch troll
+name strong troll
+hp 1500
+x 24
+y 3
+carrying 100
+arch key2
+name arena key
+slaying arena
+end
+end
 arch magic_banned
 x 24
 y 4
@@ -7610,10 +7720,10 @@ x 24
 y 7
 end
 arch block_door_closed
+x 24
+y 7
 speed 0.500000
 connected 15
-x 24
-y 7
 end
 arch magic_banned
 x 24
@@ -7792,10 +7902,10 @@ x 24
 y 22
 end
 arch block_door_closed
-speed 0.500000
-connected 24
 x 24
 y 22
+speed 0.500000
+connected 24
 end
 arch dungeon_floor
 x 24
@@ -7916,10 +8026,10 @@ x 25
 y 7
 end
 arch block_door_closed
-speed 0.500000
-connected 15
 x 25
 y 7
+speed 0.500000
+connected 15
 end
 arch magic_banned
 x 25
@@ -8098,10 +8208,10 @@ x 25
 y 22
 end
 arch block_door_closed
-speed 0.500000
-connected 24
 x 25
 y 22
+speed 0.500000
+connected 24
 end
 arch dungeon_floor
 x 25
@@ -8118,6 +8228,15 @@ end
 arch dungeon_floor
 x 25
 y 24
+end
+arch titan
+x 25
+y 24
+carrying 100
+arch key2
+name arena key
+slaying arena
+end
 end
 arch magic_banned
 x 25
@@ -8205,6 +8324,10 @@ arch dungeon_floor
 x 26
 y 5
 end
+arch troll
+x 26
+y 5
+end
 arch magic_banned
 x 26
 y 6
@@ -8226,10 +8349,10 @@ x 26
 y 7
 end
 arch block_door_closed
+x 26
+y 7
 speed 0.500000
 connected 15
-x 26
-y 7
 end
 arch magic_banned
 x 26
@@ -8408,10 +8531,10 @@ x 26
 y 22
 end
 arch block_door_closed
-speed 0.500000
-connected 24
 x 26
 y 22
+speed 0.500000
+connected 24
 end
 arch magic_banned
 x 26
@@ -8484,11 +8607,10 @@ x 27
 y 2
 end
 arch locked_door1
-msg
-You need the arena key to open this
-door.
-endmsg
 slaying arena
+msg
+You need the arena key to open this door.
+endmsg
 x 27
 y 2
 end
@@ -8537,10 +8659,10 @@ x 27
 y 7
 end
 arch block_door_closed
+x 27
+y 7
 speed 0.500000
 connected 15
-x 27
-y 7
 end
 arch magic_banned
 x 27
@@ -8719,10 +8841,10 @@ x 27
 y 22
 end
 arch block_door_closed
+x 27
+y 22
 speed 0.500000
 connected 24
-x 27
-y 22
 end
 arch magic_banned
 x 27
@@ -8761,11 +8883,10 @@ x 27
 y 27
 end
 arch locked_door1
-msg
-You need the arena key to open this
-door.
-endmsg
 slaying arena
+msg
+You need the arena key to open this door.
+endmsg
 x 27
 y 27
 end
@@ -8872,10 +8993,10 @@ x 28
 y 8
 end
 arch block_door_closed
-speed 0.500000
-connected 21
 x 28
 y 8
+speed 0.500000
+connected 21
 end
 arch magic_banned
 x 28
@@ -9030,10 +9151,10 @@ x 28
 y 21
 end
 arch block_door_closed
-speed 0.500000
-connected 23
 x 28
 y 21
+speed 0.500000
+connected 23
 end
 arch dungeon_floor
 x 28
@@ -9134,11 +9255,10 @@ x 29
 y 2
 end
 arch locked_door1
-msg
-You need the arena key to open this
-door.
-endmsg
 slaying arena
+msg
+You need the arena key to open this door.
+endmsg
 x 29
 y 2
 end
@@ -9211,31 +9331,31 @@ x 29
 y 8
 end
 arch block_door_closed
-speed 0.500000
-connected 21
 x 29
 y 8
-end
-arch dungeon_floor
-x 29
-y 9
-end
-arch magic_banned
-x 29
-y 9
-end
-arch magic_banned
-x 29
-y 9
-end
-arch block_door_closed
 speed 0.500000
 connected 21
+end
+arch dungeon_floor
 x 29
 y 9
 end
 arch magic_banned
 x 29
+y 9
+end
+arch magic_banned
+x 29
+y 9
+end
+arch block_door_closed
+x 29
+y 9
+speed 0.500000
+connected 21
+end
+arch magic_banned
+x 29
 y 10
 end
 arch magic_banned
@@ -9363,10 +9483,10 @@ x 29
 y 20
 end
 arch block_door_closed
-speed 0.500000
-connected 23
 x 29
 y 20
+speed 0.500000
+connected 23
 end
 arch dungeon_floor
 x 29
@@ -9377,10 +9497,10 @@ x 29
 y 21
 end
 arch block_door_closed
-speed 0.500000
-connected 23
 x 29
 y 21
+speed 0.500000
+connected 23
 end
 arch magic_banned
 x 29
@@ -9447,11 +9567,10 @@ x 29
 y 27
 end
 arch locked_door1
-msg
-You need the arena key to open this
-door.
-endmsg
 slaying arena
+msg
+You need the arena key to open this door.
+endmsg
 x 29
 y 27
 end
@@ -9574,31 +9693,31 @@ x 30
 y 9
 end
 arch block_door_closed
-speed 0.500000
-connected 21
 x 30
 y 9
-end
-arch dungeon_floor
-x 30
-y 10
-end
-arch magic_banned
-x 30
-y 10
-end
-arch magic_banned
-x 30
-y 10
-end
-arch block_door_closed
 speed 0.500000
 connected 21
+end
+arch dungeon_floor
 x 30
 y 10
 end
 arch magic_banned
 x 30
+y 10
+end
+arch magic_banned
+x 30
+y 10
+end
+arch block_door_closed
+x 30
+y 10
+speed 0.500000
+connected 21
+end
+arch magic_banned
+x 30
 y 11
 end
 arch magic_banned
@@ -9702,10 +9821,10 @@ x 30
 y 19
 end
 arch block_door_closed
-speed 0.500000
-connected 23
 x 30
 y 19
+speed 0.500000
+connected 23
 end
 arch dungeon_floor
 x 30
@@ -9716,10 +9835,10 @@ x 30
 y 20
 end
 arch block_door_closed
-speed 0.500000
-connected 23
 x 30
 y 20
+speed 0.500000
+connected 23
 end
 arch magic_banned
 x 30
@@ -9762,6 +9881,10 @@ x 30
 y 24
 end
 arch dungeon_floor
+x 30
+y 24
+end
+arch gaelotroll
 x 30
 y 24
 end
@@ -9924,31 +10047,31 @@ x 31
 y 10
 end
 arch block_door_closed
-speed 0.500000
-connected 21
 x 31
 y 10
-end
-arch dungeon_floor
-x 31
-y 11
-end
-arch magic_banned
-x 31
-y 11
-end
-arch magic_banned
-x 31
-y 11
-end
-arch block_door_closed
 speed 0.500000
 connected 21
+end
+arch dungeon_floor
 x 31
 y 11
 end
 arch magic_banned
 x 31
+y 11
+end
+arch magic_banned
+x 31
+y 11
+end
+arch block_door_closed
+x 31
+y 11
+speed 0.500000
+connected 21
+end
+arch magic_banned
+x 31
 y 12
 end
 arch magic_banned
@@ -10028,10 +10151,10 @@ x 31
 y 18
 end
 arch block_door_closed
-speed 0.500000
-connected 23
 x 31
 y 18
+speed 0.500000
+connected 23
 end
 arch dungeon_floor
 x 31
@@ -10042,10 +10165,10 @@ x 31
 y 19
 end
 arch block_door_closed
-speed 0.500000
-connected 23
 x 31
 y 19
+speed 0.500000
+connected 23
 end
 arch magic_banned
 x 31
@@ -10282,10 +10405,10 @@ x 32
 y 12
 end
 arch block_door_closed
-speed 0.500000
-connected 22
 x 32
 y 12
+speed 0.500000
+connected 22
 end
 arch dungeon_floor
 x 32
@@ -10296,10 +10419,10 @@ x 32
 y 13
 end
 arch block_door_closed
-speed 0.500000
-connected 22
 x 32
 y 13
+speed 0.500000
+connected 22
 end
 arch dungeon_floor
 x 32
@@ -10314,10 +10437,10 @@ x 32
 y 14
 end
 arch block_door_closed
-speed 0.500000
-connected 22
 x 32
 y 14
+speed 0.500000
+connected 22
 end
 arch dungeon_floor
 x 32
@@ -10332,10 +10455,10 @@ x 32
 y 15
 end
 arch block_door_closed
-speed 0.500000
-connected 22
 x 32
 y 15
+speed 0.500000
+connected 22
 end
 arch dungeon_floor
 x 32
@@ -10350,10 +10473,10 @@ x 32
 y 16
 end
 arch block_door_closed
-speed 0.500000
-connected 22
 x 32
 y 16
+speed 0.500000
+connected 22
 end
 arch dungeon_floor
 x 32
@@ -10368,10 +10491,10 @@ x 32
 y 17
 end
 arch block_door_closed
-speed 0.500000
-connected 22
 x 32
 y 17
+speed 0.500000
+connected 22
 end
 arch dungeon_floor
 x 32
@@ -10651,6 +10774,10 @@ arch dungeon_floor
 x 33
 y 13
 end
+arch dread
+x 33
+y 13
+end
 arch magic_banned
 x 33
 y 14
@@ -10672,6 +10799,10 @@ x 33
 y 16
 end
 arch dungeon_floor
+x 33
+y 16
+end
+arch dread
 x 33
 y 16
 end
@@ -11025,426 +11156,448 @@ arch dungeon_floor
 x 34
 y 20
 end
-arch magic_banned
+arch gaelotroll
 x 34
-y 21
-end
-arch dungeon_floor
-x 34
-y 21
-end
-arch magic_banned
-x 34
-y 22
-end
-arch dungeon_floor
-x 34
-y 22
-end
-arch magic_banned
-x 34
-y 23
-end
-arch dungeon_floor
-x 34
-y 23
-end
-arch xan
-x 34
-y 23
-end
-arch magic_banned
-x 34
-y 24
-end
-arch dungeon_floor
-x 34
-y 24
-end
-arch xan
-x 34
-y 24
-end
-arch magic_banned
-x 34
-y 25
-end
-arch dungeon_floor
-x 34
-y 25
-end
-arch xan
-x 34
-y 25
-end
-arch magic_banned
-x 34
-y 26
-end
-arch dungeon_floor
-x 34
-y 26
-end
-arch xan
-x 34
-y 26
-end
-arch dungeon_floor
-x 34
-y 27
-end
-arch magic_banned
-x 34
-y 27
-end
-arch mine2
-x 34
-y 27
-end
-arch dungeon_floor
-x 34
-y 28
-end
-arch dungeon_floor
-x 34
-y 29
-end
-arch mine2
-x 34
-y 29
-end
-arch dungeon_floor
-x 35
-end
-arch mine2
-x 35
-end
-arch dungeon_floor
-x 35
-y 1
-end
-arch dungeon_floor
-x 35
-y 2
-end
-arch magic_banned
-x 35
-y 2
-end
-arch mine2
-x 35
-y 2
-end
-arch magic_banned
-x 35
-y 3
-end
-arch dungeon_floor
-x 35
-y 3
-end
-arch spider
-x 35
-y 3
-end
-arch magic_banned
-x 35
-y 4
-end
-arch dungeon_floor
-x 35
-y 4
-end
-arch xan
-x 35
-y 4
-end
-arch magic_banned
-x 35
-y 5
-end
-arch dungeon_floor
-x 35
-y 5
-end
-arch xan
-x 35
-y 5
-end
-arch magic_banned
-x 35
-y 6
-end
-arch dungeon_floor
-x 35
-y 6
-end
-arch xan
-x 35
-y 6
-end
-arch magic_banned
-x 35
-y 7
-end
-arch dungeon_floor
-x 35
-y 7
-end
-arch xan
-x 35
-y 7
-end
-arch magic_banned
-x 35
-y 8
-end
-arch dungeon_floor
-x 35
-y 8
-end
-arch xan
-x 35
-y 8
-end
-arch magic_banned
-x 35
-y 9
-end
-arch dungeon_floor
-x 35
-y 9
-end
-arch xan
-x 35
-y 9
-end
-arch magic_banned
-x 35
-y 10
-end
-arch dungeon_floor
-x 35
-y 10
-end
-arch xan
-x 35
-y 10
-end
-arch dungeon_floor
-x 35
-y 11
-end
-arch magic_banned
-x 35
-y 11
-end
-arch mine2
-x 35
-y 11
-end
-arch magic_banned
-x 35
-y 12
-end
-arch dungeon_floor
-x 35
-y 12
-end
-arch magic_banned
-x 35
-y 13
-end
-arch dungeon_floor
-x 35
-y 13
-end
-arch magic_banned
-x 35
-y 14
-end
-arch dungeon_floor
-x 35
-y 14
-end
-arch magic_banned
-x 35
-y 15
-end
-arch dungeon_floor
-x 35
-y 15
-end
-arch magic_banned
-x 35
-y 16
-end
-arch dungeon_floor
-x 35
-y 16
-end
-arch magic_banned
-x 35
-y 17
-end
-arch dungeon_floor
-x 35
-y 17
-end
-arch dungeon_floor
-x 35
-y 18
-end
-arch magic_banned
-x 35
-y 18
-end
-arch mine2
-x 35
-y 18
-end
-arch magic_banned
-x 35
-y 19
-end
-arch dungeon_floor
-x 35
-y 19
-end
-arch xan
-x 35
-y 19
-end
-arch magic_banned
-x 35
 y 20
-end
-arch dungeon_floor
-x 35
-y 20
-end
-arch magic_banned
-x 35
-y 21
-end
-arch dungeon_floor
-x 35
-y 21
-end
-arch magic_banned
-x 35
-y 22
-end
-arch dungeon_floor
-x 35
-y 22
-end
-arch magic_banned
-x 35
-y 23
-end
-arch dungeon_floor
-x 35
-y 23
-end
-arch xan
-x 35
-y 23
-end
-arch magic_banned
-x 35
-y 24
-end
-arch dungeon_floor
-x 35
-y 24
-end
-arch xan
-x 35
-y 24
-end
-arch magic_banned
-x 35
-y 25
-end
-arch dungeon_floor
-x 35
-y 25
-end
-arch xan
-x 35
-y 25
-end
-arch magic_banned
-x 35
-y 26
-end
-arch dungeon_floor
-x 35
-y 26
-end
-arch xan
-x 35
-y 26
-end
-arch dungeon_floor
-x 35
-y 27
-end
-arch magic_banned
-x 35
-y 27
-end
-arch mine2
-x 35
-y 27
-end
-arch dungeon_floor
-x 35
-y 28
-end
-arch dungeon_floor
-x 35
-y 29
-end
-arch mine2
-x 35
-y 29
-end
-arch dungeon_floor
-x 36
-end
-arch mine2
-x 36
-end
-arch dungeon_floor
-x 36
-y 1
-end
-arch dungeon_floor
-x 36
-y 2
-end
-arch magic_banned
-x 36
-y 2
-end
-arch mine2
-x 36
-y 2
-end
-arch magic_banned
-x 36
-y 3
-end
-arch dungeon_floor
-x 36
-y 3
-end
-arch spider
 carrying 100
+arch key2
+name arena key
+slaying arena
+end
+end
+arch magic_banned
+x 34
+y 21
+end
+arch dungeon_floor
+x 34
+y 21
+end
+arch magic_banned
+x 34
+y 22
+end
+arch dungeon_floor
+x 34
+y 22
+end
+arch magic_banned
+x 34
+y 23
+end
+arch dungeon_floor
+x 34
+y 23
+end
+arch xan
+x 34
+y 23
+end
+arch magic_banned
+x 34
+y 24
+end
+arch dungeon_floor
+x 34
+y 24
+end
+arch xan
+x 34
+y 24
+end
+arch magic_banned
+x 34
+y 25
+end
+arch dungeon_floor
+x 34
+y 25
+end
+arch xan
+x 34
+y 25
+end
+arch magic_banned
+x 34
+y 26
+end
+arch dungeon_floor
+x 34
+y 26
+end
+arch xan
+x 34
+y 26
+end
+arch dungeon_floor
+x 34
+y 27
+end
+arch magic_banned
+x 34
+y 27
+end
+arch mine2
+x 34
+y 27
+end
+arch dungeon_floor
+x 34
+y 28
+end
+arch dungeon_floor
+x 34
+y 29
+end
+arch mine2
+x 34
+y 29
+end
+arch dungeon_floor
+x 35
+end
+arch mine2
+x 35
+end
+arch dungeon_floor
+x 35
+y 1
+end
+arch dungeon_floor
+x 35
+y 2
+end
+arch magic_banned
+x 35
+y 2
+end
+arch mine2
+x 35
+y 2
+end
+arch magic_banned
+x 35
+y 3
+end
+arch dungeon_floor
+x 35
+y 3
+end
+arch spider
+x 35
+y 3
+end
+arch magic_banned
+x 35
+y 4
+end
+arch dungeon_floor
+x 35
+y 4
+end
+arch xan
+x 35
+y 4
+end
+arch magic_banned
+x 35
+y 5
+end
+arch dungeon_floor
+x 35
+y 5
+end
+arch xan
+x 35
+y 5
+end
+arch magic_banned
+x 35
+y 6
+end
+arch dungeon_floor
+x 35
+y 6
+end
+arch xan
+x 35
+y 6
+end
+arch magic_banned
+x 35
+y 7
+end
+arch dungeon_floor
+x 35
+y 7
+end
+arch xan
+x 35
+y 7
+end
+arch magic_banned
+x 35
+y 8
+end
+arch dungeon_floor
+x 35
+y 8
+end
+arch xan
+x 35
+y 8
+end
+arch magic_banned
+x 35
+y 9
+end
+arch dungeon_floor
+x 35
+y 9
+end
+arch xan
+x 35
+y 9
+end
+arch magic_banned
+x 35
+y 10
+end
+arch dungeon_floor
+x 35
+y 10
+end
+arch xan
+x 35
+y 10
+end
+arch dungeon_floor
+x 35
+y 11
+end
+arch magic_banned
+x 35
+y 11
+end
+arch mine2
+x 35
+y 11
+end
+arch magic_banned
+x 35
+y 12
+end
+arch dungeon_floor
+x 35
+y 12
+end
+arch magic_banned
+x 35
+y 13
+end
+arch dungeon_floor
+x 35
+y 13
+end
+arch dread
+x 35
+y 13
+carrying 100
+arch key2
+name arena key
+slaying arena
+end
+end
+arch magic_banned
+x 35
+y 14
+end
+arch dungeon_floor
+x 35
+y 14
+end
+arch magic_banned
+x 35
+y 15
+end
+arch dungeon_floor
+x 35
+y 15
+end
+arch dread
+x 35
+y 15
+end
+arch magic_banned
+x 35
+y 16
+end
+arch dungeon_floor
+x 35
+y 16
+end
+arch magic_banned
+x 35
+y 17
+end
+arch dungeon_floor
+x 35
+y 17
+end
+arch dungeon_floor
+x 35
+y 18
+end
+arch magic_banned
+x 35
+y 18
+end
+arch mine2
+x 35
+y 18
+end
+arch magic_banned
+x 35
+y 19
+end
+arch dungeon_floor
+x 35
+y 19
+end
+arch xan
+x 35
+y 19
+end
+arch magic_banned
+x 35
+y 20
+end
+arch dungeon_floor
+x 35
+y 20
+end
+arch magic_banned
+x 35
+y 21
+end
+arch dungeon_floor
+x 35
+y 21
+end
+arch magic_banned
+x 35
+y 22
+end
+arch dungeon_floor
+x 35
+y 22
+end
+arch magic_banned
+x 35
+y 23
+end
+arch dungeon_floor
+x 35
+y 23
+end
+arch xan
+x 35
+y 23
+end
+arch magic_banned
+x 35
+y 24
+end
+arch dungeon_floor
+x 35
+y 24
+end
+arch xan
+x 35
+y 24
+end
+arch magic_banned
+x 35
+y 25
+end
+arch dungeon_floor
+x 35
+y 25
+end
+arch xan
+x 35
+y 25
+end
+arch magic_banned
+x 35
+y 26
+end
+arch dungeon_floor
+x 35
+y 26
+end
+arch xan
+x 35
+y 26
+end
+arch dungeon_floor
+x 35
+y 27
+end
+arch magic_banned
+x 35
+y 27
+end
+arch mine2
+x 35
+y 27
+end
+arch dungeon_floor
+x 35
+y 28
+end
+arch dungeon_floor
+x 35
+y 29
+end
+arch mine2
+x 35
+y 29
+end
+arch dungeon_floor
+x 36
+end
+arch mine2
+x 36
+end
+arch dungeon_floor
+x 36
+y 1
+end
+arch dungeon_floor
+x 36
+y 2
+end
+arch magic_banned
+x 36
+y 2
+end
+arch mine2
+x 36
+y 2
+end
+arch magic_banned
 x 36
 y 3
+end
+arch dungeon_floor
+x 36
+y 3
+end
+arch spider
+x 36
+y 3
+carrying 100
 arch key2
 name arena key
 slaying arena
@@ -11861,10 +12014,10 @@ x 37
 y 12
 end
 arch locked_door2
-msg
-You need arena key to open this door.
-endmsg
 slaying arena
+msg
+You need the arena key to open this door.
+endmsg
 x 37
 y 12
 end
@@ -12072,8 +12225,7 @@ y 1
 end
 arch sign_w
 msg
-Go left all the way and turn to find
-the exit.
+Go left all the way and turn to find the exit.
 endmsg
 x 38
 y 1
@@ -12188,8 +12340,7 @@ y 28
 end
 arch sign_w
 msg
-Go left all the way and turn to find
-the exit.
+Go left all the way and turn to find the exit.
 endmsg
 x 38
 y 28
@@ -12439,176 +12590,4 @@ end
 arch mine12
 x 39
 y 29
-end
-arch giant
-name big hill giant
-hp 450
-carrying 100
-x 3
-y 13
-arch key2
-name arena key
-slaying arena
-end
-end
-arch giant
-x 3
-y 15
-end
-arch behemoth
-x 4
-y 6
-end
-arch giant
-x 4
-y 13
-end
-arch giant
-x 4
-y 15
-end
-arch behemoth
-carrying 100
-x 5
-y 3
-arch key2
-name arena key
-slaying arena
-end
-end
-arch giant
-x 5
-y 12
-end
-arch giant
-x 5
-y 14
-end
-arch giant
-x 5
-y 16
-end
-arch behemoth
-x 6
-y 7
-end
-arch behemoth
-x 8
-y 5
-end
-arch dragon
-x 11
-y 4
-end
-arch dragon
-x 11
-y 6
-end
-arch dragon
-carrying 100
-x 12
-y 3
-arch key2
-name arena key
-slaying arena
-end
-end
-arch dragon
-x 12
-y 5
-end
-arch big_elec
-carrying 100
-x 12
-y 24
-arch key2
-name arena key
-slaying arena
-end
-end
-arch dragon
-x 13
-y 4
-end
-arch dragon
-x 13
-y 6
-end
-arch big_dragon
-carrying 100
-x 17
-y 3
-arch key2
-name arena key
-slaying arena
-end
-end
-arch baslic
-name huge baslic
-hp 2200
-carrying 100
-x 18
-y 25
-arch key2
-name arena key
-slaying arena
-end
-end
-arch troll
-name strong troll
-hp 1500
-carrying 100
-x 24
-y 3
-arch key2
-name arena key
-slaying arena
-end
-end
-arch titan
-carrying 100
-x 25
-y 24
-arch key2
-name arena key
-slaying arena
-end
-end
-arch troll
-x 26
-y 5
-end
-arch gaelotroll
-x 30
-y 24
-end
-arch dread
-x 33
-y 13
-end
-arch dread
-x 33
-y 16
-end
-arch gaelotroll
-carrying 100
-x 34
-y 20
-arch key2
-name arena key
-slaying arena
-end
-end
-arch dread
-carrying 100
-x 35
-y 13
-arch key2
-name arena key
-slaying arena
-end
-end
-arch dread
-x 35
-y 15
 end

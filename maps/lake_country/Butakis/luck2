@@ -1,29 +1,29 @@
 arch map
-name luck2
-region lakecountry
+name Towers of Luck, 2nd Floor
+difficulty 60
+region butakisfortress
+width 32
+height 32
+enter_x 30
+enter_y 17
 msg
-Creator: Kundi, Xue
-Email: xkd@soda.berkeley.edu
-Date: Mon May  1 22:34:39 1995
-Edited by: Gene Alexander
-Edit date: 20050603
+Created:  1995-05-01 Kundi, Xue (xkd@soda.berkeley.edu)
+Modified: 2012-02-05 Rick Tanner
 Note: randomized 2 in 8 chance of
 getting figurine of xan based on chance
 of one of the other buttons being pushed.
 endmsg
-width 32
-height 32
 end
 arch button_plate
 connected 11
 end
 arch button_plate
-connected 14
 y 1
+connected 14
 end
 arch button_plate
-connected 16
 y 2
+connected 16
 end
 arch blocked
 y 3
@@ -197,24 +197,24 @@ arch mine4
 y 31
 end
 arch button_plate
-connected 12
 x 1
+connected 12
 end
 arch spikes_open
+x 1
+y 1
 speed 0.500000
 value 1
 connected 1
-x 1
-y 1
 end
 arch boulder
 x 1
 y 1
 end
 arch button_plate
-connected 17
 x 1
 y 2
+connected 17
 end
 arch blocked
 x 1
@@ -237,9 +237,9 @@ x 1
 y 5
 end
 arch demilich
-unaggressive 0
 x 1
 y 5
+unaggressive 0
 end
 arch dungeon_floor
 x 1
@@ -250,9 +250,9 @@ x 1
 y 6
 end
 arch demilich
-unaggressive 0
 x 1
 y 6
+unaggressive 0
 end
 arch dungeon_floor
 x 1
@@ -263,9 +263,9 @@ x 1
 y 7
 end
 arch demilich
-unaggressive 0
 x 1
 y 7
+unaggressive 0
 end
 arch dungeon_floor
 x 1
@@ -276,9 +276,9 @@ x 1
 y 8
 end
 arch demilich
-unaggressive 0
 x 1
 y 8
+unaggressive 0
 end
 arch dungeon_floor
 x 1
@@ -289,6 +289,10 @@ x 1
 y 9
 end
 arch dungeon_floor
+x 1
+y 10
+end
+arch behemoth
 x 1
 y 10
 end
@@ -317,10 +321,10 @@ name big panther
 hp 800
 exp 40000
 dam 40
-speed 0.400000
-speed_left -3.100000
 x 1
 y 14
+speed 0.400000
+speed_left -3.100000
 end
 arch dungeon_floor
 x 1
@@ -331,10 +335,10 @@ name big panther
 hp 800
 exp 40000
 dam 40
-speed 0.400000
-speed_left -3.100000
 x 1
 y 15
+speed 0.400000
+speed_left -3.100000
 end
 arch dungeon_floor
 x 1
@@ -345,10 +349,10 @@ name big panther
 hp 800
 exp 40000
 dam 40
-speed 0.400000
-speed_left -3.100000
 x 1
 y 16
+speed 0.400000
+speed_left -3.100000
 end
 arch dungeon_floor
 x 1
@@ -359,6 +363,10 @@ x 1
 y 17
 end
 arch dungeon_floor
+x 1
+y 18
+end
+arch behemoth
 x 1
 y 18
 end
@@ -387,10 +395,10 @@ name big panther
 hp 800
 exp 40000
 dam 40
-speed 0.400000
-speed_left -3.100000
 x 1
 y 22
+speed 0.400000
+speed_left -3.100000
 end
 arch dungeon_floor
 x 1
@@ -401,10 +409,10 @@ name big panther
 hp 800
 exp 40000
 dam 40
-speed 0.400000
-speed_left -3.100000
 x 1
 y 23
+speed 0.400000
+speed_left -3.100000
 end
 arch dungeon_floor
 x 1
@@ -415,10 +423,10 @@ name big panther
 hp 800
 exp 40000
 dam 40
-speed 0.400000
-speed_left -3.100000
 x 1
 y 24
+speed 0.400000
+speed_left -3.100000
 end
 arch dungeon_floor
 x 1
@@ -466,13 +474,13 @@ y 30
 end
 arch xan
 hp 51
-carrying 100
 x 1
 y 30
+carrying 100
 arch key2
 name figurine of xan
-face xan.111
 slaying fig_xan
+face xan.111
 end
 end
 arch dungeon_floor
@@ -484,18 +492,18 @@ x 1
 y 31
 end
 arch button_plate
+x 2
 connected 13
-x 2
 end
 arch button_plate
+x 2
+y 1
 connected 15
-x 2
-y 1
 end
 arch button_plate
+x 2
+y 2
 connected 18
-x 2
-y 2
 end
 arch blocked
 x 2
@@ -578,10 +586,10 @@ name big panther
 hp 800
 exp 40000
 dam 40
-speed 0.400000
-speed_left -3.100000
 x 2
 y 14
+speed 0.400000
+speed_left -3.100000
 end
 arch dungeon_floor
 x 2
@@ -592,10 +600,10 @@ name big panther
 hp 800
 exp 40000
 dam 40
-speed 0.400000
-speed_left -3.100000
 x 2
 y 15
+speed 0.400000
+speed_left -3.100000
 end
 arch dungeon_floor
 x 2
@@ -606,10 +614,10 @@ name big panther
 hp 800
 exp 40000
 dam 40
-speed 0.400000
-speed_left -3.100000
 x 2
 y 16
+speed 0.400000
+speed_left -3.100000
 end
 arch dungeon_floor
 x 2
@@ -648,10 +656,10 @@ name big panther
 hp 800
 exp 40000
 dam 40
-speed 0.400000
-speed_left -3.100000
 x 2
 y 22
+speed 0.400000
+speed_left -3.100000
 end
 arch dungeon_floor
 x 2
@@ -662,10 +670,10 @@ name big panther
 hp 800
 exp 40000
 dam 40
-speed 0.400000
-speed_left -3.100000
 x 2
 y 23
+speed 0.400000
+speed_left -3.100000
 end
 arch dungeon_floor
 x 2
@@ -676,10 +684,10 @@ name big panther
 hp 800
 exp 40000
 dam 40
-speed 0.400000
-speed_left -3.100000
 x 2
 y 24
+speed 0.400000
+speed_left -3.100000
 end
 arch dungeon_floor
 x 2
@@ -738,18 +746,18 @@ x 2
 y 31
 end
 arch button_plate
-connected 11
 x 3
+connected 11
 end
 arch button_plate
-connected 14
 x 3
 y 1
+connected 14
 end
 arch button_plate
-connected 16
 x 3
 y 2
+connected 16
 end
 arch blocked
 x 3
@@ -811,6 +819,10 @@ arch dungeon_floor
 x 3
 y 11
 end
+arch behemoth
+x 3
+y 11
+end
 arch dungeon_floor
 x 3
 y 12
@@ -832,10 +844,10 @@ name big panther
 hp 800
 exp 40000
 dam 40
-speed 0.400000
-speed_left -3.100000
 x 3
 y 14
+speed 0.400000
+speed_left -3.100000
 end
 arch dungeon_floor
 x 3
@@ -846,10 +858,10 @@ name big panther
 hp 800
 exp 40000
 dam 40
-speed 0.400000
-speed_left -3.100000
 x 3
 y 15
+speed 0.400000
+speed_left -3.100000
 end
 arch dungeon_floor
 x 3
@@ -860,10 +872,10 @@ name big panther
 hp 800
 exp 40000
 dam 40
-speed 0.400000
-speed_left -3.100000
 x 3
 y 16
+speed 0.400000
+speed_left -3.100000
 end
 arch dungeon_floor
 x 3
@@ -878,6 +890,10 @@ x 3
 y 18
 end
 arch dungeon_floor
+x 3
+y 19
+end
+arch behemoth
 x 3
 y 19
 end
@@ -902,10 +918,10 @@ name big panther
 hp 800
 exp 40000
 dam 40
-speed 0.400000
-speed_left -3.100000
 x 3
 y 22
+speed 0.400000
+speed_left -3.100000
 end
 arch dungeon_floor
 x 3
@@ -916,10 +932,10 @@ name big panther
 hp 800
 exp 40000
 dam 40
-speed 0.400000
-speed_left -3.100000
 x 3
 y 23
+speed 0.400000
+speed_left -3.100000
 end
 arch dungeon_floor
 x 3
@@ -930,10 +946,10 @@ name big panther
 hp 800
 exp 40000
 dam 40
-speed 0.400000
-speed_left -3.100000
 x 3
 y 24
+speed 0.400000
+speed_left -3.100000
 end
 arch dungeon_floor
 x 3
@@ -992,24 +1008,24 @@ x 3
 y 31
 end
 arch button_plate
-connected 12
 x 4
+connected 12
 end
 arch spikes_open
+x 4
+y 1
 speed 0.500000
 value 1
 connected 2
-x 4
-y 1
 end
 arch boulder
 x 4
 y 1
 end
 arch button_plate
-connected 17
 x 4
 y 2
+connected 17
 end
 arch blocked
 x 4
@@ -1092,10 +1108,10 @@ name big panther
 hp 800
 exp 40000
 dam 40
-speed 0.400000
-speed_left -3.100000
 x 4
 y 14
+speed 0.400000
+speed_left -3.100000
 end
 arch dungeon_floor
 x 4
@@ -1106,10 +1122,10 @@ name big panther
 hp 800
 exp 40000
 dam 40
-speed 0.400000
-speed_left -3.100000
 x 4
 y 15
+speed 0.400000
+speed_left -3.100000
 end
 arch dungeon_floor
 x 4
@@ -1120,10 +1136,10 @@ name big panther
 hp 800
 exp 40000
 dam 40
-speed 0.400000
-speed_left -3.100000
 x 4
 y 16
+speed 0.400000
+speed_left -3.100000
 end
 arch dungeon_floor
 x 4
@@ -1162,10 +1178,10 @@ name big panther
 hp 800
 exp 40000
 dam 40
-speed 0.400000
-speed_left -3.100000
 x 4
 y 22
+speed 0.400000
+speed_left -3.100000
 end
 arch dungeon_floor
 x 4
@@ -1176,10 +1192,10 @@ name big panther
 hp 800
 exp 40000
 dam 40
-speed 0.400000
-speed_left -3.100000
 x 4
 y 23
+speed 0.400000
+speed_left -3.100000
 end
 arch dungeon_floor
 x 4
@@ -1190,10 +1206,10 @@ name big panther
 hp 800
 exp 40000
 dam 40
-speed 0.400000
-speed_left -3.100000
 x 4
 y 24
+speed 0.400000
+speed_left -3.100000
 end
 arch dungeon_floor
 x 4
@@ -1252,18 +1268,18 @@ x 4
 y 31
 end
 arch button_plate
-connected 13
 x 5
+connected 13
 end
 arch button_plate
-connected 15
 x 5
 y 1
+connected 15
 end
 arch button_plate
-connected 18
 x 5
 y 2
+connected 18
 end
 arch blocked
 x 5
@@ -1322,27 +1338,27 @@ x 5
 y 10
 end
 arch gate_closed_2
-connected 13
 x 5
 y 10
+connected 13
 end
 arch dungeon_floor
 x 5
 y 11
 end
 arch gate_closed_2
-connected 13
 x 5
 y 11
+connected 13
 end
 arch dungeon_floor
 x 5
 y 12
 end
 arch gate_closed_2
-connected 13
 x 5
 y 12
+connected 13
 end
 arch dungeon_floor
 x 5
@@ -1357,27 +1373,27 @@ x 5
 y 14
 end
 arch gate_closed_2
-connected 15
 x 5
 y 14
+connected 15
 end
 arch dungeon_floor
 x 5
 y 15
 end
 arch gate_closed_2
-connected 15
 x 5
 y 15
+connected 15
 end
 arch dungeon_floor
 x 5
 y 16
 end
 arch gate_closed_2
-connected 15
 x 5
 y 16
+connected 15
 end
 arch dungeon_floor
 x 5
@@ -1392,27 +1408,27 @@ x 5
 y 18
 end
 arch gate_closed_2
-connected 13
 x 5
 y 18
+connected 13
 end
 arch dungeon_floor
 x 5
 y 19
 end
 arch gate_closed_2
-connected 13
 x 5
 y 19
+connected 13
 end
 arch dungeon_floor
 x 5
 y 20
 end
 arch gate_closed_2
-connected 13
 x 5
 y 20
+connected 13
 end
 arch dungeon_floor
 x 5
@@ -1427,27 +1443,27 @@ x 5
 y 22
 end
 arch gate_closed_2
-connected 15
 x 5
 y 22
+connected 15
 end
 arch dungeon_floor
 x 5
 y 23
 end
 arch gate_closed_2
-connected 15
 x 5
 y 23
+connected 15
 end
 arch dungeon_floor
 x 5
 y 24
 end
 arch gate_closed_2
-connected 15
 x 5
 y 24
+connected 15
 end
 arch dungeon_floor
 x 5
@@ -1462,9 +1478,9 @@ x 5
 y 26
 end
 arch gate_closed_2
+x 5
+y 26
 connected 19
-x 5
-y 26
 end
 arch dungeon_floor
 x 5
@@ -1507,18 +1523,18 @@ x 5
 y 31
 end
 arch button_plate
-connected 11
 x 6
+connected 11
 end
 arch button_plate
-connected 14
 x 6
 y 1
+connected 14
 end
 arch button_plate
-connected 16
 x 6
 y 2
+connected 16
 end
 arch blocked
 x 6
@@ -1573,10 +1589,10 @@ x 6
 y 9
 end
 arch gate_closed_1
-speed 0.500000
-connected 12
 x 6
 y 9
+speed 0.500000
+connected 12
 end
 arch cobblestones
 x 6
@@ -1651,10 +1667,10 @@ x 6
 y 27
 end
 arch gate_closed_1
-speed 0.500000
-connected 15
 x 6
 y 27
+speed 0.500000
+connected 15
 end
 arch dungeon_floor
 x 6
@@ -1677,24 +1693,24 @@ x 6
 y 31
 end
 arch button_plate
-connected 12
 x 7
+connected 12
 end
 arch spikes_open
+x 7
+y 1
 speed 0.500000
 value 1
 connected 3
-x 7
-y 1
 end
 arch boulder
 x 7
 y 1
 end
 arch button_plate
-connected 17
 x 7
 y 2
+connected 17
 end
 arch blocked
 x 7
@@ -1821,16 +1837,20 @@ x 7
 y 27
 end
 arch gate_closed_1
-speed 0.500000
-connected 15
 x 7
 y 27
+speed 0.500000
+connected 15
 end
 arch dungeon_floor
 x 7
 y 28
 end
 arch dungeon_floor
+x 7
+y 29
+end
+arch titan
 x 7
 y 29
 end
@@ -1847,18 +1867,18 @@ x 7
 y 31
 end
 arch button_plate
-connected 13
 x 8
+connected 13
 end
 arch button_plate
-connected 15
 x 8
 y 1
+connected 15
 end
 arch button_plate
-connected 18
 x 8
 y 2
+connected 18
 end
 arch blocked
 x 8
@@ -1880,6 +1900,10 @@ arch pstone_2
 x 8
 y 5
 end
+arch dread
+x 8
+y 5
+end
 arch dungeon_floor
 x 8
 y 6
@@ -1893,6 +1917,10 @@ x 8
 y 7
 end
 arch pstone_2
+x 8
+y 7
+end
+arch dread
 x 8
 y 7
 end
@@ -1905,10 +1933,10 @@ x 8
 y 9
 end
 arch gate_closed_1
-speed 0.500000
-connected 11
 x 8
 y 9
+speed 0.500000
+connected 11
 end
 arch cobblestones
 x 8
@@ -1983,10 +2011,10 @@ x 8
 y 27
 end
 arch gate_closed_1
-speed 0.500000
-connected 15
 x 8
 y 27
+speed 0.500000
+connected 15
 end
 arch dungeon_floor
 x 8
@@ -2009,18 +2037,18 @@ x 8
 y 31
 end
 arch button_plate
-connected 11
 x 9
+connected 11
 end
 arch button_plate
-connected 14
 x 9
 y 1
+connected 14
 end
 arch button_plate
-connected 16
 x 9
 y 2
+connected 16
 end
 arch blocked
 x 9
@@ -2067,10 +2095,10 @@ x 9
 y 9
 end
 arch gate_closed_1
-speed 0.500000
-connected 11
 x 9
 y 9
+speed 0.500000
+connected 11
 end
 arch cobblestones
 x 9
@@ -2189,24 +2217,24 @@ x 9
 y 31
 end
 arch button_plate
-connected 12
 x 10
+connected 12
 end
 arch spikes_open
+x 10
+y 1
 speed 0.500000
 value 1
 connected 4
-x 10
-y 1
 end
 arch boulder
 x 10
 y 1
 end
 arch button_plate
-connected 17
 x 10
 y 2
+connected 17
 end
 arch blocked
 x 10
@@ -2228,6 +2256,10 @@ arch pstone_2
 x 10
 y 5
 end
+arch dread
+x 10
+y 5
+end
 arch dungeon_floor
 x 10
 y 6
@@ -2241,6 +2273,10 @@ x 10
 y 7
 end
 arch pstone_2
+x 10
+y 7
+end
+arch dread
 x 10
 y 7
 end
@@ -2253,10 +2289,10 @@ x 10
 y 9
 end
 arch gate_closed_1
-speed 0.500000
-connected 11
 x 10
 y 9
+speed 0.500000
+connected 11
 end
 arch cobblestones
 x 10
@@ -2375,18 +2411,18 @@ x 10
 y 31
 end
 arch button_plate
+x 11
 connected 13
-x 11
 end
 arch button_plate
+x 11
+y 1
 connected 15
-x 11
-y 1
 end
 arch button_plate
+x 11
+y 2
 connected 18
-x 11
-y 2
 end
 arch blocked
 x 11
@@ -2433,10 +2469,10 @@ x 11
 y 9
 end
 arch gate_closed_1
-speed 0.500000
-connected 11
 x 11
 y 9
+speed 0.500000
+connected 11
 end
 arch cobblestones
 x 11
@@ -2503,20 +2539,20 @@ x 11
 y 25
 end
 arch gate_closed_1
-speed 0.500000
-connected 16
 x 11
 y 25
+speed 0.500000
+connected 16
 end
 arch dungeon_floor
 x 11
 y 26
 end
 arch gate_closed_1
-speed 0.500000
-connected 16
 x 11
 y 26
+speed 0.500000
+connected 16
 end
 arch dungeon_floor
 x 11
@@ -2559,18 +2595,18 @@ x 11
 y 31
 end
 arch button_plate
-connected 11
 x 12
+connected 11
 end
 arch button_plate
-connected 14
 x 12
 y 1
+connected 14
 end
 arch button_plate
-connected 16
 x 12
 y 2
+connected 16
 end
 arch blocked
 x 12
@@ -2592,6 +2628,10 @@ arch pstone_2
 x 12
 y 5
 end
+arch dread
+x 12
+y 5
+end
 arch dungeon_floor
 x 12
 y 6
@@ -2605,6 +2645,10 @@ x 12
 y 7
 end
 arch pstone_2
+x 12
+y 7
+end
+arch dread
 x 12
 y 7
 end
@@ -2617,10 +2661,10 @@ x 12
 y 9
 end
 arch gate_closed_1
-speed 0.500000
-connected 11
 x 12
 y 9
+speed 0.500000
+connected 11
 end
 arch cobblestones
 x 12
@@ -2687,20 +2731,20 @@ x 12
 y 25
 end
 arch gate_closed_1
-speed 0.500000
-connected 16
 x 12
 y 25
+speed 0.500000
+connected 16
 end
 arch dungeon_floor
 x 12
 y 26
 end
 arch gate_closed_1
-speed 0.500000
-connected 16
 x 12
 y 26
+speed 0.500000
+connected 16
 end
 arch dungeon_floor
 x 12
@@ -2743,24 +2787,24 @@ x 12
 y 31
 end
 arch button_plate
-connected 12
 x 13
+connected 12
 end
 arch spikes_open
+x 13
+y 1
 speed 0.500000
 value 1
 connected 5
-x 13
-y 1
 end
 arch boulder
 x 13
 y 1
 end
 arch button_plate
-connected 17
 x 13
 y 2
+connected 17
 end
 arch blocked
 x 13
@@ -2807,10 +2851,10 @@ x 13
 y 9
 end
 arch gate_closed_1
-speed 0.500000
-connected 11
 x 13
 y 9
+speed 0.500000
+connected 11
 end
 arch cobblestones
 x 13
@@ -2877,20 +2921,20 @@ x 13
 y 25
 end
 arch gate_closed_1
-speed 0.500000
-connected 16
 x 13
 y 25
+speed 0.500000
+connected 16
 end
 arch dungeon_floor
 x 13
 y 26
 end
 arch gate_closed_1
-speed 0.500000
-connected 16
 x 13
 y 26
+speed 0.500000
+connected 16
 end
 arch dungeon_floor
 x 13
@@ -2933,18 +2977,18 @@ x 13
 y 31
 end
 arch button_plate
-connected 13
 x 14
+connected 13
 end
 arch button_plate
-connected 15
 x 14
 y 1
+connected 15
 end
 arch button_plate
-connected 18
 x 14
 y 2
+connected 18
 end
 arch blocked
 x 14
@@ -2966,6 +3010,10 @@ arch pstone_2
 x 14
 y 5
 end
+arch dread
+x 14
+y 5
+end
 arch dungeon_floor
 x 14
 y 6
@@ -2979,6 +3027,10 @@ x 14
 y 7
 end
 arch pstone_2
+x 14
+y 7
+end
+arch dread
 x 14
 y 7
 end
@@ -2991,10 +3043,10 @@ x 14
 y 9
 end
 arch gate_closed_1
-speed 0.500000
-connected 11
 x 14
 y 9
+speed 0.500000
+connected 11
 end
 arch cobblestones
 x 14
@@ -3022,8 +3074,7 @@ y 15
 end
 arch magic_mouth
 msg
-Sacrify 99 platinum coins for your
-chance
+Sacrify 99 platinum coins for your chance.
 endmsg
 x 14
 y 16
@@ -3036,9 +3087,9 @@ arch altar
 name altar of chance
 slaying platinum coin
 food 99
-connected 1
 x 14
 y 16
+connected 1
 end
 arch magic_mouth
 msg
@@ -3055,9 +3106,9 @@ arch altar
 name altar of chance
 slaying ruby
 food 9
-connected 4
 x 14
 y 17
+connected 4
 end
 arch magic_mouth
 msg
@@ -3074,9 +3125,9 @@ arch altar
 name altar of chance
 slaying diamond
 food 9
-connected 7
 x 14
 y 18
+connected 7
 end
 arch cobblestones
 x 14
@@ -3107,20 +3158,20 @@ x 14
 y 25
 end
 arch gate_closed_1
-speed 0.500000
-connected 16
 x 14
 y 25
+speed 0.500000
+connected 16
 end
 arch dungeon_floor
 x 14
 y 26
 end
 arch gate_closed_1
-speed 0.500000
-connected 16
 x 14
 y 26
+speed 0.500000
+connected 16
 end
 arch dungeon_floor
 x 14
@@ -3163,18 +3214,18 @@ x 14
 y 31
 end
 arch button_plate
-connected 11
 x 15
+connected 11
 end
 arch button_plate
-connected 14
 x 15
 y 1
+connected 14
 end
 arch button_plate
-connected 16
 x 15
 y 2
+connected 16
 end
 arch blocked
 x 15
@@ -3221,10 +3272,10 @@ x 15
 y 9
 end
 arch gate_closed_1
-speed 0.500000
-connected 11
 x 15
 y 9
+speed 0.500000
+connected 11
 end
 arch cobblestones
 x 15
@@ -3252,8 +3303,7 @@ y 15
 end
 arch magic_mouth
 msg
-Sacrify 666 platinum coins for a
-chance
+Sacrify 666 platinum coins for a chance.
 endmsg
 x 15
 y 16
@@ -3266,9 +3316,9 @@ arch altar
 name altar of chance
 slaying platinum coin
 food 666
-connected 2
 x 15
 y 16
+connected 2
 end
 arch magic_mouth
 msg
@@ -3285,13 +3335,13 @@ arch altar
 name altar of chance
 slaying ruby
 food 66
-connected 5
 x 15
 y 17
+connected 5
 end
 arch magic_mouth
 msg
-Sacrify 66 diamonds for a chance
+Sacrify 66 diamonds for a chance.
 endmsg
 x 15
 y 18
@@ -3304,9 +3354,9 @@ arch altar
 name altar of chance
 slaying diamond
 food 66
-connected 8
 x 15
 y 18
+connected 8
 end
 arch cobblestones
 x 15
@@ -3315,8 +3365,7 @@ end
 arch sign
 msg
 Note:
-We reserve the right to ignore the
-request for a chance to anyone.
+We reserve the right to ignore the request for a chance to anyone.
 -nevermind.
 endmsg
 x 15
@@ -3399,15 +3448,15 @@ x 15
 y 31
 end
 arch button_plate
-connected 12
 x 16
+connected 12
 end
 arch spikes_open
+x 16
+y 1
 speed 0.500000
 value 1
 connected 6
-x 16
-y 1
 end
 arch boulder
 x 16
@@ -3418,9 +3467,9 @@ x 16
 y 1
 end
 arch button_plate
-connected 17
 x 16
 y 2
+connected 17
 end
 arch blocked
 x 16
@@ -3442,6 +3491,10 @@ arch pstone_2
 x 16
 y 5
 end
+arch dread
+x 16
+y 5
+end
 arch dungeon_floor
 x 16
 y 6
@@ -3455,6 +3508,10 @@ x 16
 y 7
 end
 arch pstone_2
+x 16
+y 7
+end
+arch dread
 x 16
 y 7
 end
@@ -3467,10 +3524,10 @@ x 16
 y 9
 end
 arch gate_closed_1
-speed 0.500000
-connected 11
 x 16
 y 9
+speed 0.500000
+connected 11
 end
 arch cobblestones
 x 16
@@ -3498,7 +3555,7 @@ y 15
 end
 arch magic_mouth
 msg
-Sacrify 3333 platinum coins for a chance
+Sacrify 3333 platinum coins for a chance.
 endmsg
 x 16
 y 16
@@ -3511,9 +3568,9 @@ arch altar
 name altar of chance
 slaying platinum coin
 food 3333
-connected 3
 x 16
 y 16
+connected 3
 end
 arch magic_mouth
 msg
@@ -3530,9 +3587,9 @@ arch altar
 name altar of chance
 slaying ruby
 food 333
-connected 6
 x 16
 y 17
+connected 6
 end
 arch magic_mouth
 msg
@@ -3549,9 +3606,9 @@ arch altar
 name altar of chance
 slaying diamond
 food 333
-connected 9
 x 16
 y 18
+connected 9
 end
 arch cobblestones
 x 16
@@ -3634,18 +3691,18 @@ x 16
 y 31
 end
 arch button_plate
+x 17
 connected 13
-x 17
 end
 arch button_plate
-connected 15
 x 17
 y 1
+connected 15
 end
 arch button_plate
+x 17
+y 2
 connected 18
-x 17
-y 2
 end
 arch blocked
 x 17
@@ -3692,10 +3749,10 @@ x 17
 y 9
 end
 arch gate_closed_1
-speed 0.500000
-connected 11
 x 17
 y 9
+speed 0.500000
+connected 11
 end
 arch cobblestones
 x 17
@@ -3766,10 +3823,10 @@ x 17
 y 26
 end
 arch gate_closed_1
-speed 0.500000
-connected 15
 x 17
 y 26
+speed 0.500000
+connected 15
 end
 arch dungeon_floor
 x 17
@@ -3796,18 +3853,18 @@ x 17
 y 31
 end
 arch button_plate
-connected 11
 x 18
+connected 11
 end
 arch button_plate
-connected 14
 x 18
 y 1
+connected 14
 end
 arch button_plate
-connected 16
 x 18
 y 2
+connected 16
 end
 arch blocked
 x 18
@@ -3829,6 +3886,10 @@ arch pstone_2
 x 18
 y 5
 end
+arch dread
+x 18
+y 5
+end
 arch dungeon_floor
 x 18
 y 6
@@ -3842,6 +3903,10 @@ x 18
 y 7
 end
 arch pstone_2
+x 18
+y 7
+end
+arch dread
 x 18
 y 7
 end
@@ -3858,10 +3923,10 @@ x 18
 y 9
 end
 arch gate_closed_1
-speed 0.500000
-connected 11
 x 18
 y 9
+speed 0.500000
+connected 11
 end
 arch cobblestones
 x 18
@@ -3932,16 +3997,20 @@ x 18
 y 26
 end
 arch gate_closed_1
-speed 0.500000
-connected 15
 x 18
 y 26
+speed 0.500000
+connected 15
 end
 arch dungeon_floor
 x 18
 y 27
 end
 arch dungeon_floor
+x 18
+y 28
+end
+arch big_dragon
 x 18
 y 28
 end
@@ -3962,24 +4031,24 @@ x 18
 y 31
 end
 arch button_plate
-connected 12
 x 19
+connected 12
 end
 arch spikes_open
+x 19
+y 1
 speed 0.500000
 value 1
 connected 7
-x 19
-y 1
 end
 arch boulder
 x 19
 y 1
 end
 arch button_plate
+x 19
+y 2
 connected 17
-x 19
-y 2
 end
 arch blocked
 x 19
@@ -4030,10 +4099,10 @@ x 19
 y 9
 end
 arch gate_closed_1
-speed 0.500000
-connected 11
 x 19
 y 9
+speed 0.500000
+connected 11
 end
 arch cobblestones
 x 19
@@ -4104,10 +4173,10 @@ x 19
 y 26
 end
 arch gate_closed_1
-speed 0.500000
-connected 15
 x 19
 y 26
+speed 0.500000
+connected 15
 end
 arch dungeon_floor
 x 19
@@ -4134,18 +4203,18 @@ x 19
 y 31
 end
 arch button_plate
+x 20
 connected 13
-x 20
 end
 arch button_plate
-connected 15
 x 20
 y 1
+connected 15
 end
 arch button_plate
-connected 18
 x 20
 y 2
+connected 18
 end
 arch blocked
 x 20
@@ -4167,6 +4236,10 @@ arch pstone_2
 x 20
 y 5
 end
+arch dread
+x 20
+y 5
+end
 arch dungeon_floor
 x 20
 y 6
@@ -4180,6 +4253,10 @@ x 20
 y 7
 end
 arch pstone_2
+x 20
+y 7
+end
+arch dread
 x 20
 y 7
 end
@@ -4196,10 +4273,10 @@ x 20
 y 9
 end
 arch gate_closed_1
-speed 0.500000
-connected 11
 x 20
 y 9
+speed 0.500000
+connected 11
 end
 arch cobblestones
 x 20
@@ -4270,10 +4347,10 @@ x 20
 y 26
 end
 arch gate_closed_1
-speed 0.500000
-connected 15
 x 20
 y 26
+speed 0.500000
+connected 15
 end
 arch dungeon_floor
 x 20
@@ -4300,18 +4377,18 @@ x 20
 y 31
 end
 arch button_plate
-connected 11
 x 21
+connected 11
 end
 arch button_plate
-connected 14
 x 21
 y 1
+connected 14
 end
 arch button_plate
-connected 16
 x 21
 y 2
+connected 16
 end
 arch blocked
 x 21
@@ -4362,10 +4439,10 @@ x 21
 y 9
 end
 arch gate_closed_1
-speed 0.500000
-connected 11
 x 21
 y 9
+speed 0.500000
+connected 11
 end
 arch cobblestones
 x 21
@@ -4480,24 +4557,24 @@ x 21
 y 31
 end
 arch button_plate
-connected 12
 x 22
+connected 12
 end
 arch spikes_open
+x 22
+y 1
 speed 0.500000
 value 1
 connected 8
-x 22
-y 1
 end
 arch boulder
 x 22
 y 1
 end
 arch button_plate
+x 22
+y 2
 connected 17
-x 22
-y 2
 end
 arch blocked
 x 22
@@ -4519,6 +4596,10 @@ arch pstone_2
 x 22
 y 5
 end
+arch dread
+x 22
+y 5
+end
 arch dungeon_floor
 x 22
 y 6
@@ -4532,6 +4613,10 @@ x 22
 y 7
 end
 arch pstone_2
+x 22
+y 7
+end
+arch dread
 x 22
 y 7
 end
@@ -4548,10 +4633,10 @@ x 22
 y 9
 end
 arch gate_closed_1
-speed 0.500000
-connected 11
 x 22
 y 9
+speed 0.500000
+connected 11
 end
 arch cobblestones
 x 22
@@ -4622,10 +4707,10 @@ x 22
 y 26
 end
 arch gate_closed_1
-speed 0.500000
-connected 15
 x 22
 y 26
+speed 0.500000
+connected 15
 end
 arch dungeon_floor
 x 22
@@ -4652,18 +4737,18 @@ x 22
 y 31
 end
 arch button_plate
+x 23
 connected 13
-x 23
 end
 arch button_plate
-connected 15
 x 23
 y 1
+connected 15
 end
 arch button_plate
+x 23
+y 2
 connected 18
-x 23
-y 2
 end
 arch blocked
 x 23
@@ -4714,10 +4799,10 @@ x 23
 y 9
 end
 arch gate_closed_1
-speed 0.500000
-connected 11
 x 23
 y 9
+speed 0.500000
+connected 11
 end
 arch cobblestones
 x 23
@@ -4788,16 +4873,20 @@ x 23
 y 26
 end
 arch gate_closed_1
-speed 0.500000
-connected 15
 x 23
 y 26
+speed 0.500000
+connected 15
 end
 arch dungeon_floor
 x 23
 y 27
 end
 arch dungeon_floor
+x 23
+y 28
+end
+arch big_dragon
 x 23
 y 28
 end
@@ -4818,18 +4907,18 @@ x 23
 y 31
 end
 arch button_plate
-connected 11
 x 24
+connected 11
 end
 arch button_plate
-connected 14
 x 24
 y 1
+connected 14
 end
 arch button_plate
-connected 16
 x 24
 y 2
+connected 16
 end
 arch blocked
 x 24
@@ -4851,6 +4940,10 @@ arch pstone_2
 x 24
 y 5
 end
+arch dread
+x 24
+y 5
+end
 arch dungeon_floor
 x 24
 y 6
@@ -4864,6 +4957,10 @@ x 24
 y 7
 end
 arch pstone_2
+x 24
+y 7
+end
+arch dread
 x 24
 y 7
 end
@@ -4880,10 +4977,10 @@ x 24
 y 9
 end
 arch gate_closed_1
-speed 0.500000
-connected 11
 x 24
 y 9
+speed 0.500000
+connected 11
 end
 arch cobblestones
 x 24
@@ -4954,10 +5051,10 @@ x 24
 y 26
 end
 arch gate_closed_1
-speed 0.500000
-connected 15
 x 24
 y 26
+speed 0.500000
+connected 15
 end
 arch dungeon_floor
 x 24
@@ -4984,24 +5081,24 @@ x 24
 y 31
 end
 arch button_plate
-connected 12
 x 25
+connected 12
 end
 arch spikes_open
+x 25
+y 1
 speed 0.500000
 value 1
 connected 9
-x 25
-y 1
 end
 arch boulder
 x 25
 y 1
 end
 arch button_plate
-connected 17
 x 25
 y 2
+connected 17
 end
 arch blocked
 x 25
@@ -5052,10 +5149,10 @@ x 25
 y 9
 end
 arch gate_closed_1
-speed 0.500000
-connected 11
 x 25
 y 9
+speed 0.500000
+connected 11
 end
 arch cobblestones
 x 25
@@ -5126,10 +5223,10 @@ x 25
 y 26
 end
 arch gate_closed_1
-speed 0.500000
-connected 15
 x 25
 y 26
+speed 0.500000
+connected 15
 end
 arch dungeon_floor
 x 25
@@ -5156,18 +5253,18 @@ x 25
 y 31
 end
 arch button_plate
-connected 13
 x 26
+connected 13
 end
 arch button_plate
-connected 15
 x 26
 y 1
+connected 15
 end
 arch button_plate
-connected 18
 x 26
 y 2
+connected 18
 end
 arch blocked
 x 26
@@ -5226,27 +5323,27 @@ x 26
 y 10
 end
 arch gate_closed_2
-connected 18
 x 26
 y 10
+connected 18
 end
 arch dungeon_floor
 x 26
 y 11
 end
 arch gate_closed_2
-connected 18
 x 26
 y 11
+connected 18
 end
 arch dungeon_floor
 x 26
 y 12
 end
 arch gate_closed_2
-connected 18
 x 26
 y 12
+connected 18
 end
 arch dungeon_floor
 x 26
@@ -5261,70 +5358,70 @@ x 26
 y 14
 end
 arch block_door_closed
-speed 0.500000
-connected 21
 x 26
 y 14
+speed 0.500000
+connected 21
 end
 arch cobblestones
 x 26
 y 15
 end
 arch block_door_closed
-speed 0.500000
-connected 21
 x 26
 y 15
+speed 0.500000
+connected 21
 end
 arch cobblestones
 x 26
 y 16
 end
 arch block_door_closed
-speed 0.500000
-connected 21
 x 26
 y 16
+speed 0.500000
+connected 21
 end
 arch cobblestones
 x 26
 y 17
 end
 arch block_door_closed
-speed 0.500000
-connected 21
 x 26
 y 17
+speed 0.500000
+connected 21
 end
 arch cobblestones
 x 26
 y 18
 end
 arch block_door_closed
-speed 0.500000
-connected 21
 x 26
 y 18
+speed 0.500000
+connected 21
 end
 arch cobblestones
 x 26
 y 19
 end
 arch block_door_closed
-speed 0.500000
-connected 21
 x 26
 y 19
+speed 0.500000
+connected 21
 end
 arch cobblestones
 x 26
 y 20
 end
 arch block_door_closed
-speed 0.500000
-connected 21
 x 26
 y 20
+speed 0.500000
+connected 21
 end
 arch dungeon_floor
 x 26
@@ -5339,36 +5436,36 @@ x 26
 y 22
 end
 arch gate_closed_2
-connected 14
 x 26
 y 22
+connected 14
 end
 arch dungeon_floor
 x 26
 y 23
 end
 arch gate_closed_2
-connected 14
 x 26
 y 23
+connected 14
 end
 arch dungeon_floor
 x 26
 y 24
 end
 arch gate_closed_2
-connected 14
 x 26
 y 24
+connected 14
 end
 arch dungeon_floor
 x 26
 y 25
 end
 arch gate_closed_2
-connected 14
 x 26
 y 25
+connected 14
 end
 arch dungeon_floor
 x 26
@@ -5423,8 +5520,8 @@ x 27
 end
 arch button_plate
 name large button of xan
-connected 19
 x 27
+connected 19
 end
 arch dungeon_floor
 x 27
@@ -5512,8 +5609,7 @@ y 16
 end
 arch magic_mouth
 msg
-Open it and do not think of coming
-back
+Open it and do not think of coming back.
 endmsg
 x 27
 y 17
@@ -5523,9 +5619,9 @@ x 27
 y 17
 end
 arch button_lever
-connected 29
 x 27
 y 17
+connected 29
 end
 arch cobblestones
 x 27
@@ -5631,11 +5727,11 @@ x 28
 y 1
 end
 arch spikes_open
+x 28
+y 1
 speed 0.500000
 value 1
 connected 11
-x 28
-y 1
 end
 arch boulder
 name boulder of xan chance
@@ -5725,12 +5821,7 @@ end
 arch sign_w
 msg
 Rules and warnings:
-This is an arena. You enter and
-cannot come out until your luck is good
-enough to find an exit.
-This arena is not for the weak. The
-winner will gain the symbol of mightest
-of the realm.
+This is an arena.  You enter and cannot come out until your luck is good enough to find an exit.  This arena is not for the weak.  The winner will gain the symbol of mightiest of the realm.
 endmsg
 x 28
 y 16
@@ -5742,12 +5833,7 @@ end
 arch sign_w
 msg
 Rules and warnings:
-This is an arena. You enter and
-cannot come out until your luck is good
-enough to find an exit.
-This arena is not for the weak. The
-winner will gain the symbol of mightest
-of the realm.
+This is an arena. You enter and cannot come out until your luck is good enough to find an exit.  This arena is not for the weak.  The winner will gain the symbol of mightiest of the realm.
 endmsg
 x 28
 y 17
@@ -5777,6 +5863,10 @@ x 28
 y 22
 end
 arch dungeon_floor
+x 28
+y 23
+end
+arch big_dragon
 x 28
 y 23
 end
@@ -5861,9 +5951,9 @@ y 2
 end
 arch button_plate
 name large button of xan
-connected 19
 x 29
 y 2
+connected 19
 end
 arch blocked
 x 29
@@ -5916,7 +6006,7 @@ end
 arch sign_e
 msg
 Try more of your luck?
-Go upstairs
+Go upstairs.
 endmsg
 x 29
 y 10
@@ -5946,66 +6036,66 @@ x 29
 y 15
 end
 arch block_door_open
-speed 0.500000
-value 1
-connected 21
 x 29
 y 15
+speed 0.500000
+value 1
+connected 21
 end
 arch cobblestones
 x 29
 y 16
 end
 arch block_door_open
-speed 0.500000
-value 1
-connected 21
 x 29
 y 16
+speed 0.500000
+value 1
+connected 21
 end
 arch cobblestones
 x 29
 y 17
 end
 arch block_door_open
-speed 0.500000
-value 1
-connected 21
 x 29
 y 17
+speed 0.500000
+value 1
+connected 21
 end
 arch cobblestones
 x 29
 y 18
 end
 arch block_door_open
-speed 0.500000
-value 1
-connected 21
 x 29
 y 18
+speed 0.500000
+value 1
+connected 21
 end
 arch cobblestones
 x 29
 y 19
 end
 arch block_door_open
+x 29
+y 19
 speed 0.500000
 value 1
 connected 21
-x 29
-y 19
 end
 arch cobblestones
 x 29
 y 20
 end
 arch block_door_open
+x 29
+y 20
 speed 0.500000
 value 1
 connected 21
-x 29
-y 20
 end
 arch dungeon_floor
 x 29
@@ -6056,9 +6146,9 @@ x 29
 y 28
 end
 arch demilich
-unaggressive 0
 x 29
 y 28
+unaggressive 0
 end
 arch dungeon_floor
 x 29
@@ -6069,9 +6159,9 @@ x 29
 y 29
 end
 arch demilich
-unaggressive 0
 x 29
 y 29
+unaggressive 0
 end
 arch dungeon_floor
 x 29
@@ -6082,9 +6172,9 @@ x 29
 y 30
 end
 arch demilich
-unaggressive 0
 x 29
 y 30
+unaggressive 0
 end
 arch dungeon_floor
 x 29
@@ -6192,16 +6282,15 @@ x 30
 y 15
 end
 arch block_door_open
+x 30
+y 15
 speed 0.500000
 value 1
 connected 21
-x 30
-y 15
 end
 arch magic_mouth
 msg
-If the entrance is blocked, it means
-it's in use. Come back later.
+If the entrance is blocked, it means it's in use.  Come back later.
 endmsg
 x 30
 y 16
@@ -6219,8 +6308,7 @@ y 16
 end
 arch magic_mouth
 msg
-If the entrance is blocked, it means
-it's in use. Come back later.
+If the entrance is blocked, it means it's in use.  Come back later.
 endmsg
 x 30
 y 17
@@ -6241,11 +6329,11 @@ x 30
 y 18
 end
 arch block_door_open
+x 30
+y 18
 speed 0.500000
 value 1
 connected 21
-x 30
-y 18
 end
 arch cobblestones
 x 30
@@ -6291,9 +6379,7 @@ y 24
 end
 arch magic_mouth
 msg
-If the inner door is closed,  you are
-out of luck. Well, still you can get
-closer to take a look of what's inside.
+If the inner door is closed, you are out of luck.  Well, still you can get closer to take a look of what's inside.
 endmsg
 x 30
 y 25
@@ -6311,9 +6397,9 @@ x 30
 y 27
 end
 arch grate_closed_1
-connected 17
 x 30
 y 27
+connected 17
 end
 arch dungeon_floor
 x 30
@@ -6324,9 +6410,9 @@ x 30
 y 28
 end
 arch demilich
-unaggressive 0
 x 30
 y 28
+unaggressive 0
 end
 arch dungeon_floor
 x 30
@@ -6337,18 +6423,18 @@ x 30
 y 29
 end
 arch demilich
-unaggressive 0
 x 30
 y 29
+unaggressive 0
 end
 arch dungeon_floor
 x 30
 y 30
 end
 arch demilich
-unaggressive 0
 x 30
 y 30
+unaggressive 0
 end
 arch dungeon_floor
 x 30
@@ -6359,18 +6445,18 @@ x 30
 y 31
 end
 arch spikes_open
+x 31
 speed 0.500000
 value 1
 connected 29
-x 31
 end
 arch boulder
 x 31
 end
 arch button_plate
-connected 21
 x 31
 y 1
+connected 21
 end
 arch blocked
 x 31
@@ -6595,108 +6681,4 @@ end
 arch mine12
 x 31
 y 31
-end
-arch behemoth
-x 1
-y 10
-end
-arch behemoth
-x 1
-y 18
-end
-arch behemoth
-x 3
-y 11
-end
-arch behemoth
-x 3
-y 19
-end
-arch titan
-x 7
-y 29
-end
-arch dread
-x 8
-y 5
-end
-arch dread
-x 8
-y 7
-end
-arch dread
-x 10
-y 5
-end
-arch dread
-x 10
-y 7
-end
-arch dread
-x 12
-y 5
-end
-arch dread
-x 12
-y 7
-end
-arch dread
-x 14
-y 5
-end
-arch dread
-x 14
-y 7
-end
-arch dread
-x 16
-y 5
-end
-arch dread
-x 16
-y 7
-end
-arch dread
-x 18
-y 5
-end
-arch dread
-x 18
-y 7
-end
-arch big_dragon
-x 18
-y 28
-end
-arch dread
-x 20
-y 5
-end
-arch dread
-x 20
-y 7
-end
-arch dread
-x 22
-y 5
-end
-arch dread
-x 22
-y 7
-end
-arch big_dragon
-x 23
-y 28
-end
-arch dread
-x 24
-y 5
-end
-arch dread
-x 24
-y 7
-end
-arch big_dragon
-x 28
-y 23
 end

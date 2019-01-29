@@ -1,16 +1,17 @@
 arch map
+name Adventurers Guild, Entrance
+difficulty 25
 region stoneville
-name advguild
+shopitems *:0
+shopmax 2000
+width 32
+height 32
+enter_x 15
+enter_y 31
 msg
-Creator: Viola Krings
-Email: 
-Date: Thu Jul 10 12:10:32 1997
+Created:  1997-07-10 Viola Krings
+Modified: 2012-03-17 Rick Tanner
 endmsg
-x 32
-y 32
-shopitems *:5
-shopmin 200
-shopmax 5000
 end
 arch woodfloor
 end
@@ -55,13 +56,13 @@ end
 arch woodfloor
 y 7
 end
-arch wall_2_1_1
+arch wall_3_2
 y 7
 end
 arch woodfloor
 y 8
 end
-arch wall_3_2
+arch wall_2_1_1
 y 8
 end
 arch woodfloor
@@ -255,23 +256,39 @@ arch woodfloor
 x 1
 y 7
 end
-arch woodfloor
-x 1
-y 8
-end
 arch wall_2_1_2
 x 1
-y 8
+y 7
 end
 arch woodfloor
 x 1
-y 9
+y 8
 end
 arch diamond_converter
 x 1
+y 8
+end
+arch woodfloor
+x 1
+y 9
+end
+arch silver_converter
+name convert gold into silver
+slaying goldcoin
+other_arch silvercoin
+sp 10
+food 1
+x 1
 y 9
 end
 arch woodfloor
+x 1
+y 10
+end
+arch guard
+name elite bank guard
+dam 25
+wc -10
 x 1
 y 10
 end
@@ -461,23 +478,27 @@ arch woodfloor
 x 2
 y 7
 end
-arch woodfloor
-x 2
-y 8
-end
 arch wall_2_1_2
 x 2
-y 8
+y 7
 end
 arch woodfloor
 x 2
-y 9
+y 8
 end
 arch pearl_converter
 x 2
+y 8
+end
+arch woodfloor
+x 2
 y 9
 end
 arch woodfloor
+x 2
+y 10
+end
+arch platinum_converter2
 x 2
 y 10
 end
@@ -635,23 +656,32 @@ arch woodfloor
 x 3
 y 7
 end
-arch woodfloor
-x 3
-y 8
-end
 arch wall_2_1_2
 x 3
-y 8
+y 7
 end
 arch woodfloor
 x 3
-y 9
+y 8
 end
 arch ruby_converter
 x 3
+y 8
+end
+arch woodfloor
+x 3
 y 9
 end
 arch woodfloor
+x 3
+y 10
+end
+arch platinum_converter2
+name convert jade into platinum
+slaying jadecoin
+other_arch platinacoin
+sp 100
+food 1
 x 3
 y 10
 end
@@ -759,6 +789,16 @@ arch woodfloor
 x 3
 y 28
 end
+arch dread
+name KeyDread
+x 3
+y 28
+carrying 100
+arch key2
+name Key to Adventurers Guild
+slaying advguildkey
+end
+end
 arch woodfloor
 x 3
 y 29
@@ -830,23 +870,27 @@ arch woodfloor
 x 4
 y 7
 end
-arch woodfloor
-x 4
-y 8
-end
 arch wall_2_1_2
 x 4
-y 8
+y 7
 end
 arch woodfloor
 x 4
-y 9
+y 8
 end
 arch silver_converter
 x 4
+y 8
+end
+arch woodfloor
+x 4
 y 9
 end
 arch woodfloor
+x 4
+y 10
+end
+arch jade_converter
 x 4
 y 10
 end
@@ -1000,6 +1044,10 @@ arch wall_2_1_1
 x 5
 y 3
 end
+arch wall_2_short
+x 5
+y 3
+end
 arch woodfloor
 x 5
 y 4
@@ -1020,23 +1068,32 @@ arch woodfloor
 x 5
 y 7
 end
-arch woodfloor
-x 5
-y 8
-end
 arch wall_2_1_2
 x 5
-y 8
+y 7
 end
 arch woodfloor
 x 5
-y 9
+y 8
 end
 arch gold_converter
 x 5
+y 8
+end
+arch woodfloor
+x 5
 y 9
 end
 arch woodfloor
+x 5
+y 10
+end
+arch jade_converter
+name convert amberium into jade
+slaying ambercoin
+other_arch jadecoin
+sp 100
+food 1
 x 5
 y 10
 end
@@ -1200,8 +1257,6 @@ slaying guildap2
 x 6
 y 4
 connected 102
-arch igate_closed_1
-end
 end
 arch woodfloor
 x 6
@@ -1215,23 +1270,27 @@ arch woodfloor
 x 6
 y 7
 end
-arch woodfloor
-x 6
-y 8
-end
 arch wall_2_1_2
 x 6
-y 8
+y 7
 end
 arch woodfloor
 x 6
-y 9
+y 8
 end
 arch platinum_converter
 x 6
+y 8
+end
+arch woodfloor
+x 6
 y 9
 end
 arch woodfloor
+x 6
+y 10
+end
+arch gold_converter
 x 6
 y 10
 end
@@ -1387,26 +1446,30 @@ arch woodfloor
 x 7
 y 7
 end
-arch woodfloor
-x 7
-y 8
-end
 arch wall_2_1_2
 x 7
-y 8
+y 7
 end
 arch woodfloor
 x 7
-y 9
+y 8
 end
 arch guard
 name elite bank guard
 dam 25
 wc -10
 x 7
+y 8
+end
+arch woodfloor
+x 7
 y 9
 end
 arch woodfloor
+x 7
+y 10
+end
+arch platinum_converter
 x 7
 y 10
 end
@@ -1582,47 +1645,55 @@ arch woodfloor
 x 8
 y 7
 end
-arch woodfloor
-x 8
-y 8
-end
 arch wall_2_2_3
 x 8
-y 8
+y 7
 end
 arch woodfloor
 x 8
-y 9
+y 8
 end
 arch wall_1_2
 x 8
-y 9
+y 8
 end
 arch magic_mouth
 msg
 Local Guild Bank
 endmsg
 x 8
-y 10
+y 9
 end
 arch woodfloor
+x 8
+y 9
+end
+arch woodfloor
+x 8
+y 10
+end
+arch wall_1_1
 x 8
 y 10
 end
 arch woodfloor
 x 8
 y 11
-end
-arch wall_1_3
-x 8
-y 11
-end
-arch woodfloor
-x 8
-y 12
 end
 arch swall_1_1
 x 8
+y 11
+end
+arch wall_2_2_4
+x 8
+y 11
+end
+arch woodfloor
+x 8
+y 12
+end
+arch swall_2_1_1
+x 8
 y 12
 end
 arch woodfloor
@@ -1653,11 +1724,15 @@ arch woodfloor
 x 8
 y 16
 end
-arch swall_1_2
+arch swall_2_1_1
 x 8
 y 16
 end
 arch woodfloor
+x 8
+y 17
+end
+arch swall_1_2_half
 x 8
 y 17
 end
@@ -1792,7 +1867,7 @@ y 1
 unique 1
 end
 arch key2
-name key to guild apaprtment 2
+name key to guild apartment 2
 slaying guildap2
 x 9
 y 1
@@ -1840,11 +1915,11 @@ arch woodfloor
 x 9
 y 8
 end
-arch woodfloor
-x 9
-y 9
-end
 arch identify_table
+x 9
+y 8
+end
+arch woodfloor
 x 9
 y 9
 end
@@ -1863,10 +1938,11 @@ end
 arch altar
 name altar of detect magic (10 gp)
 slaying money
-sp 76
 food 100
 x 9
 y 12
+arch spell_detect_magic
+end
 end
 arch woodfloor
 x 9
@@ -1877,12 +1953,13 @@ x 9
 y 14
 end
 arch altar
-name altar of detect curse (25 gp)
+name altar of detect curse (25 sp)
 slaying money
-sp 79
-food 250
+food 25
 x 9
 y 14
+arch spell_detect_curse
+end
 end
 arch woodfloor
 x 9
@@ -1932,9 +2009,7 @@ end
 arch sign
 name Guild Room
 msg
-In this room you may place items you
-want to give to other guild members.
-The items will not vanish from there.
+In this room you may place items you want to give to other guild members.  The items will not vanish from there.
 endmsg
 x 9
 y 22
@@ -2031,6 +2106,10 @@ x 10
 y 3
 end
 arch wall_2_1_1
+x 10
+y 3
+end
+arch wall_2_short
 x 10
 y 3
 end
@@ -2399,13 +2478,10 @@ end
 arch woman2
 name landlady
 msg
-@match Hallo|hallo|Hello|hello|Hi|hi
-Hello, noble adventurer! You can take
-a room here if that is your wish.
+@match hallo|hello|hi
+Hello, noble adventurer! You can take a room here if that is your wish.
 @match room|apartment
-Our apartments are small, with just a
-bed, but you can use the guild's
-cauldron if that is what you desire.
+Our apartments are small, with just a bed, but you can use the guild's cauldron if that is what you desire.
 @match *
 Have a nice day!
 endmsg
@@ -2457,7 +2533,7 @@ end
 arch door_look_1
 x 12
 y 17
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 12
@@ -2735,7 +2811,7 @@ x 14
 y 4
 end
 arch altar
-name drop 5 beholdereyes to get a key
+name drop 5 beholder eyes to get a key
 slaying beholdereye
 food 5
 x 14
@@ -2892,6 +2968,10 @@ arch wall_2_1_1
 x 15
 y 3
 end
+arch wall_2_short
+x 15
+y 3
+end
 arch woodfloor
 x 15
 y 4
@@ -3040,7 +3120,7 @@ arch woodfloor
 x 15
 y 31
 end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_103_127
 hp 8
 sp 16
@@ -3247,7 +3327,7 @@ arch woodfloor
 x 16
 y 31
 end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_103_127
 hp 8
 sp 16
@@ -3495,8 +3575,7 @@ end
 arch sign_e
 name arms and armour museum
 msg
-Don't even think of taking anything
-away..
+Don't even think of taking anything away..
 endmsg
 x 18
 y 9
@@ -3514,8 +3593,7 @@ name Creature Museum
 msg
 Please do not destroy the exhibits!
 And take care not to anger them!
-It is recommended to put up the
-security spikes to avoid accidents.
+It is recommended to put up the security spikes to avoid accidents.
 endmsg
 x 18
 y 11
@@ -3566,7 +3644,7 @@ arch grass
 x 18
 y 20
 end
-arch swall_1_3
+arch swall_2_1_2
 x 18
 y 20
 end
@@ -3614,17 +3692,11 @@ arch guildmaster
 name admission clerk
 msg
 @match admission|yes
-To join the guild, you must pay at the
-alter over there, and then pass a
-dangerous test. Only hardened
-adventurers may join!
+To join the guild, you must pay at the alter over there, and then pass a dangerous test.  Only hardened adventurers may join!
 @match test
-The test is dangerous: We've tied the
-key to this guild to the eye of a
-Dread.
+The test is dangerous: We've tied the key to this guild to the eye of a Dread.
 @match Hallo|Hello|Hi
-Hi! Do you want do know something
-about admission to the guild?
+Hi! Do you want do know something about admission to the guild?
 endmsg
 x 18
 y 28
@@ -3723,7 +3795,7 @@ arch door_look_2
 name museum door
 x 19
 y 9
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 19
@@ -3765,7 +3837,7 @@ arch door_look_2
 name museum door
 x 19
 y 14
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 19
@@ -3924,6 +3996,10 @@ arch wall_2_1_1
 x 20
 y 3
 end
+arch wall_2_short
+x 20
+y 3
+end
 arch woodfloor
 x 20
 y 4
@@ -3996,6 +4072,11 @@ arch woodfloor
 x 20
 y 15
 end
+arch behemoth
+x 20
+y 15
+unaggressive 1
+end
 arch woodfloor
 x 20
 y 16
@@ -4020,7 +4101,7 @@ arch grass
 x 20
 y 20
 end
-arch swall_1_4
+arch swall_2_1_2
 x 20
 y 20
 end
@@ -4449,11 +4530,7 @@ end
 arch sign
 name alchemy room
 msg
-In this room you may use the cauldron
-to test your alchemy recepies. Take
-care if entering while someone else is
-experimenting, it might be dangerous
-to your health.
+In this room you may use the cauldron to test your alchemy recipes.  Take care if entering while someone else is experimenting, it might be dangerous to your health.
 endmsg
 x 22
 y 26
@@ -4690,8 +4767,8 @@ x 24
 y 4
 end
 arch altar
-name drop 1 Dread's Eye to get a key
-slaying Dread's Eye
+name drop 1 Dread's eye to get a key
+slaying Dread's eye
 food 1
 x 24
 y 4
@@ -4786,11 +4863,7 @@ end
 arch tome
 name library tome
 msg
-This door leeds to the guild library.
-Feel free to browse through the books,
-but do not take anything away. Take
-care not to anger the librarians, they
-are so nice!
+This door leeds to the guild library.  Feel free to browse through the books, but do not take anything away.  Take care not to anger the librarians, they are so nice!
 endmsg
 x 24
 y 21
@@ -4874,6 +4947,10 @@ arch wall_2_1_1
 x 25
 y 3
 end
+arch wall_2_short
+x 25
+y 3
+end
 arch woodfloor
 x 25
 y 4
@@ -4924,6 +5001,11 @@ arch woodfloor
 x 25
 y 11
 end
+arch big_wiz
+x 25
+y 11
+unaggressive 1
+end
 arch woodfloor
 x 25
 y 12
@@ -4939,6 +5021,11 @@ end
 arch woodfloor
 x 25
 y 15
+end
+arch chinese_dragon
+x 25
+y 15
+unaggressive 1
 end
 arch woodfloor
 x 25
@@ -4992,7 +5079,7 @@ arch door_look_2
 name library door
 x 25
 y 22
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 25
@@ -5222,6 +5309,7 @@ endmsg
 x 26
 y 24
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -5230,6 +5318,17 @@ x 26
 y 25
 end
 arch woodfloor
+x 26
+y 26
+end
+arch sphinx
+name homesick sphinx
+msg
+@match Hello
+Hello! Please don't talk in here.
+@match *
+I don't know any riddles right now.  Please leave me alone.
+endmsg
 x 26
 y 26
 end
@@ -5514,6 +5613,11 @@ arch woodfloor
 x 28
 y 11
 end
+arch big_dragon
+x 28
+y 11
+unaggressive 1
+end
 arch woodfloor
 x 28
 y 12
@@ -5727,6 +5831,11 @@ end
 arch woodfloor
 x 29
 y 15
+end
+arch titan
+x 29
+y 15
+unaggressive 1
 end
 arch woodfloor
 x 29
@@ -6084,6 +6193,10 @@ arch wall_2_1_1
 x 31
 y 3
 end
+arch wall_2_short
+x 31
+y 3
+end
 arch woodfloor
 x 31
 y 4
@@ -6307,51 +6420,4 @@ end
 arch wall_2_2_4
 x 31
 y 31
-end
-arch dread
-name KeyDread
-x 3
-y 28
-carrying 100
-arch key2
-name Key to Adventurers Guild
-slaying advguildkey
-end
-end
-arch behemoth
-x 20
-y 15
-unaggressive 1
-end
-arch big_wiz
-x 25
-y 11
-unaggressive 1
-end
-arch chinese_dragon
-x 25
-y 15
-unaggressive 1
-end
-arch sphinx
-name homesick sphinx
-msg
-@match Hello
-Hello! Please don't talk in here.
-@match *
-I don't know any riddles right now.
-Please leave me alone.
-endmsg
-x 26
-y 26
-end
-arch big_dragon
-x 28
-y 11
-unaggressive 1
-end
-arch titan
-x 29
-y 15
-unaggressive 1
 end

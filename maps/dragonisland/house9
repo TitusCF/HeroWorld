@@ -1,13 +1,15 @@
 arch map
+name Master's House
+difficulty 1
 region stoneville
-name house9
+width 6
+height 6
+enter_x 1
+enter_y 4
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Fri Sep 12 15:46:59 1997
+Created:  1997-02-12
+Modified: 2012-02-01 Rick Tanner
 endmsg
-x 6
-y 6
 end
 arch marble
 end
@@ -40,7 +42,7 @@ end
 arch marble
 y 5
 end
-arch wall_2_2_1
+arch wall_1_2
 y 5
 end
 arch marble
@@ -73,18 +75,14 @@ arch marble
 x 1
 y 4
 end
-arch oakdoor
-slaying /world/world_103_127
-hp 6
-sp 19
-x 1
-y 4
-end
 arch marble
 x 1
 y 5
 end
-arch wall_2_1_2
+arch oakdoor_2
+slaying /world/world_103_127
+hp 6
+sp 19
 x 1
 y 5
 end
@@ -118,7 +116,7 @@ arch marble
 x 2
 y 5
 end
-arch wall_2_1_2
+arch wall_1_4
 x 2
 y 5
 end
@@ -172,11 +170,10 @@ y 2
 end
 arch slave
 msg
-@match [Hh][ae]llo|[Hh]i|[Gg]reet
+@match h[ae]llo|hi|greet
 Hello! I'm waiting for my master.
 @match master
-Yes, he went adventuring and I await 
-his return to see to his every need.
+Yes, he went adventuring and I await his return to see to his every need.
 endmsg
 x 4
 y 2

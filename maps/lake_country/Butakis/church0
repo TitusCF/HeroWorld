@@ -1,13 +1,15 @@
 arch map
-region lakecountry
-name <untitled>
-msg
-Creator: Kundi, Xue
-Email: xkd@soda.csua.berkeley.edu
-Date: Wed Mar 29 19:25:57 1995
-endmsg
+name Royal Church, Sanctuary
+difficulty 20
+region butakisfortress
 width 20
 height 30
+enter_x 9
+enter_y 28
+msg
+Created:  1995-03-29 Kundi, Xue (xkd@soda.csua.berkeley.edu)
+Modified: 2008-10-29 Rick Tanner
+endmsg
 end
 arch woodfloor
 end
@@ -198,27 +200,28 @@ x 1
 y 1
 end
 arch block_door_open
+x 1
+y 1
 speed 0.500000
 value 1
-x 1
-y 1
 end
 arch priest
-type 0
-monster 1
-unaggressive 1
 x 1
 y 1
+type 0
+move_type walk
+monster 1
+unaggressive 1
 end
 arch woodfloor
 x 1
 y 2
 end
 arch block_door_open
-speed 0.500000
-value 1
 x 1
 y 2
+speed 0.500000
+value 1
 end
 arch statue
 x 1
@@ -835,30 +838,30 @@ x 5
 y 1
 end
 arch block_door_open
-speed 0.500000
-value 1
 x 5
 y 1
+speed 0.500000
+value 1
 end
 arch woodfloor
 x 5
 y 2
 end
 arch block_door_open
-speed 0.500000
-value 1
 x 5
 y 2
+speed 0.500000
+value 1
 end
 arch woodfloor
 x 5
 y 3
 end
 arch block_door_open
-speed 0.500000
-value 1
 x 5
 y 3
+speed 0.500000
+value 1
 end
 arch afloor_right
 x 5
@@ -1023,47 +1026,48 @@ x 6
 y 1
 end
 arch block_door_open
-speed 0.500000
-value 1
 x 6
 y 1
+speed 0.500000
+value 1
 end
 arch woodfloor
 x 6
 y 2
 end
 arch block_door_open
-speed 0.500000
-value 1
 x 6
 y 2
+speed 0.500000
+value 1
 end
 arch woodfloor
 x 6
 y 3
 end
 arch block_door_open
-speed 0.500000
-value 1
 x 6
 y 3
+speed 0.500000
+value 1
 end
 arch priest
-type 0
-monster 1
-unaggressive 1
 x 6
 y 3
+type 0
+move_type walk
+monster 1
+unaggressive 1
 end
 arch woodfloor
 x 6
 y 4
 end
 arch block_door_open
-speed 0.500000
-value 1
 x 6
 y 4
+speed 0.500000
+value 1
 end
 arch afloor_right
 x 6
@@ -1220,56 +1224,57 @@ x 7
 y 1
 end
 arch block_door_closed
-speed 0.500000
 x 7
 y 1
+speed 0.500000
 end
 arch woodfloor
 x 7
 y 2
 end
 arch block_door_open
-speed 0.500000
-value 1
 x 7
 y 2
+speed 0.500000
+value 1
 end
 arch woodfloor
 x 7
 y 3
 end
 arch block_door_open
-speed 0.500000
-value 1
 x 7
 y 3
+speed 0.500000
+value 1
 end
 arch woodfloor
 x 7
 y 4
 end
 arch block_door_open
-speed 0.500000
-value 1
 x 7
 y 4
+speed 0.500000
+value 1
 end
 arch priest
-type 0
-monster 1
-unaggressive 1
 x 7
 y 4
+type 0
+move_type walk
+monster 1
+unaggressive 1
 end
 arch woodfloor
 x 7
 y 5
 end
 arch block_door_open
-speed 0.500000
-value 1
 x 7
 y 5
+speed 0.500000
+value 1
 end
 arch afloor_right
 x 7
@@ -1417,9 +1422,9 @@ x 8
 y 1
 end
 arch block_door_closed
-speed 0.500000
 x 8
 y 1
+speed 0.500000
 end
 arch woodfloor
 x 8
@@ -1446,30 +1451,30 @@ x 8
 y 4
 end
 arch block_door_open
-speed 0.500000
-value 1
 x 8
 y 4
+speed 0.500000
+value 1
 end
 arch woodfloor
 x 8
 y 5
 end
 arch block_door_open
-speed 0.500000
-value 1
 x 8
 y 5
+speed 0.500000
+value 1
 end
 arch woodfloor
 x 8
 y 6
 end
 arch block_door_open
-speed 0.500000
-value 1
 x 8
 y 6
+speed 0.500000
+value 1
 end
 arch afloor_right
 x 8
@@ -1581,9 +1586,9 @@ x 9
 y 1
 end
 arch block_door_closed
-speed 0.500000
 x 9
 y 1
+speed 0.500000
 end
 arch statue
 x 9
@@ -1614,30 +1619,30 @@ x 9
 y 4
 end
 arch block_door_open
-speed 0.500000
-value 1
 x 9
 y 4
+speed 0.500000
+value 1
 end
 arch woodfloor
 x 9
 y 5
 end
 arch block_door_open
-speed 0.500000
-value 1
 x 9
 y 5
+speed 0.500000
+value 1
 end
 arch woodfloor
 x 9
 y 6
 end
 arch block_door_open
-speed 0.500000
-value 1
 x 9
 y 6
+speed 0.500000
+value 1
 end
 arch afloor_right
 x 9
@@ -1749,9 +1754,9 @@ x 10
 y 1
 end
 arch block_door_closed
-speed 0.500000
 x 10
 y 1
+speed 0.500000
 end
 arch statue
 x 10
@@ -1782,30 +1787,30 @@ x 10
 y 4
 end
 arch block_door_open
-speed 0.500000
-value 1
 x 10
 y 4
+speed 0.500000
+value 1
 end
 arch woodfloor
 x 10
 y 5
 end
 arch block_door_open
-speed 0.500000
-value 1
 x 10
 y 5
+speed 0.500000
+value 1
 end
 arch woodfloor
 x 10
 y 6
 end
 arch block_door_open
-speed 0.500000
-value 1
 x 10
 y 6
+speed 0.500000
+value 1
 end
 arch afloor_left
 x 10
@@ -1917,9 +1922,9 @@ x 11
 y 1
 end
 arch block_door_closed
-speed 0.500000
 x 11
 y 1
+speed 0.500000
 end
 arch woodfloor
 x 11
@@ -1946,30 +1951,30 @@ x 11
 y 4
 end
 arch block_door_open
-speed 0.500000
-value 1
 x 11
 y 4
+speed 0.500000
+value 1
 end
 arch woodfloor
 x 11
 y 5
 end
 arch block_door_open
-speed 0.500000
-value 1
 x 11
 y 5
+speed 0.500000
+value 1
 end
 arch woodfloor
 x 11
 y 6
 end
 arch block_door_open
-speed 0.500000
-value 1
 x 11
 y 6
+speed 0.500000
+value 1
 end
 arch afloor_left
 x 11
@@ -2081,56 +2086,57 @@ x 12
 y 1
 end
 arch block_door_closed
-speed 0.500000
 x 12
 y 1
+speed 0.500000
 end
 arch woodfloor
 x 12
 y 2
 end
 arch block_door_open
-speed 0.500000
-value 1
 x 12
 y 2
+speed 0.500000
+value 1
 end
 arch woodfloor
 x 12
 y 3
 end
 arch block_door_open
-speed 0.500000
-value 1
 x 12
 y 3
+speed 0.500000
+value 1
 end
 arch woodfloor
 x 12
 y 4
 end
 arch block_door_open
-speed 0.500000
-value 1
 x 12
 y 4
+speed 0.500000
+value 1
 end
 arch priest
-type 0
-monster 1
-unaggressive 1
 x 12
 y 4
+type 0
+move_type walk
+monster 1
+unaggressive 1
 end
 arch woodfloor
 x 12
 y 5
 end
 arch block_door_open
-speed 0.500000
-value 1
 x 12
 y 5
+speed 0.500000
+value 1
 end
 arch afloor_left
 x 12
@@ -2274,47 +2280,48 @@ x 13
 y 1
 end
 arch block_door_open
-speed 0.500000
-value 1
 x 13
 y 1
+speed 0.500000
+value 1
 end
 arch woodfloor
 x 13
 y 2
 end
 arch block_door_open
-speed 0.500000
-value 1
 x 13
 y 2
+speed 0.500000
+value 1
 end
 arch woodfloor
 x 13
 y 3
 end
 arch block_door_open
-speed 0.500000
-value 1
 x 13
 y 3
+speed 0.500000
+value 1
 end
 arch priest
-type 0
-monster 1
-unaggressive 1
 x 13
 y 3
+type 0
+move_type walk
+monster 1
+unaggressive 1
 end
 arch woodfloor
 x 13
 y 4
 end
 arch block_door_open
-speed 0.500000
-value 1
 x 13
 y 4
+speed 0.500000
+value 1
 end
 arch afloor_left
 x 13
@@ -2471,30 +2478,30 @@ x 14
 y 1
 end
 arch block_door_open
-speed 0.500000
-value 1
 x 14
 y 1
+speed 0.500000
+value 1
 end
 arch woodfloor
 x 14
 y 2
 end
 arch block_door_open
-speed 0.500000
-value 1
 x 14
 y 2
+speed 0.500000
+value 1
 end
 arch woodfloor
 x 14
 y 3
 end
 arch block_door_open
-speed 0.500000
-value 1
 x 14
 y 3
+speed 0.500000
+value 1
 end
 arch afloor_left
 x 14
@@ -3141,10 +3148,10 @@ x 18
 y 1
 end
 arch block_door_open
-speed 0.500000
-value 1
 x 18
 y 1
+speed 0.500000
+value 1
 end
 arch dwarf_priest
 x 18
@@ -3155,10 +3162,10 @@ x 18
 y 2
 end
 arch block_door_open
-speed 0.500000
-value 1
 x 18
 y 2
+speed 0.500000
+value 1
 end
 arch statue
 x 18

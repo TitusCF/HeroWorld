@@ -1,13 +1,15 @@
 arch map
+name Enigme, Level 4
+difficulty 40
 region brest
-name enigme
+width 28
+height 22
+enter_x 1
+enter_y 1
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Wed Jun  1 01:51:57 1994
+Created:  1994-06-01
+Modified: 2008-10-21 Rick Tanner
 endmsg
-x 28
-y 22
 end
 arch dungeon_floor
 end
@@ -163,6 +165,8 @@ end
 arch lbulletwall_2
 x 1
 y 2
+arch spell_lg_magic_bullet
+end
 end
 arch dungeon_floor
 x 1
@@ -229,6 +233,10 @@ x 1
 y 10
 end
 arch dungeon_floor
+x 1
+y 11
+end
+arch big_dragon
 x 1
 y 11
 end
@@ -625,7 +633,7 @@ arch dungeon_floor
 x 4
 y 3
 end
-arch random_food_fant
+arch random_food
 x 4
 y 3
 end
@@ -689,11 +697,19 @@ arch dungeon_floor
 x 4
 y 11
 end
+arch big_dragon
+x 4
+y 11
+end
 arch dungeon_floor
 x 4
 y 12
 end
 arch dungeon_floor
+x 4
+y 13
+end
+arch big_dragon
 x 4
 y 13
 end
@@ -905,7 +921,7 @@ arch dungeon_floor
 x 6
 y 3
 end
-arch random_food_fant
+arch random_food
 x 6
 y 3
 end
@@ -1107,11 +1123,19 @@ arch dungeon_floor
 x 7
 y 11
 end
+arch big_dragon
+x 7
+y 11
+end
 arch dungeon_floor
 x 7
 y 12
 end
 arch dungeon_floor
+x 7
+y 13
+end
+arch big_dragon
 x 7
 y 13
 end
@@ -1185,7 +1209,7 @@ arch dungeon_floor
 x 8
 y 3
 end
-arch random_food_fant
+arch random_food
 x 8
 y 3
 end
@@ -1465,7 +1489,7 @@ arch dungeon_floor
 x 10
 y 3
 end
-arch random_food_fant
+arch random_food
 x 10
 y 3
 end
@@ -1754,7 +1778,7 @@ arch dungeon_floor
 x 12
 y 3
 end
-arch random_food_fant
+arch random_food
 x 12
 y 3
 end
@@ -1775,6 +1799,10 @@ x 12
 y 5
 end
 arch dungeon_floor
+x 12
+y 6
+end
+arch titan
 x 12
 y 6
 end
@@ -1944,7 +1972,7 @@ arch dungeon_floor
 x 13
 y 14
 end
-arch random_food_fant
+arch random_food
 x 13
 y 14
 end
@@ -2038,7 +2066,7 @@ arch dungeon_floor
 x 14
 y 3
 end
-arch random_food_fant
+arch random_food
 x 14
 y 3
 end
@@ -2197,6 +2225,10 @@ arch dungeon_floor
 x 15
 y 6
 end
+arch titan
+x 15
+y 6
+end
 arch dungeon_floor
 x 15
 y 7
@@ -2218,7 +2250,7 @@ arch dungeon_floor
 x 15
 y 10
 end
-arch random_food_fant
+arch random_food
 x 15
 y 10
 end
@@ -2238,7 +2270,7 @@ arch dungeon_floor
 x 15
 y 14
 end
-arch random_food_fant
+arch random_food
 x 15
 y 14
 end
@@ -2320,7 +2352,7 @@ arch dungeon_floor
 x 16
 y 3
 end
-arch random_food_fant
+arch random_food
 x 16
 y 3
 end
@@ -2512,7 +2544,7 @@ arch dungeon_floor
 x 17
 y 12
 end
-arch random_food_fant
+arch random_food
 x 17
 y 12
 end
@@ -2602,7 +2634,7 @@ arch dungeon_floor
 x 18
 y 3
 end
-arch random_food_fant
+arch random_food
 x 18
 y 3
 end
@@ -2626,6 +2658,10 @@ arch dungeon_floor
 x 18
 y 6
 end
+arch titan
+x 18
+y 6
+end
 arch dungeon_floor
 x 18
 y 7
@@ -2646,7 +2682,7 @@ arch dungeon_floor
 x 18
 y 10
 end
-arch random_food_fant
+arch random_food
 x 18
 y 10
 end
@@ -2666,7 +2702,7 @@ arch dungeon_floor
 x 18
 y 14
 end
-arch random_food_fant
+arch random_food
 x 18
 y 14
 end
@@ -2905,7 +2941,7 @@ arch dungeon_floor
 x 20
 y 5
 end
-arch bwall_2_1_1
+arch bwall_1_2
 x 20
 y 5
 end
@@ -2917,7 +2953,7 @@ arch dungeon_floor
 x 20
 y 7
 end
-arch bwall_2_1_1
+arch bwall_1_1
 x 20
 y 7
 end
@@ -3075,11 +3111,19 @@ arch dungeon_floor
 x 21
 y 5
 end
+arch chinese_dragon
+x 21
+y 5
+end
 arch dungeon_floor
 x 21
 y 6
 end
 arch dungeon_floor
+x 21
+y 7
+end
+arch chinese_dragon
 x 21
 y 7
 end
@@ -3091,6 +3135,10 @@ arch dungeon_floor
 x 21
 y 9
 end
+arch chinese_dragon
+x 21
+y 9
+end
 arch dungeon_floor
 x 21
 y 10
@@ -3099,11 +3147,19 @@ arch dungeon_floor
 x 21
 y 11
 end
+arch chinese_dragon
+x 21
+y 11
+end
 arch dungeon_floor
 x 21
 y 12
 end
 arch dungeon_floor
+x 21
+y 13
+end
+arch chinese_dragon
 x 21
 y 13
 end
@@ -3333,11 +3389,19 @@ arch dungeon_floor
 x 23
 y 5
 end
+arch chinese_dragon
+x 23
+y 5
+end
 arch dungeon_floor
 x 23
 y 6
 end
 arch dungeon_floor
+x 23
+y 7
+end
+arch chinese_dragon
 x 23
 y 7
 end
@@ -3349,11 +3413,19 @@ arch dungeon_floor
 x 23
 y 9
 end
+arch chinese_dragon
+x 23
+y 9
+end
 arch dungeon_floor
 x 23
 y 10
 end
 arch dungeon_floor
+x 23
+y 11
+end
+arch chinese_dragon
 x 23
 y 11
 end
@@ -3571,7 +3643,7 @@ arch dungeon_floor
 x 25
 y 2
 end
-arch bwall_2_1_2
+arch bwall_1_3
 x 25
 y 2
 end
@@ -3591,11 +3663,19 @@ arch dungeon_floor
 x 25
 y 5
 end
+arch chinese_dragon
+x 25
+y 5
+end
 arch dungeon_floor
 x 25
 y 6
 end
 arch dungeon_floor
+x 25
+y 7
+end
+arch chinese_dragon
 x 25
 y 7
 end
@@ -3607,6 +3687,10 @@ arch dungeon_floor
 x 25
 y 9
 end
+arch chinese_dragon
+x 25
+y 9
+end
 arch dungeon_floor
 x 25
 y 10
@@ -3615,11 +3699,19 @@ arch dungeon_floor
 x 25
 y 11
 end
+arch chinese_dragon
+x 25
+y 11
+end
 arch dungeon_floor
 x 25
 y 12
 end
 arch dungeon_floor
+x 25
+y 13
+end
+arch chinese_dragon
 x 25
 y 13
 end
@@ -3990,92 +4082,4 @@ end
 arch bwall_2_2_4
 x 27
 y 21
-end
-arch big_dragon
-x 1
-y 11
-end
-arch big_dragon
-x 4
-y 11
-end
-arch big_dragon
-x 4
-y 13
-end
-arch big_dragon
-x 7
-y 11
-end
-arch big_dragon
-x 7
-y 13
-end
-arch titan
-x 12
-y 6
-end
-arch titan
-x 15
-y 6
-end
-arch titan
-x 18
-y 6
-end
-arch chinese_dragon
-x 21
-y 5
-end
-arch chinese_dragon
-x 21
-y 7
-end
-arch chinese_dragon
-x 21
-y 9
-end
-arch chinese_dragon
-x 21
-y 11
-end
-arch chinese_dragon
-x 21
-y 13
-end
-arch chinese_dragon
-x 23
-y 5
-end
-arch chinese_dragon
-x 23
-y 7
-end
-arch chinese_dragon
-x 23
-y 9
-end
-arch chinese_dragon
-x 23
-y 11
-end
-arch chinese_dragon
-x 25
-y 5
-end
-arch chinese_dragon
-x 25
-y 7
-end
-arch chinese_dragon
-x 25
-y 9
-end
-arch chinese_dragon
-x 25
-y 11
-end
-arch chinese_dragon
-x 25
-y 13
 end

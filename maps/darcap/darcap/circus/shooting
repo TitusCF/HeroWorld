@@ -1,15 +1,16 @@
 arch map
+name Darcap Circus Shooting Gallery
+difficulty 1
 region darcapcircus
-name strength
-msg
-Creator: Cater & Wade
-Email: john_cater@yahoo.com
-Date: Thu Jan 28 17:49:34 1999
-endmsg
-x 20
 shopitems bow:100;arrow:100;*:-100
-shopgreed 1.4
+shopgreed 1.40000
 shopmax 4000
+width 20
+height 16
+msg
+Created:  1999-01-28 Cater & Wade (john_cater@yahoo.com)
+Modified: 2008-11-20 Rick Tanner
+endmsg
 end
 arch pstone_1
 end
@@ -836,12 +837,10 @@ end
 arch pstone_1
 x 6
 y 5
-walk_off 1
 end
 arch bench_1_1
 x 6
 y 5
-fly_on 1
 end
 arch mover_3
 x 6
@@ -865,9 +864,6 @@ end
 arch bench_2_1_1
 x 6
 y 6
-walk_on 1
-walk_off 1
-fly_on 1
 end
 arch mover_3
 x 6
@@ -891,9 +887,6 @@ end
 arch bench_2_1_1
 x 6
 y 7
-walk_on 1
-walk_off 1
-fly_on 1
 end
 arch mover_3
 x 6
@@ -917,9 +910,6 @@ end
 arch bench_2_1_1
 x 6
 y 8
-walk_on 1
-walk_off 1
-fly_on 1
 end
 arch mover_3
 x 6
@@ -943,9 +933,6 @@ end
 arch bench_2_1_1
 x 6
 y 9
-walk_on 1
-walk_off 1
-fly_on 1
 end
 arch mover_3
 x 6
@@ -2102,7 +2089,7 @@ x 13
 y 6
 end
 arch goldfloor
-name drop 20 goldcoins
+name drop 20 gold coins
 food 20
 x 13
 y 6
@@ -2121,7 +2108,7 @@ x 13
 y 7
 end
 arch goldfloor
-name drop 20 goldcoins
+name drop 20 gold coins
 food 20
 x 13
 y 7
@@ -2140,7 +2127,7 @@ x 13
 y 8
 end
 arch goldfloor
-name drop 20 goldcoins
+name drop 20 gold coins
 food 20
 x 13
 y 8
@@ -2159,7 +2146,7 @@ x 13
 y 9
 end
 arch goldfloor
-name drop 20 goldcoins
+name drop 20 gold coins
 food 20
 x 13
 y 9
@@ -2486,9 +2473,9 @@ x 15
 y 7
 end
 arch exit
-slaying circus
-hp 7
-sp 9
+slaying /world/world_116_102
+hp 31
+sp 16
 x 15
 y 7
 end
@@ -2505,9 +2492,9 @@ x 15
 y 8
 end
 arch exit
-slaying circus
-hp 7
-sp 9
+slaying /world/world_116_102
+hp 31
+sp 16
 x 15
 y 8
 end

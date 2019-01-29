@@ -1,18 +1,18 @@
 arch map
-region brest
 name Underground River 1
-msg
-Creator: majorwoo josh@woosworld.net
-Date:    10/22/2004
-endmsg
+reset_timeout 1800
+fixed_resettime 1
+region brest
+darkness 2
 width 20
 height 14
-reset_timeout 1800
-darkness 2
-fixed_resettime 1
+msg
+Created:  2005-10-22 majorwoo (josh@woosworld.net)
+Modified: 2012-01-27 Rick Tanner
+endmsg
 end
 arch earth
-no_pass 1
+move_block all
 end
 arch cave4
 end
@@ -20,16 +20,16 @@ arch earth
 y 1
 end
 arch river_w-e
-no_pass 0
 y 1
+move_block 0
 end
 arch mover_3
-level 1
 y 1
+level 1
 end
 arch earth
-no_pass 1
 y 2
+move_block all
 end
 arch cave2
 y 2
@@ -83,8 +83,8 @@ arch cave23
 y 13
 end
 arch earth
-no_pass 1
 x 1
+move_block all
 end
 arch cave4
 x 1
@@ -94,20 +94,20 @@ x 1
 y 1
 end
 arch river_w-e
-no_pass 0
 x 1
 y 1
+move_block 0
 end
 arch mover_3
-attacktype 1
-level 1
 x 1
 y 1
+level 1
+attacktype 1
 end
 arch earth
-no_pass 1
 x 1
 y 2
+move_block all
 end
 arch cave2
 x 1
@@ -182,16 +182,15 @@ x 1
 y 13
 end
 arch earth
-no_pass 1
 x 2
+move_block all
 end
 arch cave4
 x 2
 end
 arch magic_mouth
 msg
-You seem to be stuck in some sort of an underground river...
-The water is moving to fast to go back up,  I guess you'll have to find another way out.
+You seem to be stuck in some sort of an underground river... The water is moving to fast to go back up, I guess you'll have to find another way out.
 endmsg
 x 2
 y 1
@@ -201,19 +200,19 @@ x 2
 y 1
 end
 arch river_w-e
-no_pass 0
 x 2
 y 1
+move_block 0
 end
 arch mover_3
-level 1
 x 2
 y 1
+level 1
 end
 arch earth
-no_pass 1
 x 2
 y 2
+move_block all
 end
 arch cave2
 x 2
@@ -280,8 +279,8 @@ x 2
 y 13
 end
 arch earth
-no_pass 1
 x 3
+move_block all
 end
 arch cave4
 x 3
@@ -291,19 +290,19 @@ x 3
 y 1
 end
 arch river_w-e
-no_pass 0
 x 3
 y 1
+move_block 0
 end
 arch mover_3
-level 1
 x 3
 y 1
+level 1
 end
 arch earth
-no_pass 1
 x 3
 y 2
+move_block all
 end
 arch cave2
 x 3
@@ -369,8 +368,8 @@ x 3
 y 13
 end
 arch earth
-no_pass 1
 x 4
+move_block all
 end
 arch cave4
 x 4
@@ -380,19 +379,19 @@ x 4
 y 1
 end
 arch river_w-e
-no_pass 0
 x 4
 y 1
+move_block 0
 end
 arch mover_3
-level 1
 x 4
 y 1
+level 1
 end
 arch earth
-no_pass 1
 x 4
 y 2
+move_block all
 end
 arch cave2
 x 4
@@ -491,8 +490,8 @@ x 4
 y 13
 end
 arch earth
-no_pass 1
 x 5
+move_block all
 end
 arch cave4
 x 5
@@ -502,19 +501,19 @@ x 5
 y 1
 end
 arch river_w-e
-no_pass 0
 x 5
 y 1
+move_block 0
 end
 arch mover_3
-level 1
 x 5
 y 1
+level 1
 end
 arch earth
-no_pass 1
 x 5
 y 2
+move_block all
 end
 arch cave2
 x 5
@@ -569,20 +568,20 @@ x 5
 y 9
 end
 arch river_ne-s
-no_pass 0
 x 5
 y 9
+move_block 0
 end
 arch mover_2
-level 1
 x 5
 y 9
+level 1
 end
 arch earth
 x 5
 y 10
 end
-arch ford_we
+arch river_ford_we
 x 5
 y 10
 end
@@ -597,7 +596,7 @@ arch earth
 x 5
 y 11
 end
-arch ford_we
+arch river_ford_we
 x 5
 y 11
 end
@@ -606,9 +605,9 @@ x 5
 y 12
 end
 arch river_n-s
-no_pass 0
 x 5
 y 12
+move_block 0
 end
 arch mover_1
 x 5
@@ -631,8 +630,8 @@ x 5
 y 13
 end
 arch earth
-no_pass 1
 x 6
+move_block all
 end
 arch cave4
 x 6
@@ -642,19 +641,19 @@ x 6
 y 1
 end
 arch river_w-e
-no_pass 0
 x 6
 y 1
+move_block 0
 end
 arch mover_3
-level 1
 x 6
 y 1
+level 1
 end
 arch earth
-no_pass 1
 x 6
 y 2
+move_block all
 end
 arch cave2
 x 6
@@ -689,56 +688,56 @@ x 6
 y 6
 end
 arch river_ne-s
-no_pass 0
 x 6
 y 6
+move_block 0
 end
 arch mover_2
-level 1
 x 6
 y 6
+level 1
 end
 arch earth
 x 6
 y 7
 end
 arch river_n-s
-no_pass 0
 x 6
 y 7
+move_block 0
 end
 arch mover_1
-level 1
 x 6
 y 7
+level 1
 end
 arch earth
 x 6
 y 8
 end
-arch rjunct_ns-se
-no_pass 0
+arch river_junct_ns-se
 x 6
 y 8
+move_block 0
 end
 arch river_sw-n
-no_pass 0
 x 6
 y 8
+move_block 0
 end
 arch mover_1
-level 1
 x 6
 y 8
+level 1
 end
 arch earth
 x 6
 y 9
 end
 arch river_nw-se_l
-no_pass 0
 x 6
 y 9
+move_block 0
 end
 arch river_sw-ne_l
 x 6
@@ -777,8 +776,8 @@ x 6
 y 13
 end
 arch earth
-no_pass 1
 x 7
+move_block all
 end
 arch cave4
 x 7
@@ -788,19 +787,19 @@ x 7
 y 1
 end
 arch river_w-e
-no_pass 0
 x 7
 y 1
+move_block 0
 end
 arch mover_3
-level 1
 x 7
 y 1
+level 1
 end
 arch earth
-no_pass 1
 x 7
 y 2
+move_block all
 end
 arch cave2
 x 7
@@ -823,14 +822,14 @@ x 7
 y 5
 end
 arch river_sw-e
-no_pass 0
 x 7
 y 5
+move_block 0
 end
 arch mover_3
-level 1
 x 7
 y 5
+level 1
 end
 arch earth
 x 7
@@ -869,14 +868,14 @@ x 7
 y 9
 end
 arch river_nw-e
-no_pass 0
 x 7
 y 9
+move_block 0
 end
 arch mover_8
-level 1
 x 7
 y 9
+level 1
 end
 arch earth
 x 7
@@ -903,8 +902,8 @@ x 7
 y 13
 end
 arch earth
-no_pass 1
 x 8
+move_block all
 end
 arch cave4
 x 8
@@ -914,19 +913,19 @@ x 8
 y 1
 end
 arch river_w-e
-no_pass 0
 x 8
 y 1
+move_block 0
 end
 arch mover_3
-level 1
 x 8
 y 1
+level 1
 end
 arch earth
-no_pass 1
 x 8
 y 2
+move_block all
 end
 arch cave2
 x 8
@@ -949,14 +948,14 @@ x 8
 y 5
 end
 arch river_w-e
-no_pass 0
 x 8
 y 5
+move_block 0
 end
 arch mover_3
-level 1
 x 8
 y 5
+level 1
 end
 arch earth
 x 8
@@ -983,23 +982,23 @@ x 8
 y 9
 end
 arch river_se-w
-no_pass 0
 x 8
 y 9
+move_block 0
 end
 arch mover_7
-level 1
 x 8
 y 9
+level 1
 end
 arch earth
 x 8
 y 10
 end
 arch river_nw-se_l
-no_pass 0
 x 8
 y 10
+move_block 0
 end
 arch earth
 x 8
@@ -1018,8 +1017,8 @@ x 8
 y 13
 end
 arch earth
-no_pass 1
 x 9
+move_block all
 end
 arch cave4
 x 9
@@ -1029,19 +1028,19 @@ x 9
 y 1
 end
 arch river_w-e
-no_pass 0
 x 9
 y 1
+move_block 0
 end
 arch mover_3
-level 1
 x 9
 y 1
+level 1
 end
 arch earth
-no_pass 1
 x 9
 y 2
+move_block all
 end
 arch cave2
 x 9
@@ -1064,14 +1063,14 @@ x 9
 y 5
 end
 arch river_w-e
-no_pass 0
 x 9
 y 5
+move_block 0
 end
 arch mover_3
-level 1
 x 9
 y 5
+level 1
 end
 arch earth
 x 9
@@ -1098,46 +1097,46 @@ x 9
 y 9
 end
 arch river_nw-se_u
-no_pass 0
 x 9
 y 9
+move_block 0
 end
 arch earth
 x 9
 y 10
 end
 arch river_nw-se
-no_pass 0
 x 9
 y 10
+move_block 0
 end
 arch mover_turn
-level 1
 x 9
 y 10
+level 1
 end
 arch earth
 x 9
 y 11
 end
 arch river_nw-se_l
-no_pass 0
 x 9
 y 11
+move_block 0
 end
 arch earth
-no_pass 1
 x 9
 y 12
+move_block all
 end
 arch cave6
 x 9
 y 12
 end
 arch earth
-no_pass 1
 x 9
 y 13
+move_block all
 end
 arch cave13
 x 9
@@ -1154,14 +1153,14 @@ x 10
 y 1
 end
 arch river_se-w
-no_pass 0
 x 10
 y 1
+move_block 0
 end
 arch mover_4
-level 1
 x 10
 y 1
+level 1
 end
 arch earth
 x 10
@@ -1203,15 +1202,15 @@ x 10
 y 5
 end
 arch river_w-e
-no_pass 0
 x 10
 y 5
+move_block 0
 end
 arch mover_3
-attacktype 1
-level 1
 x 10
 y 5
+level 1
+attacktype 1
 end
 arch earth
 x 10
@@ -1242,9 +1241,9 @@ x 10
 y 10
 end
 arch river_nw-se_u
-no_pass 0
 x 10
 y 10
+move_block 0
 end
 arch magic_mouth
 msg
@@ -1261,20 +1260,20 @@ x 10
 y 11
 end
 arch river_nw-se
-no_pass 0
 x 10
 y 11
+move_block 0
 end
 arch cave6
 race wall
-level 1
 hp 1000
 maxhp 300
 ac 20
-alive 1
-tear_down 1
 x 10
 y 11
+level 1
+alive 1
+tear_down 1
 end
 arch biglake_2_2_2
 x 10
@@ -1292,19 +1291,19 @@ x 10
 y 13
 end
 arch earth
-no_pass 0
 x 10
 y 13
+move_block 0
 end
 arch river_ne-s
-no_pass 0
 x 10
 y 13
+move_block 0
 end
 arch mover_2
-level 1
 x 10
 y 13
+level 1
 end
 arch earth
 x 11
@@ -1329,56 +1328,56 @@ x 11
 y 2
 end
 arch river_nw-s
-no_pass 0
 x 11
 y 2
+move_block 0
 end
 arch mover_5
-level 1
 x 11
 y 2
+level 1
 end
 arch earth
 x 11
 y 3
 end
 arch river_n-s
-no_pass 0
 x 11
 y 3
+move_block 0
 end
 arch mover_5
-level 1
 x 11
 y 3
+level 1
 end
 arch earth
 x 11
 y 4
 end
 arch river_se-n
-no_pass 0
 x 11
 y 4
+move_block 0
 end
 arch mover_4
-level 1
 x 11
 y 4
+level 1
 end
 arch earth
 x 11
 y 5
 end
 arch river_w-e
-no_pass 0
 x 11
 y 5
+move_block 0
 end
 arch river_nw-se_l
-no_pass 0
 x 11
 y 5
+move_block 0
 end
 arch mover_3
 x 11
@@ -1405,49 +1404,49 @@ x 11
 y 8
 end
 arch earth
-no_pass 1
 x 11
 y 9
+move_block all
 end
 arch cave15
-no_magic 1
-damned 1
 x 11
 y 9
+no_magic 1
+damned 1
 end
 arch cave5
 x 11
 y 9
 end
 arch earth
-no_pass 1
 x 11
 y 10
+move_block all
 end
 arch cave15
-no_magic 1
-damned 1
 x 11
 y 10
+no_magic 1
+damned 1
 end
 arch cave14
 x 11
 y 10
 end
 arch earth
-no_pass 1
 x 11
 y 11
+move_block all
 end
 arch river_sw-ne_u
 x 11
 y 11
 end
 arch cave13
-no_magic 1
-damned 1
 x 11
 y 11
+no_magic 1
+damned 1
 end
 arch magic_mouth
 msg
@@ -1463,19 +1462,19 @@ x 11
 y 12
 end
 arch river_sw-ne
-no_pass 0
 x 11
 y 12
+move_block 0
 end
 arch river_nw-se
-no_pass 0
 x 11
 y 12
+move_block 0
 end
 arch earth
-no_pass 1
 x 11
 y 13
+move_block all
 end
 arch river_nw-se_l
 x 11
@@ -1533,19 +1532,19 @@ x 12
 y 5
 end
 arch river_w-e
-no_pass 0
 x 12
 y 5
+move_block 0
 end
 arch river_nw-e
-no_pass 0
 x 12
 y 5
+move_block 0
 end
 arch mover_3
-level 1
 x 12
 y 5
+level 1
 end
 arch earth
 x 12
@@ -1564,60 +1563,60 @@ x 12
 y 8
 end
 arch cave15
-no_magic 1
-damned 1
 x 12
 y 8
+no_magic 1
+damned 1
 end
 arch earth
-no_pass 1
 x 12
 y 9
+move_block all
 end
 arch river_sw-ne_u
 x 12
 y 9
 end
 arch cave13
-no_magic 1
-damned 1
 x 12
 y 9
+no_magic 1
+damned 1
 end
 arch earth
-no_pass 0
 x 12
 y 10
+move_block 0
 end
 arch river_ne-s
-no_pass 0
 x 12
 y 10
+move_block 0
 end
 arch mover_2
-level 1
 x 12
 y 10
+level 1
 end
 arch earth
-no_pass 0
 x 12
 y 11
+move_block 0
 end
 arch river_sw-n
-no_pass 0
 x 12
 y 11
+move_block 0
 end
 arch mover_1
-level 1
 x 12
 y 11
+level 1
 end
 arch earth
-no_pass 1
 x 12
 y 12
+move_block all
 end
 arch river_sw-ne_l
 x 12
@@ -1639,18 +1638,18 @@ x 12
 y 13
 end
 arch earth
-no_pass 1
 x 12
 y 13
+move_block all
 end
 arch river_nw-se
 x 12
 y 13
 end
 arch mover_turn
-level 1
 x 12
 y 13
+level 1
 end
 arch blocked
 x 13
@@ -1668,9 +1667,9 @@ x 13
 y 3
 end
 arch earth
-no_pass 1
 x 13
 y 4
+move_block all
 end
 arch cave4
 x 13
@@ -1682,27 +1681,26 @@ y 5
 end
 arch magic_mouth
 msg
-The river is deep here where the two meet.
-To your east you can see a crack of daylight, maybe it's a way out?
+The river is deep here where the two meet.  To your east you can see a crack of daylight, maybe it's a way out?
 endmsg
 x 13
 y 5
 end
 arch biglake_center
 name river
-no_pass 0
 x 13
 y 5
+move_block 0
 end
 arch mover_3
-level 1
 x 13
 y 5
+level 1
 end
 arch earth
-no_pass 1
 x 13
 y 6
+move_block all
 end
 arch biglake_center
 name river
@@ -1710,60 +1708,60 @@ x 13
 y 6
 end
 arch cave16
-no_magic 1
-damned 1
 x 13
 y 6
+no_magic 1
+damned 1
 end
 arch blocked
 x 13
 y 7
 end
 arch earth
-no_pass 1
 x 13
 y 7
+move_block all
 end
 arch cave3
-no_magic 1
-damned 1
 x 13
 y 7
+no_magic 1
+damned 1
 end
 arch earth
-no_pass 1
 x 13
 y 8
+move_block all
 end
 arch river_sw-ne_u
 x 13
 y 8
 end
 arch cave13
-no_magic 1
-damned 1
 x 13
 y 8
+no_magic 1
+damned 1
 end
 arch earth
-no_pass 0
 x 13
 y 9
+move_block 0
 end
 arch river_sw-ne
-no_pass 0
 x 13
 y 9
+move_block 0
 end
 arch mover_2
-level 1
 x 13
 y 9
+level 1
 end
 arch earth
-no_pass 1
 x 13
 y 10
+move_block all
 end
 arch river_sw-ne_l
 x 13
@@ -1774,27 +1772,27 @@ x 13
 y 10
 end
 arch earth
-no_pass 1
 x 13
 y 11
+move_block all
 end
 arch cave1
 x 13
 y 11
 end
 arch earth
-no_pass 1
 x 13
 y 12
+move_block all
 end
 arch cave1
 x 13
 y 12
 end
 arch earth
-no_pass 1
 x 13
 y 13
+move_block all
 end
 arch cave5
 x 13
@@ -1809,9 +1807,9 @@ x 14
 y 3
 end
 arch earth
-no_pass 1
 x 14
 y 4
+move_block all
 end
 arch cave4
 x 14
@@ -1823,60 +1821,60 @@ y 5
 end
 arch biglake_center
 name river
-no_pass 0
 x 14
 y 5
+move_block 0
 end
 arch mover_3
-level 1
 x 14
 y 5
+level 1
 end
 arch earth
-no_pass 0
 x 14
 y 6
+move_block 0
 end
 arch biglake_center
 name river
-no_pass 0
 x 14
 y 6
+move_block 0
 end
 arch earth
-no_pass 0
 x 14
 y 7
+move_block 0
 end
 arch river_n-s
-no_pass 0
 x 14
 y 7
+move_block 0
 end
 arch mover_1
-level 1
 x 14
 y 7
+level 1
 end
 arch earth
-no_pass 0
 x 14
 y 8
+move_block 0
 end
 arch river_sw-n
-no_pass 0
 x 14
 y 8
+move_block 0
 end
 arch mover_1
-level 1
 x 14
 y 8
+level 1
 end
 arch earth
-no_pass 1
 x 14
 y 9
+move_block all
 end
 arch river_sw-ne_l
 x 14
@@ -1887,9 +1885,9 @@ x 14
 y 9
 end
 arch earth
-no_pass 1
 x 14
 y 10
+move_block all
 end
 arch cave22
 x 14
@@ -1912,9 +1910,9 @@ x 15
 y 3
 end
 arch earth
-no_pass 1
 x 15
 y 4
+move_block all
 end
 arch cave4
 x 15
@@ -1926,19 +1924,19 @@ y 5
 end
 arch biglake_center
 name river
-no_pass 0
 x 15
 y 5
+move_block 0
 end
 arch mover_3
-level 1
 x 15
 y 5
+level 1
 end
 arch earth
-no_pass 1
 x 15
 y 6
+move_block all
 end
 arch biglake_center
 x 15
@@ -1953,27 +1951,27 @@ x 15
 y 7
 end
 arch earth
-no_pass 1
 x 15
 y 7
+move_block all
 end
 arch cave1
 x 15
 y 7
 end
 arch earth
-no_pass 1
 x 15
 y 8
+move_block all
 end
 arch cave1
 x 15
 y 8
 end
 arch earth
-no_pass 1
 x 15
 y 9
+move_block all
 end
 arch cave20
 x 15
@@ -1992,9 +1990,9 @@ x 16
 y 3
 end
 arch earth
-no_pass 1
 x 16
 y 4
+move_block all
 end
 arch cave4
 x 16
@@ -2005,19 +2003,19 @@ x 16
 y 5
 end
 arch river_w-e
-no_pass 0
 x 16
 y 5
+move_block 0
 end
 arch mover_3
-level 1
 x 16
 y 5
+level 1
 end
 arch earth
-no_pass 1
 x 16
 y 6
+move_block all
 end
 arch cave2
 x 16
@@ -2044,9 +2042,9 @@ x 17
 y 3
 end
 arch earth
-no_pass 1
 x 17
 y 4
+move_block all
 end
 arch cave4
 x 17
@@ -2057,19 +2055,19 @@ x 17
 y 5
 end
 arch river_w-e
-no_pass 0
 x 17
 y 5
+move_block 0
 end
 arch mover_3
-level 1
 x 17
 y 5
+level 1
 end
 arch earth
-no_pass 1
 x 17
 y 6
+move_block all
 end
 arch cave2
 x 17
@@ -2096,20 +2094,19 @@ x 18
 y 3
 end
 arch earth
-no_pass 1
 x 18
 y 4
+move_block all
 end
 arch cave4
 x 18
 y 4
 end
 arch invis_exit
-msg
-You see a ray of light poking through a small opening and wiggle yourself back to the surface, the rocks collapsing behind you.
-Maybe next time you should be more careful in the water!
-endmsg
 slaying ../../world/world_107_123
+msg
+You see a ray of light poking through a small opening and wiggle yourself back to the surface, the rocks collapsing behind you.  Maybe next time you should be more careful in the water!
+endmsg
 hp 22
 sp 24
 x 18
@@ -2120,19 +2117,19 @@ x 18
 y 5
 end
 arch river_w-e
-no_pass 0
 x 18
 y 5
+move_block 0
 end
 arch mover_3
-level 1
 x 18
 y 5
+level 1
 end
 arch earth
-no_pass 1
 x 18
 y 6
+move_block all
 end
 arch cave2
 x 18
@@ -2143,14 +2140,13 @@ x 18
 y 7
 end
 arch generate_goblin
-speed 0.0010
 x 18
 y 8
+speed 0.0010
 end
 arch sign
 msg
-Goblin holding area.
-Send one down the river every once in awhile...
+Goblin holding area.  Send one down the river every once in awhile...
 endmsg
 x 18
 y 9
@@ -2176,9 +2172,9 @@ x 19
 y 3
 end
 arch earth
-no_pass 1
 x 19
 y 4
+move_block all
 end
 arch cave4
 x 19
@@ -2189,22 +2185,22 @@ x 19
 y 5
 end
 arch river_w-e
-no_pass 0
 x 19
 y 5
+move_block 0
 end
 arch teleporter
 name Water teleporter
-invisible 1
 hp 19
 sp 13
 x 19
 y 5
+invisible 1
 end
 arch earth
-no_pass 1
 x 19
 y 6
+move_block all
 end
 arch cave2
 x 19
@@ -2216,20 +2212,20 @@ y 7
 end
 arch teleporter
 name Water teleporter
-invisible 1
 sp 1
 x 19
 y 8
+invisible 1
 end
 arch mover_1
-level 1
 x 19
 y 9
+level 1
 end
 arch mover_1
-level 1
 x 19
 y 10
+level 1
 end
 arch goblin
 name goblin scout
@@ -2238,17 +2234,17 @@ x 19
 y 10
 end
 arch mover_1
-level 1
 x 19
 y 11
+level 1
 end
 arch mover_1
-level 1
 x 19
 y 12
+level 1
 end
 arch mover_1
-level 1
 x 19
 y 13
+level 1
 end

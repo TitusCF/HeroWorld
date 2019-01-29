@@ -1,13 +1,15 @@
 arch map
+name Gaea's Garden
+difficulty 1
 region darcap
-name temple
+width 26
+height 30
+enter_x 12
+enter_y 22
 msg
-Creator: Cater & Wade
-Email: john_cater@yahoo.com
-Date: Thu Jan 21 15:41:32 1999
+Created:  1999-01-21 Cater & Wade (john_cater@yahoo.com)
+Modified: 2012-01-30 Rick Tanner
 endmsg
-x 26
-y 30
 end
 arch grassmedium
 end
@@ -777,6 +779,11 @@ arch grassdark
 x 4
 y 5
 end
+arch ent
+x 4
+y 5
+stand_still 1
+end
 arch grassdark
 x 4
 y 6
@@ -894,6 +901,10 @@ x 4
 y 20
 end
 arch grassdark
+x 4
+y 21
+end
+arch ent
 x 4
 y 21
 end
@@ -1993,7 +2004,7 @@ arch grassdark
 x 11
 y 23
 end
-arch swall_2_1_2
+arch swall_1_3_half
 x 11
 y 23
 end
@@ -2098,18 +2109,14 @@ end
 arch holy_priest
 name Holy Man of Gaea
 msg
-@match Gaea|gaea
-Gaea is the mother of Nature and all
-the Elements
-@match Nature|nature
-Nature is the world around us - the
-air we breath the things that grow and
-live
-@match Elements|elements
-All things come from the four elements
-- Earth, Fire, Air and Water
+@match gaea
+Gaea is the mother of Nature and all the Elements.
+@match nature
+Nature is the world around us - the air we breath the things that grow and live.
+@match elements
+All things come from the four elements - Earth, Fire, Air and Water.
 @match *
-Welcome to the place of Gaea
+Welcome to the place of Gaea.
 endmsg
 x 12
 y 13
@@ -2463,7 +2470,7 @@ arch grassdark
 x 14
 y 23
 end
-arch swall_2_1_2
+arch swall_1_4_half
 x 14
 y 23
 end
@@ -3315,6 +3322,11 @@ arch grassdark
 x 20
 y 5
 end
+arch ent
+x 20
+y 5
+stand_still 1
+end
 arch grassdark
 x 20
 y 6
@@ -3380,6 +3392,10 @@ x 20
 y 20
 end
 arch grassdark
+x 20
+y 21
+end
+arch ent
 x 20
 y 21
 end
@@ -4392,22 +4408,4 @@ end
 arch cobblestones2
 x 25
 y 29
-end
-arch ent
-x 4
-y 5
-stand_still 1
-end
-arch ent
-x 4
-y 21
-end
-arch ent
-x 20
-y 5
-stand_still 1
-end
-arch ent
-x 20
-y 21
 end

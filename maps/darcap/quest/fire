@@ -1,15 +1,15 @@
 arch map
+name High Volcano
+difficulty 18
 region darcap
-name fire
-msg
-Creator: dtabb
-Email: dtabb@ecst.csuchico.edu
-Date: Fri Oct 15 18:02:23 1993
-endmsg
 width 36
 height 36
 enter_x 19
 enter_y 31
+msg
+Created:  1993-10-15 dtabb (dtabb@ecst.csuchico.edu)
+Modified: 2012-01-31 Rick Tanner
+endmsg
 end
 arch dirtfloor
 end
@@ -404,9 +404,9 @@ x 1
 y 34
 end
 arch trigger
-connected 1
 x 1
 y 34
+connected 1
 end
 arch dirtfloor
 x 1
@@ -466,6 +466,10 @@ arch dirtfloor
 x 2
 y 10
 end
+arch dragon
+x 2
+y 10
+end
 arch dirtfloor
 x 2
 y 11
@@ -474,7 +478,15 @@ arch dirtfloor
 x 2
 y 12
 end
+arch dragon
+x 2
+y 12
+end
 arch dirtfloor
+x 2
+y 13
+end
+arch dragon
 x 2
 y 13
 end
@@ -835,9 +847,9 @@ x 4
 y 4
 end
 arch trigger
-connected 3
 x 4
 y 4
+connected 3
 end
 arch generate_devil
 x 4
@@ -1130,6 +1142,10 @@ x 5
 y 19
 end
 arch dirtfloor
+x 5
+y 20
+end
+arch dragon
 x 5
 y 20
 end
@@ -1715,6 +1731,10 @@ arch dirtfloor
 x 8
 y 15
 end
+arch dragon
+x 8
+y 15
+end
 arch dirtfloor
 x 8
 y 16
@@ -1830,6 +1850,10 @@ x 9
 y 1
 end
 arch dirtfloor
+x 9
+y 2
+end
+arch dragon
 x 9
 y 2
 end
@@ -2031,6 +2055,10 @@ arch dirtfloor
 x 10
 y 1
 end
+arch dragon
+x 10
+y 1
+end
 arch dirtfloor
 x 10
 y 2
@@ -2104,6 +2132,10 @@ x 10
 y 13
 end
 arch dirtfloor
+x 10
+y 14
+end
+arch dragon
 x 10
 y 14
 end
@@ -2333,6 +2365,10 @@ arch dirtfloor
 x 11
 y 15
 end
+arch dragon
+x 11
+y 15
+end
 arch dirtfloor
 x 11
 y 16
@@ -2342,6 +2378,10 @@ x 11
 y 16
 end
 arch dirtfloor
+x 11
+y 17
+end
+arch dragon
 x 11
 y 17
 end
@@ -2455,11 +2495,19 @@ arch dirtfloor
 x 12
 y 2
 end
+arch dragon
+x 12
+y 2
+end
 arch dirtfloor
 x 12
 y 3
 end
 arch dirtfloor
+x 12
+y 4
+end
+arch dragon
 x 12
 y 4
 end
@@ -2649,7 +2697,15 @@ arch dirtfloor
 x 13
 y 2
 end
+arch dragon
+x 13
+y 2
+end
 arch dirtfloor
+x 13
+y 3
+end
+arch dragon
 x 13
 y 3
 end
@@ -3168,6 +3224,12 @@ arch dirtfloor
 x 15
 y 8
 end
+arch active_volcano
+x 15
+y 8
+arch spell_magic_bullet
+end
+end
 arch dirtfloor
 x 15
 y 9
@@ -3180,6 +3242,12 @@ arch dirtfloor
 x 15
 y 10
 end
+arch active_volcano
+x 15
+y 10
+arch spell_magic_bullet
+end
+end
 arch dirtfloor
 x 15
 y 11
@@ -3187,6 +3255,12 @@ end
 arch dirtfloor
 x 15
 y 12
+end
+arch active_volcano
+x 15
+y 12
+arch spell_magic_bullet
+end
 end
 arch dirtfloor
 x 15
@@ -3199,6 +3273,12 @@ end
 arch dirtfloor
 x 15
 y 14
+end
+arch active_volcano
+x 15
+y 14
+arch spell_magic_bullet
+end
 end
 arch dirtfloor
 x 15
@@ -3571,9 +3651,9 @@ x 17
 y 3
 end
 arch gateTrg1
-connected 4
 x 17
 y 3
+connected 4
 end
 arch dirtfloor
 x 17
@@ -3581,9 +3661,9 @@ y 4
 end
 arch gateTrg1
 maxhp 200
-connected 3
 x 17
 y 4
+connected 3
 end
 arch dirtfloor
 x 17
@@ -3658,18 +3738,18 @@ x 17
 y 17
 end
 arch gateTrg1
-connected 2
 x 17
 y 17
+connected 2
 end
 arch dirtfloor
 x 17
 y 18
 end
 arch gateTrg1
-connected 1
 x 17
 y 18
+connected 1
 end
 arch dirtfloor
 x 17
@@ -3692,6 +3772,10 @@ x 17
 y 21
 end
 arch dirtfloor
+x 17
+y 22
+end
+arch dragon
 x 17
 y 22
 end
@@ -3754,9 +3838,7 @@ end
 arch sign
 name NOTE!
 msg
-NOTE: Many wyverns on level
-Multiple players required to get
-through gates.
+NOTE: Many wyverns on level.  Multiple players required to get through gates.
 endmsg
 x 17
 y 33
@@ -3795,9 +3877,9 @@ x 18
 y 3
 end
 arch gateTrg1
-connected 4
 x 18
 y 3
+connected 4
 end
 arch dirtfloor
 x 18
@@ -3805,9 +3887,9 @@ y 4
 end
 arch gateTrg1
 maxhp 200
-connected 3
 x 18
 y 4
+connected 3
 end
 arch dirtfloor
 x 18
@@ -3886,18 +3968,18 @@ x 18
 y 17
 end
 arch gateTrg1
-connected 2
 x 18
 y 17
+connected 2
 end
 arch dirtfloor
 x 18
 y 18
 end
 arch gateTrg1
-connected 1
 x 18
 y 18
+connected 1
 end
 arch dirtfloor
 x 18
@@ -4052,6 +4134,12 @@ arch dirtfloor
 x 19
 y 8
 end
+arch active_volcano
+x 19
+y 8
+arch spell_magic_bullet
+end
+end
 arch dirtfloor
 x 19
 y 9
@@ -4059,6 +4147,12 @@ end
 arch dirtfloor
 x 19
 y 10
+end
+arch active_volcano
+x 19
+y 10
+arch spell_magic_bullet
+end
 end
 arch dirtfloor
 x 19
@@ -4068,6 +4162,12 @@ arch dirtfloor
 x 19
 y 12
 end
+arch active_volcano
+x 19
+y 12
+arch spell_magic_bullet
+end
+end
 arch dirtfloor
 x 19
 y 13
@@ -4075,6 +4175,12 @@ end
 arch dirtfloor
 x 19
 y 14
+end
+arch active_volcano
+x 19
+y 14
+arch spell_magic_bullet
+end
 end
 arch dirtfloor
 x 19
@@ -4420,6 +4526,9 @@ hp 18
 sp 14
 x 21
 y 5
+arch quest_advance_apply
+name darcap/Elemental 0>10
+end
 end
 arch dirtfloor
 x 21
@@ -4506,6 +4615,10 @@ x 21
 y 16
 end
 arch dirtfloor
+x 21
+y 17
+end
+arch dragon
 x 21
 y 17
 end
@@ -5125,6 +5238,10 @@ x 24
 y 14
 end
 arch dirtfloor
+x 24
+y 15
+end
+arch dragon
 x 24
 y 15
 end
@@ -5527,9 +5644,9 @@ x 26
 y 4
 end
 arch trigger
-connected 4
 x 26
 y 4
+connected 4
 end
 arch generate_devil
 x 26
@@ -5760,6 +5877,10 @@ arch dirtfloor
 x 27
 y 1
 end
+arch dragon
+x 27
+y 1
+end
 arch dirtfloor
 x 27
 y 2
@@ -5845,6 +5966,10 @@ x 27
 y 14
 end
 arch dirtfloor
+x 27
+y 15
+end
+arch dragon
 x 27
 y 15
 end
@@ -6025,6 +6150,10 @@ arch dirtfloor
 x 28
 y 9
 end
+arch dragon
+x 28
+y 9
+end
 arch dirtfloor
 x 28
 y 10
@@ -6202,6 +6331,10 @@ arch dirtfloor
 x 29
 y 4
 end
+arch dragon
+x 29
+y 4
+end
 arch dirtfloor
 x 29
 y 5
@@ -6259,6 +6392,10 @@ x 29
 y 15
 end
 arch dirtfloor
+x 29
+y 16
+end
+arch dragon
 x 29
 y 16
 end
@@ -6415,6 +6552,10 @@ arch dirtfloor
 x 30
 y 5
 end
+arch dragon
+x 30
+y 5
+end
 arch dirtfloor
 x 30
 y 6
@@ -6463,6 +6604,10 @@ arch dirtfloor
 x 30
 y 13
 end
+arch dragon
+x 30
+y 13
+end
 arch dirtfloor
 x 30
 y 14
@@ -6476,6 +6621,10 @@ x 30
 y 15
 end
 arch dirtfloor
+x 30
+y 16
+end
+arch dragon
 x 30
 y 16
 end
@@ -6641,7 +6790,15 @@ arch dirtfloor
 x 31
 y 8
 end
+arch dragon
+x 31
+y 8
+end
 arch dirtfloor
+x 31
+y 9
+end
+arch dragon
 x 31
 y 9
 end
@@ -7356,9 +7513,9 @@ x 34
 y 34
 end
 arch trigger
-connected 2
 x 34
 y 34
+connected 2
 end
 arch fire_elemental
 x 34
@@ -7657,144 +7814,4 @@ end
 arch timberwall_2_2_4
 x 35
 y 35
-end
-arch dragon
-x 2
-y 10
-end
-arch dragon
-x 2
-y 12
-end
-arch dragon
-x 2
-y 13
-end
-arch dragon
-x 5
-y 20
-end
-arch dragon
-x 8
-y 15
-end
-arch dragon
-x 9
-y 2
-end
-arch dragon
-x 10
-y 1
-end
-arch dragon
-x 10
-y 14
-end
-arch dragon
-x 11
-y 15
-end
-arch dragon
-x 11
-y 17
-end
-arch dragon
-x 12
-y 2
-end
-arch dragon
-x 12
-y 4
-end
-arch dragon
-x 13
-y 2
-end
-arch dragon
-x 13
-y 3
-end
-arch active_volcano
-x 15
-y 8
-end
-arch active_volcano
-x 15
-y 10
-end
-arch active_volcano
-x 15
-y 12
-end
-arch active_volcano
-x 15
-y 14
-end
-arch dragon
-x 17
-y 22
-end
-arch active_volcano
-x 19
-y 8
-end
-arch active_volcano
-x 19
-y 10
-end
-arch active_volcano
-x 19
-y 12
-end
-arch active_volcano
-x 19
-y 14
-end
-arch dragon
-x 21
-y 17
-end
-arch dragon
-x 24
-y 15
-end
-arch dragon
-x 27
-y 1
-end
-arch dragon
-x 27
-y 15
-end
-arch dragon
-x 28
-y 9
-end
-arch dragon
-x 29
-y 4
-end
-arch dragon
-x 29
-y 16
-end
-arch dragon
-x 30
-y 5
-end
-arch dragon
-x 30
-y 13
-end
-arch dragon
-x 30
-y 16
-end
-arch dragon
-x 31
-y 8
-end
-arch dragon
-x 31
-y 9
 end

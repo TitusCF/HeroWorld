@@ -1,13 +1,15 @@
 arch map
+name Dreadful house
+difficulty 25
 region stoneville
-name house7
-msg
-Creator: Viola Krings
-Email:
-Date: Sat Jun 28 16:33:33 1997
-endmsg
 width 35
 height 20
+enter_x 1
+enter_y 18
+msg
+Created:  1997-06-28 Viola Krings
+Modified: 2012-02-01 Rick Tanner
+endmsg
 end
 arch flagstone
 end
@@ -289,7 +291,7 @@ arch unholy_ground
 x 1
 y 18
 end
-arch oakdoor
+arch ladder_up
 slaying /world/world_102_127
 hp 44
 sp 18
@@ -915,6 +917,7 @@ end
 arch altar_devourers
 x 5
 y 12
+level 120
 end
 arch flagstone
 x 5
@@ -1149,11 +1152,10 @@ end
 arch woman
 name Sabine
 msg
-@match [Hh][ae]llo|[Hh]i
+@match h[ae]llo|hi
 Hello, fool!
 @match fool
-All who enter here are fools! Else
-they would not risk their life here.
+All who enter here are fools! Else they would not risk their life here.
 endmsg
 x 6
 y 18
@@ -1456,14 +1458,16 @@ y 14
 end
 arch demilich
 name Paruzzel the Darkest
-carrying 17400
 x 8
 y 14
+carrying 17400
 arch crown
 end
 arch potion_improve
 end
 arch potion_heal
+arch spell_heal
+end
 end
 arch potion_restoration
 end
@@ -1602,6 +1606,13 @@ arch unholy_ground
 x 9
 y 10
 end
+arch dread
+msg
+Grrrrrrr
+endmsg
+x 9
+y 10
+end
 arch flagstone
 x 9
 y 11
@@ -1655,6 +1666,11 @@ x 9
 y 17
 end
 arch unholy_ground
+x 9
+y 17
+end
+arch dread
+name Dreaded Monster
 x 9
 y 17
 end
@@ -3226,6 +3242,8 @@ end
 arch firechest
 x 19
 y 4
+arch spell_magic_bullet
+end
 end
 arch flagstone
 x 19
@@ -3328,8 +3346,7 @@ arch guard
 name gate guard
 msg
 @match *
-You know what one always says when
-wanting to enter somewhere, do you?
+You know what one always says when wanting to enter somewhere, do you?
 endmsg
 x 19
 y 15
@@ -3481,9 +3498,9 @@ x 20
 y 13
 end
 arch magic_ear
-connected 1
 x 20
 y 13
+connected 1
 end
 arch flagstone
 x 20
@@ -3494,9 +3511,9 @@ x 20
 y 14
 end
 arch igate_closed_1
-connected 1
 x 20
 y 14
+connected 1
 end
 arch flagstone
 x 20
@@ -3507,9 +3524,9 @@ x 20
 y 15
 end
 arch magic_ear
-connected 1
 x 20
 y 15
+connected 1
 end
 arch flagstone
 x 20
@@ -3810,6 +3827,8 @@ end
 arch lightningwall_3
 x 22
 y 11
+arch spell_sm_lightning
+end
 end
 arch flagstone
 x 22
@@ -5449,6 +5468,11 @@ arch unholy_ground
 x 31
 y 9
 end
+arch dread
+name Dreadful Monster
+x 31
+y 9
+end
 arch flagstone
 x 31
 y 10
@@ -5470,6 +5494,11 @@ x 31
 y 12
 end
 arch unholy_ground
+x 31
+y 12
+end
+arch behemoth
+name belladonna monster
 x 31
 y 12
 end
@@ -6038,26 +6067,4 @@ end
 arch awall_2_2_4
 x 34
 y 19
-end
-arch dread
-msg
-Grrrrrrr
-endmsg
-x 9
-y 10
-end
-arch dread
-name Dreaded Monster
-x 9
-y 17
-end
-arch dread
-name Dreadful Monster
-x 31
-y 9
-end
-arch behemoth
-name belladonna monster
-x 31
-y 12
 end

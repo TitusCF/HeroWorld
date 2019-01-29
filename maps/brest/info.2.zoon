@@ -1,13 +1,15 @@
 arch map
+name Tower of Zoon, Level 2
+difficulty 30
 region brest
-name info
+width 40
+height 60
+enter_x 32
+enter_y 12
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue May 31 01:51:08 1994
+Created:  1994-05-31
+Modified: 2008-10-26 Rick Tanner
 endmsg
-x 40
-y 60
 end
 arch woodfloor
 end
@@ -389,6 +391,10 @@ arch woodfloor
 x 1
 y 2
 end
+arch troll
+x 1
+y 2
+end
 arch woodfloor
 x 1
 y 3
@@ -600,6 +606,10 @@ arch woodfloor
 x 1
 y 40
 end
+arch behemoth
+x 1
+y 40
+end
 arch woodfloor
 x 1
 y 41
@@ -652,7 +662,7 @@ arch woodfloor
 x 1
 y 48
 end
-arch vodka
+arch booze
 x 1
 y 48
 end
@@ -1033,6 +1043,10 @@ arch woodfloor
 x 2
 y 44
 end
+arch big_elec
+x 2
+y 44
+end
 arch woodfloor
 x 2
 y 45
@@ -1163,7 +1177,15 @@ arch woodfloor
 x 3
 y 2
 end
+arch dragon
+x 3
+y 2
+end
 arch woodfloor
+x 3
+y 3
+end
+arch dragon
 x 3
 y 3
 end
@@ -1886,6 +1908,10 @@ arch woodfloor
 x 4
 y 44
 end
+arch big_elec
+x 4
+y 44
+end
 arch woodfloor
 x 4
 y 45
@@ -2016,7 +2042,15 @@ arch woodfloor
 x 5
 y 2
 end
+arch dragon
+x 5
+y 2
+end
 arch woodfloor
+x 5
+y 3
+end
+arch dragon
 x 5
 y 3
 end
@@ -2233,6 +2267,10 @@ x 5
 y 29
 end
 arch woodfloor
+x 5
+y 30
+end
+arch dread
 x 5
 y 30
 end
@@ -2717,6 +2755,10 @@ arch woodfloor
 x 6
 y 44
 end
+arch big_elec
+x 6
+y 44
+end
 arch woodfloor
 x 6
 y 45
@@ -2785,6 +2827,10 @@ arch woodfloor
 x 6
 y 54
 end
+arch dread
+x 6
+y 54
+end
 arch woodfloor
 x 6
 y 55
@@ -2836,6 +2882,10 @@ x 7
 y 1
 end
 arch woodfloor
+x 7
+y 2
+end
+arch troll
 x 7
 y 2
 end
@@ -3272,6 +3322,10 @@ arch woodfloor
 x 8
 y 4
 end
+arch giant
+x 8
+y 4
+end
 arch woodfloor
 x 8
 y 5
@@ -3280,11 +3334,19 @@ arch woodfloor
 x 8
 y 6
 end
+arch giant
+x 8
+y 6
+end
 arch woodfloor
 x 8
 y 7
 end
 arch woodfloor
+x 8
+y 8
+end
+arch troll
 x 8
 y 8
 end
@@ -3450,6 +3512,10 @@ arch woodfloor
 x 8
 y 30
 end
+arch dread
+x 8
+y 30
+end
 arch woodfloor
 x 8
 y 31
@@ -3527,6 +3593,10 @@ x 8
 y 43
 end
 arch woodfloor
+x 8
+y 44
+end
+arch big_elec
 x 8
 y 44
 end
@@ -3660,6 +3730,10 @@ arch woodfloor
 x 9
 y 2
 end
+arch giant
+x 9
+y 2
+end
 arch woodfloor
 x 9
 y 3
@@ -3668,11 +3742,19 @@ arch woodfloor
 x 9
 y 4
 end
+arch giant
+x 9
+y 4
+end
 arch woodfloor
 x 9
 y 5
 end
 arch woodfloor
+x 9
+y 6
+end
+arch giant
 x 9
 y 6
 end
@@ -4330,6 +4412,10 @@ arch woodfloor
 x 10
 y 44
 end
+arch big_elec
+x 10
+y 44
+end
 arch woodfloor
 x 10
 y 45
@@ -4591,6 +4677,11 @@ x 11
 y 19
 end
 arch woodfloor
+x 11
+y 20
+end
+arch demon_lord
+name ab
 x 11
 y 20
 end
@@ -5084,6 +5175,10 @@ arch woodfloor
 x 12
 y 41
 end
+arch behemoth
+x 12
+y 41
+end
 arch woodfloor
 x 12
 y 42
@@ -5097,6 +5192,10 @@ x 12
 y 43
 end
 arch woodfloor
+x 12
+y 44
+end
+arch big_elec
 x 12
 y 44
 end
@@ -6071,6 +6170,8 @@ end
 arch lbulletwall_3
 x 15
 y 1
+arch spell_lg_magic_bullet
+end
 end
 arch woodfloor
 x 15
@@ -6107,6 +6208,8 @@ end
 arch lbulletwall_1
 x 15
 y 6
+arch spell_lg_magic_bullet
+end
 end
 arch woodfloor
 x 15
@@ -6148,7 +6251,7 @@ arch woodfloor
 x 15
 y 14
 end
-arch random_food_fant
+arch random_food
 x 15
 y 14
 end
@@ -6172,7 +6275,7 @@ arch woodfloor
 x 15
 y 18
 end
-arch random_food_fant
+arch random_food
 x 15
 y 18
 end
@@ -6200,7 +6303,7 @@ arch woodfloor
 x 15
 y 24
 end
-arch random_food_fant
+arch random_food
 x 15
 y 24
 end
@@ -6216,7 +6319,7 @@ arch woodfloor
 x 15
 y 27
 end
-arch random_food_fant
+arch random_food
 x 15
 y 27
 end
@@ -6240,7 +6343,7 @@ arch woodfloor
 x 15
 y 31
 end
-arch random_food_fant
+arch random_food
 x 15
 y 31
 end
@@ -6256,7 +6359,7 @@ arch woodfloor
 x 15
 y 34
 end
-arch random_food_fant
+arch random_food
 x 15
 y 34
 end
@@ -6288,7 +6391,7 @@ arch woodfloor
 x 15
 y 41
 end
-arch random_food_fant
+arch random_food
 x 15
 y 41
 end
@@ -6481,6 +6584,8 @@ end
 arch lbulletwall_1
 x 16
 y 9
+arch spell_lg_magic_bullet
+end
 end
 arch woodfloor
 x 16
@@ -7365,6 +7470,8 @@ end
 arch lbulletwall_4
 x 18
 y 3
+arch spell_lg_magic_bullet
+end
 end
 arch woodfloor
 x 18
@@ -7410,7 +7517,7 @@ arch woodfloor
 x 18
 y 11
 end
-arch random_food_fant
+arch random_food
 x 18
 y 11
 end
@@ -7690,7 +7797,7 @@ arch woodfloor
 x 18
 y 46
 end
-arch random_food_fant
+arch random_food
 x 18
 y 46
 end
@@ -7823,6 +7930,8 @@ end
 arch lbulletwall_4
 x 19
 y 3
+arch spell_lg_magic_bullet
+end
 end
 arch woodfloor
 x 19
@@ -8285,6 +8394,8 @@ end
 arch lbulletwall_4
 x 20
 y 3
+arch spell_lg_magic_bullet
+end
 end
 arch woodfloor
 x 20
@@ -8768,7 +8879,7 @@ arch woodfloor
 x 21
 y 6
 end
-arch vodka
+arch booze
 x 21
 y 6
 end
@@ -8968,11 +9079,19 @@ arch woodfloor
 x 21
 y 32
 end
+arch cobra
+x 21
+y 32
+end
 arch woodfloor
 x 21
 y 33
 end
 arch woodfloor
+x 21
+y 34
+end
+arch cobra
 x 21
 y 34
 end
@@ -8984,6 +9103,10 @@ arch woodfloor
 x 21
 y 36
 end
+arch cobra
+x 21
+y 36
+end
 arch woodfloor
 x 21
 y 37
@@ -8992,11 +9115,19 @@ arch woodfloor
 x 21
 y 38
 end
+arch cobra
+x 21
+y 38
+end
 arch woodfloor
 x 21
 y 39
 end
 arch woodfloor
+x 21
+y 40
+end
+arch dragon
 x 21
 y 40
 end
@@ -9165,6 +9296,8 @@ end
 arch lbulletwall_2
 x 22
 y 2
+arch spell_lg_magic_bullet
+end
 end
 arch woodfloor
 x 22
@@ -9226,7 +9359,7 @@ arch woodfloor
 x 22
 y 11
 end
-arch random_food_fant
+arch random_food
 x 22
 y 11
 end
@@ -9652,7 +9785,7 @@ arch woodfloor
 x 23
 y 6
 end
-arch vodka
+arch booze
 x 23
 y 6
 end
@@ -9864,11 +9997,19 @@ arch woodfloor
 x 23
 y 33
 end
+arch giant
+x 23
+y 33
+end
 arch woodfloor
 x 23
 y 34
 end
 arch woodfloor
+x 23
+y 35
+end
+arch giant
 x 23
 y 35
 end
@@ -9880,11 +10021,19 @@ arch woodfloor
 x 23
 y 37
 end
+arch giant
+x 23
+y 37
+end
 arch woodfloor
 x 23
 y 38
 end
 arch woodfloor
+x 23
+y 39
+end
+arch giant
 x 23
 y 39
 end
@@ -10065,6 +10214,8 @@ end
 arch lbulletwall_4
 x 24
 y 3
+arch spell_lg_magic_bullet
+end
 end
 arch woodfloor
 x 24
@@ -10287,6 +10438,10 @@ x 24
 y 32
 end
 arch woodfloor
+x 24
+y 33
+end
+arch dragon
 x 24
 y 33
 end
@@ -10519,6 +10674,8 @@ end
 arch lbulletwall_4
 x 25
 y 3
+arch spell_lg_magic_bullet
+end
 end
 arch woodfloor
 x 25
@@ -10540,7 +10697,7 @@ arch woodfloor
 x 25
 y 6
 end
-arch vodka
+arch booze
 x 25
 y 6
 end
@@ -10752,11 +10909,19 @@ arch woodfloor
 x 25
 y 34
 end
+arch giant
+x 25
+y 34
+end
 arch woodfloor
 x 25
 y 35
 end
 arch woodfloor
+x 25
+y 36
+end
+arch giant
 x 25
 y 36
 end
@@ -10768,11 +10933,19 @@ arch woodfloor
 x 25
 y 38
 end
+arch giant
+x 25
+y 38
+end
 arch woodfloor
 x 25
 y 39
 end
 arch woodfloor
+x 25
+y 40
+end
+arch dragon
 x 25
 y 40
 end
@@ -10820,7 +10993,7 @@ arch woodfloor
 x 25
 y 46
 end
-arch random_food_fant
+arch random_food
 x 25
 y 46
 end
@@ -10953,6 +11126,8 @@ end
 arch lbulletwall_4
 x 26
 y 3
+arch spell_lg_magic_bullet
+end
 end
 arch woodfloor
 x 26
@@ -11411,6 +11586,8 @@ end
 arch lbulletwall_4
 x 27
 y 3
+arch spell_lg_magic_bullet
+end
 end
 arch woodfloor
 x 27
@@ -11432,7 +11609,7 @@ arch woodfloor
 x 27
 y 6
 end
-arch vodka
+arch booze
 x 27
 y 6
 end
@@ -11468,7 +11645,7 @@ arch woodfloor
 x 27
 y 11
 end
-arch random_food_fant
+arch random_food
 x 27
 y 11
 end
@@ -11644,11 +11821,19 @@ arch woodfloor
 x 27
 y 33
 end
+arch giant
+x 27
+y 33
+end
 arch woodfloor
 x 27
 y 34
 end
 arch woodfloor
+x 27
+y 35
+end
+arch giant
 x 27
 y 35
 end
@@ -11660,11 +11845,19 @@ arch woodfloor
 x 27
 y 37
 end
+arch giant
+x 27
+y 37
+end
 arch woodfloor
 x 27
 y 38
 end
 arch woodfloor
+x 27
+y 39
+end
+arch giant
 x 27
 y 39
 end
@@ -11845,6 +12038,8 @@ end
 arch lbulletwall_4
 x 28
 y 3
+arch spell_lg_magic_bullet
+end
 end
 arch woodfloor
 x 28
@@ -12183,7 +12378,7 @@ arch woodfloor
 x 28
 y 46
 end
-arch random_food_fant
+arch random_food
 x 28
 y 46
 end
@@ -12316,6 +12511,8 @@ end
 arch lbulletwall_4
 x 29
 y 3
+arch spell_lg_magic_bullet
+end
 end
 arch woodfloor
 x 29
@@ -12337,7 +12534,7 @@ arch woodfloor
 x 29
 y 6
 end
-arch vodka
+arch booze
 x 29
 y 6
 end
@@ -12565,6 +12762,10 @@ arch woodfloor
 x 29
 y 38
 end
+arch big_wiz
+x 29
+y 38
+end
 arch woodfloor
 x 29
 y 39
@@ -12746,6 +12947,8 @@ end
 arch lbulletwall_4
 x 30
 y 3
+arch spell_lg_magic_bullet
+end
 end
 arch woodfloor
 x 30
@@ -13197,7 +13400,7 @@ arch woodfloor
 x 31
 y 6
 end
-arch vodka
+arch booze
 x 31
 y 6
 end
@@ -13598,6 +13801,8 @@ end
 arch lbulletwall_2
 x 32
 y 2
+arch spell_lg_magic_bullet
+end
 end
 arch woodfloor
 x 32
@@ -14085,7 +14290,7 @@ arch woodfloor
 x 33
 y 6
 end
-arch vodka
+arch booze
 x 33
 y 6
 end
@@ -14121,7 +14326,7 @@ arch woodfloor
 x 33
 y 11
 end
-arch random_food_fant
+arch random_food
 x 33
 y 11
 end
@@ -14530,6 +14735,8 @@ end
 arch lbulletwall_4
 x 34
 y 3
+arch spell_lg_magic_bullet
+end
 end
 arch woodfloor
 x 34
@@ -14988,6 +15195,8 @@ end
 arch lbulletwall_4
 x 35
 y 3
+arch spell_lg_magic_bullet
+end
 end
 arch woodfloor
 x 35
@@ -15450,6 +15659,8 @@ end
 arch lbulletwall_5
 x 36
 y 3
+arch spell_lg_magic_bullet
+end
 end
 arch woodfloor
 x 36
@@ -16398,6 +16609,8 @@ end
 arch lbulletwall_7
 x 38
 y 9
+arch spell_lg_magic_bullet
+end
 end
 arch woodfloor
 x 38
@@ -16694,7 +16907,7 @@ arch woodfloor
 x 38
 y 46
 end
-arch random_food_fant
+arch random_food
 x 38
 y 46
 end
@@ -17284,177 +17497,4 @@ end
 arch wall_2_2_4
 x 39
 y 59
-end
-arch troll
-x 1
-y 2
-end
-arch behemoth
-x 1
-y 40
-end
-arch big_elec
-x 2
-y 44
-end
-arch dragon
-x 3
-y 2
-end
-arch dragon
-x 3
-y 3
-end
-arch big_elec
-x 4
-y 44
-end
-arch dragon
-x 5
-y 2
-end
-arch dragon
-x 5
-y 3
-end
-arch dread
-x 5
-y 30
-end
-arch big_elec
-x 6
-y 44
-end
-arch dread
-x 6
-y 54
-end
-arch troll
-x 7
-y 2
-end
-arch giant
-x 8
-y 4
-end
-arch giant
-x 8
-y 6
-end
-arch troll
-x 8
-y 8
-end
-arch dread
-x 8
-y 30
-end
-arch big_elec
-x 8
-y 44
-end
-arch giant
-x 9
-y 2
-end
-arch giant
-x 9
-y 4
-end
-arch giant
-x 9
-y 6
-end
-arch big_elec
-x 10
-y 44
-end
-arch demon_lord
-name ab
-x 11
-y 20
-end
-arch behemoth
-x 12
-y 41
-end
-arch big_elec
-x 12
-y 44
-end
-arch cobra
-x 21
-y 32
-end
-arch cobra
-x 21
-y 34
-end
-arch cobra
-x 21
-y 36
-end
-arch cobra
-x 21
-y 38
-end
-arch dragon
-x 21
-y 40
-end
-arch giant
-x 23
-y 33
-end
-arch giant
-x 23
-y 35
-end
-arch giant
-x 23
-y 37
-end
-arch giant
-x 23
-y 39
-end
-arch dragon
-x 24
-y 33
-end
-arch giant
-x 25
-y 34
-end
-arch giant
-x 25
-y 36
-end
-arch giant
-x 25
-y 38
-end
-arch dragon
-x 25
-y 40
-end
-arch giant
-x 27
-y 33
-end
-arch giant
-x 27
-y 35
-end
-arch giant
-x 27
-y 37
-end
-arch giant
-x 27
-y 39
-end
-arch big_wiz
-x 29
-y 38
 end

@@ -10,7 +10,7 @@ msg
 Creator:
 Email:
 Date: Fri Oct 15 13:42:48 1993
-Modified: 2019-01-10 Acer
+Modified: 2019-01-29 Acer
 endmsg
 end
 arch woods_2
@@ -2593,13 +2593,17 @@ x 12
 y 1
 end
 arch sign
-name Petition Board
+name DM Petition Board
 msg
 @match *
-@eval board::command $who, $msg, $npc
+@eval guildrules::command $who, $msg, $npc
 endmsg
 x 12
 y 1
+arch event_say
+title Python
+slaying /python/IPO/board.py
+end
 end
 arch dungeon_magic
 x 12

@@ -8,7 +8,7 @@ msg
 Creator: Raphael Quinet
 Email: quinet@gamers.org
 Date: Fri Jan 22 02:39:30 1999
-Modified: 2018-12-27 Acer
+Modified: 2019-01-28 Kevin Zheng
 endmsg
 end
 arch grass
@@ -672,6 +672,24 @@ end
 arch marble
 x 7
 y 3
+end
+arch trigger_marker
+slaying permadeth
+msg
+Death will now be permanent. Good luck.
+endmsg
+food 0
+x 7
+y 3
+connected 1
+end
+arch altar_trigger
+name drop 1 silver to enable permadeath
+slaying money
+food 1
+x 7
+y 3
+connected 1
 end
 arch marble
 x 7

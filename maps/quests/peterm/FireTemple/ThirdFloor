@@ -1,12 +1,15 @@
 arch map
-name SecondFloor
+name Fire Temple, Third Floor
+difficulty 35
+region wilderness
+width 30
+height 31
+enter_x 7
+enter_y 8
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sun Apr 20 09:31:04 1997
+Created:  1997-04-20 Peter Mardahl (peterm@soda.csua.berkeley.edu)
+Modified: 2012-03-12 Rick Tanner
 endmsg
-x 30
-y 31
 end
 arch cobblestones2
 end
@@ -224,10 +227,7 @@ y 5
 end
 arch scroll
 msg
-More of the same alchemical gibberish
-you've seen before.  However, this
-time he's babbling about
-bottle of philosophical oil
+More of the same alchemical gibberish you've seen before.  However, this time he's babbling about bottle of philosophical oil.
 endmsg
 x 1
 y 5
@@ -1961,6 +1961,10 @@ arch mine5
 x 9
 y 11
 end
+arch swall_1_1_half
+x 9
+y 11
+end
 arch cobblestones
 x 9
 y 12
@@ -1982,6 +1986,10 @@ x 9
 y 14
 end
 arch mine12
+x 9
+y 14
+end
+arch swall_1_1_half
 x 9
 y 14
 end
@@ -2014,6 +2022,10 @@ x 9
 y 18
 end
 arch mine5
+x 9
+y 18
+end
+arch swall_1_1_half
 x 9
 y 18
 end
@@ -2117,6 +2129,17 @@ arch cobblestones
 x 10
 y 1
 end
+arch gaelotroll
+name DemonProf
+race demon
+exp 30000
+x 10
+y 1
+resist_magic 30
+resist_fire 100
+resist_electricity 30
+randomitems Balrog
+end
 arch cobblestones
 x 10
 y 2
@@ -2167,19 +2190,17 @@ y 9
 end
 arch scroll
 msg
-this is another complex
-incomprehensible alchemical treatise,
-apparently related to the ones you've
-seen before.  He writes someting about
-his collegues also needing 
-7 pile of sulphur
-in order to do the summoning
+This is another complex incomprehensible alchemical treatise, apparently related to the ones you've seen before.  He writes something about his collegues also needing 7 pile of sulphur in order to do the summoning.
 endmsg
 x 10
 y 9
 material 256
 end
 arch cobblestones
+x 10
+y 10
+end
+arch swall_1_4_half
 x 10
 y 10
 end
@@ -2205,13 +2226,7 @@ y 22
 end
 arch scroll
 msg
-...  This is part of a highly
-technical report on alchemical
-research.  About the only part you can
-understand is that the author thinks
-it likely that a 
-fire para-elemental's residue
-would be one of the ingredients needed
+...  This is part of a highly technical report on alchemical research.  About the only part you can understand is that the author thinks it likely that a fire para-elemental's residue would be one of the ingredients needed.
 endmsg
 x 10
 y 22
@@ -2338,6 +2353,10 @@ x 11
 y 10
 end
 arch cobblestones
+x 11
+y 21
+end
+arch swall_1_4_half
 x 11
 y 21
 end
@@ -2454,6 +2473,20 @@ arch cobblestones
 x 12
 y 8
 end
+arch shadowtiger
+name Demon Tiger
+race demon
+exp 20000
+x 12
+y 8
+speed 0.200000
+resist_fire 100
+carrying 100
+randomitems rich_old
+arch key2
+slaying door34
+end
+end
 arch cobblestones
 x 12
 y 9
@@ -2477,6 +2510,22 @@ end
 arch cobblestones
 x 12
 y 22
+end
+arch dragonman
+name Deformed demon
+race demon
+Con 5
+hp 1000
+maxhp 1000
+exp 10000
+x 12
+y 22
+speed 0.100000
+speed_left -2.070000
+carrying 100
+arch key2
+slaying door31
+end
 end
 arch cobblestones
 x 12
@@ -2586,6 +2635,10 @@ x 13
 y 9
 end
 arch cobblestones
+x 13
+y 10
+end
+arch swall_1_4_half
 x 13
 y 10
 end
@@ -2721,6 +2774,10 @@ x 14
 y 10
 end
 arch cobblestones
+x 14
+y 21
+end
+arch swall_1_4_half
 x 14
 y 21
 end
@@ -3015,6 +3072,10 @@ arch cobblestones
 x 16
 y 10
 end
+arch swall_1_4_half
+x 16
+y 10
+end
 arch mine7
 x 16
 y 10
@@ -3177,6 +3238,10 @@ arch cobblestones
 x 17
 y 21
 end
+arch swall_1_4_half
+x 17
+y 21
+end
 arch mine7
 x 17
 y 21
@@ -3227,6 +3292,24 @@ end
 arch cobblestones
 x 17
 y 28
+end
+arch troll
+name demon troll
+race demon
+x 17
+y 28
+resist_fire 100
+carrying 175
+arch key2
+slaying door32
+end
+arch note
+msg
+This note is pretty damaged.  You read it, but you can only understand little bits and pieces.  But you can make out enough to figure out that research on an alchemical procedure for summoning fire elementals is on.
+this floor
+endmsg
+material 256
+end
 end
 arch cobblestones
 x 17
@@ -3627,6 +3710,10 @@ arch mine5
 x 20
 y 11
 end
+arch swall_1_1_half
+x 20
+y 11
+end
 arch cobblestones
 x 20
 y 12
@@ -3648,6 +3735,10 @@ x 20
 y 14
 end
 arch mine4
+x 20
+y 14
+end
+arch swall_1_1_half
 x 20
 y 14
 end
@@ -3672,6 +3763,10 @@ x 20
 y 17
 end
 arch mine4
+x 20
+y 17
+end
+arch swall_1_1_half
 x 20
 y 17
 end
@@ -5834,68 +5929,4 @@ end
 arch mine12
 x 29
 y 30
-end
-arch gaelotroll
-name DemonProf
-race demon
-exp 30000
-x 10
-y 1
-resist_magic 30
-resist_fire 100
-resist_electricity 30
-randomitems Balrog
-end
-arch shadowtiger
-name Demon Tiger
-race demon
-exp 20000
-x 12
-y 8
-speed 0.200000
-resist_fire 100
-carrying 100
-randomitems rich_old
-arch key2
-slaying door34
-end
-end
-arch dragonman
-name Deformed demon
-race demon
-Con 5
-hp 1000
-maxhp 1000
-exp 10000
-x 12
-y 22
-speed 0.100000
-speed_left -2.070000
-carrying 100
-arch key2
-slaying door31
-end
-end
-arch troll
-name demon troll
-race demon
-x 17
-y 28
-resist_fire 100
-carrying 175
-arch key2
-slaying door32
-end
-arch note
-msg
-This note is pretty damaged.  You
-read it, but you can only understand
-little bits and pieces.  But you can
-make out enough to figure out that
-research on an alchemical procedure
-for summoning fire elementals is on
-this floor
-endmsg
-material 256
-end
 end

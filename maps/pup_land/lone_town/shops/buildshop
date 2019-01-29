@@ -1,16 +1,18 @@
 arch map
-name buildshop
+name Lone Town's Acme Building Supply
+difficulty 1
 region lonetown
-msg
-Creator: Gene Alexander
-Date:    12/23/2005
-endmsg
-width 40
-height 26
-enter_x 19
-enter_y 20
 shopitems building material:95;item builder:95;*:-100
-shopgreed 1.0
+shopgreed 1.00000
+width 40
+height 29
+enter_x 19
+enter_y 21
+msg
+Created:  2005-12-23 Gene Alexander
+Modified: 2012-03-13 Rick Tanner
+endmsg
+outdoor 1
 end
 arch cobblestones
 end
@@ -89,6 +91,15 @@ end
 arch cobblestones
 y 25
 end
+arch cobblestones
+y 26
+end
+arch cobblestones
+y 27
+end
+arch cobblestones
+y 28
+end
 arch grass
 x 1
 end
@@ -188,11 +199,23 @@ arch grass
 x 1
 y 24
 end
-arch cobblestones
+arch grass
 x 1
 y 25
 end
 arch grass
+x 1
+y 26
+end
+arch grass
+x 1
+y 27
+end
+arch cobblestones
+x 1
+y 28
+end
+arch grass
 x 2
 end
 arch grass
@@ -321,11 +344,6 @@ x 2
 y 20
 end
 arch grass
-x 2
-y 21
-end
-arch tree3
-name shrubbery
 x 2
 y 21
 end
@@ -351,11 +369,38 @@ arch grass
 x 2
 y 24
 end
-arch cobblestones
+arch tree3
+name shrubbery
+x 2
+y 24
+end
+arch grass
+x 2
+y 25
+end
+arch tree3
+name shrubbery
 x 2
 y 25
 end
 arch grass
+x 2
+y 26
+end
+arch tree3
+name shrubbery
+x 2
+y 26
+end
+arch grass
+x 2
+y 27
+end
+arch cobblestones
+x 2
+y 28
+end
+arch grass
 x 3
 end
 arch grass
@@ -366,182 +411,238 @@ arch grass
 x 3
 y 2
 end
-arch shop_empty
+arch flagstone
 x 3
 y 3
 end
-arch wall_2_2_2
+arch white_wall_2_2_2
 x 3
 y 3
 end
-arch shop_empty
+arch flagstone
 x 3
 y 4
 end
-arch wall_2_1_1
+arch white_wall_2_1_1
 x 3
 y 4
 end
-arch shop_empty
+arch light2
 x 3
 y 5
 end
-arch window_win1
+arch flagstone
 x 3
 y 5
 end
-arch shop_empty
+arch white_wall_win1
+x 3
+y 5
+end
+arch flagstone
 x 3
 y 6
 end
-arch wall_2_1_1
+arch white_wall_2_1_1
 x 3
 y 6
 end
-arch shop_empty
+arch light2
 x 3
 y 7
 end
-arch window_win1
+arch flagstone
 x 3
 y 7
 end
-arch shop_empty
+arch white_wall_win1
+x 3
+y 7
+end
+arch flagstone
 x 3
 y 8
 end
-arch wall_2_1_1
+arch white_wall_2_1_1
 x 3
 y 8
 end
-arch shop_empty
+arch light2
 x 3
 y 9
 end
-arch window_win1
+arch flagstone
 x 3
 y 9
 end
-arch shop_empty
+arch white_wall_win1
+x 3
+y 9
+end
+arch flagstone
 x 3
 y 10
 end
-arch wall_2_1_1
+arch white_wall_2_1_1
 x 3
 y 10
 end
-arch shop_empty
+arch light2
 x 3
 y 11
 end
-arch window_win1
+arch flagstone
 x 3
 y 11
 end
-arch shop_empty
+arch white_wall_win1
+x 3
+y 11
+end
+arch flagstone
 x 3
 y 12
 end
-arch wall_2_1_1
+arch white_wall_2_1_1
 x 3
 y 12
 end
-arch shop_empty
+arch light2
 x 3
 y 13
 end
-arch window_win1
+arch flagstone
 x 3
 y 13
 end
-arch shop_empty
+arch white_wall_win1
+x 3
+y 13
+end
+arch flagstone
 x 3
 y 14
 end
-arch wall_2_1_1
+arch white_wall_2_1_1
 x 3
 y 14
 end
-arch shop_empty
+arch light2
 x 3
 y 15
 end
-arch window_win1
+arch flagstone
 x 3
 y 15
 end
-arch shop_empty
+arch white_wall_win1
+x 3
+y 15
+end
+arch flagstone
 x 3
 y 16
 end
-arch wall_2_1_1
+arch white_wall_2_1_1
 x 3
 y 16
 end
-arch shop_empty
+arch light2
 x 3
 y 17
 end
-arch window_win1
+arch flagstone
 x 3
 y 17
 end
-arch shop_empty
+arch white_wall_win1
+x 3
+y 17
+end
+arch flagstone
 x 3
 y 18
 end
-arch wall_2_1_1
+arch white_wall_2_1_1
 x 3
 y 18
 end
-arch shop_empty
+arch light2
 x 3
 y 19
 end
-arch window_win1
+arch flagstone
 x 3
 y 19
 end
-arch shop_empty
+arch white_wall_win1
+x 3
+y 19
+end
+arch flagstone
 x 3
 y 20
 end
-arch wall_2_1_1
+arch white_wall_2_1_1
 x 3
 y 20
 end
-arch shop_empty
+arch flagstone
 x 3
 y 21
 end
-arch wall_2_1_1
+arch white_wall_2_1_1
 x 3
 y 21
 end
-arch shop_empty
+arch flagstone
 x 3
 y 22
 end
-arch wall_2_2_1
+arch white_wall_3_2
 x 3
 y 22
+end
+arch flagstone
+x 3
+y 23
+end
+arch white_wall_2_1_1
+x 3
+y 23
+end
+arch flagstone
+x 3
+y 24
+end
+arch white_wall_2_1_1
+x 3
+y 24
+end
+arch flagstone
+x 3
+y 25
+end
+arch white_wall_2_2_1
+x 3
+y 25
 end
 arch grass
 x 3
-y 23
+y 26
 end
 arch tree3
 name shrubbery
 x 3
-y 23
+y 26
 end
 arch grass
 x 3
-y 24
+y 27
 end
 arch cobblestones
 x 3
-y 25
+y 28
 end
 arch grass
 x 4
@@ -554,83 +655,83 @@ arch grass
 x 4
 y 2
 end
-arch shop_empty
+arch flagstone
 x 4
 y 3
 end
-arch wall_2_1_2
+arch white_wall_2_1_2
 x 4
 y 3
 end
-arch shop_building
+arch shop_building_pupland
 x 4
 y 4
 end
-arch shop_building
+arch shop_building_pupland
 x 4
 y 5
 end
-arch shop_building
+arch shop_building_pupland
 x 4
 y 6
 end
-arch shop_building
+arch shop_building_pupland
 x 4
 y 7
 end
-arch shop_building
+arch shop_building_pupland
 x 4
 y 8
 end
-arch shop_building
+arch shop_building_pupland
 x 4
 y 9
 end
-arch shop_building
+arch shop_building_pupland
 x 4
 y 10
 end
-arch shop_building
+arch shop_building_pupland
 x 4
 y 11
 end
-arch shop_building
+arch shop_building_pupland
 x 4
 y 12
 end
-arch shop_building
+arch shop_building_pupland
 x 4
 y 13
 end
-arch shop_building
+arch shop_building_pupland
 x 4
 y 14
 end
-arch shop_building
+arch shop_building_pupland
 x 4
 y 15
 end
-arch shop_building
+arch shop_building_pupland
 x 4
 y 16
 end
-arch shop_building
+arch shop_building_pupland
 x 4
 y 17
 end
-arch shop_building
+arch shop_building_pupland
 x 4
 y 18
 end
-arch shop_building
+arch shop_building_pupland
 x 4
 y 19
 end
-arch shop_building
+arch shop_building_pupland
 x 4
 y 20
 end
-arch shop_building
+arch shop_building_pupland
 x 4
 y 21
 end
@@ -638,26 +739,42 @@ arch shop_empty
 x 4
 y 22
 end
-arch wall_2_1_2
+arch white_wall_2_1_2
 x 4
 y 22
 end
-arch grass
+arch flagstone
 x 4
 y 23
+end
+arch flagstone
+x 4
+y 24
+end
+arch flagstone
+x 4
+y 25
+end
+arch white_wall_1_3
+x 4
+y 25
+end
+arch grass
+x 4
+y 26
 end
 arch tree3
 name shrubbery
 x 4
-y 23
+y 26
 end
 arch grass
 x 4
-y 24
+y 27
 end
 arch cobblestones
 x 4
-y 25
+y 28
 end
 arch grass
 x 5
@@ -670,17 +787,25 @@ arch grass
 x 5
 y 2
 end
-arch shop_empty
+arch light2
 x 5
 y 3
 end
-arch window_win2
+arch flagstone
 x 5
 y 3
 end
-arch shop_building
+arch white_wall_win2
+x 5
+y 3
+end
+arch shop_building_pupland
 x 5
 y 4
+end
+arch light4
+x 5
+y 5
 end
 arch shop_empty
 x 5
@@ -742,35 +867,70 @@ arch shop_empty
 x 5
 y 19
 end
+arch light4
+x 5
+y 20
+end
 arch shop_empty
 x 5
 y 20
 end
-arch shop_building
+arch shop_building_pupland
 x 5
 y 21
+end
+arch light2
+x 5
+y 22
 end
 arch shop_empty
 x 5
 y 22
 end
-arch window_win2
+arch white_wall_win2
 x 5
 y 22
 end
-arch grass
+arch flagstone
 x 5
 y 23
 end
-arch grass
+arch light4
 x 5
 y 24
 end
-arch cobblestones
+arch flagstone
+x 5
+y 24
+end
+arch dungeon_magic
+x 5
+y 25
+end
+arch invis_exit
+slaying /pup_land/lone_town/town
+hp 6
+sp 16
+x 5
+y 25
+end
+arch flagstone
 x 5
 y 25
 end
 arch grass
+x 5
+y 26
+end
+arch grass
+x 5
+y 27
+end
+arch cobblestones
+x 5
+y 28
+end
+arch grass
 x 6
 end
 arch grass
@@ -781,15 +941,15 @@ arch grass
 x 6
 y 2
 end
-arch shop_empty
+arch flagstone
 x 6
 y 3
 end
-arch wall_2_1_2
+arch white_wall_2_1_2
 x 6
 y 3
 end
-arch shop_building
+arch shop_building_pupland
 x 6
 y 4
 end
@@ -797,59 +957,79 @@ arch shop_empty
 x 6
 y 5
 end
-arch shop_building
+arch light4
 x 6
 y 6
 end
-arch shop_building
+arch shop_building_pupland
+x 6
+y 6
+end
+arch shop_building_pupland
 x 6
 y 7
 end
-arch shop_building
+arch shop_building_pupland
 x 6
 y 8
 end
-arch shop_building
+arch light4
 x 6
 y 9
 end
-arch shop_building
+arch shop_building_pupland
+x 6
+y 9
+end
+arch shop_building_pupland
 x 6
 y 10
 end
-arch shop_building
+arch shop_building_pupland
 x 6
 y 11
 end
-arch shop_building
+arch light4
 x 6
 y 12
 end
-arch shop_building
+arch shop_building_pupland
+x 6
+y 12
+end
+arch shop_building_pupland
 x 6
 y 13
 end
-arch shop_building
+arch shop_building_pupland
 x 6
 y 14
 end
-arch shop_building
+arch light4
 x 6
 y 15
 end
-arch shop_building
+arch shop_building_pupland
+x 6
+y 15
+end
+arch shop_building_pupland
 x 6
 y 16
 end
-arch shop_building
+arch shop_building_pupland
 x 6
 y 17
 end
-arch shop_building
+arch light4
 x 6
 y 18
 end
-arch shop_building
+arch shop_building_pupland
+x 6
+y 18
+end
+arch shop_building_pupland
 x 6
 y 19
 end
@@ -857,7 +1037,7 @@ arch shop_empty
 x 6
 y 20
 end
-arch shop_building
+arch shop_building_pupland
 x 6
 y 21
 end
@@ -865,28 +1045,46 @@ arch shop_empty
 x 6
 y 22
 end
-arch wall_2_1_2
+arch white_wall_2_1_2
 x 6
 y 22
 end
-arch grass
+arch flagstone
 x 6
 y 23
 end
-arch tree3
-name shrubbery
-x 6
-y 23
-end
-arch grass
+arch flagstone
 x 6
 y 24
 end
-arch cobblestones
+arch dungeon_magic
+x 6
+y 25
+end
+arch invis_exit
+slaying /pup_land/lone_town/town
+hp 6
+sp 16
+x 6
+y 25
+end
+arch flagstone
 x 6
 y 25
 end
 arch grass
+x 6
+y 26
+end
+arch grass
+x 6
+y 27
+end
+arch cobblestones
+x 6
+y 28
+end
+arch grass
 x 7
 end
 arch grass
@@ -897,15 +1095,19 @@ arch grass
 x 7
 y 2
 end
-arch shop_empty
+arch light2
 x 7
 y 3
 end
-arch window_win2
+arch flagstone
 x 7
 y 3
 end
-arch shop_building
+arch white_wall_win2
+x 7
+y 3
+end
+arch shop_building_pupland
 x 7
 y 4
 end
@@ -973,31 +1175,58 @@ arch shop_empty
 x 7
 y 20
 end
-arch shop_building
+arch shop_building_pupland
 x 7
 y 21
+end
+arch light2
+x 7
+y 22
 end
 arch shop_empty
 x 7
 y 22
 end
-arch window_win2
+arch white_wall_win2
 x 7
 y 22
 end
-arch grass
+arch flagstone
 x 7
 y 23
 end
-arch grass
+arch flagstone
 x 7
 y 24
 end
-arch cobblestones
+arch dungeon_magic
+x 7
+y 25
+end
+arch invis_exit
+slaying /pup_land/lone_town/town
+hp 6
+sp 16
+x 7
+y 25
+end
+arch flagstone
 x 7
 y 25
 end
 arch grass
+x 7
+y 26
+end
+arch grass
+x 7
+y 27
+end
+arch cobblestones
+x 7
+y 28
+end
+arch grass
 x 8
 end
 arch grass
@@ -1008,15 +1237,15 @@ arch grass
 x 8
 y 2
 end
-arch shop_empty
+arch flagstone
 x 8
 y 3
 end
-arch wall_2_1_2
+arch white_wall_2_1_2
 x 8
 y 3
 end
-arch shop_building
+arch shop_building_pupland
 x 8
 y 4
 end
@@ -1024,59 +1253,59 @@ arch shop_empty
 x 8
 y 5
 end
-arch shop_building
+arch shop_building_pupland
 x 8
 y 6
 end
-arch shop_building
+arch shop_building_pupland
 x 8
 y 7
 end
-arch shop_building
+arch shop_building_pupland
 x 8
 y 8
 end
-arch shop_building
+arch shop_building_pupland
 x 8
 y 9
 end
-arch shop_building
+arch shop_building_pupland
 x 8
 y 10
 end
-arch shop_building
+arch shop_building_pupland
 x 8
 y 11
 end
-arch shop_building
+arch shop_building_pupland
 x 8
 y 12
 end
-arch shop_building
+arch shop_building_pupland
 x 8
 y 13
 end
-arch shop_building
+arch shop_building_pupland
 x 8
 y 14
 end
-arch shop_building
+arch shop_building_pupland
 x 8
 y 15
 end
-arch shop_building
+arch shop_building_pupland
 x 8
 y 16
 end
-arch shop_building
+arch shop_building_pupland
 x 8
 y 17
 end
-arch shop_building
+arch shop_building_pupland
 x 8
 y 18
 end
-arch shop_building
+arch shop_building_pupland
 x 8
 y 19
 end
@@ -1084,7 +1313,7 @@ arch shop_empty
 x 8
 y 20
 end
-arch shop_building
+arch shop_building_pupland
 x 8
 y 21
 end
@@ -1092,28 +1321,50 @@ arch shop_empty
 x 8
 y 22
 end
-arch wall_2_1_2
+arch white_wall_2_1_2
 x 8
 y 22
 end
-arch grass
+arch flagstone
 x 8
 y 23
 end
-arch tree3
-name shrubbery
-x 8
-y 23
-end
-arch grass
+arch light4
 x 8
 y 24
 end
-arch cobblestones
+arch flagstone
+x 8
+y 24
+end
+arch dungeon_magic
+x 8
+y 25
+end
+arch invis_exit
+slaying /pup_land/lone_town/town
+hp 6
+sp 16
+x 8
+y 25
+end
+arch flagstone
 x 8
 y 25
 end
 arch grass
+x 8
+y 26
+end
+arch grass
+x 8
+y 27
+end
+arch cobblestones
+x 8
+y 28
+end
+arch grass
 x 9
 end
 arch grass
@@ -1124,15 +1375,19 @@ arch grass
 x 9
 y 2
 end
-arch shop_empty
+arch light2
 x 9
 y 3
 end
-arch window_win2
+arch flagstone
 x 9
 y 3
 end
-arch shop_building
+arch white_wall_win2
+x 9
+y 3
+end
+arch shop_building_pupland
 x 9
 y 4
 end
@@ -1200,31 +1455,51 @@ arch shop_empty
 x 9
 y 20
 end
-arch shop_building
+arch shop_building_pupland
 x 9
 y 21
+end
+arch light2
+x 9
+y 22
 end
 arch shop_empty
 x 9
 y 22
 end
-arch window_win2
+arch white_wall_win2
 x 9
 y 22
 end
-arch grass
+arch flagstone
 x 9
 y 23
 end
-arch grass
+arch flagstone
 x 9
 y 24
 end
-arch cobblestones
+arch flagstone
+x 9
+y 25
+end
+arch white_wall_1_4
 x 9
 y 25
 end
 arch grass
+x 9
+y 26
+end
+arch grass
+x 9
+y 27
+end
+arch cobblestones
+x 9
+y 28
+end
+arch grass
 x 10
 end
 arch grass
@@ -1235,15 +1510,15 @@ arch grass
 x 10
 y 2
 end
-arch shop_empty
+arch flagstone
 x 10
 y 3
 end
-arch wall_2_1_2
+arch white_wall_2_1_2
 x 10
 y 3
 end
-arch shop_building
+arch shop_building_pupland
 x 10
 y 4
 end
@@ -1251,59 +1526,79 @@ arch shop_empty
 x 10
 y 5
 end
-arch shop_building
+arch light4
 x 10
 y 6
 end
-arch shop_building
+arch shop_building_pupland
+x 10
+y 6
+end
+arch shop_building_pupland
 x 10
 y 7
 end
-arch shop_building
+arch shop_building_pupland
 x 10
 y 8
 end
-arch shop_building
+arch light4
 x 10
 y 9
 end
-arch shop_building
+arch shop_building_pupland
+x 10
+y 9
+end
+arch shop_building_pupland
 x 10
 y 10
 end
-arch shop_building
+arch shop_building_pupland
 x 10
 y 11
 end
-arch shop_building
+arch light4
 x 10
 y 12
 end
-arch shop_building
+arch shop_building_pupland
+x 10
+y 12
+end
+arch shop_building_pupland
 x 10
 y 13
 end
-arch shop_building
+arch shop_building_pupland
 x 10
 y 14
 end
-arch shop_building
+arch light4
 x 10
 y 15
 end
-arch shop_building
+arch shop_building_pupland
+x 10
+y 15
+end
+arch shop_building_pupland
 x 10
 y 16
 end
-arch shop_building
+arch shop_building_pupland
 x 10
 y 17
 end
-arch shop_building
+arch light4
 x 10
 y 18
 end
-arch shop_building
+arch shop_building_pupland
+x 10
+y 18
+end
+arch shop_building_pupland
 x 10
 y 19
 end
@@ -1311,7 +1606,7 @@ arch shop_empty
 x 10
 y 20
 end
-arch shop_building
+arch shop_building_pupland
 x 10
 y 21
 end
@@ -1319,28 +1614,39 @@ arch shop_empty
 x 10
 y 22
 end
-arch wall_2_1_2
+arch white_wall_2_1_2
 x 10
 y 22
 end
-arch grass
+arch flagstone
 x 10
 y 23
 end
-arch tree3
-name shrubbery
-x 10
-y 23
-end
-arch grass
+arch flagstone
 x 10
 y 24
 end
-arch cobblestones
+arch flagstone
+x 10
+y 25
+end
+arch white_wall_2_1_2
 x 10
 y 25
 end
 arch grass
+x 10
+y 26
+end
+arch grass
+x 10
+y 27
+end
+arch cobblestones
+x 10
+y 28
+end
+arch grass
 x 11
 end
 arch evergreens2
@@ -1358,15 +1664,19 @@ arch grass
 x 11
 y 2
 end
-arch shop_empty
+arch light2
 x 11
 y 3
 end
-arch window_win2
+arch flagstone
 x 11
 y 3
 end
-arch shop_building
+arch white_wall_win2
+x 11
+y 3
+end
+arch shop_building_pupland
 x 11
 y 4
 end
@@ -1434,31 +1744,51 @@ arch shop_empty
 x 11
 y 20
 end
-arch shop_building
+arch shop_building_pupland
 x 11
 y 21
+end
+arch light2
+x 11
+y 22
 end
 arch shop_empty
 x 11
 y 22
 end
-arch window_win2
+arch white_wall_win2
 x 11
 y 22
 end
-arch grass
+arch flagstone
 x 11
 y 23
 end
-arch grass
+arch flagstone
 x 11
 y 24
 end
-arch cobblestones
+arch flagstone
+x 11
+y 25
+end
+arch white_wall_2_1_2
 x 11
 y 25
 end
 arch grass
+x 11
+y 26
+end
+arch grass
+x 11
+y 27
+end
+arch cobblestones
+x 11
+y 28
+end
+arch grass
 x 12
 end
 arch evergreens2
@@ -1480,15 +1810,15 @@ arch evergreens2
 x 12
 y 2
 end
-arch shop_empty
+arch flagstone
 x 12
 y 3
 end
-arch wall_2_1_2
+arch white_wall_2_1_2
 x 12
 y 3
 end
-arch shop_building
+arch shop_building_pupland
 x 12
 y 4
 end
@@ -1496,59 +1826,59 @@ arch shop_empty
 x 12
 y 5
 end
-arch shop_building
+arch shop_building_pupland
 x 12
 y 6
 end
-arch shop_building
+arch shop_building_pupland
 x 12
 y 7
 end
-arch shop_building
+arch shop_building_pupland
 x 12
 y 8
 end
-arch shop_building
+arch shop_building_pupland
 x 12
 y 9
 end
-arch shop_building
+arch shop_building_pupland
 x 12
 y 10
 end
-arch shop_building
+arch shop_building_pupland
 x 12
 y 11
 end
-arch shop_building
+arch shop_building_pupland
 x 12
 y 12
 end
-arch shop_building
+arch shop_building_pupland
 x 12
 y 13
 end
-arch shop_building
+arch shop_building_pupland
 x 12
 y 14
 end
-arch shop_building
+arch shop_building_pupland
 x 12
 y 15
 end
-arch shop_building
+arch shop_building_pupland
 x 12
 y 16
 end
-arch shop_building
+arch shop_building_pupland
 x 12
 y 17
 end
-arch shop_building
+arch shop_building_pupland
 x 12
 y 18
 end
-arch shop_building
+arch shop_building_pupland
 x 12
 y 19
 end
@@ -1556,7 +1886,7 @@ arch shop_empty
 x 12
 y 20
 end
-arch shop_building
+arch shop_building_pupland
 x 12
 y 21
 end
@@ -1564,28 +1894,43 @@ arch shop_empty
 x 12
 y 22
 end
-arch wall_2_1_2
+arch white_wall_2_1_2
 x 12
 y 22
 end
-arch grass
+arch flagstone
 x 12
 y 23
 end
-arch tree3
-name shrubbery
-x 12
-y 23
-end
-arch grass
+arch light4
 x 12
 y 24
 end
-arch cobblestones
+arch flagstone
+x 12
+y 24
+end
+arch flagstone
+x 12
+y 25
+end
+arch white_wall_1_3
 x 12
 y 25
 end
 arch grass
+x 12
+y 26
+end
+arch grass
+x 12
+y 27
+end
+arch cobblestones
+x 12
+y 28
+end
+arch grass
 x 13
 end
 arch evergreens2
@@ -1607,15 +1952,19 @@ arch evergreens2
 x 13
 y 2
 end
-arch shop_empty
+arch light2
 x 13
 y 3
 end
-arch window_win2
+arch flagstone
 x 13
 y 3
 end
-arch shop_building
+arch white_wall_win2
+x 13
+y 3
+end
+arch shop_building_pupland
 x 13
 y 4
 end
@@ -1683,31 +2032,58 @@ arch shop_empty
 x 13
 y 20
 end
-arch shop_building
+arch shop_building_pupland
 x 13
 y 21
+end
+arch light2
+x 13
+y 22
 end
 arch shop_empty
 x 13
 y 22
 end
-arch window_win2
+arch white_wall_win2
 x 13
 y 22
 end
-arch grass
+arch flagstone
 x 13
 y 23
 end
-arch grass
+arch flagstone
 x 13
 y 24
 end
-arch cobblestones
+arch dungeon_magic
+x 13
+y 25
+end
+arch invis_exit
+slaying /pup_land/lone_town/town
+hp 6
+sp 16
+x 13
+y 25
+end
+arch flagstone
 x 13
 y 25
 end
 arch grass
+x 13
+y 26
+end
+arch grass
+x 13
+y 27
+end
+arch cobblestones
+x 13
+y 28
+end
+arch grass
 x 14
 end
 arch evergreens2
@@ -1729,15 +2105,15 @@ arch evergreens2
 x 14
 y 2
 end
-arch shop_empty
+arch flagstone
 x 14
 y 3
 end
-arch wall_2_1_2
+arch white_wall_2_1_2
 x 14
 y 3
 end
-arch shop_building
+arch shop_building_pupland
 x 14
 y 4
 end
@@ -1745,59 +2121,79 @@ arch shop_empty
 x 14
 y 5
 end
-arch shop_building
+arch light4
 x 14
 y 6
 end
-arch shop_building
+arch shop_building_pupland
+x 14
+y 6
+end
+arch shop_building_pupland
 x 14
 y 7
 end
-arch shop_building
+arch shop_building_pupland
 x 14
 y 8
 end
-arch shop_building
+arch light4
 x 14
 y 9
 end
-arch shop_building
+arch shop_building_pupland
+x 14
+y 9
+end
+arch shop_building_pupland
 x 14
 y 10
 end
-arch shop_building
+arch shop_building_pupland
 x 14
 y 11
 end
-arch shop_building
+arch light4
 x 14
 y 12
 end
-arch shop_building
+arch shop_building_pupland
+x 14
+y 12
+end
+arch shop_building_pupland
 x 14
 y 13
 end
-arch shop_building
+arch shop_building_pupland
 x 14
 y 14
 end
-arch shop_building
+arch light4
 x 14
 y 15
 end
-arch shop_building
+arch shop_building_pupland
+x 14
+y 15
+end
+arch shop_building_pupland
 x 14
 y 16
 end
-arch shop_building
+arch shop_building_pupland
 x 14
 y 17
 end
-arch shop_building
+arch light4
 x 14
 y 18
 end
-arch shop_building
+arch shop_building_pupland
+x 14
+y 18
+end
+arch shop_building_pupland
 x 14
 y 19
 end
@@ -1805,7 +2201,7 @@ arch shop_empty
 x 14
 y 20
 end
-arch shop_building
+arch shop_building_pupland
 x 14
 y 21
 end
@@ -1813,28 +2209,46 @@ arch shop_empty
 x 14
 y 22
 end
-arch wall_2_1_2
+arch white_wall_2_1_2
 x 14
 y 22
 end
-arch grass
+arch flagstone
 x 14
 y 23
 end
-arch tree3
-name shrubbery
-x 14
-y 23
-end
-arch grass
+arch flagstone
 x 14
 y 24
 end
-arch cobblestones
+arch dungeon_magic
+x 14
+y 25
+end
+arch invis_exit
+slaying /pup_land/lone_town/town
+hp 6
+sp 16
+x 14
+y 25
+end
+arch flagstone
 x 14
 y 25
 end
 arch grass
+x 14
+y 26
+end
+arch grass
+x 14
+y 27
+end
+arch cobblestones
+x 14
+y 28
+end
+arch grass
 x 15
 end
 arch evergreens2
@@ -1852,15 +2266,19 @@ arch grass
 x 15
 y 2
 end
-arch shop_empty
+arch light2
 x 15
 y 3
 end
-arch window_win2
+arch flagstone
 x 15
 y 3
 end
-arch shop_building
+arch white_wall_win2
+x 15
+y 3
+end
+arch shop_building_pupland
 x 15
 y 4
 end
@@ -1924,35 +2342,70 @@ arch shop_empty
 x 15
 y 19
 end
+arch light4
+x 15
+y 20
+end
 arch shop_empty
 x 15
 y 20
 end
-arch shop_building
+arch shop_building_pupland
 x 15
 y 21
+end
+arch light2
+x 15
+y 22
 end
 arch shop_empty
 x 15
 y 22
 end
-arch window_win2
+arch white_wall_win2
 x 15
 y 22
 end
-arch grass
+arch flagstone
 x 15
 y 23
 end
-arch grass
+arch light4
 x 15
 y 24
 end
-arch cobblestones
+arch flagstone
+x 15
+y 24
+end
+arch dungeon_magic
+x 15
+y 25
+end
+arch invis_exit
+slaying /pup_land/lone_town/town
+hp 6
+sp 16
+x 15
+y 25
+end
+arch flagstone
 x 15
 y 25
 end
 arch grass
+x 15
+y 26
+end
+arch grass
+x 15
+y 27
+end
+arch cobblestones
+x 15
+y 28
+end
+arch grass
 x 16
 end
 arch evergreens2
@@ -1974,23 +2427,27 @@ arch evergreens2
 x 16
 y 2
 end
-arch shop_empty
+arch flagstone
 x 16
 y 3
 end
-arch wall_2_1_2
+arch white_wall_2_1_2
 x 16
 y 3
 end
-arch shop_building
+arch shop_building_pupland
 x 16
 y 4
+end
+arch light4
+x 16
+y 5
 end
 arch shop_empty
 x 16
 y 5
 end
-arch shop_building
+arch shop_building_pupland
 x 16
 y 6
 end
@@ -1998,7 +2455,11 @@ arch shop_empty
 x 16
 y 7
 end
-arch shop_building
+arch light4
+x 16
+y 8
+end
+arch shop_building_pupland
 x 16
 y 8
 end
@@ -2006,7 +2467,7 @@ arch shop_empty
 x 16
 y 9
 end
-arch shop_building
+arch shop_building_pupland
 x 16
 y 10
 end
@@ -2014,9 +2475,17 @@ arch shop_empty
 x 16
 y 11
 end
-arch shop_building
+arch light4
 x 16
 y 12
+end
+arch shop_building_pupland
+x 16
+y 12
+end
+arch light4
+x 16
+y 13
 end
 arch shop_empty
 x 16
@@ -2034,23 +2503,23 @@ arch shop_empty
 x 16
 y 16
 end
-arch shop_building
+arch shop_building_pupland
 x 16
 y 17
 end
-arch shop_building
+arch shop_building_pupland
 x 16
 y 18
 end
-arch shop_building
+arch shop_building_pupland
 x 16
 y 19
 end
-arch shop_building
+arch shop_building_pupland
 x 16
 y 20
 end
-arch shop_building
+arch shop_building_pupland
 x 16
 y 21
 end
@@ -2058,28 +2527,46 @@ arch shop_empty
 x 16
 y 22
 end
-arch wall_2_1_2
+arch white_wall_2_1_2
 x 16
 y 22
 end
-arch grass
+arch flagstone
 x 16
 y 23
 end
-arch tree3
-name shrubbery
-x 16
-y 23
-end
-arch grass
+arch flagstone
 x 16
 y 24
 end
-arch cobblestones
+arch dungeon_magic
+x 16
+y 25
+end
+arch invis_exit
+slaying /pup_land/lone_town/town
+hp 6
+sp 16
+x 16
+y 25
+end
+arch flagstone
 x 16
 y 25
 end
 arch grass
+x 16
+y 26
+end
+arch grass
+x 16
+y 27
+end
+arch cobblestones
+x 16
+y 28
+end
+arch grass
 x 17
 end
 arch evergreens2
@@ -2101,15 +2588,15 @@ arch evergreens2
 x 17
 y 2
 end
-arch shop_empty
+arch flagstone
 x 17
 y 3
 end
-arch wall_2_1_2
+arch white_wall_2_1_2
 x 17
 y 3
 end
-arch shop_building
+arch shop_building_pupland
 x 17
 y 4
 end
@@ -2117,7 +2604,7 @@ arch shop_empty
 x 17
 y 5
 end
-arch shop_building
+arch shop_building_pupland
 x 17
 y 6
 end
@@ -2125,7 +2612,7 @@ arch shop_empty
 x 17
 y 7
 end
-arch shop_building
+arch shop_building_pupland
 x 17
 y 8
 end
@@ -2133,7 +2620,7 @@ arch shop_empty
 x 17
 y 9
 end
-arch shop_building
+arch shop_building_pupland
 x 17
 y 10
 end
@@ -2141,7 +2628,7 @@ arch shop_empty
 x 17
 y 11
 end
-arch shop_building
+arch shop_building_pupland
 x 17
 y 12
 end
@@ -2157,7 +2644,7 @@ arch shop_empty
 x 17
 y 15
 end
-arch wall_2_2_2
+arch white_wall_2_2_2
 x 17
 y 15
 end
@@ -2165,7 +2652,7 @@ arch shop_empty
 x 17
 y 16
 end
-arch window_win1
+arch white_wall_win1
 x 17
 y 16
 end
@@ -2173,7 +2660,7 @@ arch shop_empty
 x 17
 y 17
 end
-arch window_win1
+arch white_wall_win1
 x 17
 y 17
 end
@@ -2181,7 +2668,7 @@ arch shop_empty
 x 17
 y 18
 end
-arch window_win1
+arch white_wall_win1
 x 17
 y 18
 end
@@ -2189,7 +2676,7 @@ arch shop_empty
 x 17
 y 19
 end
-arch window_win1
+arch white_wall_win1
 x 17
 y 19
 end
@@ -2197,7 +2684,7 @@ arch shop_empty
 x 17
 y 20
 end
-arch window_win1
+arch white_wall_win1
 x 17
 y 20
 end
@@ -2205,7 +2692,7 @@ arch shop_empty
 x 17
 y 21
 end
-arch window_win1
+arch white_wall_win1
 x 17
 y 21
 end
@@ -2213,28 +2700,50 @@ arch shop_empty
 x 17
 y 22
 end
-arch wall_3_1
+arch white_wall_3_1
 x 17
 y 22
 end
-arch grass
+arch flagstone
 x 17
 y 23
 end
-arch tree3
-name shrubbery
-x 17
-y 23
-end
-arch grass
+arch light4
 x 17
 y 24
 end
-arch cobblestones
+arch flagstone
+x 17
+y 24
+end
+arch dungeon_magic
+x 17
+y 25
+end
+arch invis_exit
+slaying /pup_land/lone_town/town
+hp 6
+sp 16
+x 17
+y 25
+end
+arch flagstone
 x 17
 y 25
 end
 arch grass
+x 17
+y 26
+end
+arch grass
+x 17
+y 27
+end
+arch cobblestones
+x 17
+y 28
+end
+arch grass
 x 18
 end
 arch evergreens2
@@ -2256,15 +2765,19 @@ arch evergreens2
 x 18
 y 2
 end
-arch shop_empty
+arch light2
 x 18
 y 3
 end
-arch window_win2
+arch flagstone
 x 18
 y 3
 end
-arch shop_building
+arch white_wall_win2
+x 18
+y 3
+end
+arch shop_building_pupland
 x 18
 y 4
 end
@@ -2272,7 +2785,7 @@ arch shop_empty
 x 18
 y 5
 end
-arch shop_building
+arch shop_building_pupland
 x 18
 y 6
 end
@@ -2280,7 +2793,7 @@ arch shop_empty
 x 18
 y 7
 end
-arch shop_building
+arch shop_building_pupland
 x 18
 y 8
 end
@@ -2288,7 +2801,7 @@ arch shop_empty
 x 18
 y 9
 end
-arch shop_building
+arch shop_building_pupland
 x 18
 y 10
 end
@@ -2296,7 +2809,7 @@ arch shop_empty
 x 18
 y 11
 end
-arch shop_building
+arch shop_building_pupland
 x 18
 y 12
 end
@@ -2312,45 +2825,46 @@ arch shop_empty
 x 18
 y 15
 end
-arch window_win2
+arch white_wall_win2
 x 18
 y 15
 end
-arch cobblestones
+arch light4
 x 18
 y 16
 end
-arch cobblestones
+arch flagstone
+x 18
+y 16
+end
+arch flagstone
 x 18
 y 17
 end
-arch cobblestones
+arch flagstone
 x 18
 y 18
 end
 arch book_read
 name Building other items
 msg
-All items not requiring any special handling are built simply by marking the appropriate material and firing the builder.
-Note that, to avoid any issue, those items can not be picked up.
-Note also that you can build an item on another.
+All items not requiring any special handling are built simply by marking the appropriate material and firing the builder.  Note that, to avoid any issue, those items can not be picked up.  Note also that you can build an item on another.
 endmsg
+x 18
+y 18
 material 0
 no_pick 1
 identified 1
-x 18
-y 18
 end
-arch cobblestones
+arch flagstone
 x 18
 y 19
 end
 arch book_read
 name Building gates and buttons/pedestals
 msg
-Some items, like gates, require buttons, pedestals, ..., something to be opened and closed.
-To build a gate with its associated button:
-* put a marking rune at the spot where you wish to build the door. The text can be whatever you want, make sure to remember it.
+Some items, like gates, require buttons, pedestals, ..., something to be opened and closed. To build a gate with its associated button:
+* put a marking rune at the spot where you wish to build the door.  The text can be whatever you want, make sure to remember it.
 * build the gate on this spot
 * put a marking rune at the spot where you with to put the button. Use the same text as for the door.
 * build the button
@@ -2363,15 +2877,19 @@ Also, it is possible to make buttons, levers, and pedestals underneath gates, ho
 * make 2 marking runes on the square that you want to build the button and gate on
 * build the gate first
 * then build the button underneath it
-This is useful for making a gate avoid crushing people underneath it. Also, you can use this same technique with inverted gates in order to make a square that pushes objects placed on it off of it.
+This is useful for making a gate avoid crushing people underneath it.  Also, you can use this same technique with inverted gates in order to make a square that pushes objects placed on it off of it.
 endmsg
+x 18
+y 19
 material 0
 no_pick 1
 identified 1
-x 18
-y 19
 end
-arch cobblestones
+arch light4
+x 18
+y 20
+end
+arch flagstone
 x 18
 y 20
 end
@@ -2379,17 +2897,18 @@ arch book_read
 name Building floor and walls
 msg
 Building enables you to put walls and floors where you want.
-Building a floor lets you remove walls. This is the only way to remove them.
-You can change an existing floor by building another on top. Same goes for walls.
+Building a floor lets you remove walls.  This is the only way to remove them.
+You can change an existing floor by building another on top.  Same goes for walls.
 All created floors are magic, and will preserve items you put on them.
+You can add a window in some walls.  To remove the window, build a new wall.
 endmsg
+x 18
+y 20
 material 0
 no_pick 1
 identified 1
-x 18
-y 20
 end
-arch cobblestones
+arch flagstone
 x 18
 y 21
 end
@@ -2397,45 +2916,61 @@ arch book_read
 name Basic building instructions
 msg
 To build your own home, you can use different items:
-* generic builder: this tool lets you build anything. You need one to build.
-* generic destroyer: this tool lets you destroy a built item. This will remove any built item, except floors and walls.
-* materials: you need those to build items. For instance, a 'Wood floor material' enables you to build a woodfloor.
+* generic builder: this tool lets you build anything.  You need one to build.
+* generic destroyer: this tool lets you destroy a built item.  This will remove any built item, except floors and white_walls.
+* materials: you need those to build items.  For instance, a 'Wood floor material' enables you to build a woodfloor.
 To build an item:
 * apply the builder
 * mark the material of the item you want to build
 * fire the builder in the desired direction
 Of course, the material is used when you build, so you need to buy quite a few.
 endmsg
+x 18
+y 21
 material 0
 no_pick 1
 identified 1
-x 18
-y 21
 end
-arch cobblestones
+arch flagstone
 x 18
 y 22
 end
-arch wall_1_3
+arch white_wall_1_3
 x 18
 y 22
 end
-arch dungeon_magic
+arch flagstone
 x 18
 y 23
 end
-arch cobblestones
-x 18
-y 23
-end
-arch cobblestones
+arch flagstone
 x 18
 y 24
 end
-arch cobblestones
+arch flagstone
 x 18
 y 25
 end
+arch white_wall_1_4
+x 18
+y 25
+end
+arch dungeon_magic
+x 18
+y 26
+end
+arch cobblestones
+x 18
+y 26
+end
+arch cobblestones
+x 18
+y 27
+end
+arch cobblestones
+x 18
+y 28
+end
 arch grass
 x 19
 end
@@ -2458,15 +2993,19 @@ arch evergreens2
 x 19
 y 2
 end
-arch shop_empty
+arch light2
 x 19
 y 3
 end
-arch window_win2
+arch flagstone
 x 19
 y 3
 end
-arch shop_building
+arch white_wall_win2
+x 19
+y 3
+end
+arch shop_building_pupland
 x 19
 y 4
 end
@@ -2474,7 +3013,7 @@ arch shop_empty
 x 19
 y 5
 end
-arch shop_building
+arch shop_building_pupland
 x 19
 y 6
 end
@@ -2482,7 +3021,11 @@ arch shop_empty
 x 19
 y 7
 end
-arch shop_building
+arch light4
+x 19
+y 8
+end
+arch shop_building_pupland
 x 19
 y 8
 end
@@ -2490,7 +3033,7 @@ arch shop_empty
 x 19
 y 9
 end
-arch shop_building
+arch shop_building_pupland
 x 19
 y 10
 end
@@ -2498,7 +3041,11 @@ arch shop_empty
 x 19
 y 11
 end
-arch shop_building
+arch light4
+x 19
+y 12
+end
+arch shop_building_pupland
 x 19
 y 12
 end
@@ -2514,11 +3061,11 @@ arch shop_empty
 x 19
 y 15
 end
-arch window_win2
+arch white_wall_win2
 x 19
 y 15
 end
-arch cobblestones
+arch flagstone
 x 19
 y 16
 end
@@ -2526,62 +3073,67 @@ arch shop_mat
 x 19
 y 16
 end
-arch cobblestones
+arch flagstone
 x 19
 y 17
 end
-arch cobblestones
+arch flagstone
 x 19
 y 18
 end
-arch cobblestones
+arch flagstone
 x 19
 y 19
 end
-arch cobblestones
+arch flagstone
 x 19
 y 20
 end
-arch cobblestones
+arch flagstone
 x 19
 y 21
 end
-arch invis_exit
-slaying /pup_land/lone_town/town
-hp 6
-sp 16
-x 19
-y 22
-end
-arch dungeon_magic
-x 19
-y 22
-end
-arch cobblestones
+arch flagstone
 x 19
 y 22
 end
 arch door_2
-no_pass 0
 x 19
 y 22
+move_block 0
 end
-arch dungeon_magic
+arch flagstone
 x 19
 y 23
 end
-arch cobblestones
-x 19
-y 23
-end
-arch cobblestones
+arch flagstone
 x 19
 y 24
 end
-arch cobblestones
+arch flagstone
 x 19
 y 25
 end
+arch white_wall_2_1_2
+x 19
+y 25
+end
+arch dungeon_magic
+x 19
+y 26
+end
+arch cobblestones
+x 19
+y 26
+end
+arch cobblestones
+x 19
+y 27
+end
+arch cobblestones
+x 19
+y 28
+end
 arch grass
 x 20
 end
@@ -2601,15 +3153,19 @@ arch evergreens2
 x 20
 y 2
 end
-arch shop_empty
+arch light2
 x 20
 y 3
 end
-arch window_win2
+arch flagstone
 x 20
 y 3
 end
-arch shop_building
+arch white_wall_win2
+x 20
+y 3
+end
+arch shop_building_pupland
 x 20
 y 4
 end
@@ -2617,7 +3173,7 @@ arch shop_empty
 x 20
 y 5
 end
-arch shop_building
+arch shop_building_pupland
 x 20
 y 6
 end
@@ -2625,7 +3181,7 @@ arch shop_empty
 x 20
 y 7
 end
-arch shop_building
+arch shop_building_pupland
 x 20
 y 8
 end
@@ -2633,7 +3189,7 @@ arch shop_empty
 x 20
 y 9
 end
-arch shop_building
+arch shop_building_pupland
 x 20
 y 10
 end
@@ -2641,7 +3197,7 @@ arch shop_empty
 x 20
 y 11
 end
-arch shop_building
+arch shop_building_pupland
 x 20
 y 12
 end
@@ -2661,70 +3217,75 @@ arch shop_empty
 x 20
 y 15
 end
-arch window_win2
+arch white_wall_win2
 x 20
 y 15
 end
-arch cobblestones
+arch flagstone
 x 20
 y 16
 end
-arch cobblestones
+arch flagstone
 x 20
 y 17
 end
-arch cobblestones
+arch flagstone
 x 20
 y 18
 end
-arch cobblestones
+arch flagstone
 x 20
 y 19
 end
-arch cobblestones
+arch flagstone
 x 20
 y 20
 end
-arch cobblestones
+arch flagstone
 x 20
 y 21
 end
-arch invis_exit
-slaying /pup_land/lone_town/town
-hp 7
-sp 16
-x 20
-y 22
-end
-arch dungeon_magic
-x 20
-y 22
-end
-arch cobblestones
+arch flagstone
 x 20
 y 22
 end
 arch door_2
-no_pass 0
 x 20
 y 22
+move_block 0
 end
-arch dungeon_magic
+arch flagstone
 x 20
 y 23
 end
-arch cobblestones
-x 20
-y 23
-end
-arch cobblestones
+arch flagstone
 x 20
 y 24
 end
-arch cobblestones
+arch flagstone
 x 20
 y 25
 end
+arch white_wall_2_1_2
+x 20
+y 25
+end
+arch dungeon_magic
+x 20
+y 26
+end
+arch cobblestones
+x 20
+y 26
+end
+arch cobblestones
+x 20
+y 27
+end
+arch cobblestones
+x 20
+y 28
+end
 arch grass
 x 21
 end
@@ -2747,15 +3308,19 @@ arch evergreens2
 x 21
 y 2
 end
-arch shop_empty
+arch light2
 x 21
 y 3
 end
-arch window_win2
+arch flagstone
 x 21
 y 3
 end
-arch shop_building
+arch white_wall_win2
+x 21
+y 3
+end
+arch shop_building_pupland
 x 21
 y 4
 end
@@ -2763,7 +3328,7 @@ arch shop_empty
 x 21
 y 5
 end
-arch shop_building
+arch shop_building_pupland
 x 21
 y 6
 end
@@ -2771,7 +3336,7 @@ arch shop_empty
 x 21
 y 7
 end
-arch shop_building
+arch shop_building_pupland
 x 21
 y 8
 end
@@ -2779,7 +3344,7 @@ arch shop_empty
 x 21
 y 9
 end
-arch shop_building
+arch shop_building_pupland
 x 21
 y 10
 end
@@ -2787,7 +3352,7 @@ arch shop_empty
 x 21
 y 11
 end
-arch shop_building
+arch shop_building_pupland
 x 21
 y 12
 end
@@ -2803,19 +3368,23 @@ arch shop_empty
 x 21
 y 15
 end
-arch window_win2
+arch white_wall_win2
 x 21
 y 15
 end
-arch cobblestones
+arch light4
 x 21
 y 16
 end
-arch cobblestones
+arch flagstone
+x 21
+y 16
+end
+arch flagstone
 x 21
 y 17
 end
-arch cobblestones
+arch flagstone
 x 21
 y 18
 end
@@ -2828,50 +3397,54 @@ For the talking and listening books, you also need to connect them with a markin
 For the listening books, the message must be in this format:
 @match blah
 Click.
-Which will make it activate upon the somebody within two squares saying "blah", and will additionally say "Click." upon activation.
+Which will make it activate when somebody within two squares says "blah", and will additionally say "Click." upon activation.
 endmsg
+x 21
+y 18
 material 0
 no_pick 1
 identified 1
-x 21
-y 18
 end
-arch cobblestones
+arch flagstone
 x 21
 y 19
 end
 arch book_read
 name Building restrictions
 msg
-To build on a spot, all items on this spot must be 'buildable'.
+To build on a spot, all items on this spot must be 'buildable.'
 Buildable items will display 'this is a buildable item' when examined.
-There are several exceptions though. In all cases you can build on marking runes as they are used for making gates and buttons work together. Also you can build signs and talking books on of books and or scrolls, because they are needed for specifying the message. Also, buttons, levers and pedestals can be build underneath gates. Don't worry, you should have some clear messages on why you can't build.
+There are several exceptions though.  In all cases you can build on marking runes as they are used for making gates and buttons work together.  Also you can build signs and talking books on of books and or scrolls, because they are needed for specifying the message.  Also, buttons, levers and pedestals can be built underneath gates.  Don't worry, you should have some clear messages on why you can't build.
 endmsg
+x 21
+y 19
 material 0
 no_pick 1
 identified 1
-x 21
-y 19
 end
-arch cobblestones
+arch light4
+x 21
+y 20
+end
+arch flagstone
 x 21
 y 20
 end
 arch book_read
 name Removing items
 msg
-To remove built items, you need a 'generic destroyer'.
-Simply apply it, and fire in the desired direction. It will remove the first built item from the location.
-Warning: a destroyer will remove items starting from the lowest order on the spot. Basically, this means the first removed item will be a pedestal (underground), then items on floor.
+To remove built items, you need a 'generic destroyer.'
+Simply apply it, and fire in the desired direction.  It will remove the first built item from the location.
+Warning: a destroyer will remove items starting from the lowest order on the spot.  Basically, this means the first removed item will be a pedestal (underground), then items on floor.
 Note that the destroyer will not remove walls or floors.
 endmsg
+x 21
+y 20
 material 0
 no_pick 1
 identified 1
-x 21
-y 20
 end
-arch cobblestones
+arch flagstone
 x 21
 y 21
 end
@@ -2879,29 +3452,49 @@ arch menu
 x 21
 y 21
 end
-arch cobblestones
+arch flagstone
 x 21
 y 22
 end
-arch wall_1_4
+arch white_wall_1_4
 x 21
 y 22
+end
+arch flagstone
+x 21
+y 23
+end
+arch light4
+x 21
+y 24
+end
+arch flagstone
+x 21
+y 24
+end
+arch flagstone
+x 21
+y 25
+end
+arch white_wall_1_3
+x 21
+y 25
 end
 arch dungeon_magic
 x 21
-y 23
+y 26
 end
 arch cobblestones
 x 21
-y 23
+y 26
 end
 arch cobblestones
 x 21
-y 24
+y 27
 end
 arch cobblestones
 x 21
-y 25
+y 28
 end
 arch grass
 x 22
@@ -2925,15 +3518,15 @@ arch evergreens2
 x 22
 y 2
 end
-arch shop_empty
+arch flagstone
 x 22
 y 3
 end
-arch wall_2_1_2
+arch white_wall_2_1_2
 x 22
 y 3
 end
-arch shop_building
+arch shop_building_pupland
 x 22
 y 4
 end
@@ -2941,7 +3534,7 @@ arch shop_empty
 x 22
 y 5
 end
-arch shop_building
+arch shop_building_pupland
 x 22
 y 6
 end
@@ -2949,7 +3542,7 @@ arch shop_empty
 x 22
 y 7
 end
-arch shop_building
+arch shop_building_pupland
 x 22
 y 8
 end
@@ -2957,7 +3550,7 @@ arch shop_empty
 x 22
 y 9
 end
-arch shop_building
+arch shop_building_pupland
 x 22
 y 10
 end
@@ -2965,7 +3558,7 @@ arch shop_empty
 x 22
 y 11
 end
-arch shop_building
+arch shop_building_pupland
 x 22
 y 12
 end
@@ -2981,7 +3574,7 @@ arch shop_empty
 x 22
 y 15
 end
-arch wall_2_2_3
+arch white_wall_2_2_3
 x 22
 y 15
 end
@@ -2989,7 +3582,7 @@ arch shop_empty
 x 22
 y 16
 end
-arch window_win1
+arch white_wall_win1
 x 22
 y 16
 end
@@ -2997,7 +3590,7 @@ arch shop_empty
 x 22
 y 17
 end
-arch window_win1
+arch white_wall_win1
 x 22
 y 17
 end
@@ -3005,7 +3598,7 @@ arch shop_empty
 x 22
 y 18
 end
-arch window_win1
+arch white_wall_win1
 x 22
 y 18
 end
@@ -3013,7 +3606,7 @@ arch shop_empty
 x 22
 y 19
 end
-arch window_win1
+arch white_wall_win1
 x 22
 y 19
 end
@@ -3021,7 +3614,7 @@ arch shop_empty
 x 22
 y 20
 end
-arch window_win1
+arch white_wall_win1
 x 22
 y 20
 end
@@ -3029,7 +3622,7 @@ arch shop_empty
 x 22
 y 21
 end
-arch window_win1
+arch white_wall_win1
 x 22
 y 21
 end
@@ -3037,28 +3630,46 @@ arch shop_empty
 x 22
 y 22
 end
-arch wall_3_1
+arch white_wall_3_1
 x 22
 y 22
 end
-arch grass
+arch flagstone
 x 22
 y 23
 end
-arch tree3
-name shrubbery
-x 22
-y 23
-end
-arch grass
+arch flagstone
 x 22
 y 24
 end
-arch cobblestones
+arch dungeon_magic
+x 22
+y 25
+end
+arch invis_exit
+slaying /pup_land/lone_town/town
+hp 7
+sp 16
+x 22
+y 25
+end
+arch flagstone
 x 22
 y 25
 end
 arch grass
+x 22
+y 26
+end
+arch grass
+x 22
+y 27
+end
+arch cobblestones
+x 22
+y 28
+end
+arch grass
 x 23
 end
 arch evergreens2
@@ -3080,23 +3691,27 @@ arch evergreens2
 x 23
 y 2
 end
-arch shop_empty
+arch flagstone
 x 23
 y 3
 end
-arch wall_2_1_2
+arch white_wall_2_1_2
 x 23
 y 3
 end
-arch shop_building
+arch shop_building_pupland
 x 23
 y 4
+end
+arch light4
+x 23
+y 5
 end
 arch shop_empty
 x 23
 y 5
 end
-arch shop_building
+arch shop_building_pupland
 x 23
 y 6
 end
@@ -3104,7 +3719,11 @@ arch shop_empty
 x 23
 y 7
 end
-arch shop_building
+arch light4
+x 23
+y 8
+end
+arch shop_building_pupland
 x 23
 y 8
 end
@@ -3112,7 +3731,7 @@ arch shop_empty
 x 23
 y 9
 end
-arch shop_building
+arch shop_building_pupland
 x 23
 y 10
 end
@@ -3120,9 +3739,17 @@ arch shop_empty
 x 23
 y 11
 end
-arch shop_building
+arch light4
 x 23
 y 12
+end
+arch shop_building_pupland
+x 23
+y 12
+end
+arch light4
+x 23
+y 13
 end
 arch shop_empty
 x 23
@@ -3140,23 +3767,23 @@ arch shop_empty
 x 23
 y 16
 end
-arch shop_building
+arch shop_building_pupland
 x 23
 y 17
 end
-arch shop_building
+arch shop_building_pupland
 x 23
 y 18
 end
-arch shop_building
+arch shop_building_pupland
 x 23
 y 19
 end
-arch shop_building
+arch shop_building_pupland
 x 23
 y 20
 end
-arch shop_building
+arch shop_building_pupland
 x 23
 y 21
 end
@@ -3164,26 +3791,48 @@ arch shop_empty
 x 23
 y 22
 end
-arch wall_2_1_2
+arch white_wall_2_1_2
 x 23
 y 22
 end
-arch grass
+arch flagstone
 x 23
 y 23
 end
-arch tree3
-name shrubbery
-x 23
-y 23
-end
-arch grass
+arch light4
 x 23
 y 24
 end
-arch cobblestones
+arch flagstone
+x 23
+y 24
+end
+arch dungeon_magic
 x 23
 y 25
+end
+arch invis_exit
+slaying /pup_land/lone_town/town
+hp 7
+sp 16
+x 23
+y 25
+end
+arch flagstone
+x 23
+y 25
+end
+arch grass
+x 23
+y 26
+end
+arch grass
+x 23
+y 27
+end
+arch cobblestones
+x 23
+y 28
 end
 arch grass
 x 24
@@ -3207,15 +3856,19 @@ arch evergreens2
 x 24
 y 2
 end
-arch shop_empty
+arch light2
 x 24
 y 3
 end
-arch window_win2
+arch flagstone
 x 24
 y 3
 end
-arch shop_building
+arch white_wall_win2
+x 24
+y 3
+end
+arch shop_building_pupland
 x 24
 y 4
 end
@@ -3279,33 +3932,64 @@ arch shop_empty
 x 24
 y 19
 end
+arch light4
+x 24
+y 20
+end
 arch shop_empty
 x 24
 y 20
 end
-arch shop_building
+arch shop_building_pupland
 x 24
 y 21
+end
+arch light2
+x 24
+y 22
 end
 arch shop_empty
 x 24
 y 22
 end
-arch window_win2
+arch white_wall_win2
 x 24
 y 22
 end
-arch grass
+arch flagstone
 x 24
 y 23
 end
-arch grass
+arch flagstone
 x 24
 y 24
 end
-arch cobblestones
+arch dungeon_magic
 x 24
 y 25
+end
+arch invis_exit
+slaying /pup_land/lone_town/town
+hp 7
+sp 16
+x 24
+y 25
+end
+arch flagstone
+x 24
+y 25
+end
+arch grass
+x 24
+y 26
+end
+arch grass
+x 24
+y 27
+end
+arch cobblestones
+x 24
+y 28
 end
 arch grass
 x 25
@@ -3325,15 +4009,15 @@ arch evergreens2
 x 25
 y 2
 end
-arch shop_empty
+arch flagstone
 x 25
 y 3
 end
-arch wall_2_1_2
+arch white_wall_2_1_2
 x 25
 y 3
 end
-arch shop_building
+arch shop_building_pupland
 x 25
 y 4
 end
@@ -3341,59 +4025,79 @@ arch shop_empty
 x 25
 y 5
 end
-arch shop_building
+arch light4
 x 25
 y 6
 end
-arch shop_building
+arch shop_building_pupland
+x 25
+y 6
+end
+arch shop_building_pupland
 x 25
 y 7
 end
-arch shop_building
+arch shop_building_pupland
 x 25
 y 8
 end
-arch shop_building
+arch light4
 x 25
 y 9
 end
-arch shop_building
+arch shop_building_pupland
+x 25
+y 9
+end
+arch shop_building_pupland
 x 25
 y 10
 end
-arch shop_building
+arch shop_building_pupland
 x 25
 y 11
 end
-arch shop_building
+arch light4
 x 25
 y 12
 end
-arch shop_building
+arch shop_building_pupland
+x 25
+y 12
+end
+arch shop_building_pupland
 x 25
 y 13
 end
-arch shop_building
+arch shop_building_pupland
 x 25
 y 14
 end
-arch shop_building
+arch light4
 x 25
 y 15
 end
-arch shop_building
+arch shop_building_pupland
+x 25
+y 15
+end
+arch shop_building_pupland
 x 25
 y 16
 end
-arch shop_building
+arch shop_building_pupland
 x 25
 y 17
 end
-arch shop_building
+arch light4
 x 25
 y 18
 end
-arch shop_building
+arch shop_building_pupland
+x 25
+y 18
+end
+arch shop_building_pupland
 x 25
 y 19
 end
@@ -3401,7 +4105,7 @@ arch shop_empty
 x 25
 y 20
 end
-arch shop_building
+arch shop_building_pupland
 x 25
 y 21
 end
@@ -3409,26 +4113,44 @@ arch shop_empty
 x 25
 y 22
 end
-arch wall_2_1_2
+arch white_wall_2_1_2
 x 25
 y 22
 end
-arch grass
+arch flagstone
 x 25
 y 23
 end
-arch tree3
-name shrubbery
-x 25
-y 23
-end
-arch grass
+arch flagstone
 x 25
 y 24
 end
-arch cobblestones
+arch dungeon_magic
 x 25
 y 25
+end
+arch invis_exit
+slaying /pup_land/lone_town/town
+hp 7
+sp 16
+x 25
+y 25
+end
+arch flagstone
+x 25
+y 25
+end
+arch grass
+x 25
+y 26
+end
+arch grass
+x 25
+y 27
+end
+arch cobblestones
+x 25
+y 28
 end
 arch grass
 x 26
@@ -3452,15 +4174,19 @@ arch evergreens2
 x 26
 y 2
 end
-arch shop_empty
+arch light2
 x 26
 y 3
 end
-arch window_win2
+arch flagstone
 x 26
 y 3
 end
-arch shop_building
+arch white_wall_win2
+x 26
+y 3
+end
+arch shop_building_pupland
 x 26
 y 4
 end
@@ -3528,29 +4254,60 @@ arch shop_empty
 x 26
 y 20
 end
-arch shop_building
+arch shop_building_pupland
 x 26
 y 21
+end
+arch light2
+x 26
+y 22
 end
 arch shop_empty
 x 26
 y 22
 end
-arch window_win2
+arch white_wall_win2
 x 26
 y 22
 end
-arch grass
+arch flagstone
 x 26
 y 23
 end
-arch grass
+arch light4
 x 26
 y 24
 end
-arch cobblestones
+arch flagstone
+x 26
+y 24
+end
+arch dungeon_magic
 x 26
 y 25
+end
+arch invis_exit
+slaying /pup_land/lone_town/town
+hp 7
+sp 16
+x 26
+y 25
+end
+arch flagstone
+x 26
+y 25
+end
+arch grass
+x 26
+y 26
+end
+arch grass
+x 26
+y 27
+end
+arch cobblestones
+x 26
+y 28
 end
 arch grass
 x 27
@@ -3574,15 +4331,15 @@ arch evergreens2
 x 27
 y 2
 end
-arch shop_empty
+arch flagstone
 x 27
 y 3
 end
-arch wall_2_1_2
+arch white_wall_2_1_2
 x 27
 y 3
 end
-arch shop_building
+arch shop_building_pupland
 x 27
 y 4
 end
@@ -3590,59 +4347,59 @@ arch shop_empty
 x 27
 y 5
 end
-arch shop_building
+arch shop_building_pupland
 x 27
 y 6
 end
-arch shop_building
+arch shop_building_pupland
 x 27
 y 7
 end
-arch shop_building
+arch shop_building_pupland
 x 27
 y 8
 end
-arch shop_building
+arch shop_building_pupland
 x 27
 y 9
 end
-arch shop_building
+arch shop_building_pupland
 x 27
 y 10
 end
-arch shop_building
+arch shop_building_pupland
 x 27
 y 11
 end
-arch shop_building
+arch shop_building_pupland
 x 27
 y 12
 end
-arch shop_building
+arch shop_building_pupland
 x 27
 y 13
 end
-arch shop_building
+arch shop_building_pupland
 x 27
 y 14
 end
-arch shop_building
+arch shop_building_pupland
 x 27
 y 15
 end
-arch shop_building
+arch shop_building_pupland
 x 27
 y 16
 end
-arch shop_building
+arch shop_building_pupland
 x 27
 y 17
 end
-arch shop_building
+arch shop_building_pupland
 x 27
 y 18
 end
-arch shop_building
+arch shop_building_pupland
 x 27
 y 19
 end
@@ -3650,7 +4407,7 @@ arch shop_empty
 x 27
 y 20
 end
-arch shop_building
+arch shop_building_pupland
 x 27
 y 21
 end
@@ -3658,26 +4415,37 @@ arch shop_empty
 x 27
 y 22
 end
-arch wall_2_1_2
+arch white_wall_2_1_2
 x 27
 y 22
 end
-arch grass
+arch flagstone
 x 27
 y 23
 end
-arch tree3
-name shrubbery
-x 27
-y 23
-end
-arch grass
+arch flagstone
 x 27
 y 24
 end
-arch cobblestones
+arch flagstone
 x 27
 y 25
+end
+arch white_wall_1_4
+x 27
+y 25
+end
+arch grass
+x 27
+y 26
+end
+arch grass
+x 27
+y 27
+end
+arch cobblestones
+x 27
+y 28
 end
 arch grass
 x 28
@@ -3698,17 +4466,25 @@ arch evergreens2
 x 28
 y 2
 end
-arch shop_empty
+arch light2
 x 28
 y 3
 end
-arch window_win2
+arch flagstone
 x 28
 y 3
 end
-arch shop_building
+arch white_wall_win2
+x 28
+y 3
+end
+arch shop_building_pupland
 x 28
 y 4
+end
+arch light4
+x 28
+y 5
 end
 arch shop_empty
 x 28
@@ -3770,33 +4546,61 @@ arch shop_empty
 x 28
 y 19
 end
+arch light4
+x 28
+y 20
+end
 arch shop_empty
 x 28
 y 20
 end
-arch shop_building
+arch shop_building_pupland
 x 28
 y 21
+end
+arch light2
+x 28
+y 22
 end
 arch shop_empty
 x 28
 y 22
 end
-arch window_win2
+arch white_wall_win2
 x 28
 y 22
 end
-arch grass
+arch flagstone
 x 28
 y 23
 end
-arch grass
+arch light4
 x 28
 y 24
 end
-arch cobblestones
+arch flagstone
+x 28
+y 24
+end
+arch flagstone
 x 28
 y 25
+end
+arch white_wall_2_1_2
+x 28
+y 25
+end
+arch grass
+x 28
+y 26
+end
+arch grass
+x 28
+y 27
+end
+arch cobblestones
+x 28
+y 28
 end
 arch grass
 x 29
@@ -3809,15 +4613,15 @@ arch grass
 x 29
 y 2
 end
-arch shop_empty
+arch flagstone
 x 29
 y 3
 end
-arch wall_2_1_2
+arch white_wall_2_1_2
 x 29
 y 3
 end
-arch shop_building
+arch shop_building_pupland
 x 29
 y 4
 end
@@ -3825,59 +4629,79 @@ arch shop_empty
 x 29
 y 5
 end
-arch shop_building
+arch light4
 x 29
 y 6
 end
-arch shop_building
+arch shop_building_pupland
+x 29
+y 6
+end
+arch shop_building_pupland
 x 29
 y 7
 end
-arch shop_building
+arch shop_building_pupland
 x 29
 y 8
 end
-arch shop_building
+arch light4
 x 29
 y 9
 end
-arch shop_building
+arch shop_building_pupland
+x 29
+y 9
+end
+arch shop_building_pupland
 x 29
 y 10
 end
-arch shop_building
+arch shop_building_pupland
 x 29
 y 11
 end
-arch shop_building
+arch light4
 x 29
 y 12
 end
-arch shop_building
+arch shop_building_pupland
+x 29
+y 12
+end
+arch shop_building_pupland
 x 29
 y 13
 end
-arch shop_building
+arch shop_building_pupland
 x 29
 y 14
 end
-arch shop_building
+arch light4
 x 29
 y 15
 end
-arch shop_building
+arch shop_building_pupland
+x 29
+y 15
+end
+arch shop_building_pupland
 x 29
 y 16
 end
-arch shop_building
+arch shop_building_pupland
 x 29
 y 17
 end
-arch shop_building
+arch light4
 x 29
 y 18
 end
-arch shop_building
+arch shop_building_pupland
+x 29
+y 18
+end
+arch shop_building_pupland
 x 29
 y 19
 end
@@ -3885,7 +4709,7 @@ arch shop_empty
 x 29
 y 20
 end
-arch shop_building
+arch shop_building_pupland
 x 29
 y 21
 end
@@ -3893,26 +4717,37 @@ arch shop_empty
 x 29
 y 22
 end
-arch wall_2_1_2
+arch white_wall_2_1_2
 x 29
 y 22
 end
-arch grass
+arch flagstone
 x 29
 y 23
 end
-arch tree3
-name shrubbery
-x 29
-y 23
-end
-arch grass
+arch flagstone
 x 29
 y 24
 end
-arch cobblestones
+arch flagstone
 x 29
 y 25
+end
+arch white_wall_2_1_2
+x 29
+y 25
+end
+arch grass
+x 29
+y 26
+end
+arch grass
+x 29
+y 27
+end
+arch cobblestones
+x 29
+y 28
 end
 arch grass
 x 30
@@ -3925,15 +4760,19 @@ arch grass
 x 30
 y 2
 end
-arch shop_empty
+arch light2
 x 30
 y 3
 end
-arch window_win2
+arch flagstone
 x 30
 y 3
 end
-arch shop_building
+arch white_wall_win2
+x 30
+y 3
+end
+arch shop_building_pupland
 x 30
 y 4
 end
@@ -4001,29 +4840,49 @@ arch shop_empty
 x 30
 y 20
 end
-arch shop_building
+arch shop_building_pupland
 x 30
 y 21
+end
+arch light2
+x 30
+y 22
 end
 arch shop_empty
 x 30
 y 22
 end
-arch window_win2
+arch white_wall_win2
 x 30
 y 22
 end
-arch grass
+arch flagstone
 x 30
 y 23
 end
-arch grass
+arch flagstone
 x 30
 y 24
 end
-arch cobblestones
+arch flagstone
 x 30
 y 25
+end
+arch white_wall_1_3
+x 30
+y 25
+end
+arch grass
+x 30
+y 26
+end
+arch grass
+x 30
+y 27
+end
+arch cobblestones
+x 30
+y 28
 end
 arch grass
 x 31
@@ -4036,15 +4895,15 @@ arch grass
 x 31
 y 2
 end
-arch shop_empty
+arch flagstone
 x 31
 y 3
 end
-arch wall_2_1_2
+arch white_wall_2_1_2
 x 31
 y 3
 end
-arch shop_building
+arch shop_building_pupland
 x 31
 y 4
 end
@@ -4052,59 +4911,59 @@ arch shop_empty
 x 31
 y 5
 end
-arch shop_building
+arch shop_building_pupland
 x 31
 y 6
 end
-arch shop_building
+arch shop_building_pupland
 x 31
 y 7
 end
-arch shop_building
+arch shop_building_pupland
 x 31
 y 8
 end
-arch shop_building
+arch shop_building_pupland
 x 31
 y 9
 end
-arch shop_building
+arch shop_building_pupland
 x 31
 y 10
 end
-arch shop_building
+arch shop_building_pupland
 x 31
 y 11
 end
-arch shop_building
+arch shop_building_pupland
 x 31
 y 12
 end
-arch shop_building
+arch shop_building_pupland
 x 31
 y 13
 end
-arch shop_building
+arch shop_building_pupland
 x 31
 y 14
 end
-arch shop_building
+arch shop_building_pupland
 x 31
 y 15
 end
-arch shop_building
+arch shop_building_pupland
 x 31
 y 16
 end
-arch shop_building
+arch shop_building_pupland
 x 31
 y 17
 end
-arch shop_building
+arch shop_building_pupland
 x 31
 y 18
 end
-arch shop_building
+arch shop_building_pupland
 x 31
 y 19
 end
@@ -4112,7 +4971,7 @@ arch shop_empty
 x 31
 y 20
 end
-arch shop_building
+arch shop_building_pupland
 x 31
 y 21
 end
@@ -4120,26 +4979,48 @@ arch shop_empty
 x 31
 y 22
 end
-arch wall_2_1_2
+arch white_wall_2_1_2
 x 31
 y 22
 end
-arch grass
+arch flagstone
 x 31
 y 23
 end
-arch tree3
-name shrubbery
-x 31
-y 23
-end
-arch grass
+arch light4
 x 31
 y 24
 end
-arch cobblestones
+arch flagstone
+x 31
+y 24
+end
+arch dungeon_magic
 x 31
 y 25
+end
+arch invis_exit
+slaying /pup_land/lone_town/town
+hp 7
+sp 16
+x 31
+y 25
+end
+arch flagstone
+x 31
+y 25
+end
+arch grass
+x 31
+y 26
+end
+arch grass
+x 31
+y 27
+end
+arch cobblestones
+x 31
+y 28
 end
 arch grass
 x 32
@@ -4152,17 +5033,25 @@ arch grass
 x 32
 y 2
 end
-arch shop_empty
+arch light2
 x 32
 y 3
 end
-arch window_win2
+arch flagstone
 x 32
 y 3
 end
-arch shop_building
+arch white_wall_win2
+x 32
+y 3
+end
+arch shop_building_pupland
 x 32
 y 4
+end
+arch light4
+x 32
+y 5
 end
 arch shop_empty
 x 32
@@ -4224,33 +5113,64 @@ arch shop_empty
 x 32
 y 19
 end
+arch light4
+x 32
+y 20
+end
 arch shop_empty
 x 32
 y 20
 end
-arch shop_building
+arch shop_building_pupland
 x 32
 y 21
+end
+arch light2
+x 32
+y 22
 end
 arch shop_empty
 x 32
 y 22
 end
-arch window_win2
+arch white_wall_win2
 x 32
 y 22
 end
-arch grass
+arch flagstone
 x 32
 y 23
 end
-arch grass
+arch flagstone
 x 32
 y 24
 end
-arch cobblestones
+arch dungeon_magic
 x 32
 y 25
+end
+arch invis_exit
+slaying /pup_land/lone_town/town
+hp 7
+sp 16
+x 32
+y 25
+end
+arch flagstone
+x 32
+y 25
+end
+arch grass
+x 32
+y 26
+end
+arch grass
+x 32
+y 27
+end
+arch cobblestones
+x 32
+y 28
 end
 arch grass
 x 33
@@ -4263,15 +5183,15 @@ arch grass
 x 33
 y 2
 end
-arch shop_empty
+arch flagstone
 x 33
 y 3
 end
-arch wall_2_1_2
+arch white_wall_2_1_2
 x 33
 y 3
 end
-arch shop_building
+arch shop_building_pupland
 x 33
 y 4
 end
@@ -4279,59 +5199,79 @@ arch shop_empty
 x 33
 y 5
 end
-arch shop_building
+arch light4
 x 33
 y 6
 end
-arch shop_building
+arch shop_building_pupland
+x 33
+y 6
+end
+arch shop_building_pupland
 x 33
 y 7
 end
-arch shop_building
+arch shop_building_pupland
 x 33
 y 8
 end
-arch shop_building
+arch light4
 x 33
 y 9
 end
-arch shop_building
+arch shop_building_pupland
+x 33
+y 9
+end
+arch shop_building_pupland
 x 33
 y 10
 end
-arch shop_building
+arch shop_building_pupland
 x 33
 y 11
 end
-arch shop_building
+arch light4
 x 33
 y 12
 end
-arch shop_building
+arch shop_building_pupland
+x 33
+y 12
+end
+arch shop_building_pupland
 x 33
 y 13
 end
-arch shop_building
+arch shop_building_pupland
 x 33
 y 14
 end
-arch shop_building
+arch light4
 x 33
 y 15
 end
-arch shop_building
+arch shop_building_pupland
+x 33
+y 15
+end
+arch shop_building_pupland
 x 33
 y 16
 end
-arch shop_building
+arch shop_building_pupland
 x 33
 y 17
 end
-arch shop_building
+arch light4
 x 33
 y 18
 end
-arch shop_building
+arch shop_building_pupland
+x 33
+y 18
+end
+arch shop_building_pupland
 x 33
 y 19
 end
@@ -4339,7 +5279,7 @@ arch shop_empty
 x 33
 y 20
 end
-arch shop_building
+arch shop_building_pupland
 x 33
 y 21
 end
@@ -4347,26 +5287,44 @@ arch shop_empty
 x 33
 y 22
 end
-arch wall_2_1_2
+arch white_wall_2_1_2
 x 33
 y 22
 end
-arch grass
+arch flagstone
 x 33
 y 23
 end
-arch tree3
-name shrubbery
-x 33
-y 23
-end
-arch grass
+arch flagstone
 x 33
 y 24
 end
-arch cobblestones
+arch dungeon_magic
 x 33
 y 25
+end
+arch invis_exit
+slaying /pup_land/lone_town/town
+hp 7
+sp 16
+x 33
+y 25
+end
+arch flagstone
+x 33
+y 25
+end
+arch grass
+x 33
+y 26
+end
+arch grass
+x 33
+y 27
+end
+arch cobblestones
+x 33
+y 28
 end
 arch grass
 x 34
@@ -4379,17 +5337,25 @@ arch grass
 x 34
 y 2
 end
-arch shop_empty
+arch light2
 x 34
 y 3
 end
-arch window_win2
+arch flagstone
 x 34
 y 3
 end
-arch shop_building
+arch white_wall_win2
+x 34
+y 3
+end
+arch shop_building_pupland
 x 34
 y 4
+end
+arch light4
+x 34
+y 5
 end
 arch shop_empty
 x 34
@@ -4451,33 +5417,68 @@ arch shop_empty
 x 34
 y 19
 end
+arch light4
+x 34
+y 20
+end
 arch shop_empty
 x 34
 y 20
 end
-arch shop_building
+arch shop_building_pupland
 x 34
 y 21
+end
+arch light2
+x 34
+y 22
 end
 arch shop_empty
 x 34
 y 22
 end
-arch window_win2
+arch white_wall_win2
 x 34
 y 22
 end
-arch grass
+arch flagstone
 x 34
 y 23
 end
-arch grass
+arch light4
 x 34
 y 24
 end
-arch cobblestones
+arch flagstone
+x 34
+y 24
+end
+arch dungeon_magic
 x 34
 y 25
+end
+arch invis_exit
+slaying /pup_land/lone_town/town
+hp 7
+sp 16
+x 34
+y 25
+end
+arch flagstone
+x 34
+y 25
+end
+arch grass
+x 34
+y 26
+end
+arch grass
+x 34
+y 27
+end
+arch cobblestones
+x 34
+y 28
 end
 arch grass
 x 35
@@ -4490,83 +5491,83 @@ arch grass
 x 35
 y 2
 end
-arch shop_empty
+arch flagstone
 x 35
 y 3
 end
-arch wall_2_1_2
+arch white_wall_2_1_2
 x 35
 y 3
 end
-arch shop_building
+arch shop_building_pupland
 x 35
 y 4
 end
-arch shop_building
+arch shop_building_pupland
 x 35
 y 5
 end
-arch shop_building
+arch shop_building_pupland
 x 35
 y 6
 end
-arch shop_building
+arch shop_building_pupland
 x 35
 y 7
 end
-arch shop_building
+arch shop_building_pupland
 x 35
 y 8
 end
-arch shop_building
+arch shop_building_pupland
 x 35
 y 9
 end
-arch shop_building
+arch shop_building_pupland
 x 35
 y 10
 end
-arch shop_building
+arch shop_building_pupland
 x 35
 y 11
 end
-arch shop_building
+arch shop_building_pupland
 x 35
 y 12
 end
-arch shop_building
+arch shop_building_pupland
 x 35
 y 13
 end
-arch shop_building
+arch shop_building_pupland
 x 35
 y 14
 end
-arch shop_building
+arch shop_building_pupland
 x 35
 y 15
 end
-arch shop_building
+arch shop_building_pupland
 x 35
 y 16
 end
-arch shop_building
+arch shop_building_pupland
 x 35
 y 17
 end
-arch shop_building
+arch shop_building_pupland
 x 35
 y 18
 end
-arch shop_building
+arch shop_building_pupland
 x 35
 y 19
 end
-arch shop_building
+arch shop_building_pupland
 x 35
 y 20
 end
-arch shop_building
+arch shop_building_pupland
 x 35
 y 21
 end
@@ -4574,26 +5575,42 @@ arch shop_empty
 x 35
 y 22
 end
-arch wall_2_1_2
+arch white_wall_2_1_2
 x 35
 y 22
 end
-arch grass
+arch flagstone
 x 35
 y 23
+end
+arch flagstone
+x 35
+y 24
+end
+arch flagstone
+x 35
+y 25
+end
+arch white_wall_1_4
+x 35
+y 25
+end
+arch grass
+x 35
+y 26
 end
 arch tree3
 name shrubbery
 x 35
-y 23
+y 26
 end
 arch grass
 x 35
-y 24
+y 27
 end
 arch cobblestones
 x 35
-y 25
+y 28
 end
 arch grass
 x 36
@@ -4606,182 +5623,238 @@ arch grass
 x 36
 y 2
 end
-arch shop_empty
+arch flagstone
 x 36
 y 3
 end
-arch wall_2_2_3
+arch white_wall_2_2_3
 x 36
 y 3
 end
-arch shop_empty
+arch flagstone
 x 36
 y 4
 end
-arch wall_2_1_1
+arch white_wall_2_1_1
 x 36
 y 4
 end
-arch shop_empty
+arch light2
 x 36
 y 5
 end
-arch window_win1
+arch flagstone
 x 36
 y 5
 end
-arch shop_empty
+arch white_wall_win1
+x 36
+y 5
+end
+arch flagstone
 x 36
 y 6
 end
-arch wall_2_1_1
+arch white_wall_2_1_1
 x 36
 y 6
 end
-arch shop_empty
+arch light2
 x 36
 y 7
 end
-arch window_win1
+arch flagstone
 x 36
 y 7
 end
-arch shop_empty
+arch white_wall_win1
+x 36
+y 7
+end
+arch flagstone
 x 36
 y 8
 end
-arch wall_2_1_1
+arch white_wall_2_1_1
 x 36
 y 8
 end
-arch shop_empty
+arch light2
 x 36
 y 9
 end
-arch window_win1
+arch flagstone
 x 36
 y 9
 end
-arch shop_empty
+arch white_wall_win1
+x 36
+y 9
+end
+arch flagstone
 x 36
 y 10
 end
-arch wall_2_1_1
+arch white_wall_2_1_1
 x 36
 y 10
 end
-arch shop_empty
+arch light2
 x 36
 y 11
 end
-arch window_win1
+arch flagstone
 x 36
 y 11
 end
-arch shop_empty
+arch white_wall_win1
+x 36
+y 11
+end
+arch flagstone
 x 36
 y 12
 end
-arch wall_2_1_1
+arch white_wall_2_1_1
 x 36
 y 12
 end
-arch shop_empty
+arch light2
 x 36
 y 13
 end
-arch window_win1
+arch flagstone
 x 36
 y 13
 end
-arch shop_empty
+arch white_wall_win1
+x 36
+y 13
+end
+arch flagstone
 x 36
 y 14
 end
-arch wall_2_1_1
+arch white_wall_2_1_1
 x 36
 y 14
 end
-arch shop_empty
+arch light2
 x 36
 y 15
 end
-arch window_win1
+arch flagstone
 x 36
 y 15
 end
-arch shop_empty
+arch white_wall_win1
+x 36
+y 15
+end
+arch flagstone
 x 36
 y 16
 end
-arch wall_2_1_1
+arch white_wall_2_1_1
 x 36
 y 16
 end
-arch shop_empty
+arch light2
 x 36
 y 17
 end
-arch window_win1
+arch flagstone
 x 36
 y 17
 end
-arch shop_empty
+arch white_wall_win1
+x 36
+y 17
+end
+arch flagstone
 x 36
 y 18
 end
-arch wall_2_1_1
+arch white_wall_2_1_1
 x 36
 y 18
 end
-arch shop_empty
+arch light2
 x 36
 y 19
 end
-arch window_win1
+arch flagstone
 x 36
 y 19
 end
-arch shop_empty
+arch white_wall_win1
+x 36
+y 19
+end
+arch flagstone
 x 36
 y 20
 end
-arch wall_2_1_1
+arch white_wall_2_1_1
 x 36
 y 20
 end
-arch shop_empty
+arch flagstone
 x 36
 y 21
 end
-arch wall_2_1_1
+arch white_wall_2_1_1
 x 36
 y 21
 end
-arch shop_empty
+arch flagstone
 x 36
 y 22
 end
-arch wall_2_2_4
+arch white_wall_3_4
 x 36
 y 22
+end
+arch flagstone
+x 36
+y 23
+end
+arch white_wall_2_1_1
+x 36
+y 23
+end
+arch flagstone
+x 36
+y 24
+end
+arch white_wall_2_1_1
+x 36
+y 24
+end
+arch flagstone
+x 36
+y 25
+end
+arch white_wall_2_2_4
+x 36
+y 25
 end
 arch grass
 x 36
-y 23
+y 26
 end
 arch tree3
 name shrubbery
 x 36
-y 23
+y 26
 end
 arch grass
 x 36
-y 24
+y 27
 end
 arch cobblestones
 x 36
-y 25
+y 28
 end
 arch grass
 x 37
@@ -4915,11 +5988,6 @@ arch grass
 x 37
 y 21
 end
-arch tree3
-name shrubbery
-x 37
-y 21
-end
 arch grass
 x 37
 y 22
@@ -4942,9 +6010,36 @@ arch grass
 x 37
 y 24
 end
-arch cobblestones
+arch tree3
+name shrubbery
+x 37
+y 24
+end
+arch grass
 x 37
 y 25
+end
+arch tree3
+name shrubbery
+x 37
+y 25
+end
+arch grass
+x 37
+y 26
+end
+arch tree3
+name shrubbery
+x 37
+y 26
+end
+arch grass
+x 37
+y 27
+end
+arch cobblestones
+x 37
+y 28
 end
 arch grass
 x 38
@@ -5045,9 +6140,21 @@ arch grass
 x 38
 y 24
 end
-arch cobblestones
+arch grass
 x 38
 y 25
+end
+arch grass
+x 38
+y 26
+end
+arch grass
+x 38
+y 27
+end
+arch cobblestones
+x 38
+y 28
 end
 arch grass
 x 39
@@ -5148,7 +6255,19 @@ arch grass
 x 39
 y 24
 end
-arch cobblestones
+arch grass
 x 39
 y 25
+end
+arch grass
+x 39
+y 26
+end
+arch grass
+x 39
+y 27
+end
+arch cobblestones
+x 39
+y 28
 end

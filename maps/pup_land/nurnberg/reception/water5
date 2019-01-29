@@ -1,12 +1,15 @@
 arch map
+name Reception, Water Level 5
+difficulty 15
 region nurnberg
-name water5
+width 19
+height 16
+enter_x 12
+enter_y 12
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Thu Feb 22 22:06:46 1996
+Created:  1996-02-22
+Modified: 2012-03-04 Rick Tanner
 endmsg
-x 19
 end
 arch dungeon_floor
 end
@@ -31,6 +34,9 @@ arch cwall_2_1_1
 y 3
 end
 arch dungeon_floor
+y 4
+end
+arch swall_1_4_half
 y 4
 end
 arch cwall_2_1_1
@@ -111,17 +117,17 @@ end
 arch biglake_center
 x 1
 y 1
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 1
 y 2
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 1
 y 3
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 1
@@ -131,7 +137,7 @@ arch dungeon_magic
 x 1
 y 4
 end
-arch swall_1_4
+arch swall_2_1_2
 x 1
 y 4
 end
@@ -139,41 +145,161 @@ arch dungeon_floor
 x 1
 y 5
 end
+arch dragon
+Pow 10
+maxsp 100
+x 1
+y 5
+arch abil_icestorm
+end
+arch abil_icestorm
+end
+arch abil_icestorm
+end
+end
 arch dungeon_floor
 x 1
 y 6
+end
+arch dragon
+Pow 10
+maxsp 100
+x 1
+y 6
+arch abil_icestorm
+end
+arch abil_icestorm
+end
+arch abil_icestorm
+end
 end
 arch dungeon_floor
 x 1
 y 7
 end
+arch dragon
+Pow 10
+maxsp 100
+x 1
+y 7
+arch abil_icestorm
+end
+arch abil_icestorm
+end
+arch abil_icestorm
+end
+end
 arch dungeon_floor
 x 1
 y 8
+end
+arch dragon
+Pow 10
+maxsp 100
+x 1
+y 8
+arch abil_icestorm
+end
+arch abil_icestorm
+end
+arch abil_icestorm
+end
 end
 arch dungeon_floor
 x 1
 y 9
 end
+arch dragon
+Pow 10
+maxsp 100
+x 1
+y 9
+arch abil_icestorm
+end
+arch abil_icestorm
+end
+arch abil_icestorm
+end
+end
 arch dungeon_floor
 x 1
 y 10
+end
+arch dragon
+Pow 10
+maxsp 100
+x 1
+y 10
+arch abil_icestorm
+end
+arch abil_icestorm
+end
+arch abil_icestorm
+end
 end
 arch dungeon_floor
 x 1
 y 11
 end
+arch dragon
+Pow 10
+maxsp 100
+x 1
+y 11
+arch abil_icestorm
+end
+arch abil_icestorm
+end
+arch abil_icestorm
+end
+end
 arch dungeon_floor
 x 1
 y 12
+end
+arch dragon
+Pow 10
+maxsp 100
+x 1
+y 12
+arch abil_icestorm
+end
+arch abil_icestorm
+end
+arch abil_icestorm
+end
 end
 arch dungeon_floor
 x 1
 y 13
 end
+arch dragon
+Pow 10
+maxsp 100
+x 1
+y 13
+arch abil_icestorm
+end
+arch abil_icestorm
+end
+arch abil_icestorm
+end
+end
 arch dungeon_floor
 x 1
 y 14
+end
+arch dragon
+Pow 10
+maxsp 100
+x 1
+y 14
+arch abil_icestorm
+end
+arch abil_icestorm
+end
+arch abil_icestorm
+end
 end
 arch dungeon_floor
 x 1
@@ -192,12 +318,12 @@ end
 arch biglake_center
 x 2
 y 1
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 2
 y 2
-no_pass 0
+move_block 0
 end
 arch pit_open
 hp 17
@@ -208,7 +334,7 @@ end
 arch biglake_center
 x 2
 y 3
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 2
@@ -283,17 +409,17 @@ end
 arch biglake_center
 x 3
 y 1
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 3
 y 2
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 3
 y 3
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 3
@@ -384,27 +510,27 @@ end
 arch biglake_center
 x 4
 y 1
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 4
 y 2
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 4
 y 3
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 4
 y 4
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 4
 y 5
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 4
@@ -471,27 +597,27 @@ end
 arch biglake_center
 x 5
 y 1
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 5
 y 2
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 5
 y 3
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 5
 y 4
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 5
 y 5
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 5
@@ -570,32 +696,32 @@ end
 arch biglake_center
 x 6
 y 1
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 6
 y 2
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 6
 y 3
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 6
 y 4
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 6
 y 5
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 6
 y 6
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 6
@@ -658,32 +784,32 @@ end
 arch biglake_center
 x 7
 y 1
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 7
 y 2
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 7
 y 3
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 7
 y 4
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 7
 y 5
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 7
 y 6
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 7
@@ -742,17 +868,17 @@ end
 arch biglake_center
 x 8
 y 1
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 8
 y 2
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 8
 y 3
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 8
@@ -855,17 +981,17 @@ end
 arch biglake_center
 x 9
 y 1
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 9
 y 2
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 9
 y 3
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 9
@@ -944,17 +1070,17 @@ end
 arch biglake_center
 x 10
 y 1
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 10
 y 2
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 10
 y 3
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 10
@@ -974,8 +1100,7 @@ y 5
 end
 arch sign
 msg
-Amazing Crown.
-Don't touch it !
+Amazing Crown.  Don't touch it!
 endmsg
 x 10
 y 5
@@ -1053,12 +1178,12 @@ end
 arch biglake_center
 x 11
 y 1
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 11
 y 2
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 11
@@ -1115,15 +1240,14 @@ end
 arch crown
 name Feather Crown
 msg
-This crown has a lot of feathers.
-Feathers move cooperatively like
-bird wings.
+This crown has a lot of feathers.  Feathers move cooperatively like bird wings.
 endmsg
 x 11
 y 7
 material 256
 weight 1
-flying 1
+map_layer item
+move_type fly_low
 end
 arch dungeon_floor
 x 11
@@ -1194,7 +1318,7 @@ end
 arch biglake_center
 x 12
 y 1
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 12
@@ -1305,6 +1429,9 @@ end
 arch cwall_2_1_2
 x 13
 end
+arch swall_1_1_half
+x 13
+end
 arch dungeon_floor
 x 13
 y 1
@@ -1313,7 +1440,7 @@ arch dungeon_magic
 x 13
 y 1
 end
-arch swall_1_1
+arch swall_2_1_1
 x 13
 y 1
 end
@@ -1831,124 +1958,4 @@ end
 arch blocked
 x 18
 y 15
-end
-arch dragon
-Pow 10
-maxsp 100
-x 1
-y 5
-arch abil_icestorm
-end
-arch abil_icestorm
-end
-arch abil_icestorm
-end
-end
-arch dragon
-Pow 10
-maxsp 100
-x 1
-y 6
-arch abil_icestorm
-end
-arch abil_icestorm
-end
-arch abil_icestorm
-end
-end
-arch dragon
-Pow 10
-maxsp 100
-x 1
-y 7
-arch abil_icestorm
-end
-arch abil_icestorm
-end
-arch abil_icestorm
-end
-end
-arch dragon
-Pow 10
-maxsp 100
-x 1
-y 8
-arch abil_icestorm
-end
-arch abil_icestorm
-end
-arch abil_icestorm
-end
-end
-arch dragon
-Pow 10
-maxsp 100
-x 1
-y 9
-arch abil_icestorm
-end
-arch abil_icestorm
-end
-arch abil_icestorm
-end
-end
-arch dragon
-Pow 10
-maxsp 100
-x 1
-y 10
-arch abil_icestorm
-end
-arch abil_icestorm
-end
-arch abil_icestorm
-end
-end
-arch dragon
-Pow 10
-maxsp 100
-x 1
-y 11
-arch abil_icestorm
-end
-arch abil_icestorm
-end
-arch abil_icestorm
-end
-end
-arch dragon
-Pow 10
-maxsp 100
-x 1
-y 12
-arch abil_icestorm
-end
-arch abil_icestorm
-end
-arch abil_icestorm
-end
-end
-arch dragon
-Pow 10
-maxsp 100
-x 1
-y 13
-arch abil_icestorm
-end
-arch abil_icestorm
-end
-arch abil_icestorm
-end
-end
-arch dragon
-Pow 10
-maxsp 100
-x 1
-y 14
-arch abil_icestorm
-end
-arch abil_icestorm
-end
-arch abil_icestorm
-end
 end

@@ -1,10 +1,14 @@
 arch map
+name Cave of Ordeal, Level 2
+difficulty 18
 region lonetown
-name B2
+width 16
+height 16
+enter_x 14
+enter_y 8
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Wed Dec 18 18:54:51 1996
+Created:  1996-12-18
+Modified: 2008-10-27 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -735,7 +739,7 @@ end
 arch rough_wall_2_1_2
 x 7
 y 3
-no_pass 0
+move_block 0
 end
 arch pstone_1
 x 7
@@ -772,11 +776,13 @@ x 7
 y 7
 end
 arch rod_heavy
-sp 15
 x 7
 y 7
 level 23
+randomitems none
 identified 1
+arch spell_create_earth_wall
+end
 end
 arch dungeon_floor
 x 7

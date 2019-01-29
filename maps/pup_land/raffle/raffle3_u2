@@ -1,30 +1,25 @@
 arch map
+name Raffle 3, Level 2
+swap_time 5
+reset_timeout 3600
+difficulty 40
 region pupland
-name raffle_u1
+darkness 3
+width 37
+height 41
+enter_x 20
+enter_y 20
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Mon Feb 24 21:58:23 1997
-endmsg
-x 37
-y 41
-level 7
-value 5
-weight 3600
-invisible 3
-end
-arch blocked
-msg
+Created:  1997-02-24
+Modified: 2011-10-31 Rick Tanner
 endmsg
 end
-arch blocked
-msg
-endmsg
+arch cave_15
+end
+arch cave_15
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 2
 end
 arch dungeon_magic
@@ -33,29 +28,19 @@ end
 arch large_stones
 y 3
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 3
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 4
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 5
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 6
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 7
 end
 arch small_stones
@@ -70,9 +55,7 @@ end
 arch cave23
 y 9
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 10
 end
 arch small_stones
@@ -123,19 +106,16 @@ end
 arch cave23
 y 18
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 19
 end
-arch blocked
-msg
-endmsg
+arch cave_15
+y 20
+end
+arch cave_15
 y 21
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 22
 end
 arch small_stones
@@ -168,39 +148,46 @@ end
 arch cave17
 y 27
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 28
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 29
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 30
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 31
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 32
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 33
 end
-arch blocked
-msg
-endmsg
+arch cave_15
+y 34
+end
+arch cave_15
+y 35
+end
+arch cave_15
+y 36
+end
+arch cave_15
+y 37
+end
+arch cave_15
+y 38
+end
+arch cave_15
+y 39
+end
+arch cave_15
+y 40
+end
+arch cave_15
 x 1
 end
 arch spikes_open
@@ -221,9 +208,7 @@ x 1
 y 2
 connected 202
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 3
 end
@@ -243,9 +228,7 @@ arch cave17
 x 1
 y 5
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 6
 end
@@ -353,9 +336,7 @@ arch cave3
 x 1
 y 19
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 20
 end
@@ -455,50 +436,46 @@ arch cave23
 x 1
 y 32
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 33
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 34
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 35
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 36
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 37
 end
-arch blocked
-msg
-endmsg
+arch cave_15
+x 1
+y 38
+end
+arch cave_15
+x 1
+y 39
+end
+arch cave_15
+x 1
+y 40
+end
+arch cave_15
 x 2
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 2
 end
@@ -573,6 +550,27 @@ end
 arch small_stones
 x 2
 y 11
+end
+arch big_dragon
+name Mega Dragon
+Con 100
+Wis 1
+Pow 15
+hp 20000
+maxhp 10000
+sp 200
+maxsp 200
+exp 1000000
+dam 500
+wc -99
+ac -66
+x 2
+y 11
+level 50
+attacktype 1
+resist_slow -100
+resist_paralyze -100
+resist_fear -100
 end
 arch dungeon_magic
 x 2
@@ -774,31 +772,23 @@ arch cave2
 x 2
 y 36
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 37
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 38
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 39
 end
-arch blocked
+arch cave_15
 x 2
 y 40
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 end
 arch spikes_open
@@ -1089,15 +1079,11 @@ arch cave2
 x 3
 y 36
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 37
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 38
 end
@@ -1112,15 +1098,11 @@ arch boulder
 x 3
 y 39
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 40
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 end
 arch small_stones
@@ -1322,9 +1304,7 @@ arch cave23
 x 4
 y 23
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 24
 end
@@ -1432,9 +1412,7 @@ arch cave23
 x 4
 y 37
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 38
 end
@@ -1443,9 +1421,7 @@ x 4
 y 39
 connected 302
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 40
 end
@@ -1614,7 +1590,7 @@ end
 arch cave13
 x 5
 y 20
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 5
@@ -2030,6 +2006,10 @@ arch cave11
 x 6
 y 31
 end
+arch small_stones
+x 6
+y 32
+end
 arch cave10
 x 6
 y 32
@@ -2094,9 +2074,7 @@ arch cave20
 x 6
 y 40
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 7
 end
 arch small_stones
@@ -2263,13 +2241,11 @@ arch small_stones
 x 7
 y 21
 end
-arch cave22
+arch cave_15
 x 7
 y 21
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 7
 y 22
 end
@@ -2409,15 +2385,11 @@ arch cave2
 x 7
 y 39
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 7
 y 40
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 8
 end
 arch small_stones
@@ -2504,15 +2476,11 @@ arch large_stones
 x 8
 y 10
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 8
 y 10
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 8
 y 11
 end
@@ -2716,6 +2684,19 @@ arch small_stones
 x 8
 y 35
 end
+arch big_wiz
+name Arch Wizard
+Pow 24
+hp 8000
+maxhp 8000
+maxsp 300
+exp 800000
+ac -30
+x 8
+y 35
+speed_left -32.099998
+level 50
+end
 arch dungeon_magic
 x 8
 y 36
@@ -2756,9 +2737,7 @@ arch cave23
 x 8
 y 40
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 9
 end
 arch small_stones
@@ -2950,6 +2929,10 @@ x 9
 y 24
 end
 arch small_stones
+x 9
+y 24
+end
+arch big_wiz
 x 9
 y 24
 end
@@ -3513,9 +3496,7 @@ arch cave2
 x 10
 y 39
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 10
 y 40
 end
@@ -3562,6 +3543,10 @@ x 11
 y 5
 end
 arch small_stones
+x 11
+y 5
+end
+arch big_dragon
 x 11
 y 5
 end
@@ -3644,6 +3629,27 @@ end
 arch small_stones
 x 11
 y 15
+end
+arch big_dragon
+name Mega Dragon
+Con 100
+Wis 1
+Pow 15
+hp 20000
+maxhp 10000
+sp 200
+maxsp 200
+exp 1000000
+dam 500
+wc -99
+ac -66
+x 11
+y 15
+level 50
+attacktype 1
+resist_slow -100
+resist_paralyze -100
+resist_fear -100
 end
 arch dungeon_magic
 x 11
@@ -3759,7 +3765,7 @@ y 29
 end
 arch magic_ear
 msg
-@match Pilkul|PilKul|pilkul
+@match pilkul
 Click.
 endmsg
 x 11
@@ -4427,9 +4433,7 @@ arch cave20
 x 13
 y 31
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 13
 y 32
 end
@@ -4728,9 +4732,7 @@ x 14
 y 31
 connected 2000
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 14
 y 32
 end
@@ -4778,9 +4780,7 @@ arch cave22
 x 14
 y 39
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 14
 y 40
 end
@@ -4846,9 +4846,7 @@ arch cave2
 x 15
 y 7
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 15
 y 8
 end
@@ -4884,15 +4882,11 @@ arch cave22
 x 15
 y 12
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 15
 y 13
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 15
 y 14
 end
@@ -5011,7 +5005,7 @@ end
 arch cave6
 x 15
 y 28
-no_pass 0
+move_block 0
 end
 arch small_stones
 x 15
@@ -5021,9 +5015,7 @@ arch cave2
 x 15
 y 29
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 15
 y 30
 end
@@ -5038,9 +5030,7 @@ arch boulder
 x 15
 y 31
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 15
 y 32
 end
@@ -5076,27 +5066,19 @@ arch cave22
 x 15
 y 37
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 15
 y 38
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 15
 y 39
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 15
 y 40
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 16
 end
 arch small_stones
@@ -5155,15 +5137,11 @@ arch cave2
 x 16
 y 7
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 16
 y 8
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 16
 y 9
 end
@@ -5175,27 +5153,19 @@ arch cave22
 x 16
 y 11
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 16
 y 12
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 16
 y 13
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 16
 y 14
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 16
 y 15
 end
@@ -5322,7 +5292,7 @@ end
 arch cave8
 x 16
 y 28
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 16
@@ -5398,14 +5368,10 @@ arch mine9
 x 16
 y 40
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 17
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 17
 y 1
 end
@@ -5721,9 +5687,7 @@ arch mine9
 x 17
 y 40
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 18
 end
 arch small_stones
@@ -5774,9 +5738,7 @@ arch cave22
 x 18
 y 6
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 18
 y 7
 end
@@ -5942,9 +5904,7 @@ arch cave2
 x 18
 y 25
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 18
 y 26
 end
@@ -6081,7 +6041,7 @@ end
 arch cave15
 x 19
 y 2
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 19
@@ -6111,9 +6071,7 @@ arch cave2
 x 19
 y 5
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 19
 y 6
 end
@@ -6282,9 +6240,7 @@ arch cave2
 x 19
 y 25
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 19
 y 26
 end
@@ -6472,9 +6428,7 @@ arch cave2
 x 20
 y 5
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 20
 y 6
 end
@@ -6493,6 +6447,8 @@ end
 arch firewall_5
 x 20
 y 8
+arch spell_small_fireball
+end
 end
 arch dungeon_magic
 x 20
@@ -6656,9 +6612,7 @@ arch cave2
 x 20
 y 25
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 20
 y 26
 end
@@ -7069,9 +7023,7 @@ arch small_stones
 x 21
 y 33
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 21
 y 33
 end
@@ -7591,9 +7543,7 @@ arch blocked
 x 22
 y 40
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 23
 end
 arch small_stones
@@ -7968,9 +7918,7 @@ arch blocked
 x 23
 y 40
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 end
 arch small_stones
@@ -8029,33 +7977,23 @@ arch cave2
 x 24
 y 7
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 8
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 9
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 10
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 11
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 12
 end
@@ -8326,9 +8264,7 @@ arch blocked
 x 24
 y 40
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 25
 end
 arch small_stones
@@ -8387,21 +8323,15 @@ arch cave22
 x 25
 y 7
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 25
 y 8
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 25
 y 9
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 25
 y 10
 end
@@ -8434,6 +8364,10 @@ x 25
 y 14
 end
 arch small_stones
+x 25
+y 14
+end
+arch dread
 x 25
 y 14
 end
@@ -8517,9 +8451,7 @@ arch cave20
 x 25
 y 23
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 25
 y 24
 end
@@ -8776,9 +8708,7 @@ arch cave17
 x 26
 y 7
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 26
 y 8
 end
@@ -8886,27 +8816,19 @@ arch cave2
 x 26
 y 21
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 26
 y 22
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 26
 y 23
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 26
 y 24
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 26
 y 25
 end
@@ -9642,6 +9564,10 @@ speed 0.500000
 speed_left -37.099998
 connected 600
 end
+arch small_stones
+x 28
+y 23
+end
 arch block_door_closed
 face blocked.111
 x 28
@@ -9650,6 +9576,10 @@ speed 0.500000
 speed_left -37.099998
 connected 600
 end
+arch small_stones
+x 28
+y 24
+end
 arch block_door_closed
 face blocked.111
 x 28
@@ -9657,6 +9587,10 @@ y 24
 speed 0.500000
 speed_left -37.099998
 connected 600
+end
+arch small_stones
+x 28
+y 25
 end
 arch block_door_closed
 face blocked.111
@@ -9961,6 +9895,10 @@ end
 arch cave23
 x 29
 y 14
+end
+arch small_stones
+x 29
+y 15
 end
 arch cave25
 x 29
@@ -10436,21 +10374,15 @@ arch cave17
 x 30
 y 22
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 30
 y 23
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 30
 y 24
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 30
 y 25
 end
@@ -10462,9 +10394,7 @@ arch large_stones
 x 30
 y 26
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 30
 y 26
 end
@@ -10571,6 +10501,11 @@ arch mover_7
 x 30
 y 35
 attacktype 1
+end
+arch big_demon
+x 30
+y 35
+speed_left -7.900000
 end
 arch dungeon_magic
 x 30
@@ -10842,9 +10777,7 @@ arch cave17
 x 31
 y 23
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 31
 y 24
 end
@@ -10861,9 +10794,7 @@ arch large_stones
 x 31
 y 26
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 31
 y 26
 end
@@ -10885,7 +10816,7 @@ y 28
 end
 arch magic_ear
 msg
-@match Go|go
+@match go
 Click.
 endmsg
 x 31
@@ -11129,12 +11060,6 @@ arch small_stones
 x 32
 y 12
 end
-arch blocked
-msg
-endmsg
-x 32
-y 12
-end
 arch cave25
 x 32
 y 13
@@ -11180,6 +11105,10 @@ x 32
 y 18
 end
 arch small_stones
+x 32
+y 18
+end
+arch dread
 x 32
 y 18
 end
@@ -11250,9 +11179,7 @@ arch large_stones
 x 32
 y 26
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 32
 y 26
 end
@@ -11599,15 +11526,11 @@ arch cave1
 x 33
 y 24
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 33
 y 25
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 33
 y 26
 end
@@ -11785,6 +11708,19 @@ arch pstone_1
 x 34
 y 7
 end
+arch dread
+name Dreadful Dread
+hp 7000
+maxhp 5000
+exp 400000
+dam 200
+wc -50
+ac -40
+x 34
+y 7
+level 35
+attacktype 3
+end
 arch pstone_1
 x 34
 y 8
@@ -11924,9 +11860,7 @@ arch cave2
 x 34
 y 23
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 34
 y 24
 end
@@ -11935,9 +11869,7 @@ x 34
 y 25
 connected 402
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 34
 y 26
 end
@@ -12236,9 +12168,7 @@ arch cave22
 x 35
 y 23
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 35
 y 24
 end
@@ -12253,9 +12183,7 @@ arch boulder
 x 35
 y 25
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 35
 y 26
 end
@@ -12520,9 +12448,7 @@ arch cave22
 x 36
 y 19
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 36
 y 20
 end
@@ -12542,25 +12468,19 @@ arch cave20
 x 36
 y 22
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 36
 y 23
 end
-arch blocked
+arch cave_15
 x 36
 y 24
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 36
 y 25
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 36
 y 26
 end
@@ -12675,93 +12595,4 @@ end
 arch blocked
 x 36
 y 40
-end
-arch big_dragon
-name Mega Dragon
-Con 100
-Wis 1
-Pow 15
-hp 20000
-maxhp 10000
-sp 200
-maxsp 200
-exp 1000000
-dam 500
-wc -99
-ac -66
-x 2
-y 11
-level 50
-attacktype 1
-resist_slow -100
-resist_paralyze -100
-resist_fear -100
-end
-arch big_wiz
-name Arch Wizard
-Pow 24
-hp 8000
-maxhp 8000
-maxsp 300
-exp 800000
-ac -30
-x 8
-y 35
-speed_left -32.099998
-level 50
-end
-arch big_wiz
-x 9
-y 24
-end
-arch big_dragon
-x 11
-y 5
-end
-arch big_dragon
-name Mega Dragon
-Con 100
-Wis 1
-Pow 15
-hp 20000
-maxhp 10000
-sp 200
-maxsp 200
-exp 1000000
-dam 500
-wc -99
-ac -66
-x 11
-y 15
-level 50
-attacktype 1
-resist_slow -100
-resist_paralyze -100
-resist_fear -100
-end
-arch dread
-x 25
-y 14
-end
-arch big_demon
-x 30
-y 35
-speed_left -7.900000
-end
-arch dread
-x 32
-y 18
-end
-arch dread
-name Dreadful Dread
-hp 7000
-maxhp 5000
-exp 400000
-dam 200
-wc -50
-ac -40
-x 34
-y 7
-level 35
-attacktype 3
 end

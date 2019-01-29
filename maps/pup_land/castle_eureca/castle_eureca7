@@ -1,12 +1,15 @@
 arch map
+name Castle of Eureca, 7th Level
+difficulty 25
 region pupland
-name castle_eureca7
+width 16
+height 18
+enter_x 1
+enter_y 5
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue Mar 12 17:33:40 1996
+Created:  1996-03-12
+Modified: 2011-12-02 Rick Tanner
 endmsg
-y 18
 end
 arch blocked
 end
@@ -161,6 +164,10 @@ arch flagstone
 x 1
 y 7
 end
+arch big_elec
+x 1
+y 7
+end
 arch flagstone
 x 1
 y 8
@@ -264,8 +271,7 @@ end
 arch sign
 msg
 Pet Room2:
-You've better building earthwalls
-before opening the door.
+You'd better build earthwalls before opening the door.
 endmsg
 x 2
 y 4
@@ -395,6 +401,10 @@ x 3
 y 6
 end
 arch flagstone
+x 3
+y 7
+end
+arch big_elec
 x 3
 y 7
 end
@@ -591,6 +601,10 @@ arch flagstone
 x 5
 y 4
 end
+arch big_elec
+x 5
+y 4
+end
 arch flagstone
 x 5
 y 5
@@ -604,6 +618,10 @@ x 5
 y 7
 end
 arch flagstone
+x 5
+y 8
+end
+arch big_elec
 x 5
 y 8
 end
@@ -628,6 +646,10 @@ x 5
 y 12
 end
 arch flagstone
+x 5
+y 13
+end
+arch titan
 x 5
 y 13
 end
@@ -782,6 +804,10 @@ x 7
 y 6
 end
 arch flagstone
+x 7
+y 7
+end
+arch big_elec
 x 7
 y 7
 end
@@ -925,6 +951,10 @@ x 8
 y 12
 end
 arch flagstone
+x 8
+y 13
+end
+arch titan
 x 8
 y 13
 end
@@ -1235,6 +1265,10 @@ arch flagstone
 x 11
 y 6
 end
+arch titan
+x 11
+y 6
+end
 arch flagstone
 x 11
 y 7
@@ -1247,6 +1281,10 @@ arch flagstone
 x 11
 y 9
 end
+arch titan
+x 11
+y 9
+end
 arch flagstone
 x 11
 y 10
@@ -1256,6 +1294,10 @@ x 11
 y 11
 end
 arch flagstone
+x 11
+y 12
+end
+arch titan
 x 11
 y 12
 end
@@ -1603,7 +1645,6 @@ Be careful!
 endmsg
 x 14
 y 11
-nrof 1
 end
 arch flagstone
 x 14
@@ -1780,44 +1821,4 @@ end
 arch wall_2_2_4
 x 15
 y 17
-end
-arch big_elec
-x 1
-y 7
-end
-arch big_elec
-x 3
-y 7
-end
-arch big_elec
-x 5
-y 4
-end
-arch big_elec
-x 5
-y 8
-end
-arch titan
-x 5
-y 13
-end
-arch big_elec
-x 7
-y 7
-end
-arch titan
-x 8
-y 13
-end
-arch titan
-x 11
-y 6
-end
-arch titan
-x 11
-y 9
-end
-arch titan
-x 11
-y 12
 end

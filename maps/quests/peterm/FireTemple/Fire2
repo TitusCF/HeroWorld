@@ -1,13 +1,16 @@
 arch map
-name Fire2
+name Fire Temple, Level 2
+difficulty 25
+region wilderness
+darkness 5
+width 32
+height 32
+enter_x 1
+enter_y 30
 msg
-Creator: PeterM
-Email: peterm@soda.csua.berkeley.edu
-Date: Sat Jun  7 09:38:36 1997
+Created:  1997-06-07 PeterM (peterm@soda.csua.berkeley.edu)
+Modified: 2012-03-12 Rick Tanner
 endmsg
-x 32
-y 32
-invisible 6
 end
 arch pstone_1
 end
@@ -442,10 +445,6 @@ end
 arch pstone_1
 x 2
 y 6
-end
-arch pstone_1
-x 2
-y 7
 end
 arch pstone_1
 x 2
@@ -622,6 +621,10 @@ arch pstone_1
 x 3
 y 1
 end
+arch big_demon
+x 3
+y 1
+end
 arch pstone_1
 x 3
 y 2
@@ -641,10 +644,6 @@ end
 arch pstone_1
 x 3
 y 6
-end
-arch pstone_1
-x 3
-y 7
 end
 arch pstone_1
 x 3
@@ -719,6 +718,23 @@ end
 arch pstone_1
 x 3
 y 15
+end
+arch dragonman
+name lesser dragonman
+Con 5
+Wis 3
+Pow 4
+hp 1000
+maxhp 1000
+exp 8000
+wc 0
+ac 0
+x 3
+y 15
+speed -0.200000
+level 6
+resist_magic 30
+randomitems wyvern
 end
 arch pstone_1
 x 3
@@ -848,10 +864,6 @@ arch pstone_1
 x 4
 y 6
 end
-arch pstone_1
-x 4
-y 6
-end
 arch dun8
 x 4
 y 6
@@ -860,17 +872,9 @@ arch pstone_1
 x 4
 y 7
 end
-arch pstone_1
-x 4
-y 7
-end
 arch dun3
 x 4
 y 7
-end
-arch pstone_1
-x 4
-y 8
 end
 arch pstone_1
 x 4
@@ -968,11 +972,23 @@ arch pstone_1
 x 4
 y 21
 end
+arch dragon
+x 4
+y 21
+end
 arch pstone_1
 x 4
 y 22
 end
+arch dragon
+x 4
+y 22
+end
 arch pstone_1
+x 4
+y 23
+end
+arch dragon
 x 4
 y 23
 end
@@ -1058,10 +1074,6 @@ arch pstone_1
 x 5
 y 6
 end
-arch pstone_1
-x 5
-y 6
-end
 arch door_look_1
 x 5
 y 6
@@ -1070,17 +1082,9 @@ arch pstone_1
 x 5
 y 7
 end
-arch pstone_1
-x 5
-y 7
-end
 arch random_weapon
 x 5
 y 7
-end
-arch pstone_1
-x 5
-y 8
 end
 arch pstone_1
 x 5
@@ -1272,6 +1276,10 @@ arch pstone_1
 x 6
 y 2
 end
+arch big_demon
+x 6
+y 2
+end
 arch pstone_1
 x 6
 y 3
@@ -1288,10 +1296,6 @@ arch pstone_1
 x 6
 y 6
 end
-arch pstone_1
-x 6
-y 6
-end
 arch dun6
 x 6
 y 6
@@ -1300,17 +1304,9 @@ arch pstone_1
 x 6
 y 7
 end
-arch pstone_1
-x 6
-y 7
-end
 arch random_weapon
 x 6
 y 7
-end
-arch pstone_1
-x 6
-y 8
 end
 arch pstone_1
 x 6
@@ -1370,11 +1366,7 @@ y 14
 end
 arch magic_mouth
 msg
-In order to advance, you must
-demonstrate your alchemical knowledge
-relevant to the fire god.
-Begin by naming the liquid required
-to make dust of ignition.  
+In order to advance, you must demonstrate your alchemical knowledge relevant to the fire god.  Begin by naming the liquid required to make dust of ignition.
 endmsg
 x 6
 y 15
@@ -1385,11 +1377,7 @@ y 15
 end
 arch magic_mouth
 msg
-In order to advance, you must
-demonstrate your alchemical knowledge
-relevant to the fire god.
-Begin by naming the liquid required
-to make dust of ignition.  
+In order to advance, you must demonstrate your alchemical knowledge relevant to the fire god.  Begin by naming the liquid required to make dust of ignition.
 endmsg
 x 6
 y 16
@@ -1400,11 +1388,7 @@ y 16
 end
 arch magic_mouth
 msg
-In order to advance, you must
-demonstrate your alchemical knowledge
-relevant to the fire god.
-Begin by naming the liquid required
-to make dust of ignition.  
+In order to advance, you must demonstrate your alchemical knowledge relevant to the fire god.  Begin by naming the liquid required to make dust of ignition.
 endmsg
 x 6
 y 17
@@ -1531,10 +1515,6 @@ arch pstone_1
 x 7
 y 6
 end
-arch pstone_1
-x 7
-y 6
-end
 arch dun2
 x 7
 y 6
@@ -1543,17 +1523,9 @@ arch pstone_1
 x 7
 y 7
 end
-arch pstone_1
-x 7
-y 7
-end
 arch random_weapon
 x 7
 y 7
-end
-arch pstone_1
-x 7
-y 8
 end
 arch pstone_1
 x 7
@@ -1621,10 +1593,6 @@ y 15
 speed 0.500000
 connected 6
 end
-arch pstone_1
-x 7
-y 16
-end
 arch magic_ear
 msg
 @match water of diamond
@@ -1633,6 +1601,10 @@ endmsg
 x 7
 y 16
 connected 6
+end
+arch pstone_1
+x 7
+y 16
 end
 arch block_door_closed
 x 7
@@ -1786,10 +1758,6 @@ arch pstone_1
 x 8
 y 6
 end
-arch pstone_1
-x 8
-y 6
-end
 arch dun2
 x 8
 y 6
@@ -1798,17 +1766,9 @@ arch pstone_1
 x 8
 y 7
 end
-arch pstone_1
-x 8
-y 7
-end
 arch random_weapon
 x 8
 y 7
-end
-arch pstone_1
-x 8
-y 8
 end
 arch pstone_1
 x 8
@@ -2014,10 +1974,6 @@ arch pstone_1
 x 9
 y 6
 end
-arch pstone_1
-x 9
-y 6
-end
 arch dun9
 x 9
 y 6
@@ -2026,17 +1982,9 @@ arch pstone_1
 x 9
 y 7
 end
-arch pstone_1
-x 9
-y 7
-end
 arch dun11
 x 9
 y 7
-end
-arch pstone_1
-x 9
-y 8
 end
 arch pstone_1
 x 9
@@ -2098,13 +2046,22 @@ arch pstone_1
 x 9
 y 15
 end
-arch pstone_1
+arch dragonman
+name lesser dragonman
+Con 5
+Wis 3
+Pow 4
+hp 1000
+maxhp 1000
+exp 8000
+wc 0
+ac 0
 x 9
 y 15
-end
-arch pstone_1
-x 9
-y 16
+speed -0.200000
+level 6
+resist_magic 30
+randomitems wyvern
 end
 arch pstone_1
 x 9
@@ -2220,6 +2177,10 @@ arch pstone_1
 x 10
 y 2
 end
+arch big_demon
+x 10
+y 2
+end
 arch pstone_1
 x 10
 y 3
@@ -2231,10 +2192,6 @@ end
 arch pstone_1
 x 10
 y 5
-end
-arch pstone_1
-x 10
-y 6
 end
 arch pstone_1
 x 10
@@ -2253,17 +2210,9 @@ arch pstone_1
 x 10
 y 7
 end
-arch pstone_1
-x 10
-y 7
-end
 arch dun2
 x 10
 y 7
-end
-arch pstone_1
-x 10
-y 8
 end
 arch pstone_1
 x 10
@@ -2475,10 +2424,6 @@ arch pstone_1
 x 11
 y 6
 end
-arch pstone_1
-x 11
-y 6
-end
 arch dun10
 x 11
 y 6
@@ -2487,17 +2432,9 @@ arch pstone_1
 x 11
 y 7
 end
-arch pstone_1
-x 11
-y 7
-end
 arch dun14
 x 11
 y 7
-end
-arch pstone_1
-x 11
-y 8
 end
 arch pstone_1
 x 11
@@ -2710,10 +2647,6 @@ arch pstone_1
 x 12
 y 6
 end
-arch pstone_1
-x 12
-y 6
-end
 arch dun2
 x 12
 y 6
@@ -2722,17 +2655,9 @@ arch pstone_1
 x 12
 y 7
 end
-arch pstone_1
-x 12
-y 7
-end
 arch random_treasure
 x 12
 y 7
-end
-arch pstone_1
-x 12
-y 8
 end
 arch pstone_1
 x 12
@@ -2955,10 +2880,6 @@ arch pstone_1
 x 13
 y 6
 end
-arch pstone_1
-x 13
-y 6
-end
 arch dun2
 x 13
 y 6
@@ -2967,17 +2888,9 @@ arch pstone_1
 x 13
 y 7
 end
-arch pstone_1
-x 13
-y 7
-end
 arch random_treasure
 x 13
 y 7
-end
-arch pstone_1
-x 13
-y 8
 end
 arch pstone_1
 x 13
@@ -3055,9 +2968,7 @@ y 14
 end
 arch magic_mouth
 msg
-Now name the first mineral required
-for the formula for the dust of
-conflagration (alphabetically first)
+Now name the first mineral required for the formula for the dust of conflagration (alphabetically first).
 endmsg
 x 13
 y 15
@@ -3068,9 +2979,7 @@ y 15
 end
 arch magic_mouth
 msg
-Now name the first mineral required
-for the formula for the dust of
-conflagration (alphabetically first)
+Now name the first mineral required for the formula for the dust of conflagration (alphabetically first).
 endmsg
 x 13
 y 16
@@ -3081,9 +2990,7 @@ y 16
 end
 arch magic_mouth
 msg
-Now name the first mineral required
-for the formula for the dust of
-conflagration (alphabetically first)
+Now name the first mineral required for the formula for the dust of conflagration (alphabetically first).
 endmsg
 x 13
 y 17
@@ -3213,10 +3120,6 @@ arch pstone_1
 x 14
 y 6
 end
-arch pstone_1
-x 14
-y 6
-end
 arch dun12
 x 14
 y 6
@@ -3225,17 +3128,9 @@ arch pstone_1
 x 14
 y 7
 end
-arch pstone_1
-x 14
-y 7
-end
 arch random_treasure
 x 14
 y 7
-end
-arch pstone_1
-x 14
-y 8
 end
 arch pstone_1
 x 14
@@ -3434,6 +3329,10 @@ arch pstone_1
 x 15
 y 2
 end
+arch big_demon
+x 15
+y 2
+end
 arch pstone_1
 x 15
 y 3
@@ -3450,10 +3349,6 @@ arch pstone_1
 x 15
 y 6
 end
-arch pstone_1
-x 15
-y 6
-end
 arch door_2
 x 15
 y 6
@@ -3462,17 +3357,9 @@ arch pstone_1
 x 15
 y 7
 end
-arch pstone_1
-x 15
-y 7
-end
 arch random_treasure
 x 15
 y 7
-end
-arch pstone_1
-x 15
-y 8
 end
 arch pstone_1
 x 15
@@ -3684,10 +3571,6 @@ arch pstone_1
 x 16
 y 6
 end
-arch pstone_1
-x 16
-y 6
-end
 arch dun6
 x 16
 y 6
@@ -3696,17 +3579,9 @@ arch pstone_1
 x 16
 y 7
 end
-arch pstone_1
-x 16
-y 7
-end
 arch random_treasure
 x 16
 y 7
-end
-arch pstone_1
-x 16
-y 8
 end
 arch pstone_1
 x 16
@@ -3894,10 +3769,6 @@ arch pstone_1
 x 17
 y 6
 end
-arch pstone_1
-x 17
-y 6
-end
 arch dun2
 x 17
 y 6
@@ -3906,17 +3777,9 @@ arch pstone_1
 x 17
 y 7
 end
-arch pstone_1
-x 17
-y 7
-end
 arch random_treasure
 x 17
 y 7
-end
-arch pstone_1
-x 17
-y 8
 end
 arch pstone_1
 x 17
@@ -4134,10 +3997,6 @@ arch pstone_1
 x 18
 y 6
 end
-arch pstone_1
-x 18
-y 6
-end
 arch dun2
 x 18
 y 6
@@ -4146,17 +4005,9 @@ arch pstone_1
 x 18
 y 7
 end
-arch pstone_1
-x 18
-y 7
-end
 arch random_treasure
 x 18
 y 7
-end
-arch pstone_1
-x 18
-y 8
 end
 arch pstone_1
 x 18
@@ -4218,13 +4069,22 @@ arch pstone_1
 x 18
 y 15
 end
-arch pstone_1
+arch dragonman
+name lesser dragonman
+Con 5
+Wis 3
+Pow 4
+hp 1000
+maxhp 1000
+exp 8000
+wc 0
+ac 0
 x 18
 y 15
-end
-arch pstone_1
-x 18
-y 16
+speed -0.200000
+level 6
+resist_magic 30
+randomitems wyvern
 end
 arch pstone_1
 x 18
@@ -4363,6 +4223,10 @@ arch pstone_1
 x 19
 y 2
 end
+arch big_demon
+x 19
+y 2
+end
 arch pstone_1
 x 19
 y 3
@@ -4379,10 +4243,6 @@ arch pstone_1
 x 19
 y 6
 end
-arch pstone_1
-x 19
-y 6
-end
 arch dun9
 x 19
 y 6
@@ -4391,17 +4251,9 @@ arch pstone_1
 x 19
 y 7
 end
-arch pstone_1
-x 19
-y 7
-end
 arch dun11
 x 19
 y 7
-end
-arch pstone_1
-x 19
-y 8
 end
 arch pstone_1
 x 19
@@ -4607,10 +4459,6 @@ arch pstone_1
 x 20
 y 6
 end
-arch pstone_1
-x 20
-y 6
-end
 arch fire_elemental
 x 20
 y 6
@@ -4624,17 +4472,9 @@ arch pstone_1
 x 20
 y 7
 end
-arch pstone_1
-x 20
-y 7
-end
 arch dun2
 x 20
 y 7
-end
-arch pstone_1
-x 20
-y 8
 end
 arch pstone_1
 x 20
@@ -4860,10 +4700,6 @@ arch pstone_1
 x 21
 y 6
 end
-arch pstone_1
-x 21
-y 6
-end
 arch dun10
 x 21
 y 6
@@ -4872,17 +4708,9 @@ arch pstone_1
 x 21
 y 7
 end
-arch pstone_1
-x 21
-y 7
-end
 arch dun14
 x 21
 y 7
-end
-arch pstone_1
-x 21
-y 8
 end
 arch pstone_1
 x 21
@@ -4942,12 +4770,7 @@ y 14
 end
 arch magic_mouth
 msg
-In order to advance, you must
-demonstrate your alchemical knowledge
-relevant to the fire god.
-Name the animal essence
-required in the formula for
-summoning a fire elemental.  
+In order to advance, you must demonstrate your alchemical knowledge relevant to the fire god.  Name the animal essence required in the formula for summoning a fire elemental.
 endmsg
 x 21
 y 15
@@ -4958,12 +4781,7 @@ y 15
 end
 arch magic_mouth
 msg
-In order to advance, you must
-demonstrate your alchemical knowledge
-relevant to the fire god.
-Name the animal essence
-required in the formula for
-summoning a fire elemental.  
+In order to advance, you must demonstrate your alchemical knowledge relevant to the fire god.  Name the animal essence required in the formula for summoning a fire elemental.
 endmsg
 x 21
 y 16
@@ -4974,12 +4792,7 @@ y 16
 end
 arch magic_mouth
 msg
-In order to advance, you must
-demonstrate your alchemical knowledge
-relevant to the fire god.
-Name the animal essence
-required in the formula for
-summoning a fire elemental.  
+In order to advance, you must demonstrate your alchemical knowledge relevant to the fire god.  Name the animal essence required in the formula for summoning a fire elemental.
 endmsg
 x 21
 y 17
@@ -5124,17 +4937,9 @@ arch pstone_1
 x 22
 y 6
 end
-arch pstone_1
-x 22
-y 6
-end
 arch dun2
 x 22
 y 6
-end
-arch pstone_1
-x 22
-y 7
 end
 arch pstone_1
 x 22
@@ -5148,10 +4953,6 @@ arch pstone_1
 x 22
 y 8
 end
-arch pstone_1
-x 22
-y 8
-end
 arch dun2
 x 22
 y 8
@@ -5170,19 +4971,11 @@ arch pstone_1
 x 22
 y 10
 end
-arch pstone_1
-x 22
-y 10
-end
 arch grate_closed_2
 x 22
 y 10
 speed 0.500000
 connected 10
-end
-arch pstone_1
-x 22
-y 11
 end
 arch pstone_1
 x 22
@@ -5390,6 +5183,10 @@ arch pstone_1
 x 23
 y 2
 end
+arch big_dragon
+x 23
+y 2
+end
 arch pstone_1
 x 23
 y 3
@@ -5406,10 +5203,6 @@ arch pstone_1
 x 23
 y 6
 end
-arch pstone_1
-x 23
-y 6
-end
 arch dun2
 x 23
 y 6
@@ -5418,17 +5211,9 @@ arch pstone_1
 x 23
 y 7
 end
-arch pstone_1
-x 23
-y 7
-end
 arch random_treasure
 x 23
 y 7
-end
-arch pstone_1
-x 23
-y 8
 end
 arch pstone_1
 x 23
@@ -5631,10 +5416,6 @@ arch pstone_1
 x 24
 y 6
 end
-arch pstone_1
-x 24
-y 6
-end
 arch dun12
 x 24
 y 6
@@ -5643,17 +5424,9 @@ arch pstone_1
 x 24
 y 7
 end
-arch pstone_1
-x 24
-y 7
-end
 arch random_treasure
 x 24
 y 7
-end
-arch pstone_1
-x 24
-y 8
 end
 arch pstone_1
 x 24
@@ -5856,10 +5629,6 @@ end
 arch pstone_1
 x 25
 y 5
-end
-arch pstone_1
-x 25
-y 6
 end
 arch pstone_1
 x 25
@@ -5873,17 +5642,9 @@ arch pstone_1
 x 25
 y 7
 end
-arch pstone_1
-x 25
-y 7
-end
 arch random_treasure
 x 25
 y 7
-end
-arch pstone_1
-x 25
-y 8
 end
 arch pstone_1
 x 25
@@ -5945,13 +5706,22 @@ arch pstone_1
 x 25
 y 15
 end
-arch pstone_1
+arch dragonman
+name lesser dragonman
+Con 5
+Wis 3
+Pow 4
+hp 1000
+maxhp 1000
+exp 8000
+wc 0
+ac 0
 x 25
 y 15
-end
-arch pstone_1
-x 25
-y 16
+speed -0.200000
+level 6
+resist_magic 30
+randomitems wyvern
 end
 arch pstone_1
 x 25
@@ -6079,10 +5849,6 @@ arch pstone_1
 x 26
 y 6
 end
-arch pstone_1
-x 26
-y 6
-end
 arch dun6
 x 26
 y 6
@@ -6091,17 +5857,9 @@ arch pstone_1
 x 26
 y 7
 end
-arch pstone_1
-x 26
-y 7
-end
 arch random_treasure
 x 26
 y 7
-end
-arch pstone_1
-x 26
-y 8
 end
 arch pstone_1
 x 26
@@ -6293,9 +6051,7 @@ y 2
 end
 arch magic_mouth
 msg
-In order to proceed you must sacrifice 
-a chinese dragon's steak as token of
-your service to the Fire God. 
+In order to proceed you must sacrifice a chinese dragon's steak as token of your service to the Fire God.
 endmsg
 x 27
 y 3
@@ -6324,10 +6080,6 @@ arch pstone_1
 x 27
 y 6
 end
-arch pstone_1
-x 27
-y 6
-end
 arch dun2
 x 27
 y 6
@@ -6336,17 +6088,9 @@ arch pstone_1
 x 27
 y 7
 end
-arch pstone_1
-x 27
-y 7
-end
 arch random_treasure
 x 27
 y 7
-end
-arch pstone_1
-x 27
-y 8
 end
 arch pstone_1
 x 27
@@ -6397,10 +6141,6 @@ x 27
 y 13
 end
 arch pstone_1
-x 27
-y 14
-end
-arch goldfloor
 x 27
 y 14
 end
@@ -6587,10 +6327,6 @@ arch pstone_1
 x 28
 y 6
 end
-arch pstone_1
-x 28
-y 6
-end
 arch dun2
 x 28
 y 6
@@ -6605,10 +6341,6 @@ hp 16
 sp 14
 x 28
 y 7
-end
-arch pstone_1
-x 28
-y 8
 end
 arch pstone_1
 x 28
@@ -6666,9 +6398,7 @@ y 14
 end
 arch magic_mouth
 msg
-The altar before you seems oddly cool
-for an altar dedicated to the fire
-god.  Somehow, that doesn't seem right.
+The altar before you seems oddly cool for an altar dedicated to the fire god.  Somehow, that doesn't seem right.
 endmsg
 x 28
 y 15
@@ -6806,10 +6536,6 @@ arch pstone_1
 x 29
 y 6
 end
-arch pstone_1
-x 29
-y 6
-end
 arch dun9
 x 29
 y 6
@@ -6818,17 +6544,9 @@ arch pstone_1
 x 29
 y 7
 end
-arch pstone_1
-x 29
-y 7
-end
 arch dun11
 x 29
 y 7
-end
-arch pstone_1
-x 29
-y 8
 end
 arch pstone_1
 x 29
@@ -6907,9 +6625,7 @@ y 14
 end
 arch magic_mouth
 msg
-The altar before you seems oddly cool
-for an altar dedicated to the fire
-god.  Somehow, that doesn't seem right.
+The altar before you seems oddly cool for an altar dedicated to the fire god.  Somehow, that doesn't seem right.
 endmsg
 x 29
 y 15
@@ -7076,10 +6792,6 @@ arch pstone_1
 x 30
 y 7
 end
-arch pstone_1
-x 30
-y 7
-end
 arch dun2
 x 30
 y 7
@@ -7149,9 +6861,7 @@ y 14
 end
 arch magic_mouth
 msg
-The altar before you seems oddly cool
-for an altar dedicated to the fire
-god.  Somehow, that doesn't seem right.
+The altar before you seems oddly cool for an altar dedicated to the fire god.  Somehow, that doesn't seem right.
 endmsg
 x 30
 y 15
@@ -7336,7 +7046,7 @@ arch pstone_1
 x 31
 y 7
 end
-arch dun3
+arch dun14
 x 31
 y 7
 end
@@ -7531,108 +7241,4 @@ end
 arch dun7
 x 31
 y 31
-end
-arch big_demon
-x 3
-y 1
-end
-arch dragonman
-name lesser dragonman
-Con 5
-Wis 3
-Pow 4
-hp 1000
-maxhp 1000
-exp 8000
-wc 0
-ac 0
-x 3
-y 15
-speed -0.200000
-level 6
-resist_magic 30
-randomitems wyvern
-end
-arch dragon
-x 4
-y 21
-end
-arch dragon
-x 4
-y 22
-end
-arch dragon
-x 4
-y 23
-end
-arch big_demon
-x 6
-y 2
-end
-arch dragonman
-name lesser dragonman
-Con 5
-Wis 3
-Pow 4
-hp 1000
-maxhp 1000
-exp 8000
-wc 0
-ac 0
-x 9
-y 15
-speed -0.200000
-level 6
-resist_magic 30
-randomitems wyvern
-end
-arch big_demon
-x 10
-y 2
-end
-arch big_demon
-x 15
-y 2
-end
-arch dragonman
-name lesser dragonman
-Con 5
-Wis 3
-Pow 4
-hp 1000
-maxhp 1000
-exp 8000
-wc 0
-ac 0
-x 18
-y 15
-speed -0.200000
-level 6
-resist_magic 30
-randomitems wyvern
-end
-arch big_demon
-x 19
-y 2
-end
-arch big_dragon
-x 23
-y 2
-end
-arch dragonman
-name lesser dragonman
-Con 5
-Wis 3
-Pow 4
-hp 1000
-maxhp 1000
-exp 8000
-wc 0
-ac 0
-x 25
-y 15
-speed -0.200000
-level 6
-resist_magic 30
-randomitems wyvern
 end

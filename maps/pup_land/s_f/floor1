@@ -1,13 +1,15 @@
 arch map
+name Ancient Ruins, Main Floor
+difficulty 3
 region pupland
-name floor1
+width 16
+height 16
+enter_x 8
+enter_y 14
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Wed Feb  7 19:10:01 1996
+Created:  1996-02-07
+Modified: 2012-03-08 Rick Tanner
 endmsg
-hp 8
-sp 15
 end
 arch cobblestones2
 end
@@ -386,11 +388,14 @@ end
 arch wwall_2_1_2
 x 4
 end
+arch swall_1_1_half
+x 4
+end
 arch cobblestones2
 x 4
 y 1
 end
-arch swall_1_1
+arch swall_2_1_1
 x 4
 y 1
 end
@@ -671,7 +676,6 @@ end
 arch altar
 x 7
 y 1
-protected 96
 connected 96
 end
 arch flagstone
@@ -762,7 +766,6 @@ end
 arch altar
 x 8
 y 1
-protected 96
 connected 96
 end
 arch flagstone
@@ -850,14 +853,10 @@ arch goblin
 name goblin red
 msg
 @match *
-kill goblin, kill goblin, kill more
-goblin
+Kill goblin, kill goblin, kill more goblin.
 endmsg
-hp 20
-maxhp 20
 exp 40
 dam 10
-ac 8
 x 9
 y 1
 speed 0.300000

@@ -1,10 +1,12 @@
 arch map
-region portjoesph
-name goblin fortress
+name Goblin Fortress, Southwest Tower
+difficulty 7
+region portjoseph
+width 16
+height 16
 msg
-Creator: langley
-Email: langley@fermat.dartmouth.edu
-Date: Sat Jul 23 15:43:34 1994
+Created:  1994-07-23 langley (langley@fermat.dartmouth.edu)
+Modified: 2008-10-23 Rick Tanner
 endmsg
 end
 arch afloor_right
@@ -189,11 +191,7 @@ arch afloor_right
 x 1
 y 13
 end
-arch ahole_right
-name a hole in the floor
-slaying swtower
-hp 10
-sp 5
+arch afloor_right
 x 1
 y 14
 end
@@ -295,7 +293,11 @@ arch barrel
 x 2
 y 13
 end
-arch afloor_right
+arch ahole_right
+name a hole in the floor
+slaying swtower
+hp 11
+sp 5
 x 2
 y 14
 end
@@ -1019,13 +1021,6 @@ arch afloor_right
 x 10
 y 5
 end
-arch stair_3_up
-slaying swtower
-hp 1
-sp 14
-x 10
-y 5
-end
 arch afloor_right
 x 10
 y 6
@@ -1129,6 +1124,13 @@ x 11
 y 4
 end
 arch afloor_right
+x 11
+y 5
+end
+arch stair_3_up
+slaying swtower
+hp 2
+sp 14
 x 11
 y 5
 end

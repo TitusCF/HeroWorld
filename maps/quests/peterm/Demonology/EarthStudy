@@ -1,15 +1,15 @@
 arch map
-name Demonology EarthStudy
+name Tower of Demonology Earth Study
 reset_timeout 7200
-difficulty 7
+difficulty 25
+region wilderness
 width 9
 height 15
 enter_x 1
 enter_y 1
 msg
-Creator: peterm
-Email: peterm@soda.berkeley.edu
-Date: Sat Apr 30 20:50:08 1994
+Created:  1994-04-30 peterm (peterm@soda.berkeley.edu)
+Modified: 2012-03-11 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -65,33 +65,21 @@ arch dwall_2_2_1
 y 8
 end
 arch blocked
-msg
-endmsg
 y 9
 end
 arch blocked
-msg
-endmsg
 y 10
 end
 arch blocked
-msg
-endmsg
 y 11
 end
 arch blocked
-msg
-endmsg
 y 12
 end
 arch blocked
-msg
-endmsg
 y 13
 end
 arch blocked
-msg
-endmsg
 y 14
 end
 arch woodfloor
@@ -160,8 +148,6 @@ x 1
 y 8
 end
 arch blocked
-msg
-endmsg
 x 1
 y 9
 end
@@ -244,8 +230,6 @@ x 2
 y 8
 end
 arch blocked
-msg
-endmsg
 x 2
 y 9
 end
@@ -331,8 +315,6 @@ x 3
 y 8
 end
 arch blocked
-msg
-endmsg
 x 3
 y 9
 end
@@ -343,18 +325,12 @@ end
 arch earth_elemental
 name Griknaldamandarakar
 msg
-@match master|Master
+@match master
 You are NOT my master!
-@match name|Name
-I will not tell you my name nor will i
-tell you the name of my master, i am
-not stupid.
+@match name
+I will not tell you my name nor will I tell you the name of my master, I am not stupid.
 @match Griknaldamandarakar
-Aaaagh, stop torturing me.  My master's
-name is Ycronrcldeth, why don't you
-summon him from the grave and make him
-suffer?  Please Banish me back to my
-prison, it is at least dark there.
+Aaaagh, stop torturing me.  My master's name is Ycronrcldeth, why don't you summon him from the grave and make him suffer? Please Banish me back to my prison, it is at least dark there.
 endmsg
 hp 6000
 exp 5000
@@ -388,7 +364,7 @@ y 3
 end
 arch magic_ear
 msg
-@match Banish|banish
+@match banish
 endmsg
 x 4
 y 4
@@ -429,8 +405,6 @@ x 4
 y 8
 end
 arch blocked
-msg
-endmsg
 x 4
 y 9
 end
@@ -522,8 +496,6 @@ x 5
 y 8
 end
 arch blocked
-msg
-endmsg
 x 5
 y 9
 end
@@ -587,10 +559,12 @@ arch rod_heavy
 name Rod of Bombs
 hp 40
 maxhp 40
-sp 8
 x 6
 y 3
 level 15
+randomitems none
+arch spell_create_bomb
+end
 end
 arch woodfloor
 x 6
@@ -637,38 +611,26 @@ x 6
 y 8
 end
 arch blocked
-msg
-endmsg
 x 6
 y 9
 end
 arch blocked
-msg
-endmsg
 x 6
 y 10
 end
 arch blocked
-msg
-endmsg
 x 6
 y 11
 end
 arch blocked
-msg
-endmsg
 x 6
 y 12
 end
 arch blocked
-msg
-endmsg
 x 6
 y 13
 end
 arch blocked
-msg
-endmsg
 x 6
 y 14
 end
@@ -697,17 +659,7 @@ end
 arch book_read
 name Earth Master's Book of Names
 msg
-This is the Earth Master's book of
-names. You open the pages and flip
-through.
-Inside are the names of many 
-earth elementals.
-One page in particular is very
-dog-eared.  The Earth Master apparently
-had many uses for this particular
-elemental.
-The name is written as 
-Griknaldamandarakar
+This is the Earth Master's book of names.  You open the pages and flip through.  Inside are the names of many earth elementals.  One page in particular is very dog-eared.  The Earth Master apparently had many uses for this particular elemental.  The name is written as Griknaldamandarakar.
 endmsg
 x 7
 y 2
@@ -775,38 +727,26 @@ x 7
 y 8
 end
 arch blocked
-msg
-endmsg
 x 7
 y 9
 end
 arch blocked
-msg
-endmsg
 x 7
 y 10
 end
 arch blocked
-msg
-endmsg
 x 7
 y 11
 end
 arch blocked
-msg
-endmsg
 x 7
 y 12
 end
 arch blocked
-msg
-endmsg
 x 7
 y 13
 end
 arch blocked
-msg
-endmsg
 x 7
 y 14
 end
@@ -881,38 +821,26 @@ x 8
 y 8
 end
 arch blocked
-msg
-endmsg
 x 8
 y 9
 end
 arch blocked
-msg
-endmsg
 x 8
 y 10
 end
 arch blocked
-msg
-endmsg
 x 8
 y 11
 end
 arch blocked
-msg
-endmsg
 x 8
 y 12
 end
 arch blocked
-msg
-endmsg
 x 8
 y 13
 end
 arch blocked
-msg
-endmsg
 x 8
 y 14
 end

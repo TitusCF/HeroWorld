@@ -1,12 +1,15 @@
 arch map
+name Hut
+difficulty 1
 region ancientpupland
-name hut3
+width 19
+height 16
+enter_x 8
+enter_y 14
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sat May 18 00:23:55 1996
+Created:  1996-05-18
+Modified: 2012-02-26 Rick Tanner
 endmsg
-x 19
 end
 arch pstone_1
 end
@@ -223,7 +226,6 @@ Click.
 endmsg
 x 3
 y 3
-protected 1
 connected 1
 end
 arch pstone_1
@@ -621,20 +623,13 @@ arch woman
 name widow
 msg
 @match two|weeks|murder
-That day he told me, "I found a
-supplier of fund, we'll be rich!!", and
-off he went. He never came back alive...
-Will you help me to revenge him?
-@match yes|revenge
-You must find out who murdered Jacob.
-Kurte is gifted with second sight -
-Seek his advice.
+That day he told me, "I found a supplier of fund, we'll be rich!!", and off he went.  He never came back alive... Will you help me avenge him?
+@match yes|avenge
+You must find out who murdered Jacob.  Kurte is gifted with second sight - Seek his advice.
 @match kurte
-I don't know where to find him. Ask
-Timothey, he might know.
-@match Jacob|jacob
-My husband, Jacob got murdered
-two weeks ago...
+I don't know where to find him.  Ask Timothey, he might know.
+@match jacob
+My husband, Jacob was murdered two weeks ago...
 @match *
 ...
 ** she is crying **
@@ -665,7 +660,7 @@ end
 arch door_look_1
 x 8
 y 8
-no_pass 0
+move_block 0
 end
 arch pstone_1
 x 8
@@ -1353,17 +1348,13 @@ arch pit_closed
 hp 3
 sp 2
 x 18
-protected 1
 connected 1
 end
 arch zombie
 name Jacob
 msg
 @match *
-uuu...
-He killed me...
-His real name is ... Cordish!!
-Cordish killed me!
+uuu... He killed me... His real name is ... Cordish!! Cordish killed me!
 endmsg
 hp 3500
 x 18

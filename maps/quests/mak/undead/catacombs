@@ -1,15 +1,15 @@
 arch map
-name catacombs
+name Warriors' Tower, Catacombs
 reset_timeout 7200
-difficulty 8
+difficulty 16
+region wilderness
 width 21
 height 32
 enter_x 1
 enter_y 1
 msg
-Creator: Magnus Kronhamn
-Email: mak@solace.mh.se
-Date: Thu Apr 13 15:48:22 2000
+Created:  2000-04-13 Magnus Kronhamn (mak@solace.mh.se)
+Modified: 2011-12-27 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -222,7 +222,7 @@ end
 arch gravestone
 x 1
 y 4
-no_pass 1
+move_block all
 end
 arch dungeon_floor
 x 1
@@ -1024,8 +1024,8 @@ end
 arch gravestone
 x 5
 y 4
+move_block all
 no_pick 1
-no_pass 1
 end
 arch dungeon_floor
 x 5
@@ -1232,12 +1232,11 @@ end
 arch gravestone
 x 6
 y 4
-no_pass 1
+move_block all
 end
 arch magic_mouth
 msg
-These simple gravestones don't mark
-anyone important.
+These simple gravestones don't mark anyone important.
 endmsg
 x 6
 y 5
@@ -1875,7 +1874,7 @@ end
 arch pillars
 x 9
 y 16
-no_pass 1
+move_block all
 end
 arch dungeon_floor
 x 9
@@ -1888,7 +1887,7 @@ end
 arch pillars
 x 9
 y 18
-no_pass 1
+move_block all
 end
 arch dungeon_floor
 x 9
@@ -1905,7 +1904,7 @@ end
 arch pillars
 x 9
 y 20
-no_pass 1
+move_block all
 end
 arch dungeon_floor
 x 9
@@ -1999,8 +1998,7 @@ y 6
 end
 arch magic_mouth
 msg
-People getting their own rooms must
-have been important in life.
+People getting their own rooms must have been important in life.
 endmsg
 x 10
 y 7
@@ -2078,8 +2076,7 @@ y 19
 end
 arch magic_mouth
 msg
-There seems to be some really
-important person burried down here.
+There seems to be some really important person burried down here.
 endmsg
 x 10
 y 20
@@ -2263,7 +2260,7 @@ end
 arch pillars
 x 11
 y 16
-no_pass 1
+move_block all
 end
 arch dungeon_floor
 x 11
@@ -2276,7 +2273,7 @@ end
 arch pillars
 x 11
 y 18
-no_pass 1
+move_block all
 end
 arch dungeon_floor
 x 11
@@ -2289,7 +2286,7 @@ end
 arch pillars
 x 11
 y 20
-no_pass 1
+move_block all
 end
 arch dungeon_floor
 x 11
@@ -2750,12 +2747,11 @@ end
 arch gravestone2
 x 14
 y 4
-no_pass 1
+move_block all
 end
 arch magic_mouth
 msg
-These simple gravestones don't mark
-anyone important.
+These simple gravestones don't mark anyone important.
 endmsg
 x 14
 y 5
@@ -2959,7 +2955,7 @@ end
 arch gravestone
 x 15
 y 4
-no_pass 1
+move_block all
 end
 arch dungeon_floor
 x 15
@@ -3380,7 +3376,7 @@ end
 arch gravestone
 x 17
 y 4
-no_pass 1
+move_block all
 end
 arch dungeon_floor
 x 17
@@ -3771,7 +3767,7 @@ end
 arch gravestone
 x 19
 y 4
-no_pass 1
+move_block all
 end
 arch dungeon_floor
 x 19

@@ -1,15 +1,18 @@
 arch map
-name townA_gshop
+name Lone Town General Shop
+difficulty 25
 region lonetown
-msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Thu Jan 25 19:45:01 1996
-endmsg
+shopitems *:50
+shopmin 5
+shopmax 1500
 width 15
 height 16
 enter_x 7
-enter_y 15
+enter_y 14
+msg
+Created:  1996-01-25
+Modified: 2008-12-03 Rick Tanner
+endmsg
 end
 arch shop_empty
 end
@@ -716,7 +719,7 @@ arch cobblestones2
 x 7
 y 15
 end
-arch oakdoor
+arch oakdoor_2
 slaying town
 hp 10
 sp 10
@@ -801,11 +804,10 @@ x 8
 y 13
 end
 arch mailbox
-material 0
-weight 0
-no_pick 1
 x 8
 y 13
+material 0
+weight 0
 arch event_close
 title Python
 slaying /python/IPO/send.py

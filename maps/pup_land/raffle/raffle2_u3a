@@ -1,15 +1,17 @@
 arch map
+name Raffle 2, Level 3a
+swap_time 5
+reset_timeout 3600
+difficulty 1
 region pupland
-name raffle2_u3a
+width 17
+height 18
+enter_x 10
+enter_y 13
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Thu Apr  3 19:31:28 1997
+Created:  1997-04-03
+Modified: 2012-03-06 Rick Tanner
 endmsg
-x 17
-y 18
-value 5
-weight 3600
 end
 arch cobblestones2
 name sky
@@ -75,49 +77,37 @@ end
 arch small_stones
 y 11
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 11
 end
 arch small_stones
 y 12
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 12
 end
 arch small_stones
 y 13
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 13
 end
 arch small_stones
 y 14
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 14
 end
 arch small_stones
 y 15
 end
-arch blocked
-msg
-endmsg
+arch cave24
 y 15
 end
 arch small_stones
 y 16
 end
-arch blocked
-msg
-endmsg
+arch cave13
 y 16
 end
 arch small_stones
@@ -197,9 +187,7 @@ arch small_stones
 x 1
 y 10
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 10
 end
@@ -207,9 +195,7 @@ arch small_stones
 x 1
 y 11
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 11
 end
@@ -217,9 +203,7 @@ arch small_stones
 x 1
 y 12
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 12
 end
@@ -227,9 +211,7 @@ arch small_stones
 x 1
 y 13
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 13
 end
@@ -237,9 +219,7 @@ arch dungeon_magic
 x 1
 y 14
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 14
 end
@@ -263,7 +243,7 @@ arch small_stones
 x 1
 y 17
 end
-arch cave2
+arch cave15
 x 1
 y 17
 end
@@ -334,9 +314,7 @@ arch small_stones
 x 2
 y 10
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 10
 end
@@ -344,9 +322,7 @@ arch small_stones
 x 2
 y 11
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 11
 end
@@ -354,9 +330,7 @@ arch small_stones
 x 2
 y 12
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 12
 end
@@ -364,9 +338,7 @@ arch small_stones
 x 2
 y 13
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 13
 end
@@ -374,9 +346,7 @@ arch dungeon_magic
 x 2
 y 14
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 14
 end
@@ -479,9 +449,7 @@ arch small_stones
 x 3
 y 10
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 10
 end
@@ -489,9 +457,7 @@ arch small_stones
 x 3
 y 11
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 11
 end
@@ -499,9 +465,7 @@ arch small_stones
 x 3
 y 12
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 12
 end
@@ -509,9 +473,7 @@ arch small_stones
 x 3
 y 13
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 13
 end
@@ -519,9 +481,7 @@ arch dungeon_magic
 x 3
 y 14
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 14
 end
@@ -624,9 +584,7 @@ arch dungeon_magic
 x 4
 y 9
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 9
 end
@@ -634,9 +592,7 @@ arch dungeon_magic
 x 4
 y 10
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 10
 end
@@ -644,9 +600,7 @@ arch dungeon_magic
 x 4
 y 11
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 11
 end
@@ -654,9 +608,7 @@ arch dungeon_magic
 x 4
 y 12
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 12
 end
@@ -664,9 +616,7 @@ arch dungeon_magic
 x 4
 y 13
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 13
 end
@@ -674,9 +624,7 @@ arch dungeon_magic
 x 4
 y 14
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 14
 end
@@ -743,6 +691,14 @@ end
 arch cobblestones2
 name sky
 face blake_F.111
+x 5
+y 5
+end
+arch dragon_exit
+name To the Pupland Terminal
+slaying ../terminal
+hp 11
+sp 1
 x 5
 y 5
 end
@@ -915,9 +871,7 @@ y 7
 end
 arch magic_mouth
 msg
-This is an emergency exit from the
-raffle dungeon. You will not be able
-to return.
+This is an emergency exit from the raffle dungeon.  You will not be able to return.
 endmsg
 x 6
 y 8
@@ -1114,9 +1068,7 @@ arch small_stones
 x 7
 y 17
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 7
 y 17
 end
@@ -1195,9 +1147,7 @@ arch dungeon_magic
 x 8
 y 9
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 8
 y 9
 end
@@ -1205,9 +1155,7 @@ arch dungeon_magic
 x 8
 y 10
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 8
 y 10
 end
@@ -1215,9 +1163,7 @@ arch dungeon_magic
 x 8
 y 11
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 8
 y 11
 end
@@ -1225,9 +1171,7 @@ arch dungeon_magic
 x 8
 y 12
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 8
 y 12
 end
@@ -1235,9 +1179,7 @@ arch dungeon_magic
 x 8
 y 13
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 8
 y 13
 end
@@ -1245,9 +1187,7 @@ arch dungeon_magic
 x 8
 y 14
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 8
 y 14
 end
@@ -1255,9 +1195,7 @@ arch dungeon_magic
 x 8
 y 15
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 8
 y 15
 end
@@ -1265,9 +1203,7 @@ arch dungeon_magic
 x 8
 y 16
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 8
 y 16
 end
@@ -1275,9 +1211,7 @@ arch dungeon_magic
 x 8
 y 17
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 8
 y 17
 end
@@ -1320,6 +1254,14 @@ end
 arch cobblestones2
 name sky
 face blake_F.111
+x 9
+y 5
+end
+arch dragon_exit
+name To the Pupland Terminal
+slaying ../terminal
+hp 11
+sp 1
 x 9
 y 5
 end
@@ -1414,9 +1356,7 @@ arch small_stones
 x 9
 y 17
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 9
 y 17
 end
@@ -1474,9 +1414,7 @@ y 7
 end
 arch magic_mouth
 msg
-This is an emergency exit from the
-raffle dungeon. You will not be able
-to return.
+This is an emergency exit from the raffle dungeon.  You will not be able to return.
 endmsg
 x 10
 y 8
@@ -1764,9 +1702,7 @@ arch dungeon_magic
 x 12
 y 9
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 12
 y 9
 end
@@ -1774,9 +1710,7 @@ arch dungeon_magic
 x 12
 y 10
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 12
 y 10
 end
@@ -1784,9 +1718,7 @@ arch dungeon_magic
 x 12
 y 11
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 12
 y 11
 end
@@ -1794,9 +1726,7 @@ arch dungeon_magic
 x 12
 y 12
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 12
 y 12
 end
@@ -1804,9 +1734,7 @@ arch dungeon_magic
 x 12
 y 13
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 12
 y 13
 end
@@ -1814,9 +1742,7 @@ arch dungeon_magic
 x 12
 y 14
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 12
 y 14
 end
@@ -1917,9 +1843,7 @@ arch small_stones
 x 13
 y 10
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 13
 y 10
 end
@@ -1927,9 +1851,7 @@ arch small_stones
 x 13
 y 11
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 13
 y 11
 end
@@ -1937,9 +1859,7 @@ arch small_stones
 x 13
 y 12
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 13
 y 12
 end
@@ -1947,9 +1867,7 @@ arch small_stones
 x 13
 y 13
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 13
 y 13
 end
@@ -1957,9 +1875,7 @@ arch dungeon_magic
 x 13
 y 14
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 13
 y 14
 end
@@ -2058,9 +1974,7 @@ arch small_stones
 x 14
 y 11
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 14
 y 11
 end
@@ -2068,9 +1982,7 @@ arch small_stones
 x 14
 y 12
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 14
 y 12
 end
@@ -2078,9 +1990,7 @@ arch small_stones
 x 14
 y 13
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 14
 y 13
 end
@@ -2088,9 +1998,7 @@ arch dungeon_magic
 x 14
 y 14
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 14
 y 14
 end
@@ -2191,9 +2099,7 @@ arch small_stones
 x 15
 y 11
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 15
 y 11
 end
@@ -2201,9 +2107,7 @@ arch small_stones
 x 15
 y 12
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 15
 y 12
 end
@@ -2211,9 +2115,7 @@ arch small_stones
 x 15
 y 13
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 15
 y 13
 end
@@ -2221,9 +2123,7 @@ arch dungeon_magic
 x 15
 y 14
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 15
 y 14
 end
@@ -2243,7 +2143,7 @@ arch small_stones
 x 15
 y 17
 end
-arch cave2
+arch cave16
 x 15
 y 17
 end
@@ -2326,9 +2226,7 @@ arch small_stones
 x 16
 y 11
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 16
 y 11
 end
@@ -2336,9 +2234,7 @@ arch small_stones
 x 16
 y 12
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 16
 y 12
 end
@@ -2346,9 +2242,7 @@ arch small_stones
 x 16
 y 13
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 16
 y 13
 end
@@ -2356,9 +2250,7 @@ arch small_stones
 x 16
 y 14
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 16
 y 14
 end
@@ -2366,9 +2258,7 @@ arch small_stones
 x 16
 y 15
 end
-arch blocked
-msg
-endmsg
+arch cave25
 x 16
 y 15
 end
@@ -2376,29 +2266,11 @@ arch small_stones
 x 16
 y 16
 end
-arch blocked
-msg
-endmsg
+arch cave14
 x 16
 y 16
 end
 arch small_stones
 x 16
 y 17
-end
-arch dragon_exit
-name To the Pupland Terminal
-slaying ../terminal
-hp 11
-sp 1
-x 5
-y 5
-end
-arch dragon_exit
-name To the Pupland Terminal
-slaying ../terminal
-hp 11
-sp 1
-x 9
-y 5
 end

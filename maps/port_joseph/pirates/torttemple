@@ -1,14 +1,16 @@
 arch map
-region portjoesph
-name temple
+name Temple
+difficulty 12
+region portjoseph
+darkness 1
+width 15
+height 24
+enter_x 7
+enter_y 20
 msg
-Creator: Langley
-Email: langley@fermat.dartmouth.edu
-Date: Fri Jun 10 21:14:10 1994
+Created:  1994-06-10 langley (langley@fermat.dartmouth.edu)
+Modified: 2011-11-23 Rick Tanner
 endmsg
-x 15
-y 24
-invisible 1
 end
 arch jungle_1
 end
@@ -132,7 +134,11 @@ arch marble
 x 1
 y 5
 end
-arch awall_3_2
+arch awall_2_2_1
+x 1
+y 5
+end
+arch swall_1_1_half
 x 1
 y 5
 end
@@ -244,7 +250,11 @@ arch marble
 x 1
 y 19
 end
-arch awall_2_1_1
+arch swall_1_2_half
+x 1
+y 19
+end
+arch awall_1_1
 x 1
 y 19
 end
@@ -423,6 +433,8 @@ arch firewall_3
 x 3
 y 3
 speed -0.023000
+arch spell_small_fireball
+end
 end
 arch marble
 x 3
@@ -671,7 +683,7 @@ arch marble
 x 5
 y 5
 end
-arch awall_3_1
+arch awall_2_2_4
 x 5
 y 5
 end
@@ -985,8 +997,7 @@ y 6
 end
 arch magic_mouth
 msg
-Upon the altar is a bowl forged
-from platinum.
+Upon the altar is a bowl forged from platinum.
 endmsg
 x 7
 y 7
@@ -996,7 +1007,8 @@ x 7
 y 7
 end
 arch altar
-slaying platinacoin
+slaying money
+food 500
 x 7
 y 7
 connected 1
@@ -1223,7 +1235,7 @@ arch marble
 x 9
 y 5
 end
-arch awall_3_1
+arch awall_2_2_1
 x 9
 y 5
 end
@@ -1511,6 +1523,8 @@ end
 arch firewall_7
 x 11
 y 3
+arch spell_small_fireball
+end
 end
 arch marble
 x 11
@@ -1779,7 +1793,11 @@ arch marble
 x 13
 y 5
 end
-arch awall_3_4
+arch awall_2_2_4
+x 13
+y 5
+end
+arch swall_1_1_half
 x 13
 y 5
 end
@@ -1891,7 +1909,11 @@ arch marble
 x 13
 y 19
 end
-arch awall_2_1_1
+arch swall_1_2_half
+x 13
+y 19
+end
+arch awall_1_1
 x 13
 y 19
 end

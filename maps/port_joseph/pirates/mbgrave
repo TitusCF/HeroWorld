@@ -1,13 +1,16 @@
 arch map
-region portjoesph
 name Moogly Bill's Grave
+difficulty 12
+region portjoseph
+darkness 5
+width 27
+height 16
+enter_x 4
+enter_y 10
 msg
-Creator: langley
-Email: langley@fermat.dartmouth.edu
-Date: Tue May 31 23:52:27 1994
+Created:  1994-05-31 langley (langley@fermat.dartmouth.edu)
+Modified: 2011-11-23 Rick Tanner
 endmsg
-x 27
-invisible 5
 end
 arch dungeon_floor
 end
@@ -21,6 +24,9 @@ y 2
 end
 arch blocked
 y 3
+end
+arch blocked
+y 4
 end
 arch blocked
 y 5
@@ -427,14 +433,14 @@ arch bwall_2_1_2
 x 4
 y 9
 end
-arch exit
-slaying fortvsship
-hp 7
-sp 1
+arch pstone_2
 x 4
 y 10
 end
-arch pstone_2
+arch ladder_up
+slaying fortvsship
+hp 7
+sp 1
 x 4
 y 10
 end
@@ -674,10 +680,7 @@ y 3
 end
 arch gravestone
 msg
-Let it be known
-let it be said,
-Moogly bill ain't alive
-he's dead
+Let it be known, let it be said, Moogly Bill ain't alive.. he's dead.
 endmsg
 x 7
 y 3
@@ -904,9 +907,7 @@ y 3
 end
 arch gravestone
 msg
-Moogly bill
-was ill
-left no will
+Moogly Bill was ill, left no will.
 endmsg
 x 9
 y 3
@@ -1769,9 +1770,7 @@ y 10
 end
 arch note
 msg
- . . . take the . . . three sto es
-place upon    t re  al ars . . .
-th.n the g t   will open . 
+. . . take the . . . three sto es place upon    t re  al ars . . . th.n the g t   will open.
 endmsg
 x 18
 y 10

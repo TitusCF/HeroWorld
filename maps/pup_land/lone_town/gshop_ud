@@ -1,13 +1,15 @@
 arch map
+name Lone Town General Shop, Cellar
+difficulty 25
 region lonetown
-name townA_gshop_ud
+width 17
+height 16
+enter_x 16
+enter_y 6
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Wed Jan 31 19:12:31 1996
+Created:  1996-01-31
+Modified: 2008-10-23 Rick Tanner
 endmsg
-x 17
-level 10
 end
 arch blocked
 end
@@ -1517,9 +1519,15 @@ maxhp 100
 ac 30
 x 14
 y 11
-immune 254
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
+move_block 0
 alive 1
-no_pass 0
 tear_down 1
 end
 arch dungeon_floor

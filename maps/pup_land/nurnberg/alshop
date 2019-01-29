@@ -1,17 +1,19 @@
 arch map
+name Nurnberg Alchemy Shop
+swap_time 30
+reset_timeout 1800
+difficulty 30
 region nurnberg
-name ashop
-msg
-Creator: Xtreme
-Email: gnu@foo.bar
-Date: Wed Nov  5 16:39:36 1997
-endmsg
-x 27
-y 27
 shopitems inorganic:100;potion:90;container:100;*:-80
 shopmax 20000
-value 30
-weight 1800
+width 27
+height 27
+enter_x 25
+enter_y 3
+msg
+Created:  1997-11-05 Xtreme
+Modified: 2011-12-08 Rick Tanner
+endmsg
 end
 arch small_stones
 end
@@ -145,7 +147,11 @@ arch cobblestones2
 x 1
 y 3
 end
-arch dwall_2_2_1
+arch dwall_1_2
+x 1
+y 3
+end
+arch dwall_0
 x 1
 y 3
 end
@@ -284,7 +290,7 @@ y 2
 end
 arch stair_down
 slaying paslab
-hp 8
+hp 9
 sp 2
 x 2
 y 2
@@ -294,9 +300,9 @@ x 2
 y 3
 end
 arch door_look_1
-no_pass 0
 x 2
 y 3
+move_block 0
 end
 arch small_stones
 x 2
@@ -353,6 +359,9 @@ end
 arch potion_heroism
 x 2
 y 14
+unpaid 1
+arch spell_heroism
+end
 end
 arch dungeon_floor
 x 2
@@ -439,7 +448,11 @@ arch cobblestones2
 x 3
 y 3
 end
-arch dwall_2_2_4
+arch dwall_1_2
+x 3
+y 3
+end
+arch dwall_0
 x 3
 y 3
 end
@@ -491,7 +504,11 @@ arch dungeon_floor
 x 3
 y 13
 end
-arch wwall_3_4
+arch wwall_2_2_4
+x 3
+y 13
+end
+arch swall_1_1_half
 x 3
 y 13
 end
@@ -507,7 +524,11 @@ arch dungeon_floor
 x 3
 y 15
 end
-arch wwall_3_4
+arch swall_1_2_half
+x 3
+y 15
+end
+arch wwall_2_2_3
 x 3
 y 15
 end
@@ -726,18 +747,18 @@ x 5
 y 2
 end
 arch button_small
-connected 1
 x 5
 y 3
+connected 1
 end
 arch small_stones
 x 5
 y 3
 end
 arch button_small
-connected 1
 x 5
 y 4
+connected 1
 end
 arch small_stones
 x 5
@@ -779,7 +800,11 @@ arch dungeon_floor
 x 5
 y 11
 end
-arch wwall_3_1
+arch wwall_2_2_4
+x 5
+y 11
+end
+arch swall_1_4_half
 x 5
 y 11
 end
@@ -893,34 +918,34 @@ x 6
 y 2
 end
 arch button_small
-connected 1
 x 6
 y 3
+connected 1
 end
 arch cobblestones2
 x 6
 y 3
 end
 arch grate_closed_2
-speed 0.500000
-connected 1
 x 6
 y 3
+speed 0.500000
+connected 1
 end
 arch button_small
-connected 1
 x 6
 y 4
+connected 1
 end
 arch cobblestones2
 x 6
 y 4
 end
 arch grate_closed_2
-speed 0.500000
-connected 1
 x 6
 y 4
+speed 0.500000
+connected 1
 end
 arch grass
 x 6
@@ -1022,7 +1047,11 @@ arch dungeon_floor
 x 6
 y 22
 end
-arch wwall_3_1
+arch wwall_2_2_4
+x 6
+y 22
+end
+arch swall_1_4_half
 x 6
 y 22
 end
@@ -1033,6 +1062,7 @@ end
 arch potion_fire
 x 6
 y 23
+unpaid 1
 end
 arch dungeon_floor
 x 6
@@ -1070,25 +1100,24 @@ y 2
 end
 arch sign
 msg
-Pupland Alchemy Society
-Research Lab.
+Pupland Alchemy Society Research Lab.
 endmsg
 x 7
 y 2
 end
 arch button_small
-connected 1
 x 7
 y 3
+connected 1
 end
 arch cobblestones2
 x 7
 y 3
 end
 arch button_small
-connected 1
 x 7
 y 4
+connected 1
 end
 arch cobblestones2
 x 7
@@ -1186,7 +1215,11 @@ arch dungeon_floor
 x 7
 y 23
 end
-arch wwall_3_2
+arch swall_1_2_half
+x 7
+y 23
+end
+arch wwall_2_2_2
 x 7
 y 23
 end
@@ -1258,9 +1291,9 @@ y 9
 end
 arch diamond_converter
 name drop platinum to buy water
-slaying platinacoin
+slaying money
 other_arch water
-food 1
+food 50
 x 8
 y 9
 end
@@ -1396,9 +1429,9 @@ y 9
 end
 arch diamond_converter
 name drop platinum to buy salt
-slaying platinacoin
+slaying money
 other_arch salt
-food 5
+food 250
 x 9
 y 9
 end
@@ -1534,9 +1567,9 @@ y 9
 end
 arch diamond_converter
 name drop platinum to buy sulphur
-slaying platinacoin
+slaying money
 other_arch sulphur
-food 8
+food 400
 x 10
 y 9
 end
@@ -1668,9 +1701,9 @@ y 8
 end
 arch diamond_converter
 name drop platinum to buy cinnabar
-slaying platinacoin
+slaying money
 other_arch cinnabar
-food 24
+food 1200
 x 11
 y 8
 end
@@ -1680,9 +1713,9 @@ y 9
 end
 arch diamond_converter
 name drop platinum to buy phosphorus
-slaying platinacoin
+slaying money
 other_arch phosphorus
-food 16
+food 800
 x 11
 y 9
 end
@@ -1756,8 +1789,7 @@ y 24
 end
 arch sign
 msg
-The quest of Pupland Alchemy Society
-Membership is not available now.
+The quest of Pupland Alchemy Society Membership is not available now.
 endmsg
 x 11
 y 24
@@ -1804,7 +1836,7 @@ arch dungeon_floor
 x 12
 y 6
 end
-arch wwall_2_2_2
+arch wwall_1_1
 x 12
 y 6
 end
@@ -1888,7 +1920,11 @@ arch dungeon_floor
 x 12
 y 23
 end
-arch wwall_3_3
+arch swall_1_4_half
+x 12
+y 23
+end
+arch wwall_2_2_3
 x 12
 y 23
 end
@@ -1947,9 +1983,9 @@ x 13
 y 6
 end
 arch door_look_1
-no_pass 0
 x 13
 y 6
+move_block 0
 end
 arch dungeon_floor
 x 13
@@ -2008,10 +2044,10 @@ x 13
 y 17
 end
 arch cauldron
-unpaid 1
-identified 1
 x 13
 y 17
+unpaid 1
+identified 1
 end
 arch shop_empty
 x 13
@@ -2047,15 +2083,14 @@ y 24
 end
 arch key2
 name PAS Member's card
-face card.111
-msg
-Pupland Alchemy Society
-Member's card.
-endmsg
 slaying PAS_Members_card
-no_pick 1
+msg
+Pupland Alchemy Society Member's card.
+endmsg
+face card.111
 x 13
 y 24
+no_pick 1
 end
 arch dungeon_floor
 x 13
@@ -2103,7 +2138,7 @@ arch dungeon_floor
 x 14
 y 6
 end
-arch wwall_2_2_3
+arch wwall_1_1
 x 14
 y 6
 end
@@ -2187,7 +2222,11 @@ arch dungeon_floor
 x 14
 y 23
 end
-arch wwall_3_3
+arch wwall_2_2_2
+x 14
+y 23
+end
+arch swall_1_3_half
 x 14
 y 23
 end
@@ -2266,9 +2305,9 @@ y 8
 end
 arch diamond_converter
 name drop platinum to buy gypsum
-slaying platinacoin
+slaying money
 other_arch gypsum
-food 4
+food 200
 x 15
 y 8
 end
@@ -2278,9 +2317,9 @@ y 9
 end
 arch diamond_converter
 name drop platinum to buy mineral oil
-slaying platinacoin
+slaying money
 other_arch min_oil
-food 4
+food 200
 x 15
 y 9
 end
@@ -2295,15 +2334,15 @@ end
 arch swashbuckler
 msg
 @match *
-Welcome to the ingredients store,
-Cauldron! 
+Welcome to the ingredients store, Cauldron!
 endmsg
-type 0
 hp 100
-monster 1
-friendly 1
 x 15
 y 10
+type 0
+move_type walk
+monster 1
+friendly 1
 end
 arch dungeon_floor
 x 15
@@ -2433,9 +2472,9 @@ y 9
 end
 arch diamond_converter
 name drop platinum to buy pyrite
-slaying platinacoin
+slaying money
 other_arch pyrite
-food 4
+food 200
 x 16
 y 9
 end
@@ -2571,9 +2610,9 @@ y 9
 end
 arch diamond_converter
 name drop platinum to buy lead
-slaying platinacoin
+slaying money
 other_arch lead
-food 36
+food 1800
 x 17
 y 9
 end
@@ -2705,8 +2744,9 @@ y 9
 end
 arch diamond_converter
 name drop platinum to buy salt
-slaying platinacoin
+slaying money
 other_arch salt
+food 2000
 x 18
 y 9
 end
@@ -2908,7 +2948,11 @@ arch dungeon_floor
 x 19
 y 23
 end
-arch wwall_3_4
+arch swall_1_2_half
+x 19
+y 23
+end
+arch wwall_2_2_3
 x 19
 y 23
 end
@@ -3046,7 +3090,11 @@ arch dungeon_floor
 x 20
 y 22
 end
-arch wwall_3_1
+arch wwall_2_2_1
+x 20
+y 22
+end
+arch swall_1_3_half
 x 20
 y 22
 end
@@ -3057,6 +3105,7 @@ end
 arch potion_cold
 x 20
 y 23
+unpaid 1
 end
 arch dungeon_floor
 x 20
@@ -3132,7 +3181,11 @@ arch dungeon_floor
 x 21
 y 11
 end
-arch wwall_3_1
+arch wwall_2_2_1
+x 21
+y 11
+end
+arch swall_1_3_half
 x 21
 y 11
 end
@@ -3416,7 +3469,11 @@ arch dungeon_floor
 x 23
 y 13
 end
-arch wwall_3_2
+arch wwall_2_2_1
+x 23
+y 13
+end
+arch swall_1_1_half
 x 23
 y 13
 end
@@ -3432,7 +3489,11 @@ arch dungeon_floor
 x 23
 y 15
 end
-arch wwall_3_2
+arch swall_1_2_half
+x 23
+y 15
+end
+arch wwall_2_2_2
 x 23
 y 15
 end
@@ -3558,9 +3619,10 @@ arch shop_empty
 x 24
 y 14
 end
-arch potion_invulnerability
+arch potion_shielding
 x 24
 y 14
+unpaid 1
 end
 arch dungeon_floor
 x 24
@@ -3613,9 +3675,9 @@ end
 arch key2
 name Golden
 slaying PAS_GMembers_card
-unique 1
 x 24
 y 25
+unique 1
 end
 arch cwall_1_4
 x 24

@@ -1,13 +1,15 @@
 arch map
+name Lone Village Tavern
+difficulty 1
 region ancientpupland
-name tavern
+width 34
+height 19
+enter_x 1
+enter_y 16
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue May 21 22:59:59 1996
+Created:  1996-05-21
+Modified: 2012-02-26 Rick Tanner
 endmsg
-x 34
-y 19
 end
 arch woodfloor
 end
@@ -252,7 +254,7 @@ arch woodfloor
 x 1
 y 17
 end
-arch oakdoor
+arch oakdoor_2
 slaying village
 hp 12
 sp 11
@@ -340,14 +342,14 @@ end
 arch elf
 msg
 @match *
-Look at the guy standing at the bar.
-I believe that he is a thief.
+Look at the guy standing at the bar.  I believe that he is a thief.
 endmsg
 face elf.131
 hp 100
 x 2
 y 8
 type 0
+move_type walk
 monster 1
 friendly 1
 end
@@ -1028,22 +1030,19 @@ y 11
 end
 arch viking
 msg
-@match [Pp]erson
-I have never seen him.
-But I expect that he lives in the house
-where there is the burning fireplace.
-@match yes|Yes|No|no
-It's a ghost town now.
-But I've heard that one Person
-still lives in the town.
+@match person
+I have never seen him.  But I expect that he lives in the house where there is the burning fireplace.
+@match yes|no
+It's a ghost town now.  But I've heard that one Person still lives in the town.
 @match *
-Have you ever been to shining town? 
+Have you ever been to shining town?
 endmsg
 face viking.111
 hp 100
 x 6
 y 11
 type 0
+move_type walk
 monster 1
 friendly 1
 end
@@ -1553,7 +1552,7 @@ arch magic_mouth
 msg
 Written on the wall:
  "Siegfried is our hero!
-  Siegfried, banzai!" 
+  Siegfried, banzai!"
 endmsg
 x 9
 y 14
@@ -1786,7 +1785,7 @@ y 4
 end
 arch magic_ear
 msg
-@match yes|Yes
+@match yes
 Click.
 endmsg
 x 11
@@ -1800,24 +1799,19 @@ end
 arch swashbuckler
 name Hans
 msg
-@match Yes|yes
-Thanks.
-This symbol is needed to see him.
-@match [Bb]oss|find
-I can't tell you about the hiding
-place of the boss. There are too many
-people watching us.
+@match yes
+Thanks.  This symbol is needed to see him.
+@match boss|find
+I can't tell you about the hiding place of the boss.  There are too many people watching us.
 @match *
-I can hardly believe that Siegfried
-killed Jacob, our friend - But it's
-an undeniable fact. Could you tell this
-to the boss of our gang?
+I can hardly believe that Siegfried killed Jacob, our friend - But it's an undeniable fact.  Could you tell this to the boss of our gang?
 endmsg
 face swashbuckl.131
 hp 100
 x 11
 y 4
 type 0
+move_type walk
 monster 1
 friendly 1
 end
@@ -1976,8 +1970,8 @@ end
 arch table_4
 x 12
 y 1
+move_block all
 no_pick 1
-no_pass 1
 end
 arch dungeon_magic
 x 12
@@ -1990,8 +1984,8 @@ end
 arch table_4
 x 12
 y 2
+move_block all
 no_pick 1
-no_pass 1
 end
 arch dungeon_magic
 x 12
@@ -2004,8 +1998,8 @@ end
 arch table_4
 x 12
 y 3
+move_block all
 no_pick 1
-no_pass 1
 end
 arch dungeon_magic
 x 12
@@ -2018,8 +2012,8 @@ end
 arch table_4
 x 12
 y 4
+move_block all
 no_pick 1
-no_pass 1
 end
 arch dungeon_magic
 x 12
@@ -2032,8 +2026,8 @@ end
 arch table_4
 x 12
 y 5
+move_block all
 no_pick 1
-no_pass 1
 end
 arch dungeon_magic
 x 12
@@ -2046,8 +2040,8 @@ end
 arch table_4
 x 12
 y 6
+move_block all
 no_pick 1
-no_pass 1
 end
 arch dungeon_magic
 x 12
@@ -2060,8 +2054,8 @@ end
 arch table_4
 x 12
 y 7
+move_block all
 no_pick 1
-no_pass 1
 end
 arch dungeon_magic
 x 12
@@ -2074,8 +2068,8 @@ end
 arch table_4
 x 12
 y 8
+move_block all
 no_pick 1
-no_pass 1
 end
 arch dungeon_magic
 x 12
@@ -2088,8 +2082,8 @@ end
 arch table_4
 x 12
 y 9
+move_block all
 no_pick 1
-no_pass 1
 end
 arch dungeon_magic
 x 12
@@ -2102,8 +2096,8 @@ end
 arch table_4
 x 12
 y 10
+move_block all
 no_pick 1
-no_pass 1
 end
 arch dungeon_magic
 x 12
@@ -2116,8 +2110,8 @@ end
 arch table_4
 x 12
 y 11
+move_block all
 no_pick 1
-no_pass 1
 end
 arch dungeon_magic
 x 12
@@ -2130,8 +2124,8 @@ end
 arch table_4
 x 12
 y 12
+move_block all
 no_pick 1
-no_pass 1
 end
 arch dungeon_magic
 x 12
@@ -2144,8 +2138,8 @@ end
 arch table_4
 x 12
 y 13
+move_block all
 no_pick 1
-no_pass 1
 end
 arch dungeon_magic
 x 12
@@ -2158,8 +2152,8 @@ end
 arch table_4
 x 12
 y 14
+move_block all
 no_pick 1
-no_pass 1
 end
 arch dungeon_magic
 x 12
@@ -2172,8 +2166,8 @@ end
 arch table_4
 x 12
 y 15
+move_block all
 no_pick 1
-no_pass 1
 end
 arch dungeon_magic
 x 12
@@ -2186,8 +2180,8 @@ end
 arch table_4
 x 12
 y 16
+move_block all
 no_pick 1
-no_pass 1
 end
 arch woodfloor
 x 12
@@ -2223,8 +2217,7 @@ arch man
 name barkeeper
 msg
 @match *
-I still believe in Siegfried! No
-matter what other people might say.
+I still believe in Siegfried! No matter what other people might say.
 endmsg
 face man.171
 hp 180
@@ -2286,8 +2279,7 @@ arch man
 name barkeeper
 msg
 @match *
-I've heard that Siegfried would be a
-swindler. I hope this is not true.
+I've heard that Siegfried would be a swindler.  I hope this is not true.
 endmsg
 face man.171
 hp 180
@@ -3143,6 +3135,8 @@ end
 arch lightningwall_7
 x 21
 y 17
+arch spell_sm_lightning
+end
 end
 arch blocked
 x 21
@@ -3583,7 +3577,7 @@ end
 arch wall_2_1_2
 x 26
 y 1
-no_pass 0
+move_block 0
 end
 arch pstone_1
 x 26
@@ -3693,7 +3687,7 @@ end
 arch wall_2_1_2
 x 27
 y 1
-no_pass 0
+move_block 0
 end
 arch pstone_1
 x 27

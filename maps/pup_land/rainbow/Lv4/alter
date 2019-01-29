@@ -1,9 +1,14 @@
 arch map
+name Alter
+difficulty 1
 region pupland
+width 16
+height 16
+enter_x 1
+enter_y 15
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue Jul 16 08:14:54 1996
+Created:  1996-07-16
+Modified: 2011-12-21 Rick Tanner
 endmsg
 end
 arch pstone_1
@@ -416,6 +421,10 @@ arch pstone_1
 x 3
 y 9
 end
+arch swall_1_4_half
+x 3
+y 9
+end
 arch rough_wall_1_3
 x 3
 y 9
@@ -534,7 +543,7 @@ arch pstone_1
 x 4
 y 9
 end
-arch swall_1_4
+arch swall_2_1_2
 x 4
 y 9
 end
@@ -1015,6 +1024,7 @@ invisible 1
 connected 1
 end
 arch key2
+slaying no_door
 x 8
 y 6
 end
@@ -1455,6 +1465,7 @@ y 15
 connected 2
 end
 arch key2
+slaying no_door
 x 11
 y 15
 end
@@ -1542,7 +1553,7 @@ arch pstone_1
 x 12
 y 9
 end
-arch swall_1_3
+arch swall_2_1_2
 x 12
 y 9
 end
@@ -1656,6 +1667,10 @@ x 13
 y 8
 end
 arch pstone_1
+x 13
+y 9
+end
+arch swall_1_3_half
 x 13
 y 9
 end
@@ -1759,6 +1774,7 @@ hp 100
 x 14
 y 5
 type 0
+move_type walk
 monster 1
 friendly 1
 end
@@ -1914,4 +1930,8 @@ end
 arch blocked
 x 15
 y 14
+end
+arch blocked
+x 15
+y 15
 end

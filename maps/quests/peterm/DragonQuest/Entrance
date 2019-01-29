@@ -1,12 +1,15 @@
 arch map
-name DragonQuest Entrance
-msg
-Creator: peterm
-Email: peterm@soda.csua.berkeley.edu
-Date: Fri Aug 19 16:41:17 1994
-endmsg
+name Dragon Quest, Entrance
+difficulty 17
+region wilderness
 width 27
 height 16
+enter_x 1
+enter_y 7
+msg
+Created:  1994-08-19 peterm (peterm@soda.csua.berkeley.edu)
+Modified: 2012-01-01 Rick Tanner
+endmsg
 end
 arch pstone_1
 end
@@ -231,10 +234,7 @@ arch cave20
 x 1
 y 15
 end
-arch pstone_1
-x 2
-end
-arch blocked
+arch cave_15
 x 2
 end
 arch pstone_1
@@ -317,25 +317,14 @@ arch cave20
 x 2
 y 14
 end
-arch pstone_1
+arch cave_15
 x 2
 y 15
 end
-arch blocked
-x 2
-y 15
-end
-arch pstone_1
+arch cave_15
 x 3
 end
-arch blocked
-x 3
-end
-arch pstone_1
-x 3
-y 1
-end
-arch blocked
+arch cave_15
 x 3
 y 1
 end
@@ -356,6 +345,10 @@ x 3
 y 3
 end
 arch pstone_1
+x 3
+y 4
+end
+arch dragon
 x 3
 y 4
 end
@@ -391,6 +384,10 @@ arch pstone_1
 x 3
 y 10
 end
+arch dragon
+x 3
+y 10
+end
 arch pstone_1
 x 3
 y 11
@@ -411,33 +408,22 @@ arch cave20
 x 3
 y 13
 end
-arch pstone_1
+arch cave_15
 x 3
 y 14
 end
-arch blocked
-x 3
-y 14
-end
-arch pstone_1
+arch cave_15
 x 3
 y 15
 end
-arch blocked
-x 3
-y 15
-end
-arch pstone_1
-x 4
-end
-arch blocked
+arch cave_15
 x 4
 end
 arch pstone_1
 x 4
 y 1
 end
-arch cave18
+arch cave24
 x 4
 y 1
 end
@@ -477,6 +463,10 @@ arch pstone_1
 x 4
 y 8
 end
+arch dragon
+x 4
+y 8
+end
 arch pstone_1
 x 4
 y 9
@@ -517,18 +507,14 @@ arch cave17
 x 4
 y 14
 end
-arch pstone_1
-x 4
-y 15
-end
-arch blocked
+arch cave_15
 x 4
 y 15
 end
 arch pstone_1
 x 5
 end
-arch cave18
+arch cave24
 x 5
 end
 arch pstone_1
@@ -552,6 +538,10 @@ x 5
 y 4
 end
 arch pstone_1
+x 5
+y 5
+end
+arch dragon
 x 5
 y 5
 end
@@ -611,7 +601,7 @@ arch pstone_1
 x 5
 y 15
 end
-arch cave17
+arch cave23
 x 5
 y 15
 end
@@ -630,6 +620,10 @@ x 6
 y 1
 end
 arch pstone_1
+x 6
+y 2
+end
+arch dragon
 x 6
 y 2
 end
@@ -704,7 +698,7 @@ end
 arch pstone_1
 x 7
 end
-arch cave19
+arch cave25
 x 7
 end
 arch pstone_1
@@ -743,11 +737,19 @@ arch pstone_1
 x 7
 y 7
 end
+arch dragon
+x 7
+y 7
+end
 arch pstone_1
 x 7
 y 8
 end
 arch pstone_1
+x 7
+y 9
+end
+arch dragon
 x 7
 y 9
 end
@@ -764,6 +766,10 @@ x 7
 y 12
 end
 arch pstone_1
+x 7
+y 13
+end
+arch dragon
 x 7
 y 13
 end
@@ -786,7 +792,7 @@ end
 arch pstone_1
 x 8
 end
-arch cave18
+arch cave24
 x 8
 end
 arch pstone_1
@@ -833,6 +839,10 @@ arch pstone_1
 x 8
 y 10
 end
+arch dragon
+x 8
+y 10
+end
 arch pstone_1
 x 8
 y 11
@@ -875,11 +885,19 @@ arch pstone_1
 x 9
 y 3
 end
+arch dragon
+x 9
+y 3
+end
 arch pstone_1
 x 9
 y 4
 end
 arch pstone_1
+x 9
+y 5
+end
+arch dragon
 x 9
 y 5
 end
@@ -908,6 +926,10 @@ x 9
 y 11
 end
 arch pstone_1
+x 9
+y 12
+end
+arch dragon
 x 9
 y 12
 end
@@ -1005,18 +1027,14 @@ arch cave20
 x 10
 y 14
 end
-arch pstone_1
-x 10
-y 15
-end
-arch blocked
+arch cave_15
 x 10
 y 15
 end
 arch pstone_1
 x 11
 end
-arch cave19
+arch cave25
 x 11
 end
 arch pstone_1
@@ -1055,6 +1073,10 @@ arch pstone_1
 x 11
 y 7
 end
+arch dragon
+x 11
+y 7
+end
 arch pstone_1
 x 11
 y 8
@@ -1068,6 +1090,10 @@ x 11
 y 9
 end
 arch pstone_1
+x 11
+y 10
+end
+arch dragon
 x 11
 y 10
 end
@@ -1095,18 +1121,14 @@ arch cave17
 x 11
 y 14
 end
-arch pstone_1
-x 11
-y 15
-end
-arch blocked
+arch cave_15
 x 11
 y 15
 end
 arch pstone_1
 x 12
 end
-arch cave18
+arch cave24
 x 12
 end
 arch pstone_1
@@ -1165,6 +1187,10 @@ arch pstone_1
 x 12
 y 13
 end
+arch dragon
+x 12
+y 13
+end
 arch pstone_1
 x 12
 y 14
@@ -1177,7 +1203,7 @@ arch pstone_1
 x 12
 y 15
 end
-arch cave17
+arch cave23
 x 12
 y 15
 end
@@ -1189,9 +1215,7 @@ x 13
 end
 arch magic_mouth
 msg
-You hear a great many harsh calls
-up ahead, as of a horde of breeding
-wyverns.
+You hear a great many harsh calls up ahead, as of a horde of breeding wyverns.
 endmsg
 x 13
 y 1
@@ -1202,9 +1226,7 @@ y 1
 end
 arch magic_mouth
 msg
-You hear a great many harsh calls
-up ahead, as of a horde of breeding
-wyverns.
+You hear a great many harsh calls up ahead, as of a horde of breeding wyverns.
 endmsg
 x 13
 y 2
@@ -1213,11 +1235,13 @@ arch pstone_1
 x 13
 y 2
 end
+arch dragon
+x 13
+y 2
+end
 arch magic_mouth
 msg
-You hear a great many harsh calls
-up ahead, as of a horde of breeding
-wyverns.
+You hear a great many harsh calls up ahead, as of a horde of breeding wyverns.
 endmsg
 x 13
 y 3
@@ -1228,9 +1252,7 @@ y 3
 end
 arch magic_mouth
 msg
-You hear a great many harsh calls
-up ahead, as of a horde of breeding
-wyverns.
+You hear a great many harsh calls up ahead, as of a horde of breeding wyverns.
 endmsg
 x 13
 y 4
@@ -1333,6 +1355,10 @@ arch pstone_1
 x 14
 y 1
 end
+arch dragon
+x 14
+y 1
+end
 arch pstone_1
 x 14
 y 2
@@ -1353,15 +1379,11 @@ arch pstone_1
 x 14
 y 5
 end
-arch cave20
+arch cave22
 x 14
 y 5
 end
-arch pstone_1
-x 14
-y 6
-end
-arch blocked
+arch cave_15
 x 14
 y 6
 end
@@ -1397,11 +1419,7 @@ arch cave20
 x 14
 y 10
 end
-arch pstone_1
-x 14
-y 11
-end
-arch blocked
+arch cave_15
 x 14
 y 11
 end
@@ -1433,7 +1451,7 @@ arch pstone_1
 x 14
 y 15
 end
-arch cave20
+arch cave22
 x 14
 y 15
 end
@@ -1463,23 +1481,15 @@ arch cave2
 x 15
 y 4
 end
-arch pstone_1
+arch cave_15
 x 15
 y 5
 end
-arch blocked
-x 15
-y 5
-end
-arch blocked
+arch cave_15
 x 15
 y 6
 end
-arch pstone_1
-x 15
-y 7
-end
-arch blocked
+arch cave_15
 x 15
 y 7
 end
@@ -1499,27 +1509,15 @@ arch cave22
 x 15
 y 9
 end
-arch pstone_1
+arch cave_15
 x 15
 y 10
 end
-arch blocked
-x 15
-y 10
-end
-arch pstone_1
+arch cave_15
 x 15
 y 11
 end
-arch blocked
-x 15
-y 11
-end
-arch pstone_1
-x 15
-y 12
-end
-arch blocked
+arch cave_15
 x 15
 y 12
 end
@@ -1539,11 +1537,7 @@ arch cave20
 x 15
 y 14
 end
-arch pstone_1
-x 15
-y 15
-end
-arch blocked
+arch cave_15
 x 15
 y 15
 end
@@ -1585,67 +1579,43 @@ arch cave23
 x 16
 y 5
 end
-arch pstone_1
+arch cave_15
 x 16
 y 6
 end
-arch blocked
-x 16
-y 6
-end
-arch blocked
+arch cave_15
 x 16
 y 7
 end
-arch pstone_1
+arch cave_15
 x 16
 y 8
 end
-arch blocked
-x 16
-y 8
-end
-arch pstone_1
+arch cave_15
 x 16
 y 9
 end
-arch blocked
-x 16
-y 9
-end
-arch blocked
+arch cave_15
 x 16
 y 10
 end
-arch blocked
+arch cave_15
 x 16
 y 11
 end
-arch blocked
+arch cave_15
 x 16
 y 12
 end
-arch pstone_1
+arch cave_15
 x 16
 y 13
 end
-arch blocked
-x 16
-y 13
-end
-arch pstone_1
+arch cave_15
 x 16
 y 14
 end
-arch blocked
-x 16
-y 14
-end
-arch pstone_1
-x 16
-y 15
-end
-arch blocked
+arch cave_15
 x 16
 y 15
 end
@@ -1687,26 +1657,50 @@ arch cave22
 x 17
 y 5
 end
-arch pstone_1
+arch cave_15
 x 17
 y 6
 end
-arch blocked
+arch cave_15
 x 17
-y 6
+y 7
 end
-arch pstone_1
+arch cave_15
 x 17
-y 15
+y 8
 end
-arch blocked
+arch cave_15
+x 17
+y 9
+end
+arch cave_15
+x 17
+y 10
+end
+arch cave_15
+x 17
+y 11
+end
+arch cave_15
+x 17
+y 12
+end
+arch cave_15
+x 17
+y 13
+end
+arch cave_15
+x 17
+y 14
+end
+arch cave_15
 x 17
 y 15
 end
 arch pstone_1
 x 18
 end
-arch cave19
+arch cave25
 x 18
 end
 arch pstone_2
@@ -1733,23 +1727,47 @@ arch cave2
 x 18
 y 4
 end
-arch pstone_1
+arch cave_15
 x 18
 y 5
 end
-arch blocked
-x 18
-y 5
-end
-arch blocked
+arch cave_15
 x 18
 y 6
 end
-arch pstone_1
+arch cave_15
 x 18
-y 15
+y 7
 end
-arch blocked
+arch cave_15
+x 18
+y 8
+end
+arch cave_15
+x 18
+y 9
+end
+arch cave_15
+x 18
+y 10
+end
+arch cave_15
+x 18
+y 11
+end
+arch cave_15
+x 18
+y 12
+end
+arch cave_15
+x 18
+y 13
+end
+arch cave_15
+x 18
+y 14
+end
+arch cave_15
 x 18
 y 15
 end
@@ -1791,19 +1809,43 @@ arch cave17
 x 19
 y 5
 end
-arch pstone_1
+arch cave_15
 x 19
 y 6
 end
-arch blocked
+arch cave_15
 x 19
-y 6
+y 7
 end
-arch pstone_1
+arch cave_15
 x 19
-y 15
+y 8
 end
-arch blocked
+arch cave_15
+x 19
+y 9
+end
+arch cave_15
+x 19
+y 10
+end
+arch cave_15
+x 19
+y 11
+end
+arch cave_15
+x 19
+y 12
+end
+arch cave_15
+x 19
+y 13
+end
+arch cave_15
+x 19
+y 14
+end
+arch cave_15
 x 19
 y 15
 end
@@ -1841,26 +1883,50 @@ arch cave20
 x 20
 y 5
 end
-arch pstone_1
+arch cave_15
 x 20
 y 6
 end
-arch blocked
+arch cave_15
 x 20
-y 6
+y 7
 end
-arch pstone_1
+arch cave_15
 x 20
-y 15
+y 8
 end
-arch blocked
+arch cave_15
+x 20
+y 9
+end
+arch cave_15
+x 20
+y 10
+end
+arch cave_15
+x 20
+y 11
+end
+arch cave_15
+x 20
+y 12
+end
+arch cave_15
+x 20
+y 13
+end
+arch cave_15
+x 20
+y 14
+end
+arch cave_15
 x 20
 y 15
 end
 arch pstone_2
 x 21
 end
-arch cave19
+arch cave25
 x 21
 end
 arch pstone_2
@@ -1909,9 +1975,45 @@ arch cave23
 x 21
 y 5
 end
-arch blocked
+arch cave_15
 x 21
 y 6
+end
+arch cave_15
+x 21
+y 7
+end
+arch cave_15
+x 21
+y 8
+end
+arch cave_15
+x 21
+y 9
+end
+arch cave_15
+x 21
+y 10
+end
+arch cave_15
+x 21
+y 11
+end
+arch cave_15
+x 21
+y 12
+end
+arch cave_15
+x 21
+y 13
+end
+arch cave_15
+x 21
+y 14
+end
+arch cave_15
+x 21
+y 15
 end
 arch pstone_2
 x 22
@@ -1968,9 +2070,45 @@ arch cave2
 x 22
 y 5
 end
-arch blocked
+arch cave_15
 x 22
 y 6
+end
+arch cave_15
+x 22
+y 7
+end
+arch cave_15
+x 22
+y 8
+end
+arch cave_15
+x 22
+y 9
+end
+arch cave_15
+x 22
+y 10
+end
+arch cave_15
+x 22
+y 11
+end
+arch cave_15
+x 22
+y 12
+end
+arch cave_15
+x 22
+y 13
+end
+arch cave_15
+x 22
+y 14
+end
+arch cave_15
+x 22
+y 15
 end
 arch pstone_2
 x 23
@@ -1979,24 +2117,24 @@ arch cave4
 x 23
 end
 arch pstone_2
-no_pass 1
 x 23
 y 1
+move_block all
 end
 arch pstone_2
-no_pass 1
 x 23
 y 2
+move_block all
 end
 arch pstone_2
-no_pass 1
 x 23
 y 3
+move_block all
 end
 arch pstone_2
-no_pass 1
 x 23
 y 4
+move_block all
 end
 arch pstone_2
 x 23
@@ -2006,18 +2144,54 @@ arch cave12
 x 23
 y 5
 end
+arch pstone_2
+x 23
+y 6
+end
 arch cave23
 x 23
 y 6
 end
-arch blocked
+arch cave_15
 x 23
 y 7
+end
+arch cave_15
+x 23
+y 8
+end
+arch cave_15
+x 23
+y 9
+end
+arch cave_15
+x 23
+y 10
+end
+arch cave_15
+x 23
+y 11
+end
+arch cave_15
+x 23
+y 12
+end
+arch cave_15
+x 23
+y 13
+end
+arch cave_15
+x 23
+y 14
+end
+arch cave_15
+x 23
+y 15
 end
 arch pstone_2
 x 24
 end
-arch cave19
+arch cave25
 x 24
 end
 arch pstone_2
@@ -2048,13 +2222,49 @@ arch cave11
 x 24
 y 5
 end
+arch pstone_2
+x 24
+y 6
+end
 arch cave22
 x 24
 y 6
 end
-arch blocked
+arch cave_15
 x 24
 y 7
+end
+arch cave_15
+x 24
+y 8
+end
+arch cave_15
+x 24
+y 9
+end
+arch cave_15
+x 24
+y 10
+end
+arch cave_15
+x 24
+y 11
+end
+arch cave_15
+x 24
+y 12
+end
+arch cave_15
+x 24
+y 13
+end
+arch cave_15
+x 24
+y 14
+end
+arch cave_15
+x 24
+y 15
 end
 arch pstone_2
 x 25
@@ -2090,9 +2300,45 @@ arch cave2
 x 25
 y 5
 end
-arch blocked
+arch cave_15
 x 25
 y 6
+end
+arch cave_15
+x 25
+y 7
+end
+arch cave_15
+x 25
+y 8
+end
+arch cave_15
+x 25
+y 9
+end
+arch cave_15
+x 25
+y 10
+end
+arch cave_15
+x 25
+y 11
+end
+arch cave_15
+x 25
+y 12
+end
+arch cave_15
+x 25
+y 13
+end
+arch cave_15
+x 25
+y 14
+end
+arch cave_15
+x 25
+y 15
 end
 arch pstone_2
 x 26
@@ -2124,79 +2370,43 @@ arch cave2
 x 26
 y 5
 end
-arch pstone_2
+arch cave_15
 x 26
 y 6
 end
-arch blocked
+arch cave_15
 x 26
-y 6
+y 7
 end
-arch dragon
-x 3
-y 4
-end
-arch dragon
-x 3
-y 10
-end
-arch dragon
-x 4
+arch cave_15
+x 26
 y 8
 end
-arch dragon
-x 5
-y 5
-end
-arch dragon
-x 6
-y 2
-end
-arch dragon
-x 7
-y 7
-end
-arch dragon
-x 7
+arch cave_15
+x 26
 y 9
 end
-arch dragon
-x 7
-y 13
-end
-arch dragon
-x 8
+arch cave_15
+x 26
 y 10
 end
-arch dragon
-x 9
-y 3
+arch cave_15
+x 26
+y 11
 end
-arch dragon
-x 9
-y 5
-end
-arch dragon
-x 9
+arch cave_15
+x 26
 y 12
 end
-arch dragon
-x 11
-y 7
-end
-arch dragon
-x 11
-y 10
-end
-arch dragon
-x 12
+arch cave_15
+x 26
 y 13
 end
-arch dragon
-x 13
-y 2
+arch cave_15
+x 26
+y 14
 end
-arch dragon
-x 14
-y 1
+arch cave_15
+x 26
+y 15
 end

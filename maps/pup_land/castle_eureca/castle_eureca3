@@ -1,14 +1,15 @@
 arch map
+name Castle of Eureca, 3rd Level
+difficulty 5
 region pupland
-name castle_eureca3
+width 21
+height 21
+enter_x 11
+enter_y 19
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Thu Mar  7 21:11:23 1996
+Created:  1996-03-07
+Modified: 2011-10-21 Rick Tanner
 endmsg
-x 21
-y 21
-level 5
 end
 arch dungeon_floor
 end
@@ -39,6 +40,9 @@ arch cwall_2_1_1
 y 4
 end
 arch dungeon_floor
+y 5
+end
+arch swall_1_4_half
 y 5
 end
 arch cwall_2_1_1
@@ -164,7 +168,7 @@ arch dungeon_floor
 x 1
 y 5
 end
-arch swall_1_4
+arch swall_2_1_2
 x 1
 y 5
 end
@@ -653,11 +657,14 @@ end
 arch cwall_2_1_2
 x 5
 end
+arch swall_1_1_half
+x 5
+end
 arch dungeon_floor
 x 5
 y 1
 end
-arch swall_1_1
+arch swall_2_1_1
 x 5
 y 1
 end
@@ -737,11 +744,15 @@ arch cwall_2_2_1
 x 5
 y 13
 end
+arch swall_1_1_half
+x 5
+y 13
+end
 arch dungeon_floor
 x 5
 y 14
 end
-arch swall_1_1
+arch swall_2_1_1
 x 5
 y 14
 end
@@ -1222,8 +1233,8 @@ arch power_crystal
 name Mysterious Crystal Pillar
 x 9
 y 8
+move_block all
 no_pick 1
-no_pass 1
 end
 arch flagstone
 x 9
@@ -1237,8 +1248,8 @@ arch power_crystal
 name Mysterious Crystal Pillar
 x 9
 y 10
+move_block all
 no_pick 1
-no_pass 1
 end
 arch flagstone
 x 9
@@ -1441,8 +1452,8 @@ arch power_crystal
 name Mysterious Crystal Pillar
 x 11
 y 8
+move_block all
 no_pick 1
-no_pass 1
 end
 arch flagstone
 x 11
@@ -1456,8 +1467,8 @@ arch power_crystal
 name Mysterious Crystal Pillar
 x 11
 y 10
+move_block all
 no_pick 1
-no_pass 1
 end
 arch flagstone
 x 11
@@ -2027,7 +2038,7 @@ name toy building block
 x 15
 y 18
 weight 10
-no_pass 0
+move_block 0
 can_roll 0
 end
 arch rock
@@ -2035,7 +2046,7 @@ name toy building block
 x 15
 y 18
 weight 10
-no_pass 0
+move_block 0
 can_roll 0
 end
 arch rock
@@ -2043,7 +2054,7 @@ name toy building block
 x 15
 y 18
 weight 10
-no_pass 0
+move_block 0
 can_roll 0
 end
 arch rock
@@ -2051,7 +2062,7 @@ name toy building block
 x 15
 y 18
 weight 10
-no_pass 0
+move_block 0
 can_roll 0
 end
 arch rock
@@ -2059,7 +2070,7 @@ name toy building block
 x 15
 y 18
 weight 10
-no_pass 0
+move_block 0
 can_roll 0
 end
 arch rock
@@ -2067,7 +2078,7 @@ name toy building block
 x 15
 y 18
 weight 10
-no_pass 0
+move_block 0
 can_roll 0
 end
 arch rock
@@ -2075,7 +2086,7 @@ name toy building block
 x 15
 y 18
 weight 10
-no_pass 0
+move_block 0
 can_roll 0
 end
 arch rock
@@ -2083,7 +2094,7 @@ name toy building block
 x 15
 y 18
 weight 10
-no_pass 0
+move_block 0
 can_roll 0
 end
 arch rock
@@ -2091,7 +2102,7 @@ name toy building block
 x 15
 y 18
 weight 10
-no_pass 0
+move_block 0
 can_roll 0
 end
 arch dungeon_floor
@@ -2108,8 +2119,8 @@ name pla-model
 x 15
 y 19
 weight 10
+move_block 0
 no_pick 0
-no_pass 0
 end
 arch angel
 x 15
@@ -2239,8 +2250,8 @@ name pla-model
 x 16
 y 19
 weight 10
+move_block 0
 no_pick 0
-no_pass 0
 end
 arch angel
 x 16
@@ -2378,8 +2389,8 @@ name pla-model
 x 17
 y 19
 weight 10
+move_block 0
 no_pick 0
-no_pass 0
 end
 arch angel
 x 17
@@ -2522,8 +2533,8 @@ name pla-model
 x 18
 y 19
 weight 10
+move_block 0
 no_pick 0
-no_pass 0
 end
 arch angel
 x 18
@@ -2659,8 +2670,8 @@ name pla-model
 x 19
 y 19
 weight 10
+move_block 0
 no_pick 0
-no_pass 0
 end
 arch angel
 x 19

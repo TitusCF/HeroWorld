@@ -1,12 +1,15 @@
 arch map
+name Ancient Ruins, Underground
+difficulty 22
 region pupland
-name ruin_ug
+width 19
+height 16
+enter_x 2
+enter_y 2
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Wed Feb  7 23:13:41 1996
+Created:  1996-02-07
+Modified: 2008-10-27 Rick Tanner
 endmsg
-x 19
 end
 arch blocked
 end
@@ -508,6 +511,11 @@ end
 arch pstone_3
 x 4
 y 9
+end
+arch big_dragon
+x 4
+y 9
+unaggressive 1
 end
 arch pstone_1
 x 4
@@ -1162,7 +1170,6 @@ slaying uw_sword
 food 1
 x 10
 y 6
-protected 4
 connected 4
 end
 arch pstone_1
@@ -1374,7 +1381,6 @@ slaying crown
 food 1
 x 12
 y 4
-protected 3
 connected 3
 end
 arch pstone_1
@@ -1398,7 +1404,6 @@ slaying mithril_chainmail
 food 1
 x 12
 y 6
-protected 5
 connected 5
 end
 arch pstone_1
@@ -1422,7 +1427,6 @@ slaying cloak
 food 1
 x 12
 y 8
-protected 7
 connected 7
 end
 arch pstone_1
@@ -1659,7 +1663,6 @@ slaying uw_shield
 food 1
 x 14
 y 6
-protected 6
 connected 6
 end
 arch pstone_1
@@ -1820,7 +1823,6 @@ end
 arch grate_closed_2
 x 15
 y 10
-protected 2
 connected 2
 end
 arch pstone_3
@@ -1945,7 +1947,6 @@ arch igate_open_1
 x 17
 y 1
 speed 0.500000
-protected 3
 value 1
 connected 3
 end
@@ -1957,7 +1958,6 @@ arch igate_open_1
 x 17
 y 2
 speed 0.500000
-protected 4
 value 1
 connected 4
 end
@@ -1965,7 +1965,6 @@ arch igate_open_1
 x 17
 y 3
 speed 0.500000
-protected 5
 value 1
 connected 5
 end
@@ -1973,7 +1972,6 @@ arch igate_open_1
 x 17
 y 4
 speed 0.500000
-protected 6
 value 1
 connected 6
 end
@@ -1981,14 +1979,12 @@ arch igate_open_1
 x 17
 y 5
 speed 0.500000
-protected 7
 value 1
 connected 7
 end
 arch button_small
 x 17
 y 6
-protected 2
 connected 2
 end
 arch blocked
@@ -2022,7 +2018,6 @@ end
 arch button_lever
 x 17
 y 10
-protected 2
 connected 2
 end
 arch pstone_2
@@ -2129,9 +2124,4 @@ end
 arch blocked
 x 18
 y 15
-end
-arch big_dragon
-x 4
-y 9
-unaggressive 1
 end

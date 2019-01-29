@@ -1,13 +1,16 @@
 arch map
-region portjoesph
-name goblin island dungeons
+name Goblin Island Dungeons, Level 1
+difficulty 7
+region portjoseph
+darkness 4
+width 32
+height 16
+enter_x 1
+enter_y 5
 msg
-Creator: langley
-Email: langley@fermat.dartmouth.edu
-Date: Sat Aug 27 16:10:37 1994
+Created:  1994-08-27 langley (langley@fermat.dartmouth.edu)
+Modified: 2012-02-20 Rick Tanner
 endmsg
-x 32
-invisible 4
 end
 arch dungeon_floor
 end
@@ -1023,6 +1026,11 @@ arch dungeon_floor
 x 9
 y 5
 end
+arch mine_secret_1_1
+x 9
+y 5
+move_block 0
+end
 arch dungeon_floor
 x 9
 y 6
@@ -1177,19 +1185,15 @@ arch kobold
 name cowardly kobold
 msg
 @match why
-I hurt nobody!
-I steal nothing!
+I hurt nobody!  I steal nothing!
 @match steal|nothing
-I jus want to look
-at it, thats all!  
-It so pretty and shiny!
+I just want to look at it, thats all!  It so pretty and shiny!
 @match shiny|it|pretty|look at
-Buggle's key thats what! 
-Don't hurt me!
-@match buggle|Buggle
-buggle the big and mean guy!
+Buggle's key thats what!  Don't hurt me!
+@match buggle
+Buggle the big and mean guy!
 @match *
-Aii leave me be! 
+Aii leave me be!
 endmsg
 x 10
 y 12
@@ -1401,8 +1405,7 @@ y 7
 end
 arch magic_mouth
 msg
-What a stench! 
-
+What a stench!
 endmsg
 x 12
 y 8
@@ -1867,22 +1870,11 @@ end
 arch prisoner
 msg
 @match help|knowledge|quest|what
-The goblins caught me as I was
-searching these dungeons, but I found
-a word of power.
+The goblins caught me as I was searching these dungeons, but I found a word of power.
 @match word|power
-Yes, the word of power
-is `ogsnog'.  There are
-four words of power.
-Speak these in the shrine below.  
-I do not know the other three words.
-Beware for the shrine has been overrun
-with ooze.
+Yes, the word of power is `ogsnog'.  There are four words of power.  Speak these in the shrine below.  I do not know the other three words.  Beware for the shrine has been overrun with ooze.
 @match *
-Ah me,  thank you good adventurer.
-I have a little knowledge that
-can help you on your quest.
-
+Ah me, thank you good adventurer.  I have a little knowledge that can help you on your quest.
 endmsg
 x 16
 y 8
@@ -1998,7 +1990,6 @@ end
 arch skeleton
 x 17
 y 6
-can_see_in_dark 1
 end
 arch dungeon_floor
 x 17
@@ -2085,7 +2076,6 @@ end
 arch wraith
 x 18
 y 1
-can_see_in_dark 1
 end
 arch dungeon_floor
 x 18
@@ -2668,6 +2658,11 @@ arch dungeon_floor
 x 23
 y 2
 end
+arch mine_secret_2_1
+x 23
+y 2
+move_block 0
+end
 arch dungeon_floor
 x 23
 y 3
@@ -3152,7 +3147,7 @@ arch dungeon_floor
 x 27
 y 9
 end
-arch cave_0
+arch dun18
 x 27
 y 9
 end
@@ -3254,7 +3249,7 @@ arch dungeon_floor
 x 28
 y 11
 end
-arch cave_0
+arch dun18
 x 28
 y 11
 end
@@ -3398,7 +3393,7 @@ arch dungeon_floor
 x 30
 y 2
 end
-arch cave_0
+arch dun18
 x 30
 y 2
 end
@@ -3622,26 +3617,4 @@ end
 arch mine12
 x 31
 y 15
-end
-arch mine_secret_1_1
-x 9
-y 5
-no_pass 0
-end
-More
-arch mine_secret_1_2
-x 10
-y 5
-no_pass 0
-end
-arch mine_secret_2_1
-x 23
-y 2
-no_pass 0
-end
-More
-arch mine_secret_2_2
-x 23
-y 3
-no_pass 0
 end

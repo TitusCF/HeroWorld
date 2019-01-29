@@ -1,14 +1,16 @@
 arch map
-region portjoesph
-name Pirate quest
+name Pirate's Puzzle
+difficulty 15
+region portjoseph
+darkness 3
+width 17
+height 17
+enter_x 5
+enter_y 7
 msg
-Creator: langley
-Email: langley@fermat.dartmouth.edu
-Date: Sat Jun 11 16:06:05 1994
+Created:  1994-06-11 langley (langley@fermat.dartmouth.edu)
+Modified: 2012-02-21 Rick Tanner
 endmsg
-x 17
-y 17
-invisible 3
 end
 arch dirtfloor
 end
@@ -43,6 +45,8 @@ y 5
 end
 arch firewall_3
 y 5
+arch spell_small_fireball
+end
 end
 arch dirtfloor
 y 6
@@ -383,6 +387,8 @@ end
 arch speedballwall
 x 3
 y 3
+arch spell_large_speedball
+end
 end
 arch dirtfloor
 x 3
@@ -410,7 +416,7 @@ y 7
 end
 arch rune_mark
 msg
-One, Two 
+One, Two.
 endmsg
 x 3
 y 7
@@ -1393,7 +1399,7 @@ end
 arch magic_ear
 msg
 @match moogly|bill|Moogly|Bill
-You are transported elsewhere
+You are transported elsewhere.
 endmsg
 x 11
 y 3
@@ -1888,6 +1894,8 @@ end
 arch lightningwall_5
 x 15
 y 1
+arch spell_sm_lightning
+end
 end
 arch dirtfloor
 x 15
@@ -1968,6 +1976,8 @@ end
 arch speedballwall
 x 15
 y 11
+arch spell_large_speedball
+end
 end
 arch dirtfloor
 x 15

@@ -1,10 +1,14 @@
 arch map
-region portjoesph
-name goblin fortress
+name Goblin Fortress, Northeast Tower
+difficulty 6
+region portjoseph
+width 16
+height 16
+enter_x 5
+enter_y 1
 msg
-Creator: langley
-Email: langley@fermat.dartmouth.edu
-Date: Sat Jul 23 15:43:34 1994
+Created:  1994-07-23 langley (langley@fermat.dartmouth.edu)
+Modified: 2012-02-20 Rick Tanner
 endmsg
 end
 arch afloor_right
@@ -320,7 +324,7 @@ end
 arch afloor_right
 x 3
 end
-arch dwall3_3
+arch dwall_3_3
 x 3
 end
 arch afloor_right
@@ -452,7 +456,7 @@ end
 arch dwall_2_1_2
 x 4
 y 4
-no_pass 0
+move_block 0
 end
 arch afloor_right
 x 4
@@ -1112,9 +1116,7 @@ carrying 3000
 arch scroll
 msg
 And the third word of power is:
-
 twining
-
 endmsg
 end
 end

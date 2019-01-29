@@ -1,13 +1,16 @@
 arch map
+name Kurte's Shop
+reset_timeout 1800
+difficulty 1
 region ancientpupland
-name shop
+width 25
+height 16
+enter_x 7
+enter_y 14
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue May 21 22:41:27 1996
+Created:  1996-05-21
+Modified: 2012-02-23 Rick Tanner
 endmsg
-x 25
-weight 1800
 end
 arch grass
 end
@@ -542,7 +545,6 @@ arch igate_closed_1
 x 6
 y 12
 speed 0.500000
-protected 1
 connected 1
 end
 arch pstone_1
@@ -586,11 +588,9 @@ end
 arch man
 msg
 @match special offer
-Sometimes I have special offers.
-Check back often.
+Sometimes I have special offers.  Check back often.
 @match *
-Welcome to Kurte's shop. I'll exchange
-my items for your gold nuggets.
+Welcome to Kurte's shop.  I'll exchange my items for your gold nuggets.
 endmsg
 hp 180
 x 7
@@ -658,7 +658,6 @@ arch igate_closed_1
 x 7
 y 12
 speed 0.500000
-protected 1
 connected 1
 end
 arch pstone_1
@@ -755,7 +754,6 @@ arch igate_closed_1
 x 8
 y 12
 speed 0.500000
-protected 1
 connected 1
 end
 arch pstone_1
@@ -859,7 +857,6 @@ end
 arch button_lever
 x 9
 y 13
-protected 1
 connected 1
 end
 arch grass
@@ -932,7 +929,6 @@ end
 arch button_lever
 x 10
 y 9
-protected 1
 connected 1
 end
 arch afloor_right
@@ -1396,21 +1392,18 @@ arch button_small
 name 12 - special
 x 17
 y 1
-protected 12
 connected 12
 end
 arch button_small
 name 11
 x 17
 y 2
-protected 11
 connected 11
 end
 arch button_small
 name 11
 x 17
 y 3
-protected 11
 connected 11
 end
 arch blocked
@@ -1421,21 +1414,18 @@ arch button_small
 name 21
 x 17
 y 5
-protected 21
 connected 21
 end
 arch button_small
 name 21
 x 17
 y 6
-protected 21
 connected 21
 end
 arch button_small
 name 21
 x 17
 y 7
-protected 21
 connected 21
 end
 arch blocked
@@ -1457,7 +1447,6 @@ sp 5
 x 17
 y 11
 speed 0.000000
-protected 11
 connected 11
 end
 arch diamond_converter
@@ -1480,7 +1469,6 @@ arch button_small
 name 31 - put sign
 x 17
 y 14
-protected 31
 weight 20000
 connected 31
 end
@@ -1489,7 +1477,6 @@ name 21
 other_arch small_shield
 x 17
 y 14
-protected 21
 connected 21
 end
 arch creator
@@ -1497,7 +1484,6 @@ name 11
 other_arch small_shield
 x 17
 y 14
-protected 11
 connected 11
 end
 arch blocked
@@ -1511,21 +1497,18 @@ arch button_small
 name 11
 x 18
 y 1
-protected 11
 connected 11
 end
 arch button_small
 name 11
 x 18
 y 2
-protected 11
 connected 11
 end
 arch button_small
 name 11
 x 18
 y 3
-protected 11
 connected 11
 end
 arch blocked
@@ -1536,21 +1519,18 @@ arch button_small
 name 21
 x 18
 y 5
-protected 21
 connected 21
 end
 arch button_small
 name 21
 x 18
 y 6
-protected 21
 connected 21
 end
 arch button_small
 name 22 - special
 x 18
 y 7
-protected 22
 connected 22
 end
 arch blocked
@@ -1572,7 +1552,6 @@ sp 5
 x 18
 y 11
 speed 0.000000
-protected 12
 connected 12
 end
 arch diamond_converter
@@ -1606,21 +1585,18 @@ arch button_small
 name 11
 x 19
 y 1
-protected 11
 connected 11
 end
 arch button_small
 name 11
 x 19
 y 2
-protected 11
 connected 11
 end
 arch button_small
 name 11
 x 19
 y 3
-protected 11
 connected 11
 end
 arch blocked
@@ -1631,21 +1607,18 @@ arch button_small
 name 21
 x 19
 y 5
-protected 21
 connected 21
 end
 arch button_small
 name 21
 x 19
 y 6
-protected 21
 connected 21
 end
 arch button_small
 name 21
 x 19
 y 7
-protected 21
 connected 21
 end
 arch blocked
@@ -1667,7 +1640,6 @@ sp 5
 x 19
 y 11
 speed 0.000000
-protected 21
 connected 21
 end
 arch diamond_converter
@@ -1690,7 +1662,6 @@ arch button_small
 name 32 - put altar
 x 19
 y 14
-protected 32
 weight 20000
 connected 32
 end
@@ -1699,7 +1670,6 @@ name 22
 other_arch small_shield
 x 19
 y 14
-protected 22
 connected 22
 end
 arch creator
@@ -1707,7 +1677,6 @@ name 12
 other_arch small_shield
 x 19
 y 14
-protected 12
 connected 12
 end
 arch blocked
@@ -1764,13 +1733,12 @@ sp 5
 x 20
 y 11
 speed 0.000000
-protected 22
 connected 22
 end
 arch diamond_converter
 name 500 large nuggets -> a potion
 slaying largenugget
-other_arch potion_invulnerability
+other_arch potion_shielding
 food 500
 x 20
 y 11
@@ -1795,7 +1763,6 @@ arch pit_closed
 hp 7
 sp 8
 x 21
-protected 71
 connected 71
 end
 arch potionstr
@@ -1811,19 +1778,20 @@ hp 7
 sp 8
 x 21
 y 2
-protected 72
 connected 72
 end
 arch rod_heavy
 hp 200
 maxhp 200
-sp 126
 x 21
 y 2
 speed -0.500000
 level 30
 value 2000000
+randomitems none
 identified 1
+arch spell_restoration
+end
 end
 arch blocked
 x 21
@@ -1850,7 +1818,7 @@ hp 18
 sp 6
 x 21
 y 8
-fly_on 1
+move_on walk fly_low
 end
 arch teleporter
 hp 21
@@ -1881,7 +1849,6 @@ sp 8
 x 21
 y 13
 speed 0.000000
-protected 31
 connected 31
 end
 arch sign
@@ -1898,7 +1865,6 @@ sp 8
 x 21
 y 14
 speed 0.000000
-protected 32
 connected 32
 end
 arch altar
@@ -1907,7 +1873,6 @@ slaying largenugget
 food 10000
 x 21
 y 14
-protected 100
 connected 100
 end
 arch blocked
@@ -1932,19 +1897,16 @@ end
 arch button_small
 x 22
 y 4
-protected 71
 connected 71
 end
 arch button_small
 x 22
 y 5
-protected 72
 connected 72
 end
 arch button_small
 x 22
 y 6
-protected 73
 connected 73
 end
 arch blocked
@@ -1995,7 +1957,6 @@ hp 7
 sp 8
 x 23
 y 2
-protected 73
 connected 73
 end
 arch random_artifact
@@ -2009,19 +1970,16 @@ end
 arch button_small
 x 23
 y 4
-protected 71
 connected 71
 end
 arch button_small
 x 23
 y 5
-protected 72
 connected 72
 end
 arch button_small
 x 23
 y 6
-protected 73
 connected 73
 end
 arch blocked
@@ -2065,7 +2023,6 @@ hp 23
 sp 5
 x 23
 y 14
-protected 100
 connected 100
 end
 arch scroll
@@ -2094,19 +2051,16 @@ end
 arch button_small
 x 24
 y 4
-protected 71
 connected 71
 end
 arch button_small
 x 24
 y 5
-protected 72
 connected 72
 end
 arch button_small
 x 24
 y 6
-protected 73
 connected 73
 end
 arch blocked

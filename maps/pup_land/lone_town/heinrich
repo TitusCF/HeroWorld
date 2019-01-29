@@ -1,10 +1,14 @@
 arch map
+name Heinrich
+difficulty 1
 region lonetown
-name heinrich
+width 16
+height 16
+enter_x 7
+enter_y 14
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sat Jan 25 23:18:40 1997
+Created:  1997-01-25
+Modified: 2012-02-29 Rick Tanner
 endmsg
 end
 arch grass
@@ -301,7 +305,8 @@ arch cobblestones2
 x 3
 y 2
 end
-arch lake
+arch sea_nsew
+name Bath
 x 3
 y 2
 end
@@ -341,7 +346,7 @@ arch afloor_right
 x 3
 y 8
 end
-arch swall_1_3
+arch swall_2_1_2
 x 3
 y 8
 end
@@ -373,13 +378,8 @@ arch book_clasp
 name diary of Heinrich
 msg
 .....
-Sat Jan 25 23:18:01 JST 1997
-   Today I had a good search all over
-   the northern jungle, but I couldn't
-   find anything pointing to the
-   prehistorical site.
-   I guess I'll go and search in the
-   eastern jungle..
+52 minutes past 10 o'clock pm, on the Day of the Great Gods.  The 20th Day of the Month of the Dragon, Year 389.
+Today I had a good search all over the northern jungle, but I couldn't find anything pointing to the prehistorical site.  I guess I'll go and search in the eastern jungle..
 endmsg
 x 3
 y 12
@@ -417,9 +417,9 @@ y 2
 end
 arch high_boots
 ac 0
-armour 0
 x 4
 y 2
+resist_physical 0
 end
 arch cobblestones2
 x 4
@@ -470,6 +470,10 @@ arch wwall_2_1_1
 x 4
 y 8
 end
+arch swall_1_3_half
+x 4
+y 8
+end
 arch afloor_right
 x 4
 y 9
@@ -488,8 +492,8 @@ exp 0
 ac 0
 x 4
 y 10
+move_block 0
 alive 0
-no_pass 0
 pass_thru 0
 end
 arch afloor_right
@@ -543,8 +547,8 @@ exp 0
 ac 0
 x 5
 y 1
+move_block 0
 alive 0
-no_pass 0
 pass_thru 0
 end
 arch cobblestones2
@@ -565,8 +569,8 @@ exp 0
 ac 0
 x 5
 y 4
+move_block 0
 alive 0
-no_pass 0
 pass_thru 0
 end
 arch woodfloor
@@ -684,8 +688,8 @@ exp 0
 ac 0
 x 6
 y 7
+move_block 0
 alive 0
-no_pass 0
 pass_thru 0
 end
 arch woodfloor
@@ -763,7 +767,11 @@ arch woodfloor
 x 7
 y 4
 end
-arch wwall_3_1
+arch swall_1_4_half
+x 7
+y 4
+end
+arch wwall_2_2_4
 x 7
 y 4
 end
@@ -805,8 +813,8 @@ exp 0
 ac 0
 x 7
 y 11
+move_block 0
 alive 0
-no_pass 0
 pass_thru 0
 end
 arch cobblestones2
@@ -854,6 +862,8 @@ end
 arch firewall_3
 x 8
 y 3
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 8
@@ -1087,8 +1097,8 @@ exp 0
 ac 0
 x 10
 y 10
+move_block 0
 alive 0
-no_pass 0
 pass_thru 0
 end
 arch afloor_right
@@ -1150,7 +1160,11 @@ arch woodfloor
 x 11
 y 4
 end
-arch wwall_3_4
+arch wwall_2_1_1
+x 11
+y 4
+end
+arch swall_1_3_half
 x 11
 y 4
 end

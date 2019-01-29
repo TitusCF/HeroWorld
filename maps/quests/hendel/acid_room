@@ -1,14 +1,15 @@
 arch map
-name acid_room
+name Strange Mountain Chamber
+difficulty 30
+region wilderness
+width 21
+height 50
+enter_x 10
+enter_y 49
 msg
-Creator: Chris Hendelberg 
-Email: hendel@ecst.csuchico.edu
-Date: Wed Nov 17 10:53:52 1993
+Created:  1993-11-17 Chris Hendelberg (hendel@ecst.csuchico.edu)
+Modified: 2008-12-22 Rick Tanner
 endmsg
-hp 10
-sp 49
-x 21
-y 50
 end
 arch blocked
 y 7
@@ -1030,6 +1031,10 @@ face marble_blgr.111
 x 3
 y 35
 end
+arch giant
+x 3
+y 35
+end
 arch marble
 face marble_blgr.111
 x 3
@@ -1214,7 +1219,7 @@ end
 arch spell_sm_lightning
 end
 arch key2
-slaying set_individual_value ACID4
+slaying ACID4
 end
 end
 arch marble
@@ -1343,6 +1348,10 @@ y 35
 end
 arch marble
 face marble_blgr.111
+x 4
+y 36
+end
+arch giant
 x 4
 y 36
 end
@@ -1605,6 +1614,10 @@ face marble_blgr.111
 x 5
 y 32
 end
+arch dragon
+x 5
+y 32
+end
 arch marble
 face marble_blgr.111
 x 5
@@ -1621,6 +1634,10 @@ y 34
 end
 arch marble
 face marble_blgr.111
+x 5
+y 35
+end
+arch giant
 x 5
 y 35
 end
@@ -1878,6 +1895,10 @@ face marble_blgr.111
 x 6
 y 31
 end
+arch dragon
+x 6
+y 31
+end
 arch marble
 face marble_blgr.111
 x 6
@@ -1983,9 +2004,9 @@ x 7
 y 1
 end
 arch evoker_book
-value 1800
 x 7
 y 1
+value 1800
 randomitems none
 arch spell_ball_lightning
 end
@@ -2314,6 +2335,27 @@ arch marble
 face marble_blgr.111
 x 8
 y 6
+end
+arch big_dragon
+Con 15
+Int 25
+hp 6000
+maxhp 6000
+maxsp 40
+x 8
+y 6
+resist_magic -100
+resist_cold 30
+resist_poison -100
+carrying 100
+can_use_scroll 1
+can_use_armour 1
+can_use_weapon 1
+can_use_ring 1
+can_use_range 1
+arch key2
+slaying ACID5
+end
 end
 arch marble
 face marble_blgr.111
@@ -2664,8 +2706,6 @@ x 9
 y 13
 end
 arch gate_closed_2
-msg
-endmsg
 x 9
 y 13
 connected 10
@@ -2965,7 +3005,7 @@ x 10
 y 4
 end
 arch locked_door1
-slaying set_individual_value ACID5
+slaying ACID5
 x 10
 y 4
 end
@@ -3022,7 +3062,7 @@ x 10
 y 12
 end
 arch locked_door1
-slaying set_individual_value ACID4
+slaying ACID4
 x 10
 y 12
 end
@@ -3041,7 +3081,7 @@ x 10
 y 14
 end
 arch locked_door1
-slaying set_individual_value ACID3
+slaying ACID3
 x 10
 y 14
 blocksview 1
@@ -3092,7 +3132,7 @@ x 10
 y 23
 end
 arch locked_door1
-slaying set_individual_value ACID2
+slaying ACID2
 x 10
 y 23
 blocksview 1
@@ -3130,7 +3170,7 @@ end
 arch spell_sm_lightning
 end
 arch key2
-slaying set_individual_value ACID2
+slaying ACID2
 end
 end
 arch marble
@@ -3208,7 +3248,7 @@ x 10
 y 34
 end
 arch locked_door1
-slaying set_individual_value ACID1
+slaying ACID1
 x 10
 y 34
 blocksview 1
@@ -3219,7 +3259,7 @@ x 10
 y 35
 end
 arch key2
-slaying set_individual_value ACID1
+slaying ACID1
 x 10
 y 35
 end
@@ -4160,6 +4200,10 @@ face marble_blgr.111
 x 13
 y 31
 end
+arch dragon
+x 13
+y 31
+end
 arch marble
 face marble_blgr.111
 x 13
@@ -4440,6 +4484,10 @@ y 31
 end
 arch marble
 face marble_blgr.111
+x 14
+y 32
+end
+arch dragon
 x 14
 y 32
 end
@@ -4745,6 +4793,10 @@ face marble_blgr.111
 x 15
 y 35
 end
+arch giant
+x 15
+y 35
+end
 arch marble
 face marble_blgr.111
 x 15
@@ -4929,7 +4981,7 @@ end
 arch spell_mass_confusion
 end
 arch key2
-slaying set_individual_value ACID3
+slaying ACID3
 end
 end
 arch marble
@@ -5058,6 +5110,10 @@ y 35
 end
 arch marble
 face marble_blgr.111
+x 16
+y 36
+end
+arch giant
 x 16
 y 36
 end
@@ -5380,6 +5436,10 @@ y 34
 end
 arch marble
 face marble_blgr.111
+x 17
+y 35
+end
+arch giant
 x 17
 y 35
 end
@@ -6275,65 +6335,4 @@ end
 arch pstone_1
 x 20
 y 49
-end
-arch giant
-x 3
-y 35
-end
-arch giant
-x 4
-y 36
-end
-arch dragon
-x 5
-y 32
-end
-arch giant
-x 5
-y 35
-end
-arch dragon
-x 6
-y 31
-end
-arch big_dragon
-Con 15
-Int 25
-hp 6000
-maxhp 6000
-maxsp 40
-x 8
-y 6
-resist_magic -100
-resist_cold 30
-resist_poison -100
-carrying 100
-can_use_scroll 1
-can_use_wand 1
-can_use_armour 1
-can_use_weapon 1
-can_use_ring 1
-arch key2
-slaying set_individual_value ACID5
-end
-end
-arch dragon
-x 13
-y 31
-end
-arch dragon
-x 14
-y 32
-end
-arch giant
-x 15
-y 35
-end
-arch giant
-x 16
-y 36
-end
-arch giant
-x 17
-y 35
 end

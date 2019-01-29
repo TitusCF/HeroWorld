@@ -1,12 +1,15 @@
 arch map
+name Bizuzu
+difficulty 10
 region pupland
+width 8
+height 13
+enter_x 6
+enter_y 4
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Wed Jun 12 15:57:26 1996
+Created:  1996-06-12
+Modified: 2012-03-06 Rick Tanner
 endmsg
-x 8
-y 13
 end
 arch blocked
 end
@@ -337,6 +340,10 @@ arch dun4
 x 5
 y 3
 end
+arch swall_1_1_half
+x 5
+y 3
+end
 arch dungeon_magic
 x 5
 y 4
@@ -471,11 +478,9 @@ arch serp_priest
 name Bizuzu
 msg
 @match word
-The word is "ARRANGE".
-Please let me live!
+The word is "ARRANGE."  Please let me live!
 @match *
-Ahh!! Please don't kill me!
-I can teach you the holy WORD!
+Ahh!! Please don't kill me! I can teach you the holy WORD!
 endmsg
 x 6
 y 6

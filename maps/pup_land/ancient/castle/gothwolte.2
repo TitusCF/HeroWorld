@@ -1,16 +1,15 @@
 arch map
-region ancientpupland
-name gothwolte
+name Gothwolte, Collection
 reset_timeout 7200
 difficulty 2
+region ancientpupland
 width 37
 height 23
-enter_x 1
-enter_y 1
+enter_x 9
+enter_y 20
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sun Jun  4 16:35:03 2000
+Created:  2000-06-04
+Modified: 2012-02-23 Rick Tanner
 endmsg
 end
 arch blocked
@@ -149,19 +148,18 @@ arch cwall_2_1_2
 x 1
 y 4
 end
-arch shop_empty
-name floor
+arch marble
+face shop_empty.111
 x 1
 y 5
 end
-arch confuse
+arch confusion
 name confusion
 wc 0
 x 1
 y 5
-type 0
 attacktype 0
-flying 0
+move_on walk
 end
 arch marble
 x 1
@@ -171,8 +169,8 @@ arch cwall_2_1_2
 x 1
 y 6
 end
-arch shop_empty
-name floor
+arch marble
+face shop_empty.111
 x 1
 y 7
 end
@@ -187,6 +185,7 @@ x 1
 y 7
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -198,8 +197,8 @@ arch cwall_2_1_2
 x 1
 y 8
 end
-arch shop_empty
-name floor
+arch marble
+face shop_empty.111
 x 1
 y 9
 end
@@ -218,8 +217,8 @@ arch cwall_2_1_2
 x 1
 y 10
 end
-arch shop_empty
-name floor
+arch marble
+face shop_empty.111
 x 1
 y 11
 end
@@ -239,8 +238,8 @@ arch cwall_2_1_2
 x 1
 y 12
 end
-arch shop_empty
-name floor
+arch marble
+face shop_empty.111
 x 1
 y 13
 end
@@ -258,8 +257,8 @@ arch cwall_2_1_2
 x 1
 y 14
 end
-arch shop_empty
-name floor
+arch marble
+face shop_empty.111
 x 1
 y 15
 end
@@ -270,8 +269,8 @@ maxhp 1000
 x 1
 y 15
 randomitems none
-run_away 0
 friendly 1
+run_away 0
 end
 arch marble
 x 1
@@ -281,8 +280,8 @@ arch cwall_2_1_2
 x 1
 y 16
 end
-arch shop_empty
-name floor
+arch marble
+face shop_empty.111
 x 1
 y 17
 end
@@ -546,7 +545,15 @@ arch marble
 x 3
 y 4
 end
+arch swall_1_4_half
+x 3
+y 4
+end
 arch cwall_2_2_4
+x 3
+y 4
+end
+arch swall_1_1_half
 x 3
 y 4
 end
@@ -570,7 +577,15 @@ arch marble
 x 3
 y 6
 end
+arch swall_1_2_half
+x 3
+y 6
+end
 arch cwall_1_3
+x 3
+y 6
+end
+arch swall_1_1_half
 x 3
 y 6
 end
@@ -594,7 +609,15 @@ arch marble
 x 3
 y 8
 end
+arch swall_1_2_half
+x 3
+y 8
+end
 arch cwall_1_3
+x 3
+y 8
+end
+arch swall_1_1_half
 x 3
 y 8
 end
@@ -618,7 +641,15 @@ arch marble
 x 3
 y 10
 end
+arch swall_1_2_half
+x 3
+y 10
+end
 arch cwall_1_3
+x 3
+y 10
+end
+arch swall_1_1_half
 x 3
 y 10
 end
@@ -642,7 +673,15 @@ arch marble
 x 3
 y 12
 end
+arch swall_1_2_half
+x 3
+y 12
+end
 arch cwall_1_3
+x 3
+y 12
+end
+arch swall_1_1_half
 x 3
 y 12
 end
@@ -666,7 +705,15 @@ arch marble
 x 3
 y 14
 end
+arch swall_1_2_half
+x 3
+y 14
+end
 arch cwall_1_3
+x 3
+y 14
+end
+arch swall_1_1_half
 x 3
 y 14
 end
@@ -690,7 +737,15 @@ arch marble
 x 3
 y 16
 end
+arch swall_1_2_half
+x 3
+y 16
+end
 arch cwall_1_3
+x 3
+y 16
+end
+arch swall_1_1_half
 x 3
 y 16
 end
@@ -711,6 +766,14 @@ x 3
 y 18
 end
 arch marble
+x 3
+y 18
+end
+arch swall_1_4_half
+x 3
+y 18
+end
+arch swall_1_2_half
 x 3
 y 18
 end
@@ -757,8 +820,8 @@ arch cwall_2_1_2
 x 4
 y 1
 end
-arch shop_empty
-name floor
+arch marble
+face shop_empty.111
 x 4
 y 2
 end
@@ -877,8 +940,8 @@ y 19
 material 0
 no_pick 1
 end
-arch shop_empty
-name floor
+arch marble
+face shop_empty.111
 x 4
 y 20
 end
@@ -934,6 +997,14 @@ x 5
 y 4
 end
 arch marble
+x 5
+y 4
+end
+arch swall_1_4_half
+x 5
+y 4
+end
+arch swall_1_3_half
 x 5
 y 4
 end
@@ -1025,6 +1096,14 @@ arch marble
 x 5
 y 18
 end
+arch swall_1_4_half
+x 5
+y 18
+end
+arch swall_1_3_half
+x 5
+y 18
+end
 arch cwall_1_1
 x 5
 y 18
@@ -1068,8 +1147,8 @@ arch cwall_2_1_2
 x 6
 y 1
 end
-arch shop_empty
-name floor
+arch marble
+face shop_empty.111
 x 6
 y 2
 end
@@ -1081,7 +1160,7 @@ x 6
 y 2
 type 0
 attacktype 0
-fly_on 0
+move_on walk
 end
 arch marble
 x 6
@@ -1187,8 +1266,8 @@ y 19
 material 0
 no_pick 1
 end
-arch shop_empty
-name floor
+arch marble
+face shop_empty.111
 x 6
 y 20
 end
@@ -1244,6 +1323,14 @@ x 7
 y 4
 end
 arch marble
+x 7
+y 4
+end
+arch swall_1_4_half
+x 7
+y 4
+end
+arch swall_1_3_half
 x 7
 y 4
 end
@@ -1308,6 +1395,10 @@ x 7
 y 18
 end
 arch marble
+x 7
+y 18
+end
+arch swall_1_3_half
 x 7
 y 18
 end
@@ -1487,11 +1578,7 @@ y 1
 end
 arch magic_mouth
 msg
-Ah! That looks like Gothwolte is still
-lacking one last immunity. So it is
-still possible to hurt him with that
-single attacktype. But which one is it? 
-And do you have the appropriate weapon?
+Ah! That looks like Gothwolte is still lacking one last immunity.  So it is still possible to hurt him with that single attacktype.  But which one is it? And do you have the appropriate weapon?
 endmsg
 x 9
 y 2
@@ -1794,6 +1881,14 @@ arch marble
 x 11
 y 4
 end
+arch swall_1_4_half
+x 11
+y 4
+end
+arch swall_1_3_half
+x 11
+y 4
+end
 arch cwall_1_2
 x 11
 y 4
@@ -1858,6 +1953,10 @@ arch marble
 x 11
 y 18
 end
+arch swall_1_4_half
+x 11
+y 18
+end
 arch cwall_1_1
 x 11
 y 18
@@ -1905,8 +2004,8 @@ arch cwall_2_1_2
 x 12
 y 1
 end
-arch shop_empty
-name floor
+arch marble
+face shop_empty.111
 x 12
 y 2
 end
@@ -2023,8 +2122,8 @@ y 19
 material 0
 no_pick 1
 end
-arch shop_empty
-name floor
+arch marble
+face shop_empty.111
 x 12
 y 20
 end
@@ -2078,6 +2177,14 @@ x 13
 y 4
 end
 arch marble
+x 13
+y 4
+end
+arch swall_1_4_half
+x 13
+y 4
+end
+arch swall_1_3_half
 x 13
 y 4
 end
@@ -2169,6 +2276,14 @@ arch marble
 x 13
 y 18
 end
+arch swall_1_4_half
+x 13
+y 18
+end
+arch swall_1_3_half
+x 13
+y 18
+end
 arch cwall_1_1
 x 13
 y 18
@@ -2212,8 +2327,8 @@ arch cwall_2_1_2
 x 14
 y 1
 end
-arch shop_empty
-name floor
+arch marble
+face shop_empty.111
 x 14
 y 2
 end
@@ -2226,7 +2341,7 @@ x 14
 y 2
 type 0
 attacktype 0
-fly_on 0
+move_on walk
 is_used_up 0
 end
 arch marble
@@ -2333,8 +2448,8 @@ y 19
 material 0
 no_pick 1
 end
-arch shop_empty
-name floor
+arch marble
+face shop_empty.111
 x 14
 y 20
 end
@@ -2393,7 +2508,15 @@ arch marble
 x 15
 y 4
 end
+arch swall_1_3_half
+x 15
+y 4
+end
 arch cwall_2_2_1
+x 15
+y 4
+end
+arch swall_1_1_half
 x 15
 y 4
 end
@@ -2417,7 +2540,15 @@ arch marble
 x 15
 y 6
 end
+arch swall_1_2_half
+x 15
+y 6
+end
 arch cwall_1_4
+x 15
+y 6
+end
+arch swall_1_1_half
 x 15
 y 6
 end
@@ -2441,7 +2572,15 @@ arch marble
 x 15
 y 8
 end
+arch swall_1_2_half
+x 15
+y 8
+end
 arch cwall_1_4
+x 15
+y 8
+end
+arch swall_1_1_half
 x 15
 y 8
 end
@@ -2465,7 +2604,15 @@ arch marble
 x 15
 y 10
 end
+arch swall_1_2_half
+x 15
+y 10
+end
 arch cwall_1_4
+x 15
+y 10
+end
+arch swall_1_1_half
 x 15
 y 10
 end
@@ -2489,7 +2636,15 @@ arch marble
 x 15
 y 12
 end
+arch swall_1_2_half
+x 15
+y 12
+end
 arch cwall_1_4
+x 15
+y 12
+end
+arch swall_1_1_half
 x 15
 y 12
 end
@@ -2513,7 +2668,15 @@ arch marble
 x 15
 y 14
 end
+arch swall_1_2_half
+x 15
+y 14
+end
 arch cwall_1_4
+x 15
+y 14
+end
+arch swall_1_1_half
 x 15
 y 14
 end
@@ -2537,7 +2700,15 @@ arch marble
 x 15
 y 16
 end
+arch swall_1_2_half
+x 15
+y 16
+end
 arch cwall_1_4
+x 15
+y 16
+end
+arch swall_1_1_half
 x 15
 y 16
 end
@@ -2558,6 +2729,14 @@ x 15
 y 18
 end
 arch marble
+x 15
+y 18
+end
+arch swall_1_3_half
+x 15
+y 18
+end
+arch swall_1_2_half
 x 15
 y 18
 end
@@ -2809,8 +2988,8 @@ arch cwall_2_1_2
 x 17
 y 4
 end
-arch shop_empty
-name floor
+arch marble
+face shop_empty.111
 x 17
 y 5
 end
@@ -2827,8 +3006,8 @@ arch cwall_2_1_2
 x 17
 y 6
 end
-arch shop_empty
-name floor
+arch marble
+face shop_empty.111
 x 17
 y 7
 end
@@ -2849,8 +3028,8 @@ arch cwall_2_1_2
 x 17
 y 8
 end
-arch shop_empty
-name floor
+arch marble
+face shop_empty.111
 x 17
 y 9
 end
@@ -2871,8 +3050,8 @@ arch cwall_2_1_2
 x 17
 y 10
 end
-arch shop_empty
-name floor
+arch marble
+face shop_empty.111
 x 17
 y 11
 end
@@ -2893,8 +3072,8 @@ arch cwall_2_1_2
 x 17
 y 12
 end
-arch shop_empty
-name floor
+arch marble
+face shop_empty.111
 x 17
 y 13
 end
@@ -2918,8 +3097,8 @@ arch cwall_2_1_2
 x 17
 y 14
 end
-arch shop_empty
-name floor
+arch marble
+face shop_empty.111
 x 17
 y 15
 end
@@ -2942,8 +3121,8 @@ arch cwall_2_1_2
 x 17
 y 16
 end
-arch shop_empty
-name floor
+arch marble
+face shop_empty.111
 x 17
 y 17
 end
@@ -3528,10 +3707,7 @@ end
 arch book_read
 name the days of rulership
 msg
-I am looking forward to my life as an
-invincible form of being. I'll reshape
-this planet, and the disgusting human
-race will be the first to be extincted! 
+I am looking forward to my life as an invincible form of being.  I'll reshape this planet, and the disgusting human race will be the first to be made extinct!
 endmsg
 x 21
 y 18
@@ -4319,10 +4495,7 @@ end
 arch book_read
 name diary of Gothwolte
 msg
-... The Evil Masters still don't want
-to accept me as their leader. But
-once I found my last missing immunity
-they'll have no choice! ..
+... The Evil Masters still don't want to accept me as their leader.  But once I find my last missing immunity they'll have no choice! ..
 endmsg
 x 27
 y 10
@@ -4506,13 +4679,7 @@ end
 arch book_read
 name treasury
 msg
-My treasure hoard inside the volcano is
-endangered by the present seismic
-activities there. The tunnel-system
-could collapse any time. However, I
-don't really care - I am so close to
-perfect immunity, I won't have to pay
-for anything anymore... 
+My treasure hoard inside the volcano is endangered by the present seismic activities there.  The tunnel-system could collapse any time.  However, I don't really care - I am so close to perfect immunity, I won't have to pay for anything anymore...
 endmsg
 x 28
 y 14
@@ -5105,14 +5272,7 @@ end
 arch book_read
 name of bodies and minds
 msg
-This new body was one big stroke of
-luck! It came rushing into my castle
-and it was so strong, it managed to
-slaughter my old incarnation. And then
-the common mistake: Thought I was dead
-and picked up the sword. My new frame
-feels great. My quest for the perfect
-body was finally successful.
+This new body was one big stroke of luck! It came rushing into my castle and it was so strong, it managed to slaughter my old incarnation.  And then the common mistake: Thought I was dead and picked up the sword.  My new frame feels great.  My quest for the perfect body was finally successful.
 endmsg
 x 33
 y 6
@@ -5358,14 +5518,7 @@ end
 arch book_read
 name the way to perfection
 msg
-The Terrorslug I ordered has finally
-been delivered. I need it's skin to
-prepare the last immunity scroll.
-Unfortunately it appears to be quite
-strong so my minions don't dare to
-leave the castle these days. 
-Very amusing that the townsmen believe
-the `locked entrance' would hinder us. 
+The Terrorslug I ordered has finally been delivered.  I need it's skin to prepare the last immunity scroll.  Unfortunately it appears to be quite strong so my minions don't dare to leave the castle these days.  Very amusing that the townsmen believe the `locked entrance' would hinder us.
 endmsg
 x 34
 y 14

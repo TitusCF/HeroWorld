@@ -1,12 +1,15 @@
 arch map
-name GroundLevel
-msg
-Creator: peterm
-Email: peterm@soda.berkeley.edu
-Date: Sat Apr 30 20:50:08 1994
-endmsg
+name Tower of Demonology Fire Study
+difficulty 20
+region wilderness
 width 9
 height 9
+enter_x 7
+enter_y 7
+msg
+Created:  1994-04-30 peterm (peterm@soda.berkeley.edu)
+Modified: 2009-07-12 Andreas Kirschbaum
+endmsg
 end
 arch woodfloor
 end
@@ -260,9 +263,7 @@ y 4
 end
 arch wizard
 name Master Fire Summoner
-type 0
 Str 0
-Dex 0
 Con 6
 Wis 30
 Int 12
@@ -273,15 +274,17 @@ maxsp 140
 exp 24000
 dam 20
 ac 0
+x 4
+y 4
 speed 0.400000
 attack_movement 7
 level 30
-immune 4
+type 0
+resist_fire 100
 carrying 100
+move_type walk
 monster 1
 can_cast_spell 1
-x 4
-y 4
 arch spell_summon_fire_elemental
 end
 arch key2
@@ -476,6 +479,10 @@ arch woodfloor
 x 7
 y 6
 end
+arch dungeon_magic
+x 7
+y 7
+end
 arch woodfloor
 x 7
 y 7
@@ -484,10 +491,6 @@ arch stair_down
 slaying FireTower2
 hp 7
 sp 7
-x 7
-y 7
-end
-arch dungeon_magic
 x 7
 y 7
 end

@@ -1,15 +1,17 @@
 arch map
+name Raffle 2, Level 2a
+swap_time 5
+reset_timeout 3600
+difficulty 18
 region pupland
-name raffle
+width 27
+height 24
+enter_x 2
+enter_y 16
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sun Dec 29 03:15:18 1996
+Created:  1996-12-29
+Modified: 2012-03-06 Rick Tanner
 endmsg
-x 27
-y 24
-value 5
-weight 3600
 end
 arch flagstone
 end
@@ -926,7 +928,7 @@ end
 arch dun3
 x 6
 y 2
-no_pass 0
+move_block 0
 end
 arch door_look_2
 hp 1000
@@ -1259,7 +1261,7 @@ end
 arch stair_down
 slaying raffle2_u3
 hp 1
-sp 11
+sp 10
 x 8
 y 13
 end
@@ -1828,7 +1830,7 @@ end
 arch dun3
 x 12
 y 2
-no_pass 0
+move_block 0
 end
 arch door_look_2
 hp 2000
@@ -1911,7 +1913,7 @@ end
 arch dun3
 x 12
 y 11
-no_pass 0
+move_block 0
 end
 arch door_look_2
 hp 4000
@@ -1947,7 +1949,7 @@ end
 arch dun3
 x 12
 y 14
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 12
@@ -2207,8 +2209,7 @@ y 15
 end
 arch sign
 msg
-Try your luck and strength.
-You have two chances.
+Try your luck and strength.  You have two chances.
 endmsg
 x 14
 y 15
@@ -2473,7 +2474,7 @@ y 12
 end
 arch magic_mouth
 msg
-a boulder of 100 tons
+A boulder of 100 tons.
 endmsg
 x 16
 y 13
@@ -2492,7 +2493,7 @@ y 14
 end
 arch magic_mouth
 msg
-a boulder of 200 tons
+A boulder of 200 tons.
 endmsg
 x 16
 y 15
@@ -2511,7 +2512,7 @@ y 16
 end
 arch magic_mouth
 msg
-a boulder of 400 tons
+A boulder of 400 tons.
 endmsg
 x 16
 y 17
@@ -2838,6 +2839,8 @@ end
 arch lightningwall_3
 x 18
 y 20
+arch spell_sm_lightning
+end
 end
 arch blocked
 x 18
@@ -2846,6 +2849,8 @@ end
 arch lightningwall_3
 x 18
 y 22
+arch spell_sm_lightning
+end
 end
 arch blocked
 x 18
@@ -3817,6 +3822,8 @@ end
 arch lightningwall_7
 x 24
 y 21
+arch spell_sm_lightning
+end
 end
 arch blocked
 x 24

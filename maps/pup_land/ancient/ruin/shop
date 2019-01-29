@@ -1,15 +1,19 @@
 arch map
+name Shining Village Shop
+difficulty 1
 region ancientpupland
-name shop
+width 16
+height 16
+enter_x 1
+enter_y 1
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue Apr 30 22:06:11 1996
+Created:  1996-02-30
+Modified: 2008-12-03 Rick Tanner
 endmsg
 end
 arch pstone_1
 end
-arch wall_2_2_2
+arch wall_1_1
 end
 arch pstone_1
 y 1
@@ -110,17 +114,13 @@ end
 arch pstone_1
 x 1
 end
-arch wall_2_1_2
-x 1
-end
-arch pstone_1
-x 1
-y 1
-end
-arch oakdoor
+arch oakdoor_2
 slaying village
 hp 9
 sp 9
+x 1
+end
+arch pstone_1
 x 1
 y 1
 end
@@ -214,7 +214,7 @@ end
 arch pstone_1
 x 2
 end
-arch wall_1_3_ruin
+arch wall_1_4
 x 2
 end
 arch pstone_1
@@ -303,13 +303,10 @@ arch wall_2_1_2
 x 2
 y 15
 end
-arch invis_exit
-slaying village
-hp 9
-sp 9
+arch pstone_1
 x 3
 end
-arch pstone_1
+arch wall_1_3_ruin
 x 3
 end
 arch pstone_1
@@ -413,17 +410,16 @@ arch wall_2_1_2
 x 3
 y 15
 end
+arch invis_exit
+slaying village
+hp 9
+sp 9
+x 4
+end
 arch pstone_1
 x 4
 end
-arch wall_1_4_ruin
-x 4
-end
 arch pstone_1
-x 4
-y 1
-end
-arch swall_2_1_1
 x 4
 y 1
 end
@@ -524,7 +520,7 @@ end
 arch pstone_1
 x 5
 end
-arch wall_2_1_2
+arch wall_1_4_ruin
 x 5
 end
 arch pstone_1

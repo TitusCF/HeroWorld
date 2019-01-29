@@ -1,12 +1,15 @@
 arch map
-name Jesus wept even deeper
+name Valriel Wept Even Deeper
+difficulty 15
+region euthville
+width 25
+height 25
+enter_x 23
+enter_y 23
 msg
-Creator: 
-Email: 
-Date: Wed Nov 24 16:15:43 1993
+Created:  1993-11-24
+Modified: 2008-12-21 Rick Tanner
 endmsg
-x 25
-y 25
 end
 arch flagstone
 end
@@ -794,6 +797,15 @@ end
 arch flagstone
 x 6
 y 8
+end
+arch troll
+name Plague Trolls
+sp 25
+dam 7
+x 6
+y 8
+attacktype 129
+can_cast_spell 1
 end
 arch flagstone
 x 6
@@ -1729,7 +1741,7 @@ arch flagstone
 x 13
 y 21
 end
-arch rough_wall_2_1_1
+arch roughwall_1_1
 x 13
 y 21
 end
@@ -2067,7 +2079,7 @@ arch flagstone
 x 16
 y 19
 end
-arch rough_wall_2_1_1
+arch roughwall_1_1
 x 16
 y 19
 end
@@ -2075,7 +2087,7 @@ arch flagstone
 x 16
 y 20
 end
-arch rough_wall_2_1_1
+arch roughwall_1_2
 x 16
 y 20
 end
@@ -2086,6 +2098,15 @@ end
 arch flagstone
 x 16
 y 22
+end
+arch troll
+name Plague Trolls
+sp 25
+dam 7
+x 16
+y 22
+attacktype 129
+can_cast_spell 1
 end
 arch flagstone
 x 16
@@ -2136,6 +2157,15 @@ end
 arch flagstone
 x 17
 y 7
+end
+arch troll
+name Plague Trolls
+sp 25
+dam 7
+x 17
+y 7
+attacktype 129
+can_cast_spell 1
 end
 arch flagstone
 x 17
@@ -2421,6 +2451,10 @@ arch flagstone
 x 19
 y 17
 end
+arch roughwall_1_2
+x 19
+y 17
+end
 arch flagstone
 x 19
 y 18
@@ -2571,7 +2605,7 @@ arch flagstone
 x 20
 y 21
 end
-arch rough_wall_2_1_2
+arch rough_wall_1_4
 x 20
 y 21
 end
@@ -3142,31 +3176,4 @@ end
 arch bwall_2_2_4
 x 24
 y 24
-end
-arch troll
-name Plague Trolls
-sp 25
-dam 7
-x 6
-y 8
-attacktype 129
-can_cast_spell 1
-end
-arch troll
-name Plague Trolls
-sp 25
-dam 7
-x 16
-y 22
-attacktype 129
-can_cast_spell 1
-end
-arch troll
-name Plague Trolls
-sp 25
-dam 7
-x 17
-y 7
-attacktype 129
-can_cast_spell 1
 end

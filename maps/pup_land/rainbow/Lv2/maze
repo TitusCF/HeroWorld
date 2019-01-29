@@ -1,12 +1,15 @@
 arch map
+name BlackMind Maze
+difficulty 1
 region pupland
+width 11
+height 15
+enter_x 5
+enter_y 13
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Fri Jun 14 15:29:59 1996
+Created:  1996-06-14
+Modified: 2012-03-07 Rick Tanner
 endmsg
-x 11
-y 15
 end
 arch cobblestones2
 end
@@ -678,7 +681,7 @@ end
 arch dun3
 x 4
 y 12
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 4
@@ -818,9 +821,8 @@ end
 arch locked_door1
 slaying kum
 msg
-This is my door. Never enter!
-                            
-                        Kum
+This is my door.  Never enter!
+   Kum
 endmsg
 x 5
 y 9

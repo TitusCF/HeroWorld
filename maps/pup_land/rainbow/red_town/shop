@@ -1,14 +1,18 @@
 arch map
+name Bobo's Shop
+difficulty 15
 region pupland
-msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sun Oct 22 19:03:57 2000
-endmsg
-x 13
 shopitems weapon:25;bow:10;armour:10;shield:10;helmet:10;cloak:15;boots:10;gloves:10;bracers:10;girdle:5;food:40;flesh:40;wand:20;rod:15;*:-60
 shopmax 6000
 shoprace dwarf
+width 13
+height 16
+enter_x 6
+enter_y 12
+msg
+Created:  2000-10-22
+Modified: 2008-12-14 Rick Tanner
+endmsg
 end
 arch woodfloor
 end
@@ -63,6 +67,9 @@ arch wwall_2_1_1
 y 8
 end
 arch woodfloor
+y 9
+end
+arch swall_1_4_half
 y 9
 end
 arch wwall_2_1_1
@@ -137,7 +144,7 @@ arch woodfloor
 x 1
 y 9
 end
-arch swall_1_4
+arch swall_2_1_2
 x 1
 y 9
 end
@@ -585,8 +592,8 @@ level 0
 type 0
 material 0
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 pass_thru 0
 end
 arch dungeon_magic
@@ -973,7 +980,7 @@ arch woodfloor
 x 11
 y 9
 end
-arch swall_1_3
+arch swall_2_1_2
 x 11
 y 9
 end
@@ -990,12 +997,13 @@ x 11
 y 11
 end
 arch altar
-name altar of detect curse (25 gp)
+name altar of detect curse (25 sp)
 slaying money
-sp 79
-food 250
+food 25
 x 11
 y 11
+arch spell_detect_curse
+end
 end
 arch woodfloor
 x 11
@@ -1092,6 +1100,10 @@ x 12
 y 9
 end
 arch wwall_2_1_1
+x 12
+y 9
+end
+arch swall_1_3_half
 x 12
 y 9
 end

@@ -1,14 +1,19 @@
 arch map
-name wyvern_quest
-msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Wed Jun  7 18:28:01 2000
-endmsg
+name Wyvern Quest
+difficulty 15
+region wilderness
 width 21
 height 37
 enter_x 1
 enter_y 2
+msg
+Created:  2000-06-07
+Modified: 2010-05-05 Cavesomething
+endmsg
+maplore
+@quest Scorn Royalty Quest
+Slithselest is here
+endmaplore
 end
 arch medium_stones
 end
@@ -321,9 +326,9 @@ y 19
 end
 arch chest
 hp -1
-carrying 100000
 x 1
 y 19
+carrying 100000
 arch plate_mail
 end
 end
@@ -351,9 +356,61 @@ arch medium_stones
 x 1
 y 25
 end
+arch dragon
+name medium wyvern
+Con 1
+Pow 1
+exp 2000
+dam 12
+ac 8
+x 1
+y 25
+speed -0.035000
+level 4
+carrying 7500
+arch dragon_steak
+name medium wyvern's steak
+food 403
+resist_cold -100
+resist_confusion -100
+value 20
+weight 7500
+no_steal 1
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
+end
 arch medium_stones
 x 1
 y 26
+end
+arch dragon
+name medium wyvern
+Con 1
+Pow 1
+exp 2000
+dam 12
+ac 8
+x 1
+y 26
+speed -0.035000
+level 4
+carrying 7500
+arch dragon_steak
+name medium wyvern's steak
+food 403
+resist_cold -100
+resist_confusion -100
+value 20
+weight 7500
+no_steal 1
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
 end
 arch medium_stones
 x 1
@@ -377,9 +434,9 @@ y 31
 end
 arch chest
 hp -1
-carrying 15000
 x 1
 y 31
+carrying 15000
 arch round_shield
 end
 end
@@ -397,9 +454,9 @@ y 34
 end
 arch chest
 hp -1
-carrying 500
 x 1
 y 34
+carrying 500
 arch pearl
 nrof 10
 end
@@ -407,6 +464,32 @@ end
 arch medium_stones
 x 1
 y 35
+end
+arch dragon
+name medium wyvern
+Con 1
+Pow 1
+exp 2000
+dam 12
+ac 8
+x 1
+y 35
+speed -0.035000
+level 4
+carrying 7500
+arch dragon_steak
+name medium wyvern's steak
+food 403
+resist_cold -100
+resist_confusion -100
+value 20
+weight 7500
+no_steal 1
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
 end
 arch medium_stones
 x 1
@@ -486,6 +569,24 @@ arch medium_stones
 x 2
 y 16
 end
+arch dragon
+x 2
+y 16
+carrying 37500
+arch dragon_wing
+name wyvern's wing
+food 5
+resist_cold -100
+resist_confusion -100
+value 400
+weight 37500
+no_steal 1
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
+end
 arch medium_stones
 x 2
 y 17
@@ -496,9 +597,9 @@ y 18
 end
 arch chest
 hp -1
-carrying 9000
 x 2
 y 18
+carrying 9000
 arch axe_4
 weight 9000
 magic 1
@@ -546,9 +647,9 @@ y 28
 end
 arch chest
 hp -1
-carrying 5000
 x 2
 y 28
+carrying 5000
 arch cloak
 end
 end
@@ -606,9 +707,9 @@ y 33
 end
 arch chest
 hp -1
-carrying 100
 x 2
 y 33
+carrying 100
 arch pouch
 end
 end
@@ -618,9 +719,9 @@ y 34
 end
 arch chest
 hp -1
-carrying 20000
 x 2
 y 34
+carrying 20000
 arch leather_armour
 end
 end
@@ -686,15 +787,41 @@ arch medium_stones
 x 3
 y 11
 end
+arch dragon
+name medium wyvern
+Con 1
+Pow 1
+exp 2000
+dam 12
+ac 8
+x 3
+y 11
+speed -0.035000
+level 4
+carrying 7500
+arch dragon_steak
+name medium wyvern's steak
+food 403
+resist_cold -100
+resist_confusion -100
+value 20
+weight 7500
+no_steal 1
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
+end
 arch medium_stones
 x 3
 y 12
 end
 arch chest
 hp -1
-carrying 1500
 x 3
 y 12
+carrying 1500
 arch water
 end
 end
@@ -737,6 +864,14 @@ end
 arch medium_stones
 x 3
 y 22
+end
+arch dragon
+x 3
+y 22
+arch abil_burning_hands
+end
+arch abil_fear
+end
 end
 arch medium_stones
 x 3
@@ -785,19 +920,32 @@ end
 arch altar_devourers
 x 3
 y 30
-end
-arch medium_stones
-x 3
-y 31
+level 120
 end
 arch blackmarble
 x 3
 y 31
 end
-arch generate_skeleton
-speed_left -0.106000
+arch vampire
+name Chapel Keeper
 x 3
 y 31
+carrying 10020
+unaggressive 1
+arch abil_fear
+end
+arch abil_fear
+end
+arch abil_fear
+end
+arch cloak
+end
+arch ring
+end
+arch book_read
+name Manual
+name_pl Manuals
+end
 end
 arch medium_stones
 x 3
@@ -961,50 +1109,28 @@ arch stwall_2_1_2
 x 4
 y 29
 end
-arch medium_stones
-x 4
-y 30
-end
 arch blackmarble
 x 4
 y 30
 end
 arch generate_skeleton
-speed_left -0.106000
 x 4
 y 30
+speed_left -0.106000
 end
 arch medium_stones
 x 4
 y 31
 end
+arch button_small
+x 4
+y 31
+invisible 1
+connected 1
+end
 arch blackmarble
 x 4
 y 31
-end
-arch vampire
-name Chapel Keeper
-carrying 10020
-unaggressive 1
-x 4
-y 31
-arch abil_fear
-end
-arch abil_fear
-end
-arch abil_fear
-end
-arch cloak
-end
-arch book
-name manual
-sp 4
-exp 700
-level 1
-value 700
-end
-arch ring
-end
 end
 arch medium_stones
 x 4
@@ -1015,30 +1141,24 @@ x 4
 y 32
 end
 arch rune_drain_magic
-speed_left -1.100000
 x 4
 y 32
+speed_left -1.100000
 end
 arch stwall_closed_1
 x 4
 y 32
+connected 1
+end
+arch button_small
+x 4
+y 33
+invisible 1
+connected 1
 end
 arch medium_stones
 x 4
 y 33
-end
-arch button_small
-invisible 1
-x 4
-y 33
-end
-arch chest
-hp -1
-carrying 2000
-x 4
-y 33
-arch dagger
-end
 end
 arch medium_stones
 x 4
@@ -1148,9 +1268,9 @@ y 21
 end
 arch chest
 hp -1
-carrying 60000
 x 5
 y 21
+carrying 60000
 arch chain_mail
 end
 end
@@ -1236,9 +1356,9 @@ y 33
 end
 arch chest
 hp -1
-carrying 6500
 x 5
 y 33
+carrying 6500
 arch poison
 end
 end
@@ -1408,15 +1528,11 @@ arch medium_stones
 x 6
 y 22
 end
-arch dun_1_1
-x 6
-y 22
-end
 arch medium_stones
 x 6
 y 23
 end
-arch dun_2_1_1
+arch dun_1_1
 x 6
 y 23
 end
@@ -1448,7 +1564,7 @@ arch medium_stones
 x 6
 y 27
 end
-arch dun_2_1_1
+arch dun_1_2
 x 6
 y 27
 end
@@ -1480,7 +1596,7 @@ arch medium_stones
 x 6
 y 34
 end
-arch dun_2_1_1
+arch dun_1_1
 x 6
 y 34
 end
@@ -1532,9 +1648,9 @@ y 6
 end
 arch chest
 hp -1
-carrying 90
 x 7
 y 6
+carrying 90
 arch silvercoin
 nrof 9
 end
@@ -1561,9 +1677,9 @@ y 10
 end
 arch chest
 hp -1
-carrying 20000
 x 7
 y 10
+carrying 20000
 arch leather_armour
 title of Clumsiness
 Dex -1
@@ -1602,6 +1718,32 @@ end
 arch medium_stones
 x 7
 y 18
+end
+arch dragon
+name medium wyvern
+Con 1
+Pow 1
+exp 2000
+dam 12
+ac 8
+x 7
+y 18
+speed -0.035000
+level 4
+carrying 37500
+arch dragon_wing
+name medium wyvern's wing
+food 3
+resist_cold -100
+resist_confusion -100
+value 200
+weight 37500
+no_steal 1
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
 end
 arch medium_stones
 x 7
@@ -1647,15 +1789,33 @@ arch medium_stones
 x 7
 y 29
 end
+arch dragon
+x 7
+y 29
+carrying 37500
+arch dragon_wing
+name wyvern's wing
+food 5
+resist_cold -100
+resist_confusion -100
+value 400
+weight 37500
+no_steal 1
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
+end
 arch medium_stones
 x 7
 y 30
 end
 arch chest
 hp -1
-carrying 22950
 x 7
 y 30
+carrying 22950
 arch rune_burning_hands
 end
 arch potioncon
@@ -1723,9 +1883,9 @@ y 4
 end
 arch chest
 hp -1
-carrying 9000
 x 8
 y 4
+carrying 9000
 arch axe_4
 title of Gnarg
 dam 8
@@ -1790,6 +1950,24 @@ arch medium_stones
 x 8
 y 17
 end
+arch dragon
+x 8
+y 17
+carrying 7500
+arch dragon_steak
+name wyvern's steak
+food 405
+resist_cold -100
+resist_confusion -100
+value 40
+weight 7500
+no_steal 1
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
+end
 arch medium_stones
 x 8
 y 18
@@ -1800,9 +1978,9 @@ y 19
 end
 arch chest
 hp -1
-carrying 90000
 x 8
 y 19
+carrying 90000
 arch plate_mail
 resist_physical 42
 weight 90000
@@ -1820,6 +1998,25 @@ end
 arch medium_stones
 x 8
 y 22
+end
+arch dragon
+name medium wyvern
+Con 1
+Pow 1
+exp 2000
+dam 12
+ac 8
+x 8
+y 22
+speed -0.035000
+level 4
+carrying 1
+arch dragonclaw
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
 end
 arch medium_stones
 x 8
@@ -1985,9 +2182,9 @@ y 23
 end
 arch chest
 hp -1
-carrying 3100
 x 9
 y 23
+carrying 3100
 arch trap_blades
 end
 arch carrot
@@ -2038,6 +2235,22 @@ arch medium_stones
 x 9
 y 32
 end
+arch dragon
+name medium wyvern
+Con 1
+Pow 1
+exp 2000
+dam 12
+ac 8
+x 9
+y 32
+speed -0.035000
+level 4
+arch abil_burning_hands
+end
+arch abil_fear
+end
+end
 arch medium_stones
 x 9
 y 33
@@ -2120,6 +2333,32 @@ arch medium_stones
 x 10
 y 13
 end
+arch dragon
+name medium wyvern
+Con 1
+Pow 1
+exp 2000
+dam 12
+ac 8
+x 10
+y 13
+speed -0.035000
+level 4
+carrying 7500
+arch dragon_steak
+name medium wyvern's steak
+food 403
+resist_cold -100
+resist_confusion -100
+value 20
+weight 7500
+no_steal 1
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
+end
 arch medium_stones
 x 10
 y 14
@@ -2131,6 +2370,32 @@ end
 arch medium_stones
 x 10
 y 16
+end
+arch dragon
+name medium wyvern
+Con 1
+Pow 1
+exp 2000
+dam 12
+ac 8
+x 10
+y 16
+speed -0.035000
+level 4
+carrying 37500
+arch dragon_wing
+name medium wyvern's wing
+food 3
+resist_cold -100
+resist_confusion -100
+value 200
+weight 37500
+no_steal 1
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
 end
 arch medium_stones
 x 10
@@ -2158,9 +2423,9 @@ y 22
 end
 arch chest
 hp -1
-carrying 28670
 x 10
 y 22
+carrying 28670
 arch rune_burning_hands
 end
 arch lspear
@@ -2182,15 +2447,34 @@ arch medium_stones
 x 10
 y 24
 end
+arch dragon
+name medium wyvern
+Con 1
+Pow 1
+exp 2000
+dam 12
+ac 8
+x 10
+y 24
+speed -0.035000
+level 4
+carrying 1
+arch dragonclaw
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
+end
 arch medium_stones
 x 10
 y 25
 end
 arch chest
 hp -1
-carrying 11600
 x 10
 y 25
+carrying 11600
 arch sword_3
 weight 11600
 magic 2
@@ -2304,9 +2588,9 @@ y 12
 end
 arch chest
 hp -1
-carrying 880
 x 11
 y 12
+carrying 880
 arch silvercoin
 nrof 88
 end
@@ -2325,9 +2609,9 @@ y 15
 end
 arch chest
 hp -1
-carrying 15000
 x 11
 y 15
+carrying 15000
 arch scimitar
 end
 end
@@ -2370,6 +2654,17 @@ end
 arch medium_stones
 x 11
 y 25
+end
+arch dragon
+x 11
+y 25
+carrying 1
+arch dragonclaw
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
 end
 arch medium_stones
 x 11
@@ -2444,6 +2739,32 @@ end
 arch medium_stones
 x 12
 y 5
+end
+arch dragon
+name medium wyvern
+Con 1
+Pow 1
+exp 2000
+dam 12
+ac 8
+x 12
+y 5
+speed -0.035000
+level 4
+carrying 37500
+arch dragon_wing
+name medium wyvern's wing
+food 3
+resist_cold -100
+resist_confusion -100
+value 200
+weight 37500
+no_steal 1
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
 end
 arch medium_stones
 x 12
@@ -2577,15 +2898,11 @@ arch medium_stones
 x 12
 y 26
 end
-arch dun_1_1
-x 12
-y 26
-end
 arch medium_stones
 x 12
 y 27
 end
-arch dun_2_1_1
+arch dun_1_1
 x 12
 y 27
 end
@@ -2679,6 +2996,32 @@ arch medium_stones
 x 13
 y 3
 end
+arch dragon
+name medium wyvern
+Con 1
+Pow 1
+exp 2000
+dam 12
+ac 8
+x 13
+y 3
+speed -0.035000
+level 4
+carrying 7500
+arch dragon_steak
+name medium wyvern's steak
+food 403
+resist_cold -100
+resist_confusion -100
+value 20
+weight 7500
+no_steal 1
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
+end
 arch medium_stones
 x 13
 y 4
@@ -2718,6 +3061,32 @@ end
 arch medium_stones
 x 13
 y 12
+end
+arch dragon
+name medium wyvern
+Con 1
+Pow 1
+exp 2000
+dam 12
+ac 8
+x 13
+y 12
+speed -0.035000
+level 4
+carrying 7500
+arch dragon_steak
+name medium wyvern's steak
+food 403
+resist_cold -100
+resist_confusion -100
+value 20
+weight 7500
+no_steal 1
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
 end
 arch medium_stones
 x 13
@@ -2839,9 +3208,9 @@ y 2
 end
 arch chest
 hp -1
-carrying 23100
 x 14
 y 2
+carrying 23100
 arch rune_frost
 end
 arch potionint
@@ -2924,9 +3293,9 @@ y 15
 end
 arch chest
 hp -1
-carrying 5000
 x 14
 y 15
+carrying 5000
 arch cloak
 end
 end
@@ -3074,9 +3443,9 @@ y 11
 end
 arch chest
 hp -1
-carrying 20000
 x 15
 y 11
+carrying 20000
 arch high_shield
 end
 end
@@ -3138,9 +3507,9 @@ y 24
 end
 arch chest
 hp -1
-carrying 18700
 x 15
 y 24
+carrying 18700
 arch rune_create_bomb
 end
 arch bolt
@@ -3222,9 +3591,9 @@ y 3
 end
 arch chest
 hp -1
-carrying 2000
 x 16
 y 3
+carrying 2000
 arch low_boots
 end
 end
@@ -3312,6 +3681,32 @@ arch medium_stones
 x 16
 y 22
 end
+arch dragon
+name medium wyvern
+Con 1
+Pow 1
+exp 2000
+dam 12
+ac 8
+x 16
+y 22
+speed -0.035000
+level 4
+carrying 7500
+arch dragon_steak
+name medium wyvern's steak
+food 403
+resist_cold -100
+resist_confusion -100
+value 20
+weight 7500
+no_steal 1
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
+end
 arch medium_stones
 x 16
 y 23
@@ -3339,6 +3734,25 @@ end
 arch medium_stones
 x 16
 y 29
+end
+arch dragon
+name Slithselest
+x 16
+y 29
+carrying 25
+arch dragon_wing
+name Slithselest's wing
+material 0
+arch quest_prevent_drop
+name scorn/WyvernWing 50
+end
+arch quest_advance_pickup
+name scorn/WyvernWing 30>40
+end
+end
+arch quest_advance_death
+name scorn/WyvernWing 20>30
+end
 end
 arch medium_stones
 x 16
@@ -3404,9 +3818,9 @@ y 6
 end
 arch chest
 hp -1
-carrying 1500
 x 17
 y 6
+carrying 1500
 arch water
 end
 end
@@ -3457,6 +3871,32 @@ end
 arch medium_stones
 x 17
 y 16
+end
+arch dragon
+name medium wyvern
+Con 1
+Pow 1
+exp 2000
+dam 12
+ac 8
+x 17
+y 16
+speed -0.035000
+level 4
+carrying 7500
+arch dragon_steak
+name medium wyvern's steak
+food 403
+resist_cold -100
+resist_confusion -100
+value 20
+weight 7500
+no_steal 1
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
 end
 arch medium_stones
 x 17
@@ -3606,9 +4046,9 @@ y 13
 end
 arch chest
 hp -1
-carrying 13950
 x 18
 y 13
+carrying 13950
 arch hammer_2
 weight 13950
 magic 1
@@ -4173,483 +4613,4 @@ end
 arch dun_2_2_4
 x 20
 y 36
-end
-arch dragon
-name medium wyvern
-Con 1
-Pow 1
-hp 200
-exp 2000
-dam 12
-wc 8
-ac 8
-speed -0.035000
-level 4
-carrying 7500
-x 1
-y 25
-arch dragon_steak
-name medium wyvern's steak
-food 403
-resist_cold -100
-resist_confusion -100
-value 20
-weight 7500
-no_steal 1
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
-end
-arch dragon
-name medium wyvern
-Con 1
-Pow 1
-hp 200
-exp 2000
-dam 12
-wc 8
-ac 8
-speed -0.035000
-level 4
-carrying 7500
-x 1
-y 26
-arch dragon_steak
-name medium wyvern's steak
-food 403
-resist_cold -100
-resist_confusion -100
-value 20
-weight 7500
-no_steal 1
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
-end
-arch dragon
-name medium wyvern
-Con 1
-Pow 1
-hp 200
-exp 2000
-dam 12
-wc 8
-ac 8
-speed -0.035000
-level 4
-carrying 7500
-x 1
-y 35
-arch dragon_steak
-name medium wyvern's steak
-food 403
-resist_cold -100
-resist_confusion -100
-value 20
-weight 7500
-no_steal 1
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
-end
-arch dragon
-carrying 37500
-x 2
-y 16
-arch dragon_wing
-name wyvern's wing
-food 5
-resist_cold -100
-resist_confusion -100
-value 400
-weight 37500
-no_steal 1
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
-end
-arch dragon
-name medium wyvern
-Con 1
-Pow 1
-hp 200
-exp 2000
-dam 12
-wc 8
-ac 8
-speed -0.035000
-level 4
-carrying 7500
-x 3
-y 11
-arch dragon_steak
-name medium wyvern's steak
-food 403
-resist_cold -100
-resist_confusion -100
-value 20
-weight 7500
-no_steal 1
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
-end
-arch dragon
-x 3
-y 22
-arch abil_burning_hands
-end
-arch abil_fear
-end
-end
-arch dragon
-name medium wyvern
-Con 1
-Pow 1
-hp 200
-exp 2000
-dam 12
-wc 8
-ac 8
-speed -0.035000
-level 4
-carrying 37500
-x 7
-y 18
-arch dragon_wing
-name medium wyvern's wing
-food 3
-resist_cold -100
-resist_confusion -100
-value 200
-weight 37500
-no_steal 1
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
-end
-arch dragon
-carrying 37500
-x 7
-y 29
-arch dragon_wing
-name wyvern's wing
-food 5
-resist_cold -100
-resist_confusion -100
-value 400
-weight 37500
-no_steal 1
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
-end
-arch dragon
-carrying 7500
-x 8
-y 17
-arch dragon_steak
-name wyvern's steak
-food 405
-resist_cold -100
-resist_confusion -100
-value 40
-weight 7500
-no_steal 1
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
-end
-arch dragon
-name medium wyvern
-Con 1
-Pow 1
-hp 200
-exp 2000
-dam 12
-wc 8
-ac 8
-speed -0.035000
-level 4
-carrying 1
-x 8
-y 22
-arch dragonclaw
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
-end
-arch dragon
-name medium wyvern
-Con 1
-Pow 1
-hp 200
-exp 2000
-dam 12
-wc 8
-ac 8
-speed -0.035000
-level 4
-x 9
-y 32
-arch abil_burning_hands
-end
-arch abil_fear
-end
-end
-arch dragon
-name medium wyvern
-Con 1
-Pow 1
-hp 200
-exp 2000
-dam 12
-wc 8
-ac 8
-speed -0.035000
-level 4
-carrying 7500
-x 10
-y 13
-arch dragon_steak
-name medium wyvern's steak
-food 403
-resist_cold -100
-resist_confusion -100
-value 20
-weight 7500
-no_steal 1
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
-end
-arch dragon
-name medium wyvern
-Con 1
-Pow 1
-hp 200
-exp 2000
-dam 12
-wc 8
-ac 8
-speed -0.035000
-level 4
-carrying 37500
-x 10
-y 16
-arch dragon_wing
-name medium wyvern's wing
-food 3
-resist_cold -100
-resist_confusion -100
-value 200
-weight 37500
-no_steal 1
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
-end
-arch dragon
-name medium wyvern
-Con 1
-Pow 1
-hp 200
-exp 2000
-dam 12
-wc 8
-ac 8
-speed -0.035000
-level 4
-carrying 1
-x 10
-y 24
-arch dragonclaw
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
-end
-arch dragon
-carrying 1
-x 11
-y 25
-arch dragonclaw
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
-end
-arch dragon
-name medium wyvern
-Con 1
-Pow 1
-hp 200
-exp 2000
-dam 12
-wc 8
-ac 8
-speed -0.035000
-level 4
-carrying 37500
-x 12
-y 5
-arch dragon_wing
-name medium wyvern's wing
-food 3
-resist_cold -100
-resist_confusion -100
-value 200
-weight 37500
-no_steal 1
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
-end
-arch dragon
-name medium wyvern
-Con 1
-Pow 1
-hp 200
-exp 2000
-dam 12
-wc 8
-ac 8
-speed -0.035000
-level 4
-carrying 7500
-x 13
-y 3
-arch dragon_steak
-name medium wyvern's steak
-food 403
-resist_cold -100
-resist_confusion -100
-value 20
-weight 7500
-no_steal 1
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
-end
-arch dragon
-name medium wyvern
-Con 1
-Pow 1
-hp 200
-exp 2000
-dam 12
-wc 8
-ac 8
-speed -0.035000
-level 4
-carrying 7500
-x 13
-y 12
-arch dragon_steak
-name medium wyvern's steak
-food 403
-resist_cold -100
-resist_confusion -100
-value 20
-weight 7500
-no_steal 1
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
-end
-arch dragon
-name medium wyvern
-Con 1
-Pow 1
-hp 200
-exp 2000
-dam 12
-wc 8
-ac 8
-speed -0.035000
-level 4
-carrying 7500
-x 16
-y 22
-arch dragon_steak
-name medium wyvern's steak
-food 403
-resist_cold -100
-resist_confusion -100
-value 20
-weight 7500
-no_steal 1
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
-end
-arch dragon
-name Slithselest
-carrying 25
-x 16
-y 29
-arch dragon_wing
-name Slithselest's wing
-material 0
-end
-end
-arch dragon
-name medium wyvern
-Con 1
-Pow 1
-hp 200
-exp 2000
-dam 12
-wc 8
-ac 8
-speed -0.035000
-level 4
-carrying 7500
-x 17
-y 16
-arch dragon_steak
-name medium wyvern's steak
-food 403
-resist_cold -100
-resist_confusion -100
-value 20
-weight 7500
-no_steal 1
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
 end

@@ -1,14 +1,21 @@
 arch map
-name mushroom_quest
-msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Mon Jun  5 20:55:31 2000
-endmsg
+name Mushroom Quest
+difficulty 14
+region wilderness
 width 16
 height 35
-enter_x 1
-enter_y 1
+enter_x 2
+enter_y 2
+msg
+Created:  2000-06-05
+Modified: 2010-05-05 Cavesomething
+endmsg
+maplore
+@quest Scorn Royalty Quest
+the blue mushroom is here
+@quest Lursendis
+Here is the mushroom Farnass needs.
+endmaplore
 end
 arch grass_only
 end
@@ -169,18 +176,19 @@ x 1
 y 9
 end
 arch fountain
-speed_left -0.600000
 x 1
 y 9
+speed_left -0.600000
 end
 arch potion_generic
 name fountain
 face fountain.111
-sp 1
-material 256
-no_pick 1
 x 1
 y 9
+material 256
+no_pick 1
+arch spell_small_fireball
+end
 end
 arch grass_only
 x 1
@@ -255,9 +263,9 @@ x 1
 y 23
 end
 arch beehive
-speed -0.200000
 x 1
 y 23
+speed -0.200000
 end
 arch grass_only
 x 1
@@ -375,9 +383,9 @@ x 2
 y 13
 end
 arch beehive
-speed -0.200000
 x 2
 y 13
+speed -0.200000
 end
 arch grass_only
 x 2
@@ -392,9 +400,9 @@ x 2
 y 16
 end
 arch beehive
-speed -0.200000
 x 2
 y 16
+speed -0.200000
 end
 arch grass_only
 x 2
@@ -1503,9 +1511,9 @@ x 8
 y 10
 end
 arch beehive
-speed -0.200000
 x 8
 y 10
+speed -0.200000
 end
 arch grass_only
 x 8
@@ -1600,9 +1608,16 @@ x 8
 y 27
 end
 arch mushroom_3
-slaying bunion
+name blue mushroom
+name_pl blue mushrooms
 x 8
 y 27
+arch quest_prevent_drop
+name scorn/BlueMushroom 50
+end
+arch quest_advance_pickup
+name scorn/BlueMushroom 30>40
+end
 end
 arch sea
 x 8
@@ -1660,9 +1675,9 @@ x 9
 y 3
 end
 arch beehive
-speed -0.200000
 x 9
 y 3
+speed -0.200000
 end
 arch grass_only
 x 9
@@ -2055,9 +2070,9 @@ x 11
 y 9
 end
 arch beehive
-speed -0.200000
 x 11
 y 9
+speed -0.200000
 end
 arch grass_only
 x 11

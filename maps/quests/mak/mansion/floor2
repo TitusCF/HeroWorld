@@ -1,12 +1,15 @@
 arch map
-name floor 2
+name Warriors' Tower, Mansion - Second Floor
+difficulty 8
+region wilderness
+width 36
+height 21
+enter_x 11
+enter_y 9
 msg
-Creator: Magnus Kronhamn
-Email: mak@solace.mh.se
-Date: Thu Apr 13 02:02:47 2000
+Created:  2000-04-13 Magnus Kronhamn (mak@solace.mh.se)
+Modified: 2012-03-10 Rick Tanner
 endmsg
-x 36
-y 21
 end
 arch afloor_right
 end
@@ -3301,7 +3304,7 @@ y 10
 end
 arch magic_mouth
 msg
-You see a loose board in the southern wall
+You see a loose board in the southern wall.
 endmsg
 x 27
 y 11
@@ -4025,23 +4028,18 @@ y 12
 end
 arch magic_mouth
 msg
-<You hear some noise from under
-the floor>
-You wonder what might have happened..?
+<You hear some noise from under the floor> You wonder what might have happened..?
 endmsg
 x 33
 y 13
 connected 95
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch woodfloor
 x 33
 y 13
 end
 arch button_lever
-msg
-endmsg
 x 33
 y 13
 connected 96

@@ -1,16 +1,32 @@
 arch map
-name MainFloor
-msg
-Creator: Magnus Kronhamn
-Email: mak@solace.mh.se
-Date: Thu Apr  6 10:40:57 2000
-endmsg
+name Warriors' Tower, Main Floor
+reset_timeout 7200
+difficulty 18
+region wilderness
 width 31
 height 52
-enter_x 1
-enter_y 1
-reset_timeout 7200
-difficulty 5
+enter_x 15
+enter_y 48
+msg
+Created:  2000-04-06 Magnus Kronhamn (mak@solace.mh.se)
+Modified: 2012-03-09 Rick Tanner
+endmsg
+maplore
+@def Warriors' Tower
+This tower lets one fight various high level enemies, and gives access to Lorkas.
+</p><p>
+No hint are known for this quest.
+</p>
+<p><font color="red">TODO: add hints</font>
+
+@end
+@quest Warriors' Tower
+Main entry, no combat but access to various places to fight.
+@end
+
+@quest ChaosLair
+The old crone talks about a fragment of chaos.
+endmaplore
 end
 arch blocked
 end
@@ -559,17 +575,16 @@ y 1
 end
 arch blocked
 name darkness
-no_pass 0
-is_floor 1
 x 2
 y 2
+move_block 0
+is_floor 1
 end
 arch invis_exit
-msg
-You've entered the underground temple.
-This is a mystique place...
-endmsg
 slaying chaos/tritemples
+msg
+You've entered the underground temple.  This is a mystique place...
+endmsg
 hp 17
 sp 23
 x 2
@@ -615,9 +630,9 @@ arch teleporter
 slaying dragons/ice
 hp 1
 sp 27
-speed 1.000000
 x 2
 y 9
+speed 1.000000
 end
 arch marble
 x 2
@@ -637,8 +652,7 @@ y 11
 end
 arch magic_mouth
 msg
-Pull the lever to start the trial
-or say 'help' to chicken out
+Pull the lever to start the trial or say 'help' to chicken out.
 endmsg
 x 2
 y 11
@@ -651,9 +665,9 @@ arch teleporter
 slaying dragons/elec
 hp 15
 sp 13
-speed 1.000000
 x 2
 y 11
+speed 1.000000
 end
 arch marble
 x 2
@@ -679,9 +693,9 @@ arch teleporter
 slaying dragons/fire
 hp 14
 sp 17
-speed 1.000000
 x 2
 y 13
+speed 1.000000
 end
 arch marble
 x 2
@@ -936,24 +950,16 @@ end
 arch a_townsman
 msg
 @match stories|story|tell
-Did you see the altars in the northern
-room? When you drop the appropriate
-item, a gate will open.
-Once I've been told that something
-strange happens when you drop a second
-item of the same kind...
+Did you see the altars in the northern room? When you drop the appropriate item, a gate will open.  Once I've been told that something strange happens when you drop a second item of the same kind...
 @match *
-I know I wouldn't get far in this
-place, I just like to hang out and
-listen to the warriors tell their
-stories.
+I know I wouldn't get far in this place, I just like to hang out and listen to the warriors tell their stories.
 endmsg
-alive 0
-no_pass 1
-friendly 1
-stand_still 1
 x 2
 y 38
+move_block all
+alive 0
+friendly 1
+stand_still 1
 end
 arch dungeon_magic
 x 2
@@ -1019,16 +1025,14 @@ arch pirate
 name wounded warrior
 msg
 @match *
-I only have the last test to go, but as
-you can see my last attempt didn't go
-to well and I might have to give up.
+I only have the last test to go, but as you can see my last attempt didn't go to well and I might have to give up.
 endmsg
-alive 0
-no_pass 1
-friendly 1
-stand_still 1
 x 2
 y 43
+move_block all
+alive 0
+friendly 1
+stand_still 1
 end
 arch dungeon_magic
 x 2
@@ -1428,16 +1432,16 @@ end
 arch fatman
 msg
 @match *
-I'm in charge of the food around her
+I'm in charge of the food around here.
 endmsg
 dam 0
+x 3
+y 36
+move_block all
 alive 0
-no_pass 1
 friendly 1
 stand_still 1
 random_movement 0
-x 3
-y 36
 end
 arch dungeon_magic
 x 3
@@ -1945,16 +1949,14 @@ arch northman
 name seasoned warrior
 msg
 @match *
-I'm just about ready for another try.
-I still have a few tricks up my sleave
-that might get me through.
+I'm just about ready for another try.  I still have a few tricks up my sleave that might get me through.
 endmsg
-alive 0
-no_pass 1
-friendly 1
-stand_still 1
 x 4
 y 39
+move_block all
+alive 0
+friendly 1
+stand_still 1
 end
 arch dungeon_magic
 x 4
@@ -2410,13 +2412,11 @@ end
 arch fatwoman
 msg
 @match *
-My husband is the big one over there.
-He's the one in charge here, I just
-try to help him out as good as I can.
+My husband is the big one over there.  He's the one in charge here, I just try to help him out as good as I can.
 endmsg
-friendly 1
 x 5
 y 41
+friendly 1
 arch random_food
 end
 arch random_food
@@ -2466,10 +2466,10 @@ arch door_look_1
 hp 0
 exp 0
 ac 0
-alive 0
-no_pass 0
 x 5
 y 46
+move_block 0
+alive 0
 end
 arch dungeon_magic
 x 5
@@ -2519,9 +2519,9 @@ arch teleporter
 name 112
 hp 10
 sp 4
+x 6
 speed 0.000000
 connected 112
-x 6
 end
 arch cwall_2_2_4
 x 6
@@ -2530,10 +2530,10 @@ arch teleporter
 name 113
 hp 10
 sp 6
-speed 0.000000
-connected 113
 x 6
 y 1
+speed 0.000000
+connected 113
 end
 arch cwall_2_2_3
 x 6
@@ -2543,10 +2543,10 @@ arch teleporter
 name 112
 hp 9
 sp 4
-speed 0.000000
-connected 112
 x 6
 y 2
+speed 0.000000
+connected 112
 end
 arch cwall_2_1_2
 x 6
@@ -2639,9 +2639,7 @@ end
 arch sign
 name CHAOS
 msg
-You will need to finish the three
-other dragontests before you can
-enter her.
+You will need to finish the three other dragontests before you can enter here.
 endmsg
 x 6
 y 15
@@ -2655,32 +2653,29 @@ x 6
 y 16
 end
 arch locked_door1
-face glue.111
-msg
-You will need to defeat the cold
-dragons before you can enter here
-endmsg
 slaying mdragkey1
+msg
+You will need to defeat the cold dragons before you can enter here.
+endmsg
+face glue.111
 x 6
 y 16
 end
 arch locked_door2
-face glue.111
-msg
-You will need to defeat the electric
-dragons before you can enter here
-endmsg
 slaying mdragkey2
+msg
+You will need to defeat the electric dragons before you can enter here.
+endmsg
+face glue.111
 x 6
 y 16
 end
 arch locked_door1
-face glue.111
-msg
-You will need to defeat the fire
-dragons before you can enter here
-endmsg
 slaying mdragkey3
+msg
+You will need to defeat the fire dragons before you can enter here.
+endmsg
+face glue.111
 x 6
 y 16
 end
@@ -2688,9 +2683,9 @@ arch teleporter
 slaying dragons/chaos
 hp 6
 sp 33
-speed 1.000000
 x 6
 y 16
+speed 1.000000
 end
 arch marble
 x 6
@@ -2720,17 +2715,15 @@ arch woman2
 name a middle-aged woman
 msg
 @match *
-To pass this test you must go to the
-trollcave and bring back Herman's
-bearskin belt
+To pass this test you must go to the trollcave and bring back Herman's bearskin belt.
 endmsg
+x 6
+y 18
+move_block all
 alive 0
-no_pass 1
 monster 0
 friendly 1
 stand_still 1
-x 6
-y 18
 end
 arch dungeon_magic
 x 6
@@ -2976,17 +2969,16 @@ arch warrior_1
 name fighter
 msg
 @match *
-I just arrived today, but I
-will show you how it's done!
+I just arrived today, but I will show you how it's done!
 endmsg
+x 6
+y 43
+move_block all
 alive 0
-no_pass 1
 is_animated 0
 monster 0
 friendly 1
 stand_still 1
-x 6
-y 43
 end
 arch dungeon_magic
 x 6
@@ -3066,25 +3058,25 @@ y 51
 end
 arch button_small
 name 112
+x 7
 weight 1000
 connected 112
-x 7
 end
 arch button_small
 name 112
-weight 1000
-connected 113
 x 7
 y 1
+weight 1000
+connected 113
 end
 arch teleporter
 name 112
 hp 9
 sp 6
-speed 0.000000
-connected 112
 x 7
 y 2
+speed 0.000000
+connected 112
 end
 arch cwall_2_1_2
 x 7
@@ -3305,19 +3297,15 @@ end
 arch c_man
 msg
 @match *
-This first test should be an easy one
-for you. An ogre calling himself Gorak
-the mighty has set up camp with his
-band of ruffians in a nearby mansion.
-They must be eradicated at all costs.
+This first test should be an easy one for you.  An ogre calling himself Gorak the mighty has set up camp with his band of ruffians in a nearby mansion.  They must be eradicated at all costs.
 endmsg
+x 7
+y 27
+move_block all
 alive 0
-no_pass 1
 monster 0
 friendly 1
 stand_still 1
-x 7
-y 27
 end
 arch dungeon_magic
 x 7
@@ -3601,9 +3589,9 @@ end
 arch altar
 slaying shimmering turban
 food 1
-connected 114
 x 8
 y 5
+connected 114
 end
 arch marble
 x 8
@@ -3637,20 +3625,14 @@ arch lesser_dwarven_guard
 name a powerful dwarf
 msg
 @match *
-Dragons have become an all to common
-problem these days, so every fighter
-must know how to defeat them.
-First you will have to take on some
-of the standard varietees before we
-will will let you go up against the
-big guys
+Dragons have become an all to common problem these days, so every fighter must know how to defeat them.  First you will have to take on some of the standard varietees before we will let you go up against the big guys.
 endmsg
-alive 0
-no_pass 1
-friendly 1
-stand_still 1
 x 8
 y 9
+move_block all
+alive 0
+friendly 1
+stand_still 1
 end
 arch dungeon_magic
 x 8
@@ -3936,16 +3918,14 @@ arch c_man
 name scrawny man
 msg
 @match *
-I'm almost ashamed to admit it but I
-have still to pass the first test.
-That statue is just to heavy for me.
+I'm almost ashamed to admit it but I have still to pass the first test.  That statue is just to heavy for me.
 endmsg
-alive 0
-no_pass 1
-friendly 1
-stand_still 1
 x 8
 y 38
+move_block all
+alive 0
+friendly 1
+stand_still 1
 end
 arch dungeon_magic
 x 8
@@ -4095,46 +4075,46 @@ x 9
 y 3
 end
 arch marble
-type 41
 hp 7
-connected 111
 x 9
 y 4
+type 41
+connected 111
 end
 arch blocked
-weight 10000
 x 9
 y 4
+weight 10000
 end
 arch dungeon_magic
 x 9
 y 5
 end
 arch marble
-type 41
 hp 8
 sp 2
-connected 111
 x 9
 y 5
+type 41
+connected 111
 end
 arch blocked
-weight 10000
 x 9
 y 5
+weight 10000
 end
 arch marble
-type 41
 hp 7
 sp 1
-connected 111
 x 9
 y 6
+type 41
+connected 111
 end
 arch blocked
-weight 10000
 x 9
 y 6
+weight 10000
 end
 arch blocked
 x 9
@@ -4579,11 +4559,11 @@ x 10
 y 3
 end
 arch marble
-type 41
 hp 8
-connected 111
 x 10
 y 4
+type 41
+connected 111
 end
 arch cwall_2_1_1
 x 10
@@ -4595,9 +4575,9 @@ y 5
 end
 arch check_inv
 slaying wptower_shortcut
-connected 120
 x 10
 y 5
+connected 120
 end
 arch marble
 x 10
@@ -4605,18 +4585,18 @@ y 5
 end
 arch gate_closed_2
 face cwall_5.111
-speed 0.500000
-connected 111
 x 10
 y 5
+speed 0.500000
+connected 111
 end
 arch marble
-type 41
 hp 8
 sp 1
-connected 111
 x 10
 y 6
+type 41
+connected 111
 end
 arch cwall_2_1_1
 x 10
@@ -4686,10 +4666,10 @@ arch door_look_2
 hp 0
 exp 0
 ac 0
-alive 0
-no_pass 0
 x 10
 y 12
+move_block 0
+alive 0
 end
 arch marble
 x 10
@@ -4799,10 +4779,10 @@ arch door_look_2
 hp 0
 exp 0
 ac 0
-alive 0
-no_pass 0
 x 10
 y 21
+move_block 0
+alive 0
 end
 arch marble
 x 10
@@ -4912,10 +4892,10 @@ arch door_look_2
 hp 0
 exp 0
 ac 0
-alive 0
-no_pass 0
 x 10
 y 30
+move_block 0
+alive 0
 end
 arch marble
 x 10
@@ -5037,10 +5017,10 @@ arch door_look_2
 hp 0
 exp 0
 ac 0
-alive 0
-no_pass 0
 x 10
 y 40
+move_block 0
+alive 0
 end
 arch marble
 x 10
@@ -5266,12 +5246,12 @@ arch light_guard
 name hall guard
 msg
 @match *
-Don't loiter
+Don't loiter.
 endmsg
-alive 0
-no_pass 1
 x 11
 y 9
+move_block all
+alive 0
 end
 arch dungeon_magic
 x 11
@@ -5349,12 +5329,12 @@ arch light_guard
 name hall guard
 msg
 @match *
-Don't loiter
+Don't loiter.
 endmsg
-alive 0
-no_pass 1
 x 11
 y 17
+move_block all
+alive 0
 end
 arch dungeon_magic
 x 11
@@ -5383,8 +5363,7 @@ end
 arch sign_w
 name Troll cave
 msg
-Trolls of varying sizes,
-a tad bit tougher
+Trolls of varying sizes, a tad bit tougher.
 endmsg
 x 11
 y 20
@@ -5441,12 +5420,12 @@ arch light_guard
 name hall guard
 msg
 @match *
-Don't loiter
+Don't loiter.
 endmsg
-alive 0
-no_pass 1
 x 11
 y 26
+move_block all
+alive 0
 end
 arch dungeon_magic
 x 11
@@ -5475,7 +5454,7 @@ end
 arch sign_w
 name A good place to start
 msg
-To the mansion - really easy
+To the mansion - really easy.
 endmsg
 x 11
 y 29
@@ -5548,12 +5527,12 @@ arch light_guard
 name hall guard
 msg
 @match *
-Don't loiter
+Don't loiter.
 endmsg
-alive 0
-no_pass 1
 x 11
 y 37
+move_block all
+alive 0
 end
 arch marble
 x 11
@@ -5621,13 +5600,12 @@ arch guard
 name guard
 msg
 @match *
-We're here to keep the peace, you will
-have enough mayhem in the test
+We're here to keep the peace, you will have enough mayhem in the test.
 endmsg
-alive 0
-no_pass 1
 x 11
 y 43
+move_block all
+alive 0
 end
 arch dungeon_magic
 x 11
@@ -5641,13 +5619,12 @@ arch guard
 name guard
 msg
 @match *
-We're here to keep the peace, you will
-have enough mayhem in the test
+We're here to keep the peace, you will have enough mayhem in the test.
 endmsg
-alive 0
-no_pass 1
 x 11
 y 44
+move_block all
+alive 0
 end
 arch dungeon_magic
 x 11
@@ -5661,13 +5638,12 @@ arch guard
 name guard
 msg
 @match *
-We're here to keep the peace, you will
-have enough mayhem in the test
+We're here to keep the peace, you will have enough mayhem in the test.
 endmsg
-alive 0
-no_pass 1
 x 11
 y 45
+move_block all
+alive 0
 end
 arch dungeon_magic
 x 11
@@ -5681,13 +5657,12 @@ arch guard
 name guard
 msg
 @match *
-We're here to keep the peace, you will
-have enough mayhem in the test
+We're here to keep the peace, you will have enough mayhem in the test.
 endmsg
-alive 0
-no_pass 1
 x 11
 y 46
+move_block all
+alive 0
 end
 arch dungeon_magic
 x 11
@@ -5701,13 +5676,12 @@ arch guard
 name guard
 msg
 @match *
-We're here to keep the peace, you will
-have enough mayhem in the test
+We're here to keep the peace, you will have enough mayhem in the test.
 endmsg
-alive 0
-no_pass 1
 x 11
 y 47
+move_block all
+alive 0
 end
 arch dungeon_magic
 x 11
@@ -5748,9 +5722,9 @@ x 12
 y 1
 end
 arch gate_closed_2
-connected 17
 x 12
 y 1
+connected 17
 end
 arch dungeon_magic
 x 12
@@ -5772,16 +5746,16 @@ arch altar
 name 107
 slaying ancient bracers
 food 1
-connected 107
 x 12
 y 3
+connected 107
 end
 arch creator
 name 107
 other_arch fire_permanent
-connected 107
 x 12
 y 3
+connected 107
 end
 arch magic_mouth
 msg
@@ -5797,9 +5771,9 @@ end
 arch altar
 slaying ancient bracers
 food 1
-connected 17
 x 12
 y 3
+connected 17
 end
 arch dungeon_magic
 x 12
@@ -6200,9 +6174,9 @@ x 13
 y 1
 end
 arch gate_closed_2
-connected 16
 x 13
 y 1
+connected 16
 end
 arch dungeon_magic
 x 13
@@ -6224,16 +6198,16 @@ arch altar
 name 106
 slaying soft shoes
 food 1
-connected 106
 x 13
 y 3
+connected 106
 end
 arch creator
 name 106
 other_arch fire_permanent
-connected 106
 x 13
 y 3
+connected 106
 end
 arch magic_mouth
 msg
@@ -6249,9 +6223,9 @@ end
 arch altar
 slaying soft shoes
 food 1
-connected 16
 x 13
 y 3
+connected 16
 end
 arch dungeon_magic
 x 13
@@ -6589,14 +6563,13 @@ arch knight
 name High Guard
 msg
 @match *
-Don't even think about disturbing the
-other student
+Don't even think about disturbing the other student.
 endmsg
-alive 0
-no_pass 1
-monster 0
 x 13
 y 39
+move_block all
+alive 0
+monster 0
 end
 arch dungeon_magic
 x 13
@@ -6623,9 +6596,9 @@ x 13
 y 42
 end
 arch pillars
-no_pass 1
 x 13
 y 42
+move_block all
 end
 arch dungeon_magic
 x 13
@@ -6660,9 +6633,9 @@ x 13
 y 46
 end
 arch pillars
-no_pass 1
 x 13
 y 46
+move_block all
 end
 arch dungeon_magic
 x 13
@@ -6711,9 +6684,9 @@ x 14
 y 1
 end
 arch gate_closed_2
-connected 15
 x 14
 y 1
+connected 15
 end
 arch dungeon_magic
 x 14
@@ -6735,16 +6708,16 @@ arch altar
 name 105
 slaying silk gloves
 food 1
-connected 105
 x 14
 y 3
+connected 105
 end
 arch creator
 name 105
 other_arch fire_permanent
-connected 105
 x 14
 y 3
+connected 105
 end
 arch magic_mouth
 msg
@@ -6760,9 +6733,9 @@ end
 arch altar
 slaying silk gloves
 food 1
-connected 15
 x 14
 y 3
+connected 15
 end
 arch dungeon_magic
 x 14
@@ -6819,11 +6792,7 @@ end
 arch sign
 name temple of the fallen
 msg
-There is an anchient temple beneath
-this tower. Only the bravest warriors
-are allowed to go there. You must
-pass all the test in here to prove
-yourself worthy!
+There is an anchient temple beneath this tower.  Only the bravest warriors are allowed to go there.  You must pass all the test in here to prove yourself worthy!
 endmsg
 x 14
 y 9
@@ -7175,9 +7144,9 @@ x 15
 y 1
 end
 arch gate_closed_2
-connected 14
 x 15
 y 1
+connected 14
 end
 arch dungeon_magic
 x 15
@@ -7199,16 +7168,16 @@ arch altar
 name 104
 slaying bearskin belt
 food 1
-connected 104
 x 15
 y 3
+connected 104
 end
 arch creator
 name 104
 other_arch fire_permanent
-connected 104
 x 15
 y 3
+connected 104
 end
 arch magic_mouth
 msg
@@ -7224,9 +7193,9 @@ end
 arch altar
 slaying bearskin belt
 food 1
-connected 14
 x 15
 y 3
+connected 14
 end
 arch dungeon_magic
 x 15
@@ -7242,9 +7211,9 @@ y 5
 end
 arch check_inv
 slaying wptower_shortcut
+x 15
+y 5
 connected 122
-x 15
-y 5
 end
 arch marble
 x 15
@@ -7268,9 +7237,9 @@ y 7
 end
 arch check_inv
 slaying wptower_shortcut
-connected 120
 x 15
 y 8
+connected 120
 end
 arch marble
 x 15
@@ -7284,10 +7253,10 @@ arch door_look_1
 hp 0
 exp 0
 ac 0
-alive 0
-no_pass 0
 x 15
 y 8
+move_block 0
+alive 0
 end
 arch dungeon_magic
 x 15
@@ -7547,24 +7516,18 @@ msg
 @match ultimate|challenge
 Ha ha! You will find out soon enough.
 @match test
-We have several tests of varying
-difficulty to match your progressing
-abilities. When you have mastered all
-of our tests, you will face the
-ultimate challenge.
+We have several tests of varying difficulty to match your progressing abilities.  When you have mastered all of our tests, you will face the ultimate challenge.
 @match *
-Welcome to the "Tower of Warrior
-Proving". All may enter but only a few
-will manage to pass our famous tests.
+Welcome to the "Tower of Warrior Proving."  All may enter but only a few will manage to pass our famous tests.
 endmsg
 hp 5000
+x 15
+y 39
+move_block all
 alive 0
-no_pass 1
 friendly 1
 unaggressive 0
 stand_still 1
-x 15
-y 39
 end
 arch dungeon_magic
 x 15
@@ -7642,7 +7605,7 @@ arch marble
 x 15
 y 49
 end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_104_104
 hp 37
 sp 29
@@ -7672,9 +7635,9 @@ x 16
 y 1
 end
 arch gate_closed_2
-connected 13
 x 16
 y 1
+connected 13
 end
 arch dungeon_magic
 x 16
@@ -7696,16 +7659,16 @@ arch altar
 name 103
 slaying banded mail
 food 1
-connected 103
 x 16
 y 3
+connected 103
 end
 arch creator
 name 103
 other_arch fire_permanent
-connected 103
 x 16
 y 3
+connected 103
 end
 arch magic_mouth
 msg
@@ -7721,9 +7684,9 @@ end
 arch altar
 slaying banded mail
 food 1
-connected 13
 x 16
 y 3
+connected 13
 end
 arch dungeon_magic
 x 16
@@ -8124,9 +8087,9 @@ x 17
 y 1
 end
 arch gate_closed_2
-connected 12
 x 17
 y 1
+connected 12
 end
 arch dungeon_magic
 x 17
@@ -8148,16 +8111,16 @@ arch altar
 name 102
 slaying sharp axe
 food 1
-connected 102
 x 17
 y 3
+connected 102
 end
 arch creator
 name 102
 other_arch fire_permanent
-connected 102
 x 17
 y 3
+connected 102
 end
 arch magic_mouth
 msg
@@ -8173,9 +8136,9 @@ end
 arch altar
 slaying sharp axe
 food 1
-connected 12
 x 17
 y 3
+connected 12
 end
 arch dungeon_magic
 x 17
@@ -8513,14 +8476,13 @@ arch knight
 name High Guard
 msg
 @match *
-Don't even think about disturbing the
-other student
+Don't even think about disturbing the other student.
 endmsg
-alive 0
-no_pass 1
-monster 0
 x 17
 y 39
+move_block all
+alive 0
+monster 0
 end
 arch dungeon_magic
 x 17
@@ -8547,9 +8509,9 @@ x 17
 y 42
 end
 arch pillars
-no_pass 1
 x 17
 y 42
+move_block all
 end
 arch dungeon_magic
 x 17
@@ -8584,9 +8546,9 @@ x 17
 y 46
 end
 arch pillars
-no_pass 1
 x 17
 y 46
+move_block all
 end
 arch dungeon_magic
 x 17
@@ -8635,9 +8597,9 @@ x 18
 y 1
 end
 arch gate_closed_2
-connected 11
 x 18
 y 1
+connected 11
 end
 arch dungeon_magic
 x 18
@@ -8659,16 +8621,16 @@ arch altar
 name 101
 slaying strongman diploma
 food 1
-connected 101
 x 18
 y 3
+connected 101
 end
 arch creator
 name 101
 other_arch fire_permanent
-connected 101
 x 18
 y 3
+connected 101
 end
 arch magic_mouth
 msg
@@ -8684,9 +8646,9 @@ end
 arch altar
 slaying strongman diploma
 food 1
-connected 11
 x 18
 y 3
+connected 11
 end
 arch dungeon_magic
 x 18
@@ -8727,31 +8689,18 @@ msg
 *sigh*...
 Nobody returns from the temple.
 @match task|temple|final
-When the archangel Lorkas fell, he
-managed to steal some of the most
-highly valued artifacts. Now he lurks
-in his underground temple... killing
-anyone who dares to oppose him.
+When the archangel Lorkas fell, he managed to steal some of the most highly valued artifacts.  Now he lurks in his underground temple... killing anyone who dares to oppose him.
 @match fragment
-To get a fragment-of-chaos, you must
-seek for the legendary Chaoswyrm
-in lake country.
+To get a fragment-of-chaos, you must seek for the legendary Chaoswyrm in lake country.
 @match *
-This will be your final Task. We've
-build this tower to prepare the
-warriors for their walk into the
-underground temple. You must prove that
-you have passed all the other quests
-before we let you go.
-Just drop the items you obtained on
-the altars and the passage will open.
+This will be your final Task.  We've build this tower to prepare the warriors for their walk into the underground temple.  You must prove that you have passed all the other quests before we let you go.  Just drop the items you obtained on the altars and the passage will open.
 endmsg
-alive 0
-no_pass 1
-friendly 1
-stand_still 1
 x 18
 y 7
+move_block all
+alive 0
+friendly 1
+stand_still 1
 end
 arch marble
 x 18
@@ -9173,10 +9122,10 @@ y 7
 end
 arch marker
 name wptower_shortcut
+slaying marker
 msg
 Remove
 endmsg
-slaying marker
 food 1
 x 19
 y 7
@@ -9205,12 +9154,12 @@ arch light_guard
 name hall guard
 msg
 @match *
-Don't loiter
+Don't loiter.
 endmsg
-alive 0
-no_pass 1
 x 19
 y 9
+move_block all
+alive 0
 end
 arch dungeon_magic
 x 19
@@ -9287,8 +9236,7 @@ end
 arch sign_e
 name Unnatural moshpot
 msg
-spellcasters, now it starts to
-get intersting =)
+Spellcasters, now it starts to get intersting. =)
 endmsg
 x 19
 y 17
@@ -9329,12 +9277,12 @@ arch light_guard
 name hall guard
 msg
 @match *
-Don't loiter
+Don't loiter.
 endmsg
-alive 0
-no_pass 1
 x 19
 y 21
+move_block all
+alive 0
 end
 arch dungeon_magic
 x 19
@@ -9379,7 +9327,7 @@ end
 arch sign_e
 name The mausoleum
 msg
-Undeads, zombies etc, slightly harder
+Undeads, zombies etc, slightly harder.
 endmsg
 x 19
 y 26
@@ -9446,9 +9394,9 @@ y 34
 end
 arch pedestal
 name 30
-connected 30
 x 19
 y 34
+connected 30
 end
 arch marble
 x 19
@@ -9460,9 +9408,9 @@ y 35
 end
 arch pedestal
 name 30
-connected 30
 x 19
 y 35
+connected 30
 end
 arch marble
 x 19
@@ -9474,9 +9422,9 @@ y 36
 end
 arch pedestal
 name 30
-connected 30
 x 19
 y 36
+connected 30
 end
 arch marble
 x 19
@@ -9494,12 +9442,12 @@ arch light_guard
 name hall guard
 msg
 @match *
-Don't loiter
+Don't loiter.
 endmsg
-alive 0
-no_pass 1
 x 19
 y 37
+move_block all
+alive 0
 end
 arch marble
 x 19
@@ -9567,13 +9515,12 @@ arch guard
 name guard
 msg
 @match *
-We're here to keep the peace, you will
-have enough mayhem in the test
+We're here to keep the peace, you will have enough mayhem in the test.
 endmsg
-alive 0
-no_pass 1
 x 19
 y 43
+move_block all
+alive 0
 end
 arch dungeon_magic
 x 19
@@ -9587,13 +9534,12 @@ arch guard
 name guard
 msg
 @match *
-We're here to keep the peace, you will
-have enough mayhem in the test
+We're here to keep the peace, you will have enough mayhem in the test.
 endmsg
-alive 0
-no_pass 1
 x 19
 y 44
+move_block all
+alive 0
 end
 arch dungeon_magic
 x 19
@@ -9607,13 +9553,12 @@ arch guard
 name guard
 msg
 @match *
-We're here to keep the peace, you will
-have enough mayhem in the test
+We're here to keep the peace, you will have enough mayhem in the test.
 endmsg
-alive 0
-no_pass 1
 x 19
 y 45
+move_block all
+alive 0
 end
 arch dungeon_magic
 x 19
@@ -9627,13 +9572,12 @@ arch guard
 name guard
 msg
 @match *
-We're here to keep the peace, you will
-have enough mayhem in the test
+We're here to keep the peace, you will have enough mayhem in the test.
 endmsg
-alive 0
-no_pass 1
 x 19
 y 46
+move_block all
+alive 0
 end
 arch dungeon_magic
 x 19
@@ -9647,13 +9591,12 @@ arch guard
 name guard
 msg
 @match *
-We're here to keep the peace, you will
-have enough mayhem in the test
+We're here to keep the peace, you will have enough mayhem in the test.
 endmsg
-alive 0
-no_pass 1
 x 19
 y 47
+move_block all
+alive 0
 end
 arch dungeon_magic
 x 19
@@ -9797,10 +9740,10 @@ arch door_look_2
 hp 0
 exp 0
 ac 0
-alive 0
-no_pass 0
 x 20
 y 11
+move_block 0
+alive 0
 end
 arch marble
 x 20
@@ -9886,10 +9829,10 @@ arch door_look_2
 hp 0
 exp 0
 ac 0
-alive 0
-no_pass 0
 x 20
 y 18
+move_block 0
+alive 0
 end
 arch marble
 x 20
@@ -9999,10 +9942,10 @@ arch door_look_2
 hp 0
 exp 0
 ac 0
-alive 0
-no_pass 0
 x 20
 y 27
+move_block 0
+alive 0
 end
 arch marble
 x 20
@@ -10097,9 +10040,9 @@ x 20
 y 35
 end
 arch gate_closed_2
-connected 33
 x 20
 y 35
+connected 33
 end
 arch marble
 x 20
@@ -10161,10 +10104,10 @@ arch door_look_2
 hp 0
 exp 0
 ac 0
-alive 0
-no_pass 0
 x 20
 y 40
+move_block 0
+alive 0
 end
 arch marble
 x 20
@@ -11110,18 +11053,14 @@ arch merchant
 name welldressed man
 msg
 @match *
-This test includes some really big
-problems, literaly.
-A band of giants have been plagueing
-the countryside and your job will be
-to seek them out and end this threat.
+This test includes some really big problems, literally.  A band of giants have been plagueing the countryside and your job will be to seek them out and end this threat.
 endmsg
-alive 0
-no_pass 1
-friendly 1
-stand_still 1
 x 23
 y 13
+move_block all
+alive 0
+friendly 1
+stand_still 1
 end
 arch marble
 x 23
@@ -11146,17 +11085,14 @@ end
 arch conjurer
 msg
 @match *
-This will be your first run against
-spellcasting monsters, and we have
-managed to find some really nice
-specimens for you.
+This will be your first run against spellcasting monsters, and we have managed to find some really nice specimens for you.
 endmsg
-alive 0
-no_pass 1
-friendly 1
-stand_still 1
 x 23
 y 15
+move_block all
+alive 0
+friendly 1
+stand_still 1
 end
 arch dungeon_magic
 x 23
@@ -11237,20 +11173,14 @@ end
 arch c_sage
 msg
 @match *
-The old king of the nearby kingdom
-Lorania has been burried for quite
-some time. But now an evil necromancer
-has put a curse on the land making
-the dead rise from their graves.
-You will have to go there and put
-them back to rest.
+The old king of the nearby kingdom Lorania has been burried for quite some time.  But now an evil necromancer has put a curse on the land making the dead rise from their graves.  You will have to go there and put them back to rest.
 endmsg
-alive 0
-no_pass 1
-friendly 1
-stand_still 1
 x 23
 y 24
+move_block all
+alive 0
+friendly 1
+stand_still 1
 end
 arch dungeon_magic
 x 23
@@ -11441,59 +11371,59 @@ x 24
 end
 arch button_small
 name 110
-weight 70000
-connected 110
 x 24
 y 1
+weight 70000
+connected 110
 end
 arch creator
 name 101
 other_arch ten_kilo
-connected 101
 x 24
 y 1
+connected 101
 end
 arch creator
 name 102
 other_arch ten_kilo
-connected 102
 x 24
 y 1
+connected 102
 end
 arch creator
 name 103
 other_arch ten_kilo
-connected 103
 x 24
 y 1
+connected 103
 end
 arch creator
 name 104
 other_arch ten_kilo
-connected 104
 x 24
 y 1
+connected 104
 end
 arch creator
 name 105
 other_arch ten_kilo
-connected 105
 x 24
 y 1
+connected 105
 end
 arch creator
 name 106
 other_arch ten_kilo
-connected 106
 x 24
 y 1
+connected 106
 end
 arch creator
 name 107
 other_arch ten_kilo
-connected 107
 x 24
 y 1
+connected 107
 end
 arch blocked
 x 24
@@ -11503,21 +11433,20 @@ arch teleporter
 name 114
 hp 9
 sp 5
+x 24
+y 3
 speed 0.000000
 connected 114
-x 24
-y 3
 end
 arch marker
-msg
-You feel energy course through your
-body.
-endmsg
 slaying wptower_shortcut
+msg
+You feel energy course through your body.
+endmsg
 food 0
-speed 1.000000
 x 24
 y 3
+speed 1.000000
 end
 arch blocked
 x 24
@@ -11784,9 +11713,9 @@ x 24
 y 34
 end
 arch igate_closed_2
-connected 2
 x 24
 y 34
+connected 2
 end
 arch dungeon_magic
 x 24
@@ -11809,9 +11738,9 @@ x 24
 y 36
 end
 arch igate_closed_2
-connected 1
 x 24
 y 36
+connected 1
 end
 arch dungeon_magic
 x 24
@@ -11913,15 +11842,15 @@ name 111
 msg
 An new altar appeared!
 endmsg
-connected 111
 x 25
 y 1
+connected 111
 end
 arch button_plate
 name 111
-connected 111
 x 25
 y 1
+connected 111
 end
 arch blocked
 x 25
@@ -12193,12 +12122,12 @@ y 34
 end
 arch statue
 name really big statue
-material 64
-weight 10000000
-can_roll 1
-move_type 1
 x 25
 y 34
+material 64
+weight 10000000
+move_type 1
+can_roll 1
 end
 arch dungeon_magic
 x 25
@@ -12283,24 +12212,24 @@ y 43
 end
 arch button_small
 name 33 - open gate
-weight 1000
-connected 33
 x 25
 y 44
+weight 1000
+connected 33
 end
 arch creator
 name 30
 other_arch small_shield
-connected 30
 x 25
 y 44
+connected 30
 end
 arch creator
 name 3
 other_arch small_shield
-connected 3
 x 25
 y 44
+connected 3
 end
 arch blocked
 x 25
@@ -12335,11 +12264,11 @@ x 26
 end
 arch igate_open_2
 name 110
+x 26
+y 1
 speed 0.500000
 value 1
 connected 110
-x 26
-y 1
 end
 arch boulder
 x 26
@@ -12353,22 +12282,20 @@ arch teleporter
 name 121
 hp 15
 sp 5
-speed 0.000000
-connected 121
 x 26
 y 3
+speed 0.000000
+connected 121
 end
 arch perm_magic_portal
-type 41
 slaying chaos/tritemples
 hp 17
 sp 23
-speed 0.000000
-connected 122
-walk_on 0
-fly_on 0
 x 26
 y 3
+speed 0.000000
+type 41
+connected 122
 end
 arch blocked
 x 26
@@ -13124,12 +13051,7 @@ end
 arch magic_mouth
 msg
 The watcher says:
-Welcome to the first test.
-A simple show of strength is needed to
-continue. Just push the weights all
-the way to the plates to show us that
-you atleast have some strength in that
-scrawny body.
+Welcome to the first test.  A simple show of strength is needed to continue.  Just push the weights all the way to the plates to show us that you at least have some strength in that scrawny body.
 endmsg
 x 27
 y 40
@@ -13158,10 +13080,10 @@ arch pit_closed
 name 3
 hp 26
 sp 40
-speed 0.500000
-connected 3
 x 27
 y 44
+speed 0.500000
+connected 3
 end
 arch random_wealth
 x 27
@@ -13170,8 +13092,7 @@ end
 arch diploma
 name strongman diploma
 msg
-Diploma
-I managed to move the heavy statue
+Diploma - I managed to move the heavy statue.
 endmsg
 x 27
 y 44
@@ -13212,23 +13133,23 @@ name 121
 msg
 A magic portal appeared!
 endmsg
-connected 121
 x 28
 y 1
+connected 121
 end
 arch button_small
 name 121
-weight 9000
-connected 121
 x 28
 y 1
+weight 9000
+connected 121
 end
 arch creator
 name 120
 other_arch ten_kilo
-connected 120
 x 28
 y 1
+connected 120
 end
 arch blocked
 x 28
@@ -13532,9 +13453,9 @@ x 28
 y 34
 end
 arch button_plate
-connected 3
 x 28
 y 34
+connected 3
 end
 arch dungeon_magic
 x 28
@@ -13557,10 +13478,10 @@ x 28
 y 36
 end
 arch button_plate
+x 28
+y 36
 weight 100000
 connected 2
-x 28
-y 36
 end
 arch dungeon_magic
 x 28
@@ -13583,10 +13504,10 @@ x 28
 y 38
 end
 arch button_plate
-weight 10000
-connected 1
 x 28
 y 38
+weight 10000
+connected 1
 end
 arch dungeon_magic
 x 28
@@ -13609,9 +13530,9 @@ x 28
 y 40
 end
 arch table_2
-no_pass 1
 x 28
 y 40
+move_block all
 end
 arch marble
 x 28
@@ -14030,10 +13951,10 @@ y 40
 end
 arch warrior_1
 name watcher
-is_animated 0
-stand_still 1
 x 29
 y 40
+is_animated 0
+stand_still 1
 end
 arch marble
 x 29

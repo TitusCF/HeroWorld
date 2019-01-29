@@ -1,5 +1,11 @@
 arch map
-name maze
+name Skud Tower, Maze
+difficulty 30
+region wilderness
+width 40
+height 40
+enter_x 12
+enter_y 6
 msg
 You have entered a rather dark area.
 You can here the clanking of metal
@@ -7,9 +13,8 @@ on metal. It is coming from one of
 the many passages in this maze. A
 Maze in which, a wrong turn could
 be fatal.
+Modified: 2008-12-22 Rick Tanner
 endmsg
-x 40
-y 40
 end
 arch marble
 end
@@ -473,7 +478,7 @@ arch marble
 x 2
 y 5
 end
-arch awall_2_1_1
+arch awall_1_1
 x 2
 y 5
 end
@@ -513,6 +518,10 @@ arch marble
 x 2
 y 10
 end
+arch awall_1_2
+x 2
+y 10
+end
 arch marble
 x 2
 y 11
@@ -529,7 +538,7 @@ arch marble
 x 2
 y 14
 end
-arch awall_2_1_1
+arch awall_1_1
 x 2
 y 14
 end
@@ -569,6 +578,10 @@ arch marble
 x 2
 y 21
 end
+arch awall_1_1
+x 2
+y 21
+end
 arch marble
 x 2
 y 22
@@ -593,7 +606,7 @@ arch marble
 x 2
 y 25
 end
-arch awall_2_1_1
+arch awall_1_1
 x 2
 y 25
 end
@@ -767,7 +780,7 @@ arch marble
 x 3
 y 12
 end
-arch awall_2_1_2
+arch awall_1_4
 x 3
 y 12
 end
@@ -954,7 +967,7 @@ arch marble
 x 4
 y 4
 end
-arch awall_2_1_1
+arch awall_1_2
 x 4
 y 4
 end
@@ -966,7 +979,7 @@ arch marble
 x 4
 y 6
 end
-arch awall_2_1_1
+arch awall_1_1
 x 4
 y 6
 end
@@ -974,7 +987,7 @@ arch marble
 x 4
 y 7
 end
-arch awall_3_2
+arch awall_2_2_1
 x 4
 y 7
 end
@@ -986,7 +999,7 @@ arch marble
 x 4
 y 9
 end
-arch awall_2_1_1
+arch awall_1_1
 x 4
 y 9
 end
@@ -994,7 +1007,7 @@ arch marble
 x 4
 y 10
 end
-arch awall_2_2_1
+arch awall_1_2
 x 4
 y 10
 end
@@ -1006,7 +1019,7 @@ arch marble
 x 4
 y 12
 end
-arch awall_4
+arch awall_3_3
 x 4
 y 12
 end
@@ -1014,7 +1027,7 @@ arch marble
 x 4
 y 13
 end
-arch awall_2_1_1
+arch awall_1_2
 x 4
 y 13
 end
@@ -1078,7 +1091,7 @@ arch marble
 x 4
 y 24
 end
-arch awall_2_1_1
+arch awall_1_1
 x 4
 y 24
 end
@@ -1333,7 +1346,7 @@ arch marble
 x 5
 y 22
 end
-arch awall_2_1_1
+arch awall_1_2
 x 5
 y 22
 end
@@ -1515,7 +1528,7 @@ arch marble
 x 6
 y 9
 end
-arch awall_2_2_1
+arch awall_1_2
 x 6
 y 9
 end
@@ -1627,7 +1640,7 @@ arch marble
 x 6
 y 28
 end
-arch awall_2_1_1
+arch awall_1_2
 x 6
 y 28
 end
@@ -1639,7 +1652,7 @@ arch marble
 x 6
 y 30
 end
-arch awall_4
+arch awall_3_3
 x 6
 y 30
 end
@@ -1911,6 +1924,10 @@ arch dungeon_magic
 x 7
 y 31
 end
+arch dragonman
+x 7
+y 31
+end
 arch marble
 x 7
 y 32
@@ -2037,7 +2054,7 @@ arch marble
 x 8
 y 9
 end
-arch awall_4
+arch awall_3_2
 x 8
 y 9
 end
@@ -2230,7 +2247,7 @@ arch marble
 x 8
 y 36
 end
-arch awall_2_2_2
+arch awall_1_4
 x 8
 y 36
 end
@@ -2456,7 +2473,7 @@ arch marble
 x 9
 y 32
 end
-arch awall_1_1
+arch awall_2_1_1
 x 9
 y 32
 end
@@ -2464,7 +2481,7 @@ arch marble
 x 9
 y 33
 end
-arch awall_1_1
+arch awall_2_1_1
 x 9
 y 33
 end
@@ -2472,7 +2489,7 @@ arch marble
 x 9
 y 34
 end
-arch awall_1_1
+arch awall_2_1_1
 x 9
 y 34
 end
@@ -2480,7 +2497,7 @@ arch marble
 x 9
 y 35
 end
-arch awall_1_1
+arch awall_2_1_1
 x 9
 y 35
 end
@@ -3229,7 +3246,7 @@ arch marble
 x 12
 y 32
 end
-arch awall_1_1
+arch awall_2_1_1
 x 12
 y 32
 end
@@ -3237,7 +3254,7 @@ arch marble
 x 12
 y 33
 end
-arch awall_1_1
+arch awall_2_1_1
 x 12
 y 33
 end
@@ -3245,7 +3262,7 @@ arch marble
 x 12
 y 34
 end
-arch awall_1_1
+arch awall_2_1_1
 x 12
 y 34
 end
@@ -3253,7 +3270,7 @@ arch marble
 x 12
 y 35
 end
-arch awall_1_1
+arch awall_2_1_1
 x 12
 y 35
 end
@@ -3261,7 +3278,7 @@ arch marble
 x 12
 y 36
 end
-arch awall_1_1
+arch awall_2_1_1
 x 12
 y 36
 end
@@ -3269,7 +3286,7 @@ arch marble
 x 12
 y 37
 end
-arch awall_1_1
+arch awall_1_2
 x 12
 y 37
 end
@@ -4261,7 +4278,7 @@ arch marble
 x 16
 y 31
 end
-arch awall_2_1_1
+arch awall_1_2
 x 16
 y 31
 end
@@ -4277,7 +4294,7 @@ arch marble
 x 16
 y 34
 end
-arch awall_2_1_1
+arch awall_1_1
 x 16
 y 34
 end
@@ -4609,7 +4626,7 @@ arch marble
 x 18
 y 10
 end
-arch awall_4
+arch awall_3_3
 x 18
 y 10
 end
@@ -4887,7 +4904,7 @@ arch marble
 x 19
 y 15
 end
-arch awall_3_4
+arch awall_2_2_4
 x 19
 y 15
 end
@@ -5258,7 +5275,7 @@ arch marble
 x 20
 y 33
 end
-arch awall_2_1_1
+arch awall_1_2
 x 20
 y 33
 end
@@ -6079,7 +6096,7 @@ arch marble
 x 24
 y 16
 end
-arch awall_3_2
+arch awall_2_1_1
 x 24
 y 16
 end
@@ -6531,7 +6548,7 @@ arch marble
 x 26
 y 16
 end
-arch awall_2_1_1
+arch awall_1_1
 x 26
 y 16
 end
@@ -7015,7 +7032,7 @@ arch marble
 x 28
 y 16
 end
-arch awall_2_2_3
+arch awall_1_1
 x 28
 y 16
 end
@@ -7377,7 +7394,7 @@ arch marble
 x 29
 y 37
 end
-arch awall_2_1_1
+arch awall_1_2
 x 29
 y 37
 end
@@ -7495,7 +7512,7 @@ arch marble
 x 30
 y 16
 end
-arch awall_2_1_2
+arch awall_1_4
 x 30
 y 16
 end
@@ -7908,7 +7925,7 @@ arch marble
 x 32
 y 8
 end
-arch awall_2_1_2
+arch awall_1_4
 x 32
 y 8
 end
@@ -8553,7 +8570,7 @@ arch marble
 x 34
 y 37
 end
-arch awall_2_1_2
+arch awall_1_4
 x 34
 y 37
 end
@@ -8969,7 +8986,7 @@ arch marble
 x 36
 y 29
 end
-arch awall_2_1_2
+arch awall_1_4
 x 36
 y 29
 end
@@ -9806,8 +9823,4 @@ end
 arch awall_2_2_4
 x 39
 y 39
-end
-arch dragonman
-x 7
-y 31
 end

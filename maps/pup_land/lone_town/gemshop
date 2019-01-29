@@ -1,13 +1,18 @@
 arch map
+name Lone Town Gem Shop
+difficulty 25
 region lonetown
-name gemshop
+shopitems gem:100;ring:0;amulet:0;*:-100
+shopmin 20
+shopmax 35000
+width 20
+height 20
+enter_x 1
+enter_y 8
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Thu Mar 14 02:11:49 1996
+Created:  1996-03-14
+Modified: 2008-12-03 Rick Tanner
 endmsg
-x 20
-y 20
 end
 arch grass
 end
@@ -35,6 +40,9 @@ end
 arch shop_empty
 y 6
 end
+arch swall_1_4_half
+y 6
+end
 arch wwall_2_1_1
 y 6
 end
@@ -47,7 +55,7 @@ end
 arch woodfloor
 y 8
 end
-arch oakdoor
+arch oakdoor_1
 slaying town
 hp 13
 sp 6
@@ -56,7 +64,7 @@ end
 arch woodfloor
 y 9
 end
-arch oakdoor
+arch oakdoor_1
 slaying town
 hp 13
 sp 6
@@ -71,6 +79,9 @@ end
 arch shop_empty
 y 11
 end
+arch swall_1_4_half
+y 11
+end
 arch wwall_2_1_1
 y 11
 end
@@ -81,6 +92,9 @@ arch wwall_2_1_1
 y 12
 end
 arch shop_empty
+y 13
+end
+arch swall_1_4_half
 y 13
 end
 arch wwall_2_1_1
@@ -149,7 +163,7 @@ arch shop_empty
 x 1
 y 6
 end
-arch swall_1_4
+arch swall_2_1_2
 x 1
 y 6
 end
@@ -173,11 +187,11 @@ arch shop_empty
 x 1
 y 11
 end
-arch swall_1_4
+arch swall_2_1_2
 x 1
 y 11
 end
-arch shop_empty
+arch woodfloor
 x 1
 y 12
 end
@@ -185,7 +199,7 @@ arch shop_empty
 x 1
 y 13
 end
-arch swall_1_4
+arch swall_2_1_2
 x 1
 y 13
 end
@@ -292,7 +306,7 @@ arch swall_2_1_2
 x 2
 y 11
 end
-arch shop_empty
+arch woodfloor
 x 2
 y 12
 end
@@ -397,10 +411,8 @@ end
 arch man
 msg
 @match *
-Sorry, most of our jewers are stolen
-by thievies! 
+Sorry, most of our jewels were stolen by thieves!
 endmsg
-face man.171
 hp 180
 x 3
 y 8

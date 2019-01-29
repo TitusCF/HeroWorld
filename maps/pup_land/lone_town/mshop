@@ -1,13 +1,16 @@
 arch map
+name Lown Town Magic Shop
+difficulty 25
 region lonetown
-name townA_mshop
+shopitems book:85;spellbook:90;potion:75;rod:70;wand:75;amulet:15;gem:10;*:-90
+width 28
+height 28
+enter_x 4
+enter_y 1
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Mon Jan 29 04:12:24 1996
+Created:  1996-01-29
+Modified: 2012-03-01 Rick Tanner
 endmsg
-x 28
-y 28
 end
 arch grass
 end
@@ -116,6 +119,10 @@ x 1
 y 3
 end
 arch shop_empty
+x 1
+y 4
+end
+arch swall_1_4_half
 x 1
 y 4
 end
@@ -301,7 +308,7 @@ arch shop_empty
 x 2
 y 4
 end
-arch swall_1_4
+arch swall_2_1_2
 x 2
 y 4
 end
@@ -471,7 +478,7 @@ arch man
 name Shopkeeper NH ver3.1.3
 msg
 @match *
-Transports are interruped by the war..
+Transports are interrupted by the war..
 endmsg
 face man.131
 Str 10
@@ -607,7 +614,7 @@ end
 arch cobblestones2
 x 4
 end
-arch oakdoor
+arch oakdoor_2
 slaying town
 hp 13
 sp 4
@@ -1229,11 +1236,14 @@ end
 arch wwall_2_1_2
 x 8
 end
+arch swall_1_1_half
+x 8
+end
 arch shop_empty
 x 8
 y 1
 end
-arch swall_1_1
+arch swall_2_1_1
 x 8
 y 1
 end
@@ -3625,7 +3635,7 @@ x 23
 end
 arch magic_mouth
 msg
-rich persons only
+Rich persons only.
 endmsg
 x 23
 y 1
@@ -3828,7 +3838,7 @@ arch shop_empty
 x 24
 y 2
 end
-arch wwall_2_2_1
+arch wwall_1_4
 x 24
 y 2
 end

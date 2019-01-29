@@ -1,76 +1,56 @@
 arch map
-name DragonQuest--Ice Hatchery
+name Dragon Quest, Ice Hatchery
+difficulty 25
+region wilderness
+darkness 5
+width 16
+height 31
+enter_x 4
+enter_y 5
 msg
-Creator: peterm
-Email: peterm@soda.csua.berkeley.edu
-Date: Fri Aug 19 23:44:33 1994
+Created:  1994-08-19 peterm (peterm@soda.csua.berkeley.edu)
+Modified: 2012-01-01 Rick Tanner
 endmsg
-y 31
-invisible 5
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 2
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 3
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 4
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 5
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 6
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 7
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 8
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 9
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 10
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 11
 end
 arch pstone_2
 y 12
 end
-arch cave18
+arch cave24
 y 12
 end
 arch pstone_2
@@ -97,54 +77,34 @@ end
 arch cave23
 y 16
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 17
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 18
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 19
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 20
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 21
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 22
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 23
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 24
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 25
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 26
 end
 arch pstone_2
@@ -159,14 +119,10 @@ end
 arch cave23
 y 28
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 29
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 30
 end
 arch pstone_2
@@ -175,21 +131,15 @@ end
 arch cave17
 x 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 2
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 3
 end
@@ -209,33 +159,23 @@ arch cave23
 x 1
 y 5
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 6
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 7
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 8
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 9
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 10
 end
@@ -262,7 +202,6 @@ end
 arch cold_dragon
 x 1
 y 13
-randomitems cold_dragon
 end
 arch pstone_2
 x 1
@@ -296,15 +235,11 @@ arch cave23
 x 1
 y 18
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 19
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 20
 end
@@ -312,7 +247,7 @@ arch pstone_2
 x 1
 y 21
 end
-arch cave18
+arch cave24
 x 1
 y 21
 end
@@ -324,21 +259,15 @@ arch cave23
 x 1
 y 22
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 23
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 24
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 25
 end
@@ -366,13 +295,15 @@ arch cave12
 x 1
 y 28
 end
+arch pstone_2
+x 1
+y 29
+end
 arch cave23
 x 1
 y 29
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 30
 end
@@ -390,9 +321,7 @@ arch cave17
 x 2
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 2
 end
@@ -424,7 +353,7 @@ arch pstone_2
 x 2
 y 6
 end
-arch cave17
+arch cave23
 x 2
 y 6
 end
@@ -432,7 +361,7 @@ arch pstone_2
 x 2
 y 7
 end
-arch cave18
+arch cave24
 x 2
 y 7
 end
@@ -448,9 +377,13 @@ arch pstone_2
 x 2
 y 9
 end
-arch cave17
+arch cave23
 x 2
 y 9
+end
+arch pstone_2
+x 2
+y 10
 end
 arch cave24
 x 2
@@ -482,11 +415,11 @@ y 15
 end
 arch generate_dragon
 other_arch cold_dragon
-immune 16
-vulnerable 4
 x 2
 y 15
 speed 0.004000
+resist_fire 0
+resist_cold 100
 end
 arch pstone_2
 x 2
@@ -548,7 +481,7 @@ arch pstone_2
 x 2
 y 24
 end
-arch cave17
+arch cave23
 x 2
 y 24
 end
@@ -580,13 +513,15 @@ arch cave11
 x 2
 y 28
 end
+arch pstone_2
+x 2
+y 29
+end
 arch cave22
 x 2
 y 29
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 30
 end
@@ -698,7 +633,6 @@ end
 arch cold_dragon
 x 3
 y 15
-randomitems cold_dragon
 end
 arch pstone_2
 x 3
@@ -711,7 +645,6 @@ end
 arch cold_dragon
 x 3
 y 17
-randomitems cold_dragon
 end
 arch pstone_2
 x 3
@@ -745,8 +678,8 @@ arch generate_dragon
 other_arch chinese_dragon
 x 3
 y 22
-immune 16
-vulnerable 4
+resist_fire 0
+resist_cold 100
 end
 arch pstone_2
 x 3
@@ -806,9 +739,7 @@ arch cave23
 x 3
 y 29
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 30
 end
@@ -826,7 +757,7 @@ end
 arch pstone_2
 x 4
 y 3
-no_pass 1
+move_block all
 end
 arch invis_exit
 slaying WyvernNest
@@ -881,7 +812,6 @@ end
 arch cold_dragon
 x 4
 y 12
-randomitems cold_dragon
 end
 arch pstone_2
 x 4
@@ -973,9 +903,7 @@ arch cave22
 x 4
 y 29
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 30
 end
@@ -993,7 +921,7 @@ end
 arch pstone_2
 x 5
 y 3
-no_pass 1
+move_block all
 end
 arch invis_exit
 slaying WyvernNest
@@ -1069,6 +997,10 @@ arch pstone_2
 x 5
 y 17
 end
+arch chinese_dragon
+x 5
+y 17
+end
 arch pstone_2
 x 5
 y 18
@@ -1088,13 +1020,16 @@ end
 arch cold_dragon
 x 5
 y 21
-randomitems cold_dragon
 end
 arch pstone_2
 x 5
 y 22
 end
 arch pstone_2
+x 5
+y 23
+end
+arch chinese_dragon
 x 5
 y 23
 end
@@ -1116,11 +1051,11 @@ y 27
 end
 arch generate_dragon
 other_arch cold_dragon
-immune 16
-vulnerable 4
 x 5
 y 27
 speed 0.004000
+resist_fire 0
+resist_cold 100
 end
 arch pstone_1
 x 5
@@ -1130,19 +1065,11 @@ arch cave2
 x 5
 y 28
 end
-arch pstone_1
+arch cave_15
 x 5
 y 29
 end
-arch blocked
-msg
-endmsg
-x 5
-y 29
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 5
 y 30
 end
@@ -1160,7 +1087,7 @@ end
 arch pstone_2
 x 6
 y 3
-no_pass 1
+move_block all
 end
 arch invis_exit
 slaying WyvernNest
@@ -1232,7 +1159,6 @@ end
 arch cold_dragon
 x 6
 y 14
-randomitems cold_dragon
 end
 arch pstone_2
 x 6
@@ -1245,7 +1171,6 @@ end
 arch cold_dragon
 x 6
 y 16
-randomitems cold_dragon
 end
 arch pstone_2
 x 6
@@ -1311,9 +1236,7 @@ arch cave17
 x 6
 y 29
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 6
 y 30
 end
@@ -1387,9 +1310,13 @@ arch pstone_2
 x 7
 y 9
 end
-arch cave20
+arch cave22
 x 7
 y 9
+end
+arch pstone_2
+x 7
+y 10
 end
 arch cave25
 x 7
@@ -1445,11 +1372,11 @@ y 20
 end
 arch generate_dragon
 other_arch cold_dragon
-immune 16
-vulnerable 4
 x 7
 y 20
 speed 0.004000
+resist_fire 0
+resist_cold 100
 end
 arch pstone_2
 x 7
@@ -1478,7 +1405,6 @@ end
 arch cold_dragon
 x 7
 y 26
-randomitems cold_dragon
 end
 arch pstone_2
 x 7
@@ -1500,27 +1426,21 @@ arch cave20
 x 7
 y 29
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 7
 y 30
 end
 arch pstone_2
 x 8
 end
-arch blocked
-msg
-endmsg
+arch cave25
 x 8
 end
 arch pstone_2
 x 8
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 8
 y 1
 end
@@ -1532,31 +1452,23 @@ arch pstone_2
 x 8
 y 2
 end
-arch cave20
+arch cave22
 x 8
 y 2
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 8
 y 3
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 8
 y 4
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 8
 y 5
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 8
 y 6
 end
@@ -1576,15 +1488,11 @@ arch cave20
 x 8
 y 8
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 8
 y 9
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 8
 y 10
 end
@@ -1639,7 +1547,6 @@ end
 arch cold_dragon
 x 8
 y 20
-randomitems cold_dragon
 end
 arch pstone_2
 x 8
@@ -1652,7 +1559,6 @@ end
 arch cold_dragon
 x 8
 y 22
-randomitems cold_dragon
 end
 arch pstone_2
 x 8
@@ -1694,74 +1600,50 @@ arch cave23
 x 8
 y 29
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 8
 y 30
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 9
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 9
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 9
 y 2
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 9
 y 3
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 9
 y 4
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 9
 y 5
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 9
 y 6
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 9
 y 7
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 9
 y 8
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 9
 y 9
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 9
 y 10
 end
@@ -1789,8 +1671,8 @@ arch generate_dragon
 other_arch chinese_dragon
 x 9
 y 13
-immune 16
-vulnerable 4
+resist_fire 0
+resist_cold 100
 end
 arch pstone_2
 x 9
@@ -1803,7 +1685,6 @@ end
 arch cold_dragon
 x 9
 y 15
-randomitems cold_dragon
 end
 arch pstone_2
 x 9
@@ -1844,7 +1725,6 @@ end
 arch cold_dragon
 x 9
 y 24
-randomitems cold_dragon
 end
 arch pstone_2
 x 9
@@ -1870,27 +1750,54 @@ arch cave2
 x 9
 y 29
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 9
 y 30
 end
-arch blocked
-msg
-endmsg
+arch cave_15
+x 10
+end
+arch cave_15
+x 10
+y 1
+end
+arch cave_15
+x 10
+y 2
+end
+arch cave_15
+x 10
+y 3
+end
+arch cave_15
+x 10
+y 4
+end
+arch cave_15
+x 10
+y 5
+end
+arch cave_15
+x 10
+y 6
+end
+arch cave_15
+x 10
+y 7
+end
+arch cave_15
+x 10
+y 8
+end
+arch cave_15
 x 10
 y 9
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 10
 y 10
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 10
 y 11
 end
@@ -1925,7 +1832,6 @@ end
 arch cold_dragon
 x 10
 y 17
-randomitems cold_dragon
 end
 arch pstone_2
 x 10
@@ -1970,7 +1876,6 @@ end
 arch cold_dragon
 x 10
 y 26
-randomitems cold_dragon
 end
 arch pstone_2
 x 10
@@ -1983,7 +1888,6 @@ end
 arch cold_dragon
 x 10
 y 28
-randomitems cold_dragon
 end
 arch pstone_2
 x 10
@@ -1993,19 +1897,58 @@ arch cave12
 x 10
 y 29
 end
+arch pstone_2
+x 10
+y 30
+end
 arch cave23
 x 10
 y 30
 end
-arch blocked
-msg
-endmsg
+arch cave_15
+x 11
+end
+arch cave_15
+x 11
+y 1
+end
+arch cave_15
+x 11
+y 2
+end
+arch cave_15
+x 11
+y 3
+end
+arch cave_15
+x 11
+y 4
+end
+arch cave_15
+x 11
+y 5
+end
+arch cave_15
+x 11
+y 6
+end
+arch cave_15
+x 11
+y 7
+end
+arch cave_15
+x 11
+y 8
+end
+arch cave_15
+x 11
+y 9
+end
+arch cave_15
 x 11
 y 10
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 11
 y 11
 end
@@ -2013,7 +1956,7 @@ arch pstone_2
 x 11
 y 12
 end
-arch cave19
+arch cave25
 x 11
 y 12
 end
@@ -2032,7 +1975,6 @@ end
 arch cold_dragon
 x 11
 y 14
-randomitems cold_dragon
 end
 arch pstone_2
 x 11
@@ -2065,7 +2007,6 @@ end
 arch cold_dragon
 x 11
 y 20
-randomitems cold_dragon
 end
 arch pstone_2
 x 11
@@ -2076,6 +2017,10 @@ x 11
 y 22
 end
 arch pstone_2
+x 11
+y 23
+end
+arch chinese_dragon
 x 11
 y 23
 end
@@ -2107,13 +2052,58 @@ arch cave15
 x 11
 y 29
 end
+arch pstone_2
+x 11
+y 30
+end
 arch cave22
 x 11
 y 30
 end
-arch blocked
-msg
-endmsg
+arch cave_15
+x 12
+end
+arch cave_15
+x 12
+y 1
+end
+arch cave_15
+x 12
+y 2
+end
+arch cave_15
+x 12
+y 3
+end
+arch cave_15
+x 12
+y 4
+end
+arch cave_15
+x 12
+y 5
+end
+arch cave_15
+x 12
+y 6
+end
+arch cave_15
+x 12
+y 7
+end
+arch cave_15
+x 12
+y 8
+end
+arch cave_15
+x 12
+y 9
+end
+arch cave_15
+x 12
+y 10
+end
+arch cave_15
 x 12
 y 11
 end
@@ -2144,7 +2134,6 @@ end
 arch cold_dragon
 x 12
 y 15
-randomitems cold_dragon
 end
 arch pstone_2
 x 12
@@ -2156,11 +2145,11 @@ y 17
 end
 arch generate_dragon
 other_arch cold_dragon
-immune 16
-vulnerable 4
 x 12
 y 17
 speed 0.004000
+resist_fire 0
+resist_cold 100
 end
 arch pstone_2
 x 12
@@ -2210,19 +2199,62 @@ arch cave15
 x 12
 y 28
 end
+arch pstone_2
+x 12
+y 29
+end
 arch cave20
 x 12
 y 29
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 12
 y 30
 end
-arch blocked
-msg
-endmsg
+arch cave_15
+x 13
+end
+arch cave_15
+x 13
+y 1
+end
+arch cave_15
+x 13
+y 2
+end
+arch cave_15
+x 13
+y 3
+end
+arch cave_15
+x 13
+y 4
+end
+arch cave_15
+x 13
+y 5
+end
+arch cave_15
+x 13
+y 6
+end
+arch cave_15
+x 13
+y 7
+end
+arch cave_15
+x 13
+y 8
+end
+arch cave_15
+x 13
+y 9
+end
+arch cave_15
+x 13
+y 10
+end
+arch cave_15
 x 13
 y 11
 end
@@ -2285,7 +2317,6 @@ end
 arch cold_dragon
 x 13
 y 21
-randomitems cold_dragon
 end
 arch pstone_2
 x 13
@@ -2299,8 +2330,8 @@ arch generate_dragon
 other_arch chinese_dragon
 x 13
 y 23
-immune 16
-vulnerable 4
+resist_fire 0
+resist_cold 100
 end
 arch pstone_2
 x 13
@@ -2312,11 +2343,11 @@ y 25
 end
 arch generate_dragon
 other_arch cold_dragon
-immune 16
-vulnerable 4
 x 13
 y 25
 speed 0.004000
+resist_fire 0
+resist_cold 100
 end
 arch pstone_2
 x 13
@@ -2342,27 +2373,62 @@ arch cave22
 x 13
 y 28
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 13
 y 29
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 13
 y 30
 end
-arch blocked
-msg
-endmsg
+arch cave_15
+x 14
+end
+arch cave_15
+x 14
+y 1
+end
+arch cave_15
+x 14
+y 2
+end
+arch cave_15
+x 14
+y 3
+end
+arch cave_15
+x 14
+y 4
+end
+arch cave_15
+x 14
+y 5
+end
+arch cave_15
+x 14
+y 6
+end
+arch cave_15
+x 14
+y 7
+end
+arch cave_15
+x 14
+y 8
+end
+arch cave_15
+x 14
+y 9
+end
+arch cave_15
+x 14
+y 10
+end
+arch cave_15
 x 14
 y 11
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 14
 y 12
 end
@@ -2418,7 +2484,7 @@ arch pstone_2
 x 14
 y 19
 end
-arch cave19
+arch cave25
 x 14
 y 19
 end
@@ -2478,45 +2544,74 @@ arch cave22
 x 14
 y 26
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 14
 y 27
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 14
 y 28
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 14
 y 29
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 14
 y 30
 end
-arch blocked
-msg
-endmsg
+arch cave_15
+x 15
+end
+arch cave_15
+x 15
+y 1
+end
+arch cave_15
+x 15
+y 2
+end
+arch cave_15
+x 15
+y 3
+end
+arch cave_15
+x 15
+y 4
+end
+arch cave_15
+x 15
+y 5
+end
+arch cave_15
+x 15
+y 6
+end
+arch cave_15
+x 15
+y 7
+end
+arch cave_15
+x 15
+y 8
+end
+arch cave_15
+x 15
+y 9
+end
+arch cave_15
+x 15
+y 10
+end
+arch cave_15
 x 15
 y 11
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 15
 y 12
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 15
 y 13
 end
@@ -2552,33 +2647,23 @@ arch cave22
 x 15
 y 17
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 15
 y 18
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 15
 y 19
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 15
 y 20
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 15
 y 21
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 15
 y 22
 end
@@ -2598,51 +2683,27 @@ arch cave22
 x 15
 y 24
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 15
 y 25
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 15
 y 26
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 15
 y 27
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 15
 y 28
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 15
 y 29
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 15
 y 30
-end
-arch chinese_dragon
-x 5
-y 17
-end
-arch chinese_dragon
-x 5
-y 23
-end
-arch chinese_dragon
-x 11
-y 23
 end

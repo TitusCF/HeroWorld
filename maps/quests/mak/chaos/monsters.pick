@@ -1,9 +1,10 @@
 arch map
 name Bogustest
+width 13
+height 13
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sun Apr  9 23:46:05 2000
+Created:  2000-02-09
+Modified: 2008-06-03 Arvid Norlander
 endmsg
 end
 arch holy_priest
@@ -12,7 +13,7 @@ msg
 @match *
 This is the one true path, give
 yourself to the devourers and the
-way shall ope
+way shall open.
 endmsg
 Con 15
 Wis 0
@@ -25,28 +26,23 @@ maxsp 75
 exp 20000
 dam 20
 wc -10
-ac -8
+ac -4
 y 2
 speed 0.200000
 level 13
-immune 2
 carrying 100
 undead 1
 stand_still 1
-arch ability_paralyze
-end
-arch ability_fear
-end
-arch ability_coldspell
-end
-arch ability_cold
-end
-arch ability_cold
-end
 arch key2
 name Priest of Devourers head
 slaying cp_head_d
 face head.111
+end
+arch spell_large_icestorm
+end
+arch spell_paralyze
+end
+arch abil_fear
 end
 end
 arch c_knight
@@ -60,19 +56,22 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 y 4
-speed -0.700000
+speed -0.7
 level 20
-immune 282665
 attacktype 262145
+resist_physical 100
+resist_electricity 100
+resist_confusion 100
+resist_paralyze 100
 carrying 13000
 see_invisible 1
 arch falchion
 name wicked sabre
 dam 25
 attacktype 262145
-vulnerable 256
+resist_weaponmagic -100
 last_sp 4
 end
 end
@@ -88,13 +87,12 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 y 7
 speed -0.800000
 level 20
-immune 20512
-protected 1
 attacktype 256
+resist_physical 100
 carrying 20000
 see_invisible 1
 unaggressive 0
@@ -105,7 +103,7 @@ slaying unnatural
 dam 15
 nrof 2
 attacktype 256
-vulnerable 128
+resist_drain -100
 weight 10000
 magic 4
 last_sp 0
@@ -129,18 +127,18 @@ maxsp 50
 exp 10000
 dam 10
 wc -10
-ac -8
+ac -4
 x 1
 y 2
-speed 0.400000
+speed 0.4
 level 10
-immune 20496
+resist_cold 100
+resist_slow 100
+resist_fear 100
 see_invisible 1
 undead 1
 stand_still 1
-arch ability_coldspell
-end
-arch ability_cold
+arch spell_large_icestorm
 end
 end
 arch c_priest
@@ -157,16 +155,19 @@ maxsp 100
 exp 35000
 dam 20
 wc -10
-ac -8
+ac -4
 x 1
 y 4
-speed -0.400000
+speed -0.4
 level 13
-immune 282662
+resist_magic 100
+resist_fire 100
+resist_confusion 100
+resist_slow 100
 see_invisible 1
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_dragon
+arch ability_dragonbreath
 end
 end
 arch dwarf_priest
@@ -182,25 +183,27 @@ maxsp 100
 exp 50000
 dam 20
 wc -10
-ac -8
+ac -4
 x 1
 y 7
 speed -0.400000
 attack_movement 7
 level 20
-immune 20512
-protected 2
+resist_magic 30
+resist_confusion 100
+resist_paralyze 100
+resist_fear 100
 see_invisible 1
 unaggressive 0
-arch ability_heal
+arch spell_cause_heavy_wounds
 end
-arch ability_petsummoning
+arch spell_cause_medium_wounds
 end
-arch ability_cause_ser_wound
+arch spell_cause_heavy_wounds
 end
-arch ability_cause_med_wound
+arch spell_summon_pet_monster
 end
-arch ability_cause_ser_wound
+arch spell_heal
 end
 end
 arch holy_priest
@@ -220,28 +223,24 @@ maxsp 30
 exp 20000
 dam 20
 wc -10
-ac -8
+ac -4
 x 2
 speed 0.200000
 level 13
 carrying 100
 stand_still 1
-arch ability_dragon
-end
-arch ability_wyvern
-end
-arch ability_paralyze
-end
-arch ability_fear
-end
-arch ability_dragon
-end
-arch ability_fire
-end
 arch key2
 name Priest of Ruggillis head
 slaying cp_head_d
 face head.111
+end
+arch abil_fear
+end
+arch ability_dragonbreath
+end
+arch spell_paralyze
+end
+arch spell_large_fireball
 end
 end
 arch a_priest
@@ -251,7 +250,7 @@ msg
 Ruggilli will burn your sins away
 endmsg
 Con 11
-Wis 0
+Wis 6
 Pow 15
 Int 0
 hp 1000
@@ -261,20 +260,21 @@ maxsp 50
 exp 10000
 dam 10
 wc -10
-ac -8
+ac -4
 x 2
 y 1
 speed 0.400000
 level 10
 see_invisible 1
+unaggressive 0
 stand_still 1
-arch ability_summon_fire
+arch spell_summon_fire_elemental
 end
-arch ability_fire
+arch abil_burning_hands
 end
-arch ability_fire
+arch abil_burning_hands
 end
-arch ability_firespell
+arch spell_burning_hands
 end
 end
 arch broo
@@ -292,21 +292,23 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 2
 y 4
 speed -0.400000
 level 22
-immune 283684
+resist_fire 100
+resist_confusion 100
+resist_paralyze 100
 see_invisible 1
 can_cast_spell 1
-arch ability_paralyze
+arch abil_fear
 end
-arch ability_firespell
+arch abil_burning_hands
 end
-arch ability_fire
+arch spell_burning_hands
 end
-arch ability_fear
+arch spell_paralyze
 end
 end
 arch dark_elf
@@ -324,21 +326,24 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 2
 y 7
 speed -0.400000
 level 22
-immune 20528
-protected 2
+resist_magic 30
+resist_cold 100
+resist_confusion 100
+resist_paralyze 100
+resist_fear 100
 see_invisible 1
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_cold
+arch abil_icestorm
 end
-arch ability_coldspell
+arch spell_icestorm
 end
-arch ability_fear
+arch abil_fear
 end
 end
 arch a_priest
@@ -359,20 +364,20 @@ maxsp 50
 exp 10000
 dam 10
 wc -10
-ac -8
+ac -4
 x 3
 y 2
 speed 0.400000
 level 10
 see_invisible 1
 stand_still 1
-arch ability_missile
+arch spell_cause_light_wounds
 end
-arch ability_cause_lig_wound
+arch spell_cause_medium_wounds
 end
-arch ability_cause_med_wound
+arch spell_cause_heavy_wounds
 end
-arch ability_cause_ser_wound
+arch spell_magic_missile
 end
 end
 arch unusual_kobold
@@ -387,7 +392,7 @@ arch holy_priest
 name Priest
 msg
 @match *
-INFIDEL! 
+INFIDEL!
 Gorokh will punish you for your blasfem
 endmsg
 Con 15
@@ -401,29 +406,27 @@ maxsp 30
 exp 20000
 dam 20
 wc -10
-ac -8
+ac -4
 x 4
 y 2
 speed 0.200000
 level 13
 carrying 100
 stand_still 1
-arch ability_speedball
-end
-arch ability_cause_med_wound
-end
-arch ability_paralyze
-end
-arch ability_fear
-end
-arch ability_cause_ser_wound
-end
-arch ability_cause_ser_wound
-end
 arch key2
 name Priest of Gorokhs head
 slaying cp_head_g
 face head.111
+end
+arch spell_cause_light_wounds
+end
+arch spell_cause_heavy_wounds
+end
+arch spell_cause_medium_wounds
+end
+arch spell_fear
+end
+arch spell_paralyze
 end
 end
 arch h_kobold
@@ -439,28 +442,32 @@ name wandering terror
 Str 80
 Con 56
 Wis 15
-Pow 50
+Pow 5
 hp 8000
 maxhp 8000
-sp 150
-maxsp 150
-exp 150000
-dam 50
+sp 20
+maxsp 20
+exp 100000
+dam 40
 wc -15
-ac -10
-armour 50
+ac -5
 x 5
 y 4
 speed -0.350000
 level 25
-immune 282658
-protected 1
+attacktype 16897
+resist_physical 30
+resist_confusion 100
+resist_poison -100
+resist_paralyze 100
+resist_fear 100
+resist_chaos 100
 see_invisible 1
 can_cast_spell 1
 stand_still 0
-arch ability_fear
+arch spell_paralyze
 end
-arch ability_paralyze
+arch abil_fear
 end
 end
 arch gargolye
@@ -472,14 +479,11 @@ maxhp 8000
 exp 150000
 dam 50
 wc -15
-ac -10
+ac -5
 x 5
 y 7
 speed -0.400000
 level 25
-immune 152254
-protected 1
-vulnerable 64
 end
 arch c_priest
 name High Priest of Chaos
@@ -496,24 +500,25 @@ maxsp 150
 exp 50000
 dam 25
 wc -15
-ac -13
+ac -6
 x 6
 level 25
-immune 262150
+resist_magic 100
+resist_fire 100
 stand_still 1
-arch ability_pool_chaos
+arch spell_hellfire
 end
-arch ability_slow
+arch spell_hellfire
 end
-arch ability_paralyze
+arch spell_paralyze
 end
-arch ability_fear
+arch abil_fear
 end
-arch ability_dragon
+arch abil_slow
 end
-arch ability_hellfire
+arch ability_dragonbreath
 end
-arch ability_hellfire
+arch spell_create_pool_of_chaos
 end
 end
 arch c_priest
@@ -530,21 +535,23 @@ maxsp 100
 exp 35000
 dam 20
 wc -10
-ac -8
+ac -4
 x 6
 y 2
-speed -0.400000
+speed -0.4
 level 13
-immune 262150
+resist_magic 100
+resist_fire 100
 see_invisible 1
 stand_still 1
-arch ability_hellfire
+arch ability_dragonbreath
 end
-arch ability_dragon
+arch spell_hellfire
 end
 end
 arch lokanth
 name likanth
+Str 35
 Dex 0
 Con 20
 Wis 15
@@ -553,52 +560,61 @@ hp 5000
 maxhp 5000
 sp 300
 maxsp 300
-exp 250000
+exp 200000
 dam 25
 wc -20
-ac -15
+ac -7
 x 6
 y 4
 speed -0.400000
-level 31
-immune 21600
+level 35
+resist_physical 70
+resist_confusion 100
+resist_weaponmagic -50
+resist_paralyze 100
 see_invisible 1
-arch ability_fear
+arch abil_fear
 end
-arch ability_poison
+arch abil_poison_cloud
 end
-arch ability_paralyze
+arch spell_paralyze
 end
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 arch pixie
 name twisted sprite
+Str 20
+Con 20
 Pow 80
 hp 5500
 maxhp 4000
 sp 200
 maxsp 200
-exp 250000
+exp 200000
 dam 25
 wc -20
-ac -15
-armour 30
+ac -7
 x 6
 y 7
 speed -0.600000
-level 31
-immune 20514
+level 35
 attacktype 2
-arch ability_speedball
+resist_physical 30
+resist_magic 100
+resist_confusion 100
+resist_paralyze 100
+resist_fear 100
+resist_godpower 90
+arch spell_small_speedball
 end
-arch ability_missile
+arch spell_magic_missile
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_maj_heal
+arch spell_major_healing
 end
 end
 arch crawling_chaos
@@ -613,20 +629,21 @@ maxsp 200
 exp 300000
 dam 40
 wc -35
-ac -30
+ac -15
 x 7
 y 4
-speed -0.400000
+speed -0.4
 level 40
-immune 283680
 attacktype 283648
+resist_acid 100
+resist_paralyze 100
 see_invisible 1
 can_cast_spell 1
-arch ability_fear
+arch abil_fear
 end
-arch ability_fear
+arch abil_fear
 end
-arch ability_pool_chaos
+arch spell_create_pool_of_chaos
 end
 end
 arch dwarf_wiz
@@ -641,36 +658,88 @@ maxsp 300
 exp 300000
 dam 25
 wc -30
-ac -25
+ac -18
 x 7
 y 7
 speed -0.400000
 level 40
-immune 20512
-protected 30
+resist_magic 30
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_confusion 100
+resist_paralyze 100
+resist_fear 100
 see_invisible 1
 unaggressive 0
-arch ability_slow
+arch spell_sm_lightning
 end
-arch ability_paralyze
+arch spell_icestorm
 end
-arch ability_fire
+arch abil_burning_hands
 end
-arch ability_cold
+arch spell_paralyze
 end
-arch ability_lightning
+arch abil_slow
 end
 end
-arch book
-name rainbow colored spellbook
-msg
-This spellbook ripples with the
-colors of the rainbow
-endmsg
-sp 85
-x 7
-y 11
-value 30000
+arch byakie
+name cave byakie
+Str 90
+Dex 65
+Con 90
+Wis 20
+Pow 75
+Int 30
+hp 10000
+maxhp 8000
+sp 200
+maxsp 200
+exp 700000
+dam 60
+wc -50
+ac -17
+x 8
+y 4
+speed -0.7
+level 50
+resist_confusion 100
+resist_ghosthit 100
+resist_slow 100
+carrying 25000
+arch gem
+nrof 500
+end
+arch abil_slow
+end
+arch ability_dragonbreath
+end
+arch abil_large_icestorm
+end
+end
+arch djinn
+Str 75
+Dex 60
+Con 90
+Wis 30
+Pow 127
+Int 75
+hp 10000
+maxhp 10000
+sp 500
+maxsp 500
+exp 750000
+dam 40
+wc -45
+ac -19
+x 8
+y 6
+speed 0.900000
+level 75
+resist_confusion 100
+resist_paralyze 100
+resist_death 100
+carrying 750
 end
 arch turban
 name shimmering turban
@@ -685,9 +754,9 @@ Int 2
 hp 1
 sp 1
 ac 2
-armour 5
 x 9
 y 12
+resist_physical 5
 value 1000000
 last_heal 0
 glow_radius 2
@@ -710,39 +779,28 @@ sp 500
 maxsp 500
 exp 1000000
 dam 80
-ac -40
-armour 50
+ac -17
 x 10
 y 4
 speed -0.600000
 attack_movement 0
 level 99
-immune 393728
-protected 21679
 attacktype 262657
-vulnerable 0
+resist_magic 30
+resist_fire 30
+resist_electricity 30
+resist_confusion 30
+resist_drain 30
+resist_ghosthit 100
+resist_poison 30
+resist_paralyze 30
+resist_fear 30
+resist_death 100
+resist_chaos 100
 carrying 4250
 see_invisible 1
 unaggressive 0
 can_cast_spell 1
-arch ability_slow
-end
-arch ability_speedball
-end
-arch ability_paralyze
-end
-arch ability_lightning
-end
-arch ability_fire
-end
-arch ability_cold
-end
-arch ability_cold
-end
-arch wine
-name a bottle filled with blood
-material 0
-end
 arch gem
 title of exceptional beauty
 face pretty_crystal.111
@@ -751,6 +809,24 @@ nrof 50
 value 40000
 weight 65
 is_animated 0
+end
+arch wine
+name a bottle filled with blood
+material 0
+end
+arch abil_icestorm
+end
+arch abil_icestorm
+end
+arch abil_burning_hands
+end
+arch spell_sm_lightning
+end
+arch spell_paralyze
+end
+arch spell_small_speedball
+end
+arch abil_slow
 end
 end
 arch ologhi
@@ -768,29 +844,17 @@ maxsp 250
 exp 1000000
 dam 85
 wc -50
-ac -40
+ac -17
 x 10
 y 7
-speed -0.500000
+speed -0.5
 attack_movement 0
 level 99
-immune 151557
-protected 3504
 attacktype 257
-vulnerable 2
+resist_magic 100
 carrying 3254
 see_invisible 1
 can_cast_spell 1
-arch ability_bullet
-end
-arch ability_fire
-end
-arch ability_fear
-end
-arch ability_heal
-end
-arch ability_paralyze
-end
 arch heart
 name a still beating heart
 material 0
@@ -804,6 +868,16 @@ value 40000
 weight 65
 is_animated 0
 end
+arch abil_fear
+end
+arch abil_burning_hands
+end
+arch spell_paralyze
+end
+arch spell_heal
+end
+arch spell_magic_bullet
+end
 end
 arch uk_sd
 name twilight vengeance
@@ -811,8 +885,8 @@ slaying human
 dam 65
 x 10
 y 12
-protected 262144
 attacktype 256
+resist_chaos 30
 material 256
 magic 5
 last_sp 2
@@ -833,124 +907,38 @@ maxsp 1000
 exp 3000000
 dam 80
 wc -70
-ac -60
+ac -19
 x 12
 y 5
-speed 1.000000
+speed 1.0
 speed_left -0.860000
 attack_movement 8
 level 127
-immune 1529461
-protected 394
 attacktype 22817
+resist_magic 100
+resist_electricity 100
+resist_drain 100
+resist_weaponmagic 100
 carrying 100
 reflect_spell 1
 arch key2
 name a white shimmering key
 slaying Lorkas treasure key
 end
-arch ability_speedball
+arch abil_large_icestorm
 end
-arch ability_poison
+arch ability_dragonbreath
 end
-arch ability_paralyze
+arch abil_fear
 end
-arch ability_mass_confusion
-name comet spell
-sp 90
-attacktype 0
+arch spell_heal
 end
-arch ability_lightning
+arch spell_forked_lightning
 end
-arch ability_heal
+arch spell_comet
 end
-arch ability_fear
+arch abil_poison_cloud
 end
-arch ability_dragon
-end
-arch ability_cold
-end
-end
-arch byakie
-name cave byakie
-Str 90
-Dex 65
-Con 90
-Wis 20
-Pow 75
-Int 30
-hp 10000
-maxhp 8000
-sp 200
-maxsp 200
-exp 700000
-dam 60
-wc -50
-ac -40
-x 8
-y 4
-speed -0.700000
-level 50
-immune 283683
-carrying 25000
-arch gem
-nrof 500
-end
-arch ability_cold
-end
-arch ability_dragon
-end
-arch ability_slow
-end
-end
-arch djinn
-Str 75
-Dex 60
-Con 90
-Wis 30
-Pow 127
-Int 75
-hp 10000
-maxhp 10000
-sp 500
-maxsp 500
-exp 750000
-dam 40
-wc -45
-ac -60
-x 8
-y 6
-speed 0.900000
-level 75
-immune 153215
-carrying 650
-arch gem
-title of exceptional beauty
-face pretty_crystal.111
-speed 0.000000
-nrof 10
-value 40000
-weight 65
-is_animated 0
-end
-arch ability_cold
-end
-arch ability_fire
-end
-arch ability_fear
-end
-arch ability_heal
-end
-arch ability_lightning
-end
-arch ability_paralyze
-end
-arch ability_poison
-end
-arch ability_mass_confusion
-end
-arch ability_paralyze
-end
-arch ability_speedball
+arch spell_paralyze
 end
 end

@@ -1,19 +1,19 @@
 arch map
-name chaosd lair
+name Warriors' Tower, Chaos Dragons' Lair
+difficulty 25
+region wilderness
+width 31
+height 35
+enter_x 6
+enter_y 33
 msg
-Creator: Magnus Kronhamn
-Email: mak@solace.mh.se
-Date: Thu Apr 13 15:48:22 2000
+Created:  2000-04-13 Magnus Kronhamn (mak@solace.mh.se)
+Modified: 2012-03-09 Rick Tanner
 endmsg
-x 31
-y 35
-level 15
 end
 arch dungeon_floor
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 end
 arch dungeon_floor
 y 1
@@ -168,49 +168,31 @@ end
 arch dungeon_floor
 y 26
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 26
 end
 arch blocked
-msg
-endmsg
 y 27
 end
 arch blocked
-msg
-endmsg
 y 28
 end
 arch blocked
-msg
-endmsg
 y 29
 end
 arch blocked
-msg
-endmsg
 y 30
 end
 arch blocked
-msg
-endmsg
 y 31
 end
 arch blocked
-msg
-endmsg
 y 32
 end
 arch blocked
-msg
-endmsg
 y 33
 end
 arch blocked
-msg
-endmsg
 y 34
 end
 arch dungeon_floor
@@ -273,7 +255,7 @@ y 12
 end
 arch magic_mouth
 msg
-Wonder which lever might be best to pull
+Wonder which lever might be best to pull?
 endmsg
 x 1
 y 13
@@ -352,8 +334,6 @@ x 1
 y 27
 end
 arch blocked
-msg
-endmsg
 x 1
 y 27
 end
@@ -397,7 +377,7 @@ y 1
 end
 arch magic_mouth
 msg
-Wonder which lever might be best to pull
+Wonder which lever might be best to pull?
 endmsg
 x 2
 y 2
@@ -621,7 +601,7 @@ connected 3
 end
 arch magic_mouth
 msg
-Wonder which lever might be best to pull
+Wonder which lever might be best to pull?
 endmsg
 x 2
 y 24
@@ -652,8 +632,6 @@ x 2
 y 27
 end
 arch blocked
-msg
-endmsg
 x 2
 y 27
 end
@@ -828,8 +806,6 @@ x 3
 y 27
 end
 arch blocked
-msg
-endmsg
 x 3
 y 27
 end
@@ -992,8 +968,6 @@ x 4
 y 27
 end
 arch blocked
-msg
-endmsg
 x 4
 y 27
 end
@@ -1061,6 +1035,10 @@ arch dungeon_floor
 x 5
 y 5
 end
+arch Cwyvern
+x 5
+y 5
+end
 arch dungeon_floor
 x 5
 y 6
@@ -1090,6 +1068,10 @@ x 5
 y 12
 end
 arch dungeon_floor
+x 5
+y 13
+end
+arch Cwyvern
 x 5
 y 13
 end
@@ -1160,8 +1142,6 @@ x 5
 y 27
 end
 arch blocked
-msg
-endmsg
 x 5
 y 27
 end
@@ -1289,6 +1269,10 @@ arch dungeon_floor
 x 6
 y 20
 end
+arch Cwyvern
+x 6
+y 20
+end
 arch dungeon_floor
 x 6
 y 21
@@ -1328,8 +1312,6 @@ x 6
 y 27
 end
 arch blocked
-msg
-endmsg
 x 6
 y 27
 end
@@ -1344,12 +1326,7 @@ end
 arch mountain_cave
 slaying chaos
 msg
-As you enter the cave, you hear the
-roaring of a dozen hungry chaos
-wyverns...
-Do you really feel strong enough to
-fight them? You should know that they
-are deadly!
+As you enter the cave, you hear the roaring of a dozen hungry chaos wyverns... Do you really feel strong enough to fight them? You should know that they are deadly!
 endmsg
 hp 15
 sp 29
@@ -1510,8 +1487,6 @@ x 7
 y 27
 end
 arch blocked
-msg
-endmsg
 x 7
 y 27
 end
@@ -1717,8 +1692,6 @@ x 8
 y 27
 end
 arch blocked
-msg
-endmsg
 x 8
 y 27
 end
@@ -1897,8 +1870,6 @@ x 9
 y 27
 end
 arch blocked
-msg
-endmsg
 x 9
 y 27
 end
@@ -2081,8 +2052,6 @@ x 10
 y 27
 end
 arch blocked
-msg
-endmsg
 x 10
 y 27
 end
@@ -2257,8 +2226,6 @@ x 11
 y 27
 end
 arch blocked
-msg
-endmsg
 x 11
 y 27
 end
@@ -2433,8 +2400,6 @@ x 12
 y 27
 end
 arch blocked
-msg
-endmsg
 x 12
 y 27
 end
@@ -2601,50 +2566,34 @@ x 13
 y 26
 end
 arch blocked
-msg
-endmsg
 x 13
 y 27
 end
 arch blocked
-msg
-endmsg
 x 13
 y 28
 end
 arch blocked
-msg
-endmsg
 x 13
 y 29
 end
 arch blocked
-msg
-endmsg
 x 13
 y 30
 end
 arch blocked
-msg
-endmsg
 x 13
 y 31
 end
 arch blocked
-msg
-endmsg
 x 13
 y 32
 end
 arch blocked
-msg
-endmsg
 x 13
 y 33
 end
 arch blocked
-msg
-endmsg
 x 13
 y 34
 end
@@ -2656,7 +2605,7 @@ x 14
 end
 arch magic_mouth
 msg
-Wonder which lever might be best to pull
+Wonder which lever might be best to pull?
 endmsg
 x 14
 y 1
@@ -2719,6 +2668,36 @@ end
 arch dungeon_floor
 x 14
 y 12
+end
+arch big_dragon
+name chaos dragon
+Wis 30
+Int 18
+hp 6500
+maxhp 6500
+sp 100
+maxsp 300
+exp 300000
+x 14
+y 12
+speed 0.400000
+speed_left -1.310000
+level 30
+resist_physical 100
+resist_magic 80
+resist_electricity 30
+resist_cold 100
+resist_paralyze 100
+carrying 30000
+arch gem
+nrof 600
+end
+arch abil_icestorm
+end
+arch spell_sm_lightning
+end
+arch spell_mass_confusion
+end
 end
 arch dungeon_floor
 x 14
@@ -2823,26 +2802,18 @@ x 14
 y 30
 end
 arch blocked
-msg
-endmsg
 x 14
 y 31
 end
 arch blocked
-msg
-endmsg
 x 14
 y 32
 end
 arch blocked
-msg
-endmsg
 x 14
 y 33
 end
 arch blocked
-msg
-endmsg
 x 14
 y 34
 end
@@ -2871,6 +2842,10 @@ x 15
 y 3
 end
 arch dungeon_floor
+x 15
+y 4
+end
+arch Cwyvern
 x 15
 y 4
 end
@@ -2962,7 +2937,7 @@ connected 96
 end
 arch magic_mouth
 msg
-Wonder which lever might be best to pull
+Wonder which lever might be best to pull?
 endmsg
 x 15
 y 25
@@ -3004,26 +2979,18 @@ x 15
 y 30
 end
 arch blocked
-msg
-endmsg
 x 15
 y 31
 end
 arch blocked
-msg
-endmsg
 x 15
 y 32
 end
 arch blocked
-msg
-endmsg
 x 15
 y 33
 end
 arch blocked
-msg
-endmsg
 x 15
 y 34
 end
@@ -3131,6 +3098,10 @@ arch dungeon_floor
 x 16
 y 22
 end
+arch Cwyvern
+x 16
+y 22
+end
 arch dungeon_floor
 x 16
 y 23
@@ -3190,26 +3161,18 @@ x 16
 y 30
 end
 arch blocked
-msg
-endmsg
 x 16
 y 31
 end
 arch blocked
-msg
-endmsg
 x 16
 y 32
 end
 arch blocked
-msg
-endmsg
 x 16
 y 33
 end
 arch blocked
-msg
-endmsg
 x 16
 y 34
 end
@@ -3348,50 +3311,34 @@ x 17
 y 26
 end
 arch blocked
-msg
-endmsg
 x 17
 y 27
 end
 arch blocked
-msg
-endmsg
 x 17
 y 28
 end
 arch blocked
-msg
-endmsg
 x 17
 y 29
 end
 arch blocked
-msg
-endmsg
 x 17
 y 30
 end
 arch blocked
-msg
-endmsg
 x 17
 y 31
 end
 arch blocked
-msg
-endmsg
 x 17
 y 32
 end
 arch blocked
-msg
-endmsg
 x 17
 y 33
 end
 arch blocked
-msg
-endmsg
 x 17
 y 34
 end
@@ -3538,50 +3485,34 @@ x 18
 y 26
 end
 arch blocked
-msg
-endmsg
 x 18
 y 27
 end
 arch blocked
-msg
-endmsg
 x 18
 y 28
 end
 arch blocked
-msg
-endmsg
 x 18
 y 29
 end
 arch blocked
-msg
-endmsg
 x 18
 y 30
 end
 arch blocked
-msg
-endmsg
 x 18
 y 31
 end
 arch blocked
-msg
-endmsg
 x 18
 y 32
 end
 arch blocked
-msg
-endmsg
 x 18
 y 33
 end
 arch blocked
-msg
-endmsg
 x 18
 y 34
 end
@@ -3764,50 +3695,34 @@ x 19
 y 26
 end
 arch blocked
-msg
-endmsg
 x 19
 y 27
 end
 arch blocked
-msg
-endmsg
 x 19
 y 28
 end
 arch blocked
-msg
-endmsg
 x 19
 y 29
 end
 arch blocked
-msg
-endmsg
 x 19
 y 30
 end
 arch blocked
-msg
-endmsg
 x 19
 y 31
 end
 arch blocked
-msg
-endmsg
 x 19
 y 32
 end
 arch blocked
-msg
-endmsg
 x 19
 y 33
 end
 arch blocked
-msg
-endmsg
 x 19
 y 34
 end
@@ -3899,7 +3814,7 @@ arch swall_1_3
 name fake-wall
 x 20
 y 16
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch dungeon_floor
@@ -3925,9 +3840,7 @@ end
 arch low_boots
 name soft shoes
 msg
-These soft shoes don't offer much
-protection but they can keep your
-toes warm in the winter.
+These soft shoes don't offer much protection but they can keep your toes warm in the winter.
 endmsg
 ac 0
 x 20
@@ -3984,50 +3897,34 @@ x 20
 y 26
 end
 arch blocked
-msg
-endmsg
 x 20
 y 27
 end
 arch blocked
-msg
-endmsg
 x 20
 y 28
 end
 arch blocked
-msg
-endmsg
 x 20
 y 29
 end
 arch blocked
-msg
-endmsg
 x 20
 y 30
 end
 arch blocked
-msg
-endmsg
 x 20
 y 31
 end
 arch blocked
-msg
-endmsg
 x 20
 y 32
 end
 arch blocked
-msg
-endmsg
 x 20
 y 33
 end
 arch blocked
-msg
-endmsg
 x 20
 y 34
 end
@@ -4186,50 +4083,34 @@ x 21
 y 26
 end
 arch blocked
-msg
-endmsg
 x 21
 y 27
 end
 arch blocked
-msg
-endmsg
 x 21
 y 28
 end
 arch blocked
-msg
-endmsg
 x 21
 y 29
 end
 arch blocked
-msg
-endmsg
 x 21
 y 30
 end
 arch blocked
-msg
-endmsg
 x 21
 y 31
 end
 arch blocked
-msg
-endmsg
 x 21
 y 32
 end
 arch blocked
-msg
-endmsg
 x 21
 y 33
 end
 arch blocked
-msg
-endmsg
 x 21
 y 34
 end
@@ -4436,50 +4317,34 @@ x 22
 y 26
 end
 arch blocked
-msg
-endmsg
 x 22
 y 27
 end
 arch blocked
-msg
-endmsg
 x 22
 y 28
 end
 arch blocked
-msg
-endmsg
 x 22
 y 29
 end
 arch blocked
-msg
-endmsg
 x 22
 y 30
 end
 arch blocked
-msg
-endmsg
 x 22
 y 31
 end
 arch blocked
-msg
-endmsg
 x 22
 y 32
 end
 arch blocked
-msg
-endmsg
 x 22
 y 33
 end
 arch blocked
-msg
-endmsg
 x 22
 y 34
 end
@@ -4610,50 +4475,34 @@ x 23
 y 26
 end
 arch blocked
-msg
-endmsg
 x 23
 y 27
 end
 arch blocked
-msg
-endmsg
 x 23
 y 28
 end
 arch blocked
-msg
-endmsg
 x 23
 y 29
 end
 arch blocked
-msg
-endmsg
 x 23
 y 30
 end
 arch blocked
-msg
-endmsg
 x 23
 y 31
 end
 arch blocked
-msg
-endmsg
 x 23
 y 32
 end
 arch blocked
-msg
-endmsg
 x 23
 y 33
 end
 arch blocked
-msg
-endmsg
 x 23
 y 34
 end
@@ -4753,6 +4602,10 @@ arch dungeon_floor
 x 24
 y 21
 end
+arch Cwyvern
+x 24
+y 21
+end
 arch dungeon_floor
 x 24
 y 22
@@ -4784,50 +4637,34 @@ x 24
 y 26
 end
 arch blocked
-msg
-endmsg
 x 24
 y 27
 end
 arch blocked
-msg
-endmsg
 x 24
 y 28
 end
 arch blocked
-msg
-endmsg
 x 24
 y 29
 end
 arch blocked
-msg
-endmsg
 x 24
 y 30
 end
 arch blocked
-msg
-endmsg
 x 24
 y 31
 end
 arch blocked
-msg
-endmsg
 x 24
 y 32
 end
 arch blocked
-msg
-endmsg
 x 24
 y 33
 end
 arch blocked
-msg
-endmsg
 x 24
 y 34
 end
@@ -4856,6 +4693,10 @@ x 25
 y 3
 end
 arch dungeon_floor
+x 25
+y 4
+end
+arch Cwyvern
 x 25
 y 4
 end
@@ -4888,6 +4729,10 @@ x 25
 y 11
 end
 arch dungeon_floor
+x 25
+y 12
+end
+arch Cwyvern
 x 25
 y 12
 end
@@ -4958,20 +4803,14 @@ x 25
 y 26
 end
 arch blocked
-msg
-endmsg
 x 25
 y 27
 end
 arch blocked
-msg
-endmsg
 x 25
 y 28
 end
 arch blocked
-msg
-endmsg
 x 25
 y 29
 end
@@ -4990,20 +4829,14 @@ y 31
 connected 96
 end
 arch blocked
-msg
-endmsg
 x 25
 y 32
 end
 arch blocked
-msg
-endmsg
 x 25
 y 33
 end
 arch blocked
-msg
-endmsg
 x 25
 y 34
 end
@@ -5134,50 +4967,34 @@ x 26
 y 26
 end
 arch blocked
-msg
-endmsg
 x 26
 y 27
 end
 arch blocked
-msg
-endmsg
 x 26
 y 28
 end
 arch blocked
-msg
-endmsg
 x 26
 y 29
 end
 arch blocked
-msg
-endmsg
 x 26
 y 30
 end
 arch blocked
-msg
-endmsg
 x 26
 y 31
 end
 arch blocked
-msg
-endmsg
 x 26
 y 32
 end
 arch blocked
-msg
-endmsg
 x 26
 y 33
 end
 arch blocked
-msg
-endmsg
 x 26
 y 34
 end
@@ -5316,50 +5133,34 @@ x 27
 y 26
 end
 arch blocked
-msg
-endmsg
 x 27
 y 27
 end
 arch blocked
-msg
-endmsg
 x 27
 y 28
 end
 arch blocked
-msg
-endmsg
 x 27
 y 29
 end
 arch blocked
-msg
-endmsg
 x 27
 y 30
 end
 arch blocked
-msg
-endmsg
 x 27
 y 31
 end
 arch blocked
-msg
-endmsg
 x 27
 y 32
 end
 arch blocked
-msg
-endmsg
 x 27
 y 33
 end
 arch blocked
-msg
-endmsg
 x 27
 y 34
 end
@@ -5375,7 +5176,7 @@ y 1
 end
 arch magic_mouth
 msg
-Wonder which lever might be best to pull
+Wonder which lever might be best to pull?
 endmsg
 x 28
 y 2
@@ -5599,7 +5400,7 @@ connected 3
 end
 arch magic_mouth
 msg
-Wonder which lever might be best to pull
+Wonder which lever might be best to pull?
 endmsg
 x 28
 y 24
@@ -5626,50 +5427,34 @@ x 28
 y 26
 end
 arch blocked
-msg
-endmsg
 x 28
 y 27
 end
 arch blocked
-msg
-endmsg
 x 28
 y 28
 end
 arch blocked
-msg
-endmsg
 x 28
 y 29
 end
 arch blocked
-msg
-endmsg
 x 28
 y 30
 end
 arch blocked
-msg
-endmsg
 x 28
 y 31
 end
 arch blocked
-msg
-endmsg
 x 28
 y 32
 end
 arch blocked
-msg
-endmsg
 x 28
 y 33
 end
 arch blocked
-msg
-endmsg
 x 28
 y 34
 end
@@ -5801,59 +5586,41 @@ x 29
 y 26
 end
 arch blocked
-msg
-endmsg
 x 29
 y 27
 end
 arch blocked
-msg
-endmsg
 x 29
 y 28
 end
 arch blocked
-msg
-endmsg
 x 29
 y 29
 end
 arch blocked
-msg
-endmsg
 x 29
 y 30
 end
 arch blocked
-msg
-endmsg
 x 29
 y 31
 end
 arch blocked
-msg
-endmsg
 x 29
 y 32
 end
 arch blocked
-msg
-endmsg
 x 29
 y 33
 end
 arch blocked
-msg
-endmsg
 x 29
 y 34
 end
 arch dungeon_floor
 x 30
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 30
 end
 arch dungeon_floor
@@ -6060,119 +5827,39 @@ arch dungeon_floor
 x 30
 y 26
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 30
 y 26
 end
 arch blocked
-msg
-endmsg
 x 30
 y 27
 end
 arch blocked
-msg
-endmsg
 x 30
 y 28
 end
 arch blocked
-msg
-endmsg
 x 30
 y 29
 end
 arch blocked
-msg
-endmsg
 x 30
 y 30
 end
 arch blocked
-msg
-endmsg
 x 30
 y 31
 end
 arch blocked
-msg
-endmsg
 x 30
 y 32
 end
 arch blocked
-msg
-endmsg
 x 30
 y 33
 end
 arch blocked
-msg
-endmsg
 x 30
 y 34
-end
-arch Cwyvern
-x 5
-y 5
-end
-arch Cwyvern
-x 5
-y 13
-end
-arch Cwyvern
-x 6
-y 20
-end
-arch big_dragon
-name chaos dragon
-Wis 30
-Int 18
-hp 6500
-maxhp 6500
-sp 100
-maxsp 300
-exp 300000
-x 14
-y 12
-speed 0.400000
-speed_left -1.310000
-level 30
-resist_physical 100
-resist_magic 80
-resist_electricity 30
-resist_cold 100
-resist_paralyze 100
-carrying 30000
-arch gem
-nrof 600
-end
-arch abil_icestorm
-end
-arch spell_sm_lightning
-end
-arch spell_mass_confusion
-end
-end
-arch Cwyvern
-x 15
-y 4
-end
-arch Cwyvern
-x 16
-y 22
-end
-arch Cwyvern
-x 24
-y 21
-end
-arch Cwyvern
-x 25
-y 4
-end
-arch Cwyvern
-x 25
-y 12
 end

@@ -1,13 +1,15 @@
 arch map
+name Castle of Eureca, 2nd Level
+difficulty 13
 region pupland
-name castle_eureca2
+width 21
+height 21
+enter_x 9
+enter_y 1
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Thu Mar  7 19:58:26 1996
+Created:  1996-03-07
+Modified: 2012-02-27 Rick Tanner
 endmsg
-x 21
-y 21
 end
 arch dungeon_floor
 end
@@ -345,10 +347,11 @@ end
 arch dragon_mail
 name white dragon scale mail
 ac 5
-armour 45
 x 2
 y 1
-immune 20
+resist_physical 45
+resist_fire 100
+resist_cold 100
 value 100000
 weight 5000
 magic -3
@@ -448,11 +451,15 @@ arch dungeon_magic
 x 2
 y 9
 end
-arch swall_1_2
+arch swall_2_1_1
 x 2
 y 9
 end
 arch dungeon_floor
+x 2
+y 10
+end
+arch swall_1_2_half
 x 2
 y 10
 end
@@ -557,7 +564,7 @@ wc 7
 x 3
 y 1
 level 20
-protected 2
+resist_magic 30
 material 256
 value 15
 weight 50
@@ -702,7 +709,7 @@ arch cloak
 name cloak of magic resistance
 x 4
 y 1
-immune 2
+resist_magic 100
 value 40000
 no_pick 1
 end
@@ -883,21 +890,14 @@ end
 arch plate_mail
 name Plate Mail of Power
 msg
-This extremely unique platemail was made
-for the line of dwarven kings in one of the 
-ancient northern kingdoms from which nothing has
-been heard of during the latter centuries.
-Due to magic, it will fit creatures of any size.
-It is highly enchanted, increasing the strength of the 
-wearer and protecting against fire.  
-Unfortunately it is also very heavy, limiting speed somewhat.
+This extremely unique platemail was made for the line of dwarven kings in one of the ancient northern kingdoms from which nothing has been heard of during the latter centuries.  Due to magic, it will fit creatures of any size.  It is highly enchanted, increasing the strength of the wearer and protecting against fire.  Unfortunately it is also very heavy, limiting speed somewhat.
 endmsg
 Str 1
 ac 1
-armour 13
 x 5
 y 1
-protected 4
+resist_physical 13
+resist_fire 30
 value 150
 weight 200
 magic 4
@@ -1070,7 +1070,7 @@ name Broadsword of Theodin
 x 6
 y 1
 type 33
-protected 4
+resist_fire 30
 value 80
 magic 2
 no_pick 1
@@ -1083,7 +1083,7 @@ arch dungeon_magic
 x 6
 y 2
 end
-arch swall_1_3
+arch swall_2_1_2
 x 6
 y 2
 end
@@ -1240,6 +1240,10 @@ x 7
 y 2
 end
 arch cwall_2_1_1
+x 7
+y 2
+end
+arch swall_1_3_half
 x 7
 y 2
 end
@@ -2231,7 +2235,7 @@ arch cwall_2_1_1
 face cwall_w_0.119
 x 14
 y 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_floor
@@ -2350,6 +2354,8 @@ end
 arch firewall_1
 x 14
 y 19
+arch spell_small_fireball
+end
 end
 arch dungeon_floor
 x 14
@@ -2800,15 +2806,9 @@ end
 arch book_read
 name Lauretta's Diary
 msg
-We have been attacked by monsters
-suddenly. Eureca led us in this room,
-and then he ran out of the castle to
-ask someone for help.
-We are still waiting for him.
+We have been attacked by monsters suddenly.  Eureca led us in this room, and then he ran out of the castle to ask someone for help.  We are still waiting for him.
 ...
-My son and I are afraid that this
-secret room will be discovered by the
-monsters soon... 
+My son and I are afraid that this secret room will be discovered by the monsters soon...
 endmsg
 x 18
 y 1

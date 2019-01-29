@@ -1,17 +1,18 @@
 arch map
+name Wand Shop
+difficulty 50
 region nurnberg
-name washop
-msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Fri Feb 23 01:42:46 1996
-endmsg
-x 25
-y 25
-level 50
 shopitems rod:95;wand:100;*:-100
-shopmax 50000
 shopmin 250
+shopmax 50000
+width 25
+height 25
+enter_x 23
+enter_y 7
+msg
+Created:  1996-02-23
+Modified: 2011-12-11 Rick Tanner
+endmsg
 end
 arch evergreens
 end
@@ -2192,7 +2193,7 @@ arch shop_empty
 x 19
 y 5
 end
-arch swall_1_3
+arch swall_2_1_2
 x 19
 y 5
 end
@@ -2224,7 +2225,7 @@ arch man
 name shopkeeper
 msg
 @match *
-Welcome to the wand shop,Polymorph!
+Welcome to the wand shop, Polymorph!
 endmsg
 face man.131
 hp 180
@@ -2237,7 +2238,7 @@ arch shop_empty
 x 19
 y 10
 end
-arch swall_1_3
+arch swall_2_1_2
 x 19
 y 10
 end
@@ -2340,6 +2341,10 @@ arch wwall_2_2_1
 x 20
 y 5
 end
+arch swall_1_3_half
+x 20
+y 5
+end
 arch cobblestones2
 x 20
 y 6
@@ -2361,6 +2366,10 @@ x 20
 y 10
 end
 arch wwall_2_2_2
+x 20
+y 10
+end
+arch swall_1_3_half
 x 20
 y 10
 end
@@ -2462,7 +2471,7 @@ end
 arch door_look_2
 x 21
 y 6
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 21
@@ -2471,7 +2480,7 @@ end
 arch door_look_2
 x 21
 y 7
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 21
@@ -2480,7 +2489,7 @@ end
 arch door_look_2
 x 21
 y 8
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 21

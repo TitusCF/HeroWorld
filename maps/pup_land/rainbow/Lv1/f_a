@@ -1,12 +1,15 @@
 arch map
+name F A
+difficulty 1
 region pupland
-name f_a
+width 15
+height 16
+enter_x 6
+enter_y 13
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue Jun 11 18:59:09 1996
+Created:  1996-06-11
+Modified: 2008-10-12 Rick Tanner
 endmsg
-x 15
 end
 arch blocked
 end
@@ -560,7 +563,7 @@ end
 arch sea
 x 4
 y 6
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 4
@@ -576,7 +579,7 @@ end
 arch sea
 x 4
 y 7
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 4
@@ -592,7 +595,7 @@ end
 arch sea
 x 4
 y 8
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 4
@@ -713,7 +716,7 @@ end
 arch sea
 x 5
 y 5
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 5
@@ -728,7 +731,7 @@ end
 arch sea
 x 5
 y 6
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 5
@@ -757,7 +760,7 @@ end
 arch sea
 x 5
 y 8
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 5
@@ -773,7 +776,7 @@ end
 arch sea
 x 5
 y 9
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 5
@@ -863,7 +866,6 @@ arch spikes_closed
 x 6
 y 2
 speed 0.500000
-protected 2
 connected 2
 end
 arch dungeon_magic
@@ -896,7 +898,7 @@ end
 arch sea
 x 6
 y 5
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 6
@@ -929,7 +931,6 @@ end
 arch button_small
 x 6
 y 7
-protected 1
 connected 1
 end
 arch arrow
@@ -964,7 +965,7 @@ end
 arch sea
 x 6
 y 9
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 6
@@ -1076,7 +1077,7 @@ end
 arch sea
 x 7
 y 5
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 7
@@ -1091,7 +1092,7 @@ end
 arch sea
 x 7
 y 6
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 7
@@ -1120,7 +1121,7 @@ end
 arch sea
 x 7
 y 8
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 7
@@ -1136,7 +1137,7 @@ end
 arch sea
 x 7
 y 9
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 7
@@ -1252,7 +1253,7 @@ end
 arch sea
 x 8
 y 6
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 8
@@ -1268,7 +1269,7 @@ end
 arch sea
 x 8
 y 7
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 8
@@ -1284,7 +1285,7 @@ end
 arch sea
 x 8
 y 8
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 8
@@ -1964,7 +1965,6 @@ arch button_small
 name 3
 x 14
 y 1
-protected 3
 weight 1000
 connected 3
 end
@@ -1977,7 +1977,6 @@ name 3
 x 14
 y 3
 speed 0.500000
-protected 3
 connected 3
 end
 arch barrel
@@ -1989,7 +1988,6 @@ name 1
 x 14
 y 4
 speed 0.500000
-protected 1
 value 1
 connected 1
 end
@@ -1997,7 +1995,6 @@ arch button_small
 name 2 - open gate
 x 14
 y 5
-protected 2
 weight 1000
 connected 2
 end

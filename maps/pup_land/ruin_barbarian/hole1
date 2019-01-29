@@ -1,14 +1,16 @@
 arch map
+name Hole in the Ground
+difficulty 18
 region pupland
-name hole1
-msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Mon Jan 27 21:06:35 1997
-endmsg
+darkness 3
 width 30
 height 32
-invisible 3
+enter_x 2
+enter_y 29
+msg
+Created:  1997-02-27
+Modified: 2012-03-08 Rick Tanner
+endmsg
 end
 arch pstone_2
 end
@@ -143,25 +145,25 @@ end
 arch pstone_2
 y 23
 end
-arch blocked
+arch cave_15
 y 23
 end
 arch pstone_2
 y 24
 end
-arch blocked
+arch cave_15
 y 24
 end
 arch pstone_2
 y 25
 end
-arch blocked
+arch cave_15
 y 25
 end
 arch pstone_2
 y 26
 end
-arch blocked
+arch cave_15
 y 26
 end
 arch pstone_3
@@ -188,7 +190,7 @@ end
 arch cave23
 y 30
 end
-arch blocked
+arch cave_15
 y 31
 end
 arch pstone_2
@@ -444,7 +446,7 @@ arch pstone_1
 x 1
 y 24
 end
-arch cave17
+arch cave23
 x 1
 y 24
 end
@@ -452,7 +454,7 @@ arch pstone_2
 x 1
 y 25
 end
-arch blocked
+arch cave_15
 x 1
 y 25
 end
@@ -460,7 +462,7 @@ arch pstone_3
 x 1
 y 26
 end
-arch cave18
+arch cave24
 x 1
 y 26
 end
@@ -1065,9 +1067,7 @@ x 5
 end
 arch magic_mouth
 msg
-Something is written on the door. But
-it's hard to read, because the surface
-of the gate is in the state of decay:
+Something is written on the door.  But it's hard to read, because the surface of the gate is in the state of decay:
 "ta.is..n
  sp..nx's h.ad
  G.an. Wo.m's e.e
@@ -1316,8 +1316,7 @@ endmsg
 x 6
 y 1
 connected 101
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch flagstone
 x 6
@@ -1456,9 +1455,7 @@ end
 arch locked_door2
 slaying barbarian_cristalkey
 msg
-You can't open this door.
-There's a spherical hollow keeping
-the door shut.
+You can't open this door.  There's a spherical hollow keeping the door shut.
 endmsg
 x 6
 y 16
@@ -1739,6 +1736,19 @@ end
 arch flagstone
 x 7
 y 15
+end
+arch giant
+x 7
+y 15
+carrying 3159
+unaggressive 1
+arch key2
+name Light Boulder
+slaying barbarian_useless
+face boulder.111
+value 1
+weight 3159
+end
 end
 arch flagstone
 x 7
@@ -2092,7 +2102,7 @@ arch pstone_1
 x 8
 y 26
 end
-arch cave19
+arch cave25
 x 8
 y 26
 end
@@ -2375,7 +2385,7 @@ arch pstone_1
 x 9
 y 26
 end
-arch blocked
+arch cave_15
 x 9
 y 26
 end
@@ -2647,7 +2657,7 @@ arch pstone_2
 x 10
 y 26
 end
-arch blocked
+arch cave_15
 x 10
 y 26
 end
@@ -2655,7 +2665,7 @@ arch pstone_2
 x 10
 y 27
 end
-arch blocked
+arch cave_15
 x 10
 y 27
 end
@@ -2683,7 +2693,7 @@ arch pstone_1
 x 10
 y 31
 end
-arch blocked
+arch cave_15
 x 10
 y 31
 end
@@ -2926,7 +2936,7 @@ arch pstone_1
 x 11
 y 26
 end
-arch blocked
+arch cave_15
 x 11
 y 26
 end
@@ -2934,7 +2944,7 @@ arch pstone_1
 x 11
 y 27
 end
-arch blocked
+arch cave_15
 x 11
 y 27
 end
@@ -2962,7 +2972,7 @@ arch pstone_2
 x 11
 y 31
 end
-arch blocked
+arch cave_15
 x 11
 y 31
 end
@@ -3202,7 +3212,7 @@ arch pstone_1
 x 12
 y 26
 end
-arch blocked
+arch cave_15
 x 12
 y 26
 end
@@ -3238,7 +3248,7 @@ arch pstone_2
 x 12
 y 31
 end
-arch blocked
+arch cave_15
 x 12
 y 31
 end
@@ -3916,9 +3926,7 @@ speed 0.300000
 end
 arch magic_mouth
 msg
-Strange... The ruin is filled with
-ogres. And there is light...
-How can this be? ...Magic?
+Strange... The ruin is filled with ogres.  And there is light... How can this be? ...Magic?
 endmsg
 x 15
 y 24
@@ -3941,7 +3949,7 @@ blocksview 1
 end
 arch magic_ear
 msg
-@match wall|Wall
+@match wall
 There is a knock on the wall.
 endmsg
 x 15
@@ -3959,13 +3967,9 @@ arch wizard
 name Heinrich, the archaeologist
 msg
 @match wall
-Yes! This wall is undoubtedly
-man-made!! I am the greatest
-archaeologist of the whole world!
+Yes! This wall is undoubtedly man-made!! I am the greatest archaeologist of the whole world!
 @match *
-Hello adventurer!! Finally, I found
-the prehistorical ruin!!
-Look at this Wall!
+Hello adventurer!! Finally, I found the prehistorical ruin!! Look at this Wall!
 endmsg
 Str 0
 Con 0
@@ -3979,6 +3983,7 @@ speed 0.001000
 type 0
 carrying 38810
 randomitems none
+move_type walk
 monster 1
 unaggressive 1
 can_use_armour 0
@@ -4262,8 +4267,7 @@ end
 arch magic_mouth
 msg
 You hear...
- "Yahoo!! at last I found the
-  prehistorical site!!! "
+"Yahoo!! At last I found the prehistorical site!!!"
 endmsg
 x 16
 y 30
@@ -4588,8 +4592,8 @@ exp 0
 ac 0
 x 18
 y 8
+move_block 0
 alive 0
-no_pass 0
 blocksview 1
 pass_thru 0
 end
@@ -4614,8 +4618,8 @@ exp 0
 ac 0
 x 18
 y 10
+move_block 0
 alive 0
-no_pass 0
 blocksview 1
 pass_thru 0
 end
@@ -4767,7 +4771,7 @@ arch pstone_2
 x 18
 y 31
 end
-arch cave20
+arch cave22
 x 18
 y 31
 end
@@ -4998,7 +5002,7 @@ arch pstone_2
 x 19
 y 31
 end
-arch blocked
+arch cave_15
 x 19
 y 31
 end
@@ -5173,7 +5177,7 @@ arch pstone_2
 x 20
 y 26
 end
-arch blocked
+arch cave_15
 x 20
 y 26
 end
@@ -5213,7 +5217,7 @@ arch pstone_3
 x 20
 y 31
 end
-arch blocked
+arch cave_15
 x 20
 y 31
 end
@@ -5445,35 +5449,35 @@ arch blocked
 x 21
 y 23
 end
-arch blocked
+arch cave_15
 x 21
 y 24
 end
-arch blocked
+arch cave_15
 x 21
 y 25
 end
-arch blocked
+arch cave_15
 x 21
 y 26
 end
-arch blocked
+arch cave_15
 x 21
 y 27
 end
-arch blocked
+arch cave_15
 x 21
 y 28
 end
-arch blocked
+arch cave_15
 x 21
 y 29
 end
-arch blocked
+arch cave_15
 x 21
 y 30
 end
-arch blocked
+arch cave_15
 x 21
 y 31
 end
@@ -6679,17 +6683,4 @@ end
 arch blocked
 x 29
 y 20
-end
-arch giant
-x 7
-y 15
-carrying 3159
-unaggressive 1
-arch key2
-name Light Boulder
-slaying barbarian_useless
-face boulder.111
-value 1
-weight 3159
-end
 end

@@ -1,10 +1,14 @@
 arch map
+name Lone Town Church, Cellar
+difficulty 3
 region lonetown
-name townA_church_ud
+width 16
+height 16
+enter_x 8
+enter_y 4
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Wed Jan 31 18:58:13 1996
+Created:  1996-02-31
+Modified: 2012-02-29 Rick Tanner
 endmsg
 end
 arch blocked
@@ -139,17 +143,15 @@ name guard
 dam 1
 x 1
 y 7
-can_apply 0
 unaggressive 0
 can_cast_spell 0
 can_use_scroll 0
-can_use_wand 0
 can_use_bow 0
 can_use_armour 0
 can_use_weapon 0
 can_use_ring 0
 can_use_skill 0
-can_use_rod 0
+can_use_range 0
 end
 arch dungeon_floor
 x 1
@@ -339,17 +341,15 @@ name guard
 dam 1
 x 3
 y 4
-can_apply 0
 unaggressive 0
 can_cast_spell 0
 can_use_scroll 0
-can_use_wand 0
 can_use_bow 0
 can_use_armour 0
 can_use_weapon 0
 can_use_ring 0
 can_use_skill 0
-can_use_rod 0
+can_use_range 0
 end
 arch dungeon_floor
 x 3
@@ -404,17 +404,15 @@ name guard
 dam 1
 x 3
 y 10
-can_apply 0
 unaggressive 0
 can_cast_spell 0
 can_use_scroll 0
-can_use_wand 0
 can_use_bow 0
 can_use_armour 0
 can_use_weapon 0
 can_use_ring 0
 can_use_skill 0
-can_use_rod 0
+can_use_range 0
 end
 arch dungeon_floor
 x 3
@@ -687,17 +685,15 @@ name guard
 dam 1
 x 6
 y 2
-can_apply 0
 unaggressive 0
 can_cast_spell 0
 can_use_scroll 0
-can_use_wand 0
 can_use_bow 0
 can_use_armour 0
 can_use_weapon 0
 can_use_ring 0
 can_use_skill 0
-can_use_rod 0
+can_use_range 0
 end
 arch dungeon_floor
 x 6
@@ -737,19 +733,12 @@ y 8
 end
 arch thief
 msg
-@match Boss|boss
-To meet our boss, you have to say
-the password: 
- "racoon's head".
-@match Fox|fox|Tails|tails
-We steal money and gems.
-But we never commit murder.
-By the way, you look quite strong...
-I want you to see our Boss.
+@match boss
+To meet our boss, you have to say the password: "racoon's head."
+@match fox|tails
+We steal money and gems.  But we never commit murder.  By the way, you look quite strong... I want you to see our Boss.
 @match *
-Thank you for saving me.
-I'm a member of Fox Tails, the gang of
-bandits. 
+Thank you for saving me.  I'm a member of Fox Tails, the gang of bandits.
 endmsg
 face thief.111
 Con 100
@@ -757,6 +746,7 @@ hp 10000
 x 6
 y 8
 type 0
+move_type walk
 monster 1
 friendly 1
 end
@@ -801,17 +791,15 @@ name guard
 dam 1
 x 6
 y 14
-can_apply 0
 unaggressive 0
 can_cast_spell 0
 can_use_scroll 0
-can_use_wand 0
 can_use_bow 0
 can_use_armour 0
 can_use_weapon 0
 can_use_ring 0
 can_use_skill 0
-can_use_rod 0
+can_use_range 0
 end
 arch dungeon_floor
 x 6

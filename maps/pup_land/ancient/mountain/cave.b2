@@ -1,14 +1,15 @@
 arch map
+name Cave
+difficulty 60
 region ancientpupland
-name cave
+width 32
+height 32
+enter_x 1
+enter_y 7
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Thu May 30 00:16:20 1996
+Created:  1996-05-30
+Modified: 2008-10-08 Rick Tanner
 endmsg
-x 32
-y 32
-level 5
 end
 arch blocked
 end
@@ -336,6 +337,10 @@ arch dungeon_floor
 x 1
 y 25
 end
+arch golem_necro
+x 1
+y 25
+end
 arch dungeon_floor
 x 1
 y 26
@@ -461,6 +466,10 @@ x 2
 y 18
 end
 arch dungeon_floor
+x 2
+y 19
+end
+arch golem_necro
 x 2
 y 19
 end
@@ -675,6 +684,10 @@ arch dungeon_floor
 x 3
 y 25
 end
+arch golem_necro
+x 3
+y 25
+end
 arch dungeon_floor
 x 3
 y 26
@@ -811,6 +824,10 @@ arch dungeon_floor
 x 4
 y 19
 end
+arch golem_necro
+x 4
+y 19
+end
 arch dungeon_floor
 x 4
 y 20
@@ -1010,6 +1027,10 @@ arch dungeon_floor
 x 5
 y 25
 end
+arch golem_necro
+x 5
+y 25
+end
 arch dungeon_floor
 x 5
 y 26
@@ -1139,6 +1160,10 @@ x 6
 y 18
 end
 arch dungeon_floor
+x 6
+y 19
+end
+arch golem_necro
 x 6
 y 19
 end
@@ -1358,6 +1383,10 @@ arch dungeon_floor
 x 7
 y 25
 end
+arch golem_necro
+x 7
+y 25
+end
 arch dungeon_floor
 x 7
 y 26
@@ -1486,6 +1515,10 @@ x 8
 y 18
 end
 arch dungeon_floor
+x 8
+y 19
+end
+arch golem_necro
 x 8
 y 19
 end
@@ -2204,6 +2237,8 @@ name wall
 face rough_A.111
 x 12
 y 22
+arch spell_sm_lightning
+end
 end
 arch large_stones
 x 12
@@ -2216,9 +2251,10 @@ end
 arch lightningwall_8
 name wall
 face rough_A.111
-dam 20
 x 12
 y 24
+arch spell_fear
+end
 end
 arch dungeon_floor
 x 12
@@ -5237,36 +5273,4 @@ end
 arch rough_wall_2_2_4
 x 31
 y 31
-end
-arch golem_necro
-x 1
-y 25
-end
-arch golem_necro
-x 2
-y 19
-end
-arch golem_necro
-x 3
-y 25
-end
-arch golem_necro
-x 4
-y 19
-end
-arch golem_necro
-x 5
-y 25
-end
-arch golem_necro
-x 6
-y 19
-end
-arch golem_necro
-x 7
-y 25
-end
-arch golem_necro
-x 8
-y 19
 end

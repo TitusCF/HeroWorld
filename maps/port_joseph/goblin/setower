@@ -1,10 +1,14 @@
 arch map
-region portjoesph
-name goblin fortress
+name Goblin Fortress, Southeast Tower
+difficulty 7
+region portjoseph
+width 16
+height 16
+enter_x 5
+enter_y 5
 msg
-Creator: langley
-Email: langley@fermat.dartmouth.edu
-Date: Sat Jul 23 15:43:34 1994
+Created:  1994-07-23 langley (langley@fermat.dartmouth.edu)
+Modified: 2012-02-20 Rick Tanner
 endmsg
 end
 arch afloor_right
@@ -258,7 +262,7 @@ arch afloor_right
 x 2
 y 9
 end
-arch dwall3_3
+arch dwall_3_3
 x 2
 y 9
 end
@@ -278,7 +282,7 @@ arch locked_door2
 name gold inlayed door
 slaying lgold
 msg
-This door has a wide keyhole. 
+This door has a wide keyhole.
 endmsg
 x 2
 y 11
@@ -415,22 +419,13 @@ arch kobold
 name little kobold
 msg
 @match everything|tell|know
-Everyone picks on me.  But
-I know there is great treasure
-behind these doors!
+Everyone picks on me.  But I know there is great treasure behind these doors!
 @match door|treasure
-You need special keys to get in.
-The gold key was downstairs but
-the silver key was stolen by the
-dirt hole gang.
+You need special keys to get in.  The gold key was downstairs but the silver key was stolen by the dirt hole gang.
 @match dirt|hole|gang
-Yeah, yeah, the dirt hole gang
-hangs out in the dirt hole
-outside the fort.  No one likes
-them.  They stole the silver key!  
+Yeah, yeah, the dirt hole gang hangs out in the dirt hole outside the fort.  No one likes them.  They stole the silver key!
 @match *
-Please don't kill me! Please, I'll tell
-you everything I know!
+Please don't kill me! Please, I'll tell you everything I know!
 endmsg
 x 3
 y 14
@@ -506,7 +501,7 @@ arch afloor_right
 x 4
 y 9
 end
-arch dwall3_3
+arch dwall_3_3
 x 4
 y 9
 end
@@ -1301,7 +1296,7 @@ arch afloor_right
 x 12
 y 9
 end
-arch dwall3_3
+arch dwall_3_3
 x 12
 y 9
 end

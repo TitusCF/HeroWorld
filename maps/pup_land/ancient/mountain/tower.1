@@ -1,14 +1,15 @@
 arch map
+name Tower of the Necromancer, Entrance
+difficulty 50
 region ancientpupland
-name tower
-msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Fri May 31 20:28:11 1996
-endmsg
 width 26
 height 33
-difficulty 5
+enter_x 10
+enter_y 20
+msg
+Created:  1996-05-31
+Modified: 2008-10-27 Rick Tanner
+endmsg
 end
 arch large_stones
 end
@@ -244,15 +245,14 @@ y 25
 end
 arch altar
 name unholy altar
+slaying unholy heart
 msg
 Sacrifice accepted!
 endmsg
-slaying unholy heart
 food 1
-protected 32
-connected 32
 x 1
 y 25
+connected 32
 end
 arch pstone_1
 x 1
@@ -280,15 +280,14 @@ y 31
 end
 arch altar
 name unholy altar
+slaying unholy heart
 msg
 Sacrifice accepted!
 endmsg
-slaying unholy heart
 food 1
-protected 33
-connected 33
 x 1
 y 31
+connected 33
 end
 arch pstone_1
 x 1
@@ -477,18 +476,22 @@ exp 200000
 dam 10
 wc -50
 ac -50
+x 2
+y 28
 level 75
-immune 1180673
-protected 24
 attacktype 87297
-vulnerable 4
+resist_physical 100
+resist_fire -100
+resist_electricity 30
+resist_cold 30
+resist_poison 100
+resist_death 100
+resist_godpower 100
 carrying 100
 randomitems none
 pick_up 0
 sleep 0
 can_see_in_dark 1
-x 2
-y 28
 arch heart
 name unholy heart
 type 0
@@ -567,10 +570,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 3
 y 6
+connected 1
 end
 arch flagstone
 x 3
@@ -583,10 +585,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 3
 y 7
+connected 1
 end
 arch flagstone
 x 3
@@ -599,10 +600,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 3
 y 8
+connected 1
 end
 arch flagstone
 x 3
@@ -615,10 +615,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 3
 y 9
+connected 1
 end
 arch flagstone
 x 3
@@ -631,10 +630,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 3
 y 10
+connected 1
 end
 arch flagstone
 x 3
@@ -647,10 +645,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 3
 y 11
+connected 1
 end
 arch unholy_ground
 x 3
@@ -667,10 +664,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 3
 y 12
+connected 1
 end
 arch unholy_ground
 x 3
@@ -684,7 +680,7 @@ arch flagstone
 x 3
 y 14
 end
-arch dwall3_3
+arch dwall_3_3
 x 3
 y 14
 end
@@ -838,10 +834,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 4
 y 6
+connected 1
 end
 arch flagstone
 x 4
@@ -854,10 +849,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 4
 y 7
+connected 1
 end
 arch flagstone
 x 4
@@ -870,10 +864,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 4
 y 8
+connected 1
 end
 arch flagstone
 x 4
@@ -886,10 +879,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 4
 y 9
+connected 1
 end
 arch flagstone
 x 4
@@ -902,10 +894,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 4
 y 10
+connected 1
 end
 arch flagstone
 x 4
@@ -918,10 +909,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 4
 y 11
+connected 1
 end
 arch unholy_ground
 x 4
@@ -938,10 +928,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 4
 y 12
+connected 1
 end
 arch unholy_ground
 x 4
@@ -1035,18 +1024,22 @@ exp 200000
 dam 10
 wc -50
 ac -50
+x 4
+y 26
 level 75
-immune 1180673
-protected 24
 attacktype 87297
-vulnerable 4
+resist_physical 100
+resist_fire -100
+resist_electricity 30
+resist_cold 30
+resist_poison 100
+resist_death 100
+resist_godpower 100
 carrying 100
 randomitems none
 pick_up 0
 sleep 0
 can_see_in_dark 1
-x 4
-y 26
 arch spell_summon_pet_monster
 end
 arch spell_heal
@@ -1091,18 +1084,22 @@ exp 200000
 dam 10
 wc -50
 ac -50
+x 4
+y 30
 level 75
-immune 1180673
-protected 24
 attacktype 87297
-vulnerable 4
+resist_physical 100
+resist_fire -100
+resist_electricity 30
+resist_cold 30
+resist_poison 100
+resist_death 100
+resist_godpower 100
 carrying 100
 randomitems none
 pick_up 0
 sleep 0
 can_see_in_dark 1
-x 4
-y 30
 arch heart
 name unholy heart
 type 0
@@ -1147,10 +1144,9 @@ x 5
 y 3
 end
 arch pedestal
-protected 12
-connected 12
 x 5
 y 3
+connected 12
 end
 arch flagstone
 x 5
@@ -1165,17 +1161,15 @@ x 5
 y 4
 end
 arch igate_closed_1
-speed 0.500000
-protected 12
-connected 12
 x 5
 y 4
+speed 0.500000
+connected 12
 end
 arch magic_mouth
 name warning
 msg
-You feel uncomfortable...
-This room smells like DEATH!
+You feel uncomfortable... This room smells like DEATH!
 endmsg
 x 5
 y 5
@@ -1185,10 +1179,9 @@ x 5
 y 5
 end
 arch pedestal
-protected 12
+x 5
+y 5
 connected 12
-x 5
-y 5
 end
 arch flagstone
 x 5
@@ -1205,10 +1198,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 5
 y 6
+connected 1
 end
 arch flagstone
 x 5
@@ -1221,10 +1213,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 5
 y 7
+connected 1
 end
 arch flagstone
 x 5
@@ -1237,10 +1228,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 5
 y 8
+connected 1
 end
 arch flagstone
 x 5
@@ -1253,10 +1243,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 5
 y 9
+connected 1
 end
 arch flagstone
 x 5
@@ -1269,10 +1258,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 5
 y 10
+connected 1
 end
 arch flagstone
 x 5
@@ -1285,10 +1273,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 5
 y 11
+connected 1
 end
 arch unholy_ground
 x 5
@@ -1305,10 +1292,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 5
 y 12
+connected 1
 end
 arch unholy_ground
 x 5
@@ -1468,10 +1454,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 6
 y 6
+connected 1
 end
 arch flagstone
 x 6
@@ -1484,10 +1469,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 6
 y 7
+connected 1
 end
 arch flagstone
 x 6
@@ -1500,10 +1484,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 6
 y 8
+connected 1
 end
 arch flagstone
 x 6
@@ -1516,10 +1499,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 6
 y 9
+connected 1
 end
 arch flagstone
 x 6
@@ -1532,10 +1514,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 6
 y 10
+connected 1
 end
 arch flagstone
 x 6
@@ -1548,10 +1529,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 6
 y 11
+connected 1
 end
 arch flagstone
 x 6
@@ -1564,10 +1544,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 6
 y 12
+connected 1
 end
 arch unholy_ground
 x 6
@@ -1581,7 +1560,7 @@ arch flagstone
 x 6
 y 14
 end
-arch dwall3_3
+arch dwall_3_3
 x 6
 y 14
 end
@@ -1677,18 +1656,22 @@ exp 200000
 dam 10
 wc -50
 ac -50
+x 6
+y 28
 level 75
-immune 1180673
-protected 24
 attacktype 87297
-vulnerable 4
+resist_physical 100
+resist_fire -100
+resist_electricity 30
+resist_cold 30
+resist_poison 100
+resist_death 100
+resist_godpower 100
 carrying 100
 randomitems none
 pick_up 0
 sleep 0
 can_see_in_dark 1
-x 6
-y 28
 arch heart
 name unholy heart
 type 0
@@ -1775,10 +1758,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 7
 y 6
+connected 1
 end
 arch flagstone
 x 7
@@ -1791,10 +1773,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 7
 y 7
+connected 1
 end
 arch flagstone
 x 7
@@ -1807,10 +1788,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 7
 y 8
+connected 1
 end
 arch flagstone
 x 7
@@ -1823,10 +1803,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 7
 y 9
+connected 1
 end
 arch flagstone
 x 7
@@ -1839,10 +1818,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 7
 y 10
+connected 1
 end
 arch flagstone
 x 7
@@ -1855,10 +1833,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 7
 y 11
+connected 1
 end
 arch flagstone
 x 7
@@ -1871,10 +1848,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 7
 y 12
+connected 1
 end
 arch unholy_ground
 x 7
@@ -1962,15 +1938,14 @@ y 25
 end
 arch altar
 name unholy altar
+slaying unholy heart
 msg
 Sacrifice accepted!
 endmsg
-slaying unholy heart
 food 1
-protected 31
-connected 31
 x 7
 y 25
+connected 31
 end
 arch pstone_1
 x 7
@@ -1998,15 +1973,14 @@ y 31
 end
 arch altar
 name unholy altar
+slaying unholy heart
 msg
 Sacrifice accepted!
 endmsg
-slaying unholy heart
 food 1
-protected 34
-connected 34
 x 7
 y 31
+connected 34
 end
 arch pstone_1
 x 7
@@ -2070,10 +2044,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 8
 y 6
+connected 1
 end
 arch flagstone
 x 8
@@ -2086,10 +2059,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 8
 y 7
+connected 1
 end
 arch flagstone
 x 8
@@ -2102,10 +2074,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 8
 y 8
+connected 1
 end
 arch flagstone
 x 8
@@ -2118,10 +2089,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 8
 y 9
+connected 1
 end
 arch flagstone
 x 8
@@ -2134,10 +2104,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 8
 y 10
+connected 1
 end
 arch flagstone
 x 8
@@ -2150,10 +2119,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 8
 y 11
+connected 1
 end
 arch flagstone
 x 8
@@ -2166,10 +2134,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 8
 y 12
+connected 1
 end
 arch unholy_ground
 x 8
@@ -2276,11 +2243,10 @@ x 8
 y 28
 end
 arch gate_closed_2
-speed 0.500000
-protected 35
-connected 35
 x 8
 y 28
+speed 0.500000
+connected 35
 end
 arch pstone_1
 x 8
@@ -2368,10 +2334,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 9
 y 6
+connected 1
 end
 arch flagstone
 x 9
@@ -2384,10 +2349,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 9
 y 7
+connected 1
 end
 arch flagstone
 x 9
@@ -2400,10 +2364,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 9
 y 8
+connected 1
 end
 arch flagstone
 x 9
@@ -2416,10 +2379,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 9
 y 9
+connected 1
 end
 arch flagstone
 x 9
@@ -2432,10 +2394,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 9
 y 10
+connected 1
 end
 arch flagstone
 x 9
@@ -2448,10 +2409,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 9
 y 11
+connected 1
 end
 arch flagstone
 x 9
@@ -2464,10 +2424,9 @@ end
 arch pit_open
 hp 4
 sp 28
-protected 1
-connected 1
 x 9
 y 12
+connected 1
 end
 arch unholy_ground
 x 9
@@ -2620,7 +2579,7 @@ arch flagstone
 x 10
 y 5
 end
-arch dwall3_3
+arch dwall_3_3
 x 10
 y 5
 end
@@ -2689,11 +2648,10 @@ x 10
 y 13
 end
 arch igate_closed_2
-speed 0.500000
-protected 24
-connected 24
 x 10
 y 13
+speed 0.500000
+connected 24
 end
 arch flagstone
 x 10
@@ -2751,9 +2709,9 @@ arch exit
 slaying mountain.a3
 hp 21
 sp 14
-speed_left -1.100000
 x 10
 y 21
+speed_left -1.100000
 end
 arch blocked
 x 10
@@ -2907,20 +2865,19 @@ y 11
 end
 arch creator
 name 21
-protected 21
-connected 21
 x 11
 y 11
+connected 21
 end
 arch flagstone
-type 41
 hp 25
 sp 24
-activate_on_push 1
-activate_on_release 1
-connected 24
 x 11
 y 11
+type 41
+connected 24
+activate_on_push 1
+activate_on_release 1
 end
 arch unholy_ground
 x 11
@@ -2994,9 +2951,9 @@ arch exit
 slaying mountain.a3
 hp 21
 sp 14
-speed_left -1.100000
 x 11
 y 21
+speed_left -1.100000
 end
 arch blocked
 x 11
@@ -3148,39 +3105,38 @@ x 12
 y 10
 end
 arch ggate_closed
-protected 24
-connected 24
 x 12
 y 10
+connected 24
 end
 arch unholy_ground
 x 12
 y 11
 end
 arch flagstone
-type 41
 hp 23
 sp 24
-activate_on_push 1
-activate_on_release 1
-connected 23
 x 12
 y 11
+type 41
+connected 23
+activate_on_push 1
+activate_on_release 1
 end
 arch necromancer
 msg
-@match [Ss]iegfried
+@match siegfried
 I hate Siegfried!!! He's a dork!
 @match *
 Grr... You're getting on my nerves!
 endmsg
-stand_still 1
-resist_physical 100
-resist_magic 100
-run_away 1
-scared 0
 x 12
 y 11
+resist_physical 100
+resist_magic 100
+scared 0
+run_away 1
+stand_still 1
 end
 arch unholy_ground
 x 12
@@ -3370,10 +3326,9 @@ x 13
 y 6
 end
 arch button_lever
-protected 1
-connected 1
 x 13
 y 6
+connected 1
 end
 arch unholy_ground
 x 13
@@ -3594,7 +3549,7 @@ arch flagstone
 x 14
 y 5
 end
-arch dwall3_3
+arch dwall_3_3
 x 14
 y 5
 end
@@ -3759,10 +3714,9 @@ x 14
 y 28
 end
 arch igateTrg2
-protected 778
-connected 778
 x 14
 y 28
+connected 778
 end
 arch pstone_1
 x 14
@@ -4016,10 +3970,9 @@ x 15
 y 29
 end
 arch trigger
-protected 778
-connected 778
 x 15
 y 29
+connected 778
 end
 arch pstone_2
 x 15
@@ -4065,10 +4018,9 @@ x 16
 y 3
 end
 arch pedestal
-protected 11
-connected 11
 x 16
 y 3
+connected 11
 end
 arch flagstone
 x 16
@@ -4083,21 +4035,19 @@ x 16
 y 4
 end
 arch igate_closed_1
-speed 0.500000
-protected 11
-connected 11
 x 16
 y 4
+speed 0.500000
+connected 11
 end
 arch unholy_ground
 x 16
 y 5
 end
 arch pedestal
-protected 11
-connected 11
 x 16
 y 5
+connected 11
 end
 arch flagstone
 x 16
@@ -4116,6 +4066,10 @@ x 16
 y 7
 end
 arch flagstone
+x 16
+y 7
+end
+arch golem_necro
 x 16
 y 7
 end
@@ -4140,6 +4094,10 @@ x 16
 y 10
 end
 arch flagstone
+x 16
+y 10
+end
+arch golem_necro
 x 16
 y 10
 end
@@ -4172,10 +4130,9 @@ x 16
 y 14
 end
 arch pedestal
-protected 10
-connected 10
 x 16
 y 14
+connected 10
 end
 arch flagstone
 x 16
@@ -4190,21 +4147,19 @@ x 16
 y 15
 end
 arch igate_closed_1
-speed 0.500000
-protected 10
-connected 10
 x 16
 y 15
+speed 0.500000
+connected 10
 end
 arch unholy_ground
 x 16
 y 16
 end
 arch pedestal
-protected 10
-connected 10
 x 16
 y 16
+connected 10
 end
 arch flagstone
 x 16
@@ -4518,10 +4473,9 @@ x 17
 y 28
 end
 arch igateTrg2
-protected 777
-connected 777
 x 17
 y 28
+connected 777
 end
 arch pstone_2
 x 17
@@ -4658,7 +4612,7 @@ arch flagstone
 x 18
 y 14
 end
-arch dwall3_3
+arch dwall_3_3
 x 18
 y 14
 end
@@ -4735,10 +4689,9 @@ x 18
 y 29
 end
 arch trigger
-protected 777
-connected 777
 x 18
 y 29
+connected 777
 end
 arch large_stones
 x 18
@@ -4893,43 +4846,38 @@ y 23
 end
 arch button_small
 name 35 - open_gate
-protected 35
-weight 40000
-connected 35
 x 19
 y 24
+weight 40000
+connected 35
 end
 arch creator
 name 34
 other_arch small_shield
-protected 34
-connected 34
 x 19
 y 24
+connected 34
 end
 arch creator
 name 33
 other_arch small_shield
-protected 33
-connected 33
 x 19
 y 24
+connected 33
 end
 arch creator
 name 32
 other_arch small_shield
-protected 32
-connected 32
 x 19
 y 24
+connected 32
 end
 arch creator
 name 31
 other_arch small_shield
-protected 31
-connected 31
 x 19
 y 24
+connected 31
 end
 arch blocked
 x 19
@@ -5213,30 +5161,25 @@ arch magic_mouth
 name 20
 msg
 The Necromancer say:
-Arrgh! Leave me alone - I didn't
-invite you! Continue to annoy me and
-I'll teach you some respect!
+Arrgh! Leave me alone - I didn't invite you! Continue to annoy me and I'll teach you some respect!
 endmsg
-protected 20
-connected 20
 x 21
 y 24
+connected 20
 end
 arch button_small
 name 20
-protected 20
-weight 1000
-connected 20
 x 21
 y 24
+weight 1000
+connected 20
 end
 arch creator
 name 1
 other_arch small_shield
-protected 1
-connected 1
 x 21
 y 24
+connected 1
 end
 arch blocked
 x 21
@@ -5393,9 +5336,9 @@ arch exit
 slaying tower.b1
 hp 4
 sp 3
-speed_left -1.700000
 x 22
 y 27
+speed_left -1.700000
 end
 arch large_stones
 x 22
@@ -5405,9 +5348,9 @@ arch exit
 slaying tower.b1
 hp 4
 sp 4
-speed_left -1.700000
 x 22
 y 28
+speed_left -1.700000
 end
 arch large_stones
 x 22
@@ -5417,9 +5360,9 @@ arch exit
 slaying tower.b1
 hp 4
 sp 5
-speed_left -1.700000
 x 22
 y 29
+speed_left -1.700000
 end
 arch large_stones
 x 22
@@ -5649,92 +5592,83 @@ y 17
 end
 arch igate_open_1
 name 20
-speed 0.500000
-protected 20
-value 1
-connected 20
 x 24
 y 18
+speed 0.500000
+value 1
+connected 20
 end
 arch scroll_2
 name aaa
-weight 10
 x 24
 y 18
+weight 10
 end
 arch note
 name 1 kg
-weight 1000
 x 24
 y 18
+weight 1000
 end
 arch altar
 name 22
 slaying aaa
 food 1
-protected 22
-connected 22
 x 24
 y 19
+connected 22
 end
 arch button_small
 name 21
-protected 21
-weight 1000
-connected 21
 x 24
 y 19
+weight 1000
+connected 21
 end
 arch magic_mouth
 name 23
 msg
-<The Necromancer opened a magic
-portal and disappeared...>
+<The Necromancer opened a magic portal and disappeared...>
 endmsg
-protected 23
-connected 23
-walk_on 0
-fly_on 0
 x 24
 y 20
+connected 23
+move_on 0
 end
 arch altar
 name 24
 slaying aaa
 food 1
-protected 24
-connected 24
 x 24
 y 20
+connected 24
 end
 arch button_small
 name 23
-protected 23
-weight 1000
-connected 23
 x 24
 y 20
+weight 1000
+connected 23
 end
 arch igate_open_1
 name 22
-speed 0.500000
-protected 22
-value 1
-connected 22
 x 24
 y 21
+speed 0.500000
+value 1
+connected 22
 end
 arch scroll_2
 name aaa
-weight 10
 x 24
 y 21
+weight 10
 end
 arch note
 name 1 kg
-weight 1000
 x 24
 y 21
+weight 1000
 end
 arch blocked
 x 24
@@ -5887,21 +5821,18 @@ arch teleporter
 name 22
 hp 11
 sp 11
-speed 0.000000
-protected 22
-connected 22
 x 25
 y 24
+speed 0.000000
+connected 22
 end
 arch perm_magic_portal
-type 0
 slaying 0
 hp 0
 sp 0
-walk_on 0
-fly_on 0
 x 25
 y 24
+type 0
 end
 arch blocked
 x 25
@@ -5950,12 +5881,4 @@ end
 arch blocked
 x 25
 y 32
-end
-arch golem_necro
-x 16
-y 7
-end
-arch golem_necro
-x 16
-y 10
 end

@@ -1,12 +1,19 @@
 arch map
-name TitanGate
-msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Mon Jun 12 22:15:06 2000
-endmsg
+name Titan Gate
+difficulty 15
+region wilderness
 width 14
 height 16
+enter_x 6
+enter_y 1
+msg
+Created:  2000-02-12
+Modified: 2012-03-13 Rick Tanner
+endmsg
+maplore
+@quest Scorn Royalty Quest
+entrance to Meganthropopulos's lair
+endmaplore
 end
 arch dungeon_floor
 end
@@ -418,6 +425,20 @@ arch dungeon_floor
 x 5
 y 5
 end
+arch giant
+msg
+@match thirsty
+It's so hot today! And we can't leave our posts.  Say, if you brought some booze for me and dropped it at my feet, I'd be mighty obliged.  I am VERY thirsty! Yes, if you bring enough, I'll let you in!
+@match *
+NONE SHALL pass... Haaa, how thirsty am I... *sigh*
+endmsg
+x 5
+y 5
+unaggressive 1
+arch npc_dialog
+name quests/peterm/quests/titanguard.msg
+end
+end
 arch dungeon_floor
 x 5
 y 6
@@ -485,8 +506,7 @@ y 2
 end
 arch magic_mouth
 msg
-You better not attack the guards or
-they'll never let you in.
+You better not attack the guards or they'll never let you in.
 endmsg
 x 6
 y 3
@@ -496,14 +516,14 @@ x 6
 y 3
 end
 arch igate_open_1
-speed 0.500000
-value 1
 x 6
 y 3
+speed 0.500000
+value 1
 end
 arch magic_mouth
 msg
-Halt!  Who goes there!
+Halt! Who goes there!
 endmsg
 x 6
 y 4
@@ -511,13 +531,6 @@ end
 arch dungeon_floor
 x 6
 y 4
-end
-arch magic_mouth
-msg
-Hmm, these guards look thirsty.
-endmsg
-x 6
-y 5
 end
 arch dungeon_floor
 x 6
@@ -527,21 +540,25 @@ arch dungeon_floor
 x 6
 y 6
 end
-arch altar
-slaying booze
-connected 1
+arch check_floor
+hp 1
 x 6
 y 6
+arch event_trigger
+name scorn/TitanCrown 30-90 1
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
 end
 arch dungeon_floor
 x 6
 y 7
 end
 arch gate_closed_1
-speed 0.500000
-connected 1
 x 6
 y 7
+speed 0.500000
+connected 1
 end
 arch dungeon_floor
 x 6
@@ -568,6 +585,7 @@ x 6
 y 13
 end
 arch stair_up_3
+slaying /!
 msg
 layoutstyle onion
 symmetry 4
@@ -585,7 +603,6 @@ orientation 2
 expand2x 1
 treasureoptions 1
 endmsg
-slaying /!
 x 6
 y 13
 end
@@ -620,8 +637,7 @@ y 2
 end
 arch magic_mouth
 msg
-You better not attack the guards or
-they'll never let you in.
+You better not attack the guards or they'll never let you in.
 endmsg
 x 7
 y 3
@@ -631,14 +647,14 @@ x 7
 y 3
 end
 arch igate_open_1
-speed 0.500000
-value 1
 x 7
 y 3
+speed 0.500000
+value 1
 end
 arch magic_mouth
 msg
-Halt!  Who goes there!
+Halt! Who goes there!
 endmsg
 x 7
 y 4
@@ -662,15 +678,25 @@ arch dungeon_floor
 x 7
 y 6
 end
+arch check_floor
+hp 1
+x 7
+y 6
+arch event_trigger
+name scorn/TitanCrown 30-90 1
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
+end
 arch dungeon_floor
 x 7
 y 7
 end
 arch gate_closed_1
-speed 0.500000
-connected 1
 x 7
 y 7
+speed 0.500000
+connected 1
 end
 arch dungeon_floor
 x 7
@@ -734,6 +760,15 @@ end
 arch dungeon_floor
 x 8
 y 5
+end
+arch giant
+msg
+@match *
+NONE SHALL PASS!
+endmsg
+x 8
+y 5
+unaggressive 1
 end
 arch dungeon_floor
 x 8
@@ -1193,27 +1228,4 @@ end
 arch dungeon_floor
 x 13
 y 15
-end
-arch giant
-msg
-@match thirsty
-It's so hot today!  And we can't leave
-our posts.  Say, if you brought some
-booze for me and dropped it at my
-feet, I'd be mighty obliged.  I am
-VERY thirsty!  Yes, if you bring
-enough, I'll let you in!
-endmsg
-unaggressive 1
-x 5
-y 5
-end
-arch giant
-msg
-@match *
-NONE SHALL PASS!
-endmsg
-unaggressive 1
-x 8
-y 5
 end

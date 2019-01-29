@@ -1,12 +1,15 @@
 arch map
+name house
+difficulty 9
 region ancientpupland
-name house2
+width 19
+height 16
+enter_x 7
+enter_y 1
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue May  7 06:04:51 1996
+Created:  1996-05-07
+Modified: 2012-02-24 Rick Tanner
 endmsg
-x 19
 end
 arch pstone_1
 end
@@ -140,8 +143,7 @@ y 5
 end
 arch bed_1
 msg
-   This bed looks like if it had been
-   used recently...
+   This bed looks like it has been used recently...
 endmsg
 x 1
 y 5
@@ -334,9 +336,7 @@ y 12
 end
 arch table
 msg
-   There are crumbles of bread on this
-   tabel. Just like if someone ate at
-   this table recently.  
+   There are crumbs of bread on this table.  As if someone ate at this table recently.
 endmsg
 x 3
 y 12
@@ -430,7 +430,6 @@ x 4
 y 13
 pick_up 0
 will_apply 0
-can_apply 0
 end
 arch dungeon_floor
 x 4
@@ -504,7 +503,6 @@ x 5
 y 10
 pick_up 0
 will_apply 0
-can_apply 0
 end
 arch dungeon_floor
 x 5
@@ -652,7 +650,7 @@ end
 arch pstone_1
 x 7
 end
-arch oakdoor
+arch oakdoor_2
 slaying village
 hp 14
 sp 6
@@ -693,8 +691,7 @@ carrying 75
 arch note
 name handwritten note
 msg
-If you want to find me, have a close
-look at the furniture in this house.
+If you want to find me, have a close look at the furniture in this house.
 -- Andersen
 endmsg
 end
@@ -1244,10 +1241,7 @@ end
 arch table
 msg
    Someone scribbled a message on it:
-   "pull first lever (west) - wait
-    ten seconds - pull second lever
-    (east) - wait one second - pull
-    second lever (east) again."
+   "Pull first lever (west) - wait ten seconds - pull second lever (east) - wait one second - pull second lever (east) again."
 endmsg
 x 13
 y 6
@@ -1312,6 +1306,8 @@ end
 arch firewall_5
 x 14
 level 5
+arch spell_small_fireball
+end
 end
 arch pstone_4
 x 14
@@ -1790,6 +1786,8 @@ name blocked
 face blocked.111
 x 18
 y 5
+arch spell_sm_lightning
+end
 end
 arch igateTrg1
 name blocked
@@ -1858,9 +1856,7 @@ end
 arch magic_mouth
 name blocked
 msg
-You hear the sound of bursting metal.
-(Looks like you had bad luck - Try
- again later.)
+You hear the sound of bursting metal.  (Looks like you had bad luck - Try again later.)
 endmsg
 x 18
 y 15

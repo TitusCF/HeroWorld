@@ -1,12 +1,15 @@
 arch map
-name Underneath Castle
+name Castle of Ra-Gar, Dungeon Level 2
+difficulty 20
+region wilderness
+width 30
+height 28
+enter_x 26
+enter_y 1
 msg
-Creator: 
-Email: 
-Date: Tue Oct 19 18:12:31 1993
+Created:  1993-10-19
+Modified: 2012-03-11 Rick Tanner
 endmsg
-x 30
-y 28
 end
 arch large_stones
 end
@@ -211,6 +214,10 @@ x 1
 y 5
 end
 arch large_stones
+x 1
+y 6
+end
+arch giant
 x 1
 y 6
 end
@@ -1032,6 +1039,10 @@ arch large_stones
 x 6
 y 8
 end
+arch giant
+x 6
+y 8
+end
 arch large_stones
 x 6
 y 9
@@ -1152,6 +1163,10 @@ x 7
 y 1
 end
 arch large_stones
+x 7
+y 2
+end
+arch giant
 x 7
 y 2
 end
@@ -1635,6 +1650,10 @@ x 10
 y 5
 end
 arch large_stones
+x 10
+y 6
+end
+arch giant
 x 10
 y 6
 end
@@ -2439,8 +2458,7 @@ y 5
 end
 arch sign
 msg
-Dis be stuff room...Scruffy wit stuff
-No go in...bad if go i
+Dis be stuff room... Scruffy wit stuff.. No go in... bad if go in.
 endmsg
 x 15
 y 5
@@ -2606,8 +2624,7 @@ end
 arch locked_door2
 slaying set_individual_value large
 msg
-Its a rather large door..you will need
-a rather large key
+Its a rather large door.. you will need a rather large key.
 endmsg
 x 16
 y 4
@@ -5007,20 +5024,4 @@ end
 arch rough_wall_2_2_4
 x 29
 y 27
-end
-arch giant
-x 1
-y 6
-end
-arch giant
-x 6
-y 8
-end
-arch giant
-x 7
-y 2
-end
-arch giant
-x 10
-y 6
 end

@@ -1,12 +1,15 @@
 arch map
+name Reception, Electricity Level 6
+difficulty 15
 region nurnberg
-name electricity6
+width 19
+height 16
+enter_x 2
+enter_y 13
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue Feb 20 03:10:56 1996
+Created:  1996-02-20
+Modified: 2012-03-04 Rick Tanner
 endmsg
-x 19
 end
 arch marble
 end
@@ -21,7 +24,10 @@ end
 arch marble
 y 2
 end
-arch cwall_3_2
+arch swall_1_4_half
+y 2
+end
+arch cwall_2_1_1
 y 2
 end
 arch marble
@@ -117,10 +123,11 @@ x 1
 y 1
 end
 arch lightningwall_3
-dam 6
 x 1
 y 1
 level 40
+arch spell_large_lightning
+end
 end
 arch marble
 x 1
@@ -130,7 +137,7 @@ arch dungeon_magic
 x 1
 y 2
 end
-arch swall_1_4
+arch swall_2_1_2
 x 1
 y 2
 end
@@ -354,7 +361,7 @@ y 11
 end
 arch magic_mouth
 msg
-dangeous! 
+Dangerous!
 endmsg
 x 2
 y 12
@@ -689,7 +696,7 @@ arch dungeon_magic
 x 4
 y 13
 end
-arch swall_2_1_1
+arch swall_1_2
 x 4
 y 13
 end
@@ -705,7 +712,7 @@ arch marble
 x 4
 y 15
 end
-arch cwall_3_1
+arch cwall_2_1_2
 x 4
 y 15
 end
@@ -782,6 +789,22 @@ arch marble
 x 5
 y 10
 end
+arch behemoth
+name Electric Behemoth
+Pow 100
+maxsp 300
+x 5
+y 10
+attack_movement 7
+can_cast_spell 1
+resist_electricty 100
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+end
 arch marble
 x 5
 y 11
@@ -789,6 +812,22 @@ end
 arch marble
 x 5
 y 12
+end
+arch behemoth
+name Electric Behemoth
+Pow 100
+maxsp 300
+x 5
+y 12
+attack_movement 7
+can_cast_spell 1
+resist_electricty 100
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
 end
 arch marble
 x 5
@@ -996,14 +1035,31 @@ x 7
 y 9
 end
 arch lightningwall_1
-dam 6
 x 7
 y 9
 level 40
+arch spell_large_lightning
+end
 end
 arch marble
 x 7
 y 10
+end
+arch behemoth
+name Electric Behemoth
+Pow 100
+maxsp 300
+x 7
+y 10
+attack_movement 7
+can_cast_spell 1
+resist_electricty 100
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
 end
 arch marble
 x 7
@@ -1012,6 +1068,22 @@ end
 arch marble
 x 7
 y 12
+end
+arch behemoth
+name Electric Behemoth
+Pow 100
+maxsp 300
+x 7
+y 12
+attack_movement 7
+can_cast_spell 1
+resist_electricty 100
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
 end
 arch marble
 x 7
@@ -1107,10 +1179,11 @@ x 8
 y 9
 end
 arch lightningwall_1
-dam 6
 x 8
 y 9
 level 40
+arch spell_large_lightning
+end
 end
 arch marble
 x 8
@@ -1298,11 +1371,15 @@ arch dungeon_magic
 x 9
 y 14
 end
-arch swall_1_2
+arch swall_2_1_1
 x 9
 y 14
 end
 arch marble
+x 9
+y 15
+end
+arch swall_1_2_half
 x 9
 y 15
 end
@@ -1589,7 +1666,10 @@ end
 arch marble
 x 12
 end
-arch cwall_3_3
+arch cwall_2_1_2
+x 12
+end
+arch swall_1_1_half
 x 12
 end
 arch marble
@@ -1831,9 +1911,7 @@ end
 arch sign
 msg
 Special Button:
-To release special button under the
-booze  causes opening special gate for
-ONLY few second.
+To release special button under the booze causes opening special gate for ONLY few second.
 endmsg
 x 14
 y 1
@@ -1900,7 +1978,7 @@ arch dungeon_magic
 x 14
 y 10
 end
-arch swall_1_3
+arch swall_2_1_2
 x 14
 y 10
 end
@@ -1986,6 +2064,10 @@ arch cwall_2_1_1
 x 15
 y 6
 end
+arch swall_1_3_half
+x 15
+y 6
+end
 arch marble
 x 15
 y 7
@@ -2015,6 +2097,10 @@ x 15
 y 10
 end
 arch cwall_2_1_1
+x 15
+y 10
+end
+arch swall_1_3_half
 x 15
 y 10
 end
@@ -2159,68 +2245,4 @@ end
 arch blocked
 x 18
 y 14
-end
-arch behemoth
-name Electric Behemoth
-Pow 100
-maxsp 300
-x 5
-y 10
-attack_movement 7
-immune 16392
-can_cast_spell 1
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-end
-arch behemoth
-name Electric Behemoth
-Pow 100
-maxsp 300
-x 5
-y 12
-attack_movement 7
-immune 16392
-can_cast_spell 1
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-end
-arch behemoth
-name Electric Behemoth
-Pow 100
-maxsp 300
-x 7
-y 10
-attack_movement 7
-immune 16392
-can_cast_spell 1
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-end
-arch behemoth
-name Electric Behemoth
-Pow 100
-maxsp 300
-x 7
-y 12
-attack_movement 7
-immune 16392
-can_cast_spell 1
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
 end

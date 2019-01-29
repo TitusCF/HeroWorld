@@ -1,13 +1,15 @@
 arch map
+name House of Treasure
+difficulty 10
 region pupland
-name adv
+width 13
+height 15
+enter_x 3
+enter_y 12
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue Feb 13 18:25:26 1996
+Created:  1996-02-13
+Modified: 2012-02-29 Rick Tanner
 endmsg
-x 13
-y 15
 end
 arch marble
 end
@@ -92,6 +94,9 @@ sp 1
 y 14
 end
 arch grass
+y 14
+end
+arch tree
 y 14
 end
 arch marble
@@ -322,6 +327,9 @@ y 4
 end
 arch locked_door1
 slaying 9key3
+msg
+You need the House of Treasure Key #3 to open this door.
+endmsg
 x 3
 y 4
 end
@@ -339,6 +347,9 @@ y 6
 end
 arch locked_door1
 slaying 9key2
+msg
+You need the House of Treasure Key #2 to open this door.
+endmsg
 x 3
 y 6
 end
@@ -356,6 +367,9 @@ y 8
 end
 arch locked_door1
 slaying 9key1
+msg
+You need the House of Treasure Key #1 to open this door.
+endmsg
 x 3
 y 8
 end
@@ -566,7 +580,6 @@ end
 arch button_handle
 x 5
 y 9
-protected 1
 connected 1
 end
 arch marble
@@ -578,6 +591,10 @@ x 5
 y 11
 end
 arch grass
+x 5
+y 12
+end
+arch tree
 x 5
 y 12
 end
@@ -710,227 +727,154 @@ x 6
 y 14
 end
 arch blocked
-msg
-endmsg
 x 7
 end
 arch blocked
-msg
-endmsg
 x 7
 y 1
 end
 arch blocked
-msg
-endmsg
 x 7
 y 2
 end
 arch blocked
-msg
-endmsg
 x 7
 y 3
 end
 arch blocked
-msg
-endmsg
 x 7
 y 4
 end
 arch blocked
-msg
-endmsg
 x 7
 y 5
 end
 arch blocked
-msg
-endmsg
 x 7
 y 6
 end
 arch blocked
-msg
-endmsg
 x 7
 y 7
 end
 arch blocked
-msg
-endmsg
 x 7
 y 8
 end
 arch blocked
-msg
-endmsg
 x 7
 y 9
 end
 arch blocked
-msg
-endmsg
 x 7
 y 10
 end
 arch blocked
-msg
-endmsg
 x 7
 y 11
 end
 arch blocked
-msg
-endmsg
 x 7
 y 12
 end
 arch blocked
-msg
-endmsg
 x 7
 y 13
 end
 arch blocked
-msg
-endmsg
 x 7
 y 14
 end
 arch blocked
-msg
-endmsg
 x 8
 end
 arch blocked
-msg
-endmsg
 x 8
 y 1
 end
 arch blocked
-msg
-endmsg
 x 8
 y 2
 end
 arch blocked
-msg
-endmsg
 x 8
 y 3
 end
 arch blocked
-msg
-endmsg
 x 8
 y 4
 end
 arch blocked
-msg
-endmsg
 x 8
 y 5
 end
 arch blocked
-msg
-endmsg
 x 8
 y 6
 end
 arch blocked
-msg
-endmsg
 x 8
 y 7
 end
 arch blocked
-msg
-endmsg
 x 8
 y 8
 end
 arch blocked
-msg
-endmsg
 x 8
 y 9
 end
 arch blocked
-msg
-endmsg
 x 8
 y 10
 end
 arch blocked
-msg
-endmsg
 x 8
 y 11
 end
 arch blocked
-msg
-endmsg
 x 8
 y 12
 end
 arch blocked
-msg
-endmsg
 x 8
 y 13
 end
 arch blocked
-msg
-endmsg
 x 8
 y 14
 end
 arch blocked
-msg
-endmsg
 x 9
 end
 arch blocked
-msg
-endmsg
 x 9
 y 1
 end
 arch button_small
 x 9
 y 2
-protected 11
 connected 11
 end
 arch button_small
 x 9
 y 3
-protected 14
 connected 14
 end
 arch button_small
 x 9
 y 4
-protected 17
 connected 17
 end
 arch blocked
-msg
-endmsg
 x 9
 y 5
 end
 arch blocked
-msg
-endmsg
 x 9
 y 6
 end
 arch blocked
-msg
-endmsg
 x 9
 y 7
 end
@@ -941,18 +885,12 @@ sp 3
 x 9
 y 8
 speed 0.000000
-protected 11
 connected 11
 end
 arch note
 name hint from the semi-gods 1
 msg
-Bombs are very useful to boost magic
-experience.
-To create bombs, you must learn the
-spell "create bomb".
-There are rumours about a rod of create
-bomb somewhere in the world.
+Bombs are very useful to boost magic experience.  To create bombs, you must learn the spell "create bomb."  There are rumours about a rod of create bomb somewhere in the world.
 endmsg
 x 9
 y 8
@@ -964,22 +902,17 @@ sp 3
 x 9
 y 9
 speed 0.000000
-protected 14
 connected 14
 end
 arch note
 name hint from the semi-gods 4
 msg
-You can get lots of useful information
-by examining all kinds of objects in
-your surrounding. for example:
+You can get lots of useful information by examining all kinds of objects in your surrounding.  For example: 
 o Names of unreachable items.
 o Equipment of monsters/NPCs.
 ------
 To examine an object...
-...with cfclient: left-click on it!
-...with winclient: right-click on it,
-   then select "look at"!
+...with gtk client: left-click on it!
 endmsg
 x 9
 y 9
@@ -991,7 +924,6 @@ sp 3
 x 9
 y 10
 speed 0.000000
-protected 17
 connected 17
 end
 arch note
@@ -999,36 +931,28 @@ name hint from the semi-gods 7
 msg
 Using potions is very important.
 potion of fire resistance:
-	immune to fire
+	90 resist to fire
 potion of cold resistance:
-	immune to cold
-potion of invulnerability:
-	immune to physical
+	90 resist to cold
+potion of shielding:
+	90 resist to physical
 endmsg
 x 9
 y 10
 end
 arch blocked
-msg
-endmsg
 x 9
 y 11
 end
 arch blocked
-msg
-endmsg
 x 9
 y 12
 end
 arch blocked
-msg
-endmsg
 x 9
 y 13
 end
 arch blocked
-msg
-endmsg
 x 9
 y 14
 end
@@ -1037,51 +961,39 @@ hp 10
 sp 3
 x 10
 speed 0.500000
-protected 1
 connected 1
 end
 arch orcchop
 x 10
 end
 arch blocked
-msg
-endmsg
 x 10
 y 1
 end
 arch button_small
 x 10
 y 2
-protected 12
 connected 12
 end
 arch button_small
 x 10
 y 3
-protected 15
 connected 15
 end
 arch button_small
 x 10
 y 4
-protected 18
 connected 18
 end
 arch blocked
-msg
-endmsg
 x 10
 y 5
 end
 arch blocked
-msg
-endmsg
 x 10
 y 6
 end
 arch blocked
-msg
-endmsg
 x 10
 y 7
 end
@@ -1092,21 +1004,12 @@ sp 3
 x 10
 y 8
 speed 0.000000
-protected 12
 connected 12
 end
 arch note
 name hint from the semi-gods 2
 msg
-When you die - and that will happen -
-you loose some experience and one Stat
-(like Str -1 or Wis -1). The exp. is
-gone, but the Stats can be recovered
-by drinking a potion of life!
-For skilled priests there is yet an
-easier way: Pray over an altar of your
-deity... The gods won't ignore the
-bidding of a worthy disciple.
+When you die - and that will happen - you loose some experience and one Stat (like Str -1 or Wis -1).  The exp. is gone, but the Stats can be recovered by drinking a potion of life! For skilled priests there is yet an easier way: Pray over an altar of your deity... The gods won't ignore the bidding of a worthy disciple.
 endmsg
 x 10
 y 8
@@ -1118,19 +1021,12 @@ sp 3
 x 10
 y 9
 speed 0.000000
-protected 15
 connected 15
 end
 arch note
 name hint from the semi-gods 5
 msg
-Raising your Stats (Str/Dex/Con/...)
-by drinking potions of Strength/
-Dexterity/..etc is the best way to
-level up quickly. Those cannot be found
-in shops. Hence, in the beginning, you
-should try to find places (in dungeons)
-where to obtain random potions.
+Raising your Stats (Str/Dex/Con/...) by drinking potions of Strength/Dexterity/..etc is the best way to level up quickly.  Those cannot be found in shops.  Hence, in the beginning, you should try to find places (in dungeons) where to obtain random potions.
 endmsg
 x 10
 y 9
@@ -1142,89 +1038,63 @@ sp 3
 x 10
 y 10
 speed 0.000000
-protected 18
 connected 18
 end
 arch note
 name hint from the semi-gods 8
 msg
-Be careful when collecting food in
-dungeons. Poisoned food can kill
-players of low level very quick!
-Check if the food stacks with the
-pieces you're already carrying.
+Be careful when collecting food in dungeons.  Poisoned food can kill players of low level very quick! Check if the food stacks with the pieces you're already carrying.
 endmsg
 x 10
 y 10
 end
 arch blocked
-msg
-endmsg
 x 10
 y 11
 end
 arch blocked
-msg
-endmsg
 x 10
 y 12
 end
 arch blocked
-msg
-endmsg
 x 10
 y 13
 end
 arch blocked
-msg
-endmsg
 x 10
 y 14
 end
 arch blocked
-msg
-endmsg
 x 11
 end
 arch blocked
-msg
-endmsg
 x 11
 y 1
 end
 arch button_small
 x 11
 y 2
-protected 13
 connected 13
 end
 arch button_small
 x 11
 y 3
-protected 16
 connected 16
 end
 arch button_small
 x 11
 y 4
-protected 19
 connected 19
 end
 arch blocked
-msg
-endmsg
 x 11
 y 5
 end
 arch blocked
-msg
-endmsg
 x 11
 y 6
 end
 arch blocked
-msg
-endmsg
 x 11
 y 7
 end
@@ -1235,7 +1105,6 @@ sp 3
 x 11
 y 8
 speed 0.000000
-protected 13
 connected 13
 end
 arch note
@@ -1243,12 +1112,9 @@ name hint from the semi-gods 3
 msg
 Guide to weapon-enchanting:
 - mark (and wield) a non-magical weapon
-- drop a bunch of diamonds, then apply
-  a "scroll of Prepare Weapon".
+- drop a bunch of diamonds, then apply a "scroll of Prepare Weapon"
 - apply a "scroll of Improve <Stat>"
-- drop the type and amount of potions
-  you are prompted for, then apply
-  the scroll again
+- drop the type and amount of potions you are prompted for, then apply the scroll again
 endmsg
 x 11
 y 8
@@ -1260,15 +1126,12 @@ sp 3
 x 11
 y 9
 speed 0.000000
-protected 16
 connected 16
 end
 arch note
 name hint from the semi-gods 6
 msg
-You can jump through certain kinds of
-gates and fences by using the spell
-"dimension door".
+You can jump through certain kinds of gates and fences by using the spell "dimension door."
 endmsg
 x 11
 y 9
@@ -1280,7 +1143,6 @@ sp 3
 x 11
 y 10
 speed 0.000000
-protected 19
 connected 19
 end
 arch note
@@ -1296,115 +1158,77 @@ x 11
 y 10
 end
 arch blocked
-msg
-endmsg
 x 11
 y 11
 end
 arch blocked
-msg
-endmsg
 x 11
 y 12
 end
 arch blocked
-msg
-endmsg
 x 11
 y 13
 end
 arch blocked
-msg
-endmsg
 x 11
 y 14
 end
 arch blocked
-msg
-endmsg
 x 12
 end
 arch blocked
-msg
-endmsg
 x 12
 y 1
 end
 arch blocked
-msg
-endmsg
 x 12
 y 2
 end
 arch blocked
-msg
-endmsg
 x 12
 y 3
 end
 arch blocked
-msg
-endmsg
 x 12
 y 4
 end
 arch blocked
-msg
-endmsg
 x 12
 y 5
 end
 arch blocked
-msg
-endmsg
 x 12
 y 6
 end
 arch blocked
-msg
-endmsg
 x 12
 y 7
 end
 arch blocked
-msg
-endmsg
 x 12
 y 8
 end
 arch blocked
-msg
-endmsg
 x 12
 y 9
 end
 arch blocked
-msg
-endmsg
 x 12
 y 10
 end
 arch blocked
-msg
-endmsg
 x 12
 y 11
 end
 arch blocked
-msg
-endmsg
 x 12
 y 12
 end
 arch blocked
-msg
-endmsg
 x 12
 y 13
 end
 arch blocked
-msg
-endmsg
 x 12
 y 14
 end

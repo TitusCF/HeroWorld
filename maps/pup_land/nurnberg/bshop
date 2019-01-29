@@ -1,16 +1,17 @@
 arch map
+name Sunspear
+difficulty 25
 region nurnberg
-name bshop
-msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Fri Feb  9 23:22:20 1996
-endmsg
-x 25
-y 23
-level 5
 shopitems book:100;spellbook:100;*:-90
 shopmin 50
+width 25
+height 23
+enter_x 8
+enter_y 1
+msg
+Created:  1996-02-09
+Modified: 2011-12-09 Rick Tanner
+endmsg
 end
 arch invis_exit
 slaying city
@@ -1066,6 +1067,10 @@ arch wwall_2_2_4
 x 9
 y 8
 end
+arch swall_1_4_half
+x 9
+y 8
+end
 arch shop_books
 x 9
 y 9
@@ -1160,7 +1165,7 @@ end
 arch door_look_2
 x 10
 y 4
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 10
@@ -1169,7 +1174,7 @@ end
 arch door_look_2
 x 10
 y 5
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 10
@@ -1187,7 +1192,7 @@ arch cobblestones2
 x 10
 y 8
 end
-arch swall_1_4
+arch swall_2_1_2
 x 10
 y 8
 end
@@ -1432,7 +1437,7 @@ end
 arch man
 msg
 @match *
-Welcome to the book shop,Sunspear!
+Welcome to the book shop, Sunspear!
 endmsg
 face man.171
 hp 180
@@ -1445,7 +1450,7 @@ arch cobblestones2
 x 12
 y 8
 end
-arch swall_1_3
+arch swall_2_1_2
 x 12
 y 8
 end
@@ -1568,6 +1573,10 @@ arch wwall_2_2_1
 x 13
 y 8
 end
+arch swall_1_3_half
+x 13
+y 8
+end
 arch shop_books
 x 13
 y 9
@@ -1619,6 +1628,10 @@ end
 arch wwall_2_2_4
 x 13
 y 18
+end
+arch pstone_1
+x 13
+y 19
 end
 arch biglake_ne
 x 13

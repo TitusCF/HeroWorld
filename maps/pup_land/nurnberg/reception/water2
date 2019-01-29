@@ -1,17 +1,16 @@
 arch map
+name Reception, Water Level 2
+reset_timeout 7200
+difficulty 10
 region nurnberg
-name water2
-msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Wed Feb 21 16:52:19 1996
-endmsg
 width 19
 height 16
-enter_x 1
-enter_y 1
-reset_timeout 7200
-difficulty 5
+enter_x 11
+enter_y 5
+msg
+Created:  1996-02-21
+Modified: 2012-03-04 Rick Tanner
+endmsg
 end
 arch dungeon_floor
 end
@@ -38,7 +37,10 @@ end
 arch dungeon_floor
 y 4
 end
-arch cwall_3_2
+arch swall_1_4_half
+y 4
+end
+arch cwall_2_1_1
 y 4
 end
 arch dungeon_floor
@@ -62,7 +64,10 @@ end
 arch dungeon_floor
 y 8
 end
-arch cwall_3_2
+arch swall_1_4_half
+y 8
+end
+arch cwall_2_1_1
 y 8
 end
 arch dungeon_floor
@@ -114,19 +119,19 @@ arch cwall_2_1_2
 x 1
 end
 arch biglake_center
-no_pass 0
 x 1
 y 1
+move_block 0
 end
 arch biglake_center
-no_pass 0
 x 1
 y 2
+move_block 0
 end
 arch biglake_center
-no_pass 0
 x 1
 y 3
+move_block 0
 end
 arch dungeon_floor
 x 1
@@ -231,32 +236,32 @@ x 2
 end
 arch magic_mouth
 msg
-Drop A Huge Block of Frozen Water here
+Drop A Huge Block of Frozen Water here.
 endmsg
 x 2
 y 1
 end
 arch biglake_center
-no_pass 0
 x 2
 y 1
+move_block 0
 end
 arch altar
 slaying A Huge Block of Frozen Water
 food 1
-connected 100
 x 2
 y 1
+connected 100
 end
 arch biglake_center
-no_pass 0
 x 2
 y 2
+move_block 0
 end
 arch biglake_center
-no_pass 0
 x 2
 y 3
+move_block 0
 end
 arch dungeon_floor
 x 2
@@ -299,10 +304,10 @@ x 2
 y 7
 end
 arch gate_closed_2
-speed 0.500000
-connected 3
 x 2
 y 7
+speed 0.500000
+connected 3
 end
 arch dungeon_magic
 x 2
@@ -321,9 +326,9 @@ x 2
 y 9
 end
 arch button_small
-connected 13
 x 2
 y 9
+connected 13
 end
 arch dungeon_floor
 x 2
@@ -380,10 +385,10 @@ x 3
 y 1
 end
 arch gate_closed_2
-speed 0.500000
-connected 100
 x 3
 y 1
+speed 0.500000
+connected 100
 end
 arch dungeon_floor
 x 3
@@ -398,19 +403,19 @@ x 3
 y 2
 end
 arch biglake_center
-no_pass 0
 x 3
 y 3
+move_block 0
 end
 arch biglake_center
-no_pass 0
 x 3
 y 4
+move_block 0
 end
 arch biglake_center
-no_pass 0
 x 3
 y 5
+move_block 0
 end
 arch dungeon_floor
 x 3
@@ -429,15 +434,15 @@ x 3
 y 7
 end
 arch gate_closed_2
-connected 1
 x 3
 y 7
+connected 1
 end
 arch dungeon_floor
 x 3
 y 8
 end
-arch cwall_3_3
+arch swall_3_3
 x 3
 y 8
 end
@@ -457,7 +462,11 @@ arch dungeon_floor
 x 3
 y 10
 end
-arch cwall_3_1
+arch swall_1_2_half
+x 3
+y 10
+end
+arch cwall_2_1_2
 x 3
 y 10
 end
@@ -546,9 +555,9 @@ x 4
 y 4
 end
 arch biglake_center
-no_pass 0
 x 4
 y 5
+move_block 0
 end
 arch pit_open
 hp 17
@@ -576,11 +585,11 @@ arch dungeon_floor
 x 4
 y 8
 end
-arch dungeon_magic
+arch swall_1_3_half
 x 4
 y 8
 end
-arch swall_2_1_2
+arch cwall_1_4
 x 4
 y 8
 end
@@ -589,9 +598,9 @@ x 4
 y 9
 end
 arch button_small
-connected 12
 x 4
 y 9
+connected 12
 end
 arch dungeon_floor
 x 4
@@ -652,9 +661,9 @@ x 5
 y 3
 end
 arch button_small
-connected 11
 x 5
 y 3
+connected 11
 end
 arch dungeon_floor
 x 5
@@ -664,7 +673,7 @@ arch dungeon_magic
 x 5
 y 4
 end
-arch swall_2_2_3
+arch swall_3_3
 x 5
 y 4
 end
@@ -688,7 +697,7 @@ arch dungeon_magic
 x 5
 y 6
 end
-arch swall_2_2_4
+arch swall_3_1
 x 5
 y 6
 end
@@ -706,9 +715,9 @@ end
 arch altar
 slaying icecube
 food 1
-connected 1
 x 5
 y 7
+connected 1
 end
 arch dungeon_floor
 x 5
@@ -777,7 +786,10 @@ end
 arch dungeon_floor
 x 6
 end
-arch cwall_3_3
+arch cwall_2_1_2
+x 6
+end
+arch swall_1_1_half
 x 6
 end
 arch dungeon_magic
@@ -812,7 +824,11 @@ arch dungeon_floor
 x 6
 y 4
 end
-arch cwall_2_2_1
+arch swall_1_3_half
+x 6
+y 4
+end
+arch cwall_1_4
 x 6
 y 4
 end
@@ -821,11 +837,15 @@ x 6
 y 5
 end
 arch button_small
-connected 10
 x 6
 y 5
+connected 10
 end
 arch dungeon_floor
+x 6
+y 6
+end
+arch swall_1_3_half
 x 6
 y 6
 end
@@ -1523,9 +1543,9 @@ x 13
 y 5
 end
 arch button_lever
-connected 2
 x 13
 y 5
+connected 2
 end
 arch dungeon_floor
 x 13
@@ -1650,10 +1670,10 @@ x 14
 y 6
 end
 arch grate_closed_1
-speed 0.500000
-connected 2
 x 14
 y 6
+speed 0.500000
+connected 2
 end
 arch dungeon_floor
 x 14
@@ -1894,16 +1914,16 @@ end
 arch pit_closed
 hp 17
 sp 5
-connected 10
 x 17
 y 1
+connected 10
 end
 arch pit_closed
 hp 17
 sp 5
-connected 12
 x 17
 y 2
+connected 12
 end
 arch blocked
 x 17
@@ -1914,9 +1934,9 @@ x 17
 y 4
 end
 arch button_small
-connected 3
 x 17
 y 5
+connected 3
 end
 arch blocked
 x 17
@@ -1927,24 +1947,24 @@ x 17
 y 7
 end
 arch biglake_center
-no_pass 0
 x 17
 y 8
+move_block 0
 end
 arch biglake_center
-no_pass 0
 x 17
 y 9
+move_block 0
 end
 arch biglake_center
-no_pass 0
 x 17
 y 10
+move_block 0
 end
 arch biglake_center
-no_pass 0
 x 17
 y 11
+move_block 0
 end
 arch exit
 slaying ../aqueduct
@@ -1964,9 +1984,9 @@ end
 arch pit_closed
 hp 17
 sp 1
-connected 2
 x 17
 y 14
+connected 2
 end
 arch scroll
 x 17
@@ -1982,16 +2002,16 @@ end
 arch pit_closed
 hp 17
 sp 5
-connected 11
 x 18
 y 1
+connected 11
 end
 arch pit_closed
 hp 17
 sp 5
-connected 13
 x 18
 y 2
+connected 13
 end
 arch blocked
 x 18

@@ -1,17 +1,18 @@
 arch map
+name Flawless Beauty
+difficulty 25
 region nurnberg
-name jshop
-msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Mon Feb 12 20:32:26 1996
-endmsg
-x 25
-y 25
-level 5
 shopitems gem:100;ring:0;amulet:0;*:-100
 shopmin 25
 shopmax 40000
+width 25
+height 25
+enter_x 11
+enter_y 23
+msg
+Created:  1996-02-12
+Modified: 2012-03-02 Rick Tanner
+endmsg
 end
 arch grass
 end
@@ -132,7 +133,7 @@ arch grass
 x 1
 y 9
 end
-arch grass
+arch dungeon_floor
 x 1
 y 10
 end
@@ -140,7 +141,7 @@ arch wwall_2_2_2
 x 1
 y 10
 end
-arch grass
+arch dungeon_floor
 x 1
 y 11
 end
@@ -148,7 +149,7 @@ arch wwall_win1
 x 1
 y 11
 end
-arch grass
+arch dungeon_floor
 x 1
 y 12
 end
@@ -239,7 +240,7 @@ arch grass
 x 2
 y 8
 end
-arch grass
+arch dungeon_floor
 x 2
 y 9
 end
@@ -247,7 +248,7 @@ arch wwall_2_2_2
 x 2
 y 9
 end
-arch grass
+arch dungeon_floor
 x 2
 y 10
 end
@@ -259,7 +260,7 @@ arch shop_gems
 x 2
 y 11
 end
-arch grass
+arch dungeon_floor
 x 2
 y 12
 end
@@ -267,7 +268,7 @@ arch wwall_2_2_3
 x 2
 y 12
 end
-arch grass
+arch dungeon_floor
 x 2
 y 13
 end
@@ -350,7 +351,7 @@ arch grass
 x 3
 y 7
 end
-arch grass
+arch dungeon_floor
 x 3
 y 8
 end
@@ -358,7 +359,7 @@ arch wwall_2_2_2
 x 3
 y 8
 end
-arch grass
+arch dungeon_floor
 x 3
 y 9
 end
@@ -378,7 +379,7 @@ arch shop_gems
 x 3
 y 12
 end
-arch grass
+arch dungeon_floor
 x 3
 y 13
 end
@@ -386,7 +387,7 @@ arch wwall_2_2_3
 x 3
 y 13
 end
-arch grass
+arch dungeon_floor
 x 3
 y 14
 end
@@ -461,7 +462,7 @@ arch grass
 x 4
 y 6
 end
-arch grass
+arch dungeon_floor
 x 4
 y 7
 end
@@ -469,7 +470,7 @@ arch wwall_2_2_2
 x 4
 y 7
 end
-arch grass
+arch dungeon_floor
 x 4
 y 8
 end
@@ -497,7 +498,7 @@ arch shop_gems
 x 4
 y 13
 end
-arch grass
+arch dungeon_floor
 x 4
 y 14
 end
@@ -505,7 +506,7 @@ arch wwall_2_2_3
 x 4
 y 14
 end
-arch grass
+arch dungeon_floor
 x 4
 y 15
 end
@@ -572,7 +573,7 @@ arch grass
 x 5
 y 5
 end
-arch grass
+arch dungeon_floor
 x 5
 y 6
 end
@@ -580,7 +581,7 @@ arch wwall_2_2_2
 x 5
 y 6
 end
-arch grass
+arch dungeon_floor
 x 5
 y 7
 end
@@ -616,7 +617,7 @@ arch shop_gems
 x 5
 y 14
 end
-arch grass
+arch dungeon_floor
 x 5
 y 15
 end
@@ -624,7 +625,7 @@ arch wwall_2_2_3
 x 5
 y 15
 end
-arch grass
+arch dungeon_floor
 x 5
 y 16
 end
@@ -683,7 +684,7 @@ arch grass
 x 6
 y 4
 end
-arch grass
+arch dungeon_floor
 x 6
 y 5
 end
@@ -691,7 +692,7 @@ arch wwall_2_2_2
 x 6
 y 5
 end
-arch grass
+arch dungeon_floor
 x 6
 y 6
 end
@@ -739,7 +740,7 @@ arch shop_gems
 x 6
 y 15
 end
-arch grass
+arch dungeon_floor
 x 6
 y 16
 end
@@ -747,7 +748,7 @@ arch wwall_2_2_3
 x 6
 y 16
 end
-arch grass
+arch dungeon_floor
 x 6
 y 17
 end
@@ -802,7 +803,7 @@ arch grass
 x 7
 y 4
 end
-arch grass
+arch dungeon_floor
 x 7
 y 5
 end
@@ -866,7 +867,7 @@ arch shop_gems
 x 7
 y 16
 end
-arch grass
+arch dungeon_floor
 x 7
 y 17
 end
@@ -874,7 +875,7 @@ arch wwall_2_2_3
 x 7
 y 17
 end
-arch grass
+arch dungeon_floor
 x 7
 y 18
 end
@@ -925,7 +926,7 @@ arch brush
 x 8
 y 4
 end
-arch grass
+arch dungeon_floor
 x 8
 y 5
 end
@@ -997,7 +998,11 @@ arch shop_gems
 x 8
 y 17
 end
-arch grass
+arch dungeon_floor
+x 8
+y 18
+end
+arch swall_1_4_half
 x 8
 y 18
 end
@@ -1005,7 +1010,7 @@ arch wwall_2_2_3
 x 8
 y 18
 end
-arch grass
+arch dungeon_floor
 x 8
 y 19
 end
@@ -1052,7 +1057,7 @@ arch grass
 x 9
 y 4
 end
-arch grass
+arch dungeon_floor
 x 9
 y 5
 end
@@ -1128,7 +1133,7 @@ arch swall_2_1_2
 x 9
 y 18
 end
-arch grass
+arch dungeon_floor
 x 9
 y 19
 end
@@ -1136,7 +1141,7 @@ arch wwall_2_2_3
 x 9
 y 19
 end
-arch grass
+arch dungeon_floor
 x 9
 y 20
 end
@@ -1179,7 +1184,7 @@ arch evergreens
 x 10
 y 4
 end
-arch grass
+arch dungeon_floor
 x 10
 y 5
 end
@@ -1203,7 +1208,7 @@ arch shop_empty
 x 10
 y 9
 end
-arch swall_2_1_2
+arch swall_1_3
 x 10
 y 9
 end
@@ -1262,8 +1267,7 @@ end
 arch woman
 msg
 @match *
-Hi, welcome to the jewery shop,
-Flawless Beauty!.
+Hi, welcome to the jewery shop, Flawless Beauty!
 endmsg
 face woman.131
 hp 180
@@ -1272,7 +1276,7 @@ y 19
 friendly 1
 unaggressive 0
 end
-arch grass
+arch dungeon_floor
 x 10
 y 20
 end
@@ -1280,7 +1284,7 @@ arch wwall_2_2_3
 x 10
 y 20
 end
-arch grass
+arch dungeon_floor
 x 10
 y 21
 end
@@ -1319,7 +1323,7 @@ arch evergreens
 x 11
 y 4
 end
-arch grass
+arch dungeon_floor
 x 11
 y 5
 end
@@ -1402,19 +1406,11 @@ end
 arch door_look_1
 x 11
 y 21
-no_pass 0
-end
-arch grass
-x 11
-y 22
+move_block 0
 end
 arch cobblestones
 x 11
 y 22
-end
-arch grass
-x 11
-y 23
 end
 arch cobblestones
 x 11
@@ -1450,7 +1446,7 @@ arch evergreens
 x 12
 y 4
 end
-arch grass
+arch dungeon_floor
 x 12
 y 5
 end
@@ -1537,19 +1533,11 @@ end
 arch door_look_1
 x 12
 y 21
-no_pass 0
-end
-arch grass
-x 12
-y 22
+move_block 0
 end
 arch cobblestones
 x 12
 y 22
-end
-arch grass
-x 12
-y 23
 end
 arch cobblestones
 x 12
@@ -1585,7 +1573,7 @@ arch grass
 x 13
 y 4
 end
-arch grass
+arch dungeon_floor
 x 13
 y 5
 end
@@ -1609,7 +1597,7 @@ arch shop_empty
 x 13
 y 9
 end
-arch swall_2_1_2
+arch swall_1_4
 x 13
 y 9
 end
@@ -1673,7 +1661,7 @@ arch shop_mat
 x 13
 y 19
 end
-arch grass
+arch dungeon_floor
 x 13
 y 20
 end
@@ -1681,7 +1669,7 @@ arch wwall_2_2_2
 x 13
 y 20
 end
-arch grass
+arch dungeon_floor
 x 13
 y 21
 end
@@ -1729,7 +1717,7 @@ arch grass
 x 14
 y 4
 end
-arch grass
+arch dungeon_floor
 x 14
 y 5
 end
@@ -1805,7 +1793,7 @@ arch swall_2_1_2
 x 14
 y 18
 end
-arch grass
+arch dungeon_floor
 x 14
 y 19
 end
@@ -1813,7 +1801,7 @@ arch wwall_2_2_2
 x 14
 y 19
 end
-arch grass
+arch dungeon_floor
 x 14
 y 20
 end
@@ -1856,7 +1844,7 @@ arch evergreens
 x 15
 y 4
 end
-arch grass
+arch dungeon_floor
 x 15
 y 5
 end
@@ -1928,7 +1916,7 @@ arch shop_gems
 x 15
 y 17
 end
-arch grass
+arch dungeon_floor
 x 15
 y 18
 end
@@ -1936,7 +1924,11 @@ arch wwall_2_2_2
 x 15
 y 18
 end
-arch grass
+arch swall_1_3_half
+x 15
+y 18
+end
+arch dungeon_floor
 x 15
 y 19
 end
@@ -1983,7 +1975,7 @@ arch evergreens
 x 16
 y 4
 end
-arch grass
+arch dungeon_floor
 x 16
 y 5
 end
@@ -2047,7 +2039,7 @@ arch shop_gems
 x 16
 y 16
 end
-arch grass
+arch dungeon_floor
 x 16
 y 17
 end
@@ -2055,7 +2047,7 @@ arch wwall_2_2_2
 x 16
 y 17
 end
-arch grass
+arch dungeon_floor
 x 16
 y 18
 end
@@ -2106,7 +2098,7 @@ arch evergreens
 x 17
 y 4
 end
-arch grass
+arch dungeon_floor
 x 17
 y 5
 end
@@ -2114,7 +2106,7 @@ arch wwall_2_2_3
 x 17
 y 5
 end
-arch grass
+arch dungeon_floor
 x 17
 y 6
 end
@@ -2162,7 +2154,7 @@ arch shop_gems
 x 17
 y 15
 end
-arch grass
+arch dungeon_floor
 x 17
 y 16
 end
@@ -2170,7 +2162,7 @@ arch wwall_2_2_2
 x 17
 y 16
 end
-arch grass
+arch dungeon_floor
 x 17
 y 17
 end
@@ -2229,7 +2221,7 @@ arch grass
 x 18
 y 5
 end
-arch grass
+arch dungeon_floor
 x 18
 y 6
 end
@@ -2237,7 +2229,7 @@ arch wwall_2_2_3
 x 18
 y 6
 end
-arch grass
+arch dungeon_floor
 x 18
 y 7
 end
@@ -2273,7 +2265,7 @@ arch shop_gems
 x 18
 y 14
 end
-arch grass
+arch dungeon_floor
 x 18
 y 15
 end
@@ -2281,7 +2273,7 @@ arch wwall_2_2_2
 x 18
 y 15
 end
-arch grass
+arch dungeon_floor
 x 18
 y 16
 end
@@ -2348,7 +2340,7 @@ arch evergreens
 x 19
 y 6
 end
-arch grass
+arch dungeon_floor
 x 19
 y 7
 end
@@ -2356,7 +2348,7 @@ arch wwall_2_2_3
 x 19
 y 7
 end
-arch grass
+arch dungeon_floor
 x 19
 y 8
 end
@@ -2384,7 +2376,7 @@ arch shop_gems
 x 19
 y 13
 end
-arch grass
+arch dungeon_floor
 x 19
 y 14
 end
@@ -2392,7 +2384,7 @@ arch wwall_2_2_2
 x 19
 y 14
 end
-arch grass
+arch dungeon_floor
 x 19
 y 15
 end
@@ -2467,7 +2459,7 @@ arch grass
 x 20
 y 7
 end
-arch grass
+arch dungeon_floor
 x 20
 y 8
 end
@@ -2475,7 +2467,7 @@ arch wwall_2_2_3
 x 20
 y 8
 end
-arch grass
+arch dungeon_floor
 x 20
 y 9
 end
@@ -2495,7 +2487,7 @@ arch shop_gems
 x 20
 y 12
 end
-arch grass
+arch dungeon_floor
 x 20
 y 13
 end
@@ -2503,7 +2495,7 @@ arch wwall_2_2_2
 x 20
 y 13
 end
-arch grass
+arch dungeon_floor
 x 20
 y 14
 end
@@ -2586,7 +2578,7 @@ arch evergreens
 x 21
 y 8
 end
-arch grass
+arch dungeon_floor
 x 21
 y 9
 end
@@ -2594,7 +2586,7 @@ arch wwall_2_2_3
 x 21
 y 9
 end
-arch grass
+arch dungeon_floor
 x 21
 y 10
 end
@@ -2606,7 +2598,7 @@ arch shop_gems
 x 21
 y 11
 end
-arch grass
+arch dungeon_floor
 x 21
 y 12
 end
@@ -2614,7 +2606,7 @@ arch wwall_2_2_2
 x 21
 y 12
 end
-arch grass
+arch dungeon_floor
 x 21
 y 13
 end
@@ -2705,7 +2697,7 @@ arch grass
 x 22
 y 9
 end
-arch grass
+arch dungeon_floor
 x 22
 y 10
 end
@@ -2713,7 +2705,7 @@ arch wwall_2_2_3
 x 22
 y 10
 end
-arch grass
+arch dungeon_floor
 x 22
 y 11
 end
@@ -2721,7 +2713,7 @@ arch wwall_win1
 x 22
 y 11
 end
-arch grass
+arch dungeon_floor
 x 22
 y 12
 end

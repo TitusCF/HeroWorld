@@ -1,13 +1,15 @@
 arch map
+name Kira's Place
+difficulty 1
 region pupland
-name Kira
+width 14
+height 11
+enter_x 12
+enter_y 5
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sat Feb 10 02:31:17 1996
+Created:  1996-02-10
+Modified: 2012-03-08 Rick Tanner
 endmsg
-x 14
-y 11
 end
 arch grass
 end
@@ -190,14 +192,9 @@ arch woman2
 name Kira
 msg
 @match griffin
-Do you know Jake Griffin? He used to
-be a great military officer. Now he
-lives in the next house. He knows
-stories about old treasures. If you're
-seeking adventures you must visit him.
+Do you know Jake Griffin?  He used to be a great military officer.  Now he lives in the house next door.  If you're seeking adventure, you must visit him.  He knows stories about old treasures.
 @match hi|hello
-Hello! Are you hungry? There's some
-food in the other room.
+Hello! Are you hungry?  There's some food in the other room.
 @match *
 Welcome to my house.
 endmsg
@@ -401,8 +398,8 @@ level 0
 type 0
 material 0
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 pass_thru 0
 end
 arch woodfloor
@@ -696,8 +693,8 @@ name statue of viking
 face viking.151
 x 8
 y 5
-can_roll 1
 move_type 1
+can_roll 1
 end
 arch woodfloor
 x 8
@@ -838,8 +835,8 @@ level 0
 type 0
 material 0
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 pass_thru 0
 end
 arch woodfloor

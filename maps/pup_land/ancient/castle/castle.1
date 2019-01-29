@@ -1,14 +1,15 @@
 arch map
+name Gothwolte's Castle, Entrance
+difficulty 80
 region ancientpupland
-name castle
+width 32
+height 32
+enter_x 15
+enter_y 30
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sat Jun  8 02:44:40 1996
+Created:  1996-06-08
+Modified: 2012-02-22 Rick Tanner
 endmsg
-x 32
-y 32
-level 5
 end
 arch brush
 end
@@ -863,8 +864,8 @@ name huge clock
 x 4
 y 16
 value 0
+move_block all
 no_pick 1
-no_pass 1
 end
 arch marble
 x 4
@@ -1404,6 +1405,193 @@ arch grassmedium
 name aweful mess
 x 7
 y 10
+end
+arch slug
+name Surtur, Slug of Terror
+Str 50
+Dex 30
+Con 40
+Wis 30
+Pow 30
+Int 30
+hp 30000
+maxhp 30000
+sp 1000
+maxsp 1000
+exp 10000000
+dam 60
+wc -100
+ac -120
+x 7
+y 10
+speed 0.5
+speed_left -2.100000
+level 100
+attacktype 4588873
+resist_physical 80
+resist_magic 30
+resist_electricity 100
+resist_weaponmagic 30
+resist_ghosthit 100
+resist_poison 100
+resist_slow -100
+resist_paralyze 100
+resist_deplete 100
+resist_death 100
+resist_godpower 100
+carrying 15100
+see_invisible 1
+run_away 3
+can_cast_spell 1
+sleep 0
+can_see_in_dark 1
+arch spell_bullet_swarm
+end
+arch spell_cause_heavy_wounds
+end
+arch spell_ball_lightning
+end
+arch spell_regenerate_spellpoints
+end
+arch ant_larvae
+name main piece of Surtur
+race unnatural
+Str 60
+Dex 30
+Con 40
+Wis 30
+Pow 40
+Int 30
+hp 20000
+maxhp 30000
+sp 1000
+maxsp 1000
+exp 5000000
+dam 110
+wc -80
+ac -127
+speed 0.1
+level 110
+attacktype 257
+resist_physical 0
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_acid 100
+resist_poison 100
+resist_paralyze 100
+resist_deplete 100
+resist_death 100
+resist_chaos 100
+resist_godpower 100
+carrying 100
+generator 0
+see_invisible 1
+is_used_up 0
+can_cast_spell 1
+can_use_skill 1
+can_see_in_dark 1
+arch key2
+name eye of Surtur
+slaying slime_seal
+face eye.111
+end
+arch spell_comet
+end
+arch spell_major_healing
+end
+arch spell_regenerate_spellpoints
+end
+end
+arch ant_larvae
+name short piece of Surtur
+race unnatural
+Str 70
+Dex 60
+Con 40
+Wis 40
+Pow 40
+Int 30
+hp 20000
+maxhp 30000
+sp 1000
+maxsp 1000
+exp 5000000
+dam 100
+wc -80
+ac -120
+speed 0.1
+level 110
+attacktype 1048705
+resist_physical 99
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_drain 100
+resist_weaponmagic 100
+resist_poison 100
+resist_deplete 100
+resist_chaos 100
+resist_godpower 100
+generator 0
+see_invisible 1
+is_used_up 0
+can_cast_spell 1
+can_see_in_dark 1
+arch spell_major_healing
+end
+arch spell_regenerate_spellpoints
+end
+arch spell_magic_missile
+end
+end
+arch ant_larvae
+name ugly piece of Surtur
+race unnatural
+Str 80
+Dex 60
+Con 60
+Wis 90
+Pow 90
+Int 30
+hp 20000
+maxhp 30000
+sp 1000
+maxsp 1000
+exp 5000000
+dam 100
+wc -120
+ac -120
+speed 0.1
+level 130
+attacktype 1089
+resist_physical 95
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_drain 100
+resist_weaponmagic 100
+resist_deplete 100
+resist_death 100
+resist_chaos 100
+resist_godpower 100
+generator 0
+see_invisible 1
+is_used_up 0
+hitback 1
+can_cast_spell 1
+can_use_skill 1
+can_see_in_dark 1
+arch spell_major_healing
+end
+arch spell_regenerate_spellpoints
+end
+arch spell_poison_cloud
+end
+end
 end
 arch swamp
 name slime
@@ -3043,7 +3231,6 @@ arch igate_closed_1
 x 15
 y 17
 speed 0.500000
-protected 1
 connected 1
 end
 arch marble
@@ -3073,8 +3260,7 @@ end
 arch locked_door1
 slaying cordish
 msg
-This door was locked by Siegfried.
-It shall never be opened again! 
+This door was locked by Siegfried.  It shall never be opened again!
 endmsg
 x 15
 y 22
@@ -3223,7 +3409,6 @@ arch igate_closed_1
 x 16
 y 17
 speed 0.500000
-protected 1
 connected 1
 end
 arch marble
@@ -3253,8 +3438,7 @@ end
 arch locked_door1
 slaying cordish
 msg
-This door was locked by Siegfried.
-It shall never be opened again! 
+This door was locked by Siegfried.  It shall never be opened again!
 endmsg
 x 16
 y 22
@@ -3364,9 +3548,7 @@ y 8
 end
 arch magic_mouth
 msg
-Buah! It smells awful at this place.
-You hear some weird noise from the
-other room...  
+Buah! It smells awful at this place.  You hear some weird noise from the other room...
 endmsg
 x 17
 y 9
@@ -3418,7 +3600,6 @@ end
 arch trigger
 x 17
 y 16
-protected 1
 connected 1
 end
 arch marble
@@ -3431,9 +3612,7 @@ y 17
 end
 arch magic_mouth
 msg
-You feel that something is wrong about
-this place...  Something must have
-changed since Cordish left...
+You feel that something is wrong about this place...  Something must have changed since Cordish left...
 endmsg
 x 17
 y 18
@@ -3445,7 +3624,6 @@ end
 arch trigger
 x 17
 y 18
-protected 1
 connected 1
 end
 arch marble
@@ -3589,8 +3767,7 @@ y 12
 end
 arch magic_mouth
 msg
-You don't know what is going on here,
-but it must be something terrible! 
+You don't know what is going on here, but it must be something terrible!
 endmsg
 x 18
 y 13
@@ -3602,7 +3779,6 @@ end
 arch button_handle
 x 18
 y 13
-protected 2
 connected 2
 end
 arch marble
@@ -3808,7 +3984,6 @@ arch gate_closed_2
 x 19
 y 14
 speed 0.500000
-protected 2
 connected 2
 end
 arch marble
@@ -4017,7 +4192,6 @@ end
 arch button_handle
 x 20
 y 13
-protected 2
 connected 2
 end
 arch marble
@@ -4296,12 +4470,7 @@ end
 arch note
 name delivery note
 msg
-The article "Surtur, Slug of Terror"
-(ordering no. 14625) has been
-delivered to Mr. Gothwolte
-successfully. Payment of dark souls
-will be executed, as always, via
-dimension-portal.  
+The article "Surtur, Slug of Terror" (ordering no. 14625) has been delivered to Mr. Gothwolte successfully.  Payment of dark souls will be executed, as always, via dimension-portal.
 endmsg
 x 21
 y 26
@@ -4727,8 +4896,7 @@ end
 arch locked_door2
 slaying evil_master_key1
 msg
-You need the evil master's key to open
-this door.
+You need the evil master's key to open this door.
 endmsg
 face ldoor_brown2.111
 x 24
@@ -6176,162 +6344,4 @@ end
 arch brush
 x 31
 y 31
-end
-arch slug
-name Surtur, Slug of Terror
-Str 50
-Dex 30
-Con 40
-Wis 30
-Pow 30
-Int 30
-hp 30000
-maxhp 30000
-sp 1000
-maxsp 1000
-exp 10000000
-dam 60
-wc -100
-ac -120
-armour 80
-x 7
-y 10
-speed 0.500000
-speed_left -2.100000
-level 100
-immune 1201736
-protected 259
-attacktype 4588873
-vulnerable 2048
-carrying 15100
-run_away 3
-see_invisible 1
-can_cast_spell 1
-sleep 0
-can_see_in_dark 1
-arch spell_bullet_swarm
-end
-arch spell_cause_heavy_wounds
-end
-arch spell_ball_lightning
-end
-arch spell_regenerate_spellpoints
-end
-arch ant_larvae
-name main piece of Surtur
-race unnatural
-Str 60
-Dex 30
-Con 40
-Wis 30
-Pow 40
-Int 30
-hp 20000
-maxhp 30000
-sp 1000
-maxsp 1000
-exp 5000000
-dam 110
-wc -80
-ac -127
-armour 0
-speed 0.100000
-level 110
-immune 1512543
-protected 0
-attacktype 257
-vulnerable 0
-carrying 100
-generator 0
-see_invisible 1
-is_used_up 0
-can_cast_spell 1
-can_use_skill 1
-can_see_in_dark 1
-arch key2
-name eye of Surtur
-slaying slime_seal
-face eye.111
-end
-arch spell_comet
-end
-arch spell_major_healing
-end
-arch spell_regenerate_spellpoints
-end
-end
-arch ant_larvae
-name short piece of Surtur
-race unnatural
-Str 70
-Dex 60
-Con 40
-Wis 40
-Pow 40
-Int 30
-hp 20000
-maxhp 30000
-sp 1000
-maxsp 1000
-exp 5000000
-dam 100
-wc -80
-ac -120
-armour 99
-speed 0.100000
-level 110
-immune 1377694
-protected 0
-attacktype 1048705
-vulnerable 0
-generator 0
-see_invisible 1
-is_used_up 0
-can_cast_spell 1
-can_see_in_dark 1
-arch spell_major_healing
-end
-arch spell_regenerate_spellpoints
-end
-arch spell_magic_missile
-end
-end
-arch ant_larvae
-name ugly piece of Surtur
-race unnatural
-Str 80
-Dex 60
-Con 60
-Wis 90
-Pow 90
-Int 30
-hp 20000
-maxhp 30000
-sp 1000
-maxsp 1000
-exp 5000000
-dam 100
-wc -120
-ac -120
-armour 95
-speed 0.100000
-level 130
-immune 1507743
-protected 0
-attacktype 1089
-vulnerable 0
-generator 0
-see_invisible 1
-is_used_up 0
-hitback 1
-can_cast_spell 1
-can_use_skill 1
-can_see_in_dark 1
-arch spell_major_healing
-end
-arch spell_regenerate_spellpoints
-end
-arch spell_poison_cloud
-end
-end
 end

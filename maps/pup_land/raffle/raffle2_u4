@@ -1,72 +1,56 @@
 arch map
+name Raffle 2, Level 4
+swap_time 5
+reset_timeout 3600
+difficulty 30
 region pupland
-name raffle2_u4
+width 25
+height 23
+enter_x 23
+enter_y 21
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sat Apr  5 04:02:08 1997
+Created:  1997-04-05
+Modified: 2012-03-04 Rick Tanner
 endmsg
-x 25
-y 23
-value 5
-weight 3600
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 end
 arch fog
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 y 1
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 y 2
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 y 3
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 y 4
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 y 5
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 y 6
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 y 7
 end
-arch blocked
+arch sky
 y 8
 end
-arch blocked
+arch cave11
+y 8
+end
+arch cave_15
 y 9
 end
-arch blocked
+arch cave_15
 y 10
 end
-arch cobblestones2
-name sky
-face blake_F.111
-y 11
-end
-arch cave6
+arch cave_15
 y 11
 end
 arch flagstone
@@ -135,57 +119,45 @@ end
 arch mine4
 y 22
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 1
 end
 arch fog
 x 1
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 1
 y 1
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 1
 y 2
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 1
 y 3
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 1
 y 4
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 1
 y 5
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 1
 y 6
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 1
 y 7
 end
-arch blocked
+arch sky
+x 1
+y 8
+end
+arch cave2
 x 1
 y 8
 end
@@ -205,13 +177,7 @@ x 1
 y 10
 connected 11
 end
-arch cobblestones2
-name sky
-face blake_F.111
-x 1
-y 11
-end
-arch cave2
+arch cave_15
 x 1
 y 11
 end
@@ -326,38 +292,26 @@ arch mine2
 x 1
 y 22
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 2
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 2
 y 1
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 2
 y 2
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 2
 y 3
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 2
 y 4
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 2
 y 5
 end
@@ -365,31 +319,35 @@ arch fog
 x 2
 y 5
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 2
 y 6
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 2
 y 7
 end
-arch blocked
+arch sky
 x 2
 y 8
 end
-arch blocked
+arch cave12
+x 2
+y 8
+end
+arch sky
 x 2
 y 9
 end
-arch blocked
+arch cave3
+x 2
+y 9
+end
+arch cave23
 x 2
 y 10
 end
-arch cave20
+arch cave_15
 x 2
 y 11
 end
@@ -501,38 +459,26 @@ arch mine2
 x 2
 y 22
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 3
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 3
 y 1
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 3
 y 2
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 3
 y 3
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 3
 y 4
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 3
 y 5
 end
@@ -540,27 +486,19 @@ arch fog
 x 3
 y 5
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 3
 y 6
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 3
 y 7
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 3
 y 8
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 3
 y 9
 end
@@ -572,7 +510,7 @@ arch cave22
 x 3
 y 10
 end
-arch blocked
+arch cave_15
 x 3
 y 11
 end
@@ -676,62 +614,42 @@ arch mine13
 x 3
 y 22
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 4
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 4
 y 1
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 4
 y 2
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 4
 y 3
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 4
 y 4
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 4
 y 5
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 4
 y 6
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 4
 y 7
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 4
 y 8
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 4
 y 9
 end
@@ -739,11 +657,11 @@ arch cave2
 x 4
 y 9
 end
-arch blocked
+arch cave_15
 x 4
 y 10
 end
-arch blocked
+arch cave_15
 x 4
 y 11
 end
@@ -846,8 +764,7 @@ end
 arch locked_door2
 slaying raffle2_warrior_door
 msg
-You need the Warrior's key to open
-this door.
+You need the Warrior's key to open this door.
 endmsg
 x 4
 y 20
@@ -872,56 +789,38 @@ arch mine13
 x 4
 y 22
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 5
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 5
 y 1
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 5
 y 2
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 5
 y 3
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 5
 y 4
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 5
 y 5
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 5
 y 6
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 5
 y 7
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 5
 y 8
 end
@@ -941,7 +840,7 @@ arch flagstone
 x 5
 y 10
 end
-arch blocked
+arch cave_15
 x 5
 y 10
 end
@@ -949,7 +848,7 @@ arch flagstone
 x 5
 y 11
 end
-arch blocked
+arch cave_15
 x 5
 y 11
 end
@@ -1079,56 +978,38 @@ arch mine2
 x 5
 y 22
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 6
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 6
 y 1
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 6
 y 2
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 6
 y 3
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 6
 y 4
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 6
 y 5
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 6
 y 6
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 6
 y 7
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 6
 y 8
 end
@@ -1278,26 +1159,18 @@ arch mine2
 x 6
 y 22
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 7
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 7
 y 1
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 7
 y 2
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 7
 y 3
 end
@@ -1305,45 +1178,33 @@ arch dungeon_magic
 x 7
 y 4
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 7
 y 4
-no_pass 1
 end
 arch dungeon_magic
 x 7
 y 5
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 7
 y 5
-no_pass 1
 end
 arch dungeon_magic
 x 7
 y 6
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 7
 y 6
-no_pass 1
 end
 arch dungeon_magic
 x 7
 y 7
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 7
 y 7
-no_pass 1
 end
 arch dungeon_magic
 x 7
@@ -1497,29 +1358,21 @@ arch mine2
 x 7
 y 22
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 8
 end
 arch fog
 x 8
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 8
 y 1
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 8
 y 2
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 8
 y 3
 end
@@ -1527,16 +1380,11 @@ arch dungeon_magic
 x 8
 y 4
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 8
 y 4
-no_pass 1
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 8
 y 5
 end
@@ -1544,9 +1392,7 @@ arch pier_2_2_2
 x 8
 y 5
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 8
 y 6
 end
@@ -1554,9 +1400,7 @@ arch pier_3_2
 x 8
 y 6
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 8
 y 7
 end
@@ -1720,29 +1564,21 @@ arch mine2
 x 8
 y 22
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 9
 end
 arch fog
 x 9
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 9
 y 1
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 9
 y 2
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 9
 y 3
 end
@@ -1750,16 +1586,11 @@ arch dungeon_magic
 x 9
 y 4
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 9
 y 4
-no_pass 1
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 9
 y 5
 end
@@ -1767,9 +1598,7 @@ arch pier_3_3
 x 9
 y 5
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 9
 y 6
 end
@@ -1777,9 +1606,7 @@ arch pier_4
 x 9
 y 6
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 9
 y 7
 end
@@ -1820,7 +1647,7 @@ y 10
 end
 arch magic_ear
 msg
-@match FORCE|force|Force
+@match force
 Click.
 endmsg
 x 9
@@ -1954,54 +1781,38 @@ arch mine2
 x 9
 y 22
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 10
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 10
 y 1
-no_pass 1
 end
 arch dungeon_magic
 x 10
 y 2
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 10
 y 2
-no_pass 1
 end
 arch dungeon_magic
 x 10
 y 3
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 10
 y 3
-no_pass 1
 end
 arch dungeon_magic
 x 10
 y 4
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 10
 y 4
-no_pass 1
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 10
 y 5
 end
@@ -2009,9 +1820,7 @@ arch pier_2_2_3
 x 10
 y 5
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 10
 y 6
 end
@@ -2019,9 +1828,7 @@ arch pier_3_4
 x 10
 y 6
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 10
 y 7
 end
@@ -2175,27 +1982,23 @@ arch mine2
 x 10
 y 22
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 11
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 11
 y 1
-no_pass 1
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 11
 y 2
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch dragon_exit
+name To Office.
+x 11
+y 2
+end
+arch sky
 x 11
 y 3
 end
@@ -2203,34 +2006,25 @@ arch dungeon_magic
 x 11
 y 4
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 11
 y 4
-no_pass 1
 end
 arch dungeon_magic
 x 11
 y 5
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 11
 y 5
-no_pass 1
 end
 arch dungeon_magic
 x 11
 y 6
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 11
 y 6
-no_pass 1
 end
 arch swall_1_1_half
 x 11
@@ -2414,40 +2208,28 @@ arch mine2
 x 11
 y 22
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 12
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 12
 y 1
-no_pass 1
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 12
 y 2
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 12
 y 3
 end
 arch dog
 name Pip the administrator
 msg
-@match password|PASSWORD
-Huh? You ought to find it
-on the undead's floor.
+@match password
+Huh? You ought to find it on the undead's floor.
 @match *
-Congratulation!!!
-You've obtained the right to draw
-raffle #2!
+Congratulations!!! You've obtained the right to draw raffle #2!
 endmsg
 Con 100
 hp 10000
@@ -2455,9 +2237,7 @@ maxhp 10000
 x 12
 y 3
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 12
 y 4
 end
@@ -2465,9 +2245,7 @@ arch pier_1_1
 x 12
 y 4
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 12
 y 5
 end
@@ -2475,9 +2253,7 @@ arch pier_2_1_1
 x 12
 y 5
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 12
 y 6
 end
@@ -2683,27 +2459,18 @@ arch mine2
 x 12
 y 22
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 13
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 13
 y 1
-no_pass 1
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 13
 y 2
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 13
 y 3
 end
@@ -2711,34 +2478,25 @@ arch dungeon_magic
 x 13
 y 4
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 13
 y 4
-no_pass 1
 end
 arch dungeon_magic
 x 13
 y 5
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 13
 y 5
-no_pass 1
 end
 arch dungeon_magic
 x 13
 y 6
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 13
 y 6
-no_pass 1
 end
 arch swall_1_1_half
 x 13
@@ -2902,54 +2660,38 @@ arch mine2
 x 13
 y 22
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 14
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 14
 y 1
-no_pass 1
 end
 arch dungeon_magic
 x 14
 y 2
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 14
 y 2
-no_pass 1
 end
 arch dungeon_magic
 x 14
 y 3
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 14
 y 3
-no_pass 1
 end
 arch dungeon_magic
 x 14
 y 4
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 14
 y 4
-no_pass 1
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 14
 y 5
 end
@@ -2957,9 +2699,7 @@ arch pier_2_2_2
 x 14
 y 5
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 14
 y 6
 end
@@ -3095,29 +2835,21 @@ arch mine2
 x 14
 y 22
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 15
 end
 arch fog
 x 15
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 15
 y 1
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 15
 y 2
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 15
 y 3
 end
@@ -3125,16 +2857,11 @@ arch dungeon_magic
 x 15
 y 4
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 15
 y 4
-no_pass 1
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 15
 y 5
 end
@@ -3142,9 +2869,7 @@ arch pier_3_3
 x 15
 y 5
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 15
 y 6
 end
@@ -3152,9 +2877,7 @@ arch pier_4
 x 15
 y 6
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 15
 y 7
 end
@@ -3183,7 +2906,7 @@ y 10
 end
 arch magic_ear
 msg
-@match ALLOW|allow|Allow
+@match allow
 Click.
 endmsg
 x 15
@@ -3281,29 +3004,21 @@ arch mine2
 x 15
 y 22
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 16
 end
 arch fog
 x 16
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 16
 y 1
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 16
 y 2
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 16
 y 3
 end
@@ -3311,16 +3026,11 @@ arch dungeon_magic
 x 16
 y 4
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 16
 y 4
-no_pass 1
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 16
 y 5
 end
@@ -3328,9 +3038,7 @@ arch pier_2_2_3
 x 16
 y 5
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 16
 y 6
 end
@@ -3464,26 +3172,18 @@ arch mine2
 x 16
 y 22
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 17
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 17
 y 1
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 17
 y 2
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 17
 y 3
 end
@@ -3491,53 +3191,39 @@ arch dungeon_magic
 x 17
 y 4
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 17
 y 4
-no_pass 1
 end
 arch dungeon_magic
 x 17
 y 5
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 17
 y 5
-no_pass 1
 end
 arch dungeon_magic
 x 17
 y 6
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 17
 y 6
-no_pass 1
 end
 arch dungeon_magic
 x 17
 y 7
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 17
 y 7
-no_pass 1
 end
 arch dungeon_magic
 x 17
 y 8
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 17
 y 8
 end
@@ -3645,56 +3331,38 @@ arch mine2
 x 17
 y 22
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 18
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 18
 y 1
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 18
 y 2
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 18
 y 3
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 18
 y 4
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 18
 y 5
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 18
 y 6
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 18
 y 7
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 18
 y 8
 end
@@ -3836,56 +3504,38 @@ arch mine2
 x 18
 y 22
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 19
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 19
 y 1
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 19
 y 2
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 19
 y 3
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 19
 y 4
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 19
 y 5
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 19
 y 6
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 19
 y 7
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 19
 y 8
 end
@@ -3901,7 +3551,7 @@ arch flagstone
 x 19
 y 10
 end
-arch blocked
+arch cave_15
 x 19
 y 10
 end
@@ -3909,7 +3559,7 @@ arch flagstone
 x 19
 y 11
 end
-arch blocked
+arch cave_15
 x 19
 y 11
 end
@@ -4015,59 +3665,41 @@ arch mine2
 x 19
 y 22
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 20
 end
 arch fog
 x 20
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 20
 y 1
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 20
 y 2
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 20
 y 3
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 20
 y 4
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 20
 y 5
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 20
 y 6
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 20
 y 7
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 20
 y 8
 end
@@ -4083,7 +3715,7 @@ arch flagstone
 x 20
 y 10
 end
-arch blocked
+arch cave_15
 x 20
 y 10
 end
@@ -4091,7 +3723,7 @@ arch flagstone
 x 20
 y 11
 end
-arch blocked
+arch cave_15
 x 20
 y 11
 end
@@ -4182,8 +3814,7 @@ end
 arch locked_door2
 slaying raffle2_wizard_door
 msg
-You need the Wizard's key to open
-this door.
+You need the Wizard's key to open this door.
 endmsg
 x 20
 y 20
@@ -4208,41 +3839,29 @@ arch mine13
 x 20
 y 22
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 21
 end
 arch fog
 x 21
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 21
 y 1
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 21
 y 2
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 21
 y 3
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 21
 y 4
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 21
 y 5
 end
@@ -4250,21 +3869,15 @@ arch fog
 x 21
 y 5
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 21
 y 6
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 21
 y 7
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 21
 y 8
 end
@@ -4276,7 +3889,7 @@ arch cave23
 x 21
 y 9
 end
-arch blocked
+arch cave_15
 x 21
 y 10
 end
@@ -4284,7 +3897,7 @@ arch flagstone
 x 21
 y 11
 end
-arch blocked
+arch cave_15
 x 21
 y 11
 end
@@ -4364,38 +3977,26 @@ arch mine13
 x 21
 y 22
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 22
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 22
 y 1
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 22
 y 2
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 22
 y 3
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 22
 y 4
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 22
 y 5
 end
@@ -4403,37 +4004,31 @@ arch fog
 x 22
 y 5
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 22
 y 6
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 22
 y 7
 end
-arch blocked
+arch sky
 x 22
 y 8
 end
-arch blocked
+arch cave11
+x 22
+y 8
+end
+arch cave22
 x 22
 y 9
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch cave_15
 x 22
 y 10
 end
-arch cave3
-x 22
-y 10
-end
-arch cave23
+arch cave_15
 x 22
 y 11
 end
@@ -4521,54 +4116,42 @@ arch mine2
 x 22
 y 22
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 23
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 23
 y 1
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 23
 y 2
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 23
 y 3
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 23
 y 4
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 23
 y 5
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 23
 y 6
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 23
 y 7
 end
-arch blocked
+arch sky
+x 23
+y 8
+end
+arch cave2
 x 23
 y 8
 end
@@ -4588,7 +4171,7 @@ x 23
 y 10
 connected 21
 end
-arch cave22
+arch cave_15
 x 23
 y 11
 end
@@ -4675,66 +4258,54 @@ arch mine2
 x 23
 y 22
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 24
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 24
 y 1
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 24
 y 2
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 24
 y 3
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 24
 y 4
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 24
 y 5
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 24
 y 6
 end
-arch cobblestones2
-name sky
-face blake_F.111
+arch sky
 x 24
 y 7
 end
-arch blocked
+arch sky
 x 24
 y 8
 end
-arch blocked
+arch cave12
+x 24
+y 8
+end
+arch cave_15
 x 24
 y 9
 end
-arch blocked
+arch cave_15
 x 24
 y 10
 end
-arch blocked
+arch cave_15
 x 24
 y 11
 end
@@ -4829,9 +4400,4 @@ end
 arch mine12
 x 24
 y 22
-end
-arch dragon_exit
-name To Office.
-x 11
-y 2
 end

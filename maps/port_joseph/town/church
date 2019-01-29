@@ -1,10 +1,14 @@
 arch map
-region portjoesph
 name Church of Gabriel
+difficulty 8
+region portjoseph
+width 16
+height 16
+enter_x 3
+enter_y 14
 msg
-Creator: larry langley
-Email: langley@fermat.dartmouth.edu
-Date: Fri May 20, 1994
+Created:  1994-05-20 larry langley (langley@fermat.dartmouth.edu)
+Modified: 2012-02-21 Rick Tanner
 endmsg
 end
 arch cobblestones
@@ -124,7 +128,11 @@ arch cobblestones
 x 1
 y 6
 end
-arch wall_3_3
+arch wall_2_1_2
+x 1
+y 6
+end
+arch swall_1_1_half
 x 1
 y 6
 end
@@ -322,11 +330,7 @@ arch cobblestones
 x 3
 y 4
 end
-arch wall_2_2_3
-x 3
-y 4
-end
-arch wall_3_4
+arch wall_2_2_4
 x 3
 y 4
 end
@@ -367,37 +371,46 @@ arch cobblestones2
 x 3
 y 11
 end
-arch dungeon_floor
+arch t_rock
+name Stepping stone
 face glue.111
 x 3
 y 11
+no_pick 1
 end
 arch cobblestones2
 x 3
 y 12
 end
-arch dungeon_floor
+arch t_rock
+name Stepping stone
 face glue.111
 x 3
 y 12
+no_pick 1
 end
 arch cobblestones2
 x 3
 y 13
 end
-arch dungeon_floor
+arch t_rock
+name Stepping stone
 face glue.111
 x 3
 y 13
+no_pick 1
 end
 arch cobblestones2
 x 3
 y 14
 end
-arch dungeon_floor
+arch t_rock
+name Stepping stone
 face glue.111
 x 3
 y 14
+map_layer no_pick
+no_pick 1
 end
 arch ggate_open
 x 3
@@ -414,11 +427,6 @@ sp 32
 x 3
 y 15
 end
-arch dungeon_floor
-face glue.111
-x 3
-y 15
-end
 arch cobblestones
 x 4
 end
@@ -428,6 +436,25 @@ end
 arch cobblestones
 x 4
 y 1
+end
+arch bookshelf2
+x 4
+y 1
+arch quarto
+name Liturgical Manual
+name_pl Liturgical Manuals
+title of Gabriel
+msg
+The book is largely unused, judging by the number of pristine pages, but one near the back stands out as it appears smudged and stained through frequent use.
+...
+With th.s .o.., n..r.sh th. b.d. fo. ser..ce,
+Wit. t.i. .o..., v..d ..y m.n. .f a.. d...y. c.re.
+...
+endmsg
+level 3
+weight 500
+no_pick 1
+end
 end
 arch cobblestones
 x 4
@@ -476,19 +503,23 @@ arch cobblestones2
 x 4
 y 10
 end
-arch dungeon_floor
+arch t_rock
+name Stepping stone
 face glue.111
 x 4
 y 10
+no_pick 1
 end
 arch cobblestones2
 x 4
 y 11
 end
-arch dungeon_floor
+arch t_rock
+name Stepping stone
 face glue.111
 x 4
 y 11
+no_pick 1
 end
 arch grass
 x 4
@@ -556,19 +587,23 @@ arch cobblestones2
 x 5
 y 9
 end
-arch dungeon_floor
+arch t_rock
+name Stepping stone
 face glue.111
 x 5
 y 9
+no_pick 1
 end
 arch cobblestones2
 x 5
 y 10
 end
-arch dungeon_floor
+arch t_rock
+name Stepping stone
 face glue.111
 x 5
 y 10
+no_pick 1
 end
 arch grass
 x 5
@@ -648,19 +683,23 @@ arch cobblestones2
 x 6
 y 9
 end
-arch dungeon_floor
+arch t_rock
 face glue.111
 x 6
 y 9
+no_pick 1
+Name Stepping stone
 end
 arch cobblestones2
 x 6
 y 10
 end
-arch dungeon_floor
+arch t_rock
 face glue.111
 x 6
 y 10
+no_pick 1
+Name Stepping stone
 end
 arch grass
 x 6
@@ -715,7 +754,7 @@ end
 arch door_look_2
 x 7
 y 3
-no_pass 0
+move_block 0
 end
 arch cobblestones
 x 7
@@ -724,7 +763,7 @@ end
 arch door_look_2
 x 7
 y 4
-no_pass 0
+move_block 0
 end
 arch cobblestones
 x 7
@@ -765,7 +804,7 @@ end
 arch door_look_2
 x 7
 y 9
-no_pass 0
+move_block 0
 end
 arch cobblestones
 x 7
@@ -774,7 +813,7 @@ end
 arch door_look_2
 x 7
 y 10
-no_pass 0
+move_block 0
 end
 arch cobblestones
 x 7
@@ -804,7 +843,11 @@ arch cobblestones
 x 7
 y 14
 end
-arch wall_3_4
+arch wall_2_1_1
+x 7
+y 14
+end
+arch swall_1_3_half
 x 7
 y 14
 end
@@ -829,7 +872,7 @@ end
 arch statue
 name statue of an angel
 msg
-It is a statue of an angel
+It is a statue of an angel.
 endmsg
 face angel.111
 x 8
@@ -993,7 +1036,7 @@ y 1
 end
 arch magic_mouth
 msg
-This is my body
+This is my body.
 endmsg
 x 10
 y 2
@@ -1004,7 +1047,7 @@ y 2
 end
 arch altar
 msg
-You hear a distant grating soun
+You hear a distant grating sound.
 endmsg
 food 1
 x 10
@@ -1080,7 +1123,7 @@ end
 arch statue
 name Statue of the archangel Gabriel.
 msg
-It is a statue of Archangel Gabriel
+It is a statue of Archangel Gabriel.
 endmsg
 face angel.111
 x 11
@@ -1158,7 +1201,7 @@ y 1
 end
 arch magic_mouth
 msg
-This is my blood
+This is my blood.
 endmsg
 x 12
 y 2
@@ -1170,7 +1213,7 @@ end
 arch altar
 slaying booze
 msg
-You hear a distant grating soun
+You hear a distant grating sound.
 endmsg
 food 1
 x 12
@@ -1332,7 +1375,7 @@ end
 arch statue
 name statue of an angel
 msg
-It is a statue of an angel
+It is a statue of an angel.
 endmsg
 face angel.111
 x 14

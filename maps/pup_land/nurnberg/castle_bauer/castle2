@@ -1,12 +1,15 @@
 arch map
+name Castle Bauer, Second Floor
+difficulty 17
 region nurnberg
-name castle2
+width 22
+height 16
+enter_x 20
+enter_y 7
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Mon Mar  4 23:45:22 1996
+Created:  1996-03-04
+Modified: 2008-10-20 Rick Tanner
 endmsg
-x 22
 end
 arch blocked
 end
@@ -128,6 +131,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -380,6 +384,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -412,7 +417,7 @@ dam 10
 x 3
 y 6
 level 10
-immune 4
+resist_fire 100
 can_use_armour 0
 can_use_weapon 0
 arch spell_burning_hands
@@ -438,7 +443,7 @@ dam 10
 x 3
 y 7
 level 10
-immune 4
+resist_fire 100
 can_use_armour 0
 can_use_weapon 0
 arch spell_burning_hands
@@ -546,6 +551,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -582,6 +588,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -614,7 +621,7 @@ dam 10
 x 4
 y 6
 level 10
-immune 4
+resist_fire 100
 can_use_armour 0
 can_use_weapon 0
 arch spell_burning_hands
@@ -640,7 +647,7 @@ dam 10
 x 4
 y 7
 level 10
-immune 4
+resist_fire 100
 can_use_armour 0
 can_use_weapon 0
 arch spell_burning_hands
@@ -793,7 +800,7 @@ dam 10
 x 5
 y 6
 level 10
-immune 4
+resist_fire 100
 can_use_armour 0
 can_use_weapon 0
 arch spell_burning_hands
@@ -819,7 +826,7 @@ dam 10
 x 5
 y 7
 level 10
-immune 4
+resist_fire 100
 can_use_armour 0
 can_use_weapon 0
 arch spell_burning_hands
@@ -927,6 +934,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -963,6 +971,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -1291,7 +1300,7 @@ dam 10
 x 9
 y 1
 level 10
-immune 4
+resist_fire 100
 can_use_armour 0
 can_use_weapon 0
 arch spell_burning_hands
@@ -1321,7 +1330,7 @@ dam 10
 x 9
 y 2
 level 10
-immune 4
+resist_fire 100
 can_use_armour 0
 can_use_weapon 0
 arch spell_burning_hands
@@ -1351,7 +1360,7 @@ dam 10
 x 9
 y 3
 level 10
-immune 4
+resist_fire 100
 can_use_armour 0
 can_use_weapon 0
 arch spell_burning_hands
@@ -1567,7 +1576,7 @@ dam 10
 x 11
 y 1
 level 10
-immune 4
+resist_fire 100
 can_use_armour 0
 can_use_weapon 0
 arch spell_burning_hands
@@ -1597,7 +1606,7 @@ dam 10
 x 11
 y 2
 level 10
-immune 4
+resist_fire 100
 can_use_armour 0
 can_use_weapon 0
 arch spell_burning_hands
@@ -1627,7 +1636,7 @@ dam 10
 x 11
 y 3
 level 10
-immune 4
+resist_fire 100
 can_use_armour 0
 can_use_weapon 0
 arch spell_burning_hands
@@ -1773,7 +1782,7 @@ dam 10
 x 12
 y 6
 level 10
-immune 4
+resist_fire 100
 can_use_armour 0
 can_use_weapon 0
 arch spell_burning_hands
@@ -1799,7 +1808,7 @@ dam 10
 x 12
 y 7
 level 10
-immune 4
+resist_fire 100
 can_use_armour 0
 can_use_weapon 0
 arch spell_burning_hands
@@ -1887,7 +1896,7 @@ dam 10
 x 13
 y 1
 level 10
-immune 4
+resist_fire 100
 can_use_armour 0
 can_use_weapon 0
 arch spell_burning_hands
@@ -1917,7 +1926,7 @@ dam 10
 x 13
 y 2
 level 10
-immune 4
+resist_fire 100
 can_use_armour 0
 can_use_weapon 0
 arch spell_burning_hands
@@ -1947,7 +1956,7 @@ dam 10
 x 13
 y 3
 level 10
-immune 4
+resist_fire 100
 can_use_armour 0
 can_use_weapon 0
 arch spell_burning_hands
@@ -1985,7 +1994,7 @@ dam 10
 x 13
 y 6
 level 10
-immune 4
+resist_fire 100
 can_use_armour 0
 can_use_weapon 0
 arch spell_burning_hands
@@ -2011,7 +2020,7 @@ dam 10
 x 13
 y 7
 level 10
-immune 4
+resist_fire 100
 can_use_armour 0
 can_use_weapon 0
 arch spell_burning_hands
@@ -2137,7 +2146,7 @@ dam 10
 x 14
 y 6
 level 10
-immune 4
+resist_fire 100
 can_use_armour 0
 can_use_weapon 0
 arch spell_burning_hands
@@ -2163,7 +2172,7 @@ dam 10
 x 14
 y 7
 level 10
-immune 4
+resist_fire 100
 can_use_armour 0
 can_use_weapon 0
 arch spell_burning_hands
@@ -2251,7 +2260,7 @@ dam 10
 x 15
 y 1
 level 10
-immune 4
+resist_fire 100
 can_use_armour 0
 can_use_weapon 0
 arch spell_burning_hands
@@ -2281,7 +2290,7 @@ dam 10
 x 15
 y 2
 level 10
-immune 4
+resist_fire 100
 can_use_armour 0
 can_use_weapon 0
 arch spell_burning_hands
@@ -2311,7 +2320,7 @@ dam 10
 x 15
 y 3
 level 10
-immune 4
+resist_fire 100
 can_use_armour 0
 can_use_weapon 0
 arch spell_burning_hands

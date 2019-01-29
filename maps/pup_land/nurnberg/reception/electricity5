@@ -1,13 +1,15 @@
 arch map
+name Reception, Electricity Level 5
+difficulty 10
 region nurnberg
-name electricity5
+width 16
+height 27
+enter_x 3
+enter_y 9
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue Feb 20 01:38:25 1996
+Created:  1996-02-20
+Modified: 2012-03-04 Rick Tanner
 endmsg
-y 27
-level 10
 end
 arch flagstone
 end
@@ -320,10 +322,11 @@ x 1
 y 15
 end
 arch lightningwall_1
-dam 6
 x 1
 y 15
 level 30
+arch spell_large_lightning
+end
 end
 arch marble
 x 1
@@ -338,10 +341,11 @@ x 1
 y 17
 end
 arch lightningwall_3
-dam 6
 x 1
 y 17
 level 30
+arch spell_large_lightning
+end
 end
 arch marble
 x 1
@@ -545,10 +549,11 @@ x 2
 y 15
 end
 arch lightningwall_1
-dam 6
 x 2
 y 15
 level 30
+arch spell_large_lightning
+end
 end
 arch marble
 x 2
@@ -747,7 +752,11 @@ arch marble
 x 3
 y 11
 end
-arch cwall_3_3
+arch swall_1_4_half
+x 3
+y 11
+end
+arch dwall_2_2_3
 x 3
 y 11
 end
@@ -1004,9 +1013,9 @@ y 14
 end
 arch sign
 msg
-Don't pull any triger!
+Don't pull any trigger!
 
-Hint: upstair is hidden
+Hint: Upstairs is hidden.
 endmsg
 x 4
 y 14
@@ -1059,10 +1068,11 @@ x 4
 y 20
 end
 arch lightningwall_1
-dam 6
 x 4
 y 20
 level 30
+arch spell_large_lightning
+end
 end
 arch marble
 x 4
@@ -1209,7 +1219,11 @@ arch marble
 x 5
 y 11
 end
-arch cwall_2_2_3
+arch swall_1_3_half
+x 5
+y 11
+end
+arch dwall_1_1
 x 5
 y 11
 end
@@ -1485,20 +1499,22 @@ x 6
 y 19
 end
 arch lightningwall_3
-dam 6
 x 6
 y 19
 level 30
+arch spell_large_lightning
+end
 end
 arch marble
 x 6
 y 20
 end
 arch lightningwall_3
-dam 6
 x 6
 y 20
 level 30
+arch spell_large_lightning
+end
 end
 arch marble
 x 6
@@ -1882,9 +1898,35 @@ arch marble
 x 8
 y 19
 end
+arch dragon
+name Electric Wyvern
+maxsp 100
+x 8
+y 19
+resist_electricty 100
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+end
 arch marble
 x 8
 y 20
+end
+arch dragon
+name Electric Wyvern
+maxsp 100
+x 8
+y 20
+resist_electricty 100
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
 end
 arch marble
 x 8
@@ -2092,7 +2134,11 @@ arch dungeon_magic
 x 9
 y 21
 end
-arch cwall_2_1_2
+arch swall_1_4_half
+x 9
+y 21
+end
+arch dwall_1_3
 x 9
 y 21
 end
@@ -2174,6 +2220,10 @@ arch cwall_2_1_2
 x 10
 y 4
 end
+arch swall_1_1_half
+x 10
+y 4
+end
 arch cobblestones2
 x 10
 y 5
@@ -2183,6 +2233,10 @@ x 10
 y 5
 end
 arch marble
+x 10
+y 6
+end
+arch swall_1_2_half
 x 10
 y 6
 end
@@ -2268,10 +2322,11 @@ x 10
 y 15
 end
 arch lightningwall_1
-dam 6
 x 10
 y 15
 level 30
+arch spell_large_lightning
+end
 end
 arch marble
 x 10
@@ -2490,10 +2545,11 @@ x 11
 y 15
 end
 arch lightningwall_1
-dam 6
 x 11
 y 15
 level 30
+arch spell_large_lightning
+end
 end
 arch marble
 x 11
@@ -2613,6 +2669,10 @@ arch cwall_2_1_2
 x 12
 y 4
 end
+arch swall_1_1_half
+x 12
+y 4
+end
 arch cobblestones2
 x 12
 y 5
@@ -2622,6 +2682,10 @@ x 12
 y 5
 end
 arch marble
+x 12
+y 6
+end
+arch swall_1_2_half
 x 12
 y 6
 end
@@ -2707,10 +2771,11 @@ x 12
 y 15
 end
 arch lightningwall_1
-dam 6
 x 12
 y 15
 level 30
+arch spell_large_lightning
+end
 end
 arch marble
 x 12
@@ -2736,9 +2801,35 @@ arch marble
 x 12
 y 19
 end
+arch dragon
+name Electric Wyvern
+maxsp 100
+x 12
+y 19
+resist_electricty 100
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+end
 arch marble
 x 12
 y 20
+end
+arch dragon
+name Electric Wyvern
+maxsp 100
+x 12
+y 20
+resist_electricty 100
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
 end
 arch marble
 x 12
@@ -2950,7 +3041,11 @@ arch dungeon_magic
 x 13
 y 21
 end
-arch cwall_2_1_2
+arch swall_1_3_half
+x 13
+y 21
+end
+arch dwall_1_4
 x 13
 y 21
 end
@@ -3336,56 +3431,4 @@ end
 arch grass
 x 15
 y 26
-end
-arch dragon
-name Electric Wyvern
-maxsp 100
-x 8
-y 19
-immune 16396
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-end
-arch dragon
-name Electric Wyvern
-maxsp 100
-x 8
-y 20
-immune 16396
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-end
-arch dragon
-name Electric Wyvern
-maxsp 100
-x 12
-y 19
-immune 16396
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-end
-arch dragon
-name Electric Wyvern
-maxsp 100
-x 12
-y 20
-immune 16396
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
 end

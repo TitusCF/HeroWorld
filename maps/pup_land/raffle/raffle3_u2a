@@ -1,17 +1,18 @@
 arch map
+name Raffle 3, Level 2a
+swap_time 5
+reset_timeout 3600
+difficulty 45
 region pupland
-name raffle3_u2a
+darkness 2
+width 17
+height 33
+enter_x 11
+enter_y 27
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Thu Jul  3 21:54:43 1997
+Created:  1997-07-03
+Modified: 2008-10-25 Rick Tanner
 endmsg
-x 17
-y 33
-level 8
-value 5
-weight 3600
-invisible 2
 end
 arch mine17
 end
@@ -794,6 +795,15 @@ arch blackmarble
 x 4
 y 14
 end
+arch jessyb
+x 4
+y 14
+carrying 100
+arch key2
+name KEY1
+slaying raffle3_u2a_key1
+end
+end
 arch blackmarble
 x 4
 y 15
@@ -989,6 +999,10 @@ end
 arch blackmarble
 x 5
 y 17
+end
+arch blackmarble
+x 5
+y 18
 end
 arch mine16
 x 5
@@ -1865,6 +1879,15 @@ end
 arch blackmarble
 x 9
 y 14
+end
+arch jessyb
+x 9
+y 14
+carrying 100
+arch key2
+name KEY2
+slaying raffle3_u2a_key2
+end
 end
 arch blackmarble
 x 9
@@ -3550,22 +3573,4 @@ end
 arch rough_wall_2_2_4
 x 16
 y 32
-end
-arch jessyb
-x 4
-y 14
-carrying 100
-arch key2
-name KEY1
-slaying raffle3_u2a_key1
-end
-end
-arch jessyb
-x 9
-y 14
-carrying 100
-arch key2
-name KEY2
-slaying raffle3_u2a_key2
-end
 end

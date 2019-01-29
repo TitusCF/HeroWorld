@@ -1,15 +1,16 @@
 arch map
+name Atelir of Artifact (Prison), Level 2
+swap_time 10
+difficulty 40
 region ancientpupland
-name hole2
+width 32
+height 42
+enter_x 1
+enter_y 1
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Mon Jan 27 20:40:37 1997
+Created:  1997-01-27
+Modified: 2012-02-23 Rick Tanner
 endmsg
-x 32
-y 42
-level 8
-value 10
 end
 arch mine8
 end
@@ -270,8 +271,8 @@ hp 0
 exp 0
 ac 0
 x 1
+move_block 0
 alive 0
-no_pass 0
 blocksview 1
 pass_thru 0
 end
@@ -289,8 +290,8 @@ exp 0
 ac 0
 x 1
 y 2
+move_block 0
 alive 0
-no_pass 0
 blocksview 1
 pass_thru 0
 end
@@ -689,6 +690,10 @@ arch flagstone
 x 2
 y 3
 end
+arch golem_necro
+x 2
+y 3
+end
 arch flagstone
 x 2
 y 4
@@ -698,6 +703,10 @@ x 2
 y 5
 end
 arch flagstone
+x 2
+y 6
+end
+arch golem_necro
 x 2
 y 6
 end
@@ -1446,6 +1455,20 @@ arch flagstone
 x 4
 y 1
 end
+arch big_elec
+Con 45
+hp 22000
+maxhp 22000
+sp 700
+maxsp 700
+exp 140000
+dam 50
+wc -70
+ac -80
+x 4
+y 1
+level 50
+end
 arch flagstone
 x 4
 y 2
@@ -1458,11 +1481,20 @@ arch flagstone
 x 4
 y 4
 end
+arch big_dragon
+x 4
+y 4
+level 50
+end
 arch flagstone
 x 4
 y 5
 end
 arch flagstone
+x 4
+y 6
+end
+arch troll
 x 4
 y 6
 end
@@ -2210,6 +2242,20 @@ arch flagstone
 x 6
 y 1
 end
+arch big_elec
+Con 45
+hp 22000
+maxhp 22000
+sp 700
+maxsp 700
+exp 140000
+dam 50
+wc -70
+ac -80
+x 6
+y 1
+level 50
+end
 arch flagstone
 x 6
 y 2
@@ -2227,6 +2273,10 @@ x 6
 y 5
 end
 arch flagstone
+x 6
+y 6
+end
+arch troll
 x 6
 y 6
 end
@@ -2609,6 +2659,11 @@ arch flagstone
 x 7
 y 4
 end
+arch big_dragon
+x 7
+y 4
+level 50
+end
 arch flagstone
 x 7
 y 5
@@ -2982,6 +3037,20 @@ arch flagstone
 x 8
 y 1
 end
+arch big_elec
+Con 45
+hp 22000
+maxhp 22000
+sp 700
+maxsp 700
+exp 140000
+dam 50
+wc -70
+ac -80
+x 8
+y 1
+level 50
+end
 arch flagstone
 x 8
 y 2
@@ -2999,6 +3068,10 @@ x 8
 y 5
 end
 arch flagstone
+x 8
+y 6
+end
+arch giant
 x 8
 y 6
 end
@@ -3838,7 +3911,7 @@ arch afloor_right
 x 10
 y 10
 end
-arch cave_9
+arch dun27
 x 10
 y 10
 end
@@ -3945,7 +4018,7 @@ arch afloor_right
 x 10
 y 18
 end
-arch cave_7
+arch dun25
 x 10
 y 18
 end
@@ -4075,7 +4148,7 @@ arch afloor_right
 x 10
 y 28
 end
-arch cave_7
+arch dun25
 x 10
 y 28
 end
@@ -4704,7 +4777,7 @@ arch afloor_right
 x 12
 y 10
 end
-arch cave_10
+arch dun28
 x 12
 y 10
 end
@@ -4940,7 +5013,7 @@ arch afloor_right
 x 12
 y 28
 end
-arch cave_8
+arch dun26
 x 12
 y 28
 end
@@ -9380,7 +9453,7 @@ arch afloor_right
 x 22
 y 18
 end
-arch cave_7
+arch dun25
 x 22
 y 18
 end
@@ -10075,7 +10148,7 @@ arch afloor_right
 x 24
 y 4
 end
-arch cave_10
+arch dun28
 x 24
 y 4
 end
@@ -10169,7 +10242,6 @@ end
 arch rune_burning_hands
 Cha 60
 hp 10
-sp 300
 dam 100
 x 24
 y 11
@@ -10199,7 +10271,6 @@ end
 arch rune_burning_hands
 Cha 60
 hp 10
-sp 300
 dam 100
 x 24
 y 13
@@ -10242,7 +10313,6 @@ end
 arch rune_burning_hands
 Cha 60
 hp 10
-sp 300
 dam 100
 x 24
 y 16
@@ -10269,7 +10339,7 @@ arch afloor_right
 x 24
 y 18
 end
-arch cave_8
+arch dun26
 x 24
 y 18
 end
@@ -10511,8 +10581,7 @@ end
 arch magic_mouth
 msg
 Statue says:
-  "One who robs the cristal will
-   be cursed."
+  "One who robs the cristal will be cursed."
 endmsg
 x 25
 y 2
@@ -10622,7 +10691,6 @@ end
 arch rune_burning_hands
 Cha 60
 hp 10
-sp 300
 dam 100
 x 25
 y 10
@@ -10730,7 +10798,6 @@ end
 arch rune_burning_hands
 Cha 60
 hp 10
-sp 300
 dam 100
 x 25
 y 18
@@ -10965,10 +11032,7 @@ y 1
 end
 arch magic_mouth
 msg
-The cristal ball are fixed at the
-Mysterious Altar. 
-So you cannot get it.
-
+The cristal ball are fixed at the Mysterious Altar.  So you cannot get it.
 endmsg
 x 26
 y 1
@@ -11178,7 +11242,6 @@ end
 arch rune_burning_hands
 Cha 60
 hp 10
-sp 300
 dam 100
 x 26
 y 15
@@ -11601,7 +11664,6 @@ end
 arch rune_burning_hands
 Cha 60
 hp 10
-sp 300
 dam 100
 x 27
 y 13
@@ -11938,7 +12000,7 @@ arch afloor_right
 x 28
 y 4
 end
-arch cave_9
+arch dun27
 x 28
 y 4
 end
@@ -12095,7 +12157,6 @@ end
 arch rune_burning_hands
 Cha 60
 hp 10
-sp 300
 dam 100
 x 28
 y 16
@@ -12125,7 +12186,6 @@ end
 arch rune_burning_hands
 Cha 60
 hp 10
-sp 300
 dam 100
 x 28
 y 18
@@ -12263,7 +12323,7 @@ arch afloor_right
 x 28
 y 28
 end
-arch cave_7
+arch dun25
 x 28
 y 28
 end
@@ -12960,76 +13020,4 @@ end
 arch blocked
 x 31
 y 10
-end
-arch golem_necro
-x 2
-y 3
-end
-arch golem_necro
-x 2
-y 6
-end
-arch big_elec
-Con 45
-hp 22000
-maxhp 22000
-sp 700
-maxsp 700
-exp 140000
-dam 50
-wc -70
-ac -80
-x 4
-y 1
-level 50
-end
-arch big_dragon
-x 4
-y 4
-level 50
-end
-arch troll
-x 4
-y 6
-end
-arch big_elec
-Con 45
-hp 22000
-maxhp 22000
-sp 700
-maxsp 700
-exp 140000
-dam 50
-wc -70
-ac -80
-x 6
-y 1
-level 50
-end
-arch troll
-x 6
-y 6
-end
-arch big_dragon
-x 7
-y 4
-level 50
-end
-arch big_elec
-Con 45
-hp 22000
-maxhp 22000
-sp 700
-maxsp 700
-exp 140000
-dam 50
-wc -70
-ac -80
-x 8
-y 1
-level 50
-end
-arch giant
-x 8
-y 6
 end

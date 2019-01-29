@@ -1,12 +1,15 @@
 arch map
-name FourthFloor
+name Fire Temple, Fourth Floor
+difficulty 40
+region wilderness
+width 40
+height 40
+enter_x 13
+enter_y 10
 msg
-Creator: PeterM
-Email: peterm@soda.csua.berkeley.edu
-Date: Fri May 23 11:23:47 1997
+Created:  1997-05-23 PeterM (peterm@soda.csua.berkeley.edu)
+Modified: 2012-03-12 Rick Tanner
 endmsg
-x 40
-y 40
 end
 arch cobblestones
 end
@@ -260,6 +263,15 @@ arch random_gem
 x 1
 y 1
 end
+arch big_demon
+name Principal Investigator
+x 1
+y 1
+carrying 100
+arch key2
+slaying microlab
+end
+end
 arch cobblestones
 x 1
 y 2
@@ -313,6 +325,11 @@ x 1
 y 10
 end
 arch random_gem
+x 1
+y 10
+end
+arch big_demon
+name Principal Investigator
 x 1
 y 10
 end
@@ -489,22 +506,12 @@ end
 arch scroll
 name ingredients
 msg
-This scroll describes a large research
-project run by the demons which is
-intended to discover the physical
-means by which demons get their
-immunity to fire. From the text,
-you glean that 
+This scroll describes a large research project run by the demons which is intended to discover the physical means by which demons get their immunity to fire.  From the text, you glean that
 - fire para-elemental's residue
 - 7 water of ruby
-- dragon's steak  
+- dragon's steak
 - 3 balm of asbestos
-are the ingredients necessary to
-produce an alchemical preparation
-capable of granting a temporary
-immunity to fire similar to a demon's.
-However, this scroll does not describe
-the alchemical methods.
+are the ingredients necessary to produce an alchemical preparation capable of granting a temporary immunity to fire similar to a demon's.  However, this scroll does not describe the alchemical methods.
 endmsg
 x 1
 y 33
@@ -595,6 +602,11 @@ arch cobblestones
 x 2
 y 5
 end
+arch big_demon
+name Principal Investigator
+x 2
+y 5
+end
 arch cobblestones
 x 2
 y 6
@@ -655,6 +667,10 @@ arch cobblestones
 x 2
 y 15
 end
+arch medium_demon
+x 2
+y 15
+end
 arch cobblestones
 x 2
 y 16
@@ -683,6 +699,11 @@ arch cobblestones
 x 2
 y 20
 end
+arch big_demon
+name Principal Investigator
+x 2
+y 20
+end
 arch cobblestones
 x 2
 y 21
@@ -696,6 +717,11 @@ x 2
 y 23
 end
 arch cobblestones
+x 2
+y 24
+end
+arch big_demon
+name Principal Investigator
 x 2
 y 24
 end
@@ -1043,6 +1069,11 @@ arch cobblestones
 x 4
 y 14
 end
+arch big_demon
+name Principal Investigator
+x 4
+y 14
+end
 arch cobblestones
 x 4
 y 15
@@ -1185,6 +1216,11 @@ arch cobblestones
 x 5
 y 5
 end
+arch big_demon
+name Principal Investigator
+x 5
+y 5
+end
 arch cobblestones
 x 5
 y 6
@@ -1214,6 +1250,10 @@ x 5
 y 11
 end
 arch cobblestones
+x 5
+y 12
+end
+arch medium_demon
 x 5
 y 12
 end
@@ -1258,6 +1298,11 @@ x 5
 y 20
 end
 arch cobblestones
+x 5
+y 21
+end
+arch big_demon
+name Principal Investigator
 x 5
 y 21
 end
@@ -1394,6 +1439,10 @@ x 6
 y 1
 end
 arch cobblestones
+x 6
+y 2
+end
+arch medium_demon
 x 6
 y 2
 end
@@ -2066,11 +2115,12 @@ x 8
 y 29
 end
 arch firewall_5
-dam 58
 x 8
 y 29
 speed -0.100000
 level 30
+arch spell_dragonbreath
+end
 end
 arch cobblestones
 x 8
@@ -2125,11 +2175,12 @@ x 8
 y 38
 end
 arch firewall_1
-dam 58
 x 8
 y 38
 speed -0.100000
 level 30
+arch spell_dragonbreath
+end
 end
 arch cobblestones
 x 8
@@ -2750,6 +2801,10 @@ x 11
 y 1
 end
 arch cobblestones
+x 11
+y 2
+end
+arch medium_demon
 x 11
 y 2
 end
@@ -3354,6 +3409,10 @@ arch cobblestones
 x 13
 y 2
 end
+arch medium_demon
+x 13
+y 2
+end
 arch cobblestones
 x 13
 y 3
@@ -3724,6 +3783,10 @@ arch mine5
 x 14
 y 12
 end
+arch swall_1_1_half
+x 14
+y 12
+end
 arch cobblestones
 x 14
 y 13
@@ -3745,6 +3808,10 @@ x 14
 y 15
 end
 arch mine12
+x 14
+y 15
+end
+arch swall_1_1_half
 x 14
 y 15
 end
@@ -3777,6 +3844,10 @@ x 14
 y 19
 end
 arch mine5
+x 14
+y 19
+end
+arch swall_1_1_half
 x 14
 y 19
 end
@@ -4000,6 +4071,10 @@ arch cobblestones
 x 15
 y 11
 end
+arch swall_1_4_half
+x 15
+y 11
+end
 arch mine7
 x 15
 y 11
@@ -4190,11 +4265,12 @@ y 29
 end
 arch firewall_5
 other_arch color_spray
-dam 85
 x 15
 y 29
 speed -0.100000
 level 30
+arch spell_color_spray
+end
 end
 arch cobblestones
 x 15
@@ -4251,11 +4327,12 @@ end
 arch firewall_1
 slaying color spray
 other_arch color_spray
-dam 85
 x 15
 y 38
 speed -0.100000
 level 30
+arch spell_color_spray
+end
 end
 arch cobblestones
 x 15
@@ -4448,6 +4525,10 @@ x 16
 y 21
 end
 arch cobblestones
+x 16
+y 22
+end
+arch swall_1_4_half
 x 16
 y 22
 end
@@ -4950,6 +5031,10 @@ x 18
 y 10
 end
 arch cobblestones
+x 18
+y 11
+end
+arch swall_1_4_half
 x 18
 y 11
 end
@@ -5179,6 +5264,10 @@ arch cobblestones
 x 19
 y 2
 end
+arch medium_demon
+x 19
+y 2
+end
 arch cobblestones
 x 19
 y 3
@@ -5336,6 +5425,10 @@ x 19
 y 21
 end
 arch cobblestones
+x 19
+y 22
+end
+arch swall_1_4_half
 x 19
 y 22
 end
@@ -5864,6 +5957,10 @@ arch cobblestones
 x 21
 y 11
 end
+arch swall_1_4_half
+x 21
+y 11
+end
 arch mine7
 x 21
 y 11
@@ -6248,6 +6345,10 @@ arch cobblestones
 x 22
 y 22
 end
+arch swall_1_4_half
+x 22
+y 22
+end
 arch mine7
 x 22
 y 22
@@ -6329,6 +6430,11 @@ x 22
 y 33
 end
 arch cobblestones
+x 22
+y 34
+end
+arch Balrog
+name Department Vice-Chair
 x 22
 y 34
 end
@@ -7068,6 +7174,10 @@ arch mine5
 x 25
 y 12
 end
+arch swall_1_1_half
+x 25
+y 12
+end
 arch cobblestones
 x 25
 y 13
@@ -7089,6 +7199,10 @@ x 25
 y 15
 end
 arch mine4
+x 25
+y 15
+end
+arch swall_1_1_half
 x 25
 y 15
 end
@@ -7113,6 +7227,10 @@ x 25
 y 18
 end
 arch mine4
+x 25
+y 18
+end
+arch swall_1_1_half
 x 25
 y 18
 end
@@ -7272,6 +7390,10 @@ arch cobblestones
 x 26
 y 2
 end
+arch medium_demon
+x 26
+y 2
+end
 arch cobblestones
 x 26
 y 3
@@ -7321,10 +7443,12 @@ end
 arch cobblestones
 x 26
 y 9
+end
 arch rune_large_fireball
 Cha 30
+x 26
+y 9
 level 20
-end
 end
 arch cobblestones
 x 26
@@ -8398,9 +8522,7 @@ y 32
 end
 arch sign
 msg
-Clean suits  and boots
-are required past this
-point. 
+Clean suits and boots are required past this point.
 endmsg
 x 29
 y 32
@@ -9364,6 +9486,11 @@ arch cobblestones
 x 33
 y 16
 end
+arch big_demon
+name Principal Investigator
+x 33
+y 16
+end
 arch cobblestones
 x 33
 y 17
@@ -9397,6 +9524,11 @@ x 33
 y 22
 end
 arch cobblestones
+x 33
+y 23
+end
+arch big_demon
+name Principal Investigator
 x 33
 y 23
 end
@@ -9444,6 +9576,18 @@ arch cobblestones
 x 33
 y 32
 end
+arch demon_lord
+x 33
+y 32
+resist_magic 30
+resist_electricity 30
+resist_confusion 30
+resist_acid 30
+resist_weaponmagic 30
+resist_turn_undead 30
+resist_fear 30
+resist_godpower 30
+end
 arch cobblestones
 x 33
 y 33
@@ -9483,6 +9627,11 @@ arch mine2
 x 34
 end
 arch cobblestones
+x 34
+y 1
+end
+arch big_demon
+name Principal Investigator
 x 34
 y 1
 end
@@ -9535,6 +9684,11 @@ x 34
 y 9
 end
 arch cobblestones
+x 34
+y 10
+end
+arch big_demon
+name Principal Investigator
 x 34
 y 10
 end
@@ -10196,6 +10350,10 @@ arch cobblestones
 x 37
 y 17
 end
+arch medium_demon
+x 37
+y 17
+end
 arch cobblestones
 x 37
 y 18
@@ -10225,6 +10383,10 @@ x 37
 y 22
 end
 arch cobblestones
+x 37
+y 23
+end
+arch medium_demon
 x 37
 y 23
 end
@@ -10919,121 +11081,4 @@ end
 arch mine12
 x 39
 y 39
-end
-arch big_demon
-name Principal Investigator
-x 1
-y 1
-carrying 100
-arch key2
-slaying microlab
-end
-end
-arch big_demon
-name Principal Investigator
-x 1
-y 10
-end
-arch big_demon
-name Principal Investigator
-x 2
-y 5
-end
-arch medium_demon
-x 2
-y 15
-end
-arch big_demon
-name Principal Investigator
-x 2
-y 20
-end
-arch big_demon
-name Principal Investigator
-x 2
-y 24
-end
-arch big_demon
-name Principal Investigator
-x 4
-y 14
-end
-arch big_demon
-name Principal Investigator
-x 5
-y 5
-end
-arch medium_demon
-x 5
-y 12
-end
-arch big_demon
-name Principal Investigator
-x 5
-y 21
-end
-arch medium_demon
-x 6
-y 2
-end
-arch medium_demon
-x 11
-y 2
-end
-arch medium_demon
-x 13
-y 2
-end
-arch medium_demon
-x 19
-y 2
-end
-arch Balrog
-name Department Vice-Chair
-x 22
-y 34
-end
-arch medium_demon
-x 26
-y 2
-end
-arch big_demon
-name Principal Investigator
-x 33
-y 16
-end
-arch big_demon
-name Principal Investigator
-x 33
-y 23
-end
-arch demon_lord
-x 33
-y 32
-resist_magic 30
-resist_electricity 30
-resist_confusion 30
-resist_acid 30
-resist_weaponmagic 30
-resist_turn_undead 30
-resist_fear 30
-resist_godpower 30
-end
-arch big_demon
-name Principal Investigator
-x 34
-y 1
-end
-arch big_demon
-name Principal Investigator
-x 34
-y 10
-end
-arch medium_demon
-x 37
-y 17
-end
-arch medium_demon
-x 37
-y 23
 end

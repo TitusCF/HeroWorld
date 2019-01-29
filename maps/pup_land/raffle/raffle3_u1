@@ -1,15 +1,17 @@
 arch map
+name Raffle 3, Level 1
+swap_time 5
+reset_timeout 3600
+difficulty 25
 region pupland
-name raffle3_u1
-msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Mon Feb 24 21:58:23 1997
-endmsg
 width 45
 height 19
-reset_timeout 3600
-swap_time 5
+enter_x 18
+enter_y 16
+msg
+Created:  1997-02-24
+Modified: 2012-03-06 Rick Tanner
+endmsg
 end
 arch small_stones
 end
@@ -462,10 +464,12 @@ x 3
 y 4
 end
 arch firewall_4
-speed 1.500000
-speed_left 0.000000
 x 3
 y 4
+speed 1.500000
+speed_left 0.000000
+arch spell_small_fireball
+end
 end
 arch small_stones
 x 3
@@ -544,10 +548,12 @@ x 3
 y 14
 end
 arch firewall_2
-speed 1.500000
-speed_left 0.000000
 x 3
 y 14
+speed 1.500000
+speed_left 0.000000
+arch spell_small_fireball
+end
 end
 arch furious_floor
 x 3
@@ -630,10 +636,10 @@ end
 arch teleporter
 hp 7
 sp 8
-connected 1102
-speed 0
 x 4
 y 5
+speed 0
+connected 1102
 end
 arch small_stones
 x 4
@@ -660,11 +666,11 @@ x 4
 y 8
 end
 arch spikes_closed
-speed 0.500000
-speed_left -23.100000
-connected 13
 x 4
 y 8
+speed 0.500000
+speed_left -23.100000
+connected 13
 end
 arch dungeon_magic
 x 4
@@ -675,11 +681,11 @@ x 4
 y 9
 end
 arch spikes_closed
+x 4
+y 9
 speed 0.500000
 speed_left -23.100000
 connected 13
-x 4
-y 9
 end
 arch dungeon_magic
 x 4
@@ -690,11 +696,11 @@ x 4
 y 10
 end
 arch spikes_closed
+x 4
+y 10
 speed 0.500000
 speed_left -23.100000
 connected 13
-x 4
-y 10
 end
 arch small_stones
 x 4
@@ -719,10 +725,10 @@ end
 arch teleporter
 hp 7
 sp 10
-connected 2102
-speed 0
 x 4
 y 13
+speed 0
+connected 2102
 end
 arch small_stones
 x 4
@@ -835,11 +841,11 @@ x 5
 y 8
 end
 arch spikes_closed
+x 5
+y 8
 speed 0.500000
 speed_left -23.100000
 connected 13
-x 5
-y 8
 end
 arch dungeon_magic
 x 5
@@ -847,7 +853,7 @@ y 9
 end
 arch magic_mouth
 msg
-Say "fire" !!
+Say, "fire"!!
 endmsg
 x 5
 y 9
@@ -865,11 +871,11 @@ x 5
 y 10
 end
 arch spikes_closed
+x 5
+y 10
 speed 0.500000
 speed_left -23.100000
 connected 13
-x 5
-y 10
 end
 arch small_stones
 x 5
@@ -988,10 +994,11 @@ end
 arch firewall_7
 name anti-magic wall
 face swall_5.111
-dam 128
-blocksview 0
 x 6
 y 6
+blocksview 0
+arch spell_counterwall
+end
 end
 arch small_stones
 x 6
@@ -1011,12 +1018,12 @@ y 8
 end
 arch magic_ear
 msg
-@match fire|Fire|FIRE
+@match fire
 Click.
 endmsg
-connected 1101
 x 6
 y 9
+connected 1101
 end
 arch small_stones
 x 6
@@ -1049,10 +1056,11 @@ end
 arch firewall_7
 name anti-magic wall
 face swall_5.111
-dam 128
-blocksview 0
 x 6
 y 12
+blocksview 0
+arch spell_counterwall
+end
 end
 arch small_stones
 x 6
@@ -1157,11 +1165,11 @@ x 7
 y 5
 end
 arch spikes_closed
+x 7
+y 5
 speed 0.500000
 speed_left -23.100000
 connected 3
-x 7
-y 5
 end
 arch dungeon_magic
 x 7
@@ -1172,11 +1180,11 @@ x 7
 y 6
 end
 arch spikes_closed
+x 7
+y 6
 speed 0.500000
 speed_left -23.100000
 connected 3
-x 7
-y 6
 end
 arch small_stones
 x 7
@@ -1192,10 +1200,10 @@ y 8
 end
 arch button_small
 face button_sma.112
-value 1
-connected 1011
 x 7
 y 8
+value 1
+connected 1011
 end
 arch wine
 x 7
@@ -1207,17 +1215,17 @@ y 9
 end
 arch button_small
 face button_sma.112
-value 1
-connected 1021
 x 7
 y 9
+value 1
+connected 1021
 end
 arch chalice
+x 7
+y 9
 speed_left -8.099999
 nrof 2
 material 4
-x 7
-y 9
 end
 arch small_stones
 x 7
@@ -1225,10 +1233,10 @@ y 10
 end
 arch button_small
 face button_sma.112
-value 1
-connected 1031
 x 7
 y 10
+value 1
+connected 1031
 end
 arch wine
 x 7
@@ -1251,11 +1259,11 @@ x 7
 y 12
 end
 arch spikes_closed
+x 7
+y 12
 speed 0.500000
 speed_left -23.100000
 connected 23
-x 7
-y 12
 end
 arch dungeon_magic
 x 7
@@ -1266,11 +1274,11 @@ x 7
 y 13
 end
 arch spikes_closed
+x 7
+y 13
 speed 0.500000
 speed_left -23.100000
 connected 23
-x 7
-y 13
 end
 arch furious_floor
 x 7
@@ -1363,11 +1371,11 @@ x 8
 y 5
 end
 arch spikes_closed
+x 8
+y 5
 speed 0.500000
 speed_left -23.100000
 connected 3
-x 8
-y 5
 end
 arch dungeon_magic
 x 8
@@ -1375,7 +1383,7 @@ y 6
 end
 arch magic_mouth
 msg
-Say "fire" !!
+Say, "fire"!!
 endmsg
 x 8
 y 6
@@ -1386,12 +1394,12 @@ y 6
 end
 arch magic_ear
 msg
-@match fire|Fire|FIRE
+@match fire
 Click.
 endmsg
-connected 101
 x 8
 y 7
+connected 101
 end
 arch small_stones
 x 8
@@ -1407,10 +1415,10 @@ y 8
 end
 arch button_small
 face button_sma.112
-value 1
-connected 1012
 x 8
 y 8
+value 1
+connected 1012
 end
 arch lead
 x 8
@@ -1422,10 +1430,10 @@ y 9
 end
 arch button_small
 face button_sma.112
-value 1
-connected 1022
 x 8
 y 9
+value 1
+connected 1022
 end
 arch rock2
 x 8
@@ -1437,10 +1445,10 @@ y 10
 end
 arch button_small
 face button_sma.112
-value 1
-connected 1032
 x 8
 y 10
+value 1
+connected 1032
 end
 arch lead
 x 8
@@ -1448,12 +1456,12 @@ y 10
 end
 arch magic_ear
 msg
-@match fire|Fire|FIRE
+@match fire
 Click.
 endmsg
-connected 2101
 x 8
 y 11
+connected 2101
 end
 arch small_stones
 x 8
@@ -1469,7 +1477,7 @@ y 12
 end
 arch magic_mouth
 msg
-Say "fire" !!
+Say, "fire"!!
 endmsg
 x 8
 y 12
@@ -1487,11 +1495,11 @@ x 8
 y 13
 end
 arch spikes_closed
+x 8
+y 13
 speed 0.500000
 speed_left -23.100000
 connected 23
-x 8
-y 13
 end
 arch furious_floor
 x 8
@@ -1584,11 +1592,11 @@ x 9
 y 5
 end
 arch spikes_closed
+x 9
+y 5
 speed 0.500000
 speed_left -23.100000
 connected 3
-x 9
-y 5
 end
 arch dungeon_magic
 x 9
@@ -1599,11 +1607,11 @@ x 9
 y 6
 end
 arch spikes_closed
+x 9
+y 6
 speed 0.500000
 speed_left -23.100000
 connected 3
-x 9
-y 6
 end
 arch small_stones
 x 9
@@ -1619,10 +1627,10 @@ y 8
 end
 arch button_small
 face button_sma.112
-value 1
-connected 1013
 x 9
 y 8
+value 1
+connected 1013
 end
 arch wine
 x 9
@@ -1634,17 +1642,17 @@ y 9
 end
 arch button_small
 face button_sma.112
-value 1
-connected 1023
 x 9
 y 9
+value 1
+connected 1023
 end
 arch chalice
+x 9
+y 9
 speed_left -8.099999
 nrof 2
 material 4
-x 9
-y 9
 end
 arch small_stones
 x 9
@@ -1652,10 +1660,10 @@ y 10
 end
 arch button_small
 face button_sma.112
-value 1
-connected 1033
 x 9
 y 10
+value 1
+connected 1033
 end
 arch wine
 x 9
@@ -1678,11 +1686,11 @@ x 9
 y 12
 end
 arch spikes_closed
+x 9
+y 12
 speed 0.500000
 speed_left -23.100000
 connected 23
-x 9
-y 12
 end
 arch dungeon_magic
 x 9
@@ -1693,11 +1701,11 @@ x 9
 y 13
 end
 arch spikes_closed
+x 9
+y 13
 speed 0.500000
 speed_left -23.100000
 connected 23
-x 9
-y 13
 end
 arch furious_floor
 x 9
@@ -1815,12 +1823,12 @@ y 8
 end
 arch magic_ear
 msg
-@match fire|Fire|FIRE
+@match fire
 Click.
 endmsg
-connected 3101
 x 10
 y 9
+connected 3101
 end
 arch small_stones
 x 10
@@ -1977,11 +1985,11 @@ x 11
 y 8
 end
 arch spikes_closed
+x 11
+y 8
 speed 0.500000
 speed_left -23.100000
 connected 33
-x 11
-y 8
 end
 arch dungeon_magic
 x 11
@@ -1989,7 +1997,7 @@ y 9
 end
 arch magic_mouth
 msg
-Say "fire" !!
+Say, "fire"!!
 endmsg
 x 11
 y 9
@@ -2007,11 +2015,11 @@ x 11
 y 10
 end
 arch spikes_closed
+x 11
+y 10
 speed 0.500000
 speed_left -23.100000
 connected 33
-x 11
-y 10
 end
 arch small_stones
 x 11
@@ -2122,10 +2130,10 @@ end
 arch teleporter
 hp 9
 sp 8
-connected 102
-speed 0
 x 12
 y 5
+speed 0
+connected 102
 end
 arch small_stones
 x 12
@@ -2134,10 +2142,11 @@ end
 arch firewall_7
 name anti-magic wall
 face swall_6.111
-dam 128
-blocksview 0
 x 12
 y 6
+blocksview 0
+arch spell_counterwall
+end
 end
 arch small_stones
 x 12
@@ -2156,11 +2165,11 @@ x 12
 y 8
 end
 arch spikes_closed
-speed 0.500000
-speed_left -23.100000
-connected 33
 x 12
 y 8
+speed 0.500000
+speed_left -23.100000
+connected 33
 end
 arch dungeon_magic
 x 12
@@ -2171,11 +2180,11 @@ x 12
 y 9
 end
 arch spikes_closed
+x 12
+y 9
 speed 0.500000
 speed_left -23.100000
 connected 33
-x 12
-y 9
 end
 arch dungeon_magic
 x 12
@@ -2186,11 +2195,11 @@ x 12
 y 10
 end
 arch spikes_closed
+x 12
+y 10
 speed 0.500000
 speed_left -23.100000
 connected 33
-x 12
-y 10
 end
 arch small_stones
 x 12
@@ -2207,10 +2216,11 @@ end
 arch firewall_7
 name anti-magic wall
 face swall_3.111
-dam 128
-blocksview 0
 x 12
 y 12
+blocksview 0
+arch spell_counterwall
+end
 end
 arch small_stones
 x 12
@@ -2219,10 +2229,10 @@ end
 arch teleporter
 hp 9
 sp 10
-connected 3102
-speed 0
 x 12
 y 13
+speed 0
+connected 3102
 end
 arch small_stones
 x 12
@@ -2303,10 +2313,12 @@ x 13
 y 4
 end
 arch firewall_6
-speed 1.500000
-speed_left 0.000000
 x 13
 y 4
+speed 1.500000
+speed_left 0.000000
+arch spell_small_fireball
+end
 end
 arch small_stones
 x 13
@@ -2405,10 +2417,12 @@ x 13
 y 14
 end
 arch firewall_8
-speed 1.500000
-speed_left 0.000000
 x 13
 y 14
+speed 1.500000
+speed_left 0.000000
+arch spell_small_fireball
+end
 end
 arch furious_floor
 x 13
@@ -2929,10 +2943,10 @@ x 17
 y 1
 end
 arch block_door_closed
-speed 0.500000
-connected 4001
 x 17
 y 1
+speed 0.500000
+connected 4001
 end
 arch furious_floor
 x 17
@@ -2955,11 +2969,11 @@ x 17
 y 3
 end
 arch grate_open_1
+x 17
+y 3
 speed 0.500000
 speed_left -20.100000
 connected 1011
-x 17
-y 3
 end
 arch dungeon_magic
 x 17
@@ -2970,11 +2984,11 @@ x 17
 y 4
 end
 arch grate_open_1
+x 17
+y 4
 speed 0.500000
 speed_left -20.100000
 connected 1021
-x 17
-y 4
 end
 arch dungeon_magic
 x 17
@@ -2985,11 +2999,11 @@ x 17
 y 5
 end
 arch grate_open_1
+x 17
+y 5
 speed 0.500000
 speed_left -20.100000
 connected 1031
-x 17
-y 5
 end
 arch dungeon_magic
 x 17
@@ -3116,10 +3130,10 @@ x 18
 y 1
 end
 arch block_door_closed
-speed 0.500000
-connected 4002
 x 18
 y 1
+speed 0.500000
+connected 4002
 end
 arch dungeon_magic
 x 18
@@ -3131,18 +3145,18 @@ y 2
 end
 arch key2
 name raffle ticket No.3
-face card.111
 slaying raffle3_first_chance
+face card.111
 x 18
 y 2
 end
 arch spikes_closed
+x 18
+y 2
 speed 0.500000
 speed_left -2.100000
 invisible 1
 connected 1999
-x 18
-y 2
 end
 arch dungeon_magic
 x 18
@@ -3153,11 +3167,11 @@ x 18
 y 3
 end
 arch grate_open_1
+x 18
+y 3
 speed 0.500000
 speed_left -20.100000
 connected 1012
-x 18
-y 3
 end
 arch dungeon_magic
 x 18
@@ -3168,11 +3182,11 @@ x 18
 y 4
 end
 arch grate_open_1
+x 18
+y 4
 speed 0.500000
 speed_left -20.100000
 connected 1022
-x 18
-y 4
 end
 arch dungeon_magic
 x 18
@@ -3183,11 +3197,11 @@ x 18
 y 5
 end
 arch grate_open_1
+x 18
+y 5
 speed 0.500000
 speed_left -20.100000
 connected 1032
-x 18
-y 5
 end
 arch dungeon_magic
 x 18
@@ -3222,9 +3236,9 @@ x 18
 y 9
 end
 arch arrow
-nrof 100
 x 18
 y 9
+nrof 100
 end
 arch dungeon_magic
 x 18
@@ -3259,11 +3273,11 @@ x 18
 y 13
 end
 arch igate_closed_1
+x 18
+y 13
 speed 0.500000
 speed_left -20.100000
 connected 999
-x 18
-y 13
 end
 arch dungeon_magic
 x 18
@@ -3333,10 +3347,10 @@ x 19
 y 1
 end
 arch block_door_closed
-speed 0.500000
-connected 4003
 x 19
 y 1
+speed 0.500000
+connected 4003
 end
 arch furious_floor
 x 19
@@ -3359,11 +3373,11 @@ x 19
 y 3
 end
 arch grate_open_1
+x 19
+y 3
 speed 0.500000
 speed_left -20.100000
 connected 1013
-x 19
-y 3
 end
 arch dungeon_magic
 x 19
@@ -3374,11 +3388,11 @@ x 19
 y 4
 end
 arch grate_open_1
+x 19
+y 4
 speed 0.500000
 speed_left -20.100000
 connected 1023
-x 19
-y 4
 end
 arch dungeon_magic
 x 19
@@ -3389,11 +3403,11 @@ x 19
 y 5
 end
 arch grate_open_1
+x 19
+y 5
 speed 0.500000
 speed_left -20.100000
 connected 1033
-x 19
-y 5
 end
 arch dungeon_magic
 x 19
@@ -3428,9 +3442,9 @@ x 19
 y 9
 end
 arch button_handle
-connected 666
 x 19
 y 9
+connected 666
 end
 arch dungeon_magic
 x 19
@@ -3590,11 +3604,11 @@ x 20
 y 9
 end
 arch igate_closed_2
+x 20
+y 9
 speed 0.500000
 speed_left -37.099998
 connected 666
-x 20
-y 9
 end
 arch small_stones
 x 20
@@ -3783,10 +3797,10 @@ x 21
 y 9
 end
 arch pyromaniac
-speed_left -11.699997
-level 10
 x 21
 y 9
+speed_left -11.699997
+level 10
 end
 arch dungeon_magic
 x 21
@@ -3919,10 +3933,10 @@ x 22
 y 2
 end
 arch pyromaniac
-speed_left -11.699997
-level 10
 x 22
 y 2
+speed_left -11.699997
+level 10
 end
 arch dungeon_magic
 x 22
@@ -4089,10 +4103,10 @@ x 22
 y 16
 end
 arch pyromaniac
-speed_left -11.699997
-level 10
 x 22
 y 16
+speed_left -11.699997
+level 10
 end
 arch dungeon_magic
 x 22
@@ -4792,16 +4806,16 @@ y 7
 end
 arch button_small
 face button_sma.112
-value 1
-connected 11
 x 26
 y 7
+value 1
+connected 11
 end
 arch baby_dragon
 name Baby dragon
-stand_still 1
 x 26
 y 7
+stand_still 1
 end
 arch small_stones
 x 26
@@ -4841,10 +4855,10 @@ y 11
 end
 arch button_small
 face button_sma.112
-value 1
-connected 21
 x 26
 y 11
+value 1
+connected 21
 end
 arch wizard
 name PilKul
@@ -4858,15 +4872,16 @@ maxhp 500
 sp 50
 maxsp 50
 ac -10
+x 26
+y 11
 speed_left -35.099998
 level 10
 type 0
 randomitems big_wizard
+move_type walk
 monster 1
 can_cast_spell 1
 stand_still 1
-x 26
-y 11
 end
 arch furious_floor
 x 26
@@ -4988,10 +5003,10 @@ y 4
 end
 arch grate_closed_1
 face swall_A.111
-speed 0.500000
-connected 13
 x 27
 y 4
+speed 0.500000
+connected 13
 end
 arch furious_floor
 x 27
@@ -5042,12 +5057,12 @@ x 27
 y 9
 end
 arch spikes_open
+x 27
+y 9
 speed 0.500000
 speed_left -7.100000
 value 1
 connected 1999
-x 27
-y 9
 end
 arch boulder
 x 27
@@ -5103,10 +5118,10 @@ y 14
 end
 arch grate_closed_1
 face swall_A.111
-speed 0.500000
-connected 23
 x 27
 y 14
+speed 0.500000
+connected 23
 end
 arch dungeon_magic
 x 27
@@ -5381,10 +5396,10 @@ y 4
 end
 arch grate_closed_1
 face swall_A.111
-speed 0.500000
-connected 3
 x 29
 y 4
+speed 0.500000
+connected 3
 end
 arch furious_floor
 x 29
@@ -5495,10 +5510,10 @@ y 14
 end
 arch grate_closed_1
 face swall_A.111
-speed 0.500000
-connected 33
 x 29
 y 14
+speed 0.500000
+connected 33
 end
 arch dungeon_magic
 x 29
@@ -5628,21 +5643,21 @@ y 7
 end
 arch button_small
 face button_sma.112
-value 1
-connected 1
 x 30
 y 7
+value 1
+connected 1
 end
 arch beholder
 name Baby dread
 hp 500
 maxhp 500
 ac -10
-randomitems dragon
-flying 0
-stand_still 1
 x 30
 y 7
+randomitems dragon
+move_type walk
+stand_still 1
 end
 arch small_stones
 x 30
@@ -5686,21 +5701,21 @@ y 11
 end
 arch button_small
 face button_sma.112
-value 1
-connected 31
 x 30
 y 11
+value 1
+connected 31
 end
 arch devil
 name Baby Jessy
 hp 500
 maxhp 500
 ac -50
+x 30
+y 11
 speed_left -7.799999
 randomitems big_wizard
 stand_still 1
-x 30
-y 11
 end
 arch furious_floor
 x 30
@@ -6391,10 +6406,10 @@ x 34
 y 2
 end
 arch pyromaniac
-speed_left -11.699997
-level 10
 x 34
 y 2
+speed_left -11.699997
+level 10
 end
 arch dungeon_magic
 x 34
@@ -6561,10 +6576,10 @@ x 34
 y 16
 end
 arch pyromaniac
-speed_left -11.699997
-level 10
 x 34
 y 16
+speed_left -11.699997
+level 10
 end
 arch dungeon_magic
 x 34
@@ -6697,10 +6712,10 @@ x 35
 y 9
 end
 arch pyromaniac
-speed_left -11.699997
-level 10
 x 35
 y 9
+speed_left -11.699997
+level 10
 end
 arch dungeon_magic
 x 35
@@ -7036,10 +7051,10 @@ x 38
 end
 arch button_small
 face button_sma.112
-value 1
-connected 2
 x 38
 y 1
+value 1
+connected 2
 end
 arch boulder
 x 38
@@ -7051,10 +7066,10 @@ y 2
 end
 arch button_small
 face button_sma.112
-value 1
-connected 12
 x 38
 y 3
+value 1
+connected 12
 end
 arch boulder
 x 38
@@ -7066,10 +7081,10 @@ y 4
 end
 arch button_small
 face button_sma.112
-value 1
-connected 22
 x 38
 y 5
+value 1
+connected 22
 end
 arch boulder
 x 38
@@ -7081,10 +7096,10 @@ y 6
 end
 arch button_small
 face button_sma.112
-value 1
-connected 32
 x 38
 y 7
+value 1
+connected 32
 end
 arch boulder
 x 38
@@ -7095,11 +7110,11 @@ x 38
 y 8
 end
 arch spikes_open
+x 38
+y 9
 speed 0.500000
 value 1
 connected 101
-x 38
-y 9
 end
 arch boulder
 x 38
@@ -7110,11 +7125,11 @@ x 38
 y 10
 end
 arch spikes_open
+x 38
+y 11
 speed 0.500000
 value 1
 connected 1101
-x 38
-y 11
 end
 arch boulder
 x 38
@@ -7125,11 +7140,11 @@ x 38
 y 12
 end
 arch spikes_open
+x 38
+y 13
 speed 0.500000
 value 1
 connected 2101
-x 38
-y 13
 end
 arch boulder
 x 38
@@ -7140,11 +7155,11 @@ x 38
 y 14
 end
 arch spikes_open
+x 38
+y 15
 speed 0.500000
 value 1
 connected 3101
-x 38
-y 15
 end
 arch boulder
 x 38
@@ -7155,10 +7170,10 @@ x 38
 y 16
 end
 arch spikes_open
-speed 0.500000
-connected 1022
 x 38
 y 17
+speed 0.500000
+connected 1022
 end
 arch food
 x 38
@@ -7170,12 +7185,12 @@ slaying dragon
 Str 0
 dam 10
 ac 1
+x 38
+y 17
 attacktype 4
 path_attuned 2
 path_denied 4
 material 32
-x 38
-y 17
 end
 arch amulet_lifesave
 name Fighter's honor
@@ -7191,10 +7206,10 @@ arch blocked
 x 39
 end
 arch spikes_open
-speed 0.500000
-connected 2
 x 39
 y 1
+speed 0.500000
+connected 2
 end
 arch boulder
 x 39
@@ -7205,10 +7220,10 @@ x 39
 y 2
 end
 arch spikes_open
-speed 0.500000
-connected 12
 x 39
 y 3
+speed 0.500000
+connected 12
 end
 arch boulder
 x 39
@@ -7219,10 +7234,10 @@ x 39
 y 4
 end
 arch spikes_open
-speed 0.500000
-connected 22
 x 39
 y 5
+speed 0.500000
+connected 22
 end
 arch boulder
 x 39
@@ -7233,10 +7248,10 @@ x 39
 y 6
 end
 arch spikes_open
-speed 0.500000
-connected 32
 x 39
 y 7
+speed 0.500000
+connected 32
 end
 arch boulder
 x 39
@@ -7247,9 +7262,9 @@ x 39
 y 8
 end
 arch button_small
-connected 102
 x 39
 y 9
+connected 102
 end
 arch sign
 name switch for fire
@@ -7261,27 +7276,27 @@ x 39
 y 10
 end
 arch button_small
-connected 1102
 x 39
 y 11
+connected 1102
 end
 arch blocked
 x 39
 y 12
 end
 arch button_small
-connected 2102
 x 39
 y 13
+connected 2102
 end
 arch blocked
 x 39
 y 14
 end
 arch button_small
-connected 3102
 x 39
 y 15
+connected 3102
 end
 arch blocked
 x 39
@@ -7289,9 +7304,9 @@ y 16
 end
 arch altar
 food 1
-connected 999
 x 39
 y 17
+connected 999
 end
 arch blocked
 x 39
@@ -7301,40 +7316,40 @@ arch blocked
 x 40
 end
 arch spikes_closed
-speed 0.500000
-connected 1
 x 40
 y 1
+speed 0.500000
+connected 1
 end
 arch blocked
 x 40
 y 2
 end
 arch spikes_closed
-speed 0.500000
-connected 11
 x 40
 y 3
+speed 0.500000
+connected 11
 end
 arch blocked
 x 40
 y 4
 end
 arch spikes_closed
-speed 0.500000
-connected 21
 x 40
 y 5
+speed 0.500000
+connected 21
 end
 arch blocked
 x 40
 y 6
 end
 arch spikes_closed
-speed 0.500000
-connected 31
 x 40
 y 7
+speed 0.500000
+connected 31
 end
 arch blocked
 x 40
@@ -7384,9 +7399,9 @@ arch blocked
 x 41
 end
 arch button_small
-connected 3
 x 41
 y 1
+connected 3
 end
 arch sign
 name for hidden grate
@@ -7398,27 +7413,27 @@ x 41
 y 2
 end
 arch button_small
-connected 13
 x 41
 y 3
+connected 13
 end
 arch blocked
 x 41
 y 4
 end
 arch button_small
-connected 23
 x 41
 y 5
+connected 23
 end
 arch blocked
 x 41
 y 6
 end
 arch button_small
-connected 33
 x 41
 y 7
+connected 33
 end
 arch blocked
 x 41
@@ -7434,13 +7449,13 @@ y 10
 end
 arch grate_open_2
 name 23
+x 41
+y 12
 speed 0.500000
 speed_left -11.100000
 value 1
 invisible 1
 connected 23
-x 41
-y 12
 end
 arch boulder
 name boulder(wizard)
@@ -7448,22 +7463,22 @@ x 41
 y 12
 end
 arch button_small
-connected 4001
 x 41
 y 13
+connected 4001
 end
 arch blocked
 x 41
 y 14
 end
 arch grate_open_2
+x 41
+y 15
 speed 0.500000
 speed_left -11.100000
 value 1
 invisible 1
 connected 13
-x 41
-y 15
 end
 arch card
 x 41
@@ -7474,13 +7489,13 @@ x 41
 y 16
 end
 arch grate_open_2
+x 41
+y 17
 speed 0.500000
 speed_left -11.100000
 value 1
 invisible 1
 connected 23
-x 41
-y 17
 end
 arch card
 x 41
@@ -7530,13 +7545,13 @@ x 42
 y 9
 end
 arch grate_open_2
+x 42
+y 10
 speed 0.500000
 speed_left -11.100000
 value 1
 invisible 1
 connected 33
-x 42
-y 10
 end
 arch boulder
 name boulder(demon)
@@ -7545,13 +7560,13 @@ y 10
 end
 arch grate_open_2
 name 13
+x 42
+y 12
 speed 0.500000
 speed_left -11.100000
 value 1
 invisible 1
 connected 13
-x 42
-y 12
 end
 arch boulder
 name boulder(dragon)
@@ -7559,9 +7574,9 @@ x 42
 y 12
 end
 arch button_small
-connected 4002
 x 42
 y 13
+connected 4002
 end
 arch blocked
 x 42
@@ -7572,9 +7587,9 @@ x 42
 y 15
 end
 arch button_small
-connected 1999
 x 42
 y 16
+connected 1999
 end
 arch blocked
 x 42
@@ -7598,13 +7613,13 @@ y 10
 end
 arch grate_open_2
 name 3
+x 43
+y 12
 speed 0.500000
 speed_left -11.100000
 value 1
 invisible 1
 connected 3
-x 43
-y 12
 end
 arch boulder
 name boulder(dread)
@@ -7612,22 +7627,22 @@ x 43
 y 12
 end
 arch button_small
-connected 4003
 x 43
 y 13
+connected 4003
 end
 arch blocked
 x 43
 y 14
 end
 arch grate_open_2
+x 43
+y 15
 speed 0.500000
 speed_left -11.100000
 value 1
 invisible 1
 connected 3
-x 43
-y 15
 end
 arch card
 x 43
@@ -7638,13 +7653,13 @@ x 43
 y 16
 end
 arch grate_open_2
+x 43
+y 17
 speed 0.500000
 speed_left -11.100000
 value 1
 invisible 1
 connected 33
-x 43
-y 17
 end
 arch card
 x 43
@@ -7659,32 +7674,22 @@ x 44
 y 8
 end
 arch blocked
-msg
-endmsg
 x 44
 y 9
 end
 arch blocked
-msg
-endmsg
 x 44
 y 10
 end
 arch blocked
-msg
-endmsg
 x 44
 y 11
 end
 arch blocked
-msg
-endmsg
 x 44
 y 12
 end
 arch blocked
-msg
-endmsg
 x 44
 y 13
 end

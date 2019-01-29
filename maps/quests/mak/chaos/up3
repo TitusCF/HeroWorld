@@ -1,13 +1,19 @@
 arch map
-name up3
+name Warriors' Tower, Level 3
+swap_time 5300
+difficulty 40
+region wilderness
+width 32
+height 30
+enter_x 17
+enter_y 13
 msg
-Creator: Magnus Kronhamn
-Email: mak@solace.mh.se
-Date: Sun Apr  9 23:46:05 2000
+Created:  2000-04-09 Magnus Kronhamn (mak@solace.mh.se)
+Modified: 2008-12-22 Rick Tanner
 endmsg
-x 32
-y 30
-value 5300
+maplore
+@quest Lorkas
+endmaplore
 end
 arch woodfloor
 end
@@ -362,7 +368,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 2
 y 5
 speed -0.400000
@@ -449,7 +455,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 2
 y 17
 speed -0.400000
@@ -556,7 +562,7 @@ maxhp 8000
 exp 150000
 dam 50
 wc -15
-ac -10
+ac -5
 x 3
 y 4
 speed -0.400000
@@ -594,7 +600,7 @@ maxhp 8000
 exp 150000
 dam 50
 wc -15
-ac -10
+ac -5
 x 3
 y 7
 speed -0.400000
@@ -662,7 +668,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 3
 y 15
 speed -0.400000
@@ -743,7 +749,7 @@ maxhp 8000
 exp 150000
 dam 50
 wc -15
-ac -10
+ac -5
 x 3
 y 27
 speed -0.400000
@@ -863,7 +869,7 @@ maxhp 8000
 exp 150000
 dam 50
 wc -15
-ac -10
+ac -5
 x 4
 y 18
 speed -0.400000
@@ -923,7 +929,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 4
 y 24
 speed -0.400000
@@ -1000,7 +1006,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 5
 y 3
 speed -0.400000
@@ -1043,7 +1049,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 5
 y 5
 speed -0.400000
@@ -1094,7 +1100,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 5
 y 9
 speed -0.400000
@@ -1249,7 +1255,7 @@ maxhp 8000
 exp 150000
 dam 50
 wc -15
-ac -10
+ac -5
 x 6
 y 7
 speed -0.400000
@@ -1311,7 +1317,7 @@ maxhp 8000
 exp 150000
 dam 50
 wc -15
-ac -10
+ac -5
 x 6
 y 15
 speed -0.400000
@@ -1379,7 +1385,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 6
 y 23
 speed -0.400000
@@ -1416,7 +1422,7 @@ maxhp 8000
 exp 150000
 dam 50
 wc -15
-ac -10
+ac -5
 x 6
 y 25
 speed -0.400000
@@ -1456,7 +1462,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 6
 y 27
 speed -0.400000
@@ -1525,7 +1531,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 7
 y 4
 speed -0.400000
@@ -1600,7 +1606,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 7
 y 13
 speed -0.400000
@@ -1655,7 +1661,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 7
 y 18
 speed -0.400000
@@ -1730,7 +1736,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 7
 y 27
 speed -0.400000
@@ -1847,7 +1853,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 8
 y 15
 speed -0.400000
@@ -1922,7 +1928,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 8
 y 24
 speed -0.400000
@@ -2103,7 +2109,7 @@ end
 arch woodfloor
 x 10
 end
-arch dwall3_3
+arch dwall_3_3
 x 10
 end
 arch woodfloor
@@ -2619,11 +2625,15 @@ arch woodfloor
 x 12
 y 13
 end
-arch swall_1_2
+arch swall_2_1_1
 x 12
 y 13
 end
 arch woodfloor
+x 12
+y 14
+end
+arch swall_1_2_half
 x 12
 y 14
 end
@@ -2686,7 +2696,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 12
 y 23
 speed -0.400000
@@ -2757,7 +2767,7 @@ maxhp 8000
 exp 150000
 dam 50
 wc -15
-ac -10
+ac -5
 x 13
 y 2
 speed -0.400000
@@ -2791,7 +2801,7 @@ maxhp 8000
 exp 150000
 dam 50
 wc -15
-ac -10
+ac -5
 x 13
 y 4
 speed -0.400000
@@ -2900,7 +2910,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 13
 y 18
 speed -0.400000
@@ -3043,7 +3053,7 @@ maxsp 200
 exp 200000
 dam 25
 wc -20
-ac -15
+ac -7
 x 14
 y 9
 speed -0.600000
@@ -3153,7 +3163,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 14
 y 25
 speed -0.400000
@@ -3276,7 +3286,7 @@ maxsp 200
 exp 200000
 dam 25
 wc -20
-ac -15
+ac -7
 x 15
 y 12
 speed -0.600000
@@ -3525,7 +3535,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 16
 y 23
 speed -0.400000
@@ -3576,7 +3586,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 16
 y 27
 speed -0.400000
@@ -3637,7 +3647,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 17
 y 2
 speed -0.400000
@@ -3674,7 +3684,7 @@ maxhp 8000
 exp 150000
 dam 50
 wc -15
-ac -10
+ac -5
 x 17
 y 4
 speed -0.400000
@@ -3785,7 +3795,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 17
 y 19
 speed -0.400000
@@ -3883,7 +3893,7 @@ arch woodfloor
 x 18
 y 6
 end
-arch dwall3_3
+arch dwall_3_3
 x 18
 y 6
 end
@@ -4010,7 +4020,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 18
 y 24
 speed -0.400000
@@ -4083,7 +4093,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 19
 y 2
 speed -0.400000
@@ -4186,7 +4196,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 19
 y 17
 speed -0.400000
@@ -4299,7 +4309,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 20
 y 4
 speed -0.400000
@@ -4494,7 +4504,7 @@ maxhp 8000
 exp 150000
 dam 50
 wc -15
-ac -10
+ac -5
 x 21
 y 10
 speed -0.400000
@@ -4527,7 +4537,7 @@ arch woodfloor
 x 21
 y 14
 end
-arch dwall3_3
+arch dwall_3_3
 x 21
 y 14
 end
@@ -4674,7 +4684,7 @@ maxhp 8000
 exp 150000
 dam 50
 wc -15
-ac -10
+ac -5
 x 22
 y 2
 speed -0.400000
@@ -4734,7 +4744,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 22
 y 8
 speed -0.400000
@@ -4977,7 +4987,7 @@ maxhp 8000
 exp 150000
 dam 50
 wc -15
-ac -10
+ac -5
 x 23
 y 25
 speed -0.400000
@@ -5079,7 +5089,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 24
 y 10
 speed -0.400000
@@ -5116,7 +5126,7 @@ maxhp 8000
 exp 150000
 dam 50
 wc -15
-ac -10
+ac -5
 x 24
 y 12
 speed -0.400000
@@ -5168,7 +5178,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 24
 y 16
 speed -0.400000
@@ -5211,7 +5221,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 24
 y 18
 speed -0.400000
@@ -5270,7 +5280,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 24
 y 23
 speed -0.400000
@@ -5345,7 +5355,7 @@ maxhp 8000
 exp 150000
 dam 50
 wc -15
-ac -10
+ac -5
 x 25
 y 3
 speed -0.400000
@@ -5483,7 +5493,7 @@ maxhp 8000
 exp 150000
 dam 50
 wc -15
-ac -10
+ac -5
 x 25
 y 28
 speed -0.400000
@@ -5537,7 +5547,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 26
 y 2
 speed -0.400000
@@ -5578,7 +5588,7 @@ maxhp 8000
 exp 150000
 dam 50
 wc -15
-ac -10
+ac -5
 x 26
 y 5
 speed -0.400000
@@ -5620,7 +5630,7 @@ maxhp 8000
 exp 150000
 dam 50
 wc -15
-ac -10
+ac -5
 x 26
 y 8
 speed -0.400000
@@ -5700,7 +5710,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 26
 y 19
 speed -0.400000
@@ -5749,7 +5759,7 @@ maxhp 8000
 exp 150000
 dam 50
 wc -15
-ac -10
+ac -5
 x 26
 y 23
 speed -0.400000
@@ -5793,7 +5803,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 26
 y 26
 speed -0.400000
@@ -5898,7 +5908,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 27
 y 11
 speed -0.400000
@@ -5961,7 +5971,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 27
 y 17
 speed -0.400000
@@ -6070,7 +6080,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 28
 y 3
 speed -0.400000
@@ -6125,7 +6135,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 28
 y 7
 speed -0.400000
@@ -6230,7 +6240,7 @@ maxhp 8000
 exp 150000
 dam 50
 wc -15
-ac -10
+ac -5
 x 28
 y 24
 speed -0.400000
@@ -6274,7 +6284,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 28
 y 27
 speed -0.400000
@@ -6365,7 +6375,7 @@ maxhp 8000
 exp 150000
 dam 50
 wc -15
-ac -10
+ac -5
 x 29
 y 10
 speed -0.400000
@@ -6399,7 +6409,7 @@ maxhp 8000
 exp 150000
 dam 50
 wc -15
-ac -10
+ac -5
 x 29
 y 12
 speed -0.400000
@@ -6449,7 +6459,7 @@ maxhp 8000
 exp 150000
 dam 50
 wc -15
-ac -10
+ac -5
 x 29
 y 17
 speed -0.400000

@@ -1,12 +1,15 @@
 arch map
-name iced lair
+name Warriors' Tower, Ice Dragons' Lair
+difficulty 25
+region wilderness
+width 29
+height 30
+enter_x 1
+enter_y 27
 msg
-Creator: Magnus Kronhamn
-Email: mak@solace.mh.se
-Date: Thu Apr 13 15:48:22 2000
+Created:  2000-04-13 Magnus Kronhamn (mak@solace.mh.se)
+Modified: 2008-12-22 Rick Tanner
 endmsg
-x 29
-y 30
 end
 arch blocked
 end
@@ -435,6 +438,10 @@ arch dungeon_floor
 x 2
 y 16
 end
+arch chinese_dragon
+x 2
+y 16
+end
 arch dungeon_floor
 x 2
 y 17
@@ -627,6 +634,10 @@ x 3
 y 18
 end
 arch dungeon_floor
+x 3
+y 19
+end
+arch chinese_dragon
 x 3
 y 19
 end
@@ -1079,6 +1090,24 @@ arch dungeon_floor
 x 6
 y 9
 end
+arch chinese_dragon
+name old chinese dragon
+Con 10
+hp 1500
+maxhp 1500
+maxsp 100
+exp 60000
+dam 30
+wc -20
+ac -10
+x 6
+y 9
+level 18
+carrying 100
+arch key2
+slaying icedkey
+end
+end
 arch dungeon_floor
 x 6
 y 10
@@ -1326,6 +1355,10 @@ arch dungeon_floor
 x 7
 y 22
 end
+arch chinese_dragon
+x 7
+y 22
+end
 arch dungeon_floor
 x 7
 y 23
@@ -1335,6 +1368,10 @@ x 7
 y 24
 end
 arch dungeon_floor
+x 7
+y 25
+end
+arch chinese_dragon
 x 7
 y 25
 end
@@ -1577,6 +1614,10 @@ x 9
 y 14
 end
 arch dungeon_floor
+x 9
+y 15
+end
+arch chinese_dragon
 x 9
 y 15
 end
@@ -2597,6 +2638,10 @@ arch dungeon_floor
 x 16
 y 18
 end
+arch chinese_dragon
+x 16
+y 18
+end
 arch dungeon_floor
 x 16
 y 19
@@ -3034,6 +3079,10 @@ arch dungeon_floor
 x 19
 y 14
 end
+arch chinese_dragon
+x 19
+y 14
+end
 arch dungeon_floor
 x 19
 y 15
@@ -3222,6 +3271,10 @@ x 20
 y 23
 end
 arch dungeon_floor
+x 20
+y 24
+end
+arch chinese_dragon
 x 20
 y 24
 end
@@ -4807,54 +4860,4 @@ end
 arch blocked
 x 28
 y 29
-end
-arch chinese_dragon
-x 2
-y 16
-end
-arch chinese_dragon
-x 3
-y 19
-end
-arch chinese_dragon
-name old chinese dragon
-Con 10
-hp 1500
-maxhp 1500
-maxsp 100
-exp 60000
-dam 30
-wc -20
-ac -10
-x 6
-y 9
-level 18
-carrying 100
-arch key2
-slaying icedkey
-end
-end
-arch chinese_dragon
-x 7
-y 22
-end
-arch chinese_dragon
-x 7
-y 25
-end
-arch chinese_dragon
-x 9
-y 15
-end
-arch chinese_dragon
-x 16
-y 18
-end
-arch chinese_dragon
-x 19
-y 14
-end
-arch chinese_dragon
-x 20
-y 24
 end

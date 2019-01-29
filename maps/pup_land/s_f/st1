@@ -1,13 +1,15 @@
 arch map
+name Shining Tower, Floor 1
+difficulty 3
 region pupland
-name st1
+width 17
+height 17
+enter_x 8
+enter_y 15
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sat Feb 10 04:27:35 1996
+Created:  1996-02-10
+Modified: 2011-12-25 Rick Tanner
 endmsg
-x 17
-y 17
 end
 arch pstone_1
 end
@@ -455,7 +457,7 @@ y 8
 end
 arch sign
 msg
-Floor1.
+Floor 1.
 endmsg
 x 5
 y 8
@@ -645,7 +647,7 @@ arch flagstone
 x 7
 y 16
 end
-arch awall_2_1_2
+arch awall_1_3
 x 7
 y 16
 end
@@ -714,16 +716,13 @@ arch magic_ear
 msg
 @match hello
 ..h.hello..m.mortal...
-@match shining|Shining
-...You must die...bec....
-........
+@match shining
+...You must die...bec.... ........
 @match *
-..be. C..care.ful.. abo ut
-..shin.ing...
+..be. C..care.ful.. abo ut ..shin.ing...
 endmsg
 x 8
 y 12
-protected 1
 connected 1
 end
 arch corpse
@@ -743,18 +742,14 @@ arch flagstone
 x 8
 y 15
 end
-arch oakdoor
-slaying cave2
-hp 8
-sp 7
-x 8
-y 15
-end
 arch flagstone
 x 8
 y 16
 end
-arch awall_2_1_2
+arch oakdoor_2
+slaying cave2
+hp 8
+sp 7
 x 8
 y 16
 end
@@ -828,7 +823,7 @@ arch flagstone
 x 9
 y 16
 end
-arch awall_2_1_2
+arch awall_1_4
 x 9
 y 16
 end

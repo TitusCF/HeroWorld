@@ -1,15 +1,17 @@
 arch map
+name Raffle 2, Level 1
+swap_time 5
+reset_timeout 3600
+difficulty 18
 region pupland
-name raffle2_u1
-msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sun Dec 29 03:15:18 1996
-endmsg
 width 28
 height 19
-reset_timeout 3600
-swap_time 5
+enter_x 2
+enter_y 16
+msg
+Created:  1996-12-29
+Modified: 2012-03-05 Rick Tanner
+endmsg
 end
 arch furious_floor
 end
@@ -158,14 +160,14 @@ y 3
 end
 arch locked_door2
 name barrier
-face enchantment.111
+slaying raffle2_exchange_op2
 msg
 You need the exchange-card.
 endmsg
-slaying raffle2_exchange_op2
-invisible 1
+face enchantment.111
 x 1
 y 3
+invisible 1
 end
 arch flagstone
 x 1
@@ -199,6 +201,10 @@ arch flagstone
 x 1
 y 7
 end
+arch troll
+x 1
+y 7
+end
 arch flagstone
 x 1
 y 8
@@ -207,11 +213,19 @@ arch flagstone
 x 1
 y 9
 end
+arch troll
+x 1
+y 9
+end
 arch flagstone
 x 1
 y 10
 end
 arch flagstone
+x 1
+y 11
+end
+arch troll
 x 1
 y 11
 end
@@ -302,21 +316,21 @@ y 3
 end
 arch key2
 name raffle ticket No.2
-face card.111
 slaying raffle2_first_chance
+face card.111
 x 2
 y 3
 end
 arch locked_door2
 name barrier
-face enchantment.111
+slaying raffle2_exchange
 msg
 You need the exchange-card.
 endmsg
-slaying raffle2_exchange
-invisible 1
+face enchantment.111
 x 2
 y 3
+invisible 1
 end
 arch flagstone
 x 2
@@ -327,19 +341,19 @@ x 2
 y 5
 end
 arch button_handle
-connected 100
 x 2
 y 5
+connected 100
 end
 arch flagstone
 x 2
 y 6
 end
 arch grate_closed_1
-speed 0.500000
-connected 100
 x 2
 y 6
+speed 0.500000
+connected 100
 end
 arch flagstone
 x 2
@@ -370,9 +384,9 @@ x 2
 y 13
 end
 arch button_handle
-connected 39
 x 2
 y 13
+connected 39
 end
 arch dungeon_magic
 x 2
@@ -383,11 +397,9 @@ x 2
 y 14
 end
 arch grate_closed_1
-msg
-endmsg
-connected 39
 x 2
 y 14
+connected 39
 end
 arch flagstone
 x 2
@@ -436,9 +448,9 @@ y 1
 end
 arch button_small
 face button_sma.112
-connected 2
 x 3
 y 1
+connected 2
 end
 arch flagstone
 x 3
@@ -464,14 +476,14 @@ y 3
 end
 arch locked_door2
 name barrier
-face enchantment.111
+slaying raffle2_exchange_op1
 msg
 You need the exchange-card.
 endmsg
-slaying raffle2_exchange_op1
-invisible 1
+face enchantment.111
 x 3
 y 3
+invisible 1
 end
 arch flagstone
 x 3
@@ -505,6 +517,10 @@ arch flagstone
 x 3
 y 7
 end
+arch troll
+x 3
+y 7
+end
 arch flagstone
 x 3
 y 8
@@ -513,11 +529,19 @@ arch flagstone
 x 3
 y 9
 end
+arch troll
+x 3
+y 9
+end
 arch flagstone
 x 3
 y 10
 end
 arch flagstone
+x 3
+y 11
+end
+arch troll
 x 3
 y 11
 end
@@ -552,8 +576,7 @@ end
 arch magic_mouth
 msg
 An inscription on the wall:
-Apply the teleporter to enter the hall of
-trolls. Don't do it when you feel afraid.
+Apply the teleporter to enter the hall of trolls.  Don't do it when you feel afraid.
 endmsg
 x 3
 y 15
@@ -566,10 +589,10 @@ arch teleporter
 slaying raffle2_u1
 hp 12
 sp 14
-speed 0.0
-type 66
 x 3
 y 15
+speed 0.0
+type 66
 end
 arch flagstone
 x 3
@@ -602,10 +625,10 @@ x 4
 y 1
 end
 arch igate_closed_2
-speed 0.500000
-connected 1
 x 4
 y 1
+speed 0.500000
+connected 1
 end
 arch flagstone
 x 4
@@ -775,10 +798,10 @@ y 1
 end
 arch button_small
 face button_sma.112
-value 1
-connected 2
 x 5
 y 1
+value 1
+connected 2
 end
 arch beholdereye
 x 5
@@ -800,11 +823,19 @@ arch flagstone
 x 5
 y 3
 end
+arch troll
+x 5
+y 3
+end
 arch flagstone
 x 5
 y 4
 end
 arch flagstone
+x 5
+y 5
+end
+arch troll
 x 5
 y 5
 end
@@ -816,11 +847,19 @@ arch flagstone
 x 5
 y 7
 end
+arch troll
+x 5
+y 7
+end
 arch flagstone
 x 5
 y 8
 end
 arch flagstone
+x 5
+y 9
+end
+arch troll
 x 5
 y 9
 end
@@ -832,6 +871,10 @@ arch flagstone
 x 5
 y 11
 end
+arch troll
+x 5
+y 11
+end
 arch flagstone
 x 5
 y 12
@@ -840,11 +883,19 @@ arch flagstone
 x 5
 y 13
 end
+arch troll
+x 5
+y 13
+end
 arch flagstone
 x 5
 y 14
 end
 arch flagstone
+x 5
+y 15
+end
+arch troll
 x 5
 y 15
 end
@@ -875,12 +926,12 @@ x 6
 y 1
 end
 arch igate_open_2
+x 6
+y 1
 speed 0.500000
 speed_left -18.100000
 value 1
 connected 1
-x 6
-y 1
 end
 arch flagstone
 x 6
@@ -988,6 +1039,10 @@ arch flagstone
 x 7
 y 3
 end
+arch troll
+x 7
+y 3
+end
 arch flagstone
 x 7
 y 4
@@ -996,11 +1051,19 @@ arch flagstone
 x 7
 y 5
 end
+arch troll
+x 7
+y 5
+end
 arch flagstone
 x 7
 y 6
 end
 arch flagstone
+x 7
+y 7
+end
+arch troll
 x 7
 y 7
 end
@@ -1016,11 +1079,19 @@ arch flagstone
 x 7
 y 10
 end
+arch troll
+x 7
+y 10
+end
 arch flagstone
 x 7
 y 11
 end
 arch flagstone
+x 7
+y 12
+end
+arch troll
 x 7
 y 12
 end
@@ -1037,6 +1108,10 @@ x 7
 y 15
 end
 arch flagstone
+x 7
+y 16
+end
+arch troll
 x 7
 y 16
 end
@@ -1122,6 +1197,10 @@ arch flagstone
 x 8
 y 14
 end
+arch troll
+x 8
+y 14
+end
 arch flagstone
 x 8
 y 15
@@ -1172,11 +1251,19 @@ arch flagstone
 x 9
 y 4
 end
+arch troll
+x 9
+y 4
+end
 arch flagstone
 x 9
 y 5
 end
 arch flagstone
+x 9
+y 6
+end
+arch troll
 x 9
 y 6
 end
@@ -1188,6 +1275,10 @@ arch flagstone
 x 9
 y 8
 end
+arch troll
+x 9
+y 8
+end
 arch flagstone
 x 9
 y 9
@@ -1196,11 +1287,19 @@ arch flagstone
 x 9
 y 10
 end
+arch troll
+x 9
+y 10
+end
 arch flagstone
 x 9
 y 11
 end
 arch flagstone
+x 9
+y 12
+end
+arch troll
 x 9
 y 12
 end
@@ -1217,6 +1316,10 @@ x 9
 y 15
 end
 arch flagstone
+x 9
+y 16
+end
+arch troll
 x 9
 y 16
 end
@@ -1306,6 +1409,10 @@ arch flagstone
 x 10
 y 14
 end
+arch troll
+x 10
+y 14
+end
 arch flagstone
 x 10
 y 15
@@ -1367,11 +1474,19 @@ arch flagstone
 x 11
 y 5
 end
+arch troll
+x 11
+y 5
+end
 arch flagstone
 x 11
 y 6
 end
 arch flagstone
+x 11
+y 7
+end
+arch troll
 x 11
 y 7
 end
@@ -1388,6 +1503,10 @@ x 11
 y 10
 end
 arch flagstone
+x 11
+y 11
+end
+arch troll
 x 11
 y 11
 end
@@ -1408,6 +1527,10 @@ x 11
 y 15
 end
 arch flagstone
+x 11
+y 16
+end
+arch troll
 x 11
 y 16
 end
@@ -1459,9 +1582,7 @@ y 3
 end
 arch magic_mouth
 msg
-You see two parting ways. Obviously
-there are two players required to
-continue.
+You see two parting ways.  Obviously there are two players required to continue.
 endmsg
 x 12
 y 3
@@ -1495,6 +1616,10 @@ x 12
 y 8
 end
 arch flagstone
+x 12
+y 9
+end
+arch troll
 x 12
 y 9
 end
@@ -1587,11 +1712,19 @@ arch flagstone
 x 13
 y 5
 end
+arch troll
+x 13
+y 5
+end
 arch flagstone
 x 13
 y 6
 end
 arch flagstone
+x 13
+y 7
+end
+arch troll
 x 13
 y 7
 end
@@ -1611,11 +1744,19 @@ arch flagstone
 x 13
 y 11
 end
+arch troll
+x 13
+y 11
+end
 arch flagstone
 x 13
 y 12
 end
 arch flagstone
+x 13
+y 13
+end
+arch troll
 x 13
 y 13
 end
@@ -1697,6 +1838,10 @@ arch flagstone
 x 14
 y 9
 end
+arch troll
+x 14
+y 9
+end
 arch flagstone
 x 14
 y 10
@@ -1718,6 +1863,10 @@ x 14
 y 14
 end
 arch flagstone
+x 14
+y 15
+end
+arch troll
 x 14
 y 15
 end
@@ -1763,6 +1912,10 @@ arch flagstone
 x 15
 y 3
 end
+arch troll
+x 15
+y 3
+end
 arch flagstone
 x 15
 y 4
@@ -1771,11 +1924,19 @@ arch flagstone
 x 15
 y 5
 end
+arch troll
+x 15
+y 5
+end
 arch flagstone
 x 15
 y 6
 end
 arch flagstone
+x 15
+y 7
+end
+arch troll
 x 15
 y 7
 end
@@ -1795,11 +1956,19 @@ arch flagstone
 x 15
 y 11
 end
+arch troll
+x 15
+y 11
+end
 arch flagstone
 x 15
 y 12
 end
 arch flagstone
+x 15
+y 13
+end
+arch troll
 x 15
 y 13
 end
@@ -1877,6 +2046,10 @@ arch flagstone
 x 16
 y 9
 end
+arch troll
+x 16
+y 9
+end
 arch flagstone
 x 16
 y 10
@@ -1898,6 +2071,10 @@ x 16
 y 14
 end
 arch flagstone
+x 16
+y 15
+end
+arch troll
 x 16
 y 15
 end
@@ -1943,6 +2120,10 @@ arch flagstone
 x 17
 y 3
 end
+arch troll
+x 17
+y 3
+end
 arch flagstone
 x 17
 y 4
@@ -1951,11 +2132,19 @@ arch flagstone
 x 17
 y 5
 end
+arch troll
+x 17
+y 5
+end
 arch flagstone
 x 17
 y 6
 end
 arch flagstone
+x 17
+y 7
+end
+arch dread
 x 17
 y 7
 end
@@ -1975,11 +2164,19 @@ arch flagstone
 x 17
 y 11
 end
+arch troll
+x 17
+y 11
+end
 arch flagstone
 x 17
 y 12
 end
 arch flagstone
+x 17
+y 13
+end
+arch troll
 x 17
 y 13
 end
@@ -2018,12 +2215,12 @@ x 18
 y 1
 end
 arch igate_open_2
+x 18
+y 1
 speed 0.500000
 speed_left -18.100000
 value 1
 connected 2
-x 18
-y 1
 end
 arch flagstone
 x 18
@@ -2065,6 +2262,10 @@ arch flagstone
 x 18
 y 9
 end
+arch troll
+x 18
+y 9
+end
 arch flagstone
 x 18
 y 10
@@ -2086,6 +2287,10 @@ x 18
 y 14
 end
 arch flagstone
+x 18
+y 15
+end
+arch troll
 x 18
 y 15
 end
@@ -2120,9 +2325,9 @@ x 19
 y 1
 end
 arch button_small
-connected 1
 x 19
 y 1
+connected 1
 end
 arch flagstone
 x 19
@@ -2156,6 +2361,10 @@ arch flagstone
 x 19
 y 7
 end
+arch troll
+x 19
+y 7
+end
 arch flagstone
 x 19
 y 8
@@ -2169,6 +2378,10 @@ x 19
 y 10
 end
 arch flagstone
+x 19
+y 11
+end
+arch troll
 x 19
 y 11
 end
@@ -2215,10 +2428,10 @@ x 20
 y 1
 end
 arch igate_closed_2
-speed 0.500000
-connected 2
 x 20
 y 1
+speed 0.500000
+connected 2
 end
 arch flagstone
 x 20
@@ -2273,6 +2486,10 @@ x 20
 y 8
 end
 arch flagstone
+x 20
+y 9
+end
+arch troll
 x 20
 y 9
 end
@@ -2347,9 +2564,9 @@ x 21
 y 1
 end
 arch button_small
-connected 1
 x 21
 y 1
+connected 1
 end
 arch flagstone
 x 21
@@ -2391,6 +2608,10 @@ arch flagstone
 x 21
 y 7
 end
+arch troll
+x 21
+y 7
+end
 arch flagstone
 x 21
 y 8
@@ -2404,6 +2625,10 @@ x 21
 y 10
 end
 arch flagstone
+x 21
+y 11
+end
+arch troll
 x 21
 y 11
 end
@@ -2490,8 +2715,8 @@ y 3
 end
 arch key2
 name additional exchange card 1
-face card.111
 slaying raffle2_exchange_op1
+face card.111
 x 22
 y 3
 end
@@ -2512,10 +2737,10 @@ x 22
 y 6
 end
 arch grate_closed_1
-speed 0.500000
-connected 102
 x 22
 y 6
+speed 0.500000
+connected 102
 end
 arch flagstone
 x 22
@@ -2526,6 +2751,10 @@ x 22
 y 8
 end
 arch flagstone
+x 22
+y 9
+end
+arch troll
 x 22
 y 9
 end
@@ -2550,10 +2779,10 @@ x 22
 y 13
 end
 arch grate_closed_1
-speed 0.500000
-connected 103
 x 22
 y 13
+speed 0.500000
+connected 103
 end
 arch flagstone
 x 22
@@ -2573,8 +2802,8 @@ y 16
 end
 arch key2
 name additional exchange card 2
-face card.111
 slaying raffle2_exchange_op2
+face card.111
 x 22
 y 16
 end
@@ -2935,11 +3164,11 @@ x 26
 end
 arch spikes_open
 name 100
+x 26
+y 2
 speed 0.500000
 value 1
 connected 100
-x 26
-y 2
 end
 arch boulder
 x 26
@@ -2947,9 +3176,9 @@ y 2
 end
 arch button_small
 name 101
-connected 101
 x 26
 y 3
+connected 101
 end
 arch blocked
 x 26
@@ -2957,17 +3186,17 @@ y 4
 end
 arch button_small
 name upper gate 102
-connected 102
 x 26
 y 5
+connected 102
 end
 arch spikes_open
 name 101
+x 26
+y 6
 speed 0.500000
 value 1
 connected 101
-x 26
-y 6
 end
 arch boulder
 x 26
@@ -2975,9 +3204,9 @@ y 6
 end
 arch button_small
 name lower gate 103
-connected 103
 x 26
 y 7
+connected 103
 end
 arch blocked
 x 26
@@ -3017,236 +3246,4 @@ end
 arch blocked
 x 27
 y 8
-end
-arch troll
-x 1
-y 7
-end
-arch troll
-x 1
-y 9
-end
-arch troll
-x 1
-y 11
-end
-arch troll
-x 3
-y 7
-end
-arch troll
-x 3
-y 9
-end
-arch troll
-x 3
-y 11
-end
-arch troll
-x 5
-y 3
-end
-arch troll
-x 5
-y 5
-end
-arch troll
-x 5
-y 7
-end
-arch troll
-x 5
-y 9
-end
-arch troll
-x 5
-y 11
-end
-arch troll
-x 5
-y 13
-end
-arch troll
-x 5
-y 15
-end
-arch troll
-x 7
-y 3
-end
-arch troll
-x 7
-y 5
-end
-arch troll
-x 7
-y 7
-end
-arch troll
-x 7
-y 10
-end
-arch troll
-x 7
-y 12
-end
-arch troll
-x 7
-y 16
-end
-arch troll
-x 8
-y 14
-end
-arch troll
-x 9
-y 4
-end
-arch troll
-x 9
-y 6
-end
-arch troll
-x 9
-y 8
-end
-arch troll
-x 9
-y 10
-end
-arch troll
-x 9
-y 12
-end
-arch troll
-x 9
-y 16
-end
-arch troll
-x 10
-y 14
-end
-arch troll
-x 11
-y 5
-end
-arch troll
-x 11
-y 7
-end
-arch troll
-x 11
-y 11
-end
-arch troll
-x 11
-y 16
-end
-arch troll
-x 12
-y 9
-end
-arch troll
-x 13
-y 5
-end
-arch troll
-x 13
-y 7
-end
-arch troll
-x 13
-y 11
-end
-arch troll
-x 13
-y 13
-end
-arch troll
-x 14
-y 9
-end
-arch troll
-x 14
-y 15
-end
-arch troll
-x 15
-y 3
-end
-arch troll
-x 15
-y 5
-end
-arch troll
-x 15
-y 7
-end
-arch troll
-x 15
-y 11
-end
-arch troll
-x 15
-y 13
-end
-arch troll
-x 16
-y 9
-end
-arch troll
-x 16
-y 15
-end
-arch troll
-x 17
-y 3
-end
-arch troll
-x 17
-y 5
-end
-arch dread
-x 17
-y 7
-end
-arch troll
-x 17
-y 11
-end
-arch troll
-x 17
-y 13
-end
-arch troll
-x 18
-y 9
-end
-arch troll
-x 18
-y 15
-end
-arch troll
-x 19
-y 7
-end
-arch troll
-x 19
-y 11
-end
-arch troll
-x 20
-y 9
-end
-arch troll
-x 21
-y 7
-end
-arch troll
-x 21
-y 11
-end
-arch troll
-x 22
-y 9
 end

@@ -1,15 +1,15 @@
 arch map
+name Nurnberg Storehouse
+difficulty 45
 region nurnberg
-name storehouse
+width 29
+height 34
+enter_x 14
+enter_y 32
 msg
-Creator: Andreas Vogl
-Email: red.blaze@gmx.net
-Date: Mon Dec 25 02:35:28 2000
+Created:  2000-12-25 Andreas Vogl (red.blaze@gmx.net)
+Modified: 2012-03-04 Rick Tanner
 endmsg
-hp 14
-sp 33
-x 29
-y 34
 end
 arch grass
 end
@@ -597,6 +597,10 @@ x 3
 y 16
 end
 arch dirtfloor
+x 3
+y 17
+end
+arch dragon
 x 3
 y 17
 end
@@ -834,6 +838,10 @@ arch dirtfloor
 x 4
 y 24
 end
+arch chinese_dragon
+x 4
+y 24
+end
 arch dirtfloor
 x 4
 y 25
@@ -949,6 +957,10 @@ x 5
 y 12
 end
 arch dirtfloor
+x 5
+y 13
+end
+arch giant
 x 5
 y 13
 end
@@ -1147,6 +1159,10 @@ arch dirtfloor
 x 6
 y 18
 end
+arch dread
+x 6
+y 18
+end
 arch dirtfloor
 x 6
 y 19
@@ -1204,6 +1220,10 @@ x 6
 y 27
 end
 arch dirtfloor
+x 6
+y 28
+end
+arch chinese_dragon
 x 6
 y 28
 end
@@ -1310,6 +1330,10 @@ arch dirtfloor
 x 7
 y 16
 end
+arch dread
+x 7
+y 16
+end
 arch dirtfloor
 x 7
 y 17
@@ -1351,6 +1375,10 @@ x 7
 y 25
 end
 arch dirtfloor
+x 7
+y 26
+end
+arch dragon
 x 7
 y 26
 end
@@ -1472,6 +1500,10 @@ arch dirtfloor
 x 8
 y 10
 end
+arch giant
+x 8
+y 10
+end
 arch dirtfloor
 x 8
 y 11
@@ -1545,6 +1577,10 @@ x 8
 y 23
 end
 arch dirtfloor
+x 8
+y 24
+end
+arch dread
 x 8
 y 24
 end
@@ -2134,11 +2170,19 @@ arch dirtfloor
 x 11
 y 11
 end
+arch big_dragon
+x 11
+y 11
+end
 arch dirtfloor
 x 11
 y 12
 end
 arch dirtfloor
+x 11
+y 13
+end
+arch dragon
 x 11
 y 13
 end
@@ -2187,6 +2231,10 @@ x 11
 y 21
 end
 arch dirtfloor
+x 11
+y 22
+end
+arch troll
 x 11
 y 22
 end
@@ -2374,11 +2422,19 @@ arch dirtfloor
 x 12
 y 18
 end
+arch titan
+x 12
+y 18
+end
 arch dirtfloor
 x 12
 y 19
 end
 arch dirtfloor
+x 12
+y 20
+end
+arch giant
 x 12
 y 20
 end
@@ -2530,6 +2586,10 @@ arch dirtfloor
 x 13
 y 9
 end
+arch dragon
+x 13
+y 9
+end
 arch dirtfloor
 x 13
 y 10
@@ -2587,6 +2647,10 @@ x 13
 y 20
 end
 arch dirtfloor
+x 13
+y 21
+end
+arch giant
 x 13
 y 21
 end
@@ -2768,6 +2832,10 @@ arch dirtfloor
 x 14
 y 15
 end
+arch giant
+x 14
+y 15
+end
 arch dirtfloor
 x 14
 y 16
@@ -2842,10 +2910,7 @@ arch magic_mouth
 name 1
 msg
 The Farmer Ted says:
-Now I can finally deliver those
-potatoes to the "orcchop". Thank you so
-much! I have opened the northern room
-for you. Take whatever you want.
+Now I can finally deliver those potatoes to the "orcchop."  Thank you so much! I have opened the northern room for you.   Take whatever you want.
 endmsg
 x 14
 y 29
@@ -2867,15 +2932,11 @@ arch broo
 name Farmer Ted
 msg
 @match yes|favour
-I need 16 sacks of my good potatoes.
-Please fetch them from upstairs and put
-them on the table to the right.
+I need 16 sacks of my good potatoes.  Please fetch them from upstairs and put them on the table to the right.
 @match no
 You are so egoistic!
 @match *
-Oh no! The food in my storehouse has
-attracted lots of hungry, nasty
-creatures. Would you do me a favour?
+Oh no! The food in my storehouse has attracted lots of hungry, nasty creatures.  Would you do me a favour?
 endmsg
 x 14
 y 30
@@ -2911,7 +2972,7 @@ arch dirtfloor
 x 14
 y 33
 end
-arch oakdoor
+arch oakdoor_2
 slaying city
 hp 26
 sp 10
@@ -2998,6 +3059,10 @@ arch dirtfloor
 x 15
 y 10
 end
+arch big_dragon
+x 15
+y 10
+end
 arch dirtfloor
 x 15
 y 11
@@ -3007,6 +3072,10 @@ x 15
 y 12
 end
 arch dirtfloor
+x 15
+y 13
+end
+arch dragon
 x 15
 y 13
 end
@@ -3034,6 +3103,10 @@ arch dirtfloor
 x 15
 y 18
 end
+arch giant
+x 15
+y 18
+end
 arch dirtfloor
 x 15
 y 19
@@ -3047,6 +3120,10 @@ x 15
 y 21
 end
 arch dirtfloor
+x 15
+y 22
+end
+arch titan
 x 15
 y 22
 end
@@ -3247,6 +3324,10 @@ arch dirtfloor
 x 16
 y 17
 end
+arch giant
+x 16
+y 17
+end
 arch dirtfloor
 x 16
 y 18
@@ -3365,11 +3446,7 @@ arch tome
 name the Siegfried-Saga
 msg
 ...
-By defeating the Evil Masters,
-Siegfried saved the world.
-We are the heirs of his bravery,
-upholding his spirit is our fait,
-our humble mission.
+By defeating the Evil Masters, Siegfried saved the world.  We are the heirs of his bravery, upholding his spirit is our fate, our humble mission.
 ...
 endmsg
 x 17
@@ -3480,6 +3557,10 @@ arch dirtfloor
 x 17
 y 20
 end
+arch giant
+x 17
+y 20
+end
 arch dirtfloor
 x 17
 y 21
@@ -3489,6 +3570,10 @@ x 17
 y 22
 end
 arch dirtfloor
+x 17
+y 23
+end
+arch giant
 x 17
 y 23
 end
@@ -3650,6 +3735,10 @@ arch dirtfloor
 x 18
 y 14
 end
+arch dread
+x 18
+y 14
+end
 arch dirtfloor
 x 18
 y 15
@@ -3723,6 +3812,10 @@ x 18
 y 24
 end
 arch dirtfloor
+x 18
+y 25
+end
+arch troll
 x 18
 y 25
 end
@@ -4150,6 +4243,10 @@ arch dirtfloor
 x 20
 y 17
 end
+arch dread
+x 20
+y 17
+end
 arch dirtfloor
 x 20
 y 18
@@ -4171,6 +4268,10 @@ x 20
 y 20
 end
 arch dirtfloor
+x 20
+y 21
+end
+arch behemoth
 x 20
 y 21
 end
@@ -4207,6 +4308,10 @@ x 20
 y 27
 end
 arch dirtfloor
+x 20
+y 28
+end
+arch dragon
 x 20
 y 28
 end
@@ -4735,6 +4840,10 @@ arch dirtfloor
 x 23
 y 24
 end
+arch behemoth
+x 23
+y 24
+end
 arch dirtfloor
 x 23
 y 25
@@ -4849,6 +4958,10 @@ arch dirtfloor
 x 24
 y 12
 end
+arch dread
+x 24
+y 12
+end
 arch dirtfloor
 x 24
 y 13
@@ -4898,6 +5011,10 @@ x 24
 y 21
 end
 arch dirtfloor
+x 24
+y 22
+end
+arch dragon
 x 24
 y 22
 end
@@ -5092,6 +5209,10 @@ x 25
 y 24
 end
 arch dirtfloor
+x 25
+y 25
+end
+arch giant
 x 25
 y 25
 end
@@ -5786,136 +5907,4 @@ end
 arch mine3
 x 28
 y 33
-end
-arch dragon
-x 3
-y 17
-end
-arch chinese_dragon
-x 4
-y 24
-end
-arch giant
-x 5
-y 13
-end
-arch dread
-x 6
-y 18
-end
-arch chinese_dragon
-x 6
-y 28
-end
-arch dread
-x 7
-y 16
-end
-arch dragon
-x 7
-y 26
-end
-arch giant
-x 8
-y 10
-end
-arch dread
-x 8
-y 24
-end
-arch big_dragon
-x 11
-y 11
-end
-arch dragon
-x 11
-y 13
-end
-arch troll
-x 11
-y 22
-end
-arch titan
-x 12
-y 18
-end
-arch giant
-x 12
-y 20
-end
-arch dragon
-x 13
-y 9
-end
-arch giant
-x 13
-y 21
-end
-arch giant
-x 14
-y 15
-end
-arch big_dragon
-x 15
-y 10
-end
-arch dragon
-x 15
-y 13
-end
-arch giant
-x 15
-y 18
-end
-arch titan
-x 15
-y 22
-end
-arch giant
-x 16
-y 17
-end
-arch giant
-x 17
-y 20
-end
-arch giant
-x 17
-y 23
-end
-arch dread
-x 18
-y 14
-end
-arch troll
-x 18
-y 25
-end
-arch dread
-x 20
-y 17
-end
-arch behemoth
-x 20
-y 21
-end
-arch dragon
-x 20
-y 28
-end
-arch behemoth
-x 23
-y 24
-end
-arch dread
-x 24
-y 12
-end
-arch dragon
-x 24
-y 22
-end
-arch giant
-x 25
-y 25
 end

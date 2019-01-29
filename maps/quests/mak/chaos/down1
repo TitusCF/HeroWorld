@@ -1,16 +1,19 @@
 arch map
-name down1
+name Warriors' Tower, Dungeon Level 1
 reset_timeout 7200
-difficulty 13
+difficulty 50
+region wilderness
 width 32
 height 29
-enter_x 1
+enter_x 15
 enter_y 1
 msg
-Creator: Magnus Kronhamn
-Email: mak@solace.mh.se
-Date: Sun Apr  9 23:46:05 2000
+Created:  2000-04-09 Magnus Kronhamn (mak@solace.mh.se)
+Modified: 2012-03-09 Rick Tanner
 endmsg
+maplore
+@quest Lorkas
+endmaplore
 end
 arch dungeon_floor
 end
@@ -202,7 +205,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 1
 y 1
 speed -0.700000
@@ -269,7 +272,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 1
 y 10
 speed -0.700000
@@ -566,7 +569,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 2
 y 25
 speed -0.700000
@@ -594,7 +597,7 @@ arch dungeon_floor
 x 2
 y 27
 end
-arch oakdoor
+arch stair_3_down
 slaying down2
 hp 14
 sp 15
@@ -1141,7 +1144,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 6
 y 3
 speed -0.700000
@@ -1188,7 +1191,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 6
 y 7
 speed -0.700000
@@ -2089,7 +2092,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 11
 y 5
 speed -0.700000
@@ -2193,8 +2196,7 @@ y 21
 end
 arch magic_mouth
 msg
-These kobolds seem to have gone insane
-by the madness of this place
+These kobolds seem to have gone insane by the madness of this place.
 endmsg
 x 11
 y 22
@@ -2281,7 +2283,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 12
 y 8
 speed -0.700000
@@ -2437,7 +2439,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 13
 y 4
 speed -0.700000
@@ -2534,7 +2536,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 13
 y 16
 speed -0.700000
@@ -2585,7 +2587,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 13
 y 21
 speed -0.700000
@@ -2690,7 +2692,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 14
 y 7
 speed -0.700000
@@ -2860,7 +2862,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 15
 y 4
 speed -0.700000
@@ -2949,7 +2951,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 15
 y 14
 speed -0.700000
@@ -3000,7 +3002,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 15
 y 19
 speed -0.700000
@@ -3266,7 +3268,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 17
 y 6
 speed -0.700000
@@ -3466,7 +3468,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 18
 y 9
 speed -0.700000
@@ -3591,7 +3593,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 18
 y 23
 speed -0.400000
@@ -3668,7 +3670,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 19
 y 4
 speed -0.700000
@@ -3707,7 +3709,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 19
 y 6
 speed -0.700000
@@ -3937,7 +3939,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 20
 y 16
 speed -0.700000
@@ -3980,7 +3982,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 20
 y 19
 speed -0.700000
@@ -4529,7 +4531,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 23
 y 23
 speed -0.400000
@@ -4605,7 +4607,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 24
 y 3
 speed -0.700000
@@ -4656,7 +4658,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 24
 y 8
 speed -0.700000
@@ -4719,7 +4721,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 24
 y 14
 speed -0.700000
@@ -4920,7 +4922,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 25
 y 20
 speed -0.700000
@@ -5292,7 +5294,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 27
 y 23
 speed -0.700000
@@ -5661,7 +5663,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 30
 y 1
 speed -0.700000
@@ -5728,7 +5730,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 30
 y 10
 speed -0.700000
@@ -5783,7 +5785,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 30
 y 15
 speed -0.700000
@@ -5826,7 +5828,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 30
 y 18
 speed -0.700000

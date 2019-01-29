@@ -1,16 +1,19 @@
 arch map
-name down5
+name Warriors' Tower, Rancid's Chamber
 reset_timeout 7200
-difficulty 13
+difficulty 99
+region wilderness
 width 23
 height 26
-enter_x 1
-enter_y 1
+enter_x 11
+enter_y 22
 msg
-Creator: Magnus Kronhamn
-Email: mak@solace.mh.se
-Date: Sun Apr  9 23:46:05 2000
+Created:  2000-04-09 Magnus Kronhamn (mak@solace.mh.se)
+Modified: 2011-12-27 Rick Tanner
 endmsg
+maplore
+@quest Lorkas
+endmaplore
 end
 arch blocked
 end
@@ -988,7 +991,7 @@ end
 arch pillars
 x 8
 y 11
-no_pass 1
+move_block all
 end
 arch blackmarble
 x 8
@@ -1017,7 +1020,7 @@ end
 arch pillars
 x 8
 y 17
-no_pass 1
+move_block all
 end
 arch blackmarble
 x 8
@@ -1240,13 +1243,17 @@ y 12
 end
 arch afloor_right
 name floor
+slaying fallen
+hp 2
+sp 31
 x 10
 y 13
+speed 0.000000
+connected 1
+is_animated 0
 end
-arch teleporter
-name pentagram
+arch pentagram_111
 slaying fallen
-face pentagram.111
 hp 2
 sp 31
 x 10
@@ -1260,34 +1267,10 @@ name floor
 x 10
 y 14
 end
-arch teleporter
-name pentagram
-slaying fallen
-face pentagram.121
-hp 2
-sp 31
-x 10
-y 14
-speed 0.000000
-connected 1
-is_animated 0
-end
 arch afloor_right
 name floor
 x 10
 y 15
-end
-arch teleporter
-name pentagram
-slaying fallen
-face pentagram.131
-hp 2
-sp 31
-x 10
-y 15
-speed 0.000000
-connected 1
-is_animated 0
 end
 arch afloor_right
 name floor
@@ -1411,7 +1394,7 @@ sp 500
 maxsp 500
 exp 1000000
 dam 80
-ac -40
+ac -17
 x 11
 y 10
 speed -0.600000
@@ -1476,22 +1459,9 @@ name floor
 x 11
 y 13
 end
-arch teleporter
-name pentagram
-slaying fallen
-face pentagram.112
-hp 2
-sp 31
-x 11
-y 13
-speed 0.000000
-connected 1
-is_animated 0
-end
 arch magic_mouth
 msg
-This pentagram seems to hunger for
-a sacrifice.
+This pentagram seems to hunger for a sacrifice.
 endmsg
 x 11
 y 14
@@ -1509,34 +1479,10 @@ name floor
 x 11
 y 14
 end
-arch teleporter
-name pentagram
-slaying fallen
-face pentagram.122
-hp 2
-sp 31
-x 11
-y 14
-speed 0.000000
-connected 1
-is_animated 0
-end
 arch afloor_right
 name floor
 x 11
 y 15
-end
-arch teleporter
-name pentagram
-slaying fallen
-face pentagram.132
-hp 2
-sp 31
-x 11
-y 15
-speed 0.000000
-connected 1
-is_animated 0
 end
 arch afloor_right
 name floor
@@ -1660,51 +1606,15 @@ name floor
 x 12
 y 13
 end
-arch teleporter
-name pentagram
-slaying fallen
-face pentagram.113
-hp 2
-sp 31
-x 12
-y 13
-speed 0.000000
-connected 1
-is_animated 0
-end
 arch afloor_right
 name floor
 x 12
 y 14
 end
-arch teleporter
-name pentagram
-slaying fallen
-face pentagram.123
-hp 2
-sp 31
-x 12
-y 14
-speed 0.000000
-connected 1
-is_animated 0
-end
 arch afloor_right
 name floor
 x 12
 y 15
-end
-arch teleporter
-name pentagram
-slaying fallen
-face pentagram.133
-hp 2
-sp 31
-x 12
-y 15
-speed 0.000000
-connected 1
-is_animated 0
 end
 arch afloor_right
 name floor
@@ -1939,7 +1849,7 @@ end
 arch pillars
 x 14
 y 11
-no_pass 1
+move_block all
 end
 arch blackmarble
 x 14
@@ -1968,7 +1878,7 @@ end
 arch pillars
 x 14
 y 17
-no_pass 1
+move_block all
 end
 arch blackmarble
 x 14

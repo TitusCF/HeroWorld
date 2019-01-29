@@ -1,12 +1,15 @@
 arch map
+name Tavern
+difficulty 1
 region ancientpupland
-name tavern
+width 16
+height 18
+enter_x 1
+enter_y 16
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue May 21 22:59:59 1996
+Created:  1996-05-21
+Modified: 2012-02-26 Rick Tanner
 endmsg
-y 18
 end
 arch woodfloor
 end
@@ -256,7 +259,7 @@ arch woodfloor
 x 1
 y 17
 end
-arch oakdoor
+arch oakdoor_2
 slaying village
 hp 12
 sp 11
@@ -304,7 +307,7 @@ end
 arch barbarian
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face barbarian.111
 hp 100
@@ -312,6 +315,7 @@ x 2
 y 4
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -334,6 +338,7 @@ x 2
 y 5
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -348,7 +353,7 @@ end
 arch barbarian
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face barbarian.111
 hp 100
@@ -356,6 +361,7 @@ x 2
 y 6
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -378,6 +384,7 @@ x 2
 y 7
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -404,6 +411,7 @@ x 2
 y 8
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -447,10 +455,7 @@ arch sailor
 name lonely man
 msg
 @match *
-Look at those fools. They believe in
-Siegfried, their `hero'. They are so
-scared, they would believe in anything
-as long as it makes them feel better! 
+Look at those fools.  They believe in Siegfried, their `hero.'  They are so scared, they would believe in anything as long as it makes them feel better!
 endmsg
 hp 180
 maxhp 180
@@ -528,24 +533,19 @@ y 2
 end
 arch priest
 msg
-@match Necromancer|necromancer
-He is very nasty because he dislikes
-Siegfried. He lives in the mountains.
-But Siegfried is kind enough to let
-him live for another weak or two.
-@match Hole|hole
-Monsters manage to come out.
-I guess they are Necromancer's work.
+@match necromancer
+He is very nasty because he dislikes Siegfried.  He lives in the mountains.  But Siegfried is kind enough to let him live for another week or two.
+@match hole
+Monsters manage to come out.  I guess they are Necromancer's work.
 @match *
-There is a Hole in this village.
-Many monsters live in that hole.
-Siegfried prevents them from coming out.
+There is a Hole in this village.  Many monsters live in that hole.  Siegfried prevents them from coming out.
 endmsg
 face priest.131
 hp 100
 x 3
 y 2
 type 0
+move_type walk
 monster 1
 friendly 1
 end
@@ -576,6 +576,7 @@ x 3
 y 4
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -598,6 +599,7 @@ x 3
 y 5
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -612,7 +614,7 @@ end
 arch thief
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face thief.111
 hp 100
@@ -620,6 +622,7 @@ x 3
 y 6
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -638,7 +641,7 @@ end
 arch barbarian
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face barbarian.111
 hp 100
@@ -646,6 +649,7 @@ x 3
 y 7
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -794,7 +798,7 @@ end
 arch barbarian
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face barbarian.111
 hp 100
@@ -802,6 +806,7 @@ x 4
 y 4
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -816,7 +821,7 @@ end
 arch barbarian
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face barbarian.111
 hp 100
@@ -824,6 +829,7 @@ x 4
 y 5
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -838,7 +844,7 @@ end
 arch thief
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face thief.111
 hp 100
@@ -846,6 +852,7 @@ x 4
 y 6
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -860,7 +867,7 @@ end
 arch barbarian
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face barbarian.111
 hp 100
@@ -868,6 +875,7 @@ x 4
 y 7
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1004,7 +1012,7 @@ end
 arch thief
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face thief.111
 hp 100
@@ -1012,6 +1020,7 @@ x 5
 y 4
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1026,7 +1035,7 @@ end
 arch thief
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face thief.111
 hp 100
@@ -1034,6 +1043,7 @@ x 5
 y 5
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1056,6 +1066,7 @@ x 5
 y 6
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1086,6 +1097,7 @@ x 5
 y 8
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1112,7 +1124,7 @@ end
 arch thief
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face thief.111
 hp 100
@@ -1120,6 +1132,7 @@ x 5
 y 10
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1219,24 +1232,14 @@ y 2
 end
 arch siegfried
 msg
-@match Cordish|cordish
-Psst! You know my old name, don't you?
-I want to have a talk with you.
-There is a switch in the tree of my
-house. 
-@match [Yy]ou killed [Jj]acob
-Hahaha!
-I love such kind of joke.
-BTW, I wanna invite you to dinner.
-There is a switch in the tree of my
-house. 
-I'll be waiting for you :)
-@match no|No
-You refuse to fetch my beer? Don't
-forget that you all owe me for my
-heroic deeds!
+@match cordish
+Psst! You know my old name, don't you? I want to have a talk with you.  There is a switch in the tree of my house.
+@match you killed jacob
+Hahaha! I love such kind of joke.  BTW, I wanna invite you to dinner.  There is a switch in the tree of my house.  I'll be waiting for you :)
+@match no
+You refuse to fetch my beer? Don't forget that you all owe me for my heroic deeds!
 @match *
-Hello. Please, fetch me some beer.
+Hello.  Please, fetch me some beer.
 endmsg
 x 6
 y 2
@@ -1269,7 +1272,7 @@ end
 arch barbarian
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face barbarian.111
 hp 100
@@ -1277,6 +1280,7 @@ x 6
 y 5
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1291,7 +1295,7 @@ end
 arch barbarian
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face barbarian.111
 hp 100
@@ -1299,6 +1303,7 @@ x 6
 y 6
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1313,7 +1318,7 @@ end
 arch thief
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face thief.111
 hp 100
@@ -1321,6 +1326,7 @@ x 6
 y 7
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1335,7 +1341,7 @@ end
 arch barbarian
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face barbarian.111
 hp 100
@@ -1343,6 +1349,7 @@ x 6
 y 8
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1361,7 +1368,7 @@ end
 arch barbarian
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face barbarian.111
 hp 100
@@ -1369,6 +1376,7 @@ x 6
 y 9
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1489,7 +1497,7 @@ end
 arch thief
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face thief.111
 hp 100
@@ -1497,6 +1505,7 @@ x 7
 y 4
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1511,7 +1520,7 @@ end
 arch thief
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face thief.111
 hp 100
@@ -1519,6 +1528,7 @@ x 7
 y 5
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1533,7 +1543,7 @@ end
 arch thief
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face thief.111
 hp 100
@@ -1541,6 +1551,7 @@ x 7
 y 6
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1555,7 +1566,7 @@ end
 arch barbarian
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face barbarian.111
 hp 100
@@ -1563,6 +1574,7 @@ x 7
 y 7
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1593,6 +1605,7 @@ x 7
 y 9
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1733,6 +1746,7 @@ x 8
 y 5
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1747,7 +1761,7 @@ end
 arch barbarian
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face barbarian.111
 hp 100
@@ -1755,6 +1769,7 @@ x 8
 y 6
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1781,7 +1796,7 @@ end
 arch thief
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face thief.111
 hp 100
@@ -1789,6 +1804,7 @@ x 8
 y 8
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1819,6 +1835,7 @@ x 8
 y 10
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1918,17 +1935,10 @@ y 3
 end
 arch sage
 msg
-@match Servant|servant
-Siegfried's servant got killed during
-the battle. He obviously wasn't much
-of help.
-@match Siegfried|siegfried
-We have been suffering from evil
-monsters for a long time.
-Six months ago, he and his servant
-defeated their leader, and locked the
-rest of them into the castle. Siegfried
-saved us!
+@match servant
+Siegfried's servant got killed during the battle.  He obviously wasn't much of help.
+@match siegfried
+We have been suffering from evil monsters for a long time.  Six months ago, he and his servant defeated their leader, and locked the rest of them into the castle.  Siegfried saved us!
 @match *
 Siegfried is the hero!
 endmsg
@@ -1965,6 +1975,7 @@ x 9
 y 5
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1979,7 +1990,7 @@ end
 arch thief
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face thief.111
 hp 100
@@ -1987,6 +1998,7 @@ x 9
 y 6
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -2005,7 +2017,7 @@ end
 arch barbarian
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face barbarian.111
 hp 100
@@ -2013,6 +2025,7 @@ x 9
 y 7
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -2051,6 +2064,7 @@ x 9
 y 9
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -2494,8 +2508,8 @@ end
 arch table_4
 x 12
 y 1
+move_block all
 no_pick 1
-no_pass 1
 end
 arch dungeon_magic
 x 12
@@ -2508,8 +2522,8 @@ end
 arch table_4
 x 12
 y 2
+move_block all
 no_pick 1
-no_pass 1
 end
 arch dungeon_magic
 x 12
@@ -2522,8 +2536,8 @@ end
 arch table_4
 x 12
 y 3
+move_block all
 no_pick 1
-no_pass 1
 end
 arch dungeon_magic
 x 12
@@ -2536,8 +2550,8 @@ end
 arch table_4
 x 12
 y 4
+move_block all
 no_pick 1
-no_pass 1
 end
 arch dungeon_magic
 x 12
@@ -2550,8 +2564,8 @@ end
 arch table_4
 x 12
 y 5
+move_block all
 no_pick 1
-no_pass 1
 end
 arch dungeon_magic
 x 12
@@ -2564,8 +2578,8 @@ end
 arch table_4
 x 12
 y 6
+move_block all
 no_pick 1
-no_pass 1
 end
 arch dungeon_magic
 x 12
@@ -2578,8 +2592,8 @@ end
 arch table_4
 x 12
 y 7
+move_block all
 no_pick 1
-no_pass 1
 end
 arch dungeon_magic
 x 12
@@ -2592,8 +2606,8 @@ end
 arch table_4
 x 12
 y 8
+move_block all
 no_pick 1
-no_pass 1
 end
 arch dungeon_magic
 x 12
@@ -2606,8 +2620,8 @@ end
 arch table_4
 x 12
 y 9
+move_block all
 no_pick 1
-no_pass 1
 end
 arch dungeon_magic
 x 12
@@ -2620,8 +2634,8 @@ end
 arch table_4
 x 12
 y 10
+move_block all
 no_pick 1
-no_pass 1
 end
 arch dungeon_magic
 x 12
@@ -2634,8 +2648,8 @@ end
 arch table_4
 x 12
 y 11
+move_block all
 no_pick 1
-no_pass 1
 end
 arch dungeon_magic
 x 12
@@ -2648,8 +2662,8 @@ end
 arch table_4
 x 12
 y 12
+move_block all
 no_pick 1
-no_pass 1
 end
 arch dungeon_magic
 x 12
@@ -2662,8 +2676,8 @@ end
 arch table_4
 x 12
 y 13
+move_block all
 no_pick 1
-no_pass 1
 end
 arch dungeon_magic
 x 12
@@ -2676,8 +2690,8 @@ end
 arch table_4
 x 12
 y 14
+move_block all
 no_pick 1
-no_pass 1
 end
 arch dungeon_magic
 x 12
@@ -2690,8 +2704,8 @@ end
 arch table_4
 x 12
 y 15
+move_block all
 no_pick 1
-no_pass 1
 end
 arch dungeon_magic
 x 12
@@ -2704,8 +2718,8 @@ end
 arch table_4
 x 12
 y 16
+move_block all
 no_pick 1
-no_pass 1
 end
 arch woodfloor
 x 12
@@ -2737,8 +2751,7 @@ arch man
 name barkeeper
 msg
 @match *
-Siegfried is so brave. We don't have to
-be scared anymore.  
+Siegfried is so brave.  We don't have to be scared anymore.
 endmsg
 face man.171
 hp 180
@@ -2767,8 +2780,7 @@ arch man
 name barkeeper
 msg
 @match *
-Want some beer? It's for free today
-because Siegfried said so.
+Want some beer? It's for free today because Siegfried said so.
 endmsg
 face man.171
 hp 180

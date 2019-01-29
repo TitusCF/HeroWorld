@@ -1,57 +1,47 @@
 arch map
+name Ancient Ruins, Cave
+difficulty 28
 region pupland
-name cave1
+width 20
+height 16
+enter_y 7
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Fri Feb  9 23:05:38 1996
+Created:  1996-02-09
+Modified: 2011-12-24 Rick Tanner
 endmsg
-x 20
 end
 arch pstone_1
 end
 arch blocked
-msg
-endmsg
 end
 arch pstone_1
 y 1
 end
 arch blocked
-msg
-endmsg
 y 1
 end
 arch pstone_1
 y 2
 end
 arch blocked
-msg
-endmsg
 y 2
 end
 arch pstone_1
 y 3
 end
 arch blocked
-msg
-endmsg
 y 3
 end
 arch pstone_1
 y 4
 end
 arch blocked
-msg
-endmsg
 y 4
 end
 arch pstone_1
 y 5
 end
 arch blocked
-msg
-endmsg
 y 5
 end
 arch pstone_1
@@ -103,32 +93,24 @@ arch pstone_1
 y 13
 end
 arch blocked
-msg
-endmsg
 y 13
 end
 arch pstone_1
 y 14
 end
 arch blocked
-msg
-endmsg
 y 14
 end
 arch pstone_1
 y 15
 end
 arch blocked
-msg
-endmsg
 y 15
 end
 arch pstone_1
 x 1
 end
 arch blocked
-msg
-endmsg
 x 1
 end
 arch pstone_1
@@ -136,8 +118,6 @@ x 1
 y 1
 end
 arch blocked
-msg
-endmsg
 x 1
 y 1
 end
@@ -146,8 +126,6 @@ x 1
 y 2
 end
 arch blocked
-msg
-endmsg
 x 1
 y 2
 end
@@ -156,8 +134,6 @@ x 1
 y 3
 end
 arch blocked
-msg
-endmsg
 x 1
 y 3
 end
@@ -166,8 +142,6 @@ x 1
 y 4
 end
 arch blocked
-msg
-endmsg
 x 1
 y 4
 end
@@ -176,8 +150,6 @@ x 1
 y 5
 end
 arch blocked
-msg
-endmsg
 x 1
 y 5
 end
@@ -230,8 +202,6 @@ x 1
 y 13
 end
 arch blocked
-msg
-endmsg
 x 1
 y 13
 end
@@ -240,8 +210,6 @@ x 1
 y 14
 end
 arch blocked
-msg
-endmsg
 x 1
 y 14
 end
@@ -250,8 +218,6 @@ x 1
 y 15
 end
 arch blocked
-msg
-endmsg
 x 1
 y 15
 end
@@ -259,8 +225,6 @@ arch pstone_1
 x 2
 end
 arch blocked
-msg
-endmsg
 x 2
 end
 arch pstone_1
@@ -268,8 +232,6 @@ x 2
 y 1
 end
 arch blocked
-msg
-endmsg
 x 2
 y 1
 end
@@ -278,8 +240,6 @@ x 2
 y 2
 end
 arch blocked
-msg
-endmsg
 x 2
 y 2
 end
@@ -288,8 +248,6 @@ x 2
 y 3
 end
 arch blocked
-msg
-endmsg
 x 2
 y 3
 end
@@ -298,8 +256,6 @@ x 2
 y 4
 end
 arch blocked
-msg
-endmsg
 x 2
 y 4
 end
@@ -308,8 +264,6 @@ x 2
 y 5
 end
 arch blocked
-msg
-endmsg
 x 2
 y 5
 end
@@ -374,8 +328,6 @@ x 2
 y 14
 end
 arch blocked
-msg
-endmsg
 x 2
 y 14
 end
@@ -384,8 +336,6 @@ x 2
 y 15
 end
 arch blocked
-msg
-endmsg
 x 2
 y 15
 end
@@ -393,8 +343,6 @@ arch pstone_1
 x 3
 end
 arch blocked
-msg
-endmsg
 x 3
 end
 arch pstone_1
@@ -402,8 +350,6 @@ x 3
 y 1
 end
 arch blocked
-msg
-endmsg
 x 3
 y 1
 end
@@ -412,8 +358,6 @@ x 3
 y 2
 end
 arch blocked
-msg
-endmsg
 x 3
 y 2
 end
@@ -427,6 +371,10 @@ y 3
 speed 0.500000
 value 1
 connected 1
+end
+arch big_dragon
+x 3
+y 3
 end
 arch pstone_1
 x 3
@@ -456,7 +404,7 @@ end
 arch rough_wall_2_1_2
 x 3
 y 6
-no_pass 0
+move_block 0
 end
 arch pstone_1
 x 3
@@ -475,8 +423,6 @@ x 3
 y 9
 end
 arch blocked
-msg
-endmsg
 x 3
 y 9
 end
@@ -498,8 +444,7 @@ y 11
 end
 arch sign
 msg
-Useing bomb is very efficient 
-killing way.
+Using bomb is very efficient killing way.
 endmsg
 x 3
 y 11
@@ -525,8 +470,6 @@ x 3
 y 14
 end
 arch blocked
-msg
-endmsg
 x 3
 y 14
 end
@@ -535,8 +478,6 @@ x 3
 y 15
 end
 arch blocked
-msg
-endmsg
 x 3
 y 15
 end
@@ -544,8 +485,6 @@ arch pstone_1
 x 4
 end
 arch blocked
-msg
-endmsg
 x 4
 end
 arch pstone_1
@@ -553,8 +492,6 @@ x 4
 y 1
 end
 arch blocked
-msg
-endmsg
 x 4
 y 1
 end
@@ -563,8 +500,6 @@ x 4
 y 2
 end
 arch blocked
-msg
-endmsg
 x 4
 y 2
 end
@@ -607,7 +542,7 @@ end
 arch rough_wall_2_1_2
 x 4
 y 6
-no_pass 0
+move_block 0
 end
 arch pstone_1
 x 4
@@ -630,8 +565,6 @@ x 4
 y 9
 end
 arch blocked
-msg
-endmsg
 x 4
 y 9
 end
@@ -668,8 +601,6 @@ x 4
 y 14
 end
 arch blocked
-msg
-endmsg
 x 4
 y 14
 end
@@ -678,8 +609,6 @@ x 4
 y 15
 end
 arch blocked
-msg
-endmsg
 x 4
 y 15
 end
@@ -687,8 +616,6 @@ arch pstone_1
 x 5
 end
 arch blocked
-msg
-endmsg
 x 5
 end
 arch pstone_1
@@ -696,14 +623,10 @@ x 5
 y 1
 end
 arch blocked
-msg
-endmsg
 x 5
 y 1
 end
 arch blocked
-msg
-endmsg
 x 5
 y 2
 end
@@ -746,7 +669,7 @@ end
 arch rough_wall_2_1_2
 x 5
 y 6
-no_pass 0
+move_block 0
 end
 arch pstone_1
 x 5
@@ -765,8 +688,6 @@ x 5
 y 9
 end
 arch blocked
-msg
-endmsg
 x 5
 y 9
 end
@@ -775,8 +696,6 @@ x 5
 y 10
 end
 arch blocked
-msg
-endmsg
 x 5
 y 10
 end
@@ -805,8 +724,6 @@ x 5
 y 14
 end
 arch blocked
-msg
-endmsg
 x 5
 y 14
 end
@@ -815,8 +732,6 @@ x 5
 y 15
 end
 arch blocked
-msg
-endmsg
 x 5
 y 15
 end
@@ -824,8 +739,6 @@ arch pstone_1
 x 6
 end
 arch blocked
-msg
-endmsg
 x 6
 end
 arch pstone_1
@@ -833,26 +746,18 @@ x 6
 y 1
 end
 arch blocked
-msg
-endmsg
 x 6
 y 1
 end
 arch blocked
-msg
-endmsg
 x 6
 y 2
 end
 arch blocked
-msg
-endmsg
 x 6
 y 3
 end
 arch blocked
-msg
-endmsg
 x 6
 y 4
 end
@@ -889,8 +794,6 @@ x 6
 y 9
 end
 arch blocked
-msg
-endmsg
 x 6
 y 9
 end
@@ -899,8 +802,6 @@ x 6
 y 10
 end
 arch blocked
-msg
-endmsg
 x 6
 y 10
 end
@@ -929,8 +830,6 @@ x 6
 y 14
 end
 arch blocked
-msg
-endmsg
 x 6
 y 14
 end
@@ -939,8 +838,6 @@ x 6
 y 15
 end
 arch blocked
-msg
-endmsg
 x 6
 y 15
 end
@@ -948,8 +845,6 @@ arch pstone_1
 x 7
 end
 arch blocked
-msg
-endmsg
 x 7
 end
 arch pstone_1
@@ -957,8 +852,6 @@ x 7
 y 1
 end
 arch blocked
-msg
-endmsg
 x 7
 y 1
 end
@@ -1015,8 +908,6 @@ x 7
 y 9
 end
 arch blocked
-msg
-endmsg
 x 7
 y 9
 end
@@ -1025,8 +916,6 @@ x 7
 y 10
 end
 arch blocked
-msg
-endmsg
 x 7
 y 10
 end
@@ -1055,8 +944,6 @@ x 7
 y 14
 end
 arch blocked
-msg
-endmsg
 x 7
 y 14
 end
@@ -1065,8 +952,6 @@ x 7
 y 15
 end
 arch blocked
-msg
-endmsg
 x 7
 y 15
 end
@@ -1074,8 +959,6 @@ arch pstone_1
 x 8
 end
 arch blocked
-msg
-endmsg
 x 8
 end
 arch pstone_1
@@ -1083,8 +966,6 @@ x 8
 y 1
 end
 arch blocked
-msg
-endmsg
 x 8
 y 1
 end
@@ -1134,8 +1015,6 @@ x 8
 y 9
 end
 arch blocked
-msg
-endmsg
 x 8
 y 9
 end
@@ -1144,8 +1023,6 @@ x 8
 y 10
 end
 arch blocked
-msg
-endmsg
 x 8
 y 10
 end
@@ -1174,8 +1051,6 @@ x 8
 y 14
 end
 arch blocked
-msg
-endmsg
 x 8
 y 14
 end
@@ -1184,8 +1059,6 @@ x 8
 y 15
 end
 arch blocked
-msg
-endmsg
 x 8
 y 15
 end
@@ -1275,7 +1148,11 @@ arch pstone_1
 x 9
 y 11
 end
-arch rough_wall_3_4
+arch rough_wall_2_2_4
+x 9
+y 11
+end
+arch swall_1_1_half
 x 9
 y 11
 end
@@ -1291,7 +1168,11 @@ arch pstone_1
 x 9
 y 13
 end
-arch rough_wall_3_4
+arch swall_1_2_half
+x 9
+y 13
+end
+arch rough_wall_2_2_3
 x 9
 y 13
 end
@@ -1415,6 +1296,10 @@ arch pstone_3
 x 11
 y 1
 end
+arch chinese_dragon
+x 11
+y 1
+end
 arch pstone_1
 x 11
 y 2
@@ -1447,6 +1332,10 @@ arch pstone_1
 x 11
 y 7
 end
+arch chinese_dragon
+x 11
+y 7
+end
 arch pstone_1
 x 11
 y 8
@@ -1468,6 +1357,10 @@ x 11
 y 11
 end
 arch pstone_1
+x 11
+y 12
+end
+arch big_dragon
 x 11
 y 12
 end
@@ -1651,6 +1544,10 @@ arch pstone_3
 x 13
 y 9
 end
+arch behemoth
+x 13
+y 9
+end
 arch pstone_1
 x 13
 y 10
@@ -1725,11 +1622,19 @@ arch pstone_1
 x 14
 y 5
 end
+arch titan
+x 14
+y 5
+end
 arch pstone_1
 x 14
 y 6
 end
 arch pstone_1
+x 14
+y 7
+end
+arch dread
 x 14
 y 7
 end
@@ -1788,6 +1693,10 @@ x 15
 y 1
 end
 arch pstone_1
+x 15
+y 2
+end
+arch big_dragon
 x 15
 y 2
 end
@@ -1905,6 +1814,10 @@ arch pstone_3
 x 16
 y 8
 end
+arch big_dragon
+x 16
+y 8
+end
 arch pstone_1
 x 16
 y 9
@@ -1926,6 +1839,10 @@ x 16
 y 11
 end
 arch pstone_1
+x 16
+y 12
+end
+arch behemoth
 x 16
 y 12
 end
@@ -2268,44 +2185,4 @@ end
 arch rough_wall_2_2_4
 x 19
 y 15
-end
-arch big_dragon
-x 3
-y 3
-end
-arch chinese_dragon
-x 11
-y 1
-end
-arch chinese_dragon
-x 11
-y 7
-end
-arch big_dragon
-x 11
-y 12
-end
-arch behemoth
-x 13
-y 9
-end
-arch titan
-x 14
-y 5
-end
-arch dread
-x 14
-y 7
-end
-arch big_dragon
-x 15
-y 2
-end
-arch big_dragon
-x 16
-y 8
-end
-arch behemoth
-x 16
-y 12
 end

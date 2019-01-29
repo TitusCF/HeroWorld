@@ -1,15 +1,16 @@
 arch map
+name Underground
+difficulty 5
 region ancientpupland
-name underground
+darkness 3
+width 20
+height 20
+enter_x 3
+enter_y 15
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sat Jun  8 02:14:36 1996
+Created:  1996-06-08
+Modified: 2012-02-24 Rick Tanner
 endmsg
-x 20
-y 20
-level 5
-invisible 3
 end
 arch dungeon_floor
 end
@@ -1135,8 +1136,7 @@ end
 arch magic_mouth
 name 3 - no symbol
 msg
-This teleporter seems to require a
-certain item to activate.
+This teleporter seems to require a certain item to activate.
 endmsg
 x 8
 y 10
@@ -1267,7 +1267,7 @@ We are the gang!
      Andersen
      Rloy
      Jacob
-     Hans  
+     Hans
 endmsg
 x 9
 y 6
@@ -1283,38 +1283,23 @@ end
 arch thief
 name Andersen, boss of the gang
 msg
-@match Siegfried|siegfried
-Haha, he is the hero of this land.
-He would never kill anybody!
-I don't believe you.
-@match Cordish|cordish
-Siegfried and Cordish are one and the
-same person? Now I begin to
-understand...
-I will kill him! And you may pass
-friend. But be careful...
-I hear frightening noises from the
-castle every night!
-@match Path|path|gate|Gate
-If you want to pass,
-please tell me "who killed Jacob, my
-follower".
-@match Boss|boss|Gang|gang
-Yeah!
-We Robbed the mysterious cristal from
-the castle by using the secret Path!
-And now my hometown has been destroyed
-due to our actions. I feel SO sad... 
+@match siegfried
+Haha, he is the hero of this land.  He would never kill anybody! I don't believe you.
+@match cordish
+Siegfried and Cordish are one and the same person? Now I begin to understand... I will kill him! And you may pass friend.  But be careful... I hear frightening noises from the castle every night!
+@match path|gate
+If you want to pass, please tell me "who killed Jacob, my follower?"
+@match boss|gang
+Yeah! We Robbed the mysterious cristal from the castle by using the secret Path! And now my hometown has been destroyed due to our actions.  I feel SO sad...
 @match *
-I'm the Boss of the gang. I am the
-only person who survived the
-destruction of Shining Village. 
+I'm the Boss of the gang.  I am the only person who survived the destruction of Shining Village.
 endmsg
 face thief.111
 hp 1000
 x 9
 y 7
 type 0
+move_type walk
 monster 1
 friendly 1
 end

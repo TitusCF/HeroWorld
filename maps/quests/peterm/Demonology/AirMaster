@@ -1,12 +1,15 @@
 arch map
-name GroundLevel
-msg
-Creator: peterm
-Email: peterm@soda.berkeley.edu
-Date: Sat Apr 30 20:50:08 1994
-endmsg
+name Tower of Demonology Air Study
+difficulty 20
+region wilderness
 width 9
 height 9
+enter_x 7
+enter_y 7
+msg
+Created:  1994-04-30 peterm (peterm@soda.berkeley.edu)
+Modified: 2008-12-22 Rick Tanner
+endmsg
 end
 arch woodfloor
 end
@@ -256,7 +259,6 @@ y 3
 end
 arch wizard
 name Air Master
-type 0
 Str 0
 Con 6
 Wis 30
@@ -268,15 +270,17 @@ maxsp 140
 exp 18000
 dam 20
 ac 2
+x 4
+y 3
 speed 0.400000
 attack_movement 7
 level 30
+type 0
 resist_electricity 100
 carrying 100
+move_type walk
 monster 1
 can_cast_spell 1
-x 4
-y 3
 arch spell_paralyze
 end
 arch spell_sm_lightning
@@ -479,6 +483,10 @@ arch woodfloor
 x 7
 y 6
 end
+arch dungeon_magic
+x 7
+y 7
+end
 arch woodfloor
 x 7
 y 7
@@ -487,10 +495,6 @@ arch stair_down
 slaying AirTower2
 hp 7
 sp 7
-x 7
-y 7
-end
-arch dungeon_magic
 x 7
 y 7
 end

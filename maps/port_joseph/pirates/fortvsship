@@ -1,13 +1,15 @@
 arch map
-region portjoesph
 name Pirate Beach
-msg
-Creator: llangley
-Email: langley@fermat.dartmouth.edu
-Date: Fri May 27 17:01:36 1994
-endmsg
+difficulty 9
+region portjoseph
 width 25
 height 30
+enter_x 3
+enter_y 27
+msg
+Created:  1994-05-27 langley (langley@fermat.dartmouth.edu)
+Modified: 2012-02-20 Rick Tanner
+endmsg
 end
 arch cobblestones2
 end
@@ -237,9 +239,9 @@ x 1
 y 11
 end
 arch pirate
-stand_still 1
 x 1
 y 11
+stand_still 1
 end
 arch sea1
 x 1
@@ -254,11 +256,10 @@ msg
 @match *
 Arr.  Ye won't take this fort alive!
 endmsg
-hp 25
 maxhp 30
-stand_still 1
 x 1
 y 12
+stand_still 1
 end
 arch cobblestones2
 x 1
@@ -448,9 +449,11 @@ x 2
 y 13
 end
 arch cannon_3
-speed -0.030000
 x 2
 y 13
+speed -0.030000
+arch spell_magic_bullet
+end
 end
 arch cwall_2_2_3
 x 2
@@ -701,21 +704,31 @@ y 26
 end
 arch magic_mouth
 msg
-Have ye the name of the treasure
-island?
+Have ye the name of the treasure island?
 endmsg
 x 3
 y 27
 end
 arch phole_1
 name sand
-face pstone_1.111
 slaying /world/world_101_114
+face pstone_1.111
 hp 16
 sp 45
-is_floor 1
 x 3
 y 27
+is_floor 1
+end
+arch rowboat
+slaying /world/world_100_116
+hp 39
+sp 23
+x 3
+y 27
+type 41
+connected 7
+activate_on_push 1
+activate_on_release 1
 end
 arch sea
 x 3
@@ -809,7 +822,7 @@ y 12
 end
 arch magic_mouth
 msg
-You wade through shallow water
+You wade through shallow water.
 endmsg
 x 4
 y 13
@@ -908,30 +921,29 @@ y 26
 end
 arch magic_ear
 msg
-@match tortola|Tortola
+@match tortola
 Aye!  Tortola it is!
 endmsg
-connected 7
 x 4
 y 27
+connected 7
 end
 arch magic_mouth
 msg
-Have ye the name of the treasure
-island?
+Have ye the name of the treasure island?
 endmsg
 x 4
 y 27
 end
 arch phole_1
 name sea
-face sea.111
 slaying /world/world_101_114
+face sea.111
 hp 16
 sp 45
-is_floor 1
 x 4
 y 27
+is_floor 1
 end
 arch sea
 x 4
@@ -1029,7 +1041,7 @@ y 12
 end
 arch magic_mouth
 msg
-The water is shallow here
+The water is shallow here.
 endmsg
 x 5
 y 13
@@ -1083,6 +1095,10 @@ x 5
 y 21
 end
 arch cobblestones2
+x 5
+y 22
+end
+arch barrack_long
 x 5
 y 22
 end
@@ -1146,9 +1162,11 @@ x 6
 y 4
 end
 arch cannon_4
-speed -0.040000
 x 6
 y 4
+speed -0.040000
+arch spell_magic_bullet
+end
 end
 arch cwall_2_2_4
 x 6
@@ -1218,7 +1236,7 @@ arch pstone_1
 x 6
 y 15
 end
-arch rjunct_ns-ne
+arch river_junct_ns-ne
 x 6
 y 15
 end
@@ -1226,7 +1244,7 @@ arch pstone_1
 x 6
 y 16
 end
-arch ford_we
+arch river_ford_we
 x 6
 y 16
 end
@@ -1532,7 +1550,7 @@ arch cobblestones2
 x 8
 y 20
 end
-arch dwall3_3
+arch dwall_3_3
 x 8
 y 20
 end
@@ -1544,6 +1562,8 @@ arch firewall
 face cwall_3.111
 x 8
 y 21
+arch spell_small_fireball
+end
 end
 arch cobblestones2
 x 8
@@ -1641,6 +1661,10 @@ arch sea
 x 9
 y 9
 end
+arch big_galleon
+x 9
+y 9
+end
 arch sea
 x 9
 y 10
@@ -1698,9 +1722,11 @@ x 9
 y 19
 end
 arch cannon_1
-speed -0.018000
 x 9
 y 19
+speed -0.018000
+arch spell_magic_bullet
+end
 end
 arch cwall_2_2_2
 x 9
@@ -1829,9 +1855,11 @@ x 10
 y 9
 end
 arch cannon_1
-speed -0.060000
 x 10
 y 9
+speed -0.060000
+arch spell_magic_bullet
+end
 end
 arch sea
 x 10
@@ -2105,6 +2133,8 @@ end
 arch cannon_6
 x 12
 y 4
+arch spell_magic_bullet
+end
 end
 arch cwall_2_2_1
 x 12
@@ -2150,14 +2180,20 @@ arch sea
 x 12
 y 12
 end
+arch big_galleon
+x 12
+y 12
+end
 arch sea
 x 12
 y 13
 end
 arch cannon_7
-speed -0.090000
 x 12
 y 13
+speed -0.090000
+arch spell_magic_bullet
+end
 end
 arch sea1
 x 12
@@ -2212,9 +2248,9 @@ x 12
 y 25
 end
 arch arrow
-nrof 2
 x 12
 y 25
+nrof 2
 end
 arch pstone_1
 x 12
@@ -2258,6 +2294,8 @@ end
 arch cannon_5
 x 13
 y 4
+arch spell_magic_bullet
+end
 end
 arch cwall_2_1_2
 face cwall_w_1.111
@@ -2309,9 +2347,11 @@ x 13
 y 13
 end
 arch cannon_6
-speed -0.045000
 x 13
 y 13
+speed -0.045000
+arch spell_magic_bullet
+end
 end
 arch sea
 x 13
@@ -2409,9 +2449,11 @@ x 14
 y 3
 end
 arch cannon_3
-speed -0.040000
 x 14
 y 3
+speed -0.040000
+arch spell_magic_bullet
+end
 end
 arch cwall_2_1_1
 face cwall_w_0.111
@@ -2423,9 +2465,11 @@ x 14
 y 4
 end
 arch cannon_4
-speed -0.080000
 x 14
 y 4
+speed -0.080000
+arch spell_magic_bullet
+end
 end
 arch cwall_2_2_4
 x 14
@@ -2571,9 +2615,9 @@ x 15
 y 2
 end
 arch pirate
-stand_still 1
 x 15
 y 2
+stand_still 1
 end
 arch pstone_2
 x 15
@@ -2615,14 +2659,20 @@ arch sea
 x 15
 y 10
 end
+arch big_galleon
+x 15
+y 10
+end
 arch sea
 x 15
 y 11
 end
 arch cannon_5
-speed -0.025000
 x 15
 y 11
+speed -0.025000
+arch spell_magic_bullet
+end
 end
 arch sea1
 x 15
@@ -2669,14 +2719,18 @@ x 15
 y 18
 end
 arch cannon_4
-speed -0.050000
 x 15
 y 18
+speed -0.050000
+arch spell_magic_bullet
+end
 end
 arch cannon_3
-speed -0.030000
 x 15
 y 18
+speed -0.030000
+arch spell_magic_bullet
+end
 end
 arch cwall_2_2_4
 x 15
@@ -2738,9 +2792,9 @@ x 16
 y 2
 end
 arch pirate
-stand_still 1
 x 16
 y 2
+stand_still 1
 end
 arch pstone_1
 x 16
@@ -2965,14 +3019,20 @@ arch sea
 x 17
 y 23
 end
+arch big_galleon
+x 17
+y 23
+end
 arch sea
 x 17
 y 24
 end
 arch cannon_7
-speed -0.040000
 x 17
 y 24
+speed -0.040000
+arch spell_magic_bullet
+end
 end
 arch sea
 x 17
@@ -3041,14 +3101,20 @@ arch sea
 x 18
 y 7
 end
+arch big_galleon
+x 18
+y 7
+end
 arch sea
 x 18
 y 8
 end
 arch cannon_7
-speed -0.050000
 x 18
 y 8
+speed -0.050000
+arch spell_magic_bullet
+end
 end
 arch sea
 x 18
@@ -3284,14 +3350,20 @@ arch sea
 x 20
 y 3
 end
+arch big_galleon
+x 20
+y 3
+end
 arch sea
 x 20
 y 4
 end
 arch cannon_7
+x 20
+y 4
 speed -0.090000
-x 20
-y 4
+arch spell_magic_bullet
+end
 end
 arch sea
 x 20
@@ -3346,6 +3418,10 @@ x 20
 y 17
 end
 arch sea
+x 20
+y 18
+end
+arch big_galleon
 x 20
 y 18
 end
@@ -3354,9 +3430,11 @@ x 20
 y 19
 end
 arch cannon_7
+x 20
+y 19
 speed -0.020000
-x 20
-y 19
+arch spell_magic_bullet
+end
 end
 arch sea
 x 20
@@ -3873,47 +3951,4 @@ end
 arch sea
 x 24
 y 29
-end
-arch rowboat
-type 41
-slaying /world/world_100_116
-hp 39
-sp 23
-activate_on_push 1
-activate_on_release 1
-connected 7
-x 3
-y 27
-end
-arch barrack_long
-x 5
-y 22
-end
-arch big_galleon
-x 9
-y 9
-end
-arch big_galleon
-x 12
-y 12
-end
-arch big_galleon
-x 15
-y 10
-end
-arch big_galleon
-x 17
-y 23
-end
-arch big_galleon
-x 18
-y 7
-end
-arch big_galleon
-x 20
-y 3
-end
-arch big_galleon
-x 20
-y 18
 end

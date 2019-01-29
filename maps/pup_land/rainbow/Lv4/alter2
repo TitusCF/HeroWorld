@@ -1,10 +1,14 @@
 arch map
+name Alter
+difficulty 1
 region pupland
-name alter2
+width 16
+height 16
+enter_x 1
+enter_y 15
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue Jul 16 08:25:17 1996
+Created:  1996-07-16
+Modified: 2011-12-21 Rick Tanner
 endmsg
 end
 arch pstone_1
@@ -417,6 +421,10 @@ arch pstone_1
 x 3
 y 9
 end
+arch swall_1_4_half
+x 3
+y 9
+end
 arch rough_wall_1_3
 x 3
 y 9
@@ -535,7 +543,7 @@ arch pstone_1
 x 4
 y 9
 end
-arch swall_1_4
+arch swall_2_1_2
 x 4
 y 9
 end
@@ -795,7 +803,7 @@ arch pstone_1
 x 6
 y 12
 end
-arch rough_wall_2_1_2
+arch rough_wall_3_3
 x 6
 y 12
 end
@@ -924,7 +932,7 @@ end
 arch rough_wall_2_1_2
 x 7
 y 12
-no_pass 0
+move_block 0
 end
 arch pstone_1
 x 7
@@ -1064,7 +1072,7 @@ arch pstone_1
 x 8
 y 12
 end
-arch rough_wall_2_1_2
+arch rough_wall_3_3
 x 8
 y 12
 end
@@ -1520,7 +1528,7 @@ arch pstone_1
 x 12
 y 9
 end
-arch swall_1_3
+arch swall_2_1_2
 x 12
 y 9
 end
@@ -1631,6 +1639,10 @@ x 13
 y 8
 end
 arch pstone_1
+x 13
+y 9
+end
+arch swall_1_3_half
 x 13
 y 9
 end

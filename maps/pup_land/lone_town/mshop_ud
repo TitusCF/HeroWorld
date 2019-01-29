@@ -1,16 +1,18 @@
 arch map
-name townA_mshop_ud
+name Lown Town Magic Shop, Cellar
+difficulty 25
 region lonetown
-msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Wed Jan 31 18:12:04 1996
-endmsg
+shopitems *:100
+shopgreed 50.0000
+shopmin 10000
 width 15
 height 16
-shopitems *:100
-shopmin 10000
-shopgreed 50.0
+enter_x 1
+enter_y 13
+msg
+Created:  1996-01-31
+Modified: 2011-12-07 Rick Tanner
+endmsg
 end
 arch shop_empty
 end
@@ -83,6 +85,9 @@ arch cwall_2_1_1
 y 11
 end
 arch cobblestones2
+y 12
+end
+arch swall_1_4_half
 y 12
 end
 arch cwall_2_1_1
@@ -164,7 +169,7 @@ arch cobblestones2
 x 1
 y 12
 end
-arch swall_1_4
+arch swall_2_1_2
 x 1
 y 12
 end
@@ -213,87 +218,87 @@ x 2
 y 2
 end
 arch elvenboots
-identified 1
-unpaid 1
 x 2
 y 2
+unpaid 1
+identified 1
 end
 arch shop_empty
 x 2
 y 3
 end
 arch levitationboots
-identified 1
-unpaid 1
 x 2
 y 3
+unpaid 1
+identified 1
 end
 arch shop_empty
 x 2
 y 4
 end
 arch bracers_ac
-identified 1
-unpaid 1
 x 2
 y 4
+unpaid 1
+identified 1
 end
 arch shop_empty
 x 2
 y 5
 end
 arch girdle_dam
-identified 1
-unpaid 1
 x 2
 y 5
+unpaid 1
+identified 1
 end
 arch shop_empty
 x 2
 y 6
 end
 arch sandals
-identified 1
-unpaid 1
 x 2
 y 6
+unpaid 1
+identified 1
 end
 arch shop_empty
 x 2
 y 7
 end
 arch dragon_mail
-unpaid 1
 x 2
 y 7
+unpaid 1
 end
 arch shop_empty
 x 2
 y 8
 end
 arch dragon_shield
-unpaid 1
 x 2
 y 8
+unpaid 1
 end
 arch shop_empty
 x 2
 y 9
 end
 arch eyeshield
-unpaid 1
 x 2
 y 9
+unpaid 1
 end
 arch shop_empty
 x 2
 y 10
 end
 arch ring_nodrain
-identified 1
-unpaid 1
 x 2
 y 10
+unpaid 1
+identified 1
 end
 arch shop_empty
 x 2
@@ -321,9 +326,8 @@ y 13
 end
 arch magic_mouth
 msg
-Black Market
-Please drop one hundred diamonds of
-exceptional beauty.
+Black Market:
+Please drop one hundred diamonds of exceptional beauty.
 endmsg
 x 2
 y 14
@@ -457,10 +461,9 @@ end
 arch altar
 slaying diamond of exceptional beauty
 food 100
-protected 1
-connected 1
 x 3
 y 14
+connected 1
 end
 arch cobblestones2
 x 3
@@ -485,90 +488,90 @@ x 4
 y 2
 end
 arch elven_bow
-identified 1
-unpaid 1
 x 4
 y 2
+unpaid 1
+identified 1
 end
 arch shop_empty
 x 4
 y 3
 end
 arch bonecrusher
-identified 1
-unpaid 1
 x 4
 y 3
+unpaid 1
+identified 1
 end
 arch shop_empty
 x 4
 y 4
 end
 arch firebrand
-identified 1
-unpaid 1
 x 4
 y 4
+unpaid 1
+identified 1
 end
 arch shop_empty
 x 4
 y 5
 end
 arch frostbrand
-identified 1
-unpaid 1
 x 4
 y 5
+unpaid 1
+identified 1
 end
 arch shop_empty
 x 4
 y 6
 end
 arch excalibur
-identified 1
-unpaid 1
 x 4
 y 6
+unpaid 1
+identified 1
 end
 arch shop_empty
 x 4
 y 7
 end
 arch dragonslayer
-identified 1
-unpaid 1
 x 4
 y 7
+unpaid 1
+identified 1
 end
 arch shop_empty
 x 4
 y 8
 end
 arch defender
-identified 1
-unpaid 1
 x 4
 y 8
+unpaid 1
+identified 1
 end
 arch shop_empty
 x 4
 y 9
 end
 arch amulet_lifesave
-identified 1
-unpaid 1
 x 4
 y 9
+unpaid 1
+identified 1
 end
 arch shop_empty
 x 4
 y 10
 end
 arch ring
-identified 1
-unpaid 1
 x 4
 y 10
+unpaid 1
+identified 1
 end
 arch shop_empty
 x 4
@@ -599,10 +602,9 @@ x 4
 y 14
 end
 arch gate_closed_2
-protected 1
-connected 1
 x 4
 y 14
+connected 1
 end
 arch cobblestones2
 x 4
@@ -709,36 +711,36 @@ x 6
 y 2
 end
 arch scroll_oratory
-unpaid 1
 x 6
 y 2
+unpaid 1
 end
 arch shop_empty
 x 6
 y 3
 end
 arch scroll_stealing
-unpaid 1
 x 6
 y 3
+unpaid 1
 end
 arch shop_empty
 x 6
 y 4
 end
 arch scroll_singing
-unpaid 1
 x 6
 y 4
+unpaid 1
 end
 arch shop_empty
 x 6
 y 5
 end
 arch scroll_literacy
-unpaid 1
 x 6
 y 5
+unpaid 1
 end
 arch shop_empty
 x 6
@@ -749,45 +751,45 @@ x 6
 y 7
 end
 arch scroll_punching
-unpaid 1
 x 6
 y 7
+unpaid 1
 end
 arch shop_empty
 x 6
 y 8
 end
 arch scroll_one_handed_weapons
-unpaid 1
 x 6
 y 8
+unpaid 1
 end
 arch shop_empty
 x 6
 y 9
 end
 arch scroll_karate
-unpaid 1
 x 6
 y 9
+unpaid 1
 end
 arch shop_empty
 x 6
 y 10
 end
 arch scroll_jumping
-unpaid 1
 x 6
 y 10
+unpaid 1
 end
 arch shop_empty
 x 6
 y 11
 end
 arch scroll_missile_weap
-unpaid 1
 x 6
 y 11
+unpaid 1
 end
 arch shop_empty
 x 6
@@ -813,11 +815,15 @@ arch cobblestones2
 x 6
 y 14
 end
-arch swall_1_2
+arch swall_2_1_1
 x 6
 y 14
 end
 arch cobblestones2
+x 6
+y 15
+end
+arch swall_1_2_half
 x 6
 y 15
 end
@@ -928,9 +934,9 @@ x 7
 y 14
 end
 arch scroll_two_handed_weapons
-unpaid 1
 x 7
 y 14
+unpaid 1
 end
 arch shop_empty
 x 7
@@ -955,91 +961,91 @@ x 8
 y 2
 end
 arch scroll_bargaining
-unpaid 1
 x 8
 y 2
+unpaid 1
 end
 arch shop_empty
 x 8
 y 3
 end
 arch scroll_woodsman
-unpaid 1
 x 8
 y 3
+unpaid 1
 end
 arch shop_empty
 x 8
 y 4
 end
 arch scroll_thaumaturgy
-unpaid 1
 x 8
 y 4
+unpaid 1
 end
 arch shop_empty
 x 8
 y 5
 end
 arch scroll_jewelry
-unpaid 1
 x 8
 y 5
+unpaid 1
 end
 arch shop_empty
 x 8
 y 6
 end
 arch scroll_smithing
-unpaid 1
 x 8
 y 6
+unpaid 1
 end
 arch shop_empty
 x 8
 y 7
 end
 arch scroll_bowyer
-unpaid 1
 x 8
 y 7
+unpaid 1
 end
 arch shop_empty
 x 8
 y 8
 end
 arch holy_symbol
-identified 1
-unpaid 1
 x 8
 y 8
+unpaid 1
+identified 1
 end
 arch shop_empty
 x 8
 y 9
 end
 arch scroll_pyromancy
-unpaid 1
 x 8
 y 9
+unpaid 1
 end
 arch shop_empty
 x 8
 y 10
 end
 arch scroll_evocation
-unpaid 1
 x 8
 y 10
+unpaid 1
 end
 arch shop_empty
 x 8
 y 11
 end
 arch scroll_sorcery
-unpaid 1
 x 8
 y 11
+unpaid 1
 end
 arch shop_empty
 x 8
@@ -1146,44 +1152,39 @@ x 10
 y 2
 end
 arch scroll_alchemy
-unpaid 1
 x 10
 y 2
+unpaid 1
 end
 arch shop_empty
 x 10
 y 3
 end
 arch scroll_summoning
-unpaid 1
 x 10
 y 3
+unpaid 1
 end
 arch shop_empty
 x 10
 y 4
 end
 arch lockpicks
-identified 1
-unpaid 1
 x 10
 y 4
+unpaid 1
+identified 1
 end
 arch shop_empty
 x 10
 y 5
 end
 arch scroll_disarm_traps
-unpaid 1
 x 10
 y 5
+unpaid 1
 end
 arch shop_empty
-x 10
-y 6
-end
-arch scroll_set_traps
-unpaid 1
 x 10
 y 6
 end
@@ -1192,63 +1193,63 @@ x 10
 y 7
 end
 arch scroll_hiding
-unpaid 1
 x 10
 y 7
+unpaid 1
 end
 arch shop_empty
 x 10
 y 8
 end
 arch scroll_climbing
-unpaid 1
 x 10
 y 8
+unpaid 1
 end
 arch shop_empty
 x 10
 y 9
 end
 arch scroll_sense_mag
-unpaid 1
 x 10
 y 9
+unpaid 1
 end
 arch shop_empty
 x 10
 y 10
 end
 arch scroll_sense_curse
-unpaid 1
 x 10
 y 10
+unpaid 1
 end
 arch shop_empty
 x 10
 y 11
 end
 arch scroll_use_magic_item
-unpaid 1
 x 10
 y 11
+unpaid 1
 end
 arch shop_empty
 x 10
 y 12
 end
 arch scroll_find_traps
-unpaid 1
 x 10
 y 12
+unpaid 1
 end
 arch shop_empty
 x 10
 y 13
 end
 arch scroll_praying
-unpaid 1
 x 10
 y 13
+unpaid 1
 end
 arch shop_empty
 x 10
@@ -1395,108 +1396,108 @@ x 12
 y 2
 end
 arch prepare_weapon
-unpaid 1
 x 12
 y 2
+unpaid 1
 end
 arch shop_empty
 x 12
 y 3
 end
 arch improve_wis
-unpaid 1
 x 12
 y 3
+unpaid 1
 end
 arch shop_empty
 x 12
 y 4
 end
 arch improve_weight
-unpaid 1
 x 12
 y 4
+unpaid 1
 end
 arch shop_empty
 x 12
 y 5
 end
 arch improve_str
-unpaid 1
 x 12
 y 5
+unpaid 1
 end
 arch shop_empty
 x 12
 y 6
 end
 arch improve_pow
-unpaid 1
 x 12
 y 6
+unpaid 1
 end
 arch shop_empty
 x 12
 y 7
 end
 arch improve_int
-unpaid 1
 x 12
 y 7
+unpaid 1
 end
 arch shop_empty
 x 12
 y 8
 end
 arch improve_enchantment
-unpaid 1
 x 12
 y 8
+unpaid 1
 end
 arch shop_empty
 x 12
 y 9
 end
 arch improve_dex
-unpaid 1
 x 12
 y 9
+unpaid 1
 end
 arch shop_empty
 x 12
 y 10
 end
 arch improve_damage
-unpaid 1
 x 12
 y 10
+unpaid 1
 end
 arch shop_empty
 x 12
 y 11
 end
 arch improve_con
-unpaid 1
 x 12
 y 11
+unpaid 1
 end
 arch shop_empty
 x 12
 y 12
 end
 arch improve_cha
-unpaid 1
 x 12
 y 12
+unpaid 1
 end
 arch shop_empty
 x 12
 y 13
 end
 arch ench_armour
-unpaid 1
 x 12
 y 13
+unpaid 1
 end
 arch shop_empty
 x 12

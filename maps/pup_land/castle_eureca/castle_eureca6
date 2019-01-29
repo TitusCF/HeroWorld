@@ -1,13 +1,15 @@
 arch map
+name Castle of Eureca, 6th Level
+difficulty 40
 region pupland
-name castle_eureca6
+width 17
+height 15
+enter_x 1
+enter_y 5
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Fri Mar  8 20:49:56 1996
+Created:  1996-02-08
+Modified: 2012-02-27 Rick Tanner
 endmsg
-x 17
-y 15
 end
 arch flagstone
 end
@@ -32,6 +34,9 @@ arch wall_2_1_1
 y 3
 end
 arch flagstone
+y 4
+end
+arch swall_1_4_half
 y 4
 end
 arch wall_2_1_1
@@ -125,7 +130,7 @@ end
 arch stair_3_up
 slaying castle_eureca7
 hp 1
-sp 3
+sp 5
 x 1
 y 3
 end
@@ -137,7 +142,7 @@ arch dungeon_magic
 x 1
 y 4
 end
-arch swall_1_4
+arch swall_2_1_2
 x 1
 y 4
 end
@@ -189,9 +194,10 @@ x 1
 y 13
 end
 arch cannon_1
-dam 29
 x 1
 y 13
+arch spell_lg_magic_bullet
+end
 end
 arch flagstone
 x 1
@@ -217,7 +223,7 @@ y 2
 end
 arch sign
 msg
-Ghothwolte's Pet Room
+Gothwolte's Pet Room
 endmsg
 x 2
 y 2
@@ -280,9 +286,10 @@ x 2
 y 12
 end
 arch cannon_1
-dam 29
 x 2
 y 12
+arch spell_lg_magic_bullet
+end
 end
 arch flagstone
 x 2
@@ -302,6 +309,9 @@ end
 arch wall_2_1_2
 x 3
 end
+arch swall_1_1_half
+x 3
+end
 arch flagstone
 x 3
 y 1
@@ -310,7 +320,7 @@ arch dungeon_magic
 x 3
 y 1
 end
-arch swall_1_1
+arch swall_2_1_1
 x 3
 y 1
 end
@@ -384,9 +394,10 @@ y 11
 end
 arch cannon_1
 sp 8
-dam 29
 x 3
 y 11
+arch spell_lg_magic_bullet
+end
 end
 arch flagstone
 x 3
@@ -678,19 +689,14 @@ end
 arch bone_head
 name Bonehead
 msg
-@match yes|Yes
-I forbit you to pass!
-@match Prison|prison
+@match yes
+I forbid you to pass!
+@match prison
 Eureca's family lives in the prison.
-@match No|no
-Good!
-Three toaches is required to go to
-prison.
-But it's not your business...
+@match no
+Good!  Three torches are required to go to prison.  But it's not your business...
 @match *
-I guard the entrance to the Prison.
-Do you want to go to prison without
-permission
+I guard the entrance to the Prison.  Do you want to go to prison without permission?
 endmsg
 x 6
 y 8

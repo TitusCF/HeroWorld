@@ -1,12 +1,18 @@
 arch map
+name Thief Market
+difficulty 1
 region lonetown
-name thief_market
+shopitems gem:100;*:50
+shopgreed 50.0000
+shopmin 1000
+width 16
+height 25
+enter_x 5
+enter_y 5
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Thu Mar 14 02:50:38 1996
+Created:  1996-03-14
+Modified: 2012-03-01 Rick Tanner
 endmsg
-y 25
 end
 arch blocked
 y 3
@@ -151,6 +157,7 @@ x 1
 y 19
 end
 arch locked_door1
+slaying no_key
 x 1
 y 19
 end
@@ -341,14 +348,10 @@ end
 arch guildmaster
 name Boss of the gang
 msg
-@match Nazgul|nazgul
-Nazgul is attacking Pupuly's tower.
-We cannot save Pupuly, Nazgul is too
-strong... Please look after Pupuly!
+@match nazgul
+Nazgul is attacking Pupuly's tower.  We cannot save Pupuly, Nazgul is too strong... Please look after Pupuly!
 @match *
-We are thieves. But we would never
-kill or harm anybody. We are not
-like Nazgul and his minions!
+We are thieves.  But we would never kill or harm anybody.  We are not like Nazgul and his minions!
 endmsg
 hp 500
 x 3
@@ -490,7 +493,7 @@ arch shop_empty
 x 4
 y 18
 end
-arch swall_1_2
+arch swall_2_1_1
 x 4
 y 18
 end
@@ -543,7 +546,7 @@ end
 arch dun2
 x 5
 y 3
-no_pass 0
+move_block 0
 end
 arch exit
 slaying town_ud1
@@ -665,7 +668,7 @@ end
 arch dun3
 x 6
 y 1
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 6
@@ -746,7 +749,6 @@ Click.
 endmsg
 x 6
 y 12
-protected 1
 connected 1
 end
 arch woodfloor
@@ -761,7 +763,6 @@ arch gate_closed_1
 x 6
 y 13
 speed 0.500000
-protected 1
 connected 1
 end
 arch woodfloor
@@ -871,7 +872,7 @@ end
 arch thief
 msg
 @match racoon's head
-good.
+Good.
 @match *
 ...
 endmsg
@@ -879,6 +880,7 @@ hp 100
 x 7
 y 12
 type 0
+move_type walk
 monster 1
 friendly 1
 end
@@ -890,11 +892,15 @@ arch dun6
 x 7
 y 13
 end
+arch swall_1_1_half
+x 7
+y 13
+end
 arch shop_empty
 x 7
 y 14
 end
-arch swall_1_1
+arch swall_2_1_1
 x 7
 y 14
 end
@@ -1038,8 +1044,8 @@ end
 arch door_look_1
 x 8
 y 19
+move_block 0
 alive 0
-no_pass 0
 end
 arch shop_gems
 x 8
@@ -1136,8 +1142,8 @@ end
 arch door_look_1
 x 9
 y 19
+move_block 0
 alive 0
-no_pass 0
 end
 arch shop_gems
 x 9
@@ -1234,8 +1240,8 @@ end
 arch door_look_1
 x 10
 y 19
+move_block 0
 alive 0
-no_pass 0
 end
 arch shop_gems
 x 10

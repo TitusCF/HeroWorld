@@ -1,13 +1,15 @@
 arch map
+name Tower of Ordeal, 5th Level
+difficulty 17
 region pupland
-name tower_ordeal5
+width 16
+height 16
+enter_x 1
+enter_y 4
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sun Jan 28 23:02:23 1996
+Created:  1996-01-28
+Modified: 2008-10-26 Rick Tanner
 endmsg
-sp 4
-level 17
 end
 arch pstone_1
 end
@@ -160,8 +162,8 @@ resist_cold 100
 resist_confusion 100
 resist_acid 100
 resist_drain 100
+move_block 0
 alive 1
-no_pass 0
 tear_down 1
 end
 arch pstone_1
@@ -188,6 +190,11 @@ x 1
 y 7
 end
 arch pstone_1
+x 1
+y 8
+end
+arch cobra
+name Bullet
 x 1
 y 8
 end
@@ -367,6 +374,11 @@ x 3
 y 6
 end
 arch pstone_1
+x 3
+y 7
+end
+arch cobra
+name Bullet
 x 3
 y 7
 end
@@ -576,7 +588,7 @@ arch pstone_1
 x 6
 y 3
 end
-arch dwall3_3
+arch dwall_3_3
 x 6
 y 3
 end
@@ -1094,6 +1106,26 @@ arch pstone_1
 x 12
 y 2
 end
+arch dread
+name Manager of Ordeal
+Dex 5
+Con 40
+Pow 10
+hp 3000
+maxhp 3000
+sp 50
+maxsp 50
+exp 80000
+dam 40
+ac -15
+x 12
+y 2
+speed 0.001000
+speed_left 0.800000
+level 20
+reflect_spell 1
+can_see_in_dark 1
+end
 arch pstone_1
 x 12
 y 3
@@ -1121,6 +1153,17 @@ end
 arch pstone_1
 x 12
 y 8
+end
+arch behemoth
+name Henchman
+hp 100
+maxhp 100
+ac 0
+x 12
+y 8
+speed 0.300000
+speed_left -1.350000
+level 10
 end
 arch pstone_1
 x 12
@@ -1463,45 +1506,4 @@ end
 arch dwall_2_2_4
 x 15
 y 15
-end
-arch cobra
-name Bullet
-x 1
-y 8
-end
-arch cobra
-name Bullet
-x 3
-y 7
-end
-arch dread
-name Manager of Ordeal
-Dex 5
-Con 40
-Pow 10
-hp 3000
-maxhp 3000
-sp 50
-maxsp 50
-exp 80000
-dam 40
-ac -15
-x 12
-y 2
-speed 0.001000
-speed_left 0.800000
-level 20
-reflect_spell 1
-can_see_in_dark 1
-end
-arch behemoth
-name Henchman
-hp 100
-maxhp 100
-ac 0
-x 12
-y 8
-speed 0.300000
-speed_left -1.350000
-level 10
 end

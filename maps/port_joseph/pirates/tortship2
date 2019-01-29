@@ -1,13 +1,15 @@
 arch map
-region portjoesph
-name shipwreck
+name Shipwreck, Main Deck
+difficulty 13
+region portjoseph
+width 24
+height 23
+enter_x 9
+enter_y 11
 msg
-Creator: langley
-Email: langley@fermat.dartmouth.edu
-Date: Fri Jun 10 19:29:02 1994
+Created:  1994-06-10 langley (langley@fermat.dartmouth.edu)
+Modified: 2011-11-23 Rick Tanner
 endmsg
-x 24
-y 23
 end
 arch pstone_2
 end
@@ -669,14 +671,7 @@ end
 arch book_read
 name log book
 msg
-. . . we sail now as if under a curse
-. . .  I cannot shake the feeling we
-are damned . . .
-The cursed pearl, I wish I had never
-set sight on the thing  . . . I cannot
-rid myself of it . . . it is better
-that I lock it away in the hidden
- . . 
+. . . we sail now as if under a curse . . .  I cannot shake the feeling we are damned . . . The cursed pearl, I wish I had never set sight on the thing  . . . I cannot rid myself of it . . . it is better that I lock it away in the hidden . .
 endmsg
 x 4
 y 16
@@ -878,6 +873,10 @@ arch woodfloor
 x 6
 y 5
 end
+arch swall_1_4_half
+x 6
+y 5
+end
 arch wwall_2_2_3
 x 6
 y 5
@@ -978,6 +977,10 @@ arch wwall_2_2_4
 x 6
 y 17
 end
+arch swall_1_4_half
+x 6
+y 17
+end
 arch pstone_1
 x 6
 y 18
@@ -1021,7 +1024,7 @@ arch woodfloor
 x 7
 y 5
 end
-arch swall_1_4
+arch swall_2_1_2
 x 7
 y 5
 end
@@ -1087,7 +1090,7 @@ arch woodfloor
 x 7
 y 17
 end
-arch swall_1_4
+arch swall_2_1_2
 x 7
 y 17
 end
@@ -1269,7 +1272,7 @@ y 10
 end
 arch magic_mouth
 msg
-The deck of the ship . . 
+The deck of the ship . .
 endmsg
 x 9
 y 11

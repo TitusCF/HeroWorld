@@ -1,13 +1,15 @@
 arch map
+name Castle of Eureca, 9th Level
+difficulty 14
 region pupland
-name castle_eureca9
+width 15
+height 15
+enter_x 7
+enter_y 2
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Wed Mar 13 23:46:33 1996
+Created:  1996-03-13
+Modified: 2012-02-28 Rick Tanner
 endmsg
-x 15
-y 15
 end
 arch dungeon_floor
 end
@@ -546,12 +548,11 @@ x 5
 y 9
 can_cast_spell 0
 can_use_scroll 0
-can_use_wand 0
 can_use_bow 0
 can_use_armour 0
 can_use_weapon 0
 can_use_ring 0
-can_use_rod 0
+can_use_range 0
 end
 arch dungeon_floor
 x 5
@@ -622,32 +623,16 @@ end
 arch woman
 name Lauretta
 msg
-@match [Gg]hothwolte
-Ghothwolte is the "perfect being".
-Even Eureca couldn't defeat him...
-@match Eureca|eureca
-Eureca and Cordish went to consult
-with Kurte.
-@match Cordish|cordish
-Cordish is our servant. He is a
-coward... I don't like him.
-@match Kurte|kurte
-Kurte are the elders of pupland.
-They know everything about pupland.
-So they'll solve this disaster.
-I don't know where to find Kurte,
-Go to the two huts, located north of
-this castle. There are two persons
-inside. They must know it.
-Please say 
- "fireflies live on a clear river"
-This is the keyword to meet Kurte...
+@match gothwolte
+Gothwolte is the "perfect being."  Even Eureca couldn't defeat him...
+@match eureca
+Eureca and Cordish went to consult with Kurte.
+@match cordish
+Cordish is our servant.  He is a coward... I don't like him.
+@match kurte
+Kurte are the elders of pupland.  They know everything about pupland.  So they'll solve this disaster.  I don't know where to find Kurte, go to the two huts, located north of this castle.  There are two persons inside.  They must know it.  Please say, "fireflies live on a clear river." This is the keyword to meet Kurte...
 @match *
-Thank you for saving us. We were
-suddenly attacked by Ghothwolte and his
-devils. He occupied our castle and he
-plans to conquer the world.
-My husband, Eureca, is not here.
+Thank you for saving us.  We were suddenly attacked by Gothwolte and his devils.  He occupied our castle and he plans to conquer the world.  My husband, Eureca, is not here.
 endmsg
 Con 100
 hp 18000
@@ -769,12 +754,11 @@ x 7
 y 9
 can_cast_spell 0
 can_use_scroll 0
-can_use_wand 0
 can_use_bow 0
 can_use_armour 0
 can_use_weapon 0
 can_use_ring 0
-can_use_rod 0
+can_use_range 0
 end
 arch dungeon_floor
 x 7
@@ -867,7 +851,7 @@ msg
 @match *
 I'm hungry mum..
 Lauretta says:
-Bernie, you must endure. 
+Bernie, you must endure.
 endmsg
 Con 100
 hp 18000
@@ -981,12 +965,11 @@ x 9
 y 9
 can_cast_spell 0
 can_use_scroll 0
-can_use_wand 0
 can_use_bow 0
 can_use_armour 0
 can_use_weapon 0
 can_use_ring 0
-can_use_rod 0
+can_use_range 0
 end
 arch dungeon_floor
 x 9

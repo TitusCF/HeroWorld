@@ -1,13 +1,14 @@
 arch map
-name pupuly
+name Tower of Pupuly
+difficulty 16
 region lonetown
 width 52
 height 34
+enter_x 7
+enter_y 14
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sun Jan 28 17:45:30 1996
-Modified: 2018-12-27 Acer
+Created:  1996-01-28
+Modified: 2012-03-01 Rick Tanner
 endmsg
 end
 arch grass
@@ -4635,12 +4636,11 @@ y 23
 end
 arch gate_open_1
 msg
-Click
+Click.
 endmsg
 x 21
 y 23
 connected 1230
-protected 1230
 end
 arch dungeon_floor
 x 21
@@ -4662,7 +4662,7 @@ arch dungeon_floor
 x 21
 y 27
 end
-arch dwall_2_1_2
+arch dwall_1_3
 x 21
 y 27
 end
@@ -5269,7 +5269,7 @@ arch dungeon_floor
 x 23
 y 27
 end
-arch dwall_2_1_2
+arch dwall_1_4
 x 23
 y 27
 end
@@ -5687,7 +5687,6 @@ sp 24
 x 25
 y 6
 connected 5
-protected 5
 end
 arch key2
 name Guard Room Key
@@ -5698,39 +5697,24 @@ end
 arch guildmaster
 name old man
 msg
-@match tree|Tree
+@match tree
 I l.. love laurels very much.
-@match laurels|Laurels
-Laurel, laurel,...
-Oh! N.. Now I remember ,
-Eureca's wife is called "Lauretta"!
-@match pupuly|Pupuly
+@match laurel
+Laurel, laurel,... Oh! N.. Now I remember.  Eureca's wife is called, Lauretta.
+@match pupuly
 Y.. Y.. Yes, I.. I'm.. I am Pupuly.
-@match wife|Wife
-I know her. But I c.. can.. cannot
-remember her name right now.
-@match eureca|Eureca
-He is the l.. lord of this country.
-I.. I served him for about 20 years.
-And now I live in retirement.
-@match ring|Ring
-Y.. you may take the r.. ring as reward
-for k.. kicking Nazgul's butt.
-It's on the 5-th floor.
-@match [Tt]hieves|[Nn]azgul
-They w.. wanted to steal my ring.
-Th.. Thought they could cheat on ol'
-Pupuly!
-@match key|Key
-The "Guard Room Key"? I f.. forgot
-it's purpose. It had s.. something
-to do with E.. Eureca I think.
+@match wife
+I know her, but I c.. can.. cannot remember her name right now.
+@match eureca
+He is the l.. lord of this country.  I.. I served him for about 20 years.  And now I live in retirement.
+@match ring
+Y.. you may take the r.. ring as reward for k.. kicking Nazgul's butt.  It's on the 5-th floor.
+@match thieves|nazgul
+They w.. wanted to steal my ring. Th.. thought they could cheat on ol' Pupuly!
+@match key
+The Guard Room Key? I f.. forgot it's purpose.  I th.. think it had s.. something to do with E.. Eureca.
 @match *
-Th.. Thank you for saving me.
-We were a.. attacked by the Thieves.
-My servant tried to open the escape
-pits, b.. but ...
-I'm afraid that he got k.. killed.
+Th.. Thank you for saving me.  We were a.. attacked by the Thieves.  My servant tried to open the escape pits, b.. but ... I'm afraid that he got k.. killed.
 endmsg
 hp 500
 ac -10
@@ -5767,7 +5751,6 @@ arch ggate_closed
 x 25
 y 9
 connected 999
-protected 999
 end
 arch afloor_right
 x 25
@@ -5841,7 +5824,7 @@ arch dungeon_floor
 x 25
 y 18
 end
-arch dwall3_3
+arch dwall_3_3
 x 25
 y 18
 end
@@ -5899,7 +5882,6 @@ sp 6
 x 25
 y 25
 connected 5
-protected 5
 end
 arch dungeon_floor
 x 25
@@ -6058,18 +6040,13 @@ end
 arch magic_mouth
 name 10
 msg
-The old man say:
-That l.. lever doesn't work, this gate
-is l.. locked. P.. Please go upstairs
-and t.. try to open the escape pit for
-me.
+The old man says:
+That l.. lever doesn't work; this gate is l.. locked.  P.. Please go upstairs and t.. try to open the escape pit for me.
 endmsg
 x 26
 y 10
 connected 10
-walk_on 0
-fly_on 0
-protected 10
+move_on 0
 end
 arch afloor_right
 x 26
@@ -6083,7 +6060,6 @@ arch button_lever
 x 26
 y 10
 connected 11
-protected 11
 end
 arch afloor_right
 x 26
@@ -6209,7 +6185,7 @@ arch dungeon_floor
 x 26
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 26
 y 27
 end
@@ -6785,7 +6761,7 @@ arch dungeon_floor
 x 28
 y 23
 end
-arch dwall_2_1_2
+arch dwall_1_3
 x 28
 y 23
 end
@@ -6817,11 +6793,15 @@ arch dwall_2_1_2
 x 28
 y 27
 end
+arch swall_1_1_half
+x 28
+y 27
+end
 arch dungeon_floor
 x 28
 y 28
 end
-arch swall_1_1
+arch swall_2_1_1
 x 28
 y 28
 end
@@ -7088,7 +7068,7 @@ arch dungeon_floor
 x 29
 y 27
 end
-arch dwall_2_1_2
+arch dwall_1_3
 x 29
 y 27
 end
@@ -7335,7 +7315,7 @@ arch dungeon_floor
 x 30
 y 23
 end
-arch dwall_2_1_2
+arch dwall_1_4
 x 30
 y 23
 end
@@ -7416,10 +7396,6 @@ arch bagpipe
 name ancient instrument
 x 30
 y 32
-arch event_apply
-title Python
-slaying sunnista.py
-end
 end
 arch dungeon_floor
 x 30
@@ -7659,7 +7635,11 @@ arch dungeon_floor
 x 31
 y 27
 end
-arch dwall_2_1_2
+arch dwall_1_4
+x 31
+y 27
+end
+arch swall_1_1_half
 x 31
 y 27
 end
@@ -7667,7 +7647,7 @@ arch dungeon_floor
 x 31
 y 28
 end
-arch swall_1_1
+arch swall_2_1_1
 x 31
 y 28
 end
@@ -8662,7 +8642,6 @@ y 18
 speed 2.000000
 value 1
 connected 11
-protected 11
 end
 arch scroll
 x 36
@@ -8674,7 +8653,6 @@ x 36
 y 19
 speed 0.500000
 connected 5
-protected 5
 end
 arch blocked
 x 36
@@ -8856,7 +8834,6 @@ x 37
 y 18
 weight 10
 connected 10
-protected 10
 end
 arch spikes_closed
 name 11
@@ -8867,7 +8844,6 @@ x 37
 y 18
 speed 2.000000
 connected 11
-protected 11
 end
 arch igate_closed_1
 name 5
@@ -8875,7 +8851,6 @@ x 37
 y 19
 speed 0.500000
 connected 5
-protected 5
 end
 arch blocked
 x 37
@@ -9576,9 +9551,7 @@ end
 arch note
 name servant's notes
 msg
-Tomorrow I'll have to plant trees
-again. That crazy old man...
-I should try to make him loose count.
+Tomorrow I'll have to plant trees again.  That crazy old man... I should try to make him lose count.
 endmsg
 x 41
 y 14
@@ -9745,7 +9718,7 @@ arch woodfloor
 x 42
 y 12
 end
-arch dwall3_3
+arch dwall_3_3
 x 42
 y 12
 end
@@ -9848,7 +9821,7 @@ end
 arch woodfloor
 x 43
 end
-arch dwall3_3
+arch dwall_3_3
 x 43
 end
 arch woodfloor
@@ -10113,7 +10086,6 @@ sp 24
 x 44
 y 7
 connected 5
-protected 5
 end
 arch wraith
 x 44
@@ -10345,7 +10317,7 @@ arch woodfloor
 x 45
 y 12
 end
-arch dwall_2_1_2
+arch dwall_1_3
 x 45
 y 12
 end
@@ -10472,6 +10444,8 @@ x 46
 y 3
 carrying 1840
 arch potion_heal
+arch spell_heal
+end
 end
 arch ring_nodrain
 identified 1
@@ -10537,9 +10511,13 @@ arch woodfloor
 x 46
 y 12
 end
-arch dwall_1_3
+arch door_look_1
 x 46
 y 12
+arch rune_create_bomb
+Cha 27
+level 7
+end
 end
 arch woodfloor
 x 46
@@ -10739,13 +10717,9 @@ arch woodfloor
 x 47
 y 12
 end
-arch door_look_1
+arch dwall_1_4
 x 47
 y 12
-arch rune_create_bomb
-Cha 27
-level 7
-end
 end
 arch woodfloor
 x 47
@@ -10873,7 +10847,6 @@ arch gate_closed_2
 x 48
 y 4
 connected 5
-protected 5
 end
 arch woodfloor
 x 48
@@ -11070,7 +11043,6 @@ name escape pits
 x 49
 y 5
 connected 5
-protected 5
 end
 arch corpse
 name servant's corpse
@@ -11288,14 +11260,14 @@ x 50
 y 10
 arch rune_burning_hands
 Cha 27
-sp 28
 level 7
+arch spell_probe
+end
 end
 end
 arch magic_mouth
 msg
-Uh, oh, Nazgul doesn't seem to be
-a *nice* fellow... He looks dangerous!
+Uh, oh, Nazgul doesn't seem to be a *nice* fellow... He looks dangerous!
 endmsg
 x 50
 y 11

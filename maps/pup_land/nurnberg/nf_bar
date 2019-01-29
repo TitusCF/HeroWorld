@@ -1,16 +1,18 @@
 arch map
+name Night Flower Bar
+difficulty 1
 region nurnberg
-name nf_bar
-msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sat Feb 10 05:55:01 1996
-endmsg
+shopitems food:100;*:-100
+shopgreed 1.50000
+shopmax 5000
 width 27
 height 20
-shopitems food:100;*:-100
-shopmax 5000
-shopgreed 1.5
+enter_x 12
+enter_y 1
+msg
+Created:  1996-02-10
+Modified: 2012-03-02 Rick Tanner
+endmsg
 end
 arch cobblestones
 end
@@ -298,18 +300,18 @@ y 5
 end
 arch cleric
 name Masa-O
-face cleric.131
 msg
 @match *
-Baby, I love you.
-I can't control myself any more.
+Baby, I love you.  I can't control myself any more.
 endmsg
-type 0
+face cleric.131
 hp 100
-monster 1
-unaggressive 1
 x 2
 y 5
+type 0
+move_type walk
+monster 1
+unaggressive 1
 end
 arch woodfloor
 x 2
@@ -329,11 +331,11 @@ y 8
 end
 arch bench_1_4
 name bar
-no_pass 1
-no_magic 1
-damned 1
 x 2
 y 8
+move_block all
+no_magic 1
+damned 1
 end
 arch woodfloor
 x 2
@@ -341,16 +343,16 @@ y 9
 end
 arch man
 name bartender
-face man.131
 msg
 @match *
 I'm too busy to answer your queries.
 endmsg
+face man.131
 hp 180
-friendly 1
-unaggressive 0
 x 2
 y 9
+friendly 1
+unaggressive 0
 end
 arch woodfloor
 x 2
@@ -382,16 +384,16 @@ y 13
 end
 arch man
 name bartender
-face man.131
 msg
 @match *
 I'm too busy to answer your queries.
 endmsg
+face man.131
 hp 180
-friendly 1
-unaggressive 0
 x 2
 y 13
+friendly 1
+unaggressive 0
 end
 arch woodfloor
 x 2
@@ -423,16 +425,16 @@ y 17
 end
 arch man
 name bartender
-face man.131
 msg
 @match *
 I'm too busy to answer your queries.
 endmsg
+face man.131
 hp 180
-friendly 1
-unaggressive 0
 x 2
 y 17
+friendly 1
+unaggressive 0
 end
 arch woodfloor
 x 2
@@ -491,8 +493,7 @@ arch woman2
 name Ef
 msg
 @match *
-If you do something to me,
-I'll kill you!
+If you do something to me, I'll kill you!
 endmsg
 hp 200
 maxhp 200
@@ -517,11 +518,11 @@ y 8
 end
 arch bench_2_2_3
 name bar
-no_pass 1
-no_magic 1
-damned 1
 x 3
 y 8
+move_block all
+no_magic 1
+damned 1
 end
 arch woodfloor
 x 3
@@ -529,11 +530,11 @@ y 9
 end
 arch bench_2_1_1
 name bar
-no_pass 1
-no_magic 1
-damned 1
 x 3
 y 9
+move_block all
+no_magic 1
+damned 1
 end
 arch woodfloor
 x 3
@@ -541,11 +542,11 @@ y 10
 end
 arch bench_2_1_1
 name bar
-no_pass 1
-no_magic 1
-damned 1
 x 3
 y 10
+move_block all
+no_magic 1
+damned 1
 end
 arch woodfloor
 x 3
@@ -553,11 +554,11 @@ y 11
 end
 arch bench_2_1_1
 name bar
-no_pass 1
-no_magic 1
-damned 1
 x 3
 y 11
+move_block all
+no_magic 1
+damned 1
 end
 arch woodfloor
 x 3
@@ -565,11 +566,11 @@ y 12
 end
 arch bench_2_1_1
 name bar
-no_pass 1
-no_magic 1
-damned 1
 x 3
 y 12
+move_block all
+no_magic 1
+damned 1
 end
 arch woodfloor
 x 3
@@ -577,11 +578,11 @@ y 13
 end
 arch bench_2_1_1
 name bar
-no_pass 1
-no_magic 1
-damned 1
 x 3
 y 13
+move_block all
+no_magic 1
+damned 1
 end
 arch woodfloor
 x 3
@@ -589,11 +590,11 @@ y 14
 end
 arch bench_2_1_1
 name bar
-no_pass 1
-no_magic 1
-damned 1
 x 3
 y 14
+move_block all
+no_magic 1
+damned 1
 end
 arch woodfloor
 x 3
@@ -601,11 +602,11 @@ y 15
 end
 arch bench_2_1_1
 name bar
-no_pass 1
-no_magic 1
-damned 1
 x 3
 y 15
+move_block all
+no_magic 1
+damned 1
 end
 arch woodfloor
 x 3
@@ -613,11 +614,11 @@ y 16
 end
 arch bench_2_1_1
 name bar
-no_pass 1
-no_magic 1
-damned 1
 x 3
 y 16
+move_block all
+no_magic 1
+damned 1
 end
 arch woodfloor
 x 3
@@ -625,11 +626,11 @@ y 17
 end
 arch bench_2_1_1
 name bar
-no_pass 1
-no_magic 1
-damned 1
 x 3
 y 17
+move_block all
+no_magic 1
+damned 1
 end
 arch woodfloor
 x 3
@@ -637,11 +638,11 @@ y 18
 end
 arch bench_1_2
 name bar
-no_pass 1
-no_magic 1
-damned 1
 x 3
 y 18
+move_block all
+no_magic 1
+damned 1
 end
 arch woodfloor
 x 3
@@ -726,25 +727,21 @@ arch elf
 name elf soldier
 msg
 @match kurte
-"Kurte" - I don't have the slightest
-idea what or who that might be.
+"Kurte" - I don't have the slightest idea what or who that might be.
 @match yes|beer|war|senseless
-Did you ever meet the scolars of Kurte
-in their huts next to the sea?
-They are so wise, ask them about the
-war...
+Did you ever meet the scholars of Kurte in their huts next to the sea? They are so wise, ask them about the war...
 @match *
-The war in pupland is so senseless.
-Come on, have a beer with me.
+The war in pupland is so senseless.  Come on, have a beer with me.
 endmsg
-type 0
 hp 100
-speed_left -7.600000
-randomitems none
-monster 1
-friendly 1
 x 4
 y 10
+speed_left -7.600000
+type 0
+randomitems none
+move_type walk
+monster 1
+friendly 1
 end
 arch woodfloor
 x 4
@@ -774,23 +771,18 @@ arch human
 name Sumson
 msg
 @match siegfried
-Oh! Youarea fellow of *hicks*
-Liberation Army, aren't you.
-Our ago..agi.. no.. agitating point
-is under the hotel. *hicks*
-Please sayour passss..word to the
-owner of the ho..hotel.
+Oh! You are a fellow of *hicks* Liberation Army, aren't you. Our ago..agi.. no.. agitating point is under the hotel. *hicks* Please say your passss..word to the owner of the ho..hotel.
 @match *
-I`mm... *hicks* ve..veeery busy.
-Sooo.. waddaya want? *hicks*
+I`mm... *hicks* ve..veeery busy. Sooo.. waddaya want? *hicks*
 endmsg
-type 0
 hp 100
-randomitems standard
-monster 1
-friendly 1
 x 4
 y 14
+type 0
+randomitems standard
+move_type walk
+monster 1
+friendly 1
 end
 arch woodfloor
 x 4
@@ -820,19 +812,17 @@ arch dancing_girl
 name beautiful girl
 msg
 @match yes
-Idiot! Crossfire is not some kinda
-smut software, you know.
+Idiot! Crossfire is not some kinda smut software, you know.
 @match *
-Hey sweety! Do you need some
-companionship?
+Hey sweety! Do you need some companionship?
 endmsg
 hp 100
 maxhp 100
+x 4
+y 18
 friendly 1
 unaggressive 0
 random_movement 0
-x 4
-y 18
 end
 arch woodfloor
 x 4
@@ -876,10 +866,10 @@ x 5
 y 4
 end
 arch locked_door2
+slaying 9imm
 msg
 Members only.
 endmsg
-slaying 9imm
 x 5
 y 4
 end
@@ -1073,15 +1063,15 @@ arch door_look_1
 hp 0
 exp 0
 ac 0
+x 7
+y 3
 material 0
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 no_magic 1
 pass_thru 0
 damned 1
-x 7
-y 3
 end
 arch woodfloor
 x 7
@@ -1151,15 +1141,13 @@ arch dog
 name Mimimi
 msg
 @match *
-Did you ever meet Poppy?
-Where is he?
-He knows a lot of information.
+Did you ever meet Poppy? Where is he? He knows a lot of information.
 endmsg
 Con 50
 hp 10000
-friendly 1
 x 7
 y 15
+friendly 1
 end
 arch woodfloor
 x 7
@@ -1202,8 +1190,7 @@ arch sign
 msg
 Welcome to Night Flower Bar
 ---------------------------
-You must be over 18 to enter,
-ENJOY your immoral night.
+You must be over 18 to enter, ENJOY your immoral night.
 endmsg
 x 8
 y 2
@@ -1249,21 +1236,21 @@ x 8
 y 8
 end
 arch sailor
-arch event_say
-title Python
-slaying /python/IPO/seen.py
-end
 msg
 @match *
 ...Shake it baby!
 endmsg
 hp 180
 maxhp 180
+x 8
+y 8
 friendly 1
 unaggressive 0
 random_movement 0
-x 8
-y 8
+arch event_say
+title Python
+slaying /python/IPO/seen.py
+end
 end
 arch woodfloor
 x 8
@@ -1416,13 +1403,13 @@ y 18
 end
 arch slotmachine2
 name Midas Touch
+food 0
+x 9
+y 18
 arch event_apply
 title Python
 slaying /python/casino/goldslots.py
 end
-food 0
-x 9
-y 18
 end
 arch woodfloor
 x 9
@@ -1470,28 +1457,26 @@ x 10
 y 6
 end
 arch woodfloor2
-name woodfloor
 x 10
 y 6
 end
 arch slevel_2_2_2
-no_pass 1
 x 10
 y 6
+move_block all
 end
 arch dungeon_magic
 x 10
 y 7
 end
 arch woodfloor2
-name woodfloor
 x 10
 y 7
 end
 arch slevel_3_2
-no_pass 1
 x 10
 y 7
+move_block all
 end
 arch dungeon_magic
 x 10
@@ -1502,14 +1487,13 @@ x 10
 y 8
 end
 arch woodfloor2
-name woodfloor
 x 10
 y 8
 end
 arch slevel_3_2
-no_pass 1
 x 10
 y 8
+move_block all
 end
 arch dungeon_magic
 x 10
@@ -1520,14 +1504,13 @@ x 10
 y 9
 end
 arch woodfloor2
-name woodfloor
 x 10
 y 9
 end
 arch slevel_2_2_1
-no_pass 1
 x 10
 y 9
+move_block all
 end
 arch woodfloor
 x 10
@@ -1579,11 +1562,7 @@ y 18
 end
 arch sign
 msg
-Presenting the Lucky Lady Slots
-courtesy of Casino Infernal
-Pull the handle and try your luck.
-
-Please visit our Casino in Navar!
+Presenting the Lucky Lady Slots courtesy of Casino Infernal.  Pull the handle and try your luck.  Please visit our Casino in Navar!
 endmsg
 x 10
 y 18
@@ -1634,23 +1613,29 @@ x 11
 y 6
 end
 arch woodfloor2
-name woodfloor
 x 11
 y 6
 end
 arch slevel_3_3
-no_pass 1
 x 11
 y 6
+move_block all
 end
 arch dungeon_magic
 x 11
 y 7
 end
 arch woodfloor2
-name woodfloor
 x 11
 y 7
+end
+arch mabu
+name nude dancing girl
+x 11
+y 7
+randomitems none
+friendly 1
+can_use_skill 0
 end
 arch dungeon_magic
 x 11
@@ -1661,7 +1646,6 @@ x 11
 y 8
 end
 arch woodfloor2
-name woodfloor
 x 11
 y 8
 end
@@ -1674,14 +1658,13 @@ x 11
 y 9
 end
 arch woodfloor2
-name woodfloor
 x 11
 y 9
 end
 arch slevel_3_1
-no_pass 1
 x 11
 y 9
+move_block all
 end
 arch woodfloor
 x 11
@@ -1733,13 +1716,13 @@ y 18
 end
 arch slotmachine3
 name Silver Penny-0-Rama
+food 0
+x 11
+y 18
 arch event_apply
 title Python
 slaying /python/casino/silverslots.py
 end
-food 0
-x 11
-y 18
 end
 arch woodfloor
 x 11
@@ -1787,30 +1770,35 @@ x 12
 y 6
 end
 arch woodfloor2
-name woodfloor
 x 12
 y 6
 end
 arch slevel_3_3
-no_pass 1
 x 12
 y 6
+move_block all
 end
 arch dungeon_magic
 x 12
 y 7
 end
 arch woodfloor2
-name woodfloor
 x 12
 y 7
+end
+arch mabu
+name nude dancing girl
+x 12
+y 7
+randomitems none
+friendly 1
+can_use_skill 0
 end
 arch dungeon_magic
 x 12
 y 8
 end
 arch woodfloor2
-name woodfloor
 x 12
 y 8
 end
@@ -1819,14 +1807,13 @@ x 12
 y 9
 end
 arch woodfloor2
-name woodfloor
 x 12
 y 9
 end
 arch slevel_3_1
-no_pass 1
 x 12
 y 9
+move_block all
 end
 arch woodfloor
 x 12
@@ -1850,24 +1837,20 @@ y 12
 end
 arch sage
 name soldier
-face warrior_grey.111
 msg
 @match money|would
-If I had more money I would do the
-same as Eureca: Grab it and dissapear!
-But I would take one of those two
-bunnies with me...
+If I had more money I would do the same as Eureca: Grab it and disappear! But I would take one of those two bunnies with me...
 @match *
-Yeah, look at those beautiful girls!
-If I had more money I would...
+Yeah, look at those beautiful girls! If I had more money I would...
 endmsg
+face warrior.111
 hp 180
 maxhp 180
+x 12
+y 12
 randomitems ogre
 friendly 1
 unaggressive 0
-x 12
-y 12
 end
 arch woodfloor
 x 12
@@ -1943,56 +1926,52 @@ x 13
 y 6
 end
 arch woodfloor2
-name woodfloor
 x 13
 y 6
 end
 arch slevel_2_2_3
-no_pass 1
 x 13
 y 6
+move_block all
 end
 arch dungeon_magic
 x 13
 y 7
 end
 arch woodfloor2
-name woodfloor
 x 13
 y 7
 end
 arch slevel_3_4
-no_pass 1
 x 13
 y 7
+move_block all
 end
 arch dungeon_magic
 x 13
 y 8
 end
 arch woodfloor2
-name woodfloor
 x 13
 y 8
 end
 arch slevel_3_4
-no_pass 1
 x 13
 y 8
+move_block all
 end
 arch dungeon_magic
 x 13
 y 9
 end
 arch woodfloor2
-name woodfloor
 x 13
 y 9
 end
 arch slevel_2_2_4
-no_pass 1
 x 13
 y 9
+move_block all
 end
 arch woodfloor
 x 13
@@ -2157,6 +2136,8 @@ hp 300
 maxhp 300
 sp 0
 maxsp 0
+x 14
+y 17
 resist_physical 100
 resist_magic 100
 resist_fire 100
@@ -2183,18 +2164,15 @@ resist_blind 100
 randomitems none
 pick_up 0
 will_apply 0
-can_apply 0
 monster 0
 unaggressive 0
 can_cast_spell 0
 can_use_scroll 0
-can_use_wand 0
+can_use_range 0
 can_use_bow 0
 can_use_armour 0
 can_use_weapon 0
 can_use_ring 0
-x 14
-y 17
 end
 arch woodfloor
 x 14
@@ -2257,10 +2235,10 @@ These girls are HOT!
 endmsg
 hp 100
 maxhp 100
-friendly 1
-unaggressive 0
 x 15
 y 6
+friendly 1
+unaggressive 0
 end
 arch woodfloor
 x 15
@@ -2315,10 +2293,10 @@ x 15
 y 15
 end
 arch mover_3
-speed 0.400000
-speed_left -2.790000
 x 15
 y 15
+speed 0.400000
+speed_left -2.790000
 end
 arch woodfloor
 x 15
@@ -2338,13 +2316,15 @@ y 18
 end
 arch swashbuckler
 name Bahn
-face swashbuckl.131
 msg
 @match *
 I'll get ya baby...
 endmsg
-type 0
+face swashbuckl.131
 hp 100
+x 15
+y 18
+type 0
 resist_physical 100
 resist_magic 100
 resist_fire 100
@@ -2371,8 +2351,6 @@ resist_blind 100
 randomitems none
 can_use_armour 0
 can_use_weapon 0
-x 15
-y 18
 end
 arch woodfloor
 x 15
@@ -2403,8 +2381,7 @@ arch sign
 msg
 Welcome to Night Flower Bar
 ---------------------------
-You must be over 18 to enter,
-ENJOY your immoral night.
+You must be over 18 to enter, ENJOY your immoral night.
 endmsg
 x 16
 y 2
@@ -2482,10 +2459,10 @@ x 16
 y 15
 end
 arch mover_4
-speed 0.400000
-speed_left -3.440000
 x 16
 y 15
+speed 0.400000
+speed_left -3.440000
 end
 arch woodfloor
 x 16
@@ -2500,10 +2477,10 @@ x 16
 y 18
 end
 arch mover_7
-speed 0.400000
-speed_left -2.290000
 x 16
 y 18
+speed 0.400000
+speed_left -2.290000
 end
 arch woodfloor
 x 16
@@ -2538,15 +2515,15 @@ arch door_look_1
 hp 0
 exp 0
 ac 0
+x 17
+y 3
 material 0
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 no_magic 1
 pass_thru 0
 damned 1
-x 17
-y 3
 end
 arch woodfloor
 x 17
@@ -2601,20 +2578,20 @@ x 17
 y 16
 end
 arch mover_5
-speed 0.400000
-speed_left -2.660000
 x 17
 y 16
+speed 0.400000
+speed_left -2.660000
 end
 arch woodfloor
 x 17
 y 17
 end
 arch mover_6
-speed 0.400000
-speed_left -2.000000
 x 17
 y 17
+speed 0.400000
+speed_left -2.000000
 end
 arch woodfloor
 x 17
@@ -2797,6 +2774,10 @@ arch woodfloor
 x 19
 y 10
 end
+arch swall_1_1_half
+x 19
+y 10
+end
 arch awall_1_2
 x 19
 y 10
@@ -2813,6 +2794,10 @@ arch woodfloor
 x 19
 y 12
 end
+arch swall_1_2_half
+x 19
+y 12
+end
 arch awall_1_1
 x 19
 y 12
@@ -2825,6 +2810,10 @@ arch awall_1_2
 x 19
 y 13
 end
+arch swall_1_1_half
+x 19
+y 13
+end
 arch woodfloor
 x 19
 y 14
@@ -2837,11 +2826,19 @@ arch woodfloor
 x 19
 y 15
 end
+arch swall_1_2_half
+x 19
+y 15
+end
 arch awall_1_1
 x 19
 y 15
 end
 arch woodfloor
+x 19
+y 16
+end
+arch swall_1_1_half
 x 19
 y 16
 end
@@ -2858,6 +2855,10 @@ x 19
 y 17
 end
 arch woodfloor
+x 19
+y 18
+end
+arch swall_1_2_half
 x 19
 y 18
 end
@@ -2898,11 +2899,15 @@ arch awall_2_1_2
 x 20
 y 3
 end
+arch swall_1_1_half
+x 20
+y 3
+end
 arch woodfloor
 x 20
 y 4
 end
-arch swall_1_1
+arch swall_2_1_1
 x 20
 y 4
 end
@@ -3214,31 +3219,23 @@ y 12
 end
 arch conjurer
 msg
-@match Bauer|bauer
-Bauer is a greedy and selfish person.
-After Dick built the castle for him,
-Bauer didn't pay enough money.
-Dick is still very angry about that.
+@match bauer
+Bauer is a greedy and selfish person.  After Dick built the castle for him, Bauer didn't pay enough money.  Dick is still very angry about that.
 @match castle
 It's to the north of this town.
 @match dick
-He is a carpenter. He built many
-buildings in this city, even the castle
-of Bauer.
+He is a carpenter.  He built many buildings in this city, even the castle of Bauer.
 @match dungeon
-Dick is kinda sadistic sometimes.
-His dungeons are very tricky and
-dangerous. Be careful!
-@match yes|Yes
+Dick is kinda sadistic sometimes.  His dungeons are very tricky and dangerous.  Be careful!
+@match yes
 You should try Dick's dungeons.
 @match *
-Hello!
-Are you an adventurer?
+Hello! Are you an adventurer?
 endmsg
 hp 400
-friendly 1
 x 22
 y 12
+friendly 1
 end
 arch woodfloor
 x 22
@@ -3266,17 +3263,16 @@ y 15
 end
 arch man
 name wealthy man
-face man.131
 msg
 @match *
-Can't you see that I'm with a princess
-tonight?! Leave us alone!
+Can't you see that I'm with a princess tonight?! Leave us alone!
 endmsg
+face man.131
 hp 180
-friendly 1
-unaggressive 0
 x 22
 y 15
+friendly 1
+unaggressive 0
 end
 arch woodfloor
 x 22
@@ -3295,17 +3291,18 @@ x 22
 y 17
 end
 arch elf
-face elf.131
 msg
 @match *
 I'm too busy to answer your queries.
 endmsg
-type 0
+face elf.131
 hp 100
-monster 1
-friendly 1
 x 22
 y 17
+type 0
+move_type walk
+monster 1
+friendly 1
 end
 arch woodfloor
 x 22
@@ -3316,17 +3313,18 @@ x 22
 y 18
 end
 arch thief
-face thief.151
 msg
 @match *
 I'm too busy to answer your queries.
 endmsg
-type 0
+face thief.151
 hp 100
-monster 1
-friendly 1
 x 22
 y 18
+type 0
+move_type walk
+monster 1
+friendly 1
 end
 arch woodfloor
 x 22
@@ -3550,7 +3548,7 @@ arch woodfloor
 x 24
 y 6
 end
-arch swall_1_3
+arch swall_2_1_2
 x 24
 y 6
 end
@@ -3592,10 +3590,10 @@ y 12
 end
 arch dwarf
 hp 700
-friendly 1
-unaggressive 0
 x 24
 y 12
+friendly 1
+unaggressive 0
 end
 arch woodfloor
 x 24
@@ -3624,14 +3622,13 @@ end
 arch princess
 msg
 @match *
-I don't like him, but his money is
-good enough for me.
+I don't like him, but his money is good enough for me.
 endmsg
 hp 300
-friendly 1
-unaggressive 0
 x 24
 y 15
+friendly 1
+unaggressive 0
 end
 arch woodfloor
 x 24
@@ -3654,13 +3651,14 @@ msg
 @match *
 I'm too busy to answer your queries.
 endmsg
-type 0
 hp 100
-randomitems standard
-monster 1
-friendly 1
 x 24
 y 17
+type 0
+randomitems standard
+move_type walk
+monster 1
+friendly 1
 end
 arch woodfloor
 x 24
@@ -3759,6 +3757,10 @@ x 25
 y 5
 end
 arch woodfloor
+x 25
+y 6
+end
+arch swall_1_3_half
 x 25
 y 6
 end
@@ -3956,20 +3958,4 @@ end
 arch grass
 x 26
 y 19
-end
-arch mabu
-name nude dancing girl
-randomitems none
-friendly 1
-can_use_skill 0
-x 11
-y 7
-end
-arch mabu
-name nude dancing girl
-randomitems none
-friendly 1
-can_use_skill 0
-x 12
-y 7
 end

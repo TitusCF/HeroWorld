@@ -1,15 +1,16 @@
 arch map
+name Tower of Ordeal, Basement 2
+difficulty 18
 region pupland
-name tower_ordealB2
+darkness 1
+width 16
+height 16
+enter_x 1
+enter_y 1
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sun Jan 28 22:11:26 1996
+Created:  1996-01-28
+Modified: 2008-10-26 Rick Tanner
 endmsg
-hp 1
-sp 1
-level 6
-invisible 1
 end
 arch mine10
 end
@@ -174,6 +175,11 @@ end
 arch pstone_1
 x 1
 y 9
+end
+arch mine_secret_1_1
+x 1
+y 9
+move_block 0
 end
 arch pstone_1
 x 1
@@ -1511,9 +1517,4 @@ end
 arch blocked
 x 15
 y 15
-end
-arch mine_secret_1_1
-x 1
-y 9
-no_pass 0
 end

@@ -1,13 +1,15 @@
 arch map
+name Skud Tower, West
+difficulty 20
+region wilderness
+width 30
+height 40
+enter_x 29
+enter_y 4
 msg
-Creator: Skud the Great
-Email: tvangod@ecst.csuchico.edu
-Date: Sun Apr 10 19:02:12 1994
+Created:  1994-04-10 Skud the Great (tvangod@ecst.csuchico.edu)
+Modified: 2012-01-03 Rick Tanner
 endmsg
-hp 29
-sp 4
-x 30
-y 40
 end
 arch marble
 end
@@ -1591,10 +1593,7 @@ end
 arch book_read
 name The Unicorn
 msg
-The north wing of the tower can be
-entered by sacrificing one unicorn.
-Only when this is done will the sill
-to the north wing be broken
+The north wing of the tower can be entered by sacrificing one unicorn. Only when this is done will the sill to the north wing be broken.
 endmsg
 x 7
 y 1
@@ -3834,7 +3833,7 @@ y 8
 end
 arch magic_mouth
 msg
-I smell MAGGOTS
+I smell MAGGOTS.
 endmsg
 x 16
 y 9
@@ -4296,6 +4295,12 @@ arch marble
 x 18
 y 9
 end
+arch unicorn
+hp 2
+maxhp 2
+x 18
+y 9
+end
 arch marble
 x 18
 y 10
@@ -4753,6 +4758,10 @@ x 20
 y 16
 end
 arch marble
+x 20
+y 17
+end
+arch dread
 x 20
 y 17
 end
@@ -6402,8 +6411,7 @@ arch nightmare
 name Evil Ghost
 msg
 @match *
-The unicorn will not leave this
-chamber. Be gone
+The unicorn will not leave this chamber. Be gone.
 endmsg
 hp 400
 maxhp 400
@@ -6851,14 +6859,4 @@ end
 arch cwall_2_2_4
 x 29
 y 39
-end
-arch unicorn
-hp 2
-maxhp 2
-x 18
-y 9
-end
-arch dread
-x 20
-y 17
 end

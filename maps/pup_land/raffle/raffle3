@@ -1,16 +1,18 @@
 arch map
+name Raffle 3, Entrance
+swap_time 5
+reset_timeout 3600
+fixed_resettime 1
+difficulty 1
 region pupland
-name raffle
+width 22
+height 30
+enter_x 1
+enter_y 7
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sun Dec 29 03:15:18 1996
+Created:  1996-12-29
+Modified: 2012-03-15 Rick Tanner
 endmsg
-x 22
-y 30
-value 5
-weight 3600
-stand_still 1
 end
 arch blocked
 end
@@ -89,7 +91,7 @@ end
 arch flagstone
 y 7
 end
-arch oakdoor
+arch oakdoor_1
 slaying ../terminal_u1
 hp 11
 sp 8
@@ -538,7 +540,7 @@ end
 arch flagstone
 x 2
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 19
@@ -710,8 +712,8 @@ x 2
 y 13
 material 0
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 pass_thru 0
 end
 arch dungeon_magic
@@ -866,7 +868,7 @@ end
 arch flagstone
 x 3
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 19
@@ -887,20 +889,19 @@ end
 arch neko
 name kitty
 msg
-@match mew|Mew|MEW
+@match mew
 Mew mew mew?!
-(You can understand our language,
- can't you?!)
-@match hello|Hello
+(You can understand our language, can't you?!)
+@match hello
 Mew mew.
-(Hello. I'm a Kitty.)
-@match hi|Hi
+(Hello.  I'm a Kitty.)
+@match hi
 Mew.
-(Hi. I'm a Kitty.)
-@match kitty|Kitty
+(Hi.  I'm a Kitty.)
+@match kitty
 Mew mew!
 (I'm Hungry!)
-@match hungry|Hungry
+@match hungry
 Mew mew mew mew!!!!
 (I like fish very much!)
 @match yes
@@ -1143,8 +1144,7 @@ end
 arch sign_w
 name Dungeon No.3
 msg
-The raffledungeon for the most
-advanced heroes (~lvl 40-60).
+The raffle dungeon for the most advanced heroes (~lvl 40-60).
 endmsg
 x 3
 y 16
@@ -1282,7 +1282,7 @@ end
 arch flagstone
 x 4
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 19
@@ -1616,7 +1616,7 @@ end
 arch flagstone
 x 5
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 19
@@ -1945,7 +1945,7 @@ end
 arch flagstone
 x 6
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 19
@@ -2271,7 +2271,7 @@ arch locked_door2
 name barrier
 slaying raffle3_first_chance
 msg
-You need the raffle ticket No.3 to pull
+You need the raffle ticket No.3 to pull.
 this lever.
 endmsg
 face enchantment.111
@@ -2331,7 +2331,7 @@ end
 arch flagstone
 x 7
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 19
@@ -2689,7 +2689,7 @@ end
 arch flagstone
 x 8
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 19
@@ -2852,12 +2852,9 @@ arch sign
 name instruction
 msg
 You can draw the raffle here!!
- 1. Go to Dungeon No.3 (downstairs)
-    and retreive the raffle ticket.
- 2. Go upstairs and pull lever 1
-    on the 2nd floor.
- 2. Come back here,  pull lever 2
-    right in front of you.
+ 1. Go to Dungeon No.3 (downstairs) and retrieve the raffle ticket.
+ 2. Go upstairs and pull lever 1 on the 2nd floor.
+ 2. Come back here,  pull lever 2 right in front of you.
  3. Then pull lever 3.
  4. At last pull lever 2 again.
 endmsg
@@ -3062,7 +3059,7 @@ end
 arch flagstone
 x 9
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 19
@@ -3417,7 +3414,7 @@ end
 arch flagstone
 x 10
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 19
@@ -3774,7 +3771,7 @@ end
 arch flagstone
 x 11
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 19
@@ -4123,7 +4120,7 @@ end
 arch flagstone
 x 12
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 19
@@ -4481,7 +4478,7 @@ end
 arch flagstone
 x 13
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 19
@@ -4862,7 +4859,7 @@ end
 arch flagstone
 x 14
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 19
@@ -5236,7 +5233,7 @@ end
 arch flagstone
 x 15
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 19
@@ -6502,7 +6499,7 @@ arch flagstone
 x 21
 y 5
 end
-arch oakdoor
+arch oakdoor_1
 slaying ../terminal_u1
 hp 11
 sp 8

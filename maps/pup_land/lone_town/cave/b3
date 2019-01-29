@@ -1,13 +1,15 @@
 arch map
+name Cave of Ordeal, Level 3
+difficulty 25
 region lonetown
-name B3
+width 18
+height 40
+enter_x 1
+enter_y 1
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Wed Dec 18 19:05:18 1996
+Created:  1996-12-18
+Modified: 2012-02-28 Rick Tanner
 endmsg
-x 18
-y 40
 end
 arch dungeon_floor
 end
@@ -292,11 +294,11 @@ arch dungeon_floor
 x 1
 y 7
 end
-arch swall_1_4
+arch dungeon_magic
 x 1
 y 7
 end
-arch dungeon_magic
+arch swall_2_1_2
 x 1
 y 7
 end
@@ -378,7 +380,7 @@ arch dungeon_magic
 x 1
 y 22
 end
-arch swall_1_4
+arch swall_2_1_2
 x 1
 y 22
 end
@@ -389,7 +391,6 @@ end
 arch button_handle
 x 1
 y 23
-protected 11
 connected 11
 end
 arch dungeon_floor
@@ -455,7 +456,6 @@ end
 arch button_small
 x 1
 y 38
-protected 13
 connected 13
 end
 arch dungeon_floor
@@ -472,15 +472,18 @@ end
 arch dun2
 x 2
 end
+arch swall_1_1_half
+x 2
+end
 arch dungeon_floor
 x 2
 y 1
 end
-arch swall_1_1
+arch dungeon_magic
 x 2
 y 1
 end
-arch dungeon_magic
+arch swall_2_1_1
 x 2
 y 1
 end
@@ -607,7 +610,6 @@ end
 arch ggate_closed
 x 2
 y 22
-protected 11
 connected 11
 end
 arch dungeon_floor
@@ -714,7 +716,7 @@ arch dungeon_floor
 x 2
 y 38
 end
-arch swall_1_2
+arch swall_2_1_1
 x 2
 y 38
 end
@@ -761,7 +763,6 @@ hp 7
 sp 16
 x 3
 y 3
-protected 2
 connected 2
 end
 arch dungeon_floor
@@ -1010,15 +1011,18 @@ end
 arch dun2
 x 4
 end
+arch swall_1_1_half
+x 4
+end
 arch dungeon_floor
 x 4
 y 1
 end
-arch swall_1_1
+arch dungeon_magic
 x 4
 y 1
 end
-arch dungeon_magic
+arch swall_2_1_1
 x 4
 y 1
 end
@@ -1072,10 +1076,7 @@ y 6
 end
 arch sign
 msg
-Unusual kobolds!!
-They are very dangerous!!!
-You better not engage them in melee
-combat.
+Unusual kobolds!!  They are very dangerous!!!  You better not engage them in melee combat.
 endmsg
 x 4
 y 6
@@ -1163,7 +1164,6 @@ arch grate_closed_1
 x 4
 y 18
 speed 0.500000
-protected 10
 connected 10
 end
 arch dungeon_floor
@@ -1176,7 +1176,6 @@ other_arch bomb
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 4
 y 19
@@ -1184,6 +1183,8 @@ speed 0.050000
 speed_left -2.170000
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch dungeon_floor
 x 4
@@ -1431,7 +1432,6 @@ arch grate_closed_1
 x 5
 y 18
 speed 0.500000
-protected 10
 connected 10
 end
 arch dungeon_floor
@@ -1444,7 +1444,6 @@ other_arch bomb
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 5
 y 19
@@ -1452,6 +1451,8 @@ speed 0.050000
 speed_left -2.170000
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch dungeon_floor
 x 5
@@ -1618,7 +1619,6 @@ end
 arch button_lever
 x 6
 y 6
-protected 1
 connected 1
 end
 arch pstone_1
@@ -1676,7 +1676,6 @@ end
 arch ggate_closed
 x 6
 y 14
-protected 1234
 connected 1234
 end
 arch dungeon_floor
@@ -1686,7 +1685,6 @@ end
 arch button_lever
 x 6
 y 15
-protected 1234
 connected 1234
 end
 arch dungeon_floor
@@ -1705,7 +1703,6 @@ arch grate_closed_1
 x 6
 y 18
 speed 0.500000
-protected 10
 connected 10
 end
 arch dungeon_floor
@@ -1718,7 +1715,6 @@ other_arch bomb
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 6
 y 19
@@ -1726,6 +1722,8 @@ speed 0.050000
 speed_left -2.170000
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch dungeon_floor
 x 6
@@ -1900,7 +1898,6 @@ end
 arch grate_closed_2
 x 7
 y 9
-protected 1
 connected 1
 end
 arch dungeon_magic
@@ -1970,7 +1967,6 @@ arch grate_closed_1
 x 7
 y 18
 speed 0.500000
-protected 10
 connected 10
 end
 arch dungeon_floor
@@ -1983,7 +1979,6 @@ other_arch bomb
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 7
 y 19
@@ -1991,6 +1986,8 @@ speed 0.050000
 speed_left -2.170000
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch dungeon_floor
 x 7
@@ -2183,7 +2180,6 @@ end
 arch grate_closed_2
 x 7
 y 37
-protected 14
 connected 14
 end
 arch dungeon_floor
@@ -2221,6 +2217,10 @@ x 8
 y 2
 end
 arch dungeon_floor
+x 8
+y 3
+end
+arch swall_1_4_half
 x 8
 y 3
 end
@@ -2340,7 +2340,6 @@ arch grate_closed_1
 x 8
 y 18
 speed 0.500000
-protected 10
 connected 10
 end
 arch dungeon_floor
@@ -2353,7 +2352,6 @@ other_arch bomb
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 8
 y 19
@@ -2361,6 +2359,8 @@ speed 0.050000
 speed_left -2.170000
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch dungeon_floor
 x 8
@@ -2442,7 +2442,6 @@ arch grate_closed_1
 x 8
 y 32
 speed 0.500000
-protected 12
 connected 12
 end
 arch dungeon_floor
@@ -2456,7 +2455,6 @@ end
 arch button_small
 x 8
 y 33
-protected 12
 connected 12
 end
 arch dungeon_floor
@@ -2486,7 +2484,6 @@ end
 arch button_lever
 x 8
 y 36
-protected 14
 connected 14
 end
 arch generate_dragon
@@ -2495,11 +2492,11 @@ Con 100
 hp 30000
 maxhp 30000
 ac -100
-armour 100
 x 8
 y 36
 speed 0.000500
 level 100
+resist_physical 100
 end
 arch dungeon_floor
 x 8
@@ -2519,11 +2516,11 @@ Con 100
 hp 30000
 maxhp 30000
 ac -100
-armour 100
 x 8
 y 38
 speed 0.000500
 level 100
+resist_physical 100
 end
 arch dungeon_floor
 x 8
@@ -2683,7 +2680,6 @@ arch grate_closed_1
 x 9
 y 18
 speed 0.500000
-protected 10
 connected 10
 end
 arch dungeon_floor
@@ -2696,7 +2692,6 @@ other_arch bomb
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 9
 y 19
@@ -2704,6 +2699,8 @@ speed 0.050000
 speed_left -2.170000
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch dungeon_floor
 x 9
@@ -2785,7 +2782,6 @@ arch grate_closed_1
 x 9
 y 32
 speed 0.500000
-protected 12
 connected 12
 end
 arch dungeon_floor
@@ -2799,7 +2795,6 @@ end
 arch button_small
 x 9
 y 33
-protected 12
 connected 12
 end
 arch dungeon_floor
@@ -2867,7 +2862,6 @@ end
 arch button_plate
 x 10
 y 2
-protected 2
 connected 2
 end
 arch dungeon_floor
@@ -3006,7 +3000,6 @@ arch grate_closed_1
 x 10
 y 18
 speed 0.500000
-protected 10
 connected 10
 end
 arch dungeon_floor
@@ -3019,7 +3012,6 @@ other_arch bomb
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 10
 y 19
@@ -3027,6 +3019,8 @@ speed 0.050000
 speed_left -2.170000
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch dungeon_floor
 x 10
@@ -3108,7 +3102,6 @@ arch grate_closed_1
 x 10
 y 32
 speed 0.500000
-protected 12
 connected 12
 end
 arch dungeon_floor
@@ -3122,7 +3115,6 @@ end
 arch button_small
 x 10
 y 33
-protected 12
 connected 12
 end
 arch dungeon_floor
@@ -3196,10 +3188,7 @@ y 2
 end
 arch sign
 msg
-Unusual kobolds!!
-They are very dangerous!!!
-You better not engage them in melee
-combat.
+Unusual kobolds!!  They are very dangerous!!!  You better not engage them in melee combat.
 endmsg
 x 11
 y 2
@@ -3460,7 +3449,6 @@ arch grate_closed_1
 x 11
 y 32
 speed 0.500000
-protected 12
 connected 12
 end
 arch dungeon_floor
@@ -3474,7 +3462,6 @@ end
 arch button_small
 x 11
 y 33
-protected 12
 connected 12
 end
 arch dungeon_floor
@@ -3650,7 +3637,6 @@ end
 arch button_lever
 x 12
 y 18
-protected 10
 connected 10
 end
 arch dungeon_floor
@@ -3729,7 +3715,6 @@ arch grate_closed_1
 x 12
 y 32
 speed 0.500000
-protected 12
 connected 12
 end
 arch dungeon_floor
@@ -3743,7 +3728,6 @@ end
 arch button_small
 x 12
 y 33
-protected 12
 connected 12
 end
 arch dungeon_floor
@@ -3949,7 +3933,6 @@ arch grate_closed_1
 x 13
 y 32
 speed 0.500000
-protected 12
 connected 12
 end
 arch dungeon_floor
@@ -3959,7 +3942,6 @@ end
 arch button_small
 x 13
 y 33
-protected 12
 connected 12
 end
 arch dungeon_floor
@@ -3997,7 +3979,6 @@ arch grate_open_2
 x 14
 y 1
 speed 0.500000
-protected 13
 value 1
 connected 13
 end
@@ -4097,7 +4078,7 @@ arch dungeon_magic
 x 14
 y 22
 end
-arch swall_1_3
+arch swall_2_1_2
 x 14
 y 22
 end
@@ -4117,7 +4098,7 @@ arch dungeon_magic
 x 14
 y 25
 end
-arch swall_1_3
+arch swall_2_1_2
 x 14
 y 25
 end
@@ -4153,7 +4134,6 @@ arch grate_closed_1
 x 14
 y 32
 speed 0.500000
-protected 12
 connected 12
 end
 arch dungeon_floor
@@ -4163,7 +4143,6 @@ end
 arch button_small
 x 14
 y 33
-protected 12
 connected 12
 end
 arch dungeon_floor
@@ -4203,7 +4182,6 @@ end
 arch button_plate
 x 15
 y 1
-protected 14
 connected 14
 end
 arch dungeon_floor
@@ -4547,9 +4525,7 @@ y 19
 end
 arch scroll
 msg
-Say
-   "unusual"
-to the reception guy.
+Say "unusual" to the reception guy.
 endmsg
 x 16
 y 19
@@ -4569,7 +4545,7 @@ y 21
 end
 arch sign
 msg
-Keep pushing the button
+Keep pushing the button.
 endmsg
 x 16
 y 21
@@ -4639,8 +4615,8 @@ y 29
 level 0
 material 0
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 blocksview 1
 pass_thru 0
 end
@@ -4675,7 +4651,6 @@ end
 arch button_lever
 x 16
 y 32
-protected 20
 connected 20
 end
 arch dungeon_floor
@@ -4686,7 +4661,6 @@ arch igate_closed_1
 x 16
 y 33
 speed 0.500000
-protected 20
 connected 20
 end
 arch dungeon_floor
@@ -4696,7 +4670,6 @@ end
 arch button_lever
 x 16
 y 34
-protected 20
 connected 20
 end
 arch rune_confusion

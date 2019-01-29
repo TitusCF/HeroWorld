@@ -1,14 +1,15 @@
 arch map
-name Entrance hall
-msg
-Creator: Skud the Great
-Email: tvangod@ecst.csuchico.edu
-Date: Wed Oct 20 13:10:24 1993
-endmsg
+name Skud Tower, Entrance Hall
+difficulty 20
+region wilderness
 width 10
 height 20
-enter_x 4
-enter_y 17
+enter_x 5
+enter_y 16
+msg
+Created:  1993-10-20 Skud the Great (tvangod@ecst.csuchico.edu)
+Modified: 2012-01-03 Rick Tanner
+endmsg
 end
 arch marble
 end
@@ -503,9 +504,9 @@ x 5
 y 1
 end
 arch gate_closed_1
-connected 1
 x 5
 y 1
+connected 1
 end
 arch marble
 x 5
@@ -690,40 +691,29 @@ x 7
 y 1
 end
 arch button_handle
-connected 1
 x 7
 y 1
+connected 1
 end
 arch lich
 name Guardian
 msg
-@match Skud|skud|great|Great
-Yes, he was one of the greatest wizards
-to walk this land. But he is no longer
-of this earth.
-@match Magic|wizard|Wizard
-He summoned many creatures from the
-depths of the Abyss. I guard this
-entrance now, to insure that none of
-those apparitions ever walk our lands.
+@match skud|great
+Yes, he was one of the greatest wizards to walk this land. But he is no longer of this earth.
+@match Magic|wizard
+He summoned many creatures from the depths of the Abyss. I guard this entrance now, to insure that none of those apparitions ever walk our lands.
 @match land|long|earth
-Yes, he began to use his magic in the
-ways of evil. The board of wizards
-exiled him to this tower, where he was
-consumed by his own magic.
+Yes, he began to use his magic in the ways of evil. The board of wizards exiled him to this tower, where he was consumed by his own magic.
 @match *
-This is the tower of Skud the Great,
-long has it been since I have seen
-mortals walk these halls. I guard this
-entrance, you shall not pass
+This is the tower of Skud the Great, long has it been since I have seen mortals walk these halls. I guard this entrance, you shall not pass.
 endmsg
 maxhp 10000
 wc -20
 ac -15
-level 30
-unaggressive 1
 x 7
 y 1
+level 30
+unaggressive 1
 arch spell_hellfire
 end
 arch spell_hellfire

@@ -1,12 +1,15 @@
 arch map
+name CD Room
+difficulty 18
 region pupland
-name cd_room
+width 17
+height 16
+enter_x 2
+enter_y 1
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue Jun 11 15:27:53 1996
+Created:  1996-06-11
+Modified: 2011-12-18 Rick Tanner
 endmsg
-x 17
 end
 arch dungeon_floor
 end
@@ -955,6 +958,22 @@ arch dungeon_floor
 x 10
 y 9
 end
+arch chinese_dragon
+x 10
+y 9
+carrying 1200
+see_invisible 0
+arch amulet_lifesave
+name Bavinson's amulet
+msg
+  Some words are engraved:
+  "The burning arrow will lead you deeper underground."
+endmsg
+resist_paralyze 100
+value 5000
+lifesave 0
+end
+end
 arch dungeon_floor
 x 10
 y 10
@@ -1608,22 +1627,4 @@ end
 arch blocked
 x 16
 y 15
-end
-arch chinese_dragon
-x 10
-y 9
-carrying 1200
-see_invisible 0
-arch amulet_lifesave
-name Bavinson's amulet
-msg
-  Some words are engraved:
-  "The burning arrow will lead you
-   deeper underground."
-endmsg
-immune 4096
-value 5000
-need_an 0
-lifesave 0
-end
 end

@@ -1,13 +1,15 @@
 arch map
+name Reception, Fire Level 6
+difficulty 20
 region nurnberg
-name fire6
+width 19
+height 16
+enter_x 7
+enter_y 8
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Mon Feb 19 00:59:30 1996
+Created:  1996-02-19
+Modified: 2011-12-15 Rick Tanner
 endmsg
-x 19
-level 10
 end
 arch dungeon_magic
 end
@@ -120,7 +122,10 @@ end
 arch woodfloor
 y 12
 end
-arch cwall_3_2
+arch swall_1_4_half
+y 12
+end
+arch cwall_2_1_1
 y 12
 end
 arch dungeon_magic
@@ -170,7 +175,6 @@ end
 arch button_lever
 x 1
 y 1
-protected 30
 connected 30
 end
 arch dungeon_magic
@@ -185,7 +189,6 @@ arch grate_closed_1
 x 1
 y 2
 speed 0.500000
-protected 30
 connected 30
 end
 arch dungeon_magic
@@ -199,7 +202,6 @@ end
 arch button_lever
 x 1
 y 3
-protected 30
 connected 30
 end
 arch dungeon_magic
@@ -214,7 +216,6 @@ arch grate_open_1
 x 1
 y 4
 speed 0.500000
-protected 30
 value 1
 connected 30
 end
@@ -233,7 +234,6 @@ end
 arch button_lever
 x 1
 y 5
-protected 30
 connected 30
 end
 arch dungeon_magic
@@ -248,7 +248,6 @@ arch grate_closed_1
 x 1
 y 6
 speed 0.500000
-protected 30
 connected 30
 end
 arch dungeon_magic
@@ -262,7 +261,6 @@ end
 arch button_lever
 x 1
 y 7
-protected 30
 connected 30
 end
 arch dungeon_magic
@@ -310,7 +308,6 @@ end
 arch button_small
 x 1
 y 11
-protected 1
 connected 1
 end
 arch dungeon_magic
@@ -385,7 +382,6 @@ arch grate_open_2
 x 2
 y 1
 speed 0.500000
-protected 30
 value 1
 connected 30
 end
@@ -538,7 +534,6 @@ hp 1
 maxhp 1
 x 2
 y 13
-protected 1
 connected 1
 end
 arch dungeon_magic
@@ -585,7 +580,6 @@ end
 arch button_lever
 x 3
 y 1
-protected 30
 connected 30
 end
 arch dungeon_magic
@@ -760,7 +754,6 @@ arch grate_closed_2
 x 4
 y 1
 speed 0.500000
-protected 30
 connected 30
 end
 arch dungeon_magic
@@ -943,7 +936,6 @@ end
 arch button_lever
 x 5
 y 1
-protected 30
 connected 30
 end
 arch dungeon_magic
@@ -1111,7 +1103,6 @@ arch grate_open_2
 x 6
 y 1
 speed 0.500000
-protected 30
 value 1
 connected 30
 end
@@ -1279,7 +1270,6 @@ end
 arch button_lever
 x 7
 y 1
-protected 30
 connected 30
 end
 arch dungeon_magic
@@ -1461,7 +1451,6 @@ arch grate_closed_2
 x 8
 y 1
 speed 0.500000
-protected 30
 connected 30
 end
 arch dungeon_magic
@@ -1631,7 +1620,6 @@ end
 arch button_lever
 x 9
 y 1
-protected 30
 connected 30
 end
 arch dungeon_magic
@@ -1799,7 +1787,6 @@ arch grate_open_2
 x 10
 y 1
 speed 0.500000
-protected 30
 value 1
 connected 30
 end
@@ -1967,7 +1954,6 @@ end
 arch button_lever
 x 11
 y 1
-protected 30
 connected 30
 end
 arch dungeon_magic
@@ -2089,7 +2075,6 @@ end
 arch igateTrg2
 x 11
 y 11
-protected 20
 connected 20
 blocksview 0
 end
@@ -2117,7 +2102,6 @@ arch trigger
 name trigger for GATE-B
 x 11
 y 13
-protected 20
 connected 20
 end
 arch dungeon_magic
@@ -2170,7 +2154,6 @@ arch grate_closed_2
 x 12
 y 1
 speed 0.500000
-protected 30
 connected 30
 end
 arch dungeon_magic
@@ -2192,7 +2175,6 @@ end
 arch button_lever
 x 12
 y 3
-protected 31
 connected 31
 end
 arch dungeon_magic
@@ -2207,7 +2189,6 @@ arch grate_closed_1
 x 12
 y 4
 speed 0.500000
-protected 31
 connected 31
 end
 arch dungeon_magic
@@ -2221,7 +2202,6 @@ end
 arch button_lever
 x 12
 y 5
-protected 31
 connected 31
 end
 arch dungeon_magic
@@ -2236,7 +2216,6 @@ arch grate_open_1
 x 12
 y 6
 speed 0.500000
-protected 31
 value 1
 connected 31
 end
@@ -2255,7 +2234,6 @@ end
 arch button_lever
 x 12
 y 7
-protected 31
 connected 31
 end
 arch dungeon_magic
@@ -2270,7 +2248,6 @@ arch grate_closed_1
 x 12
 y 8
 speed 0.500000
-protected 31
 connected 31
 end
 arch dungeon_magic
@@ -2284,7 +2261,6 @@ end
 arch button_lever
 x 12
 y 9
-protected 31
 connected 31
 end
 arch dungeon_magic
@@ -2375,7 +2351,6 @@ end
 arch button_lever
 x 13
 y 1
-protected 30
 connected 30
 end
 arch dungeon_magic
@@ -2497,7 +2472,6 @@ end
 arch igateTrg2
 x 13
 y 11
-protected 10
 connected 10
 blocksview 0
 end
@@ -2659,7 +2633,6 @@ arch trigger
 name trigger for GATE-A
 x 14
 y 9
-protected 10
 connected 10
 end
 arch dungeon_magic
@@ -2850,7 +2823,11 @@ arch woodfloor
 x 15
 y 10
 end
-arch cwall_3_4
+arch cwall_2_1_1
+x 15
+y 10
+end
+arch swall_1_3_half
 x 15
 y 10
 end

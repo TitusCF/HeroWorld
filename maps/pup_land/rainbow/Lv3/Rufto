@@ -1,17 +1,19 @@
 arch map
-region pupland
 name Rufto
+difficulty 1
+region pupland
+width 11
+height 13
+enter_x 1
+enter_y 1
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Thu Jun 27 12:36:53 1996
+Created:  1996-06-27
+Modified: 2012-03-08 Rick Tanner
 endmsg
-x 11
-y 13
 end
 arch pstone_4
 end
-arch cave18
+arch cave24
 end
 arch pstone_4
 y 1
@@ -70,23 +72,19 @@ end
 arch pstone_4
 y 10
 end
-arch cave17
+arch cave23
 y 10
 end
 arch pstone_4
 y 11
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 11
 end
 arch pstone_4
 y 12
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 y 12
 end
 arch pstone_4
@@ -150,9 +148,7 @@ arch pstone_4
 x 1
 y 11
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 11
 end
@@ -160,16 +156,14 @@ arch pstone_4
 x 1
 y 12
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 1
 y 12
 end
 arch pstone_4
 x 2
 end
-arch cave19
+arch cave25
 x 2
 end
 arch pstone_4
@@ -252,9 +246,7 @@ arch pstone_4
 x 2
 y 11
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 11
 end
@@ -262,16 +254,14 @@ arch pstone_4
 x 2
 y 12
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 2
 y 12
 end
 arch pstone_4
 x 3
 end
-arch cave18
+arch cave24
 x 3
 end
 arch pstone_4
@@ -354,7 +344,7 @@ arch pstone_4
 x 3
 y 11
 end
-arch cave17
+arch cave23
 x 3
 y 11
 end
@@ -362,9 +352,7 @@ arch pstone_4
 x 3
 y 12
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 12
 end
@@ -426,7 +414,7 @@ arch pstone_4
 x 4
 y 12
 end
-arch cave17
+arch cave23
 x 4
 y 12
 end
@@ -521,23 +509,16 @@ end
 arch sage
 name Rufto
 msg
-@match WORD|word|holy|HOLY
-Oh. I forgot to tell you. 
-The holy word is :
-SEVEN
-
-@match TEST|test
-Yes. My test was over. You passed my
-test. Go next rayer, adventurer.
-
-@match GUARD|guard
-Yes. I TEST an adventurer whether he
-is enough to enter the heroes
-mousoleum.  
-
+@match word|holy
+Oh.  I forgot to tell you.  The holy word is: SEVEN
+@match test
+Yes.  My test was over.  You passed my test.  Go next layer, adventurer.
+@match guard
+@reply test Tell me more about this testing.
+Yes.  I test an adventurer whether he is enough to enter the heroes mousoleum.
 @match *
-Welcome. I am a GUARD of this ruin.
-
+@question guard So, how do you guard this ruin?
+Welcome.  I am a guard of this ruin.
 endmsg
 hp 180
 x 6
@@ -805,7 +786,7 @@ end
 arch pstone_4
 x 10
 end
-arch cave19
+arch cave25
 x 10
 end
 arch pstone_4
@@ -900,7 +881,7 @@ arch pstone_4
 x 10
 y 12
 end
-arch cave20
+arch cave22
 x 10
 y 12
 end

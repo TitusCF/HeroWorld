@@ -1,13 +1,15 @@
 arch map
-region portjoesph
-name goblin fortress
+name Goblin Fortress, Entrance
+difficulty 6
+region portjoseph
+width 24
+height 24
+enter_x 14
+enter_y 21
 msg
-Creator: langley
-Email: langley@fermat.dartmouth.edu
-Date: Fri Jul 22 20:28:18 1994
+Created:  1994-07-22 langley (langley@fermat.dartmouth.edu)
+Modified: 2011-11-22 Rick Tanner
 endmsg
-x 24
-y 24
 end
 arch dungeon_floor
 end
@@ -240,6 +242,10 @@ end
 arch cwall_2_1_2
 x 1
 y 14
+end
+arch pstone_1
+x 1
+y 15
 end
 arch ytree
 x 1
@@ -564,7 +570,7 @@ end
 arch dungeon_floor
 x 4
 end
-arch dwall3_3
+arch dwall_3_3
 x 4
 end
 arch cobblestones
@@ -769,7 +775,7 @@ arch dungeon_floor
 x 5
 y 6
 end
-arch dwall3_3
+arch dwall_3_3
 x 5
 y 6
 end
@@ -1018,7 +1024,7 @@ end
 arch dungeon_floor
 x 7
 end
-arch dwall3_3
+arch dwall_3_3
 x 7
 end
 arch cobblestones
@@ -1282,7 +1288,7 @@ end
 arch dungeon_floor
 x 9
 end
-arch dwall3_3
+arch dwall_3_3
 x 9
 end
 arch dungeon_floor
@@ -1465,7 +1471,7 @@ end
 arch altar
 slaying gold coin
 msg
-rumble . . . rumble . . 
+rumble . . . rumble . .
 endmsg
 food 1
 x 10
@@ -2117,12 +2123,10 @@ end
 arch ogre
 name Big guy
 msg
-@match king|King
-Yes, king!  All the treasure is mine!
-You will never find it!
+@match king
+Yes, king!  All the treasure is mine! You will never find it!
 @match treasure
-My treasure!  It is hidden deep in the
-dungeons.  Only I have the key! 
+My treasure!  It is hidden deep in the dungeons.  Only I have the key!
 @match *
 I am the king here!  Get out!
 endmsg
@@ -2660,7 +2664,7 @@ end
 arch dungeon_floor
 x 19
 end
-arch dwall3_3
+arch dwall_3_3
 x 19
 end
 arch dungeon_floor

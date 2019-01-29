@@ -1,13 +1,16 @@
 arch map
-region portjoesph
-name goblin fortress dungeon
+name Goblin Fortress Dungeon, Level 2
+difficulty 8
+region portjoseph
+darkness 4
+width 32
+height 16
+enter_x 4
+enter_y 1
 msg
-Creator: langley
-Email: langley@fermat.dartmouth.edu
-Date: Sat Aug 27 17:02:24 1994
+Created:  1994-08-27 langley (langley@fermat.dartmouth.edu)
+Modified: 2012-02-20 Rick Tanner
 endmsg
-x 32
-invisible 4
 end
 arch dungeon_floor
 end
@@ -124,6 +127,11 @@ end
 arch dungeon_floor
 x 1
 y 4
+end
+arch mine_secret_1_1
+x 1
+y 4
+move_block 0
 end
 arch dungeon_floor
 x 1
@@ -850,6 +858,10 @@ arch mine0
 x 7
 y 11
 end
+arch swall_1_1_half
+x 7
+y 11
+end
 arch dungeon_floor
 x 7
 y 12
@@ -1262,15 +1274,13 @@ arch dog
 name really big dog
 msg
 @match dog
-Growwlll . . . 
+Growwlll . . .
 endmsg
-hp 25
-maxhp 25
 dam 12
 x 11
 y 5
-run_away 0
 unaggressive 1
+run_away 0
 end
 arch dungeon_floor
 x 11
@@ -1379,18 +1389,14 @@ x 12
 y 5
 end
 arch ogre
-name buggle
+name Buggle
 msg
 @match key
-Key?  You must be thinking of
-my cousin upstairs.  He keeps
-all the keys.
-@match buggle|Buggle
+Key?  You must be thinking of my cousin upstairs.  He keeps all the keys.
+@match Buggle
 That's me name.  Whats it to ya?
 @match *
-Yeah, so you killed all my gang.
-You don't want to mess we me.
-Or my dogs.  You are free to go.
+Yeah, so you killed all my gang.  You don't want to mess we me. Or my dogs.  You are free to go.
 endmsg
 hp 100
 x 12
@@ -1503,15 +1509,11 @@ y 5
 end
 arch dog
 name really big dog
-msg
-endmsg
-hp 25
-maxhp 25
 dam 12
 x 13
 y 5
-run_away 0
 unaggressive 1
+run_away 0
 end
 arch dungeon_floor
 x 13
@@ -2172,6 +2174,11 @@ arch dungeon_floor
 x 19
 y 4
 end
+arch mine_secret_1_1
+x 19
+y 4
+connected 27
+end
 arch dungeon_floor
 x 19
 y 5
@@ -2664,9 +2671,7 @@ arch cave2
 x 24
 y 4
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 5
 end
@@ -3325,15 +3330,11 @@ arch cave20
 x 30
 y 7
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 30
 y 8
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 30
 y 9
 end
@@ -3388,9 +3389,7 @@ arch mine2
 x 30
 y 15
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 31
 end
 arch medium_stones
@@ -3441,39 +3440,27 @@ arch cave22
 x 31
 y 6
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 31
 y 7
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 31
 y 8
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 31
 y 9
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 31
 y 10
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 31
 y 11
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 31
 y 12
 end
@@ -3500,26 +3487,4 @@ end
 arch mine12
 x 31
 y 15
-end
-arch mine_secret_1_1
-x 1
-y 4
-no_pass 0
-end
-More
-arch mine_secret_1_2
-x 2
-y 4
-no_pass 0
-end
-arch mine_secret_1_1
-x 19
-y 4
-connected 27
-end
-More
-arch mine_secret_1_2
-x 20
-y 4
-connected 27
 end

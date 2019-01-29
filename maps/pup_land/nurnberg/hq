@@ -1,12 +1,15 @@
 arch map
+name Headquarter of the Regular Army
+difficulty 1
 region nurnberg
+width 21
+height 19
+enter_x 9
+enter_y 17
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Wed Apr  3 22:08:16 1996
+Created:  1996-04-03
+Modified: 2011-12-09 Rick Tanner
 endmsg
-x 21
-y 19
 end
 arch dungeon_floor
 end
@@ -348,8 +351,7 @@ end
 arch locked_door1
 slaying lickmond_hq_key
 msg
-You need the general's key to open
-this door.
+You need the general's key to open this door.
 endmsg
 x 2
 y 14
@@ -377,7 +379,7 @@ end
 arch dungeon_floor
 x 3
 end
-arch dwall3_3
+arch dwall_3_3
 x 3
 end
 arch dungeon_floor
@@ -535,11 +537,9 @@ arch knight
 name Imperial Guard
 msg
 @match member|join|regular
-If you want to join Regular Army,
-enter the Reception Towers.
+If you want to join Regular Army, enter the Reception Towers.
 @match *
-The elite training center is free for
-all members of Regular Army.
+The elite training center is free for all members of Regular Army.
 endmsg
 hp 2500
 x 4
@@ -565,11 +565,9 @@ arch knight
 name Imperial Guard
 msg
 @match member|join|regular
-If you want to join Regular Army,
-enter the Reception Towers.
+If you want to join Regular Army, enter the Reception Towers.
 @match *
-The elite training center is free for
-all members of Regular Army.
+The elite training center is free for all members of Regular Army.
 endmsg
 hp 2500
 x 4
@@ -859,11 +857,14 @@ end
 arch dwall_2_1_2
 x 7
 end
+arch swall_1_1_half
+x 7
+end
 arch dungeon_floor
 x 7
 y 1
 end
-arch swall_1_1
+arch swall_2_1_1
 x 7
 y 1
 end
@@ -1186,8 +1187,7 @@ msg
 @match eureca
 We must save him!
 @match *
-Most of our soldiers stay at the castle
-of Eureca.
+Most of our soldiers stay at the castle of Eureca.
 endmsg
 face warrior_red.151
 animation warrior_red
@@ -1369,7 +1369,7 @@ arch dungeon_floor
 x 9
 y 18
 end
-arch oakdoor
+arch oakdoor_2
 slaying city
 hp 10
 sp 7
@@ -1542,11 +1542,14 @@ end
 arch dwall_2_1_2
 x 11
 end
+arch swall_1_1_half
+x 11
+end
 arch dungeon_floor
 x 11
 y 1
 end
-arch swall_1_1
+arch swall_2_1_1
 x 11
 y 1
 end
@@ -1877,12 +1880,9 @@ arch knight
 name Imperial Guard
 msg
 @match member|join|regular
-If you want to join Regular Army,
-enter the Reception Towers.
+If you want to join Regular Army, enter the Reception Towers.
 @match *
-What you see behind the gate, that is
-free equipment, available for all
-members of Regular Army.
+What you see behind the gate, that is free equipment, available for all members of Regular Army.
 endmsg
 hp 2500
 x 14
@@ -1908,12 +1908,9 @@ arch knight
 name Imperial Guard
 msg
 @match member|join|regular
-If you want to join Regular Army,
-enter the Reception Towers.
+If you want to join Regular Army, enter the Reception Towers.
 @match *
-What you see behind the gate, that is
-free equipment, available for all
-members of Regular Army.
+What you see behind the gate, that is free equipment, available for all members of Regular Army.
 endmsg
 hp 2500
 x 14
@@ -2022,7 +2019,7 @@ end
 arch dungeon_floor
 x 15
 end
-arch dwall3_3
+arch dwall_3_3
 x 15
 end
 arch dungeon_floor
@@ -2274,8 +2271,7 @@ end
 arch locked_door1
 slaying lickmond_hq_key
 msg
-You need the general's key to open
-this door.
+You need the general's key to open this door.
 endmsg
 x 16
 y 14
@@ -2662,9 +2658,7 @@ arch magic_mouth
 name 4
 msg
 Lickmond, the general says:
-What?!! You killed my sparring partner!
-Now YOU must do his job! C'mon...
-let's fight!
+What?!! You killed my sparring partner! Now YOU must do his job! C'mon... let's fight!
 endmsg
 x 20
 y 1

@@ -1,16 +1,16 @@
 arch map
-name Passageway
+name Fire Temple, Passageway
+difficulty 8
+region wilderness
+darkness 5
+width 60
+height 9
+enter_x 6
+enter_y 5
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sat May 24 14:34:33 1997
+Created:  1997-05-24 Peter Mardahl (peterm@soda.csua.berkeley.edu)
+Modified: 2012-01-02 Rick Tanner
 endmsg
-x 60
-y 9
-invisible 5
-end
-arch pedestal_trigger
-connected 14
 end
 arch pstone_2
 end
@@ -35,10 +35,6 @@ end
 arch pstone_2
 y 6
 end
-arch pedestal_trigger
-y 7
-connected 13
-end
 arch pstone_2
 y 7
 end
@@ -87,11 +83,6 @@ arch phosphorus
 x 1
 y 6
 end
-arch pedestal_trigger
-x 1
-y 7
-connected 13
-end
 arch pstone_2
 x 1
 y 7
@@ -138,11 +129,6 @@ arch pstone_2
 x 2
 y 6
 end
-arch pedestal_trigger
-x 2
-y 7
-connected 13
-end
 arch pstone_2
 x 2
 y 7
@@ -155,14 +141,10 @@ arch cave15
 x 2
 y 8
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 3
 y 1
 end
@@ -182,37 +164,13 @@ arch cave14
 x 3
 y 3
 end
-arch magic_mouth
-msg
-A hot wind is blowing in from the
-passageway here.
-endmsg
+arch pstone_2
 x 3
 y 4
 end
 arch pstone_2
 x 3
-y 4
-end
-arch magic_mouth
-msg
-A hot wind is blowing in from the
-passage way here
-endmsg
-x 3
 y 5
-end
-arch pstone_2
-x 3
-y 5
-end
-arch magic_mouth
-msg
-A hot wind is blowing in from the
-passageway here.
-endmsg
-x 3
-y 6
 end
 arch pstone_2
 x 3
@@ -234,20 +192,14 @@ arch cave20
 x 3
 y 8
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 4
 y 2
 end
@@ -291,20 +243,14 @@ arch cave23
 x 4
 y 8
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 5
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 5
 y 1
 end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 5
 y 2
 end
@@ -324,31 +270,9 @@ arch cave9
 x 5
 y 4
 end
-arch invis_exit
-slaying Passageway
-hp 6
-sp 5
-x 5
-y 5
-end
 arch pstone_2
 x 5
 y 5
-end
-arch pstone_2
-x 5
-y 5
-end
-arch invis_exit
-slaying Passageway
-hp 6
-sp 6
-x 5
-y 6
-end
-arch pstone_2
-x 5
-y 6
 end
 arch pstone_2
 x 5
@@ -370,31 +294,14 @@ arch cave22
 x 5
 y 8
 end
-arch pstone_1
+arch cave_15
 x 6
 end
-arch blocked
-msg
-endmsg
-x 6
-end
-arch pstone_1
+arch cave_15
 x 6
 y 1
 end
-arch blocked
-msg
-endmsg
-x 6
-y 1
-end
-arch pstone_1
-x 6
-y 2
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 6
 y 2
 end
@@ -444,51 +351,22 @@ arch cave2
 x 6
 y 7
 end
-arch pstone_1
+arch cave_15
 x 6
 y 8
 end
-arch blocked
-msg
-endmsg
-x 6
-y 8
-end
-arch pstone_1
+arch cave_15
 x 7
 end
-arch blocked
-msg
-endmsg
-x 7
-end
-arch pstone_1
+arch cave_15
 x 7
 y 1
 end
-arch blocked
-msg
-endmsg
-x 7
-y 1
-end
-arch pstone_1
+arch cave_15
 x 7
 y 2
 end
-arch blocked
-msg
-endmsg
-x 7
-y 2
-end
-arch pstone_1
-x 7
-y 3
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 7
 y 3
 end
@@ -516,31 +394,14 @@ arch cave2
 x 7
 y 7
 end
-arch pstone_1
+arch cave_15
 x 7
 y 8
 end
-arch blocked
-msg
-endmsg
-x 7
-y 8
-end
-arch pstone_1
+arch cave_15
 x 8
 end
-arch blocked
-msg
-endmsg
-x 8
-end
-arch pstone_1
-x 8
-y 1
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 8
 y 1
 end
@@ -592,12 +453,7 @@ arch cave23
 x 8
 y 8
 end
-arch pstone_1
-x 9
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 9
 end
 arch pstone_1
@@ -648,12 +504,7 @@ arch cave22
 x 9
 y 8
 end
-arch pstone_1
-x 10
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 10
 end
 arch pstone_1
@@ -696,20 +547,14 @@ arch cave22
 x 10
 y 7
 end
-arch pstone_1
-x 10
-y 8
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 10
 y 8
 end
 arch pstone_1
 x 11
 end
-arch cave18
+arch cave24
 x 11
 end
 arch pstone_1
@@ -752,23 +597,11 @@ arch cave22
 x 11
 y 6
 end
-arch pstone_1
+arch cave_15
 x 11
 y 7
 end
-arch blocked
-msg
-endmsg
-x 11
-y 7
-end
-arch pstone_1
-x 11
-y 8
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 11
 y 8
 end
@@ -813,33 +646,15 @@ arch cave23
 x 12
 y 5
 end
-arch pstone_1
+arch cave_15
 x 12
 y 6
 end
-arch blocked
-msg
-endmsg
-x 12
-y 6
-end
-arch pstone_1
+arch cave_15
 x 12
 y 7
 end
-arch blocked
-msg
-endmsg
-x 12
-y 7
-end
-arch pstone_1
-x 12
-y 8
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 12
 y 8
 end
@@ -885,36 +700,19 @@ arch pstone_1
 x 13
 y 6
 end
-arch cave17
+arch cave23
 x 13
 y 6
 end
-arch pstone_1
+arch cave_15
 x 13
 y 7
 end
-arch blocked
-msg
-endmsg
-x 13
-y 7
-end
-arch pstone_1
+arch cave_15
 x 13
 y 8
 end
-arch blocked
-msg
-endmsg
-x 13
-y 8
-end
-arch pstone_1
-x 14
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 14
 end
 arch pstone_1
@@ -960,32 +758,15 @@ arch cave2
 x 14
 y 6
 end
-arch pstone_1
+arch cave_15
 x 14
 y 7
 end
-arch blocked
-msg
-endmsg
-x 14
-y 7
-end
-arch pstone_1
+arch cave_15
 x 14
 y 8
 end
-arch blocked
-msg
-endmsg
-x 14
-y 8
-end
-arch pstone_1
-x 15
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 15
 end
 arch pstone_1
@@ -1028,32 +809,15 @@ arch cave22
 x 15
 y 6
 end
-arch pstone_1
+arch cave_15
 x 15
 y 7
 end
-arch blocked
-msg
-endmsg
-x 15
-y 7
-end
-arch pstone_1
+arch cave_15
 x 15
 y 8
 end
-arch blocked
-msg
-endmsg
-x 15
-y 8
-end
-arch pstone_1
-x 16
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 16
 end
 arch pstone_1
@@ -1080,50 +844,26 @@ arch cave2
 x 16
 y 4
 end
-arch pstone_1
+arch cave_15
 x 16
 y 5
 end
-arch blocked
-msg
-endmsg
-x 16
-y 5
-end
-arch pstone_1
+arch cave_15
 x 16
 y 6
 end
-arch blocked
-msg
-endmsg
-x 16
-y 6
-end
-arch pstone_1
+arch cave_15
 x 16
 y 7
 end
-arch blocked
-msg
-endmsg
-x 16
-y 7
-end
-arch pstone_1
-x 16
-y 8
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 16
 y 8
 end
 arch pstone_1
 x 17
 end
-arch cave18
+arch cave24
 x 17
 end
 arch pstone_1
@@ -1158,33 +898,15 @@ arch cave23
 x 17
 y 5
 end
-arch pstone_1
+arch cave_15
 x 17
 y 6
 end
-arch blocked
-msg
-endmsg
-x 17
-y 6
-end
-arch pstone_1
+arch cave_15
 x 17
 y 7
 end
-arch blocked
-msg
-endmsg
-x 17
-y 7
-end
-arch pstone_1
-x 17
-y 8
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 17
 y 8
 end
@@ -1226,23 +948,11 @@ arch cave23
 x 18
 y 6
 end
-arch pstone_1
+arch cave_15
 x 18
 y 7
 end
-arch blocked
-msg
-endmsg
-x 18
-y 7
-end
-arch pstone_1
-x 18
-y 8
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 18
 y 8
 end
@@ -1284,23 +994,11 @@ arch cave2
 x 19
 y 6
 end
-arch pstone_1
+arch cave_15
 x 19
 y 7
 end
-arch blocked
-msg
-endmsg
-x 19
-y 7
-end
-arch pstone_1
-x 19
-y 8
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 19
 y 8
 end
@@ -1354,22 +1052,11 @@ arch cave23
 x 20
 y 7
 end
-arch pstone_1
+arch cave_15
 x 20
 y 8
 end
-arch blocked
-msg
-endmsg
-x 20
-y 8
-end
-arch pstone_1
-x 21
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 21
 end
 arch pstone_1
@@ -1424,21 +1111,10 @@ arch cave23
 x 21
 y 8
 end
-arch pstone_1
+arch cave_15
 x 22
 end
-arch blocked
-msg
-endmsg
-x 22
-end
-arch pstone_1
-x 22
-y 1
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 22
 y 1
 end
@@ -1489,21 +1165,10 @@ arch cave2
 x 22
 y 8
 end
-arch pstone_1
+arch cave_15
 x 23
 end
-arch blocked
-msg
-endmsg
-x 23
-end
-arch pstone_1
-x 23
-y 1
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 23
 y 1
 end
@@ -1543,16 +1208,11 @@ arch pstone_1
 x 23
 y 8
 end
-arch cave20
+arch cave22
 x 23
 y 8
 end
-arch pstone_1
-x 24
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 end
 arch pstone_1
@@ -1599,13 +1259,7 @@ arch cave2
 x 24
 y 7
 end
-arch pstone_1
-x 24
-y 8
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 24
 y 8
 end
@@ -1662,13 +1316,7 @@ arch cave22
 x 25
 y 7
 end
-arch pstone_1
-x 25
-y 8
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 25
 y 8
 end
@@ -1714,32 +1362,15 @@ arch cave20
 x 26
 y 6
 end
-arch pstone_1
+arch cave_15
 x 26
 y 7
 end
-arch blocked
-msg
-endmsg
-x 26
-y 7
-end
-arch pstone_1
+arch cave_15
 x 26
 y 8
 end
-arch blocked
-msg
-endmsg
-x 26
-y 8
-end
-arch pstone_1
-x 27
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 27
 end
 arch pstone_1
@@ -1782,32 +1413,15 @@ arch cave17
 x 27
 y 6
 end
-arch pstone_1
+arch cave_15
 x 27
 y 7
 end
-arch blocked
-msg
-endmsg
-x 27
-y 7
-end
-arch pstone_1
+arch cave_15
 x 27
 y 8
 end
-arch blocked
-msg
-endmsg
-x 27
-y 8
-end
-arch pstone_1
-x 28
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 28
 end
 arch pstone_1
@@ -1861,13 +1475,7 @@ arch cave23
 x 28
 y 7
 end
-arch pstone_1
-x 28
-y 8
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 28
 y 8
 end
@@ -1921,13 +1529,7 @@ arch cave22
 x 29
 y 7
 end
-arch pstone_1
-x 29
-y 8
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 29
 y 8
 end
@@ -1969,23 +1571,11 @@ arch cave20
 x 30
 y 6
 end
-arch pstone_1
+arch cave_15
 x 30
 y 7
 end
-arch blocked
-msg
-endmsg
-x 30
-y 7
-end
-arch pstone_1
-x 30
-y 8
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 30
 y 8
 end
@@ -2023,33 +1613,15 @@ arch cave20
 x 31
 y 5
 end
-arch pstone_1
+arch cave_15
 x 31
 y 6
 end
-arch blocked
-msg
-endmsg
-x 31
-y 6
-end
-arch pstone_1
+arch cave_15
 x 31
 y 7
 end
-arch blocked
-msg
-endmsg
-x 31
-y 7
-end
-arch pstone_1
-x 31
-y 8
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 31
 y 8
 end
@@ -2087,50 +1659,26 @@ arch cave20
 x 32
 y 4
 end
-arch pstone_1
+arch cave_15
 x 32
 y 5
 end
-arch blocked
-msg
-endmsg
-x 32
-y 5
-end
-arch pstone_1
+arch cave_15
 x 32
 y 6
 end
-arch blocked
-msg
-endmsg
-x 32
-y 6
-end
-arch pstone_1
+arch cave_15
 x 32
 y 7
 end
-arch blocked
-msg
-endmsg
-x 32
-y 7
-end
-arch pstone_1
-x 32
-y 8
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 32
 y 8
 end
 arch pstone_1
 x 33
 end
-arch cave18
+arch cave24
 x 33
 end
 arch pstone_1
@@ -2157,47 +1705,23 @@ arch pstone_1
 x 33
 y 4
 end
-arch cave17
+arch cave23
 x 33
 y 4
 end
-arch pstone_1
+arch cave_15
 x 33
 y 5
 end
-arch blocked
-msg
-endmsg
-x 33
-y 5
-end
-arch pstone_1
+arch cave_15
 x 33
 y 6
 end
-arch blocked
-msg
-endmsg
-x 33
-y 6
-end
-arch pstone_1
+arch cave_15
 x 33
 y 7
 end
-arch blocked
-msg
-endmsg
-x 33
-y 7
-end
-arch pstone_1
-x 33
-y 8
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 33
 y 8
 end
@@ -2239,42 +1763,19 @@ arch cave17
 x 34
 y 5
 end
-arch pstone_1
+arch cave_15
 x 34
 y 6
 end
-arch blocked
-msg
-endmsg
-x 34
-y 6
-end
-arch pstone_1
+arch cave_15
 x 34
 y 7
 end
-arch blocked
-msg
-endmsg
-x 34
-y 7
-end
-arch pstone_1
+arch cave_15
 x 34
 y 8
 end
-arch blocked
-msg
-endmsg
-x 34
-y 8
-end
-arch pstone_1
-x 35
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 35
 end
 arch pstone_1
@@ -2309,36 +1810,19 @@ arch pstone_1
 x 35
 y 6
 end
-arch cave17
+arch cave23
 x 35
 y 6
 end
-arch pstone_1
+arch cave_15
 x 35
 y 7
 end
-arch blocked
-msg
-endmsg
-x 35
-y 7
-end
-arch pstone_1
+arch cave_15
 x 35
 y 8
 end
-arch blocked
-msg
-endmsg
-x 35
-y 8
-end
-arch pstone_1
-x 36
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 36
 end
 arch pstone_1
@@ -2384,26 +1868,15 @@ arch pstone_1
 x 36
 y 7
 end
-arch cave17
+arch cave23
 x 36
 y 7
 end
-arch pstone_1
+arch cave_15
 x 36
 y 8
 end
-arch blocked
-msg
-endmsg
-x 36
-y 8
-end
-arch pstone_1
-x 37
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 37
 end
 arch pstone_1
@@ -2454,25 +1927,14 @@ arch pstone_1
 x 37
 y 8
 end
-arch cave17
+arch cave23
 x 37
 y 8
 end
-arch pstone_1
+arch cave_15
 x 38
 end
-arch blocked
-msg
-endmsg
-x 38
-end
-arch pstone_1
-x 38
-y 1
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 38
 y 1
 end
@@ -2480,7 +1942,7 @@ arch pstone_1
 x 38
 y 2
 end
-arch cave19
+arch cave25
 x 38
 y 2
 end
@@ -2520,31 +1982,14 @@ arch cave22
 x 38
 y 8
 end
-arch pstone_1
+arch cave_15
 x 39
 end
-arch blocked
-msg
-endmsg
-x 39
-end
-arch pstone_1
+arch cave_15
 x 39
 y 1
 end
-arch blocked
-msg
-endmsg
-x 39
-y 1
-end
-arch pstone_1
-x 39
-y 2
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 39
 y 2
 end
@@ -2580,41 +2025,18 @@ arch cave2
 x 39
 y 7
 end
-arch pstone_1
+arch cave_15
 x 39
 y 8
 end
-arch blocked
-msg
-endmsg
-x 39
-y 8
-end
-arch pstone_1
+arch cave_15
 x 40
 end
-arch blocked
-msg
-endmsg
-x 40
-end
-arch pstone_1
+arch cave_15
 x 40
 y 1
 end
-arch blocked
-msg
-endmsg
-x 40
-y 1
-end
-arch pstone_1
-x 40
-y 2
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 40
 y 2
 end
@@ -2622,7 +2044,7 @@ arch pstone_1
 x 40
 y 3
 end
-arch cave18
+arch cave24
 x 40
 y 3
 end
@@ -2650,31 +2072,14 @@ arch cave2
 x 40
 y 7
 end
-arch pstone_1
+arch cave_15
 x 40
 y 8
 end
-arch blocked
-msg
-endmsg
-x 40
-y 8
-end
-arch pstone_1
+arch cave_15
 x 41
 end
-arch blocked
-msg
-endmsg
-x 41
-end
-arch pstone_1
-x 41
-y 1
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 41
 y 1
 end
@@ -2714,22 +2119,11 @@ arch cave2
 x 41
 y 7
 end
-arch pstone_1
+arch cave_15
 x 41
 y 8
 end
-arch blocked
-msg
-endmsg
-x 41
-y 8
-end
-arch pstone_1
-x 42
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 42
 end
 arch pstone_1
@@ -2783,7 +2177,7 @@ end
 arch pstone_1
 x 43
 end
-arch cave18
+arch cave24
 x 43
 end
 arch pstone_1
@@ -2851,7 +2245,7 @@ end
 arch pstone_1
 x 44
 end
-arch cave19
+arch cave25
 x 44
 end
 arch pstone_1
@@ -2890,17 +2284,11 @@ arch pstone_1
 x 44
 y 7
 end
-arch cave20
+arch cave22
 x 44
 y 7
 end
-arch pstone_1
-x 44
-y 8
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 44
 y 8
 end
@@ -2950,13 +2338,7 @@ arch cave23
 x 45
 y 7
 end
-arch pstone_1
-x 45
-y 8
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 45
 y 8
 end
@@ -3006,13 +2388,7 @@ arch cave22
 x 46
 y 7
 end
-arch pstone_1
-x 46
-y 8
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 46
 y 8
 end
@@ -3054,23 +2430,11 @@ arch cave22
 x 47
 y 6
 end
-arch pstone_1
+arch cave_15
 x 47
 y 7
 end
-arch blocked
-msg
-endmsg
-x 47
-y 7
-end
-arch pstone_1
-x 47
-y 8
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 47
 y 8
 end
@@ -3116,33 +2480,15 @@ arch cave22
 x 48
 y 5
 end
-arch pstone_1
+arch cave_15
 x 48
 y 6
 end
-arch blocked
-msg
-endmsg
-x 48
-y 6
-end
-arch pstone_1
+arch cave_15
 x 48
 y 7
 end
-arch blocked
-msg
-endmsg
-x 48
-y 7
-end
-arch pstone_1
-x 48
-y 8
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 48
 y 8
 end
@@ -3168,57 +2514,27 @@ arch pstone_1
 x 49
 y 3
 end
-arch cave17
+arch cave23
 x 49
 y 3
 end
-arch pstone_1
+arch cave_15
 x 49
 y 4
 end
-arch blocked
-msg
-endmsg
-x 49
-y 4
-end
-arch pstone_1
+arch cave_15
 x 49
 y 5
 end
-arch blocked
-msg
-endmsg
-x 49
-y 5
-end
-arch pstone_1
+arch cave_15
 x 49
 y 6
 end
-arch blocked
-msg
-endmsg
-x 49
-y 6
-end
-arch pstone_1
+arch cave_15
 x 49
 y 7
 end
-arch blocked
-msg
-endmsg
-x 49
-y 7
-end
-arch pstone_1
-x 49
-y 8
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 49
 y 8
 end
@@ -3260,33 +2576,15 @@ arch cave23
 x 50
 y 5
 end
-arch pstone_1
+arch cave_15
 x 50
 y 6
 end
-arch blocked
-msg
-endmsg
-x 50
-y 6
-end
-arch pstone_1
+arch cave_15
 x 50
 y 7
 end
-arch blocked
-msg
-endmsg
-x 50
-y 7
-end
-arch pstone_1
-x 50
-y 8
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 50
 y 8
 end
@@ -3339,32 +2637,15 @@ arch cave23
 x 51
 y 6
 end
-arch pstone_1
+arch cave_15
 x 51
 y 7
 end
-arch blocked
-msg
-endmsg
-x 51
-y 7
-end
-arch pstone_1
+arch cave_15
 x 51
 y 8
 end
-arch blocked
-msg
-endmsg
-x 51
-y 8
-end
-arch pstone_1
-x 52
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 52
 end
 arch pstone_1
@@ -3403,41 +2684,18 @@ arch cave2
 x 52
 y 6
 end
-arch pstone_1
+arch cave_15
 x 52
 y 7
 end
-arch blocked
-msg
-endmsg
-x 52
-y 7
-end
-arch pstone_1
+arch cave_15
 x 52
 y 8
 end
-arch blocked
-msg
-endmsg
-x 52
-y 8
-end
-arch pstone_1
+arch cave_15
 x 53
 end
-arch blocked
-msg
-endmsg
-x 53
-end
-arch pstone_1
-x 53
-y 1
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 53
 y 1
 end
@@ -3481,41 +2739,18 @@ arch cave23
 x 53
 y 7
 end
-arch pstone_1
+arch cave_15
 x 53
 y 8
 end
-arch blocked
-msg
-endmsg
-x 53
-y 8
-end
-arch pstone_1
+arch cave_15
 x 54
 end
-arch blocked
-msg
-endmsg
-x 54
-end
-arch pstone_1
+arch cave_15
 x 54
 y 1
 end
-arch blocked
-msg
-endmsg
-x 54
-y 1
-end
-arch pstone_1
-x 54
-y 2
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 54
 y 2
 end
@@ -3523,7 +2758,7 @@ arch pstone_1
 x 54
 y 3
 end
-arch cave19
+arch cave25
 x 54
 y 3
 end
@@ -3555,51 +2790,22 @@ arch cave22
 x 54
 y 7
 end
-arch pstone_1
+arch cave_15
 x 54
 y 8
 end
-arch blocked
-msg
-endmsg
-x 54
-y 8
-end
-arch pstone_1
+arch cave_15
 x 55
 end
-arch blocked
-msg
-endmsg
-x 55
-end
-arch pstone_1
+arch cave_15
 x 55
 y 1
 end
-arch blocked
-msg
-endmsg
-x 55
-y 1
-end
-arch pstone_1
+arch cave_15
 x 55
 y 2
 end
-arch blocked
-msg
-endmsg
-x 55
-y 2
-end
-arch pstone_1
-x 55
-y 3
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 55
 y 3
 end
@@ -3631,51 +2837,22 @@ arch cave23
 x 55
 y 7
 end
-arch pstone_1
+arch cave_15
 x 55
 y 8
 end
-arch blocked
-msg
-endmsg
-x 55
-y 8
-end
-arch pstone_1
+arch cave_15
 x 56
 end
-arch blocked
-msg
-endmsg
-x 56
-end
-arch pstone_1
+arch cave_15
 x 56
 y 1
 end
-arch blocked
-msg
-endmsg
-x 56
-y 1
-end
-arch pstone_1
+arch cave_15
 x 56
 y 2
 end
-arch blocked
-msg
-endmsg
-x 56
-y 2
-end
-arch pstone_1
-x 56
-y 3
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 56
 y 3
 end
@@ -3703,51 +2880,22 @@ arch cave2
 x 56
 y 7
 end
-arch pstone_1
+arch cave_15
 x 56
 y 8
 end
-arch blocked
-msg
-endmsg
-x 56
-y 8
-end
-arch pstone_1
+arch cave_15
 x 57
 end
-arch blocked
-msg
-endmsg
-x 57
-end
-arch pstone_1
+arch cave_15
 x 57
 y 1
 end
-arch blocked
-msg
-endmsg
-x 57
-y 1
-end
-arch pstone_1
+arch cave_15
 x 57
 y 2
 end
-arch blocked
-msg
-endmsg
-x 57
-y 2
-end
-arch pstone_1
-x 57
-y 3
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 57
 y 3
 end
@@ -3779,51 +2927,22 @@ arch cave2
 x 57
 y 7
 end
-arch pstone_1
+arch cave_15
 x 57
 y 8
 end
-arch blocked
-msg
-endmsg
-x 57
-y 8
-end
-arch pstone_1
+arch cave_15
 x 58
 end
-arch blocked
-msg
-endmsg
-x 58
-end
-arch pstone_1
+arch cave_15
 x 58
 y 1
 end
-arch blocked
-msg
-endmsg
-x 58
-y 1
-end
-arch pstone_1
+arch cave_15
 x 58
 y 2
 end
-arch blocked
-msg
-endmsg
-x 58
-y 2
-end
-arch pstone_1
-x 58
-y 3
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 58
 y 3
 end
@@ -3865,51 +2984,22 @@ arch cave2
 x 58
 y 7
 end
-arch pstone_1
+arch cave_15
 x 58
 y 8
 end
-arch blocked
-msg
-endmsg
-x 58
-y 8
-end
-arch pstone_1
+arch cave_15
 x 59
 end
-arch blocked
-msg
-endmsg
-x 59
-end
-arch pstone_1
+arch cave_15
 x 59
 y 1
 end
-arch blocked
-msg
-endmsg
-x 59
-y 1
-end
-arch pstone_1
+arch cave_15
 x 59
 y 2
 end
-arch blocked
-msg
-endmsg
-x 59
-y 2
-end
-arch pstone_1
-x 59
-y 3
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 59
 y 3
 end
@@ -3945,13 +3035,7 @@ arch cave22
 x 59
 y 7
 end
-arch pstone_1
-x 59
-y 8
-end
-arch blocked
-msg
-endmsg
+arch cave_15
 x 59
 y 8
 end

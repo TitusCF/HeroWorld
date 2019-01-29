@@ -1,11 +1,15 @@
 arch map
+name House
+difficulty 25
 region ancientpupland
+width 16
+height 22
+enter_x 7
+enter_y 1
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue May  7 06:41:34 1996
+Created:  1996-05-07
+Modified: 2012-02-24 Rick Tanner
 endmsg
-y 22
 end
 arch invis_exit
 slaying village
@@ -120,8 +124,9 @@ arch blocked
 y 17
 end
 arch lightningwall_3
-dam 139
 y 18
+arch spell_steambolt
+end
 end
 arch blocked
 y 19
@@ -403,7 +408,7 @@ end
 arch scroll
 name trap!
 msg
-This is a demontrap. Run away!
+This is a demontrap.  Run away!
 endmsg
 x 3
 y 4
@@ -875,7 +880,7 @@ end
 arch cobblestones2
 x 7
 end
-arch oakdoor
+arch oakdoor_2
 slaying village
 hp 5
 sp 14
@@ -921,7 +926,7 @@ end
 arch door_look_1
 x 7
 y 8
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 7
@@ -1020,7 +1025,7 @@ end
 arch door_look_2
 x 8
 y 4
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 8

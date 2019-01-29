@@ -1,14 +1,13 @@
 arch map
+name Castle of Eureca, Dungeon Level 2
+difficulty 40
 region pupland
-name castle_eurecaB2
+width 27
+height 41
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Mon Jan 29 22:53:28 1996
+Created:  1996-01-29
+Modified: 2012-02-28 Rick Tanner
 endmsg
-x 27
-y 41
-level 6
 end
 arch pstone_1
 end
@@ -908,8 +907,7 @@ y 1
 end
 arch sign
 msg
-Don't pick up nugget.
-It's too heavy
+Don't pick up nugget.  It's too heavy
 endmsg
 x 3
 y 1
@@ -1536,6 +1534,10 @@ arch small_stones
 x 4
 y 36
 end
+arch big_elec
+x 4
+y 36
+end
 arch small_stones
 x 4
 y 37
@@ -1827,6 +1829,10 @@ x 5
 y 28
 end
 arch small_stones
+x 5
+y 29
+end
+arch demon_lord
 x 5
 y 29
 end
@@ -2780,6 +2786,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -3130,6 +3137,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -3484,6 +3492,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -3561,6 +3570,10 @@ x 10
 y 35
 end
 arch small_stones
+x 10
+y 36
+end
+arch big_wiz
 x 10
 y 36
 end
@@ -3818,6 +3831,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -3855,6 +3869,10 @@ x 11
 y 25
 end
 arch small_stones
+x 11
+y 26
+end
+arch titan
 x 11
 y 26
 end
@@ -4168,6 +4186,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -4518,6 +4537,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -4575,6 +4595,10 @@ x 13
 y 30
 end
 arch small_stones
+x 13
+y 31
+end
+arch big_dragon
 x 13
 y 31
 end
@@ -4864,6 +4888,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -5577,6 +5602,10 @@ x 16
 y 25
 end
 arch small_stones
+x 16
+y 26
+end
+arch baslic
 x 16
 y 26
 end
@@ -7173,9 +7202,9 @@ connected 21
 end
 arch dragon_mail
 ac 5
-armour 45
 x 22
 y 21
+resist_physical 45
 value 1000
 weight 5000
 magic -3
@@ -7284,7 +7313,6 @@ end
 arch wdsm
 x 24
 y 21
-immune 0
 value 30000
 end
 arch blocked
@@ -7385,28 +7413,4 @@ end
 arch blocked
 x 26
 y 22
-end
-arch big_elec
-x 4
-y 36
-end
-arch demon_lord
-x 5
-y 29
-end
-arch big_wiz
-x 10
-y 36
-end
-arch titan
-x 11
-y 26
-end
-arch big_dragon
-x 13
-y 31
-end
-arch baslic
-x 16
-y 26
 end

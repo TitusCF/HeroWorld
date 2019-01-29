@@ -1,13 +1,15 @@
 arch map
+name Nurnberg Apartment, Main
+difficulty 1
 region nurnberg
-name main
+width 13
+height 15
+enter_x 6
+enter_y 1
 msg
-Creator: Andreas Vogl
-Email: red.blaze@gmx.net
-Date: Sun Nov 19 21:46:25 2000
+Created:  2000-11-19 Andreas Vogl (red.blaze@gmx.net)
+Modified: 2012-04-02 Rick Tanner
 endmsg
-x 13
-y 15
 end
 arch blocked
 end
@@ -134,7 +136,6 @@ end
 arch stwall_closed_1
 x 1
 y 3
-protected 2
 connected 2
 end
 arch woodfloor
@@ -148,7 +149,6 @@ slaying diamond
 food 5000
 x 1
 y 4
-protected 2
 connected 2
 end
 arch woodfloor
@@ -216,20 +216,16 @@ arch magic_mouth
 name 5
 msg
 You hear Kurte's voice in your mind:
-"My scolar, for your convenience I
- have opened a time-warp-portal in
- your apartment"
+"My scholar, for your convenience I have opened a time-warp-portal in your apartment."
 endmsg
 x 1
 y 14
-protected 5
 connected 5
 end
 arch button_small
 name 5
 x 1
 y 14
-protected 5
 weight 1000000
 connected 5
 end
@@ -238,7 +234,6 @@ name 4
 other_arch boulder
 x 1
 y 14
-protected 4
 connected 4
 end
 arch blocked
@@ -513,7 +508,7 @@ arch woodfloor
 x 5
 unique 1
 end
-arch stwall_2_2_2
+arch stwall_1_1
 x 5
 end
 arch woodfloor
@@ -610,10 +605,11 @@ end
 arch firewall_2
 name wall
 face stwall_3.111
-dam 82
 x 5
 y 13
 level 10
+arch spell_firebolt
+end
 end
 arch blocked
 x 5
@@ -623,20 +619,16 @@ arch woodfloor
 x 6
 unique 1
 end
-arch stwall_2_1_2
+arch oakdoor_2
+slaying /pup_land/nurnberg/city
+hp 10
+sp 21
 x 6
 end
 arch woodfloor
 x 6
 y 1
 unique 1
-end
-arch oakdoor
-slaying /pup_land/nurnberg/city
-hp 10
-sp 21
-x 6
-y 1
 end
 arch woodfloor
 x 6
@@ -650,18 +642,16 @@ unique 1
 end
 arch goldfloor
 name apartment costs 1000 plat
-slaying platinacoin
-food 1000
+slaying money
+food 50000
 x 6
 y 3
-protected 1
 connected 1
 end
 arch check_inv
-slaying scolar of kurte
+slaying scholar of kurte
 x 6
 y 4
-protected 4
 connected 4
 end
 arch woodfloor
@@ -673,7 +663,6 @@ arch igate_closed_1
 x 6
 y 4
 speed 0.500000
-protected 1
 connected 1
 end
 arch woodfloor
@@ -739,7 +728,6 @@ end
 arch stwall_closed_1
 x 6
 y 13
-protected 5
 connected 5
 end
 arch blocked
@@ -750,7 +738,7 @@ arch woodfloor
 x 7
 unique 1
 end
-arch stwall_2_2_3
+arch stwall_1_1
 x 7
 end
 arch woodfloor
@@ -847,10 +835,11 @@ end
 arch firewall_8
 name wall
 face stwall_9.111
-dam 82
 x 7
 y 13
 level 10
+arch spell_firebolt
+end
 end
 arch blocked
 x 7
@@ -1149,7 +1138,6 @@ end
 arch stwall_closed_1
 x 11
 y 3
-protected 3
 connected 3
 end
 arch woodfloor
@@ -1163,7 +1151,6 @@ slaying diamond
 food 5000
 x 11
 y 4
-protected 3
 connected 3
 end
 arch woodfloor

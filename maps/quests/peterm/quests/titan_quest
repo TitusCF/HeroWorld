@@ -1,8 +1,18 @@
 arch map
-hp 35
-sp 33
-x 37
-y 35
+name Titan Quest
+difficulty 35
+region wilderness
+width 37
+height 35
+enter_x 35
+enter_y 33
+msg
+Modified: 2010-05-05 Cavesomething
+endmsg
+maplore
+@quest Scorn Royalty Quest
+Meganthropopulos is here
+endmaplore
 end
 arch woodfloor2
 end
@@ -1168,6 +1178,10 @@ arch woodfloor2
 x 5
 y 15
 end
+arch titan
+x 5
+y 15
+end
 arch woodfloor2
 x 5
 y 16
@@ -1179,6 +1193,14 @@ end
 arch woodfloor2
 x 5
 y 18
+end
+arch cyclops
+x 5
+y 18
+carrying 100
+arch key2
+slaying tdoor1
+end
 end
 arch woodfloor2
 x 5
@@ -1835,6 +1857,14 @@ arch woodfloor2
 x 8
 y 14
 end
+arch titan
+x 8
+y 14
+carrying 100
+arch key2
+slaying tdoor2
+end
+end
 arch woodfloor2
 x 8
 y 15
@@ -1844,6 +1874,10 @@ x 8
 y 16
 end
 arch woodfloor2
+x 8
+y 17
+end
+arch titan
 x 8
 y 17
 end
@@ -2214,7 +2248,7 @@ end
 arch flagstone_2_1_1
 x 10
 y 5
-no_pass 0
+move_block 0
 end
 arch woodfloor2
 x 10
@@ -2399,7 +2433,7 @@ end
 arch flagstone_2_1_1
 x 10
 y 29
-no_pass 0
+move_block 0
 end
 arch woodfloor2
 x 10
@@ -3146,6 +3180,8 @@ end
 arch lightningwall_5
 x 13
 y 32
+arch spell_sm_lightning
+end
 end
 arch woodfloor2
 x 13
@@ -3416,6 +3452,8 @@ end
 arch lightningwall_5
 x 14
 y 32
+arch spell_sm_lightning
+end
 end
 arch woodfloor2
 x 14
@@ -3463,6 +3501,10 @@ arch woodfloor2
 x 15
 y 5
 end
+arch cyclops
+x 15
+y 5
+end
 arch woodfloor2
 x 15
 y 6
@@ -3472,6 +3514,10 @@ x 15
 y 7
 end
 arch woodfloor2
+x 15
+y 8
+end
+arch cyclops
 x 15
 y 8
 end
@@ -3496,6 +3542,10 @@ x 15
 y 13
 end
 arch woodfloor2
+x 15
+y 14
+end
+arch cyclops
 x 15
 y 14
 end
@@ -3578,6 +3628,8 @@ end
 arch lightningwall_5
 x 15
 y 32
+arch spell_sm_lightning
+end
 end
 arch woodfloor2
 x 15
@@ -3677,6 +3729,10 @@ arch woodfloor2
 x 16
 y 18
 end
+arch titan
+x 16
+y 18
+end
 arch woodfloor2
 x 16
 y 19
@@ -3690,6 +3746,10 @@ x 16
 y 21
 end
 arch woodfloor2
+x 16
+y 22
+end
+arch titan
 x 16
 y 22
 end
@@ -3717,6 +3777,28 @@ arch woodfloor2
 x 16
 y 28
 end
+arch titan
+name Meganthropopulos
+hp 10000
+maxhp 10000
+exp 300000
+x 16
+y 28
+carrying 12300
+arch crown
+name Meganthropopulos' Crown
+material 0
+arch quest_advance_pickup
+name scorn/TitanCrown 60>70
+end
+arch quest_prevent_drop
+name scorn/TitanCrown 80
+end
+end
+arch quest_advance_death
+name scorn/TitanCrown 50>60
+end
+end
 arch woodfloor2
 x 16
 y 29
@@ -3740,6 +3822,8 @@ end
 arch lightningwall_5
 x 16
 y 32
+arch spell_sm_lightning
+end
 end
 arch woodfloor2
 x 16
@@ -3827,6 +3911,8 @@ x 17
 y 11
 material 256
 no_pick 1
+arch spell_regenerate_spellpoints
+end
 end
 arch woodfloor2
 x 17
@@ -3919,6 +4005,8 @@ end
 arch lightningwall_5
 x 17
 y 32
+arch spell_sm_lightning
+end
 end
 arch woodfloor2
 x 17
@@ -3983,6 +4071,10 @@ arch woodfloor2
 x 18
 y 8
 end
+arch titan
+x 18
+y 8
+end
 arch woodfloor2
 x 18
 y 9
@@ -4007,6 +4099,10 @@ arch woodfloor2
 x 18
 y 14
 end
+arch cyclops
+x 18
+y 14
+end
 arch woodfloor2
 x 18
 y 15
@@ -4023,6 +4119,10 @@ arch woodfloor2
 x 18
 y 18
 end
+arch cyclops
+x 18
+y 18
+end
 arch woodfloor2
 x 18
 y 19
@@ -4036,6 +4136,10 @@ x 18
 y 21
 end
 arch woodfloor2
+x 18
+y 22
+end
+arch cyclops
 x 18
 y 22
 end
@@ -4094,6 +4198,8 @@ end
 arch lightningwall_5
 x 18
 y 32
+arch spell_sm_lightning
+end
 end
 arch woodfloor2
 x 18
@@ -4257,6 +4363,8 @@ end
 arch lightningwall_5
 x 19
 y 32
+arch spell_sm_lightning
+end
 end
 arch woodfloor2
 x 19
@@ -4300,6 +4408,10 @@ arch woodfloor2
 x 20
 y 5
 end
+arch titan
+x 20
+y 5
+end
 arch woodfloor2
 x 20
 y 6
@@ -4309,6 +4421,10 @@ x 20
 y 7
 end
 arch woodfloor2
+x 20
+y 8
+end
+arch cyclops
 x 20
 y 8
 end
@@ -4340,6 +4456,10 @@ arch woodfloor2
 x 20
 y 15
 end
+arch cyclops
+x 20
+y 15
+end
 arch woodfloor2
 x 20
 y 16
@@ -4357,6 +4477,10 @@ x 20
 y 19
 end
 arch woodfloor2
+x 20
+y 20
+end
+arch cyclops
 x 20
 y 20
 end
@@ -4381,6 +4505,10 @@ x 20
 y 25
 end
 arch woodfloor2
+x 20
+y 26
+end
+arch cyclops
 x 20
 y 26
 end
@@ -4415,6 +4543,8 @@ end
 arch lightningwall_5
 x 20
 y 32
+arch spell_sm_lightning
+end
 end
 arch woodfloor2
 x 20
@@ -4585,6 +4715,8 @@ end
 arch lightningwall_5
 x 21
 y 32
+arch spell_sm_lightning
+end
 end
 arch woodfloor2
 x 21
@@ -4855,6 +4987,8 @@ end
 arch lightningwall_5
 x 22
 y 32
+arch spell_sm_lightning
+end
 end
 arch woodfloor2
 x 22
@@ -5129,6 +5263,8 @@ end
 arch lightningwall_5
 x 23
 y 32
+arch spell_sm_lightning
+end
 end
 arch woodfloor2
 x 23
@@ -5635,7 +5771,7 @@ end
 arch flagstone_2_1_1
 x 26
 y 5
-no_pass 0
+move_block 0
 end
 arch woodfloor2
 x 26
@@ -5820,7 +5956,7 @@ end
 arch flagstone_2_1_1
 x 26
 y 29
-no_pass 0
+move_block 0
 end
 arch woodfloor2
 x 26
@@ -6198,6 +6334,10 @@ arch woodfloor2
 x 28
 y 19
 end
+arch titan
+x 28
+y 19
+end
 arch woodfloor2
 x 28
 y 20
@@ -6398,6 +6538,10 @@ x 29
 y 13
 end
 arch woodfloor2
+x 29
+y 14
+end
+arch titan
 x 29
 y 14
 end
@@ -6632,6 +6776,14 @@ end
 arch woodfloor2
 x 30
 y 16
+end
+arch cyclops
+x 30
+y 16
+carrying 100
+arch key2
+slaying tdoor3
+end
 end
 arch woodfloor2
 x 30
@@ -7070,6 +7222,10 @@ arch woodfloor2
 x 32
 y 14
 end
+arch titan
+x 32
+y 14
+end
 arch woodfloor2
 x 32
 y 15
@@ -7089,6 +7245,14 @@ end
 arch woodfloor2
 x 32
 y 19
+end
+arch cyclops
+x 32
+y 19
+carrying 100
+arch key2
+slaying tdoor4
+end
 end
 arch woodfloor2
 x 32
@@ -8099,125 +8263,4 @@ end
 arch flagstone_2_2_4
 x 36
 y 34
-end
-arch titan
-x 5
-y 15
-end
-arch cyclops
-x 5
-y 18
-carrying 100
-arch key2
-slaying tdoor1
-end
-end
-arch titan
-x 8
-y 14
-carrying 100
-arch key2
-slaying tdoor2
-end
-end
-arch titan
-x 8
-y 17
-end
-arch cyclops
-x 15
-y 5
-end
-arch cyclops
-x 15
-y 8
-end
-arch cyclops
-x 15
-y 14
-end
-arch titan
-x 16
-y 18
-end
-arch titan
-x 16
-y 22
-end
-arch titan
-name Meganthropopulos
-hp 10000
-maxhp 10000
-exp 300000
-x 16
-y 28
-carrying 12300
-arch crown
-name Meganthropopulos' Crown
-material 0
-end
-end
-arch titan
-x 18
-y 8
-end
-arch cyclops
-x 18
-y 14
-end
-arch cyclops
-x 18
-y 18
-end
-arch cyclops
-x 18
-y 22
-end
-arch titan
-x 20
-y 5
-end
-arch cyclops
-x 20
-y 8
-end
-arch cyclops
-x 20
-y 15
-end
-arch cyclops
-x 20
-y 20
-end
-arch cyclops
-x 20
-y 26
-end
-arch titan
-x 28
-y 19
-end
-arch titan
-x 29
-y 14
-end
-arch cyclops
-x 30
-y 16
-carrying 100
-arch key2
-slaying tdoor3
-end
-end
-arch titan
-x 32
-y 14
-end
-arch cyclops
-x 32
-y 19
-carrying 100
-arch key2
-slaying tdoor4
-end
 end

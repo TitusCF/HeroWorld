@@ -1,16 +1,17 @@
 arch map
+name Muramasa!
+difficulty 31
 region nurnberg
-name wshop
-msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Fri Feb  9 04:09:28 1996
-endmsg
-x 20
-y 25
-level 31
 shopitems weapon:95;bow:20;*:-80
 shopmax 20000
+width 20
+height 25
+enter_x 12
+enter_y 23
+msg
+Created:  1996-02-09
+Modified: 2012-03-04 Rick Tanner
+endmsg
 end
 arch grass
 end
@@ -771,7 +772,7 @@ arch cobblestones2
 x 6
 y 15
 end
-arch wwall_2_2_1
+arch wwall_1_2
 x 6
 y 15
 end
@@ -917,7 +918,11 @@ arch cobblestones2
 x 7
 y 17
 end
-arch wwall_3_3
+arch swall_1_4_half
+x 7
+y 17
+end
+arch wwall_2_2_3
 x 7
 y 17
 end
@@ -945,7 +950,7 @@ arch man
 name shopkeeper
 msg
 @match *
-Welcome to weapon shop , Muramasa!
+Welcome to weapon shop, Muramasa!
 endmsg
 face man.131
 hp 180
@@ -1230,7 +1235,11 @@ arch cobblestones2
 x 9
 y 17
 end
-arch wwall_2_1_2
+arch swall_1_3_half
+x 9
+y 17
+end
+arch wwall_1_4
 x 9
 y 17
 end
@@ -1345,7 +1354,7 @@ arch cobblestones2
 x 10
 y 15
 end
-arch wwall_2_2_4
+arch wwall_1_2
 x 10
 y 15
 end
@@ -1384,7 +1393,7 @@ end
 arch door_look_2
 x 10
 y 20
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 10
@@ -1393,7 +1402,7 @@ end
 arch door_look_2
 x 10
 y 21
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 10
@@ -1569,9 +1578,7 @@ end
 arch sign
 msg
 --- Sword shop, Muramasa ---
-Our weapon destroy everything even
-the wall of castle!!
-
+Our weapons can destroy anything, even the walls of a castle!!
 --- Muramasa, sword shop ---
 endmsg
 x 11

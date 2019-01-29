@@ -1,12 +1,15 @@
 arch map
+name Reception, Wind Level 6
+difficulty 15
 region nurnberg
-name wind6
+width 24
+height 16
+enter_x 3
+enter_y 12
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Wed Feb 28 18:34:57 1996
+Created:  1996-02-28
+Modified: 2012-03-04 Rick Tanner
 endmsg
-x 24
 end
 arch flagstone
 end
@@ -112,6 +115,22 @@ arch flagstone
 x 1
 y 1
 end
+arch behemoth
+name Behemoth
+Pow 100
+maxsp 300
+x 1
+y 1
+attack_movement 7
+resist_electricity 100
+can_cast_spell 1
+arch spell_sm_lightning
+end
+arch spell_hellfire
+end
+arch abil_icestorm
+end
+end
 arch flagstone
 x 1
 y 2
@@ -197,6 +216,22 @@ end
 arch flagstone
 x 2
 y 4
+end
+arch behemoth
+name Behemoth
+Pow 100
+maxsp 300
+x 2
+y 4
+attack_movement 7
+resist_electricity 100
+can_cast_spell 1
+arch spell_sm_lightning
+end
+arch abil_icestorm
+end
+arch spell_hellfire
+end
 end
 arch flagstone
 x 2
@@ -390,7 +425,7 @@ y 10
 end
 arch magic_mouth
 msg
-Dangerous
+Dangerous!
 endmsg
 x 3
 y 11
@@ -608,6 +643,22 @@ end
 arch flagstone
 x 5
 y 3
+end
+arch behemoth
+name Behemoth
+Pow 100
+maxsp 300
+x 5
+y 3
+attack_movement 7
+resist_electricity 100
+can_cast_spell 1
+arch spell_sm_lightning
+end
+arch abil_icestorm
+end
+arch spell_hellfire
+end
 end
 arch flagstone
 x 5
@@ -933,6 +984,22 @@ arch flagstone
 x 7
 y 11
 end
+arch behemoth
+name Behemoth
+Pow 100
+maxsp 300
+x 7
+y 11
+attack_movement 7
+resist_electricity 100
+can_cast_spell 1
+arch spell_sm_lightning
+end
+arch spell_hellfire
+end
+arch abil_icestorm
+end
+end
 arch flagstone
 x 7
 y 12
@@ -1108,6 +1175,22 @@ end
 arch flagstone
 x 9
 y 2
+end
+arch behemoth
+name Behemoth
+Pow 100
+maxsp 300
+x 9
+y 2
+attack_movement 7
+resist_electricity 100
+can_cast_spell 1
+arch spell_sm_lightning
+end
+arch abil_icestorm
+end
+arch spell_hellfire
+end
 end
 arch flagstone
 x 9
@@ -1445,6 +1528,22 @@ arch flagstone
 x 11
 y 11
 end
+arch behemoth
+name Behemoth
+Pow 100
+maxsp 300
+x 11
+y 11
+attack_movement 7
+resist_electricity 100
+can_cast_spell 1
+arch spell_sm_lightning
+end
+arch spell_hellfire
+end
+arch abil_icestorm
+end
+end
 arch flagstone
 x 11
 y 12
@@ -1602,7 +1701,10 @@ end
 arch flagstone
 x 13
 end
-arch cwall_3_3
+arch dwall_2_1_2
+x 13
+end
+arch swall_1_1_half
 x 13
 end
 arch flagstone
@@ -1625,7 +1727,11 @@ arch dungeon_magic
 x 13
 y 2
 end
-arch swall_2_2_1
+arch swall_1_2_half
+x 13
+y 2
+end
+arch cwall_0
 x 13
 y 2
 end
@@ -1809,7 +1915,7 @@ arch dungeon_magic
 x 14
 y 6
 end
-arch swall_1_3
+arch swall_2_1_2
 x 14
 y 6
 end
@@ -1831,7 +1937,7 @@ arch dungeon_magic
 x 14
 y 8
 end
-arch swall_1_3
+arch swall_2_1_2
 x 14
 y 8
 end
@@ -1889,7 +1995,11 @@ arch flagstone
 x 15
 y 2
 end
-arch cwall_3_4
+arch dwall_2_1_1
+x 15
+y 2
+end
+arch cwall_0
 x 15
 y 2
 end
@@ -1921,6 +2031,10 @@ arch flagstone
 x 15
 y 6
 end
+arch swall_1_3_half
+x 15
+y 6
+end
 arch cwall_1_2
 x 15
 y 6
@@ -1930,6 +2044,10 @@ x 15
 y 7
 end
 arch flagstone
+x 15
+y 8
+end
+arch swall_1_3_half
 x 15
 y 8
 end
@@ -2532,100 +2650,4 @@ end
 arch blocked
 x 23
 y 12
-end
-arch behemoth
-name Behemoth
-Pow 100
-maxsp 300
-x 1
-y 1
-attack_movement 7
-immune 16392
-can_cast_spell 1
-arch spell_sm_lightning
-end
-arch spell_hellfire
-end
-arch abil_icestorm
-end
-end
-arch behemoth
-name Behemoth
-Pow 100
-maxsp 300
-x 2
-y 4
-attack_movement 7
-immune 16392
-can_cast_spell 1
-arch spell_sm_lightning
-end
-arch abil_icestorm
-end
-arch spell_hellfire
-end
-end
-arch behemoth
-name Behemoth
-Pow 100
-maxsp 300
-x 5
-y 3
-attack_movement 7
-immune 16392
-can_cast_spell 1
-arch spell_sm_lightning
-end
-arch abil_icestorm
-end
-arch spell_hellfire
-end
-end
-arch behemoth
-name Behemoth
-Pow 100
-maxsp 300
-x 7
-y 11
-attack_movement 7
-immune 16392
-can_cast_spell 1
-arch spell_sm_lightning
-end
-arch spell_hellfire
-end
-arch abil_icestorm
-end
-end
-arch behemoth
-name Behemoth
-Pow 100
-maxsp 300
-x 9
-y 2
-attack_movement 7
-immune 16392
-can_cast_spell 1
-arch spell_sm_lightning
-end
-arch abil_icestorm
-end
-arch spell_hellfire
-end
-end
-arch behemoth
-name Behemoth
-Pow 100
-maxsp 300
-x 11
-y 11
-attack_movement 7
-immune 16392
-can_cast_spell 1
-arch spell_sm_lightning
-end
-arch spell_hellfire
-end
-arch abil_icestorm
-end
 end

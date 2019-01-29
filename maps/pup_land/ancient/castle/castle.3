@@ -1,14 +1,15 @@
 arch map
+name Gothwolte's Castle, Level 3
+difficulty 80
 region ancientpupland
-name castle
-msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Wed Dec 11 21:20:29 1996
-endmsg
 width 28
 height 28
-difficulty 6
+enter_x 3
+enter_y 24
+msg
+Created:  1996-12-11
+Modified: 2012-02-23 Rick Tanner
+endmsg
 end
 arch marble
 end
@@ -586,11 +587,10 @@ x 3
 y 5
 end
 arch locked_door1
-msg
-You need the evil master's key to open
-this door.
-endmsg
 slaying evil_master_key3
+msg
+You need the evil master's key to open this door.
+endmsg
 x 3
 y 5
 end
@@ -625,6 +625,8 @@ exp 100000
 dam 80
 wc -10
 ac -60
+x 3
+y 9
 level 40
 attacktype 536
 resist_fire 30
@@ -635,12 +637,10 @@ resist_death 100
 resist_holyword -100
 carrying 65
 randomitems ring
-run_away 3
 see_invisible 1
+run_away 3
 can_cast_spell 1
 one_hit 0
-x 3
-y 9
 arch spell_icestorm
 end
 arch spell_burning_hands
@@ -648,8 +648,8 @@ end
 arch abil_fear
 end
 arch gem
-face pretty_crystal.111
 title of exceptional beauty
+face pretty_crystal.111
 speed 0.000000
 value 40000
 weight 65
@@ -684,6 +684,8 @@ exp 100000
 dam 80
 wc -10
 ac -60
+x 3
+y 12
 level 40
 attacktype 536
 resist_fire 30
@@ -694,12 +696,10 @@ resist_death 100
 resist_holyword -100
 carrying 65
 randomitems ring
-run_away 3
 see_invisible 1
+run_away 3
 can_cast_spell 1
 one_hit 0
-x 3
-y 12
 arch spell_icestorm
 end
 arch spell_burning_hands
@@ -707,8 +707,8 @@ end
 arch abil_fear
 end
 arch gem
-face pretty_crystal.111
 title of exceptional beauty
+face pretty_crystal.111
 speed 0.000000
 value 40000
 weight 65
@@ -743,6 +743,8 @@ exp 100000
 dam 80
 wc -10
 ac -60
+x 3
+y 15
 level 40
 attacktype 536
 resist_fire 30
@@ -753,12 +755,10 @@ resist_death 100
 resist_holyword -100
 carrying 65
 randomitems ring
-run_away 3
 see_invisible 1
+run_away 3
 can_cast_spell 1
 one_hit 0
-x 3
-y 15
 arch spell_icestorm
 end
 arch spell_burning_hands
@@ -766,8 +766,8 @@ end
 arch abil_fear
 end
 arch gem
-face pretty_crystal.111
 title of exceptional beauty
+face pretty_crystal.111
 speed 0.000000
 value 40000
 weight 65
@@ -788,33 +788,33 @@ x 3
 y 18
 end
 arch button_small
+x 3
+y 18
 resist_magic 30
 weight 100000
 connected 2
-x 3
-y 18
 end
 arch marble
 x 3
 y 19
 end
 arch igate_closed_1
+x 3
+y 19
 speed 0.500000
 resist_magic 30
 connected 2
-x 3
-y 19
 end
 arch marble
 x 3
 y 20
 end
 arch button_small
+x 3
+y 20
 resist_magic 30
 weight 100000
 connected 2
-x 3
-y 20
 end
 arch marble
 x 3
@@ -1956,6 +1956,8 @@ exp 100000
 dam 80
 wc -10
 ac -60
+x 10
+y 6
 level 40
 attacktype 536
 resist_fire 30
@@ -1966,15 +1968,13 @@ resist_death 100
 resist_holyword -100
 carrying 65
 randomitems ring
-run_away 3
 see_invisible 1
+run_away 3
 can_cast_spell 1
 one_hit 0
-x 10
-y 6
 arch gem
-face pretty_crystal.111
 title of exceptional beauty
+face pretty_crystal.111
 speed 0.000000
 value 40000
 weight 65
@@ -2001,52 +2001,42 @@ x 10
 y 8
 end
 arch woodfloor2
-name woodfloor
 x 10
 y 9
 end
 arch woodfloor2
-name woodfloor
 x 10
 y 10
 end
 arch woodfloor2
-name woodfloor
 x 10
 y 11
 end
 arch woodfloor2
-name woodfloor
 x 10
 y 12
 end
 arch woodfloor2
-name woodfloor
 x 10
 y 13
 end
 arch woodfloor2
-name woodfloor
 x 10
 y 14
 end
 arch woodfloor2
-name woodfloor
 x 10
 y 15
 end
 arch woodfloor2
-name woodfloor
 x 10
 y 16
 end
 arch woodfloor2
-name woodfloor
 x 10
 y 17
 end
 arch woodfloor2
-name woodfloor
 x 10
 y 18
 end
@@ -2173,12 +2163,10 @@ x 11
 y 8
 end
 arch woodfloor2
-name woodfloor
 x 11
 y 9
 end
 arch woodfloor2
-name woodfloor
 x 11
 y 10
 end
@@ -2187,37 +2175,30 @@ x 11
 y 10
 end
 arch woodfloor2
-name woodfloor
 x 11
 y 11
 end
 arch woodfloor2
-name woodfloor
 x 11
 y 12
 end
 arch woodfloor2
-name woodfloor
 x 11
 y 13
 end
 arch woodfloor2
-name woodfloor
 x 11
 y 14
 end
 arch woodfloor2
-name woodfloor
 x 11
 y 15
 end
 arch woodfloor2
-name woodfloor
 x 11
 y 16
 end
 arch woodfloor2
-name woodfloor
 x 11
 y 17
 end
@@ -2226,7 +2207,6 @@ x 11
 y 17
 end
 arch woodfloor2
-name woodfloor
 x 11
 y 18
 end
@@ -2333,52 +2313,42 @@ x 12
 y 8
 end
 arch woodfloor2
-name woodfloor
 x 12
 y 9
 end
 arch woodfloor2
-name woodfloor
 x 12
 y 10
 end
 arch woodfloor2
-name woodfloor
 x 12
 y 11
 end
 arch woodfloor2
-name woodfloor
 x 12
 y 12
 end
 arch woodfloor2
-name woodfloor
 x 12
 y 13
 end
 arch woodfloor2
-name woodfloor
 x 12
 y 14
 end
 arch woodfloor2
-name woodfloor
 x 12
 y 15
 end
 arch woodfloor2
-name woodfloor
 x 12
 y 16
 end
 arch woodfloor2
-name woodfloor
 x 12
 y 17
 end
 arch woodfloor2
-name woodfloor
 x 12
 y 18
 end
@@ -2505,7 +2475,6 @@ x 13
 y 8
 end
 arch woodfloor2
-name woodfloor
 x 13
 y 9
 end
@@ -2514,42 +2483,34 @@ x 13
 y 9
 end
 arch woodfloor2
-name woodfloor
 x 13
 y 10
 end
 arch woodfloor2
-name woodfloor
 x 13
 y 11
 end
 arch woodfloor2
-name woodfloor
 x 13
 y 12
 end
 arch woodfloor2
-name woodfloor
 x 13
 y 13
 end
 arch woodfloor2
-name woodfloor
 x 13
 y 14
 end
 arch woodfloor2
-name woodfloor
 x 13
 y 15
 end
 arch woodfloor2
-name woodfloor
 x 13
 y 16
 end
 arch woodfloor2
-name woodfloor
 x 13
 y 17
 end
@@ -2562,18 +2523,17 @@ x 13
 y 18
 end
 arch woodfloor2
-name woodfloor
 x 13
 y 18
 end
 arch grate_closed_2
+x 13
+y 18
 speed 0.500000
 resist_physical 30
 resist_magic 30
 connected 3
 damned 1
-x 13
-y 18
 end
 arch marble
 x 13
@@ -2668,6 +2628,8 @@ exp 100000
 dam 80
 wc -10
 ac -60
+x 14
+y 4
 level 40
 attacktype 536
 resist_fire 30
@@ -2678,12 +2640,10 @@ resist_death 100
 resist_holyword -100
 carrying 65
 randomitems ring
-run_away 3
 see_invisible 1
+run_away 3
 can_cast_spell 1
 one_hit 0
-x 14
-y 4
 arch spell_icestorm
 end
 arch spell_burning_hands
@@ -2691,8 +2651,8 @@ end
 arch abil_fear
 end
 arch gem
-face pretty_crystal.111
 title of exceptional beauty
+face pretty_crystal.111
 speed 0.000000
 value 40000
 weight 65
@@ -2730,72 +2690,58 @@ y 8
 end
 arch check_inv
 slaying mortex
-connected 11
 x 14
 y 9
+connected 11
 end
 arch magic_mouth
 msg
 You decipher the ancient symbols:
-"Four brethren relieved,
-but how could they dare?
-The contract was foul
-and the price wasn't fair:
-A corpse a week
-to leave death behind,
-a pact with the devil
-but still, it was signed."
+"Four brethren relieved, but how could they dare? The contract was foul and the price wasn't fair: A corpse a week to leave death behind, a pact with the devil but still, it was signed."
 endmsg
-connected 11
-walk_on 0
-fly_on 0
-activate_on_release 0
 x 14
 y 9
+connected 11
+move_on 0
+activate_on_release 0
 end
 arch woodfloor2
-name woodfloor
 x 14
 y 9
 end
 arch monument
 name ancient epigraph
 msg
-You are unable to decipher those
-strange symbols. It seems to be an
-ancient script... You need a
-translation book to read that!
+You are unable to decipher those strange symbols.  It seems to be an ancient script... You need a translation book to read that!
 endmsg
 x 14
 y 9
 end
 arch woodfloor2
-name woodfloor
 x 14
 y 10
 end
 arch woodfloor2
-name woodfloor
 x 14
 y 11
 end
 arch chair_3.2
+x 14
+y 11
 material 0
 value 0
 no_pick 1
-x 14
-y 11
 end
 arch evil_master1
-carrying 10600
-has_ready_bow 1
 x 14
 y 11
+carrying 10600
+has_ready_bow 1
 arch magic_bow
 name Unholy Bow
 name_pl Unholy Bows
-sp 0
 Wis -1
+sp 25
 magic 1
 applied 1
 end
@@ -2807,8 +2753,7 @@ no_pick 1
 arch flu
 name dark spirit
 msg
-Evil spirits control your mind! You
-wish to die...
+Evil spirits control your mind! You wish to die...
 endmsg
 end
 end
@@ -2822,27 +2767,22 @@ slaying evil_master_key3
 end
 end
 arch woodfloor2
-name woodfloor
 x 14
 y 12
 end
 arch woodfloor2
-name woodfloor
 x 14
 y 13
 end
 arch woodfloor2
-name woodfloor
 x 14
 y 14
 end
 arch woodfloor2
-name woodfloor
 x 14
 y 15
 end
 arch woodfloor2
-name woodfloor
 x 14
 y 16
 end
@@ -2851,43 +2791,41 @@ x 14
 y 17
 end
 arch woodfloor2
-name woodfloor
 x 14
 y 17
 end
 arch grate_closed_1
+x 14
+y 17
 speed 0.500000
 resist_physical 30
 resist_magic 30
 connected 3
 damned 1
-x 14
-y 17
 end
 arch woodfloor2
-name woodfloor
 x 14
 y 18
 end
 arch button_lever
+x 14
+y 18
 resist_physical 30
 resist_magic 30
 connected 3
-x 14
-y 18
 end
 arch marble
 x 14
 y 19
 end
 arch gate_open_1
+x 14
+y 19
 speed 0.500000
 resist_physical 30
 resist_magic 30
 value 1
 connected 3
-x 14
-y 19
 end
 arch marble
 x 14
@@ -2914,11 +2852,11 @@ x 14
 y 24
 end
 arch button_small
+x 14
+y 24
 resist_physical 30
 weight 100000
 connected 1
-x 14
-y 24
 end
 arch marble
 x 14
@@ -3003,7 +2941,6 @@ x 15
 y 8
 end
 arch woodfloor2
-name woodfloor
 x 15
 y 9
 end
@@ -3012,42 +2949,34 @@ x 15
 y 9
 end
 arch woodfloor2
-name woodfloor
 x 15
 y 10
 end
 arch woodfloor2
-name woodfloor
 x 15
 y 11
 end
 arch woodfloor2
-name woodfloor
 x 15
 y 12
 end
 arch woodfloor2
-name woodfloor
 x 15
 y 13
 end
 arch woodfloor2
-name woodfloor
 x 15
 y 14
 end
 arch woodfloor2
-name woodfloor
 x 15
 y 15
 end
 arch woodfloor2
-name woodfloor
 x 15
 y 16
 end
 arch woodfloor2
-name woodfloor
 x 15
 y 17
 end
@@ -3060,18 +2989,17 @@ x 15
 y 18
 end
 arch woodfloor2
-name woodfloor
 x 15
 y 18
 end
 arch grate_closed_2
+x 15
+y 18
 speed 0.500000
 resist_physical 30
 resist_magic 30
 connected 3
 damned 1
-x 15
-y 18
 end
 arch marble
 x 15
@@ -3118,11 +3046,11 @@ x 15
 y 24
 end
 arch igate_closed_2
+x 15
+y 24
 speed 0.500000
 resist_physical 30
 connected 1
-x 15
-y 24
 end
 arch marble
 x 15
@@ -3203,52 +3131,42 @@ x 16
 y 8
 end
 arch woodfloor2
-name woodfloor
 x 16
 y 9
 end
 arch woodfloor2
-name woodfloor
 x 16
 y 10
 end
 arch woodfloor2
-name woodfloor
 x 16
 y 11
 end
 arch woodfloor2
-name woodfloor
 x 16
 y 12
 end
 arch woodfloor2
-name woodfloor
 x 16
 y 13
 end
 arch woodfloor2
-name woodfloor
 x 16
 y 14
 end
 arch woodfloor2
-name woodfloor
 x 16
 y 15
 end
 arch woodfloor2
-name woodfloor
 x 16
 y 16
 end
 arch woodfloor2
-name woodfloor
 x 16
 y 17
 end
 arch woodfloor2
-name woodfloor
 x 16
 y 18
 end
@@ -3289,11 +3207,11 @@ x 16
 y 24
 end
 arch button_small
+x 16
+y 24
 resist_physical 30
 weight 100000
 connected 1
-x 16
-y 24
 end
 arch marble
 x 16
@@ -3378,12 +3296,10 @@ x 17
 y 8
 end
 arch woodfloor2
-name woodfloor
 x 17
 y 9
 end
 arch woodfloor2
-name woodfloor
 x 17
 y 10
 end
@@ -3392,37 +3308,30 @@ x 17
 y 10
 end
 arch woodfloor2
-name woodfloor
 x 17
 y 11
 end
 arch woodfloor2
-name woodfloor
 x 17
 y 12
 end
 arch woodfloor2
-name woodfloor
 x 17
 y 13
 end
 arch woodfloor2
-name woodfloor
 x 17
 y 14
 end
 arch woodfloor2
-name woodfloor
 x 17
 y 15
 end
 arch woodfloor2
-name woodfloor
 x 17
 y 16
 end
 arch woodfloor2
-name woodfloor
 x 17
 y 17
 end
@@ -3431,7 +3340,6 @@ x 17
 y 17
 end
 arch woodfloor2
-name woodfloor
 x 17
 y 18
 end
@@ -3445,28 +3353,20 @@ y 19
 end
 arch check_inv
 slaying mortex
-connected 10
 x 17
 y 20
+connected 10
 end
 arch magic_mouth
 msg
 You decipher the ancient symbols:
-"The story would end now
-if there wasn't that man,
-dressed like a stranger,
-an offer at hand.
-So the contract was signed,
-it was written in blood,
-Four brethren would not die,
-so far it sounds good..."
+"The story would end now if there wasn't that man, dressed like a stranger, an offer at hand.  So the contract was signed, it was written in blood.  Four brethren would not die, so far it sounds good..."
 endmsg
-connected 10
-walk_on 0
-fly_on 0
-activate_on_release 0
 x 17
 y 20
+connected 10
+move_on 0
+activate_on_release 0
 end
 arch marble
 x 17
@@ -3475,10 +3375,7 @@ end
 arch monument
 name ancient epigraph
 msg
-You are unable to decipher those
-strange symbols. It seems to be an
-ancient script... You need a
-translation book to read that!
+You are unable to decipher those strange symbols.  It seems to be an ancient script... You need a translation book to read that!
 endmsg
 x 17
 y 20
@@ -3574,52 +3471,42 @@ x 18
 y 8
 end
 arch woodfloor2
-name woodfloor
 x 18
 y 9
 end
 arch woodfloor2
-name woodfloor
 x 18
 y 10
 end
 arch woodfloor2
-name woodfloor
 x 18
 y 11
 end
 arch woodfloor2
-name woodfloor
 x 18
 y 12
 end
 arch woodfloor2
-name woodfloor
 x 18
 y 13
 end
 arch woodfloor2
-name woodfloor
 x 18
 y 14
 end
 arch woodfloor2
-name woodfloor
 x 18
 y 15
 end
 arch woodfloor2
-name woodfloor
 x 18
 y 16
 end
 arch woodfloor2
-name woodfloor
 x 18
 y 17
 end
 arch woodfloor2
-name woodfloor
 x 18
 y 18
 end
@@ -3660,11 +3547,11 @@ x 18
 y 24
 end
 arch button_small
+x 18
+y 24
 resist_fire 30
 weight 100000
 connected 4
-x 18
-y 24
 end
 arch marble
 x 18
@@ -3881,11 +3768,11 @@ x 19
 y 24
 end
 arch igate_closed_2
+x 19
+y 24
 speed 0.500000
 resist_fire 30
 connected 4
-x 19
-y 24
 end
 arch marble
 x 19
@@ -4038,11 +3925,11 @@ x 20
 y 24
 end
 arch button_small
+x 20
+y 24
 resist_fire 30
 weight 100000
 connected 4
-x 20
-y 24
 end
 arch marble
 x 20
@@ -4323,6 +4210,8 @@ exp 100000
 dam 80
 wc -10
 ac -60
+x 22
+y 12
 level 40
 attacktype 536
 resist_fire 30
@@ -4333,15 +4222,13 @@ resist_death 100
 resist_holyword -100
 carrying 65
 randomitems ring
-run_away 3
 see_invisible 1
+run_away 3
 can_cast_spell 1
 one_hit 0
-x 22
-y 12
 arch gem
-face pretty_crystal.111
 title of exceptional beauty
+face pretty_crystal.111
 speed 0.000000
 value 40000
 weight 65
@@ -4390,6 +4277,8 @@ exp 100000
 dam 80
 wc -10
 ac -60
+x 22
+y 15
 level 40
 attacktype 536
 resist_fire 30
@@ -4400,15 +4289,13 @@ resist_death 100
 resist_holyword -100
 carrying 65
 randomitems ring
-run_away 3
 see_invisible 1
+run_away 3
 can_cast_spell 1
 one_hit 0
-x 22
-y 15
 arch gem
-face pretty_crystal.111
 title of exceptional beauty
+face pretty_crystal.111
 speed 0.000000
 value 40000
 weight 65
@@ -4469,6 +4356,8 @@ exp 100000
 dam 80
 wc -10
 ac -60
+x 22
+y 22
 level 40
 attacktype 536
 resist_fire 30
@@ -4479,12 +4368,10 @@ resist_death 100
 resist_holyword -100
 carrying 65
 randomitems ring
-run_away 3
 see_invisible 1
+run_away 3
 can_cast_spell 1
 one_hit 0
-x 22
-y 22
 arch spell_icestorm
 end
 arch spell_burning_hands
@@ -4492,8 +4379,8 @@ end
 arch abil_fear
 end
 arch gem
-face pretty_crystal.111
 title of exceptional beauty
+face pretty_crystal.111
 speed 0.000000
 value 40000
 weight 65
@@ -4520,6 +4407,8 @@ exp 100000
 dam 80
 wc -10
 ac -60
+x 22
+y 23
 level 40
 attacktype 536
 resist_fire 30
@@ -4530,15 +4419,13 @@ resist_death 100
 resist_holyword -100
 carrying 65
 randomitems ring
-run_away 3
 see_invisible 1
+run_away 3
 can_cast_spell 1
 one_hit 0
-x 22
-y 23
 arch gem
-face pretty_crystal.111
 title of exceptional beauty
+face pretty_crystal.111
 speed 0.000000
 value 40000
 weight 65
@@ -4661,6 +4548,8 @@ exp 100000
 dam 80
 wc -10
 ac -60
+x 23
+y 12
 level 40
 attacktype 536
 resist_fire 30
@@ -4671,15 +4560,13 @@ resist_death 100
 resist_holyword -100
 carrying 65
 randomitems ring
-run_away 3
 see_invisible 1
+run_away 3
 can_cast_spell 1
 one_hit 0
-x 23
-y 12
 arch gem
-face pretty_crystal.111
 title of exceptional beauty
+face pretty_crystal.111
 speed 0.000000
 value 40000
 weight 65
@@ -4728,6 +4615,8 @@ exp 100000
 dam 80
 wc -10
 ac -60
+x 23
+y 15
 level 40
 attacktype 536
 resist_fire 30
@@ -4738,15 +4627,13 @@ resist_death 100
 resist_holyword -100
 carrying 65
 randomitems ring
-run_away 3
 see_invisible 1
+run_away 3
 can_cast_spell 1
 one_hit 0
-x 23
-y 15
 arch gem
-face pretty_crystal.111
 title of exceptional beauty
+face pretty_crystal.111
 speed 0.000000
 value 40000
 weight 65
@@ -4807,6 +4694,8 @@ exp 100000
 dam 80
 wc -10
 ac -60
+x 23
+y 22
 level 40
 attacktype 536
 resist_fire 30
@@ -4817,15 +4706,13 @@ resist_death 100
 resist_holyword -100
 carrying 65
 randomitems ring
-run_away 3
 see_invisible 1
+run_away 3
 can_cast_spell 1
 one_hit 0
-x 23
-y 22
 arch gem
-face pretty_crystal.111
 title of exceptional beauty
+face pretty_crystal.111
 speed 0.000000
 value 40000
 weight 65
@@ -4858,6 +4745,8 @@ exp 100000
 dam 80
 wc -10
 ac -60
+x 23
+y 23
 level 40
 attacktype 536
 resist_fire 30
@@ -4868,15 +4757,13 @@ resist_death 100
 resist_holyword -100
 carrying 65
 randomitems ring
-run_away 3
 see_invisible 1
+run_away 3
 can_cast_spell 1
 one_hit 0
-x 23
-y 23
 arch gem
-face pretty_crystal.111
 title of exceptional beauty
+face pretty_crystal.111
 speed 0.000000
 value 40000
 weight 65

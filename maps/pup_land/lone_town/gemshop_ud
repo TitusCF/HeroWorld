@@ -1,10 +1,14 @@
 arch map
+name Lone Town Gem Shop, Basement
+difficulty 25
 region lonetown
-name gemshop_ud
+width 16
+height 16
+enter_x 1
+enter_y 14
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Thu Mar 14 02:23:55 1996
+Created:  1996-03-14
+Modified: 2011-12-06 Rick Tanner
 endmsg
 end
 arch blocked
@@ -988,10 +992,7 @@ end
 arch scroll
 name message
 msg
-From Fox Tails, the gang of bandits
-to very poor gemshop-keeper:
-Don't worry, we'll take good care of
-your gems, hahaha!
+From Fox Tails, the gang of bandits to very poor gemshop-keeper: Don't worry, we'll take good care of your gems, hahaha!
 endmsg
 x 9
 y 9
@@ -1112,6 +1113,7 @@ x 10
 y 14
 end
 arch locked_door2
+slaying no_key
 x 10
 y 14
 end
@@ -1459,6 +1461,7 @@ arch awall_2_1_2
 x 14
 end
 arch ahole_right
+name passageway
 slaying town_ud2
 hp 13
 sp 4

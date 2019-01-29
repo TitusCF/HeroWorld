@@ -1,13 +1,15 @@
 arch map
+name Dick's House
+difficulty 18
 region nurnberg
-name house
+width 27
+height 21
+enter_x 1
+enter_y 3
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Fri Feb  9 23:49:57 1996
+Created:  1996-02-09
+Modified: 2012-03-02 Rick Tanner
 endmsg
-x 27
-y 21
 end
 arch grass
 end
@@ -19,7 +21,7 @@ y 2
 end
 arch invis_exit
 slaying ../city
-hp 3
+hp 4
 sp 12
 y 3
 end
@@ -446,7 +448,7 @@ end
 arch door_look_1
 x 4
 y 5
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 4
@@ -474,15 +476,15 @@ y 9
 end
 arch altar
 name drop 5 platinum coins
-slaying platinacoin
-food 5
+slaying money
+food 250
 x 4
 y 9
 connected 1
 end
 arch magic_ear
 msg
-@match dot|DOT
+@match dot
 Click.
 endmsg
 x 4
@@ -491,7 +493,7 @@ connected 4
 end
 arch magic_ear
 msg
-@match tod|TOD|dot|Dot
+@match tod|dot
 Click.
 endmsg
 x 4
@@ -500,7 +502,7 @@ connected 2
 end
 arch magic_ear
 msg
-@match tod|TOD
+@match tod
 Click.
 endmsg
 x 4
@@ -518,39 +520,29 @@ end
 arch human
 name Dick, the carpenter
 msg
-@match Castle|castle
-Bauer is very stingy.
-So, I did jerry-building in the
-underground of castle :).
-Go there and look into one of the
-pillars.
-@match Bauer|bauer
-I hate him!
-He is very stingy!
-I built his Castle, but he didn't pay
-enough money!!!
-@match dot|DOT
+@match castle
+Bauer is very stingy.  So, I did jerry-building in the underground of castle :).  Go there and look into one of the pillars.
+@match bauer
+I hate him! He is very stingy! I built his Castle, but he didn't pay enough money!!!
+@match dot
 Ok!
-@match tod|TOD
+@match tod
 Really,you want to get a death?
 @match extra
-Oh, You want to try a extra dungeon,
-don't you?
-Then please say the keyword that is
-obtained by Proof Scrolls.
-@match yes|Yes
-Ok. Please drop 5 platina on the alter,
-and go to next room.
+Oh, You want to try a extra dungeon, don't you? Then please say the keyword that is obtained by Proof Scrolls.
+@match yes
+Ok.  Please drop 5 platina on the alter, and go to next room.
 @match *
 Welcome to my house!
 I'm Dick, a Carpenter.
-Would you like to conquer my dungeons
+Would you like to conquer my dungeons?
 endmsg
 face human.111
 hp 100
 x 4
 y 10
 type 0
+move_type walk
 monster 1
 friendly 1
 end
@@ -1228,15 +1220,10 @@ arch sign
 name Information
 msg
 There are three dungeons.
-
  1.Click de Pon (low level)
  2.ShowInv de Pon (medium level)
  3.Bomb de Pon (high level)
-
-There are special items in each
-dungeon: one is a key, another is the
-Proof Scroll. 
-Go to dungeon and pick them
+There are special items in each dungeon: one is a key, another is the Proof Scroll.  Go to dungeon and pick them.
 endmsg
 x 10
 y 6
@@ -1331,8 +1318,7 @@ y 17
 end
 arch sign_e
 msg
-If you want to enter this room,
-go and ask Dick about "extra" 
+If you want to enter this room, go and ask Dick about "extra."
 endmsg
 x 10
 y 17
@@ -1538,8 +1524,7 @@ end
 arch locked_door2
 slaying 43658709
 msg
-You need the Silver Key to open this
-door. 
+You need the Silver Key to open this door.
 endmsg
 x 12
 y 6
@@ -1603,8 +1588,7 @@ end
 arch locked_door2
 slaying 532106
 msg
-You need the Platina Key to open this
-door. 
+You need the Platina Key to open this door.
 endmsg
 x 12
 y 12
@@ -1661,11 +1645,15 @@ arch woodfloor
 x 12
 y 18
 end
-arch swall_0
+arch swall_1_1
 x 12
 y 18
 end
 arch woodfloor
+x 12
+y 19
+end
+arch swall_1_2_half
 x 12
 y 19
 end
@@ -3001,7 +2989,7 @@ arch woodfloor
 x 20
 y 7
 end
-arch swall_1_3
+arch swall_2_1_2
 x 20
 y 7
 end
@@ -3033,7 +3021,7 @@ arch woodfloor
 x 20
 y 10
 end
-arch swall_1_3
+arch swall_2_1_2
 x 20
 y 10
 end
@@ -3077,7 +3065,7 @@ arch woodfloor
 x 20
 y 14
 end
-arch swall_1_3
+arch swall_2_1_2
 x 20
 y 14
 end
@@ -3184,6 +3172,10 @@ arch wall_2_1_1
 x 21
 y 7
 end
+arch swall_1_3_half
+x 21
+y 7
+end
 arch woodfloor
 x 21
 y 8
@@ -3205,6 +3197,10 @@ x 21
 y 10
 end
 arch wall_2_1_1
+x 21
+y 10
+end
+arch swall_1_3_half
 x 21
 y 10
 end
@@ -3237,6 +3233,10 @@ x 21
 y 14
 end
 arch wall_2_1_1
+x 21
+y 14
+end
+arch swall_1_3_half
 x 21
 y 14
 end

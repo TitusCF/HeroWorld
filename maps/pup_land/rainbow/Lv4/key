@@ -1,11 +1,15 @@
 arch map
+name Key
+difficulty 1
 region pupland
+width 17
+height 16
+enter_x 1
+enter_y 14
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue Jul 16 09:19:30 1996
+Created:  1996-07-16
+Modified: 2012-03-08 Rick Tanner
 endmsg
-x 17
 end
 arch blocked
 end
@@ -679,7 +683,7 @@ y 7
 end
 arch magic_ear
 msg
-@match Yes|yes|Key|key
+@match yes|key
 Click.
 endmsg
 x 7
@@ -1397,21 +1401,18 @@ end
 arch thief
 name M. Frozen
 msg
-@match word|Word
+@match word
 I don't know.
-
-@match yes|Yes|key|Key
+@match yes|key
 O.K.
-
 @match *
-Oops! This is big mistake!
-O.K. You have won. If you want,
-I'll give you the key. Do you want?
+Oops! This is big mistake! O.K. You have won.  If you want, I'll give you the key.  Do you want?
 endmsg
 face thief.131
 hp 100
 x 16
 type 0
+move_type walk
 monster 1
 friendly 1
 end

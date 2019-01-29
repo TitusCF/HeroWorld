@@ -1,15 +1,19 @@
 arch map
+name Goblin Chief
+difficulty 10
 region scorn
-name goblin_chief
-msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Mon Jun  5 15:40:23 2000
-endmsg
 width 17
 height 24
 enter_x 14
 enter_y 9
+msg
+Created:  2000-06-05
+Modified: 2010-05-05 Cavesomething
+endmsg
+maplore
+@quest Scorn Royalty Quest
+the goblin chief is here
+endmaplore
 end
 arch pstone_4
 end
@@ -212,17 +216,19 @@ x 1
 y 7
 end
 arch fountain
-speed_left -0.600000
 x 1
 y 7
+speed_left -0.600000
 end
 arch potion_heroism
 name fountain
 face fountain.111
-material 256
-no_pick 1
 x 1
 y 7
+material 256
+no_pick 1
+arch spell_heroism
+end
 end
 arch pstone_4
 x 1
@@ -337,9 +343,9 @@ x 1
 y 22
 end
 arch high_boots
-magic 2
 x 1
 y 22
+magic 2
 end
 arch pstone_4
 x 1
@@ -500,9 +506,9 @@ x 2
 y 22
 end
 arch sword_2
-magic 3
 x 2
 y 22
+magic 3
 end
 arch pstone_4
 x 2
@@ -631,9 +637,9 @@ x 3
 y 17
 end
 arch brazier
-no_pass 0
 x 3
 y 17
+move_block 0
 end
 arch goblin
 x 3
@@ -798,9 +804,9 @@ x 4
 y 15
 end
 arch barrel
-no_pass 0
 x 4
 y 15
+move_block 0
 end
 arch generate_goblin
 x 4
@@ -1572,12 +1578,12 @@ exp 500
 dam 7
 wc 3
 ac 4
+x 8
+y 22
 speed 0.200000
 level 6
 carrying 57825
 randomitems none
-x 8
-y 22
 arch gauntlets
 end
 arch round_shield
@@ -1596,6 +1602,15 @@ arch goblin_head
 name Head of the Goblin Chief
 slaying Head of the Goblin Chief
 material 0
+arch quest_advance_pickup
+name scorn/GoblinKing 30>40
+end
+arch quest_prevent_drop
+name scorn/GoblinKing 50
+end
+end
+arch quest_advance_death
+name scorn/GoblinKing 20>30
 end
 end
 arch pstone_4
@@ -1757,9 +1772,9 @@ x 9
 y 22
 end
 arch brazier
-no_pass 0
 x 9
 y 22
+move_block 0
 end
 arch pstone_4
 x 9
@@ -1804,9 +1819,9 @@ x 10
 y 6
 end
 arch brazier
-no_pass 0
 x 10
 y 6
+move_block 0
 end
 arch pstone_4
 x 10
@@ -2003,9 +2018,9 @@ x 11
 y 7
 end
 arch brazier
-no_pass 0
 x 11
 y 7
+move_block 0
 end
 arch pstone_4
 x 11
@@ -2056,9 +2071,9 @@ x 11
 y 15
 end
 arch barrel
-no_pass 0
 x 11
 y 15
+move_block 0
 end
 arch pstone_4
 x 11
@@ -2089,9 +2104,9 @@ x 11
 y 19
 end
 arch brazier
-no_pass 0
 x 11
 y 19
+move_block 0
 end
 arch goblin
 x 11
@@ -2276,9 +2291,9 @@ x 12
 y 19
 end
 arch generate_kobold
-speed_left -0.120000
 x 12
 y 19
+speed_left -0.120000
 end
 arch pstone_4
 x 12
@@ -2417,9 +2432,9 @@ x 13
 y 13
 end
 arch brazier
-no_pass 0
 x 13
 y 13
+move_block 0
 end
 arch pstone_4
 x 13
@@ -2731,9 +2746,9 @@ x 15
 y 5
 end
 arch barrel
-no_pass 0
 x 15
 y 5
+move_block 0
 end
 arch pstone_4
 x 15
@@ -2748,9 +2763,9 @@ x 15
 y 7
 end
 arch barrel
-no_pass 0
 x 15
 y 7
+move_block 0
 end
 arch pstone_4
 x 15

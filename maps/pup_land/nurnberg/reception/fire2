@@ -1,13 +1,15 @@
 arch map
+name Reception, Fire Level 2
+difficulty 12
 region nurnberg
-name fire2
+width 20
+height 16
+enter_x 14
+enter_y 1
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sun Feb 18 01:03:23 1996
+Created:  1996-02-18
+Modified: 2012-03-04 Rick Tanner
 endmsg
-x 20
-level 2
 end
 arch woodfloor
 end
@@ -145,6 +147,10 @@ arch woodfloor
 x 1
 y 5
 end
+arch dragon
+x 1
+y 5
+end
 arch woodfloor
 x 1
 y 6
@@ -178,6 +184,10 @@ x 1
 y 12
 end
 arch woodfloor
+x 1
+y 13
+end
+arch dragon
 x 1
 y 13
 end
@@ -244,6 +254,10 @@ x 2
 y 9
 end
 arch woodfloor
+x 2
+y 10
+end
+arch dragon
 x 2
 y 10
 end
@@ -493,6 +507,10 @@ arch woodfloor
 x 5
 y 4
 end
+arch swall_1_4_half
+x 5
+y 4
+end
 arch cwall_2_1_1
 x 5
 y 4
@@ -513,7 +531,6 @@ arch igate_closed_2
 x 5
 y 6
 speed 0.500000
-protected 2
 connected 2
 end
 arch woodfloor
@@ -525,6 +542,10 @@ x 5
 y 7
 end
 arch woodfloor
+x 5
+y 8
+end
+arch swall_1_4_half
 x 5
 y 8
 end
@@ -618,7 +639,7 @@ arch dungeon_magic
 x 6
 y 4
 end
-arch swall_1_4
+arch swall_2_1_2
 x 6
 y 4
 end
@@ -630,7 +651,6 @@ arch igate_closed_1
 x 6
 y 5
 speed 0.500000
-protected 2
 connected 2
 end
 arch woodfloor
@@ -641,7 +661,6 @@ arch igate_closed_2
 x 6
 y 6
 speed 0.500000
-protected 2
 connected 2
 end
 arch woodfloor
@@ -652,7 +671,6 @@ arch igate_closed_2
 x 6
 y 7
 speed 0.500000
-protected 2
 connected 2
 end
 arch woodfloor
@@ -663,7 +681,7 @@ arch dungeon_magic
 x 6
 y 8
 end
-arch swall_1_4
+arch swall_2_1_2
 x 6
 y 8
 end
@@ -745,7 +763,6 @@ arch igate_closed_1
 x 7
 y 5
 speed 0.500000
-protected 2
 connected 2
 end
 arch woodfloor
@@ -767,7 +784,6 @@ arch igate_closed_1
 x 7
 y 7
 speed 0.500000
-protected 2
 connected 2
 end
 arch woodfloor
@@ -864,7 +880,6 @@ arch igate_closed_2
 x 8
 y 5
 speed 0.500000
-protected 2
 connected 2
 end
 arch woodfloor
@@ -875,7 +890,6 @@ arch igate_closed_2
 x 8
 y 6
 speed 0.500000
-protected 2
 connected 2
 end
 arch woodfloor
@@ -886,7 +900,6 @@ arch igate_closed_1
 x 8
 y 7
 speed 0.500000
-protected 2
 connected 2
 end
 arch woodfloor
@@ -1167,7 +1180,11 @@ arch woodfloor
 x 11
 y 2
 end
-arch cwall_3_3
+arch cwall_2_1_2
+x 11
+y 2
+end
+arch swall_1_1_half
 x 11
 y 2
 end
@@ -1231,7 +1248,11 @@ arch woodfloor
 x 11
 y 10
 end
-arch cwall_2_2_4
+arch swall_1_2_half
+x 11
+y 10
+end
+arch cwall_1_3
 x 11
 y 10
 end
@@ -1480,7 +1501,6 @@ arch button_small
 name button of fate
 x 14
 y 3
-protected 1
 connected 1
 end
 arch woodfloor
@@ -1759,7 +1779,6 @@ arch igate_open_1
 x 17
 y 5
 speed 0.500000
-protected 1
 connected 1
 end
 arch boulder
@@ -1770,7 +1789,6 @@ arch igate_closed_1
 x 17
 y 6
 speed 0.500000
-protected 1
 value 1
 connected 1
 end
@@ -1778,14 +1796,12 @@ arch igate_open_1
 x 17
 y 7
 speed 0.500000
-protected 1
 connected 1
 end
 arch igate_closed_1
 x 17
 y 8
 speed 0.500000
-protected 1
 value 1
 connected 1
 end
@@ -1793,14 +1809,12 @@ arch igate_open_1
 x 17
 y 9
 speed 0.500000
-protected 1
 connected 1
 end
 arch igate_closed_1
 x 17
 y 10
 speed 0.500000
-protected 1
 value 1
 connected 1
 end
@@ -1808,14 +1822,12 @@ arch igate_open_1
 x 17
 y 11
 speed 0.500000
-protected 1
 connected 1
 end
 arch igate_closed_1
 x 17
 y 12
 speed 0.500000
-protected 1
 value 1
 connected 1
 end
@@ -1823,13 +1835,11 @@ arch igate_open_1
 x 17
 y 13
 speed 0.500000
-protected 1
 connected 1
 end
 arch button_plate
 x 17
 y 14
-protected 3
 connected 3
 end
 arch blocked
@@ -1907,7 +1917,6 @@ hp 13
 sp 4
 x 19
 y 1
-protected 3
 connected 3
 end
 arch key2
@@ -1939,7 +1948,6 @@ arch igate_open_1
 x 19
 y 5
 speed 0.500000
-protected 1
 connected 1
 end
 arch boulder
@@ -1952,20 +1960,17 @@ msg
 endmsg
 x 19
 y 6
-protected 101
 connected 101
 end
 arch button_small
 x 19
 y 6
-protected 101
 connected 101
 end
 arch igate_closed_1
 x 19
 y 6
 speed 0.500000
-protected 1
 value 1
 connected 1
 end
@@ -1975,20 +1980,17 @@ msg
 endmsg
 x 19
 y 7
-protected 102
 connected 102
 end
 arch button_small
 x 19
 y 7
-protected 102
 connected 102
 end
 arch igate_open_1
 x 19
 y 7
 speed 0.500000
-protected 1
 connected 1
 end
 arch magic_mouth
@@ -1997,20 +1999,17 @@ msg
 endmsg
 x 19
 y 8
-protected 103
 connected 103
 end
 arch button_small
 x 19
 y 8
-protected 103
 connected 103
 end
 arch igate_closed_1
 x 19
 y 8
 speed 0.500000
-protected 1
 value 1
 connected 1
 end
@@ -2020,35 +2019,30 @@ msg
 endmsg
 x 19
 y 9
-protected 104
 connected 104
 end
 arch button_small
 x 19
 y 9
-protected 104
 connected 104
 end
 arch igate_open_1
 x 19
 y 9
 speed 0.500000
-protected 1
 connected 1
 end
 arch magic_mouth
 msg
-the gate opened...
+The gate opened...
 endmsg
 x 19
 y 10
-protected 2
 connected 2
 end
 arch button_plate
 x 19
 y 10
-protected 2
 connected 2
 end
 arch blocked
@@ -2070,16 +2064,4 @@ end
 arch blocked
 x 19
 y 15
-end
-arch dragon
-x 1
-y 5
-end
-arch dragon
-x 1
-y 13
-end
-arch dragon
-x 2
-y 10
 end

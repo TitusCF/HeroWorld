@@ -1,12 +1,15 @@
 arch map
-name Fire2
+name Fire Temple, Level 4
+difficulty 60
+region wilderness
+width 40
+height 32
+enter_x 1
+enter_y 14
 msg
-Creator: PeterM
-Email: peterm@soda.csua.berkeley.edu
-Date: Sat Jun  7 09:38:36 1997
+Created:  1997-06-07 PeterM (peterm@soda.csua.berkeley.edu)
+Modified: 2012-03-04 Rick Tanner
 endmsg
-x 40
-y 32
 end
 arch pstone_1
 end
@@ -258,10 +261,7 @@ y 13
 end
 arch magic_mouth
 msg
-You quake with fear as you realize you
-stand in the presence of the earthly
-form of the Fire God.  Would you pit
-your strength against that of a god?
+You quake with fear as you realize you stand in the presence of the earthly form of the Fire God.  Would you pit your strength against that of a god?
 endmsg
 x 1
 y 14
@@ -2295,6 +2295,49 @@ end
 arch pstone_1
 x 16
 y 11
+end
+arch Greater_Demon
+name Avatar of the Fire God
+race Divine
+Con 127
+Wis 30
+Pow 127
+hp 32766
+maxhp 32766
+sp 300
+maxsp 300
+exp 1000000
+ac -50
+x 16
+y 11
+speed 0.500000
+level 127
+attacktype 1049861
+resist_physical 100
+resist_magic 100
+resist_electricity 100
+resist_cold 75
+resist_acid 100
+resist_drain 100
+resist_weaponmagic 100
+resist_ghosthit 100
+resist_slow 30
+resist_turn_undead 100
+resist_cancellation 100
+resist_deplete 100
+resist_death 100
+resist_chaos 100
+resist_counterspell 100
+resist_godpower 100
+resist_holyword 100
+reflect_spell 1
+can_use_range 0
+can_use_bow 0
+can_use_armour 0
+can_use_weapon 0
+can_use_ring 0
+body_torso 0
+body_shoulder 0
 end
 arch pstone_1
 x 16
@@ -3289,7 +3332,7 @@ arch pstone_1
 x 23
 y 12
 end
-arch dun3
+arch dun5
 x 23
 y 12
 end
@@ -3324,7 +3367,7 @@ arch pstone_1
 x 23
 y 16
 end
-arch dun3
+arch dun_1_1
 x 23
 y 16
 end
@@ -5467,61 +5510,61 @@ x 38
 y 14
 end
 arch lightningwall_1
-dam 82
 x 38
 y 14
 speed 0.100000
 speed_left -0.870000
 level 99
 invisible 1
-no_pick 1
-no_pass 0
+move_block 0
 blocksview 0
+arch spell_firebolt
+end
 end
 arch lightningwall_8
-dam 82
 x 38
 y 14
 speed -0.100000
 level 99
 invisible 1
-no_pick 1
-no_pass 0
+move_block 0
 blocksview 0
+arch spell_firebolt
+end
 end
 arch lightningwall_7
-dam 82
 x 38
 y 14
 speed 0.100000
 speed_left -1.060000
 level 100
 invisible 1
-no_pick 1
-no_pass 0
+move_block 0
 blocksview 0
+arch spell_firebolt
+end
 end
 arch lightningwall_6
-dam 82
 x 38
 y 14
 speed -0.100000
 level 99
 invisible 1
-no_pick 1
-no_pass 0
+move_block 0
 blocksview 0
+arch spell_firebolt
+end
 end
 arch lightningwall_5
-dam 82
 x 38
 y 14
 speed -0.100000
 level 99
 invisible 1
-no_pick 1
-no_pass 0
+move_block 0
 blocksview 0
+arch spell_firebolt
+end
 end
 arch altar
 name High Altar of the Fire God
@@ -5532,15 +5575,16 @@ arch rod_heavy
 name Scepter of the Fire God
 hp 600
 maxhp 600
-sp 1
 x 38
 y 14
 speed -1.000000
 level 99
-type 35
 resist_fire 30
 material 256
 value 350000
+randomitems none
+arch spell_small_fireball
+end
 end
 arch girdle_str
 name Girdle of the Fire God
@@ -5901,51 +5945,4 @@ end
 arch dun7
 x 39
 y 31
-end
-arch Greater_Demon
-name Avatar of the Fire God
-race Divine
-Con 127
-Wis 30
-Pow 127
-hp 32766
-maxhp 32766
-sp 300
-maxsp 300
-exp 1000000
-ac -50
-x 16
-y 11
-speed 0.500000
-level 127
-attacktype 1049861
-resist_physical 100
-resist_magic 100
-resist_electricity 100
-resist_cold 75
-resist_acid 100
-resist_drain 100
-resist_weaponmagic 100
-resist_ghosthit 100
-resist_slow 30
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_cancellation 100
-resist_deplete 100
-resist_death 100
-resist_chaos 100
-resist_counterspell 100
-resist_godpower 100
-resist_holyword 100
-resist_blind 100
-reflect_spell 1
-can_use_wand 0
-can_use_bow 0
-can_use_armour 0
-can_use_weapon 0
-can_use_ring 0
-can_use_rod 0
-body_shoulder 0
-body_torso 0
 end

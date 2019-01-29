@@ -1,14 +1,16 @@
 arch map
-region portjoesph
-name goblin dungeon
+name Goblin Island Dungeon, Level 3
+difficulty 11
+region portjoseph
+darkness 5
+width 24
+height 24
+enter_x 13
+enter_y 12
 msg
-Creator: llangley
-Email: langley@fermat.dartmouth.edu
-Date: Sat Sep  3 16:45:01 1994
+Created:  1994-09-03 langley (langley@fermat.dartmouth.edu)
+Modified: 2012-02-20 Rick Tanner
 endmsg
-x 24
-y 24
-invisible 5
 end
 arch dungeon_floor
 end
@@ -1210,7 +1212,7 @@ y 1
 end
 arch magic_ear
 msg
-@match arglebargle|Arglebargle
+@match arglebargle
 You hear a clicking sound.
 endmsg
 x 8
@@ -1281,7 +1283,7 @@ y 10
 end
 arch magic_ear
 msg
-@match twining|Twining
+@match twining
 You hear a groaning sound.
 endmsg
 x 8
@@ -1993,14 +1995,7 @@ end
 arch altar
 msg
 A voice says:
-
-The first word shall be spoken in
-the north west.  The second word
-shall be spoke in the north east.
-Cross then to the sourth west where
-you shall speak the third word of
-power.  Then seek the final place
-to speak the final word.  
+The first word shall be spoken in the north west.  The second word shall be spoke in the north east. Cross then to the sourth west where you shall speak the third word of power.  Then seek the final place to speak the final word.
 endmsg
 food 1
 x 13
@@ -2522,6 +2517,8 @@ end
 arch lightningwall_2
 x 16
 y 20
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 16
@@ -2559,8 +2556,8 @@ y 1
 end
 arch magic_ear
 msg
-@match Avarice|avarice
-You hear a grinding noise
+@match avarice
+You hear a grinding noise.
 endmsg
 x 17
 y 1
@@ -2630,8 +2627,8 @@ y 10
 end
 arch magic_ear
 msg
-@match ogsnog|Ogsnog
-Clackity clakity crunch. 
+@match ogsnog
+Clackity clakity crunch.
 endmsg
 x 17
 y 10
@@ -2681,8 +2678,7 @@ arch locked_door1
 name mysterious door
 slaying lmagic
 msg
-This door requires a special key
-to open.
+This door requires a special key to open.
 endmsg
 x 17
 y 16
@@ -3192,6 +3188,11 @@ end
 arch dungeon_floor
 x 20
 y 13
+end
+arch mine_secret_2_1
+x 20
+y 13
+move_block 0
 end
 arch dungeon_floor
 x 20
@@ -3780,15 +3781,4 @@ end
 arch mine12
 x 23
 y 23
-end
-arch mine_secret_2_1
-x 20
-y 13
-no_pass 0
-end
-More
-arch mine_secret_2_2
-x 20
-y 14
-no_pass 0
 end

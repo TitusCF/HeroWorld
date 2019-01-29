@@ -1,15 +1,17 @@
 arch map
+name Raffle 1, Level 3
+swap_time 5
+reset_timeout 3600
+difficulty 14
 region pupland
-name raffle_u3
+width 25
+height 19
+enter_x 2
+enter_y 16
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Thu Feb 27 16:58:21 1997
+Created:  1997-02-27
+Modified: 2008-10-25 Rick Tanner
 endmsg
-x 25
-y 19
-value 5
-weight 3600
 end
 arch blocked
 end
@@ -224,7 +226,7 @@ arch cobblestones2
 x 1
 y 17
 end
-arch dwall3_3
+arch dwall_3_3
 x 1
 y 17
 end
@@ -1782,6 +1784,16 @@ arch cobblestones2
 x 14
 y 8
 end
+arch giant
+name injured giant
+hp 10
+maxhp 10
+dam 1
+wc 10
+ac 10
+x 14
+y 8
+end
 arch cobblestones2
 x 14
 y 9
@@ -3040,14 +3052,4 @@ end
 arch blocked
 x 24
 y 18
-end
-arch giant
-name injured giant
-hp 10
-maxhp 10
-dam 1
-wc 10
-ac 10
-x 14
-y 8
 end

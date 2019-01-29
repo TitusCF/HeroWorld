@@ -1,12 +1,15 @@
 arch map
-name Demon1
+name Tower of Demonology, Summoning Chamber
+difficulty 25
+region wilderness
+width 15
+height 25
+enter_x 7
+enter_y 7
 msg
-Creator: peterm
-Email: peterm@soda.berkeley.edu
-Date: Mon May 30 13:08:53 1994
+Created:  1994-05-30 peterm (peterm@soda.berkeley.edu)
+Modified: 2012-03-11 Rick Tanner
 endmsg
-x 15
-y 25
 end
 arch woodfloor
 end
@@ -134,6 +137,10 @@ arch dungeon_magic
 x 1
 y 1
 end
+arch pentagram_111
+x 1
+y 1
+end
 arch woodfloor
 x 1
 y 2
@@ -171,6 +178,16 @@ arch woodfloor
 x 1
 y 6
 end
+arch pentagram_111
+hp 9
+sp 20
+x 1
+y 6
+resist_physical 30
+invisible 1
+connected 1
+activate_on_push 0
+end
 arch woodfloor
 x 1
 y 7
@@ -204,6 +221,10 @@ arch dungeon_magic
 x 1
 y 11
 end
+arch pentagram_111
+x 1
+y 11
+end
 arch woodfloor
 x 1
 y 12
@@ -232,9 +253,26 @@ arch dwall_2_1_2
 x 1
 y 17
 end
+arch pentagram_111
+hp 2
+sp 2
+x 1
+y 18
+resist_magic 30
+connected 2
+end
 arch dwall_2_1_2
 x 1
 y 21
+end
+arch pentagram_111
+hp 2
+sp 12
+x 1
+y 22
+resist_physical 30
+resist_fire 30
+connected 5
 end
 arch woodfloor
 x 2
@@ -355,15 +393,12 @@ end
 arch lich
 name Dead Master of Earth
 msg
-@match Word
+@match word
 HAHAHAHAHAHAHAHAHAHAHA!!!!!!!
 @match Ycronrcldeth
-AAAAAAARRRRRGGGGGGHHHHH.......
-I'll tell you what you want to
-know, do you want to know my part
-of the Word?
+AAAAAAARRRRRGGGGGGHHHHH....... I'll tell you what you want to know, do you want to know my part of the Word?
 @match yes
-My part of the word is 'rumleden' 
+My part of the word is 'rumleden.'
 endmsg
 x 2
 y 19
@@ -375,16 +410,10 @@ end
 arch lich
 name Dead Master of Air
 msg
-@match Word
-You think I'm going to tell you the
-word?  Well, why should I?  You can't
-do anything to me, I'm already dead.
+@match word
+You think I'm going to tell you the word?  Well, why should I?  You can't do anything to me, I'm already dead.
 @match Thessalrudin
-owwwwwwwwwwwwwwwwwww.........
-I only know part of the word.
-You're going to have to get the rest
-of it out of the other three Masters.
-My part is 'Hleafna'. 
+owwwwwwwwwwwwwwwwwww......... I only know part of the word.  You're going to have to get the rest of it out of the other three Masters.  My part is 'Hleafnai.'
 endmsg
 x 2
 y 23
@@ -672,7 +701,7 @@ arch dwall_2_1_2
 x 4
 y 14
 end
-arch dwall3_3
+arch dwall_3_3
 x 4
 y 17
 end
@@ -801,9 +830,26 @@ arch dwall_2_1_2
 x 5
 y 17
 end
+arch pentagram_111
+hp 12
+sp 2
+x 5
+y 18
+resist_physical 30
+resist_magic 30
+connected 3
+end
 arch dwall_2_1_2
 x 5
 y 21
+end
+arch pentagram_111
+hp 12
+sp 12
+x 5
+y 22
+resist_fire 30
+connected 4
 end
 arch woodfloor
 x 6
@@ -814,6 +860,16 @@ end
 arch woodfloor
 x 6
 y 1
+end
+arch pentagram_111
+hp 11
+sp 18
+x 6
+y 1
+resist_physical 30
+invisible 1
+connected 1
+activate_on_push 0
 end
 arch woodfloor
 x 6
@@ -838,8 +894,7 @@ speed 0.500000
 end
 arch magic_mouth
 msg
-You notice that throwing this lever
-will open 4 gates.
+You notice that throwing this lever will open 4 gates.
 endmsg
 x 6
 y 6
@@ -856,9 +911,7 @@ connected 1
 end
 arch magic_mouth
 msg
-You get the feeling that this
-teleporter requires you to say
-something in order to activate. 
+You get the feeling that this teleporter requires you to say something in order to activate.
 endmsg
 x 6
 y 7
@@ -883,8 +936,7 @@ arch locked_door1
 name stone
 slaying Earth_up
 msg
-An invisible stone wall forces you
-back.
+An invisible stone wall forces you back.
 endmsg
 x 6
 y 7
@@ -911,8 +963,7 @@ end
 arch locked_door1
 slaying Fire_up
 msg
-A hot force prevents you from
-stepping here.
+A hot force prevents you from stepping here.
 endmsg
 x 6
 y 7
@@ -939,6 +990,16 @@ arch woodfloor
 x 6
 y 11
 end
+arch pentagram_111
+hp 11
+sp 22
+x 6
+y 11
+resist_physical 30
+invisible 1
+connected 1
+activate_on_push 0
+end
 arch woodfloor
 x 6
 y 12
@@ -958,35 +1019,14 @@ end
 arch charwoman
 name even more gossipy cleaning woman
 msg
-@match hello|Hi|hi|boo
-You're not planning on opening those
-doors are you????
-If you are, let me run downstairs.
-Opening the gates summons the
-Guardians!
-@match Guardians|Guardian|guardians
-yes, two visible, and two invisibile.
-They guard the Portals in the corners
-of the rooms.  The Dead can be
-summoned by means of those portals. 
-The Masters used the portals to
-question those who have passed on.
-@match word|Word|password|teleport
-The teleporters lead to the levels
-above.  Each of the Masters had a 
-syllable of the Word.  They had to
-speak the word in succession.  
-Actually, they whispered it:  they 
-didn't trust each other enough to 
-share the Word.  They spoke the
-Word in the order of their power,
-Air, Earth, Water, Fire.  But
-the Word died with them.
-@match Portal
-Yes, you can summon the dead 
-with those portals if you know
-their names.  Getting them to 
-cooperate is quite another matter.
+@match hello|hi|boo
+You're not planning on opening those doors are you???? If you are, let me run downstairs.  Opening the gates summons the Guardians!
+@match guardian|guardians
+Yes, two visible, and two invisible.  They guard the Portals in the corners of the rooms.  The Dead can be summoned by means of those portals.  The Masters used the portals to question those who have passed on.
+@match word|password|teleport
+The teleporters lead to the levels above.  Each of the Masters had a syllable of the Word.  They had to speak the word in succession.  Actually, they whispered it: They didn't trust each other enough to share the Word.  They spoke the Word in the order of their power, Air, Earth, Water, Fire.  But the Word died with them.
+@match portal
+Yes, you can summon the dead with those portals if you know their names.  Getting them to cooperate is quite another matter.
 endmsg
 x 6
 y 15
@@ -998,12 +1038,10 @@ end
 arch lich
 name Dead Master of Water
 msg
-@match word|Word
+@match word
 I will not tell you.
 @match Brenlorien
-huunnnnnhhh....
-Okay, maybe I WILL tell you.
-MY part of the word is 'karanth'.
+Huunnnnnhhh.... Okay, maybe I WILL tell you.  MY part of the word is 'karanth.'
 endmsg
 x 6
 y 19
@@ -1015,7 +1053,7 @@ end
 arch lich
 name Dead Master of Fire
 msg
-@match Word|word
+@match word
 I will not speak it to you.
 @match Brunvelden
 ....'rachakamar'........
@@ -1058,9 +1096,7 @@ connected 1
 end
 arch magic_mouth
 msg
-You get the feeling that this
-teleporter requires you to say
-something in order to activate
+You get the feeling that this teleporter requires you to say something in order to activate.
 endmsg
 x 7
 y 6
@@ -1085,8 +1121,7 @@ arch locked_door1
 name stone
 slaying Earth_up
 msg
-An invisible stone wall forces you
-back.
+An invisible stone wall forces you back.
 endmsg
 x 7
 y 6
@@ -1113,8 +1148,7 @@ end
 arch locked_door1
 slaying Fire_up
 msg
-A hot force prevents you from
-stepping here.
+A hot force prevents you from stepping here.
 endmsg
 x 7
 y 6
@@ -1145,9 +1179,7 @@ y 7
 end
 arch magic_mouth
 msg
-You get the feeling that this
-teleporter requires you to say
-something. 
+You get the feeling that this teleporter requires you to say something.
 endmsg
 x 7
 y 8
@@ -1172,8 +1204,7 @@ arch locked_door1
 name stone
 slaying Earth_up
 msg
-An invisible stone wall forces you
-back.
+An invisible stone wall forces you back.
 endmsg
 x 7
 y 8
@@ -1200,8 +1231,7 @@ end
 arch locked_door1
 slaying Fire_up
 msg
-A hot force prevents you from
-stepping here.
+A hot force prevents you from stepping here.
 endmsg
 x 7
 y 8
@@ -1288,44 +1318,21 @@ end
 arch charwoman
 name even more gossipy cleaning woman
 msg
-@match hello|Hi|hi|boo
-You're not planning on opening those
-doors are you????
-If you are, let me run downstairs.
-Opening the gates summons the
-Guardians!
-@match Guardians|Guardian|guardians
-yes, two visible, and two invisibile.
-They guard the Portals in the corners
-of the rooms.  The Dead can be
-summoned by means of those portals. 
-The Masters used the portals to
-question those who have passed on.
-@match word|Word|password|teleport
-The teleporters lead to the levels
-above.  Each of the Masters had a 
-syllable of the Word.  They had to
-speak the word in succession.  
-Actually, they whispered it:  they 
-didn't trust each other enough to 
-share the Word.  They spoke the
-Word in the order of their power,
-Air, Earth, Water, Fire.  But
-the Word died with them.
-@match Portal
-Yes, you can summon the dead 
-with those portals if you know
-their names.  Getting them to 
-cooperate is quite another matter.
+@match hello|hi|boo
+You're not planning on opening those doors are you???? If you are, let me run downstairs.  Opening the gates summons the Guardians!
+@match guardian|guardians
+Yes, two visible, and two invisibile.  They guard the Portals in the corners of the rooms.  The Dead can be summoned by means of those portals.  The Masters used the portals to question those who have passed on.
+@match word|password|teleport
+The teleporters lead to the levels above.  Each of the Masters had a syllable of the Word.  They had to speak the word in succession.  Actually, they whispered it: They didn't trust each other enough to share the Word.  They spoke the Word in the order of their power, Air, Earth, Water, Fire. But the Word died with them.
+@match portal
+Yes, you can summon the dead with those portals if you know their names.  Getting them to cooperate is quite another matter.
 endmsg
 x 8
 y 6
 end
 arch magic_mouth
 msg
-You get the feeling that this
-teleporter requires you to say
-something in order to activate
+You get the feeling that this teleporter requires you to say something in order to activate.
 endmsg
 x 8
 y 7
@@ -1350,8 +1357,7 @@ arch locked_door1
 name stone
 slaying Earth_up
 msg
-An invisible stone wall forces you
-back.
+An invisible stone wall forces you back.
 endmsg
 x 8
 y 7
@@ -1378,8 +1384,7 @@ end
 arch locked_door1
 slaying Fire_up
 msg
-A hot force prevents you from
-stepping here.
+A hot force prevents you from stepping here.
 endmsg
 x 8
 y 7
@@ -1551,8 +1556,7 @@ arch locked_door1
 name stone
 slaying Earth_up
 msg
-An invisible stone wall forces you
-back.
+An invisible stone wall forces you back.
 endmsg
 x 9
 y 15
@@ -1579,8 +1583,7 @@ end
 arch locked_door1
 slaying Fire_up
 msg
-A hot force prevents you from
-stepping here.
+A hot force prevents you from stepping here.
 endmsg
 x 9
 y 15
@@ -1598,6 +1601,7 @@ y 20
 speed 0.000000
 resist_physical 30
 connected 1
+activate_on_release 0
 end
 arch lich
 x 9
@@ -1819,6 +1823,10 @@ arch dungeon_magic
 x 11
 y 1
 end
+arch pentagram_111
+x 11
+y 1
+end
 arch woodfloor
 x 11
 y 2
@@ -1856,6 +1864,16 @@ arch woodfloor
 x 11
 y 6
 end
+arch pentagram_111
+hp 13
+sp 20
+x 11
+y 6
+resist_physical 30
+invisible 1
+connected 1
+activate_on_push 0
+end
 arch woodfloor
 x 11
 y 7
@@ -1886,6 +1904,10 @@ x 11
 y 11
 end
 arch dungeon_magic
+x 11
+y 11
+end
+arch pentagram_111
 x 11
 y 11
 end
@@ -1925,6 +1947,7 @@ y 18
 speed 0.000000
 resist_physical 30
 connected 1
+activate_on_release 0
 end
 arch spectre
 x 11
@@ -1957,6 +1980,7 @@ y 22
 speed 0.000000
 resist_physical 30
 connected 1
+activate_on_release 0
 end
 arch spectre
 x 11
@@ -2237,6 +2261,7 @@ y 20
 speed 0.000000
 resist_physical 30
 connected 1
+activate_on_release 0
 end
 arch lich
 x 13
@@ -2386,90 +2411,4 @@ end
 arch dwall_2_2_4
 x 14
 y 21
-end
-arch pentagram_111
-x 1
-y 1
-end
-arch pentagram_111
-hp 9
-sp 20
-x 1
-y 6
-resist_physical 30
-invisible 1
-connected 1
-end
-arch pentagram_111
-x 1
-y 11
-end
-arch pentagram_111
-hp 2
-sp 2
-x 1
-y 18
-resist_magic 30
-connected 2
-end
-arch pentagram_111
-hp 2
-sp 12
-x 1
-y 22
-resist_physical 30
-resist_fire 30
-connected 5
-end
-arch pentagram_111
-hp 12
-sp 2
-x 5
-y 18
-resist_physical 30
-resist_magic 30
-connected 3
-end
-arch pentagram_111
-hp 12
-sp 12
-x 5
-y 22
-resist_fire 30
-connected 4
-end
-arch pentagram_111
-hp 11
-sp 18
-x 6
-y 1
-resist_physical 30
-invisible 1
-connected 1
-end
-arch pentagram_111
-hp 11
-sp 22
-x 6
-y 11
-resist_physical 30
-invisible 1
-connected 1
-end
-arch pentagram_111
-x 11
-y 1
-end
-arch pentagram_111
-hp 13
-sp 20
-x 11
-y 6
-resist_physical 30
-invisible 1
-connected 1
-end
-arch pentagram_111
-x 11
-y 11
 end

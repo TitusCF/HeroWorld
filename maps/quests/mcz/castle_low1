@@ -1,11 +1,15 @@
 arch map
-name Dungeon or Ra-Gar
+name Castle of Ra-Gar, Dungeon
+difficulty 25
+region wilderness
+width 16
+height 30
+enter_x 1
+enter_y 1
 msg
-Creator: 
-Email: 
-Date: Tue Oct 19 14:08:48 1993
+Created:  1993-10-19
+Modified: 2012-03-11 Rick Tanner
 endmsg
-y 30
 end
 arch small_stones
 end
@@ -369,6 +373,10 @@ arch small_stones
 x 1
 y 25
 end
+arch dragon
+x 1
+y 25
+end
 arch small_stones
 x 1
 y 26
@@ -521,9 +529,7 @@ y 20
 end
 arch sign
 msg
-WARNING!!!!!
-Do not pull the lever if you
-value your life!!
+WARNING!!!!!  Do not pull the lever if you value your life!!
 endmsg
 x 2
 y 20
@@ -547,6 +553,10 @@ speed 0.500000
 connected 100
 end
 arch small_stones
+x 2
+y 24
+end
+arch dragon
 x 2
 y 24
 end
@@ -1119,6 +1129,10 @@ arch small_stones
 x 5
 y 27
 end
+arch dragon
+x 5
+y 27
+end
 arch small_stones
 x 5
 y 28
@@ -1641,6 +1655,10 @@ arch small_stones
 x 8
 y 25
 end
+arch dragon
+x 8
+y 25
+end
 arch small_stones
 x 8
 y 26
@@ -1828,6 +1846,10 @@ x 9
 y 25
 end
 arch small_stones
+x 9
+y 26
+end
+arch big_dragon
 x 9
 y 26
 end
@@ -2376,6 +2398,10 @@ end
 arch skeleton
 x 12
 y 18
+end
+arch small_stones
+x 12
+y 19
 end
 arch rough_wall_0
 x 12
@@ -3086,24 +3112,4 @@ end
 arch rough_wall_2_2_4
 x 15
 y 29
-end
-arch dragon
-x 1
-y 25
-end
-arch dragon
-x 2
-y 24
-end
-arch dragon
-x 5
-y 27
-end
-arch dragon
-x 8
-y 25
-end
-arch big_dragon
-x 9
-y 26
 end

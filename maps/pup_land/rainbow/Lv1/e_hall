@@ -1,12 +1,15 @@
 arch map
+name Entrance Hall, Level 1
+difficulty 9
 region pupland
-name e_hall
+width 17
+height 16
+enter_x 8
+enter_y 7
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Mon Jun 10 15:22:19 1996
+Created:  1996-06-10
+Modified: 2011-12-18 Rick Tanner
 endmsg
-x 17
 end
 arch blocked
 end
@@ -649,8 +652,7 @@ y 7
 end
 arch sign
 msg
-We constructed this temple to admire 
-the ancient heroes. 
+We constructed this temple to admire the ancient heroes.
 endmsg
 x 7
 y 7
@@ -1073,7 +1075,6 @@ arch pedestal
 name 11
 x 12
 y 3
-protected 11
 connected 11
 end
 arch grassdark
@@ -1091,7 +1092,6 @@ arch pedestal
 name 11
 x 12
 y 4
-protected 11
 connected 11
 end
 arch grassdark
@@ -1182,7 +1182,6 @@ arch pedestal
 name 11
 x 13
 y 2
-protected 11
 connected 11
 end
 arch grassdark
@@ -1200,7 +1199,6 @@ arch pedestal
 name 11
 x 13
 y 3
-protected 11
 connected 11
 end
 arch grassdark
@@ -1218,7 +1216,6 @@ arch pedestal
 name 11
 x 13
 y 4
-protected 11
 connected 11
 end
 arch grassdark
@@ -1340,7 +1337,7 @@ name wall
 face dun_5.111
 x 14
 y 2
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 14
@@ -1549,14 +1546,12 @@ You feel a draft...
 endmsg
 x 16
 y 12
-protected 10
 connected 10
 end
 arch button_small
 name 10
 x 16
 y 12
-protected 10
 weight 1000
 connected 10
 end
@@ -1565,7 +1560,6 @@ name 11
 other_arch boulder
 x 16
 y 12
-protected 11
 connected 11
 end
 arch blocked

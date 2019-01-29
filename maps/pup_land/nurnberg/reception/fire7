@@ -1,10 +1,14 @@
 arch map
+name Reception, Fire Level 7
+difficulty 25
 region nurnberg
-name fire7
+width 16
+height 16
+enter_x 7
+enter_y 6
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Mon Feb 19 01:38:55 1996
+Created:  1996-02-19
+Modified: 2011-12-15 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -111,6 +115,10 @@ arch woodfloor
 x 1
 y 1
 end
+arch big_dragon
+x 1
+y 1
+end
 arch woodfloor
 x 1
 y 2
@@ -127,6 +135,10 @@ arch woodfloor
 x 1
 y 5
 end
+arch big_dragon
+x 1
+y 5
+end
 arch woodfloor
 x 1
 y 6
@@ -140,6 +152,10 @@ x 1
 y 8
 end
 arch woodfloor
+x 1
+y 9
+end
+arch big_dragon
 x 1
 y 9
 end
@@ -325,8 +341,7 @@ end
 arch scroll
 name instructions
 msg
-Bring this gem to the Guild of Law
-and drop it on the desk there.
+Bring this gem to the Guild of Law and drop it on the desk there.
 endmsg
 x 3
 y 14
@@ -366,12 +381,13 @@ x 4
 y 5
 end
 arch firewall_4
-dam 58
 x 4
 y 5
 speed 0.250000
 speed_left -1.160000
 level 30
+arch spell_dragonbreath
+end
 end
 arch woodfloor
 x 4
@@ -382,12 +398,13 @@ x 4
 y 7
 end
 arch firewall_2
-dam 58
 x 4
 y 7
 speed 0.250000
 speed_left -0.410000
 level 30
+arch spell_dragonbreath
+end
 end
 arch woodfloor
 x 4
@@ -398,6 +415,10 @@ x 4
 y 9
 end
 arch woodfloor
+x 4
+y 10
+end
+arch big_dragon
 x 4
 y 10
 end
@@ -486,7 +507,6 @@ arch grate_closed_2
 x 5
 y 6
 speed 0.500000
-protected 10
 connected 10
 end
 arch woodfloor
@@ -630,7 +650,10 @@ end
 arch woodfloor
 x 7
 end
-arch cwall_3_3
+arch dwall_2_1_2
+x 7
+end
+arch swall_1_1_half
 x 7
 end
 arch woodfloor
@@ -657,7 +680,6 @@ arch grate_closed_2
 x 7
 y 2
 speed 0.500000
-protected 1
 connected 1
 end
 arch woodfloor
@@ -784,7 +806,6 @@ end
 arch button_lever
 x 8
 y 6
-protected 10
 connected 10
 end
 arch woodfloor
@@ -856,7 +877,6 @@ end
 arch button_lever
 x 9
 y 2
-protected 1
 connected 1
 end
 arch woodfloor
@@ -900,6 +920,10 @@ x 9
 y 9
 end
 arch woodfloor
+x 9
+y 10
+end
+arch big_dragon
 x 9
 y 10
 end
@@ -1087,8 +1111,7 @@ arch locked_door2
 name bad fate
 slaying 7749777273
 msg
-You need a better fate! Go to floor 2
-and trigger that button again.
+You need a better fate! Go to floor 2 and trigger that button again.
 endmsg
 face trapdoor_3.111
 x 11
@@ -1097,7 +1120,6 @@ end
 arch lava_s
 x 11
 y 3
-material 256
 end
 arch woodfloor
 x 11
@@ -1116,6 +1138,10 @@ x 11
 y 5
 end
 arch woodfloor
+x 11
+y 6
+end
+arch big_dragon
 x 11
 y 6
 end
@@ -1462,7 +1488,11 @@ arch woodfloor
 x 15
 y 4
 end
-arch cwall_3_4
+arch dwall_2_1_1
+x 15
+y 4
+end
+arch swall_1_3_half
 x 15
 y 4
 end
@@ -1553,28 +1583,4 @@ end
 arch cwall_2_2_4
 x 15
 y 15
-end
-arch big_dragon
-x 1
-y 1
-end
-arch big_dragon
-x 1
-y 5
-end
-arch big_dragon
-x 1
-y 9
-end
-arch big_dragon
-x 4
-y 10
-end
-arch big_dragon
-x 9
-y 10
-end
-arch big_dragon
-x 11
-y 6
 end

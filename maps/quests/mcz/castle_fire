@@ -1,14 +1,15 @@
 arch map
-name Castle Ra-Gar, level of Fire
-msg
-Creator:
-Email:
-Date: Tue Oct 19 16:34:33 1993
-endmsg
+name Castle of Ra-Gar, Level of Fire
+difficulty 12
+region wilderness
 width 9
 height 16
 enter_x 7
 enter_y 14
+msg
+Created:  1993-10-19
+Modified: 2008-12-21 Rick Tanner
+endmsg
 end
 arch pstone_3
 face rstone_3.111
@@ -137,12 +138,12 @@ x 1
 y 1
 end
 arch devil
-carrying 100
 x 1
 y 1
+carrying 100
 arch key2
 name Fire Key
-slaying set_individual_value fire
+slaying ra-gar-fire
 end
 end
 arch pstone_3

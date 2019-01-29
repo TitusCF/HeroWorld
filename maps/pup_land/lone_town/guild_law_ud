@@ -1,12 +1,15 @@
 arch map
+name Guild of Law
+difficulty 1
 region lonetown
+width 7
+height 6
+enter_x 5
+enter_y 1
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Wed Dec 18 17:59:50 1996
+Created:  1996-02-18
+Modified: 2012-02-29 Rick Tanner
 endmsg
-x 7
-y 6
 end
 arch blocked
 end
@@ -67,17 +70,9 @@ arch guildmaster
 name Guildmaster, James
 msg
 @match Siegfried
-Siegfried is famous in legend.
-He killed evil masters, and saved the
-world.
-He is our Hero!!!
+Siegfried is famous in legend.  He killed evil masters, and saved the world.  He is our Hero!!!
 @match *
-Conglaturation!.
-We allow you to join us.
-
-Common Password of Regular Army
-is "Siegfried".
-Don't you forget.
+Congratulations! We allow you to join us.  Common Password of Regular Army is "Siegfried."  Don't you forget.
 endmsg
 x 2
 y 3
@@ -101,6 +96,10 @@ arch locked_door2
 slaying guild_law
 x 3
 y 1
+end
+arch dungeon_floor
+x 3
+y 2
 end
 arch mine10
 x 3

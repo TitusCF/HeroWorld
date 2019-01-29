@@ -1,13 +1,15 @@
 arch map
+name House of Cordish
+difficulty 1
 region lonetown
-name house_otemo
+width 16
+height 16
+enter_x 7
+enter_y 14
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sun Jan 28 17:14:17 1996
+Created:  1996-01-28
+Modified: 2012-02-29 Rick Tanner
 endmsg
-hp 7
-sp 15
 end
 arch invis_exit
 slaying town
@@ -126,7 +128,10 @@ end
 arch woodfloor
 y 12
 end
-arch wwall_3_2
+arch swall_1_4_half
+y 12
+end
+arch wwall_2_1_1
 y 12
 end
 arch woodfloor
@@ -245,6 +250,8 @@ name wall
 face wwall_A.111
 x 1
 y 14
+arch spell_small_fireball
+end
 end
 arch grass
 x 1
@@ -355,6 +362,8 @@ name wall
 face wwall_A.111
 x 2
 y 14
+arch spell_small_fireball
+end
 end
 arch grass
 x 2
@@ -440,7 +449,11 @@ arch woodfloor
 x 3
 y 12
 end
-arch wwall_3_3
+arch wwall_2_2_2
+x 3
+y 12
+end
+arch swall_1_3_half
 x 3
 y 12
 end
@@ -552,7 +565,7 @@ arch woodfloor
 x 4
 y 12
 end
-arch wwall_2_1_2
+arch wwall_1_3
 x 4
 y 12
 end
@@ -645,8 +658,8 @@ y 12
 level 0
 material 0
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 pass_thru 0
 end
 arch cobblestones2
@@ -706,8 +719,8 @@ y 3
 level 0
 material 0
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 pass_thru 0
 end
 arch woodfloor
@@ -778,7 +791,7 @@ arch woodfloor
 x 6
 y 12
 end
-arch wwall_2_2_4
+arch wwall_1_2
 x 6
 y 12
 end
@@ -877,7 +890,7 @@ arch woodfloor
 x 7
 y 15
 end
-arch oakdoor
+arch oakdoor_2
 slaying town
 hp 17
 sp 14
@@ -919,8 +932,8 @@ y 3
 level 0
 material 0
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 pass_thru 0
 end
 arch woodfloor
@@ -968,8 +981,8 @@ y 8
 level 0
 material 0
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 pass_thru 0
 end
 arch woodfloor
@@ -1208,8 +1221,8 @@ y 13
 level 0
 material 0
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 pass_thru 0
 end
 arch woodfloor
@@ -1294,33 +1307,19 @@ arch woman
 name Lady Cordish
 msg
 @match son
-Eureca's son is called Bernie. He
-visited me sometimes. He loved my
-cookies and he was always hungry.
+Eureca's son is called Bernie.  He visited me sometimes.  He loved my cookies and he was always hungry.
 @match wife
-I don't know Eureca's wife. Visit his
-former steward, Pupuly. He should know.
+I don't know Eureca's wife.  Visit his former steward, Pupuly.  He should know.
 @match Pupuly
-He lives in the tower northwest in
-this town.
-@match Eureca|eureca
-My husband served Lord Eureca. I never
-met him in person, but I know his son.
+He lives in the tower northwest in this town.
+@match eureca
+My husband served Lord Eureca.  I never met him in person, but I know his son.
 @match siegfried
-Siegfried is a hero in the legends.
-My husband *adores* the siegfried-saga.
-Cordish always wanted to be like the
-ancient hero, but in fact he was about
-the exact opposite... 
-@match Cordish|cordish
-... *sigh*... He is missing.
-Both him and Eureca disappeared.
-I hope Cordish is still alive...
-He is a bit immature, you know.
-How could he survive without me
-protecting him?
+Siegfried is a hero in the legends.  My husband *adores* the siegfried-saga.  Cordish always wanted to be like the ancient hero, but in fact he was about the exact opposite...
+@match cordish
+... *sigh*... He is missing.  Both him and Eureca disappeared.  I hope Cordish is still alive... He is a bit immature, you know.  How could he survive without me protecting him?
 @match *
-Hello... 
+Hello...
 endmsg
 hp 500
 maxhp 500
@@ -1330,11 +1329,11 @@ level 10
 friendly 1
 unaggressive 0
 can_cast_spell 0
+can_use_range 0
 can_use_bow 0
 can_use_armour 0
 can_use_ring 0
 can_use_skill 0
-can_use_rod 0
 end
 arch woodfloor
 x 11
@@ -1451,8 +1450,8 @@ y 10
 level 0
 material 0
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 pass_thru 0
 end
 arch woodfloor

@@ -1,14 +1,16 @@
 arch map
+name Path
+difficulty 35
 region ancientpupland
-name path
+darkness 3
+width 35
+height 30
+enter_x 3
+enter_y 3
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sun Dec  8 18:15:10 1996
+Created:  1996-12-08
+Modified: 2012-02-24 Rick Tanner
 endmsg
-x 35
-y 30
-invisible 3
 end
 arch blocked
 end
@@ -838,7 +840,7 @@ arch mountain
 name rocks
 x 5
 y 13
-no_pass 1
+move_block all
 end
 arch mountain
 x 5
@@ -1045,7 +1047,7 @@ arch mountain
 name rocks
 x 6
 y 13
-no_pass 1
+move_block all
 end
 arch mountain_cave
 name hole
@@ -1247,13 +1249,13 @@ arch mountain
 name rocks
 x 7
 y 12
-no_pass 1
+move_block all
 end
 arch mountain
 name rocks
 x 7
 y 13
-no_pass 1
+move_block all
 end
 arch mountain
 x 7
@@ -4713,9 +4715,7 @@ y 12
 end
 arch magic_mouth
 msg
-You can feel the presence of powerful
-earth-spirits. It might be dangerous
-to jump down this hole... 
+You can feel the presence of powerful earth-spirits.  It might be dangerous to jump down this hole...
 endmsg
 x 22
 y 13
@@ -4823,7 +4823,6 @@ resist_godpower 60
 carrying 100000
 weight 1000000
 will_apply 1
-can_apply 1
 see_invisible 1
 can_cast_spell 1
 can_use_ring 1
@@ -4835,7 +4834,6 @@ end
 arch t_boulder
 nrof 10
 weight 10000
-is_thrown 1
 end
 end
 arch blocked
@@ -4877,7 +4875,6 @@ resist_godpower 60
 carrying 100000
 weight 1000000
 will_apply 1
-can_apply 1
 see_invisible 1
 can_cast_spell 1
 can_use_ring 1
@@ -4887,7 +4884,6 @@ can_see_in_dark 1
 arch t_boulder
 nrof 10
 weight 10000
-is_thrown 1
 end
 arch skill_throwing
 end
@@ -4902,9 +4898,7 @@ y 29
 end
 arch magic_mouth
 msg
-Dammit! The tunnel must have collapsed
-recently. Huge rocks are blocking the
-way now.
+Dammit! The tunnel must have collapsed recently.  Huge rocks are blocking the way now.
 endmsg
 x 23
 resist_physical 30
@@ -5209,12 +5203,8 @@ y 22
 end
 arch magic_mouth
 msg
-The spirit of the mountain touches
-your mind:
-"I wanted to prevent mortals from
-entering the evil castle again. You
-defeated my minions  but you are still
-a child yet."
+The spirit of the mountain touches your mind:
+"I wanted to prevent mortals from entering the evil castle again.  You defeated my minions but you are still a child yet."
 endmsg
 x 24
 y 23
@@ -5542,7 +5532,6 @@ resist_godpower 60
 carrying 100000
 weight 1000000
 will_apply 1
-can_apply 1
 see_invisible 1
 can_cast_spell 1
 can_use_ring 1
@@ -5552,7 +5541,6 @@ can_see_in_dark 1
 arch t_boulder
 nrof 10
 weight 10000
-is_thrown 1
 end
 arch skill_throwing
 end
@@ -5596,7 +5584,6 @@ resist_godpower 60
 carrying 100000
 weight 1000000
 will_apply 1
-can_apply 1
 see_invisible 1
 can_cast_spell 1
 can_use_ring 1
@@ -5606,7 +5593,6 @@ can_see_in_dark 1
 arch t_boulder
 nrof 10
 weight 10000
-is_thrown 1
 end
 arch skill_throwing
 end

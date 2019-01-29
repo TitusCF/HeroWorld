@@ -1,12 +1,15 @@
 arch map
-name FirstFloor
+name Fire Temple, First Floor
+difficulty 20
+region wilderness
+width 30
+height 30
+enter_x 28
+enter_y 7
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Thu Apr 17 16:30:30 1997
+Created:  1997-04-17 Peter Mardahl (peterm@soda.csua.berkeley.edu)
+Modified: 2011-12-30 Rick Tanner
 endmsg
-x 30
-y 30
 end
 arch cobblestones2
 end
@@ -328,6 +331,11 @@ end
 arch cobblestones2
 x 1
 y 20
+end
+arch pentagram_111
+x 1
+y 20
+move_block all
 end
 arch cobblestones2
 x 1
@@ -739,8 +747,7 @@ y 18
 end
 arch magic_mouth
 msg
-You see something under the little
-demon.
+You see something under the little demon.
 endmsg
 x 3
 y 19
@@ -1591,6 +1598,11 @@ arch cobblestones2
 x 7
 y 1
 end
+arch pentagram_111
+x 7
+y 1
+move_block all
+end
 arch cobblestones2
 x 7
 y 2
@@ -2259,8 +2271,7 @@ y 1
 end
 arch magic_mouth
 msg
-You see something under the little
-demon.
+You see something under the little demon.
 endmsg
 x 10
 y 2
@@ -2387,6 +2398,11 @@ end
 arch cobblestones2
 x 10
 y 20
+end
+arch pentagram_111
+x 10
+y 20
+move_block all
 end
 arch cobblestones2
 x 10
@@ -2923,7 +2939,7 @@ end
 arch sign
 name Principal Investigator's Office
 msg
-Principal Investigator's Offic
+Principal Investigator's Office.
 endmsg
 x 13
 y 9
@@ -3012,8 +3028,7 @@ y 20
 end
 arch magic_mouth
 msg
-You see something under the little
-demon.
+You see something under the little demon.
 endmsg
 x 13
 y 21
@@ -3570,6 +3585,11 @@ arch cobblestones2
 x 16
 y 2
 end
+arch big_demon
+name Principal Investigator
+x 16
+y 2
+end
 arch cobblestones2
 x 16
 y 3
@@ -3835,6 +3855,11 @@ end
 arch cobblestones2
 x 17
 y 14
+end
+arch pentagram_111
+x 17
+y 14
+move_block all
 end
 arch cobblestones2
 x 17
@@ -4126,8 +4151,7 @@ y 1
 end
 arch magic_mouth
 msg
-You see something under the little
-demon.
+You see something under the little demon.
 endmsg
 x 19
 y 2
@@ -4325,6 +4349,12 @@ end
 arch phil_phosphorus
 x 20
 y 1
+end
+arch pentagram_111
+x 20
+y 1
+move_block all
+is_floor 1
 end
 arch cobblestones2
 x 20
@@ -5829,6 +5859,11 @@ arch cobblestones2
 x 26
 y 1
 end
+arch pentagram_111
+x 26
+y 1
+move_block all
+end
 arch cobblestones2
 x 26
 y 2
@@ -6832,40 +6867,4 @@ end
 arch mine12
 x 29
 y 29
-end
-arch pentagram_111
-x 1
-y 20
-no_pass 1
-end
-arch pentagram_111
-x 7
-y 1
-no_pass 1
-end
-arch pentagram_111
-x 10
-y 20
-no_pass 1
-end
-arch big_demon
-name Principal Investigator
-x 16
-y 2
-end
-arch pentagram_111
-x 17
-y 14
-no_pass 1
-end
-arch pentagram_111
-x 20
-y 1
-no_pass 1
-is_floor 1
-end
-arch pentagram_111
-x 26
-y 1
-no_pass 1
 end

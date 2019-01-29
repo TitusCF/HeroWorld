@@ -1,17 +1,16 @@
 arch map
+name Cave Passageway, Level 2
+difficulty 45
 region pupland
-name cave_pass2
+darkness 2
+width 20
+height 40
+enter_x 9
+enter_y 10
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sun Jan 28 00:13:44 1996
+Created:  1996-01-28
+Modified: 2012-02-28 Rick Tanner
 endmsg
-hp 9
-sp 10
-x 20
-y 40
-level 15
-invisible 2
 end
 arch blocked
 end
@@ -72,242 +71,62 @@ end
 arch blocked
 y 19
 end
-arch mine10
-y 20
-end
 arch blocked
 y 20
-end
-arch mine10
-y 20
-end
-arch blocked
-y 20
-end
-arch mine3
-y 21
 end
 arch blocked
 y 21
 end
-arch mine11
-y 21
-end
-arch blocked
-y 21
-end
-arch mine3
-y 22
-end
 arch blocked
 y 22
-end
-arch mine3
-y 22
-end
-arch blocked
-y 22
-end
-arch mine3
-y 23
 end
 arch blocked
 y 23
 end
-arch mine3
-y 23
-end
-arch blocked
-y 23
-end
-arch mine3
-y 24
-end
 arch blocked
 y 24
-end
-arch mine11
-y 24
-end
-arch blocked
-y 24
-end
-arch mine3
-y 25
 end
 arch blocked
 y 25
 end
-arch mine11
-y 25
-end
-arch blocked
-y 25
-end
-arch mine3
-y 26
-end
 arch blocked
 y 26
-end
-arch mine11
-y 26
-end
-arch blocked
-y 26
-end
-arch mine3
-y 27
 end
 arch blocked
 y 27
 end
-arch mine11
-y 27
-end
-arch blocked
-y 27
-end
-arch mine3
-y 28
-end
 arch blocked
 y 28
-end
-arch mine11
-y 28
-end
-arch blocked
-y 28
-end
-arch mine3
-y 29
 end
 arch blocked
 y 29
 end
-arch mine11
-y 29
-end
-arch blocked
-y 29
-end
-arch mine3
-y 30
-end
 arch blocked
 y 30
-end
-arch mine11
-y 30
-end
-arch blocked
-y 30
-end
-arch mine3
-y 31
 end
 arch blocked
 y 31
 end
-arch mine3
-y 31
-end
-arch blocked
-y 31
-end
-arch mine3
-y 32
-end
 arch blocked
 y 32
-end
-arch mine3
-y 32
-end
-arch blocked
-y 32
-end
-arch mine3
-y 33
 end
 arch blocked
 y 33
 end
-arch mine3
-y 33
-end
-arch blocked
-y 33
-end
-arch mine3
-y 34
-end
 arch blocked
 y 34
-end
-arch mine3
-y 34
-end
-arch blocked
-y 34
-end
-arch mine3
-y 35
 end
 arch blocked
 y 35
 end
-arch mine3
-y 35
-end
-arch blocked
-y 35
-end
-arch mine3
-y 36
-end
 arch blocked
 y 36
-end
-arch mine11
-y 36
-end
-arch blocked
-y 36
-end
-arch mine3
-y 37
 end
 arch blocked
 y 37
 end
-arch mine11
-y 37
-end
-arch blocked
-y 37
-end
-arch mine3
-y 38
-end
 arch blocked
 y 38
-end
-arch mine11
-y 38
-end
-arch blocked
-y 38
-end
-arch mine4
-y 39
-end
-arch blocked
-y 39
-end
-arch mine4
-y 39
 end
 arch blocked
 y 39
@@ -426,13 +245,13 @@ arch blocked
 x 1
 y 19
 end
-arch mine16
-x 1
-y 20
-end
 arch blocked
 x 1
 y 20
+end
+arch flagstone
+x 1
+y 21
 end
 arch mine13
 x 1
@@ -446,49 +265,25 @@ arch flagstone
 x 1
 y 23
 end
-arch mine9
-x 1
-y 24
-end
 arch blocked
 x 1
 y 24
 end
-arch mine14
+arch blocked
 x 1
 y 25
 end
 arch blocked
 x 1
-y 25
-end
-arch mine14
-x 1
 y 26
 end
 arch blocked
-x 1
-y 26
-end
-arch mine14
 x 1
 y 27
 end
 arch blocked
 x 1
-y 27
-end
-arch mine14
-x 1
 y 28
-end
-arch blocked
-x 1
-y 28
-end
-arch mine14
-x 1
-y 29
 end
 arch blocked
 x 1
@@ -522,41 +317,17 @@ arch flagstone
 x 1
 y 35
 end
-arch mine9
-x 1
-y 36
-end
 arch blocked
 x 1
 y 36
 end
-arch mine14
+arch blocked
 x 1
 y 37
 end
 arch blocked
 x 1
-y 37
-end
-arch mine14
-x 1
 y 38
-end
-arch blocked
-x 1
-y 38
-end
-arch mine2
-x 1
-y 39
-end
-arch blocked
-x 1
-y 39
-end
-arch mine13
-x 1
-y 39
 end
 arch blocked
 x 1
@@ -564,6 +335,10 @@ y 39
 end
 arch blocked
 x 2
+end
+arch dungeon_floor
+x 2
+y 1
 end
 arch mine13
 x 2
@@ -680,19 +455,23 @@ arch blocked
 x 2
 y 19
 end
-arch mine16
-x 2
-y 20
-end
 arch blocked
 x 2
 y 20
+end
+arch flagstone
+x 2
+y 21
 end
 arch mine13
 x 2
 y 21
 end
 arch flagstone
+x 2
+y 22
+end
+arch big_dragon
 x 2
 y 22
 end
@@ -720,11 +499,19 @@ arch flagstone
 x 2
 y 28
 end
+arch chinese_dragon
+x 2
+y 28
+end
 arch flagstone
 x 2
 y 29
 end
 arch flagstone
+x 2
+y 30
+end
+arch big_dragon
 x 2
 y 30
 end
@@ -744,6 +531,10 @@ arch unholy_ground
 x 2
 y 33
 end
+arch chinese_dragon
+x 2
+y 33
+end
 arch flagstone
 x 2
 y 34
@@ -756,6 +547,10 @@ arch flagstone
 x 2
 y 36
 end
+arch big_dragon
+x 2
+y 36
+end
 arch flagstone
 x 2
 y 37
@@ -763,18 +558,6 @@ end
 arch flagstone
 x 2
 y 38
-end
-arch mine2
-x 2
-y 39
-end
-arch blocked
-x 2
-y 39
-end
-arch mine2
-x 2
-y 39
 end
 arch blocked
 x 2
@@ -859,6 +642,10 @@ arch blocked
 x 3
 y 11
 end
+arch dungeon_floor
+x 3
+y 12
+end
 arch mine13
 x 3
 y 12
@@ -866,6 +653,18 @@ end
 arch dungeon_floor
 x 3
 y 13
+end
+arch big_elec
+x 3
+y 13
+resist_acid 100
+resist_weaponmagic 100
+resist_ghosthit 100
+resist_poison 100
+resist_slow 100
+resist_deplete 100
+resist_death 100
+resist_chaos 100
 end
 arch dungeon_floor
 x 3
@@ -890,10 +689,6 @@ end
 arch blocked
 x 3
 y 19
-end
-arch mine16
-x 3
-y 20
 end
 arch blocked
 x 3
@@ -927,6 +722,10 @@ arch flagstone
 x 3
 y 25
 end
+arch big_wiz
+x 3
+y 25
+end
 arch flagstone
 x 3
 y 26
@@ -991,21 +790,12 @@ arch flagstone
 x 3
 y 38
 end
-arch mine2
-x 3
-y 39
-end
 arch blocked
 x 3
 y 39
 end
-arch mine2
-x 3
-y 39
-end
-arch blocked
-x 3
-y 39
+arch dungeon_floor
+x 4
 end
 arch mine2
 x 4
@@ -1074,6 +864,10 @@ arch blocked
 x 4
 y 11
 end
+arch dungeon_floor
+x 4
+y 12
+end
 arch mine13
 x 4
 y 12
@@ -1105,6 +899,10 @@ end
 arch blocked
 x 4
 y 19
+end
+arch flagstone
+x 4
+y 20
 end
 arch mine2
 x 4
@@ -1194,21 +992,12 @@ arch flagstone
 x 4
 y 38
 end
-arch mine2
-x 4
-y 39
-end
 arch blocked
 x 4
 y 39
 end
-arch mine2
-x 4
-y 39
-end
-arch blocked
-x 4
-y 39
+arch dungeon_floor
+x 5
 end
 arch mine2
 x 5
@@ -1304,6 +1093,10 @@ end
 arch blocked
 x 5
 y 11
+end
+arch dungeon_floor
+x 5
+y 12
 end
 arch mine13
 x 5
@@ -1341,6 +1134,10 @@ arch blocked
 x 5
 y 19
 end
+arch flagstone
+x 5
+y 20
+end
 arch mine2
 x 5
 y 20
@@ -1405,6 +1202,10 @@ arch flagstone
 x 5
 y 33
 end
+arch big_wiz
+x 5
+y 33
+end
 arch flagstone
 x 5
 y 34
@@ -1421,6 +1222,10 @@ arch flagstone
 x 5
 y 36
 end
+arch chinese_dragon
+x 5
+y 36
+end
 arch flagstone
 x 5
 y 37
@@ -1429,21 +1234,12 @@ arch flagstone
 x 5
 y 38
 end
-arch mine2
-x 5
-y 39
-end
 arch blocked
 x 5
 y 39
 end
-arch mine2
-x 5
-y 39
-end
-arch blocked
-x 5
-y 39
+arch dungeon_floor
+x 6
 end
 arch mine2
 x 6
@@ -1508,6 +1304,10 @@ arch mine10
 x 6
 y 8
 end
+arch cobblestones
+x 6
+y 9
+end
 arch mine4
 x 6
 y 9
@@ -1523,7 +1323,7 @@ connected 1
 end
 arch magic_ear
 msg
-@match Bernie|bernie|Barnard|barnard
+@match bernie|barnard
 Click.
 endmsg
 x 6
@@ -1534,9 +1334,17 @@ arch blocked
 x 6
 y 11
 end
+arch dungeon_floor
+x 6
+y 12
+end
 arch mine17
 x 6
 y 12
+end
+arch dungeon_floor
+x 6
+y 13
 end
 arch mine4
 x 6
@@ -1545,6 +1353,18 @@ end
 arch dungeon_floor
 x 6
 y 14
+end
+arch big_elec
+x 6
+y 14
+resist_acid 100
+resist_weaponmagic 100
+resist_ghosthit 100
+resist_poison 100
+resist_slow 100
+resist_deplete 100
+resist_death 100
+resist_chaos 100
 end
 arch dungeon_floor
 x 6
@@ -1566,6 +1386,10 @@ arch blocked
 x 6
 y 19
 end
+arch flagstone
+x 6
+y 20
+end
 arch mine2
 x 6
 y 20
@@ -1575,6 +1399,10 @@ x 6
 y 21
 end
 arch flagstone
+x 6
+y 22
+end
+arch big_dragon
 x 6
 y 22
 end
@@ -1602,6 +1430,10 @@ arch flagstone
 x 6
 y 28
 end
+arch chinese_dragon
+x 6
+y 28
+end
 arch flagstone
 x 6
 y 29
@@ -1611,6 +1443,10 @@ x 6
 y 30
 end
 arch flagstone
+x 6
+y 31
+end
+arch chinese_dragon
 x 6
 y 31
 end
@@ -1654,21 +1490,12 @@ arch mine10
 x 6
 y 38
 end
-arch mine2
-x 6
-y 39
-end
 arch blocked
 x 6
 y 39
 end
-arch mine13
-x 6
-y 39
-end
-arch blocked
-x 6
-y 39
+arch dungeon_floor
+x 7
 end
 arch mine2
 x 7
@@ -1733,6 +1560,10 @@ arch blocked
 x 7
 y 8
 end
+arch cobblestones
+x 7
+y 9
+end
 arch mine13
 x 7
 y 9
@@ -1755,6 +1586,10 @@ end
 arch blocked
 x 7
 y 12
+end
+arch dungeon_floor
+x 7
+y 13
 end
 arch mine13
 x 7
@@ -1783,6 +1618,10 @@ end
 arch blocked
 x 7
 y 19
+end
+arch flagstone
+x 7
+y 20
 end
 arch mine2
 x 7
@@ -1860,32 +1699,23 @@ arch flagstone
 x 7
 y 37
 end
-arch mine16
-x 7
-y 38
-end
 arch blocked
 x 7
 y 38
 end
-arch mine2
-x 7
-y 39
-end
 arch blocked
 x 7
 y 39
 end
-arch mine13
-x 7
-y 39
-end
-arch blocked
-x 7
-y 39
+arch dungeon_floor
+x 8
 end
 arch mine16
 x 8
+end
+arch dungeon_floor
+x 8
+y 1
 end
 arch mine4
 x 8
@@ -1939,6 +1769,10 @@ arch blocked
 x 8
 y 8
 end
+arch cobblestones
+x 8
+y 9
+end
 arch mine13
 x 8
 y 9
@@ -1955,13 +1789,25 @@ arch blocked
 x 8
 y 12
 end
+arch dungeon_floor
+x 8
+y 13
+end
 arch mine17
 x 8
 y 13
 end
+arch dungeon_floor
+x 8
+y 14
+end
 arch mine11
 x 8
 y 14
+end
+arch dungeon_floor
+x 8
+y 15
 end
 arch magic_ear
 msg
@@ -1987,19 +1833,18 @@ x 8
 y 16
 connected 4
 end
-arch dungeon_floor
-x 8
-y 17
-end
 arch magic_ear
 msg
 @match he has no daughter
 Click.
-
 endmsg
 x 8
 y 17
 connected 4
+end
+arch dungeon_floor
+x 8
+y 17
 end
 arch mine10
 x 8
@@ -2012,6 +1857,10 @@ end
 arch blocked
 x 8
 y 19
+end
+arch flagstone
+x 8
+y 20
 end
 arch mine2
 x 8
@@ -2037,6 +1886,10 @@ arch flagstone
 x 8
 y 25
 end
+arch titan
+x 8
+y 25
+end
 arch flagstone
 x 8
 y 26
@@ -2053,6 +1906,10 @@ arch mine10
 x 8
 y 28
 end
+arch flagstone
+x 8
+y 29
+end
 arch mine4
 x 8
 y 29
@@ -2062,6 +1919,10 @@ x 8
 y 30
 end
 arch flagstone
+x 8
+y 31
+end
+arch chinese_dragon
 x 8
 y 31
 end
@@ -2093,25 +1954,9 @@ arch flagstone
 x 8
 y 37
 end
-arch mine16
-x 8
-y 38
-end
 arch blocked
 x 8
 y 38
-end
-arch mine2
-x 8
-y 39
-end
-arch blocked
-x 8
-y 39
-end
-arch mine13
-x 8
-y 39
 end
 arch blocked
 x 8
@@ -2119,6 +1964,10 @@ y 39
 end
 arch blocked
 x 9
+end
+arch dungeon_floor
+x 9
+y 1
 end
 arch mine13
 x 9
@@ -2151,13 +2000,25 @@ arch mine10
 x 9
 y 4
 end
+arch dungeon_floor
+x 9
+y 5
+end
 arch mine11
 x 9
 y 5
 end
+arch dungeon_floor
+x 9
+y 6
+end
 arch mine17
 x 9
 y 6
+end
+arch dungeon_floor
+x 9
+y 7
 end
 arch mine11
 x 9
@@ -2166,6 +2027,10 @@ end
 arch blocked
 x 9
 y 8
+end
+arch cobblestones
+x 9
+y 9
 end
 arch mine13
 x 9
@@ -2190,29 +2055,9 @@ arch blocked
 x 9
 y 12
 end
-arch mine10
-x 9
-y 12
-end
-arch blocked
-x 9
-y 12
-end
 arch blocked
 x 9
 y 13
-end
-arch mine12
-x 9
-y 13
-end
-arch blocked
-x 9
-y 13
-end
-arch mine14
-x 9
-y 14
 end
 arch blocked
 x 9
@@ -2236,6 +2081,10 @@ endmsg
 x 9
 y 16
 end
+arch dungeon_floor
+x 9
+y 16
+end
 arch pit_closed
 hp 11
 sp 26
@@ -2255,9 +2104,17 @@ arch blocked
 x 9
 y 19
 end
+arch flagstone
+x 9
+y 20
+end
 arch mine16
 x 9
 y 20
+end
+arch flagstone
+x 9
+y 21
 end
 arch mine4
 x 9
@@ -2291,13 +2148,13 @@ arch flagstone
 x 9
 y 27
 end
-arch mine9
-x 9
-y 28
-end
 arch blocked
 x 9
 y 28
+end
+arch flagstone
+x 9
+y 29
 end
 arch mine13
 x 9
@@ -2330,6 +2187,10 @@ arch flagstone
 x 9
 y 34
 end
+arch titan
+x 9
+y 34
+end
 arch flagstone
 x 9
 y 35
@@ -2342,29 +2203,17 @@ arch unholy_ground
 x 9
 y 36
 end
+arch chinese_dragon
+x 9
+y 36
+end
 arch flagstone
 x 9
 y 37
 end
-arch mine16
-x 9
-y 38
-end
 arch blocked
 x 9
 y 38
-end
-arch mine2
-x 9
-y 39
-end
-arch blocked
-x 9
-y 39
-end
-arch mine13
-x 9
-y 39
 end
 arch blocked
 x 9
@@ -2372,6 +2221,10 @@ y 39
 end
 arch blocked
 x 10
+end
+arch dungeon_floor
+x 10
+y 1
 end
 arch mine17
 x 10
@@ -2396,7 +2249,7 @@ connected 2
 end
 arch magic_ear
 msg
-@match Lauretta|lauretta|Laurel|laurel
+@match lauretta|laurel
 Click.
 endmsg
 x 10
@@ -2423,21 +2276,29 @@ arch blocked
 x 10
 y 8
 end
+arch cobblestones
+x 10
+y 9
+end
 arch mine16
 x 10
 y 9
 end
-arch mine11
+arch cobblestones
 x 10
 y 10
 end
 arch mine11
 x 10
-y 11
+y 10
 end
 arch blocked
 x 10
 y 11
+end
+arch dungeon_floor
+x 10
+y 12
 end
 arch mine13
 x 10
@@ -2483,19 +2344,23 @@ arch blocked
 x 10
 y 19
 end
-arch mine16
-x 10
-y 20
-end
 arch blocked
 x 10
 y 20
+end
+arch flagstone
+x 10
+y 21
 end
 arch mine13
 x 10
 y 21
 end
 arch flagstone
+x 10
+y 22
+end
+arch chinese_dragon
 x 10
 y 22
 end
@@ -2523,15 +2388,27 @@ arch flagstone
 x 10
 y 28
 end
+arch flagstone
+x 10
+y 29
+end
 arch mine16
 x 10
 y 29
+end
+arch flagstone
+x 10
+y 30
 end
 arch mine4
 x 10
 y 30
 end
 arch flagstone
+x 10
+y 31
+end
+arch chinese_dragon
 x 10
 y 31
 end
@@ -2563,25 +2440,9 @@ arch flagstone
 x 10
 y 37
 end
-arch mine16
-x 10
-y 38
-end
 arch blocked
 x 10
 y 38
-end
-arch mine2
-x 10
-y 39
-end
-arch blocked
-x 10
-y 39
-end
-arch mine13
-x 10
-y 39
 end
 arch blocked
 x 10
@@ -2589,6 +2450,10 @@ y 39
 end
 arch blocked
 x 11
+end
+arch dungeon_floor
+x 11
+y 1
 end
 arch mine13
 x 11
@@ -2638,25 +2503,13 @@ arch blocked
 x 11
 y 8
 end
-arch mine9
+arch blocked
 x 11
 y 9
 end
 arch blocked
 x 11
-y 9
-end
-arch mine17
-x 11
 y 10
-end
-arch blocked
-x 11
-y 10
-end
-arch mine14
-x 11
-y 11
 end
 arch blocked
 x 11
@@ -2718,13 +2571,13 @@ arch blocked
 x 11
 y 19
 end
-arch mine16
-x 11
-y 20
-end
 arch blocked
 x 11
 y 20
+end
+arch flagstone
+x 11
+y 21
 end
 arch mine13
 x 11
@@ -2750,6 +2603,10 @@ arch flagstone
 x 11
 y 25
 end
+arch big_wiz
+x 11
+y 25
+end
 arch flagstone
 x 11
 y 26
@@ -2761,10 +2618,6 @@ end
 arch flagstone
 x 11
 y 28
-end
-arch mine9
-x 11
-y 29
 end
 arch blocked
 x 11
@@ -2790,6 +2643,10 @@ arch flagstone
 x 11
 y 33
 end
+arch chinese_dragon
+x 11
+y 33
+end
 arch flagstone
 x 11
 y 34
@@ -2810,25 +2667,9 @@ arch flagstone
 x 11
 y 37
 end
-arch mine9
-x 11
-y 38
-end
 arch blocked
 x 11
 y 38
-end
-arch mine2
-x 11
-y 39
-end
-arch blocked
-x 11
-y 39
-end
-arch mine13
-x 11
-y 39
 end
 arch blocked
 x 11
@@ -2836,6 +2677,10 @@ y 39
 end
 arch blocked
 x 12
+end
+arch dungeon_floor
+x 12
+y 1
 end
 arch mine13
 x 12
@@ -2896,6 +2741,10 @@ end
 arch blocked
 x 12
 y 9
+end
+arch dungeon_floor
+x 12
+y 10
 end
 arch mine13
 x 12
@@ -2949,10 +2798,6 @@ arch blocked
 x 12
 y 19
 end
-arch mine16
-x 12
-y 20
-end
 arch blocked
 x 12
 y 20
@@ -2970,6 +2815,10 @@ x 12
 y 22
 end
 arch unholy_ground
+x 12
+y 22
+end
+arch big_dragon
 x 12
 y 22
 end
@@ -3013,6 +2862,10 @@ arch flagstone
 x 12
 y 31
 end
+arch chinese_dragon
+x 12
+y 31
+end
 arch flagstone
 x 12
 y 32
@@ -3033,6 +2886,10 @@ arch flagstone
 x 12
 y 36
 end
+arch big_dragon
+x 12
+y 36
+end
 arch flagstone
 x 12
 y 37
@@ -3041,28 +2898,24 @@ arch flagstone
 x 12
 y 38
 end
-arch mine2
-x 12
-y 39
-end
-arch blocked
-x 12
-y 39
-end
-arch mine2
-x 12
-y 39
-end
 arch blocked
 x 12
 y 39
 end
 arch blocked
 x 13
+end
+arch dungeon_floor
+x 13
+y 1
 end
 arch mine17
 x 13
 y 1
+end
+arch dungeon_floor
+x 13
+y 2
 end
 arch mine4
 x 13
@@ -3124,18 +2977,18 @@ arch random_food
 x 13
 y 9
 end
-arch dungeon_floor
-x 13
-y 10
-end
 arch magic_ear
 msg
-@match Eureca|eureca
+@match eureca
 Click.
 endmsg
 x 13
 y 10
 connected 3
+end
+arch dungeon_floor
+x 13
+y 10
 end
 arch mine7
 x 13
@@ -3201,6 +3054,10 @@ arch blocked
 x 13
 y 19
 end
+arch flagstone
+x 13
+y 20
+end
 arch mine2
 x 13
 y 20
@@ -3245,6 +3102,10 @@ arch flagstone
 x 13
 y 28
 end
+arch chinese_dragon
+x 13
+y 28
+end
 arch flagstone
 x 13
 y 29
@@ -3266,6 +3127,10 @@ x 13
 y 32
 end
 arch flagstone
+x 13
+y 33
+end
+arch big_wiz
 x 13
 y 33
 end
@@ -3293,18 +3158,6 @@ arch flagstone
 x 13
 y 38
 end
-arch mine2
-x 13
-y 39
-end
-arch blocked
-x 13
-y 39
-end
-arch mine2
-x 13
-y 39
-end
 arch blocked
 x 13
 y 39
@@ -3315,6 +3168,10 @@ end
 arch blocked
 x 14
 y 1
+end
+arch dungeon_floor
+x 14
+y 2
 end
 arch mine13
 x 14
@@ -3392,14 +3249,14 @@ arch devil
 x 14
 y 8
 end
-arch cobblestones
-x 14
-y 9
-end
 arch magic_mouth
 msg
 He is ..
 endmsg
+x 14
+y 9
+end
+arch cobblestones
 x 14
 y 9
 end
@@ -3472,9 +3329,17 @@ arch blocked
 x 14
 y 19
 end
+arch flagstone
+x 14
+y 20
+end
 arch mine16
 x 14
 y 20
+end
+arch flagstone
+x 14
+y 21
 end
 arch mine4
 x 14
@@ -3555,18 +3420,6 @@ end
 arch flagstone
 x 14
 y 38
-end
-arch mine2
-x 14
-y 39
-end
-arch blocked
-x 14
-y 39
-end
-arch mine2
-x 14
-y 39
 end
 arch blocked
 x 14
@@ -3711,13 +3564,13 @@ arch blocked
 x 15
 y 19
 end
-arch mine16
-x 15
-y 20
-end
 arch blocked
 x 15
 y 20
+end
+arch flagstone
+x 15
+y 21
 end
 arch mine13
 x 15
@@ -3743,6 +3596,10 @@ arch dungeon_magic
 x 15
 y 25
 end
+arch big_dragon
+x 15
+y 25
+end
 arch flagstone
 x 15
 y 26
@@ -3764,6 +3621,10 @@ x 15
 y 29
 end
 arch flagstone
+x 15
+y 30
+end
+arch big_dragon
 x 15
 y 30
 end
@@ -3806,18 +3667,6 @@ end
 arch flagstone
 x 15
 y 38
-end
-arch mine2
-x 15
-y 39
-end
-arch blocked
-x 15
-y 39
-end
-arch mine2
-x 15
-y 39
 end
 arch blocked
 x 15
@@ -3898,9 +3747,17 @@ arch generate_devil
 x 16
 y 9
 end
+arch dungeon_floor
+x 16
+y 10
+end
 arch mine16
 x 16
 y 10
+end
+arch dungeon_floor
+x 16
+y 11
 end
 arch mine4
 x 16
@@ -3961,13 +3818,13 @@ arch blocked
 x 16
 y 19
 end
-arch mine16
-x 16
-y 20
-end
 arch blocked
 x 16
 y 20
+end
+arch flagstone
+x 16
+y 21
 end
 arch mine13
 x 16
@@ -4061,25 +3918,20 @@ arch mine10
 x 16
 y 37
 end
+arch flagstone
+x 16
+y 38
+end
 arch mine11
 x 16
 y 38
 end
-arch mine2
-x 16
-y 39
-end
 arch blocked
 x 16
 y 39
 end
-arch mine13
-x 16
-y 39
-end
-arch blocked
-x 16
-y 39
+arch dungeon_floor
+x 17
 end
 arch mine2
 x 17
@@ -4116,6 +3968,10 @@ arch mine10
 x 17
 y 4
 end
+arch dungeon_floor
+x 17
+y 5
+end
 arch mine4
 x 17
 y 5
@@ -4156,9 +4012,17 @@ arch blocked
 x 17
 y 10
 end
+arch dungeon_floor
+x 17
+y 11
+end
 arch mine17
 x 17
 y 11
+end
+arch dungeon_floor
+x 17
+y 12
 end
 arch mine4
 x 17
@@ -4204,13 +4068,13 @@ arch blocked
 x 17
 y 19
 end
-arch mine16
-x 17
-y 20
-end
 arch blocked
 x 17
 y 20
+end
+arch flagstone
+x 17
+y 21
 end
 arch mine13
 x 17
@@ -4292,37 +4156,20 @@ arch mine10
 x 17
 y 36
 end
-arch mine17
-x 17
-y 37
-end
 arch blocked
 x 17
 y 37
 end
-arch mine17
+arch blocked
 x 17
 y 38
 end
 arch blocked
 x 17
-y 38
-end
-arch mine2
-x 17
 y 39
 end
-arch blocked
-x 17
-y 39
-end
-arch mine13
-x 17
-y 39
-end
-arch blocked
-x 17
-y 39
+arch dungeon_floor
+x 18
 end
 arch mine2
 x 18
@@ -4358,13 +4205,25 @@ arch blocked
 x 18
 y 4
 end
+arch dungeon_floor
+x 18
+y 5
+end
 arch mine17
 x 18
 y 5
 end
+arch dungeon_floor
+x 18
+y 6
+end
 arch mine11
 x 18
 y 6
+end
+arch dungeon_floor
+x 18
+y 7
 end
 arch mine4
 x 18
@@ -4394,6 +4253,10 @@ arch blocked
 x 18
 y 11
 end
+arch dungeon_floor
+x 18
+y 12
+end
 arch mine13
 x 18
 y 12
@@ -4442,13 +4305,13 @@ arch blocked
 x 18
 y 19
 end
-arch mine16
-x 18
-y 20
-end
 arch blocked
 x 18
 y 20
+end
+arch flagstone
+x 18
+y 21
 end
 arch mine13
 x 18
@@ -4510,52 +4373,39 @@ arch flagstone
 x 18
 y 35
 end
-arch mine16
-x 18
-y 36
-end
 arch blocked
 x 18
 y 36
 end
-arch mine17
+arch blocked
 x 18
 y 37
 end
 arch blocked
 x 18
-y 37
-end
-arch mine17
-x 18
 y 38
 end
 arch blocked
 x 18
-y 38
-end
-arch mine2
-x 18
 y 39
 end
-arch blocked
-x 18
-y 39
-end
-arch mine13
-x 18
-y 39
-end
-arch blocked
-x 18
-y 39
+arch dungeon_floor
+x 19
 end
 arch mine9
 x 19
 end
+arch dungeon_floor
+x 19
+y 1
+end
 arch mine3
 x 19
 y 1
+end
+arch dungeon_floor
+x 19
+y 2
 end
 arch mine3
 x 19
@@ -4577,13 +4427,25 @@ arch blocked
 x 19
 y 6
 end
+arch dungeon_floor
+x 19
+y 7
+end
 arch mine9
 x 19
 y 7
 end
+arch dungeon_floor
+x 19
+y 8
+end
 arch mine3
 x 19
 y 8
+end
+arch dungeon_floor
+x 19
+y 9
 end
 arch mine3
 x 19
@@ -4597,21 +4459,41 @@ arch blocked
 x 19
 y 11
 end
+arch dungeon_floor
+x 19
+y 12
+end
 arch mine14
 x 19
 y 12
 end
-arch mine3
+arch dungeon_floor
 x 19
 y 13
 end
 arch mine3
 x 19
+y 13
+end
+arch dungeon_floor
+x 19
 y 14
 end
 arch mine3
 x 19
+y 14
+end
+arch dungeon_floor
+x 19
 y 15
+end
+arch mine3
+x 19
+y 15
+end
+arch dungeon_floor
+x 19
+y 16
 end
 arch mine3
 x 19
@@ -4629,225 +4511,143 @@ arch blocked
 x 19
 y 19
 end
-arch mine9
-x 19
-y 20
-end
 arch blocked
 x 19
 y 20
+end
+arch flagstone
+x 19
+y 21
 end
 arch mine14
 x 19
 y 21
 end
-arch mine3
+arch flagstone
 x 19
 y 22
 end
 arch mine3
+x 19
+y 22
+end
+arch flagstone
 x 19
 y 23
 end
 arch mine3
 x 19
+y 23
+end
+arch flagstone
+x 19
 y 24
+end
+arch mine3
+x 19
+y 24
+end
+arch flagstone
+x 19
+y 25
 end
 arch mine3
 x 19
 y 25
 end
-arch mine3
+arch flagstone
 x 19
 y 26
 end
 arch mine3
 x 19
+y 26
+end
+arch flagstone
+x 19
 y 27
+end
+arch mine3
+x 19
+y 27
+end
+arch flagstone
+x 19
+y 28
 end
 arch mine3
 x 19
 y 28
 end
-arch mine3
+arch flagstone
 x 19
 y 29
 end
 arch mine3
 x 19
+y 29
+end
+arch flagstone
+x 19
 y 30
+end
+arch mine3
+x 19
+y 30
+end
+arch flagstone
+x 19
+y 31
 end
 arch mine3
 x 19
 y 31
 end
-arch mine3
+arch flagstone
 x 19
 y 32
 end
 arch mine3
 x 19
+y 32
+end
+arch flagstone
+x 19
 y 33
 end
 arch mine3
 x 19
+y 33
+end
+arch flagstone
+x 19
 y 34
+end
+arch mine3
+x 19
+y 34
+end
+arch flagstone
+x 19
+y 35
 end
 arch mine3
 x 19
 y 35
 end
-arch mine14
-x 19
-y 36
-end
 arch blocked
 x 19
 y 36
-end
-arch mine14
-x 19
-y 37
 end
 arch blocked
 x 19
 y 37
 end
-arch mine14
-x 19
-y 38
-end
 arch blocked
 x 19
 y 38
 end
-arch mine12
-x 19
-y 39
-end
 arch blocked
 x 19
 y 39
-end
-arch mine12
-x 19
-y 39
-end
-arch blocked
-x 19
-y 39
-end
-arch big_dragon
-x 2
-y 22
-end
-arch chinese_dragon
-x 2
-y 28
-end
-arch big_dragon
-x 2
-y 30
-end
-arch chinese_dragon
-x 2
-y 33
-end
-arch big_dragon
-x 2
-y 36
-end
-arch big_elec
-x 3
-y 13
-immune 421744
-end
-arch big_wiz
-x 3
-y 25
-end
-arch big_wiz
-x 5
-y 33
-end
-arch chinese_dragon
-x 5
-y 36
-end
-arch big_elec
-x 6
-y 14
-immune 421744
-end
-arch big_dragon
-x 6
-y 22
-end
-arch chinese_dragon
-x 6
-y 28
-end
-arch chinese_dragon
-x 6
-y 31
-end
-arch titan
-x 8
-y 25
-end
-arch chinese_dragon
-x 8
-y 31
-end
-arch titan
-x 9
-y 34
-end
-arch chinese_dragon
-x 9
-y 36
-end
-arch chinese_dragon
-x 10
-y 22
-end
-arch chinese_dragon
-x 10
-y 31
-end
-arch big_wiz
-x 11
-y 25
-end
-arch chinese_dragon
-x 11
-y 33
-end
-arch big_dragon
-x 12
-y 22
-end
-arch chinese_dragon
-x 12
-y 31
-end
-arch big_dragon
-x 12
-y 36
-end
-arch chinese_dragon
-x 13
-y 28
-end
-arch big_wiz
-x 13
-y 33
-end
-arch big_dragon
-x 15
-y 25
-end
-arch big_dragon
-x 15
-y 30
 end

@@ -1,12 +1,15 @@
 arch map
-name Demon1
+name Tower of Demonology, Demons
+difficulty 20
+region wilderness
+width 15
+height 15
+enter_x 1
+enter_y 1
 msg
-Creator: peterm
-Email: peterm@soda.berkeley.edu
-Date: Mon May 30 13:08:53 1994
+Created:  1994-05-30 peterm (peterm@soda.berkeley.edu)
+Modified: 2012-03-11 Rick Tanner
 endmsg
-x 15
-y 15
 end
 arch woodfloor
 end
@@ -349,6 +352,10 @@ x 3
 y 7
 end
 arch woodfloor
+x 3
+y 8
+end
+arch big_demon
 x 3
 y 8
 end
@@ -650,6 +657,10 @@ arch woodfloor
 x 6
 y 8
 end
+arch big_demon
+x 6
+y 8
+end
 arch woodfloor
 x 6
 y 9
@@ -698,9 +709,8 @@ y 1
 end
 arch sign
 msg
-CAUTION:  DO NOT FEED THE DEMONS
-The large demons are very strong and
-their touch drains life
+CAUTION:  DO NOT FEED THE DEMONS!
+The large demons are very strong and their touch drains life.
 endmsg
 x 7
 y 1
@@ -965,6 +975,10 @@ x 9
 y 7
 end
 arch woodfloor
+x 9
+y 8
+end
+arch big_demon
 x 9
 y 8
 end
@@ -1503,16 +1517,4 @@ end
 arch dwall_2_2_4
 x 14
 y 14
-end
-arch big_demon
-x 3
-y 8
-end
-arch big_demon
-x 6
-y 8
-end
-arch big_demon
-x 9
-y 8
 end

@@ -1,13 +1,15 @@
 arch map
-region pupland
 name Kum
+difficulty 1
+region pupland
+width 7
+height 7
+enter_x 3
+enter_y 3
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Fri Jun 14 14:50:06 1996
+Created:  1996-06-14
+Modified: 2012-03-07 Rick Tanner
 endmsg
-x 7
-y 7
 end
 arch cobblestones2
 end
@@ -76,22 +78,10 @@ end
 arch dwarf
 name Kum
 msg
-@match room|ROOM
-I know a password that (I think) leads
-me to treasure room:
-
-ururdd
-
+@match room
+I know a password that (I think) leads me to treasure room: ururdd
 @match *
-I am Kum the dwarf. I am looking for
- a treasure of this ruin. I discover 
-a ROOM in which I think treasures are. 
-But I can't pass the maze. Then I made
-a door to prevent others to pass
-the maze.
-
-
-
+I am Kum the dwarf.  I am looking for a treasure of this ruin.  I discover a ROOM in which I think treasures are.  But I can't pass the maze.  Then I made a door to prevent others to pass the maze.
 endmsg
 hp 700
 x 1

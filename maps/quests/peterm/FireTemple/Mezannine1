@@ -1,11 +1,15 @@
 arch map
+name Fire Temple, Mezannine
+difficulty 18
+region wilderness
+width 32
+height 29
+enter_x 24
+enter_y 12
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sat Apr 19 17:05:12 1997
+Created:  1997-04-19 Peter Mardahl (peterm@soda.csua.berkeley.edu)
+Modified: 2012-03-12 Rick Tanner
 endmsg
-x 32
-y 29
 end
 arch cobblestones2
 end
@@ -301,7 +305,7 @@ y 4
 end
 arch magic_mouth
 msg
-Prof Lau's office 
+Prof Lau's office.
 endmsg
 x 2
 y 5
@@ -719,7 +723,7 @@ y 4
 end
 arch magic_mouth
 msg
-Prof. Smith's office
+Prof. Smith's office.
 endmsg
 x 5
 y 5
@@ -1132,10 +1136,7 @@ arch raas
 name Dr John Verboncoeur
 msg
 @match research
-YOU AGAIN!  HOW MANY TIMES DO I HAVE
-TO TELL YOU!  YOU NEED A 
-pile of sulphur, and DON'T bother
-me about it again
+YOU AGAIN!  HOW MANY TIMES DO I HAVE TO TELL YOU!  YOU NEED A pile of sulphur, and DON'T bother me about it again.
 endmsg
 x 8
 y 2
@@ -1572,7 +1573,7 @@ y 4
 end
 arch magic_mouth
 msg
-189M 
+189M
 endmsg
 x 11
 y 5
@@ -2036,14 +2037,7 @@ arch devil
 name Professor C.K. Birdsall
 msg
 @match research
-You didn't think professors actually
-did research did you?  Well, mostly
-I go get money and handle
-administrative stuff, but now and
-again I do some original stuff!  For
-our current project you'd need a
-pile of phosphorus
-and i found THAT out myself
+You didn't think professors actually did research did you? Well, mostly I go get money and handle administrative stuff, but now and again I do some original stuff! For our current project you'd need a pile of phosphorus and I found THAT out myself.
 endmsg
 x 14
 y 2
@@ -2063,7 +2057,7 @@ y 4
 end
 arch magic_mouth
 msg
-191M 
+191M
 endmsg
 x 14
 y 5
@@ -2542,6 +2536,15 @@ arch cobblestones2
 x 17
 y 10
 end
+arch big_demon
+name Professor Cheung
+x 17
+y 10
+carrying 100
+arch key2
+slaying door7
+end
+end
 arch cobblestones2
 x 17
 y 11
@@ -2657,7 +2660,7 @@ y 4
 end
 arch magic_mouth
 msg
-Secretary's office
+Secretary's office.
 endmsg
 x 18
 y 5
@@ -3640,11 +3643,8 @@ y 10
 end
 arch magic_mouth
 msg
-Please do not EAT, DISEMBOWEL,
-CLAW, DECAPITATE, RIP LIMBS OFF OF,
-or otherwise MOLEST the graduate
-students.  THEY ARE DOING USEFUL 
-RESEARCH.  --The Management 
+Please do not EAT, DISEMBOWEL, CLAW, DECAPITATE, RIP LIMBS OFF OF, or otherwise MOLEST the graduate students.  THEY ARE DOING USEFUL RESEARCH.
+  --The Management
 endmsg
 x 24
 y 11
@@ -3655,11 +3655,8 @@ y 11
 end
 arch magic_mouth
 msg
-Please do not EAT, DISEMBOWEL,
-CLAW, DECAPITATE, RIP LIMBS OFF OF,
-or otherwise MOLEST the graduate
-students.  THEY ARE DOING USEFUL 
-RESEARCH.  --The Management 
+Please do not EAT, DISEMBOWEL, CLAW, DECAPITATE, RIP LIMBS OFF OF, or otherwise MOLEST the graduate students.  THEY ARE DOING USEFUL RESEARCH.
+  --The Management
 endmsg
 x 24
 y 12
@@ -3847,11 +3844,8 @@ y 10
 end
 arch magic_mouth
 msg
-Please do not EAT, DISEMBOWEL,
-CLAW, DECAPITATE, RIP LIMBS OFF OF,
-or otherwise MOLEST the graduate
-students.  THEY ARE DOING USEFUL 
-RESEARCH.  --The Management 
+Please do not EAT, DISEMBOWEL, CLAW, DECAPITATE, RIP LIMBS OFF OF, or otherwise MOLEST the graduate students.  THEY ARE DOING USEFUL RESEARCH.
+  --The Management
 endmsg
 x 25
 y 11
@@ -3862,11 +3856,8 @@ y 11
 end
 arch magic_mouth
 msg
-Please do not EAT, DISEMBOWEL,
-CLAW, DECAPITATE, RIP LIMBS OFF OF,
-or otherwise MOLEST the graduate
-students.  THEY ARE DOING USEFUL 
-RESEARCH.  --The Management 
+Please do not EAT, DISEMBOWEL, CLAW, DECAPITATE, RIP LIMBS OFF OF, or otherwise MOLEST the graduate students.  THEY ARE DOING USEFUL RESEARCH.
+  --The Management
 endmsg
 x 25
 y 12
@@ -4051,7 +4042,7 @@ y 11
 end
 arch magic_mouth
 msg
-199MD 
+199MD
 endmsg
 x 26
 y 12
@@ -4074,7 +4065,7 @@ y 13
 end
 arch magic_mouth
 msg
-199ME 
+199ME
 endmsg
 x 26
 y 14
@@ -4259,8 +4250,7 @@ y 11
 end
 arch magic_mouth
 msg
-graduate students love talking about
-their research. 
+Graduate students love talking about their research.
 endmsg
 x 27
 y 11
@@ -4271,8 +4261,7 @@ y 11
 end
 arch magic_mouth
 msg
-graduate students love talking about
-their research. 
+Graduate students love talking about their research.
 endmsg
 x 27
 y 12
@@ -4295,8 +4284,7 @@ y 14
 end
 arch magic_mouth
 msg
-graduate students love talking about
-their research. 
+Graduate students love talking about their research.
 endmsg
 x 27
 y 14
@@ -4311,8 +4299,7 @@ y 15
 end
 arch magic_mouth
 msg
-graduate students love talking about
-their research. 
+Graduate students love talking about their research.
 endmsg
 x 27
 y 15
@@ -4478,19 +4465,10 @@ end
 arch prisoner
 name Peggy Christenson
 msg
-@match research|Research|resarch
-Oh, you wanted to know about
-our research?  Our group is working 
-on an alchemical recipe.
-Want to hear about it?
-
+@match research|resarch
+Oh, you wanted to know about our research? Our group is working on an alchemical recipe.  Want to hear about it?
 @match yes
-Well, I don't know the whole recipe.
-I work on the 
-water of diamond part.
-Try asking Peter next door about it,
-he's working on a different part of
-the project.
+Well, I don't know the whole recipe.  I work on the water of diamond part.  Try asking Peter next door about it, he's working on a different part of the project.
 endmsg
 x 28
 y 11
@@ -4731,16 +4709,9 @@ arch prisoner
 name Peter Mardahl
 msg
 @match research
-Yah, we're working on like, blowing
-stuff up!  It's rad!  We're done,
-we just haven't published it yet!
-Wanna know what we do?
+Yah, we're working on like, blowing stuff up! It's rad! We're done, we just haven't published it yet! Wanna know what we do?
 @match yes
-Ok, well i don't work on everything,
-I did the pile of salt part.
-Peggy next door is working with us too,
-and so are John and Prof. Birdsall
-down the hall
+Ok, well i don't work on everything, I did the pile of salt part.  Peggy next door is working with us too, and so are John and Prof. Birdsall down the hall.
 endmsg
 x 29
 y 15
@@ -5218,13 +5189,4 @@ end
 arch cobblestones2
 x 31
 y 28
-end
-arch big_demon
-name Professor Cheung
-x 17
-y 10
-carrying 100
-arch key2
-slaying door7
-end
 end

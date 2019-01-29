@@ -1,14 +1,15 @@
 arch map
+name Tower of the Necromancer, Level 2
+difficulty 50
 region ancientpupland
-name Tower
-msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sat Jun  1 04:27:37 1996
-endmsg
 width 18
 height 23
-difficulty 5
+enter_x 11
+enter_y 6
+msg
+Created:  1996-06-01
+Modified: 2012-02-18 Rick Tanner
+endmsg
 end
 arch blocked
 end
@@ -94,44 +95,37 @@ arch teleporter
 name 12
 hp 5
 sp 7
-speed 0.000000
-protected 12
-connected 12
 y 17
+speed 0.000000
+connected 12
 end
 arch perm_magic_portal
-type 0
 slaying 0
 hp 0
 sp 0
-walk_on 0
-fly_on 0
 y 17
+type 0
 end
 arch magic_mouth
 name 10
 msg
 The Necromancer say:
-Hah! This time you'll die. Good bye
-my friend. Have fun with my pets...
+Hah! This time you'll die.  Good bye my friend.  Have fun with my pets...
 endmsg
-protected 10
-connected 10
 y 18
+connected 10
 end
 arch button_small
 name 10
-protected 10
+y 18
 weight 1000
 connected 10
-y 18
 end
 arch creator
 name 8
 other_arch boulder
-protected 8
-connected 8
 y 18
+connected 8
 end
 arch blocked
 y 19
@@ -182,11 +176,10 @@ x 1
 y 5
 end
 arch button_small
-protected 8
-weight 100000
-connected 8
 x 1
 y 5
+weight 100000
+connected 8
 end
 arch flagstone
 x 1
@@ -197,11 +190,10 @@ x 1
 y 6
 end
 arch grate_closed_1
-speed 0.500000
-protected 123
-connected 123
 x 1
 y 6
+speed 0.500000
+connected 123
 end
 arch unholy_ground
 x 1
@@ -233,10 +225,9 @@ y 10
 end
 arch pedestal
 name 20
-protected 20
-connected 20
 x 1
 y 10
+connected 20
 end
 arch flagstone
 x 1
@@ -248,10 +239,9 @@ y 11
 end
 arch pedestal
 name 20
-protected 20
-connected 20
 x 1
 y 11
+connected 20
 end
 arch flagstone
 x 1
@@ -263,10 +253,9 @@ y 12
 end
 arch pedestal
 name 20
-protected 20
-connected 20
 x 1
 y 12
+connected 20
 end
 arch flagstone
 x 1
@@ -276,7 +265,7 @@ arch flagstone
 x 1
 y 13
 end
-arch dwall3_3
+arch dwall_3_3
 x 1
 y 13
 end
@@ -366,11 +355,10 @@ end
 arch igate_closed_1
 name wall
 face dwall_A.111
-speed 0.500000
-protected 9
-connected 9
 x 2
 y 4
+speed 0.500000
+connected 9
 end
 arch dungeon_magic
 x 2
@@ -381,12 +369,11 @@ x 2
 y 5
 end
 arch grate_open_2
-speed 0.500000
-protected 7
-value 1
-connected 7
 x 2
 y 5
+speed 0.500000
+value 1
+connected 7
 end
 arch flagstone
 x 2
@@ -410,10 +397,9 @@ y 7
 end
 arch trigger
 name handle
-protected 123
-connected 123
 x 2
 y 7
+connected 123
 end
 arch unholy_ground
 x 2
@@ -437,10 +423,9 @@ y 10
 end
 arch pedestal
 name 20
-protected 20
-connected 20
 x 2
 y 10
+connected 20
 end
 arch flagstone
 x 2
@@ -467,10 +452,9 @@ y 12
 end
 arch pedestal
 name 20
-protected 20
-connected 20
 x 2
 y 12
+connected 20
 end
 arch flagstone
 x 2
@@ -487,11 +471,10 @@ end
 arch igate_closed_1
 name wall
 face dwall_A.111
-speed 0.500000
-protected 9
-connected 9
 x 2
 y 13
+speed 0.500000
+connected 9
 end
 arch unholy_ground
 x 2
@@ -531,89 +514,83 @@ y 18
 end
 arch igate_open_1
 name 10
-speed 0.500000
-protected 10
-value 1
-connected 10
 x 2
 y 19
+speed 0.500000
+value 1
+connected 10
 end
 arch scroll_2
 name aaa
-weight 10
 x 2
 y 19
+weight 10
 end
 arch note
 name 1 kg
-weight 1000
 x 2
 y 19
+weight 1000
 end
 arch scroll_2
-weight 10
 x 2
 y 19
+weight 10
 end
 arch altar
 name 12
 slaying aaa
 food 1
-protected 12
-connected 12
 x 2
 y 20
+connected 12
 end
 arch button_small
 name 11
-protected 11
-weight 1000
-connected 11
 x 2
 y 20
+weight 1000
+connected 11
 end
 arch altar
 name 9
 slaying aaa
 food 1
-protected 9
-connected 9
 x 2
 y 21
+connected 9
 end
 arch button_small
 name 13
-protected 13
-weight 1000
-connected 13
 x 2
 y 21
+weight 1000
+connected 13
 end
 arch igate_open_1
 name 12
-speed 0.500000
-protected 12
-value 1
-connected 12
 x 2
 y 22
+speed 0.500000
+value 1
+connected 12
 end
 arch scroll_2
 name aaa
-weight 10
 x 2
 y 22
+weight 10
 end
 arch note
 name 1 kg
-weight 1000
 x 2
 y 22
+weight 1000
 end
 arch scroll_2
-weight 10
 x 2
 y 22
+weight 10
 end
 arch blocked
 x 3
@@ -661,11 +638,10 @@ end
 arch igate_closed_1
 name wall
 face dwall_A.111
-speed 0.500000
-protected 9
-connected 9
 x 3
 y 4
+speed 0.500000
+connected 9
 end
 arch unholy_ground
 x 3
@@ -717,10 +693,9 @@ y 10
 end
 arch pedestal
 name 20
-protected 20
-connected 20
 x 3
 y 10
+connected 20
 end
 arch flagstone
 x 3
@@ -732,10 +707,9 @@ y 11
 end
 arch pedestal
 name 20
-protected 20
-connected 20
 x 3
 y 11
+connected 20
 end
 arch flagstone
 x 3
@@ -747,10 +721,9 @@ y 12
 end
 arch pedestal
 name 20
-protected 20
-connected 20
 x 3
 y 12
+connected 20
 end
 arch flagstone
 x 3
@@ -767,11 +740,10 @@ end
 arch igate_closed_1
 name wall
 face dwall_A.111
-speed 0.500000
-protected 9
-connected 9
 x 3
 y 13
+speed 0.500000
+connected 9
 end
 arch unholy_ground
 x 3
@@ -886,11 +858,10 @@ end
 arch igate_closed_1
 name wall
 face dwall_A.111
-speed 0.500000
-protected 9
-connected 9
 x 4
 y 4
+speed 0.500000
+connected 9
 end
 arch dungeon_magic
 x 4
@@ -901,12 +872,11 @@ x 4
 y 5
 end
 arch grate_open_2
-speed 0.500000
-protected 6
-value 1
-connected 6
 x 4
 y 5
+speed 0.500000
+value 1
+connected 6
 end
 arch flagstone
 x 4
@@ -979,11 +949,10 @@ end
 arch igate_closed_1
 name wall
 face dwall_A.111
-speed 0.500000
-protected 9
-connected 9
 x 4
 y 13
+speed 0.500000
+connected 9
 end
 arch unholy_ground
 x 4
@@ -1039,12 +1008,11 @@ y 18
 end
 arch igate_open_1
 name 6
-speed 0.500000
-protected 6
-value 1
-connected 6
 x 4
 y 19
+speed 0.500000
+value 1
+connected 6
 end
 arch scroll
 x 4
@@ -1052,22 +1020,22 @@ y 19
 end
 arch button_small
 name 7
-protected 7
-weight 10
-connected 7
 x 4
 y 20
+weight 10
+connected 7
 end
 arch igate_closed_1
-speed 0.500000
-protected 9
-connected 9
 x 4
 y 21
+speed 0.500000
+connected 9
 end
 arch lightningwall_1
 x 4
 y 22
+arch spell_sm_lightning
+end
 end
 arch flagstone
 x 5
@@ -1122,11 +1090,10 @@ end
 arch igate_closed_1
 name wall
 face dwall_A.111
-speed 0.500000
-protected 9
-connected 9
 x 5
 y 4
+speed 0.500000
+connected 9
 end
 arch unholy_ground
 x 5
@@ -1153,19 +1120,18 @@ x 5
 y 7
 end
 arch creator
-protected 11
-connected 11
 x 5
 y 7
+connected 11
 end
 arch flagstone
-type 41
 sp 17
-activate_on_push 1
-activate_on_release 1
-connected 9
 x 5
 y 7
+type 41
+connected 9
+activate_on_push 1
+activate_on_release 1
 end
 arch unholy_ground
 x 5
@@ -1218,11 +1184,10 @@ end
 arch igate_closed_1
 name wall
 face dwall_A.111
-speed 0.500000
-protected 9
-connected 9
 x 5
 y 13
+speed 0.500000
+connected 9
 end
 arch unholy_ground
 x 5
@@ -1353,11 +1318,10 @@ end
 arch igate_closed_1
 name wall
 face dwall_A.111
-speed 0.500000
-protected 9
-connected 9
 x 6
 y 4
+speed 0.500000
+connected 9
 end
 arch dungeon_magic
 x 6
@@ -1368,12 +1332,11 @@ x 6
 y 5
 end
 arch grate_open_2
-speed 0.500000
-protected 5
-value 1
-connected 5
 x 6
 y 5
+speed 0.500000
+value 1
+connected 5
 end
 arch flagstone
 x 6
@@ -1392,29 +1355,26 @@ x 6
 y 7
 end
 arch flagstone
-type 41
 sp 21
-activate_on_push 1
-activate_on_release 1
-connected 13
 x 6
 y 7
+type 41
+connected 13
+activate_on_push 1
+activate_on_release 1
 end
 arch necromancer
 msg
-@match [Ss]iegfried
+@match siegfried
 I hate Siegfried!!! He's a liar!
 @match *
 Arrgh! HIM again!
 endmsg
-randomitems none
-level 50
-can_cast_spell 0
 sp 0
 maxsp 0
-can_use_skill 0
-stand_still 1
-run_away 1
+x 6
+y 7
+level 50
 resist_physical 100
 resist_magic 100
 resist_fire 100
@@ -1422,12 +1382,15 @@ resist_electricity 100
 resist_cold 100
 resist_drain 100
 resist_ghosthit 100
-resist_deplete 100
 resist_turn_undead 100
+resist_deplete 100
 resist_death 100
+randomitems none
 scared 0
-x 6
-y 7
+run_away 1
+can_cast_spell 0
+stand_still 1
+can_use_skill 0
 end
 arch unholy_ground
 x 6
@@ -1480,11 +1443,10 @@ end
 arch igate_closed_1
 name wall
 face dwall_A.111
-speed 0.500000
-protected 9
-connected 9
 x 6
 y 13
+speed 0.500000
+connected 9
 end
 arch unholy_ground
 x 6
@@ -1548,12 +1510,11 @@ y 18
 end
 arch igate_open_1
 name 5
-speed 0.500000
-protected 5
-value 1
-connected 5
 x 6
 y 19
+speed 0.500000
+value 1
+connected 5
 end
 arch scroll
 x 6
@@ -1561,22 +1522,22 @@ y 19
 end
 arch button_small
 name 6
-protected 6
-weight 10
-connected 6
 x 6
 y 20
+weight 10
+connected 6
 end
 arch igate_closed_1
-speed 0.500000
-protected 9
-connected 9
 x 6
 y 21
+speed 0.500000
+connected 9
 end
 arch lightningwall_1
 x 6
 y 22
+arch spell_sm_lightning
+end
 end
 arch flagstone
 x 7
@@ -1631,11 +1592,10 @@ end
 arch igate_closed_1
 name wall
 face dwall_A.111
-speed 0.500000
-protected 9
-connected 9
 x 7
 y 4
+speed 0.500000
+connected 9
 end
 arch unholy_ground
 x 7
@@ -1737,14 +1697,17 @@ arch flagstone
 x 7
 y 13
 end
+arch swall_1_2_half
+x 7
+y 13
+end
 arch igate_closed_1
 name wall
 face dwall_A.111
-speed 0.500000
-protected 9
-connected 9
 x 7
 y 13
+speed 0.500000
+connected 9
 end
 arch unholy_ground
 x 7
@@ -1875,11 +1838,10 @@ end
 arch igate_closed_1
 name wall
 face dwall_A.111
-speed 0.500000
-protected 9
-connected 9
 x 8
 y 4
+speed 0.500000
+connected 9
 end
 arch dungeon_magic
 x 8
@@ -1890,12 +1852,11 @@ x 8
 y 5
 end
 arch grate_open_2
-speed 0.500000
-protected 4
-value 1
-connected 4
 x 8
 y 5
+speed 0.500000
+value 1
+connected 4
 end
 arch flagstone
 x 8
@@ -1918,10 +1879,9 @@ x 8
 y 7
 end
 arch trigger
-protected 1
-connected 1
 x 8
 y 7
+connected 1
 end
 arch unholy_ground
 x 8
@@ -1974,11 +1934,10 @@ end
 arch igate_closed_1
 name wall
 face dwall_A.111
-speed 0.500000
-protected 9
-connected 9
 x 8
 y 13
+speed 0.500000
+connected 9
 end
 arch unholy_ground
 x 8
@@ -2042,12 +2001,11 @@ y 18
 end
 arch igate_open_1
 name 4
-speed 0.500000
-protected 4
-value 1
-connected 4
 x 8
 y 19
+speed 0.500000
+value 1
+connected 4
 end
 arch scroll
 x 8
@@ -2055,22 +2013,22 @@ y 19
 end
 arch button_small
 name 5
-protected 5
-weight 10
-connected 5
 x 8
 y 20
+weight 10
+connected 5
 end
 arch igate_closed_1
-speed 0.500000
-protected 9
-connected 9
 x 8
 y 21
+speed 0.500000
+connected 9
 end
 arch lightningwall_1
 x 8
 y 22
+arch spell_sm_lightning
+end
 end
 arch flagstone
 x 9
@@ -2125,11 +2083,10 @@ end
 arch igate_closed_1
 name wall
 face dwall_A.111
-speed 0.500000
-protected 9
-connected 9
 x 9
 y 4
+speed 0.500000
+connected 9
 end
 arch unholy_ground
 x 9
@@ -2148,11 +2105,10 @@ x 9
 y 6
 end
 arch igate_closed_1
-speed 0.500000
-protected 3
-connected 3
 x 9
 y 6
+speed 0.500000
+connected 3
 end
 arch unholy_ground
 x 9
@@ -2213,11 +2169,10 @@ end
 arch igate_closed_1
 name wall
 face dwall_A.111
-speed 0.500000
-protected 9
-connected 9
 x 9
 y 13
+speed 0.500000
+connected 9
 end
 arch unholy_ground
 x 9
@@ -2348,9 +2303,12 @@ end
 arch igate_closed_1
 name wall
 face dwall_A.111
+x 10
+y 4
 speed 0.500000
-protected 9
 connected 9
+end
+arch swall_1_1_half
 x 10
 y 4
 end
@@ -2457,11 +2415,10 @@ end
 arch igate_closed_1
 name wall
 face dwall_A.111
-speed 0.500000
-protected 9
-connected 9
 x 10
 y 13
+speed 0.500000
+connected 9
 end
 arch unholy_ground
 x 10
@@ -2525,12 +2482,11 @@ y 18
 end
 arch igate_open_1
 name 3
-speed 0.500000
-protected 3
-value 1
-connected 3
 x 10
 y 19
+speed 0.500000
+value 1
+connected 3
 end
 arch scroll
 x 10
@@ -2538,22 +2494,22 @@ y 19
 end
 arch button_small
 name 4
-protected 4
-weight 10
-connected 4
 x 10
 y 20
+weight 10
+connected 4
 end
 arch igate_closed_1
-speed 0.500000
-protected 9
-connected 9
 x 10
 y 21
+speed 0.500000
+connected 9
 end
 arch lightningwall_1
 x 10
 y 22
+arch spell_sm_lightning
+end
 end
 arch flagstone
 x 11
@@ -2608,11 +2564,10 @@ end
 arch igate_closed_1
 name wall
 face dwall_A.111
-speed 0.500000
-protected 9
-connected 9
 x 11
 y 4
+speed 0.500000
+connected 9
 end
 arch unholy_ground
 x 11
@@ -2696,11 +2651,10 @@ end
 arch igate_closed_1
 name wall
 face dwall_A.111
-speed 0.500000
-protected 9
-connected 9
 x 11
 y 13
+speed 0.500000
+connected 9
 end
 arch unholy_ground
 x 11
@@ -2831,11 +2785,10 @@ end
 arch igate_closed_1
 name wall
 face dwall_A.111
-speed 0.500000
-protected 9
-connected 9
 x 12
 y 4
+speed 0.500000
+connected 9
 end
 arch unholy_ground
 x 12
@@ -2912,11 +2865,10 @@ end
 arch igate_closed_1
 name wall
 face dwall_A.111
-speed 0.500000
-protected 9
-connected 9
 x 12
 y 13
+speed 0.500000
+connected 9
 end
 arch unholy_ground
 x 12
@@ -2980,12 +2932,11 @@ y 18
 end
 arch igate_open_1
 name 1
-speed 0.500000
-protected 1
-value 1
-connected 1
 x 12
 y 19
+speed 0.500000
+value 1
+connected 1
 end
 arch scroll
 x 12
@@ -2997,18 +2948,16 @@ msg
 The Necromancer say:
 Doors: close! I won't let you pass...
 endmsg
-protected 3
-connected 3
 x 12
 y 20
+connected 3
 end
 arch button_small
 name 3
-protected 3
-weight 10
-connected 3
 x 12
 y 20
+weight 10
+connected 3
 end
 arch blocked
 x 12
@@ -3067,11 +3016,10 @@ end
 arch igate_closed_1
 name wall
 face dwall_A.111
-speed 0.500000
-protected 9
-connected 9
 x 13
 y 4
+speed 0.500000
+connected 9
 end
 arch unholy_ground
 x 13
@@ -3148,11 +3096,10 @@ end
 arch igate_closed_1
 name wall
 face dwall_A.111
-speed 0.500000
-protected 9
-connected 9
 x 13
 y 13
+speed 0.500000
+connected 9
 end
 arch unholy_ground
 x 13
@@ -3268,11 +3215,10 @@ end
 arch igate_closed_1
 name wall
 face dwall_A.111
-speed 0.500000
-protected 9
-connected 9
 x 14
 y 4
+speed 0.500000
+connected 9
 end
 arch unholy_ground
 x 14
@@ -3349,11 +3295,10 @@ end
 arch igate_closed_1
 name wall
 face dwall_A.111
-speed 0.500000
-protected 9
-connected 9
 x 14
 y 13
+speed 0.500000
+connected 9
 end
 arch unholy_ground
 x 14
@@ -3461,11 +3406,10 @@ end
 arch igate_closed_1
 name wall
 face dwall_A.111
-speed 0.500000
-protected 9
-connected 9
 x 15
 y 4
+speed 0.500000
+connected 9
 end
 arch unholy_ground
 x 15
@@ -3542,11 +3486,10 @@ end
 arch igate_closed_1
 name wall
 face dwall_A.111
-speed 0.500000
-protected 9
-connected 9
 x 15
 y 13
+speed 0.500000
+connected 9
 end
 arch unholy_ground
 x 15
@@ -3706,7 +3649,7 @@ arch flagstone
 x 16
 y 13
 end
-arch dwall3_3
+arch dwall_3_3
 x 16
 y 13
 end
@@ -3736,20 +3679,18 @@ y 17
 end
 arch spikes_closed
 name 3
-speed 0.500000
-protected 3
-connected 3
 x 16
 y 18
+speed 0.500000
+connected 3
 end
 arch igate_open_1
 name 21
-speed 0.500000
-protected 21
-value 1
-connected 21
 x 16
 y 19
+speed 0.500000
+value 1
+connected 21
 end
 arch scroll
 x 16
@@ -3757,36 +3698,32 @@ y 19
 end
 arch button_small
 name 8 - player_on_wrong_side
-protected 8
-weight 10
-connected 8
 x 16
 y 20
+weight 10
+connected 8
 end
 arch spikes_open
 name 3
-speed 0.500000
-protected 3
-value 1
-connected 3
 x 16
 y 20
+speed 0.500000
+value 1
+connected 3
 end
 arch button_small
 name 21
-protected 21
-weight 1000
-connected 21
 x 16
 y 21
+weight 1000
+connected 21
 end
 arch creator
 name 20
 other_arch boulder
-protected 20
-connected 20
 x 16
 y 21
+connected 20
 end
 arch blocked
 x 16

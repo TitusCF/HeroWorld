@@ -1,13 +1,15 @@
 arch map
+name Orc Farm
+difficulty 8
 region pupland
-name orc_f
+width 25
+height 17
+enter_x 2
+enter_y 1
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue Jun 11 22:38:29 1996
+Created:  1996-06-11
+Modified: 2008-10-12 Rick Tanner
 endmsg
-x 25
-y 17
 end
 arch dungeon_floor
 end
@@ -530,7 +532,7 @@ end
 arch mine3
 x 4
 y 14
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 4
@@ -922,7 +924,7 @@ end
 arch mine2
 x 8
 y 10
-no_pass 0
+move_block 0
 end
 arch grassdark
 name grass
@@ -1179,7 +1181,7 @@ end
 arch mine2
 x 11
 y 2
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 11
@@ -1957,7 +1959,6 @@ end
 arch button_plate
 x 18
 y 9
-protected 1
 connected 1
 end
 arch dungeon_floor
@@ -2129,7 +2130,6 @@ arch igate_closed_1
 x 20
 y 5
 speed 0.500000
-protected 1
 connected 1
 end
 arch dungeon_floor

@@ -1,9 +1,14 @@
 arch map
+name House
+difficulty 9
 region ancientpupland
+width 16
+height 16
+enter_x 7
+enter_y 1
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue May  7 07:07:18 1996
+Created:  1996-05-07
+Modified: 2008-12-03 Rick Tanner
 endmsg
 end
 arch pstone_1
@@ -640,7 +645,7 @@ end
 arch door_look_2
 x 6
 y 4
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 6
@@ -673,7 +678,7 @@ end
 arch door_look_2
 x 6
 y 8
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 6
@@ -734,7 +739,7 @@ end
 arch pstone_1
 x 7
 end
-arch oakdoor
+arch oakdoor_2
 slaying village
 hp 10
 sp 13
@@ -825,7 +830,7 @@ end
 arch door_look_2
 x 8
 y 2
-no_pass 0
+move_block 0
 end
 arch pstone_1
 x 8
@@ -886,7 +891,7 @@ end
 arch door_look_2
 x 8
 y 10
-no_pass 0
+move_block 0
 end
 arch pstone_1
 x 8

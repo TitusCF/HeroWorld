@@ -1,13 +1,15 @@
 arch map
+name J.Griffin's Hut, Mainfloor
+difficulty 1
 region pupland
-name KI
+width 12
+height 12
+enter_x 2
+enter_y 10
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Thu Feb  8 01:08:02 1996
+Created:  1996-02-08
+Modified: 2012-03-08 Rick Tanner
 endmsg
-x 12
-y 12
 end
 arch woodfloor
 end
@@ -90,6 +92,7 @@ x 1
 y 1
 end
 arch charwoman
+name chairwoman
 msg
 @match *
 I'm too busy to answer your queries.
@@ -376,7 +379,6 @@ msg
 endmsg
 x 5
 y 5
-protected 1
 connected 1
 end
 arch woodfloor
@@ -387,38 +389,23 @@ arch guildmaster
 name J.Griffin
 msg
 @match hi|hello
-Hello, boy. Do you know my first name?
+Hello, boy.  Do you know my first name?
 @match yes
 So...?
 @match no
-If you can't even find out about my
-first name, this is the wrong place
-for you! Go fight some Orcs...
+If you can't even find out about my first name, this is the wrong place for you! Go fight some Orcs...
 @match jake
-Oh! You are quite okay. I'll tell
-you a secret: 
-On one of the islands close to this
-beloved "Red Island", there's an
-ancient ruin. There you can find some
-very old and powerful artifacts.
-Now go upsairs to get some more
-information.
+Oh! You are quite okay.  I'll tell you a secret: On one of the islands close to this beloved "Red Island," there's an ancient ruin.  There you can find some very old and powerful artifacts.  Now go upstairs to get some more information.
 @match ken
 Who is that?
 @match odo
-Well... I don't know much. My friend
-To-jyo is more familiar with stories
-about the ancient gods.
+Well... I don't know much.  My friend To-jyo is more familiar with stories about the ancient gods.
 @match To-jyo
-He is an archeologist. He lives
-on the island to the east from here.
-Take the ship from this city to visit
-him.
+He is an archeologist.  He lives to the east of here on an island.  The local sailors are friendly, so it should be easy to find a ship to take you there.
 @match key
-O.K. Try the game.
+O.K.  Try the game.
 @match *
-Go away! You are too young and too
-loud... You should learn some manners.
+Go away! You are too young and too loud... You should learn some manners.
 endmsg
 hp 500
 x 5
@@ -599,7 +586,6 @@ arch pedestal
 name 1 - if player on wrong side
 x 8
 y 1
-protected 1
 connected 1
 end
 arch woodfloor
@@ -617,8 +603,6 @@ end
 arch grate_closed_1
 x 8
 y 2
-speed 0.500000
-protected 2
 connected 2
 end
 arch woodfloor
@@ -817,7 +801,6 @@ end
 arch button_small
 name 2
 x 11
-protected 2
 weight 10000
 connected 2
 end
@@ -825,7 +808,6 @@ arch creator
 name 1
 other_arch boulder
 x 11
-protected 1
 connected 1
 end
 arch blocked

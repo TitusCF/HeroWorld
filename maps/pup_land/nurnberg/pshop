@@ -1,15 +1,17 @@
 arch map
+name Invulnerable
+difficulty 25
 region nurnberg
-name pshop
-msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue Feb 13 01:00:57 1996
-endmsg
-x 25
-y 25
 shopitems potion:100;*:-100
 shopmax 20000
+width 25
+height 25
+enter_x 23
+enter_y 1
+msg
+Created:  1996-02-13
+Modified: 2012-03-04 Rick Tanner
+endmsg
 end
 arch grass
 end
@@ -1188,6 +1190,10 @@ x 8
 y 7
 end
 arch dungeon_floor
+x 8
+y 8
+end
+arch swall_1_4_half
 x 8
 y 8
 end
@@ -1415,7 +1421,7 @@ end
 arch door_look_1
 x 10
 y 4
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 10
@@ -1527,7 +1533,7 @@ end
 arch door_look_1
 x 11
 y 4
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 11
@@ -1647,7 +1653,7 @@ end
 arch door_look_1
 x 12
 y 4
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 12
@@ -1783,13 +1789,13 @@ end
 arch swashbuckler
 msg
 @match *
-Welcome to the potion drugstore,
-Invulnerable! 
+Welcome to the potion drugstore, Invulnerable!
 endmsg
 hp 100
 x 13
 y 7
 type 0
+move_type walk
 monster 1
 friendly 1
 end
@@ -1921,6 +1927,10 @@ x 14
 y 8
 end
 arch wwall_2_1_1
+x 14
+y 8
+end
+arch swall_1_3_half
 x 14
 y 8
 end
@@ -3027,8 +3037,7 @@ y 3
 end
 arch sign
 msg
-Dragstore, Invulnerable is here!
-Please Live a healthy life :)
+Drugstore, Invulnerable is here! Please Live a healthy life. :)
 endmsg
 x 23
 y 3

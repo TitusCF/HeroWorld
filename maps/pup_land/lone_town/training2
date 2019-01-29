@@ -1,14 +1,15 @@
 arch map
+name Lone Town Training Center, Finale
+difficulty 25
 region lonetown
-name training2
+width 32
+height 10
+enter_x 1
+enter_y 1
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Mon Jan 29 20:30:19 1996
+Created:  1996-01-29
+Modified: 2012-03-01 Rick Tanner
 endmsg
-x 32
-y 10
-level 2
 end
 arch cobblestones2
 end
@@ -187,8 +188,8 @@ arch sign
 msg
 Room3
 Level:          Very High
-Contents:       orcs,goblins,gnoll,etc
-Comment:        We test your pluck.
+Contents:       orcs, goblins, gnolls, etc.
+Comment:        We test your luck.
 endmsg
 x 2
 y 3
@@ -212,7 +213,6 @@ end
 arch trigger
 x 2
 y 5
-protected 1
 connected 1
 end
 arch dungeon_magic
@@ -284,7 +284,6 @@ end
 arch gateTrg2
 x 3
 y 4
-protected 1
 connected 1
 end
 arch pstone_1
@@ -368,7 +367,6 @@ end
 arch trigger
 x 4
 y 3
-protected 1
 connected 1
 end
 arch orc
@@ -2930,6 +2928,31 @@ end
 arch pstone_1
 x 28
 y 4
+end
+arch demon_lord
+name Demon Lord?
+Con 1
+hp 35
+maxhp 50
+exp 500
+dam 3
+wc -1
+ac 10
+x 28
+y 4
+level 5
+attacktype 1
+value 1000
+carrying 2200
+identified 1
+can_cast_spell 0
+arch gloves
+nrof 4
+end
+arch potion_heal
+arch spell_heal
+end
+end
 end
 arch pstone_1
 x 28
@@ -3124,27 +3147,4 @@ end
 arch rough_wall_2_2_4
 x 31
 y 9
-end
-arch demon_lord
-name Demon Lord?
-Con 1
-hp 35
-maxhp 50
-exp 500
-dam 3
-wc -1
-ac 10
-x 28
-y 4
-level 5
-attacktype 1
-value 1000
-carrying 2200
-identified 1
-can_cast_spell 0
-arch gloves
-nrof 4
-end
-arch potion_heal
-end
 end

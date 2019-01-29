@@ -1,13 +1,15 @@
 arch map
-name cave_pass
+name Cave Passageway, Entrance
+difficulty 10
 region pupland
+darkness 1
 width 16
 height 32
+enter_x 5
+enter_y 1
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sat Jan 27 23:52:03 1996
-Modified: 2019-01-01 Acer
+Created:  1996-01-27
+Modified: 2008-10-27 Rick Tanner
 endmsg
 end
 arch blocked
@@ -515,6 +517,9 @@ arch blocked
 x 2
 y 31
 end
+arch pstone_1
+x 3
+end
 arch mine2
 x 3
 end
@@ -570,29 +575,57 @@ arch generate_ant
 x 3
 y 7
 end
+arch pstone_1
+x 3
+y 8
+end
 arch mine10
 x 3
 y 8
 end
-arch mine3
+arch pstone_1
 x 3
 y 9
 end
 arch mine3
 x 3
+y 9
+end
+arch pstone_1
+x 3
 y 10
 end
 arch mine3
+x 3
+y 10
+end
+arch pstone_1
 x 3
 y 11
 end
 arch mine3
 x 3
+y 11
+end
+arch pstone_1
+x 3
 y 12
+end
+arch mine3
+x 3
+y 12
+end
+arch pstone_1
+x 3
+y 13
 end
 arch mine11
 x 3
 y 13
+end
+arch pstone_1
+x 3
+y 14
 end
 arch mine4
 x 3
@@ -637,6 +670,10 @@ end
 arch mine10
 x 3
 y 19
+end
+arch pstone_1
+x 3
+y 20
 end
 arch mine4
 x 3
@@ -740,17 +777,33 @@ arch mine8
 x 4
 y 4
 end
-arch mine3
+arch pstone_1
 x 4
 y 5
 end
 arch mine3
 x 4
+y 5
+end
+arch pstone_1
+x 4
 y 6
 end
 arch mine3
 x 4
+y 6
+end
+arch pstone_1
+x 4
 y 7
+end
+arch mine3
+x 4
+y 7
+end
+arch pstone_1
+x 4
+y 8
 end
 arch mine12
 x 4
@@ -788,41 +841,81 @@ arch slime
 x 4
 y 12
 end
+arch pstone_1
+x 4
+y 13
+end
 arch blocked
 x 4
 y 13
+end
+arch pstone_1
+x 4
+y 14
 end
 arch mine17
 x 4
 y 14
 end
-arch mine3
+arch pstone_1
 x 4
 y 15
 end
 arch mine3
 x 4
+y 15
+end
+arch pstone_1
+x 4
 y 16
 end
 arch mine3
+x 4
+y 16
+end
+arch pstone_1
 x 4
 y 17
 end
 arch mine3
 x 4
+y 17
+end
+arch pstone_1
+x 4
 y 18
+end
+arch mine3
+x 4
+y 18
+end
+arch pstone_1
+x 4
+y 19
 end
 arch blocked
 x 4
 y 19
 end
+arch pstone_1
+x 4
+y 20
+end
 arch mine14
 x 4
 y 20
 end
+arch pstone_1
+x 4
+y 21
+end
 arch mine3
 x 4
 y 21
+end
+arch pstone_1
+x 4
+y 22
 end
 arch mine4
 x 4
@@ -852,6 +945,10 @@ arch mine8
 x 4
 y 25
 end
+arch pstone_1
+x 4
+y 26
+end
 arch mine11
 x 4
 y 26
@@ -877,7 +974,7 @@ x 4
 y 31
 end
 arch invis_exit
-slaying /world/world_103_104
+slaying ../world
 hp 21
 sp 26
 x 5
@@ -991,6 +1088,10 @@ arch slime
 x 5
 y 13
 end
+arch pstone_1
+x 5
+y 14
+end
 arch mine2
 x 5
 y 14
@@ -1051,9 +1152,17 @@ arch orc
 x 5
 y 21
 end
+arch pstone_1
+x 5
+y 22
+end
 arch mine9
 x 5
 y 22
+end
+arch pstone_1
+x 5
+y 23
 end
 arch mine4
 x 5
@@ -1157,21 +1266,41 @@ arch mine8
 x 6
 y 6
 end
+arch pstone_1
+x 6
+y 7
+end
 arch mine3
 x 6
 y 7
 end
-arch mine11
+arch pstone_1
 x 6
 y 8
 end
 arch mine11
 x 6
+y 8
+end
+arch pstone_1
+x 6
 y 9
 end
 arch mine11
 x 6
+y 9
+end
+arch pstone_1
+x 6
 y 10
+end
+arch mine11
+x 6
+y 10
+end
+arch pstone_1
+x 6
+y 11
 end
 arch mine4
 x 6
@@ -1193,6 +1322,10 @@ arch slime
 x 6
 y 13
 end
+arch pstone_1
+x 6
+y 14
+end
 arch mine2
 x 6
 y 14
@@ -1205,21 +1338,41 @@ arch orc
 x 6
 y 15
 end
+arch pstone_1
+x 6
+y 16
+end
 arch mine10
 x 6
 y 16
 end
-arch mine3
+arch pstone_1
 x 6
 y 17
 end
 arch mine3
 x 6
+y 17
+end
+arch pstone_1
+x 6
 y 18
 end
 arch mine3
 x 6
+y 18
+end
+arch pstone_1
+x 6
 y 19
+end
+arch mine3
+x 6
+y 19
+end
+arch pstone_1
+x 6
+y 20
 end
 arch mine4
 x 6
@@ -1240,6 +1393,10 @@ end
 arch generate_orc
 x 6
 y 22
+end
+arch pstone_1
+x 6
+y 23
 end
 arch mine2
 x 6
@@ -1293,12 +1450,23 @@ arch blocked
 x 6
 y 31
 end
+arch pstone_1
+x 7
+end
 arch mine16
 x 7
+end
+arch pstone_1
+x 7
+y 1
 end
 arch mine11
 x 7
 y 1
+end
+arch pstone_1
+x 7
+y 2
 end
 arch mine4
 x 7
@@ -1348,6 +1516,10 @@ arch blocked
 x 7
 y 10
 end
+arch pstone_1
+x 7
+y 11
+end
 arch mine12
 x 7
 y 11
@@ -1368,6 +1540,10 @@ arch slime
 x 7
 y 13
 end
+arch pstone_1
+x 7
+y 14
+end
 arch mine2
 x 7
 y 14
@@ -1379,6 +1555,10 @@ end
 arch orc
 x 7
 y 15
+end
+arch pstone_1
+x 7
+y 16
 end
 arch mine2
 x 7
@@ -1395,6 +1575,10 @@ end
 arch pstone_2
 x 7
 y 19
+end
+arch pstone_1
+x 7
+y 20
 end
 arch mine2
 x 7
@@ -1416,21 +1600,41 @@ arch mine8
 x 7
 y 22
 end
+arch pstone_1
+x 7
+y 23
+end
 arch mine14
 x 7
 y 23
 end
-arch mine11
+arch pstone_1
 x 7
 y 24
 end
 arch mine11
 x 7
+y 24
+end
+arch pstone_1
+x 7
 y 25
 end
 arch mine11
 x 7
+y 25
+end
+arch pstone_1
+x 7
 y 26
+end
+arch mine11
+x 7
+y 26
+end
+arch pstone_1
+x 7
+y 27
 end
 arch mine11
 x 7
@@ -1459,13 +1663,25 @@ arch blocked
 x 8
 y 1
 end
+arch pstone_1
+x 8
+y 2
+end
 arch mine17
 x 8
 y 2
 end
+arch pstone_1
+x 8
+y 3
+end
 arch mine11
 x 8
 y 3
+end
+arch pstone_1
+x 8
+y 4
 end
 arch mine11
 x 8
@@ -1539,6 +1755,10 @@ arch slime
 x 8
 y 13
 end
+arch pstone_1
+x 8
+y 14
+end
 arch mine2
 x 8
 y 14
@@ -1550,6 +1770,10 @@ end
 arch orc
 x 8
 y 15
+end
+arch pstone_1
+x 8
+y 16
 end
 arch mine2
 x 8
@@ -1570,6 +1794,10 @@ end
 arch pstone_2
 x 8
 y 19
+end
+arch pstone_1
+x 8
+y 20
 end
 arch mine2
 x 8
@@ -1650,6 +1878,10 @@ arch blocked
 x 9
 y 4
 end
+arch pstone_1
+x 9
+y 5
+end
 arch mine13
 x 9
 y 5
@@ -1706,6 +1938,10 @@ arch mine10
 x 9
 y 13
 end
+arch pstone_1
+x 9
+y 14
+end
 arch mine13
 x 9
 y 14
@@ -1718,6 +1954,10 @@ arch orc
 x 9
 y 15
 end
+arch pstone_1
+x 9
+y 16
+end
 arch mine2
 x 9
 y 16
@@ -1725,6 +1965,10 @@ end
 arch pstone_2
 x 9
 y 17
+end
+arch pstone_1
+x 9
+y 18
 end
 arch mine2
 x 9
@@ -1744,6 +1988,10 @@ end
 arch raas
 x 9
 y 19
+end
+arch pstone_1
+x 9
+y 20
 end
 arch mine2
 x 9
@@ -1884,10 +2132,10 @@ can_use_weapon 0
 arch horned_helmet
 name orcish helmet
 ac 2
+resist_physical 3
+resist_poison 30
 weight 8000
 magic 1
-armour 3
-protected 1024
 end
 end
 arch mine2
@@ -1910,9 +2158,17 @@ arch mine8
 x 10
 y 11
 end
+arch pstone_1
+x 10
+y 12
+end
 arch mine3
 x 10
 y 12
+end
+arch pstone_1
+x 10
+y 13
 end
 arch blocked
 x 10
@@ -1934,6 +2190,10 @@ arch orc
 x 10
 y 15
 end
+arch pstone_1
+x 10
+y 16
+end
 arch mine2
 x 10
 y 16
@@ -1942,33 +2202,65 @@ arch pstone_1
 x 10
 y 17
 end
+arch pstone_1
+x 10
+y 18
+end
 arch mine9
 x 10
 y 18
+end
+arch pstone_1
+x 10
+y 19
 end
 arch mine3
 x 10
 y 19
 end
+arch pstone_1
+x 10
+y 20
+end
 arch mine14
 x 10
 y 20
 end
-arch mine3
+arch pstone_1
 x 10
 y 21
 end
 arch mine3
 x 10
+y 21
+end
+arch pstone_1
+x 10
 y 22
 end
 arch mine3
+x 10
+y 22
+end
+arch pstone_1
 x 10
 y 23
 end
 arch mine3
 x 10
+y 23
+end
+arch pstone_1
+x 10
 y 24
+end
+arch mine3
+x 10
+y 24
+end
+arch pstone_1
+x 10
+y 25
 end
 arch mine4
 x 10
@@ -2016,6 +2308,10 @@ end
 arch blocked
 x 11
 y 1
+end
+arch pstone_1
+x 11
+y 2
 end
 arch mine13
 x 11
@@ -2109,6 +2405,10 @@ arch orc
 x 11
 y 15
 end
+arch pstone_1
+x 11
+y 16
+end
 arch mine2
 x 11
 y 16
@@ -2173,17 +2473,33 @@ arch generate_bat
 x 11
 y 24
 end
+arch pstone_1
+x 11
+y 25
+end
 arch mine9
 x 11
 y 25
 end
-arch mine3
+arch pstone_1
 x 11
 y 26
 end
 arch mine3
 x 11
+y 26
+end
+arch pstone_1
+x 11
 y 27
+end
+arch mine3
+x 11
+y 27
+end
+arch pstone_1
+x 11
+y 28
 end
 arch mine3
 x 11
@@ -2208,9 +2524,17 @@ arch blocked
 x 12
 y 1
 end
+arch pstone_1
+x 12
+y 2
+end
 arch mine17
 x 12
 y 2
+end
+arch pstone_1
+x 12
+y 3
 end
 arch mine11
 x 12
@@ -2285,6 +2609,8 @@ end
 arch gem
 end
 arch potion_magic
+arch spell_regenerate_spellpoints
+end
 end
 end
 arch flagstone
@@ -2315,37 +2641,73 @@ arch mine8
 x 12
 y 11
 end
-arch mine3
+arch pstone_1
 x 12
 y 12
 end
 arch mine3
 x 12
+y 12
+end
+arch pstone_1
+x 12
 y 13
 end
 arch mine3
+x 12
+y 13
+end
+arch pstone_1
 x 12
 y 14
 end
 arch mine3
 x 12
+y 14
+end
+arch pstone_1
+x 12
 y 15
+end
+arch mine3
+x 12
+y 15
+end
+arch pstone_1
+x 12
+y 16
 end
 arch mine14
 x 12
 y 16
 end
-arch mine3
+arch pstone_1
 x 12
 y 17
 end
 arch mine3
 x 12
+y 17
+end
+arch pstone_1
+x 12
 y 18
 end
 arch mine3
 x 12
+y 18
+end
+arch pstone_1
+x 12
 y 19
+end
+arch mine3
+x 12
+y 19
+end
+arch pstone_1
+x 12
+y 20
 end
 arch mine3
 x 12
@@ -2437,6 +2799,10 @@ end
 arch blocked
 x 13
 y 2
+end
+arch pstone_1
+x 13
+y 3
 end
 arch mine13
 x 13
@@ -2602,13 +2968,25 @@ arch mine10
 x 13
 y 25
 end
-arch mine11
+arch pstone_1
 x 13
 y 26
 end
 arch mine11
 x 13
+y 26
+end
+arch pstone_1
+x 13
 y 27
+end
+arch mine11
+x 13
+y 27
+end
+arch pstone_1
+x 13
+y 28
 end
 arch mine11
 x 13
@@ -2637,9 +3015,17 @@ arch blocked
 x 14
 y 2
 end
+arch pstone_1
+x 14
+y 3
+end
 arch mine17
 x 14
 y 3
+end
+arch pstone_1
+x 14
+y 4
 end
 arch mine4
 x 14
@@ -2793,6 +3179,10 @@ arch mine10
 x 14
 y 23
 end
+arch pstone_1
+x 14
+y 24
+end
 arch mine11
 x 14
 y 24
@@ -2840,77 +3230,153 @@ arch blocked
 x 15
 y 3
 end
+arch pstone_1
+x 15
+y 4
+end
 arch mine14
 x 15
 y 4
 end
-arch mine3
+arch pstone_1
 x 15
 y 5
 end
 arch mine3
 x 15
+y 5
+end
+arch pstone_1
+x 15
 y 6
 end
 arch mine3
+x 15
+y 6
+end
+arch pstone_1
 x 15
 y 7
 end
 arch mine3
 x 15
+y 7
+end
+arch pstone_1
+x 15
 y 8
+end
+arch mine3
+x 15
+y 8
+end
+arch pstone_1
+x 15
+y 9
 end
 arch mine14
 x 15
 y 9
 end
-arch mine3
+arch pstone_1
 x 15
 y 10
 end
 arch mine3
 x 15
+y 10
+end
+arch pstone_1
+x 15
 y 11
 end
 arch mine3
+x 15
+y 11
+end
+arch pstone_1
 x 15
 y 12
 end
 arch mine3
 x 15
+y 12
+end
+arch pstone_1
+x 15
 y 13
 end
 arch mine3
+x 15
+y 13
+end
+arch pstone_1
 x 15
 y 14
 end
 arch mine3
 x 15
+y 14
+end
+arch pstone_1
+x 15
 y 15
 end
 arch mine3
+x 15
+y 15
+end
+arch pstone_1
 x 15
 y 16
 end
 arch mine3
 x 15
+y 16
+end
+arch pstone_1
+x 15
 y 17
 end
 arch mine3
+x 15
+y 17
+end
+arch pstone_1
 x 15
 y 18
 end
 arch mine3
 x 15
+y 18
+end
+arch pstone_1
+x 15
 y 19
 end
 arch mine3
+x 15
+y 19
+end
+arch pstone_1
 x 15
 y 20
 end
 arch mine3
 x 15
+y 20
+end
+arch pstone_1
+x 15
 y 21
+end
+arch mine3
+x 15
+y 21
+end
+arch pstone_1
+x 15
+y 22
 end
 arch mine3
 x 15

@@ -1,10 +1,14 @@
 arch map
+name Ancient Ruins, Upper Level
+difficulty 8
 region pupland
-name floor2
+width 16
+height 16
+enter_x 1
+enter_y 14
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Wed Feb  7 20:41:53 1996
+Created:  1996-02-07
+Modified: 2011-12-23 Rick Tanner
 endmsg
 end
 arch cobblestones2
@@ -1779,7 +1783,6 @@ hp 30
 exp 60
 dam 20
 wc 10
-ac 8
 x 14
 y 14
 attack_movement 4
@@ -1790,13 +1793,11 @@ can_use_weapon 0
 arch crown
 name crown of Odo
 msg
-On this crown, mysterious pattern are
-carved. It seems to be made by ancient
-people
+On this crown, mysterious pattern are carved. It seems to be made by ancient people.
 endmsg
 Int 1
 ac 1
-armour 4
+resist_physical 4
 material 64
 value 320000
 weight 33000

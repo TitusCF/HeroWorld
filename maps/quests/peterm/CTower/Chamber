@@ -1,8 +1,14 @@
 arch map
+name Tower of the Stars, Chamber
+difficulty 25
+region wilderness
+width 13
+height 13
+enter_x 11
+enter_y 7
 msg
-Creator: peter mardahl
-Email: peterm@soda.berkeley.edu
-Date: Fri Feb 11 16:20:28 1994
+Created:  1994-02-11 peter mardahl (peterm@soda.berkeley.edu)
+Modified: 2008-12-22 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -213,8 +219,6 @@ x 6
 y 8
 speed 0.200000
 level 6
-protected 0
-can_use_wand 0
 sleep 0
 end
 arch woodfloor
@@ -452,6 +456,8 @@ end
 arch potion_magic
 x 10
 y 6
+arch spell_regenerate_spellpoints
+end
 end
 arch woodfloor
 x 10

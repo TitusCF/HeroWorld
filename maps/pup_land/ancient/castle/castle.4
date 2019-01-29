@@ -1,14 +1,15 @@
 arch map
+name Gothwolte's Castle, Level 4
+difficulty 80
 region ancientpupland
-name castle
-msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sun Dec 15 18:38:35 1996
-endmsg
 width 28
 height 28
-difficulty 6
+enter_x 3
+enter_y 3
+msg
+Created:  1996-12-15
+Modified: 2012-02-22 Rick Tanner
+endmsg
 end
 arch marble
 end
@@ -575,11 +576,7 @@ y 5
 end
 arch magic_mouth
 msg
-Urg! This place smells rotten...
-A huge hall filled with corpses, you
-hardly believe your eyes!
-The time has come to put an end to
-this cruelty!
+Urg! This place smells rotten... A huge hall filled with corpses, you hardly believe your eyes! The time has come to put an end to this cruelty!
 endmsg
 x 3
 y 5
@@ -661,7 +658,6 @@ x 3
 y 15
 end
 arch corpse1
-name corpse
 x 3
 y 15
 end
@@ -678,7 +674,6 @@ x 3
 y 17
 end
 arch corpse1
-name corpse
 x 3
 y 17
 end
@@ -821,7 +816,6 @@ x 4
 y 11
 end
 arch corpse1
-name corpse
 x 4
 y 11
 end
@@ -886,7 +880,6 @@ x 4
 y 19
 end
 arch corpse1
-name corpse
 x 4
 y 19
 end
@@ -966,11 +959,7 @@ y 3
 end
 arch magic_mouth
 msg
-Urg! This place smells rotten...
-A huge hall filled with corpses, you
-hardly believe your eyes!
-The time has come to put an end to
-this cruelty!
+Urg! This place smells rotten... A huge hall filled with corpses, you hardly believe your eyes! The time has come to put an end to this cruelty!
 endmsg
 x 5
 y 3
@@ -1012,7 +1001,6 @@ x 5
 y 8
 end
 arch corpse1
-name corpse
 x 5
 y 8
 end
@@ -1029,7 +1017,6 @@ x 5
 y 10
 end
 arch corpse1
-name corpse
 x 5
 y 10
 end
@@ -1054,7 +1041,6 @@ x 5
 y 13
 end
 arch corpse1
-name corpse
 x 5
 y 13
 end
@@ -1273,7 +1259,6 @@ x 6
 y 17
 end
 arch corpse1
-name corpse
 x 6
 y 17
 end
@@ -1388,7 +1373,6 @@ x 7
 y 8
 end
 arch corpse1
-name corpse
 x 7
 y 8
 end
@@ -1397,7 +1381,6 @@ x 7
 y 9
 end
 arch corpse1
-name corpse
 x 7
 y 9
 end
@@ -1438,7 +1421,6 @@ x 7
 y 14
 end
 arch corpse1
-name corpse
 x 7
 y 14
 end
@@ -1479,7 +1461,6 @@ x 7
 y 19
 end
 arch corpse1
-name corpse
 x 7
 y 19
 end
@@ -1574,7 +1555,6 @@ x 8
 y 7
 end
 arch corpse1
-name corpse
 x 8
 y 7
 end
@@ -1607,7 +1587,6 @@ x 8
 y 11
 end
 arch corpse1
-name corpse
 x 8
 y 11
 end
@@ -1648,7 +1627,6 @@ x 8
 y 16
 end
 arch corpse1
-name corpse
 x 8
 y 16
 end
@@ -1665,7 +1643,6 @@ x 8
 y 18
 end
 arch corpse1
-name corpse
 x 8
 y 18
 end
@@ -1744,6 +1721,10 @@ arch cwall_3_3
 x 9
 end
 arch marble
+x 9
+y 1
+end
+arch swall_1_4_half
 x 9
 y 1
 end
@@ -1917,10 +1898,10 @@ y 4
 end
 arch torch_1
 food 0
-no_pick 1
-changing 0
 x 10
 y 4
+no_pick 1
+changing 0
 end
 arch marble
 x 10
@@ -1991,20 +1972,20 @@ x 10
 y 21
 end
 arch igate_closed_1
-speed 0.500000
-connected 1
 x 10
 y 21
+speed 0.500000
+connected 1
 end
 arch afloor_right
 x 10
 y 22
 end
 arch igate_closed_1
-speed 0.500000
-connected 1
 x 10
 y 22
+speed 0.500000
+connected 1
 end
 arch afloor_right
 x 10
@@ -2052,29 +2033,26 @@ end
 arch prisoner
 name dying prisoner
 msg
-@match [Cc]orpse|[Yy]es
-... the Evil Masters... killing one
-person - every week... and
-Gothwolte... searching for the
-`perfect body'... so they... joined
-forces...
-@match [Gg]othwolte
-... Gothwolte... testing our
-strengh... all of us... died...
-and now... my turn...
+@match corpse|yes
+... the Evil Masters... killing one person - every week... and Gothwolte... searching for the `perfect body'... so they... joined forces...
+@match gothwolte
+... Gothwolte... testing our strength... all of us... died... and now... my turn...
 @match *
-... you see... all those
-corpses?
+... you see... all those corpses?
 endmsg
 Str 10
 Con 10
 Pow 0
 hp 100
 maxhp 100
-level 10
-immune 31
 x 11
 y 1
+level 10
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
 end
 arch permanent_lava
 name fire
@@ -2087,8 +2065,7 @@ y 2
 end
 arch magic_mouth
 msg
-The prisoner is screaming of pain!
-You feel very sorry for him.
+The prisoner is screaming of pain! You feel very sorry for him.
 endmsg
 x 11
 y 3
@@ -2164,22 +2141,20 @@ y 18
 end
 arch check_inv
 slaying mortex
-connected 10
 x 11
 y 19
+connected 10
 end
 arch magic_mouth
 msg
 You decipher the ancient symbols:
-"To meet Gothwolte, speaketh the name
-of his sword."
+"To meet Gothwolte, speaketh the name of his sword."
 endmsg
-connected 10
-walk_on 0
-fly_on 0
-activate_on_release 0
 x 11
 y 19
+connected 10
+move_on 0
+activate_on_release 0
 end
 arch afloor_right
 x 11
@@ -2187,22 +2162,19 @@ y 19
 end
 arch sign
 msg
-You are unable to decipher those
-strange symbols. It seems to be an
-ancient script... You need a
-translation book to read that!
+You are unable to decipher those strange symbols.  It seems to be an ancient script... You need a translation book to read that!
 endmsg
 x 11
 y 19
 end
 arch magic_ear
 msg
-@match whirlwind|Whirlwind
+@match whirlwind
 Click.
 endmsg
-connected 1
 x 11
 y 20
+connected 1
 end
 arch afloor_right
 x 11
@@ -2213,20 +2185,20 @@ x 11
 y 21
 end
 arch igate_closed_1
-speed 0.500000
-connected 1
 x 11
 y 21
+speed 0.500000
+connected 1
 end
 arch afloor_right
 x 11
 y 22
 end
 arch igate_closed_1
-speed 0.500000
-connected 1
 x 11
 y 22
+speed 0.500000
+connected 1
 end
 arch afloor_right
 x 11
@@ -2290,10 +2262,10 @@ y 4
 end
 arch torch_1
 food 0
-no_pick 1
-changing 0
 x 12
 y 4
+no_pick 1
+changing 0
 end
 arch marble
 x 12
@@ -2364,20 +2336,20 @@ x 12
 y 21
 end
 arch igate_closed_1
-speed 0.500000
-connected 1
 x 12
 y 21
+speed 0.500000
+connected 1
 end
 arch afloor_right
 x 12
 y 22
 end
 arch igate_closed_1
-speed 0.500000
-connected 1
 x 12
 y 22
+speed 0.500000
+connected 1
 end
 arch afloor_right
 x 12
@@ -2414,6 +2386,10 @@ arch cwall_3_3
 x 13
 end
 arch marble
+x 13
+y 1
+end
+arch swall_1_3_half
 x 13
 y 1
 end
@@ -2584,7 +2560,6 @@ x 14
 y 7
 end
 arch corpse1
-name corpse
 x 14
 y 7
 end
@@ -2617,7 +2592,6 @@ x 14
 y 11
 end
 arch corpse1
-name corpse
 x 14
 y 11
 end
@@ -2634,7 +2608,6 @@ x 14
 y 13
 end
 arch corpse1
-name corpse
 x 14
 y 13
 end
@@ -2781,7 +2754,6 @@ x 15
 y 8
 end
 arch corpse1
-name corpse
 x 15
 y 8
 end
@@ -2822,7 +2794,6 @@ x 15
 y 13
 end
 arch corpse1
-name corpse
 x 15
 y 13
 end
@@ -2839,7 +2810,6 @@ x 15
 y 15
 end
 arch corpse1
-name corpse
 x 15
 y 15
 end
@@ -2856,7 +2826,6 @@ x 15
 y 17
 end
 arch corpse1
-name corpse
 x 15
 y 17
 end
@@ -2865,7 +2834,6 @@ x 15
 y 18
 end
 arch corpse1
-name corpse
 x 15
 y 18
 end
@@ -2980,7 +2948,6 @@ x 16
 y 9
 end
 arch corpse1
-name corpse
 x 16
 y 9
 end
@@ -3037,7 +3004,6 @@ x 16
 y 16
 end
 arch corpse1
-name corpse
 x 16
 y 16
 end
@@ -3164,7 +3130,6 @@ x 17
 y 7
 end
 arch corpse1
-name corpse
 x 17
 y 7
 end
@@ -3205,7 +3170,6 @@ x 17
 y 12
 end
 arch corpse1
-name corpse
 x 17
 y 12
 end
@@ -3214,7 +3178,6 @@ x 17
 y 13
 end
 arch corpse1
-name corpse
 x 17
 y 13
 end
@@ -3255,7 +3218,6 @@ x 17
 y 18
 end
 arch corpse1
-name corpse
 x 17
 y 18
 end
@@ -3264,7 +3226,6 @@ x 17
 y 19
 end
 arch corpse1
-name corpse
 x 17
 y 19
 end
@@ -3375,7 +3336,6 @@ x 18
 y 9
 end
 arch corpse1
-name corpse
 x 18
 y 9
 end
@@ -3384,7 +3344,6 @@ x 18
 y 10
 end
 arch corpse1
-name corpse
 x 18
 y 10
 end
@@ -3425,7 +3384,6 @@ x 18
 y 15
 end
 arch corpse1
-name corpse
 x 18
 y 15
 end
@@ -3450,7 +3408,6 @@ x 18
 y 18
 end
 arch corpse1
-name corpse
 x 18
 y 18
 end
@@ -3564,7 +3521,6 @@ x 19
 y 8
 end
 arch corpse1
-name corpse
 x 19
 y 8
 end
@@ -3597,7 +3553,6 @@ x 19
 y 12
 end
 arch corpse1
-name corpse
 x 19
 y 12
 end
@@ -3638,7 +3593,6 @@ x 19
 y 17
 end
 arch corpse1
-name corpse
 x 19
 y 17
 end
@@ -3832,7 +3786,7 @@ arch marble
 x 20
 y 26
 end
-arch cwall_4
+arch cwall_3_3
 x 20
 y 26
 end
@@ -4413,12 +4367,12 @@ x 24
 y 3
 end
 arch pentagram
-type 66
 slaying gothwolte.1
 hp 12
 sp 23
 x 24
 y 3
+type 66
 end
 arch afloor_right
 x 24

@@ -1,10 +1,14 @@
 arch map
+name Shining Tower Special
+difficulty 35
 region pupland
-name special
+width 16
+height 16
+enter_x 5
+enter_y 9
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Fri Nov 28 16:54:02 1997
+Created:  1997-11-28
+Modified: 2012-03-08 Rick Tanner
 endmsg
 end
 arch flagstone
@@ -634,7 +638,11 @@ arch flagstone
 x 6
 y 3
 end
-arch awall_2_1_1
+arch swall_1_1_half
+x 6
+y 3
+end
+arch awall_1_2
 x 6
 y 3
 end
@@ -706,7 +714,11 @@ arch flagstone
 x 6
 y 9
 end
-arch awall_2_1_1
+arch swall_1_2_half
+x 6
+y 9
+end
+arch awall_1_1
 x 6
 y 9
 end
@@ -882,8 +894,6 @@ arch magic_ear
 msg
 @match wind|air
 click.
-
-
 endmsg
 x 8
 y 7
@@ -896,17 +906,9 @@ end
 arch c_sage
 msg
 @match hi|hello
-hello, boy.
-If you want this gauntlet, answer my
-question.
-One is pointed by an arrow above God.
-One is protected doubly.
-One is surrounded by four killers.
-and, What is the next one?
-
+Hello, boy.i  If you want this gauntlet, answer my question.  One is pointed by an arrow above God.  One is protected doubly.  One is surrounded by four killers. And, what is the next one?
 @match air|wind
 Yes, take this.
-
 @match *
 ...
 endmsg
@@ -1005,7 +1007,11 @@ arch flagstone
 x 9
 y 6
 end
-arch awall_2_2_2
+arch awall_1_4
+x 9
+y 6
+end
+arch swall_1_1_half
 x 9
 y 6
 end
@@ -1029,7 +1035,11 @@ arch flagstone
 x 9
 y 8
 end
-arch awall_2_2_1
+arch swall_1_2_half
+x 9
+y 8
+end
+arch awall_1_4
 x 9
 y 8
 end
@@ -1095,7 +1105,11 @@ arch flagstone
 x 10
 y 4
 end
-arch awall_2_2_3
+arch awall_1_3
+x 10
+y 4
+end
+arch swall_1_1_half
 x 10
 y 4
 end
@@ -1119,7 +1133,11 @@ arch flagstone
 x 10
 y 6
 end
-arch awall_2_2_4
+arch swall_1_2_half
+x 10
+y 6
+end
+arch awall_1_3
 x 10
 y 6
 end
@@ -1139,7 +1157,11 @@ arch flagstone
 x 10
 y 8
 end
-arch awall_2_1_2
+arch swall_1_4_half
+x 10
+y 8
+end
+arch awall_1_3
 x 10
 y 8
 end
@@ -1337,7 +1359,11 @@ arch flagstone
 x 12
 y 8
 end
-arch awall_3_4
+arch awall_2_1_1
+x 12
+y 8
+end
+arch swall_1_3_half
 x 12
 y 8
 end

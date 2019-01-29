@@ -1,14 +1,15 @@
 arch map
+name ShowInv de Pon
+difficulty 20
 region nurnberg
-name showinv
+width 35
+height 32
+enter_x 1
+enter_y 2
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sun Feb 11 21:55:38 1996
+Created:  1996-02-11
+Modified: 2012-03-02 Rick Tanner
 endmsg
-x 35
-y 32
-level 10
 end
 arch afloor_right
 end
@@ -23,7 +24,7 @@ end
 arch afloor_right
 y 2
 end
-arch oakdoor
+arch oakdoor_1
 slaying ../city
 hp 4
 sp 10
@@ -209,6 +210,10 @@ arch afloor_right
 x 1
 y 7
 end
+arch dragon
+x 1
+y 7
+end
 arch afloor_right
 x 1
 y 8
@@ -362,6 +367,10 @@ x 2
 y 5
 end
 arch afloor_right
+x 2
+y 6
+end
+arch dragon
 x 2
 y 6
 end
@@ -686,8 +695,7 @@ end
 arch sign
 name Instruction
 msg
-There is an invisible lever.
-Cast show invisible. 
+There is an invisible lever.  Cast show invisible.
 endmsg
 x 4
 y 1
@@ -718,6 +726,10 @@ x 4
 y 5
 end
 arch afloor_right
+x 4
+y 6
+end
+arch dragon
 x 4
 y 6
 end
@@ -1010,7 +1022,7 @@ y 2
 end
 arch sign
 msg
-Cast show invisible here. 
+Cast show invisible here.
 endmsg
 x 6
 y 2
@@ -1244,6 +1256,10 @@ x 7
 y 5
 end
 arch afloor_right
+x 7
+y 6
+end
+arch dragon
 x 7
 y 6
 end
@@ -1957,7 +1973,15 @@ arch afloor_right
 x 11
 y 6
 end
+arch dragon
+x 11
+y 6
+end
 arch afloor_right
+x 11
+y 7
+end
+arch dragon
 x 11
 y 7
 end
@@ -1991,10 +2015,10 @@ y 12
 end
 arch sign
 msg
-Use two spell and one item: 
+Use two spells and one item:
  1. show invisible
  2. create earthwall
- 3. a heavy item 
+ 3. a heavy item
 endmsg
 x 11
 y 12
@@ -2503,6 +2527,10 @@ arch afloor_right
 x 14
 y 6
 end
+arch dragon
+x 14
+y 6
+end
 arch afloor_right
 x 14
 y 7
@@ -2527,11 +2555,19 @@ arch afloor_right
 x 14
 y 10
 end
+arch giant
+x 14
+y 10
+end
 arch afloor_right
 x 14
 y 11
 end
 arch afloor_right
+x 14
+y 12
+end
+arch giant
 x 14
 y 12
 end
@@ -2543,11 +2579,19 @@ arch afloor_right
 x 14
 y 14
 end
+arch giant
+x 14
+y 14
+end
 arch afloor_right
 x 14
 y 15
 end
 arch afloor_right
+x 14
+y 16
+end
+arch giant
 x 14
 y 16
 end
@@ -2559,11 +2603,19 @@ arch afloor_right
 x 14
 y 18
 end
+arch giant
+x 14
+y 18
+end
 arch afloor_right
 x 14
 y 19
 end
 arch afloor_right
+x 14
+y 20
+end
+arch giant
 x 14
 y 20
 end
@@ -2865,11 +2917,19 @@ arch afloor_right
 x 16
 y 10
 end
+arch giant
+x 16
+y 10
+end
 arch afloor_right
 x 16
 y 11
 end
 arch afloor_right
+x 16
+y 12
+end
+arch giant
 x 16
 y 12
 end
@@ -2881,11 +2941,19 @@ arch afloor_right
 x 16
 y 14
 end
+arch giant
+x 16
+y 14
+end
 arch afloor_right
 x 16
 y 15
 end
 arch afloor_right
+x 16
+y 16
+end
+arch giant
 x 16
 y 16
 end
@@ -2897,11 +2965,19 @@ arch afloor_right
 x 16
 y 18
 end
+arch giant
+x 16
+y 18
+end
 arch afloor_right
 x 16
 y 19
 end
 arch afloor_right
+x 16
+y 20
+end
+arch giant
 x 16
 y 20
 end
@@ -3011,11 +3087,19 @@ arch afloor_right
 x 17
 y 10
 end
+arch giant
+x 17
+y 10
+end
 arch afloor_right
 x 17
 y 11
 end
 arch afloor_right
+x 17
+y 12
+end
+arch giant
 x 17
 y 12
 end
@@ -3027,11 +3111,19 @@ arch afloor_right
 x 17
 y 14
 end
+arch giant
+x 17
+y 14
+end
 arch afloor_right
 x 17
 y 15
 end
 arch afloor_right
+x 17
+y 16
+end
+arch giant
 x 17
 y 16
 end
@@ -3043,11 +3135,19 @@ arch afloor_right
 x 17
 y 18
 end
+arch giant
+x 17
+y 18
+end
 arch afloor_right
 x 17
 y 19
 end
 arch afloor_right
+x 17
+y 20
+end
+arch giant
 x 17
 y 20
 end
@@ -5320,8 +5420,8 @@ resist_cold 100
 resist_confusion 100
 resist_acid 100
 resist_drain 100
+move_block 0
 alive 1
-no_pass 0
 tear_down 1
 end
 arch afloor_right
@@ -5587,104 +5687,4 @@ end
 arch blocked
 x 34
 y 31
-end
-arch dragon
-x 1
-y 7
-end
-arch dragon
-x 2
-y 6
-end
-arch dragon
-x 4
-y 6
-end
-arch dragon
-x 7
-y 6
-end
-arch dragon
-x 11
-y 6
-end
-arch dragon
-x 11
-y 7
-end
-arch dragon
-x 14
-y 6
-end
-arch giant
-x 14
-y 10
-end
-arch giant
-x 14
-y 12
-end
-arch giant
-x 14
-y 14
-end
-arch giant
-x 14
-y 16
-end
-arch giant
-x 14
-y 18
-end
-arch giant
-x 14
-y 20
-end
-arch giant
-x 16
-y 10
-end
-arch giant
-x 16
-y 12
-end
-arch giant
-x 16
-y 14
-end
-arch giant
-x 16
-y 16
-end
-arch giant
-x 16
-y 18
-end
-arch giant
-x 16
-y 20
-end
-arch giant
-x 17
-y 10
-end
-arch giant
-x 17
-y 12
-end
-arch giant
-x 17
-y 14
-end
-arch giant
-x 17
-y 16
-end
-arch giant
-x 17
-y 18
-end
-arch giant
-x 17
-y 20
 end

@@ -1,15 +1,15 @@
 arch map
-name giants mainfloor
+name Warriors' Tower, Giants Third Floor
 reset_timeout 7200
-difficulty 15
+difficulty 30
+region wilderness
 width 33
 height 27
 enter_x 1
-enter_y 1
+enter_y 17
 msg
-Creator: Magnus Kronhamn
-Email: mak@solace.mh.se
-Date: Thu Apr 13 15:48:22 2000
+Created:  2000-04-13 Magnus Kronhamn (mak@solace.mh.se)
+Modified: 2011-12-27 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -229,8 +229,7 @@ end
 arch prisoner
 msg
 @match *
-NO! Go away, don't touch me! We
-are all... doomed.
+NO! Go away, don't touch me! We are all... doomed.
 endmsg
 hp 100
 maxhp 100
@@ -291,8 +290,7 @@ end
 arch prisoner
 msg
 @match *
-NO! Go away, don't touch me! We
-are all... doomed.
+NO! Go away, don't touch me! We are all... doomed.
 endmsg
 hp 100
 maxhp 100
@@ -521,7 +519,7 @@ maxsp 150
 exp 200000
 dam 40
 wc -30
-ac -25
+ac -9
 x 3
 y 1
 level 50
@@ -550,7 +548,7 @@ maxsp 150
 exp 200000
 dam 40
 wc -30
-ac -25
+ac -9
 x 3
 y 4
 level 50
@@ -1043,10 +1041,7 @@ arch bracers_ac
 name ancient bracers
 title of dexterity
 msg
-These bracers have been imbued with
-powerful magics to make the wearer
-more agile and to better protect 
-from acid.
+These bracers have been imbued with powerful magics to make the wearer more agile and to better protect from acid.
 endmsg
 Dex 1
 Cha 1
@@ -1259,7 +1254,7 @@ maxsp 150
 exp 200000
 dam 40
 wc -30
-ac -25
+ac -9
 x 8
 y 1
 level 50
@@ -1288,7 +1283,7 @@ maxsp 150
 exp 200000
 dam 40
 wc -30
-ac -25
+ac -9
 x 8
 y 4
 level 50
@@ -1735,8 +1730,7 @@ end
 arch prisoner
 msg
 @match *
-NO! Go away, don't touch me! We
-are all... doomed.
+NO! Go away, don't touch me! We are all... doomed.
 endmsg
 hp 100
 maxhp 100
@@ -1797,8 +1791,7 @@ end
 arch prisoner
 msg
 @match *
-NO! Go away, don't touch me! We
-are all... doomed.
+NO! Go away, don't touch me! We are all... doomed.
 endmsg
 hp 100
 maxhp 100
@@ -4310,7 +4303,7 @@ maxsp 300
 exp 400000
 dam 70
 wc -40
-ac -30
+ac -12
 x 30
 y 1
 level 75
@@ -4367,8 +4360,7 @@ end
 arch magic_mouth
 name 14
 msg
-You hear a thundering voice:
-"Ah finally! Food has arrived..."
+You hear a thundering voice: "Ah finally! Food has arrived..."
 endmsg
 x 30
 y 5

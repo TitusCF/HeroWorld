@@ -1,13 +1,15 @@
 arch map
+name Practice3
+difficulty 12
 region pupland
-name p3
+width 11
+height 18
+enter_x 5
+enter_y 16
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue Feb 13 18:18:04 1996
+Created:  1996-02-13
+Modified: 2010-04-04 krb
 endmsg
-x 11
-y 18
 end
 arch grass
 end
@@ -625,8 +627,11 @@ x 5
 y 1
 end
 arch key2
-name key3
+name House of Treasure Key #3
 slaying 9key3
+msg
+A key found in the Red Town practice maps.
+endmsg
 x 5
 y 1
 end
@@ -739,7 +744,7 @@ end
 arch door_look_1
 x 5
 y 15
-no_pass 0
+move_block 0
 end
 arch grass
 x 5

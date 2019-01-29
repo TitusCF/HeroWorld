@@ -1,21 +1,19 @@
 arch map
+name Shining Tower, Floor 3
+difficulty 24
 region pupland
-name st3
+width 17
+height 17
+enter_x 8
+enter_y 10
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Mon Feb 12 14:37:24 1996
-endmsg
-x 17
-y 17
-end
-arch blocked
-msg
+Created:  1996-02-12
+Modified: 2012-03-09 Rick Tanner
 endmsg
 end
 arch blocked
-msg
-endmsg
+end
+arch blocked
 y 1
 end
 arch flagstone
@@ -81,6 +79,9 @@ end
 arch flagstone
 y 12
 end
+arch swall_1_4_half
+y 12
+end
 arch awall_2_1_1
 y 12
 end
@@ -97,18 +98,12 @@ arch awall_2_2_1
 y 14
 end
 arch blocked
-msg
-endmsg
 y 15
 end
 arch blocked
-msg
-endmsg
 y 16
 end
 arch blocked
-msg
-endmsg
 x 1
 end
 arch flagstone
@@ -142,7 +137,7 @@ arch sea
 name water stream
 x 1
 y 3
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 1
@@ -159,7 +154,7 @@ arch sea
 name water stream
 x 1
 y 4
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 1
@@ -176,7 +171,7 @@ arch sea
 name water stream
 x 1
 y 5
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 1
@@ -202,7 +197,7 @@ arch sea
 name water stream
 x 1
 y 6
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 1
@@ -224,7 +219,7 @@ arch sea
 name water stream
 x 1
 y 7
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 1
@@ -262,7 +257,6 @@ arch button_small
 face button_sma.112
 x 1
 y 11
-protected 1
 value 1
 connected 1
 end
@@ -274,7 +268,7 @@ arch flagstone
 x 1
 y 12
 end
-arch swall_1_4
+arch swall_2_1_2
 x 1
 y 12
 end
@@ -284,7 +278,7 @@ y 13
 end
 arch sign
 msg
-Floo3.
+Floor3.
 Something is upon the button.
 endmsg
 x 1
@@ -307,8 +301,6 @@ x 1
 y 15
 end
 arch blocked
-msg
-endmsg
 x 1
 y 16
 end
@@ -341,7 +333,7 @@ arch sea
 name water stream
 x 2
 y 2
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 2
@@ -358,7 +350,7 @@ arch sea
 name water stream
 x 2
 y 3
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 2
@@ -379,7 +371,7 @@ arch sea
 name water stream
 x 2
 y 5
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 2
@@ -482,7 +474,7 @@ arch sea
 name water stream
 x 3
 y 1
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 3
@@ -499,7 +491,7 @@ arch sea
 name water stream
 x 3
 y 2
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 3
@@ -524,7 +516,7 @@ arch sea
 name water stream
 x 3
 y 5
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 3
@@ -541,7 +533,7 @@ arch sea
 name water stream
 x 3
 y 6
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 3
@@ -558,7 +550,7 @@ arch sea
 name water stream
 x 3
 y 7
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 3
@@ -575,7 +567,7 @@ arch sea
 name water stream
 x 3
 y 8
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 3
@@ -592,7 +584,7 @@ arch sea
 name water stream
 x 3
 y 9
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 3
@@ -609,10 +601,10 @@ arch sea
 name water stream
 x 3
 y 10
-no_pass 0
+move_block 0
 end
 arch angel
-name gardian angel
+name guardian angel
 x 3
 y 10
 level 20
@@ -632,10 +624,10 @@ arch sea
 name water stream
 x 3
 y 11
-no_pass 0
+move_block 0
 end
 arch angel
-name gardian angel
+name guardian angel
 x 3
 y 11
 level 20
@@ -655,10 +647,10 @@ arch sea
 name water stream
 x 3
 y 12
-no_pass 0
+move_block 0
 end
 arch angel
-name gardian angel
+name guardian angel
 x 3
 y 12
 level 20
@@ -678,10 +670,10 @@ arch sea
 name water stream
 x 3
 y 13
-no_pass 0
+move_block 0
 end
 arch angel
-name gardian angel
+name guardian angel
 x 3
 y 13
 level 20
@@ -701,10 +693,10 @@ arch sea
 name water stream
 x 3
 y 14
-no_pass 0
+move_block 0
 end
 arch angel
-name gardian angel
+name guardian angel
 x 3
 y 14
 level 20
@@ -724,7 +716,7 @@ arch sea
 name water stream
 x 3
 y 15
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 3
@@ -755,7 +747,7 @@ arch sea
 name water stream
 x 4
 y 1
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 4
@@ -766,7 +758,7 @@ x 4
 y 3
 end
 arch angel
-name gardian angel
+name guardian angel
 x 4
 y 3
 level 20
@@ -776,7 +768,7 @@ x 4
 y 4
 end
 arch angel
-name gardian angel
+name guardian angel
 x 4
 y 4
 level 20
@@ -786,7 +778,7 @@ x 4
 y 5
 end
 arch angel
-name gardian angel
+name guardian angel
 x 4
 y 5
 level 20
@@ -796,7 +788,7 @@ x 4
 y 6
 end
 arch angel
-name gardian angel
+name guardian angel
 x 4
 y 6
 level 20
@@ -834,7 +826,7 @@ x 4
 y 14
 end
 arch angel
-name gardian angel
+name guardian angel
 x 4
 y 14
 level 20
@@ -854,7 +846,7 @@ arch sea
 name water stream
 x 4
 y 15
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 4
@@ -885,7 +877,7 @@ arch sea
 name water stream
 x 5
 y 1
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 5
@@ -896,7 +888,7 @@ x 5
 y 3
 end
 arch angel
-name gardian angel
+name guardian angel
 x 5
 y 3
 level 20
@@ -906,7 +898,7 @@ x 5
 y 4
 end
 arch angel
-name gardian angel
+name guardian angel
 x 5
 y 4
 level 20
@@ -916,7 +908,7 @@ x 5
 y 5
 end
 arch angel
-name gardian angel
+name guardian angel
 x 5
 y 5
 level 20
@@ -926,7 +918,7 @@ x 5
 y 6
 end
 arch angel
-name gardian angel
+name guardian angel
 x 5
 y 6
 level 20
@@ -964,7 +956,7 @@ x 5
 y 14
 end
 arch angel
-name gardian angel
+name guardian angel
 x 5
 y 14
 level 20
@@ -984,7 +976,7 @@ arch sea
 name water stream
 x 5
 y 15
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 5
@@ -1015,7 +1007,7 @@ arch sea
 name water stream
 x 6
 y 1
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 6
@@ -1058,7 +1050,7 @@ x 6
 y 7
 end
 arch angel
-name gardian angel
+name guardian angel
 x 6
 y 7
 level 20
@@ -1068,7 +1060,7 @@ x 6
 y 8
 end
 arch angel
-name gardian angel
+name guardian angel
 x 6
 y 8
 level 20
@@ -1098,7 +1090,7 @@ x 6
 y 14
 end
 arch angel
-name gardian angel
+name guardian angel
 x 6
 y 14
 level 20
@@ -1118,7 +1110,7 @@ arch sea
 name water stream
 x 6
 y 15
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 6
@@ -1149,7 +1141,7 @@ arch sea
 name water stream
 x 7
 y 1
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 7
@@ -1192,7 +1184,7 @@ x 7
 y 7
 end
 arch angel
-name gardian angel
+name guardian angel
 x 7
 y 7
 level 20
@@ -1202,7 +1194,7 @@ x 7
 y 8
 end
 arch angel
-name gardian angel
+name guardian angel
 x 7
 y 8
 level 20
@@ -1232,7 +1224,7 @@ x 7
 y 14
 end
 arch angel
-name gardian angel
+name guardian angel
 x 7
 y 14
 level 20
@@ -1252,7 +1244,7 @@ arch sea
 name water stream
 x 7
 y 15
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 7
@@ -1283,7 +1275,7 @@ arch sea
 name water stream
 x 8
 y 1
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 8
@@ -1327,7 +1319,6 @@ end
 arch ggate_open
 x 8
 y 6
-protected 1
 connected 1
 end
 arch flagstone
@@ -1335,7 +1326,7 @@ x 8
 y 7
 end
 arch angel
-name gardian angel
+name guardian angel
 x 8
 y 7
 level 20
@@ -1345,7 +1336,7 @@ x 8
 y 8
 end
 arch angel
-name gardian angel
+name guardian angel
 x 8
 y 8
 level 20
@@ -1382,7 +1373,7 @@ x 8
 y 14
 end
 arch angel
-name gardian angel
+name guardian angel
 x 8
 y 14
 level 20
@@ -1420,7 +1411,7 @@ arch sea
 name water stream
 x 9
 y 1
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 9
@@ -1453,7 +1444,6 @@ end
 arch button_handle
 x 9
 y 5
-protected 1
 connected 1
 end
 arch flagstone
@@ -1469,7 +1459,7 @@ x 9
 y 7
 end
 arch angel
-name gardian angel
+name guardian angel
 x 9
 y 7
 level 20
@@ -1479,7 +1469,7 @@ x 9
 y 8
 end
 arch angel
-name gardian angel
+name guardian angel
 x 9
 y 8
 level 20
@@ -1509,7 +1499,7 @@ x 9
 y 14
 end
 arch angel
-name gardian angel
+name guardian angel
 x 9
 y 14
 level 20
@@ -1529,7 +1519,7 @@ arch sea
 name water stream
 x 9
 y 15
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 9
@@ -1560,7 +1550,7 @@ arch sea
 name water stream
 x 10
 y 1
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 10
@@ -1603,7 +1593,7 @@ x 10
 y 7
 end
 arch angel
-name gardian angel
+name guardian angel
 x 10
 y 7
 level 20
@@ -1613,7 +1603,7 @@ x 10
 y 8
 end
 arch angel
-name gardian angel
+name guardian angel
 x 10
 y 8
 level 20
@@ -1643,7 +1633,7 @@ x 10
 y 14
 end
 arch angel
-name gardian angel
+name guardian angel
 x 10
 y 14
 level 20
@@ -1663,7 +1653,7 @@ arch sea
 name water stream
 x 10
 y 15
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 10
@@ -1694,7 +1684,7 @@ arch sea
 name water stream
 x 11
 y 1
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 11
@@ -1705,7 +1695,7 @@ x 11
 y 3
 end
 arch angel
-name gardian angel
+name guardian angel
 x 11
 y 3
 level 20
@@ -1715,7 +1705,7 @@ x 11
 y 4
 end
 arch angel
-name gardian angel
+name guardian angel
 x 11
 y 4
 level 20
@@ -1725,7 +1715,7 @@ x 11
 y 5
 end
 arch angel
-name gardian angel
+name guardian angel
 x 11
 y 5
 level 20
@@ -1735,7 +1725,7 @@ x 11
 y 6
 end
 arch angel
-name gardian angel
+name guardian angel
 x 11
 y 6
 level 20
@@ -1773,7 +1763,7 @@ x 11
 y 14
 end
 arch angel
-name gardian angel
+name guardian angel
 x 11
 y 14
 level 20
@@ -1793,7 +1783,7 @@ arch sea
 name water stream
 x 11
 y 15
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 11
@@ -1824,7 +1814,7 @@ arch sea
 name water stream
 x 12
 y 1
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 12
@@ -1835,7 +1825,7 @@ x 12
 y 3
 end
 arch angel
-name gardian angel
+name guardian angel
 x 12
 y 3
 level 20
@@ -1845,7 +1835,7 @@ x 12
 y 4
 end
 arch angel
-name gardian angel
+name guardian angel
 x 12
 y 4
 level 20
@@ -1855,7 +1845,7 @@ x 12
 y 5
 end
 arch angel
-name gardian angel
+name guardian angel
 x 12
 y 5
 level 20
@@ -1865,7 +1855,7 @@ x 12
 y 6
 end
 arch angel
-name gardian angel
+name guardian angel
 x 12
 y 6
 level 20
@@ -1890,17 +1880,16 @@ arch grass
 x 12
 y 11
 end
-arch oakdoor
+arch pstone_1
+x 12
+y 12
+end
+arch invis_exit
 slaying secret
 hp 11
 sp 11
 x 12
 y 12
-invisible 1
-end
-arch pstone_1
-x 12
-y 12
 end
 arch grass
 x 12
@@ -1911,7 +1900,7 @@ x 12
 y 14
 end
 arch angel
-name gardian angel
+name guardian angel
 x 12
 y 14
 level 20
@@ -1931,7 +1920,7 @@ arch sea
 name water stream
 x 12
 y 15
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 12
@@ -1962,7 +1951,7 @@ arch sea
 name water stream
 x 13
 y 1
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 13
@@ -1979,7 +1968,7 @@ arch sea
 name water stream
 x 13
 y 2
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 13
@@ -2014,7 +2003,7 @@ x 13
 y 10
 end
 arch angel
-name gardian angel
+name guardian angel
 x 13
 y 10
 level 20
@@ -2024,7 +2013,7 @@ x 13
 y 11
 end
 arch angel
-name gardian angel
+name guardian angel
 x 13
 y 11
 level 20
@@ -2034,7 +2023,7 @@ x 13
 y 12
 end
 arch angel
-name gardian angel
+name guardian angel
 x 13
 y 12
 level 20
@@ -2044,7 +2033,7 @@ x 13
 y 13
 end
 arch angel
-name gardian angel
+name guardian angel
 x 13
 y 13
 level 20
@@ -2064,10 +2053,10 @@ arch sea
 name water stream
 x 13
 y 14
-no_pass 0
+move_block 0
 end
 arch angel
-name gardian angel
+name guardian angel
 x 13
 y 14
 level 20
@@ -2087,7 +2076,7 @@ arch sea
 name water stream
 x 13
 y 15
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 13
@@ -2126,7 +2115,7 @@ arch sea
 name water stream
 x 14
 y 2
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 14
@@ -2143,7 +2132,7 @@ arch sea
 name water stream
 x 14
 y 3
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 14
@@ -2196,7 +2185,7 @@ arch sea
 name water stream
 x 14
 y 13
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 14
@@ -2213,7 +2202,7 @@ arch sea
 name water stream
 x 14
 y 14
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 14
@@ -2232,8 +2221,6 @@ x 14
 y 16
 end
 arch blocked
-msg
-endmsg
 x 15
 end
 arch flagstone
@@ -2267,7 +2254,7 @@ arch sea
 name water stream
 x 15
 y 3
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 15
@@ -2284,7 +2271,7 @@ arch sea
 name water stream
 x 15
 y 4
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 15
@@ -2301,7 +2288,7 @@ arch sea
 name water stream
 x 15
 y 5
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 15
@@ -2318,7 +2305,7 @@ arch sea
 name water stream
 x 15
 y 6
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 15
@@ -2335,7 +2322,7 @@ arch sea
 name water stream
 x 15
 y 7
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 15
@@ -2352,7 +2339,7 @@ arch sea
 name water stream
 x 15
 y 8
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 15
@@ -2369,7 +2356,7 @@ arch sea
 name water stream
 x 15
 y 9
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 15
@@ -2386,7 +2373,7 @@ arch sea
 name water stream
 x 15
 y 10
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 15
@@ -2403,7 +2390,7 @@ arch sea
 name water stream
 x 15
 y 11
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 15
@@ -2420,7 +2407,7 @@ arch sea
 name water stream
 x 15
 y 12
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 15
@@ -2437,7 +2424,7 @@ arch sea
 name water stream
 x 15
 y 13
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 15
@@ -2456,19 +2443,13 @@ x 15
 y 15
 end
 arch blocked
-msg
-endmsg
 x 15
 y 16
 end
 arch blocked
-msg
-endmsg
 x 16
 end
 arch blocked
-msg
-endmsg
 x 16
 y 1
 end
@@ -2577,14 +2558,10 @@ x 16
 y 14
 end
 arch blocked
-msg
-endmsg
 x 16
 y 15
 end
 arch blocked
-msg
-endmsg
 x 16
 y 16
 end

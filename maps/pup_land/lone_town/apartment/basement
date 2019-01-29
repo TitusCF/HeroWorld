@@ -1,15 +1,16 @@
 arch map
-name basement
+name Lone Town Apartment, Basement
+difficulty 1
 region lonetown
-msg
-Creator: Gene Alexander
-Date:    Mon Nov  7 18:54:00 UTC 2005
-endmsg
+darkness 4
 width 40
 height 40
-enter_x 26
-enter_y 36
-darkness 4
+enter_x 11
+enter_y 24
+msg
+Created:  2005-11-07 Gene Alexander
+Modified: 2012-02-28 Rick Tanner
+endmsg
 end
 arch blocked
 end
@@ -771,15 +772,15 @@ end
 arch teleporter
 hp 15
 sp 5
-connected 10012
-speed 0.0
 x 6
 y 5
+speed 0.0
+connected 10012
 end
 arch button_lever
-connected 11012
 x 6
 y 5
+connected 11012
 end
 arch blocked
 x 6
@@ -792,15 +793,15 @@ end
 arch teleporter
 hp 15
 sp 10
-connected 10011
-speed 0.0
 x 6
 y 10
+speed 0.0
+connected 10011
 end
 arch button_lever
-connected 11011
 x 6
 y 10
+connected 11011
 end
 arch blocked
 x 6
@@ -813,15 +814,15 @@ end
 arch teleporter
 hp 15
 sp 15
-connected 10010
-speed 0.0
 x 6
 y 15
+speed 0.0
+connected 10010
 end
 arch button_lever
-connected 11010
 x 6
 y 15
+connected 11010
 end
 arch blocked
 x 6
@@ -834,15 +835,15 @@ end
 arch teleporter
 hp 15
 sp 20
-connected 10009
-speed 0.0
 x 6
 y 20
+speed 0.0
+connected 10009
 end
 arch button_lever
-connected 11009
 x 6
 y 20
+connected 11009
 end
 arch blocked
 x 6
@@ -863,15 +864,15 @@ end
 arch teleporter
 hp 15
 sp 30
-connected 10008
-speed 0.0
 x 6
 y 30
+speed 0.0
+connected 10008
 end
 arch button_lever
-connected 11008
 x 6
 y 30
+connected 11008
 end
 arch blocked
 x 6
@@ -884,15 +885,15 @@ end
 arch teleporter
 hp 15
 sp 35
-connected 10007
-speed 0.0
 x 6
 y 35
+speed 0.0
+connected 10007
 end
 arch button_lever
-connected 11007
 x 6
 y 35
+connected 11007
 end
 arch blocked
 x 6
@@ -1713,9 +1714,9 @@ end
 arch duplicator
 name altar remover
 other_arch altar
-connected 12050
 x 10
 y 23
+connected 12050
 end
 arch earth
 name dirt floor
@@ -1726,9 +1727,9 @@ arch altar
 name Additional Stairs Light 5000 Diamonds
 slaying diamond
 food 5000
-connected 12050
 x 10
 y 23
+connected 12050
 end
 arch earth
 name dirt floor
@@ -1736,22 +1737,22 @@ x 10
 y 24
 end
 arch table_2
+x 10
+y 24
 no_pick 1
 identified 1
-x 10
-y 24
 end
 arch torch_unlit
-nrof 25
 x 10
 y 24
+nrof 25
 end
 arch duplicator
 name altar remover
 other_arch altar
-connected 12051
 x 10
 y 25
+connected 12051
 end
 arch earth
 name dirt floor
@@ -1762,9 +1763,9 @@ arch altar
 name Additional Stairs Light 5000 Diamonds
 slaying diamond
 food 5000
-connected 12051
 x 10
 y 25
+connected 12051
 end
 arch earth
 name dirt floor
@@ -1876,9 +1877,9 @@ y 3
 end
 arch creator
 other_arch light4
-connected 12012
 x 11
 y 4
+connected 12012
 end
 arch earth
 name dirt floor
@@ -1915,9 +1916,9 @@ y 8
 end
 arch creator
 other_arch light4
-connected 12011
 x 11
 y 9
+connected 12011
 end
 arch earth
 name dirt floor
@@ -1954,9 +1955,9 @@ y 13
 end
 arch creator
 other_arch light4
-connected 12010
 x 11
 y 14
+connected 12010
 end
 arch earth
 name dirt floor
@@ -1993,9 +1994,9 @@ y 18
 end
 arch creator
 other_arch light4
-connected 12009
 x 11
 y 19
+connected 12009
 end
 arch earth
 name dirt floor
@@ -2040,9 +2041,9 @@ name basement stairs
 slaying /pup_land/lone_town/apartment/groundfloor
 hp 11
 sp 24
-unique 1
 x 11
 y 24
+unique 1
 end
 arch light3
 x 11
@@ -2078,9 +2079,9 @@ y 28
 end
 arch creator
 other_arch light4
-connected 12008
 x 11
 y 29
+connected 12008
 end
 arch earth
 name dirt floor
@@ -2117,9 +2118,9 @@ y 33
 end
 arch creator
 other_arch light4
-connected 12007
 x 11
 y 34
+connected 12007
 end
 arch earth
 name dirt floor
@@ -2302,9 +2303,9 @@ y 22
 end
 arch creator
 other_arch light4
+x 12
+y 23
 connected 12050
-x 12
-y 23
 end
 arch earth
 name dirt floor
@@ -2318,9 +2319,9 @@ y 24
 end
 arch creator
 other_arch light4
-connected 12051
 x 12
 y 25
+connected 12051
 end
 arch earth
 name dirt floor
@@ -2433,9 +2434,9 @@ end
 arch duplicator
 name altar remover
 other_arch altar
-connected 12012
 x 13
 y 3
+connected 12012
 end
 arch earth
 name dirt floor
@@ -2446,9 +2447,9 @@ arch altar
 name Permanent Light 10000 Diamonds
 slaying diamond
 food 10000
-connected 12012
 x 13
 y 3
+connected 12012
 end
 arch earth
 name dirt floor
@@ -2461,9 +2462,9 @@ x 13
 y 5
 end
 arch button_lever
-connected 11012
 x 13
 y 5
+connected 11012
 end
 arch earth
 name dirt floor
@@ -2486,9 +2487,9 @@ end
 arch duplicator
 name altar remover
 other_arch altar
-connected 12011
 x 13
 y 8
+connected 12011
 end
 arch earth
 name dirt floor
@@ -2499,9 +2500,9 @@ arch altar
 name Permanent Light 10000 Diamonds
 slaying diamond
 food 10000
-connected 12011
 x 13
 y 8
+connected 12011
 end
 arch earth
 name dirt floor
@@ -2514,9 +2515,9 @@ x 13
 y 10
 end
 arch button_lever
-connected 11011
 x 13
 y 10
+connected 11011
 end
 arch earth
 name dirt floor
@@ -2539,9 +2540,9 @@ end
 arch duplicator
 name altar remover
 other_arch altar
-connected 12010
 x 13
 y 13
+connected 12010
 end
 arch earth
 name dirt floor
@@ -2552,9 +2553,9 @@ arch altar
 name Permanent Light 10000 Diamonds
 slaying diamond
 food 10000
-connected 12010
 x 13
 y 13
+connected 12010
 end
 arch earth
 name dirt floor
@@ -2567,9 +2568,9 @@ x 13
 y 15
 end
 arch button_lever
-connected 11010
 x 13
 y 15
+connected 11010
 end
 arch earth
 name dirt floor
@@ -2592,9 +2593,9 @@ end
 arch duplicator
 name altar remover
 other_arch altar
-connected 12009
 x 13
 y 18
+connected 12009
 end
 arch earth
 name dirt floor
@@ -2605,9 +2606,9 @@ arch altar
 name Permanent Light 10000 Diamonds
 slaying diamond
 food 10000
-connected 12009
 x 13
 y 18
+connected 12009
 end
 arch earth
 name dirt floor
@@ -2620,9 +2621,9 @@ x 13
 y 20
 end
 arch button_lever
-connected 11009
 x 13
 y 20
+connected 11009
 end
 arch earth
 name dirt floor
@@ -2678,9 +2679,9 @@ end
 arch duplicator
 name altar remover
 other_arch altar
-connected 12008
 x 13
 y 28
+connected 12008
 end
 arch earth
 name dirt floor
@@ -2691,9 +2692,9 @@ arch altar
 name Permanent Light 10000 Diamonds
 slaying diamond
 food 10000
-connected 12008
 x 13
 y 28
+connected 12008
 end
 arch earth
 name dirt floor
@@ -2706,9 +2707,9 @@ x 13
 y 30
 end
 arch button_lever
-connected 11008
 x 13
 y 30
+connected 11008
 end
 arch earth
 name dirt floor
@@ -2731,9 +2732,9 @@ end
 arch duplicator
 name altar remover
 other_arch altar
-connected 12007
 x 13
 y 33
+connected 12007
 end
 arch earth
 name dirt floor
@@ -2744,9 +2745,9 @@ arch altar
 name Permanent Light 10000 Diamonds
 slaying diamond
 food 10000
-connected 12007
 x 13
 y 33
+connected 12007
 end
 arch earth
 name dirt floor
@@ -2759,9 +2760,9 @@ x 13
 y 35
 end
 arch button_lever
-connected 11007
 x 13
 y 35
+connected 11007
 end
 arch earth
 name dirt floor
@@ -2815,9 +2816,9 @@ x 14
 y 4
 end
 arch igate_closed_2
-connected 11012
 x 14
 y 4
+connected 11012
 end
 arch earth
 name dirt floor
@@ -2861,9 +2862,9 @@ x 14
 y 9
 end
 arch igate_closed_2
+x 14
+y 9
 connected 11011
-x 14
-y 9
 end
 arch earth
 name dirt floor
@@ -2907,9 +2908,9 @@ x 14
 y 14
 end
 arch igate_closed_2
+x 14
+y 14
 connected 11010
-x 14
-y 14
 end
 arch earth
 name dirt floor
@@ -2953,9 +2954,9 @@ x 14
 y 19
 end
 arch igate_closed_2
-connected 11009
 x 14
 y 19
+connected 11009
 end
 arch earth
 name dirt floor
@@ -3037,9 +3038,9 @@ x 14
 y 29
 end
 arch igate_closed_2
-connected 11008
 x 14
 y 29
+connected 11008
 end
 arch earth
 name dirt floor
@@ -3083,9 +3084,9 @@ x 14
 y 34
 end
 arch igate_closed_2
-connected 11007
 x 14
 y 34
+connected 11007
 end
 arch earth
 name dirt floor
@@ -3136,9 +3137,9 @@ end
 arch duplicator
 name altar remover
 other_arch altar
-connected 10012
 x 15
 y 3
+connected 10012
 end
 arch earth
 name dirt floor
@@ -3149,9 +3150,9 @@ arch altar
 name Storage Room 10000 Diamonds
 slaying diamond
 food 10000
-connected 10012
 x 15
 y 3
+connected 10012
 end
 arch earth
 name dirt floor
@@ -3176,9 +3177,9 @@ end
 arch duplicator
 name altar remover
 other_arch altar
-connected 10011
 x 15
 y 8
+connected 10011
 end
 arch earth
 name dirt floor
@@ -3189,9 +3190,9 @@ arch altar
 name Storage Room 10000 Diamonds
 slaying diamond
 food 10000
-connected 10011
 x 15
 y 8
+connected 10011
 end
 arch earth
 name dirt floor
@@ -3216,9 +3217,9 @@ end
 arch duplicator
 name altar remover
 other_arch altar
-connected 10010
 x 15
 y 13
+connected 10010
 end
 arch earth
 name dirt floor
@@ -3229,9 +3230,9 @@ arch altar
 name Storage Room 10000 Diamonds
 slaying diamond
 food 10000
-connected 10010
 x 15
 y 13
+connected 10010
 end
 arch earth
 name dirt floor
@@ -3256,9 +3257,9 @@ end
 arch duplicator
 name altar remover
 other_arch altar
-connected 10009
 x 15
 y 18
+connected 10009
 end
 arch earth
 name dirt floor
@@ -3269,9 +3270,9 @@ arch altar
 name Storage Room 10000 Diamonds
 slaying diamond
 food 10000
-connected 10009
 x 15
 y 18
+connected 10009
 end
 arch earth
 name dirt floor
@@ -3321,9 +3322,9 @@ end
 arch duplicator
 name altar remover
 other_arch altar
-connected 10008
 x 15
 y 28
+connected 10008
 end
 arch earth
 name dirt floor
@@ -3334,9 +3335,9 @@ arch altar
 name Storage Room 10000 Diamonds
 slaying diamond
 food 10000
-connected 10008
 x 15
 y 28
+connected 10008
 end
 arch earth
 name dirt floor
@@ -3361,9 +3362,9 @@ end
 arch duplicator
 name altar remover
 other_arch altar
-connected 10007
 x 15
 y 33
+connected 10007
 end
 arch earth
 name dirt floor
@@ -3374,9 +3375,9 @@ arch altar
 name Storage Room 10000 Diamonds
 slaying diamond
 food 10000
-connected 10007
 x 15
 y 33
+connected 10007
 end
 arch earth
 name dirt floor
@@ -3431,9 +3432,9 @@ x 16
 y 3
 end
 arch mouse
-can_see_in_dark 1
 x 16
 y 3
+can_see_in_dark 1
 end
 arch earth
 name dirt floor
@@ -3597,9 +3598,9 @@ y 35
 end
 arch ant
 other_arch ant
-generator 1
 x 16
 y 35
+generator 1
 end
 arch earth
 name dirt floor
@@ -3645,9 +3646,9 @@ y 3
 end
 arch creator
 other_arch light4
-connected 12052
 x 17
 y 4
+connected 12052
 end
 arch earth
 name dirt floor
@@ -3676,9 +3677,9 @@ y 8
 end
 arch creator
 other_arch light4
-connected 12052
 x 17
 y 9
+connected 12052
 end
 arch earth
 name dirt floor
@@ -3707,9 +3708,9 @@ y 13
 end
 arch creator
 other_arch light4
-connected 12052
 x 17
 y 14
+connected 12052
 end
 arch earth
 name dirt floor
@@ -3738,9 +3739,9 @@ y 18
 end
 arch creator
 other_arch light4
-connected 12052
 x 17
 y 19
+connected 12052
 end
 arch earth
 name dirt floor
@@ -3769,9 +3770,9 @@ y 23
 end
 arch creator
 other_arch light4
-connected 12052
 x 17
 y 24
+connected 12052
 end
 arch earth
 name dirt floor
@@ -3800,9 +3801,9 @@ y 28
 end
 arch creator
 other_arch light4
-connected 12052
 x 17
 y 29
+connected 12052
 end
 arch earth
 name dirt floor
@@ -3831,9 +3832,9 @@ y 33
 end
 arch creator
 other_arch light4
-connected 12052
 x 17
 y 34
+connected 12052
 end
 arch earth
 name dirt floor
@@ -4045,9 +4046,9 @@ end
 arch duplicator
 name altar remover
 other_arch altar
-connected 12052
 x 18
 y 35
+connected 12052
 end
 arch earth
 name dirt floor
@@ -4058,9 +4059,9 @@ arch altar
 name Light West Basement 30000 Diamonds
 slaying diamond
 food 30000
-connected 12052
 x 18
 y 35
+connected 12052
 end
 arch earth
 name dirt floor
@@ -5166,9 +5167,9 @@ end
 arch duplicator
 name altar remover
 other_arch altar
-connected 12053
 x 23
 y 35
+connected 12053
 end
 arch earth
 name dirt floor
@@ -5179,9 +5180,9 @@ arch altar
 name Light East Basement 30000 Diamonds
 slaying diamond
 food 30000
-connected 12053
 x 23
 y 35
+connected 12053
 end
 arch earth
 name dirt floor
@@ -5227,9 +5228,9 @@ y 3
 end
 arch creator
 other_arch light4
-connected 12053
 x 24
 y 4
+connected 12053
 end
 arch earth
 name dirt floor
@@ -5258,9 +5259,9 @@ y 8
 end
 arch creator
 other_arch light4
-connected 12053
 x 24
 y 9
+connected 12053
 end
 arch earth
 name dirt floor
@@ -5289,9 +5290,9 @@ y 13
 end
 arch creator
 other_arch light4
-connected 12053
 x 24
 y 14
+connected 12053
 end
 arch earth
 name dirt floor
@@ -5320,9 +5321,9 @@ y 18
 end
 arch creator
 other_arch light4
-connected 12053
 x 24
 y 19
+connected 12053
 end
 arch earth
 name dirt floor
@@ -5351,9 +5352,9 @@ y 23
 end
 arch creator
 other_arch light4
-connected 12053
 x 24
 y 24
+connected 12053
 end
 arch earth
 name dirt floor
@@ -5382,9 +5383,9 @@ y 28
 end
 arch creator
 other_arch light4
-connected 12053
 x 24
 y 29
+connected 12053
 end
 arch earth
 name dirt floor
@@ -5413,9 +5414,9 @@ y 33
 end
 arch creator
 other_arch light4
-connected 12053
 x 24
 y 34
+connected 12053
 end
 arch earth
 name dirt floor
@@ -5471,9 +5472,9 @@ y 3
 end
 arch ant
 other_arch ant
-generator 1
 x 25
 y 3
+generator 1
 end
 arch earth
 name dirt floor
@@ -5636,9 +5637,9 @@ x 25
 y 35
 end
 arch mouse
-can_see_in_dark 1
 x 25
 y 35
+can_see_in_dark 1
 end
 arch earth
 name dirt floor
@@ -5690,9 +5691,9 @@ end
 arch duplicator
 name altar remover
 other_arch altar
-connected 10000
 x 26
 y 5
+connected 10000
 end
 arch earth
 name dirt floor
@@ -5703,9 +5704,9 @@ arch altar
 name Storage Room 10000 Diamonds
 slaying diamond
 food 10000
-connected 10000
 x 26
 y 5
+connected 10000
 end
 arch earth
 name dirt floor
@@ -5730,9 +5731,9 @@ end
 arch duplicator
 name altar remover
 other_arch altar
-connected 10001
 x 26
 y 10
+connected 10001
 end
 arch earth
 name dirt floor
@@ -5743,9 +5744,9 @@ arch altar
 name Jeweler's Room 30000 Diamonds
 slaying diamond
 food 30000
-connected 10001
 x 26
 y 10
+connected 10001
 end
 arch earth
 name dirt floor
@@ -5770,9 +5771,9 @@ end
 arch duplicator
 name altar remover
 other_arch altar
-connected 10002
 x 26
 y 15
+connected 10002
 end
 arch earth
 name dirt floor
@@ -5783,9 +5784,9 @@ arch altar
 name Thaumaturgy Room 30000 Diamonds
 slaying diamond
 food 30000
-connected 10002
 x 26
 y 15
+connected 10002
 end
 arch earth
 name dirt floor
@@ -5810,9 +5811,9 @@ end
 arch duplicator
 name altar remover
 other_arch altar
-connected 10003
 x 26
 y 20
+connected 10003
 end
 arch earth
 name dirt floor
@@ -5823,9 +5824,9 @@ arch altar
 name Tanning Room 30000 Diamonds
 slaying diamond
 food 30000
-connected 10003
 x 26
 y 20
+connected 10003
 end
 arch earth
 name dirt floor
@@ -5850,9 +5851,9 @@ end
 arch duplicator
 name altar remover
 other_arch altar
-connected 10004
 x 26
 y 25
+connected 10004
 end
 arch earth
 name dirt floor
@@ -5863,9 +5864,9 @@ arch altar
 name Forge Room 30000 Diamonds
 slaying diamond
 food 30000
-connected 10004
 x 26
 y 25
+connected 10004
 end
 arch earth
 name dirt floor
@@ -5890,9 +5891,9 @@ end
 arch duplicator
 name altar remover
 other_arch altar
-connected 10005
 x 26
 y 30
+connected 10005
 end
 arch earth
 name dirt floor
@@ -5903,9 +5904,9 @@ arch altar
 name Bowyer Room 30000 Diamonds
 slaying diamond
 food 30000
-connected 10005
 x 26
 y 30
+connected 10005
 end
 arch earth
 name dirt floor
@@ -5930,9 +5931,9 @@ end
 arch duplicator
 name altar remover
 other_arch altar
-connected 10006
 x 26
 y 35
+connected 10006
 end
 arch earth
 name dirt floor
@@ -5943,9 +5944,9 @@ arch altar
 name Storage Room 10000 Diamonds
 slaying diamond
 food 10000
-connected 10006
 x 26
 y 35
+connected 10006
 end
 arch earth
 name dirt floor
@@ -5999,9 +6000,9 @@ x 27
 y 4
 end
 arch igate_closed_2
-connected 11000
 x 27
 y 4
+connected 11000
 end
 arch earth
 name dirt floor
@@ -6045,9 +6046,9 @@ x 27
 y 9
 end
 arch igate_closed_2
+x 27
+y 9
 connected 11001
-x 27
-y 9
 end
 arch earth
 name dirt floor
@@ -6091,9 +6092,9 @@ x 27
 y 14
 end
 arch igate_closed_2
+x 27
+y 14
 connected 11002
-x 27
-y 14
 end
 arch earth
 name dirt floor
@@ -6137,9 +6138,9 @@ x 27
 y 19
 end
 arch igate_closed_2
+x 27
+y 19
 connected 11003
-x 27
-y 19
 end
 arch earth
 name dirt floor
@@ -6183,9 +6184,9 @@ x 27
 y 24
 end
 arch igate_closed_2
+x 27
+y 24
 connected 11004
-x 27
-y 24
 end
 arch earth
 name dirt floor
@@ -6229,9 +6230,9 @@ x 27
 y 29
 end
 arch igate_closed_2
+x 27
+y 29
 connected 11005
-x 27
-y 29
 end
 arch earth
 name dirt floor
@@ -6275,9 +6276,9 @@ x 27
 y 34
 end
 arch igate_closed_2
-connected 11006
 x 27
 y 34
+connected 11006
 end
 arch earth
 name dirt floor
@@ -6331,9 +6332,9 @@ x 28
 y 3
 end
 arch button_lever
-connected 11000
 x 28
 y 3
+connected 11000
 end
 arch earth
 name dirt floor
@@ -6342,9 +6343,9 @@ y 4
 end
 arch duplicator
 other_arch altar
-connected 12000
 x 28
 y 5
+connected 12000
 end
 arch earth
 name dirt floor
@@ -6355,9 +6356,9 @@ arch altar
 name Permanent Light 10000 Diamonds
 slaying diamond
 food 10000
-connected 12000
 x 28
 y 5
+connected 12000
 end
 arch earth
 name dirt floor
@@ -6383,9 +6384,9 @@ x 28
 y 8
 end
 arch button_lever
-connected 11001
 x 28
 y 8
+connected 11001
 end
 arch earth
 name dirt floor
@@ -6395,9 +6396,9 @@ end
 arch duplicator
 name altar remover
 other_arch altar
-connected 12001
 x 28
 y 10
+connected 12001
 end
 arch earth
 name dirt floor
@@ -6408,9 +6409,9 @@ arch altar
 name Permanent Light 10000 Diamonds
 slaying diamond
 food 10000
-connected 12001
 x 28
 y 10
+connected 12001
 end
 arch earth
 name dirt floor
@@ -6436,9 +6437,9 @@ x 28
 y 13
 end
 arch button_lever
-connected 11002
 x 28
 y 13
+connected 11002
 end
 arch earth
 name dirt floor
@@ -6448,9 +6449,9 @@ end
 arch duplicator
 name altar remover
 other_arch altar
-connected 12002
 x 28
 y 15
+connected 12002
 end
 arch earth
 name dirt floor
@@ -6461,9 +6462,9 @@ arch altar
 name Permanent Light 10000 Diamonds
 slaying diamond
 food 10000
-connected 12002
 x 28
 y 15
+connected 12002
 end
 arch earth
 name dirt floor
@@ -6489,9 +6490,9 @@ x 28
 y 18
 end
 arch button_lever
-connected 11003
 x 28
 y 18
+connected 11003
 end
 arch earth
 name dirt floor
@@ -6501,9 +6502,9 @@ end
 arch duplicator
 name altar remover
 other_arch altar
-connected 12003
 x 28
 y 20
+connected 12003
 end
 arch earth
 name dirt floor
@@ -6514,9 +6515,9 @@ arch altar
 name Permanent Light 10000 Diamonds
 slaying diamond
 food 10000
-connected 12003
 x 28
 y 20
+connected 12003
 end
 arch earth
 name dirt floor
@@ -6542,9 +6543,9 @@ x 28
 y 23
 end
 arch button_lever
-connected 11004
 x 28
 y 23
+connected 11004
 end
 arch earth
 name dirt floor
@@ -6554,9 +6555,9 @@ end
 arch duplicator
 name altar remover
 other_arch altar
-connected 12004
 x 28
 y 25
+connected 12004
 end
 arch earth
 name dirt floor
@@ -6567,9 +6568,9 @@ arch altar
 name Permanent Light 10000 Diamonds
 slaying diamond
 food 10000
-connected 12004
 x 28
 y 25
+connected 12004
 end
 arch earth
 name dirt floor
@@ -6595,9 +6596,9 @@ x 28
 y 28
 end
 arch button_lever
-connected 11005
 x 28
 y 28
+connected 11005
 end
 arch earth
 name dirt floor
@@ -6607,9 +6608,9 @@ end
 arch duplicator
 name altar remover
 other_arch altar
-connected 12005
 x 28
 y 30
+connected 12005
 end
 arch earth
 name dirt floor
@@ -6620,9 +6621,9 @@ arch altar
 name Permanent Light 10000 Diamonds
 slaying diamond
 food 10000
-connected 12005
 x 28
 y 30
+connected 12005
 end
 arch earth
 name dirt floor
@@ -6648,9 +6649,9 @@ x 28
 y 33
 end
 arch button_lever
-connected 11006
 x 28
 y 33
+connected 11006
 end
 arch earth
 name dirt floor
@@ -6660,9 +6661,9 @@ end
 arch duplicator
 name altar remover
 other_arch altar
-connected 12006
 x 28
 y 35
+connected 12006
 end
 arch earth
 name dirt floor
@@ -6673,9 +6674,9 @@ arch altar
 name Permanent Light 10000 Diamonds
 slaying diamond
 food 10000
-connected 12006
 x 28
 y 35
+connected 12006
 end
 arch earth
 name dirt floor
@@ -6721,9 +6722,9 @@ y 3
 end
 arch creator
 other_arch light4
-connected 12000
 x 29
 y 4
+connected 12000
 end
 arch earth
 name dirt floor
@@ -6760,9 +6761,9 @@ y 8
 end
 arch creator
 other_arch light4
-connected 12001
 x 29
 y 9
+connected 12001
 end
 arch earth
 name dirt floor
@@ -6799,9 +6800,9 @@ y 13
 end
 arch creator
 other_arch light4
-connected 12002
 x 29
 y 14
+connected 12002
 end
 arch earth
 name dirt floor
@@ -6838,9 +6839,9 @@ y 18
 end
 arch creator
 other_arch light4
-connected 12003
 x 29
 y 19
+connected 12003
 end
 arch earth
 name dirt floor
@@ -6877,9 +6878,9 @@ y 23
 end
 arch creator
 other_arch light4
-connected 12004
 x 29
 y 24
+connected 12004
 end
 arch earth
 name dirt floor
@@ -6916,9 +6917,9 @@ y 28
 end
 arch creator
 other_arch light4
-connected 12005
 x 29
 y 29
+connected 12005
 end
 arch earth
 name dirt floor
@@ -6955,9 +6956,9 @@ y 33
 end
 arch creator
 other_arch light4
-connected 12006
 x 29
 y 34
+connected 12006
 end
 arch earth
 name dirt floor
@@ -7041,18 +7042,18 @@ y 7
 end
 arch duplicator
 other_arch jeweler_bench
+x 30
+y 8
 connected 8001
 activate_on_release 0
-x 30
-y 8
 end
 arch creator
 other_arch jeweler_bench
+x 30
+y 8
 connected 8001
 lifesave 1
 activate_on_push 0
-x 30
-y 8
 end
 arch earth
 name dirt floor
@@ -7075,15 +7076,15 @@ y 10
 end
 arch altar_trigger
 name New Jeweler's Workbench 30000 Diamonds
-msg
-Removing your old cauldron. Please wait.
-endmsg
 slaying diamond
-food 30000
-connected 8001
+msg
+Removing your old workbench.  Please wait.
+endmsg
 exp 60
+food 30000
 x 30
 y 10
+connected 8001
 end
 arch earth
 name dirt floor
@@ -7105,18 +7106,18 @@ y 12
 end
 arch duplicator
 other_arch thaumaturg_desk
-connected 8002
-activate_on_release 0
 x 30
 y 13
+connected 8002
+activate_on_release 0
 end
 arch creator
 other_arch thaumaturg_desk
+x 30
+y 13
 connected 8002
 lifesave 1
 activate_on_push 0
-x 30
-y 13
 end
 arch earth
 name dirt floor
@@ -7138,16 +7139,16 @@ x 30
 y 15
 end
 arch altar_trigger
-name New Thaumaturge Desk 30000 Diamonds
-msg
-Removing your old cauldron. Please wait.
-endmsg
+name New Thaumaturgy Desk 30000 Diamonds
 slaying diamond
-food 30000
-connected 8002
+msg
+Removing your old desk.  Please wait.
+endmsg
 exp 60
+food 30000
 x 30
 y 15
+connected 8002
 end
 arch earth
 name dirt floor
@@ -7169,18 +7170,18 @@ y 17
 end
 arch duplicator
 other_arch tanbench
-connected 8003
-activate_on_release 0
 x 30
 y 18
+connected 8003
+activate_on_release 0
 end
 arch creator
 other_arch tanbench
+x 30
+y 18
 connected 8003
 lifesave 1
 activate_on_push 0
-x 30
-y 18
 end
 arch earth
 name dirt floor
@@ -7203,15 +7204,15 @@ y 20
 end
 arch altar_trigger
 name New Tanning Bench 30000 Diamonds
-msg
-Removing your old cauldron. Please wait.
-endmsg
 slaying diamond
-food 30000
-connected 8003
+msg
+Removing your old bench.  Please wait.
+endmsg
 exp 60
+food 30000
 x 30
 y 20
+connected 8003
 end
 arch earth
 name dirt floor
@@ -7233,18 +7234,18 @@ y 22
 end
 arch duplicator
 other_arch forge
-connected 8004
-activate_on_release 0
 x 30
 y 23
+connected 8004
+activate_on_release 0
 end
 arch creator
 other_arch forge
+x 30
+y 23
 connected 8004
 lifesave 1
 activate_on_push 0
-x 30
-y 23
 end
 arch earth
 name dirt floor
@@ -7267,15 +7268,15 @@ y 25
 end
 arch altar_trigger
 name New Forge 30000 Diamonds
-msg
-Removing your old cauldron. Please wait.
-endmsg
 slaying diamond
-food 30000
-connected 8004
+msg
+Removing your old forge.  Please wait.
+endmsg
 exp 60
+food 30000
 x 30
 y 25
+connected 8004
 end
 arch earth
 name dirt floor
@@ -7297,18 +7298,18 @@ y 27
 end
 arch duplicator
 other_arch workbench
-connected 8005
-activate_on_release 0
 x 30
 y 28
+connected 8005
+activate_on_release 0
 end
 arch creator
 other_arch workbench
+x 30
+y 28
 connected 8005
 lifesave 1
 activate_on_push 0
-x 30
-y 28
 end
 arch earth
 name dirt floor
@@ -7331,15 +7332,15 @@ y 30
 end
 arch altar_trigger
 name New Workbench 30000 Diamonds
-msg
-Removing your old cauldron. Please wait.
-endmsg
 slaying diamond
-food 30000
-connected 8005
+msg
+Removing your old workbench.  Please wait.
+endmsg
 exp 60
+food 30000
 x 30
 y 30
+connected 8005
 end
 arch earth
 name dirt floor
@@ -8061,15 +8062,15 @@ end
 arch teleporter
 hp 26
 sp 3
-connected 10000
-speed 0.0
 x 34
 y 3
+speed 0.0
+connected 10000
 end
 arch button_lever
-connected 11000
 x 34
 y 3
+connected 11000
 end
 arch blocked
 x 34
@@ -8082,15 +8083,15 @@ end
 arch teleporter
 hp 26
 sp 8
-connected 10001
-speed 0.0
 x 34
 y 8
+speed 0.0
+connected 10001
 end
 arch button_lever
-connected 11001
 x 34
 y 8
+connected 11001
 end
 arch blocked
 x 34
@@ -8103,15 +8104,15 @@ end
 arch teleporter
 hp 26
 sp 13
-connected 10002
-speed 0.0
 x 34
 y 13
+speed 0.0
+connected 10002
 end
 arch button_lever
-connected 11002
 x 34
 y 13
+connected 11002
 end
 arch blocked
 x 34
@@ -8124,15 +8125,15 @@ end
 arch teleporter
 hp 26
 sp 18
-connected 10003
-speed 0.0
 x 34
 y 18
+speed 0.0
+connected 10003
 end
 arch button_lever
-connected 11003
 x 34
 y 18
+connected 11003
 end
 arch blocked
 x 34
@@ -8145,15 +8146,15 @@ end
 arch teleporter
 hp 26
 sp 23
-connected 10004
-speed 0.0
 x 34
 y 23
+speed 0.0
+connected 10004
 end
 arch button_lever
-connected 11004
 x 34
 y 23
+connected 11004
 end
 arch blocked
 x 34
@@ -8166,15 +8167,15 @@ end
 arch teleporter
 hp 26
 sp 28
-connected 10005
-speed 0.0
 x 34
 y 28
+speed 0.0
+connected 10005
 end
 arch button_lever
-connected 11005
 x 34
 y 28
+connected 11005
 end
 arch blocked
 x 34
@@ -8187,15 +8188,15 @@ end
 arch teleporter
 hp 26
 sp 33
-connected 10006
-speed 0.0
 x 34
 y 33
+speed 0.0
+connected 10006
 end
 arch button_lever
-connected 11006
 x 34
 y 33
+connected 11006
 end
 arch blocked
 x 34

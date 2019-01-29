@@ -1,14 +1,15 @@
 arch map
+name Cave Passageway, Level 4
+difficulty 25
 region pupland
-name cave_pass4
-msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sun Jan 28 01:50:48 1996
-endmsg
 width 26
 height 33
-difficulty 15
+enter_x 1
+enter_y 1
+msg
+Created:  1996-01-28
+Modified: 2012-02-28 Rick Tanner
+endmsg
 end
 arch cobblestones2
 end
@@ -581,8 +582,7 @@ y 1
 end
 arch sign
 msg
-The Eternal Road.
-Can you reach the end of it?
+The Eternal Road.  Can you reach the end of it?
 endmsg
 x 2
 y 1
@@ -853,9 +853,9 @@ end
 arch trapdoor_1
 hp 2
 sp 5
-invisible 1
 x 2
 y 27
+invisible 1
 end
 arch cobblestones2
 x 2
@@ -864,9 +864,9 @@ end
 arch trapdoor_1
 hp 2
 sp 5
-invisible 1
 x 2
 y 28
+invisible 1
 end
 arch cobblestones2
 x 2
@@ -885,9 +885,9 @@ end
 arch trapdoor_1
 hp 19
 sp 28
-invisible 1
 x 2
 y 30
+invisible 1
 end
 arch cobblestones2
 x 2
@@ -898,17 +898,16 @@ name strange wall
 hp 5000
 maxhp 5000
 ac -20
-level 50
-resist_death 100
 x 2
 y 31
+level 50
+resist_death 100
 end
 arch invis_exit
-msg
-Wohoo! Looks like you found Eureca's
-secret treasure room!
-endmsg
 slaying cave_pass4
+msg
+Wohoo! Looks like you found Eureca's secret treasure room!
+endmsg
 hp 19
 sp 1
 x 2
@@ -919,9 +918,9 @@ x 2
 y 32
 end
 arch cave2
-no_pass 0
 x 2
 y 32
+move_block 0
 end
 arch cobblestones2
 x 3
@@ -1239,8 +1238,7 @@ y 28
 end
 arch sign
 msg
-You can teleport to the other end of
-this corridor.
+You can teleport to the other end of this corridor.
 endmsg
 x 3
 y 28
@@ -1529,8 +1527,7 @@ y 30
 end
 arch sign
 msg
-You can cast spells here.
-Do you know "show invisible"?
+You can cast spells here.  Do you know "show invisible"?
 endmsg
 x 4
 y 30
@@ -1597,71 +1594,71 @@ arch cave23
 x 5
 y 5
 end
-arch blocked
+arch cave_15
 x 5
 y 6
 end
-arch blocked
+arch cave_15
 x 5
 y 7
 end
-arch blocked
+arch cave_15
 x 5
 y 8
 end
-arch blocked
+arch cave_15
 x 5
 y 9
 end
-arch blocked
+arch cave_15
 x 5
 y 10
 end
-arch blocked
+arch cave_15
 x 5
 y 11
 end
-arch blocked
+arch cave_15
 x 5
 y 12
 end
-arch blocked
+arch cave_15
 x 5
 y 13
 end
-arch blocked
+arch cave_15
 x 5
 y 14
 end
-arch blocked
+arch cave_15
 x 5
 y 15
 end
-arch blocked
+arch cave_15
 x 5
 y 16
 end
-arch blocked
+arch cave_15
 x 5
 y 17
 end
-arch blocked
+arch cave_15
 x 5
 y 18
 end
-arch blocked
+arch cave_15
 x 5
 y 19
 end
-arch blocked
+arch cave_15
 x 5
 y 20
 end
-arch blocked
+arch cave_15
 x 5
 y 21
 end
-arch blocked
+arch cave_15
 x 5
 y 22
 end
@@ -1733,7 +1730,7 @@ arch cave2
 x 5
 y 31
 end
-arch blocked
+arch cave_15
 x 5
 y 32
 end
@@ -1847,35 +1844,31 @@ arch cave3
 x 6
 y 12
 end
-arch cobblestones2
-x 6
-y 13
-end
 arch cave23
 x 6
 y 13
 end
-arch blocked
+arch cave_15
 x 6
 y 14
 end
-arch blocked
+arch cave_15
 x 6
 y 15
 end
-arch blocked
+arch cave_15
 x 6
 y 16
 end
-arch blocked
+arch cave_15
 x 6
 y 17
 end
-arch blocked
+arch cave_15
 x 6
 y 18
 end
-arch blocked
+arch cave_15
 x 6
 y 19
 end
@@ -1894,10 +1887,6 @@ end
 arch cave3
 x 6
 y 21
-end
-arch cobblestones2
-x 6
-y 22
 end
 arch sea
 x 6
@@ -1955,7 +1944,7 @@ arch cave2
 x 6
 y 31
 end
-arch blocked
+arch cave_15
 x 6
 y 32
 end
@@ -2113,10 +2102,6 @@ arch cave3
 x 7
 y 19
 end
-arch cobblestones2
-x 7
-y 20
-end
 arch sea
 x 7
 y 20
@@ -2177,7 +2162,7 @@ arch cave2
 x 7
 y 31
 end
-arch blocked
+arch cave_15
 x 7
 y 32
 end
@@ -2206,6 +2191,11 @@ end
 arch cobblestones2
 x 8
 y 3
+end
+arch dread
+x 8
+y 3
+carrying 100
 end
 arch cobblestones2
 x 8
@@ -2312,21 +2302,21 @@ x 8
 y 25
 end
 arch pstone_1
-no_pass 1
 x 8
 y 26
+move_block all
 end
 arch river_sw-ne_l
 name sea
-no_pass 0
 x 8
 y 26
+move_block 0
 end
 arch river_nw-se_u
 name sea
-no_pass 0
 x 8
 y 26
+move_block 0
 end
 arch sea
 x 8
@@ -2361,7 +2351,7 @@ arch cave2
 x 8
 y 31
 end
-arch blocked
+arch cave_15
 x 8
 y 32
 end
@@ -2542,7 +2532,7 @@ arch cave2
 x 9
 y 31
 end
-arch blocked
+arch cave_15
 x 9
 y 32
 end
@@ -2557,10 +2547,10 @@ x 10
 y 1
 end
 arch locked_door2
+slaying 429201
 msg
 You need the Dread Key to open this door.
 endmsg
-slaying 429201
 x 10
 y 1
 end
@@ -2733,7 +2723,7 @@ arch cave2
 x 10
 y 31
 end
-arch blocked
+arch cave_15
 x 10
 y 32
 end
@@ -2889,7 +2879,7 @@ arch cave2
 x 11
 y 31
 end
-arch blocked
+arch cave_15
 x 11
 y 32
 end
@@ -2904,6 +2894,10 @@ x 12
 y 1
 end
 arch cobblestones2
+x 12
+y 2
+end
+arch dread
 x 12
 y 2
 end
@@ -3031,7 +3025,7 @@ arch cave2
 x 12
 y 31
 end
-arch blocked
+arch cave_15
 x 12
 y 32
 end
@@ -3169,7 +3163,7 @@ arch cave2
 x 13
 y 31
 end
-arch blocked
+arch cave_15
 x 13
 y 32
 end
@@ -3307,7 +3301,7 @@ arch cave2
 x 14
 y 31
 end
-arch blocked
+arch cave_15
 x 14
 y 32
 end
@@ -3569,7 +3563,7 @@ arch cave22
 x 15
 y 31
 end
-arch blocked
+arch cave_15
 x 15
 y 32
 end
@@ -3667,87 +3661,87 @@ arch cave22
 x 16
 y 11
 end
-arch blocked
+arch cave_15
 x 16
 y 12
 end
-arch blocked
+arch cave_15
 x 16
 y 13
 end
-arch blocked
+arch cave_15
 x 16
 y 14
 end
-arch blocked
+arch cave_15
 x 16
 y 15
 end
-arch blocked
+arch cave_15
 x 16
 y 16
 end
-arch blocked
+arch cave_15
 x 16
 y 17
 end
-arch blocked
+arch cave_15
 x 16
 y 18
 end
-arch blocked
+arch cave_15
 x 16
 y 19
 end
-arch blocked
+arch cave_15
 x 16
 y 20
 end
-arch blocked
+arch cave_15
 x 16
 y 21
 end
-arch blocked
+arch cave_15
 x 16
 y 22
 end
-arch blocked
+arch cave_15
 x 16
 y 23
 end
-arch blocked
+arch cave_15
 x 16
 y 24
 end
-arch blocked
+arch cave_15
 x 16
 y 25
 end
-arch blocked
+arch cave_15
 x 16
 y 26
 end
-arch blocked
+arch cave_15
 x 16
 y 27
 end
-arch blocked
+arch cave_15
 x 16
 y 28
 end
-arch blocked
+arch cave_15
 x 16
 y 29
 end
-arch blocked
+arch cave_15
 x 16
 y 30
 end
-arch blocked
+arch cave_15
 x 16
 y 31
 end
-arch blocked
+arch cave_15
 x 16
 y 32
 end
@@ -4155,9 +4149,9 @@ x 19
 y 3
 end
 arch button_handle
-connected 1
 x 19
 y 3
+connected 1
 end
 arch flagstone
 x 19
@@ -4171,14 +4165,19 @@ arch flagstone
 x 19
 y 5
 end
+arch button_handle
+x 19
+y 5
+connected 1
+end
 arch flagstone
 x 19
 y 6
 end
 arch button_handle
-connected 2
 x 19
 y 6
+connected 2
 end
 arch flagstone
 x 19
@@ -4191,6 +4190,11 @@ end
 arch flagstone
 x 19
 y 8
+end
+arch button_handle
+x 19
+y 8
+connected 2
 end
 arch chest
 exp 25
@@ -4437,12 +4441,17 @@ x 20
 y 4
 end
 arch grate_closed_1
-speed 0.500000
-connected 1
 x 20
 y 4
+speed 0.500000
+connected 1
 end
 arch flagstone
+x 20
+y 5
+end
+arch big_dragon
+name guardian dragon
 x 20
 y 5
 end
@@ -4459,10 +4468,10 @@ x 20
 y 7
 end
 arch grate_closed_1
-speed 0.500000
-connected 2
 x 20
 y 7
+speed 0.500000
+connected 2
 end
 arch flagstone
 x 20
@@ -4470,9 +4479,9 @@ y 8
 end
 arch chest
 exp 25
-randomitems chest_items
 x 20
 y 8
+randomitems chest_items
 arch rune_medium_fireball
 level 7
 end
@@ -4724,10 +4733,10 @@ x 21
 y 4
 end
 arch grate_closed_1
-speed 0.500000
-connected 1
 x 21
 y 4
+speed 0.500000
+connected 1
 end
 arch flagstone
 x 21
@@ -4746,10 +4755,10 @@ x 21
 y 7
 end
 arch grate_closed_1
-speed 0.500000
-connected 2
 x 21
 y 7
+speed 0.500000
+connected 2
 end
 arch flagstone
 x 21
@@ -4867,9 +4876,9 @@ y 19
 end
 arch chest
 exp 25
-randomitems chest_items
 x 21
 y 19
+randomitems chest_items
 arch rune_icestorm
 level 8
 end
@@ -5006,10 +5015,10 @@ x 22
 y 4
 end
 arch grate_closed_1
-speed 0.500000
-connected 1
 x 22
 y 4
+speed 0.500000
+connected 1
 end
 arch flagstone
 x 22
@@ -5028,10 +5037,10 @@ x 22
 y 7
 end
 arch grate_closed_1
-speed 0.500000
-connected 2
 x 22
 y 7
+speed 0.500000
+connected 2
 end
 arch flagstone
 x 22
@@ -5126,18 +5135,16 @@ y 17
 end
 arch oakdoor
 name chest
-face chest_1.111
-msg
-A magic force draws you inside the
-chest! Uh... does this mean you've been
-shrinked? Anyhow, this is amazing.
-endmsg
 slaying cave_pass4
+msg
+A magic force draws you inside the chest! Uh... does this mean you've been shrinked? Anyhow, this is amazing.
+endmsg
+face chest_1.111
 hp 25
 sp 28
-weight 50000
 x 22
 y 17
+weight 50000
 end
 arch flagstone
 x 22
@@ -5329,9 +5336,9 @@ y 10
 end
 arch chest
 exp 25
-randomitems chest_items
 x 23
 y 10
+randomitems chest_items
 arch rune_create_bomb
 end
 end
@@ -5728,21 +5735,21 @@ arch teleporter
 name 10
 hp 22
 sp 17
-speed 0.000000
-connected 10
 x 24
 y 31
+speed 0.000000
+connected 10
 end
 arch locked_door1
 name magic force
-face enchantment.111
+slaying no_key_available
 msg
 A repelling force holds you back.
 endmsg
-slaying no_key_available
-invisible 1
+face enchantment.111
 x 24
 y 31
+invisible 1
 end
 arch blocked
 x 24
@@ -5857,42 +5864,42 @@ y 26
 end
 arch button_small
 name 10
-weight 1000
-connected 10
 x 25
 y 27
+weight 1000
+connected 10
 end
 arch blocked
 name darkness
-no_pass 0
-is_floor 1
-blocksview 0
 x 25
 y 27
+move_block 0
+blocksview 0
+is_floor 1
 end
 arch teleporter
 slaying chest
 hp 6
 sp 7
+x 25
+y 27
 speed 0.000000
 invisible 1
 connected 10
-x 25
-y 27
 end
 arch mover_1
+x 25
+y 28
 speed 1.000000
 level 1
 attacktype 1
-x 25
-y 28
 end
 arch blocked
 name darkness
-no_pass 0
-is_floor 1
 x 25
 y 28
+move_block 0
+is_floor 1
 end
 arch blocked
 x 25
@@ -5909,18 +5916,4 @@ end
 arch blocked
 x 25
 y 32
-end
-arch dread
-carrying 100
-x 8
-y 3
-end
-arch dread
-x 12
-y 2
-end
-arch big_dragon
-name guardian dragon
-x 20
-y 5
 end

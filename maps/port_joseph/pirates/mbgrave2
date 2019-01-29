@@ -1,60 +1,62 @@
 arch map
-region portjoesph
-name Moogly Bill's Grave
-msg
-Creator: langley
-Email: langley@fermat.dartmouth.edu
-Date: Thu Jun  2 23:28:33 1994
-endmsg
+name Moogly Bill's Tomb
+difficulty 14
+region portjoseph
+darkness 4
 width 20
 height 32
-darkness 4
+enter_x 10
+enter_y 30
+msg
+Created:  1994-06-02 langley (langley@fermat.dartmouth.edu)
+Modified: 2012-03-18 Rick Tanner
+endmsg
 end
-arch blocked
+arch cave_15
 end
-arch blocked
+arch cave_15
 y 1
 end
-arch blocked
+arch cave_15
 y 2
 end
-arch blocked
+arch cave_15
 y 3
 end
-arch blocked
+arch cave_15
 y 4
 end
-arch blocked
+arch cave_15
 y 5
 end
-arch blocked
+arch cave_15
 y 6
 end
-arch blocked
+arch cave_15
 y 7
 end
-arch blocked
+arch cave_15
 y 8
 end
-arch blocked
+arch cave_15
 y 9
 end
-arch blocked
+arch cave_15
 y 10
 end
-arch blocked
+arch cave_15
 y 11
 end
-arch blocked
+arch cave_15
 y 12
 end
-arch blocked
+arch cave_15
 y 13
 end
 arch pstone_2
 y 14
 end
-arch cave18
+arch cave24
 y 14
 end
 arch small_stones
@@ -78,16 +80,13 @@ end
 arch cave17
 y 17
 end
-arch pstone_2
+arch dun33
 y 18
 end
-arch blocked
-y 18
-end
-arch blocked
+arch dun33
 y 19
 end
-arch blocked
+arch dun33
 y 20
 end
 arch dungeon_floor
@@ -123,19 +122,19 @@ end
 arch random_food
 y 28
 end
-arch blocked
+arch dun33
 y 29
 end
-arch blocked
+arch cave_15
 y 30
 end
-arch blocked
+arch cave_15
 y 31
 end
-arch blocked
+arch cave_15
 x 1
 end
-arch blocked
+arch cave_15
 x 1
 y 1
 end
@@ -152,9 +151,9 @@ x 1
 y 3
 end
 arch gate_closed_1
-connected 1
 x 1
 y 3
+connected 1
 end
 arch pstone_2
 x 1
@@ -164,35 +163,35 @@ arch pstone_2
 x 1
 y 5
 end
-arch blocked
+arch cave_15
 x 1
 y 6
 end
-arch blocked
+arch cave_15
 x 1
 y 7
 end
-arch blocked
+arch cave_15
 x 1
 y 8
 end
-arch blocked
+arch cave_15
 x 1
 y 9
 end
-arch blocked
+arch cave_15
 x 1
 y 10
 end
-arch blocked
+arch cave_15
 x 1
 y 11
 end
-arch blocked
+arch cave_15
 x 1
 y 12
 end
-arch blocked
+arch cave_15
 x 1
 y 13
 end
@@ -305,22 +304,22 @@ arch random_food
 x 1
 y 28
 end
-arch blocked
+arch dun33
 x 1
 y 29
 end
-arch blocked
+arch cave_15
 x 1
 y 30
 end
-arch blocked
+arch cave_15
 x 1
 y 31
 end
 arch pstone_2
 x 2
 end
-arch dun2
+arch cave4
 x 2
 end
 arch pstone_2
@@ -338,15 +337,14 @@ end
 arch falchion
 name moogly falchion
 msg
-An evil looking blade, encrusted
-with gemstones.
+An evil looking blade, encrusted with gemstones.
 endmsg
 dam 9
+x 2
+y 2
 value 2400
 weight 7000
 magic 2
-x 2
-y 2
 end
 arch corpse1
 name A remarkably well preserved corpse.
@@ -358,9 +356,9 @@ x 2
 y 3
 end
 arch gate_closed_1
-connected 1
 x 2
 y 3
+connected 1
 end
 arch medium_stones
 x 2
@@ -382,31 +380,31 @@ arch cave_4
 x 2
 y 6
 end
-arch blocked
+arch cave_15
 x 2
 y 7
 end
-arch blocked
+arch cave_15
 x 2
 y 8
 end
-arch blocked
+arch cave_15
 x 2
 y 9
 end
-arch blocked
+arch cave_15
 x 2
 y 10
 end
-arch blocked
+arch cave_15
 x 2
 y 11
 end
-arch blocked
+arch cave_15
 x 2
 y 12
 end
-arch blocked
+arch cave_15
 x 2
 y 13
 end
@@ -434,7 +432,7 @@ arch cave2
 x 2
 y 16
 end
-arch blocked
+arch cave_15
 x 2
 y 17
 end
@@ -510,22 +508,22 @@ arch dungeon_floor
 x 2
 y 28
 end
-arch blocked
+arch dun33
 x 2
 y 29
 end
-arch blocked
+arch cave_15
 x 2
 y 30
 end
-arch blocked
+arch cave_15
 x 2
 y 31
 end
 arch pstone_2
 x 3
 end
-arch dun2
+arch cave4
 x 3
 end
 arch medium_stones
@@ -563,9 +561,9 @@ x 3
 y 3
 end
 arch gate_closed_1
-connected 1
 x 3
 y 3
+connected 1
 end
 arch pstone_2
 x 3
@@ -595,15 +593,15 @@ arch medium_stones
 x 3
 y 9
 end
-arch blocked
+arch cave_15
 x 3
 y 10
 end
-arch blocked
+arch cave_15
 x 3
 y 11
 end
-arch blocked
+arch cave_15
 x 3
 y 12
 end
@@ -713,12 +711,7 @@ y 27
 end
 arch magic_mouth
 msg
-On the wall is a painting.
-The painting depicts the sun setting
-behind a marble statue surrounded by
-lush plantlife.  The statue has its
-arm out and is pointing behind you and
-to your right
+On the wall is a painting.  The painting depicts the sun setting behind a marble statue surrounded by lush plant life.  The statue has its arm out and is pointing behind you and to your right.
 endmsg
 x 3
 y 28
@@ -747,15 +740,15 @@ endmsg
 x 3
 y 28
 end
-arch blocked
+arch dun33
 x 3
 y 29
 end
-arch blocked
+arch cave_15
 x 3
 y 30
 end
-arch blocked
+arch cave_15
 x 3
 y 31
 end
@@ -786,9 +779,9 @@ x 4
 y 3
 end
 arch gate_closed_1
-connected 1
 x 4
 y 3
+connected 1
 end
 arch small_stones
 x 4
@@ -822,11 +815,11 @@ arch small_stones
 x 4
 y 9
 end
-arch blocked
+arch cave_15
 x 4
 y 10
 end
-arch blocked
+arch cave_15
 x 4
 y 11
 end
@@ -834,7 +827,7 @@ arch pstone_2
 x 4
 y 12
 end
-arch cave18
+arch cave24
 x 4
 y 12
 end
@@ -919,9 +912,9 @@ x 4
 y 27
 end
 arch chest
-carrying 100
 x 4
 y 27
+carrying 100
 arch key
 end
 end
@@ -933,26 +926,26 @@ arch chair_3.2
 x 4
 y 28
 end
-arch blocked
+arch dun33
 x 4
 y 29
 end
-arch blocked
+arch cave_15
 x 4
 y 30
 end
-arch blocked
+arch cave_15
 x 4
 y 31
 end
-arch blocked
+arch cave_15
 x 5
 end
 arch pstone_2
 x 5
 y 1
 end
-arch dun2
+arch cave4
 x 5
 y 1
 end
@@ -977,9 +970,9 @@ x 5
 y 5
 end
 arch button_plate
-connected 1
 x 5
 y 5
+connected 1
 end
 arch pstone_2
 x 5
@@ -1009,7 +1002,7 @@ arch cave_4
 x 5
 y 10
 end
-arch blocked
+arch cave_15
 x 5
 y 11
 end
@@ -1089,19 +1082,19 @@ arch mine3
 x 5
 y 28
 end
-arch blocked
+arch dun33
 x 5
 y 29
 end
-arch blocked
+arch cave_15
 x 5
 y 30
 end
-arch blocked
+arch cave_15
 x 5
 y 31
 end
-arch blocked
+arch cave_15
 x 6
 end
 arch pstone_2
@@ -1160,7 +1153,7 @@ arch pstone_2
 x 6
 y 10
 end
-arch blocked
+arch cave_15
 x 6
 y 11
 end
@@ -1206,7 +1199,7 @@ y 19
 end
 arch magic_mouth
 msg
-Some of this water seems shallow
+Some of this water seems shallow.
 endmsg
 x 6
 y 20
@@ -1263,14 +1256,14 @@ arch cave17
 x 6
 y 30
 end
-arch blocked
+arch cave_15
 x 6
 y 31
 end
-arch blocked
+arch cave_15
 x 7
 end
-arch blocked
+arch cave_15
 x 7
 y 1
 end
@@ -1330,7 +1323,7 @@ arch cave_3
 x 7
 y 10
 end
-arch blocked
+arch cave_15
 x 7
 y 11
 end
@@ -1446,14 +1439,14 @@ arch cave16
 x 7
 y 30
 end
-arch cave17
+arch cave23
 x 7
 y 31
 end
-arch blocked
+arch cave_15
 x 8
 end
-arch blocked
+arch cave_15
 x 8
 y 1
 end
@@ -1501,7 +1494,7 @@ arch pstone_2
 x 8
 y 9
 end
-arch blocked
+arch cave_15
 x 8
 y 10
 end
@@ -1617,7 +1610,7 @@ arch cave2
 x 8
 y 31
 end
-arch blocked
+arch cave_15
 x 9
 end
 arch pstone_2
@@ -1788,14 +1781,14 @@ arch cave12
 x 9
 y 31
 end
-arch blocked
+arch cave_15
 x 10
 end
 arch pstone_2
 x 10
 y 1
 end
-arch dun2
+arch cave4
 x 10
 y 1
 end
@@ -1835,7 +1828,7 @@ arch cave_3
 x 10
 y 8
 end
-arch blocked
+arch cave_15
 x 10
 y 9
 end
@@ -1933,7 +1926,7 @@ y 29
 end
 arch magic_mouth
 msg
-A briney scent fills the caver
+A briny scent fills the cavern.
 endmsg
 x 10
 y 30
@@ -1952,7 +1945,7 @@ arch large_stones
 x 10
 y 31
 end
-arch blocked
+arch cave_15
 x 11
 end
 arch pstone_2
@@ -1999,11 +1992,11 @@ arch pstone_2
 x 11
 y 7
 end
-arch dun3
+arch cave1
 x 11
 y 7
 end
-arch blocked
+arch cave_15
 x 11
 y 8
 end
@@ -2029,7 +2022,7 @@ y 11
 end
 arch magic_mouth
 msg
-You sense dangerous magic nearby
+You sense dangerous magic nearby.
 endmsg
 x 11
 y 12
@@ -2124,7 +2117,7 @@ arch small_stones
 x 11
 y 31
 end
-arch blocked
+arch cave_15
 x 12
 end
 arch pstone_2
@@ -2159,15 +2152,15 @@ arch ghast
 x 12
 y 5
 end
-arch blocked
+arch cave_15
 x 12
 y 6
 end
-arch blocked
+arch cave_15
 x 12
 y 7
 end
-arch blocked
+arch cave_15
 x 12
 y 8
 end
@@ -2317,15 +2310,15 @@ arch medium_stones
 x 13
 y 5
 end
-arch blocked
+arch cave_15
 x 13
 y 6
 end
-arch blocked
+arch cave_15
 x 13
 y 7
 end
-arch blocked
+arch cave_15
 x 13
 y 8
 end
@@ -2352,9 +2345,9 @@ end
 arch rune_medium_fireball
 hp 5
 dam 20
-glow_radius 1
 x 13
 y 11
+glow_radius 1
 end
 arch pstone_2
 x 13
@@ -2467,7 +2460,7 @@ end
 arch pstone_2
 x 14
 end
-arch dun2
+arch cave4
 x 14
 end
 arch pstone_2
@@ -2482,7 +2475,7 @@ arch pstone_2
 x 14
 y 3
 end
-arch dun0
+arch cave21
 x 14
 y 3
 end
@@ -2494,15 +2487,15 @@ arch small_stones
 x 14
 y 5
 end
-arch blocked
+arch cave_15
 x 14
 y 6
 end
-arch blocked
+arch cave_15
 x 14
 y 7
 end
-arch blocked
+arch cave_15
 x 14
 y 8
 end
@@ -2622,7 +2615,7 @@ arch cave20
 x 14
 y 30
 end
-arch blocked
+arch cave_15
 x 14
 y 31
 end
@@ -2656,7 +2649,7 @@ arch pstone_2
 x 15
 y 5
 end
-arch blocked
+arch cave_15
 x 15
 y 6
 end
@@ -2804,15 +2797,15 @@ arch cave2
 x 15
 y 29
 end
-arch blocked
+arch cave_15
 x 15
 y 30
 end
-arch blocked
+arch cave_15
 x 15
 y 31
 end
-arch blocked
+arch cave_15
 x 16
 end
 arch pstone_2
@@ -2891,7 +2884,7 @@ arch cave2
 x 16
 y 14
 end
-arch blocked
+arch cave_15
 x 16
 y 15
 end
@@ -2947,7 +2940,7 @@ arch cave20
 x 16
 y 25
 end
-arch cave19
+arch cave25
 x 16
 y 26
 end
@@ -2971,18 +2964,18 @@ arch cave22
 x 16
 y 29
 end
-arch blocked
+arch cave_15
 x 16
 y 30
 end
-arch blocked
+arch cave_15
 x 16
 y 31
 end
-arch blocked
+arch cave_15
 x 17
 end
-arch blocked
+arch cave_15
 x 17
 y 1
 end
@@ -3054,7 +3047,7 @@ arch cave2
 x 17
 y 14
 end
-arch blocked
+arch cave_15
 x 17
 y 15
 end
@@ -3102,46 +3095,46 @@ arch cave1
 x 17
 y 23
 end
-arch cave20
+arch cave22
 x 17
 y 24
 end
-arch blocked
+arch cave_15
 x 17
 y 25
 end
-arch blocked
+arch cave_15
 x 17
 y 26
 end
-arch blocked
+arch cave_15
 x 17
 y 27
 end
-arch blocked
+arch cave_15
 x 17
 y 28
 end
-arch blocked
+arch cave_15
 x 17
 y 29
 end
-arch blocked
+arch cave_15
 x 17
 y 30
 end
-arch blocked
+arch cave_15
 x 17
 y 31
 end
-arch blocked
+arch cave_15
 x 18
 end
-arch blocked
+arch cave_15
 x 18
 y 1
 end
-arch blocked
+arch cave_15
 x 18
 y 2
 end
@@ -3177,7 +3170,7 @@ arch pstone_2
 x 18
 y 8
 end
-arch dun10
+arch cave15
 x 18
 y 8
 end
@@ -3229,7 +3222,7 @@ arch cave22
 x 18
 y 14
 end
-arch blocked
+arch cave_15
 x 18
 y 15
 end
@@ -3269,54 +3262,54 @@ arch cave2
 x 18
 y 22
 end
-arch blocked
+arch cave_15
 x 18
 y 23
 end
-arch blocked
+arch cave_15
 x 18
 y 24
 end
-arch blocked
+arch cave_15
 x 18
 y 25
 end
-arch blocked
+arch cave_15
 x 18
 y 26
 end
-arch blocked
+arch cave_15
 x 18
 y 27
 end
-arch blocked
+arch cave_15
 x 18
 y 28
 end
-arch blocked
+arch cave_15
 x 18
 y 29
 end
-arch blocked
+arch cave_15
 x 18
 y 30
 end
-arch blocked
+arch cave_15
 x 18
 y 31
 end
-arch blocked
+arch cave_15
 x 19
 end
-arch blocked
+arch cave_15
 x 19
 y 1
 end
-arch blocked
+arch cave_15
 x 19
 y 2
 end
-arch blocked
+arch cave_15
 x 19
 y 3
 end
@@ -3332,7 +3325,7 @@ arch pstone_2
 x 19
 y 5
 end
-arch dun3
+arch cave1
 x 19
 y 5
 end
@@ -3340,7 +3333,7 @@ arch pstone_2
 x 19
 y 6
 end
-arch dun3
+arch cave1
 x 19
 y 6
 end
@@ -3348,15 +3341,15 @@ arch pstone_2
 x 19
 y 7
 end
-arch dun3
+arch cave1
 x 19
 y 7
 end
-arch blocked
+arch cave_15
 x 19
 y 8
 end
-arch blocked
+arch cave_15
 x 19
 y 9
 end
@@ -3376,19 +3369,19 @@ arch cave20
 x 19
 y 11
 end
-arch blocked
+arch cave_15
 x 19
 y 12
 end
-arch blocked
+arch cave_15
 x 19
 y 13
 end
-arch blocked
+arch cave_15
 x 19
 y 14
 end
-arch blocked
+arch cave_15
 x 19
 y 15
 end
@@ -3428,39 +3421,39 @@ arch cave22
 x 19
 y 22
 end
-arch blocked
+arch cave_15
 x 19
 y 23
 end
-arch blocked
+arch cave_15
 x 19
 y 24
 end
-arch blocked
+arch cave_15
 x 19
 y 25
 end
-arch blocked
+arch cave_15
 x 19
 y 26
 end
-arch blocked
+arch cave_15
 x 19
 y 27
 end
-arch blocked
+arch cave_15
 x 19
 y 28
 end
-arch blocked
+arch cave_15
 x 19
 y 29
 end
-arch blocked
+arch cave_15
 x 19
 y 30
 end
-arch blocked
+arch cave_15
 x 19
 y 31
 end

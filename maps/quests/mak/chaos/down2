@@ -1,13 +1,19 @@
 arch map
-name down2
+name Warriors' Tower, Dungeon Level 2
+swap_time 5300
+difficulty 25
+region wilderness
+width 32
+height 29
+enter_x 14
+enter_y 15
 msg
-Creator: Magnus Kronhamn
-Email: mak@solace.mh.se
-Date: Sun Apr  9 23:46:05 2000
+Created:  2000-04-09 Magnus Kronhamn (mak@solace.mh.se)
+Modified: 2008-12-22 Rick Tanner
 endmsg
-x 32
-y 29
-value 5300
+maplore
+@quest Lorkas
+endmaplore
 end
 arch dungeon_floor
 end
@@ -352,7 +358,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 2
 y 1
 speed -0.400000
@@ -430,7 +436,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 2
 y 12
 speed -0.700000
@@ -485,7 +491,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 2
 y 17
 speed -0.700000
@@ -586,7 +592,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 3
 y 3
 speed -0.700000
@@ -621,7 +627,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 3
 y 4
 speed -0.700000
@@ -679,7 +685,7 @@ maxsp 100
 exp 35000
 dam 20
 wc -10
-ac -8
+ac -4
 x 3
 y 9
 speed -0.400000
@@ -803,7 +809,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 4
 y 1
 speed -0.700000
@@ -885,7 +891,7 @@ maxsp 100
 exp 35000
 dam 20
 wc -10
-ac -8
+ac -4
 x 4
 y 12
 speed -0.400000
@@ -938,7 +944,7 @@ maxsp 100
 exp 35000
 dam 20
 wc -10
-ac -8
+ac -4
 x 4
 y 17
 speed -0.400000
@@ -972,7 +978,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 4
 y 19
 speed -0.700000
@@ -1007,7 +1013,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 4
 y 20
 speed -0.700000
@@ -1234,7 +1240,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 6
 y 4
 speed -0.700000
@@ -1293,7 +1299,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 6
 y 10
 speed -0.700000
@@ -1360,7 +1366,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 6
 y 18
 speed -0.700000
@@ -1423,7 +1429,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 6
 y 25
 speed -0.700000
@@ -1515,7 +1521,7 @@ maxsp 100
 exp 35000
 dam 20
 wc -10
-ac -8
+ac -4
 x 7
 y 8
 speed -0.400000
@@ -1600,7 +1606,7 @@ maxsp 100
 exp 35000
 dam 20
 wc -10
-ac -8
+ac -4
 x 7
 y 21
 speed -0.400000
@@ -1683,7 +1689,7 @@ maxsp 100
 exp 35000
 dam 20
 wc -10
-ac -8
+ac -4
 x 8
 y 3
 speed -0.400000
@@ -1749,7 +1755,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 8
 y 12
 speed -0.700000
@@ -1847,7 +1853,7 @@ maxsp 100
 exp 35000
 dam 20
 wc -10
-ac -8
+ac -4
 x 8
 y 26
 speed -0.400000
@@ -2015,7 +2021,7 @@ end
 arch dungeon_floor
 x 10
 end
-arch dwall3_3
+arch dwall_3_3
 x 10
 end
 arch dungeon_floor
@@ -2110,7 +2116,7 @@ arch dungeon_floor
 x 10
 y 12
 end
-arch oakdoor
+arch stair_3_down
 slaying down2
 hp 18
 sp 12
@@ -2228,7 +2234,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 10
 y 26
 speed -0.700000
@@ -2301,7 +2307,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 11
 y 5
 speed -0.400000
@@ -2473,7 +2479,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 12
 y 2
 speed -0.400000
@@ -2579,7 +2585,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 12
 y 18
 speed -0.700000
@@ -2684,7 +2690,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 13
 y 4
 speed -0.400000
@@ -2725,7 +2731,7 @@ maxsp 100
 exp 35000
 dam 20
 wc -10
-ac -8
+ac -4
 x 13
 y 6
 speed -0.400000
@@ -2827,7 +2833,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 13
 y 21
 speed -0.700000
@@ -2878,7 +2884,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 13
 y 25
 speed -0.700000
@@ -2956,7 +2962,7 @@ arch dungeon_floor
 x 14
 y 9
 end
-arch oakdoor
+arch stair_3_down
 slaying down3
 hp 4
 sp 1
@@ -2995,7 +3001,7 @@ arch dungeon_floor
 x 14
 y 15
 end
-arch oakdoor
+arch stair2_up
 slaying down1
 hp 2
 sp 27
@@ -3091,7 +3097,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -7
 x 15
 y 2
 speed -0.400000
@@ -3141,7 +3147,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 15
 y 6
 speed -0.400000
@@ -3239,7 +3245,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 15
 y 19
 speed -0.700000
@@ -3278,7 +3284,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 15
 y 21
 speed -0.700000
@@ -3336,7 +3342,7 @@ maxsp 100
 exp 35000
 dam 20
 wc -10
-ac -8
+ac -4
 x 15
 y 26
 speed -0.400000
@@ -3399,7 +3405,7 @@ maxsp 100
 exp 35000
 dam 20
 wc -10
-ac -8
+ac -4
 x 16
 y 4
 speed -0.400000
@@ -3683,7 +3689,7 @@ end
 arch dungeon_floor
 x 18
 end
-arch dwall3_3
+arch dwall_3_3
 x 18
 end
 arch dungeon_floor
@@ -3778,7 +3784,7 @@ arch dungeon_floor
 x 18
 y 12
 end
-arch oakdoor
+arch stair_3_up
 slaying down2
 hp 10
 sp 12
@@ -4013,7 +4019,7 @@ maxsp 100
 exp 35000
 dam 20
 wc -10
-ac -8
+ac -4
 x 19
 y 17
 speed -0.400000
@@ -4197,7 +4203,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 20
 y 22
 speed -0.700000
@@ -4346,7 +4352,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 21
 y 18
 speed -0.700000
@@ -4408,7 +4414,7 @@ maxsp 100
 exp 35000
 dam 20
 wc -10
-ac -8
+ac -4
 x 21
 y 25
 speed -0.400000
@@ -4464,7 +4470,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac 7
 x 22
 y 2
 speed -0.700000
@@ -4507,7 +4513,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 22
 y 5
 speed -0.700000
@@ -4597,7 +4603,7 @@ maxsp 100
 exp 35000
 dam 20
 wc -10
-ac -8
+ac -4
 x 22
 y 17
 speed -0.400000
@@ -4638,7 +4644,7 @@ maxsp 100
 exp 35000
 dam 20
 wc -10
-ac -8
+ac -4
 x 22
 y 20
 speed -0.400000
@@ -4722,7 +4728,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 23
 y 4
 speed -0.700000
@@ -4780,7 +4786,7 @@ maxsp 100
 exp 35000
 dam 20
 wc -10
-ac -8
+ac -4
 x 23
 y 9
 speed -0.400000
@@ -4821,7 +4827,7 @@ maxsp 100
 exp 35000
 dam 20
 wc -10
-ac -8
+ac -4
 x 23
 y 12
 speed -0.400000
@@ -4969,7 +4975,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -4
 x 24
 y 10
 speed -0.700000
@@ -5012,7 +5018,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 24
 y 13
 speed -0.700000
@@ -5040,7 +5046,7 @@ arch dungeon_floor
 x 24
 y 15
 end
-arch dwall3_3
+arch dwall_3_3
 x 24
 y 15
 end
@@ -5180,7 +5186,7 @@ maxsp 100
 exp 35000
 dam 20
 wc -10
-ac -8
+ac -4
 x 25
 y 3
 speed -0.400000
@@ -5238,7 +5244,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 25
 y 10
 speed -0.700000
@@ -5439,7 +5445,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 26
 y 19
 speed -0.700000
@@ -5524,7 +5530,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 27
 y 2
 speed -0.700000
@@ -5567,7 +5573,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 27
 y 5
 speed -0.700000
@@ -5625,7 +5631,7 @@ maxsp 100
 exp 35000
 dam 20
 wc -10
-ac -8
+ac -4
 x 27
 y 10
 speed -0.400000
@@ -5706,7 +5712,7 @@ maxsp 100
 exp 35000
 dam 20
 wc -10
-ac -8
+ac -4
 x 27
 y 22
 speed -0.400000
@@ -5740,7 +5746,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 27
 y 24
 speed -0.700000
@@ -5853,7 +5859,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 28
 y 12
 speed -0.700000
@@ -5977,7 +5983,7 @@ maxsp 100
 exp 35000
 dam 20
 wc -10
-ac -8
+ac -4
 x 29
 y 2
 speed -0.400000
@@ -6015,7 +6021,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 29
 y 4
 speed -0.400000
@@ -6081,7 +6087,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 29
 y 12
 speed -0.700000
@@ -6147,7 +6153,7 @@ maxsp 100
 exp 35000
 dam 20
 wc -10
-ac -8
+ac -4
 x 29
 y 19
 speed -0.400000
@@ -6181,7 +6187,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 29
 y 21
 speed -0.700000
@@ -6224,7 +6230,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 x 29
 y 24
 speed -0.700000

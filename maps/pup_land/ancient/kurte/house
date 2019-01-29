@@ -1,13 +1,15 @@
 arch map
+name Kurte's House
+difficulty 1
 region ancientpupland
-name house
+width 21
+height 21
+enter_x 10
+enter_y 19
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue Apr  2 17:07:53 1996
+Created:  1996-04-02
+Modified: 2012-02-23 Rick Tanner
 endmsg
-x 21
-y 21
 end
 arch grass
 end
@@ -613,13 +615,14 @@ arch elf
 name Kurte
 msg
 @match *
-... 
+...
 endmsg
 face elf.131
 hp 100
 x 6
 y 6
 type 0
+move_type walk
 monster 1
 friendly 1
 end
@@ -651,7 +654,7 @@ arch raas
 name Kurte
 msg
 @match *
-... 
+...
 endmsg
 Con 100
 hp 10000
@@ -963,7 +966,7 @@ end
 arch door_look_1
 x 9
 y 17
-no_pass 0
+move_block 0
 end
 arch pstone_1
 x 9
@@ -1006,6 +1009,34 @@ end
 arch afloor_right
 x 10
 y 4
+end
+arch unicorn
+name Kurte
+msg
+@match jacob
+I didn't see who murdered him.  The only way to find out is to ask Jacob himself.  I know this is cruel, but you must summon him from the grave - as a zombie.
+@match zombie
+The importance of your mission shall justify the usage of necromantic magic.
+@match necro
+You dare to ask ME about necromantic spells? By the bounds of honour, I cannot teach it to you.
+@match evil master
+The Evil Masters pose a threat to this world.  But don't forget that you came here to save Eureca.
+@match gothwolte
+Gothwolte is older than I expected first.  He is even older than us.  You must be very careful...
+@match sword
+I forgot the name of Gothwolte's sword.  Ask Timothey, my scholar.  He lives in lone village.
+@match eureca
+I cannot see him.  But still, I feel that he is alive.  Hurry to find him, he must be in serious trouble.
+@match *
+You have rude manners... If you want to ask us anything, you should speak more precisely.
+endmsg
+Con 100
+hp 20000
+ac -100
+x 10
+y 4
+friendly 1
+unaggressive 0
 end
 arch afloor_right
 x 10
@@ -1062,7 +1093,7 @@ end
 arch door_look_1
 x 10
 y 17
-no_pass 0
+move_block 0
 end
 arch pstone_1
 x 10
@@ -1161,7 +1192,7 @@ end
 arch door_look_1
 x 11
 y 17
-no_pass 0
+move_block 0
 end
 arch pstone_1
 x 11
@@ -1274,11 +1305,10 @@ x 12
 y 18
 end
 arch sign
-name Kurtes' house
+name Kurte's House
 msg
-Kurtes' house:
-   Kurte likes all people with good
-   manners...
+Kurte's House:
+   Kurte likes all people with good manners...
 endmsg
 x 12
 y 18
@@ -1524,6 +1554,21 @@ arch afloor_right
 x 15
 y 6
 end
+arch titan
+name Kurte
+msg
+@match *
+...
+endmsg
+Con 100
+hp 20000
+maxhp 20000
+x 15
+y 6
+friendly 1
+can_use_armour 0
+can_use_weapon 0
+end
 arch afloor_right
 x 15
 y 7
@@ -2082,64 +2127,4 @@ end
 arch grass
 x 20
 y 20
-end
-arch unicorn
-name Kurte
-msg
-@match jacob
-I didn't see who murdered him. The
-only way to find out is to ask Jacob
-himself. I know this is cruel, but you
-must summon him from the grave - as a
-zombie.
-@match zombie
-The importance of your mission shall
-justify the usage of necromantic magic.
-@match necro
-You dare to ask ME about necromantic
-spells? By the bounds of honour, I
-cannot teach it to you.
-@match [Ee]vil [Mm]aster
-The Evil Masters pose a threat to this
-world. But don't forget that you
-came here to save Eureca.
-@match gothwolte
-Gothwolte is older than I expected
-first. He is even older than us. You
-must be very careful...
-@match sword
-I forgot the name of Gothwolte's
-sword. Ask Timothey, my scolar. He
-lives in lone village.
-@match eureca
-I cannot see him. But still, I feel
-that he is alive. Hurry to find him,
-he must be in serious trouble.
-@match *
-You have rude manners...
-If you want to ask us anything,
-you should speak more precisely.
-endmsg
-Con 100
-hp 20000
-ac -100
-x 10
-y 4
-friendly 1
-unaggressive 0
-end
-arch titan
-name Kurte
-msg
-@match *
-...
-endmsg
-Con 100
-hp 20000
-maxhp 20000
-x 15
-y 6
-friendly 1
-can_use_armour 0
-can_use_weapon 0
 end

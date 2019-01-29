@@ -1,10 +1,14 @@
 arch map
+name Reception, Electricity Level 7
+difficulty 22
 region nurnberg
-name electricity7
+width 16
+height 16
+enter_x 14
+enter_y 5
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue Feb 20 05:11:57 1996
+Created:  1996-02-20
+Modified: 2011-12-14 Rick Tanner
 endmsg
 end
 arch marble
@@ -68,6 +72,9 @@ end
 arch marble
 y 10
 end
+arch swall_1_4_half
+y 10
+end
 arch cwall_2_1_1
 y 10
 end
@@ -127,6 +134,10 @@ arch marble
 x 1
 y 4
 end
+arch big_elec
+x 1
+y 4
+end
 arch marble
 x 1
 y 5
@@ -155,7 +166,7 @@ arch dungeon_magic
 x 1
 y 10
 end
-arch swall_1_4
+arch swall_2_1_2
 x 1
 y 10
 end
@@ -178,7 +189,6 @@ end
 arch button_lever
 x 1
 y 14
-protected 1
 connected 1
 end
 arch marble
@@ -301,6 +311,10 @@ x 3
 y 3
 end
 arch marble
+x 3
+y 4
+end
+arch big_elec
 x 3
 y 4
 end
@@ -442,7 +456,6 @@ arch grate_closed_2
 x 4
 y 12
 speed 0.500000
-protected 1
 connected 1
 end
 arch marble
@@ -465,11 +478,15 @@ arch dungeon_magic
 x 4
 y 14
 end
-arch swall_1_2
+arch swall_2_1_1
 x 4
 y 14
 end
 arch marble
+x 4
+y 15
+end
+arch swall_1_2_half
 x 4
 y 15
 end
@@ -500,6 +517,10 @@ x 5
 y 3
 end
 arch marble
+x 5
+y 4
+end
+arch big_elec
 x 5
 y 4
 end
@@ -536,12 +557,13 @@ x 5
 y 11
 end
 arch lightningwall_6
-dam 88
 x 5
 y 11
 speed 0.250000
 speed_left -2.370000
 level 50
+arch spell_ball_lightning
+end
 end
 arch marble
 x 5
@@ -552,12 +574,13 @@ x 5
 y 13
 end
 arch lightningwall_8
-dam 88
 x 5
 y 13
 speed 0.250000
 speed_left -2.750000
 level 50
+arch spell_ball_lightning
+end
 end
 arch marble
 x 5
@@ -641,7 +664,6 @@ arch grate_open_2
 x 6
 y 12
 speed 0.500000
-protected 10
 value 1
 connected 10
 end
@@ -657,11 +679,15 @@ arch marble
 x 6
 y 14
 end
-arch swall_1_2
+arch swall_2_1_1
 x 6
 y 14
 end
 arch marble
+x 6
+y 15
+end
+arch swall_1_2_half
 x 6
 y 15
 end
@@ -692,6 +718,10 @@ x 7
 y 3
 end
 arch marble
+x 7
+y 4
+end
+arch big_elec
 x 7
 y 4
 end
@@ -734,7 +764,6 @@ end
 arch button_lever
 x 7
 y 13
-protected 10
 connected 10
 end
 arch marble
@@ -846,6 +875,10 @@ x 9
 y 3
 end
 arch marble
+x 9
+y 4
+end
+arch big_elec
 x 9
 y 4
 end
@@ -985,16 +1018,21 @@ arch horn2
 name horn of high voltage
 hp 20
 maxhp 20
-sp 6
 x 11
 y 1
 level 10
+arch spell_large_lightning
+end
 end
 arch marble
 x 11
 y 2
 end
 arch cwall_2_1_2
+x 11
+y 2
+end
+arch swall_1_1_half
 x 11
 y 2
 end
@@ -1006,7 +1044,7 @@ arch dungeon_magic
 x 11
 y 3
 end
-arch swall_1_1
+arch swall_2_1_1
 x 11
 y 3
 end
@@ -1139,8 +1177,7 @@ end
 arch scroll
 name instructions
 msg
-Bring this horn to the Guild of Law
-and drop it on the desk there.
+Bring this horn to the Guild of Law and drop it on the desk there.
 endmsg
 x 12
 y 1
@@ -1213,6 +1250,10 @@ arch marble
 x 12
 y 12
 end
+arch big_elec
+x 12
+y 12
+end
 arch marble
 x 12
 y 13
@@ -1247,6 +1288,10 @@ arch cwall_2_1_2
 x 13
 y 2
 end
+arch swall_1_1_half
+x 13
+y 2
+end
 arch marble
 x 13
 y 3
@@ -1255,7 +1300,7 @@ arch dungeon_magic
 x 13
 y 3
 end
-arch swall_1_1
+arch swall_2_1_1
 x 13
 y 3
 end
@@ -1319,7 +1364,6 @@ arch grate_closed_1
 x 13
 y 11
 speed 0.500000
-protected 2
 connected 2
 end
 arch marble
@@ -1438,7 +1482,6 @@ end
 arch button_lever
 x 14
 y 10
-protected 2
 connected 2
 end
 arch marble
@@ -1567,6 +1610,10 @@ arch cwall_2_1_1
 x 15
 y 11
 end
+arch swall_1_3_half
+x 15
+y 11
+end
 arch marble
 x 15
 y 12
@@ -1598,28 +1645,4 @@ end
 arch cwall_2_2_4
 x 15
 y 15
-end
-arch big_elec
-x 1
-y 4
-end
-arch big_elec
-x 3
-y 4
-end
-arch big_elec
-x 5
-y 4
-end
-arch big_elec
-x 7
-y 4
-end
-arch big_elec
-x 9
-y 4
-end
-arch big_elec
-x 12
-y 12
 end

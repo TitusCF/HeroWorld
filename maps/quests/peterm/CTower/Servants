@@ -1,32 +1,38 @@
 arch map
+name Tower of the Stars, Servants
+difficulty 10
+region wilderness
+width 16
+height 16
+enter_x 14
+enter_y 7
 msg
-Creator: peter mardahl
-Email: peterm@soda.berkeley.edu
-Date: Fri Feb 11 16:20:28 1994
+Created:  1994-02-11 peter mardahl (peterm@soda.berkeley.edu)
+Modified: 2012-03-11 Rick Tanner
 endmsg
 end
 arch cobblestones2
 y 6
 end
-arch dwall_2_1_2
+arch dwall_2_2_2
 y 6
 end
 arch cobblestones2
 y 7
 end
-arch stair_3_down
-name To the Dungeon
-slaying Dungeon
-sp 7
+arch dwall_2_1_1
 y 7
 end
 arch cobblestones2
 y 8
 end
+arch dwall_2_1_1
+y 8
+end
 arch cobblestones2
 y 9
 end
-arch dwall_2_1_2
+arch dwall_2_2_1
 y 9
 end
 arch cobblestones2
@@ -65,7 +71,11 @@ arch cobblestones2
 x 1
 y 7
 end
-arch medium_guard
+arch stair_3_down
+name To the Dungeon
+slaying Dungeon
+hp 1
+sp 7
 x 1
 y 7
 end
@@ -73,15 +83,11 @@ arch cobblestones2
 x 1
 y 8
 end
-arch medium_guard
-x 1
-y 8
-end
 arch cobblestones2
 x 1
 y 9
 end
-arch dwall3_3
+arch dwall_3_3
 x 1
 y 9
 end
@@ -154,6 +160,22 @@ x 2
 y 7
 end
 arch cobblestones2
+x 2
+y 7
+end
+arch medium_guard
+x 2
+y 7
+end
+arch cobblestones2
+x 2
+y 8
+end
+arch cobblestones2
+x 2
+y 8
+end
+arch medium_guard
 x 2
 y 8
 end
@@ -241,10 +263,6 @@ arch cobblestones2
 x 3
 y 7
 end
-arch charwoman
-x 3
-y 7
-end
 arch cobblestones2
 x 3
 y 8
@@ -273,7 +291,7 @@ arch cobblestones2
 x 3
 y 12
 end
-arch dwall3_3
+arch dwall_3_3
 x 3
 y 12
 end
@@ -348,6 +366,10 @@ x 4
 y 6
 end
 arch cobblestones2
+x 4
+y 7
+end
+arch charwoman
 x 4
 y 7
 end
@@ -870,7 +892,7 @@ end
 arch cobblestones2
 x 9
 end
-arch dwall3_3
+arch dwall_3_3
 x 9
 end
 arch cobblestones2
@@ -937,7 +959,7 @@ arch cobblestones2
 x 9
 y 9
 end
-arch dwall3_3
+arch dwall_3_3
 x 9
 y 9
 end
@@ -1009,7 +1031,7 @@ y 2
 end
 arch magic_mouth
 msg
-Pantry 
+Pantry.
 endmsg
 x 10
 y 3
@@ -1326,7 +1348,7 @@ y 6
 end
 arch magic_mouth
 msg
-The Kitchen  
+The Kitchen.
 endmsg
 x 13
 y 7
@@ -1337,7 +1359,7 @@ y 7
 end
 arch magic_mouth
 msg
-Senior servants quarters  
+Senior servants quarters.
 endmsg
 x 13
 y 8

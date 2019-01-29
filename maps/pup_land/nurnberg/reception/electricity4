@@ -1,13 +1,15 @@
 arch map
+name Reception, Electricity Level 4
+difficulty 10
 region nurnberg
-name electricity4
+width 27
+height 27
+enter_x 12
+enter_y 15
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sun Feb 18 03:31:13 1996
+Created:  1996-02-18
+Modified: 2012-03-04 Rick Tanner
 endmsg
-x 27
-y 27
 end
 arch dungeon_floor
 end
@@ -932,6 +934,10 @@ arch cobblestones2
 x 5
 y 11
 end
+arch cobblestones2
+x 5
+y 12
+end
 arch dungeon_magic
 x 5
 y 13
@@ -963,6 +969,14 @@ end
 arch swall_2_1_2
 x 5
 y 15
+end
+arch cobblestones2
+x 5
+y 16
+end
+arch cobblestones2
+x 5
+y 17
 end
 arch dungeon_magic
 x 5
@@ -1768,14 +1782,6 @@ arch dungeon_magic
 x 10
 y 4
 end
-arch swall_1_4
-x 10
-y 4
-end
-arch dungeon_magic
-x 10
-y 4
-end
 arch flagstone
 x 10
 y 4
@@ -1787,14 +1793,6 @@ end
 arch grass
 x 10
 y 5
-end
-arch dungeon_magic
-x 10
-y 6
-end
-arch swall_1_4
-x 10
-y 6
 end
 arch dungeon_magic
 x 10
@@ -1883,14 +1881,6 @@ end
 arch marble
 x 10
 y 20
-end
-arch dungeon_magic
-x 10
-y 21
-end
-arch swall_1_4
-x 10
-y 21
 end
 arch dungeon_magic
 x 10
@@ -2013,7 +2003,7 @@ y 15
 end
 arch sign
 msg
-Intersection of Towers
+Intersection of Towers.
 endmsg
 x 11
 y 15
@@ -2380,8 +2370,7 @@ end
 arch locked_door2
 slaying 1010542567
 msg
-You need the Tower Key to open this
-door. 
+You need the Tower Key to open this door.
 endmsg
 x 13
 y 12

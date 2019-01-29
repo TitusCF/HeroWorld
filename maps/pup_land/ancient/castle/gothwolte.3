@@ -1,13 +1,15 @@
 arch map
+name Gothwolte, Training Arena
+difficulty 80
 region ancientpupland
-name gothwolte
+width 19
+height 23
+enter_x 9
+enter_y 20
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sun Jun  4 20:37:50 2000
+Created:  2000-06-04
+Modified: 2012-02-23 Rick Tanner
 endmsg
-x 19
-y 23
 end
 arch dirtfloor
 end
@@ -197,7 +199,7 @@ arch mountain3
 name rocks
 x 1
 y 13
-no_pass 1
+move_block all
 end
 arch dirtfloor
 x 1
@@ -443,7 +445,7 @@ arch mountain3
 name rocks
 x 3
 y 4
-no_pass 1
+move_block all
 end
 arch dirtfloor
 x 3
@@ -820,7 +822,7 @@ arch mountain3
 name rocks
 x 6
 y 17
-no_pass 1
+move_block all
 end
 arch dirtfloor
 x 6
@@ -1121,14 +1123,10 @@ y 8
 end
 arch lord_e
 msg
-@match acid|Acid
-Ouch, you know my weakness! But that
-won't change anything...
+@match acid
+Ouch, you know my weakness! But that won't change anything...
 @match *
-Haha, yes I am Gothwolte the Lord of
-the world. And my body is called
-Eureca. And you are called a corpse,
-bua ha ha...  
+Haha, yes I am Gothwolte the Lord of the world.  And my body is called Eureca.  And you are called a corpse, bua ha ha...
 endmsg
 Con 80
 hp 30000
@@ -1143,17 +1141,32 @@ x 9
 y 8
 speed_left -1.050000
 level 119
-immune 8388543
 attacktype 265
-vulnerable 0
+resist_physical 100
+resist_magic 100
+resist_confusion 100
+resist_drain 100
+resist_weaponmagic 100
+resist_ghosthit 100
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_turn_undead 100
+resist_fear 100
+resist_deplete 100
+resist_death 100
+resist_chaos 100
+resist_godpower 100
+resist_holyword 100
+resist_blind 100
 carrying 75000
 pick_up 0
 will_apply 0
 unaggressive 1
 can_use_scroll 0
-can_use_wand 0
 can_use_bow 0
 can_use_skill 0
+can_use_range 0
 arch invis_exit
 slaying ../../castle_eureca/castle_eureca5
 hp 9
@@ -1207,10 +1220,7 @@ end
 arch magic_mouth
 msg
 Gothwolte shouts:
-Ha! Who are you? I'll demonstrate you
-the incredible power of my new body!
-I bet you won't live long enough to
-feel it entirely... 
+Ha! Who are you? I'll demonstrate to you the incredible power of my new body! I bet you won't live long enough to feel it entirely...
 endmsg
 x 9
 y 18
@@ -1239,9 +1249,8 @@ end
 arch sign
 name training arena
 msg
-If you enter, you'll be treated like a
-punching bag.
-                 Gothwolte  
+If you enter, you'll be treated like a punching bag.
+   Gothwolte
 endmsg
 x 9
 y 19
@@ -1306,7 +1315,7 @@ arch mountain3
 name rocks
 x 10
 y 6
-no_pass 1
+move_block all
 end
 arch dirtfloor
 x 10
@@ -1672,7 +1681,7 @@ arch mountain3
 name rocks
 x 13
 y 13
-no_pass 1
+move_block all
 end
 arch hills_rocky
 name uneven ground
@@ -1951,7 +1960,7 @@ arch mountain3
 name rocks
 x 16
 y 3
-no_pass 1
+move_block all
 end
 arch dirtfloor
 x 16

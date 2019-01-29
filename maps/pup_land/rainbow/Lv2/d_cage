@@ -1,12 +1,15 @@
 arch map
+name BlackMind, Cage
+difficulty 20
 region pupland
+width 13
+height 14
+enter_x 6
+enter_y 12
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Fri Jun 14 20:18:57 1996
+Created:  1996-06-14
+Modified: 2008-10-27 Rick Tanner
 endmsg
-x 13
-y 14
 end
 arch blocked
 end
@@ -562,6 +565,19 @@ end
 arch cobblestones2
 x 6
 y 8
+end
+arch dread
+x 6
+y 8
+carrying 200
+arch key2
+name dread key
+slaying dread
+end
+arch key2
+name BlackMind key
+slaying black
+end
 end
 arch cobblestones2
 x 6
@@ -1144,17 +1160,4 @@ end
 arch blocked
 x 12
 y 13
-end
-arch dread
-x 6
-y 8
-carrying 200
-arch key2
-name dread key
-slaying dread
-end
-arch key2
-name BlackMind key
-slaying black
-end
 end

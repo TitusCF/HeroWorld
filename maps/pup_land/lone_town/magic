@@ -1,13 +1,15 @@
 arch map
+name Magic Show !
+difficulty 1
 region lonetown
-name magic
+width 20
+height 25
+enter_x 7
+enter_y 10
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Wed Nov 26 17:06:57 1997
+Created:  1997-11-26
+Modified: 2012-03-01 Rick Tanner
 endmsg
-x 20
-y 25
 end
 arch blocked
 end
@@ -90,6 +92,9 @@ arch flagstone
 y 7
 end
 arch dungeon_magic
+y 7
+end
+arch swall_1_4_half
 y 7
 end
 arch wall_2_1_1
@@ -242,7 +247,7 @@ y 6
 end
 arch magic_mouth
 msg
-To the underground of the magic show
+To the underground of the magic show.
 endmsg
 x 1
 y 6
@@ -266,7 +271,7 @@ arch flagstone
 x 1
 y 7
 end
-arch swall_1_4
+arch swall_2_1_2
 x 1
 y 7
 end
@@ -282,26 +287,15 @@ arch beholder
 name Fool
 msg
 @match I don't know
-At least you are an honest person.
-I decide to give you the token.
-But I can't stand your ugly face any
-more! GO AWAY!!
-@match token|Token
-You do want the token don't you?
-So...
-If you can answer my query,
-I'll give you the token. - Ok?
-@match Yes|yes|YES|ok|OK|Ok
-My query for you is ..
-"Where is the Belzebub's sword?".
+At least you are an honest person.  I decide to give you the token, but I can't stand your ugly face any more! GO AWAY!!
+@match token
+You do want the token don't you? So...  If you can answer my query, I'll give you the token.  Ok?
+@match yes|ok
+My query for you is .. "Where is the Belzebub's sword?"
 @match here|there
-Are you sure!?
-You think the Belzebub's sword would
-be here!? You are stupid and annoying.
-Go away!!
+Are you sure!? You think the Belzebub's sword would be here!? You are stupid and annoying.  Go away!!
 @match *
-I hate your face!
-I won't sell you anything!!
+I hate your face!  I won't sell you anything!!
 endmsg
 hp 500
 maxhp 500
@@ -351,9 +345,7 @@ arch conjurer
 name Magician
 msg
 @match *
-The magic show is over.
-Please wait for your server to reset
-this map. 
+The magic show is over.  Please wait for your server to reset this map.
 endmsg
 hp 400
 exp 1
@@ -415,8 +407,8 @@ exp 0
 x 1
 y 20
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 end
 arch dungeon_floor
 x 1
@@ -922,8 +914,7 @@ end
 arch uw_sword
 name Belzepub's sword
 msg
-  This is not the true Belzebub's Sword.
-  It's a fake, made of paper.
+  This is not the true Belzebub's Sword.  It's a fake, made of paper.
 endmsg
 Con 0
 Int 0
@@ -1068,8 +1059,8 @@ exp 0
 x 4
 y 23
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 end
 arch dungeon_floor
 x 4
@@ -1539,12 +1530,7 @@ end
 arch locked_door1
 slaying the_magic_show
 msg
-Ladies and Gentlemen,
-Welcome to our phantastic MAGIC SHOW.
-Enjoy our most famous illusion:
-The teleportation of the Belzebub's
-Sword! To see it, please buy a Token.
-Ask "Fool", the beholder sailsman.
+Ladies and Gentlemen, Welcome to our phantastic MAGIC SHOW.  Enjoy our most famous illusion:  The teleportation of the Belzebub's Sword! To see it, please buy a Token.  Ask "Fool", the beholder salesman.
 endmsg
 x 7
 y 7
@@ -1581,7 +1567,7 @@ arch flagstone
 x 7
 y 11
 end
-arch oakdoor
+arch oakdoor_2
 slaying town
 hp 12
 sp 1
@@ -2193,8 +2179,8 @@ exp 0
 x 10
 y 23
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 end
 arch dungeon_floor
 x 10
@@ -2362,8 +2348,7 @@ end
 arch book_clasp
 name book of illusions
 msg
-To create a dust of Biren's mist,
-you need the following ingredients:
+To create a dust of Biren's mist, you need the following ingredients:
 - water of the wise
 - icecube
 - booze
@@ -2371,6 +2356,7 @@ endmsg
 x 11
 y 21
 level 20
+map_layer item
 no_pick 1
 end
 arch dungeon_floor
@@ -2571,20 +2557,14 @@ end
 arch conjurer
 name Magician
 msg
-@match [Tt]oken|[Ff]ool
-I'm afraid that crazy beholder-Fool
-will provide you with a query instead
-of the token. His queries usually are
-quite difficult.
-So, if you cannot answer his query,
-just say honestly "I don't know".
-@match No|no
+@match token|fool
+I'm afraid that crazy beholder-Fool will provide you with a query instead of the token.  His queries usually are quite difficult, so, if you cannot answer his query, just say honestly "I don't know."
+@match no
 Then go ahead and buy a token.
-@match Yes|yes
+@match yes
 It's phantastic, isn't it?
 @match *
-Customer! Welcome to our famous magic
-show. Have you seen it yet?
+Customer! Welcome to our famous magic show.  Have you seen it yet?
 endmsg
 hp 400
 x 12
@@ -3245,13 +3225,14 @@ arch blocked
 x 17
 end
 arch lightningwall_5
-dam 139
 x 17
 y 1
 speed 0.300000
 speed_left -5.570000
 level 100
 alive 1
+arch spell_steambolt
+end
 end
 arch grate_closed_1
 name 1
@@ -3270,13 +3251,14 @@ x 17
 y 9
 end
 arch lightningwall_5
-dam 139
 x 17
 y 10
 speed 0.300000
 speed_left -5.570000
 level 100
 alive 1
+arch spell_steambolt
+end
 end
 arch grate_closed_1
 name 3

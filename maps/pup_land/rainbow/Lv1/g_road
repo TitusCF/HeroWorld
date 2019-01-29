@@ -1,12 +1,15 @@
 arch map
+name G Road
+difficulty 8
 region pupland
-name g_road
+width 17
+height 16
+enter_x 2
+enter_y 7
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Mon Jun 10 15:38:14 1996
+Created:  1996-06-10
+Modified: 2012-03-06 Rick Tanner
 endmsg
-x 17
 end
 arch blocked
 end
@@ -125,7 +128,7 @@ end
 arch dun3
 x 1
 y 7
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 1
@@ -458,17 +461,9 @@ carrying 75
 arch note
 name Bavinson's note
 msg
-The legend of the four heroes has been
-lost long ago. Only fragments are
-remembered by some people, other
-pieces are scattered somewhere in this
-underground temple. I want to collect
-everything and put it together. But
-I'm not sure if I will survive my
-quest...
-           - Bavinson the archaeologist
-P.S.: If someone should find me dead,
-please search for my amulet!
+The legend of the four heroes has been lost long ago.  Only fragments are remembered by some people, other pieces are scattered somewhere in this underground temple.  I want to collect everything and put it together.  But I'm not sure if I will survive my quest...
+  - Bavinson the archaeologist
+P.S.: If someone should find me dead, please search for my amulet!
 endmsg
 end
 end
@@ -510,7 +505,7 @@ end
 arch mine2
 x 5
 y 4
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 5
@@ -809,7 +804,7 @@ end
 arch mine2
 x 8
 y 9
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 8
@@ -972,7 +967,7 @@ end
 arch mine2
 x 10
 y 5
-no_pass 0
+move_block 0
 end
 arch grassdark
 name grass
@@ -1192,7 +1187,7 @@ end
 arch mine2
 x 12
 y 11
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 12

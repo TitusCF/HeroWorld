@@ -1,13 +1,15 @@
 arch map
+name Agito
+difficulty 12
 region nurnberg
-name agito
+width 20
+height 20
+enter_x 1
+enter_y 13
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Wed Feb  7 22:02:17 1996
+Created:  1996-02-07
+Modified: 2012-03-02 Rick Tanner
 endmsg
-x 20
-y 20
 end
 arch dirtfloor
 end
@@ -103,16 +105,25 @@ end
 arch rough_wall_2_2_1
 y 15
 end
-arch blocked
+arch dirtfloor
 y 16
 end
-arch blocked
+arch cave12
+y 16
+end
+arch dirtfloor
 y 17
 end
-arch blocked
+arch cave23
+y 17
+end
+arch dirtfloor
 y 18
 end
-arch blocked
+arch cave_15
+y 18
+end
+arch cave_15
 y 19
 end
 arch dirtfloor
@@ -152,22 +163,18 @@ end
 arch human
 msg
 @match site|research
-You'll find the labs in a cave
-south-east of Nurnberg.
+You'll find the labs in a cave south-east of Nurnberg.
 @match yes|no|weapon
-I've heard rumors about experiments
-with living creatures. Horrible...
-Please go to the research site and
-destroy everything.
+I've heard rumors about experiments with living creatures.  Horrible... Please go to the research site and destroy everything.
 @match *
-Did you know that the Regular Army
-is doing research for new weaponry?
+Did you know that the Regular Army is doing research for new weaponry?
 endmsg
 face human.131
 hp 100
 x 1
 y 4
 type 0
+move_type walk
 monster 1
 friendly 1
 end
@@ -242,15 +249,23 @@ arch rough_wall_2_2_1
 x 1
 y 16
 end
-arch blocked
+arch dirtfloor
 x 1
 y 17
 end
-arch blocked
+arch cave12
+x 1
+y 17
+end
+arch dirtfloor
 x 1
 y 18
 end
-arch blocked
+arch cave23
+x 1
+y 18
+end
+arch cave_15
 x 1
 y 19
 end
@@ -358,11 +373,19 @@ arch rough_wall_2_2_1
 x 2
 y 17
 end
-arch blocked
+arch dirtfloor
 x 2
 y 18
 end
-arch blocked
+arch cave12
+x 2
+y 18
+end
+arch dirtfloor
+x 2
+y 19
+end
+arch cave23
 x 2
 y 19
 end
@@ -384,12 +407,9 @@ arch conjurer
 name mystic man
 msg
 @match reception|tower|weapon
-They call it a "lava slasher". But I'm
-not sure if this whole story is true!
+They call it a "lava slasher."  But I'm not sure if this whole story is true!
 @match *
-Some people say there would be a
-powerful weapon inside the reception
-tower... 
+Some people say there would be a powerful weapon inside the reception tower...
 endmsg
 hp 400
 x 3
@@ -480,7 +500,11 @@ arch rough_wall_2_2_1
 x 3
 y 18
 end
-arch blocked
+arch dirtfloor
+x 3
+y 19
+end
+arch cave2
 x 3
 y 19
 end
@@ -536,6 +560,7 @@ hp 100
 x 4
 y 7
 type 0
+move_type walk
 monster 1
 friendly 1
 end
@@ -595,7 +620,11 @@ arch rough_wall_2_1_2
 x 4
 y 18
 end
-arch blocked
+arch dirtfloor
+x 4
+y 19
+end
+arch cave2
 x 4
 y 19
 end
@@ -685,7 +714,11 @@ arch rough_wall_2_1_2
 x 5
 y 18
 end
-arch blocked
+arch dirtfloor
+x 5
+y 19
+end
+arch cave2
 x 5
 y 19
 end
@@ -754,22 +787,13 @@ end
 arch woman
 msg
 @match castle
-In the underground of Bauer's castle
-there is a prison. We all believe that
-Eureca is captured there. Bauer plans
-to become the new lord of pupland!
+In the underground of Bauer's castle there is a prison.  We all believe that Eureca is captured there.  Bauer plans to become the new lord of pupland!
 @match bauer
-He is the mayor of Nurnberg. I'm sure
-that Eureca is held in captivity in
-Bauer's castle. Bauer deserves to DIE!
+He is the mayor of Nurnberg.  I'm sure that Eureca is held in captivity in Bauer's castle.  Bauer deserves to DIE!
 @match eureca
-Eureca is the lord of this country.
-I mean, he used to be - before he
-dissapeared.
+Eureca is the lord of this country.  I mean, he used to be - before he disappeared.
 @match *
-Bauer has kidnapped Eureca! He caused
-the war... bauer is resposible for
-EVERYTHING!
+Bauer has kidnapped Eureca! He caused the war... bauer is responsible for EVERYTHING!
 endmsg
 face woman.131
 hp 180
@@ -814,11 +838,18 @@ arch rough_wall_2_1_2
 x 6
 y 18
 end
-arch blocked
+arch dirtfloor
 x 6
 y 19
 end
-arch blocked
+arch cave2
+x 6
+y 19
+end
+arch dirtfloor
+x 7
+end
+arch cave10
 x 7
 end
 arch dirtfloor
@@ -925,11 +956,18 @@ arch rough_wall_2_1_2
 x 7
 y 18
 end
-arch blocked
+arch dirtfloor
 x 7
 y 19
 end
-arch blocked
+arch cave2
+x 7
+y 19
+end
+arch dirtfloor
+x 8
+end
+arch cave4
 x 8
 end
 arch dirtfloor
@@ -1000,19 +1038,13 @@ arch sage
 name old man
 msg
 @match castle
-Dick the carpenter has built it. But
-Bauer didn't even want to pay for it!
-So he threatened Dick's life and forced
-him to lower the price.
+Dick the carpenter has built it.  But Bauer didn't even want to pay for it! So he threatened Dick's life and forced him to lower the price.
 @match profit
-He is eagerly hoarding treasures
-in his castle. 
+He is eagerly hoarding treasures in his castle.
 @match bauer
-He is the mayor of this Nurnberg,
-living in the big castle to the north.
+He is the mayor of this Nurnberg, living in the big castle to the north.
 @match *
-Bauer is greedy and selfish. His only
-concern is his profit.
+Bauer is greedy and selfish.  His only concern is his profit.
 endmsg
 hp 180
 x 8
@@ -1048,14 +1080,25 @@ arch rough_wall_2_1_2
 x 8
 y 18
 end
-arch blocked
+arch dirtfloor
 x 8
 y 19
 end
-arch blocked
+arch cave2
+x 8
+y 19
+end
+arch dirtfloor
 x 9
 end
-arch blocked
+arch cave25
+x 9
+end
+arch dirtfloor
+x 9
+y 1
+end
+arch cave10
 x 9
 y 1
 end
@@ -1135,14 +1178,22 @@ arch rough_wall_2_1_2
 x 9
 y 18
 end
-arch blocked
+arch dirtfloor
 x 9
 y 19
 end
-arch blocked
+arch cave12
+x 9
+y 19
+end
+arch cave_15
 x 10
 end
-arch blocked
+arch dirtfloor
+x 10
+y 1
+end
+arch cave4
 x 10
 y 1
 end
@@ -1177,10 +1228,7 @@ end
 arch cleric
 msg
 @match bobbie|no
-Bobbie is the spy of Liberation Army.
-He has entered the guild of Law to
-collect information. To meet him, ask
-for "Bobbie" in the guild.
+Bobbie is the spy of Liberation Army.  He has entered the guild of Law to collect information.  To meet him, ask for "Bobbie" in the guild.
 @match yes
 You two should work together!
 @match *
@@ -1191,6 +1239,7 @@ hp 100
 x 10
 y 6
 type 0
+move_type walk
 monster 1
 friendly 1
 end
@@ -1254,10 +1303,14 @@ arch rough_wall_2_2_1
 x 10
 y 19
 end
-arch blocked
+arch cave_15
 x 11
 end
-arch blocked
+arch dirtfloor
+x 11
+y 1
+end
+arch cave25
 x 11
 y 1
 end
@@ -1353,10 +1406,10 @@ arch rough_wall_2_1_2
 x 11
 y 19
 end
-arch blocked
+arch cave_15
 x 12
 end
-arch blocked
+arch cave_15
 x 12
 y 1
 end
@@ -1398,19 +1451,16 @@ y 6
 end
 arch viking
 msg
-@match Weapon|weapon
-I hear there are two weapons.
-One is a living thing.
-The other is an artifact.
-@match Regular|regular|Army|army
+@match weapon
+I hear there are two weapons.  One is a living thing.  The other is an artifact.
+@match regular|army
 We fight against it.
-@match Bauer|bauer
+@match bauer
 He is the leader of Regular army.
-@match Jungle|jungle|No|no
+@match jungle|no
 It is to the south of this town.
-@match Cave|cave|Yes|yes
-In the cave, Bauer and his Army are
-doing research for new Weapons.
+@match cave|yes
+In the cave, Bauer and his Army are doing research for new Weapons.
 @match *
 Do you know the Cave in the Jungle?
 endmsg
@@ -1418,6 +1468,7 @@ hp 100
 x 12
 y 6
 type 0
+move_type walk
 monster 1
 friendly 1
 end
@@ -1488,15 +1539,9 @@ end
 arch thief
 msg
 @match eureca
-I don't know for sure if Eureca is held
-in that prison. I've been temporarily
-blinded when I was captured.
+I don't know for sure if Eureca is held in that prison.  I've been temporarily blinded when I was captured.
 @match prison|bauer
-There is a prison under the castle of
-Bauer. I found out that the prison
-is connected to the aqueduct.
-I escaped from the prison that way.
-Then I climbed up a well.
+There is a prison under the castle of Bauer.  I found out that the prison is connected to the aqueduct.  I escaped from the prison that way.  Then I climbed up a well.
 @match *
 I've just escaped from Bauer's prison!
 endmsg
@@ -1505,6 +1550,7 @@ hp 100
 x 12
 y 17
 type 0
+move_type walk
 monster 1
 friendly 1
 end
@@ -1524,10 +1570,10 @@ arch rough_wall_2_1_2
 x 12
 y 19
 end
-arch blocked
+arch cave_15
 x 13
 end
-arch blocked
+arch cave_15
 x 13
 y 1
 end
@@ -1631,7 +1677,7 @@ arch dungeon_floor
 x 13
 y 18
 end
-arch swall_1_2
+arch swall_2_1_1
 x 13
 y 18
 end
@@ -1639,18 +1685,22 @@ arch dungeon_floor
 x 13
 y 19
 end
+arch swall_1_2_half
+x 13
+y 19
+end
 arch rough_wall_2_1_2
 x 13
 y 19
 end
-arch blocked
+arch cave_15
 x 14
 end
-arch blocked
+arch cave_15
 x 14
 y 1
 end
-arch blocked
+arch cave_15
 x 14
 y 2
 end
@@ -1720,6 +1770,7 @@ hp 100
 x 14
 y 12
 type 0
+move_type walk
 monster 1
 friendly 1
 end
@@ -1799,22 +1850,22 @@ arch rough_wall_2_1_2
 x 14
 y 19
 end
-arch blocked
+arch cave_15
 x 15
 end
-arch blocked
+arch cave_15
 x 15
 y 1
 end
-arch blocked
+arch cave_15
 x 15
 y 2
 end
-arch blocked
+arch cave_15
 x 15
 y 3
 end
-arch blocked
+arch cave_15
 x 15
 y 4
 end
@@ -1922,22 +1973,22 @@ arch rough_wall_2_1_2
 x 15
 y 19
 end
-arch blocked
+arch cave_15
 x 16
 end
-arch blocked
+arch cave_15
 x 16
 y 1
 end
-arch blocked
+arch cave_15
 x 16
 y 2
 end
-arch blocked
+arch cave_15
 x 16
 y 3
 end
-arch blocked
+arch cave_15
 x 16
 y 4
 end
@@ -2048,26 +2099,26 @@ arch rough_wall_2_1_2
 x 16
 y 19
 end
-arch blocked
+arch cave_15
 x 17
 end
-arch blocked
+arch cave_15
 x 17
 y 1
 end
-arch blocked
+arch cave_15
 x 17
 y 2
 end
-arch blocked
+arch cave_15
 x 17
 y 3
 end
-arch blocked
+arch cave_15
 x 17
 y 4
 end
-arch blocked
+arch cave_15
 x 17
 y 5
 end
@@ -2123,7 +2174,7 @@ arch dungeon_floor
 x 17
 y 13
 end
-arch swall_1_3
+arch swall_2_1_2
 x 17
 y 13
 end
@@ -2183,30 +2234,30 @@ arch rough_wall_1_3
 x 17
 y 19
 end
-arch blocked
+arch cave_15
 x 18
 end
-arch blocked
+arch cave_15
 x 18
 y 1
 end
-arch blocked
+arch cave_15
 x 18
 y 2
 end
-arch blocked
+arch cave_15
 x 18
 y 3
 end
-arch blocked
+arch cave_15
 x 18
 y 4
 end
-arch blocked
+arch cave_15
 x 18
 y 5
 end
-arch blocked
+arch cave_15
 x 18
 y 6
 end
@@ -2263,6 +2314,10 @@ x 18
 y 13
 end
 arch cave10
+x 18
+y 13
+end
+arch swall_1_3_half
 x 18
 y 13
 end
@@ -2334,54 +2389,58 @@ arch cave11
 x 18
 y 19
 end
-arch blocked
+arch cave_15
 x 19
 end
-arch blocked
+arch cave_15
 x 19
 y 1
 end
-arch blocked
+arch cave_15
 x 19
 y 2
 end
-arch blocked
+arch cave_15
 x 19
 y 3
 end
-arch blocked
+arch cave_15
 x 19
 y 4
 end
-arch blocked
+arch cave_15
 x 19
 y 5
 end
-arch blocked
+arch cave_15
 x 19
 y 6
 end
-arch blocked
+arch cave_15
+x 19
+y 6
+end
+arch cave_15
 x 19
 y 7
 end
-arch blocked
+arch cave_15
 x 19
 y 8
 end
-arch blocked
+arch cave_15
 x 19
 y 9
 end
-arch blocked
+arch cave_15
 x 19
 y 10
 end
-arch blocked
+arch cave_15
 x 19
 y 11
 end
-arch blocked
+arch cave_15
 x 19
 y 12
 end

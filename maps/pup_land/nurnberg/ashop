@@ -1,16 +1,17 @@
 arch map
+name White Dragon Scale
+difficulty 40
 region nurnberg
-name ashop
-msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Fri Feb  9 04:42:11 1996
-endmsg
-x 23
-y 23
-level 7
-shopitems armour:40;shield:40;helmet:30;cloak:35;boots:40;gloves:40;bracers:30;girdle:40;*:-80;
+shopitems armour:40;shield:40;helmet:30;cloak:35;boots:40;gloves:40;bracers:30;girdle:40;*:-80
 shopmax 20000
+width 23
+height 23
+enter_x 1
+enter_y 9
+msg
+Created:  1996-02-09
+Modified: 2012-03-02 Rick Tanner
+endmsg
 end
 arch invis_exit
 slaying city
@@ -140,9 +141,7 @@ y 8
 end
 arch sign
 msg
-White Dragon Scale, the armour shop is
-here.
-No weapon can go through our armours! 
+White Dragon Scale, the armour shop is here.  No weapon can go through our armours!
 endmsg
 x 1
 y 8
@@ -337,7 +336,11 @@ arch cobblestones2
 x 3
 y 6
 end
-arch wwall_win1
+arch swall_1_4_half
+x 3
+y 6
+end
+arch wwall_2_1_1
 x 3
 y 6
 end
@@ -364,7 +367,7 @@ end
 arch door_look_2
 x 3
 y 9
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 3
@@ -373,7 +376,7 @@ end
 arch door_look_2
 x 3
 y 10
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 3
@@ -400,6 +403,10 @@ x 3
 y 13
 end
 arch cobblestones2
+x 3
+y 14
+end
+arch swall_1_4_half
 x 3
 y 14
 end
@@ -478,6 +485,10 @@ arch cobblestones2
 x 4
 y 6
 end
+arch swall_2_1_2
+x 4
+y 6
+end
 arch cwall_0
 x 4
 y 6
@@ -490,8 +501,7 @@ arch man
 name shopkeeper
 msg
 @match *
-Welcome to the Armour shop, White
-Dragon Scale! 
+Welcome to the Armour shop, White Dragon Scale!
 endmsg
 hp 180
 x 4
@@ -524,6 +534,10 @@ x 4
 y 13
 end
 arch cobblestones2
+x 4
+y 14
+end
+arch swall_2_1_2
 x 4
 y 14
 end
@@ -602,6 +616,10 @@ arch cobblestones2
 x 5
 y 6
 end
+arch swall_2_1_2
+x 5
+y 6
+end
 arch cwall_0
 x 5
 y 6
@@ -643,6 +661,10 @@ x 5
 y 13
 end
 arch cobblestones2
+x 5
+y 14
+end
+arch swall_2_1_2
 x 5
 y 14
 end
@@ -721,7 +743,7 @@ arch cobblestones2
 x 6
 y 6
 end
-arch swall_1_1
+arch swall_2_2_3
 x 6
 y 6
 end
@@ -777,7 +799,7 @@ arch cobblestones2
 x 6
 y 13
 end
-arch swall_1_2
+arch swall_2_1_1
 x 6
 y 13
 end
@@ -785,7 +807,7 @@ arch cobblestones2
 x 6
 y 14
 end
-arch swall_0
+arch swall_2_2_4
 x 6
 y 14
 end
@@ -1624,7 +1646,7 @@ arch shop_empty
 x 14
 y 6
 end
-arch swall_0
+arch swall_1_1
 x 14
 y 6
 end
@@ -1632,7 +1654,7 @@ arch shop_empty
 x 14
 y 7
 end
-arch swall_1_1
+arch swall_2_1_1
 x 14
 y 7
 end

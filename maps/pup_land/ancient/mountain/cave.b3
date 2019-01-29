@@ -1,14 +1,15 @@
 arch map
+name Cave
+difficulty 60
 region ancientpupland
-name cave
+width 22
+height 26
+enter_x 1
+enter_y 5
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Thu May 30 01:29:27 1996
+Created:  1996-05-30
+Modified: 2012-02-23 Rick Tanner
 endmsg
-x 22
-y 32
-level 5
 end
 arch medium_stones
 y 2
@@ -71,7 +72,6 @@ arch pit_closed
 hp 5
 sp 23
 y 18
-protected 100
 connected 100
 end
 arch stair_up
@@ -497,7 +497,6 @@ end
 arch button_lever
 x 4
 y 5
-protected 100
 invisible 1
 connected 100
 end
@@ -693,6 +692,11 @@ arch large_stones
 x 5
 y 9
 end
+arch gaelotroll
+name large zombie
+x 5
+y 9
+end
 arch large_stones
 x 5
 y 10
@@ -798,7 +802,6 @@ hp 16
 sp 5
 x 6
 y 4
-protected 100
 invisible 1
 connected 100
 end
@@ -811,7 +814,6 @@ hp 16
 sp 5
 x 6
 y 5
-protected 100
 invisible 1
 connected 100
 end
@@ -824,7 +826,6 @@ hp 16
 sp 5
 x 6
 y 6
-protected 100
 invisible 1
 connected 100
 end
@@ -857,6 +858,11 @@ x 6
 y 11
 end
 arch large_stones
+x 6
+y 12
+end
+arch gaelotroll
+name large zombie
 x 6
 y 12
 end
@@ -976,6 +982,11 @@ arch large_stones
 x 7
 y 9
 end
+arch gaelotroll
+name large zombie
+x 7
+y 9
+end
 arch large_stones
 x 7
 y 10
@@ -1116,6 +1127,11 @@ arch large_stones
 x 8
 y 12
 end
+arch gaelotroll
+name large zombie
+x 8
+y 12
+end
 arch large_stones
 x 8
 y 13
@@ -1125,6 +1141,11 @@ x 8
 y 14
 end
 arch large_stones
+x 8
+y 15
+end
+arch gaelotroll
+name large zombie
 x 8
 y 15
 end
@@ -1236,6 +1257,11 @@ arch large_stones
 x 9
 y 9
 end
+arch gaelotroll
+name large zombie
+x 9
+y 9
+end
 arch large_stones
 x 9
 y 10
@@ -1307,7 +1333,6 @@ end
 arch button_lever
 x 9
 y 23
-protected 1
 invisible 1
 connected 1
 end
@@ -1350,13 +1375,10 @@ end
 arch sage
 name wise old man
 msg
-@match Ladder|ladder
-You entered this cave by using a ladder,
-didn't you?
+@match ladder
+You entered this cave by using a ladder, didn't you?
 @match *
-You should have taken more time to
-investigate this cave.
-Especially near the ladder...
+You should have taken more time to investigate this cave.  Especially near the ladder...
 endmsg
 hp 180
 x 10
@@ -1401,6 +1423,11 @@ arch large_stones
 x 10
 y 12
 end
+arch gaelotroll
+name large zombie
+x 10
+y 12
+end
 arch large_stones
 x 10
 y 13
@@ -1410,6 +1437,11 @@ x 10
 y 14
 end
 arch large_stones
+x 10
+y 15
+end
+arch gaelotroll
+name large zombie
 x 10
 y 15
 end
@@ -1462,7 +1494,6 @@ x 10
 y 23
 speed 0.500000
 speed_left -4.100000
-protected 1
 connected 1
 end
 arch large_stones
@@ -1534,6 +1565,11 @@ x 11
 y 8
 end
 arch large_stones
+x 11
+y 9
+end
+arch gaelotroll
+name large zombie
 x 11
 y 9
 end
@@ -1693,6 +1729,11 @@ arch large_stones
 x 12
 y 12
 end
+arch gaelotroll
+name large zombie
+x 12
+y 12
+end
 arch large_stones
 x 12
 y 13
@@ -1702,6 +1743,11 @@ x 12
 y 14
 end
 arch large_stones
+x 12
+y 15
+end
+arch gaelotroll
+name large zombie
 x 12
 y 15
 end
@@ -1806,6 +1852,11 @@ x 13
 y 8
 end
 arch large_stones
+x 13
+y 9
+end
+arch gaelotroll
+name large zombie
 x 13
 y 9
 end
@@ -1953,6 +2004,11 @@ arch large_stones
 x 14
 y 12
 end
+arch gaelotroll
+name large zombie
+x 14
+y 12
+end
 arch large_stones
 x 14
 y 13
@@ -1962,6 +2018,11 @@ x 14
 y 14
 end
 arch large_stones
+x 14
+y 15
+end
+arch gaelotroll
+name large zombie
 x 14
 y 15
 end
@@ -2076,6 +2137,11 @@ arch large_stones
 x 15
 y 9
 end
+arch gaelotroll
+name large zombie
+x 15
+y 9
+end
 arch large_stones
 x 15
 y 10
@@ -2216,6 +2282,11 @@ arch large_stones
 x 16
 y 12
 end
+arch gaelotroll
+name large zombie
+x 16
+y 12
+end
 arch large_stones
 x 16
 y 13
@@ -2225,6 +2296,11 @@ x 16
 y 14
 end
 arch large_stones
+x 16
+y 15
+end
+arch gaelotroll
+name large zombie
 x 16
 y 15
 end
@@ -2335,6 +2411,11 @@ x 17
 y 8
 end
 arch large_stones
+x 17
+y 9
+end
+arch gaelotroll
+name large zombie
 x 17
 y 9
 end
@@ -2489,6 +2570,11 @@ arch large_stones
 x 18
 y 12
 end
+arch gaelotroll
+name large zombie
+x 18
+y 12
+end
 arch large_stones
 x 18
 y 13
@@ -2498,6 +2584,11 @@ x 18
 y 14
 end
 arch large_stones
+x 18
+y 15
+end
+arch gaelotroll
+name large zombie
 x 18
 y 15
 end
@@ -2956,104 +3047,4 @@ end
 arch rough_wall_2_2_4
 x 21
 y 20
-end
-arch gaelotroll
-name large zombi
-x 5
-y 9
-end
-arch gaelotroll
-name large zombi
-x 6
-y 12
-end
-arch gaelotroll
-name large zombi
-x 7
-y 9
-end
-arch gaelotroll
-name large zombi
-x 8
-y 12
-end
-arch gaelotroll
-name large zombi
-x 8
-y 15
-end
-arch gaelotroll
-name large zombi
-x 9
-y 9
-end
-arch gaelotroll
-name large zombi
-x 10
-y 12
-end
-arch gaelotroll
-name large zombi
-x 10
-y 15
-end
-arch gaelotroll
-name large zombi
-x 11
-y 9
-end
-arch gaelotroll
-name large zombi
-x 12
-y 12
-end
-arch gaelotroll
-name large zombi
-x 12
-y 15
-end
-arch gaelotroll
-name large zombi
-x 13
-y 9
-end
-arch gaelotroll
-name large zombi
-x 14
-y 12
-end
-arch gaelotroll
-name large zombi
-x 14
-y 15
-end
-arch gaelotroll
-name large zombi
-x 15
-y 9
-end
-arch gaelotroll
-name large zombi
-x 16
-y 12
-end
-arch gaelotroll
-name large zombi
-x 16
-y 15
-end
-arch gaelotroll
-name large zombi
-x 17
-y 9
-end
-arch gaelotroll
-name large zombi
-x 18
-y 12
-end
-arch gaelotroll
-name large zombi
-x 18
-y 15
 end

@@ -1,13 +1,16 @@
 arch map
-name AnteChamber
-msg
-Creator: peterm
-Email: peterm@soda.berkeley.edu
-Date: Fri Jan 14 14:05:00 1994
-endmsg
+name Dark Temple, AnteChamber
+difficulty 20
+region wilderness
+darkness 5
 width 24
 height 24
-darkness 5
+enter_x 21
+enter_y 1
+msg
+Created:  1994-01-14 peterm (peterm@soda.berkeley.edu)
+Modified: 2012-03-13 Rick Tanner
+endmsg
 end
 arch pstone_1
 end
@@ -291,6 +294,11 @@ arch pstone_1
 x 2
 y 3
 end
+arch behemoth
+x 2
+y 3
+can_see_in_dark 1
+end
 arch pstone_1
 x 2
 y 4
@@ -580,22 +588,22 @@ x 4
 y 9
 end
 arch spikes_open
+x 4
+y 9
 speed 0.500000
 value 1
 connected 5
-x 4
-y 9
 end
 arch pstone_1
 x 4
 y 10
 end
 arch spikes_open
+x 4
+y 10
 speed 0.500000
 value 1
 connected 5
-x 4
-y 10
 end
 arch pstone_1
 x 4
@@ -732,11 +740,11 @@ x 5
 y 9
 end
 arch spikes_open
+x 5
+y 9
 speed 0.500000
 value 1
 connected 5
-x 5
-y 9
 end
 arch dungeon_magic
 x 5
@@ -744,8 +752,7 @@ y 10
 end
 arch magic_mouth
 msg
-You hear faint zapping sounds,
-and smell an odor of ozone.
+You hear faint zapping sounds, and smell an odor of ozone.
 endmsg
 food 1
 x 5
@@ -756,24 +763,23 @@ x 5
 y 10
 end
 arch button_handle
-connected 5
 x 5
 y 10
+connected 5
 end
 arch pstone_1
 x 5
 y 11
 end
 arch igate_closed_1
-speed 0.500000
-connected 5
 x 5
 y 11
+speed 0.500000
+connected 5
 end
 arch magic_mouth
 msg
-You might want to simply run past this
-fellow!  He looks very dangerous
+You might want to simply run past this fellow!  He looks very dangerous
 endmsg
 food 1
 x 5
@@ -784,9 +790,9 @@ x 5
 y 12
 end
 arch button_handle
-connected 5
 x 5
 y 12
+connected 5
 end
 arch pstone_1
 x 5
@@ -915,22 +921,22 @@ x 6
 y 9
 end
 arch spikes_open
+x 6
+y 9
 speed 0.500000
 value 1
 connected 5
-x 6
-y 9
 end
 arch pstone_1
 x 6
 y 10
 end
 arch spikes_open
+x 6
+y 10
 speed 0.500000
 value 1
 connected 5
-x 6
-y 10
 end
 arch pstone_1
 x 6
@@ -1114,6 +1120,10 @@ arch glue
 x 7
 y 16
 end
+arch dread
+x 7
+y 16
+end
 arch pstone_1
 x 7
 y 17
@@ -1355,33 +1365,33 @@ x 9
 y 16
 end
 arch spikes_open
-speed 0.500000
-value 1
-connected 6
 x 9
 y 16
+speed 0.500000
+value 1
+connected 6
 end
 arch pstone_1
 x 9
 y 17
 end
 arch spikes_open
+x 9
+y 17
 speed 0.500000
 value 1
 connected 6
-x 9
-y 17
 end
 arch pstone_1
 x 9
 y 18
 end
 arch spikes_open
+x 9
+y 18
 speed 0.500000
 value 1
 connected 6
-x 9
-y 18
 end
 arch pstone_1
 x 9
@@ -1434,9 +1444,9 @@ x 10
 y 5
 end
 arch button_handle
-connected 4
 x 10
 y 5
+connected 4
 end
 arch pstone_1
 x 10
@@ -1487,11 +1497,11 @@ x 10
 y 16
 end
 arch spikes_open
+x 10
+y 16
 speed 0.500000
 value 1
 connected 6
-x 10
-y 16
 end
 arch magic_mouth
 msg
@@ -1505,20 +1515,20 @@ x 10
 y 17
 end
 arch button_handle
-connected 6
 x 10
 y 17
+connected 6
 end
 arch pstone_1
 x 10
 y 18
 end
 arch spikes_open
+x 10
+y 18
 speed 0.500000
 value 1
 connected 6
-x 10
-y 18
 end
 arch pstone_1
 x 10
@@ -1587,10 +1597,10 @@ x 11
 y 5
 end
 arch igate_closed_2
-speed 0.500000
-connected 4
 x 11
 y 5
+speed 0.500000
+connected 4
 end
 arch pstone_1
 x 11
@@ -1680,19 +1690,19 @@ arch bwall_1_2
 x 11
 y 16
 end
-arch pstone_1
-x 11
-y 17
-end
 arch dungeon_magic
 x 11
 y 17
 end
-arch igate_closed_2
-speed 0.500000
-connected 6
+arch pstone_1
 x 11
 y 17
+end
+arch igate_closed_2
+x 11
+y 17
+speed 0.500000
+connected 6
 end
 arch pstone_1
 x 11
@@ -1765,16 +1775,15 @@ x 12
 y 4
 end
 arch spikes_open
+x 12
+y 4
 speed 0.500000
 value 1
 connected 4
-x 12
-y 4
 end
 arch magic_mouth
 msg
-An ominous grunting sound comes from
-beyond the door.
+An ominous grunting sound comes from beyond the door.
 endmsg
 x 12
 y 5
@@ -1788,9 +1797,9 @@ x 12
 y 5
 end
 arch button_handle
-connected 4
 x 12
 y 5
+connected 4
 end
 arch rune_drain_magic
 x 12
@@ -1801,11 +1810,11 @@ x 12
 y 6
 end
 arch spikes_open
+x 12
+y 6
 speed 0.500000
 value 1
 connected 4
-x 12
-y 6
 end
 arch pstone_1
 x 12
@@ -1856,9 +1865,9 @@ x 12
 y 17
 end
 arch button_handle
+x 12
+y 17
 connected 6
-x 12
-y 17
 end
 arch pstone_1
 x 12
@@ -1911,33 +1920,33 @@ x 13
 y 4
 end
 arch spikes_open
-speed 0.500000
-value 1
-connected 4
 x 13
 y 4
+speed 0.500000
+value 1
+connected 4
 end
 arch pstone_1
 x 13
 y 5
 end
 arch spikes_open
+x 13
+y 5
 speed 0.500000
 value 1
 connected 4
-x 13
-y 5
 end
 arch pstone_1
 x 13
 y 6
 end
 arch spikes_open
+x 13
+y 6
 speed 0.500000
 value 1
 connected 4
-x 13
-y 6
 end
 arch pstone_1
 x 13
@@ -2195,6 +2204,10 @@ arch pstone_1
 x 15
 y 8
 end
+arch troll
+x 15
+y 8
+end
 arch pstone_1
 x 15
 y 9
@@ -2232,6 +2245,10 @@ x 15
 y 15
 end
 arch glue
+x 15
+y 15
+end
+arch chinese_dragon
 x 15
 y 15
 end
@@ -2405,6 +2422,10 @@ arch glue
 x 16
 y 19
 end
+arch chinese_dragon
+x 16
+y 19
+end
 arch pstone_1
 x 16
 y 20
@@ -2484,19 +2505,19 @@ x 17
 y 11
 end
 arch igate_closed_1
-speed 0.500000
-connected 7
 x 17
 y 11
+speed 0.500000
+connected 7
 end
 arch pstone_1
 x 17
 y 12
 end
 arch button_handle
-connected 7
 x 17
 y 12
+connected 7
 end
 arch pstone_1
 x 17
@@ -2581,20 +2602,20 @@ x 18
 y 1
 end
 arch grate_closed_2
-speed 0.500000
-connected 3
 x 18
 y 1
+speed 0.500000
+connected 3
 end
 arch pstone_1
 x 18
 y 2
 end
 arch grate_closed_2
-speed 0.500000
-connected 3
 x 18
 y 2
+speed 0.500000
+connected 3
 end
 arch pstone_1
 x 18
@@ -2712,11 +2733,7 @@ x 19
 end
 arch magic_mouth
 msg
-Hmmm.  Are those magical writings near
-that handle across the room?  They
-must be guarding their treasure with
-magical traps as well as with their
-foul pets
+Hmmm.  Are those magical writings near that handle across the room?  They must be guarding their treasure with magical traps as well as with their foul pets!
 endmsg
 x 19
 y 1
@@ -2726,19 +2743,19 @@ x 19
 y 1
 end
 arch button_handle
-connected 3
 x 19
 y 1
+connected 3
 end
 arch pstone_1
 x 19
 y 2
 end
 arch grate_closed_1
-speed 0.500000
-connected 3
 x 19
 y 2
+speed 0.500000
+connected 3
 end
 arch pstone_1
 x 19
@@ -2844,8 +2861,7 @@ x 20
 end
 arch magic_mouth
 msg
-Ugh!  A troll.  Better get those
-fire spells ready!
+Ugh!  A troll.  Better get those fire spells ready!
 endmsg
 x 20
 y 1
@@ -2859,10 +2875,10 @@ x 20
 y 2
 end
 arch grate_closed_1
-speed 0.500000
-connected 3
 x 20
 y 2
+speed 0.500000
+connected 3
 end
 arch pstone_1
 x 20
@@ -2946,8 +2962,7 @@ y 21
 end
 arch magic_mouth
 msg
-You wonder what kind of treasure lies
-hidden down there...
+You wonder what kind of treasure lies hidden down there...
 endmsg
 food 1
 x 20
@@ -2994,10 +3009,10 @@ x 21
 y 2
 end
 arch grate_closed_1
-speed 0.500000
-connected 3
 x 21
 y 2
+speed 0.500000
+connected 3
 end
 arch pstone_1
 x 21
@@ -3081,8 +3096,7 @@ y 21
 end
 arch magic_mouth
 msg
-You wonder what kind of treasure lies
-hidden down there...
+You wonder what kind of treasure lies hidden down there...
 endmsg
 food 1
 x 21
@@ -3391,25 +3405,4 @@ end
 arch blocked
 x 23
 y 23
-end
-arch behemoth
-can_see_in_dark 1
-x 2
-y 3
-end
-arch dread
-x 7
-y 16
-end
-arch troll
-x 15
-y 8
-end
-arch chinese_dragon
-x 15
-y 15
-end
-arch chinese_dragon
-x 16
-y 19
 end

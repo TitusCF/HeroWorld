@@ -1,13 +1,15 @@
 arch map
+name North Gate, Level 5
+difficulty 1
 region pupland
-name n-gate
+width 7
+height 17
+enter_x 3
+enter_y 1
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sun Aug  4 10:08:01 1996
+Created:  1996-08-08
+Modified: 2011-12-22 Rick Tanner
 endmsg
-x 7
-y 17
 end
 arch flagstone
 end
@@ -61,7 +63,10 @@ end
 arch flagstone
 y 8
 end
-arch dwall_3_2
+arch swall_1_4_half
+y 8
+end
+arch dwall_2_1_1
 y 8
 end
 arch flagstone
@@ -688,7 +693,11 @@ arch flagstone
 x 6
 y 8
 end
-arch dwall_3_4
+arch dwall_2_1_1
+x 6
+y 8
+end
+arch swall_1_3_half
 x 6
 y 8
 end

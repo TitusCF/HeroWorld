@@ -1,13 +1,16 @@
 arch map
-region portjoesph
 name Moogly Bill's Treasure Room!
+difficulty 18
+region portjoseph
+darkness 5
+width 16
+height 16
+enter_x 7
+enter_y 14
 msg
-Creator: langley
-Email: langley@fermat.dartmouth.edu
-Date: Sat Jun 11 16:47:30 1994
+Created:  1994-06-11 langley (langley@fermat.dartmouth.edu)
+Modified: 2012-02-21 Rick Tanner
 endmsg
-level 18
-invisible 5
 end
 arch dungeon_floor
 end
@@ -110,6 +113,10 @@ arch rough_wall_2_1_2
 x 1
 end
 arch dungeon_floor
+x 1
+y 1
+end
+arch big_dragon
 x 1
 y 1
 end
@@ -751,10 +758,7 @@ arch locked_door1
 name pirate's door
 slaying mooglybill
 msg
-The keyhole has a skull shape. 
-On the door is written
-`Moogly Bill's.  Leave now
-or death will find ye.'
+The keyhole has a skull shape.  On the door is written `Moogly Bill's.  Leave now or death will find ye.'
 endmsg
 x 6
 y 10
@@ -1767,33 +1771,4 @@ end
 arch awall_2_2_4
 x 15
 y 15
-end
-arch big_dragon
-x 1
-y 1
-end
-More
-arch big_dragon_2
-x 2
-y 1
-end
-More
-arch big_dragon_3
-x 3
-y 1
-end
-More
-arch big_dragon_4
-x 1
-y 2
-end
-More
-arch big_dragon_5
-x 2
-y 2
-end
-More
-arch big_dragon_6
-x 3
-y 2
 end

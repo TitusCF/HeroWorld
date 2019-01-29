@@ -1,12 +1,15 @@
 arch map
-name GroundLevel
-msg
-Creator: peterm
-Email: peterm@soda.berkeley.edu
-Date: Sat Apr 30 20:50:08 1994
-endmsg
+name Tower of Demonology Ground Level
+difficulty 1
+region wilderness
 width 20
 height 20
+enter_x 9
+enter_y 19
+msg
+Created:  1994-04-30 peterm (peterm@soda.berkeley.edu)
+Modified: 2012-03-12 Rick Tanner
+endmsg
 end
 arch woodfloor
 end
@@ -250,12 +253,7 @@ arch guildmaster
 name admissions officer
 msg
 @match *
-Welcome to the school of Demonology
-and Summoning.
-Our instruction includes the summoning
-and control of demons, undead, djinn,
-and elementals.  Talk to the
-receptionist about admission.
+Welcome to the school of Demonology and Summoning.  Our instruction includes the summoning and control of demons, undead, djinn, and elementals.  Talk to the receptionist about admission.
 endmsg
 x 2
 y 2
@@ -523,8 +521,7 @@ y 7
 end
 arch magic_mouth
 msg
-These people don't look quite
-as dumb as the bureaucrats did.
+These people don't look quite as dumb as the bureaucrats did.
 endmsg
 x 4
 y 8
@@ -535,7 +532,7 @@ y 8
 end
 arch magic_mouth
 msg
-Admissions
+Admissions.
 endmsg
 x 4
 y 9
@@ -545,15 +542,15 @@ x 4
 y 9
 end
 arch mover_1
+x 4
+y 9
 level 1
 attacktype 1
 lifesave 1
-x 4
-y 9
 end
 arch magic_mouth
 msg
-Lecture room
+Lecture room.
 endmsg
 x 4
 y 10
@@ -563,11 +560,11 @@ x 4
 y 10
 end
 arch mover_1
+x 4
+y 10
 level 1
 attacktype 1
 lifesave 1
-x 4
-y 10
 end
 arch magic_mouth
 msg
@@ -581,11 +578,11 @@ x 4
 y 11
 end
 arch mover_1
+x 4
+y 11
 level 1
 attacktype 1
 lifesave 1
-x 4
-y 11
 end
 arch woodfloor
 x 4
@@ -630,7 +627,7 @@ end
 arch woodfloor
 x 5
 end
-arch dwall3_3
+arch dwall_3_3
 x 5
 end
 arch woodfloor
@@ -698,11 +695,11 @@ x 5
 y 10
 end
 arch mover_6
+x 5
+y 10
 level 1
 attacktype 1
 lifesave 1
-x 5
-y 10
 end
 arch woodfloor
 x 5
@@ -805,10 +802,8 @@ end
 arch guildmaster
 name receptionist
 msg
-@match admission|Admission|enroll|teach
-Admission is 1500 gold.
-Be careful, the apprentices
-can be rambunctious.
+@match admission|enroll|teach
+Admission is 1500 gold.  Be careful, the apprentices can be rambunctious.
 endmsg
 x 6
 y 6
@@ -830,11 +825,11 @@ x 6
 y 9
 end
 arch mover_6
+x 6
+y 9
 level 1
 attacktype 1
 lifesave 1
-x 6
-y 9
 end
 arch woodfloor
 x 6
@@ -956,11 +951,11 @@ x 7
 y 9
 end
 arch mover_7
+x 7
+y 9
 level 1
 attacktype 1
 lifesave 1
-x 7
-y 9
 end
 arch woodfloor
 x 7
@@ -1013,7 +1008,7 @@ end
 arch woodfloor
 x 8
 end
-arch dwall3_3
+arch dwall_3_3
 x 8
 end
 arch woodfloor
@@ -1085,11 +1080,11 @@ x 8
 y 9
 end
 arch mover_7
+x 8
+y 9
 level 1
 attacktype 1
 lifesave 1
-x 8
-y 9
 end
 arch woodfloor
 x 8
@@ -1178,9 +1173,7 @@ x 9
 end
 arch magic_mouth
 msg
-A wild cacophony wafts down the stairs.
-You wonder what sort of chaos could
-produce all the noises you hear
+A wild cacophony wafts down the stairs.  You wonder what sort of chaos could produce all the noises you hear.
 endmsg
 x 9
 y 1
@@ -1205,21 +1198,22 @@ x 9
 y 2
 end
 arch grate_closed_1
-speed 0.500000
-connected 1
 x 9
 y 2
+speed 0.500000
+connected 1
 end
 arch woodfloor
 x 9
 y 3
 end
 arch altar
+name altar (1500 gp)
 slaying money
 food 15000
-connected 1
 x 9
 y 3
+connected 1
 end
 arch woodfloor
 x 9
@@ -1246,11 +1240,11 @@ x 9
 y 9
 end
 arch mover_7
+x 9
+y 9
 level 1
 attacktype 1
 lifesave 1
-x 9
-y 9
 end
 arch woodfloor
 x 9
@@ -1258,10 +1252,7 @@ y 10
 end
 arch sign
 msg
-Welcome to the Tower of Demonology
-and Summoning
-Here is taught the summoning and
-control of beings from other planes.
+Welcome to the Tower of Demonology and Summoning.  Here is taught the summoning and control of beings from other planes.
 endmsg
 x 9
 y 10
@@ -1299,11 +1290,11 @@ x 9
 y 18
 end
 arch mover_2
+x 9
+y 18
 level 1
 attacktype 1
 lifesave 1
-x 9
-y 18
 end
 arch exit
 slaying /world/world_102_104
@@ -1317,11 +1308,11 @@ x 9
 y 19
 end
 arch mover_2
+x 9
+y 19
 level 1
 attacktype 1
 lifesave 1
-x 9
-y 19
 end
 arch dungeon_magic
 x 10
@@ -1334,9 +1325,7 @@ x 10
 end
 arch magic_mouth
 msg
-A wild cacophony wafts down the stairs.
-You wonder what chaos could produce
-the sounds you hear
+A wild cacophony wafts down the stairs.  You wonder what chaos could produce the sounds you hear.
 endmsg
 x 10
 y 1
@@ -1361,10 +1350,10 @@ x 10
 y 2
 end
 arch grate_closed_1
-speed 0.500000
-connected 1
 x 10
 y 2
+speed 0.500000
+connected 1
 end
 arch woodfloor
 x 10
@@ -1399,110 +1388,110 @@ x 10
 y 9
 end
 arch mover_7
+x 10
+y 9
 level 1
 attacktype 1
 lifesave 1
-x 10
-y 9
 end
 arch woodfloor
 x 10
 y 10
 end
 arch mover_3
-level 1
-attacktype 1
-lifesave 1
 x 10
 y 10
+level 1
+attacktype 1
+lifesave 1
 end
 arch woodfloor
 x 10
 y 11
 end
 arch mover_1
-level 1
-attacktype 1
-lifesave 1
 x 10
 y 11
+level 1
+attacktype 1
+lifesave 1
 end
 arch woodfloor
 x 10
 y 12
 end
 arch mover_1
-level 1
-attacktype 1
-lifesave 1
 x 10
 y 12
+level 1
+attacktype 1
+lifesave 1
 end
 arch woodfloor
 x 10
 y 13
 end
 arch mover_1
-level 1
-attacktype 1
-lifesave 1
 x 10
 y 13
+level 1
+attacktype 1
+lifesave 1
 end
 arch woodfloor
 x 10
 y 14
 end
 arch mover_1
-level 1
-attacktype 1
-lifesave 1
 x 10
 y 14
+level 1
+attacktype 1
+lifesave 1
 end
 arch woodfloor
 x 10
 y 15
 end
 arch mover_1
-level 1
-attacktype 1
-lifesave 1
 x 10
 y 15
+level 1
+attacktype 1
+lifesave 1
 end
 arch woodfloor
 x 10
 y 16
 end
 arch mover_1
-level 1
-attacktype 1
-lifesave 1
 x 10
 y 16
+level 1
+attacktype 1
+lifesave 1
 end
 arch woodfloor
 x 10
 y 17
 end
 arch mover_1
+x 10
+y 17
 level 1
 attacktype 1
 lifesave 1
-x 10
-y 17
 end
 arch woodfloor
 x 10
 y 18
 end
 arch mover_1
+x 10
+y 18
 level 1
 attacktype 1
 lifesave 1
-x 10
-y 18
 end
 arch exit
 slaying /world/world_102_104
@@ -1516,16 +1505,16 @@ x 10
 y 19
 end
 arch mover_1
+x 10
+y 19
 level 1
 attacktype 1
 lifesave 1
-x 10
-y 19
 end
 arch woodfloor
 x 11
 end
-arch dwall3_3
+arch dwall_3_3
 x 11
 end
 arch woodfloor
@@ -1597,22 +1586,22 @@ x 11
 y 9
 end
 arch mover_7
+x 11
+y 9
 level 1
 attacktype 1
 lifesave 1
-x 11
-y 9
 end
 arch woodfloor
 x 11
 y 10
 end
 arch mover_3
+x 11
+y 10
 level 1
 attacktype 1
 lifesave 1
-x 11
-y 10
 end
 arch woodfloor
 x 11
@@ -1745,22 +1734,22 @@ x 12
 y 9
 end
 arch mover_7
+x 12
+y 9
 level 1
 attacktype 1
 lifesave 1
-x 12
-y 9
 end
 arch woodfloor
 x 12
 y 10
 end
 arch mover_3
+x 12
+y 10
 level 1
 attacktype 1
 lifesave 1
-x 12
-y 10
 end
 arch woodfloor
 x 12
@@ -1852,9 +1841,7 @@ arch guildmaster
 name lord high bureaucrat
 msg
 @match *
-I'm too busy to help you, you utterly
-meaningless clod of dirt.  Go and talk
-to the admissions people.
+I'm too busy to help you, you utterly meaningless clod of dirt.  Go and talk to the admissions people.
 endmsg
 hp 500
 x 13
@@ -1888,9 +1875,7 @@ arch guildmaster
 name bureaucrat
 msg
 @match *
-I'm too busy to help you.  Go talk
-to the admissions people if you want
-to get in.
+I'm too busy to help you.  Go talk to the admissions people if you want to get in.
 endmsg
 x 13
 y 7
@@ -1908,22 +1893,22 @@ x 13
 y 9
 end
 arch mover_7
+x 13
+y 9
 level 1
 attacktype 1
 lifesave 1
-x 13
-y 9
 end
 arch woodfloor
 x 13
 y 10
 end
 arch mover_3
+x 13
+y 10
 level 1
 attacktype 1
 lifesave 1
-x 13
-y 10
 end
 arch woodfloor
 x 13
@@ -2028,22 +2013,22 @@ x 14
 y 9
 end
 arch mover_7
+x 14
+y 9
 level 1
 attacktype 1
 lifesave 1
-x 14
-y 9
 end
 arch woodfloor
 x 14
 y 10
 end
 arch mover_4
+x 14
+y 10
 level 1
 attacktype 1
 lifesave 1
-x 14
-y 10
 end
 arch woodfloor
 x 14
@@ -2062,6 +2047,10 @@ x 14
 y 13
 end
 arch woodfloor
+x 14
+y 14
+end
+arch pentagram_111
 x 14
 y 14
 end
@@ -2125,10 +2114,7 @@ y 7
 end
 arch magic_mouth
 msg
-You take one look at the vacant
-faces of these bureaucrats and
-decide they have nothing useful to
-say.
+You take one look at the vacant faces of these bureaucrats and decide they have nothing useful to say.
 endmsg
 x 15
 y 8
@@ -2138,15 +2124,15 @@ x 15
 y 8
 end
 arch mover_6
-level 1
-attacktype 1
-lifesave 1
 x 15
 y 8
+level 1
+attacktype 1
+lifesave 1
 end
 arch magic_mouth
 msg
-Administration
+Administration.
 endmsg
 x 15
 y 9
@@ -2156,15 +2142,15 @@ x 15
 y 9
 end
 arch mover_1
-level 1
-attacktype 1
-lifesave 1
 x 15
 y 9
+level 1
+attacktype 1
+lifesave 1
 end
 arch magic_mouth
 msg
-Demonstration room
+Demonstration room.
 endmsg
 x 15
 y 10
@@ -2174,16 +2160,15 @@ x 15
 y 10
 end
 arch mover_1
+x 15
+y 10
 level 1
 attacktype 1
 lifesave 1
-x 15
-y 10
 end
 arch magic_mouth
 msg
-You look at the pentagram but see
-nothing which might activate it.
+You look at the pentagram but see nothing which might activate it.
 endmsg
 x 15
 y 11
@@ -2193,11 +2178,11 @@ x 15
 y 11
 end
 arch mover_1
+x 15
+y 11
 level 1
 attacktype 1
 lifesave 1
-x 15
-y 11
 end
 arch woodfloor
 x 15
@@ -2238,7 +2223,7 @@ end
 arch woodfloor
 x 16
 end
-arch dwall3_3
+arch dwall_3_3
 x 16
 end
 arch woodfloor
@@ -2391,8 +2376,7 @@ arch guildmaster
 name bureaucrat
 msg
 @match *
-I'm too busy to help you.  Go talk
-to the admissions people.
+I'm too busy to help you.  Go talk to the admissions people.
 endmsg
 x 17
 y 6
@@ -2479,8 +2463,7 @@ arch guildmaster
 name bureaucrat
 msg
 @match *
-I'm too busy to help you.  Go bother
-the admissions people instead of me.
+I'm too busy to help you.  Go bother the admissions people instead of me.
 endmsg
 x 18
 y 2
@@ -2754,8 +2737,4 @@ end
 arch dwall_2_2_4
 x 19
 y 19
-end
-arch pentagram_111
-x 14
-y 14
 end

@@ -1,14 +1,15 @@
 arch map
+name Cave Weapon, Biological Organisms Research Group
+difficulty 12
 region pupland
-name cave3
+width 19
+height 19
+enter_x 16
+enter_y 14
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Thu Feb  8 05:22:23 1996
+Created:  1996-02-08
+Modified: 2012-02-28 Rick Tanner
 endmsg
-x 19
-y 19
-level 12
 end
 arch flagstone
 end
@@ -144,21 +145,25 @@ arch flagstone
 x 1
 y 4
 end
-arch swall_1_4
+arch swall_2_1_2
 x 1
 y 4
 end
-arch flagstone
+arch dungeon_magic
 x 1
 y 5
 end
-arch dungeon_magic
+arch flagstone
 x 1
 y 5
 end
 arch stair_3_down
 x 1
 y 5
+end
+arch flagstone
+x 1
+y 6
 end
 arch dun2
 x 1
@@ -205,16 +210,16 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 1
 y 10
 attack_movement 7
 level 12
 type 0
+resist_physical 1
+move_type walk
 monster 1
 unaggressive 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
 end
@@ -259,16 +264,16 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 1
 y 14
 attack_movement 7
 level 12
 type 0
+resist_physical 1
+move_type walk
 monster 1
 unaggressive 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
 end
@@ -340,6 +345,10 @@ end
 arch flagstone
 x 2
 y 5
+end
+arch flagstone
+x 2
+y 6
 end
 arch dun2
 x 2
@@ -475,6 +484,10 @@ arch flagstone
 x 3
 y 5
 end
+arch flagstone
+x 3
+y 6
+end
 arch dun2
 x 3
 y 6
@@ -553,20 +566,21 @@ end
 arch dun2
 x 4
 end
+arch swall_1_1_half
+x 4
+end
 arch flagstone
 x 4
 y 1
 end
-arch swall_1_1
+arch swall_1_2
 x 4
 y 1
 end
 arch magic_mouth
 msg
 You hear..
- "Hyper demons have high defence
-  abilities. But they have only poor
-  Str..."
+ "Hyper demons have high defence abilities.  But they have only poor Str..."
 endmsg
 x 4
 y 2
@@ -583,7 +597,7 @@ arch flagstone
 x 4
 y 3
 end
-arch swall_2_1_1
+arch swall_1_1
 x 4
 y 3
 end
@@ -602,6 +616,10 @@ end
 arch flagstone
 x 4
 y 5
+end
+arch flagstone
+x 4
+y 6
 end
 arch dun2
 x 4
@@ -624,16 +642,16 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 4
 y 7
 attack_movement 7
 level 12
 type 0
+resist_physical 1
+move_type walk
 monster 1
 unaggressive 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
 end
@@ -709,16 +727,16 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 4
 y 17
 attack_movement 7
 level 12
 type 0
+resist_physical 1
+move_type walk
 monster 1
 unaggressive 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
 end
@@ -763,6 +781,10 @@ end
 arch flagstone
 x 5
 y 5
+end
+arch flagstone
+x 5
+y 6
 end
 arch dun2
 x 5
@@ -879,18 +901,22 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 6
 y 5
 attack_movement 7
 level 12
 type 0
+resist_physical 1
+move_type walk
 monster 1
 unaggressive 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
+end
+arch flagstone
+x 6
+y 6
 end
 arch dun2
 x 6
@@ -916,15 +942,14 @@ arch flagstone
 x 6
 y 9
 end
-arch swall_2_1_1
+arch swall_1_2
 x 6
 y 9
 end
 arch magic_mouth
 msg
 You hear...
- "Hyper goblins are very strong,
-  but they are too slow..."
+ "Hyper goblins are very strong, but they are too slow..."
 endmsg
 x 6
 y 10
@@ -941,7 +966,7 @@ arch flagstone
 x 6
 y 11
 end
-arch swall_1_2
+arch swall_1_1
 x 6
 y 11
 end
@@ -949,7 +974,11 @@ arch flagstone
 x 6
 y 12
 end
-arch cave_12
+arch dun30
+x 6
+y 12
+end
+arch swall_1_1_half
 x 6
 y 12
 end
@@ -957,15 +986,14 @@ arch flagstone
 x 6
 y 13
 end
-arch swall_1_1
+arch swall_1_2
 x 6
 y 13
 end
 arch magic_mouth
 msg
 You hear..
- "Hyper kobolds move very quickly,
-  but they are weak..."
+ "Hyper kobolds move very quickly, but they are weak..."
 endmsg
 x 6
 y 14
@@ -982,7 +1010,7 @@ arch flagstone
 x 6
 y 15
 end
-arch swall_2_1_1
+arch swall_1_1
 x 6
 y 15
 end
@@ -1044,6 +1072,10 @@ arch flagstone
 x 7
 y 5
 end
+arch flagstone
+x 7
+y 6
+end
 arch dun2
 x 7
 y 6
@@ -1075,6 +1107,10 @@ end
 arch flagstone
 x 7
 y 11
+end
+arch flagstone
+x 7
+y 12
 end
 arch dun2
 x 7
@@ -1136,10 +1172,10 @@ Con 25
 hp 1650
 maxhp 1650
 ac -40
-armour 90
 x 8
 y 2
 level 19
+resist_physical 90
 unaggressive 1
 can_use_armour 0
 can_use_weapon 0
@@ -1164,6 +1200,10 @@ arch flagstone
 x 8
 y 5
 end
+arch flagstone
+x 8
+y 6
+end
 arch dun2
 x 8
 y 6
@@ -1185,16 +1225,16 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 8
 y 7
 attack_movement 7
 level 12
 type 0
+resist_physical 1
+move_type walk
 monster 1
 unaggressive 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
 end
@@ -1217,6 +1257,10 @@ end
 arch flagstone
 x 8
 y 11
+end
+arch flagstone
+x 8
+y 12
 end
 arch dun2
 x 8
@@ -1259,16 +1303,16 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 8
 y 17
 attack_movement 7
 level 12
 type 0
+resist_physical 1
+move_type walk
 monster 1
 unaggressive 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
 end
@@ -1314,6 +1358,10 @@ arch flagstone
 x 9
 y 5
 end
+arch flagstone
+x 9
+y 6
+end
 arch dun2
 x 9
 y 6
@@ -1345,6 +1393,10 @@ end
 arch flagstone
 x 9
 y 11
+end
+arch flagstone
+x 9
+y 12
 end
 arch dun2
 x 9
@@ -1430,6 +1482,10 @@ arch flagstone
 x 10
 y 5
 end
+arch flagstone
+x 10
+y 6
+end
 arch dun2
 x 10
 y 6
@@ -1470,7 +1526,7 @@ wc -10
 ac -5
 x 10
 y 10
-vulnerable 2
+resist_magic -100
 unaggressive 1
 can_use_armour 0
 can_use_weapon 0
@@ -1478,6 +1534,10 @@ end
 arch flagstone
 x 10
 y 11
+end
+arch flagstone
+x 10
+y 12
 end
 arch dun2
 x 10
@@ -1562,18 +1622,22 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 11
 y 5
 attack_movement 7
 level 12
 type 0
+resist_physical 1
+move_type walk
 monster 1
 unaggressive 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
+end
+arch flagstone
+x 11
+y 6
 end
 arch dun2
 x 11
@@ -1606,6 +1670,10 @@ end
 arch flagstone
 x 11
 y 11
+end
+arch flagstone
+x 11
+y 12
 end
 arch dun2
 x 11
@@ -1685,7 +1753,7 @@ arch flagstone
 x 12
 y 6
 end
-arch cave_13
+arch dun31
 x 12
 y 6
 end
@@ -1716,6 +1784,10 @@ end
 arch flagstone
 x 12
 y 11
+end
+arch flagstone
+x 12
+y 12
 end
 arch dun2
 x 12
@@ -1758,16 +1830,16 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 12
 y 17
 attack_movement 7
 level 12
 type 0
+resist_physical 1
+move_type walk
 monster 1
 unaggressive 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
 end
@@ -1838,16 +1910,16 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 13
 y 7
 attack_movement 7
 level 12
 type 0
+resist_physical 1
+move_type walk
 monster 1
 unaggressive 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
 end
@@ -1870,6 +1942,10 @@ end
 arch flagstone
 x 13
 y 11
+end
+arch flagstone
+x 13
+y 12
 end
 arch dun2
 x 13
@@ -1917,19 +1993,21 @@ end
 arch dun2
 x 14
 end
+arch swall_1_1_half
+x 14
+end
 arch flagstone
 x 14
 y 1
 end
-arch swall_1_1
+arch swall_1_2
 x 14
 y 1
 end
 arch magic_mouth
 msg
 You hear ..
- "Hyper beholders have high magical
-  potential. But their Con is poor..."
+ "Hyper beholders have high magical potential.  But their Con is poor..."
 endmsg
 x 14
 y 2
@@ -1946,7 +2024,7 @@ arch flagstone
 x 14
 y 3
 end
-arch swall_2_1_1
+arch swall_1_1
 x 14
 y 3
 end
@@ -1994,16 +2072,14 @@ arch flagstone
 x 14
 y 9
 end
-arch swall_2_1_1
+arch swall_1_2
 x 14
 y 9
 end
 arch magic_mouth
 msg
 You hear..
- "Hyper madmen have high physical
-  ability. But they are weak in
-  magic..." 
+ "Hyper madmen have high physical ability.  But they are weak in magic..."
 endmsg
 x 14
 y 10
@@ -2020,11 +2096,19 @@ arch flagstone
 x 14
 y 11
 end
-arch swall_1_2
+arch swall_1_1
 x 14
 y 11
 end
+arch flagstone
+x 14
+y 12
+end
 arch dun2
+x 14
+y 12
+end
+arch swall_1_1_half
 x 14
 y 12
 end
@@ -2032,7 +2116,7 @@ arch flagstone
 x 14
 y 13
 end
-arch swall_1_1
+arch swall_1_2
 x 14
 y 13
 end
@@ -2048,7 +2132,7 @@ arch flagstone
 x 14
 y 15
 end
-arch swall_2_1_1
+arch swall_1_1
 x 14
 y 15
 end
@@ -2126,6 +2210,10 @@ arch flagstone
 x 15
 y 11
 end
+arch flagstone
+x 15
+y 12
+end
 arch dun2
 x 15
 y 12
@@ -2144,8 +2232,7 @@ y 15
 end
 arch sign
 msg
-Lab: Biological Organisms Research
-     Group. 
+Lab: Biological Organisms Research Group.
 endmsg
 x 15
 y 15
@@ -2175,16 +2262,16 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 15
 y 17
 attack_movement 7
 level 12
 type 0
+resist_physical 1
+move_type walk
 monster 1
 unaggressive 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
 end
@@ -2253,6 +2340,10 @@ end
 arch flagstone
 x 16
 y 11
+end
+arch flagstone
+x 16
+y 12
 end
 arch dun2
 x 16
@@ -2351,6 +2442,10 @@ arch flagstone
 x 17
 y 11
 end
+arch flagstone
+x 17
+y 12
+end
 arch dun2
 x 17
 y 12
@@ -2371,15 +2466,15 @@ arch flagstone
 x 17
 y 16
 end
-arch swall_1_3
+arch swall_2_1_2
 x 17
 y 16
 end
-arch flagstone
+arch dungeon_magic
 x 17
 y 17
 end
-arch dungeon_magic
+arch flagstone
 x 17
 y 17
 end
@@ -2526,6 +2621,10 @@ x 18
 y 16
 end
 arch dun3
+x 18
+y 16
+end
+arch swall_1_3_half
 x 18
 y 16
 end

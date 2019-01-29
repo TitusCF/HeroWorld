@@ -1,17 +1,20 @@
 arch map
-name demon_quest
+name Demon Quest
 reset_timeout 7200
-difficulty 8
+difficulty 18
+region euthville
 width 35
 height 35
 enter_x 33
 enter_y 33
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Thu Jun  8 18:00:41 2000
-Originally in peterm/quests
+Created:  2000-06-08
+Modified: 2012-02-02 Rick Tanner
 endmsg
+maplore
+@quest Scorn Royalty Quest
+the demons come from here
+endmaplore
 end
 arch medium_stones
 end
@@ -1142,7 +1145,11 @@ end
 arch imp
 x 5
 y 1
-arch ability_fire
+arch abil_medium_fireball
+end
+arch abil_burning_hands
+end
+arch abil_create_fire_wall
 end
 end
 arch medium_stones
@@ -1581,7 +1588,11 @@ carrying 100
 arch key2
 slaying gateway
 end
-arch ability_fire
+arch abil_create_fire_wall
+end
+arch abil_medium_fireball
+end
+arch abil_burning_hands
 end
 end
 arch medium_stones
@@ -1839,12 +1850,7 @@ arch bolt
 title of Blessedness
 slaying undead,demon
 msg
-  These missiles are invested 
-  with a great holiness so that
-  even a scratch might banish 
-  an undead creature or a demon
-  back to the hell from which it
-  came.
+These missiles are invested with a great holiness so that even a scratch might banish an undead creature or a demon back to the hell from which it came.
 endmsg
 food 80
 dam 20
@@ -3121,7 +3127,11 @@ end
 arch imp
 x 14
 y 16
-arch ability_fire
+arch abil_burning_hands
+end
+arch abil_medium_fireball
+end
+arch abil_create_fire_wall
 end
 end
 arch medium_stones
@@ -3706,7 +3716,11 @@ end
 arch imp
 x 17
 y 6
-arch ability_fire
+arch abil_burning_hands
+end
+arch abil_create_fire_wall
+end
+arch abil_medium_fireball
 end
 end
 arch medium_stones
@@ -4407,6 +4421,12 @@ arch key2
 name broken gateway
 slaying broken gateway
 face penta.111
+arch quest_advance_pickup
+name scorn/DemonPit 30>40
+end
+arch quest_prevent_drop
+name scorn/DemonPit 50
+end
 end
 end
 arch medium_stones
@@ -5190,10 +5210,12 @@ end
 arch full_helmet
 end
 arch scroll_new
-sp 126
 exp 30
 level 10
 value 152
+randomitems none
+arch spell_restoration
+end
 end
 end
 arch medium_stones
@@ -5453,7 +5475,11 @@ end
 arch imp
 x 25
 y 12
-arch ability_fire
+arch abil_burning_hands
+end
+arch abil_create_fire_wall
+end
+arch abil_medium_fireball
 end
 end
 arch medium_stones
@@ -5758,7 +5784,11 @@ carrying 100
 arch key2
 slaying inner_circle
 end
-arch ability_fire
+arch abil_burning_hands
+end
+arch abil_create_fire_wall
+end
+arch abil_medium_fireball
 end
 end
 arch medium_stones
@@ -6194,7 +6224,11 @@ end
 arch imp
 x 29
 y 4
-arch ability_fire
+arch abil_burning_hands
+end
+arch abil_create_fire_wall
+end
+arch abil_medium_fireball
 end
 end
 arch medium_stones

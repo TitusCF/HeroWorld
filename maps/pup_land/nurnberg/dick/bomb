@@ -1,14 +1,15 @@
 arch map
+name Bomb de Pon
+difficulty 25
 region nurnberg
-name bomb
+width 29
+height 25
+enter_x 16
+enter_y 23
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sat Feb 10 02:16:13 1996
+Created:  1996-02-10
+Modified: 2012-03-02 Rick Tanner
 endmsg
-x 29
-y 25
-level 15
 end
 arch igate_open_1
 speed 0.500000
@@ -28,6 +29,8 @@ arch lightningwall_3
 y 3
 speed 2.000000
 speed_left -3.590000
+arch spell_sm_lightning
+end
 end
 arch blocked
 y 4
@@ -222,6 +225,8 @@ end
 arch lightningwall_7
 x 2
 y 1
+arch spell_sm_lightning
+end
 end
 arch igate_open_1
 x 2
@@ -551,6 +556,8 @@ end
 arch lightningwall_5
 x 4
 y 6
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 4
@@ -649,11 +656,12 @@ end
 arch lbulletwall_1
 name bombbomb wall
 other_arch bomb
-dam 8
 x 4
 y 22
 speed -0.100000
 level 70
+arch spell_create_bomb
+end
 end
 arch dungeon_floor
 x 4
@@ -674,6 +682,10 @@ arch wall_2_1_2
 x 5
 end
 arch dungeon_floor
+x 5
+y 1
+end
+arch big_elec
 x 5
 y 1
 end
@@ -718,6 +730,10 @@ x 5
 y 7
 end
 arch dungeon_floor
+x 5
+y 8
+end
+arch big_elec
 x 5
 y 8
 end
@@ -848,11 +864,12 @@ end
 arch lbulletwall_1
 name bombbomb wall
 other_arch bomb
-dam 8
 x 5
 y 22
 speed -0.100000
 level 70
+arch spell_create_bomb
+end
 end
 arch dungeon_floor
 x 5
@@ -969,6 +986,10 @@ arch dungeon_floor
 x 6
 y 17
 end
+arch swall_1_4_half
+x 6
+y 17
+end
 arch wall_2_2_4
 x 6
 y 17
@@ -1024,11 +1045,12 @@ end
 arch lbulletwall_1
 name bombbomb wall
 other_arch bomb
-dam 8
 x 6
 y 22
 speed -0.100000
 level 70
+arch spell_create_bomb
+end
 end
 arch dungeon_floor
 x 6
@@ -1094,6 +1116,10 @@ arch dungeon_floor
 x 7
 y 8
 end
+arch big_elec
+x 7
+y 8
+end
 arch dungeon_floor
 x 7
 y 9
@@ -1122,6 +1148,10 @@ arch wall_2_1_2
 x 7
 y 14
 end
+arch dungeon_floor
+x 7
+y 15
+end
 arch exit
 slaying ../city
 hp 4
@@ -1139,7 +1169,7 @@ y 16
 end
 arch sign
 msg
-Bombs should be used carefully
+Bombs should be used carefully.
 endmsg
 x 7
 y 16
@@ -1226,11 +1256,12 @@ end
 arch lbulletwall_1
 name bombbomb wall
 other_arch bomb
-dam 8
 x 7
 y 22
 speed -0.100000
 level 70
+arch spell_create_bomb
+end
 end
 arch dungeon_floor
 x 7
@@ -1266,11 +1297,19 @@ arch dungeon_floor
 x 8
 y 3
 end
+arch big_dragon
+x 8
+y 3
+end
 arch dungeon_floor
 x 8
 y 4
 end
 arch dungeon_floor
+x 8
+y 5
+end
+arch big_dragon
 x 8
 y 5
 end
@@ -1295,6 +1334,10 @@ x 8
 y 10
 end
 arch dungeon_floor
+x 8
+y 11
+end
+arch big_wiz
 x 8
 y 11
 end
@@ -1352,6 +1395,10 @@ arch wall_1_1
 x 8
 y 17
 end
+arch swall_1_3_half
+x 8
+y 17
+end
 arch dungeon_floor
 x 8
 y 18
@@ -1399,11 +1446,12 @@ end
 arch lbulletwall_1
 name bombbomb wall
 other_arch bomb
-dam 8
 x 8
 y 22
 speed -0.100000
 level 70
+arch spell_create_bomb
+end
 end
 arch dungeon_floor
 x 8
@@ -1456,6 +1504,10 @@ x 9
 y 7
 end
 arch dungeon_floor
+x 9
+y 8
+end
+arch big_elec
 x 9
 y 8
 end
@@ -1563,11 +1615,12 @@ end
 arch lbulletwall_1
 name bombbomb wall
 other_arch bomb
-dam 8
 x 9
 y 22
 speed -0.100000
 level 70
+arch spell_create_bomb
+end
 end
 arch dungeon_floor
 x 9
@@ -1722,11 +1775,12 @@ end
 arch lbulletwall_1
 name bombbomb wall
 other_arch bomb
-dam 8
 x 10
 y 22
 speed -0.100000
 level 70
+arch spell_create_bomb
+end
 end
 arch dungeon_floor
 x 10
@@ -1762,6 +1816,10 @@ arch dungeon_floor
 x 11
 y 3
 end
+arch big_dragon
+x 11
+y 3
+end
 arch dungeon_floor
 x 11
 y 4
@@ -1794,6 +1852,10 @@ arch dungeon_floor
 x 11
 y 11
 end
+arch big_wiz
+x 11
+y 11
+end
 arch dungeon_floor
 x 11
 y 12
@@ -1823,6 +1885,10 @@ x 11
 y 16
 end
 arch dungeon_magic
+x 11
+y 16
+end
+arch big_dragon
 x 11
 y 16
 end
@@ -1885,11 +1951,12 @@ end
 arch lbulletwall_1
 name bombbomb wall
 other_arch bomb
-dam 8
 x 11
 y 22
 speed -0.100000
 level 70
+arch spell_create_bomb
+end
 end
 arch dungeon_floor
 x 11
@@ -1937,6 +2004,10 @@ arch dungeon_floor
 x 12
 y 6
 end
+arch titan
+x 12
+y 6
+end
 arch dungeon_floor
 x 12
 y 7
@@ -1946,6 +2017,10 @@ x 12
 y 8
 end
 arch dungeon_floor
+x 12
+y 9
+end
+arch titan
 x 12
 y 9
 end
@@ -2052,11 +2127,12 @@ end
 arch lbulletwall_1
 name bombbomb wall
 other_arch bomb
-dam 8
 x 12
 y 22
 speed -0.100000
 level 70
+arch spell_create_bomb
+end
 end
 arch dungeon_floor
 x 12
@@ -2214,11 +2290,12 @@ end
 arch lbulletwall_1
 name bombbomb wall
 other_arch bomb
-dam 8
 x 13
 y 22
 speed -0.100000
 level 70
+arch spell_create_bomb
+end
 end
 arch dungeon_floor
 x 13
@@ -2436,6 +2513,10 @@ arch dungeon_floor
 x 15
 y 11
 end
+arch titan
+x 15
+y 11
+end
 arch dungeon_floor
 x 15
 y 12
@@ -2460,6 +2541,11 @@ arch dungeon_floor
 x 15
 y 16
 end
+arch big_dragon
+x 15
+y 16
+see_invisible 0
+end
 arch dungeon_floor
 x 15
 y 17
@@ -2479,11 +2565,7 @@ end
 arch sign
 name Instruction
 msg
-Bomb is very powerful in this game.
-Move to on the marking rune,
-open next door, 
-cast create much bomb,
-and escape from explosion
+Bomb is very powerful in this game.  Move to on the marking rune, open next door, cast create much bomb, and escape from explosion.
 endmsg
 x 15
 y 19
@@ -2650,8 +2732,8 @@ x 16
 y 18
 material 0
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 blocksview 1
 pass_thru 0
 end
@@ -2679,7 +2761,7 @@ arch dungeon_floor
 x 16
 y 24
 end
-arch oakdoor
+arch oakdoor_2
 slaying ../city
 hp 4
 sp 9
@@ -2821,7 +2903,7 @@ y 19
 end
 arch rune_mark
 msg
-Cast create bomb from here
+Cast create bomb from here.
 endmsg
 x 17
 y 19
@@ -2928,6 +3010,10 @@ arch dungeon_floor
 x 18
 y 10
 end
+arch baslic
+x 18
+y 10
+end
 arch dungeon_floor
 x 18
 y 11
@@ -2937,6 +3023,10 @@ x 18
 y 12
 end
 arch dungeon_floor
+x 18
+y 13
+end
+arch big_dragon
 x 18
 y 13
 end
@@ -3129,7 +3219,7 @@ y 19
 end
 arch rune_mark
 msg
-Cast create bomb from here
+Cast create bomb from here.
 endmsg
 x 19
 y 19
@@ -3143,6 +3233,10 @@ x 19
 y 21
 end
 arch dungeon_floor
+x 19
+y 22
+end
+arch chinese_dragon
 x 19
 y 22
 end
@@ -3280,13 +3374,10 @@ arch sign
 name Instruction2
 msg
 Wait!
-Don't turn left carelessly,
-or you'll catch cold breath.
+Don't turn left carelessly, or you'll catch cold breath.
 
 Can you cast sunspear?
-If you can do, cast it,
-and create bombs from marking rune
-spot.
+If you can do, cast it, and create bombs from marking rune spot.
 endmsg
 x 20
 y 18
@@ -3378,6 +3469,10 @@ x 21
 y 9
 end
 arch dungeon_floor
+x 21
+y 10
+end
+arch baslic
 x 21
 y 10
 end
@@ -3519,6 +3614,10 @@ arch dungeon_floor
 x 22
 y 13
 end
+arch big_dragon
+x 22
+y 13
+end
 arch dungeon_floor
 x 22
 y 14
@@ -3618,6 +3717,10 @@ x 23
 y 3
 end
 arch dungeon_floor
+x 23
+y 4
+end
+arch demon_lord
 x 23
 y 4
 end
@@ -3730,9 +3833,7 @@ y 23
 end
 arch sign
 msg
-On this corridor,
-you cannot use magic except marking
-rune spot.
+On this corridor, you cannot use magic except marking rune spot.
 endmsg
 x 23
 y 23
@@ -3792,6 +3893,10 @@ x 24
 y 9
 end
 arch dungeon_floor
+x 24
+y 10
+end
+arch baslic
 x 24
 y 10
 end
@@ -3946,6 +4051,10 @@ x 25
 y 12
 end
 arch dungeon_floor
+x 25
+y 13
+end
+arch big_dragon
 x 25
 y 13
 end
@@ -4135,6 +4244,10 @@ arch dungeon_floor
 x 26
 y 20
 end
+arch titan
+x 26
+y 20
+end
 arch dungeon_floor
 x 26
 y 21
@@ -4168,6 +4281,8 @@ end
 arch lightningwall_5
 x 27
 y 1
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 27
@@ -4474,97 +4589,4 @@ end
 arch wall_2_2_4
 x 28
 y 24
-end
-arch big_elec
-x 5
-y 1
-end
-arch big_elec
-x 5
-y 8
-end
-arch big_elec
-x 7
-y 8
-end
-arch big_dragon
-x 8
-y 3
-end
-arch big_dragon
-x 8
-y 5
-end
-arch big_wiz
-x 8
-y 11
-end
-arch big_elec
-x 9
-y 8
-end
-arch big_dragon
-x 11
-y 3
-end
-arch big_wiz
-x 11
-y 11
-end
-arch big_dragon
-x 11
-y 16
-end
-arch titan
-x 12
-y 6
-end
-arch titan
-x 12
-y 9
-end
-arch titan
-x 15
-y 11
-end
-arch big_dragon
-x 15
-y 16
-see_invisible 0
-end
-arch baslic
-x 18
-y 10
-end
-arch big_dragon
-x 18
-y 13
-end
-arch chinese_dragon
-x 19
-y 22
-end
-arch baslic
-x 21
-y 10
-end
-arch big_dragon
-x 22
-y 13
-end
-arch demon_lord
-x 23
-y 4
-end
-arch baslic
-x 24
-y 10
-end
-arch big_dragon
-x 25
-y 13
-end
-arch titan
-x 26
-y 20
 end

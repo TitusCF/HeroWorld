@@ -1,13 +1,16 @@
 arch map
-name Fire1
+name Fire Temple, Level 1
+difficulty 15
+region wilderness
+darkness 5
+width 32
+height 32
+enter_x 1
+enter_y 14
 msg
-Creator: PeterM
-Email: peterm@soda.csua.berkeley.edu
-Date: Sat Jun  7 09:38:36 1997
+Created:  1997-06-07 PeterM (peterm@soda.csua.berkeley.edu)
+Modified: 2012-03-12 Rick Tanner
 endmsg
-x 32
-y 32
-invisible 6
 end
 arch pstone_1
 end
@@ -452,8 +455,7 @@ end
 arch locked_door1
 slaying firedoor2
 msg
-A mysterious force prevents you from
-proceeding. 
+A mysterious force prevents you from proceeding.
 endmsg
 x 1
 y 24
@@ -747,7 +749,7 @@ name fire worshipper
 Wis 3
 x 3
 y 1
-immune 4
+resist_fire 100
 randomitems imp
 sleep 1
 end
@@ -903,6 +905,15 @@ arch pstone_1
 x 3
 y 29
 end
+arch dragon
+Wis 1
+x 3
+y 29
+carrying 100
+arch key2
+slaying firedoor2
+end
+end
 arch pstone_1
 x 3
 y 30
@@ -934,7 +945,7 @@ name fire worshipper
 Wis 3
 x 4
 y 1
-immune 4
+resist_fire 100
 randomitems imp
 sleep 1
 end
@@ -1131,7 +1142,7 @@ name fire worshipper
 Wis 3
 x 5
 y 1
-immune 4
+resist_fire 100
 randomitems imp
 sleep 1
 end
@@ -1954,7 +1965,7 @@ name fire worshipper
 Wis 3
 x 9
 y 1
-immune 4
+resist_fire 100
 randomitems imp
 sleep 1
 end
@@ -2168,7 +2179,7 @@ name fire worshipper
 Wis 3
 x 10
 y 1
-immune 4
+resist_fire 100
 randomitems imp
 sleep 1
 end
@@ -2355,7 +2366,7 @@ name fire worshipper
 Wis 3
 x 11
 y 1
-immune 4
+resist_fire 100
 randomitems imp
 sleep 1
 end
@@ -3324,6 +3335,10 @@ arch pstone_1
 x 15
 y 13
 end
+arch pentagram_111
+x 15
+y 13
+end
 arch pstone_1
 x 15
 y 14
@@ -3551,10 +3566,7 @@ y 27
 end
 arch magic_mouth
 msg
-The fire god demands sacrifice of an
-enemy elemental's residue.
-
-
+The fire god demands sacrifice of an enemy elemental's residue.
 endmsg
 x 16
 y 28
@@ -3567,13 +3579,7 @@ arch altar
 name Altar dedicated to the Fire God
 slaying ice para-elemental's residue
 msg
-The fire god demands sacrifice of an
-enemy elemental's residue.  Somehow
-you get the feeling that this will not
-be the last time the Fire God requires
-an appropriate sacrifice of an enemy
-in order to proceed.  
-
+The fire god demands sacrifice of an enemy elemental's residue.  Somehow you get the feeling that this will not be the last time the Fire God requires an appropriate sacrifice of an enemy in order to proceed.
 endmsg
 food 1
 x 16
@@ -4880,10 +4886,8 @@ wc 0
 ac 0
 x 22
 y 22
-speed -0.200000
+speed -0.2
 level 1
-immune 4
-protected 0
 attacktype 5
 weight 70000
 randomitems imp
@@ -4926,8 +4930,6 @@ x 22
 y 28
 speed -0.200000
 level 1
-immune 4
-protected 0
 attacktype 5
 weight 70000
 randomitems imp
@@ -5082,8 +5084,6 @@ x 23
 y 20
 speed -0.200000
 level 1
-immune 4
-protected 0
 attacktype 5
 weight 70000
 randomitems imp
@@ -5347,8 +5347,7 @@ end
 arch locked_door1
 slaying firedoor
 msg
-A mysterious force prevents your
-passage.
+A mysterious force prevents your passage.
 endmsg
 x 25
 y 1
@@ -5489,8 +5488,6 @@ x 25
 y 25
 speed -0.200000
 level 1
-immune 4
-protected 0
 attacktype 5
 weight 70000
 randomitems imp
@@ -5654,10 +5651,8 @@ wc 0
 ac 0
 x 26
 y 20
-speed -0.200000
+speed -0.2
 level 1
-immune 4
-protected 0
 attacktype 5
 weight 70000
 randomitems imp
@@ -5884,10 +5879,8 @@ wc 0
 ac 0
 x 27
 y 28
-speed -0.200000
+speed -0.2
 level 1
-immune 4
-protected 0
 attacktype 5
 carrying 100
 weight 70000
@@ -6547,9 +6540,7 @@ end
 arch locked_door1
 slaying firedoor3
 msg
-A mysterious force prevents you from
-proceeding. 
-
+A mysterious force prevents you from proceeding.
 endmsg
 x 30
 y 24
@@ -6891,17 +6882,4 @@ end
 arch dun7
 x 31
 y 31
-end
-arch dragon
-Wis 1
-x 3
-y 29
-carrying 100
-arch key2
-slaying firedoor2
-end
-end
-arch pentagram_111
-x 15
-y 13
 end

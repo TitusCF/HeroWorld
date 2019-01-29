@@ -1,12 +1,15 @@
 arch map
-name elecd lair
+name Warriors' Tower, Electric Dragons' Lair
+difficulty 25
+region wilderness
+width 28
+height 27
+enter_x 15
+enter_y 13
 msg
-Creator: Magnus Kronhamn
-Email: mak@solace.mh.se
-Date: Thu Apr 13 15:48:22 2000
+Created:  2000-04-13 Magnus Kronhamn (mak@solace.mh.se)
+Modified: 2012-03-09 Rick Tanner
 endmsg
-x 28
-y 27
 end
 arch grate_open_1
 connected 1
@@ -21,7 +24,7 @@ end
 arch button_plate
 y 1
 connected 2
-walk_off 0
+move_off 0
 end
 arch grate_open_1
 maxsp 3
@@ -31,12 +34,12 @@ end
 arch button_plate
 y 2
 connected 3
-walk_off 0
+move_off 0
 end
 arch button_plate
 y 3
 connected 96
-walk_off 0
+move_off 0
 end
 arch blocked
 y 4
@@ -790,6 +793,26 @@ end
 arch pstone_1
 x 4
 y 12
+end
+arch big_elec
+name elderly electric dragon
+Con 15
+Wis 25
+Pow 40
+hp 5500
+maxhp 5500
+sp 130
+exp 100000
+dam 35
+wc -25
+ac -16
+x 4
+y 12
+level 22
+carrying 100
+arch key2
+slaying elecdkey
+end
 end
 arch pstone_1
 x 4
@@ -1142,6 +1165,10 @@ x 6
 y 16
 end
 arch pstone_1
+x 6
+y 17
+end
+arch big_elec
 x 6
 y 17
 end
@@ -1539,6 +1566,10 @@ arch pstone_1
 x 9
 y 8
 end
+arch big_elec
+x 9
+y 8
+end
 arch pstone_1
 x 9
 y 9
@@ -1556,6 +1587,10 @@ x 9
 y 12
 end
 arch pstone_1
+x 9
+y 13
+end
+arch big_elec
 x 9
 y 13
 end
@@ -1580,6 +1615,10 @@ x 9
 y 18
 end
 arch pstone_1
+x 9
+y 19
+end
+arch big_elec
 x 9
 y 19
 end
@@ -2661,8 +2700,7 @@ y 12
 end
 arch magic_mouth
 msg
-Pull the lever to start the trial
-or say 'help' to chicken out
+Pull the lever to start the trial or say 'help' to chicken out.
 endmsg
 x 15
 y 13
@@ -3639,6 +3677,10 @@ arch pstone_1
 x 20
 y 7
 end
+arch big_elec
+x 20
+y 7
+end
 arch pstone_1
 x 20
 y 8
@@ -3660,6 +3702,10 @@ x 20
 y 12
 end
 arch pstone_1
+x 20
+y 13
+end
+arch big_elec
 x 20
 y 13
 end
@@ -4239,6 +4285,10 @@ arch pstone_1
 x 24
 y 9
 end
+arch big_elec
+x 24
+y 9
+end
 arch pstone_1
 x 24
 y 10
@@ -4260,6 +4310,10 @@ x 24
 y 14
 end
 arch pstone_1
+x 24
+y 15
+end
+arch big_elec
 x 24
 y 15
 end
@@ -4888,56 +4942,4 @@ end
 arch blocked
 x 27
 y 26
-end
-arch big_elec
-name elderly electric dragon
-Con 15
-Wis 25
-Pow 40
-hp 5500
-maxhp 5500
-sp 130
-exp 100000
-dam 35
-wc -25
-ac -16
-x 4
-y 12
-level 22
-carrying 100
-arch key2
-slaying elecdkey
-end
-end
-arch big_elec
-x 6
-y 17
-end
-arch big_elec
-x 9
-y 8
-end
-arch big_elec
-x 9
-y 13
-end
-arch big_elec
-x 9
-y 19
-end
-arch big_elec
-x 20
-y 7
-end
-arch big_elec
-x 20
-y 13
-end
-arch big_elec
-x 24
-y 9
-end
-arch big_elec
-x 24
-y 15
 end

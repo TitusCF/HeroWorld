@@ -1,12 +1,15 @@
 arch map
+name Headquarter of the Regular Army, Elite Training Center
+difficulty 50
 region nurnberg
+width 36
+height 40
+enter_x 4
+enter_y 6
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sun Dec 24 15:48:40 2000
+Created:  2000-12-24
+Modified: 2012-03-02 Rick Tanner
 endmsg
-x 36
-y 40
 end
 arch pstone_1
 end
@@ -416,7 +419,7 @@ end
 arch sign
 name hints (?)
 msg
-If you die, you've been too weak.
+If you die, you are too weak.
 endmsg
 x 1
 y 27
@@ -446,6 +449,10 @@ x 1
 y 32
 end
 arch pstone_1
+x 1
+y 33
+end
+arch dread
 x 1
 y 33
 end
@@ -559,6 +566,10 @@ arch pstone_1
 x 2
 y 13
 end
+arch giant
+x 2
+y 13
+end
 arch pstone_1
 x 2
 y 14
@@ -567,11 +578,19 @@ arch pstone_1
 x 2
 y 15
 end
+arch giant
+x 2
+y 15
+end
 arch pstone_1
 x 2
 y 16
 end
 arch pstone_1
+x 2
+y 17
+end
+arch giant
 x 2
 y 17
 end
@@ -611,10 +630,7 @@ end
 arch sign
 name hints
 msg
-Hillgiants can easily be killed with
-fire, cold, or holy word of Mostrai.
-Trolls are vulnerable to fire and
-holy word of Lythander.
+Hillgiants can easily be killed with fire, cold, or holy word of Mostrai.  Trolls are vulnerable to fire and holy word of Lythander.
 endmsg
 x 2
 y 22
@@ -684,7 +700,15 @@ arch pstone_1
 x 2
 y 30
 end
+arch dragon
+x 2
+y 30
+end
 arch pstone_1
+x 2
+y 31
+end
+arch big_dragon
 x 2
 y 31
 end
@@ -704,11 +728,19 @@ arch pstone_1
 x 2
 y 35
 end
+arch big_dragon
+x 2
+y 35
+end
 arch pstone_1
 x 2
 y 36
 end
 arch pstone_1
+x 2
+y 37
+end
+arch dread
 x 2
 y 37
 end
@@ -802,6 +834,10 @@ arch pstone_1
 x 3
 y 14
 end
+arch giant
+x 3
+y 14
+end
 arch pstone_1
 x 3
 y 15
@@ -810,11 +846,19 @@ arch pstone_1
 x 3
 y 16
 end
+arch giant
+x 3
+y 16
+end
 arch pstone_1
 x 3
 y 17
 end
 arch pstone_1
+x 3
+y 18
+end
+arch giant
 x 3
 y 18
 end
@@ -912,6 +956,10 @@ arch pstone_1
 x 3
 y 33
 end
+arch dread
+x 3
+y 33
+end
 arch pstone_1
 x 3
 y 34
@@ -969,11 +1017,9 @@ end
 arch sign
 name info
 msg
-Welcome to the Regular Army's elite
-training center!
+Welcome to the Regular Army's elite training center!
 -----------------------------------
-Choose one of the difficulty levels
-and enjoy your training.
+Choose one of the difficulty levels and enjoy your training.
 - General Lickmond
 endmsg
 x 4
@@ -1042,6 +1088,10 @@ arch pstone_1
 x 4
 y 13
 end
+arch giant
+x 4
+y 13
+end
 arch pstone_1
 x 4
 y 14
@@ -1050,11 +1100,19 @@ arch pstone_1
 x 4
 y 15
 end
+arch giant
+x 4
+y 15
+end
 arch pstone_1
 x 4
 y 16
 end
 arch pstone_1
+x 4
+y 17
+end
+arch giant
 x 4
 y 17
 end
@@ -1127,6 +1185,10 @@ arch pstone_1
 x 4
 y 29
 end
+arch dragon
+x 4
+y 29
+end
 arch pstone_1
 x 4
 y 30
@@ -1160,6 +1222,10 @@ x 4
 y 37
 end
 arch pstone_1
+x 4
+y 38
+end
+arch dragon
 x 4
 y 38
 end
@@ -1249,6 +1315,10 @@ arch pstone_1
 x 5
 y 14
 end
+arch giant
+x 5
+y 14
+end
 arch pstone_1
 x 5
 y 15
@@ -1257,11 +1327,19 @@ arch pstone_1
 x 5
 y 16
 end
+arch giant
+x 5
+y 16
+end
 arch pstone_1
 x 5
 y 17
 end
 arch pstone_1
+x 5
+y 18
+end
+arch giant
 x 5
 y 18
 end
@@ -1337,6 +1415,10 @@ arch pstone_1
 x 5
 y 30
 end
+arch dread
+x 5
+y 30
+end
 arch pstone_1
 x 5
 y 31
@@ -1353,7 +1435,15 @@ arch pstone_1
 x 5
 y 34
 end
+arch dragon
+x 5
+y 34
+end
 arch pstone_1
+x 5
+y 35
+end
+arch dread
 x 5
 y 35
 end
@@ -1362,6 +1452,10 @@ x 5
 y 36
 end
 arch pstone_1
+x 5
+y 37
+end
+arch dragon
 x 5
 y 37
 end
@@ -1407,18 +1501,13 @@ arch ninja
 name Slik, the ninja
 msg
 @match partner|sparring
-Lickmond's sparring partner can be
-found in the "hard" training section.
+Lickmond's sparring partner can be found in the "hard" training section.
 @match yes
-Okay, my plan is to kill Lickmond's
-sparring partner, take his head and
-show it to Lickmond. That should upset
-him so much that he might attack us.
+Okay, my plan is to kill Lickmond's sparring partner, take his head and show it to Lickmond.  That should upset him so much that he might attack us.
 @match no
 Hm... What a coward!
 @match *
-I came here to challenge Lickmond.
-You wanna join me?
+I came here to challenge Lickmond.  You wanna join me?
 endmsg
 Dex -19
 hp 100
@@ -1428,6 +1517,7 @@ speed 0.001000
 type 0
 weight 700000
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1491,6 +1581,10 @@ arch pstone_1
 x 6
 y 13
 end
+arch giant
+x 6
+y 13
+end
 arch pstone_1
 x 6
 y 14
@@ -1499,11 +1593,19 @@ arch pstone_1
 x 6
 y 15
 end
+arch giant
+x 6
+y 15
+end
 arch pstone_1
 x 6
 y 16
 end
 arch pstone_1
+x 6
+y 17
+end
+arch giant
 x 6
 y 17
 end
@@ -1559,6 +1661,10 @@ arch pstone_1
 x 6
 y 25
 end
+arch gaelotroll
+x 6
+y 25
+end
 arch pstone_1
 x 6
 y 26
@@ -1592,6 +1698,10 @@ x 6
 y 32
 end
 arch pstone_1
+x 6
+y 33
+end
+arch dragon
 x 6
 y 33
 end
@@ -1717,6 +1827,10 @@ arch pstone_1
 x 7
 y 14
 end
+arch giant
+x 7
+y 14
+end
 arch pstone_1
 x 7
 y 15
@@ -1725,11 +1839,19 @@ arch pstone_1
 x 7
 y 16
 end
+arch giant
+x 7
+y 16
+end
 arch pstone_1
 x 7
 y 17
 end
 arch pstone_1
+x 7
+y 18
+end
+arch giant
 x 7
 y 18
 end
@@ -1793,6 +1915,10 @@ arch pstone_1
 x 7
 y 30
 end
+arch big_dragon
+x 7
+y 30
+end
 arch pstone_1
 x 7
 y 31
@@ -1817,11 +1943,19 @@ arch pstone_1
 x 7
 y 36
 end
+arch big_dragon
+x 7
+y 36
+end
 arch pstone_1
 x 7
 y 37
 end
 arch pstone_1
+x 7
+y 38
+end
+arch dragon
 x 7
 y 38
 end
@@ -1923,6 +2057,10 @@ arch pstone_1
 x 8
 y 13
 end
+arch giant
+x 8
+y 13
+end
 arch pstone_1
 x 8
 y 14
@@ -1931,11 +2069,19 @@ arch pstone_1
 x 8
 y 15
 end
+arch giant
+x 8
+y 15
+end
 arch pstone_1
 x 8
 y 16
 end
 arch pstone_1
+x 8
+y 17
+end
+arch giant
 x 8
 y 17
 end
@@ -1983,6 +2129,10 @@ arch pstone_1
 x 8
 y 25
 end
+arch gaelotroll
+x 8
+y 25
+end
 arch pstone_1
 x 8
 y 26
@@ -2003,6 +2153,10 @@ arch pstone_1
 x 8
 y 29
 end
+arch dragon
+x 8
+y 29
+end
 arch pstone_1
 x 8
 y 30
@@ -2016,6 +2170,10 @@ x 8
 y 32
 end
 arch pstone_1
+x 8
+y 33
+end
+arch dread
 x 8
 y 33
 end
@@ -2562,6 +2720,10 @@ arch pstone_1
 x 11
 y 1
 end
+arch troll
+x 11
+y 1
+end
 arch pstone_1
 x 11
 y 2
@@ -2575,6 +2737,10 @@ x 11
 y 3
 end
 arch pstone_1
+x 11
+y 4
+end
+arch troll
 x 11
 y 4
 end
@@ -2602,11 +2768,19 @@ arch pstone_1
 x 11
 y 8
 end
+arch troll
+x 11
+y 8
+end
 arch pstone_1
 x 11
 y 9
 end
 arch pstone_1
+x 11
+y 10
+end
+arch troll
 x 11
 y 10
 end
@@ -2687,6 +2861,10 @@ x 11
 y 27
 end
 arch pstone_1
+x 11
+y 28
+end
+arch dread
 x 11
 y 28
 end
@@ -2777,6 +2955,10 @@ x 12
 y 5
 end
 arch pstone_1
+x 12
+y 6
+end
+arch troll
 x 12
 y 6
 end
@@ -2940,6 +3122,10 @@ arch pstone_1
 x 12
 y 32
 end
+arch big_wiz
+x 12
+y 32
+end
 arch pstone_1
 x 12
 y 33
@@ -2961,6 +3147,10 @@ x 12
 y 36
 end
 arch pstone_1
+x 12
+y 37
+end
+arch titan
 x 12
 y 37
 end
@@ -2991,6 +3181,10 @@ x 13
 y 1
 end
 arch pstone_1
+x 13
+y 2
+end
+arch troll
 x 13
 y 2
 end
@@ -3034,6 +3228,10 @@ arch pstone_1
 x 13
 y 9
 end
+arch troll
+x 13
+y 9
+end
 arch pstone_1
 x 13
 y 10
@@ -3070,11 +3268,19 @@ arch pstone_1
 x 13
 y 15
 end
+arch dread
+x 13
+y 15
+end
 arch pstone_1
 x 13
 y 16
 end
 arch pstone_1
+x 13
+y 17
+end
+arch dread
 x 13
 y 17
 end
@@ -3087,6 +3293,10 @@ x 13
 y 19
 end
 arch pstone_1
+x 13
+y 20
+end
+arch dread
 x 13
 y 20
 end
@@ -3216,11 +3426,19 @@ arch pstone_1
 x 14
 y 4
 end
+arch troll
+x 14
+y 4
+end
 arch pstone_1
 x 14
 y 5
 end
 arch pstone_1
+x 14
+y 6
+end
+arch baslic
 x 14
 y 6
 end
@@ -3345,6 +3563,10 @@ x 14
 y 28
 end
 arch pstone_1
+x 14
+y 29
+end
+arch titan
 x 14
 y 29
 end
@@ -3426,6 +3648,10 @@ arch pstone_1
 x 15
 y 2
 end
+arch behemoth
+x 15
+y 2
+end
 arch pstone_1
 x 15
 y 3
@@ -3450,11 +3676,19 @@ arch pstone_1
 x 15
 y 8
 end
+arch troll
+x 15
+y 8
+end
 arch pstone_1
 x 15
 y 9
 end
 arch pstone_1
+x 15
+y 10
+end
+arch behemoth
 x 15
 y 10
 end
@@ -3486,6 +3720,10 @@ arch pstone_1
 x 15
 y 15
 end
+arch dread
+x 15
+y 15
+end
 arch pstone_1
 x 15
 y 16
@@ -3506,11 +3744,19 @@ arch pstone_1
 x 15
 y 20
 end
+arch dread
+x 15
+y 20
+end
 arch pstone_1
 x 15
 y 21
 end
 arch pstone_1
+x 15
+y 22
+end
+arch dread
 x 15
 y 22
 end
@@ -3590,6 +3836,10 @@ arch pstone_1
 x 15
 y 36
 end
+arch big_wiz
+x 15
+y 36
+end
 arch pstone_1
 x 15
 y 37
@@ -3629,6 +3879,10 @@ x 16
 y 3
 end
 arch pstone_1
+x 16
+y 4
+end
+arch troll
 x 16
 y 4
 end
@@ -3693,6 +3947,10 @@ x 16
 y 17
 end
 arch pstone_1
+x 16
+y 18
+end
+arch titan
 x 16
 y 18
 end
@@ -3780,6 +4038,10 @@ arch pstone_1
 x 16
 y 33
 end
+arch dread
+x 16
+y 33
+end
 arch pstone_1
 x 16
 y 34
@@ -3819,6 +4081,10 @@ arch rough_wall_2_1_2
 x 17
 end
 arch pstone_1
+x 17
+y 1
+end
+arch troll
 x 17
 y 1
 end
@@ -3862,11 +4128,19 @@ arch pstone_1
 x 17
 y 8
 end
+arch troll
+x 17
+y 8
+end
 arch pstone_1
 x 17
 y 9
 end
 arch pstone_1
+x 17
+y 10
+end
+arch troll
 x 17
 y 10
 end
@@ -3898,6 +4172,10 @@ arch pstone_1
 x 17
 y 15
 end
+arch dread
+x 17
+y 15
+end
 arch pstone_1
 x 17
 y 16
@@ -3923,6 +4201,10 @@ x 17
 y 21
 end
 arch pstone_1
+x 17
+y 22
+end
+arch dread
 x 17
 y 22
 end
@@ -3955,6 +4237,10 @@ x 17
 y 27
 end
 arch pstone_1
+x 17
+y 28
+end
+arch big_wiz
 x 17
 y 28
 end
@@ -4032,6 +4318,10 @@ arch pstone_1
 x 18
 y 3
 end
+arch troll
+x 18
+y 3
+end
 arch pstone_1
 x 18
 y 4
@@ -4045,6 +4335,10 @@ x 18
 y 5
 end
 arch pstone_1
+x 18
+y 6
+end
+arch troll
 x 18
 y 6
 end
@@ -4173,6 +4467,10 @@ x 18
 y 32
 end
 arch pstone_1
+x 18
+y 33
+end
+arch titan
 x 18
 y 33
 end
@@ -4222,6 +4520,10 @@ arch pstone_1
 x 19
 y 1
 end
+arch troll
+x 19
+y 1
+end
 arch pstone_1
 x 19
 y 2
@@ -4254,11 +4556,19 @@ arch pstone_1
 x 19
 y 8
 end
+arch behemoth
+x 19
+y 8
+end
 arch pstone_1
 x 19
 y 9
 end
 arch pstone_1
+x 19
+y 10
+end
+arch troll
 x 19
 y 10
 end
@@ -4290,11 +4600,19 @@ arch pstone_1
 x 19
 y 15
 end
+arch dread
+x 19
+y 15
+end
 arch pstone_1
 x 19
 y 16
 end
 arch pstone_1
+x 19
+y 17
+end
+arch dread
 x 19
 y 17
 end
@@ -4310,11 +4628,19 @@ arch pstone_1
 x 19
 y 20
 end
+arch titan
+x 19
+y 20
+end
 arch pstone_1
 x 19
 y 21
 end
 arch pstone_1
+x 19
+y 22
+end
+arch dread
 x 19
 y 22
 end
@@ -4391,6 +4717,10 @@ x 19
 y 36
 end
 arch pstone_1
+x 19
+y 37
+end
+arch dread
 x 19
 y 37
 end
@@ -4754,6 +5084,10 @@ arch pstone_1
 x 21
 y 17
 end
+arch dread
+x 21
+y 17
+end
 arch pstone_1
 x 21
 y 18
@@ -4766,11 +5100,19 @@ arch pstone_1
 x 21
 y 20
 end
+arch dread
+x 21
+y 20
+end
 arch pstone_1
 x 21
 y 21
 end
 arch pstone_1
+x 21
+y 22
+end
+arch dread
 x 21
 y 22
 end
@@ -5045,6 +5387,10 @@ arch pstone_1
 x 22
 y 31
 end
+arch big_dragon
+x 22
+y 31
+end
 arch pstone_1
 x 22
 y 32
@@ -5062,6 +5408,10 @@ x 22
 y 34
 end
 arch pstone_1
+x 22
+y 35
+end
+arch big_dragon
 x 22
 y 35
 end
@@ -5496,6 +5846,10 @@ arch pstone_1
 x 24
 y 16
 end
+arch chinese_dragon
+x 24
+y 16
+end
 arch pstone_1
 x 24
 y 17
@@ -5529,6 +5883,10 @@ x 24
 y 22
 end
 arch pstone_1
+x 24
+y 23
+end
+arch chinese_dragon
 x 24
 y 23
 end
@@ -5638,9 +5996,7 @@ end
 arch sign
 name hints
 msg
-Dreads, beholders and skulls are
-immune to magic. But they greatly fear
-sharp blades...
+Dreads, beholders and skulls are immune to magic.  But they greatly fear sharp blades...
 endmsg
 x 25
 y 2
@@ -5733,6 +6089,10 @@ arch pstone_1
 x 25
 y 14
 end
+arch chinese_dragon
+x 25
+y 14
+end
 arch pstone_1
 x 25
 y 15
@@ -5766,6 +6126,10 @@ x 25
 y 20
 end
 arch pstone_1
+x 25
+y 21
+end
+arch chinese_dragon
 x 25
 y 21
 end
@@ -5979,6 +6343,10 @@ arch pstone_1
 x 26
 y 16
 end
+arch chinese_dragon
+x 26
+y 16
+end
 arch pstone_1
 x 26
 y 17
@@ -6012,6 +6380,10 @@ x 26
 y 22
 end
 arch pstone_1
+x 26
+y 23
+end
+arch chinese_dragon
 x 26
 y 23
 end
@@ -6067,6 +6439,18 @@ arch pstone_1
 x 26
 y 33
 end
+arch demon_lord
+name Lickmond's sparring partner
+x 26
+y 33
+carrying 50000
+arch key2
+name sparring partner's head
+slaying lickmond_SP_head
+face demon_head.111
+weight 50000
+end
+end
 arch pstone_1
 x 26
 y 34
@@ -6106,6 +6490,10 @@ arch rough_wall_2_1_2
 x 27
 end
 arch pstone_1
+x 27
+y 1
+end
+arch dread
 x 27
 y 1
 end
@@ -6205,6 +6593,10 @@ arch pstone_1
 x 27
 y 14
 end
+arch chinese_dragon
+x 27
+y 14
+end
 arch pstone_1
 x 27
 y 15
@@ -6238,6 +6630,10 @@ x 27
 y 20
 end
 arch pstone_1
+x 27
+y 21
+end
+arch chinese_dragon
 x 27
 y 21
 end
@@ -6562,6 +6958,10 @@ arch rough_wall_2_1_2
 x 29
 end
 arch pstone_1
+x 29
+y 1
+end
+arch dread
 x 29
 y 1
 end
@@ -6773,6 +7173,10 @@ arch pstone_1
 x 29
 y 30
 end
+arch big_dragon
+x 29
+y 30
+end
 arch pstone_1
 x 29
 y 31
@@ -6790,6 +7194,10 @@ x 29
 y 33
 end
 arch pstone_1
+x 29
+y 34
+end
+arch big_dragon
 x 29
 y 34
 end
@@ -6936,6 +7344,10 @@ x 30
 y 16
 end
 arch pstone_1
+x 30
+y 17
+end
+arch behemoth
 x 30
 y 17
 end
@@ -7053,6 +7465,10 @@ arch pstone_1
 x 31
 y 1
 end
+arch dread
+x 31
+y 1
+end
 arch pstone_1
 x 31
 y 2
@@ -7178,6 +7594,10 @@ x 31
 y 21
 end
 arch pstone_1
+x 31
+y 22
+end
+arch behemoth
 x 31
 y 22
 end
@@ -7541,6 +7961,10 @@ arch pstone_1
 x 33
 y 1
 end
+arch dread
+x 33
+y 1
+end
 arch pstone_1
 x 33
 y 2
@@ -7569,6 +7993,10 @@ arch pstone_1
 x 33
 y 6
 end
+arch dread
+x 33
+y 6
+end
 arch pstone_1
 x 33
 y 7
@@ -7577,11 +8005,19 @@ arch pstone_1
 x 33
 y 8
 end
+arch dread
+x 33
+y 8
+end
 arch pstone_1
 x 33
 y 9
 end
 arch pstone_1
+x 33
+y 10
+end
+arch dread
 x 33
 y 10
 end
@@ -8288,448 +8724,4 @@ end
 arch blocked
 x 35
 y 39
-end
-arch dread
-x 1
-y 33
-end
-arch giant
-x 2
-y 13
-end
-arch giant
-x 2
-y 15
-end
-arch giant
-x 2
-y 17
-end
-arch dragon
-x 2
-y 30
-end
-arch big_dragon
-x 2
-y 31
-end
-arch big_dragon
-x 2
-y 35
-end
-arch dread
-x 2
-y 37
-end
-arch giant
-x 3
-y 14
-end
-arch giant
-x 3
-y 16
-end
-arch giant
-x 3
-y 18
-end
-arch dread
-x 3
-y 33
-end
-arch giant
-x 4
-y 13
-end
-arch giant
-x 4
-y 15
-end
-arch giant
-x 4
-y 17
-end
-arch dragon
-x 4
-y 29
-end
-arch dragon
-x 4
-y 38
-end
-arch giant
-x 5
-y 14
-end
-arch giant
-x 5
-y 16
-end
-arch giant
-x 5
-y 18
-end
-arch dread
-x 5
-y 30
-end
-arch dragon
-x 5
-y 34
-end
-arch dread
-x 5
-y 35
-end
-arch dragon
-x 5
-y 37
-end
-arch giant
-x 6
-y 13
-end
-arch giant
-x 6
-y 15
-end
-arch giant
-x 6
-y 17
-end
-arch gaelotroll
-x 6
-y 25
-end
-arch dragon
-x 6
-y 33
-end
-arch giant
-x 7
-y 14
-end
-arch giant
-x 7
-y 16
-end
-arch giant
-x 7
-y 18
-end
-arch big_dragon
-x 7
-y 30
-end
-arch big_dragon
-x 7
-y 36
-end
-arch dragon
-x 7
-y 38
-end
-arch giant
-x 8
-y 13
-end
-arch giant
-x 8
-y 15
-end
-arch giant
-x 8
-y 17
-end
-arch gaelotroll
-x 8
-y 25
-end
-arch dragon
-x 8
-y 29
-end
-arch dread
-x 8
-y 33
-end
-arch troll
-x 11
-y 1
-end
-arch troll
-x 11
-y 4
-end
-arch troll
-x 11
-y 8
-end
-arch troll
-x 11
-y 10
-end
-arch dread
-x 11
-y 28
-end
-arch troll
-x 12
-y 6
-end
-arch big_wiz
-x 12
-y 32
-end
-arch titan
-x 12
-y 37
-end
-arch troll
-x 13
-y 2
-end
-arch troll
-x 13
-y 9
-end
-arch dread
-x 13
-y 15
-end
-arch dread
-x 13
-y 17
-end
-arch dread
-x 13
-y 20
-end
-arch troll
-x 14
-y 4
-end
-arch baslic
-x 14
-y 6
-end
-arch titan
-x 14
-y 29
-end
-arch behemoth
-x 15
-y 2
-end
-arch troll
-x 15
-y 8
-end
-arch behemoth
-x 15
-y 10
-end
-arch dread
-x 15
-y 15
-end
-arch dread
-x 15
-y 20
-end
-arch dread
-x 15
-y 22
-end
-arch big_wiz
-x 15
-y 36
-end
-arch troll
-x 16
-y 4
-end
-arch titan
-x 16
-y 18
-end
-arch dread
-x 16
-y 33
-end
-arch troll
-x 17
-y 1
-end
-arch troll
-x 17
-y 8
-end
-arch troll
-x 17
-y 10
-end
-arch dread
-x 17
-y 15
-end
-arch dread
-x 17
-y 22
-end
-arch big_wiz
-x 17
-y 28
-end
-arch troll
-x 18
-y 3
-end
-arch troll
-x 18
-y 6
-end
-arch titan
-x 18
-y 33
-end
-arch troll
-x 19
-y 1
-end
-arch behemoth
-x 19
-y 8
-end
-arch troll
-x 19
-y 10
-end
-arch dread
-x 19
-y 15
-end
-arch dread
-x 19
-y 17
-end
-arch titan
-x 19
-y 20
-end
-arch dread
-x 19
-y 22
-end
-arch dread
-x 19
-y 37
-end
-arch dread
-x 21
-y 17
-end
-arch dread
-x 21
-y 20
-end
-arch dread
-x 21
-y 22
-end
-arch big_dragon
-x 22
-y 31
-end
-arch big_dragon
-x 22
-y 35
-end
-arch chinese_dragon
-x 24
-y 16
-end
-arch chinese_dragon
-x 24
-y 23
-end
-arch chinese_dragon
-x 25
-y 14
-end
-arch chinese_dragon
-x 25
-y 21
-end
-arch chinese_dragon
-x 26
-y 16
-end
-arch chinese_dragon
-x 26
-y 23
-end
-arch demon_lord
-name Lickmond's sparring partner
-x 26
-y 33
-carrying 50000
-arch key2
-name sparring partner's head
-slaying lickmond_SP_head
-face demon_head.111
-weight 50000
-end
-end
-arch dread
-x 27
-y 1
-end
-arch chinese_dragon
-x 27
-y 14
-end
-arch chinese_dragon
-x 27
-y 21
-end
-arch dread
-x 29
-y 1
-end
-arch big_dragon
-x 29
-y 30
-end
-arch big_dragon
-x 29
-y 34
-end
-arch behemoth
-x 30
-y 17
-end
-arch dread
-x 31
-y 1
-end
-arch behemoth
-x 31
-y 22
-end
-arch dread
-x 33
-y 1
-end
-arch dread
-x 33
-y 6
-end
-arch dread
-x 33
-y 8
-end
-arch dread
-x 33
-y 10
 end

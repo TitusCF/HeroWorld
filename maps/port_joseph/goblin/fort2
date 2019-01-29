@@ -1,13 +1,15 @@
 arch map
-region portjoesph
 name Goblin Fort
-msg
-Creator: llangley
-Email: langley@fermat.dartmouth.edu
-Date: Fri Jul 22 22:16:49 1994
-endmsg
+difficulty 7
+region portjoseph
 width 24
 height 15
+enter_x 22
+enter_y 5
+msg
+Created:  1994-07-22 langley (langley@fermat.dartmouth.edu)
+Modified: 2012-02-20 Rick Tanner
+endmsg
 end
 arch afloor_right
 end
@@ -340,35 +342,35 @@ y 6
 end
 arch button_small
 face button_sma.112
-value 1
-connected 1
 x 3
 y 7
+value 1
+connected 1
 end
 arch afloor_right
 x 3
 y 7
 end
 arch pearl
-nrof 10
 x 3
 y 7
+nrof 10
 end
 arch button_small
 face button_sma.112
-value 1
-connected 1
 x 3
 y 8
+value 1
+connected 1
 end
 arch afloor_right
 x 3
 y 8
 end
 arch ruby
-nrof 8
 x 3
 y 8
+nrof 8
 end
 arch afloor_right
 x 3
@@ -523,9 +525,9 @@ x 5
 y 2
 end
 arch dwall_2_1_2
-no_pass 0
 x 5
 y 2
+move_block 0
 end
 arch afloor_right
 x 5
@@ -548,9 +550,9 @@ x 5
 y 6
 end
 arch note
-name orchish note
+name orcish note
 msg
-Beewar!  Du not tuch! Danjir
+Beewar!  Du not tuch! Danjir!!
 endmsg
 x 5
 y 6
@@ -613,7 +615,7 @@ arch afloor_right
 x 6
 y 2
 end
-arch dwall3_3
+arch dwall_3_3
 x 6
 y 2
 end
@@ -980,11 +982,11 @@ x 9
 y 8
 end
 arch grate_closed_2
-connected 1
-activate_on_push 0
 maxsp 1
 x 9
 y 8
+connected 1
+activate_on_push 0
 end
 arch afloor_right
 x 9
@@ -1285,11 +1287,11 @@ x 12
 y 11
 end
 arch grate_closed_1
-connected 1
-activate_on_push 0
 maxsp 1
 x 12
 y 11
+connected 1
+activate_on_push 0
 end
 arch afloor_right
 x 12
@@ -1338,11 +1340,11 @@ x 13
 y 5
 end
 arch grate_closed_1
-connected 1
-activate_on_push 0
 maxsp 1
 x 13
 y 5
+connected 1
+activate_on_push 0
 end
 arch afloor_right
 x 13
@@ -1420,9 +1422,9 @@ x 14
 y 2
 end
 arch igateTrg1
-connected 2
 x 14
 y 2
+connected 2
 end
 arch afloor_right
 x 14
@@ -1507,9 +1509,9 @@ x 15
 y 1
 end
 arch trigger
-connected 2
 x 15
 y 1
+connected 2
 end
 arch afloor_right
 x 15
@@ -1590,7 +1592,7 @@ end
 arch afloor_right
 x 16
 end
-arch dwall3_3
+arch dwall_3_3
 x 16
 end
 arch afloor_right
@@ -1646,11 +1648,11 @@ x 16
 y 8
 end
 arch grate_closed_2
-connected 1
-activate_on_push 0
 maxsp 1
 x 16
 y 8
+connected 1
+activate_on_push 0
 end
 arch afloor_right
 x 16

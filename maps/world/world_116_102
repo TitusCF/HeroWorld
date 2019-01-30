@@ -5,7 +5,7 @@ region darcap
 width 50
 height 50
 msg
-Modified: 2019-01-26 Acer
+Modified: 2019-01-30 Acer
 endmsg
 outdoor 1
 tile_path_1 world_116_101
@@ -5467,6 +5467,8 @@ arch store_weapons
 name Spike's Weapons
 name_pl Spike's Weapons
 slaying /darcap/darcap/shop_w
+hp 10
+sp 17
 x 19
 y 37
 end
@@ -5484,11 +5486,11 @@ y 40
 end
 arch guild_northwest
 name Guild of the Poisoned Dagger
-name_pl Guild of the Poisoned Dagger
 slaying /darcap/darcap/guilds/poisoned_dagger/ground
+hp 20
+sp 38
 x 19
 y 40
-no_pass 0
 end
 arch grass
 x 19
@@ -5510,6 +5512,8 @@ arch store_magic_northwest
 name Mirkland's Magic
 name_pl Mirkland's Magic
 slaying /darcap/darcap/shop_m
+hp 10
+sp 27
 x 19
 y 43
 end
@@ -6399,6 +6403,8 @@ arch courthouse
 name Courthouse
 name_pl Courthouse
 slaying /darcap/darcap/quest
+hp 18
+sp 7
 x 22
 y 40
 end
@@ -6617,7 +6623,8 @@ arch grass
 x 23
 y 25
 end
-arch store_general_northwest
+arch t_house1
+name General Shop
 slaying /darcap/darcap/gshop
 hp 15
 sp 6
@@ -7308,7 +7315,7 @@ arch cobblestones2
 x 25
 y 43
 end
-arch store_general_northwest
+arch keep_sym_noflag_greco
 name Bob's Fish & Chips
 name_pl Bob's Fish & Chips
 slaying /darcap/darcap/shop_g
@@ -8192,15 +8199,6 @@ arch grass
 x 28
 y 27
 end
-arch guild_northwest
-name Smoking Cauldron's storage room
-name_pl Smoking Cauldron's storage room
-slaying /darcap/darcap/guilds/smoking_cauldron/storage_room
-hp 1
-sp 10
-x 28
-y 27
-end
 arch grass_only
 x 28
 y 28
@@ -8217,6 +8215,8 @@ arch castle_a_northwest
 name forgotten city
 name_pl forgotten city
 slaying /darcap/forgotten_town/enter
+hp 3
+sp 1
 x 28
 y 30
 end
@@ -9135,6 +9135,8 @@ arch guild_northwest
 name Guild of the Smoking Cauldron
 name_pl Guild of the Smoking Cauldron
 slaying /darcap/darcap/guilds/smoking_cauldron/ground
+hp 20
+sp 38
 x 31
 y 25
 end

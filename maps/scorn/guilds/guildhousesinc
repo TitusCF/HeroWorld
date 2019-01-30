@@ -7,7 +7,7 @@ enter_y 9
 msg
 Creator: CF Java Map Editor
 Date:    4/6/2002
-Modified: 2018-12-26 Acer
+Modified: 2019-01-30 Acer
 endmsg
 end
 arch woodfloor
@@ -98,8 +98,8 @@ y 1
 no_steal 1
 end
 arch key2
-name Black Shield Key
-slaying black_shield
+name Black Shield Master Key
+slaying black_shield_master
 x 1
 y 1
 no_steal 1
@@ -327,8 +327,8 @@ x 3
 y 1
 end
 arch key2
-name Damned Heretics Key
-slaying damned_heretics
+name Damned Heretics Master Key
+slaying damned_heretics_master
 x 3
 y 1
 end
@@ -544,8 +544,8 @@ x 5
 y 1
 end
 arch key2
-name Dreaming Sage Key
-slaying dreaming_sage
+name Dreaming Sage Master Key
+slaying dreaming_sage_master
 x 5
 y 1
 end
@@ -756,8 +756,8 @@ x 7
 y 1
 end
 arch key2
-name Drunken Barbarian Key
-slaying drunken_barbarian
+name Drunken Barbarian Master Key
+slaying drunken_barbarian_master
 x 7
 y 1
 end
@@ -936,6 +936,7 @@ Three characters are required to purchase a guild house.
 To purchase your guild house, you will need 20,000 diamonds for the altars.
 After the fee has been paid, two characters must stand on the pedestals in the small southern rooms, while the third picks up the keys. From the rooms above the altars.
 If there are no keys available, we're very sorry, but it means we've run out of available guild houses. Perhaps you should look into joining an existing guild instead.
+(NOTE: GUILD MASTER KEY OPENS GUILD MASTER ROOM, THE BASIC GUILD KEY OPENS THE GUILD GATE)
 endmsg
 x 8
 y 8
@@ -976,8 +977,8 @@ x 9
 y 1
 end
 arch key2
-name Laughing Skull Key
-slaying laughing_skull
+name Laughing Skull Master Key
+slaying laughing_skull_master
 x 9
 y 1
 end
@@ -1203,8 +1204,8 @@ x 11
 y 1
 end
 arch key2
-name Mailed Fist Key
-slaying mailed_fist
+name Mailed Fist Master Key
+slaying mailed_fist_master
 x 11
 y 1
 end
@@ -1415,8 +1416,8 @@ x 13
 y 1
 end
 arch key2
-name Poisoned Dagger Key
-slaying poisoned_dagger
+name Poisoned Dagger Master Key
+slaying poisoned_dagger_master
 x 13
 y 1
 end
@@ -1627,8 +1628,8 @@ x 15
 y 1
 end
 arch key2
-name Purple Butterfly Key
-slaying purple_butterfly
+name Purple Butterfly Master Key
+slaying purple_butterfly_master
 x 15
 y 1
 end
@@ -1854,8 +1855,8 @@ x 17
 y 1
 end
 arch key2
-name Smoking Cauldron Key
-slaying smoking_cauldron
+name Smoking Cauldron Master Key
+slaying smoking_cauldron_master
 x 17
 y 1
 end
@@ -1899,7 +1900,7 @@ end
 arch sign
 name Guild of the Smoking Cauldron
 msg
-The Guild of the Smoking Cauldron is located in southern Caterham
+The Guild of the Smoking Cauldron is located in northern Darcap
 endmsg
 x 17
 y 4
@@ -2081,6 +2082,8 @@ end
 arch lightningwall_5
 x 20
 speed -0.2
+arch spell_sm_lightning
+end
 end
 arch woodfloor2
 x 20
@@ -2147,6 +2150,8 @@ end
 arch lightningwall_5
 x 21
 speed -0.2
+arch spell_sm_lightning
+end
 end
 arch woodfloor2
 x 21
@@ -2213,6 +2218,8 @@ end
 arch lightningwall_5
 x 22
 speed -0.2
+arch spell_sm_lightning
+end
 end
 arch woodfloor2
 x 22
@@ -2279,6 +2286,8 @@ end
 arch lightningwall_5
 x 23
 speed -0.2
+arch spell_sm_lightning
+end
 end
 arch woodfloor2
 x 23
@@ -2345,6 +2354,8 @@ end
 arch lightningwall_5
 x 24
 speed -0.2
+arch spell_sm_lightning
+end
 end
 arch woodfloor2
 x 24
@@ -2411,6 +2422,8 @@ end
 arch lightningwall_5
 x 25
 speed -0.2
+arch spell_sm_lightning
+end
 end
 arch woodfloor2
 x 25
@@ -2477,6 +2490,8 @@ end
 arch lightningwall_5
 x 26
 speed -0.2
+arch spell_sm_lightning
+end
 end
 arch woodfloor2
 x 26
@@ -2543,6 +2558,8 @@ end
 arch lightningwall_5
 x 27
 speed -0.2
+arch spell_sm_lightning
+end
 end
 arch woodfloor2
 x 27
@@ -2609,6 +2626,8 @@ end
 arch lightningwall_5
 x 28
 speed -0.2
+arch spell_sm_lightning
+end
 end
 arch woodfloor2
 x 28

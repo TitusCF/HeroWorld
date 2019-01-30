@@ -1,129 +1,112 @@
 arch map
-name Smoking Cauldron Guild Bigchest
-region darcap
+name bigchest
+region wassar
 width 4
 height 4
-msg
-Created:  2001-12-23
-Modified: 2008-10-20 Rick Tanner
-endmsg
+enter_x 1
+enter_y 1
 end
-arch woodfloor
-unique 1
+arch dungeon_floor
 end
-arch woodwall_2_2_2
+arch stwall_2_2_2
 end
-arch woodfloor
-y 1
-unique 1
-end
-arch woodwall_2_1_1
+arch dungeon_floor
 y 1
 end
-arch woodfloor
-y 2
-unique 1
+arch stwall_2_1_1
+y 1
 end
-arch woodwall_2_1_1
+arch dungeon_floor
 y 2
 end
-arch woodfloor
+arch stwall_2_1_1
+y 2
+end
+arch dungeon_floor
 y 3
-unique 1
 end
-arch woodwall_2_2_1
+arch stwall_2_2_1
 y 3
 end
-arch woodfloor
-x 1
-unique 1
-end
-arch woodwall_2_1_2
+arch dungeon_floor
 x 1
 end
-arch woodfloor
+arch stwall_2_1_2
+x 1
+end
+arch flagstone
 x 1
 y 1
-unique 1
 end
 arch exit
-slaying /darcap/darcap/guilds/smoking_cauldron/ground
-hp 6
-sp 9
+slaying ground
+hp 14
+sp 14
 x 1
 y 1
+move_on -all
 end
-arch woodfloor
+arch flagstone
 x 1
 y 2
-unique 1
 end
-arch woodfloor
-x 1
-y 3
-unique 1
-end
-arch woodwall_2_1_2
+arch dungeon_floor
 x 1
 y 3
 end
-arch woodfloor
-x 2
-unique 1
+arch stwall_2_1_2
+x 1
+y 3
 end
-arch woodwall_2_1_2
+arch dungeon_floor
 x 2
 end
-arch woodfloor
+arch stwall_2_1_2
+x 2
+end
+arch flagstone
 x 2
 y 1
-unique 1
 end
-arch woodfloor
+arch flagstone
 x 2
 y 2
-unique 1
 end
-arch woodfloor
-x 2
-y 3
-unique 1
-end
-arch woodwall_2_1_2
+arch dungeon_floor
 x 2
 y 3
 end
-arch woodfloor
-x 3
-unique 1
+arch stwall_2_1_2
+x 2
+y 3
 end
-arch woodwall_2_2_3
+arch dungeon_floor
 x 3
 end
-arch woodfloor
+arch stwall_2_2_3
 x 3
-y 1
-unique 1
 end
-arch woodwall_2_1_1
+arch dungeon_floor
 x 3
 y 1
 end
-arch woodfloor
+arch stwall_2_1_1
+x 3
+y 1
+end
+arch dungeon_floor
 x 3
 y 2
-unique 1
 end
-arch woodwall_2_1_1
+arch stwall_2_1_1
 x 3
 y 2
 end
-arch woodfloor
+arch dungeon_floor
 x 3
 y 3
-unique 1
 end
-arch woodwall_2_2_4
+arch stwall_2_2_4
 x 3
 y 3
 end

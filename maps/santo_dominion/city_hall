@@ -1,15 +1,16 @@
 arch map
-region santodominion
 name <untitled>
-msg
-Creator:
-Email: john_cater@yahoo.com
-Date: Mon Nov  1 09:30:38 1993
-endmsg
+region santodominion
 width 21
 height 19
 enter_x 10
 enter_y 16
+msg
+Creator:
+Email: john_cater@yahoo.com
+Date: Mon Nov  1 09:30:38 1993
+Modified: 2019-01-30 Acer
+endmsg
 end
 arch cobblestones2
 end
@@ -267,25 +268,11 @@ x 2
 y 1
 end
 arch longtable_1_4
-no_pass 1
 x 2
 y 1
+no_pass 1
 end
 arch cobblestones2
-x 2
-y 2
-end
-arch blue_dragon2
-name Edwardo
-arch event_say
-title Python
-slaying /python/IPO/banksay.py
-end
-msg
-@match *
-Sorry I am on break, please come back later.
-endmsg
-stand_still 1
 x 2
 y 2
 end
@@ -302,9 +289,9 @@ x 2
 y 5
 end
 arch longtable_1_4
-no_pass 1
 x 2
 y 5
+no_pass 1
 end
 arch cobblestones2
 x 2
@@ -323,9 +310,9 @@ x 2
 y 7
 end
 arch longtable_1_4
-no_pass 1
 x 2
 y 7
+no_pass 1
 end
 arch cobblestones2
 x 2
@@ -344,9 +331,9 @@ x 2
 y 11
 end
 arch longtable_1_4
-no_pass 1
 x 2
 y 11
+no_pass 1
 end
 arch cobblestones2
 x 2
@@ -398,9 +385,9 @@ x 3
 y 1
 end
 arch longtable_2_2_3
-no_pass 1
 x 3
 y 1
+no_pass 1
 end
 arch dungeon_magic
 x 3
@@ -411,9 +398,9 @@ x 3
 y 2
 end
 arch longtable_2_1_1
-no_pass 1
 x 3
 y 2
+no_pass 1
 end
 arch dungeon_magic
 x 3
@@ -424,9 +411,9 @@ x 3
 y 3
 end
 arch longtable_2_1_1
-no_pass 1
 x 3
 y 3
+no_pass 1
 end
 arch dungeon_magic
 x 3
@@ -437,9 +424,9 @@ x 3
 y 4
 end
 arch longtable_2_1_1
-no_pass 1
 x 3
 y 4
+no_pass 1
 end
 arch dungeon_magic
 x 3
@@ -450,9 +437,9 @@ x 3
 y 5
 end
 arch longtable_2_2_4
-no_pass 1
 x 3
 y 5
+no_pass 1
 end
 arch dungeon_magic
 x 3
@@ -475,45 +462,45 @@ x 3
 y 7
 end
 arch longtable_2_2_3
-no_pass 1
 x 3
 y 7
+no_pass 1
 end
 arch cobblestones2
 x 3
 y 8
 end
 arch longtable_2_1_1
-no_pass 1
 x 3
 y 8
+no_pass 1
 end
 arch cobblestones2
 x 3
 y 9
 end
 arch longtable_2_1_1
-no_pass 1
 x 3
 y 9
+no_pass 1
 end
 arch cobblestones2
 x 3
 y 10
 end
 arch longtable_2_1_1
-no_pass 1
 x 3
 y 10
+no_pass 1
 end
 arch cobblestones2
 x 3
 y 11
 end
 arch longtable_2_2_4
-no_pass 1
 x 3
 y 11
+no_pass 1
 end
 arch cobblestones2
 x 3
@@ -806,17 +793,17 @@ y 13
 end
 arch sign
 name Santo Dominion Message Board
-arch event_say
-title Python
-slaying /python/IPO/board.py
-name Santo Dominion Board
-end
 msg
 I am a talking board, please say something to me.
 If you don't know what to say, say help.
 endmsg
 x 6
 y 13
+arch event_say
+name Santo Dominion Board
+title Python
+slaying /python/IPO/board.py
+end
 end
 arch cobblestones2
 x 6
@@ -869,9 +856,9 @@ x 7
 y 3
 end
 arch door_1
-no_pass 0
 x 7
 y 3
+no_pass 0
 end
 arch cobblestones2
 x 7
@@ -1180,9 +1167,9 @@ x 9
 y 18
 end
 arch door_2
-no_pass 0
 x 9
 y 18
+no_pass 0
 end
 arch cobblestones2
 x 10
@@ -1274,9 +1261,9 @@ x 10
 y 18
 end
 arch door_2
-no_pass 0
 x 10
 y 18
+no_pass 0
 end
 arch cobblestones2
 x 11
@@ -1364,9 +1351,9 @@ x 11
 y 18
 end
 arch door_2
-no_pass 0
 x 11
 y 18
+no_pass 0
 end
 arch cobblestones2
 x 12
@@ -1504,9 +1491,9 @@ x 13
 y 3
 end
 arch door_1
-no_pass 0
 x 13
 y 3
+no_pass 0
 end
 arch cobblestones2
 x 13
@@ -1678,6 +1665,11 @@ x 14
 y 5
 end
 arch mailbox
+x 14
+y 5
+material 0
+weight 0
+no_pick 1
 arch event_close
 title Python
 slaying /python/IPO/send.py
@@ -1686,11 +1678,6 @@ arch event_apply
 title Python
 slaying /python/IPO/receive.py
 end
-material 0
-weight 0
-no_pick 1
-x 14
-y 5
 end
 arch cobblestones2
 x 14
@@ -1734,17 +1721,17 @@ y 13
 end
 arch sign
 name Petitions for the DMs
-arch event_say
-title Python
-slaying /python/IPO/board.py
-name Petitions board
-end
 msg
 I am a talking board, designed for leaving messages for the DMs.
 If you don't know what to say, say help.
 endmsg
 x 14
 y 13
+arch event_say
+name Petitions board
+title Python
+slaying /python/IPO/board.py
+end
 end
 arch cobblestones2
 x 14
@@ -1968,9 +1955,9 @@ x 17
 y 1
 end
 arch longtable_2_2_2
-no_pass 1
 x 17
 y 1
+no_pass 1
 end
 arch dungeon_magic
 x 17
@@ -1981,9 +1968,9 @@ x 17
 y 2
 end
 arch longtable_2_1_1
-no_pass 1
 x 17
 y 2
+no_pass 1
 end
 arch dungeon_magic
 x 17
@@ -1994,9 +1981,9 @@ x 17
 y 3
 end
 arch longtable_2_1_1
-no_pass 1
 x 17
 y 3
+no_pass 1
 end
 arch dungeon_magic
 x 17
@@ -2007,9 +1994,9 @@ x 17
 y 4
 end
 arch longtable_2_1_1
-no_pass 1
 x 17
 y 4
+no_pass 1
 end
 arch dungeon_magic
 x 17
@@ -2020,9 +2007,9 @@ x 17
 y 5
 end
 arch longtable_2_2_1
-no_pass 1
 x 17
 y 5
+no_pass 1
 end
 arch dungeon_magic
 x 17
@@ -2045,45 +2032,45 @@ x 17
 y 7
 end
 arch longtable_2_2_2
-no_pass 1
 x 17
 y 7
+no_pass 1
 end
 arch cobblestones2
 x 17
 y 8
 end
 arch longtable_2_1_1
-no_pass 1
 x 17
 y 8
+no_pass 1
 end
 arch cobblestones2
 x 17
 y 9
 end
 arch longtable_2_1_1
-no_pass 1
 x 17
 y 9
+no_pass 1
 end
 arch cobblestones2
 x 17
 y 10
 end
 arch longtable_2_1_1
-no_pass 1
 x 17
 y 10
+no_pass 1
 end
 arch cobblestones2
 x 17
 y 11
 end
 arch longtable_2_2_1
-no_pass 1
 x 17
 y 11
+no_pass 1
 end
 arch cobblestones2
 x 17
@@ -2139,9 +2126,9 @@ x 18
 y 1
 end
 arch longtable_1_3
-no_pass 1
 x 18
 y 1
+no_pass 1
 end
 arch cobblestones2
 x 18
@@ -2153,13 +2140,13 @@ y 3
 end
 arch fatwoman
 name Betina
+x 18
+y 3
+stand_still 1
 arch event_say
 title Python
 slaying /python/IPO/say.py
 end
-stand_still 1
-x 18
-y 3
 end
 arch cobblestones2
 x 18
@@ -2170,9 +2157,9 @@ x 18
 y 5
 end
 arch longtable_1_3
-no_pass 1
 x 18
 y 5
+no_pass 1
 end
 arch cobblestones2
 x 18
@@ -2191,9 +2178,9 @@ x 18
 y 7
 end
 arch longtable_1_3
-no_pass 1
 x 18
 y 7
+no_pass 1
 end
 arch cobblestones2
 x 18
@@ -2212,9 +2199,9 @@ x 18
 y 11
 end
 arch longtable_1_3
-no_pass 1
 x 18
 y 11
+no_pass 1
 end
 arch cobblestones2
 x 18

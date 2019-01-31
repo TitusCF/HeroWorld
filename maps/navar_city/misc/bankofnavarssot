@@ -7,6 +7,7 @@ msg
 Creator: MikeeUSA
 Email: gnu@foo.bar
 Date: Tue Jul 18 17:02:19 2006
+Modified: 2019-01-30 Acer
 endmsg
 end
 arch dungeon_magic
@@ -200,12 +201,6 @@ x 1
 y 5
 end
 arch dungeon_floor
-x 1
-y 6
-end
-arch a_townsman
-name cashier
-name_pl cashier
 x 1
 y 6
 end
@@ -1171,12 +1166,12 @@ y 14
 end
 arch exit
 slaying /world/world_125_115
-is_animated 0
 hp 14
 sp 4
 x 7
 y 15
 speed_left -0.400000
+is_animated 0
 end
 arch dungeon_magic
 x 7
@@ -1262,21 +1257,6 @@ arch dungeon_floor
 x 8
 y 6
 end
-arch a_townsman
-name Abdul
-name_pl Sal
-title acount manager
-msg
-@match *
-Sorry the abacus is down at the moment...
-endmsg
-x 8
-y 6
-arch event_say
-title Python
-slaying /python/IPO/nbanksay.py
-end
-end
 arch dungeon_magic
 x 8
 y 7
@@ -1323,12 +1303,12 @@ y 14
 end
 arch exit
 slaying /world/world_125_115
-is_animated 0
 hp 14
 sp 4
 x 8
 y 15
 speed_left -0.400000
+is_animated 0
 end
 arch dungeon_magic
 x 8
@@ -1462,8 +1442,8 @@ Warning:
 We chop or saw off all of the hands and
 feet of anyone suspected of stealing
 from this bank. Do Not Steal!
-Note: Navarian Stock Certificates can 
-be bought in the Celvear Port branch 
+Note: Navarian Stock Certificates can
+be bought in the Celvear Port branch
 of the Bank of Navar.
 endmsg
 x 9

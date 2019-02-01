@@ -4,7 +4,7 @@ region stoneville
 width 50
 height 50
 msg
-Modified: 2019-01-30 Acer
+Modified: 2019-01-31 Acer
 endmsg
 outdoor 1
 tile_path_1 world_103_126
@@ -2315,6 +2315,7 @@ end
 arch grate_closed_2
 x 9
 y 2
+connected 103127991
 end
 arch dungeon_floor
 x 9
@@ -2585,23 +2586,29 @@ arch swall_2_1_2
 x 10
 y 1
 end
-arch dungeon_floor
+arch redmarble
 x 10
 y 2
 elevation -163
 end
-arch dragon_exit
-name Dragon Mount
+arch creator
 x 10
 y 2
+connected 103127991
+lifesave 1
+arch dragon_exit
+name Dragon Mount
 speed 0.7
+direction 6
 type 2
 container 10000000
 move_type walk swim boat
 move_allow walk
+unique 1
 passenger_limit 4
 end
-arch dungeon_floor
+end
+arch redmarble
 x 10
 y 3
 elevation -1
@@ -2614,23 +2621,31 @@ arch swall_2_1_2
 x 10
 y 4
 end
-arch dungeon_floor
+arch bluemarblemedium
 x 10
 y 5
 elevation 577
 end
-arch dragon_exit
-name Dragon Mount
+arch creator
 x 10
 y 5
+connected 103127992
+lifesave 1
+arch dragon_exit
+name Dragon Mount
+face worthless_dragon.x71
+animation worthless_dragon
 speed 0.7
+direction 6
 type 2
 container 10000000
 move_type walk swim boat
 move_allow walk
+unique 1
 passenger_limit 4
 end
-arch dungeon_floor
+end
+arch bluemarblemedium
 x 10
 y 6
 elevation 1002
@@ -2865,12 +2880,12 @@ arch swall_2_1_2
 x 11
 y 1
 end
-arch dungeon_floor
+arch redmarble
 x 11
 y 2
 elevation -305
 end
-arch dungeon_floor
+arch redmarble
 x 11
 y 3
 elevation -143
@@ -2884,12 +2899,12 @@ arch swall_2_1_2
 x 11
 y 4
 end
-arch dungeon_floor
+arch bluemarblemedium
 x 11
 y 5
 elevation 45
 end
-arch dungeon_floor
+arch bluemarblemedium
 x 11
 y 6
 end
@@ -3107,12 +3122,12 @@ arch swall_2_1_2
 x 12
 y 1
 end
-arch dungeon_floor
+arch redmarble
 x 12
 y 2
 elevation -428
 end
-arch dungeon_floor
+arch redmarble
 x 12
 y 3
 elevation -267
@@ -3126,12 +3141,12 @@ arch swall_2_1_2
 x 12
 y 4
 end
-arch dungeon_floor
+arch bluemarblemedium
 x 12
 y 5
 elevation -10
 end
-arch dungeon_floor
+arch bluemarblemedium
 x 12
 y 6
 elevation 14

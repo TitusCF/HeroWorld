@@ -1,7 +1,12 @@
 arch map
+name <unnamed>
 reset_timeout 7200
 difficulty 1
 region gotisch
+shopitems *:90
+shopgreed 1.00000
+shopmax 20000
+shoprace dragon
 width 32
 height 32
 enter_x 1
@@ -10,12 +15,8 @@ msg
 Creator: Mikeeusa
 Email: gnu@foo.bar
 Date: Tue Aug  3 23:32:57 2004
+Modified: 2019-01-31 Acer
 endmsg
-shopitems *:90
-shopmax 20000
-shoprace dragon
-shopgreed 1.0
-outdoor 1
 outdoor 1
 end
 arch brush
@@ -2466,17 +2467,6 @@ x 8
 y 27
 end
 arch dungeon_magic
-x 8
-y 27
-end
-arch light1
-x 8
-y 27
-end
-arch invis_exit
-slaying /world/world_115_107
-hp 1
-sp 18
 x 8
 y 27
 end

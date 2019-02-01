@@ -11,7 +11,7 @@ msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Dec 16 20:53:13 2001
-Modified: 2019-01-30 Acer
+Modified: 2019-01-31 Acer
 endmsg
 outdoor 1
 tile_path_1 world_105_114
@@ -9723,45 +9723,69 @@ arch cobblestones
 x 36
 y 30
 end
-arch tree
+arch earth
 x 36
 y 31
 elevation 2186
 end
-arch jungle_1
+arch swall_2_2_2
+x 36
+y 31
+end
+arch earth
 x 36
 y 32
 elevation 1641
 end
-arch desert
+arch swall_2_1_1
+x 36
+y 32
+end
+arch earth
 x 36
 y 33
 elevation 1694
 end
-arch desert
+arch swall_1_2
+x 36
+y 33
+end
+arch cobblestones
 x 36
 y 34
 elevation 2281
 end
-arch desert
+arch cobblestones
 x 36
 y 35
 elevation 2398
 end
-arch hills_rocky
+arch earth
 x 36
 y 36
 elevation 4509
 end
-arch jungle_2
+arch swall_1_1
+x 36
+y 36
+end
+arch earth
 x 36
 y 37
 elevation 2639
 end
-arch jungle_1
+arch swall_2_1_1
+x 36
+y 37
+end
+arch earth
 x 36
 y 38
 elevation 1255
+end
+arch swall_2_2_1
+x 36
+y 38
 end
 arch cobblestones
 x 36
@@ -9961,45 +9985,63 @@ arch cobblestones
 x 37
 y 30
 end
-arch tree
+arch earth
 x 37
 y 31
 elevation 1742
 end
-arch jungle_1
+arch swall_2_1_2
+x 37
+y 31
+end
+arch earth
 x 37
 y 32
 elevation 2482
 end
-arch desert
+arch earth
 x 37
 y 33
 elevation 1471
 end
-arch desert
+arch cobblestones
 x 37
 y 34
 elevation 1557
 end
-arch tree
+arch cobblestones
 x 37
 y 35
 elevation 2672
 end
-arch hills_rocky
+arch earth
 x 37
 y 36
 elevation 3308
 end
-arch hills_rocky
+arch earth
 x 37
 y 37
 elevation 3704
 end
-arch jungle_1
+arch altar
+name Purchase Saddle Horse (10k plat.)
+slaying money
+exp 30
+food 500000
+x 37
+y 37
+type 31
+connected 406239
+end
+arch earth
 x 37
 y 38
 elevation 1696
+end
+arch swall_2_1_2
+x 37
+y 38
 end
 arch cobblestones
 x 37
@@ -10199,45 +10241,53 @@ arch cobblestones
 x 38
 y 30
 end
-arch jungle_1
+arch earth
 x 38
 y 31
 elevation 855
 end
-arch desert
+arch swall_2_1_2
+x 38
+y 31
+end
+arch earth
 x 38
 y 32
 elevation 955
 end
-arch desert
+arch earth
 x 38
 y 33
 elevation 1898
 end
-arch desert
+arch earth
 x 38
 y 34
 elevation 970
 end
-arch tree
+arch earth
 x 38
 y 35
 elevation 161
 end
-arch hills_rocky
+arch earth
 x 38
 y 36
 elevation 4801
 end
-arch hills_rocky
+arch earth
 x 38
 y 37
 elevation 4837
 end
-arch hills_rocky
+arch earth
 x 38
 y 38
 elevation 4887
+end
+arch swall_2_1_2
+x 38
+y 38
 end
 arch cobblestones
 x 38
@@ -10440,45 +10490,70 @@ x 39
 y 30
 elevation 2158
 end
-arch hills_rocky
+arch earth
 x 39
 y 31
 elevation 4071
 end
-arch hills_rocky
+arch swall_2_1_2
+x 39
+y 31
+end
+arch earth
 x 39
 y 32
 elevation 3916
 end
-arch jungle_1
+arch earth
 x 39
 y 33
 elevation 1389
 end
-arch jungle_1
+arch earth
 x 39
 y 34
 elevation 2040
 end
-arch brush
+arch earth
 x 39
 y 35
 elevation 1275
 end
-arch hills_rocky
+arch earth
 x 39
 y 36
 elevation 4357
 end
-arch hills_rocky
+arch earth
 x 39
 y 37
 elevation 3013
 end
-arch hills_rocky
+arch creator
+x 39
+y 37
+connected 406239
+lifesave 1
+arch rowboat
+name Saddle Horse
+face horse.171
+animation horse
+speed 0.8
+type 2
+container 10000000
+move_type walk
+unique 1
+passenger_limit 2
+end
+end
+arch earth
 x 39
 y 38
 elevation 3380
+end
+arch swall_2_1_2
+x 39
+y 38
 end
 arch cobblestones
 x 39
@@ -10682,45 +10757,63 @@ x 40
 y 30
 elevation 4002
 end
-arch hills_rocky
+arch earth
 x 40
 y 31
 elevation 4162
 end
-arch hills_rocky
+arch swall_2_1_2
+x 40
+y 31
+end
+arch earth
 x 40
 y 32
 elevation 3440
 end
-arch hills
+arch farmhouse
+name horseman's farmhouse
+x 40
+y 32
+end
+arch earth
 x 40
 y 33
 elevation 3645
 end
-arch hills_rocky
+arch farmer
+name horseman
+x 40
+y 33
+end
+arch earth
 x 40
 y 34
 elevation 4545
 end
-arch jungle_1
+arch earth
 x 40
 y 35
 elevation 457
 end
-arch tree
+arch earth
 x 40
 y 36
 elevation 1023
 end
-arch hills_rocky
+arch earth
 x 40
 y 37
 elevation 4654
 end
-arch hills_rocky
+arch earth
 x 40
 y 38
 elevation 4161
+end
+arch swall_2_1_2
+x 40
+y 38
 end
 arch hills_rocky
 x 40
@@ -10926,45 +11019,65 @@ x 41
 y 30
 elevation 3080
 end
-arch steppe
+arch earth
 x 41
 y 31
 elevation 4070
 end
-arch mountain
+arch swall_2_1_2
+x 41
+y 31
+end
+arch earth
 x 41
 y 32
 elevation 6882
 end
-arch mountain
+arch earth
 x 41
 y 33
 elevation 7592
 end
-arch hills_rocky
+arch earth
 x 41
 y 34
 elevation 4112
 end
-arch jungle_1
+arch earth
 x 41
 y 35
 elevation 2518
 end
-arch hills_rocky
+arch swall_2_2_2
+x 41
+y 35
+end
+arch earth
 x 41
 y 36
 elevation 4496
 end
-arch hills_rocky
+arch swall_2_1_1
+x 41
+y 36
+end
+arch earth
 x 41
 y 37
 elevation 3749
 end
-arch hills_rocky
+arch swall_2_1_1
+x 41
+y 37
+end
+arch earth
 x 41
 y 38
 elevation 4507
+end
+arch swall_3_1
+x 41
+y 38
 end
 arch jungle_1
 x 41
@@ -11170,45 +11283,65 @@ x 42
 y 30
 elevation 4647
 end
-arch jungle_1
+arch earth
 x 42
 y 31
 elevation 1835
 end
-arch hills_rocky
+arch swall_2_1_2
+x 42
+y 31
+end
+arch earth
 x 42
 y 32
 elevation 4378
 end
-arch mountain
+arch barn
+x 42
+y 32
+end
+arch earth
 x 42
 y 33
 elevation 7182
 end
-arch hills_rocky
+arch earth
 x 42
 y 34
 elevation 3418
 end
-arch hills_rocky
+arch earth
 x 42
 y 35
 elevation 4823
 end
-arch hills_rocky
+arch swall_2_1_2
+x 42
+y 35
+end
+arch earth
 x 42
 y 36
 elevation 3454
 end
-arch hills_rocky
+arch earth
 x 42
 y 37
 elevation 3767
 end
-arch hills_rocky
+arch horse
+x 42
+y 37
+end
+arch earth
 x 42
 y 38
 elevation 4602
+end
+arch swall_2_1_2
+x 42
+y 38
 end
 arch tree
 x 42
@@ -11412,45 +11545,57 @@ x 43
 y 30
 elevation 8763
 end
-arch mountain
+arch earth
 x 43
 y 31
 elevation 5404
 end
-arch mountain
+arch swall_2_1_2
+x 43
+y 31
+end
+arch earth
 x 43
 y 32
 elevation 7471
 end
-arch mountain
+arch earth
 x 43
 y 33
 elevation 7079
 end
-arch mountain
+arch earth
 x 43
 y 34
 elevation 6959
 end
-arch tree
+arch earth
 x 43
 y 35
 elevation 2076
 end
-arch hills_rocky
+arch swall_2_1_2
+x 43
+y 35
+end
+arch earth
 x 43
 y 36
 elevation 4847
 end
-arch hills_rocky
+arch earth
 x 43
 y 37
 elevation 4753
 end
-arch hills_rocky
+arch earth
 x 43
 y 38
 elevation 3632
+end
+arch swall_2_1_2
+x 43
+y 38
 end
 arch jungle_1
 x 43
@@ -11649,45 +11794,77 @@ x 44
 y 30
 elevation 8360
 end
-arch mountain
+arch earth
 x 44
 y 31
 elevation 5101
 end
-arch mountain
+arch swall_2_2_3
+x 44
+y 31
+end
+arch earth
 x 44
 y 32
 elevation 6809
 end
-arch mountain
+arch swall_2_1_1
+x 44
+y 32
+end
+arch earth
 x 44
 y 33
 elevation 8493
 end
-arch mountain
+arch swall_2_1_1
+x 44
+y 33
+end
+arch earth
 x 44
 y 34
 elevation 6198
 end
-arch hills_rocky
+arch swall_2_1_1
+x 44
+y 34
+end
+arch earth
 x 44
 y 35
 elevation 3851
 end
-arch hills_rocky
+arch swall_3_4
+x 44
+y 35
+end
+arch earth
 x 44
 y 36
 elevation 4640
 end
-arch hills_rocky
+arch swall_2_1_1
+x 44
+y 36
+end
+arch earth
 x 44
 y 37
 elevation 4786
 end
-arch tree
+arch swall_2_1_1
+x 44
+y 37
+end
+arch earth
 x 44
 y 38
 elevation 2887
+end
+arch swall_2_2_4
+x 44
+y 38
 end
 arch tree
 x 44

@@ -8,7 +8,7 @@ enter_x 5
 enter_y 6
 msg
 Created:  2008-08-11 Chad Opperman | cromagic@sbcglobal.net
-Modified: 2012-01-01 Rick Tanner
+Modified: 2019-01-31 Acer
 endmsg
 end
 arch cobblestones2
@@ -286,6 +286,9 @@ arch cwall_1_3
 x 3
 y 7
 end
+arch flagstone
+x 4
+end
 arch invis_exit
 slaying castlesaromok_inside
 hp 14
@@ -293,16 +296,17 @@ sp 23
 x 4
 move_on all
 end
-arch afloor_left
-x 4
-end
-arch afloor_left
+arch flagstone
 x 4
 y 1
 end
-arch afloor_left
+arch flagstone
 x 4
 y 2
+end
+arch flagstone
+x 4
+y 3
 end
 arch magic_mouth
 msg
@@ -313,10 +317,6 @@ x 4
 y 3
 move_on all
 end
-arch afloor_left
-x 4
-y 3
-end
 arch gate_closed_1
 x 4
 y 3
@@ -324,7 +324,7 @@ connected 1
 no_magic 1
 damned 1
 end
-arch afloor_left
+arch flagstone
 x 4
 y 4
 end
@@ -334,6 +334,10 @@ y 4
 connected 1
 no_magic 1
 damned 1
+end
+arch flagstone
+x 4
+y 5
 end
 arch check_inv
 slaying saromokgatekey
@@ -342,13 +346,13 @@ y 5
 last_heal 1
 connected 1
 end
-arch afloor_left
-x 4
-y 5
-end
-arch afloor_left
+arch flagstone
 x 4
 y 6
+end
+arch flagstone
+x 4
+y 7
 end
 arch invis_exit
 slaying ../../world/world_111_100
@@ -358,9 +362,8 @@ x 4
 y 7
 move_on all
 end
-arch afloor_left
-x 4
-y 7
+arch flagstone
+x 5
 end
 arch invis_exit
 slaying castlesaromok_inside
@@ -369,16 +372,17 @@ sp 23
 x 5
 move_on all
 end
-arch afloor_left
-x 5
-end
-arch afloor_left
+arch flagstone
 x 5
 y 1
 end
-arch afloor_left
+arch flagstone
 x 5
 y 2
+end
+arch flagstone
+x 5
+y 3
 end
 arch magic_mouth
 msg
@@ -389,10 +393,6 @@ x 5
 y 3
 move_on all
 end
-arch afloor_left
-x 5
-y 3
-end
 arch gate_closed_1
 x 5
 y 3
@@ -400,7 +400,7 @@ connected 1
 no_magic 1
 damned 1
 end
-arch afloor_left
+arch flagstone
 x 5
 y 4
 end
@@ -410,6 +410,10 @@ y 4
 connected 1
 no_magic 1
 damned 1
+end
+arch flagstone
+x 5
+y 5
 end
 arch check_inv
 slaying saromokgatekey
@@ -418,13 +422,13 @@ y 5
 last_heal 1
 connected 1
 end
-arch afloor_left
-x 5
-y 5
-end
-arch afloor_left
+arch flagstone
 x 5
 y 6
+end
+arch flagstone
+x 5
+y 7
 end
 arch invis_exit
 slaying ../../world/world_111_100
@@ -433,10 +437,6 @@ sp 36
 x 5
 y 7
 move_on all
-end
-arch afloor_left
-x 5
-y 7
 end
 arch cobblestones2
 x 6
@@ -460,7 +460,7 @@ arch cwall_1_4
 x 6
 y 3
 end
-arch cobblestones2
+arch flagstone
 x 6
 y 4
 end

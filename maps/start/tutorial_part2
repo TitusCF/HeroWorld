@@ -7,7 +7,7 @@ enter_y 1
 msg
 - 2008-07-03 10:39:33 CEST by elmex:
 Added old man and info sign about chatting.
-Modified: 2019-02-05 Acer
+Modified: 2019-02-06 Acer
 endmsg
 end
 arch woodfloor
@@ -388,9 +388,9 @@ arch woodfloor2
 x 3
 end
 arch exit
-slaying tutorial_class
+slaying tutorial_1
 hp 4
-sp 14
+sp 24
 x 3
 end
 arch woodfloor2
@@ -2040,14 +2040,14 @@ arch rune_mark
 msg
 See that rune to the north?  You may have to
 wait a few seconds to see it as it will not be visible all the time.
-I<Don't step on it: it might hurt you!>
+Don't step on it: it might hurt you!
 If you have the find traps and disarm traps skills mentioned earlier, you can step NEXT to
 it and attempt to find and disarm it. Since it's at the end of the hallway, you might decide it's
 not worth the risk, since there's nothing beyond it, but it's good to increase your experience
 in those skills whenever possible.
 Remember: to search for traps use the ready_skill find traps command
-to ready your find traps skill, and fire (Shift-direction key) in the direction you want to search.
-To attempt to disarm any traps you find, type <ready_skill disarm traps>
+to ready your find traps skill, and fire in the direction you want to search.
+To attempt to disarm any traps you find, type ready_skill disarm traps
 and fire.
 endmsg
 x 14
@@ -2084,9 +2084,7 @@ name Inventory
 msg
 Stop and take a look at your inventory for a moment.  If you started the game with any
 armor or a hand-to-hand weapon like a sword, you probably should ready them now.
-You can toggle the inventory on and off by opening the playerbook with the <Tab> key (or
-directly going to the inventory with the <F5> key. The popup menu you get when right-clicking on the
-map (not the minimap) will tell you about these keys).
+
 You wield/ready (and unwield/unready) weapons and other items by applying them. To do so,
 click on the item with your middle mouse button (or scroll wheel button).
 Don't make the mistake of many new players, and run into your first monsters naked and empty-handed. :-)
@@ -2575,7 +2573,7 @@ arch sign
 name Runes
 msg
 Now explore the rune on the ground to the south
-and have an eye on the Message window.
+and keep an eye on the Message window.
 endmsg
 x 18
 y 17
@@ -2590,7 +2588,7 @@ y 19
 end
 arch rune_mark
 msg
-T<Marking Runes>
+Marking Runes
 Marking runes like this one are created with
 magic spells, but they contain messages
 just like signs do.  Marking runes are harmless,
@@ -3285,7 +3283,7 @@ end
 arch sign
 name Bashing Doors
 msg
-Some doors in Crossfire - HeroWorld need to be bashed open
+Some doors in Crossfire need to be bashed open
 by pure force.
 Ordinary locked doors can be
 bashed open by attacking them or using
@@ -3297,11 +3295,11 @@ you break through. If you are too weak it might take a long time.
 Either be persistent or create a new character with a higher Strength stat.
 By the way, it's a good idea to always check
 for traps before trying to bash open a door. Do
-this with the command <ready_skill find traps>  and then keep firing into the
-direction where you want to search for traps (by pressing and holding <Shift> + a direction key, here
-<Shift-Right-Arrow>).
+this with the command ready_skill find traps  and then keep firing into the
+direction where you want to search for traps (by pressing and holding Shift + a direction key.
+
 If you find a trap the server will tell you so and the trap will become visible, you can try to disarm it with
-<ready_skill disarm traps> and again fire into the direction of the trap you found.
+ready_skill disarm traps and again fire into the direction of the trap you found.
 You can only find and disable traps if you have those skills. If you don't, you should
 learn them early.
 endmsg

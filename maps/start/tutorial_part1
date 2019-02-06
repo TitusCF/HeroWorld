@@ -5,7 +5,7 @@ height 25
 enter_x 8
 enter_y 1
 msg
-Modified: 2019-02-05 Acer
+Modified: 2019-02-06 Acer
 endmsg
 end
 arch evergreen
@@ -450,7 +450,7 @@ ever think you're stuck, look around for any
 of these kinds of triggers that might open
 a way out for you.
 (Remember that you can pick up items by
-pressing <,>, the comma key)
+pressing the comma key)
 endmsg
 x 3
 y 8
@@ -501,7 +501,7 @@ name Triggering Buttons with Weights
 msg
 Sometimes large buttons in the floor can
 be activated by pushing a large a large weight on them.  Run into this
-boulder (<Ctrl-UpArrow>) to push it onto the button to the north,
+boulder to push it onto the button to the north,
 and see what happens.
 Boulders and other "movable" items like barrels can only be pushed,
 never pulled, so be careful not to push them into corners from where
@@ -690,11 +690,8 @@ end
 arch sign
 name Next step: Class Selection
 msg
-The portal to the south will bring you to the class
-selection, where you have to choose a class for your
-character.
-But did you already figure out what the boulder does
-in the north?
+Did you already figure out what the boulder to the north
+does?
 endmsg
 x 4
 y 22
@@ -708,9 +705,9 @@ x 4
 y 24
 end
 arch exit
-slaying tutorial_class
-hp 4
-sp 1
+slaying tutorial_2
+hp 3
+sp 0
 x 4
 y 24
 end
@@ -1216,7 +1213,7 @@ As you pass through these halls, read all the
 signs and any other information provided, and
 you'll soon learn the basics of the game.
 From here, move south (press your down-arrow key)
-and press the space bar to read the next sign. Good luck!
+and press the 'a' key to read the next sign. Good luck!
 endmsg
 x 8
 y 2
@@ -1232,22 +1229,21 @@ Basic Commands
 There are many commands you can use to
 do everything from movement to attacking
 to casting spells to identifying treasure.  Any
-command in Deliantra can be executed by
-simply typing it in and pressing Space>+Return.
+command in Crossfire can be executed by
+simply typing it in and pressing Return.
 So to move southeast, for example, you could type
-southeast <return>. To read this sign, you could type
-apply sign <return>. These "long-form" commands are
+'southeast' + return. To read this sign, you could type
+'apply sign' + return. These long-form commands are
 always available for everything you can do in
 the game.
 However, it would be cumbersome to type
 commands like that for common actions, so
 many commands are bound to keys by default.
 You can also enter commands by typing their initials. For example,
-instead of typing southeast <return>, you can type  se<return> (note the lack of the space).
-Instead of typing <cast summon pet monster> you can usually type <cspm> and so on.
-You can also create your own keybindings, for example to use spells, items or skills. To do that, you
-can usually use the popup menu you get when pressing the <right mouse button> over an item
-and select the <bind ...> option.
+instead of typing 'southeast' + Return, you can type  'se' + return (note the lack of the space).
+Instead of typing 'cast summon pet monster' you can usually type 'cspm' and so on.
+You can also create your own keybindings, for example to use spells, items or skills
+by typing 'bind + <command>', you will then be prompted to press the key you want bound.
 endmsg
 x 8
 y 3
@@ -1292,13 +1288,12 @@ in that direction. If something is in the way, your
 character might attack it.
 To run in a direction, which is very useful when
 fighting, battering down doors, or traveling long
-distances, hold down the <Ctrl> key and press
+distances, hold down the Ctrl key and press
 and hold the key for direction you wish to run.
 The four primary directions are bound to the arrow/cursor keys,
-and all eight directions including diagonals on the numeric keypad. For laptop users
-without numeric keypads you can also use <Alt>-arrow key to get a diagonal movement.
-Now run to the end of this hallway
-(by pressing and holding <Ctrl-Right-Arrow>), and read
+and all eight directions including diagonals on the numeric keypad. You
+may need to apply NumLock.
+Now run to the end of this hallway and read
 the sign there.
 endmsg
 x 8
@@ -2346,7 +2341,7 @@ end
 arch sign
 name Levers
 msg
-Some gates and doors are opened by levers. Apply (press space bar) the lever to your south to continue.
+Some gates and doors are opened by levers. Apply (press 'a' key) the lever to your south to continue.
 endmsg
 x 15
 y 15
@@ -2726,7 +2721,7 @@ A message scrawled on the floor says:
 When you kill monsters, sometimes they leave
 body parts behind, and these can be taken and
 eaten also.
-You can pick it up by pressing C<,> (the B<comma>-key).
+You can pick it up by pressing C<,> (the comma-key).
 endmsg
 x 18
 y 2
@@ -3044,14 +3039,14 @@ arch magic_mouth
 msg
 A message scrawled on the floor says:
 Waybreads are the MRE (Meals-Ready-to-Eat)
-of Deliantra. They weigh very little but pack
+of Crossfire. They weigh very little but pack
 a large food value. They are much more
 expensive than normal food, but when you
 can afford them, they are the best food to
 take on long trips or dungeon excursions,
 since their light weight won't slow you down.
-You can pick it up by pressing C<,> (the B<comma>-key) and eat
-it later by applying it from your inventory in the B<player book>.
+You can pick it up by pressing the comma-key and eat
+it later by applying it from your inventory in the player book.
 endmsg
 x 20
 y 2
@@ -3500,13 +3495,12 @@ name Talking to NPCs
 msg
 There are two different types of "people" in the game: PCs (player characters, i.e. other players)
 and NPCs (non-player-characters, your typical dumb computer-automated pseudo persons :)
-To talk to other players, for example to get help, you can use the B<chat> command, whose text
-is displayed in the Chat tab in the client. All players currently logged in can see that.
-You can simply type  'c <some message>'  to chat with others without activating the Chat tab.
-There is also the <shout> command (short "sh") for use in emergencies, and <say> (short "s")
-which all players on a map and all NPCs near you can hear.
+To talk to other players, for example to get help, you can use the chat command, whose text
+is displayed in the Messages tab in the client. All players currently logged in can see that.
+You can simply type  'c <some message>'  to chat with others.
+There is also the shout command (short "sh") for use in emergencies.
 You can also get information from non-player characters (NPCs) in the game by talking to them.
-The say command let's you communicate with NPC's, even if you cannot see them
+The say command let's you communicate with NPC's, even if you cannot see them.
 Many NPC have useful information, but they will only tell you about it if you ask the
 right questions. If the NPC talks to you, look for words in his reply
 that might be important (often they are underlined), and ask about them.
@@ -3796,7 +3790,7 @@ name This way if you are stuck!
 msg
 If you can't get the old man to open the
 gates, you might want to ask other players
-via the 'Chat' tab how to talk to NPCs.
+via the 'Messages' tab how to talk to NPCs.
 Or maybe you can find a hint about that
 on the previous sign.
 endmsg

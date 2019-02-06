@@ -5,7 +5,7 @@ height 30
 enter_x 1
 enter_y 6
 msg
-Modified: 2019-02-05 Acer
+Modified: 2019-02-06 Acer
 endmsg
 end
 arch woodfloor
@@ -349,15 +349,15 @@ msg
 Ready your bow, crossbow or rod by (middle) clicking on it in the inventory.
 Arrows or bolts in your inventory will be used automatically.
 If you want to use a spell you learned (you might check your inventory for any spellbooks and read them
-by applying them (middle click for apply)), use the Bast name of spell command, as in cast burning hands or simply
-cbh, which will put the spell into your range slots, just as with a bow or crossbow.
+by applying them (middle click for apply)) use the spell command as in cast burning hands or simply
+cbh which will put the spell into your range slots just as with a bow or crossbow.
 To fire a missile weapon (or in general make a ranged attack), hold down your Shift key (the "fire" key),
 and press the movement key in the direction you want to fire, for example Shift-Right. If you recall how
 you disarmed traps earlier, you will see its the same: first you ready your weapon/spell/skill, then you fire it
 with Shift.
 On the other side of these doors are some monsters.
 Pull the lever to open the doors, and shoot them all!
-Don't worry, there's a force preventing them from reaching you.
+Don't worry, there's a fence preventing them from reaching you.
 Continue down the passageway until you get back to this hallway, then go north.
 endmsg
 x 2
@@ -968,7 +968,7 @@ y 3
 end
 arch rune_mark
 msg
-T<Altars>
+Altars
 Altars have many different uses.  Some altars are consecrated to a particular god.
 Do not pray over these altars unless you wish to worship that god! (More on gods later).
 Altars can also cast spells and perform other actions if you place the correct sacrifice on them.
@@ -3304,9 +3304,11 @@ When you're in the shop, clicking on an item in your inventory will tell you how
 the shop will pay you for it.
 WARNING: Be very careful not to drop anything you aren't sure you want to sell!
 Once dropped, an item is sold and belongs to the shop, and the price for buying
-it back may be many times what you sold it for. Check your client's documentation
-on "locking" items for instructions on how to lock your important items so you can't
-accidentally drop them.
+it back may be many times what you sold it for.
+Items can be locked in your intentory by Shift + Right Clicking. An asterisks will denote that
+item is now locked and cannot be dropped until unlocked.
+
+God-given items CANNOT be sold or dropped without being reclaimed by the god of the realm.
 endmsg
 x 19
 y 10
@@ -3899,6 +3901,7 @@ Here lies Harold the Slow
 endmsg
 x 22
 y 22
+no_pick 0
 end
 arch woodfloor2
 x 22
@@ -3931,6 +3934,7 @@ x 22
 y 27
 end
 arch exit
+slaying /world/world_105_116
 msg
 Good luck!
 endmsg

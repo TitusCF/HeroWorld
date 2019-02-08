@@ -6,7 +6,7 @@ width 15
 height 10
 msg
 Created:  2019-02-05 Acer
-Modified: 2019-02-07 Acer
+Modified: 2019-02-08 Acer
 endmsg
 end
 arch woodfloor
@@ -88,6 +88,7 @@ slaying money
 food 50
 x 2
 y 4
+last_sp 1
 connected 1
 end
 arch woodfloor
@@ -246,14 +247,12 @@ arch woodfloor
 x 4
 y 8
 end
-arch grate_open_2
+arch firewall_3
 x 4
 y 8
 connected 1
+arch spell_sm_lightning
 end
-arch boulder
-x 4
-y 8
 end
 arch woodfloor
 x 4
@@ -321,20 +320,10 @@ arch woodfloor
 x 5
 y 8
 end
-arch button_small
+arch earthwall
 x 5
 y 8
-connected 2
-end
-arch grate_open_2
-x 5
-y 8
-connected 2
-end
-arch button_small
-x 5
-y 8
-connected 1
+resist_electricity 0
 end
 arch woodfloor
 x 5
@@ -394,25 +383,10 @@ arch woodfloor
 x 6
 y 8
 end
-arch button_small
+arch earthwall
 x 6
 y 8
-connected 3
-end
-arch grate_open_2
-x 6
-y 8
-connected 3
-end
-arch button_small
-x 6
-y 8
-connected 2
-end
-arch button_small
-x 6
-y 8
-connected 1
+resist_electricity 0
 end
 arch woodfloor
 x 6
@@ -480,25 +454,10 @@ arch woodfloor
 x 7
 y 8
 end
-arch button_small
+arch earthwall
 x 7
 y 8
-connected 4
-end
-arch grate_open_2
-x 7
-y 8
-connected 4
-end
-arch button_small
-x 7
-y 8
-connected 1
-end
-arch button_small
-x 7
-y 8
-connected 3
+resist_electricity 0
 end
 arch woodfloor
 x 7
@@ -550,25 +509,10 @@ arch woodfloor
 x 8
 y 8
 end
-arch button_small
+arch earthwall
 x 8
 y 8
-connected 5
-end
-arch grate_open_2
-x 8
-y 8
-connected 5
-end
-arch button_small
-x 8
-y 8
-connected 1
-end
-arch button_small
-x 8
-y 8
-connected 4
+resist_electricity 0
 end
 arch woodfloor
 x 8
@@ -636,20 +580,11 @@ arch woodfloor
 x 9
 y 8
 end
-arch button_small
+arch detector
+slaying lightning
 x 9
 y 8
 connected 6
-end
-arch button_small
-x 9
-y 8
-connected 1
-end
-arch button_small
-x 9
-y 8
-connected 5
 end
 arch woodfloor
 x 9

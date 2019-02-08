@@ -4,7 +4,7 @@ region stoneville
 width 50
 height 50
 msg
-Modified: 2019-02-05 Acer
+Modified: 2019-02-08 Acer
 endmsg
 outdoor 1
 tile_path_1 world_103_126
@@ -2600,6 +2600,7 @@ x 10
 y 2
 connected 103127991
 lifesave 1
+activate_on_release 0
 arch dragon_exit
 name Dragon Mount
 speed 0.7
@@ -2635,12 +2636,9 @@ x 10
 y 5
 connected 103127992
 lifesave 1
-arch dragon_exit
-name Dragon Mount
-face worthless_dragon.x71
-animation worthless_dragon
+activate_on_release 0
+arch blue_dragon
 speed 0.7
-direction 6
 type 2
 container 10000000
 move_type walk swim boat

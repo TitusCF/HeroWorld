@@ -6,7 +6,7 @@ msg
 Creator: Mark Wedel
 Email: mark@pyramid.com
 Date: Wed Nov 27 00:40:42 1996
-Modified: 2019-01-27 Acer
+Modified: 2019-02-08 Acer
 endmsg
 end
 arch cobblestones2
@@ -44,7 +44,7 @@ end
 arch cwall_2_1_1
 y 6
 end
-arch afloor_right
+arch afloor_magenta_left
 y 7
 end
 arch dungeon_magic
@@ -53,49 +53,49 @@ end
 arch cwall_3_2
 y 7
 end
-arch afloor_right
+arch afloor_magenta_left
 y 8
 end
 arch cwall_2_1_1
 y 8
 end
-arch afloor_right
+arch afloor_magenta_left
 y 9
 end
 arch cwall_2_1_1
 y 9
 end
-arch afloor_right
+arch afloor_magenta_left
 y 10
 end
 arch cwall_2_1_1
 y 10
 end
-arch afloor_right
+arch afloor_magenta_left
 y 11
 end
 arch cwall_2_1_1
 y 11
 end
-arch afloor_right
+arch afloor_magenta_left
 y 12
 end
 arch cwall_3_2
 y 12
 end
-arch afloor_right
+arch afloor_magenta_left
 y 13
 end
 arch cwall_2_1_1
 y 13
 end
-arch afloor_right
+arch afloor_magenta_left
 y 14
 end
 arch cwall_2_1_1
 y 14
 end
-arch afloor_right
+arch afloor_magenta_left
 y 15
 end
 arch cwall_2_2_1
@@ -132,7 +132,7 @@ arch grass
 x 1
 y 6
 end
-arch afloor_right
+arch afloor_magenta_left
 x 1
 y 7
 end
@@ -144,26 +144,24 @@ arch cwall_2_1_2
 x 1
 y 7
 end
-arch afloor_right
+arch afloor_magenta_left
 x 1
 y 8
-unique 1
 end
 arch perm_magic_portal
 name Big Chest
-slaying bigchest
+slaying bigchest_1
 face chest_1.111
+animation chest_valriel_2
 hp 1
 sp 1
 x 1
 y 8
-is_animated 0
 unique 1
 end
-arch afloor_right
+arch afloor_magenta_left
 x 1
 y 9
-unique 1
 end
 arch check_inv
 slaying apartment2
@@ -171,7 +169,7 @@ x 1
 y 9
 connected 52
 end
-arch afloor_right
+arch afloor_magenta_left
 x 1
 y 10
 end
@@ -180,14 +178,14 @@ x 1
 y 10
 connected 52
 end
+arch afloor_magenta_left
+x 1
+y 11
+end
 arch magic_mouth
 msg
 Apartment #2
 endmsg
-x 1
-y 11
-end
-arch afloor_right
 x 1
 y 11
 end
@@ -197,7 +195,7 @@ x 1
 y 11
 connected 52
 end
-arch afloor_right
+arch afloor_magenta_left
 x 1
 y 12
 end
@@ -209,21 +207,19 @@ arch cwall_1_3
 x 1
 y 12
 end
-arch afloor_right
+arch afloor_magenta_left
 x 1
 y 13
-unique 1
 end
-arch afloor_right
+arch afloor_magenta_left
 x 1
 y 14
-unique 1
 end
 arch bed_save
 x 1
 y 14
 end
-arch afloor_right
+arch afloor_magenta_left
 x 1
 y 15
 end
@@ -262,7 +258,7 @@ arch grass
 x 2
 y 6
 end
-arch afloor_right
+arch afloor_magenta_left
 x 2
 y 7
 end
@@ -274,21 +270,19 @@ arch cwall_2_1_2
 x 2
 y 7
 end
-arch afloor_right
+arch afloor_magenta_left
 x 2
 y 8
-unique 1
 end
 arch bed_save
 x 2
 y 8
 end
-arch afloor_right
+arch afloor_magenta_left
 x 2
 y 9
-unique 1
 end
-arch afloor_right
+arch afloor_magenta_left
 x 2
 y 10
 end
@@ -300,14 +294,14 @@ arch cwall_1_4
 x 2
 y 10
 end
+arch afloor_magenta_left
+x 2
+y 11
+end
 arch magic_mouth
 msg
 Apartment #3
 endmsg
-x 2
-y 11
-end
-arch afloor_right
 x 2
 y 11
 end
@@ -317,7 +311,7 @@ x 2
 y 11
 connected 53
 end
-arch afloor_right
+arch afloor_magenta_left
 x 2
 y 12
 end
@@ -326,10 +320,9 @@ x 2
 y 12
 connected 53
 end
-arch afloor_right
+arch afloor_magenta_left
 x 2
 y 13
-unique 1
 end
 arch check_inv
 slaying apartment3
@@ -337,23 +330,22 @@ x 2
 y 13
 connected 53
 end
-arch afloor_right
+arch afloor_magenta_left
 x 2
 y 14
-unique 1
 end
 arch perm_magic_portal
 name Big Chest
-slaying bigchest
+slaying bigchest_2
 face chest_1.111
+animation chest_valriel_2
 hp 1
 sp 1
 x 2
 y 14
-is_animated 0
 unique 1
 end
-arch afloor_right
+arch afloor_magenta_left
 x 2
 y 15
 end
@@ -392,7 +384,7 @@ arch grass
 x 3
 y 6
 end
-arch afloor_right
+arch afloor_magenta_left
 x 3
 y 7
 end
@@ -404,7 +396,7 @@ arch cwall_3_3
 x 3
 y 7
 end
-arch afloor_right
+arch afloor_magenta_left
 x 3
 y 8
 end
@@ -416,7 +408,7 @@ arch cwall_2_1_1
 x 3
 y 8
 end
-arch afloor_right
+arch afloor_magenta_left
 x 3
 y 9
 end
@@ -428,7 +420,7 @@ arch cwall_2_1_1
 x 3
 y 9
 end
-arch afloor_right
+arch afloor_magenta_left
 x 3
 y 10
 end
@@ -440,11 +432,11 @@ arch cwall_2_2_4
 x 3
 y 10
 end
-arch afloor_right
+arch afloor_magenta_left
 x 3
 y 11
 end
-arch afloor_right
+arch afloor_magenta_left
 x 3
 y 12
 end
@@ -456,7 +448,7 @@ arch cwall_1_1
 x 3
 y 12
 end
-arch afloor_right
+arch afloor_magenta_left
 x 3
 y 13
 end
@@ -468,7 +460,7 @@ arch cwall_2_1_1
 x 3
 y 13
 end
-arch afloor_right
+arch afloor_magenta_left
 x 3
 y 14
 end
@@ -480,7 +472,7 @@ arch cwall_2_1_1
 x 3
 y 14
 end
-arch afloor_right
+arch afloor_magenta_left
 x 3
 y 15
 end
@@ -519,7 +511,7 @@ arch grass
 x 4
 y 6
 end
-arch afloor_right
+arch afloor_magenta_left
 x 4
 y 7
 end
@@ -531,7 +523,7 @@ arch cwall_2_1_2
 x 4
 y 7
 end
-arch afloor_right
+arch afloor_magenta_left
 x 4
 y 8
 end
@@ -541,11 +533,11 @@ slaying apartment2
 x 4
 y 8
 end
-arch dungeon_magic
+arch afloor_magenta_left
 x 4
 y 9
 end
-arch afloor_right
+arch dungeon_magic
 x 4
 y 9
 end
@@ -554,7 +546,7 @@ x 4
 y 9
 connected 2
 end
-arch afloor_right
+arch afloor_magenta_left
 x 4
 y 10
 end
@@ -566,11 +558,11 @@ x 4
 y 10
 connected 2
 end
-arch afloor_right
+arch afloor_magenta_left
 x 4
 y 11
 end
-arch afloor_right
+arch afloor_magenta_left
 x 4
 y 12
 end
@@ -582,11 +574,11 @@ x 4
 y 12
 connected 3
 end
-arch dungeon_magic
+arch afloor_magenta_left
 x 4
 y 13
 end
-arch afloor_right
+arch dungeon_magic
 x 4
 y 13
 end
@@ -595,7 +587,7 @@ x 4
 y 13
 connected 3
 end
-arch afloor_right
+arch afloor_magenta_left
 x 4
 y 14
 end
@@ -605,7 +597,7 @@ slaying apartment3
 x 4
 y 14
 end
-arch afloor_right
+arch afloor_magenta_left
 x 4
 y 15
 end
@@ -644,7 +636,7 @@ arch grass
 x 5
 y 6
 end
-arch afloor_right
+arch afloor_magenta_left
 x 5
 y 7
 end
@@ -656,7 +648,7 @@ arch cwall_3_3
 x 5
 y 7
 end
-arch afloor_right
+arch afloor_magenta_left
 x 5
 y 8
 end
@@ -668,7 +660,7 @@ arch cwall_2_1_1
 x 5
 y 8
 end
-arch afloor_right
+arch afloor_magenta_left
 x 5
 y 9
 end
@@ -680,7 +672,7 @@ arch cwall_2_1_1
 x 5
 y 9
 end
-arch afloor_right
+arch afloor_magenta_left
 x 5
 y 10
 end
@@ -692,11 +684,11 @@ arch cwall_1_2
 x 5
 y 10
 end
-arch afloor_right
+arch afloor_magenta_left
 x 5
 y 11
 end
-arch afloor_right
+arch afloor_magenta_left
 x 5
 y 12
 end
@@ -708,7 +700,7 @@ arch cwall_2_2_2
 x 5
 y 12
 end
-arch afloor_right
+arch afloor_magenta_left
 x 5
 y 13
 end
@@ -720,7 +712,7 @@ arch cwall_2_1_1
 x 5
 y 13
 end
-arch afloor_right
+arch afloor_magenta_left
 x 5
 y 14
 end
@@ -732,7 +724,7 @@ arch cwall_2_1_1
 x 5
 y 14
 end
-arch afloor_right
+arch afloor_magenta_left
 x 5
 y 15
 end
@@ -771,7 +763,7 @@ arch grass
 x 6
 y 6
 end
-arch afloor_right
+arch afloor_magenta_left
 x 6
 y 7
 end
@@ -783,26 +775,24 @@ arch cwall_2_1_2
 x 6
 y 7
 end
-arch afloor_right
+arch afloor_magenta_left
 x 6
 y 8
-unique 1
 end
 arch perm_magic_portal
 name Big Chest
-slaying bigchest
+slaying bigchest_3
 face chest_1.111
+animation chest_valriel_2
 hp 1
 sp 1
 x 6
 y 8
-is_animated 0
 unique 1
 end
-arch afloor_right
+arch afloor_magenta_left
 x 6
 y 9
-unique 1
 end
 arch check_inv
 slaying apartment1
@@ -810,7 +800,7 @@ x 6
 y 9
 connected 51
 end
-arch afloor_right
+arch afloor_magenta_left
 x 6
 y 10
 end
@@ -819,14 +809,14 @@ x 6
 y 10
 connected 51
 end
+arch afloor_magenta_left
+x 6
+y 11
+end
 arch magic_mouth
 msg
 Apartment #1
 endmsg
-x 6
-y 11
-end
-arch afloor_right
 x 6
 y 11
 end
@@ -836,7 +826,7 @@ x 6
 y 11
 connected 51
 end
-arch afloor_right
+arch afloor_magenta_left
 x 6
 y 12
 end
@@ -848,21 +838,19 @@ arch cwall_1_3
 x 6
 y 12
 end
-arch afloor_right
+arch afloor_magenta_left
 x 6
 y 13
-unique 1
 end
-arch afloor_right
+arch afloor_magenta_left
 x 6
 y 14
-unique 1
 end
 arch bed_save
 x 6
 y 14
 end
-arch afloor_right
+arch afloor_magenta_left
 x 6
 y 15
 end
@@ -901,7 +889,7 @@ arch grass
 x 7
 y 6
 end
-arch afloor_right
+arch afloor_magenta_left
 x 7
 y 7
 end
@@ -913,21 +901,19 @@ arch cwall_2_1_2
 x 7
 y 7
 end
-arch afloor_right
+arch afloor_magenta_left
 x 7
 y 8
-unique 1
 end
 arch bed_save
 x 7
 y 8
 end
-arch afloor_right
+arch afloor_magenta_left
 x 7
 y 9
-unique 1
 end
-arch afloor_right
+arch afloor_magenta_left
 x 7
 y 10
 end
@@ -939,14 +925,14 @@ arch cwall_1_4
 x 7
 y 10
 end
+arch afloor_magenta_left
+x 7
+y 11
+end
 arch magic_mouth
 msg
 Apartment #4
 endmsg
-x 7
-y 11
-end
-arch afloor_right
 x 7
 y 11
 end
@@ -956,7 +942,7 @@ x 7
 y 11
 connected 54
 end
-arch afloor_right
+arch afloor_magenta_left
 x 7
 y 12
 end
@@ -965,10 +951,9 @@ x 7
 y 12
 connected 54
 end
-arch afloor_right
+arch afloor_magenta_left
 x 7
 y 13
-unique 1
 end
 arch check_inv
 slaying apartment4
@@ -976,23 +961,22 @@ x 7
 y 13
 connected 54
 end
-arch afloor_right
+arch afloor_magenta_left
 x 7
 y 14
-unique 1
 end
 arch perm_magic_portal
 name Big Chest
-slaying bigchest
+slaying bigchest_4
 face chest_1.111
+animation chest_valriel_2
 hp 1
 sp 1
 x 7
 y 14
-is_animated 0
 unique 1
 end
-arch afloor_right
+arch afloor_magenta_left
 x 7
 y 15
 end
@@ -1031,7 +1015,7 @@ arch grass
 x 8
 y 6
 end
-arch afloor_right
+arch afloor_magenta_left
 x 8
 y 7
 end
@@ -1043,7 +1027,7 @@ arch cwall_3_3
 x 8
 y 7
 end
-arch afloor_right
+arch afloor_magenta_left
 x 8
 y 8
 end
@@ -1055,7 +1039,7 @@ arch cwall_2_1_1
 x 8
 y 8
 end
-arch afloor_right
+arch afloor_magenta_left
 x 8
 y 9
 end
@@ -1067,7 +1051,7 @@ arch cwall_2_1_1
 x 8
 y 9
 end
-arch afloor_right
+arch afloor_magenta_left
 x 8
 y 10
 end
@@ -1079,11 +1063,11 @@ arch cwall_2_2_4
 x 8
 y 10
 end
-arch afloor_right
+arch afloor_magenta_left
 x 8
 y 11
 end
-arch afloor_right
+arch afloor_magenta_left
 x 8
 y 12
 end
@@ -1095,7 +1079,7 @@ arch cwall_2_2_3
 x 8
 y 12
 end
-arch afloor_right
+arch afloor_magenta_left
 x 8
 y 13
 end
@@ -1107,7 +1091,7 @@ arch cwall_2_1_1
 x 8
 y 13
 end
-arch afloor_right
+arch afloor_magenta_left
 x 8
 y 14
 end
@@ -1119,7 +1103,7 @@ arch cwall_2_1_1
 x 8
 y 14
 end
-arch afloor_right
+arch afloor_magenta_left
 x 8
 y 15
 end
@@ -1158,7 +1142,7 @@ arch grass
 x 9
 y 6
 end
-arch afloor_right
+arch afloor_magenta_left
 x 9
 y 7
 end
@@ -1170,7 +1154,7 @@ arch cwall_2_1_2
 x 9
 y 7
 end
-arch afloor_right
+arch afloor_magenta_left
 x 9
 y 8
 end
@@ -1180,11 +1164,11 @@ slaying apartment1
 x 9
 y 8
 end
-arch dungeon_magic
+arch afloor_magenta_left
 x 9
 y 9
 end
-arch afloor_right
+arch dungeon_magic
 x 9
 y 9
 end
@@ -1193,7 +1177,7 @@ x 9
 y 9
 connected 1
 end
-arch afloor_right
+arch afloor_magenta_left
 x 9
 y 10
 end
@@ -1205,11 +1189,11 @@ x 9
 y 10
 connected 1
 end
-arch afloor_right
+arch afloor_magenta_left
 x 9
 y 11
 end
-arch afloor_right
+arch afloor_magenta_left
 x 9
 y 12
 end
@@ -1221,11 +1205,11 @@ x 9
 y 12
 connected 4
 end
-arch dungeon_magic
+arch afloor_magenta_left
 x 9
 y 13
 end
-arch afloor_right
+arch dungeon_magic
 x 9
 y 13
 end
@@ -1234,7 +1218,7 @@ x 9
 y 13
 connected 4
 end
-arch afloor_right
+arch afloor_magenta_left
 x 9
 y 14
 end
@@ -1244,7 +1228,7 @@ slaying apartment4
 x 9
 y 14
 end
-arch afloor_right
+arch afloor_magenta_left
 x 9
 y 15
 end
@@ -1282,10 +1266,6 @@ end
 arch grass
 x 10
 y 6
-end
-arch afloor_right
-x 10
-y 7
 end
 arch dungeon_magic
 x 10
@@ -1363,7 +1343,7 @@ arch cwall_2_1_1
 x 10
 y 14
 end
-arch marble
+arch afloor_magenta_left
 x 10
 y 15
 end
@@ -1446,7 +1426,7 @@ arch marble
 x 11
 y 14
 end
-arch marble
+arch afloor_magenta_left
 x 11
 y 15
 end
@@ -1536,7 +1516,7 @@ arch marble
 x 12
 y 14
 end
-arch marble
+arch afloor_magenta_left
 x 12
 y 15
 end
@@ -1626,7 +1606,7 @@ arch marble
 x 13
 y 14
 end
-arch marble
+arch afloor_magenta_left
 x 13
 y 15
 end
@@ -1694,9 +1674,6 @@ msg
 The chests in this inn have been magically charmed to
 contain only the belongings of the opener.
 
-NOTICE:
-DO NOT PURCHASE MULTIPLE ROOMS, ALL THE CHESTS HAVE BEEN CHARMED
-TO SHARE AN INVENTORY.
 endmsg
 x 14
 y 10
@@ -1735,7 +1712,7 @@ arch marble
 x 14
 y 14
 end
-arch marble
+arch afloor_magenta_left
 x 14
 y 15
 end
@@ -1862,7 +1839,7 @@ arch marble
 x 15
 y 14
 end
-arch marble
+arch afloor_magenta_left
 x 15
 y 15
 end
@@ -1901,7 +1878,7 @@ arch grass
 x 16
 y 6
 end
-arch afloor_right
+arch afloor_magenta_left
 x 16
 y 7
 end
@@ -1913,46 +1890,41 @@ arch cwall_2_1_2
 x 16
 y 7
 end
-arch afloor_right
+arch afloor_magenta_left
 x 16
 y 8
-unique 1
 end
 arch cauldron
 x 16
 y 8
 no_pick 1
 end
-arch afloor_right
+arch afloor_magenta_left
 x 16
 y 9
-unique 1
 end
 arch perm_magic_portal
 name Big Chest
-slaying bigchest
+slaying bigchest_5
 face chest_1.111
+animation chest_valriel_2
 hp 1
 sp 1
 x 16
 y 9
-is_animated 0
 unique 1
 end
-arch afloor_right
+arch afloor_magenta_left
 x 16
 y 10
-unique 1
 end
-arch afloor_right
+arch afloor_magenta_left
 x 16
 y 11
-unique 1
 end
-arch afloor_right
+arch afloor_magenta_left
 x 16
 y 12
-unique 1
 end
 arch check_inv
 slaying apartment10
@@ -1960,7 +1932,7 @@ x 16
 y 12
 connected 60
 end
-arch afloor_right
+arch afloor_magenta_left
 x 16
 y 13
 end
@@ -1969,14 +1941,14 @@ x 16
 y 13
 connected 60
 end
+arch afloor_magenta_left
+x 16
+y 14
+end
 arch magic_mouth
 msg
 Apartment #1
 endmsg
-x 16
-y 14
-end
-arch afloor_right
 x 16
 y 14
 end
@@ -1986,7 +1958,7 @@ x 16
 y 14
 connected 60
 end
-arch afloor_right
+arch afloor_magenta_left
 x 16
 y 15
 end
@@ -2025,7 +1997,7 @@ arch grass
 x 17
 y 6
 end
-arch afloor_right
+arch afloor_magenta_left
 x 17
 y 7
 end
@@ -2037,17 +2009,15 @@ arch cwall_2_1_2
 x 17
 y 7
 end
-arch afloor_right
+arch afloor_magenta_left
 x 17
 y 8
-unique 1
 end
-arch afloor_right
+arch afloor_magenta_left
 x 17
 y 9
-unique 1
 end
-arch afloor_right
+arch afloor_magenta_left
 x 17
 y 10
 end
@@ -2059,7 +2029,7 @@ arch cwall_2_2_2
 x 17
 y 10
 end
-arch afloor_right
+arch afloor_magenta_left
 x 17
 y 11
 end
@@ -2071,7 +2041,7 @@ arch cwall_2_1_1
 x 17
 y 11
 end
-arch afloor_right
+arch afloor_magenta_left
 x 17
 y 12
 end
@@ -2083,7 +2053,7 @@ arch cwall_2_1_1
 x 17
 y 12
 end
-arch afloor_right
+arch afloor_magenta_left
 x 17
 y 13
 end
@@ -2095,11 +2065,11 @@ arch cwall_1_2
 x 17
 y 13
 end
-arch afloor_right
+arch afloor_magenta_left
 x 17
 y 14
 end
-arch afloor_right
+arch afloor_magenta_left
 x 17
 y 15
 end
@@ -2138,7 +2108,7 @@ arch tree
 x 18
 y 6
 end
-arch afloor_right
+arch afloor_magenta_left
 x 18
 y 7
 end
@@ -2150,25 +2120,23 @@ arch cwall_2_1_2
 x 18
 y 7
 end
-arch afloor_right
+arch afloor_magenta_left
 x 18
 y 8
-unique 1
 end
 arch bed_save
 x 18
 y 8
 end
-arch afloor_right
+arch afloor_magenta_left
 x 18
 y 9
-unique 1
 end
 arch chair_2.2
 x 18
 y 9
 end
-arch afloor_right
+arch afloor_magenta_left
 x 18
 y 10
 end
@@ -2180,7 +2148,7 @@ arch cwall_2_1_2
 x 18
 y 10
 end
-arch afloor_right
+arch afloor_magenta_left
 x 18
 y 11
 end
@@ -2190,11 +2158,11 @@ slaying apartment10
 x 18
 y 11
 end
-arch dungeon_magic
+arch afloor_magenta_left
 x 18
 y 12
 end
-arch afloor_right
+arch dungeon_magic
 x 18
 y 12
 end
@@ -2203,7 +2171,7 @@ x 18
 y 12
 connected 10
 end
-arch afloor_right
+arch afloor_magenta_left
 x 18
 y 13
 end
@@ -2215,11 +2183,11 @@ x 18
 y 13
 connected 10
 end
-arch afloor_right
+arch afloor_magenta_left
 x 18
 y 14
 end
-arch afloor_right
+arch afloor_magenta_left
 x 18
 y 15
 end
@@ -2258,7 +2226,7 @@ arch grass
 x 19
 y 6
 end
-arch afloor_right
+arch afloor_magenta_left
 x 19
 y 7
 end
@@ -2270,7 +2238,7 @@ arch cwall_3_3
 x 19
 y 7
 end
-arch afloor_right
+arch afloor_magenta_left
 x 19
 y 8
 end
@@ -2282,7 +2250,7 @@ arch cwall_2_1_1
 x 19
 y 8
 end
-arch afloor_right
+arch afloor_magenta_left
 x 19
 y 9
 end
@@ -2294,7 +2262,7 @@ arch cwall_2_1_1
 x 19
 y 9
 end
-arch afloor_right
+arch afloor_magenta_left
 x 19
 y 10
 end
@@ -2306,7 +2274,7 @@ arch cwall_3_4
 x 19
 y 10
 end
-arch afloor_right
+arch afloor_magenta_left
 x 19
 y 11
 end
@@ -2318,7 +2286,7 @@ arch cwall_2_1_1
 x 19
 y 11
 end
-arch afloor_right
+arch afloor_magenta_left
 x 19
 y 12
 end
@@ -2330,7 +2298,7 @@ arch cwall_2_1_1
 x 19
 y 12
 end
-arch afloor_right
+arch afloor_magenta_left
 x 19
 y 13
 end
@@ -2342,11 +2310,11 @@ arch cwall_1_2
 x 19
 y 13
 end
-arch afloor_right
+arch afloor_magenta_left
 x 19
 y 14
 end
-arch afloor_right
+arch afloor_magenta_left
 x 19
 y 15
 end
@@ -2385,7 +2353,7 @@ arch grass
 x 20
 y 6
 end
-arch afloor_right
+arch afloor_magenta_left
 x 20
 y 7
 end
@@ -2397,46 +2365,41 @@ arch cwall_2_1_2
 x 20
 y 7
 end
-arch afloor_right
+arch afloor_magenta_left
 x 20
 y 8
-unique 1
 end
 arch cauldron
 x 20
 y 8
 no_pick 1
 end
-arch afloor_right
+arch afloor_magenta_left
 x 20
 y 9
-unique 1
 end
 arch perm_magic_portal
 name Big Chest
-slaying bigchest
+slaying bigchest_6
 face chest_1.111
+animation chest_valriel_2
 hp 1
 sp 1
 x 20
 y 9
-is_animated 0
 unique 1
 end
-arch afloor_right
+arch afloor_magenta_left
 x 20
 y 10
-unique 1
 end
-arch afloor_right
+arch afloor_magenta_left
 x 20
 y 11
-unique 1
 end
-arch afloor_right
+arch afloor_magenta_left
 x 20
 y 12
-unique 1
 end
 arch check_inv
 slaying apartment11
@@ -2444,7 +2407,7 @@ x 20
 y 12
 connected 61
 end
-arch afloor_right
+arch afloor_magenta_left
 x 20
 y 13
 end
@@ -2453,14 +2416,14 @@ x 20
 y 13
 connected 61
 end
+arch afloor_magenta_left
+x 20
+y 14
+end
 arch magic_mouth
 msg
 Apartment #1
 endmsg
-x 20
-y 14
-end
-arch afloor_right
 x 20
 y 14
 end
@@ -2470,7 +2433,7 @@ x 20
 y 14
 connected 61
 end
-arch afloor_right
+arch afloor_magenta_left
 x 20
 y 15
 end
@@ -2509,7 +2472,7 @@ arch grass
 x 21
 y 6
 end
-arch afloor_right
+arch afloor_magenta_left
 x 21
 y 7
 end
@@ -2521,17 +2484,15 @@ arch cwall_2_1_2
 x 21
 y 7
 end
-arch afloor_right
+arch afloor_magenta_left
 x 21
 y 8
-unique 1
 end
-arch afloor_right
+arch afloor_magenta_left
 x 21
 y 9
-unique 1
 end
-arch afloor_right
+arch afloor_magenta_left
 x 21
 y 10
 end
@@ -2543,7 +2504,7 @@ arch cwall_2_2_2
 x 21
 y 10
 end
-arch afloor_right
+arch afloor_magenta_left
 x 21
 y 11
 end
@@ -2555,7 +2516,7 @@ arch cwall_2_1_1
 x 21
 y 11
 end
-arch afloor_right
+arch afloor_magenta_left
 x 21
 y 12
 end
@@ -2567,7 +2528,7 @@ arch cwall_2_1_1
 x 21
 y 12
 end
-arch afloor_right
+arch afloor_magenta_left
 x 21
 y 13
 end
@@ -2579,11 +2540,11 @@ arch cwall_1_2
 x 21
 y 13
 end
-arch afloor_right
+arch afloor_magenta_left
 x 21
 y 14
 end
-arch afloor_right
+arch afloor_magenta_left
 x 21
 y 15
 end
@@ -2622,7 +2583,7 @@ arch grass
 x 22
 y 6
 end
-arch afloor_right
+arch afloor_magenta_left
 x 22
 y 7
 end
@@ -2634,25 +2595,23 @@ arch cwall_2_1_2
 x 22
 y 7
 end
-arch afloor_right
+arch afloor_magenta_left
 x 22
 y 8
-unique 1
 end
 arch bed_save
 x 22
 y 8
 end
-arch afloor_right
+arch afloor_magenta_left
 x 22
 y 9
-unique 1
 end
 arch chair_2.2
 x 22
 y 9
 end
-arch afloor_right
+arch afloor_magenta_left
 x 22
 y 10
 end
@@ -2664,7 +2623,7 @@ arch cwall_2_1_2
 x 22
 y 10
 end
-arch afloor_right
+arch afloor_magenta_left
 x 22
 y 11
 end
@@ -2674,11 +2633,11 @@ slaying apartment11
 x 22
 y 11
 end
-arch dungeon_magic
+arch afloor_magenta_left
 x 22
 y 12
 end
-arch afloor_right
+arch dungeon_magic
 x 22
 y 12
 end
@@ -2687,7 +2646,7 @@ x 22
 y 12
 connected 11
 end
-arch afloor_right
+arch afloor_magenta_left
 x 22
 y 13
 end
@@ -2699,11 +2658,11 @@ x 22
 y 13
 connected 11
 end
-arch afloor_right
+arch afloor_magenta_left
 x 22
 y 14
 end
-arch afloor_right
+arch afloor_magenta_left
 x 22
 y 15
 end
@@ -2742,7 +2701,7 @@ arch grass
 x 23
 y 6
 end
-arch afloor_right
+arch afloor_magenta_left
 x 23
 y 7
 end
@@ -2754,7 +2713,7 @@ arch cwall_3_3
 x 23
 y 7
 end
-arch afloor_right
+arch afloor_magenta_left
 x 23
 y 8
 end
@@ -2766,7 +2725,7 @@ arch cwall_2_1_1
 x 23
 y 8
 end
-arch afloor_right
+arch afloor_magenta_left
 x 23
 y 9
 end
@@ -2778,7 +2737,7 @@ arch cwall_2_1_1
 x 23
 y 9
 end
-arch afloor_right
+arch afloor_magenta_left
 x 23
 y 10
 end
@@ -2790,7 +2749,7 @@ arch cwall_3_4
 x 23
 y 10
 end
-arch afloor_right
+arch afloor_magenta_left
 x 23
 y 11
 end
@@ -2798,7 +2757,7 @@ arch cwall_2_1_1
 x 23
 y 11
 end
-arch afloor_right
+arch afloor_magenta_left
 x 23
 y 12
 end
@@ -2810,7 +2769,7 @@ arch cwall_2_1_1
 x 23
 y 12
 end
-arch afloor_right
+arch afloor_magenta_left
 x 23
 y 13
 end
@@ -2822,11 +2781,11 @@ arch cwall_1_2
 x 23
 y 13
 end
-arch afloor_right
+arch afloor_magenta_left
 x 23
 y 14
 end
-arch afloor_right
+arch afloor_magenta_left
 x 23
 y 15
 end
@@ -2865,7 +2824,7 @@ arch grass
 x 24
 y 6
 end
-arch afloor_right
+arch afloor_magenta_left
 x 24
 y 7
 end
@@ -2877,38 +2836,33 @@ arch cwall_2_1_2
 x 24
 y 7
 end
-arch afloor_right
+arch afloor_magenta_left
 x 24
 y 8
-unique 1
 end
 arch bed_save
 x 24
 y 8
 end
-arch afloor_right
+arch afloor_magenta_left
 x 24
 y 9
-unique 1
 end
 arch bed_save
 x 24
 y 9
 end
-arch afloor_right
+arch afloor_magenta_left
 x 24
 y 10
-unique 1
 end
-arch afloor_right
+arch afloor_magenta_left
 x 24
 y 11
-unique 1
 end
-arch afloor_right
+arch afloor_magenta_left
 x 24
 y 12
-unique 1
 end
 arch check_inv
 slaying apartment12
@@ -2916,7 +2870,7 @@ x 24
 y 12
 connected 62
 end
-arch afloor_right
+arch afloor_magenta_left
 x 24
 y 13
 end
@@ -2925,14 +2879,14 @@ x 24
 y 13
 connected 62
 end
+arch afloor_magenta_left
+x 24
+y 14
+end
 arch magic_mouth
 msg
 Suite #
 endmsg
-x 24
-y 14
-end
-arch afloor_right
 x 24
 y 14
 end
@@ -2942,7 +2896,7 @@ x 24
 y 14
 connected 62
 end
-arch afloor_right
+arch afloor_magenta_left
 x 24
 y 15
 end
@@ -2981,7 +2935,7 @@ arch evergreen
 x 25
 y 6
 end
-arch afloor_right
+arch afloor_magenta_left
 x 25
 y 7
 end
@@ -2993,44 +2947,39 @@ arch cwall_2_1_2
 x 25
 y 7
 end
-arch afloor_right
+arch afloor_magenta_left
 x 25
 y 8
-unique 1
 end
 arch bed_save
 x 25
 y 8
 end
-arch afloor_right
+arch afloor_magenta_left
 x 25
 y 9
-unique 1
 end
-arch afloor_right
+arch afloor_magenta_left
 x 25
 y 10
-unique 1
 end
-arch afloor_right
+arch afloor_magenta_left
 x 25
 y 11
-unique 1
 end
 arch table_4
 x 25
 y 11
 end
-arch afloor_right
+arch afloor_magenta_left
 x 25
 y 12
-unique 1
 end
 arch table_4
 x 25
 y 12
 end
-arch afloor_right
+arch afloor_magenta_left
 x 25
 y 13
 end
@@ -3042,11 +2991,11 @@ arch cwall_1_4
 x 25
 y 13
 end
-arch afloor_right
+arch afloor_magenta_left
 x 25
 y 14
 end
-arch afloor_right
+arch afloor_magenta_left
 x 25
 y 15
 end
@@ -3085,7 +3034,7 @@ arch grass
 x 26
 y 6
 end
-arch afloor_right
+arch afloor_magenta_left
 x 26
 y 7
 end
@@ -3097,58 +3046,42 @@ arch cwall_2_1_2
 x 26
 y 7
 end
-arch afloor_right
+arch afloor_magenta_left
 x 26
 y 8
-unique 1
 end
 arch bed_save
 x 26
 y 8
 end
-arch afloor_right
+arch afloor_magenta_left
 x 26
 y 9
-unique 1
 end
-arch afloor_right
+arch afloor_magenta_left
 x 26
 y 10
-unique 1
 end
-arch afloor_right
+arch afloor_magenta_left
 x 26
 y 11
-unique 1
 end
-arch perm_magic_portal
-name Big Chest
-slaying bigchest
-face chest_1.111
-hp 1
-sp 1
-x 26
-y 11
-is_animated 0
-unique 1
-end
-arch afloor_right
+arch afloor_magenta_left
 x 26
 y 12
-unique 1
 end
 arch perm_magic_portal
 name Big Chest
-slaying bigchest
+slaying bigchest_7
 face chest_1.111
+animation chest_valriel_2
 hp 1
 sp 1
 x 26
 y 12
-is_animated 0
 unique 1
 end
-arch afloor_right
+arch afloor_magenta_left
 x 26
 y 13
 end
@@ -3160,11 +3093,11 @@ arch cwall_2_1_2
 x 26
 y 13
 end
-arch afloor_right
+arch afloor_magenta_left
 x 26
 y 14
 end
-arch afloor_right
+arch afloor_magenta_left
 x 26
 y 15
 end
@@ -3203,7 +3136,7 @@ arch grass
 x 27
 y 6
 end
-arch afloor_right
+arch afloor_magenta_left
 x 27
 y 7
 end
@@ -3215,21 +3148,19 @@ arch cwall_2_1_2
 x 27
 y 7
 end
-arch afloor_right
+arch afloor_magenta_left
 x 27
 y 8
-unique 1
 end
 arch bed_save
 x 27
 y 8
 end
-arch afloor_right
+arch afloor_magenta_left
 x 27
 y 9
-unique 1
 end
-arch afloor_right
+arch afloor_magenta_left
 x 27
 y 10
 end
@@ -3241,7 +3172,7 @@ arch cwall_2_2_2
 x 27
 y 10
 end
-arch afloor_right
+arch afloor_magenta_left
 x 27
 y 11
 end
@@ -3253,7 +3184,7 @@ arch cwall_2_1_1
 x 27
 y 11
 end
-arch afloor_right
+arch afloor_magenta_left
 x 27
 y 12
 end
@@ -3265,7 +3196,7 @@ arch cwall_2_1_1
 x 27
 y 12
 end
-arch afloor_right
+arch afloor_magenta_left
 x 27
 y 13
 end
@@ -3277,11 +3208,11 @@ arch cwall_2_2_4
 x 27
 y 13
 end
-arch afloor_right
+arch afloor_magenta_left
 x 27
 y 14
 end
-arch afloor_right
+arch afloor_magenta_left
 x 27
 y 15
 end
@@ -3320,7 +3251,7 @@ arch grass
 x 28
 y 6
 end
-arch afloor_right
+arch afloor_magenta_left
 x 28
 y 7
 end
@@ -3332,27 +3263,25 @@ arch cwall_2_1_2
 x 28
 y 7
 end
-arch afloor_right
+arch afloor_magenta_left
 x 28
 y 8
-unique 1
 end
 arch cauldron
 x 28
 y 8
 no_pick 1
 end
-arch afloor_right
+arch afloor_magenta_left
 x 28
 y 9
-unique 1
 end
 arch cauldron
 x 28
 y 9
 no_pick 1
 end
-arch afloor_right
+arch afloor_magenta_left
 x 28
 y 10
 end
@@ -3364,14 +3293,7 @@ arch cwall_2_1_2
 x 28
 y 10
 end
-arch key2
-name Key for Suite 1
-slaying apartment12
-x 28
-y 11
-unique 1
-end
-arch afloor_right
+arch afloor_magenta_left
 x 28
 y 11
 end
@@ -3403,17 +3325,11 @@ x 28
 y 11
 unique 1
 end
-arch key2
-name Key for Suite 1
-slaying apartment12
-x 28
-y 11
-end
-arch dungeon_magic
+arch afloor_magenta_left
 x 28
 y 12
 end
-arch afloor_right
+arch dungeon_magic
 x 28
 y 12
 end
@@ -3422,7 +3338,7 @@ x 28
 y 12
 connected 12
 end
-arch afloor_right
+arch afloor_magenta_left
 x 28
 y 13
 end
@@ -3434,11 +3350,11 @@ x 28
 y 13
 connected 12
 end
-arch afloor_right
+arch afloor_magenta_left
 x 28
 y 14
 end
-arch afloor_right
+arch afloor_magenta_left
 x 28
 y 15
 end
@@ -3493,7 +3409,7 @@ arch cwall_2_1_1
 x 29
 y 6
 end
-arch afloor_right
+arch afloor_magenta_left
 x 29
 y 7
 end
@@ -3505,7 +3421,7 @@ arch cwall_3_4
 x 29
 y 7
 end
-arch afloor_right
+arch afloor_magenta_left
 x 29
 y 8
 end
@@ -3517,7 +3433,7 @@ arch cwall_2_1_1
 x 29
 y 8
 end
-arch afloor_right
+arch afloor_magenta_left
 x 29
 y 9
 end
@@ -3529,7 +3445,7 @@ arch cwall_2_1_1
 x 29
 y 9
 end
-arch afloor_right
+arch afloor_magenta_left
 x 29
 y 10
 end
@@ -3541,7 +3457,7 @@ arch cwall_3_4
 x 29
 y 10
 end
-arch afloor_right
+arch afloor_magenta_left
 x 29
 y 11
 end
@@ -3553,7 +3469,7 @@ arch cwall_2_1_1
 x 29
 y 11
 end
-arch afloor_right
+arch afloor_magenta_left
 x 29
 y 12
 end
@@ -3565,7 +3481,7 @@ arch cwall_2_1_1
 x 29
 y 12
 end
-arch afloor_right
+arch afloor_magenta_left
 x 29
 y 13
 end
@@ -3573,7 +3489,7 @@ arch cwall_2_1_1
 x 29
 y 13
 end
-arch afloor_right
+arch afloor_magenta_left
 x 29
 y 14
 end
@@ -3581,7 +3497,7 @@ arch cwall_2_1_1
 x 29
 y 14
 end
-arch afloor_right
+arch afloor_magenta_left
 x 29
 y 15
 end

@@ -206,6 +206,7 @@ arch igate_open_1
 x 4
 y 2
 connected 1
+activate_on_release 0
 end
 arch woodfloor
 x 4
@@ -223,6 +224,7 @@ arch igate_closed_1
 x 4
 y 5
 connected 6
+activate_on_release 0
 end
 arch woodfloor
 x 4
@@ -251,6 +253,7 @@ arch firewall_3
 x 4
 y 8
 connected 1
+activate_on_release 0
 arch spell_sm_lightning
 end
 end
@@ -320,11 +323,6 @@ arch woodfloor
 x 5
 y 8
 end
-arch earthwall
-x 5
-y 8
-resist_electricity 0
-end
 arch woodfloor
 x 5
 y 9
@@ -382,11 +380,6 @@ end
 arch woodfloor
 x 6
 y 8
-end
-arch earthwall
-x 6
-y 8
-resist_electricity 0
 end
 arch woodfloor
 x 6
@@ -455,6 +448,9 @@ x 7
 y 8
 end
 arch earthwall
+hp 5
+maxhp 5
+ac 0
 x 7
 y 8
 resist_electricity 0
@@ -510,6 +506,9 @@ x 8
 y 8
 end
 arch earthwall
+hp 5
+maxhp 5
+ac 0
 x 8
 y 8
 resist_electricity 0
@@ -713,6 +712,7 @@ endmsg
 x 11
 y 8
 connected 6
+activate_on_release 0
 end
 arch woodfloor
 x 11
@@ -771,6 +771,7 @@ endmsg
 x 12
 y 8
 connected 1
+activate_on_release 0
 end
 arch woodfloor
 x 12

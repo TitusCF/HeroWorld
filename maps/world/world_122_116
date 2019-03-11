@@ -11,7 +11,7 @@ msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Jun  2 20:54:49 2002
-Modified: 2019-01-26 Acer
+Modified: 2019-03-11 Acer
 endmsg
 outdoor 1
 tile_path_1 world_122_115
@@ -7803,15 +7803,6 @@ arch sea1
 x 21
 y 39
 end
-arch longship
-x 21
-y 39
-speed 0.5
-type 2
-container 10000000
-move_type boat
-passenger_limit 2
-end
 arch sea1
 x 21
 y 40
@@ -7872,14 +7863,16 @@ x 21
 y 45
 no_pass 1
 end
-arch big_galleon
+arch s_ship
 x 21
 y 45
-speed 0.5
-type 2
-container 10000000
-move_type boat
-passenger_limit 2
+end
+arch s_ship
+slaying /ships/ship_navar_wolfburg
+hp 9
+sp 10
+x 21
+y 45
 end
 arch sea1
 x 21
@@ -7903,13 +7896,12 @@ y 48
 no_pass 1
 end
 arch big_galleon
+name Ship to Darcap
+slaying /ships/ship_navar_darcap
+hp 9
+sp 10
 x 21
 y 48
-speed 0.5
-type 2
-container 10000000
-move_type boat
-passenger_limit 4
 end
 arch sea1
 x 21

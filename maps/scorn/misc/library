@@ -9,7 +9,7 @@ msg
 Creator: b.t.
 Email: thomas@astro.psu.edu
 Date: Sun Apr 28 04:45:42 1996
-Modified: 2019-01-28 Acer
+Modified: 2019-03-10 Acer
 endmsg
 end
 arch grass
@@ -1183,6 +1183,12 @@ arch woodfloor
 x 7
 y 9
 end
+arch button_small
+x 7
+y 9
+invisible 1
+connected 4
+end
 arch woodfloor
 x 7
 y 10
@@ -1317,21 +1323,9 @@ arch dungeon_magic
 x 8
 y 6
 end
-arch magic_mouth
-msg
-Rare books room. Card holders only.
-endmsg
-x 8
-y 6
-end
 arch woodfloor
-slaying l_card
 x 8
 y 6
-type 64
-last_sp 1
-connected 4
-walk_on 1
 end
 arch dungeon_magic
 x 8
@@ -1365,6 +1359,11 @@ arch woodfloor
 x 8
 y 9
 end
+arch grate_closed_2
+x 8
+y 9
+connected 4
+end
 arch woodfloor
 x 8
 y 10
@@ -1386,7 +1385,7 @@ endmsg
 food 50
 x 8
 y 11
-connected 2
+connected 4
 end
 arch dungeon_magic
 x 8
@@ -1533,12 +1532,6 @@ arch woodfloor
 x 9
 y 6
 end
-arch igateTrg2
-sp 1
-x 9
-y 6
-connected 4
-end
 arch dungeon_magic
 x 9
 y 7
@@ -1563,22 +1556,19 @@ arch wwall_3_1
 x 9
 y 8
 end
-arch pedestal_trigger
-x 9
-y 9
-connected 10
-end
 arch dungeon_magic
 x 9
 y 9
 end
 arch woodfloor
-slaying library
 x 9
 y 9
-type 64
-connected 2
-walk_on 1
+end
+arch check_inv
+slaying l_card
+x 9
+y 9
+connected 4
 end
 arch woodfloor
 x 9
@@ -1698,11 +1688,6 @@ arch dungeon_magic
 x 10
 y 6
 end
-arch button_small
-x 10
-y 6
-connected 4
-end
 arch woodfloor
 x 10
 y 6
@@ -1735,13 +1720,13 @@ arch dungeon_magic
 x 10
 y 9
 end
-arch woodfloor
-slaying library
+arch dungeon_magic
 x 10
 y 9
-type 64
-connected 2
-walk_on 1
+end
+arch woodfloor
+x 10
+y 9
 end
 arch woodfloor
 x 10
@@ -1928,19 +1913,11 @@ arch woodfloor
 x 11
 y 13
 end
-arch wwall_2_2_2
-x 11
-y 13
-end
 arch dungeon_magic
 x 11
 y 14
 end
 arch woodfloor
-x 11
-y 14
-end
-arch wwall_1_2
 x 11
 y 14
 end
@@ -2085,10 +2062,6 @@ x 12
 y 13
 end
 arch woodfloor
-x 12
-y 13
-end
-arch wwall_2_1_2
 x 12
 y 13
 end
@@ -2248,7 +2221,7 @@ arch woodfloor
 x 13
 y 13
 end
-arch wwall_3_4
+arch wwall_2_1_1
 x 13
 y 13
 end

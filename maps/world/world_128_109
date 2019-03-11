@@ -5,7 +5,7 @@ region wolfsburg
 width 50
 height 50
 msg
-Modified: 2019-01-29 Acer
+Modified: 2019-03-11 Acer
 endmsg
 outdoor 1
 tile_path_1 world_128_108
@@ -3581,16 +3581,6 @@ arch sea1
 x 14
 y 21
 end
-arch rowboat
-name row boat
-x 14
-y 21
-speed 0.5
-type 2
-container 10000000
-move_type boat
-passenger_limit 2
-end
 arch sea
 x 14
 y 22
@@ -3613,13 +3603,11 @@ y 26
 end
 arch rowboat
 name row boat
+slaying /world/world_128_109
+hp 18
+sp 40
 x 14
 y 26
-speed 0.5
-type 2
-container 10000000
-move_type boat
-passenger_limit 2
 end
 arch sea
 x 14
@@ -4355,15 +4343,6 @@ end
 arch sea1
 x 17
 y 23
-end
-arch rowboat
-x 17
-y 23
-speed 0.5
-type 2
-container 10000000
-move_type boat
-passenger_limit 2
 end
 arch sea
 x 17
@@ -5580,15 +5559,6 @@ arch sea1
 x 22
 y 19
 end
-arch longship
-x 22
-y 19
-speed 0.5
-type 2
-container 10000000
-move_type boat
-passenger_limit 2
-end
 arch sea1
 x 22
 y 20
@@ -5600,15 +5570,6 @@ end
 arch sea1
 x 22
 y 21
-end
-arch longship
-x 22
-y 21
-speed 0.5
-type 2
-container 10000000
-move_type boat
-passenger_limit 2
 end
 arch sea
 x 22
@@ -6385,15 +6346,6 @@ end
 arch sea1
 x 25
 y 22
-end
-arch longship
-x 25
-y 22
-speed 0.5
-type 2
-container 10000000
-move_type boat
-passenger_limit 2
 end
 arch sea1
 x 25
@@ -8303,13 +8255,12 @@ x 33
 y 18
 end
 arch big_galleon
+name Ship to Darcap
+slaying /ships/ship_darcap_wolfburg
+hp 9
+sp 10
 x 33
 y 18
-speed 0.5
-type 2
-container 10000000
-move_type boat
-passenger_limit 2
 end
 arch sea1
 x 33
@@ -8323,6 +8274,13 @@ arch sea
 x 33
 y 21
 end
+arch rowboat
+slaying /world/world_127_109
+hp 21
+sp 11
+x 33
+y 21
+end
 arch sea
 x 33
 y 22
@@ -8330,15 +8288,6 @@ end
 arch sea1
 x 33
 y 23
-end
-arch big_galleon
-x 33
-y 23
-speed 0.5
-type 2
-container 10000000
-move_type boat
-passenger_limit 2
 end
 arch sea1
 x 33
@@ -10557,10 +10506,6 @@ arch sea1
 x 42
 y 19
 end
-arch big_galleon
-x 42
-y 19
-end
 arch sea1
 x 42
 y 20
@@ -10582,11 +10527,10 @@ x 42
 y 24
 end
 arch big_galleon
-name to Navar
-name_pl to Navar
-slaying /world/world_122_116
-hp 21
-sp 47
+name Ship to Navar
+slaying /ships/ship_wolfburg_navar
+hp 9
+sp 10
 x 42
 y 24
 end

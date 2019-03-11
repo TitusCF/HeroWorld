@@ -12,7 +12,7 @@ Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Dec 16 20:41:49 2001
 arch
-Modified: 2019-01-29 Acer
+Modified: 2019-03-10 Acer
 endmsg
 outdoor 1
 tile_path_1 world_104_114
@@ -9666,7 +9666,7 @@ arch cobblestones2
 x 37
 y 28
 end
-arch cwall_3_2
+arch cwall_2_1_1
 x 37
 y 28
 end
@@ -9926,10 +9926,6 @@ arch cobblestones2
 x 38
 y 28
 end
-arch cwall_2_1_2
-x 38
-y 28
-end
 arch cobblestones2
 x 38
 y 29
@@ -10177,6 +10173,18 @@ y 25
 end
 arch cobblestones2
 x 39
+y 25
+end
+arch barn
+name Training Center
+slaying /scorn/crow/train/train
+hp 4
+sp 17
+x 39
+y 25
+end
+arch cobblestones2
+x 39
 y 26
 end
 arch cobblestones2
@@ -10184,10 +10192,6 @@ x 39
 y 27
 end
 arch cobblestones2
-x 39
-y 28
-end
-arch cwall_2_1_2
 x 39
 y 28
 end
@@ -10202,7 +10206,6 @@ end
 arch cwall_2_1_2
 x 39
 y 30
-move_block -all
 end
 arch grass
 x 39
@@ -10416,15 +10419,7 @@ arch cobblestones2
 x 40
 y 28
 end
-arch cwall_2_2_3
-x 40
-y 28
-end
 arch cobblestones2
-x 40
-y 29
-end
-arch cwall_2_1_1
 x 40
 y 29
 end
@@ -10432,7 +10427,7 @@ arch cobblestones2
 x 40
 y 30
 end
-arch dwall_3_1
+arch cwall_2_1_2
 x 40
 y 30
 end
@@ -10652,12 +10647,6 @@ x 41
 y 27
 end
 arch cobblestones2
-x 41
-y 28
-end
-arch barn
-name dragon hangar
-name_pl dragon hangar
 x 41
 y 28
 end
@@ -11149,12 +11138,6 @@ arch cobblestones2
 x 43
 y 28
 end
-arch barn
-name dragon hangar
-name_pl dragon hangar
-x 43
-y 28
-end
 arch cobblestones2
 x 43
 y 29
@@ -11192,22 +11175,7 @@ arch grass
 x 43
 y 34
 end
-arch bungalow
-name Permanent Apartments
-slaying /scorn/apartment/apartments
-x 43
-y 34
-unique 1
-end
 arch grass
-x 43
-y 35
-end
-arch courthouse
-name City Hall
-slaying /scorn/misc/cityhall
-hp 13
-sp 26
 x 43
 y 35
 end
@@ -11391,14 +11359,6 @@ arch cobblestones2
 x 44
 y 22
 end
-arch barn
-name Training Center
-slaying /scorn/crow/train/train
-hp 4
-sp 17
-x 44
-y 22
-end
 arch cobblestones2
 x 44
 y 23
@@ -11459,6 +11419,17 @@ end
 arch grass
 x 44
 y 35
+end
+arch grass
+x 44
+y 35
+end
+arch bungalow
+name Permanent Apartments
+slaying /scorn/apartment/apartments
+x 44
+y 35
+unique 1
 end
 arch grass
 x 44
@@ -12173,11 +12144,12 @@ x 47
 y 19
 end
 arch s_ship
+name Ship to Stoneville
+slaying /ships/ship_stoneville
+hp 9
+sp 10
 x 47
 y 19
-type 2
-move_allow walk boat
-passenger_limit 2
 end
 arch dungeon_magic
 x 47
@@ -12195,19 +12167,11 @@ arch cobblestones2
 x 47
 y 22
 end
-arch barrack_small
-x 47
-y 22
-end
 arch cobblestones2
 x 47
 y 23
 end
 arch cobblestones2
-x 47
-y 24
-end
-arch bungalow
 x 47
 y 24
 end
@@ -12827,42 +12791,7 @@ arch cobblestones
 x 49
 y 34
 end
-arch sign
-name More Information
-msg
-<PLAYER KILLING IS TOLERATED, TROLLING & GRIEFING IS NOT>
-
---oOo--
-
-For a lot of adventure information,
-talk to people in Goth's tavern, above
-the Eastern Gate House.
-endmsg
-x 49
-y 34
-end
 arch cobblestones
-x 49
-y 35
-end
-arch sign
-name Hero World Server information sign
-msg
-Welcome to Scorn on the Hero's World game server!
-
-Do you have any problems that require dungeon master interaction?
-Do you want to know more about this server?
-Don't be shy with the chat command! (chat {message})
-
-Includes:
-The Builders Expanion Pack:
-A 100% buildable zone, completely player run.
-Carve out your place in BigWorld history,
-Build your empire, Amass your hoard and change the face of BigWorld for years to come.
-(Far from the shores of the known world you will find The Builders Archipelago.)
-
-
-endmsg
 x 49
 y 35
 end
@@ -12871,11 +12800,18 @@ x 49
 y 36
 end
 arch fountain
-name Titus pool
+name Tituss' pool
 x 49
 y 36
 speed_left -41.599998
 tag scorn
+end
+arch invis_exit
+slaying /fountain
+hp 7
+sp 6
+x 49
+y 36
 end
 arch cobblestones
 x 49

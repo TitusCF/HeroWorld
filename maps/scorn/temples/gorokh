@@ -8,7 +8,7 @@ msg
 Creator: Raphael Quinet
 Email: quinet@gamers.org
 Date: Fri Jan 22 02:39:30 1999
-Modified: 2019-01-28 Kevin Zheng
+Modified: 2019-02-18 Kevin Zheng
 endmsg
 end
 arch grass
@@ -714,6 +714,15 @@ end
 arch marble
 x 7
 y 9
+end
+arch sign
+name Permadeath
+x 7
+y 9
+arch event_apply
+title Python
+slaying python/items/death_list.py
+end
 end
 arch medium_stones
 x 7

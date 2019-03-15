@@ -1,13 +1,14 @@
 arch map
-region pupland
 name hq
+region pupland
+width 20
+height 36
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Feb 14 21:25:41 1996
+Modified: 2019-03-15 Acer
 endmsg
-width 20
-height 36
 end
 arch pstone_1
 end
@@ -754,8 +755,8 @@ arch gate_closed_2
 x 4
 y 5
 speed 0.500000
-protected 2
 connected 2
+protected 2
 end
 arch cobblestones2
 x 4
@@ -1288,8 +1289,8 @@ Click.
 endmsg
 x 6
 y 5
-protected 2
 connected 2
+protected 2
 end
 arch thief
 name councillor
@@ -1300,7 +1301,7 @@ I see. We'll put him to torture.
 Thanks, this is your reward.
 @match *
 I've heard that spys of the goverment
-have entered secretly. 
+have entered secretly.
 If you discover one of them, please
 let me know!
 endmsg
@@ -1794,13 +1795,6 @@ arch swall_2_1_2
 x 7
 y 33
 end
-arch exit
-slaying world
-hp 15
-sp 24
-x 7
-y 34
-end
 arch dungeon_magic
 x 7
 y 34
@@ -1808,13 +1802,6 @@ end
 arch grass
 x 7
 y 34
-end
-arch exit
-slaying world
-hp 15
-sp 24
-x 7
-y 35
 end
 arch small_stones
 x 7
@@ -2193,7 +2180,7 @@ y 34
 speed_left -1.000000
 end
 arch exit
-slaying world
+slaying /world/world_103_104
 hp 15
 sp 24
 x 8
@@ -2219,7 +2206,7 @@ of the wall...
             more concerned about
             Eureca's safety... ???
   Voice A : What!? Do you think we are
-            a welfare-company, idiot?! 
+            a welfare-company, idiot?!
             Forget Eureca, we need to
             get the treasure.
   Voice C : Forgive me, general... "
@@ -2249,7 +2236,7 @@ The guildmaster of lone town
 contributes us lots of money.
 @match *
 Bauer looks down on our funds.
-He thinks that we have little money to 
+He thinks that we have little money to
 continue the war.
 But due to the great Contributor,
 we are rich!
@@ -2264,7 +2251,6 @@ ac -70
 x 9
 y 2
 level 15
-immune 29
 carrying 100
 is_animated 0
 reflect_missile 1
@@ -2272,6 +2258,7 @@ reflect_spell 1
 can_use_armour 0
 can_use_weapon 0
 can_use_skill 0
+immune 29
 arch key2
 name General Key
 slaying 94511055
@@ -2470,7 +2457,7 @@ x 9
 y 34
 end
 arch exit
-slaying world
+slaying /world/world_103_104
 hp 15
 sp 24
 x 9
@@ -2649,8 +2636,8 @@ arch grate_closed_1
 x 10
 y 31
 speed 0.500000
-protected 1
 connected 1
+protected 1
 end
 arch magic_ear
 msg
@@ -2659,8 +2646,8 @@ Click.
 endmsg
 x 10
 y 32
-protected 1
 connected 1
+protected 1
 end
 arch dungeon_magic
 x 10
@@ -2682,9 +2669,9 @@ arch grate_open_1
 x 10
 y 33
 speed 0.500000
-protected 1
 value 1
 connected 1
+protected 1
 end
 arch dungeon_magic
 x 10
@@ -2699,7 +2686,7 @@ x 10
 y 35
 end
 arch exit
-slaying world
+slaying /world/world_103_104
 hp 15
 sp 24
 x 10
@@ -2885,7 +2872,7 @@ x 11
 y 34
 end
 arch exit
-slaying world
+slaying /world/world_103_104
 hp 15
 sp 24
 x 11
@@ -2933,7 +2920,7 @@ To the south from here. We must rapidly
 rescue our lord, Eureca!
 @match *
 The Barrier House prevents us from
-invading Nurnberg. 
+invading Nurnberg.
 endmsg
 hp 500
 x 12
@@ -3091,8 +3078,6 @@ y 22
 end
 arch cleric
 name cleric soldier
-msg
-endmsg
 hp 100
 x 12
 y 22
@@ -3266,7 +3251,7 @@ y 34
 speed_left -1.000000
 end
 arch exit
-slaying world
+slaying /world/world_103_104
 hp 15
 sp 24
 x 12
@@ -3338,7 +3323,7 @@ please go to the tavern in lown town
 and talk with a thief.
 If you don't know how to open the
 doors in the escape passage, then
-go to the tavern in lown town, 
+go to the tavern in lown town,
 and talk with the learned man.
 @match Hidden|hidden|Exit|exit
 You can see the hidden exit by using
@@ -3466,23 +3451,9 @@ arch swall_2_1_2
 x 13
 y 33
 end
-arch exit
-slaying world
-hp 15
-sp 24
-x 13
-y 34
-end
 arch small_stones
 x 13
 y 34
-end
-arch exit
-slaying world
-hp 15
-sp 24
-x 13
-y 35
 end
 arch dungeon_magic
 x 13
@@ -3668,8 +3639,6 @@ y 22
 end
 arch cleric
 name cleric soldier
-msg
-endmsg
 hp 100
 x 14
 y 22

@@ -1,0 +1,659 @@
+arch map
+name Iscar's house
+difficulty 1
+region navar
+width 10
+height 10
+enter_x 2
+enter_y 9
+msg
+Created:  2008-02-09 Nicolas Weeger
+Modified: 2019-03-12 Acer
+endmsg
+end
+arch whiteslate
+end
+arch white_wall_2_2_2
+end
+arch whiteslate
+y 1
+end
+arch white_wall_2_1_1
+y 1
+end
+arch whiteslate
+y 2
+end
+arch white_wall_2_1_1
+y 2
+end
+arch whiteslate
+y 3
+end
+arch white_wall_2_1_1
+y 3
+end
+arch whiteslate
+y 4
+end
+arch white_wall_3_2
+y 4
+end
+arch whiteslate
+y 5
+end
+arch white_wall_2_1_1
+y 5
+end
+arch whiteslate
+y 6
+end
+arch white_wall_3_2
+y 6
+end
+arch whiteslate
+y 7
+end
+arch white_wall_2_1_1
+y 7
+end
+arch whiteslate
+y 8
+end
+arch white_wall_2_1_1
+y 8
+end
+arch whiteslate
+y 9
+end
+arch white_wall_2_2_1
+y 9
+end
+arch whiteslate
+x 1
+end
+arch white_wall_2_1_2
+x 1
+end
+arch whiteslate
+x 1
+y 1
+end
+arch bookshelf
+x 1
+y 1
+end
+arch whiteslate
+x 1
+y 2
+end
+arch whiteslate
+x 1
+y 3
+end
+arch whiteslate
+x 1
+y 4
+end
+arch white_wall_2_1_2
+x 1
+y 4
+end
+arch whiteslate
+x 1
+y 5
+end
+arch whiteslate
+x 1
+y 6
+end
+arch white_wall_1_3
+x 1
+y 6
+end
+arch whiteslate
+x 1
+y 7
+end
+arch whiteslate
+x 1
+y 8
+end
+arch whiteslate
+x 1
+y 9
+end
+arch white_wall_1_3
+x 1
+y 9
+end
+arch whiteslate
+x 2
+end
+arch white_wall_2_1_2
+x 2
+end
+arch whiteslate
+x 2
+y 1
+end
+arch table_burl_3
+x 2
+y 1
+end
+arch whiteslate
+x 2
+y 2
+end
+arch chair_1.3
+x 2
+y 2
+end
+arch whiteslate
+x 2
+y 3
+end
+arch whiteslate
+x 2
+y 4
+end
+arch white_wall_2_1_2
+x 2
+y 4
+end
+arch whiteslate
+x 2
+y 5
+end
+arch whiteslate
+x 2
+y 6
+end
+arch whiteslate
+x 2
+y 7
+end
+arch whiteslate
+x 2
+y 8
+end
+arch whiteslate
+slaying /world/world_122_117
+sp 14
+x 2
+y 9
+end
+arch oakdoor_2
+slaying /world/world_122_116
+hp 10
+sp 44
+x 2
+y 9
+end
+arch whiteslate
+x 3
+end
+arch white_wall_2_1_2
+x 3
+end
+arch whiteslate
+x 3
+y 1
+end
+arch bookshelf
+x 3
+y 1
+end
+arch whiteslate
+x 3
+y 2
+end
+arch whiteslate
+x 3
+y 3
+end
+arch whiteslate
+x 3
+y 4
+end
+arch white_wall_2_1_2
+x 3
+y 4
+end
+arch whiteslate
+x 3
+y 5
+end
+arch child
+msg
+@match why
+I lost my pen somewhere, and I don't have any spare one.
+@match what|job
+@question why Why can't you write?
+I'm a writer, I write books for children.  But I can't write now...
+@match *
+@question job What are you doing?
+Hello.
+endmsg
+x 3
+y 5
+speed 0.1
+arch npc_dialog
+name /navar_city/iscar.msg
+end
+arch NPCGift
+name reward
+arch card
+name Iscar's autograph
+msg
+The signature is complex, but you manage to read "from Iscar, to his great fan".
+endmsg
+value 0
+identified 1
+end
+end
+end
+arch whiteslate
+x 3
+y 6
+end
+arch white_wall_1_1
+x 3
+y 6
+end
+arch whiteslate
+x 3
+y 7
+end
+arch white_wall_2_1_1
+x 3
+y 7
+end
+arch whiteslate
+x 3
+y 8
+end
+arch white_wall_2_1_1
+x 3
+y 8
+end
+arch whiteslate
+x 3
+y 9
+end
+arch white_wall_2_2_1
+x 3
+y 9
+end
+arch whiteslate
+x 4
+end
+arch white_wall_3_3
+x 4
+end
+arch whiteslate
+x 4
+y 1
+end
+arch white_wall_2_1_1
+x 4
+y 1
+end
+arch whiteslate
+x 4
+y 2
+end
+arch white_wall_1_2
+x 4
+y 2
+end
+arch whiteslate
+x 4
+y 3
+end
+arch whiteslate
+x 4
+y 4
+end
+arch white_wall_1_3
+x 4
+y 4
+end
+arch whiteslate
+x 4
+y 5
+end
+arch whiteslate
+x 4
+y 6
+end
+arch whiteslate
+x 4
+y 7
+end
+arch whiteslate
+x 4
+y 8
+end
+arch whiteslate
+x 4
+y 9
+end
+arch white_wall_2_1_2
+x 4
+y 9
+end
+arch whiteslate
+x 5
+end
+arch white_wall_2_1_2
+x 5
+end
+arch whiteslate
+x 5
+y 1
+end
+arch whiteslate
+x 5
+y 2
+end
+arch whiteslate
+x 5
+y 3
+end
+arch whiteslate
+x 5
+y 4
+end
+arch whiteslate
+x 5
+y 5
+end
+arch whiteslate
+x 5
+y 6
+end
+arch white_wall_1_4
+x 5
+y 6
+end
+arch whiteslate
+x 5
+y 7
+end
+arch whiteslate
+x 5
+y 8
+end
+arch whiteslate
+x 5
+y 9
+end
+arch white_wall_2_1_2
+x 5
+y 9
+end
+arch whiteslate
+x 6
+end
+arch white_wall_3_3
+x 6
+end
+arch whiteslate
+x 6
+y 1
+end
+arch white_wall_2_1_1
+x 6
+y 1
+end
+arch whiteslate
+x 6
+y 2
+end
+arch white_wall_2_1_1
+x 6
+y 2
+end
+arch whiteslate
+x 6
+y 3
+end
+arch white_wall_2_1_1
+x 6
+y 3
+end
+arch whiteslate
+x 6
+y 4
+end
+arch white_wall_2_2_1
+x 6
+y 4
+end
+arch whiteslate
+x 6
+y 5
+end
+arch whiteslate
+x 6
+y 6
+end
+arch white_wall_2_1_2
+x 6
+y 6
+end
+arch whiteslate
+x 6
+y 7
+end
+arch whiteslate
+x 6
+y 8
+end
+arch whiteslate
+x 6
+y 9
+end
+arch white_wall_2_1_2
+x 6
+y 9
+end
+arch whiteslate
+x 7
+end
+arch white_wall_2_1_2
+x 7
+end
+arch whiteslate
+x 7
+y 1
+end
+arch chair_1.1
+x 7
+y 1
+end
+arch whiteslate
+x 7
+y 2
+end
+arch table_2
+x 7
+y 2
+end
+arch whiteslate
+x 7
+y 3
+end
+arch whiteslate
+x 7
+y 4
+end
+arch white_wall_1_3
+x 7
+y 4
+end
+arch whiteslate
+x 7
+y 5
+end
+arch whiteslate
+x 7
+y 6
+end
+arch white_wall_2_1_2
+x 7
+y 6
+end
+arch whiteslate
+x 7
+y 7
+end
+arch whiteslate
+x 7
+y 8
+end
+arch whiteslate
+x 7
+y 9
+end
+arch white_wall_win2
+x 7
+y 9
+end
+arch whiteslate
+x 8
+end
+arch white_wall_2_1_2
+x 8
+end
+arch whiteslate
+x 8
+y 1
+end
+arch bookshelf_right
+x 8
+y 1
+end
+arch whiteslate
+x 8
+y 2
+end
+arch whiteslate
+x 8
+y 3
+end
+arch whiteslate
+x 8
+y 4
+end
+arch whiteslate
+x 8
+y 5
+end
+arch whiteslate
+x 8
+y 6
+end
+arch white_wall_2_1_2
+x 8
+y 6
+end
+arch whiteslate
+x 8
+y 7
+end
+arch whiteslate
+x 8
+y 8
+end
+arch bed_1
+x 8
+y 8
+end
+arch whiteslate
+x 8
+y 9
+end
+arch white_wall_2_1_2
+x 8
+y 9
+end
+arch whiteslate
+x 9
+end
+arch white_wall_2_2_3
+x 9
+end
+arch whiteslate
+x 9
+y 1
+end
+arch white_wall_2_1_1
+x 9
+y 1
+end
+arch whiteslate
+x 9
+y 2
+end
+arch white_wall_2_1_1
+x 9
+y 2
+end
+arch whiteslate
+x 9
+y 3
+end
+arch white_wall_2_1_1
+x 9
+y 3
+end
+arch whiteslate
+x 9
+y 4
+end
+arch white_wall_2_1_1
+x 9
+y 4
+end
+arch whiteslate
+x 9
+y 5
+end
+arch white_wall_2_1_1
+x 9
+y 5
+end
+arch whiteslate
+x 9
+y 6
+end
+arch white_wall_3_4
+x 9
+y 6
+end
+arch whiteslate
+x 9
+y 7
+end
+arch white_wall_2_1_1
+x 9
+y 7
+end
+arch whiteslate
+x 9
+y 8
+end
+arch white_wall_2_1_1
+x 9
+y 8
+end
+arch whiteslate
+x 9
+y 9
+end
+arch white_wall_2_2_4
+x 9
+y 9
+end

@@ -3,7 +3,7 @@ name <unnamed>
 width 40
 height 40
 msg
-Modified: 2018-12-31 Acer
+Modified: 2019-03-12 Acer
 endmsg
 end
 arch westcwall_2_2_2
@@ -1375,6 +1375,14 @@ end
 arch westcwall_2_1_2
 x 22
 end
+arch bag
+Str 100
+x 22
+y 10
+nrof 10
+material 256
+container 0
+end
 arch perm_magic_portal
 name Raffles
 name_pl Raffles
@@ -1444,6 +1452,26 @@ y 39
 end
 arch westcwall_2_1_2
 x 24
+end
+arch altar
+name Buildable Floor Tile Maker (1 silver per tile)
+slaying money
+food 1
+x 24
+y 10
+connected 5
+activate_on_release 0
+end
+arch creator
+x 24
+y 10
+connected 5
+lifesave 1
+arch tile_white_floor
+name Buildable Floor Tile
+unique 1
+is_buildable 1
+end
 end
 arch perm_magic_portal
 name Ancient Pupland
@@ -1596,27 +1624,12 @@ end
 arch shop_ring
 exp 1000
 x 25
-y 32
-end
-arch shop_ring
-exp 1000
-x 25
 y 33
 end
 arch shop_ring
 exp 1000
 x 25
 y 33
-end
-arch shop_ring
-exp 1000
-x 25
-y 33
-end
-arch shop_ring
-exp 1000
-x 25
-y 34
 end
 arch shop_ring
 exp 1000
@@ -1641,16 +1654,6 @@ end
 arch shop_ring
 exp 1000
 x 25
-y 35
-end
-arch shop_ring
-exp 1000
-x 25
-y 36
-end
-arch shop_ring
-exp 1000
-x 25
 y 36
 end
 arch shop_ring
@@ -1667,16 +1670,6 @@ arch shop_ring
 exp 1000
 x 25
 y 37
-end
-arch shop_ring
-exp 1000
-x 25
-y 37
-end
-arch shop_ring
-exp 1000
-x 25
-y 38
 end
 arch shop_ring
 exp 1000

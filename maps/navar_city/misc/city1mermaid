@@ -1,13 +1,14 @@
 arch map
 name Frolicing Mermaid
 region navar
+width 21
+height 13
 msg
 Creator:
 Email:
 Date: Wed Oct 27 14:25:52 1993
+Modified: 2019-03-12 Acer
 endmsg
-width 21
-height 13
 end
 arch woodfloor
 end
@@ -104,9 +105,9 @@ x 1
 y 2
 end
 arch pirate
-unaggressive 1
 x 1
 y 2
+unaggressive 1
 end
 arch woodfloor
 x 1
@@ -125,9 +126,9 @@ x 1
 y 5
 end
 arch pirate_lass
-unaggressive 1
 x 1
 y 5
+unaggressive 1
 end
 arch woodfloor
 x 1
@@ -142,9 +143,9 @@ x 1
 y 7
 end
 arch pirate
-unaggressive 1
 x 1
 y 7
+unaggressive 1
 end
 arch woodfloor
 x 1
@@ -155,9 +156,9 @@ x 1
 y 8
 end
 arch pirate
-unaggressive 1
 x 1
 y 8
+unaggressive 1
 end
 arch woodfloor
 x 1
@@ -177,17 +178,17 @@ y 11
 end
 arch pirate_lass
 name Cindy Loo
-arch event_say
-title Python
-slaying /python/IPO/seen.py
-end
 msg
 @match *
 I ain't seen nuthin.
 endmsg
-unaggressive 1
 x 1
 y 11
+unaggressive 1
+arch event_say
+title Python
+slaying /python/IPO/seen.py
+end
 end
 arch woodfloor
 x 1
@@ -212,9 +213,9 @@ x 2
 y 1
 end
 arch pirate
-unaggressive 1
 x 2
 y 1
+unaggressive 1
 end
 arch woodfloor
 x 2
@@ -237,9 +238,9 @@ x 2
 y 4
 end
 arch pirate
-unaggressive 1
 x 2
 y 4
+unaggressive 1
 end
 arch woodfloor
 x 2
@@ -258,9 +259,9 @@ x 2
 y 6
 end
 arch pirate
-unaggressive 1
 x 2
 y 6
+unaggressive 1
 end
 arch woodfloor
 x 2
@@ -289,13 +290,13 @@ The Smuggler's Cove is a tiny inlet just southwest of Navar where the top smuggl
 The Smugglers have been conducting a lot of business these past days
 but a honest bloke like me wouldn't know what that was about.
 endmsg
+food 1
+x 2
+y 10
 connected 5
 walk_on 0
 fly_on 0
-food 1
 activate_on_release 0
-x 2
-y 10
 end
 arch woodfloor
 x 2
@@ -317,25 +318,25 @@ Well maybe if you drop a hundred gold on this table here I'd tell ya about that.
 This chick's seen it all.
 She knows everyone.
 endmsg
-unaggressive 1
 x 2
 y 10
+unaggressive 1
 end
 arch altar
 slaying goldcoin
 food 100
+x 2
+y 11
 connected 5
-x 2
-y 11
 end
 arch woodfloor
 x 2
 y 11
 end
 arch table_4
+x 2
+y 11
 no_pick 1
-x 2
-y 11
 end
 arch woodfloor
 x 2
@@ -360,9 +361,9 @@ x 3
 y 1
 end
 arch pirate
-unaggressive 1
 x 3
 y 1
+unaggressive 1
 end
 arch woodfloor
 x 3
@@ -373,9 +374,9 @@ x 3
 y 2
 end
 arch pirate
-unaggressive 1
 x 3
 y 2
+unaggressive 1
 end
 arch woodfloor
 x 3
@@ -394,9 +395,9 @@ x 3
 y 5
 end
 arch pirate
-unaggressive 1
 x 3
 y 5
+unaggressive 1
 end
 arch woodfloor
 x 3
@@ -515,9 +516,9 @@ x 5
 y 1
 end
 arch pirate
-unaggressive 1
 x 5
 y 1
+unaggressive 1
 end
 arch woodfloor
 x 5
@@ -564,9 +565,9 @@ x 5
 y 11
 end
 arch pirate
-unaggressive 1
 x 5
 y 11
+unaggressive 1
 end
 arch woodfloor
 x 5
@@ -623,18 +624,18 @@ x 6
 y 7
 end
 arch bench_1_1
-no_pass 1
 x 6
 y 7
+no_pass 1
 end
 arch woodfloor
 x 6
 y 8
 end
 arch bench_2_2_1
-no_pass 1
 x 6
 y 8
+no_pass 1
 end
 arch woodfloor
 x 6
@@ -649,9 +650,9 @@ x 6
 y 10
 end
 arch pirate
-unaggressive 1
 x 6
 y 10
+unaggressive 1
 end
 arch woodfloor
 x 6
@@ -684,9 +685,9 @@ x 7
 y 1
 end
 arch pirate
-unaggressive 1
 x 7
 y 1
+unaggressive 1
 end
 arch woodfloor
 x 7
@@ -725,9 +726,9 @@ x 7
 y 8
 end
 arch bench_2_1_2
-no_pass 1
 x 7
 y 8
+no_pass 1
 end
 arch woodfloor
 x 7
@@ -763,9 +764,8 @@ always looking for new people to tell about TCI.
 @match *
 Hi there young'un. Wanna join TCI?
 endmsg
-reflect_missile 1
-reflect_spell 1
-friendly 1
+x 7
+y 11
 resist_physical 100
 resist_magic 100
 resist_fire 100
@@ -779,16 +779,17 @@ resist_ghosthit 100
 resist_poison 100
 resist_slow 100
 resist_paralyze 100
+resist_turn_undead 100
 resist_fear 100
 resist_deplete 100
-resist_turn_undead 100
 resist_death 100
 resist_chaos 100
-resist_blind 100
-resist_holyword 100
 resist_godpower 100
-x 7
-y 11
+resist_holyword 100
+resist_blind 100
+friendly 1
+reflect_missile 1
+reflect_spell 1
 end
 arch woodfloor
 x 7
@@ -846,11 +847,11 @@ y 7
 end
 arch halfling2
 name Pip
+title the barkeep
 msg
 @match *
 What a rowdy lot!
 endmsg
-title the barkeep
 x 8
 y 7
 end
@@ -859,9 +860,9 @@ x 8
 y 8
 end
 arch bench_2_1_2
-no_pass 1
 x 8
 y 8
+no_pass 1
 end
 arch woodfloor
 x 8
@@ -898,9 +899,9 @@ x 9
 y 1
 end
 arch pirate_lass
-unaggressive 1
 x 9
 y 1
+unaggressive 1
 end
 arch woodfloor
 x 9
@@ -939,9 +940,9 @@ x 9
 y 8
 end
 arch bench_2_1_2
-no_pass 1
 x 9
 y 8
+no_pass 1
 end
 arch woodfloor
 x 9
@@ -1022,9 +1023,9 @@ x 10
 y 8
 end
 arch bench_2_1_2
-no_pass 1
 x 10
 y 8
+no_pass 1
 end
 arch woodfloor
 x 10
@@ -1100,9 +1101,9 @@ x 11
 y 8
 end
 arch bench_1_3
-no_pass 1
 x 11
 y 8
+no_pass 1
 end
 arch woodfloor
 x 11
@@ -1138,10 +1139,10 @@ x 12
 y 1
 end
 arch door_look_2
-no_pass 0
-blocksview 1
 x 12
 y 1
+no_pass 0
+blocksview 1
 end
 arch woodfloor
 x 12
@@ -1296,10 +1297,10 @@ x 14
 y 1
 end
 arch door_look_2
-no_pass 0
-blocksview 1
 x 14
 y 1
+no_pass 0
+blocksview 1
 end
 arch woodfloor
 x 14
@@ -1350,10 +1351,10 @@ x 14
 y 8
 end
 arch door_look_2
-no_pass 0
-blocksview 1
 x 14
 y 8
+no_pass 0
+blocksview 1
 end
 arch woodfloor
 x 14
@@ -1376,10 +1377,10 @@ x 14
 y 11
 end
 arch door_look_2
-no_pass 0
-blocksview 1
 x 14
 y 11
+no_pass 0
+blocksview 1
 end
 arch woodfloor
 x 14
@@ -1416,9 +1417,9 @@ Go away shilly...weave me awone...
 endmsg
 hp 50
 maxhp 50
-unaggressive 1
 x 15
 y 3
+unaggressive 1
 end
 arch woodfloor
 x 15
@@ -1711,9 +1712,9 @@ Go away shilly...weave me awone...
 endmsg
 hp 50
 maxhp 50
-unaggressive 1
 x 18
 y 7
+unaggressive 1
 end
 arch woodfloor
 x 18
@@ -1740,6 +1741,13 @@ x 18
 y 10
 end
 arch woodfloor
+x 18
+y 11
+end
+arch stair_3_down
+slaying navarwiz
+hp 5
+sp 5
 x 18
 y 11
 end
@@ -1771,10 +1779,10 @@ I gotta get back to see the boss...
 endmsg
 hp 50
 maxhp 50
-carrying 100
-unaggressive 1
 x 19
 y 1
+carrying 100
+unaggressive 1
 arch key2
 name A Key
 slaying set_individual_value smugdoor
@@ -1793,10 +1801,10 @@ x 19
 y 4
 end
 arch door_look_1
-no_pass 0
-blocksview 1
 x 19
 y 4
+no_pass 0
+blocksview 1
 end
 arch woodfloor
 x 19
@@ -1807,10 +1815,10 @@ x 19
 y 6
 end
 arch door_look_1
-no_pass 0
-blocksview 1
 x 19
 y 6
+no_pass 0
+blocksview 1
 end
 arch woodfloor
 x 19

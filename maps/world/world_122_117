@@ -11,7 +11,7 @@ msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Jun  2 21:41:28 2002
-Modified: 2019-01-30 Acer
+Modified: 2019-03-12 Acer
 endmsg
 outdoor 1
 tile_path_1 world_122_116
@@ -139,25 +139,16 @@ end
 arch grass
 y 13
 end
-arch s_house1
-y 13
-end
 arch dungeon_magic
 y 14
 end
 arch grass
 y 14
 end
-arch s_house1
-y 14
-end
 arch dungeon_magic
 y 15
 end
 arch grass
-y 15
-end
-arch s_house1
 y 15
 end
 arch grass
@@ -375,18 +366,6 @@ x 1
 y 7
 end
 arch grass
-x 1
-y 7
-end
-arch s_shop1
-name Imperial Post
-name_pl Imperial Post
-slaying /navar_city/misc/IPO_navar
-msg
-!Ding
-endmsg
-hp 5
-sp 8
 x 1
 y 7
 end
@@ -787,10 +766,6 @@ x 2
 y 13
 end
 arch grass
-x 2
-y 13
-end
-arch hovels
 x 2
 y 13
 end
@@ -1741,6 +1716,8 @@ arch guild_west
 name Central Library
 name_pl Central Library
 slaying /navar_city/misc/library
+hp 9
+sp 15
 x 5
 y 4
 end
@@ -1843,6 +1820,8 @@ arch guild_west
 name Guild of the Dreaming Sage
 name_pl Guild of the Dreaming Sage
 slaying /navar_city/dreaming_sage/ground
+hp 22
+sp 38
 x 5
 y 13
 end
@@ -2825,7 +2804,7 @@ arch cobblestones2
 x 8
 y 12
 end
-arch bridge_we
+arch river_bridge_we
 x 8
 y 12
 end
@@ -2837,7 +2816,7 @@ arch cobblestones2
 x 8
 y 13
 end
-arch bridge_we
+arch river_bridge_we
 x 8
 y 13
 end
@@ -3155,7 +3134,7 @@ arch cobblestones2
 x 9
 y 8
 end
-arch bridge_we
+arch river_bridge_we
 x 9
 y 8
 end
@@ -3439,10 +3418,6 @@ x 10
 y 2
 end
 arch grass
-x 10
-y 2
-end
-arch minihouse
 x 10
 y 2
 end
@@ -4814,7 +4789,7 @@ arch cobblestones2
 x 14
 y 5
 end
-arch bridge_ns
+arch river_bridge_ns
 x 14
 y 5
 end
@@ -5147,7 +5122,7 @@ arch cobblestones2
 x 15
 y 5
 end
-arch bridge_ns
+arch river_bridge_ns
 x 15
 y 5
 end
@@ -5855,7 +5830,7 @@ arch cobblestones2
 x 17
 y 5
 end
-arch bridge_ns
+arch river_bridge_ns
 x 17
 y 5
 end

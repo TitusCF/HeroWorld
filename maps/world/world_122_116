@@ -11,7 +11,7 @@ msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Jun  2 20:54:49 2002
-Modified: 2019-03-11 Acer
+Modified: 2019-03-12 Acer
 endmsg
 outdoor 1
 tile_path_1 world_122_115
@@ -243,9 +243,6 @@ arch dungeon_magic
 y 39
 end
 arch grass
-y 39
-end
-arch barrack_up
 y 39
 end
 arch dungeon_magic
@@ -965,6 +962,10 @@ y 39
 no_pass 1
 end
 arch university
+name University
+slaying /navar_city/university
+hp 21
+sp 37
 x 2
 y 39
 end
@@ -3814,19 +3815,11 @@ arch grass
 x 10
 y 42
 end
-arch hovels
-x 10
-y 42
-end
 arch dungeon_magic
 x 10
 y 43
 end
 arch grass
-x 10
-y 43
-end
-arch hovels
 x 10
 y 43
 end
@@ -3838,7 +3831,11 @@ arch grass
 x 10
 y 44
 end
-arch hovels
+arch house_2
+name Iscar's house
+slaying /navar_city/iscar
+hp 2
+sp 9
 x 10
 y 44
 end
@@ -4482,19 +4479,11 @@ arch grass
 x 12
 y 42
 end
-arch house_small
-x 12
-y 42
-end
 arch dungeon_magic
 x 12
 y 43
 end
 arch grass
-x 12
-y 43
-end
-arch house_small
 x 12
 y 43
 end

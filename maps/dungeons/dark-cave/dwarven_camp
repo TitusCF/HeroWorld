@@ -1,0 +1,477 @@
+arch map
+name Dark Cave, Dwarven Camp
+difficulty 1
+region wilderness
+width 10
+height 10
+msg
+Creator: jesse
+Date:    2009-10-06
+A small camp of dwarven refugees, tired and beaten.
+Modified: 2012-12-31 Rick Tanner
+endmsg
+outdoor 1
+end
+arch grassmedium
+end
+arch brush
+y 1
+end
+arch evergreen
+y 2
+end
+arch brush
+y 3
+end
+arch grassmedium
+y 4
+end
+arch brush
+y 5
+end
+arch brush
+y 6
+end
+arch brush
+y 7
+end
+arch brush
+y 8
+end
+arch brush
+y 9
+end
+arch brush
+x 1
+end
+arch brush
+x 1
+y 1
+end
+arch grassmedium
+x 1
+y 2
+end
+arch evergreen
+x 1
+y 3
+end
+arch brush
+x 1
+y 4
+end
+arch grassmedium
+x 1
+y 5
+end
+arch brush
+x 1
+y 6
+end
+arch brush
+x 1
+y 7
+end
+arch brush
+x 1
+y 8
+end
+arch brush
+x 1
+y 9
+end
+arch brush
+x 2
+end
+arch brush
+x 2
+y 1
+end
+arch grassmedium
+x 2
+y 2
+end
+arch grassmedium
+x 2
+y 3
+end
+arch pstone_1
+x 2
+y 4
+end
+arch grassmedium
+x 2
+y 5
+end
+arch grassmedium
+x 2
+y 6
+end
+arch evergreen
+x 2
+y 7
+end
+arch brush
+x 2
+y 8
+end
+arch brush
+x 2
+y 9
+end
+arch brush
+x 3
+end
+arch grassmedium
+x 3
+y 1
+end
+arch grassmedium
+x 3
+y 2
+end
+arch pstone_1
+x 3
+y 3
+end
+arch pstone_1
+x 3
+y 4
+end
+arch dwarf
+msg
+@match *
+Hmph...
+endmsg
+x 3
+y 4
+end
+arch pstone_1
+x 3
+y 5
+end
+arch pstone_1
+x 3
+y 6
+end
+arch grassmedium
+x 3
+y 7
+end
+arch grassmedium
+x 3
+y 8
+end
+arch grassmedium
+x 3
+y 9
+end
+arch grassmedium
+x 4
+end
+arch evergreen
+x 4
+y 1
+end
+arch grassmedium
+x 4
+y 2
+end
+arch pstone_1
+x 4
+y 3
+end
+arch dwarf
+msg
+@match *
+Hrrm...
+endmsg
+x 4
+y 3
+end
+arch pstone_1
+x 4
+y 4
+end
+arch pstone_1
+x 4
+y 5
+end
+arch campfire
+x 4
+y 5
+end
+arch pstone_1
+x 4
+y 6
+end
+arch pstone_1
+x 4
+y 7
+end
+arch dwarf
+msg
+@match *
+Harrumph!
+endmsg
+x 4
+y 7
+end
+arch grassmedium
+x 4
+y 8
+end
+arch brush
+x 4
+y 9
+end
+arch grassmedium
+x 5
+end
+arch grassmedium
+x 5
+y 1
+end
+arch grassmedium
+x 5
+y 2
+end
+arch pstone_1
+x 5
+y 3
+end
+arch pstone_1
+x 5
+y 4
+end
+arch magic_mouth
+msg
+Hail, good fellow!  You bring news?  Ah, but that is good to hear!  Please, take this letter to the mine town south of here.  Find the last band of dwarves, hidden deep in the tombs, and deliver your message!
+endmsg
+x 5
+y 5
+invisible 0
+connected 1
+walk_on 0
+fly_on 0
+activate_on_push 0
+activate_on_release 0
+end
+arch pstone_1
+x 5
+y 5
+end
+arch dwarf_priest
+msg
+@match mine|Mine|town|Town|Grondell|Quest|quest
+We are from Grondell, a small mining town south of here.  But Grondell has fallen. The Red Foot tribe invaded our peaceful village two months ago.  They captured many of our brethren and occupy the village still.  Will you help us free our comrades?
+@match dwarves|dwarfs|captured|free|yes|Yes|OK
+The Red Foot tribal cave is just north of the nearby inn.  Our comrades are being held there.
+@match letter|Letter
+You've returned with a letter?  Wonderful! But it doesn't appear to be for me.  I understand that some dwarves escaped the invasion and are hidden in the mine's tombs.  If you find them, you can deliver the letter.
+@match *
+Eh?  Didn't quite catch that.
+endmsg
+x 5
+y 5
+end
+arch pstone_1
+x 5
+y 6
+end
+arch pstone_1
+x 5
+y 7
+end
+arch grassmedium
+x 5
+y 8
+end
+arch grassmedium
+x 5
+y 9
+end
+arch grassmedium
+x 6
+end
+arch grassmedium
+x 6
+y 1
+end
+arch grassmedium
+x 6
+y 2
+end
+arch magic_mouth
+msg
+A handful of dwarves sit 'round the campfire.  The eldest greets you. "Welcome to our camp!  I am afraid we have not much to offer you.  We are refugees from the mining town of Grondell and our stores are low, but we will share what we can."
+endmsg
+x 6
+y 3
+end
+arch footpath_2_2_2
+x 6
+y 3
+end
+arch check_inv
+slaying A blood-stained letter, written in crayon
+x 6
+y 4
+last_sp 0
+connected 1
+end
+arch pstone_1
+x 6
+y 4
+end
+arch pstone_1
+x 6
+y 5
+end
+arch pstone_1
+x 6
+y 6
+end
+arch grassmedium
+x 6
+y 7
+end
+arch brush
+x 6
+y 8
+end
+arch grassmedium
+x 6
+y 9
+end
+arch grassmedium
+x 7
+end
+arch grassmedium
+x 7
+y 1
+end
+arch footpath_2_2_2
+x 7
+y 2
+end
+arch footpath_2_2_4
+x 7
+y 3
+end
+arch grassmedium
+x 7
+y 4
+end
+arch evergreen
+x 7
+y 5
+end
+arch grassmedium
+x 7
+y 6
+end
+arch grassmedium
+x 7
+y 7
+end
+arch brush
+x 7
+y 8
+end
+arch brush
+x 7
+y 9
+end
+arch grassmedium
+x 8
+end
+arch footpath_2_2_2
+x 8
+y 1
+end
+arch footpath_2_2_4
+x 8
+y 2
+end
+arch brush
+x 8
+y 3
+end
+arch brush
+x 8
+y 4
+end
+arch grassmedium
+x 8
+y 5
+end
+arch grassmedium
+x 8
+y 6
+end
+arch grassmedium
+x 8
+y 7
+end
+arch brush
+x 8
+y 8
+end
+arch evergreens
+x 8
+y 9
+end
+arch teleporter
+slaying /world/world_112_116
+hp 4
+sp 43
+x 9
+invisible 1
+end
+arch invis_exit
+slaying /world/world_112_116
+hp 4
+sp 43
+x 9
+move_on all
+end
+arch footpath_2_2_2
+x 9
+end
+arch footpath_2_2_4
+x 9
+y 1
+end
+arch grassmedium
+x 9
+y 2
+end
+arch brush
+x 9
+y 3
+end
+arch brush
+x 9
+y 4
+end
+arch brush
+x 9
+y 5
+end
+arch grassmedium
+x 9
+y 6
+end
+arch brush
+x 9
+y 7
+end
+arch evergreens
+x 9
+y 8
+end
+arch evergreens
+x 9
+y 9
+end

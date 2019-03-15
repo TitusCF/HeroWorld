@@ -12,7 +12,7 @@ Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Dec 16 20:41:49 2001
 arch
-Modified: 2019-03-10 Acer
+Modified: 2019-03-12 Acer
 endmsg
 outdoor 1
 tile_path_1 world_104_114
@@ -6905,8 +6905,9 @@ x 26
 y 48
 end
 arch well
-name A small well
+name Manhole to Old Scorn
 slaying /scorn/oldcity/oldcity11
+face manhole.114
 hp 4
 sp 15
 x 26
@@ -7879,15 +7880,11 @@ arch cobblestones2
 x 30
 y 41
 end
-arch grass
+arch cobblestones2
 x 30
 y 42
 end
-arch grass
-x 30
-y 43
-end
-arch tree5
+arch cobblestones2
 x 30
 y 43
 end
@@ -8115,19 +8112,19 @@ arch cobblestones2
 x 31
 y 41
 end
+arch cobblestones2
+x 31
+y 42
+end
 arch well
 name dry well
 slaying /scorn/misc/drywell
 hp 1
 sp 1
 x 31
-y 41
-end
-arch grass
-x 31
 y 42
 end
-arch grass
+arch cobblestones2
 x 31
 y 43
 end
@@ -8934,11 +8931,8 @@ sp 17
 x 34
 y 45
 end
-arch mountain3
-x 34
-y 45
-end
 arch brush
+face smallpark.111
 x 34
 y 45
 end
@@ -9489,6 +9483,7 @@ end
 arch well
 name forgotten well
 slaying /elmex/mana_fountain_dungeon1
+face ruins.111
 hp 2
 sp 2
 x 36
@@ -10447,15 +10442,15 @@ arch grass
 x 40
 y 34
 end
+arch tree5
+x 40
+y 34
+end
 arch grass
 x 40
 y 35
 end
 arch grass
-x 40
-y 36
-end
-arch tree4
 x 40
 y 36
 end
@@ -10934,11 +10929,23 @@ arch grass
 x 42
 y 34
 end
+arch brazier
+x 42
+y 34
+end
 arch grass
 x 42
 y 35
 end
+arch tree5
+x 42
+y 35
+end
 arch grass
+x 42
+y 36
+end
+arch brazier
 x 42
 y 36
 end
@@ -11175,11 +11182,26 @@ arch grass
 x 43
 y 34
 end
+arch tree4
+x 43
+y 34
+end
 arch grass
 x 43
 y 35
 end
+arch bungalow
+name Permanent Apartments
+slaying /scorn/apartment/apartments
+x 43
+y 35
+unique 1
+end
 arch grass
+x 43
+y 36
+end
+arch tree3
 x 43
 y 36
 end
@@ -11416,22 +11438,19 @@ arch grass
 x 44
 y 34
 end
-arch grass
+arch brazier
+x 44
+y 34
+end
+arch cobblestones2
 x 44
 y 35
 end
 arch grass
 x 44
-y 35
+y 36
 end
-arch bungalow
-name Permanent Apartments
-slaying /scorn/apartment/apartments
-x 44
-y 35
-unique 1
-end
-arch grass
+arch brazier
 x 44
 y 36
 end

@@ -1,23 +1,24 @@
 arch map
-region navar
 name city1magic
 reset_timeout 7200
 fixed_resettime 1
 difficulty 15
+region navar
+shopitems power_crystal:30;rod:36;skillscroll:15;weapon improver:10;armour improver:10;scroll:32;wand:34;spellbook:42;ring:20;amulet:23;horn:39;potion:18;gem:2;cloak:2;*:-40
+shopgreed 1.00000
+shopmin 40
+shopmax 500000
+shoprace human
 width 21
 height 16
 enter_x 1
 enter_y 1
 msg
-Creator: 
-Email: 
+Creator:
+Email:
 Date: Tue Nov  2 12:29:36 1993
+Modified: 2019-03-12 Acer
 endmsg
-shopitems power_crystal:30;rod:36;skillscroll:15;weapon improver:10;armour improver:10;scroll:32;wand:34;spellbook:42;ring:20;amulet:23;horn:39;potion:18;gem:2;cloak:2;*:-40
-shopmin 40
-shopmax 500000
-shoprace human
-shopgreed 1.0
 end
 arch flagstone
 name floor
@@ -455,7 +456,7 @@ arch shop_empty
 x 3
 y 11
 end
-arch shop_weapon_west
+arch shop_weapon
 x 3
 y 12
 end
@@ -661,7 +662,7 @@ arch shop_food
 x 6
 y 3
 end
-arch shop_weapon_west
+arch shop_weapon
 x 6
 y 4
 end
@@ -677,7 +678,7 @@ arch shop_special
 x 6
 y 7
 end
-arch shop_weapon_west
+arch shop_weapon
 x 6
 y 8
 end

@@ -9,7 +9,7 @@ enter_x 10
 enter_y 12
 msg
 Created:  2006-08-05 Alex Schultz
-Modified: 2018-12-27 Acer
+Modified: 2019-03-15 Acer
 endmsg
 end
 arch dungeon_magic
@@ -280,6 +280,15 @@ arch woodfloor2
 x 2
 y 1
 end
+arch magic_ear
+msg
+@match yes
+Click.
+endmsg
+x 2
+y 1
+connected 2
+end
 arch woodfloor2
 x 2
 y 2
@@ -415,7 +424,6 @@ arch c_sage
 name old mage
 msg
 @match sure|yes
-@trigger 2
 Thank you so much. I think he is somewhere in The Frolicing Mermaid in Navar. Bring this bottle to him, tell him that Terrance send you, and ask him to fill it for me. As a reward I'll let you try out one of the amulets. When you get back, place the filled bottle on that table in the corner.
 @match amulet
 I am currently working with a fellow mage in Navar who has a similar gem, to make an amulet which can indicate the distance and direction to each gem, and hence to Scorn and Navar. Right now I need a special golden potion delievered from him, containing the essence of the magical enegeries of his gem. Can you help get some from him?
@@ -650,7 +658,7 @@ x 5
 y 4
 end
 arch altar_trigger
-slaying potion of gem essence xxx disabled
+slaying potion of gem essence
 food 1
 x 5
 y 5

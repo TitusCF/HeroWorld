@@ -9,7 +9,7 @@ msg
 Creator: Bjoern Helfesrieder
 Email: helfesri@igd.fhg.de
 Date: Sat Jan  6 13:59:55 1996
-Modified: 2019-03-12 Acer
+Modified: 2019-03-15 Acer
 endmsg
 end
 arch dungeon_floor
@@ -379,6 +379,15 @@ arch dungeon_floor
 x 3
 y 11
 end
+arch magic_ear
+msg
+@match chair
+Click.
+endmsg
+x 3
+y 11
+connected 2
+end
 arch dungeon_floor
 x 3
 y 12
@@ -387,6 +396,7 @@ arch igateTrg1
 x 3
 y 12
 connected 2
+activate_on_release 0
 end
 arch dungeon_floor
 x 3
@@ -1686,17 +1696,6 @@ end
 arch dungeon_floor
 x 15
 y 1
-end
-arch magic_ear
-msg
-@match chair
-@trigger 2 1
-A deep voice says "OK sonny, you know
-the word, I open the gate!"
-endmsg
-x 15
-y 1
-connected 2
 end
 arch dungeon_floor
 x 15

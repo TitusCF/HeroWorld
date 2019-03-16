@@ -1,15 +1,16 @@
 arch map
-region ancientpupland
 name world
-msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Thu Jan 25 20:16:45 1996
-endmsg
+region ancientpupland
 width 38
 height 37
 enter_x 1
 enter_y 1
+msg
+Creator: Gnat the Gnu
+Email: gnu@foo.bar
+Date: Thu Jan 25 20:16:45 1996
+Modified: 2019-03-15 Acer
+endmsg
 end
 arch sea
 end
@@ -152,18 +153,18 @@ x 1
 y 6
 end
 arch sea
-speed_left -2.300000
 x 1
 y 6
+speed_left -2.300000
 end
 arch grass
 x 1
 y 7
 end
 arch sea
-speed_left -2.300000
 x 1
 y 7
+speed_left -2.300000
 end
 arch sea
 x 1
@@ -313,18 +314,18 @@ x 2
 y 6
 end
 arch sea
-speed_left -2.300000
 x 2
 y 6
+speed_left -2.300000
 end
 arch grass
 x 2
 y 7
 end
 arch sea
-speed_left -2.300000
 x 2
 y 7
+speed_left -2.300000
 end
 arch sea
 x 2
@@ -381,6 +382,26 @@ end
 arch hills_rocky
 x 2
 y 21
+end
+arch hills
+x 2
+y 22
+end
+arch active_volcano
+face hillsrocky.111
+exp 1000
+x 2
+y 22
+is_floor 1
+end
+arch volcano_low
+slaying volcano/volcano.1
+hp 5
+sp 7
+exp 1000
+x 2
+y 22
+blocksview 0
 end
 arch hills_rocky
 x 2
@@ -470,9 +491,9 @@ x 3
 y 6
 end
 arch sea
-speed_left -2.300000
 x 3
 y 6
+speed_left -2.300000
 end
 arch pstone_1
 x 3
@@ -546,6 +567,10 @@ arch hills_rocky
 x 3
 y 21
 end
+arch hills
+x 3
+y 22
+end
 arch hills_rocky
 x 3
 y 23
@@ -622,18 +647,18 @@ x 4
 y 3
 end
 arch sea
-speed_left -2.300000
 x 4
 y 3
+speed_left -2.300000
 end
 arch grass
 x 4
 y 4
 end
 arch sea
-speed_left -2.300000
 x 4
 y 4
+speed_left -2.300000
 end
 arch sea
 x 4
@@ -644,9 +669,9 @@ x 4
 y 6
 end
 arch sea
-speed_left -2.300000
 x 4
 y 6
+speed_left -2.300000
 end
 arch pstone_1
 x 4
@@ -816,9 +841,9 @@ name lone village
 slaying village/village
 hp 7
 sp 14
-blocksview 0
 x 5
 y 8
+blocksview 0
 end
 arch pstone_1
 x 5
@@ -964,9 +989,9 @@ x 6
 y 5
 end
 arch sea
-speed_left -2.300000
 x 6
 y 5
+speed_left -2.300000
 end
 arch sea
 x 6
@@ -1497,7 +1522,7 @@ arch pstone_1
 x 9
 y 10
 end
-arch ford_ns
+arch river_bridge_ns
 x 9
 y 10
 end
@@ -1719,6 +1744,8 @@ maxsp 30
 dam 20
 wc -30
 ac -100
+x 10
+y 19
 speed 0.500000
 speed_left -6.000000
 attack_movement 0
@@ -1727,8 +1754,6 @@ friendly 1
 can_cast_spell 1
 sleep 0
 random_movement 1
-x 10
-y 19
 arch spell_hellfire
 end
 end
@@ -2035,10 +2060,10 @@ x 12
 y 13
 end
 arch mountain2
-no_pass 1
-blocksview 0
 x 12
 y 14
+no_pass 1
+blocksview 0
 end
 arch invis_exit
 slaying mountain/mountain.a1
@@ -2211,16 +2236,16 @@ x 13
 y 13
 end
 arch mountain2
-no_pass 1
-blocksview 0
 x 13
 y 14
-end
-arch mountain2
 no_pass 1
 blocksview 0
+end
+arch mountain2
 x 13
 y 15
+no_pass 1
+blocksview 0
 end
 arch dungeon_magic
 x 13
@@ -2378,10 +2403,10 @@ x 14
 y 13
 end
 arch mountain2
-no_pass 1
-blocksview 0
 x 14
 y 14
+no_pass 1
+blocksview 0
 end
 arch invis_exit
 slaying mountain/mountain.a3
@@ -2391,9 +2416,9 @@ x 14
 y 15
 end
 arch mountain2
-blocksview 0
 x 14
 y 15
+blocksview 0
 end
 arch sea
 x 14
@@ -2592,9 +2617,9 @@ x 15
 y 19
 end
 arch sea
-speed_left -2.300000
 x 15
 y 19
+speed_left -2.300000
 end
 arch sea
 x 15
@@ -2751,14 +2776,10 @@ arch sea
 x 16
 y 20
 end
-arch grass
-x 16
-y 21
-end
 arch sea
-speed_left -2.300000
 x 16
 y 21
+speed_left -2.300000
 end
 arch sea
 x 16
@@ -2901,10 +2922,10 @@ y 18
 end
 arch pillars
 name flooded tower
-face s_tower2.111
-no_pass 1
+face s_tower2.x11
 x 17
 y 18
+no_pass 1
 end
 arch sea
 x 17
@@ -2927,6 +2948,14 @@ x 17
 y 23
 end
 arch sea
+x 17
+y 24
+end
+arch tower_a
+name castle
+slaying castle/castle.1
+hp 15
+sp 30
 x 17
 y 24
 end
@@ -3706,12 +3735,12 @@ x 22
 y 26
 end
 arch button_plate
-protected 1
+x 22
+y 27
 weight 4000000
 invisible 1
 connected 1
-x 22
-y 27
+protected 1
 end
 arch grass
 x 22
@@ -5851,28 +5880,4 @@ end
 arch blocked
 x 36
 y 36
-end
-arch active_volcano
-face hillsrocky.111
-exp 1000
-is_floor 1
-x 2
-y 22
-end
-arch volcano_low
-slaying volcano/volcano.1
-hp 5
-sp 7
-exp 1000
-blocksview 0
-x 2
-y 22
-end
-arch tower_a
-name castle
-slaying castle/castle.1
-hp 15
-sp 30
-x 17
-y 24
 end

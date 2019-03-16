@@ -9,7 +9,7 @@ enter_y 9
 msg
 Creator: CF Java Map Editor
 Date:    5/3/2003
-Modified: 2018-12-26 Acer
+Modified: 2019-03-15 Acer
 endmsg
 end
 arch grass
@@ -108,10 +108,6 @@ end
 arch unholy_ground
 y 10
 end
-arch invis_exit
-slaying *scorn_houses_farmhouse_exit_entrance
-y 11
-end
 arch grass
 y 11
 end
@@ -203,11 +199,6 @@ end
 arch wwall_2_2_1
 x 1
 y 10
-end
-arch invis_exit
-slaying *scorn_houses_farmhouse_exit_entrance
-x 1
-y 11
 end
 arch grass
 x 1
@@ -302,11 +293,6 @@ end
 arch wwall_2_1_2
 x 2
 y 10
-end
-arch invis_exit
-slaying *scorn_houses_farmhouse_exit_entrance
-x 2
-y 11
 end
 arch grass
 x 2
@@ -422,11 +408,6 @@ arch wwall_2_1_2
 x 3
 y 10
 end
-arch invis_exit
-slaying *scorn_houses_farmhouse_exit_entrance
-x 3
-y 11
-end
 arch grass
 x 3
 y 11
@@ -521,11 +502,6 @@ end
 arch wwall_win2
 x 4
 y 10
-end
-arch invis_exit
-slaying *scorn_houses_farmhouse_exit_entrance
-x 4
-y 11
 end
 arch grass
 x 4
@@ -627,11 +603,6 @@ arch wwall_win2
 x 5
 y 10
 end
-arch invis_exit
-slaying *scorn_houses_farmhouse_exit_entrance
-x 5
-y 11
-end
 arch grass
 x 5
 y 11
@@ -709,11 +680,6 @@ arch wwall_2_1_2
 x 6
 y 10
 end
-arch invis_exit
-slaying *scorn_houses_farmhouse_exit_entrance
-x 6
-y 11
-end
 arch grass
 x 6
 y 11
@@ -782,11 +748,6 @@ end
 arch wwall_win2
 x 7
 y 10
-end
-arch invis_exit
-slaying *scorn_houses_farmhouse_exit_entrance
-x 7
-y 11
 end
 arch grass
 x 7
@@ -885,11 +846,6 @@ arch wwall_win2
 x 8
 y 10
 end
-arch invis_exit
-slaying *scorn_houses_farmhouse_exit_entrance
-x 8
-y 11
-end
 arch grass
 x 8
 y 11
@@ -975,11 +931,6 @@ end
 arch wwall_2_1_2
 x 9
 y 10
-end
-arch invis_exit
-slaying *scorn_houses_farmhouse_exit_entrance
-x 9
-y 11
 end
 arch grass
 x 9
@@ -1075,14 +1026,11 @@ arch wwall_2_2_4
 x 10
 y 10
 end
-arch invis_exit
-slaying /world/world_105_115
-hp 11
-sp 38
+arch grass
 x 10
 y 11
 end
-arch grass
+arch lamppost
 x 10
 y 11
 end
@@ -1146,8 +1094,8 @@ move_block -all
 end
 arch invis_exit
 slaying /world/world_105_115
-hp 11
-sp 38
+hp 24
+sp 41
 x 11
 y 11
 end
@@ -1233,8 +1181,8 @@ move_block -all
 end
 arch invis_exit
 slaying /world/world_105_115
-hp 11
-sp 38
+hp 24
+sp 41
 x 12
 y 11
 end
@@ -1341,14 +1289,11 @@ arch wwall_2_2_1
 x 13
 y 10
 end
-arch invis_exit
-slaying /world/world_105_115
-hp 11
-sp 38
+arch grass
 x 13
 y 11
 end
-arch grass
+arch lamppost
 x 13
 y 11
 end
@@ -1421,12 +1366,7 @@ arch wwall_2_1_2
 x 14
 y 10
 end
-arch invis_exit
-slaying *scorn_houses_farmhouse_exit_entrance
-x 14
-y 11
-end
-arch brush
+arch grass
 x 14
 y 11
 end
@@ -1504,12 +1444,7 @@ arch wwall_win2
 x 15
 y 10
 end
-arch invis_exit
-slaying *scorn_houses_farmhouse_exit_entrance
-x 15
-y 11
-end
-arch brush
+arch grass
 x 15
 y 11
 end
@@ -1582,12 +1517,7 @@ arch wwall_2_1_2
 x 16
 y 10
 end
-arch invis_exit
-slaying *scorn_houses_farmhouse_exit_entrance
-x 16
-y 11
-end
-arch brush
+arch grass
 x 16
 y 11
 end
@@ -1672,12 +1602,7 @@ arch wwall_3_1
 x 17
 y 10
 end
-arch invis_exit
-slaying *scorn_houses_farmhouse_exit_entrance
-x 17
-y 11
-end
-arch brush
+arch grass
 x 17
 y 11
 end
@@ -1754,14 +1679,11 @@ arch wwall_1_3
 x 18
 y 10
 end
-arch invis_exit
-slaying /world/world_105_115
-hp 11
-sp 38
+arch grass
 x 18
 y 11
 end
-arch brush
+arch lamppost
 x 18
 y 11
 end
@@ -1853,8 +1775,8 @@ move_block -all
 end
 arch invis_exit
 slaying /world/world_105_115
-hp 11
-sp 38
+hp 24
+sp 41
 x 19
 y 11
 end
@@ -1958,8 +1880,8 @@ move_block -all
 end
 arch invis_exit
 slaying /world/world_105_115
-hp 11
-sp 38
+hp 24
+sp 41
 x 20
 y 11
 end
@@ -2077,8 +1999,8 @@ move_block -all
 end
 arch invis_exit
 slaying /world/world_105_115
-hp 11
-sp 38
+hp 24
+sp 41
 x 21
 y 11
 end
@@ -2230,14 +2152,11 @@ arch wwall_1_4
 x 22
 y 10
 end
-arch invis_exit
-slaying /world/world_105_115
-hp 11
-sp 38
+arch grass
 x 22
 y 11
 end
-arch brush
+arch lamppost
 x 22
 y 11
 end
@@ -2330,12 +2249,7 @@ arch wwall_2_2_4
 x 23
 y 10
 end
-arch invis_exit
-slaying *scorn_houses_farmhouse_exit_entrance
-x 23
-y 11
-end
-arch brush
+arch grass
 x 23
 y 11
 end
@@ -2468,12 +2382,7 @@ arch unholy_ground
 x 24
 y 10
 end
-arch invis_exit
-slaying *scorn_houses_farmhouse_exit_entrance
-x 24
-y 11
-end
-arch brush
+arch grass
 x 24
 y 11
 end

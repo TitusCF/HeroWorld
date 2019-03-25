@@ -2489,7 +2489,6 @@ next to the Port Gate.
 I can't tell you that!
 Do you want to be thrown in JAIL?
 @match chain
-@trigger 12
 Well, you know the password, so you must be ok.
 Pass, Friend.
 @match *
@@ -2500,6 +2499,24 @@ x 22
 y 9
 friendly 1
 unaggressive 0
+end
+arch magic_ear
+msg
+@match chain
+Click.
+endmsg
+x 22
+y 9
+connected 12
+end
+arch magic_ear
+msg
+@match chain
+Click.
+endmsg
+x 22
+y 9
+connected 24
 end
 arch flagstone
 x 22

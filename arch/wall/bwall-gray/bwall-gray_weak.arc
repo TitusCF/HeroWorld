@@ -2,7 +2,7 @@ Object bwall-gray_weak_wall_5
 name wall
 race wall
 face bwall-gray_w_0.111
-anim
+animation
 bwall-gray_w_0.111
 bwall-gray_w_0.112
 bwall-gray_w_0.113
@@ -10,9 +10,6 @@ bwall-gray_w_0.114
 bwall-gray_w_0.115
 bwall-gray_w_0.116
 bwall-gray_w_0.117
-mina
-color_bg grey
-color_fg grey
 is_animated 0
 tear_down 1
 hp 1000
@@ -30,14 +27,13 @@ no_pick 1
 blocksview 1
 alive 1
 level 1
-editable 768
 visibility 100
 end
 Object bwall-gray_weak_wall_6
 name wall
 race wall
 face bwall-gray_w_1.111
-anim
+animation
 bwall-gray_w_1.111
 bwall-gray_w_1.112
 bwall-gray_w_1.113
@@ -45,9 +41,6 @@ bwall-gray_w_1.114
 bwall-gray_w_1.115
 bwall-gray_w_1.116
 bwall-gray_w_1.117
-mina
-color_bg grey
-color_fg grey
 is_animated 0
 tear_down 1
 hp 1000
@@ -65,6 +58,5 @@ no_pick 1
 blocksview 1
 alive 1
 level 1
-editable 768
 visibility 100
 end

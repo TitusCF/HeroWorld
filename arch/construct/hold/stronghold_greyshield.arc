@@ -3,9 +3,7 @@ type 66
 face stronghold_greyshield.x11
 no_pick 1
 no_pass 1
-editable 2
 visibility 100
-magicmap grey
 end
 More
 Object stronghold_2_greyshield
@@ -16,7 +14,6 @@ x 1
 no_pick 1
 no_pass 1
 visibility 100
-magicmap grey
 end
 More
 Object stronghold_3_greyshield
@@ -27,7 +24,6 @@ x 2
 no_pick 1
 no_pass 1
 visibility 100
-magicmap grey
 end
 More
 Object stronghold_4_greyshield
@@ -38,7 +34,6 @@ y 1
 no_pick 1
 no_pass 1
 visibility 100
-magicmap grey
 end
 More
 Object stronghold_5_greyshield
@@ -50,7 +45,6 @@ y 1
 no_pick 1
 no_pass 1
 visibility 100
-magicmap grey
 end
 More
 Object stronghold_6_greyshield
@@ -62,7 +56,6 @@ y 1
 no_pick 1
 no_pass 1
 visibility 100
-magicmap grey
 end
 More
 Object stronghold_7_greyshield
@@ -73,7 +66,6 @@ y 2
 no_pick 1
 no_pass 1
 visibility 100
-magicmap grey
 end
 More
 Object stronghold_8_greyshield
@@ -84,7 +76,6 @@ x 1
 y 2
 no_pick 1
 visibility 100
-magicmap grey
 end
 More
 Object stronghold_9_greyshield
@@ -96,5 +87,4 @@ y 2
 no_pick 1
 no_pass 1
 visibility 100
-magicmap grey
 end

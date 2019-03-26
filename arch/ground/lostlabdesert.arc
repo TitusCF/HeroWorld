@@ -4,14 +4,11 @@ face lostlabdesert.111
 type 67
 race /terrain/desert
 walk_on 1
-color_fg green
-color_bg yellow
 no_pick 1
 slow_move 1
 is_wooded 1
 is_floor 1
 smoothlevel 37
-editable 8
 smoothface lostlabdesert.111 lostlabdesert_S.111
 move_block boat swim
 end
@@ -22,8 +19,6 @@ face lostlabdesert2.111
 type 67
 race /terrain/desert
 walk_on 1
-color_fg green
-color_bg yellow
 no_pick 1
 is_wooded 1
 is_floor 1
@@ -31,7 +26,6 @@ blocksview 1
 is_hilly 1
 slow_move 5
 smoothlevel 37
-editable 8
 smoothface lostlabdesert2.111 lostlabdesert_S.111
 move_block boat swim
 end
@@ -42,14 +36,11 @@ face lostlabdesert3.111
 type 67
 race /terrain/desert
 walk_on 1
-color_fg green
-color_bg yellow
 no_pick 1
 slow_move 1
 is_wooded 1
 is_floor 1
 smoothlevel 37
-editable 8
 smoothface lostlabdesert3.111 lostlabdesert_S.111
 move_block boat swim
 end
@@ -60,14 +51,11 @@ face lostlabdesert4.111
 type 67
 race /terrain/desert
 walk_on 1
-color_fg green
-color_bg yellow
 no_pick 1
 slow_move 1
 is_wooded 1
 is_floor 1
 smoothlevel 37
-editable 8
 smoothface lostlabdesert4.111 lostlabdesert_S.111
 move_block boat swim
 end
@@ -78,14 +66,11 @@ face lostlabdesert5.111
 type 67
 race /terrain/desert
 walk_on 1
-color_fg green
-color_bg yellow
 no_pick 1
 slow_move 1
 is_wooded 1
 is_floor 1
 smoothlevel 37
-editable 8
 smoothface lostlabdesert5.111 lostlabdesert_S.111
 move_block boat swim
 end

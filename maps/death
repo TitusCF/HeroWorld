@@ -597,12 +597,12 @@ arch blackmarble
 x 3
 y 1
 end
-arch altar
-slaying player
-food 1
+arch bulletwall
 x 3
 y 1
-accept_alive 1
+invisible 1
+connected 9999991
+move_block 0
 arch spell_word_of_recall
 end
 end
@@ -640,6 +640,7 @@ slaying gravestone
 food 1
 x 3
 y 3
+invisible 1
 connected 9999991
 activate_on_release 0
 end

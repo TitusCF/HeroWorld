@@ -1197,6 +1197,7 @@ x 5
 y 4
 end
 arch blackmarble
+face blacklostlabfloor7.111
 x 5
 y 5
 end
@@ -1655,16 +1656,19 @@ arch unholy_ground
 x 7
 y 1
 end
-arch creator
+arch blackmarble
 x 7
 y 1
-connected 498755
-lifesave 1
-arch dust_generic
-name Demon
-face fiend.111
+end
+arch altar
+slaying Mercy
+face evil_master4.111
+food 11
+x 7
+y 1
+connected 7854621
+accept_alive 1
 arch spell_word_of_penalty
-name Penalty
 skill sorcery
 msg
 endmsg
@@ -1676,24 +1680,13 @@ subtype 1
 casting_time 150
 end
 end
-end
-arch blackmarble
-x 7
-y 1
-end
-arch detector
-slaying Demon
-x 7
-y 1
-invisible 1
-end
-arch pit_open
+arch pit_closed
 hp 9
 sp 1
-wc 2
 x 7
 y 1
 invisible 1
+connected 7854621
 end
 arch unholy_ground
 x 7
@@ -1707,12 +1700,6 @@ arch redrugfloor1
 x 7
 y 2
 end
-arch detector
-x 7
-y 2
-invisible 1
-connected 498755
-end
 arch unholy_ground
 x 7
 y 3
@@ -1724,11 +1711,6 @@ end
 arch redrugfloor1
 x 7
 y 3
-end
-arch gate_open_1
-x 7
-y 3
-connected 11689
 end
 arch unholy_ground
 x 7
@@ -2124,13 +2106,6 @@ end
 arch marble
 x 9
 y 1
-end
-arch pedestal
-x 9
-y 1
-invisible 1
-connected 11689
-activate_on_release 0
 end
 arch unholy_ground
 x 9

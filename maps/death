@@ -1208,6 +1208,40 @@ arch magic_banned
 x 5
 y 5
 end
+arch magic_ear
+msg
+@match Mercy
+Click.
+endmsg
+x 5
+y 5
+connected 76895
+end
+arch creator
+x 5
+y 5
+connected 76895
+lifesave 1
+arch blue_key
+name Mercy
+name_pl Mercys
+end
+end
+arch button_small
+x 5
+y 5
+invisible 1
+connected 6895434
+activate_on_release 0
+end
+arch magic_mouth
+msg
+Cry Mercy for the key to the Penalty Path!
+endmsg
+x 5
+y 5
+connected 6895434
+end
 arch unholy_ground
 x 5
 y 6
@@ -1621,39 +1655,19 @@ arch unholy_ground
 x 7
 y 1
 end
-arch creator
+arch altar
+slaying Mercy
+food 1
 x 7
 y 1
-connected 686868
-lifesave 1
+connected 13000
 activate_on_release 0
-arch scroll_new
-name Demon
-face fiend.111
 arch spell_word_of_penalty
-name Penalty
-skill sorcery
-msg
-endmsg
-sp 40
-maxsp 20
-grace 0
-maxgrace 0
-subtype 18
-casting_time 150
-end
 end
 end
 arch blackmarble
 x 7
 y 1
-end
-arch pedestal
-slaying Demon
-x 7
-y 1
-invisible 1
-connected 13000
 end
 arch pit_open
 hp 9
@@ -1675,12 +1689,6 @@ end
 arch redrugfloor1
 x 7
 y 2
-end
-arch detector
-x 7
-y 2
-invisible 1
-connected 686868
 end
 arch unholy_ground
 x 7

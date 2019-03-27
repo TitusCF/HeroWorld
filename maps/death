@@ -604,14 +604,32 @@ connected 9999991
 lifesave 1
 activate_on_release 0
 arch scroll_new
-name Take my hand...
+name Take my hand.
 face bones5.111
-invisible 0
 no_pick 1
 identified 1
 arch spell_word_of_recall
+name ..
+skill sorcery
+msg
+endmsg
+sp 40
+maxsp 20
+grace 0
+maxgrace 0
 end
 end
+end
+arch button_small
+x 3
+y 1
+invisible 1
+connected 99999992
+activate_on_release 0
+end
+arch unholy_ground
+x 3
+y 1
 end
 arch unholy_ground
 x 3
@@ -629,6 +647,11 @@ arch gateTrg1
 x 3
 y 2
 connected 9999991
+end
+arch gate_open_1
+x 3
+y 2
+connected 99999992
 end
 arch unholy_ground
 x 3
@@ -821,14 +844,10 @@ end
 arch bluemarblemedium
 x 4
 end
-arch awall_3_3
+arch awall_2_1_2
 x 4
 end
 arch blackmarble
-x 4
-y 1
-end
-arch awall_2_1_1
 x 4
 y 1
 end
@@ -844,7 +863,7 @@ arch blackmarble
 x 4
 y 2
 end
-arch awall_2_1_1
+arch awall_2_2_2
 x 4
 y 2
 end
@@ -1015,14 +1034,10 @@ end
 arch bluemarblemedium
 x 5
 end
-arch awall_3_3
+arch awall_2_1_2
 x 5
 end
 arch blackmarble
-x 5
-y 1
-end
-arch awall_2_1_1
 x 5
 y 1
 end
@@ -1038,7 +1053,7 @@ arch blackmarble
 x 5
 y 2
 end
-arch awall_2_1_1
+arch awall_2_1_2
 x 5
 y 2
 end
@@ -1308,14 +1323,10 @@ end
 arch bluemarblemedium
 x 6
 end
-arch awall_3_3
+arch awall_2_1_2
 x 6
 end
 arch blackmarble
-x 6
-y 1
-end
-arch awall_2_1_1
 x 6
 y 1
 end
@@ -1331,7 +1342,7 @@ arch blackmarble
 x 6
 y 2
 end
-arch awall_2_1_1
+arch awall_2_2_3
 x 6
 y 2
 end
@@ -1515,14 +1526,9 @@ arch blackmarble
 x 7
 y 1
 end
-arch altar
-slaying Mercy
-food 1
+arch creator
 x 7
 y 1
-connected 88888
-arch spell_word_of_penalty
-end
 end
 arch unholy_ground
 x 7
@@ -1535,6 +1541,11 @@ end
 arch blackmarble
 x 7
 y 2
+end
+arch button_small
+x 7
+y 2
+invisible 1
 end
 arch unholy_ground
 x 7

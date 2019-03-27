@@ -586,19 +586,6 @@ x 3
 y 1
 damned 1
 end
-arch teleporter
-hp 1
-sp 1
-x 3
-y 1
-connected 7712
-activate_on_push 0
-end
-arch button_trigger
-x 3
-y 1
-connected 7712
-end
 arch creator
 x 3
 y 1
@@ -610,6 +597,16 @@ no_pick 1
 identified 1
 arch spell_word_of_recall
 end
+end
+arch button_small
+connected 11000
+activate_on_push 0
+end
+arch pit_closed
+hp 1
+sp 1
+connected 11000
+move_on walk fly_low fly_high
 end
 end
 arch unholy_ground

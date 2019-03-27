@@ -597,15 +597,20 @@ arch blackmarble
 x 3
 y 1
 end
-arch rune_restoration
-msg
-
-endmsg
+arch creator
 x 3
 y 1
-level 99
+connected 9999991
 lifesave 1
+activate_on_release 0
+arch scroll_new
+name Take my hand...
+face bones5.111
+invisible 0
+no_pick 1
+identified 1
 arch spell_word_of_recall
+end
 end
 end
 arch unholy_ground
@@ -634,6 +639,7 @@ x 3
 y 3
 end
 arch blackmarble
+name Drop a gravestone...
 x 3
 y 3
 end

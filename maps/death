@@ -604,22 +604,15 @@ y 1
 connected 9999991
 lifesave 1
 activate_on_release 0
-arch scroll_new
-name Take my hand.
-face bones5.111
-no_pick 1
-identified 1
-arch spell_dimension_door
-skill 0
-msg
-endmsg
-sp 0
-maxsp 0
-subtype 18
-path_attuned 0
-casting_time 0
+arch spell_word_of_recall
 end
 end
+arch check_inv
+race gravestone
+x 3
+y 1
+last_heal 1
+connected 9999991
 end
 arch unholy_ground
 x 3
@@ -632,11 +625,6 @@ end
 arch blackmarble
 x 3
 y 2
-end
-arch gateTrg1
-x 3
-y 2
-connected 9999991
 end
 arch unholy_ground
 x 3
@@ -650,15 +638,6 @@ arch blackmarble
 name Drop a gravestone...
 x 3
 y 3
-end
-arch altar
-slaying gravestone
-food 1
-x 3
-y 3
-invisible 1
-connected 9999991
-activate_on_release 0
 end
 arch unholy_ground
 x 3

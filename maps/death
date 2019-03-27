@@ -1618,34 +1618,23 @@ end
 arch awall_2_1_2
 x 7
 end
-arch creator
-x 7
-y 1
-connected 756953
-lifesave 1
-activate_on_release 0
-arch blue_key
-name death
-face fiend.111
-end
-end
-arch detector
-x 7
-y 1
-connected 756953
-end
 arch blackmarble
 x 7
 y 1
+damned 1
 end
-arch altar_trigger
-slaying death
-exp 10
-food 1
+arch dust_generic
 x 7
 y 1
-invisible 1
 arch spell_word_of_penalty
+skill sorcery
+msg
+endmsg
+sp 40
+maxsp 20
+grace 0
+maxgrace 0
+subtype 1
 end
 end
 arch unholy_ground

@@ -188,30 +188,14 @@ end
 arch bluemarblemedium
 x 1
 end
-arch awall_3_3
+arch awall_2_1_2
 x 1
 end
 arch bluemarble
 x 1
 y 1
 end
-arch awall_2_1_1
-x 1
-y 1
-end
-arch unholy_ground
-x 1
-y 2
-end
-arch magic_banned
-x 1
-y 2
-end
 arch bluemarblemedium
-x 1
-y 2
-end
-arch awall_2_1_1
 x 1
 y 2
 end
@@ -227,7 +211,7 @@ arch bluemarblemedium
 x 1
 y 3
 end
-arch awall_3_1
+arch awall_2_1_2
 x 1
 y 3
 end
@@ -593,10 +577,27 @@ end
 arch awall_2_1_2
 x 3
 end
+arch awall_2_1_2
+x 3
+y 1
+end
 arch blackmarble
 x 3
 y 1
 damned 1
+end
+arch teleporter
+hp 1
+sp 1
+x 3
+y 1
+connected 7712
+activate_on_push 0
+end
+arch button_trigger
+x 3
+y 1
+connected 7712
 end
 arch creator
 x 3
@@ -604,40 +605,43 @@ y 1
 connected 9999991
 lifesave 1
 activate_on_release 0
+arch scroll_new
+no_pick 1
+identified 1
 arch spell_word_of_recall
 end
+end
+end
+arch unholy_ground
+x 3
+y 2
+end
+arch magic_banned
+x 3
+y 2
+end
+arch blackmarble
+x 3
+y 2
+end
+arch unholy_ground
+x 3
+y 3
+end
+arch magic_banned
+x 3
+y 3
+end
+arch blackmarble
+x 3
+y 3
 end
 arch check_inv
 race gravestone
 x 3
-y 1
+y 3
 last_heal 1
 connected 9999991
-end
-arch unholy_ground
-x 3
-y 2
-end
-arch magic_banned
-x 3
-y 2
-end
-arch blackmarble
-x 3
-y 2
-end
-arch unholy_ground
-x 3
-y 3
-end
-arch magic_banned
-x 3
-y 3
-end
-arch blackmarble
-name Drop a gravestone...
-x 3
-y 3
 end
 arch unholy_ground
 x 3
@@ -1876,17 +1880,13 @@ end
 arch bluemarblemedium
 x 9
 end
-arch awall_3_3
+arch awall_2_1_2
 x 9
 end
 arch bluemarble
 x 9
 y 1
 end
-arch awall_2_1_1
-x 9
-y 1
-end
 arch unholy_ground
 x 9
 y 2
@@ -1896,10 +1896,6 @@ x 9
 y 2
 end
 arch bluemarblemedium
-x 9
-y 2
-end
-arch awall_2_1_1
 x 9
 y 2
 end
@@ -1915,7 +1911,7 @@ arch bluemarblemedium
 x 9
 y 3
 end
-arch awall_3_1
+arch awall_2_1_2
 x 9
 y 3
 end

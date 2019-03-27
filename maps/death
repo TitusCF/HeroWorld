@@ -1656,10 +1656,19 @@ arch blackmarble
 x 7
 y 1
 end
-arch button_small
+arch detector
 x 7
 y 1
-connected 465932
+invisible 1
+connected 475689
+end
+arch altar
+x 7
+y 1
+invisible 1
+connected 475689
+arch spell_word_of_penalty
+end
 end
 arch unholy_ground
 x 7
@@ -1847,19 +1856,9 @@ arch blackmarble
 x 8
 y 1
 end
-arch bulletwall_7
-face awall_5.111
-sp 7
+arch awall_2_1_1
 x 8
 y 1
-connected 465932
-arch spell_magic_bullet
-msg
-endmsg
-other_arch word of penalty
-level 20
-path_attuned 4096
-end
 end
 arch unholy_ground
 x 8

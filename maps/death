@@ -1,19 +1,19 @@
 arch map
 name death
-reset_timeout 5
+reset_timeout 75
 fixed_resettime 1
 region afterlife
 width 11
 height 16
 msg
-Modified: 2019-03-26 Acer
+Modified: 2019-03-27 Acer
 endmsg
 end
-arch marble
+arch blackmarble
 end
 arch awall_2_2_2
 end
-arch marble
+arch blackmarble
 y 1
 end
 arch awall_2_1_1
@@ -25,10 +25,10 @@ end
 arch magic_banned
 y 2
 end
-arch marble
+arch blackmarble
 y 2
 end
-arch awall_2_1_1
+arch awall_3_2
 y 2
 end
 arch unholy_ground
@@ -223,7 +223,7 @@ end
 arch awall_2_2_1
 y 15
 end
-arch marble
+arch blackmarble
 x 1
 end
 arch awall_2_1_2
@@ -236,7 +236,18 @@ arch marble
 x 1
 y 1
 end
-arch marble
+arch pedestal
+x 1
+y 1
+invisible 1
+connected 6969
+activate_on_release 0
+end
+arch blackmarble
+x 1
+y 2
+end
+arch awall_3_3
 x 1
 y 2
 end
@@ -252,7 +263,7 @@ arch marble
 x 1
 y 3
 end
-arch awall_2_1_2
+arch awall_3_1
 x 1
 y 3
 end
@@ -432,7 +443,7 @@ arch awall_2_1_2
 x 1
 y 15
 end
-arch marble
+arch blackmarble
 x 2
 end
 arch awall_3_3
@@ -458,7 +469,7 @@ arch blackmarble
 x 2
 y 2
 end
-arch awall_2_1_1
+arch awall_3_4
 x 2
 y 2
 end
@@ -723,6 +734,10 @@ y 1
 invisible 1
 connected 11000
 end
+arch magentamarble
+x 3
+y 2
+end
 arch unholy_ground
 x 3
 y 2
@@ -734,25 +749,34 @@ end
 arch whiterugfloor1
 x 3
 y 2
-end
-arch unholy_ground
-x 3
-y 3
-end
-arch magic_banned
-x 3
-y 3
-end
-arch whiterugfloor1
-x 3
-y 3
 end
 arch check_inv
 race gravestone
 x 3
-y 3
+y 2
 last_heal 1
 connected 9999991
+end
+arch magentamarble
+x 3
+y 3
+end
+arch unholy_ground
+x 3
+y 3
+end
+arch magic_banned
+x 3
+y 3
+end
+arch whiterugfloor1
+x 3
+y 3
+end
+arch gate_open_1
+x 3
+y 3
+connected 6969
 end
 arch unholy_ground
 x 3
@@ -1220,6 +1244,15 @@ arch magentamarble
 x 5
 y 8
 end
+arch stair3_gstone_do
+name Waiting Room
+slaying /waitingroom
+hp 2
+sp 2
+x 5
+y 8
+unique 1
+end
 arch unholy_ground
 x 5
 y 9
@@ -1584,10 +1617,52 @@ end
 arch awall_2_1_2
 x 7
 end
+arch unholy_ground
+x 7
+y 1
+end
+arch creator
+x 7
+y 1
+lifesave 1
+activate_on_release 0
+arch scroll_new
+name Demon
+face fiend.111
+arch spell_word_of_penalty
+name Penalty
+skill sorcery
+msg
+endmsg
+sp 40
+maxsp 20
+grace 0
+maxgrace 0
+subtype 1
+casting_time 150
+end
+end
+end
 arch blackmarble
 x 7
 y 1
 end
+arch pedestal
+slaying Demon
+x 7
+y 1
+invisible 1
+connected 13000
+end
+arch pit_open
+hp 9
+sp 1
+wc 2
+x 7
+y 1
+invisible 1
+connected 13000
+end
 arch unholy_ground
 x 7
 y 2
@@ -1600,6 +1675,12 @@ arch redrugfloor1
 x 7
 y 2
 end
+arch detector
+x 7
+y 2
+invisible 1
+connected 686868
+end
 arch unholy_ground
 x 7
 y 3
@@ -1611,6 +1692,11 @@ end
 arch redrugfloor1
 x 7
 y 3
+end
+arch gate_open_1
+x 7
+y 3
+connected 11689
 end
 arch unholy_ground
 x 7
@@ -1764,7 +1850,7 @@ arch awall_2_1_2
 x 7
 y 15
 end
-arch marble
+arch blackmarble
 x 8
 end
 arch awall_3_3
@@ -1790,7 +1876,7 @@ arch blackmarble
 x 8
 y 2
 end
-arch awall_2_1_1
+arch awall_3_2
 x 8
 y 2
 end
@@ -1994,7 +2080,7 @@ arch awall_2_1_2
 x 8
 y 15
 end
-arch marble
+arch blackmarble
 x 9
 end
 arch awall_2_1_2
@@ -2007,6 +2093,12 @@ arch marble
 x 9
 y 1
 end
+arch pedestal
+x 9
+y 1
+connected 11689
+activate_on_release 0
+end
 arch unholy_ground
 x 9
 y 2
@@ -2015,7 +2107,11 @@ arch magic_banned
 x 9
 y 2
 end
-arch marble
+arch blackmarble
+x 9
+y 2
+end
+arch awall_3_3
 x 9
 y 2
 end
@@ -2031,7 +2127,7 @@ arch marble
 x 9
 y 3
 end
-arch awall_2_1_2
+arch awall_3_1
 x 9
 y 3
 end
@@ -2211,13 +2307,13 @@ arch awall_2_1_2
 x 9
 y 15
 end
-arch marble
+arch blackmarble
 x 10
 end
 arch awall_2_2_3
 x 10
 end
-arch marble
+arch blackmarble
 x 10
 y 1
 end
@@ -2233,11 +2329,11 @@ arch magic_banned
 x 10
 y 2
 end
-arch marble
+arch blackmarble
 x 10
 y 2
 end
-arch awall_2_1_1
+arch awall_3_4
 x 10
 y 2
 end

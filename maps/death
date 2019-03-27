@@ -1618,33 +1618,33 @@ end
 arch awall_2_1_2
 x 7
 end
-arch blackmarble
-x 7
-y 1
-end
-arch altar
-slaying Demon of Penalty
-food 1
-x 7
-y 1
-activate_on_release 0
-arch spell_word_of_penalty
-end
-end
-arch detector
-x 7
-y 1
-connected 7598632
-end
 arch creator
 x 7
 y 1
-connected 7598632
+connected 756953
 lifesave 1
 activate_on_release 0
 arch blue_key
 name Demon of Penalty
 face fiend.111
+end
+end
+arch detector
+x 7
+y 1
+connected 756953
+end
+arch blackmarble
+x 7
+y 1
+end
+arch altar_trigger
+slaying Demon of Penalty
+exp 10
+food 1
+x 7
+y 1
+arch spell_word_of_penalty
 end
 end
 arch unholy_ground
@@ -2135,10 +2135,6 @@ x 9
 y 6
 end
 arch bluemarblemedium
-x 9
-y 6
-end
-arch altar
 x 9
 y 6
 end

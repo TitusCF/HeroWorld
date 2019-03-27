@@ -1622,58 +1622,42 @@ arch blackmarble
 x 7
 y 1
 end
-arch creator
+arch altar
+slaying Demon of Penalty
+food 1
 x 7
 y 1
-connected 7546983
 activate_on_release 0
-arch potion_generic
-level 111
 arch spell_word_of_penalty
-msg
-endmsg
-subtype 1
-end
 end
 end
 arch detector
-slaying potion
 x 7
 y 1
-invisible 1
-connected 245986
+connected 7598632
 end
-arch pit_open
-hp 9
-sp 1
-wc 2
+arch creator
 x 7
 y 1
-invisible 1
-connected 245986
-end
-arch unholy_ground
-x 7
-y 1
-end
-arch unholy_ground
-x 7
-y 2
-end
-arch magic_banned
-x 7
-y 2
-end
-arch redrugfloor1
-x 7
-y 2
-end
-arch button_small
-x 7
-y 2
-invisible 1
-connected 7546983
+connected 7598632
+lifesave 1
 activate_on_release 0
+arch blue_key
+name Demon of Penalty
+face fiend.111
+end
+end
+arch unholy_ground
+x 7
+y 2
+end
+arch magic_banned
+x 7
+y 2
+end
+arch redrugfloor1
+x 7
+y 2
 end
 arch unholy_ground
 x 7
@@ -1686,11 +1670,6 @@ end
 arch redrugfloor1
 x 7
 y 3
-end
-arch gate_open_1
-x 7
-y 3
-connected 4689325
 end
 arch unholy_ground
 x 7
@@ -2083,13 +2062,6 @@ arch marble
 x 9
 y 1
 end
-arch pedestal
-x 9
-y 1
-invisible 1
-connected 4689325
-activate_on_release 0
-end
 arch unholy_ground
 x 9
 y 2
@@ -2163,6 +2135,10 @@ x 9
 y 6
 end
 arch bluemarblemedium
+x 9
+y 6
+end
+arch altar
 x 9
 y 6
 end

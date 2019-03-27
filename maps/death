@@ -1655,13 +1655,17 @@ arch unholy_ground
 x 7
 y 1
 end
-arch altar
+arch blackmarble
+x 7
+y 1
+end
+arch altar_trigger
 slaying Mercy
+exp 10
 food 1
 x 7
 y 1
 connected 13000
-activate_on_release 0
 arch spell_word_of_penalty
 msg
 endmsg
@@ -1672,10 +1676,6 @@ maxgrace 0
 subtype 1
 casting_time 150
 end
-end
-arch blackmarble
-x 7
-y 1
 end
 arch pit_open
 hp 9

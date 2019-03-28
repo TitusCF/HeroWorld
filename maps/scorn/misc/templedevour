@@ -7,7 +7,7 @@ Creator: David Sundqvist
 Email: azzie@tellutec.se
 Date: Wed Apr 16 07:28:31 1997
 Altar to level 120 20050527 (cvstry2)
-Modified: 2018-12-27 Acer
+Modified: 2019-03-27 Acer
 endmsg
 end
 arch grass_br_gr
@@ -276,6 +276,51 @@ arch blackmarble
 x 2
 y 10
 end
+arch sign
+name book of the Devourers
+msg
+This is a book about the Devourers, the Soul Eaters,
+Harbringers of Death, and Nameless Lords of the Tomb.
+
+His enemy god is Gaea. Their enemies are everything
+that is alive.
+
+The Devourers' followers become undead and thus
+lose a little health regeneration, are almost never hungry,
+and gain infravision and immunity to diseases.
+
+Attacktype: Drain, Depletion, Death, Life Stealing
+
+Resistances: +100 drain, +100 depletion, +100 death,
++15 cold, +30 poison, +50 ghost hit, +100 fear
+
+Vulnerabilities: -5 fire
+
+Attunements: Death, Wounding
+
+Repelled: Protection, Fire, Restoration, Light
+
+Denied: Turning
+
+Granted Spells*: Nightfall (level 16, 300 Grace),
+Finger of Death (level 25, 300 Grace), Face of Death
+(level 42, 300 Grace), Cause Many Wounds (level 23,
+300 Grace), Cause Red Death (level 32, 300 Grace),
+Cause Black Death (level 25, 600 Grace)
+
+Altar Effects: Enchant Weapon +5
+
+Holy Artifacts: n/a
+
+
+*: Grace is the amount required to obtain the spell,
+and counts any grace you get over the limit with an
+altar.
+endmsg
+face book_read.111
+x 2
+y 10
+end
 arch blackmarble
 x 2
 y 11
@@ -327,51 +372,6 @@ x 3
 y 3
 end
 arch blackmarble
-x 3
-y 4
-end
-arch sign
-name book of the Devourers
-msg
-This is a book about the Devourers, the Soul Eaters,
-Harbringers of Death, and Nameless Lords of the Tomb.
-
-His enemy god is Gaea. Their enemies are everything
-that is alive.
-
-The Devourers' followers become undead and thus
-lose a little health regeneration, are almost never hungry,
-and gain infravision and immunity to diseases.
-
-Attacktype: Drain, Depletion, Death, Life Stealing
-
-Resistances: +100 drain, +100 depletion, +100 death,
-+15 cold, +30 poison, +50 ghost hit, +100 fear
-
-Vulnerabilities: -5 fire
-
-Attunements: Death, Wounding
-
-Repelled: Protection, Fire, Restoration, Light
-
-Denied: Turning
-
-Granted Spells*: Nightfall (level 16, 300 Grace),
-Finger of Death (level 25, 300 Grace), Face of Death
-(level 42, 300 Grace), Cause Many Wounds (level 23,
-300 Grace), Cause Red Death (level 32, 300 Grace),
-Cause Black Death (level 25, 600 Grace)
-
-Altar Effects: Enchant Weapon +7
-
-Holy Artifacts: n/a
-
-
-*: Grace is the amount required to obtain the spell,
-and counts any grace you get over the limit with an
-altar.
-endmsg
-face book_read.111
 x 3
 y 4
 end
@@ -468,6 +468,20 @@ end
 arch blackmarble
 x 4
 y 4
+end
+arch altar_none
+x 4
+y 4
+end
+arch note
+name A scribbled note...
+msg
+Services held below...
+endmsg
+x 4
+y 4
+no_pick 1
+identified 1
 end
 arch blackmarble
 x 4

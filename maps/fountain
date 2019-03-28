@@ -4,7 +4,7 @@ width 15
 height 15
 msg
 Created:  2019-03-10 Acer
-Modified: 2019-03-25 Acer
+Modified: 2019-03-28 Acer
 endmsg
 end
 arch cobblestones2
@@ -658,25 +658,29 @@ arch cobblestones
 x 7
 y 7
 end
-arch altar
-name Titus Pool
+arch waybread_table
+name Enchanted Fountain
 slaying potion_empty
-msg
-This pool seems to invite you to dip in an empty bottle.
-endmsg
+other_arch minor_potion_restoration
 face fountain.111
 food 1
 x 7
 y 7
-connected 9999999
-activate_on_release 0
 end
-arch creator
-other_arch minor_potion_restoration
-hp 20
+arch button_small
 x 7
 y 7
-connected 9999999
+invisible 1
+connected 7465893
+end
+arch magic_mouth
+msg
+The Fountain beckons you to fill your
+empty potion bottles with its water...
+endmsg
+x 7
+y 7
+connected 7465893
 end
 arch cobblestones
 x 7

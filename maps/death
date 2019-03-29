@@ -2048,14 +2048,11 @@ arch unholy_ground
 x 7
 y 15
 end
-arch magic_banned
-x 7
-y 15
-end
 arch creator
 x 7
 y 15
 connected 32986754
+activate_on_push 0
 arch scroll_new
 name Demon
 face fiend.111
@@ -2065,6 +2062,8 @@ identified 1
 arch spell_word_of_penalty
 name Penalty
 skill sorcery
+msg
+endmsg
 sp 40
 maxsp 20
 grace 0

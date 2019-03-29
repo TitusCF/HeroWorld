@@ -861,7 +861,7 @@ arch tile_white_floor
 x 3
 y 19
 end
-arch wwall_2_1_2
+arch wwall_weak_2
 x 3
 y 19
 end
@@ -1045,7 +1045,7 @@ arch shop_empty
 x 4
 y 14
 end
-arch wall_2_1_1
+arch wall_1_2
 x 4
 y 14
 end
@@ -1057,19 +1057,11 @@ arch shop_empty
 x 4
 y 15
 end
-arch wall_3_2
-x 4
-y 15
-end
 arch dungeon_magic
 x 4
 y 16
 end
 arch shop_empty
-x 4
-y 16
-end
-arch wall_1_2
 x 4
 y 16
 end
@@ -1086,6 +1078,10 @@ x 4
 y 18
 end
 arch shop_empty
+x 4
+y 18
+end
+arch wwall_1_1
 x 4
 y 18
 end
@@ -1093,7 +1089,7 @@ arch tile_white_floor
 x 4
 y 19
 end
-arch wwall_2_1_2
+arch wwall_3_1
 x 4
 y 19
 end
@@ -1349,10 +1345,6 @@ arch shop_empty
 x 5
 y 15
 end
-arch wall_1_3
-x 5
-y 15
-end
 arch dungeon_magic
 x 5
 y 16
@@ -1369,19 +1361,41 @@ arch shop_empty
 x 5
 y 17
 end
+arch building_horizontal_gate
+x 5
+y 17
+no_pick 1
+end
 arch dungeon_magic
 x 5
 y 18
 end
+arch creator
+x 5
+y 18
+connected 166
+lifesave 1
+arch building_horizontal_gate
+unpaid 1
+end
+end
 arch shop_empty
 x 5
 y 18
+end
+arch button_lever
+name Horizontal Gate Material
+face teleporter.111
+animation teleporter
+x 5
+y 18
+connected 166
 end
 arch tile_white_floor
 x 5
 y 19
 end
-arch wwall_2_1_2
+arch wwall_weak_2
 x 5
 y 19
 end
@@ -1444,6 +1458,11 @@ end
 arch shop_empty
 x 6
 y 4
+end
+arch building_swall
+x 6
+y 4
+no_pick 1
 end
 arch dungeon_magic
 x 6
@@ -1582,11 +1601,15 @@ arch shop_empty
 x 6
 y 18
 end
+arch wwall_1_1
+x 6
+y 18
+end
 arch tile_white_floor
 x 6
 y 19
 end
-arch wwall_2_1_2
+arch wwall_3_1
 x 6
 y 19
 end
@@ -1736,19 +1759,41 @@ arch shop_empty
 x 7
 y 17
 end
+arch building_window
+x 7
+y 17
+no_pick 1
+end
 arch dungeon_magic
 x 7
 y 18
+end
+arch creator
+x 7
+y 18
+connected 165
+lifesave 1
+arch building_window
+unpaid 1
+end
 end
 arch shop_empty
 x 7
 y 18
 end
+arch button_lever
+name Window Material
+face teleporter.111
+animation teleporter
+x 7
+y 18
+connected 165
+end
 arch tile_white_floor
 x 7
 y 19
 end
-arch wwall_2_1_2
+arch wwall_weak_2
 x 7
 y 19
 end
@@ -1924,11 +1969,15 @@ arch shop_empty
 x 8
 y 18
 end
+arch wwall_1_1
+x 8
+y 18
+end
 arch tile_white_floor
 x 8
 y 19
 end
-arch wwall_2_1_2
+arch wwall_3_1
 x 8
 y 19
 end
@@ -2078,19 +2127,41 @@ arch shop_empty
 x 9
 y 17
 end
+arch building_vertical_gate_inv
+x 9
+y 17
+no_pick 1
+end
 arch dungeon_magic
 x 9
 y 18
+end
+arch creator
+x 9
+y 18
+connected 164
+lifesave 1
+arch building_vertical_gate_inv
+unpaid 1
+end
 end
 arch shop_empty
 x 9
 y 18
 end
+arch button_lever
+name Verticle Inverted Gate Material
+face teleporter.111
+animation teleporter
+x 9
+y 18
+connected 164
+end
 arch tile_white_floor
 x 9
 y 19
 end
-arch wwall_2_1_2
+arch wwall_weak_2
 x 9
 y 19
 end
@@ -2296,11 +2367,19 @@ arch shop_empty
 x 10
 y 18
 end
+arch wwall_1_1
+x 10
+y 18
+end
+arch button_lever
+x 10
+y 18
+end
 arch tile_white_floor
 x 10
 y 19
 end
-arch wwall_2_1_2
+arch wwall_3_1
 x 10
 y 19
 end
@@ -2556,10 +2635,6 @@ arch shop_empty
 x 11
 y 15
 end
-arch wall_1_4
-x 11
-y 15
-end
 arch dungeon_magic
 x 11
 y 16
@@ -2576,19 +2651,41 @@ arch shop_empty
 x 11
 y 17
 end
+arch building_vertical_gate
+x 11
+y 17
+no_pick 1
+end
 arch dungeon_magic
 x 11
 y 18
 end
+arch creator
+x 11
+y 18
+connected 163
+lifesave 1
+arch building_vertical_gate
+unpaid 1
+end
+end
 arch shop_empty
 x 11
 y 18
+end
+arch button_lever
+name Vertical Gate Material
+face teleporter.111
+animation teleporter
+x 11
+y 18
+connected 163
 end
 arch tile_white_floor
 x 11
 y 19
 end
-arch wwall_2_1_2
+arch wwall_weak_2
 x 11
 y 19
 end
@@ -2760,7 +2857,7 @@ arch shop_empty
 x 12
 y 13
 end
-arch wall_3_4
+arch wall_4
 x 12
 y 13
 end
@@ -2776,7 +2873,7 @@ arch shop_empty
 x 12
 y 14
 end
-arch wall_2_1_1
+arch wall_1_2
 x 12
 y 14
 end
@@ -2788,19 +2885,11 @@ arch shop_empty
 x 12
 y 15
 end
-arch wall_3_4
-x 12
-y 15
-end
 arch dungeon_magic
 x 12
 y 16
 end
 arch shop_empty
-x 12
-y 16
-end
-arch wall_1_2
 x 12
 y 16
 end
@@ -2817,6 +2906,10 @@ x 12
 y 18
 end
 arch shop_empty
+x 12
+y 18
+end
+arch wwall_1_1
 x 12
 y 18
 end
@@ -2824,7 +2917,7 @@ arch tile_white_floor
 x 12
 y 19
 end
-arch wwall_2_1_2
+arch wwall_3_1
 x 12
 y 19
 end
@@ -3046,13 +3139,30 @@ arch shop_empty
 x 13
 y 13
 end
+arch wall_1_3
+x 13
+y 13
+end
 arch dungeon_magic
 x 13
 y 14
 end
+arch creator
+x 13
+y 14
+connected 161
+end
 arch shop_empty
 x 13
 y 14
+end
+arch button_lever
+name Horizontal Inverted Gate Material
+face teleporter.111
+animation teleporter
+x 13
+y 14
+connected 161
 end
 arch dungeon_magic
 x 13
@@ -3078,19 +3188,41 @@ arch shop_empty
 x 13
 y 17
 end
+arch building_sign
+x 13
+y 17
+no_pick 1
+end
 arch dungeon_magic
 x 13
 y 18
 end
+arch creator
+x 13
+y 18
+connected 162
+lifesave 1
+arch building_sign
+unpaid 1
+end
+end
 arch shop_empty
 x 13
 y 18
+end
+arch button_lever
+name Sign Material
+face teleporter.111
+animation teleporter
+x 13
+y 18
+connected 162
 end
 arch tile_white_floor
 x 13
 y 19
 end
-arch wwall_2_1_2
+arch wwall_weak_2
 x 13
 y 19
 end
@@ -3259,6 +3391,11 @@ arch shop_empty
 x 14
 y 14
 end
+arch building_horizontal_gate_inv
+x 14
+y 14
+no_pick 1
+end
 arch dungeon_magic
 x 14
 y 15
@@ -3288,6 +3425,10 @@ x 14
 y 18
 end
 arch shop_empty
+x 14
+y 18
+end
+arch wwall_1_1
 x 14
 y 18
 end
@@ -3295,7 +3436,7 @@ arch tile_white_floor
 x 14
 y 19
 end
-arch wwall_2_1_2
+arch wwall_3_1
 x 14
 y 19
 end

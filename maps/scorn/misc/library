@@ -2510,6 +2510,10 @@ arch woodfloor
 x 18
 y 14
 end
+arch shop_mat
+x 18
+y 14
+end
 arch dungeon_magic
 x 18
 y 15
@@ -2635,6 +2639,10 @@ arch woodfloor
 x 19
 y 12
 end
+arch wwall_2_2_2
+x 19
+y 12
+end
 arch dungeon_magic
 x 19
 y 13
@@ -2643,7 +2651,11 @@ arch woodfloor
 x 19
 y 13
 end
-arch shop_mat
+arch swall_2_1_1
+x 19
+y 13
+end
+arch wwall_1_2
 x 19
 y 13
 end
@@ -2655,11 +2667,7 @@ arch woodfloor
 x 19
 y 14
 end
-arch sign
-msg
-Library Shop
-
-endmsg
+arch swall_2_1_1
 x 19
 y 14
 end
@@ -2668,6 +2676,14 @@ x 19
 y 15
 end
 arch woodfloor
+x 19
+y 15
+end
+arch swall_2_1_1
+x 19
+y 15
+end
+arch wwall_1_1
 x 19
 y 15
 end
@@ -2675,7 +2691,7 @@ arch woodfloor
 x 19
 y 16
 end
-arch wwall_win2
+arch wwall_3_1
 x 19
 y 16
 end
@@ -2803,31 +2819,29 @@ arch woodfloor
 x 20
 y 12
 end
-arch wwall_3_2
+arch wwall_3_1
 x 20
 y 12
 end
-arch woodfloor
+arch shop_empty
+name woodfloor
+face woodfloor.111
 x 20
 y 13
 end
-arch wwall_2_1_1
-x 20
-y 13
-end
-arch woodfloor
+arch shop_empty
+name woodfloor
+face woodfloor.111
 x 20
 y 14
 end
-arch wwall_2_1_1
+arch shop_mat
 x 20
 y 14
 end
-arch woodfloor
-x 20
-y 15
-end
-arch wwall_2_1_1
+arch shop_empty
+name woodfloor
+face woodfloor.111
 x 20
 y 15
 end
@@ -2835,7 +2849,7 @@ arch woodfloor
 x 20
 y 16
 end
-arch wwall_3_4
+arch wwall_2_2_3
 x 20
 y 16
 end
@@ -3011,10 +3025,6 @@ end
 arch shop_empty
 name woodfloor
 face woodfloor.111
-x 21
-y 14
-end
-arch shop_mat
 x 21
 y 14
 end
@@ -3225,6 +3235,7 @@ face teleporter.111
 animation teleporter
 x 22
 y 15
+connected 5498765
 end
 arch shop_empty
 name woodfloor
@@ -3238,6 +3249,7 @@ face table_3.111
 x 22
 y 16
 invisible 0
+connected 5498765
 lifesave 1
 arch scroll_literacy
 msg
@@ -3365,6 +3377,7 @@ face table_3.111
 x 23
 y 13
 invisible 0
+connected 4857301
 lifesave 1
 arch tome
 unpaid 1
@@ -3383,6 +3396,7 @@ face teleporter.111
 animation teleporter
 x 23
 y 14
+connected 4857301
 end
 arch shop_empty
 name woodfloor
@@ -3396,6 +3410,7 @@ face teleporter.111
 animation teleporter
 x 23
 y 15
+connected 134628026
 end
 arch shop_empty
 name woodfloor
@@ -3409,6 +3424,7 @@ face table_3.111
 x 23
 y 16
 invisible 0
+connected 134628026
 lifesave 1
 arch card
 name library card
@@ -3493,6 +3509,7 @@ face table_3.111
 x 24
 y 13
 invisible 0
+connected 10294674
 lifesave 1
 arch scroll_2
 unpaid 1
@@ -3511,6 +3528,7 @@ face teleporter.111
 animation teleporter
 x 24
 y 14
+connected 10294674
 end
 arch shop_empty
 name woodfloor
@@ -3524,6 +3542,7 @@ face teleporter.111
 animation teleporter
 x 24
 y 15
+connected 48765784
 end
 arch shop_empty
 name woodfloor
@@ -3537,6 +3556,7 @@ face table_3.111
 x 24
 y 16
 invisible 0
+connected 48765784
 lifesave 1
 arch blue_key
 name an old key

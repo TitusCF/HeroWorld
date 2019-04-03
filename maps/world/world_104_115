@@ -12,7 +12,7 @@ Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Dec 16 20:41:49 2001
 arch
-Modified: 2019-04-02 Acer
+Modified: 2019-04-03 Acer
 endmsg
 outdoor 1
 tile_path_1 world_104_114
@@ -5557,21 +5557,11 @@ arch grass
 x 21
 y 45
 end
-arch sign_e
-name Crafters Street
-msg
-Crafters Street
-
-An assortment of Workshops for everybody to use who is skilled enough.
-endmsg
-x 21
-y 45
-end
-arch cobblestones2
+arch grass
 x 21
 y 46
 end
-arch cobblestones2
+arch grass
 x 21
 y 47
 end
@@ -5821,19 +5811,11 @@ arch grass
 x 22
 y 45
 end
-arch house_small
-name Smithery
-slaying /scorn/houses/smithery
-hp 4
-sp 11
-x 22
-y 45
-end
-arch cobblestones2
+arch grass
 x 22
 y 46
 end
-arch cobblestones2
+arch grass
 x 22
 y 47
 end
@@ -6093,11 +6075,11 @@ arch grass
 x 23
 y 45
 end
-arch cobblestones2
+arch grass
 x 23
 y 46
 end
-arch cobblestones2
+arch grass
 x 23
 y 47
 end
@@ -6346,23 +6328,32 @@ arch grass
 x 24
 y 44
 end
+arch hedge_0
+x 24
+y 44
+move_block all
+end
 arch grass
 x 24
 y 45
 end
-arch house_small
-name Tannery
-slaying /scorn/houses/tannery
-hp 5
-sp 10
+arch swall_2_1_1
 x 24
 y 45
 end
-arch cobblestones2
+arch grass
 x 24
 y 46
 end
-arch cobblestones2
+arch swall_2_1_1
+x 24
+y 46
+end
+arch grass
+x 24
+y 47
+end
+arch swall_2_1_1
 x 24
 y 47
 end
@@ -6370,9 +6361,18 @@ arch grass
 x 24
 y 48
 end
+arch swall_2_1_1
+x 24
+y 48
+end
 arch grass
 x 24
 y 49
+end
+arch hedge_0
+x 24
+y 49
+move_block all
 end
 arch sea
 x 25
@@ -6603,7 +6603,7 @@ arch grass
 x 25
 y 44
 end
-arch tree4
+arch swall_2_1_2
 x 25
 y 44
 end
@@ -6627,15 +6627,11 @@ arch grass
 x 25
 y 48
 end
-arch tree4
-x 25
-y 48
-end
 arch grass
 x 25
 y 49
 end
-arch tree4
+arch swall_2_1_2
 x 25
 y 49
 end
@@ -6875,6 +6871,10 @@ arch grass
 x 26
 y 44
 end
+arch swall_2_1_2
+x 26
+y 44
+end
 arch grass
 x 26
 y 45
@@ -6909,6 +6909,10 @@ x 26
 y 48
 end
 arch grass
+x 26
+y 49
+end
+arch swall_2_1_2
 x 26
 y 49
 end
@@ -7129,6 +7133,10 @@ arch grass
 x 27
 y 44
 end
+arch swall_2_1_2
+x 27
+y 44
+end
 arch grass
 x 27
 y 45
@@ -7145,7 +7153,19 @@ arch grass
 x 27
 y 48
 end
+arch house_small
+name Smithery
+slaying /scorn/houses/smithery
+hp 4
+sp 11
+x 27
+y 48
+end
 arch grass
+x 27
+y 49
+end
+arch swall_2_2_3
 x 27
 y 49
 end
@@ -7359,7 +7379,7 @@ arch grass
 x 28
 y 44
 end
-arch tree5
+arch swall_2_1_2
 x 28
 y 44
 end
@@ -7388,6 +7408,13 @@ x 28
 y 48
 end
 arch cobblestones2
+x 28
+y 49
+end
+arch invis_exit
+slaying /scorn/misc/college
+hp 22
+sp 1
 x 28
 y 49
 end
@@ -7625,11 +7652,11 @@ arch grass
 x 29
 y 44
 end
-arch grass
+arch swall_2_1_2
 x 29
-y 45
+y 44
 end
-arch lamppost
+arch grass
 x 29
 y 45
 end
@@ -7645,7 +7672,19 @@ arch grass
 x 29
 y 48
 end
+arch house_small
+name Tannery
+slaying /scorn/houses/tannery
+hp 5
+sp 10
+x 29
+y 48
+end
 arch grass
+x 29
+y 49
+end
+arch swall_2_2_2
 x 29
 y 49
 end
@@ -7887,6 +7926,10 @@ arch grass
 x 30
 y 44
 end
+arch swall_2_1_2
+x 30
+y 44
+end
 arch grass
 x 30
 y 45
@@ -7912,6 +7955,10 @@ x 30
 y 48
 end
 arch grass
+x 30
+y 49
+end
+arch swall_2_1_2
 x 30
 y 49
 end
@@ -8127,7 +8174,16 @@ arch grass
 x 31
 y 44
 end
+arch hedge_0
+x 31
+y 44
+move_block all
+end
 arch grass
+x 31
+y 45
+end
+arch lamppost
 x 31
 y 45
 end
@@ -8139,11 +8195,15 @@ arch cobblestones2
 x 31
 y 47
 end
-arch footpath_2_2_1
+arch grass
 x 31
 y 48
 end
 arch grass
+x 31
+y 49
+end
+arch swall_2_1_2
 x 31
 y 49
 end
@@ -8419,13 +8479,27 @@ arch river_nw-se_l
 x 32
 y 47
 end
-arch footpath_2_1_2
+arch hedge_0
+x 32
+y 47
+move_block all
+end
+arch grass
+x 32
+y 48
+end
+arch swall_2_1_1
 x 32
 y 48
 end
 arch grass
 x 32
 y 49
+end
+arch hedge_0
+x 32
+y 49
+move_block all
 end
 arch sea
 x 33
@@ -8679,7 +8753,7 @@ arch river_nw-e
 x 33
 y 47
 end
-arch footpath_2_1_2
+arch grass
 x 33
 y 48
 end
@@ -8943,7 +9017,7 @@ arch river_w-e
 x 34
 y 47
 end
-arch footpath_2_1_2
+arch grass
 x 34
 y 48
 end
@@ -9183,7 +9257,7 @@ arch river_w-e
 x 35
 y 47
 end
-arch footpath_2_1_2
+arch grass
 x 35
 y 48
 end
@@ -9492,7 +9566,7 @@ arch river_w-e
 x 36
 y 47
 end
-arch footpath_2_1_2
+arch grass
 x 36
 y 48
 end
@@ -9788,11 +9862,11 @@ arch river_w-e
 x 37
 y 47
 end
-arch footpath_2_2_3
+arch grass
 x 37
 y 48
 end
-arch footpath_2_2_1
+arch grass
 x 37
 y 49
 end
@@ -10045,7 +10119,7 @@ arch river_se-n
 x 38
 y 48
 end
-arch footpath_2_2_3
+arch grass
 x 38
 y 49
 end

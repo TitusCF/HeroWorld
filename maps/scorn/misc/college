@@ -4,7 +4,7 @@ width 45
 height 45
 msg
 Created:  2019-03-25 Acer
-Modified: 2019-03-25 Acer
+Modified: 2019-04-03 Acer
 endmsg
 end
 arch cobblestones2
@@ -3414,6 +3414,12 @@ end
 arch grass
 x 14
 end
+arch invis_exit
+slaying /world/world_104_115
+hp 28
+sp 48
+x 14
+end
 arch grass
 x 14
 y 1
@@ -3602,25 +3608,20 @@ arch grass
 x 14
 y 44
 end
-arch cobblestones2
+arch grass
 x 15
 end
-arch cwall_2_2_2
+arch invis_exit
+slaying /world/world_104_115
+hp 28
+sp 48
 x 15
 end
-arch cobblestones2
+arch grass
 x 15
 y 1
 end
-arch cwall_2_1_1
-x 15
-y 1
-end
-arch cobblestones2
-x 15
-y 2
-end
-arch dwall_win1
+arch grass
 x 15
 y 2
 end
@@ -3628,7 +3629,7 @@ arch cobblestones2
 x 15
 y 3
 end
-arch cwall_2_1_1
+arch cwall_2_2_2
 x 15
 y 3
 end
@@ -3636,7 +3637,7 @@ arch cobblestones2
 x 15
 y 4
 end
-arch dwall_win1
+arch cwall_2_1_1
 x 15
 y 4
 end
@@ -3644,7 +3645,7 @@ arch cobblestones2
 x 15
 y 5
 end
-arch cwall_2_1_1
+arch dwall_win1
 x 15
 y 5
 end
@@ -3840,21 +3841,28 @@ arch grass
 x 15
 y 44
 end
-arch cobblestones2
+arch grass
 x 16
 end
-arch cwall_2_1_2
+arch invis_exit
+slaying /world/world_104_115
+hp 28
+sp 48
 x 16
 end
-arch shop_empty
+arch grass
 x 16
 y 1
 end
-arch shop_empty
+arch grass
 x 16
 y 2
 end
-arch shop_empty
+arch cobblestones2
+x 16
+y 3
+end
+arch cwall_2_1_2
 x 16
 y 3
 end
@@ -3866,26 +3874,19 @@ arch shop_empty
 x 16
 y 5
 end
+arch shop_empty
+x 16
+y 6
+end
+arch shop_empty
+x 16
+y 7
+end
 arch redslate
 x 16
-y 6
+y 8
 end
 arch swall_1_4
-x 16
-y 6
-end
-arch cobblestones2
-x 16
-y 7
-end
-arch waybread_table
-name Yellow Vial (100 gp)
-other_arch vial_yellow
-food 100
-x 16
-y 7
-end
-arch cobblestones2
 x 16
 y 8
 end
@@ -3894,13 +3895,20 @@ x 16
 y 9
 end
 arch waybread_table
-name Red Vial (100 gp)
-other_arch vial_red
+name Yellow Vial (100 gp)
+other_arch vial_yellow
 food 100
 x 16
 y 9
 end
 arch cobblestones2
+x 16
+y 10
+end
+arch waybread_table
+name Red Vial (100 gp)
+other_arch vial_red
+food 100
 x 16
 y 10
 end
@@ -4063,21 +4071,28 @@ arch grass
 x 16
 y 44
 end
-arch cobblestones2
+arch grass
 x 17
 end
-arch cwall_2_1_2
+arch invis_exit
+slaying /world/world_104_115
+hp 28
+sp 48
 x 17
 end
-arch shop_empty
+arch grass
 x 17
 y 1
 end
-arch shop_empty
+arch grass
 x 17
 y 2
 end
-arch shop_empty
+arch cobblestones2
+x 17
+y 3
+end
+arch cwall_2_1_2
 x 17
 y 3
 end
@@ -4089,23 +4104,27 @@ arch shop_empty
 x 17
 y 5
 end
-arch redslate
+arch shop_empty
 x 17
 y 6
 end
-arch swall_2_1_2
-x 17
-y 6
-end
-arch redmarble
+arch shop_empty
 x 17
 y 7
 end
-arch cobblestones2
+arch redslate
+x 17
+y 8
+end
+arch swall_2_1_2
 x 17
 y 8
 end
 arch cobblestones2
+x 17
+y 9
+end
+arch redmarble
 x 17
 y 9
 end
@@ -4265,45 +4284,28 @@ arch grass
 x 17
 y 44
 end
-arch cobblestones2
+arch grass
 x 18
 end
-arch cwall_mural_end_1_1
+arch invis_exit
+slaying /world/world_104_115
+hp 28
+sp 48
 x 18
 end
-arch shop_empty
+arch grass
 x 18
 y 1
 end
+arch grass
+x 18
+y 2
+end
 arch shop_empty
 x 18
-y 2
+y 3
 end
-arch table_3
-x 18
-y 2
-no_pick 1
-identified 1
-end
-arch scroll_jewelry
-x 18
-y 2
-unpaid 1
-identified 1
-end
-arch scroll_jewelry
-x 18
-y 2
-unpaid 1
-identified 1
-end
-arch scroll_jewelry
-x 18
-y 2
-unpaid 1
-identified 1
-end
-arch shop_empty
+arch cwall_2_1_2
 x 18
 y 3
 end
@@ -4315,23 +4317,51 @@ arch shop_empty
 x 18
 y 5
 end
-arch redslate
+arch table_3
+x 18
+y 5
+no_pick 1
+identified 1
+end
+arch scroll_jewelry
+x 18
+y 5
+unpaid 1
+identified 1
+end
+arch scroll_jewelry
+x 18
+y 5
+unpaid 1
+identified 1
+end
+arch scroll_jewelry
+x 18
+y 5
+unpaid 1
+identified 1
+end
+arch shop_empty
 x 18
 y 6
 end
-arch swall_2_1_2
-x 18
-y 6
-end
-arch redmarble
+arch shop_empty
 x 18
 y 7
 end
-arch redmarble
+arch redslate
+x 18
+y 8
+end
+arch swall_2_1_2
 x 18
 y 8
 end
 arch cobblestones2
+x 18
+y 9
+end
+arch redmarble
 x 18
 y 9
 end
@@ -4492,21 +4522,28 @@ arch grass
 x 18
 y 44
 end
-arch cobblestones2
+arch grass
 x 19
 end
-arch cwall_mural_1_2
+arch invis_exit
+slaying /world/world_104_115
+hp 28
+sp 48
 x 19
 end
-arch shop_empty
+arch grass
 x 19
 y 1
 end
-arch shop_empty
+arch grass
 x 19
 y 2
 end
-arch shop_empty
+arch cobblestones2
+x 19
+y 3
+end
+arch cwall_mural_end_1_1
 x 19
 y 3
 end
@@ -4518,23 +4555,27 @@ arch shop_empty
 x 19
 y 5
 end
-arch redslate
+arch shop_empty
 x 19
 y 6
 end
-arch swall_2_1_2
-x 19
-y 6
-end
-arch marble
+arch shop_empty
 x 19
 y 7
 end
-arch redmarble
+arch redslate
+x 19
+y 8
+end
+arch swall_2_1_2
 x 19
 y 8
 end
 arch redmarble
+x 19
+y 9
+end
+arch marble
 x 19
 y 9
 end
@@ -4740,21 +4781,28 @@ arch cwall_2_2_1
 x 19
 y 44
 end
-arch cobblestones2
+arch grass
 x 20
 end
-arch cwall_mural_1_3
+arch invis_exit
+slaying /world/world_104_115
+hp 28
+sp 48
 x 20
 end
-arch shop_empty
+arch grass
 x 20
 y 1
 end
-arch shop_empty
+arch grass
 x 20
 y 2
 end
-arch shop_empty
+arch cobblestones2
+x 20
+y 3
+end
+arch cwall_mural_1_3
 x 20
 y 3
 end
@@ -4766,23 +4814,27 @@ arch shop_empty
 x 20
 y 5
 end
-arch redslate
+arch shop_empty
 x 20
 y 6
 end
-arch swall_2_1_2
-x 20
-y 6
-end
-arch marble
+arch shop_empty
 x 20
 y 7
 end
-arch marble
+arch redslate
+x 20
+y 8
+end
+arch swall_2_1_2
 x 20
 y 8
 end
 arch redmarble
+x 20
+y 9
+end
+arch marble
 x 20
 y 9
 end
@@ -4946,21 +4998,28 @@ arch cwall_1_3
 x 20
 y 44
 end
-arch cobblestones2
+arch grass
 x 21
 end
-arch cwall_mural_1_1
+arch invis_exit
+slaying /world/world_104_115
+hp 28
+sp 48
 x 21
 end
-arch shop_empty
+arch grass
 x 21
 y 1
 end
-arch shop_empty
+arch grass
 x 21
 y 2
 end
-arch shop_empty
+arch cobblestones2
+x 21
+y 3
+end
+arch cwall_mural_end_1_2
 x 21
 y 3
 end
@@ -4972,21 +5031,25 @@ arch shop_empty
 x 21
 y 5
 end
-arch redslate
+arch shop_empty
 x 21
 y 6
 end
-arch swall_2_1_2
-x 21
-y 6
-end
-arch marble
+arch shop_empty
 x 21
 y 7
 end
-arch marble
+arch redslate
 x 21
 y 8
+end
+arch swall_2_1_2
+x 21
+y 8
+end
+arch marble
+x 21
+y 9
 end
 arch marble
 x 21
@@ -5156,81 +5219,100 @@ sp 3
 x 21
 y 44
 end
-arch cobblestones2
+arch grass
 x 22
 end
-arch cwall_mural_1_2
+arch invis_exit
+slaying /world/world_104_115
+hp 28
+sp 48
 x 22
 end
-arch shop_empty
+arch grass
 x 22
 y 1
 end
-arch shop_empty
+arch grass
 x 22
 y 2
 end
-arch table_3
+arch shop_mat
 x 22
 y 2
+end
+arch cobblestones2
+x 22
+y 3
+end
+arch cwall_2_1_2
+x 22
+y 3
+end
+arch shop_empty
+x 22
+y 4
+end
+arch shop_mat
+x 22
+y 4
+end
+arch shop_empty
+x 22
+y 5
+end
+arch table_3
+x 22
+y 5
 no_pick 1
 identified 1
 end
 arch scroll_woodsman
 x 22
-y 2
+y 5
 unpaid 1
 identified 1
 end
 arch scroll_woodsman
-x 22
-y 2
-unpaid 1
-identified 1
-end
-arch scroll_woodsman
-x 22
-y 2
-unpaid 1
-identified 1
-end
-arch shop_empty
-x 22
-y 3
-end
-arch shop_empty
-x 22
-y 4
-end
-arch shop_empty
 x 22
 y 5
+unpaid 1
+identified 1
+end
+arch scroll_woodsman
+x 22
+y 5
+unpaid 1
+identified 1
+end
+arch shop_empty
+x 22
+y 6
+end
+arch shop_empty
+x 22
+y 7
 end
 arch shop_mat
 x 22
-y 5
+y 7
 end
 arch redslate
 x 22
-y 6
+y 8
 end
 arch swall_2_1_2
-x 22
-y 6
-end
-arch marble
-x 22
-y 7
-end
-arch shop_mat
-x 22
-y 7
-end
-arch marble
 x 22
 y 8
 end
 arch marble
+x 22
+y 9
+end
+arch marble
+x 22
+y 9
+end
+arch shop_mat
 x 22
 y 9
 end
@@ -5398,21 +5480,28 @@ sp 3
 x 22
 y 44
 end
-arch cobblestones2
+arch grass
 x 23
 end
-arch cwall_mural_1_3
+arch invis_exit
+slaying /world/world_104_115
+hp 28
+sp 48
 x 23
 end
-arch shop_empty
+arch grass
 x 23
 y 1
 end
-arch shop_empty
+arch grass
 x 23
 y 2
 end
-arch shop_empty
+arch cobblestones2
+x 23
+y 3
+end
+arch cwall_mural_end_1_1
 x 23
 y 3
 end
@@ -5424,21 +5513,25 @@ arch shop_empty
 x 23
 y 5
 end
-arch redslate
+arch shop_empty
 x 23
 y 6
 end
-arch swall_2_1_2
-x 23
-y 6
-end
-arch marble
+arch shop_empty
 x 23
 y 7
 end
-arch marble
+arch redslate
 x 23
 y 8
+end
+arch swall_2_1_2
+x 23
+y 8
+end
+arch marble
+x 23
+y 9
 end
 arch marble
 x 23
@@ -5608,22 +5701,29 @@ sp 3
 x 23
 y 44
 end
+arch grass
+x 24
+end
+arch invis_exit
+slaying /world/world_104_115
+hp 28
+sp 48
+x 24
+end
+arch grass
+x 24
+y 1
+end
+arch grass
+x 24
+y 2
+end
 arch cobblestones2
 x 24
+y 3
 end
 arch cwall_mural_1_4
 x 24
-end
-arch shop_empty
-x 24
-y 1
-end
-arch shop_empty
-x 24
-y 2
-end
-arch shop_empty
-x 24
 y 3
 end
 arch shop_empty
@@ -5634,23 +5734,27 @@ arch shop_empty
 x 24
 y 5
 end
-arch redslate
+arch shop_empty
 x 24
 y 6
 end
-arch swall_2_1_2
-x 24
-y 6
-end
-arch marble
+arch shop_empty
 x 24
 y 7
 end
-arch marble
+arch redslate
+x 24
+y 8
+end
+arch swall_2_1_2
 x 24
 y 8
 end
 arch redmarble
+x 24
+y 9
+end
+arch marble
 x 24
 y 9
 end
@@ -5814,21 +5918,28 @@ arch cwall_1_4
 x 24
 y 44
 end
-arch cobblestones2
+arch grass
 x 25
 end
-arch cwall_mural_1_2
+arch invis_exit
+slaying /world/world_104_115
+hp 28
+sp 48
 x 25
 end
-arch shop_empty
+arch grass
 x 25
 y 1
 end
-arch shop_empty
+arch grass
 x 25
 y 2
 end
-arch shop_empty
+arch cobblestones2
+x 25
+y 3
+end
+arch cwall_mural_end_1_2
 x 25
 y 3
 end
@@ -5840,23 +5951,27 @@ arch shop_empty
 x 25
 y 5
 end
-arch redslate
+arch shop_empty
 x 25
 y 6
 end
-arch swall_2_1_2
-x 25
-y 6
-end
-arch marble
+arch shop_empty
 x 25
 y 7
 end
-arch redmarble
+arch redslate
+x 25
+y 8
+end
+arch swall_2_1_2
 x 25
 y 8
 end
 arch redmarble
+x 25
+y 9
+end
+arch marble
 x 25
 y 9
 end
@@ -6062,45 +6177,28 @@ arch cwall_2_2_4
 x 25
 y 44
 end
-arch cobblestones2
+arch grass
 x 26
 end
-arch cwall_mural_end_1_2
+arch invis_exit
+slaying /world/world_104_115
+hp 28
+sp 48
 x 26
 end
-arch shop_empty
+arch grass
 x 26
 y 1
 end
+arch grass
+x 26
+y 2
+end
 arch shop_empty
 x 26
-y 2
+y 3
 end
-arch table_3
-x 26
-y 2
-no_pick 1
-identified 1
-end
-arch scroll_smithing
-x 26
-y 2
-unpaid 1
-identified 1
-end
-arch scroll_smithing
-x 26
-y 2
-unpaid 1
-identified 1
-end
-arch scroll_smithing
-x 26
-y 2
-unpaid 1
-identified 1
-end
-arch shop_empty
+arch cwall_2_1_2
 x 26
 y 3
 end
@@ -6112,23 +6210,51 @@ arch shop_empty
 x 26
 y 5
 end
-arch redslate
+arch table_3
+x 26
+y 5
+no_pick 1
+identified 1
+end
+arch scroll_smithing
+x 26
+y 5
+unpaid 1
+identified 1
+end
+arch scroll_smithing
+x 26
+y 5
+unpaid 1
+identified 1
+end
+arch scroll_smithing
+x 26
+y 5
+unpaid 1
+identified 1
+end
+arch shop_empty
 x 26
 y 6
 end
-arch swall_2_1_2
-x 26
-y 6
-end
-arch redmarble
+arch shop_empty
 x 26
 y 7
 end
-arch redmarble
+arch redslate
+x 26
+y 8
+end
+arch swall_2_1_2
 x 26
 y 8
 end
 arch cobblestones2
+x 26
+y 9
+end
+arch redmarble
 x 26
 y 9
 end
@@ -6284,21 +6410,28 @@ arch grass
 x 26
 y 44
 end
-arch cobblestones2
+arch grass
 x 27
 end
-arch cwall_2_1_2
+arch invis_exit
+slaying /world/world_104_115
+hp 28
+sp 48
 x 27
 end
-arch shop_empty
+arch grass
 x 27
 y 1
 end
-arch shop_empty
+arch grass
 x 27
 y 2
 end
-arch shop_empty
+arch cobblestones2
+x 27
+y 3
+end
+arch cwall_2_1_2
 x 27
 y 3
 end
@@ -6310,23 +6443,27 @@ arch shop_empty
 x 27
 y 5
 end
-arch redslate
+arch shop_empty
 x 27
 y 6
 end
-arch swall_2_1_2
-x 27
-y 6
-end
-arch redmarble
+arch shop_empty
 x 27
 y 7
 end
-arch cobblestones2
+arch redslate
+x 27
+y 8
+end
+arch swall_2_1_2
 x 27
 y 8
 end
 arch cobblestones2
+x 27
+y 9
+end
+arch redmarble
 x 27
 y 9
 end
@@ -6486,21 +6623,28 @@ arch grass
 x 27
 y 44
 end
-arch cobblestones2
+arch grass
 x 28
 end
-arch cwall_2_1_2
+arch invis_exit
+slaying /world/world_104_115
+hp 28
+sp 48
 x 28
 end
-arch shop_empty
+arch grass
 x 28
 y 1
 end
-arch shop_empty
+arch grass
 x 28
 y 2
 end
-arch shop_empty
+arch cobblestones2
+x 28
+y 3
+end
+arch cwall_2_1_2
 x 28
 y 3
 end
@@ -6512,26 +6656,19 @@ arch shop_empty
 x 28
 y 5
 end
+arch shop_empty
+x 28
+y 6
+end
+arch shop_empty
+x 28
+y 7
+end
 arch redslate
 x 28
-y 6
+y 8
 end
 arch swall_1_3
-x 28
-y 6
-end
-arch cobblestones2
-x 28
-y 7
-end
-arch waybread_table
-name Green Vial (100 gp)
-other_arch vial_green
-food 100
-x 28
-y 7
-end
-arch cobblestones2
 x 28
 y 8
 end
@@ -6540,13 +6677,20 @@ x 28
 y 9
 end
 arch waybread_table
-name Cyan Vial (100 gp)
-other_arch vial_cyan
+name Green Vial (100 gp)
+other_arch vial_green
 food 100
 x 28
 y 9
 end
 arch cobblestones2
+x 28
+y 10
+end
+arch waybread_table
+name Cyan Vial (100 gp)
+other_arch vial_cyan
+food 100
 x 28
 y 10
 end
@@ -6709,25 +6853,20 @@ arch grass
 x 28
 y 44
 end
-arch cobblestones2
+arch grass
 x 29
 end
-arch cwall_2_2_3
+arch invis_exit
+slaying /world/world_104_115
+hp 28
+sp 48
 x 29
 end
-arch cobblestones2
+arch grass
 x 29
 y 1
 end
-arch cwall_2_1_1
-x 29
-y 1
-end
-arch cobblestones2
-x 29
-y 2
-end
-arch dwall_win1
+arch grass
 x 29
 y 2
 end
@@ -6735,7 +6874,7 @@ arch cobblestones2
 x 29
 y 3
 end
-arch cwall_2_1_1
+arch cwall_2_2_3
 x 29
 y 3
 end
@@ -6743,7 +6882,7 @@ arch cobblestones2
 x 29
 y 4
 end
-arch dwall_win1
+arch cwall_2_1_1
 x 29
 y 4
 end
@@ -6751,7 +6890,7 @@ arch cobblestones2
 x 29
 y 5
 end
-arch cwall_2_1_1
+arch dwall_win1
 x 29
 y 5
 end
@@ -6962,6 +7101,12 @@ x 29
 y 44
 end
 arch grass
+x 30
+end
+arch invis_exit
+slaying /world/world_104_115
+hp 28
+sp 48
 x 30
 end
 arch grass

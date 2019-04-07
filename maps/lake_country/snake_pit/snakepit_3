@@ -9,7 +9,7 @@ enter_x 18
 enter_y 29
 msg
 Created:  1995-06-04 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2011-08-27 Andreas Kirschbaum
+Modified: 2019-04-07 Acer
 endmsg
 end
 arch large_stones
@@ -6611,15 +6611,16 @@ nrof 8
 arch spell_heal
 end
 end
-arch rod_light
-name Rod of Knowledge
-hp 120
-maxhp 120
+arch wand
+name Wand of Knowledge
+name_pl wands of Knowledge
+food 5
 level 20
-value 1000
-randomitems none
-identified 1
+material 256
+startequip 1
 arch spell_identify
+msg
+endmsg
 end
 end
 end

@@ -6,7 +6,7 @@ msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Jan 18 15:47:50 1999
-Modified: 2019-04-03 Acer
+Modified: 2019-04-07 Acer
 endmsg
 end
 arch cobblestones2
@@ -86,11 +86,17 @@ face stfloor.111
 food 1
 x 2
 y 2
-arch skeleton
-speed 1.0
-glow_radius 1
-friendly 1
-sleep 0
+arch scroll_new
+name grimacing skull
+name_pl grimacing skulls
+face skull.111
+animation skull
+arch spell_summon_air_elemental
+name skeletalmage
+msg
+endmsg
+other_arch skeletalmage
+end
 end
 end
 arch grassbrown
@@ -108,6 +114,10 @@ arch swall_1_4
 x 3
 end
 arch grassbrown
+x 3
+y 1
+end
+arch skeletalmage
 x 3
 y 1
 end

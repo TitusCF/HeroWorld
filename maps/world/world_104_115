@@ -12,7 +12,7 @@ Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Dec 16 20:41:49 2001
 arch
-Modified: 2019-04-09 Acer
+Modified: 2019-04-10 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_104_114
@@ -12432,6 +12432,20 @@ end
 arch cobblestones
 x 47
 y 36
+end
+arch slotmachine3
+name news stand
+slaying money
+msg
+You pick up a fresh paper.
+endmsg
+food 10
+x 47
+y 36
+arch event_apply
+title Newspaper
+slaying Scorn
+end
 end
 arch cobblestones
 x 47

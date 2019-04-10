@@ -1041,6 +1041,10 @@ arch marble
 x 4
 y 33
 end
+arch chalice_cop
+x 4
+y 33
+end
 arch marble
 x 4
 y 34
@@ -1431,10 +1435,16 @@ name Tamaohoi
 x 6
 y 32
 arch wand
-name Tamaohoi's Wand
-name_pl Tamaohoi Wands
+name Tamaohoi's Magma Chalice
+name_pl Tamaohoi Magma Chalices
+face chalice_cop.111
+animation chalice_cop
 food 10
 level 20
+material 2048
+randomitems none
+is_animated 1
+anim_speed 5
 arch spell_create_lava
 end
 end

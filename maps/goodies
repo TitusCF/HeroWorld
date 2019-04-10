@@ -586,6 +586,7 @@ end
 arch thunderking_gauntlet
 x 2
 y 24
+material 256
 identified 1
 end
 arch afloor_blue_left
@@ -1980,6 +1981,13 @@ arch afloor_blue_left
 x 8
 y 19
 end
+arch thunderking_gauntlet
+name thunderking's gauntlets test
+x 8
+y 19
+material 256
+identified 1
+end
 arch afloor_blue_left
 x 8
 y 20
@@ -2274,6 +2282,28 @@ end
 arch afloor_blue_left
 x 9
 y 19
+end
+arch wand
+face thunderking_gauntlet.111
+animation NONE
+Int 1
+food 100
+x 9
+y 19
+level 50
+resist_physical 4
+resist_electricity 40
+resist_paralyze 15
+path_attuned 524296
+material 256
+value 85000
+weight 1900
+randomitems none
+item_power 5
+body_range 0
+body_hand -2
+arch spell_meteor_swarm
+end
 end
 arch afloor_blue_left
 x 9

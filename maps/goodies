@@ -1981,12 +1981,15 @@ arch afloor_blue_left
 x 8
 y 19
 end
-arch thunderking_gauntlet
-name thunderking's gauntlets test
+arch beholder
 x 8
 y 19
-material 256
-identified 1
+type 2
+container 10000000
+move_type boat
+move_allow walk
+passenger_limit 1
+turnable_transport 1
 end
 arch afloor_blue_left
 x 8
@@ -2282,32 +2285,6 @@ end
 arch afloor_blue_left
 x 9
 y 19
-end
-arch wand
-name thunderking's gauntlets test
-face thunderking_gauntlet.111
-animation NONE
-Int 1
-food 100
-x 9
-y 19
-level 50
-type 100 , 109
-resist_physical 4
-resist_electricity 40
-resist_paralyze 15
-path_attuned 524296
-material 256
-value 85000
-weight 1900
-randomitems none
-item_power 5
-body_arm 0
-body_hand -2
-anim_speed 0
-client_anim_random 0
-arch spell_meteor_swarm
-end
 end
 arch afloor_blue_left
 x 9

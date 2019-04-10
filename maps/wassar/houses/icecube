@@ -1,8 +1,11 @@
 arch map
 name House of Freezer
 region wassar
-width 17
+width 16
 height 16
+msg
+Modified: 2019-04-09 Acer
+endmsg
 end
 arch bluemarblemedium
 end
@@ -112,19 +115,6 @@ arch bluemarblemedium
 x 1
 y 1
 end
-arch grate_open_1
-x 1
-y 1
-invisible 1
-connected 21
-end
-arch teleporter_connect
-hp 16
-sp 1
-x 1
-y 1
-connected 11
-end
 arch bluemarblemedium
 x 1
 y 2
@@ -133,20 +123,9 @@ arch bluemarblemedium
 x 1
 y 3
 end
-arch grate_open_1
-x 1
-y 3
-connected 11
-end
 arch bluemarblemedium
 x 1
 y 4
-end
-arch button_handle
-name Sell 100 Kilogram Icecube(s)
-x 1
-y 4
-connected 11
 end
 arch bluemarblemedium
 x 1
@@ -296,19 +275,6 @@ arch bluemarblemedium
 x 3
 y 1
 end
-arch grate_open_1
-x 3
-y 1
-invisible 1
-connected 22
-end
-arch teleporter_connect
-hp 16
-sp 5
-x 3
-y 1
-connected 12
-end
 arch bluemarblemedium
 x 3
 y 2
@@ -317,20 +283,9 @@ arch bluemarblemedium
 x 3
 y 3
 end
-arch grate_open_1
-x 3
-y 3
-connected 12
-end
 arch bluemarblemedium
 x 3
 y 4
-end
-arch button_handle
-name Sell 100 Kilogram Icecube(s)
-x 3
-y 4
-connected 12
 end
 arch bluemarblemedium
 x 3
@@ -480,6 +435,10 @@ arch firewall_3
 dam 59
 x 5
 y 1
+connected 293847
+activate_on_release 0
+arch spell_large_icestorm
+end
 end
 arch bluemarblemedium
 x 5
@@ -489,6 +448,10 @@ arch firewall_3
 dam 59
 x 5
 y 2
+connected 293847
+activate_on_release 0
+arch spell_large_icestorm
+end
 end
 arch bluemarblemedium
 x 5
@@ -670,11 +633,11 @@ end
 arch dun_2_1_2
 x 7
 end
-arch bluemarblemedium
+arch lostlabfloor10
 x 7
 y 1
 end
-arch bluemarblemedium
+arch lostlabfloor10
 x 7
 y 2
 end
@@ -690,6 +653,12 @@ end
 arch bluemarblemedium
 x 7
 y 4
+end
+arch detector
+x 7
+y 4
+invisible 1
+connected 293847
 end
 arch bluemarblemedium
 x 7
@@ -755,11 +724,11 @@ end
 arch dun_2_1_2
 x 8
 end
-arch bluemarblemedium
+arch lostlabfloor10
 x 8
 y 1
 end
-arch bluemarblemedium
+arch lostlabfloor10
 x 8
 y 2
 end
@@ -775,6 +744,12 @@ end
 arch bluemarblemedium
 x 8
 y 4
+end
+arch detector
+x 8
+y 4
+invisible 1
+connected 293847
 end
 arch bluemarblemedium
 x 8
@@ -951,6 +926,10 @@ arch firewall_7
 dam 59
 x 10
 y 1
+connected 293847
+activate_on_release 0
+arch spell_large_icestorm
+end
 end
 arch bluemarblemedium
 x 10
@@ -960,6 +939,10 @@ arch firewall_7
 dam 59
 x 10
 y 2
+connected 293847
+activate_on_release 0
+arch spell_large_icestorm
+end
 end
 arch bluemarblemedium
 x 10
@@ -1151,19 +1134,6 @@ arch bluemarblemedium
 x 12
 y 1
 end
-arch grate_open_1
-x 12
-y 1
-invisible 1
-connected 24
-end
-arch teleporter_connect
-hp 16
-sp 9
-x 12
-y 1
-connected 14
-end
 arch bluemarblemedium
 x 12
 y 2
@@ -1172,20 +1142,9 @@ arch bluemarblemedium
 x 12
 y 3
 end
-arch grate_open_1
-x 12
-y 3
-connected 14
-end
 arch bluemarblemedium
 x 12
 y 4
-end
-arch button_handle
-name Sell 250 Kilogram Icecube(s)
-x 12
-y 4
-connected 14
 end
 arch bluemarblemedium
 x 12
@@ -1335,19 +1294,6 @@ arch bluemarblemedium
 x 14
 y 1
 end
-arch grate_open_1
-x 14
-y 1
-invisible 1
-connected 25
-end
-arch teleporter_connect
-hp 16
-sp 13
-x 14
-y 1
-connected 15
-end
 arch bluemarblemedium
 x 14
 y 2
@@ -1356,20 +1302,9 @@ arch bluemarblemedium
 x 14
 y 3
 end
-arch grate_open_1
-x 14
-y 3
-connected 15
-end
 arch bluemarblemedium
 x 14
 y 4
-end
-arch button_handle
-name Sell 250 Kilogram Icecube(s)
-x 14
-y 4
-connected 15
 end
 arch bluemarblemedium
 x 14
@@ -1560,211 +1495,5 @@ y 15
 end
 arch dun_2_2_4
 x 15
-y 15
-end
-arch afloor_black_left
-x 16
-end
-arch awall_0
-x 16
-end
-arch afloor_black_left
-x 16
-y 1
-end
-arch button_small
-x 16
-y 1
-weight 100000
-connected 21
-end
-arch afloor_black_left
-x 16
-y 2
-end
-arch teleporter_connect
-hp 1
-sp 2
-x 16
-y 2
-connected 21
-end
-arch goldcoin
-x 16
-y 2
-nrof 50
-end
-arch afloor_black_left
-x 16
-y 3
-end
-arch teleporter_connect
-hp 1
-sp 2
-x 16
-y 3
-connected 21
-end
-arch sign
-msg
-Sorry, this booth has been used. Try another one.
-endmsg
-x 16
-y 3
-end
-arch afloor_black_left
-x 16
-y 4
-end
-arch awall_0
-x 16
-y 4
-end
-arch afloor_black_left
-x 16
-y 5
-end
-arch button_small
-x 16
-y 5
-weight 100000
-connected 22
-end
-arch afloor_black_left
-x 16
-y 6
-end
-arch teleporter_connect
-hp 3
-sp 2
-x 16
-y 6
-connected 22
-end
-arch goldcoin
-x 16
-y 6
-nrof 50
-end
-arch afloor_black_left
-x 16
-y 7
-end
-arch teleporter_connect
-hp 3
-sp 2
-x 16
-y 7
-connected 22
-end
-arch sign
-msg
-Sorry, this booth has been used. Try another one.
-endmsg
-x 16
-y 7
-end
-arch afloor_black_left
-x 16
-y 8
-end
-arch awall_0
-x 16
-y 8
-end
-arch afloor_black_left
-x 16
-y 9
-end
-arch button_small
-x 16
-y 9
-weight 250000
-connected 24
-end
-arch afloor_black_left
-x 16
-y 10
-end
-arch teleporter_connect
-hp 12
-sp 2
-x 16
-y 10
-connected 24
-end
-arch goldcoin
-x 16
-y 10
-nrof 150
-end
-arch afloor_black_left
-x 16
-y 11
-end
-arch teleporter_connect
-hp 12
-sp 2
-x 16
-y 11
-connected 24
-end
-arch sign
-msg
-Sorry, this booth has been used. Try another one.
-endmsg
-x 16
-y 11
-end
-arch afloor_black_left
-x 16
-y 12
-end
-arch awall_0
-x 16
-y 12
-end
-arch afloor_black_left
-x 16
-y 13
-end
-arch button_small
-x 16
-y 13
-weight 250000
-connected 25
-end
-arch afloor_black_left
-x 16
-y 14
-end
-arch teleporter_connect
-hp 14
-sp 2
-x 16
-y 14
-connected 25
-end
-arch goldcoin
-x 16
-y 14
-nrof 150
-end
-arch afloor_black_left
-x 16
-y 15
-end
-arch teleporter_connect
-hp 14
-sp 2
-x 16
-y 15
-connected 25
-end
-arch sign
-msg
-Sorry, this booth has been used. Try another one.
-endmsg
-x 16
 y 15
 end

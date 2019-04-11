@@ -1,4 +1,5 @@
 arch map
+name <unnamed>
 difficulty 1
 width 140
 height 140
@@ -8,6 +9,7 @@ msg
 Creator: mikeeusa
 Email: gnu@foo.bar
 Date: Sun Nov  9 13:45:37 2003
+Modified: 2019-04-10 Acer
 endmsg
 outdoor 1
 end
@@ -35592,9 +35594,7 @@ y 107
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 27
 y 107
 end
@@ -35606,9 +35606,7 @@ y 108
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 27
 y 108
 end
@@ -35620,9 +35618,7 @@ y 109
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 27
 y 109
 end
@@ -35634,9 +35630,7 @@ y 110
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 27
 y 110
 end
@@ -35648,9 +35642,7 @@ y 111
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 27
 y 111
 end
@@ -35662,9 +35654,7 @@ y 112
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 27
 y 112
 end
@@ -35676,9 +35666,7 @@ y 113
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 27
 y 113
 end
@@ -35690,9 +35678,7 @@ y 114
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 27
 y 114
 end
@@ -36963,13 +36949,13 @@ arch dungeon_magic
 x 28
 y 106
 end
-arch blocked
-name nothing
-name_pl nothing
+arch dungeon_floor
 x 28
 y 107
-no_pass 0
-blocksview 0
+end
+arch dungeon_floor
+x 28
+y 108
 end
 arch dragon_exit
 name dragon to Navar
@@ -36985,6 +36971,10 @@ sp 46
 x 28
 y 108
 end
+arch dungeon_floor
+x 28
+y 109
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -36993,9 +36983,7 @@ y 110
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 28
 y 110
 end
@@ -37007,11 +36995,13 @@ y 111
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 28
 y 111
+end
+arch dungeon_floor
+x 28
+y 112
 end
 arch dragon_exit
 name docked dragon
@@ -37023,13 +37013,13 @@ endmsg
 x 28
 y 112
 end
-arch blocked
-name nothing
-name_pl nothing
+arch dungeon_floor
+x 28
+y 113
+end
+arch dungeon_floor
 x 28
 y 114
-no_pass 0
-blocksview 0
 end
 arch blocked
 name npnothing
@@ -38260,17 +38250,17 @@ arch dungeon_magic
 x 29
 y 106
 end
-arch blocked
-name nothing
-name_pl nothing
+arch dungeon_floor
 x 29
 y 107
-no_pass 0
-blocksview 0
 end
-arch dungeon_magic
+arch dungeon_floor
 x 29
-y 107
+y 108
+end
+arch dungeon_floor
+x 29
+y 109
 end
 arch blocked
 name nothing
@@ -38280,9 +38270,7 @@ y 110
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 29
 y 110
 end
@@ -38294,19 +38282,21 @@ y 111
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 29
 y 111
 end
-arch blocked
-name nothing
-name_pl nothing
+arch dungeon_floor
+x 29
+y 112
+end
+arch dungeon_floor
+x 29
+y 113
+end
+arch dungeon_floor
 x 29
 y 114
-no_pass 0
-blocksview 0
 end
 arch blocked
 name npnothing
@@ -39556,13 +39546,17 @@ arch dungeon_magic
 x 30
 y 106
 end
-arch blocked
-name nothing
-name_pl nothing
+arch dungeon_floor
 x 30
 y 107
-no_pass 0
-blocksview 0
+end
+arch dungeon_floor
+x 30
+y 108
+end
+arch dungeon_floor
+x 30
+y 109
 end
 arch blocked
 name nothing
@@ -39572,9 +39566,7 @@ y 110
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 30
 y 110
 end
@@ -39586,19 +39578,21 @@ y 111
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 30
 y 111
 end
-arch blocked
-name nothing
-name_pl nothing
+arch dungeon_floor
+x 30
+y 112
+end
+arch dungeon_floor
+x 30
+y 113
+end
+arch dungeon_floor
 x 30
 y 114
-no_pass 0
-blocksview 0
 end
 arch fog
 x 30
@@ -40864,33 +40858,21 @@ arch dungeon_magic
 x 31
 y 106
 end
-arch blocked
-name nothing
-name_pl nothing
+arch dungeon_floor
 x 31
 y 107
-no_pass 0
-blocksview 0
 end
 arch fog
 x 31
 y 107
 end
-arch blocked
-name nothing
-name_pl nothing
+arch dungeon_floor
 x 31
 y 108
-no_pass 0
-blocksview 0
 end
-arch blocked
-name nothing
-name_pl nothing
+arch dungeon_floor
 x 31
 y 109
-no_pass 0
-blocksview 0
 end
 arch blocked
 name nothing
@@ -40900,9 +40882,7 @@ y 110
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 31
 y 110
 end
@@ -40914,35 +40894,21 @@ y 111
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 31
 y 111
 end
-arch blocked
-name nothing
-name_pl nothing
+arch dungeon_floor
 x 31
 y 112
-no_pass 0
-blocksview 0
 end
-arch blocked
-name nothing
-name_pl nothing
+arch dungeon_floor
 x 31
 y 113
-no_pass 0
-blocksview 0
 end
-arch blocked
-name nothing
-name_pl nothing
+arch dungeon_floor
 x 31
 y 114
-no_pass 0
-blocksview 0
 end
 arch blocked
 name npnothing
@@ -42205,9 +42171,7 @@ y 107
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 32
 y 107
 end
@@ -42219,9 +42183,7 @@ y 108
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 32
 y 108
 end
@@ -42233,9 +42195,7 @@ y 109
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 32
 y 109
 end
@@ -42247,9 +42207,7 @@ y 110
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 32
 y 110
 end
@@ -42261,9 +42219,7 @@ y 111
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 32
 y 111
 end
@@ -42275,9 +42231,7 @@ y 112
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 32
 y 112
 end
@@ -42289,9 +42243,7 @@ y 113
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 32
 y 113
 end
@@ -42303,9 +42255,7 @@ y 114
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 32
 y 114
 end
@@ -43684,13 +43634,13 @@ arch dungeon_magic
 x 33
 y 106
 end
-arch blocked
-name nothing
-name_pl nothing
+arch dungeon_floor
 x 33
 y 107
-no_pass 0
-blocksview 0
+end
+arch dungeon_floor
+x 33
+y 108
 end
 arch dragon_exit
 name dragon to Wolfsburg
@@ -43706,6 +43656,10 @@ sp 48
 x 33
 y 108
 end
+arch dungeon_floor
+x 33
+y 109
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -43714,9 +43668,7 @@ y 110
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 33
 y 110
 end
@@ -43728,11 +43680,13 @@ y 111
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 33
 y 111
+end
+arch dungeon_floor
+x 33
+y 112
 end
 arch dragon_exit
 name dragon to Scorn
@@ -43749,13 +43703,13 @@ sp 37
 x 33
 y 112
 end
-arch blocked
-name nothing
-name_pl nothing
+arch dungeon_floor
+x 33
+y 113
+end
+arch dungeon_floor
 x 33
 y 114
-no_pass 0
-blocksview 0
 end
 arch blocked
 name npnothing
@@ -45154,13 +45108,17 @@ arch dungeon_magic
 x 34
 y 106
 end
-arch blocked
-name nothing
-name_pl nothing
+arch dungeon_floor
 x 34
 y 107
-no_pass 0
-blocksview 0
+end
+arch dungeon_floor
+x 34
+y 108
+end
+arch dungeon_floor
+x 34
+y 109
 end
 arch blocked
 name nothing
@@ -45170,9 +45128,7 @@ y 110
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 34
 y 110
 end
@@ -45184,19 +45140,21 @@ y 111
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 34
 y 111
 end
-arch blocked
-name nothing
-name_pl nothing
+arch dungeon_floor
+x 34
+y 112
+end
+arch dungeon_floor
+x 34
+y 113
+end
+arch dungeon_floor
 x 34
 y 114
-no_pass 0
-blocksview 0
 end
 arch blocked
 name npnothing
@@ -46713,13 +46671,17 @@ arch dungeon_magic
 x 35
 y 106
 end
-arch blocked
-name nothing
-name_pl nothing
+arch dungeon_floor
 x 35
 y 107
-no_pass 0
-blocksview 0
+end
+arch dungeon_floor
+x 35
+y 108
+end
+arch dungeon_floor
+x 35
+y 109
 end
 arch blocked
 name nothing
@@ -46729,9 +46691,7 @@ y 110
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 35
 y 110
 end
@@ -46743,19 +46703,21 @@ y 111
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 35
 y 111
 end
-arch blocked
-name nothing
-name_pl nothing
+arch dungeon_floor
+x 35
+y 112
+end
+arch dungeon_floor
+x 35
+y 113
+end
+arch dungeon_floor
 x 35
 y 114
-no_pass 0
-blocksview 0
 end
 arch blocked
 name npnothing
@@ -48338,29 +48300,17 @@ arch dungeon_magic
 x 36
 y 106
 end
-arch blocked
-name nothing
-name_pl nothing
+arch dungeon_floor
 x 36
 y 107
-no_pass 0
-blocksview 0
 end
-arch blocked
-name nothing
-name_pl nothing
+arch dungeon_floor
 x 36
 y 108
-no_pass 0
-blocksview 0
 end
-arch blocked
-name nothing
-name_pl nothing
+arch dungeon_floor
 x 36
 y 109
-no_pass 0
-blocksview 0
 end
 arch blocked
 name nothing
@@ -48370,9 +48320,7 @@ y 110
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 36
 y 110
 end
@@ -48384,39 +48332,25 @@ y 111
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 36
 y 111
 end
-arch blocked
-name nothing
-name_pl nothing
+arch dungeon_floor
 x 36
 y 112
-no_pass 0
-blocksview 0
 end
 arch fog
 x 36
 y 112
 end
-arch blocked
-name nothing
-name_pl nothing
+arch dungeon_floor
 x 36
 y 113
-no_pass 0
-blocksview 0
 end
-arch blocked
-name nothing
-name_pl nothing
+arch dungeon_floor
 x 36
 y 114
-no_pass 0
-blocksview 0
 end
 arch blocked
 name npnothing
@@ -49924,9 +49858,7 @@ y 107
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 37
 y 107
 end
@@ -49938,9 +49870,7 @@ y 108
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 37
 y 108
 end
@@ -49952,9 +49882,7 @@ y 109
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 37
 y 109
 end
@@ -49966,9 +49894,7 @@ y 110
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 37
 y 110
 end
@@ -49980,9 +49906,7 @@ y 111
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 37
 y 111
 end
@@ -49994,9 +49918,7 @@ y 112
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 37
 y 112
 end
@@ -50008,9 +49930,7 @@ y 113
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 37
 y 113
 end
@@ -50022,9 +49942,7 @@ y 114
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 37
 y 114
 end
@@ -51531,13 +51449,13 @@ arch dungeon_magic
 x 38
 y 106
 end
-arch blocked
-name nothing
-name_pl nothing
+arch dungeon_floor
 x 38
 y 107
-no_pass 0
-blocksview 0
+end
+arch dungeon_floor
+x 38
+y 108
 end
 arch dragon_exit
 name dragon to Brest
@@ -51553,6 +51471,10 @@ sp 12
 x 38
 y 108
 end
+arch dungeon_floor
+x 38
+y 109
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -51561,9 +51483,7 @@ y 110
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 38
 y 110
 end
@@ -51575,11 +51495,13 @@ y 111
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 38
 y 111
+end
+arch dungeon_floor
+x 38
+y 112
 end
 arch dragon_exit
 name dragon to Darcap
@@ -51595,13 +51517,13 @@ sp 48
 x 38
 y 112
 end
-arch blocked
-name nothing
-name_pl nothing
+arch dungeon_floor
+x 38
+y 113
+end
+arch dungeon_floor
 x 38
 y 114
-no_pass 0
-blocksview 0
 end
 arch blocked
 name npnothing
@@ -53156,18 +53078,22 @@ arch dungeon_magic
 x 39
 y 106
 end
-arch blocked
-name nothing
-name_pl nothing
+arch dungeon_floor
 x 39
 y 107
-no_pass 0
-blocksview 0
 end
 arch fog
 x 39
 y 107
 end
+arch dungeon_floor
+x 39
+y 108
+end
+arch dungeon_floor
+x 39
+y 109
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -53176,9 +53102,7 @@ y 110
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 39
 y 110
 end
@@ -53190,19 +53114,21 @@ y 111
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 39
 y 111
 end
-arch blocked
-name nothing
-name_pl nothing
+arch dungeon_floor
+x 39
+y 112
+end
+arch dungeon_floor
+x 39
+y 113
+end
+arch dungeon_floor
 x 39
 y 114
-no_pass 0
-blocksview 0
 end
 arch blocked
 name npnothing
@@ -54777,13 +54703,17 @@ arch dungeon_magic
 x 40
 y 106
 end
-arch blocked
-name nothing
-name_pl nothing
+arch dungeon_floor
 x 40
 y 107
-no_pass 0
-blocksview 0
+end
+arch dungeon_floor
+x 40
+y 108
+end
+arch dungeon_floor
+x 40
+y 109
 end
 arch blocked
 name nothing
@@ -54793,9 +54723,7 @@ y 110
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 40
 y 110
 end
@@ -54807,19 +54735,21 @@ y 111
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 40
 y 111
 end
-arch blocked
-name nothing
-name_pl nothing
+arch dungeon_floor
+x 40
+y 112
+end
+arch dungeon_floor
+x 40
+y 113
+end
+arch dungeon_floor
 x 40
 y 114
-no_pass 0
-blocksview 0
 end
 arch fog
 x 40
@@ -56408,13 +56338,9 @@ arch dungeon_magic
 x 41
 y 108
 end
-arch blocked
-name nothing
-name_pl nothing
+arch dungeon_floor
 x 41
 y 109
-no_pass 0
-blocksview 0
 end
 arch dungeon_magic
 x 41
@@ -56428,9 +56354,7 @@ y 110
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 41
 y 110
 end
@@ -56442,23 +56366,17 @@ y 111
 no_pass 0
 blocksview 0
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 41
 y 111
 end
-arch blocked
-name nothing
-name_pl nothing
+arch dungeon_floor
 x 41
 y 112
-no_pass 0
-blocksview 0
 end
-arch dungeon_magic
+arch dungeon_floor
 x 41
-y 112
+y 113
 end
 arch blocked
 name nothing
@@ -58129,31 +58047,11 @@ arch dungeon_magic
 x 42
 y 109
 end
-arch blocked
-name nothing
-name_pl nothing
-x 42
-y 110
-no_pass 0
-blocksview 0
-end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 42
 y 110
 end
-arch blocked
-name nothing
-name_pl nothing
-x 42
-y 111
-no_pass 0
-blocksview 0
-end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 42
 y 111
 end

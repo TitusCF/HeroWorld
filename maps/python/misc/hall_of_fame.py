@@ -33,7 +33,7 @@ from CFDataFile import CFData
 player = Crossfire.WhoIsActivator()
 me = Crossfire.WhoAmI()
 event = Crossfire.WhatIsEvent()
-name = 'hall_of_fame_' + Crossfire.ScriptParameters()
+name = 'hall_of_fame' + Crossfire.ScriptParameters()
 
 header = [ 'title' ]
 file = CFData(name, header)

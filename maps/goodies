@@ -3,7 +3,7 @@ name <unnamed>
 width 40
 height 40
 msg
-Modified: 2019-04-10 Acer
+Modified: 2019-04-16 Acer
 endmsg
 end
 arch afloor_blue_left
@@ -5463,6 +5463,15 @@ arch afloor_blue_left
 x 23
 y 3
 end
+arch smoking_pipe
+x 23
+y 3
+startequip 1
+arch event_apply
+title Python
+slaying /python/items/smoking_pipe.py
+end
+end
 arch afloor_blue_left
 x 23
 y 4
@@ -5470,6 +5479,11 @@ end
 arch afloor_blue_left
 x 23
 y 5
+end
+arch pipeweed
+x 23
+y 5
+nrof 10
 end
 arch afloor_blue_left
 x 23

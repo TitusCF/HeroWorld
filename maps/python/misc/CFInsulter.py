@@ -18,29 +18,29 @@ def Insult(style):
 ##SHAKESPEAR STYLE
 
   if style == "shakespear":
-    adj1 = ['artless', 'bawdy', 'beslubbering', 'bootless', 'churlish', 'cockered', 'clouted', 'craven', 'currish', 'dankish', 'dissembling', 'droning', 'errant', 'fawning', 'fobbing', 'froward', 'frothy', 'gleeking', 'goatish', 'gorbellied', 'impertinent', 'infectious', 'jarring', 'loggerheaded', 'lumpish', 'mammering', 'mangled', 'mewling', 'paunchy', 'pribbling', 'puking', 'puny', 'qualling', 'rank', 'reeky', 'roguish', 'ruttish', 'saucy', 'spleeny', 'spongy', 'surly', 'tottering', 'unmuzzled', 'vain', 'venomed', 'villainous', 'warped', 'wayward', 'weedy', 'yeasty', 'vomiting', 'vulturous', 'contemptuous', 'groping', 'miniscule', 'quivering', 'shivering', 'trembling', 'miserable', 'licentious', 'cowering', 'sulking', 'gloating', 'murmuring', 'audacious', 'befouling', 'insolent', 'murky', 'pitiable', 'wretched', 'dolorous', 'lamentable', 'inadequate', 'contemptible', 'paltry', 'measly', 'meager', 'paltry', 'inadequate', 'insignificant', 'empty', 'inferior', 'pathetic', 'atrocious', 'execrable', 'damnable', 'repugnant', 'repulsive', 'revolting', 'repellent', 'offensive', 'disgusting', 'horrid', 'horrible', 'obscene', 'beastly', 'vile', 'abominable', 'pitiful', 'wrangled', 'whoring']
-    adj2 = ['base-court', 'bat-fowling', 'beef-witted', 'beetle-headed', 'boil-brained', 'clapper-clawed','clay-brained', 'common-kissing', 'crook-pated', 'dismal-dreaming', 'dizzy-eyed', 'doghearted', 'dread-bolted', 'earth-vexing', 'elf-skinned', 'fat-kidneyed', 'fen-sucked', 'flap-mouthed', 'fly-bitten', 'folly-fallen', 'fool-born', 'full-gorged', 'guts-griping', 'half-faced', 'hasty-witted', 'hedge-born', 'hell-hated', 'idle-headed', 'ill-breeding', 'ill-nurtured', 'knotty-pated', 'milk-livered', 'motley-minded', 'onion-eyed', 'plume-plucked', 'pottle-deep', 'pox-marked', 'reeling-ripe', 'rough-hewn', 'rude-growing', 'rump-fed', 'shard-borne', 'sheep-biting', 'spur-galled', 'swag-bellied', 'tardy-gaited', 'tickle-brained', 'toad-spotted', 'unchin-snouted', 'weather-bitten', 'weather-beaten', 'mutton-eating', 'coffee-nosed', 'malodorous']
-    noun = ['apple-john', 'baggage', 'barnacle', 'bladder', 'boar-pig', 'bugbear', 'bum-bailey', 'canker-blossom', 'clack-dish', 'clotpole', 'coxcomb', 'codpiece', 'death-token', 'dewberry', 'flap-dragon', 'flax-wench', 'flirt-gill', 'foot-licker', 'fustilarian', 'giglet', 'gudgeon', 'haggard', 'harpy', 'hedge-pig', 'horn-beast', 'hugger-mugger', 'joithead', 'lewdster', 'lout', 'maggot-pie', 'malt-worm', 'mammet', 'measle', 'minnow', 'miscreant', 'moldwarp', 'mumble-news', 'nut-hook', 'pigeon-egg', 'pignut', 'puttock', 'pumpion', 'ratsbane', 'scut', 'skainsmate', 'strumpet', 'varlet', 'vassal', 'whey-face', 'wagtail', 'phlegm-barrel', 'numb-skull', 'lip-infection', 'blood-clot', 'boar-tick', 'pervert']
-    prefixA = ['Thou art a','Thy Mother is a', 'Thou']
-    prefixAn = ['Thou art an', 'Thy Mother is an', 'Thou']
+    adj1 = ['beardless', 'puny', 'shaven', 'stewpid', 'uglee', 'pea brained', 'dung-headed', 'beady-eyed', 'hatless', 'witless', 'dumb', 'artless', 'bawdy', 'beslubbering', 'bootless', 'churlish', 'cockered', 'clouted', 'craven', 'currish', 'dankish', 'dissembling', 'droning', 'errant', 'fawning', 'fobbing', 'froward', 'frothy', 'gleeking', 'goatish', 'gorbellied', 'impertinent', 'infectious', 'jarring', 'loggerheaded', 'lumpish', 'mammering', 'mangled', 'mewling', 'paunchy', 'pribbling', 'puking', 'puny', 'qualling', 'rank', 'reeky', 'roguish', 'ruttish', 'saucy', 'spleeny', 'spongy', 'surly', 'tottering', 'unmuzzled', 'vain', 'venomed', 'villainous', 'warped', 'wayward', 'weedy', 'yeasty', 'vomiting', 'vulturous', 'contemptuous', 'groping', 'miniscule', 'quivering', 'shivering', 'trembling', 'miserable', 'licentious', 'cowering', 'sulking', 'gloating', 'murmuring', 'audacious', 'befouling', 'insolent', 'murky', 'pitiable', 'wretched', 'dolorous', 'lamentable', 'inadequate', 'contemptible', 'paltry', 'measly', 'meager', 'paltry', 'inadequate', 'insignificant', 'empty', 'inferior', 'pathetic', 'atrocious', 'execrable', 'damnable', 'repugnant', 'repulsive', 'revolting', 'repellent', 'offensive', 'disgusting', 'horrid', 'horrible', 'obscene', 'beastly', 'vile', 'abominable', 'pitiful', 'wrangled', 'whoring']
+    adj2 = ['elf-footed', 'dull-axed', 'tin-shielded', 'horse-knappin', 'hog-lickin', 'knock-kneed', 'jug-eared', 'pie-headed', 'snaggle-toothed', 'brown-nosed', 'lilly-livered', 'base-court', 'bat-fowling', 'beef-witted', 'beetle-headed', 'boil-brained', 'clapper-clawed','clay-brained', 'common-kissing', 'crook-pated', 'dismal-dreaming', 'dizzy-eyed', 'doghearted', 'dread-bolted', 'earth-vexing', 'elf-skinned', 'fat-kidneyed', 'fen-sucked', 'flap-mouthed', 'fly-bitten', 'folly-fallen', 'fool-born', 'full-gorged', 'guts-griping', 'half-faced', 'hasty-witted', 'hedge-born', 'hell-hated', 'idle-headed', 'ill-breeding', 'ill-nurtured', 'knotty-pated', 'milk-livered', 'motley-minded', 'onion-eyed', 'plume-plucked', 'pottle-deep', 'pox-marked', 'reeling-ripe', 'rough-hewn', 'rude-growing', 'rump-fed', 'shard-borne', 'sheep-biting', 'spur-galled', 'swag-bellied', 'tardy-gaited', 'tickle-brained', 'toad-spotted', 'unchin-snouted', 'weather-bitten', 'weather-beaten', 'mutton-eating', 'coffee-nosed', 'malodorous']
+    noun = ['orc-lover', 'gobiln-kisser', 'tree-embracer', 'dipshit', 'city-slicker', 'root-head', 'cow-pie', 'greenhorn', 'idgit', 'apple-john', 'baggage', 'barnacle', 'bladder', 'boar-pig', 'bugbear', 'bum-bailey', 'canker-blossom', 'clack-dish', 'clotpole', 'coxcomb', 'codpiece', 'death-token', 'dewberry', 'flap-dragon', 'flax-wench', 'flirt-gill', 'foot-licker', 'fustilarian', 'giglet', 'gudgeon', 'haggard', 'harpy', 'hedge-pig', 'horn-beast', 'hugger-mugger', 'joithead', 'lewdster', 'lout', 'maggot-pie', 'malt-worm', 'mammet', 'measle', 'minnow', 'miscreant', 'moldwarp', 'mumble-news', 'nut-hook', 'pigeon-egg', 'pignut', 'puttock', 'pumpion', 'ratsbane', 'scut', 'skainsmate', 'strumpet', 'varlet', 'vassal', 'whey-face', 'wagtail', 'phlegm-barrel', 'numb-skull', 'lip-infection', 'blood-clot', 'boar-tick', 'pervert']
+    prefixA = ['You are a','Your Matron\'s a', 'You', 'Yer a','Yer Mama\'s a', 'Yew', 'Thou art a','Thy Mother is a', 'Thou']
+    prefixAn = [['You are an', 'Your Matron\'s an', 'You', 'Yer an', 'Yer Mama\'s an', 'Yew', 'Thou art an', 'Thy Mother is an', 'Thou']
 
 ##TEXAS STYLE
 
   elif style == "texas":
-    adj1 = ['stewpid', 'uglee', 'pea brained', 'dung-headed', 'beady-eyed', 'hatless', 'witless', 'dumb']
-    adj2 = ['horse-knappin', 'hog-lickin', 'knock-kneed', 'jug-eared', 'pie-headed', 'snaggle-toothed', 'brown-nosed', 'lilly-livered' ]
-    noun = ['dipshit', 'city-slicker', 'root-head', 'cow-pie', 'greenhorn', 'idgit']
-    prefixA = ['Yer a','Yer Mama\'s a', 'Yew']
-    prefixAn = ['Yer an', 'Yer Mama\'s an', 'Yew']
+    adj1 = []
+    adj2 = [ ]
+    noun = []
+    prefixA = []
+    prefixAn = []
 
 ##DWARVEN STYLE
 
   elif style == "dwarf":
-    adj1 = ['beardless', 'puny', 'shaven']
-    adj2 = ['elf-footed', 'dull-axed', 'tin-shielded' ]
-    noun = ['orc-lover', 'gobiln-kisser', 'tree-embracer']
-    prefixA = ['You are a','Your Matron\'s a', 'You']
-    prefixAn = ['You are an', 'Your Matron\'s an', 'You']
+    adj1 = []
+    adj2 = [ ]
+    noun = []
+    prefixA = []
+    prefixAn = ]
 
 ##NO STYLE
   else:

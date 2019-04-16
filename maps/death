@@ -6,7 +6,7 @@ region afterlife
 width 11
 height 17
 msg
-Modified: 2019-03-29 Acer
+Modified: 2019-04-16 Acer
 endmsg
 end
 arch blackmarble
@@ -318,12 +318,6 @@ arch blackmarble
 x 1
 y 6
 end
-arch bookshelf_left
-x 1
-y 6
-no_pick 1
-unique 1
-end
 arch unholy_ground
 x 1
 y 7
@@ -348,11 +342,21 @@ arch blackmarble
 x 1
 y 8
 end
-arch bookshelf_left
+arch table_2
 x 1
 y 8
 no_pick 1
-unique 1
+end
+arch bones2
+name Spiteful Skull
+x 1
+y 8
+body_arm 0
+arch event_apply
+name shakespear
+title Python
+slaying /python/misc/CFInsulter.py
+end
 end
 arch unholy_ground
 x 1
@@ -377,12 +381,6 @@ end
 arch blackmarble
 x 1
 y 10
-end
-arch bookshelf_left
-x 1
-y 10
-no_pick 1
-unique 1
 end
 arch unholy_ground
 x 1

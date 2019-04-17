@@ -7086,18 +7086,12 @@ arch afloor_magenta_left
 x 28
 y 5
 end
-arch bones2
-name Comforting Skull
-msg
-This skull seems to snear at you in disgust...
-endmsg
-dam 0
+arch book_read
 x 28
 y 5
-body_arm 0
-arch event_say
+arch event_apply
 title Python
-slaying /python/dialog/eliza.py
+slaying /python/misc/hall_of_fame.py
 end
 end
 arch afloor_blue_left

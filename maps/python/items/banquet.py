@@ -26,7 +26,7 @@ size_y = 15
 # what foods to put in the map
 foods = [ 'clover' ]
 # what floors can be used
-floors = [ 'woodfloor_camp' ]
+floors = [ 'woodfloor_camp', 'woodfloor_camp1',  'woodfloor_camp2' ]
 # what walls can be used - only put the base name
 walls = [ 'flagstone', 'dwall', 'timberwall', 'stwall' ]
 

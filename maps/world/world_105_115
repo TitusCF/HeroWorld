@@ -4466,17 +4466,23 @@ arch sea1
 x 16
 y 22
 end
-arch big_galleon
-name To Port Joseph
-slaying /world/world_101_114
-hp 17
-sp 41
-x 16
-y 22
-end
-arch sea1
+arch dungeon_magic
 x 16
 y 23
+end
+arch sea
+x 16
+y 23
+end
+arch galleon
+name sailing galleon
+x 16
+y 23
+speed 0.5
+type 2
+container 10000000
+move_type boat
+passenger_limit 2
 end
 arch sea1
 x 16
@@ -5471,6 +5477,14 @@ x 20
 y 18
 elevation -2256
 end
+arch big_galleon
+name To Port Joseph
+slaying /world/world_101_114
+hp 17
+sp 41
+x 20
+y 18
+end
 arch dungeon_magic
 x 20
 y 19
@@ -5478,16 +5492,6 @@ end
 arch sea
 x 20
 y 19
-end
-arch galleon
-name sailing galleon
-x 20
-y 19
-speed 0.5
-type 2
-container 10000000
-move_type boat
-passenger_limit 2
 end
 arch dungeon_magic
 x 20

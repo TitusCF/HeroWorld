@@ -4,7 +4,7 @@ width 15
 height 15
 msg
 Created:  2019-03-10 Acer
-Modified: 2019-03-28 Acer
+Modified: 2019-04-17 Acer
 endmsg
 end
 arch cobblestones2
@@ -661,11 +661,15 @@ end
 arch waybread_table
 name Enchanted Fountain
 slaying potion_empty
-other_arch minor_potion_restoration
 face fountain.111
 food 1
 x 7
 y 7
+arch potion_heal
+identified 1
+arch spell_minor_healing
+end
+end
 end
 arch button_small
 x 7

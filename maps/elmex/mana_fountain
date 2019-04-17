@@ -5,6 +5,9 @@ width 20
 height 20
 enter_x 9
 enter_y 17
+msg
+Modified: 2019-04-17 Acer
+endmsg
 end
 arch grass_only
 end
@@ -789,19 +792,18 @@ arch flowers_permanent
 x 5
 y 4
 end
-arch safe_ground
-x 5
-y 5
-end
 arch grass_only
 x 5
 y 5
 end
-arch fountain
-name mana fountain
+arch waybread_table
+name Mana Fountain
+slaying potion_empty
+other_arch potion_magic
+face fountain.111
+food 1
 x 5
 y 5
-attach [["ratelimit_converter",{"converter_tag":"mana_fountain","failmsg":"The fountain seems to be dried out for now. H<Retry it later.>","generate_arch":"potion_magic","items_per_hour":"45","match":"{ $_->archname eq \"potion_empty\" } in arch","msg":"The fountain refills the empty potion bottles."}]]
 end
 arch footpath_1_1
 x 5

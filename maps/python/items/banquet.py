@@ -24,9 +24,9 @@ size_x = 15
 size_y = 15
 
 # what foods to put in the map
-foods = [ 'fishfood', 'food', 'bag_popcorn', 'apple', 'cheeseburger', 'loaf', 'tomato', 'waybread', 'roast_bird', 'orange', 'leg_mutton' ]
+foods = [  ]
 # what floors can be used
-floors = [ 'woodfloor', 'flagstone', 'dirtfloor' ]
+floors = [ 'woodfloor_camp' ]
 # what walls can be used - only put the base name
 walls = [ 'flagstone', 'dwall', 'timberwall', 'stwall' ]
 
@@ -90,7 +90,7 @@ def do_back():
 	act.Teleport(dest, int(x), int(y))
 
 def do_banquet():
-	'''Teleports the player to the banquet map, if not used since one day. '''
+	'''Teleports the player to the pocket dimension, if not used for one day. '''
 
 	now = str(Crossfire.GetTime()[0]) + '-' + str(Crossfire.GetTime()[1]) + '-' + str(Crossfire.GetTime()[2])
 
@@ -169,7 +169,7 @@ def do_banquet():
 	# Keep free spot by putting a statue
 	statue = im.CreateObject(rw, x, y)
 	statue.Name = '%s\'s statue'%act.Name
-	statue.Message = 'Gone eating.'
+	statue.Message = 'Is elsewhere...'
 
 l = Crossfire.WhoAmI()
 act = Crossfire.WhoIsActivator()

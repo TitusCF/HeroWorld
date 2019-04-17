@@ -9,6 +9,7 @@ Creator: Commander Gros
 Email: yann.chachkoff@mailandnews.com
 Date: Wed Sep  5 22:09:24 2001
 Following a Lord MiDS idea
+Modified: 2019-04-17 Acer
 endmsg
 end
 arch marble
@@ -51,7 +52,7 @@ end
 arch marble
 y 6
 end
-arch awall_3_2
+arch awall_2_1_1
 y 6
 end
 arch marble
@@ -111,10 +112,6 @@ arch dungeon_magic
 x 1
 y 3
 end
-arch safe_ground
-x 1
-y 4
-end
 arch marble
 x 1
 y 4
@@ -123,67 +120,22 @@ arch mailbox
 x 1
 y 4
 weight 0
-no_pick 1
-attach [["ipo_mailbox"]]
-end
-arch safe_ground
-x 1
-y 5
 end
 arch marble
 x 1
 y 5
 end
-arch safe_ground
+arch marble
 x 1
 y 6
 end
 arch marble
 x 1
-y 6
-end
-arch awall_2_1_2
-x 1
-y 6
-end
-arch safe_ground
-x 1
 y 7
 end
 arch marble
 x 1
-y 7
-end
-arch town_portal_magic
-name IPO Meeting Room Access
-slaying /planes/IPO_meeting_room
-x 1
-y 7
-end
-arch safe_ground
-x 1
 y 8
-end
-arch marble
-x 1
-y 8
-end
-arch light_guard
-name guard
-msg
-@match *
-G'day to you.
-endmsg
-exp 0
-x 1
-y 8
-level 20
-randomitems jail
-sleep 0
-end
-arch safe_ground
-x 1
-y 9
 end
 arch marble
 x 1
@@ -211,12 +163,6 @@ arch chair_2.1
 x 2
 y 2
 end
-arch mail_man
-name Colette
-face woman3.x11
-x 2
-y 2
-end
 arch marble
 x 2
 y 3
@@ -231,68 +177,31 @@ arch dungeon_magic
 x 2
 y 3
 end
-arch safe_ground
-x 2
-y 4
-end
 arch marble
 x 2
 y 4
 end
-arch safe_ground
+arch marble
 x 2
 y 5
 end
 arch marble
 x 2
-y 5
-end
-arch safe_ground
-x 2
 y 6
 end
 arch marble
-x 2
-y 6
-end
-arch awall_1_3
-x 2
-y 6
-end
-arch safe_ground
 x 2
 y 7
 end
 arch marble
 x 2
-y 7
-end
-arch igate_closed_2
-x 2
-y 7
-connected 5
-end
-arch safe_ground
-x 2
 y 8
-end
-arch marble
-x 2
-y 8
-end
-arch awall_1_1
-x 2
-y 8
-end
-arch safe_ground
-x 2
-y 9
 end
 arch marble
 x 2
 y 9
 end
-arch awall_3_1
+arch awall_2_1_2
 x 2
 y 9
 end
@@ -330,57 +239,25 @@ arch dungeon_magic
 x 3
 y 3
 end
-arch safe_ground
-x 3
-y 4
-end
 arch marble
 x 3
 y 4
 end
-arch safe_ground
+arch marble
 x 3
 y 5
 end
 arch marble
 x 3
-y 5
-end
-arch safe_ground
-x 3
 y 6
 end
 arch marble
 x 3
-y 6
-end
-arch safe_ground
-x 3
 y 7
 end
 arch marble
 x 3
-y 7
-end
-arch altar
-name IPO meeting room fee
-slaying money
-food 5000
-x 3
-y 7
-connected 5
-end
-arch safe_ground
-x 3
 y 8
-end
-arch marble
-x 3
-y 8
-end
-arch safe_ground
-x 3
-y 9
 end
 arch marble
 x 3
@@ -416,54 +293,25 @@ arch dungeon_magic
 x 4
 y 3
 end
-arch safe_ground
-x 4
-y 4
-end
 arch marble
 x 4
 y 4
 end
-arch safe_ground
+arch marble
 x 4
 y 5
 end
 arch marble
 x 4
-y 5
-end
-arch safe_ground
-x 4
 y 6
 end
 arch marble
 x 4
-y 6
-end
-arch safe_ground
-x 4
 y 7
 end
 arch marble
 x 4
-y 7
-end
-arch tag
-x 4
-y 7
-tag route_ipo_scorn
-end
-arch safe_ground
-x 4
 y 8
-end
-arch marble
-x 4
-y 8
-end
-arch safe_ground
-x 4
-y 9
 end
 arch marble
 x 4
@@ -499,73 +347,36 @@ arch dungeon_magic
 x 5
 y 3
 end
-arch safe_ground
-x 5
-y 4
-end
 arch marble
 x 5
 y 4
 end
-arch sign
-name Scorn Message Board
-msg
-@match *
-@eval board::command $who, $msg, $npc
-endmsg
-x 5
-y 4
-attach [["board"]]
-end
-arch safe_ground
+arch marble
 x 5
 y 5
 end
 arch marble
 x 5
-y 5
-end
-arch safe_ground
-x 5
 y 6
 end
 arch marble
-x 5
-y 6
-end
-arch safe_ground
 x 5
 y 7
 end
 arch marble
 x 5
-y 7
-end
-arch safe_ground
-x 5
 y 8
-end
-arch marble
-x 5
-y 8
-end
-arch safe_ground
-x 5
-y 9
 end
 arch marble
 x 5
 y 9
 end
 arch oakdoor
-slaying *scorn_shops_ipo_scorn_exit+5+9
+slaying /world/world_104_115
+hp 40
+sp 37
 x 5
 y 9
-end
-arch tag
-x 5
-y 9
-tag scorn_shops_ipo_scorn+5+8
 end
 arch marble
 x 6
@@ -602,33 +413,17 @@ arch dungeon_magic
 x 6
 y 3
 end
-arch safe_ground
-x 6
-y 4
-end
 arch marble
 x 6
 y 4
 end
-arch safe_ground
+arch marble
 x 6
 y 5
 end
 arch marble
 x 6
-y 5
-end
-arch safe_ground
-x 6
 y 6
-end
-arch marble
-x 6
-y 6
-end
-arch safe_ground
-x 6
-y 7
 end
 arch marble
 x 6
@@ -638,17 +433,9 @@ arch chair_2.4
 x 6
 y 7
 end
-arch safe_ground
-x 6
-y 8
-end
 arch marble
 x 6
 y 8
-end
-arch safe_ground
-x 6
-y 9
 end
 arch marble
 x 6
@@ -680,13 +467,14 @@ arch c_woman
 name Giselle
 msg
 @match *
-I'm busy right now - come back later or ask Colette for help.
-@match coffee
-The Coffee Controls The Post
-Whoever Controls The Post Controls The Empire
+How can I help you?
 endmsg
 x 7
 y 2
+arch event_say
+title say
+slaying maps/python/IPO/say.py
+end
 end
 arch marble
 x 7
@@ -702,10 +490,6 @@ arch dungeon_magic
 x 7
 y 3
 end
-arch safe_ground
-x 7
-y 4
-end
 arch marble
 x 7
 y 4
@@ -719,25 +503,13 @@ endmsg
 x 7
 y 4
 end
-arch safe_ground
+arch marble
 x 7
 y 5
 end
 arch marble
 x 7
-y 5
-end
-arch safe_ground
-x 7
 y 6
-end
-arch marble
-x 7
-y 6
-end
-arch safe_ground
-x 7
-y 7
 end
 arch marble
 x 7
@@ -784,10 +556,6 @@ endmsg
 x 7
 y 7
 end
-arch safe_ground
-x 7
-y 8
-end
 arch marble
 x 7
 y 8
@@ -795,10 +563,6 @@ end
 arch chair_2.3
 x 7
 y 8
-end
-arch safe_ground
-x 7
-y 9
 end
 arch marble
 x 7
@@ -842,10 +606,6 @@ arch dungeon_magic
 x 8
 y 3
 end
-arch safe_ground
-x 8
-y 4
-end
 arch marble
 x 8
 y 4
@@ -858,25 +618,13 @@ endmsg
 x 8
 y 4
 end
-arch safe_ground
+arch marble
 x 8
 y 5
 end
 arch marble
 x 8
-y 5
-end
-arch safe_ground
-x 8
 y 6
-end
-arch marble
-x 8
-y 6
-end
-arch safe_ground
-x 8
-y 7
 end
 arch marble
 x 8
@@ -886,17 +634,9 @@ arch chair_2.2
 x 8
 y 7
 end
-arch safe_ground
-x 8
-y 8
-end
 arch marble
 x 8
 y 8
-end
-arch safe_ground
-x 8
-y 9
 end
 arch marble
 x 8

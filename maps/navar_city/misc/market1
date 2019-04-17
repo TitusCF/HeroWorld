@@ -1,21 +1,22 @@
 arch map
-region navar
 name Navar Market
-msg
-Creator: Avion
-CF Java Map Editor
-Date:    10/9/2003
-endmsg
+difficulty 1
+region navar
 shopitems *:-10
+shopgreed 1.00000
 shopmin 50
 shopmax 5000
 shoprace faerie
-shopgreed 1.0
 width 60
 height 12
 enter_x 1
 enter_y 1
-difficulty 1
+msg
+Creator: Avion
+CF Java Map Editor
+Date:    10/9/2003
+Modified: 2019-04-17 Acer
+endmsg
 outdoor 1
 end
 arch invis_exit
@@ -1121,15 +1122,15 @@ arch shop_empty
 x 17
 y 4
 end
-arch shop_weapon_west
+arch shop_general
 x 17
 y 5
 end
-arch shop_weapon_west
+arch shop_general
 x 17
 y 6
 end
-arch shop_weapon_west
+arch shop_general
 x 17
 y 7
 end
@@ -1318,15 +1319,15 @@ arch shop_empty
 x 20
 y 4
 end
-arch shop_weapon_west
+arch shop_general
 x 20
 y 5
 end
-arch shop_weapon_west
+arch shop_general
 x 20
 y 6
 end
-arch shop_weapon_west
+arch shop_general
 x 20
 y 7
 end
@@ -1487,15 +1488,15 @@ arch shop_empty
 x 23
 y 4
 end
-arch shop_weapon_west
+arch shop_general
 x 23
 y 5
 end
-arch shop_weapon_west
+arch shop_general
 x 23
 y 6
 end
-arch shop_weapon_west
+arch shop_general
 x 23
 y 7
 end
@@ -1902,9 +1903,9 @@ y 4
 end
 arch food_table
 name red rose 40gp
-food 40
 other_arch rose_red
 sp 1
+food 40
 x 30
 y 4
 end
@@ -1917,7 +1918,8 @@ msg
 @match *
 Would you like to buy a flower?
 endmsg
-stand_still 1
+x 30
+y 5
 resist_physical 100
 resist_magic 100
 resist_fire 100
@@ -1931,16 +1933,15 @@ resist_ghosthit 100
 resist_poison 100
 resist_slow 100
 resist_paralyze 100
+resist_turn_undead 100
 resist_fear 100
 resist_deplete 100
-resist_turn_undead 100
 resist_death 100
 resist_chaos 100
-resist_blind 100
-resist_holyword 100
 resist_godpower 100
-x 30
-y 5
+resist_holyword 100
+resist_blind 100
+stand_still 1
 end
 arch light3
 x 30
@@ -1952,9 +1953,9 @@ y 6
 end
 arch food_table
 name white rose 30gp
-food 30
 other_arch rose_white
 sp 1
+food 30
 x 30
 y 6
 end

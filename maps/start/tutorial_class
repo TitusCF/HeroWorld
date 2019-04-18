@@ -9,7 +9,7 @@ msg
 Creator: Marc Lehmann
 Email: schmorp@schmorp.de
 Date: Mon Dec  8 22:11:34 CET 2008
-Modified: 2019-02-05 Acer
+Modified: 2019-04-18 Acer
 endmsg
 end
 arch grass
@@ -371,7 +371,7 @@ arch footpath_2_1_1
 x 4
 end
 arch exit
-slaying tutorial_part1
+slaying tutorial_part3
 hp 4
 sp 23
 x 4
@@ -395,17 +395,17 @@ end
 arch sign
 name Class Selection
 msg
-Here you can select a class for your character.
+Here you can select a different class for your character
+
 A class modifies your character: you can gain skills and items, and your stats can be modified.
 There are many classes available: Step through the rooms to the right to find the right category, then read
 through the individual class descriptions.
 When you have decided on a class, step onto the golden teleporter below the sign.
-B<Note: You cannot go back to the first part of the tutorial after you have selected a class!>
-When you are not satisfied with your class the only way to go back is to delete
-your character and run through the character creation once again.  (To delete
-your character use the quit_character command.)
+
 If you are playing for the first time and are a bit overwhelmed, then the Warrior is a good choice
 for fighters, and the Warlock is a good choice for magic users.
+
+You can also stick with the class you have chosen by going to the end.
 endmsg
 x 4
 y 4
@@ -474,9 +474,9 @@ x 4
 y 15
 end
 arch exit
-slaying tutorial_part2
-hp 3
-sp 1
+slaying /world/orld_105_116
+hp 8
+sp 4
 x 4
 y 15
 end
@@ -4285,20 +4285,6 @@ arch grass
 x 38
 y 4
 end
-arch sign
-name Hall of Do not Use
-msg
-Also known as the Hall of Special Tastes.
-Some people prefer to play classless, just like their god created them, without the
-burden of a so-called "class" forced onto them.
-B<Do not choose classless unless you are a deliantra expert and know what you are doing!>
-By choosing to go through this exit, your character will not be changed in any way.
-This makes gameplay extremely hard, as many very basic skills are missing.
-endmsg
-x 38
-y 4
-move_on all
-end
 arch grass
 x 38
 y 5
@@ -4308,12 +4294,12 @@ x 38
 y 6
 end
 arch sign
-name Classless
+name Keep your class
 msg
-B<Only step onto this exit if you are sure you do not want or need a class. Beginning players
-are advised to choose a class!>
-B<Again, your character will lack most basic skills if you go through here, do not use this exit
-unless you are a Crossfire expert and really want this!>
+Only step onto this exit if you are sure you do not want or need a class. Beginning players
+are advised to choose a class!
+Again, your character will lack most basic skills if you go through here, do not use this exit
+unless you are a Crossfire expert and really want this!
 endmsg
 x 38
 y 6

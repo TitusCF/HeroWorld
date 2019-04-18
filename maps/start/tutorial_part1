@@ -5,7 +5,7 @@ height 25
 enter_x 8
 enter_y 1
 msg
-Modified: 2019-03-24 Acer
+Modified: 2019-04-18 Acer
 endmsg
 end
 arch evergreen
@@ -1239,7 +1239,12 @@ However, it would be cumbersome to type
 commands like that for common actions, so
 many commands are bound to keys by default.
 You can also enter commands by typing their initials. For example,
-instead of typing 'southeast' + Return, you can type  'se' + return (note the lack of the space).
+instead of typing 'southeast' + Return, you can type  'se'.
+
+NOTE: You should take the time to keybind your diagonal directions to your keypad
+if you have one.
+example: use command 'bind se' then press 3 on your directional.
+
 Instead of typing 'cast summon pet monster' you can usually type 'cspm' and so on.
 You can also create your own keybindings, for example to use spells, items or skills
 by typing 'bind + <command>', you will then be prompted to press the key you want bound.
@@ -1290,8 +1295,8 @@ fighting, battering down doors, or traveling long
 distances, hold down the Ctrl key and press
 and hold the key for direction you wish to run.
 The four primary directions are bound to the arrow/cursor keys,
-and all eight directions including diagonals on the numeric keypad. You
-may need to apply NumLock.
+You will need to manually bind your directionals using 'bind se/ne/sw/nw'.
+You will need to apply NumLock.
 Now run to the end of this hallway and read
 the sign there.
 endmsg

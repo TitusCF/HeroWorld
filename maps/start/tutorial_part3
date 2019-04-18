@@ -5,7 +5,7 @@ height 30
 enter_x 1
 enter_y 6
 msg
-Modified: 2019-03-30 Acer
+Modified: 2019-04-18 Acer
 endmsg
 end
 arch woodfloor
@@ -3885,6 +3885,9 @@ msg
 Congratulations, you have completed the tutorial now!
 Take the exit to your south to move on, but step carefully around the gravestone of Harold,
 who didn't pay very close attention and paid the price. :-)
+
+In the next room you will have the option to change your class one last time before
+beginning your journey!
 endmsg
 x 22
 y 20
@@ -3936,12 +3939,12 @@ x 22
 y 27
 end
 arch exit
-slaying /world/world_105_116
+slaying /start/tutorial_class
 msg
 Good luck!
 endmsg
-hp 8
-sp 4
+hp 4
+sp 1
 x 22
 y 27
 damned 1

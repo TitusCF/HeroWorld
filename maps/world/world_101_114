@@ -4,7 +4,7 @@ region portjoesph
 width 50
 height 50
 msg
-Modified: 2019-04-16 Acer
+Modified: 2019-04-18 Acer
 endmsg
 outdoor 1
 tile_path_1 world_101_113
@@ -3169,7 +3169,8 @@ end
 arch inn
 name Portia's house
 slaying /port_joseph/town/portia
-hp 2
+hp 16
+sp 26
 x 13
 y 35
 end
@@ -3187,7 +3188,8 @@ y 38
 end
 arch store_general
 slaying /port_joseph/town/generalstore
-hp 10
+hp 18
+sp 16
 x 13
 y 38
 end
@@ -3698,6 +3700,17 @@ arch sea1
 x 15
 y 46
 end
+arch rowboat
+slaying /port_joseph/pirates/fortvsship
+hp 4
+sp 27
+x 15
+y 46
+type 41
+connected 2
+activate_on_push 1
+activate_on_release 1
+end
 arch pirate
 name Percival
 msg
@@ -3718,17 +3731,6 @@ endmsg
 x 15
 y 46
 unaggressive 1
-end
-arch rowboat
-slaying /port_joseph/pirates/fortvsship
-hp 4
-sp 27
-x 15
-y 46
-type 41
-connected 2
-activate_on_push 1
-activate_on_release 1
 end
 arch sea
 x 15

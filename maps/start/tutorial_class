@@ -820,6 +820,9 @@ sp 12
 x 8
 y 9
 arch warrior_class
+msg
+endmsg
+randomitems none
 end
 end
 arch grass
@@ -1056,6 +1059,7 @@ sp 12
 x 10
 y 9
 arch barbarian_class
+randomitems none
 end
 end
 arch grass
@@ -1281,6 +1285,9 @@ sp 12
 x 12
 y 9
 arch swashbuckler_class
+msg
+endmsg
+randomitems none
 end
 end
 arch grass
@@ -1498,6 +1505,9 @@ sp 12
 x 14
 y 9
 arch ninja_class
+msg
+endmsg
+randomitems none
 end
 end
 arch grass
@@ -1724,6 +1734,9 @@ sp 12
 x 16
 y 9
 arch thief_class
+msg
+endmsg
+randomitems none
 end
 end
 arch grass
@@ -1945,6 +1958,9 @@ sp 12
 x 18
 y 9
 arch priest_class
+msg
+endmsg
+randomitems none
 end
 end
 arch grass
@@ -2171,6 +2187,7 @@ sp 12
 x 20
 y 9
 arch paladin_class
+randomitems none
 end
 end
 arch grass
@@ -2397,6 +2414,7 @@ sp 12
 x 22
 y 9
 arch monk_class
+randomitems none
 end
 end
 arch grass
@@ -2554,6 +2572,17 @@ arch grass
 x 24
 y 2
 end
+arch player_changer
+x 24
+y 2
+arch barbarian_class
+msg
+endmsg
+face beholder.151
+animation beholder
+randomitems none
+end
+end
 arch grass
 x 24
 y 3
@@ -2631,6 +2660,7 @@ sp 12
 x 24
 y 9
 arch devotee_class
+randomitems none
 end
 end
 arch grass
@@ -2848,6 +2878,7 @@ sp 12
 x 26
 y 9
 arch warlock_class
+randomitems none
 end
 end
 arch grass
@@ -3087,6 +3118,7 @@ sp 12
 x 28
 y 9
 arch evoker_class
+randomitems none
 end
 end
 arch grass
@@ -3299,6 +3331,7 @@ arch player_changer
 x 30
 y 9
 arch wizard_class
+randomitems none
 end
 end
 arch grass
@@ -3528,6 +3561,7 @@ sp 12
 x 32
 y 9
 arch alchemist_class
+randomitems none
 end
 end
 arch grass
@@ -3754,6 +3788,7 @@ sp 12
 x 34
 y 9
 arch sorcerer_class
+randomitems none
 end
 end
 arch grass
@@ -3976,6 +4011,7 @@ sp 12
 x 36
 y 9
 arch summoner_class
+randomitems none
 end
 end
 arch grass
@@ -4135,51 +4171,19 @@ end
 arch sign
 name Keep your class
 msg
-Only step onto this exit if you are sure you do not want or need a class. Beginning players
-are advised to choose a class!
-Again, your character will lack most basic skills if you go through here, do not use this exit
-unless you are a Crossfire expert and really want this!
+
 endmsg
 x 38
 y 6
 move_on all
 end
-arch magic_mouth
-msg
-A voice says:
-B<The gods urge you to reconsider your choice!>
-If you really want to play classless, despite the drawbacks, say C<I know> (use the C<say> command
-or the C<Map> tab).
-endmsg
-x 38
-y 7
-end
-arch magic_ear
-msg
-@match I know
-Ok, you wanted it that way!
-endmsg
-x 38
-y 7
-connected 17
-end
 arch grass
 x 38
 y 7
 end
-arch button_small
-x 38
-y 8
-connected 17
-end
 arch grass
 x 38
 y 8
-end
-arch grate_closed_1
-x 38
-y 8
-connected 17
 end
 arch grass
 x 38
@@ -4191,7 +4195,6 @@ hp 40
 sp 12
 x 38
 y 9
-damned 1
 end
 arch grass
 x 38

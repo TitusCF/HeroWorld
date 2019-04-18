@@ -745,6 +745,9 @@ arch evergreen
 x 8
 move_block all
 end
+arch swall_2_1_2
+x 8
+end
 arch grass
 x 8
 y 1
@@ -769,45 +772,13 @@ arch grass
 x 8
 y 6
 end
-arch sign
-name Warrior
-msg
-As a Warrior you've been trained in
-the art of combat with all weapons and in
-archery.  Because of your training,
-you're stronger, more agile, and
-hardier than you would be otherwise.
-However, your education has neglected
-the magical arts, religious devotion,
-and lacks breadth in general.
-This is a good class for a beginning player.
-endmsg
-x 8
-y 6
-move_on all
-end
 arch grass
 x 8
 y 7
 end
-arch button_small
-x 8
-y 7
-connected 1
-end
-arch button_small
-x 8
-y 8
-connected 1
-end
 arch grass
 x 8
 y 8
-end
-arch grate_closed_1
-x 8
-y 8
-connected 1
 end
 arch grass
 x 8
@@ -822,6 +793,12 @@ y 9
 arch warrior_class
 msg
 endmsg
+Str 0
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Int 0
 randomitems none
 end
 end
@@ -868,7 +845,14 @@ arch evergreen
 x 9
 move_block all
 end
+arch swall_3_3
+x 9
+end
 arch grass
+x 9
+y 1
+end
+arch swall_2_1_1
 x 9
 y 1
 end
@@ -876,7 +860,15 @@ arch grass
 x 9
 y 2
 end
+arch swall_2_1_1
+x 9
+y 2
+end
 arch grass
+x 9
+y 3
+end
+arch swall_1_2_half
 x 9
 y 3
 end
@@ -896,15 +888,11 @@ arch grass
 x 9
 y 7
 end
-arch swall_1_1
-x 9
-y 7
-end
 arch grass
 x 9
 y 8
 end
-arch swall_2_1_1
+arch swall_1_1
 x 9
 y 8
 end
@@ -956,17 +944,45 @@ arch evergreen
 x 10
 move_block all
 end
+arch swall_2_1_2
+x 10
+end
 arch grass
 x 10
 y 1
 end
-arch flowers_permanent
+arch note
+name beholder
+face beholder.151
 x 10
 y 1
+no_pick 1
 end
 arch grass
 x 10
 y 2
+end
+arch player_changer
+slaying /start/tutorial_class
+hp 8
+sp 12
+x 10
+y 2
+arch sorcerer_class
+name beholder
+msg
+endmsg
+face beholder.151
+animation beholder
+Str 0
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Int 0
+randomitems none
+anim_suffix no_class
+end
 end
 arch grass
 x 10
@@ -994,59 +1010,13 @@ arch grass
 x 10
 y 6
 end
-arch sign
-name Barbarian
-msg
-Growing up in the howling wilderness,
-you've had no chance to pursue
-anything remotely intellectual, let
-alone learn your letters! It's
-amazing you ever thought of leaving
-your hovel and going somewhere else,
-you're so ignorant.
-But now you have. You find that
-you're a lot tougher and stronger
-than these cityfolk, and you know how
-to get around in rough terrain.
-You've learned archery in order to
-fill your cookpot, and weaponry is
-second nature to anyone who's had to
-fight with the local orc-tribe over
-food once a month.
-You're deeply afraid of magic, and
-it'll be awhile before you get over
-that and develop any facility with
-it. You've no deep problem with the
-idea of gods, but you don't know much
-about them.
-This class of intermediate difficulty, as Barbarians have great problems with learning new skills and/or spells.
-endmsg
-x 10
-y 6
-move_on all
-end
 arch grass
 x 10
 y 7
 end
-arch button_small
-x 10
-y 7
-connected 2
-end
-arch button_small
-x 10
-y 8
-connected 2
-end
 arch grass
 x 10
 y 8
-end
-arch grate_closed_1
-x 10
-y 8
-connected 2
 end
 arch grass
 x 10
@@ -1059,6 +1029,12 @@ sp 12
 x 10
 y 9
 arch barbarian_class
+Str 0
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Cha 0
 randomitems none
 end
 end
@@ -1103,6 +1079,9 @@ arch evergreen
 x 11
 move_block all
 end
+arch swall_3_3
+x 11
+end
 arch grass
 x 11
 y 1
@@ -1111,11 +1090,23 @@ arch grasspond
 x 11
 y 1
 end
+arch swall_2_1_1
+x 11
+y 1
+end
 arch grass
 x 11
 y 2
 end
+arch swall_2_1_1
+x 11
+y 2
+end
 arch grass
+x 11
+y 3
+end
+arch swall_1_2_half
 x 11
 y 3
 end
@@ -1135,15 +1126,11 @@ arch grass
 x 11
 y 7
 end
-arch swall_1_1
-x 11
-y 7
-end
 arch grass
 x 11
 y 8
 end
-arch swall_2_1_1
+arch swall_1_1
 x 11
 y 8
 end
@@ -1200,13 +1187,45 @@ arch evergreen
 x 12
 move_block all
 end
+arch swall_2_1_2
+x 12
+end
 arch grass
 x 12
 y 1
 end
+arch note
+name demon
+face fiend.111
+x 12
+y 1
+no_pick 1
+end
 arch grass
 x 12
 y 2
+end
+arch player_changer
+slaying /start/tutorial_class
+hp 8
+sp 12
+x 12
+y 2
+arch sorcerer_class
+name demon
+msg
+endmsg
+face fiend.111
+animation fiend
+Str 0
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Int 0
+randomitems none
+anim_suffix no_class
+end
 end
 arch grass
 x 12
@@ -1255,24 +1274,9 @@ arch grass
 x 12
 y 7
 end
-arch button_small
-x 12
-y 7
-connected 3
-end
-arch button_small
-x 12
-y 8
-connected 3
-end
 arch grass
 x 12
 y 8
-end
-arch grate_closed_1
-x 12
-y 8
-connected 3
 end
 arch grass
 x 12
@@ -1287,6 +1291,12 @@ y 9
 arch swashbuckler_class
 msg
 endmsg
+Str 0
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Cha 0
 randomitems none
 end
 end
@@ -1331,7 +1341,14 @@ arch evergreen
 x 13
 move_block all
 end
+arch swall_3_3
+x 13
+end
 arch grass
+x 13
+y 1
+end
+arch swall_2_1_1
 x 13
 y 1
 end
@@ -1339,7 +1356,15 @@ arch grass
 x 13
 y 2
 end
+arch swall_2_1_1
+x 13
+y 2
+end
 arch grass
+x 13
+y 3
+end
+arch swall_1_2_half
 x 13
 y 3
 end
@@ -1351,23 +1376,11 @@ arch grass
 x 13
 y 5
 end
-arch swall_1_1
-x 13
-y 5
-end
 arch grass
 x 13
 y 6
 end
-arch swall_2_1_1
-x 13
-y 6
-end
 arch grass
-x 13
-y 7
-end
-arch swall_2_1_1
 x 13
 y 7
 end
@@ -1375,7 +1388,7 @@ arch grass
 x 13
 y 8
 end
-arch swall_2_1_1
+arch swall_1_1
 x 13
 y 8
 end
@@ -1427,13 +1440,45 @@ arch evergreen
 x 14
 move_block all
 end
+arch swall_2_1_2
+x 14
+end
 arch grass
 x 14
 y 1
 end
+arch note
+name kobold
+face kobold.111
+x 14
+y 1
+no_pick 1
+end
 arch grass
 x 14
 y 2
+end
+arch player_changer
+slaying /start/tutorial_class
+hp 8
+sp 12
+x 14
+y 2
+arch sorcerer_class
+name kobold
+msg
+endmsg
+face kobold.111
+animation kobold
+Str 0
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Int 0
+randomitems none
+anim_suffix no_class
+end
 end
 arch grass
 x 14
@@ -1475,24 +1520,9 @@ arch grass
 x 14
 y 7
 end
-arch button_small
-x 14
-y 7
-connected 4
-end
-arch button_small
-x 14
-y 8
-connected 4
-end
 arch grass
 x 14
 y 8
-end
-arch grate_closed_1
-x 14
-y 8
-connected 4
 end
 arch grass
 x 14
@@ -1507,6 +1537,12 @@ y 9
 arch ninja_class
 msg
 endmsg
+Str 0
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Cha 0
 randomitems none
 end
 end
@@ -1551,7 +1587,14 @@ arch evergreen
 x 15
 move_block all
 end
+arch swall_3_3
+x 15
+end
 arch grass
+x 15
+y 1
+end
+arch swall_2_1_1
 x 15
 y 1
 end
@@ -1559,7 +1602,15 @@ arch grass
 x 15
 y 2
 end
+arch swall_2_1_1
+x 15
+y 2
+end
 arch grass
+x 15
+y 3
+end
+arch swall_1_2_half
 x 15
 y 3
 end
@@ -1590,15 +1641,11 @@ arch grass
 x 15
 y 7
 end
-arch swall_1_1
-x 15
-y 7
-end
 arch grass
 x 15
 y 8
 end
-arch swall_2_1_1
+arch swall_1_1
 x 15
 y 8
 end
@@ -1655,13 +1702,45 @@ arch evergreen
 x 16
 move_block all
 end
+arch swall_2_1_2
+x 16
+end
 arch grass
 x 16
 y 1
 end
+arch note
+name goblin
+face ogre.111
+x 16
+y 1
+no_pick 1
+end
 arch grass
 x 16
 y 2
+end
+arch player_changer
+slaying /start/tutorial_class
+hp 8
+sp 12
+x 16
+y 2
+arch sorcerer_class
+name goblin
+msg
+endmsg
+face ogre.111
+animation ogre
+Str 0
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Int 0
+randomitems none
+anim_suffix no_class
+end
 end
 arch grass
 x 16
@@ -1704,24 +1783,9 @@ arch grass
 x 16
 y 7
 end
-arch button_small
-x 16
-y 7
-connected 5
-end
-arch button_small
-x 16
-y 8
-connected 5
-end
 arch grass
 x 16
 y 8
-end
-arch grate_closed_1
-x 16
-y 8
-connected 5
 end
 arch grass
 x 16
@@ -1736,6 +1800,11 @@ y 9
 arch thief_class
 msg
 endmsg
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Cha 0
 randomitems none
 end
 end
@@ -1783,7 +1852,14 @@ arch evergreen
 x 17
 move_block all
 end
+arch swall_3_3
+x 17
+end
 arch grass
+x 17
+y 1
+end
+arch swall_2_1_1
 x 17
 y 1
 end
@@ -1791,7 +1867,15 @@ arch grass
 x 17
 y 2
 end
+arch swall_2_1_1
+x 17
+y 2
+end
 arch grass
+x 17
+y 3
+end
+arch swall_1_2_half
 x 17
 y 3
 end
@@ -1803,23 +1887,11 @@ arch grass
 x 17
 y 5
 end
-arch swall_1_1
-x 17
-y 5
-end
 arch grass
 x 17
 y 6
 end
-arch swall_2_1_1
-x 17
-y 6
-end
 arch grass
-x 17
-y 7
-end
-arch swall_2_1_1
 x 17
 y 7
 end
@@ -1827,7 +1899,7 @@ arch grass
 x 17
 y 8
 end
-arch swall_2_1_1
+arch swall_1_1
 x 17
 y 8
 end
@@ -1879,13 +1951,45 @@ arch evergreen
 x 18
 move_block all
 end
+arch swall_2_1_2
+x 18
+end
 arch grass
 x 18
 y 1
 end
+arch note
+name ape
+face ape.171
+x 18
+y 1
+no_pick 1
+end
 arch grass
 x 18
 y 2
+end
+arch player_changer
+slaying /start/tutorial_class
+hp 8
+sp 12
+x 18
+y 2
+arch sorcerer_class
+name ape
+msg
+endmsg
+face ape.171
+animation ape
+Str 0
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Int 0
+randomitems none
+anim_suffix no_class
+end
 end
 arch grass
 x 18
@@ -1928,24 +2032,9 @@ arch grass
 x 18
 y 7
 end
-arch button_small
-x 18
-y 7
-connected 6
-end
-arch button_small
-x 18
-y 8
-connected 6
-end
 arch grass
 x 18
 y 8
-end
-arch grate_closed_1
-x 18
-y 8
-connected 6
 end
 arch grass
 x 18
@@ -1960,6 +2049,12 @@ y 9
 arch priest_class
 msg
 endmsg
+Str 0
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Cha 0
 randomitems none
 end
 end
@@ -2007,7 +2102,14 @@ arch evergreen
 x 19
 move_block all
 end
+arch swall_3_3
+x 19
+end
 arch grass
+x 19
+y 1
+end
+arch swall_2_1_1
 x 19
 y 1
 end
@@ -2019,7 +2121,15 @@ arch flowers_permanent
 x 19
 y 2
 end
+arch swall_2_1_1
+x 19
+y 2
+end
 arch grass
+x 19
+y 3
+end
+arch swall_1_2_half
 x 19
 y 3
 end
@@ -2039,15 +2149,11 @@ arch grass
 x 19
 y 7
 end
-arch swall_1_1
-x 19
-y 7
-end
 arch grass
 x 19
 y 8
 end
-arch swall_2_1_1
+arch swall_1_1
 x 19
 y 8
 end
@@ -2104,13 +2210,45 @@ arch evergreen
 x 20
 move_block all
 end
+arch swall_2_1_2
+x 20
+end
 arch grass
 x 20
 y 1
 end
+arch note
+name fireborn
+face fireborn.111
+x 20
+y 1
+no_pick 1
+end
 arch grass
 x 20
 y 2
+end
+arch player_changer
+slaying /start/tutorial_class
+hp 8
+sp 12
+x 20
+y 2
+arch sorcerer_class
+name fireborn
+msg
+endmsg
+face fireborn.111
+animation fireborn
+Str 0
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Int 0
+randomitems none
+anim_suffix no_class
+end
 end
 arch grass
 x 20
@@ -2157,24 +2295,9 @@ arch grass
 x 20
 y 7
 end
-arch button_small
-x 20
-y 7
-connected 7
-end
-arch button_small
-x 20
-y 8
-connected 7
-end
 arch grass
 x 20
 y 8
-end
-arch grate_closed_1
-x 20
-y 8
-connected 7
 end
 arch grass
 x 20
@@ -2187,6 +2310,10 @@ sp 12
 x 20
 y 9
 arch paladin_class
+Dex 0
+Wis 0
+Pow 0
+Cha 0
 randomitems none
 end
 end
@@ -2234,7 +2361,14 @@ arch evergreen
 x 21
 move_block all
 end
+arch swall_3_3
+x 21
+end
 arch grass
+x 21
+y 1
+end
+arch swall_2_1_1
 x 21
 y 1
 end
@@ -2242,7 +2376,15 @@ arch grass
 x 21
 y 2
 end
+arch swall_2_1_1
+x 21
+y 2
+end
 arch grass
+x 21
+y 3
+end
+arch swall_1_2_half
 x 21
 y 3
 end
@@ -2273,15 +2415,11 @@ arch grass
 x 21
 y 7
 end
-arch swall_1_1
-x 21
-y 7
-end
 arch grass
 x 21
 y 8
 end
-arch swall_2_1_1
+arch swall_1_1
 x 21
 y 8
 end
@@ -2333,13 +2471,45 @@ arch evergreen
 x 22
 move_block all
 end
+arch swall_2_1_2
+x 22
+end
 arch grass
 x 22
 y 1
 end
+arch note
+name air elemental
+face elem_air.111
+x 22
+y 1
+no_pick 1
+end
 arch grass
 x 22
 y 2
+end
+arch player_changer
+slaying /start/tutorial_class
+hp 8
+sp 12
+x 22
+y 2
+arch sorcerer_class
+name air elemental
+msg
+endmsg
+face elem_air.111
+animation air_elemental
+Str 0
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Int 0
+randomitems none
+anim_suffix no_class
+end
 end
 arch grass
 x 22
@@ -2384,24 +2554,9 @@ arch grass
 x 22
 y 7
 end
-arch button_small
-x 22
-y 7
-connected 8
-end
-arch button_small
-x 22
-y 8
-connected 8
-end
 arch grass
 x 22
 y 8
-end
-arch grate_closed_1
-x 22
-y 8
-connected 8
 end
 arch grass
 x 22
@@ -2414,6 +2569,13 @@ sp 12
 x 22
 y 9
 arch monk_class
+Str 0
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Cha 0
+Int 0
 randomitems none
 end
 end
@@ -2471,7 +2633,14 @@ arch evergreen
 x 23
 move_block all
 end
+arch swall_3_3
+x 23
+end
 arch grass
+x 23
+y 1
+end
+arch swall_2_1_1
 x 23
 y 1
 end
@@ -2479,7 +2648,15 @@ arch grass
 x 23
 y 2
 end
+arch swall_2_1_1
+x 23
+y 2
+end
 arch grass
+x 23
+y 3
+end
+arch swall_1_2_half
 x 23
 y 3
 end
@@ -2499,15 +2676,11 @@ arch grass
 x 23
 y 7
 end
-arch swall_1_1
-x 23
-y 7
-end
 arch grass
 x 23
 y 8
 end
-arch swall_2_1_1
+arch swall_1_1
 x 23
 y 8
 end
@@ -2564,9 +2737,19 @@ arch evergreen
 x 24
 move_block all
 end
+arch swall_2_1_2
+x 24
+end
 arch grass
 x 24
 y 1
+end
+arch note
+name chaos knight
+face c_knight.111
+x 24
+y 1
+no_pick 1
 end
 arch grass
 x 24
@@ -2574,21 +2757,25 @@ y 2
 end
 arch player_changer
 slaying /start/tutorial_class
-hp 24
+hp 8
 sp 12
 x 24
 y 2
-arch barbarian_class
+arch sorcerer_class
+name Chaos Knight
 msg
 endmsg
-face beholder.151
-animation beholder
+face c_knight.111
+animation c_knight
+Str 0
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Int 0
 randomitems none
+anim_suffix no_class
 end
-end
-arch grass
-x 24
-y 3
 end
 arch grass
 x 24
@@ -2633,24 +2820,9 @@ arch grass
 x 24
 y 7
 end
-arch button_small
-x 24
-y 7
-connected 9
-end
-arch button_small
-x 24
-y 8
-connected 9
-end
 arch grass
 x 24
 y 8
-end
-arch grate_closed_1
-x 24
-y 8
-connected 9
 end
 arch grass
 x 24
@@ -2663,6 +2835,11 @@ sp 12
 x 24
 y 9
 arch devotee_class
+Str 0
+Con 0
+Wis 0
+Pow 0
+Cha 0
 randomitems none
 end
 end
@@ -2707,7 +2884,14 @@ arch evergreen
 x 25
 move_block all
 end
+arch swall_3_3
+x 25
+end
 arch grass
+x 25
+y 1
+end
+arch swall_2_1_1
 x 25
 y 1
 end
@@ -2715,7 +2899,15 @@ arch grass
 x 25
 y 2
 end
+arch swall_2_1_1
+x 25
+y 2
+end
 arch grass
+x 25
+y 3
+end
+arch swall_1_2_half
 x 25
 y 3
 end
@@ -2727,23 +2919,11 @@ arch grass
 x 25
 y 5
 end
-arch swall_1_1
-x 25
-y 5
-end
 arch grass
 x 25
 y 6
 end
-arch swall_2_1_1
-x 25
-y 6
-end
 arch grass
-x 25
-y 7
-end
-arch swall_2_1_1
 x 25
 y 7
 end
@@ -2751,7 +2931,7 @@ arch grass
 x 25
 y 8
 end
-arch swall_2_1_1
+arch swall_1_1
 x 25
 y 8
 end
@@ -2803,13 +2983,45 @@ arch evergreen
 x 26
 move_block all
 end
+arch swall_2_1_2
+x 26
+end
 arch grass
 x 26
 y 1
 end
+arch note
+name dancing sword
+face dancingsword.111
+x 26
+y 1
+no_pick 1
+end
 arch grass
 x 26
 y 2
+end
+arch player_changer
+slaying /start/tutorial_class
+hp 8
+sp 12
+x 26
+y 2
+arch sorcerer_class
+name dancing sword
+msg
+endmsg
+face dancingsword.111
+animation dancingsword
+Str 0
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Int 0
+randomitems none
+anim_suffix no_class
+end
 end
 arch grass
 x 26
@@ -2851,24 +3063,9 @@ arch grass
 x 26
 y 7
 end
-arch button_small
-x 26
-y 7
-connected 10
-end
-arch button_small
-x 26
-y 8
-connected 10
-end
 arch grass
 x 26
 y 8
-end
-arch grate_closed_1
-x 26
-y 8
-connected 10
 end
 arch grass
 x 26
@@ -2881,6 +3078,12 @@ sp 12
 x 26
 y 9
 arch warlock_class
+Str 0
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Cha 0
 randomitems none
 end
 end
@@ -2939,7 +3142,14 @@ arch evergreen
 x 27
 move_block all
 end
+arch swall_3_3
+x 27
+end
 arch grass
+x 27
+y 1
+end
+arch swall_2_1_1
 x 27
 y 1
 end
@@ -2947,7 +3157,15 @@ arch grass
 x 27
 y 2
 end
+arch swall_2_1_1
+x 27
+y 2
+end
 arch grass
+x 27
+y 3
+end
+arch swall_1_2_half
 x 27
 y 3
 end
@@ -2967,15 +3185,11 @@ arch grass
 x 27
 y 7
 end
-arch swall_1_1
-x 27
-y 7
-end
 arch grass
 x 27
 y 8
 end
-arch swall_2_1_1
+arch swall_1_1
 x 27
 y 8
 end
@@ -3032,13 +3246,45 @@ arch evergreen
 x 28
 move_block all
 end
+arch swall_2_1_2
+x 28
+end
 arch grass
 x 28
 y 1
 end
+arch note
+name wandering terror
+face deathtree.111
+x 28
+y 1
+no_pick 1
+end
 arch grass
 x 28
 y 2
+end
+arch player_changer
+slaying /start/tutorial_class
+hp 8
+sp 12
+x 28
+y 2
+arch sorcerer_class
+name wandering terror
+msg
+endmsg
+face deathtree.111
+animation deathtree
+Str 0
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Int 0
+randomitems none
+anim_suffix no_class
+end
 end
 arch grass
 x 28
@@ -3091,24 +3337,9 @@ arch grass
 x 28
 y 7
 end
-arch button_small
-x 28
-y 7
-connected 11
-end
-arch button_small
-x 28
-y 8
-connected 11
-end
 arch grass
 x 28
 y 8
-end
-arch grate_closed_1
-x 28
-y 8
-connected 11
 end
 arch grass
 x 28
@@ -3121,6 +3352,10 @@ sp 12
 x 28
 y 9
 arch evoker_class
+Str 0
+Con 0
+Pow 0
+Cha 0
 randomitems none
 end
 end
@@ -3165,7 +3400,14 @@ arch evergreen
 x 29
 move_block all
 end
+arch swall_3_3
+x 29
+end
 arch grass
+x 29
+y 1
+end
+arch swall_2_1_1
 x 29
 y 1
 end
@@ -3173,7 +3415,15 @@ arch grass
 x 29
 y 2
 end
+arch swall_2_1_1
+x 29
+y 2
+end
 arch grass
+x 29
+y 3
+end
+arch swall_1_2_half
 x 29
 y 3
 end
@@ -3193,15 +3443,11 @@ arch grass
 x 29
 y 7
 end
-arch swall_1_1
-x 29
-y 7
-end
 arch grass
 x 29
 y 8
 end
-arch swall_2_1_1
+arch swall_1_1
 x 29
 y 8
 end
@@ -3253,13 +3499,45 @@ arch evergreen
 x 30
 move_block all
 end
+arch swall_2_1_2
+x 30
+end
 arch grass
 x 30
 y 1
 end
+arch note
+name skull
+face skull.111
+x 30
+y 1
+no_pick 1
+end
 arch grass
 x 30
 y 2
+end
+arch player_changer
+slaying /start/tutorial_class
+hp 8
+sp 12
+x 30
+y 2
+arch sorcerer_class
+name skull
+msg
+endmsg
+face skull.111
+animation skull
+Str 0
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Int 0
+randomitems none
+anim_suffix no_class
+end
 end
 arch grass
 x 30
@@ -3307,24 +3585,9 @@ arch grass
 x 30
 y 7
 end
-arch button_small
-x 30
-y 7
-connected 11
-end
-arch button_small
-x 30
-y 8
-connected 11
-end
 arch grass
 x 30
 y 8
-end
-arch grate_closed_1
-x 30
-y 8
-connected 11
 end
 arch grass
 x 30
@@ -3334,6 +3597,10 @@ arch player_changer
 x 30
 y 9
 arch wizard_class
+Str 0
+Con 0
+Pow 0
+Int 0
 randomitems none
 end
 end
@@ -3380,7 +3647,14 @@ arch evergreen
 x 31
 move_block all
 end
+arch swall_3_3
+x 31
+end
 arch grass
+x 31
+y 1
+end
+arch swall_2_1_1
 x 31
 y 1
 end
@@ -3392,7 +3666,15 @@ arch grasspond
 x 31
 y 2
 end
+arch swall_2_1_1
+x 31
+y 2
+end
 arch grass
+x 31
+y 3
+end
+arch swall_1_2_half
 x 31
 y 3
 end
@@ -3412,15 +3694,11 @@ arch grass
 x 31
 y 7
 end
-arch swall_1_1
-x 31
-y 7
-end
 arch grass
 x 31
 y 8
 end
-arch swall_2_1_1
+arch swall_1_1
 x 31
 y 8
 end
@@ -3477,13 +3755,45 @@ arch evergreen
 x 32
 move_block all
 end
+arch swall_2_1_2
+x 32
+end
 arch grass
 x 32
 y 1
 end
+arch note
+name ghost
+face ghost.111
+x 32
+y 1
+no_pick 1
+end
 arch grass
 x 32
 y 2
+end
+arch player_changer
+slaying /start/tutorial_class
+hp 8
+sp 12
+x 32
+y 2
+arch sorcerer_class
+name ghost
+msg
+endmsg
+face ghost.111
+animation ghost
+Str 0
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Int 0
+randomitems none
+anim_suffix no_class
+end
 end
 arch grass
 x 32
@@ -3534,24 +3844,9 @@ arch grass
 x 32
 y 7
 end
-arch button_small
-x 32
-y 7
-connected 16
-end
-arch button_small
-x 32
-y 8
-connected 16
-end
 arch grass
 x 32
 y 8
-end
-arch grate_closed_1
-x 32
-y 8
-connected 16
 end
 arch grass
 x 32
@@ -3564,6 +3859,11 @@ sp 12
 x 32
 y 9
 arch alchemist_class
+Str 0
+Con 0
+Pow 0
+Cha 0
+Int 0
 randomitems none
 end
 end
@@ -3608,7 +3908,14 @@ arch evergreen
 x 33
 move_block all
 end
+arch swall_3_3
+x 33
+end
 arch grass
+x 33
+y 1
+end
+arch swall_2_1_1
 x 33
 y 1
 end
@@ -3620,7 +3927,15 @@ arch grasspond
 x 33
 y 2
 end
+arch swall_2_1_1
+x 33
+y 2
+end
 arch grass
+x 33
+y 3
+end
+arch swall_1_2_half
 x 33
 y 3
 end
@@ -3640,15 +3955,11 @@ arch grass
 x 33
 y 7
 end
-arch swall_1_1
-x 33
-y 7
-end
 arch grass
 x 33
 y 8
 end
-arch swall_2_1_1
+arch swall_1_1
 x 33
 y 8
 end
@@ -3700,13 +4011,45 @@ arch evergreen
 x 34
 move_block all
 end
+arch swall_2_1_2
+x 34
+end
 arch grass
 x 34
 y 1
 end
+arch note
+name nightmare
+face nightmare.111
+x 34
+y 1
+no_pick 1
+end
 arch grass
 x 34
 y 2
+end
+arch player_changer
+slaying /start/tutorial_class
+hp 8
+sp 12
+x 34
+y 2
+arch sorcerer_class
+name nightmare
+msg
+endmsg
+face nightmare.111
+animation nightmare
+Str 0
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Int 0
+randomitems none
+anim_suffix no_class
+end
 end
 arch grass
 x 34
@@ -3761,24 +4104,9 @@ arch grass
 x 34
 y 7
 end
-arch button_small
-x 34
-y 7
-connected 14
-end
-arch button_small
-x 34
-y 8
-connected 14
-end
 arch grass
 x 34
 y 8
-end
-arch grate_closed_1
-x 34
-y 8
-connected 14
 end
 arch grass
 x 34
@@ -3791,6 +4119,13 @@ sp 12
 x 34
 y 9
 arch sorcerer_class
+Str 0
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Cha 0
+Int 0
 randomitems none
 end
 end
@@ -3838,7 +4173,14 @@ arch evergreen
 x 35
 move_block all
 end
+arch swall_3_3
+x 35
+end
 arch grass
+x 35
+y 1
+end
+arch swall_2_1_1
 x 35
 y 1
 end
@@ -3846,7 +4188,15 @@ arch grass
 x 35
 y 2
 end
+arch swall_2_1_1
+x 35
+y 2
+end
 arch grass
+x 35
+y 3
+end
+arch swall_1_2_half
 x 35
 y 3
 end
@@ -3866,15 +4216,11 @@ arch grass
 x 35
 y 7
 end
-arch swall_1_1
-x 35
-y 7
-end
 arch grass
 x 35
 y 8
 end
-arch swall_2_1_1
+arch swall_1_1
 x 35
 y 8
 end
@@ -3931,13 +4277,45 @@ arch evergreen
 x 36
 move_block all
 end
+arch swall_2_1_2
+x 36
+end
 arch grass
 x 36
 y 1
 end
+arch note
+name unusual kobold
+face unusual_kobold.111
+x 36
+y 1
+no_pick 1
+end
 arch grass
 x 36
 y 2
+end
+arch player_changer
+slaying /start/tutorial_class
+hp 8
+sp 12
+x 36
+y 2
+arch sorcerer_class
+name Pygmy of the Forest
+msg
+endmsg
+face unusual_kobold.111
+animation unusual_kobold
+Str 0
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Int 0
+randomitems none
+anim_suffix no_class
+end
 end
 arch grass
 x 36
@@ -3984,24 +4362,9 @@ arch grass
 x 36
 y 7
 end
-arch button_small
-x 36
-y 7
-connected 15
-end
-arch button_small
-x 36
-y 8
-connected 15
-end
 arch grass
 x 36
 y 8
-end
-arch grate_closed_1
-x 36
-y 8
-connected 15
 end
 arch grass
 x 36
@@ -4014,6 +4377,11 @@ sp 12
 x 36
 y 9
 arch summoner_class
+Str 0
+Con 0
+Pow 0
+Cha 0
+Int 0
 randomitems none
 end
 end
@@ -4059,7 +4427,14 @@ arch evergreen
 x 37
 move_block all
 end
+arch swall_3_3
+x 37
+end
 arch grass
+x 37
+y 1
+end
+arch swall_2_1_1
 x 37
 y 1
 end
@@ -4067,7 +4442,15 @@ arch grass
 x 37
 y 2
 end
+arch swall_2_1_1
+x 37
+y 2
+end
 arch grass
+x 37
+y 3
+end
+arch swall_1_2_half
 x 37
 y 3
 end
@@ -4087,15 +4470,11 @@ arch grass
 x 37
 y 7
 end
-arch swall_1_1
-x 37
-y 7
-end
 arch grass
 x 37
 y 8
 end
-arch swall_2_1_1
+arch swall_1_1
 x 37
 y 8
 end
@@ -4146,6 +4525,9 @@ end
 arch evergreen
 x 38
 move_block all
+end
+arch swall_2_1_2
+x 38
 end
 arch grass
 x 38
@@ -4235,7 +4617,7 @@ end
 arch grass
 x 39
 end
-arch swall_2_1_1
+arch swall_2_2_3
 x 39
 end
 arch grass

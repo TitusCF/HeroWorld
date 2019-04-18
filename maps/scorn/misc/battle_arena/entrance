@@ -7,7 +7,7 @@ msg
 Creator: Andreas Vogl
 Email: red.blaze@gmx.net
 Date: Wed 8.11.2000
-Modified: 2019-04-17 Acer
+Modified: 2019-04-18 Acer
 endmsg
 end
 arch magic_banned
@@ -1276,11 +1276,18 @@ end
 arch magic_banned
 x 5
 end
+arch magic_banned
+x 5
+end
 arch dungeon_floor
 x 5
 end
-arch cwall_2_2_3
+arch cwall_3_3
 x 5
+end
+arch magic_banned
+x 5
+y 1
 end
 arch magic_banned
 x 5
@@ -1298,11 +1305,15 @@ arch magic_banned
 x 5
 y 2
 end
+arch magic_banned
+x 5
+y 2
+end
 arch dungeon_floor
 x 5
 y 2
 end
-arch cwall_2_1_1
+arch cwall_3_2
 x 5
 y 2
 end
@@ -1310,6 +1321,10 @@ arch magic_banned
 x 5
 y 3
 end
+arch magic_banned
+x 5
+y 3
+end
 arch dungeon_floor
 x 5
 y 3
@@ -1322,15 +1337,31 @@ arch magic_banned
 x 5
 y 4
 end
+arch magic_banned
+x 5
+y 4
+end
 arch dungeon_floor
 x 5
 y 4
 end
-arch cwall_2_2_4
+arch cwall_3_4
 x 5
 y 4
 end
 arch magic_banned
+x 5
+y 5
+end
+arch magic_banned
+x 5
+y 5
+end
+arch dungeon_floor
+x 5
+y 5
+end
+arch cwall_3_2
 x 5
 y 5
 end
@@ -1342,7 +1373,15 @@ arch dungeon_floor
 x 5
 y 6
 end
-arch cwall_2_1_2
+arch magic_banned
+x 5
+y 6
+end
+arch dungeon_floor
+x 5
+y 6
+end
+arch cwall_3_1
 x 5
 y 6
 end
@@ -1552,7 +1591,21 @@ end
 arch magic_banned
 x 6
 end
+arch dungeon_floor
+x 6
+end
+arch cwall_2_2_3
+x 6
+end
 arch magic_banned
+x 6
+y 1
+end
+arch dungeon_floor
+x 6
+y 1
+end
+arch cwall_2_1_1
 x 6
 y 1
 end
@@ -1560,7 +1613,33 @@ arch magic_banned
 x 6
 y 2
 end
+arch dungeon_floor
+x 6
+y 2
+end
+arch cwall_2_2_4
+x 6
+y 2
+end
 arch magic_banned
+x 6
+y 3
+end
+arch dungeon_floor
+x 6
+y 3
+end
+arch bench_1_1
+x 6
+y 3
+end
+arch machine_gun
+sp 1000
+x 6
+y 3
+end
+arch machine_gun
+sp 1000
 x 6
 y 3
 end
@@ -1568,7 +1647,34 @@ arch magic_banned
 x 6
 y 4
 end
+arch dungeon_floor
+x 6
+y 4
+end
+arch bench_1_2
+x 6
+y 4
+end
+arch bag
+x 6
+y 4
+arch musketball
+name 7.62 NATO
+name_pl 7.62 NATO
+food 0
+nrof 2000
+attacktype 16777217
+end
+end
 arch magic_banned
+x 6
+y 5
+end
+arch dungeon_floor
+x 6
+y 5
+end
+arch cwall_2_2_3
 x 6
 y 5
 end
@@ -1580,9 +1686,17 @@ arch dungeon_floor
 x 6
 y 6
 end
-arch cwall_2_2_3
+arch cwall_3_4
 x 6
 y 6
+end
+arch magic_banned
+x 6
+y 7
+end
+arch dungeon_floor
+x 6
+y 7
 end
 arch magic_banned
 x 6
@@ -1604,11 +1718,7 @@ arch dungeon_floor
 x 6
 y 8
 end
-arch swall_1_3
-x 6
-y 8
-end
-arch cwall_2_2_1
+arch cwall_2_2_4
 x 6
 y 8
 end
@@ -1793,7 +1903,10 @@ end
 arch dungeon_floor
 x 7
 end
-arch cwall_1_1
+arch invis_exit
+slaying arena
+hp 17
+sp 26
 x 7
 end
 arch magic_banned
@@ -1804,9 +1917,11 @@ arch dungeon_floor
 x 7
 y 1
 end
-arch cwall_2_1_1
+arch gate_closed_1
 x 7
 y 1
+connected 7695316
+activate_on_release 0
 end
 arch magic_banned
 x 7
@@ -1816,19 +1931,23 @@ arch dungeon_floor
 x 7
 y 2
 end
-arch cwall_3_2
+arch check_inv
+race machine_gun
 x 7
 y 2
+connected 7695316
+end
+arch check_inv
+slaying 5683247854
+x 7
+y 2
+last_heal 1
 end
 arch magic_banned
 x 7
 y 3
 end
 arch dungeon_floor
-x 7
-y 3
-end
-arch cwall_2_1_1
 x 7
 y 3
 end
@@ -1840,10 +1959,6 @@ arch dungeon_floor
 x 7
 y 4
 end
-arch cwall_2_1_1
-x 7
-y 4
-end
 arch magic_banned
 x 7
 y 5
@@ -1852,9 +1967,18 @@ arch dungeon_floor
 x 7
 y 5
 end
-arch cwall_3_2
+arch check_inv
 x 7
 y 5
+last_sp 0
+connected 15
+end
+arch check_inv
+hp 14
+x 7
+y 5
+last_sp 0
+move_block all
 end
 arch magic_banned
 x 7
@@ -1864,7 +1988,22 @@ arch dungeon_floor
 x 7
 y 6
 end
-arch cwall_2_1_1
+arch sign
+name READ ME
+msg
+No personal weapons allowed.
+Please make use of the deposit boxes located in the dormatory.
+Your gear will be secure.
+
+Shields are acceptable.
+
+HINT:
+use the 'bowmode (threewide/spreadshot/normal)'
+to change your styles of fire.
+you could even keybind the bowmode command to
+quickly change on the fly.
+
+endmsg
 x 7
 y 6
 end
@@ -1876,10 +2015,6 @@ arch dungeon_floor
 x 7
 y 7
 end
-arch cwall_2_1_1
-x 7
-y 7
-end
 arch magic_banned
 x 7
 y 8
@@ -1888,9 +2023,17 @@ arch dungeon_floor
 x 7
 y 8
 end
-arch cwall_3_1
+arch gate_open_1
 x 7
 y 8
+connected 7695316
+activate_on_release 0
+end
+arch check_inv
+slaying 5683247854
+x 7
+y 8
+move_block all
 end
 arch magic_banned
 x 7
@@ -1899,6 +2042,20 @@ end
 arch dungeon_floor
 x 7
 y 9
+end
+arch waybread_table
+name Purchase Battle Pass Here (50 g.p)
+slaying money
+face penta.111
+sp 1
+food 500
+x 7
+y 9
+arch key2
+name Battle Pass A
+slaying 5683247854
+face note.111
+end
 end
 arch magic_banned
 x 7
@@ -2082,10 +2239,7 @@ end
 arch dungeon_floor
 x 8
 end
-arch invis_exit
-slaying arena
-hp 17
-sp 26
+arch cwall_2_2_2
 x 8
 end
 arch magic_banned
@@ -2096,11 +2250,9 @@ arch dungeon_floor
 x 8
 y 1
 end
-arch gate_closed_1
+arch cwall_2_1_1
 x 8
 y 1
-connected 7695316
-activate_on_release 0
 end
 arch magic_banned
 x 8
@@ -2110,7 +2262,7 @@ arch dungeon_floor
 x 8
 y 2
 end
-arch cwall_1_3
+arch cwall_3_2
 x 8
 y 2
 end
@@ -2122,17 +2274,7 @@ arch dungeon_floor
 x 8
 y 3
 end
-arch bench_1_1
-x 8
-y 3
-end
-arch machine_gun
-sp 1000
-x 8
-y 3
-end
-arch machine_gun
-sp 1000
+arch cwall_2_1_1
 x 8
 y 3
 end
@@ -2144,20 +2286,9 @@ arch dungeon_floor
 x 8
 y 4
 end
-arch bench_1_2
+arch cwall_2_1_1
 x 8
 y 4
-end
-arch bag
-x 8
-y 4
-arch musketball
-name m7.62 NATO
-name_pl 7.62 NATO
-food 0
-nrof 2000
-attacktype 16777217
-end
 end
 arch magic_banned
 x 8
@@ -2167,7 +2298,7 @@ arch dungeon_floor
 x 8
 y 5
 end
-arch cwall_1_3
+arch cwall_3_2
 x 8
 y 5
 end
@@ -2179,6 +2310,10 @@ arch dungeon_floor
 x 8
 y 6
 end
+arch cwall_2_1_1
+x 8
+y 6
+end
 arch magic_banned
 x 8
 y 7
@@ -2187,6 +2322,10 @@ arch dungeon_floor
 x 8
 y 7
 end
+arch cwall_2_1_1
+x 8
+y 7
+end
 arch magic_banned
 x 8
 y 8
@@ -2195,7 +2334,7 @@ arch dungeon_floor
 x 8
 y 8
 end
-arch cwall_1_3
+arch cwall_2_2_1
 x 8
 y 8
 end
@@ -2206,19 +2345,6 @@ end
 arch dungeon_floor
 x 8
 y 9
-end
-arch waybread_table
-name Purchase Battle Pass Here (50 g.p)
-slaying money
-sp 1
-food 500
-x 8
-y 9
-arch key2
-name Battle Pass A
-slaying 5683247854
-face note.111
-end
 end
 arch magic_banned
 x 8
@@ -2372,10 +2498,7 @@ end
 arch dungeon_floor
 x 9
 end
-arch invis_exit
-slaying arena
-hp 17
-sp 26
+arch cwall_2_2_3
 x 9
 end
 arch magic_banned
@@ -2386,11 +2509,9 @@ arch dungeon_floor
 x 9
 y 1
 end
-arch gate_closed_1
+arch cwall_2_1_1
 x 9
 y 1
-connected 7695316
-activate_on_release 0
 end
 arch magic_banned
 x 9
@@ -2400,23 +2521,29 @@ arch dungeon_floor
 x 9
 y 2
 end
-arch check_inv
-race machine_gun
+arch cwall_2_2_4
 x 9
 y 2
-connected 7695316
-end
-arch check_inv
-slaying 5683247854
-x 9
-y 2
-last_heal 1
 end
 arch magic_banned
 x 9
 y 3
 end
 arch dungeon_floor
+x 9
+y 3
+end
+arch bench_1_1
+x 9
+y 3
+end
+arch machine_gun
+sp 1000
+x 9
+y 3
+end
+arch machine_gun
+sp 1000
 x 9
 y 3
 end
@@ -2428,6 +2555,21 @@ arch dungeon_floor
 x 9
 y 4
 end
+arch bench_1_2
+x 9
+y 4
+end
+arch bag
+x 9
+y 4
+arch musketball
+name 7.62 NATO
+name_pl 7.62 NATO
+food 0
+nrof 2000
+attacktype 16777217
+end
+end
 arch magic_banned
 x 9
 y 5
@@ -2436,24 +2578,19 @@ arch dungeon_floor
 x 9
 y 5
 end
-arch check_inv
+arch cwall_2_2_3
 x 9
 y 5
-last_sp 0
-connected 15
-end
-arch check_inv
-hp 14
-x 9
-y 5
-last_sp 0
-move_block all
 end
 arch magic_banned
 x 9
 y 6
 end
 arch dungeon_floor
+x 9
+y 6
+end
+arch cwall_2_1_1
 x 9
 y 6
 end
@@ -2465,6 +2602,10 @@ arch dungeon_floor
 x 9
 y 7
 end
+arch cwall_2_1_1
+x 9
+y 7
+end
 arch magic_banned
 x 9
 y 8
@@ -2473,17 +2614,9 @@ arch dungeon_floor
 x 9
 y 8
 end
-arch gate_open_1
+arch cwall_2_2_4
 x 9
 y 8
-connected 7695316
-activate_on_release 0
-end
-arch check_inv
-slaying 5683247854
-x 9
-y 8
-move_block all
 end
 arch magic_banned
 x 9
@@ -2656,8 +2789,8 @@ x 10
 end
 arch invis_exit
 slaying arena
-hp 17
-sp 26
+hp 26
+sp 17
 x 10
 end
 arch magic_banned
@@ -2671,7 +2804,7 @@ end
 arch gate_closed_1
 x 10
 y 1
-connected 7695316
+connected 75316
 activate_on_release 0
 end
 arch magic_banned
@@ -2682,9 +2815,17 @@ arch dungeon_floor
 x 10
 y 2
 end
-arch cwall_1_4
+arch check_inv
+race machine_gun
 x 10
 y 2
+connected 75316
+end
+arch check_inv
+slaying 5687854
+x 10
+y 2
+last_heal 1
 end
 arch magic_banned
 x 10
@@ -2710,9 +2851,18 @@ arch dungeon_floor
 x 10
 y 5
 end
-arch cwall_1_4
+arch check_inv
 x 10
 y 5
+last_sp 0
+connected 15
+end
+arch check_inv
+hp 14
+x 10
+y 5
+last_sp 0
+move_block all
 end
 arch magic_banned
 x 10
@@ -2757,9 +2907,17 @@ arch dungeon_floor
 x 10
 y 8
 end
-arch cwall_1_4
+arch gate_open_1
 x 10
 y 8
+connected 75316
+activate_on_release 0
+end
+arch check_inv
+slaying 5687854
+x 10
+y 8
+move_block all
 end
 arch magic_banned
 x 10
@@ -2768,6 +2926,20 @@ end
 arch dungeon_floor
 x 10
 y 9
+end
+arch waybread_table
+name Purchase Battle Pass Here (50 g.p)
+slaying money
+face penta.111
+sp 1
+food 500
+x 10
+y 9
+arch key2
+name Battle Pass B
+slaying 5687854
+face note.111
+end
 end
 arch magic_banned
 x 10
@@ -2933,23 +3105,15 @@ arch magic_banned
 x 11
 y 2
 end
-arch dungeon_magic
-x 11
-y 2
-end
 arch dungeon_floor
 x 11
 y 2
 end
-arch cwall_4
+arch cwall_2_1_1
 x 11
 y 2
 end
 arch magic_banned
-x 11
-y 3
-end
-arch dungeon_magic
 x 11
 y 3
 end
@@ -2981,7 +3145,7 @@ arch dungeon_floor
 x 11
 y 5
 end
-arch cwall_4
+arch cwall_2_1_1
 x 11
 y 5
 end
@@ -3017,7 +3181,7 @@ arch dungeon_floor
 x 11
 y 8
 end
-arch cwall_3_1
+arch cwall_1_2
 x 11
 y 8
 end
@@ -3028,6 +3192,14 @@ end
 arch dungeon_floor
 x 11
 y 9
+end
+arch magic_banned
+x 11
+y 10
+end
+arch dungeon_floor
+x 11
+y 10
 end
 arch sign
 name gladiator's registry office
@@ -3037,14 +3209,6 @@ without having to fear death?
 - Then step ahead.
 - if the gates are shut it means a battle is taking place.
 endmsg
-x 11
-y 9
-end
-arch magic_banned
-x 11
-y 10
-end
-arch dungeon_floor
 x 11
 y 10
 end
@@ -3260,9 +3424,17 @@ arch dungeon_floor
 x 12
 y 2
 end
-arch cwall_1_3
+arch check_inv
+race machine_gun
 x 12
 y 2
+connected 76953132
+end
+arch check_inv
+slaying 56832478
+x 12
+y 2
+last_heal 1
 end
 arch magic_banned
 x 12
@@ -3288,9 +3460,18 @@ arch dungeon_floor
 x 12
 y 5
 end
-arch cwall_1_3
+arch check_inv
 x 12
 y 5
+last_sp 0
+connected 15
+end
+arch check_inv
+hp 14
+x 12
+y 5
+last_sp 0
+move_block all
 end
 arch magic_banned
 x 12
@@ -3335,9 +3516,17 @@ arch dungeon_floor
 x 12
 y 8
 end
-arch cwall_1_3
+arch gate_open_1
 x 12
 y 8
+connected 76953132
+activate_on_release 0
+end
+arch check_inv
+slaying 56832478
+x 12
+y 8
+move_block all
 end
 arch magic_banned
 x 12
@@ -3346,6 +3535,20 @@ end
 arch dungeon_floor
 x 12
 y 9
+end
+arch waybread_table
+name Purchase Battle Pass Here (50 g.p)
+slaying money
+face penta.111
+sp 1
+food 500
+x 12
+y 9
+arch key2
+name Battle Pass C
+slaying 56832478
+face note.111
+end
 end
 arch magic_banned
 x 12
@@ -3496,10 +3699,7 @@ end
 arch dungeon_floor
 x 13
 end
-arch invis_exit
-slaying arena
-hp 17
-sp 8
+arch cwall_2_2_2
 x 13
 end
 arch magic_banned
@@ -3510,13 +3710,15 @@ arch dungeon_floor
 x 13
 y 1
 end
-arch gate_closed_1
+arch cwall_2_1_1
 x 13
 y 1
-connected 76953132
-activate_on_release 0
 end
 arch magic_banned
+x 13
+y 2
+end
+arch dungeon_magic
 x 13
 y 2
 end
@@ -3524,23 +3726,29 @@ arch dungeon_floor
 x 13
 y 2
 end
-arch check_inv
-race machine_gun
+arch cwall_2_2_1
 x 13
 y 2
-connected 76953132
-end
-arch check_inv
-slaying 56832478
-x 13
-y 2
-last_heal 1
 end
 arch magic_banned
 x 13
 y 3
 end
 arch dungeon_floor
+x 13
+y 3
+end
+arch bench_1_1
+x 13
+y 3
+end
+arch machine_gun
+sp 1000
+x 13
+y 3
+end
+arch machine_gun
+sp 1000
 x 13
 y 3
 end
@@ -3552,6 +3760,21 @@ arch dungeon_floor
 x 13
 y 4
 end
+arch bench_1_2
+x 13
+y 4
+end
+arch bag
+x 13
+y 4
+arch musketball
+name 7.62 NATO
+name_pl 7.62 NATO
+food 0
+nrof 2000
+attacktype 16777217
+end
+end
 arch magic_banned
 x 13
 y 5
@@ -3560,24 +3783,19 @@ arch dungeon_floor
 x 13
 y 5
 end
-arch check_inv
+arch cwall_2_2_2
 x 13
 y 5
-last_sp 0
-connected 15
-end
-arch check_inv
-hp 14
-x 13
-y 5
-last_sp 0
-move_block all
 end
 arch magic_banned
 x 13
 y 6
 end
 arch dungeon_floor
+x 13
+y 6
+end
+arch cwall_2_1_1
 x 13
 y 6
 end
@@ -3589,6 +3807,10 @@ arch dungeon_floor
 x 13
 y 7
 end
+arch cwall_2_1_1
+x 13
+y 7
+end
 arch magic_banned
 x 13
 y 8
@@ -3597,17 +3819,9 @@ arch dungeon_floor
 x 13
 y 8
 end
-arch gate_open_1
+arch cwall_2_2_1
 x 13
 y 8
-connected 76953132
-activate_on_release 0
-end
-arch check_inv
-slaying 56832478
-x 13
-y 8
-move_block all
 end
 arch magic_banned
 x 13
@@ -3789,10 +4003,7 @@ end
 arch dungeon_floor
 x 14
 end
-arch invis_exit
-slaying arena
-hp 17
-sp 8
+arch cwall_2_2_3
 x 14
 end
 arch magic_banned
@@ -3803,13 +4014,15 @@ arch dungeon_floor
 x 14
 y 1
 end
-arch gate_closed_1
+arch cwall_2_1_1
 x 14
 y 1
-connected 76953132
-activate_on_release 0
 end
 arch magic_banned
+x 14
+y 2
+end
+arch dungeon_magic
 x 14
 y 2
 end
@@ -3817,7 +4030,7 @@ arch dungeon_floor
 x 14
 y 2
 end
-arch cwall_1_4
+arch cwall_3_4
 x 14
 y 2
 end
@@ -3825,21 +4038,15 @@ arch magic_banned
 x 14
 y 3
 end
+arch dungeon_magic
+x 14
+y 3
+end
 arch dungeon_floor
 x 14
 y 3
 end
-arch bench_1_1
-x 14
-y 3
-end
-arch machine_gun
-sp 1000
-x 14
-y 3
-end
-arch machine_gun
-sp 1000
+arch cwall_2_1_1
 x 14
 y 3
 end
@@ -3851,20 +4058,9 @@ arch dungeon_floor
 x 14
 y 4
 end
-arch bench_1_2
+arch cwall_2_1_1
 x 14
 y 4
-end
-arch bag
-x 14
-y 4
-arch musketball
-name 7.62 NATO
-name_pl 7.62 NATO
-food 0
-nrof 2000
-attacktype 16777217
-end
 end
 arch magic_banned
 x 14
@@ -3874,7 +4070,7 @@ arch dungeon_floor
 x 14
 y 5
 end
-arch cwall_1_4
+arch cwall_3_4
 x 14
 y 5
 end
@@ -3886,6 +4082,10 @@ arch dungeon_floor
 x 14
 y 6
 end
+arch cwall_2_1_1
+x 14
+y 6
+end
 arch magic_banned
 x 14
 y 7
@@ -3894,6 +4094,10 @@ arch dungeon_floor
 x 14
 y 7
 end
+arch cwall_2_1_1
+x 14
+y 7
+end
 arch magic_banned
 x 14
 y 8
@@ -3902,7 +4106,7 @@ arch dungeon_floor
 x 14
 y 8
 end
-arch cwall_1_4
+arch cwall_2_2_4
 x 14
 y 8
 end
@@ -3913,19 +4117,6 @@ end
 arch dungeon_floor
 x 14
 y 9
-end
-arch waybread_table
-name Purchase Battle Pass Here (50 g.p)
-slaying money
-sp 1
-food 500
-x 14
-y 9
-arch key2
-name Battle Pass B
-slaying 56832478
-face note.111
-end
 end
 arch magic_banned
 x 14
@@ -4087,7 +4278,10 @@ end
 arch dungeon_floor
 x 15
 end
-arch cwall_1_1
+arch invis_exit
+slaying arena
+hp 17
+sp 8
 x 15
 end
 arch magic_banned
@@ -4098,9 +4292,11 @@ arch dungeon_floor
 x 15
 y 1
 end
-arch cwall_2_1_1
+arch gate_closed_1
 x 15
 y 1
+connected 76248132
+activate_on_release 0
 end
 arch magic_banned
 x 15
@@ -4110,19 +4306,23 @@ arch dungeon_floor
 x 15
 y 2
 end
-arch cwall_3_4
+arch check_inv
+race machine_gun
 x 15
 y 2
+connected 76248132
+end
+arch check_inv
+slaying 5688947234
+x 15
+y 2
+last_heal 1
 end
 arch magic_banned
 x 15
 y 3
 end
 arch dungeon_floor
-x 15
-y 3
-end
-arch cwall_2_1_1
 x 15
 y 3
 end
@@ -4134,10 +4334,6 @@ arch dungeon_floor
 x 15
 y 4
 end
-arch cwall_2_1_1
-x 15
-y 4
-end
 arch magic_banned
 x 15
 y 5
@@ -4146,9 +4342,18 @@ arch dungeon_floor
 x 15
 y 5
 end
-arch cwall_3_4
+arch check_inv
 x 15
 y 5
+last_sp 0
+connected 15
+end
+arch check_inv
+hp 14
+x 15
+y 5
+last_sp 0
+move_block all
 end
 arch magic_banned
 x 15
@@ -4158,7 +4363,22 @@ arch dungeon_floor
 x 15
 y 6
 end
-arch cwall_2_1_1
+arch sign
+name READ ME
+msg
+No personal weapons allowed.
+Please make use of the deposit boxes located in the dormatory.
+Your gear will be secure.
+
+Shields are acceptable.
+
+HINT:
+use the 'bowmode (threewide/spreadshot/normal)'
+to change your styles of fire.
+you could even keybind the bowmode command to
+quickly change on the fly.
+
+endmsg
 x 15
 y 6
 end
@@ -4170,10 +4390,6 @@ arch dungeon_floor
 x 15
 y 7
 end
-arch cwall_2_1_1
-x 15
-y 7
-end
 arch magic_banned
 x 15
 y 8
@@ -4182,9 +4398,17 @@ arch dungeon_floor
 x 15
 y 8
 end
-arch cwall_3_1
+arch gate_open_1
 x 15
 y 8
+connected 76248132
+activate_on_release 0
+end
+arch check_inv
+slaying 5683247854
+x 15
+y 8
+move_block all
 end
 arch magic_banned
 x 15
@@ -4193,6 +4417,20 @@ end
 arch dungeon_floor
 x 15
 y 9
+end
+arch waybread_table
+name Purchase Battle Pass Here (50 g.p)
+slaying money
+face penta.111
+sp 1
+food 500
+x 15
+y 9
+arch key2
+name Battle Pass D
+slaying 5688947234
+face note.111
+end
 end
 arch magic_banned
 x 15
@@ -4369,7 +4607,21 @@ end
 arch magic_banned
 x 16
 end
+arch dungeon_floor
+x 16
+end
+arch cwall_2_2_2
+x 16
+end
 arch magic_banned
+x 16
+y 1
+end
+arch dungeon_floor
+x 16
+y 1
+end
+arch cwall_2_1_1
 x 16
 y 1
 end
@@ -4377,7 +4629,33 @@ arch magic_banned
 x 16
 y 2
 end
+arch dungeon_floor
+x 16
+y 2
+end
+arch cwall_2_2_1
+x 16
+y 2
+end
 arch magic_banned
+x 16
+y 3
+end
+arch dungeon_floor
+x 16
+y 3
+end
+arch bench_1_1
+x 16
+y 3
+end
+arch machine_gun
+sp 1000
+x 16
+y 3
+end
+arch machine_gun
+sp 1000
 x 16
 y 3
 end
@@ -4385,7 +4663,34 @@ arch magic_banned
 x 16
 y 4
 end
+arch dungeon_floor
+x 16
+y 4
+end
+arch bench_1_2
+x 16
+y 4
+end
+arch bag
+x 16
+y 4
+arch musketball
+name 7.62 NATO
+name_pl 7.62 NATO
+food 0
+nrof 2000
+attacktype 16777217
+end
+end
 arch magic_banned
+x 16
+y 5
+end
+arch dungeon_floor
+x 16
+y 5
+end
+arch cwall_2_2_2
 x 16
 y 5
 end
@@ -4397,7 +4702,7 @@ arch dungeon_floor
 x 16
 y 6
 end
-arch cwall_2_2_2
+arch cwall_3_2
 x 16
 y 6
 end
@@ -4421,11 +4726,7 @@ arch dungeon_floor
 x 16
 y 8
 end
-arch swall_1_4
-x 16
-y 8
-end
-arch cwall_2_2_4
+arch cwall_2_2_1
 x 16
 y 8
 end
@@ -4632,7 +4933,7 @@ end
 arch dungeon_floor
 x 17
 end
-arch cwall_2_2_2
+arch cwall_3_3
 x 17
 end
 arch magic_banned
@@ -4655,7 +4956,7 @@ arch dungeon_floor
 x 17
 y 2
 end
-arch cwall_2_1_1
+arch cwall_3_4
 x 17
 y 2
 end
@@ -4679,11 +4980,23 @@ arch dungeon_floor
 x 17
 y 4
 end
-arch cwall_2_2_1
+arch cwall_3_2
 x 17
 y 4
 end
+arch dungeon_floor
+x 17
+y 5
+end
 arch magic_banned
+x 17
+y 5
+end
+arch dungeon_floor
+x 17
+y 5
+end
+arch cwall_3_4
 x 17
 y 5
 end
@@ -4695,7 +5008,7 @@ arch dungeon_floor
 x 17
 y 6
 end
-arch cwall_2_1_2
+arch cwall_3_1
 x 17
 y 6
 end
@@ -4810,8 +5123,8 @@ x 17
 y 15
 end
 arch altar
-name complete set
-slaying money (750 g.p)
+name complete set (750 g.p)
+slaying money
 face table_2.111
 food 7500
 x 17

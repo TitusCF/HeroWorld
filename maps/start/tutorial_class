@@ -393,19 +393,12 @@ x 4
 y 4
 end
 arch sign
-name Class Selection
+name Custom Face Selection
 msg
-Here you can select a different class for your character
+Here you can select a different face for your character
 
-A class modifies your character: you can gain skills and items, and your stats can be modified.
-There are many classes available: Step through the rooms to the right to find the right category, then read
-through the individual class descriptions.
-When you have decided on a class, step onto the golden teleporter below the sign.
 
-If you are playing for the first time and are a bit overwhelmed, then the Warrior is a good choice
-for fighters, and the Warlock is a good choice for magic users.
-
-You can also stick with the class you have chosen by going to the end.
+You can also stick with the original face you have chosen by going to the end of the hall.
 endmsg
 x 4
 y 4
@@ -764,15 +757,15 @@ arch footpath_2_1_2
 x 8
 y 4
 end
-arch grass
+arch dungeon_floor
 x 8
 y 5
 end
-arch grass
+arch dungeon_floor
 x 8
 y 6
 end
-arch grass
+arch dungeon_floor
 x 8
 y 7
 end
@@ -872,15 +865,15 @@ arch swall_1_2_half
 x 9
 y 3
 end
-arch footpath_2_1_2
+arch footpath_2_2_3
 x 9
 y 4
 end
-arch grass
+arch dungeon_floor
 x 9
 y 5
 end
-arch grass
+arch dungeon_floor
 x 9
 y 6
 end
@@ -988,29 +981,19 @@ arch grass
 x 10
 y 3
 end
-arch footpath_2_1_2
+arch dungeon_floor
 x 10
 y 4
 end
-arch sign
-name Hall of Warriors
-msg
-Warriors mainly count on their strength to settle disputes. Why slow yourself down
-with casting a spell when you can simply club down your opponent and step over it?
-endmsg
-x 10
-y 4
-move_on all
-end
-arch grass
+arch dungeon_floor
 x 10
 y 5
 end
-arch grass
+arch dungeon_floor
 x 10
 y 6
 end
-arch grass
+arch dungeon_floor
 x 10
 y 7
 end
@@ -1110,15 +1093,15 @@ arch swall_1_2_half
 x 11
 y 3
 end
-arch footpath_2_1_2
+arch grass
 x 11
 y 4
 end
-arch grass
+arch dungeon_floor
 x 11
 y 5
 end
-arch grass
+arch dungeon_floor
 x 11
 y 6
 end
@@ -1231,46 +1214,19 @@ arch grass
 x 12
 y 3
 end
-arch footpath_2_1_2
+arch dungeon_floor
 x 12
 y 4
 end
-arch grass
+arch dungeon_floor
 x 12
 y 5
 end
-arch grass
+arch dungeon_floor
 x 12
 y 6
 end
-arch sign
-name Swashbuckler
-msg
-On shipboard, you've learned good
-balance and agility, and you've also
-become strong and hardy.
-Because of occasional oarswork, you and your
-shipmates have an admirable command
-of rhythm, and you can sing well.
-You've learned to make the most of
-your time in port: after you pass
-out drunk in a bar and wake to find
-yourself short your pay, you've found
-ways to acquire new capital, or at
-the very least, talk someone into
-helping you out of your fix.
-On numerous occasions, you've taken
-up arms and the bow in defense of
-your ship, so you're facile with
-weapons, but you've had no chance to
-learn any magic or the ways of gods.
-This is a relatively difficult class to play.
-endmsg
-x 12
-y 6
-move_on all
-end
-arch grass
+arch dungeon_floor
 x 12
 y 7
 end
@@ -1368,15 +1324,15 @@ arch swall_1_2_half
 x 13
 y 3
 end
-arch footpath_2_1_2
+arch grass
 x 13
 y 4
 end
-arch grass
+arch dungeon_floor
 x 13
 y 5
 end
-arch grass
+arch dungeon_floor
 x 13
 y 6
 end
@@ -1484,39 +1440,19 @@ arch grass
 x 14
 y 3
 end
-arch footpath_2_1_2
+arch dungeon_floor
 x 14
 y 4
 end
-arch grass
+arch dungeon_floor
 x 14
 y 5
 end
-arch grass
+arch dungeon_floor
 x 14
 y 6
 end
-arch sign
-name Ninja
-msg
-As a member of the secret society of
-the Ninja, you've been taught archery
-and the use of weapons, and also the
-art of combat without weapons.
-Your style of combat, though, leans very
-much toward the sneak attack, so
-you've been taught how to be
-inconspicuous and how to appear in
-places you're not expected.
-You have had no introduction to either
-religious devotion or magic.
-This class is of intermediate difficulty.
-endmsg
-x 14
-y 6
-move_on all
-end
-arch grass
+arch dungeon_floor
 x 14
 y 7
 end
@@ -1614,26 +1550,15 @@ arch swall_1_2_half
 x 15
 y 3
 end
-arch footpath_2_1_2
-x 15
-y 4
-end
-arch sign
-name Hall of Thieves
-msg
-Thieves and Ninjas prefer a subtler approach to killing, or even avoid killing altogether.
-Why risk your life needlessly in fights when you can just hide
-in the shadows and steal the treasure?
-endmsg
-x 15
-y 4
-move_on all
-end
 arch grass
+x 15
+y 4
+end
+arch dungeon_floor
 x 15
 y 5
 end
-arch grass
+arch dungeon_floor
 x 15
 y 6
 end
@@ -1746,40 +1671,19 @@ arch grass
 x 16
 y 3
 end
-arch footpath_2_1_2
+arch dungeon_floor
 x 16
 y 4
 end
-arch grass
+arch dungeon_floor
 x 16
 y 5
 end
-arch grass
+arch dungeon_floor
 x 16
 y 6
 end
-arch sign
-name Thief
-msg
-As a thief you've learned to steal
-and you're familiar with the value a
-fence will give you on your "finds".
-You've had some weaponry training,
-including archery, this being
-advisable to someone who is likely to
-have acrimonious disagreements about
-the ownership of valuable objects.
-You've had no time for religious
-devotion or the study of magecraft,
-but your quick wits have kept you
-alive many times.
-This is a relatively difficult class to play.
-endmsg
-x 16
-y 6
-move_on all
-end
-arch grass
+arch dungeon_floor
 x 16
 y 7
 end
@@ -1879,15 +1783,15 @@ arch swall_1_2_half
 x 17
 y 3
 end
-arch footpath_2_1_2
+arch grass
 x 17
 y 4
 end
-arch grass
+arch dungeon_floor
 x 17
 y 5
 end
-arch grass
+arch dungeon_floor
 x 17
 y 6
 end
@@ -1995,40 +1899,19 @@ arch grass
 x 18
 y 3
 end
-arch footpath_2_1_2
+arch dungeon_floor
 x 18
 y 4
 end
-arch grass
+arch dungeon_floor
 x 18
 y 5
 end
-arch grass
+arch dungeon_floor
 x 18
 y 6
 end
-arch sign
-name Priest
-msg
-As a priest, you've learned an
-intense devotion to your god, and
-you've learned how to channel the
-energies your god vouchsafes to his
-devotees.
-You've been taught the use
-of weapons, but only cursorily, and
-your physical training has been
-lacking in general.
-Since you're in tune with the holy powers,
-you can tell when a god has marked an object
-as accursed.
-This class is of intermediate difficulty.
-endmsg
-x 18
-y 6
-move_on all
-end
-arch grass
+arch dungeon_floor
 x 18
 y 7
 end
@@ -2133,15 +2016,15 @@ arch swall_1_2_half
 x 19
 y 3
 end
-arch footpath_2_1_2
+arch grass
 x 19
 y 4
 end
-arch grass
+arch dungeon_floor
 x 19
 y 5
 end
-arch grass
+arch dungeon_floor
 x 19
 y 6
 end
@@ -2254,44 +2137,19 @@ arch grass
 x 20
 y 3
 end
-arch footpath_2_1_2
+arch dungeon_floor
 x 20
 y 4
 end
-arch grass
+arch dungeon_floor
 x 20
 y 5
 end
-arch grass
+arch dungeon_floor
 x 20
 y 6
 end
-arch sign
-name Paladin
-msg
-You are a militant priest, with an
-emphasis on 'priest'.
-You've been taught archery and the use of
-weapons, but great care has been
-taken that you're doctrinally correct.
-Now you've been sent out in
-the world to convert the unrighteous
-and destroy the enemies of the faith,
-and your churchmembers have been
-charged a pretty penny to equip you
-to do it!
-All other areas of your education
-have been neglected. Perhaps aware
-of your deficiency, your superiors
-have given you a measure of
-protection from physical attacks.
-This is a good class for beginning players.
-endmsg
-x 20
-y 6
-move_on all
-end
-arch grass
+arch dungeon_floor
 x 20
 y 7
 end
@@ -2388,26 +2246,15 @@ arch swall_1_2_half
 x 21
 y 3
 end
-arch footpath_2_1_2
-x 21
-y 4
-end
-arch sign
-name Hall of Priests
-msg
-Priests come in various shapes and sizes. Some try to survive by their prayers
-alone, others feel that a weapon gives their religious arguments more weight, still others
-tap magical powers or inner meditation for the same.
-endmsg
-x 21
-y 4
-move_on all
-end
 arch grass
+x 21
+y 4
+end
+arch dungeon_floor
 x 21
 y 5
 end
-arch grass
+arch dungeon_floor
 x 21
 y 6
 end
@@ -2515,42 +2362,19 @@ arch grass
 x 22
 y 3
 end
-arch footpath_2_1_2
+arch dungeon_floor
 x 22
 y 4
 end
-arch grass
+arch dungeon_floor
 x 22
 y 5
 end
-arch grass
+arch dungeon_floor
 x 22
 y 6
 end
-arch sign
-name Monk
-msg
-In the Monastery, they believed in
-mental discipline and peace through
-physical training, meditation, and,
-to a lesser extent, religious
-devotion.
-Your mental equilibrium
-requires you to forego the use of
-weapons, but your physical training
-in karate means you're not helpless,
-and you can make use of archery when
-necessary.
-Your inner peacefulness grants you
-the ability to regenerate faster and
-to sense auras.
-This class is of intermediate difficulty, as monks cannot use any weapons.
-endmsg
-x 22
-y 6
-move_on all
-end
-arch grass
+arch dungeon_floor
 x 22
 y 7
 end
@@ -2660,15 +2484,15 @@ arch swall_1_2_half
 x 23
 y 3
 end
-arch footpath_2_1_2
+arch grass
 x 23
 y 4
 end
-arch grass
+arch dungeon_floor
 x 23
 y 5
 end
-arch grass
+arch dungeon_floor
 x 23
 y 6
 end
@@ -2781,42 +2605,19 @@ arch grass
 x 24
 y 3
 end
-arch footpath_2_1_2
+arch dungeon_floor
 x 24
 y 4
 end
-arch grass
+arch dungeon_floor
 x 24
 y 5
 end
-arch grass
+arch dungeon_floor
 x 24
 y 6
 end
-arch sign
-name Devotee
-msg
-The axis of your existence is your
-devotion to your god. However,
-you've also been busy in other areas.
-Your sensitivity to godly powers has
-also caused your natural magical
-ability to bloom, and your religious
-order has encouraged your study.
-Your religious superiors have forced
-you to learn to use one handed weapons as well,
-against your will. You will find
-that they were wise to do so, but you
-haven't trained as assiduously as you
-should have, so you are soft and
-weak.
-This is a good class for beginning players.
-endmsg
-x 24
-y 6
-move_on all
-end
-arch grass
+arch dungeon_floor
 x 24
 y 7
 end
@@ -2911,15 +2712,15 @@ arch swall_1_2_half
 x 25
 y 3
 end
-arch footpath_2_1_2
+arch grass
 x 25
 y 4
 end
-arch grass
+arch dungeon_floor
 x 25
 y 5
 end
-arch grass
+arch dungeon_floor
 x 25
 y 6
 end
@@ -3027,39 +2828,19 @@ arch grass
 x 26
 y 3
 end
-arch footpath_2_1_2
+arch dungeon_floor
 x 26
 y 4
 end
-arch grass
+arch dungeon_floor
 x 26
 y 5
 end
-arch grass
+arch dungeon_floor
 x 26
 y 6
 end
-arch sign
-name Warlock
-msg
-You have divided your time between
-learning magic and learning weapons,
-but have totally disregarded
-religious devotion.
-You are physically stronger and hardier
-because of your training, and you
-know the use of weapons and bows.
-However, you're just a bit clumsy in
-both weaponry and magic because
-you've had to divide your time
-between them.
-This is a good class for beginning players.
-endmsg
-x 26
-y 6
-move_on all
-end
-arch grass
+arch dungeon_floor
 x 26
 y 7
 end
@@ -3169,15 +2950,15 @@ arch swall_1_2_half
 x 27
 y 3
 end
-arch footpath_2_1_2
+arch grass
 x 27
 y 4
 end
-arch grass
+arch dungeon_floor
 x 27
 y 5
 end
-arch grass
+arch dungeon_floor
 x 27
 y 6
 end
@@ -3290,50 +3071,19 @@ arch grass
 x 28
 y 3
 end
-arch footpath_2_1_2
+arch dungeon_floor
 x 28
 y 4
 end
-arch grass
+arch dungeon_floor
 x 28
 y 5
 end
-arch grass
+arch dungeon_floor
 x 28
 y 6
 end
-arch sign
-name Evoker
-msg
-Your specialty is the use of attack
-spells in combat. You practice these
-spells daily, and your capacity to
-cast them has increased hugely.
-You've had some training in the use of one handed weapons
-to help defend yourself, but you tend
-to leave most of the fighting to
-others, so your physical training has
-been somewhat lacking.
-You've never learned to use magic
-innately, but instead rely on a magic
-talisman to channel mana for you.
-The attack spells have imprinted
-themselves somewhat on your talisman,
-making it good for those and less
-useful for anything else.
-You have not been trained in
-religious devotion: however, you
-come from a religious family and will
-have no particular difficulty taking
-up the service of a god.
-This is a relatively good class for beginning players
-who are mainly interested in magic.
-endmsg
-x 28
-y 6
-move_on all
-end
-arch grass
+arch dungeon_floor
 x 28
 y 7
 end
@@ -3427,15 +3177,15 @@ arch swall_1_2_half
 x 29
 y 3
 end
-arch footpath_2_1_2
+arch grass
 x 29
 y 4
 end
-arch grass
+arch dungeon_floor
 x 29
 y 5
 end
-arch grass
+arch dungeon_floor
 x 29
 y 6
 end
@@ -3543,45 +3293,19 @@ arch grass
 x 30
 y 3
 end
-arch footpath_2_1_2
+arch dungeon_floor
 x 30
 y 4
 end
-arch sign
-name Hall of Mages
-msg
-There are lots of different magic schools, and so the magic classes are the most
-numerous and diverse group. From pure magic users such as summoners or
-evokers to mixed classes such as the Warlock you can find almost anything.
-It can be useful to have a fighting skill, so beginning players might do well in selecting
-a class that can use a weapon.
-endmsg
-x 30
-y 4
-move_on all
-end
-arch grass
+arch dungeon_floor
 x 30
 y 5
 end
-arch grass
+arch dungeon_floor
 x 30
 y 6
 end
-arch sign
-name Evoker
-msg
-You're the generalist of the spellcasters.
-You've emphasized the use of magic and studied all its areas equally.
-You've learned something about the gods and religious devotion as well.
-To a much lesser extent, you've studied weaponry, but you've not had much physical training:
-you're mostly sedentary, and so you're not nearly so strong and healthy as you could be.
-endmsg
-x 30
-y 6
-move_on all
-end
-arch grass
+arch dungeon_floor
 x 30
 y 7
 end
@@ -3678,15 +3402,15 @@ arch swall_1_2_half
 x 31
 y 3
 end
-arch footpath_2_1_2
+arch grass
 x 31
 y 4
 end
-arch grass
+arch dungeon_floor
 x 31
 y 5
 end
-arch grass
+arch dungeon_floor
 x 31
 y 6
 end
@@ -3799,48 +3523,19 @@ arch grass
 x 32
 y 3
 end
-arch footpath_2_1_2
+arch dungeon_floor
 x 32
 y 4
 end
-arch grass
+arch dungeon_floor
 x 32
 y 5
 end
-arch grass
+arch dungeon_floor
 x 32
 y 6
 end
-arch sign
-name Alchemist
-msg
-Your specialty is magical devices and
-concoctions, but you've also had some
-training in one handed weapons, so that you can
-fend off townsfolk angered by the
-vile reeks that frequently emanate
-from your workshop.
-Searching for the perfect recipes and
-trying to recover lost knowledge has
-sharpened your wits considerably.
-However, this has left little time for
-physical training, and your sedentary
-lifestyle has weakened you very much.
-Your dependence on magical devices
-extends to the use of a talisman to
-channel mana. The talisman has
-become attuned to detonation and
-transmutation because of the way you
-have used it.
-Your ability to create, uhm, "gold" out of anything
-is always a good way to impress townsfolk.
-This is a difficult class to play.
-endmsg
-x 32
-y 6
-move_on all
-end
-arch grass
+arch dungeon_floor
 x 32
 y 7
 end
@@ -3939,15 +3634,15 @@ arch swall_1_2_half
 x 33
 y 3
 end
-arch footpath_2_1_2
+arch grass
 x 33
 y 4
 end
-arch grass
+arch dungeon_floor
 x 33
 y 5
 end
-arch grass
+arch dungeon_floor
 x 33
 y 6
 end
@@ -4055,52 +3750,19 @@ arch grass
 x 34
 y 3
 end
-arch footpath_2_1_2
+arch dungeon_floor
 x 34
 y 4
 end
-arch grass
+arch dungeon_floor
 x 34
 y 5
 end
-arch grass
+arch dungeon_floor
 x 34
 y 6
 end
-arch sign
-name Sorcerer
-msg
-Your study of magic has been
-obsessive. Your frequent practice
-has greatly enhanced your powers, and
-your intellect has been sharpened
-enormously by your quest for ever
-better ways to channel energies.
-However, you've totally neglected to
-learn to use weaponry, and you're
-soft and weak. Barbarians used to
-push you around on the street until
-you blasted one's leg off with a
-lightning bolt. You reflected later
-on the stupidity of this, because you
-could by no means have blasted his
-friends, too. Fortunately, they ran
-off.
-You resolved to learn how to
-take out a whole group of barbarians
-before losing your temper again.
-Your study of magic and magical
-devices allows you to notice when an
-object has a magical aura, and you
-can often fathom the purpose of
-magical devices.
-This is a relatively difficult class to play.
-endmsg
-x 34
-y 6
-move_on all
-end
-arch grass
+arch dungeon_floor
 x 34
 y 7
 end
@@ -4200,15 +3862,15 @@ arch swall_1_2_half
 x 35
 y 3
 end
-arch footpath_2_1_2
+arch grass
 x 35
 y 4
 end
-arch grass
+arch dungeon_floor
 x 35
 y 5
 end
-arch grass
+arch dungeon_floor
 x 35
 y 6
 end
@@ -4321,44 +3983,19 @@ arch grass
 x 36
 y 3
 end
-arch footpath_2_1_2
+arch dungeon_floor
 x 36
 y 4
 end
-arch grass
+arch dungeon_floor
 x 36
 y 5
 end
-arch grass
+arch dungeon_floor
 x 36
 y 6
 end
-arch sign
-name Summoner
-msg
-You've had more of an emphasis on
-physical training than most
-spellcasters, at the expense of less
-time spent on casting spells.
-You've never learned to use magic innately,
-but instead rely on a magic talisman
-to channel mana for you.
-Your work has leaned heavily toward the art of
-summoning creatures to help you in a
-fight, and your talisman has become
-attuned to that. That attunement,
-however, makes it harder for you to
-reject unwanted creatures.
-You've also had a reasonable education in
-religious devotion.
-You can make use of one handed weapons, if need be.
-This is a relatively difficult class to play.
-endmsg
-x 36
-y 6
-move_on all
-end
-arch grass
+arch dungeon_floor
 x 36
 y 7
 end
@@ -4454,15 +4091,15 @@ arch swall_1_2_half
 x 37
 y 3
 end
-arch footpath_1_3
+arch grass
 x 37
 y 4
 end
-arch grass
+arch dungeon_floor
 x 37
 y 5
 end
-arch grass
+arch dungeon_floor
 x 37
 y 6
 end
@@ -4545,24 +4182,15 @@ arch grass
 x 38
 y 4
 end
-arch grass
+arch dungeon_floor
 x 38
 y 5
 end
-arch grass
+arch dungeon_floor
 x 38
 y 6
 end
-arch sign
-name Keep your class
-msg
-
-endmsg
-x 38
-y 6
-move_on all
-end
-arch grass
+arch dungeon_floor
 x 38
 y 7
 end

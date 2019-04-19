@@ -10183,11 +10183,18 @@ sp 4
 x 33
 y 7
 arch barbarian_class
-name demon form
+name Demon Form
 msg
 endmsg
 face jessyb.x11
 animation jessyb
+Str 0
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Cha 0
+Int 0
 randomitems none
 anim_suffix no_class
 end
@@ -12411,11 +12418,18 @@ sp 4
 x 35
 y 7
 arch barbarian_class
-name angel form
+name Horror Form
 msg
 endmsg
-face archangel.x11
-animation archangel
+face dread.x11
+animation dread
+Str 0
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Cha 0
+Int 0
 randomitems none
 anim_suffix no_class
 end
@@ -15793,7 +15807,34 @@ y 4
 end
 arch afloor_blue_left
 x 38
+y 4
+end
+arch afloor_blue_left
+x 38
 y 5
+end
+arch player_changer
+slaying /goodies
+hp 35
+sp 4
+x 38
+y 5
+arch barbarian_class
+name Just a Man
+msg
+endmsg
+face man.151
+animation man
+Str 0
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Cha 0
+Int 0
+randomitems none
+anim_suffix no_class
+end
 end
 arch afloor_blue_left
 x 38

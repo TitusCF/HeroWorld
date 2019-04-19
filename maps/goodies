@@ -334,24 +334,6 @@ arch afloor_blue_left
 x 1
 y 21
 end
-arch rod_heavy
-name Rod
-hp 80
-maxhp 80
-x 1
-y 21
-level 8
-identified 1
-arch spell_create_lava
-name Create Acid
-name_pl create acid
-skill sorcery
-other_arch acid
-sp 1
-maxsp 2
-level 1
-end
-end
 arch afloor_blue_left
 x 1
 y 22
@@ -759,17 +741,6 @@ arch afloor_blue_left
 x 3
 y 15
 end
-arch rod_heavy
-hp 20000
-maxhp 20000
-x 3
-y 15
-level 120
-identified 1
-arch spell_destruction
-dam 32000
-end
-end
 arch afloor_blue_left
 x 3
 y 16
@@ -777,22 +748,6 @@ end
 arch afloor_blue_left
 x 3
 y 17
-end
-arch rod_heavy
-name Rod
-hp 50
-maxhp 50
-x 3
-y 17
-level 10
-identified 1
-arch spell_raise_dead
-msg
-endmsg
-sp 2
-maxsp 2
-grace 0
-end
 end
 arch afloor_blue_left
 x 3
@@ -802,21 +757,6 @@ arch afloor_blue_left
 x 3
 y 19
 end
-arch rod_heavy
-name Rod
-hp 50
-maxhp 50
-x 3
-y 19
-level 20
-identified 1
-arch spell_polymorph
-msg
-endmsg
-sp 1
-maxsp 2
-end
-end
 arch afloor_blue_left
 x 3
 y 20
@@ -824,23 +764,6 @@ end
 arch afloor_blue_left
 x 3
 y 21
-end
-arch rod_heavy
-name Rod
-hp 80
-maxhp 80
-x 3
-y 21
-level 8
-identified 1
-arch spell_create_lava
-name Create Blood Sea
-skill sorcery
-other_arch blood_sea
-sp 1
-maxsp 2
-level 1
-end
 end
 arch afloor_blue_left
 x 3
@@ -1277,16 +1200,6 @@ arch afloor_blue_left
 x 5
 y 15
 end
-arch rod_heavy
-hp 20000
-maxhp 20000
-x 5
-y 15
-level 120
-identified 1
-arch spell_word_of_penalty
-end
-end
 arch afloor_blue_left
 x 5
 y 16
@@ -1294,15 +1207,6 @@ end
 arch afloor_blue_left
 x 5
 y 17
-end
-arch rod_heavy
-name Rod
-x 5
-y 17
-level 20
-identified 1
-arch spell_reincarnation
-end
 end
 arch afloor_blue_left
 x 5
@@ -1312,22 +1216,6 @@ arch afloor_blue_left
 x 5
 y 19
 end
-arch rod_heavy
-name Rod
-hp 80
-maxhp 80
-x 5
-y 19
-level 8
-identified 1
-arch spell_create_lava
-name Create Lava
-skill sorcery
-sp 1
-maxsp 2
-level 1
-end
-end
 arch afloor_blue_left
 x 5
 y 20
@@ -1335,23 +1223,6 @@ end
 arch afloor_blue_left
 x 5
 y 21
-end
-arch rod_heavy
-name Rod
-hp 80
-maxhp 80
-x 5
-y 21
-level 8
-identified 1
-arch spell_create_lava
-name Create Sea
-skill sorcery
-other_arch sea
-sp 1
-maxsp 2
-level 1
-end
 end
 arch afloor_blue_left
 x 5
@@ -4499,22 +4370,6 @@ arch afloor_blue_left
 x 19
 y 15
 end
-arch table_3
-x 19
-y 15
-end
-arch oakdoor
-name Goodies: Portable Teleporter
-name_pl World: Portable Teleporter
-slaying /goodies
-face penta.111
-hp 1
-sp 1
-x 19
-y 15
-weight 40
-no_pick 0
-end
 arch afloor_blue_left
 x 19
 y 16
@@ -4523,22 +4378,6 @@ arch afloor_blue_left
 x 19
 y 17
 end
-arch table_3
-x 19
-y 17
-end
-arch oakdoor
-name Scorn Fountain: Portable Teleporter
-name_pl World: Portable Teleporter
-slaying /fountain
-face penta.111
-hp 7
-sp 6
-x 19
-y 17
-weight 40
-no_pick 0
-end
 arch afloor_blue_left
 x 19
 y 18
@@ -4546,22 +4385,6 @@ end
 arch afloor_blue_left
 x 19
 y 19
-end
-arch table_3
-x 19
-y 19
-end
-arch oakdoor
-name Navar: Portable Teleporter
-name_pl World: Portable Teleporter
-slaying /world/world_121_116
-face penta.111
-hp 46
-sp 46
-x 19
-y 19
-weight 40
-no_pick 0
 end
 arch afloor_blue_left
 x 19
@@ -4574,21 +4397,6 @@ end
 arch afloor_blue_left
 x 19
 y 22
-end
-arch perm_magic_portal
-name Portal to Navar
-name_pl Portal to Navar
-slaying /world/world_121_116
-face magic_portal.118
-hp 46
-sp 46
-x 19
-y 22
-speed 0.5
-speed_left -0.1
-state 7
-no_pick 0
-uuid <1.2c9ec>
 end
 arch afloor_blue_left
 x 19
@@ -4772,22 +4580,6 @@ arch afloor_blue_left
 x 20
 y 17
 end
-arch table_3
-x 20
-y 17
-end
-arch oakdoor
-name Tower of Demonology: Portable Teleporter
-name_pl World: Portable Teleporter
-slaying /world/world_102_104
-face penta.111
-hp 36
-sp 45
-x 20
-y 17
-weight 40
-no_pick 0
-end
 arch afloor_blue_left
 x 20
 y 18
@@ -4795,22 +4587,6 @@ end
 arch afloor_blue_left
 x 20
 y 19
-end
-arch table_3
-x 20
-y 19
-end
-arch oakdoor
-name Darcap: Portable Teleporter
-name_pl World: Portable Teleporter
-slaying /world/world_116_102
-face penta.111
-hp 28
-sp 37
-x 20
-y 19
-weight 40
-no_pick 0
 end
 arch afloor_blue_left
 x 20
@@ -4824,21 +4600,6 @@ arch afloor_blue_left
 x 20
 y 22
 end
-arch perm_magic_portal
-name Portal to Darcap
-name_pl Portal to Darcap
-slaying /world/world_116_102
-face magic_portal.118
-hp 28
-sp 37
-x 20
-y 22
-speed 0.5
-speed_left -0.1
-state 7
-no_pick 0
-uuid <1.2ca29>
-end
 arch afloor_blue_left
 x 20
 y 23
@@ -4850,21 +4611,6 @@ end
 arch afloor_blue_left
 x 20
 y 25
-end
-arch perm_magic_portal
-name Tower of Demonology
-name_pl Tower of Demonology
-slaying /world/world_102_104
-face magic_portal.119
-hp 36
-sp 45
-x 20
-y 25
-speed 0.5
-speed_left -0.1
-state 8
-no_pick 0
-uuid <1.2ca2f>
 end
 arch afloor_blue_left
 x 20
@@ -5025,22 +4771,6 @@ arch afloor_blue_left
 x 21
 y 17
 end
-arch table_3
-x 21
-y 17
-end
-arch oakdoor
-name Tower of Stars: Portable Teleporter
-name_pl World: Portable Teleporter
-slaying /world/world_104_117
-face penta.111
-hp 27
-sp 25
-x 21
-y 17
-weight 40
-no_pick 0
-end
 arch afloor_blue_left
 x 21
 y 18
@@ -5048,22 +4778,6 @@ end
 arch afloor_blue_left
 x 21
 y 19
-end
-arch table_3
-x 21
-y 19
-end
-arch oakdoor
-name Lake Country: Portable Teleporter
-name_pl World: Portable Teleporter
-slaying /world/world_109_126
-face penta.111
-hp 16
-sp 19
-x 21
-y 19
-weight 40
-no_pick 0
 end
 arch afloor_blue_left
 x 21
@@ -5077,20 +4791,6 @@ arch afloor_blue_left
 x 21
 y 22
 end
-arch perm_magic_portal
-name Portal to Lake Country
-name_pl Portal to Lake Country
-slaying /world/world_109_126
-face magic_portal.117
-hp 16
-x 21
-y 22
-speed 0.5
-speed_left -0.1
-state 10
-no_pick 0
-uuid <1.2ca59>
-end
 arch afloor_blue_left
 x 21
 y 23
@@ -5102,21 +4802,6 @@ end
 arch afloor_blue_left
 x 21
 y 25
-end
-arch perm_magic_portal
-name Tower of Stars
-name_pl Tower of Stars
-slaying /world/world_104_117
-face magic_portal.118
-hp 27
-sp 25
-x 21
-y 25
-speed 0.5
-speed_left -0.1
-state 9
-no_pick 0
-uuid <1.2ca5f>
 end
 arch afloor_blue_left
 x 21
@@ -5250,38 +4935,9 @@ arch afloor_blue_left
 x 22
 y 14
 end
-arch table_3
-x 22
-y 14
-end
-arch sack
-x 22
-y 14
-carrying 720180
-arch musketball
-name 5.56 NATO
-name_pl 5.56 NATO
-nrof 2000
-end
-end
 arch afloor_blue_left
 x 22
 y 15
-end
-arch table_3
-x 22
-y 15
-end
-arch musket
-name machine gun
-name_pl machine guns
-face smg.111
-sp 1000
-x 22
-y 15
-value 5500
-weight 5000
-body_arm -1
 end
 arch afloor_blue_left
 x 22
@@ -5291,22 +4947,6 @@ arch afloor_blue_left
 x 22
 y 17
 end
-arch table_3
-x 22
-y 17
-end
-arch oakdoor
-name Three Sisters: Portable Teleporter
-name_pl World: Portable Teleporter
-slaying /world/world_115_110
-face penta.111
-hp 14
-sp 14
-x 22
-y 17
-weight 40
-no_pick 0
-end
 arch afloor_blue_left
 x 22
 y 18
@@ -5314,22 +4954,6 @@ end
 arch afloor_blue_left
 x 22
 y 19
-end
-arch table_3
-x 22
-y 19
-end
-arch oakdoor
-name Raffles: Portable Teleporter
-name_pl World: Portable Teleporter
-slaying /pup_land/terminal_u1
-face penta.111
-hp 9
-sp 8
-x 22
-y 19
-weight 40
-no_pick 0
 end
 arch afloor_blue_left
 x 22
@@ -5343,21 +4967,6 @@ arch afloor_blue_left
 x 22
 y 22
 end
-arch perm_magic_portal
-name Raffles
-name_pl Raffles
-slaying /pup_land/terminal_u1
-face magic_portal.117
-hp 9
-sp 8
-x 22
-y 22
-speed 0.5
-speed_left -0.1
-state 10
-no_pick 0
-uuid <1.2ca8f>
-end
 arch afloor_blue_left
 x 22
 y 23
@@ -5369,21 +4978,6 @@ end
 arch afloor_blue_left
 x 22
 y 25
-end
-arch perm_magic_portal
-name Three Sisters
-name_pl Three Sisters
-slaying /world/world_115_110
-face magic_portal.119
-hp 14
-sp 14
-x 22
-y 25
-speed 0.5
-speed_left -0.1
-state 8
-no_pick 0
-uuid <1.2ca95>
 end
 arch afloor_blue_left
 x 22
@@ -5521,38 +5115,9 @@ arch afloor_blue_left
 x 23
 y 14
 end
-arch table_3
-x 23
-y 14
-end
-arch sack
-x 23
-y 14
-carrying 720180
-arch musketball
-name 5.56 NATO
-name_pl 5.56 NATO
-nrof 2000
-end
-end
 arch afloor_blue_left
 x 23
 y 15
-end
-arch table_3
-x 23
-y 15
-end
-arch musket
-name machine gun
-name_pl machine guns
-face smg.111
-sp 1000
-x 23
-y 15
-value 5500
-weight 5000
-body_arm -1
 end
 arch afloor_blue_left
 x 23
@@ -5562,22 +5127,6 @@ arch afloor_blue_left
 x 23
 y 17
 end
-arch table_3
-x 23
-y 17
-end
-arch oakdoor
-name Japan 1: Portable Teleporter
-name_pl World: Portable Teleporter
-slaying /world/world_126_104
-face penta.111
-hp 30
-sp 27
-x 23
-y 17
-weight 40
-no_pick 0
-end
 arch afloor_blue_left
 x 23
 y 18
@@ -5585,22 +5134,6 @@ end
 arch afloor_blue_left
 x 23
 y 19
-end
-arch table_3
-x 23
-y 19
-end
-arch oakdoor
-name Nurnberg: Portable Teleporter
-name_pl World: Portable Teleporter
-slaying /pup_land/nurnberg/city
-face penta.111
-hp 25
-sp 15
-x 23
-y 19
-weight 40
-no_pick 0
 end
 arch afloor_blue_left
 x 23
@@ -5614,21 +5147,6 @@ arch afloor_blue_left
 x 23
 y 22
 end
-arch perm_magic_portal
-name Nurnberg
-name_pl Nurnberg
-slaying /pup_land/nurnberg/city
-face magic_portal.118
-hp 25
-sp 15
-x 23
-y 22
-speed 0.5
-speed_left -0.1
-state 9
-no_pick 0
-uuid <1.2cac9>
-end
 arch afloor_blue_left
 x 23
 y 23
@@ -5640,21 +5158,6 @@ end
 arch afloor_blue_left
 x 23
 y 25
-end
-arch perm_magic_portal
-name Japan 1
-name_pl Japan 1
-slaying /world/world_126_104
-face magic_portal.116
-hp 30
-sp 27
-x 23
-y 25
-speed 0.5
-speed_left -0.1
-state 11
-no_pick 0
-uuid <1.2cacf>
 end
 arch afloor_blue_left
 x 23
@@ -5809,38 +5312,9 @@ arch afloor_blue_left
 x 24
 y 14
 end
-arch table_3
-x 24
-y 14
-end
-arch sack
-x 24
-y 14
-carrying 720180
-arch musketball
-name 5.56 NATO
-name_pl 5.56 NATO
-nrof 2000
-end
-end
 arch afloor_blue_left
 x 24
 y 15
-end
-arch table_3
-x 24
-y 15
-end
-arch musket
-name machine gun
-name_pl machine guns
-face smg.111
-sp 1000
-x 24
-y 15
-value 5500
-weight 5000
-body_arm -1
 end
 arch afloor_blue_left
 x 24
@@ -5850,22 +5324,6 @@ arch afloor_blue_left
 x 24
 y 17
 end
-arch table_3
-x 24
-y 17
-end
-arch oakdoor
-name Japan 2: Portable Teleporter
-name_pl World: Portable Teleporter
-slaying /world/world_128_101
-face penta.111
-hp 39
-sp 12
-x 24
-y 17
-weight 40
-no_pick 0
-end
 arch afloor_blue_left
 x 24
 y 18
@@ -5873,22 +5331,6 @@ end
 arch afloor_blue_left
 x 24
 y 19
-end
-arch table_3
-x 24
-y 19
-end
-arch oakdoor
-name Ancient Pupland: Portable Teleporter
-name_pl World: Portable Teleporter
-slaying /pup_land/ancient/world
-face penta.111
-hp 23
-sp 20
-x 24
-y 19
-weight 40
-no_pick 0
 end
 arch afloor_blue_left
 x 24
@@ -5902,21 +5344,6 @@ arch afloor_blue_left
 x 24
 y 22
 end
-arch perm_magic_portal
-name Ancient Pupland
-name_pl Ancient Pupland
-slaying /pup_land/ancient/world
-face magic_portal.117
-hp 23
-sp 20
-x 24
-y 22
-speed 0.5
-speed_left -0.1
-state 10
-no_pick 0
-uuid <1.2caff>
-end
 arch afloor_blue_left
 x 24
 y 23
@@ -5928,21 +5355,6 @@ end
 arch afloor_blue_left
 x 24
 y 25
-end
-arch perm_magic_portal
-name Japan 2
-name_pl Japan 2
-slaying /world/world_128_101
-face magic_portal.117
-hp 1
-sp 15
-x 24
-y 25
-speed 0.5
-speed_left -0.1
-state 10
-no_pick 0
-uuid <1.2cb05>
 end
 arch afloor_blue_left
 x 24
@@ -6074,38 +5486,9 @@ arch afloor_blue_left
 x 25
 y 14
 end
-arch table_3
-x 25
-y 14
-end
-arch sack
-x 25
-y 14
-carrying 720180
-arch musketball
-name 5.56 NATO
-name_pl 5.56 NATO
-nrof 2000
-end
-end
 arch afloor_blue_left
 x 25
 y 15
-end
-arch table_3
-x 25
-y 15
-end
-arch musket
-name machine gun
-name_pl machine guns
-face smg.111
-sp 1000
-x 25
-y 15
-value 5500
-weight 5000
-body_arm -1
 end
 arch afloor_blue_left
 x 25
@@ -6115,22 +5498,6 @@ arch afloor_blue_left
 x 25
 y 17
 end
-arch table_3
-x 25
-y 17
-end
-arch oakdoor
-name St. Bartholomew: Portable Teleporter
-name_pl World: Portable Teleporter
-slaying /mlab/mountainvalley
-face penta.111
-hp 19
-sp 60
-x 25
-y 17
-weight 40
-no_pick 0
-end
 arch afloor_blue_left
 x 25
 y 18
@@ -6138,22 +5505,6 @@ end
 arch afloor_blue_left
 x 25
 y 19
-end
-arch table_3
-x 25
-y 19
-end
-arch oakdoor
-name Whaling Outpost: Portable Teleporter
-name_pl World: Portable Teleporter
-slaying /world/world_123_123
-face penta.111
-hp 4
-sp 38
-x 25
-y 19
-weight 40
-no_pick 0
 end
 arch afloor_blue_left
 x 25
@@ -6167,21 +5518,6 @@ arch afloor_blue_left
 x 25
 y 22
 end
-arch perm_magic_portal
-name Whaling Outpost
-name_pl Whaling Outpost
-slaying /world/world_123_123
-face magic_portal.116
-hp 4
-sp 38
-x 25
-y 22
-speed 0.5
-speed_left -0.1
-state 11
-no_pick 0
-uuid <1.2cb2e>
-end
 arch afloor_blue_left
 x 25
 y 23
@@ -6194,167 +5530,55 @@ arch afloor_blue_left
 x 25
 y 25
 end
-arch perm_magic_portal
-name St. Bartholomew
-name_pl Japan 2
-slaying /mlab/mountainvalley
-face magic_portal.115
-hp 19
-sp 60
-x 25
-y 25
-speed 0.5
-speed_left -0.1
-state 12
-no_pick 0
-uuid <1.2cb05>
-end
 arch afloor_blue_left
 x 25
 y 26
 end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 25
 y 27
 end
-arch shop_ring
-exp 1000
-x 25
-y 27
-end
-arch shop_ring
-exp 1000
-x 25
-y 27
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 25
 y 28
 end
-arch shop_ring
-exp 1000
-x 25
-y 28
-end
-arch shop_ring
-exp 1000
-x 25
-y 28
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 25
 y 29
 end
-arch shop_ring
-exp 1000
-x 25
-y 29
-end
-arch shop_ring
-exp 1000
-x 25
-y 29
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 25
 y 30
 end
-arch shop_ring
-exp 1000
-x 25
-y 30
-end
-arch shop_ring
-exp 1000
-x 25
-y 30
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 25
 y 31
 end
-arch shop_ring
-exp 1000
-x 25
-y 31
-end
-arch shop_ring
-exp 1000
-x 25
-y 31
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 25
 y 32
 end
-arch shop_ring
-exp 1000
-x 25
-y 32
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 25
 y 33
 end
-arch shop_ring
-exp 1000
-x 25
-y 33
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 25
 y 34
 end
-arch shop_ring
-exp 1000
-x 25
-y 34
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 25
 y 35
 end
-arch shop_ring
-exp 1000
-x 25
-y 35
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 25
 y 36
 end
-arch shop_ring
-exp 1000
-x 25
-y 36
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 25
 y 37
 end
-arch shop_ring
-exp 1000
-x 25
-y 37
-end
-arch shop_ring
-exp 1000
-x 25
-y 38
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 25
 y 38
 end
@@ -6468,22 +5692,6 @@ arch afloor_blue_left
 x 26
 y 17
 end
-arch table_3
-x 26
-y 17
-end
-arch oakdoor
-name City de Clouds: Portable Teleporter
-name_pl World: Portable Teleporter
-slaying /mlab/citydeclouds2
-face penta.111
-hp 99
-sp 123
-x 26
-y 17
-weight 40
-no_pick 0
-end
 arch afloor_blue_left
 x 26
 y 18
@@ -6491,22 +5699,6 @@ end
 arch afloor_blue_left
 x 26
 y 19
-end
-arch table_3
-x 26
-y 19
-end
-arch oakdoor
-name City of Dis: Portable Teleporter
-name_pl World: Portable Teleporter
-slaying /mlab/mlabhellcityofdisaa
-face penta.111
-hp 39
-sp 12
-x 26
-y 19
-weight 40
-no_pick 0
 end
 arch afloor_blue_left
 x 26
@@ -6520,21 +5712,6 @@ arch afloor_blue_left
 x 26
 y 22
 end
-arch perm_magic_portal
-name City de Clouds
-name_pl Japan 2
-slaying /mlab/citydeclouds2
-face magic_portal.117
-hp 99
-sp 123
-x 26
-y 22
-speed 0.5
-speed_left -0.1
-state 10
-no_pick 0
-uuid <1.2cb05>
-end
 arch afloor_blue_left
 x 26
 y 23
@@ -6547,196 +5724,55 @@ arch afloor_blue_left
 x 26
 y 25
 end
-arch perm_magic_portal
-name City of Dis
-slaying /mlab/mlabhellcityofdisaa
-face magic_portal.117
-hp 39
-sp 12
-x 26
-y 25
-end
 arch afloor_blue_left
 x 26
 y 26
 end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 26
 y 27
 end
-arch shop_ring
-exp 1000
-x 26
-y 27
-end
-arch shop_ring
-exp 1000
-x 26
-y 27
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 26
 y 28
 end
-arch shop_ring
-exp 1000
-x 26
-y 28
-end
-arch shop_ring
-exp 1000
-x 26
-y 28
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 26
 y 29
 end
-arch shop_ring
-exp 1000
-x 26
-y 29
-end
-arch shop_ring
-exp 1000
-x 26
-y 29
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 26
 y 30
 end
-arch shop_ring
-exp 1000
-x 26
-y 30
-end
-arch shop_ring
-exp 1000
-x 26
-y 30
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 26
 y 31
 end
-arch shop_ring
-exp 1000
-x 26
-y 31
-end
-arch shop_ring
-exp 1000
-x 26
-y 31
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 26
 y 32
 end
-arch shop_ring
-exp 1000
-x 26
-y 32
-end
-arch shop_ring
-exp 1000
-x 26
-y 32
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 26
 y 33
 end
-arch shop_ring
-exp 1000
-x 26
-y 33
-end
-arch shop_ring
-exp 1000
-x 26
-y 33
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 26
 y 34
 end
-arch shop_ring
-exp 1000
-x 26
-y 34
-end
-arch shop_ring
-exp 1000
-x 26
-y 34
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 26
 y 35
 end
-arch shop_ring
-exp 1000
-x 26
-y 35
-end
-arch shop_ring
-exp 1000
-x 26
-y 35
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 26
 y 36
 end
-arch shop_ring
-exp 1000
-x 26
-y 36
-end
-arch shop_ring
-exp 1000
-x 26
-y 36
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 26
 y 37
 end
-arch shop_ring
-exp 1000
-x 26
-y 37
-end
-arch shop_ring
-exp 1000
-x 26
-y 37
-end
-arch shop_ring
-exp 1000
-x 26
-y 38
-end
-arch shop_ring
-exp 1000
-x 26
-y 38
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 26
 y 38
 end
@@ -6858,183 +5894,51 @@ arch afloor_blue_left
 x 27
 y 26
 end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 27
 y 27
 end
-arch shop_ring
-exp 1000
-x 27
-y 27
-end
-arch shop_ring
-exp 1000
-x 27
-y 27
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 27
 y 28
 end
-arch shop_ring
-exp 1000
-x 27
-y 28
-end
-arch shop_ring
-exp 1000
-x 27
-y 28
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 27
 y 29
 end
-arch shop_ring
-exp 1000
-x 27
-y 29
-end
-arch shop_ring
-exp 1000
-x 27
-y 29
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 27
 y 30
 end
-arch shop_ring
-exp 1000
-x 27
-y 30
-end
-arch shop_ring
-exp 1000
-x 27
-y 30
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 27
 y 31
 end
-arch shop_ring
-exp 1000
-x 27
-y 31
-end
-arch shop_ring
-exp 1000
-x 27
-y 31
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 27
 y 32
 end
-arch shop_ring
-exp 1000
-x 27
-y 32
-end
-arch shop_ring
-exp 1000
-x 27
-y 32
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 27
 y 33
 end
-arch shop_ring
-exp 1000
-x 27
-y 33
-end
-arch shop_ring
-exp 1000
-x 27
-y 33
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 27
 y 34
 end
-arch shop_ring
-exp 1000
-x 27
-y 34
-end
-arch shop_ring
-exp 1000
-x 27
-y 34
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 27
 y 35
 end
-arch shop_ring
-exp 1000
-x 27
-y 35
-end
-arch shop_ring
-exp 1000
-x 27
-y 35
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 27
 y 36
 end
-arch shop_ring
-exp 1000
-x 27
-y 36
-end
-arch shop_ring
-exp 1000
-x 27
-y 36
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 27
 y 37
 end
-arch shop_ring
-exp 1000
-x 27
-y 37
-end
-arch shop_ring
-exp 1000
-x 27
-y 37
-end
-arch shop_ring
-exp 1000
-x 27
-y 38
-end
-arch shop_ring
-exp 1000
-x 27
-y 38
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 27
 y 38
 end
@@ -7156,183 +6060,51 @@ arch afloor_blue_left
 x 28
 y 26
 end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 28
 y 27
 end
-arch shop_ring
-exp 1000
-x 28
-y 27
-end
-arch shop_ring
-exp 1000
-x 28
-y 27
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 28
 y 28
 end
-arch shop_ring
-exp 1000
-x 28
-y 28
-end
-arch shop_ring
-exp 1000
-x 28
-y 28
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 28
 y 29
 end
-arch shop_ring
-exp 1000
-x 28
-y 29
-end
-arch shop_ring
-exp 1000
-x 28
-y 29
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 28
 y 30
 end
-arch shop_ring
-exp 1000
-x 28
-y 30
-end
-arch shop_ring
-exp 1000
-x 28
-y 30
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 28
 y 31
 end
-arch shop_ring
-exp 1000
-x 28
-y 31
-end
-arch shop_ring
-exp 1000
-x 28
-y 31
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 28
 y 32
 end
-arch shop_ring
-exp 1000
-x 28
-y 32
-end
-arch shop_ring
-exp 1000
-x 28
-y 32
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 28
 y 33
 end
-arch shop_ring
-exp 1000
-x 28
-y 33
-end
-arch shop_ring
-exp 1000
-x 28
-y 33
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 28
 y 34
 end
-arch shop_ring
-exp 1000
-x 28
-y 34
-end
-arch shop_ring
-exp 1000
-x 28
-y 34
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 28
 y 35
 end
-arch shop_ring
-exp 1000
-x 28
-y 35
-end
-arch shop_ring
-exp 1000
-x 28
-y 35
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 28
 y 36
 end
-arch shop_ring
-exp 1000
-x 28
-y 36
-end
-arch shop_ring
-exp 1000
-x 28
-y 36
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 28
 y 37
 end
-arch shop_ring
-exp 1000
-x 28
-y 37
-end
-arch shop_ring
-exp 1000
-x 28
-y 37
-end
-arch shop_ring
-exp 1000
-x 28
-y 38
-end
-arch shop_ring
-exp 1000
-x 28
-y 38
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 28
 y 38
 end
@@ -7454,183 +6226,99 @@ arch afloor_blue_left
 x 29
 y 26
 end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 29
 y 27
 end
-arch shop_ring
-exp 1000
-x 29
-y 27
-end
-arch shop_ring
-exp 1000
-x 29
-y 27
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 29
 y 28
 end
-arch shop_ring
-exp 1000
-x 29
-y 28
-end
-arch shop_ring
-exp 1000
-x 29
-y 28
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 29
 y 29
 end
-arch shop_ring
-exp 1000
-x 29
-y 29
-end
-arch shop_ring
-exp 1000
-x 29
-y 29
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 29
 y 30
 end
-arch shop_ring
-exp 1000
-x 29
-y 30
-end
-arch shop_ring
-exp 1000
-x 29
-y 30
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 29
 y 31
 end
-arch shop_ring
-exp 1000
-x 29
-y 31
-end
-arch shop_ring
-exp 1000
-x 29
-y 31
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 29
 y 32
 end
-arch shop_ring
-exp 1000
-x 29
-y 32
-end
-arch shop_ring
-exp 1000
-x 29
-y 32
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 29
 y 33
 end
-arch shop_ring
-exp 1000
+arch table_3
 x 29
 y 33
 end
-arch shop_ring
-exp 1000
+arch oakdoor
+name Goodies: Portable Teleporter
+name_pl World: Portable Teleporter
+slaying /goodies
+face penta.111
+hp 1
+sp 1
 x 29
 y 33
+weight 21
+no_pick 16
 end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 29
 y 34
 end
-arch shop_ring
-exp 1000
-x 29
-y 34
-end
-arch shop_ring
-exp 1000
-x 29
-y 34
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 29
 y 35
 end
-arch shop_ring
-exp 1000
+arch table_3
 x 29
 y 35
 end
-arch shop_ring
-exp 1000
+arch oakdoor
+name Scorn Fountain: Portable Teleporter
+name_pl World: Portable Teleporter
+slaying /fountain
+face penta.111
+hp 7
+sp 6
 x 29
 y 35
+weight 40
+no_pick 0
 end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 29
 y 36
 end
-arch shop_ring
-exp 1000
-x 29
-y 36
-end
-arch shop_ring
-exp 1000
-x 29
-y 36
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 29
 y 37
 end
-arch shop_ring
-exp 1000
+arch table_3
 x 29
 y 37
 end
-arch shop_ring
-exp 1000
+arch oakdoor
+name Navar: Portable Teleporter
+name_pl World: Portable Teleporter
+slaying /world/world_121_116
+face penta.111
+hp 46
+sp 46
 x 29
 y 37
+weight 40
+no_pick 0
 end
-arch shop_ring
-exp 1000
-x 29
-y 38
-end
-arch shop_ring
-exp 1000
-x 29
-y 38
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 29
 y 38
 end
@@ -7752,183 +6440,83 @@ arch afloor_blue_left
 x 30
 y 26
 end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 30
 y 27
 end
-arch shop_ring
-exp 1000
-x 30
-y 27
-end
-arch shop_ring
-exp 1000
-x 30
-y 27
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 30
 y 28
 end
-arch shop_ring
-exp 1000
-x 30
-y 28
-end
-arch shop_ring
-exp 1000
-x 30
-y 28
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 30
 y 29
 end
-arch shop_ring
-exp 1000
-x 30
-y 29
-end
-arch shop_ring
-exp 1000
-x 30
-y 29
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 30
 y 30
 end
-arch shop_ring
-exp 1000
-x 30
-y 30
-end
-arch shop_ring
-exp 1000
-x 30
-y 30
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 30
 y 31
 end
-arch shop_ring
-exp 1000
-x 30
-y 31
-end
-arch shop_ring
-exp 1000
-x 30
-y 31
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 30
 y 32
 end
-arch shop_ring
-exp 1000
-x 30
-y 32
-end
-arch shop_ring
-exp 1000
-x 30
-y 32
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 30
 y 33
 end
-arch shop_ring
-exp 1000
-x 30
-y 33
-end
-arch shop_ring
-exp 1000
-x 30
-y 33
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 30
 y 34
 end
-arch shop_ring
-exp 1000
-x 30
-y 34
-end
-arch shop_ring
-exp 1000
-x 30
-y 34
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 30
 y 35
 end
-arch shop_ring
-exp 1000
+arch table_3
 x 30
 y 35
 end
-arch shop_ring
-exp 1000
+arch oakdoor
+name Tower of Demonology: Portable Teleporter
+name_pl World: Portable Teleporter
+slaying /world/world_102_104
+face penta.111
+hp 36
+sp 45
 x 30
 y 35
+weight 40
+no_pick 0
 end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 30
 y 36
 end
-arch shop_ring
-exp 1000
-x 30
-y 36
-end
-arch shop_ring
-exp 1000
-x 30
-y 36
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 30
 y 37
 end
-arch shop_ring
-exp 1000
+arch table_3
 x 30
 y 37
 end
-arch shop_ring
-exp 1000
+arch oakdoor
+name Darcap: Portable Teleporter
+name_pl World: Portable Teleporter
+slaying /world/world_116_102
+face penta.111
+hp 28
+sp 37
 x 30
 y 37
+weight 40
+no_pick 0
 end
-arch shop_ring
-exp 1000
-x 30
-y 38
-end
-arch shop_ring
-exp 1000
-x 30
-y 38
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 30
 y 38
 end
@@ -8846,191 +7434,91 @@ arch afloor_blue_left
 x 31
 y 24
 end
-arch shop_empty
+arch afloor_blue_left
 x 31
 y 25
 end
-arch shop_gems
+arch afloor_blue_left
 x 31
 y 26
 end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 31
 y 27
 end
-arch shop_ring
-exp 1000
-x 31
-y 27
-end
-arch shop_ring
-exp 1000
-x 31
-y 27
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 31
 y 28
 end
-arch shop_ring
-exp 1000
-x 31
-y 28
-end
-arch shop_ring
-exp 1000
-x 31
-y 28
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 31
 y 29
 end
-arch shop_ring
-exp 1000
-x 31
-y 29
-end
-arch shop_ring
-exp 1000
-x 31
-y 29
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 31
 y 30
 end
-arch shop_ring
-exp 1000
-x 31
-y 30
-end
-arch shop_ring
-exp 1000
-x 31
-y 30
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 31
 y 31
 end
-arch shop_ring
-exp 1000
-x 31
-y 31
-end
-arch shop_ring
-exp 1000
-x 31
-y 31
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 31
 y 32
 end
-arch shop_ring
-exp 1000
-x 31
-y 32
-end
-arch shop_ring
-exp 1000
-x 31
-y 32
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 31
 y 33
 end
-arch shop_ring
-exp 1000
-x 31
-y 33
-end
-arch shop_ring
-exp 1000
-x 31
-y 33
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 31
 y 34
 end
-arch shop_ring
-exp 1000
-x 31
-y 34
-end
-arch shop_ring
-exp 1000
-x 31
-y 34
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 31
 y 35
 end
-arch shop_ring
-exp 1000
+arch table_3
 x 31
 y 35
 end
-arch shop_ring
-exp 1000
+arch oakdoor
+name Tower of Stars: Portable Teleporter
+name_pl World: Portable Teleporter
+slaying /world/world_104_117
+face penta.111
+hp 27
+sp 25
 x 31
 y 35
+weight 40
+no_pick 0
 end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 31
 y 36
 end
-arch shop_ring
-exp 1000
-x 31
-y 36
-end
-arch shop_ring
-exp 1000
-x 31
-y 36
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 31
 y 37
 end
-arch shop_ring
-exp 1000
+arch table_3
 x 31
 y 37
 end
-arch shop_ring
-exp 1000
+arch oakdoor
+name Lake Country: Portable Teleporter
+name_pl World: Portable Teleporter
+slaying /world/world_109_126
+face penta.111
+hp 16
+sp 19
 x 31
 y 37
+weight 40
+no_pick 0
 end
-arch shop_ring
-exp 1000
-x 31
-y 38
-end
-arch shop_ring
-exp 1000
-x 31
-y 38
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 31
 y 38
 end
@@ -9939,191 +8427,120 @@ arch afloor_blue_left
 x 32
 y 24
 end
-arch shop_empty
+arch afloor_blue_left
 x 32
 y 25
 end
-arch shop_gems
+arch afloor_blue_left
 x 32
 y 26
 end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 32
 y 27
 end
-arch shop_ring
-exp 1000
-x 32
-y 27
-end
-arch shop_ring
-exp 1000
-x 32
-y 27
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 32
 y 28
 end
-arch shop_ring
-exp 1000
-x 32
-y 28
-end
-arch shop_ring
-exp 1000
-x 32
-y 28
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 32
 y 29
 end
-arch shop_ring
-exp 1000
-x 32
-y 29
-end
-arch shop_ring
-exp 1000
-x 32
-y 29
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 32
 y 30
 end
-arch shop_ring
-exp 1000
-x 32
-y 30
-end
-arch shop_ring
-exp 1000
-x 32
-y 30
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 32
 y 31
 end
-arch shop_ring
-exp 1000
-x 32
-y 31
-end
-arch shop_ring
-exp 1000
-x 32
-y 31
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 32
 y 32
 end
-arch shop_ring
-exp 1000
+arch table_3
 x 32
 y 32
 end
-arch shop_ring
-exp 1000
+arch sack
 x 32
 y 32
+carrying 720180
+arch musketball
+name 5.56 NATO
+name_pl 5.56 NATO
+nrof 2000
 end
-arch shop_ring
-exp 1000
+end
+arch afloor_blue_left
 x 32
 y 33
 end
-arch shop_ring
-exp 1000
+arch table_3
 x 32
 y 33
 end
-arch shop_ring
-exp 1000
+arch musket
+name machine gun
+name_pl machine guns
+face smg.111
+sp 1000
 x 32
 y 33
+value 5500
+weight 5000
+body_arm -1
 end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 32
 y 34
 end
-arch shop_ring
-exp 1000
-x 32
-y 34
-end
-arch shop_ring
-exp 1000
-x 32
-y 34
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 32
 y 35
 end
-arch shop_ring
-exp 1000
+arch table_3
 x 32
 y 35
 end
-arch shop_ring
-exp 1000
+arch oakdoor
+name Three Sisters: Portable Teleporter
+name_pl World: Portable Teleporter
+slaying /world/world_115_110
+face penta.111
+hp 14
+sp 14
 x 32
 y 35
+weight 40
+no_pick 0
 end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 32
 y 36
 end
-arch shop_ring
-exp 1000
-x 32
-y 36
-end
-arch shop_ring
-exp 1000
-x 32
-y 36
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 32
 y 37
 end
-arch shop_ring
-exp 1000
+arch table_3
 x 32
 y 37
 end
-arch shop_ring
-exp 1000
+arch oakdoor
+name Raffles: Portable Teleporter
+name_pl World: Portable Teleporter
+slaying /pup_land/terminal_u1
+face penta.111
+hp 9
+sp 8
 x 32
 y 37
+weight 40
+no_pick 0
 end
-arch shop_ring
-exp 1000
-x 32
-y 38
-end
-arch shop_ring
-exp 1000
-x 32
-y 38
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 32
 y 38
 end
@@ -11055,191 +9472,120 @@ arch afloor_blue_left
 x 33
 y 24
 end
-arch shop_gems
+arch afloor_blue_left
 x 33
 y 25
 end
-arch shop_gems
+arch afloor_blue_left
 x 33
 y 26
 end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 33
 y 27
 end
-arch shop_ring
-exp 1000
-x 33
-y 27
-end
-arch shop_ring
-exp 1000
-x 33
-y 27
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 33
 y 28
 end
-arch shop_ring
-exp 1000
-x 33
-y 28
-end
-arch shop_ring
-exp 1000
-x 33
-y 28
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 33
 y 29
 end
-arch shop_ring
-exp 1000
-x 33
-y 29
-end
-arch shop_ring
-exp 1000
-x 33
-y 29
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 33
 y 30
 end
-arch shop_ring
-exp 1000
-x 33
-y 30
-end
-arch shop_ring
-exp 1000
-x 33
-y 30
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 33
 y 31
 end
-arch shop_ring
-exp 1000
-x 33
-y 31
-end
-arch shop_ring
-exp 1000
-x 33
-y 31
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 33
 y 32
 end
-arch shop_ring
-exp 1000
+arch table_3
 x 33
 y 32
 end
-arch shop_ring
-exp 1000
+arch sack
 x 33
 y 32
+carrying 720180
+arch musketball
+name 5.56 NATO
+name_pl 5.56 NATO
+nrof 2000
 end
-arch shop_ring
-exp 1000
+end
+arch afloor_blue_left
 x 33
 y 33
 end
-arch shop_ring
-exp 1000
+arch table_3
 x 33
 y 33
 end
-arch shop_ring
-exp 1000
+arch musket
+name machine gun
+name_pl machine guns
+face smg.111
+sp 1000
 x 33
 y 33
+value 5500
+weight 5000
+body_arm -1
 end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 33
 y 34
 end
-arch shop_ring
-exp 1000
-x 33
-y 34
-end
-arch shop_ring
-exp 1000
-x 33
-y 34
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 33
 y 35
 end
-arch shop_ring
-exp 1000
+arch table_3
 x 33
 y 35
 end
-arch shop_ring
-exp 1000
+arch oakdoor
+name Japan 1: Portable Teleporter
+name_pl World: Portable Teleporter
+slaying /world/world_126_104
+face penta.111
+hp 30
+sp 27
 x 33
 y 35
+weight 40
+no_pick 0
 end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 33
 y 36
 end
-arch shop_ring
-exp 1000
-x 33
-y 36
-end
-arch shop_ring
-exp 1000
-x 33
-y 36
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 33
 y 37
 end
-arch shop_ring
-exp 1000
+arch table_3
 x 33
 y 37
 end
-arch shop_ring
-exp 1000
+arch oakdoor
+name Nurnberg: Portable Teleporter
+name_pl World: Portable Teleporter
+slaying /pup_land/nurnberg/city
+face penta.111
+hp 25
+sp 15
 x 33
 y 37
+weight 40
+no_pick 0
 end
-arch shop_ring
-exp 1000
-x 33
-y 38
-end
-arch shop_ring
-exp 1000
-x 33
-y 38
-end
-arch shop_ring
-exp 1000
+arch afloor_blue_left
 x 33
 y 38
 end
@@ -12148,213 +10494,138 @@ arch afloor_blue_left
 x 34
 y 24
 end
-arch shop_amulets
-exp 1000
+arch afloor_blue_left
 x 34
 y 25
 end
-arch shop_amulets
-exp 1000
-x 34
-y 25
-end
-arch shop_amulets
-exp 1000
-x 34
-y 25
-end
-arch shop_amulets
-exp 1000
+arch afloor_blue_left
 x 34
 y 26
 end
-arch shop_amulets
-exp 1000
-x 34
-y 26
-end
-arch shop_amulets
-exp 1000
-x 34
-y 26
-end
-arch shop_amulets
-exp 1000
+arch afloor_blue_left
 x 34
 y 27
 end
-arch shop_amulets
-exp 1000
-x 34
-y 27
-end
-arch shop_amulets
-exp 1000
-x 34
-y 27
-end
-arch shop_amulets
-exp 1000
+arch afloor_blue_left
 x 34
 y 28
 end
-arch shop_amulets
-exp 1000
-x 34
-y 28
-end
-arch shop_amulets
-exp 1000
-x 34
-y 28
-end
-arch shop_amulets
-exp 1000
+arch afloor_blue_left
 x 34
 y 29
 end
-arch shop_amulets
-exp 1000
+arch rod_heavy
+name Rod
+hp 80
+maxhp 80
 x 34
 y 29
+level 8
+identified 1
+arch spell_create_lava
+name Create Acid
+name_pl create acid
+skill sorcery
+other_arch acid
+sp 1
+maxsp 2
+level 1
 end
-arch shop_amulets
-exp 1000
-x 34
-y 29
 end
-arch shop_amulets
-exp 1000
-x 34
-y 30
-end
-arch shop_amulets
-exp 1000
-x 34
-y 30
-end
-arch shop_amulets
-exp 1000
+arch afloor_blue_left
 x 34
 y 30
 end
-arch shop_amulets
-exp 1000
+arch afloor_blue_left
 x 34
 y 31
 end
-arch shop_amulets
-exp 1000
-x 34
-y 31
-end
-arch shop_amulets
-exp 1000
-x 34
-y 31
-end
-arch shop_amulets
-exp 1000
+arch afloor_blue_left
 x 34
 y 32
 end
-arch shop_amulets
-exp 1000
+arch table_3
 x 34
 y 32
 end
-arch shop_amulets
-exp 1000
+arch sack
 x 34
 y 32
+carrying 720180
+arch musketball
+name 5.56 NATO
+name_pl 5.56 NATO
+nrof 2000
 end
-arch shop_amulets
-exp 1000
+end
+arch afloor_blue_left
 x 34
 y 33
 end
-arch shop_amulets
-exp 1000
+arch table_3
 x 34
 y 33
 end
-arch shop_amulets
-exp 1000
+arch musket
+name machine gun
+name_pl machine guns
+face smg.111
+sp 1000
 x 34
 y 33
+value 5500
+weight 5000
+body_arm -1
 end
-arch shop_amulets
-exp 1000
+arch afloor_blue_left
 x 34
 y 34
 end
-arch shop_amulets
-exp 1000
-x 34
-y 34
-end
-arch shop_amulets
-exp 1000
-x 34
-y 34
-end
-arch shop_amulets
-exp 1000
+arch afloor_blue_left
 x 34
 y 35
 end
-arch shop_amulets
-exp 1000
+arch table_3
 x 34
 y 35
 end
-arch shop_amulets
-exp 1000
+arch oakdoor
+name Japan 2: Portable Teleporter
+name_pl World: Portable Teleporter
+slaying /world/world_128_101
+face penta.111
+hp 39
+sp 12
 x 34
 y 35
+weight 40
+no_pick 0
 end
-arch shop_amulets
-exp 1000
+arch afloor_blue_left
 x 34
 y 36
 end
-arch shop_amulets
-exp 1000
-x 34
-y 36
-end
-arch shop_amulets
-exp 1000
-x 34
-y 36
-end
-arch shop_amulets
-exp 1000
+arch afloor_blue_left
 x 34
 y 37
 end
-arch shop_amulets
-exp 1000
+arch table_3
 x 34
 y 37
 end
-arch shop_amulets
-exp 1000
+arch oakdoor
+name Ancient Pupland: Portable Teleporter
+name_pl World: Portable Teleporter
+slaying /pup_land/ancient/world
+face penta.111
+hp 23
+sp 20
 x 34
 y 37
+weight 40
+no_pick 0
 end
-arch shop_amulets
-exp 1000
-x 34
-y 38
-end
-arch shop_amulets
-exp 1000
-x 34
-y 38
-end
-arch shop_amulets
-exp 1000
+arch afloor_blue_left
 x 34
 y 38
 end
@@ -13291,213 +11562,120 @@ arch afloor_blue_left
 x 35
 y 24
 end
-arch shop_amulets
-exp 1000
+arch afloor_blue_left
 x 35
 y 25
 end
-arch shop_amulets
-exp 1000
-x 35
-y 25
-end
-arch shop_amulets
-exp 1000
-x 35
-y 25
-end
-arch shop_amulets
-exp 1000
+arch afloor_blue_left
 x 35
 y 26
 end
-arch shop_amulets
-exp 1000
-x 35
-y 26
-end
-arch shop_amulets
-exp 1000
-x 35
-y 26
-end
-arch shop_amulets
-exp 1000
+arch afloor_blue_left
 x 35
 y 27
 end
-arch shop_amulets
-exp 1000
-x 35
-y 27
-end
-arch shop_amulets
-exp 1000
-x 35
-y 27
-end
-arch shop_amulets
-exp 1000
+arch afloor_blue_left
 x 35
 y 28
 end
-arch shop_amulets
-exp 1000
-x 35
-y 28
-end
-arch shop_amulets
-exp 1000
-x 35
-y 28
-end
-arch shop_amulets
-exp 1000
+arch afloor_blue_left
 x 35
 y 29
 end
-arch shop_amulets
-exp 1000
-x 35
-y 29
-end
-arch shop_amulets
-exp 1000
-x 35
-y 29
-end
-arch shop_amulets
-exp 1000
+arch afloor_blue_left
 x 35
 y 30
 end
-arch shop_amulets
-exp 1000
-x 35
-y 30
-end
-arch shop_amulets
-exp 1000
-x 35
-y 30
-end
-arch shop_amulets
-exp 1000
+arch afloor_blue_left
 x 35
 y 31
 end
-arch shop_amulets
-exp 1000
-x 35
-y 31
-end
-arch shop_amulets
-exp 1000
-x 35
-y 31
-end
-arch shop_amulets
-exp 1000
+arch afloor_blue_left
 x 35
 y 32
 end
-arch shop_amulets
-exp 1000
+arch table_3
 x 35
 y 32
 end
-arch shop_amulets
-exp 1000
+arch sack
 x 35
 y 32
+carrying 720180
+arch musketball
+name 5.56 NATO
+name_pl 5.56 NATO
+nrof 2000
 end
-arch shop_amulets
-exp 1000
+end
+arch afloor_blue_left
 x 35
 y 33
 end
-arch shop_amulets
-exp 1000
+arch table_3
 x 35
 y 33
 end
-arch shop_amulets
-exp 1000
+arch musket
+name machine gun
+name_pl machine guns
+face smg.111
+sp 1000
 x 35
 y 33
+value 5500
+weight 5000
+body_arm -1
 end
-arch shop_amulets
-exp 1000
+arch afloor_blue_left
 x 35
 y 34
 end
-arch shop_amulets
-exp 1000
-x 35
-y 34
-end
-arch shop_amulets
-exp 1000
-x 35
-y 34
-end
-arch shop_amulets
-exp 1000
+arch afloor_blue_left
 x 35
 y 35
 end
-arch shop_amulets
-exp 1000
+arch table_3
 x 35
 y 35
 end
-arch shop_amulets
-exp 1000
+arch oakdoor
+name St. Bartholomew: Portable Teleporter
+name_pl World: Portable Teleporter
+slaying /mlab/mountainvalley
+face penta.111
+hp 19
+sp 60
 x 35
 y 35
+weight 40
+no_pick 0
 end
-arch shop_amulets
-exp 1000
+arch afloor_blue_left
 x 35
 y 36
 end
-arch shop_amulets
-exp 1000
-x 35
-y 36
-end
-arch shop_amulets
-exp 1000
-x 35
-y 36
-end
-arch shop_amulets
-exp 1000
+arch afloor_blue_left
 x 35
 y 37
 end
-arch shop_amulets
-exp 1000
+arch table_3
 x 35
 y 37
 end
-arch shop_amulets
-exp 1000
+arch oakdoor
+name Whaling Outpost: Portable Teleporter
+name_pl World: Portable Teleporter
+slaying /world/world_123_123
+face penta.111
+hp 4
+sp 38
 x 35
 y 37
+weight 40
+no_pick 0
 end
-arch shop_amulets
-exp 1000
-x 35
-y 38
-end
-arch shop_amulets
-exp 1000
-x 35
-y 38
-end
-arch shop_amulets
-exp 1000
+arch afloor_blue_left
 x 35
 y 38
 end
@@ -14402,217 +12580,154 @@ arch afloor_blue_left
 x 36
 y 23
 end
+arch rod_heavy
+hp 20000
+maxhp 20000
+x 36
+y 23
+level 120
+identified 1
+arch spell_destruction
+dam 32000
+end
+end
 arch afloor_blue_left
 x 36
 y 24
 end
-arch shop_amulets
-exp 1000
+arch afloor_blue_left
 x 36
 y 25
 end
-arch shop_amulets
-exp 1000
+arch rod_heavy
+name Rod
+hp 50
+maxhp 50
 x 36
 y 25
+level 10
+identified 1
+arch spell_raise_dead
+msg
+endmsg
+sp 2
+maxsp 2
+grace 0
 end
-arch shop_amulets
-exp 1000
-x 36
-y 25
 end
-arch shop_amulets
-exp 1000
-x 36
-y 26
-end
-arch shop_amulets
-exp 1000
+arch afloor_blue_left
 x 36
 y 26
 end
-arch shop_amulets
-exp 1000
-x 36
-y 26
-end
-arch shop_amulets
-exp 1000
+arch afloor_blue_left
 x 36
 y 27
 end
-arch shop_amulets
-exp 1000
+arch rod_heavy
+name Rod
+hp 50
+maxhp 50
 x 36
 y 27
+level 20
+identified 1
+arch spell_polymorph
+msg
+endmsg
+sp 1
+maxsp 2
 end
-arch shop_amulets
-exp 1000
-x 36
-y 27
 end
-arch shop_amulets
-exp 1000
-x 36
-y 28
-end
-arch shop_amulets
-exp 1000
+arch afloor_blue_left
 x 36
 y 28
 end
-arch shop_amulets
-exp 1000
-x 36
-y 28
-end
-arch shop_amulets
-exp 1000
+arch afloor_blue_left
 x 36
 y 29
 end
-arch shop_amulets
-exp 1000
+arch rod_heavy
+name Rod
+hp 80
+maxhp 80
 x 36
 y 29
+level 8
+identified 1
+arch spell_create_lava
+name Create Blood Sea
+skill sorcery
+other_arch blood_sea
+sp 1
+maxsp 2
+level 1
 end
-arch shop_amulets
-exp 1000
-x 36
-y 29
 end
-arch shop_amulets
-exp 1000
-x 36
-y 30
-end
-arch shop_amulets
-exp 1000
-x 36
-y 30
-end
-arch shop_amulets
-exp 1000
+arch afloor_blue_left
 x 36
 y 30
 end
-arch shop_amulets
-exp 1000
+arch afloor_blue_left
 x 36
 y 31
 end
-arch shop_amulets
-exp 1000
-x 36
-y 31
-end
-arch shop_amulets
-exp 1000
-x 36
-y 31
-end
-arch shop_amulets
-exp 1000
+arch afloor_blue_left
 x 36
 y 32
 end
-arch shop_amulets
-exp 1000
-x 36
-y 32
-end
-arch shop_amulets
-exp 1000
-x 36
-y 32
-end
-arch shop_amulets
-exp 1000
+arch afloor_blue_left
 x 36
 y 33
 end
-arch shop_amulets
-exp 1000
-x 36
-y 33
-end
-arch shop_amulets
-exp 1000
-x 36
-y 33
-end
-arch shop_amulets
-exp 1000
+arch afloor_blue_left
 x 36
 y 34
 end
-arch shop_amulets
-exp 1000
-x 36
-y 34
-end
-arch shop_amulets
-exp 1000
-x 36
-y 34
-end
-arch shop_amulets
-exp 1000
+arch afloor_blue_left
 x 36
 y 35
 end
-arch shop_amulets
-exp 1000
+arch table_3
 x 36
 y 35
 end
-arch shop_amulets
-exp 1000
+arch oakdoor
+name City de Clouds: Portable Teleporter
+name_pl World: Portable Teleporter
+slaying /mlab/citydeclouds2
+face penta.111
+hp 99
+sp 123
 x 36
 y 35
+weight 40
+no_pick 0
 end
-arch shop_amulets
-exp 1000
+arch afloor_blue_left
 x 36
 y 36
 end
-arch shop_amulets
-exp 1000
-x 36
-y 36
-end
-arch shop_amulets
-exp 1000
-x 36
-y 36
-end
-arch shop_amulets
-exp 1000
+arch afloor_blue_left
 x 36
 y 37
 end
-arch shop_amulets
-exp 1000
+arch table_3
 x 36
 y 37
 end
-arch shop_amulets
-exp 1000
+arch oakdoor
+name City of Dis: Portable Teleporter
+name_pl World: Portable Teleporter
+slaying /mlab/mlabhellcityofdisaa
+face penta.111
+hp 39
+sp 12
 x 36
 y 37
+weight 40
+no_pick 0
 end
-arch shop_amulets
-exp 1000
-x 36
-y 38
-end
-arch shop_amulets
-exp 1000
-x 36
-y 38
-end
-arch shop_amulets
-exp 1000
+arch afloor_blue_left
 x 36
 y 38
 end
@@ -15544,228 +13659,59 @@ arch afloor_blue_left
 x 37
 y 24
 end
-arch shop_armour
-exp 1000
+arch afloor_blue_left
 x 37
 y 25
 end
-arch shop_armour
-exp 1000
-x 37
-y 25
-end
-arch shop_armour
-exp 1000
-x 37
-y 25
-end
-arch shop_armour
-exp 1000
+arch afloor_blue_left
 x 37
 y 26
 end
-arch shop_armour
-exp 1000
-x 37
-y 26
-end
-arch shop_armour
-exp 1000
-x 37
-y 26
-end
-arch shop_armour
-exp 1000
+arch afloor_blue_left
 x 37
 y 27
 end
-arch shop_armour
-exp 1000
-x 37
-y 27
-end
-arch shop_armour
-exp 1000
-x 37
-y 27
-end
-arch shop_armour
-exp 1000
+arch afloor_blue_left
 x 37
 y 28
 end
-arch shop_armour
-exp 1000
-x 37
-y 28
-end
-arch shop_armour
-exp 1000
-x 37
-y 28
-end
-arch shop_armour
-exp 1000
+arch afloor_blue_left
 x 37
 y 29
 end
-arch shop_armour
-exp 1000
-x 37
-y 29
-end
-arch shop_armour
-exp 1000
-x 37
-y 29
-end
-arch shop_armour
-exp 1000
+arch afloor_blue_left
 x 37
 y 30
 end
-arch shop_armour
-exp 1000
-x 37
-y 30
-end
-arch shop_armour
-exp 1000
-x 37
-y 30
-end
-arch shop_armour
-exp 1000
+arch afloor_blue_left
 x 37
 y 31
 end
-arch shop_armour
-exp 1000
-x 37
-y 31
-end
-arch shop_armour
-exp 1000
-x 37
-y 31
-end
-arch shop_armour
-exp 1000
+arch afloor_blue_left
 x 37
 y 32
 end
-arch shop_armour
-exp 1000
-x 37
-y 32
-end
-arch shop_armour
-exp 1000
-x 37
-y 32
-end
-arch shop_armour
-exp 1000
+arch afloor_blue_left
 x 37
 y 33
 end
-arch shop_armour
-exp 1000
-x 37
-y 33
-end
-arch shop_armour
-exp 1000
-x 37
-y 33
-end
-arch shop_armour
-exp 1000
+arch afloor_blue_left
 x 37
 y 34
 end
-arch shop_armour
-exp 1000
-x 37
-y 34
-end
-arch shop_armour
-exp 1000
-x 37
-y 34
-end
-arch shop_armour
-exp 1000
+arch afloor_blue_left
 x 37
 y 35
 end
-arch shop_armour
-exp 1000
-x 37
-y 35
-end
-arch shop_armour
-exp 1000
-x 37
-y 35
-end
-arch shop_armour
-exp 1000
+arch afloor_blue_left
 x 37
 y 36
 end
-arch shop_armour
-exp 1000
-x 37
-y 36
-end
-arch shop_armour
-exp 1000
-x 37
-y 36
-end
-arch shop_armour
-exp 1000
-x 37
-y 36
-end
-arch shop_armour
-exp 1000
-x 37
-y 36
-end
-arch shop_armour
-exp 1000
-x 37
-y 36
-end
-arch shop_armour
-exp 1000
+arch afloor_blue_left
 x 37
 y 37
 end
-arch shop_armour
-exp 1000
-x 37
-y 37
-end
-arch shop_armour
-exp 1000
-x 37
-y 37
-end
-arch shop_armour
-exp 1000
-x 37
-y 38
-end
-arch shop_armour
-exp 1000
-x 37
-y 38
-end
-arch shop_armour
-exp 1000
+arch afloor_blue_left
 x 37
 y 38
 end
@@ -15824,10 +13770,6 @@ Int 0
 randomitems none
 anim_suffix no_class
 end
-end
-arch afloor_blue_left
-x 38
-y 4
 end
 arch afloor_blue_left
 x 38
@@ -16720,217 +14662,115 @@ arch afloor_blue_left
 x 38
 y 23
 end
+arch rod_heavy
+hp 20000
+maxhp 20000
+x 38
+y 23
+level 120
+identified 1
+arch spell_word_of_penalty
+end
+end
 arch afloor_blue_left
 x 38
 y 24
 end
-arch shop_weapon
-exp 1000
+arch afloor_blue_left
 x 38
 y 25
 end
-arch shop_weapon
-exp 1000
+arch rod_heavy
+name Rod
 x 38
 y 25
+level 20
+identified 1
+arch spell_reincarnation
 end
-arch shop_weapon
-exp 1000
-x 38
-y 25
 end
-arch shop_weapon
-exp 1000
+arch afloor_blue_left
 x 38
 y 26
 end
-arch shop_weapon
-exp 1000
-x 38
-y 26
-end
-arch shop_weapon
-exp 1000
-x 38
-y 26
-end
-arch shop_weapon
-exp 1000
+arch afloor_blue_left
 x 38
 y 27
 end
-arch shop_weapon
-exp 1000
+arch rod_heavy
+name Rod
+hp 80
+maxhp 80
 x 38
 y 27
+level 8
+identified 1
+arch spell_create_lava
+name Create Lava
+skill sorcery
+sp 1
+maxsp 2
+level 1
 end
-arch shop_weapon
-exp 1000
-x 38
-y 27
 end
-arch shop_weapon
-exp 1000
-x 38
-y 28
-end
-arch shop_weapon
-exp 1000
+arch afloor_blue_left
 x 38
 y 28
 end
-arch shop_weapon
-exp 1000
-x 38
-y 28
-end
-arch shop_weapon
-exp 1000
+arch afloor_blue_left
 x 38
 y 29
 end
-arch shop_weapon
-exp 1000
+arch rod_heavy
+name Rod
+hp 80
+maxhp 80
 x 38
 y 29
+level 8
+identified 1
+arch spell_create_lava
+name Create Sea
+skill sorcery
+other_arch sea
+sp 1
+maxsp 2
+level 1
 end
-arch shop_weapon
-exp 1000
-x 38
-y 29
 end
-arch shop_weapon
-exp 1000
-x 38
-y 30
-end
-arch shop_weapon
-exp 1000
-x 38
-y 30
-end
-arch shop_weapon
-exp 1000
+arch afloor_blue_left
 x 38
 y 30
 end
-arch shop_weapon
-exp 1000
+arch afloor_blue_left
 x 38
 y 31
 end
-arch shop_weapon
-exp 1000
-x 38
-y 31
-end
-arch shop_weapon
-exp 1000
-x 38
-y 31
-end
-arch shop_weapon
-exp 1000
+arch afloor_blue_left
 x 38
 y 32
 end
-arch shop_weapon
-exp 1000
-x 38
-y 32
-end
-arch shop_weapon
-exp 1000
-x 38
-y 32
-end
-arch shop_weapon
-exp 1000
+arch afloor_blue_left
 x 38
 y 33
 end
-arch shop_weapon
-exp 1000
-x 38
-y 33
-end
-arch shop_weapon
-exp 1000
-x 38
-y 33
-end
-arch shop_weapon
-exp 1000
+arch afloor_blue_left
 x 38
 y 34
 end
-arch shop_weapon
-exp 1000
-x 38
-y 34
-end
-arch shop_weapon
-exp 1000
-x 38
-y 34
-end
-arch shop_weapon
-exp 1000
+arch afloor_blue_left
 x 38
 y 35
 end
-arch shop_weapon
-exp 1000
-x 38
-y 35
-end
-arch shop_weapon
-exp 1000
-x 38
-y 35
-end
-arch shop_weapon
-exp 1000
+arch afloor_blue_left
 x 38
 y 36
 end
-arch shop_weapon
-exp 1000
-x 38
-y 36
-end
-arch shop_weapon
-exp 1000
-x 38
-y 36
-end
-arch shop_weapon
-exp 1000
+arch afloor_blue_left
 x 38
 y 37
 end
-arch shop_weapon
-exp 1000
-x 38
-y 37
-end
-arch shop_weapon
-exp 1000
-x 38
-y 37
-end
-arch shop_weapon
-exp 1000
-x 38
-y 38
-end
-arch shop_weapon
-exp 1000
-x 38
-y 38
-end
-arch shop_weapon
-exp 1000
+arch afloor_blue_left
 x 38
 y 38
 end

@@ -1,7 +1,7 @@
 arch map
 name Tutorial Class Selection
 region creation
-width 44
+width 54
 height 16
 enter_x 7
 enter_y 5
@@ -9,7 +9,7 @@ msg
 Creator: Marc Lehmann
 Email: schmorp@schmorp.de
 Date: Mon Dec  8 22:11:34 CET 2008
-Modified: 2019-04-18 Acer
+Modified: 2019-04-19 Acer
 endmsg
 end
 arch grass
@@ -4452,6 +4452,30 @@ arch grass
 x 42
 y 2
 end
+arch player_changer
+name Demon Form
+slaying /start/tutorial_class
+hp 48
+sp 6
+x 42
+y 2
+arch barbarian_class
+name Demon
+msg
+endmsg
+face jessyb.x11
+animation jessyb
+Str 0
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Cha 0
+Int 0
+randomitems none
+anim_suffix no_class
+end
+end
 arch grass
 x 42
 y 3
@@ -4508,15 +4532,17 @@ arch wall_2_1_2
 x 42
 y 15
 end
-arch evergreen
+arch grass
 x 43
-move_block all
+end
+arch wall_2_2_2
+x 43
 end
 arch grass
 x 43
 y 1
 end
-arch wall_1_1
+arch wall_2_1_1
 x 43
 y 1
 end
@@ -4628,7 +4654,787 @@ arch grass
 x 43
 y 15
 end
-arch wall_3_4
+arch wall_3_1
 x 43
+y 15
+end
+arch grass
+x 44
+end
+arch wall_2_1_2
+x 44
+end
+arch grass
+x 44
+y 1
+end
+arch grass
+x 44
+y 2
+end
+arch grass
+x 44
+y 3
+end
+arch grass
+x 44
+y 4
+end
+arch grass
+x 44
+y 5
+end
+arch grass
+x 44
+y 6
+end
+arch grass
+x 44
+y 7
+end
+arch grass
+x 44
+y 8
+end
+arch grass
+x 44
+y 9
+end
+arch grass
+x 44
+y 10
+end
+arch grass
+x 44
+y 11
+end
+arch grass
+x 44
+y 12
+end
+arch grass
+x 44
+y 13
+end
+arch grass
+x 44
+y 14
+end
+arch grass
+x 44
+y 15
+end
+arch wall_2_1_2
+x 44
+y 15
+end
+arch grass
+x 45
+end
+arch wall_2_1_2
+x 45
+end
+arch grass
+x 45
+y 1
+end
+arch grass
+x 45
+y 2
+end
+arch grass
+x 45
+y 3
+end
+arch grass
+x 45
+y 4
+end
+arch grass
+x 45
+y 5
+end
+arch grass
+x 45
+y 6
+end
+arch grass
+x 45
+y 7
+end
+arch grass
+x 45
+y 8
+end
+arch grass
+x 45
+y 9
+end
+arch grass
+x 45
+y 10
+end
+arch grass
+x 45
+y 11
+end
+arch grass
+x 45
+y 12
+end
+arch grass
+x 45
+y 13
+end
+arch grass
+x 45
+y 14
+end
+arch grass
+x 45
+y 15
+end
+arch wall_2_1_2
+x 45
+y 15
+end
+arch grass
+x 46
+end
+arch wall_2_1_2
+x 46
+end
+arch grass
+x 46
+y 1
+end
+arch grass
+x 46
+y 2
+end
+arch grass
+x 46
+y 3
+end
+arch grass
+x 46
+y 4
+end
+arch grass
+x 46
+y 5
+end
+arch grass
+x 46
+y 6
+end
+arch grass
+x 46
+y 7
+end
+arch grass
+x 46
+y 8
+end
+arch grass
+x 46
+y 9
+end
+arch grass
+x 46
+y 10
+end
+arch grass
+x 46
+y 11
+end
+arch grass
+x 46
+y 12
+end
+arch grass
+x 46
+y 13
+end
+arch grass
+x 46
+y 14
+end
+arch grass
+x 46
+y 15
+end
+arch wall_2_1_2
+x 46
+y 15
+end
+arch grass
+x 47
+end
+arch wall_2_1_2
+x 47
+end
+arch grass
+x 47
+y 1
+end
+arch grass
+x 47
+y 2
+end
+arch grass
+x 47
+y 3
+end
+arch grass
+x 47
+y 4
+end
+arch grass
+x 47
+y 5
+end
+arch grass
+x 47
+y 6
+end
+arch grass
+x 47
+y 7
+end
+arch grass
+x 47
+y 8
+end
+arch grass
+x 47
+y 9
+end
+arch dungeon_floor
+x 47
+y 10
+end
+arch dungeon_floor
+x 47
+y 11
+end
+arch dungeon_floor
+x 47
+y 12
+end
+arch grass
+x 47
+y 13
+end
+arch grass
+x 47
+y 14
+end
+arch grass
+x 47
+y 15
+end
+arch wall_2_1_2
+x 47
+y 15
+end
+arch grass
+x 48
+end
+arch wall_2_1_2
+x 48
+end
+arch grass
+x 48
+y 1
+end
+arch grass
+x 48
+y 2
+end
+arch grass
+x 48
+y 3
+end
+arch grass
+x 48
+y 4
+end
+arch grass
+x 48
+y 5
+end
+arch grass
+x 48
+y 6
+end
+arch grass
+x 48
+y 7
+end
+arch grass
+x 48
+y 8
+end
+arch grass
+x 48
+y 9
+end
+arch dungeon_floor
+x 48
+y 10
+end
+arch dungeon_floor
+x 48
+y 11
+end
+arch player_changer
+name Man Form
+slaying /start/tutorial_class
+hp 37
+sp 5
+x 48
+y 11
+arch barbarian_class
+name Man
+msg
+endmsg
+face man.151
+animation man
+Str 0
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Cha 0
+Int 0
+randomitems none
+anim_suffix no_class
+end
+end
+arch dungeon_floor
+x 48
+y 12
+end
+arch grass
+x 48
+y 13
+end
+arch grass
+x 48
+y 14
+end
+arch grass
+x 48
+y 15
+end
+arch wall_2_1_2
+x 48
+y 15
+end
+arch grass
+x 49
+end
+arch wall_2_1_2
+x 49
+end
+arch grass
+x 49
+y 1
+end
+arch grass
+x 49
+y 2
+end
+arch grass
+x 49
+y 3
+end
+arch grass
+x 49
+y 4
+end
+arch grass
+x 49
+y 5
+end
+arch grass
+x 49
+y 6
+end
+arch grass
+x 49
+y 7
+end
+arch grass
+x 49
+y 8
+end
+arch grass
+x 49
+y 9
+end
+arch dungeon_floor
+x 49
+y 10
+end
+arch dungeon_floor
+x 49
+y 11
+end
+arch dungeon_floor
+x 49
+y 12
+end
+arch grass
+x 49
+y 13
+end
+arch grass
+x 49
+y 14
+end
+arch grass
+x 49
+y 15
+end
+arch wall_2_1_2
+x 49
+y 15
+end
+arch grass
+x 50
+end
+arch wall_2_1_2
+x 50
+end
+arch grass
+x 50
+y 1
+end
+arch grass
+x 50
+y 2
+end
+arch grass
+x 50
+y 3
+end
+arch grass
+x 50
+y 4
+end
+arch grass
+x 50
+y 5
+end
+arch grass
+x 50
+y 6
+end
+arch grass
+x 50
+y 7
+end
+arch grass
+x 50
+y 8
+end
+arch grass
+x 50
+y 9
+end
+arch grass
+x 50
+y 10
+end
+arch grass
+x 50
+y 11
+end
+arch grass
+x 50
+y 12
+end
+arch grass
+x 50
+y 13
+end
+arch grass
+x 50
+y 14
+end
+arch grass
+x 50
+y 15
+end
+arch wall_2_1_2
+x 50
+y 15
+end
+arch grass
+x 51
+end
+arch wall_2_1_2
+x 51
+end
+arch grass
+x 51
+y 1
+end
+arch grass
+x 51
+y 2
+end
+arch grass
+x 51
+y 3
+end
+arch grass
+x 51
+y 4
+end
+arch grass
+x 51
+y 5
+end
+arch grass
+x 51
+y 6
+end
+arch grass
+x 51
+y 7
+end
+arch grass
+x 51
+y 8
+end
+arch grass
+x 51
+y 9
+end
+arch grass
+x 51
+y 10
+end
+arch grass
+x 51
+y 11
+end
+arch grass
+x 51
+y 12
+end
+arch grass
+x 51
+y 13
+end
+arch grass
+x 51
+y 14
+end
+arch grass
+x 51
+y 15
+end
+arch wall_2_1_2
+x 51
+y 15
+end
+arch grass
+x 52
+end
+arch wall_2_1_2
+x 52
+end
+arch grass
+x 52
+y 1
+end
+arch grass
+x 52
+y 2
+end
+arch grass
+x 52
+y 3
+end
+arch grass
+x 52
+y 4
+end
+arch grass
+x 52
+y 5
+end
+arch grass
+x 52
+y 6
+end
+arch grass
+x 52
+y 7
+end
+arch grass
+x 52
+y 8
+end
+arch grass
+x 52
+y 9
+end
+arch grass
+x 52
+y 10
+end
+arch grass
+x 52
+y 11
+end
+arch grass
+x 52
+y 12
+end
+arch grass
+x 52
+y 13
+end
+arch grass
+x 52
+y 14
+end
+arch grass
+x 52
+y 15
+end
+arch wall_2_1_2
+x 52
+y 15
+end
+arch grass
+x 53
+end
+arch wall_2_2_3
+x 53
+end
+arch grass
+x 53
+y 1
+end
+arch wall_2_1_1
+x 53
+y 1
+end
+arch grass
+x 53
+y 2
+end
+arch wall_2_1_1
+x 53
+y 2
+end
+arch grass
+x 53
+y 3
+end
+arch wall_2_1_1
+x 53
+y 3
+end
+arch grass
+x 53
+y 4
+end
+arch wall_2_1_1
+x 53
+y 4
+end
+arch grass
+x 53
+y 5
+end
+arch wall_2_1_1
+x 53
+y 5
+end
+arch grass
+x 53
+y 6
+end
+arch wall_2_1_1
+x 53
+y 6
+end
+arch grass
+x 53
+y 7
+end
+arch wall_2_1_1
+x 53
+y 7
+end
+arch grass
+x 53
+y 8
+end
+arch wall_2_1_1
+x 53
+y 8
+end
+arch grass
+x 53
+y 9
+end
+arch wall_2_1_1
+x 53
+y 9
+end
+arch grass
+x 53
+y 10
+end
+arch wall_2_1_1
+x 53
+y 10
+end
+arch grass
+x 53
+y 11
+end
+arch wall_2_1_1
+x 53
+y 11
+end
+arch grass
+x 53
+y 12
+end
+arch wall_2_1_1
+x 53
+y 12
+end
+arch grass
+x 53
+y 13
+end
+arch wall_2_1_1
+x 53
+y 13
+end
+arch grass
+x 53
+y 14
+end
+arch wall_2_1_1
+x 53
+y 14
+end
+arch grass
+x 53
+y 15
+end
+arch wall_2_2_4
+x 53
 y 15
 end

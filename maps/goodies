@@ -11603,9 +11603,13 @@ x 35
 y 32
 carrying 720180
 arch musketball
-name 5.56 NATO
-name_pl 5.56 NATO
+name 5.56 NATO (fire round)
+name_pl 5.56 NATO (fire rounds)
 nrof 2000
+arch event_apply
+title Python
+slaying /python/arrows/firebombarrow.py
+end
 end
 end
 arch afloor_blue_left

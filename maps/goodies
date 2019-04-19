@@ -3341,10 +3341,6 @@ arch afloor_blue_left
 x 14
 y 19
 end
-arch bomb
-x 14
-y 19
-end
 arch afloor_blue_left
 x 14
 y 20
@@ -4790,6 +4786,9 @@ maxsp 0
 path_attuned 0
 duration 3
 casting_time 2
+arch bomb
+speed 0.8
+end
 end
 end
 arch afloor_blue_left
@@ -11623,42 +11622,9 @@ arch afloor_blue_left
 x 35
 y 32
 end
-arch table_3
-x 35
-y 32
-end
-arch sack
-x 35
-y 32
-carrying 720180
-arch musketball
-name 5.56 NATO (fire round)
-name_pl 5.56 NATO (fire rounds)
-nrof 2000
-arch event_attack
-title Python
-slaying /python/arrows/firebombarrow.py
-end
-end
-end
 arch afloor_blue_left
 x 35
 y 33
-end
-arch table_3
-x 35
-y 33
-end
-arch musket
-name machine gun
-name_pl machine guns
-face smg.111
-sp 1000
-x 35
-y 33
-value 5500
-weight 5000
-body_arm -1
 end
 arch afloor_blue_left
 x 35

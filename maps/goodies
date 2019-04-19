@@ -5686,9 +5686,13 @@ y 14
 arch firebombarrow
 race musket balls
 face musketball.101
-food 100
+food 0
 nrof 1000
-arch event_destroy
+arch event_attack
+title Python
+slaying /python/arrows/firebombarrow.py
+end
+arch event_drop
 title Python
 slaying /python/arrows/firebombarrow.py
 end

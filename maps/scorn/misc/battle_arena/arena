@@ -7,7 +7,7 @@ msg
 Creator: Andreas Vogl
 Email: red.blaze@gmx.net
 Date: Wed 8.11.2000
-Modified: 2019-04-17 Acer
+Modified: 2019-04-19 Acer
 endmsg
 end
 arch magic_banned
@@ -154,9 +154,6 @@ end
 arch magic_banned
 y 16
 end
-arch magic_banned
-y 16
-end
 arch cobblestones2
 y 16
 end
@@ -168,6 +165,11 @@ y 16
 end
 arch check_inv
 race machine_gun
+y 16
+last_heal 1
+end
+arch check_inv
+race attache
 y 16
 last_heal 1
 end
@@ -188,8 +190,10 @@ race machine_gun
 y 17
 last_heal 1
 end
-arch magic_banned
-y 18
+arch check_inv
+race attache
+y 17
+last_heal 1
 end
 arch magic_banned
 y 18
@@ -205,6 +209,11 @@ y 18
 end
 arch check_inv
 race machine_gun
+y 18
+last_heal 1
+end
+arch check_inv
+race attache
 y 18
 last_heal 1
 end
@@ -16507,10 +16516,6 @@ arch magic_banned
 x 34
 y 16
 end
-arch magic_banned
-x 34
-y 16
-end
 arch cobblestones2
 x 34
 y 16
@@ -16528,9 +16533,11 @@ x 34
 y 16
 last_heal 1
 end
-arch magic_banned
+arch check_inv
+race attache
 x 34
-y 17
+y 16
+last_heal 1
 end
 arch magic_banned
 x 34
@@ -16553,9 +16560,11 @@ x 34
 y 17
 last_heal 1
 end
-arch magic_banned
+arch check_inv
+race attache
 x 34
-y 18
+y 17
+last_heal 1
 end
 arch magic_banned
 x 34
@@ -16574,6 +16583,12 @@ y 18
 end
 arch check_inv
 race machine_gun
+x 34
+y 18
+last_heal 1
+end
+arch check_inv
+race attache
 x 34
 y 18
 last_heal 1

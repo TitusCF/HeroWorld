@@ -3,7 +3,7 @@ name <unnamed>
 width 40
 height 40
 msg
-Modified: 2019-04-19 Acer
+Modified: 2019-04-20 Acer
 endmsg
 end
 arch afloor_blue_left
@@ -5316,9 +5316,20 @@ lifesave 1
 arch chest
 name Floor Changer
 face sack.111
-arch blackslate
-unique 1
-is_buildable 1
+arch booze_table
+name Fountain of Medium Healing
+slaying potion_empty
+face fountain.111
+animation fountain
+food 1
+arch potion_heal
+level 20
+arch spell_heal
+msg
+endmsg
+grace 0
+end
+end
 end
 end
 end

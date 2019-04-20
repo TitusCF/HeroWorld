@@ -5300,7 +5300,7 @@ x 24
 y 10
 end
 arch altar
-name Buildable Floor Tile Maker (1 silver per tile) (doesn't work yet)
+name Demon Mount (1 gold per tile)
 slaying money
 food 1
 x 24
@@ -5314,22 +5314,21 @@ y 10
 connected 5
 lifesave 1
 arch chest
-name Floor Changer
+name Demon Mount
 face sack.111
-arch booze_table
-name Fountain of Medium Healing
-slaying potion_empty
-face fountain.111
-animation fountain
-food 1
-arch potion_heal
-level 20
-arch spell_heal
-msg
-endmsg
-grace 0
-end
-end
+arch galleon
+name Toy Boat
+name_pl toy boats
+face jessyb.x11
+animation jessyb
+speed 0.5
+type 2
+weight 100
+container 10000000
+move_type walk
+move_allow all
+no_pick 0
+passenger_limit 1
 end
 end
 end
@@ -5691,13 +5690,6 @@ x 26
 y 9
 end
 arch afloor_blue_left
-x 26
-y 10
-end
-arch waybread_table
-name shop floors
-other_arch building_shopfloor
-food 1
 x 26
 y 10
 end

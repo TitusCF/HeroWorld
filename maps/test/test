@@ -146,6 +146,65 @@ arch afloor_black_left
 x 2
 y 4
 end
+arch sign
+name Recipe List
+msg
+Ingredient List for Stat Modification:
+Archs will be drawn from archs/inorganic/, archs/potions/ & archs/flesh.
+
+(these will most likely be placeholders as archs are modified or added to /archs
+
+-stat modifiers should always use permanent stat potions-
+
+Stat potion requirement should be only 1/5th of the required number of other ingredients)
+
+STR: potionstr, demon_head, cinnabar
+DEX: potiondes, demon_head, sulpher
+POW: potionpow, demon_head, pyrite
+INT: potionint, demon_head, phosphorus
+WIS: potionwis, demon_head, salt
+CHA: potioncha, demon_head, gypsum
+CON: potioncon, demon_head, graphite
+
+Special_ac:       bat_wing, phil_salt, vial_yellow
+Special_wc:       hand, phil_salt, vial_yellow
+Special_dam:      insect_stinger, phil_salt, vial_yellow
+Special_speed:    foot, phil_salt, vial_water
+Special_luck:     serp_skin, phil_salt, vial_green
+Special_hp:       heart, phil_salt, vial_red
+Special_maxhp:    heart, phil_sulpher, vial_red
+Special_sp:       brain, phil_salt, vial_magenta
+Special_maxsp:    brain, phil_sulpher, vial_magenta
+Special_grace:    dragon_eye, phil_dust, vial_magenta
+Special_maxgrace: dragon_eye, phil_sulpher, vial_magenta
+Special_exp:      eyes, phil_salt, potion_improve
+Special_food:     tongue, phil_salt, water
+
+Resist_Physical:      dragon_eye,        uraniumpile, potion_shielding
+Resist_Magic:         tongue,            uraniumpile, potion_magic
+Resist_Fire:          hide_black,        uraniumpile, potion_fire
+Resist_Electricity:   hand,              uraniumpile, potion_heroism
+Resist_Cold:          hide_white,        uraniumpile, potion_cold2
+Resist_Confusion:     brain,             uraniumpile, minor_potion_restoration
+Resist_Acid:          icor,              uraniumpile, vial_yellow
+Resist_Drain:         heart,             uraniumpile, vial_red
+Resist_Ghosthit:      ectoplasm,         uraniumpile, potion_aethereality
+Resist_Poison:        liver,             uraniumpile, vial_green
+Resist_Slow:          foot,              river_stone, vial_water
+Resist_Paralyze:      insect_stinger,    uraniumpile, vial_green
+Resist_Turn_Undead:   tooth,             uraniumpile, vial_red
+Resist_Fear:          demon_head,        uraniumpile, potion_heroism
+Resist_Deplete:       heart,             uraniumpile, vial_red
+Resist_Death:         head,              uraniumpile, vial_red
+Resist_Holyword:      bat_wing,          uraniumpile, vial_water
+Resist_blind:         eye,               uraniumpile, potion_empty
+Resist_Life_Stealing: skin,              uraniumpile, vial_red
+Resist_Disease:       redidue,           uraniumpile, vial_green
+
+endmsg
+x 2
+y 4
+end
 arch afloor_black_left
 x 2
 y 5

@@ -10,7 +10,7 @@ enter_x 4
 enter_y 17
 msg
 Created:  1996-05-02 bt (thomas@astro.psu.edu)
-Modified: 2012-01-29 Rick Tanner
+Modified: 2019-04-25 Acer
 endmsg
 outdoor 1
 end
@@ -825,7 +825,7 @@ arch wwall_2_1_2
 x 6
 y 2
 end
-arch woodfloor
+arch shop_empty
 x 6
 y 3
 end
@@ -1129,35 +1129,35 @@ arch wwall_2_1_2
 x 8
 y 2
 end
-arch shop_scrolls
+arch shop_empty
 x 8
 y 3
 end
-arch shop_scrolls
+arch shop_empty
 x 8
 y 4
 end
-arch shop_scrolls
+arch shop_empty
 x 8
 y 5
 end
-arch shop_scrolls
+arch shop_empty
 x 8
 y 6
 end
-arch shop_scrolls
+arch shop_empty
 x 8
 y 7
 end
-arch shop_scrolls
+arch shop_empty
 x 8
 y 8
 end
-arch shop_scrolls
+arch shop_empty
 x 8
 y 9
 end
-arch shop_scrolls
+arch shop_empty
 x 8
 y 10
 end
@@ -1169,27 +1169,27 @@ arch shop_empty
 x 8
 y 12
 end
-arch shop_alchemy
+arch shop_empty
 x 8
 y 13
 end
-arch shop_alchemy
+arch shop_potions
 x 8
 y 14
 end
-arch shop_alchemy
+arch shop_potions
 x 8
 y 15
 end
-arch shop_alchemy
+arch shop_potions
 x 8
 y 16
 end
-arch shop_alchemy
+arch shop_potions
 x 8
 y 17
 end
-arch shop_alchemy
+arch shop_empty
 x 8
 y 18
 end
@@ -1224,7 +1224,7 @@ arch wwall_2_1_2
 x 9
 y 2
 end
-arch shop_alchemy
+arch shop_empty
 x 9
 y 3
 end
@@ -1280,15 +1280,15 @@ arch shop_empty
 x 9
 y 13
 end
-arch shop_empty
+arch shop_potions
 x 9
 y 14
 end
-arch shop_empty
+arch shop_potions
 x 9
 y 15
 end
-arch shop_empty
+arch shop_potions
 x 9
 y 16
 end
@@ -1296,11 +1296,11 @@ arch light4
 x 9
 y 17
 end
-arch shop_empty
+arch shop_potions
 x 9
 y 17
 end
-arch shop_alchemy
+arch shop_empty
 x 9
 y 18
 end
@@ -1335,47 +1335,59 @@ arch flagstone
 x 10
 y 2
 end
-arch wwall_2_1_2
+arch wwall_3_3
 x 10
 y 2
 end
-arch shop_books
-sp 5
+arch shop_empty
 x 10
 y 3
 end
-arch shop_books
-sp 5
+arch wwall_2_1_1
+x 10
+y 3
+end
+arch shop_empty
 x 10
 y 4
 end
-arch shop_books
-sp 5
+arch wwall_1_2
+x 10
+y 4
+end
+arch shop_empty
 x 10
 y 5
 end
-arch shop_books
-sp 5
+arch shop_empty
 x 10
 y 6
 end
-arch shop_books
-sp 5
+arch shop_empty
 x 10
 y 7
 end
-arch shop_books
-sp 5
+arch shop_empty
 x 10
 y 8
 end
-arch shop_books
-sp 5
+arch wwall_1_1
+x 10
+y 8
+end
+arch shop_empty
 x 10
 y 9
 end
-arch shop_books
-sp 5
+arch wwall_2_1_1
+x 10
+y 9
+end
+arch shop_empty
+x 10
+y 10
+end
+arch wwall_3_2
 x 10
 y 10
 end
@@ -1383,11 +1395,19 @@ arch shop_empty
 x 10
 y 11
 end
+arch wwall_2_1_1
+x 10
+y 11
+end
 arch shop_empty
 x 10
 y 12
 end
-arch shop_potions
+arch wwall_1_2
+x 10
+y 12
+end
+arch shop_empty
 x 10
 y 13
 end
@@ -1407,7 +1427,7 @@ arch shop_potions
 x 10
 y 17
 end
-arch shop_potions
+arch shop_empty
 x 10
 y 18
 end
@@ -1446,9 +1466,14 @@ arch wwall_win2
 x 11
 y 2
 end
-arch shop_alchemy
+arch shop_empty
 x 11
 y 3
+end
+arch potion_cold2
+x 11
+y 3
+no_pick 1
 end
 arch light4
 x 11
@@ -1457,6 +1482,25 @@ end
 arch shop_empty
 x 11
 y 4
+end
+arch creator
+name potion of dexterity
+x 11
+y 4
+connected 109
+lifesave 1
+arch potion_cold2
+unpaid 1
+identified 1
+end
+end
+arch button_lever
+name potion of frost resistance
+face teleporter.111
+animation teleporter
+x 11
+y 4
+connected 109
 end
 arch shop_empty
 x 11
@@ -1486,13 +1530,41 @@ arch shop_empty
 x 11
 y 10
 end
+arch wwall_2_1_2
+x 11
+y 10
+end
 arch shop_empty
 x 11
 y 11
 end
+arch potion_improve
+x 11
+y 11
+no_pick 1
+end
 arch shop_empty
 x 11
 y 12
+end
+arch creator
+name potion of dexterity
+x 11
+y 12
+connected 104
+lifesave 1
+arch potion_improve
+unpaid 1
+identified 1
+end
+end
+arch button_lever
+name improvement potion
+face teleporter.111
+animation teleporter
+x 11
+y 12
+connected 104
 end
 arch light4
 x 11
@@ -1502,15 +1574,15 @@ arch shop_empty
 x 11
 y 13
 end
-arch shop_empty
+arch shop_potions
 x 11
 y 14
 end
-arch shop_empty
+arch shop_potions
 x 11
 y 15
 end
-arch shop_empty
+arch shop_potions
 x 11
 y 16
 end
@@ -1518,11 +1590,11 @@ arch light4
 x 11
 y 17
 end
-arch shop_empty
+arch shop_potions
 x 11
 y 17
 end
-arch shop_alchemy
+arch shop_empty
 x 11
 y 18
 end
@@ -1553,39 +1625,59 @@ arch flagstone
 x 12
 y 2
 end
-arch wwall_2_1_2
+arch wwall_3_3
 x 12
 y 2
 end
-arch shop_ring
+arch shop_empty
 x 12
 y 3
 end
-arch shop_ring
+arch wwall_2_1_1
+x 12
+y 3
+end
+arch shop_empty
 x 12
 y 4
 end
-arch shop_ring
+arch wwall_1_2
+x 12
+y 4
+end
+arch shop_empty
 x 12
 y 5
 end
-arch shop_ring
+arch shop_empty
 x 12
 y 6
 end
-arch shop_ring
+arch shop_empty
 x 12
 y 7
 end
-arch shop_ring
+arch shop_empty
 x 12
 y 8
 end
-arch shop_ring
+arch wwall_1_1
+x 12
+y 8
+end
+arch shop_empty
 x 12
 y 9
 end
-arch shop_ring
+arch wwall_2_1_1
+x 12
+y 9
+end
+arch shop_empty
+x 12
+y 10
+end
+arch wwall_4
 x 12
 y 10
 end
@@ -1593,11 +1685,19 @@ arch shop_empty
 x 12
 y 11
 end
+arch wwall_2_1_1
+x 12
+y 11
+end
 arch shop_empty
 x 12
 y 12
 end
-arch shop_potions
+arch wwall_1_2
+x 12
+y 12
+end
+arch shop_empty
 x 12
 y 13
 end
@@ -1617,7 +1717,7 @@ arch shop_potions
 x 12
 y 17
 end
-arch shop_potions
+arch shop_empty
 x 12
 y 18
 end
@@ -1652,7 +1752,7 @@ arch wwall_2_1_2
 x 13
 y 2
 end
-arch shop_alchemy
+arch shop_empty
 x 13
 y 3
 end
@@ -1680,15 +1780,43 @@ arch shop_empty
 x 13
 y 8
 end
+arch creator
+name potion of dexterity
+x 13
+y 8
+connected 105
+lifesave 1
+arch major_potion_restoration
+unpaid 1
+identified 1
+end
+end
+arch button_lever
+name major potion of life
+face teleporter.111
+animation teleporter
+x 13
+y 8
+connected 105
+end
 arch shop_empty
 x 13
 y 9
+end
+arch major_potion_restoration
+x 13
+y 9
+no_pick 1
 end
 arch light4
 x 13
 y 10
 end
 arch shop_empty
+x 13
+y 10
+end
+arch wwall_2_1_2
 x 13
 y 10
 end
@@ -1708,15 +1836,15 @@ arch shop_empty
 x 13
 y 13
 end
-arch shop_empty
+arch shop_potions
 x 13
 y 14
 end
-arch shop_empty
+arch shop_potions
 x 13
 y 15
 end
-arch shop_empty
+arch shop_potions
 x 13
 y 16
 end
@@ -1724,11 +1852,11 @@ arch light4
 x 13
 y 17
 end
-arch shop_empty
+arch shop_potions
 x 13
 y 17
 end
-arch shop_alchemy
+arch shop_empty
 x 13
 y 18
 end
@@ -1759,39 +1887,59 @@ arch flagstone
 x 14
 y 2
 end
-arch wwall_2_1_2
+arch wwall_3_3
 x 14
 y 2
 end
-arch shop_alchemy
+arch shop_empty
 x 14
 y 3
 end
-arch shop_alchemy
+arch wwall_2_1_1
+x 14
+y 3
+end
+arch shop_empty
 x 14
 y 4
 end
-arch shop_alchemy
+arch wwall_1_2
+x 14
+y 4
+end
+arch shop_empty
 x 14
 y 5
 end
-arch shop_alchemy
+arch shop_empty
 x 14
 y 6
 end
-arch shop_alchemy
+arch shop_empty
 x 14
 y 7
 end
-arch shop_alchemy
+arch shop_empty
 x 14
 y 8
 end
-arch shop_alchemy
+arch wwall_1_1
+x 14
+y 8
+end
+arch shop_empty
 x 14
 y 9
 end
-arch shop_alchemy
+arch wwall_2_1_1
+x 14
+y 9
+end
+arch shop_empty
+x 14
+y 10
+end
+arch wwall_4
 x 14
 y 10
 end
@@ -1799,11 +1947,19 @@ arch shop_empty
 x 14
 y 11
 end
+arch wwall_2_1_1
+x 14
+y 11
+end
 arch shop_empty
 x 14
 y 12
 end
-arch shop_potions
+arch wwall_1_2
+x 14
+y 12
+end
+arch shop_empty
 x 14
 y 13
 end
@@ -1823,7 +1979,7 @@ arch shop_potions
 x 14
 y 17
 end
-arch shop_potions
+arch shop_empty
 x 14
 y 18
 end
@@ -1858,9 +2014,14 @@ arch wwall_2_1_2
 x 15
 y 2
 end
-arch shop_alchemy
+arch shop_empty
 x 15
 y 3
+end
+arch potion_fire2
+x 15
+y 3
+no_pick 1
 end
 arch light4
 x 15
@@ -1869,6 +2030,25 @@ end
 arch shop_empty
 x 15
 y 4
+end
+arch creator
+name potion of dexterity
+x 15
+y 4
+connected 108
+lifesave 1
+arch potion_fire2
+unpaid 1
+identified 1
+end
+end
+arch button_lever
+name potion of lava resistance
+face teleporter.111
+animation teleporter
+x 15
+y 4
+connected 108
 end
 arch shop_empty
 x 15
@@ -1898,13 +2078,47 @@ arch shop_empty
 x 15
 y 10
 end
+arch wwall_2_1_2
+x 15
+y 10
+end
 arch shop_empty
 x 15
 y 11
 end
+arch potion_shielding
+name potion of levitate
+x 15
+y 11
+level 5
+no_pick 1
+arch spell_levitate
+end
+end
 arch shop_empty
 x 15
 y 12
+end
+arch creator
+name potion of dexterity
+x 15
+y 12
+connected 103
+lifesave 1
+arch potion_shielding
+name potion of levitate
+level 10
+arch spell_levitate
+end
+end
+end
+arch button_lever
+name potion of levitate
+face teleporter.111
+animation teleporter
+x 15
+y 12
+connected 103
 end
 arch light4
 x 15
@@ -1914,15 +2128,15 @@ arch shop_empty
 x 15
 y 13
 end
-arch shop_empty
+arch shop_potions
 x 15
 y 14
 end
-arch shop_empty
+arch shop_potions
 x 15
 y 15
 end
-arch shop_empty
+arch shop_potions
 x 15
 y 16
 end
@@ -1930,11 +2144,11 @@ arch light4
 x 15
 y 17
 end
-arch shop_empty
+arch shop_potions
 x 15
 y 17
 end
-arch shop_alchemy
+arch shop_empty
 x 15
 y 18
 end
@@ -1969,42 +2183,59 @@ arch flagstone
 x 16
 y 2
 end
-arch wwall_2_1_2
+arch wwall_3_3
 x 16
 y 2
 end
-arch shop_books
+arch shop_empty
 x 16
 y 3
 end
-arch shop_books
+arch wwall_2_1_1
+x 16
+y 3
+end
+arch shop_empty
 x 16
 y 4
 end
-arch shop_books
+arch wwall_1_2
+x 16
+y 4
+end
+arch shop_empty
 x 16
 y 5
 end
-arch shop_books
+arch shop_empty
 x 16
 y 6
 end
-arch shop_books
+arch shop_empty
 x 16
 y 7
 end
-arch shop_books
-sp 5
+arch shop_empty
 x 16
 y 8
 end
-arch shop_books
-sp 5
+arch wwall_1_1
+x 16
+y 8
+end
+arch shop_empty
 x 16
 y 9
 end
-arch shop_books
-sp 5
+arch wwall_2_1_1
+x 16
+y 9
+end
+arch shop_empty
+x 16
+y 10
+end
+arch wwall_4
 x 16
 y 10
 end
@@ -2012,11 +2243,19 @@ arch shop_empty
 x 16
 y 11
 end
+arch wwall_2_1_1
+x 16
+y 11
+end
 arch shop_empty
 x 16
 y 12
 end
-arch shop_potions
+arch wwall_1_2
+x 16
+y 12
+end
+arch shop_empty
 x 16
 y 13
 end
@@ -2036,13 +2275,9 @@ arch shop_potions
 x 16
 y 17
 end
-arch shop_potions
+arch shop_empty
 x 16
 y 18
-end
-arch flagstone
-x 16
-y 19
 end
 arch wwall_2_1_2
 x 16
@@ -2071,9 +2306,15 @@ arch wwall_2_1_2
 x 17
 y 2
 end
-arch shop_alchemy
+arch shop_empty
 x 17
 y 3
+end
+arch potion_shielding
+name potion of rage
+x 17
+y 3
+no_pick 1
 end
 arch light4
 x 17
@@ -2082,6 +2323,28 @@ end
 arch shop_empty
 x 17
 y 4
+end
+arch creator
+name potion of dexterity
+x 17
+y 4
+connected 107
+lifesave 1
+arch potion_shielding
+name potion of rage
+unpaid 1
+identified 1
+arch spell_rage
+end
+end
+end
+arch button_lever
+name potion of rage
+face teleporter.111
+animation teleporter
+x 17
+y 4
+connected 107
 end
 arch shop_empty
 x 17
@@ -2099,15 +2362,44 @@ arch shop_empty
 x 17
 y 8
 end
+arch creator
+name potion of dexterity
+x 17
+y 8
+connected 106
+lifesave 1
+arch potionwis
+value 54000
+unpaid 1
+identified 1
+end
+end
+arch button_lever
+name potion of wisdom
+face teleporter.111
+animation teleporter
+x 17
+y 8
+connected 106
+end
 arch shop_empty
 x 17
 y 9
+end
+arch potionwis
+x 17
+y 9
+no_pick 1
 end
 arch light4
 x 17
 y 10
 end
 arch shop_empty
+x 17
+y 10
+end
+arch wwall_2_1_2
 x 17
 y 10
 end
@@ -2127,15 +2419,15 @@ arch shop_empty
 x 17
 y 13
 end
-arch shop_empty
+arch shop_potions
 x 17
 y 14
 end
-arch shop_empty
+arch shop_potions
 x 17
 y 15
 end
-arch shop_empty
+arch shop_potions
 x 17
 y 16
 end
@@ -2143,11 +2435,11 @@ arch light4
 x 17
 y 17
 end
-arch shop_empty
+arch shop_potions
 x 17
 y 17
 end
-arch shop_alchemy
+arch shop_empty
 x 17
 y 18
 end
@@ -2182,39 +2474,59 @@ arch flagstone
 x 18
 y 2
 end
-arch wwall_win2
+arch wwall_3_3
 x 18
 y 2
 end
-arch shop_gems
+arch shop_empty
 x 18
 y 3
 end
-arch shop_gems
+arch wwall_2_1_1
+x 18
+y 3
+end
+arch shop_empty
 x 18
 y 4
 end
-arch shop_gems
+arch wwall_1_2
+x 18
+y 4
+end
+arch shop_empty
 x 18
 y 5
 end
-arch shop_gems
+arch shop_empty
 x 18
 y 6
 end
-arch shop_gems
+arch shop_empty
 x 18
 y 7
 end
-arch shop_gems
+arch shop_empty
 x 18
 y 8
 end
-arch shop_gems
+arch wwall_1_1
+x 18
+y 8
+end
+arch shop_empty
 x 18
 y 9
 end
-arch shop_gems
+arch wwall_2_1_1
+x 18
+y 9
+end
+arch shop_empty
+x 18
+y 10
+end
+arch wwall_3_4
 x 18
 y 10
 end
@@ -2222,31 +2534,39 @@ arch shop_empty
 x 18
 y 11
 end
+arch wwall_2_1_1
+x 18
+y 11
+end
 arch shop_empty
 x 18
 y 12
 end
-arch shop_amulets
+arch wwall_1_2
+x 18
+y 12
+end
+arch shop_empty
 x 18
 y 13
 end
-arch shop_amulets
+arch shop_potions
 x 18
 y 14
 end
-arch shop_amulets
+arch shop_potions
 x 18
 y 15
 end
-arch shop_amulets
+arch shop_potions
 x 18
 y 16
 end
-arch shop_amulets
+arch shop_potions
 x 18
 y 17
 end
-arch shop_amulets
+arch shop_empty
 x 18
 y 18
 end

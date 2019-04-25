@@ -11,104 +11,104 @@ msg
 Creator: bt foom
 Email: thomas@astro.psu.edu
 Date: Thu May  2 01:57:58 1996
-Modified: 2019-04-02 Acer
+Modified: 2019-04-24 Acer
 endmsg
 end
-arch woodfloor
+arch shop_empty
 end
 arch wwall_2_2_2
 end
-arch woodfloor
+arch shop_empty
 y 1
 end
 arch wwall_2_1_1
 y 1
 end
-arch woodfloor
+arch shop_empty
 y 2
 end
-arch wwall_2_1_1
+arch wwall_3_2
 y 2
 end
-arch woodfloor
+arch shop_empty
 y 3
 end
 arch wwall_2_1_1
 y 3
 end
-arch woodfloor
+arch shop_empty
 y 4
 end
-arch wwall_2_1_1
+arch wwall_3_2
 y 4
 end
-arch woodfloor
+arch shop_empty
 y 5
 end
 arch wwall_2_1_1
 y 5
 end
-arch woodfloor
+arch shop_empty
 y 6
 end
 arch wwall_2_1_1
 y 6
 end
-arch woodfloor
+arch shop_empty
 y 7
 end
 arch wwall_2_1_1
 y 7
 end
-arch woodfloor
+arch shop_empty
 y 8
 end
 arch wwall_2_1_1
 y 8
 end
-arch woodfloor
+arch shop_empty
 y 9
 end
 arch wwall_2_1_1
 y 9
 end
-arch woodfloor
+arch shop_empty
 y 10
 end
 arch wwall_2_1_1
 y 10
 end
-arch woodfloor
+arch shop_empty
 y 11
 end
-arch wwall_2_1_1
+arch wwall_3_2
 y 11
 end
-arch woodfloor
+arch shop_empty
 y 12
 end
 arch wwall_2_1_1
 y 12
 end
-arch woodfloor
+arch shop_empty
 y 13
 end
-arch wwall_2_1_1
+arch wwall_3_2
 y 13
 end
-arch woodfloor
+arch shop_empty
 y 14
 end
 arch wwall_2_1_1
 y 14
 end
-arch woodfloor
+arch shop_empty
 y 15
 end
 arch wwall_2_2_1
 y 15
 end
-arch woodfloor
+arch shop_empty
 x 1
 end
 arch wwall_2_1_2
@@ -118,7 +118,16 @@ arch shop_empty
 x 1
 y 1
 end
+arch potion_aethereality
+x 1
+y 1
+no_pick 1
+end
 arch shop_empty
+x 1
+y 2
+end
+arch wwall_1_3
 x 1
 y 2
 end
@@ -126,13 +135,28 @@ arch shop_empty
 x 1
 y 3
 end
+arch potion_shielding
+x 1
+y 3
+no_pick 1
+end
 arch shop_empty
+x 1
+y 4
+end
+arch wwall_1_3
 x 1
 y 4
 end
 arch shop_empty
 x 1
 y 5
+end
+arch random_plant
+hp 40
+x 1
+y 5
+unpaid 1
 end
 arch shop_empty
 x 1
@@ -142,9 +166,23 @@ arch shop_empty
 x 1
 y 7
 end
+arch table_1x2
+x 1
+y 7
+end
+arch cauldron
+x 1
+y 7
+unpaid 1
+end
 arch shop_empty
 x 1
 y 8
+end
+arch cauldron
+x 1
+y 8
+unpaid 1
 end
 arch shop_empty
 x 1
@@ -154,7 +192,17 @@ arch shop_empty
 x 1
 y 10
 end
+arch random_mineral
+hp 40
+x 1
+y 10
+unpaid 1
+end
 arch shop_empty
+x 1
+y 11
+end
+arch wwall_1_3
 x 1
 y 11
 end
@@ -162,7 +210,16 @@ arch shop_empty
 x 1
 y 12
 end
+arch potion_cold
+x 1
+y 12
+no_pick 1
+end
 arch shop_empty
+x 1
+y 13
+end
+arch wwall_1_3
 x 1
 y 13
 end
@@ -170,7 +227,12 @@ arch shop_empty
 x 1
 y 14
 end
-arch woodfloor
+arch potion_fire
+x 1
+y 14
+no_pick 1
+end
+arch shop_empty
 x 1
 y 15
 end
@@ -178,33 +240,69 @@ arch wwall_2_1_2
 x 1
 y 15
 end
-arch woodfloor
+arch shop_empty
 x 2
 end
 arch wwall_2_1_2
 x 2
 end
-arch shop_alchemy
+arch shop_empty
 x 2
 y 1
 end
-arch shop_alchemy
+arch creator
+name potion of aethereality
+x 2
+y 1
+connected 101
+lifesave 1
+arch potion_aethereality
+unpaid 1
+end
+end
+arch button_lever
+name potion of aethereality
+face teleporter.111
+animation teleporter
+x 2
+y 1
+connected 101
+end
+arch shop_empty
 x 2
 y 2
 end
-arch shop_alchemy
+arch shop_empty
 x 2
 y 3
 end
-arch shop_alchemy
+arch creator
+name potion of shielding
+x 2
+y 3
+connected 102
+lifesave 1
+arch potion_shielding
+unpaid 1
+end
+end
+arch button_lever
+name potion of shielding
+face teleporter.111
+animation teleporter
+x 2
+y 3
+connected 102
+end
+arch shop_empty
 x 2
 y 4
 end
-arch shop_alchemy
+arch shop_empty
 x 2
 y 5
 end
-arch shop_alchemy
+arch shop_empty
 x 2
 y 6
 end
@@ -216,31 +314,67 @@ arch shop_empty
 x 2
 y 8
 end
-arch shop_alchemy
+arch shop_empty
 x 2
 y 9
 end
-arch shop_alchemy
+arch shop_empty
 x 2
 y 10
 end
-arch shop_alchemy
+arch shop_empty
 x 2
 y 11
 end
-arch shop_alchemy
+arch shop_empty
 x 2
 y 12
 end
-arch shop_alchemy
+arch creator
+name potion of cold resistance
+x 2
+y 12
+connected 103
+lifesave 1
+arch potion_cold
+unpaid 1
+end
+end
+arch button_lever
+name potion of cold resistance
+face teleporter.111
+animation teleporter
+x 2
+y 12
+connected 103
+end
+arch shop_empty
 x 2
 y 13
 end
-arch shop_alchemy
+arch shop_empty
 x 2
 y 14
 end
-arch woodfloor
+arch creator
+name potion of fire resistance
+x 2
+y 14
+connected 104
+lifesave 1
+arch potion_fire
+unpaid 1
+end
+end
+arch button_lever
+name potion of fire resistance
+face teleporter.111
+animation teleporter
+x 2
+y 14
+connected 104
+end
+arch shop_empty
 x 2
 y 15
 end
@@ -248,13 +382,13 @@ arch wwall_2_1_2
 x 2
 y 15
 end
-arch woodfloor
+arch shop_empty
 x 3
 end
 arch wwall_3_3
 x 3
 end
-arch woodfloor
+arch shop_empty
 x 3
 y 1
 end
@@ -262,15 +396,15 @@ arch wwall_2_1_1
 x 3
 y 1
 end
-arch woodfloor
+arch shop_empty
 x 3
 y 2
 end
-arch wwall_2_1_1
+arch wwall_3_2
 x 3
 y 2
 end
-arch woodfloor
+arch shop_empty
 x 3
 y 3
 end
@@ -278,27 +412,23 @@ arch wwall_2_1_1
 x 3
 y 3
 end
-arch woodfloor
+arch shop_empty
 x 3
 y 4
 end
-arch wwall_2_1_1
+arch wwall_3_2
 x 3
 y 4
 end
-arch woodfloor
+arch shop_empty
 x 3
 y 5
-end
-arch wwall_2_1_1
-x 3
-y 5
-end
-arch woodfloor
-x 3
-y 6
 end
 arch wwall_1_2
+x 3
+y 5
+end
+arch shop_empty
 x 3
 y 6
 end
@@ -310,31 +440,27 @@ arch shop_empty
 x 3
 y 8
 end
-arch woodfloor
+arch shop_empty
 x 3
 y 9
+end
+arch shop_empty
+x 3
+y 10
 end
 arch wwall_1_1
 x 3
-y 9
-end
-arch woodfloor
-x 3
 y 10
 end
-arch wwall_2_1_1
-x 3
-y 10
-end
-arch woodfloor
+arch shop_empty
 x 3
 y 11
 end
-arch wwall_2_1_1
+arch wwall_3_2
 x 3
 y 11
 end
-arch woodfloor
+arch shop_empty
 x 3
 y 12
 end
@@ -342,15 +468,15 @@ arch wwall_2_1_1
 x 3
 y 12
 end
-arch woodfloor
+arch shop_empty
 x 3
 y 13
 end
-arch wwall_2_1_1
+arch wwall_3_2
 x 3
 y 13
 end
-arch woodfloor
+arch shop_empty
 x 3
 y 14
 end
@@ -358,7 +484,7 @@ arch wwall_2_1_1
 x 3
 y 14
 end
-arch woodfloor
+arch shop_empty
 x 3
 y 15
 end
@@ -366,33 +492,54 @@ arch wwall_3_1
 x 3
 y 15
 end
-arch woodfloor
+arch shop_empty
 x 4
 end
 arch wwall_2_1_2
 x 4
 end
-arch shop_alchemy
+arch shop_empty
 x 4
 y 1
 end
-arch shop_alchemy
+arch potion_shielding
+name potion of Water Elemental
+name_pl potions of Water Elemental
+x 4
+y 1
+level 20
+arch spell_summon_water_elemental
+end
+end
+arch shop_empty
 x 4
 y 2
 end
-arch shop_alchemy
+arch wwall_1_3
+x 4
+y 2
+end
+arch shop_empty
 x 4
 y 3
 end
-arch shop_alchemy
+arch shop_empty
 x 4
 y 4
 end
-arch shop_alchemy
+arch wwall_1_3
+x 4
+y 4
+end
+arch shop_empty
 x 4
 y 5
 end
-arch shop_alchemy
+arch medium_potion_restoration
+x 4
+y 5
+end
+arch shop_empty
 x 4
 y 6
 end
@@ -404,31 +551,53 @@ arch shop_empty
 x 4
 y 8
 end
-arch shop_minerals
+arch shop_empty
 x 4
 y 9
 end
-arch shop_minerals
+arch shop_empty
 x 4
 y 10
 end
-arch shop_minerals
+arch statue2
+x 4
+y 10
+end
+arch shop_empty
 x 4
 y 11
 end
-arch shop_minerals
+arch wwall_1_3
+x 4
+y 11
+end
+arch shop_empty
 x 4
 y 12
 end
-arch shop_minerals
+arch potion_improve
+x 4
+y 12
+end
+arch shop_empty
 x 4
 y 13
 end
-arch shop_minerals
+arch wwall_1_3
+x 4
+y 13
+end
+arch shop_empty
 x 4
 y 14
 end
-arch woodfloor
+arch potion_heroism
+x 4
+y 14
+arch spell_heroism
+end
+end
+arch shop_empty
 x 4
 y 15
 end
@@ -436,7 +605,7 @@ arch wwall_2_1_2
 x 4
 y 15
 end
-arch woodfloor
+arch shop_empty
 x 5
 end
 arch wwall_2_1_2
@@ -445,6 +614,29 @@ end
 arch shop_empty
 x 5
 y 1
+end
+arch creator
+name medium potion of life
+x 5
+y 1
+connected 110
+lifesave 1
+arch potion_shielding
+name potion of Water Elemental
+name_pl potions of Water Elemental
+level 20
+unpaid 1
+arch spell_summon_water_elemental
+end
+end
+end
+arch button_lever
+name potion of Water Elemental
+face teleporter.111
+animation teleporter
+x 5
+y 1
+connected 110
 end
 arch shop_empty
 x 5
@@ -461,6 +653,24 @@ end
 arch shop_empty
 x 5
 y 5
+end
+arch creator
+name medium potion of life
+x 5
+y 5
+connected 107
+lifesave 1
+arch medium_potion_restoration
+unpaid 1
+end
+end
+arch button_lever
+name medium potion of life
+face teleporter.111
+animation teleporter
+x 5
+y 5
+connected 107
 end
 arch shop_empty
 x 5
@@ -490,6 +700,24 @@ arch shop_empty
 x 5
 y 12
 end
+arch creator
+name improvement potion
+x 5
+y 12
+connected 106
+lifesave 1
+arch potion_improve
+unpaid 1
+end
+end
+arch button_lever
+name improvement potion
+face teleporter.111
+animation teleporter
+x 5
+y 12
+connected 106
+end
 arch shop_empty
 x 5
 y 13
@@ -498,7 +726,26 @@ arch shop_empty
 x 5
 y 14
 end
-arch woodfloor
+arch creator
+x 5
+y 14
+connected 105
+lifesave 1
+arch potion_heroism
+unpaid 1
+arch spell_heroism
+end
+end
+end
+arch button_lever
+name potion of heroism
+face teleporter.111
+animation teleporter
+x 5
+y 14
+connected 105
+end
+arch shop_empty
 x 5
 y 15
 end
@@ -506,33 +753,33 @@ arch wwall_2_1_2
 x 5
 y 15
 end
-arch woodfloor
+arch shop_empty
 x 6
 end
 arch wwall_2_1_2
 x 6
 end
-arch shop_alchemy
+arch shop_empty
 x 6
 y 1
 end
-arch shop_alchemy
+arch shop_empty
 x 6
 y 2
 end
-arch shop_alchemy
+arch shop_empty
 x 6
 y 3
 end
-arch shop_alchemy
+arch shop_empty
 x 6
 y 4
 end
-arch shop_alchemy
+arch shop_empty
 x 6
 y 5
 end
-arch shop_alchemy
+arch shop_empty
 x 6
 y 6
 end
@@ -544,31 +791,31 @@ arch shop_empty
 x 6
 y 8
 end
-arch shop_minerals
+arch shop_empty
 x 6
 y 9
 end
-arch shop_minerals
+arch shop_empty
 x 6
 y 10
 end
-arch shop_minerals
+arch shop_empty
 x 6
 y 11
 end
-arch shop_minerals
+arch shop_empty
 x 6
 y 12
 end
-arch shop_minerals
+arch shop_empty
 x 6
 y 13
 end
-arch shop_minerals
+arch shop_empty
 x 6
 y 14
 end
-arch woodfloor
+arch shop_empty
 x 6
 y 15
 end
@@ -576,13 +823,13 @@ arch wwall_2_1_2
 x 6
 y 15
 end
-arch woodfloor
+arch shop_empty
 x 7
 end
 arch wwall_3_3
 x 7
 end
-arch woodfloor
+arch shop_empty
 x 7
 y 1
 end
@@ -590,15 +837,15 @@ arch wwall_2_1_1
 x 7
 y 1
 end
-arch woodfloor
+arch shop_empty
 x 7
 y 2
 end
-arch wwall_2_1_1
+arch wwall_3_2
 x 7
 y 2
 end
-arch woodfloor
+arch shop_empty
 x 7
 y 3
 end
@@ -606,27 +853,23 @@ arch wwall_2_1_1
 x 7
 y 3
 end
-arch woodfloor
+arch shop_empty
 x 7
 y 4
 end
-arch wwall_2_1_1
+arch wwall_3_2
 x 7
 y 4
 end
-arch woodfloor
+arch shop_empty
 x 7
 y 5
-end
-arch wwall_2_1_1
-x 7
-y 5
-end
-arch woodfloor
-x 7
-y 6
 end
 arch wwall_1_2
+x 7
+y 5
+end
+arch shop_empty
 x 7
 y 6
 end
@@ -638,31 +881,27 @@ arch shop_empty
 x 7
 y 8
 end
-arch woodfloor
+arch shop_empty
 x 7
 y 9
+end
+arch shop_empty
+x 7
+y 10
 end
 arch wwall_1_1
 x 7
-y 9
-end
-arch woodfloor
-x 7
 y 10
 end
-arch wwall_2_1_1
-x 7
-y 10
-end
-arch woodfloor
+arch shop_empty
 x 7
 y 11
 end
-arch wwall_2_1_1
+arch wwall_3_2
 x 7
 y 11
 end
-arch woodfloor
+arch shop_empty
 x 7
 y 12
 end
@@ -670,15 +909,15 @@ arch wwall_2_1_1
 x 7
 y 12
 end
-arch woodfloor
+arch shop_empty
 x 7
 y 13
 end
-arch wwall_2_1_1
+arch wwall_3_2
 x 7
 y 13
 end
-arch woodfloor
+arch shop_empty
 x 7
 y 14
 end
@@ -686,7 +925,7 @@ arch wwall_2_1_1
 x 7
 y 14
 end
-arch woodfloor
+arch shop_empty
 x 7
 y 15
 end
@@ -694,36 +933,49 @@ arch wwall_3_1
 x 7
 y 15
 end
-arch woodfloor
+arch shop_empty
 x 8
 end
 arch wwall_2_1_2
 x 8
 end
-arch shop_books
-sp 5
+arch shop_empty
 x 8
 y 1
 end
-arch shop_books
-sp 5
+arch shop_empty
 x 8
 y 2
 end
-arch shop_books
-sp 5
+arch wwall_1_3
+x 8
+y 2
+end
+arch shop_empty
 x 8
 y 3
 end
-arch shop_alchemy
+arch potion_restoration
+x 8
+y 3
+end
+arch shop_empty
 x 8
 y 4
 end
-arch shop_alchemy
+arch wwall_1_3
+x 8
+y 4
+end
+arch shop_empty
 x 8
 y 5
 end
-arch shop_alchemy
+arch statue2
+x 8
+y 5
+end
+arch shop_empty
 x 8
 y 6
 end
@@ -735,31 +987,49 @@ arch shop_empty
 x 8
 y 8
 end
-arch shop_potions
+arch shop_empty
 x 8
 y 9
 end
-arch shop_potions
+arch shop_empty
 x 8
 y 10
 end
-arch shop_potions
+arch shop_empty
 x 8
 y 11
 end
-arch shop_potions
+arch wwall_1_3
+x 8
+y 11
+end
+arch shop_empty
 x 8
 y 12
 end
-arch shop_potions
+arch potiondex
+x 8
+y 12
+end
+arch shop_empty
 x 8
 y 13
 end
-arch shop_potions
+arch wwall_1_3
+x 8
+y 13
+end
+arch shop_empty
 x 8
 y 14
 end
-arch woodfloor
+arch random_potion
+hp 40
+x 8
+y 14
+unpaid 1
+end
+arch shop_empty
 x 8
 y 15
 end
@@ -767,7 +1037,7 @@ arch wwall_2_1_2
 x 8
 y 15
 end
-arch woodfloor
+arch shop_empty
 x 9
 end
 arch wwall_2_1_2
@@ -784,6 +1054,24 @@ end
 arch shop_empty
 x 9
 y 3
+end
+arch creator
+name supreme potion of life
+x 9
+y 3
+connected 108
+lifesave 1
+arch potion_restoration
+unpaid 1
+end
+end
+arch button_lever
+name supreme potion of life
+face teleporter.111
+animation teleporter
+x 9
+y 3
+connected 108
 end
 arch shop_empty
 x 9
@@ -821,15 +1109,33 @@ arch shop_empty
 x 9
 y 12
 end
+arch creator
+name potion of dexterity
+x 9
+y 12
+connected 109
+lifesave 1
+arch potiondex
+unpaid 1
+end
+end
+arch button_lever
+name potion of dexterity
+face teleporter.111
+animation teleporter
+x 9
+y 12
+connected 109
+end
 arch shop_empty
 x 9
 y 13
 end
-arch shop_potions
+arch shop_empty
 x 9
 y 14
 end
-arch woodfloor
+arch shop_empty
 x 9
 y 15
 end
@@ -837,33 +1143,33 @@ arch wwall_2_1_2
 x 9
 y 15
 end
-arch woodfloor
+arch shop_empty
 x 10
 end
 arch wwall_2_1_2
 x 10
 end
-arch shop_potions
+arch shop_empty
 x 10
 y 1
 end
-arch shop_potions
+arch shop_empty
 x 10
 y 2
 end
-arch shop_potions
+arch shop_empty
 x 10
 y 3
 end
-arch shop_alchemy
+arch shop_empty
 x 10
 y 4
 end
-arch shop_alchemy
+arch shop_empty
 x 10
 y 5
 end
-arch shop_alchemy
+arch shop_empty
 x 10
 y 6
 end
@@ -875,31 +1181,31 @@ arch shop_empty
 x 10
 y 8
 end
-arch shop_potions
+arch shop_empty
 x 10
 y 9
 end
-arch shop_potions
+arch shop_empty
 x 10
 y 10
 end
-arch shop_potions
+arch shop_empty
 x 10
 y 11
 end
-arch shop_potions
+arch shop_empty
 x 10
 y 12
 end
-arch shop_potions
+arch shop_empty
 x 10
 y 13
 end
-arch shop_potions
+arch shop_empty
 x 10
 y 14
 end
-arch woodfloor
+arch shop_empty
 x 10
 y 15
 end
@@ -907,13 +1213,13 @@ arch wwall_2_1_2
 x 10
 y 15
 end
-arch woodfloor
+arch shop_empty
 x 11
 end
 arch wwall_3_3
 x 11
 end
-arch woodfloor
+arch shop_empty
 x 11
 y 1
 end
@@ -921,7 +1227,7 @@ arch wwall_2_1_1
 x 11
 y 1
 end
-arch woodfloor
+arch shop_empty
 x 11
 y 2
 end
@@ -929,7 +1235,7 @@ arch wwall_2_1_1
 x 11
 y 2
 end
-arch woodfloor
+arch shop_empty
 x 11
 y 3
 end
@@ -937,7 +1243,7 @@ arch wwall_2_1_1
 x 11
 y 3
 end
-arch woodfloor
+arch shop_empty
 x 11
 y 4
 end
@@ -945,7 +1251,7 @@ arch wwall_2_1_1
 x 11
 y 4
 end
-arch woodfloor
+arch shop_empty
 x 11
 y 5
 end
@@ -953,7 +1259,7 @@ arch wwall_2_1_1
 x 11
 y 5
 end
-arch woodfloor
+arch shop_empty
 x 11
 y 6
 end
@@ -969,7 +1275,7 @@ arch shop_empty
 x 11
 y 8
 end
-arch woodfloor
+arch shop_empty
 x 11
 y 9
 end
@@ -981,7 +1287,7 @@ arch woodfloor
 x 11
 y 10
 end
-arch woodfloor
+arch shop_empty
 x 11
 y 10
 end
@@ -989,7 +1295,7 @@ arch wwall_2_1_1
 x 11
 y 10
 end
-arch woodfloor
+arch shop_empty
 x 11
 y 11
 end
@@ -997,7 +1303,7 @@ arch wwall_2_1_1
 x 11
 y 11
 end
-arch woodfloor
+arch shop_empty
 x 11
 y 12
 end
@@ -1005,15 +1311,15 @@ arch wwall_2_1_1
 x 11
 y 12
 end
-arch woodfloor
+arch shop_empty
 x 11
 y 13
 end
-arch wwall_win1
+arch wwall_2_1_1
 x 11
 y 13
 end
-arch woodfloor
+arch shop_empty
 x 11
 y 14
 end
@@ -1021,7 +1327,7 @@ arch wwall_2_1_1
 x 11
 y 14
 end
-arch woodfloor
+arch shop_empty
 x 11
 y 15
 end

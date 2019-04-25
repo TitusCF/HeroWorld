@@ -5957,9 +5957,25 @@ arch afloor_blue_left
 x 28
 y 4
 end
-arch afloor_magenta_left
+arch flagstone
 x 28
 y 5
+end
+arch chest
+name magic bomb
+name_pl unlit bombs
+face bomb.111
+x 28
+y 5
+nrof 1
+value 25
+weight 4000
+randomitems none
+arch spell_create_bomb
+msg
+endmsg
+level 60
+end
 end
 arch afloor_blue_left
 x 28

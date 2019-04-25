@@ -152,13 +152,6 @@ arch shop_empty
 x 1
 y 5
 end
-arch random_plant
-hp 40
-x 1
-y 5
-unpaid 1
-identified 1
-end
 arch shop_empty
 x 1
 y 6
@@ -192,15 +185,6 @@ end
 arch shop_empty
 x 1
 y 10
-end
-arch random_mineral
-hp 40
-x 1
-y 10
-randomitems random_minerals
-unpaid 1
-auto_apply 0
-identified 1
 end
 arch shop_empty
 x 1
@@ -1027,13 +1011,6 @@ arch shop_empty
 x 8
 y 14
 end
-arch random_potion
-hp 40
-x 8
-y 14
-unpaid 1
-identified 1
-end
 arch shop_empty
 x 8
 y 15
@@ -1625,30 +1602,13 @@ arch woodfloor
 x 14
 y 6
 end
-arch pedestal
-x 14
-y 6
-invisible 1
-connected 11
-end
 arch woodfloor
 x 14
 y 7
 end
-arch mdoor_closed_1
-x 14
-y 7
-connected 11
-end
 arch woodfloor
 x 14
 y 8
-end
-arch check_floor
-slaying potion_shop1
-x 14
-y 8
-connected 11
 end
 arch woodfloor
 x 14
@@ -1909,25 +1869,6 @@ end
 arch woodfloor
 x 16
 y 9
-end
-arch trigger_marker
-slaying potion_shop1
-msg
-You have one day's use of these facilities.
-endmsg
-food 504
-x 16
-y 9
-speed 1.0
-connected 10
-end
-arch altar_trigger
-name Day Pass
-slaying money
-food 10000
-x 16
-y 9
-connected 10
 end
 arch woodfloor
 x 16

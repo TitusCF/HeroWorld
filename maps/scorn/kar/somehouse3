@@ -6,6 +6,7 @@ msg
 Creator:
 Email:
 Date: Fri Oct 15 17:39:31 1993
+Modified: 2019-04-26 Acer
 endmsg
 end
 arch dirtfloor
@@ -551,9 +552,6 @@ GO AWAY!
 you know Gork? You friend of Gork?
 @match yes|friend
 I bet Gork send you to get key.  Did he?
-@match send
-@trigger 9
-Ok, I give you key.  Here, it in corner.
 @match *
 Leave me alone... <grumble>
 endmsg
@@ -572,6 +570,15 @@ end
 arch dirtfloor
 x 5
 y 10
+end
+arch magic_ear
+msg
+@match send
+Ok, I give you key.  Here, it in corner.
+endmsg
+x 5
+y 10
+connected 9
 end
 arch dirtfloor
 x 5

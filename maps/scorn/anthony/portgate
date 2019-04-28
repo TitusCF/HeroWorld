@@ -847,13 +847,13 @@ arch check_floor
 slaying port_pass
 x 7
 y 2
-connected 12
+connected 10
 end
 arch check_floor
 slaying hero_of_scorn
 x 7
 y 2
-connected 12
+connected 10
 end
 arch dungeon_floor
 x 7
@@ -863,6 +863,7 @@ arch grate_closed_1
 x 7
 y 3
 connected 10
+activate_on_release 0
 end
 arch magic_mouth
 msg
@@ -928,7 +929,7 @@ end
 arch trigger
 x 7
 y 8
-connected 12
+connected 10
 end
 arch dungeon_floor
 x 7
@@ -938,6 +939,7 @@ arch grate_closed_1
 x 7
 y 9
 connected 10
+activate_on_release 0
 end
 arch dungeon_floor
 x 7
@@ -947,13 +949,13 @@ arch check_floor
 slaying port_pass
 x 7
 y 10
-connected 12
+connected 10
 end
 arch check_floor
 slaying hero_of_scorn
 x 7
 y 10
-connected 12
+connected 10
 end
 arch cobblestones2
 x 7
@@ -991,13 +993,13 @@ arch check_floor
 slaying port_pass
 x 8
 y 2
-connected 12
+connected 10
 end
 arch check_floor
 slaying hero_of_scorn
 x 8
 y 2
-connected 12
+connected 10
 end
 arch dungeon_floor
 x 8
@@ -1007,6 +1009,7 @@ arch grate_closed_1
 x 8
 y 3
 connected 10
+activate_on_release 0
 end
 arch dungeon_floor
 x 8
@@ -1036,6 +1039,7 @@ arch grate_closed_1
 x 8
 y 9
 connected 10
+activate_on_release 0
 end
 arch dungeon_floor
 x 8
@@ -1045,13 +1049,13 @@ arch check_floor
 slaying port_pass
 x 8
 y 10
-connected 12
+connected 10
 end
 arch check_floor
 slaying hero_of_scorn
 x 8
 y 10
-connected 12
+connected 10
 end
 arch cobblestones2
 x 8
@@ -1093,13 +1097,13 @@ arch check_floor
 slaying port_pass
 x 9
 y 2
-connected 12
+connected 10
 end
 arch check_floor
 slaying hero_of_scorn
 x 9
 y 2
-connected 12
+connected 10
 end
 arch dungeon_floor
 x 9
@@ -1109,6 +1113,7 @@ arch grate_closed_1
 x 9
 y 3
 connected 10
+activate_on_release 0
 end
 arch dungeon_floor
 x 9
@@ -1142,6 +1147,7 @@ arch grate_closed_1
 x 9
 y 9
 connected 10
+activate_on_release 0
 end
 arch dungeon_floor
 x 9
@@ -1151,13 +1157,13 @@ arch check_floor
 slaying port_pass
 x 9
 y 10
-connected 12
+connected 10
 end
 arch check_floor
 slaying hero_of_scorn
 x 9
 y 10
-connected 12
+connected 10
 end
 arch cobblestones2
 x 9
@@ -1195,13 +1201,13 @@ arch check_floor
 slaying port_pass
 x 10
 y 2
-connected 12
+connected 10
 end
 arch check_floor
 slaying hero_of_scorn
 x 10
 y 2
-connected 12
+connected 10
 end
 arch dungeon_floor
 x 10
@@ -1211,6 +1217,7 @@ arch grate_closed_1
 x 10
 y 3
 connected 10
+activate_on_release 0
 end
 arch dungeon_floor
 x 10
@@ -1219,7 +1226,7 @@ end
 arch trigger
 x 10
 y 4
-connected 12
+connected 10
 end
 arch dungeon_floor
 x 10
@@ -1278,6 +1285,7 @@ arch grate_closed_1
 x 10
 y 9
 connected 10
+activate_on_release 0
 end
 arch dungeon_floor
 x 10
@@ -1287,13 +1295,13 @@ arch check_floor
 slaying port_pass
 x 10
 y 10
-connected 12
+connected 10
 end
 arch check_floor
 slaying hero_of_scorn
 x 10
 y 10
-connected 12
+connected 10
 end
 arch cobblestones2
 x 10
@@ -1614,58 +1622,6 @@ end
 arch mine17
 x 13
 y 6
-end
-arch magic_ear
-x 13
-y 7
-end
-arch mapscript
-msg
-if ($activator == $self) {
-   # timer
-   if ($self->{state} == 1) {
-      $self->{state} = 2;
-      timer $self, 10;
-      trigger 10, 1;
-   } else {
-      $self->{state} = 0;
-      trigger 10, 0;
-   }
-} elsif (!$self->{state}) {
-   $self->{state} = 1;
-   timer $self, 1;
-
-   if ($activator) {
-      if ($activator->slaying eq "hero_of_scorn") {
-         $self->say_msg (<<EOF);
-The guard, seeing that the G<Hero|Heroine> approaches,
-runs to turn the handle to open the gate.
-EOF
-      } elsif ($activator->slaying eq "port_pass") {
-         $self->say_msg (<<EOF);
-On seeing you have a port pass the guard
-turns a rusty handle and says...
-Everything appears in order. Pass friend.
-EOF
-      } elsif ($state == 2) { # npcs
-         # say nothing, as the npc doubtlessly already did so
-      } else {
-         # lever, also quiet
-      }
-
-      $self->say_msg (<<EOF);
-You hear from behind the eastern wall,
-a loud noise as ancient machinery is
-set in motion to move the rusty gates.
-EOF
-   }
-} else {
-   # gate already down or moving down currently
-}
-endmsg
-x 13
-y 7
-connected 12
 end
 arch mine17
 x 13

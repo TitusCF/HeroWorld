@@ -8,7 +8,7 @@ msg
 Creator: Anthony Thyssen
 Email: anthony@cit.gu.edu.au
 Date: Mon Dec 28 16:21:37 1998
-Modified: 2019-03-16 Acer
+Modified: 2019-04-28 Acer
 endmsg
 end
 arch woodfloor
@@ -127,11 +127,11 @@ y 1
 connected 20
 lifesave 1
 activate_on_release 0
-arch card
+arch brown_key
 name Gate Pass
+name_pl Gate Passes
 slaying gate_pass
-value 800
-identified 1
+face card.111
 end
 end
 arch woodfloor
@@ -369,14 +369,10 @@ Klang, Click, Bzzzt!
 endmsg
 face goldfloor.111
 animation goldfloor
-food 10000
+food 1000
 x 4
 y 1
 connected 10
-end
-arch woodfloor
-x 4
-y 2
 end
 arch woodfloor
 x 4
@@ -524,9 +520,11 @@ y 1
 connected 10
 lifesave 1
 activate_on_release 0
-arch card
+arch brown_key
 name Port Pass
+name_pl Port Passes
 slaying port_pass
+face card.111
 value 2500
 identified 1
 end

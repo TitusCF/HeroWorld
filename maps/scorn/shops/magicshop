@@ -12,7 +12,7 @@ msg
 Creator:
 Email:
 Date: Fri Oct 15 13:54:01 1993
-Modified: 2019-04-02 Acer
+Modified: 2019-04-30 Acer
 endmsg
 end
 arch shop_empty
@@ -1356,24 +1356,30 @@ x 15
 y 12
 end
 arch altar
-name altar of detect magic
+name altar of detect magic (2 platinum)
 slaying money
 sp 76
 food 100
 x 15
 y 12
+activate_on_release 0
+arch spell_detect_magic
+end
 end
 arch woodfloor
 x 15
 y 13
 end
 arch altar
-name altar of detect curse
+name altar of detect curse (5 platinum)
 slaying money
 sp 79
 food 250
 x 15
 y 13
+activate_on_release 0
+arch spell_detect_curse
+end
 end
 arch woodfloor
 x 15

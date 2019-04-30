@@ -1,15 +1,16 @@
 arch map
 name Nethack_in_crossfire_entrance
+difficulty 9999
+width 16
+height 16
+enter_x 1
+enter_y 1
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun May  6 21:39:27 2001
+Modified: 2019-04-30 Acer
 endmsg
-enter_x 1
-enter_y 1
-width 16
-height 16
-difficulty 9999
 end
 arch woodfloor
 end
@@ -133,10 +134,10 @@ x 1
 y 3
 end
 arch grate_closed_1
-speed 0.500000
-connected 2
 x 1
 y 3
+speed 0.500000
+connected 2
 end
 arch dungeon_magic
 x 1
@@ -148,9 +149,9 @@ y 4
 end
 arch check_inv
 slaying Amulet of Yendor
-connected 2
 x 1
 y 4
+connected 2
 end
 arch woodfloor
 x 1
@@ -165,6 +166,7 @@ x 1
 y 6
 end
 arch stair_down_2
+slaying /!
 msg
 layoutstyle rogue
 floorstyle lightdirt
@@ -180,7 +182,6 @@ orientation 1
 final_map /quests/peterm/Nethack_in_crossfire_Yendor
 treasureoptions 73
 endmsg
-slaying /!
 x 1
 y 6
 end
@@ -197,6 +198,7 @@ x 1
 y 8
 end
 arch stair_down_2
+slaying /!
 msg
 layoutstyle rogue
 floorstyle lightdirt
@@ -212,7 +214,6 @@ orientation 1
 final_map /quests/peterm/Nethack_in_crossfire_Yendor
 treasureoptions 73
 endmsg
-slaying /!
 x 1
 y 8
 end
@@ -229,6 +230,7 @@ x 1
 y 10
 end
 arch stair_down_2
+slaying /!
 msg
 layoutstyle rogue
 floorstyle lightdirt
@@ -244,7 +246,6 @@ orientation 1
 final_map /quests/peterm/Nethack_in_crossfire_Yendor
 treasureoptions 73
 endmsg
-slaying /!
 x 1
 y 10
 end
@@ -261,6 +262,7 @@ x 1
 y 12
 end
 arch stair_down_2
+slaying /!
 msg
 layoutstyle rogue
 floorstyle lightdirt
@@ -276,7 +278,6 @@ orientation 1
 final_map /quests/peterm/Nethack_in_crossfire_Yendor
 treasureoptions 73
 endmsg
-slaying /!
 x 1
 y 12
 end
@@ -293,6 +294,7 @@ x 1
 y 14
 end
 arch stair_down_2
+slaying /!
 msg
 layoutstyle rogue
 floorstyle lightdirt
@@ -308,7 +310,6 @@ orientation 1
 final_map /quests/peterm/Nethack_in_crossfire_Yendor
 treasureoptions 73
 endmsg
-slaying /!
 x 1
 y 14
 end
@@ -371,10 +372,10 @@ x 2
 y 6
 end
 arch grate_closed_2
+x 2
+y 6
 speed 0.500000
 connected 3
-x 2
-y 6
 end
 arch dungeon_magic
 x 2
@@ -393,10 +394,10 @@ x 2
 y 8
 end
 arch grate_closed_2
+x 2
+y 8
 speed 0.500000
 connected 4
-x 2
-y 8
 end
 arch dungeon_magic
 x 2
@@ -415,10 +416,10 @@ x 2
 y 10
 end
 arch grate_closed_2
+x 2
+y 10
 speed 0.500000
 connected 5
-x 2
-y 10
 end
 arch dungeon_magic
 x 2
@@ -437,10 +438,10 @@ x 2
 y 12
 end
 arch grate_closed_2
+x 2
+y 12
 speed 0.500000
 connected 6
-x 2
-y 12
 end
 arch dungeon_magic
 x 2
@@ -459,10 +460,10 @@ x 2
 y 14
 end
 arch grate_closed_2
-speed 0.500000
-connected 7
 x 2
 y 14
+speed 0.500000
+connected 7
 end
 arch dungeon_magic
 x 2
@@ -511,9 +512,9 @@ x 3
 y 6
 end
 arch button_handle
-connected 3
 x 3
 y 6
+connected 3
 end
 arch woodfloor
 x 3
@@ -524,9 +525,9 @@ x 3
 y 8
 end
 arch button_handle
-connected 4
 x 3
 y 8
+connected 4
 end
 arch woodfloor
 x 3
@@ -537,9 +538,9 @@ x 3
 y 10
 end
 arch button_handle
-connected 5
 x 3
 y 10
+connected 5
 end
 arch woodfloor
 x 3
@@ -550,9 +551,9 @@ x 3
 y 12
 end
 arch button_handle
-connected 6
 x 3
 y 12
+connected 6
 end
 arch woodfloor
 x 3
@@ -563,9 +564,9 @@ x 3
 y 14
 end
 arch button_handle
-connected 7
 x 3
 y 14
+connected 7
 end
 arch woodfloor
 x 3
@@ -809,10 +810,6 @@ x 6
 y 4
 end
 arch woodfloor
-x 6
-y 5
-end
-arch shop_empty
 x 6
 y 5
 end
@@ -1269,11 +1266,11 @@ end
 arch teleporter
 hp 11
 sp 1
+x 9
+y 2
 speed 0.000000
 connected 1
 damned 1
-x 9
-y 2
 end
 arch woodfloor
 x 9
@@ -1402,9 +1399,9 @@ msg
 @match Understood
 Click.
 endmsg
-connected 1
 x 10
 y 2
+connected 1
 end
 arch woodfloor
 x 10
@@ -1855,9 +1852,9 @@ x 14
 y 1
 end
 arch woodfloor
-unique 1
 x 14
 y 1
+unique 1
 end
 arch bed_save
 x 14

@@ -7,7 +7,7 @@ enter_x 20
 enter_y 38
 msg
 - 2010-03-30 21:05:36 BST by Lemoner: Done key system, beds to reality, gate system.
-Modified: 2019-03-24 Acer
+Modified: 2019-04-30 Acer
 endmsg
 outdoor 1
 end
@@ -11894,7 +11894,7 @@ unique 1
 end
 arch sign
 msg
-Service keys are needed to use the crafting rooms upstairs and storage room.
+Service keys are needed to use the crafting rooms upstairs.
 endmsg
 x 32
 y 14
@@ -12471,7 +12471,7 @@ x 33
 y 34
 end
 arch goldflagstone
-name Pay 1 Platinum for NetHack in Deliantra
+name Pay 1 Platinum for NetHack in Crossfire
 slaying money
 food 10000
 x 33
@@ -12646,11 +12646,12 @@ y 11
 end
 arch altar
 name Purchase Regular Key - 1 Platinum
-slaying diamond
-food 1000
+slaying money
+food 50
 x 34
 y 11
 connected 101
+activate_on_release 0
 end
 arch creator
 x 34
@@ -12691,11 +12692,12 @@ y 14
 end
 arch altar
 name Purchase Services Key - 10 Platinum
-slaying platinum
-food 1250
+slaying money
+food 500
 x 34
 y 14
 connected 102
+activate_on_release 0
 end
 arch creator
 x 34
@@ -12734,12 +12736,13 @@ x 34
 y 17
 end
 arch altar
-name Purchase Master Key - 1 Royalty
+name Purchase Master Key - (2k Platinum)
 slaying platinum
 food 10000
 x 34
 y 17
 connected 103
+activate_on_release 0
 end
 arch creator
 x 34
@@ -12770,7 +12773,7 @@ x 34
 y 19
 end
 arch goldflagstone
-name Buy a Silver to Gold converter
+name Buy a Silver to Gold converter (1,000 platinum)
 slaying money
 food 50000
 x 34
@@ -12783,6 +12786,8 @@ other_arch silver_converter
 x 34
 y 19
 connected 111
+arch silver_converter
+end
 end
 arch dungeon_magic
 x 34
@@ -12798,7 +12803,7 @@ x 34
 y 21
 end
 arch goldflagstone
-name Buy a Gold to Platinum converter
+name Buy a Gold to Platinum converter (1,000 platinum)
 slaying money
 food 50000
 x 34
@@ -12811,6 +12816,8 @@ other_arch gold_converter
 x 34
 y 21
 connected 112
+arch gold_converter
+end
 end
 arch dungeon_magic
 x 34
@@ -12835,7 +12842,7 @@ x 34
 y 24
 end
 arch goldflagstone
-name Buy a Platinum to Gold converter
+name Buy a Platinum to Gold converter (1,000 platinum)
 slaying money
 food 50000
 x 34
@@ -12848,6 +12855,8 @@ other_arch platinum_converter
 x 34
 y 24
 connected 113
+arch platinum_converter
+end
 end
 arch dungeon_magic
 x 34
@@ -12863,7 +12872,7 @@ x 34
 y 26
 end
 arch goldflagstone
-name Buy a Platinum to Royalty converter
+name Buy a Platinum to Jade converter (1,000 platinum)
 slaying money
 food 50000
 x 34
@@ -12876,6 +12885,8 @@ other_arch platinum_converter3
 x 34
 y 26
 connected 114
+arch platinum_converter2
+end
 end
 arch dungeon_magic
 x 34

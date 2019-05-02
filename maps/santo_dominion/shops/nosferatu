@@ -1,15 +1,16 @@
 arch map
-region santodominion
 name nosferatu
+difficulty 10
+region santodominion
+shopitems amulet:40;ring:40;potion:40;book:40;scroll:40;spellbook:40;skillscroll:30;wand:40;*:-50
+width 20
+height 21
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Feb 12 22:40:17 1994
+Modified: 2019-05-02 Acer
 endmsg
-difficulty 10
-width 20
-height 21
-shopitems amulet:40;ring:40;potion:40;book:40;scroll:40;spellbook:40;skillscroll:30;wand:40;*:-50
 end
 arch flagstone
 end
@@ -231,6 +232,9 @@ sp 76
 food 100
 x 1
 y 17
+activate_on_release 0
+arch spell_detect_magic
+end
 end
 arch flagstone
 x 1
@@ -243,6 +247,9 @@ sp 79
 food 250
 x 1
 y 18
+activate_on_release 0
+arch spell_detect_curse
+end
 end
 arch flagstone
 x 1

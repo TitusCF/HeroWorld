@@ -47,7 +47,7 @@ conversionfactorjade=5000
 conversionfactoramber=50*10000
 
 #EASILY SETTABLE PARAMETERS
-service_charge = 1    # service charges for transactions as a percent
+service_charge = 0    # service charges for transactions as a percent
 
 bankdatabase = "ImperialBank_DB"
 

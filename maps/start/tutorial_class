@@ -9,7 +9,7 @@ msg
 Creator: Marc Lehmann
 Email: schmorp@schmorp.de
 Date: Mon Dec  8 22:11:34 CET 2008
-Modified: 2019-04-21 Acer
+Modified: 2019-05-14 Acer
 endmsg
 end
 arch grass
@@ -418,6 +418,8 @@ msg
 Here you can select a different face for your character
 
 
+
+
 You can also stick with the original face you have chosen by going to the end of the hall.
 endmsg
 x 4
@@ -513,10 +515,14 @@ end
 arch grass
 x 5
 end
-arch wall_1_4
+arch swall_2_2_2
 x 5
 end
 arch grass
+x 5
+y 1
+end
+arch swall_2_1_1
 x 5
 y 1
 end
@@ -524,7 +530,15 @@ arch grass
 x 5
 y 2
 end
+arch swall_2_1_1
+x 5
+y 2
+end
 arch grass
+x 5
+y 3
+end
+arch swall_1_2_half
 x 5
 y 3
 end
@@ -607,16 +621,45 @@ end
 arch grass
 x 6
 end
-arch wall_2_1_2
+arch swall_2_1_2
 x 6
 end
 arch grass
 x 6
 y 1
 end
+arch note
+name quetzalcoatl
+face quetzalcoatl.131
+x 6
+y 1
+no_pick 1
+end
 arch grass
 x 6
 y 2
+end
+arch player_changer
+slaying /start/tutorial_class
+hp 37
+sp 5
+x 6
+y 2
+arch sorcerer_class
+name quetzalcoatl
+msg
+endmsg
+face quetzalcoatl.131
+animation quetzalcoatl_player
+Str 0
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Int 0
+randomitems none
+anim_suffix no_class
+end
 end
 arch grass
 x 6
@@ -712,10 +755,14 @@ end
 arch grass
 x 7
 end
-arch swall_2_1_2
+arch swall_3_3
 x 7
 end
 arch grass
+x 7
+y 1
+end
+arch swall_2_1_1
 x 7
 y 1
 end
@@ -723,7 +770,15 @@ arch grass
 x 7
 y 2
 end
+arch swall_2_1_1
+x 7
+y 2
+end
 arch grass
+x 7
+y 3
+end
+arch swall_1_2_half
 x 7
 y 3
 end
@@ -811,9 +866,38 @@ arch grass
 x 8
 y 1
 end
+arch note
+name dragon
+face pl_dragon_r.151
+x 8
+y 1
+no_pick 1
+end
 arch grass
 x 8
 y 2
+end
+arch player_changer
+slaying /start/tutorial_class
+hp 37
+sp 5
+x 8
+y 2
+arch sorcerer_class
+name dragon
+msg
+endmsg
+face pl_dragon_r.151
+animation pl_dragon_r
+Str 0
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Int 0
+randomitems none
+anim_suffix no_class
+end
 end
 arch grass
 x 8
@@ -1247,7 +1331,7 @@ x 12
 y 1
 end
 arch note
-name demon
+name leech
 face leech.171
 x 12
 y 1
@@ -5498,6 +5582,14 @@ x 51
 y 4
 end
 arch dungeon_floor
+x 51
+y 5
+end
+arch sign
+msg
+Wouldn't it be cool if I let you play as this
+guy?
+endmsg
 x 51
 y 5
 end

@@ -62,7 +62,7 @@ text = Crossfire.WhatIsMessage().split()
 
 if text[0] == 'help' or text[0] == 'yes':
 	# split the help message in two parts to prevent the server from truncating it.
-	whoami.Say('How can I help you?)
+	whoami.Say('How can I help you?')
 	whoami.Say('- pen (%s platinum)\n- literacy scroll (%s platinum)'%(priceWritingPen,priceScrollOfLiteracy))
 	whoami.Say('You can send letters to friends:\n')
 	whoami.Say('- mailscroll <friend> (%s platinum)'%(priceMailScroll))

@@ -66,10 +66,7 @@ if text[0] == 'help' or text[0] == 'yes':
 	whoami.Say('- pen (%s platinum)\n- literacy scroll (%s platinum)'%(priceWritingPen,priceScrollOfLiteracy))
 	whoami.Say('You can send letters to friends:\n')
 	whoami.Say('- mailscroll <friend> (%s platinum)'%(priceMailScroll))
-	whoami.Say('You can also send items:')
-	whoami.Say('bag <friend>: 5 platinum')
-	whoami.Say('package <friend>: 50 platinum')
-	whoami.Say('carton <friend>: 200 platinum')
+	whoami.Say('You can also send items:\nBag <friend>: 5 platinum\nPackage <friend>: 50 platinum\nCarton <friend>: 200 platinum')
 	for pack in packages.keys():
 		# weight is in grams, so need to convert.
 		whoami.Say('- %s (max weight: %d kg, price: %d platinum)'%(pack, packages[pack][1] / 1000, packages[pack][0]))

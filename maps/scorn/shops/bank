@@ -8,7 +8,7 @@ msg
 Creator: skud the great
 Email: tvangod@ecst.csuchico.edu
 Date: Sun Oct 10 17:09:35 1993
-Modified: 2019-04-16 Acer
+Modified: 2019-05-14 Acer
 endmsg
 end
 arch dungeon_magic
@@ -498,7 +498,7 @@ arch cobblestones2
 x 3
 y 4
 end
-arch cwall_2_1_1
+arch cwall_3_2
 x 3
 y 4
 end
@@ -711,6 +711,10 @@ arch cobblestones2
 x 4
 y 4
 end
+arch cwall_1_3
+x 4
+y 4
+end
 arch dungeon_magic
 x 4
 y 5
@@ -875,11 +879,39 @@ arch cobblestones2
 x 5
 y 3
 end
+arch chair_2.1
+x 5
+y 3
+end
+arch c_woman
+name Alwati
+msg
+@match *
+I'm on a break.
+endmsg
+x 5
+y 3
+monster 0
+stand_still 1
+arch event_say
+title Python
+slaying /python/IPO/banksay.py
+end
+end
 arch dungeon_magic
 x 5
 y 4
 end
 arch cobblestones2
+x 5
+y 4
+end
+arch table
+x 5
+y 4
+move_block all
+end
+arch dungeon_magic
 x 5
 y 4
 end
@@ -1061,6 +1093,10 @@ x 6
 y 4
 end
 arch cobblestones2
+x 6
+y 4
+end
+arch cwall_1_4
 x 6
 y 4
 end
@@ -1257,7 +1293,7 @@ arch cobblestones2
 x 7
 y 4
 end
-arch cwall_3_2
+arch cwall_4
 x 7
 y 4
 end

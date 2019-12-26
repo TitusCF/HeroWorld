@@ -2,16 +2,30 @@
 Create a command which allows players to leave their cult without
 needing to join another. There will be a penalty equal to the penalty
 associated with changing cults.
+Example Command: Forsake Religion
 
 2)
 Expand 'Consecrate' spell so that when it is cast by a player who belongs
-to no cult, he is given the option to consecrate that altar to himself.
-This has the effect of generating a 'Cult of PLAYER NAME' and turning that altar
+to no cult, he is given the option to attempt a consecration of that altar to himself.
+
+(attempt apotheosis?: y/n)
+
+(Chance of successful attempt could be based on the quantity of maxed, base statistics
+a character has, from 1%-95%, Failure destroys alter)
+
+This has the effect of generating a 'Cult of <PLAYER NAME>' and turning that altar
 into the first altar for that religion.
+
+(alter of <PLAYER NAME>)
+
 Before the player(you)is able to step off the altar being consecrated, you are prompted
 with a series of options related to the specific buffs of your cult:
 You are prompted to select two general stats and either four resistance stats
 OR three resisances and one special to be the buffs related to your new cult.
+
+(select your base cult attribute: <BASE STATS>) X appropriate number
+(select your cult resistances: <LIST OF ENERGY TYPES) X appropriate number
+
 After making this selection you are free to step off your new altar.
 Consecration of blank altars by you or members of your cult will result in creating more
 altars associated with your cult.
@@ -21,7 +35,7 @@ You will recieve a percentage buff to the stats you selected which is calculated
 statistic + a percentage determined by the average level of followers you are able to attract 
 to your cult.
 
-Avg Lvl: 0-1  =  -10% buff
+Avg Lvl: 0-1  =  -1% buff
 	2-5 =   2% buff
 	5-10 =  5%
 	10-20 = 10%
@@ -48,8 +62,12 @@ Cult members are expected to recieve feedback as their buffs increase or decreas
 Cult Spells:
 
 At any time a Demigod player is able to cast a spell or prayer over one of their own altar,
-this will prompt the game to ask if the would like that spell to be the spell or prayer
+this will prompt the game to ask if the would like that spell/prayer to be the prayer
 available to suffiently powerful cult members.
+
+(upon spell cast; make this power available to your followers? y/n, grace determines success,
+failure destroys altar)
+
 Perhaps a relationship between the casting level of the demigod to the grace requirement?
 Demigods may use this process to change their cults spell as many times as they would like.
 
@@ -60,10 +78,10 @@ Cult Items:
 At any time a Demigod player is able to bring an artifact to one of their altars and place it
 on the altar. Demigod casts 'Consecrate' which triggers a secondary effect having been cast by
 the demigod onto his own consecrated altar.
-Game asks player if they would like to destroy this item and make it their cults religious
-atifact. If yes, item is destroyed and becomes available as 'God-Given' to sufficiently powerful
-members of that cult.
-Perhaps a relationship between the item power level and grace level required to recieve the item?
+
+Item is destroyed and immediately made available as god-given, cult item.
+Perhaps a relationship between the item power level and grace level required to recieve the item to
+a cap available to high level, non-demigod prayer users?
 Demigod may use this process to change their cult item as many times as they would like.
 
 ------------------------------------------------------------------
@@ -72,9 +90,9 @@ Hardcore Mode + DemiGod:
 
 Demigods who also apply hardcore mode drop a corpse upon their death and their cult enters a
 temporary suspension (no new members, cult buffs suspended, all cult items vaporized, all cult spells
-deactivated until the corpse can be raised.) 
+deactivated until the corpse can be raised.)
 If corpse is reincarnated, new PC will assume the position held by their precursor 
-but will begin as a new Demigod-PC, cult items and spells remain intact. Cult activity will 
-return to normal for all members except that the buffs they recieved before reincarnated will 
-be decreased. 
+but will begin as a new Demigod-PC (let's make a new skin, cult items and spells remain intact. 
+Cult activity will return to normal for all members except that the buffs they recieved before reincarnated will 
+be decreased in proportion to the new demigod PC. 
 If corpse is simply raise_dead, cult activity returns as normal.

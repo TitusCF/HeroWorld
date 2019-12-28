@@ -1,0 +1,281 @@
+#! perl
+
+use strict;
+
+use Jeweler;
+use List::Util qw/max min sum/;
+
+sub ingred_alias {
+   my ($ing) = @_;
+
+   my %aliases = (
+      pow => 'power',
+      cha => 'charisma',
+      wis => 'wisdom',
+      int => 'intelligence',
+      dex => 'dexterity',
+      con => 'constitution',
+      str => 'strength',
+      gem => 'diamond',
+   );
+
+   if ($ing =~ m/resist_(\S+)/) {
+      my $a = $aliases{lc $1} || $1;
+      "something for '". lc ($a). "' resistance";
+
+   } elsif ($ing =~ m/stat_(\S+)/) {
+      my $a = $aliases{lc $1} || $1;
+      "something for the ". lc ($a). " stat";
+
+   } elsif ($ing =~ m/spec_(\S+)/) {
+      my $a = $aliases{lc $1} || $1;
+      "something for the ". lc ($a). "' special";
+
+   } elsif ($aliases{$ing}) {
+      $aliases{$ing}
+
+   } else {
+      $ing
+   }
+}
+
+my $DEBUG = 1;
+
+sub merge {
+   my ($chdl, $sk, $pl, $do_analyze) = @_;
+
+   my $ingred = get_ingred ($pl, $chdl) || return;
+
+   my @ring = $ingred->get_ring;
+   my @rings = map { Jeweler::Object->new (object => $_) } @ring;
+
+   @rings >= 2
+      or return $pl->message ("You slap yourself, you forgot to put at least 2 jewels in!");
+
+   my $input_level = 0;
+   my $value;
+   for (@rings) {
+      $input_level = max ($_->power_to_level, $input_level);
+      $value += $_->{hash}->{value};
+   }
+
+   my $ring = shift @rings;
+   $ring->improve_by_ring (@rings);
+
+   if ($do_analyze) {
+      $pl->message ("You want to make a " . $ring->to_string . ": " . $ring->analyze ($sk, $pl, $input_level));
+      $ring->wiz_analyze ($pl)
+         if $pl->flag (cf::FLAG_WIZ);
+      return;
+   }
+
+   make_ring ($chdl, $ingred, $ring, $value, $sk, $pl, $input_level);
+}
+
+sub make_ring {
+   my ($chdl, $ingred, $ring, $value, $sk, $pl, $input_level) = @_;
+
+   if (!$pl->flag (cf::FLAG_WIZ)) {
+      $ingred->remove ('rings');
+      $ingred->remove ('ammys');
+   }
+
+   my $ch = $ring->get_chance_perc ($sk);
+   my $succ = 0;
+   my $r = cf::random_roll (0, 100, $pl, cf::PREFER_LOW);
+
+   my $make_status;
+   my $exp;
+
+   if ($r <= $ch or $pl->flag (cf::FLAG_WIZ)) {
+      $exp = $ring->projected_exp ($input_level);
+
+      $pl->change_exp ($exp, "jeweler", cf::SK_EXP_SKILL_ONLY);
+      $pl->message (
+         "You succeed and get " . (int $exp) . " experience points.");
+      $make_status = "succeeded";
+
+      $ring->set_value ($value);
+
+   } else {
+      $pl->message ("You fail!");
+      $ring->negate;
+      $make_status = "fail";
+      $exp = 0;
+   }
+
+   my $ring_ob = $ring->to_object;
+
+   $ring_ob->kv_set (ext_jeweler_maker => $pl->name);
+
+   { # some audit info calculation
+      my $sklvl = cf::exp_to_level ($sk->stats->exp);
+
+      my $make_info = sprintf
+         "JEWELER AUDIT: '%s' made '%s' (%s) (sk lvl %d, ring lvl %d, got %d exp): %s",
+            $pl->name, $ring->to_string, $ring_ob->uuid, $sklvl,
+            $ring->power_to_level, $exp, $make_status;
+
+      cf::debug "$make_info\n"
+         if $make_status eq 'succeeded';
+   }
+
+   $chdl->put ($ring_ob);
+}
+
+sub get_ingred {
+   my ($pl, $chdl) = @_;
+   my $ingred = eval { $chdl->extract_jeweler_ingredients };
+   if ($@ =~ /cursed/) {
+      $pl->message ("There are cursed items in the workbench, take them out before you do anything.").
+      return
+   } elsif ($@ =~ /unidentified/) {
+      $pl->message ("There are unidentified items in the workbench, identify them before you do anything.").
+      return
+   } elsif ($@) {
+      cf::error "error in jeweler ingredient extraction: $@";
+      return;
+   }
+   $ingred;
+}
+
+cf::object::attachment check_ring_drop_on =>
+   on_drop_on => sub {
+      my ($self, $obj, $who) = @_;
+      my $cfg = $self->{check_ring_drop_on};
+      if ($obj->type == cf::RING
+          && !$obj->flag (cf::FLAG_CURSED)
+          && !$obj->flag (cf::FLAG_DAMNED)
+      ) {
+         my $ringo = Jeweler::Object->new (object => $obj);
+         for (grep { /^resist_/ } keys %$cfg) {
+            if (/^resist_(\S+)$/) {
+               if ($ringo->has_resist ($1)) {
+                  $self->map->trigger (
+                     $cfg->{connection},
+                     $cfg->{state}
+                  );
+                  $obj->decrease (1);
+                  cf::override;
+               }
+            }
+         }
+      }
+   };
+
+cf::object->attach (
+   type         => cf::SKILL,
+   subtype      => cf::SK_JEWELER,
+   on_use_skill => sub {
+      my ($sk, $ob, $part, $dir, $msg) = @_;
+      my $pl = $ob;
+
+      my $skobj = $sk;
+
+      my $chdl = new Jeweler::CauldronHandler;
+
+      my $rv = 1;
+      eval {
+         $DEBUG = 1;
+
+         my $player = $ob->contr;
+
+         unless ($chdl->find_cauldron ('jeweler_bench', $ob->map->at ($ob->x, $ob->y))) {
+            return;
+         }
+
+         cf::override;
+
+         if ($msg =~ m/^\s*analy[sz]e\s*$/i) {
+            Jeweler::analyze ($sk, $chdl, $pl);
+
+         } elsif ($msg =~ m/^\s*make\s*$/i) {
+            $pl->message ("You can make: " . (join ', ', keys %{Jeweler::getcfg ('conversions') || {}}));
+
+         } elsif ($msg =~ m/^\s*make\s+(\S+)\s*$/i) {
+            my $ingred = get_ingred ($pl, $chdl) || return;
+
+            unless ($Jeweler::CFG->{conversions}->{lc $1}) {
+               $pl->message ("You don't know how to make '$1', is does such a thing even exist?");
+               return
+            }
+
+            Jeweler::simple_converter (
+               $player, $ingred, $chdl, $1,
+               cf::exp_to_level ($sk->stats->exp));
+
+         } elsif ($msg =~ m/^\s*merge\s*analy[sz]e\s*$/i) {
+            merge ($chdl, $sk, $pl, 1);
+
+         } elsif ($msg =~ m/^\s*merge\s*$/i) {
+            merge ($chdl, $sk, $pl, 0);
+
+         } else {
+            my $ingred = get_ingred ($pl, $chdl) || return;
+
+            my $plan   = $ingred->get_plan;
+
+            if ($plan) {
+               my @ring = $ingred->get_ring;
+
+               if (!@ring) {
+                  # actually the algorithm cant
+                  $pl->message ("You slap yourself, you forgot the jewelery!");
+                  return;
+
+               } elsif ((@ring > 1) || (grep { $_->nrof > 1 } @ring)) {
+                  # actually the algorithm cant handle more than one improvement at a time
+                  $pl->message ("You can't manage to improve more than one thing at a time!");
+                  return;
+               } else {
+                  my $ringo = Jeweler::Object->new (object => $ring[0]);
+                  my $iring = $ingred->improve_ring_by_plan ($plan, $ringo);
+                  my $c1    = $ringo->calc_costs;
+                  my $c2    = $iring->calc_costs;
+                  my $value = $iring->calc_value_from_cost ($c2);
+
+                  if ((not defined $c1) || (not defined $c2)) {
+                     $pl->message ("The jewel has or will become a resistancy above 99%,\n"
+                                  ."that is completly impossible to make!");
+                     return;
+                  }
+
+                  my %keys;
+                  my %cdiff;
+                  for (keys %$c1, keys %$c2) { $keys{$_} = 1 }
+                  for (keys %keys) { $cdiff{$_} = $c2->{$_} - $c1->{$_}; }
+
+                  unless ($iring->is_better_than ($ringo)) {
+                     $pl->message ("This plan doesn't improve anything, you find yourself puzzled about what you missed...");
+                     return;
+                  }
+
+                  my $remcosts = $ingred->check_costs (\%cdiff);
+
+                  if (grep { $_ > 0 } values %$remcosts) {
+                     $pl->message ("You want to make a " . $iring->to_string . ": " . $iring->analyze ($sk, $pl));
+                     $pl->message ("You recognize that you are short of: "
+                        . (join ", ",
+                              map { my $cost = $remcosts->{$_}; $cost . " " . ($cost > 1 ? "times" : "time") . " " . ingred_alias ($_) }
+                                 grep { $remcosts->{$_} > 0 } keys %$remcosts));
+
+                     if ($pl->flag (cf::FLAG_WIZ)) {
+                        $iring->wiz_analyze ($pl);
+                     }
+                  } else {
+                     if (!$pl->flag (cf::FLAG_WIZ)) {
+                        $ingred->check_costs (\%cdiff, 1);
+                     }
+                     make_ring ($chdl, $ingred, $iring, $value, $sk, $pl);
+                  }
+               }
+            } else {
+               $pl->message ("You've got no idea what you are planning to do!");
+            }
+         }
+      };
+      $@ and cf::error "$@\n";
+   }
+);
+
+Jeweler::load_config;

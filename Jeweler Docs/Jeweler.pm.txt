@@ -1,0 +1,1191 @@
+=head1 NAME
+
+Jeweler
+
+=head1 DESCRIPTION
+
+The Jeweler skill helper module.
+
+=cut
+
+package Jeweler;
+
+use common::sense;
+
+=over 4
+
+=item @RESISTS
+
+List of all resistancies that can occur on rings and amulets.
+
+=cut
+
+our $CFG;
+
+sub load_config {
+   cf::trace "loading jeweler config from $cf::DATADIR/jeweler\n";
+
+   0 < Coro::AIO::aio_load "$cf::DATADIR/jeweler", my $data
+      or die "$cf::DATADIR/jeweler: $!";
+
+   $CFG = cf::decode_json $data;
+}
+
+sub getcfg {
+   my ($sect, $key) = @_;
+   return $CFG->{$sect} unless defined $key;
+
+   my $cfg = $CFG->{$sect}->{$key}
+      or die "Couldn't find $sect/$key in configuration!";
+
+   $cfg
+}
+
+our @RESISTS = (
+   cf::ATNR_PHYSICAL,
+   cf::ATNR_MAGIC,
+   cf::ATNR_FIRE,
+   cf::ATNR_ELECTRICITY,
+   cf::ATNR_COLD,
+   cf::ATNR_CONFUSION,
+
+   cf::ATNR_ACID,
+   cf::ATNR_DRAIN,
+   cf::ATNR_GHOSTHIT,
+   cf::ATNR_POISON,
+   cf::ATNR_SLOW,
+   cf::ATNR_PARALYZE,
+
+   cf::ATNR_TURN_UNDEAD,
+   cf::ATNR_FEAR,
+   cf::ATNR_DEPLETE,
+   cf::ATNR_DEATH,
+   cf::ATNR_HOLYWORD,
+   cf::ATNR_LIFE_STEALING,
+
+   cf::ATNR_BLIND,
+   cf::ATNR_DISEASE,
+);
+
+=item @EFFECT_RESISTS
+
+List of all effect resistancies that occur on rings and amulets.
+The difference is made because effect resistancies are less effective at lower levels.
+
+=back
+
+=cut
+
+our @EFFECT_RESISTS = (
+   cf::ATNR_CONFUSION,
+   cf::ATNR_DRAIN,
+   cf::ATNR_POISON,
+   cf::ATNR_SLOW,
+   cf::ATNR_PARALYZE,
+   cf::ATNR_TURN_UNDEAD,
+   cf::ATNR_FEAR,
+   cf::ATNR_DEPLETE,
+   cf::ATNR_DEATH,
+   cf::ATNR_BLIND,
+   cf::ATNR_DISEASE,
+);
+
+our %RESMAP = (
+   cf::ATNR_PHYSICAL => "PHYSICAL",
+   cf::ATNR_MAGIC => "MAGIC",
+   cf::ATNR_FIRE => "FIRE",
+   cf::ATNR_ELECTRICITY => "ELECTRICITY",
+   cf::ATNR_COLD => "COLD",
+   cf::ATNR_CONFUSION => "CONFUSION",
+   cf::ATNR_ACID => "ACID",
+
+   cf::ATNR_DRAIN => "DRAIN",
+   cf::ATNR_GHOSTHIT => "GHOSTHIT",
+   cf::ATNR_POISON => "POISON",
+   cf::ATNR_SLOW => "SLOW",
+   cf::ATNR_PARALYZE => "PARALYZE",
+   cf::ATNR_TURN_UNDEAD => "TURN_UNDEAD",
+
+   cf::ATNR_FEAR => "FEAR",
+   cf::ATNR_DEPLETE => "DEPLETE",
+   cf::ATNR_DEATH => "DEATH",
+   cf::ATNR_HOLYWORD => "HOLYWORD",
+   cf::ATNR_LIFE_STEALING => "LIFE_STEALING",
+   cf::ATNR_BLIND => "BLIND",
+   cf::ATNR_DISEASE => "DISEASE",
+);
+
+our %REV_RESMAP = map { $RESMAP{$_} => $_ } keys %RESMAP;
+
+our %LVL_DIFF_CHANCES = (
+   +5 => 100,
+   +4 => 95,
+   +3 => 85,
+   +2 => 75,
+   +1 => 65,
+   0  => 50,
+   -1 => 45,
+   -2 => 35,
+   -3 => 25,
+   -4 => 10,
+   -5 => 0
+);
+
+our %LVL_DIFF_MSG = (
+   -5 => 'Way above your skill',
+   -4 => 'Very low',
+   -3 => 'Slight chance',
+   -2 => 'Low',
+   -1 => 'Nearly 50:50',
+   0  => '50:50',
+   1  => 'Slightly above 50:50',
+   2  => 'Good',
+   3  => 'High',
+   4  => 'Nearly confident',
+   5  => '100%',
+);
+
+sub level_diff_to_str {
+   my ($delta) = @_;
+   $delta = -5 if $delta < -5;
+   $delta =  5 if $delta >  5;
+   return $LVL_DIFF_MSG{$delta}
+}
+
+sub level_diff_to_chance_perc {
+   my ($delta) = @_;
+   $delta = -5 if $delta < -5;
+   $delta =  5 if $delta >  5;
+   return $LVL_DIFF_CHANCES{$delta}
+}
+
+sub analyze {
+   my ($sk, $chdl, $pl, $input_level) = @_;
+
+   my $hadunid = 0;
+   my $found   = 0;
+   for ($chdl->grep_by_type (cf::RING, cf::AMULET)) {
+      if (!$_->flag (cf::FLAG_IDENTIFIED) && $_->need_identify) {
+         $hadunid = 1;
+         next;
+      }
+      $found = 1;
+      my $r = Jeweler::Object->new (object => $_);
+      my $msg = $r->analyze ($sk, $pl, $input_level);
+      $pl->message ("There is a '" . $r->to_string . "' in the workbench. Your analysis: " . $msg);
+      if ($pl->flag (cf::FLAG_WIZ)) {
+         $r->wiz_analyze ($pl);
+      }
+   }
+   $pl->message ("You couldn't identify the other rings and not analyze them!")
+      if $hadunid;
+   $pl->message ("You couldn't find anything in the bench to analyse!")
+      unless $found;
+}
+
+# this function converts metals/minerals into a raw ring (of adornment)
+sub simple_converter {
+   my ($pl, $ingred, $chdl, $conv, $sk_lvl, $low_skill_cb) = @_;
+
+   $conv = lc $conv;
+   my $cnvs = $CFG->{conversions};
+
+   return unless $cnvs->{$conv};
+
+   my %ingred_groups;
+
+   my @conv_cfg = @{$cnvs->{$conv}};
+   my $outarch = $conv;
+   my ($ingr_grp, $outarchvalfact, $srcarchname, $xp_gain) = @conv_cfg;
+
+   unless (@conv_cfg <= 4) {
+      warn "ERROR: Conversion for '$outarch' has only " . (@conv_cfg) . " arguments!";
+      return;
+   }
+
+   unless ($xp_gain > 0) {
+      warn "WARNING: xp gain isn't > 0 in conversion '$outarch'\n";
+      return;
+   }
+
+   unless ($outarchvalfact) {
+      warn "ERROR: source-arch-value-multiplier == 0 in conversion '$outarch'\n";
+      return;
+   }
+
+   unless ($outarchvalfact >= 1) {
+      warn "WARNING: source-arch-value-multiplier < 1 in conversion '$outarch', results in more valuable output!\n";
+   }
+
+   my $archvalsum  = $ingred->value ($ingr_grp, $srcarchname);
+   my $outarchval  = cf::arch::find ($outarch)->value;
+   my $nrof        = int $archvalsum / (($outarchval || 1000) * $outarchvalfact);
+   my $can_make_nr = int (($sk_lvl / 2) + 10);
+
+   if ($nrof > $can_make_nr) {
+      $pl->ob->message ("Your jeweler level is too low to make $nrof rings, you can only make $can_make_nr at your current level.");
+      return;
+   }
+
+   if ($nrof) {
+      # XXX: yes, I know what I'm doing here, I don't set nrof, but it didn't work somehow (pls. check sometimes)
+      $ingred->remove ($ingr_grp, $srcarchname);
+      for (1 .. $nrof) {
+         $chdl->put (my $ob = cf::object::new $outarch);
+         $ob->set_anim_frame (cf::rndm $ob->anim_frames)
+            if ($ob->type == cf::RING);
+         $ob->flag (cf::FLAG_IDENTIFIED, 1);
+      }
+
+      my $xp_sum = $xp_gain * $nrof;
+
+      if ($xp_sum) {
+         $pl->ob->message ("You got $xp_sum xp by making $nrof ${outarch}s");
+         $pl->ob->change_exp ($xp_sum, "jeweler", cf::SK_EXP_SKILL_ONLY);
+      }
+   } else {
+      $pl->ob->message ("You fail to make something, probably you used not enough source material?");
+   }
+}
+
+
+package Jeweler::CauldronHandler;
+
+use common::sense;
+
+=head2 CauldronHandler
+
+The Jeweler::CauldronHandler package, that helps you with handling the
+cauldron stuff. Can also be used for other skills.
+
+=cut
+
+sub new {
+   my ($class, %arg) = @_;
+
+   my $self = bless {
+      %arg,
+   }, $class;
+
+   $self;
+}
+
+=over 4
+
+=item find_cauldron ($arch_name, @map_stack)
+
+This finds the cauldron with C<$arch_name> on the C<@map_stack> and initalises the CauldronHandler.
+It takes the topmost cauldron that is found. Returns undef if no cauldron was found.
+Returns the cauldron object if it was found.
+
+=cut
+
+sub find_cauldron {
+   my ($self, $arch_name, @map_stack) = @_;
+
+   my @c =
+      grep {
+         $_->flag (cf::FLAG_IS_CAULDRON)
+            and $_->arch->archname eq $arch_name
+      } @map_stack;
+
+   $self->{cauldron} = $c[0];
+}
+
+=item grep_by_type (@types)
+
+Finds all objects in the cauldron that have the type of one of C<@types>.
+
+=cut
+
+sub grep_by_type {
+   my ($self, @types) = @_;
+
+   return () unless $self->{cauldron};
+
+   my @res = grep {
+      my $ob = $_;
+      (grep { $ob->type == $_ } @types) > 0
+   } $self->{cauldron}->inv;
+
+   return @res
+}
+
+=item extract_jeweler_ingredients
+
+Extracts the ingredients that matter for the Jeweler skill
+and returns a Jeweler::Ingredients object.
+
+=cut
+
+sub extract_jeweler_ingredients {
+   my ($self) = @_;
+
+   return () unless $self->{cauldron};
+
+   my $ingreds = {};
+
+   my %type_to_key = (
+         cf::RING      => 'rings',
+         cf::AMULET    => 'ammys',
+         cf::INORGANIC => 'mets_and_mins',
+         cf::GEM       => 'gems',
+         cf::POTION    => 'potions',
+         cf::SCROLL    => 'scrolls',
+   );
+
+   for ($self->{cauldron}->inv) {
+      if (!$_->flag (cf::FLAG_IDENTIFIED) && $_->need_identify) {
+         die "unidentified";
+      } elsif ($_->flag (cf::FLAG_CURSED) || $_->flag (cf::FLAG_DAMNED)) {
+         die "cursed";
+      }
+
+      if (my $k = $type_to_key{$_->type}) {
+         push @{$ingreds->{$k}}, $_;
+      } else {
+         push @{$ingreds->{other}}, $_;
+      }
+   }
+
+   return Jeweler::Ingredients->new (ingredients => $ingreds, cauldron_helper => $self)
+}
+
+=item put ($object)
+
+Just puts the C<$object> into the cauldron.
+
+=cut
+
+sub put {
+   my ($self, $obj) = @_;
+
+   return undef unless $self->{cauldron};
+   $self->{cauldron}->insert ($obj);
+}
+
+=back
+
+=cut
+
+package Jeweler::Ingredients;
+
+use common::sense;
+
+use Storable qw/dclone/;
+
+=head2 Ingredients
+
+This class handles the ingredients.
+
+=over 4
+
+=item new (ingredients => $ingred_hash)
+
+This is called from the CauldronHandler that gives you the ingredients.
+
+=cut
+
+sub new {
+   my ($class, %arg) = @_;
+
+   my $self = bless {
+      %arg,
+   }, $class;
+
+   $self;
+}
+
+=item value ($group, $archname)
+
+Returns the value of the ingredients in C<$group> with the archetypename C<$archname>.
+
+=cut
+
+sub value {
+   my ($self, $group, $archname) = @_;
+
+   my @objs = grep {
+      $_->arch->archname eq $archname
+   } @{$self->{ingredients}->{$group} || []};
+
+   my $sum = 0;
+   for (@objs) {
+      $sum += ($_->nrof || 1) * $_->value;
+   }
+
+   return $sum;
+}
+
+=item remove ($group, $archname)
+
+Removes the ingredients in C<$group> with archname C<$archname>.
+It removes all in C<$group> if archname is undef.
+
+=cut
+
+sub remove {
+   my ($self, $group, $archname) = @_;
+
+   my $ingred = $self->{ingredients};
+
+   my @out;
+
+   for (@{$ingred->{$group}}) {
+      if (defined $archname) {
+         if ($_->arch->archname eq $archname) {
+            Jeweler::Util::remove ($_);
+         } else {
+            push @out, $_;
+         }
+      } else {
+         Jeweler::Util::remove ($_);
+      }
+   }
+
+   @{$ingred->{$group}} = @out;
+}
+
+sub get_plan {
+   my ($self) = @_;
+
+   my $ingred = $self->{ingredients};
+
+   for my $plan (keys %{$Jeweler::CFG->{plans}}) {
+      my $plg = $Jeweler::CFG->{plans}->{$plan};
+      my @plga = ();
+      unless (ref $plg eq 'ARRAY') {
+         push @plga, $plg;
+      } else {
+         @plga = @$plg;
+      }
+      next unless @plga > 0;
+      if (Jeweler::Util::grep_for_match ($ingred, @plga)) {
+         return $plan;
+      }
+   }
+}
+
+sub get_ring {
+   my ($self) = @_;
+   return (
+      @{$self->{ingredients}->{ammys} || []},
+      @{$self->{ingredients}->{rings} || []}
+   );
+}
+
+sub improve_max {
+   my ($stat, $impro) = @_;
+   if ($stat >= 0) {
+      $stat = $impro > $stat ? $impro : $stat;
+   }
+   $stat
+}
+
+sub improve_ring_by_plan {
+   my ($self, $plan, $ring) = @_;
+
+   $ring = dclone $ring;
+
+   my $ingred = $self->{ingredients};
+   my $impr = {};
+
+   if ($plan =~ m/^stat_(\S+)$/) {
+      my $statname = $1;
+      my $plingred = Jeweler::getcfg (plans => $plan)
+         or die "ingredients for plan '$plan' not defined!";
+
+      my $cnt = 0;
+      if (my $pot = Jeweler::Util::grep_for_match ($ingred, @$plingred)) {
+         $cnt += $pot->nrof;
+      }
+
+      my $maxstat = Jeweler::getcfg (maximprovements => 'stats');
+      for my $x (1..$maxstat) {
+         my $y = Jeweler::Object::fx ($x, 'stat_items');
+
+         if ($cnt <= $y->[0]) {
+            $ring->{hash}->{stat}->{$statname} =
+               improve_max $ring->{hash}->{stat}->{$statname}, $x;
+            last;
+         }
+      }
+
+   } elsif ($plan =~ m/^spec_(\S+)$/) {
+      my $specname = $1;
+      my $plingred = Jeweler::getcfg (plans => $plan)
+         or die "ingredients for plan '$plan' not defined!";
+
+      my $cnt = 0;
+      if (my $pot = Jeweler::Util::grep_for_match ($ingred, @$plingred)) {
+         $cnt += $pot->nrof;
+      }
+
+      my $maxspec = Jeweler::getcfg (maximprovements => 'specials');
+      for my $x (1..$maxspec) {
+         my $y = Jeweler::Object::fx ($x, 'spec_items');
+
+         if ($cnt <= $y->[0]) {
+            $ring->{hash}->{spec}->{$specname} =
+               improve_max $ring->{hash}->{spec}->{$specname}, $x;
+            last;
+         }
+      }
+
+   } elsif ($plan =~ m/^resist_(\S+)$/) {
+      my $resname = $1;
+      my $resnum  = $REV_RESMAP{$resname};
+      my $plingred = Jeweler::getcfg (plans => $plan)
+         or die "ingredients for plan '$plan' not defined!";
+
+      my $cnt = 0;
+      if (my $it = Jeweler::Util::grep_for_match ($ingred, @$plingred)) {
+         $cnt += $it->nrof;
+      }
+      my $resist_item_nr = 0;
+      $self->do_grep (sub { $resist_item_nr += ($_[0]->nrof || 1); 0 }, @$plingred);
+
+      my $maximprovname = (grep { $resnum eq $_ } @Jeweler::EFFECT_RESISTS)
+                             ? 'effect_resistances'
+                             : 'attack_resistances';
+
+      my $maxres = Jeweler::getcfg (maximprovements => $maximprovname);
+      $resist_item_nr = $maxres if ($resist_item_nr > $maxres);
+      $ring->{hash}->{resist}->{$resnum} =
+         improve_max $ring->{hash}->{resist}->{$resnum}, $resist_item_nr;
+   }
+
+   return $ring;
+}
+
+sub do_grep {
+   my ($self, $cb, $cat, @grepar) = @_;
+
+   my $ingred = $self->{ingredients};
+
+   my @rem;
+   for my $ing (@{$ingred->{$cat}}) {
+      if (Jeweler::Util::check_for_match ($ing, @grepar)) {
+         unless ($cb->($ing)) {
+            push @rem, $ing;
+         }
+      } else {
+         push @rem, $ing;
+      }
+   }
+   @{$ingred->{$cat}} = @rem;
+}
+
+sub check_costs {
+   my ($self, $costs, $do_remove) = @_;
+
+   my $costs = dclone $costs;
+
+   for my $key (keys %$costs) {
+      my @grepar;
+      if ($key =~ m/^(resist_|spec_|stat_)/) { # check the special items
+         eval { @grepar = @{Jeweler::getcfg (plans => $key) || []} };
+         next if $@;
+      } else { # check the gems
+         @grepar = ('gems', undef, undef, $key);
+      }
+
+      if ($do_remove) {
+         my $rem = $costs->{$key};
+         $self->do_grep (sub {
+            if ($rem) {
+               $rem = Jeweler::Util::remove ($_[0], $rem);
+            }
+            1
+         }, @grepar);
+         if ($rem > 0) {
+            warn "JEWELER BUG: removed ingredients ($key) $rem > 0 after removing!";
+         }
+
+      } else {
+         my $nr;
+         $self->do_grep (sub { $nr += ($_[0]->nrof || 1); 0 }, @grepar);
+         $costs->{$key} -= $nr;
+      }
+
+   }
+
+   return $costs;
+}
+
+=back
+
+=cut
+
+sub put_to_bench {
+   my ($self, $bench) = @_;
+
+   my $ingred = $self->{ingredients};
+
+   for my $ik (keys %$ingred) {
+      for (@{$ingred->{$ik} || []}) {
+         $bench->put ($_);
+      }
+   }
+}
+
+package Jeweler::Object;
+
+use common::sense;
+use POSIX;
+use List::Util qw/max min sum/;
+
+sub new {
+   my ($class, %arg) = @_;
+
+   my $self = bless { }, $class;
+
+   $self->ring_or_ammy_to_hash ($arg{object});
+
+   $self;
+}
+
+sub has_resist {
+   my ($self, $resistnam, $resistval) = @_;
+   my $resnum = $REV_RESMAP{uc $resistnam};
+   if (defined ($resistval)) {
+      return 1 if $self->{hash}->{resist}->{$resnum} == $resistval;
+   } else {
+      return 1 if $self->{hash}->{resist}->{$resnum};
+   }
+   return undef;
+}
+
+sub lvl2exp {
+   my $lvl = shift;
+   (cf::level_to_min_exp ($lvl) - cf::level_to_min_exp ($lvl - 1))
+      / (20 + max ($lvl - 1, 0))  # 20 + level times making such a ring
+                                  # should get you to the rings level at least.
+}
+
+sub projected_exp {
+   my ($self, $input_level) = @_;
+
+   my $lvl = max ($self->power_to_level, 1);
+   my $exp = lvl2exp ($lvl);
+
+   if (defined $input_level) { # in case we merge rings:
+      my $subexp = lvl2exp ($input_level);
+      $exp -= $subexp;
+      $exp = max ($exp, 0);
+
+   } else {
+      # the experience bonus here is to make level 1 rings give you at least
+      # 200 exp points when making them. This also makes leveling in the
+      # first few levels a bit easier. (probably until around level 5-6).
+      my $expbonus = cf::level_to_min_exp (2) / 5;
+      # this bonus should also only be given for _new_ rings and not for merged
+      # ones - to prevent infinite exp making.
+      $exp += $expbonus;
+   }
+
+   $exp
+}
+
+sub analyze {
+   my ($self, $sk, $pl, $input_level) = @_;
+   my $costs = $self->calc_costs;
+
+   unless (defined $costs) {
+      return "This ring has a resistancy above 99%, you can't make that.";
+   }
+
+   my $sklvl = cf::exp_to_level ($sk->stats->exp);
+   my $ringlvl = $self->power_to_level;
+
+   my $tmpl;
+   if ($pl->flag (cf::FLAG_WIZ)) {
+      $tmpl = Jeweler::level_diff_to_chance_perc ($sklvl - $ringlvl);
+   } else {
+      $tmpl = Jeweler::level_diff_to_str ($sklvl - $ringlvl);
+   }
+   my $msg = sprintf "Projected success rate: %s, you would get %d exp for this.", $tmpl, $self->projected_exp ($input_level);
+   return $msg;
+}
+
+sub calc_value_from_cost {
+   my ($self, $costs) = @_;
+   my $emarch = cf::arch::find 'emerald';
+   my $saarch = cf::arch::find 'sapphire';
+   my $pearch = cf::arch::find 'pearl';
+   my $ruarch = cf::arch::find 'ruby';
+   my $diarch = cf::arch::find 'gem';
+   my $value  =   $emarch->value * $costs->{emerald}
+                + $saarch->value * $costs->{sapphire}
+                + $pearch->value * $costs->{pearl}
+                + $ruarch->value * $costs->{ruby}
+                + $diarch->value * $costs->{gem};
+
+   $value
+}
+
+sub wiz_analyze {
+   my ($self, $pl) = @_;
+   my $costs = $self->calc_costs;
+   if (defined $costs) {
+      my $desc  = "";
+      my $lvl   = $self->power_to_level (\$desc);
+      my $scosts = $self->calc_value_from_cost ($costs);
+
+      $pl->message ("costs: "
+                    . (join ', ', map { "$_: " . sprintf "%.2f", $costs->{$_} } keys %$costs)
+                    . " ("
+                    . ($scosts / "platinacoin"->cf::arch::find->value)
+                    . " platinum)");
+      $pl->message ("level: $desc");
+   } else {
+      $pl->message ("level: impossible to make, due to impossible resistancy configuration");
+   }
+}
+
+sub get_chance_perc {
+   my ($self, $sk) = @_;
+   my $sklvl = cf::exp_to_level ($sk->stats->exp);
+   my $ringlvl = $self->power_to_level;
+   return Jeweler::level_diff_to_chance_perc ($sklvl - $ringlvl);
+}
+
+sub fx {
+   my ($res, $cfg) = @_;
+   my $or = $res;
+   my $ar = $Jeweler::CFG->{functions}->{$cfg};
+
+   if (ref $ar && ref $ar->[0] eq 'ARRAY') {
+      $res = $res - 1;
+      return $ar->[max (min ($res, @$ar - 1), 0)];
+
+   } else {
+      # +0.1 is for a jump to the next index when $res / 5 is exactly 1, 2, 3...
+      # old code:
+      #my $idx    = ceil (($res / 5) + 0.1) - 1;
+      #my $a      = $ar->[max (min ($idx, @$ar - 1), 0)];
+      #my $b      = $ar->[max (min ($idx + 1, @$ar - 1), 0)];
+      #my $diff   = $b - $a; # use the difference of the cost to the next cost
+      #my $o_cost = $a + ($diff / 5) * ($res % 5); # and do some linear interpolation
+      #return $o_cost;
+      return 0 if $res <= 0;
+      return ($ar / (1 - ($res * 0.01)) - $ar)
+   }
+}
+
+sub improve_by_ring {
+   my ($self, @rings) = @_;
+   my $ring = $self;
+   for my $iring (@rings) {
+      for my $cat (qw/stat spec resist/) {
+         for my $k (keys %{$iring->{hash}->{$cat}}) {
+            if ($ring->{hash}->{$cat}->{$k} < $iring->{hash}->{$cat}->{$k}) {
+               $ring->{hash}->{$cat}->{$k} = $iring->{hash}->{$cat}->{$k};
+            }
+         }
+      }
+   }
+}
+
+sub negate {
+   my ($self) = @_;
+   for my $cat (qw/stat spec resist/) {
+      for my $k (keys %{$self->{hash}->{$cat}}) {
+         if ($self->{hash}->{$cat}->{$k} > 0) {
+            $self->{hash}->{$cat}->{$k} *= -1;
+         }
+      }
+   }
+   $self->{hash}{value} = 0;
+}
+
+sub to_string {
+   my ($self) = @_;
+   my $r = $self->{hash};
+   return
+      $r->{arch} . " " .
+      join ("",
+         grep { $_ ne "" }
+            join ("",
+               (map {
+                  my $rv = $r->{resist}->{$_};
+                  "(resist " . (lc $Jeweler::RESMAP{$_}) . " " . ($rv > 0 ? '+' : '') . $rv . ")"
+               } grep { $r->{resist}->{$_} } @Jeweler::RESISTS),
+               (map {
+                  my $rv = $r->{stat}->{$_};
+                  "(" . (ucfirst lc $_) . ($rv > 0 ? '+' : '') . $rv . ")"
+               } grep { $r->{stat}->{$_} } keys %{$r->{stat}}),
+               (map {
+                  my $rv = $r->{spec}->{$_};
+                  "(" . (lc $_) . ($rv > 0 ? '+' : '') . $rv . ")"
+               } grep { $r->{spec}->{$_} } keys %{$r->{spec}})))
+}
+
+sub ring_or_ammy_to_hash {
+   my ($self, $thing) = @_;
+
+   my $obj = {};
+
+   for (@Jeweler::RESISTS) {
+      $obj->{resist}->{$_} = $thing->resist ($_);
+   }
+
+   my $stats = $thing->stats;
+
+   for (qw/Str Dex Con Wis Cha Int Pow/) {
+      $obj->{stat}->{lc $_} = $stats->$_;
+   }
+
+   $obj->{spec}{regen} = $stats->hp;
+   $obj->{spec}{magic} = $stats->sp;
+   $obj->{spec}{wc}    = $stats->wc;
+   $obj->{spec}{dam}   = $stats->dam;
+   $obj->{spec}{ac}    = $stats->ac;
+   $obj->{spec}{speed} = $stats->exp;
+   $obj->{spec}{food}  = $stats->food;
+
+   $obj->{name} = $thing->name;
+   $obj->{arch} = $thing->arch->archname;
+   $obj->{face} = $thing->face;
+
+   $obj->{value} = $thing->value;
+
+   $obj->{is_ring} = ($thing->type == cf::RING);
+
+   $self->{hash} = $obj
+}
+
+sub to_object {
+   my ($self) = @_;
+
+   my $obj = cf::object::new $self->{hash}->{arch};
+
+   $obj->item_power (floor ($self->power_to_level / 5)); # there have to be strings attached!
+
+   $obj->face ($self->{hash}{face});
+
+   my $stats = $obj->stats;
+
+   $stats->hp   ($self->{hash}{spec}{regen});
+   $stats->sp   ($self->{hash}{spec}{magic});
+   $stats->wc   ($self->{hash}{spec}{wc});
+   $stats->dam  ($self->{hash}{spec}{dam});
+   $stats->ac   ($self->{hash}{spec}{ac});
+   $stats->exp  ($self->{hash}{spec}{speed});
+   $stats->food ($self->{hash}{spec}{food});
+
+   $stats->$_ ($self->{hash}{stat}{lc $_})
+      for qw/Str Dex Con Wis Cha Int Pow/;
+
+   for (@Jeweler::RESISTS) {
+      $obj->resist ($_, $self->{hash}->{resist}->{$_});
+   }
+
+   $obj->flag (cf::FLAG_IDENTIFIED, 1);
+
+   $obj->value ($self->{hash}{value});
+
+   return $obj;
+}
+
+sub set_value { $_[0]->{hash}{value} = $_[1] }
+
+sub is_better_than {
+   my ($self, $other) = @_;
+
+   for my $type (qw/spec stat resist/) {
+      for my $stat (keys %{$self->{hash}->{$type}}) {
+         if ($self->{hash}->{$type}->{$stat} > $other->{hash}->{$type}->{$stat}) {
+            return 1;
+         }
+      }
+   }
+
+   return 0;
+}
+
+sub stat_level {
+   my ($self) = @_;
+   my $stats = $self->{hash}->{stat} || {};
+
+   my $maxlevel = Jeweler::getcfg (maxlevels => 'stat_level');
+   my $maxstat  = Jeweler::getcfg (maximprovements => 'stats');
+
+   my $stat_cnt = scalar (grep { $_ > 0 } values %$stats);
+   my $stat_sum = sum (values %$stats); # also count the negative stats!
+   my $level    = int (($maxlevel / $maxstat) * $stat_sum);
+
+   ($level, $stat_cnt)
+}
+
+sub resist_level {
+   my ($self) = @_;
+
+   my $resists = $self->{hash}->{resist} || {};
+
+   my $att_res_lvl = Jeweler::getcfg (maxlevels       => 'resist_level');
+   my $efc_res_lvl = Jeweler::getcfg (maxlevels       => 'effect_resist_level');
+   my $max_att_res = Jeweler::getcfg (maximprovements => 'attack_resistances');
+   my $max_efc_res = Jeweler::getcfg (maximprovements => 'effect_resistances');
+   my $max_ovr_res = Jeweler::getcfg (maximprovements => 'resistances');
+
+   my $ressum = 0;
+   my $rescnt = 0;
+   my @reslevels;
+
+   for my $resnam (keys %$resists) {
+      my $res = $resists->{$resnam};
+
+      $rescnt++
+         if $res > 0;     # negative resistancies are not an improvement
+
+      $ressum += $res;    # note: negative resistancies lower the sum
+
+      next unless $res > 0;
+
+      my $level = 0;
+      if (grep { $resnam eq $_ } @Jeweler::EFFECT_RESISTS) {
+         $level = ceil (($efc_res_lvl / $max_efc_res) * $res);
+      } else {
+         $level = ceil (($att_res_lvl / $max_att_res) * $res);
+      }
+      push @reslevels, $level;
+   }
+
+   my $overall_lvl = ($att_res_lvl / $max_ovr_res) * $ressum;
+
+   (max (@reslevels, $overall_lvl), $rescnt);
+}
+
+sub special_level {
+   my ($self) = @_;
+
+   my $specials = $self->{hash}->{spec} || {};
+
+   my $max_spc_lvl  = Jeweler::getcfg (maxlevels => 'spec_level');
+   my $max_specials = Jeweler::getcfg (maximprovements => 'specials');
+
+   my @speclvls;
+   my $specsum = 0;
+   my $imprs = 0;
+
+   for my $spcnam (keys %$specials) {
+      my $spc = $specials->{$spcnam};
+      next unless $spc > 0;
+
+      $specsum += $spc;
+      $imprs++;
+
+      my $max_spc = Jeweler::getcfg (maxspecial => $spcnam);
+
+      my $lvl = ($max_spc_lvl / $max_spc) * $spc;
+      push @speclvls, $lvl;
+   }
+
+   my $sumlvl = ($max_spc_lvl / $max_specials) * $specsum;
+
+   (max (@speclvls, $sumlvl), $imprs)
+}
+
+
+# this function calculated the 'level' of an amulet or a ring
+sub power_to_level {
+   my ($self, $lvldescr) = @_;
+
+   my $max_imprs    = Jeweler::getcfg (maximprovements => 'improvements');
+   my $max_impr_lvl = Jeweler::getcfg (maxlevels       => 'improve_level');
+   my $ring_offs    = Jeweler::getcfg (maxlevels       => 'ring_offset');
+
+   my ($stat_lvl,   $stat_imprs) = $self->stat_level;
+   my ($resist_lvl, $res_imprs)  = $self->resist_level;
+   my ($spec_lvl,   $spec_imprs) = $self->special_level;
+
+   my $impr_sum = $stat_imprs + $res_imprs + $spec_imprs;
+
+   my $impr_lvl =
+      ceil (($max_impr_lvl / ($max_imprs + 1))
+      * ($impr_sum - 1)); # 1 improvemnt bonus
+
+   my $levl = int max ($stat_lvl, $resist_lvl, $impr_lvl, $spec_lvl, 0);
+
+   if ($self->{hash}->{is_ring}) {
+      $levl += $ring_offs;
+   }
+
+   $levl = min ($levl, cf::settings->max_level);
+
+   if ($lvldescr) {
+      $$lvldescr =
+         sprintf "%3d: %s\n", $levl,
+              "stat: $stat_lvl, resist: $resist_lvl, improve: $impr_lvl, "
+             ."spec: $spec_lvl (num impr $stat_imprs + $res_imprs + $spec_imprs - 1)";
+   }
+
+   $levl
+}
+
+sub add_stat_costs {
+   my ($self, $cost) = @_;
+
+   my $stats = $self->{hash}->{stat};
+
+   for my $stat (keys %$stats) {
+      my $sum = $stats->{$stat};
+
+      next unless $sum > 0;
+
+      my $statfx = fx ($sum, 'stat_items');
+      $cost->{"stat_$stat"} += $statfx->[0];
+      split_diamonds ($cost, $statfx->[1], 'stat_' . $stat);
+   }
+}
+
+sub add_special_costs {
+   my ($self, $cost) = @_;
+
+   my $specials = $self->{hash}->{spec};
+
+   for my $spec (keys %$specials) {
+      my $sum = $specials->{$spec};
+
+      next unless $sum > 0;
+
+      my $specfx = fx ($sum, 'spec_items');
+      $cost->{"spec_$spec"} += $specfx->[0];
+      split_diamonds ($cost, $specfx->[1], 'spec_' . $spec);
+   }
+}
+
+sub calc_costs {
+   my ($self) = @_;
+
+   my $costs = {};
+
+   my $ring = $self->{hash};
+
+   for my $resnum (keys %{$ring->{resist} || {}}) {
+
+      my $res = $ring->{resist}->{$resnum};
+
+      next unless $res > 0;
+
+      return undef if $res == 100;
+
+      $costs->{"resist_" . $Jeweler::RESMAP{$resnum}} += $res;
+
+      my $diamonds;
+      if (grep { $resnum eq $_ } @Jeweler::EFFECT_RESISTS) {
+         $diamonds += fx ($res, 'effect_resist_diamonds_x');
+      } else {
+         $diamonds += fx ($res, 'attack_resist_diamonds_x');
+      }
+
+      split_diamonds ($costs, $diamonds, 'resist_' . $Jeweler::RESMAP{$resnum});
+   }
+
+   $self->add_stat_costs ($costs);
+   $self->add_special_costs ($costs);
+
+   return $costs;
+}
+
+sub split_diamonds {
+   my ($cost, $diamonds, $category) = @_;
+
+   my $stat_split = Jeweler::getcfg (diamond_split => $category);
+
+   my $sum = sum (@$stat_split);
+
+   my $emarch = cf::arch::find 'emerald';
+   my $saarch = cf::arch::find 'sapphire';
+   my $pearch = cf::arch::find 'pearl';
+   my $ruarch = cf::arch::find 'ruby';
+   my $diarch = cf::arch::find 'gem';
+
+   my $sumvalue = $diarch->value * $diamonds;
+
+   $cost->{emerald}  += ceil $sumvalue * $stat_split->[0] / max 1, $emarch->value;
+   $cost->{sapphire} += ceil $sumvalue * $stat_split->[1] / max 1, $saarch->value;
+   $cost->{pearl}    += ceil $sumvalue * $stat_split->[2] / max 1, $pearch->value;
+   $cost->{ruby}     += ceil $sumvalue * $stat_split->[3] / max 1, $ruarch->value;
+   $cost->{gem}      += ceil $sumvalue * $stat_split->[4] / max 1, $diarch->value;
+}
+
+package Jeweler::Util;
+
+use common::sense;
+
+=head2 Util
+
+Some utility functions for the Jeweler skill.
+
+=over 4
+
+=item remove ($object[, $nrof])
+
+Removes the C<$object>. If C<$nrof> is given, remove only C<$nrof> objects.
+The return value is the number of 'single' objects that couldn't be removed.
+
+=cut
+
+sub remove {
+   my ($obj, $nrof) = @_;
+
+   my $c = $obj->number_of;
+   my $r = $c > $nrof ? 0 : $nrof - $c;
+   $obj->decrease (defined ($nrof) ? $nrof : ($obj->nrof || 1));
+
+   $r
+}
+
+sub check_for_match {
+   my ($thing, @matchar) = @_;
+
+   my $i = 0;
+   my $check_cnts = 0;
+   my $check_true = 0;
+   for my $match (@matchar) {
+      if ($i % 3 == 0) {
+         return 1 if $check_true && $check_cnts == $check_true;
+         $check_cnts = 0;
+         $check_true = 0;
+      }
+
+      if ($match =~ m/^\s*$/) {
+         $i++;
+         next;
+      }
+
+      $check_cnts++;
+      if ($i % 3 == 0) {
+         $thing->name eq $match
+            and $check_true++;
+      } elsif ($i % 3 == 1) {
+         $thing->title eq $match
+            and $check_true++;
+      } else { # $i % 3 == 2
+         $thing->arch->archname eq $match
+            and $check_true++;
+      }
+      $i++;
+   }
+   #d# warn "CHECK $check_true | $check_cnts | [".(join ',', @matchar).":".join (",", ($thing->name, $thing->title, $thing->arch->archname))."\n";
+   return 1 if $check_true && $check_cnts == $check_true;
+   return 0;
+}
+
+sub grep_for_match {
+   my ($ingred, $group, @matchar) = @_;
+
+   for my $thing (@{$ingred->{$group} || []}) {
+   #d# warn sprintf "DEB:(%s,%s,%s)<->%s\n", $thing->name, $thing->title, $thing->arch->archname, "@matchar"; #d#
+      if (check_for_match ($thing, @matchar)) {
+         return $thing;
+      }
+   }
+   return undef;
+}
+
+=back
+
+1

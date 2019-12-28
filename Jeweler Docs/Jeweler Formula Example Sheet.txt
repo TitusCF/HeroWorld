@@ -1,0 +1,150 @@
+maximprovements:
+   attack_resistances : 40
+   effect_resistances : 99
+   specials           : 10
+   resistances        : 300
+   stats              : 7
+   improvements       : 8
+
+maxspecial:
+   regen              : 4
+   magic              : 4
+   speed              : 5
+   food               : 7
+   ac                 : 3
+   wc                 : 3
+   dam                : 3
+
+maxlevels:
+# the maximum level where stat+7 can be made
+   stat_level          : 95
+# the maximum level where max overall resists and attack resist can be made
+   resist_level        : 45
+# the maximum level where max effect resistance can be made
+   effect_resist_level : 30
+# the level where the maximum improvemnts can be made
+   improve_level       : 90
+# the level where the maximum special improvements can be made
+   spec_level          : 70
+# the offset of the levels for amulets
+   amulet_offset       : 20
+
+diamond_split:
+# <tag> = <emerald-fact.>, <sapphire-fact.>, <pearl-fact.>, <ruby-fact.>, <diamond-fact.>
+   stat_cha             : [0.1, 0.1, 0.8,   0,   0]
+   stat_str             : [0.5, 0.3,   0, 0.2,   0]
+   stat_pow             : [0.2, 0.5, 0.1, 0.1, 0.1]
+   stat_dex             : [0.5,   0,   0, 0.5,   0]
+   stat_int             : [0.2, 0.2, 0.2, 0.2, 0.2]
+   stat_wis             : [  0,   0,   0, 0.8, 0.2]
+   stat_con             : [  0,   0, 0.2,   0, 0.8]
+
+   spec_regen           : [  1,   0,   0,   0,   0]
+   spec_magic           : [  0,   1,   0,   0,   0]
+   spec_speed           : [  0,   0,   1,   0,   0]
+   spec_food            : [  0,   0,   0, 0.5, 0.5]
+   spec_ac              : [  0,   0,   0,   0,   1]
+   spec_wc              : [  0,   0,   0,   1,   0]
+   spec_dam             : [  0,   0, 0.5,   0, 0.5]
+
+   resist_PHYSICAL      : [0.1,   0,   0,   0, 0.9]
+   resist_MAGIC         : [0.2, 0.2, 0.2, 0.2, 0.2]
+   resist_FIRE          : [  0,   0,   0,   1,   0]
+   resist_ELECTRICITY   : [  0, 0.5, 0.5,   0,   0]
+   resist_COLD          : [  0,   1,   0,   0,   0]
+   resist_CONFUSION     : [  0, 0.1,   0, 0.7, 0.2]
+
+   resist_ACID          : [0.3, 0.3, 0.4,   0,   0]
+   resist_DRAIN         : [  0,   0,   1,   0,   0]
+   resist_GHOSTHIT      : [0.1,   0, 0.9,   0,   0]
+   resist_POISON        : [  1,   0,   0,   0,   0]
+   resist_SLOW          : [  0,   0,   0,   0,   1]
+   resist_PARALYZE      : [  0,   0, 0.1, 0.4, 0.5]
+
+   resist_TURN_UNDEAD   : [0.1, 0.1, 0.1, 0.1, 0.6]
+   resist_FEAR          : [  0, 0.8,   0, 0.2,   0]
+   resist_DEPLETE       : [0.5,   0,   0,   0, 0.5]
+   resist_DEATH         : [  0,   0, 0.8, 0.2,   0]
+   resist_HOLYWORD      : [  0, 0.4, 0.4,   0, 0.2]
+   resist_LIFE_STEALING : [0.5,   0, 0.5,   0,   0]
+
+   resist_BLIND         : [  0, 0.2,   0, 0.8,   0]
+   resist_DISEASE       : [0.1, 0.1, 0.1, 0.6, 0.1]
+   resist_CHAOS         : [0.2, 0.2, 0.2, 0.2, 0.2]
+   resist_WEAPONMAGIC   : [  0,   0,   0,   0,   1]
+   resist_CANCELLATION  : [0.8, 0.1, 0.1,   0,   0]
+
+functions:
+   #    [<nr. of items>, <nr. of diamonds>]
+   stat_items:
+      - [2,   200    ]
+      - [8,   400    ]
+      - [24,  1000   ]
+      - [52,  3000   ]
+      - [90,  6000   ]
+      - [140, 10000  ]
+      - [200, 50000  ]
+      - [270, 100000 ]
+      - [352, 900000 ]
+      - [444, 1200000]
+   spec_items:
+      - [2,   200   ]
+      - [8,   300   ]
+      - [18,  500   ]
+      - [32,  800   ]
+      - [50,  1300  ]
+      - [72,  2100  ]
+      - [100, 3400  ]
+      - [120, 5500  ]
+      - [160, 8900  ]
+      - [200, 14400 ]
+   attack_resist_diamonds_x: 1000
+   effect_resist_diamonds_x: 60
+
+conversions:
+# <outarch> = <sort-category>,<source-arch-value-multiplier>,<source-archname>,<xp-points for making one of this>
+# sort-category one of:
+#     rings, ammys, mets_and_mins, gems, potions, scrolls
+# formula of the number of generated outarchs:
+#    <nrof outarchs> = <sum of input-arch values> / (<outputarch value> * <source-arch-value-multiplier>)
+   ring                : [mets_and_mins,2,largenugget, 5]
+   amulet              : [mets_and_mins,2,largenugget,10]
+
+
+# plan match: [<sort-category>, <name>, <title>, <archname>, (<name2>, <title2>, ...)]
+plans:
+   stat_cha             : [potions,,,potioncha]
+   stat_str             : [potions,,,potionstr]
+   stat_wis             : [potions,,,potionwis]
+   stat_int             : [potions,,,potionint]
+   stat_dex             : [potions,,,potiondex]
+   stat_con             : [potions,,,potioncon]
+   stat_pow             : [potions,,,potionpow]
+   spec_magic           : [potions,magic power potion,,,potion,of mystic power,]
+   spec_speed           : [potions,potion,of speed]
+   spec_regen           : [potions,potion,of recuperation]
+   spec_food            : [other,,,waybread]
+   spec_dam             : [potions,potion,of strength,potion_generic]
+   resist_PHYSICAL      : [potions,balm,of aethereality,,,,potion_invulnerability,,,potion_aethereality]
+   resist_MAGIC         : [potions,potion,of resist magic,,potion,of magic resistance]
+   resist_FIRE          : [potions,balm,of asbestos,,,,potion_cold,,,potion_cold2]
+   resist_ELECTRICITY   : [potions,potion,of shock resistance]
+   resist_COLD          : [potions,balm,of warmth,,,,potion_fire,,,potion_fire2]
+   resist_CONFUSION     : [potions,potion,of resist confusion]
+   resist_ACID          :
+   resist_DRAIN         : [potions,potion,of resist draining]
+   resist_GHOSTHIT      :
+   resist_POISON        : [potions,potion,of resist poison]
+   resist_SLOW          : [potions,potion,of resist slow]
+   resist_PARALYZE      : [potions,potion,of resist paralysis]
+   resist_TURN_UNDEAD   :
+   resist_FEAR          :
+   resist_DEPLETE       : [potions,,,potion_restoration]
+   resist_DEATH         :
+   resist_HOLYWORD      :
+   resist_LIFE_STEALING :
+   resist_BLIND         :
+   resist_DISEASE       :
+   resist_CHAOS         :
+   resist_WEAPONMAGIC   :
+   resist_CANCELLATION  :

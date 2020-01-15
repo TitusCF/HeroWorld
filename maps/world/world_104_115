@@ -12,7 +12,7 @@ Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Dec 16 20:41:49 2001
 arch
-Modified: 2019-12-26 Acer
+Modified: 2020-01-15 Acer
 endmsg
 outdoor 1
 tile_path_1 world_104_114
@@ -8388,10 +8388,6 @@ arch grass
 x 32
 y 35
 end
-arch tree5
-x 32
-y 35
-end
 arch barrack_up
 name Mercenaries agency
 slaying /scorn/misc/mercenaries
@@ -10251,14 +10247,6 @@ arch cobblestones2
 x 39
 y 27
 end
-arch barn
-name Training Center
-slaying /scorn/crow/train/train
-hp 4
-sp 17
-x 39
-y 27
-end
 arch cobblestones2
 x 39
 y 28
@@ -10730,11 +10718,11 @@ arch dungeon_floor
 x 41
 y 24
 end
-arch cobblestones2
+arch dungeon_floor
 x 41
 y 25
 end
-arch cobblestones2
+arch dungeon_floor
 x 41
 y 26
 end
@@ -10990,7 +10978,7 @@ arch cobblestones2
 x 42
 y 25
 end
-arch cobblestones2
+arch dungeon_floor
 x 42
 y 26
 end
@@ -11258,7 +11246,7 @@ arch cobblestones2
 x 43
 y 25
 end
-arch cobblestones2
+arch dungeon_floor
 x 43
 y 26
 end
@@ -11523,7 +11511,7 @@ arch lamppost
 x 44
 y 25
 end
-arch cobblestones2
+arch dungeon_floor
 x 44
 y 26
 end
@@ -12324,68 +12312,6 @@ end
 arch cobblestones2
 x 47
 y 25
-end
-arch fatman
-name shady gambler
-msg
-@match *
-@cond $state->{number}
-@parse (\d+)
-@cond $state->{number} == $match->[0]
-@setstate guess
-@setstate number
-@deltopic 1|2|3|4|5|6|7|8|9
-@eval $who->pay_player (100*100*5)
-Congrats, lad, here is your money!
-
-@match *
-@cond $state->{number}
-@parse (\d+)
-@cond $state->{guess} == 1
-@msg "Bad luck! The number I thought of was $state->{number}..."
-@setstate guess
-@setstate number
-@deltopic 1|2|3|4|5|6|7|8|9
-Thanks for your money, wanna play again?
-
-@match *
-@cond $state->{number}
-@parse (\d+)
-@eval ++$state->{guess}
-@msg "Your guess was too " . ($state->{number} < $match->[0] ? "high" : "low")
-
-@match *
-@cond $state->{number}
-Come on, lad, guess your number!
-
-@match start|here is the money
-@cond $who->pay_amount (100*100*2)
-@eval $state->{number} = 1 + int rand 9
-@eval $state->{guess} = 0
-@addtopic 1|2|3|4|5|6|7|8|9
-Let me think of a number... Ok, give me your first guess!
-
-@match start|here is the money
-If you do not have the money then do not waste my time.
-
-@match *
-@addtopic here is the money
-Hey lad! Wanna play a game?
-
-You give me two platinum. I will think of a number
-between 1 and 9. Then you have two guesses. After the first I will tell
-you wether your number is too high or too low. If you can guess my number
-I will give you five platinum back. All you need is a bit of trust...
-
-Shall we begin playing?
-
-endmsg
-x 47
-y 25
-randomitems jail
-monster 0
-friendly 1
-Your ordinary do-no-good character.
 end
 arch cobblestones2
 x 47

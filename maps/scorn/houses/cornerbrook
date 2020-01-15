@@ -9,7 +9,7 @@ msg
 Creator: Avion
 CF Java Map Editor
 Date:    4/27/2003
-Modified: 2018-12-26 Acer
+Modified: 2020-01-15 Acer
 endmsg
 outdoor 1
 end
@@ -2765,11 +2765,6 @@ arch woodfloor
 x 17
 y 14
 end
-arch stove
-x 17
-y 14
-type 0
-end
 arch woodfloor
 x 17
 y 15
@@ -3385,7 +3380,6 @@ arch sheep
 name Chancy
 msg
 @match mumblypeg
-@trigger 3 1
 Bah!  Baaah!
 [I think he wants you to follow him...]
 endmsg
@@ -3404,6 +3398,15 @@ randomitems jail
 monster 0
 unaggressive 1
 sleep 1
+end
+arch magic_ear
+msg
+@match mumblypeg
+Click.
+endmsg
+x 21
+y 9
+connected 3
 end
 arch woodfloor
 x 21
@@ -3456,6 +3459,18 @@ end
 arch woodfloor
 x 21
 y 18
+end
+arch check_inv
+race Gramp's walking stick
+x 21
+y 18
+connected 5
+end
+arch check_inv
+race Gramp's earhorn
+x 21
+y 18
+connected 6
 end
 arch woodfloor
 x 21

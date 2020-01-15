@@ -6,7 +6,7 @@ msg
 Creator: Avion
 CF Java Map Editor
 Date:    4/27/2003
-Modified: 2018-12-27 Acer
+Modified: 2020-01-15 Acer
 endmsg
 end
 arch woodfloor2
@@ -266,10 +266,14 @@ arch food_table
 name Fresh Coffee
 slaying money
 other_arch coffee
-sp 1
 food 4
 x 3
 y 5
+arch coffee
+name Absolutely Terrible Coffee
+name_pl Absolutely Terrible Cups of Coffee
+value 5
+end
 end
 arch woodfloor2
 x 3
@@ -391,7 +395,7 @@ Hello stranger.
 I'm looking for someone to do a job for me.
 You interested?
 @match interested|what
-Pay ya 500 gold to find my goose
+Pay ya 50 gold to find my goose
 @match goose
 Her name is Esmeralda, she's a special goose
 @match special

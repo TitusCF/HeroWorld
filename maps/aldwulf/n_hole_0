@@ -1,7 +1,7 @@
 arch map
-region aldwulf
 name n_hole_0
 difficulty 10
+region aldwulf
 darkness 5
 width 39
 height 23
@@ -9,6 +9,7 @@ msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Jan 19 16:14:35 2002
+Modified: 2019-12-31 Acer
 endmsg
 end
 arch pstone_1
@@ -1075,9 +1076,9 @@ x 15
 y 12
 end
 arch ladder_up
-slaying isles
+slaying /aldwulf/isles
 hp 29
-sp 44
+sp 12
 x 15
 y 12
 end
@@ -2497,9 +2498,9 @@ level 20
 resist_fire 100
 carrying 211450
 randomitems none
-run_away 0
 will_apply 0
 unaggressive 1
+run_away 0
 can_cast_spell 1
 can_use_scroll 1
 sleep 0
@@ -2537,8 +2538,6 @@ end
 arch sack
 carrying 22050
 arch potion_restoration
-end
-arch potion_invulnerability
 end
 arch gem
 nrof 60

@@ -1,12 +1,13 @@
 arch map
 name cathedral
 region tindervale
+width 20
+height 50
 msg
 Creator: Art
 Date:    5/5/2006
+Modified: 2019-12-26 Acer
 endmsg
-width 20
-height 50
 end
 arch greenmarble
 end
@@ -341,11 +342,11 @@ msg
 @match *
 gaea's loving embrace will hold you...
 endmsg
+x 1
+y 5
 monster 0
 unaggressive 1
 stand_still 1
-x 1
-y 5
 end
 arch greenmarble
 x 1
@@ -408,9 +409,9 @@ x 1
 y 18
 end
 arch altar_devourers
-level 116
 x 1
 y 18
+level 116
 end
 arch greenmarble
 x 1
@@ -421,11 +422,11 @@ msg
 @match *
 hissssss..... your soul is our deisre...
 endmsg
+x 1
+y 19
 monster 0
 unaggressive 1
 stand_still 1
-x 1
-y 19
 end
 arch greenmarble
 x 1
@@ -832,18 +833,18 @@ msg
 @ match *
 I'm a follower of gaea... I do not need weapons anyways...
 endmsg
-type 0
-randomitems standard
-level 10
-exp 100
-dam 3
+Con 10
 hp 100
 maxhp 100
-Con 10
-monster 1
-unaggressive 1
+exp 100
+dam 3
 x 3
 y 7
+level 10
+type 0
+randomitems standard
+monster 1
+unaggressive 1
 end
 arch greenmarble
 x 3
@@ -2060,11 +2061,11 @@ msg
 @match *
 Be taken into the fold...
 endmsg
+x 8
+y 1
 monster 0
 unaggressive 1
 stand_still 1
-x 8
-y 1
 end
 arch greenmarble
 x 8
@@ -2169,18 +2170,18 @@ msg
 you will find altars to all the gods here...
 please be respectful of them all
 endmsg
-type 0
-randomitems standard
-level 10
-exp 100
-dam 3
+Con 10
 hp 100
 maxhp 100
-Con 10
-unaggressive 1
-stand_still 1
+exp 100
+dam 3
 x 8
 y 24
+level 10
+type 0
+randomitems standard
+unaggressive 1
+stand_still 1
 end
 arch blackmarble
 x 8
@@ -2199,9 +2200,9 @@ x 8
 y 28
 end
 arch torch_cyan
-no_pick 1
 x 8
 y 28
+no_pick 1
 end
 arch greenmarble
 x 8
@@ -2228,9 +2229,9 @@ x 8
 y 34
 end
 arch torch_indigo
-no_pick 1
 x 8
 y 34
+no_pick 1
 end
 arch greenmarble
 x 8
@@ -2257,9 +2258,9 @@ x 8
 y 40
 end
 arch torch_vermilion
-no_pick 1
 x 8
 y 40
+no_pick 1
 end
 arch greenmarble
 x 8
@@ -2312,9 +2313,9 @@ x 9
 y 1
 end
 arch altar_valriel
-level 116
 x 9
 y 1
+level 116
 end
 arch greenmarble
 x 9
@@ -2505,9 +2506,9 @@ x 9
 y 48
 end
 arch invis_exit
-slaying keepgrounds
+slaying /world/world_103_113
 hp 20
-sp 17
+sp 18
 x 9
 y 49
 end
@@ -2526,9 +2527,9 @@ x 10
 y 1
 end
 arch altar_valriel
-level 116
 x 10
 y 1
+level 116
 end
 arch greenmarble
 x 10
@@ -2719,9 +2720,9 @@ x 10
 y 48
 end
 arch invis_exit
-slaying keepgrounds
+slaying /world/world_103_113
 hp 20
-sp 17
+sp 18
 x 10
 y 49
 end
@@ -2744,11 +2745,11 @@ msg
 @ match *
 Valriel will comfort you in your hour of need
 endmsg
+x 11
+y 1
 monster 0
 unaggressive 1
 stand_still 1
-x 11
-y 1
 end
 arch greenmarble
 x 11
@@ -2853,18 +2854,18 @@ msg
 you will find altars to all the gods here...
 please be respectful of them all
 endmsg
-type 0
-randomitems standard
-level 10
-exp 100
-dam 3
+Con 10
 hp 100
 maxhp 100
-Con 10
-unaggressive 1
-stand_still 1
+exp 100
+dam 3
 x 11
 y 24
+level 10
+type 0
+randomitems standard
+unaggressive 1
+stand_still 1
 end
 arch blackmarble
 x 11
@@ -2883,9 +2884,9 @@ x 11
 y 28
 end
 arch torch_cyan
-no_pick 1
 x 11
 y 28
+no_pick 1
 end
 arch greenmarble
 x 11
@@ -2912,9 +2913,9 @@ x 11
 y 34
 end
 arch torch_indigo
-no_pick 1
 x 11
 y 34
+no_pick 1
 end
 arch greenmarble
 x 11
@@ -2941,9 +2942,9 @@ x 11
 y 40
 end
 arch torch_vermilion
-no_pick 1
 x 11
 y 40
+no_pick 1
 end
 arch greenmarble
 x 11
@@ -5081,5 +5082,3 @@ arch flagstone_2_2_4
 x 19
 y 49
 end
-
-

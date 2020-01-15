@@ -1,13 +1,13 @@
 arch map
 name <unnamed>
 region scornarena
-width 23
+width 25
 height 33
 msg
 Creator: Andreas Vogl
 Email: red.blaze@gmx.net
 Date: Wed 8.11.2000
-Modified: 2019-04-21 Acer
+Modified: 2019-12-27 Acer
 endmsg
 end
 arch magic_banned
@@ -67,7 +67,7 @@ end
 arch fcross-blue
 y 6
 end
-arch cwall_3_2
+arch dwall_2_1_1
 y 6
 end
 arch magic_banned
@@ -252,20 +252,11 @@ arch fcross-blue
 x 1
 y 1
 end
-arch dcross-white
-x 1
-y 2
-end
 arch magic_banned
 x 1
 y 2
 end
-arch ladder_bi_down
-name Exit
-slaying entrance
-face b-draughts.111
-hp 11
-sp 12
+arch fcross-blue
 x 1
 y 2
 end
@@ -300,11 +291,6 @@ end
 arch fcross-blue
 x 1
 y 6
-end
-arch cwall_closed_1
-x 1
-y 6
-connected 1232
 end
 arch magic_banned
 x 1
@@ -531,13 +517,6 @@ arch fcross-blue
 x 2
 y 1
 end
-arch sign_w
-name Combatants Exit Here
-face sign_e.111
-x 2
-y 1
-subtype 40
-end
 arch magic_banned
 x 2
 y 2
@@ -582,29 +561,13 @@ arch fcross-blue
 x 2
 y 6
 end
-arch cwall_closed_1
-x 2
-y 6
-connected 1232
-end
 arch magic_banned
 x 2
 y 7
 end
-arch dcross-white
+arch fcross-blue
 x 2
 y 7
-end
-arch altar
-name observer fee (10 g.p.)
-slaying money
-face b-draughts.111
-animation town_portal_failed
-food 100
-x 2
-y 7
-connected 1232
-activate_on_release 0
 end
 arch magic_banned
 x 2
@@ -646,7 +609,7 @@ arch fcross-blue
 x 2
 y 12
 end
-arch cwall_3_3
+arch cwall_2_2_3
 x 2
 y 12
 end
@@ -718,7 +681,7 @@ arch fcross-blue
 x 2
 y 18
 end
-arch cwall_3_2
+arch cwall_2_1_1
 x 2
 y 18
 end
@@ -908,11 +871,6 @@ arch fcross-blue
 x 3
 y 6
 end
-arch cwall_closed_1
-x 3
-y 6
-connected 1232
-end
 arch magic_banned
 x 3
 y 7
@@ -961,27 +919,13 @@ arch fcross-blue
 x 3
 y 12
 end
-arch cwall_2_1_2
-x 3
-y 12
-end
 arch magic_banned
 x 3
 y 13
 end
-arch dcross-white
+arch fcross-blue
 x 3
 y 13
-end
-arch ladder_bi_down
-name Storage
-slaying /scorn/misc/battle_arena/storage
-face b-draughts.111
-hp 1
-sp 1
-x 3
-y 13
-unique 1
 end
 arch magic_banned
 x 3
@@ -995,19 +939,9 @@ arch magic_banned
 x 3
 y 15
 end
-arch dcross-white
+arch fcross-blue
 x 3
 y 15
-end
-arch ladder_bi_down
-name Storage
-slaying /scorn/misc/battle_arena/storage1
-face b-draughts.111
-hp 1
-sp 1
-x 3
-y 15
-unique 1
 end
 arch magic_banned
 x 3
@@ -1021,19 +955,9 @@ arch magic_banned
 x 3
 y 17
 end
-arch dcross-white
+arch fcross-blue
 x 3
 y 17
-end
-arch ladder_bi_down
-name Storage
-slaying /scorn/misc/battle_arena/storage2
-face b-draughts.111
-hp 1
-sp 1
-x 3
-y 17
-unique 1
 end
 arch magic_banned
 x 3
@@ -1043,21 +967,11 @@ arch fcross-blue
 x 3
 y 18
 end
-arch cwall_2_1_2
-x 3
-y 18
-end
 arch magic_banned
 x 3
 y 19
 end
-arch dcross-white
-x 3
-y 19
-end
-arch bed_save
-name Recovery Station
-face b-draughts.111
+arch fcross-blue
 x 3
 y 19
 end
@@ -1065,7 +979,7 @@ arch magic_banned
 x 3
 y 20
 end
-arch fcross-white
+arch fcross-blue
 x 3
 y 20
 end
@@ -1073,13 +987,7 @@ arch magic_banned
 x 3
 y 21
 end
-arch dcross-white
-x 3
-y 21
-end
-arch bed_save
-name Recovery Station
-face b-draughts.111
+arch fcross-blue
 x 3
 y 21
 end
@@ -1087,21 +995,15 @@ arch magic_banned
 x 3
 y 22
 end
-arch fcross-white
+arch fcross-blue
 x 3
 y 22
 end
+arch fcross-blue
+x 3
+y 23
+end
 arch magic_banned
-x 3
-y 23
-end
-arch dcross-white
-x 3
-y 23
-end
-arch bed_save
-name Recovery Station
-face b-draughts.111
 x 3
 y 23
 end
@@ -1178,13 +1080,6 @@ arch fcross-blue
 x 4
 y 1
 end
-arch stair_up_2
-slaying arena
-hp 1
-sp 16
-x 4
-y 1
-end
 arch magic_banned
 x 4
 y 2
@@ -1193,25 +1088,11 @@ arch fcross-blue
 x 4
 y 2
 end
-arch stair_up_2
-slaying arena
-hp 1
-sp 17
-x 4
-y 2
-end
 arch magic_banned
 x 4
 y 3
 end
 arch fcross-blue
-x 4
-y 3
-end
-arch stair_up_2
-slaying arena
-hp 1
-sp 18
 x 4
 y 3
 end
@@ -1247,7 +1128,7 @@ arch fcross-blue
 x 4
 y 6
 end
-arch cwall_3_1
+arch dwall_2_2_1
 x 4
 y 6
 end
@@ -1303,10 +1184,6 @@ arch fcross-blue
 x 4
 y 12
 end
-arch cwall_2_1_2
-x 4
-y 12
-end
 arch magic_banned
 x 4
 y 13
@@ -1355,42 +1232,19 @@ arch fcross-blue
 x 4
 y 18
 end
-arch cwall_1_3
-x 4
-y 18
-end
 arch magic_banned
 x 4
 y 19
 end
-arch fcross-white
+arch fcross-blue
 x 4
 y 19
-end
-arch button_small
-x 4
-y 19
-invisible 1
-connected 745935862
-activate_on_release 0
-end
-arch check_inv
-race attache
-x 4
-y 19
-last_heal 1
-end
-arch check_inv
-race machine_gun
-x 4
-y 19
-last_heal 1
 end
 arch magic_banned
 x 4
 y 20
 end
-arch fcross-white
+arch fcross-blue
 x 4
 y 20
 end
@@ -1398,7 +1252,7 @@ arch magic_banned
 x 4
 y 21
 end
-arch fcross-white
+arch fcross-blue
 x 4
 y 21
 end
@@ -1406,15 +1260,15 @@ arch magic_banned
 x 4
 y 22
 end
-arch fcross-white
+arch fcross-blue
 x 4
 y 22
 end
-arch magic_banned
+arch fcross-blue
 x 4
 y 23
 end
-arch fcross-white
+arch magic_banned
 x 4
 y 23
 end
@@ -1638,10 +1492,6 @@ arch fcross-blue
 x 5
 y 12
 end
-arch cwall_2_1_2
-x 5
-y 12
-end
 arch magic_banned
 x 5
 y 13
@@ -1690,49 +1540,19 @@ arch fcross-blue
 x 5
 y 18
 end
-arch gate_closed_1
-x 5
-y 18
-connected 745935862
-end
-arch check_inv
-race attache
-x 5
-y 18
-last_heal 1
-end
 arch magic_banned
 x 5
 y 19
 end
-arch fcross-white
+arch fcross-blue
 x 5
 y 19
-end
-arch button_small
-x 5
-y 19
-invisible 1
-connected 745935862
-activate_on_release 0
-end
-arch check_inv
-race attache
-x 5
-y 19
-last_heal 1
-end
-arch check_inv
-race machine_gun
-x 5
-y 19
-last_heal 1
 end
 arch magic_banned
 x 5
 y 20
 end
-arch fcross-white
+arch fcross-blue
 x 5
 y 20
 end
@@ -1740,7 +1560,7 @@ arch magic_banned
 x 5
 y 21
 end
-arch fcross-white
+arch fcross-blue
 x 5
 y 21
 end
@@ -1748,15 +1568,15 @@ arch magic_banned
 x 5
 y 22
 end
-arch fcross-white
+arch fcross-blue
 x 5
 y 22
 end
-arch magic_banned
+arch fcross-blue
 x 5
 y 23
 end
-arch fcross-white
+arch magic_banned
 x 5
 y 23
 end
@@ -1892,8 +1712,33 @@ arch musketball
 name 7.62 NATO
 name_pl 7.62 NATO
 food 100
-nrof 2000
+nrof 20000
 attacktype 16777217
+end
+end
+arch chest
+name Whistle of Cowardice (Use to Deploy a Portal)
+face magic_whistle.111
+x 6
+y 4
+nrof 1
+weight 100
+arch stair_up_1
+name Return to Safety
+slaying arena
+msg
+You are swept into the ground!
+...
+You wake up.
+endmsg
+face archtree.111
+hp 20
+sp 22
+no_pick 0
+walk_on 1
+is_thrown 1
+fly_on 1
+damned 1
 end
 end
 arch magic_banned
@@ -1984,28 +1829,11 @@ arch fcross-blue
 x 6
 y 12
 end
-arch cwall_2_1_2
-x 6
-y 12
-end
 arch magic_banned
 x 6
 y 13
 end
 arch fcross-blue
-x 6
-y 13
-end
-arch sign
-name Storage Facility
-msg
-These platforms appear to be
-non-magical, pocket-dimensions used
-primarily for storage.
-
-(Apply to enter storage area)
-
-endmsg
 x 6
 y 13
 end
@@ -2049,42 +1877,19 @@ arch fcross-blue
 x 6
 y 18
 end
-arch cwall_1_4
-x 6
-y 18
-end
 arch magic_banned
 x 6
 y 19
 end
-arch fcross-white
+arch fcross-blue
 x 6
 y 19
-end
-arch button_small
-x 6
-y 19
-invisible 1
-connected 745935862
-activate_on_release 0
-end
-arch check_inv
-race attache
-x 6
-y 19
-last_heal 1
-end
-arch check_inv
-race machine_gun
-x 6
-y 19
-last_heal 1
 end
 arch magic_banned
 x 6
 y 20
 end
-arch fcross-white
+arch fcross-blue
 x 6
 y 20
 end
@@ -2092,7 +1897,7 @@ arch magic_banned
 x 6
 y 21
 end
-arch fcross-white
+arch fcross-blue
 x 6
 y 21
 end
@@ -2100,15 +1905,15 @@ arch magic_banned
 x 6
 y 22
 end
-arch fcross-white
+arch fcross-blue
 x 6
 y 22
 end
-arch magic_banned
+arch fcross-blue
 x 6
 y 23
 end
-arch fcross-white
+arch magic_banned
 x 6
 y 23
 end
@@ -2172,9 +1977,19 @@ x 7
 end
 arch invis_exit
 slaying arena
-hp 17
-sp 26
+hp 30
+sp 50
 x 7
+end
+arch creator
+x 7
+y 1
+connected 5485485
+activate_on_release 0
+arch mover_1
+speed 1.0
+attacktype 1
+end
 end
 arch magic_banned
 x 7
@@ -2187,8 +2002,18 @@ end
 arch gate_closed_1
 x 7
 y 1
-connected 7695316
+connected 5485485
 activate_on_release 0
+end
+arch creator
+x 7
+y 2
+connected 5485485
+activate_on_release 0
+arch mover_1
+speed 1.0
+attacktype 1
+end
 end
 arch magic_banned
 x 7
@@ -2215,11 +2040,19 @@ name PREPARE YOUR GEAR BEFORE STEPPING OUT!
 msg
 You may wield both guns or one gun and a shield.
 
+DO YOU HAVE YOUR WHISTLE?
+
 DO NOT FORGET TO PREPARE YOUR FIREMODE
 USING THE 'BOWMODE THREEWIDE / SPREADSHOT / NORMAL'  COMMAND.
 endmsg
 x 7
 y 2
+end
+arch check_inv
+race Whistle
+x 7
+y 2
+move_block all
 end
 arch magic_banned
 x 7
@@ -2300,6 +2133,13 @@ arch fcross-blue
 x 7
 y 7
 end
+arch button_small
+x 7
+y 7
+invisible 1
+connected 87625895
+activate_on_release 0
+end
 arch magic_banned
 x 7
 y 8
@@ -2365,19 +2205,11 @@ arch fcross-blue
 x 7
 y 12
 end
-arch cwall_2_2_3
-x 7
-y 12
-end
 arch magic_banned
 x 7
 y 13
 end
 arch fcross-blue
-x 7
-y 13
-end
-arch cwall_2_1_1
 x 7
 y 13
 end
@@ -2389,10 +2221,6 @@ arch fcross-blue
 x 7
 y 14
 end
-arch dwall_1_2
-x 7
-y 14
-end
 arch magic_banned
 x 7
 y 15
@@ -2401,27 +2229,11 @@ arch fcross-blue
 x 7
 y 15
 end
-arch check_inv
-race attache
-x 7
-y 15
-last_heal 1
-end
-arch check_inv
-race machine_gun
-x 7
-y 15
-last_heal 1
-end
 arch magic_banned
 x 7
 y 16
 end
 arch fcross-blue
-x 7
-y 16
-end
-arch dwall_1_1
 x 7
 y 16
 end
@@ -2433,19 +2245,11 @@ arch fcross-blue
 x 7
 y 17
 end
-arch cwall_2_1_1
-x 7
-y 17
-end
 arch magic_banned
 x 7
 y 18
 end
 arch fcross-blue
-x 7
-y 18
-end
-arch cwall_3_4
 x 7
 y 18
 end
@@ -2457,19 +2261,11 @@ arch fcross-blue
 x 7
 y 19
 end
-arch cwall_2_1_1
-x 7
-y 19
-end
 arch magic_banned
 x 7
 y 20
 end
 arch fcross-blue
-x 7
-y 20
-end
-arch cwall_2_1_1
 x 7
 y 20
 end
@@ -2481,10 +2277,6 @@ arch fcross-blue
 x 7
 y 21
 end
-arch cwall_2_1_1
-x 7
-y 21
-end
 arch magic_banned
 x 7
 y 22
@@ -2492,20 +2284,12 @@ end
 arch fcross-blue
 x 7
 y 22
-end
-arch cwall_2_1_1
-x 7
-y 22
-end
-arch magic_banned
-x 7
-y 23
 end
 arch fcross-blue
 x 7
 y 23
 end
-arch cwall_2_1_1
+arch magic_banned
 x 7
 y 23
 end
@@ -2517,7 +2301,7 @@ arch fcross-blue
 x 7
 y 24
 end
-arch cwall_3_1
+arch cwall_2_1_2
 x 7
 y 24
 end
@@ -2675,11 +2459,6 @@ x 8
 y 10
 end
 arch fcross-blue
-x 8
-y 10
-end
-arch sign_w
-name Arena Observation West
 x 8
 y 10
 end
@@ -2915,8 +2694,33 @@ arch musketball
 name 7.62 NATO
 name_pl 7.62 NATO
 food 0
-nrof 2000
+nrof 20000
 attacktype 16777217
+end
+end
+arch chest
+name Whistle of Cowardice (Use to Deploy a Portal)
+face magic_whistle.111
+x 9
+y 4
+nrof 1
+weight 100
+arch stair_up_1
+name Return to Safety
+slaying arena
+msg
+You are swept into the ground!
+...
+You wake up.
+endmsg
+face archtree.111
+hp 20
+sp 22
+no_pick 0
+walk_on 1
+is_thrown 1
+fly_on 1
+damned 1
 end
 end
 arch magic_banned
@@ -3162,9 +2966,19 @@ x 10
 end
 arch invis_exit
 slaying arena
-hp 26
-sp 17
+hp 31
+sp 50
 x 10
+end
+arch creator
+x 10
+y 1
+connected 5485485
+activate_on_release 0
+arch mover_1
+speed 1.0
+attacktype 1
+end
 end
 arch magic_banned
 x 10
@@ -3177,8 +2991,18 @@ end
 arch gate_closed_1
 x 10
 y 1
-connected 75316
+connected 5485485
 activate_on_release 0
+end
+arch creator
+x 10
+y 2
+connected 5485485
+activate_on_release 0
+arch mover_1
+speed 1.0
+attacktype 1
+end
 end
 arch magic_banned
 x 10
@@ -3205,11 +3029,20 @@ name PREPARE YOUR GEAR BEFORE STEPPING OUT!
 msg
 You may wield both guns or one gun and a shield.
 
+DO YOU HAVE YOUR WHISTLE?
+
 DO NOT FORGET TO PREPARE YOUR FIREMODE
 USING THE 'BOWMODE THREEWIDE / SPREADSHOT / NORMAL'  COMMAND.
 endmsg
 x 10
 y 2
+end
+arch check_inv
+race Whistle
+x 10
+y 2
+connected 598654854
+move_block all
 end
 arch magic_banned
 x 10
@@ -3289,6 +3122,13 @@ end
 arch fcross-blue
 x 10
 y 7
+end
+arch button_small
+x 10
+y 7
+invisible 1
+connected 87625897
+activate_on_release 0
 end
 arch magic_banned
 x 10
@@ -3628,6 +3468,9 @@ without having to fear death?
 Kari Kori's automated recovery system
 will prevent your soul from leaving its body
 upon death.
+
+
+
 endmsg
 x 11
 y 10
@@ -3848,9 +3691,19 @@ x 12
 end
 arch invis_exit
 slaying arena
-hp 17
-sp 8
+hp 32
+sp 50
 x 12
+end
+arch creator
+x 12
+y 1
+connected 5485485
+activate_on_release 0
+arch mover_1
+speed 1.0
+attacktype 1
+end
 end
 arch magic_banned
 x 12
@@ -3863,8 +3716,18 @@ end
 arch gate_closed_1
 x 12
 y 1
-connected 76953132
+connected 5485485
 activate_on_release 0
+end
+arch creator
+x 12
+y 2
+connected 5485485
+activate_on_release 0
+arch mover_1
+speed 1.0
+attacktype 1
+end
 end
 arch magic_banned
 x 12
@@ -3891,11 +3754,20 @@ name PREPARE YOUR GEAR BEFORE STEPPING OUT!
 msg
 You may wield both guns or one gun and a shield.
 
+DO YOU HAVE YOUR WHISTLE?
+
 DO NOT FORGET TO PREPARE YOUR FIREMODE
 USING THE 'BOWMODE THREEWIDE / SPREADSHOT / NORMAL'  COMMAND.
 endmsg
 x 12
 y 2
+end
+arch check_inv
+race Whistle
+x 12
+y 2
+connected 5986548584
+move_block all
 end
 arch magic_banned
 x 12
@@ -3975,6 +3847,13 @@ end
 arch fcross-blue
 x 12
 y 7
+end
+arch button_small
+x 12
+y 7
+invisible 1
+connected 876258971
+activate_on_release 0
 end
 arch magic_banned
 x 12
@@ -4264,8 +4143,33 @@ arch musketball
 name 7.62 NATO
 name_pl 7.62 NATO
 food 0
-nrof 2000
+nrof 20000
 attacktype 16777217
+end
+end
+arch chest
+name Whistle of Cowardice (Use to Deploy a Portal)
+face magic_whistle.111
+x 13
+y 4
+nrof 1
+weight 100
+arch stair_up_1
+name Return to Safety
+slaying arena
+msg
+You are swept into the ground!
+...
+You wake up.
+endmsg
+face archtree.111
+hp 20
+sp 22
+no_pick 0
+walk_on 1
+is_thrown 1
+fly_on 1
+damned 1
 end
 end
 arch magic_banned
@@ -4632,11 +4536,6 @@ arch fcross-blue
 x 14
 y 10
 end
-arch sign_e
-name Arena Observation East
-x 14
-y 10
-end
 arch magic_banned
 x 14
 y 11
@@ -4674,14 +4573,6 @@ x 14
 y 15
 end
 arch fcross-blue
-x 14
-y 15
-end
-arch sign_e
-name souvenirs
-msg
-Buy souvenirs!
-endmsg
 x 14
 y 15
 end
@@ -4808,9 +4699,19 @@ x 15
 end
 arch invis_exit
 slaying arena
-hp 9
-sp 17
+hp 33
+sp 50
 x 15
+end
+arch creator
+x 15
+y 1
+connected 5485485
+activate_on_release 0
+arch mover_1
+speed 1.0
+attacktype 1
+end
 end
 arch magic_banned
 x 15
@@ -4823,8 +4724,18 @@ end
 arch gate_closed_1
 x 15
 y 1
-connected 76248132
+connected 5485485
 activate_on_release 0
+end
+arch creator
+x 15
+y 2
+connected 5485485
+activate_on_release 0
+arch mover_1
+speed 1.0
+attacktype 1
+end
 end
 arch magic_banned
 x 15
@@ -4851,11 +4762,20 @@ name PREPARE YOUR GEAR BEFORE STEPPING OUT!
 msg
 You may wield both guns or one gun and a shield.
 
+DO YOU HAVE YOUR WHISTLE?
+
 DO NOT FORGET TO PREPARE YOUR FIREMODE
 USING THE 'BOWMODE THREEWIDE / SPREADSHOT / NORMAL'  COMMAND.
 endmsg
 x 15
 y 2
+end
+arch check_inv
+race Whistle
+x 15
+y 2
+connected 5986548845
+move_block all
 end
 arch magic_banned
 x 15
@@ -4905,6 +4825,11 @@ end
 arch sign
 name READ ME
 msg
+INTRODUCING WHISTLE OF COWARDICE.
+APPLY WHISTLE IN YOUR INVENTORY TO DEPLOY A PORTAL TO THE SAFE ZONE.
+DO NOT STEP THROUGH PORTAL UNLESS YOU ARE 100% SURE YOU WANT TO QUIT OR
+IF YOU ARE STUCK IN THE ARENA.
+
 ----
 No personal weapons allowed.
 Please make use of the deposit boxes located in the dormatory.
@@ -4935,6 +4860,13 @@ end
 arch fcross-blue
 x 15
 y 7
+end
+arch button_small
+x 15
+y 7
+invisible 1
+connected 8762589774
+activate_on_release 0
 end
 arch magic_banned
 x 15
@@ -5001,75 +4933,55 @@ arch fcross-blue
 x 15
 y 12
 end
+arch magic_banned
+x 15
+y 13
+end
+arch fcross-blue
+x 15
+y 13
+end
+arch magic_banned
+x 15
+y 14
+end
+arch fcross-blue
+x 15
+y 14
+end
+arch magic_banned
+x 15
+y 15
+end
+arch fcross-blue
+x 15
+y 15
+end
+arch magic_banned
+x 15
+y 16
+end
+arch fcross-blue
+x 15
+y 16
+end
+arch magic_banned
+x 15
+y 17
+end
+arch fcross-blue
+x 15
+y 17
+end
+arch magic_banned
+x 15
+y 18
+end
+arch fcross-blue
+x 15
+y 18
+end
 arch cwall_2_2_2
-x 15
-y 12
-end
-arch magic_banned
-x 15
-y 13
-end
-arch fcross-blue
-x 15
-y 13
-end
-arch cwall_2_1_1
-x 15
-y 13
-end
-arch magic_banned
-x 15
-y 14
-end
-arch fcross-blue
-x 15
-y 14
-end
-arch dwall_1_2
-x 15
-y 14
-end
-arch magic_banned
-x 15
-y 15
-end
-arch fcross-blue
-x 15
-y 15
-end
-arch magic_banned
-x 15
-y 16
-end
-arch fcross-blue
-x 15
-y 16
-end
-arch dwall_1_1
-x 15
-y 16
-end
-arch magic_banned
-x 15
-y 17
-end
-arch fcross-blue
-x 15
-y 17
-end
-arch cwall_2_1_1
-x 15
-y 17
-end
-arch magic_banned
-x 15
-y 18
-end
-arch fcross-blue
-x 15
-y 18
-end
-arch cwall_3_2
 x 15
 y 18
 end
@@ -5264,8 +5176,33 @@ arch musketball
 name 7.62 NATO
 name_pl 7.62 NATO
 food 0
-nrof 2000
+nrof 20000
 attacktype 16777217
+end
+end
+arch chest
+name Whistle of Cowardice (Use to Deploy a Portal)
+face magic_whistle.111
+x 16
+y 4
+nrof 1
+weight 100
+arch stair_up_1
+name Return to Safety
+slaying arena
+msg
+You are swept into the ground!
+...
+You wake up.
+endmsg
+face archtree.111
+hp 20
+sp 22
+no_pick 0
+walk_on 1
+is_thrown 1
+fly_on 1
+damned 1
 end
 end
 arch magic_banned
@@ -5345,10 +5282,6 @@ x 16
 y 12
 end
 arch fcross-blue
-x 16
-y 12
-end
-arch cwall_2_1_2
 x 16
 y 12
 end
@@ -5649,10 +5582,6 @@ arch fcross-blue
 x 17
 y 12
 end
-arch cwall_2_1_2
-x 17
-y 12
-end
 arch magic_banned
 x 17
 y 13
@@ -5673,22 +5602,9 @@ arch magic_banned
 x 17
 y 15
 end
-arch dcross-red
+arch fcross-blue
 x 17
 y 15
-end
-arch altar
-name complete set (750 g.p)
-slaying money
-face b-draughts.111
-animation town_portal_failed
-food 7500
-x 17
-y 15
-resist_physical 30
-resist_fire 30
-resist_confusion 30
-connected 37
 end
 arch magic_banned
 x 17
@@ -5839,13 +5755,6 @@ arch fcross-blue
 x 18
 y 1
 end
-arch stair_up_4
-slaying arena
-hp 33
-sp 16
-x 18
-y 1
-end
 arch magic_banned
 x 18
 y 2
@@ -5854,25 +5763,11 @@ arch fcross-blue
 x 18
 y 2
 end
-arch stair_up_4
-slaying arena
-hp 33
-sp 17
-x 18
-y 2
-end
 arch magic_banned
 x 18
 y 3
 end
 arch fcross-blue
-x 18
-y 3
-end
-arch stair_up_4
-slaying arena
-hp 33
-sp 18
 x 18
 y 3
 end
@@ -5908,7 +5803,7 @@ arch fcross-blue
 x 18
 y 6
 end
-arch cwall_3_1
+arch dwall_2_2_4
 x 18
 y 6
 end
@@ -5961,10 +5856,6 @@ x 18
 y 12
 end
 arch fcross-blue
-x 18
-y 12
-end
-arch cwall_2_1_2
 x 18
 y 12
 end
@@ -6225,11 +6116,6 @@ arch fcross-blue
 x 19
 y 6
 end
-arch cwall_closed_1
-x 19
-y 6
-connected 123297
-end
 arch magic_banned
 x 19
 y 7
@@ -6278,29 +6164,13 @@ arch fcross-blue
 x 19
 y 12
 end
-arch cwall_2_1_2
-x 19
-y 12
-end
 arch magic_banned
 x 19
 y 13
 end
-arch dcross-red
+arch fcross-blue
 x 19
 y 13
-end
-arch altar
-name sword (250 g.p)
-slaying money
-face b-draughts.111
-animation town_portal_failed
-food 2500
-x 19
-y 13
-resist_magic 30
-resist_confusion 30
-connected 34
 end
 arch magic_banned
 x 19
@@ -6314,22 +6184,9 @@ arch magic_banned
 x 19
 y 15
 end
-arch dcross-red
+arch fcross-blue
 x 19
 y 15
-end
-arch altar
-name shirt (500 g.p)
-slaying money
-face b-draughts.111
-animation town_portal_failed
-food 5000
-x 19
-y 15
-resist_physical 30
-resist_magic 30
-resist_confusion 30
-connected 35
 end
 arch magic_banned
 x 19
@@ -6343,21 +6200,9 @@ arch magic_banned
 x 19
 y 17
 end
-arch dcross-red
+arch fcross-blue
 x 19
 y 17
-end
-arch altar
-name shield (250 g.p)
-slaying money
-face b-draughts.111
-animation town_portal_failed
-food 2500
-x 19
-y 17
-resist_fire 30
-resist_confusion 30
-connected 36
 end
 arch magic_banned
 x 19
@@ -6464,10 +6309,6 @@ x 19
 y 28
 type 66
 end
-arch cloudfloor
-x 19
-y 28
-end
 arch dungeon_floor
 x 19
 y 29
@@ -6509,11 +6350,6 @@ arch fcross-blue
 x 20
 y 1
 end
-arch sign_e
-name Combatants Exit Here
-x 20
-y 1
-end
 arch magic_banned
 x 20
 y 2
@@ -6554,29 +6390,13 @@ arch fcross-blue
 x 20
 y 6
 end
-arch cwall_closed_1
-x 20
-y 6
-connected 123297
-end
 arch magic_banned
 x 20
 y 7
 end
-arch dcross-white
+arch fcross-blue
 x 20
 y 7
-end
-arch altar
-name observer fee (10 g.p.)
-slaying money
-face b-draughts.111
-animation town_portal_failed
-food 100
-x 20
-y 7
-connected 123297
-activate_on_release 0
 end
 arch magic_banned
 x 20
@@ -6618,10 +6438,6 @@ arch fcross-blue
 x 20
 y 12
 end
-arch cwall_2_1_2
-x 20
-y 12
-end
 arch magic_banned
 x 20
 y 13
@@ -6634,17 +6450,6 @@ arch fcross-blue
 x 20
 y 13
 end
-arch grate_closed_2
-x 20
-y 13
-speed 0.500000
-resist_physical 30
-resist_magic 30
-resist_fire 30
-resist_electricity 30
-resist_cold 30
-connected 31
-end
 arch magic_banned
 x 20
 y 14
@@ -6654,10 +6459,6 @@ x 20
 y 14
 end
 arch fcross-blue
-x 20
-y 14
-end
-arch swall_3_2
 x 20
 y 14
 end
@@ -6673,13 +6474,6 @@ arch fcross-blue
 x 20
 y 15
 end
-arch grate_closed_2
-x 20
-y 15
-speed 0.500000
-resist_confusion 30
-connected 32
-end
 arch magic_banned
 x 20
 y 16
@@ -6689,10 +6483,6 @@ x 20
 y 16
 end
 arch fcross-blue
-x 20
-y 16
-end
-arch swall_3_2
 x 20
 y 16
 end
@@ -6707,14 +6497,6 @@ end
 arch fcross-blue
 x 20
 y 17
-end
-arch grate_closed_2
-x 20
-y 17
-speed 0.500000
-resist_physical 30
-resist_confusion 30
-connected 33
 end
 arch magic_banned
 x 20
@@ -6833,20 +6615,11 @@ arch fcross-blue
 x 21
 y 1
 end
-arch dcross-white
-x 21
-y 2
-end
 arch magic_banned
 x 21
 y 2
 end
-arch ladder_bi_down
-name Exit
-slaying entrance
-face b-draughts.111
-hp 11
-sp 12
+arch fcross-blue
 x 21
 y 2
 end
@@ -6881,11 +6654,6 @@ end
 arch fcross-blue
 x 21
 y 6
-end
-arch cwall_closed_1
-x 21
-y 6
-connected 123297
 end
 arch magic_banned
 x 21
@@ -6935,20 +6703,11 @@ arch fcross-blue
 x 21
 y 12
 end
-arch cwall_2_1_2
-x 21
-y 12
-end
 arch magic_banned
 x 21
 y 13
 end
 arch fcross-blue
-x 21
-y 13
-end
-arch falchion
-name sword "there can only be ONE"
 x 21
 y 13
 end
@@ -6964,10 +6723,6 @@ arch fcross-blue
 x 21
 y 14
 end
-arch swall_1_3
-x 21
-y 14
-end
 arch magic_banned
 x 21
 y 15
@@ -6975,13 +6730,6 @@ end
 arch fcross-blue
 x 21
 y 15
-end
-arch tunic
-name shirt "I LOVE the ARENA"
-x 21
-y 15
-weight 100
-last_sp 10
 end
 arch magic_banned
 x 21
@@ -6995,20 +6743,11 @@ arch fcross-blue
 x 21
 y 16
 end
-arch swall_1_3
-x 21
-y 16
-end
 arch magic_banned
 x 21
 y 17
 end
 arch fcross-blue
-x 21
-y 17
-end
-arch shield
-name shield "go GLADIATORS"
 x 21
 y 17
 end
@@ -7209,7 +6948,7 @@ end
 arch fcross-blue
 x 22
 end
-arch cwall_2_2_3
+arch cwall_3_3
 x 22
 end
 arch magic_banned
@@ -7268,7 +7007,7 @@ arch fcross-blue
 x 22
 y 5
 end
-arch cwall_2_1_1
+arch cwall_3_2
 x 22
 y 5
 end
@@ -7280,7 +7019,7 @@ arch fcross-blue
 x 22
 y 6
 end
-arch cwall_3_4
+arch cwall_3_2
 x 22
 y 6
 end
@@ -7292,7 +7031,7 @@ arch fcross-blue
 x 22
 y 7
 end
-arch cwall_2_1_1
+arch cwall_3_2
 x 22
 y 7
 end
@@ -7304,7 +7043,7 @@ arch fcross-blue
 x 22
 y 8
 end
-arch cwall_2_1_1
+arch cwall_3_2
 x 22
 y 8
 end
@@ -7352,7 +7091,7 @@ arch fcross-blue
 x 22
 y 12
 end
-arch cwall_3_4
+arch cwall_2_1_1
 x 22
 y 12
 end
@@ -7364,7 +7103,7 @@ arch fcross-blue
 x 22
 y 13
 end
-arch cwall_2_1_1
+arch cwall_3_2
 x 22
 y 13
 end
@@ -7535,4 +7274,272 @@ end
 arch cwall_2_2_4
 x 22
 y 32
+end
+arch afloor_black_left
+x 23
+end
+arch cwall_2_1_2
+x 23
+end
+arch afloor_black_left
+x 23
+y 1
+end
+arch creator
+x 23
+y 1
+connected 87625895
+activate_on_release 0
+arch bulletwall_5
+arch spell_large_lightning
+end
+end
+end
+arch afloor_black_left
+x 23
+y 2
+end
+arch afloor_black_left
+x 23
+y 3
+end
+arch afloor_black_left
+x 23
+y 4
+end
+arch afloor_black_left
+x 23
+y 5
+end
+arch creator
+x 23
+y 5
+connected 87625895
+activate_on_release 0
+arch cwall_closed_1
+connected 5986548
+activate_on_release 0
+end
+end
+arch afloor_black_left
+x 23
+y 6
+end
+arch creator
+x 23
+y 6
+connected 87625897
+activate_on_release 0
+arch cwall_closed_1
+connected 598654854
+activate_on_release 0
+end
+end
+arch afloor_black_left
+x 23
+y 7
+end
+arch creator
+x 23
+y 7
+connected 876258971
+activate_on_release 0
+arch cwall_closed_1
+connected 5986548584
+activate_on_release 0
+end
+end
+arch afloor_black_left
+x 23
+y 8
+end
+arch creator
+x 23
+y 8
+connected 8762589774
+activate_on_release 0
+arch cwall_closed_1
+connected 5986548845
+activate_on_release 0
+end
+end
+arch afloor_black_left
+x 23
+y 9
+end
+arch afloor_black_left
+x 23
+y 10
+end
+arch afloor_black_left
+x 23
+y 11
+end
+arch afloor_black_left
+x 23
+y 12
+end
+arch detector
+slaying lightning
+x 23
+y 12
+connected 5485485
+end
+arch afloor_black_left
+x 23
+y 13
+end
+arch cwall_2_1_2
+x 23
+y 13
+end
+arch afloor_black_left
+x 23
+y 14
+end
+arch afloor_black_left
+x 23
+y 15
+end
+arch afloor_black_left
+x 23
+y 16
+end
+arch afloor_black_left
+x 23
+y 17
+end
+arch afloor_black_left
+x 23
+y 18
+end
+arch afloor_black_left
+x 24
+end
+arch cwall_2_2_3
+x 24
+end
+arch afloor_black_left
+x 24
+y 1
+end
+arch cwall_2_1_1
+x 24
+y 1
+end
+arch afloor_black_left
+x 24
+y 2
+end
+arch cwall_2_1_1
+x 24
+y 2
+end
+arch afloor_black_left
+x 24
+y 3
+end
+arch cwall_2_1_1
+x 24
+y 3
+end
+arch afloor_black_left
+x 24
+y 4
+end
+arch cwall_2_1_1
+x 24
+y 4
+end
+arch afloor_black_left
+x 24
+y 5
+end
+arch cwall_3_4
+x 24
+y 5
+end
+arch afloor_black_left
+x 24
+y 6
+end
+arch cwall_3_4
+x 24
+y 6
+end
+arch afloor_black_left
+x 24
+y 7
+end
+arch cwall_3_4
+x 24
+y 7
+end
+arch afloor_black_left
+x 24
+y 8
+end
+arch cwall_3_4
+x 24
+y 8
+end
+arch afloor_black_left
+x 24
+y 9
+end
+arch cwall_2_1_1
+x 24
+y 9
+end
+arch afloor_black_left
+x 24
+y 10
+end
+arch cwall_2_1_1
+x 24
+y 10
+end
+arch afloor_black_left
+x 24
+y 11
+end
+arch cwall_2_1_1
+x 24
+y 11
+end
+arch afloor_black_left
+x 24
+y 12
+end
+arch cwall_2_1_1
+x 24
+y 12
+end
+arch afloor_black_left
+x 24
+y 13
+end
+arch cwall_2_2_4
+x 24
+y 13
+end
+arch afloor_black_left
+x 24
+y 14
+end
+arch afloor_black_left
+x 24
+y 15
+end
+arch afloor_black_left
+x 24
+y 16
+end
+arch afloor_black_left
+x 24
+y 17
+end
+arch afloor_black_left
+x 24
+y 18
 end

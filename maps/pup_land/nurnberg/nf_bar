@@ -11,7 +11,7 @@ enter_x 12
 enter_y 1
 msg
 Created:  1996-02-10
-Modified: 2012-03-02 Rick Tanner
+Modified: 2019-12-27 Acer
 endmsg
 end
 arch cobblestones
@@ -83,9 +83,9 @@ arch dungeon_magic
 x 1
 end
 arch invis_exit
-slaying city
-hp 21
-sp 16
+slaying /world/world_103_104
+hp 11
+sp 37
 x 1
 end
 arch cobblestones
@@ -95,25 +95,11 @@ arch dungeon_magic
 x 1
 y 1
 end
-arch invis_exit
-slaying city
-hp 21
-sp 16
-x 1
-y 1
-end
 arch cobblestones
 x 1
 y 1
 end
 arch dungeon_magic
-x 1
-y 2
-end
-arch invis_exit
-slaying city
-hp 21
-sp 16
 x 1
 y 2
 end
@@ -262,9 +248,9 @@ x 1
 y 19
 end
 arch invis_exit
-slaying city
-hp 21
-sp 16
+slaying /world/world_103_104
+hp 11
+sp 37
 x 2
 end
 arch cobblestones
@@ -453,9 +439,9 @@ x 2
 y 19
 end
 arch invis_exit
-slaying city
-hp 21
-sp 16
+slaying /world/world_103_104
+hp 11
+sp 37
 x 3
 end
 arch cobblestones
@@ -653,9 +639,9 @@ x 3
 y 19
 end
 arch invis_exit
-slaying city
-hp 21
-sp 16
+slaying /world/world_103_104
+hp 11
+sp 37
 x 4
 end
 arch cobblestones
@@ -833,9 +819,9 @@ x 4
 y 19
 end
 arch invis_exit
-slaying city
-hp 21
-sp 16
+slaying /world/world_103_104
+hp 11
+sp 37
 x 5
 end
 arch cobblestones
@@ -946,9 +932,9 @@ x 5
 y 19
 end
 arch invis_exit
-slaying city
-hp 21
-sp 16
+slaying /world/world_103_104
+hp 11
+sp 37
 x 6
 end
 arch cobblestones
@@ -1038,10 +1024,13 @@ arch awall_2_1_2
 x 6
 y 19
 end
+arch dungeon_magic
+x 7
+end
 arch invis_exit
-slaying city
-hp 21
-sp 16
+slaying /world/world_103_104
+hp 11
+sp 37
 x 7
 end
 arch cobblestones
@@ -1059,20 +1048,6 @@ arch woodfloor
 x 7
 y 3
 end
-arch door_look_1
-hp 0
-exp 0
-ac 0
-x 7
-y 3
-material 0
-randomitems none
-move_block 0
-alive 0
-no_magic 1
-pass_thru 0
-damned 1
-end
 arch woodfloor
 x 7
 y 4
@@ -1085,15 +1060,7 @@ arch woodfloor
 x 7
 y 6
 end
-arch chair_1.4
-x 7
-y 6
-end
 arch woodfloor
-x 7
-y 7
-end
-arch chair_1.4
 x 7
 y 7
 end
@@ -1101,15 +1068,7 @@ arch woodfloor
 x 7
 y 8
 end
-arch chair_1.4
-x 7
-y 8
-end
 arch woodfloor
-x 7
-y 9
-end
-arch chair_1.4
 x 7
 y 9
 end
@@ -1170,9 +1129,9 @@ x 7
 y 19
 end
 arch invis_exit
-slaying city
-hp 21
-sp 16
+slaying /world/world_103_104
+hp 11
+sp 37
 x 8
 end
 arch cobblestones
@@ -1183,15 +1142,6 @@ x 8
 y 1
 end
 arch grass
-x 8
-y 2
-end
-arch sign
-msg
-Welcome to Night Flower Bar
----------------------------
-You must be over 18 to enter, ENJOY your immoral night.
-endmsg
 x 8
 y 2
 end
@@ -1215,48 +1165,15 @@ arch woodfloor
 x 8
 y 6
 end
-arch chair_1.4
-x 8
-y 6
-end
 arch woodfloor
 x 8
 y 7
 end
-arch chair_1.4
-x 8
-y 7
-end
 arch woodfloor
 x 8
 y 8
 end
-arch chair_1.4
-x 8
-y 8
-end
-arch sailor
-msg
-@match *
-...Shake it baby!
-endmsg
-hp 180
-maxhp 180
-x 8
-y 8
-friendly 1
-unaggressive 0
-random_movement 0
-arch event_say
-title Python
-slaying /python/IPO/seen.py
-end
-end
 arch woodfloor
-x 8
-y 9
-end
-arch chair_1.4
 x 8
 y 9
 end
@@ -1273,10 +1190,6 @@ x 8
 y 12
 end
 arch woodfloor
-x 8
-y 13
-end
-arch chair_1.3
 x 8
 y 13
 end
@@ -1309,9 +1222,9 @@ x 8
 y 19
 end
 arch invis_exit
-slaying city
-hp 21
-sp 16
+slaying /world/world_103_104
+hp 11
+sp 37
 x 9
 end
 arch cobblestones
@@ -1369,15 +1282,7 @@ arch woodfloor
 x 9
 y 12
 end
-arch chair_1.3
-x 9
-y 12
-end
 arch woodfloor
-x 9
-y 13
-end
-arch chair_1.3
 x 9
 y 13
 end
@@ -1420,9 +1325,9 @@ x 9
 y 19
 end
 arch invis_exit
-slaying city
-hp 21
-sp 16
+slaying /world/world_103_104
+hp 11
+sp 37
 x 10
 end
 arch cobblestones
@@ -1452,65 +1357,21 @@ arch woodfloor
 x 10
 y 5
 end
-arch dungeon_magic
+arch woodfloor
 x 10
 y 6
 end
-arch woodfloor2
-x 10
-y 6
-end
-arch slevel_2_2_2
-x 10
-y 6
-move_block all
-end
-arch dungeon_magic
+arch woodfloor
 x 10
 y 7
 end
-arch woodfloor2
-x 10
-y 7
-end
-arch slevel_3_2
-x 10
-y 7
-move_block all
-end
-arch dungeon_magic
+arch woodfloor
 x 10
 y 8
 end
-arch slevel_4
-x 10
-y 8
-end
-arch woodfloor2
-x 10
-y 8
-end
-arch slevel_3_2
-x 10
-y 8
-move_block all
-end
-arch dungeon_magic
+arch woodfloor
 x 10
 y 9
-end
-arch slevel_4
-x 10
-y 9
-end
-arch woodfloor2
-x 10
-y 9
-end
-arch slevel_2_2_1
-x 10
-y 9
-move_block all
 end
 arch woodfloor
 x 10
@@ -1520,23 +1381,11 @@ arch woodfloor
 x 10
 y 11
 end
-arch chair_1.3
-x 10
-y 11
-end
 arch woodfloor
 x 10
 y 12
 end
-arch chair_1.3
-x 10
-y 12
-end
 arch woodfloor
-x 10
-y 13
-end
-arch chair_1.3
 x 10
 y 13
 end
@@ -1576,9 +1425,9 @@ x 10
 y 19
 end
 arch invis_exit
-slaying city
-hp 21
-sp 16
+slaying /world/world_103_104
+hp 11
+sp 37
 x 11
 end
 arch cobblestones
@@ -1608,73 +1457,83 @@ arch woodfloor
 x 11
 y 5
 end
-arch dungeon_magic
+arch woodfloor
 x 11
 y 6
 end
-arch woodfloor2
-x 11
-y 6
-end
-arch slevel_3_3
-x 11
-y 6
-move_block all
-end
-arch dungeon_magic
+arch woodfloor
 x 11
 y 7
 end
-arch woodfloor2
-x 11
-y 7
-end
-arch mabu
-name nude dancing girl
-x 11
-y 7
-randomitems none
-friendly 1
-can_use_skill 0
-end
-arch dungeon_magic
+arch woodfloor
 x 11
 y 8
 end
-arch slevel_4
-x 11
-y 8
-end
-arch woodfloor2
-x 11
-y 8
-end
-arch dungeon_magic
+arch woodfloor
 x 11
 y 9
 end
-arch slevel_4
+arch mover_2
 x 11
 y 9
-end
-arch woodfloor2
-x 11
-y 9
-end
-arch slevel_3_1
-x 11
-y 9
-move_block all
 end
 arch woodfloor
 x 11
 y 10
 end
-arch woodfloor
+arch mover_1
 x 11
-y 11
+y 10
 end
-arch chair_1.3
+arch woman2
+name Candy
+msg
+@match *
+Go away, s.o.b!
+endmsg
+hp 300
+maxhp 300
+sp 0
+maxsp 0
+x 11
+y 10
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
+resist_weaponmagic 100
+resist_ghosthit 100
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_turn_undead 100
+resist_fear 100
+resist_cancellation 100
+resist_deplete 100
+resist_death 100
+resist_chaos 100
+resist_counterspell 100
+resist_godpower 100
+resist_holyword 100
+resist_blind 100
+randomitems none
+pick_up 0
+will_apply 0
+monster 0
+unaggressive 0
+can_cast_spell 0
+can_use_scroll 0
+can_use_range 0
+can_use_bow 0
+can_use_armour 0
+can_use_weapon 0
+can_use_ring 0
+end
+arch woodfloor
 x 11
 y 11
 end
@@ -1682,15 +1541,7 @@ arch woodfloor
 x 11
 y 12
 end
-arch chair_1.3
-x 11
-y 12
-end
 arch woodfloor
-x 11
-y 13
-end
-arch chair_1.3
 x 11
 y 13
 end
@@ -1733,9 +1584,9 @@ x 11
 y 19
 end
 arch invis_exit
-slaying city
-hp 21
-sp 16
+slaying /world/world_103_104
+hp 11
+sp 37
 x 12
 end
 arch cobblestones
@@ -1765,554 +1616,39 @@ arch woodfloor
 x 12
 y 5
 end
-arch dungeon_magic
+arch woodfloor
 x 12
 y 6
 end
-arch woodfloor2
-x 12
-y 6
-end
-arch slevel_3_3
-x 12
-y 6
-move_block all
-end
-arch dungeon_magic
+arch woodfloor
 x 12
 y 7
 end
-arch woodfloor2
-x 12
-y 7
-end
-arch mabu
-name nude dancing girl
-x 12
-y 7
-randomitems none
-friendly 1
-can_use_skill 0
-end
-arch dungeon_magic
+arch woodfloor
 x 12
 y 8
-end
-arch woodfloor2
-x 12
-y 8
-end
-arch dungeon_magic
-x 12
-y 9
-end
-arch woodfloor2
-x 12
-y 9
-end
-arch slevel_3_1
-x 12
-y 9
-move_block all
-end
-arch woodfloor
-x 12
-y 10
-end
-arch woodfloor
-x 12
-y 11
-end
-arch chair_1.3
-x 12
-y 11
-end
-arch woodfloor
-x 12
-y 12
-end
-arch chair_1.3
-x 12
-y 12
-end
-arch sage
-name soldier
-msg
-@match money|would
-If I had more money I would do the same as Eureca: Grab it and disappear! But I would take one of those two bunnies with me...
-@match *
-Yeah, look at those beautiful girls! If I had more money I would...
-endmsg
-face warrior.111
-hp 180
-maxhp 180
-x 12
-y 12
-randomitems ogre
-friendly 1
-unaggressive 0
-end
-arch woodfloor
-x 12
-y 13
-end
-arch chair_1.3
-x 12
-y 13
-end
-arch woodfloor
-x 12
-y 14
-end
-arch woodfloor
-x 12
-y 15
-end
-arch woodfloor
-x 12
-y 16
-end
-arch woodfloor
-x 12
-y 17
-end
-arch woodfloor
-x 12
-y 18
-end
-arch woodfloor
-x 12
-y 19
-end
-arch awall_2_1_2
-x 12
-y 19
-end
-arch invis_exit
-slaying city
-hp 21
-sp 16
-x 13
-end
-arch cobblestones
-x 13
-end
-arch cobblestones
-x 13
-y 1
-end
-arch grass
-x 13
-y 2
-end
-arch woodfloor
-x 13
-y 3
-end
-arch awall_2_1_2
-x 13
-y 3
-end
-arch woodfloor
-x 13
-y 4
-end
-arch woodfloor
-x 13
-y 5
-end
-arch dungeon_magic
-x 13
-y 6
-end
-arch woodfloor2
-x 13
-y 6
-end
-arch slevel_2_2_3
-x 13
-y 6
-move_block all
-end
-arch dungeon_magic
-x 13
-y 7
-end
-arch woodfloor2
-x 13
-y 7
-end
-arch slevel_3_4
-x 13
-y 7
-move_block all
-end
-arch dungeon_magic
-x 13
-y 8
-end
-arch woodfloor2
-x 13
-y 8
-end
-arch slevel_3_4
-x 13
-y 8
-move_block all
-end
-arch dungeon_magic
-x 13
-y 9
-end
-arch woodfloor2
-x 13
-y 9
-end
-arch slevel_2_2_4
-x 13
-y 9
-move_block all
-end
-arch woodfloor
-x 13
-y 10
-end
-arch woodfloor
-x 13
-y 11
-end
-arch chair_1.3
-x 13
-y 11
-end
-arch woodfloor
-x 13
-y 12
-end
-arch chair_1.3
-x 13
-y 12
-end
-arch woodfloor
-x 13
-y 13
-end
-arch chair_1.3
-x 13
-y 13
-end
-arch woodfloor
-x 13
-y 14
-end
-arch woodfloor
-x 13
-y 15
-end
-arch woodfloor
-x 13
-y 16
-end
-arch woodfloor
-x 13
-y 17
-end
-arch woodfloor
-x 13
-y 18
-end
-arch woodfloor
-x 13
-y 19
-end
-arch awall_2_1_2
-x 13
-y 19
-end
-arch invis_exit
-slaying city
-hp 22
-sp 16
-x 14
-end
-arch cobblestones
-x 14
-end
-arch cobblestones
-x 14
-y 1
-end
-arch grass
-x 14
-y 2
-end
-arch woodfloor
-x 14
-y 3
-end
-arch awall_2_1_2
-x 14
-y 3
-end
-arch woodfloor
-x 14
-y 4
-end
-arch woodfloor
-x 14
-y 5
-end
-arch woodfloor
-x 14
-y 6
-end
-arch woodfloor
-x 14
-y 7
-end
-arch woodfloor
-x 14
-y 8
-end
-arch woodfloor
-x 14
-y 9
-end
-arch woodfloor
-x 14
-y 10
-end
-arch woodfloor
-x 14
-y 11
-end
-arch woodfloor
-x 14
-y 12
-end
-arch chair_1.3
-x 14
-y 12
-end
-arch woodfloor
-x 14
-y 13
-end
-arch chair_1.3
-x 14
-y 13
-end
-arch woodfloor
-x 14
-y 14
-end
-arch woodfloor
-x 14
-y 15
-end
-arch woodfloor
-x 14
-y 16
-end
-arch mover_2
-x 14
-y 16
-end
-arch woodfloor
-x 14
-y 17
-end
-arch mover_1
-x 14
-y 17
-end
-arch woman2
-name Candy
-msg
-@match *
-Go away, s.o.b!
-endmsg
-hp 300
-maxhp 300
-sp 0
-maxsp 0
-x 14
-y 17
-resist_physical 100
-resist_magic 100
-resist_fire 100
-resist_electricity 100
-resist_cold 100
-resist_confusion 100
-resist_acid 100
-resist_drain 100
-resist_weaponmagic 100
-resist_ghosthit 100
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_cancellation 100
-resist_deplete 100
-resist_death 100
-resist_chaos 100
-resist_counterspell 100
-resist_godpower 100
-resist_holyword 100
-resist_blind 100
-randomitems none
-pick_up 0
-will_apply 0
-monster 0
-unaggressive 0
-can_cast_spell 0
-can_use_scroll 0
-can_use_range 0
-can_use_bow 0
-can_use_armour 0
-can_use_weapon 0
-can_use_ring 0
-end
-arch woodfloor
-x 14
-y 18
-end
-arch woodfloor
-x 14
-y 19
-end
-arch awall_2_1_2
-x 14
-y 19
-end
-arch invis_exit
-slaying city
-hp 22
-sp 16
-x 15
-end
-arch cobblestones
-x 15
-end
-arch cobblestones
-x 15
-y 1
-end
-arch grass
-x 15
-y 2
-end
-arch woodfloor
-x 15
-y 3
-end
-arch awall_2_1_2
-x 15
-y 3
-end
-arch woodfloor
-x 15
-y 4
-end
-arch woodfloor
-x 15
-y 5
-end
-arch woodfloor
-x 15
-y 6
-end
-arch chair_1.2
-x 15
-y 6
-end
-arch courier
-name man
-msg
-@match *
-These girls are HOT!
-endmsg
-hp 100
-maxhp 100
-x 15
-y 6
-friendly 1
-unaggressive 0
-end
-arch woodfloor
-x 15
-y 7
-end
-arch chair_1.2
-x 15
-y 7
-end
-arch woodfloor
-x 15
-y 8
-end
-arch chair_1.2
-x 15
-y 8
-end
-arch woodfloor
-x 15
-y 9
-end
-arch chair_1.2
-x 15
-y 9
-end
-arch woodfloor
-x 15
-y 10
-end
-arch woodfloor
-x 15
-y 11
-end
-arch woodfloor
-x 15
-y 12
-end
-arch woodfloor
-x 15
-y 13
-end
-arch chair_1.3
-x 15
-y 13
-end
-arch woodfloor
-x 15
-y 14
-end
-arch woodfloor
-x 15
-y 15
 end
 arch mover_3
-x 15
-y 15
+x 12
+y 8
 speed 0.400000
 speed_left -2.790000
 end
 arch woodfloor
-x 15
-y 16
+x 12
+y 9
 end
 arch woodfloor
-x 15
-y 17
+x 12
+y 10
 end
 arch woodfloor
-x 15
-y 18
+x 12
+y 11
 end
 arch mover_8
-x 15
-y 18
+x 12
+y 11
 end
 arch swashbuckler
 name Bahn
@@ -2322,8 +1658,8 @@ I'll get ya baby...
 endmsg
 face swashbuckl.131
 hp 100
-x 15
-y 18
+x 12
+y 11
 type 0
 resist_physical 100
 resist_magic 100
@@ -2353,6 +1689,340 @@ can_use_armour 0
 can_use_weapon 0
 end
 arch woodfloor
+x 12
+y 12
+end
+arch woodfloor
+x 12
+y 13
+end
+arch woodfloor
+x 12
+y 14
+end
+arch woodfloor
+x 12
+y 15
+end
+arch woodfloor
+x 12
+y 16
+end
+arch woodfloor
+x 12
+y 17
+end
+arch woodfloor
+x 12
+y 18
+end
+arch woodfloor
+x 12
+y 19
+end
+arch awall_2_1_2
+x 12
+y 19
+end
+arch dungeon_magic
+x 13
+end
+arch invis_exit
+slaying /world/world_103_104
+hp 11
+sp 37
+x 13
+end
+arch cobblestones
+x 13
+end
+arch cobblestones
+x 13
+y 1
+end
+arch grass
+x 13
+y 2
+end
+arch woodfloor
+x 13
+y 3
+end
+arch awall_2_1_2
+x 13
+y 3
+end
+arch woodfloor
+x 13
+y 4
+end
+arch woodfloor
+x 13
+y 5
+end
+arch woodfloor
+x 13
+y 6
+end
+arch woodfloor
+x 13
+y 7
+end
+arch woodfloor
+x 13
+y 8
+end
+arch mover_4
+x 13
+y 8
+speed 0.400000
+speed_left -3.440000
+end
+arch woodfloor
+x 13
+y 9
+end
+arch woodfloor
+x 13
+y 10
+end
+arch woodfloor
+x 13
+y 11
+end
+arch mover_7
+x 13
+y 11
+speed 0.400000
+speed_left -2.290000
+end
+arch woodfloor
+x 13
+y 12
+end
+arch woodfloor
+x 13
+y 13
+end
+arch woodfloor
+x 13
+y 14
+end
+arch woodfloor
+x 13
+y 15
+end
+arch woodfloor
+x 13
+y 16
+end
+arch woodfloor
+x 13
+y 17
+end
+arch woodfloor
+x 13
+y 18
+end
+arch woodfloor
+x 13
+y 19
+end
+arch awall_2_1_2
+x 13
+y 19
+end
+arch invis_exit
+slaying /world/world_103_104
+hp 11
+sp 37
+x 14
+end
+arch cobblestones
+x 14
+end
+arch cobblestones
+x 14
+y 1
+end
+arch grass
+x 14
+y 2
+end
+arch woodfloor
+x 14
+y 3
+end
+arch awall_2_1_2
+x 14
+y 3
+end
+arch woodfloor
+x 14
+y 4
+end
+arch woodfloor
+x 14
+y 5
+end
+arch woodfloor
+x 14
+y 6
+end
+arch woodfloor
+x 14
+y 7
+end
+arch woodfloor
+x 14
+y 8
+end
+arch woodfloor
+x 14
+y 9
+end
+arch mover_5
+x 14
+y 9
+speed 0.400000
+speed_left -2.660000
+end
+arch woodfloor
+x 14
+y 10
+end
+arch mover_6
+x 14
+y 10
+speed 0.400000
+speed_left -2.000000
+end
+arch woodfloor
+x 14
+y 11
+end
+arch woodfloor
+x 14
+y 12
+end
+arch woodfloor
+x 14
+y 13
+end
+arch woodfloor
+x 14
+y 14
+end
+arch woodfloor
+x 14
+y 15
+end
+arch woodfloor
+x 14
+y 16
+end
+arch woodfloor
+x 14
+y 17
+end
+arch woodfloor
+x 14
+y 18
+end
+arch woodfloor
+x 14
+y 19
+end
+arch awall_2_1_2
+x 14
+y 19
+end
+arch invis_exit
+slaying /world/world_103_104
+hp 11
+sp 37
+x 15
+end
+arch cobblestones
+x 15
+end
+arch cobblestones
+x 15
+y 1
+end
+arch grass
+x 15
+y 2
+end
+arch woodfloor
+x 15
+y 3
+end
+arch awall_2_1_2
+x 15
+y 3
+end
+arch woodfloor
+x 15
+y 4
+end
+arch woodfloor
+x 15
+y 5
+end
+arch woodfloor
+x 15
+y 6
+end
+arch woodfloor
+x 15
+y 7
+end
+arch woodfloor
+x 15
+y 8
+end
+arch woodfloor
+x 15
+y 9
+end
+arch woodfloor
+x 15
+y 10
+end
+arch woodfloor
+x 15
+y 11
+end
+arch woodfloor
+x 15
+y 12
+end
+arch woodfloor
+x 15
+y 13
+end
+arch woodfloor
+x 15
+y 14
+end
+arch woodfloor
+x 15
+y 15
+end
+arch woodfloor
+x 15
+y 16
+end
+arch woodfloor
+x 15
+y 17
+end
+arch woodfloor
+x 15
+y 18
+end
+arch woodfloor
 x 15
 y 19
 end
@@ -2361,9 +2031,9 @@ x 15
 y 19
 end
 arch invis_exit
-slaying city
-hp 22
-sp 16
+slaying /world/world_103_104
+hp 11
+sp 37
 x 16
 end
 arch cobblestones
@@ -2374,15 +2044,6 @@ x 16
 y 1
 end
 arch grass
-x 16
-y 2
-end
-arch sign
-msg
-Welcome to Night Flower Bar
----------------------------
-You must be over 18 to enter, ENJOY your immoral night.
-endmsg
 x 16
 y 2
 end
@@ -2406,15 +2067,7 @@ arch woodfloor
 x 16
 y 6
 end
-arch chair_1.2
-x 16
-y 6
-end
 arch woodfloor
-x 16
-y 7
-end
-arch chair_1.2
 x 16
 y 7
 end
@@ -2422,15 +2075,7 @@ arch woodfloor
 x 16
 y 8
 end
-arch chair_1.2
-x 16
-y 8
-end
 arch woodfloor
-x 16
-y 9
-end
-arch chair_1.2
 x 16
 y 9
 end
@@ -2458,12 +2103,6 @@ arch woodfloor
 x 16
 y 15
 end
-arch mover_4
-x 16
-y 15
-speed 0.400000
-speed_left -3.440000
-end
 arch woodfloor
 x 16
 y 16
@@ -2476,12 +2115,6 @@ arch woodfloor
 x 16
 y 18
 end
-arch mover_7
-x 16
-y 18
-speed 0.400000
-speed_left -2.290000
-end
 arch woodfloor
 x 16
 y 19
@@ -2491,9 +2124,9 @@ x 16
 y 19
 end
 arch invis_exit
-slaying city
-hp 22
-sp 16
+slaying /world/world_103_104
+hp 11
+sp 37
 x 17
 end
 arch cobblestones
@@ -2510,20 +2143,6 @@ end
 arch woodfloor
 x 17
 y 3
-end
-arch door_look_1
-hp 0
-exp 0
-ac 0
-x 17
-y 3
-material 0
-randomitems none
-move_block 0
-alive 0
-no_magic 1
-pass_thru 0
-damned 1
 end
 arch woodfloor
 x 17
@@ -2577,21 +2196,9 @@ arch woodfloor
 x 17
 y 16
 end
-arch mover_5
-x 17
-y 16
-speed 0.400000
-speed_left -2.660000
-end
 arch woodfloor
 x 17
 y 17
-end
-arch mover_6
-x 17
-y 17
-speed 0.400000
-speed_left -2.000000
 end
 arch woodfloor
 x 17
@@ -2606,9 +2213,9 @@ x 17
 y 19
 end
 arch invis_exit
-slaying city
-hp 22
-sp 16
+slaying /world/world_103_104
+hp 11
+sp 37
 x 18
 end
 arch cobblestones
@@ -2705,10 +2312,13 @@ arch awall_2_1_2
 x 18
 y 19
 end
+arch dungeon_magic
+x 19
+end
 arch invis_exit
-slaying city
-hp 22
-sp 16
+slaying /world/world_103_104
+hp 11
+sp 37
 x 19
 end
 arch cobblestones
@@ -2875,9 +2485,9 @@ x 19
 y 19
 end
 arch invis_exit
-slaying city
-hp 22
-sp 16
+slaying /world/world_103_104
+hp 11
+sp 37
 x 20
 end
 arch cobblestones
@@ -2988,9 +2598,9 @@ x 20
 y 19
 end
 arch invis_exit
-slaying city
-hp 22
-sp 16
+slaying /world/world_103_104
+hp 11
+sp 37
 x 21
 end
 arch cobblestones
@@ -3121,9 +2731,9 @@ x 21
 y 19
 end
 arch invis_exit
-slaying city
-hp 22
-sp 16
+slaying /world/world_103_104
+hp 11
+sp 37
 x 22
 end
 arch cobblestones
@@ -3335,9 +2945,9 @@ x 22
 y 19
 end
 arch invis_exit
-slaying city
-hp 22
-sp 16
+slaying /world/world_103_104
+hp 11
+sp 37
 x 23
 end
 arch cobblestones
@@ -3492,9 +3102,9 @@ x 23
 y 19
 end
 arch invis_exit
-slaying city
-hp 22
-sp 16
+slaying /world/world_103_104
+hp 11
+sp 37
 x 24
 end
 arch cobblestones
@@ -3686,13 +3296,10 @@ arch awall_2_1_2
 x 24
 y 19
 end
-arch dungeon_magic
-x 25
-end
 arch invis_exit
-slaying city
-hp 22
-sp 16
+slaying /world/world_103_104
+hp 11
+sp 37
 x 25
 end
 arch cobblestones
@@ -3702,25 +3309,11 @@ arch dungeon_magic
 x 25
 y 1
 end
-arch invis_exit
-slaying city
-hp 22
-sp 16
-x 25
-y 1
-end
 arch cobblestones
 x 25
 y 1
 end
 arch dungeon_magic
-x 25
-y 2
-end
-arch invis_exit
-slaying city
-hp 22
-sp 16
 x 25
 y 2
 end

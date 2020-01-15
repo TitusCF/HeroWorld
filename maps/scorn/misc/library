@@ -9,7 +9,7 @@ msg
 Creator: b.t.
 Email: thomas@astro.psu.edu
 Date: Sun Apr 28 04:45:42 1996
-Modified: 2019-04-02 Acer
+Modified: 2019-12-26 Acer
 endmsg
 end
 arch woodfloor
@@ -893,6 +893,19 @@ end
 arch table_2
 x 9
 y 6
+end
+arch book_red
+name interesting red book
+msg
+The two chalaces... Unlocking the path
+to Heaven.... One under the old dead tree...
+The other...
+In a Sch....
+endmsg
+x 9
+y 6
+no_pick 1
+identified 1
 end
 arch dungeon_magic
 x 9
@@ -2871,6 +2884,19 @@ end
 arch shop_empty
 name woodfloor
 face woodfloor.111
+x 20
+y 15
+end
+arch sign
+name INSTRUCTIONS
+msg
+Many stores in Scorn have been updated
+with zero-point storage.
+Simply stand on the pad and activate as
+many times as you would like in order to
+produce your desired quantity of the available
+items.
+endmsg
 x 20
 y 15
 end

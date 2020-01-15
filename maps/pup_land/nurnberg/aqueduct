@@ -8,7 +8,7 @@ enter_x 32
 enter_y 24
 msg
 Created:  1996-02-04
-Modified: 2012-03-02 Rick Tanner
+Modified: 2019-12-27 Acer
 endmsg
 end
 arch dungeon_floor
@@ -10730,6 +10730,10 @@ x 36
 y 34
 move_block 0
 end
+arch lamppost
+x 36
+y 34
+end
 arch mover_5
 x 36
 y 35
@@ -10749,6 +10753,10 @@ arch sea
 x 36
 y 36
 move_block 0
+end
+arch lamppost
+x 36
+y 36
 end
 arch blocked
 x 36
@@ -11031,17 +11039,17 @@ x 37
 y 34
 move_block 0
 end
-arch invis_exit
-slaying city
-hp 21
-sp 19
-x 37
-y 35
-end
 arch sea
 x 37
 y 35
 move_block 0
+end
+arch ladder_up
+slaying /world/world_102_104
+hp 13
+sp 13
+x 37
+y 35
 end
 arch mover_3
 x 37

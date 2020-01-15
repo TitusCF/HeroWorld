@@ -1,12 +1,13 @@
 arch map
 name acme1
 region tindervale
+width 25
+height 25
 msg
 Creator: Art
 Date:    5/7/2006
+Modified: 2019-12-26 Acer
 endmsg
-width 25
-height 25
 end
 arch shop_empty
 end
@@ -185,11 +186,11 @@ For the listening books, the message must be in this format:
 Click.
 Which will make it activate upon the somebody within two squares saying "blah", and will additionally say "Click." upon activation.
 endmsg
+x 1
+y 3
 material 0
 no_pick 1
 identified 1
-x 1
-y 3
 end
 arch shop_empty
 x 1
@@ -202,11 +203,11 @@ To build on a spot, all items on this spot must be 'buildable'.
 Buildable items will display 'this is a buildable item' when examined.
 There are several exceptions though. In all cases you can build on marking runes as they are used for making gates and buttons work together. Also you can build signs and talking books on of books and or scrolls, because they are needed for specifying the message. Also, buttons, levers and pedestals can be build underneath gates. Don't worry, you should have some clear messages on why you can't build.
 endmsg
+x 1
+y 4
 material 0
 no_pick 1
 identified 1
-x 1
-y 4
 end
 arch shop_empty
 x 1
@@ -220,11 +221,11 @@ Simply apply it, and fire in the desired direction. It will remove the first bui
 Warning: a destroyer will remove items starting from the lowest order on the spot. Basically, this means the first removed item will be a pedestal (underground), then items on floor.
 Note that the destroyer will not remove walls or floors.
 endmsg
+x 1
+y 5
 material 0
 no_pick 1
 identified 1
-x 1
-y 5
 end
 arch shop_empty
 x 1
@@ -237,11 +238,11 @@ All items not requiring any special handling are built simply by marking the app
 Note that, to avoid any issue, those items can not be picked up.
 Note also that you can build an item on another.
 endmsg
+x 1
+y 6
 material 0
 no_pick 1
 identified 1
-x 1
-y 6
 end
 arch shop_empty
 x 1
@@ -267,11 +268,11 @@ Also, it is possible to make buttons, levers, and pedestals underneath gates, ho
 * then build the button underneath it
 This is useful for making a gate avoid crushing people underneath it. Also, you can use this same technique with inverted gates in order to make a square that pushes objects placed on it off of it.
 endmsg
+x 1
+y 7
 material 0
 no_pick 1
 identified 1
-x 1
-y 7
 end
 arch shop_empty
 x 1
@@ -285,11 +286,11 @@ Building a floor lets you remove walls. This is the only way to remove them.
 You can change an existing floor by building another on top. Same goes for walls.
 All created floors are magic, and will preserve items you put on them.
 endmsg
+x 1
+y 8
 material 0
 no_pick 1
 identified 1
-x 1
-y 8
 end
 arch shop_empty
 x 1
@@ -308,11 +309,11 @@ To build an item:
 * fire the builder in the desired direction
 Of course, the material is used when you build, so you need to buy quite a few.
 endmsg
+x 1
+y 9
 material 0
 no_pick 1
 identified 1
-x 1
-y 9
 end
 arch shop_empty
 x 1
@@ -721,9 +722,9 @@ x 4
 y 24
 end
 arch oakdoor
-slaying keepgrounds
+slaying /world/world_103_113
 hp 10
-sp 11
+sp 12
 x 4
 y 24
 end
@@ -2962,7 +2963,3 @@ arch awall_2_2_4
 x 24
 y 24
 end
-
-
-
-

@@ -1,12 +1,13 @@
 arch map
-region aldwulf
 name k_city
+region aldwulf
 width 32
 height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu Dec 27 11:12:49 2001
+Modified: 2019-12-31 Acer
 endmsg
 end
 arch grass
@@ -133,7 +134,7 @@ x 1
 y 5
 end
 arch store_alchemy
-slaying shops/shop_alchemy
+slaying /aldwulf/shops/shop_alchemy
 hp 9
 sp 19
 x 1
@@ -152,7 +153,7 @@ x 1
 y 8
 end
 arch store_magic
-slaying shops/shop_magic
+slaying /aldwulf/shops/shop_magic
 hp 10
 sp 19
 x 1
@@ -289,7 +290,7 @@ x 3
 y 2
 end
 arch store_general
-slaying shops/shop_food
+slaying /aldwulf/shops/shop_food
 hp 9
 sp 19
 x 3
@@ -427,11 +428,6 @@ arch grass
 x 4
 y 5
 end
-arch inn
-name house
-x 4
-y 5
-end
 arch cobblestones2
 x 4
 y 6
@@ -488,7 +484,7 @@ y 11
 end
 arch a_civic
 name Kobold Bank
-slaying buildings/bank
+slaying /aldwulf/buildings/bank
 hp 8
 sp 14
 x 4
@@ -591,13 +587,6 @@ arch grass
 x 5
 y 8
 end
-arch tavern
-slaying buildings/tavern_0
-hp 8
-sp 14
-x 5
-y 8
-end
 arch cobblestones2
 x 5
 y 9
@@ -659,7 +648,7 @@ y 2
 end
 arch guild
 name Central Library
-slaying buildings/library
+slaying /aldwulf/buildings/library
 hp 9
 sp 15
 x 6
@@ -719,7 +708,10 @@ x 6
 y 8
 end
 arch inn
-name house
+name Alfwulf Inn
+slaying /aldwulf/buildings/tavern_0
+hp 8
+sp 14
 x 6
 y 8
 end
@@ -799,11 +791,6 @@ x 7
 y 5
 end
 arch grass
-x 7
-y 5
-end
-arch inn
-name house
 x 7
 y 5
 end
@@ -1138,7 +1125,7 @@ x 10
 y 2
 end
 arch store_armour
-slaying shops/shop_armour
+slaying /aldwulf/shops/shop_armour
 hp 9
 sp 19
 x 10
@@ -1356,7 +1343,7 @@ x 12
 y 2
 end
 arch store_weapons
-slaying shops/shop_weapon
+slaying /aldwulf/shops/shop_weapon
 hp 9
 sp 19
 x 12
@@ -1513,7 +1500,7 @@ y 5
 end
 arch courthouse
 name Administration
-slaying buildings/administratio
+slaying /aldwulf/buildings/administratio
 hp 9
 sp 18
 x 13
@@ -2553,9 +2540,9 @@ arch cobblestones2
 x 23
 end
 arch invis_exit
-slaying isles
+slaying /world/world_100_125
 hp 16
-sp 23
+sp 46
 x 23
 end
 arch grass
@@ -2718,9 +2705,9 @@ arch cobblestones2
 x 24
 end
 arch invis_exit
-slaying isles
+slaying /world/world_100_125
 hp 16
-sp 23
+sp 46
 x 24
 end
 arch grass

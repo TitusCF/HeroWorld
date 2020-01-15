@@ -1,16 +1,17 @@
 arch map
-region tindervale
 name Imperial Post Office
+region tindervale
+width 10
+height 10
+enter_x 5
+enter_y 8
 msg
 Creator: Commander Gros
 Email: yann.chachkoff@mailandnews.com
 Date: Wed Sep  5 22:09:24 2001
 Following a Lord MiDS idea
+Modified: 2019-12-26 Acer
 endmsg
-width 10
-height 10
-enter_x 5
-enter_y 8
 end
 arch marble
 end
@@ -117,11 +118,11 @@ x 1
 y 4
 end
 arch mailbox
+x 1
+y 4
 material 0
 weight 0
 no_pick 1
-x 1
-y 4
 arch event_close
 title Python
 slaying /python/IPO/send.py
@@ -153,23 +154,23 @@ msg
 @Match*
 please don't cause a ruckus...
 endmsg
-type 0
-no_pick 1
-randomitems standard
-level 10
-exp 100
-dam 3
+Con 10
 hp 100
 maxhp 100
-Con 10
-monster 1
-unaggressive 1
-stand_still 1
+exp 100
+dam 3
+x 1
+y 8
+level 10
+type 0
 resist_physical 100
 resist_magic 100
 resist_cold 100
-x 1
-y 8
+randomitems standard
+no_pick 1
+monster 1
+unaggressive 1
+stand_still 1
 end
 arch marble
 x 1
@@ -214,9 +215,9 @@ y 3
 end
 arch table
 name II
-no_pass 1
 x 2
 y 3
+no_pass 1
 end
 arch dungeon_magic
 x 2
@@ -363,9 +364,9 @@ endmsg
 x 4
 y 7
 arch event_say
+name Tindervale board
 title Python
 slaying /python/IPO/board.py
-name Tindervale board
 end
 end
 arch marble
@@ -427,8 +428,8 @@ x 5
 y 8
 end
 arch invis_exit
-slaying keepgrounds
-hp 2
+slaying /world/world_103_113
+hp 3
 sp 4
 x 5
 y 9
@@ -531,18 +532,18 @@ msg
 @ match *
 waiting for today's packages to arrive, so I can go home for the day...
 endmsg
-type 0
-randomitems standard
-level 10
-exp 100
-dam 3
+Con 10
 hp 100
 maxhp 100
-Con 10
-monster 1
-unaggressive 1
+exp 100
+dam 3
 x 7
 y 2
+level 10
+type 0
+randomitems standard
+monster 1
+unaggressive 1
 end
 arch marble
 x 7
@@ -550,9 +551,9 @@ y 3
 end
 arch table
 name I
-no_pass 1
 x 7
 y 3
+no_pass 1
 end
 arch dungeon_magic
 x 7
@@ -568,18 +569,18 @@ msg
 @match *
 I'm waiting for my package...
 endmsg
-type 0
-randomitems standard
-level 10
-exp 100
-dam 3
+Con 10
 hp 100
 maxhp 100
-Con 10
-unaggressive 1
-stand_still 1
+exp 100
+dam 3
 x 7
 y 4
+level 10
+type 0
+randomitems standard
+unaggressive 1
+stand_still 1
 end
 arch marble
 x 7

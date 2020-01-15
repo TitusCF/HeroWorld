@@ -1,11 +1,12 @@
 arch map
 name gatehouse
+width 7
+height 7
 msg
 Creator: CF Java Map Editor
 Date:    5/2/2006
+Modified: 2019-12-26 Acer
 endmsg
-width 7
-height 7
 end
 arch cobblestones2
 end
@@ -45,7 +46,7 @@ arch cobblestones2
 y 6
 end
 arch invis_exit
-slaying keepgrounds
+slaying /world/world_103_113
 hp 12
 sp 23
 x 1
@@ -63,23 +64,23 @@ msg
 @Match*
 Welcome to Art's Keep
 endmsg
-type 0
-no_pick 1
-randomitems standard
-level 10
-exp 100
-dam 3
+Con 10
 hp 100
 maxhp 100
-Con 10
-monster 1
-unaggressive 1
-stand_still 1
+exp 100
+dam 3
+x 1
+y 1
+level 10
+type 0
 resist_physical 100
 resist_magic 100
 resist_cold 100
-x 1
-y 1
+randomitems standard
+no_pick 1
+monster 1
+unaggressive 1
+stand_still 1
 end
 arch cobblestones
 x 1
@@ -90,27 +91,27 @@ x 1
 y 3
 end
 arch trigger
-connected 1
 x 1
 y 3
+connected 1
 end
 arch cobblestones
 x 1
 y 4
 end
 arch grate_closed_1
-connected 1
 x 1
 y 4
+connected 1
 end
 arch cobblestones
 x 1
 y 5
 end
 arch trigger
-connected 1
 x 1
 y 5
+connected 1
 end
 arch invis_exit
 slaying /world/world_103_113
@@ -124,7 +125,7 @@ x 1
 y 6
 end
 arch invis_exit
-slaying keepgrounds
+slaying /world/world_103_113
 hp 12
 sp 23
 x 2
@@ -149,9 +150,9 @@ x 2
 y 4
 end
 arch grate_closed_1
-connected 1
 x 2
 y 4
+connected 1
 end
 arch cobblestones
 x 2
@@ -169,7 +170,7 @@ x 2
 y 6
 end
 arch invis_exit
-slaying keepgrounds
+slaying /world/world_103_113
 hp 12
 sp 23
 x 3
@@ -194,9 +195,9 @@ x 3
 y 4
 end
 arch grate_closed_1
-connected 1
 x 3
 y 4
+connected 1
 end
 arch cobblestones
 x 3
@@ -214,7 +215,7 @@ x 3
 y 6
 end
 arch invis_exit
-slaying keepgrounds
+slaying /world/world_103_113
 hp 12
 sp 23
 x 4
@@ -239,9 +240,9 @@ x 4
 y 4
 end
 arch grate_closed_1
-connected 1
 x 4
 y 4
+connected 1
 end
 arch cobblestones
 x 4
@@ -259,7 +260,7 @@ x 4
 y 6
 end
 arch invis_exit
-slaying keepgrounds
+slaying /world/world_103_113
 hp 12
 sp 23
 x 5
@@ -277,23 +278,23 @@ msg
 @Match*
 Welcome to Art's Keep
 endmsg
-type 0
-no_pick 1
-randomitems standard
-level 10
-exp 100
-dam 3
+Con 10
 hp 100
 maxhp 100
-Con 10
-monster 1
-unaggressive 1
-stand_still 1
+exp 100
+dam 3
+x 5
+y 1
+level 10
+type 0
 resist_physical 100
 resist_magic 100
 resist_cold 100
-x 5
-y 1
+randomitems standard
+no_pick 1
+monster 1
+unaggressive 1
+stand_still 1
 end
 arch cobblestones
 x 5
@@ -308,9 +309,9 @@ x 5
 y 4
 end
 arch grate_closed_1
-connected 1
 x 5
 y 4
+connected 1
 end
 arch cobblestones
 x 5
@@ -377,4 +378,3 @@ arch cobblestones2
 x 6
 y 6
 end
-

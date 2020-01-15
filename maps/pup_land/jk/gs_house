@@ -1,26 +1,35 @@
 arch map
 name gs_house
 region pupland
+width 20
+height 21
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu Feb  8 03:41:44 1996
+Modified: 2019-12-27 Acer
 endmsg
-width 20
-height 21
 end
 arch pit_closed
 hp 4
 sp 11
-protected 1
 connected 1
+protected 1
+end
+arch big_dragon
+name dragon of another dimension
+carrying 100
+arch key2
+name golden key
+slaying gs_key3
+end
 end
 arch pit_closed
 hp 4
 sp 11
-protected 1
-connected 1
 y 1
+connected 1
+protected 1
 end
 arch blocked
 y 2
@@ -28,13 +37,13 @@ end
 arch pit_closed
 hp 8
 sp 10
-protected 3
-connected 3
 y 3
+connected 3
+protected 3
 end
 arch goblin
-carrying 100
 y 3
+carrying 100
 arch key2
 name wooden key
 slaying gs_key1
@@ -103,17 +112,17 @@ end
 arch pit_closed
 hp 4
 sp 11
-protected 1
-connected 1
 x 1
+connected 1
+protected 1
 end
 arch pit_closed
 hp 4
 sp 11
-protected 1
-connected 1
 x 1
 y 1
+connected 1
+protected 1
 end
 arch blocked
 x 1
@@ -122,10 +131,10 @@ end
 arch pit_closed
 hp 8
 sp 10
-protected 3
-connected 3
 x 1
 y 3
+connected 3
+protected 3
 end
 arch goblin
 x 1
@@ -217,17 +226,17 @@ end
 arch pit_closed
 hp 4
 sp 11
-protected 1
-connected 1
 x 2
+connected 1
+protected 1
 end
 arch pit_closed
 hp 4
 sp 11
-protected 1
-connected 1
 x 2
 y 1
+connected 1
+protected 1
 end
 arch blocked
 x 2
@@ -236,11 +245,11 @@ end
 arch pit_closed
 hp 8
 sp 10
-speed 0.500000
-protected 3
-connected 3
 x 2
 y 3
+speed 0.500000
+connected 3
+protected 3
 end
 arch goblin
 x 2
@@ -271,9 +280,9 @@ x 2
 y 7
 end
 arch stwall_2_1_1
-no_pass 0
 x 2
 y 7
+no_pass 0
 end
 arch flagstone
 x 2
@@ -464,26 +473,26 @@ end
 arch pit_closed
 hp 11
 sp 12
-protected 2
-connected 2
 x 4
 y 1
+connected 2
+protected 2
 end
 arch pit_closed
 hp 11
 sp 12
-protected 2
-connected 2
 x 4
 y 2
+connected 2
+protected 2
 end
 arch pit_closed
 hp 11
 sp 12
-protected 2
-connected 2
 x 4
 y 3
+connected 2
+protected 2
 end
 arch blocked
 x 4
@@ -583,26 +592,36 @@ end
 arch pit_closed
 hp 11
 sp 12
-protected 2
-connected 2
 x 5
 y 1
+connected 2
+protected 2
 end
 arch pit_closed
 hp 11
 sp 12
-protected 2
-connected 2
 x 5
 y 2
+connected 2
+protected 2
+end
+arch titan
+name titan of another dimension
+x 5
+y 2
+carrying 100
+arch key2
+name iron key
+slaying gs_key2
+end
 end
 arch pit_closed
 hp 11
 sp 12
-protected 2
-connected 2
 x 5
 y 3
+connected 2
+protected 2
 end
 arch blocked
 x 5
@@ -698,26 +717,26 @@ end
 arch pit_closed
 hp 11
 sp 12
-protected 2
-connected 2
 x 6
 y 1
+connected 2
+protected 2
 end
 arch pit_closed
 hp 11
 sp 12
-protected 2
-connected 2
 x 6
 y 2
+connected 2
+protected 2
 end
 arch pit_closed
 hp 11
 sp 12
-protected 2
-connected 2
 x 6
 y 3
+connected 2
+protected 2
 end
 arch blocked
 x 6
@@ -853,11 +872,11 @@ hp 10
 maxhp 10
 exp 0
 dam 1
-run_away 0
-is_animated 0
-friendly 1
 x 7
 y 9
+is_animated 0
+friendly 1
+run_away 0
 end
 arch cobblestones
 x 7
@@ -884,12 +903,12 @@ x 7
 y 15
 end
 arch spikes_open
-speed 0.500000
-protected 10
-value 1
-connected 10
 x 7
 y 15
+speed 0.500000
+value 1
+connected 10
+protected 10
 end
 arch cobblestones
 x 7
@@ -907,28 +926,28 @@ arch cobblestones
 x 7
 y 19
 end
-arch invis_exit
-slaying ../rainbow/red_town/town
-hp 13
-sp 1
+arch cobblestones
 x 7
 y 20
 end
-arch cobblestones
+arch invis_exit
+slaying /world/world_103_105
+hp 28
+sp 17
 x 7
 y 20
 end
 arch block_door_open
 name 5
+x 8
 speed 0.500000
-protected 5
 value 1
 connected 5
-x 8
+protected 5
 end
 arch scroll
-weight 5000
 x 8
+weight 5000
 end
 arch scroll_2
 x 8
@@ -940,41 +959,41 @@ end
 arch pit_closed
 hp 5
 sp 11
-protected 4
-connected 4
 x 8
 y 2
+connected 4
+protected 4
 end
 arch crown
-value 500
 x 8
 y 2
+value 500
 end
 arch pit_closed
 hp 4
 sp 8
-protected 4
-connected 4
 x 8
 y 3
+connected 4
+protected 4
 end
 arch crown
-value 500
 x 8
 y 3
+value 500
 end
 arch pit_closed
 hp 10
 sp 11
-protected 4
-connected 4
 x 8
 y 4
+connected 4
+protected 4
 end
 arch crown
-value 500
 x 8
 y 4
+value 500
 end
 arch grass
 x 8
@@ -1004,37 +1023,37 @@ arch magic_ear
 msg
 @match goblin
 endmsg
-protected 3
-connected 3
 x 8
 y 9
+connected 3
+protected 3
 end
 arch magic_ear
 msg
 @match go ahead
 endmsg
-protected 4
-connected 4
 x 8
 y 9
+connected 4
+protected 4
 end
 arch magic_ear
 msg
 @match titan|both
 endmsg
-protected 2
-connected 2
 x 8
 y 9
+connected 2
+protected 2
 end
 arch magic_ear
 msg
 @match dragon|both
 endmsg
-protected 1
-connected 1
 x 8
 y 9
+connected 1
+protected 1
 end
 arch cobblestones
 x 8
@@ -1076,28 +1095,28 @@ Okay, let's try...
 @match *
 If you are afraid, go home to mama.
 endmsg
-randomitems none
-exp 1
-carrying 75000
 hp 50
 maxhp 50
-can_cast_spell 0
 sp 0
 maxsp 0
-can_use_weapon 0
-can_use_bow 0
-can_use_armour 0
-can_use_ring 0
-can_use_wand 0
-can_use_rod 0
-can_use_scroll 0
-can_use_skill 0
-friendly 1
-stand_still 1
-immune 5242815
-can_use_horn 0
+exp 1
 x 8
 y 9
+carrying 75000
+randomitems none
+friendly 1
+can_cast_spell 0
+can_use_scroll 0
+can_use_bow 0
+can_use_armour 0
+can_use_weapon 0
+can_use_ring 0
+stand_still 1
+can_use_skill 0
+can_use_rod 0
+can_use_horn 0
+can_use_wand 0
+immune 5242815
 arch corpse
 name Great Summoner's corpse
 material 0
@@ -1129,12 +1148,12 @@ x 8
 y 15
 end
 arch spikes_open
-speed 0.500000
-protected 10
-value 1
-connected 10
 x 8
 y 15
+speed 0.500000
+value 1
+connected 10
+protected 10
 end
 arch cobblestones
 x 8
@@ -1152,23 +1171,23 @@ arch cobblestones
 x 8
 y 19
 end
-arch invis_exit
-slaying ../rainbow/red_town/town
-hp 13
-sp 1
+arch cobblestones
 x 8
 y 20
 end
-arch cobblestones
+arch invis_exit
+slaying /world/world_103_105
+hp 28
+sp 17
 x 8
 y 20
 end
 arch button_small
 name 6
-protected 6
+x 9
 weight 5000
 connected 6
-x 9
+protected 6
 end
 arch blocked
 x 9
@@ -1177,41 +1196,41 @@ end
 arch pit_closed
 hp 5
 sp 11
-protected 4
-connected 4
 x 9
 y 2
+connected 4
+protected 4
 end
 arch crown
-value 500
 x 9
 y 2
+value 500
 end
 arch pit_closed
 hp 11
 sp 8
-protected 4
-connected 4
 x 9
 y 3
+connected 4
+protected 4
 end
 arch crown
-value 500
 x 9
 y 3
+value 500
 end
 arch pit_closed
 hp 10
 sp 11
-protected 4
-connected 4
 x 9
 y 4
+connected 4
+protected 4
 end
 arch crown
-value 500
 x 9
 y 4
+value 500
 end
 arch grass
 x 9
@@ -1308,41 +1327,41 @@ end
 arch pit_closed
 hp 5
 sp 11
-protected 4
-connected 4
 x 10
 y 2
+connected 4
+protected 4
 end
 arch crown
-value 500
 x 10
 y 2
+value 500
 end
 arch pit_closed
 hp 11
 sp 8
-protected 4
-connected 4
 x 10
 y 3
+connected 4
+protected 4
 end
 arch crown
-value 500
 x 10
 y 3
+value 500
 end
 arch pit_closed
 hp 10
 sp 11
-protected 4
-connected 4
 x 10
 y 4
+connected 4
+protected 4
 end
 arch crown
-value 500
 x 10
 y 4
+value 500
 end
 arch grass
 x 10
@@ -1626,10 +1645,10 @@ y 20
 end
 arch button_small
 name 11 - artifact appears
-protected 11
-connected 11
 x 13
 y 1
+connected 11
+protected 11
 end
 arch blocked
 x 13
@@ -1766,35 +1785,35 @@ y 3
 end
 arch button_small
 name 10 - close gate
-protected 10
-weight 1000
-connected 10
 x 14
 y 4
+weight 1000
+connected 10
+protected 10
 end
 arch creator
 name 5
 other_arch small_shield
-protected 5
-connected 5
 x 14
 y 4
+connected 5
+protected 5
 end
 arch creator
 name 2
 other_arch small_shield
-protected 2
-connected 2
 x 14
 y 4
+connected 2
+protected 2
 end
 arch creator
 name 1
 other_arch small_shield
-protected 1
-connected 1
 x 14
 y 4
+connected 1
+protected 1
 end
 arch grass
 x 14
@@ -2011,10 +2030,10 @@ arch teleporter
 name 6
 hp 5
 sp 12
-speed 0.000000
-protected 6
-connected 6
 x 16
+speed 0.000000
+connected 6
+protected 6
 end
 arch crawling_chaos
 name Killing Thrill
@@ -2026,16 +2045,16 @@ maxhp 3000
 exp 200000
 wc -20
 ac -10
-armour 80
+x 16
 speed 1.000000
 level 45
-immune 399360
-protected 3
 attacktype 262225
-vulnerable 0
 carrying 20
 hitback 1
-x 16
+armour 80
+immune 399360
+protected 3
+vulnerable 0
 arch ectoplasm
 name Killing Thrill's ectoplasm
 type 0
@@ -2051,31 +2070,31 @@ arch teleporter
 name 5
 hp 2
 sp 7
-speed 0.000000
-protected 5
-connected 5
 x 16
 y 2
+speed 0.000000
+connected 5
+protected 5
 end
 arch locked_door2
 name force
-face stwall_5.111
 msg
 An invisible force blocks the way!
 endmsg
-invisible 1
+face stwall_5.111
 x 16
 y 2
+invisible 1
 end
 arch teleporter
 name 11
 hp 15
 sp 11
-speed 0.000000
-protected 11
-connected 11
 x 16
 y 3
+speed 0.000000
+connected 11
+protected 11
 end
 arch random_artifact
 x 16
@@ -2246,10 +2265,10 @@ y 10
 end
 arch locked_door1
 name golden door
+slaying gs_key3
 msg
 You need the golden key.
 endmsg
-slaying gs_key3
 x 17
 y 10
 end
@@ -2259,10 +2278,10 @@ y 11
 end
 arch locked_door1
 name iron door
+slaying gs_key2
 msg
 You need the iron key.
 endmsg
-slaying gs_key2
 x 17
 y 11
 end
@@ -2272,10 +2291,10 @@ y 12
 end
 arch locked_door1
 name wooden door
+slaying gs_key1
 msg
 You need the wooden key.
 endmsg
-slaying gs_key1
 x 17
 y 12
 end
@@ -2316,12 +2335,12 @@ x 18
 end
 arch spikes_open
 name 4
-speed 0.500000
-protected 4
-value 1
-connected 4
 x 18
 y 2
+speed 0.500000
+value 1
+connected 4
+protected 4
 end
 arch boulder
 x 18
@@ -2449,18 +2468,18 @@ The Great Summoner says:
 Oh no! Something went wrong...
 Arrrgh!!
 endmsg
-protected 5
-connected 5
 x 19
 y 2
+connected 5
+protected 5
 end
 arch button_small
 name 5 - bad luck
-protected 5
-weight 1000
-connected 5
 x 19
 y 2
+weight 1000
+connected 5
+protected 5
 end
 arch blocked
 x 19
@@ -2569,22 +2588,4 @@ end
 arch grass
 x 19
 y 20
-end
-arch big_dragon
-name dragon of another dimension
-carrying 100
-arch key2
-name golden key
-slaying gs_key3
-end
-end
-arch titan
-name titan of another dimension
-carrying 100
-x 5
-y 2
-arch key2
-name iron key
-slaying gs_key2
-end
 end

@@ -3,7 +3,7 @@ name <unnamed>
 width 40
 height 40
 msg
-Modified: 2020-01-15 Acer
+Modified: 2020-01-16 Acer
 endmsg
 end
 arch afloor_blue_left
@@ -5690,6 +5690,10 @@ arch afloor_blue_left
 x 25
 y 32
 end
+arch flowers
+x 25
+y 32
+end
 arch afloor_blue_left
 x 25
 y 33
@@ -10651,6 +10655,36 @@ end
 arch afloor_blue_left
 x 34
 y 25
+end
+arch rod_heavy
+name Rod
+hp 80
+maxhp 80
+x 34
+y 25
+level 8
+identified 1
+arch spell_create_lava
+name Create Light
+name_pl create Light
+skill sorcery
+other_arch light4
+sp 1
+maxsp 2
+level 1
+arch light4
+name Illuminating Flower of Titus
+msg
+You have found a flower of Titus...
+Do you take it for yourself or leave it
+so that it might bring light to the dark
+places?
+endmsg
+face flowers.111
+glow_radius 10
+unique 1
+end
+end
 end
 arch afloor_blue_left
 x 34

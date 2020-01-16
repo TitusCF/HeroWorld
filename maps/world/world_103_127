@@ -4,7 +4,7 @@ region stoneville
 width 50
 height 50
 msg
-Modified: 2019-12-31 Acer
+Modified: 2020-01-16 Acer
 endmsg
 outdoor 1
 tile_path_1 world_103_126
@@ -8559,13 +8559,19 @@ x 33
 y 6
 end
 arch waybread_table
-name Personal Basilisk Mount (20 plat.)
+name Personal Basilisk Mount (40 plat.)
 slaying money
-food 1000
+food 2000
 x 33
 y 6
 arch baslic
+speed 0.7
+type 2
+container 10000000
+move_type walk swim boat
+move_allow walk
 unique 1
+passenger_limit 4
 end
 end
 arch grass

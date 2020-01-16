@@ -3,7 +3,7 @@ name <unnamed>
 width 40
 height 40
 msg
-Modified: 2019-12-27 Acer
+Modified: 2020-01-15 Acer
 endmsg
 end
 arch afloor_blue_left
@@ -3774,17 +3774,18 @@ x 15
 y 28
 end
 arch chest
-name Blood Portal (Hell)
-name_pl Blood Portals (Hell)
+name Blood Stain (Hell)
+name_pl Blood Stains (Hell)
 face blood.111
 x 15
 y 28
 nrof 1000
 weight 100
+randomitems none
 arch stair_up_1
 name Portal to Hell
 name_pl Portal of Hell
-slaying /world/world_104_115
+slaying /mlab/mlabhellproperlvl1
 msg
 You are swept into the ground!
 ...
@@ -6193,6 +6194,10 @@ x 28
 y 28
 end
 arch afloor_blue_left
+x 28
+y 29
+end
+arch awall_0
 x 28
 y 29
 end
@@ -10654,6 +10659,24 @@ end
 arch afloor_blue_left
 x 34
 y 27
+end
+arch rod_heavy
+name Rod
+hp 80
+maxhp 80
+x 34
+y 27
+level 8
+identified 1
+arch spell_create_lava
+name Create Wall
+name_pl create wall
+skill sorcery
+other_arch awall_0
+sp 1
+maxsp 2
+level 1
+end
 end
 arch afloor_blue_left
 x 34

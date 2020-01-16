@@ -3,75 +3,123 @@ name Mosely's Magic Books
 shopitems spellbook:80
 shopgreed 2.10000
 shopmax 2000
-width 11
-height 10
+width 15
+height 18
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Oct 18 11:46:05 2000
-Modified: 2019-04-02 Acer
+Modified: 2020-01-16 Acer
 endmsg
 end
-arch woodfloor
+arch shop_empty
 end
 arch oakdoor
 slaying /world/world_104_115
 hp 34
 sp 34
 end
-arch woodfloor
+arch shop_empty
 y 1
 end
 arch wall_2_2_2
 y 1
 end
-arch woodfloor
+arch shop_empty
 y 2
 end
 arch wall_2_1_1
 y 2
 end
-arch woodfloor
+arch shop_empty
 y 3
 end
 arch wall_2_1_1
 y 3
 end
-arch woodfloor
+arch shop_empty
 y 4
 end
 arch wall_2_1_1
 y 4
 end
-arch woodfloor
+arch shop_empty
 y 5
 end
 arch wall_2_1_1
 y 5
 end
-arch woodfloor
+arch shop_empty
 y 6
 end
 arch wall_2_1_1
 y 6
 end
-arch woodfloor
+arch shop_empty
 y 7
 end
 arch wall_2_1_1
 y 7
 end
-arch woodfloor
+arch shop_empty
 y 8
 end
 arch wall_2_1_1
 y 8
 end
-arch woodfloor
+arch shop_empty
 y 9
+end
+arch wall_2_1_1
+y 9
+end
+arch shop_empty
+y 10
+end
+arch wall_2_1_1
+y 10
+end
+arch shop_empty
+y 11
+end
+arch wall_2_1_1
+y 11
+end
+arch shop_empty
+y 12
+end
+arch wall_2_1_1
+y 12
+end
+arch shop_empty
+y 13
+end
+arch wall_2_1_1
+y 13
+end
+arch shop_empty
+y 14
+end
+arch wall_2_1_1
+y 14
+end
+arch shop_empty
+y 15
+end
+arch wall_2_1_1
+y 15
+end
+arch shop_empty
+y 16
+end
+arch wall_2_1_1
+y 16
+end
+arch shop_empty
+y 17
 end
 arch wall_2_2_1
-y 9
+y 17
 end
 arch woodfloor
 x 1
@@ -82,7 +130,7 @@ end
 arch shop_mat
 x 1
 end
-arch woodfloor
+arch shop_empty
 x 1
 y 1
 end
@@ -102,212 +150,125 @@ arch woodfloor
 x 1
 y 3
 end
-arch shop_empty
+arch shop_books
 x 1
 y 3
 end
-arch bookshelf
-name Books on causing harm
-x 1
-y 3
-carrying 95000
-no_pick 1
-arch cleric_book
-value 20000
-randomitems none
-unpaid 1
-identified 1
-arch spell_cause_medium_wounds
-end
-end
-arch cleric_book
-value 20000
-randomitems none
-unpaid 1
-identified 1
-arch spell_cause_heavy_wounds
-end
-end
-arch cleric_book
-value 20000
-randomitems none
-unpaid 1
-identified 1
-arch spell_cause_light_wounds
-end
-end
-end
 arch woodfloor
 x 1
 y 4
 end
-arch shop_empty
+arch shop_books
 x 1
 y 4
-end
-arch bookshelf
-name Books on protection
-x 1
-y 4
-carrying 95000
-no_pick 1
-arch cleric_book
-value 20000
-randomitems none
-unpaid 1
-identified 1
-arch spell_word_of_recall
-end
-end
-arch cleric_book
-value 20000
-randomitems none
-unpaid 1
-identified 1
-arch spell_bless
-end
-end
-arch cleric_book
-value 20000
-randomitems none
-unpaid 1
-identified 1
-arch spell_heal
-end
-end
 end
 arch woodfloor
 x 1
 y 5
 end
-arch shop_empty
+arch shop_books
 x 1
 y 5
-end
-arch bookshelf
-name Books on undead
-x 1
-y 5
-carrying 95000
-no_pick 1
-arch cleric_book
-value 40000
-randomitems none
-unpaid 1
-identified 1
-arch spell_turn_undead
-end
-end
-arch cleric_book
-value 40000
-randomitems none
-unpaid 1
-identified 1
-arch spell_command_undead
-end
-end
 end
 arch woodfloor
 x 1
 y 6
 end
-arch shop_empty
+arch shop_books
 x 1
 y 6
-end
-arch bookshelf
-name Books on healing
-x 1
-y 6
-carrying 95000
-no_pick 1
-arch cleric_book
-value 10000
-randomitems none
-unpaid 1
-identified 1
-arch spell_medium_healing
-end
-end
-arch cleric_book
-value 10000
-randomitems none
-unpaid 1
-identified 1
-arch spell_major_healing
-end
-end
-arch cleric_book
-value 10000
-randomitems none
-unpaid 1
-identified 1
-arch spell_minor_healing
-end
-end
 end
 arch woodfloor
 x 1
 y 7
 end
-arch shop_empty
+arch shop_books
 x 1
 y 7
-end
-arch bookshelf
-name Books on curing
-x 1
-y 7
-carrying 95000
-no_pick 1
-arch cleric_book
-value 20000
-randomitems none
-unpaid 1
-identified 1
-arch spell_cure_poison
-end
-end
-arch cleric_book
-value 20000
-randomitems none
-unpaid 1
-identified 1
-arch spell_cure_disease
-end
-end
-arch cleric_book
-value 20000
-randomitems none
-unpaid 1
-identified 1
-arch spell_cure_confusion
-end
-end
 end
 arch woodfloor
 x 1
 y 8
 end
-arch shop_empty
+arch shop_books
 x 1
 y 8
 end
 arch woodfloor
 x 1
 y 9
+end
+arch shop_books
+x 1
+y 9
+end
+arch woodfloor
+x 1
+y 10
+end
+arch shop_books
+x 1
+y 10
+end
+arch woodfloor
+x 1
+y 11
+end
+arch shop_books
+x 1
+y 11
+end
+arch woodfloor
+x 1
+y 12
+end
+arch shop_books
+x 1
+y 12
+end
+arch woodfloor
+x 1
+y 13
+end
+arch shop_books
+x 1
+y 13
+end
+arch woodfloor
+x 1
+y 14
+end
+arch shop_books
+x 1
+y 14
+end
+arch woodfloor
+x 1
+y 15
+end
+arch shop_books
+x 1
+y 15
+end
+arch shop_empty
+x 1
+y 16
+end
+arch shop_empty
+x 1
+y 17
 end
 arch wall_2_1_2
 x 1
-y 9
+y 17
 end
-arch woodfloor
+arch shop_empty
 x 2
 end
 arch wall_2_2_2
 x 2
 end
-arch woodfloor
+arch shop_empty
 x 2
 y 1
 end
@@ -371,15 +332,47 @@ arch shop_empty
 x 2
 y 8
 end
-arch woodfloor
+arch shop_empty
 x 2
 y 9
+end
+arch shop_empty
+x 2
+y 10
+end
+arch shop_empty
+x 2
+y 11
+end
+arch shop_empty
+x 2
+y 12
+end
+arch shop_empty
+x 2
+y 13
+end
+arch shop_empty
+x 2
+y 14
+end
+arch shop_empty
+x 2
+y 15
+end
+arch shop_empty
+x 2
+y 16
+end
+arch shop_empty
+x 2
+y 17
 end
 arch wall_2_1_2
 x 2
-y 9
+y 17
 end
-arch woodfloor
+arch shop_empty
 x 3
 end
 arch wall_2_1_2
@@ -409,254 +402,119 @@ arch woodfloor
 x 3
 y 3
 end
-arch shop_empty
+arch shop_books
 x 3
 y 3
 end
-arch bookshelf
-name Books for Evokers
-x 3
-y 3
-carrying 20000
-no_pick 1
-arch evoker_book
-value 30000
-randomitems none
-unpaid 1
-identified 1
-arch spell_armour
-end
-end
-arch evoker_book
-value 30000
-randomitems none
-unpaid 1
-identified 1
-arch spell_icestorm
-end
-end
-arch evoker_book
-value 30000
-randomitems none
-unpaid 1
-identified 1
-arch spell_small_snowstorm
-end
-end
-arch evoker_book
-value 30000
-randomitems none
-unpaid 1
-identified 1
-arch spell_small_bullet
-end
-end
-end
 arch woodfloor
 x 3
 y 4
 end
-arch shop_empty
+arch shop_books
 x 3
 y 4
-end
-arch bookshelf
-name Books for Evokers
-x 3
-y 4
-carrying 20000
-no_pick 1
-arch evoker_book
-value 30000
-randomitems none
-unpaid 1
-identified 1
-arch spell_detect_monster
-end
-end
-arch evoker_book
-value 30000
-randomitems none
-unpaid 1
-identified 1
-arch spell_mana_blast
-end
-end
-arch evoker_book
-value 30000
-randomitems none
-unpaid 1
-identified 1
-arch spell_small_manaball
-end
-end
-arch evoker_book
-value 30000
-randomitems none
-unpaid 1
-identified 1
-arch spell_frostbolt
-end
-end
 end
 arch woodfloor
 x 3
 y 5
 end
-arch shop_empty
+arch shop_books
 x 3
 y 5
-end
-arch bookshelf
-name Books for Evokers
-x 3
-y 5
-carrying 20000
-no_pick 1
-arch evoker_book
-value 30000
-randomitems none
-unpaid 1
-identified 1
-arch spell_manabolt
-end
-end
-arch evoker_book
-value 30000
-randomitems none
-unpaid 1
-identified 1
-arch spell_medium_snowstorm
-end
-end
-arch evoker_book
-value 30000
-randomitems none
-unpaid 1
-identified 1
-arch spell_lg_magic_bullet
-end
-end
-arch evoker_book
-value 30000
-randomitems none
-unpaid 1
-identified 1
-arch spell_rune_of_frost
-end
-end
 end
 arch woodfloor
 x 3
 y 6
 end
-arch shop_empty
+arch shop_books
 x 3
 y 6
-end
-arch bookshelf
-name Books for Evokers
-x 3
-y 6
-carrying 20000
-no_pick 1
-arch evoker_book
-value 30000
-randomitems none
-unpaid 1
-identified 1
-arch spell_medium_manaball
-end
-end
-arch evoker_book
-value 30000
-randomitems none
-unpaid 1
-identified 1
-arch spell_large_snowstorm
-end
-end
-arch evoker_book
-value 30000
-randomitems none
-unpaid 1
-identified 1
-arch spell_bullet_swarm
-end
-end
-arch evoker_book
-value 30000
-randomitems none
-unpaid 1
-identified 1
-arch spell_large_manaball
-end
-end
 end
 arch woodfloor
 x 3
 y 7
 end
-arch shop_empty
+arch shop_books
 x 3
 y 7
-end
-arch bookshelf
-name Books for Evokers
-x 3
-y 7
-carrying 20000
-no_pick 1
-arch evoker_book
-value 30000
-randomitems none
-unpaid 1
-identified 1
-arch spell_create_frost_wall
-end
-end
-arch evoker_book
-value 30000
-randomitems none
-unpaid 1
-identified 1
-arch spell_bullet_storm
-end
-end
-arch evoker_book
-value 30000
-randomitems none
-unpaid 1
-identified 1
-arch spell_cancellation
-end
-end
-arch evoker_book
-value 30000
-randomitems none
-unpaid 1
-identified 1
-arch spell_create_pool_of_chaos
-end
-end
 end
 arch woodfloor
 x 3
 y 8
 end
-arch shop_empty
+arch shop_books
 x 3
 y 8
 end
 arch woodfloor
 x 3
 y 9
+end
+arch shop_books
+x 3
+y 9
+end
+arch woodfloor
+x 3
+y 10
+end
+arch shop_books
+x 3
+y 10
+end
+arch woodfloor
+x 3
+y 11
+end
+arch shop_books
+x 3
+y 11
+end
+arch woodfloor
+x 3
+y 12
+end
+arch shop_books
+x 3
+y 12
+end
+arch woodfloor
+x 3
+y 13
+end
+arch shop_books
+x 3
+y 13
+end
+arch woodfloor
+x 3
+y 14
+end
+arch shop_books
+x 3
+y 14
+end
+arch woodfloor
+x 3
+y 15
+end
+arch shop_books
+x 3
+y 15
+end
+arch shop_empty
+x 3
+y 16
+end
+arch shop_empty
+x 3
+y 17
 end
 arch wall_2_1_2
 x 3
-y 9
+y 17
 end
-arch woodfloor
+arch shop_empty
 x 4
 end
 arch wall_2_1_2
@@ -671,17 +529,6 @@ arch shop_empty
 x 4
 y 1
 value 2000
-end
-arch cleric_book
-slaying holy word
-msg
-holy word
-endmsg
-x 4
-y 1
-value 2000
-unpaid 1
-identified 1
 end
 arch woodfloor
 x 4
@@ -739,15 +586,47 @@ arch shop_empty
 x 4
 y 8
 end
-arch woodfloor
+arch shop_empty
 x 4
 y 9
 end
+arch shop_empty
+x 4
+y 10
+end
+arch shop_empty
+x 4
+y 11
+end
+arch shop_empty
+x 4
+y 12
+end
+arch shop_empty
+x 4
+y 13
+end
+arch shop_empty
+x 4
+y 14
+end
+arch shop_empty
+x 4
+y 15
+end
+arch shop_empty
+x 4
+y 16
+end
+arch shop_empty
+x 4
+y 17
+end
 arch wall_2_1_2
 x 4
-y 9
+y 17
 end
-arch woodfloor
+arch shop_empty
 x 5
 end
 arch wall_2_1_2
@@ -762,17 +641,6 @@ arch shop_empty
 x 5
 y 1
 value 2000
-end
-arch cleric_book
-slaying holy word
-msg
-holy word
-endmsg
-x 5
-y 1
-value 2000
-unpaid 1
-identified 1
 end
 arch woodfloor
 x 5
@@ -782,238 +650,123 @@ arch shop_empty
 x 5
 y 2
 end
-arch shop_empty
+arch woodfloor
 x 5
 y 3
 end
-arch bookshelf
-name Books for Pyromancers
+arch shop_books
 x 5
 y 3
-carrying 20000
-no_pick 1
-arch pyro_book
-value 30000
-randomitems none
-unpaid 1
-identified 1
-arch spell_burning_hands
 end
-end
-arch pyro_book
-value 30000
-randomitems none
-unpaid 1
-identified 1
-arch spell_sm_lightning
-end
-end
-arch pyro_book
-value 30000
-randomitems none
-unpaid 1
-identified 1
-arch spell_firebolt
-end
-end
-arch pyro_book
-value 30000
-randomitems none
-unpaid 1
-identified 1
-arch spell_small_fireball
-end
-end
-end
-arch shop_empty
+arch woodfloor
 x 5
 y 4
 end
-arch bookshelf
-name Books for Pyromancers
+arch shop_books
 x 5
 y 4
-carrying 20000
-no_pick 1
-arch pyro_book
-value 30000
-randomitems none
-unpaid 1
-identified 1
-arch spell_burning_hands
 end
-end
-arch pyro_book
-value 30000
-randomitems none
-unpaid 1
-identified 1
-arch spell_sm_lightning
-end
-end
-arch pyro_book
-value 30000
-randomitems none
-unpaid 1
-identified 1
-arch spell_firebolt
-end
-end
-arch pyro_book
-value 30000
-randomitems none
-unpaid 1
-identified 1
-arch spell_small_fireball
-end
-end
-end
-arch shop_empty
+arch woodfloor
 x 5
 y 5
 end
-arch bookshelf
-name Books for Pyromancers
+arch shop_books
 x 5
 y 5
-carrying 20000
-no_pick 1
-arch pyro_book
-value 30000
-randomitems none
-unpaid 1
-identified 1
-arch spell_medium_fireball
 end
-end
-arch pyro_book
-value 30000
-randomitems none
-unpaid 1
-identified 1
-arch spell_faery_fire
-end
-end
-arch pyro_book
-value 30000
-randomitems none
-unpaid 1
-identified 1
-arch spell_large_lightning
-end
-end
-arch pyro_book
-value 30000
-randomitems none
-unpaid 1
-identified 1
-arch spell_rune_of_fire
-end
-end
-end
-arch shop_empty
+arch woodfloor
 x 5
 y 6
 end
-arch bookshelf
-name Books for Pyromancers
+arch shop_books
 x 5
 y 6
-carrying 20000
-no_pick 1
-arch pyro_book
-value 30000
-randomitems none
-unpaid 1
-identified 1
-arch spell_large_fireball
 end
-end
-arch pyro_book
-value 30000
-randomitems none
-unpaid 1
-identified 1
-arch spell_create_bomb
-end
-end
-arch pyro_book
-value 30000
-randomitems none
-unpaid 1
-identified 1
-arch spell_create_fire_wall
-end
-end
-arch pyro_book
-value 30000
-randomitems none
-unpaid 1
-identified 1
-arch spell_rune_of_shocking
-end
-end
-end
-arch shop_empty
+arch woodfloor
 x 5
 y 7
 end
-arch bookshelf
-name Books for Pyromancers
+arch shop_books
 x 5
 y 7
-carrying 20000
-no_pick 1
-arch pyro_book
-value 30000
-randomitems none
-unpaid 1
-identified 1
-arch spell_rune_of_blasting
-end
-end
-arch pyro_book
-value 30000
-randomitems none
-unpaid 1
-identified 1
-arch spell_firetrap
-end
-end
-arch pyro_book
-value 30000
-randomitems none
-unpaid 1
-identified 1
-arch spell_build_fireball_wall
-end
-end
-arch pyro_book
-value 30000
-randomitems none
-unpaid 1
-identified 1
-arch spell_build_lightning_wall
-end
-end
 end
 arch woodfloor
 x 5
 y 8
 end
-arch shop_empty
+arch shop_books
 x 5
 y 8
 end
 arch woodfloor
 x 5
 y 9
+end
+arch shop_books
+x 5
+y 9
+end
+arch woodfloor
+x 5
+y 10
+end
+arch shop_books
+x 5
+y 10
+end
+arch woodfloor
+x 5
+y 11
+end
+arch shop_books
+x 5
+y 11
+end
+arch woodfloor
+x 5
+y 12
+end
+arch shop_books
+x 5
+y 12
+end
+arch woodfloor
+x 5
+y 13
+end
+arch shop_books
+x 5
+y 13
+end
+arch woodfloor
+x 5
+y 14
+end
+arch shop_books
+x 5
+y 14
+end
+arch woodfloor
+x 5
+y 15
+end
+arch shop_books
+x 5
+y 15
+end
+arch shop_empty
+x 5
+y 16
+end
+arch shop_empty
+x 5
+y 17
 end
 arch wall_2_1_2
 x 5
-y 9
+y 17
 end
-arch woodfloor
+arch shop_empty
 x 6
 end
 arch wall_2_1_2
@@ -1028,17 +781,6 @@ arch shop_empty
 x 6
 y 1
 value 2000
-end
-arch cleric_book
-slaying holy word
-msg
-holy word
-endmsg
-x 6
-y 1
-value 2000
-unpaid 1
-identified 1
 end
 arch woodfloor
 x 6
@@ -1080,10 +822,6 @@ arch shop_empty
 x 6
 y 6
 end
-arch woodfloor
-x 6
-y 7
-end
 arch shop_empty
 x 6
 y 7
@@ -1096,15 +834,47 @@ arch shop_empty
 x 6
 y 8
 end
-arch woodfloor
+arch shop_empty
 x 6
 y 9
+end
+arch shop_empty
+x 6
+y 10
+end
+arch shop_empty
+x 6
+y 11
+end
+arch shop_empty
+x 6
+y 12
+end
+arch shop_empty
+x 6
+y 13
+end
+arch shop_empty
+x 6
+y 14
+end
+arch shop_empty
+x 6
+y 15
+end
+arch shop_empty
+x 6
+y 16
+end
+arch shop_empty
+x 6
+y 17
 end
 arch wall_2_1_2
 x 6
-y 9
+y 17
 end
-arch woodfloor
+arch shop_empty
 x 7
 end
 arch wall_2_1_2
@@ -1118,238 +888,123 @@ arch shop_empty
 x 7
 y 2
 end
-arch shop_empty
+arch woodfloor
 x 7
 y 3
 end
-arch bookshelf
-name Books for Sorcerers
+arch shop_books
 x 7
 y 3
-carrying 20000
-no_pick 1
-arch sorcerer_book
-value 25000
-randomitems none
-unpaid 1
-identified 1
-arch spell_detect_magic
 end
-end
-arch sorcerer_book
-value 25000
-randomitems none
-unpaid 1
-identified 1
-arch spell_magic_bullet
-end
-end
-arch sorcerer_book
-value 25000
-randomitems none
-unpaid 1
-identified 1
-arch spell_magic_missile
-end
-end
-arch sorcerer_book
-value 25000
-randomitems none
-unpaid 1
-identified 1
-arch spell_marking_rune
-end
-end
-end
-arch shop_empty
+arch woodfloor
 x 7
 y 4
 end
-arch bookshelf
-name Books for Sorcerers
+arch shop_books
 x 7
 y 4
-carrying 20000
-no_pick 1
-arch sorcerer_book
-value 25000
-randomitems none
-unpaid 1
-identified 1
-arch spell_probe
 end
-end
-arch sorcerer_book
-value 25000
-randomitems none
-unpaid 1
-identified 1
-arch spell_slow
-end
-end
-arch sorcerer_book
-value 25000
-randomitems none
-unpaid 1
-identified 1
-arch spell_confusion
-end
-end
-arch sorcerer_book
-value 25000
-randomitems none
-unpaid 1
-identified 1
-arch spell_paralyze
-end
-end
-end
-arch shop_empty
+arch woodfloor
 x 7
 y 5
 end
-arch bookshelf
-name Books for Sorcerers
+arch shop_books
 x 7
 y 5
-carrying 20000
-no_pick 1
-arch sorcerer_book
-value 25000
-randomitems none
-unpaid 1
-identified 1
-arch spell_poison_cloud
 end
-end
-arch sorcerer_book
-value 25000
-randomitems none
-unpaid 1
-identified 1
-arch spell_dexterity
-end
-end
-arch sorcerer_book
-value 25000
-randomitems none
-unpaid 1
-identified 1
-arch spell_charisma
-end
-end
-arch sorcerer_book
-value 25000
-randomitems none
-unpaid 1
-identified 1
-arch spell_strength
-end
-end
-end
-arch shop_empty
+arch woodfloor
 x 7
 y 6
 end
-arch bookshelf
-name Books for Sorcerers
+arch shop_books
 x 7
 y 6
-carrying 20000
-no_pick 1
-arch sorcerer_book
-value 25000
-randomitems none
-unpaid 1
-identified 1
-arch spell_constitution
 end
-end
-arch sorcerer_book
-value 25000
-randomitems none
-unpaid 1
-identified 1
-arch spell_disarm
-end
-end
-arch sorcerer_book
-value 25000
-randomitems none
-unpaid 1
-identified 1
-arch spell_fear
-end
-end
-arch sorcerer_book
-value 25000
-randomitems none
-unpaid 1
-identified 1
-arch spell_dark_vision
-end
-end
-end
-arch shop_empty
+arch woodfloor
 x 7
 y 7
 end
-arch bookshelf
-name Books for Sorcerers
+arch shop_books
 x 7
 y 7
-carrying 20000
-no_pick 1
-arch sorcerer_book
-value 25000
-randomitems none
-unpaid 1
-identified 1
-arch spell_magic_mapping
-end
-end
-arch sorcerer_book
-value 25000
-randomitems none
-unpaid 1
-identified 1
-arch spell_invisible
-end
-end
-arch sorcerer_book
-value 25000
-randomitems none
-unpaid 1
-identified 1
-arch spell_transference
-end
-end
-arch sorcerer_book
-value 25000
-randomitems none
-unpaid 1
-identified 1
-arch spell_steambolt
-end
-end
 end
 arch woodfloor
 x 7
 y 8
 end
-arch shop_empty
+arch shop_books
 x 7
 y 8
 end
 arch woodfloor
 x 7
 y 9
+end
+arch shop_books
+x 7
+y 9
+end
+arch woodfloor
+x 7
+y 10
+end
+arch shop_books
+x 7
+y 10
+end
+arch woodfloor
+x 7
+y 11
+end
+arch shop_books
+x 7
+y 11
+end
+arch woodfloor
+x 7
+y 12
+end
+arch shop_books
+x 7
+y 12
+end
+arch woodfloor
+x 7
+y 13
+end
+arch shop_books
+x 7
+y 13
+end
+arch woodfloor
+x 7
+y 14
+end
+arch shop_books
+x 7
+y 14
+end
+arch woodfloor
+x 7
+y 15
+end
+arch shop_books
+x 7
+y 15
+end
+arch shop_empty
+x 7
+y 16
+end
+arch shop_empty
+x 7
+y 17
 end
 arch wall_2_1_2
 x 7
-y 9
+y 17
 end
-arch woodfloor
+arch shop_empty
 x 8
 end
 arch wall_2_1_2
@@ -1421,15 +1076,47 @@ arch shop_empty
 x 8
 y 8
 end
-arch woodfloor
+arch shop_empty
 x 8
 y 9
+end
+arch shop_empty
+x 8
+y 10
+end
+arch shop_empty
+x 8
+y 11
+end
+arch shop_empty
+x 8
+y 12
+end
+arch shop_empty
+x 8
+y 13
+end
+arch shop_empty
+x 8
+y 14
+end
+arch shop_empty
+x 8
+y 15
+end
+arch shop_empty
+x 8
+y 16
+end
+arch shop_empty
+x 8
+y 17
 end
 arch wall_2_1_2
 x 8
-y 9
+y 17
 end
-arch woodfloor
+arch shop_empty
 x 9
 end
 arch wall_2_1_2
@@ -1453,304 +1140,677 @@ arch shop_empty
 x 9
 y 2
 end
-arch shop_empty
+arch woodfloor
 x 9
 y 3
 end
-arch bookshelf
-name Books for Summoners
+arch shop_books
 x 9
 y 3
-carrying 20000
-no_pick 1
-arch summoner_book
-value 31000
-randomitems none
-unpaid 1
-identified 1
-arch spell_create_missile
 end
-end
-arch summoner_book
-value 31000
-randomitems none
-unpaid 1
-identified 1
-arch spell_earth_to_dust
-end
-end
-arch summoner_book
-value 31000
-randomitems none
-unpaid 1
-identified 1
-arch spell_lesser_summon_golem
-end
-end
-arch summoner_book
-value 31000
-randomitems none
-unpaid 1
-identified 1
-arch spell_summon_fog
-end
-end
-end
-arch shop_empty
+arch woodfloor
 x 9
 y 4
 end
-arch bookshelf
-name Books for Summoners
+arch shop_books
 x 9
 y 4
-carrying 20000
-no_pick 1
-arch summoner_book
-value 31000
-randomitems none
-unpaid 1
-identified 1
-arch spell_summon_pet_monster
 end
-end
-arch summoner_book
-value 31000
-randomitems none
-unpaid 1
-identified 1
-arch spell_summon_golem
-end
-end
-arch summoner_book
-value 31000
-randomitems none
-unpaid 1
-identified 1
-arch spell_create_earth_wall
-end
-end
-end
-arch shop_empty
+arch woodfloor
 x 9
 y 5
 end
-arch bookshelf
-name Books for Summoners
+arch shop_books
 x 9
 y 5
-carrying 20000
-no_pick 1
-arch summoner_book
-value 31000
-randomitems none
-unpaid 1
-identified 1
-arch spell_summon_water_elemental
 end
-end
-arch summoner_book
-value 31000
-randomitems none
-unpaid 1
-identified 1
-arch spell_summon_earth_elemental
-end
-end
-arch summoner_book
-value 31000
-randomitems none
-unpaid 1
-identified 1
-arch spell_charm_monsters
-end
-end
-arch summoner_book
-value 31000
-randomitems none
-unpaid 1
-identified 1
-arch spell_counterspell
-end
-end
-end
-arch shop_empty
+arch woodfloor
 x 9
 y 6
 end
-arch bookshelf
-name Books for Summoners
+arch shop_books
 x 9
 y 6
-carrying 20000
-no_pick 1
-arch summoner_book
-value 31000
-randomitems none
-unpaid 1
-identified 1
-arch spell_create_food
 end
-end
-arch summoner_book
-value 31000
-randomitems none
-unpaid 1
-identified 1
-arch spell_summon_air_elemental
-end
-end
-arch summoner_book
-value 31000
-randomitems none
-unpaid 1
-identified 1
-arch spell_mystic_fist
-end
-end
-arch summoner_book
-value 31000
-randomitems none
-unpaid 1
-identified 1
-arch spell_counterwall
-end
-end
-end
-arch shop_empty
+arch woodfloor
 x 9
 y 7
 end
-arch bookshelf
-name Books for Summoners
+arch shop_books
 x 9
 y 7
-carrying 20000
-no_pick 1
-arch summoner_book
-value 31000
-randomitems none
-unpaid 1
-identified 1
-arch spell_build_director
-end
-end
-arch summoner_book
-value 31000
-randomitems none
-unpaid 1
-identified 1
-arch spell_summon_fire_elemental
-end
-end
-arch summoner_book
-value 31000
-randomitems none
-unpaid 1
-identified 1
-arch spell_dancing_sword
-end
-end
-arch summoner_book
-value 31000
-randomitems none
-unpaid 1
-identified 1
-arch spell_pentagram
-end
-end
 end
 arch woodfloor
 x 9
 y 8
 end
-arch shop_empty
+arch shop_books
 x 9
 y 8
 end
 arch woodfloor
 x 9
 y 9
+end
+arch shop_books
+x 9
+y 9
+end
+arch woodfloor
+x 9
+y 10
+end
+arch shop_books
+x 9
+y 10
+end
+arch woodfloor
+x 9
+y 11
+end
+arch shop_books
+x 9
+y 11
+end
+arch woodfloor
+x 9
+y 12
+end
+arch shop_books
+x 9
+y 12
+end
+arch woodfloor
+x 9
+y 13
+end
+arch shop_books
+x 9
+y 13
+end
+arch woodfloor
+x 9
+y 14
+end
+arch shop_books
+x 9
+y 14
+end
+arch woodfloor
+x 9
+y 15
+end
+arch shop_books
+x 9
+y 15
+end
+arch shop_empty
+x 9
+y 16
+end
+arch shop_empty
+x 9
+y 17
 end
 arch wall_2_1_2
 x 9
-y 9
+y 17
 end
-arch woodfloor
+arch shop_empty
 x 10
+end
+arch wall_2_1_2
+x 10
+end
+arch shop_empty
+x 10
+y 1
+end
+arch shop_empty
+x 10
+y 2
+end
+arch shop_empty
+x 10
+y 3
+end
+arch shop_empty
+x 10
+y 4
+end
+arch shop_empty
+x 10
+y 5
+end
+arch shop_empty
+x 10
+y 6
+end
+arch shop_empty
+x 10
+y 7
+end
+arch shop_empty
+x 10
+y 8
+end
+arch shop_empty
+x 10
+y 9
+end
+arch shop_empty
+x 10
+y 10
+end
+arch shop_empty
+x 10
+y 11
+end
+arch shop_empty
+x 10
+y 12
+end
+arch shop_empty
+x 10
+y 13
+end
+arch shop_empty
+x 10
+y 14
+end
+arch shop_empty
+x 10
+y 15
+end
+arch shop_empty
+x 10
+y 16
+end
+arch shop_empty
+x 10
+y 17
+end
+arch wall_2_1_2
+x 10
+y 17
+end
+arch shop_empty
+x 11
+end
+arch wall_2_1_2
+x 11
+end
+arch shop_empty
+x 11
+y 1
+end
+arch shop_empty
+x 11
+y 2
+end
+arch woodfloor
+x 11
+y 3
+end
+arch shop_books
+x 11
+y 3
+end
+arch woodfloor
+x 11
+y 4
+end
+arch shop_books
+x 11
+y 4
+end
+arch woodfloor
+x 11
+y 5
+end
+arch shop_books
+x 11
+y 5
+end
+arch woodfloor
+x 11
+y 6
+end
+arch shop_books
+x 11
+y 6
+end
+arch woodfloor
+x 11
+y 7
+end
+arch shop_books
+x 11
+y 7
+end
+arch woodfloor
+x 11
+y 8
+end
+arch shop_books
+x 11
+y 8
+end
+arch woodfloor
+x 11
+y 9
+end
+arch shop_books
+x 11
+y 9
+end
+arch woodfloor
+x 11
+y 10
+end
+arch shop_books
+x 11
+y 10
+end
+arch woodfloor
+x 11
+y 11
+end
+arch shop_books
+x 11
+y 11
+end
+arch woodfloor
+x 11
+y 12
+end
+arch shop_books
+x 11
+y 12
+end
+arch woodfloor
+x 11
+y 13
+end
+arch shop_books
+x 11
+y 13
+end
+arch woodfloor
+x 11
+y 14
+end
+arch shop_books
+x 11
+y 14
+end
+arch woodfloor
+x 11
+y 15
+end
+arch shop_books
+x 11
+y 15
+end
+arch shop_empty
+x 11
+y 16
+end
+arch shop_empty
+x 11
+y 17
+end
+arch wall_2_1_2
+x 11
+y 17
+end
+arch shop_empty
+x 12
+end
+arch wall_2_1_2
+x 12
+end
+arch shop_empty
+x 12
+y 1
+end
+arch shop_empty
+x 12
+y 2
+end
+arch shop_empty
+x 12
+y 3
+end
+arch shop_empty
+x 12
+y 4
+end
+arch shop_empty
+x 12
+y 5
+end
+arch shop_empty
+x 12
+y 6
+end
+arch shop_empty
+x 12
+y 7
+end
+arch shop_empty
+x 12
+y 8
+end
+arch shop_empty
+x 12
+y 9
+end
+arch shop_empty
+x 12
+y 10
+end
+arch shop_empty
+x 12
+y 11
+end
+arch shop_empty
+x 12
+y 12
+end
+arch shop_empty
+x 12
+y 13
+end
+arch shop_empty
+x 12
+y 14
+end
+arch shop_empty
+x 12
+y 15
+end
+arch shop_empty
+x 12
+y 16
+end
+arch shop_empty
+x 12
+y 17
+end
+arch wall_2_1_2
+x 12
+y 17
+end
+arch shop_empty
+x 13
+end
+arch wall_2_1_2
+x 13
+end
+arch shop_empty
+x 13
+y 1
+end
+arch shop_empty
+x 13
+y 2
+end
+arch woodfloor
+x 13
+y 3
+end
+arch shop_books
+x 13
+y 3
+end
+arch woodfloor
+x 13
+y 4
+end
+arch shop_books
+x 13
+y 4
+end
+arch woodfloor
+x 13
+y 5
+end
+arch shop_books
+x 13
+y 5
+end
+arch woodfloor
+x 13
+y 6
+end
+arch shop_books
+x 13
+y 6
+end
+arch woodfloor
+x 13
+y 7
+end
+arch shop_books
+x 13
+y 7
+end
+arch woodfloor
+x 13
+y 8
+end
+arch shop_books
+x 13
+y 8
+end
+arch woodfloor
+x 13
+y 9
+end
+arch shop_books
+x 13
+y 9
+end
+arch woodfloor
+x 13
+y 10
+end
+arch shop_books
+x 13
+y 10
+end
+arch woodfloor
+x 13
+y 11
+end
+arch shop_books
+x 13
+y 11
+end
+arch woodfloor
+x 13
+y 12
+end
+arch shop_books
+x 13
+y 12
+end
+arch woodfloor
+x 13
+y 13
+end
+arch shop_books
+x 13
+y 13
+end
+arch woodfloor
+x 13
+y 14
+end
+arch shop_books
+x 13
+y 14
+end
+arch woodfloor
+x 13
+y 15
+end
+arch shop_books
+x 13
+y 15
+end
+arch shop_empty
+x 13
+y 16
+end
+arch shop_empty
+x 13
+y 17
+end
+arch wall_2_1_2
+x 13
+y 17
+end
+arch shop_empty
+x 14
 end
 arch wall_2_2_3
-x 10
+x 14
 end
-arch woodfloor
-x 10
+arch shop_empty
+x 14
 y 1
 end
 arch wall_2_1_1
-x 10
+x 14
 y 1
 end
-arch woodfloor
-x 10
+arch shop_empty
+x 14
 y 2
 end
 arch wall_2_1_1
-x 10
+x 14
 y 2
 end
-arch woodfloor
-x 10
+arch shop_empty
+x 14
 y 3
 end
 arch wall_2_1_1
-x 10
+x 14
 y 3
 end
-arch woodfloor
-x 10
+arch shop_empty
+x 14
 y 4
 end
 arch wall_2_1_1
-x 10
+x 14
 y 4
 end
-arch woodfloor
-x 10
+arch shop_empty
+x 14
 y 5
 end
 arch wall_2_1_1
-x 10
+x 14
 y 5
 end
-arch woodfloor
-x 10
+arch shop_empty
+x 14
 y 6
 end
 arch wall_2_1_1
-x 10
+x 14
 y 6
 end
-arch woodfloor
-x 10
+arch shop_empty
+x 14
 y 7
 end
 arch wall_2_1_1
-x 10
+x 14
 y 7
 end
-arch woodfloor
-x 10
+arch shop_empty
+x 14
 y 8
 end
 arch wall_2_1_1
-x 10
+x 14
 y 8
 end
-arch woodfloor
-x 10
+arch shop_empty
+x 14
 y 9
+end
+arch wall_2_1_1
+x 14
+y 9
+end
+arch shop_empty
+x 14
+y 10
+end
+arch wall_2_1_1
+x 14
+y 10
+end
+arch shop_empty
+x 14
+y 11
+end
+arch wall_2_1_1
+x 14
+y 11
+end
+arch shop_empty
+x 14
+y 12
+end
+arch wall_2_1_1
+x 14
+y 12
+end
+arch shop_empty
+x 14
+y 13
+end
+arch wall_2_1_1
+x 14
+y 13
+end
+arch shop_empty
+x 14
+y 14
+end
+arch wall_2_1_1
+x 14
+y 14
+end
+arch shop_empty
+x 14
+y 15
+end
+arch wall_2_1_1
+x 14
+y 15
+end
+arch shop_empty
+x 14
+y 16
+end
+arch wall_2_1_1
+x 14
+y 16
+end
+arch shop_empty
+x 14
+y 17
 end
 arch wall_2_2_4
-x 10
-y 9
+x 14
+y 17
 end

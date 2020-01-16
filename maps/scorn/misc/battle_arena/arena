@@ -5792,12 +5792,6 @@ sp 44
 x 12
 y 47
 end
-arch detector
-x 12
-y 47
-invisible 1
-connected 88888
-end
 arch battleground
 name a floor
 face afloor.171
@@ -6277,35 +6271,17 @@ arch stwallred_2_1_2
 x 13
 y 48
 end
-arch magic_mouth
-msg
-YOU HAVE QUIT BEFORE THE MATCH OFFICIALLY
-ENDED.
-endmsg
+arch battleground
+name a floor
+face afloor.171
+hp 27
+sp 44
 x 13
 y 49
-connected 666
-activate_on_release 0
 end
-arch magic_mouth
-msg
-YOU HAVE QUIT BEFORE THE MATCH OFFICIALLY
-ENDED.
-endmsg
+arch stwallred_2_1_2
 x 13
 y 49
-connected 555
-activate_on_release 0
-end
-arch magic_mouth
-msg
-YOU HAVE QUIT BEFORE THE MATCH OFFICIALLY
-ENDED.
-endmsg
-x 13
-y 49
-connected 88888
-activate_on_release 0
 end
 arch battleground
 face bosgrass10.111
@@ -15059,18 +15035,11 @@ sp 44
 x 33
 y 40
 end
-arch invis_exit
+arch pit_open
 hp 26
 sp 23
 x 33
 y 40
-end
-arch mover_1
-x 33
-y 40
-speed 1.0
-level 1
-attacktype 1
 end
 arch battleground
 name a floor
@@ -16052,18 +16021,11 @@ sp 44
 x 35
 y 40
 end
-arch invis_exit
+arch pit_open
 hp 30
 sp 14
 x 35
 y 40
-end
-arch mover_1
-x 35
-y 40
-speed 1.0
-level 1
-attacktype 1
 end
 arch battleground
 name a floor
@@ -17031,18 +16993,11 @@ sp 44
 x 37
 y 40
 end
-arch invis_exit
+arch pit_open
 hp 7
 sp 6
 x 37
 y 40
-end
-arch mover_1
-x 37
-y 40
-speed 1.0
-level 1
-attacktype 1
 end
 arch battleground
 name a floor
@@ -18350,6 +18305,7 @@ connected 555
 lifesave 1
 activate_on_release 0
 arch earthwall
+resist_electricity 10
 end
 end
 arch battleground
@@ -18367,6 +18323,7 @@ connected 444
 lifesave 1
 activate_on_release 0
 arch earthwall
+resist_electricity 10
 end
 end
 arch battleground
@@ -18384,6 +18341,7 @@ connected 333
 lifesave 1
 activate_on_release 0
 arch earthwall
+resist_electricity 10
 end
 end
 arch battleground
@@ -18401,6 +18359,7 @@ connected 222
 lifesave 1
 activate_on_release 0
 arch earthwall
+resist_electricity 10
 end
 end
 arch battleground

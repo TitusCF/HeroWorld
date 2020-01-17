@@ -7,7 +7,7 @@ enter_x 20
 enter_y 38
 msg
 - 2010-03-30 21:05:36 BST by Lemoner: Done key system, beds to reality, gate system.
-Modified: 2019-12-27 Acer
+Modified: 2020-01-17 Acer
 endmsg
 outdoor 1
 end
@@ -2229,7 +2229,6 @@ arch ggate_closed
 x 6
 y 2
 connected 444986
-activate_on_release 0
 end
 arch check_inv
 slaying black_shield_locker_1
@@ -3081,7 +3080,6 @@ arch ggate_closed
 x 8
 y 2
 connected 4449861
-activate_on_release 0
 end
 arch check_inv
 slaying black_shield_locker_2
@@ -3331,6 +3329,7 @@ end
 arch button_small
 x 8
 y 26
+invisible 1
 connected 3
 end
 arch dungeon_magic
@@ -3346,7 +3345,6 @@ arch grate_closed_1
 x 8
 y 27
 connected 3
-activate_on_release 0
 end
 arch dungeon_magic
 x 8
@@ -3360,6 +3358,7 @@ end
 arch button_small
 x 8
 y 28
+invisible 1
 connected 3
 end
 arch dungeon_magic
@@ -3949,7 +3948,6 @@ arch ggate_closed
 x 10
 y 2
 connected 4449862
-activate_on_release 0
 end
 arch check_inv
 slaying black_shield_locker_3
@@ -4760,7 +4758,6 @@ arch ggate_closed
 x 12
 y 2
 connected 4449863
-activate_on_release 0
 end
 arch check_inv
 slaying black_shield_locker_4
@@ -4966,6 +4963,7 @@ end
 arch button_small
 x 12
 y 17
+invisible 1
 connected 4
 end
 arch dungeon_magic
@@ -4981,7 +4979,6 @@ arch grate_closed_1
 x 12
 y 18
 connected 4
-activate_on_release 0
 end
 arch dungeon_magic
 x 12
@@ -5003,6 +5000,7 @@ end
 arch button_small
 x 12
 y 19
+invisible 1
 connected 4
 end
 arch flagstone
@@ -5592,7 +5590,6 @@ arch ggate_closed
 x 14
 y 2
 connected 4449864
-activate_on_release 0
 end
 arch check_inv
 slaying black_shield_locker_5
@@ -5882,6 +5879,7 @@ arch odoorm2_closed_1
 x 14
 y 27
 connected 1
+move_block all
 end
 arch check_inv
 slaying black_shield
@@ -6308,6 +6306,7 @@ arch odoorm2_closed_1
 x 15
 y 27
 connected 1
+move_block all
 end
 arch check_inv
 slaying black_shield
@@ -6468,7 +6467,6 @@ arch ggate_closed
 x 16
 y 2
 connected 4449865
-activate_on_release 0
 end
 arch check_inv
 slaying black_shield_locker_6
@@ -6577,6 +6575,7 @@ end
 arch button_small
 x 16
 y 9
+invisible 1
 connected 6
 end
 arch dungeon_magic
@@ -6592,7 +6591,6 @@ arch grate_closed_1
 x 16
 y 10
 connected 6
-activate_on_release 0
 end
 arch dungeon_magic
 x 16
@@ -6606,6 +6604,7 @@ end
 arch button_small
 x 16
 y 11
+invisible 1
 connected 6
 end
 arch dungeon_magic
@@ -7273,7 +7272,6 @@ arch ggate_closed
 x 18
 y 2
 connected 4449866
-activate_on_release 0
 end
 arch check_inv
 slaying black_shield_locker_7
@@ -7535,7 +7533,6 @@ arch ggate_closed
 x 18
 y 24
 connected 103
-activate_on_release 0
 end
 arch check_inv
 slaying mailed_fist_master
@@ -7584,14 +7581,13 @@ end
 arch detector
 x 18
 y 26
+invisible 1
 connected 48572
 end
 arch ggate_closed
 x 18
 y 26
-invisible 1
 connected 6491352
-activate_on_release 0
 end
 arch dungeon_magic
 x 18
@@ -8185,7 +8181,6 @@ arch ggate_closed
 x 20
 y 2
 connected 4449867
-activate_on_release 0
 end
 arch check_inv
 slaying black_shield_locker_8
@@ -8483,7 +8478,6 @@ arch ggate_closed
 x 20
 y 24
 connected 1033
-activate_on_release 0
 end
 arch check_inv
 slaying mailed_fist_master
@@ -8540,14 +8534,13 @@ end
 arch detector
 x 20
 y 26
+invisible 1
 connected 487651
 end
 arch ggate_closed
 x 20
 y 26
-invisible 1
 connected 6491352
-activate_on_release 0
 end
 arch dungeon_magic
 x 20
@@ -9226,7 +9219,6 @@ arch ggate_closed
 x 22
 y 2
 connected 4449868
-activate_on_release 0
 end
 arch check_inv
 slaying black_shield_locker_9
@@ -9499,7 +9491,6 @@ arch ggate_closed
 x 22
 y 24
 connected 10333
-activate_on_release 0
 end
 arch check_inv
 slaying mailed_fist_master
@@ -9556,14 +9547,13 @@ end
 arch detector
 x 22
 y 26
+invisible 1
 connected 4879541
 end
 arch ggate_closed
 x 22
 y 26
-invisible 1
 connected 6491352
-activate_on_release 0
 end
 arch dungeon_magic
 x 22
@@ -10025,7 +10015,6 @@ arch grate_closed_2
 x 23
 y 28
 connected 49998745
-activate_on_release 0
 end
 arch dungeon_magic
 x 23
@@ -10040,7 +10029,6 @@ arch grate_closed_2
 x 23
 y 29
 connected 49998745
-activate_on_release 0
 end
 arch dungeon_magic
 x 23
@@ -10055,7 +10043,6 @@ arch grate_closed_2
 x 23
 y 30
 connected 49998745
-activate_on_release 0
 end
 arch dungeon_magic
 x 23
@@ -10070,7 +10057,6 @@ arch grate_closed_2
 x 23
 y 31
 connected 49998745
-activate_on_release 0
 end
 arch dungeon_magic
 x 23
@@ -10085,7 +10071,6 @@ arch grate_closed_2
 x 23
 y 32
 connected 49998745
-activate_on_release 0
 end
 arch dungeon_magic
 x 23
@@ -10100,7 +10085,6 @@ arch grate_closed_2
 x 23
 y 33
 connected 49998745
-activate_on_release 0
 end
 arch dungeon_magic
 x 23
@@ -10115,7 +10099,6 @@ arch grate_closed_2
 x 23
 y 34
 connected 49998745
-activate_on_release 0
 end
 arch dungeon_magic
 x 23
@@ -10220,7 +10203,6 @@ arch ggate_closed
 x 24
 y 2
 connected 4449869
-activate_on_release 0
 end
 arch check_inv
 slaying black_shield_locker_10
@@ -10350,6 +10332,7 @@ end
 arch button_small
 x 24
 y 9
+invisible 1
 connected 7
 end
 arch dungeon_magic
@@ -10365,7 +10348,6 @@ arch grate_closed_1
 x 24
 y 10
 connected 7
-activate_on_release 0
 end
 arch dungeon_magic
 x 24
@@ -10379,6 +10361,7 @@ end
 arch button_small
 x 24
 y 11
+invisible 1
 connected 7
 end
 arch dungeon_magic
@@ -10929,7 +10912,6 @@ arch grate_closed_1
 x 25
 y 27
 connected 3335682
-activate_on_release 0
 end
 arch check_inv
 slaying black_shield_guest
@@ -11092,7 +11074,6 @@ arch ggate_closed
 x 26
 y 2
 connected 44498610
-activate_on_release 0
 end
 arch check_inv
 slaying black_shield_locker_11
@@ -11277,6 +11258,7 @@ end
 arch button_small
 x 26
 y 17
+invisible 1
 connected 5
 end
 arch dungeon_magic
@@ -11292,7 +11274,6 @@ arch grate_closed_1
 x 26
 y 18
 connected 5
-activate_on_release 0
 end
 arch dungeon_magic
 x 26
@@ -11306,6 +11287,7 @@ end
 arch button_small
 x 26
 y 19
+invisible 1
 connected 5
 end
 arch dungeon_magic
@@ -12032,7 +12014,6 @@ arch ggate_closed
 x 28
 y 2
 connected 44498611
-activate_on_release 0
 end
 arch check_inv
 slaying black_shield_locker_12
@@ -12203,7 +12184,6 @@ arch igate_closed_2
 x 28
 y 14
 connected 8
-activate_on_release 0
 end
 arch check_inv
 slaying black_shield_master
@@ -12927,7 +12907,6 @@ arch ggate_closed
 x 30
 y 2
 connected 44498612
-activate_on_release 0
 end
 arch check_inv
 slaying black_shield_locker_13
@@ -13627,6 +13606,7 @@ end
 arch button_small
 x 31
 y 26
+invisible 1
 connected 2
 end
 arch dungeon_magic
@@ -13642,7 +13622,6 @@ arch grate_closed_1
 x 31
 y 27
 connected 2
-activate_on_release 0
 end
 arch dungeon_magic
 x 31
@@ -13656,6 +13635,7 @@ end
 arch button_small
 x 31
 y 28
+invisible 1
 connected 2
 end
 arch dungeon_magic
@@ -13812,7 +13792,6 @@ arch ggate_closed
 x 32
 y 2
 connected 44498613
-activate_on_release 0
 end
 arch check_inv
 slaying black_shield_locker_14
@@ -14001,13 +13980,6 @@ arch flagstone
 x 32
 y 17
 unique 1
-end
-arch sign
-msg
-Service keys are needed to use the crafting rooms upstairs and storage room.
-endmsg
-x 32
-y 17
 end
 arch dungeon_magic
 x 32
@@ -14845,26 +14817,6 @@ end
 arch flagstone
 x 34
 y 17
-end
-arch altar
-name Purchase Services Key - 10 Platinum
-slaying platinum
-food 1250
-x 34
-y 17
-connected 102
-end
-arch creator
-x 34
-y 17
-connected 102
-lifesave 1
-activate_on_release 0
-arch blue_key
-name Guild Services Key
-name_pl Guild Services Keys
-slaying black_shield_extra
-end
 end
 arch dungeon_magic
 x 34

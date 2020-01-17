@@ -2,12 +2,12 @@ arch map
 name Guild Ground
 region wassar
 width 40
-height 41
+height 40
 enter_x 20
 enter_y 38
 msg
 - 2010-03-30 21:05:36 BST by Lemoner: Done key system, beds to reality, gate system.
-Modified: 2020-01-16 Acer
+Modified: 2020-01-17 Acer
 endmsg
 outdoor 1
 end
@@ -972,14 +972,6 @@ x 2
 y 39
 end
 arch dungeon_magic
-x 2
-y 40
-end
-arch flagstone
-x 2
-y 40
-end
-arch dungeon_magic
 x 3
 end
 arch flagstone
@@ -1778,14 +1770,6 @@ x 4
 y 39
 end
 arch dungeon_magic
-x 4
-y 40
-end
-arch flagstone
-x 4
-y 40
-end
-arch dungeon_magic
 x 5
 end
 arch flagstone
@@ -2228,7 +2212,7 @@ y 1
 unique 1
 end
 arch check_inv
-slaying black_shield_locker_1
+slaying purple_butterfly_locker_1
 x 6
 y 1
 connected 444986
@@ -2245,10 +2229,9 @@ arch ggate_closed
 x 6
 y 2
 connected 444986
-activate_on_release 0
 end
 arch check_inv
-slaying black_shield_locker_1
+slaying purple_butterfly_locker_1
 x 6
 y 2
 connected 444986
@@ -2262,7 +2245,7 @@ x 6
 y 3
 end
 arch check_inv
-slaying black_shield_locker_1
+slaying purple_butterfly_locker_1
 x 6
 y 3
 connected 444986
@@ -2281,15 +2264,15 @@ y 4
 no_pick 1
 end
 arch detector
-slaying Black Shield Locker 1
+slaying Mailed Fist Locker 1
 x 6
 y 4
 invisible 1
 connected 444986
 end
 arch blue_key
-name Black Shield Locker Key 1
-slaying black_shield_locker_1
+name Purple Butterfly Locker Key 1
+slaying purple_butterfly_locker_1
 x 6
 y 4
 unique 1
@@ -3080,7 +3063,7 @@ y 1
 unique 1
 end
 arch check_inv
-slaying black_shield_locker_2
+slaying purple_butterfly_locker_2
 x 8
 y 1
 connected 4449861
@@ -3097,10 +3080,9 @@ arch ggate_closed
 x 8
 y 2
 connected 4449861
-activate_on_release 0
 end
 arch check_inv
-slaying black_shield_locker_2
+slaying purple_butterfly_locker_2
 x 8
 y 2
 connected 4449861
@@ -3114,7 +3096,7 @@ x 8
 y 3
 end
 arch check_inv
-slaying black_shield_locker_2
+slaying purple_butterfly_locker_2
 x 8
 y 3
 connected 4449861
@@ -3133,15 +3115,15 @@ y 4
 no_pick 1
 end
 arch detector
-slaying Black Shield Locker 2
+slaying Mailed Fist Locker 2
 x 8
 y 4
 invisible 1
 connected 4449861
 end
 arch blue_key
-name Black Shield Locker Key 2
-slaying black_shield_locker_2
+name Purple Butterfly Locker Key 2
+slaying purple_butterfly_locker_2
 x 8
 y 4
 unique 1
@@ -3347,6 +3329,7 @@ end
 arch button_small
 x 8
 y 26
+invisible 1
 connected 3
 end
 arch dungeon_magic
@@ -3362,7 +3345,6 @@ arch grate_closed_1
 x 8
 y 27
 connected 3
-activate_on_release 0
 end
 arch dungeon_magic
 x 8
@@ -3376,6 +3358,7 @@ end
 arch button_small
 x 8
 y 28
+invisible 1
 connected 3
 end
 arch dungeon_magic
@@ -3948,7 +3931,7 @@ y 1
 unique 1
 end
 arch check_inv
-slaying black_shield_locker_3
+slaying purple_butterfly_locker_3
 x 10
 y 1
 connected 4449862
@@ -3965,10 +3948,9 @@ arch ggate_closed
 x 10
 y 2
 connected 4449862
-activate_on_release 0
 end
 arch check_inv
-slaying black_shield_locker_3
+slaying purple_butterfly_locker_3
 x 10
 y 2
 connected 4449862
@@ -3982,7 +3964,7 @@ x 10
 y 3
 end
 arch check_inv
-slaying black_shield_locker_3
+slaying purple_butterfly_locker_3
 x 10
 y 3
 connected 4449862
@@ -4001,15 +3983,15 @@ y 4
 no_pick 1
 end
 arch detector
-slaying Black Shield Locker 3
+slaying Mailed Fist Locker 3
 x 10
 y 4
 invisible 1
 connected 4449862
 end
 arch blue_key
-name Black Shield Locker Key 3
-slaying black_shield_locker_3
+name Purple Butterfly Locker Key 3
+slaying purple_butterfly_locker_3
 x 10
 y 4
 unique 1
@@ -4759,7 +4741,7 @@ y 1
 unique 1
 end
 arch check_inv
-slaying black_shield_locker_4
+slaying purple_butterfly_locker_4
 x 12
 y 1
 connected 4449863
@@ -4776,10 +4758,9 @@ arch ggate_closed
 x 12
 y 2
 connected 4449863
-activate_on_release 0
 end
 arch check_inv
-slaying black_shield_locker_4
+slaying purple_butterfly_locker_4
 x 12
 y 2
 connected 4449863
@@ -4793,7 +4774,7 @@ x 12
 y 3
 end
 arch check_inv
-slaying black_shield_locker_4
+slaying purple_butterfly_locker_4
 x 12
 y 3
 connected 4449863
@@ -4812,15 +4793,15 @@ y 4
 no_pick 1
 end
 arch detector
-slaying Black Shield Locker 4
+slaying Mailed Fist Locker 4
 x 12
 y 4
 invisible 1
 connected 4449863
 end
 arch blue_key
-name Black Shield Locker Key 4
-slaying black_shield_locker_4
+name Purple Butterfly Locker Key 4
+slaying purple_butterfly_locker_4
 x 12
 y 4
 unique 1
@@ -4982,6 +4963,7 @@ end
 arch button_small
 x 12
 y 17
+invisible 1
 connected 4
 end
 arch dungeon_magic
@@ -4997,7 +4979,6 @@ arch grate_closed_1
 x 12
 y 18
 connected 4
-activate_on_release 0
 end
 arch dungeon_magic
 x 12
@@ -5019,6 +5000,7 @@ end
 arch button_small
 x 12
 y 19
+invisible 1
 connected 4
 end
 arch flagstone
@@ -5591,7 +5573,7 @@ y 1
 unique 1
 end
 arch check_inv
-slaying black_shield_locker_5
+slaying purple_butterfly_locker_5
 x 14
 y 1
 connected 4449864
@@ -5608,10 +5590,9 @@ arch ggate_closed
 x 14
 y 2
 connected 4449864
-activate_on_release 0
 end
 arch check_inv
-slaying black_shield_locker_5
+slaying purple_butterfly_locker_5
 x 14
 y 2
 connected 4449864
@@ -5625,7 +5606,7 @@ x 14
 y 3
 end
 arch check_inv
-slaying black_shield_locker_5
+slaying purple_butterfly_locker_5
 x 14
 y 3
 connected 4449864
@@ -5644,15 +5625,15 @@ y 4
 no_pick 1
 end
 arch detector
-slaying Black Shield Locker 5
+slaying Mailed Fist Locker 5
 x 14
 y 4
 invisible 1
 connected 4449864
 end
 arch blue_key
-name Black Shield Locker Key 5
-slaying black_shield_locker_5
+name Purple Butterfly Locker Key 5
+slaying purple_butterfly_locker_5
 x 14
 y 4
 unique 1
@@ -5898,9 +5879,10 @@ arch odoorm2_closed_1
 x 14
 y 27
 connected 1
+move_block all
 end
 arch check_inv
-slaying purple_butterfly
+slaying laughing_skull
 x 14
 y 28
 connected 1
@@ -5915,7 +5897,7 @@ y 28
 unique 1
 end
 arch check_inv
-slaying purple_butterfly_master
+slaying laughing_skull_master
 x 14
 y 28
 connected 1
@@ -6324,6 +6306,7 @@ arch odoorm2_closed_1
 x 15
 y 27
 connected 1
+move_block all
 end
 arch check_inv
 slaying purple_butterfly
@@ -6467,7 +6450,7 @@ y 1
 unique 1
 end
 arch check_inv
-slaying black_shield_locker_6
+slaying purple_butterfly_locker_6
 x 16
 y 1
 connected 4449865
@@ -6484,10 +6467,9 @@ arch ggate_closed
 x 16
 y 2
 connected 4449865
-activate_on_release 0
 end
 arch check_inv
-slaying black_shield_locker_6
+slaying purple_butterfly_locker_6
 x 16
 y 2
 connected 4449865
@@ -6501,7 +6483,7 @@ x 16
 y 3
 end
 arch check_inv
-slaying black_shield_locker_6
+slaying purple_butterfly_locker_6
 x 16
 y 3
 connected 4449865
@@ -6520,15 +6502,15 @@ y 4
 no_pick 1
 end
 arch detector
-slaying Black Shield Locker 6
+slaying Mailed Fist Locker 6
 x 16
 y 4
 invisible 1
 connected 4449865
 end
 arch blue_key
-name Black Shield Locker Key 6
-slaying black_shield_locker_6
+name Purple Butterfly Locker Key 6
+slaying purple_butterfly_locker_6
 x 16
 y 4
 unique 1
@@ -6593,6 +6575,7 @@ end
 arch button_small
 x 16
 y 9
+invisible 1
 connected 6
 end
 arch dungeon_magic
@@ -6608,7 +6591,6 @@ arch grate_closed_1
 x 16
 y 10
 connected 6
-activate_on_release 0
 end
 arch dungeon_magic
 x 16
@@ -6622,6 +6604,7 @@ end
 arch button_small
 x 16
 y 11
+invisible 1
 connected 6
 end
 arch dungeon_magic
@@ -7151,13 +7134,14 @@ x 17
 y 30
 unique 1
 end
-arch flagstone
-x 17
-y 31
-end
 arch dungeon_magic
 x 17
 y 31
+end
+arch flagstone
+x 17
+y 31
+unique 1
 end
 arch dungeon_magic
 x 17
@@ -7272,7 +7256,7 @@ y 1
 unique 1
 end
 arch check_inv
-slaying black_shield_locker_7
+slaying purple_butterfly_locker_7
 x 18
 y 1
 connected 4449866
@@ -7289,10 +7273,9 @@ arch ggate_closed
 x 18
 y 2
 connected 4449866
-activate_on_release 0
 end
 arch check_inv
-slaying black_shield_locker_7
+slaying purple_butterfly_locker_7
 x 18
 y 2
 connected 4449866
@@ -7306,7 +7289,7 @@ x 18
 y 3
 end
 arch check_inv
-slaying black_shield_locker_7
+slaying purple_butterfly_locker_7
 x 18
 y 3
 connected 4449866
@@ -7325,15 +7308,15 @@ y 4
 no_pick 1
 end
 arch detector
-slaying Black Shield Locker 7
+slaying Mailed Fist Locker 7
 x 18
 y 4
 invisible 1
 connected 4449866
 end
 arch blue_key
-name Black Shield Locker Key 7
-slaying black_shield_locker_7
+name Purple Butterfly Locker Key 7
+slaying purple_butterfly_locker_7
 x 18
 y 4
 unique 1
@@ -7551,10 +7534,9 @@ arch ggate_closed
 x 18
 y 24
 connected 103
-activate_on_release 0
 end
 arch check_inv
-slaying mailed_fist_master
+slaying purple_butterfly_master
 x 18
 y 24
 connected 335978777
@@ -7600,14 +7582,13 @@ end
 arch detector
 x 18
 y 26
+invisible 1
 connected 48572
 end
 arch ggate_closed
 x 18
 y 26
-invisible 1
 connected 6491352
-activate_on_release 0
 end
 arch dungeon_magic
 x 18
@@ -7660,13 +7641,14 @@ x 18
 y 30
 unique 1
 end
-arch flagstone
-x 18
-y 31
-end
 arch dungeon_magic
 x 18
 y 31
+end
+arch flagstone
+x 18
+y 31
+unique 1
 end
 arch dungeon_magic
 x 18
@@ -8184,7 +8166,7 @@ y 1
 unique 1
 end
 arch check_inv
-slaying black_shield_locker_8
+slaying purple_butterfly_locker_8
 x 20
 y 1
 connected 4449867
@@ -8201,10 +8183,9 @@ arch ggate_closed
 x 20
 y 2
 connected 4449867
-activate_on_release 0
 end
 arch check_inv
-slaying black_shield_locker_8
+slaying purple_butterfly_locker_8
 x 20
 y 2
 connected 4449867
@@ -8218,7 +8199,7 @@ x 20
 y 3
 end
 arch check_inv
-slaying black_shield_locker_8
+slaying purple_butterfly_locker_8
 x 20
 y 3
 connected 4449867
@@ -8237,15 +8218,15 @@ y 4
 no_pick 1
 end
 arch detector
-slaying Black Shield Locker 8
+slaying Mailed Fist Locker 8
 x 20
 y 4
 invisible 1
 connected 4449867
 end
 arch blue_key
-name Black Shield Locker Key 8
-slaying black_shield_locker_8
+name Purple Butterfly Locker Key 8
+slaying purple_butterfly_locker_8
 x 20
 y 4
 unique 1
@@ -8499,10 +8480,9 @@ arch ggate_closed
 x 20
 y 24
 connected 1033
-activate_on_release 0
 end
 arch check_inv
-slaying mailed_fist_master
+slaying purple_butterfly_master
 x 20
 y 24
 connected 333597877
@@ -8556,14 +8536,13 @@ end
 arch detector
 x 20
 y 26
+invisible 1
 connected 487651
 end
 arch ggate_closed
 x 20
 y 26
-invisible 1
 connected 6491352
-activate_on_release 0
 end
 arch dungeon_magic
 x 20
@@ -8586,7 +8565,7 @@ y 27
 connected 333597877
 activate_on_release 0
 arch statue
-name May the Purple Butterfly be forever triumphant!
+name May The Purple Butterfly be forever triumphant!
 end
 end
 arch dungeon_magic
@@ -9225,7 +9204,7 @@ y 1
 unique 1
 end
 arch check_inv
-slaying black_shield_locker_9
+slaying purple_butterfly_locker_9
 x 22
 y 1
 connected 4449868
@@ -9242,10 +9221,9 @@ arch ggate_closed
 x 22
 y 2
 connected 4449868
-activate_on_release 0
 end
 arch check_inv
-slaying black_shield_locker_9
+slaying purple_butterfly_locker_9
 x 22
 y 2
 connected 4449868
@@ -9259,7 +9237,7 @@ x 22
 y 3
 end
 arch check_inv
-slaying black_shield_locker_9
+slaying purple_butterfly_locker_9
 x 22
 y 3
 connected 4449868
@@ -9278,15 +9256,15 @@ y 4
 no_pick 1
 end
 arch detector
+slaying Mailed Fist Locker 9
 x 22
 y 4
 invisible 1
 connected 4449868
-slayingBlack Shield Locker 9
 end
 arch blue_key
-name Black Shield Locker Key 9
-slaying black_shield_locker_9
+name Purple Butterfly Locker Key 9
+slaying purple_butterfly_locker_9
 x 22
 y 4
 unique 1
@@ -9515,10 +9493,9 @@ arch ggate_closed
 x 22
 y 24
 connected 10333
-activate_on_release 0
 end
 arch check_inv
-slaying mailed_fist_master
+slaying purple_butterfly_master
 x 22
 y 24
 connected 33359787
@@ -9572,14 +9549,13 @@ end
 arch detector
 x 22
 y 26
+invisible 1
 connected 4879541
 end
 arch ggate_closed
 x 22
 y 26
-invisible 1
 connected 6491352
-activate_on_release 0
 end
 arch dungeon_magic
 x 22
@@ -10041,7 +10017,6 @@ arch grate_closed_2
 x 23
 y 28
 connected 49998745
-activate_on_release 0
 end
 arch dungeon_magic
 x 23
@@ -10056,7 +10031,6 @@ arch grate_closed_2
 x 23
 y 29
 connected 49998745
-activate_on_release 0
 end
 arch dungeon_magic
 x 23
@@ -10071,7 +10045,6 @@ arch grate_closed_2
 x 23
 y 30
 connected 49998745
-activate_on_release 0
 end
 arch dungeon_magic
 x 23
@@ -10086,7 +10059,6 @@ arch grate_closed_2
 x 23
 y 31
 connected 49998745
-activate_on_release 0
 end
 arch dungeon_magic
 x 23
@@ -10101,7 +10073,6 @@ arch grate_closed_2
 x 23
 y 32
 connected 49998745
-activate_on_release 0
 end
 arch dungeon_magic
 x 23
@@ -10116,7 +10087,6 @@ arch grate_closed_2
 x 23
 y 33
 connected 49998745
-activate_on_release 0
 end
 arch dungeon_magic
 x 23
@@ -10131,7 +10101,6 @@ arch grate_closed_2
 x 23
 y 34
 connected 49998745
-activate_on_release 0
 end
 arch dungeon_magic
 x 23
@@ -10219,7 +10188,7 @@ y 1
 unique 1
 end
 arch check_inv
-slaying black_shield_locker_10
+slaying purple_butterfly_locker_10
 x 24
 y 1
 connected 4449869
@@ -10236,10 +10205,9 @@ arch ggate_closed
 x 24
 y 2
 connected 4449869
-activate_on_release 0
 end
 arch check_inv
-slaying black_shield_locker_10
+slaying purple_butterfly_locker_10
 x 24
 y 2
 connected 4449869
@@ -10253,7 +10221,7 @@ x 24
 y 3
 end
 arch check_inv
-slaying black_shield_locker_10
+slaying purple_butterfly_locker_10
 x 24
 y 3
 connected 4449869
@@ -10272,15 +10240,15 @@ y 4
 no_pick 1
 end
 arch detector
-slaying Black Shield Locker 10
+slaying Mailed Fist Locker 10
 x 24
 y 4
 invisible 1
 connected 4449869
 end
 arch blue_key
-name Black Shield Locker Key 10
-slaying black_shield_locker_10
+name Purple Butterfly Locker Key 10
+slaying purple_butterfly_locker_10
 x 24
 y 4
 unique 1
@@ -10366,6 +10334,7 @@ end
 arch button_small
 x 24
 y 9
+invisible 1
 connected 7
 end
 arch dungeon_magic
@@ -10381,7 +10350,6 @@ arch grate_closed_1
 x 24
 y 10
 connected 7
-activate_on_release 0
 end
 arch dungeon_magic
 x 24
@@ -10395,6 +10363,7 @@ end
 arch button_small
 x 24
 y 11
+invisible 1
 connected 7
 end
 arch dungeon_magic
@@ -10945,7 +10914,6 @@ arch grate_closed_1
 x 25
 y 27
 connected 3335682
-activate_on_release 0
 end
 arch check_inv
 slaying purple_butterfly_guest
@@ -11091,7 +11059,7 @@ y 1
 unique 1
 end
 arch check_inv
-slaying black_shield_locker_11
+slaying purple_butterfly_locker_11
 x 26
 y 1
 connected 44498610
@@ -11108,10 +11076,9 @@ arch ggate_closed
 x 26
 y 2
 connected 44498610
-activate_on_release 0
 end
 arch check_inv
-slaying black_shield_locker_11
+slaying purple_butterfly_locker_11
 x 26
 y 2
 connected 44498610
@@ -11125,7 +11092,7 @@ x 26
 y 3
 end
 arch check_inv
-slaying black_shield_locker_11
+slaying purple_butterfly_locker_11
 x 26
 y 3
 connected 44498610
@@ -11144,15 +11111,15 @@ y 4
 no_pick 1
 end
 arch detector
-slaying Black Shield Locker 11
+slaying Mailed Fist Locker 11
 x 26
 y 4
 invisible 1
 connected 44498610
 end
 arch blue_key
-name Black Shield Locker Key 11
-slaying black_shield_locker_11
+name Purple Butterfly Locker Key 11
+slaying purple_butterfly_locker_11
 x 26
 y 4
 unique 1
@@ -11293,6 +11260,7 @@ end
 arch button_small
 x 26
 y 17
+invisible 1
 connected 5
 end
 arch dungeon_magic
@@ -11308,7 +11276,6 @@ arch grate_closed_1
 x 26
 y 18
 connected 5
-activate_on_release 0
 end
 arch dungeon_magic
 x 26
@@ -11322,6 +11289,7 @@ end
 arch button_small
 x 26
 y 19
+invisible 1
 connected 5
 end
 arch dungeon_magic
@@ -11731,7 +11699,7 @@ y 14
 unique 1
 end
 arch check_inv
-slaying purple_butterfly_master
+slaying laughing_skull_master
 x 27
 y 14
 connected 8
@@ -12031,7 +11999,7 @@ y 1
 unique 1
 end
 arch check_inv
-slaying black_shield_locker_12
+slaying purple_butterfly_locker_12
 x 28
 y 1
 connected 44498611
@@ -12048,10 +12016,9 @@ arch ggate_closed
 x 28
 y 2
 connected 44498611
-activate_on_release 0
 end
 arch check_inv
-slaying black_shield_locker_12
+slaying purple_butterfly_locker_12
 x 28
 y 2
 connected 44498611
@@ -12065,7 +12032,7 @@ x 28
 y 3
 end
 arch check_inv
-slaying black_shield_locker_12
+slaying purple_butterfly_locker_12
 x 28
 y 3
 connected 44498611
@@ -12084,15 +12051,15 @@ y 4
 no_pick 1
 end
 arch detector
-slaying Black Shield Locker 12
+slaying Mailed Fist Locker 12
 x 28
 y 4
 invisible 1
 connected 44498611
 end
 arch blue_key
-name Black Shield Locker Key 12
-slaying black_shield_locker_12
+name Purple Butterfly Locker Key 12
+slaying purple_butterfly_locker_12
 x 28
 y 4
 unique 1
@@ -12219,12 +12186,6 @@ arch igate_closed_2
 x 28
 y 14
 connected 8
-activate_on_release 0
-end
-arch check_inv
-slaying purple_butterfly_master
-x 28
-y 14
 end
 arch dungeon_magic
 x 28
@@ -12644,7 +12605,7 @@ y 14
 unique 1
 end
 arch check_inv
-slaying purple_butterfly_master
+slaying laughing_skull_master
 x 29
 y 14
 connected 8
@@ -12926,7 +12887,7 @@ y 1
 unique 1
 end
 arch check_inv
-slaying black_shield_locker_13
+slaying purple_butterfly_locker_13
 x 30
 y 1
 connected 44498612
@@ -12943,10 +12904,9 @@ arch ggate_closed
 x 30
 y 2
 connected 44498612
-activate_on_release 0
 end
 arch check_inv
-slaying black_shield_locker_13
+slaying purple_butterfly_locker_13
 x 30
 y 2
 connected 44498612
@@ -12960,7 +12920,7 @@ x 30
 y 3
 end
 arch check_inv
-slaying black_shield_locker_13
+slaying purple_butterfly_locker_13
 x 30
 y 3
 connected 44498612
@@ -12979,15 +12939,15 @@ y 4
 no_pick 1
 end
 arch detector
-slaying Black Shield Locker 13
+slaying Mailed Fist Locker 13
 x 30
 y 4
 invisible 1
 connected 44498612
 end
 arch blue_key
-name Black Shield Locker Key 13
-slaying black_shield_locker_13
+name Purple Butterfly Locker Key 13
+slaying purple_butterfly_locker_13
 x 30
 y 4
 unique 1
@@ -13643,6 +13603,7 @@ end
 arch button_small
 x 31
 y 26
+invisible 1
 connected 2
 end
 arch dungeon_magic
@@ -13658,7 +13619,6 @@ arch grate_closed_1
 x 31
 y 27
 connected 2
-activate_on_release 0
 end
 arch dungeon_magic
 x 31
@@ -13672,6 +13632,7 @@ end
 arch button_small
 x 31
 y 28
+invisible 1
 connected 2
 end
 arch dungeon_magic
@@ -13811,7 +13772,7 @@ y 1
 unique 1
 end
 arch check_inv
-slaying black_shield_locker_14
+slaying purple_butterfly_locker_14
 x 32
 y 1
 connected 44498613
@@ -13828,10 +13789,9 @@ arch ggate_closed
 x 32
 y 2
 connected 44498613
-activate_on_release 0
 end
 arch check_inv
-slaying black_shield_locker_14
+slaying purple_butterfly_locker_14
 x 32
 y 2
 connected 44498613
@@ -13845,7 +13805,7 @@ x 32
 y 3
 end
 arch check_inv
-slaying black_shield_locker_14
+slaying purple_butterfly_locker_14
 x 32
 y 3
 connected 44498613
@@ -13864,15 +13824,15 @@ y 4
 no_pick 1
 end
 arch detector
-slaying Black Shield Locker 14
+slaying Mailed Fist Locker 14
 x 32
 y 4
 invisible 1
 connected 44498613
 end
 arch blue_key
-name Black Shield Locker Key 14
-slaying black_shield_locker_14
+name Purple Butterfly Locker Key 14
+slaying purple_butterfly_locker_14
 x 32
 y 4
 unique 1
@@ -14017,13 +13977,6 @@ arch flagstone
 x 32
 y 17
 unique 1
-end
-arch sign
-msg
-Service keys are needed to use the crafting rooms upstairs and storage room.
-endmsg
-x 32
-y 17
 end
 arch dungeon_magic
 x 32
@@ -14803,7 +14756,7 @@ connected 101
 lifesave 1
 activate_on_release 0
 arch blue_key
-name Purple Butterfly Key
+name Purple Butterly Key
 name_pl Purple Butterfly Keys
 slaying purple_butterfly
 face key2.111
@@ -14861,26 +14814,6 @@ end
 arch flagstone
 x 34
 y 17
-end
-arch altar
-name Purchase Services Key - 10 Platinum
-slaying platinum
-food 1250
-x 34
-y 17
-connected 102
-end
-arch creator
-x 34
-y 17
-connected 102
-lifesave 1
-activate_on_release 0
-arch blue_key
-name Guild Services Key
-name_pl Guild Services Keys
-slaying purple_butterfly_extra
-end
 end
 arch dungeon_magic
 x 34

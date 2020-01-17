@@ -4,7 +4,7 @@ region wassar
 width 32
 height 32
 msg
-Modified: 2019-12-26 Acer
+Modified: 2020-01-17 Acer
 endmsg
 outdoor 1
 end
@@ -682,12 +682,6 @@ x 2
 y 8
 unique 1
 end
-arch check_inv
-slaying mailed_fist_extra
-x 2
-y 8
-connected 5
-end
 arch dungeon_magic
 x 2
 y 9
@@ -741,12 +735,6 @@ arch flagstone
 x 2
 y 14
 unique 1
-end
-arch check_inv
-slaying mailed_fist_extra
-x 2
-y 14
-connected 4
 end
 arch dungeon_magic
 x 2
@@ -977,11 +965,6 @@ x 3
 y 8
 unique 1
 end
-arch grate_closed_2
-x 3
-y 8
-connected 5
-end
 arch flagstone
 x 3
 y 9
@@ -1027,11 +1010,6 @@ arch flagstone
 x 3
 y 14
 unique 1
-end
-arch grate_closed_2
-x 3
-y 14
-connected 4
 end
 arch flagstone
 x 3
@@ -1237,12 +1215,6 @@ arch lostlabfloor2
 x 4
 y 8
 end
-arch check_inv
-slaying mailed_fist_extra
-x 4
-y 8
-connected 5
-end
 arch lostlabfloor2
 x 4
 y 9
@@ -1277,12 +1249,6 @@ end
 arch lostlabfloor2
 x 4
 y 14
-end
-arch check_inv
-slaying mailed_fist_extra
-x 4
-y 14
-connected 4
 end
 arch lostlabfloor2
 x 4
@@ -2129,21 +2095,10 @@ arch lostlabfloor2
 x 8
 y 27
 end
-arch check_inv
-slaying mailed_fist_extra
-x 8
-y 27
-connected 1
-end
 arch flagstone
 x 8
 y 28
 unique 1
-end
-arch grate_closed_1
-x 8
-y 28
-connected 1
 end
 arch dungeon_magic
 x 8
@@ -2153,12 +2108,6 @@ arch flagstone
 x 8
 y 29
 unique 1
-end
-arch check_inv
-slaying mailed_fist_extra
-x 8
-y 29
-connected 1
 end
 arch dungeon_magic
 x 8
@@ -3608,21 +3557,10 @@ arch lostlabfloor2
 x 14
 y 27
 end
-arch check_inv
-slaying mailed_fist_extra
-x 14
-y 27
-connected 2
-end
 arch flagstone
 x 14
 y 28
 unique 1
-end
-arch grate_closed_1
-x 14
-y 28
-connected 2
 end
 arch dungeon_magic
 x 14
@@ -3632,12 +3570,6 @@ arch flagstone
 x 14
 y 29
 unique 1
-end
-arch check_inv
-slaying mailed_fist_extra
-x 14
-y 29
-connected 2
 end
 arch dungeon_magic
 x 14
@@ -4080,31 +4012,14 @@ x 17
 y 2
 unique 1
 end
-arch check_inv
-slaying mailed_fist_extra
-x 17
-y 2
-connected 6
-end
 arch flagstone
 x 17
 y 3
 unique 1
 end
-arch grate_closed_1
-x 17
-y 3
-connected 6
-end
 arch lostlabfloor2
 x 17
 y 4
-end
-arch check_inv
-slaying mailed_fist_extra
-x 17
-y 4
-connected 6
 end
 arch flagstone
 x 17
@@ -4144,31 +4059,14 @@ x 17
 y 11
 unique 1
 end
-arch check_inv
-slaying mailed_fist_extra
-x 17
-y 11
-connected 3
-end
 arch flagstone
 x 17
 y 12
 unique 1
 end
-arch grate_closed_1
-x 17
-y 12
-connected 3
-end
 arch lostlabfloor2
 x 17
 y 13
-end
-arch check_inv
-slaying mailed_fist_extra
-x 17
-y 13
-connected 3
 end
 arch flagstone
 x 17
@@ -5611,31 +5509,14 @@ x 23
 y 2
 unique 1
 end
-arch check_inv
-slaying mailed_fist_extra
-x 23
-y 2
-connected 7
-end
 arch flagstone
 x 23
 y 3
 unique 1
 end
-arch grate_closed_1
-x 23
-y 3
-connected 7
-end
 arch lostlabfloor2
 x 23
 y 4
-end
-arch check_inv
-slaying mailed_fist_extra
-x 23
-y 4
-connected 7
 end
 arch flagstone
 x 23
@@ -6015,9 +5896,7 @@ end
 arch sign
 name Warnings for Crafting Rooms
 msg
-There are 2 things you must remember while using a crafting room:
-1. You require a Black Shield Service Key to enter the rooms. (Ask your GM)
-2. You must NOT leave any items inside the crafting rooms. (Items left in lockers will persist, all else will reset with map)
+You must NOT leave any items inside the crafting rooms. (Items left in lockers will persist, all else will reset with map)
 
 endmsg
 x 24
@@ -6241,7 +6120,7 @@ y 20
 unique 1
 end
 arch sign
-name Black Shield Pawn Shop
+name Guild Pawn Shop
 msg
 Items sold here will remain for
 future members.

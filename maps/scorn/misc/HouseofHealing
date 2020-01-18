@@ -9,7 +9,7 @@ msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Fri Apr  2 11:36:53 1999
-Modified: 2018-12-27 Acer
+Modified: 2020-01-17 Acer
 endmsg
 end
 arch woodfloor
@@ -2491,12 +2491,14 @@ x 9
 y 30
 end
 arch altar
-name Cure Poison
+name Cure Poison (10 gp)
 slaying money
 sp 68
-food 500
+food 50
 x 9
 y 30
+arch spell_cure_poison
+end
 end
 arch woodfloor
 x 9
@@ -2752,12 +2754,14 @@ x 10
 y 30
 end
 arch altar
-name Cure Disease
+name Cure Disease (10 gp)
 slaying money
 sp 171
-food 1500
+food 50
 x 10
 y 30
+arch spell_cure_disease
+end
 end
 arch woodfloor
 x 10
@@ -3079,12 +3083,14 @@ x 11
 y 30
 end
 arch altar
-name Restore
+name Restoration (40 gp)
 slaying money
 sp 126
-food 2000
+food 200
 x 11
 y 30
+arch spell_restoration
+end
 end
 arch woodfloor
 x 11

@@ -1232,30 +1232,14 @@ end
 arch sign
 name Press A to read me
 msg
-Basic Commands
-There are many commands you can use to
-do everything from movement to attacking
-to casting spells to identifying treasure.  Any
-command in Crossfire can be executed by
-simply typing it in and pressing Return.
-So to move southeast, for example, you could type
-'southeast' + return. To read this sign, you could type
-'apply sign' + return. These long-form commands are
-always available for everything you can do in
-the game.
-However, it would be cumbersome to type
-commands like that for common actions, so
-many commands are bound to keys by default.
-You can also enter commands by typing their initials. For example,
-instead of typing 'southeast' + Return, you can type  'se'.
+Movement:
+If you're using the Jxclient you should already have your NUMPAD (with caps lock on) as your
+directionals. Otherwise you have your arrow keys. You can custom bind directionals by using the following
+command in text box:
 
-NOTE: You should take the time to keybind your diagonal directions to your keypad
-if you have one.
-example: use command 'bind se' then press 3 on your directional.
-
-Instead of typing 'cast summon pet monster' you can usually type 'cspm' and so on.
-You can also create your own keybindings, for example to use spells, items or skills
-by typing 'bind + <command>', you will then be prompted to press the key you want bound.
+bind  <command you'd like to bind, for example se for Southeast, don't include these >< markers >, Press
+Enter and you will be prompted to then enter the key you'd like to have bound.
+Example: Binding a move to the southeast to the number 7 would be [bind se, enter, 7, enter]
 endmsg
 x 8
 y 3
@@ -1291,23 +1275,9 @@ end
 arch sign
 name Press A to read me
 msg
-You can move in any of eight directions: north,
-south, east, west, and the four in between.
-Pressing a movement key once (or executing a
-movement command) will move you one tile
-in that direction. If something is in the way, your
-character might attack it.
-To run in a direction, which is very useful when
-fighting, battering down doors, or traveling long
-distances, hold down the Ctrl key and press
-and hold the key for direction you wish to run.
-The four primary directions are bound to the arrow/cursor keys,
-You will need to manually bind your diagonal, direction command:
-(use command bind se/ne/sw/nw, you will then be prompted
-to press the key you wish to bind this command to,
-EXAMPLE: to bind the south-east command to your NUMPAD you would
-use the command 'bind se' followed by the '3' key on your NUMPAD.
-You will need to apply NumLock.
+To trigger the chat box without needing to click on it, use the ' (apostrophe) key.
+
+Use the , (comma) key to pick things up.
 endmsg
 x 8
 y 10
@@ -3415,6 +3385,7 @@ msg
 Use the 'Say' command to speak directly to a NPC.
 Use the 'Tell <target player name>' command to speak directly to another.
 Use "Chat" to speak in global.
+Pressing the Enter key will enter the chat command automatically, do so now and introduce yourself.
 
 Any questions?
 

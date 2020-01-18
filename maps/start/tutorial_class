@@ -9,7 +9,7 @@ msg
 Creator: Marc Lehmann
 Email: schmorp@schmorp.de
 Date: Mon Dec  8 22:11:34 CET 2008
-Modified: 2020-01-16 Acer
+Modified: 2020-01-18 Acer
 endmsg
 end
 arch grass
@@ -415,7 +415,11 @@ end
 arch sign
 name Custom Face Selection
 msg
-Here you can select a different face for your character
+Here you can select a class by picking one of the bottom 11 classes shown by the extended paths.
+Monks and dragons have been modified to allow the weilding of weapons.
+(You can also choose to play without picking a class to start with)
+
+You may also choose a custom face after selecting your class if you choose.
 
 FOR DRAGONS WHO CHOOSE TO CHANGE THEIR APPEARANCE:
 IT IS UNKNOWN WHAT WILL HAPPEN TO YOU WHEN IT BECOMES TIME TO EVOLVE...
@@ -501,7 +505,12 @@ end
 arch sign
 msg
 IF YOU'RE NOT USING THE JAVA CLIENT FOR CROSSFIRE, PLEASE CONSIDER TAKING A SECOND TO DOWNLOADING IT.
-HEROWORLD IS MOST ENJOYABLE WHEN PLAYED ON THAT CLIENT.
+HEROWORLD WORKS BEST WHEN PLAYED ON THAT CLIENT.
+
+NOTE: GTK2 CLIENT IS DEFAULT FRENCH, USE COMMAND 'LANGUAGE EN' TO SET TO ENGLISH.
+
+
+
 
 -TITUS
 endmsg
@@ -622,6 +631,10 @@ msg
 IF YOU'RE NOT USING THE JAVA CLIENT FOR CROSSFIRE, PLEASE CONSIDER TAKING A SECOND TO DOWNLOADING IT.
 HEROWORLD WORKS BEST WHEN PLAYED ON THAT CLIENT.
 
+NOTE: GTK2 CLIENT IS DEFAULT FRENCH, USE COMMAND 'LANGUAGE EN' TO SET TO ENGLISH.
+
+SOME
+
 -TITUS
 endmsg
 x 5
@@ -635,6 +648,10 @@ arch sign
 msg
 IF YOU'RE NOT USING THE JAVA CLIENT FOR CROSSFIRE, PLEASE CONSIDER TAKING A SECOND TO DOWNLOADING IT.
 HEROWORLD WORKS BEST WHEN PLAYED ON THAT CLIENT.
+
+NOTE: GTK2 CLIENT IS DEFAULT FRENCH, USE COMMAND 'LANGUAGE EN' TO SET TO ENGLISH.
+
+SOME
 
 -TITUS
 endmsg
@@ -950,11 +967,11 @@ arch dungeon_floor
 x 8
 y 7
 end
-arch grass
+arch dungeon_floor
 x 8
 y 8
 end
-arch grass
+arch dungeon_floor
 x 8
 y 9
 end
@@ -976,10 +993,9 @@ Int 0
 randomitems none
 end
 end
-arch grass
+arch dungeon_floor
 x 8
 y 10
-move_block all
 end
 arch warrior_class
 msg
@@ -1178,11 +1194,11 @@ arch dungeon_floor
 x 10
 y 7
 end
-arch grass
+arch dungeon_floor
 x 10
 y 8
 end
-arch grass
+arch dungeon_floor
 x 10
 y 9
 end
@@ -1205,10 +1221,9 @@ Int 0
 randomitems none
 end
 end
-arch grass
+arch dungeon_floor
 x 10
 y 10
-move_block all
 end
 arch barbarian_class
 x 10
@@ -1414,11 +1429,11 @@ arch dungeon_floor
 x 12
 y 7
 end
-arch grass
+arch dungeon_floor
 x 12
 y 8
 end
-arch grass
+arch dungeon_floor
 x 12
 y 9
 end
@@ -1441,10 +1456,9 @@ Int 0
 randomitems none
 end
 end
-arch grass
+arch dungeon_floor
 x 12
 y 10
-move_block all
 end
 arch swashbuckler_class
 x 12
@@ -1641,11 +1655,11 @@ arch dungeon_floor
 x 14
 y 7
 end
-arch grass
+arch dungeon_floor
 x 14
 y 8
 end
-arch grass
+arch dungeon_floor
 x 14
 y 9
 end
@@ -1667,10 +1681,9 @@ Cha 0
 randomitems none
 end
 end
-arch grass
+arch dungeon_floor
 x 14
 y 10
-move_block all
 end
 arch ninja_class
 x 14
@@ -1872,11 +1885,11 @@ arch dungeon_floor
 x 16
 y 7
 end
-arch grass
+arch dungeon_floor
 x 16
 y 8
 end
-arch grass
+arch dungeon_floor
 x 16
 y 9
 end
@@ -1898,10 +1911,9 @@ Int 0
 randomitems none
 end
 end
-arch grass
+arch dungeon_floor
 x 16
 y 10
-move_block all
 end
 arch thief_class
 msg
@@ -2101,11 +2113,11 @@ arch dungeon_floor
 x 18
 y 7
 end
-arch grass
+arch dungeon_floor
 x 18
 y 8
 end
-arch grass
+arch dungeon_floor
 x 18
 y 9
 end
@@ -2127,10 +2139,9 @@ Cha 0
 randomitems none
 end
 end
-arch grass
+arch dungeon_floor
 x 18
 y 10
-move_block all
 end
 arch priest_class
 msg
@@ -2339,11 +2350,11 @@ arch dungeon_floor
 x 20
 y 7
 end
-arch grass
+arch dungeon_floor
 x 20
 y 8
 end
-arch grass
+arch dungeon_floor
 x 20
 y 9
 end
@@ -2362,10 +2373,9 @@ Int 0
 randomitems none
 end
 end
-arch grass
+arch dungeon_floor
 x 20
 y 10
-move_block all
 end
 arch paladin_class
 msg
@@ -2565,11 +2575,11 @@ arch dungeon_floor
 x 22
 y 7
 end
-arch grass
+arch dungeon_floor
 x 22
 y 8
 end
-arch grass
+arch dungeon_floor
 x 22
 y 9
 end
@@ -2590,10 +2600,9 @@ Int 0
 randomitems none
 end
 end
-arch grass
+arch dungeon_floor
 x 22
 y 10
-move_block all
 end
 arch monk_class
 msg
@@ -2601,11 +2610,7 @@ In the Monastery, they believed in
 mental discipline and peace through
 physical training, meditation, and to
 a lesser extent, religious devotion.
-Your mental equilibrium requires you
-to forego the use of weapons, but
-your physical training in karate
-means you're not helpless.  Your
-inner peacefulness grants you the
+Your inner peacefulness grants you the
 ability to regenerate faster and to
 sense auras.
 endmsg
@@ -2808,11 +2813,11 @@ arch dungeon_floor
 x 24
 y 7
 end
-arch grass
+arch dungeon_floor
 x 24
 y 8
 end
-arch grass
+arch dungeon_floor
 x 24
 y 9
 end
@@ -2831,10 +2836,9 @@ Cha 0
 randomitems none
 end
 end
-arch grass
+arch dungeon_floor
 x 24
 y 10
-move_block all
 end
 arch devotee_class
 x 24
@@ -3031,11 +3035,11 @@ arch dungeon_floor
 x 26
 y 7
 end
-arch grass
+arch dungeon_floor
 x 26
 y 8
 end
-arch grass
+arch dungeon_floor
 x 26
 y 9
 end
@@ -3055,10 +3059,9 @@ Cha 0
 randomitems none
 end
 end
-arch grass
+arch dungeon_floor
 x 26
 y 10
-move_block all
 end
 arch warlock_class
 msg
@@ -3274,11 +3277,11 @@ arch dungeon_floor
 x 28
 y 7
 end
-arch grass
+arch dungeon_floor
 x 28
 y 8
 end
-arch grass
+arch dungeon_floor
 x 28
 y 9
 end
@@ -3296,10 +3299,9 @@ Cha 0
 randomitems none
 end
 end
-arch grass
+arch dungeon_floor
 x 28
 y 10
-move_block all
 end
 arch evoker_class
 x 28

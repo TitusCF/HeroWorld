@@ -10,7 +10,7 @@ msg
 Creator: Mikeeusa
 Email: gnu@foo.bar
 Date: Tue Aug  3 23:32:57 2004
-Modified: 2018-11-03 Acer
+Modified: 2020-01-18 Acer
 endmsg
 outdoor 1
 end
@@ -20002,10 +20002,9 @@ is that the city is threatened from
 the east. The elf castle has grown
 great in power, the lord of that
 castle has suddenly turned against
-us... worse... my 14 year old daughter
-has been captured by them just as she
-was about to be married... he who was
-to marry her was murdered by those
+us... worse... my daughter has been captured by
+them just as she was about to be married...
+he who was to marry her was murdered by those
 damned elves with their acursed bows.
 Another occurance that has cropped up
 is the increasing apperances of
@@ -23918,6 +23917,12 @@ arch dungeon_floor
 x 39
 y 74
 end
+arch check_inv
+slaying cdcmilkeepps1
+x 39
+y 74
+connected 495867
+end
 arch dungeon_magic
 x 39
 y 75
@@ -24577,6 +24582,8 @@ arch igate_closed_2
 x 40
 y 74
 speed 0.500000
+connected 495867
+activate_on_release 0
 end
 arch dungeon_magic
 x 40
@@ -25275,6 +25282,8 @@ arch igate_closed_2
 x 41
 y 74
 speed 0.500000
+connected 495867
+activate_on_release 0
 end
 arch dungeon_magic
 x 41
@@ -52203,6 +52212,14 @@ arch woodfloor
 x 108
 y 45
 unique 1
+end
+arch scroll_sorcery
+skill levitation
+x 108
+y 45
+identified 1
+identified_name scroll of levitation
+identified_name_pl scrolls of levitation
 end
 arch woodfloor2
 name woodfloor

@@ -7,7 +7,7 @@ enter_x 20
 enter_y 38
 msg
 - 2010-03-30 21:05:36 BST by Lemoner: Done key system, beds to reality, gate system.
-Modified: 2020-01-17 Acer
+Modified: 2020-01-20 Acer
 endmsg
 outdoor 1
 end
@@ -2005,7 +2005,7 @@ y 19
 unique 1
 end
 arch detector
-slaying lbullet
+slaying lightning
 x 5
 y 19
 connected 6491352
@@ -2066,7 +2066,7 @@ end
 arch lbulletwall_1
 x 5
 y 26
-arch spell_lg_magic_bullet
+arch spell_large_lightning
 end
 end
 arch dungeon_magic
@@ -7588,6 +7588,7 @@ arch ggate_closed
 x 18
 y 26
 connected 6491352
+activate_on_release 0
 end
 arch dungeon_magic
 x 18
@@ -8541,6 +8542,7 @@ arch ggate_closed
 x 20
 y 26
 connected 6491352
+activate_on_release 0
 end
 arch dungeon_magic
 x 20
@@ -8609,6 +8611,7 @@ YOUR GM KEY AS SOON AS THE GATE OPENS.
 endmsg
 x 20
 y 30
+no_pick 1
 end
 arch dungeon_magic
 x 20
@@ -9554,6 +9557,7 @@ arch ggate_closed
 x 22
 y 26
 connected 6491352
+activate_on_release 0
 end
 arch dungeon_magic
 x 22
@@ -10913,13 +10917,6 @@ x 25
 y 27
 connected 3335682
 end
-arch check_inv
-slaying black_shield_guest
-x 25
-y 27
-last_heal 1
-connected 38765945
-end
 arch dungeon_magic
 x 25
 y 28
@@ -10931,6 +10928,20 @@ unique 1
 end
 arch check_inv
 slaying black_shield_guest
+x 25
+y 28
+connected 3335682
+move_block all
+end
+arch check_inv
+slaying black_shield_master
+x 25
+y 28
+connected 3335682
+move_block all
+end
+arch check_inv
+slaying black_shield
 x 25
 y 28
 connected 3335682
@@ -11392,7 +11403,6 @@ arch grate_closed_2
 x 26
 y 29
 connected 777845
-activate_on_release 0
 end
 arch dungeon_magic
 x 26
@@ -12574,7 +12584,7 @@ end
 arch creator
 x 29
 y 11
-connected 38765945
+connected 3335682
 lifesave 1
 activate_on_release 0
 arch platinacoin

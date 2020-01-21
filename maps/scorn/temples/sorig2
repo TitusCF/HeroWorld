@@ -127,6 +127,7 @@ end
 arch lightningwall_3
 x 1
 y 8
+speed 0.0
 connected 293
 activate_on_release 0
 arch spell_sm_lightning
@@ -259,7 +260,7 @@ end
 arch button_handle
 x 3
 y 6
-connected 92834
+connected 2934
 activate_on_release 0
 end
 arch dungeon_floor
@@ -332,7 +333,7 @@ end
 arch altar_trigger
 name corpse of a monster freshly killed
 slaying corpse
-exp 15
+exp 20
 food 1
 x 4
 y 7
@@ -457,22 +458,13 @@ arch dungeon_floor
 x 6
 y 6
 end
-arch mat
-x 6
-y 6
-no_pick 1
-end
 arch creator
 x 6
 y 6
 connected 1234
-lifesave 1
 activate_on_release 0
 arch scroll_new
-level 4
-identified 1
 arch spell_charging
-level 3
 end
 end
 end
@@ -628,6 +620,7 @@ end
 arch lightningwall_7
 x 8
 y 8
+speed 0.0
 connected 453
 activate_on_release 0
 arch spell_sm_lightning
@@ -756,7 +749,6 @@ arch stwall_closed_1
 x 10
 y 5
 connected 453
-activate_on_release 0
 end
 arch dungeon_floor
 x 10
@@ -770,7 +762,6 @@ arch stwall_closed_1
 x 10
 y 7
 connected 293
-activate_on_release 0
 end
 arch dungeon_floor
 x 10
@@ -783,7 +774,8 @@ end
 arch lightningwall_t
 x 10
 y 9
-connected 92834
+speed 0.0
+connected 2934
 activate_on_release 0
 arch spell_large_lightning
 end

@@ -256,6 +256,11 @@ arch fog
 x 3
 y 6
 end
+arch button_handle
+x 3
+y 6
+connected 92834
+end
 arch dungeon_floor
 x 3
 y 7
@@ -324,13 +329,12 @@ x 4
 y 7
 end
 arch altar_trigger
+name corpse of a monster freshly killed
 slaying fl_corpse
-face altarnone.111
 food 1
 x 4
 y 7
 connected 293
-activate_on_release 1
 end
 arch dungeon_floor
 x 4
@@ -388,13 +392,12 @@ x 5
 y 7
 end
 arch altar_trigger
+name fresh scroll
 slaying scroll_new
-face altarnone.111
 food 1
 x 5
 y 7
 connected 453
-activate_on_release 1
 end
 arch dungeon_floor
 x 5
@@ -723,12 +726,7 @@ end
 arch detector
 slaying lightning
 x 10
-connected 293
-end
-arch detector
-slaying lightning
-x 10
-connected 453
+connected 92834
 end
 arch dungeon_floor
 x 10
@@ -787,6 +785,7 @@ end
 arch lightningwall_t
 x 10
 y 9
+connected 92834
 activate_on_release 0
 arch spell_large_lightning
 end

@@ -4,7 +4,7 @@ width 43
 height 52
 msg
 Created:  2019-12-27 Acer
-Modified: 2020-01-15 Acer
+Modified: 2020-01-21 Acer
 endmsg
 end
 arch battleground
@@ -7449,6 +7449,7 @@ arch detector
 x 16
 y 41
 invisible 1
+connected 5551
 end
 arch battleground
 name a floor
@@ -10961,6 +10962,10 @@ arch stwallred_2_2_4
 x 24
 y 51
 end
+arch stwallred_2_1_2
+x 24
+y 51
+end
 arch battleground
 face bosgrass10.111
 hp 27
@@ -11408,6 +11413,25 @@ end
 arch stwallred_2_1_2
 x 25
 y 49
+end
+arch afloor_left
+x 25
+y 50
+end
+arch mover_3
+x 25
+y 50
+speed 1.0
+level 1
+attacktype 1
+end
+arch afloor_black_left
+x 25
+y 51
+end
+arch stwallred_2_1_2
+x 25
+y 51
 end
 arch battleground
 face bosgrass10.111
@@ -11870,6 +11894,25 @@ arch stwallred_2_1_2
 x 26
 y 49
 end
+arch afloor_left
+x 26
+y 50
+end
+arch mover_3
+x 26
+y 50
+speed 1.0
+level 1
+attacktype 1
+end
+arch afloor_black_left
+x 26
+y 51
+end
+arch stwallred_2_1_2
+x 26
+y 51
+end
 arch battleground
 face bosgrass10.111
 hp 27
@@ -12310,28 +12353,22 @@ arch stwallred_2_1_2
 x 27
 y 49
 end
-arch sign
-msg
-DM NOTES:
-
-Path to the Right counts how many players
-are in the arena and generates a reward
-accordingly.
-Players are then loaded into the shute and
-deposited into holding cells.
-Each player generates an earth wall acting
-as a timer. Earthwall is damaged by lighting
-emitter. When all earthwall is destroyed,
-holding cells are all opened at once and
-battle begins.
-Players may buy their way back into the
-fight for two platinum.
-Wall is textured check_invs which will
-delete the token upon walking through.
-When the last exit gate is triggered, a Victory
-arch is created on the field and final player
-may then gain access to the reward room.
-endmsg
+arch afloor_left
+x 27
+y 50
+end
+arch mover_3
+x 27
+y 50
+speed 1.0
+level 1
+attacktype 1
+end
+arch afloor_black_left
+x 27
+y 51
+end
+arch stwallred_2_1_2
 x 27
 y 51
 end
@@ -12733,6 +12770,25 @@ end
 arch stwallred_2_1_2
 x 28
 y 49
+end
+arch afloor_left
+x 28
+y 50
+end
+arch mover_3
+x 28
+y 50
+speed 1.0
+level 1
+attacktype 1
+end
+arch afloor_black_left
+x 28
+y 51
+end
+arch stwallred_2_1_2
+x 28
+y 51
 end
 arch battleground
 face bosgrass10.111
@@ -13192,15 +13248,18 @@ arch afloor_left
 x 29
 y 50
 end
-arch stwallred_2_1_1
+arch mover_3
 x 29
 y 50
+speed 1.0
+level 1
+attacktype 1
 end
 arch afloor_left
 x 29
 y 51
 end
-arch stwallred_2_2_1
+arch stwallred_2_1_2
 x 29
 y 51
 end
@@ -15668,6 +15727,16 @@ speed 1.0
 level 1
 attacktype 1
 end
+arch creator
+x 34
+y 50
+connected 300
+activate_on_release 0
+arch invis_exit
+hp 37
+sp 48
+end
+end
 arch afloor_left
 x 34
 y 51
@@ -16650,10 +16719,15 @@ speed 1.0
 level 1
 attacktype 1
 end
-arch detector
+arch creator
 x 36
 y 50
-connected 46798351
+connected 200
+activate_on_release 0
+arch invis_exit
+hp 35
+sp 48
+end
 end
 arch afloor_left
 x 36
@@ -17135,12 +17209,6 @@ speed 1.0
 level 1
 attacktype 1
 end
-arch detector
-x 37
-y 48
-invisible 1
-connected 400
-end
 arch stwallred_2_1_2
 x 37
 y 49
@@ -17155,14 +17223,6 @@ y 50
 speed 1.0
 level 1
 attacktype 1
-end
-arch pit_open
-hp 31
-sp 48
-x 37
-y 50
-connected 100
-activate_on_release 0
 end
 arch afloor_left
 x 37
@@ -17605,14 +17665,6 @@ arch afloor_left
 x 38
 y 50
 end
-arch pit_closed
-hp 33
-sp 48
-x 38
-y 50
-connected 100
-activate_on_release 0
-end
 arch mover_3
 x 38
 y 50
@@ -17623,9 +17675,11 @@ end
 arch creator
 x 38
 y 50
-connected 200
+connected 100
 activate_on_release 0
-arch afloor_left
+arch invis_exit
+hp 33
+sp 48
 end
 end
 arch afloor_left
@@ -18186,28 +18240,12 @@ arch afloor_left
 x 39
 y 50
 end
-arch pit_closed
-hp 35
-sp 48
-x 39
-y 50
-connected 200
-activate_on_release 0
-end
 arch mover_3
 x 39
 y 50
 speed 1.0
 level 1
 attacktype 1
-end
-arch creator
-x 39
-y 50
-connected 300
-activate_on_release 0
-arch afloor_left
-end
 end
 arch afloor_left
 x 39
@@ -18392,28 +18430,11 @@ arch afloor_left
 x 40
 y 50
 end
-arch pit_closed
-hp 37
+arch invis_exit
+hp 31
 sp 48
 x 40
 y 50
-connected 300
-activate_on_release 0
-end
-arch mover_3
-x 40
-y 50
-speed 1.0
-level 1
-attacktype 1
-end
-arch creator
-x 40
-y 50
-connected 400
-activate_on_release 0
-arch afloor_left
-end
 end
 arch afloor_left
 x 40

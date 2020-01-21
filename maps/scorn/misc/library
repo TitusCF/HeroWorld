@@ -9,7 +9,7 @@ msg
 Creator: b.t.
 Email: thomas@astro.psu.edu
 Date: Sun Apr 28 04:45:42 1996
-Modified: 2020-01-15 Acer
+Modified: 2020-01-21 Acer
 endmsg
 end
 arch woodfloor
@@ -2953,34 +2953,13 @@ arch woodfloor
 x 21
 y 4
 end
-arch locked_door1
-slaying rare_books
-msg
-See the librarian about getting in.
-endmsg
-x 21
-y 4
-end
 arch dungeon_magic
 x 21
 y 5
 end
-arch magic_mouth
-msg
-Very rare books room. See librarian
-for admitance.
-endmsg
-x 21
-y 5
-end
 arch woodfloor
-slaying l_card
 x 21
 y 5
-type 64
-last_sp 1
-connected 4
-walk_on 1
 end
 arch dungeon_magic
 x 21
@@ -3036,9 +3015,6 @@ msg
 @match Hi|hi|hello
 Err... well welcome (*harumph*). Please
 try to keep quiet in the library.
-@match door|gate|enter|entrance|help
-Oh, you need to buy the key from the
-shop.
 @match *
 I'm too busy with my research to
 answer your queries.
@@ -3630,36 +3606,11 @@ face woodfloor.111
 x 24
 y 15
 end
-arch button_lever
-name Old Key
-face teleporter.111
-animation teleporter
-x 24
-y 15
-connected 48765784
-end
 arch shop_empty
 name woodfloor
 face woodfloor.111
 x 24
 y 16
-end
-arch creator
-name Old Key
-face table_3.111
-x 24
-y 16
-invisible 0
-connected 48765784
-lifesave 1
-arch blue_key
-name an old key
-slaying rare_books
-face key2.111
-value 5000
-unpaid 1
-identified 1
-end
 end
 arch woodfloor
 x 24

@@ -237,10 +237,6 @@ arch dungeon_floor
 x 3
 y 4
 end
-arch table_2
-x 3
-y 4
-end
 arch fog
 x 3
 y 4
@@ -250,10 +246,6 @@ x 3
 y 5
 end
 arch dungeon_floor
-x 3
-y 6
-end
-arch fog
 x 3
 y 6
 end
@@ -298,6 +290,8 @@ name warning sign
 msg
 Be careful when making ritual sacrifices:
 high voltages can be dangerous.
+
+System resets after 80 ticks.
 endmsg
 x 4
 y 1
@@ -333,7 +327,7 @@ end
 arch altar_trigger
 name corpse of a monster freshly killed
 slaying corpse
-exp 60
+exp 80
 food 1
 x 4
 y 7
@@ -397,7 +391,7 @@ end
 arch altar_trigger
 name fresh scroll
 slaying scroll
-exp 60
+exp 80
 food 1
 x 5
 y 7
@@ -442,10 +436,6 @@ arch dungeon_floor
 x 6
 y 4
 end
-arch table_2
-x 6
-y 4
-end
 arch dungeon_floor
 x 6
 y 5
@@ -467,6 +457,10 @@ arch scroll_new
 arch spell_charging
 end
 end
+end
+arch mat
+x 6
+y 6
 end
 arch dungeon_floor
 x 6

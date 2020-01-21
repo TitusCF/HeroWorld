@@ -128,6 +128,7 @@ arch lightningwall_3
 x 1
 y 8
 speed 0.0
+level 100
 connected 293
 activate_on_release 0
 arch spell_sm_lightning
@@ -325,7 +326,7 @@ x 4
 y 7
 end
 arch altar_trigger
-name corpse of a monster freshly killed
+name corpse
 slaying corpse
 exp 80
 food 1
@@ -389,7 +390,7 @@ x 5
 y 7
 end
 arch altar_trigger
-name fresh scroll
+name scroll
 slaying scroll
 exp 80
 food 1
@@ -440,10 +441,6 @@ arch dungeon_floor
 x 6
 y 5
 end
-arch fog
-x 6
-y 5
-end
 arch dungeon_floor
 x 6
 y 6
@@ -454,6 +451,7 @@ y 6
 connected 1234
 activate_on_release 0
 arch scroll_new
+identified 1
 arch spell_charging
 end
 end
@@ -615,6 +613,7 @@ arch lightningwall_7
 x 8
 y 8
 speed 0.0
+level 100
 connected 453
 activate_on_release 0
 arch spell_sm_lightning

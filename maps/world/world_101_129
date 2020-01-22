@@ -178,25 +178,52 @@ arch deep_sea
 y 41
 elevation -19273
 end
-arch deep_sea
+arch grass
+face deep_sea.111
 y 42
-elevation -19544
+move_block 0
+unique 1
 end
-arch deep_sea
+arch lbulletwall_5
+y 42
+speed 0.0
+level 20
+invisible 1
+connected 3346
+move_block all -boat
+arch spell_firebolt
+end
+end
+arch grassdark
+face deep_sea.111
 y 43
-elevation -6764
 end
-arch deep_sea
-y 43
-elevation -5771
-end
-arch deep_sea
+arch creator
 y 44
-elevation -6862
+connected 23465
+lifesave 1
+arch golem
+face deep_sea.111
+animation deep_sea
+hp 2
+maxhp 2
+is_animated 1
+stand_still 1
 end
-arch deep_sea
+end
+arch grass
+name sea
+face deep_sea.111
 y 44
-elevation -5546
+move_block 0
+unique 1
+end
+arch button_plate
+y 44
+weight 200000
+invisible 1
+connected 123577
+activate_on_release 0
 end
 arch sea
 y 45
@@ -482,15 +509,10 @@ x 1
 y 44
 elevation -5935
 end
-arch deep_sea
-x 1
-y 45
-elevation -7267
-end
 arch sea
 x 1
 y 45
-elevation -3359
+elevation -7267
 end
 arch mountains_closed
 x 1
@@ -794,15 +816,10 @@ x 2
 y 44
 elevation -6216
 end
-arch deep_sea
-x 2
-y 45
-elevation -6891
-end
 arch sea
 x 2
 y 45
-elevation -3359
+elevation -6891
 end
 arch mountains_closed
 x 2
@@ -12323,40 +12340,14 @@ face deep_sea.111
 x 41
 y 43
 end
-arch deep_sea
-x 41
-y 44
-elevation -19073
-end
-arch creator
-x 41
-y 44
-connected 23465
-lifesave 1
-arch golem
-face deep_sea.111
-animation deep_sea
-hp 2
-maxhp 2
-is_animated 1
-stand_still 1
-end
-end
 arch grass
 name sea
 face deep_sea.111
 x 41
 y 44
+elevation -19073
 move_block 0
 unique 1
-end
-arch button_plate
-x 41
-y 44
-weight 200000
-invisible 1
-connected 123577
-activate_on_release 0
 end
 arch deep_sea
 x 41
@@ -12936,18 +12927,6 @@ y 44
 elevation -19386
 move_block 0
 unique 1
-end
-arch lbulletwall_5
-x 43
-y 44
-speed 0.0
-level 20
-direction 7
-invisible 1
-connected 3346
-move_block all -boat
-arch spell_firebolt
-end
 end
 arch deep_sea
 x 43

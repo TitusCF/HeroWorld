@@ -445,7 +445,6 @@ x 2
 y 8
 connected 123577
 unique 1
-activate_on_release 0
 end
 arch sea
 x 3
@@ -522,7 +521,6 @@ y 8
 connected 123577
 move_block 0
 unique 1
-activate_on_release 0
 end
 arch mover_5
 x 3
@@ -580,7 +578,6 @@ x 4
 y 8
 connected 123577
 unique 1
-activate_on_release 0
 end
 arch light4
 x 4
@@ -984,24 +981,24 @@ x 7
 y 8
 elevation -3921
 end
-arch sea
+arch grass
 x 7
 y 9
-elevation -4433
+move_block 0
+end
+arch spikes_open
+x 7
+y 9
+connected 56783
+end
+arch boulder
+x 7
+y 9
 end
 arch grass
 x 7
 y 10
 move_block 0
-end
-arch spikes_open
-x 7
-y 10
-connected 56783
-end
-arch boulder
-x 7
-y 10
 end
 arch grass
 x 7

@@ -3078,14 +3078,9 @@ x 7
 y 24
 speed 0.0
 connected 3346
-arch spell_create_bomb
-msg
-endmsg
-dam 99999
-level 100
-attacktype 25165823
-duration 2
-casting_time 2
+arch spell_summon_air_elemental
+arch gnoll
+end
 end
 end
 arch grass
@@ -3093,6 +3088,10 @@ x 7
 y 25
 move_block 0
 unique 1
+end
+arch mover_5
+x 7
+y 25
 end
 arch creator
 x 7
@@ -3126,10 +3125,14 @@ y 26
 connected 123577
 activate_on_release 0
 end
-arch deep_sea
+arch mover_5
+x 7
+y 26
+end
+arch lava
+dam 30
 x 7
 y 27
-elevation -11882
 end
 arch deep_sea
 x 7

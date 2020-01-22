@@ -1018,16 +1018,19 @@ x 3
 y 7
 elevation -3033
 end
-arch director_5
-x 3
-y 7
-end
 arch check_inv
 slaying 7689456
 x 3
 y 7
-last_heal 1
 connected 123577
+move_on fly_low fly_high
+move_off fly_low fly_high
+end
+arch mover_5
+x 3
+y 7
+move_type fly_low fly_high
+move_on fly_low fly_high
 end
 arch sea
 x 3

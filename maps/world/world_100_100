@@ -11,18 +11,18 @@ tile_path_2 world_101_100
 tile_path_3 world_100_101
 tile_path_4 bottomworld_129_100
 end
-arch sea
+arch mountain5
 end
 arch mountain5
 y 1
 end
-arch sea
+arch mountain5
 y 2
 end
-arch sea
+arch mountain5
 y 3
 end
-arch sea
+arch mountain5
 y 4
 end
 arch mountain5
@@ -212,17 +212,18 @@ end
 arch mountain5
 x 1
 end
-arch mountain
+arch lava
 x 1
 y 1
 end
-arch mountain5
+arch lava
 x 1
 y 2
 end
-arch mountain5
+arch lava
 x 1
 y 3
+move_block all
 end
 arch mountain5
 x 1
@@ -524,62 +525,61 @@ end
 arch mountain5
 x 2
 end
-arch mountain
+arch lava
 x 2
 y 1
 end
 arch redslate
 x 2
 y 2
+unique 1
+end
+arch mountains_closed
+x 2
+y 2
+connected 123577
+elevation -3359
+unique 1
+end
+arch lava
+x 2
+y 3
+move_block all
+end
+arch dcross-white
+name trade
+x 2
+y 4
 end
 arch check_inv
 slaying open
 x 2
-y 2
-last_heal 1
-connected 586409
-end
-arch check_inv
-slaying close
-x 2
-y 2
-connected 19285778
+y 4
+connected 11187
 end
 arch creator
 x 2
-y 2
-connected 586409
+y 4
+connected 11187
+lifesave 1
 activate_on_release 0
-arch blue_key
+arch brown_key
 name close
 slaying close
 startequip 1
 end
 end
-arch creator
-x 2
-y 2
-connected 19285778
-activate_on_release 0
-arch blue_key
-name open
-slaying Open
-startequip 1
-end
-end
-arch dungeon_floor
-x 2
-y 3
-end
-arch dungeon_floor
-x 2
-y 4
-end
 arch dungeon_floor
 x 2
 y 5
 end
-arch brazier
+arch sign
+msg
+This key closes the Titus Wall.
+Trade your 'open' key for a close key
+and carry it through the schute.
+
+endmsg
 x 2
 y 5
 end
@@ -1096,20 +1096,23 @@ connected 123577
 elevation -3359
 unique 1
 end
-arch sea
-x 3
-end
 arch mountain5
 x 3
-y 1
 end
-arch dungeon_floor
+arch lava
+x 3
+y 1
+move_block all
+end
+arch lava
 x 3
 y 2
+move_block all
 end
-arch redslate
+arch lava
 x 3
 y 3
+move_block all
 end
 arch dungeon_floor
 x 3
@@ -1139,6 +1142,7 @@ arch mountains_closed
 x 3
 y 6
 connected 29384512
+activate_on_release 0
 end
 arch sea
 x 3
@@ -1816,20 +1820,27 @@ arch mountain
 x 4
 y 1
 end
-arch dungeon_floor
+arch dcross-white
+name trade close for open here
 x 4
 y 2
 end
-arch light4
+arch check_inv
+slaying close
 x 4
 y 2
+connected 2229384
 end
-arch darkgray_key
-name Open
+arch creator
+x 4
+y 2
+connected 2229384
+activate_on_release 0
+arch blue_key
+name open
 slaying open
-x 4
-y 2
 startequip 1
+end
 end
 arch dungeon_floor
 x 4
@@ -1838,6 +1849,13 @@ end
 arch redslate
 x 4
 y 4
+end
+arch blue_key
+name open
+slaying open
+x 4
+y 4
+startequip 1
 end
 arch dungeon_floor
 x 4
@@ -2391,7 +2409,13 @@ arch dungeon_floor
 x 5
 y 2
 end
-arch brazier
+arch sign
+msg
+This key opens the Titus Wall.
+Trade your 'close' key for a open key
+and carry it through the schute.
+
+endmsg
 x 5
 y 2
 end

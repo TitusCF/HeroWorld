@@ -528,15 +528,44 @@ arch mountain
 x 2
 y 1
 end
-arch dungeon_floor
+arch redslate
 x 2
 y 2
 end
-arch blue_key
-name close
+arch check_inv
+slaying open
+x 2
+y 2
+last_heal 1
+connected 586409
+end
+arch check_inv
 slaying close
 x 2
 y 2
+connected 19285778
+end
+arch creator
+x 2
+y 2
+connected 586409
+activate_on_release 0
+arch blue_key
+name close
+slaying close
+startequip 1
+end
+end
+arch creator
+x 2
+y 2
+connected 19285778
+activate_on_release 0
+arch blue_key
+name open
+slaying Open
+startequip 1
+end
 end
 arch dungeon_floor
 x 2
@@ -547,6 +576,10 @@ x 2
 y 4
 end
 arch dungeon_floor
+x 2
+y 5
+end
+arch brazier
 x 2
 y 5
 end
@@ -1074,7 +1107,7 @@ arch dungeon_floor
 x 3
 y 2
 end
-arch dungeon_floor
+arch redslate
 x 3
 y 3
 end
@@ -1086,16 +1119,26 @@ arch dungeon_floor
 x 3
 y 5
 end
+arch check_inv
+slaying open
+x 3
+y 5
+connected 29384512
+end
+arch check_inv
+slaying close
+x 3
+y 5
+connected 29384512
+end
 arch fcross-white
 x 3
 y 6
 end
-arch mover_5
+arch mountains_closed
 x 3
 y 6
-speed 1.0
-move_type fly_low fly_high
-move_on fly_low fly_high
+connected 29384512
 end
 arch sea
 x 3
@@ -1786,16 +1829,21 @@ name Open
 slaying open
 x 4
 y 2
+startequip 1
 end
 arch dungeon_floor
 x 4
 y 3
 end
-arch dungeon_floor
+arch redslate
 x 4
 y 4
 end
 arch dungeon_floor
+x 4
+y 5
+end
+arch brazier
 x 4
 y 5
 end
@@ -2343,6 +2391,10 @@ arch dungeon_floor
 x 5
 y 2
 end
+arch brazier
+x 5
+y 2
+end
 arch dungeon_floor
 x 5
 y 3
@@ -2351,30 +2403,34 @@ arch dungeon_floor
 x 5
 y 4
 end
-arch mountain
+arch brazier
+x 5
+y 4
+end
+arch redslate
 x 5
 y 5
 end
-arch mountain
+arch dungeon_floor
 x 5
 y 6
 end
-arch mountain5
+arch dungeon_floor
 x 5
 y 7
 elevation -3358
 end
-arch sea
+arch dungeon_floor
 x 5
 y 8
 elevation -3537
 end
-arch sea
+arch mountain5
 x 5
 y 9
 elevation -3707
 end
-arch sea
+arch mountain5
 x 5
 y 10
 elevation -3878
@@ -2767,7 +2823,7 @@ arch mountain5
 x 6
 y 2
 end
-arch earth
+arch mountain5
 x 6
 y 3
 end
@@ -2775,30 +2831,30 @@ arch mountain5
 x 6
 y 4
 end
-arch mountain5
+arch dungeon_floor
 x 6
 y 5
 end
-arch mountain5
+arch redslate
 x 6
 y 6
 end
-arch sea
+arch dungeon_floor
 x 6
 y 7
 elevation -3551
 end
-arch sea
+arch dungeon_floor
 x 6
 y 8
 elevation -3726
 end
-arch sea
+arch dungeon_floor
 x 6
 y 9
 elevation -3897
 end
-arch sea
+arch mountain5
 x 6
 y 10
 elevation -4071
@@ -3045,37 +3101,42 @@ x 7
 y 3
 elevation -2942
 end
-arch sea
+arch mountain5
 x 7
 y 4
 elevation -3192
 end
-arch sea
+arch dungeon_floor
 x 7
 y 5
 elevation -3399
 end
-arch sea
+arch dungeon_floor
 x 7
 y 6
 elevation -3583
 end
-arch sea
+arch redslate
 x 7
 y 7
 elevation -3755
 end
-arch sea
+arch button_handle
+x 7
+y 7
+connected 1203946
+end
+arch dungeon_floor
 x 7
 y 8
 elevation -3921
 end
-arch sea
+arch dungeon_floor
 x 7
 y 9
 elevation -4274
 end
-arch sea
+arch mountain5
 x 7
 y 10
 elevation -4433
@@ -3332,37 +3393,47 @@ x 8
 y 3
 elevation -3253
 end
-arch sea
+arch mountain5
 x 8
 y 4
 elevation -3468
 end
-arch sea
+arch dungeon_floor
 x 8
 y 5
 elevation -3648
 end
-arch sea
+arch dungeon_floor
 x 8
 y 6
 elevation -3811
 end
-arch sea
+arch dungeon_floor
 x 8
 y 7
 elevation -3966
 end
-arch sea
+arch dungeon_floor
 x 8
 y 8
 elevation -4119
 end
-arch sea
+arch mountains_closed
+x 8
+y 8
+connected 1203946
+end
+arch dungeon_floor
 x 8
 y 9
 elevation -4274
 end
-arch sea
+arch mountains_closed
+x 8
+y 9
+connected 1203946
+end
+arch mountain5
 x 8
 y 10
 elevation -4433
@@ -3581,37 +3652,47 @@ x 9
 y 3
 elevation -3621
 end
-arch sea
+arch mountain5
 x 9
 y 4
 elevation -3777
 end
-arch sea
+arch mountain5
 x 9
 y 5
 elevation -3913
 end
-arch sea
+arch dungeon_floor
 x 9
 y 6
 elevation -4046
 end
-arch sea
+arch dungeon_floor
 x 9
 y 7
 elevation -4180
 end
-arch sea
+arch dungeon_floor
 x 9
 y 8
 elevation -4317
 end
-arch sea
+arch mountains_closed
+x 9
+y 8
+connected 1203946
+end
+arch dungeon_floor
 x 9
 y 9
 elevation -4458
 end
-arch sea
+arch button_handle
+x 9
+y 9
+connected 1203946
+end
+arch dungeon_floor
 x 9
 y 10
 elevation -4605
@@ -3830,43 +3911,42 @@ x 10
 y 3
 elevation -4044
 end
-arch sea
+arch mountain5
 x 10
 y 4
 elevation -3210
-move_block walk swim
 end
-arch sea
+arch mountain5
 x 10
 y 5
 elevation -4181
 end
-arch sea
+arch mountain5
 x 10
 y 6
 elevation -4283
 end
-arch sea
+arch mountain5
 x 10
 y 7
 elevation -4394
 end
-arch sea
+arch mountain5
 x 10
 y 8
 elevation -4512
 end
-arch sea
+arch dungeon_floor
 x 10
 y 9
 elevation -4637
 end
-arch sea
+arch dungeon_floor
 x 10
 y 10
 elevation -4771
 end
-arch sea
+arch dungeon_floor
 x 10
 y 11
 elevation -4914
@@ -4110,12 +4190,12 @@ x 11
 y 9
 elevation -4811
 end
-arch sea
+arch dungeon_floor
 x 11
 y 10
 elevation -4929
 end
-arch deep_sea
+arch dungeon_floor
 x 11
 y 11
 elevation -5058

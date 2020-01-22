@@ -443,8 +443,9 @@ face mountain5.111
 animation spikes_hidden
 x 2
 y 8
-connected 123577
+connected 1235771
 unique 1
+activate_on_release 0
 end
 arch sea
 x 3
@@ -465,15 +466,15 @@ arch dungeon_floor
 x 3
 y 4
 end
+arch check_inv
+slaying 7689456
+x 3
+y 4
+connected 123577
+end
 arch dungeon_floor
 x 3
 y 5
-end
-arch pedestal
-x 3
-y 5
-connected 123577
-activate_on_release 0
 end
 arch dungeon_floor
 x 3
@@ -512,9 +513,10 @@ animation spikes_hidden
 luck 1
 x 3
 y 8
-connected 123577
+connected 1235771
 move_block 0
 unique 1
+activate_on_release 0
 end
 arch mover_5
 x 3
@@ -547,6 +549,11 @@ arch dungeon_floor
 x 4
 y 4
 end
+arch trigger
+x 4
+y 4
+connected 1235771
+end
 arch dungeon_floor
 x 4
 y 5
@@ -570,8 +577,9 @@ face mountain5.111
 animation spikes_hidden
 x 4
 y 8
-connected 123577
+connected 1235771
 unique 1
+activate_on_release 0
 end
 arch light4
 x 4

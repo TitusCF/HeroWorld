@@ -547,27 +547,15 @@ y 3
 move_block all
 end
 arch dcross-white
-name trade
 x 2
 y 4
 end
-arch check_inv
-slaying open
-x 2
-y 4
-last_heal 1
-connected 11187
-end
-arch creator
-x 2
-y 4
-connected 11187
-lifesave 1
-activate_on_release 0
-arch brown_key
-name close
+arch blue_key
+name stone of close
 slaying close
-end
+face t_rock.111
+x 2
+y 4
 end
 arch dungeon_floor
 x 2
@@ -1821,26 +1809,15 @@ x 4
 y 1
 end
 arch dcross-white
-name trade close for open here
 x 4
 y 2
 end
-arch check_inv
-slaying close
-x 4
-y 2
-last_heal 1
-connected 2229384
-end
-arch creator
-x 4
-y 2
-connected 2229384
-activate_on_release 0
 arch blue_key
-name open
+name stone of open
 slaying open
-end
+face t_rock.111
+x 4
+y 2
 end
 arch dungeon_floor
 x 4
@@ -1849,13 +1826,6 @@ end
 arch redslate
 x 4
 y 4
-end
-arch blue_key
-name open
-slaying open
-x 4
-y 4
-startequip 1
 end
 arch dungeon_floor
 x 4

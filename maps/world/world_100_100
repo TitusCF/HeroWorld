@@ -1211,11 +1211,12 @@ elevation -3359
 move_block 0
 unique 1
 end
-arch invis_exit
-hp 3
-sp 48
+arch mover_5
 x 3
 y 11
+level 1
+attacktype 1
+move_type fly_low fly_high
 move_on fly_low fly_high
 end
 arch sea
@@ -1232,6 +1233,16 @@ connected 123577
 elevation -3359
 move_block 0
 unique 1
+end
+arch invis_exit
+msg
+zap
+endmsg
+hp 3
+sp 48
+x 3
+y 12
+move_on fly_low fly_high
 end
 arch sea
 x 3
@@ -3178,15 +3189,14 @@ y 25
 move_block 0
 unique 1
 end
-arch spikes_open
+arch lightningwall_5
 x 7
 y 25
-connected 23465
+speed 0.0
+connected 3346
+activate_on_release 0
+arch spell_sm_lightning
 end
-arch boulder
-x 7
-y 25
-move_block all -boat
 end
 arch grass
 x 7
@@ -3199,10 +3209,17 @@ x 7
 y 26
 connected 123577
 end
-arch spikes_open
+arch creator
 x 7
 y 26
-connected 3346
+connected 23465
+lifesave 1
+activate_on_release 0
+arch earthwall
+hp 1
+resist_electricity 0
+weight 1000000
+end
 end
 arch deep_sea
 x 7

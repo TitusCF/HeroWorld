@@ -3077,27 +3077,6 @@ arch grassdark
 x 7
 y 25
 end
-arch creator
-x 7
-y 26
-connected 23465
-lifesave 1
-activate_on_release 0
-arch armour_troll2
-name sea
-face deep_sea.111
-animation deep_sea
-hp 1
-maxhp 1
-ac 15
-weight 1000000
-pick_up 0
-will_apply 0
-monster 0
-sleep 0
-stand_still 1
-end
-end
 arch grass
 name sea
 face deep_sea.111
@@ -3112,10 +3091,20 @@ y 26
 connected 123577
 activate_on_release 0
 end
-arch deep_sea
+arch grassdark
 x 7
 y 27
-elevation -10975
+end
+arch lbulletwall_1
+x 7
+y 27
+connected 23465
+activate_on_release 0
+arch spell_summon_golem
+arch orc
+weight 1000000
+end
+end
 end
 arch deep_sea
 x 7

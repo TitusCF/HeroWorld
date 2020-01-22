@@ -3069,13 +3069,22 @@ speed 0.0
 level 20
 connected 3346
 move_block all -boat
-activate_on_release 0
 arch spell_firebolt
 end
 end
 arch grassdark
 x 7
 y 25
+end
+arch creator
+x 7
+y 26
+connected 23465
+lifesave 1
+arch golem
+hp 2
+maxhp 2
+end
 end
 arch grass
 name sea
@@ -3092,18 +3101,10 @@ weight 200000
 connected 123577
 activate_on_release 0
 end
-arch grassdark
+arch deep_sea
 x 7
 y 27
-end
-arch lbulletwall_1
-x 7
-y 27
-speed 0.0
-connected 23465
-activate_on_release 0
-arch spell_summon_golem
-end
+elevation -10975
 end
 arch deep_sea
 x 7

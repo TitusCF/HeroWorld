@@ -466,12 +466,6 @@ arch dungeon_floor
 x 3
 y 4
 end
-arch check_inv
-slaying 7689456
-x 3
-y 4
-connected 123577
-end
 arch dungeon_floor
 x 3
 y 5
@@ -486,13 +480,6 @@ y 7
 elevation -3033
 is_hilly 0
 end
-arch mover_5
-x 3
-y 7
-speed 1
-move_type fly_low fly_high
-move_on fly_low fly_high
-end
 arch check_inv
 slaying 7689456
 x 3
@@ -500,6 +487,14 @@ y 7
 move_block all
 move_on fly_low fly_high
 move_off fly_low fly_high
+end
+arch magic_mouth
+msg
+rumble
+endmsg
+x 3
+y 7
+activate_on_release 0
 end
 arch sea
 x 3
@@ -526,6 +521,15 @@ level 1
 move_type fly_low fly_high
 move_on fly_low fly_high
 end
+arch magic_ear
+msg
+@match rumble
+rumble.
+endmsg
+x 3
+y 8
+connected 1235771
+end
 arch mountain5
 x 4
 end
@@ -549,10 +553,11 @@ arch dungeon_floor
 x 4
 y 4
 end
-arch trigger
+arch button_lever
 x 4
 y 4
 connected 1235771
+auto apply 1
 end
 arch dungeon_floor
 x 4

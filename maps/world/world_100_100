@@ -443,7 +443,7 @@ face mountain5.111
 animation spikes_hidden
 x 2
 y 8
-connected 1235771
+connected 123577
 unique 1
 activate_on_release 0
 end
@@ -455,6 +455,11 @@ x 3
 y 1
 end
 arch dungeon_floor
+x 3
+y 2
+end
+arch darkgray_key
+slaying 19283
 x 3
 y 2
 end
@@ -491,9 +496,16 @@ arch check_inv
 slaying 7689456
 x 3
 y 7
+connected 123577
 move_block all
 move_on fly_low fly_high
 move_off fly_low fly_high
+end
+arch check_inv
+slaying 19283
+x 3
+y 7
+connected 56783
 end
 arch sea
 x 3
@@ -507,7 +519,7 @@ animation spikes_hidden
 luck 1
 x 3
 y 8
-connected 1235771
+connected 123577
 move_block 0
 unique 1
 activate_on_release 0
@@ -566,7 +578,7 @@ face mountain5.111
 animation spikes_hidden
 x 4
 y 8
-connected 1235771
+connected 123577
 unique 1
 activate_on_release 0
 end
@@ -585,12 +597,6 @@ arch dungeon_floor
 x 5
 y 2
 end
-arch button_small
-x 5
-y 2
-connected 1235771
-activate_on_release 0
-end
 arch dungeon_floor
 x 5
 y 3
@@ -598,11 +604,6 @@ end
 arch dungeon_floor
 x 5
 y 4
-end
-arch trigger
-x 5
-y 4
-connected 1235771
 end
 arch mountain
 x 5
@@ -986,17 +987,36 @@ end
 arch sea
 x 7
 y 9
-elevation -4274
+elevation -4433
 end
-arch sea
+arch grass
 x 7
 y 10
-elevation -4255
+move_block 0
 end
-arch sea
+arch spikes_open
+x 7
+y 10
+connected 56783
+end
+arch boulder
+x 7
+y 10
+end
+arch grass
 x 7
 y 11
-elevation -4432
+move_block 0
+end
+arch spikes_open
+x 7
+y 11
+connected 123577
+end
+arch button_plate
+x 7
+y 11
+connected 123577
 end
 arch sea
 x 7

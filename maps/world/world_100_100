@@ -411,12 +411,6 @@ arch dungeon_floor
 x 2
 y 3
 end
-arch blue_key
-name B
-slaying 7689456
-x 2
-y 3
-end
 arch dungeon_floor
 x 2
 y 4
@@ -458,12 +452,6 @@ arch dungeon_floor
 x 3
 y 2
 end
-arch darkgray_key
-name A
-slaying 19283
-x 3
-y 2
-end
 arch dungeon_floor
 x 3
 y 3
@@ -492,14 +480,6 @@ y 7
 speed 1
 move_type fly_low fly_high
 move_on fly_low fly_high
-end
-arch check_inv
-slaying 19283
-x 3
-y 7
-connected 56783
-move_on fly_low fly_high
-move_off fly_low fly_high
 end
 arch sea
 x 3
@@ -551,6 +531,11 @@ end
 arch dungeon_floor
 x 4
 y 5
+end
+arch button_small
+x 4
+y 5
+connected 23465
 end
 arch mountain5
 x 4
@@ -982,10 +967,10 @@ y 9
 move_block 0
 end
 arch spikes_open
-exp 2
 x 7
 y 9
-connected 56783
+connected 23465
+activate_on_release 0
 end
 arch boulder
 x 7
@@ -996,16 +981,16 @@ x 7
 y 10
 move_block 0
 end
-arch spikes_open
-exp 2
-x 7
-y 10
-connected 123577
-end
 arch button_plate
 x 7
 y 10
 connected 123577
+end
+arch spikes_closed
+x 7
+y 10
+connected 23465
+activate_on_release 0
 end
 arch sea
 x 7

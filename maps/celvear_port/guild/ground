@@ -9,7 +9,7 @@ enter_y 23
 msg
 Creator: CF Java Map Editor
 Date:    1/10/2002
-Modified: 2020-01-20 Acer
+Modified: 2020-01-21 Acer
 endmsg
 end
 arch dungeon_magic
@@ -4956,15 +4956,25 @@ arch dungeon_magic
 x 12
 y 17
 end
+arch dungeon_magic
+x 12
+y 17
+end
 arch flagstone
 x 12
 y 17
 unique 1
 end
-arch button_small
+arch check_inv
+slaying sleeping_mage
 x 12
 y 17
-invisible 1
+connected 4
+end
+arch check_inv
+slaying sleeping_mage_master
+x 12
+y 17
 connected 4
 end
 arch dungeon_magic
@@ -4993,15 +5003,25 @@ endmsg
 x 12
 y 19
 end
+arch dungeon_magic
+x 12
+y 19
+end
 arch flagstone
 x 12
 y 19
 unique 1
 end
-arch button_small
+arch check_inv
+slaying sleeping_mage
 x 12
 y 19
-invisible 1
+connected 4
+end
+arch check_inv
+slaying sleeping_mage_master
+x 12
+y 19
 connected 4
 end
 arch flagstone
@@ -6568,15 +6588,25 @@ arch dungeon_magic
 x 16
 y 9
 end
+arch dungeon_magic
+x 16
+y 9
+end
 arch flagstone
 x 16
 y 9
 unique 1
 end
-arch button_small
+arch check_inv
+slaying sleeping_mage
 x 16
 y 9
-invisible 1
+connected 6
+end
+arch check_inv
+slaying sleeping_mage_master
+x 16
+y 9
 connected 6
 end
 arch dungeon_magic
@@ -6597,15 +6627,25 @@ arch dungeon_magic
 x 16
 y 11
 end
+arch dungeon_magic
+x 16
+y 11
+end
 arch flagstone
 x 16
 y 11
 unique 1
 end
-arch button_small
+arch check_inv
+slaying sleeping_mage
 x 16
 y 11
-invisible 1
+connected 6
+end
+arch check_inv
+slaying sleeping_mage_master
+x 16
+y 11
 connected 6
 end
 arch dungeon_magic
@@ -7537,7 +7577,7 @@ y 24
 connected 103
 end
 arch check_inv
-slaying mailed_fist_master
+slaying sleeping_mage_master
 x 18
 y 24
 connected 335978777
@@ -8484,7 +8524,7 @@ y 24
 connected 1033
 end
 arch check_inv
-slaying mailed_fist_master
+slaying sleeping_mage_master
 x 20
 y 24
 connected 333597877
@@ -9499,7 +9539,7 @@ y 24
 connected 10333
 end
 arch check_inv
-slaying mailed_fist_master
+slaying sleeping_mage_master
 x 22
 y 24
 connected 33359787

@@ -1237,20 +1237,27 @@ y 7
 elevation -3033
 is_hilly 0
 end
-arch check_inv
-slaying 7689456
-x 3
-y 7
-connected 123577
-move_on fly_low fly_high
-move_off fly_low fly_high
-end
 arch mover_5
 x 3
 y 7
 speed 1
 move_type fly_low fly_high
 move_on fly_low fly_high
+end
+arch button_small
+x 3
+y 7
+connected 123577
+move_on fly_low fly_high
+move_off fly_low fly_high
+end
+arch check_inv
+slaying 7689456
+x 3
+y 7
+move_block all
+move_on fly_low fly_high
+move_off fly_low fly_high
 end
 arch sea
 x 3

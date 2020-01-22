@@ -3059,25 +3059,27 @@ x 7
 y 23
 elevation -8255
 end
-arch sea
+arch grass
 x 7
 y 24
-elevation -3921
+move_block 0
+unique 1
+end
+arch lightningwall_1
+x 7
+y 24
+speed 0.0
+direction 5
+connected 3346
+activate_on_release 0
+arch spell_large_lightning
+end
 end
 arch grass
 x 7
 y 25
 move_block 0
 unique 1
-end
-arch lightningwall_t
-x 7
-y 25
-speed 0.0
-connected 3346
-activate_on_release 0
-arch spell_sm_lightning
-end
 end
 arch creator
 x 7

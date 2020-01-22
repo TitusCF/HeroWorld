@@ -1197,14 +1197,15 @@ y 12
 elevation -3359
 move_block walk swim
 end
-arch invis_exit
+arch pit_open
 msg
-zap
+
 endmsg
 hp 3
 sp 48
 x 3
 y 12
+invisible 1
 move_on fly_low fly_high
 end
 arch sea
@@ -3068,6 +3069,7 @@ y 23
 elevation -8255
 end
 arch grass
+face deep_sea.111
 x 7
 y 24
 move_block 0
@@ -3078,7 +3080,9 @@ x 7
 y 24
 speed 0.0
 level 20
+invisible 1
 connected 3346
+move_block all -boat
 arch spell_firebolt
 end
 end
@@ -3089,6 +3093,9 @@ connected 23465
 lifesave 1
 activate_on_release 0
 arch armour_troll2
+name sea
+face deep_sea.111
+animation deep_sea
 hp 1
 maxhp 1
 ac 15
@@ -3101,6 +3108,8 @@ stand_still 1
 end
 end
 arch grass
+name sea
+face deep_sea.111
 x 7
 y 25
 move_block 0
@@ -3109,6 +3118,7 @@ end
 arch button_plate
 x 7
 y 25
+invisible 1
 connected 123577
 activate_on_release 0
 end

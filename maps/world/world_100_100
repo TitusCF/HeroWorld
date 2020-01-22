@@ -460,12 +460,19 @@ arch dungeon_floor
 x 3
 y 4
 end
-arch button_trigger
+arch check_inv
+slaying test
 x 3
 y 4
+invisible 0
 connected 3346
 end
 arch dungeon_floor
+x 3
+y 5
+end
+arch blue_key
+slaying test
 x 3
 y 5
 end
@@ -533,9 +540,11 @@ arch dungeon_floor
 x 4
 y 4
 end
-arch button_trigger
+arch check_inv
+slaying test
 x 4
 y 4
+invisible 0
 connected 23465
 end
 arch dungeon_floor

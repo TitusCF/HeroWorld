@@ -470,11 +470,12 @@ arch dungeon_floor
 x 3
 y 5
 end
-arch check_inv
-slaying 7689456
+arch button_handle
+slaying player
 x 3
 y 5
-connected 3948
+connected 1235771
+activate_on_release 0
 end
 arch dungeon_floor
 x 3
@@ -595,12 +596,6 @@ arch dungeon_floor
 x 5
 y 3
 end
-arch check_inv
-slaying 7689456
-x 5
-y 3
-connected 3948
-end
 arch dungeon_floor
 x 5
 y 4
@@ -608,12 +603,6 @@ end
 arch mountain
 x 5
 y 5
-end
-arch gate_closed_1
-x 5
-y 5
-connected 3948
-activate_on_release 0
 end
 arch mountain
 x 5

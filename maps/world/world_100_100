@@ -1061,11 +1061,6 @@ arch dungeon_floor
 x 3
 y 2
 end
-arch darkgreen_key
-slaying test1
-x 3
-y 2
-end
 arch dungeon_floor
 x 3
 y 3
@@ -1078,11 +1073,6 @@ arch dungeon_floor
 x 3
 y 5
 end
-arch blue_key
-slaying test
-x 3
-y 5
-end
 arch dungeon_floor
 x 3
 y 6
@@ -1132,13 +1122,12 @@ attacktype 1
 move_type fly_low fly_high
 move_on fly_low fly_high
 end
-arch check_inv
-slaying test
+arch detector
+slaying 4059
 x 3
 y 8
-connected 23465
+move_type fly_low fly_high
 move_on fly_low fly_high
-move_off fly_low fly_high
 end
 arch sea
 x 3
@@ -1235,14 +1224,6 @@ level 1
 attacktype 1
 move_type fly_low fly_high
 move_on fly_low fly_high
-end
-arch check_inv
-slaying test1
-x 3
-y 12
-connected 3346
-move_on fly_low fly_high
-move_off fly_low fly_high
 end
 arch sea
 x 3
@@ -3408,11 +3389,10 @@ y 9
 move_block 0
 unique 1
 end
-arch director_5
-slaying boulder
+arch spikes_open
+slaying 4059
 x 7
 y 9
-connected 23465
 end
 arch boulder
 x 7
@@ -3429,11 +3409,9 @@ x 7
 y 10
 connected 123577
 end
-arch director_1
-slaying boulder
+arch spikes_open
 x 7
 y 10
-connected 3346
 end
 arch sea
 x 7

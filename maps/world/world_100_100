@@ -3078,9 +3078,7 @@ x 7
 y 24
 speed 0.0
 connected 3346
-arch spell_summon_air_elemental
-arch gnoll
-end
+arch spell_summon_fire_elemental
 end
 end
 arch grass
@@ -3113,11 +3111,11 @@ resist_drain 0
 weight 1000000
 end
 end
-arch grass
+arch lava
+dam 30
 x 7
 y 26
-move_block 0
-unique 1
+move_block swim boat
 end
 arch button_plate
 x 7
@@ -3125,14 +3123,10 @@ y 26
 connected 123577
 activate_on_release 0
 end
-arch mover_5
-x 7
-y 26
-end
-arch lava
-dam 30
+arch deep_sea
 x 7
 y 27
+elevation -10975
 end
 arch deep_sea
 x 7
@@ -3376,7 +3370,7 @@ end
 arch deep_sea
 x 8
 y 26
-elevation -8578
+elevation -9624
 end
 arch deep_sea
 x 8

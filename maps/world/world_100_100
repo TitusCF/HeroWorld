@@ -1197,16 +1197,11 @@ y 12
 elevation -3359
 move_block walk swim
 end
-arch pit_open
-msg
-
-endmsg
+arch invis_exit
 hp 3
 sp 48
 x 3
 y 12
-invisible 1
-move_on fly_low fly_high
 end
 arch sea
 x 3
@@ -1663,18 +1658,10 @@ connected 123577
 elevation -3359
 unique 1
 end
-arch sea
+arch grass_only
 x 3
 y 48
 elevation -3359
-move_block walk swim
-end
-arch mountains_closed
-x 3
-y 48
-connected 123577
-elevation -3359
-unique 1
 end
 arch sea
 x 3
@@ -3083,6 +3070,7 @@ level 20
 invisible 1
 connected 3346
 move_block all -boat
+activate_on_release 0
 arch spell_firebolt
 end
 end

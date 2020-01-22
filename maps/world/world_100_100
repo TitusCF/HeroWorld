@@ -1164,14 +1164,6 @@ attacktype 1
 move_type fly_low fly_high
 move_on fly_low fly_high
 end
-arch check_inv
-slaying test
-x 3
-y 9
-connected 23465
-move_on fly_low fly_high
-move_off fly_low fly_high
-end
 arch sea
 x 3
 y 10
@@ -1219,14 +1211,6 @@ level 1
 attacktype 1
 move_type fly_low fly_high
 move_on fly_low fly_high
-end
-arch check_inv
-slaying test1
-x 3
-y 11
-connected 3346
-move_on fly_low fly_high
-move_off fly_low fly_high
 end
 arch sea
 x 3
@@ -3428,7 +3412,6 @@ arch spikes_open
 x 7
 y 9
 connected 23465
-activate_on_release 0
 end
 arch boulder
 x 7
@@ -3450,7 +3433,6 @@ arch spikes_open
 x 7
 y 10
 connected 3346
-activate_on_release 0
 end
 arch sea
 x 7

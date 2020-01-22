@@ -2,6 +2,9 @@ arch map
 name world_105_129
 width 50
 height 50
+msg
+Modified: 2020-01-22 Acer
+endmsg
 outdoor 1
 tile_path_1 world_105_128
 tile_path_2 world_106_129
@@ -9,258 +12,244 @@ tile_path_3 bottomworld_105_100
 tile_path_4 world_104_129
 end
 arch sea
-x 0
-y 0
 elevation -1264
 end
 arch sea
-x 0
 y 1
 elevation -1239
 end
 arch sea
-x 0
 y 2
 elevation -1202
 end
 arch sea
-x 0
 y 3
 elevation -1156
 end
 arch sea
-x 0
 y 4
 elevation -1101
 end
 arch sea
-x 0
 y 5
 elevation -1040
 end
 arch sea
-x 0
 y 6
 elevation -976
 end
 arch sea
-x 0
 y 7
 elevation -910
 end
 arch sea
-x 0
 y 8
 elevation -846
 end
 arch sea
-x 0
 y 9
 elevation -782
 end
 arch sea
-x 0
 y 10
 elevation -714
 end
 arch sea
-x 0
 y 11
 elevation -633
 end
 arch sea
-x 0
 y 12
 elevation -530
 end
 arch sea
-x 0
 y 13
 elevation -405
 end
 arch sea
-x 0
 y 14
 elevation -257
 end
 arch sea
-x 0
 y 15
 elevation -125
 end
 arch shallow_sea
-x 0
 y 16
 elevation -44
 end
 arch shallow_sea
-x 0
 y 17
 elevation -50
 end
 arch sea
-x 0
 y 18
 elevation -117
 end
 arch sea
-x 0
 y 19
 elevation -188
 end
 arch sea
-x 0
 y 20
 elevation -231
 end
 arch sea
-x 0
 y 21
 elevation -244
 end
 arch sea
-x 0
 y 22
 elevation -248
 end
 arch sea
-x 0
 y 23
 elevation -243
 end
 arch sea
-x 0
 y 24
 elevation -235
 end
 arch sea
-x 0
 y 25
 elevation -222
 end
 arch sea
-x 0
 y 26
 elevation -203
 end
 arch sea
-x 0
 y 27
 elevation -175
 end
 arch sea
-x 0
 y 28
 elevation -142
 end
 arch sea
-x 0
 y 29
 elevation -117
 end
 arch sea
-x 0
 y 30
 elevation -120
 end
 arch sea
-x 0
 y 31
 elevation -173
 end
 arch sea
-x 0
 y 32
 elevation -287
 end
 arch sea
-x 0
 y 33
 elevation -458
 end
 arch sea
-x 0
 y 34
 elevation -667
 end
 arch sea
-x 0
 y 35
 elevation -892
 end
 arch sea
-x 0
 y 36
 elevation -1117
 end
 arch sea
-x 0
 y 37
 elevation -1332
 end
 arch sea
-x 0
 y 38
 elevation -1533
 end
 arch sea
-x 0
 y 39
 elevation -1716
 end
 arch sea
-x 0
 y 40
 elevation -1880
 end
 arch sea
-x 0
 y 41
 elevation -2021
 end
 arch sea
-x 0
 y 42
 elevation -2139
 end
-arch sea
-x 0
+arch deep_sea
 y 43
-elevation -2227
+elevation -6764
 end
-arch sea
-x 0
+arch deep_sea
+y 43
+elevation -5771
+end
+arch deep_sea
 y 44
-elevation -2281
+elevation -6862
+end
+arch deep_sea
+y 44
+elevation -5546
 end
 arch sea
-x 0
 y 45
-elevation -2294
+elevation -6891
+end
+arch mountains_closed
+y 45
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
-x 0
 y 46
-elevation -2260
+move_block walk swim
 end
-arch sea
-x 0
+arch mover_3
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
+end
+arch check_inv
+slaying close
+y 46
+connected 3346
+elevation -12614
+move_on fly_low fly_high
+move_off fly_low fly_high
+end
+arch deep_sea
 y 47
-elevation -2176
+elevation -7267
 end
 arch sea
-x 0
+y 47
+elevation -3359
+end
+arch mountains_closed
+y 47
+connected 123577
+elevation -7267
+unique 1
+end
+arch sea
 y 48
-elevation -2051
 end
 arch sea
-x 0
 y 49
-elevation -1900
 end
 arch sea
 x 1
-y 0
 elevation -1411
 end
 arch sea
@@ -473,44 +462,106 @@ x 1
 y 42
 elevation -2262
 end
-arch sea
+arch deep_sea
 x 1
 y 43
-elevation -2368
+elevation -6515
 end
-arch sea
+arch deep_sea
+x 1
+y 43
+elevation -6142
+end
+arch deep_sea
 x 1
 y 44
-elevation -2437
+elevation -6586
+end
+arch deep_sea
+x 1
+y 44
+elevation -5935
+end
+arch deep_sea
+x 1
+y 45
+elevation -7267
 end
 arch sea
 x 1
 y 45
-elevation -2459
+elevation -3359
+end
+arch mountains_closed
+x 1
+y 45
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 1
 y 46
-elevation -2420
+move_block walk swim
+end
+arch mover_3
+x 1
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
+end
+arch check_inv
+slaying close
+x 1
+y 46
+connected 3346
+elevation -13996
+move_on fly_low fly_high
+move_off fly_low fly_high
+end
+arch deep_sea
+x 1
+y 47
+elevation -6891
 end
 arch sea
 x 1
 y 47
-elevation -2308
+elevation -3359
+end
+arch mountains_closed
+x 1
+y 47
+connected 123577
+elevation -7267
+unique 1
+end
+arch deep_sea
+x 1
+y 48
+elevation -6891
 end
 arch sea
 x 1
 y 48
-elevation -2126
+elevation -3359
+end
+arch mountains_closed
+x 1
+y 48
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 1
 y 49
-elevation -1900
 end
 arch sea
 x 2
-y 0
 elevation -1555
 end
 arch sea
@@ -723,44 +774,106 @@ x 2
 y 42
 elevation -2405
 end
-arch sea
+arch deep_sea
 x 2
 y 43
-elevation -2536
+elevation -6324
 end
-arch sea
+arch deep_sea
+x 2
+y 43
+elevation -6402
+end
+arch deep_sea
 x 2
 y 44
-elevation -2633
+elevation -6373
+end
+arch deep_sea
+x 2
+y 44
+elevation -6216
+end
+arch deep_sea
+x 2
+y 45
+elevation -6891
 end
 arch sea
 x 2
 y 45
-elevation -2682
+elevation -3359
+end
+arch mountains_closed
+x 2
+y 45
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 2
 y 46
-elevation -2654
+move_block walk swim
+end
+arch mover_3
+x 2
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
+end
+arch check_inv
+slaying open
+x 2
+y 46
+connected 23465
+elevation -13436
+move_on fly_low fly_high
+move_off fly_low fly_high
+end
+arch deep_sea
+x 2
+y 47
+elevation -7267
 end
 arch sea
 x 2
 y 47
-elevation -2516
+elevation -3359
+end
+arch mountains_closed
+x 2
+y 47
+connected 123577
+elevation -7267
+unique 1
+end
+arch deep_sea
+x 2
+y 48
+elevation -7267
 end
 arch sea
 x 2
 y 48
-elevation -2253
+elevation -3359
+end
+arch mountains_closed
+x 2
+y 48
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 2
 y 49
-elevation -1900
 end
 arch sea
 x 3
-y 0
 elevation -1693
 end
 arch sea
@@ -973,44 +1086,101 @@ x 3
 y 42
 elevation -2564
 end
-arch sea
+arch deep_sea
 x 3
 y 43
-elevation -2727
+elevation -6177
 end
-arch sea
+arch deep_sea
+x 3
+y 43
+elevation -6577
+end
+arch deep_sea
 x 3
 y 44
-elevation -2868
+elevation -6209
+end
+arch deep_sea
+x 3
+y 44
+elevation -6416
+end
+arch deep_sea
+x 3
+y 45
+elevation -7267
 end
 arch sea
 x 3
 y 45
-elevation -2969
+elevation -3359
+end
+arch mountains_closed
+x 3
+y 45
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 3
 y 46
-elevation -2997
+move_block walk swim
+end
+arch mover_3
+x 3
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
+end
+arch deep_sea
+x 3
+y 47
+elevation -6891
 end
 arch sea
 x 3
 y 47
-elevation -2872
+elevation -3359
+end
+arch mountains_closed
+x 3
+y 47
+connected 123577
+elevation -7267
+unique 1
+end
+arch light4
+x 3
+y 47
+end
+arch deep_sea
+x 3
+y 48
+elevation -6891
 end
 arch sea
 x 3
 y 48
-elevation -2493
+elevation -3359
+end
+arch mountains_closed
+x 3
+y 48
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 3
 y 49
-elevation -1900
 end
 arch sea
 x 4
-y 0
 elevation -1825
 end
 arch sea
@@ -1226,41 +1396,97 @@ end
 arch sea
 x 4
 y 43
-elevation -2932
+elevation -4800
 end
 arch sea
 x 4
 y 44
-elevation -3130
+elevation -4537
+end
+arch deep_sea
+x 4
+y 45
+elevation -6891
 end
 arch sea
 x 4
 y 45
-elevation -3315
+elevation -3359
+end
+arch mountains_closed
+x 4
+y 45
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 4
 y 46
-elevation -3462
+move_block walk swim
+end
+arch mover_3
+x 4
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
+end
+arch deep_sea
+x 4
+y 47
+elevation -7267
 end
 arch sea
 x 4
 y 47
-elevation -3497
+elevation -3359
+end
+arch mountains_closed
+x 4
+y 47
+connected 123577
+elevation -7267
+unique 1
+end
+arch deep_sea
+x 4
+y 48
+elevation -7267
 end
 arch sea
 x 4
 y 48
-elevation -3098
+elevation -3359
+end
+arch mountains_closed
+x 4
+y 48
+connected 123577
+elevation -7267
+unique 1
+end
+arch deep_sea
+x 4
+y 49
+elevation -7267
 end
 arch sea
 x 4
 y 49
-elevation -1900
+elevation -3359
+end
+arch mountains_closed
+x 4
+y 49
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 5
-y 0
 elevation -1950
 end
 arch sea
@@ -1473,44 +1699,87 @@ x 5
 y 42
 elevation -2891
 end
-arch sea
+arch deep_sea
 x 5
 y 43
-elevation -3132
+elevation -5243
 end
 arch sea
 x 5
 y 44
-elevation -3393
+elevation -4945
+end
+arch deep_sea
+x 5
+y 45
+elevation -7267
 end
 arch sea
 x 5
 y 45
-elevation -3681
+elevation -3359
+end
+arch mountains_closed
+x 5
+y 45
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 5
 y 46
-elevation -4004
+move_block walk swim
+end
+arch mover_3
+x 5
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
+end
+arch deep_sea
+x 5
+y 47
+elevation -6891
 end
 arch sea
 x 5
 y 47
-elevation -4349
+elevation -3359
+end
+arch mountains_closed
+x 5
+y 47
+connected 123577
+elevation -7267
+unique 1
+end
+arch deep_sea
+x 5
+y 48
+elevation -6891
 end
 arch sea
 x 5
 y 48
-elevation -4695
+elevation -3359
+end
+arch mountains_closed
+x 5
+y 48
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 5
 y 49
-elevation -3073
 end
 arch sea
 x 6
-y 0
 elevation -2067
 end
 arch sea
@@ -1723,44 +1992,87 @@ x 6
 y 42
 elevation -3034
 end
-arch sea
+arch deep_sea
 x 6
 y 43
-elevation -3307
+elevation -5700
 end
-arch sea
+arch deep_sea
 x 6
 y 44
-elevation -3622
+elevation -5357
+end
+arch deep_sea
+x 6
+y 45
+elevation -6891
 end
 arch sea
 x 6
 y 45
-elevation -4004
+elevation -3359
+end
+arch mountains_closed
+x 6
+y 45
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 6
 y 46
-elevation -4502
+move_block walk swim
+end
+arch mover_3
+x 6
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
 end
 arch deep_sea
 x 6
 y 47
-elevation -5209
+elevation -7267
+end
+arch sea
+x 6
+y 47
+elevation -3359
+end
+arch mountains_closed
+x 6
+y 47
+connected 123577
+elevation -7267
+unique 1
 end
 arch deep_sea
 x 6
 y 48
-elevation -6316
+elevation -7267
 end
-arch deep_sea
+arch sea
+x 6
+y 48
+elevation -3359
+end
+arch mountains_closed
+x 6
+y 48
+connected 123577
+elevation -7267
+unique 1
+end
+arch sea
 x 6
 y 49
-elevation -10111
 end
 arch sea
 x 7
-y 0
 elevation -2175
 end
 arch sea
@@ -1973,44 +2285,100 @@ x 7
 y 42
 elevation -3148
 end
-arch sea
+arch deep_sea
 x 7
 y 43
-elevation -3438
+elevation -6190
 end
-arch sea
+arch deep_sea
 x 7
 y 44
-elevation -3782
+elevation -5804
+end
+arch deep_sea
+x 7
+y 45
+elevation -7267
 end
 arch sea
 x 7
 y 45
-elevation -4219
+elevation -3359
+end
+arch mountains_closed
+x 7
+y 45
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 7
 y 46
-elevation -4818
+move_block walk swim
+end
+arch mover_3
+x 7
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
 end
 arch deep_sea
 x 7
 y 47
-elevation -5724
+elevation -6891
+end
+arch sea
+x 7
+y 47
+elevation -3359
+end
+arch mountains_closed
+x 7
+y 47
+connected 123577
+elevation -7267
+unique 1
 end
 arch deep_sea
 x 7
 y 48
-elevation -7256
+elevation -6891
+end
+arch sea
+x 7
+y 48
+elevation -3359
+end
+arch mountains_closed
+x 7
+y 48
+connected 123577
+elevation -7267
+unique 1
 end
 arch deep_sea
 x 7
 y 49
-elevation -10111
+elevation -7267
+end
+arch sea
+x 7
+y 49
+elevation -3359
+end
+arch mountains_closed
+x 7
+y 49
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 8
-y 0
 elevation -2275
 end
 arch sea
@@ -2223,44 +2591,87 @@ x 8
 y 42
 elevation -3225
 end
-arch sea
+arch deep_sea
 x 8
 y 43
-elevation -3512
+elevation -6737
 end
-arch sea
+arch deep_sea
 x 8
 y 44
-elevation -3854
+elevation -6325
+end
+arch deep_sea
+x 8
+y 45
+elevation -6891
 end
 arch sea
 x 8
 y 45
-elevation -4287
+elevation -3359
+end
+arch mountains_closed
+x 8
+y 45
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 8
 y 46
-elevation -4872
+move_block walk swim
+end
+arch mover_3
+x 8
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
 end
 arch deep_sea
 x 8
 y 47
-elevation -5715
+elevation -7267
+end
+arch sea
+x 8
+y 47
+elevation -3359
+end
+arch mountains_closed
+x 8
+y 47
+connected 123577
+elevation -7267
+unique 1
 end
 arch deep_sea
 x 8
 y 48
-elevation -7096
+elevation -7267
 end
-arch deep_sea
+arch sea
+x 8
+y 48
+elevation -3359
+end
+arch mountains_closed
+x 8
+y 48
+connected 123577
+elevation -7267
+unique 1
+end
+arch sea
 x 8
 y 49
-elevation -7763
 end
 arch sea
 x 9
-y 0
 elevation -2366
 end
 arch sea
@@ -2473,44 +2884,74 @@ x 9
 y 42
 elevation -3264
 end
-arch sea
+arch deep_sea
 x 9
 y 43
-elevation -3529
+elevation -7361
 end
-arch sea
+arch deep_sea
 x 9
 y 44
-elevation -3837
+elevation -6955
+end
+arch deep_sea
+x 9
+y 45
+elevation -7267
 end
 arch sea
 x 9
 y 45
-elevation -4212
+elevation -3359
+end
+arch mountains_closed
+x 9
+y 45
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 9
 y 46
-elevation -4686
+move_block walk swim
+end
+arch mover_3
+x 9
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
 end
 arch deep_sea
 x 9
 y 47
-elevation -5305
+elevation -6891
 end
-arch deep_sea
+arch sea
+x 9
+y 47
+elevation -3359
+end
+arch mountains_closed
+x 9
+y 47
+connected 123577
+elevation -7267
+unique 1
+end
+arch sea
 x 9
 y 48
-elevation -5955
 end
-arch deep_sea
+arch sea
 x 9
 y 49
-elevation -8936
 end
 arch sea
 x 10
-y 0
 elevation -2447
 end
 arch sea
@@ -2723,44 +3164,100 @@ x 10
 y 42
 elevation -3271
 end
-arch sea
+arch deep_sea
 x 10
 y 43
-elevation -3499
+elevation -8071
 end
-arch sea
+arch deep_sea
 x 10
 y 44
-elevation -3751
+elevation -7713
+end
+arch deep_sea
+x 10
+y 45
+elevation -6891
 end
 arch sea
 x 10
 y 45
-elevation -4037
+elevation -3359
+end
+arch mountains_closed
+x 10
+y 45
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 10
 y 46
-elevation -4360
+move_block walk swim
+end
+arch mover_3
+x 10
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
+end
+arch deep_sea
+x 10
+y 47
+elevation -7267
 end
 arch sea
 x 10
 y 47
-elevation -4695
+elevation -3359
+end
+arch mountains_closed
+x 10
+y 47
+connected 123577
+elevation -7267
+unique 1
 end
 arch deep_sea
 x 10
 y 48
-elevation -5053
+elevation -7267
+end
+arch sea
+x 10
+y 48
+elevation -3359
+end
+arch mountains_closed
+x 10
+y 48
+connected 123577
+elevation -7267
+unique 1
+end
+arch deep_sea
+x 10
+y 49
+elevation -7267
 end
 arch sea
 x 10
 y 49
-elevation -3073
+elevation -3359
+end
+arch mountains_closed
+x 10
+y 49
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 11
-y 0
 elevation -2519
 end
 arch sea
@@ -2973,44 +3470,87 @@ x 11
 y 42
 elevation -3257
 end
-arch sea
+arch deep_sea
 x 11
 y 43
-elevation -3441
+elevation -8865
 end
-arch sea
+arch deep_sea
 x 11
 y 44
-elevation -3629
+elevation -8601
+end
+arch deep_sea
+x 11
+y 45
+elevation -7267
 end
 arch sea
 x 11
 y 45
-elevation -3817
+elevation -3359
+end
+arch mountains_closed
+x 11
+y 45
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 11
 y 46
-elevation -3992
+move_block walk swim
+end
+arch mover_3
+x 11
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
+end
+arch deep_sea
+x 11
+y 47
+elevation -6891
 end
 arch sea
 x 11
 y 47
-elevation -4129
+elevation -3359
+end
+arch mountains_closed
+x 11
+y 47
+connected 123577
+elevation -7267
+unique 1
+end
+arch deep_sea
+x 11
+y 48
+elevation -6891
 end
 arch sea
 x 11
 y 48
-elevation -4080
+elevation -3359
+end
+arch mountains_closed
+x 11
+y 48
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 11
 y 49
-elevation -4246
 end
 arch sea
 x 12
-y 0
 elevation -2580
 end
 arch sea
@@ -3223,44 +3763,100 @@ x 12
 y 42
 elevation -3234
 end
-arch sea
+arch deep_sea
 x 12
 y 43
-elevation -3375
+elevation -9726
 end
-arch sea
+arch deep_sea
 x 12
 y 44
-elevation -3501
+elevation -9594
+end
+arch deep_sea
+x 12
+y 45
+elevation -6891
 end
 arch sea
 x 12
 y 45
-elevation -3601
+elevation -3359
+end
+arch mountains_closed
+x 12
+y 45
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 12
 y 46
-elevation -3655
+move_block walk swim
+end
+arch mover_3
+x 12
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
+end
+arch deep_sea
+x 12
+y 47
+elevation -7267
 end
 arch sea
 x 12
 y 47
-elevation -3633
+elevation -3359
+end
+arch mountains_closed
+x 12
+y 47
+connected 123577
+elevation -7267
+unique 1
+end
+arch deep_sea
+x 12
+y 48
+elevation -7267
 end
 arch sea
 x 12
 y 48
-elevation -3561
+elevation -3359
+end
+arch mountains_closed
+x 12
+y 48
+connected 123577
+elevation -7267
+unique 1
+end
+arch deep_sea
+x 12
+y 49
+elevation -7267
 end
 arch sea
 x 12
 y 49
-elevation -4246
+elevation -3359
+end
+arch mountains_closed
+x 12
+y 49
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 13
-y 0
 elevation -2632
 end
 arch sea
@@ -3473,44 +4069,74 @@ x 13
 y 42
 elevation -3214
 end
-arch sea
+arch deep_sea
 x 13
 y 43
-elevation -3318
+elevation -10624
 end
-arch sea
+arch deep_sea
 x 13
 y 44
-elevation -3394
+elevation -10648
+end
+arch deep_sea
+x 13
+y 45
+elevation -7267
 end
 arch sea
 x 13
 y 45
-elevation -3426
+elevation -3359
+end
+arch mountains_closed
+x 13
+y 45
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 13
 y 46
-elevation -3388
+move_block walk swim
+end
+arch mover_3
+x 13
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
+end
+arch deep_sea
+x 13
+y 47
+elevation -6891
 end
 arch sea
 x 13
 y 47
-elevation -3251
+elevation -3359
+end
+arch mountains_closed
+x 13
+y 47
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 13
 y 48
-elevation -3005
 end
 arch sea
 x 13
 y 49
-elevation -1900
 end
 arch sea
 x 14
-y 0
 elevation -2673
 end
 arch sea
@@ -3723,44 +4349,116 @@ x 14
 y 42
 elevation -3207
 end
-arch sea
+arch deep_sea
 x 14
 y 43
-elevation -3285
+elevation -11522
+end
+arch deep_sea
+x 14
+y 44
+elevation -7267
 end
 arch sea
 x 14
 y 44
-elevation -3328
+elevation -3359
+end
+arch mountains_closed
+x 14
+y 44
+connected 123577
+elevation -7267
+unique 1
+end
+arch deep_sea
+x 14
+y 45
+elevation -6891
 end
 arch sea
 x 14
 y 45
-elevation -3316
+elevation -3359
+end
+arch mountains_closed
+x 14
+y 45
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 14
 y 46
-elevation -3220
+move_block walk swim
+end
+arch mover_3
+x 14
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
+end
+arch deep_sea
+x 14
+y 47
+elevation -7267
 end
 arch sea
 x 14
 y 47
-elevation -2999
+elevation -3359
+end
+arch mountains_closed
+x 14
+y 47
+connected 123577
+elevation -7267
+unique 1
+end
+arch light4
+x 14
+y 47
+end
+arch deep_sea
+x 14
+y 48
+elevation -7267
 end
 arch sea
 x 14
 y 48
-elevation -2546
+elevation -3359
+end
+arch mountains_closed
+x 14
+y 48
+connected 123577
+elevation -7267
+unique 1
+end
+arch deep_sea
+x 14
+y 49
+elevation -7267
 end
 arch sea
 x 14
 y 49
-elevation -1900
+elevation -3359
+end
+arch mountains_closed
+x 14
+y 49
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 15
-y 0
 elevation -2704
 end
 arch sea
@@ -3973,44 +4671,112 @@ x 15
 y 42
 elevation -3219
 end
-arch sea
+arch deep_sea
 x 15
 y 43
-elevation -3283
+elevation -12380
+end
+arch deep_sea
+x 15
+y 44
+elevation -6891
 end
 arch sea
 x 15
 y 44
-elevation -3312
+elevation -3359
+end
+arch mountains_closed
+x 15
+y 44
+connected 123577
+elevation -7267
+unique 1
+end
+arch deep_sea
+x 15
+y 45
+elevation -7267
 end
 arch sea
 x 15
 y 45
-elevation -3284
+elevation -3359
+end
+arch mountains_closed
+x 15
+y 45
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 15
 y 46
-elevation -3170
+move_block walk swim
+end
+arch mover_3
+x 15
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
+end
+arch deep_sea
+x 15
+y 47
+elevation -6891
 end
 arch sea
 x 15
 y 47
-elevation -2926
+elevation -3359
+end
+arch mountains_closed
+x 15
+y 47
+connected 123577
+elevation -7267
+unique 1
+end
+arch deep_sea
+x 15
+y 48
+elevation -6891
 end
 arch sea
 x 15
 y 48
-elevation -2488
+elevation -3359
+end
+arch mountains_closed
+x 15
+y 48
+connected 123577
+elevation -7267
+unique 1
+end
+arch deep_sea
+x 15
+y 49
+elevation -6891
 end
 arch sea
 x 15
 y 49
-elevation -1900
+elevation -3359
+end
+arch mountains_closed
+x 15
+y 49
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 16
-y 0
 elevation -2726
 end
 arch sea
@@ -4223,44 +4989,74 @@ x 16
 y 42
 elevation -3252
 end
-arch sea
+arch deep_sea
 x 16
 y 43
-elevation -3316
+elevation -13163
 end
-arch sea
+arch deep_sea
 x 16
 y 44
-elevation -3349
+elevation -13630
+end
+arch deep_sea
+x 16
+y 45
+elevation -6891
 end
 arch sea
 x 16
 y 45
-elevation -3335
+elevation -3359
+end
+arch mountains_closed
+x 16
+y 45
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 16
 y 46
-elevation -3244
+move_block walk swim
+end
+arch mover_3
+x 16
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
+end
+arch deep_sea
+x 16
+y 47
+elevation -7267
 end
 arch sea
 x 16
 y 47
-elevation -3038
+elevation -3359
+end
+arch mountains_closed
+x 16
+y 47
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 16
 y 48
-elevation -2699
 end
 arch sea
 x 16
 y 49
-elevation -1900
 end
 arch sea
 x 17
-y 0
 elevation -2738
 end
 arch sea
@@ -4473,44 +5269,74 @@ x 17
 y 42
 elevation -3303
 end
-arch sea
+arch deep_sea
 x 17
 y 43
-elevation -3376
+elevation -13845
 end
-arch sea
+arch deep_sea
 x 17
 y 44
-elevation -3432
+elevation -14409
+end
+arch deep_sea
+x 17
+y 45
+elevation -7267
 end
 arch sea
 x 17
 y 45
-elevation -3457
+elevation -3359
+end
+arch mountains_closed
+x 17
+y 45
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 17
 y 46
-elevation -3431
+move_block walk swim
+end
+arch mover_3
+x 17
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
+end
+arch deep_sea
+x 17
+y 47
+elevation -6891
 end
 arch sea
 x 17
 y 47
-elevation -3314
+elevation -3359
+end
+arch mountains_closed
+x 17
+y 47
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 17
 y 48
-elevation -3037
 end
 arch sea
 x 17
 y 49
-elevation -2994
 end
 arch sea
 x 18
-y 0
 elevation -2741
 end
 arch sea
@@ -4723,44 +5549,74 @@ x 18
 y 42
 elevation -3366
 end
-arch sea
+arch deep_sea
 x 18
 y 43
-elevation -3455
+elevation -14404
 end
-arch sea
+arch deep_sea
 x 18
 y 44
-elevation -3542
+elevation -15035
+end
+arch deep_sea
+x 18
+y 45
+elevation -6891
 end
 arch sea
 x 18
 y 45
-elevation -3627
+elevation -3359
+end
+arch mountains_closed
+x 18
+y 45
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 18
 y 46
-elevation -3702
+move_block walk swim
+end
+arch mover_3
+x 18
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
+end
+arch deep_sea
+x 18
+y 47
+elevation -7267
 end
 arch sea
 x 18
 y 47
-elevation -3729
+elevation -3359
+end
+arch mountains_closed
+x 18
+y 47
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 18
 y 48
-elevation -3630
 end
 arch sea
 x 18
 y 49
-elevation -2994
 end
 arch sea
 x 19
-y 0
 elevation -2735
 end
 arch sea
@@ -4973,44 +5829,87 @@ x 19
 y 42
 elevation -3431
 end
-arch sea
+arch deep_sea
 x 19
 y 43
-elevation -3536
+elevation -14830
 end
-arch sea
+arch deep_sea
 x 19
 y 44
-elevation -3657
+elevation -15497
+end
+arch deep_sea
+x 19
+y 45
+elevation -7267
 end
 arch sea
 x 19
 y 45
-elevation -3805
+elevation -3359
+end
+arch mountains_closed
+x 19
+y 45
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 19
 y 46
-elevation -3996
+move_block walk swim
+end
+arch mover_3
+x 19
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
+end
+arch deep_sea
+x 19
+y 47
+elevation -6891
 end
 arch sea
 x 19
 y 47
-elevation -4258
+elevation -3359
+end
+arch mountains_closed
+x 19
+y 47
+connected 123577
+elevation -7267
+unique 1
+end
+arch deep_sea
+x 19
+y 48
+elevation -6891
 end
 arch sea
 x 19
 y 48
-elevation -4470
+elevation -3359
+end
+arch mountains_closed
+x 19
+y 48
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 19
 y 49
-elevation -4249
 end
 arch sea
 x 20
-y 0
 elevation -2720
 end
 arch sea
@@ -5223,44 +6122,100 @@ x 20
 y 42
 elevation -3492
 end
-arch sea
+arch deep_sea
 x 20
 y 43
-elevation -3606
+elevation -15116
 end
-arch sea
+arch deep_sea
 x 20
 y 44
-elevation -3748
+elevation -15789
+end
+arch deep_sea
+x 20
+y 45
+elevation -6891
 end
 arch sea
 x 20
 y 45
-elevation -3941
+elevation -3359
+end
+arch mountains_closed
+x 20
+y 45
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 20
 y 46
-elevation -4229
+move_block walk swim
+end
+arch mover_3
+x 20
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
+end
+arch deep_sea
+x 20
+y 47
+elevation -7267
 end
 arch sea
 x 20
 y 47
-elevation -4686
+elevation -3359
+end
+arch mountains_closed
+x 20
+y 47
+connected 123577
+elevation -7267
+unique 1
 end
 arch deep_sea
 x 20
 y 48
-elevation -5622
+elevation -7267
+end
+arch sea
+x 20
+y 48
+elevation -3359
+end
+arch mountains_closed
+x 20
+y 48
+connected 123577
+elevation -7267
+unique 1
 end
 arch deep_sea
 x 20
 y 49
-elevation -6593
+elevation -6891
+end
+arch sea
+x 20
+y 49
+elevation -3359
+end
+arch mountains_closed
+x 20
+y 49
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 21
-y 0
 elevation -2697
 end
 arch sea
@@ -5473,44 +6428,100 @@ x 21
 y 42
 elevation -3542
 end
-arch sea
+arch deep_sea
 x 21
 y 43
-elevation -3653
+elevation -15259
 end
-arch sea
+arch deep_sea
 x 21
 y 44
-elevation -3796
+elevation -15904
+end
+arch deep_sea
+x 21
+y 45
+elevation -7267
 end
 arch sea
 x 21
 y 45
-elevation -3996
+elevation -3359
+end
+arch mountains_closed
+x 21
+y 45
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 21
 y 46
-elevation -4305
+move_block walk swim
+end
+arch mover_3
+x 21
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
+end
+arch deep_sea
+x 21
+y 47
+elevation -6891
 end
 arch sea
 x 21
 y 47
-elevation -4848
+elevation -3359
+end
+arch mountains_closed
+x 21
+y 47
+connected 123577
+elevation -7267
+unique 1
 end
 arch deep_sea
 x 21
 y 48
-elevation -5761
+elevation -6891
+end
+arch sea
+x 21
+y 48
+elevation -3359
+end
+arch mountains_closed
+x 21
+y 48
+connected 123577
+elevation -7267
+unique 1
 end
 arch deep_sea
 x 21
 y 49
-elevation -10113
+elevation -7267
+end
+arch sea
+x 21
+y 49
+elevation -3359
+end
+arch mountains_closed
+x 21
+y 49
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 22
-y 0
 elevation -2665
 end
 arch sea
@@ -5723,44 +6734,100 @@ x 22
 y 42
 elevation -3580
 end
-arch sea
+arch deep_sea
 x 22
 y 43
-elevation -3675
+elevation -15264
 end
-arch sea
+arch deep_sea
 x 22
 y 44
-elevation -3795
+elevation -15840
+end
+arch deep_sea
+x 22
+y 45
+elevation -6891
 end
 arch sea
 x 22
 y 45
-elevation -3959
+elevation -3359
+end
+arch mountains_closed
+x 22
+y 45
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 22
 y 46
-elevation -4203
+move_block walk swim
+end
+arch mover_3
+x 22
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
+end
+arch deep_sea
+x 22
+y 47
+elevation -7267
 end
 arch sea
 x 22
 y 47
-elevation -4584
+elevation -3359
+end
+arch mountains_closed
+x 22
+y 47
+connected 123577
+elevation -7267
+unique 1
 end
 arch deep_sea
 x 22
 y 48
-elevation -5396
+elevation -7267
+end
+arch sea
+x 22
+y 48
+elevation -3359
+end
+arch mountains_closed
+x 22
+y 48
+connected 123577
+elevation -7267
+unique 1
+end
+arch deep_sea
+x 22
+y 49
+elevation -6891
 end
 arch sea
 x 22
 y 49
-elevation -4250
+elevation -3359
+end
+arch mountains_closed
+x 22
+y 49
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 23
-y 0
 elevation -2626
 end
 arch sea
@@ -5973,44 +7040,87 @@ x 23
 y 42
 elevation -3608
 end
-arch sea
+arch deep_sea
 x 23
 y 43
-elevation -3677
+elevation -15147
 end
-arch sea
+arch deep_sea
 x 23
 y 44
-elevation -3757
+elevation -15612
+end
+arch deep_sea
+x 23
+y 45
+elevation -7267
 end
 arch sea
 x 23
 y 45
-elevation -3853
+elevation -3359
+end
+arch mountains_closed
+x 23
+y 45
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 23
 y 46
-elevation -3969
+move_block walk swim
+end
+arch mover_3
+x 23
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
+end
+arch deep_sea
+x 23
+y 47
+elevation -6891
 end
 arch sea
 x 23
 y 47
-elevation -4116
+elevation -3359
+end
+arch mountains_closed
+x 23
+y 47
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 23
 y 48
-elevation -4081
 end
 arch deep_sea
 x 23
 y 49
-elevation -5419
+elevation -7267
+end
+arch sea
+x 23
+y 49
+elevation -3359
+end
+arch mountains_closed
+x 23
+y 49
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 24
-y 0
 elevation -2578
 end
 arch sea
@@ -6223,44 +7333,74 @@ x 24
 y 42
 elevation -3633
 end
-arch sea
+arch deep_sea
 x 24
 y 43
-elevation -3672
+elevation -14935
 end
-arch sea
+arch deep_sea
 x 24
 y 44
-elevation -3706
+elevation -15260
+end
+arch deep_sea
+x 24
+y 45
+elevation -6891
 end
 arch sea
 x 24
 y 45
-elevation -3726
+elevation -3359
+end
+arch mountains_closed
+x 24
+y 45
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 24
 y 46
-elevation -3713
+move_block walk swim
+end
+arch mover_3
+x 24
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
+end
+arch deep_sea
+x 24
+y 47
+elevation -6891
 end
 arch sea
 x 24
 y 47
-elevation -3602
+elevation -3359
+end
+arch mountains_closed
+x 24
+y 47
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 24
 y 48
-elevation -3381
 end
 arch sea
 x 24
 y 49
-elevation -1900
 end
 arch sea
 x 25
-y 0
 elevation -2523
 end
 arch sea
@@ -6473,44 +7613,87 @@ x 25
 y 42
 elevation -3664
 end
-arch sea
+arch deep_sea
 x 25
 y 43
-elevation -3673
+elevation -14663
 end
-arch sea
+arch deep_sea
 x 25
 y 44
-elevation -3665
+elevation -14833
+end
+arch deep_sea
+x 25
+y 45
+elevation -6891
 end
 arch sea
 x 25
 y 45
-elevation -3625
+elevation -3359
+end
+arch mountains_closed
+x 25
+y 45
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 25
 y 46
-elevation -3522
+move_block walk swim
+end
+arch mover_3
+x 25
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
+end
+arch deep_sea
+x 25
+y 47
+elevation -7267
 end
 arch sea
 x 25
 y 47
-elevation -3295
+elevation -3359
+end
+arch mountains_closed
+x 25
+y 47
+connected 123577
+elevation -7267
+unique 1
+end
+arch deep_sea
+x 25
+y 48
+elevation -7267
 end
 arch sea
 x 25
 y 48
-elevation -2742
+elevation -3359
+end
+arch mountains_closed
+x 25
+y 48
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 25
 y 49
-elevation -1900
 end
 arch sea
 x 26
-y 0
 elevation -2460
 end
 arch sea
@@ -6723,44 +7906,104 @@ x 26
 y 42
 elevation -3706
 end
-arch sea
+arch deep_sea
 x 26
 y 43
-elevation -3691
+elevation -14366
 end
-arch sea
+arch deep_sea
 x 26
 y 44
-elevation -3652
+elevation -14384
+end
+arch deep_sea
+x 26
+y 45
+elevation -7267
 end
 arch sea
 x 26
 y 45
-elevation -3575
+elevation -3359
+end
+arch mountains_closed
+x 26
+y 45
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 26
 y 46
-elevation -3440
+move_block walk swim
+end
+arch mover_3
+x 26
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
+end
+arch deep_sea
+x 26
+y 47
+elevation -6891
 end
 arch sea
 x 26
 y 47
-elevation -3200
+elevation -3359
+end
+arch mountains_closed
+x 26
+y 47
+connected 123577
+elevation -7267
+unique 1
+end
+arch light4
+x 26
+y 47
+end
+arch deep_sea
+x 26
+y 48
+elevation -6891
 end
 arch sea
 x 26
 y 48
-elevation -2761
+elevation -3359
+end
+arch mountains_closed
+x 26
+y 48
+connected 123577
+elevation -7267
+unique 1
+end
+arch deep_sea
+x 26
+y 49
+elevation -6891
 end
 arch sea
 x 26
 y 49
-elevation -1900
+elevation -3359
+end
+arch mountains_closed
+x 26
+y 49
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 27
-y 0
 elevation -2390
 end
 arch sea
@@ -6973,44 +8216,87 @@ x 27
 y 42
 elevation -3766
 end
-arch sea
+arch deep_sea
 x 27
 y 43
-elevation -3733
+elevation -14080
 end
-arch sea
+arch deep_sea
 x 27
 y 44
-elevation -3673
+elevation -13949
+end
+arch deep_sea
+x 27
+y 45
+elevation -6891
 end
 arch sea
 x 27
 y 45
-elevation -3580
+elevation -3359
+end
+arch mountains_closed
+x 27
+y 45
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 27
 y 46
-elevation -3447
+move_block walk swim
+end
+arch mover_3
+x 27
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
+end
+arch deep_sea
+x 27
+y 47
+elevation -7267
 end
 arch sea
 x 27
 y 47
-elevation -3276
+elevation -3359
+end
+arch mountains_closed
+x 27
+y 47
+connected 123577
+elevation -7267
+unique 1
+end
+arch deep_sea
+x 27
+y 48
+elevation -7267
 end
 arch sea
 x 27
 y 48
-elevation -3122
+elevation -3359
+end
+arch mountains_closed
+x 27
+y 48
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 27
 y 49
-elevation -2654
 end
 arch sea
 x 28
-y 0
 elevation -2311
 end
 arch sea
@@ -7223,44 +8509,74 @@ x 28
 y 42
 elevation -3845
 end
-arch sea
+arch deep_sea
 x 28
 y 43
-elevation -3799
+elevation -13837
 end
-arch sea
+arch deep_sea
 x 28
 y 44
-elevation -3727
+elevation -13561
+end
+arch deep_sea
+x 28
+y 45
+elevation -7267
 end
 arch sea
 x 28
 y 45
-elevation -3625
+elevation -3359
+end
+arch mountains_closed
+x 28
+y 45
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 28
 y 46
-elevation -3498
+move_block walk swim
+end
+arch mover_3
+x 28
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
+end
+arch deep_sea
+x 28
+y 47
+elevation -6891
 end
 arch sea
 x 28
 y 47
-elevation -3377
+elevation -3359
+end
+arch mountains_closed
+x 28
+y 47
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 28
 y 48
-elevation -3362
 end
 arch sea
 x 28
 y 49
-elevation -4446
 end
 arch sea
 x 29
-y 0
 elevation -2226
 end
 arch sea
@@ -7473,44 +8789,87 @@ x 29
 y 42
 elevation -3943
 end
-arch sea
+arch deep_sea
 x 29
 y 43
-elevation -3891
+elevation -13672
 end
-arch sea
+arch deep_sea
 x 29
 y 44
-elevation -3811
+elevation -13260
+end
+arch deep_sea
+x 29
+y 45
+elevation -6891
 end
 arch sea
 x 29
 y 45
-elevation -3701
+elevation -3359
+end
+arch mountains_closed
+x 29
+y 45
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 29
 y 46
-elevation -3561
+move_block walk swim
+end
+arch mover_3
+x 29
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
+end
+arch deep_sea
+x 29
+y 47
+elevation -7267
 end
 arch sea
 x 29
 y 47
-elevation -3411
+elevation -3359
+end
+arch mountains_closed
+x 29
+y 47
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 29
 y 48
-elevation -3336
+end
+arch deep_sea
+x 29
+y 49
+elevation -6891
 end
 arch sea
 x 29
 y 49
-elevation -3274
+elevation -3359
+end
+arch mountains_closed
+x 29
+y 49
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 30
-y 0
 elevation -2134
 end
 arch sea
@@ -7723,44 +9082,74 @@ x 30
 y 42
 elevation -4059
 end
-arch sea
+arch deep_sea
 x 30
 y 43
-elevation -4006
+elevation -13623
 end
-arch sea
+arch deep_sea
 x 30
 y 44
-elevation -3925
+elevation -13101
+end
+arch deep_sea
+x 30
+y 45
+elevation -7267
 end
 arch sea
 x 30
 y 45
-elevation -3809
+elevation -3359
+end
+arch mountains_closed
+x 30
+y 45
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 30
 y 46
-elevation -3644
+move_block walk swim
+end
+arch mover_3
+x 30
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
+end
+arch deep_sea
+x 30
+y 47
+elevation -6891
 end
 arch sea
 x 30
 y 47
-elevation -3417
+elevation -3359
+end
+arch mountains_closed
+x 30
+y 47
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 30
 y 48
-elevation -3094
 end
 arch sea
 x 30
 y 49
-elevation -2304
 end
 arch sea
 x 31
-y 0
 elevation -2035
 end
 arch sea
@@ -7973,44 +9362,74 @@ x 31
 y 42
 elevation -4192
 end
-arch sea
+arch deep_sea
 x 31
 y 43
-elevation -4143
+elevation -13724
 end
-arch sea
+arch deep_sea
 x 31
 y 44
-elevation -4070
+elevation -13146
+end
+arch deep_sea
+x 31
+y 45
+elevation -6891
 end
 arch sea
 x 31
 y 45
-elevation -3960
+elevation -3359
+end
+arch mountains_closed
+x 31
+y 45
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 31
 y 46
-elevation -3788
+move_block walk swim
+end
+arch mover_3
+x 31
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
+end
+arch deep_sea
+x 31
+y 47
+elevation -7267
 end
 arch sea
 x 31
 y 47
-elevation -3503
+elevation -3359
+end
+arch mountains_closed
+x 31
+y 47
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 31
 y 48
-elevation -2997
 end
 arch sea
 x 31
 y 49
-elevation -2506
 end
 arch sea
 x 32
-y 0
 elevation -1931
 end
 arch sea
@@ -8223,44 +9642,100 @@ x 32
 y 42
 elevation -4336
 end
-arch sea
+arch deep_sea
 x 32
 y 43
-elevation -4299
+elevation -14435
 end
-arch sea
+arch deep_sea
 x 32
 y 44
-elevation -4244
+elevation -13972
+end
+arch deep_sea
+x 32
+y 45
+elevation -7267
 end
 arch sea
 x 32
 y 45
-elevation -4162
+elevation -3359
+end
+arch mountains_closed
+x 32
+y 45
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 32
 y 46
-elevation -4027
+move_block walk swim
+end
+arch mover_3
+x 32
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
+end
+arch deep_sea
+x 32
+y 47
+elevation -6891
 end
 arch sea
 x 32
 y 47
-elevation -3774
+elevation -3359
+end
+arch mountains_closed
+x 32
+y 47
+connected 123577
+elevation -7267
+unique 1
+end
+arch deep_sea
+x 32
+y 48
+elevation -6891
 end
 arch sea
 x 32
 y 48
-elevation -3275
+elevation -3359
+end
+arch mountains_closed
+x 32
+y 48
+connected 123577
+elevation -7267
+unique 1
+end
+arch deep_sea
+x 32
+y 49
+elevation -6891
 end
 arch sea
 x 32
 y 49
-elevation -2102
+elevation -3359
+end
+arch mountains_closed
+x 32
+y 49
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 33
-y 0
 elevation -1826
 end
 arch sea
@@ -8473,44 +9948,91 @@ x 33
 y 42
 elevation -4485
 end
-arch sea
+arch deep_sea
 x 33
 y 43
-elevation -4463
+elevation -14435
 end
-arch sea
+arch deep_sea
 x 33
 y 44
-elevation -4436
+elevation -13972
+end
+arch deep_sea
+x 33
+y 45
+elevation -6891
 end
 arch sea
 x 33
 y 45
-elevation -4402
+elevation -3359
+end
+arch mountains_closed
+x 33
+y 45
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 33
 y 46
-elevation -4354
+move_block walk swim
+end
+arch mover_3
+x 33
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
+end
+arch deep_sea
+x 33
+y 47
+elevation -6891
 end
 arch sea
 x 33
 y 47
-elevation -4261
+elevation -3359
+end
+arch mountains_closed
+x 33
+y 47
+connected 123577
+elevation -7267
+unique 1
+end
+arch light4
+x 33
+y 47
+end
+arch deep_sea
+x 33
+y 48
+elevation -6891
 end
 arch sea
 x 33
 y 48
-elevation -3982
+elevation -3359
+end
+arch mountains_closed
+x 33
+y 48
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 33
 y 49
-elevation -3070
 end
 arch sea
 x 34
-y 0
 elevation -1722
 end
 arch sea
@@ -8723,44 +10245,74 @@ x 34
 y 42
 elevation -4630
 end
-arch sea
+arch deep_sea
 x 34
 y 43
-elevation -4623
+elevation -15012
 end
-arch sea
+arch deep_sea
 x 34
 y 44
-elevation -4625
+elevation -14707
+end
+arch deep_sea
+x 34
+y 45
+elevation -6891
 end
 arch sea
 x 34
 y 45
-elevation -4648
+elevation -3359
+end
+arch mountains_closed
+x 34
+y 45
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 34
 y 46
-elevation -4706
+move_block walk swim
+end
+arch mover_3
+x 34
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
+end
+arch deep_sea
+x 34
+y 47
+elevation -7267
 end
 arch sea
 x 34
 y 47
-elevation -4837
+elevation -3359
 end
-arch deep_sea
+arch mountains_closed
+x 34
+y 47
+connected 123577
+elevation -7267
+unique 1
+end
+arch sea
 x 34
 y 48
-elevation -5124
 end
-arch deep_sea
+arch sea
 x 34
 y 49
-elevation -5410
 end
 arch sea
 x 35
-y 0
 elevation -1627
 end
 arch sea
@@ -8973,44 +10525,74 @@ x 35
 y 42
 elevation -4763
 end
-arch sea
+arch deep_sea
 x 35
 y 43
-elevation -4765
+elevation -15677
 end
-arch sea
+arch deep_sea
 x 35
 y 44
-elevation -4789
+elevation -15563
+end
+arch deep_sea
+x 35
+y 45
+elevation -7267
 end
 arch sea
 x 35
 y 45
-elevation -4854
+elevation -3359
+end
+arch mountains_closed
+x 35
+y 45
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 35
 y 46
-elevation -4995
+move_block walk swim
+end
+arch mover_3
+x 35
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
 end
 arch deep_sea
 x 35
 y 47
-elevation -5283
+elevation -6891
 end
-arch deep_sea
+arch sea
+x 35
+y 47
+elevation -3359
+end
+arch mountains_closed
+x 35
+y 47
+connected 123577
+elevation -7267
+unique 1
+end
+arch sea
 x 35
 y 48
-elevation -5983
 end
-arch deep_sea
+arch sea
 x 35
 y 49
-elevation -8158
 end
 arch sea
 x 36
-y 0
 elevation -1548
 end
 arch sea
@@ -9223,44 +10805,87 @@ x 36
 y 42
 elevation -4877
 end
-arch sea
+arch deep_sea
 x 36
 y 43
-elevation -4878
+elevation -16370
 end
-arch sea
+arch deep_sea
 x 36
 y 44
-elevation -4906
+elevation -16447
+end
+arch deep_sea
+x 36
+y 45
+elevation -6891
 end
 arch sea
 x 36
 y 45
-elevation -4986
+elevation -3359
 end
-arch deep_sea
+arch mountains_closed
+x 36
+y 45
+connected 123577
+elevation -7267
+unique 1
+end
+arch sea
 x 36
 y 46
-elevation -5155
+move_block walk swim
+end
+arch mover_3
+x 36
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
 end
 arch deep_sea
 x 36
 y 47
-elevation -5476
+elevation -7267
+end
+arch sea
+x 36
+y 47
+elevation -3359
+end
+arch mountains_closed
+x 36
+y 47
+connected 123577
+elevation -7267
+unique 1
 end
 arch deep_sea
 x 36
 y 48
-elevation -5977
+elevation -6891
 end
-arch deep_sea
+arch sea
+x 36
+y 48
+elevation -3359
+end
+arch mountains_closed
+x 36
+y 48
+connected 123577
+elevation -7267
+unique 1
+end
+arch sea
 x 36
 y 49
-elevation -7594
 end
 arch sea
 x 37
-y 0
 elevation -1496
 end
 arch sea
@@ -9473,44 +11098,112 @@ x 37
 y 42
 elevation -4967
 end
-arch sea
+arch deep_sea
 x 37
 y 43
-elevation -4954
+elevation -17034
+end
+arch deep_sea
+x 37
+y 44
+elevation -7267
 end
 arch sea
 x 37
 y 44
-elevation -4967
+elevation -3359
+end
+arch mountains_closed
+x 37
+y 44
+connected 123577
+elevation -7267
+unique 1
 end
 arch deep_sea
 x 37
 y 45
-elevation -5028
+elevation -7267
 end
-arch deep_sea
+arch sea
+x 37
+y 45
+elevation -3359
+end
+arch mountains_closed
+x 37
+y 45
+connected 123577
+elevation -7267
+unique 1
+end
+arch sea
 x 37
 y 46
-elevation -5171
+move_block walk swim
+end
+arch mover_3
+x 37
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
 end
 arch deep_sea
 x 37
 y 47
-elevation -5429
+elevation -6891
+end
+arch sea
+x 37
+y 47
+elevation -3359
+end
+arch mountains_closed
+x 37
+y 47
+connected 123577
+elevation -7267
+unique 1
 end
 arch deep_sea
 x 37
 y 48
-elevation -5806
+elevation -6891
+end
+arch sea
+x 37
+y 48
+elevation -3359
+end
+arch mountains_closed
+x 37
+y 48
+connected 123577
+elevation -7267
+unique 1
+end
+arch deep_sea
+x 37
+y 49
+elevation -6891
 end
 arch sea
 x 37
 y 49
-elevation -4078
+elevation -3359
+end
+arch mountains_closed
+x 37
+y 49
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 38
-y 0
 elevation -1480
 end
 arch sea
@@ -9723,44 +11416,100 @@ x 38
 y 42
 elevation -5034
 end
-arch sea
+arch deep_sea
 x 38
 y 43
-elevation -4996
+elevation -17623
 end
-arch sea
+arch deep_sea
 x 38
 y 44
-elevation -4974
+elevation -17967
+end
+arch deep_sea
+x 38
+y 45
+elevation -6891
 end
 arch sea
 x 38
 y 45
-elevation -4985
+elevation -3359
 end
-arch deep_sea
+arch mountains_closed
+x 38
+y 45
+connected 123577
+elevation -7267
+unique 1
+end
+arch sea
 x 38
 y 46
-elevation -5057
+move_block walk swim
+end
+arch mover_3
+x 38
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
 end
 arch deep_sea
 x 38
 y 47
-elevation -5234
+elevation -7267
+end
+arch sea
+x 38
+y 47
+elevation -3359
+end
+arch mountains_closed
+x 38
+y 47
+connected 123577
+elevation -7267
+unique 1
 end
 arch deep_sea
 x 38
 y 48
-elevation -5541
+elevation -6891
+end
+arch sea
+x 38
+y 48
+elevation -3359
+end
+arch mountains_closed
+x 38
+y 48
+connected 123577
+elevation -7267
+unique 1
 end
 arch deep_sea
 x 38
 y 49
-elevation -7108
+elevation -6891
+end
+arch sea
+x 38
+y 49
+elevation -3359
+end
+arch mountains_closed
+x 38
+y 49
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 39
-y 0
 elevation -1508
 end
 arch sea
@@ -9976,41 +11725,83 @@ end
 arch deep_sea
 x 39
 y 43
-elevation -5011
+elevation -18108
+end
+arch deep_sea
+x 39
+y 44
+elevation -7267
 end
 arch sea
 x 39
 y 44
-elevation -4938
+elevation -3359
+end
+arch mountains_closed
+x 39
+y 44
+connected 123577
+elevation -7267
+unique 1
+end
+arch deep_sea
+x 39
+y 45
+elevation -7267
 end
 arch sea
 x 39
 y 45
-elevation -4876
+elevation -3359
+end
+arch mountains_closed
+x 39
+y 45
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 39
 y 46
-elevation -4842
+move_block walk swim
+end
+arch mover_3
+x 39
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
+end
+arch deep_sea
+x 39
+y 47
+elevation -6891
 end
 arch sea
 x 39
 y 47
-elevation -4870
+elevation -3359
 end
-arch deep_sea
+arch mountains_closed
+x 39
+y 47
+connected 123577
+elevation -7267
+unique 1
+end
+arch sea
 x 39
 y 48
-elevation -5140
 end
-arch deep_sea
+arch sea
 x 39
 y 49
-elevation -6654
 end
 arch sea
 x 40
-y 0
 elevation -1586
 end
 arch sea
@@ -10226,41 +12017,106 @@ end
 arch deep_sea
 x 40
 y 43
-elevation -5012
+elevation -7267
+end
+arch sea
+x 40
+y 43
+elevation -3359
+end
+arch mountains_closed
+x 40
+y 43
+connected 123577
+elevation -7267
+unique 1
+end
+arch deep_sea
+x 40
+y 44
+elevation -6891
 end
 arch sea
 x 40
 y 44
-elevation -4882
+elevation -3359
+end
+arch mountains_closed
+x 40
+y 44
+connected 123577
+elevation -7267
+unique 1
+end
+arch deep_sea
+x 40
+y 45
+elevation -6891
 end
 arch sea
 x 40
 y 45
-elevation -4735
+elevation -3359
+end
+arch mountains_closed
+x 40
+y 45
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 40
 y 46
-elevation -4571
+move_block walk swim
+end
+arch mover_3
+x 40
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
 end
 arch sea
 x 40
 y 47
-elevation -4391
+elevation -7267
+end
+arch mountains_closed
+x 40
+y 47
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 40
 y 48
-elevation -4169
+elevation -7267
+end
+arch mountains_closed
+x 40
+y 48
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 40
 y 49
-elevation -3143
+elevation -7267
+end
+arch mountains_closed
+x 40
+y 49
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 41
-y 0
 elevation -1721
 end
 arch sea
@@ -10476,41 +12332,110 @@ end
 arch deep_sea
 x 41
 y 43
-elevation -5016
+elevation -18776
 end
-arch sea
+arch grassdark
+face deep_sea.111
+x 41
+y 43
+end
+arch deep_sea
 x 41
 y 44
-elevation -4831
+elevation -19073
+end
+arch creator
+x 41
+y 44
+connected 23465
+lifesave 1
+arch golem
+face deep_sea.111
+animation deep_sea
+hp 2
+maxhp 2
+is_animated 1
+stand_still 1
+end
+end
+arch grass
+name sea
+face deep_sea.111
+x 41
+y 44
+move_block 0
+unique 1
+end
+arch button_plate
+x 41
+y 44
+weight 200000
+invisible 1
+connected 123577
+activate_on_release 0
+end
+arch deep_sea
+x 41
+y 45
+elevation -7267
 end
 arch sea
 x 41
 y 45
-elevation -4601
+elevation -3359
+end
+arch mountains_closed
+x 41
+y 45
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 41
 y 46
-elevation -4311
+move_block walk swim
+end
+arch mover_3
+x 41
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
+end
+arch deep_sea
+x 41
+y 47
+elevation -6891
 end
 arch sea
 x 41
 y 47
-elevation -3923
+elevation -3359
+end
+arch mountains_closed
+x 41
+y 47
+connected 123577
+elevation -7267
+unique 1
+end
+arch light4
+x 41
+y 47
 end
 arch sea
 x 41
 y 48
-elevation -3287
 end
 arch sea
 x 41
 y 49
-elevation -1934
 end
 arch sea
 x 42
-y 0
 elevation -1914
 end
 arch sea
@@ -10726,41 +12651,87 @@ end
 arch deep_sea
 x 42
 y 43
-elevation -5040
+elevation -19014
 end
-arch sea
+arch deep_sea
 x 42
 y 44
-elevation -4810
+elevation -19226
+end
+arch deep_sea
+x 42
+y 45
+elevation -6891
 end
 arch sea
 x 42
 y 45
-elevation -4514
+elevation -3359
+end
+arch mountains_closed
+x 42
+y 45
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 42
 y 46
-elevation -4126
+move_block walk swim
+end
+arch mover_3
+x 42
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
+end
+arch deep_sea
+x 42
+y 47
+elevation -7267
 end
 arch sea
 x 42
 y 47
-elevation -3604
+elevation -3359
+end
+arch mountains_closed
+x 42
+y 47
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 42
 y 48
-elevation -2915
+elevation -7267
+end
+arch mountains_closed
+x 42
+y 48
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 42
 y 49
-elevation -2210
+elevation -7267
+end
+arch mountains_closed
+x 42
+y 49
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 43
-y 0
 elevation -2165
 end
 arch sea
@@ -10976,41 +12947,86 @@ end
 arch deep_sea
 x 43
 y 43
-elevation -5097
+elevation -19240
 end
-arch sea
+arch grass
+face deep_sea.111
 x 43
 y 44
-elevation -4840
+elevation -19386
+move_block 0
+unique 1
+end
+arch lbulletwall_5
+x 43
+y 44
+speed 0.0
+level 20
+direction 7
+invisible 1
+connected 3346
+move_block all -boat
+arch spell_firebolt
+end
+end
+arch deep_sea
+x 43
+y 45
+elevation -7267
 end
 arch sea
 x 43
 y 45
-elevation -4505
+elevation -3359
+end
+arch mountains_closed
+x 43
+y 45
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 43
 y 46
-elevation -4061
+move_block walk swim
+end
+arch mover_3
+x 43
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
+end
+arch deep_sea
+x 43
+y 47
+elevation -6891
 end
 arch sea
 x 43
 y 47
-elevation -3470
+elevation -3359
+end
+arch mountains_closed
+x 43
+y 47
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 43
 y 48
-elevation -2725
 end
 arch sea
 x 43
 y 49
-elevation -2160
 end
 arch sea
 x 44
-y 0
 elevation -2470
 end
 arch sea
@@ -11226,41 +13242,66 @@ end
 arch deep_sea
 x 44
 y 43
-elevation -5196
+elevation -19486
 end
-arch sea
+arch deep_sea
 x 44
 y 44
-elevation -4932
+elevation -19610
+end
+arch deep_sea
+x 44
+y 45
+elevation -6891
 end
 arch sea
 x 44
 y 45
-elevation -4591
+elevation -3359
+end
+arch mountains_closed
+x 44
+y 45
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 44
 y 46
-elevation -4139
+move_block walk swim
+end
+arch mover_3
+x 44
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
 end
 arch sea
 x 44
 y 47
-elevation -3517
+elevation -7267
+end
+arch mountains_closed
+x 44
+y 47
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 44
 y 48
-elevation -2659
 end
 arch sea
 x 44
 y 49
-elevation -1252
 end
 arch sea
 x 45
-y 0
 elevation -2816
 end
 arch sea
@@ -11476,41 +13517,84 @@ end
 arch deep_sea
 x 45
 y 43
-elevation -5337
+elevation -14080
 end
 arch deep_sea
 x 45
 y 44
-elevation -5088
+elevation -13949
+end
+arch deep_sea
+x 45
+y 45
+elevation -6891
 end
 arch sea
 x 45
 y 45
-elevation -4773
+elevation -3359
+end
+arch mountains_closed
+x 45
+y 45
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 45
 y 46
-elevation -4365
+move_block walk swim
+end
+arch mover_3
+x 45
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
+end
+arch deep_sea
+x 45
+y 47
+elevation -7267
 end
 arch sea
 x 45
 y 47
-elevation -3814
+elevation -3359
+end
+arch mountains_closed
+x 45
+y 47
+connected 123577
+elevation -7267
+unique 1
+end
+arch deep_sea
+x 45
+y 48
+elevation -7267
 end
 arch sea
 x 45
 y 48
-elevation -2893
+elevation -3359
+end
+arch mountains_closed
+x 45
+y 48
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 45
 y 49
-elevation -1430
 end
 arch sea
 x 46
-y 0
 elevation -3190
 end
 arch sea
@@ -11726,41 +13810,71 @@ end
 arch deep_sea
 x 46
 y 43
-elevation -5516
+elevation -13837
 end
 arch deep_sea
 x 46
 y 44
-elevation -5297
+elevation -13561
 end
 arch deep_sea
 x 46
 y 45
-elevation -5033
+elevation -7267
+end
+arch sea
+x 46
+y 45
+elevation -3359
+end
+arch mountains_closed
+x 46
+y 45
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 46
 y 46
-elevation -4715
+move_block walk swim
+end
+arch mover_3
+x 46
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
+end
+arch deep_sea
+x 46
+y 47
+elevation -6891
 end
 arch sea
 x 46
 y 47
-elevation -4318
+elevation -3359
+end
+arch mountains_closed
+x 46
+y 47
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 46
 y 48
-elevation -3896
 end
 arch sea
 x 46
 y 49
-elevation -2250
 end
 arch sea
 x 47
-y 0
 elevation -3576
 end
 arch sea
@@ -11976,41 +14090,84 @@ end
 arch deep_sea
 x 47
 y 43
-elevation -5725
+elevation -13672
 end
 arch deep_sea
 x 47
 y 44
-elevation -5543
+elevation -13260
 end
 arch deep_sea
 x 47
 y 45
-elevation -5338
+elevation -6891
+end
+arch sea
+x 47
+y 45
+elevation -3359
+end
+arch mountains_closed
+x 47
+y 45
+connected 123577
+elevation -7267
+unique 1
+end
+arch sea
+x 47
+y 46
+move_block walk swim
+end
+arch mover_3
+x 47
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
 end
 arch deep_sea
 x 47
-y 46
-elevation -5123
+y 47
+elevation -7267
 end
 arch sea
 x 47
 y 47
-elevation -4943
+elevation -3359
+end
+arch mountains_closed
+x 47
+y 47
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 47
 y 48
-elevation -4785
 end
 arch deep_sea
 x 47
 y 49
-elevation -6732
+elevation -6891
+end
+arch sea
+x 47
+y 49
+elevation -3359
+end
+arch mountains_closed
+x 47
+y 49
+connected 123577
+elevation -7267
+unique 1
 end
 arch sea
 x 48
-y 0
 elevation -3964
 end
 arch sea
@@ -12226,41 +14383,75 @@ end
 arch deep_sea
 x 48
 y 43
-elevation -5954
+elevation -13623
 end
 arch deep_sea
 x 48
 y 44
-elevation -5807
+elevation -13101
 end
 arch deep_sea
 x 48
 y 45
-elevation -5651
+elevation -7267
 end
-arch deep_sea
+arch sea
+x 48
+y 45
+elevation -3359
+end
+arch mountains_closed
+x 48
+y 45
+connected 123577
+elevation -7267
+unique 1
+end
+arch sea
 x 48
 y 46
-elevation -5516
+move_block walk swim
+end
+arch mover_3
+x 48
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
 end
 arch deep_sea
 x 48
 y 47
-elevation -5462
+elevation -6891
 end
-arch deep_sea
+arch sea
+x 48
+y 47
+elevation -3359
+end
+arch mountains_closed
+x 48
+y 47
+connected 123577
+elevation -7267
+unique 1
+end
+arch light4
+x 48
+y 47
+end
+arch sea
 x 48
 y 48
-elevation -5719
 end
 arch sea
 x 48
 y 49
-elevation -4957
 end
 arch sea
 x 49
-y 0
 elevation -4348
 end
 arch sea
@@ -12476,35 +14667,66 @@ end
 arch deep_sea
 x 49
 y 43
-elevation -6197
+elevation -13724
 end
 arch deep_sea
 x 49
 y 44
-elevation -6077
+elevation -13146
 end
 arch deep_sea
 x 49
 y 45
-elevation -5952
+elevation -6891
 end
-arch deep_sea
+arch sea
+x 49
+y 45
+elevation -3359
+end
+arch mountains_closed
+x 49
+y 45
+connected 123577
+elevation -7267
+unique 1
+end
+arch sea
 x 49
 y 46
-elevation -5843
+move_block walk swim
+end
+arch mover_3
+x 49
+y 46
+speed 1.0
+level 1
+attacktype 1
+move_type fly_low fly_high
+move_on fly_low fly_high
 end
 arch deep_sea
 x 49
 y 47
-elevation -5804
+elevation -7267
 end
-arch deep_sea
+arch sea
+x 49
+y 47
+elevation -3359
+end
+arch mountains_closed
+x 49
+y 47
+connected 123577
+elevation -7267
+unique 1
+end
+arch sea
 x 49
 y 48
-elevation -5960
 end
-arch deep_sea
+arch sea
 x 49
 y 49
-elevation -7104
 end

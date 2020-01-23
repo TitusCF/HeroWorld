@@ -124,47 +124,47 @@ x 2
 y 6
 connected drytheocean
 end
-arch sailing_galleon
+arch sea
 x 2
+y 7
+move_block 0
+end
+arch spikes_closed
+x 2
+y 7
+invisible 1
+connected drytheocean
+move_block all -boat
+end
+arch oceanfloor_open
+luck 1
+x 2
+y 7
+connected drytheocean
+end
+arch sea
+x 2
+y 8
+move_block 0
+end
+arch spikes_closed
+x 2
+y 8
+invisible 1
+connected drytheocean
+move_block all -boat
+end
+arch oceanfloor_open
+luck 1
+x 2
+y 8
+connected drytheocean
+end
+arch sea
+x 3
 y 6
 end
-arch sea
-x 2
-y 7
-move_block 0
-end
-arch spikes_closed
-x 2
-y 7
-invisible 1
-connected drytheocean
-move_block all -boat
-end
-arch oceanfloor_open
-luck 1
-x 2
-y 7
-connected drytheocean
-end
-arch sea
-x 2
-y 8
-move_block 0
-end
-arch spikes_closed
-x 2
-y 8
-invisible 1
-connected drytheocean
-move_block all -boat
-end
-arch oceanfloor_open
-luck 1
-x 2
-y 8
-connected drytheocean
-end
-arch grass_only
+arch sailing_galleon
 x 3
 y 6
 end
@@ -204,6 +204,4 @@ arch button_handle
 x 5
 y 8
 connected drytheocean
-no_pick 0
-activate_on_release 0
 end

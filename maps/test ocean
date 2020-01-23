@@ -8,105 +8,6 @@ Modified: 2020-01-23 Acer
 endmsg
 end
 arch sea
-y 6
-move_block 0
-end
-arch spikes_closed
-y 6
-invisible 1
-connected drytheocean
-move_block all -boat
-end
-arch oceanfloor_open
-luck 1
-y 6
-connected drytheocean
-end
-arch sea
-y 7
-move_block 0
-end
-arch spikes_closed
-y 7
-invisible 1
-connected drytheocean
-move_block all -boat
-end
-arch oceanfloor_open
-luck 1
-y 7
-connected drytheocean
-end
-arch sea
-y 8
-move_block 0
-end
-arch spikes_closed
-y 8
-invisible 1
-connected drytheocean
-move_block all -boat
-end
-arch oceanfloor_open
-luck 1
-y 8
-connected drytheocean
-end
-arch sea
-x 1
-y 6
-move_block 0
-end
-arch spikes_closed
-x 1
-y 6
-invisible 1
-connected drytheocean
-move_block all -boat
-end
-arch oceanfloor_open
-luck 1
-x 1
-y 6
-connected drytheocean
-end
-arch sea
-x 1
-y 7
-move_block 0
-end
-arch spikes_closed
-x 1
-y 7
-invisible 1
-connected drytheocean
-move_block all -boat
-end
-arch oceanfloor_open
-luck 1
-x 1
-y 7
-connected drytheocean
-end
-arch sea
-x 1
-y 8
-move_block 0
-end
-arch spikes_closed
-x 1
-y 8
-invisible 1
-connected drytheocean
-move_block all -boat
-end
-arch oceanfloor_open
-luck 1
-x 1
-y 8
-connected drytheocean
-end
-arch sea
 x 2
 y 6
 move_block 0
@@ -117,48 +18,14 @@ y 6
 invisible 1
 connected drytheocean
 move_block all -boat
+activate_on_release 0
 end
 arch oceanfloor_open
 luck 1
 x 2
 y 6
 connected drytheocean
-end
-arch sea
-x 2
-y 7
-move_block 0
-end
-arch spikes_closed
-x 2
-y 7
-invisible 1
-connected drytheocean
-move_block all -boat
-end
-arch oceanfloor_open
-luck 1
-x 2
-y 7
-connected drytheocean
-end
-arch sea
-x 2
-y 8
-move_block 0
-end
-arch spikes_closed
-x 2
-y 8
-invisible 1
-connected drytheocean
-move_block all -boat
-end
-arch oceanfloor_open
-luck 1
-x 2
-y 8
-connected drytheocean
+activate_on_release 0
 end
 arch sea
 x 3

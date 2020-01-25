@@ -1180,6 +1180,25 @@ y 5
 end
 arch dungeon_magic
 x 6
+y 5
+end
+arch depositbox
+name Deposit Box
+x 6
+y 5
+arch event_apply
+name Apply
+title Python
+slaying /python/IPO/banksay.py
+end
+arch event_close
+name Close
+title Python
+slaying /python/IPO/banksay.py
+end
+end
+arch dungeon_magic
+x 6
 y 6
 end
 arch cobblestones2

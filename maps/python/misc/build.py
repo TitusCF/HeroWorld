@@ -4,8 +4,8 @@ import re
 import random
 #Buildable Building code by MikeeUSA (with help from Rednaxela) (C) GPL (v2 or later at your option)
 
-templatedir = '/home/cfserver/cfservernew/share/crossfire/maps/templates/buildable/'
-builtdir = '/home/cfserver/cfservernew/share/crossfire/maps/world_built/'
+templatedir = '/home/titus/share/crossfire/maps/templates/buildable/'
+builtdir = '/home/titus/share/crossfire/maps/world_built/'
 antarcticworld = 0 #By default we are not in the snow underworld.
 aquiferworld = 0 #By default we are not in the eastern underworld.
 interworld = 0 #By default we are not in the germanic underworld.
@@ -198,7 +198,9 @@ if isplayer == 1:
         elif (Ob.ArchName == 'fountain'):
             isplayer = 0
             me.Map.Print('You cannot build on a fountain!')
-        
+        elif (Ob.Floor != True):
+            isplayer = 0
+            me.Map.Print('Debirs must be cleared from land before building: use a fire spell or ability to clear the way.')
             
         Ob = Ob.Below
 

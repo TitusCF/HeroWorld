@@ -184,6 +184,21 @@ arch earth
 x 4
 y 6
 end
+arch sign
+name Build Board
+msg
+I am a talking board, designed for leaving messages for the DM.
+(Bug board is to the left)
+If you don't know what to say, say help.
+endmsg
+x 4
+y 6
+arch event_say
+name Buld Board
+title Python
+slaying python/misc/buildsale.py
+end
+end
 arch earth
 x 4
 y 7

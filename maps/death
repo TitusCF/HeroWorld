@@ -807,8 +807,8 @@ connected 9999991
 lifesave 1
 activate_on_release 0
 arch scroll_new
-name Return to life...
-face stair3_ystone_up.111
+name Stairs
+face stair2_up.111
 level 20
 no_pick 1
 identified 1
@@ -830,7 +830,7 @@ x 3
 y 1
 end
 arch detector
-slaying Angel
+slaying Stairs
 x 3
 y 1
 invisible 1
@@ -1102,9 +1102,9 @@ x 3
 y 15
 connected 65498326
 arch scroll_new
-name Angel
-face mesangel.112
-level 20
+name Stairs
+face stair2_up.111
+level 111
 no_pick 1
 identified 1
 arch spell_word_of_recall
@@ -1123,7 +1123,7 @@ x 3
 y 15
 end
 arch detector
-slaying Angel
+slaying Stairs
 x 3
 y 15
 invisible 1
@@ -1961,8 +1961,8 @@ y 1
 connected 76593
 activate_on_push 0
 arch scroll_new
-name Demon
-face fiend.111
+name Stairs
+face stair2_up.111
 level 111
 no_pick 1
 identified 1
@@ -1984,7 +1984,7 @@ x 7
 y 1
 end
 arch detector
-slaying Demon
+slaying Stairs
 x 7
 y 1
 invisible 1
@@ -2049,7 +2049,10 @@ y 4
 end
 arch magic_mouth
 msg
-Stand over the demon of penalty and 'apply'.
+Take these stairs to return home.
+You will take a penalty to your experience.
+
+If you have a gravestone you can take the white path.
 endmsg
 x 7
 y 4
@@ -2162,6 +2165,16 @@ arch dungeon_magic
 x 7
 y 12
 end
+arch magic_mouth
+msg
+Take these stairs to return home.
+You will take a penalty to your experience.
+
+If you have a gravestone you can take the white path.
+endmsg
+x 7
+y 12
+end
 arch unholy_ground
 x 7
 y 13
@@ -2208,8 +2221,8 @@ y 15
 connected 32986754
 activate_on_push 0
 arch scroll_new
-name Demon
-face fiend.111
+name Stairs
+face stair2_up.111
 level 111
 no_pick 1
 identified 1
@@ -2231,7 +2244,7 @@ x 7
 y 15
 end
 arch detector
-slaying Demon
+slaying Stairs
 x 7
 y 15
 invisible 1
@@ -3482,6 +3495,10 @@ x 14
 y 1
 end
 arch oil_sea
+x 14
+y 2
+end
+arch stair2_up
 x 14
 y 2
 end

@@ -1951,14 +1951,18 @@ end
 arch awall_2_1_2
 x 7
 end
+arch unholy_ground
+x 7
+y 1
+end
 arch creator
 x 7
 y 1
 connected 76593
-activate_on_release 0
+activate_on_push 0
 arch scroll_new
-name Return to life...
-face stair3_ystone_up.111
+name Demon
+face fiend.111
 level 111
 no_pick 1
 identified 1
@@ -1975,21 +1979,16 @@ casting_time 150
 end
 end
 end
-arch unholy_ground
-x 7
-y 1
-end
 arch blackmarble
 x 7
 y 1
-damned 0
 end
 arch detector
 slaying Demon
 x 7
 y 1
 invisible 1
-connected 4689532
+connected 275940
 end
 arch pit_open
 hp 9
@@ -1998,7 +1997,7 @@ wc 2
 x 7
 y 1
 invisible 1
-connected 4689532
+connected 275940
 end
 arch unholy_ground
 x 7

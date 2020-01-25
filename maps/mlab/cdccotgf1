@@ -10,7 +10,7 @@ msg
 Creator: Mikeeusa
 Email: gnu@foo.bar
 Date: Tue Aug  3 23:32:57 2004
-Modified: 2020-01-18 Acer
+Modified: 2020-01-24 Acer
 endmsg
 outdoor 1
 end
@@ -24583,7 +24583,12 @@ x 40
 y 74
 speed 0.500000
 connected 495867
-activate_on_release 0
+end
+arch check_inv
+slaying cdcmilkeepps1
+x 40
+y 74
+connected 495867
 end
 arch dungeon_magic
 x 40
@@ -25283,7 +25288,12 @@ x 41
 y 74
 speed 0.500000
 connected 495867
-activate_on_release 0
+end
+arch check_inv
+slaying cdcmilkeepps1
+x 41
+y 74
+connected 495867
 end
 arch dungeon_magic
 x 41
@@ -46687,12 +46697,6 @@ x 95
 y 74
 unique 1
 end
-arch grate_open_2
-x 95
-y 74
-speed 0.500000
-value 1
-end
 arch flagstone
 name floor
 name_pl floor
@@ -47063,12 +47067,6 @@ arch dungeon_floor
 x 96
 y 74
 unique 1
-end
-arch grate_open_2
-x 96
-y 74
-speed 0.500000
-value 1
 end
 arch flagstone
 name floor
@@ -51387,7 +51385,22 @@ name_pl floor
 face shop_empty.111
 x 106
 y 46
-unique 1
+unique 0
+end
+arch creator
+x 106
+y 46
+connected 2938475
+activate_on_release 0
+arch scroll_new
+skill levitation
+type 130
+value 5500
+identified 1
+identified_face scroll_sorcery.111
+identified_name scroll of levitation
+identified_name_pl scrolls of levitation
+end
 end
 arch flagstone
 name nosave floor
@@ -52213,14 +52226,6 @@ x 108
 y 45
 unique 1
 end
-arch scroll_sorcery
-skill levitation
-x 108
-y 45
-identified 1
-identified_name scroll of levitation
-identified_name_pl scrolls of levitation
-end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -52247,6 +52252,13 @@ arch dungeon_floor
 x 108
 y 50
 unique 1
+end
+arch check_inv
+slaying cdcmilkeepps1
+x 108
+y 50
+last_heal 1
+connected 2938475
 end
 arch afloor_left
 name floor
@@ -54064,6 +54076,13 @@ arch dungeon_floor
 x 113
 y 50
 unique 1
+end
+arch check_inv
+slaying cdcmilkeepps1
+x 113
+y 50
+last_heal 1
+connected 2938475
 end
 arch afloor_left
 name floor

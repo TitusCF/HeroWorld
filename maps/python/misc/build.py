@@ -198,9 +198,6 @@ if isplayer == 1:
         elif (Ob.ArchName == 'fountain'):
             isplayer = 0
             me.Map.Print('You cannot build on a fountain!')
-        elif (Ob.Floor != True):
-            isplayer = 0
-            me.Map.Print('Debirs must be cleared from land before building: use a fire spell or ability to clear the way.')
             
         Ob = Ob.Below
 

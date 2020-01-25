@@ -6290,9 +6290,23 @@ arch afloor_blue_left
 x 28
 y 4
 end
-arch flagstone
+arch afloor_magenta_left
 x 28
 y 5
+end
+arch bones2
+name Spiteful Skull
+msg
+This skull seems to snear at you in disgust...
+endmsg
+dam 0
+x 28
+y 5
+body_arm 0
+arch event_apply
+title buildsale
+slaying python/misc/buildsale.py
+end
 end
 arch afloor_blue_left
 x 28

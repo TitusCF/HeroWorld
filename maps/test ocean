@@ -11,18 +11,20 @@ arch jungle_2
 y 7
 end
 arch spikes_closed
-slaying testtest
 y 7
+connected testtest
 is_used_up 1
 activate_on_release 0
 end
 arch creator
-slaying testtest
 y 7
+connected testtest
+lifesave 1
 activate_on_push 0
 arch spikes_closed
-slaying testtest
 face spike.111
+connected testtest
+is_used_up 1
 activate_on_release 0
 end
 end
@@ -42,9 +44,9 @@ x 2
 y 7
 end
 arch button_lever
-slaying testtest
 x 2
 y 7
+connected testtest
 end
 arch jungle_2
 x 2

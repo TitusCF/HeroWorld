@@ -3829,30 +3829,25 @@ x 15
 y 24
 end
 arch chest
-name Pocket Wormhole (Navar)
-name_pl Pocket Wormholes (Navar)
+name Scorn Apartment Upgrade
 face silver_frost.111
 x 15
 y 24
-nrof 1000
+nrof 1
 weight 100
+randomitems none
 arch stair_up_1
-name Portal to Scorn
-name_pl Portal of Scorn
-slaying /world/world_104_115
+name stairs going down
+slaying /scorn_apartment_lower
 msg
 You are swept into the ground!
 ...
 You wake up.
 endmsg
-face archtree.111
-hp 20
-sp 22
-no_pick 0
-walk_on 1
-is_thrown 1
-fly_on 1
-damned 1
+face stair3_do.111
+hp 7
+sp 4
+unique 1
 end
 end
 arch afloor_blue_left
@@ -5678,6 +5673,10 @@ x 24
 y 27
 end
 arch afloor_blue_left
+x 24
+y 28
+end
+arch stair_3_down
 x 24
 y 28
 end

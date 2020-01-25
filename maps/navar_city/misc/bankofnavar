@@ -8,7 +8,7 @@ msg
 Creator: MikeeUSA
 Email: gnu@foo.bar
 Date: Tue Jul 18 17:02:19 2006
-Modified: 2019-01-30 Acer
+Modified: 2020-01-25 Acer
 endmsg
 end
 arch dungeon_magic
@@ -408,6 +408,25 @@ end
 arch dungeon_floor
 x 2
 y 10
+end
+arch dungeon_magic
+x 2
+y 10
+end
+arch depositbox
+name Deposit Box
+x 2
+y 10
+arch event_apply
+name Apply
+title Python
+slaying /python/IPO/banksay.py
+end
+arch event_close
+name Close
+title Python
+slaying /python/IPO/banksay.py
+end
 end
 arch dungeon_magic
 x 2
@@ -1278,6 +1297,29 @@ y 6
 end
 arch dungeon_magic
 x 8
+y 6
+end
+arch chair_2.1
+x 8
+y 6
+end
+arch c_woman
+name Alwati
+msg
+@match *
+I'm on a break.
+endmsg
+x 8
+y 6
+monster 0
+stand_still 1
+arch event_say
+title Python
+slaying /python/IPO/banksay.py
+end
+end
+arch dungeon_magic
+x 8
 y 7
 end
 arch dungeon_floor
@@ -1731,31 +1773,22 @@ arch westcwall_0
 x 11
 y 11
 end
-arch dungeon_floor
+arch tile_tan_floor
 x 11
 y 12
 end
-arch grate_closed_2
-x 11
-y 12
-speed 0.500000
-end
-arch dungeon_floor
+arch tile_tan_floor
 x 11
 y 13
 end
-arch westcwall_0
+arch sign
+name REALTY OFFICE
 x 11
 y 13
 end
-arch dungeon_floor
+arch tile_tan_floor
 x 11
 y 14
-end
-arch igate_closed_2
-x 11
-y 14
-speed 0.500000
 end
 arch dungeon_floor
 x 11
@@ -1901,48 +1934,15 @@ x 12
 y 11
 speed 0.500000
 end
-arch dungeon_floor
+arch tile_tan_floor
 x 12
 y 12
 end
-arch thief
-msg
-@match hi|hello
-Help me please! They are going to
-chop off nearly all of my appendages,
-and maybe then some if the guard is
-giddy! PLEASE help me escape, I beg
-you. The moment they suspect that you
-have stolen they put you in here,
-that man being butchered by the guard
-now was only taken captive one hour
-ago! Please help me escape, they even
-butcher children!
-
-
-
-endmsg
-x 12
-y 12
-type 0
-monster 1
-unaggressive 1
-end
-arch dungeon_floor
+arch tile_tan_floor
 x 12
 y 13
 end
-arch dungeon_floor
-x 12
-y 14
-end
-arch child_thief
-msg
-@match hi|hello
-HELP ME THEY ARE GOING TO CUT OFF MY
-HANDS AND FEET!
-
-endmsg
+arch tile_tan_floor
 x 12
 y 14
 end
@@ -2089,17 +2089,32 @@ arch westcwall_0
 x 13
 y 11
 end
-arch dungeon_floor
+arch tile_tan_floor
 x 13
 y 12
 end
-arch dungeon_floor
+arch table_4
+x 13
+y 12
+move_block all
+end
+arch tile_tan_floor
 x 13
 y 13
 end
-arch dungeon_floor
+arch table_4
+x 13
+y 13
+move_block all
+end
+arch tile_tan_floor
 x 13
 y 14
+end
+arch table_4
+x 13
+y 14
+move_block all
 end
 arch dungeon_floor
 x 13
@@ -2214,22 +2229,30 @@ x 14
 y 11
 speed 0.500000
 end
-arch dungeon_floor
+arch tile_tan_floor
 x 14
 y 12
 end
-arch dungeon_floor
+arch tile_tan_floor
 x 14
 y 13
 end
-arch thief
+arch c_woman
+name Alwati
+msg
+@match *
+I'm on a break.
+endmsg
 x 14
 y 13
-type 0
-monster 1
-unaggressive 1
+monster 0
+stand_still 1
+arch event_say
+title Python
+slaying python/misc/buildsale.py
 end
-arch dungeon_floor
+end
+arch tile_tan_floor
 x 14
 y 14
 end

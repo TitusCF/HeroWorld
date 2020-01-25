@@ -963,10 +963,6 @@ arch event_say
 title Python
 slaying /python/IPO/banksay.py
 end
-arch event_say
-title CFBank
-slaying python/CFBank.py
-end
 end
 arch dungeon_magic
 x 5
@@ -4876,7 +4872,7 @@ arch cobblestones2
 x 22
 y 9
 end
-arch cwall_3_3
+arch dwall_2_2_3
 x 22
 y 9
 end
@@ -4900,7 +4896,7 @@ arch cobblestones2
 x 22
 y 11
 end
-arch cwall_4
+arch dwall_3_4
 x 22
 y 11
 end
@@ -4912,7 +4908,7 @@ arch cobblestones2
 x 22
 y 12
 end
-arch cwall_2_1_1
+arch dwall_3_2
 x 22
 y 12
 end
@@ -4924,7 +4920,7 @@ arch cobblestones2
 x 22
 y 13
 end
-arch cwall_4
+arch dwall_3_4
 x 22
 y 13
 end
@@ -5094,44 +5090,15 @@ arch cobblestones2
 x 23
 y 8
 end
-arch dungeon_magic
+arch tile_tan_floor
 x 23
 y 9
 end
-arch cobblestones2
-x 23
-y 9
-end
-arch cwall_1_3
-x 23
-y 9
-end
-arch dungeon_magic
+arch tile_tan_floor
 x 23
 y 10
 end
-arch cobblestones2
-x 23
-y 10
-end
-arch platinum_converter2
-name buy ruby
-slaying money
-other_arch ruby
-sp 1
-food 200
-x 23
-y 10
-end
-arch dungeon_magic
-x 23
-y 11
-end
-arch cobblestones2
-x 23
-y 11
-end
-arch cwall_1_3
+arch tile_tan_floor
 x 23
 y 11
 end
@@ -5143,12 +5110,7 @@ arch cobblestones2
 x 23
 y 12
 end
-arch platinum_converter2
-name buy emerald
-slaying money
-other_arch emerald
-sp 1
-food 160
+arch dwall_2_1_2
 x 23
 y 12
 end
@@ -5157,10 +5119,6 @@ x 23
 y 13
 end
 arch cobblestones2
-x 23
-y 13
-end
-arch cwall_1_3
 x 23
 y 13
 end
@@ -5169,15 +5127,6 @@ x 23
 y 14
 end
 arch cobblestones2
-x 23
-y 14
-end
-arch platinum_converter2
-name buy pearl
-slaying money
-other_arch pearl
-sp 1
-food 50
 x 23
 y 14
 end
@@ -5186,10 +5135,6 @@ x 23
 y 15
 end
 arch cobblestones2
-x 23
-y 15
-end
-arch cwall_1_3
 x 23
 y 15
 end
@@ -5198,15 +5143,6 @@ x 23
 y 16
 end
 arch cobblestones2
-x 23
-y 16
-end
-arch platinum_converter2
-name buy sapphire
-slaying money
-other_arch sapphire
-sp 1
-food 185
 x 23
 y 16
 end
@@ -5344,32 +5280,15 @@ arch cobblestones2
 x 24
 y 8
 end
-arch dungeon_magic
+arch tile_tan_floor
 x 24
 y 9
 end
-arch cobblestones2
-x 24
-y 9
-end
-arch dungeon_magic
+arch tile_tan_floor
 x 24
 y 10
 end
-arch cobblestones2
-x 24
-y 10
-end
-arch ruby
-x 24
-y 10
-no_pick 1
-end
-arch dungeon_magic
-x 24
-y 11
-end
-arch cobblestones2
+arch tile_tan_floor
 x 24
 y 11
 end
@@ -5381,10 +5300,9 @@ arch cobblestones2
 x 24
 y 12
 end
-arch emerald
+arch dwall_2_1_2
 x 24
 y 12
-no_pick 1
 end
 arch dungeon_magic
 x 24
@@ -5402,11 +5320,6 @@ arch cobblestones2
 x 24
 y 14
 end
-arch pearl
-x 24
-y 14
-no_pick 1
-end
 arch dungeon_magic
 x 24
 y 15
@@ -5422,11 +5335,6 @@ end
 arch cobblestones2
 x 24
 y 16
-end
-arch sapphire
-x 24
-y 16
-no_pick 1
 end
 arch dungeon_magic
 x 24
@@ -5565,27 +5473,24 @@ arch cobblestones2
 x 25
 y 8
 end
-arch dungeon_magic
+arch cwall_1_4
+x 25
+y 8
+end
+arch tile_tan_floor
 x 25
 y 9
 end
-arch cobblestones2
-x 25
-y 9
-end
-arch dungeon_magic
+arch tile_tan_floor
 x 25
 y 10
 end
-arch cobblestones2
+arch sign
+name REALTY OFFICE
 x 25
 y 10
 end
-arch dungeon_magic
-x 25
-y 11
-end
-arch cobblestones2
+arch tile_tan_floor
 x 25
 y 11
 end
@@ -5594,6 +5499,10 @@ x 25
 y 12
 end
 arch cobblestones2
+x 25
+y 12
+end
+arch dwall_2_1_2
 x 25
 y 12
 end
@@ -5637,25 +5546,11 @@ arch cobblestones2
 x 25
 y 17
 end
-arch gem
-x 25
-y 17
-no_pick 1
-end
 arch dungeon_magic
 x 25
 y 18
 end
 arch cobblestones2
-x 25
-y 18
-end
-arch platinum_converter2
-name buy diamond
-slaying money
-other_arch gem
-sp 1
-food 400
 x 25
 y 18
 end
@@ -5764,32 +5659,19 @@ arch cobblestones2
 x 26
 y 8
 end
-arch dungeon_magic
+arch dwall_2_1_2
+x 26
+y 8
+end
+arch tile_tan_floor
 x 26
 y 9
 end
-arch cobblestones2
-x 26
-y 9
-end
-arch dungeon_magic
+arch tile_tan_floor
 x 26
 y 10
 end
-arch cobblestones2
-x 26
-y 10
-end
-arch jadecoin
-x 26
-y 10
-no_pick 1
-end
-arch dungeon_magic
-x 26
-y 11
-end
-arch cobblestones2
+arch tile_tan_floor
 x 26
 y 11
 end
@@ -5801,11 +5683,9 @@ arch cobblestones2
 x 26
 y 12
 end
-arch platinacoin
+arch dwall_2_1_2
 x 26
 y 12
-no_pick 1
-identified 1
 end
 arch dungeon_magic
 x 26
@@ -5823,12 +5703,6 @@ arch cobblestones2
 x 26
 y 14
 end
-arch goldcoin
-x 26
-y 14
-no_pick 1
-identified 1
-end
 arch dungeon_magic
 x 26
 y 15
@@ -5844,12 +5718,6 @@ end
 arch cobblestones2
 x 26
 y 16
-end
-arch silvercoin
-x 26
-y 16
-no_pick 1
-identified 1
 end
 arch dungeon_magic
 x 26
@@ -5991,44 +5859,36 @@ arch cobblestones2
 x 27
 y 8
 end
-arch dungeon_magic
+arch dwall_2_1_2
+x 27
+y 8
+end
+arch tile_tan_floor
 x 27
 y 9
 end
-arch cobblestones2
+arch table_4
 x 27
 y 9
+move_block all
 end
-arch cwall_1_4
-x 27
-y 9
-end
-arch dungeon_magic
+arch tile_tan_floor
 x 27
 y 10
 end
-arch cobblestones2
+arch table_4
 x 27
 y 10
+move_block all
 end
-arch platinum_converter2
-name buy jade
-slaying money
-food 5000
-x 27
-y 10
-end
-arch dungeon_magic
+arch tile_tan_floor
 x 27
 y 11
 end
-arch cobblestones2
+arch table_4
 x 27
 y 11
-end
-arch cwall_1_4
-x 27
-y 11
+move_block all
 end
 arch dungeon_magic
 x 27
@@ -6038,11 +5898,7 @@ arch cobblestones2
 x 27
 y 12
 end
-arch platinum_converter2
-name buy platinum
-slaying money
-other_arch platinacoin
-food 50
+arch dwall_2_1_2
 x 27
 y 12
 end
@@ -6051,10 +5907,6 @@ x 27
 y 13
 end
 arch cobblestones2
-x 27
-y 13
-end
-arch cwall_1_4
 x 27
 y 13
 end
@@ -6063,14 +5915,6 @@ x 27
 y 14
 end
 arch cobblestones2
-x 27
-y 14
-end
-arch platinum_converter2
-name buy gold
-slaying money
-other_arch goldcoin
-food 10
 x 27
 y 14
 end
@@ -6079,10 +5923,6 @@ x 27
 y 15
 end
 arch cobblestones2
-x 27
-y 15
-end
-arch cwall_1_4
 x 27
 y 15
 end
@@ -6091,14 +5931,6 @@ x 27
 y 16
 end
 arch cobblestones2
-x 27
-y 16
-end
-arch platinum_converter2
-name buy silver
-slaying money
-other_arch silvercoin
-food 1
 x 27
 y 16
 end
@@ -6107,10 +5939,6 @@ x 27
 y 17
 end
 arch cobblestones2
-x 27
-y 17
-end
-arch cwall_2_2_2
 x 27
 y 17
 end
@@ -6241,39 +6069,34 @@ arch cobblestones2
 x 28
 y 8
 end
-arch dungeon_magic
+arch dwall_2_1_2
+x 28
+y 8
+end
+arch tile_tan_floor
 x 28
 y 9
 end
-arch cobblestones2
-x 28
-y 9
-end
-arch cwall_2_2_3
-x 28
-y 9
-end
-arch dungeon_magic
+arch tile_tan_floor
 x 28
 y 10
 end
-arch cobblestones2
+arch c_woman
+name Alwati
+msg
+@match *
+I'm on a break.
+endmsg
 x 28
 y 10
+monster 0
+stand_still 1
+arch event_say
+title Python
+slaying python/misc/buildsale.py
 end
-arch cwall_2_1_1
-x 28
-y 10
 end
-arch dungeon_magic
-x 28
-y 11
-end
-arch cobblestones2
-x 28
-y 11
-end
-arch cwall_3_4
+arch tile_tan_floor
 x 28
 y 11
 end
@@ -6285,7 +6108,7 @@ arch cobblestones2
 x 28
 y 12
 end
-arch cwall_2_1_1
+arch dwall_2_1_2
 x 28
 y 12
 end
@@ -6294,10 +6117,6 @@ x 28
 y 13
 end
 arch cobblestones2
-x 28
-y 13
-end
-arch cwall_3_4
 x 28
 y 13
 end
@@ -6306,10 +6125,6 @@ x 28
 y 14
 end
 arch cobblestones2
-x 28
-y 14
-end
-arch cwall_2_1_1
 x 28
 y 14
 end
@@ -6318,10 +6133,6 @@ x 28
 y 15
 end
 arch cobblestones2
-x 28
-y 15
-end
-arch cwall_3_4
 x 28
 y 15
 end
@@ -6330,10 +6141,6 @@ x 28
 y 16
 end
 arch cobblestones2
-x 28
-y 16
-end
-arch cwall_2_1_1
 x 28
 y 16
 end
@@ -6342,10 +6149,6 @@ x 28
 y 17
 end
 arch cobblestones2
-x 28
-y 17
-end
-arch cwall_2_2_4
 x 28
 y 17
 end
@@ -6470,7 +6273,7 @@ arch cobblestones2
 x 29
 y 8
 end
-arch cwall_2_1_1
+arch dwall_3_4
 x 29
 y 8
 end
@@ -6518,7 +6321,7 @@ arch cobblestones2
 x 29
 y 12
 end
-arch cwall_2_1_1
+arch dwall_3_4
 x 29
 y 12
 end

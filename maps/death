@@ -6,7 +6,7 @@ region afterlife
 width 16
 height 17
 msg
-Modified: 2020-01-24 Acer
+Modified: 2020-01-25 Acer
 endmsg
 end
 arch blackmarble
@@ -806,7 +806,7 @@ y 1
 connected 9999991
 lifesave 1
 activate_on_release 0
-arch scroll_new
+arch vial_blue
 name Stairs
 face stair2_up.111
 level 20
@@ -815,8 +815,6 @@ identified 1
 arch spell_word_of_recall
 name Recall
 skill sorcery
-msg
-endmsg
 sp 40
 maxsp 20
 grace 0
@@ -1101,7 +1099,7 @@ arch creator
 x 3
 y 15
 connected 65498326
-arch scroll_new
+arch vial_blue
 name Stairs
 face stair2_up.111
 level 111
@@ -1960,17 +1958,16 @@ x 7
 y 1
 connected 76593
 activate_on_push 0
-arch scroll_new
+arch vial_blue
 name Stairs
 face stair2_up.111
 level 111
 no_pick 1
 identified 1
+on_use_yield NONE
 arch spell_word_of_penalty
 name Penalty
 skill sorcery
-msg
-endmsg
 sp 40
 maxsp 20
 grace 0
@@ -2220,7 +2217,7 @@ x 7
 y 15
 connected 32986754
 activate_on_push 0
-arch scroll_new
+arch vial_blue
 name Stairs
 face stair2_up.111
 level 111
@@ -2229,8 +2226,6 @@ identified 1
 arch spell_word_of_penalty
 name Penalty
 skill sorcery
-msg
-endmsg
 sp 40
 maxsp 20
 grace 0

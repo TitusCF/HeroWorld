@@ -8,24 +8,26 @@ Modified: 2020-01-25 Acer
 endmsg
 end
 arch creator
-connected sink
-lifesave 1
-activate_on_push 0
-arch spikkes_closed
-face earth.111
-connected dry
-move_block swim boat
-is_used_up 1
-end
-end
-arch creator
 connected dry
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+face earth.111
+connected wet
+move_block swim boat
+is_used_up 1
+activate_on_release 0
+end
+end
+arch creator
+connected wet
+lifesave 1
+activate_on_release 0
+arch spikkes_closed
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -37,34 +39,23 @@ move_slow 0
 is_wooded 0
 end
 arch spikkes_closed
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 connected dry
-end
-arch creator
-y 1
-connected sink
-lifesave 1
-activate_on_push 0
-arch spikkes_closed
-face earth.111
-connected dry
-move_block swim boat
-is_used_up 1
-end
 end
 arch creator
 y 1
@@ -72,9 +63,23 @@ connected dry
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+face earth.111
+connected wet
+move_block swim boat
+is_used_up 1
+activate_on_release 0
+end
+end
+arch creator
+y 1
+connected wet
+lifesave 1
+activate_on_release 0
+arch spikkes_closed
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -88,46 +93,49 @@ is_wooded 0
 end
 arch spikkes_closed
 y 1
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 y 1
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 y 1
 connected dry
 end
 arch creator
 y 2
-connected sink
-lifesave 1
-activate_on_push 0
-arch spikkes_closed
-face earth.111
-connected dry
-move_block swim boat
-is_used_up 1
-end
-end
-arch creator
-y 2
 connected dry
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+face earth.111
+connected wet
+move_block swim boat
+is_used_up 1
+activate_on_release 0
+end
+end
+arch creator
+y 2
+connected wet
+lifesave 1
+activate_on_release 0
+arch spikkes_closed
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -141,36 +149,25 @@ is_wooded 0
 end
 arch spikkes_closed
 y 2
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 y 2
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 y 2
 connected dry
-end
-arch creator
-y 3
-connected sink
-lifesave 1
-activate_on_push 0
-arch spikkes_closed
-face earth.111
-connected dry
-move_block swim boat
-is_used_up 1
-end
 end
 arch creator
 y 3
@@ -178,9 +175,23 @@ connected dry
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+face earth.111
+connected wet
+move_block swim boat
+is_used_up 1
+activate_on_release 0
+end
+end
+arch creator
+y 3
+connected wet
+lifesave 1
+activate_on_release 0
+arch spikkes_closed
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -194,36 +205,25 @@ is_wooded 0
 end
 arch spikkes_closed
 y 3
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 y 3
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 y 3
 connected dry
-end
-arch creator
-y 4
-connected sink
-lifesave 1
-activate_on_push 0
-arch spikkes_closed
-face earth.111
-connected dry
-move_block swim boat
-is_used_up 1
-end
 end
 arch creator
 y 4
@@ -231,9 +231,23 @@ connected dry
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+face earth.111
+connected wet
+move_block swim boat
+is_used_up 1
+activate_on_release 0
+end
+end
+arch creator
+y 4
+connected wet
+lifesave 1
+activate_on_release 0
+arch spikkes_closed
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -247,46 +261,49 @@ is_wooded 0
 end
 arch spikkes_closed
 y 4
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 y 4
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 y 4
 connected dry
 end
 arch creator
 y 5
-connected sink
-lifesave 1
-activate_on_push 0
-arch spikkes_closed
-face earth.111
-connected dry
-move_block swim boat
-is_used_up 1
-end
-end
-arch creator
-y 5
 connected dry
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+face earth.111
+connected wet
+move_block swim boat
+is_used_up 1
+activate_on_release 0
+end
+end
+arch creator
+y 5
+connected wet
+lifesave 1
+activate_on_release 0
+arch spikkes_closed
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -300,46 +317,49 @@ is_wooded 0
 end
 arch spikkes_closed
 y 5
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 y 5
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 y 5
 connected dry
 end
 arch creator
 y 6
-connected sink
-lifesave 1
-activate_on_push 0
-arch spikkes_closed
-face earth.111
-connected dry
-move_block swim boat
-is_used_up 1
-end
-end
-arch creator
-y 6
 connected dry
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+face earth.111
+connected wet
+move_block swim boat
+is_used_up 1
+activate_on_release 0
+end
+end
+arch creator
+y 6
+connected wet
+lifesave 1
+activate_on_release 0
+arch spikkes_closed
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -353,21 +373,22 @@ is_wooded 0
 end
 arch spikkes_closed
 y 6
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 y 6
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 y 6
 connected dry
@@ -380,25 +401,27 @@ y 8
 end
 arch creator
 x 1
-connected sink
-lifesave 1
-activate_on_push 0
-arch spikkes_closed
-face earth.111
-connected dry
-move_block swim boat
-is_used_up 1
-end
-end
-arch creator
-x 1
 connected dry
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+face earth.111
+connected wet
+move_block swim boat
+is_used_up 1
+activate_on_release 0
+end
+end
+arch creator
+x 1
+connected wet
+lifesave 1
+activate_on_release 0
+arch spikkes_closed
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -412,37 +435,25 @@ is_wooded 0
 end
 arch spikkes_closed
 x 1
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 1
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 1
 connected dry
-end
-arch creator
-x 1
-y 1
-connected sink
-lifesave 1
-activate_on_push 0
-arch spikkes_closed
-face earth.111
-connected dry
-move_block swim boat
-is_used_up 1
-end
 end
 arch creator
 x 1
@@ -451,9 +462,24 @@ connected dry
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+face earth.111
+connected wet
+move_block swim boat
+is_used_up 1
+activate_on_release 0
+end
+end
+arch creator
+x 1
+y 1
+connected wet
+lifesave 1
+activate_on_release 0
+arch spikkes_closed
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -469,22 +495,23 @@ end
 arch spikkes_closed
 x 1
 y 1
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 1
 y 1
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 1
 y 1
@@ -493,26 +520,28 @@ end
 arch creator
 x 1
 y 2
-connected sink
+connected dry
 lifesave 1
-activate_on_push 0
+activate_on_release 0
 arch spikkes_closed
 face earth.111
-connected dry
+connected wet
 move_block swim boat
 is_used_up 1
+activate_on_release 0
 end
 end
 arch creator
 x 1
 y 2
-connected dry
+connected wet
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -528,39 +557,27 @@ end
 arch spikkes_closed
 x 1
 y 2
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 1
 y 2
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 1
 y 2
 connected dry
-end
-arch creator
-x 1
-y 3
-connected sink
-lifesave 1
-activate_on_push 0
-arch spikkes_closed
-face earth.111
-connected dry
-move_block swim boat
-is_used_up 1
-end
 end
 arch creator
 x 1
@@ -569,9 +586,24 @@ connected dry
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+face earth.111
+connected wet
+move_block swim boat
+is_used_up 1
+activate_on_release 0
+end
+end
+arch creator
+x 1
+y 3
+connected wet
+lifesave 1
+activate_on_release 0
+arch spikkes_closed
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -587,39 +619,27 @@ end
 arch spikkes_closed
 x 1
 y 3
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 1
 y 3
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 1
 y 3
 connected dry
-end
-arch creator
-x 1
-y 4
-connected sink
-lifesave 1
-activate_on_push 0
-arch spikkes_closed
-face earth.111
-connected dry
-move_block swim boat
-is_used_up 1
-end
 end
 arch creator
 x 1
@@ -628,9 +648,24 @@ connected dry
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+face earth.111
+connected wet
+move_block swim boat
+is_used_up 1
+activate_on_release 0
+end
+end
+arch creator
+x 1
+y 4
+connected wet
+lifesave 1
+activate_on_release 0
+arch spikkes_closed
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -646,22 +681,23 @@ end
 arch spikkes_closed
 x 1
 y 4
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 1
 y 4
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 1
 y 4
@@ -670,26 +706,28 @@ end
 arch creator
 x 1
 y 5
-connected sink
+connected dry
 lifesave 1
-activate_on_push 0
+activate_on_release 0
 arch spikkes_closed
 face earth.111
-connected dry
+connected wet
 move_block swim boat
 is_used_up 1
+activate_on_release 0
 end
 end
 arch creator
 x 1
 y 5
-connected dry
+connected wet
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -705,22 +743,23 @@ end
 arch spikkes_closed
 x 1
 y 5
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 1
 y 5
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 1
 y 5
@@ -729,26 +768,28 @@ end
 arch creator
 x 1
 y 6
-connected sink
+connected dry
 lifesave 1
-activate_on_push 0
+activate_on_release 0
 arch spikkes_closed
 face earth.111
-connected dry
+connected wet
 move_block swim boat
 is_used_up 1
+activate_on_release 0
 end
 end
 arch creator
 x 1
 y 6
-connected dry
+connected wet
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -764,22 +805,23 @@ end
 arch spikkes_closed
 x 1
 y 6
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 1
 y 6
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 1
 y 6
@@ -795,25 +837,27 @@ y 8
 end
 arch creator
 x 2
-connected sink
-lifesave 1
-activate_on_push 0
-arch spikkes_closed
-face earth.111
-connected dry
-move_block swim boat
-is_used_up 1
-end
-end
-arch creator
-x 2
 connected dry
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+face earth.111
+connected wet
+move_block swim boat
+is_used_up 1
+activate_on_release 0
+end
+end
+arch creator
+x 2
+connected wet
+lifesave 1
+activate_on_release 0
+arch spikkes_closed
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -827,37 +871,25 @@ is_wooded 0
 end
 arch spikkes_closed
 x 2
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 2
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 2
 connected dry
-end
-arch creator
-x 2
-y 1
-connected sink
-lifesave 1
-activate_on_push 0
-arch spikkes_closed
-face earth.111
-connected dry
-move_block swim boat
-is_used_up 1
-end
 end
 arch creator
 x 2
@@ -866,9 +898,24 @@ connected dry
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+face earth.111
+connected wet
+move_block swim boat
+is_used_up 1
+activate_on_release 0
+end
+end
+arch creator
+x 2
+y 1
+connected wet
+lifesave 1
+activate_on_release 0
+arch spikkes_closed
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -884,22 +931,23 @@ end
 arch spikkes_closed
 x 2
 y 1
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 2
 y 1
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 2
 y 1
@@ -908,26 +956,28 @@ end
 arch creator
 x 2
 y 2
-connected sink
+connected dry
 lifesave 1
-activate_on_push 0
+activate_on_release 0
 arch spikkes_closed
 face earth.111
-connected dry
+connected wet
 move_block swim boat
 is_used_up 1
+activate_on_release 0
 end
 end
 arch creator
 x 2
 y 2
-connected dry
+connected wet
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -943,39 +993,27 @@ end
 arch spikkes_closed
 x 2
 y 2
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 2
 y 2
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 2
 y 2
 connected dry
-end
-arch creator
-x 2
-y 3
-connected sink
-lifesave 1
-activate_on_push 0
-arch spikkes_closed
-face earth.111
-connected dry
-move_block swim boat
-is_used_up 1
-end
 end
 arch creator
 x 2
@@ -984,9 +1022,24 @@ connected dry
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+face earth.111
+connected wet
+move_block swim boat
+is_used_up 1
+activate_on_release 0
+end
+end
+arch creator
+x 2
+y 3
+connected wet
+lifesave 1
+activate_on_release 0
+arch spikkes_closed
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -1002,39 +1055,27 @@ end
 arch spikkes_closed
 x 2
 y 3
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 2
 y 3
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 2
 y 3
 connected dry
-end
-arch creator
-x 2
-y 4
-connected sink
-lifesave 1
-activate_on_push 0
-arch spikkes_closed
-face earth.111
-connected dry
-move_block swim boat
-is_used_up 1
-end
 end
 arch creator
 x 2
@@ -1043,9 +1084,24 @@ connected dry
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+face earth.111
+connected wet
+move_block swim boat
+is_used_up 1
+activate_on_release 0
+end
+end
+arch creator
+x 2
+y 4
+connected wet
+lifesave 1
+activate_on_release 0
+arch spikkes_closed
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -1061,22 +1117,23 @@ end
 arch spikkes_closed
 x 2
 y 4
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 2
 y 4
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 2
 y 4
@@ -1085,26 +1142,28 @@ end
 arch creator
 x 2
 y 5
-connected sink
+connected dry
 lifesave 1
-activate_on_push 0
+activate_on_release 0
 arch spikkes_closed
 face earth.111
-connected dry
+connected wet
 move_block swim boat
 is_used_up 1
+activate_on_release 0
 end
 end
 arch creator
 x 2
 y 5
-connected dry
+connected wet
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -1120,22 +1179,23 @@ end
 arch spikkes_closed
 x 2
 y 5
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 2
 y 5
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 2
 y 5
@@ -1144,26 +1204,28 @@ end
 arch creator
 x 2
 y 6
-connected sink
+connected dry
 lifesave 1
-activate_on_push 0
+activate_on_release 0
 arch spikkes_closed
 face earth.111
-connected dry
+connected wet
 move_block swim boat
 is_used_up 1
+activate_on_release 0
 end
 end
 arch creator
 x 2
 y 6
-connected dry
+connected wet
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -1179,22 +1241,23 @@ end
 arch spikkes_closed
 x 2
 y 6
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 2
 y 6
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 2
 y 6
@@ -1210,25 +1273,27 @@ y 8
 end
 arch creator
 x 3
-connected sink
-lifesave 1
-activate_on_push 0
-arch spikkes_closed
-face earth.111
-connected dry
-move_block swim boat
-is_used_up 1
-end
-end
-arch creator
-x 3
 connected dry
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+face earth.111
+connected wet
+move_block swim boat
+is_used_up 1
+activate_on_release 0
+end
+end
+arch creator
+x 3
+connected wet
+lifesave 1
+activate_on_release 0
+arch spikkes_closed
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -1242,37 +1307,25 @@ is_wooded 0
 end
 arch spikkes_closed
 x 3
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 3
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 3
 connected dry
-end
-arch creator
-x 3
-y 1
-connected sink
-lifesave 1
-activate_on_push 0
-arch spikkes_closed
-face earth.111
-connected dry
-move_block swim boat
-is_used_up 1
-end
 end
 arch creator
 x 3
@@ -1281,9 +1334,24 @@ connected dry
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+face earth.111
+connected wet
+move_block swim boat
+is_used_up 1
+activate_on_release 0
+end
+end
+arch creator
+x 3
+y 1
+connected wet
+lifesave 1
+activate_on_release 0
+arch spikkes_closed
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -1299,22 +1367,23 @@ end
 arch spikkes_closed
 x 3
 y 1
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 3
 y 1
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 3
 y 1
@@ -1323,26 +1392,28 @@ end
 arch creator
 x 3
 y 2
-connected sink
+connected dry
 lifesave 1
-activate_on_push 0
+activate_on_release 0
 arch spikkes_closed
 face earth.111
-connected dry
+connected wet
 move_block swim boat
 is_used_up 1
+activate_on_release 0
 end
 end
 arch creator
 x 3
 y 2
-connected dry
+connected wet
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -1358,39 +1429,27 @@ end
 arch spikkes_closed
 x 3
 y 2
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 3
 y 2
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 3
 y 2
 connected dry
-end
-arch creator
-x 3
-y 3
-connected sink
-lifesave 1
-activate_on_push 0
-arch spikkes_closed
-face earth.111
-connected dry
-move_block swim boat
-is_used_up 1
-end
 end
 arch creator
 x 3
@@ -1399,9 +1458,24 @@ connected dry
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+face earth.111
+connected wet
+move_block swim boat
+is_used_up 1
+activate_on_release 0
+end
+end
+arch creator
+x 3
+y 3
+connected wet
+lifesave 1
+activate_on_release 0
+arch spikkes_closed
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -1417,39 +1491,27 @@ end
 arch spikkes_closed
 x 3
 y 3
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 3
 y 3
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 3
 y 3
 connected dry
-end
-arch creator
-x 3
-y 4
-connected sink
-lifesave 1
-activate_on_push 0
-arch spikkes_closed
-face earth.111
-connected dry
-move_block swim boat
-is_used_up 1
-end
 end
 arch creator
 x 3
@@ -1458,9 +1520,24 @@ connected dry
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+face earth.111
+connected wet
+move_block swim boat
+is_used_up 1
+activate_on_release 0
+end
+end
+arch creator
+x 3
+y 4
+connected wet
+lifesave 1
+activate_on_release 0
+arch spikkes_closed
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -1476,22 +1553,23 @@ end
 arch spikkes_closed
 x 3
 y 4
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 3
 y 4
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 3
 y 4
@@ -1500,26 +1578,28 @@ end
 arch creator
 x 3
 y 5
-connected sink
+connected dry
 lifesave 1
-activate_on_push 0
+activate_on_release 0
 arch spikkes_closed
 face earth.111
-connected dry
+connected wet
 move_block swim boat
 is_used_up 1
+activate_on_release 0
 end
 end
 arch creator
 x 3
 y 5
-connected dry
+connected wet
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -1535,22 +1615,23 @@ end
 arch spikkes_closed
 x 3
 y 5
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 3
 y 5
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 3
 y 5
@@ -1559,26 +1640,28 @@ end
 arch creator
 x 3
 y 6
-connected sink
+connected dry
 lifesave 1
-activate_on_push 0
+activate_on_release 0
 arch spikkes_closed
 face earth.111
-connected dry
+connected wet
 move_block swim boat
 is_used_up 1
+activate_on_release 0
 end
 end
 arch creator
 x 3
 y 6
-connected dry
+connected wet
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -1594,22 +1677,23 @@ end
 arch spikkes_closed
 x 3
 y 6
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 3
 y 6
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 3
 y 6
@@ -1625,25 +1709,27 @@ y 8
 end
 arch creator
 x 4
-connected sink
-lifesave 1
-activate_on_push 0
-arch spikkes_closed
-face earth.111
-connected dry
-move_block swim boat
-is_used_up 1
-end
-end
-arch creator
-x 4
 connected dry
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+face earth.111
+connected wet
+move_block swim boat
+is_used_up 1
+activate_on_release 0
+end
+end
+arch creator
+x 4
+connected wet
+lifesave 1
+activate_on_release 0
+arch spikkes_closed
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -1657,37 +1743,25 @@ is_wooded 0
 end
 arch spikkes_closed
 x 4
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 4
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 4
 connected dry
-end
-arch creator
-x 4
-y 1
-connected sink
-lifesave 1
-activate_on_push 0
-arch spikkes_closed
-face earth.111
-connected dry
-move_block swim boat
-is_used_up 1
-end
 end
 arch creator
 x 4
@@ -1696,9 +1770,24 @@ connected dry
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+face earth.111
+connected wet
+move_block swim boat
+is_used_up 1
+activate_on_release 0
+end
+end
+arch creator
+x 4
+y 1
+connected wet
+lifesave 1
+activate_on_release 0
+arch spikkes_closed
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -1714,22 +1803,23 @@ end
 arch spikkes_closed
 x 4
 y 1
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 4
 y 1
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 4
 y 1
@@ -1738,26 +1828,28 @@ end
 arch creator
 x 4
 y 2
-connected sink
+connected dry
 lifesave 1
-activate_on_push 0
+activate_on_release 0
 arch spikkes_closed
 face earth.111
-connected dry
+connected wet
 move_block swim boat
 is_used_up 1
+activate_on_release 0
 end
 end
 arch creator
 x 4
 y 2
-connected dry
+connected wet
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -1773,39 +1865,27 @@ end
 arch spikkes_closed
 x 4
 y 2
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 4
 y 2
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 4
 y 2
 connected dry
-end
-arch creator
-x 4
-y 3
-connected sink
-lifesave 1
-activate_on_push 0
-arch spikkes_closed
-face earth.111
-connected dry
-move_block swim boat
-is_used_up 1
-end
 end
 arch creator
 x 4
@@ -1814,9 +1894,24 @@ connected dry
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+face earth.111
+connected wet
+move_block swim boat
+is_used_up 1
+activate_on_release 0
+end
+end
+arch creator
+x 4
+y 3
+connected wet
+lifesave 1
+activate_on_release 0
+arch spikkes_closed
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -1832,39 +1927,27 @@ end
 arch spikkes_closed
 x 4
 y 3
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 4
 y 3
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 4
 y 3
 connected dry
-end
-arch creator
-x 4
-y 4
-connected sink
-lifesave 1
-activate_on_push 0
-arch spikkes_closed
-face earth.111
-connected dry
-move_block swim boat
-is_used_up 1
-end
 end
 arch creator
 x 4
@@ -1873,9 +1956,24 @@ connected dry
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+face earth.111
+connected wet
+move_block swim boat
+is_used_up 1
+activate_on_release 0
+end
+end
+arch creator
+x 4
+y 4
+connected wet
+lifesave 1
+activate_on_release 0
+arch spikkes_closed
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -1891,22 +1989,23 @@ end
 arch spikkes_closed
 x 4
 y 4
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 4
 y 4
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 4
 y 4
@@ -1915,26 +2014,28 @@ end
 arch creator
 x 4
 y 5
-connected sink
+connected dry
 lifesave 1
-activate_on_push 0
+activate_on_release 0
 arch spikkes_closed
 face earth.111
-connected dry
+connected wet
 move_block swim boat
 is_used_up 1
+activate_on_release 0
 end
 end
 arch creator
 x 4
 y 5
-connected dry
+connected wet
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -1950,22 +2051,23 @@ end
 arch spikkes_closed
 x 4
 y 5
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 4
 y 5
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 4
 y 5
@@ -1974,26 +2076,28 @@ end
 arch creator
 x 4
 y 6
-connected sink
+connected dry
 lifesave 1
-activate_on_push 0
+activate_on_release 0
 arch spikkes_closed
 face earth.111
-connected dry
+connected wet
 move_block swim boat
 is_used_up 1
+activate_on_release 0
 end
 end
 arch creator
 x 4
 y 6
-connected dry
+connected wet
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -2009,22 +2113,23 @@ end
 arch spikkes_closed
 x 4
 y 6
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 4
 y 6
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 4
 y 6
@@ -2054,25 +2159,27 @@ y 8
 end
 arch creator
 x 5
-connected sink
-lifesave 1
-activate_on_push 0
-arch spikkes_closed
-face earth.111
-connected dry
-move_block swim boat
-is_used_up 1
-end
-end
-arch creator
-x 5
 connected dry
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+face earth.111
+connected wet
+move_block swim boat
+is_used_up 1
+activate_on_release 0
+end
+end
+arch creator
+x 5
+connected wet
+lifesave 1
+activate_on_release 0
+arch spikkes_closed
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -2086,37 +2193,25 @@ is_wooded 0
 end
 arch spikkes_closed
 x 5
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 5
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 5
 connected dry
-end
-arch creator
-x 5
-y 1
-connected sink
-lifesave 1
-activate_on_push 0
-arch spikkes_closed
-face earth.111
-connected dry
-move_block swim boat
-is_used_up 1
-end
 end
 arch creator
 x 5
@@ -2125,9 +2220,24 @@ connected dry
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+face earth.111
+connected wet
+move_block swim boat
+is_used_up 1
+activate_on_release 0
+end
+end
+arch creator
+x 5
+y 1
+connected wet
+lifesave 1
+activate_on_release 0
+arch spikkes_closed
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -2143,22 +2253,23 @@ end
 arch spikkes_closed
 x 5
 y 1
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 5
 y 1
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 5
 y 1
@@ -2167,26 +2278,28 @@ end
 arch creator
 x 5
 y 2
-connected sink
+connected dry
 lifesave 1
-activate_on_push 0
+activate_on_release 0
 arch spikkes_closed
 face earth.111
-connected dry
+connected wet
 move_block swim boat
 is_used_up 1
+activate_on_release 0
 end
 end
 arch creator
 x 5
 y 2
-connected dry
+connected wet
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -2202,39 +2315,27 @@ end
 arch spikkes_closed
 x 5
 y 2
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 5
 y 2
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 5
 y 2
 connected dry
-end
-arch creator
-x 5
-y 3
-connected sink
-lifesave 1
-activate_on_push 0
-arch spikkes_closed
-face earth.111
-connected dry
-move_block swim boat
-is_used_up 1
-end
 end
 arch creator
 x 5
@@ -2243,9 +2344,24 @@ connected dry
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+face earth.111
+connected wet
+move_block swim boat
+is_used_up 1
+activate_on_release 0
+end
+end
+arch creator
+x 5
+y 3
+connected wet
+lifesave 1
+activate_on_release 0
+arch spikkes_closed
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -2261,39 +2377,27 @@ end
 arch spikkes_closed
 x 5
 y 3
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 5
 y 3
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 5
 y 3
 connected dry
-end
-arch creator
-x 5
-y 4
-connected sink
-lifesave 1
-activate_on_push 0
-arch spikkes_closed
-face earth.111
-connected dry
-move_block swim boat
-is_used_up 1
-end
 end
 arch creator
 x 5
@@ -2302,9 +2406,24 @@ connected dry
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+face earth.111
+connected wet
+move_block swim boat
+is_used_up 1
+activate_on_release 0
+end
+end
+arch creator
+x 5
+y 4
+connected wet
+lifesave 1
+activate_on_release 0
+arch spikkes_closed
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -2320,22 +2439,23 @@ end
 arch spikkes_closed
 x 5
 y 4
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 5
 y 4
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 5
 y 4
@@ -2344,26 +2464,28 @@ end
 arch creator
 x 5
 y 5
-connected sink
+connected dry
 lifesave 1
-activate_on_push 0
+activate_on_release 0
 arch spikkes_closed
 face earth.111
-connected dry
+connected wet
 move_block swim boat
 is_used_up 1
+activate_on_release 0
 end
 end
 arch creator
 x 5
 y 5
-connected dry
+connected wet
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -2379,22 +2501,23 @@ end
 arch spikkes_closed
 x 5
 y 5
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 5
 y 5
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 5
 y 5
@@ -2403,26 +2526,28 @@ end
 arch creator
 x 5
 y 6
-connected sink
+connected dry
 lifesave 1
-activate_on_push 0
+activate_on_release 0
 arch spikkes_closed
 face earth.111
-connected dry
+connected wet
 move_block swim boat
 is_used_up 1
+activate_on_release 0
 end
 end
 arch creator
 x 5
 y 6
-connected dry
+connected wet
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -2438,22 +2563,23 @@ end
 arch spikkes_closed
 x 5
 y 6
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 5
 y 6
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 5
 y 6
@@ -2469,25 +2595,27 @@ y 8
 end
 arch creator
 x 6
-connected sink
-lifesave 1
-activate_on_push 0
-arch spikkes_closed
-face earth.111
-connected dry
-move_block swim boat
-is_used_up 1
-end
-end
-arch creator
-x 6
 connected dry
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+face earth.111
+connected wet
+move_block swim boat
+is_used_up 1
+activate_on_release 0
+end
+end
+arch creator
+x 6
+connected wet
+lifesave 1
+activate_on_release 0
+arch spikkes_closed
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -2501,37 +2629,25 @@ is_wooded 0
 end
 arch spikkes_closed
 x 6
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 6
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 6
 connected dry
-end
-arch creator
-x 6
-y 1
-connected sink
-lifesave 1
-activate_on_push 0
-arch spikkes_closed
-face earth.111
-connected dry
-move_block swim boat
-is_used_up 1
-end
 end
 arch creator
 x 6
@@ -2540,9 +2656,24 @@ connected dry
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+face earth.111
+connected wet
+move_block swim boat
+is_used_up 1
+activate_on_release 0
+end
+end
+arch creator
+x 6
+y 1
+connected wet
+lifesave 1
+activate_on_release 0
+arch spikkes_closed
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -2558,22 +2689,23 @@ end
 arch spikkes_closed
 x 6
 y 1
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 6
 y 1
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 6
 y 1
@@ -2582,26 +2714,28 @@ end
 arch creator
 x 6
 y 2
-connected sink
+connected dry
 lifesave 1
-activate_on_push 0
+activate_on_release 0
 arch spikkes_closed
 face earth.111
-connected dry
+connected wet
 move_block swim boat
 is_used_up 1
+activate_on_release 0
 end
 end
 arch creator
 x 6
 y 2
-connected dry
+connected wet
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -2617,39 +2751,27 @@ end
 arch spikkes_closed
 x 6
 y 2
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 6
 y 2
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 6
 y 2
 connected dry
-end
-arch creator
-x 6
-y 3
-connected sink
-lifesave 1
-activate_on_push 0
-arch spikkes_closed
-face earth.111
-connected dry
-move_block swim boat
-is_used_up 1
-end
 end
 arch creator
 x 6
@@ -2658,9 +2780,24 @@ connected dry
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+face earth.111
+connected wet
+move_block swim boat
+is_used_up 1
+activate_on_release 0
+end
+end
+arch creator
+x 6
+y 3
+connected wet
+lifesave 1
+activate_on_release 0
+arch spikkes_closed
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -2676,39 +2813,27 @@ end
 arch spikkes_closed
 x 6
 y 3
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 6
 y 3
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 6
 y 3
 connected dry
-end
-arch creator
-x 6
-y 4
-connected sink
-lifesave 1
-activate_on_push 0
-arch spikkes_closed
-face earth.111
-connected dry
-move_block swim boat
-is_used_up 1
-end
 end
 arch creator
 x 6
@@ -2717,9 +2842,24 @@ connected dry
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+face earth.111
+connected wet
+move_block swim boat
+is_used_up 1
+activate_on_release 0
+end
+end
+arch creator
+x 6
+y 4
+connected wet
+lifesave 1
+activate_on_release 0
+arch spikkes_closed
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -2735,22 +2875,23 @@ end
 arch spikkes_closed
 x 6
 y 4
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 6
 y 4
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 6
 y 4
@@ -2759,26 +2900,28 @@ end
 arch creator
 x 6
 y 5
-connected sink
+connected dry
 lifesave 1
-activate_on_push 0
+activate_on_release 0
 arch spikkes_closed
 face earth.111
-connected dry
+connected wet
 move_block swim boat
 is_used_up 1
+activate_on_release 0
 end
 end
 arch creator
 x 6
 y 5
-connected dry
+connected wet
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -2794,22 +2937,23 @@ end
 arch spikkes_closed
 x 6
 y 5
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 6
 y 5
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 6
 y 5
@@ -2818,26 +2962,28 @@ end
 arch creator
 x 6
 y 6
-connected sink
+connected dry
 lifesave 1
-activate_on_push 0
+activate_on_release 0
 arch spikkes_closed
 face earth.111
-connected dry
+connected wet
 move_block swim boat
 is_used_up 1
+activate_on_release 0
 end
 end
 arch creator
 x 6
 y 6
-connected dry
+connected wet
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -2853,22 +2999,23 @@ end
 arch spikkes_closed
 x 6
 y 6
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 6
 y 6
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 6
 y 6
@@ -2880,25 +3027,27 @@ y 7
 end
 arch creator
 x 7
-connected sink
-lifesave 1
-activate_on_push 0
-arch spikkes_closed
-face earth.111
-connected dry
-move_block swim boat
-is_used_up 1
-end
-end
-arch creator
-x 7
 connected dry
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+face earth.111
+connected wet
+move_block swim boat
+is_used_up 1
+activate_on_release 0
+end
+end
+arch creator
+x 7
+connected wet
+lifesave 1
+activate_on_release 0
+arch spikkes_closed
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -2912,37 +3061,25 @@ is_wooded 0
 end
 arch spikkes_closed
 x 7
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 7
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 7
 connected dry
-end
-arch creator
-x 7
-y 1
-connected sink
-lifesave 1
-activate_on_push 0
-arch spikkes_closed
-face earth.111
-connected dry
-move_block swim boat
-is_used_up 1
-end
 end
 arch creator
 x 7
@@ -2951,9 +3088,24 @@ connected dry
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+face earth.111
+connected wet
+move_block swim boat
+is_used_up 1
+activate_on_release 0
+end
+end
+arch creator
+x 7
+y 1
+connected wet
+lifesave 1
+activate_on_release 0
+arch spikkes_closed
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -2969,22 +3121,23 @@ end
 arch spikkes_closed
 x 7
 y 1
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 7
 y 1
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 7
 y 1
@@ -2993,26 +3146,28 @@ end
 arch creator
 x 7
 y 2
-connected sink
+connected dry
 lifesave 1
-activate_on_push 0
+activate_on_release 0
 arch spikkes_closed
 face earth.111
-connected dry
+connected wet
 move_block swim boat
 is_used_up 1
+activate_on_release 0
 end
 end
 arch creator
 x 7
 y 2
-connected dry
+connected wet
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -3028,39 +3183,27 @@ end
 arch spikkes_closed
 x 7
 y 2
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 7
 y 2
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 7
 y 2
 connected dry
-end
-arch creator
-x 7
-y 3
-connected sink
-lifesave 1
-activate_on_push 0
-arch spikkes_closed
-face earth.111
-connected dry
-move_block swim boat
-is_used_up 1
-end
 end
 arch creator
 x 7
@@ -3069,9 +3212,24 @@ connected dry
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+face earth.111
+connected wet
+move_block swim boat
+is_used_up 1
+activate_on_release 0
+end
+end
+arch creator
+x 7
+y 3
+connected wet
+lifesave 1
+activate_on_release 0
+arch spikkes_closed
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -3087,39 +3245,27 @@ end
 arch spikkes_closed
 x 7
 y 3
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 7
 y 3
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 7
 y 3
 connected dry
-end
-arch creator
-x 7
-y 4
-connected sink
-lifesave 1
-activate_on_push 0
-arch spikkes_closed
-face earth.111
-connected dry
-move_block swim boat
-is_used_up 1
-end
 end
 arch creator
 x 7
@@ -3128,9 +3274,24 @@ connected dry
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+face earth.111
+connected wet
+move_block swim boat
+is_used_up 1
+activate_on_release 0
+end
+end
+arch creator
+x 7
+y 4
+connected wet
+lifesave 1
+activate_on_release 0
+arch spikkes_closed
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -3146,22 +3307,23 @@ end
 arch spikkes_closed
 x 7
 y 4
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 7
 y 4
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 7
 y 4
@@ -3170,26 +3332,28 @@ end
 arch creator
 x 7
 y 5
-connected sink
+connected dry
 lifesave 1
-activate_on_push 0
+activate_on_release 0
 arch spikkes_closed
 face earth.111
-connected dry
+connected wet
 move_block swim boat
 is_used_up 1
+activate_on_release 0
 end
 end
 arch creator
 x 7
 y 5
-connected dry
+connected wet
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -3205,22 +3369,23 @@ end
 arch spikkes_closed
 x 7
 y 5
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 7
 y 5
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 7
 y 5
@@ -3229,26 +3394,28 @@ end
 arch creator
 x 7
 y 6
-connected sink
+connected dry
 lifesave 1
-activate_on_push 0
+activate_on_release 0
 arch spikkes_closed
 face earth.111
-connected dry
+connected wet
 move_block swim boat
 is_used_up 1
+activate_on_release 0
 end
 end
 arch creator
 x 7
 y 6
-connected dry
+connected wet
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -3264,22 +3431,23 @@ end
 arch spikkes_closed
 x 7
 y 6
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 7
 y 6
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 7
 y 6
@@ -3299,25 +3467,27 @@ y 8
 end
 arch creator
 x 8
-connected sink
-lifesave 1
-activate_on_push 0
-arch spikkes_closed
-face earth.111
-connected dry
-move_block swim boat
-is_used_up 1
-end
-end
-arch creator
-x 8
 connected dry
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+face earth.111
+connected wet
+move_block swim boat
+is_used_up 1
+activate_on_release 0
+end
+end
+arch creator
+x 8
+connected wet
+lifesave 1
+activate_on_release 0
+arch spikkes_closed
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -3331,37 +3501,25 @@ is_wooded 0
 end
 arch spikkes_closed
 x 8
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 8
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 8
 connected dry
-end
-arch creator
-x 8
-y 1
-connected sink
-lifesave 1
-activate_on_push 0
-arch spikkes_closed
-face earth.111
-connected dry
-move_block swim boat
-is_used_up 1
-end
 end
 arch creator
 x 8
@@ -3370,9 +3528,24 @@ connected dry
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+face earth.111
+connected wet
+move_block swim boat
+is_used_up 1
+activate_on_release 0
+end
+end
+arch creator
+x 8
+y 1
+connected wet
+lifesave 1
+activate_on_release 0
+arch spikkes_closed
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -3388,22 +3561,23 @@ end
 arch spikkes_closed
 x 8
 y 1
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 8
 y 1
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 8
 y 1
@@ -3412,26 +3586,28 @@ end
 arch creator
 x 8
 y 2
-connected sink
+connected dry
 lifesave 1
-activate_on_push 0
+activate_on_release 0
 arch spikkes_closed
 face earth.111
-connected dry
+connected wet
 move_block swim boat
 is_used_up 1
+activate_on_release 0
 end
 end
 arch creator
 x 8
 y 2
-connected dry
+connected wet
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -3447,39 +3623,27 @@ end
 arch spikkes_closed
 x 8
 y 2
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 8
 y 2
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 8
 y 2
 connected dry
-end
-arch creator
-x 8
-y 3
-connected sink
-lifesave 1
-activate_on_push 0
-arch spikkes_closed
-face earth.111
-connected dry
-move_block swim boat
-is_used_up 1
-end
 end
 arch creator
 x 8
@@ -3488,9 +3652,24 @@ connected dry
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+face earth.111
+connected wet
+move_block swim boat
+is_used_up 1
+activate_on_release 0
+end
+end
+arch creator
+x 8
+y 3
+connected wet
+lifesave 1
+activate_on_release 0
+arch spikkes_closed
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -3506,39 +3685,27 @@ end
 arch spikkes_closed
 x 8
 y 3
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 8
 y 3
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 8
 y 3
 connected dry
-end
-arch creator
-x 8
-y 4
-connected sink
-lifesave 1
-activate_on_push 0
-arch spikkes_closed
-face earth.111
-connected dry
-move_block swim boat
-is_used_up 1
-end
 end
 arch creator
 x 8
@@ -3547,9 +3714,24 @@ connected dry
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+face earth.111
+connected wet
+move_block swim boat
+is_used_up 1
+activate_on_release 0
+end
+end
+arch creator
+x 8
+y 4
+connected wet
+lifesave 1
+activate_on_release 0
+arch spikkes_closed
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -3565,22 +3747,23 @@ end
 arch spikkes_closed
 x 8
 y 4
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 8
 y 4
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 8
 y 4
@@ -3589,26 +3772,28 @@ end
 arch creator
 x 8
 y 5
-connected sink
+connected dry
 lifesave 1
-activate_on_push 0
+activate_on_release 0
 arch spikkes_closed
 face earth.111
-connected dry
+connected wet
 move_block swim boat
 is_used_up 1
+activate_on_release 0
 end
 end
 arch creator
 x 8
 y 5
-connected dry
+connected wet
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -3624,22 +3809,23 @@ end
 arch spikkes_closed
 x 8
 y 5
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 8
 y 5
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 8
 y 5
@@ -3648,26 +3834,28 @@ end
 arch creator
 x 8
 y 6
-connected sink
+connected dry
 lifesave 1
-activate_on_push 0
+activate_on_release 0
 arch spikkes_closed
 face earth.111
-connected dry
+connected wet
 move_block swim boat
 is_used_up 1
+activate_on_release 0
 end
 end
 arch creator
 x 8
 y 6
-connected dry
+connected wet
 lifesave 1
 activate_on_release 0
 arch spikkes_closed
-connected sink
+connected dry
 move_block walk
 is_used_up 1
+activate_on_release 0
 end
 end
 arch grass
@@ -3683,22 +3871,23 @@ end
 arch spikkes_closed
 x 8
 y 6
-connected sink
+connected dry
 is_used_up 1
+activate_on_release 0
 end
 arch magic_ear
 msg
-@match sink
-Click.
+@match wet
+Water level rises...
 endmsg
 x 8
 y 6
-connected sink
+connected wet
 end
 arch magic_ear
 msg
 @match dry
-Click.
+The oceans begin to dry...
 endmsg
 x 8
 y 6

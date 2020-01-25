@@ -288,6 +288,25 @@ arch earth
 x 6
 y 5
 end
+arch dungeon_magic
+x 6
+y 5
+end
+arch c_woman
+name Alwati
+msg
+@match *
+I'm on a break.
+endmsg
+x 6
+y 5
+monster 0
+stand_still 1
+arch event_say
+title Python
+slaying python/CFBank.py
+end
+end
 arch earth
 x 6
 y 6

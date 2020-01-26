@@ -2326,14 +2326,6 @@ arch afloor_blue_left
 x 9
 y 19
 end
-arch firebombarrow
-x 9
-y 19
-nrof 100
-arch event_user
-slaying python/arrows/firebombarrow.py
-end
-end
 arch afloor_blue_left
 x 9
 y 20
@@ -2848,14 +2840,6 @@ arch afloor_blue_left
 x 11
 y 19
 end
-arch firebombarrow
-x 11
-y 19
-nrof 100
-arch event_apply
-slaying python/arrows/firebombarrow.py
-end
-end
 arch afloor_blue_left
 x 11
 y 20
@@ -3076,8 +3060,11 @@ end
 arch afloor_blue_left
 x 12
 y 19
-arch event_apply
 end
+arch statue
+x 12
+y 19
+move_on walk swim boat
 end
 arch afloor_blue_left
 x 12

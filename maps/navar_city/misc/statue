@@ -1223,6 +1223,7 @@ x 6
 y 8
 end
 arch check_inv
+title Bronzing
 x 6
 y 8
 end
@@ -1407,9 +1408,10 @@ end
 arch button_small
 x 7
 y 8
-connected 3948957
+connected 1236856
 end
 arch check_inv
+title Bronzing
 x 7
 y 8
 end
@@ -1428,18 +1430,11 @@ end
 arch spikes_closed
 x 7
 y 9
-connected 3948957
+connected 1236856
 end
-arch goldfloor
-name drop  100 platinum coins
-slaying money
-msg
-Enter the bronzing chamber...
-endmsg
-food 5000
+arch woodfloor
 x 7
 y 10
-connected 3948957
 end
 arch woodfloor
 x 7
@@ -1590,6 +1585,7 @@ x 8
 y 8
 end
 arch check_inv
+title Bronzing
 x 8
 y 8
 end
@@ -1612,6 +1608,13 @@ end
 arch woodfloor
 x 8
 y 10
+end
+arch altar_trigger
+slaying money
+food 5000
+x 8
+y 10
+connected 1236856
 end
 arch woodfloor
 x 8

@@ -24,14 +24,14 @@ size_x = 5
 size_y = 5
 
 # what foods to put in the map
-foods = [ 'clover2' ]
+foods = [ 'clover' ]
 # what floors can be used
 floors = [ 'woodfloor_camp', 'woodfloor_camp1',  'woodfloor_camp2' ]
 # what walls can be used - only put the base name
 walls = [ 'flagstone', 'dwall', 'timberwall', 'stwall' ]
 
 # what to replace the player with. Should block all movement
-replace_with = [ 'statue2_gold' ]
+replace_with = [ 'statue2' ]
 
 def get_one(what):
 	'''Return a random choice in what, which should be an array.'''

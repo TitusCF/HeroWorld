@@ -20,13 +20,13 @@ import random
 import os.path
 
 # map sizes
-size_x = 5
-size_y = 5
+size_x = 3
+size_y = 3
 
 # what foods to put in the map
 foods = [ 'clover' ]
 # what floors can be used
-floors = [ 'woodfloor_camp', 'woodfloor_camp1',  'woodfloor_camp2' ]
+floors = [ 'permanent_lava666' ]
 # what walls can be used - only put the base name
 walls = [ 'flagstone', 'dwall', 'timberwall', 'stwall' ]
 

@@ -12,7 +12,7 @@ msg
 Creator: Avion
 CFJavaEditor
 Date: 21/02/04
-Modified: 2020-01-25 Acer
+Modified: 2020-01-26 Acer
 endmsg
 end
 arch shallow_sea
@@ -571,6 +571,13 @@ title Python
 slaying /python/items/banquet.py
 end
 end
+arch spikes_closed
+x 3
+y 3
+invisible 1
+connected 999
+activate_on_release 0
+end
 arch magic_banned
 x 3
 y 4
@@ -614,6 +621,13 @@ arch event_apply
 title Python
 slaying /python/items/banquet.py
 end
+end
+arch spikes_closed
+x 3
+y 5
+invisible 1
+connected 99
+activate_on_release 0
 end
 arch magic_banned
 x 3
@@ -658,6 +672,13 @@ arch event_apply
 title Python
 slaying /python/items/banquet.py
 end
+end
+arch spikes_closed
+x 3
+y 7
+invisible 1
+connected 9
+activate_on_release 0
 end
 arch magic_banned
 x 3
@@ -788,13 +809,13 @@ arch unholy_ground
 x 4
 y 3
 end
-arch redslate
+arch goldfloor
+name drop 100 platinum
+slaying money
+food 5000
 x 4
 y 3
-end
-arch firepot
-x 4
-y 3
+connected 999
 end
 arch magic_banned
 x 4
@@ -816,9 +837,13 @@ arch unholy_ground
 x 4
 y 5
 end
-arch redslate
+arch goldfloor
+name drop 100 platinum
+slaying money
+food 5000
 x 4
 y 5
+connected 99
 end
 arch magic_banned
 x 4
@@ -832,10 +857,6 @@ arch redslate
 x 4
 y 6
 end
-arch firepot
-x 4
-y 6
-end
 arch magic_banned
 x 4
 y 7
@@ -844,9 +865,13 @@ arch unholy_ground
 x 4
 y 7
 end
-arch redslate
+arch goldfloor
+name drop 100 platinum
+slaying money
+food 5000
 x 4
 y 7
+connected 9
 end
 arch magic_banned
 x 4
@@ -872,7 +897,7 @@ arch redslate
 x 4
 y 9
 end
-arch firepot
+arch awall_0
 x 4
 y 9
 end
@@ -985,18 +1010,6 @@ arch longtable_2_1_2
 x 5
 y 2
 end
-arch cplate
-name Hammer
-name_pl Hammers
-title of Bronzing
-face mbhammer.111
-x 5
-y 2
-arch event_apply
-title Python
-slaying /python/items/banquet.py
-end
-end
 arch magic_banned
 x 5
 y 3
@@ -1009,6 +1022,10 @@ arch redslate
 x 5
 y 3
 end
+arch hangingfirepot
+x 5
+y 3
+end
 arch magic_banned
 x 5
 y 4
@@ -1054,6 +1071,10 @@ x 5
 y 7
 end
 arch woodfloor
+x 5
+y 7
+end
+arch hangingfirepot
 x 5
 y 7
 end
@@ -1226,11 +1247,9 @@ arch redslate
 x 6
 y 8
 end
-arch check_inv
-title of Bronzing
+arch firepot
 x 6
 y 8
-last_heal 1
 end
 arch magic_banned
 x 6
@@ -1252,6 +1271,10 @@ arch woodfloor
 x 6
 y 10
 end
+arch firepot
+x 6
+y 10
+end
 arch woodfloor
 x 6
 y 11
@@ -1265,15 +1288,13 @@ msg
 Ever want a bronze statue of yourself?
 Can you levitate?
 The steps are simple:
-Pay the entrance fee,
-Enter the casting chamber,
-Use the bed in the center,
-Pick up and apply one of the hammers.
-The process will kill you so be prepared
+Purchase a Casting Hammer,
+BE NEAR YOUR BED OF RETURN TO REALITY!
+Apply one of the hammers.
+The process WILL KILL YOU so be prepared
 to sacrifice some experience.
-Using this bed will ensure you return here
-immediately so that you can collect your
-statue.
+When you return to your bed your statue will be where you stood.
+THIS HAMMER WORKS ONCE PER DAY.
 In order to pick up your statue you must
 levitate over it, descend and then pick up.
 
@@ -1346,6 +1367,13 @@ title Python
 slaying /python/items/banquet.py
 end
 end
+arch spikes_closed
+x 7
+y 2
+invisible 1
+connected 98
+activate_on_release 0
+end
 arch magic_banned
 x 7
 y 3
@@ -1354,9 +1382,13 @@ arch unholy_ground
 x 7
 y 3
 end
-arch redslate
+arch goldfloor
+name drop 100 platinum
+slaying money
+food 5000
 x 7
 y 3
+connected 98
 end
 arch magic_banned
 x 7
@@ -1391,10 +1423,6 @@ x 7
 y 6
 end
 arch woodfloor
-x 7
-y 6
-end
-arch bed_save
 x 7
 y 6
 end
@@ -1425,13 +1453,8 @@ end
 arch button_small
 x 7
 y 8
-connected 1236856
-end
-arch check_inv
-title of Bronzing
-x 7
-y 8
-last_heal 1
+invisible 1
+connected 111234
 end
 arch magic_banned
 x 7
@@ -1445,14 +1468,20 @@ arch woodfloor
 x 7
 y 9
 end
-arch spikes_closed
+arch gate_closed_1
 x 7
 y 9
-connected 1236856
+connected 111234
 end
 arch woodfloor
 x 7
 y 10
+end
+arch button_small
+x 7
+y 10
+invisible 1
+connected 111234
 end
 arch woodfloor
 x 7
@@ -1602,11 +1631,9 @@ arch redslate
 x 8
 y 8
 end
-arch check_inv
-title of Bronzing
+arch firepot
 x 8
 y 8
-last_heal 1
 end
 arch magic_banned
 x 8
@@ -1628,12 +1655,9 @@ arch woodfloor
 x 8
 y 10
 end
-arch altar_trigger
-slaying money
-food 5000
+arch firepot
 x 8
 y 10
-connected 1236856
 end
 arch woodfloor
 x 8
@@ -1648,15 +1672,13 @@ msg
 Ever want a bronze statue of yourself?
 Can you levitate?
 The steps are simple:
-Pay the entrance fee,
-Enter the casting chamber,
-Use the bed in the center,
-Pick up and apply one of the hammers.
-The process will kill you so be prepared
+Purchase a Casting Hammer,
+BE NEAR YOUR BED OF RETURN TO REALITY!
+Apply one of the hammers.
+The process WILL KILL YOU so be prepared
 to sacrifice some experience.
-Using this bed will ensure you return here
-immediately so that you can collect your
-statue.
+When you return to your bed your statue will be where you stood.
+THIS HAMMER WORKS ONCE PER DAY.
 In order to pick up your statue you must
 levitate over it, descend and then pick up.
 
@@ -1717,18 +1739,6 @@ arch longtable_2_1_2
 x 9
 y 2
 end
-arch cplate
-name Hammer
-name_pl Hammers
-title of Bronzing
-face mbhammer.111
-x 9
-y 2
-arch event_apply
-title Python
-slaying /python/items/banquet.py
-end
-end
 arch magic_banned
 x 9
 y 3
@@ -1741,6 +1751,10 @@ arch redslate
 x 9
 y 3
 end
+arch hangingfirepot
+x 9
+y 3
+end
 arch magic_banned
 x 9
 y 4
@@ -1786,6 +1800,10 @@ x 9
 y 7
 end
 arch woodfloor
+x 9
+y 7
+end
+arch hangingfirepot
 x 9
 y 7
 end
@@ -1898,13 +1916,13 @@ arch unholy_ground
 x 10
 y 3
 end
-arch redslate
+arch goldfloor
+name drop 100 platinum
+slaying money
+food 5000
 x 10
 y 3
-end
-arch firepot
-x 10
-y 3
+connected 97
 end
 arch magic_banned
 x 10
@@ -1926,9 +1944,13 @@ arch unholy_ground
 x 10
 y 5
 end
-arch redslate
+arch goldfloor
+name drop 100 platinum
+slaying money
+food 5000
 x 10
 y 5
+connected 96
 end
 arch magic_banned
 x 10
@@ -1942,10 +1964,6 @@ arch redslate
 x 10
 y 6
 end
-arch firepot
-x 10
-y 6
-end
 arch magic_banned
 x 10
 y 7
@@ -1954,9 +1972,13 @@ arch unholy_ground
 x 10
 y 7
 end
-arch redslate
+arch goldfloor
+name drop 100 platinum
+slaying money
+food 5000
 x 10
 y 7
+connected 94
 end
 arch magic_banned
 x 10
@@ -1982,7 +2004,7 @@ arch redslate
 x 10
 y 9
 end
-arch firepot
+arch awall_0
 x 10
 y 9
 end
@@ -2131,6 +2153,13 @@ title Python
 slaying /python/items/banquet.py
 end
 end
+arch spikes_closed
+x 11
+y 3
+invisible 1
+connected 97
+activate_on_release 0
+end
 arch magic_banned
 x 11
 y 4
@@ -2174,6 +2203,13 @@ arch event_apply
 title Python
 slaying /python/items/banquet.py
 end
+end
+arch spikes_closed
+x 11
+y 5
+invisible 1
+connected 96
+activate_on_release 0
 end
 arch magic_banned
 x 11
@@ -2218,6 +2254,13 @@ arch event_apply
 title Python
 slaying /python/items/banquet.py
 end
+end
+arch spikes_closed
+x 11
+y 7
+invisible 1
+connected 94
+activate_on_release 0
 end
 arch magic_banned
 x 11

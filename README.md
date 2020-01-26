@@ -1,10 +1,13 @@
 # HeroWorld
 Crossfire Fork, Hero World Server/Maps/Arch
 
-Experimental, Sponsored Fork </br>
+Sponsored Fork </br>
 Optimised for player perminance
 
-Contact tituss on Crossfire IRC to discuss participating in this project
+Contact titus on Crossfire IRC or Discord to discuss participating in this project.
+
+DISCORD: https://discord.gg/CCQqbqu
+IRC: http://crossfire.real-time.com/irc/index.html
 
 </BR>
 </br>
@@ -35,4 +38,3 @@ More transport options </br>
 More quests/artifacts </br>
 </br>
 </br>
-If I forget to add anything

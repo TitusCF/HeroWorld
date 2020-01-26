@@ -2326,6 +2326,14 @@ arch afloor_blue_left
 x 9
 y 19
 end
+arch firebombarrow
+x 9
+y 19
+nrof 100
+arch event_user
+slaying python/arrows/firebombarrow.py
+end
+end
 arch afloor_blue_left
 x 9
 y 20
@@ -2844,7 +2852,7 @@ arch firebombarrow
 x 11
 y 19
 nrof 100
-arch event_attack
+arch event_apply
 slaying python/arrows/firebombarrow.py
 end
 end
@@ -3068,6 +3076,8 @@ end
 arch afloor_blue_left
 x 12
 y 19
+arch event_apply
+end
 end
 arch afloor_blue_left
 x 12
@@ -3361,14 +3371,6 @@ end
 arch afloor_blue_left
 x 13
 y 19
-end
-arch firebombarrow
-x 13
-y 19
-nrof 100
-arch event_throw
-slaying python/arrows/firebombarrow.py
-end
 end
 arch afloor_blue_left
 x 13

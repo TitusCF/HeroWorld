@@ -337,7 +337,7 @@ arch grass
 x 3
 y 9
 end
-arch swall_2_1_1
+arch swall_3_2
 x 3
 y 9
 end
@@ -353,7 +353,7 @@ arch grass
 x 3
 y 11
 end
-arch swall_3_2
+arch swall_2_1_1
 x 3
 y 11
 end
@@ -395,14 +395,6 @@ y 15
 end
 arch footpath_2_1_1
 x 4
-end
-arch creator
-x 4
-connected 1019
-activate_on_release 0
-arch awall_0
-invisible 1
-end
 end
 arch footpath_2_1_1
 x 4
@@ -453,46 +445,15 @@ arch grass
 x 4
 y 9
 end
-arch player_changer
-slaying /start/tutorial_class
-hp 37
-sp 5
+arch swall_2_1_2
 x 4
 y 9
-arch warrior_class
-name Viking
-msg
-endmsg
-face viking.151
-animation northman_player
-Str 0
-Dex 0
-Con 0
-Wis 0
-Pow 0
-Int 0
-randomitems none
-end
 end
 arch grass
 x 4
 y 10
-move_block all
-end
-arch warrior_class
-name VIking
-msg
-endmsg
-face viking.151
-animation northman_player
-x 4
-y 10
 end
 arch grass
-x 4
-y 11
-end
-arch swall_2_1_2
 x 4
 y 11
 end
@@ -544,15 +505,11 @@ arch grass
 x 5
 y 2
 end
-arch swall_2_1_1
+arch swall_1_2_half
 x 5
 y 2
 end
 arch grass
-x 5
-y 3
-end
-arch swall_1_2_half
 x 5
 y 3
 end
@@ -573,10 +530,6 @@ x 5
 y 7
 end
 arch grass
-x 5
-y 8
-end
-arch swall_1_1
 x 5
 y 8
 end
@@ -588,7 +541,7 @@ arch grasspond
 x 5
 y 9
 end
-arch swall_2_1_1
+arch swall_2_1_2
 x 5
 y 9
 end
@@ -600,15 +553,7 @@ arch flowers_permanent
 x 5
 y 10
 end
-arch swall_2_1_1
-x 5
-y 10
-end
 arch grass
-x 5
-y 11
-end
-arch swall_3_1
 x 5
 y 11
 end
@@ -699,38 +644,9 @@ arch grass
 x 6
 y 1
 end
-arch note
-name quetzalcoatl
-face quetzalcoatl.131
-x 6
-y 1
-no_pick 1
-end
 arch grass
 x 6
 y 2
-end
-arch player_changer
-slaying /start/tutorial_class
-hp 37
-sp 5
-x 6
-y 2
-arch sorcerer_class
-name quetzalcoatl
-msg
-endmsg
-face quetzalcoatl.131
-animation quetzalcoatl_player
-Str 0
-Dex 0
-Con 0
-Wis 0
-Pow 0
-Int 0
-randomitems none
-anim_suffix no_class
-end
 end
 arch grass
 x 6
@@ -760,46 +676,15 @@ arch grass
 x 6
 y 9
 end
-arch player_changer
-slaying /start/tutorial_class
-hp 37
-sp 5
+arch swall_2_1_2
 x 6
 y 9
-arch warrior_class
-name serpentman
-msg
-endmsg
-face serpentman.131
-animation serpentman_player
-Str 0
-Dex 0
-Con 0
-Wis 0
-Pow 0
-Int 0
-randomitems none
-end
 end
 arch grass
 x 6
 y 10
-move_block all
-end
-arch warrior_class
-name serpentman
-msg
-endmsg
-face serpentman.131
-animation serpentman_player
-x 6
-y 10
 end
 arch grass
-x 6
-y 11
-end
-arch swall_2_1_2
 x 6
 y 11
 end
@@ -826,14 +711,10 @@ end
 arch grass
 x 7
 end
-arch swall_3_3
+arch swall_2_1_2
 x 7
 end
 arch grass
-x 7
-y 1
-end
-arch swall_2_1_1
 x 7
 y 1
 end
@@ -841,15 +722,7 @@ arch grass
 x 7
 y 2
 end
-arch swall_2_1_1
-x 7
-y 2
-end
 arch grass
-x 7
-y 3
-end
-arch swall_1_2_half
 x 7
 y 3
 end
@@ -864,24 +737,32 @@ end
 arch grass
 x 7
 y 6
-end
-arch grass
-x 7
-y 7
-end
-arch grass
-x 7
-y 8
 end
 arch swall_1_1
 x 7
+y 6
+end
+arch grass
+x 7
+y 7
+end
+arch swall_2_1_1
+x 7
+y 7
+end
+arch grass
+x 7
+y 8
+end
+arch swall_2_1_1
+x 7
 y 8
 end
 arch grass
 x 7
 y 9
 end
-arch swall_2_1_1
+arch swall_3_1
 x 7
 y 9
 end
@@ -889,15 +770,7 @@ arch grass
 x 7
 y 10
 end
-arch swall_2_1_1
-x 7
-y 10
-end
 arch grass
-x 7
-y 11
-end
-arch swall_3_1
 x 7
 y 11
 end
@@ -932,23 +805,87 @@ arch grass
 x 8
 y 1
 end
-arch note
-name dragon
-face pl_dragon_r.151
-x 8
-y 1
-no_pick 1
-end
 arch grass
 x 8
 y 2
 end
+arch grass
+x 8
+y 3
+end
+arch footpath_2_1_2
+x 8
+y 4
+end
+arch dungeon_floor
+x 8
+y 5
+end
+arch dungeon_floor
+x 8
+y 6
+end
+arch dungeon_floor
+x 8
+y 7
+end
+arch warrior_class
+msg
+endmsg
+x 8
+y 7
+end
+arch dungeon_floor
+x 8
+y 8
+end
+arch player_changer
+slaying /start/tutorial_class
+hp 43
+sp 12
+x 8
+y 8
+arch warrior_class
+msg
+endmsg
+Str 0
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Int 0
+randomitems none
+end
+end
+arch grass
+x 8
+y 9
+end
+arch swall_2_1_2
+x 8
+y 9
+end
+arch grass
+x 8
+y 10
+end
+arch note
+name dragon
+face pl_dragon_r.151
+x 8
+y 10
+no_pick 1
+end
+arch grass
+x 8
+y 11
+end
 arch player_changer
 slaying /start/tutorial_class
 hp 37
-sp 5
+sp 13
 x 8
-y 2
+y 11
 arch sorcerer_class
 name dragon
 msg
@@ -967,70 +904,6 @@ end
 end
 arch grass
 x 8
-y 3
-end
-arch footpath_2_1_2
-x 8
-y 4
-end
-arch dungeon_floor
-x 8
-y 5
-end
-arch dungeon_floor
-x 8
-y 6
-end
-arch dungeon_floor
-x 8
-y 7
-end
-arch dungeon_floor
-x 8
-y 8
-end
-arch dungeon_floor
-x 8
-y 9
-end
-arch warrior_class
-msg
-endmsg
-x 8
-y 9
-end
-arch dungeon_floor
-x 8
-y 10
-end
-arch player_changer
-slaying /start/tutorial_class
-hp 37
-sp 5
-x 8
-y 10
-arch warrior_class
-msg
-endmsg
-Str 0
-Dex 0
-Con 0
-Wis 0
-Pow 0
-Int 0
-randomitems none
-end
-end
-arch grass
-x 8
-y 11
-end
-arch swall_2_1_2
-x 8
-y 11
-end
-arch grass
-x 8
 y 12
 end
 arch footpath_2_1_2
@@ -1060,23 +933,11 @@ arch grass
 x 9
 y 1
 end
-arch swall_2_1_1
-x 9
-y 1
-end
 arch grass
 x 9
 y 2
 end
-arch swall_2_1_1
-x 9
-y 2
-end
 arch grass
-x 9
-y 3
-end
-arch swall_1_2_half
 x 9
 y 3
 end
@@ -1088,7 +949,11 @@ arch dungeon_floor
 x 9
 y 5
 end
-arch dungeon_floor
+arch grass
+x 9
+y 6
+end
+arch swall_1_1
 x 9
 y 6
 end
@@ -1096,11 +961,15 @@ arch grass
 x 9
 y 7
 end
+arch swall_2_1_1
+x 9
+y 7
+end
 arch grass
 x 9
 y 8
 end
-arch swall_1_1
+arch swall_2_1_1
 x 9
 y 8
 end
@@ -1108,7 +977,7 @@ arch grass
 x 9
 y 9
 end
-arch swall_2_1_1
+arch swall_4
 x 9
 y 9
 end
@@ -1124,7 +993,7 @@ arch grass
 x 9
 y 11
 end
-arch swall_3_1
+arch swall_2_1_1
 x 9
 y 11
 end
@@ -1159,23 +1028,86 @@ arch grass
 x 10
 y 1
 end
-arch note
-name beholder
-face beholder.151
-x 10
-y 1
-no_pick 1
-end
 arch grass
 x 10
 y 2
 end
+arch grass
+x 10
+y 3
+end
+arch grass
+x 10
+y 4
+end
+arch dungeon_floor
+x 10
+y 5
+end
+arch dungeon_floor
+x 10
+y 6
+end
+arch dungeon_floor
+x 10
+y 7
+end
+arch barbarian_class
+x 10
+y 7
+end
+arch dungeon_floor
+x 10
+y 8
+end
+arch player_changer
+slaying /start/tutorial_class
+hp 43
+sp 12
+x 10
+y 8
+arch barbarian_class
+msg
+endmsg
+Str 0
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Cha 0
+Int 0
+randomitems none
+end
+end
+arch grass
+x 10
+y 9
+end
+arch swall_2_1_2
+x 10
+y 9
+end
+arch grass
+x 10
+y 10
+end
+arch note
+name beholder
+face beholder.151
+x 10
+y 10
+no_pick 1
+end
+arch grass
+x 10
+y 11
+end
 arch player_changer
 slaying /start/tutorial_class
 hp 37
-sp 5
+sp 13
 x 10
-y 2
+y 11
 arch sorcerer_class
 name beholder
 msg
@@ -1194,69 +1126,6 @@ end
 end
 arch grass
 x 10
-y 3
-end
-arch dungeon_floor
-x 10
-y 4
-end
-arch dungeon_floor
-x 10
-y 5
-end
-arch dungeon_floor
-x 10
-y 6
-end
-arch dungeon_floor
-x 10
-y 7
-end
-arch dungeon_floor
-x 10
-y 8
-end
-arch dungeon_floor
-x 10
-y 9
-end
-arch barbarian_class
-x 10
-y 9
-end
-arch dungeon_floor
-x 10
-y 10
-end
-arch player_changer
-slaying /start/tutorial_class
-hp 37
-sp 5
-x 10
-y 10
-arch barbarian_class
-msg
-endmsg
-Str 0
-Dex 0
-Con 0
-Wis 0
-Pow 0
-Cha 0
-Int 0
-randomitems none
-end
-end
-arch grass
-x 10
-y 11
-end
-arch swall_2_1_2
-x 10
-y 11
-end
-arch grass
-x 10
 y 12
 end
 arch footpath_2_1_2
@@ -1286,27 +1155,11 @@ arch grass
 x 11
 y 1
 end
-arch grasspond
-x 11
-y 1
-end
-arch swall_2_1_1
-x 11
-y 1
-end
 arch grass
 x 11
 y 2
 end
-arch swall_2_1_1
-x 11
-y 2
-end
 arch grass
-x 11
-y 3
-end
-arch swall_1_2_half
 x 11
 y 3
 end
@@ -1318,7 +1171,11 @@ arch dungeon_floor
 x 11
 y 5
 end
-arch dungeon_floor
+arch grass
+x 11
+y 6
+end
+arch swall_1_1
 x 11
 y 6
 end
@@ -1326,23 +1183,31 @@ arch grass
 x 11
 y 7
 end
-arch grass
+arch swall_2_1_1
 x 11
-y 8
-end
-arch swall_1_1
-x 11
-y 8
+y 7
 end
 arch grass
 x 11
-y 9
+y 8
 end
 arch swall_2_1_1
 x 11
+y 8
+end
+arch grass
+x 11
+y 9
+end
+arch swall_4
+x 11
 y 9
 end
 arch grass
+x 11
+y 10
+end
+arch grasspond
 x 11
 y 10
 end
@@ -1354,16 +1219,11 @@ arch grass
 x 11
 y 11
 end
-arch swall_3_1
+arch swall_2_1_1
 x 11
 y 11
 end
 arch grass
-x 11
-y 12
-end
-arch sign_w
-name Left Please
 x 11
 y 12
 end
@@ -1394,23 +1254,86 @@ arch grass
 x 12
 y 1
 end
-arch note
-name leech
-face leech.171
-x 12
-y 1
-no_pick 1
-end
 arch grass
 x 12
 y 2
 end
+arch grass
+x 12
+y 3
+end
+arch grass
+x 12
+y 4
+end
+arch dungeon_floor
+x 12
+y 5
+end
+arch dungeon_floor
+x 12
+y 6
+end
+arch dungeon_floor
+x 12
+y 7
+end
+arch swashbuckler_class
+x 12
+y 7
+end
+arch dungeon_floor
+x 12
+y 8
+end
+arch player_changer
+slaying /start/tutorial_class
+hp 43
+sp 12
+x 12
+y 8
+arch swashbuckler_class
+msg
+endmsg
+Str 0
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Cha 0
+Int 0
+randomitems none
+end
+end
+arch grass
+x 12
+y 9
+end
+arch swall_2_1_2
+x 12
+y 9
+end
+arch grass
+x 12
+y 10
+end
+arch note
+name leech
+face leech.171
+x 12
+y 10
+no_pick 1
+end
+arch grass
+x 12
+y 11
+end
 arch player_changer
 slaying /start/tutorial_class
 hp 37
-sp 5
+sp 13
 x 12
-y 2
+y 11
 arch sorcerer_class
 name leech
 msg
@@ -1429,69 +1352,6 @@ end
 end
 arch grass
 x 12
-y 3
-end
-arch dungeon_floor
-x 12
-y 4
-end
-arch dungeon_floor
-x 12
-y 5
-end
-arch dungeon_floor
-x 12
-y 6
-end
-arch dungeon_floor
-x 12
-y 7
-end
-arch dungeon_floor
-x 12
-y 8
-end
-arch dungeon_floor
-x 12
-y 9
-end
-arch swashbuckler_class
-x 12
-y 9
-end
-arch dungeon_floor
-x 12
-y 10
-end
-arch player_changer
-slaying /start/tutorial_class
-hp 37
-sp 5
-x 12
-y 10
-arch swashbuckler_class
-msg
-endmsg
-Str 0
-Dex 0
-Con 0
-Wis 0
-Pow 0
-Cha 0
-Int 0
-randomitems none
-end
-end
-arch grass
-x 12
-y 11
-end
-arch swall_2_1_2
-x 12
-y 11
-end
-arch grass
-x 12
 y 12
 end
 arch footpath_2_1_2
@@ -1521,23 +1381,11 @@ arch grass
 x 13
 y 1
 end
-arch swall_2_1_1
-x 13
-y 1
-end
 arch grass
 x 13
 y 2
 end
-arch swall_2_1_1
-x 13
-y 2
-end
 arch grass
-x 13
-y 3
-end
-arch swall_1_2_half
 x 13
 y 3
 end
@@ -1549,7 +1397,11 @@ arch dungeon_floor
 x 13
 y 5
 end
-arch dungeon_floor
+arch grass
+x 13
+y 6
+end
+arch swall_1_1
 x 13
 y 6
 end
@@ -1557,11 +1409,15 @@ arch grass
 x 13
 y 7
 end
+arch swall_2_1_1
+x 13
+y 7
+end
 arch grass
 x 13
 y 8
 end
-arch swall_1_1
+arch swall_2_1_1
 x 13
 y 8
 end
@@ -1569,7 +1425,7 @@ arch grass
 x 13
 y 9
 end
-arch swall_2_1_1
+arch swall_4
 x 13
 y 9
 end
@@ -1585,11 +1441,15 @@ arch grass
 x 13
 y 11
 end
-arch swall_3_1
+arch swall_2_1_1
 x 13
 y 11
 end
 arch grass
+x 13
+y 12
+end
+arch swall_1_2_half
 x 13
 y 12
 end
@@ -1620,23 +1480,85 @@ arch grass
 x 14
 y 1
 end
-arch note
-name kobold
-face kobold.111
-x 14
-y 1
-no_pick 1
-end
 arch grass
 x 14
 y 2
 end
+arch grass
+x 14
+y 3
+end
+arch grass
+x 14
+y 4
+end
+arch dungeon_floor
+x 14
+y 5
+end
+arch dungeon_floor
+x 14
+y 6
+end
+arch dungeon_floor
+x 14
+y 7
+end
+arch ninja_class
+x 14
+y 7
+end
+arch dungeon_floor
+x 14
+y 8
+end
+arch player_changer
+slaying /start/tutorial_class
+hp 43
+sp 12
+x 14
+y 8
+arch ninja_class
+msg
+endmsg
+Str 0
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Cha 0
+randomitems none
+end
+end
+arch grass
+x 14
+y 9
+end
+arch swall_2_1_2
+x 14
+y 9
+end
+arch grass
+x 14
+y 10
+end
+arch note
+name kobold
+face kobold.111
+x 14
+y 10
+no_pick 1
+end
+arch grass
+x 14
+y 11
+end
 arch player_changer
 slaying /start/tutorial_class
 hp 37
-sp 5
+sp 13
 x 14
-y 2
+y 11
 arch sorcerer_class
 name kobold
 msg
@@ -1655,68 +1577,6 @@ end
 end
 arch grass
 x 14
-y 3
-end
-arch dungeon_floor
-x 14
-y 4
-end
-arch dungeon_floor
-x 14
-y 5
-end
-arch dungeon_floor
-x 14
-y 6
-end
-arch dungeon_floor
-x 14
-y 7
-end
-arch dungeon_floor
-x 14
-y 8
-end
-arch dungeon_floor
-x 14
-y 9
-end
-arch ninja_class
-x 14
-y 9
-end
-arch dungeon_floor
-x 14
-y 10
-end
-arch player_changer
-slaying /start/tutorial_class
-hp 37
-sp 5
-x 14
-y 10
-arch ninja_class
-msg
-endmsg
-Str 0
-Dex 0
-Con 0
-Wis 0
-Pow 0
-Cha 0
-randomitems none
-end
-end
-arch grass
-x 14
-y 11
-end
-arch swall_2_1_2
-x 14
-y 11
-end
-arch grass
-x 14
 y 12
 end
 arch footpath_2_1_2
@@ -1746,23 +1606,11 @@ arch grass
 x 15
 y 1
 end
-arch swall_2_1_1
-x 15
-y 1
-end
 arch grass
 x 15
 y 2
 end
-arch swall_2_1_1
-x 15
-y 2
-end
 arch grass
-x 15
-y 3
-end
-arch swall_1_2_half
 x 15
 y 3
 end
@@ -1774,7 +1622,11 @@ arch dungeon_floor
 x 15
 y 5
 end
-arch dungeon_floor
+arch grass
+x 15
+y 6
+end
+arch swall_1_1
 x 15
 y 6
 end
@@ -1782,11 +1634,15 @@ arch grass
 x 15
 y 7
 end
+arch swall_2_1_1
+x 15
+y 7
+end
 arch grass
 x 15
 y 8
 end
-arch swall_1_1
+arch swall_2_1_1
 x 15
 y 8
 end
@@ -1794,7 +1650,7 @@ arch grass
 x 15
 y 9
 end
-arch swall_2_1_1
+arch swall_4
 x 15
 y 9
 end
@@ -1810,7 +1666,7 @@ arch grass
 x 15
 y 11
 end
-arch swall_3_1
+arch swall_2_1_1
 x 15
 y 11
 end
@@ -1818,8 +1674,7 @@ arch grass
 x 15
 y 12
 end
-arch sign_w
-name Left Please
+arch swall_1_2_half
 x 15
 y 12
 end
@@ -1850,23 +1705,88 @@ arch grass
 x 16
 y 1
 end
-arch note
-name slimecrawler
-face slimecrawler.112
-x 16
-y 1
-no_pick 1
-end
 arch grass
 x 16
 y 2
 end
+arch grass
+x 16
+y 3
+end
+arch grass
+x 16
+y 4
+end
+arch dungeon_floor
+x 16
+y 5
+end
+arch dungeon_floor
+x 16
+y 6
+end
+arch dungeon_floor
+x 16
+y 7
+end
+arch thief_class
+msg
+endmsg
+face thief.151
+x 16
+y 7
+end
+arch dungeon_floor
+x 16
+y 8
+end
+arch player_changer
+slaying /start/tutorial_class
+hp 43
+sp 12
+x 16
+y 8
+arch thief_class
+msg
+endmsg
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Cha 0
+Int 0
+randomitems none
+end
+end
+arch grass
+x 16
+y 9
+end
+arch swall_2_1_2
+x 16
+y 9
+end
+arch grass
+x 16
+y 10
+end
+arch note
+name slimecrawler
+face slimecrawler.112
+x 16
+y 10
+no_pick 1
+end
+arch grass
+x 16
+y 11
+end
 arch player_changer
 slaying /start/tutorial_class
 hp 37
-sp 5
+sp 13
 x 16
-y 2
+y 11
 arch sorcerer_class
 name slimecrawler
 msg
@@ -1885,71 +1805,6 @@ end
 end
 arch grass
 x 16
-y 3
-end
-arch dungeon_floor
-x 16
-y 4
-end
-arch dungeon_floor
-x 16
-y 5
-end
-arch dungeon_floor
-x 16
-y 6
-end
-arch dungeon_floor
-x 16
-y 7
-end
-arch dungeon_floor
-x 16
-y 8
-end
-arch dungeon_floor
-x 16
-y 9
-end
-arch thief_class
-msg
-endmsg
-face thief.151
-x 16
-y 9
-end
-arch dungeon_floor
-x 16
-y 10
-end
-arch player_changer
-slaying /start/tutorial_class
-hp 37
-sp 5
-x 16
-y 10
-arch thief_class
-msg
-endmsg
-Dex 0
-Con 0
-Wis 0
-Pow 0
-Cha 0
-Int 0
-randomitems none
-end
-end
-arch grass
-x 16
-y 11
-end
-arch swall_2_1_2
-x 16
-y 11
-end
-arch grass
-x 16
 y 12
 end
 arch footpath_2_1_2
@@ -1979,23 +1834,11 @@ arch grass
 x 17
 y 1
 end
-arch swall_2_1_1
-x 17
-y 1
-end
 arch grass
 x 17
 y 2
 end
-arch swall_2_1_1
-x 17
-y 2
-end
 arch grass
-x 17
-y 3
-end
-arch swall_1_2_half
 x 17
 y 3
 end
@@ -2007,7 +1850,11 @@ arch dungeon_floor
 x 17
 y 5
 end
-arch dungeon_floor
+arch grass
+x 17
+y 6
+end
+arch swall_1_1
 x 17
 y 6
 end
@@ -2015,11 +1862,15 @@ arch grass
 x 17
 y 7
 end
+arch swall_2_1_1
+x 17
+y 7
+end
 arch grass
 x 17
 y 8
 end
-arch swall_1_1
+arch swall_2_1_1
 x 17
 y 8
 end
@@ -2027,7 +1878,7 @@ arch grass
 x 17
 y 9
 end
-arch swall_2_1_1
+arch swall_4
 x 17
 y 9
 end
@@ -2043,11 +1894,15 @@ arch grass
 x 17
 y 11
 end
-arch swall_3_1
+arch swall_2_1_1
 x 17
 y 11
 end
 arch grass
+x 17
+y 12
+end
+arch swall_1_2_half
 x 17
 y 12
 end
@@ -2078,23 +1933,88 @@ arch grass
 x 18
 y 1
 end
-arch note
-name ape
-face ape.171
-x 18
-y 1
-no_pick 1
-end
 arch grass
 x 18
 y 2
 end
+arch grass
+x 18
+y 3
+end
+arch grass
+x 18
+y 4
+end
+arch dungeon_floor
+x 18
+y 5
+end
+arch dungeon_floor
+x 18
+y 6
+end
+arch dungeon_floor
+x 18
+y 7
+end
+arch priest_class
+msg
+endmsg
+face priestnew.151
+x 18
+y 7
+end
+arch dungeon_floor
+x 18
+y 8
+end
+arch player_changer
+slaying /start/tutorial_class
+hp 43
+sp 12
+x 18
+y 8
+arch priest_class
+msg
+endmsg
+Str 0
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Cha 0
+randomitems none
+end
+end
+arch grass
+x 18
+y 9
+end
+arch swall_2_1_2
+x 18
+y 9
+end
+arch grass
+x 18
+y 10
+end
+arch note
+name ape
+face ape.171
+x 18
+y 10
+no_pick 1
+end
+arch grass
+x 18
+y 11
+end
 arch player_changer
 slaying /start/tutorial_class
 hp 37
-sp 5
+sp 13
 x 18
-y 2
+y 11
 arch sorcerer_class
 name ape
 msg
@@ -2113,71 +2033,6 @@ end
 end
 arch grass
 x 18
-y 3
-end
-arch dungeon_floor
-x 18
-y 4
-end
-arch dungeon_floor
-x 18
-y 5
-end
-arch dungeon_floor
-x 18
-y 6
-end
-arch dungeon_floor
-x 18
-y 7
-end
-arch dungeon_floor
-x 18
-y 8
-end
-arch dungeon_floor
-x 18
-y 9
-end
-arch priest_class
-msg
-endmsg
-face priestnew.151
-x 18
-y 9
-end
-arch dungeon_floor
-x 18
-y 10
-end
-arch player_changer
-slaying /start/tutorial_class
-hp 37
-sp 5
-x 18
-y 10
-arch priest_class
-msg
-endmsg
-Str 0
-Dex 0
-Con 0
-Wis 0
-Pow 0
-Cha 0
-randomitems none
-end
-end
-arch grass
-x 18
-y 11
-end
-arch swall_2_1_2
-x 18
-y 11
-end
-arch grass
-x 18
 y 12
 end
 arch footpath_2_1_2
@@ -2207,27 +2062,11 @@ arch grass
 x 19
 y 1
 end
-arch swall_2_1_1
-x 19
-y 1
-end
 arch grass
 x 19
 y 2
 end
-arch flowers_permanent
-x 19
-y 2
-end
-arch swall_2_1_1
-x 19
-y 2
-end
 arch grass
-x 19
-y 3
-end
-arch swall_1_2_half
 x 19
 y 3
 end
@@ -2239,7 +2078,11 @@ arch dungeon_floor
 x 19
 y 5
 end
-arch dungeon_floor
+arch grass
+x 19
+y 6
+end
+arch swall_1_1
 x 19
 y 6
 end
@@ -2247,11 +2090,15 @@ arch grass
 x 19
 y 7
 end
+arch swall_2_1_1
+x 19
+y 7
+end
 arch grass
 x 19
 y 8
 end
-arch swall_1_1
+arch swall_2_1_1
 x 19
 y 8
 end
@@ -2259,7 +2106,7 @@ arch grass
 x 19
 y 9
 end
-arch swall_2_1_1
+arch swall_4
 x 19
 y 9
 end
@@ -2275,7 +2122,11 @@ arch grass
 x 19
 y 11
 end
-arch swall_3_1
+arch flowers_permanent
+x 19
+y 11
+end
+arch swall_2_1_1
 x 19
 y 11
 end
@@ -2283,8 +2134,7 @@ arch grass
 x 19
 y 12
 end
-arch sign_w
-name Left Please
+arch swall_1_2_half
 x 19
 y 12
 end
@@ -2315,23 +2165,85 @@ arch grass
 x 20
 y 1
 end
-arch note
-name fireborn
-face fireborn.111
-x 20
-y 1
-no_pick 1
-end
 arch grass
 x 20
 y 2
 end
+arch grass
+x 20
+y 3
+end
+arch grass
+x 20
+y 4
+end
+arch dungeon_floor
+x 20
+y 5
+end
+arch dungeon_floor
+x 20
+y 6
+end
+arch dungeon_floor
+x 20
+y 7
+end
+arch paladin_class
+msg
+endmsg
+face paladin.151
+x 20
+y 7
+end
+arch dungeon_floor
+x 20
+y 8
+end
+arch player_changer
+slaying /start/tutorial_class
+hp 43
+sp 12
+x 20
+y 8
+arch paladin_class
+Dex 0
+Wis 0
+Pow 0
+Cha 0
+Int 0
+randomitems none
+end
+end
+arch grass
+x 20
+y 9
+end
+arch swall_2_1_2
+x 20
+y 9
+end
+arch grass
+x 20
+y 10
+end
+arch note
+name fireborn
+face fireborn.111
+x 20
+y 10
+no_pick 1
+end
+arch grass
+x 20
+y 11
+end
 arch player_changer
 slaying /start/tutorial_class
 hp 37
-sp 5
+sp 13
 x 20
-y 2
+y 11
 arch sorcerer_class
 name fireborn
 msg
@@ -2350,68 +2262,6 @@ end
 end
 arch grass
 x 20
-y 3
-end
-arch dungeon_floor
-x 20
-y 4
-end
-arch dungeon_floor
-x 20
-y 5
-end
-arch dungeon_floor
-x 20
-y 6
-end
-arch dungeon_floor
-x 20
-y 7
-end
-arch dungeon_floor
-x 20
-y 8
-end
-arch dungeon_floor
-x 20
-y 9
-end
-arch paladin_class
-msg
-endmsg
-face paladin.151
-x 20
-y 9
-end
-arch dungeon_floor
-x 20
-y 10
-end
-arch player_changer
-slaying /start/tutorial_class
-hp 37
-sp 5
-x 20
-y 10
-arch paladin_class
-Dex 0
-Wis 0
-Pow 0
-Cha 0
-Int 0
-randomitems none
-end
-end
-arch grass
-x 20
-y 11
-end
-arch swall_2_1_2
-x 20
-y 11
-end
-arch grass
-x 20
 y 12
 end
 arch footpath_2_1_2
@@ -2441,23 +2291,11 @@ arch grass
 x 21
 y 1
 end
-arch swall_2_1_1
-x 21
-y 1
-end
 arch grass
 x 21
 y 2
 end
-arch swall_2_1_1
-x 21
-y 2
-end
 arch grass
-x 21
-y 3
-end
-arch swall_1_2_half
 x 21
 y 3
 end
@@ -2469,7 +2307,11 @@ arch dungeon_floor
 x 21
 y 5
 end
-arch dungeon_floor
+arch grass
+x 21
+y 6
+end
+arch swall_1_1
 x 21
 y 6
 end
@@ -2477,11 +2319,15 @@ arch grass
 x 21
 y 7
 end
+arch swall_2_1_1
+x 21
+y 7
+end
 arch grass
 x 21
 y 8
 end
-arch swall_1_1
+arch swall_2_1_1
 x 21
 y 8
 end
@@ -2489,7 +2335,7 @@ arch grass
 x 21
 y 9
 end
-arch swall_2_1_1
+arch swall_4
 x 21
 y 9
 end
@@ -2505,11 +2351,15 @@ arch grass
 x 21
 y 11
 end
-arch swall_3_1
+arch swall_2_1_1
 x 21
 y 11
 end
 arch grass
+x 21
+y 12
+end
+arch swall_1_2_half
 x 21
 y 12
 end
@@ -2540,23 +2390,93 @@ arch grass
 x 22
 y 1
 end
-arch note
-name air elemental
-face elem_air.111
-x 22
-y 1
-no_pick 1
-end
 arch grass
 x 22
 y 2
 end
+arch grass
+x 22
+y 3
+end
+arch grass
+x 22
+y 4
+end
+arch dungeon_floor
+x 22
+y 5
+end
+arch dungeon_floor
+x 22
+y 6
+end
+arch dungeon_floor
+x 22
+y 7
+end
+arch monk_class
+msg
+In the Monastery, they believed in
+mental discipline and peace through
+physical training, meditation, and to
+a lesser extent, religious devotion.
+Your inner peacefulness grants you the
+ability to regenerate faster and to
+sense auras.
+endmsg
+x 22
+y 7
+end
+arch dungeon_floor
+x 22
+y 8
+end
+arch player_changer
+slaying /start/tutorial_class
+hp 43
+sp 12
+x 22
+y 8
+arch monk_class
+Str 0
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Cha 0
+Int 0
+randomitems none
+end
+end
+arch grass
+x 22
+y 9
+end
+arch swall_2_1_2
+x 22
+y 9
+end
+arch grass
+x 22
+y 10
+end
+arch note
+name air elemental
+face elem_air.111
+x 22
+y 10
+no_pick 1
+end
+arch grass
+x 22
+y 11
+end
 arch player_changer
 slaying /start/tutorial_class
 hp 37
-sp 5
+sp 13
 x 22
-y 2
+y 11
 arch sorcerer_class
 name air elemental
 msg
@@ -2575,76 +2495,6 @@ end
 end
 arch grass
 x 22
-y 3
-end
-arch dungeon_floor
-x 22
-y 4
-end
-arch dungeon_floor
-x 22
-y 5
-end
-arch dungeon_floor
-x 22
-y 6
-end
-arch dungeon_floor
-x 22
-y 7
-end
-arch dungeon_floor
-x 22
-y 8
-end
-arch dungeon_floor
-x 22
-y 9
-end
-arch monk_class
-msg
-In the Monastery, they believed in
-mental discipline and peace through
-physical training, meditation, and to
-a lesser extent, religious devotion.
-Your inner peacefulness grants you the
-ability to regenerate faster and to
-sense auras.
-endmsg
-x 22
-y 9
-end
-arch dungeon_floor
-x 22
-y 10
-end
-arch player_changer
-slaying /start/tutorial_class
-hp 37
-sp 5
-x 22
-y 10
-arch monk_class
-Str 0
-Dex 0
-Con 0
-Wis 0
-Pow 0
-Cha 0
-Int 0
-randomitems none
-end
-end
-arch grass
-x 22
-y 11
-end
-arch swall_2_1_2
-x 22
-y 11
-end
-arch grass
-x 22
 y 12
 end
 arch footpath_2_1_2
@@ -2674,23 +2524,11 @@ arch grass
 x 23
 y 1
 end
-arch swall_2_1_1
-x 23
-y 1
-end
 arch grass
 x 23
 y 2
 end
-arch swall_2_1_1
-x 23
-y 2
-end
 arch grass
-x 23
-y 3
-end
-arch swall_1_2_half
 x 23
 y 3
 end
@@ -2702,7 +2540,11 @@ arch dungeon_floor
 x 23
 y 5
 end
-arch dungeon_floor
+arch grass
+x 23
+y 6
+end
+arch swall_1_1
 x 23
 y 6
 end
@@ -2710,11 +2552,15 @@ arch grass
 x 23
 y 7
 end
+arch swall_2_1_1
+x 23
+y 7
+end
 arch grass
 x 23
 y 8
 end
-arch swall_1_1
+arch swall_2_1_1
 x 23
 y 8
 end
@@ -2722,7 +2568,7 @@ arch grass
 x 23
 y 9
 end
-arch swall_2_1_1
+arch swall_4
 x 23
 y 9
 end
@@ -2738,7 +2584,7 @@ arch grass
 x 23
 y 11
 end
-arch swall_3_1
+arch swall_2_1_1
 x 23
 y 11
 end
@@ -2746,8 +2592,7 @@ arch grass
 x 23
 y 12
 end
-arch sign_w
-name Left Please
+arch swall_1_2_half
 x 23
 y 12
 end
@@ -2778,23 +2623,82 @@ arch grass
 x 24
 y 1
 end
-arch note
-name bats
-face bat.111
-x 24
-y 1
-no_pick 1
-end
 arch grass
 x 24
 y 2
 end
+arch grass
+x 24
+y 3
+end
+arch grass
+x 24
+y 4
+end
+arch dungeon_floor
+x 24
+y 5
+end
+arch dungeon_floor
+x 24
+y 6
+end
+arch dungeon_floor
+x 24
+y 7
+end
+arch devotee_class
+x 24
+y 7
+end
+arch dungeon_floor
+x 24
+y 8
+end
+arch player_changer
+slaying /start/tutorial_class
+hp 43
+sp 12
+x 24
+y 8
+arch devotee_class
+Str 0
+Con 0
+Wis 0
+Pow 0
+Cha 0
+randomitems none
+end
+end
+arch grass
+x 24
+y 9
+end
+arch swall_2_1_2
+x 24
+y 9
+end
+arch grass
+x 24
+y 10
+end
+arch note
+name bats
+face bat.111
+x 24
+y 10
+no_pick 1
+end
+arch grass
+x 24
+y 11
+end
 arch player_changer
 slaying /start/tutorial_class
 hp 37
-sp 5
+sp 13
 x 24
-y 2
+y 11
 arch sorcerer_class
 name Chaos Knight
 msg
@@ -2813,65 +2717,6 @@ end
 end
 arch grass
 x 24
-y 3
-end
-arch dungeon_floor
-x 24
-y 4
-end
-arch dungeon_floor
-x 24
-y 5
-end
-arch dungeon_floor
-x 24
-y 6
-end
-arch dungeon_floor
-x 24
-y 7
-end
-arch dungeon_floor
-x 24
-y 8
-end
-arch dungeon_floor
-x 24
-y 9
-end
-arch devotee_class
-x 24
-y 9
-end
-arch dungeon_floor
-x 24
-y 10
-end
-arch player_changer
-slaying /start/tutorial_class
-hp 37
-sp 5
-x 24
-y 10
-arch devotee_class
-Str 0
-Con 0
-Wis 0
-Pow 0
-Cha 0
-randomitems none
-end
-end
-arch grass
-x 24
-y 11
-end
-arch swall_2_1_2
-x 24
-y 11
-end
-arch grass
-x 24
 y 12
 end
 arch footpath_2_1_2
@@ -2901,23 +2746,11 @@ arch grass
 x 25
 y 1
 end
-arch swall_2_1_1
-x 25
-y 1
-end
 arch grass
 x 25
 y 2
 end
-arch swall_2_1_1
-x 25
-y 2
-end
 arch grass
-x 25
-y 3
-end
-arch swall_1_2_half
 x 25
 y 3
 end
@@ -2929,7 +2762,11 @@ arch dungeon_floor
 x 25
 y 5
 end
-arch dungeon_floor
+arch grass
+x 25
+y 6
+end
+arch swall_1_1
 x 25
 y 6
 end
@@ -2937,11 +2774,15 @@ arch grass
 x 25
 y 7
 end
+arch swall_2_1_1
+x 25
+y 7
+end
 arch grass
 x 25
 y 8
 end
-arch swall_1_1
+arch swall_2_1_1
 x 25
 y 8
 end
@@ -2949,7 +2790,7 @@ arch grass
 x 25
 y 9
 end
-arch swall_2_1_1
+arch swall_4
 x 25
 y 9
 end
@@ -2965,11 +2806,15 @@ arch grass
 x 25
 y 11
 end
-arch swall_3_1
+arch swall_2_1_1
 x 25
 y 11
 end
 arch grass
+x 25
+y 12
+end
+arch swall_1_2_half
 x 25
 y 12
 end
@@ -3000,23 +2845,97 @@ arch grass
 x 26
 y 1
 end
-arch note
-name dancing sword
-face dancingsword.111
-x 26
-y 1
-no_pick 1
-end
 arch grass
 x 26
 y 2
+end
+arch grass
+x 26
+y 3
+end
+arch grass
+x 26
+y 4
+end
+arch dungeon_floor
+x 26
+y 5
+end
+arch dungeon_floor
+x 26
+y 6
+end
+arch dungeon_floor
+x 26
+y 7
+end
+arch warlock_class
+msg
+Warlock
+You've divided your time between
+learning magic and learning weapons,
+but have totally disregarded
+religious devotion.  You're
+physically stronger and hardier
+because of your training, and you
+know the use of weapons and bows.
+However, you're just a bit clumsy in
+both weaponry and magic because
+you've had to divide your time
+between them.
+endmsg
+x 26
+y 7
+end
+arch dungeon_floor
+x 26
+y 8
 end
 arch player_changer
 slaying /start/tutorial_class
 hp 37
 sp 5
 x 26
-y 2
+y 8
+arch warlock_class
+Str 0
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Cha 0
+randomitems none
+end
+end
+arch grass
+x 26
+y 9
+end
+arch swall_2_1_2
+x 26
+y 9
+end
+arch grass
+x 26
+y 10
+end
+arch note
+name dancing sword
+face dancingsword.111
+x 26
+y 10
+no_pick 1
+end
+arch grass
+x 26
+y 11
+end
+arch player_changer
+slaying /start/tutorial_class
+hp 37
+sp 13
+x 26
+y 11
 arch sorcerer_class
 name dancing sword
 msg
@@ -3035,80 +2954,6 @@ end
 end
 arch grass
 x 26
-y 3
-end
-arch dungeon_floor
-x 26
-y 4
-end
-arch dungeon_floor
-x 26
-y 5
-end
-arch dungeon_floor
-x 26
-y 6
-end
-arch dungeon_floor
-x 26
-y 7
-end
-arch dungeon_floor
-x 26
-y 8
-end
-arch dungeon_floor
-x 26
-y 9
-end
-arch warlock_class
-msg
-Warlock
-You've divided your time between
-learning magic and learning weapons,
-but have totally disregarded
-religious devotion.  You're
-physically stronger and hardier
-because of your training, and you
-know the use of weapons and bows.
-However, you're just a bit clumsy in
-both weaponry and magic because
-you've had to divide your time
-between them.
-endmsg
-x 26
-y 9
-end
-arch dungeon_floor
-x 26
-y 10
-end
-arch player_changer
-slaying /start/tutorial_class
-hp 37
-sp 5
-x 26
-y 10
-arch warlock_class
-Str 0
-Dex 0
-Con 0
-Wis 0
-Pow 0
-Cha 0
-randomitems none
-end
-end
-arch grass
-x 26
-y 11
-end
-arch swall_2_1_2
-x 26
-y 11
-end
-arch grass
-x 26
 y 12
 end
 arch footpath_2_1_2
@@ -3138,23 +2983,11 @@ arch grass
 x 27
 y 1
 end
-arch swall_2_1_1
-x 27
-y 1
-end
 arch grass
 x 27
 y 2
 end
-arch swall_2_1_1
-x 27
-y 2
-end
 arch grass
-x 27
-y 3
-end
-arch swall_1_2_half
 x 27
 y 3
 end
@@ -3166,7 +2999,11 @@ arch dungeon_floor
 x 27
 y 5
 end
-arch dungeon_floor
+arch grass
+x 27
+y 6
+end
+arch swall_1_1
 x 27
 y 6
 end
@@ -3174,11 +3011,15 @@ arch grass
 x 27
 y 7
 end
+arch swall_2_1_1
+x 27
+y 7
+end
 arch grass
 x 27
 y 8
 end
-arch swall_1_1
+arch swall_2_1_1
 x 27
 y 8
 end
@@ -3186,7 +3027,7 @@ arch grass
 x 27
 y 9
 end
-arch swall_2_1_1
+arch swall_4
 x 27
 y 9
 end
@@ -3202,7 +3043,7 @@ arch grass
 x 27
 y 11
 end
-arch swall_3_1
+arch swall_2_1_1
 x 27
 y 11
 end
@@ -3210,8 +3051,7 @@ arch grass
 x 27
 y 12
 end
-arch sign_w
-name Left Please
+arch swall_1_2_half
 x 27
 y 12
 end
@@ -3242,23 +3082,81 @@ arch grass
 x 28
 y 1
 end
-arch note
-name wandering terror
-face deathtree.111
-x 28
-y 1
-no_pick 1
-end
 arch grass
 x 28
 y 2
 end
+arch grass
+x 28
+y 3
+end
+arch grass
+x 28
+y 4
+end
+arch dungeon_floor
+x 28
+y 5
+end
+arch dungeon_floor
+x 28
+y 6
+end
+arch dungeon_floor
+x 28
+y 7
+end
+arch evoker_class
+x 28
+y 7
+end
+arch dungeon_floor
+x 28
+y 8
+end
+arch player_changer
+slaying /start/tutorial_class
+hp 43
+sp 12
+x 28
+y 8
+arch evoker_class
+Str 0
+Con 0
+Pow 0
+Cha 0
+randomitems none
+end
+end
+arch grass
+x 28
+y 9
+end
+arch swall_2_1_2
+x 28
+y 9
+end
+arch grass
+x 28
+y 10
+end
+arch note
+name wandering terror
+face deathtree.111
+x 28
+y 10
+no_pick 1
+end
+arch grass
+x 28
+y 11
+end
 arch player_changer
 slaying /start/tutorial_class
 hp 37
-sp 5
+sp 13
 x 28
-y 2
+y 11
 arch sorcerer_class
 name wandering terror
 msg
@@ -3277,64 +3175,6 @@ end
 end
 arch grass
 x 28
-y 3
-end
-arch dungeon_floor
-x 28
-y 4
-end
-arch dungeon_floor
-x 28
-y 5
-end
-arch dungeon_floor
-x 28
-y 6
-end
-arch dungeon_floor
-x 28
-y 7
-end
-arch dungeon_floor
-x 28
-y 8
-end
-arch dungeon_floor
-x 28
-y 9
-end
-arch evoker_class
-x 28
-y 9
-end
-arch dungeon_floor
-x 28
-y 10
-end
-arch player_changer
-slaying /start/tutorial_class
-hp 37
-sp 5
-x 28
-y 10
-arch evoker_class
-Str 0
-Con 0
-Pow 0
-Cha 0
-randomitems none
-end
-end
-arch grass
-x 28
-y 11
-end
-arch swall_2_1_2
-x 28
-y 11
-end
-arch grass
-x 28
 y 12
 end
 arch footpath_2_1_2
@@ -3364,23 +3204,11 @@ arch grass
 x 29
 y 1
 end
-arch swall_2_1_1
-x 29
-y 1
-end
 arch grass
 x 29
 y 2
 end
-arch swall_2_1_1
-x 29
-y 2
-end
 arch grass
-x 29
-y 3
-end
-arch swall_1_2_half
 x 29
 y 3
 end
@@ -3392,7 +3220,11 @@ arch dungeon_floor
 x 29
 y 5
 end
-arch dungeon_floor
+arch grass
+x 29
+y 6
+end
+arch swall_1_1
 x 29
 y 6
 end
@@ -3400,11 +3232,15 @@ arch grass
 x 29
 y 7
 end
+arch swall_2_1_1
+x 29
+y 7
+end
 arch grass
 x 29
 y 8
 end
-arch swall_1_1
+arch swall_2_1_1
 x 29
 y 8
 end
@@ -3412,7 +3248,7 @@ arch grass
 x 29
 y 9
 end
-arch swall_2_1_1
+arch swall_4
 x 29
 y 9
 end
@@ -3428,11 +3264,15 @@ arch grass
 x 29
 y 11
 end
-arch swall_3_1
+arch swall_2_1_1
 x 29
 y 11
 end
 arch grass
+x 29
+y 12
+end
+arch swall_1_2_half
 x 29
 y 12
 end
@@ -3463,23 +3303,83 @@ arch grass
 x 30
 y 1
 end
-arch note
-name skull
-face skull.111
-x 30
-y 1
-no_pick 1
-end
 arch grass
 x 30
 y 2
 end
+arch grass
+x 30
+y 3
+end
+arch grass
+x 30
+y 4
+end
+arch dungeon_floor
+x 30
+y 5
+end
+arch dungeon_floor
+x 30
+y 6
+end
+arch dungeon_floor
+x 30
+y 7
+end
+arch wizard_class
+msg
+endmsg
+x 30
+y 7
+end
+arch dungeon_floor
+x 30
+y 8
+end
+arch player_changer
+slaying /start/tutorial_class
+hp 43
+sp 12
+x 30
+y 8
+arch wizard_class
+Str 0
+Con 0
+Pow 0
+Int 0
+randomitems none
+end
+end
+arch grass
+x 30
+y 9
+end
+arch swall_2_1_2
+x 30
+y 9
+end
+arch grass
+x 30
+y 10
+end
+arch note
+name skull
+face skull.111
+x 30
+y 10
+no_pick 1
+end
+arch grass
+x 30
+y 11
+end
 arch player_changer
 slaying /start/tutorial_class
 hp 37
-sp 5
+sp 13
 x 30
-y 2
+y 11
 arch sorcerer_class
 name skull
 msg
@@ -3498,66 +3398,6 @@ end
 end
 arch grass
 x 30
-y 3
-end
-arch dungeon_floor
-x 30
-y 4
-end
-arch dungeon_floor
-x 30
-y 5
-end
-arch dungeon_floor
-x 30
-y 6
-end
-arch dungeon_floor
-x 30
-y 7
-end
-arch dungeon_floor
-x 30
-y 8
-end
-arch dungeon_floor
-x 30
-y 9
-end
-arch wizard_class
-msg
-endmsg
-x 30
-y 9
-end
-arch dungeon_floor
-x 30
-y 10
-end
-arch player_changer
-slaying /start/tutorial_class
-hp 37
-sp 5
-x 30
-y 10
-arch wizard_class
-Str 0
-Con 0
-Pow 0
-Int 0
-randomitems none
-end
-end
-arch grass
-x 30
-y 11
-end
-arch swall_2_1_2
-x 30
-y 11
-end
-arch grass
-x 30
 y 12
 end
 arch footpath_2_1_2
@@ -3587,27 +3427,11 @@ arch grass
 x 31
 y 1
 end
-arch swall_2_1_1
-x 31
-y 1
-end
 arch grass
 x 31
 y 2
 end
-arch grasspond
-x 31
-y 2
-end
-arch swall_2_1_1
-x 31
-y 2
-end
 arch grass
-x 31
-y 3
-end
-arch swall_1_2_half
 x 31
 y 3
 end
@@ -3619,7 +3443,11 @@ arch dungeon_floor
 x 31
 y 5
 end
-arch dungeon_floor
+arch grass
+x 31
+y 6
+end
+arch swall_1_1
 x 31
 y 6
 end
@@ -3627,11 +3455,15 @@ arch grass
 x 31
 y 7
 end
+arch swall_2_1_1
+x 31
+y 7
+end
 arch grass
 x 31
 y 8
 end
-arch swall_1_1
+arch swall_2_1_1
 x 31
 y 8
 end
@@ -3639,7 +3471,7 @@ arch grass
 x 31
 y 9
 end
-arch swall_2_1_1
+arch swall_4
 x 31
 y 9
 end
@@ -3655,7 +3487,11 @@ arch grass
 x 31
 y 11
 end
-arch swall_3_1
+arch grasspond
+x 31
+y 11
+end
+arch swall_2_1_1
 x 31
 y 11
 end
@@ -3663,8 +3499,7 @@ arch grass
 x 31
 y 12
 end
-arch sign_w
-name Left Please
+arch swall_1_2_half
 x 31
 y 12
 end
@@ -3695,22 +3530,82 @@ arch grass
 x 32
 y 1
 end
-arch note
-name ghost
-face ghost.111
-x 32
-y 1
-no_pick 1
-end
 arch grass
 x 32
 y 2
 end
-arch player_changer
-hp 37
-sp 5
+arch grass
 x 32
-y 2
+y 3
+end
+arch grass
+x 32
+y 4
+end
+arch dungeon_floor
+x 32
+y 5
+end
+arch dungeon_floor
+x 32
+y 6
+end
+arch dungeon_floor
+x 32
+y 7
+end
+arch alchemist_class
+x 32
+y 7
+end
+arch dungeon_floor
+x 32
+y 8
+end
+arch player_changer
+slaying /start/tutorial_class
+hp 43
+sp 12
+x 32
+y 8
+arch alchemist_class
+Str 0
+Con 0
+Pow 0
+Cha 0
+Int 0
+randomitems none
+end
+end
+arch grass
+x 32
+y 9
+end
+arch swall_2_1_2
+x 32
+y 9
+end
+arch grass
+x 32
+y 10
+end
+arch note
+name ghost
+face ghost.111
+x 32
+y 10
+no_pick 1
+end
+arch grass
+x 32
+y 11
+end
+arch player_changer
+slaying /start/tutorial_class
+hp 37
+sp 13
+x 32
+y 11
 arch sorcerer_class
 name ghost
 msg
@@ -3729,65 +3624,6 @@ end
 end
 arch grass
 x 32
-y 3
-end
-arch dungeon_floor
-x 32
-y 4
-end
-arch dungeon_floor
-x 32
-y 5
-end
-arch dungeon_floor
-x 32
-y 6
-end
-arch dungeon_floor
-x 32
-y 7
-end
-arch dungeon_floor
-x 32
-y 8
-end
-arch dungeon_floor
-x 32
-y 9
-end
-arch alchemist_class
-x 32
-y 9
-end
-arch dungeon_floor
-x 32
-y 10
-end
-arch player_changer
-slaying /start/tutorial_class
-hp 37
-sp 5
-x 32
-y 10
-arch alchemist_class
-Str 0
-Con 0
-Pow 0
-Cha 0
-Int 0
-randomitems none
-end
-end
-arch grass
-x 32
-y 11
-end
-arch swall_2_1_2
-x 32
-y 11
-end
-arch grass
-x 32
 y 12
 end
 arch footpath_2_1_2
@@ -3817,27 +3653,11 @@ arch grass
 x 33
 y 1
 end
-arch swall_2_1_1
-x 33
-y 1
-end
 arch grass
 x 33
 y 2
 end
-arch grasspond
-x 33
-y 2
-end
-arch swall_2_1_1
-x 33
-y 2
-end
 arch grass
-x 33
-y 3
-end
-arch swall_1_2_half
 x 33
 y 3
 end
@@ -3849,7 +3669,11 @@ arch dungeon_floor
 x 33
 y 5
 end
-arch dungeon_floor
+arch grass
+x 33
+y 6
+end
+arch swall_1_1
 x 33
 y 6
 end
@@ -3857,11 +3681,15 @@ arch grass
 x 33
 y 7
 end
+arch swall_2_1_1
+x 33
+y 7
+end
 arch grass
 x 33
 y 8
 end
-arch swall_1_1
+arch swall_2_1_1
 x 33
 y 8
 end
@@ -3869,7 +3697,7 @@ arch grass
 x 33
 y 9
 end
-arch swall_2_1_1
+arch swall_4
 x 33
 y 9
 end
@@ -3885,11 +3713,19 @@ arch grass
 x 33
 y 11
 end
-arch swall_3_1
+arch grasspond
+x 33
+y 11
+end
+arch swall_2_1_1
 x 33
 y 11
 end
 arch grass
+x 33
+y 12
+end
+arch swall_1_2_half
 x 33
 y 12
 end
@@ -3920,22 +3756,87 @@ arch grass
 x 34
 y 1
 end
-arch note
-name nightmare
-face nightmare.111
-x 34
-y 1
-no_pick 1
-end
 arch grass
 x 34
 y 2
 end
-arch player_changer
-hp 37
-sp 5
+arch grass
 x 34
-y 2
+y 3
+end
+arch grass
+x 34
+y 4
+end
+arch dungeon_floor
+x 34
+y 5
+end
+arch dungeon_floor
+x 34
+y 6
+end
+arch dungeon_floor
+x 34
+y 7
+end
+arch sorcerer_class
+msg
+endmsg
+face sorcerer.151
+x 34
+y 7
+end
+arch dungeon_floor
+x 34
+y 8
+end
+arch player_changer
+slaying /start/tutorial_class
+hp 43
+sp 12
+x 34
+y 8
+arch sorcerer_class
+Str 0
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Cha 0
+Int 0
+randomitems none
+end
+end
+arch grass
+x 34
+y 9
+end
+arch swall_2_1_2
+x 34
+y 9
+end
+arch grass
+x 34
+y 10
+end
+arch note
+name nightmare
+face nightmare.111
+x 34
+y 10
+no_pick 1
+end
+arch grass
+x 34
+y 11
+end
+arch player_changer
+slaying /start/tutorial_class
+hp 37
+sp 13
+x 34
+y 11
 arch sorcerer_class
 name nightmare
 msg
@@ -3954,70 +3855,6 @@ end
 end
 arch grass
 x 34
-y 3
-end
-arch dungeon_floor
-x 34
-y 4
-end
-arch dungeon_floor
-x 34
-y 5
-end
-arch dungeon_floor
-x 34
-y 6
-end
-arch dungeon_floor
-x 34
-y 7
-end
-arch dungeon_floor
-x 34
-y 8
-end
-arch dungeon_floor
-x 34
-y 9
-end
-arch sorcerer_class
-msg
-endmsg
-face sorcerer.151
-x 34
-y 9
-end
-arch dungeon_floor
-x 34
-y 10
-end
-arch player_changer
-slaying /start/tutorial_class
-hp 37
-sp 5
-x 34
-y 10
-arch sorcerer_class
-Str 0
-Dex 0
-Con 0
-Wis 0
-Pow 0
-Cha 0
-Int 0
-randomitems none
-end
-end
-arch grass
-x 34
-y 11
-end
-arch swall_2_1_2
-x 34
-y 11
-end
-arch grass
-x 34
 y 12
 end
 arch footpath_2_1_2
@@ -4047,23 +3884,11 @@ arch grass
 x 35
 y 1
 end
-arch swall_2_1_1
-x 35
-y 1
-end
 arch grass
 x 35
 y 2
 end
-arch swall_2_1_1
-x 35
-y 2
-end
 arch grass
-x 35
-y 3
-end
-arch swall_1_2_half
 x 35
 y 3
 end
@@ -4075,7 +3900,11 @@ arch dungeon_floor
 x 35
 y 5
 end
-arch dungeon_floor
+arch grass
+x 35
+y 6
+end
+arch swall_1_1
 x 35
 y 6
 end
@@ -4083,11 +3912,15 @@ arch grass
 x 35
 y 7
 end
+arch swall_2_1_1
+x 35
+y 7
+end
 arch grass
 x 35
 y 8
 end
-arch swall_1_1
+arch swall_2_1_1
 x 35
 y 8
 end
@@ -4095,7 +3928,7 @@ arch grass
 x 35
 y 9
 end
-arch swall_2_1_1
+arch swall_4
 x 35
 y 9
 end
@@ -4111,7 +3944,7 @@ arch grass
 x 35
 y 11
 end
-arch swall_3_1
+arch swall_2_1_1
 x 35
 y 11
 end
@@ -4119,8 +3952,7 @@ arch grass
 x 35
 y 12
 end
-arch sign_w
-name Left Please
+arch swall_1_2_half
 x 35
 y 12
 end
@@ -4151,22 +3983,83 @@ arch grass
 x 36
 y 1
 end
-arch note
-name Dwarf
-face dwarf_p.151
-x 36
-y 1
-no_pick 1
-end
 arch grass
 x 36
 y 2
 end
-arch player_changer
-hp 37
-sp 5
+arch grass
 x 36
-y 2
+y 3
+end
+arch grass
+x 36
+y 4
+end
+arch dungeon_floor
+x 36
+y 5
+end
+arch dungeon_floor
+x 36
+y 6
+end
+arch dungeon_floor
+x 36
+y 7
+end
+arch summoner_class
+face wizard_yellow.151
+x 36
+y 7
+end
+arch dungeon_floor
+x 36
+y 8
+end
+arch player_changer
+slaying /start/tutorial_class
+hp 43
+sp 12
+x 36
+y 8
+arch summoner_class
+Str 0
+Con 0
+Pow 0
+Cha 0
+Int 0
+randomitems none
+end
+end
+arch grass
+x 36
+y 9
+end
+arch swall_2_1_2
+x 36
+y 9
+end
+arch grass
+x 36
+y 10
+end
+arch note
+name Dwarf
+face dwarf_p.151
+x 36
+y 10
+no_pick 1
+end
+arch grass
+x 36
+y 11
+end
+arch player_changer
+slaying /start/tutorial_class
+hp 37
+sp 13
+x 36
+y 11
 arch sorcerer_class
 name Dwarf
 msg
@@ -4185,66 +4078,6 @@ end
 end
 arch grass
 x 36
-y 3
-end
-arch dungeon_floor
-x 36
-y 4
-end
-arch dungeon_floor
-x 36
-y 5
-end
-arch dungeon_floor
-x 36
-y 6
-end
-arch dungeon_floor
-x 36
-y 7
-end
-arch dungeon_floor
-x 36
-y 8
-end
-arch dungeon_floor
-x 36
-y 9
-end
-arch summoner_class
-face wizard_yellow.151
-x 36
-y 9
-end
-arch dungeon_floor
-x 36
-y 10
-end
-arch player_changer
-slaying /start/tutorial_class
-hp 37
-sp 5
-x 36
-y 10
-arch summoner_class
-Str 0
-Con 0
-Pow 0
-Cha 0
-Int 0
-randomitems none
-end
-end
-arch grass
-x 36
-y 11
-end
-arch swall_2_1_2
-x 36
-y 11
-end
-arch grass
-x 36
 y 12
 end
 arch footpath_2_1_2
@@ -4267,14 +4100,10 @@ arch evergreen
 x 37
 move_block all
 end
-arch swall_3_3
+arch swall_2_1_2
 x 37
 end
 arch grass
-x 37
-y 1
-end
-arch swall_2_1_1
 x 37
 y 1
 end
@@ -4282,15 +4111,7 @@ arch grass
 x 37
 y 2
 end
-arch swall_2_1_1
-x 37
-y 2
-end
 arch grass
-x 37
-y 3
-end
-arch swall_1_2_half
 x 37
 y 3
 end
@@ -4314,15 +4135,11 @@ arch grass
 x 37
 y 8
 end
-arch swall_1_1
-x 37
-y 8
-end
 arch grass
 x 37
 y 9
 end
-arch swall_2_1_1
+arch swall_2_1_2
 x 37
 y 9
 end
@@ -4330,15 +4147,7 @@ arch grass
 x 37
 y 10
 end
-arch swall_2_1_1
-x 37
-y 10
-end
 arch grass
-x 37
-y 11
-end
-arch swall_3_1
 x 37
 y 11
 end
@@ -4373,37 +4182,17 @@ arch grass
 x 38
 y 1
 end
-arch note
-name Elf
-face elf.151
+arch swall_2_1_1
 x 38
 y 1
-no_pick 1
+end
+arch grass
+x 38
+y 1
 end
 arch grass
 x 38
 y 2
-end
-arch player_changer
-hp 37
-sp 5
-x 38
-y 2
-arch sorcerer_class
-name Elf
-msg
-endmsg
-face elf.151
-animation elf_player
-Str 0
-Dex 0
-Con 0
-Wis 0
-Pow 0
-Int 0
-randomitems none
-anim_suffix no_class
-end
 end
 arch grass
 x 38
@@ -4433,40 +4222,15 @@ arch grass
 x 38
 y 9
 end
-arch player_changer
-slaying /start/tutorial_class
-hp 37
-sp 5
+arch swall_2_1_2
 x 38
 y 9
-arch summoner_class
-name Halfling
-face halfling.151
-animation halfling_player
-Str 0
-Con 0
-Pow 0
-Cha 0
-Int 0
-randomitems none
-end
 end
 arch grass
 x 38
 y 10
-move_block all
-end
-arch summoner_class
-name Halfling
-face halfling.151
-x 38
-y 10
 end
 arch grass
-x 38
-y 11
-end
-arch swall_2_1_2
 x 38
 y 11
 end
@@ -4493,7 +4257,7 @@ end
 arch grass
 x 39
 end
-arch swall_3_3
+arch swall_2_1_2
 x 39
 end
 arch grass
@@ -4506,17 +4270,13 @@ y 1
 end
 arch grass
 x 39
-y 2
+y 1
 end
-arch swall_2_1_1
+arch grass
 x 39
 y 2
 end
 arch grass
-x 39
-y 3
-end
-arch swall_1_2_half
 x 39
 y 3
 end
@@ -4540,15 +4300,11 @@ arch grass
 x 39
 y 8
 end
-arch swall_1_1
-x 39
-y 8
-end
 arch grass
 x 39
 y 9
 end
-arch swall_2_1_1
+arch swall_2_1_2
 x 39
 y 9
 end
@@ -4556,15 +4312,7 @@ arch grass
 x 39
 y 10
 end
-arch swall_2_1_1
-x 39
-y 10
-end
 arch grass
-x 39
-y 11
-end
-arch swall_3_1
 x 39
 y 11
 end
@@ -4604,37 +4352,9 @@ arch grass
 x 40
 y 1
 end
-arch note
-name Gnome
-face gnome_p.151
-x 40
-y 1
-no_pick 1
-end
 arch grass
 x 40
 y 2
-end
-arch player_changer
-hp 37
-sp 5
-x 40
-y 2
-arch sorcerer_class
-name Gnome
-msg
-endmsg
-face gnome_p.151
-animation gnome_player
-Str 0
-Dex 0
-Con 0
-Wis 0
-Pow 0
-Int 0
-randomitems none
-anim_suffix no_class
-end
 end
 arch grass
 x 40
@@ -4664,41 +4384,15 @@ arch grass
 x 40
 y 9
 end
-arch player_changer
-slaying /start/tutorial_class
-hp 37
-sp 5
+arch swall_2_1_2
 x 40
 y 9
-arch summoner_class
-name Troll
-face troll_p.151
-animation troll_player
-Str 0
-Con 0
-Pow 0
-Cha 0
-Int 0
-randomitems none
-end
 end
 arch grass
 x 40
 y 10
-move_block all
-end
-arch summoner_class
-name Troll
-face troll_p.151
-animation troll_player
-x 40
-y 10
 end
 arch grass
-x 40
-y 11
-end
-arch swall_2_1_2
 x 40
 y 11
 end
@@ -4725,14 +4419,10 @@ end
 arch grass
 x 41
 end
-arch wall_2_2_2
+arch swall_2_1_2
 x 41
 end
 arch grass
-x 41
-y 1
-end
-arch wall_2_1_1
 x 41
 y 1
 end
@@ -4740,15 +4430,7 @@ arch grass
 x 41
 y 2
 end
-arch wall_2_1_1
-x 41
-y 2
-end
 arch grass
-x 41
-y 3
-end
-arch woodwall_1_2
 x 41
 y 3
 end
@@ -4772,102 +4454,69 @@ arch grass
 x 41
 y 8
 end
-arch swall_1_1
-x 41
-y 8
-end
 arch grass
 x 41
 y 9
+end
+arch swall_2_1_2
+x 41
+y 9
+end
+arch grass
+x 41
+y 10
+end
+arch grass
+x 41
+y 11
+end
+arch dungeon_floor
+x 41
+y 12
+end
+arch dungeon_floor
+x 41
+y 13
+end
+arch grass
+x 41
+y 14
+end
+arch grass
+x 41
+y 15
+end
+arch wall_2_1_2
+x 41
+y 15
+end
+arch dungeon_floor
+x 42
+end
+arch swall_2_1_2
+x 42
+end
+arch grass
+x 42
+y 1
 end
 arch swall_2_1_1
-x 41
-y 9
-end
-arch grass
-x 41
-y 10
-end
-arch swall_2_1_1
-x 41
-y 10
-end
-arch grass
-x 41
-y 11
-end
-arch swall_2_2_4
-x 41
-y 11
-end
-arch dungeon_floor
-x 41
-y 12
-end
-arch dungeon_floor
-x 41
-y 13
-end
-arch grass
-x 41
-y 14
-end
-arch grass
-x 41
-y 15
-end
-arch wall_2_1_2
-x 41
-y 15
-end
-arch dungeon_floor
-x 42
-end
-arch wall_2_1_2
-x 42
-end
-arch dungeon_floor
 x 42
 y 1
 end
-arch note
-name Demon Form
-face penta.111
+arch grass
 x 42
 y 1
-no_pick 1
 end
-arch dungeon_floor
+arch grass
 x 42
 y 2
 end
-arch player_changer
-hp 37
-sp 5
-x 42
-y 2
-arch barbarian_class
-name Demon
-msg
-endmsg
-face jessyb.x11
-animation jessyb
-Str 0
-Dex 0
-Con 0
-Wis 0
-Pow 0
-Cha 0
-Int 0
-randomitems none
-anim_suffix no_class
-end
-end
-arch dungeon_floor
+arch grass
 x 42
 y 3
 end
-arch dungeon_floor
+arch grass
 x 42
 y 4
 end
@@ -4888,6 +4537,10 @@ x 42
 y 8
 end
 arch dungeon_floor
+x 42
+y 9
+end
+arch swall_2_1_2
 x 42
 y 9
 end
@@ -4922,34 +4575,22 @@ end
 arch grass
 x 43
 end
-arch wall_3_3
+arch swall_2_1_2
 x 43
 end
-arch dungeon_floor
-x 43
-y 1
-end
-arch wall_2_1_1
+arch grass
 x 43
 y 1
 end
-arch dungeon_floor
+arch grass
 x 43
 y 2
 end
-arch wall_2_1_1
-x 43
-y 2
-end
-arch dungeon_floor
+arch grass
 x 43
 y 3
 end
-arch woodwall_1_2
-x 43
-y 3
-end
-arch dungeon_floor
+arch grass_only
 x 43
 y 4
 end
@@ -4970,6 +4611,10 @@ x 43
 y 8
 end
 arch dungeon_floor
+x 43
+y 9
+end
+arch swall_2_1_2
 x 43
 y 9
 end
@@ -5004,47 +4649,18 @@ end
 arch grass
 x 44
 end
-arch wall_2_1_2
+arch swall_2_1_2
 x 44
 end
-arch dungeon_floor
-x 44
-y 1
-end
-arch note
-name Demon Form
-face beholder_leader.111
+arch grass
 x 44
 y 1
-no_pick 1
 end
-arch dungeon_floor
+arch grass
 x 44
 y 2
 end
-arch player_changer
-hp 37
-sp 5
-x 44
-y 2
-arch barbarian_class
-name Dread
-msg
-endmsg
-face dread.x11
-animation dread
-Str 0
-Dex 0
-Con 0
-Wis 0
-Pow 0
-Cha 0
-Int 0
-randomitems none
-anim_suffix no_class
-end
-end
-arch dungeon_floor
+arch grass
 x 44
 y 3
 end
@@ -5069,6 +4685,10 @@ x 44
 y 8
 end
 arch grass
+x 44
+y 9
+end
+arch swall_2_1_2
 x 44
 y 9
 end

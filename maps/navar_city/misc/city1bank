@@ -8,6 +8,7 @@ msg
 Creator:
 Email:
 Date: Wed Nov 17 22:32:08 1993
+Modified: 2020-01-25 Acer
 endmsg
 end
 arch cobblestones
@@ -304,7 +305,11 @@ arch diamond_converter
 x 2
 y 8
 end
-arch cobblestones
+arch dungeon_magic
+x 2
+y 9
+end
+arch cobblestones2
 x 2
 y 9
 end
@@ -312,9 +317,21 @@ arch dungeon_magic
 x 2
 y 9
 end
-arch pearl_converter
+arch depositbox
+name Deposit Box
 x 2
 y 9
+container 99999999999999
+arch event_apply
+name Apply
+title Python
+slaying /python/IPO/banksay.py
+end
+arch event_close
+name Close
+title Python
+slaying /python/IPO/banksay.py
+end
 end
 arch cobblestones
 x 2
@@ -1449,7 +1466,7 @@ arch cobblestones
 x 10
 y 11
 end
-arch westcwall_2_2_2
+arch westcwall_1_4
 x 10
 y 11
 end
@@ -1457,23 +1474,11 @@ arch cobblestones
 x 10
 y 12
 end
-arch westcwall_3_2
-x 10
-y 12
-end
 arch cobblestones
 x 10
 y 13
 end
-arch westcwall_3_2
-x 10
-y 13
-end
 arch cobblestones
-x 10
-y 14
-end
-arch westcwall_3_2
 x 10
 y 14
 end
@@ -1485,7 +1490,7 @@ arch cobblestones
 x 10
 y 15
 end
-arch westcwall_2_2_1
+arch westcwall_1_4
 x 10
 y 15
 end
@@ -1601,15 +1606,11 @@ arch cobblestones
 x 11
 y 11
 end
-arch westcwall_3_3
+arch westcwall_2_1_2
 x 11
 y 11
 end
 arch cobblestones
-x 11
-y 12
-end
-arch westcwall_4
 x 11
 y 12
 end
@@ -1621,15 +1622,7 @@ arch cobblestones
 x 11
 y 13
 end
-arch westcwall_3_4
-x 11
-y 13
-end
 arch cobblestones
-x 11
-y 14
-end
-arch westcwall_4
 x 11
 y 14
 end
@@ -1637,7 +1630,7 @@ arch cobblestones
 x 11
 y 15
 end
-arch westcwall_3_1
+arch westcwall_2_1_2
 x 11
 y 15
 end
@@ -1739,27 +1732,24 @@ arch cobblestones
 x 12
 y 11
 end
-arch westcwall_3_3
+arch westcwall_2_1_2
 x 12
 y 11
 end
-arch cobblestones
+arch tile_tan_floor
 x 12
 y 12
 end
-arch westcwall_3_1
-x 12
-y 12
-end
-arch cobblestones
+arch tile_tan_floor
 x 12
 y 13
 end
-arch cobblestones
+arch sign
+name REALTY OFFICE
 x 12
-y 14
+y 13
 end
-arch westcwall_3_3
+arch tile_tan_floor
 x 12
 y 14
 end
@@ -1767,7 +1757,7 @@ arch cobblestones
 x 12
 y 15
 end
-arch westcwall_3_1
+arch westcwall_2_1_2
 x 12
 y 15
 end
@@ -1875,27 +1865,19 @@ arch cobblestones
 x 13
 y 11
 end
-arch westcwall_3_3
+arch westcwall_2_1_2
 x 13
 y 11
 end
-arch cobblestones
+arch tile_tan_floor
 x 13
 y 12
 end
-arch westcwall_3_1
-x 13
-y 12
-end
-arch cobblestones
+arch tile_tan_floor
 x 13
 y 13
 end
-arch cobblestones
-x 13
-y 14
-end
-arch westcwall_3_3
+arch tile_tan_floor
 x 13
 y 14
 end
@@ -1903,7 +1885,7 @@ arch cobblestones
 x 13
 y 15
 end
-arch westcwall_3_1
+arch westcwall_2_1_2
 x 13
 y 15
 end
@@ -1989,7 +1971,11 @@ arch silver_converter
 x 14
 y 8
 end
-arch cobblestones
+arch dungeon_magic
+x 14
+y 9
+end
+arch cobblestones2
 x 14
 y 9
 end
@@ -1997,9 +1983,21 @@ arch dungeon_magic
 x 14
 y 9
 end
-arch silver_converter
+arch depositbox
+name Deposit Box
 x 14
 y 9
+container 99999999999999
+arch event_apply
+name Apply
+title Python
+slaying /python/IPO/banksay.py
+end
+arch event_close
+name Close
+title Python
+slaying /python/IPO/banksay.py
+end
 end
 arch cobblestones
 x 14
@@ -2021,25 +2019,32 @@ arch westcwall_3_3
 x 14
 y 11
 end
-arch cobblestones
+arch tile_tan_floor
 x 14
 y 12
 end
-arch westcwall_3_1
+arch table_4
 x 14
 y 12
+move_block all
 end
-arch cobblestones
+arch tile_tan_floor
 x 14
 y 13
 end
-arch cobblestones
+arch table_4
+x 14
+y 13
+move_block all
+end
+arch tile_tan_floor
 x 14
 y 14
 end
-arch westcwall_3_3
+arch table_4
 x 14
 y 14
+move_block all
 end
 arch cobblestones
 x 14
@@ -2147,27 +2152,30 @@ arch westcwall_4
 x 15
 y 11
 end
-arch cobblestones
+arch tile_tan_floor
 x 15
 y 12
 end
-arch westcwall_4
-x 15
-y 12
-end
-arch cobblestones
+arch tile_tan_floor
 x 15
 y 13
 end
-arch westcwall_3_2
+arch c_woman
+name Alwati
+msg
+@match *
+I'm on a break.
+endmsg
 x 15
 y 13
+monster 0
+stand_still 1
+arch event_say
+title Python
+slaying python/misc/buildsale.py
 end
-arch cobblestones
-x 15
-y 14
 end
-arch westcwall_4
+arch tile_tan_floor
 x 15
 y 14
 end

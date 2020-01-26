@@ -31,7 +31,7 @@ floors = [ 'woodfloor_camp', 'woodfloor_camp1',  'woodfloor_camp2' ]
 walls = [ 'flagstone', 'dwall', 'timberwall', 'stwall' ]
 
 # what to replace the player with. Should block all movement
-replace_with = [ 'd_statue', 'statue', 'statue2' ]
+replace_with = [ 'statue2_gold' ]
 
 def get_one(what):
 	'''Return a random choice in what, which should be an array.'''

@@ -44,11 +44,6 @@ end
 arch grass
 y 5
 end
-arch detector
-y 5
-invisible 1
-connected 3948
-end
 arch grass
 y 6
 end
@@ -139,12 +134,6 @@ arch grass
 x 1
 y 5
 end
-arch igate_open_2
-x 1
-y 5
-connected 345
-activate_on_release 0
-end
 arch grass
 x 1
 y 6
@@ -222,12 +211,6 @@ end
 arch grass
 x 2
 y 5
-end
-arch detector
-x 2
-y 5
-invisible 1
-connected 345
 end
 arch grass
 x 2
@@ -325,11 +308,6 @@ end
 arch grass
 x 3
 y 5
-end
-arch igate_closed_2
-x 3
-y 5
-connected 345
 end
 arch grass
 x 3
@@ -471,18 +449,6 @@ arch grass
 x 4
 y 8
 end
-arch igate_closed_1
-x 4
-y 8
-connected 345
-activate_on_release 0
-end
-arch gate_open_1
-x 4
-y 8
-connected 1019
-activate_on_release 0
-end
 arch grass
 x 4
 y 9
@@ -538,19 +504,15 @@ arch grass
 x 4
 y 13
 end
-arch creator
-x 4
-y 13
-connected 1019
-activate_on_release 0
-arch invis_exit
+arch town_1
 name To Scorn
 slaying /world/world_105_116
-face jcity_0.111
 hp 4
 sp 4
+x 4
+y 13
 invisible 0
-end
+move_on walk fly_low
 end
 arch grass
 x 4
@@ -749,6 +711,7 @@ x 6
 y 2
 end
 arch player_changer
+slaying /start/tutorial_class
 hp 37
 sp 5
 x 6
@@ -773,18 +736,6 @@ arch grass
 x 6
 y 3
 end
-arch igate_closed_1
-x 6
-y 3
-connected 345
-activate_on_release 0
-end
-arch gate_open_1
-x 6
-y 3
-connected 1019
-activate_on_release 0
-end
 arch footpath_2_1_2
 x 6
 y 4
@@ -804,18 +755,6 @@ end
 arch grass
 x 6
 y 8
-end
-arch igate_closed_1
-x 6
-y 8
-connected 345
-activate_on_release 0
-end
-arch gate_open_1
-x 6
-y 8
-connected 1019
-activate_on_release 0
 end
 arch grass
 x 6
@@ -966,31 +905,13 @@ arch grass
 x 7
 y 12
 end
-arch igate_closed_2
-x 7
-y 12
-connected 1019
-activate_on_release 0
-end
 arch footpath_2_1_2
 x 7
 y 13
 end
-arch igate_closed_2
-x 7
-y 13
-connected 1019
-activate_on_release 0
-end
 arch grass
 x 7
 y 14
-end
-arch igate_closed_2
-x 7
-y 14
-connected 1019
-activate_on_release 0
 end
 arch grass
 x 7
@@ -1023,6 +944,7 @@ x 8
 y 2
 end
 arch player_changer
+slaying /start/tutorial_class
 hp 37
 sp 5
 x 8
@@ -1047,18 +969,6 @@ arch grass
 x 8
 y 3
 end
-arch igate_closed_1
-x 8
-y 3
-connected 345
-activate_on_release 0
-end
-arch gate_open_1
-x 8
-y 3
-connected 1019
-activate_on_release 0
-end
 arch footpath_2_1_2
 x 8
 y 4
@@ -1079,18 +989,6 @@ arch dungeon_floor
 x 8
 y 8
 end
-arch igate_open_1
-x 8
-y 8
-connected 3948
-activate_on_release 0
-end
-arch gate_open_1
-x 8
-y 8
-connected 1019
-activate_on_release 0
-end
 arch dungeon_floor
 x 8
 y 9
@@ -1106,7 +1004,8 @@ x 8
 y 10
 end
 arch player_changer
-hp 0
+slaying /start/tutorial_class
+hp 37
 sp 5
 x 8
 y 10
@@ -1137,20 +1036,6 @@ end
 arch footpath_2_1_2
 x 8
 y 13
-end
-arch button_handle
-x 8
-y 13
-connected 1019
-end
-arch creator
-x 8
-y 13
-connected 1019
-activate_on_release 0
-arch awall_0
-invisible 1
-end
 end
 arch grass
 x 8
@@ -1286,6 +1171,7 @@ x 10
 y 2
 end
 arch player_changer
+slaying /start/tutorial_class
 hp 37
 sp 5
 x 10
@@ -1310,18 +1196,6 @@ arch grass
 x 10
 y 3
 end
-arch igate_closed_1
-x 10
-y 3
-connected 345
-activate_on_release 0
-end
-arch gate_open_1
-x 10
-y 3
-connected 1019
-activate_on_release 0
-end
 arch dungeon_floor
 x 10
 y 4
@@ -1342,18 +1216,6 @@ arch dungeon_floor
 x 10
 y 8
 end
-arch igate_open_1
-x 10
-y 8
-connected 3948
-activate_on_release 0
-end
-arch gate_open_1
-x 10
-y 8
-connected 1019
-activate_on_release 0
-end
 arch dungeon_floor
 x 10
 y 9
@@ -1367,7 +1229,8 @@ x 10
 y 10
 end
 arch player_changer
-hp 0
+slaying /start/tutorial_class
+hp 37
 sp 5
 x 10
 y 10
@@ -1396,41 +1259,11 @@ arch grass
 x 10
 y 12
 end
-arch magic_mouth
-msg
-FLIPPING THE LEVER WILL ACTIVATE THE EXIT
-FROM TUTORIAL AND DISABLE CHARACTER
-SELECTION IF YOU SHOULD EVER FIND YOURSELF
-BACK HERE.
-endmsg
-x 10
-y 12
-end
 arch footpath_2_1_2
 x 10
 y 13
 end
-arch magic_mouth
-msg
-FLIPPING THE LEVER WILL ACTIVATE THE EXIT
-FROM TUTORIAL AND DISABLE CHARACTER
-SELECTION IF YOU SHOULD EVER FIND YOURSELF
-BACK HERE.
-endmsg
-x 10
-y 13
-end
 arch grass
-x 10
-y 14
-end
-arch magic_mouth
-msg
-FLIPPING THE LEVER WILL ACTIVATE THE EXIT
-FROM TUTORIAL AND DISABLE CHARACTER
-SELECTION IF YOU SHOULD EVER FIND YOURSELF
-BACK HERE.
-endmsg
 x 10
 y 14
 end
@@ -1573,6 +1406,7 @@ x 12
 y 2
 end
 arch player_changer
+slaying /start/tutorial_class
 hp 37
 sp 5
 x 12
@@ -1597,18 +1431,6 @@ arch grass
 x 12
 y 3
 end
-arch igate_closed_1
-x 12
-y 3
-connected 345
-activate_on_release 0
-end
-arch gate_open_1
-x 12
-y 3
-connected 1019
-activate_on_release 0
-end
 arch dungeon_floor
 x 12
 y 4
@@ -1629,18 +1451,6 @@ arch dungeon_floor
 x 12
 y 8
 end
-arch igate_open_1
-x 12
-y 8
-connected 3948
-activate_on_release 0
-end
-arch gate_open_1
-x 12
-y 8
-connected 1019
-activate_on_release 0
-end
 arch dungeon_floor
 x 12
 y 9
@@ -1654,7 +1464,8 @@ x 12
 y 10
 end
 arch player_changer
-hp 0
+slaying /start/tutorial_class
+hp 37
 sp 5
 x 12
 y 10
@@ -1821,6 +1632,7 @@ x 14
 y 2
 end
 arch player_changer
+slaying /start/tutorial_class
 hp 37
 sp 5
 x 14
@@ -1845,18 +1657,6 @@ arch grass
 x 14
 y 3
 end
-arch igate_closed_1
-x 14
-y 3
-connected 345
-activate_on_release 0
-end
-arch gate_open_1
-x 14
-y 3
-connected 1019
-activate_on_release 0
-end
 arch dungeon_floor
 x 14
 y 4
@@ -1877,18 +1677,6 @@ arch dungeon_floor
 x 14
 y 8
 end
-arch igate_open_1
-x 14
-y 8
-connected 3948
-activate_on_release 0
-end
-arch gate_open_1
-x 14
-y 8
-connected 1019
-activate_on_release 0
-end
 arch dungeon_floor
 x 14
 y 9
@@ -1902,7 +1690,8 @@ x 14
 y 10
 end
 arch player_changer
-hp 0
+slaying /start/tutorial_class
+hp 37
 sp 5
 x 14
 y 10
@@ -2073,6 +1862,7 @@ x 16
 y 2
 end
 arch player_changer
+slaying /start/tutorial_class
 hp 37
 sp 5
 x 16
@@ -2097,18 +1887,6 @@ arch grass
 x 16
 y 3
 end
-arch igate_closed_1
-x 16
-y 3
-connected 345
-activate_on_release 0
-end
-arch gate_open_1
-x 16
-y 3
-connected 1019
-activate_on_release 0
-end
 arch dungeon_floor
 x 16
 y 4
@@ -2129,18 +1907,6 @@ arch dungeon_floor
 x 16
 y 8
 end
-arch igate_open_1
-x 16
-y 8
-connected 3948
-activate_on_release 0
-end
-arch gate_open_1
-x 16
-y 8
-connected 1019
-activate_on_release 0
-end
 arch dungeon_floor
 x 16
 y 9
@@ -2157,7 +1923,8 @@ x 16
 y 10
 end
 arch player_changer
-hp 0
+slaying /start/tutorial_class
+hp 37
 sp 5
 x 16
 y 10
@@ -2323,6 +2090,7 @@ x 18
 y 2
 end
 arch player_changer
+slaying /start/tutorial_class
 hp 37
 sp 5
 x 18
@@ -2347,18 +2115,6 @@ arch grass
 x 18
 y 3
 end
-arch igate_closed_1
-x 18
-y 3
-connected 345
-activate_on_release 0
-end
-arch gate_open_1
-x 18
-y 3
-connected 1019
-activate_on_release 0
-end
 arch dungeon_floor
 x 18
 y 4
@@ -2379,18 +2135,6 @@ arch dungeon_floor
 x 18
 y 8
 end
-arch igate_open_1
-x 18
-y 8
-connected 3948
-activate_on_release 0
-end
-arch gate_open_1
-x 18
-y 8
-connected 1019
-activate_on_release 0
-end
 arch dungeon_floor
 x 18
 y 9
@@ -2407,7 +2151,8 @@ x 18
 y 10
 end
 arch player_changer
-hp 0
+slaying /start/tutorial_class
+hp 37
 sp 5
 x 18
 y 10
@@ -2582,6 +2327,7 @@ x 20
 y 2
 end
 arch player_changer
+slaying /start/tutorial_class
 hp 37
 sp 5
 x 20
@@ -2606,18 +2352,6 @@ arch grass
 x 20
 y 3
 end
-arch igate_closed_1
-x 20
-y 3
-connected 345
-activate_on_release 0
-end
-arch gate_open_1
-x 20
-y 3
-connected 1019
-activate_on_release 0
-end
 arch dungeon_floor
 x 20
 y 4
@@ -2638,18 +2372,6 @@ arch dungeon_floor
 x 20
 y 8
 end
-arch igate_open_1
-x 20
-y 8
-connected 3948
-activate_on_release 0
-end
-arch gate_open_1
-x 20
-y 8
-connected 1019
-activate_on_release 0
-end
 arch dungeon_floor
 x 20
 y 9
@@ -2666,7 +2388,8 @@ x 20
 y 10
 end
 arch player_changer
-hp 0
+slaying /start/tutorial_class
+hp 37
 sp 5
 x 20
 y 10
@@ -2829,6 +2552,7 @@ x 22
 y 2
 end
 arch player_changer
+slaying /start/tutorial_class
 hp 37
 sp 5
 x 22
@@ -2853,18 +2577,6 @@ arch grass
 x 22
 y 3
 end
-arch igate_closed_1
-x 22
-y 3
-connected 345
-activate_on_release 0
-end
-arch gate_open_1
-x 22
-y 3
-connected 1019
-activate_on_release 0
-end
 arch dungeon_floor
 x 22
 y 4
@@ -2884,18 +2596,6 @@ end
 arch dungeon_floor
 x 22
 y 8
-end
-arch igate_open_1
-x 22
-y 8
-connected 3948
-activate_on_release 0
-end
-arch gate_open_1
-x 22
-y 8
-connected 1019
-activate_on_release 0
 end
 arch dungeon_floor
 x 22
@@ -2919,7 +2619,8 @@ x 22
 y 10
 end
 arch player_changer
-hp 0
+slaying /start/tutorial_class
+hp 37
 sp 5
 x 22
 y 10
@@ -3089,6 +2790,7 @@ x 24
 y 2
 end
 arch player_changer
+slaying /start/tutorial_class
 hp 37
 sp 5
 x 24
@@ -3113,18 +2815,6 @@ arch grass
 x 24
 y 3
 end
-arch igate_closed_1
-x 24
-y 3
-connected 345
-activate_on_release 0
-end
-arch gate_open_1
-x 24
-y 3
-connected 1019
-activate_on_release 0
-end
 arch dungeon_floor
 x 24
 y 4
@@ -3145,18 +2835,6 @@ arch dungeon_floor
 x 24
 y 8
 end
-arch igate_open_1
-x 24
-y 8
-connected 3948
-activate_on_release 0
-end
-arch gate_open_1
-x 24
-y 8
-connected 1019
-activate_on_release 0
-end
 arch dungeon_floor
 x 24
 y 9
@@ -3170,7 +2848,8 @@ x 24
 y 10
 end
 arch player_changer
-hp 0
+slaying /start/tutorial_class
+hp 37
 sp 5
 x 24
 y 10
@@ -3333,6 +3012,7 @@ x 26
 y 2
 end
 arch player_changer
+slaying /start/tutorial_class
 hp 37
 sp 5
 x 26
@@ -3357,18 +3037,6 @@ arch grass
 x 26
 y 3
 end
-arch igate_closed_1
-x 26
-y 3
-connected 345
-activate_on_release 0
-end
-arch gate_open_1
-x 26
-y 3
-connected 1019
-activate_on_release 0
-end
 arch dungeon_floor
 x 26
 y 4
@@ -3388,18 +3056,6 @@ end
 arch dungeon_floor
 x 26
 y 8
-end
-arch igate_open_1
-x 26
-y 8
-connected 3948
-activate_on_release 0
-end
-arch gate_open_1
-x 26
-y 8
-connected 1019
-activate_on_release 0
 end
 arch dungeon_floor
 x 26
@@ -3428,7 +3084,8 @@ x 26
 y 10
 end
 arch player_changer
-hp 0
+slaying /start/tutorial_class
+hp 37
 sp 5
 x 26
 y 10
@@ -3597,6 +3254,7 @@ x 28
 y 2
 end
 arch player_changer
+slaying /start/tutorial_class
 hp 37
 sp 5
 x 28
@@ -3621,18 +3279,6 @@ arch grass
 x 28
 y 3
 end
-arch igate_closed_1
-x 28
-y 3
-connected 345
-activate_on_release 0
-end
-arch gate_open_1
-x 28
-y 3
-connected 1019
-activate_on_release 0
-end
 arch dungeon_floor
 x 28
 y 4
@@ -3653,18 +3299,6 @@ arch dungeon_floor
 x 28
 y 8
 end
-arch igate_open_1
-x 28
-y 8
-connected 3948
-activate_on_release 0
-end
-arch gate_open_1
-x 28
-y 8
-connected 1019
-activate_on_release 0
-end
 arch dungeon_floor
 x 28
 y 9
@@ -3678,7 +3312,8 @@ x 28
 y 10
 end
 arch player_changer
-hp 0
+slaying /start/tutorial_class
+hp 37
 sp 5
 x 28
 y 10
@@ -3865,18 +3500,6 @@ arch grass
 x 30
 y 3
 end
-arch igate_closed_1
-x 30
-y 3
-connected 345
-activate_on_release 0
-end
-arch gate_open_1
-x 30
-y 3
-connected 1019
-activate_on_release 0
-end
 arch dungeon_floor
 x 30
 y 4
@@ -3897,18 +3520,6 @@ arch dungeon_floor
 x 30
 y 8
 end
-arch igate_open_1
-x 30
-y 8
-connected 3948
-activate_on_release 0
-end
-arch gate_open_1
-x 30
-y 8
-connected 1019
-activate_on_release 0
-end
 arch dungeon_floor
 x 30
 y 9
@@ -3924,7 +3535,8 @@ x 30
 y 10
 end
 arch player_changer
-hp 0
+slaying /start/tutorial_class
+hp 37
 sp 5
 x 30
 y 10
@@ -4119,18 +3731,6 @@ arch grass
 x 32
 y 3
 end
-arch igate_closed_1
-x 32
-y 3
-connected 345
-activate_on_release 0
-end
-arch gate_open_1
-x 32
-y 3
-connected 1019
-activate_on_release 0
-end
 arch dungeon_floor
 x 32
 y 4
@@ -4151,18 +3751,6 @@ arch dungeon_floor
 x 32
 y 8
 end
-arch igate_open_1
-x 32
-y 8
-connected 3948
-activate_on_release 0
-end
-arch gate_open_1
-x 32
-y 8
-connected 1019
-activate_on_release 0
-end
 arch dungeon_floor
 x 32
 y 9
@@ -4176,7 +3764,8 @@ x 32
 y 10
 end
 arch player_changer
-hp 0
+slaying /start/tutorial_class
+hp 37
 sp 5
 x 32
 y 10
@@ -4367,18 +3956,6 @@ arch grass
 x 34
 y 3
 end
-arch igate_closed_1
-x 34
-y 3
-connected 345
-activate_on_release 0
-end
-arch gate_open_1
-x 34
-y 3
-connected 1019
-activate_on_release 0
-end
 arch dungeon_floor
 x 34
 y 4
@@ -4399,18 +3976,6 @@ arch dungeon_floor
 x 34
 y 8
 end
-arch igate_open_1
-x 34
-y 8
-connected 3948
-activate_on_release 0
-end
-arch gate_open_1
-x 34
-y 8
-connected 1019
-activate_on_release 0
-end
 arch dungeon_floor
 x 34
 y 9
@@ -4427,7 +3992,8 @@ x 34
 y 10
 end
 arch player_changer
-hp 0
+slaying /start/tutorial_class
+hp 37
 sp 5
 x 34
 y 10
@@ -4621,18 +4187,6 @@ arch grass
 x 36
 y 3
 end
-arch igate_closed_1
-x 36
-y 3
-connected 345
-activate_on_release 0
-end
-arch gate_open_1
-x 36
-y 3
-connected 1019
-activate_on_release 0
-end
 arch dungeon_floor
 x 36
 y 4
@@ -4653,18 +4207,6 @@ arch dungeon_floor
 x 36
 y 8
 end
-arch igate_open_1
-x 36
-y 8
-connected 3948
-activate_on_release 0
-end
-arch gate_open_1
-x 36
-y 8
-connected 1019
-activate_on_release 0
-end
 arch dungeon_floor
 x 36
 y 9
@@ -4679,7 +4221,8 @@ x 36
 y 10
 end
 arch player_changer
-hp 0
+slaying /start/tutorial_class
+hp 37
 sp 5
 x 36
 y 10
@@ -4866,18 +4409,6 @@ arch grass
 x 38
 y 3
 end
-arch igate_closed_1
-x 38
-y 3
-connected 345
-activate_on_release 0
-end
-arch gate_open_1
-x 38
-y 3
-connected 1019
-activate_on_release 0
-end
 arch grass
 x 38
 y 4
@@ -4898,23 +4429,12 @@ arch grass
 x 38
 y 8
 end
-arch igate_closed_1
-x 38
-y 8
-connected 345
-activate_on_release 0
-end
-arch gate_open_1
-x 38
-y 8
-connected 1019
-activate_on_release 0
-end
 arch grass
 x 38
 y 9
 end
 arch player_changer
+slaying /start/tutorial_class
 hp 37
 sp 5
 x 38
@@ -5120,18 +4640,6 @@ arch grass
 x 40
 y 3
 end
-arch igate_closed_1
-x 40
-y 3
-connected 345
-activate_on_release 0
-end
-arch gate_open_1
-x 40
-y 3
-connected 1019
-activate_on_release 0
-end
 arch grass_only
 x 40
 y 4
@@ -5152,23 +4660,12 @@ arch grass
 x 40
 y 8
 end
-arch igate_closed_1
-x 40
-y 8
-connected 345
-activate_on_release 0
-end
-arch gate_open_1
-x 40
-y 8
-connected 1019
-activate_on_release 0
-end
 arch grass
 x 40
 y 9
 end
 arch player_changer
+slaying /start/tutorial_class
 hp 37
 sp 5
 x 40
@@ -5370,18 +4867,6 @@ arch dungeon_floor
 x 42
 y 3
 end
-arch igate_closed_1
-x 42
-y 3
-connected 345
-activate_on_release 0
-end
-arch gate_open_1
-x 42
-y 3
-connected 1019
-activate_on_release 0
-end
 arch dungeon_floor
 x 42
 y 4
@@ -5562,18 +5047,6 @@ end
 arch dungeon_floor
 x 44
 y 3
-end
-arch igate_closed_1
-x 44
-y 3
-connected 345
-activate_on_release 0
-end
-arch gate_open_1
-x 44
-y 3
-connected 1019
-activate_on_release 0
 end
 arch grass
 x 44

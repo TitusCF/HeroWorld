@@ -6,33 +6,33 @@ Optimised for player perminance
 
 Contact tituss on Crossfire IRC to discuss participating in this project
 
-Map modification: </br>
-
-pup_land incorperated into Bigworld </br>
-Bottomworld tiled to Bigworld hopefully becoming a globe </br>
+</BR>
+</br>
+What's new so far? </br>
+</br>
+pup_land and other areas incorperated into Bigworld </br>
+Bottomworld (The frontier) tiled to Bigworld hopefully becoming a globe </br>
+Four stage tutorial with face selection </br>
 Mlab deloused of content unsuitable for public play and reintigrated </br>
 Greycastle rebalanced, reinigrated </br>
-Guilds downgraded to a more simple form </br>
+Guilds upgraded to a more digestable form </br>
 world_105_115 and surroundings modified </br>
-Death dimension in progress, currently Room of Return is complete </br>
-
-
-Current Mods: </br>
-
+Death dimension is complete </br>
+More Lore </br>
+More Spells in wands and rods </br>
+Rods Removed </br>
+Removed procedurally generated books </br>
+All recipes have a chance greater than 3 </br>
+HP bars above mobs/players </br>
+Vertical Building in The Frontier </br>
+Expanded Construction (WAAAY more buildable archs) </br>
+Structure building(I promise they're different) </br>
 Modifier crafting on all gear & weapons </br>
 Word_of_penalty spell used for returning to life from the death dimension </br>
-
-Coming Soon: </br>
-
-HP bars above mobs </br>
-Spell for making items unique </br>
-
-TODO: </br>
-
-Method for turning on Permadeath/Hardcore Mode </br>
-Graveyard which generated a named gravesite upon the death of a Hardcore character </br>
-Further expansion of world by populating '/antarcticworld' and tiling it to the southern and northern boarders of Bigworld </br>
-Vertical expansion of buildable side of /world (bottomworld) to include elevated build levels and underground building levels connectable by buildable stairs </br>
-Necromancy Spell Set </br>
-Nix apartments from cities to encourage more use of Bottomworld build mechanics </br>
-More buildable archs </br>
+Titus Wall </br>
+Arena upgraded to 'smart' system </br>
+More transport options </br>
+More quests/artifacts </br>
+</br>
+</br>
+If I forget to add anything

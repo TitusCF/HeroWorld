@@ -1,109 +1,119 @@
 arch map
-name <unnamed>
-width 32
-height 16
+name Hall Of Heroes
+difficulty 5
+region scorn
+width 22
+height 15
+enter_x 30
+enter_y 7
 msg
-Creator: Gnat the Gnu
-Email: peterm
-Date: Mon Jun  5 14:00:53 2000
-Modified: 2020-01-28 Acer
+Created:  2000-06-05 peterm
+Modified: 2010-06-08 Cavesomething
 endmsg
+maplore
+@def Scorn Royalty Quest
+The Scorn Royalty Quest consists of various items to find or monsters to slay to get rewards, including :
+<ul>
+<li>royal titles, making the Scorn doors to outdoor open automatically</li>
+<li>shields</li>
+<li>weapons</li>
+</ul>
+
+The quests starts in Scorn Castle.
+@end
+@quest Scorn Royalty Quest
+start map
+endmaplore
 end
-arch woodfloor2
+arch marble
 end
 arch stwall_2_2_2
 end
-arch woodfloor2
+arch marble
 y 1
 end
 arch stwall_2_1_1
 y 1
 end
-arch woodfloor2
+arch marble
 y 2
 end
 arch stwall_2_1_1
 y 2
 end
-arch woodfloor2
+arch marble
 y 3
 end
 arch stwall_2_1_1
 y 3
 end
-arch woodfloor2
+arch marble
 y 4
 end
-arch stwall_3_2
+arch stwall_2_1_1
 y 4
 end
-arch woodfloor2
+arch marble
 y 5
 end
 arch stwall_2_1_1
 y 5
 end
-arch woodfloor2
+arch marble
 y 6
 end
-arch stwall_3_2
+arch stwall_2_1_1
 y 6
 end
-arch woodfloor2
+arch marble
 y 7
 end
 arch stwall_2_1_1
 y 7
 end
-arch woodfloor2
+arch marble
 y 8
 end
-arch stwall_3_2
+arch stwall_2_1_1
 y 8
 end
-arch woodfloor2
+arch marble
 y 9
 end
 arch stwall_2_1_1
 y 9
 end
-arch woodfloor2
+arch marble
 y 10
 end
-arch stwall_3_2
+arch stwall_2_1_1
 y 10
 end
-arch woodfloor2
+arch marble
 y 11
 end
 arch stwall_2_1_1
 y 11
 end
-arch woodfloor2
+arch marble
 y 12
 end
 arch stwall_2_1_1
 y 12
 end
-arch woodfloor2
+arch marble
 y 13
 end
 arch stwall_2_1_1
 y 13
 end
-arch woodfloor2
+arch marble
 y 14
-end
-arch stwall_2_1_1
-y 14
-end
-arch woodfloor2
-y 15
 end
 arch stwall_2_2_1
-y 15
+y 14
 end
-arch woodfloor2
+arch marble
 x 1
 end
 arch stwall_2_1_2
@@ -113,96 +123,55 @@ arch woodfloor2
 x 1
 y 1
 end
-arch exit
-slaying HallOfQuests
-hp 6
-sp 6
+arch white-beige-c-marble_111
 x 1
 y 1
 end
-arch woodfloor2
+arch beigemarble
 x 1
 y 2
 end
-arch woodfloor2
+arch beigemarble
 x 1
 y 3
 end
-arch woodfloor2
+arch beigemarble
 x 1
 y 4
 end
-arch stwall_2_1_2
-x 1
-y 4
-end
-arch woodfloor2
+arch beigemarble
 x 1
 y 5
 end
-arch woodfloor2
-x 1
-y 5
-end
-arch exit
-slaying HallOfQuests
-hp 6
-sp 6
-x 1
-y 5
-end
-arch woodfloor2
+arch beigemarble
 x 1
 y 6
 end
-arch stwall_2_1_2
-x 1
-y 6
-end
-arch woodfloor2
+arch beigemarble
 x 1
 y 7
 end
-arch woodfloor2
+arch beigemarble
 x 1
 y 8
 end
-arch stwall_2_1_2
-x 1
-y 8
-end
-arch woodfloor2
+arch beigemarble
 x 1
 y 9
 end
-arch woodfloor2
-x 1
-y 9
-end
-arch exit
-slaying HallOfQuests
-hp 6
-sp 6
-x 1
-y 9
-end
-arch woodfloor2
+arch beigemarble
 x 1
 y 10
 end
-arch stwall_2_1_2
-x 1
-y 10
-end
-arch woodfloor2
+arch beigemarble
 x 1
 y 11
 end
-arch woodfloor2
+arch beigemarble
 x 1
 y 12
 end
-arch woodfloor2
+arch white-beige-c-marble_112
 x 1
 y 13
 end
@@ -210,4309 +179,1512 @@ arch woodfloor2
 x 1
 y 14
 end
-arch woodfloor2
+arch marble
 x 1
 y 14
-end
-arch exit
-slaying HallOfQuests
-hp 6
-sp 6
-x 1
-y 14
-end
-arch woodfloor2
-x 1
-y 15
 end
 arch stwall_2_1_2
 x 1
-y 15
+y 14
 end
-arch woodfloor2
+arch marble
 x 2
 end
 arch stwall_2_1_2
 x 2
 end
-arch woodfloor2
+arch beige-white-c-marble_112
 x 2
 y 1
 end
-arch woodfloor2
+arch beigemarble
 x 2
 y 2
 end
-arch woodfloor2
+arch beigemarble
 x 2
 y 3
 end
-arch woodfloor2
+arch beigemarble
 x 2
 y 4
 end
-arch stwall_2_1_2
-x 2
-y 4
-end
-arch magic_mouth
-msg
-Drop the weapon here.
-endmsg
+arch cyan-beige-c-marble_113
 x 2
 y 5
 end
-arch woodfloor2
-x 2
-y 5
-end
-arch altar_trigger
-slaying Calamity
-food 1
-x 2
-y 5
-resist_physical 30
-resist_fire 30
-resist_electricity 30
-resist_cold 30
-resist_confusion 30
-invisible 1
-last_sp 1
-connected 61
-end
-arch pentagram
-x 2
-y 5
-end
-arch teleporter
-slaying HallOfQuests
-hp 3
-sp 9
-x 2
-y 5
-speed 0.000000
-resist_physical 30
-resist_fire 30
-resist_electricity 30
-resist_cold 30
-resist_confusion 30
-invisible 1
-connected 61
-end
-arch woodfloor2
+arch cyanmarble
 x 2
 y 6
 end
-arch stwall_3_3
-x 2
-y 6
-end
-arch woodfloor2
+arch cyanmarble
 x 2
 y 7
-end
-arch stwall_2_1_1
-x 2
-y 7
-end
-arch woodfloor2
-x 2
-y 8
-end
-arch stwall_3_1
-x 2
-y 8
-end
-arch magic_mouth
-msg
-We have a new Prince of the Realm!
-Please take this fine sword as
-a reward.  May it serve you well!
-endmsg
-x 2
-y 9
-end
-arch woodfloor2
-x 2
-y 9
-end
-arch marker
-name Noble Rank Archduke
-slaying Noble Rank Prince
-food 0
-x 2
-y 9
-end
-arch creator
-other_arch defender
-x 2
-y 9
-resist_physical 30
-resist_fire 30
-resist_electricity 30
-resist_cold 30
-resist_confusion 30
-connected 61
-lifesave 1
-end
-arch woodfloor2
-x 2
-y 10
-end
-arch stwall_2_1_2
-x 2
-y 10
-end
-arch woodfloor2
-x 2
-y 11
-end
-arch woodfloor2
-x 2
-y 12
-end
-arch woodfloor2
-x 2
-y 13
-end
-arch woodfloor2
-x 2
-y 14
-end
-arch woodfloor2
-x 2
-y 15
-end
-arch stwall_2_1_2
-x 2
-y 15
-end
-arch woodfloor2
-x 3
-end
-arch stwall_3_3
-x 3
-end
-arch woodfloor2
-x 3
-y 1
-end
-arch stwall_2_1_1
-x 3
-y 1
-end
-arch woodfloor2
-x 3
-y 2
-end
-arch stwall_3_2
-x 3
-y 2
-end
-arch woodfloor2
-x 3
-y 3
-end
-arch stwall_2_1_1
-x 3
-y 3
-end
-arch woodfloor2
-x 3
-y 4
-end
-arch stwall_3_1
-x 3
-y 4
-end
-arch woodfloor2
-x 3
-y 5
-end
-arch scroll
-msg
-SECRET BY ORDER OF HIS MAJESTY ON
-PAIN OF DEATH:
-A strange spiritual ailment befell His
-Majesty on midnight of the Dark Day
-last year.  His strength was being
-lessened for no reason that our
-physicians could discern.  At length,
-we consulted the High Priests:  they
-begged their gods for enlightenment
-and at last Gaea told her Devotee the
-cause:
-A Lord Spectre had forged a foul
-attachment to Our King, to his very
-soul, and was drawing forth a
-portion of his strength in order to
-empower a mighty weapon.
-The binding was done in such a way
-that we cannot free the King of the
-connexion without possession of this
-object.
-You are to go and find the Lord
-Spectre and destroy him, and return
-the weapon to us here.
-The entrance to the warren in which
-the Lord Spectre resides may be found
-on the Pirate Island.
-endmsg
-x 3
-y 5
-no_pick 1
-end
-arch woodfloor2
-x 3
-y 6
-end
-arch stwall_2_1_2
-x 3
-y 6
-end
-arch woodfloor2
-x 3
-y 7
-end
-arch detector
-slaying Noble Rank Archduke
-hp 1
-x 3
-y 7
-resist_fire 30
-resist_electricity 30
-resist_cold 30
-resist_confusion 30
-invisible 1
-connected 60
-end
-arch pentagram
-x 3
-y 7
-end
-arch teleporter
-slaying HallOfQuests
-hp 3
-sp 5
-x 3
-y 7
-speed 0.000000
-resist_fire 30
-resist_electricity 30
-resist_cold 30
-resist_confusion 30
-invisible 1
-connected 60
-end
-arch woodfloor2
-x 3
-y 8
-end
-arch stwall_2_1_2
-x 3
-y 8
-end
-arch woodfloor2
-x 3
-y 9
-end
-arch woodfloor2
-x 3
-y 10
-end
-arch stwall_3_3
-x 3
-y 10
-end
-arch woodfloor2
-x 3
-y 11
-end
-arch stwall_2_1_1
-x 3
-y 11
-end
-arch woodfloor2
-x 3
-y 12
-end
-arch stwall_2_1_1
-x 3
-y 12
-end
-arch woodfloor2
-x 3
-y 13
-end
-arch stwall_3_2
-x 3
-y 13
-end
-arch woodfloor2
-x 3
-y 14
-end
-arch stwall_2_1_1
-x 3
-y 14
-end
-arch woodfloor2
-x 3
-y 15
-end
-arch stwall_3_1
-x 3
-y 15
-end
-arch woodfloor2
-x 4
-end
-arch stwall_2_1_2
-x 4
-end
-arch woodfloor2
-x 4
-y 1
-end
-arch woodfloor2
-x 4
-y 2
-end
-arch stwall_2_1_2
-x 4
-y 2
-end
-arch woodfloor2
-x 4
-y 3
-end
-arch woodfloor2
-x 4
-y 4
-end
-arch stwall_3_3
-x 4
-y 4
-end
-arch woodfloor2
-x 4
-y 5
-end
-arch stwall_2_1_1
-x 4
-y 5
-end
-arch woodfloor2
-x 4
-y 6
-end
-arch stwall_2_2_4
-x 4
-y 6
-end
-arch magic_mouth
-msg
-If you have attained the rank of
-Archduke and would become a Prince of
-Scorn, step forward and receive your
-commission!
-endmsg
-x 4
-y 7
-end
-arch woodfloor2
-x 4
-y 7
-end
-arch door_look_2
-x 4
-y 7
-move_block -all
-end
-arch woodfloor2
-x 4
-y 8
-end
-arch stwall_2_2_3
-x 4
-y 8
-end
-arch woodfloor2
-x 4
-y 9
-end
-arch stwall_2_1_1
-x 4
-y 9
-end
-arch woodfloor2
-x 4
-y 10
-end
-arch stwall_3_1
-x 4
-y 10
-end
-arch woodfloor2
-x 4
-y 11
-end
-arch woodfloor2
-x 4
-y 12
-end
-arch woodfloor2
-x 4
-y 13
-end
-arch stwall_2_1_2
-x 4
-y 13
-end
-arch woodfloor2
-x 4
-y 14
-end
-arch woodfloor2
-x 4
-y 15
-end
-arch stwall_2_1_2
-x 4
-y 15
-end
-arch woodfloor2
-x 5
-end
-arch stwall_2_1_2
-x 5
-end
-arch woodfloor2
-x 5
-y 1
-end
-arch woodfloor2
-x 5
-y 1
-end
-arch exit
-slaying HallOfQuests
-hp 6
-sp 6
-x 5
-y 1
-end
-arch woodfloor2
-x 5
-y 2
-end
-arch stwall_2_1_2
-x 5
-y 2
-end
-arch woodfloor2
-x 5
-y 3
-end
-arch woodfloor2
-x 5
-y 4
-end
-arch stwall_2_1_2
-x 5
-y 4
-end
-arch woodfloor2
-x 5
-y 5
-end
-arch woodfloor
-x 5
-y 6
 end
 arch sign
 name Princes of the realm
-x 5
-y 6
+x 2
+y 7
 arch event_apply
 name 90
 title Python
 slaying /python/maps/scorn/castle_read.py
 end
 end
-arch woodfloor
+arch cyanmarble
+x 2
+y 8
+end
+arch cyan-beige-c-marble_114
+x 2
+y 9
+end
+arch beigemarble
+x 2
+y 10
+end
+arch beigemarble
+x 2
+y 11
+end
+arch beigemarble
+x 2
+y 12
+end
+arch beige-white-c-marble_111
+x 2
+y 13
+end
+arch marble
+x 2
+y 14
+end
+arch stwall_2_1_2
+x 2
+y 14
+end
+arch marble
+x 3
+end
+arch stwall_2_1_2
+x 3
+end
+arch woodfloor2
+x 3
+y 1
+end
+arch beige-white-c-marble_113
+x 3
+y 1
+end
+arch beigemarble
+x 3
+y 2
+end
+arch beigemarble
+x 3
+y 3
+end
+arch beigemarble
+x 3
+y 4
+end
+arch cyan-beige-c-marble_112
+x 3
+y 5
+end
+arch cyanmarble
+x 3
+y 6
+end
+arch cyanmarble
+x 3
+y 7
+end
+arch cyanmarble
+x 3
+y 8
+end
+arch cyan-beige-c-marble_111
+x 3
+y 9
+end
+arch beigemarble
+x 3
+y 10
+end
+arch beigemarble
+x 3
+y 11
+end
+arch beigemarble
+x 3
+y 12
+end
+arch beige-white-c-marble_114
+x 3
+y 13
+end
+arch marble
+x 3
+y 14
+end
+arch stwall_2_1_2
+x 3
+y 14
+end
+arch marble
+x 4
+end
+arch stwall_2_1_2
+x 4
+end
+arch white-beige-c-marble_114
+x 4
+y 1
+end
+arch beigemarble
+x 4
+y 2
+end
+arch beigemarble
+x 4
+y 3
+end
+arch beigemarble
+x 4
+y 4
+end
+arch beigemarble
+x 4
+y 5
+end
+arch beigemarble
+x 4
+y 6
+end
+arch beigemarble
+x 4
+y 7
+end
+arch beigemarble
+x 4
+y 8
+end
+arch beigemarble
+x 4
+y 9
+end
+arch beigemarble
+x 4
+y 10
+end
+arch beigemarble
+x 4
+y 11
+end
+arch beigemarble
+x 4
+y 12
+end
+arch white-beige-c-marble_113
+x 4
+y 13
+end
+arch woodfloor2
+x 4
+y 14
+end
+arch marble
+x 4
+y 14
+end
+arch stwall_2_1_2
+x 4
+y 14
+end
+arch marble
+x 5
+end
+arch stwall_2_1_2
+x 5
+end
+arch marble
+x 5
+y 1
+end
+arch marble
+x 5
+y 2
+end
+arch marble
+x 5
+y 3
+end
+arch marble
+x 5
+y 4
+end
+arch marble
+x 5
+y 5
+end
+arch marble
+x 5
+y 6
+end
+arch marble
 x 5
 y 7
 end
-arch woodfloor
+arch marble
 x 5
 y 8
 end
-arch woodfloor2
+arch marble
 x 5
 y 9
 end
-arch woodfloor2
+arch marble
 x 5
 y 10
 end
-arch stwall_2_1_2
-x 5
-y 10
-end
-arch woodfloor2
+arch marble
 x 5
 y 11
 end
-arch woodfloor2
+arch marble
 x 5
 y 12
 end
-arch woodfloor2
+arch marble
 x 5
 y 13
 end
-arch stwall_2_1_2
-x 5
-y 13
-end
-arch woodfloor2
+arch marble
 x 5
 y 14
-end
-arch woodfloor2
-x 5
-y 14
-end
-arch exit
-slaying HallOfQuests
-hp 6
-sp 6
-x 5
-y 14
-end
-arch woodfloor2
-x 5
-y 15
 end
 arch stwall_2_1_2
 x 5
-y 15
+y 14
 end
-arch woodfloor2
+arch marble
 x 6
 end
-arch stwall_3_3
+arch stwall_2_1_2
 x 6
 end
-arch woodfloor2
-x 6
-y 1
-end
-arch stwall_2_1_1
+arch white-green-c-marble_111
 x 6
 y 1
 end
-arch woodfloor2
+arch greenmarble
 x 6
 y 2
 end
-arch stwall_3_4
-x 6
-y 2
-end
-arch woodfloor2
+arch greenmarble
 x 6
 y 3
 end
-arch stwall_2_1_1
-x 6
-y 3
-end
-arch woodfloor2
+arch greenmarble
 x 6
 y 4
 end
-arch stwall_3_1
-x 6
-y 4
-end
-arch woodfloor2
+arch white-green-c-marble_112
 x 6
 y 5
 end
-arch woodfloor
+arch marble
 x 6
 y 6
 end
-arch woodfloor
+arch marble
 x 6
 y 7
 end
-arch woodfloor
+arch marble
 x 6
 y 8
 end
-arch woodfloor2
+arch white-red-c-marble_111
 x 6
 y 9
 end
-arch woodfloor2
+arch redmarble
 x 6
 y 10
 end
-arch stwall_3_3
-x 6
-y 10
-end
-arch woodfloor2
+arch redmarble
 x 6
 y 11
 end
-arch stwall_2_1_1
-x 6
-y 11
-end
-arch woodfloor2
+arch redmarble
 x 6
 y 12
 end
-arch stwall_2_1_1
-x 6
-y 12
-end
-arch woodfloor2
+arch white-red-c-marble_112
 x 6
 y 13
 end
-arch stwall_3_4
-x 6
-y 13
-end
-arch woodfloor2
+arch marble
 x 6
 y 14
 end
-arch stwall_2_1_1
+arch stwall_2_1_2
 x 6
 y 14
 end
-arch woodfloor2
-x 6
-y 15
-end
-arch stwall_3_1
-x 6
-y 15
-end
-arch woodfloor2
+arch marble
 x 7
 end
 arch stwall_2_1_2
 x 7
 end
-arch woodfloor2
+arch greenmarble
 x 7
 y 1
-end
-arch woodfloor2
-x 7
-y 1
-end
-arch exit
-slaying HallOfQuests
-hp 6
-sp 6
-x 7
-y 1
-end
-arch woodfloor2
-x 7
-y 2
-end
-arch woodfloor2
-x 7
-y 3
-end
-arch woodfloor2
-x 7
-y 4
-end
-arch stwall_2_1_2
-x 7
-y 4
-end
-arch woodfloor2
-x 7
-y 5
-end
-arch woodfloor
-x 7
-y 6
-end
-arch woodfloor
-x 7
-y 7
-end
-arch woodfloor
-x 7
-y 8
-end
-arch woodfloor2
-x 7
-y 9
-end
-arch woodfloor2
-x 7
-y 10
-end
-arch stwall_2_1_2
-x 7
-y 10
-end
-arch woodfloor2
-x 7
-y 11
-end
-arch woodfloor2
-x 7
-y 12
-end
-arch woodfloor2
-x 7
-y 13
-end
-arch woodfloor2
-x 7
-y 14
-end
-arch woodfloor2
-x 7
-y 14
-end
-arch exit
-slaying HallOfQuests
-hp 6
-sp 6
-x 7
-y 14
-end
-arch woodfloor2
-x 7
-y 15
-end
-arch stwall_2_1_2
-x 7
-y 15
-end
-arch woodfloor2
-x 8
-end
-arch stwall_3_3
-x 8
-end
-arch woodfloor2
-x 8
-y 1
-end
-arch stwall_2_1_1
-x 8
-y 1
-end
-arch woodfloor2
-x 8
-y 2
-end
-arch stwall_3_2
-x 8
-y 2
-end
-arch woodfloor2
-x 8
-y 3
-end
-arch stwall_2_1_1
-x 8
-y 3
-end
-arch woodfloor2
-x 8
-y 4
-end
-arch stwall_3_1
-x 8
-y 4
-end
-arch woodfloor2
-x 8
-y 5
-end
-arch woodfloor
-x 8
-y 6
-end
-arch woodfloor
-x 8
-y 7
-end
-arch woodfloor
-x 8
-y 8
-end
-arch woodfloor2
-x 8
-y 9
-end
-arch woodfloor2
-x 8
-y 9
-end
-arch woodfloor2
-x 8
-y 10
-end
-arch stwall_3_3
-x 8
-y 10
-end
-arch woodfloor2
-x 8
-y 11
-end
-arch stwall_2_1_1
-x 8
-y 11
-end
-arch woodfloor2
-x 8
-y 12
-end
-arch stwall_3_2
-x 8
-y 12
-end
-arch woodfloor2
-x 8
-y 13
-end
-arch stwall_2_1_1
-x 8
-y 13
-end
-arch woodfloor2
-x 8
-y 14
-end
-arch stwall_2_1_1
-x 8
-y 14
-end
-arch woodfloor2
-x 8
-y 15
-end
-arch stwall_3_1
-x 8
-y 15
-end
-arch woodfloor2
-x 9
-end
-arch stwall_2_1_2
-x 9
-end
-arch woodfloor2
-x 9
-y 1
-end
-arch woodfloor2
-x 9
-y 1
-end
-arch exit
-slaying HallOfQuests
-hp 6
-sp 6
-x 9
-y 1
-end
-arch woodfloor2
-x 9
-y 2
-end
-arch stwall_2_1_2
-x 9
-y 2
-end
-arch woodfloor2
-x 9
-y 3
-end
-arch woodfloor2
-x 9
-y 4
-end
-arch stwall_2_1_2
-x 9
-y 4
-end
-arch woodfloor2
-x 9
-y 5
-end
-arch woodfloor
-x 9
-y 6
-end
-arch woodfloor
-x 9
-y 7
-end
-arch woodfloor
-x 9
-y 8
-end
-arch woodfloor2
-x 9
-y 9
-end
-arch woodfloor2
-x 9
-y 9
-end
-arch woodfloor2
-x 9
-y 10
-end
-arch stwall_2_1_2
-x 9
-y 10
-end
-arch woodfloor2
-x 9
-y 11
-end
-arch woodfloor2
-x 9
-y 12
-end
-arch stwall_2_1_2
-x 9
-y 12
-end
-arch woodfloor2
-x 9
-y 13
-end
-arch woodfloor2
-x 9
-y 14
-end
-arch woodfloor2
-x 9
-y 15
-end
-arch stwall_2_1_2
-x 9
-y 15
-end
-arch woodfloor2
-x 10
-end
-arch stwall_2_1_2
-x 10
-end
-arch woodfloor2
-x 10
-y 1
-end
-arch woodfloor2
-x 10
-y 2
-end
-arch stwall_2_1_2
-x 10
-y 2
-end
-arch woodfloor2
-x 10
-y 3
-end
-arch woodfloor2
-x 10
-y 4
-end
-arch stwall_2_1_2
-x 10
-y 4
-end
-arch woodfloor2
-x 10
-y 5
-end
-arch woodfloor
-x 10
-y 6
-end
-arch woodfloor
-x 10
-y 7
-end
-arch woodfloor
-x 10
-y 8
-end
-arch woodfloor2
-x 10
-y 9
-end
-arch woodfloor2
-x 10
-y 9
-end
-arch woodfloor2
-x 10
-y 10
-end
-arch stwall_2_1_2
-x 10
-y 10
-end
-arch woodfloor2
-x 10
-y 11
-end
-arch woodfloor2
-x 10
-y 12
-end
-arch stwall_2_1_2
-x 10
-y 12
-end
-arch woodfloor2
-x 10
-y 13
-end
-arch woodfloor2
-x 10
-y 14
-end
-arch woodfloor2
-x 10
-y 14
-end
-arch exit
-slaying HallOfQuests
-hp 6
-sp 6
-x 10
-y 14
-end
-arch woodfloor2
-x 10
-y 15
-end
-arch stwall_2_1_2
-x 10
-y 15
-end
-arch woodfloor2
-x 11
-end
-arch stwall_3_3
-x 11
-end
-arch woodfloor2
-x 11
-y 1
-end
-arch stwall_2_1_1
-x 11
-y 1
-end
-arch woodfloor2
-x 11
-y 2
-end
-arch stwall_3_4
-x 11
-y 2
-end
-arch woodfloor2
-x 11
-y 3
-end
-arch stwall_2_1_1
-x 11
-y 3
-end
-arch woodfloor2
-x 11
-y 4
-end
-arch stwall_3_1
-x 11
-y 4
-end
-arch woodfloor2
-x 11
-y 5
-end
-arch woodfloor
-x 11
-y 6
-end
-arch woodfloor
-x 11
-y 7
-end
-arch woodfloor
-x 11
-y 8
-end
-arch woodfloor2
-x 11
-y 9
-end
-arch woodfloor2
-x 11
-y 10
-end
-arch stwall_3_3
-x 11
-y 10
-end
-arch woodfloor2
-x 11
-y 11
-end
-arch stwall_2_1_1
-x 11
-y 11
-end
-arch woodfloor2
-x 11
-y 12
-end
-arch stwall_3_4
-x 11
-y 12
-end
-arch woodfloor2
-x 11
-y 13
-end
-arch stwall_2_1_1
-x 11
-y 13
-end
-arch woodfloor2
-x 11
-y 14
-end
-arch stwall_2_1_1
-x 11
-y 14
-end
-arch woodfloor2
-x 11
-y 15
-end
-arch stwall_3_1
-x 11
-y 15
-end
-arch woodfloor2
-x 12
-end
-arch stwall_2_1_2
-x 12
-end
-arch woodfloor2
-x 12
-y 1
-end
-arch woodfloor2
-x 12
-y 1
-end
-arch exit
-slaying HallOfQuests
-hp 6
-sp 6
-x 12
-y 1
-end
-arch magic_mouth
-msg
-Drop the weapon here.
-endmsg
-x 12
-y 2
-end
-arch woodfloor2
-x 12
-y 2
-end
-arch altar_trigger
-slaying Ruggilli's Whisker
-food 1
-x 12
-y 2
-resist_physical 30
-resist_magic 30
-resist_fire 30
-resist_electricity 30
-resist_cold 30
-invisible 1
-last_sp 1
-connected 31
-end
-arch pentagram
-x 12
-y 2
-end
-arch teleporter
-slaying HallOfQuests
-hp 15
-sp 1
-x 12
-y 2
-speed 0.000000
-resist_physical 30
-resist_magic 30
-resist_fire 30
-resist_electricity 30
-resist_cold 30
-invisible 1
-connected 31
-end
-arch woodfloor2
-x 12
-y 3
-end
-arch scroll
-msg
-His Majesty, the King of Scorn, is
-concerned by the threat of war from
-the Dragonlords.
-You are to gain the King some
-bargaining leverage by obtaining a
-powerful weapon against the
-Dragonlords.  The King hopes that his
-possession of this weapon will
-intimidate them and help maintain the
-peace.
-The Dragonlords had captured this
-weapon and are guarding it, hoping
-that it may be kept out of the hands
-of those who would use it against them.
-They cannot destroy it.
-The only problem is that we do not
-know where it is hidden.  Perhaps you
-can bribe the secret out of the
-Dragonlords' Emissary.
-Return with the weapon and you will
-receive your Dukedom.
-endmsg
-x 12
-y 3
-no_pick 1
-end
-arch woodfloor2
-x 12
-y 4
-end
-arch stwall_2_1_2
-x 12
-y 4
-end
-arch woodfloor2
-x 12
-y 5
-end
-arch woodfloor
-x 12
-y 6
-end
-arch woodfloor
-x 12
-y 7
-end
-arch woodfloor
-x 12
-y 8
-end
-arch woodfloor2
-x 12
-y 9
-end
-arch woodfloor2
-x 12
-y 10
-end
-arch stwall_2_1_2
-x 12
-y 10
-end
-arch woodfloor2
-x 12
-y 11
-end
-arch magic_mouth
-msg
-Congratulations on completing your
-quest.  Kneel and receive your
-accolade.....
-You are now an Archduke!
-Also, please take this fine shield as
-a reward. May it serve you well!
-endmsg
-x 12
-y 12
-end
-arch woodfloor2
-x 12
-y 12
-end
-arch marker
-name Noble Rank Duke
-slaying Noble Rank Archduke
-food 0
-x 12
-y 12
-end
-arch creator
-other_arch holy_shield
-x 12
-y 12
-resist_physical 30
-resist_electricity 30
-resist_confusion 30
-connected 41
-lifesave 1
-end
-arch woodfloor2
-x 12
-y 13
-end
-arch woodfloor2
-x 12
-y 14
-end
-arch woodfloor2
-x 12
-y 14
-end
-arch exit
-slaying HallOfQuests
-hp 6
-sp 6
-x 12
-y 14
-end
-arch woodfloor2
-x 12
-y 15
-end
-arch stwall_2_1_2
-x 12
-y 15
-end
-arch woodfloor2
-x 13
-end
-arch stwall_3_3
-x 13
-end
-arch woodfloor2
-x 13
-y 1
-end
-arch stwall_2_1_1
-x 13
-y 1
-end
-arch woodfloor2
-x 13
-y 2
-end
-arch stwall_3_2
-x 13
-y 2
-end
-arch woodfloor2
-x 13
-y 3
-end
-arch stwall_2_1_1
-x 13
-y 3
-end
-arch woodfloor2
-x 13
-y 4
-end
-arch stwall_3_1
-x 13
-y 4
-end
-arch woodfloor2
-x 13
-y 5
 end
 arch sign
 name Dukes of the realm
-x 13
-y 5
+x 7
+y 1
 arch event_apply
 name 70
 title Python
 slaying /python/maps/scorn/castle_read.py
 end
 end
-arch woodfloor
-x 13
+arch greenmarble
+x 7
+y 2
+end
+arch greenmarble
+x 7
+y 3
+end
+arch marble
+x 7
+y 4
+end
+arch marble
+x 7
+y 4
+end
+arch greenmarble
+x 7
+y 4
+end
+arch greenmarble
+x 7
+y 5
+end
+arch marble
+x 7
 y 6
 end
-arch woodfloor
-x 13
+arch marble
+x 7
 y 7
 end
-arch woodfloor
-x 13
+arch marble
+x 7
 y 8
 end
-arch woodfloor2
-x 13
+arch redmarble
+x 7
 y 9
+end
+arch redmarble
+x 7
+y 10
+end
+arch redmarble
+x 7
+y 11
+end
+arch redmarble
+x 7
+y 12
+end
+arch redmarble
+x 7
+y 13
 end
 arch sign
 name Archdukes of the realm
-x 13
-y 9
+x 7
+y 13
 arch event_apply
 name 80
 title Python
 slaying /python/maps/scorn/castle_read.py
 end
 end
-arch woodfloor2
-x 13
-y 10
-end
-arch stwall_3_3
-x 13
-y 10
-end
-arch woodfloor2
-x 13
-y 11
-end
-arch stwall_2_1_1
-x 13
-y 11
-end
-arch woodfloor2
-x 13
-y 12
-end
-arch stwall_3_2
-x 13
-y 12
-end
-arch woodfloor2
-x 13
-y 13
-end
-arch stwall_2_1_1
-x 13
-y 13
-end
-arch woodfloor2
-x 13
+arch marble
+x 7
 y 14
 end
-arch stwall_2_1_1
-x 13
+arch stwall_2_1_2
+x 7
 y 14
 end
-arch woodfloor2
-x 13
-y 15
-end
-arch stwall_3_1
-x 13
-y 15
-end
-arch woodfloor2
-x 14
+arch marble
+x 8
 end
 arch stwall_2_1_2
-x 14
+x 8
 end
-arch woodfloor2
-x 14
+arch white-green-c-marble_114
+x 8
 y 1
 end
-arch woodfloor2
-x 14
-y 1
-end
-arch exit
-slaying HallOfQuests
-hp 6
-sp 6
-x 14
-y 1
-end
-arch woodfloor2
-x 14
+arch greenmarble
+x 8
 y 2
 end
-arch stwall_2_1_2
-x 14
-y 2
-end
-arch woodfloor
-x 14
+arch greenmarble
+x 8
 y 3
 end
-arch detector
-slaying Noble Rank Count
-hp 1
-x 14
-y 3
-resist_magic 30
-resist_fire 30
-resist_electricity 30
-resist_cold 30
-invisible 1
-connected 30
-end
-arch pentagram
-x 14
-y 3
-end
-arch teleporter
-slaying HallOfQuests
-hp 12
-sp 3
-x 14
-y 3
-speed 0.000000
-resist_magic 30
-resist_fire 30
-resist_electricity 30
-resist_cold 30
-invisible 1
-connected 30
-end
-arch woodfloor2
-x 14
+arch greenmarble
+x 8
 y 4
 end
-arch stwall_1_3
-x 14
-y 4
-end
-arch woodfloor2
-x 14
+arch white-green-c-marble_113
+x 8
 y 5
 end
-arch woodfloor
-x 14
+arch marble
+x 8
 y 6
 end
-arch woodfloor
-x 14
+arch marble
+x 8
 y 7
 end
-arch woodfloor
-x 14
+arch marble
+x 8
 y 8
 end
-arch woodfloor2
-x 14
+arch white-red-c-marble_114
+x 8
 y 9
 end
-arch woodfloor2
-x 14
+arch redmarble
+x 8
 y 10
 end
-arch stwall_1_3
-x 14
-y 10
-end
-arch woodfloor
-x 14
+arch redmarble
+x 8
 y 11
 end
-arch detector
-slaying Noble Rank Duke
-hp 1
-x 14
-y 11
-resist_electricity 30
-resist_confusion 30
-invisible 1
-connected 40
-end
-arch pentagram
-x 14
-y 11
-end
-arch teleporter
-slaying HallOfQuests
-hp 14
-sp 13
-x 14
-y 11
-speed 0.000000
-resist_electricity 30
-resist_confusion 30
-invisible 1
-connected 40
-end
-arch woodfloor2
-x 14
+arch redmarble
+x 8
 y 12
 end
-arch stwall_2_1_2
-x 14
-y 12
-end
-arch woodfloor2
-x 14
+arch white-red-c-marble_113
+x 8
 y 13
 end
-arch scroll
-msg
-A wayward Titan has begun styling himself the Rightful King of Scorn,
-and has insulted our King by naming him Usurper.  This Titan, whose true
-name is Meganthropopulos, feels that he is safe behind the walls of his
-fastness and believes that he cannot be made to pay for his arrogance.
-You shall disabuse him of his false sense of security.  You will enter his
-fastness and deprive him of the crown he has made for himself.  His Majesty
-will not be displeased if you find you must also leave Meganthropopulos' dead
-body rotting behind you. Meganthropopulos has good reason to
-feel himself safe, though.  We could not assail his fastness with an army
-and hope to succeed.  His citadel is located on an arid, narrow peninsula
-with only one approach.  One or a few mighty heros might be able to sneak in
-to accomplish the task, however.  Go and succeed if you can.
-
-You will find his citadel on the extreme south-east of Valleynoy.
-When you have returned with Meganthropopulos' Crown,
-His Majesty will grant you the rank of Archduke, and all the privileges which pertain
-to that rank.
-endmsg
-x 14
-y 13
-no_pick 1
-end
-arch woodfloor2
-x 14
+arch marble
+x 8
 y 14
 end
-arch woodfloor2
-x 14
-y 15
+arch stwall_2_1_2
+x 8
+y 14
+end
+arch marble
+x 9
 end
 arch stwall_2_1_2
-x 14
-y 15
+x 9
 end
-arch woodfloor2
-x 15
-end
-arch stwall_2_1_2
-x 15
-end
-arch magic_mouth
-msg
-Congratulations on completing your
-quest.  Kneel and receive your
-accolade.....
-You are now a Duke!
-Also, please take this fine sword as
-a reward. May it serve you well,
-the NEXT time you run into dragons.
-endmsg
-x 15
+arch marble
+x 9
 y 1
 end
-arch woodfloor2
-x 15
-y 1
-end
-arch marker
-name Noble Rank Count
-slaying Noble Rank Duke
-food 0
-x 15
-y 1
-end
-arch creator
-other_arch dragonslayer
-x 15
-y 1
-resist_physical 30
-resist_magic 30
-resist_fire 30
-resist_electricity 30
-resist_cold 30
-connected 31
-lifesave 1
-end
-arch woodfloor2
-x 15
+arch marble
+x 9
 y 2
 end
-arch stwall_2_1_2
-x 15
-y 2
-end
-arch magic_mouth
-msg
-If you have already attained the rank
-of Count and wish to attain the
-rank of Duke, step to the right,
-to receive your commission.
-endmsg
-x 15
+arch marble
+x 9
 y 3
 end
-arch woodfloor
-x 15
-y 3
-end
-arch woodfloor
-x 15
+arch marble
+x 9
 y 4
 end
-arch door_look_1
-x 15
-y 4
-move_block -all
-alive 0
-end
-arch woodfloor
-x 15
+arch marble
+x 9
 y 5
 end
-arch woodfloor
-x 15
+arch marble
+x 9
 y 6
 end
-arch woodfloor
-x 15
+arch marble
+x 9
 y 7
 end
-arch woodfloor
-x 15
+arch marble
+x 9
 y 8
 end
-arch woodfloor
-x 15
+arch marble
+x 9
 y 9
 end
-arch woodfloor
-x 15
+arch marble
+x 9
 y 10
 end
-arch door_look_1
-msg
-no_pass
-endmsg
-x 15
-y 10
-move_block -all
-alive 0
-end
-arch magic_mouth
-msg
-If you have already attained the rank
-of Duke and wish to attain the
-rank of ArchDuke, step to the right,
-to receive your commission.
-endmsg
-x 15
+arch marble
+x 9
 y 11
 end
-arch woodfloor
-x 15
-y 11
-end
-arch woodfloor2
-x 15
+arch marble
+x 9
 y 12
 end
-arch stwall_2_1_2
-x 15
-y 12
-end
-arch magic_mouth
-msg
-Drop the token here.
-endmsg
-x 15
+arch marble
+x 9
 y 13
 end
-arch woodfloor2
-x 15
-y 13
-end
-arch altar_trigger
-slaying Meganthropopulos' Crown
-food 1
-x 15
-y 13
-resist_physical 30
-resist_electricity 30
-resist_confusion 30
-invisible 1
-last_sp 1
-connected 41
-end
-arch pentagram
-x 15
-y 13
-end
-arch teleporter
-slaying HallOfQuests
-hp 12
-sp 11
-x 15
-y 13
-speed 0.000000
-resist_physical 30
-resist_electricity 30
-resist_confusion 30
-invisible 1
-connected 41
-end
-arch woodfloor2
-x 15
+arch marble
+x 9
 y 14
-end
-arch woodfloor2
-x 15
-y 14
-end
-arch exit
-slaying HallOfQuests
-hp 6
-sp 6
-x 15
-y 14
-end
-arch woodfloor2
-x 15
-y 15
 end
 arch stwall_2_1_2
-x 15
-y 15
+x 9
+y 14
 end
-arch woodfloor2
-x 16
+arch marble
+x 10
 end
-arch stwall_3_3
-x 16
+arch stwall_2_1_2
+x 10
 end
-arch woodfloor2
-x 16
+arch marble
+x 10
 y 1
 end
-arch stwall_2_1_1
-x 16
+arch white-red-c-marble_111
+x 10
 y 1
 end
-arch woodfloor2
-x 16
+arch redmarble
+x 10
 y 2
 end
-arch stwall_4
-x 16
-y 2
-end
-arch woodfloor2
-x 16
+arch redmarble
+x 10
 y 3
 end
-arch stwall_2_1_1
-x 16
-y 3
-end
-arch woodfloor2
-x 16
+arch redmarble
+x 10
 y 4
 end
-arch stwall_1_2
-x 16
-y 4
-end
-arch woodfloor2
-x 16
+arch white-red-c-marble_112
+x 10
 y 5
 end
-arch woodfloor
-x 16
+arch marble
+x 10
 y 6
 end
-arch woodfloor
-x 16
+arch marble
+x 10
 y 7
 end
-arch woodfloor
-x 16
+arch marble
+x 10
 y 8
 end
-arch woodfloor2
-x 16
+arch white-green-c-marble_111
+x 10
 y 9
 end
-arch woodfloor2
-x 16
+arch greenmarble
+x 10
 y 10
 end
-arch stwall_1_1
-x 16
-y 10
-end
-arch woodfloor2
-x 16
+arch greenmarble
+x 10
 y 11
 end
-arch stwall_2_1_1
-x 16
-y 11
-end
-arch woodfloor2
-x 16
+arch greenmarble
+x 10
 y 12
 end
-arch stwall_4
-x 16
-y 12
-end
-arch woodfloor2
-x 16
+arch white-green-c-marble_112
+x 10
 y 13
 end
-arch stwall_2_1_1
-x 16
-y 13
-end
-arch woodfloor2
-x 16
+arch marble
+x 10
 y 14
 end
-arch stwall_2_1_1
-x 16
+arch stwall_2_1_2
+x 10
 y 14
 end
-arch woodfloor2
-x 16
-y 15
-end
-arch stwall_3_1
-x 16
-y 15
-end
-arch woodfloor2
-x 17
+arch marble
+x 11
 end
 arch stwall_2_1_2
-x 17
+x 11
 end
-arch woodfloor2
-x 17
+arch redmarble
+x 11
 y 1
-end
-arch woodfloor2
-x 17
-y 1
-end
-arch exit
-slaying HallOfQuests
-hp 6
-sp 6
-x 17
-y 1
-end
-arch woodfloor2
-x 17
-y 2
-end
-arch stwall_2_1_2
-x 17
-y 2
-end
-arch magic_mouth
-msg
-If you have already attained the rank
-of Marquis and wish to attain the
-rank of Earl, step to the right,
-to receive your commission.
-endmsg
-x 17
-y 3
-end
-arch woodfloor
-x 17
-y 3
-end
-arch woodfloor
-x 17
-y 4
-end
-arch door_look_1
-x 17
-y 4
-move_block -all
-alive 0
-end
-arch woodfloor
-x 17
-y 5
-end
-arch woodfloor
-x 17
-y 6
-end
-arch woodfloor
-x 17
-y 7
-end
-arch woodfloor
-x 17
-y 8
-end
-arch woodfloor
-x 17
-y 9
-end
-arch woodfloor
-x 17
-y 10
-end
-arch door_look_1
-x 17
-y 10
-move_block -all
-alive 0
-end
-arch magic_mouth
-msg
-If you have obtained the rank of
-Earl, and would become a Count,
-step to the right.
-endmsg
-x 17
-y 11
-end
-arch woodfloor
-x 17
-y 11
-end
-arch woodfloor2
-x 17
-y 12
-end
-arch stwall_2_1_2
-x 17
-y 12
-end
-arch woodfloor2
-x 17
-y 13
-end
-arch scroll
-msg
-His Majesty, the King of Scorn, is
-concerned with the recent influx of
-demons in the ruins to the north of
-the city.
-Reports have it that the demons are
-issuing from a filthy pit in the
-ground.
-Go and investigate, and eliminate the
-threat if possible.  Return with a
-token of your victory.
-endmsg
-x 17
-y 13
-no_pick 1
-end
-arch woodfloor2
-x 17
-y 14
-end
-arch woodfloor2
-x 17
-y 15
-end
-arch stwall_2_1_2
-x 17
-y 15
-end
-arch woodfloor2
-x 18
-end
-arch stwall_2_1_2
-x 18
-end
-arch magic_mouth
-msg
-Congratulations on completing your
-quest.  Kneel and receive your
-accolade.....
-You are now an Earl!
-Also, please take this fine shield as
-a reward. May it serve you well!
-endmsg
-x 18
-y 1
-end
-arch woodfloor2
-x 18
-y 1
-end
-arch marker
-name Noble Rank Marquis
-slaying Noble Rank Earl
-food 0
-x 18
-y 1
-end
-arch creator
-other_arch dragon_shield
-x 18
-y 1
-resist_magic 30
-resist_electricity 30
-connected 10
-lifesave 1
-end
-arch woodfloor2
-x 18
-y 2
-end
-arch stwall_2_1_2
-x 18
-y 2
-end
-arch woodfloor
-x 18
-y 3
-end
-arch detector
-slaying Noble Rank Marquis
-hp 1
-x 18
-y 3
-resist_physical 30
-resist_electricity 30
-invisible 1
-connected 9
-end
-arch pentagram
-x 18
-y 3
-end
-arch teleporter
-slaying HallOfQuests
-hp 20
-sp 3
-x 18
-y 3
-speed 0.000000
-resist_physical 30
-resist_electricity 30
-invisible 1
-connected 9
-end
-arch woodfloor2
-x 18
-y 4
-end
-arch stwall_1_4
-x 18
-y 4
-end
-arch woodfloor2
-x 18
-y 5
-end
-arch sign
-name Earls of the realm
-x 18
-y 5
-arch event_apply
-name 40
-title Python
-slaying /python/maps/scorn/castle_read.py
-end
-end
-arch woodfloor
-x 18
-y 6
-end
-arch woodfloor
-x 18
-y 7
-end
-arch woodfloor
-x 18
-y 8
-end
-arch woodfloor2
-x 18
-y 9
-end
-arch sign
-name Counts of the realm
-x 18
-y 9
-arch event_apply
-name 60
-title Python
-slaying /python/maps/scorn/castle_read.py
-end
-end
-arch woodfloor2
-x 18
-y 10
-end
-arch stwall_1_4
-x 18
-y 10
-end
-arch woodfloor
-x 18
-y 11
-end
-arch detector
-slaying Noble Rank Earl
-hp 1
-x 18
-y 11
-resist_fire 30
-resist_cold 30
-invisible 1
-connected 20
-end
-arch pentagram
-x 18
-y 11
-end
-arch teleporter
-slaying HallOfQuests
-hp 17
-sp 13
-x 18
-y 11
-speed 0.000000
-resist_fire 30
-resist_cold 30
-invisible 1
-connected 20
-end
-arch woodfloor2
-x 18
-y 12
-end
-arch stwall_2_1_2
-x 18
-y 12
-end
-arch magic_mouth
-msg
-Drop the token here.
-endmsg
-x 18
-y 13
-end
-arch woodfloor2
-x 18
-y 13
-end
-arch altar_trigger
-slaying broken gateway
-food 1
-x 18
-y 13
-resist_physical 30
-resist_fire 30
-resist_cold 30
-invisible 1
-last_sp 1
-connected 21
-end
-arch pentagram
-x 18
-y 13
-end
-arch teleporter
-slaying HallOfQuests
-hp 20
-sp 11
-x 18
-y 13
-speed 0.000000
-resist_physical 30
-resist_fire 30
-resist_cold 30
-invisible 1
-connected 21
-end
-arch woodfloor2
-x 18
-y 14
-end
-arch woodfloor2
-x 18
-y 14
-end
-arch exit
-slaying HallOfQuests
-hp 22
-sp 7
-x 18
-y 14
-end
-arch woodfloor2
-x 18
-y 15
-end
-arch stwall_2_1_2
-x 18
-y 15
-end
-arch woodfloor2
-x 19
-end
-arch stwall_3_3
-x 19
-end
-arch woodfloor2
-x 19
-y 1
-end
-arch stwall_2_1_1
-x 19
-y 1
-end
-arch woodfloor2
-x 19
-y 2
-end
-arch stwall_3_4
-x 19
-y 2
-end
-arch woodfloor2
-x 19
-y 3
-end
-arch stwall_2_1_1
-x 19
-y 3
-end
-arch woodfloor2
-x 19
-y 4
-end
-arch stwall_3_1
-x 19
-y 4
-end
-arch woodfloor2
-x 19
-y 5
-end
-arch woodfloor
-x 19
-y 6
-end
-arch woodfloor
-x 19
-y 7
-end
-arch woodfloor
-x 19
-y 8
-end
-arch woodfloor2
-x 19
-y 9
-end
-arch woodfloor2
-x 19
-y 10
-end
-arch stwall_3_3
-x 19
-y 10
-end
-arch woodfloor2
-x 19
-y 11
-end
-arch stwall_2_1_1
-x 19
-y 11
-end
-arch woodfloor2
-x 19
-y 12
-end
-arch stwall_3_4
-x 19
-y 12
-end
-arch woodfloor2
-x 19
-y 13
-end
-arch stwall_2_1_1
-x 19
-y 13
-end
-arch woodfloor2
-x 19
-y 14
-end
-arch stwall_2_1_1
-x 19
-y 14
-end
-arch woodfloor2
-x 19
-y 15
-end
-arch stwall_3_1
-x 19
-y 15
-end
-arch woodfloor2
-x 20
-end
-arch stwall_2_1_2
-x 20
-end
-arch woodfloor2
-x 20
-y 1
-end
-arch woodfloor2
-x 20
-y 1
-end
-arch exit
-slaying HallOfQuests
-hp 6
-sp 6
-x 20
-y 1
-end
-arch magic_mouth
-msg
-Drop Slithselest's wing here.
-endmsg
-x 20
-y 2
-end
-arch woodfloor2
-x 20
-y 2
-end
-arch altar_trigger
-slaying Slithselest's wing
-food 1
-x 20
-y 2
-resist_magic 30
-resist_electricity 30
-invisible 1
-last_sp 1
-connected 10
-end
-arch pentagram
-x 20
-y 2
-end
-arch teleporter
-slaying HallOfQuests
-hp 18
-sp 1
-x 20
-y 2
-speed 0.000000
-resist_magic 30
-resist_electricity 30
-invisible 1
-connected 10
-end
-arch woodfloor2
-x 20
-y 3
-end
-arch scroll
-msg
-His Majesty, the King of Scorn,
-craves a snack.  To earn your Earldom,
-you will go and return with a wing
-from His Majesty's enemy, Slithselest,
-the self-styled Lord of Wyverns.
-When His Majesty dines upon this
-delicacy, you shall earn your Earldom.
-Slithselest has his eyrie (it is said)
-in the high mountains to the southeast of
-the Tower of the Stars.
-endmsg
-x 20
-y 3
-no_pick 1
-end
-arch woodfloor2
-x 20
-y 4
-end
-arch stwall_2_1_2
-x 20
-y 4
-end
-arch woodfloor2
-x 20
-y 5
-end
-arch woodfloor
-x 20
-y 6
-end
-arch woodfloor
-x 20
-y 7
-end
-arch woodfloor
-x 20
-y 8
-end
-arch woodfloor2
-x 20
-y 9
-end
-arch woodfloor2
-x 20
-y 10
-end
-arch stwall_2_1_2
-x 20
-y 10
-end
-arch woodfloor2
-x 20
-y 11
-end
-arch magic_mouth
-msg
-Congratulations on completing your
-quest.  Kneel and receive your
-accolade.....
-You are now a Count!
-Also, please take this fine sword as
-a reward. May it serve you well!
-endmsg
-x 20
-y 12
-end
-arch woodfloor2
-x 20
-y 12
-end
-arch marker
-name Noble Rank Earl
-slaying Noble Rank Count
-food 0
-x 20
-y 12
-end
-arch creator
-other_arch firebrand
-x 20
-y 12
-resist_physical 30
-resist_fire 30
-resist_cold 30
-connected 21
-lifesave 1
-end
-arch woodfloor2
-x 20
-y 13
-end
-arch woodfloor2
-x 20
-y 14
-end
-arch woodfloor2
-x 20
-y 14
-end
-arch exit
-slaying HallOfQuests
-hp 6
-sp 6
-x 20
-y 14
-end
-arch woodfloor2
-x 20
-y 15
-end
-arch stwall_2_1_2
-x 20
-y 15
-end
-arch woodfloor2
-x 21
-end
-arch stwall_3_3
-x 21
-end
-arch woodfloor2
-x 21
-y 1
-end
-arch stwall_2_1_1
-x 21
-y 1
-end
-arch woodfloor2
-x 21
-y 2
-end
-arch stwall_3_2
-x 21
-y 2
-end
-arch woodfloor2
-x 21
-y 3
-end
-arch stwall_2_1_1
-x 21
-y 3
-end
-arch woodfloor2
-x 21
-y 4
-end
-arch stwall_2_2_4
-x 21
-y 4
-end
-arch woodfloor2
-x 21
-y 5
-end
-arch woodfloor
-x 21
-y 6
-end
-arch woodfloor
-x 21
-y 7
-end
-arch woodfloor
-x 21
-y 8
-end
-arch woodfloor2
-x 21
-y 9
-end
-arch woodfloor2
-x 21
-y 10
-end
-arch stwall_2_2_3
-x 21
-y 10
-end
-arch woodfloor2
-x 21
-y 11
-end
-arch stwall_2_1_1
-x 21
-y 11
-end
-arch woodfloor2
-x 21
-y 12
-end
-arch stwall_3_2
-x 21
-y 12
-end
-arch woodfloor2
-x 21
-y 13
-end
-arch stwall_2_1_1
-x 21
-y 13
-end
-arch woodfloor2
-x 21
-y 14
-end
-arch stwall_2_1_1
-x 21
-y 14
-end
-arch woodfloor2
-x 21
-y 15
-end
-arch stwall_3_1
-x 21
-y 15
-end
-arch woodfloor2
-x 22
-end
-arch stwall_2_1_2
-x 22
-end
-arch woodfloor2
-x 22
-y 1
-end
-arch woodfloor2
-x 22
-y 1
-end
-arch exit
-slaying HallOfQuests
-hp 6
-sp 6
-x 22
-y 1
-end
-arch woodfloor2
-x 22
-y 2
-end
-arch stwall_2_1_2
-x 22
-y 2
-end
-arch magic_mouth
-msg
-If you have already attained the rank
-of Baronet and wish to attain the
-rank of Baron, step to the right,
-to receive your commission.
-endmsg
-x 22
-y 3
-end
-arch woodfloor
-x 22
-y 3
-end
-arch woodfloor
-x 22
-y 4
-end
-arch door_look_1
-x 22
-y 4
-move_block -all
-alive 0
-end
-arch woodfloor
-x 22
-y 5
-end
-arch woodfloor
-x 22
-y 6
-end
-arch woodfloor
-x 22
-y 7
-end
-arch woodfloor
-x 22
-y 8
-end
-arch woodfloor
-x 22
-y 9
-end
-arch woodfloor
-x 22
-y 10
-end
-arch door_look_1
-x 22
-y 10
-move_block -all
-alive 0
-end
-arch magic_mouth
-msg
-If you have obtained the rank of
-Baron, and would become a Marquis,
-step to the right.
-endmsg
-x 22
-y 11
-end
-arch woodfloor
-x 22
-y 11
-end
-arch woodfloor2
-x 22
-y 12
-end
-arch stwall_2_1_2
-x 22
-y 12
-end
-arch woodfloor2
-x 22
-y 13
-end
-arch scroll
-msg
-His Majesty, the King of Scorn, is
-suffering from bunions.  His honorable
-physician believes that a certain rare
-mushroom, obtainable only in a marsh
-to the west will provide a cure.
-Your task is to find and return with
-this rare mushroom.  It is blue in
-color, and grows only in marshy areas.
-Return with one of these mushrooms and
-you will be awarded the title of
-Marquis.
-endmsg
-x 22
-y 13
-no_pick 1
-end
-arch woodfloor2
-x 22
-y 14
-end
-arch woodfloor2
-x 22
-y 15
-end
-arch stwall_2_1_2
-x 22
-y 15
-end
-arch woodfloor2
-x 23
-end
-arch stwall_2_1_2
-x 23
-end
-arch magic_mouth
-msg
-Congratulations on completing your
-quest.  Kneel and receive your
-accolade.....
-You are now a Baron!
-Also, please take this fine longbow as
-a reward. May it serve you well!
-endmsg
-x 23
-y 1
-end
-arch woodfloor2
-x 23
-y 1
-end
-arch marker
-name Noble Rank Baronet
-slaying Noble Rank Baron
-food 0
-x 23
-y 1
-end
-arch creator
-other_arch elven_bow
-x 23
-y 1
-resist_physical 30
-resist_fire 30
-connected 5
-lifesave 1
-end
-arch woodfloor2
-x 23
-y 2
-end
-arch stwall_2_1_2
-x 23
-y 2
-end
-arch woodfloor
-x 23
-y 3
-end
-arch detector
-slaying Noble Rank Baronet
-hp 1
-x 23
-y 3
-resist_fire 30
-invisible 1
-connected 4
-end
-arch pentagram
-x 23
-y 3
-end
-arch teleporter
-slaying HallOfQuests
-hp 25
-sp 3
-x 23
-y 3
-speed 0.000000
-resist_fire 30
-invisible 1
-connected 4
-end
-arch woodfloor2
-x 23
-y 4
-end
-arch stwall_1_4
-x 23
-y 4
-end
-arch woodfloor2
-x 23
-y 5
-end
-arch sign
-name Barons of the realm
-x 23
-y 5
-arch event_apply
-name 30
-title Python
-slaying /python/maps/scorn/castle_read.py
-end
-end
-arch woodfloor
-x 23
-y 6
-end
-arch woodfloor
-x 23
-y 7
-end
-arch woodfloor
-x 23
-y 8
-end
-arch woodfloor2
-x 23
-y 9
 end
 arch sign
 name Marqiuses of the realm
-x 23
-y 9
+x 11
+y 1
 arch event_apply
 name 50
 title Python
 slaying /python/maps/scorn/castle_read.py
 end
 end
-arch woodfloor2
-x 23
-y 10
-end
-arch stwall_1_4
-x 23
-y 10
-end
-arch woodfloor
-x 23
-y 11
-end
-arch detector
-slaying Noble Rank Baron
-hp 1
-x 23
-y 11
-resist_magic 30
-resist_fire 30
-invisible 1
-connected 6
-end
-arch pentagram
-x 23
-y 11
-end
-arch teleporter
-slaying HallOfQuests
-hp 22
-sp 13
-x 23
-y 11
-speed 0.000000
-resist_magic 30
-resist_fire 30
-invisible 1
-connected 6
-end
-arch woodfloor2
-x 23
-y 12
-end
-arch stwall_2_1_2
-x 23
-y 12
-end
-arch magic_mouth
-msg
-Drop the mushroom here.
-endmsg
-x 23
-y 13
-end
-arch woodfloor2
-x 23
-y 13
-end
-arch altar_trigger
-slaying bunion
-food 1
-x 23
-y 13
-resist_physical 30
-resist_magic 30
-resist_fire 30
-invisible 1
-last_sp 1
-connected 7
-end
-arch pentagram
-x 23
-y 13
-end
-arch teleporter
-slaying HallOfQuests
-hp 25
-sp 12
-x 23
-y 13
-speed 0.000000
-resist_physical 30
-resist_magic 30
-resist_fire 30
-invisible 1
-connected 7
-end
-arch woodfloor2
-x 23
-y 14
-end
-arch woodfloor2
-x 23
-y 14
-end
-arch exit
-slaying HallOfQuests
-hp 22
-sp 7
-x 23
-y 14
-end
-arch woodfloor2
-x 23
-y 15
-end
-arch stwall_2_1_2
-x 23
-y 15
-end
-arch woodfloor2
-x 24
-end
-arch stwall_3_3
-x 24
-end
-arch woodfloor2
-x 24
-y 1
-end
-arch stwall_2_1_1
-x 24
-y 1
-end
-arch woodfloor2
-x 24
+arch redmarble
+x 11
 y 2
 end
-arch stwall_3_4
-x 24
-y 2
-end
-arch woodfloor2
-x 24
+arch redmarble
+x 11
 y 3
 end
-arch stwall_2_1_1
-x 24
-y 3
-end
-arch woodfloor2
-x 24
+arch redmarble
+x 11
 y 4
 end
-arch stwall_3_1
-x 24
-y 4
-end
-arch woodfloor2
-x 24
+arch redmarble
+x 11
 y 5
 end
-arch woodfloor
-x 24
+arch marble
+x 11
 y 6
 end
-arch woodfloor
-x 24
+arch marble
+x 11
 y 7
 end
-arch woodfloor
-x 24
+arch marble
+x 11
 y 8
 end
-arch woodfloor2
-x 24
+arch marble
+x 11
 y 9
 end
-arch woodfloor2
-x 24
+arch greenmarble
+x 11
+y 9
+end
+arch marble
+x 11
 y 10
 end
-arch stwall_3_3
-x 24
+arch greenmarble
+x 11
 y 10
 end
-arch woodfloor2
-x 24
+arch greenmarble
+x 11
 y 11
 end
-arch stwall_2_1_1
-x 24
-y 11
-end
-arch woodfloor2
-x 24
+arch greenmarble
+x 11
 y 12
 end
-arch stwall_3_4
-x 24
-y 12
-end
-arch woodfloor2
-x 24
+arch greenmarble
+x 11
 y 13
 end
-arch stwall_2_1_1
-x 24
+arch sign
+name Counts of the realm
+x 11
 y 13
+arch event_apply
+name 60
+title Python
+slaying /python/maps/scorn/castle_read.py
 end
-arch woodfloor2
-x 24
+end
+arch marble
+x 11
 y 14
 end
-arch stwall_2_1_1
-x 24
+arch stwall_2_1_2
+x 11
 y 14
 end
-arch woodfloor2
-x 24
-y 15
-end
-arch stwall_3_1
-x 24
-y 15
-end
-arch woodfloor2
-x 25
+arch marble
+x 12
 end
 arch stwall_2_1_2
-x 25
+x 12
 end
-arch woodfloor2
-x 25
+arch marble
+x 12
 y 1
 end
-arch woodfloor2
-x 25
+arch white-red-c-marble_114
+x 12
 y 1
 end
-arch exit
-slaying HallOfQuests
-hp 6
-sp 6
-x 25
-y 1
-end
-arch magic_mouth
-msg
-Drop the token of the Animator's
-destruction here to receive the title
-of Baron.
-endmsg
-x 25
+arch redmarble
+x 12
 y 2
 end
-arch woodfloor2
-x 25
-y 2
-end
-arch altar_trigger
-slaying Animator's ring
-food 1
-x 25
-y 2
-resist_physical 30
-resist_fire 30
-invisible 1
-last_sp 1
-connected 5
-end
-arch pentagram
-x 25
-y 2
-end
-arch teleporter
-slaying HallOfQuests
-hp 23
-sp 1
-x 25
-y 2
-speed 0.000000
-resist_physical 30
-resist_fire 30
-invisible 1
-connected 5
-end
-arch woodfloor2
-x 25
+arch redmarble
+x 12
 y 3
 end
-arch scroll
-msg
-His Majesty, the King of Scorn,
-is concerned with the outbreak of
-undead in the so-called "Undead Church"
-in Scorn.  He suspects that an
-Animator is at work, setting the dead
-walking.
-He offers the title of Baron to
-whomever returns with a token proving
-that the Animator has been destroyed.
-endmsg
-x 25
-y 3
-no_pick 1
-end
-arch woodfloor2
-x 25
+arch redmarble
+x 12
 y 4
 end
-arch stwall_2_1_2
-x 25
-y 4
-end
-arch woodfloor2
-x 25
+arch white-red-c-marble_113
+x 12
 y 5
 end
-arch woodfloor
-x 25
+arch marble
+x 12
 y 6
 end
-arch woodfloor
-x 25
+arch marble
+x 12
 y 7
 end
-arch woodfloor
-x 25
+arch marble
+x 12
 y 8
 end
-arch woodfloor2
-x 25
+arch white-green-c-marble_114
+x 12
 y 9
 end
-arch woodfloor2
-x 25
+arch greenmarble
+x 12
 y 10
 end
-arch stwall_2_1_2
-x 25
-y 10
-end
-arch woodfloor2
-x 25
+arch greenmarble
+x 12
 y 11
 end
-arch magic_mouth
-msg
-Congratulations on completing your
-quest.  Kneel and receive your
-accolade.....
-You are now a Marquis!
-Also, please take this fine potion as
-a reward. May it serve you well!
-endmsg
-x 25
+arch greenmarble
+x 12
 y 12
 end
-arch woodfloor2
-x 25
-y 12
-end
-arch marker
-name Noble Rank Baron
-slaying Noble Rank Marquis
-food 0
-x 25
-y 12
-end
-arch creator
-other_arch potion_improve
-x 25
-y 12
-resist_physical 30
-resist_magic 30
-resist_fire 30
-connected 7
-lifesave 1
-end
-arch woodfloor2
-x 25
+arch white-green-c-marble_113
+x 12
 y 13
 end
-arch woodfloor2
-x 25
+arch marble
+x 12
 y 14
-end
-arch woodfloor2
-x 25
-y 14
-end
-arch exit
-slaying HallOfQuests
-hp 6
-sp 6
-x 25
-y 14
-end
-arch woodfloor2
-x 25
-y 15
 end
 arch stwall_2_1_2
-x 25
-y 15
+x 12
+y 14
 end
-arch woodfloor2
-x 26
+arch marble
+x 13
 end
-arch stwall_3_3
-x 26
+arch stwall_2_1_2
+x 13
 end
-arch woodfloor2
-x 26
+arch marble
+x 13
 y 1
 end
-arch stwall_2_1_1
-x 26
-y 1
-end
-arch woodfloor2
-x 26
+arch marble
+x 13
 y 2
 end
-arch stwall_2_1_1
-x 26
-y 2
-end
-arch woodfloor2
-x 26
+arch marble
+x 13
 y 3
 end
-arch stwall_2_1_1
-x 26
-y 3
-end
-arch woodfloor2
-x 26
+arch marble
+x 13
 y 4
 end
-arch stwall_3_1
-x 26
-y 4
-end
-arch woodfloor2
-x 26
+arch marble
+x 13
 y 5
 end
-arch woodfloor
-x 26
+arch marble
+x 13
 y 6
 end
-arch woodfloor
-x 26
+arch marble
+x 13
 y 7
 end
-arch woodfloor
-x 26
+arch marble
+x 13
 y 8
 end
-arch woodfloor2
-x 26
+arch marble
+x 13
 y 9
 end
-arch woodfloor2
-x 26
+arch marble
+x 13
 y 10
 end
-arch stwall_3_3
-x 26
-y 10
-end
-arch woodfloor2
-x 26
+arch marble
+x 13
 y 11
 end
-arch stwall_2_1_1
-x 26
-y 11
-end
-arch woodfloor2
-x 26
+arch marble
+x 13
 y 12
 end
-arch stwall_3_2
-x 26
-y 12
-end
-arch woodfloor2
-x 26
+arch marble
+x 13
 y 13
 end
-arch stwall_2_1_1
-x 26
-y 13
-end
-arch woodfloor2
-x 26
+arch marble
+x 13
 y 14
 end
-arch stwall_2_1_1
-x 26
+arch stwall_2_1_2
+x 13
 y 14
 end
-arch woodfloor2
-x 26
-y 15
-end
-arch stwall_3_1
-x 26
-y 15
-end
-arch woodfloor2
-x 27
+arch marble
+x 14
 end
 arch stwall_2_1_2
-x 27
+x 14
 end
-arch woodfloor2
-x 27
+arch white-green-c-marble_111
+x 14
 y 1
 end
-arch woodfloor2
-x 27
-y 1
-end
-arch exit
-slaying HallOfQuests
-hp 6
-sp 6
-x 27
-y 1
-end
-arch magic_mouth
-msg
-Drop the Head of the Goblin Chief here
-to prove your worthiness of the Order
-of Knighthood.
-endmsg
-x 27
+arch greenmarble
+x 14
 y 2
 end
-arch woodfloor2
-x 27
-y 2
-end
-arch altar_trigger
-slaying Head of the Goblin Chief
-food 1
-x 27
-y 2
-resist_physical 30
-invisible 1
-last_sp 1
-connected 1
-end
-arch pentagram
-x 27
-y 2
-end
-arch teleporter
-slaying HallOfQuests
-hp 29
-sp 1
-x 27
-y 2
-speed 0.000000
-resist_physical 30
-invisible 1
-connected 1
-end
-arch woodfloor2
-x 27
+arch greenmarble
+x 14
 y 3
 end
-arch scroll
-msg
-His Majesty, the King of Scorn, announces that whomsoever returns
-with the Head of the Goblin Chief shall be awarded a Knightdom.
-These goblins have been making a nuisance of themselves to the North
-East of Scorn. Go and make them regret their disorderly conduct.
-
-HINT:
-Goblins like to hide in caves. The cave in question, however, is not
-the one directly north-east of Scorn, you have to go a little farther.
-endmsg
-x 27
-y 3
-no_pick 1
-end
-arch woodfloor2
-x 27
+arch greenmarble
+x 14
 y 4
 end
-arch stwall_2_1_2
-x 27
-y 4
-end
-arch woodfloor2
-x 27
+arch white-green-c-marble_112
+x 14
 y 5
 end
-arch woodfloor
-x 27
+arch marble
+x 14
 y 6
 end
-arch woodfloor
-x 27
+arch marble
+x 14
 y 7
 end
-arch woodfloor
-x 27
+arch marble
+x 14
 y 8
 end
-arch woodfloor2
-x 27
+arch white-red-c-marble_111
+x 14
 y 9
 end
-arch woodfloor2
-x 27
+arch redmarble
+x 14
 y 10
 end
-arch stwall_2_1_2
-x 27
-y 10
-end
-arch woodfloor
-x 27
+arch redmarble
+x 14
 y 11
 end
-arch detector
-slaying Noble Rank Knight
-hp 1
-x 27
-y 11
-resist_magic 30
-invisible 1
-connected 2
-end
-arch pentagram
-x 27
-y 11
-end
-arch teleporter
-slaying HallOfQuests
-hp 29
-sp 13
-x 27
-y 11
-speed 0.000000
-resist_magic 30
-invisible 1
-connected 2
-end
-arch woodfloor2
-x 27
+arch redmarble
+x 14
 y 12
 end
-arch stwall_2_1_2
-x 27
-y 12
-end
-arch magic_mouth
-msg
-Congratulations on completing your
-quest.  Kneel and receive your
-accolade.....
-You are now a Baronet!
-Also, please take this girdle as
-a reward. May it serve you well!
-endmsg
-x 27
+arch white-red-c-marble_112
+x 14
 y 13
 end
-arch woodfloor2
-x 27
-y 13
-end
-arch marker
-name Noble Rank Knight
-slaying Noble Rank Baronet
-food 0
-x 27
-y 13
-end
-arch creator
-other_arch girdle_dam
-x 27
-y 13
-resist_physical 30
-resist_magic 30
-connected 3
-lifesave 1
-end
-arch woodfloor2
-x 27
+arch marble
+x 14
 y 14
-end
-arch woodfloor2
-x 27
-y 14
-end
-arch exit
-slaying HallOfQuests
-hp 6
-sp 6
-x 27
-y 14
-end
-arch woodfloor2
-x 27
-y 15
 end
 arch stwall_2_1_2
-x 27
-y 15
+x 14
+y 14
 end
-arch woodfloor2
-x 28
+arch marble
+x 15
 end
-arch stwall_3_3
-x 28
+arch stwall_2_1_2
+x 15
 end
-arch woodfloor2
-x 28
+arch greenmarble
+x 15
 y 1
 end
-arch stwall_2_1_1
-x 28
+arch sign
+name Barons of the realm
+x 15
 y 1
+arch event_apply
+name 30
+title Python
+slaying /python/maps/scorn/castle_read.py
 end
-arch woodfloor2
-x 28
+end
+arch greenmarble
+x 15
 y 2
 end
-arch stwall_3_2
-x 28
-y 2
-end
-arch woodfloor2
-x 28
+arch greenmarble
+x 15
 y 3
 end
-arch stwall_2_1_1
-x 28
-y 3
-end
-arch woodfloor2
-x 28
+arch greenmarble
+x 15
 y 4
 end
-arch stwall_3_1
-x 28
-y 4
-end
-arch woodfloor2
-x 28
+arch greenmarble
+x 15
 y 5
+end
+arch marble
+x 15
+y 6
+end
+arch marble
+x 15
+y 7
+end
+arch marble
+x 15
+y 8
+end
+arch redmarble
+x 15
+y 9
+end
+arch redmarble
+x 15
+y 10
+end
+arch redmarble
+x 15
+y 11
+end
+arch redmarble
+x 15
+y 12
+end
+arch redmarble
+x 15
+y 13
+end
+arch sign
+name Earls of the realm
+x 15
+y 13
+arch event_apply
+name 40
+title Python
+slaying /python/maps/scorn/castle_read.py
+end
+end
+arch marble
+x 15
+y 14
+end
+arch stwall_2_1_2
+x 15
+y 14
+end
+arch marble
+x 16
+end
+arch stwall_2_1_2
+x 16
+end
+arch white-green-c-marble_114
+x 16
+y 1
+end
+arch greenmarble
+x 16
+y 2
+end
+arch greenmarble
+x 16
+y 3
+end
+arch greenmarble
+x 16
+y 4
+end
+arch white-green-c-marble_113
+x 16
+y 5
+end
+arch marble
+x 16
+y 6
+end
+arch marble
+x 16
+y 7
+end
+arch marble
+x 16
+y 8
+end
+arch white-red-c-marble_114
+x 16
+y 9
+end
+arch redmarble
+x 16
+y 10
+end
+arch redmarble
+x 16
+y 11
+end
+arch redmarble
+x 16
+y 12
+end
+arch white-red-c-marble_113
+x 16
+y 13
+end
+arch marble
+x 16
+y 14
+end
+arch stwall_2_1_2
+x 16
+y 14
+end
+arch marble
+x 17
+end
+arch stwall_2_1_2
+x 17
+end
+arch marble
+x 17
+y 1
+end
+arch marble
+x 17
+y 2
+end
+arch marble
+x 17
+y 3
+end
+arch marble
+x 17
+y 4
+end
+arch marble
+x 17
+y 5
+end
+arch marble
+x 17
+y 6
+end
+arch marble
+x 17
+y 7
+end
+arch marble
+x 17
+y 8
+end
+arch marble
+x 17
+y 9
+end
+arch marble
+x 17
+y 10
+end
+arch marble
+x 17
+y 11
+end
+arch marble
+x 17
+y 12
+end
+arch marble
+x 17
+y 13
+end
+arch marble
+x 17
+y 14
+end
+arch stwall_2_1_2
+x 17
+y 14
+end
+arch marble
+x 18
+end
+arch stwall_2_1_2
+x 18
+end
+arch white-red-c-marble_111
+x 18
+y 1
+end
+arch redmarble
+x 18
+y 2
+end
+arch redmarble
+x 18
+y 3
+end
+arch redmarble
+x 18
+y 4
+end
+arch white-red-c-marble_112
+x 18
+y 5
+end
+arch marble
+x 18
+y 6
+end
+arch marble
+x 18
+y 7
+end
+arch marble
+x 18
+y 8
+end
+arch white-green-c-marble_111
+x 18
+y 9
+end
+arch greenmarble
+x 18
+y 10
+end
+arch greenmarble
+x 18
+y 11
+end
+arch greenmarble
+x 18
+y 12
+end
+arch white-green-c-marble_112
+x 18
+y 13
+end
+arch marble
+x 18
+y 14
+end
+arch stwall_2_1_2
+x 18
+y 14
+end
+arch marble
+x 19
+end
+arch stwall_2_1_2
+x 19
+end
+arch redmarble
+x 19
+y 1
 end
 arch sign
 name Knights of the realm
-x 28
-y 5
+x 19
+y 1
 arch event_apply
 name 10
 title Python
 slaying /python/maps/scorn/castle_read.py
 end
 end
-arch woodfloor
-x 28
+arch redmarble
+x 19
+y 2
+end
+arch redmarble
+x 19
+y 3
+end
+arch redmarble
+x 19
+y 4
+end
+arch redmarble
+x 19
+y 5
+end
+arch marble
+x 19
 y 6
 end
-arch woodfloor
-x 28
+arch marble
+x 19
 y 7
 end
-arch woodfloor
-x 28
+arch marble
+x 19
 y 8
 end
-arch woodfloor2
-x 28
+arch greenmarble
+x 19
 y 9
+end
+arch greenmarble
+x 19
+y 10
+end
+arch greenmarble
+x 19
+y 11
+end
+arch greenmarble
+x 19
+y 12
+end
+arch greenmarble
+x 19
+y 13
 end
 arch sign
 name Baronets of the realm
-x 28
-y 9
+x 19
+y 13
 arch event_apply
 name 20
 title Python
 slaying /python/maps/scorn/castle_read.py
 end
 end
-arch woodfloor2
-x 28
-y 10
-end
-arch stwall_2_1_2
-x 28
-y 10
-end
-arch magic_mouth
-msg
-One must have attained Knighthood in
-order to advance to a Baronetcy.
-If you are a Knight, step onto the
-pentagram to learn how you might
-become a Baronet.
-endmsg
-x 28
-y 11
-end
-arch woodfloor
-x 28
-y 11
-end
-arch woodfloor2
-x 28
-y 12
-end
-arch stwall_3_3
-x 28
-y 12
-end
-arch woodfloor2
-x 28
-y 13
-end
-arch stwall_2_1_1
-x 28
-y 13
-end
-arch woodfloor2
-x 28
+arch marble
+x 19
 y 14
 end
-arch stwall_2_1_1
-x 28
+arch stwall_2_1_2
+x 19
 y 14
 end
-arch woodfloor2
-x 28
-y 15
-end
-arch stwall_3_1
-x 28
-y 15
-end
-arch woodfloor2
-x 29
+arch marble
+x 20
 end
 arch stwall_2_1_2
-x 29
+x 20
 end
-arch magic_mouth
-msg
-Congratulations on completing your
-quest.  Kneel and receive your
-accolade.....
-You are now a Knight, with all the
-privileges pertaining thereto.
-endmsg
-x 29
+arch white-red-c-marble_114
+x 20
 y 1
 end
-arch woodfloor2
-x 29
-y 1
-end
-arch marker
-slaying hero_of_scorn
-food 0
-x 29
-y 1
-end
-arch marker
-slaying Noble Rank Knight
-food 0
-x 29
-y 1
-end
-arch woodfloor2
-x 29
+arch redmarble
+x 20
 y 2
 end
-arch stwall_2_1_2
-x 29
-y 2
-end
-arch woodfloor
-x 29
+arch redmarble
+x 20
 y 3
 end
-arch pentagram
-x 29
-y 3
-end
-arch teleporter
-slaying HallOfQuests
-hp 27
-sp 3
-x 29
-y 3
-invisible 1
-end
-arch woodfloor2
-x 29
+arch redmarble
+x 20
 y 4
 end
-arch stwall_1_3
-x 29
-y 4
-end
-arch woodfloor2
-x 29
+arch white-red-c-marble_113
+x 20
 y 5
 end
-arch woodfloor
-x 29
+arch marble
+x 20
 y 6
 end
-arch woodfloor
-x 29
-y 7
-end
-arch woodfloor
-x 29
-y 8
-end
-arch woodfloor2
-x 29
-y 9
-end
-arch woodfloor2
-x 29
-y 10
-end
-arch stwall_1_3
-x 29
-y 10
-end
-arch woodfloor
-x 29
-y 11
-end
-arch woodfloor2
-x 29
-y 12
-end
-arch stwall_2_1_2
-x 29
-y 12
-end
-arch woodfloor2
-x 29
-y 13
-end
-arch scroll
-msg
-His Majesty, the King of Scorn,
-announces that whomsoever returns
-with the Head of the Ogre Chief
-shall be awarded a Baronetcy.
-Ogres have been stealing sheep from
-the hills east of the city.
-Go and kill the Ogre Chief and return
-with his head.
-endmsg
-x 29
-y 13
-no_pick 1
-end
-arch woodfloor2
-x 29
-y 14
-end
-arch woodfloor2
-x 29
-y 15
-end
-arch stwall_2_1_2
-x 29
-y 15
-end
-arch woodfloor2
-x 30
-end
-arch stwall_2_1_2
-x 30
-end
-arch woodfloor2
-x 30
-y 1
-end
-arch woodfloor2
-x 30
-y 1
-end
-arch exit
-slaying HallOfQuests
-hp 6
-sp 6
-x 30
-y 1
-end
-arch woodfloor2
-x 30
-y 2
-end
-arch stwall_2_1_2
-x 30
-y 2
-end
-arch magic_mouth
-msg
-Step on the pentagram to receive your
-quest
-endmsg
-x 30
-y 3
-end
-arch woodfloor
-x 30
-y 3
-end
-arch woodfloor
-x 30
-y 4
-end
-arch door_look_1
-x 30
-y 4
-move_block -all
-alive 0
-end
-arch woodfloor
-x 30
-y 5
-end
-arch woodfloor
-x 30
-y 6
-end
-arch sign
-msg
-Welcome to the Hall of Quests!
-Begin by earning your knighthood in the room above.
-endmsg
-x 30
-y 6
-end
-arch woodfloor
-x 30
+arch marble
+x 20
 y 7
 end
 arch stair_down
 slaying castle2
 hp 7
 sp 16
-x 30
+x 20
 y 7
 end
-arch woodfloor
-x 30
+arch marble
+x 20
 y 8
 end
-arch woodfloor
-x 30
+arch white-green-c-marble_114
+x 20
 y 9
 end
-arch woodfloor
-x 30
+arch greenmarble
+x 20
 y 10
 end
-arch door_look_1
-x 30
-y 10
-move_block -all
-alive 0
-end
-arch woodfloor
-x 30
+arch greenmarble
+x 20
 y 11
 end
-arch woodfloor2
-x 30
+arch greenmarble
+x 20
 y 12
 end
-arch stwall_2_1_2
-x 30
-y 12
-end
-arch magic_mouth
-msg
-Drop the Head of the Ogre Chief here
-to prove your worthiness of Noble Rank
-of Baronet.
-endmsg
-x 30
+arch white-green-c-marble_113
+x 20
 y 13
 end
-arch woodfloor2
-x 30
-y 13
-end
-arch altar_trigger
-slaying Head of the Ogre Chief
-food 1
-x 30
-y 13
-resist_physical 30
-resist_magic 30
-invisible 1
-last_sp 1
-connected 3
-end
-arch pentagram
-x 30
-y 13
-end
-arch teleporter
-slaying HallOfQuests
-hp 27
-sp 13
-x 30
-y 13
-speed 0.000000
-resist_physical 30
-resist_magic 30
-invisible 1
-connected 3
-end
-arch woodfloor2
-x 30
+arch marble
+x 20
 y 14
-end
-arch woodfloor2
-x 30
-y 14
-end
-arch exit
-slaying HallOfQuests
-hp 6
-sp 6
-x 30
-y 14
-end
-arch woodfloor2
-x 30
-y 15
 end
 arch stwall_2_1_2
-x 30
-y 15
+x 20
+y 14
 end
-arch woodfloor2
-x 31
+arch marble
+x 21
 end
 arch stwall_2_2_3
-x 31
+x 21
 end
-arch woodfloor2
-x 31
+arch marble
+x 21
 y 1
 end
 arch stwall_2_1_1
-x 31
+x 21
 y 1
 end
-arch woodfloor2
-x 31
+arch marble
+x 21
 y 2
 end
-arch stwall_3_4
-x 31
+arch stwall_2_1_1
+x 21
 y 2
 end
-arch woodfloor2
-x 31
+arch marble
+x 21
 y 3
 end
 arch stwall_2_1_1
-x 31
+x 21
 y 3
 end
-arch woodfloor2
-x 31
+arch marble
+x 21
 y 4
 end
 arch stwall_2_1_1
-x 31
+x 21
 y 4
 end
-arch woodfloor2
-x 31
+arch marble
+x 21
 y 5
 end
 arch stwall_2_1_1
-x 31
+x 21
 y 5
 end
-arch woodfloor2
-x 31
+arch marble
+x 21
 y 6
 end
 arch stwall_2_1_1
-x 31
+x 21
 y 6
 end
-arch woodfloor2
-x 31
+arch marble
+x 21
 y 7
 end
 arch stwall_2_1_1
-x 31
+x 21
 y 7
 end
-arch woodfloor2
-x 31
+arch marble
+x 21
 y 8
 end
 arch stwall_2_1_1
-x 31
+x 21
 y 8
 end
-arch woodfloor2
-x 31
+arch marble
+x 21
 y 9
 end
 arch stwall_2_1_1
-x 31
+x 21
 y 9
 end
-arch woodfloor2
-x 31
+arch marble
+x 21
 y 10
 end
 arch stwall_2_1_1
-x 31
+x 21
 y 10
 end
-arch woodfloor2
-x 31
+arch marble
+x 21
 y 11
 end
 arch stwall_2_1_1
-x 31
+x 21
 y 11
 end
-arch woodfloor2
-x 31
+arch marble
+x 21
 y 12
 end
-arch stwall_3_4
-x 31
+arch stwall_2_1_1
+x 21
 y 12
 end
-arch woodfloor2
-x 31
+arch marble
+x 21
 y 13
 end
 arch stwall_2_1_1
-x 31
+x 21
 y 13
 end
-arch woodfloor2
-x 31
+arch marble
+x 21
 y 14
-end
-arch stwall_2_1_1
-x 31
-y 14
-end
-arch woodfloor2
-x 31
-y 15
 end
 arch stwall_2_2_4
-x 31
-y 15
+x 21
+y 14
 end

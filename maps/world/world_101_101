@@ -24,10 +24,16 @@ elevation -5671
 end
 arch dungeon_floor
 y 3
-elevation -5733
+elevation -5565
 end
-arch lamppost
+arch bulletwall_8
+face lampost.111
 y 3
+speed 0
+connected 23415
+activate_on_release 0
+arch spell_large_lightning
+end
 end
 arch deep_sea
 y 4
@@ -227,10 +233,6 @@ x 1
 y 2
 elevation -5515
 end
-arch lamppost
-x 1
-y 2
-end
 arch dungeon_floor
 x 1
 y 3
@@ -240,10 +242,6 @@ arch dungeon_floor
 x 1
 y 4
 elevation -5656
-end
-arch lamppost
-x 1
-y 4
 end
 arch deep_sea
 x 1
@@ -479,10 +477,6 @@ x 2
 y 1
 elevation -5278
 end
-arch lamppost
-x 2
-y 1
-end
 arch redslate
 x 2
 y 2
@@ -502,10 +496,6 @@ arch dungeon_floor
 x 2
 y 5
 elevation -5600
-end
-arch lamppost
-x 2
-y 5
 end
 arch deep_sea
 x 2
@@ -762,6 +752,18 @@ sp 37
 x 3
 y 3
 end
+arch odoorm2rw_closed_1
+x 3
+y 3
+connected 23415
+activate_on_release 0
+end
+arch odoorm2rw_closed_1
+x 3
+y 3
+connected 96750
+activate_on_release 0
+end
 arch redslate
 x 3
 y 4
@@ -781,6 +783,16 @@ arch dungeon_floor
 x 3
 y 6
 elevation -5565
+end
+arch bulletwall_8
+face lampost.111
+x 3
+y 6
+speed 0
+connected 45637
+activate_on_release 0
+arch spell_large_lightning
+end
 end
 arch deep_sea
 x 3
@@ -1006,10 +1018,6 @@ x 4
 y 1
 elevation -4987
 end
-arch lamppost
-x 4
-y 1
-end
 arch redslate
 x 4
 y 2
@@ -1028,7 +1036,7 @@ elevation -5285
 end
 arch magic_ear
 msg
-@match To crush your enemies, see them driven before you, and to hear the lamentations of their women!
+@match To crush your enemies
 Click.
 endmsg
 x 4
@@ -1041,6 +1049,24 @@ What is good in life?
 endmsg
 x 4
 y 4
+end
+arch magic_ear
+msg
+@match to see them driven before you
+Click.
+endmsg
+x 4
+y 4
+connected 23415
+end
+arch magic_ear
+msg
+@match and to hear the lamentations of their women
+Click.
+endmsg
+x 4
+y 4
+connected 96750
 end
 arch dungeon_floor
 x 4
@@ -1280,10 +1306,6 @@ arch dungeon_floor
 x 5
 y 2
 elevation -4967
-end
-arch lamppost
-x 5
-y 2
 end
 arch dungeon_floor
 x 5
@@ -1541,7 +1563,17 @@ end
 arch dungeon_floor
 x 6
 y 3
-elevation -4967
+elevation -5565
+end
+arch bulletwall_8
+face lampost.111
+x 6
+y 3
+speed 0
+connected 96750
+activate_on_release 0
+arch spell_large_lightning
+end
 end
 arch dungeon_floor
 x 6

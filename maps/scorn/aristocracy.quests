@@ -1,0 +1,465 @@
+quest scorn/Aristocracy
+title The Scorn Nobility
+face quest_scorn_aristocracy.111
+description
+Rise through the ranks of the scorn nobility to gain favour in the king's court
+end_description
+step 5
+description
+I have spoken to the magistrate who offered a means for me to obtain station in court
+end_description
+setwhen
+scorn/GoblinKing 10
+end_setwhen
+end_step
+step 10
+description
+I have been dubbed a Knight of Scorn
+end_description
+setwhen
+scorn/GoblinKing finished
+end_setwhen
+end_step
+step 20
+description
+I have been appointed a Baronet of Scorn
+end_description
+setwhen
+scorn/OgreKing finished
+end_setwhen
+end_step
+step 30
+description
+I have been appointed a Baron of Scorn
+end_description
+setwhen
+scorn/Animator finished
+end_setwhen
+end_step
+step 40
+description
+I have been appointed a Earl of Scorn
+end_description
+setwhen
+scorn/BlueMushroom finished
+end_setwhen
+end_step
+step 50
+description
+I have been appointed a Marquis of Scorn
+end_description
+setwhen
+scorn/WyvernWing finished
+end_setwhen
+end_step
+step 60
+description
+I have been appointed a Count of Scorn
+end_description
+setwhen
+scorn/DemonPit finished
+end_setwhen
+end_step
+step 70
+description
+I have been appointed a Duke of Scorn
+end_description
+setwhen
+scorn/DragonWhisker finished
+end_setwhen
+end_step
+step 80
+description
+I have been appointed a Arch Duke of Scorn
+end_description
+setwhen
+scorn/TitanCrown finished
+end_setwhen
+end_step
+step 90
+finishes_quest
+description
+I have been named Prince of Scorn
+end_description
+setwhen
+scorn/LordSpectre finished
+end_setwhen
+end_step
+end_quest
+
+quest scorn/GoblinKing
+title The Head of the Goblin Chief
+face goblin_chief.111
+description
+Some goblins, who are said to live in mountains, have been making a nuisance of themselves to the North East of Scorn.  Go and make them regret their disorderly conduct.
+end_description
+parent scorn/Aristocracy
+step 10
+description
+I have been asked to find the Goblin Chief, and return with his head.
+end_description
+end_step
+step 20
+description
+I have found the Goblin Chief's lair
+end_description
+end_step
+step 30
+description
+I have killed the Goblin Chief. I should get some proof I killed him.
+end_description
+end_step
+step 40
+description
+I have recovered the head of the Goblin Chief
+end_description
+end_step
+step 50
+finishes_quest
+description
+I have returned the head of the goblin chief
+end_description
+end_step
+end_quest
+
+quest scorn/OgreKing
+title The Head of the Ogre Chief
+face ogre_chief.111
+description
+Ogres have been stealing sheep from the hills east of the city.
+They are reported to live in a hole north of the road to Navar.
+Go and kill the Ogre Chief and return with his head.
+end_description
+parent scorn/Aristocracy
+step 10
+description
+I have been asked to find the Ogre Chief, and return with his head.
+end_description
+end_step
+step 20
+description
+I have found the Ogre Chief's lair
+end_description
+end_step
+step 30
+description
+I have killed the Ogre Chief
+end_description
+end_step
+step 40
+description
+I have recovered the head of the Ogre Chief
+end_description
+end_step
+step 50
+finishes_quest
+description
+I have returned the head of the Ogre chief
+end_description
+end_step
+end_quest
+
+quest scorn/Animator
+title Outbreak of Undead
+face grimreaper.112
+description
+There is an outbreak of undead in the so-called 'Undead Church' in Scorn.
+An Animator may be at work, setting the dead walking.
+Return with a token proving that the Animator has been destroyed.
+end_description
+parent scorn/Aristocracy
+step 10
+description
+I have been asked to find the Animator, and return with a token of his destruction.
+end_description
+end_step
+step 20
+description
+I have found the Animator's underground tomb
+end_description
+end_step
+step 30
+description
+I have destroyed the Animator.
+end_description
+end_step
+step 40
+description
+I have recovered a ring from the Animator, this should suffice as a token of his destruction.
+end_description
+end_step
+step 50
+finishes_quest
+description
+I have returned the Animator's Ring
+end_description
+end_step
+end_quest
+
+quest scorn/BlueMushroom
+title A Cure for Bunions
+face mushroom_3.111
+description
+The King of Scorn, is suffering from bunions, and believes that a certain rare blue mushroom will provide a cure. 
+This mushroom grows only in marshy areas located at the far west of the continent, same level as Scorn city.
+end_description
+parent scorn/Aristocracy
+step 10
+description
+I have been asked to find a blue mushroom, and return it to the King's court.
+end_description
+end_step
+step 30
+description
+I have found the swamp where the mushrooms are reputed to grow.
+end_description
+end_step
+step 40
+description
+I have found a mushroom that will cure the king, I should return with it to Scorn.
+end_description
+end_step
+step 50
+finishes_quest
+description
+I have returned with the mushroom and cured the King.
+end_description
+end_step
+end_quest
+
+quest scorn/WyvernWing
+title Slithselest for Supper
+face dragon_wing.111
+description
+The King of Scorn wishes to dine upon the wing of his enemy, Slithselest, the self-styled Lord of Wyverns.
+Slithselest has his eyrie (it is said) in the high mountains south of the road to Brest.
+end_description
+parent scorn/Aristocracy
+step 10
+description
+I have been asked to find the Slithselest the Wyvern, and return with one of his wings
+end_description
+end_step
+step 20
+description
+I have found Slithselest's lair
+end_description
+end_step
+step 30
+description
+I have slain Slithselest
+end_description
+end_step
+step 40
+description
+I have recovered one of Slithselest's wings.
+end_description
+end_step
+step 50
+finishes_quest
+description
+I have returned with Slithselest's wing
+end_description
+end_step
+end_quest
+
+quest scorn/DemonPit
+title Demons in Euthville
+face pentagram.x11
+description
+There has been a recent influx of demons in the ruins of the town north of Scorn.
+Reports have it that the demons are issuing from a filthy pit in the ground.
+Go and investigate; eliminate the threat if possible.
+end_description
+parent scorn/Aristocracy
+step 10
+description
+I have been asked to investigate the presence of demons in the ruins of Euthville.
+end_description
+end_step
+step 30
+description
+I have found the demons' lair.
+end_description
+end_step
+step 40
+description
+I have broken the portal through which the demons were entering, no more should appear now.
+end_description
+end_step
+step 50
+finishes_quest
+description
+I have returned with proof that I have ended the demon threat.
+end_description
+end_step
+end_quest
+
+quest scorn/DragonWhisker
+title DragonLord Diplomacy
+face dragonman.x31
+description
+Recover a powerful weapon which will challenge the might of the Dragonlords, and allow the King of Scorn to sue for peace.
+end_description
+parent scorn/Aristocracy
+step 10
+description
+His Majesty, the King of Scorn, has asked me to recover a powerful weapon which is being guarded by the Dragonlords. He suggested that I speak to his magistrate to learn where I might find the Dragonlords.
+end_description
+end_step
+step 20
+description
+I have spoken to the King's magistrate, who told me that the Dragonlords had sent an emissary to Scorn. The magistrate considered this emissary to be of rather dubious character, and thought he might be susceptible to a bribe.
+end_description
+end_step
+step 30
+description
+I have spoken to Dragon Emissary and will be able to convince him to give up the Dragonlords' secrets in exchange for 7 emeralds of great value. If I can get these emeralds for the emissary, he will tell me where the Dragonlords are keeping this weapon.
+end_description
+end_step
+step 40
+description
+I gave the emeralds to the Dragon Emissary, who told me where the Dragonlords are keeping this weapon. I need to look for an eyrie in the high mountains, near the Dragonlords' lair. The Dragonlords' lair is to the south of Hermes' inn on the road from Scorn to Navar.
+end_description
+end_step
+step 50
+description
+I have found the Dragonlords' secret eyrie.
+end_description
+end_step
+step 60
+description
+I have found Ruggilli's Whisker this must be the weapon the King was seeking.
+end_description
+end_step
+step 70
+finishes_quest
+description
+I have delivered Ruggilli's Whisker to the King of Scorn.
+end_description
+end_step
+end_quest
+
+quest scorn/TitanCrown
+title The Great Pretender
+face crown.111
+description
+A rogue titan has declared himself 'the Rightful King of Scorn' and denounced the current monarch as an usurper.
+end_description
+parent scorn/Aristocracy
+step 10
+description
+His Majesty, the King of Scorn, has asked me to capture the crown of the pretender. He suggested that I speak to his magistrate to learn where he might be hiding.
+end_description
+end_step
+step 20
+description
+I have spoken to the King's magistrate, who told me that the titan was known as Meganthropopulos and had secured himself in a stronghold on the extreme south-east of the continent. The stronghold is well defended and located on a narrow peninsula with only one approach, so I will have to sneak in to reach him.
+end_description
+end_step
+step 30
+description
+I have found the entrance to Meganthropuplos' stronghold and the two hill giants who are guarding it.
+end_description
+end_step
+step 40
+description
+The hill giants are forbidden from allowing anyone to pass, but one of them was thirsty enough that he was prepared to make an exception if I brought him some booze.
+end_description
+end_step
+step 50
+description
+I have brought some booze to the hill giant guarding the gate, and have convinced him to open it for me.
+end_description
+end_step
+step 60
+description
+I have killed Meganthropopulos
+end_description
+end_step
+step 70
+description
+I have recovered Meganthropopulos' crown
+end_description
+end_step
+step 80
+finishes_quest
+description
+I have returned the pretender's crown to the King of Scorn.
+end_description
+end_step
+end_quest
+
+quest scorn/LordSpectre
+title The King's Curse
+face uk_sd.111
+description
+The King of Scorn has been afflicted by a mystical curse which has been draining his strength.
+end_description
+parent scorn/Aristocracy
+step 10
+description
+The King has asked me to find a way to break the curse that is upon him. I should speak to the priestess at the temple of gaea, she claims to know the cause.
+end_description
+end_step
+step 20
+description
+I have spoken with the priestess, she claimed that the King has been cursed, and that there is a Lord Spectre on Pirate Island who has created an attachment to The King's soul. In order to break the curse, I will need to kill the Spectre and return the item which bears the attachment to the King.
+end_description
+end_step
+step 30
+description
+I have found the entrance to the Lord Spectre's abode.
+end_description
+end_step
+step 40
+description
+I have killed the Lord Spectre.
+end_description
+end_step
+step 50
+description
+I have recovered an enchanted sword, this must be what holds the curse.
+end_description
+end_step
+step 60
+finishes_quest
+description
+I have returned the enchanted sword to the King and ended the curse.
+end_description
+end_step
+end_quest
+
+quest scorn/ScornHero
+title The Hero of Scorn
+face quest_scorn_hero.111
+description
+Be pronounced Hero of Scorn
+end_description
+step 10
+description
+I have discovered that the king is the only one who can declare me a hero. I should try speaking to someone at his court, and seek to win favour there.
+end_description
+end_step
+step 40
+finishes_quest
+description
+I have found another way through the gate.
+end_description
+setwhen
+scorn/PortGate finished
+scorn/CityGate finished
+scorn/ScornHero <=10
+end_setwhen
+end_step
+step 50
+finishes_quest
+description
+I have been pronounced the 'Hero of Scorn'
+end_description
+setwhen
+scorn/GoblinKing finished
+end_setwhen
+end_step
+end_quest
+

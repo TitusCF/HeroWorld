@@ -1,0 +1,229 @@
+quest scorn/CityGate
+title Getting out of Scorn
+face quest_scorn_gates.111
+description
+The main gates of the city of Scorn are locked, and the guards will not let you pass.
+end_description
+step 5
+description
+I need to find a way to get permission to pass through the gates of Scorn.
+end_description
+end_step
+step 10
+description
+In order to pass through the gate I need to get a port pass, find the password, or become a hero of Scorn. Perhaps one of the guards can give me some advice on how to do these things.
+end_description
+end_step
+step 20
+finishes_quest
+description
+I have been permitted to pass through Scorn city gate.
+end_description
+end_step
+end_quest
+
+quest scorn/PortGate
+title Down to the docks
+face grate_1.118
+description
+There is a gate separating the main part of Scorn from the docks. It is closed and the guards will not let me pass.
+end_description
+step 5
+description
+I need to find a way to be permitted beyond the gate.
+end_description
+end_step
+step 10
+description
+To pass through the gates I need to get a port pass, find the password or become a hero of Scorn. Perhaps one of the guards will tell me how I can do one of those things.
+end_description
+end_step
+step 20
+finishes_quest
+description
+I have been granted passage through Scorn port gate.
+end_description
+end_step
+end_quest
+
+quest scorn/GatePass
+title Gate Pass
+face quest_scorn_gates.111
+description
+Acquire a gate pass to be allowed out of the main gate of Scorn.
+end_description
+parent scorn/CityGate
+step 10
+description
+The guards told me that I could acquire a gate pass from the Office for Gate Passes, near the port gates. I should try asking there.
+end_description
+end_step
+step 20
+finishes_quest
+description
+I have purchased a gate pass to allow me out of the city.
+end_description
+end_step
+step 30
+finishes_quest
+description
+I have found a gate pass that should allow me access beyond the city gates.
+end_description
+end_step
+step 40
+finishes_quest
+description
+I have found another way through the city gates.
+end_description
+setwhen
+scorn/CityGate finished
+scorn/GatePass <=10
+end_setwhen
+end_step
+end_quest
+
+quest scorn/PortPass
+title Port Pass
+face card.111
+description
+Acquire a port pass to be allowed into Scorn's docks.
+end_description
+parent scorn/PortGate
+step 10
+description
+The guards told me that I could acquire a port pass from the Office for Gate Passes. I should try asking there.
+end_description
+end_step
+step 20
+finishes_quest
+description
+I have purchased a port pass to allow me into Scorn docks
+end_description
+end_step
+step 30
+finishes_quest
+description
+I have found a port pass that should allow me access to Scorn Docks
+end_description
+end_step
+step 40
+finishes_quest
+description
+I have found another way through the gate that leads to Scorn Docks.
+end_description
+setwhen
+scorn/PortGate finished
+scorn/PortPass <=10
+end_setwhen
+end_step
+end_quest
+
+quest scorn/GatePassword
+title Scorn Password
+face quest_scorn_gates.111
+description
+Discover the password that will permit passage through the gates in Scorn.
+end_description
+step 10
+description
+The guards have told me that there is a password, just not what it is, I should keep alert for any clues as to what it might be.
+end_description
+end_step
+step 20
+description
+I found some graffiti on the wall of Goth's tavern, which claimed that the gate Password was "chain".
+end_description
+end_step
+step 30
+finishes_quest
+description
+I have given the password, and been permitted through the gate.
+end_description
+end_step
+step 40
+finishes_quest
+description
+I have found another way through the gates.
+end_description
+setwhen
+scorn/PortGate finished
+scorn/CityGate finished
+scorn/GatePassword <=20
+end_setwhen
+end_step
+end_quest
+
+quest scorn/PassClerk
+title The Grumpy Office Clerk
+face courier.111
+description
+The clerk at the office of passes is very grumpy, and not serving anyone.
+end_description
+step 10
+description
+I have spoken to the clerk at the office of passes, he was in a foul mood and not prepared to help me, maybe one of the guards nearby will know what is wrong with him.
+end_description
+end_step
+step 20
+description
+I have spoken to one of the guards, they suggested that the clerk, Milton, may have gone too long without getting any coffee.
+end_description
+end_step
+step 30
+description
+Milton asked me to get him some coffee from one of the coffee houses in town, he refuses to drink foreign coffee or anything not made by a proper coffee house.
+end_description
+end_step
+step 40
+description
+I brought Milton some coffee from a local cafe, which he promptly declared to be terrible. From the smell of it he may have a point.
+end_description
+end_step
+step 50
+finishes_quest
+description
+I brought Milton some coffee that met his exacting standards, and he will now sell me passes. He is still acting as though he is only doing this as a favour to me rather than as part of his job.
+end_description
+end_step
+step 60
+finishes_quest
+description
+Milton was delighted with the quality of the coffee I provided him with, he not only has agreed to sell me passes, but has offered me a discount.
+end_description
+end_step
+end_quest
+
+quest scorn/OrcDress
+title Alfalfa's Attire
+face dress1.111
+description
+Alfalfa was arrested for streaking, and wants some clothes.
+end_description
+step 10
+description
+I have spoken with Alfalfa in Scorn jail, she was arrested for streaking and now the guards won't give her any clothes. She asked me to fetch something for her to wear from her house. Fran at the Barking Mule keeps a spare key for her house.
+end_description
+end_step
+step 20
+description
+I spoke to Fran, and she gave me a key to Alfalfa's house.
+end_description
+end_step
+step 30
+description
+I have found one of Alfalfa's dresses, I should bring it back to her.
+end_description
+end_step
+step 40
+description
+Alfalfa was very grateful to me for returning her dress, she told me of a secret hiding place under the floor of her basement where she keeps her valuables, she asked me to help myself.
+end_description
+end_step
+step 50
+finishes_quest
+description
+I found Alfalfa's secret hiding place.
+end_description
+end_step
+end_quest
+

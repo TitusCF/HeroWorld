@@ -6,7 +6,7 @@ msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Apr 27 03:35:20 1997
-Modified: 2020-01-18 Acer
+Modified: 2020-01-28 Acer
 endmsg
 end
 arch grass
@@ -1621,8 +1621,6 @@ end
 arch guildmaster
 name Magistrate
 msg
-@match *
-Go upstairs to the Hall Of Quests to get your nobility titles.
 endmsg
 x 11
 y 5
@@ -1803,11 +1801,75 @@ end
 arch guildmaster
 name Magistrate
 msg
-@match *
-Go upstairs to the Hall Of Quests to get your nobility titles.
 endmsg
 x 12
 y 5
+arch NPCGift
+arch carton_box_1
+name Count Reward
+arch marker
+name Noble Rank Earl
+slaying Noble Rank Count
+food 0
+end
+arch firebrand
+end
+end
+arch carton_box_1
+name Earl Reward
+arch marker
+name Noble Rank Marquis
+slaying Noble Rank Earl
+food 0
+end
+arch dragon_shield
+end
+end
+arch carton_box_1
+name Marquis Reward
+arch marker
+name Noble Rank Baron
+slaying Noble Rank Marquis
+food 0
+end
+arch potion_improve
+end
+end
+arch carton_box_1
+name Baron Reward
+arch marker
+name Noble Rank Baronet
+slaying Noble Rank Baron
+food 0
+end
+arch elven_bow
+end
+end
+arch carton_box_1
+name Baronet Reward
+arch marker
+name Noble Rank Knight
+slaying Noble Rank Baronet
+food 0
+end
+arch girdle_dam
+end
+end
+arch carton_box_1
+name Knight Reward
+arch marker
+slaying hero_of_scorn
+food 0
+end
+arch marker
+slaying Noble Rank Knight
+food 0
+end
+end
+end
+arch npc_dialog
+name scorn/misc/magistrate.msg
+end
 end
 arch cobblestones2
 x 12

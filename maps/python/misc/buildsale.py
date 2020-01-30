@@ -73,6 +73,7 @@ fountainamount = 500000 * costmply
 farmamount = 100000 * costmply
 prospectamount = 10 * costmply
 mineamount = 3000000 * costmply
+harboramount = 1000000 * costmply
 guildamount = 8000000 * costmply
 lampamount = 5000 * costmply
 
@@ -94,6 +95,7 @@ if text[0] == 'help' or text[0] == 'yes':
     \n\n farm - buy build scroll of farm for %s00,000 %ss \
     \n\n prospect - buy build scroll of temporary prospect hole for %s0 %ss \
     \n\n mine - buy build scroll of mine for %s,000,000 %ss \
+    \n\n harbor - buy build scroll of harbor for %s,000,000 %ss \
     \n\n guild - buy build scroll of small guild for %s,000,000 %ss \
     \n\n lamppost - buy build scroll of lamppost for %s,000 %ss \
     \n\nAll transactions are in %ss\n(1 : %s gold coins).' \

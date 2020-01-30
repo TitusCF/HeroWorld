@@ -124,9 +124,15 @@ arch blackmarble
 face blocked.111
 y 8
 end
-arch locked_red_door2
-name ancient, rusty door
-slaying deathworld_key
+arch odoorm2rw_closed_1
+y 8
+connected 3948509
+activate_on_release 0
+end
+arch invis_exit
+slaying /void_space/voidspace19
+hp 16
+sp 15
 y 8
 end
 arch dungeon_magic
@@ -275,8 +281,8 @@ y 2
 end
 arch invis_exit
 slaying /death
-hp 18
-sp 16
+hp 20
+sp 15
 x 1
 y 2
 end
@@ -356,6 +362,16 @@ face blocked.111
 x 1
 y 6
 end
+arch altar_trigger
+name Headless Skeleton
+slaying Spiteful Skull
+face bones5.111
+food 1
+x 1
+y 6
+last_sp 1
+connected 66611
+end
 arch dungeon_magic
 x 1
 y 7
@@ -372,6 +388,16 @@ arch blackmarble
 face blocked.111
 x 1
 y 7
+end
+arch altar_trigger
+name Headless Skeleton
+slaying Spiteful Skull
+face bones5.111
+food 1
+x 1
+y 7
+last_sp 1
+connected 66612
 end
 arch dungeon_magic
 x 1
@@ -407,6 +433,16 @@ face blocked.111
 x 1
 y 9
 end
+arch altar_trigger
+name Headless Skeleton
+slaying Spiteful Skull
+face bones5.111
+food 1
+x 1
+y 9
+last_sp 1
+connected 66613
+end
 arch dungeon_magic
 x 1
 y 10
@@ -423,6 +459,16 @@ arch blackmarble
 face blocked.111
 x 1
 y 10
+end
+arch altar_trigger
+name Headless Skeleton
+slaying Spiteful Skull
+face bones5.111
+food 1
+x 1
+y 10
+last_sp 1
+connected 66614
 end
 arch dungeon_magic
 x 1
@@ -486,8 +532,8 @@ y 14
 end
 arch invis_exit
 slaying /death
-hp 18
-sp 16
+hp 20
+sp 15
 x 1
 y 14
 end
@@ -2610,8 +2656,8 @@ y 2
 end
 arch invis_exit
 slaying /death
-hp 18
-sp 16
+hp 20
+sp 15
 x 9
 y 2
 end
@@ -2801,8 +2847,8 @@ y 14
 end
 arch invis_exit
 slaying /death
-hp 18
-sp 16
+hp 20
+sp 15
 x 9
 y 14
 end
@@ -3985,8 +4031,8 @@ y 2
 end
 arch invis_exit
 slaying /death
-hp 18
-sp 16
+hp 20
+sp 15
 x 14
 y 2
 end
@@ -4262,8 +4308,8 @@ y 14
 end
 arch invis_exit
 slaying /death
-hp 18
-sp 16
+hp 20
+sp 15
 x 14
 y 14
 end
@@ -4694,7 +4740,7 @@ arch blackmarble
 face blocked.111
 x 17
 end
-arch Nimwall_2_2_3
+arch Nimwall_3_3
 x 17
 end
 arch blackmarble
@@ -4837,423 +4883,274 @@ face blocked.111
 x 17
 y 16
 end
-arch Nimwall_2_2_4
+arch Nimwall_3_1
 x 17
 y 16
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 18
 end
-arch mover_3
+arch Nimwall_2_1_2
 x 18
-speed 1.0
-level 1
-attacktype 1
 end
 arch blackmarble
 face blocked.111
 x 18
 y 1
 end
-arch mover_1
-x 18
-y 1
-speed 1.0
-level 1
-attacktype 1
-end
 arch blackmarble
 face blocked.111
 x 18
 y 2
-end
-arch mover_1
-x 18
-y 2
-speed 1.0
-level 1
-attacktype 1
 end
 arch blackmarble
 face blocked.111
 x 18
 y 3
 end
-arch mover_1
-x 18
-y 3
-speed 1.0
-level 1
-attacktype 1
-end
 arch blackmarble
 face blocked.111
 x 18
 y 4
-end
-arch mover_1
-x 18
-y 4
-speed 1.0
-level 1
-attacktype 1
 end
 arch blackmarble
 face blocked.111
 x 18
 y 5
 end
-arch mover_1
+arch detector
+slaying lightning
 x 18
 y 5
-speed 1.0
-level 1
-attacktype 1
+connected 3948509
 end
 arch blackmarble
 face blocked.111
 x 18
 y 6
 end
-arch mover_1
+arch gate_closed_1
 x 18
 y 6
-speed 1.0
-level 1
-attacktype 1
+connected 66611
+activate_on_release 0
 end
 arch blackmarble
 face blocked.111
 x 18
 y 7
 end
-arch mover_1
-x 18
-y 7
-speed 1.0
-level 1
-attacktype 1
-end
 arch blackmarble
 face blocked.111
 x 18
 y 8
 end
-arch mover_1
+arch gate_closed_1
 x 18
 y 8
-speed 1.0
-level 1
-attacktype 1
+connected 66612
+activate_on_release 0
 end
 arch blackmarble
 face blocked.111
 x 18
 y 9
 end
-arch mover_1
-x 18
-y 9
-speed 1.0
-level 1
-attacktype 1
-end
 arch blackmarble
 face blocked.111
 x 18
 y 10
 end
-arch mover_1
+arch gate_closed_1
 x 18
 y 10
-speed 1.0
-level 1
-attacktype 1
+connected 66613
+activate_on_release 0
 end
 arch blackmarble
 face blocked.111
 x 18
 y 11
 end
-arch mover_1
-x 18
-y 11
-speed 1.0
-level 1
-attacktype 1
-end
 arch blackmarble
 face blocked.111
 x 18
 y 12
 end
-arch mover_1
+arch gate_closed_1
 x 18
 y 12
-speed 1.0
-level 1
-attacktype 1
+connected 66614
+activate_on_release 0
 end
 arch blackmarble
 face blocked.111
 x 18
 y 13
 end
-arch mover_1
-x 18
-y 13
-speed 1.0
-level 1
-attacktype 1
-end
 arch blackmarble
 face blocked.111
 x 18
 y 14
-end
-arch mover_1
-x 18
-y 14
-speed 1.0
-level 1
-attacktype 1
 end
 arch blackmarble
 face blocked.111
 x 18
 y 15
 end
-arch mover_1
+arch bulletwall_1
 x 18
 y 15
-speed 1.0
-level 1
-attacktype 1
+arch spell_large_lightning
 end
-arch blackmarble
-face blocked.111
+end
+arch afloor_black_left
 x 18
 y 16
 end
-arch mover_1
+arch Nimwall_2_1_2
 x 18
 y 16
-speed 1.0
-level 1
-attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 19
 end
-arch mover_3
+arch Nimwall_3_3
 x 19
-speed 1.0
-level 1
-attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 19
 y 1
 end
-arch mover_3
+arch Nimwall_2_1_1
 x 19
 y 1
-speed 1.0
-level 1
-attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 19
 y 2
 end
-arch mover_1
+arch Nimwall_2_1_1
 x 19
 y 2
-speed 1.0
-level 1
-attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 19
 y 3
 end
-arch mover_1
+arch Nimwall_2_1_1
 x 19
 y 3
-speed 1.0
-level 1
-attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 19
 y 4
 end
-arch mover_1
+arch Nimwall_2_1_1
 x 19
 y 4
-speed 1.0
-level 1
-attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 19
 y 5
 end
-arch mover_1
+arch Nimwall_2_1_1
 x 19
 y 5
-speed 1.0
-level 1
-attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 19
 y 6
 end
-arch mover_1
+arch Nimwall_2_1_1
 x 19
 y 6
-speed 1.0
-level 1
-attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 19
 y 7
 end
-arch mover_1
+arch Nimwall_2_1_1
 x 19
 y 7
-speed 1.0
-level 1
-attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 19
 y 8
 end
-arch mover_1
+arch Nimwall_2_1_1
 x 19
 y 8
-speed 1.0
-level 1
-attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 19
 y 9
 end
-arch mover_1
+arch Nimwall_2_1_1
 x 19
 y 9
-speed 1.0
-level 1
-attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 19
 y 10
 end
-arch mover_1
+arch Nimwall_2_1_1
 x 19
 y 10
-speed 1.0
-level 1
-attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 19
 y 11
 end
-arch mover_1
+arch Nimwall_2_1_1
 x 19
 y 11
-speed 1.0
-level 1
-attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 19
 y 12
 end
-arch mover_1
+arch Nimwall_2_1_1
 x 19
 y 12
-speed 1.0
-level 1
-attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 19
 y 13
 end
-arch mover_1
+arch Nimwall_2_1_1
 x 19
 y 13
-speed 1.0
-level 1
-attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 19
 y 14
 end
-arch mover_1
+arch Nimwall_2_1_1
 x 19
 y 14
-speed 1.0
-level 1
-attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 19
 y 15
 end
-arch mover_1
+arch Nimwall_2_1_1
 x 19
 y 15
-speed 1.0
-level 1
-attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 19
 y 16
 end
-arch mover_1
+arch Nimwall_3_1
 x 19
 y 16
-speed 1.0
-level 1
-attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 20
 end
-arch mover_3
+arch Nimwall_2_1_2
 x 20
-speed 1.0
-level 1
-attacktype 1
 end
 arch blackmarble
 face blocked.111
@@ -5435,27 +5332,19 @@ speed 1.0
 level 1
 attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 20
 y 16
 end
-arch mover_7
+arch Nimwall_2_1_2
 x 20
 y 16
-speed 1.0
-level 1
-attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 21
 end
-arch mover_3
+arch Nimwall_2_1_2
 x 21
-speed 1.0
-level 1
-attacktype 1
 end
 arch blackmarble
 face blocked.111
@@ -5637,27 +5526,19 @@ speed 1.0
 level 1
 attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 21
 y 16
 end
-arch mover_7
+arch Nimwall_2_1_2
 x 21
 y 16
-speed 1.0
-level 1
-attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 22
 end
-arch mover_3
+arch Nimwall_2_1_2
 x 22
-speed 1.0
-level 1
-attacktype 1
 end
 arch blackmarble
 face blocked.111
@@ -5839,27 +5720,19 @@ speed 1.0
 level 1
 attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 22
 y 16
 end
-arch mover_7
+arch Nimwall_2_1_2
 x 22
 y 16
-speed 1.0
-level 1
-attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 23
 end
-arch mover_3
+arch Nimwall_2_1_2
 x 23
-speed 1.0
-level 1
-attacktype 1
 end
 arch blackmarble
 face blocked.111
@@ -6050,27 +5923,19 @@ speed 1.0
 level 1
 attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 23
 y 16
 end
-arch mover_7
+arch Nimwall_2_1_2
 x 23
 y 16
-speed 1.0
-level 1
-attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 24
 end
-arch mover_3
+arch Nimwall_2_1_2
 x 24
-speed 1.0
-level 1
-attacktype 1
 end
 arch blackmarble
 face blocked.111
@@ -6252,27 +6117,19 @@ speed 1.0
 level 1
 attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 24
 y 16
 end
-arch mover_7
+arch Nimwall_2_1_2
 x 24
 y 16
-speed 1.0
-level 1
-attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 25
 end
-arch mover_3
+arch Nimwall_2_1_2
 x 25
-speed 1.0
-level 1
-attacktype 1
 end
 arch blackmarble
 face blocked.111
@@ -6454,27 +6311,19 @@ speed 1.0
 level 1
 attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 25
 y 16
 end
-arch mover_7
+arch Nimwall_2_1_2
 x 25
 y 16
-speed 1.0
-level 1
-attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 26
 end
-arch mover_3
+arch Nimwall_2_1_2
 x 26
-speed 1.0
-level 1
-attacktype 1
 end
 arch blackmarble
 face blocked.111
@@ -6656,219 +6505,147 @@ speed 1.0
 level 1
 attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 26
 y 16
 end
-arch mover_7
+arch Nimwall_2_1_2
 x 26
 y 16
-speed 1.0
-level 1
-attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 27
 end
-arch mover_5
+arch Nimwall_2_2_3
 x 27
-speed 1
-level 1
-attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 27
 y 1
 end
-arch mover_5
+arch Nimwall_2_1_1
 x 27
 y 1
-speed 1
-level 1
-attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 27
 y 2
 end
-arch mover_5
+arch Nimwall_2_1_1
 x 27
 y 2
-speed 1
-level 1
-attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 27
 y 3
 end
-arch mover_5
+arch Nimwall_2_1_1
 x 27
 y 3
-speed 1
-level 1
-attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 27
 y 4
 end
-arch mover_5
+arch Nimwall_2_1_1
 x 27
 y 4
-speed 1
-level 1
-attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 27
 y 5
 end
-arch mover_5
+arch Nimwall_2_1_1
 x 27
 y 5
-speed 1
-level 1
-attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 27
 y 6
 end
-arch mover_5
+arch Nimwall_2_1_1
 x 27
 y 6
-speed 1
-level 1
-attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 27
 y 7
 end
-arch mover_5
+arch Nimwall_2_1_1
 x 27
 y 7
-speed 1
-level 1
-attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 27
 y 8
 end
-arch mover_5
+arch Nimwall_2_1_1
 x 27
 y 8
-speed 1
-level 1
-attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 27
 y 9
 end
-arch mover_5
+arch Nimwall_2_1_1
 x 27
 y 9
-speed 1
-level 1
-attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 27
 y 10
 end
-arch mover_5
+arch Nimwall_2_1_1
 x 27
 y 10
-speed 1
-level 1
-attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 27
 y 11
 end
-arch mover_5
+arch Nimwall_2_1_1
 x 27
 y 11
-speed 1
-level 1
-attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 27
 y 12
 end
-arch mover_5
+arch Nimwall_2_1_1
 x 27
 y 12
-speed 1
-level 1
-attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 27
 y 13
 end
-arch mover_5
+arch Nimwall_2_1_1
 x 27
 y 13
-speed 1
-level 1
-attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 27
 y 14
 end
-arch mover_5
+arch Nimwall_2_1_1
 x 27
 y 14
-speed 1
-level 1
-attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 27
 y 15
 end
-arch mover_5
+arch Nimwall_2_1_1
 x 27
 y 15
-speed 1
-level 1
-attacktype 1
 end
-arch blackmarble
-face blocked.111
+arch afloor_black_left
 x 27
 y 16
 end
-arch mover_7
+arch Nimwall_2_2_4
 x 27
 y 16
-speed 1.0
-level 1
-attacktype 1
 end
 arch afloor_black_left
 x 28

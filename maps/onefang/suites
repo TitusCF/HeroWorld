@@ -1,16 +1,17 @@
 arch map
 name suites
-msg
-Creator: David Seikel
-Email: won_fang@yahoo.com.au
-Date: Sat Jan 25 21:22:20 2003
-endmsg
+reset_timeout 7200
+difficulty 2
 width 32
 height 44
 enter_x 1
 enter_y 1
-reset_timeout 7200
-difficulty 2
+msg
+Creator: David Seikel
+Email: won_fang@yahoo.com.au
+Date: Sat Jan 25 21:22:20 2003
+Modified: 2020-01-31 Acer
+endmsg
 unique 1
 outdoor 1
 end
@@ -173,8 +174,8 @@ arch swall_3_2
 y 12
 end
 arch icecube
-glow_radius 4
 y 12
+glow_radius 4
 end
 arch woodfloor2
 name woodfloor
@@ -251,8 +252,8 @@ arch swall_3_2
 y 19
 end
 arch icecube
-glow_radius 4
 y 19
+glow_radius 4
 end
 arch woodfloor2
 name woodfloor
@@ -398,8 +399,8 @@ arch swall_2_2_1
 y 32
 end
 arch icecube
-glow_radius 4
 y 32
+glow_radius 4
 end
 arch woods
 y 33
@@ -414,20 +415,20 @@ arch woods
 y 36
 end
 arch jungle_1
-blocksview 0
 y 37
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 y 38
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 y 39
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 y 40
+blocksview 0
 end
 arch woods
 y 41
@@ -436,8 +437,8 @@ arch woods
 y 42
 end
 arch jungle_1
-blocksview 0
 y 43
+blocksview 0
 end
 arch fog
 y 43
@@ -484,12 +485,12 @@ x 1
 y 2
 end
 arch button_trigger
-event_trigger_plugin Python
-event_trigger /onefang/python/PO/greeting.py
-invisible 1
-walk_off 0
 x 1
 y 2
+invisible 1
+walk_off 0
+event_trigger /onefang/python/PO/greeting.py
+event_trigger_plugin Python
 end
 arch dungeon_magic
 x 1
@@ -540,6 +541,8 @@ x 1
 y 6
 end
 arch igate_closed_1
+x 1
+y 6
 speed 0.500000
 resist_physical 30
 resist_magic 30
@@ -549,8 +552,6 @@ resist_confusion 30
 resist_acid 30
 resist_ghosthit 30
 connected 1
-x 1
-y 6
 end
 arch woodfloor2
 name woodfloor
@@ -560,10 +561,7 @@ y 7
 end
 arch mailbox
 name Private mailbox
-event_apply_plugin Python
-event_apply /onefang/python/PO/receive.py
-event_close_plugin Python
-event_close /onefang/python/PO/send.py
+name_pl Private mailbox
 msg
 Recieving Mail
 -----------------------
@@ -586,12 +584,15 @@ will be sent.
 NOTE - Multiple lines doesn't
 work yet.
 endmsg
-name_pl Private mailbox
+x 1
+y 7
 material 0
 weight 0
 no_pick 1
-x 1
-y 7
+event_apply /onefang/python/PO/receive.py
+event_apply_plugin Python
+event_close /onefang/python/PO/send.py
+event_close_plugin Python
 end
 arch woodfloor2
 name woodfloor
@@ -618,9 +619,9 @@ x 1
 y 11
 end
 arch brazier
-glow_radius 4
 x 1
 y 11
+glow_radius 4
 end
 arch woodfloor2
 name woodfloor
@@ -643,9 +644,9 @@ x 1
 y 13
 end
 arch brazier
-glow_radius 4
 x 1
 y 13
+glow_radius 4
 end
 arch woodfloor2
 name woodfloor
@@ -660,9 +661,9 @@ x 1
 y 15
 end
 arch fireplace
-glow_radius 2
 x 1
 y 15
+glow_radius 2
 end
 arch woodfloor2
 name woodfloor
@@ -671,9 +672,9 @@ x 1
 y 16
 end
 arch fireplace
-glow_radius 2
 x 1
 y 16
+glow_radius 2
 end
 arch woodfloor2
 name woodfloor
@@ -708,9 +709,9 @@ x 1
 y 20
 end
 arch bookshelf
-no_pick 1
 x 1
 y 20
+no_pick 1
 end
 arch woodfloor2
 name woodfloor
@@ -751,9 +752,9 @@ x 1
 y 25
 end
 arch fireplace
-glow_radius 2
 x 1
 y 25
+glow_radius 2
 end
 arch woodfloor2
 name woodfloor
@@ -762,9 +763,9 @@ x 1
 y 26
 end
 arch fireplace
-glow_radius 2
 x 1
 y 26
+glow_radius 2
 end
 arch woodfloor2
 name woodfloor
@@ -823,9 +824,9 @@ x 1
 y 32
 end
 arch jungle_1
-blocksview 0
 x 1
 y 33
+blocksview 0
 end
 arch woods
 x 1
@@ -852,24 +853,24 @@ x 1
 y 39
 end
 arch jungle_1
-blocksview 0
 x 1
 y 40
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 1
 y 41
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 1
 y 42
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 1
 y 43
+blocksview 0
 end
 arch dungeon_magic
 x 2
@@ -896,12 +897,12 @@ x 2
 y 1
 end
 arch button_trigger
-event_trigger_plugin Python
-event_trigger /onefang/python/PO/greeting.py
-invisible 1
-walk_off 0
 x 2
 y 1
+invisible 1
+walk_off 0
+event_trigger /onefang/python/PO/greeting.py
+event_trigger_plugin Python
 end
 arch dungeon_magic
 x 2
@@ -914,12 +915,12 @@ x 2
 y 2
 end
 arch button_trigger
-event_trigger_plugin Python
-event_trigger /onefang/python/PO/greeting.py
-invisible 1
-walk_off 0
 x 2
 y 2
+invisible 1
+walk_off 0
+event_trigger /onefang/python/PO/greeting.py
+event_trigger_plugin Python
 end
 arch dungeon_magic
 x 2
@@ -962,6 +963,8 @@ x 2
 y 6
 end
 arch igate_closed_1
+x 2
+y 6
 speed 0.500000
 resist_physical 30
 resist_magic 30
@@ -971,8 +974,6 @@ resist_confusion 30
 resist_acid 30
 resist_ghosthit 30
 connected 1
-x 2
-y 6
 end
 arch woodfloor2
 name woodfloor
@@ -1005,10 +1006,10 @@ x 2
 y 11
 end
 arch altar_lythander
-glow_radius 2
-level 20
 x 2
 y 11
+level 20
+glow_radius 2
 end
 arch woodfloor2
 name woodfloor
@@ -1031,13 +1032,13 @@ x 2
 y 13
 end
 arch power_crystal
-glow_radius 4
-material 256
-no_pick 1
-identified 1
 maxsp 500
 x 2
 y 13
+material 256
+glow_radius 4
+no_pick 1
+identified 1
 end
 arch woodfloor2
 name woodfloor
@@ -1190,14 +1191,14 @@ x 2
 y 32
 end
 arch jungle_1
-blocksview 0
 x 2
 y 33
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 2
 y 34
+blocksview 0
 end
 arch woods
 x 2
@@ -1220,37 +1221,37 @@ x 2
 y 38
 end
 arch jungle_1
-blocksview 0
 x 2
 y 39
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 2
 y 40
+blocksview 0
 end
 arch fog
 x 2
 y 40
 end
 arch jungle_2
-blocksview 0
 x 2
 y 41
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 2
 y 42
+blocksview 0
 end
 arch fog
 x 2
 y 42
 end
 arch jungle_2
-blocksview 0
 x 2
 y 43
+blocksview 0
 end
 arch dungeon_magic
 x 3
@@ -1277,9 +1278,9 @@ x 3
 y 1
 end
 arch fireplace
-glow_radius 2
 x 3
 y 1
+glow_radius 2
 end
 arch dungeon_magic
 x 3
@@ -1300,9 +1301,9 @@ name Apartment costs 100 gold
 name_pl Apartment costs 100 gold
 slaying money
 food 1000
-connected 1
 x 3
 y 3
+connected 1
 end
 arch woodfloor2
 name woodfloor
@@ -1319,9 +1320,9 @@ name Apartment costs 100 gold
 name_pl Apartment costs 100 gold
 slaying money
 food 1000
-connected 1
 x 3
 y 4
+connected 1
 end
 arch woodfloor2
 name woodfloor
@@ -1354,9 +1355,9 @@ x 3
 y 6
 end
 arch icecube
-glow_radius 4
 x 3
 y 6
+glow_radius 4
 end
 arch woodfloor2
 name woodfloor
@@ -1389,9 +1390,9 @@ x 3
 y 11
 end
 arch brazier
-glow_radius 4
 x 3
 y 11
+glow_radius 4
 end
 arch woodfloor2
 name woodfloor
@@ -1404,9 +1405,9 @@ x 3
 y 12
 end
 arch icecube
-glow_radius 4
 x 3
 y 12
+glow_radius 4
 end
 arch woodfloor2
 name woodfloor
@@ -1415,9 +1416,9 @@ x 3
 y 13
 end
 arch brazier
-glow_radius 4
 x 3
 y 13
+glow_radius 4
 end
 arch woodfloor2
 name woodfloor
@@ -1544,6 +1545,12 @@ name woodfloor
 name_pl woodfloor
 x 3
 y 30
+unique 1
+end
+arch mark_club
+x 3
+y 30
+unique 1
 end
 arch woodfloor2
 name woodfloor
@@ -1570,14 +1577,14 @@ x 3
 y 32
 end
 arch jungle_1
-blocksview 0
 x 3
 y 33
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 3
 y 34
+blocksview 0
 end
 arch woods
 x 3
@@ -1600,24 +1607,24 @@ x 3
 y 39
 end
 arch jungle_1
-blocksview 0
 x 3
 y 40
+blocksview 0
 end
 arch jungle_2
-blocksview 0
 x 3
 y 41
+blocksview 0
 end
 arch jungle_2
-blocksview 0
 x 3
 y 42
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 3
 y 43
+blocksview 0
 end
 arch dungeon_magic
 x 4
@@ -1666,9 +1673,9 @@ name Apartment costs 100 gold
 name_pl Apartment costs 100 gold
 slaying money
 food 1000
-connected 1
 x 4
 y 3
+connected 1
 end
 arch woodfloor2
 name woodfloor
@@ -1689,9 +1696,9 @@ end
 arch longtable_2_2_2
 name Karen's desk
 name_pl Karen's desk
-no_pass 1024
 x 4
 y 4
+no_pass 1024
 end
 arch dungeon_magic
 x 4
@@ -1706,9 +1713,9 @@ end
 arch longtable_1_2
 name Karen's desk
 name_pl Karen's desk
-no_pass 1024
 x 4
 y 5
+no_pass 1024
 end
 arch dungeon_magic
 x 4
@@ -1855,9 +1862,9 @@ x 4
 y 23
 end
 arch brazier
-glow_radius 4
 x 4
 y 23
+glow_radius 4
 end
 arch woodfloor2
 name woodfloor
@@ -1898,9 +1905,9 @@ x 4
 y 28
 end
 arch brazier
-glow_radius 4
 x 4
 y 28
+glow_radius 4
 end
 arch woodfloor2
 name woodfloor
@@ -1921,9 +1928,9 @@ x 4
 y 31
 end
 arch brazier
-glow_radius 4
 x 4
 y 31
+glow_radius 4
 end
 arch dungeon_magic
 x 4
@@ -1944,19 +1951,19 @@ x 4
 y 32
 end
 arch jungle_1
-blocksview 0
 x 4
 y 33
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 4
 y 34
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 4
 y 35
+blocksview 0
 end
 arch woods
 x 4
@@ -1975,24 +1982,24 @@ x 4
 y 39
 end
 arch jungle_1
-blocksview 0
 x 4
 y 40
+blocksview 0
 end
 arch jungle_2
-blocksview 0
 x 4
 y 41
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 4
 y 42
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 4
 y 43
+blocksview 0
 end
 arch dungeon_magic
 x 5
@@ -2055,9 +2062,9 @@ end
 arch longtable_1_3
 name Karen's desk
 name_pl Karen's desk
-no_pass 1024
 x 5
 y 4
+no_pass 1024
 end
 arch dungeon_magic
 x 5
@@ -2071,68 +2078,68 @@ y 5
 end
 arch princess
 name Karen, the receptionist
-face princess.112
-event_say_plugin Python
-event_say /onefang/python/bank/Karen.py
+name_pl Karen, the receptionist
+race elf
 msg
-Karen is exceptionally beautiful, 
+Karen is exceptionally beautiful,
 and she is dressed to kill.
 endmsg
-level 20
-race elf
-speed 5.0
-attacktype 1
-dam 16
-wc 6
+face princess.112
+Dex 30
+Con 40
+Pow 20
+Cha 45
 hp 100
 maxhp 100
-ac 0
-Con 40
-reflect_missile 1
-hitback 1
-reflect_spell 1
 sp 20
 maxsp 20
-Pow 20
-path_attuned 588897
-see_invisible 1
-can_see_in_dark 1
-can_use_rod 1
-can_use_skill 1
-friendly 1
-will_apply 7
-pick_up 0
+dam 16
+wc 6
+ac 0
+x 5
+y 5
+speed 5.0
+speed_left -0.250161
+level 20
+attacktype 1
 resist_physical 29
 resist_confusion 100
 resist_poison 30
 resist_fear 100
 resist_chaos 100
-name_pl Karen, the receptionist
-Dex 30
-Cha 45
-speed_left -0.250161
+path_attuned 588897
 state 1
+pick_up 0
+will_apply 7
+friendly 1
+see_invisible 1
+hitback 1
+reflect_missile 1
+reflect_spell 1
 has_ready_bow 268435456
+can_use_skill 1
 has_ready_scroll 131072
+can_use_rod 1
 has_ready_weapon 67108864
-x 5
-y 5
+can_see_in_dark 1
+event_say /onefang/python/bank/Karen.py
+event_say_plugin Python
 arch low_boots
 name silken slippers of comeliness
 name_pl silken slippers of comeliness
+Cha 2
 value 25000
 item_power 1
 applied 1
-Cha 2
 been_applied 65536
 end
 arch wig
 name wig of comeliness
 name_pl wig of comeliness
+Cha 3
 value 1400
 item_power 2
 applied 1
-Cha 3
 been_applied 65536
 end
 arch dress1
@@ -2256,9 +2263,9 @@ x 5
 y 19
 end
 arch icecube
-glow_radius 4
 x 5
 y 19
+glow_radius 4
 end
 arch woodfloor2
 name woodfloor
@@ -2371,66 +2378,66 @@ x 5
 y 32
 end
 arch jungle_1
-blocksview 0
 x 5
 y 33
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 5
 y 34
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 5
 y 35
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 5
 y 36
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 5
 y 37
+blocksview 0
 end
 arch woods
 x 5
 y 38
 end
 arch jungle_1
-blocksview 0
 x 5
 y 39
+blocksview 0
 end
 arch jungle_2
-blocksview 0
 x 5
 y 40
+blocksview 0
 end
 arch fog
 x 5
 y 40
 end
 arch jungle_1
-blocksview 0
 x 5
 y 41
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 5
 y 42
+blocksview 0
 end
 arch fog
 x 5
 y 42
 end
 arch jungle_1
-blocksview 0
 x 5
 y 43
+blocksview 0
 end
 arch dungeon_magic
 x 6
@@ -2457,11 +2464,13 @@ x 6
 y 1
 end
 arch locked_door2
-face ldoor_white2.111
+slaying onefangKey
 msg
 You need Prince onefangs key to open this door.
 endmsg
-slaying onefangKey
+face ldoor_white2.111
+x 6
+y 1
 resist_physical 30
 resist_magic 30
 resist_electricity 30
@@ -2469,8 +2478,6 @@ resist_cold 30
 resist_confusion 30
 resist_acid 30
 resist_ghosthit 30
-x 6
-y 1
 end
 arch dungeon_magic
 x 6
@@ -2487,9 +2494,9 @@ x 6
 y 2
 end
 arch icecube
-glow_radius 4
 x 6
 y 2
+glow_radius 4
 end
 arch dungeon_magic
 x 6
@@ -2524,9 +2531,9 @@ x 6
 y 4
 end
 arch icecube
-glow_radius 4
 x 6
 y 4
+glow_radius 4
 end
 arch dungeon_magic
 x 6
@@ -2733,66 +2740,66 @@ x 6
 y 32
 end
 arch jungle_1
-blocksview 0
 x 6
 y 33
+blocksview 0
 end
 arch evergreens
 x 6
 y 34
 end
 arch jungle_1
-blocksview 0
 x 6
 y 35
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 6
 y 36
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 6
 y 37
+blocksview 0
 end
 arch fog
 x 6
 y 37
 end
 arch jungle_1
-blocksview 0
 x 6
 y 38
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 6
 y 39
+blocksview 0
 end
 arch jungle_2
-blocksview 0
 x 6
 y 40
+blocksview 0
 end
 arch fog
 x 6
 y 40
 end
 arch jungle_2
-blocksview 0
 x 6
 y 41
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 6
 y 42
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 6
 y 43
+blocksview 0
 end
 arch dungeon_magic
 x 7
@@ -3057,59 +3064,59 @@ x 7
 y 32
 end
 arch jungle_1
-blocksview 0
 x 7
 y 33
+blocksview 0
 end
 arch jungle_2
-blocksview 0
 x 7
 y 34
+blocksview 0
 end
 arch jungle_2
-blocksview 0
 x 7
 y 35
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 7
 y 36
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 7
 y 37
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 7
 y 38
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 7
 y 39
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 7
 y 40
+blocksview 0
 end
 arch jungle_2
-blocksview 0
 x 7
 y 41
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 7
 y 42
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 7
 y 43
+blocksview 0
 end
 arch dungeon_magic
 x 8
@@ -3226,9 +3233,9 @@ x 8
 y 10
 end
 arch brazier
-glow_radius 4
 x 8
 y 10
+glow_radius 4
 end
 arch woodfloor2
 name woodfloor
@@ -3261,9 +3268,9 @@ x 8
 y 15
 end
 arch brazier
-glow_radius 4
 x 8
 y 15
+glow_radius 4
 end
 arch woodfloor2
 name woodfloor
@@ -3294,9 +3301,9 @@ x 8
 y 19
 end
 arch icecube
-glow_radius 4
 x 8
 y 19
+glow_radius 4
 end
 arch woodfloor2
 name woodfloor
@@ -3409,58 +3416,58 @@ x 8
 y 32
 end
 arch jungle_1
-blocksview 0
 x 8
 y 33
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 8
 y 34
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 8
 y 35
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 8
 y 36
+blocksview 0
 end
 arch jungle_2
-blocksview 0
 x 8
 y 37
+blocksview 0
 end
 arch evergreens
 x 8
 y 38
 end
 arch jungle_1
-blocksview 0
 x 8
 y 39
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 8
 y 40
+blocksview 0
 end
 arch jungle_2
-blocksview 0
 x 8
 y 41
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 8
 y 42
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 8
 y 43
+blocksview 0
 end
 arch dungeon_magic
 x 9
@@ -3559,9 +3566,9 @@ x 9
 y 7
 end
 arch fireplace
-glow_radius 2
 x 9
 y 7
+glow_radius 2
 end
 arch woodfloor2
 name woodfloor
@@ -3646,9 +3653,9 @@ x 9
 y 18
 end
 arch fireplace
-glow_radius 2
 x 9
 y 18
+glow_radius 2
 end
 arch woodfloor2
 name woodfloor
@@ -3697,9 +3704,9 @@ x 9
 y 23
 end
 arch brazier
-glow_radius 4
 x 9
 y 23
+glow_radius 4
 end
 arch woodfloor2
 name woodfloor
@@ -3740,9 +3747,9 @@ x 9
 y 28
 end
 arch brazier
-glow_radius 4
 x 9
 y 28
+glow_radius 4
 end
 arch woodfloor2
 name woodfloor
@@ -3763,9 +3770,9 @@ x 9
 y 31
 end
 arch brazier
-glow_radius 4
 x 9
 y 31
+glow_radius 4
 end
 arch dungeon_magic
 x 9
@@ -3786,67 +3793,67 @@ x 9
 y 32
 end
 arch jungle_1
-blocksview 0
 x 9
 y 33
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 9
 y 34
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 9
 y 35
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 9
 y 36
+blocksview 0
 end
 arch jungle_2
-blocksview 0
 x 9
 y 37
+blocksview 0
 end
 arch jungle_2
-blocksview 0
 x 9
 y 38
+blocksview 0
 end
 arch fog
 x 9
 y 38
 end
 arch jungle_1
-blocksview 0
 x 9
 y 39
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 9
 y 40
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 9
 y 41
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 9
 y 42
+blocksview 0
 end
 arch fog
 x 9
 y 42
 end
 arch jungle_1
-blocksview 0
 x 9
 y 43
+blocksview 0
 end
 arch dungeon_magic
 x 10
@@ -4151,63 +4158,63 @@ x 10
 y 32
 end
 arch jungle_1
-blocksview 0
 x 10
 y 33
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 10
 y 34
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 10
 y 35
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 10
 y 36
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 10
 y 37
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 10
 y 38
+blocksview 0
 end
 arch fog
 x 10
 y 38
 end
 arch jungle_1
-blocksview 0
 x 10
 y 39
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 10
 y 40
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 10
 y 41
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 10
 y 42
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 10
 y 43
+blocksview 0
 end
 arch dungeon_magic
 x 11
@@ -4512,9 +4519,9 @@ x 11
 y 32
 end
 arch jungle_1
-blocksview 0
 x 11
 y 33
+blocksview 0
 end
 arch evergreens
 x 11
@@ -4525,43 +4532,43 @@ x 11
 y 35
 end
 arch jungle_2
-blocksview 0
 x 11
 y 36
+blocksview 0
 end
 arch jungle_2
-blocksview 0
 x 11
 y 37
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 11
 y 38
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 11
 y 39
+blocksview 0
 end
 arch evergreens
 x 11
 y 40
 end
 arch jungle_1
-blocksview 0
 x 11
 y 41
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 11
 y 42
+blocksview 0
 end
 arch jungle_2
-blocksview 0
 x 11
 y 43
+blocksview 0
 end
 arch dungeon_magic
 x 12
@@ -4575,8 +4582,8 @@ arch swall_3_3
 x 12
 end
 arch icecube
-glow_radius 4
 x 12
+glow_radius 4
 end
 arch dungeon_magic
 x 12
@@ -4611,9 +4618,9 @@ x 12
 y 2
 end
 arch icecube
-glow_radius 4
 x 12
 y 2
+glow_radius 4
 end
 arch dungeon_magic
 x 12
@@ -4640,9 +4647,9 @@ x 12
 y 4
 end
 arch icecube
-glow_radius 4
 x 12
 y 4
+glow_radius 4
 end
 arch dungeon_magic
 x 12
@@ -4677,9 +4684,9 @@ x 12
 y 6
 end
 arch icecube
-glow_radius 4
 x 12
 y 6
+glow_radius 4
 end
 arch woodfloor2
 name woodfloor
@@ -4794,9 +4801,9 @@ x 12
 y 20
 end
 arch bookshelf
-no_pick 1
 x 12
 y 20
+no_pick 1
 end
 arch woodfloor2
 name woodfloor
@@ -4837,9 +4844,9 @@ x 12
 y 25
 end
 arch fireplace
-glow_radius 2
 x 12
 y 25
+glow_radius 2
 end
 arch woodfloor2
 name woodfloor
@@ -4848,9 +4855,9 @@ x 12
 y 26
 end
 arch fireplace
-glow_radius 2
 x 12
 y 26
+glow_radius 2
 end
 arch woodfloor2
 name woodfloor
@@ -4905,52 +4912,52 @@ x 12
 y 32
 end
 arch jungle_1
-blocksview 0
 x 12
 y 33
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 12
 y 34
+blocksview 0
 end
 arch evergreens
 x 12
 y 35
 end
 arch jungle_1
-blocksview 0
 x 12
 y 36
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 12
 y 37
+blocksview 0
 end
 arch evergreens
 x 12
 y 38
 end
 arch jungle_2
-blocksview 0
 x 12
 y 39
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 12
 y 40
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 12
 y 41
+blocksview 0
 end
 arch jungle_2
-blocksview 0
 x 12
 y 42
+blocksview 0
 end
 arch woods_2
 x 12
@@ -5067,9 +5074,9 @@ x 13
 y 10
 end
 arch brazier
-glow_radius 4
 x 13
 y 10
+glow_radius 4
 end
 arch woodfloor2
 name woodfloor
@@ -5102,9 +5109,9 @@ x 13
 y 15
 end
 arch brazier
-glow_radius 4
 x 13
 y 15
+glow_radius 4
 end
 arch woodfloor2
 name woodfloor
@@ -5133,9 +5140,9 @@ x 13
 y 19
 end
 arch icecube
-glow_radius 4
 x 13
 y 19
+glow_radius 4
 end
 arch grassmedium
 x 13
@@ -5242,9 +5249,9 @@ x 13
 y 28
 end
 arch icecube
-glow_radius 4
 x 13
 y 28
+glow_radius 4
 end
 arch marble
 x 13
@@ -5295,65 +5302,65 @@ x 13
 y 32
 end
 arch icecube
-glow_radius 4
 x 13
 y 32
+glow_radius 4
 end
 arch jungle_1
-blocksview 0
 x 13
 y 33
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 13
 y 34
+blocksview 0
 end
 arch evergreens
 x 13
 y 35
 end
 arch jungle_1
-blocksview 0
 x 13
 y 36
+blocksview 0
 end
 arch fog
 x 13
 y 36
 end
 arch jungle_1
-blocksview 0
 x 13
 y 37
+blocksview 0
 end
 arch evergreens
 x 13
 y 38
 end
 arch jungle_1
-blocksview 0
 x 13
 y 39
+blocksview 0
 end
 arch fog
 x 13
 y 39
 end
 arch jungle_1
-blocksview 0
 x 13
 y 40
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 13
 y 41
+blocksview 0
 end
 arch jungle_2
-blocksview 0
 x 13
 y 42
+blocksview 0
 end
 arch woods_2
 x 13
@@ -5534,9 +5541,9 @@ x 14
 y 19
 end
 arch icecube
-glow_radius 4
 x 14
 y 19
+glow_radius 4
 end
 arch grassmedium
 x 14
@@ -5611,9 +5618,9 @@ x 14
 y 28
 end
 arch icecube
-glow_radius 4
 x 14
 y 28
+glow_radius 4
 end
 arch marble
 x 14
@@ -5660,44 +5667,44 @@ x 14
 y 32
 end
 arch jungle_1
-blocksview 0
 x 14
 y 33
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 14
 y 34
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 14
 y 35
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 14
 y 36
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 14
 y 37
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 14
 y 38
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 14
 y 39
+blocksview 0
 end
 arch jungle_2
-blocksview 0
 x 14
 y 40
+blocksview 0
 end
 arch woods_2
 x 14
@@ -5820,9 +5827,9 @@ x 15
 y 7
 end
 arch fireplace
-glow_radius 2
 x 15
 y 7
+glow_radius 2
 end
 arch woodfloor2
 name woodfloor
@@ -5896,11 +5903,11 @@ y 19
 end
 arch magic_mouth
 name Bathroom
+name_pl Bathroom
 msg
 You've never seen such a fancy
 bathroom before.
 endmsg
-name_pl Bathroom
 x 15
 y 19
 end
@@ -5970,11 +5977,11 @@ y 28
 end
 arch magic_mouth
 name Throne room
+name_pl Throne room
 msg
 Throne room.  Please wash your hands
 after use.
 endmsg
-name_pl Throne room
 x 15
 y 28
 end
@@ -6011,39 +6018,39 @@ x 15
 y 32
 end
 arch jungle_1
-blocksview 0
 x 15
 y 33
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 15
 y 34
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 15
 y 35
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 15
 y 36
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 15
 y 37
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 15
 y 38
+blocksview 0
 end
 arch jungle_2
-blocksview 0
 x 15
 y 39
+blocksview 0
 end
 arch woods_2
 x 15
@@ -6233,11 +6240,11 @@ y 19
 end
 arch magic_mouth
 name Bathroom
+name_pl Bathroom
 msg
 So this is what indoor plumbing is
 all about.
 endmsg
-name_pl Bathroom
 x 16
 y 19
 end
@@ -6299,11 +6306,11 @@ y 28
 end
 arch magic_mouth
 name Throne room
+name_pl Throne room
 msg
 Throne room.  Please wash your hands
 after use.
 endmsg
-name_pl Throne room
 x 16
 y 28
 end
@@ -6340,24 +6347,24 @@ x 16
 y 32
 end
 arch jungle_1
-blocksview 0
 x 16
 y 33
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 16
 y 34
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 16
 y 35
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 16
 y 36
+blocksview 0
 end
 arch woods_2
 x 16
@@ -6498,9 +6505,9 @@ x 17
 y 10
 end
 arch fireplace
-glow_radius 2
 x 17
 y 10
+glow_radius 2
 end
 arch woodfloor2
 name woodfloor
@@ -6563,9 +6570,9 @@ x 17
 y 19
 end
 arch icecube
-glow_radius 4
 x 17
 y 19
+glow_radius 4
 end
 arch grassmedium
 x 17
@@ -6608,9 +6615,9 @@ x 17
 y 28
 end
 arch icecube
-glow_radius 4
 x 17
 y 28
+glow_radius 4
 end
 arch marble
 x 17
@@ -6654,19 +6661,19 @@ x 17
 y 32
 end
 arch jungle_1
-blocksview 0
 x 17
 y 33
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 17
 y 34
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 17
 y 35
+blocksview 0
 end
 arch woods_2
 x 17
@@ -6720,8 +6727,8 @@ arch swall_3_3
 x 18
 end
 arch icecube
-glow_radius 4
 x 18
+glow_radius 4
 end
 arch dungeon_magic
 x 18
@@ -6756,9 +6763,9 @@ x 18
 y 2
 end
 arch icecube
-glow_radius 4
 x 18
 y 2
+glow_radius 4
 end
 arch dungeon_magic
 x 18
@@ -6785,9 +6792,9 @@ x 18
 y 4
 end
 arch icecube
-glow_radius 4
 x 18
 y 4
+glow_radius 4
 end
 arch dungeon_magic
 x 18
@@ -6822,9 +6829,9 @@ x 18
 y 6
 end
 arch icecube
-glow_radius 4
 x 18
 y 6
+glow_radius 4
 end
 arch woodfloor2
 name woodfloor
@@ -6893,9 +6900,9 @@ x 18
 y 11
 end
 arch icecube
-glow_radius 4
 x 18
 y 11
+glow_radius 4
 end
 arch woodfloor2
 name woodfloor
@@ -6996,9 +7003,9 @@ x 18
 y 19
 end
 arch icecube
-glow_radius 4
 x 18
 y 19
+glow_radius 4
 end
 arch grassmedium
 x 18
@@ -7105,9 +7112,9 @@ x 18
 y 28
 end
 arch icecube
-glow_radius 4
 x 18
 y 28
+glow_radius 4
 end
 arch marble
 x 18
@@ -7158,24 +7165,24 @@ x 18
 y 32
 end
 arch icecube
-glow_radius 4
 x 18
 y 32
+glow_radius 4
 end
 arch jungle_1
-blocksview 0
 x 18
 y 33
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 18
 y 34
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 18
 y 35
+blocksview 0
 end
 arch woods_2
 x 18
@@ -7348,9 +7355,9 @@ x 19
 y 14
 end
 arch chest_2
-no_pick 1
 x 19
 y 14
+no_pick 1
 end
 arch woodfloor2
 name woodfloor
@@ -7365,9 +7372,9 @@ x 19
 y 16
 end
 arch chest_2
-no_pick 1
 x 19
 y 16
+no_pick 1
 end
 arch woodfloor2
 name woodfloor
@@ -7406,9 +7413,9 @@ x 19
 y 20
 end
 arch bookshelf
-no_pick 1
 x 19
 y 20
+no_pick 1
 end
 arch woodfloor2
 name woodfloor
@@ -7457,9 +7464,9 @@ x 19
 y 25
 end
 arch fireplace
-glow_radius 2
 x 19
 y 25
+glow_radius 2
 end
 arch woodfloor2
 name woodfloor
@@ -7468,9 +7475,9 @@ x 19
 y 26
 end
 arch fireplace
-glow_radius 2
 x 19
 y 26
+glow_radius 2
 end
 arch woodfloor2
 name woodfloor
@@ -7529,19 +7536,19 @@ x 19
 y 32
 end
 arch jungle_1
-blocksview 0
 x 19
 y 33
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 19
 y 34
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 19
 y 35
+blocksview 0
 end
 arch woods_2
 x 19
@@ -7606,6 +7613,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 20
+y 2
+end
+arch pentagram_111
 x 20
 y 2
 end
@@ -7858,14 +7869,14 @@ x 20
 y 33
 end
 arch jungle_1
-blocksview 0
 x 20
 y 34
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 20
 y 35
+blocksview 0
 end
 arch woods_2
 x 20
@@ -7924,9 +7935,9 @@ x 21
 y 1
 end
 arch fireplace
-glow_radius 2
 x 21
 y 1
+glow_radius 2
 end
 arch dungeon_magic
 x 21
@@ -7969,9 +7980,9 @@ x 21
 y 5
 end
 arch cauldron
-glow_radius 1
 x 21
 y 5
+glow_radius 1
 end
 arch dungeon_magic
 x 21
@@ -8024,9 +8035,9 @@ x 21
 y 10
 end
 arch cauldron
-glow_radius 1
 x 21
 y 10
+glow_radius 1
 end
 arch woodfloor2
 name woodfloor
@@ -8197,18 +8208,18 @@ x 21
 y 32
 end
 arch jungle_1
-blocksview 0
 x 21
 y 33
+blocksview 0
 end
 arch evergreens
 x 21
 y 34
 end
 arch jungle_1
-blocksview 0
 x 21
 y 35
+blocksview 0
 end
 arch woods_2
 x 21
@@ -8459,9 +8470,9 @@ x 22
 y 23
 end
 arch brazier
-glow_radius 4
 x 22
 y 23
+glow_radius 4
 end
 arch woodfloor2
 name woodfloor
@@ -8494,9 +8505,9 @@ x 22
 y 28
 end
 arch brazier
-glow_radius 4
 x 22
 y 28
+glow_radius 4
 end
 arch woodfloor2
 name woodfloor
@@ -8517,9 +8528,9 @@ x 22
 y 31
 end
 arch brazier
-glow_radius 4
 x 22
 y 31
+glow_radius 4
 end
 arch dungeon_magic
 x 22
@@ -8540,19 +8551,19 @@ x 22
 y 32
 end
 arch jungle_1
-blocksview 0
 x 22
 y 33
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 22
 y 34
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 22
 y 35
+blocksview 0
 end
 arch woods_2
 x 22
@@ -8763,9 +8774,9 @@ x 23
 y 19
 end
 arch icecube
-glow_radius 4
 x 23
 y 19
+glow_radius 4
 end
 arch woodfloor2
 name woodfloor
@@ -8862,19 +8873,19 @@ x 23
 y 32
 end
 arch jungle_1
-blocksview 0
 x 23
 y 33
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 23
 y 34
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 23
 y 35
+blocksview 0
 end
 arch woods_2
 x 23
@@ -8924,8 +8935,8 @@ arch swall_3_3
 x 24
 end
 arch icecube
-glow_radius 4
 x 24
+glow_radius 4
 end
 arch dungeon_magic
 x 24
@@ -8960,9 +8971,9 @@ x 24
 y 2
 end
 arch icecube
-glow_radius 4
 x 24
 y 2
+glow_radius 4
 end
 arch dungeon_magic
 x 24
@@ -8989,9 +9000,9 @@ x 24
 y 4
 end
 arch icecube
-glow_radius 4
 x 24
 y 4
+glow_radius 4
 end
 arch dungeon_magic
 x 24
@@ -9026,9 +9037,9 @@ x 24
 y 6
 end
 arch icecube
-glow_radius 4
 x 24
 y 6
+glow_radius 4
 end
 arch woodfloor2
 name woodfloor
@@ -9037,9 +9048,9 @@ x 24
 y 7
 end
 arch fireplace
-glow_radius 2
 x 24
 y 7
+glow_radius 2
 end
 arch woodfloor2
 name woodfloor
@@ -9072,9 +9083,9 @@ x 24
 y 12
 end
 arch brazier
-glow_radius 4
 x 24
 y 12
+glow_radius 4
 end
 arch woodfloor2
 name woodfloor
@@ -9221,19 +9232,19 @@ x 24
 y 32
 end
 arch jungle_1
-blocksview 0
 x 24
 y 33
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 24
 y 34
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 24
 y 35
+blocksview 0
 end
 arch woods_2
 x 24
@@ -9364,9 +9375,9 @@ x 25
 y 7
 end
 arch fireplace
-glow_radius 2
 x 25
 y 7
+glow_radius 2
 end
 arch woodfloor2
 name woodfloor
@@ -9547,14 +9558,14 @@ x 25
 y 33
 end
 arch jungle_1
-blocksview 0
 x 25
 y 34
+blocksview 0
 end
 arch jungle_1
-blocksview 0
 x 25
 y 35
+blocksview 0
 end
 arch woods_2
 x 25
@@ -9785,9 +9796,9 @@ x 26
 y 19
 end
 arch icecube
-glow_radius 4
 x 26
 y 19
+glow_radius 4
 end
 arch woodfloor2
 name woodfloor
@@ -10170,9 +10181,9 @@ x 27
 y 23
 end
 arch brazier
-glow_radius 4
 x 27
 y 23
+glow_radius 4
 end
 arch woodfloor2
 name woodfloor
@@ -10205,9 +10216,9 @@ x 27
 y 28
 end
 arch brazier
-glow_radius 4
 x 27
 y 28
+glow_radius 4
 end
 arch woodfloor2
 name woodfloor
@@ -10228,9 +10239,9 @@ x 27
 y 31
 end
 arch brazier
-glow_radius 4
 x 27
 y 31
+glow_radius 4
 end
 arch dungeon_magic
 x 27
@@ -11109,9 +11120,9 @@ x 30
 y 11
 end
 arch brazier
-glow_radius 4
 x 30
 y 11
+glow_radius 4
 end
 arch woodfloor2
 name woodfloor
@@ -11120,9 +11131,9 @@ x 30
 y 12
 end
 arch fireplace
-glow_radius 2
 x 30
 y 12
+glow_radius 2
 end
 arch woodfloor2
 name woodfloor
@@ -11131,9 +11142,9 @@ x 30
 y 13
 end
 arch fireplace
-glow_radius 2
 x 30
 y 13
+glow_radius 2
 end
 arch woodfloor2
 name woodfloor
@@ -11142,9 +11153,9 @@ x 30
 y 14
 end
 arch brazier
-glow_radius 4
 x 30
 y 14
+glow_radius 4
 end
 arch woodfloor2
 name woodfloor
@@ -11207,9 +11218,9 @@ x 30
 y 20
 end
 arch bookshelf
-no_pick 1
 x 30
 y 20
+no_pick 1
 end
 arch woodfloor2
 name woodfloor
@@ -11258,9 +11269,9 @@ x 30
 y 25
 end
 arch fireplace
-glow_radius 2
 x 30
 y 25
+glow_radius 2
 end
 arch woodfloor2
 name woodfloor
@@ -11269,9 +11280,9 @@ x 30
 y 26
 end
 arch fireplace
-glow_radius 2
 x 30
 y 26
+glow_radius 2
 end
 arch woodfloor2
 name woodfloor
@@ -11393,8 +11404,8 @@ arch swall_2_2_3
 x 31
 end
 arch icecube
-glow_radius 4
 x 31
+glow_radius 4
 end
 arch dungeon_magic
 x 31
@@ -11501,9 +11512,9 @@ x 31
 y 6
 end
 arch icecube
-glow_radius 4
 x 31
 y 6
+glow_radius 4
 end
 arch woodfloor2
 name woodfloor
@@ -11684,9 +11695,9 @@ x 31
 y 19
 end
 arch icecube
-glow_radius 4
 x 31
 y 19
+glow_radius 4
 end
 arch woodfloor2
 name woodfloor
@@ -11871,9 +11882,9 @@ x 31
 y 32
 end
 arch icecube
-glow_radius 4
 x 31
 y 32
+glow_radius 4
 end
 arch grass
 x 31
@@ -11918,8 +11929,4 @@ end
 arch brush
 x 31
 y 43
-end
-arch pentagram_111
-x 20
-y 2
 end

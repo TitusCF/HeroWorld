@@ -3,7 +3,7 @@ name <unnamed>
 width 40
 height 40
 msg
-Modified: 2020-01-25 Acer
+Modified: 2020-02-01 Acer
 endmsg
 end
 arch afloor_blue_left
@@ -3062,6 +3062,7 @@ x 12
 y 19
 end
 arch statue
+face statue2_gold.111
 x 12
 y 19
 type 121
@@ -4705,6 +4706,10 @@ arch afloor_blue_left
 x 19
 y 12
 end
+arch major_potion_restoration
+x 19
+y 12
+end
 arch afloor_blue_left
 x 19
 y 13
@@ -5266,10 +5271,10 @@ x 22
 y 9
 end
 arch key
-name test key
+name key
 x 22
 y 9
-lifesave 1
+on_use_yield key
 end
 arch afloor_blue_left
 x 22
@@ -5772,6 +5777,9 @@ x 25
 y 3
 end
 arch cplate
+name Bronzing Hammer
+name_pl Bronzing Hammers
+face mbhammer.111
 x 25
 y 3
 arch event_apply
@@ -5999,6 +6007,10 @@ x 26
 y 8
 end
 arch afloor_blue_left
+x 26
+y 9
+end
+arch door_look_1
 x 26
 y 9
 end
@@ -6345,6 +6357,10 @@ x 28
 y 8
 end
 arch afloor_blue_left
+x 28
+y 9
+end
+arch door_look_2
 x 28
 y 9
 end

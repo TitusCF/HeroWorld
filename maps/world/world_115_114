@@ -4950,6 +4950,7 @@ y 29
 elevation 5366
 end
 arch behemoth
+name warg
 x 18
 y 29
 end
@@ -6024,6 +6025,31 @@ x 22
 y 28
 elevation 3060
 end
+arch altar_trigger
+slaying corpse
+msg
+The wargs tear into the corpse you've given them.
+One approachs you with its ears down.
+endmsg
+exp 60000
+food 1
+x 22
+y 28
+connected 6543378
+end
+arch creator
+x 22
+y 28
+connected 6543378
+activate_on_release 0
+arch turningboat
+name Warg Mount
+face behemoth.x31
+animation behemoth
+speed 1
+passenger_limit 2
+end
+end
 arch earth
 x 22
 y 29
@@ -6558,13 +6584,25 @@ end
 arch dungeon_floor
 x 24
 y 28
-elevation 4126
+elevation 3060
 end
-arch dragon_steak_table
-name Feed Corpse to the Wargs
+arch altar_trigger
 slaying corpse
+msg
+The wargs tear into the corpse you've given them.
+One approachs you with its ears down.
+endmsg
+exp 60000
+food 1
 x 24
 y 28
+connected 65433781
+end
+arch creator
+x 24
+y 28
+connected 65433781
+activate_on_release 0
 arch turningboat
 name Warg Mount
 face behemoth.x31
@@ -7419,6 +7457,7 @@ y 34
 elevation 5137
 end
 arch behemoth
+name warg
 x 27
 y 34
 end
@@ -7697,6 +7736,7 @@ y 31
 elevation 4943
 end
 arch behemoth
+name warg
 x 28
 y 31
 end

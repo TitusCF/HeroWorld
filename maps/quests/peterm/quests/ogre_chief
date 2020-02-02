@@ -8,7 +8,7 @@ enter_x 6
 enter_y 6
 msg
 Created:  2000-06-17
-Modified: 2020-02-01 Acer
+Modified: 2020-02-02 Acer
 endmsg
 maplore
 @quest Scorn Royalty Quest
@@ -474,9 +474,10 @@ arch large_stones
 x 1
 y 30
 end
-arch orcchop
+arch button_lever
 x 1
 y 30
+connected 294356
 end
 arch large_stones
 x 1
@@ -517,13 +518,6 @@ x 2
 y 1
 end
 arch large_stones
-x 2
-y 2
-end
-arch stair_up
-slaying /world/world_106_115
-hp 9
-sp 18
 x 2
 y 2
 end
@@ -3758,10 +3752,6 @@ arch large_stones
 x 14
 y 14
 end
-arch generate_ogre
-x 14
-y 14
-end
 arch large_stones
 x 14
 y 15
@@ -4054,46 +4044,24 @@ arch large_stones
 x 15
 y 13
 end
-arch ogre
-name Ogre Chief
-hp 150
+arch oakdoor
+slaying /quests/peterm/quests/ogre_chief_room
+hp 3
+sp 5
 x 15
 y 13
-speed_left -0.260000
-carrying 49015
-randomitems none
-arch leather_armour
-magic 3
 end
-arch bighorned_helmet
-magic 2
+arch spikes_closed
+x 15
+y 13
+connected 294356
 end
-arch club
-magic 4
-end
-arch head
-name Head of the Ogre Chief
-material 0
-arch quest_advance_pickup
-name scorn/OgreKing 30>40
-end
-arch quest_prevent_drop
-name scorn/OgreKing 50
-end
-end
-arch skill_throwing
-end
-arch small_shield
-end
-arch quest_advance_death
-name scorn/OgreKing 20>30
-end
+arch spikes_closed
+x 15
+y 13
+connected 219567
 end
 arch large_stones
-x 15
-y 14
-end
-arch generate_ogre
 x 15
 y 14
 end
@@ -4359,10 +4327,6 @@ x 16
 y 13
 end
 arch large_stones
-x 16
-y 14
-end
-arch generate_ogre
 x 16
 y 14
 end
@@ -8049,6 +8013,11 @@ end
 arch large_stones
 x 29
 y 30
+end
+arch button_lever
+x 29
+y 30
+connected 219567
 end
 arch large_stones
 x 29

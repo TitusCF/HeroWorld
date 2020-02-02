@@ -2547,6 +2547,10 @@ arch afloor_blue_left
 x 10
 y 19
 end
+arch awall_0
+x 10
+y 19
+end
 arch afloor_blue_left
 x 10
 y 20
@@ -3348,11 +3352,34 @@ arch afloor_blue_left
 x 13
 y 16
 end
-arch barrel
+arch chest
 x 13
 y 16
-nrof 1000
+randomitems none
+arch barrel
+name Foundation Wall
+name_pl Foundation Walls
+face awall_0.111
+nrof 10
 no_pick 0
+end
+arch bag
+name Wall Eater
+arch altar_trigger
+name Wall Eater
+slaying Foundation Wall
+msg
+Foundation Wall is destroyed
+endmsg
+exp 1
+food 1
+weight 20000
+no_pick 0
+end
+end
+arch awall_0
+no_pick 0
+end
 end
 arch afloor_blue_left
 x 13
@@ -4746,11 +4773,13 @@ connected 23467
 lifesave 1
 activate_on_release 0
 arch chest_blue
-name paving stones (apply to lay cobble)
+name stones (apply to lay destruction barrier)
 face rock2.111
 randomitems none
-arch cobblestones2
-unique 1
+arch awall_0
+name Foundation Wall
+weight 50000
+no_pick 0
 end
 end
 end
@@ -5466,6 +5495,10 @@ x 23
 y 11
 end
 arch afloor_blue_left
+x 23
+y 12
+end
+arch nukebomb
 x 23
 y 12
 end

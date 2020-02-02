@@ -6025,28 +6025,21 @@ x 22
 y 28
 elevation 3060
 end
-arch altar_trigger
+arch waybread_table
+name Feed a corpse to the wargs?
 slaying corpse
-msg
-The wargs tear into the corpse you've given them.
-One approachs you with its ears down.
-endmsg
-exp 60000
 food 1
 x 22
 y 28
-connected 6543378
-end
-arch creator
-x 22
-y 28
-connected 6543378
-activate_on_release 0
-arch turningboat
+arch blue_dragon
 name Warg Mount
 face behemoth.x31
 animation behemoth
 speed 1
+type 2
+container 10000000
+move_type walk swim boat
+move_allow walk
 passenger_limit 2
 end
 end
@@ -6586,28 +6579,21 @@ x 24
 y 28
 elevation 3060
 end
-arch altar_trigger
+arch waybread_table
+name Feed a corpse to the wargs?
 slaying corpse
-msg
-The wargs tear into the corpse you've given them.
-One approachs you with its ears down.
-endmsg
-exp 60000
 food 1
 x 24
 y 28
-connected 65433781
-end
-arch creator
-x 24
-y 28
-connected 65433781
-activate_on_release 0
-arch turningboat
+arch blue_dragon
 name Warg Mount
 face behemoth.x31
 animation behemoth
 speed 1
+type 2
+container 10000000
+move_type walk swim boat
+move_allow walk
 passenger_limit 2
 end
 end

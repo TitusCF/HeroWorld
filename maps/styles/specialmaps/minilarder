@@ -6,7 +6,7 @@ msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Jan 18 15:47:50 1999
-Modified: 2019-04-02 Acer
+Modified: 2020-02-03 Acer
 endmsg
 end
 arch cobblestones2
@@ -84,15 +84,25 @@ food 1
 x 2
 y 2
 end
-arch button_small
+arch waybread_table
 name Enchanted Fountain
+slaying potion_empty
 face fountain.111
 animation fountain
+food 1
 x 2
 y 2
-invisible 0
-connected 7946528
-activate_on_release 0
+anim_speed 2
+client_anim_random 1
+arch potion_heal
+name cracked healing potion
+name_pl cracked healing potions
+value 0
+identified 1
+on_use_yield rubble
+arch spell_minor_healing
+end
+end
 end
 arch grassbrown
 x 2

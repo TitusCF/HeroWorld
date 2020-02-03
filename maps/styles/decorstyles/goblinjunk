@@ -11,7 +11,7 @@ endmsg
 end
 arch barrel
 end
-arch booze
+arch d_statue
 y 1
 end
 arch spider_web
@@ -29,7 +29,7 @@ end
 arch orcchop
 x 1
 end
-arch booze
+arch d_statue
 x 1
 y 1
 end
@@ -52,9 +52,19 @@ end
 arch orcchop
 x 2
 end
-arch onion
+arch figurine_generic
+name statue
+face d_statue.111
 x 2
 y 1
+level 20
+no_pick 1
+on_use_yield rubble
+race_restriction dwarf_player
+arch spell_summon_pet_monster
+other_arch dwarf
+randomitems none
+end
 end
 arch bones4
 x 2

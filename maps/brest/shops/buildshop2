@@ -13,7 +13,7 @@ enter_x 24
 enter_y 4
 msg
 Created:  2005-11-05 Gene Alexander
-Modified: 2020-01-21 Acer
+Modified: 2020-02-03 Acer
 endmsg
 end
 arch flagstone
@@ -798,8 +798,6 @@ y 8
 end
 arch fountain
 name Fountain of Heroism (display model)
-face fountain_snow.111
-animation NONE
 x 6
 y 8
 end
@@ -942,8 +940,10 @@ randomitems none
 arch food_table
 name Fountain of Heroism
 slaying potion_empty
-face fountain_snow.111
+face fountain.111
+animation fountain
 food 1
+type 67
 arch potion_heroism
 name potion of Heroism
 value 0
@@ -2721,8 +2721,10 @@ randomitems none
 arch food_table
 name Fountain of Create Bomb
 slaying potion_empty
-face fountain_oil.111
+face fountain.111
+animation fountain
 food 1
+type 67
 arch potion_heroism
 name Potion of Create Bomb
 value 0
@@ -2738,8 +2740,6 @@ y 11
 end
 arch fountain
 name Fountain of Create Bomb (display model)
-face fountain_oil.111
-animation NONE
 x 20
 y 11
 end

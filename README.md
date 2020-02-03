@@ -20,6 +20,8 @@ Bottomworld (The frontier) tiled to Bigworld hopefully becoming a globe </br>
 Exp loss from death reduced greatly </br>
 Four stage tutorial with face selection </br>
 Mlab deloused of content unsuitable for public play and reintigrated </br>
+Statue Maker in Navar </br>
+Void Space & Void Scorn </br>
 Greycastle rebalanced, reinigrated </br>
 Guilds upgraded to a more digestable form </br>
 world_105_115 and surroundings modified </br>
@@ -37,7 +39,6 @@ Vertical Building in The Frontier </br>
 Expanded Construction (WAAAY more buildable archs) </br>
 Modifier crafting on all gear & weapons </br>
 Word_of_penalty spell used for returning to life from the death dimension </br>
-Titus Wall </br>
 Arena upgraded to 'smart' system </br>
 More transport options </br>
 More quests/artifacts </br>

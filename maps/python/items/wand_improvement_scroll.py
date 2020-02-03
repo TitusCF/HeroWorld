@@ -1,13 +1,27 @@
+import random
+
 import Crossfire
 
 def check_type(item):
     return item.Type == Crossfire.Type.WAND
 
-def improvement():
-    if Crossfire.WhoAmI().Cursed or Crossfire.WhoAmI().Damned:
-        return -1
+def cursed():
+    return Crossfire.WhoAmI().Cursed or Crossfire.WhoAmI().Damned
+
+def improve(item, player):
+    if not cursed():
+        player.Message("The %s glows softly with a blue aura." % item.Name)
+        item.Level += 1
     else:
-        return 1
+        player.Message("The %s glows with a dark black aura." % item.Name)
+        item.Level += -1
+
+def charge(item, player):
+    player.Message("The %s glows for a moment, then fades." % item.Name)
+    if not cursed():
+        item.Food += random.randint(4, 6)
+    else:
+        item.Food -= 1
 
 def apply():
     player = Crossfire.WhoIsActivator()
@@ -20,12 +34,10 @@ def apply():
     if not check_type(item):
         player.Message("Nothing happens.")
         return
-    n = improvement()
-    if n > 0:
-        player.Message("The %s glows softly with a blue aura." % item.Name)
+    if "charge" in Crossfire.ScriptParameters():
+        charge(item, player)
     else:
-        player.Message("The %s glows with a dark black aura." % item.Name)
-    item.Level += n
+        improve(item, player)
     scroll = Crossfire.WhoAmI()
     scroll.Identified = True
     player.Message("The %s crumbles to dust." % scroll.Name)

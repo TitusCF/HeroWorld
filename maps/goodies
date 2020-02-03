@@ -3,7 +3,7 @@ name <unnamed>
 width 40
 height 40
 msg
-Modified: 2020-02-02 Acer
+Modified: 2020-02-03 Acer
 endmsg
 end
 arch afloor_blue_left
@@ -5150,18 +5150,6 @@ arch afloor_blue_left
 x 21
 y 13
 end
-arch scroll_new
-face nukebomb.111
-x 21
-y 13
-level 100
-identified 1
-arch spell_nukecrater
-other_arch nukeexplosion
-dam 10000
-range 50
-end
-end
 arch afloor_blue_left
 x 21
 y 14
@@ -5885,6 +5873,17 @@ arch afloor_blue_left
 x 25
 y 16
 end
+arch scroll
+x 25
+y 16
+identified 1
+identified_name Scroll of Leveling Wand
+identified_name_pl Scrolls of Leveling Wand
+arch event_apply
+title Python
+slaying /python/items/wand_improvement_scroll.py
+end
+end
 arch afloor_blue_left
 x 25
 y 17
@@ -6083,6 +6082,18 @@ end
 arch afloor_blue_left
 x 26
 y 16
+end
+arch scroll
+x 26
+y 16
+identified 1
+identified_name Scroll of Wand Overcharging
+identified_name_pl Scrolls of Wand Overcharging
+arch event_apply
+name charge
+title Python
+slaying /python/items/wand_improvement_scroll.py
+end
 end
 arch afloor_blue_left
 x 26

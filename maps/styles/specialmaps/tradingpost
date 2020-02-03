@@ -6,7 +6,7 @@ msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Jan 18 15:47:50 1999
-Modified: 2019-04-09 Acer
+Modified: 2020-02-03 Acer
 endmsg
 end
 arch battleground
@@ -59,11 +59,9 @@ arch scroll_new
 name Sleeping Beholder
 face beholder.151
 level 20
-arch spell_summon_air_elemental
-name summon beholder
-msg
-endmsg
+arch spell_summon_pet_monster
 other_arch beholder
+randomitems none
 end
 end
 end

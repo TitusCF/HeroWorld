@@ -4328,6 +4328,20 @@ arch afloor_blue_left
 x 17
 y 12
 end
+arch figurine_generic
+name statue
+face d_statue.111
+x 17
+y 12
+level 20
+no_pick 1
+on_use_yield rubble
+race_restriction dwarf_player
+arch spell_summon_pet_monster
+other_arch dwarf
+randomitems none
+end
+end
 arch afloor_blue_left
 x 17
 y 13
@@ -5152,7 +5166,7 @@ face d_statue.111
 x 21
 y 12
 level 20
-race_restriction dwarf
+race_restriction dwarf_player
 arch spell_summon_devil
 other_arch dwarf
 end

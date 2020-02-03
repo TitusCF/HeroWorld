@@ -5876,6 +5876,7 @@ end
 arch scroll
 x 25
 y 16
+value 3000
 identified 1
 identified_name Scroll of Leveling Wand
 identified_name_pl Scrolls of Leveling Wand
@@ -6086,6 +6087,7 @@ end
 arch scroll
 x 26
 y 16
+value 3000
 identified 1
 identified_name Scroll of Wand Overcharging
 identified_name_pl Scrolls of Wand Overcharging
@@ -6384,7 +6386,7 @@ x 28
 y 5
 end
 arch bones2
-name Spiteful Skull
+name Overcharge Skull
 msg
 This skull seems to snear at you in disgust...
 endmsg
@@ -6393,8 +6395,9 @@ x 28
 y 5
 body_arm 0
 arch event_apply
-title buildsale
-slaying python/misc/buildsale.py
+name charge
+title Python
+slaying /python/items/wand_improvement_scroll.py
 end
 end
 arch afloor_blue_left

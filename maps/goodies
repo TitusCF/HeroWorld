@@ -5198,6 +5198,17 @@ arch afloor_blue_left
 x 21
 y 16
 end
+arch arrow
+name Arrow of Petrify
+name_pl Arrows of Petrify
+x 21
+y 16
+nrof 5
+arch event_attacks
+title Python
+slaying python/arrows/firebombarrow.py
+end
+end
 arch afloor_blue_left
 x 21
 y 17
@@ -6304,12 +6315,6 @@ generator_max_map 2
 arch event_attack
 title Pyhon
 slaying python/misc/swallow_whole.py
-end
-arch purple_worm
-arch event_attack
-title Python
-slaying python/misc/swallow_whole.py
-end
 end
 end
 arch afloor_blue_left

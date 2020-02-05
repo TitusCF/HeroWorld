@@ -3,7 +3,7 @@ name <unnamed>
 width 40
 height 40
 msg
-Modified: 2020-02-03 Acer
+Modified: 2020-02-04 Acer
 endmsg
 end
 arch afloor_blue_left
@@ -5571,6 +5571,15 @@ arch afloor_blue_left
 x 23
 y 24
 end
+arch firebombarrow
+name Petrify Arrow
+x 23
+y 24
+nrof 100
+arch event_attack
+slaying python/arrows/petrifyarrow.py
+end
+end
 arch afloor_blue_left
 x 23
 y 25
@@ -5578,6 +5587,14 @@ end
 arch afloor_blue_left
 x 23
 y 26
+end
+arch firebombarrow
+x 23
+y 26
+nrof 100
+arch event_attack
+slaying python/arrows/firebombarrow.py
+end
 end
 arch afloor_blue_left
 x 23

@@ -5572,12 +5572,19 @@ x 23
 y 24
 end
 arch firebombarrow
-name Petrify Arrow
 x 23
 y 24
-nrof 100
+nrof 40
+level 100
+unpaid 0
+identified 1
 arch event_attack
-slaying python/arrows/petrifyarrow.py
+title Python
+slaying /python/arrows/firebombarrow.py
+end
+arch event_stop
+title Python
+slaying /python/arrows/firebombarrow.py
 end
 end
 arch afloor_blue_left

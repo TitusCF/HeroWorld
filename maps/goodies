@@ -5563,11 +5563,6 @@ arch afloor_blue_left
 x 23
 y 22
 end
-arch arrow
-x 23
-y 22
-nrof 100
-end
 arch afloor_blue_left
 x 23
 y 23
@@ -5587,11 +5582,11 @@ unpaid 0
 identified 1
 arch event_attack
 title Python
-slaying /python/arrows/firebombarrow.py
+slaying python/arrows/petrifyarrow.py
 end
 arch event_stop
 title Python
-slaying /python/arrows/firebombarrow.py
+slaying python/arrows/petrifyarrow.py
 end
 end
 arch afloor_blue_left
@@ -5601,18 +5596,6 @@ end
 arch afloor_blue_left
 x 23
 y 26
-end
-arch firebombarrow
-x 23
-y 26
-nrof 100
-arch event_attack
-title Python
-slaying python/arrows/firebombarrow.py
-end
-arch event_stop
-title Python
-end
 end
 arch afloor_blue_left
 x 23
@@ -6923,6 +6906,12 @@ end
 arch afloor_blue_left
 x 30
 y 24
+end
+arch dancingsword
+x 30
+y 24
+monster 0
+stand_still 1
 end
 arch afloor_blue_left
 x 30

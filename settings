@@ -87,7 +87,7 @@ item_power_factor 1.0
 # if you prefer)
 # who_wiz_format is the same but for those with dm powers
 
-who_format %N %tLevel %l%h%d%a%b%n%r
+who_format %N %t Level %l%h%d%a%b%n
 who_wiz_format %N %t%h%d%a%b%nLevel %l <%m>(@%i)(%c)
 
 # See notes for most of these in include/config.h
@@ -342,3 +342,10 @@ account_block_create FALSE
 # When account_block_create is enabled, only the IP address given here
 # can create accounts. If not defined, defaults to 127.0.0.1.
 account_trusted_host 127.0.0.1
+
+# How to use crypt(3) to hash passwords. 0 (default if left unset) is legacy
+# mode, which uses crypt(3) on all systems but Windows and FreeBSD, where no
+# hashing is used. 1 (set as the default for new installations) is to always
+# use crypt(3). If crypt_mode is changed after player or account files are
+# created, some or all passwords may need to be reset.
+crypt_mode 1

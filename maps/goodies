@@ -4786,14 +4786,11 @@ y 19
 connected 23467
 lifesave 1
 activate_on_release 0
-arch chest_blue
-name stones (apply to lay destruction barrier)
-face rock2.111
-randomitems none
-arch awall_0
-name Foundation Wall
-weight 50000
-no_pick 0
+arch t_rock
+name strange rock
+arch event_attacks
+title Python
+slaying python/misc/stoned.py
 end
 end
 end
@@ -6302,18 +6299,6 @@ arch afloor_blue_left
 x 27
 y 12
 end
-arch purple_worm
-x 27
-y 12
-attacktype 1
-can_cast_spell 0
-sleep 0
-stand_still 1
-arch event_attack
-title Pyhon
-slaying python/misc/swallow_whole.py
-end
-end
 arch afloor_blue_left
 x 27
 y 13
@@ -6943,12 +6928,6 @@ end
 arch afloor_blue_left
 x 30
 y 26
-end
-arch goblin
-x 30
-y 26
-sleep 0
-stand_still 1
 end
 arch afloor_blue_left
 x 30

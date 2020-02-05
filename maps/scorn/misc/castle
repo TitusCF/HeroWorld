@@ -6,7 +6,7 @@ msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Apr 27 03:35:20 1997
-Modified: 2020-01-28 Acer
+Modified: 2020-02-04 Acer
 endmsg
 end
 arch grass
@@ -1665,76 +1665,72 @@ arch cobblestones2
 x 11
 y 15
 end
-arch check_inv
-slaying Noble Rank Prince
+arch check_floor
+hp 1
 x 11
 y 15
-connected 25
-move_off -all
+arch event_trigger
+name scorn/Aristocracy 90 25
+title Python
+slaying python/quests/QuestTriggerConnect.py
 end
-arch check_inv
-slaying Noble Rank Marquis
-x 11
-y 15
-connected 23
-move_off -all
 end
-arch check_inv
-slaying Noble Rank Earl
+arch check_floor
+hp 1
 x 11
 y 15
-connected 23
-move_off -all
+arch event_trigger
+name scorn/Aristocracy 40-80 23
+title Python
+slaying python/quests/QuestTriggerConnect.py
 end
-arch check_inv
-slaying Noble Rank Count
-x 11
-y 15
-connected 23
-move_off -all
 end
-arch check_inv
-slaying Noble Rank Duke
+arch check_floor
+hp 1
 x 11
 y 15
-connected 23
-move_off -all
+arch event_trigger
+title Python
+slaying python/maps/scorn/castle_write.py
 end
-arch check_inv
-slaying Noble Rank Archduke
-x 11
-y 15
-connected 23
-move_off -all
 end
 arch cobblestones2
 x 11
 y 16
 end
-arch check_inv
-slaying Noble Rank Baron
+arch check_floor
+hp 1
 x 11
 y 16
-connected 22
-move_off -all
+arch event_trigger
+name scorn/Aristocracy 30 22
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
 end
 arch cobblestones2
 x 11
 y 17
 end
-arch check_inv
-slaying Noble Rank Baronet
+arch check_floor
+hp 1
 x 11
 y 17
-connected 21
-move_off -all
+arch event_trigger
+name scorn/Aristocracy 20 21
+title Python
+slaying python/quests/QuestTriggerConnect.py
 end
-arch check_inv
-slaying Noble Rank Knight
+end
+arch check_floor
+hp 1
 x 11
 y 17
-connected 20
-move_off -all
+arch event_trigger
+name scorn/Aristocracy 10 20
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
 end
 arch cobblestones2
 x 11
@@ -1911,76 +1907,72 @@ arch cobblestones2
 x 12
 y 15
 end
-arch check_inv
-slaying Noble Rank Prince
+arch check_floor
+hp 1
 x 12
 y 15
-connected 25
-move_off -all
+arch event_trigger
+name scorn/Aristocracy 90 25
+title Python
+slaying python/quests/QuestTriggerConnect.py
 end
-arch check_inv
-slaying Noble Rank Marquis
-x 12
-y 15
-connected 23
-move_off -all
 end
-arch check_inv
-slaying Noble Rank Earl
+arch check_floor
+hp 1
 x 12
 y 15
-connected 23
-move_off -all
+arch event_trigger
+name scorn/Aristocracy 40-80 23
+title Python
+slaying python/quests/QuestTriggerConnect.py
 end
-arch check_inv
-slaying Noble Rank Count
-x 12
-y 15
-connected 23
-move_off -all
 end
-arch check_inv
-slaying Noble Rank Duke
+arch check_floor
+hp 1
 x 12
 y 15
-connected 23
-move_off -all
+arch event_trigger
+title Python
+slaying python/maps/scorn/castle_write.py
 end
-arch check_inv
-slaying Noble Rank Archduke
-x 12
-y 15
-connected 23
-move_off -all
 end
 arch cobblestones2
 x 12
 y 16
 end
-arch check_inv
-slaying Noble Rank Baron
+arch check_floor
+hp 1
 x 12
 y 16
-connected 22
-move_off -all
+arch event_trigger
+name scorn/Aristocracy 30 22
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
 end
 arch cobblestones2
 x 12
 y 17
 end
-arch check_inv
-slaying Noble Rank Baronet
+arch check_floor
+hp 1
 x 12
 y 17
-connected 21
-move_off -all
+arch event_trigger
+name scorn/Aristocracy 10 20
+title Python
+slaying python/quests/QuestTriggerConnect.py
 end
-arch check_inv
-slaying Noble Rank Knight
+end
+arch check_floor
+hp 1
 x 12
 y 17
-connected 20
-move_off -all
+arch event_trigger
+name scorn/Aristocracy 20 21
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
 end
 arch cobblestones2
 x 12
@@ -2098,6 +2090,13 @@ end
 arch cobblestones2
 x 13
 y 14
+end
+arch sage
+name castle scribe
+x 13
+y 14
+type 0
+stand_still 1
 end
 arch magic_mouth
 msg

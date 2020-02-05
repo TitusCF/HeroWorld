@@ -4439,6 +4439,10 @@ end
 arch turningboat
 x 17
 y 20
+arch event_apply
+title Python
+slaying python/items/roll-o-matic.py
+end
 end
 arch afloor_blue_left
 x 17
@@ -5444,19 +5448,6 @@ end
 arch afloor_blue_left
 x 22
 y 21
-end
-arch wagon
-x 22
-y 21
-speed 0.5
-type 2
-container 10000000
-move_allow walk
-passenger_limit 4
-arch event_apply
-title Python
-slaying python/items/roll-o-matic.py
-end
 end
 arch afloor_blue_left
 x 22

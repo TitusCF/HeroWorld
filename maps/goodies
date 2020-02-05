@@ -5571,24 +5571,6 @@ arch afloor_blue_left
 x 23
 y 24
 end
-arch firebombarrow
-face arrow.101
-animation arrow
-x 23
-y 24
-nrof 40
-level 100
-unpaid 0
-identified 1
-arch event_attack
-title Python
-slaying python/arrows/petrifyarrow.py
-end
-arch event_stop
-title Python
-slaying python/arrows/petrifyarrow.py
-end
-end
 arch afloor_blue_left
 x 23
 y 25
@@ -5602,7 +5584,7 @@ x 23
 y 26
 arch event_attack
 title Python
-slaying python/arrows/petrifyarrow.py
+slaying python/misc/stoned.py
 end
 end
 arch afloor_blue_left
@@ -6918,7 +6900,6 @@ end
 arch dancingsword
 x 30
 y 24
-monster 0
 stand_still 1
 end
 arch afloor_blue_left
@@ -6928,6 +6909,12 @@ end
 arch afloor_blue_left
 x 30
 y 26
+end
+arch goblin
+x 30
+y 26
+sleep 0
+stand_still 1
 end
 arch afloor_blue_left
 x 30

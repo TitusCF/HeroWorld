@@ -5621,6 +5621,25 @@ arch afloor_blue_left
 x 23
 y 19
 end
+arch magic_banned
+x 23
+y 19
+end
+arch dragon_exit
+x 23
+y 19
+speed 0.7
+type 2
+container 10000000
+move_type walk swim boat
+move_allow walk
+unique 1
+passenger_limit 4
+arch event_user
+title Python
+slaying python/items/roll-o-matic.py
+end
+end
 arch afloor_blue_left
 x 23
 y 20

@@ -4436,6 +4436,10 @@ arch afloor_blue_left
 x 17
 y 20
 end
+arch turningboat
+x 17
+y 20
+end
 arch afloor_blue_left
 x 17
 y 21
@@ -5037,15 +5041,6 @@ arch afloor_blue_left
 x 20
 y 18
 end
-arch ring
-x 20
-y 18
-identified 1
-arch event_apply
-title Plugin
-slaying python/items/ring_occidental_mages.py
-end
-end
 arch afloor_blue_left
 x 20
 y 19
@@ -5449,6 +5444,19 @@ end
 arch afloor_blue_left
 x 22
 y 21
+end
+arch wagon
+x 22
+y 21
+speed 0.5
+type 2
+container 10000000
+move_allow walk
+passenger_limit 4
+arch event_apply
+title Python
+slaying python/items/roll-o-matic.py
+end
 end
 arch afloor_blue_left
 x 22

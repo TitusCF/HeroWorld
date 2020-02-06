@@ -11,7 +11,7 @@ msg
 Creator: Marc Lehmann
 Email: schmorp@schmorp.de
 Date: Mon Dec  8 22:11:34 CET 2008
-Modified: 2020-02-05 Acer
+Modified: 2020-02-06 Acer
 endmsg
 end
 arch grass
@@ -833,6 +833,13 @@ end
 arch warrior_class
 msg
 endmsg
+Str 0
+Dex 0
+Con 0
+Wis 0
+Pow 0'
+Cha 0
+Int 0
 x 8
 y 7
 end
@@ -849,6 +856,13 @@ y 8
 arch warrior_class
 msg
 endmsg
+Str 0
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Cha 0
+Int 0
 randomitems none
 end
 end
@@ -1061,6 +1075,13 @@ sp 12
 x 10
 y 8
 arch barbarian_class
+Str 0
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Cha 0
+Int 0
 randomitems none
 end
 end
@@ -1277,6 +1298,13 @@ sp 12
 x 12
 y 8
 arch swashbuckler_class
+Str 0
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Cha 0
+Int 0
 randomitems none
 end
 end
@@ -1500,6 +1528,12 @@ sp 12
 x 14
 y 8
 arch ninja_class
+Str 0
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Cha 0
 randomitems none
 end
 end
@@ -1719,6 +1753,12 @@ sp 12
 x 16
 y 8
 arch thief_class
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Cha 0
+Int 0
 randomitems none
 end
 end
@@ -1938,6 +1978,12 @@ sp 12
 x 18
 y 8
 arch priest_class
+Str 0
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Cha 0
 randomitems none
 end
 end
@@ -2161,6 +2207,11 @@ sp 12
 x 20
 y 8
 arch paladin_class
+Dex 0
+Wis 0
+Pow 0
+Cha 0
+Int 0
 randomitems none
 end
 end
@@ -2386,6 +2437,13 @@ sp 12
 x 22
 y 8
 arch monk_class
+Str 0
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Cha 0
+Int 0
 randomitems none
 end
 end
@@ -2602,6 +2660,11 @@ sp 12
 x 24
 y 8
 arch devotee_class
+Str 0
+Con 0
+Wis 0
+Pow 0
+Cha 0
 randomitems none
 end
 end
@@ -2832,6 +2895,12 @@ sp 12
 x 26
 y 8
 arch warlock_class
+Str 0
+Dex 0
+Con 0
+Wis 0
+Pow 0
+Cha 0
 randomitems none
 end
 end
@@ -3048,6 +3117,10 @@ sp 12
 x 28
 y 8
 arch evoker_class
+Str 0
+Con 0
+Pow 0
+Cha 0
 randomitems none
 end
 end
@@ -3266,6 +3339,10 @@ sp 12
 x 30
 y 8
 arch wizard_class
+Str 0
+Con 0
+Pow 0
+Int 0
 randomitems none
 end
 end
@@ -3486,6 +3563,11 @@ sp 12
 x 32
 y 8
 arch alchemist_class
+Str 0
+Con 0
+Pow 0
+Cha 0
+Int 0
 randomitems none
 end
 end
@@ -3898,36 +3980,21 @@ arch grass
 x 36
 y 4
 end
-arch dungeon_floor
+arch grass
 x 36
 y 5
 end
-arch dungeon_floor
+arch grass
 x 36
 y 6
 end
-arch dungeon_floor
+arch grass
 x 36
 y 7
 end
-arch summoner_class
-face wizard_yellow.151
-x 36
-y 7
-end
-arch dungeon_floor
+arch grass
 x 36
 y 8
-end
-arch player_changer
-slaying /start/tutorial_class
-hp 43
-sp 12
-x 36
-y 8
-arch summoner_class
-randomitems none
-end
 end
 arch grass
 x 36
@@ -4023,11 +4090,11 @@ arch grass
 x 37
 y 4
 end
-arch dungeon_floor
+arch grass
 x 37
 y 5
 end
-arch dungeon_floor
+arch grass
 x 37
 y 6
 end
@@ -4106,11 +4173,11 @@ arch grass
 x 38
 y 4
 end
-arch dungeon_floor
+arch grass
 x 38
 y 5
 end
-arch dungeon_floor
+arch grass
 x 38
 y 6
 end
@@ -4188,11 +4255,11 @@ arch grass
 x 39
 y 4
 end
-arch dungeon_floor
+arch grass
 x 39
 y 5
 end
-arch dungeon_floor
+arch grass
 x 39
 y 6
 end
@@ -4268,11 +4335,11 @@ arch grass_only
 x 40
 y 4
 end
-arch dungeon_floor
+arch grass
 x 40
 y 5
 end
-arch dungeon_floor
+arch grass
 x 40
 y 6
 end
@@ -4342,11 +4409,11 @@ arch grass
 x 41
 y 4
 end
-arch dungeon_floor
+arch grass
 x 41
 y 5
 end
-arch dungeon_floor
+arch grass
 x 41
 y 6
 end
@@ -4374,11 +4441,11 @@ arch grass
 x 41
 y 11
 end
-arch dungeon_floor
+arch grass
 x 41
 y 12
 end
-arch dungeon_floor
+arch footpath_1_3
 x 41
 y 13
 end
@@ -4424,23 +4491,23 @@ arch grass
 x 42
 y 4
 end
-arch dungeon_floor
+arch grass
 x 42
 y 5
 end
-arch dungeon_floor
+arch grass
 x 42
 y 6
 end
-arch dungeon_floor
+arch grass
 x 42
 y 7
 end
-arch dungeon_floor
+arch grass
 x 42
 y 8
 end
-arch dungeon_floor
+arch grass
 x 42
 y 9
 end
@@ -4448,19 +4515,19 @@ arch swall_2_1_2
 x 42
 y 9
 end
-arch dungeon_floor
+arch grass
 x 42
 y 10
 end
-arch dungeon_floor
+arch grass
 x 42
 y 11
 end
-arch dungeon_floor
+arch grass
 x 42
 y 12
 end
-arch dungeon_floor
+arch grass
 x 42
 y 13
 end
@@ -4498,23 +4565,23 @@ arch grass_only
 x 43
 y 4
 end
-arch dungeon_floor
+arch grass
 x 43
 y 5
 end
-arch dungeon_floor
+arch grass
 x 43
 y 6
 end
-arch dungeon_floor
+arch grass
 x 43
 y 7
 end
-arch dungeon_floor
+arch grass
 x 43
 y 8
 end
-arch dungeon_floor
+arch grass
 x 43
 y 9
 end
@@ -4522,19 +4589,19 @@ arch swall_2_1_2
 x 43
 y 9
 end
-arch dungeon_floor
+arch grass
 x 43
 y 10
 end
-arch dungeon_floor
+arch grass
 x 43
 y 11
 end
-arch dungeon_floor
+arch grass
 x 43
 y 12
 end
-arch dungeon_floor
+arch grass
 x 43
 y 13
 end
@@ -4604,11 +4671,11 @@ arch grass
 x 44
 y 11
 end
-arch dungeon_floor
+arch grass
 x 44
 y 12
 end
-arch dungeon_floor
+arch grass
 x 44
 y 13
 end

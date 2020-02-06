@@ -7,7 +7,7 @@ enter_x 29
 enter_y 3
 msg
 Created:  2005-09-26 Gene Alexander
-Modified: 2012-01-27 Rick Tanner
+Modified: 2020-02-05 Acer
 endmsg
 outdoor 1
 end
@@ -17323,10 +17323,14 @@ Str 20
 x 29
 y 9
 container 100000
-no_pick 1
+no_pick 0
 arch claypipe
 name Zorn's pipe
 name_pl Zorn's pipes
+arch event_apply
+title Python
+slaying python/items/smoking_pipe.py
+end
 end
 arch pouch
 name Tobacco pouch
@@ -26138,6 +26142,9 @@ name Stuffed fiend
 face fiend.111
 x 42
 y 38
+weight 10000
+move_block walk swim boat
+no_pick 0
 end
 arch tile_floor
 x 42
@@ -26156,6 +26163,9 @@ name Stuffed small troll
 face smalltroll.111
 x 42
 y 40
+weight 10000
+move_block walk swim boat
+no_pick 0
 end
 arch tile_white_floor
 x 42
@@ -26174,6 +26184,9 @@ name Stuffed wolf
 face wolf.171
 x 42
 y 42
+weight 10000
+move_block walk swim boat
+no_pick 0
 end
 arch tile_floor
 x 42
@@ -26192,6 +26205,9 @@ name Stuffed panther
 face panther.131
 x 42
 y 44
+weight 10000
+move_block walk swim boat
+no_pick 0
 end
 arch tile_white_floor
 x 42
@@ -26210,6 +26226,9 @@ name Stuffed hellhound
 face hellhound.131
 x 42
 y 46
+weight 10000
+move_block walk swim boat
+no_pick 0
 end
 arch tile_floor
 x 42
@@ -26707,6 +26726,9 @@ name Stuffed raas
 face raas.131
 x 43
 y 38
+weight 10000
+move_block walk swim boat
+no_pick 0
 end
 arch tile_floor
 x 43
@@ -26725,6 +26747,9 @@ name Stuffed beholder
 face beholder.111
 x 43
 y 40
+weight 10000
+move_block walk swim boat
+no_pick 0
 end
 arch tile_white_floor
 x 43
@@ -26743,6 +26768,9 @@ name Stuffed dire wolf
 face dwolf.171
 x 43
 y 42
+weight 10000
+move_block walk swim boat
+no_pick 0
 end
 arch tile_floor
 x 43
@@ -26761,6 +26789,9 @@ name Stuffed baby dragon
 face baby_drag.111
 x 43
 y 44
+weight 10000
+move_block walk swim boat
+no_pick 0
 end
 arch tile_white_floor
 x 43
@@ -26779,6 +26810,9 @@ name Stuffed lokanth
 face lokanth.131
 x 43
 y 46
+weight 10000
+move_block walk swim boat
+no_pick 0
 end
 arch tile_floor
 x 43

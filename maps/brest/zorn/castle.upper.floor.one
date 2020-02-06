@@ -8,7 +8,7 @@ enter_x 29
 enter_y 3
 msg
 Created:  2006-08-12 Gene Alexander
-Modified: 2012-01-27 Rick Tanner
+Modified: 2020-02-05 Acer
 endmsg
 outdoor 1
 end
@@ -13121,12 +13121,12 @@ resist_chaos 50
 resist_blind 50
 path_attuned 4
 unaggressive 0
+can_use_range 1
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
 stand_still 0
 can_use_skill 1
-can_use_range 1
 arch shadow
 name Attendant shadow
 sp 100
@@ -13524,12 +13524,12 @@ resist_chaos 50
 resist_blind 50
 path_attuned 4
 unaggressive 0
+can_use_range 1
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
 stand_still 0
 can_use_skill 1
-can_use_range 1
 arch shadow
 name Attendant shadow
 sp 100
@@ -14557,12 +14557,12 @@ resist_chaos 50
 resist_blind 50
 path_attuned 4
 unaggressive 0
+can_use_range 1
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
 stand_still 0
 can_use_skill 1
-can_use_range 1
 arch shadow
 name Attendant shadow
 sp 100
@@ -20053,12 +20053,12 @@ resist_chaos 50
 resist_blind 50
 path_attuned 4
 unaggressive 0
+can_use_range 1
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
 stand_still 0
 can_use_skill 1
-can_use_range 1
 arch shadow
 name Attendant shadow
 sp 100
@@ -21386,12 +21386,12 @@ resist_chaos 50
 resist_blind 50
 path_attuned 4
 unaggressive 0
+can_use_range 1
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
 stand_still 0
 can_use_skill 1
-can_use_range 1
 arch shadow
 name Attendant shadow
 sp 100
@@ -21789,12 +21789,12 @@ resist_chaos 50
 resist_blind 50
 path_attuned 4
 unaggressive 0
+can_use_range 1
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
 stand_still 0
 can_use_skill 1
-can_use_range 1
 arch shadow
 name Attendant shadow
 sp 100
@@ -28581,8 +28581,8 @@ path_attuned 4
 randomitems pyro_book_high
 see_invisible 1
 run_away 5
-can_use_skill 1
 can_use_range 1
+can_use_skill 1
 arch skill_karate
 end
 arch skill_missile_weapon
@@ -30897,12 +30897,14 @@ x 47
 y 46
 end
 arch rod_heavy
-name Missile Swarm
-name_pl Missile Swarms
-maxhp 100
+name Horn of Missile Swarm
+name_pl Horns of Missile Swarms
+face u_horn.111
+animation u_horn
+maxhp 25
 x 47
 y 46
-level 75
+level 10
 value 70000
 weight 20000
 randomitems none

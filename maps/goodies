@@ -3,7 +3,7 @@ name <unnamed>
 width 40
 height 40
 msg
-Modified: 2020-02-05 Acer
+Modified: 2020-02-06 Acer
 endmsg
 end
 arch afloor_blue_left
@@ -5409,6 +5409,10 @@ arch afloor_blue_left
 x 22
 y 11
 end
+arch thundar_bolt
+x 22
+y 11
+end
 arch afloor_blue_left
 x 22
 y 12
@@ -6189,6 +6193,24 @@ end
 arch afloor_blue_left
 x 26
 y 12
+end
+arch figurine_generic
+name Thundar Bolts
+face thunder_bolt.101
+x 26
+y 12
+arch spell_summon_pet_monster
+arch bird
+name magic bolt
+face thunder_bolt.111
+animation thundar_bolt
+dam 100
+wc -10
+friendly 1
+is_turnable 1
+sleep 0
+end
+end
 end
 arch afloor_blue_left
 x 26

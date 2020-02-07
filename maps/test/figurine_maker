@@ -7,78 +7,185 @@ Created:  2020-02-06 Acer
 Modified: 2020-02-07 Acer
 endmsg
 end
-arch afloor_black_left
+arch goldfloor
+name Breeder Ant
+slaying breeder_ant_stoned
+food 1
+connected 19
+activate_on_release 0
 end
-arch mover_3
+arch button_small
+connected 1018
 end
-arch afloor_black_left
-y 1
-end
-arch mover_1
-y 1
-end
-arch afloor_black_left
-y 2
-end
-arch mover_1
-y 2
-end
-arch afloor_black_left
-y 3
-end
-arch mover_1
-y 3
-end
-arch afloor_black_left
-y 4
-end
-arch mover_1
-y 4
-end
-arch afloor_black_left
-y 5
-end
-arch mover_1
-y 5
-end
-arch afloor_black_left
-y 6
-end
-arch mover_1
-y 6
-end
-arch afloor_black_left
-y 7
-end
-arch mover_1
-y 7
-end
-arch afloor_black_left
-y 8
-end
-arch mover_1
-y 8
-end
-arch afloor_black_left
-y 9
-end
-arch mover_1
-y 9
-end
-arch check_inv
-race dancingsword_stoned
-y 9
-last_heal 1
-connected 27
-end
-arch afloor_black_left
-y 10
-end
-arch mover_1
-y 10
+arch grate_open_1
+connected 1018
 end
 arch goldfloor
+name Bird
+slaying bird_stoned
+food 1
+y 1
+connected 18
+end
+arch button_small
+y 1
+connected 1017
+end
+arch grate_open_1
+y 1
+connected 1017
+end
+arch goldfloor
+name Big Electric Dragon
+slaying big_elec
+food 1
+y 2
+connected 17
+activate_on_release 0
+end
+arch button_small
+y 2
+connected 1016
+end
+arch grate_open_1
+y 2
+connected 1016
+end
+arch goldfloor
+name Big Ancient Dragon
+slaying big_dragon_ancient_stoned
+food 1
+y 3
+connected 16
+activate_on_release 0
+end
+arch button_small
+y 3
+connected 1015
+end
+arch grate_open_1
+y 3
+connected 1015
+end
+arch goldfloor
+name Big Dragon
+slaying big_dragon_stoned
+food 1
+y 4
+connected 15
+activate_on_release 0
+end
+arch button_small
+y 4
+connected 1014
+end
+arch grate_open_1
+y 4
+connected 1014
+end
+arch goldfloor
+name Beholder Leader
+slaying beholder_leader_arc_stoned
+food 1
+y 5
+connected 14
+activate_on_release 0
+end
+arch button_small
+y 5
+connected 1013
+end
+arch grate_open_1
+y 5
+connected 1013
+end
+arch goldfloor
+name Beholder
+slaying beholder_stoned
+food 1
+y 6
+connected 13
+activate_on_release 0
+end
+arch button_small
+y 6
+connected 1012
+end
+arch grate_open_1
+y 6
+connected 1012
+end
+arch goldfloor
+name Behemoth
+slaying behemoth
+food 1
+y 7
+connected 12
+activate_on_release 0
+end
+arch button_small
+y 7
+connected 1011
+end
+arch grate_open_1
+y 7
+connected 1011
+end
+arch goldfloor
+name Bee
+slaying bee_stoned
+food 1
+y 8
+connected 11
+activate_on_release 0
+end
+arch button_small
+y 8
+connected 1010
+end
+arch grate_open_1
+y 8
+connected 1010
+end
+arch goldfloor
+name Bear
+slaying bear_stoned
+food 1
+y 9
+connected 10
+activate_on_release 0
+end
+arch button_small
+y 9
+connected 1009
+end
+arch grate_open_1
+y 9
+connected 1009
+end
+arch goldfloor
+name Bat
+slaying bat_stoned
+food 1
+y 10
+connected 9
+activate_on_release 0
+end
+arch button_small
+y 10
+connected 1008
+end
+arch grate_open_1
+y 10
+connected 1008
+end
+arch goldfloor
+name Banshee
+slaying banshee_stoned
+food 1
 y 11
+connected 8
+activate_on_release 0
 end
 arch button_small
 y 11
@@ -89,7 +196,12 @@ y 11
 connected 1007
 end
 arch goldfloor
+name Baby Dragon
+slaying baby_dragon_stoned
+food 1
 y 12
+connected 7
+activate_on_release 0
 end
 arch button_small
 y 12
@@ -100,7 +212,12 @@ y 12
 connected 1006
 end
 arch goldfloor
+name Archon
+slaying archon_stoned
+food 1
 y 13
+connected 6
+activate_on_release 0
 end
 arch button_small
 y 13
@@ -111,11 +228,11 @@ y 13
 connected 1005
 end
 arch goldfloor
-name Dancing Sword
-slaying dancingsword_stoned
+name Ape
+slaying ape_stoned
 food 1
 y 14
-connected 27
+connected 5
 activate_on_release 0
 end
 arch button_small
@@ -127,7 +244,12 @@ y 14
 connected 1004
 end
 arch goldfloor
+name Ant Stoned
+slaying ant_stoned
+food 1
 y 15
+connected 4
+activate_on_release 0
 end
 arch button_small
 y 15
@@ -138,7 +260,12 @@ y 15
 connected 1003
 end
 arch goldfloor
+name Ant Larvae Stoned
+slaying ant_larvae_stoned
+food 1
 y 16
+connected 3
+activate_on_release 0
 end
 arch button_small
 y 16
@@ -149,7 +276,12 @@ y 16
 connected 1002
 end
 arch goldfloor
+name Ant Egg Stoned
+slaying ant_egg_stoned
+food 1
 y 17
+connected 2
+activate_on_release 0
 end
 arch button_small
 y 17
@@ -160,7 +292,12 @@ y 17
 connected 1001
 end
 arch goldfloor
+name Air Witch
+slaying air_witch_stoned
+food 1
 y 18
+connected 1
+activate_on_release 0
 end
 arch button_small
 y 18
@@ -173,14 +310,29 @@ end
 arch afloor_black_left
 y 19
 end
-arch awall_2_1_2
+arch button_small
 y 19
+connected 99
 end
-arch afloor_black_left
-x 1
+arch grate_open_1
+y 19
+connected 99
 end
-arch mover_3
+arch goldfloor
+name Centipede
+slaying centipede_stoned
+food 1
 x 1
+connected 20
+activate_on_release 0
+end
+arch button_small
+x 1
+connected 1019
+end
+arch grate_open_1
+x 1
+connected 1019
 end
 arch afloor_blue_left
 x 1
@@ -210,7 +362,7 @@ arch afloor_blue_left
 x 1
 y 4
 end
-arch swall_3_2
+arch awall_win1
 x 1
 y 4
 end
@@ -234,7 +386,7 @@ arch afloor_blue_left
 x 1
 y 7
 end
-arch swall_3_2
+arch awall_win1
 x 1
 y 7
 end
@@ -258,7 +410,7 @@ arch afloor_blue_left
 x 1
 y 10
 end
-arch swall_2_1_1
+arch awall_win1
 x 1
 y 10
 end
@@ -282,7 +434,7 @@ arch afloor_blue_left
 x 1
 y 13
 end
-arch swall_3_2
+arch awall_win1
 x 1
 y 13
 end
@@ -306,7 +458,7 @@ arch afloor_blue_left
 x 1
 y 16
 end
-arch swall_3_2
+arch awall_win1
 x 1
 y 16
 end
@@ -330,15 +482,25 @@ arch afloor_blue_left
 x 1
 y 19
 end
-arch awall_3_1
+arch awall_2_2_1
 x 1
 y 19
 end
-arch afloor_black_left
+arch goldfloor
+name Chaos Witch
+slaying chaos_witch_stoned
+food 1
 x 2
+connected 21
+activate_on_release 0
 end
-arch mover_3
+arch button_small
 x 2
+connected 1020
+end
+arch grate_open_1
+x 2
+connected 1020
 end
 arch afloor_blue_left
 x 2
@@ -360,10 +522,6 @@ arch afloor_magenta_left
 x 2
 y 4
 end
-arch swall_2_1_2
-x 2
-y 4
-end
 arch afloor_magenta_left
 x 2
 y 5
@@ -373,10 +531,6 @@ x 2
 y 6
 end
 arch afloor_magenta_left
-x 2
-y 7
-end
-arch swall_2_1_2
 x 2
 y 7
 end
@@ -404,10 +558,6 @@ arch afloor_magenta_left
 x 2
 y 13
 end
-arch swall_2_1_2
-x 2
-y 13
-end
 arch afloor_magenta_left
 x 2
 y 14
@@ -417,10 +567,6 @@ x 2
 y 15
 end
 arch afloor_magenta_left
-x 2
-y 16
-end
-arch swall_2_1_2
 x 2
 y 16
 end
@@ -440,11 +586,21 @@ arch awall_2_1_2
 x 2
 y 19
 end
-arch afloor_black_left
+arch goldfloor
+name Chicken
+slaying chicken_stoned
+food 1
 x 3
+connected 22
+activate_on_release 0
 end
-arch mover_3
+arch button_small
 x 3
+connected 1021
+end
+arch grate_open_1
+x 3
+connected 1021
 end
 arch afloor_blue_left
 x 3
@@ -466,10 +622,6 @@ arch afloor_magenta_left
 x 3
 y 4
 end
-arch swall_2_1_2
-x 3
-y 4
-end
 arch afloor_magenta_left
 x 3
 y 5
@@ -479,10 +631,6 @@ x 3
 y 6
 end
 arch afloor_magenta_left
-x 3
-y 7
-end
-arch swall_2_1_2
 x 3
 y 7
 end
@@ -510,10 +658,6 @@ arch afloor_magenta_left
 x 3
 y 13
 end
-arch swall_2_1_2
-x 3
-y 13
-end
 arch afloor_magenta_left
 x 3
 y 14
@@ -523,10 +667,6 @@ x 3
 y 15
 end
 arch afloor_magenta_left
-x 3
-y 16
-end
-arch swall_2_1_2
 x 3
 y 16
 end
@@ -546,17 +686,27 @@ arch awall_2_1_2
 x 3
 y 19
 end
-arch afloor_black_left
+arch goldfloor
+name Chinese Dragon
+slaying chinese_dragon_stoned
+food 1
 x 4
+connected 23
+activate_on_release 0
 end
-arch mover_3
+arch button_small
 x 4
+connected 1022
+end
+arch grate_open_1
+x 4
+connected 1022
 end
 arch afloor_blue_left
 x 4
 y 1
 end
-arch swall_3_3
+arch awall_win2
 x 4
 y 1
 end
@@ -564,23 +714,11 @@ arch afloor_magenta_left
 x 4
 y 2
 end
-arch swall_2_1_1
-x 4
-y 2
-end
 arch afloor_magenta_left
 x 4
 y 3
 end
-arch swall_2_1_1
-x 4
-y 3
-end
 arch afloor_blue_right
-x 4
-y 4
-end
-arch swall_2_2_4
 x 4
 y 4
 end
@@ -593,10 +731,6 @@ x 4
 y 6
 end
 arch afloor_blue_right
-x 4
-y 7
-end
-arch swall_1_3_half
 x 4
 y 7
 end
@@ -624,10 +758,6 @@ arch afloor_blue_right
 x 4
 y 13
 end
-arch swall_1_3_half
-x 4
-y 13
-end
 arch afloor_blue_right
 x 4
 y 14
@@ -640,27 +770,11 @@ arch afloor_blue_right
 x 4
 y 16
 end
-arch swall_2_2_3
-x 4
-y 16
-end
 arch afloor_blue_right
 x 4
 y 17
 end
-arch swall_2_1_1
-x 4
-y 17
-end
-arch swall_2_1_1
-x 4
-y 17
-end
 arch afloor_blue_right
-x 4
-y 18
-end
-arch swall_2_1_1
 x 4
 y 18
 end
@@ -668,15 +782,25 @@ arch afloor_blue_left
 x 4
 y 19
 end
-arch awall_3_1
+arch awall_2_1_2
 x 4
 y 19
 end
-arch afloor_black_left
+arch goldfloor
+name Cobra
+slaying cobra_stoned
+food 1
 x 5
+connected 24
+activate_on_release 0
 end
-arch mover_3
+arch button_small
 x 5
+connected 1023
+end
+arch grate_open_1
+x 5
+connected 1023
 end
 arch afloor_blue_left
 x 5
@@ -718,7 +842,15 @@ arch flagstone
 x 5
 y 9
 end
+arch awall_2_2_2
+x 5
+y 9
+end
 arch flagstone
+x 5
+y 10
+end
+arch awall_3_2
 x 5
 y 10
 end
@@ -726,11 +858,23 @@ arch flagstone
 x 5
 y 11
 end
+arch awall_2_1_1
+x 5
+y 11
+end
 arch flagstone
 x 5
 y 12
 end
+arch awall_3_2
+x 5
+y 12
+end
 arch flagstone
+x 5
+y 13
+end
+arch awall_2_2_1
 x 5
 y 13
 end
@@ -762,11 +906,21 @@ arch awall_2_1_2
 x 5
 y 19
 end
-arch afloor_black_left
+arch goldfloor
+name Cold Dragon
+slaying cold_dragon_stoned
+food 1
 x 6
+connected 25
+activate_on_release 0
 end
-arch mover_3
+arch button_small
 x 6
+connected 1024
+end
+arch grate_open_1
+x 6
+connected 1024
 end
 arch afloor_blue_left
 x 6
@@ -804,11 +958,11 @@ arch flagstone
 x 6
 y 8
 end
-arch chandelier_2_copper
-x 6
-y 8
-end
 arch flagstone
+x 6
+y 9
+end
+arch awall_3_3
 x 6
 y 9
 end
@@ -816,15 +970,34 @@ arch flagstone
 x 6
 y 10
 end
+arch awall_2_2_4
+x 6
+y 10
+end
 arch flagstone
 x 6
 y 11
+end
+arch teleporter
+name Load Petrified Monster Here
+x 6
+y 11
+speed 0.0
+connected 67584
 end
 arch flagstone
 x 6
 y 12
 end
+arch awall_2_2_3
+x 6
+y 12
+end
 arch flagstone
+x 6
+y 13
+end
+arch awall_3_1
 x 6
 y 13
 end
@@ -856,17 +1029,27 @@ arch awall_2_1_2
 x 6
 y 19
 end
-arch afloor_black_left
+arch goldfloor
+name Chaos Wyvern
+slaying Cwyvern_stoned
+food 1
 x 7
+connected 26
+activate_on_release 0
 end
-arch mover_3
+arch button_small
 x 7
+connected 1025
+end
+arch grate_open_1
+x 7
+connected 1025
 end
 arch afloor_blue_left
 x 7
 y 1
 end
-arch swall_3_3
+arch awall_win2
 x 7
 y 1
 end
@@ -874,23 +1057,11 @@ arch afloor_magenta_left
 x 7
 y 2
 end
-arch swall_2_1_1
-x 7
-y 2
-end
 arch afloor_magenta_left
 x 7
 y 3
 end
-arch swall_2_1_1
-x 7
-y 3
-end
 arch afloor_blue_right
-x 7
-y 4
-end
-arch swall_2_2_1
 x 7
 y 4
 end
@@ -914,7 +1085,15 @@ arch flagstone
 x 7
 y 9
 end
+arch awall_2_1_2
+x 7
+y 9
+end
 arch flagstone
+x 7
+y 10
+end
+arch brazier
 x 7
 y 10
 end
@@ -926,7 +1105,16 @@ arch flagstone
 x 7
 y 12
 end
+arch trigger
+x 7
+y 12
+connected 67584
+end
 arch flagstone
+x 7
+y 13
+end
+arch awall_2_1_2
 x 7
 y 13
 end
@@ -940,9 +1128,25 @@ y 15
 end
 arch flagstone
 x 7
+y 16
+end
+arch awall_2_2_2
+x 7
+y 16
+end
+arch flagstone
+x 7
+y 17
+end
+arch awall_2_1_1
+x 7
 y 17
 end
 arch flagstone
+x 7
+y 18
+end
+arch awall_2_1_1
 x 7
 y 18
 end
@@ -950,21 +1154,31 @@ arch afloor_right
 x 7
 y 19
 end
-arch awall_2_1_2
+arch awall_2_2_4
 x 7
 y 19
 end
-arch afloor_black_left
+arch goldfloor
+name Dancing Sword
+slaying dancingsword_stoned
+food 1
 x 8
+connected 27
+activate_on_release 0
 end
-arch mover_3
+arch button_small
 x 8
+connected 1026
+end
+arch grate_open_1
+x 8
+connected 1026
 end
 arch afloor_blue_left
 x 8
 y 1
 end
-arch swall_3_3
+arch awall_win2
 x 8
 y 1
 end
@@ -972,15 +1186,7 @@ arch afloor_magenta_left
 x 8
 y 2
 end
-arch swall_2_1_1
-x 8
-y 2
-end
 arch afloor_magenta_left
-x 8
-y 3
-end
-arch swall_2_1_1
 x 8
 y 3
 end
@@ -988,7 +1194,7 @@ arch afloor_blue_right
 x 8
 y 4
 end
-arch swall_2_2_4
+arch awall_2_2_2
 x 8
 y 4
 end
@@ -996,7 +1202,15 @@ arch dungeon_floor
 x 8
 y 5
 end
+arch awall_2_1_1
+x 8
+y 5
+end
 arch dungeon_floor
+x 8
+y 6
+end
+arch awall_2_1_1
 x 8
 y 6
 end
@@ -1004,7 +1218,15 @@ arch dungeon_floor
 x 8
 y 7
 end
+arch awall_2_1_1
+x 8
+y 7
+end
 arch flagstone
+x 8
+y 8
+end
+arch awall_2_1_1
 x 8
 y 8
 end
@@ -1012,19 +1234,27 @@ arch flagstone
 x 8
 y 9
 end
-arch flagstone
+arch awall_2_2_4
+x 8
+y 9
+end
+arch cobblestones2
 x 8
 y 10
 end
-arch flagstone
+arch cobblestones2
 x 8
 y 11
 end
-arch flagstone
+arch cobblestones2
 x 8
 y 12
 end
 arch flagstone
+x 8
+y 13
+end
+arch awall_1_3
 x 8
 y 13
 end
@@ -1040,6 +1270,10 @@ arch flagstone
 x 8
 y 16
 end
+arch swall_2_1_2
+x 8
+y 16
+end
 arch flagstone
 x 8
 y 17
@@ -1052,15 +1286,21 @@ arch afloor_right
 x 8
 y 19
 end
-arch swall_2_2_4
-x 8
-y 19
-end
-arch afloor_black_left
+arch goldfloor
+name Dark Elf
+slaying dark_elf_stoned
+food 1
 x 9
+connected 28
+activate_on_release 0
 end
-arch mover_3
+arch button_small
 x 9
+connected 1027
+end
+arch grate_open_1
+x 9
+connected 1027
 end
 arch afloor_blue_left
 x 9
@@ -1082,21 +1322,1090 @@ arch afloor_blue_right
 x 9
 y 4
 end
-arch dungeon_floor
+arch awall_2_1_2
+x 9
+y 4
+end
+arch cobblestones2
 x 9
 y 5
 end
-arch dungeon_floor
+arch button_small
+x 9
+y 5
+connected 90
+end
+arch grate_open_1
+x 9
+y 5
+connected 90
+end
+arch cobblestones2
 x 9
 y 6
 end
-arch dungeon_floor
+arch button_small
+x 9
+y 6
+connected 89
+end
+arch grate_open_1
+x 9
+y 6
+connected 89
+end
+arch cobblestones2
 x 9
 y 7
+end
+arch button_small
+x 9
+y 7
+connected 88
+end
+arch grate_open_1
+x 9
+y 7
+connected 88
+end
+arch cobblestones2
+x 9
+y 8
+end
+arch mover_5
+x 9
+y 8
+attacktype 1
+end
+arch button_small
+x 9
+y 8
+connected 87
+end
+arch grate_open_1
+x 9
+y 8
+connected 87
+end
+arch cobblestones2
+x 9
+y 9
+end
+arch mover_5
+x 9
+y 9
+attacktype 1
+end
+arch button_small
+x 9
+y 9
+connected 86
+end
+arch grate_open_1
+x 9
+y 9
+connected 86
+end
+arch cobblestones2
+x 9
+y 10
+end
+arch flagstone
+x 9
+y 11
+end
+arch sign
+name Instructions
+msg
+This is a figurine manufacturing station.
+Simply load your petrified monster and it
+will be converted to a figurine capable
+of summoning the petrified monster as a pet.
+
+Each station needs to recharge after a single use.
+endmsg
+x 9
+y 11
+end
+arch cobblestones2
+x 9
+y 12
+end
+arch flagstone
+x 9
+y 13
+end
+arch flagstone
+x 9
+y 14
+end
+arch flagstone
+x 9
+y 15
+end
+arch afloor_left
+x 9
+y 16
+end
+arch swall_2_1_2
+x 9
+y 16
+end
+arch afloor_right
+x 9
+y 17
+end
+arch shop_mat
+x 9
+y 17
+end
+arch afloor_right
+x 9
+y 18
+end
+arch afloor_right
+x 9
+y 19
+end
+arch goldfloor
+name Dave
+slaying dave_stoned
+food 1
+x 10
+connected 29
+activate_on_release 0
+end
+arch button_small
+x 10
+connected 1028
+end
+arch grate_open_1
+x 10
+connected 1028
+end
+arch afloor_blue_left
+x 10
+y 1
+end
+arch awall_win2
+x 10
+y 1
+end
+arch afloor_magenta_left
+x 10
+y 2
+end
+arch afloor_magenta_left
+x 10
+y 3
+end
+arch afloor_blue_left
+x 10
+y 4
+end
+arch awall_2_1_2
+x 10
+y 4
+end
+arch cobblestones2
+x 10
+y 5
+end
+arch button_small
+x 10
+y 5
+connected 91
+end
+arch grate_open_2
+x 10
+y 5
+connected 91
+end
+arch dungeon_floor
+x 10
+y 6
+end
+arch awall_2_2_2
+x 10
+y 6
+end
+arch flagstone
+x 10
+y 7
+end
+arch awall_2_1_1
+x 10
+y 7
+end
+arch flagstone
+x 10
+y 8
+end
+arch awall_2_1_1
+x 10
+y 8
+end
+arch flagstone
+x 10
+y 9
+end
+arch awall_2_2_1
+x 10
+y 9
+end
+arch cobblestones2
+x 10
+y 10
+end
+arch cobblestones2
+x 10
+y 11
+end
+arch cobblestones2
+x 10
+y 12
+end
+arch flagstone
+x 10
+y 13
+end
+arch flagstone
+x 10
+y 14
+end
+arch flagstone
+x 10
+y 15
+end
+arch shop_mat
+x 10
+y 15
+end
+arch afloor_left
+x 10
+y 16
+end
+arch swall_2_1_2
+x 10
+y 16
+end
+arch afloor_black_left
+x 10
+y 17
+end
+arch afloor_black_left
+x 10
+y 18
+end
+arch afloor_black_left
+x 10
+y 19
+end
+arch goldfloor
+name Deathshead
+slaying deathshead_stoned
+food 1
+x 11
+connected 30
+activate_on_release 0
+end
+arch button_small
+x 11
+connected 1029
+end
+arch grate_open_1
+x 11
+connected 1029
+end
+arch afloor_blue_left
+x 11
+y 1
+end
+arch awall_win2
+x 11
+y 1
+end
+arch afloor_magenta_left
+x 11
+y 2
+end
+arch afloor_magenta_left
+x 11
+y 3
+end
+arch afloor_blue_left
+x 11
+y 4
+end
+arch awall_2_1_2
+x 11
+y 4
+end
+arch cobblestones2
+x 11
+y 5
+end
+arch button_small
+x 11
+y 5
+connected 92
+end
+arch grate_open_2
+x 11
+y 5
+connected 92
+end
+arch dungeon_floor
+x 11
+y 6
+end
+arch awall_2_1_2
+x 11
+y 6
+end
+arch dungeon_floor
+x 11
+y 7
+end
+arch flagstone
+x 11
+y 8
+end
+arch flagstone
+x 11
+y 9
+end
+arch awall_2_1_2
+x 11
+y 9
+end
+arch flagstone
+x 11
+y 10
+end
+arch flagstone
+x 11
+y 11
+end
+arch flagstone
+x 11
+y 12
+end
+arch flagstone
+x 11
+y 13
+end
+arch awall_1_4
+x 11
+y 13
+end
+arch flagstone
+x 11
+y 14
+end
+arch flagstone
+x 11
+y 15
+end
+arch afloor_left
+x 11
+y 16
+end
+arch swall_2_1_2
+x 11
+y 16
+end
+arch afloor_black_left
+x 11
+y 17
+end
+arch afloor_black_left
+x 11
+y 18
+end
+arch afloor_black_left
+x 11
+y 19
+end
+arch goldfloor
+name Demilich
+slaying demilich_stoned
+food 1
+x 12
+connected 31
+activate_on_release 0
+end
+arch button_small
+x 12
+connected 1030
+end
+arch grate_open_1
+x 12
+connected 1030
+end
+arch afloor_blue_left
+x 12
+y 1
+end
+arch awall_3_3
+x 12
+y 1
+end
+arch afloor_magenta_left
+x 12
+y 2
+end
+arch awall_2_1_1
+x 12
+y 2
+end
+arch afloor_magenta_left
+x 12
+y 3
+end
+arch awall_2_1_1
+x 12
+y 3
+end
+arch afloor_blue_left
+x 12
+y 4
+end
+arch awall_3_1
+x 12
+y 4
+end
+arch cobblestones2
+x 12
+y 5
+end
+arch button_small
+x 12
+y 5
+connected 93
+end
+arch grate_open_2
+x 12
+y 5
+connected 93
+end
+arch dungeon_floor
+x 12
+y 6
+end
+arch awall_2_1_2
+x 12
+y 6
+end
+arch dungeon_floor
+x 12
+y 7
+end
+arch flagstone
+x 12
+y 8
+end
+arch flagstone
+x 12
+y 9
+end
+arch awall_2_1_2
+x 12
+y 9
+end
+arch flagstone
+x 12
+y 10
+end
+arch blacklostlabfloor7
+x 12
+y 11
+end
+arch flagstone
+x 12
+y 12
+end
+arch brazier
+x 12
+y 12
+end
+arch flagstone
+x 12
+y 13
+end
+arch awall_2_1_2
+x 12
+y 13
+end
+arch flagstone
+x 12
+y 14
+end
+arch flagstone
+x 12
+y 15
+end
+arch afloor_left
+x 12
+y 16
+end
+arch awall_2_2_3
+x 12
+y 16
+end
+arch afloor_black_left
+x 12
+y 17
+end
+arch awall_2_1_1
+x 12
+y 17
+end
+arch afloor_black_left
+x 12
+y 18
+end
+arch awall_2_1_1
+x 12
+y 18
+end
+arch afloor_black_left
+x 12
+y 19
+end
+arch awall_2_2_1
+x 12
+y 19
+end
+arch goldfloor
+name Air Elemental
+slaying air_elemental_stoned
+food 1
+x 13
+connected 32
+activate_on_release 0
+end
+arch button_small
+x 13
+connected 1031
+end
+arch grate_open_1
+x 13
+connected 1031
+end
+arch afloor_blue_left
+x 13
+y 1
+end
+arch awall_win2
+x 13
+y 1
+end
+arch afloor_magenta_left
+x 13
+y 2
+end
+arch afloor_magenta_left
+x 13
+y 3
+end
+arch afloor_blue_left
+x 13
+y 4
+end
+arch awall_2_1_2
+x 13
+y 4
+end
+arch cobblestones2
+x 13
+y 5
+end
+arch button_small
+x 13
+y 5
+connected 94
+end
+arch grate_open_2
+x 13
+y 5
+connected 94
+end
+arch dungeon_floor
+x 13
+y 6
+end
+arch awall_2_1_2
+x 13
+y 6
+end
+arch dungeon_floor
+x 13
+y 7
+end
+arch flagstone
+x 13
+y 8
+end
+arch flagstone
+x 13
+y 9
+end
+arch awall_2_2_3
+x 13
+y 9
+end
+arch flagstone
+x 13
+y 10
+end
+arch awall_2_1_1
+x 13
+y 10
+end
+arch flagstone
+x 13
+y 11
+end
+arch awall_2_1_1
+x 13
+y 11
+end
+arch flagstone
+x 13
+y 12
+end
+arch awall_2_1_1
+x 13
+y 12
+end
+arch flagstone
+x 13
+y 13
+end
+arch awall_2_2_4
+x 13
+y 13
+end
+arch flagstone
+x 13
+y 14
+end
+arch flagstone
+x 13
+y 15
+end
+arch afloor_left
+x 13
+y 16
+end
+arch afloor_black_left
+x 13
+y 17
+end
+arch afloor_black_left
+x 13
+y 18
+end
+arch afloor_black_left
+x 13
+y 19
+end
+arch awall_2_1_2
+x 13
+y 19
+end
+arch goldfloor
+x 14
+end
+arch button_small
+x 14
+connected 1032
+end
+arch grate_open_1
+x 14
+connected 1032
+end
+arch afloor_blue_left
+x 14
+y 1
+end
+arch awall_win2
+x 14
+y 1
+end
+arch afloor_magenta_left
+x 14
+y 2
+end
+arch afloor_magenta_left
+x 14
+y 3
+end
+arch afloor_blue_left
+x 14
+y 4
+end
+arch awall_2_1_2
+x 14
+y 4
+end
+arch cobblestones2
+x 14
+y 5
+end
+arch button_small
+x 14
+y 5
+connected 95
+end
+arch grate_open_2
+x 14
+y 5
+connected 95
+end
+arch flagstone
+x 14
+y 6
+end
+arch awall_2_1_2
+x 14
+y 6
+end
+arch flagstone
+x 14
+y 7
+end
+arch flagstone
+x 14
+y 8
+end
+arch flagstone
+x 14
+y 9
+end
+arch flagstone
+x 14
+y 10
+end
+arch flagstone
+x 14
+y 11
+end
+arch flagstone
+x 14
+y 12
+end
+arch flagstone
+x 14
+y 13
+end
+arch flagstone
+x 14
+y 14
+end
+arch flagstone
+x 14
+y 15
+end
+arch afloor_left
+x 14
+y 16
+end
+arch afloor_black_left
+x 14
+y 17
+end
+arch afloor_right
+x 14
+y 18
+end
+arch afloor_right
+x 14
+y 19
+end
+arch awall_2_1_2
+x 14
+y 19
+end
+arch goldfloor
+x 15
+end
+arch button_small
+x 15
+connected 1033
+end
+arch grate_open_1
+x 15
+connected 1033
+end
+arch afloor_blue_left
+x 15
+y 1
+end
+arch awall_2_1_2
+x 15
+y 1
+end
+arch afloor_magenta_left
+x 15
+y 2
+end
+arch afloor_magenta_left
+x 15
+y 3
+end
+arch afloor_blue_left
+x 15
+y 4
+end
+arch awall_2_1_2
+x 15
+y 4
+end
+arch cobblestones2
+x 15
+y 5
+end
+arch button_small
+x 15
+y 5
+connected 96
+end
+arch grate_open_2
+x 15
+y 5
+connected 96
+end
+arch afloor_blue_left
+x 15
+y 6
+end
+arch awall_2_1_2
+x 15
+y 6
+end
+arch afloor_blue_left
+x 15
+y 7
+end
+arch afloor_blue_left
+x 15
+y 8
+end
+arch afloor_blue_left
+x 15
+y 9
+end
+arch afloor_blue_left
+x 15
+y 10
+end
+arch afloor_blue_left
+x 15
+y 11
+end
+arch afloor_blue_left
+x 15
+y 12
+end
+arch afloor_blue_left
+x 15
+y 13
+end
+arch afloor_blue_left
+x 15
+y 14
+end
+arch afloor_blue_left
+x 15
+y 15
+end
+arch afloor_blue_left
+x 15
+y 16
+end
+arch afloor_blue_left
+x 15
+y 17
+end
+arch afloor_blue_left
+x 15
+y 18
+end
+arch afloor_blue_right
+x 15
+y 19
+end
+arch awall_3_1
+x 15
+y 19
+end
+arch goldfloor
+x 16
+end
+arch button_small
+x 16
+connected 1034
+end
+arch grate_open_1
+x 16
+connected 1034
+end
+arch afloor_blue_left
+x 16
+y 1
+end
+arch awall_win2
+x 16
+y 1
+end
+arch afloor_magenta_left
+x 16
+y 2
+end
+arch afloor_magenta_left
+x 16
+y 3
+end
+arch afloor_magenta_left
+x 16
+y 4
+end
+arch awall_2_1_2
+x 16
+y 4
+end
+arch cobblestones2
+x 16
+y 5
+end
+arch button_small
+x 16
+y 5
+connected 97
+end
+arch grate_open_2
+x 16
+y 5
+connected 97
+end
+arch afloor_magenta_left
+x 16
+y 6
+end
+arch awall_2_1_2
+x 16
+y 6
+end
+arch afloor_magenta_left
+x 16
+y 7
+end
+arch afloor_magenta_left
+x 16
+y 8
+end
+arch afloor_magenta_left
+x 16
+y 9
+end
+arch afloor_magenta_left
+x 16
+y 10
+end
+arch afloor_magenta_left
+x 16
+y 11
+end
+arch afloor_magenta_left
+x 16
+y 12
+end
+arch afloor_magenta_left
+x 16
+y 13
+end
+arch afloor_magenta_left
+x 16
+y 14
+end
+arch afloor_magenta_left
+x 16
+y 15
+end
+arch afloor_magenta_left
+x 16
+y 16
+end
+arch afloor_magenta_left
+x 16
+y 17
+end
+arch afloor_magenta_left
+x 16
+y 18
+end
+arch afloor_blue_right
+x 16
+y 19
+end
+arch awall_2_1_2
+x 16
+y 19
+end
+arch goldfloor
+x 17
+end
+arch button_small
+x 17
+connected 1035
+end
+arch grate_open_1
+x 17
+connected 1035
+end
+arch afloor_blue_left
+x 17
+y 1
+end
+arch awall_win2
+x 17
+y 1
+end
+arch afloor_magenta_left
+x 17
+y 2
+end
+arch afloor_magenta_left
+x 17
+y 3
+end
+arch afloor_magenta_left
+x 17
+y 4
+end
+arch awall_2_1_2
+x 17
+y 4
+end
+arch cobblestones2
+x 17
+y 5
+end
+arch button_small
+x 17
+y 5
+connected 98
+end
+arch grate_open_2
+x 17
+y 5
+connected 98
 end
 arch creator
-x 9
-y 7
+x 17
+y 5
 connected 31
 lifesave 1
 activate_on_release 0
@@ -1110,8 +2419,8 @@ end
 end
 end
 arch creator
-x 9
-y 7
+x 17
+y 5
 connected 30
 lifesave 1
 activate_on_release 0
@@ -1125,8 +2434,8 @@ end
 end
 end
 arch creator
-x 9
-y 7
+x 17
+y 5
 connected 29
 lifesave 1
 activate_on_release 0
@@ -1140,8 +2449,8 @@ end
 end
 end
 arch creator
-x 9
-y 7
+x 17
+y 5
 connected 28
 lifesave 1
 activate_on_release 0
@@ -1155,8 +2464,8 @@ end
 end
 end
 arch creator
-x 9
-y 7
+x 17
+y 5
 connected 27
 lifesave 1
 activate_on_release 0
@@ -1170,8 +2479,8 @@ end
 end
 end
 arch creator
-x 9
-y 7
+x 17
+y 5
 connected 26
 lifesave 1
 activate_on_release 0
@@ -1185,8 +2494,8 @@ end
 end
 end
 arch creator
-x 9
-y 7
+x 17
+y 5
 connected 25
 lifesave 1
 activate_on_release 0
@@ -1200,8 +2509,8 @@ end
 end
 end
 arch creator
-x 9
-y 7
+x 17
+y 5
 connected 24
 lifesave 1
 activate_on_release 0
@@ -1215,8 +2524,8 @@ end
 end
 end
 arch creator
-x 9
-y 7
+x 17
+y 5
 connected 23
 lifesave 1
 activate_on_release 0
@@ -1230,8 +2539,8 @@ end
 end
 end
 arch creator
-x 9
-y 7
+x 17
+y 5
 connected 22
 lifesave 1
 activate_on_release 0
@@ -1245,8 +2554,8 @@ end
 end
 end
 arch creator
-x 9
-y 7
+x 17
+y 5
 connected 21
 lifesave 1
 activate_on_release 0
@@ -1260,8 +2569,8 @@ end
 end
 end
 arch creator
-x 9
-y 7
+x 17
+y 5
 connected 20
 lifesave 1
 activate_on_release 0
@@ -1275,8 +2584,8 @@ end
 end
 end
 arch creator
-x 9
-y 7
+x 17
+y 5
 connected 19
 lifesave 1
 activate_on_release 0
@@ -1290,8 +2599,8 @@ end
 end
 end
 arch creator
-x 9
-y 7
+x 17
+y 5
 connected 18
 lifesave 1
 activate_on_release 0
@@ -1305,8 +2614,8 @@ end
 end
 end
 arch creator
-x 9
-y 7
+x 17
+y 5
 connected 17
 lifesave 1
 activate_on_release 0
@@ -1320,8 +2629,8 @@ end
 end
 end
 arch creator
-x 9
-y 7
+x 17
+y 5
 connected 16
 lifesave 1
 activate_on_release 0
@@ -1335,8 +2644,8 @@ end
 end
 end
 arch creator
-x 9
-y 7
+x 17
+y 5
 connected 15
 lifesave 1
 activate_on_release 0
@@ -1350,8 +2659,8 @@ end
 end
 end
 arch creator
-x 9
-y 7
+x 17
+y 5
 connected 14
 lifesave 1
 activate_on_release 0
@@ -1365,8 +2674,8 @@ end
 end
 end
 arch creator
-x 9
-y 7
+x 17
+y 5
 connected 13
 lifesave 1
 activate_on_release 0
@@ -1380,8 +2689,8 @@ end
 end
 end
 arch creator
-x 9
-y 7
+x 17
+y 5
 connected 12
 lifesave 1
 activate_on_release 0
@@ -1395,8 +2704,8 @@ end
 end
 end
 arch creator
-x 9
-y 7
+x 17
+y 5
 connected 11
 lifesave 1
 activate_on_release 0
@@ -1410,8 +2719,8 @@ end
 end
 end
 arch creator
-x 9
-y 7
+x 17
+y 5
 connected 10
 lifesave 1
 activate_on_release 0
@@ -1425,8 +2734,8 @@ end
 end
 end
 arch creator
-x 9
-y 7
+x 17
+y 5
 connected 9
 lifesave 1
 activate_on_release 0
@@ -1440,8 +2749,8 @@ end
 end
 end
 arch creator
-x 9
-y 7
+x 17
+y 5
 connected 8
 lifesave 1
 activate_on_release 0
@@ -1455,8 +2764,8 @@ end
 end
 end
 arch creator
-x 9
-y 7
+x 17
+y 5
 connected 7
 lifesave 1
 activate_on_release 0
@@ -1470,8 +2779,8 @@ end
 end
 end
 arch creator
-x 9
-y 7
+x 17
+y 5
 connected 6
 lifesave 1
 activate_on_release 0
@@ -1485,8 +2794,8 @@ end
 end
 end
 arch creator
-x 9
-y 7
+x 17
+y 5
 connected 5
 lifesave 1
 activate_on_release 0
@@ -1500,8 +2809,8 @@ end
 end
 end
 arch creator
-x 9
-y 7
+x 17
+y 5
 connected 4
 lifesave 1
 activate_on_release 0
@@ -1515,8 +2824,8 @@ end
 end
 end
 arch creator
-x 9
-y 7
+x 17
+y 5
 connected 3
 lifesave 1
 activate_on_release 0
@@ -1530,8 +2839,8 @@ end
 end
 end
 arch creator
-x 9
-y 7
+x 17
+y 5
 connected 2
 lifesave 1
 activate_on_release 0
@@ -1545,8 +2854,8 @@ end
 end
 end
 arch creator
-x 9
-y 7
+x 17
+y 5
 connected 1
 lifesave 1
 activate_on_release 0
@@ -1560,8 +2869,8 @@ end
 end
 end
 arch creator
-x 9
-y 7
+x 17
+y 5
 connected 32
 lifesave 1
 activate_on_release 0
@@ -1574,850 +2883,15 @@ randomitems none
 end
 end
 end
-arch flagstone
-x 9
-y 8
-end
-arch flagstone
-x 9
-y 9
-end
-arch flagstone
-x 9
-y 10
-end
-arch flagstone
-x 9
-y 11
-end
-arch flagstone
-x 9
-y 12
-end
-arch flagstone
-x 9
-y 13
-end
-arch flagstone
-x 9
-y 14
-end
-arch flagstone
-x 9
-y 15
-end
-arch afloor_left
-x 9
-y 16
-end
-arch afloor_right
-x 9
-y 17
-end
-arch afloor_right
-x 9
-y 18
-end
-arch afloor_right
-x 9
-y 19
-end
-arch oakdoor
-x 9
-y 19
-end
-arch afloor_black_left
-x 10
-end
-arch mover_3
-x 10
-end
-arch afloor_blue_left
-x 10
-y 1
-end
-arch awall_win2
-x 10
-y 1
-end
 arch afloor_magenta_left
-x 10
-y 2
-end
-arch afloor_magenta_left
-x 10
-y 3
-end
-arch afloor_blue_left
-x 10
-y 4
-end
-arch dungeon_floor
-x 10
-y 5
-end
-arch dungeon_floor
-x 10
+x 17
 y 6
-end
-arch sign_e
-x 10
-y 6
-end
-arch dungeon_floor
-x 10
-y 7
-end
-arch flagstone
-x 10
-y 8
-end
-arch flagstone
-x 10
-y 9
-end
-arch flagstone
-x 10
-y 10
-end
-arch flagstone
-x 10
-y 11
-end
-arch flagstone
-x 10
-y 12
-end
-arch flagstone
-x 10
-y 13
-end
-arch flagstone
-x 10
-y 14
-end
-arch flagstone
-x 10
-y 15
-end
-arch afloor_left
-x 10
-y 16
-end
-arch afloor_black_left
-x 10
-y 17
-end
-arch afloor_black_left
-x 10
-y 18
-end
-arch afloor_black_left
-x 10
-y 19
-end
-arch oakdoor
-x 10
-y 19
-end
-arch afloor_black_left
-x 11
-end
-arch mover_3
-x 11
-end
-arch afloor_blue_left
-x 11
-y 1
-end
-arch swall_3_3
-x 11
-y 1
-end
-arch afloor_magenta_left
-x 11
-y 2
-end
-arch swall_2_1_1
-x 11
-y 2
-end
-arch afloor_magenta_left
-x 11
-y 3
-end
-arch swall_2_1_1
-x 11
-y 3
-end
-arch afloor_blue_left
-x 11
-y 4
-end
-arch swall_2_2_1
-x 11
-y 4
-end
-arch dungeon_floor
-x 11
-y 5
-end
-arch dungeon_floor
-x 11
-y 6
-end
-arch dungeon_floor
-x 11
-y 7
-end
-arch flagstone
-x 11
-y 8
-end
-arch flagstone
-x 11
-y 9
-end
-arch flagstone
-x 11
-y 10
-end
-arch flagstone
-x 11
-y 11
-end
-arch flagstone
-x 11
-y 12
-end
-arch flagstone
-x 11
-y 13
-end
-arch flagstone
-x 11
-y 14
-end
-arch flagstone
-x 11
-y 15
-end
-arch afloor_left
-x 11
-y 16
-end
-arch afloor_black_left
-x 11
-y 17
-end
-arch afloor_black_left
-x 11
-y 18
-end
-arch afloor_black_left
-x 11
-y 19
-end
-arch afloor_black_left
-x 12
-end
-arch mover_3
-x 12
-end
-arch afloor_blue_left
-x 12
-y 1
-end
-arch swall_3_3
-x 12
-y 1
-end
-arch afloor_magenta_left
-x 12
-y 2
-end
-arch swall_2_1_1
-x 12
-y 2
-end
-arch afloor_magenta_left
-x 12
-y 3
-end
-arch swall_2_1_1
-x 12
-y 3
-end
-arch afloor_blue_left
-x 12
-y 4
-end
-arch swall_2_2_4
-x 12
-y 4
-end
-arch dungeon_floor
-x 12
-y 5
-end
-arch dungeon_floor
-x 12
-y 6
-end
-arch dungeon_floor
-x 12
-y 7
-end
-arch flagstone
-x 12
-y 8
-end
-arch flagstone
-x 12
-y 9
-end
-arch flagstone
-x 12
-y 10
-end
-arch flagstone
-x 12
-y 11
-end
-arch flagstone
-x 12
-y 12
-end
-arch flagstone
-x 12
-y 13
-end
-arch flagstone
-x 12
-y 14
-end
-arch flagstone
-x 12
-y 15
-end
-arch afloor_left
-x 12
-y 16
-end
-arch afloor_black_left
-x 12
-y 17
-end
-arch afloor_black_left
-x 12
-y 18
-end
-arch afloor_black_left
-x 12
-y 19
 end
 arch awall_2_1_2
-x 12
-y 19
-end
-arch afloor_black_left
-x 13
-end
-arch mover_3
-x 13
-end
-arch afloor_blue_left
-x 13
-y 1
-end
-arch awall_win2
-x 13
-y 1
-end
-arch afloor_magenta_left
-x 13
-y 2
-end
-arch afloor_magenta_left
-x 13
-y 3
-end
-arch afloor_blue_left
-x 13
-y 4
-end
-arch dungeon_floor
-x 13
-y 5
-end
-arch dungeon_floor
-x 13
-y 6
-end
-arch dungeon_floor
-x 13
-y 7
-end
-arch flagstone
-x 13
-y 8
-end
-arch flagstone
-x 13
-y 9
-end
-arch flagstone
-x 13
-y 10
-end
-arch flagstone
-x 13
-y 11
-end
-arch flagstone
-x 13
-y 12
-end
-arch flagstone
-x 13
-y 13
-end
-arch flagstone
-x 13
-y 14
-end
-arch flagstone
-x 13
-y 15
-end
-arch afloor_left
-x 13
-y 16
-end
-arch afloor_black_left
-x 13
-y 17
-end
-arch button_lever
-x 13
-y 17
-connected 192383
-end
-arch afloor_black_left
-x 13
-y 18
-end
-arch afloor_black_left
-x 13
-y 19
-end
-arch awall_2_1_2
-x 13
-y 19
-end
-arch afloor_black_left
-x 14
-end
-arch mover_3
-x 14
-end
-arch afloor_blue_left
-x 14
-y 1
-end
-arch awall_win2
-x 14
-y 1
-end
-arch afloor_magenta_left
-x 14
-y 2
-end
-arch afloor_magenta_left
-x 14
-y 3
-end
-arch afloor_blue_left
-x 14
-y 4
-end
-arch flagstone
-x 14
-y 5
-end
-arch flagstone
-x 14
-y 6
-end
-arch flagstone
-x 14
-y 7
-end
-arch flagstone
-x 14
-y 8
-end
-arch flagstone
-x 14
-y 9
-end
-arch flagstone
-x 14
-y 10
-end
-arch flagstone
-x 14
-y 11
-end
-arch flagstone
-x 14
-y 12
-end
-arch flagstone
-x 14
-y 13
-end
-arch flagstone
-x 14
-y 14
-end
-arch flagstone
-x 14
-y 15
-end
-arch afloor_left
-x 14
-y 16
-end
-arch swall_1_4
-x 14
-y 16
-end
-arch blacklostlabfloor7
-x 14
-y 17
-end
-arch teleporter
-hp 17
-sp 17
-x 14
-y 17
-speed 0.0
-connected 192383
-activate_on_release 0
-end
-arch afloor_right
-x 14
-y 18
-end
-arch magic_ear
-msg
-@match figurine
-Click.
-endmsg
-x 14
-y 18
-connected 2357678
-end
-arch afloor_right
-x 14
-y 19
-end
-arch awall_2_1_2
-x 14
-y 19
-end
-arch afloor_black_left
-x 15
-end
-arch mover_3
-x 15
-end
-arch afloor_blue_left
-x 15
-y 1
-end
-arch swall_3_3
-x 15
-y 1
-end
-arch afloor_magenta_left
-x 15
-y 2
-end
-arch swall_2_1_1
-x 15
-y 2
-end
-arch afloor_magenta_left
-x 15
-y 3
-end
-arch swall_2_1_1
-x 15
-y 3
-end
-arch afloor_blue_left
-x 15
-y 4
-end
-arch swall_2_2_1
-x 15
-y 4
-end
-arch afloor_blue_left
-x 15
-y 5
-end
-arch afloor_blue_left
-x 15
-y 6
-end
-arch afloor_blue_left
-x 15
-y 7
-end
-arch swall_1_4_half
-x 15
-y 7
-end
-arch afloor_blue_left
-x 15
-y 8
-end
-arch afloor_blue_left
-x 15
-y 9
-end
-arch afloor_blue_left
-x 15
-y 10
-end
-arch swall_1_4_half
-x 15
-y 10
-end
-arch afloor_blue_left
-x 15
-y 11
-end
-arch afloor_blue_left
-x 15
-y 12
-end
-arch afloor_blue_left
-x 15
-y 13
-end
-arch swall_1_4_half
-x 15
-y 13
-end
-arch afloor_blue_left
-x 15
-y 14
-end
-arch afloor_blue_left
-x 15
-y 15
-end
-arch afloor_blue_left
-x 15
-y 16
-end
-arch swall_3_3
-x 15
-y 16
-end
-arch afloor_blue_left
-x 15
-y 17
-end
-arch swall_2_1_1
-x 15
-y 17
-end
-arch afloor_blue_left
-x 15
-y 18
-end
-arch swall_3_2
-x 15
-y 18
-end
-arch afloor_blue_right
-x 15
-y 19
-end
-arch awall_3_1
-x 15
-y 19
-end
-arch afloor_black_left
-x 16
-end
-arch mover_3
-x 16
-end
-arch afloor_blue_left
-x 16
-y 1
-end
-arch awall_win2
-x 16
-y 1
-end
-arch afloor_magenta_left
-x 16
-y 2
-end
-arch afloor_magenta_left
-x 16
-y 3
-end
-arch afloor_magenta_left
-x 16
-y 4
-end
-arch swall_2_1_2
-x 16
-y 4
-end
-arch afloor_magenta_left
-x 16
-y 5
-end
-arch afloor_magenta_left
-x 16
-y 6
-end
-arch afloor_magenta_left
-x 16
-y 7
-end
-arch swall_2_1_2
-x 16
-y 7
-end
-arch afloor_magenta_left
-x 16
-y 8
-end
-arch afloor_magenta_left
-x 16
-y 9
-end
-arch afloor_magenta_left
-x 16
-y 10
-end
-arch swall_2_1_2
-x 16
-y 10
-end
-arch afloor_magenta_left
-x 16
-y 11
-end
-arch afloor_magenta_left
-x 16
-y 12
-end
-arch afloor_magenta_left
-x 16
-y 13
-end
-arch swall_2_1_2
-x 16
-y 13
-end
-arch afloor_magenta_left
-x 16
-y 14
-end
-arch afloor_magenta_left
-x 16
-y 15
-end
-arch afloor_magenta_left
-x 16
-y 16
-end
-arch swall_2_1_2
-x 16
-y 16
-end
-arch afloor_magenta_left
-x 16
-y 17
-end
-arch teleporter
-hp 0
-sp 18
-x 16
-y 17
-speed 0.0
-connected 2357678
-end
-arch afloor_magenta_left
-x 16
-y 18
-end
-arch swall_2_1_2
-x 16
-y 18
-end
-arch afloor_blue_right
-x 16
-y 19
-end
-arch awall_2_1_2
-x 16
-y 19
-end
-arch afloor_black_left
-x 17
-end
-arch mover_3
-x 17
-end
-arch afloor_blue_left
-x 17
-y 1
-end
-arch awall_win2
-x 17
-y 1
-end
-arch afloor_magenta_left
-x 17
-y 2
-end
-arch afloor_magenta_left
-x 17
-y 3
-end
-arch afloor_magenta_left
-x 17
-y 4
-end
-arch swall_2_1_2
-x 17
-y 4
-end
-arch afloor_magenta_left
-x 17
-y 5
-end
-arch afloor_magenta_left
 x 17
 y 6
 end
 arch afloor_magenta_left
-x 17
-y 7
-end
-arch swall_2_1_2
 x 17
 y 7
 end
@@ -2433,10 +2907,6 @@ arch afloor_magenta_left
 x 17
 y 10
 end
-arch swall_2_1_2
-x 17
-y 10
-end
 arch afloor_magenta_left
 x 17
 y 11
@@ -2446,10 +2916,6 @@ x 17
 y 12
 end
 arch afloor_magenta_left
-x 17
-y 13
-end
-arch swall_2_1_2
 x 17
 y 13
 end
@@ -2465,23 +2931,11 @@ arch afloor_magenta_left
 x 17
 y 16
 end
-arch swall_3_3
-x 17
-y 16
-end
 arch afloor_magenta_left
 x 17
 y 17
 end
-arch swall_2_1_1
-x 17
-y 17
-end
 arch afloor_magenta_left
-x 17
-y 18
-end
-arch swall_2_2_4
 x 17
 y 18
 end
@@ -2493,11 +2947,16 @@ arch awall_2_1_2
 x 17
 y 19
 end
-arch afloor_black_left
+arch goldfloor
 x 18
 end
-arch mover_3
+arch button_small
 x 18
+connected 1036
+end
+arch grate_open_1
+x 18
+connected 1036
 end
 arch afloor_blue_left
 x 18
@@ -2527,7 +2986,7 @@ arch afloor_blue_left
 x 18
 y 4
 end
-arch swall_3_4
+arch awall_3_4
 x 18
 y 4
 end
@@ -2543,7 +3002,7 @@ arch afloor_blue_left
 x 18
 y 6
 end
-arch awall_win1
+arch awall_3_4
 x 18
 y 6
 end
@@ -2551,7 +3010,7 @@ arch afloor_blue_left
 x 18
 y 7
 end
-arch swall_3_4
+arch awall_win1
 x 18
 y 7
 end
@@ -2575,7 +3034,7 @@ arch afloor_blue_left
 x 18
 y 10
 end
-arch swall_3_4
+arch awall_win1
 x 18
 y 10
 end
@@ -2599,7 +3058,7 @@ arch afloor_blue_left
 x 18
 y 13
 end
-arch swall_3_4
+arch awall_win1
 x 18
 y 13
 end
@@ -2623,7 +3082,7 @@ arch afloor_blue_left
 x 18
 y 16
 end
-arch swall_3_4
+arch awall_win1
 x 18
 y 16
 end
@@ -2651,155 +3110,267 @@ arch awall_3_1
 x 18
 y 19
 end
-arch afloor_black_left
+arch goldfloor
 x 19
 end
-arch mover_5
+arch button_small
 x 19
+connected 1037
 end
-arch afloor_black_left
+arch grate_open_1
+x 19
+connected 1037
+end
+arch goldfloor
 x 19
 y 1
 end
-arch mover_5
+arch button_small
 x 19
 y 1
+connected 1038
 end
-arch afloor_black_left
+arch grate_open_1
+x 19
+y 1
+connected 1038
+end
+arch goldfloor
 x 19
 y 2
 end
-arch mover_5
+arch button_small
 x 19
 y 2
+connected 1039
 end
-arch afloor_black_left
+arch grate_open_1
+x 19
+y 2
+connected 1039
+end
+arch goldfloor
 x 19
 y 3
 end
-arch mover_5
+arch button_small
 x 19
 y 3
+connected 1040
 end
-arch afloor_black_left
+arch grate_open_1
+x 19
+y 3
+connected 1040
+end
+arch goldfloor
 x 19
 y 4
 end
-arch mover_5
+arch button_small
 x 19
 y 4
+connected 1041
 end
-arch afloor_black_left
+arch grate_open_1
+x 19
+y 4
+connected 1041
+end
+arch goldfloor
 x 19
 y 5
 end
-arch mover_5
+arch button_small
 x 19
 y 5
+connected 1042
 end
-arch afloor_black_left
+arch grate_open_1
+x 19
+y 5
+connected 1042
+end
+arch goldfloor
 x 19
 y 6
 end
-arch mover_5
+arch button_small
 x 19
 y 6
+connected 1043
 end
-arch afloor_black_left
+arch grate_open_1
+x 19
+y 6
+connected 1043
+end
+arch goldfloor
 x 19
 y 7
 end
-arch mover_5
+arch button_small
 x 19
 y 7
+connected 1044
 end
-arch afloor_black_left
+arch grate_open_1
+x 19
+y 7
+connected 1044
+end
+arch goldfloor
 x 19
 y 8
 end
-arch mover_5
+arch button_small
 x 19
 y 8
+connected 1045
 end
-arch afloor_black_left
+arch grate_open_1
+x 19
+y 8
+connected 1045
+end
+arch goldfloor
 x 19
 y 9
 end
-arch mover_5
+arch button_small
 x 19
 y 9
+connected 1046
 end
-arch afloor_black_left
+arch grate_open_1
+x 19
+y 9
+connected 1046
+end
+arch goldfloor
 x 19
 y 10
 end
-arch mover_5
+arch button_small
 x 19
 y 10
+connected 1047
 end
-arch afloor_black_left
+arch grate_open_1
+x 19
+y 10
+connected 1047
+end
+arch goldfloor
 x 19
 y 11
 end
-arch mover_5
+arch button_small
 x 19
 y 11
+connected 1048
 end
-arch afloor_black_left
+arch grate_open_1
+x 19
+y 11
+connected 1048
+end
+arch goldfloor
 x 19
 y 12
 end
-arch mover_5
+arch button_small
 x 19
 y 12
+connected 1049
 end
-arch afloor_black_left
+arch grate_open_1
+x 19
+y 12
+connected 1049
+end
+arch goldfloor
 x 19
 y 13
 end
-arch mover_5
+arch button_small
 x 19
 y 13
+connected 1050
 end
-arch afloor_black_left
+arch grate_open_1
+x 19
+y 13
+connected 1050
+end
+arch goldfloor
+name Dancing Sword
+slaying dancingsword_stoned
+food 1
 x 19
 y 14
+connected 27
+activate_on_release 0
 end
-arch mover_5
+arch button_small
 x 19
 y 14
+connected 1051
 end
-arch afloor_black_left
+arch grate_open_1
+x 19
+y 14
+connected 1051
+end
+arch goldfloor
 x 19
 y 15
 end
-arch mover_5
+arch button_small
 x 19
 y 15
+connected 1052
 end
-arch afloor_black_left
+arch grate_open_1
+x 19
+y 15
+connected 1052
+end
+arch goldfloor
 x 19
 y 16
 end
-arch mover_5
+arch button_small
 x 19
 y 16
+connected 1053
 end
-arch afloor_black_left
+arch grate_open_1
+x 19
+y 16
+connected 1053
+end
+arch goldfloor
 x 19
 y 17
 end
-arch mover_5
+arch button_small
 x 19
 y 17
+connected 1054
+end
+arch grate_open_1
+x 19
+y 17
+connected 1054
 end
 arch afloor_black_left
 x 19
 y 18
 end
 arch teleporter
-hp 16
-sp 17
+hp 12
+sp 11
 x 19
 y 18
 end

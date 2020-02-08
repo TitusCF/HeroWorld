@@ -584,6 +584,17 @@ arch afloor_black_left
 x 1
 y 25
 end
+arch creator
+x 1
+y 25
+connected 11999110
+activate_on_release 0
+arch blue_key
+name Figurine Room A Pass
+slaying figurine_room_a
+face card.111
+end
+end
 arch afloor_black_left
 x 1
 y 26
@@ -1281,6 +1292,17 @@ end
 arch afloor_black_left
 x 5
 y 25
+end
+arch creator
+x 5
+y 25
+connected 11990099
+activate_on_release 0
+arch blue_key
+name Figurine Room B Pass
+slaying figurine_room_b
+face card.111
+end
 end
 arch afloor_black_left
 x 5
@@ -3542,6 +3564,21 @@ x 9
 y 13
 connected 1119990
 end
+arch check_inv
+slaying figurine_room_a
+x 9
+y 13
+last_heal 1
+move_block all
+end
+arch creator
+x 9
+y 13
+connected 67584
+activate_on_release 0
+arch awall_0
+end
+end
 arch whiterugfloor1
 x 9
 y 14
@@ -4169,6 +4206,16 @@ arch blacklostlabfloor7
 x 12
 y 11
 end
+arch creator
+x 12
+y 11
+connected 67584
+activate_on_release 0
+arch teleporter
+hp 11
+sp 18
+end
+end
 arch whiterugfloor1
 x 12
 y 12
@@ -4272,6 +4319,17 @@ end
 arch afloor_black_left
 x 12
 y 25
+end
+arch creator
+x 12
+y 25
+connected 112299999
+activate_on_release 0
+arch blue_key
+name Figurine Room C Pass
+slaying figurine_room_c
+face card.111
+end
 end
 arch afloor_black_left
 x 12
@@ -4962,6 +5020,17 @@ end
 arch afloor_black_left
 x 16
 y 25
+end
+arch creator
+x 16
+y 25
+connected 114499999
+activate_on_release 0
+arch blue_key
+name Figurine Room D Pass
+slaying figurine_room_d
+face card.111
+end
 end
 arch afloor_black_left
 x 16
@@ -10276,6 +10345,21 @@ x 37
 y 13
 connected 2229013
 end
+arch check_inv
+slaying figurine_room_b
+x 37
+y 13
+last_heal 1
+move_block all
+end
+arch creator
+x 37
+y 13
+connected 6758400
+activate_on_release 0
+arch awall_0
+end
+end
 arch whiterugfloor1
 x 37
 y 14
@@ -10692,6 +10776,16 @@ end
 arch blacklostlabfloor7
 x 40
 y 11
+end
+arch creator
+x 40
+y 11
+connected 6758400
+activate_on_release 0
+arch teleporter
+hp 39
+sp 18
+end
 end
 arch whiterugfloor1
 x 40
@@ -16386,6 +16480,21 @@ x 65
 y 13
 connected 1122999799
 end
+arch check_inv
+slaying figurine_room_c
+x 65
+y 13
+last_heal 1
+move_block all
+end
+arch creator
+x 65
+y 13
+connected 67584009
+activate_on_release 0
+arch awall_0
+end
+end
 arch whiterugfloor1
 x 65
 y 14
@@ -16802,6 +16911,16 @@ end
 arch blacklostlabfloor7
 x 68
 y 11
+end
+arch creator
+x 68
+y 11
+connected 67584009
+activate_on_release 0
+arch teleporter
+hp 67
+sp 18
+end
 end
 arch whiterugfloor1
 x 68
@@ -22500,6 +22619,21 @@ x 93
 y 13
 connected 110099999
 end
+arch check_inv
+slaying figurine_room_d
+x 93
+y 13
+last_heal 1
+move_block all
+end
+arch creator
+x 93
+y 13
+connected 67584008
+activate_on_release 0
+arch awall_0
+end
+end
 arch whiterugfloor1
 x 93
 y 14
@@ -22916,6 +23050,16 @@ end
 arch blacklostlabfloor7
 x 96
 y 11
+end
+arch creator
+x 96
+y 11
+connected 67584008
+activate_on_release 0
+arch teleporter
+hp 95
+sp 19
+end
 end
 arch whiterugfloor1
 x 96

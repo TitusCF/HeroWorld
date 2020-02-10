@@ -7,7 +7,7 @@ height 50
 enter_x 1
 enter_y 1
 msg
-Modified: 2020-02-08 Acer
+Modified: 2020-02-10 Acer
 endmsg
 outdoor 1
 tile_path_1 world_107_122
@@ -6700,6 +6700,10 @@ arch flagstone
 x 25
 y 19
 end
+arch river_bridge_we
+x 25
+y 19
+end
 arch grass
 x 25
 y 20
@@ -7741,7 +7745,7 @@ x 29
 y 22
 elevation 2664
 end
-arch grass
+arch flagstone
 x 29
 y 23
 elevation 2171
@@ -7755,12 +7759,12 @@ sp 22
 x 29
 y 23
 end
-arch grass
+arch flagstone
 x 29
 y 24
 elevation 1285
 end
-arch grass
+arch flagstone
 x 29
 y 25
 elevation 646
@@ -8002,22 +8006,22 @@ arch flagstone
 x 30
 y 19
 end
-arch grass
+arch flagstone
 x 30
 y 20
 elevation 2067
 end
-arch grass
+arch flagstone
 x 30
 y 21
 elevation 2436
 end
-arch grass
+arch flagstone
 x 30
 y 22
 elevation 2227
 end
-arch grass
+arch flagstone
 x 30
 y 23
 elevation 1683
@@ -8027,28 +8031,27 @@ x 30
 y 24
 elevation 1368
 end
-arch grass
+arch flagstone
 x 30
 y 25
 elevation 2372
 end
-arch grass
+arch flagstone
 x 30
 y 26
 end
-arch grass
+arch flagstone
 x 30
 y 27
 elevation 2953
 end
-arch grass
+arch flagstone
 x 30
 y 28
 end
-arch tree
+arch flagstone
 x 30
 y 29
-elevation 789
 end
 arch flagstone
 x 30
@@ -8275,7 +8278,7 @@ x 31
 y 22
 elevation 2324
 end
-arch grass
+arch flagstone
 x 31
 y 23
 elevation 421
@@ -8285,7 +8288,7 @@ x 31
 y 24
 elevation 1775
 end
-arch grass
+arch flagstone
 x 31
 y 25
 elevation 1312
@@ -8555,17 +8558,17 @@ x 32
 y 22
 elevation 292
 end
-arch grass
+arch flagstone
 x 32
 y 23
 elevation 2509
 end
-arch grass
+arch flagstone
 x 32
 y 24
 elevation 312
 end
-arch grass
+arch flagstone
 x 32
 y 25
 end
@@ -8828,7 +8831,7 @@ x 33
 y 23
 elevation 187
 end
-arch grass
+arch flagstone
 x 33
 y 24
 end
@@ -9106,16 +9109,16 @@ x 34
 y 22
 elevation 1191
 end
-arch tree
+arch flagstone
 x 34
 y 23
 elevation 194
 end
-arch grass
+arch flagstone
 x 34
 y 24
 end
-arch grass
+arch flagstone
 x 34
 y 25
 end
@@ -9370,17 +9373,25 @@ x 35
 y 22
 elevation 1509
 end
-arch grass
+arch flagstone
 x 35
 y 23
 elevation 2746
 end
-arch grass
+arch flagstone
 x 35
 y 24
 elevation 1509
 end
-arch grass
+arch r_house2
+name Brest Bank
+slaying /brest/shops/bank
+hp 10
+sp 19
+x 35
+y 24
+end
+arch flagstone
 x 35
 y 25
 elevation 1509
@@ -9617,17 +9628,17 @@ x 36
 y 22
 elevation 1217
 end
-arch grass
+arch flagstone
 x 36
 y 23
 elevation 1198
 end
-arch grass
+arch flagstone
 x 36
 y 24
 elevation 2646
 end
-arch grass
+arch flagstone
 x 36
 y 25
 elevation 236
@@ -9871,19 +9882,10 @@ x 37
 y 23
 elevation 2256
 end
-arch grass
+arch flagstone
 x 37
 y 24
 elevation 46
-end
-arch lamppost
-name Street Lamp
-name_pl Street Lamp
-msg
-Property of Brest Lighting Department
-endmsg
-x 37
-y 24
 end
 arch grass
 x 37

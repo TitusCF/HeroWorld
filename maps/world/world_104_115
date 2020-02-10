@@ -12,7 +12,7 @@ Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Dec 16 20:41:49 2001
 arch
-Modified: 2020-02-07 Acer
+Modified: 2020-02-10 Acer
 endmsg
 outdoor 1
 tile_path_1 world_104_114
@@ -12873,19 +12873,18 @@ arch cobblestones
 x 49
 y 36
 end
-arch fountain
-name Tituss' pool
-x 49
-y 36
-speed_left -41.599998
-tag scorn
-end
 arch invis_exit
+name Tituss' pool
 slaying /fountain
+face fountain.111
+animation fountain
 hp 7
 sp 6
 x 49
 y 36
+invisible 0
+anim_speed 2
+client_anim_random 1
 end
 arch cobblestones
 x 49

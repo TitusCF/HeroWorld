@@ -101,7 +101,7 @@ elif plarch == 'cockatrice_5':
     isplayer = 2
 elif plarch == 'cockatrice_6':
     isplayer = 2			    
-elif plarch == 'cockatrice_small':
+elif plarch == 'purple_worm':
     isplayer = 2
 else:
     #statue = Crossfire.CreateObjectByName("generic_stoned")

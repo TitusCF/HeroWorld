@@ -1,0 +1,551 @@
+arch map
+name nethack_2
+msg
+Creator: Gnat the Gnu
+Email: gnu@foo.bar
+Date: Sat May  5 16:44:39 2001
+endmsg
+x 6
+end
+arch snake
+name gecko
+end
+arch gnome
+name gnome
+Con 1
+hp 10
+maxhp 10
+exp 30
+y 1
+speed 0.250000
+attacktype 1
+resist_fire 0
+resist_cold 0
+resist_confusion 0
+run_away 85
+reflect_spell 0
+can_cast_spell 0
+end
+arch dog
+name coyote
+maxhp 2
+exp 5
+dam 2
+y 2
+end
+arch serp_man
+name Iguana
+Con 1
+hp 15
+maxhp 15
+exp 100
+y 4
+randomitems none
+end
+arch dwarf
+name dwarf zombie
+hp 20
+maxhp 20
+exp 50
+y 5
+attacktype 4128
+end
+arch dwarf
+hp 25
+maxhp 25
+y 6
+end
+arch mouse
+name rabid rat
+hp 10
+wc -3
+y 7
+speed 0.300000
+randomitems needle_diseases
+generator 0
+end
+arch papergolem
+name paper golem
+hp 25
+maxhp 25
+y 9
+resist_magic 0
+resist_fire -100
+end
+arch gnome
+name gnome lord
+Con 1
+hp 50
+maxhp 10
+exp 100
+dam 8
+wc 2
+ac -1
+y 10
+speed 0.250000
+attacktype 1
+resist_fire 0
+resist_cold 0
+resist_confusion 0
+run_away 85
+reflect_spell 0
+can_cast_spell 0
+end
+arch wight
+name Barrow wight
+y 11
+end
+arch ogre
+name bugbear
+y 12
+end
+arch pixie
+name wood nymph
+y 13
+end
+arch slime
+name red mold
+exp 17
+dam 2
+ac 6
+x 1
+attacktype 1029
+resist_fire 100
+end
+arch light_guard
+name Keystone Kop
+Con 0
+hp 20
+maxhp 0
+exp 40
+dam 8
+x 1
+y 1
+unaggressive 0
+sleep 0
+end
+arch generate_serp_man
+name gas spore
+exp 25
+x 1
+y 2
+generator 0
+end
+arch mouse
+name wererat
+hp 8
+x 1
+y 4
+generator 0
+end
+arch guard_ant
+name Giant Ant
+hp 10
+exp 30
+dam 8
+x 1
+y 5
+end
+arch holy_servant
+name homunculus
+hp 25
+maxhp 25
+x 1
+y 6
+end
+arch centipede
+x 1
+y 7
+end
+arch holy_servant
+name straw golem
+hp 25
+maxhp 25
+x 1
+y 9
+resist_magic 0
+resist_fire -100
+end
+arch gnome
+name gnomish wizard
+Con 1
+hp 50
+maxhp 10
+exp 100
+dam 8
+wc 2
+ac -1
+x 1
+y 10
+speed 0.250000
+attacktype 1
+resist_fire 0
+resist_cold 0
+resist_confusion 0
+randomitems rich
+run_away 85
+reflect_spell 0
+can_cast_spell 0
+end
+arch ghast
+name ghoul
+exp 250
+x 1
+y 11
+attacktype 4097
+end
+arch imp
+x 1
+y 12
+end
+arch pixie
+name water nymph
+x 1
+y 13
+end
+arch slime
+name brown mold
+exp 17
+dam 2
+ac 6
+x 2
+attacktype 1040
+resist_cold 100
+end
+arch snake
+name garter snake
+x 2
+y 1
+end
+arch child_thief
+name hobbit
+hp 5
+maxhp 5
+x 2
+y 2
+end
+arch giant_bat
+hp 15
+maxhp 15
+exp 50
+dam 7
+x 2
+y 4
+end
+arch dog
+name little dog
+x 2
+y 5
+end
+arch kobold
+name kobold lord
+hp 6
+exp 35
+dam 5
+wc 15
+x 2
+y 6
+level 5
+end
+arch snake
+name baby crocodile
+hp 25
+x 2
+y 9
+end
+arch light_guard
+name Keystone Lieutenant
+Con 0
+maxhp 0
+exp 100
+dam 15
+x 2
+y 10
+speed 0.100000
+unaggressive 0
+sleep 0
+end
+arch elf
+name elf zombie
+Con 0
+hp 80
+exp 300
+dam 10
+x 2
+y 11
+speed 0.200000
+type 0
+attacktype 4192
+monster 1
+undead 1
+end
+arch imp
+name lemure
+hp 55
+exp 250
+dam 4
+x 2
+y 12
+speed 0.150000
+attacktype 4097
+randomitems none
+end
+arch pixie
+name mountain nymph
+x 2
+y 13
+end
+arch slime
+name yellow mold
+x 3
+attacktype 1025
+end
+arch gnome
+name gnome zombie
+Con 1
+hp 10
+maxhp 10
+exp 50
+x 3
+y 1
+speed 0.250000
+attacktype 4128
+resist_fire 0
+resist_cold 0
+resist_confusion 0
+run_away 85
+undead 1
+reflect_spell 0
+can_cast_spell 0
+end
+arch imp
+name manes
+x 3
+y 2
+randomitems none
+end
+arch light_guard
+name Keystone Sergeant
+Con 0
+hp 40
+maxhp 0
+exp 40
+dam 8
+x 3
+y 4
+unaggressive 0
+sleep 0
+end
+arch dog
+name were jackal
+hp 15
+x 3
+y 5
+attacktype 1025
+end
+arch kobold
+name kobold shaman
+hp 6
+exp 50
+dam 5
+wc 15
+x 3
+y 6
+level 5
+attacktype 1025
+end
+arch blob
+name jellyfish
+x 3
+y 9
+speed 0.050000
+end
+arch kobold
+name kobold mummy
+hp 20
+x 3
+y 10
+attacktype 4129
+undead 1
+end
+arch war_ant
+name Fire Ant
+x 3
+y 11
+attacktype 5
+resist_fire 100
+end
+arch imp
+name Quasit
+hp 55
+exp 250
+dam 4
+x 3
+y 12
+speed 0.050000
+attacktype 1025
+randomitems none
+end
+arch orc
+name Uruk-Hai
+hp 40
+exp 250
+dam 8
+wc 5
+ac 0
+x 3
+y 13
+level 4
+end
+arch green_slime
+name green mold
+hp 2
+maxhp 2
+dam 1
+x 4
+end
+arch killer_bee
+x 4
+y 1
+end
+arch kobold
+name large kobold
+hp 4
+maxhp 4
+exp 12
+dam 3
+wc 20
+x 4
+y 2
+end
+arch kobold
+name monkey
+x 4
+y 4
+end
+arch beholder
+name floating eye
+hp 30
+maxhp 30
+exp 200
+dam 8
+x 4
+y 5
+attacktype 4096
+randomitems none
+end
+arch orc
+name hill orc
+hp 15
+dam 5
+x 4
+y 6
+end
+arch fungus
+name shrieker
+x 4
+y 9
+generator 0
+end
+arch orc
+name Mordor Orc
+hp 40
+exp 250
+dam 8
+wc 5
+ac 0
+x 4
+y 12
+level 4
+end
+arch earth_elemental
+name rock piercer
+dam 15
+x 4
+y 13
+end
+arch green_slime
+name acid blob
+hp 2
+maxhp 2
+dam 1
+x 5
+y 1
+end
+arch spider
+name cave spider
+exp 20
+dam 5
+x 5
+y 2
+speed 0.200000
+end
+arch orc
+name orc zombie
+hp 10
+dam 2
+x 5
+y 4
+attacktype 4128
+undead 1
+end
+arch neko
+name kitten
+exp 8
+x 5
+y 5
+end
+arch pet_necro
+name rothe
+hp 10
+maxhp 10
+exp 50
+dam 5
+wc 0
+ac 5
+x 5
+y 6
+level 5
+hitback 0
+end
+arch fungus
+x 5
+y 9
+end
+arch green_slime
+name gray ooze
+maxhp 2
+exp 350
+dam 3
+x 5
+y 10
+attacktype 1109
+end
+arch war_ant
+name Soldier Ant
+x 5
+y 11
+end
+arch orc
+name Orc Shaman
+hp 40
+exp 350
+dam 8
+wc 5
+ac 0
+x 5
+y 12
+level 4
+randomitems rich
+can_cast_spell 1
+sleep 0
+end
+arch cobra
+name Red Naga Hatchling
+exp 250
+dam 5
+x 4
+y 10
+attacktype 1029
+unaggressive 1
+end

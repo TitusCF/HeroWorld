@@ -3,7 +3,7 @@ name <unnamed>
 width 40
 height 40
 msg
-Modified: 2020-02-06 Acer
+Modified: 2020-02-10 Acer
 endmsg
 end
 arch afloor_blue_left
@@ -3351,35 +3351,6 @@ end
 arch afloor_blue_left
 x 13
 y 16
-end
-arch chest
-x 13
-y 16
-randomitems none
-arch barrel
-name Foundation Wall
-name_pl Foundation Walls
-face awall_0.111
-nrof 10
-no_pick 0
-end
-arch bag
-name Wall Eater
-arch altar_trigger
-name Wall Eater
-slaying Foundation Wall
-msg
-Foundation Wall is destroyed
-endmsg
-exp 1
-food 1
-weight 20000
-no_pick 0
-end
-end
-arch awall_0
-no_pick 0
-end
 end
 arch afloor_blue_left
 x 13
@@ -8658,6 +8629,12 @@ end
 arch afloor_blue_left
 x 24
 y 13
+end
+arch purple_worm
+x 24
+y 13
+arch event_attack_purple_worm
+end
 end
 arch afloor_blue_left
 x 24

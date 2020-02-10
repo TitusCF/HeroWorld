@@ -14,8 +14,8 @@ playergetkeys = 1 #Normal buildable buildings have locked areas, if not this wil
 newmapcreated = 1 #Normally a new map is created
 itemswaparchname = 'potato'
 itemswapnumber = '10' #For farms, what nrof number will we look for to swap with another number
-buildonprospect = 1 #Only when building mines
-buildharbor = 1 #Only when building a harbor and when it is found to be the right tile
+buildonprospect = 0 #Only when building mines
+buildharbor = 0 #Only when building a harbor and when it is found to be the right tile
 
 buildingtype = Crossfire.ScriptParameters()
 if (buildingtype == 'test'):

@@ -9,7 +9,7 @@ spellob.Remove()
 #Crossfire.WhoAmI().CastAbility(spellob, Crossfire.WhoAmI().Direction, "")
 #spellob.Remove()
 #Cast create bomb spell (Igniting the bomb at the end of the arrow)
-spellob = Crossfire.CreateObjectByName("spell_create_bomb")
+spellob = Crossfire.CreateObjectByName("spell_hellfire")
 Crossfire.WhoAmI().CastAbility(spellob, 0, "")
 spellob.Remove()
 #Thank you Rednaxela.

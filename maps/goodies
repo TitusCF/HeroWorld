@@ -5720,16 +5720,6 @@ arch afloor_blue_left
 x 24
 y 8
 end
-arch big_hydra
-x 24
-y 8
-speed 0.7
-type 2
-container 10000000
-move_type walk swim boat
-move_allow walk
-passenger_limit 4
-end
 arch afloor_blue_left
 x 24
 y 9
@@ -5753,7 +5743,14 @@ end
 arch purple_worm
 x 24
 y 13
-arch event_attack_purple_worm
+speed 0.7
+type 2
+container 10000000
+move_type walk swim boat
+move_allow walk
+unique 1
+passenger_limit 4
+arch event_attack_orange_worm
 end
 end
 arch afloor_blue_left
@@ -6182,10 +6179,6 @@ x 26
 y 20
 end
 arch afloor_blue_left
-x 26
-y 21
-end
-arch big_hydra
 x 26
 y 21
 end

@@ -5,8 +5,5 @@ spellob = Crossfire.CreateObjectByName("spell_vitriol")
 Crossfire.WhoAmI().CastAbility(spellob, 0, "")
 spellob.Remove()
 #Cast create bomb spell (Igniting the bomb at the end of the arrow)
-spellob = Crossfire.CreateObjectByName("spell_vitriol_splash")
-Crossfire.WhoAmI().CastAbility(spellob, 0, "")
-spellob.Remove()
 #Thank you Rednaxela.
 

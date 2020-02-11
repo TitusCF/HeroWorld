@@ -4,10 +4,6 @@ import Crossfire
 spellob = Crossfire.CreateObjectByName("spell_vitriol")
 Crossfire.WhoAmI().CastAbility(spellob, 0, "")
 spellob.Remove()
-#Fire burning hands "forward" (whatever direction the arrow is going in).
-#spellob = Crossfire.CreateObjectByName("spell_vitriol_splash")
-#Crossfire.WhoAmI().CastAbility(spellob, Crossfire.WhoAmI().Direction, "")
-#spellob.Remove()
 #Cast create bomb spell (Igniting the bomb at the end of the arrow)
 spellob = Crossfire.CreateObjectByName("spell_vitriol_splash")
 Crossfire.WhoAmI().CastAbility(spellob, 0, "")

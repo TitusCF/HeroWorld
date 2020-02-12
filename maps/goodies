@@ -5319,9 +5319,23 @@ arch afloor_blue_left
 x 21
 y 26
 end
-arch afloor_blue_left
+arch afloor_magenta_left
 x 21
 y 27
+end
+arch bones2
+name Spiteful Skull
+msg
+This skull seems to snear at you in disgust...
+endmsg
+dam 0
+x 21
+y 27
+body_arm 0
+arch event_apply
+title Python
+slaying python/tod/replace_in_map.py
+end
 end
 arch afloor_blue_left
 x 21
@@ -6754,6 +6768,12 @@ arch afloor_blue_left
 x 29
 y 27
 end
+arch skeleton
+x 29
+y 27
+sleep 0
+stand_still 1
+end
 arch afloor_blue_left
 x 29
 y 28
@@ -6956,11 +6976,6 @@ arch afloor_blue_left
 x 30
 y 24
 end
-arch dancingsword
-x 30
-y 24
-stand_still 1
-end
 arch afloor_blue_left
 x 30
 y 25
@@ -6969,11 +6984,6 @@ arch afloor_blue_left
 x 30
 y 26
 end
-arch air_elemental
-x 30
-y 26
-stand_still 1
-end
 arch afloor_blue_left
 x 30
 y 27
@@ -6981,11 +6991,6 @@ end
 arch afloor_blue_left
 x 30
 y 28
-end
-arch air_witch
-x 30
-y 28
-stand_still 1
 end
 arch afloor_blue_left
 x 30

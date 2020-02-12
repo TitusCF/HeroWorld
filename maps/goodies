@@ -489,18 +489,6 @@ arch afloor_blue_left
 x 2
 y 7
 end
-arch scroll_new
-name beholder eye
-face behold_eye.111
-x 2
-y 7
-level 10
-arch spell_summon_devil
-msg
-endmsg
-other_arch beholder
-end
-end
 arch afloor_blue_left
 x 2
 y 8
@@ -2562,6 +2550,7 @@ end
 arch awall_0
 x 10
 y 19
+move_block 0
 end
 arch afloor_blue_left
 x 10
@@ -4896,17 +4885,6 @@ arch afloor_blue_left
 x 19
 y 14
 end
-arch t_star1
-name Vitriol Bomb
-face nukebomb.111
-x 19
-y 14
-nrof 10
-arch event_attacks
-title Python
-slaying python/arrows/vitriolarrow.py
-end
-end
 arch afloor_blue_left
 x 19
 y 15
@@ -4918,17 +4896,6 @@ end
 arch afloor_blue_left
 x 19
 y 17
-end
-arch t_star1
-name Icestorm Bomb
-face nukebomb.111
-x 19
-y 17
-nrof 10
-arch event_attacks
-title Python
-slaying python/arrows/icestormarrow.py
-end
 end
 arch afloor_blue_left
 x 19
@@ -5315,17 +5282,6 @@ end
 arch afloor_blue_left
 x 21
 y 17
-end
-arch t_star1
-name Lightning Bomb
-face nukebomb.111
-x 21
-y 17
-nrof 10
-arch event_attacks
-title Python
-slaying python/arrows/lightningarrow.py
-end
 end
 arch afloor_blue_left
 x 21
@@ -5905,10 +5861,6 @@ arch afloor_blue_left
 x 24
 y 28
 end
-arch stair_3_down
-x 24
-y 28
-end
 arch afloor_blue_left
 x 24
 y 29
@@ -6083,10 +6035,6 @@ x 25
 y 27
 end
 arch afloor_blue_left
-x 25
-y 28
-end
-arch archway_tree
 x 25
 y 28
 end

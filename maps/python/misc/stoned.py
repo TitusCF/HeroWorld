@@ -1,9 +1,9 @@
 import Crossfire
 #This script turns players to stone
 #Whenever a new player race is added please update the if/elif part of the script and make a new stoned face and stoned statue arch
-stonedmap = '/planes/stoned'
-stoned_x = 2
-stoned_y = 2
+stonedmap = '/void_space/void_space13'
+stoned_x = 9
+stoned_y = 6
 
 #activator = Crossfire.WhoIsActivator()
 me = Crossfire.WhoIsOther()

@@ -1,7 +1,7 @@
 import Crossfire
 #This script turns players to stone
 #Whenever a new player race is added please update the if/elif part of the script and make a new stoned face and stoned statue arch
-stonedmap = '/void_space/void_space13'
+stonedmap = '/void_space/void_space_13'
 stoned_x = 9
 stoned_y = 6
 

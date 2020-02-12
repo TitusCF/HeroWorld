@@ -389,11 +389,19 @@ arch afloor_blue_left
 x 1
 y 30
 end
+arch bloodreaver
+x 1
+y 30
+end
 arch afloor_blue_left
 x 1
 y 31
 end
 arch afloor_blue_left
+x 1
+y 32
+end
+arch mark_club
 x 1
 y 32
 end
@@ -704,6 +712,10 @@ x 2
 y 31
 end
 arch afloor_blue_left
+x 2
+y 32
+end
+arch dragonclaw_dagger
 x 2
 y 32
 end
@@ -3656,7 +3668,6 @@ arch ench_armour
 x 14
 y 33
 nrof 1000
-identified 1
 end
 arch afloor_blue_left
 x 14
@@ -3765,6 +3776,20 @@ arch afloor_blue_left
 x 15
 y 12
 end
+arch figurine_generic
+name statue
+face d_statue.111
+x 15
+y 12
+level 20
+no_pick 0
+on_use_yield rubble
+race_restriction dwarf_player
+arch spell_summon_pet_monster
+other_arch devil
+randomitems none
+end
+end
 arch afloor_blue_left
 x 15
 y 13
@@ -3811,6 +3836,17 @@ arch afloor_blue_left
 x 15
 y 17
 end
+arch arrow
+name Arrow of Petrify
+name_pl Arrows of Petrify
+x 15
+y 17
+nrof 5
+arch event_attacks
+title Python
+slaying python/misc/stoned.py
+end
+end
 arch afloor_blue_left
 x 15
 y 18
@@ -3819,6 +3855,16 @@ arch afloor_blue_left
 x 15
 y 19
 end
+arch arrow
+name Meteor Swarm Arrow
+x 15
+y 19
+nrof 100
+arch event_attacks
+title Python
+slaying python/arrows/meteorswarmarrow.py
+end
+end
 arch afloor_blue_left
 x 15
 y 20
@@ -3826,6 +3872,14 @@ end
 arch afloor_blue_left
 x 15
 y 21
+end
+arch axe_3
+x 15
+y 21
+arch event_attacks
+title Python
+slaying python/misc/stoned.py
+end
 end
 arch afloor_blue_left
 x 15
@@ -4126,6 +4180,19 @@ arch afloor_blue_left
 x 16
 y 10
 end
+arch scroll
+x 16
+y 10
+nrof 100
+value 3000
+identified 1
+identified_name Scroll of Leveling Wand
+identified_name_pl Scrolls of Leveling Wand
+arch event_apply
+title Python
+slaying /python/items/wand_improvement_scroll.py
+end
+end
 arch afloor_blue_left
 x 16
 y 11
@@ -4157,16 +4224,6 @@ end
 arch afloor_blue_left
 x 16
 y 18
-end
-arch t_dagger
-name throwing dagger of stone
-name_pl throwing daggers of stone
-x 16
-y 18
-arch event_attacks
-title Python
-slaying python/misc/stoned.py
-end
 end
 arch afloor_blue_left
 x 16
@@ -4327,6 +4384,20 @@ arch afloor_blue_left
 x 17
 y 10
 end
+arch scroll
+x 17
+y 10
+nrof 100
+value 3000
+identified 1
+identified_name Scroll of Wand Overcharging
+identified_name_pl Scrolls of Wand Overcharging
+arch event_apply
+name charge
+title Python
+slaying /python/items/wand_improvement_scroll.py
+end
+end
 arch afloor_blue_left
 x 17
 y 11
@@ -4395,6 +4466,17 @@ arch afloor_blue_left
 x 17
 y 17
 end
+arch arrow
+name Arrow of Firebomb
+name_pl Arrows of Firebombs
+x 17
+y 17
+nrof 5
+arch event_attacks
+title Python
+slaying python/arrows/firebombarrow.py
+end
+end
 arch afloor_blue_left
 x 17
 y 18
@@ -4403,6 +4485,16 @@ arch afloor_blue_left
 x 17
 y 19
 end
+arch arrow
+name Icestorm Arrow
+x 17
+y 19
+nrof 100
+arch event_attacks
+title Python
+slaying python/arrows/icestormarrow.py
+end
+end
 arch afloor_blue_left
 x 17
 y 20
@@ -4410,6 +4502,27 @@ end
 arch afloor_blue_left
 x 17
 y 21
+end
+arch wand
+name The Huntsman's Bow
+name_pl The Huntsman's Bows
+msg
+Strange. This bow is obviously a highly treasured artifact,
+yet it has no string...
+endmsg
+face magic_bow.111
+animation magic_bow
+x 17
+y 21
+randomitems none
+identified 1
+arch spell_summon_pet_monster
+name Summon Living Arrow
+msg
+endmsg
+other_arch livingarrow
+randomitems none
+end
 end
 arch afloor_blue_left
 x 17
@@ -4551,12 +4664,6 @@ x 18
 y 8
 end
 arch afloor_blue_left
-x 18
-y 9
-end
-arch blue_key
-name statue
-slaying statue
 x 18
 y 9
 end
@@ -4682,20 +4789,6 @@ arch afloor_blue_left
 x 18
 y 35
 end
-arch baslic
-x 18
-y 35
-speed 0.7
-container 10000000
-move_type walk swim boat
-move_allow walk
-unique 1
-passenger_limit 4
-arch event_attack
-title Python
-slaying python/arrows/firebombarrow.py
-end
-end
 arch afloor_blue_left
 x 18
 y 36
@@ -4792,10 +4885,6 @@ x 19
 y 11
 end
 arch afloor_blue_left
-x 19
-y 12
-end
-arch major_potion_restoration
 x 19
 y 12
 end
@@ -5185,17 +5274,6 @@ arch afloor_blue_left
 x 21
 y 12
 end
-arch scroll_new
-name statue
-face d_statue.111
-x 21
-y 12
-level 20
-race_restriction dwarf_player
-arch spell_summon_devil
-other_arch dwarf
-end
-end
 arch afloor_blue_left
 x 21
 y 13
@@ -5204,17 +5282,6 @@ arch afloor_blue_left
 x 21
 y 14
 end
-arch arrow
-name Arrow of Petrify
-name_pl Arrows of Petrify
-x 21
-y 14
-nrof 5
-arch event_attacks
-title Python
-slaying python/misc/stoned.py
-end
-end
 arch afloor_blue_left
 x 21
 y 15
@@ -5222,17 +5289,6 @@ end
 arch afloor_blue_left
 x 21
 y 16
-end
-arch arrow
-name Arrow of Bomb
-name_pl Arrows of Petrify
-x 21
-y 16
-nrof 5
-arch event_attacks
-title Python
-slaying python/arrows/firebombarrow.py
-end
 end
 arch afloor_blue_left
 x 21
@@ -5297,18 +5353,6 @@ end
 arch afloor_blue_left
 x 21
 y 32
-end
-arch s_ship_black
-x 21
-y 32
-speed 0.7
-container 10000000
-move_type walk swim boat
-passenger_limit 4
-arch event_attack
-title Python
-slaying python/arrows/firebombarrow.py
-end
 end
 arch afloor_blue_left
 x 21
@@ -5421,11 +5465,6 @@ x 22
 y 16
 end
 arch afloor_blue_left
-x 22
-y 17
-end
-arch likanth
-Wis 30
 x 22
 y 17
 end
@@ -5593,25 +5632,11 @@ arch afloor_blue_left
 x 23
 y 13
 end
-arch figurine_generic
-title of Living Arrow
-face arrow.111
-x 23
-y 13
-arch spell_summon_pet_monster
-other_arch livingarrow
-randomitems none
-end
-end
 arch afloor_blue_left
 x 23
 y 14
 end
 arch afloor_blue_left
-x 23
-y 15
-end
-arch livingarrow
 x 23
 y 15
 end
@@ -5628,10 +5653,6 @@ x 23
 y 18
 end
 arch afloor_blue_left
-x 23
-y 19
-end
-arch magic_banned
 x 23
 y 19
 end
@@ -5654,14 +5675,6 @@ end
 arch afloor_blue_left
 x 23
 y 24
-end
-arch axe_3
-x 23
-y 24
-arch event_attacks
-title Python
-slaying python/misc/stoned.py
-end
 end
 arch afloor_blue_left
 x 23
@@ -5774,6 +5787,12 @@ x 24
 y 8
 end
 arch afloor_blue_left
+x 24
+y 9
+end
+arch nukebomb
+name Nukaskull
+face bones2.111
 x 24
 y 9
 end
@@ -5978,26 +5997,6 @@ arch afloor_blue_left
 x 25
 y 14
 end
-arch wand
-name The Huntsman's Bow
-name_pl The Huntsman's Bows
-msg
-Strange. This bow is obviously a highly treasured artifact,
-yet it has no string...
-endmsg
-face magic_bow.111
-animation magic_bow
-food 20
-x 25
-y 14
-level 5
-randomitems none
-identified 1
-arch spell_summon_golem
-name Cloud of Arrows
-other_arch livingarrow
-end
-end
 arch afloor_blue_left
 x 25
 y 15
@@ -6005,18 +6004,6 @@ end
 arch afloor_blue_left
 x 25
 y 16
-end
-arch scroll
-x 25
-y 16
-value 3000
-identified 1
-identified_name Scroll of Leveling Wand
-identified_name_pl Scrolls of Leveling Wand
-arch event_apply
-title Python
-slaying /python/items/wand_improvement_scroll.py
-end
 end
 arch afloor_blue_left
 x 25
@@ -6201,27 +6188,6 @@ arch afloor_blue_left
 x 26
 y 14
 end
-arch wand
-name The Huntsman's Bow
-name_pl The Huntsman's Bows
-msg
-Strange. This bow is obviously a highly treasured artifact,
-yet it has no string...
-endmsg
-face magic_bow.111
-animation magic_bow
-x 26
-y 14
-randomitems none
-identified 1
-arch spell_summon_pet_monster
-name Summon Living Arrow
-msg
-endmsg
-other_arch livingarrow
-randomitems none
-end
-end
 arch afloor_blue_left
 x 26
 y 15
@@ -6229,19 +6195,6 @@ end
 arch afloor_blue_left
 x 26
 y 16
-end
-arch scroll
-x 26
-y 16
-value 3000
-identified 1
-identified_name Scroll of Wand Overcharging
-identified_name_pl Scrolls of Wand Overcharging
-arch event_apply
-name charge
-title Python
-slaying /python/items/wand_improvement_scroll.py
-end
 end
 arch afloor_blue_left
 x 26
@@ -6385,16 +6338,6 @@ arch afloor_blue_left
 x 27
 y 10
 end
-arch arrow
-name Meteor Swarm Arrow
-x 27
-y 10
-nrof 100
-arch event_attacks
-title Python
-slaying python/arrows/meteorswarmarrow.py
-end
-end
 arch afloor_blue_left
 x 27
 y 11
@@ -6402,16 +6345,6 @@ end
 arch afloor_blue_left
 x 27
 y 12
-end
-arch arrow
-name Icestorm Arrow
-x 27
-y 12
-nrof 100
-arch event_attacks
-title Python
-slaying python/arrows/icestormarrow.py
-end
 end
 arch afloor_blue_left
 x 27

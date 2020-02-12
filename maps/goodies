@@ -5967,13 +5967,6 @@ arch afloor_blue_left
 x 25
 y 8
 end
-arch figurine_generic
-x 25
-y 8
-arch spell_nukecrater
-other_arch nukeexplosion
-end
-end
 arch afloor_blue_left
 x 25
 y 9
@@ -6164,6 +6157,21 @@ end
 arch afloor_blue_left
 x 26
 y 8
+end
+arch figurine_generic
+name NukaSkull
+face bones2.111
+x 26
+y 8
+level 115
+arch spell_create_bomb
+other_arch nukecrater
+dam 32000
+level 115
+attacktype 67141
+duration 40
+range 127
+end
 end
 arch afloor_blue_left
 x 26

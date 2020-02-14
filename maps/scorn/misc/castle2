@@ -6,7 +6,7 @@ msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Apr 27 03:35:20 1997
-Modified: 2020-01-28 Acer
+Modified: 2020-02-14 Acer
 endmsg
 end
 arch grass
@@ -1338,7 +1338,7 @@ arch woodfloor2
 x 9
 y 14
 end
-arch stwall_3_1
+arch stwall_2_2_1
 x 9
 y 14
 end
@@ -1581,22 +1581,35 @@ y 5
 end
 arch mage
 name the king
-hp 32767
-maxhp 32767
+face mage.151
 x 11
 y 5
+level 120
 type 0
-resist_physical 99
-resist_magic 100
-resist_fire 100
-resist_electricity 100
-resist_cold 100
-resist_acid 100
-resist_weaponmagic 100
-resist_godpower 99
+move_type walk
 monster 1
 unaggressive 1
-con 126
+no_damage 1
+arch NPCGift
+arch carton_box_1
+name Prince Reward
+arch defender
+end
+end
+arch carton_box_1
+name Archduke Reward
+arch holy_shield
+end
+end
+arch carton_box_1
+name Duke Reward
+arch dragonslayer
+end
+end
+end
+arch npc_dialog
+name scorn/misc/king.msg
+end
 end
 arch woodfloor2
 x 11
@@ -1614,29 +1627,15 @@ arch woodfloor2
 x 11
 y 9
 end
-arch check_inv
-slaying Noble Rank Count
+arch check_floor
+hp 1
 x 11
 y 9
-connected 99
+arch event_trigger
+name scorn/Aristocracy 60-90 99
+title Python
+slaying python/quests/QuestTriggerConnect.py
 end
-arch check_inv
-slaying Noble Rank Duke
-x 11
-y 9
-connected 99
-end
-arch check_inv
-slaying Noble Rank Archduke
-x 11
-y 9
-connected 99
-end
-arch check_inv
-slaying Noble Rank Prince
-x 11
-y 9
-connected 99
 end
 arch woodfloor2
 x 11
@@ -1652,29 +1651,15 @@ arch woodfloor2
 x 11
 y 11
 end
-arch check_inv
-slaying Noble Rank Count
+arch check_floor
+hp 1
 x 11
 y 11
-connected 99
+arch event_trigger
+name scorn/Aristocracy 60-90 99
+title Python
+slaying python/quests/QuestTriggerConnect.py
 end
-arch check_inv
-slaying Noble Rank Duke
-x 11
-y 11
-connected 99
-end
-arch check_inv
-slaying Noble Rank Archduke
-x 11
-y 11
-connected 99
-end
-arch check_inv
-slaying Noble Rank Prince
-x 11
-y 11
-connected 99
 end
 arch woodfloor2
 x 11
@@ -1767,6 +1752,7 @@ arch princess
 name The Queen
 x 12
 y 5
+level 120
 end
 arch woodfloor2
 x 12
@@ -1784,29 +1770,15 @@ arch woodfloor2
 x 12
 y 9
 end
-arch check_inv
-slaying Noble Rank Count
+arch check_floor
+hp 1
 x 12
 y 9
-connected 99
+arch event_trigger
+name scorn/Aristocracy 60-90 99
+title Python
+slaying python/quests/QuestTriggerConnect.py
 end
-arch check_inv
-slaying Noble Rank Duke
-x 12
-y 9
-connected 99
-end
-arch check_inv
-slaying Noble Rank Archduke
-x 12
-y 9
-connected 99
-end
-arch check_inv
-slaying Noble Rank Prince
-x 12
-y 9
-connected 99
 end
 arch woodfloor2
 x 12
@@ -1822,29 +1794,15 @@ arch woodfloor2
 x 12
 y 11
 end
-arch check_inv
-slaying Noble Rank Count
+arch check_floor
+hp 1
 x 12
 y 11
-connected 99
+arch event_trigger
+name scorn/Aristocracy 60-90 99
+title Python
+slaying python/quests/QuestTriggerConnect.py
 end
-arch check_inv
-slaying Noble Rank Duke
-x 12
-y 11
-connected 99
-end
-arch check_inv
-slaying Noble Rank Archduke
-x 12
-y 11
-connected 99
-end
-arch check_inv
-slaying Noble Rank Prince
-x 12
-y 11
-connected 99
 end
 arch woodfloor2
 x 12
@@ -2151,7 +2109,7 @@ arch woodfloor2
 x 14
 y 14
 end
-arch stwall_3_1
+arch stwall_2_2_4
 x 14
 y 14
 end

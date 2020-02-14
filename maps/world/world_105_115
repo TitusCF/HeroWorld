@@ -11,7 +11,7 @@ msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Dec 16 20:53:13 2001
-Modified: 2020-02-10 Acer
+Modified: 2020-02-13 Acer
 endmsg
 outdoor 1
 tile_path_1 world_105_114
@@ -7969,27 +7969,29 @@ arch cobblestones
 x 29
 y 38
 end
-arch wagon
-slaying /scorn/shops/ninjawagon
-hp 4
-sp 2
+arch cobblestones2
 x 29
-y 38
+y 39
+end
+arch cobblestones2
+x 29
+y 40
 end
 arch grass
 x 29
-y 39
+y 41
 elevation 602
 end
-arch brush
-x 29
-y 40
-elevation 2045
-end
-arch woods_3
+arch altar
+name 100 platinum for a driven wagon
+slaying money
+msg
+A wagon rolls out! Climb in and say a direction to travel, like 'east'. Say 'stop' to stop.
+endmsg
+food 5000
 x 29
 y 41
-elevation 679
+connected 1
 end
 arch hills_rocky
 x 29
@@ -8229,25 +8231,46 @@ arch cobblestones
 x 30
 y 38
 end
-arch grass
+arch cobblestones2
 x 30
 y 39
+end
+arch creator
+x 30
+y 39
+connected 1
+lifesave 1
+arch wagon
+name wagon
+speed 3.0
+type 2
+container 5000000
+move_type walk
+move_allow walk
+passenger_limit 2
+arch event_say
+title Python
+slaying /python/items/roll-o-matic.py
+end
+arch event_time
+title Python
+slaying /python/items/roll-o-matic.py
+end
+end
+end
+arch cobblestones2
+x 30
+y 40
+end
+arch grass
+x 30
+y 41
 elevation 1113
 end
 arch ytree_2
 x 30
-y 39
-elevation 5681
-end
-arch woods_3
-x 30
-y 40
-elevation 2865
-end
-arch woods_2
-x 30
 y 41
-elevation 2133
+elevation 5681
 end
 arch woods_3
 x 30

@@ -826,12 +826,9 @@ arch redslate
 x 3
 y 32
 end
-arch woodfloor
-name Shop Floor
+arch redslate
 x 3
 y 33
-unique 1
-is_buildable 1
 end
 arch woodfloor
 x 3
@@ -1093,13 +1090,9 @@ x 4
 y 33
 connected 1
 end
-arch woodfloor
-name buildable woodfloor
-name_pl buildable woodfloor
+arch redslate
 x 4
 y 33
-unique 1
-is_buildable 1
 end
 arch woodfloor
 x 4
@@ -1439,7 +1432,7 @@ y 33
 unique 1
 is_buildable 1
 end
-arch woodfloor
+arch redslate
 x 5
 y 33
 end
@@ -1706,12 +1699,9 @@ arch redcwall_2_1_2
 x 6
 y 32
 end
-arch woodfloor
-name Shop Floor
+arch redslate
 x 6
 y 33
-unique 1
-is_buildable 1
 end
 arch check_inv
 slaying PLAYER_FORCE
@@ -1970,12 +1960,9 @@ arch redcwall_2_1_2
 x 7
 y 32
 end
-arch woodfloor
-name Shop Floor
+arch redslate
 x 7
 y 33
-unique 1
-is_buildable 1
 end
 arch woodfloor
 x 7
@@ -2284,12 +2271,9 @@ arch redcwall_2_1_2
 x 8
 y 32
 end
-arch woodfloor
-name Shop Floor
+arch redslate
 x 8
 y 33
-unique 1
-is_buildable 1
 end
 arch woodfloor
 x 8
@@ -2626,12 +2610,9 @@ arch redcwall_2_1_2
 x 9
 y 32
 end
-arch woodfloor
-name Shop Floor
+arch redslate
 x 9
 y 33
-unique 1
-is_buildable 1
 end
 arch woodfloor
 x 9
@@ -2898,12 +2879,9 @@ arch redcwall_2_1_2
 x 10
 y 32
 end
-arch woodfloor
-name Shop Floor
+arch redslate
 x 10
 y 33
-unique 1
-is_buildable 1
 end
 arch woodfloor
 x 10
@@ -3155,12 +3133,9 @@ arch redcwall_2_1_2
 x 11
 y 32
 end
-arch woodfloor
-name Shop Floor
+arch redslate
 x 11
 y 33
-unique 1
-is_buildable 1
 end
 arch woodfloor
 x 11
@@ -3481,12 +3456,9 @@ arch redcwall_2_1_2
 x 12
 y 32
 end
-arch woodfloor
-name Shop Floor
+arch redslate
 x 12
 y 33
-unique 1
-is_buildable 1
 end
 arch woodfloor
 x 12
@@ -3807,12 +3779,9 @@ arch redcwall_2_1_2
 x 13
 y 32
 end
-arch woodfloor
-name Shop Floor
+arch redslate
 x 13
 y 33
-unique 1
-is_buildable 1
 end
 arch woodfloor
 x 13
@@ -4065,12 +4034,9 @@ arch redcwall_2_2_4
 x 14
 y 32
 end
-arch woodfloor
-name Shop Floor
+arch redslate
 x 14
 y 33
-unique 1
-is_buildable 1
 end
 arch woodfloor
 x 14
@@ -7263,12 +7229,37 @@ x 25
 y 27
 move_on 0
 end
+arch button_trigger
+name Auto Checkout
+race icecube
+x 25
+y 28
+type 64
+last_sp 1
+move_off 0
+arch event_trigger
+name AutoCheckout
+title Python
+slaying /python/pshop/pshop.py
+end
+end
+arch button_trigger
+face shop_mat.111
+x 25
+y 28
+connected 1
+end
 arch woodfloor
 name Shop Floor
 x 25
 y 28
 unique 1
 is_buildable 1
+end
+arch shop_mat
+x 25
+y 28
+move_on 0
 end
 arch woodfloor
 name Shop Floor
@@ -7364,6 +7355,10 @@ arch redslate
 x 26
 y 8
 end
+arch redcwall_1_1
+x 26
+y 8
+end
 arch woodfloor
 name Shop Floor
 x 26
@@ -7371,7 +7366,7 @@ y 9
 unique 1
 is_buildable 1
 end
-arch redcwall_2_1_2
+arch redcwall_4
 x 26
 y 9
 end
@@ -7381,6 +7376,10 @@ x 26
 y 10
 unique 1
 is_buildable 1
+end
+arch redcwall_1_2
+x 26
+y 10
 end
 arch woodfloor
 name Shop Floor
@@ -7641,9 +7640,16 @@ y 9
 unique 1
 is_buildable 1
 end
-arch redcwall_2_1_2
+arch redcityport_a
 x 27
 y 9
+end
+arch check_inv
+slaying PLAYER_FORCE
+x 27
+y 9
+connected 1
+move_block all
 end
 arch woodfloor
 name Shop Floor
@@ -7796,12 +7802,37 @@ x 27
 y 27
 move_on 0
 end
+arch button_trigger
+name Auto Checkout
+race icecube
+x 27
+y 28
+type 64
+last_sp 1
+move_off 0
+arch event_trigger
+name AutoCheckout
+title Python
+slaying /python/pshop/pshop.py
+end
+end
+arch button_trigger
+face shop_mat.111
+x 27
+y 28
+connected 1
+end
 arch woodfloor
 name Shop Floor
 x 27
 y 28
 unique 1
 is_buildable 1
+end
+arch shop_mat
+x 27
+y 28
+move_on 0
 end
 arch woodfloor
 name Shop Floor
@@ -7912,9 +7943,16 @@ y 9
 unique 1
 is_buildable 1
 end
-arch redcwall_2_1_2
+arch redcityport_a
 x 28
 y 9
+end
+arch check_inv
+slaying PLAYER_FORCE
+x 28
+y 9
+connected 1
+move_block all
 end
 arch woodfloor
 name Shop Floor
@@ -8193,7 +8231,15 @@ arch redslate
 x 29
 y 5
 end
+arch redcwall_2_2_2
+x 29
+y 5
+end
 arch redslate
+x 29
+y 6
+end
+arch redcwall_2_1_1
 x 29
 y 6
 end
@@ -8201,7 +8247,15 @@ arch redslate
 x 29
 y 7
 end
+arch redcwall_2_1_1
+x 29
+y 7
+end
 arch redslate
+x 29
+y 8
+end
+arch redcwall_2_1_1
 x 29
 y 8
 end
@@ -8212,7 +8266,7 @@ y 9
 unique 1
 is_buildable 1
 end
-arch redcwall_2_1_2
+arch redcwall_4
 x 29
 y 9
 end
@@ -8222,6 +8276,10 @@ x 29
 y 10
 unique 1
 is_buildable 1
+end
+arch redcwall_1_2
+x 29
+y 10
 end
 arch woodfloor
 name Shop Floor
@@ -8493,7 +8551,7 @@ y 5
 unique 1
 is_buildable 1
 end
-arch redcwall_2_2_1
+arch redcwall_3_1
 x 30
 y 5
 end
@@ -8785,11 +8843,6 @@ end
 arch redslate
 x 31
 y 8
-end
-arch building_wall4
-x 31
-y 8
-nrof 100
 end
 arch woodfloor
 name Shop Floor
@@ -9134,33 +9187,13 @@ arch redslate
 x 32
 y 6
 end
-arch building_brazier
-x 32
-y 6
-nrof 50
-value 0
-end
 arch redslate
 x 32
 y 7
 end
-arch building_firepot
-x 32
-y 7
-nrof 50
-value 0
-end
 arch redslate
 x 32
 y 8
-end
-arch building_brazier
-name Bright Firepot Material
-slaying firepot_bright
-x 32
-y 8
-nrof 50
-value 0
 end
 arch woodfloor
 name Shop Floor

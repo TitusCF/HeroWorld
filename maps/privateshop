@@ -4,7 +4,7 @@ difficulty 1
 region scorn
 darkness 1
 width 50
-height 50
+height 37
 enter_x 17
 enter_y 35
 msg
@@ -2398,32 +2398,12 @@ y 7
 unique 1
 is_buildable 1
 end
-arch depositbox
-name Rent Box
-x 8
-y 7
-material 0
-arch event_close
-name 30
-title Python
-slaying /python/pshop/pshop.py
-end
-end
 arch woodfloor
 name Shop Floor
 x 8
 y 8
 unique 1
 is_buildable 1
-end
-arch statue
-x 8
-y 8
-arch event_say
-name TemplateShop
-title Python
-slaying /python/pshop/entry.py
-end
 end
 arch woodfloor
 name Shop Floor
@@ -13120,91 +13100,6 @@ end
 arch blocked
 x 35
 y 36
-end
-arch button_trigger
-x 37
-y 3
-connected 3
-end
-arch lightningwall_5
-x 37
-y 4
-speed 0.0
-level 10
-connected 3
-arch spell_large_lightning
-end
-end
-arch detector
-slaying lightning
-x 37
-y 5
-connected 2
-end
-arch lightningwall_5
-sp 1
-x 37
-y 6
-speed 0.0
-level 50
-connected 3
-move_block 0
-arch spell_large_lightning
-end
-end
-arch lightningwall_5
-sp 1
-x 37
-y 7
-speed 0.0
-level 50
-connected 3
-move_block 0
-arch spell_large_lightning
-end
-end
-arch lightningwall_5
-sp 1
-x 37
-y 8
-speed 0.0
-level 50
-connected 3
-move_block 0
-arch spell_large_lightning
-end
-end
-arch lightningwall_5
-sp 1
-x 37
-y 9
-speed 0.0
-level 50
-connected 3
-move_block 0
-arch spell_large_lightning
-end
-end
-arch lightningwall_5
-sp 1
-x 37
-y 10
-speed 0.0
-level 50
-connected 3
-move_block 0
-arch spell_large_lightning
-end
-end
-arch lightningwall_5
-sp 1
-x 37
-y 11
-speed 0.0
-level 50
-connected 3
-arch spell_large_lightning
-end
 end
 arch blocked
 x 40

@@ -9802,6 +9802,11 @@ title Python
 slaying /python/pshop/pshop.py
 end
 end
+arch shop_mat
+x 25
+y 27
+move_on 0
+end
 arch woodfloor
 x 25
 y 28
@@ -9819,6 +9824,11 @@ name AutoCheckout
 title Python
 slaying /python/pshop/pshop.py
 end
+end
+arch shop_mat
+x 25
+y 28
+move_on 0
 end
 arch woodfloor
 name Shop Floor
@@ -10615,6 +10625,11 @@ title Python
 slaying /python/pshop/pshop.py
 end
 end
+arch shop_mat
+x 27
+y 27
+move_on 0
+end
 arch woodfloor
 x 27
 y 28
@@ -10632,6 +10647,11 @@ name AutoCheckout
 title Python
 slaying /python/pshop/pshop.py
 end
+end
+arch shop_mat
+x 27
+y 28
+move_on 0
 end
 arch woodfloor
 name Shop Floor
@@ -13056,91 +13076,6 @@ end
 arch blocked
 x 35
 y 36
-end
-arch button_trigger
-x 37
-y 3
-connected 3
-end
-arch lightningwall_5
-x 37
-y 4
-speed 0.0
-level 10
-connected 3
-arch spell_large_lightning
-end
-end
-arch detector
-slaying lightning
-x 37
-y 5
-connected 2
-end
-arch lightningwall_5
-sp 1
-x 37
-y 6
-speed 0.0
-level 50
-connected 3
-move_block 0
-arch spell_large_lightning
-end
-end
-arch lightningwall_5
-sp 1
-x 37
-y 7
-speed 0.0
-level 50
-connected 3
-move_block 0
-arch spell_large_lightning
-end
-end
-arch lightningwall_5
-sp 1
-x 37
-y 8
-speed 0.0
-level 50
-connected 3
-move_block 0
-arch spell_large_lightning
-end
-end
-arch lightningwall_5
-sp 1
-x 37
-y 9
-speed 0.0
-level 50
-connected 3
-move_block 0
-arch spell_large_lightning
-end
-end
-arch lightningwall_5
-sp 1
-x 37
-y 10
-speed 0.0
-level 50
-connected 3
-move_block 0
-arch spell_large_lightning
-end
-end
-arch lightningwall_5
-sp 1
-x 37
-y 11
-speed 0.0
-level 50
-connected 3
-arch spell_large_lightning
-end
 end
 arch blocked
 x 40

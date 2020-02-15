@@ -4,7 +4,7 @@ difficulty 1
 region scorn
 darkness 1
 width 50
-height 38
+height 50
 enter_x 17
 enter_y 35
 msg
@@ -116,12 +116,6 @@ y 33
 end
 arch grass
 y 34
-end
-arch grass
-y 35
-end
-arch blocked
-y 36
 end
 arch grass
 x 1
@@ -399,14 +393,6 @@ x 1
 y 34
 end
 arch grass
-x 1
-y 35
-end
-arch blocked
-x 1
-y 36
-end
-arch grass
 x 2
 end
 arch woodfloor
@@ -678,14 +664,6 @@ x 2
 y 34
 end
 arch grass
-x 2
-y 35
-end
-arch blocked
-x 2
-y 36
-end
-arch grass
 x 3
 end
 arch woodfloor
@@ -837,14 +815,6 @@ end
 arch redcwall_2_1_2
 x 3
 y 34
-end
-arch grass
-x 3
-y 35
-end
-arch blocked
-x 3
-y 36
 end
 arch grass
 x 4
@@ -1103,14 +1073,6 @@ x 4
 y 34
 end
 arch grass
-x 4
-y 35
-end
-arch blocked
-x 4
-y 36
-end
-arch grass
 x 5
 end
 arch woodfloor
@@ -1168,7 +1130,7 @@ y 9
 unique 1
 is_buildable 1
 end
-arch redcwall_3_2
+arch redcwall_2_2_2
 x 5
 y 9
 end
@@ -1449,14 +1411,6 @@ end
 arch redcwall_2_1_2
 x 5
 y 34
-end
-arch grass
-x 5
-y 35
-end
-arch blocked
-x 5
-y 36
 end
 arch grass
 x 6
@@ -1938,14 +1892,6 @@ x 6
 y 34
 end
 arch grass
-x 6
-y 35
-end
-arch blocked
-x 6
-y 36
-end
-arch grass
 x 7
 end
 arch woodfloor
@@ -2102,10 +2048,6 @@ x 7
 y 15
 unique 1
 is_buildable 1
-end
-arch light4
-x 7
-y 15
 end
 arch teleporter
 hp 14
@@ -2411,14 +2353,6 @@ end
 arch redcwall_2_1_2
 x 7
 y 34
-end
-arch grass
-x 7
-y 35
-end
-arch blocked
-x 7
-y 36
 end
 arch grass
 x 8
@@ -2782,14 +2716,6 @@ end
 arch redcwall_2_1_2
 x 8
 y 34
-end
-arch grass
-x 8
-y 35
-end
-arch blocked
-x 8
-y 36
 end
 arch grass
 x 9
@@ -3181,14 +3107,6 @@ end
 arch redcwall_2_1_2
 x 9
 y 34
-end
-arch grass
-x 9
-y 35
-end
-arch blocked
-x 9
-y 36
 end
 arch grass
 x 10
@@ -3661,14 +3579,6 @@ x 10
 y 34
 end
 arch grass
-x 10
-y 35
-end
-arch blocked
-x 10
-y 36
-end
-arch grass
 x 11
 end
 arch woodfloor
@@ -4135,14 +4045,6 @@ x 11
 y 34
 end
 arch grass
-x 11
-y 35
-end
-arch blocked
-x 11
-y 36
-end
-arch grass
 x 12
 end
 arch woodfloor
@@ -4516,14 +4418,6 @@ end
 arch redcwall_2_1_2
 x 12
 y 34
-end
-arch grass
-x 12
-y 35
-end
-arch blocked
-x 12
-y 36
 end
 arch grass
 x 13
@@ -4904,7 +4798,14 @@ arch grass
 x 13
 y 35
 end
-arch blocked
+arch grass
+x 13
+y 36
+end
+arch invis_exit
+slaying REPLACE_ME
+hp 9999
+sp 9999
 x 13
 y 36
 end
@@ -5338,7 +5239,7 @@ arch woodfloor
 x 14
 y 34
 end
-arch redcwall_2_1_2
+arch redcwall_3_3
 x 14
 y 34
 end
@@ -5346,7 +5247,18 @@ arch grass
 x 14
 y 35
 end
-arch blocked
+arch redcwall_1_2
+x 14
+y 35
+end
+arch grass
+x 14
+y 36
+end
+arch invis_exit
+slaying REPLACE_ME
+hp 9999
+sp 9999
 x 14
 y 36
 end
@@ -5707,10 +5619,6 @@ y 27
 unique 1
 is_buildable 1
 end
-arch light4
-x 15
-y 27
-end
 arch teleporter
 hp 14
 sp 2
@@ -5789,11 +5697,25 @@ arch redcwall_2_1_2
 x 15
 y 34
 end
-arch grass
+arch invis_exit
+slaying REPLACE_ME
+hp 9999
+sp 9999
 x 15
 y 35
 end
-arch blocked
+arch woodfloor
+x 15
+y 35
+end
+arch grass
+x 15
+y 36
+end
+arch invis_exit
+slaying REPLACE_ME
+hp 9999
+sp 9999
 x 15
 y 36
 end
@@ -6133,17 +6055,27 @@ arch redcwall_1_3
 x 16
 y 34
 end
-arch grass
+arch invis_exit
+slaying REPLACE_ME
+hp 9999
+sp 9999
 x 16
 y 35
 end
-arch blocked
+arch woodfloor
+x 16
+y 35
+end
+arch grass
 x 16
 y 36
 end
-arch blocked
+arch invis_exit
+slaying REPLACE_ME
+hp 9999
+sp 9999
 x 16
-y 37
+y 36
 end
 arch grass
 x 17
@@ -6462,12 +6394,11 @@ unique 1
 is_buildable 1
 end
 arch teleporter
-hp 14
-sp 2
+hp 19
+sp 28
 x 17
 y 30
-speed 0.000000
-invisible 1
+invisible 0
 connected 11234
 protected 1
 end
@@ -6528,11 +6459,18 @@ y 33
 unique 1
 is_buildable 1
 end
-arch grass
+arch woodfloor
 x 17
 y 34
 end
-arch grass
+arch invis_exit
+slaying REPLACE_ME
+hp 9999
+sp 9999
+x 17
+y 35
+end
+arch woodfloor
 x 17
 y 35
 end
@@ -6540,16 +6478,12 @@ arch grass
 x 17
 y 36
 end
-arch exit
-slaying /world/world_104_115
-hp 48
-sp 35
+arch invis_exit
+slaying REPLACE_ME
+hp 9999
+sp 9999
 x 17
 y 36
-end
-arch blocked
-x 17
-y 37
 end
 arch grass
 x 18
@@ -6758,6 +6692,11 @@ speed 0.000000
 invisible 1
 connected 11234
 protected 1
+end
+arch light4
+x 18
+y 18
+glow_radius 40
 end
 arch woodfloor
 name Shop Floor
@@ -6976,17 +6915,27 @@ arch redcwall_1_4
 x 18
 y 34
 end
-arch grass
+arch invis_exit
+slaying REPLACE_ME
+hp 9999
+sp 9999
 x 18
 y 35
 end
-arch blocked
+arch woodfloor
+x 18
+y 35
+end
+arch grass
 x 18
 y 36
 end
-arch blocked
+arch invis_exit
+slaying REPLACE_ME
+hp 9999
+sp 9999
 x 18
-y 37
+y 36
 end
 arch grass
 x 19
@@ -7429,6 +7378,14 @@ y 33
 unique 1
 is_buildable 1
 end
+arch platinum_converter2
+name Convert to Platinum
+slaying money
+other_arch platinacoin
+food 50
+x 19
+y 33
+end
 arch grass
 x 19
 y 34
@@ -7437,11 +7394,25 @@ arch redcwall_2_1_2
 x 19
 y 34
 end
-arch grass
+arch invis_exit
+slaying REPLACE_ME
+hp 9999
+sp 9999
 x 19
 y 35
 end
-arch blocked
+arch woodfloor
+x 19
+y 35
+end
+arch grass
+x 19
+y 36
+end
+arch invis_exit
+slaying REPLACE_ME
+hp 9999
+sp 9999
 x 19
 y 36
 end
@@ -7670,10 +7641,6 @@ y 22
 unique 1
 is_buildable 1
 end
-arch light4
-x 20
-y 22
-end
 arch teleporter
 hp 14
 sp 2
@@ -7844,7 +7811,7 @@ arch grass
 x 20
 y 34
 end
-arch redcwall_2_1_2
+arch redcwall_3_3
 x 20
 y 34
 end
@@ -7852,7 +7819,18 @@ arch grass
 x 20
 y 35
 end
-arch blocked
+arch redcwall_1_2
+x 20
+y 35
+end
+arch grass
+x 20
+y 36
+end
+arch invis_exit
+slaying REPLACE_ME
+hp 9999
+sp 9999
 x 20
 y 36
 end
@@ -8252,7 +8230,14 @@ arch grass
 x 21
 y 35
 end
-arch blocked
+arch grass
+x 21
+y 36
+end
+arch invis_exit
+slaying REPLACE_ME
+hp 9999
+sp 9999
 x 21
 y 36
 end
@@ -8644,12 +8629,11 @@ unique 1
 is_buildable 1
 end
 arch teleporter
-hp 14
-sp 2
+hp 20
+sp 31
 x 22
 y 30
-speed 0.000000
-invisible 1
+invisible 0
 connected 11234
 protected 1
 end
@@ -8661,12 +8645,11 @@ unique 1
 is_buildable 1
 end
 arch teleporter
-hp 14
-sp 2
+hp 20
+sp 31
 x 22
 y 31
-speed 0.000000
-invisible 1
+invisible 0
 connected 11234
 protected 1
 end
@@ -8692,14 +8675,6 @@ end
 arch redcwall_2_1_2
 x 22
 y 34
-end
-arch grass
-x 22
-y 35
-end
-arch blocked
-x 22
-y 36
 end
 arch woodfloor
 x 23
@@ -9119,14 +9094,6 @@ arch redcwall_2_1_2
 x 23
 y 34
 end
-arch grass
-x 23
-y 35
-end
-arch blocked
-x 23
-y 36
-end
 arch woodfloor
 x 24
 end
@@ -9498,14 +9465,6 @@ end
 arch redcwall_2_1_2
 x 24
 y 34
-end
-arch grass
-x 24
-y 35
-end
-arch blocked
-x 24
-y 36
 end
 arch woodfloor
 x 25
@@ -9930,14 +9889,6 @@ arch redcwall_2_1_2
 x 25
 y 34
 end
-arch grass
-x 25
-y 35
-end
-arch blocked
-x 25
-y 36
-end
 arch woodfloor
 x 26
 end
@@ -10045,10 +9996,6 @@ x 26
 y 13
 unique 1
 is_buildable 1
-end
-arch light4
-x 26
-y 13
 end
 arch teleporter
 hp 14
@@ -10326,14 +10273,6 @@ end
 arch redcwall_2_1_2
 x 26
 y 34
-end
-arch grass
-x 26
-y 35
-end
-arch blocked
-x 26
-y 36
 end
 arch woodfloor
 x 27
@@ -10793,14 +10732,6 @@ arch redcwall_2_1_2
 x 27
 y 34
 end
-arch grass
-x 27
-y 35
-end
-arch blocked
-x 27
-y 36
-end
 arch woodfloor
 x 28
 end
@@ -11179,14 +11110,6 @@ arch redcwall_2_1_2
 x 28
 y 34
 end
-arch grass
-x 28
-y 35
-end
-arch blocked
-x 28
-y 36
-end
 arch woodfloor
 x 29
 end
@@ -11555,14 +11478,6 @@ end
 arch redcwall_2_1_2
 x 29
 y 34
-end
-arch grass
-x 29
-y 35
-end
-arch blocked
-x 29
-y 36
 end
 arch woodfloor
 x 30
@@ -12013,14 +11928,6 @@ end
 arch redcwall_2_1_2
 x 30
 y 34
-end
-arch grass
-x 30
-y 35
-end
-arch blocked
-x 30
-y 36
 end
 arch grass
 x 31

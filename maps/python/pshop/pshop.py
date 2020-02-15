@@ -65,7 +65,7 @@ def Expire():
 	Chest=mymap.ObjectAt(30,8)
 	Chest=GetObjectByName(Chest, "Rent Box")
 	if Chest!=0:
-		Chest.Teleport(mymap, 15,10)
+		Chest.Teleport(mymap, 11,8)
 	for i in range(0,34):
 		for a in range(0,35):
 			b=GetObjectAt(whoami.Map,i,a,'NoBuild')

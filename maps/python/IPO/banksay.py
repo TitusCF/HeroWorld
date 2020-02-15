@@ -89,7 +89,7 @@ if whoami.Name.find("Deposit Box")>-1:
 				
 				Value+=MyInv.Value*MyInv.Quantity
 				MyInv1=MyInv.Below
-				MyInv.Teleport(mymap, 15,3)
+				MyInv.Teleport(mymap, 0,0)
 				MyInv=MyInv1
 			else:
 				MyInv=MyInv.Below

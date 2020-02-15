@@ -9785,10 +9785,6 @@ invisible 1
 connected 11234
 protected 1
 end
-arch woodfloor
-x 25
-y 27
-end
 arch button_trigger
 name Bank Checkout
 race icecube
@@ -9802,14 +9798,17 @@ title Python
 slaying /python/pshop/pshop.py
 end
 end
+arch woodfloor
+name Shop Floor
+x 25
+y 27
+unique 1
+is_buildable 1
+end
 arch shop_mat
 x 25
 y 27
 move_on 0
-end
-arch woodfloor
-x 25
-y 28
 end
 arch button_trigger
 name Auto Checkout
@@ -9824,6 +9823,19 @@ name AutoCheckout
 title Python
 slaying /python/pshop/pshop.py
 end
+end
+arch button_trigger
+face shop_mat.111
+x 25
+y 28
+connected 1
+end
+arch woodfloor
+name Shop Floor
+x 25
+y 28
+unique 1
+is_buildable 1
 end
 arch shop_mat
 x 25
@@ -10607,10 +10619,6 @@ invisible 1
 connected 11234
 protected 1
 end
-arch woodfloor
-x 27
-y 27
-end
 arch button_trigger
 name Auto Checkout
 race icecube
@@ -10624,16 +10632,19 @@ name AutoCheckout
 title Python
 slaying /python/pshop/pshop.py
 end
+end
+arch woodfloor
+name Shop Floor
+x 27
+y 27
+unique 1
+is_buildable 1
 end
 arch shop_mat
 x 27
 y 27
 move_on 0
 end
-arch woodfloor
-x 27
-y 28
-end
 arch button_trigger
 name Auto Checkout
 race icecube
@@ -10647,6 +10658,19 @@ name AutoCheckout
 title Python
 slaying /python/pshop/pshop.py
 end
+end
+arch button_trigger
+face shop_mat.111
+x 27
+y 28
+connected 1
+end
+arch woodfloor
+name Shop Floor
+x 27
+y 28
+unique 1
+is_buildable 1
 end
 arch shop_mat
 x 27

@@ -2379,16 +2379,6 @@ y 3
 unique 1
 is_buildable 1
 end
-arch statue
-x 8
-y 3
-move_block 0
-arch event_say
-name TemplateShop
-title Python
-slaying /python/pshop/entry.py
-end
-end
 arch redslate
 x 8
 y 4
@@ -2407,17 +2397,6 @@ x 8
 y 7
 unique 1
 is_buildable 1
-end
-arch depositbox
-name Rent Box
-x 8
-y 7
-material 0
-arch event_close
-name 30
-title Python
-slaying /python/pshop/pshop.py
-end
 end
 arch woodfloor
 name Shop Floor
@@ -2779,11 +2758,6 @@ arch redcityport_b
 x 9
 y 4
 end
-arch igate_closed_2
-x 9
-y 4
-connected 2
-end
 arch redslate
 x 9
 y 5
@@ -2792,11 +2766,6 @@ arch redcityport_b
 x 9
 y 5
 end
-arch igate_closed_2
-x 9
-y 5
-connected 2
-end
 arch redslate
 x 9
 y 6
@@ -2804,11 +2773,6 @@ end
 arch redcityport_b
 x 9
 y 6
-end
-arch igate_closed_2
-x 9
-y 6
-connected 2
 end
 arch woodfloor
 name Shop Floor
@@ -9821,6 +9785,10 @@ invisible 1
 connected 11234
 protected 1
 end
+arch woodfloor
+x 25
+y 27
+end
 arch button_trigger
 name Bank Checkout
 race icecube
@@ -9835,16 +9803,8 @@ slaying /python/pshop/pshop.py
 end
 end
 arch woodfloor
-name Shop Floor
 x 25
-y 27
-unique 1
-is_buildable 1
-end
-arch shop_mat
-x 25
-y 27
-move_on 0
+y 28
 end
 arch button_trigger
 name Auto Checkout
@@ -9859,24 +9819,6 @@ name AutoCheckout
 title Python
 slaying /python/pshop/pshop.py
 end
-end
-arch button_trigger
-face shop_mat.111
-x 25
-y 28
-connected 1
-end
-arch woodfloor
-name Shop Floor
-x 25
-y 28
-unique 1
-is_buildable 1
-end
-arch shop_mat
-x 25
-y 28
-move_on 0
 end
 arch woodfloor
 name Shop Floor
@@ -10655,6 +10597,10 @@ invisible 1
 connected 11234
 protected 1
 end
+arch woodfloor
+x 27
+y 27
+end
 arch button_trigger
 name Auto Checkout
 race icecube
@@ -10670,16 +10616,8 @@ slaying /python/pshop/pshop.py
 end
 end
 arch woodfloor
-name Shop Floor
 x 27
-y 27
-unique 1
-is_buildable 1
-end
-arch shop_mat
-x 27
-y 27
-move_on 0
+y 28
 end
 arch button_trigger
 name Auto Checkout
@@ -10694,18 +10632,6 @@ name AutoCheckout
 title Python
 slaying /python/pshop/pshop.py
 end
-end
-arch woodfloor
-name Shop Floor
-x 27
-y 28
-unique 1
-is_buildable 1
-end
-arch shop_mat
-x 27
-y 28
-move_on 0
 end
 arch woodfloor
 name Shop Floor

@@ -12,7 +12,7 @@ def GetObjectByName(object, Name):
 		if not object:
 			return 0
 	return object
-	
+
 def find_player(object):
     while (object.Type != 1) : #1 is type 'Player'
         object = object.Above
@@ -29,7 +29,7 @@ def GetObjectAt(Map,X,Y,Name):
 		return Object
 def Expire():
 	global Owner
-	
+
 	Inventory=mymap.ObjectAt(43,2)
 	MailMap=Crossfire.ReadyMap("/planes/IPO_storage")
 	while Inventory!=None:
@@ -38,7 +38,7 @@ def Expire():
 			package.Name="IPO-package F: Your-Private-Shop T: "+Owner
 			Inventory.InsertInto(package)
 			package.Teleport(MailMap,2,2)
-			
+
 		Inventory=Inventory.Above
 	Inventory=mymap.ObjectAt(43,2)
 	while Inventory!=None:
@@ -47,11 +47,11 @@ def Expire():
 			package.Name="IPO-package F: Your-Private-Shop T: "+Owner
 			Inventory.InsertInto(package)
 			package.Teleport(MailMap,2,2)
-			
+
 		Inventory=Inventory.Below
-	
+
 	Dict=CFDB.get("pshop")
-	
+
 	for i in Dict:
 		whoami.Say(i)
 		This=Dict.get(i)
@@ -64,20 +64,20 @@ def Expire():
 				whoami.Say(str(That))
 				if That!=0:
 					That.Teleport(whoami.Map,37,0)
-	
+
 	CFDB.store('pshop',{})
-	Owner="Unowned"		
+	Owner="Unowned"
 	Chest=mymap.ObjectAt(30,8)
 	Chest=GetObjectByName(Chest, "Rent Box")
 	if Chest!=0:
-		Chest.Teleport(mymap, 11,8)
+		Chest.Teleport(mymap, 15,10)
 	for i in range(0,34):
 		for a in range(0,35):
 			b=GetObjectAt(whoami.Map,i,a,'NoBuild')
 			b.Remove
 			b=GetObjectAt(whoami.Map,i,a,'NoSpell')
 			b.Remove()
-	
+
 	GetObjectAt(whoami.Map,30,5,"Brazier material").Remove()
 	GetObjectAt(whoami.Map,30,6,"Firepot material").Remove()
 	GetObjectAt(whoami.Map,30,7,"Bright Firepot Material").Remove()
@@ -88,7 +88,7 @@ def Expire():
 	whoami.Map.ObjectAt(49,7).Teleport(whoami.Map,29,8)
 whoami=Crossfire.WhoAmI()
 
-	
+
 
 activator=Crossfire.WhoIsActivator()
 activatorname=activator.Name
@@ -116,8 +116,8 @@ Days-=DaysPast
 
 if Days<=0:
 	global Owner
-	
-	
+
+
 	Expire()
 
 Variables.Message="Owner: "+Owner+"\nDate: "+str(Today.year)+"-"+str(Today.month)+"-"+str(Today.day)+"\nDays: "+str(Days)
@@ -134,7 +134,7 @@ if activatorname==Owner:
 	else:
 		whoami.Say("Greetings sire, would you like entry?")
 else:
-	
+
 	if Owner!="Unowned":
 		whoami.Say("You are not alowed beyond this point.  The rent will by up in "+str(Days)+" and you may rent it yourself then.  If the current owner doesn't pay, that is.")
 	else:

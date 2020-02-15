@@ -23,10 +23,10 @@ def GetObjectByName(Map,X,Y,Name):
 		return Object
 if Arch!=None:
 	whoami.Value=int(whoami.Value==1)
-	
+
 	Arch.Quantity=Area+1
 
-	
+
 	#def MoveToBottom(object):
 		#object.Say('s')
 		#Dict={}
@@ -35,13 +35,13 @@ if Arch!=None:
 		#object.Say(str(Item))
 		#while Item!=None:
 			#Dict.update({str(Counter):Item})
-			
+
 
 			#Item=Item.Below
 		#for i in list(Dict.values()):
 			#i.Teleport(object.Map,object.X,object.Y)
-			
-	
+
+
 	for i in XRange:
 		for a in YRange:
 			if whoami.Value==1:
@@ -54,15 +54,14 @@ if Arch!=None:
 					TmpArch.Remove()
 				else:
 					whoami.Say("Arch not found at "+str(i)+","+str(a))
-					
-			
+
+
 else:
 	for i in XRange:
 		for a in YRange:
 			t=whoami.Map.ObjectAt(i,a)
-			
+
 			while t!=None:
 				if t.Floor==1:
 					t.Name="Shop Floor"
 				t=t.Above
-			

@@ -4821,11 +4821,17 @@ end
 arch deep_sea
 x 11
 y 27
-elevation -6766
+elevation -6775
 end
-arch sea
+arch rowboat
+name sailing caravel
 x 11
 y 27
+speed 2
+type 2
+container 5000000
+move_type boat
+passenger_limit 3
 end
 arch sea
 x 11
@@ -5114,17 +5120,6 @@ end
 arch deep_sea
 x 12
 y 27
-elevation -6775
-end
-arch rowboat
-name sailing caravel
-x 12
-y 27
-speed 2
-type 2
-container 5000000
-move_type boat
-passenger_limit 3
 end
 arch sea
 x 12
@@ -5381,12 +5376,6 @@ arch deep_sea
 x 13
 y 27
 elevation -6762
-end
-arch fishfood
-name stinking fish
-name_pl stinking fish
-x 13
-y 27
 end
 arch sea
 x 13
@@ -12174,7 +12163,7 @@ y 8
 move_block 0
 end
 arch galleon
-slaying world/world_100_125
+slaying /world/world_100_125
 hp 22
 sp 25
 x 40

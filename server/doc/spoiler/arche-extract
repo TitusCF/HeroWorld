@@ -1,6 +1,0 @@
-{
-	# Norse names should be spelled in Norwegian...
-	if ($2 ~ /mjoellnir/)
-		sub("oe", "{\\o}", $3);
-	printf("%s &%s &%d &%.2f &%s \\\\\n", $3, $10, $5, $11, $4);
-}

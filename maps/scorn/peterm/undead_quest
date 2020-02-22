@@ -1,19 +1,13 @@
 arch map
 name Undead Quest
-difficulty 16
-region scorn
 width 25
 height 21
-enter_x 23
-enter_y 19
 msg
-Created:  2000-06-05
-Modified: 2020-01-30 Acer
+Creator: Gnat the Gnu
+Email: gnu@foo.bar
+Date: Mon Jun  5 21:56:20 2000
+Modified: 2020-02-21 Acer
 endmsg
-maplore
-@quest Scorn Royalty Quest
-the Animator's ring is here
-endmaplore
 end
 arch pstone_1
 end
@@ -335,10 +329,6 @@ arch pstone_1
 x 2
 y 9
 end
-arch generate_skeleton
-x 2
-y 9
-end
 arch pstone_1
 x 2
 y 10
@@ -382,7 +372,7 @@ end
 arch statue
 x 2
 y 15
-move_block 0
+move_block -all
 end
 arch pstone_1
 x 2
@@ -393,10 +383,6 @@ x 2
 y 16
 end
 arch pstone_1
-x 2
-y 17
-end
-arch gravestone
 x 2
 y 17
 end
@@ -473,7 +459,7 @@ end
 arch statue
 x 3
 y 6
-move_block 0
+move_block -all
 end
 arch pstone_1
 x 3
@@ -515,10 +501,6 @@ arch pstone_1
 x 3
 y 14
 end
-arch generate_skeleton
-x 3
-y 14
-end
 arch pstone_1
 x 3
 y 15
@@ -636,7 +618,7 @@ end
 arch statue
 x 4
 y 9
-move_block 0
+move_block -all
 end
 arch pstone_1
 x 4
@@ -670,10 +652,6 @@ arch pstone_1
 x 4
 y 14
 end
-arch gravestone
-x 4
-y 14
-end
 arch pstone_1
 x 4
 y 15
@@ -693,7 +671,7 @@ end
 arch statue
 x 4
 y 17
-move_block 0
+move_block -all
 end
 arch pstone_1
 x 4
@@ -754,7 +732,6 @@ x 5
 y 4
 end
 arch locked_door1
-slaying no_key
 x 5
 y 4
 end
@@ -793,7 +770,7 @@ end
 arch statue
 x 5
 y 9
-move_block 0
+move_block -all
 end
 arch pstone_1
 x 5
@@ -1038,7 +1015,7 @@ end
 arch statue
 x 7
 y 1
-move_block 0
+move_block -all
 end
 arch skeleton
 x 7
@@ -1095,12 +1072,11 @@ end
 arch potion_generic
 name fountain
 face fountain.111
+sp 129
 x 7
 y 8
-material 256
+materialname adamant
 no_pick 1
-arch spell_cause_light_wounds
-end
 end
 arch wraith
 x 7
@@ -1134,10 +1110,6 @@ arch pstone_1
 x 7
 y 12
 end
-arch gravestone
-x 7
-y 12
-end
 arch pstone_1
 x 7
 y 13
@@ -1145,7 +1117,7 @@ end
 arch statue
 x 7
 y 13
-move_block 0
+move_block -all
 end
 arch pstone_1
 x 7
@@ -1472,7 +1444,6 @@ x 9
 y 18
 end
 arch locked_door1
-slaying no_key
 x 9
 y 18
 end
@@ -1545,7 +1516,7 @@ end
 arch statue
 x 10
 y 6
-move_block 0
+move_block -all
 end
 arch pstone_1
 x 10
@@ -1660,7 +1631,7 @@ end
 arch statue
 x 11
 y 1
-move_block 0
+move_block -all
 end
 arch skeleton
 x 11
@@ -1892,10 +1863,6 @@ arch pstone_1
 x 12
 y 9
 end
-arch gravestone
-x 12
-y 9
-end
 arch generate_zombie
 x 12
 y 9
@@ -1923,7 +1890,7 @@ end
 arch statue
 x 12
 y 12
-move_block 0
+move_block -all
 end
 arch pstone_1
 x 12
@@ -2160,7 +2127,7 @@ end
 arch statue
 x 14
 y 1
-move_block 0
+move_block -all
 end
 arch skeleton
 x 14
@@ -2297,7 +2264,7 @@ end
 arch statue
 x 14
 y 19
-move_block 0
+move_block -all
 end
 arch ghost
 x 14
@@ -2348,7 +2315,7 @@ end
 arch statue
 x 15
 y 4
-move_block 0
+move_block -all
 end
 arch skeleton
 x 15
@@ -2580,10 +2547,6 @@ arch pstone_1
 x 16
 y 10
 end
-arch gravestone
-x 16
-y 10
-end
 arch pstone_1
 x 16
 y 11
@@ -2659,10 +2622,6 @@ arch dun_2_1_2
 x 17
 end
 arch pstone_1
-x 17
-y 1
-end
-arch gravestone
 x 17
 y 1
 end
@@ -2860,10 +2819,6 @@ arch pstone_1
 x 18
 y 4
 end
-arch gravestone
-x 18
-y 4
-end
 arch skeleton
 x 18
 y 4
@@ -3219,7 +3174,7 @@ end
 arch statue
 x 20
 y 10
-move_block 0
+move_block -all
 end
 arch pstone_1
 x 20
@@ -3505,15 +3460,7 @@ arch pstone_1
 x 22
 y 6
 end
-arch gravestone
-x 22
-y 6
-end
 arch pstone_1
-x 22
-y 7
-end
-arch gravestone
 x 22
 y 7
 end
@@ -3554,10 +3501,6 @@ x 22
 y 13
 end
 arch pstone_1
-x 22
-y 14
-end
-arch gravestone
 x 22
 y 14
 end

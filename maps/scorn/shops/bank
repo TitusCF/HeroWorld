@@ -8,7 +8,7 @@ msg
 Creator: skud the great
 Email: tvangod@ecst.csuchico.edu
 Date: Sun Oct 10 17:09:35 1993
-Modified: 2020-02-15 Acer
+Modified: 2020-02-22 Acer
 endmsg
 end
 arch dungeon_magic
@@ -1174,24 +1174,12 @@ arch cobblestones2
 x 6
 y 5
 end
-arch dungeon_magic
-x 6
-y 5
-end
 arch depositbox
-name Deposit Box
 x 6
 y 5
-container 99999999999999
-arch event_apply
-name Apply
-title Python
-slaying /python/IPO/banksay.py
-end
 arch event_close
-name Close
 title Python
-slaying /python/IPO/banksay.py
+slaying /python/items/deposit_box.py
 end
 end
 arch dungeon_magic

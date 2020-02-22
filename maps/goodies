@@ -3,7 +3,7 @@ name <unnamed>
 width 40
 height 40
 msg
-Modified: 2020-02-14 Acer
+Modified: 2020-02-22 Acer
 endmsg
 end
 arch afloor_blue_left
@@ -5305,6 +5305,15 @@ arch afloor_blue_left
 x 21
 y 17
 end
+arch cloak
+title of cockatrice flesh
+x 21
+y 17
+arch event_attack
+title Python
+slaying python/misc/stoned.py
+end
+end
 arch afloor_blue_left
 x 21
 y 18
@@ -5492,6 +5501,15 @@ end
 arch afloor_blue_left
 x 22
 y 17
+end
+arch cloak
+title of swallowing
+x 22
+y 17
+arch event_attack
+title Python
+slaying python/misc/swallow_whole.py
+end
 end
 arch afloor_blue_left
 x 22
@@ -5800,10 +5818,6 @@ x 24
 y 5
 end
 arch afloor_blue_left
-x 24
-y 6
-end
-arch mountain_rubble
 x 24
 y 6
 end
@@ -6215,7 +6229,6 @@ name_pl NukaSkulls
 face bones2.111
 x 26
 y 8
-nrof 100
 level 115
 is_thrown 1
 identified 1

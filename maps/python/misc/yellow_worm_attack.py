@@ -11,8 +11,4 @@ spellob = Crossfire.CreateObjectByName("spell_vitriol_splash")
 worm.CastAbility(spellob, 0, "")
 spellob.Remove()
 
-item = Crossfire.CreateObjectByName("acid_pool")
-item.InsertInto(worm)
-worm.Drop(item)
-
 

@@ -3,7 +3,7 @@ name <unnamed>
 width 40
 height 40
 msg
-Modified: 2020-02-22 Acer
+Modified: 2020-02-23 Acer
 endmsg
 end
 arch afloor_blue_left
@@ -6564,19 +6564,14 @@ arch afloor_magenta_left
 x 28
 y 5
 end
-arch bones2
-name Overcharge Skull
-msg
-This skull seems to snear at you in disgust...
-endmsg
-dam 0
+arch chest
 x 28
 y 5
-body_arm 0
-arch event_apply
-name charge
+randomitems none
+container 150000
+arch event_attack
 title Python
-slaying /python/items/wand_improvement_scroll.py
+slaying python/misc/swallow_whole.py
 end
 end
 arch afloor_blue_left

@@ -5523,6 +5523,21 @@ arch afloor_blue_left
 x 22
 y 20
 end
+arch dragon_exit
+x 22
+y 20
+speed 0.7
+type 2
+container 10000000
+move_type walk swim boat
+move_allow walk
+unique 1
+passenger_limit 4
+arch event_attacks
+title Python
+slaying python/arrows/firebombarrow.py
+end
+end
 arch afloor_blue_left
 x 22
 y 21

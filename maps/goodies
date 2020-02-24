@@ -4917,6 +4917,29 @@ arch afloor_blue_left
 x 19
 y 19
 end
+arch magic_banned
+x 19
+y 19
+end
+arch dragon_exit
+x 19
+y 19
+speed 0.7
+type 2
+container 10000000
+move_type walk swim boat
+move_allow walk
+unique 1
+passenger_limit 4
+arch event_trigger
+name connected 495867321
+title Python
+slaying python/arrows/icestormarrow.py
+end
+arch button_lever
+connected 495867321
+end
+end
 arch afloor_blue_left
 x 19
 y 20
@@ -6083,24 +6106,6 @@ end
 arch afloor_blue_left
 x 25
 y 20
-end
-arch dragon
-x 25
-y 20
-speed 0.7
-type 2
-container 10000000
-move_type walk swim boat
-move_allow walk
-monster 0
-unaggressive 1
-stand_still 1
-passenger_limit 4
-arch event_say
-name @match fire
-title Python
-slaying python/arrows/missileswarmarrow.py
-end
 end
 arch afloor_blue_left
 x 25

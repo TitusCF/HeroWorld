@@ -6,7 +6,7 @@ height 30
 enter_x 1
 enter_y 6
 msg
-Modified: 2020-02-16 Acer
+Modified: 2020-02-24 Acer
 endmsg
 end
 arch woodfloor
@@ -1863,7 +1863,7 @@ arch potion_heal
 x 10
 y 23
 no_pick 1
-arch spell_major_healing
+arch spell_minor_healing
 end
 end
 arch woodfloor
@@ -2563,8 +2563,7 @@ name Scrolls
 msg
 Magic scrolls like the one to your south contain one spell each.
 When you read a magic scroll, the spell is cast and the scroll crumbles into dust.
-Take this scroll and save it for some time when you have collected a bunch of
-items and want to cast detect magic on them.
+
 endmsg
 x 14
 y 20
@@ -2586,8 +2585,11 @@ sp 76
 x 14
 y 23
 level 1
+randomitems none
 no_pick 1
 identified 1
+arch spell_detect_magic
+end
 end
 arch woodfloor
 x 14

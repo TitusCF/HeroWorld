@@ -8,7 +8,7 @@ msg
 Creator: MikeeUSA
 Email: gnu@foo.bar
 Date: Tue Jul 18 17:02:19 2006
-Modified: 2020-01-25 Acer
+Modified: 2020-02-24 Acer
 endmsg
 end
 arch dungeon_magic
@@ -414,18 +414,11 @@ x 2
 y 10
 end
 arch depositbox
-name Deposit Box
 x 2
 y 10
-arch event_apply
-name Apply
-title Python
-slaying /python/IPO/banksay.py
-end
 arch event_close
-name Close
 title Python
-slaying /python/IPO/banksay.py
+slaying /python/items/deposit_box.py
 end
 end
 arch dungeon_magic
@@ -1782,7 +1775,7 @@ x 11
 y 13
 end
 arch sign
-name REALTY OFFICE
+name REALITY OFFICE
 x 11
 y 13
 end

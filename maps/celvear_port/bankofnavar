@@ -8,6 +8,7 @@ msg
 Creator: MikeeUSA
 Email: gnu@foo.bar
 Date: Tue Jul 18 17:02:19 2006
+Modified: 2020-02-24 Acer
 endmsg
 end
 arch dungeon_magic
@@ -413,6 +414,18 @@ end
 arch dungeon_floor
 x 2
 y 10
+end
+arch dungeon_magic
+x 2
+y 10
+end
+arch depositbox
+x 2
+y 10
+arch event_close
+title Python
+slaying /python/items/deposit_box.py
+end
 end
 arch dungeon_magic
 x 2
@@ -1267,12 +1280,12 @@ y 14
 end
 arch exit
 slaying /world/world_126_116
-is_animated 0
 hp 5
 sp 23
 x 7
 y 15
 speed_left -0.400000
+is_animated 0
 end
 arch dungeon_magic
 x 7
@@ -1358,19 +1371,50 @@ arch dungeon_floor
 x 8
 y 6
 end
-arch a_townsman
-name Dabir
-name_pl Sal
-title acount manager
+arch guildmaster
+name Bank Teller
+race none
 msg
 @match *
-Sorry the abacus is down at the moment...
+
 endmsg
+face woman.151
+hp 100
+maxhp 100
+dam 0
 x 8
 y 6
+level 150
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
+resist_weaponmagic 100
+resist_ghosthit 100
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_turn_undead 100
+resist_fear 100
+resist_deplete 100
+resist_death 100
+resist_chaos 100
+resist_godpower 100
+resist_holyword 100
+resist_blind 100
+randomitems none
+pick_up 0
+undead 1
+can_cast_spell 0
+stand_still 1
+no_damage 1
 arch event_say
 title Python
-slaying /python/IPO/nbanksay.py
+slaying /python/IPO/banksay.py
 end
 end
 arch dungeon_magic
@@ -1419,12 +1463,12 @@ y 14
 end
 arch exit
 slaying /world/world_126_116
-is_animated 0
 hp 5
 sp 23
 x 8
 y 15
 speed_left -0.400000
+is_animated 0
 end
 arch dungeon_magic
 x 8

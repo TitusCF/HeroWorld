@@ -4,7 +4,7 @@ width 21
 height 21
 msg
 Created:  2010-09-15 Chad
-Modified: 2020-02-10 Acer
+Modified: 2020-02-24 Acer
 endmsg
 end
 arch cobblestones2
@@ -1914,19 +1914,11 @@ x 12
 y 14
 end
 arch depositbox
-name Deposit Box
 x 12
 y 14
-container 99999999999999
-arch event_apply
-name Apply
-title Python
-slaying /python/IPO/banksay.py
-end
 arch event_close
-name Close
 title Python
-slaying /python/IPO/banksay.py
+slaying /python/items/deposit_box.py
 end
 end
 arch cobblestones2

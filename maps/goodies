@@ -3,7 +3,7 @@ name <unnamed>
 width 40
 height 40
 msg
-Modified: 2020-02-23 Acer
+Modified: 2020-02-24 Acer
 endmsg
 end
 arch afloor_blue_left
@@ -4927,11 +4927,13 @@ move_type walk swim boat
 move_allow walk
 unique 1
 passenger_limit 4
-arch button_lever
-arch event_apply
+arch event_trigger
 title Python
 slaying python/arrows/firebombarrow.py
+connected 45636
 end
+arch button_handle
+connected 45636
 end
 end
 arch afloor_blue_left

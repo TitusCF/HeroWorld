@@ -3,7 +3,7 @@ name <unnamed>
 width 40
 height 40
 msg
-Modified: 2020-02-25 Acer
+Modified: 2020-03-02 Acer
 endmsg
 end
 arch afloor_blue_left
@@ -4917,25 +4917,6 @@ arch afloor_blue_left
 x 19
 y 19
 end
-arch dragon_exit
-x 19
-y 19
-speed 0.7
-type 2
-container 10000000
-move_type walk swim boat
-move_allow walk
-unique 1
-passenger_limit 4
-arch event_trigger
-name 45636
-title Python
-slaying python/arrows/firebombarrow.py
-end
-arch button_handle
-connected 45636
-end
-end
 arch afloor_blue_left
 x 19
 y 20
@@ -6593,6 +6574,17 @@ end
 arch afloor_blue_left
 x 28
 y 3
+end
+arch chest_2
+name Bone Chest
+Str 100
+x 28
+y 3
+material 2048
+arch event_attack
+title Python
+slaying python/misc/swallow_whole.py
+end
 end
 arch afloor_blue_left
 x 28

@@ -10,7 +10,7 @@ msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Jun  2 20:54:49 2002
-Modified: 2019-01-31 Acer
+Modified: 2020-03-04 Acer
 endmsg
 outdoor 1
 tile_path_1 world_124_114
@@ -616,6 +616,8 @@ arch store_magic_west
 name Mystery Shop
 name_pl Mystery Shop
 slaying /lostwages/mystery
+hp 1
+sp 3
 x 2
 y 2
 end
@@ -659,6 +661,8 @@ arch inn_west
 name hotel california
 name_pl hotel california
 slaying /lostwages/inn
+hp 8
+sp 15
 x 2
 y 6
 end
@@ -1012,10 +1016,6 @@ arch brush
 x 3
 y 5
 elevation 316
-end
-arch grass
-x 3
-y 5
 end
 arch s_shop1
 name locked shop
@@ -1871,6 +1871,8 @@ arch collesium
 name pet arena
 name_pl pet arena
 slaying /lostwages/petarena
+hp 0
+sp 9
 x 5
 y 8
 end
@@ -2583,6 +2585,8 @@ arch castle_a_western
 name The Lucky Dragonness
 name_pl The Lucky Dragonness
 slaying /lostwages/casino
+hp 8
+sp 0
 x 7
 y 3
 end
@@ -3761,10 +3765,6 @@ x 10
 y 8
 elevation 826
 end
-arch grass
-x 10
-y 8
-end
 arch s_shop1
 name IPO
 name_pl pet shop of horrors
@@ -4072,83 +4072,35 @@ arch pstone_2
 x 11
 y 4
 end
-arch brush
+arch pstone_2
 x 11
 y 5
 elevation 102
 end
-arch grass
-x 11
-y 5
-end
 arch pstone_2
-x 11
-y 5
-end
-arch brush
 x 11
 y 6
 elevation 102
 end
-arch grass
-x 11
-y 6
-end
 arch pstone_2
-x 11
-y 6
-end
-arch brush
 x 11
 y 7
 elevation 102
 end
-arch grass
-x 11
-y 7
-end
 arch pstone_2
-x 11
-y 7
-end
-arch brush
 x 11
 y 8
 elevation 102
 end
-arch grass
-x 11
-y 8
-end
 arch pstone_2
-x 11
-y 8
-end
-arch brush
 x 11
 y 9
 elevation 102
 end
-arch grass
-x 11
-y 9
-end
 arch pstone_2
-x 11
-y 9
-end
-arch brush
 x 11
 y 10
 elevation 102
-end
-arch grass
-x 11
-y 10
-end
-arch pstone_2
-x 11
-y 10
 end
 arch brush
 x 11
@@ -4395,6 +4347,8 @@ arch barrack_small_goth_shop
 name alchemy shop
 name_pl alchemy shop
 slaying /lostwages/alchemy
+hp 1
+sp 1
 x 12
 y 2
 end
@@ -4458,18 +4412,10 @@ endmsg
 x 12
 y 6
 end
-arch brush
-x 12
-y 7
-elevation 826
-end
-arch grass
-x 12
-y 7
-end
 arch pstone_2
 x 12
 y 7
+elevation 826
 end
 arch brush
 x 12
@@ -4813,18 +4759,10 @@ arch palm
 x 13
 y 6
 end
-arch brush
-x 13
-y 7
-elevation 102
-end
-arch grass
-x 13
-y 7
-end
 arch pstone_2
 x 13
 y 7
+elevation 102
 end
 arch brush
 x 13
@@ -5458,7 +5396,7 @@ end
 arch sea
 x 15
 y 7
-elevation -174
+elevation -125
 end
 arch pier_3_4
 x 15

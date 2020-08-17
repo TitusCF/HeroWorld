@@ -11,7 +11,7 @@ msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Dec 16 20:53:13 2001
-Modified: 2020-02-13 Acer
+Modified: 2020-08-17 Acer
 endmsg
 outdoor 1
 tile_path_1 world_105_114
@@ -97,10 +97,16 @@ arch sea
 y 18
 elevation -2256
 end
+arch dungeon_magic
+y 19
+end
 arch sea
 y 19
 end
 arch dungeon_magic
+y 20
+end
+arch magic_banned
 y 20
 end
 arch sea1
@@ -110,6 +116,9 @@ arch pier_2_2_3
 y 20
 end
 arch dungeon_magic
+y 21
+end
+arch magic_banned
 y 21
 end
 arch sea1
@@ -124,6 +133,9 @@ end
 arch sea1
 y 22
 end
+arch dungeon_magic
+y 23
+end
 arch cobblestones
 y 23
 end
@@ -132,17 +144,44 @@ y 23
 move_block all
 no_pick 1
 end
+arch magic_banned
+y 24
+end
+arch dungeon_magic
+y 24
+end
 arch cobblestones2
 y 24
+end
+arch magic_banned
+y 25
+end
+arch dungeon_magic
+y 25
 end
 arch cobblestones2
 y 25
 end
-arch cobblestones2
+arch dungeon_magic
 y 26
 end
 arch cobblestones2
+y 26
+end
+arch magic_banned
 y 27
+end
+arch dungeon_magic
+y 27
+end
+arch cobblestones2
+y 27
+end
+arch magic_banned
+y 28
+end
+arch dungeon_magic
+y 28
 end
 arch cobblestones2
 y 28
@@ -150,8 +189,17 @@ end
 arch barn
 y 28
 end
+arch magic_banned
+y 29
+end
+arch dungeon_magic
+y 29
+end
 arch cobblestones2
 y 29
+end
+arch dungeon_magic
+y 30
 end
 arch cobblestones2
 y 30
@@ -159,11 +207,17 @@ end
 arch cwall_3_3
 y 30
 end
+arch dungeon_magic
+y 31
+end
 arch cobblestones2
 y 31
 end
 arch dwall_2_2_4
 y 31
+end
+arch dungeon_magic
+y 32
 end
 arch grass
 y 32
@@ -178,38 +232,68 @@ Port Area of Scorn
 endmsg
 y 32
 end
+arch dungeon_magic
+y 33
+end
 arch cobblestones
 y 33
+end
+arch dungeon_magic
+y 34
 end
 arch cobblestones
 y 34
 end
+arch dungeon_magic
+y 35
+end
 arch cobblestones
 y 35
 end
 arch lamppost
 y 35
+end
+arch dungeon_magic
+y 36
 end
 arch cobblestones
 y 36
 end
+arch dungeon_magic
+y 37
+end
 arch cobblestones
 y 37
 end
 arch lamppost
 y 37
 end
+arch dungeon_magic
+y 38
+end
 arch cobblestones
 y 38
+end
+arch dungeon_magic
+y 39
 end
 arch cobblestones2
 y 39
 end
-arch grass
+arch dungeon_magic
 y 40
 end
 arch grass
+y 40
+end
+arch dungeon_magic
 y 41
+end
+arch grass
+y 41
+end
+arch dungeon_magic
+y 42
 end
 arch grass
 y 42
@@ -217,32 +301,56 @@ end
 arch cwall_2_1_2
 y 42
 end
+arch dungeon_magic
+y 43
+end
 arch grass
 y 43
 end
 arch tree5
 y 43
+end
+arch dungeon_magic
+y 44
 end
 arch cobblestones
 y 44
 end
+arch dungeon_magic
+y 45
+end
 arch cobblestones
 y 45
+end
+arch dungeon_magic
+y 46
 end
 arch grass
 y 46
 end
+arch dungeon_magic
+y 47
+end
 arch grass
 y 47
 end
 arch tree5
 y 47
 end
+arch dungeon_magic
+y 48
+end
 arch grass
 y 48
 end
 arch tree5
 y 48
+end
+arch magic_banned
+y 49
+end
+arch dungeon_magic
+y 49
 end
 arch yellow_0
 y 49
@@ -345,6 +453,14 @@ x 1
 y 18
 elevation -2256
 end
+arch magic_banned
+x 1
+y 19
+end
+arch dungeon_magic
+x 1
+y 19
+end
 arch sea
 x 1
 y 19
@@ -357,6 +473,10 @@ arch dungeon_magic
 x 1
 y 20
 end
+arch magic_banned
+x 1
+y 20
+end
 arch sea1
 x 1
 y 20
@@ -366,6 +486,10 @@ x 1
 y 20
 end
 arch dungeon_magic
+x 1
+y 21
+end
+arch magic_banned
 x 1
 y 21
 end
@@ -381,6 +505,10 @@ arch dungeon_magic
 x 1
 y 22
 end
+arch magic_banned
+x 1
+y 22
+end
 arch sea
 x 1
 y 22
@@ -388,6 +516,14 @@ end
 arch pier_2_1_1
 x 1
 y 22
+end
+arch magic_banned
+x 1
+y 23
+end
+arch dungeon_magic
+x 1
+y 23
 end
 arch sea
 x 1
@@ -397,17 +533,41 @@ arch pier_2_1_1
 x 1
 y 23
 end
-arch cobblestones2
+arch magic_banned
+x 1
+y 24
+end
+arch dungeon_magic
 x 1
 y 24
 end
 arch cobblestones2
 x 1
+y 24
+end
+arch dungeon_magic
+x 1
 y 25
 end
 arch cobblestones2
 x 1
+y 25
+end
+arch dungeon_magic
+x 1
 y 26
+end
+arch cobblestones2
+x 1
+y 26
+end
+arch magic_banned
+x 1
+y 27
+end
+arch dungeon_magic
+x 1
+y 27
 end
 arch cobblestones2
 x 1
@@ -417,13 +577,33 @@ arch house_2
 x 1
 y 27
 end
-arch cobblestones2
+arch magic_banned
+x 1
+y 28
+end
+arch dungeon_magic
 x 1
 y 28
 end
 arch cobblestones2
 x 1
+y 28
+end
+arch magic_banned
+x 1
 y 29
+end
+arch dungeon_magic
+x 1
+y 29
+end
+arch cobblestones2
+x 1
+y 29
+end
+arch dungeon_magic
+x 1
+y 30
 end
 arch cobblestones2
 x 1
@@ -433,49 +613,93 @@ arch cwall_2_1_2
 x 1
 y 30
 end
-arch grass
+arch dungeon_magic
 x 1
 y 31
 end
 arch grass
 x 1
+y 31
+end
+arch dungeon_magic
+x 1
+y 32
+end
+arch grass
+x 1
 y 32
 end
 arch cobblestones2
 x 1
 y 32
 end
-arch cobblestones
+arch dungeon_magic
 x 1
 y 33
 end
 arch cobblestones
 x 1
+y 33
+end
+arch dungeon_magic
+x 1
 y 34
 end
 arch cobblestones
+x 1
+y 34
+end
+arch dungeon_magic
 x 1
 y 35
 end
 arch cobblestones
 x 1
+y 35
+end
+arch dungeon_magic
+x 1
 y 36
 end
 arch cobblestones
+x 1
+y 36
+end
+arch dungeon_magic
 x 1
 y 37
 end
 arch cobblestones
 x 1
+y 37
+end
+arch dungeon_magic
+x 1
 y 38
+end
+arch cobblestones
+x 1
+y 38
+end
+arch dungeon_magic
+x 1
+y 39
 end
 arch cobblestones2
 x 1
 y 39
 end
+arch dungeon_magic
+x 1
+y 40
+end
 arch grass
 x 1
 y 40
+end
+arch dungeon_magic
+x 1
+y 41
 end
 arch grass
 x 1
@@ -485,6 +709,10 @@ arch tree4
 x 1
 y 41
 end
+arch dungeon_magic
+x 1
+y 42
+end
 arch grass
 x 1
 y 42
@@ -492,6 +720,10 @@ end
 arch cwall_3_3
 x 1
 y 42
+end
+arch dungeon_magic
+x 1
+y 43
 end
 arch grass
 x 1
@@ -501,6 +733,10 @@ arch cityport_b
 x 1
 y 43
 end
+arch dungeon_magic
+x 1
+y 44
+end
 arch grass
 x 1
 y 44
@@ -509,13 +745,25 @@ arch cwall_2_2_1
 x 1
 y 44
 end
+arch dungeon_magic
+x 1
+y 45
+end
 arch cobblestones
 x 1
 y 45
 end
+arch dungeon_magic
+x 1
+y 46
+end
 arch grass
 x 1
 y 46
+end
+arch dungeon_magic
+x 1
+y 47
 end
 arch grass
 x 1
@@ -525,6 +773,10 @@ arch tree5
 x 1
 y 47
 end
+arch dungeon_magic
+x 1
+y 48
+end
 arch grass
 x 1
 y 48
@@ -532,6 +784,10 @@ end
 arch light4
 x 1
 y 48
+end
+arch dungeon_magic
+x 1
+y 49
 end
 arch yellow_0
 x 1
@@ -654,6 +910,14 @@ container 10000000
 move_type boat
 passenger_limit 2
 end
+arch magic_banned
+x 2
+y 19
+end
+arch dungeon_magic
+x 2
+y 19
+end
 arch sea
 x 2
 y 19
@@ -682,37 +946,93 @@ arch dungeon_magic
 x 2
 y 22
 end
-arch sea
+arch magic_banned
 x 2
 y 22
 end
 arch sea
 x 2
+y 22
+end
+arch magic_banned
+x 2
 y 23
 end
-arch cobblestones2
+arch dungeon_magic
+x 2
+y 23
+end
+arch sea
+x 2
+y 23
+end
+arch magic_banned
+x 2
+y 24
+end
+arch dungeon_magic
 x 2
 y 24
 end
 arch cobblestones2
 x 2
+y 24
+end
+arch dungeon_magic
+x 2
 y 25
 end
 arch cobblestones2
+x 2
+y 25
+end
+arch dungeon_magic
 x 2
 y 26
 end
 arch cobblestones2
 x 2
+y 26
+end
+arch magic_banned
+x 2
+y 27
+end
+arch dungeon_magic
+x 2
 y 27
 end
 arch cobblestones2
+x 2
+y 27
+end
+arch magic_banned
+x 2
+y 28
+end
+arch dungeon_magic
 x 2
 y 28
 end
 arch cobblestones2
 x 2
+y 28
+end
+arch magic_banned
+x 2
 y 29
+end
+arch dungeon_magic
+x 2
+y 29
+end
+arch cobblestones2
+x 2
+y 29
+end
+arch dungeon_magic
+x 2
+y 30
 end
 arch cobblestones2
 x 2
@@ -722,6 +1042,10 @@ arch cwall_2_1_2
 x 2
 y 30
 end
+arch dungeon_magic
+x 2
+y 31
+end
 arch grass
 x 2
 y 31
@@ -729,6 +1053,10 @@ end
 arch lamppost
 x 2
 y 31
+end
+arch dungeon_magic
+x 2
+y 32
 end
 arch grass
 x 2
@@ -738,13 +1066,25 @@ arch cobblestones2
 x 2
 y 32
 end
-arch cobblestones
+arch dungeon_magic
 x 2
 y 33
 end
 arch cobblestones
 x 2
+y 33
+end
+arch dungeon_magic
+x 2
 y 34
+end
+arch cobblestones
+x 2
+y 34
+end
+arch dungeon_magic
+x 2
+y 35
 end
 arch cobblestones
 x 2
@@ -754,25 +1094,49 @@ arch lamppost
 x 2
 y 36
 end
-arch cobblestones
+arch dungeon_magic
 x 2
 y 36
 end
 arch cobblestones
 x 2
+y 36
+end
+arch dungeon_magic
+x 2
 y 37
+end
+arch cobblestones
+x 2
+y 37
+end
+arch dungeon_magic
+x 2
+y 38
 end
 arch cobblestones
 x 2
 y 38
 end
+arch dungeon_magic
+x 2
+y 39
+end
 arch cobblestones2
 x 2
 y 39
 end
+arch dungeon_magic
+x 2
+y 40
+end
 arch grass
 x 2
 y 40
+end
+arch dungeon_magic
+x 2
+y 41
 end
 arch brush
 x 2
@@ -782,6 +1146,10 @@ arch statue
 x 2
 y 41
 end
+arch dungeon_magic
+x 2
+y 42
+end
 arch grass
 x 2
 y 42
@@ -789,6 +1157,10 @@ end
 arch dwall_2_1_2
 x 2
 y 42
+end
+arch dungeon_magic
+x 2
+y 43
 end
 arch cobblestones
 x 2
@@ -798,6 +1170,10 @@ arch tower_tob
 x 2
 y 43
 end
+arch dungeon_magic
+x 2
+y 44
+end
 arch cobblestones
 x 2
 y 44
@@ -806,21 +1182,37 @@ arch cityport_a
 x 2
 y 44
 end
+arch dungeon_magic
+x 2
+y 45
+end
 arch cobblestones
 x 2
 y 45
 end
-arch grass
+arch dungeon_magic
 x 2
 y 46
 end
 arch grass
 x 2
+y 46
+end
+arch dungeon_magic
+x 2
+y 47
+end
+arch grass
+x 2
 y 47
 end
 arch tree5
 x 2
 y 47
+end
+arch dungeon_magic
+x 2
+y 48
 end
 arch grass
 x 2
@@ -829,6 +1221,10 @@ end
 arch tree5
 x 2
 y 48
+end
+arch dungeon_magic
+x 2
+y 49
 end
 arch yellow_0
 x 2
@@ -932,9 +1328,17 @@ x 3
 y 18
 elevation -2256
 end
+arch dungeon_magic
+x 3
+y 19
+end
 arch sea
 x 3
 y 19
+end
+arch dungeon_magic
+x 3
+y 20
 end
 arch sea
 x 3
@@ -956,21 +1360,49 @@ arch sea1
 x 3
 y 22
 end
+arch dungeon_magic
+x 3
+y 23
+end
 arch sea
 x 3
 y 23
 end
-arch cobblestones2
+arch magic_banned
+x 3
+y 24
+end
+arch dungeon_magic
 x 3
 y 24
 end
 arch cobblestones2
 x 3
+y 24
+end
+arch dungeon_magic
+x 3
 y 25
 end
 arch cobblestones2
 x 3
+y 25
+end
+arch dungeon_magic
+x 3
 y 26
+end
+arch cobblestones2
+x 3
+y 26
+end
+arch magic_banned
+x 3
+y 27
+end
+arch dungeon_magic
+x 3
+y 27
 end
 arch cobblestones2
 x 3
@@ -980,6 +1412,14 @@ arch lamppost
 x 3
 y 27
 end
+arch magic_banned
+x 3
+y 28
+end
+arch dungeon_magic
+x 3
+y 28
+end
 arch cobblestones2
 x 3
 y 28
@@ -988,9 +1428,21 @@ arch barrack_up
 x 3
 y 28
 end
+arch magic_banned
+x 3
+y 29
+end
+arch dungeon_magic
+x 3
+y 29
+end
 arch cobblestones2
 x 3
 y 29
+end
+arch dungeon_magic
+x 3
+y 30
 end
 arch cobblestones2
 x 3
@@ -1000,45 +1452,89 @@ arch cwall_2_1_2
 x 3
 y 30
 end
+arch dungeon_magic
+x 3
+y 31
+end
 arch grass
 x 3
 y 31
 end
-arch cobblestones2
+arch dungeon_magic
 x 3
 y 32
 end
 arch cobblestones2
 x 3
+y 32
+end
+arch dungeon_magic
+x 3
 y 33
 end
 arch cobblestones2
+x 3
+y 33
+end
+arch dungeon_magic
 x 3
 y 34
 end
 arch cobblestones2
 x 3
+y 34
+end
+arch dungeon_magic
+x 3
 y 35
+end
+arch cobblestones2
+x 3
+y 35
+end
+arch dungeon_magic
+x 3
+y 36
 end
 arch cobblestones2
 x 3
 y 36
 end
+arch dungeon_magic
+x 3
+y 37
+end
 arch cobblestones
 x 3
 y 37
 end
-arch cobblestones2
+arch dungeon_magic
 x 3
 y 38
 end
 arch cobblestones2
 x 3
+y 38
+end
+arch dungeon_magic
+x 3
 y 39
+end
+arch cobblestones2
+x 3
+y 39
+end
+arch dungeon_magic
+x 3
+y 40
 end
 arch grass
 x 3
 y 40
+end
+arch dungeon_magic
+x 3
+y 41
 end
 arch grass
 x 3
@@ -1048,6 +1544,10 @@ arch tree4
 x 3
 y 41
 end
+arch dungeon_magic
+x 3
+y 42
+end
 arch grass
 x 3
 y 42
@@ -1056,6 +1556,10 @@ arch cwall_2_2_3
 x 3
 y 42
 end
+arch dungeon_magic
+x 3
+y 43
+end
 arch grass
 x 3
 y 43
@@ -1063,6 +1567,10 @@ end
 arch dwall_2_1_1
 x 3
 y 43
+end
+arch dungeon_magic
+x 3
+y 44
 end
 arch grass
 x 3
@@ -1072,6 +1580,10 @@ arch cwall_3_4
 x 3
 y 44
 end
+arch dungeon_magic
+x 3
+y 45
+end
 arch grass
 x 3
 y 45
@@ -1079,6 +1591,10 @@ end
 arch dwall_2_1_1
 x 3
 y 45
+end
+arch dungeon_magic
+x 3
+y 46
 end
 arch grass
 x 3
@@ -1088,6 +1604,10 @@ arch dwall_2_1_1
 x 3
 y 46
 end
+arch dungeon_magic
+x 3
+y 47
+end
 arch grass
 x 3
 y 47
@@ -1096,6 +1616,10 @@ arch dwall_2_1_1
 x 3
 y 47
 end
+arch dungeon_magic
+x 3
+y 48
+end
 arch grass
 x 3
 y 48
@@ -1103,6 +1627,10 @@ end
 arch dwall_2_1_1
 x 3
 y 48
+end
+arch dungeon_magic
+x 3
+y 49
 end
 arch grass
 x 3
@@ -1210,17 +1738,29 @@ x 4
 y 18
 elevation -2256
 end
-arch sea
+arch dungeon_magic
 x 4
 y 19
 end
 arch sea
 x 4
+y 19
+end
+arch dungeon_magic
+x 4
 y 20
 end
 arch sea
 x 4
 y 20
+end
+arch sea
+x 4
+y 20
+end
+arch dungeon_magic
+x 4
+y 21
 end
 arch sea
 x 4
@@ -1234,9 +1774,21 @@ arch sea1
 x 4
 y 22
 end
+arch dungeon_magic
+x 4
+y 23
+end
 arch sea
 x 4
 y 23
+end
+arch magic_banned
+x 4
+y 24
+end
+arch dungeon_magic
+x 4
+y 24
 end
 arch cobblestones2
 x 4
@@ -1254,25 +1806,61 @@ endmsg
 x 4
 y 25
 end
-arch cobblestones2
+arch dungeon_magic
 x 4
 y 25
 end
 arch cobblestones2
 x 4
+y 25
+end
+arch dungeon_magic
+x 4
 y 26
 end
 arch cobblestones2
+x 4
+y 26
+end
+arch magic_banned
+x 4
+y 27
+end
+arch dungeon_magic
 x 4
 y 27
 end
 arch cobblestones2
 x 4
+y 27
+end
+arch magic_banned
+x 4
+y 28
+end
+arch dungeon_magic
+x 4
 y 28
 end
 arch cobblestones2
 x 4
+y 28
+end
+arch magic_banned
+x 4
 y 29
+end
+arch dungeon_magic
+x 4
+y 29
+end
+arch cobblestones2
+x 4
+y 29
+end
+arch dungeon_magic
+x 4
+y 30
 end
 arch cobblestones2
 x 4
@@ -1282,17 +1870,33 @@ arch cwall_2_1_2
 x 4
 y 30
 end
-arch grass
+arch dungeon_magic
 x 4
 y 31
 end
 arch grass
 x 4
+y 31
+end
+arch dungeon_magic
+x 4
 y 32
+end
+arch grass
+x 4
+y 32
+end
+arch dungeon_magic
+x 4
+y 33
 end
 arch cobblestones2
 x 4
 y 33
+end
+arch dungeon_magic
+x 4
+y 34
 end
 arch grass
 x 4
@@ -1307,61 +1911,121 @@ x 4
 y 34
 unique 1
 end
+arch dungeon_magic
+x 4
+y 35
+end
 arch grass
 x 4
 y 35
+end
+arch dungeon_magic
+x 4
+y 36
 end
 arch cobblestones2
 x 4
 y 36
 end
+arch dungeon_magic
+x 4
+y 37
+end
 arch cobblestones
 x 4
 y 37
 end
-arch cobblestones2
+arch dungeon_magic
 x 4
 y 38
 end
 arch cobblestones2
 x 4
+y 38
+end
+arch dungeon_magic
+x 4
 y 39
 end
 arch cobblestones2
+x 4
+y 39
+end
+arch dungeon_magic
 x 4
 y 40
 end
 arch cobblestones2
 x 4
+y 40
+end
+arch dungeon_magic
+x 4
 y 41
 end
 arch cobblestones2
+x 4
+y 41
+end
+arch dungeon_magic
 x 4
 y 42
 end
 arch cobblestones2
 x 4
+y 42
+end
+arch dungeon_magic
+x 4
 y 43
 end
 arch cobblestones2
+x 4
+y 43
+end
+arch dungeon_magic
 x 4
 y 44
 end
 arch cobblestones2
 x 4
+y 44
+end
+arch dungeon_magic
+x 4
 y 45
 end
 arch cobblestones2
+x 4
+y 45
+end
+arch dungeon_magic
 x 4
 y 46
 end
 arch cobblestones2
 x 4
+y 46
+end
+arch dungeon_magic
+x 4
 y 47
+end
+arch cobblestones2
+x 4
+y 47
+end
+arch dungeon_magic
+x 4
+y 48
 end
 arch grass
 x 4
 y 48
+end
+arch dungeon_magic
+x 4
+y 49
 end
 arch grass
 x 4
@@ -1482,19 +2146,35 @@ x 5
 y 18
 elevation -2256
 end
-arch sea
+arch dungeon_magic
 x 5
 y 19
 end
 arch sea
 x 5
+y 19
+end
+arch dungeon_magic
+x 5
 y 20
+end
+arch sea
+x 5
+y 20
+end
+arch dungeon_magic
+x 5
+y 21
 end
 arch sea
 x 5
 y 21
 end
 arch dungeon_magic
+x 5
+y 22
+end
+arch magic_banned
 x 5
 y 22
 end
@@ -1506,13 +2186,29 @@ arch pier_1_4
 x 5
 y 22
 end
+arch dungeon_magic
+x 5
+y 23
+end
 arch sea
 x 5
 y 23
 end
+arch magic_banned
+x 5
+y 24
+end
+arch dungeon_magic
+x 5
+y 24
+end
 arch cobblestones2
 x 5
 y 24
+end
+arch dungeon_magic
+x 5
+y 25
 end
 arch cobblestones2
 x 5
@@ -1526,13 +2222,33 @@ sp 6
 x 5
 y 25
 end
-arch cobblestones2
+arch dungeon_magic
 x 5
 y 26
 end
 arch cobblestones2
 x 5
+y 26
+end
+arch magic_banned
+x 5
 y 27
+end
+arch dungeon_magic
+x 5
+y 27
+end
+arch cobblestones2
+x 5
+y 27
+end
+arch magic_banned
+x 5
+y 28
+end
+arch dungeon_magic
+x 5
+y 28
 end
 arch cobblestones2
 x 5
@@ -1547,9 +2263,21 @@ sp 15
 x 5
 y 28
 end
+arch magic_banned
+x 5
+y 29
+end
+arch dungeon_magic
+x 5
+y 29
+end
 arch cobblestones2
 x 5
 y 29
+end
+arch dungeon_magic
+x 5
+y 30
 end
 arch cobblestones2
 x 5
@@ -1559,77 +2287,153 @@ arch cwall_2_1_2
 x 5
 y 30
 end
-arch grass
+arch dungeon_magic
 x 5
 y 31
 end
 arch grass
 x 5
+y 31
+end
+arch dungeon_magic
+x 5
 y 32
+end
+arch grass
+x 5
+y 32
+end
+arch dungeon_magic
+x 5
+y 33
 end
 arch cobblestones2
 x 5
 y 33
 end
-arch grass
+arch dungeon_magic
 x 5
 y 34
 end
 arch grass
 x 5
+y 34
+end
+arch dungeon_magic
+x 5
 y 35
+end
+arch grass
+x 5
+y 35
+end
+arch dungeon_magic
+x 5
+y 36
 end
 arch cobblestones2
 x 5
 y 36
 end
+arch dungeon_magic
+x 5
+y 37
+end
 arch cobblestones
 x 5
 y 37
 end
-arch cobblestones2
+arch dungeon_magic
 x 5
 y 38
 end
 arch cobblestones2
 x 5
+y 38
+end
+arch dungeon_magic
+x 5
 y 39
 end
 arch cobblestones2
+x 5
+y 39
+end
+arch dungeon_magic
 x 5
 y 40
 end
 arch cobblestones2
 x 5
+y 40
+end
+arch dungeon_magic
+x 5
 y 41
 end
 arch cobblestones2
+x 5
+y 41
+end
+arch dungeon_magic
 x 5
 y 42
 end
 arch cobblestones2
 x 5
+y 42
+end
+arch dungeon_magic
+x 5
 y 43
 end
 arch cobblestones2
+x 5
+y 43
+end
+arch dungeon_magic
 x 5
 y 44
 end
 arch cobblestones2
 x 5
+y 44
+end
+arch dungeon_magic
+x 5
 y 45
 end
 arch cobblestones2
+x 5
+y 45
+end
+arch dungeon_magic
 x 5
 y 46
 end
 arch cobblestones2
 x 5
+y 46
+end
+arch dungeon_magic
+x 5
 y 47
+end
+arch cobblestones2
+x 5
+y 47
+end
+arch dungeon_magic
+x 5
+y 48
 end
 arch grass
 x 5
 y 48
+end
+arch dungeon_magic
+x 5
+y 49
 end
 arch grass
 x 5
@@ -1746,11 +2550,19 @@ sp 10
 x 6
 y 18
 end
+arch dungeon_magic
+x 6
+y 19
+end
 arch sea1
 x 6
 y 19
 end
 arch dungeon_magic
+x 6
+y 20
+end
+arch magic_banned
 x 6
 y 20
 end
@@ -1766,6 +2578,10 @@ arch dungeon_magic
 x 6
 y 21
 end
+arch magic_banned
+x 6
+y 21
+end
 arch sea1
 x 6
 y 21
@@ -1778,6 +2594,10 @@ arch dungeon_magic
 x 6
 y 22
 end
+arch magic_banned
+x 6
+y 22
+end
 arch sea1
 x 6
 y 22
@@ -1785,6 +2605,14 @@ end
 arch pier_3_4
 x 6
 y 22
+end
+arch magic_banned
+x 6
+y 23
+end
+arch dungeon_magic
+x 6
+y 23
 end
 arch sea1
 x 6
@@ -1794,29 +2622,73 @@ arch pier_2_1_1
 x 6
 y 23
 end
-arch cobblestones2
+arch magic_banned
+x 6
+y 24
+end
+arch dungeon_magic
 x 6
 y 24
 end
 arch cobblestones2
 x 6
+y 24
+end
+arch dungeon_magic
+x 6
 y 25
 end
 arch cobblestones2
+x 6
+y 25
+end
+arch dungeon_magic
 x 6
 y 26
 end
 arch cobblestones2
 x 6
+y 26
+end
+arch magic_banned
+x 6
+y 27
+end
+arch dungeon_magic
+x 6
 y 27
 end
 arch cobblestones2
+x 6
+y 27
+end
+arch magic_banned
+x 6
+y 28
+end
+arch dungeon_magic
 x 6
 y 28
 end
 arch cobblestones2
 x 6
+y 28
+end
+arch magic_banned
+x 6
 y 29
+end
+arch dungeon_magic
+x 6
+y 29
+end
+arch cobblestones2
+x 6
+y 29
+end
+arch dungeon_magic
+x 6
+y 30
 end
 arch cobblestones2
 x 6
@@ -1825,6 +2697,10 @@ end
 arch cwall_2_1_2
 x 6
 y 30
+end
+arch dungeon_magic
+x 6
+y 31
 end
 arch brush
 x 6
@@ -1838,13 +2714,25 @@ sp 14
 x 6
 y 31
 end
+arch dungeon_magic
+x 6
+y 32
+end
 arch grass
 x 6
 y 32
 end
+arch dungeon_magic
+x 6
+y 33
+end
 arch cobblestones2
 x 6
 y 33
+end
+arch dungeon_magic
+x 6
+y 34
 end
 arch grass
 x 6
@@ -1854,21 +2742,41 @@ arch lamppost
 x 6
 y 34
 end
+arch dungeon_magic
+x 6
+y 35
+end
 arch grass
 x 6
 y 35
+end
+arch dungeon_magic
+x 6
+y 36
 end
 arch cobblestones2
 x 6
 y 36
 end
+arch dungeon_magic
+x 6
+y 37
+end
 arch cobblestones
 x 6
 y 37
 end
+arch dungeon_magic
+x 6
+y 38
+end
 arch cobblestones2
 x 6
 y 38
+end
+arch dungeon_magic
+x 6
+y 39
 end
 arch brush
 x 6
@@ -1878,41 +2786,85 @@ arch tree5
 x 6
 y 39
 end
-arch grass
+arch dungeon_magic
 x 6
 y 40
 end
 arch grass
 x 6
+y 40
+end
+arch dungeon_magic
+x 6
 y 41
 end
 arch grass
+x 6
+y 41
+end
+arch dungeon_magic
 x 6
 y 42
 end
 arch grass
 x 6
+y 42
+end
+arch dungeon_magic
+x 6
 y 43
 end
 arch grass
+x 6
+y 43
+end
+arch dungeon_magic
 x 6
 y 44
 end
 arch grass
 x 6
+y 44
+end
+arch dungeon_magic
+x 6
 y 45
 end
-arch cobblestones2
+arch grass
+x 6
+y 45
+end
+arch dungeon_magic
 x 6
 y 46
 end
 arch cobblestones2
 x 6
+y 46
+end
+arch magic_banned
+x 6
 y 47
+end
+arch dungeon_magic
+x 6
+y 47
+end
+arch cobblestones2
+x 6
+y 47
+end
+arch dungeon_magic
+x 6
+y 48
 end
 arch grass
 x 6
 y 48
+end
+arch dungeon_magic
+x 6
+y 49
 end
 arch grass
 x 6
@@ -2020,11 +2972,19 @@ x 7
 y 18
 elevation -2256
 end
+arch dungeon_magic
+x 7
+y 19
+end
 arch sea1
 x 7
 y 19
 end
 arch dungeon_magic
+x 7
+y 20
+end
+arch magic_banned
 x 7
 y 20
 end
@@ -2052,29 +3012,73 @@ arch sea
 x 7
 y 22
 end
+arch dungeon_magic
+x 7
+y 23
+end
 arch sea
 x 7
 y 23
 end
-arch cobblestones2
+arch magic_banned
+x 7
+y 24
+end
+arch dungeon_magic
 x 7
 y 24
 end
 arch cobblestones2
 x 7
+y 24
+end
+arch dungeon_magic
+x 7
 y 25
 end
 arch cobblestones2
+x 7
+y 25
+end
+arch dungeon_magic
 x 7
 y 26
 end
 arch cobblestones2
 x 7
+y 26
+end
+arch magic_banned
+x 7
+y 27
+end
+arch dungeon_magic
+x 7
 y 27
 end
 arch cobblestones2
 x 7
+y 27
+end
+arch magic_banned
+x 7
 y 28
+end
+arch dungeon_magic
+x 7
+y 28
+end
+arch cobblestones2
+x 7
+y 28
+end
+arch magic_banned
+x 7
+y 29
+end
+arch dungeon_magic
+x 7
+y 29
 end
 arch cobblestones2
 x 7
@@ -2088,6 +3092,10 @@ sp 14
 x 7
 y 29
 end
+arch dungeon_magic
+x 7
+y 30
+end
 arch cobblestones2
 x 7
 y 30
@@ -2096,77 +3104,153 @@ arch cwall_2_1_2
 x 7
 y 30
 end
+arch dungeon_magic
+x 7
+y 31
+end
 arch brush
 x 7
 y 31
+end
+arch dungeon_magic
+x 7
+y 32
 end
 arch grass
 x 7
 y 32
 end
+arch dungeon_magic
+x 7
+y 33
+end
 arch cobblestones2
 x 7
 y 33
 end
-arch grass
+arch dungeon_magic
 x 7
 y 34
 end
 arch grass
 x 7
+y 34
+end
+arch dungeon_magic
+x 7
 y 35
+end
+arch grass
+x 7
+y 35
+end
+arch dungeon_magic
+x 7
+y 36
 end
 arch cobblestones2
 x 7
 y 36
 end
+arch dungeon_magic
+x 7
+y 37
+end
 arch cobblestones
 x 7
 y 37
+end
+arch dungeon_magic
+x 7
+y 38
 end
 arch cobblestones2
 x 7
 y 38
 end
+arch dungeon_magic
+x 7
+y 39
+end
 arch grass
 x 7
 y 39
+end
+arch dungeon_magic
+x 7
+y 40
 end
 arch brush
 x 7
 y 40
 end
-arch grass
+arch dungeon_magic
 x 7
 y 41
 end
 arch grass
 x 7
+y 41
+end
+arch dungeon_magic
+x 7
 y 42
+end
+arch grass
+x 7
+y 42
+end
+arch dungeon_magic
+x 7
+y 43
 end
 arch grass
 x 7
 y 43
 end
-arch brush
+arch dungeon_magic
 x 7
 y 44
 end
 arch brush
 x 7
+y 44
+end
+arch dungeon_magic
+x 7
 y 45
 end
-arch cobblestones2
+arch brush
+x 7
+y 45
+end
+arch dungeon_magic
 x 7
 y 46
 end
 arch cobblestones2
 x 7
+y 46
+end
+arch dungeon_magic
+x 7
 y 47
+end
+arch cobblestones2
+x 7
+y 47
+end
+arch dungeon_magic
+x 7
+y 48
 end
 arch grass
 x 7
 y 48
+end
+arch dungeon_magic
+x 7
+y 49
 end
 arch grass
 x 7
@@ -2274,6 +3358,10 @@ x 8
 y 18
 elevation -2256
 end
+arch dungeon_magic
+x 8
+y 19
+end
 arch sea1
 x 8
 y 19
@@ -2302,13 +3390,29 @@ arch sea1
 x 8
 y 22
 end
+arch dungeon_magic
+x 8
+y 23
+end
 arch sea
 x 8
 y 23
 end
+arch magic_banned
+x 8
+y 24
+end
+arch dungeon_magic
+x 8
+y 24
+end
 arch cobblestones2
 x 8
 y 24
+end
+arch dungeon_magic
+x 8
+y 25
 end
 arch cobblestones2
 x 8
@@ -2322,21 +3426,53 @@ sp 36
 x 8
 y 25
 end
-arch cobblestones2
+arch dungeon_magic
 x 8
 y 26
 end
 arch cobblestones2
 x 8
+y 26
+end
+arch magic_banned
+x 8
+y 27
+end
+arch dungeon_magic
+x 8
 y 27
 end
 arch cobblestones2
+x 8
+y 27
+end
+arch magic_banned
+x 8
+y 28
+end
+arch dungeon_magic
 x 8
 y 28
 end
 arch cobblestones2
 x 8
+y 28
+end
+arch magic_banned
+x 8
 y 29
+end
+arch dungeon_magic
+x 8
+y 29
+end
+arch cobblestones2
+x 8
+y 29
+end
+arch dungeon_magic
+x 8
+y 30
 end
 arch cobblestones2
 x 8
@@ -2346,6 +3482,10 @@ arch cwall_2_1_2
 x 8
 y 30
 end
+arch dungeon_magic
+x 8
+y 31
+end
 arch grass
 x 8
 y 31
@@ -2353,6 +3493,10 @@ end
 arch lamppost
 x 8
 y 31
+end
+arch dungeon_magic
+x 8
+y 32
 end
 arch grass
 x 8
@@ -2363,53 +3507,105 @@ x 8
 y 32
 speed_left -41.599998
 end
+arch dungeon_magic
+x 8
+y 33
+end
 arch cobblestones2
 x 8
 y 33
 end
-arch grass
+arch dungeon_magic
 x 8
 y 34
 end
 arch grass
 x 8
+y 34
+end
+arch dungeon_magic
+x 8
 y 35
+end
+arch grass
+x 8
+y 35
+end
+arch dungeon_magic
+x 8
+y 36
 end
 arch cobblestones2
 x 8
 y 36
 end
+arch dungeon_magic
+x 8
+y 37
+end
 arch cobblestones
 x 8
 y 37
+end
+arch dungeon_magic
+x 8
+y 38
 end
 arch cobblestones2
 x 8
 y 38
 end
-arch grass
+arch dungeon_magic
 x 8
 y 39
 end
 arch grass
 x 8
+y 39
+end
+arch dungeon_magic
+x 8
 y 40
 end
 arch grass
+x 8
+y 40
+end
+arch dungeon_magic
 x 8
 y 41
 end
 arch grass
 x 8
+y 41
+end
+arch dungeon_magic
+x 8
 y 42
+end
+arch grass
+x 8
+y 42
+end
+arch dungeon_magic
+x 8
+y 43
 end
 arch brush
 x 8
 y 43
 end
+arch dungeon_magic
+x 8
+y 44
+end
 arch grass
 x 8
 y 44
+end
+arch dungeon_magic
+x 8
+y 45
 end
 arch grass
 x 8
@@ -2419,17 +3615,33 @@ arch lamppost
 x 8
 y 45
 end
-arch cobblestones2
+arch dungeon_magic
 x 8
 y 46
 end
 arch cobblestones2
 x 8
+y 46
+end
+arch dungeon_magic
+x 8
 y 47
+end
+arch cobblestones2
+x 8
+y 47
+end
+arch dungeon_magic
+x 8
+y 48
 end
 arch grass
 x 8
 y 48
+end
+arch dungeon_magic
+x 8
+y 49
 end
 arch grass
 x 8
@@ -2537,6 +3749,10 @@ x 9
 y 18
 elevation -826
 end
+arch dungeon_magic
+x 9
+y 19
+end
 arch sea1
 x 9
 y 19
@@ -2548,6 +3764,10 @@ end
 arch sea1
 x 9
 y 20
+end
+arch dungeon_magic
+x 9
+y 21
 end
 arch sea1
 x 9
@@ -2561,25 +3781,61 @@ arch sea1
 x 9
 y 22
 end
+arch dungeon_magic
+x 9
+y 23
+end
 arch sea
 x 9
 y 23
 end
-arch cobblestones2
+arch magic_banned
+x 9
+y 24
+end
+arch dungeon_magic
 x 9
 y 24
 end
 arch cobblestones2
 x 9
+y 24
+end
+arch dungeon_magic
+x 9
 y 25
 end
 arch cobblestones2
+x 9
+y 25
+end
+arch dungeon_magic
 x 9
 y 26
 end
 arch cobblestones2
 x 9
+y 26
+end
+arch magic_banned
+x 9
 y 27
+end
+arch dungeon_magic
+x 9
+y 27
+end
+arch cobblestones2
+x 9
+y 27
+end
+arch magic_banned
+x 9
+y 28
+end
+arch dungeon_magic
+x 9
+y 28
 end
 arch cobblestones2
 x 9
@@ -2593,9 +3849,21 @@ sp 17
 x 9
 y 28
 end
+arch magic_banned
+x 9
+y 29
+end
+arch dungeon_magic
+x 9
+y 29
+end
 arch cobblestones2
 x 9
 y 29
+end
+arch dungeon_magic
+x 9
+y 30
 end
 arch cobblestones2
 x 9
@@ -2605,6 +3873,10 @@ arch cwall_2_1_2
 x 9
 y 30
 end
+arch dungeon_magic
+x 9
+y 31
+end
 arch grass
 x 9
 y 31
@@ -2613,33 +3885,65 @@ arch tree4
 x 9
 y 31
 end
+arch dungeon_magic
+x 9
+y 32
+end
 arch grass
 x 9
 y 32
+end
+arch dungeon_magic
+x 9
+y 33
 end
 arch cobblestones2
 x 9
 y 33
 end
-arch grass
+arch dungeon_magic
 x 9
 y 34
 end
 arch grass
 x 9
+y 34
+end
+arch dungeon_magic
+x 9
 y 35
+end
+arch grass
+x 9
+y 35
+end
+arch dungeon_magic
+x 9
+y 36
 end
 arch cobblestones2
 x 9
 y 36
 end
+arch dungeon_magic
+x 9
+y 37
+end
 arch cobblestones
 x 9
 y 37
 end
+arch dungeon_magic
+x 9
+y 38
+end
 arch cobblestones2
 x 9
 y 38
+end
+arch dungeon_magic
+x 9
+y 39
 end
 arch grass
 x 9
@@ -2649,6 +3953,10 @@ arch lamppost
 x 9
 y 39
 end
+arch dungeon_magic
+x 9
+y 40
+end
 arch grass
 x 9
 y 40
@@ -2657,9 +3965,17 @@ arch tree4
 x 9
 y 40
 end
+arch dungeon_magic
+x 9
+y 41
+end
 arch grass
 x 9
 y 41
+end
+arch dungeon_magic
+x 9
+y 42
 end
 arch grass
 x 9
@@ -2669,29 +3985,57 @@ arch biglake_nse
 x 9
 y 42
 end
-arch grass
+arch dungeon_magic
 x 9
 y 43
 end
 arch grass
 x 9
+y 43
+end
+arch dungeon_magic
+x 9
 y 44
+end
+arch grass
+x 9
+y 44
+end
+arch dungeon_magic
+x 9
+y 45
 end
 arch grass
 x 9
 y 45
 end
-arch cobblestones2
+arch dungeon_magic
 x 9
 y 46
 end
 arch cobblestones2
 x 9
+y 46
+end
+arch dungeon_magic
+x 9
 y 47
+end
+arch cobblestones2
+x 9
+y 47
+end
+arch dungeon_magic
+x 9
+y 48
 end
 arch grass
 x 9
 y 48
+end
+arch dungeon_magic
+x 9
+y 49
 end
 arch grass
 x 9
@@ -2799,19 +4143,35 @@ x 10
 y 18
 elevation -2256
 end
-arch sea1
+arch dungeon_magic
 x 10
 y 19
 end
 arch sea1
 x 10
+y 19
+end
+arch dungeon_magic
+x 10
 y 20
+end
+arch sea1
+x 10
+y 20
+end
+arch dungeon_magic
+x 10
+y 21
 end
 arch sea1
 x 10
 y 21
 end
 arch dungeon_magic
+x 10
+y 22
+end
+arch magic_banned
 x 10
 y 22
 end
@@ -2823,33 +4183,81 @@ arch pier_1_4
 x 10
 y 22
 end
+arch dungeon_magic
+x 10
+y 23
+end
 arch sea
 x 10
 y 23
 end
-arch cobblestones2
+arch magic_banned
+x 10
+y 24
+end
+arch dungeon_magic
 x 10
 y 24
 end
 arch cobblestones2
 x 10
+y 24
+end
+arch dungeon_magic
+x 10
 y 25
 end
 arch cobblestones2
+x 10
+y 25
+end
+arch dungeon_magic
 x 10
 y 26
 end
 arch cobblestones2
 x 10
+y 26
+end
+arch magic_banned
+x 10
+y 27
+end
+arch dungeon_magic
+x 10
 y 27
 end
 arch cobblestones2
+x 10
+y 27
+end
+arch magic_banned
+x 10
+y 28
+end
+arch dungeon_magic
 x 10
 y 28
 end
 arch cobblestones2
 x 10
+y 28
+end
+arch magic_banned
+x 10
 y 29
+end
+arch dungeon_magic
+x 10
+y 29
+end
+arch cobblestones2
+x 10
+y 29
+end
+arch dungeon_magic
+x 10
+y 30
 end
 arch cobblestones2
 x 10
@@ -2858,6 +4266,10 @@ end
 arch cwall_2_1_2
 x 10
 y 30
+end
+arch dungeon_magic
+x 10
+y 31
 end
 arch grass
 x 10
@@ -2871,46 +4283,90 @@ sp 33
 x 10
 y 31
 end
+arch dungeon_magic
+x 10
+y 32
+end
 arch grass
 x 10
 y 32
 tag scorn_healing_house_exit
 end
+arch dungeon_magic
+x 10
+y 33
+end
 arch cobblestones2
 x 10
 y 33
 end
-arch grass
+arch dungeon_magic
 x 10
 y 34
 end
 arch grass
 x 10
+y 34
+end
+arch dungeon_magic
+x 10
 y 35
+end
+arch grass
+x 10
+y 35
+end
+arch dungeon_magic
+x 10
+y 36
 end
 arch cobblestones2
 x 10
 y 36
 end
+arch dungeon_magic
+x 10
+y 37
+end
 arch cobblestones
 x 10
 y 37
+end
+arch dungeon_magic
+x 10
+y 38
 end
 arch cobblestones2
 x 10
 y 38
 end
-arch grass
+arch dungeon_magic
 x 10
 y 39
 end
 arch grass
 x 10
+y 39
+end
+arch dungeon_magic
+x 10
 y 40
 end
 arch grass
 x 10
+y 40
+end
+arch dungeon_magic
+x 10
 y 41
+end
+arch grass
+x 10
+y 41
+end
+arch dungeon_magic
+x 10
+y 42
 end
 arch grass
 x 10
@@ -2920,9 +4376,17 @@ arch biglake_sn
 x 10
 y 42
 end
+arch dungeon_magic
+x 10
+y 43
+end
 arch brush
 x 10
 y 43
+end
+arch dungeon_magic
+x 10
+y 44
 end
 arch grass
 x 10
@@ -2936,21 +4400,41 @@ sp 16
 x 10
 y 44
 end
+arch dungeon_magic
+x 10
+y 45
+end
 arch grass
 x 10
 y 45
 end
-arch cobblestones2
+arch dungeon_magic
 x 10
 y 46
 end
 arch cobblestones2
 x 10
+y 46
+end
+arch dungeon_magic
+x 10
 y 47
+end
+arch cobblestones2
+x 10
+y 47
+end
+arch dungeon_magic
+x 10
+y 48
 end
 arch grass
 x 10
 y 48
+end
+arch dungeon_magic
+x 10
+y 49
 end
 arch grass
 x 10
@@ -3070,6 +4554,10 @@ arch dungeon_magic
 x 11
 y 20
 end
+arch magic_banned
+x 11
+y 20
+end
 arch sea1
 x 11
 y 20
@@ -3079,6 +4567,10 @@ x 11
 y 20
 end
 arch dungeon_magic
+x 11
+y 21
+end
+arch magic_banned
 x 11
 y 21
 end
@@ -3094,6 +4586,10 @@ arch dungeon_magic
 x 11
 y 22
 end
+arch magic_banned
+x 11
+y 22
+end
 arch sea1
 x 11
 y 22
@@ -3101,6 +4597,14 @@ end
 arch pier_3_4
 x 11
 y 22
+end
+arch magic_banned
+x 11
+y 23
+end
+arch dungeon_magic
+x 11
+y 23
 end
 arch sea1
 x 11
@@ -3110,25 +4614,65 @@ arch pier_2_1_1
 x 11
 y 23
 end
-arch cobblestones2
+arch magic_banned
+x 11
+y 24
+end
+arch dungeon_magic
 x 11
 y 24
 end
 arch cobblestones2
 x 11
+y 24
+end
+arch dungeon_magic
+x 11
 y 25
 end
 arch cobblestones2
+x 11
+y 25
+end
+arch dungeon_magic
 x 11
 y 26
 end
 arch cobblestones2
 x 11
+y 26
+end
+arch magic_banned
+x 11
+y 27
+end
+arch dungeon_magic
+x 11
 y 27
 end
 arch cobblestones2
 x 11
+y 27
+end
+arch magic_banned
+x 11
 y 28
+end
+arch dungeon_magic
+x 11
+y 28
+end
+arch cobblestones2
+x 11
+y 28
+end
+arch magic_banned
+x 11
+y 29
+end
+arch dungeon_magic
+x 11
+y 29
 end
 arch cobblestones2
 x 11
@@ -3137,6 +4681,10 @@ end
 arch lamppost
 x 11
 y 29
+end
+arch dungeon_magic
+x 11
+y 30
 end
 arch cobblestones2
 x 11
@@ -3146,18 +4694,34 @@ arch cwall_2_1_2
 x 11
 y 30
 end
+arch dungeon_magic
+x 11
+y 31
+end
 arch grass
 x 11
 y 31
+end
+arch dungeon_magic
+x 11
+y 32
 end
 arch grass
 x 11
 y 32
 tag scorn_healing_house_exit
 end
+arch dungeon_magic
+x 11
+y 33
+end
 arch cobblestones2
 x 11
 y 33
+end
+arch dungeon_magic
+x 11
+y 34
 end
 arch grass
 x 11
@@ -3167,33 +4731,65 @@ arch lamppost
 x 11
 y 34
 end
+arch dungeon_magic
+x 11
+y 35
+end
 arch grass
 x 11
 y 35
+end
+arch dungeon_magic
+x 11
+y 36
 end
 arch cobblestones2
 x 11
 y 36
 end
+arch dungeon_magic
+x 11
+y 37
+end
 arch cobblestones
 x 11
 y 37
+end
+arch dungeon_magic
+x 11
+y 38
 end
 arch cobblestones2
 x 11
 y 38
 end
-arch grass
+arch dungeon_magic
 x 11
 y 39
 end
 arch grass
 x 11
+y 39
+end
+arch dungeon_magic
+x 11
 y 40
 end
 arch grass
 x 11
+y 40
+end
+arch dungeon_magic
+x 11
 y 41
+end
+arch grass
+x 11
+y 41
+end
+arch dungeon_magic
+x 11
+y 42
 end
 arch grass
 x 11
@@ -3203,29 +4799,57 @@ arch biglake_nes
 x 11
 y 42
 end
-arch grass
+arch dungeon_magic
 x 11
 y 43
 end
 arch grass
 x 11
+y 43
+end
+arch dungeon_magic
+x 11
 y 44
+end
+arch grass
+x 11
+y 44
+end
+arch dungeon_magic
+x 11
+y 45
 end
 arch grass
 x 11
 y 45
 end
-arch cobblestones2
+arch dungeon_magic
 x 11
 y 46
 end
 arch cobblestones2
 x 11
+y 46
+end
+arch dungeon_magic
+x 11
 y 47
+end
+arch cobblestones2
+x 11
+y 47
+end
+arch dungeon_magic
+x 11
+y 48
 end
 arch grass
 x 11
 y 48
+end
+arch dungeon_magic
+x 11
+y 49
 end
 arch grass
 x 11
@@ -3333,6 +4957,10 @@ x 12
 y 18
 elevation -2256
 end
+arch dungeon_magic
+x 12
+y 19
+end
 arch sea
 x 12
 y 19
@@ -3359,6 +4987,10 @@ arch dungeon_magic
 x 12
 y 21
 end
+arch magic_banned
+x 12
+y 21
+end
 arch sea1
 x 12
 y 21
@@ -3367,29 +4999,69 @@ arch pier_1_3
 x 12
 y 21
 end
-arch sea1
+arch dungeon_magic
 x 12
 y 22
 end
 arch sea1
 x 12
+y 22
+end
+arch dungeon_magic
+x 12
 y 23
 end
-arch cobblestones2
+arch sea1
+x 12
+y 23
+end
+arch magic_banned
+x 12
+y 24
+end
+arch dungeon_magic
 x 12
 y 24
 end
 arch cobblestones2
 x 12
+y 24
+end
+arch dungeon_magic
+x 12
 y 25
 end
 arch cobblestones2
+x 12
+y 25
+end
+arch dungeon_magic
 x 12
 y 26
 end
 arch cobblestones2
 x 12
+y 26
+end
+arch magic_banned
+x 12
 y 27
+end
+arch dungeon_magic
+x 12
+y 27
+end
+arch cobblestones2
+x 12
+y 27
+end
+arch magic_banned
+x 12
+y 28
+end
+arch dungeon_magic
+x 12
+y 28
 end
 arch cobblestones2
 x 12
@@ -3403,9 +5075,21 @@ sp 2
 x 12
 y 28
 end
+arch magic_banned
+x 12
+y 29
+end
+arch dungeon_magic
+x 12
+y 29
+end
 arch cobblestones2
 x 12
 y 29
+end
+arch dungeon_magic
+x 12
+y 30
 end
 arch cobblestones2
 x 12
@@ -3415,17 +5099,33 @@ arch cwall_2_1_2
 x 12
 y 30
 end
-arch grass
+arch dungeon_magic
 x 12
 y 31
 end
 arch grass
 x 12
+y 31
+end
+arch dungeon_magic
+x 12
 y 32
+end
+arch grass
+x 12
+y 32
+end
+arch dungeon_magic
+x 12
+y 33
 end
 arch cobblestones2
 x 12
 y 33
+end
+arch dungeon_magic
+x 12
+y 34
 end
 arch grass
 x 12
@@ -3439,62 +5139,122 @@ sp 15
 x 12
 y 34
 end
+arch dungeon_magic
+x 12
+y 35
+end
 arch grass
 x 12
 y 35
 tag scorn_dragon_guild_exit
 end
+arch dungeon_magic
+x 12
+y 36
+end
 arch cobblestones2
 x 12
 y 36
+end
+arch dungeon_magic
+x 12
+y 37
 end
 arch cobblestones
 x 12
 y 37
 end
+arch dungeon_magic
+x 12
+y 38
+end
 arch cobblestones2
 x 12
 y 38
+end
+arch dungeon_magic
+x 12
+y 39
 end
 arch brush
 x 12
 y 39
 end
-arch grass
+arch dungeon_magic
 x 12
 y 40
 end
 arch grass
 x 12
+y 40
+end
+arch dungeon_magic
+x 12
 y 41
+end
+arch grass
+x 12
+y 41
+end
+arch dungeon_magic
+x 12
+y 42
 end
 arch grasspond
 x 12
 y 42
 end
-arch grass
+arch dungeon_magic
 x 12
 y 43
 end
 arch grass
 x 12
+y 43
+end
+arch dungeon_magic
+x 12
 y 44
+end
+arch grass
+x 12
+y 44
+end
+arch dungeon_magic
+x 12
+y 45
 end
 arch grass
 x 12
 y 45
 end
-arch cobblestones2
+arch dungeon_magic
 x 12
 y 46
 end
 arch cobblestones2
 x 12
+y 46
+end
+arch dungeon_magic
+x 12
 y 47
+end
+arch cobblestones2
+x 12
+y 47
+end
+arch dungeon_magic
+x 12
+y 48
 end
 arch grass
 x 12
 y 48
+end
+arch dungeon_magic
+x 12
+y 49
 end
 arch grass
 x 12
@@ -3602,9 +5362,17 @@ x 13
 y 18
 elevation -2256
 end
+arch dungeon_magic
+x 13
+y 19
+end
 arch sea
 x 13
 y 19
+end
+arch dungeon_magic
+x 13
+y 20
 end
 arch sea
 x 13
@@ -3618,37 +5386,89 @@ arch sea1
 x 13
 y 21
 end
-arch sea1
+arch dungeon_magic
 x 13
 y 22
 end
 arch sea1
 x 13
+y 22
+end
+arch dungeon_magic
+x 13
 y 23
 end
-arch cobblestones2
+arch sea1
+x 13
+y 23
+end
+arch magic_banned
+x 13
+y 24
+end
+arch dungeon_magic
 x 13
 y 24
 end
 arch cobblestones2
 x 13
+y 24
+end
+arch dungeon_magic
+x 13
 y 25
 end
 arch cobblestones2
+x 13
+y 25
+end
+arch dungeon_magic
 x 13
 y 26
 end
 arch cobblestones2
 x 13
+y 26
+end
+arch magic_banned
+x 13
+y 27
+end
+arch dungeon_magic
+x 13
 y 27
 end
 arch cobblestones2
+x 13
+y 27
+end
+arch magic_banned
+x 13
+y 28
+end
+arch dungeon_magic
 x 13
 y 28
 end
 arch cobblestones2
 x 13
+y 28
+end
+arch magic_banned
+x 13
 y 29
+end
+arch dungeon_magic
+x 13
+y 29
+end
+arch cobblestones2
+x 13
+y 29
+end
+arch dungeon_magic
+x 13
+y 30
 end
 arch cobblestones2
 x 13
@@ -3657,6 +5477,10 @@ end
 arch cwall_2_1_2
 x 13
 y 30
+end
+arch dungeon_magic
+x 13
+y 31
 end
 arch grass
 x 13
@@ -3670,38 +5494,74 @@ sp 33
 x 13
 y 31
 end
+arch dungeon_magic
+x 13
+y 32
+end
 arch grass
 x 13
 y 32
+end
+arch dungeon_magic
+x 13
+y 33
 end
 arch cobblestones2
 x 13
 y 33
 end
+arch dungeon_magic
+x 13
+y 34
+end
 arch grass
 x 13
 y 34
+end
+arch dungeon_magic
+x 13
+y 35
 end
 arch grass
 x 13
 y 35
 tag scorn_dragon_guild_exit
 end
+arch dungeon_magic
+x 13
+y 36
+end
 arch cobblestones2
 x 13
 y 36
+end
+arch dungeon_magic
+x 13
+y 37
 end
 arch cobblestones
 x 13
 y 37
 end
+arch dungeon_magic
+x 13
+y 38
+end
 arch cobblestones2
 x 13
 y 38
 end
+arch dungeon_magic
+x 13
+y 39
+end
 arch brush
 x 13
 y 39
+end
+arch dungeon_magic
+x 13
+y 40
 end
 arch grass
 x 13
@@ -3711,37 +5571,73 @@ arch tree4
 x 13
 y 40
 end
-arch grass
+arch dungeon_magic
 x 13
 y 41
 end
 arch grass
 x 13
+y 41
+end
+arch dungeon_magic
+x 13
 y 42
+end
+arch grass
+x 13
+y 42
+end
+arch dungeon_magic
+x 13
+y 43
 end
 arch grass
 x 13
 y 43
 end
+arch dungeon_magic
+x 13
+y 44
+end
 arch brush
 x 13
 y 44
+end
+arch dungeon_magic
+x 13
+y 45
 end
 arch grass
 x 13
 y 45
 end
-arch cobblestones2
+arch dungeon_magic
 x 13
 y 46
 end
 arch cobblestones2
 x 13
+y 46
+end
+arch dungeon_magic
+x 13
 y 47
+end
+arch cobblestones2
+x 13
+y 47
+end
+arch dungeon_magic
+x 13
+y 48
 end
 arch grass
 x 13
 y 48
+end
+arch dungeon_magic
+x 13
+y 49
 end
 arch grass
 x 13
@@ -3849,9 +5745,17 @@ x 14
 y 18
 elevation -2256
 end
+arch dungeon_magic
+x 14
+y 19
+end
 arch sea
 x 14
 y 19
+end
+arch dungeon_magic
+x 14
+y 20
 end
 arch sea
 x 14
@@ -3865,37 +5769,89 @@ arch sea1
 x 14
 y 21
 end
-arch sea1
+arch dungeon_magic
 x 14
 y 22
 end
 arch sea1
 x 14
+y 22
+end
+arch dungeon_magic
+x 14
 y 23
 end
-arch cobblestones2
+arch sea1
+x 14
+y 23
+end
+arch magic_banned
+x 14
+y 24
+end
+arch dungeon_magic
 x 14
 y 24
 end
 arch cobblestones2
 x 14
+y 24
+end
+arch dungeon_magic
+x 14
 y 25
 end
 arch cobblestones2
+x 14
+y 25
+end
+arch dungeon_magic
 x 14
 y 26
 end
 arch cobblestones2
 x 14
+y 26
+end
+arch magic_banned
+x 14
+y 27
+end
+arch dungeon_magic
+x 14
 y 27
 end
 arch cobblestones2
+x 14
+y 27
+end
+arch magic_banned
+x 14
+y 28
+end
+arch dungeon_magic
 x 14
 y 28
 end
 arch cobblestones2
 x 14
+y 28
+end
+arch magic_banned
+x 14
 y 29
+end
+arch dungeon_magic
+x 14
+y 29
+end
+arch cobblestones2
+x 14
+y 29
+end
+arch dungeon_magic
+x 14
+y 30
 end
 arch cobblestones2
 x 14
@@ -3905,18 +5861,34 @@ arch cwall_2_1_2
 x 14
 y 30
 end
-arch grass
+arch dungeon_magic
 x 14
 y 31
 end
 arch grass
 x 14
+y 31
+end
+arch dungeon_magic
+x 14
 y 32
+end
+arch grass
+x 14
+y 32
+end
+arch dungeon_magic
+x 14
+y 33
 end
 arch cobblestones2
 x 14
 y 33
 end
+arch dungeon_magic
+x 14
+y 34
+end
 arch grass
 x 14
 y 34
@@ -3925,6 +5897,10 @@ arch tree5
 x 14
 y 34
 end
+arch dungeon_magic
+x 14
+y 35
+end
 arch grass
 x 14
 y 35
@@ -3932,18 +5908,34 @@ end
 arch tree5
 x 14
 y 35
+end
+arch dungeon_magic
+x 14
+y 36
 end
 arch cobblestones2
 x 14
 y 36
 end
+arch dungeon_magic
+x 14
+y 37
+end
 arch cobblestones
 x 14
 y 37
 end
+arch dungeon_magic
+x 14
+y 38
+end
 arch cobblestones2
 x 14
 y 38
+end
+arch dungeon_magic
+x 14
+y 39
 end
 arch grass
 x 14
@@ -3953,6 +5945,10 @@ arch lamppost
 x 14
 y 39
 end
+arch dungeon_magic
+x 14
+y 40
+end
 arch grass
 x 14
 y 40
@@ -3961,21 +5957,41 @@ arch tree5
 x 14
 y 40
 end
-arch grass
+arch dungeon_magic
 x 14
 y 41
 end
 arch grass
 x 14
+y 41
+end
+arch dungeon_magic
+x 14
 y 42
 end
 arch grass
+x 14
+y 42
+end
+arch dungeon_magic
 x 14
 y 43
 end
 arch grass
 x 14
+y 43
+end
+arch dungeon_magic
+x 14
 y 44
+end
+arch grass
+x 14
+y 44
+end
+arch dungeon_magic
+x 14
+y 45
 end
 arch brush
 x 14
@@ -3985,17 +6001,33 @@ arch lamppost
 x 14
 y 45
 end
-arch cobblestones2
+arch dungeon_magic
 x 14
 y 46
 end
 arch cobblestones2
 x 14
+y 46
+end
+arch dungeon_magic
+x 14
 y 47
+end
+arch cobblestones2
+x 14
+y 47
+end
+arch dungeon_magic
+x 14
+y 48
 end
 arch grasspond
 x 14
 y 48
+end
+arch dungeon_magic
+x 14
+y 49
 end
 arch grass
 x 14
@@ -4103,45 +6135,101 @@ x 15
 y 18
 elevation -2256
 end
-arch sea
+arch dungeon_magic
 x 15
 y 19
 end
 arch sea
 x 15
+y 19
+end
+arch dungeon_magic
+x 15
 y 20
+end
+arch sea
+x 15
+y 20
+end
+arch dungeon_magic
+x 15
+y 21
 end
 arch sea
 x 15
 y 21
 end
-arch sea1
+arch dungeon_magic
 x 15
 y 22
 end
 arch sea1
 x 15
+y 22
+end
+arch dungeon_magic
+x 15
 y 23
+end
+arch sea1
+x 15
+y 23
+end
+arch dungeon_magic
+x 15
+y 24
 end
 arch sea1
 x 15
 y 24
 end
-arch cobblestones2
+arch dungeon_magic
 x 15
 y 25
 end
 arch cobblestones2
 x 15
+y 25
+end
+arch dungeon_magic
+x 15
 y 26
 end
 arch cobblestones2
+x 15
+y 26
+end
+arch magic_banned
+x 15
+y 27
+end
+arch dungeon_magic
 x 15
 y 27
 end
 arch cobblestones2
 x 15
+y 27
+end
+arch magic_banned
+x 15
 y 28
+end
+arch dungeon_magic
+x 15
+y 28
+end
+arch cobblestones2
+x 15
+y 28
+end
+arch magic_banned
+x 15
+y 29
+end
+arch dungeon_magic
+x 15
+y 29
 end
 arch cobblestones2
 x 15
@@ -4155,6 +6243,10 @@ sp 8
 x 15
 y 29
 end
+arch dungeon_magic
+x 15
+y 30
+end
 arch cobblestones2
 x 15
 y 30
@@ -4163,6 +6255,10 @@ arch cwall_2_1_2
 x 15
 y 30
 end
+arch dungeon_magic
+x 15
+y 31
+end
 arch grass
 x 15
 y 31
@@ -4171,6 +6267,10 @@ arch tree5
 x 15
 y 31
 end
+arch dungeon_magic
+x 15
+y 32
+end
 arch grass
 x 15
 y 32
@@ -4178,11 +6278,19 @@ end
 arch tree5
 x 15
 y 32
+end
+arch dungeon_magic
+x 15
+y 33
 end
 arch cobblestones2
 x 15
 y 33
 end
+arch dungeon_magic
+x 15
+y 34
+end
 arch grass
 x 15
 y 34
@@ -4191,6 +6299,10 @@ arch tree5
 x 15
 y 34
 end
+arch dungeon_magic
+x 15
+y 35
+end
 arch grass
 x 15
 y 35
@@ -4198,58 +6310,114 @@ end
 arch tree5
 x 15
 y 35
+end
+arch dungeon_magic
+x 15
+y 36
 end
 arch cobblestones2
 x 15
 y 36
 end
+arch dungeon_magic
+x 15
+y 37
+end
 arch cobblestones
 x 15
 y 37
+end
+arch dungeon_magic
+x 15
+y 38
 end
 arch cobblestones2
 x 15
 y 38
 end
-arch grass
+arch dungeon_magic
 x 15
 y 39
 end
 arch grass
 x 15
+y 39
+end
+arch dungeon_magic
+x 15
 y 40
 end
 arch grass
+x 15
+y 40
+end
+arch dungeon_magic
 x 15
 y 41
 end
 arch grass
 x 15
+y 41
+end
+arch dungeon_magic
+x 15
 y 42
 end
-arch brush
+arch grass
+x 15
+y 42
+end
+arch dungeon_magic
 x 15
 y 43
 end
 arch brush
 x 15
+y 43
+end
+arch dungeon_magic
+x 15
 y 44
+end
+arch brush
+x 15
+y 44
+end
+arch dungeon_magic
+x 15
+y 45
 end
 arch brush
 x 15
 y 45
 end
-arch cobblestones2
+arch dungeon_magic
 x 15
 y 46
 end
 arch cobblestones2
 x 15
+y 46
+end
+arch dungeon_magic
+x 15
 y 47
+end
+arch cobblestones2
+x 15
+y 47
+end
+arch dungeon_magic
+x 15
+y 48
 end
 arch woods_2
 x 15
 y 48
+end
+arch dungeon_magic
+x 15
+y 49
 end
 arch brush
 x 15
@@ -4377,13 +6545,25 @@ x 16
 y 18
 elevation -2256
 end
-arch sea
+arch dungeon_magic
 x 16
 y 19
 end
 arch sea
 x 16
+y 19
+end
+arch dungeon_magic
+x 16
 y 20
+end
+arch sea
+x 16
+y 20
+end
+arch dungeon_magic
+x 16
+y 21
 end
 arch sea
 x 16
@@ -4415,6 +6595,14 @@ container 10000000
 move_type boat
 passenger_limit 2
 end
+arch magic_banned
+x 16
+y 24
+end
+arch dungeon_magic
+x 16
+y 24
+end
 arch sea1
 x 16
 y 24
@@ -4422,6 +6610,14 @@ end
 arch pier_1_1
 x 16
 y 24
+end
+arch magic_banned
+x 16
+y 25
+end
+arch dungeon_magic
+x 16
+y 25
 end
 arch sea1
 x 16
@@ -4431,6 +6627,14 @@ arch pier_3_4
 x 16
 y 25
 end
+arch magic_banned
+x 16
+y 26
+end
+arch dungeon_magic
+x 16
+y 26
+end
 arch sea1
 x 16
 y 26
@@ -4439,17 +6643,45 @@ arch pier_2_1_1
 x 16
 y 26
 end
-arch cobblestones2
+arch magic_banned
+x 16
+y 27
+end
+arch dungeon_magic
 x 16
 y 27
 end
 arch cobblestones2
 x 16
+y 27
+end
+arch magic_banned
+x 16
+y 28
+end
+arch dungeon_magic
+x 16
 y 28
 end
 arch cobblestones2
 x 16
+y 28
+end
+arch magic_banned
+x 16
 y 29
+end
+arch dungeon_magic
+x 16
+y 29
+end
+arch cobblestones2
+x 16
+y 29
+end
+arch dungeon_magic
+x 16
+y 30
 end
 arch cobblestones2
 x 16
@@ -4458,6 +6690,10 @@ end
 arch cwall_2_1_2
 x 16
 y 30
+end
+arch dungeon_magic
+x 16
+y 31
 end
 arch grass
 x 16
@@ -4472,37 +6708,73 @@ x 16
 y 31
 move_block -all
 end
+arch dungeon_magic
+x 16
+y 32
+end
 arch grass
 x 16
 y 32
+end
+arch dungeon_magic
+x 16
+y 33
 end
 arch cobblestones2
 x 16
 y 33
 end
-arch grass
+arch dungeon_magic
 x 16
 y 34
 end
 arch grass
 x 16
+y 34
+end
+arch dungeon_magic
+x 16
 y 35
+end
+arch grass
+x 16
+y 35
+end
+arch dungeon_magic
+x 16
+y 36
 end
 arch cobblestones2
 x 16
 y 36
 end
+arch dungeon_magic
+x 16
+y 37
+end
 arch cobblestones
 x 16
 y 37
+end
+arch dungeon_magic
+x 16
+y 38
 end
 arch cobblestones2
 x 16
 y 38
 end
+arch dungeon_magic
+x 16
+y 39
+end
 arch brush
 x 16
 y 39
+end
+arch dungeon_magic
+x 16
+y 40
 end
 arch grass
 x 16
@@ -4512,13 +6784,25 @@ arch tree4
 x 16
 y 40
 end
-arch grass
+arch dungeon_magic
 x 16
 y 41
 end
 arch grass
 x 16
+y 41
+end
+arch dungeon_magic
+x 16
 y 42
+end
+arch grass
+x 16
+y 42
+end
+arch dungeon_magic
+x 16
+y 43
 end
 arch brush
 x 16
@@ -4532,6 +6816,10 @@ arch hedge_0
 x 16
 y 43
 end
+arch dungeon_magic
+x 16
+y 44
+end
 arch cobblestones2
 x 16
 y 44
@@ -4540,21 +6828,41 @@ arch lamppost
 x 16
 y 44
 end
-arch cobblestones2
+arch dungeon_magic
 x 16
 y 45
 end
 arch cobblestones2
 x 16
+y 45
+end
+arch dungeon_magic
+x 16
 y 46
+end
+arch cobblestones2
+x 16
+y 46
+end
+arch dungeon_magic
+x 16
+y 47
 end
 arch cobblestones2
 x 16
 y 47
 end
+arch dungeon_magic
+x 16
+y 48
+end
 arch grass
 x 16
 y 48
+end
+arch dungeon_magic
+x 16
+y 49
 end
 arch brush
 x 16
@@ -4662,13 +6970,25 @@ x 17
 y 18
 elevation -2256
 end
-arch sea
+arch dungeon_magic
 x 17
 y 19
 end
 arch sea
 x 17
+y 19
+end
+arch dungeon_magic
+x 17
 y 20
+end
+arch sea
+x 17
+y 20
+end
+arch dungeon_magic
+x 17
+y 21
 end
 arch sea
 x 17
@@ -4682,33 +7002,65 @@ arch sea1
 x 17
 y 22
 end
+arch dungeon_magic
+x 17
+y 23
+end
 arch sea1
 x 17
 y 23
 end
-arch sea
+arch dungeon_magic
 x 17
 y 24
 end
 arch sea
 x 17
+y 24
+end
+arch dungeon_magic
+x 17
 y 25
 end
 arch sea
+x 17
+y 25
+end
+arch dungeon_magic
 x 17
 y 26
 end
 arch sea
 x 17
+y 26
+end
+arch dungeon_magic
+x 17
 y 27
 end
 arch sea
+x 17
+y 27
+end
+arch dungeon_magic
 x 17
 y 28
 end
 arch sea
 x 17
+y 28
+end
+arch dungeon_magic
+x 17
 y 29
+end
+arch sea
+x 17
+y 29
+end
+arch dungeon_magic
+x 17
+y 30
 end
 arch cobblestones2
 x 17
@@ -4718,17 +7070,33 @@ arch cwall_2_1_2
 x 17
 y 30
 end
-arch grass
+arch dungeon_magic
 x 17
 y 31
 end
 arch grass
 x 17
+y 31
+end
+arch dungeon_magic
+x 17
 y 32
+end
+arch grass
+x 17
+y 32
+end
+arch dungeon_magic
+x 17
+y 33
 end
 arch cobblestones2
 x 17
 y 33
+end
+arch dungeon_magic
+x 17
+y 34
 end
 arch grass
 x 17
@@ -4738,37 +7106,73 @@ arch lamppost
 x 17
 y 34
 end
+arch dungeon_magic
+x 17
+y 35
+end
 arch grass
 x 17
 y 35
+end
+arch dungeon_magic
+x 17
+y 36
 end
 arch cobblestones2
 x 17
 y 36
 end
+arch dungeon_magic
+x 17
+y 37
+end
 arch cobblestones
 x 17
 y 37
+end
+arch dungeon_magic
+x 17
+y 38
 end
 arch cobblestones2
 x 17
 y 38
 end
-arch grass
+arch dungeon_magic
 x 17
 y 39
 end
 arch grass
 x 17
+y 39
+end
+arch dungeon_magic
+x 17
 y 40
+end
+arch grass
+x 17
+y 40
+end
+arch dungeon_magic
+x 17
+y 41
 end
 arch grass
 x 17
 y 41
 end
+arch dungeon_magic
+x 17
+y 42
+end
 arch brush
 x 17
 y 42
+end
+arch dungeon_magic
+x 17
+y 43
 end
 arch cobblestones2
 x 17
@@ -4777,6 +7181,10 @@ end
 arch swall_2_1_2
 x 17
 y 43
+end
+arch dungeon_magic
+x 17
+y 44
 end
 arch cobblestones
 x 17
@@ -4791,21 +7199,41 @@ x 17
 y 44
 type 66
 end
+arch dungeon_magic
+x 17
+y 45
+end
 arch cobblestones
 x 17
 y 45
 end
-arch cobblestones2
+arch dungeon_magic
 x 17
 y 46
 end
 arch cobblestones2
 x 17
+y 46
+end
+arch dungeon_magic
+x 17
 y 47
+end
+arch cobblestones2
+x 17
+y 47
+end
+arch dungeon_magic
+x 17
+y 48
 end
 arch grass
 x 17
 y 48
+end
+arch dungeon_magic
+x 17
+y 49
 end
 arch grass
 x 17
@@ -4913,41 +7341,85 @@ x 18
 y 18
 elevation -2256
 end
-arch sea
+arch dungeon_magic
 x 18
 y 19
 end
 arch sea
 x 18
+y 19
+end
+arch dungeon_magic
+x 18
 y 20
 end
 arch sea
+x 18
+y 20
+end
+arch dungeon_magic
 x 18
 y 21
 end
 arch sea
 x 18
+y 21
+end
+arch dungeon_magic
+x 18
 y 22
 end
 arch sea
+x 18
+y 22
+end
+arch dungeon_magic
 x 18
 y 23
 end
 arch sea
 x 18
+y 23
+end
+arch dungeon_magic
+x 18
 y 24
 end
 arch sea
+x 18
+y 24
+end
+arch dungeon_magic
 x 18
 y 25
 end
 arch sea
 x 18
+y 25
+end
+arch dungeon_magic
+x 18
 y 26
+end
+arch sea
+x 18
+y 26
+end
+arch dungeon_magic
+x 18
+y 27
 end
 arch sea1
 x 18
 y 27
+end
+arch magic_banned
+x 18
+y 28
+end
+arch dungeon_magic
+x 18
+y 28
 end
 arch sea1
 x 18
@@ -4957,6 +7429,14 @@ arch pier_1_1
 x 18
 y 28
 end
+arch magic_banned
+x 18
+y 29
+end
+arch dungeon_magic
+x 18
+y 29
+end
 arch sea1
 x 18
 y 29
@@ -4964,6 +7444,10 @@ end
 arch pier_2_2_1
 x 18
 y 29
+end
+arch dungeon_magic
+x 18
+y 30
 end
 arch cobblestones2
 x 18
@@ -4973,37 +7457,73 @@ arch cwall_2_1_2
 x 18
 y 30
 end
-arch cobblestones2
+arch dungeon_magic
 x 18
 y 31
 end
 arch cobblestones2
 x 18
+y 31
+end
+arch dungeon_magic
+x 18
 y 32
 end
 arch cobblestones2
+x 18
+y 32
+end
+arch dungeon_magic
 x 18
 y 33
 end
 arch cobblestones2
 x 18
+y 33
+end
+arch dungeon_magic
+x 18
 y 34
 end
 arch cobblestones2
+x 18
+y 34
+end
+arch dungeon_magic
 x 18
 y 35
 end
 arch cobblestones2
 x 18
+y 35
+end
+arch dungeon_magic
+x 18
 y 36
+end
+arch cobblestones2
+x 18
+y 36
+end
+arch dungeon_magic
+x 18
+y 37
 end
 arch cobblestones
 x 18
 y 37
 end
+arch dungeon_magic
+x 18
+y 38
+end
 arch cobblestones2
 x 18
 y 38
+end
+arch dungeon_magic
+x 18
+y 39
 end
 arch grass
 x 18
@@ -5013,17 +7533,33 @@ arch lamppost
 x 18
 y 39
 end
-arch grass
+arch dungeon_magic
 x 18
 y 40
 end
 arch grass
 x 18
+y 40
+end
+arch dungeon_magic
+x 18
 y 41
 end
 arch grass
 x 18
+y 41
+end
+arch dungeon_magic
+x 18
 y 42
+end
+arch grass
+x 18
+y 42
+end
+arch dungeon_magic
+x 18
+y 43
 end
 arch cobblestones2
 x 18
@@ -5033,25 +7569,49 @@ arch swall_2_1_2
 x 18
 y 43
 end
-arch cobblestones
+arch dungeon_magic
 x 18
 y 44
 end
 arch cobblestones
 x 18
+y 44
+end
+arch dungeon_magic
+x 18
 y 45
 end
-arch cobblestones2
+arch cobblestones
+x 18
+y 45
+end
+arch dungeon_magic
 x 18
 y 46
 end
 arch cobblestones2
 x 18
+y 46
+end
+arch dungeon_magic
+x 18
 y 47
+end
+arch cobblestones2
+x 18
+y 47
+end
+arch dungeon_magic
+x 18
+y 48
 end
 arch brush
 x 18
 y 48
+end
+arch dungeon_magic
+x 18
+y 49
 end
 arch grass
 x 18
@@ -5170,45 +7730,93 @@ x 19
 y 18
 elevation -2256
 end
-arch sea
+arch dungeon_magic
 x 19
 y 19
 end
 arch sea
 x 19
+y 19
+end
+arch dungeon_magic
+x 19
 y 20
 end
 arch sea
+x 19
+y 20
+end
+arch dungeon_magic
 x 19
 y 21
 end
 arch sea
 x 19
+y 21
+end
+arch dungeon_magic
+x 19
 y 22
 end
 arch sea
+x 19
+y 22
+end
+arch dungeon_magic
 x 19
 y 23
 end
 arch sea
 x 19
+y 23
+end
+arch dungeon_magic
+x 19
 y 24
 end
 arch sea
+x 19
+y 24
+end
+arch dungeon_magic
 x 19
 y 25
 end
 arch sea
 x 19
+y 25
+end
+arch dungeon_magic
+x 19
 y 26
+end
+arch sea
+x 19
+y 26
+end
+arch dungeon_magic
+x 19
+y 27
 end
 arch sea1
 x 19
 y 27
 end
+arch dungeon_magic
+x 19
+y 28
+end
 arch sea
 x 19
 y 28
+end
+arch magic_banned
+x 19
+y 29
+end
+arch dungeon_magic
+x 19
+y 29
 end
 arch sea1
 x 19
@@ -5218,6 +7826,10 @@ arch pier_2_1_2
 x 19
 y 29
 end
+arch dungeon_magic
+x 19
+y 30
+end
 arch cobblestones2
 x 19
 y 30
@@ -5225,6 +7837,10 @@ end
 arch cwall_2_1_2
 x 19
 y 30
+end
+arch dungeon_magic
+x 19
+y 31
 end
 arch cobblestones2
 x 19
@@ -5238,14 +7854,26 @@ sp 51
 x 19
 y 31
 end
+arch dungeon_magic
+x 19
+y 32
+end
 arch cobblestones2
 x 19
 y 32
 tag scorn_prison_exit
 end
+arch dungeon_magic
+x 19
+y 33
+end
 arch cobblestones2
 x 19
 y 33
+end
+arch dungeon_magic
+x 19
+y 34
 end
 arch cobblestones2
 x 19
@@ -5259,38 +7887,74 @@ sp 32
 x 19
 y 34
 end
+arch dungeon_magic
+x 19
+y 35
+end
 arch cobblestones2
 x 19
 y 35
 tag goths_tavern_exit
 end
+arch dungeon_magic
+x 19
+y 36
+end
 arch cobblestones2
 x 19
 y 36
+end
+arch dungeon_magic
+x 19
+y 37
 end
 arch cobblestones
 x 19
 y 37
 end
+arch dungeon_magic
+x 19
+y 38
+end
 arch cobblestones2
 x 19
 y 38
 end
-arch grass
+arch dungeon_magic
 x 19
 y 39
 end
 arch grass
 x 19
+y 39
+end
+arch dungeon_magic
+x 19
 y 40
 end
 arch grass
+x 19
+y 40
+end
+arch dungeon_magic
 x 19
 y 41
 end
 arch grass
 x 19
+y 41
+end
+arch dungeon_magic
+x 19
 y 42
+end
+arch grass
+x 19
+y 42
+end
+arch dungeon_magic
+x 19
+y 43
 end
 arch brush
 x 19
@@ -5304,6 +7968,10 @@ arch hedge_0
 x 19
 y 43
 end
+arch dungeon_magic
+x 19
+y 44
+end
 arch cobblestones2
 x 19
 y 44
@@ -5312,21 +7980,41 @@ arch lamppost
 x 19
 y 44
 end
-arch cobblestones2
+arch dungeon_magic
 x 19
 y 45
 end
 arch cobblestones2
 x 19
+y 45
+end
+arch dungeon_magic
+x 19
 y 46
+end
+arch cobblestones2
+x 19
+y 46
+end
+arch dungeon_magic
+x 19
+y 47
 end
 arch cobblestones2
 x 19
 y 47
 end
+arch dungeon_magic
+x 19
+y 48
+end
 arch grass
 x 19
 y 48
+end
+arch dungeon_magic
+x 19
+y 49
 end
 arch brush
 x 19
@@ -5469,6 +8157,10 @@ arch dungeon_magic
 x 20
 y 20
 end
+arch magic_banned
+x 20
+y 20
+end
 arch sea
 x 20
 y 20
@@ -5481,6 +8173,10 @@ arch dungeon_magic
 x 20
 y 21
 end
+arch magic_banned
+x 20
+y 21
+end
 arch sea1
 x 20
 y 21
@@ -5490,6 +8186,10 @@ x 20
 y 21
 end
 arch dungeon_magic
+x 20
+y 22
+end
+arch magic_banned
 x 20
 y 22
 end
@@ -5501,6 +8201,14 @@ arch pier_3_2
 x 20
 y 22
 end
+arch magic_banned
+x 20
+y 23
+end
+arch dungeon_magic
+x 20
+y 23
+end
 arch sea
 x 20
 y 23
@@ -5509,6 +8217,14 @@ arch pier_2_1_1
 x 20
 y 23
 end
+arch magic_banned
+x 20
+y 24
+end
+arch dungeon_magic
+x 20
+y 24
+end
 arch sea1
 x 20
 y 24
@@ -5516,6 +8232,14 @@ end
 arch pier_2_1_1
 x 20
 y 24
+end
+arch magic_banned
+x 20
+y 25
+end
+arch dungeon_magic
+x 20
+y 25
 end
 arch sea1
 x 20
@@ -5525,6 +8249,14 @@ arch pier_2_1_1
 x 20
 y 25
 end
+arch magic_banned
+x 20
+y 26
+end
+arch dungeon_magic
+x 20
+y 26
+end
 arch sea1
 x 20
 y 26
@@ -5532,6 +8264,14 @@ end
 arch pier_2_1_1
 x 20
 y 26
+end
+arch magic_banned
+x 20
+y 27
+end
+arch dungeon_magic
+x 20
+y 27
 end
 arch sea1
 x 20
@@ -5541,6 +8281,14 @@ arch pier_2_1_1
 x 20
 y 27
 end
+arch magic_banned
+x 20
+y 28
+end
+arch dungeon_magic
+x 20
+y 28
+end
 arch sea1
 x 20
 y 28
@@ -5548,6 +8296,14 @@ end
 arch pier_2_1_1
 x 20
 y 28
+end
+arch magic_banned
+x 20
+y 29
+end
+arch dungeon_magic
+x 20
+y 29
 end
 arch sea1
 x 20
@@ -5564,6 +8320,10 @@ sp 1
 x 20
 y 30
 end
+arch dungeon_magic
+x 20
+y 30
+end
 arch cobblestones2
 x 20
 y 30
@@ -5572,25 +8332,49 @@ arch weak_wall_4
 x 20
 y 30
 end
-arch cobblestones2
+arch dungeon_magic
 x 20
 y 31
 end
 arch cobblestones2
 x 20
+y 31
+end
+arch dungeon_magic
+x 20
 y 32
 end
 arch cobblestones2
+x 20
+y 32
+end
+arch dungeon_magic
 x 20
 y 33
 end
 arch cobblestones2
 x 20
+y 33
+end
+arch dungeon_magic
+x 20
 y 34
 end
 arch cobblestones2
 x 20
+y 34
+end
+arch dungeon_magic
+x 20
 y 35
+end
+arch cobblestones2
+x 20
+y 35
+end
+arch dungeon_magic
+x 20
+y 36
 end
 arch cobblestones2
 x 20
@@ -5599,6 +8383,10 @@ end
 arch cwall_2_2_2
 x 20
 y 36
+end
+arch dungeon_magic
+x 20
+y 37
 end
 arch cobblestones
 x 20
@@ -5611,6 +8399,10 @@ sp 7
 x 20
 y 37
 end
+arch dungeon_magic
+x 20
+y 38
+end
 arch cobblestones2
 x 20
 y 38
@@ -5619,42 +8411,82 @@ arch cwall_2_2_1
 x 20
 y 38
 end
-arch grass
+arch dungeon_magic
 x 20
 y 39
 end
 arch grass
 x 20
+y 39
+end
+arch dungeon_magic
+x 20
 y 40
+end
+arch grass
+x 20
+y 40
+end
+arch dungeon_magic
+x 20
+y 41
 end
 arch grass
 x 20
 y 41
 move_block all
 end
+arch dungeon_magic
+x 20
+y 42
+end
 arch brush
 x 20
 y 42
 end
-arch grass
+arch dungeon_magic
 x 20
 y 43
 end
 arch grass
 x 20
+y 43
+end
+arch dungeon_magic
+x 20
 y 44
 end
-arch brush
+arch grass
+x 20
+y 44
+end
+arch dungeon_magic
 x 20
 y 45
 end
 arch brush
 x 20
+y 45
+end
+arch dungeon_magic
+x 20
 y 46
+end
+arch brush
+x 20
+y 46
+end
+arch dungeon_magic
+x 20
+y 47
 end
 arch woods_2
 x 20
 y 47
+end
+arch dungeon_magic
+x 20
+y 48
 end
 arch grass
 x 20
@@ -5663,6 +8495,10 @@ end
 arch ytree_2
 x 20
 y 48
+end
+arch dungeon_magic
+x 20
+y 49
 end
 arch brush
 x 20
@@ -5773,19 +8609,35 @@ x 21
 y 18
 elevation -2256
 end
-arch sea
+arch dungeon_magic
 x 21
 y 19
 end
 arch sea
 x 21
+y 19
+end
+arch dungeon_magic
+x 21
 y 20
+end
+arch sea
+x 21
+y 20
+end
+arch dungeon_magic
+x 21
+y 21
 end
 arch sea
 x 21
 y 21
 end
 arch dungeon_magic
+x 21
+y 22
+end
+arch magic_banned
 x 21
 y 22
 end
@@ -5797,13 +8649,25 @@ arch pier_1_3
 x 21
 y 22
 end
-arch sea
+arch dungeon_magic
 x 21
 y 23
 end
 arch sea
 x 21
+y 23
+end
+arch dungeon_magic
+x 21
 y 24
+end
+arch sea
+x 21
+y 24
+end
+arch dungeon_magic
+x 21
+y 25
 end
 arch sea
 x 21
@@ -5813,6 +8677,10 @@ arch cwall_1_1
 x 21
 y 25
 end
+arch dungeon_magic
+x 21
+y 26
+end
 arch sea
 x 21
 y 26
@@ -5820,6 +8688,10 @@ end
 arch cwall_2_1_1
 x 21
 y 26
+end
+arch dungeon_magic
+x 21
+y 27
 end
 arch sea
 x 21
@@ -5829,6 +8701,10 @@ arch cwall_2_1_1
 x 21
 y 27
 end
+arch dungeon_magic
+x 21
+y 28
+end
 arch sea
 x 21
 y 28
@@ -5836,6 +8712,10 @@ end
 arch cwall_2_1_1
 x 21
 y 28
+end
+arch dungeon_magic
+x 21
+y 29
 end
 arch cobblestones2
 x 21
@@ -5844,6 +8724,10 @@ end
 arch cwall_2_1_1
 x 21
 y 29
+end
+arch dungeon_magic
+x 21
+y 30
 end
 arch cobblestones2
 x 21
@@ -5853,6 +8737,10 @@ arch cwall_3_4
 x 21
 y 30
 end
+arch dungeon_magic
+x 21
+y 31
+end
 arch cobblestones2
 x 21
 y 31
@@ -5860,6 +8748,10 @@ end
 arch cwall_2_1_1
 x 21
 y 31
+end
+arch dungeon_magic
+x 21
+y 32
 end
 arch cobblestones2
 x 21
@@ -5869,6 +8761,10 @@ arch cwall_2_1_1
 x 21
 y 32
 end
+arch dungeon_magic
+x 21
+y 33
+end
 arch cobblestones2
 x 21
 y 33
@@ -5876,6 +8772,10 @@ end
 arch cwall_2_1_1
 x 21
 y 33
+end
+arch dungeon_magic
+x 21
+y 34
 end
 arch cobblestones2
 x 21
@@ -5885,6 +8785,10 @@ arch cwall_2_1_1
 x 21
 y 34
 end
+arch dungeon_magic
+x 21
+y 35
+end
 arch cobblestones2
 x 21
 y 35
@@ -5892,6 +8796,10 @@ end
 arch cwall_2_1_1
 x 21
 y 35
+end
+arch dungeon_magic
+x 21
+y 36
 end
 arch cobblestones2
 x 21
@@ -5900,6 +8808,10 @@ end
 arch cwall_4
 x 21
 y 36
+end
+arch dungeon_magic
+x 21
+y 37
 end
 arch guard_house_1
 x 21
@@ -5912,6 +8824,10 @@ arch guard_house_2
 x 21
 y 37
 end
+arch dungeon_magic
+x 21
+y 38
+end
 arch cobblestones2
 x 21
 y 38
@@ -5920,6 +8836,10 @@ arch cwall_4
 x 21
 y 38
 end
+arch dungeon_magic
+x 21
+y 39
+end
 arch grass
 x 21
 y 39
@@ -5927,6 +8847,10 @@ end
 arch cwall_2_1_1
 x 21
 y 39
+end
+arch dungeon_magic
+x 21
+y 40
 end
 arch grass
 x 21
@@ -5936,6 +8860,10 @@ arch cwall_2_1_1
 x 21
 y 40
 end
+arch dungeon_magic
+x 21
+y 41
+end
 arch grass
 x 21
 y 41
@@ -5943,6 +8871,10 @@ end
 arch cwall_2_1_1
 x 21
 y 41
+end
+arch dungeon_magic
+x 21
+y 42
 end
 arch grass
 x 21
@@ -5952,6 +8884,10 @@ arch cwall_2_1_1
 x 21
 y 42
 end
+arch dungeon_magic
+x 21
+y 43
+end
 arch grass
 x 21
 y 43
@@ -5959,6 +8895,10 @@ end
 arch cwall_2_1_1
 x 21
 y 43
+end
+arch dungeon_magic
+x 21
+y 44
 end
 arch grass
 x 21
@@ -5968,6 +8908,10 @@ arch cwall_2_1_1
 x 21
 y 44
 end
+arch dungeon_magic
+x 21
+y 45
+end
 arch grass
 x 21
 y 45
@@ -5975,6 +8919,10 @@ end
 arch cwall_2_1_1
 x 21
 y 45
+end
+arch dungeon_magic
+x 21
+y 46
 end
 arch grass
 x 21
@@ -5984,6 +8932,10 @@ arch cwall_2_1_1
 x 21
 y 46
 end
+arch dungeon_magic
+x 21
+y 47
+end
 arch grass
 x 21
 y 47
@@ -5991,6 +8943,10 @@ end
 arch cwall_2_1_1
 x 21
 y 47
+end
+arch dungeon_magic
+x 21
+y 48
 end
 arch brush
 x 21
@@ -5999,6 +8955,10 @@ end
 arch cwall_2_1_1
 x 21
 y 48
+end
+arch dungeon_magic
+x 21
+y 49
 end
 arch brush
 x 21

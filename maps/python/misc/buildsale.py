@@ -98,7 +98,7 @@ if text[0] == 'help' or text[0] == 'yes':
     \n\n harbor - buy build scroll of harbor for %s %ss \
     \n\n guild - buy build scroll of small guild for %s %ss \
     \n\n lamppost - buy build scroll of lamppost for %s %ss \
-    \n\nAll transactions are in %ss\n(1 : %s0 imperial notes).' \
+    \n\nAll transactions are in %ss\n(1 : %s0 silver coins).' \
     %(costmply, curname0, tmplcostfnt, curname0, shopcostfnt, curname0, costmply, curname0, wellcostfnt, curname0, fountaincostfnt, curname0, farmcostfnt, curname0, costmply, curname0, minecostfnt, curname0, costmply, curname0, guildcostfnt, curname0, lampcostfnt, curname0, curname1, gexcrate)
 
 elif text[0] == 'house':

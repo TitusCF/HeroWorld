@@ -44,15 +44,15 @@ or (region == 'celvear')
 or (region == 'lostwages')):
     bankdatabase = "navarianroyalBank_DB"
     costmply = 2
-    curname0 = 'Navarian Royal'
-    curname1 = 'navarian royal'
+    curname0 = 'Imperial'
+    curname1 = 'imperial'
     gexcrate = 500
     welcome = 'Welcome to Navarian Architectural Services, A branch of the Bank of Navar. Do you need help?'
 else:
     bankdatabase = "ImperialBank_DB"
     costmply = 10000
-    curname0 = 'Silver Coin'
-    curname1 = 'silver coin'
+    curname0 = 'Imperial'
+    curname1 = 'imperial'
     gexcrate = 1000
     welcome = 'Welcome to Imperial Architectural Services, A branch of the Bank of Skud. Do you need help?'
 
@@ -64,18 +64,18 @@ farmcostfnt = 1 * costmply
 minecostfnt = 3 * costmply
 guildcostfnt = 8 * costmply
 lampcostfnt = 5 * costmply
-houseamount = 1000000 * costmply
-templeamount = 2000000 * costmply
-shopamount = 2000000 * costmply
-tobamount = 10000000 * costmply
-wellamount = 500000 * costmply
-fountainamount = 500000 * costmply
-farmamount = 100000 * costmply
+houseamount = 10 * costmply
+templeamount = 20 * costmply
+shopamount = 20 * costmply
+tobamount = 10 * costmply
+wellamount = 50 * costmply
+fountainamount = 50 * costmply
+farmamount = 10 * costmply
 prospectamount = 10 * costmply
-mineamount = 3000000 * costmply
-harboramount = 1000000 * costmply
-guildamount = 8000000 * costmply
-lampamount = 5000 * costmply
+mineamount = 300 * costmply
+harboramount = 100 * costmply
+guildamount = 800 * costmply
+lampamount = 5 * costmply
 
 
 bank = CFBank.CFBank(bankdatabase)

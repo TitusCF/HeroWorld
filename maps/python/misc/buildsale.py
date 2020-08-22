@@ -86,19 +86,19 @@ text = string.split(Crossfire.WhatIsMessage())
 if text[0] == 'help' or text[0] == 'yes':
     message ='Commands are:\
     \n balance - shows your bank account balance \
-    \n\n house - buy build scroll of house for %s000000 %ss \
-    \n\n temple - buy build scroll of temple for %s000000 %ss \
-    \n\n shop - buy build scroll of shop for %s000000 %ss \
-    \n\n tob - buy build scroll of small tower for %s0000000 %ss \
-    \n\n well - buy build scroll of well for %s00000 %ss \
-    \n\n fountain - buy build scroll of fountain for %s00000 %ss \
-    \n\n farm - buy build scroll of farm for %s00000 %ss \
+    \n\n house - buy build scroll of house for %s %ss \
+    \n\n temple - buy build scroll of temple for %s %ss \
+    \n\n shop - buy build scroll of shop for %s %ss \
+    \n\n tob - buy build scroll of small tower for %s %ss \
+    \n\n well - buy build scroll of well for %s %ss \
+    \n\n fountain - buy build scroll of fountain for %s %ss \
+    \n\n farm - buy build scroll of farm for %s %ss \
     \n\n prospect - buy build scroll of temporary prospect hole for %s0 %ss \
-    \n\n mine - buy build scroll of mine for %s,000000 %ss \
-    \n\n harbor - buy build scroll of harbor for %s000000 %ss \
-    \n\n guild - buy build scroll of small guild for %s000000 %ss \
-    \n\n lamppost - buy build scroll of lamppost for %s000 %ss \
-    \n\nAll transactions are in %ss\n(1 : %s0 imperial notes).' \
+    \n\n mine - buy build scroll of mine for %s %ss \
+    \n\n harbor - buy build scroll of harbor for %s %ss \
+    \n\n guild - buy build scroll of small guild for %s %ss \
+    \n\n lamppost - buy build scroll of lamppost for %s %ss \
+    \n\nAll transactions are in %ss\n.' \
     %(costmply, curname0, tmplcostfnt, curname0, shopcostfnt, curname0, costmply, curname0, wellcostfnt, curname0, fountaincostfnt, curname0, farmcostfnt, curname0, costmply, curname0, minecostfnt, curname0, costmply, curname0, guildcostfnt, curname0, lampcostfnt, curname0, curname1, gexcrate)
 
 elif text[0] == 'house':

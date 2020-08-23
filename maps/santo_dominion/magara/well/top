@@ -1,13 +1,14 @@
 arch map
-region santodominion
 name well
+region santodominion
+darkness 1
+width 30
+height 21
 msg
 Creator: Andreas Vogl
 Date:    8/23/2002
+Modified: 2020-08-23 Acer
 endmsg
-width 30
-height 21
-darkness 1
 end
 arch blocked
 end
@@ -609,27 +610,27 @@ x 4
 y 4
 end
 arch rock
-blocksview 1
 x 4
 y 4
+blocksview 1
 end
 arch pstone_3
 x 4
 y 5
 end
 arch rock
-blocksview 1
 x 4
 y 5
+blocksview 1
 end
 arch pstone_3
 x 4
 y 6
 end
 arch rock
-blocksview 1
 x 4
 y 6
+blocksview 1
 end
 arch pstone_1
 x 4
@@ -2258,9 +2259,11 @@ x 16
 y 5
 end
 arch rune_summon_water_elemental
-level 3
 x 16
 y 5
+level 3
+arch spell_summon_water_elemental
+end
 end
 arch pstone_1
 x 16
@@ -2634,18 +2637,18 @@ x 19
 y 2
 end
 arch rock
-blocksview 1
 x 19
 y 2
+blocksview 1
 end
 arch pstone_1
 x 19
 y 3
 end
 arch rock
-blocksview 1
 x 19
 y 3
+blocksview 1
 end
 arch pstone_1
 x 19
@@ -2716,9 +2719,9 @@ x 19
 y 14
 end
 arch rock
-blocksview 1
 x 19
 y 14
+blocksview 1
 end
 arch pstone_1
 x 19
@@ -2835,9 +2838,9 @@ x 20
 y 11
 end
 arch river_ne-w
-no_pass 0
 x 20
 y 11
+no_pass 0
 end
 arch magic_mouth
 msg
@@ -2939,54 +2942,54 @@ x 21
 y 8
 end
 arch river_sw-ne_u
-no_pass 0
 x 21
 y 8
+no_pass 0
 end
 arch light4
 x 21
 y 9
 end
 arch mover_5
-attacktype 1
-level 1
-fly_on 0
 x 21
 y 9
+level 1
+attacktype 1
+fly_on 0
 end
 arch pstone_1
 x 21
 y 9
 end
 arch river_ne-s
-no_pass 0
 x 21
 y 9
+no_pass 0
 end
 arch mover_5
-attacktype 1
-level 1
-fly_on 0
 x 21
 y 10
+level 1
+attacktype 1
+fly_on 0
 end
 arch pstone_1
 x 21
 y 10
 end
 arch river_sw-n
-no_pass 0
 x 21
 y 10
+no_pass 0
 end
 arch pstone_1
 x 21
 y 11
 end
 arch river_sw-ne_l
-no_pass 0
 x 21
 y 11
+no_pass 0
 end
 arch pstone_1
 x 21
@@ -3209,6 +3212,10 @@ arch pstone_1
 x 23
 y 2
 end
+arch giant
+x 23
+y 2
+end
 arch pstone_1
 x 23
 y 3
@@ -3302,9 +3309,9 @@ x 23
 y 14
 end
 arch rock
-blocksview 1
 x 23
 y 14
+blocksview 1
 end
 arch pstone_1
 x 23
@@ -3385,7 +3392,7 @@ arch pstone_1
 x 24
 y 8
 end
-arch ford_ns
+arch river_bridge_ns
 x 24
 y 8
 end
@@ -3422,9 +3429,9 @@ x 24
 y 14
 end
 arch rock
-blocksview 1
 x 24
 y 14
+blocksview 1
 end
 arch pstone_1
 x 24
@@ -3466,6 +3473,10 @@ x 25
 y 1
 end
 arch pstone_1
+x 25
+y 2
+end
+arch giant
 x 25
 y 2
 end
@@ -3550,9 +3561,9 @@ x 25
 y 14
 end
 arch rock
-blocksview 1
 x 25
 y 14
+blocksview 1
 end
 arch pstone_1
 x 25
@@ -4081,12 +4092,4 @@ end
 arch blocked
 x 29
 y 20
-end
-arch giant
-x 23
-y 2
-end
-arch giant
-x 25
-y 2
 end

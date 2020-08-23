@@ -11,7 +11,7 @@ msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Oct 18 11:46:05 2000
-Modified: 2020-01-21 Acer
+Modified: 2020-08-23 Acer
 endmsg
 end
 arch cobblestones2
@@ -177,48 +177,58 @@ end
 arch shop_empty
 x 1
 y 9
-randomitems random_books
-auto_apply 1
 end
 arch shop_empty
 x 1
 y 10
-randomitems random_books
-auto_apply 1
 end
 arch shop_empty
 x 1
 y 11
-randomitems random_books
-auto_apply 1
 end
 arch shop_empty
 x 1
 y 12
-randomitems random_books
-auto_apply 1
 end
 arch shop_empty
 x 1
 y 13
-randomitems random_books
-auto_apply 1
 end
 arch shop_empty
 x 1
 y 14
-randomitems random_books
-auto_apply 1
 end
 arch shop_empty
 x 1
 y 15
-randomitems random_books
-auto_apply 1
+end
+arch cleric_book
+slaying holy word
+msg
+holy word
+endmsg
+x 1
+y 15
+unpaid 1
+identified 1
+end
+arch light4
+x 1
+y 16
 end
 arch shop_empty
 x 1
 y 16
+end
+arch cleric_book
+slaying holy word
+msg
+holy word
+endmsg
+x 1
+y 16
+unpaid 1
+identified 1
 end
 arch shop_empty
 x 1
@@ -302,6 +312,16 @@ arch shop_empty
 x 2
 y 16
 end
+arch cleric_book
+slaying holy word
+msg
+holy word
+endmsg
+x 2
+y 16
+unpaid 1
+identified 1
+end
 arch shop_empty
 x 2
 y 17
@@ -367,44 +387,178 @@ end
 arch shop_empty
 x 3
 y 9
-randomitems random_books
-auto_apply 1
+end
+arch light4
+x 3
+y 10
 end
 arch shop_empty
 x 3
 y 10
-randomitems random_books
-auto_apply 1
+end
+arch bookshelf
+name Books on causing harm
+x 3
+y 10
+carrying 95000
+no_pick 1
+arch cleric_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_cause_medium_wounds
+end
+end
+arch cleric_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_cause_heavy_wounds
+end
+end
+arch cleric_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_cause_light_wounds
+end
+end
 end
 arch shop_empty
 x 3
 y 11
-randomitems random_books
-auto_apply 1
+end
+arch bookshelf
+name Books on causing harm
+x 3
+y 11
+carrying 95000
+no_pick 1
+arch cleric_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_cause_medium_wounds
+end
+end
+arch cleric_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_cause_heavy_wounds
+end
+end
+arch cleric_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_cause_light_wounds
+end
+end
 end
 arch shop_empty
 x 3
 y 12
-randomitems random_books
-auto_apply 1
+end
+arch bookshelf
+name Books on causing harm
+x 3
+y 12
+carrying 95000
+no_pick 1
+arch cleric_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_cause_medium_wounds
+end
+end
+arch cleric_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_cause_heavy_wounds
+end
+end
+arch cleric_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_cause_light_wounds
+end
+end
+end
+arch light4
+x 3
+y 13
 end
 arch shop_empty
 x 3
 y 13
-randomitems random_books
-auto_apply 1
+end
+arch bookshelf
+name Books on causing harm
+x 3
+y 13
+carrying 95000
+no_pick 1
+arch cleric_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_cause_medium_wounds
+end
+end
+arch cleric_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_cause_heavy_wounds
+end
+end
+arch cleric_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_cause_light_wounds
+end
+end
 end
 arch shop_empty
 x 3
 y 14
-randomitems random_books
-auto_apply 1
+end
+arch bookshelf
+name Books on causing harm
+x 3
+y 14
+carrying 95000
+no_pick 1
+arch cleric_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_cause_medium_wounds
+end
+end
+arch cleric_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_cause_heavy_wounds
+end
+end
+arch cleric_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_cause_light_wounds
+end
+end
 end
 arch shop_empty
 x 3
 y 15
-randomitems random_books
-auto_apply 1
 end
 arch shop_empty
 x 3
@@ -494,19 +648,7 @@ y 10
 end
 arch shop_empty
 x 4
-y 10
-end
-arch shop_empty
-x 4
 y 11
-end
-arch shop_empty
-x 4
-y 11
-end
-arch shop_empty
-x 4
-y 12
 end
 arch shop_empty
 x 4
@@ -518,19 +660,7 @@ y 13
 end
 arch shop_empty
 x 4
-y 13
-end
-arch shop_empty
-x 4
 y 14
-end
-arch shop_empty
-x 4
-y 14
-end
-arch shop_empty
-x 4
-y 15
 end
 arch shop_empty
 x 4
@@ -602,44 +732,205 @@ end
 arch shop_empty
 x 5
 y 9
-randomitems random_books
-auto_apply 1
 end
 arch shop_empty
 x 5
 y 10
-randomitems random_books
-auto_apply 1
+end
+arch bookshelf
+name Books for Evokers
+x 5
+y 10
+carrying 20000
+no_pick 1
+arch evoker_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_armour
+end
+end
+arch evoker_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_icestorm
+end
+end
+arch evoker_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_small_snowstorm
+end
+end
+arch evoker_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_small_bullet
+end
+end
 end
 arch shop_empty
 x 5
 y 11
-randomitems random_books
-auto_apply 1
+end
+arch bookshelf
+name Books for Evokers
+x 5
+y 11
+carrying 20000
+no_pick 1
+arch evoker_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_detect_monster
+end
+end
+arch evoker_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_mana_blast
+end
+end
+arch evoker_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_small_manaball
+end
+end
+arch evoker_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_frostbolt
+end
+end
 end
 arch shop_empty
 x 5
 y 12
-randomitems random_books
-auto_apply 1
+end
+arch bookshelf
+name Books for Evokers
+x 5
+y 12
+carrying 20000
+no_pick 1
+arch evoker_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_manabolt
+end
+end
+arch evoker_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_medium_snowstorm
+end
+end
+arch evoker_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_lg_magic_bullet
+end
+end
+arch evoker_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_rune_of_frost
+end
+end
 end
 arch shop_empty
 x 5
 y 13
-randomitems random_books
-auto_apply 1
+end
+arch bookshelf
+name Books for Evokers
+x 5
+y 13
+carrying 20000
+no_pick 1
+arch evoker_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_medium_manaball
+end
+end
+arch evoker_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_large_snowstorm
+end
+end
+arch evoker_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_bullet_swarm
+end
+end
+arch evoker_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_large_manaball
+end
+end
 end
 arch shop_empty
 x 5
 y 14
-randomitems random_books
-auto_apply 1
+end
+arch bookshelf
+name Books for Evokers
+x 5
+y 14
+carrying 20000
+no_pick 1
+arch evoker_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_create_frost_wall
+end
+end
+arch evoker_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_bullet_storm
+end
+end
+arch evoker_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_cancellation
+end
+end
+arch evoker_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_create_pool_of_chaos
+end
+end
 end
 arch shop_empty
 x 5
 y 15
-randomitems random_books
-auto_apply 1
 end
 arch shop_empty
 x 5
@@ -720,11 +1011,7 @@ arch shop_empty
 x 6
 y 10
 end
-arch shop_empty
-x 6
-y 10
-end
-arch shop_empty
+arch woodfloor
 x 6
 y 11
 end
@@ -732,7 +1019,7 @@ arch shop_empty
 x 6
 y 11
 end
-arch shop_empty
+arch woodfloor
 x 6
 y 12
 end
@@ -740,7 +1027,7 @@ arch shop_empty
 x 6
 y 12
 end
-arch shop_empty
+arch woodfloor
 x 6
 y 13
 end
@@ -748,17 +1035,13 @@ arch shop_empty
 x 6
 y 13
 end
-arch shop_empty
+arch woodfloor
 x 6
 y 14
 end
 arch shop_empty
 x 6
 y 14
-end
-arch shop_empty
-x 6
-y 15
 end
 arch shop_empty
 x 6
@@ -829,44 +1112,213 @@ end
 arch shop_empty
 x 7
 y 9
-randomitems random_books
-auto_apply 1
+end
+arch light4
+x 7
+y 10
 end
 arch shop_empty
 x 7
 y 10
-randomitems random_books
-auto_apply 1
+end
+arch bookshelf
+name Books for Pyromancers
+x 7
+y 10
+carrying 20000
+no_pick 1
+arch pyro_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_burning_hands
+end
+end
+arch pyro_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_sm_lightning
+end
+end
+arch pyro_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_firebolt
+end
+end
+arch pyro_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_small_fireball
+end
+end
 end
 arch shop_empty
 x 7
 y 11
-randomitems random_books
-auto_apply 1
+end
+arch bookshelf
+name Books for Pyromancers
+x 7
+y 11
+carrying 20000
+no_pick 1
+arch pyro_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_burning_hands
+end
+end
+arch pyro_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_sm_lightning
+end
+end
+arch pyro_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_firebolt
+end
+end
+arch pyro_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_small_fireball
+end
+end
 end
 arch shop_empty
 x 7
 y 12
-randomitems random_books
-auto_apply 1
+end
+arch bookshelf
+name Books for Pyromancers
+x 7
+y 12
+carrying 20000
+no_pick 1
+arch pyro_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_medium_fireball
+end
+end
+arch pyro_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_faery_fire
+end
+end
+arch pyro_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_large_lightning
+end
+end
+arch pyro_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_rune_of_fire
+end
+end
+end
+arch light4
+x 7
+y 13
 end
 arch shop_empty
 x 7
 y 13
-randomitems random_books
-auto_apply 1
+end
+arch bookshelf
+name Books for Pyromancers
+x 7
+y 13
+carrying 20000
+no_pick 1
+arch pyro_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_large_fireball
+end
+end
+arch pyro_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_create_bomb
+end
+end
+arch pyro_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_create_fire_wall
+end
+end
+arch pyro_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_rune_of_shocking
+end
+end
 end
 arch shop_empty
 x 7
 y 14
-randomitems random_books
-auto_apply 1
+end
+arch bookshelf
+name Books for Pyromancers
+x 7
+y 14
+carrying 20000
+no_pick 1
+arch pyro_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_rune_of_blasting
+end
+end
+arch pyro_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_firetrap
+end
+end
+arch pyro_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_build_fireball_wall
+end
+end
+arch pyro_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_build_lightning_wall
+end
+end
 end
 arch shop_empty
 x 7
 y 15
-randomitems random_books
-auto_apply 1
 end
 arch shop_empty
 x 7
@@ -949,17 +1401,9 @@ y 9
 end
 arch shop_empty
 x 8
-y 9
-end
-arch shop_empty
-x 8
 y 10
 end
-arch shop_empty
-x 8
-y 10
-end
-arch shop_empty
+arch woodfloor
 x 8
 y 11
 end
@@ -967,7 +1411,7 @@ arch shop_empty
 x 8
 y 11
 end
-arch shop_empty
+arch woodfloor
 x 8
 y 12
 end
@@ -979,21 +1423,13 @@ arch shop_empty
 x 8
 y 13
 end
-arch shop_empty
-x 8
-y 13
-end
-arch shop_empty
+arch woodfloor
 x 8
 y 14
 end
 arch shop_empty
 x 8
 y 14
-end
-arch shop_empty
-x 8
-y 15
 end
 arch shop_empty
 x 8
@@ -1065,44 +1501,212 @@ end
 arch shop_empty
 x 9
 y 9
-randomitems random_books
-auto_apply 1
 end
 arch shop_empty
 x 9
 y 10
-randomitems random_books
-auto_apply 1
+end
+arch bookshelf
+name Books for Sorcerers
+x 9
+y 10
+carrying 20000
+no_pick 1
+arch sorcerer_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_detect_magic
+end
+end
+arch sorcerer_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_magic_bullet
+end
+end
+arch sorcerer_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_magic_missile
+end
+end
+arch sorcerer_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_marking_rune
+end
+end
+arch sorcerer_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_spark_shower
+end
+end
 end
 arch shop_empty
 x 9
 y 11
-randomitems random_books
-auto_apply 1
+end
+arch bookshelf
+name Books for Sorcerers
+x 9
+y 11
+carrying 20000
+no_pick 1
+arch sorcerer_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_probe
+end
+end
+arch sorcerer_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_slow
+end
+end
+arch sorcerer_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_confusion
+end
+end
+arch sorcerer_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_paralyze
+end
+end
 end
 arch shop_empty
 x 9
 y 12
-randomitems random_books
-auto_apply 1
+end
+arch bookshelf
+name Books for Sorcerers
+x 9
+y 12
+carrying 20000
+no_pick 1
+arch sorcerer_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_poison_cloud
+end
+end
+arch sorcerer_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_dexterity
+end
+end
+arch sorcerer_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_charisma
+end
+end
+arch sorcerer_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_strength
+end
+end
 end
 arch shop_empty
 x 9
 y 13
-randomitems random_books
-auto_apply 1
+end
+arch bookshelf
+name Books for Sorcerers
+x 9
+y 13
+carrying 20000
+no_pick 1
+arch sorcerer_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_constitution
+end
+end
+arch sorcerer_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_disarm
+end
+end
+arch sorcerer_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_fear
+end
+end
+arch sorcerer_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_dark_vision
+end
+end
 end
 arch shop_empty
 x 9
 y 14
-randomitems random_books
-auto_apply 1
+end
+arch bookshelf
+name Books for Sorcerers
+x 9
+y 14
+carrying 20000
+no_pick 1
+arch sorcerer_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_magic_mapping
+end
+end
+arch sorcerer_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_invisible
+end
+end
+arch sorcerer_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_transference
+end
+end
+arch sorcerer_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_steambolt
+end
+end
 end
 arch shop_empty
 x 9
 y 15
-randomitems random_books
-auto_apply 1
 end
 arch shop_empty
 x 9
@@ -1184,17 +1788,9 @@ y 9
 end
 arch shop_empty
 x 10
-y 9
-end
-arch shop_empty
-x 10
 y 10
 end
-arch shop_empty
-x 10
-y 10
-end
-arch shop_empty
+arch woodfloor
 x 10
 y 11
 end
@@ -1202,7 +1798,7 @@ arch shop_empty
 x 10
 y 11
 end
-arch shop_empty
+arch woodfloor
 x 10
 y 12
 end
@@ -1210,7 +1806,7 @@ arch shop_empty
 x 10
 y 12
 end
-arch shop_empty
+arch woodfloor
 x 10
 y 13
 end
@@ -1218,17 +1814,13 @@ arch shop_empty
 x 10
 y 13
 end
-arch shop_empty
+arch woodfloor
 x 10
 y 14
 end
 arch shop_empty
 x 10
 y 14
-end
-arch shop_empty
-x 10
-y 15
 end
 arch shop_empty
 x 10
@@ -1299,44 +1891,213 @@ end
 arch shop_empty
 x 11
 y 9
-randomitems random_books
-auto_apply 1
+end
+arch light4
+x 11
+y 10
 end
 arch shop_empty
 x 11
 y 10
-randomitems random_books
-auto_apply 1
+end
+arch bookshelf
+name Books for Summoners
+x 11
+y 10
+carrying 20000
+no_pick 1
+arch summoner_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_create_missile
+end
+end
+arch summoner_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_earth_to_dust
+end
+end
+arch summoner_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_lesser_summon_golem
+end
+end
+arch summoner_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_summon_fog
+end
+end
 end
 arch shop_empty
 x 11
 y 11
-randomitems random_books
-auto_apply 1
+end
+arch bookshelf
+name Books for Summoners
+x 11
+y 11
+carrying 20000
+no_pick 1
+arch summoner_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_summon_pet_monster
+end
+end
+arch summoner_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_summon_golem
+end
+end
+arch summoner_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_alchemy
+end
+end
+arch summoner_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_create_earth_wall
+end
+end
 end
 arch shop_empty
 x 11
 y 12
-randomitems random_books
-auto_apply 1
+end
+arch bookshelf
+name Books for Summoners
+x 11
+y 12
+carrying 20000
+no_pick 1
+arch summoner_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_summon_water_elemental
+end
+end
+arch summoner_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_summon_earth_elemental
+end
+end
+arch summoner_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_charm_monsters
+end
+end
+arch summoner_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_counterspell
+end
+end
+end
+arch light4
+x 11
+y 13
 end
 arch shop_empty
 x 11
 y 13
-randomitems random_books
-auto_apply 1
+end
+arch bookshelf
+name Books for Summoners
+x 11
+y 13
+carrying 20000
+no_pick 1
+arch summoner_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_create_food
+end
+end
+arch summoner_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_summon_air_elemental
+end
+end
+arch summoner_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_mystic_fist
+end
+end
+arch summoner_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_counterwall
+end
+end
 end
 arch shop_empty
 x 11
 y 14
-randomitems random_books
-auto_apply 1
+end
+arch bookshelf
+name Books for Summoners
+x 11
+y 14
+carrying 20000
+no_pick 1
+arch summoner_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_build_director
+end
+end
+arch summoner_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_summon_fire_elemental
+end
+end
+arch summoner_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_dancing_sword
+end
+end
+arch summoner_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_pentagram
+end
+end
 end
 arch shop_empty
 x 11
 y 15
-randomitems random_books
-auto_apply 1
 end
 arch shop_empty
 x 11
@@ -1422,6 +2183,20 @@ y 16
 end
 arch shop_empty
 x 12
+y 16
+end
+arch cleric_book
+slaying holy word
+msg
+holy word
+endmsg
+x 12
+y 16
+unpaid 1
+identified 1
+end
+arch shop_empty
+x 12
 y 17
 end
 arch wall_2_1_2
@@ -1496,7 +2271,39 @@ y 15
 end
 arch shop_empty
 x 13
+y 15
+end
+arch cleric_book
+slaying holy word
+msg
+holy word
+endmsg
+x 13
+y 15
+unpaid 1
+identified 1
+end
+arch shop_empty
+x 13
 y 16
+end
+arch light4
+x 13
+y 16
+end
+arch shop_empty
+x 13
+y 16
+end
+arch cleric_book
+slaying holy word
+msg
+holy word
+endmsg
+x 13
+y 16
+unpaid 1
+identified 1
 end
 arch shop_empty
 x 13

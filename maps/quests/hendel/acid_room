@@ -8,7 +8,7 @@ enter_x 10
 enter_y 49
 msg
 Created:  1993-11-17 Chris Hendelberg (hendel@ecst.csuchico.edu)
-Modified: 2008-12-22 Rick Tanner
+Modified: 2020-08-23 Acer
 endmsg
 end
 arch blocked
@@ -2003,14 +2003,6 @@ arch dungeon_floor
 x 7
 y 1
 end
-arch evoker_book
-x 7
-y 1
-value 1800
-randomitems none
-arch spell_ball_lightning
-end
-end
 arch dungeon_floor
 x 7
 y 2
@@ -2349,12 +2341,14 @@ resist_cold 30
 resist_poison -100
 carrying 100
 can_use_scroll 1
+can_use_range 1
 can_use_armour 1
 can_use_weapon 1
 can_use_ring 1
-can_use_range 1
 arch key2
 slaying ACID5
+end
+arch ring_of_acid
 end
 end
 arch marble
@@ -4031,10 +4025,6 @@ x 13
 y 3
 end
 arch dungeon_floor
-x 13
-y 3
-end
-arch random_potion
 x 13
 y 3
 end

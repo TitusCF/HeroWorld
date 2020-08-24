@@ -1,12 +1,13 @@
 arch map
-region navar
 name Ocean Cave
+region navar
+width 20
+height 20
 msg
 Creator: CF Java Map Editor
 Date:    7/1/2004
+Modified: 2020-08-24 Acer
 endmsg
-width 20
-height 20
 end
 arch dungeon_floor
 end
@@ -592,16 +593,18 @@ msg
 @match *
 May you weather the whims of the Ocean Goddess.
 endmsg
-randomitems c_m_priest
-unaggressive 1
-pick_up 30
 Wis 10
-run_away 10
 x 5
 y 15
+randomitems c_m_priest
+pick_up 30
+unaggressive 1
+run_away 10
 arch spell_siren_call
 end
 arch spell_wave
+end
+arch holy_symbol_calling
 end
 end
 arch dungeon_floor
@@ -843,9 +846,9 @@ x 8
 y 2
 end
 arch evoker_book
-randomitems none
 x 8
 y 2
+randomitems none
 arch spell_negabolt
 end
 end
@@ -1506,9 +1509,9 @@ x 14
 y 11
 end
 arch summoner_book
-randomitems none
 x 14
 y 11
+randomitems none
 arch spell_magehound
 end
 end
@@ -1517,9 +1520,9 @@ x 14
 y 12
 end
 arch evoker_book
-randomitems none
 x 14
 y 12
+randomitems none
 arch spell_negaball
 end
 end

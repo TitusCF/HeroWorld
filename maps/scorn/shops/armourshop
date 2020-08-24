@@ -11,7 +11,7 @@ msg
 Creator:
 Email:
 Date: Fri Oct 15 13:50:25 1993
-Modified: 2020-08-21 Acer
+Modified: 2020-08-24 Acer
 endmsg
 end
 arch shop_empty
@@ -1120,9 +1120,9 @@ x 13
 y 6
 end
 arch altar_trigger
-name 10 Red Dragon Scale to Unlock
+name 20 Red Dragon Scale to Unlock
 slaying dragon_scale
-food 10
+food 20
 x 13
 y 6
 connected 12345
@@ -1132,9 +1132,9 @@ x 13
 y 7
 end
 arch altar_trigger
-name 10 Dragon Eyes to Unlock
+name 20 Dragon Eyes to Unlock
 slaying dragon_eye
-food 10
+food 20
 x 13
 y 7
 connected 13456
@@ -1144,9 +1144,9 @@ x 13
 y 8
 end
 arch altar_trigger
-name 10 Beholder Eyes to Unlock
+name 20 Beholder Eyes to Unlock
 slaying beholdereye
-food 10
+food 20
 x 13
 y 8
 connected 123789
@@ -1247,27 +1247,18 @@ face shop_empty.111
 x 14
 y 6
 end
-arch create_dragon_mail
-name Convert Bronze Scale Mail to Red Dragon Mail
-slaying b_scale_mail
-food 1
-x 14
-y 6
-end
 arch spikes_closed
 x 14
 y 6
 connected 12345
 activate_on_release 0
 end
+arch dragon_mail
+x 14
+y 6
+end
 arch cobblestones2
 face shop_empty.111
-x 14
-y 7
-end
-arch create_dragon_shield
-name Convert Bronze Shield to Dragon Shield
-slaying b_shield
 x 14
 y 7
 end
@@ -1277,21 +1268,19 @@ y 7
 connected 13456
 activate_on_release 0
 end
-arch cobblestones2
-face shop_empty.111
+arch dragon_shield
 x 14
-y 8
-end
-arch create_eyeshield
-slaying small_shield
-x 14
-y 8
+y 7
 end
 arch spikes_closed
 x 14
 y 8
 connected 123789
 activate_on_release 0
+end
+arch eyeshield
+x 14
+y 8
 end
 arch shop_empty
 x 14
@@ -1401,11 +1390,6 @@ arch wall_2_1_1
 x 15
 y 6
 end
-arch b_scale_mail
-x 15
-y 6
-no_pick 1
-end
 arch shop_empty
 x 15
 y 7
@@ -1414,11 +1398,6 @@ arch wall_2_1_1
 x 15
 y 7
 end
-arch b_shield
-x 15
-y 7
-no_pick 1
-end
 arch shop_empty
 x 15
 y 8
@@ -1426,11 +1405,6 @@ end
 arch wall_2_1_1
 x 15
 y 8
-end
-arch small_shield
-x 15
-y 8
-no_pick 1
 end
 arch shop_empty
 x 15

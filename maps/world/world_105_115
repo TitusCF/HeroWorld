@@ -11,7 +11,7 @@ msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Dec 16 20:53:13 2001
-Modified: 2020-08-23 Acer
+Modified: 2020-08-25 Acer
 endmsg
 outdoor 1
 tile_path_1 world_105_114
@@ -8194,6 +8194,11 @@ x 20
 y 7
 elevation -2256
 end
+arch shallow_sea
+x 20
+y 8
+move_block 0
+end
 arch invis_exit
 slaying /dungeons/trollbridge
 msg
@@ -8203,11 +8208,6 @@ hp 2
 sp 4
 x 20
 y 8
-end
-arch sea
-x 20
-y 8
-elevation -2256
 end
 arch stonebridge_2_1_2
 x 20
@@ -8698,9 +8698,10 @@ x 21
 y 7
 elevation -2256
 end
-arch sea
+arch shallow_sea
 x 21
 y 8
+move_block 0
 end
 arch stonebridge_2_1_2
 x 21
@@ -9169,6 +9170,11 @@ x 22
 y 7
 elevation 4
 end
+arch shallow_sea
+x 22
+y 8
+move_block 0
+end
 arch invis_exit
 slaying /dungeons/trollbridge
 msg
@@ -9178,11 +9184,6 @@ hp 29
 sp 3
 x 22
 y 8
-end
-arch sea
-x 22
-y 8
-elevation -2256
 end
 arch stonebridge_2_1_2
 x 22

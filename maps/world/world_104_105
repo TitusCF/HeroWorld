@@ -3,7 +3,7 @@ name world_104_105
 width 50
 height 50
 msg
-Modified: 2020-01-17 Acer
+Modified: 2020-08-25 Acer
 endmsg
 outdoor 1
 tile_path_1 world_104_104
@@ -8931,11 +8931,6 @@ arch afloor_blue_right
 x 19
 y 21
 end
-arch mountain
-x 19
-y 22
-elevation 8778
-end
 arch magic_banned
 x 19
 y 22
@@ -8948,11 +8943,6 @@ arch awall_2_2_2
 x 19
 y 22
 end
-arch mountain2
-x 19
-y 23
-elevation 9908
-end
 arch magic_banned
 x 19
 y 23
@@ -8964,11 +8954,6 @@ end
 arch awall_2_1_1
 x 19
 y 23
-end
-arch mountain2
-x 19
-y 24
-elevation 9802
 end
 arch magic_banned
 x 19
@@ -8982,20 +8967,11 @@ arch awall_2_1_1
 x 19
 y 24
 end
-arch mountain2
-x 19
-y 25
-elevation 9572
-end
 arch magic_banned
 x 19
 y 25
 end
 arch cobblestones2
-x 19
-y 25
-end
-arch swall_1_4_half
 x 19
 y 25
 end
@@ -9019,6 +8995,10 @@ arch mountain
 x 19
 y 27
 elevation 8213
+end
+arch grass
+x 19
+y 27
 end
 arch mountain
 x 19
@@ -9391,11 +9371,6 @@ arch afloor_blue_right
 x 20
 y 21
 end
-arch mountain
-x 20
-y 22
-elevation 7993
-end
 arch magic_banned
 x 20
 y 22
@@ -9408,11 +9383,6 @@ arch awall_win2
 x 20
 y 22
 end
-arch mountain2
-x 20
-y 23
-elevation 9769
-end
 arch magic_banned
 x 20
 y 23
@@ -9431,11 +9401,6 @@ move_type walk swim boat
 move_allow walk
 passenger_limit 4
 end
-arch mountain2
-x 20
-y 24
-elevation 10306
-end
 arch magic_banned
 x 20
 y 24
@@ -9443,11 +9408,6 @@ end
 arch cobblestones2
 x 20
 y 24
-end
-arch mountain2
-x 20
-y 25
-elevation 10212
 end
 arch magic_banned
 x 20
@@ -9457,9 +9417,11 @@ arch cobblestones2
 x 20
 y 25
 end
-arch swall_2_1_2
+arch spikes_closed
 x 20
 y 25
+connected 99384780
+activate_on_release 0
 end
 arch magic_banned
 x 20
@@ -9469,26 +9431,14 @@ arch dungeon_floor
 x 20
 y 26
 end
-arch waybread_table
-name Personal Dragon Mount (20 plat.)
-slaying money
-food 1000
-x 20
-y 26
-arch blue_dragon
-name Blue Dragon
-speed 0.7
-type 2
-container 10000000
-move_type walk swim boat
-move_allow walk
-passenger_limit 4
-end
-end
 arch mountain
 x 20
 y 27
 elevation 8477
+end
+arch grass
+x 20
+y 27
 end
 arch mountain
 x 20
@@ -9860,11 +9810,6 @@ arch afloor_blue_right
 x 21
 y 21
 end
-arch mountain
-x 21
-y 22
-elevation 8679
-end
 arch magic_banned
 x 21
 y 22
@@ -9877,11 +9822,6 @@ arch awall_1_3
 x 21
 y 22
 end
-arch mountain2
-x 21
-y 23
-elevation 9008
-end
 arch magic_banned
 x 21
 y 23
@@ -9889,11 +9829,6 @@ end
 arch cobblestones2
 x 21
 y 23
-end
-arch mountain2
-x 21
-y 24
-elevation 9150
 end
 arch magic_banned
 x 21
@@ -9903,11 +9838,6 @@ arch cobblestones2
 x 21
 y 24
 end
-arch mountain
-x 21
-y 25
-elevation 8600
-end
 arch magic_banned
 x 21
 y 25
@@ -9916,9 +9846,11 @@ arch cobblestones2
 x 21
 y 25
 end
-arch swall_2_1_2
+arch spikes_closed
 x 21
 y 25
+connected 99384780
+activate_on_release 0
 end
 arch magic_banned
 x 21
@@ -9936,6 +9868,14 @@ end
 arch dungeon_floor
 x 21
 y 27
+end
+arch goldgrass
+name Personal Dragon Mount (200 plat.)
+slaying money
+food 10000
+x 21
+y 27
+connected 99384780
 end
 arch mountain
 x 21
@@ -10344,11 +10284,6 @@ arch afloor_blue_right
 x 22
 y 21
 end
-arch mountain
-x 22
-y 22
-elevation 7703
-end
 arch magic_banned
 x 22
 y 22
@@ -10361,11 +10296,6 @@ arch locked_darkgray_door1
 x 22
 y 22
 end
-arch mountain
-x 22
-y 23
-elevation 7455
-end
 arch magic_banned
 x 22
 y 23
@@ -10373,11 +10303,6 @@ end
 arch cobblestones2
 x 22
 y 23
-end
-arch mountain
-x 22
-y 24
-elevation 6779
 end
 arch magic_banned
 x 22
@@ -10387,11 +10312,6 @@ arch cobblestones2
 x 22
 y 24
 end
-arch mountain
-x 22
-y 25
-elevation 5098
-end
 arch magic_banned
 x 22
 y 25
@@ -10400,9 +10320,11 @@ arch cobblestones2
 x 22
 y 25
 end
-arch swall_2_1_2
+arch spikes_closed
 x 22
 y 25
+connected 99384780
+activate_on_release 0
 end
 arch magic_banned
 x 22
@@ -10416,6 +10338,10 @@ arch hills_rocky
 x 22
 y 27
 elevation 4772
+end
+arch grass
+x 22
+y 27
 end
 arch hills
 x 22
@@ -10808,11 +10734,6 @@ arch afloor_blue_right
 x 23
 y 21
 end
-arch mountain
-x 23
-y 22
-elevation 5125
-end
 arch magic_banned
 x 23
 y 22
@@ -10825,11 +10746,6 @@ arch awall_2_2_2
 x 23
 y 22
 end
-arch mountain
-x 23
-y 23
-elevation 5356
-end
 arch magic_banned
 x 23
 y 23
@@ -10841,11 +10757,6 @@ end
 arch awall_2_1_1
 x 23
 y 23
-end
-arch hills_rocky
-x 23
-y 24
-elevation 3908
 end
 arch magic_banned
 x 23
@@ -10859,20 +10770,11 @@ arch awall_2_1_1
 x 23
 y 24
 end
-arch woods_2
-x 23
-y 25
-elevation 2006
-end
 arch magic_banned
 x 23
 y 25
 end
 arch cobblestones2
-x 23
-y 25
-end
-arch swall_2_1_2
 x 23
 y 25
 end
@@ -10896,6 +10798,17 @@ arch evergreens
 x 23
 y 27
 elevation 2865
+end
+arch grass
+x 23
+y 27
+end
+arch sign
+msg
+Dragons WILL wander off if left alone for too long!
+endmsg
+x 23
+y 27
 end
 arch evergreens
 x 23
@@ -11373,11 +11286,6 @@ arch cobblestones2
 x 24
 y 21
 end
-arch hills_rocky
-x 24
-y 22
-elevation 3574
-end
 arch magic_banned
 x 24
 y 22
@@ -11393,11 +11301,6 @@ arch awall_win2
 x 24
 y 22
 end
-arch hills_rocky
-x 24
-y 23
-elevation 3604
-end
 arch magic_banned
 x 24
 y 23
@@ -11416,11 +11319,6 @@ move_type walk swim boat
 move_allow walk
 passenger_limit 4
 end
-arch evergreens
-x 24
-y 24
-elevation 2689
-end
 arch magic_banned
 x 24
 y 24
@@ -11428,11 +11326,6 @@ end
 arch cobblestones2
 x 24
 y 24
-end
-arch woods_2
-x 24
-y 25
-elevation 1958
 end
 arch magic_banned
 x 24
@@ -11442,9 +11335,11 @@ arch cobblestones2
 x 24
 y 25
 end
-arch swall_2_1_2
+arch spikes_closed
 x 24
 y 25
+connected 9938485
+activate_on_release 0
 end
 arch magic_banned
 x 24
@@ -11454,26 +11349,14 @@ arch dungeon_floor
 x 24
 y 26
 end
-arch waybread_table
-name Personal Dragon Mount (20 plat.)
-slaying money
-food 1000
-x 24
-y 26
-arch dragon_exit
-name Red Dragon
-speed 0.7
-type 2
-container 10000000
-move_type walk swim boat
-move_allow walk
-passenger_limit 4
-end
-end
 arch woods_2
 x 24
 y 27
 elevation 2165
+end
+arch grass
+x 24
+y 27
 end
 arch woods_2
 x 24
@@ -11922,11 +11805,6 @@ arch cobblestones2
 x 25
 y 21
 end
-arch woods_2
-x 25
-y 22
-elevation 2318
-end
 arch magic_banned
 x 25
 y 22
@@ -11939,11 +11817,6 @@ arch awall_1_3
 x 25
 y 22
 end
-arch woods
-x 25
-y 23
-elevation 2736
-end
 arch magic_banned
 x 25
 y 23
@@ -11951,11 +11824,6 @@ end
 arch cobblestones2
 x 25
 y 23
-end
-arch woods_2
-x 25
-y 24
-elevation 2486
 end
 arch magic_banned
 x 25
@@ -11965,11 +11833,6 @@ arch cobblestones2
 x 25
 y 24
 end
-arch woods_2
-x 25
-y 25
-elevation 2210
-end
 arch magic_banned
 x 25
 y 25
@@ -11978,9 +11841,11 @@ arch cobblestones2
 x 25
 y 25
 end
-arch swall_2_1_2
+arch spikes_closed
 x 25
 y 25
+connected 9938485
+activate_on_release 0
 end
 arch magic_banned
 x 25
@@ -11994,6 +11859,14 @@ arch woods_2
 x 25
 y 27
 elevation 1967
+end
+arch goldgrass
+name Personal Dragon Mount (200 plat.)
+slaying money
+food 10000
+x 25
+y 27
+connected 9938485
 end
 arch woods_2
 x 25
@@ -12466,11 +12339,6 @@ arch cobblestones2
 x 26
 y 21
 end
-arch hills_rocky
-x 26
-y 22
-elevation 3089
-end
 arch magic_banned
 x 26
 y 22
@@ -12483,11 +12351,6 @@ arch locked_darkgray_door1
 x 26
 y 22
 end
-arch woods
-x 26
-y 23
-elevation 2698
-end
 arch magic_banned
 x 26
 y 23
@@ -12495,11 +12358,6 @@ end
 arch cobblestones2
 x 26
 y 23
-end
-arch evergreens
-x 26
-y 24
-elevation 2375
 end
 arch magic_banned
 x 26
@@ -12509,11 +12367,6 @@ arch cobblestones2
 x 26
 y 24
 end
-arch evergreens
-x 26
-y 25
-elevation 2055
-end
 arch magic_banned
 x 26
 y 25
@@ -12522,9 +12375,11 @@ arch cobblestones2
 x 26
 y 25
 end
-arch swall_2_1_2
+arch spikes_closed
 x 26
 y 25
+connected 9938485
+activate_on_release 0
 end
 arch magic_banned
 x 26
@@ -12538,6 +12393,10 @@ arch evergreens
 x 26
 y 27
 elevation 2124
+end
+arch dungeon_floor
+x 26
+y 27
 end
 arch dungeon_floor
 x 26
@@ -12954,11 +12813,6 @@ arch cobblestones2
 x 27
 y 21
 end
-arch evergreens
-x 27
-y 22
-elevation 2520
-end
 arch magic_banned
 x 27
 y 22
@@ -12971,11 +12825,6 @@ arch awall_2_2_2
 x 27
 y 22
 end
-arch woods_2
-x 27
-y 23
-elevation 2437
-end
 arch magic_banned
 x 27
 y 23
@@ -12987,11 +12836,6 @@ end
 arch awall_2_1_1
 x 27
 y 23
-end
-arch woods_2
-x 27
-y 24
-elevation 2095
 end
 arch magic_banned
 x 27
@@ -13005,20 +12849,11 @@ arch awall_2_1_1
 x 27
 y 24
 end
-arch woods_2
-x 27
-y 25
-elevation 1076
-end
 arch magic_banned
 x 27
 y 25
 end
 arch cobblestones2
-x 27
-y 25
-end
-arch swall_2_1_2
 x 27
 y 25
 end
@@ -13044,6 +12879,17 @@ y 27
 elevation 2008
 end
 arch dungeon_floor
+x 27
+y 27
+end
+arch dungeon_floor
+x 27
+y 27
+end
+arch sign
+msg
+Dragons WILL wander off if left alone for too long!
+endmsg
 x 27
 y 27
 end
@@ -13450,11 +13296,6 @@ arch cobblestones2
 x 28
 y 21
 end
-arch brush
-x 28
-y 22
-elevation 951
-end
 arch magic_banned
 x 28
 y 22
@@ -13467,11 +13308,6 @@ arch awall_win2
 x 28
 y 22
 end
-arch woods_2
-x 28
-y 23
-elevation 1879
-end
 arch magic_banned
 x 28
 y 23
@@ -13483,18 +13319,13 @@ end
 arch baslic
 x 28
 y 23
-speed 0.7
+speed 0.2
 type 2
 container 10000000
 move_type walk swim boat
 move_allow walk
 passenger_limit 4
 end
-arch woods_2
-x 28
-y 24
-elevation 1851
-end
 arch magic_banned
 x 28
 y 24
@@ -13502,11 +13333,6 @@ end
 arch cobblestones2
 x 28
 y 24
-end
-arch jungle_1
-x 28
-y 25
-elevation 1472
 end
 arch magic_banned
 x 28
@@ -13516,9 +13342,11 @@ arch cobblestones2
 x 28
 y 25
 end
-arch swall_2_1_2
+arch spikes_closed
 x 28
 y 25
+connected 93847856
+activate_on_release 0
 end
 arch magic_banned
 x 28
@@ -13528,25 +13356,14 @@ arch dungeon_floor
 x 28
 y 26
 end
-arch waybread_table
-name Personal Basilisk Mount (20 plat.)
-slaying money
-food 1000
-x 28
-y 26
-arch baslic
-speed 0.7
-type 2
-container 10000000
-move_type walk swim boat
-move_allow walk
-passenger_limit 4
-end
-end
 arch woods_2
 x 28
 y 27
 elevation 1680
+end
+arch grass
+x 28
+y 27
 end
 arch woods_2
 x 28
@@ -13995,11 +13812,6 @@ arch cobblestones2
 x 29
 y 21
 end
-arch brush
-x 29
-y 22
-elevation 518
-end
 arch magic_banned
 x 29
 y 22
@@ -14012,11 +13824,6 @@ arch awall_1_3
 x 29
 y 22
 end
-arch woods_2
-x 29
-y 23
-elevation 1552
-end
 arch magic_banned
 x 29
 y 23
@@ -14024,11 +13831,6 @@ end
 arch cobblestones2
 x 29
 y 23
-end
-arch woods_2
-x 29
-y 24
-elevation 1702
 end
 arch magic_banned
 x 29
@@ -14038,11 +13840,6 @@ arch cobblestones2
 x 29
 y 24
 end
-arch woods_2
-x 29
-y 25
-elevation 1467
-end
 arch magic_banned
 x 29
 y 25
@@ -14051,9 +13848,11 @@ arch cobblestones2
 x 29
 y 25
 end
-arch swall_2_1_2
+arch spikes_closed
 x 29
 y 25
+connected 93847856
+activate_on_release 0
 end
 arch magic_banned
 x 29
@@ -14067,6 +13866,14 @@ arch woods_3
 x 29
 y 27
 elevation 1450
+end
+arch goldgrass
+name drop 400 platinum for personal mount
+slaying money
+food 20000
+x 29
+y 27
+connected 93847856
 end
 arch woods_2
 x 29
@@ -14515,11 +14322,6 @@ arch cobblestones2
 x 30
 y 21
 end
-arch woods_2
-x 30
-y 22
-elevation 1724
-end
 arch magic_banned
 x 30
 y 22
@@ -14532,11 +14334,6 @@ arch locked_darkgray_door1
 x 30
 y 22
 end
-arch woods
-x 30
-y 23
-elevation 1686
-end
 arch magic_banned
 x 30
 y 23
@@ -14544,11 +14341,6 @@ end
 arch cobblestones2
 x 30
 y 23
-end
-arch woods_3
-x 30
-y 24
-elevation 1385
 end
 arch magic_banned
 x 30
@@ -14558,11 +14350,6 @@ arch cobblestones2
 x 30
 y 24
 end
-arch woods_2
-x 30
-y 25
-elevation 1443
-end
 arch magic_banned
 x 30
 y 25
@@ -14571,9 +14358,11 @@ arch cobblestones2
 x 30
 y 25
 end
-arch swall_2_1_2
+arch spikes_closed
 x 30
 y 25
+connected 93847856
+activate_on_release 0
 end
 arch magic_banned
 x 30
@@ -14587,6 +14376,10 @@ arch woods
 x 30
 y 27
 elevation 1456
+end
+arch dungeon_floor
+x 30
+y 27
 end
 arch dungeon_floor
 x 30
@@ -15051,11 +14844,6 @@ arch awall_2_1_1
 x 31
 y 21
 end
-arch woods_2
-x 31
-y 22
-elevation 2164
-end
 arch magic_banned
 x 31
 y 22
@@ -15067,11 +14855,6 @@ end
 arch awall_2_1_1
 x 31
 y 22
-end
-arch woods_3
-x 31
-y 23
-elevation 2003
 end
 arch magic_banned
 x 31
@@ -15085,11 +14868,6 @@ arch awall_2_1_1
 x 31
 y 23
 end
-arch woods
-x 31
-y 24
-elevation 1721
-end
 arch magic_banned
 x 31
 y 24
@@ -15102,20 +14880,11 @@ arch awall_2_1_1
 x 31
 y 24
 end
-arch woods_2
-x 31
-y 25
-elevation 1581
-end
 arch magic_banned
 x 31
 y 25
 end
 arch dungeon_floor
-x 31
-y 25
-end
-arch swall_1_3_half
 x 31
 y 25
 end
@@ -15139,6 +14908,10 @@ arch woods_2
 x 31
 y 27
 elevation 1608
+end
+arch dungeon_floor
+x 31
+y 27
 end
 arch dungeon_floor
 x 31

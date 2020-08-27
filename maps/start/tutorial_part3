@@ -6,7 +6,7 @@ height 30
 enter_x 1
 enter_y 6
 msg
-Modified: 2020-02-24 Acer
+Modified: 2020-08-27 Acer
 endmsg
 end
 arch woodfloor
@@ -1860,9 +1860,12 @@ x 10
 y 23
 end
 arch potion_heal
+name cracked healing potion
 x 10
 y 23
-no_pick 1
+value 0
+no_pick 0
+on_use_yield glass_rubble
 arch spell_minor_healing
 end
 end
@@ -2585,6 +2588,7 @@ sp 76
 x 14
 y 23
 level 1
+value 0
 randomitems none
 no_pick 1
 identified 1
@@ -3237,7 +3241,7 @@ arch sign
 name Saving and Exiting
 msg
 A Bed to Reality is how you log out of a character.
-If you've gained any exp at all, use the bed to the south to save your character. You will need to log back in.
+Use the bed to the south to save your character. You will need to log back in.
 
 NOTE: 'IDLING' IS NOT DISCOURAGED ON THIS SERVER.
 endmsg

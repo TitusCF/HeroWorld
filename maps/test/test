@@ -1,787 +1,1374 @@
 arch map
-name test room
+name test
 width 10
 height 10
 msg
-Created:  2019-04-22 Acer
-Modified: 2019-04-22 Acer
+Created:  2020-08-27 Acer
+Modified: 2020-08-27 Acer
 endmsg
 end
-arch afloor_black_left
-end
-arch awall_2_2_2
-end
-arch afloor_black_left
-y 1
-end
-arch awall_2_1_1
-y 1
-end
-arch afloor_black_left
-y 2
-end
-arch awall_2_1_1
-y 2
-end
-arch afloor_black_left
-y 3
-end
-arch awall_2_1_1
-y 3
-end
-arch afloor_black_left
-y 4
-end
-arch awall_2_1_1
-y 4
-end
-arch afloor_black_left
-y 5
-end
-arch awall_2_1_1
-y 5
-end
-arch afloor_black_left
-y 6
-end
-arch awall_2_1_1
-y 6
-end
-arch afloor_black_left
-y 7
-end
-arch awall_2_1_1
-y 7
-end
-arch afloor_black_left
-y 8
-end
-arch awall_2_1_1
-y 8
-end
-arch afloor_black_left
-y 9
-end
-arch awall_2_2_1
-y 9
-end
-arch afloor_black_left
-x 1
-end
-arch awall_2_1_2
-x 1
-end
-arch afloor_black_left
-x 1
-y 1
-end
-arch afloor_black_left
-x 1
-y 2
-end
-arch afloor_black_left
-x 1
-y 3
-end
-arch afloor_black_left
-x 1
-y 4
-end
-arch afloor_black_left
-x 1
-y 5
-end
-arch afloor_black_left
-x 1
-y 6
-end
-arch afloor_black_left
-x 1
-y 7
-end
-arch afloor_black_left
-x 1
-y 8
-end
-arch bench_1_4
-x 1
-y 8
-end
-arch b_bsword_2
-x 1
-y 8
-nrof 1000
-end
-arch afloor_black_left
-x 1
-y 9
-end
-arch awall_2_1_2
-x 1
-y 9
-end
-arch afloor_black_left
-x 2
-end
-arch awall_2_1_2
-x 2
-end
-arch afloor_black_left
-x 2
-y 1
-end
-arch tanbench
-x 2
-y 1
-end
-arch afloor_black_left
-x 2
-y 2
-end
-arch afloor_black_left
-x 2
-y 3
-end
-arch afloor_black_left
-x 2
-y 4
-end
-arch sign
-name Recipe List
+arch locked_blue_door1
+name sea test
+slaying sea_test
 msg
-Ingredient List for Stat Modification:
-Archs will be drawn from archs/inorganic/, archs/potions/ & archs/flesh.
-
-(these will most likely be placeholders as archs are modified or added to /archs
-
--stat modifiers should always use permanent stat potions-
-
-Stat potion requirement should be only 1/5th of the required number of other ingredients)
-
-STR: potionstr, demon_head, cinnabar
-DEX: potiondes, demon_head, sulpher
-POW: potionpow, demon_head, pyrite
-INT: potionint, demon_head, phosphorus
-WIS: potionwis, demon_head, salt
-CHA: potioncha, demon_head, gypsum
-CON: potioncon, demon_head, graphite
-
-Special_ac:       bat_wing, phil_salt, vial_yellow
-Special_wc:       hand, phil_salt, vial_yellow
-Special_dam:      insect_stinger, phil_salt, vial_yellow
-Special_speed:    foot, phil_salt, vial_water
-Special_luck:     serp_skin, phil_salt, vial_green
-Special_hp:       heart, phil_salt, vial_red
-Special_maxhp:    heart, phil_sulpher, vial_red
-Special_sp:       brain, phil_salt, vial_magenta
-Special_maxsp:    brain, phil_sulpher, vial_magenta
-Special_grace:    dragon_eye, phil_dust, vial_magenta
-Special_maxgrace: dragon_eye, phil_sulpher, vial_magenta
-Special_exp:      eyes, phil_salt, potion_improve
-Special_food:     tongue, phil_salt, water
-
-Resist_Physical:      dragon_eye,        uraniumpile, potion_shielding
-Resist_Magic:         tongue,            uraniumpile, potion_magic
-Resist_Fire:          hide_black,        uraniumpile, potion_fire
-Resist_Electricity:   hand,              uraniumpile, potion_heroism
-Resist_Cold:          hide_white,        uraniumpile, potion_cold2
-Resist_Confusion:     brain,             uraniumpile, minor_potion_restoration
-Resist_Acid:          icor,              uraniumpile, vial_yellow
-Resist_Drain:         heart,             uraniumpile, vial_red
-Resist_Ghosthit:      ectoplasm,         uraniumpile, potion_aethereality
-Resist_Poison:        liver,             uraniumpile, vial_green
-Resist_Slow:          foot,              river_stone, vial_water
-Resist_Paralyze:      insect_stinger,    uraniumpile, vial_green
-Resist_Turn_Undead:   tooth,             uraniumpile, vial_red
-Resist_Fear:          demon_head,        uraniumpile, potion_heroism
-Resist_Deplete:       heart,             uraniumpile, vial_red
-Resist_Death:         head,              uraniumpile, vial_red
-Resist_Holyword:      bat_wing,          uraniumpile, vial_water
-Resist_blind:         eye,               uraniumpile, potion_empty
-Resist_Life_Stealing: skin,              uraniumpile, vial_red
-Resist_Disease:       redidue,           uraniumpile, vial_green
-
+The Sea is Deep...
 endmsg
+face sea.111
+animation sea
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
+end
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
+y 1
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
+end
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
+y 2
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
+end
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
+y 3
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
+end
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
+y 4
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
+end
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
+y 5
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
+end
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
+y 6
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
+end
+end
+arch grass
+y 7
+end
+arch grass
+y 8
+end
+arch grass
+y 9
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
+x 1
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
+end
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
+x 1
+y 1
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
+end
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
+x 1
+y 2
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
+end
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
+x 1
+y 3
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
+end
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
+x 1
+y 4
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
+end
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
+x 1
+y 5
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
+end
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
+x 1
+y 6
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
+end
+end
+arch grass
+x 1
+y 7
+end
+arch grass
+x 1
+y 8
+end
+arch grass
+x 1
+y 9
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
+x 2
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
+end
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
+x 2
+y 1
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
+end
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
+x 2
+y 2
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
+end
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
+x 2
+y 3
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
+end
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 2
 y 4
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch afloor_black_left
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 2
 y 5
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch afloor_black_left
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 2
 y 6
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch afloor_black_left
+end
+arch grass
 x 2
 y 7
 end
-arch afloor_black_left
+arch grass
 x 2
 y 8
 end
-arch bench_2_1_2
-x 2
-y 8
-end
-arch b_shield
-x 2
-y 8
-nrof 1000
-end
-arch afloor_black_left
+arch grass
 x 2
 y 9
 end
-arch awall_2_1_2
-x 2
-y 9
-end
-arch afloor_black_left
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 3
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch awall_2_1_2
-x 3
 end
-arch afloor_black_left
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 3
 y 1
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch afloor_black_left
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 3
 y 2
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch afloor_black_left
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 3
 y 3
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch afloor_black_left
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 3
 y 4
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch afloor_black_left
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 3
 y 5
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch afloor_black_left
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 3
 y 6
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch afloor_black_left
+end
+arch grass
 x 3
 y 7
 end
-arch afloor_black_left
+arch grass
 x 3
 y 8
 end
-arch bench_2_1_2
-x 3
-y 8
-end
-arch b_scale_mail
-x 3
-y 8
-nrof 1000
-end
-arch afloor_black_left
+arch grass
 x 3
 y 9
 end
-arch awall_2_1_2
-x 3
-y 9
-end
-arch afloor_black_left
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 4
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch awall_2_1_2
-x 4
 end
-arch afloor_black_left
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 4
 y 1
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch jeweler_bench
-x 4
-y 1
 end
-arch afloor_black_left
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 4
 y 2
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch afloor_black_left
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 4
 y 3
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch afloor_black_left
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 4
 y 4
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch afloor_black_left
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 4
 y 5
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch afloor_black_left
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 4
 y 6
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch afloor_black_left
+end
+arch grass
 x 4
 y 7
 end
-arch afloor_black_left
+arch grass
 x 4
 y 8
 end
-arch bench_2_1_2
-x 4
-y 8
-end
-arch afloor_black_left
+arch grass
 x 4
 y 9
 end
-arch awall_2_1_2
-x 4
-y 9
-end
-arch afloor_black_left
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 5
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch awall_2_1_2
-x 5
 end
-arch afloor_black_left
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 5
 y 1
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch afloor_black_left
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 5
 y 2
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch afloor_black_left
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 5
 y 3
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch afloor_black_left
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 5
 y 4
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch afloor_black_left
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 5
 y 5
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch afloor_black_left
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 5
 y 6
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch afloor_black_left
+end
+arch grass
 x 5
 y 7
 end
-arch afloor_black_left
+arch grass
 x 5
 y 8
 end
-arch bench_2_1_2
-x 5
-y 8
-end
-arch bag
-name potions
-x 5
-y 8
-arch potion_heroism
-nrof 1000
-arch spell_heroism
-end
-end
-arch potion_cold2
-nrof 1000
-end
-arch potion_fire
-nrof 1000
-end
-arch potion_heroism
-nrof 1000
-arch spell_heroism
-end
-end
-arch potion_aethereality
-nrof 1000
-end
-arch potion_magic
-nrof 1000
-arch spell_regenerate_spellpoints
-end
-end
-arch minor_potion_restoration
-nrof 1000
-end
-arch potion_shielding
-nrof 1000
-end
-end
-arch afloor_black_left
+arch grass
 x 5
 y 9
 end
-arch awall_2_1_2
-x 5
-y 9
-end
-arch afloor_black_left
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 6
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch awall_2_1_2
-x 6
 end
-arch afloor_black_left
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 6
 y 1
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch forge
-x 6
-y 1
 end
-arch afloor_black_left
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 6
 y 2
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch afloor_black_left
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 6
 y 3
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch afloor_black_left
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 6
 y 4
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch afloor_black_left
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 6
 y 5
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch afloor_black_left
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 6
 y 6
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch afloor_black_left
+end
+arch grass
 x 6
 y 7
 end
-arch afloor_black_left
+arch grass
 x 6
 y 8
 end
-arch bench_2_1_2
-x 6
-y 8
-end
-arch bag
-name inorganic
-x 6
-y 8
-arch phil_sulphur
-nrof 1000
-end
-arch phil_salt
-nrof 1000
-end
-arch phil_phosphorus
-nrof 1000
-end
-arch uraniumpile
-nrof 1000
-end
-arch river_stone
-nrof 1000
-end
-arch cinnabar
-nrof 1000
-end
-arch sulphur
-nrof 1000
-end
-arch salt
-nrof 1000
-end
-arch gypsum
-nrof 1000
-end
-arch graphite
-nrof 1000
-end
-end
-arch afloor_black_left
+arch grass
 x 6
 y 9
 end
-arch awall_2_1_2
-x 6
-y 9
-end
-arch afloor_black_left
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 7
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch awall_2_1_2
-x 7
 end
-arch afloor_black_left
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 7
 y 1
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch afloor_black_left
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 7
 y 2
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch afloor_black_left
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 7
 y 3
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch afloor_black_left
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 7
 y 4
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch afloor_black_left
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 7
 y 5
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch afloor_black_left
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 7
 y 6
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch afloor_black_left
+end
+arch grass
 x 7
 y 7
 end
-arch afloor_black_left
+arch grass
 x 7
 y 8
 end
-arch bench_2_1_2
-x 7
-y 8
-end
-arch bag
-name vials
-x 7
-y 8
-arch vial_blue
-nrof 1000
-end
-arch vial_cyan
-nrof 1000
-end
-arch vial_magenta
-nrof 1000
-end
-arch vial_red
-nrof 1000
-end
-arch vial_water
-nrof 1000
-end
-arch vial_yellow
-nrof 1000
-end
-end
-arch afloor_black_left
+arch grass
 x 7
 y 9
 end
-arch awall_2_1_2
-x 7
-y 9
-end
-arch afloor_black_left
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 8
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch awall_2_1_2
-x 8
 end
-arch afloor_black_left
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 8
 y 1
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch afloor_black_left
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 8
 y 2
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch afloor_black_left
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 8
 y 3
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch afloor_black_left
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 8
 y 4
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch ladder_bi_up
-slaying /scorn/misc/college
-hp 31
-sp 22
-x 8
-y 4
 end
-arch afloor_black_left
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 8
 y 5
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch afloor_black_left
+end
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 8
 y 6
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch afloor_black_left
+end
+arch grass
 x 8
 y 7
 end
-arch afloor_black_left
+arch grass
 x 8
 y 8
 end
-arch bench_1_3
-x 8
-y 8
-end
-arch bag
-name Flesh
-x 8
-y 8
-arch bat_wing
-nrof 1000
-end
-arch brain
-nrof 1000
-end
-arch demon_head
-nrof 1000
-end
-arch eye
-nrof 1000
-end
-arch hand
-nrof 1000
-end
-arch foot
-nrof 1000
-end
-arch heart
-nrof 1000
-end
-arch tooth
-nrof 1000
-end
-arch tongue
-nrof 1000
-end
-arch skin
-nrof 1000
-end
-arch serp_skin
-nrof 1000
-end
-arch dragon_eye
-nrof 1000
-end
-arch ectoplasm
-nrof 1000
-end
-arch insect_stinger
-nrof 1000
-end
-arch icor
-nrof 1000
-end
-arch hide_white
-nrof 1000
-end
-arch head
-nrof 1000
-end
-end
-arch afloor_black_left
+arch grass
 x 8
 y 9
 end
-arch awall_2_1_2
+arch blue_key
+slaying sea_test
 x 8
 y 9
 end
-arch afloor_black_left
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 9
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch awall_2_2_3
-x 9
 end
-arch afloor_black_left
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 9
 y 1
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch awall_2_1_1
-x 9
-y 1
 end
-arch afloor_black_left
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 9
 y 2
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch awall_2_1_1
-x 9
-y 2
 end
-arch afloor_black_left
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 9
 y 3
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch awall_2_1_1
-x 9
-y 3
 end
-arch afloor_black_left
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 9
 y 4
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch awall_2_1_1
-x 9
-y 4
 end
-arch afloor_black_left
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 9
 y 5
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch awall_2_1_1
-x 9
-y 5
 end
-arch afloor_black_left
+arch locked_blue_door1
+name sea test
+slaying sea_test
+msg
+The Sea is Deep...
+endmsg
+face sea.111
+animation sea
 x 9
 y 6
+smoothlevel 20
+no_magic 0
+damned 0
+anim_speed 5
+client_anim_sync 1
+arch earth
 end
-arch awall_2_1_1
-x 9
-y 6
 end
-arch afloor_black_left
+arch grass
 x 9
 y 7
 end
-arch awall_2_1_1
-x 9
-y 7
-end
-arch afloor_black_left
+arch grass
 x 9
 y 8
 end
-arch awall_2_1_1
-x 9
-y 8
-end
-arch afloor_black_left
-x 9
-y 9
-end
-arch awall_2_2_4
+arch grass
 x 9
 y 9
 end

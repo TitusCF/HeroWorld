@@ -24162,6 +24162,16 @@ arch dungeon_magic
 x 28
 y 31
 end
+arch magic_mouth
+msg
+  One fang doesn't like one ring per hand, he
+  prefers one ring per finger.  This ring
+  combines a bunch of rings that one fang
+  already owns.
+endmsg
+x 28
+y 31
+end
 arch grass
 x 28
 y 31
@@ -24186,6 +24196,19 @@ x 28
 y 33
 end
 arch magic_mouth
+msg
+  One fang doesn't like one ring per hand, he
+  prefers one ring per finger.  This ring
+  combines a bunch of rings that one fang
+  already owns.  To prove that one fang knows
+  about game balance, and because wearing
+  lots of rings makes you more clumsy, a
+  Dex decrease is included in the mix.
+  Cost + each bonus type.
+  Cost + each bonus that is over 50 / 5.
+  Cost + each path_attuned bit.
+  Dex = Cost / 5.
+endmsg
 x 28
 y 33
 end
@@ -24210,6 +24233,15 @@ x 28
 y 35
 end
 arch grass
+msg
+  This amulet combines a bunch of amuletss
+  that one fang already owns.  To prove
+  that one fang knows about game balance,
+  and because wearing lots of amulets
+  weighs you down, a weight increase
+  is included in the mix.
+  weight = total bonuses.
+endmsg
 x 28
 y 35
 end
@@ -24230,6 +24262,9 @@ x 28
 y 37
 end
 arch grass
+msg
+The Club of Night Mark
+endmsg
 x 28
 y 37
 end
@@ -26083,6 +26118,10 @@ x 30
 y 37
 end
 arch grass
+x 30
+y 37
+end
+arch mark_club
 x 30
 y 37
 end

@@ -10,7 +10,7 @@ msg
 Creator: David Seikel
 Email: won_fang@yahoo.com.au
 Date: Sat Jan 25 21:22:20 2003
-Modified: 2020-01-30 Acer
+Modified: 2020-08-27 Acer
 endmsg
 outdoor 1
 end
@@ -15114,10 +15114,6 @@ arch dungeon_magic
 x 19
 y 31
 end
-arch magic_mouth
-x 19
-y 31
-end
 arch grass
 x 19
 y 31
@@ -24166,10 +24162,6 @@ arch dungeon_magic
 x 28
 y 31
 end
-arch magic_mouth
-x 28
-y 31
-end
 arch grass
 x 28
 y 31
@@ -24179,6 +24171,13 @@ x 28
 y 32
 end
 arch grass
+x 28
+y 32
+end
+arch sign
+msg
+These are the True Artifacts of Lord Onefang.
+endmsg
 x 28
 y 32
 end
@@ -25928,6 +25927,30 @@ arch grass
 x 30
 y 31
 end
+arch ring_ancient_magic
+title of One Right Fang
+msg
+  One fang doesn't like one ring per hand, he
+  prefers one ring per finger.  This ring
+  combines a bunch of rings that one fang
+  already owns.
+endmsg
+face ring.117
+Str 16
+Dex 16
+Con 16
+Wis 16
+Pow 16
+Cha 16
+Int 16
+x 30
+y 31
+material 256
+value 128000
+item_power 20
+applied 1
+identified 1
+end
 arch dungeon_magic
 x 30
 y 32
@@ -25949,6 +25972,38 @@ arch grass
 x 30
 y 33
 end
+arch ring_ancient_magic
+title of One Left Fang
+msg
+  One fang doesn't like one ring per hand, he
+  prefers one ring per finger.  This ring
+  combines a bunch of rings that one fang
+  already owns.  To prove that one fang knows
+  about game balance, and because wearing
+  lots of rings makes you more clumsy, a
+  Dex decrease is included in the mix.
+  Cost + each bonus type.
+  Cost + each bonus that is over 50 / 5.
+  Cost + each path_attuned bit.
+  Dex = Cost / 5.
+endmsg
+face ring.117
+Dex -7
+hp 50
+sp 50
+grace 50
+food 124
+luck 5
+ac 13
+x 30
+y 33
+path_attuned 1048063
+material 256
+value 119141
+item_power 50
+identified 1
+xrays 1
+end
 arch dungeon_magic
 x 30
 y 34
@@ -25968,6 +26023,47 @@ end
 arch grass
 x 30
 y 35
+end
+arch amulet
+name Amulet
+title of BlingBling
+msg
+  This amulet combines a bunch of amuletss
+  that one fang already owns.  To prove
+  that one fang knows about game balance,
+  and because wearing lots of amulets
+  weighs you down, a weight increase
+  is included in the mix.
+  weight = total bonuses.
+endmsg
+x 30
+y 35
+resist_physical 90
+resist_magic 90
+resist_fire 90
+resist_electricity 90
+resist_cold 90
+resist_acid 140
+resist_drain 100
+resist_weaponmagic 100
+resist_ghosthit 100
+resist_poison 130
+resist_slow 99
+resist_paralyze 95
+resist_turn_undead 100
+resist_fear 100
+resist_deplete 200
+resist_death 200
+resist_chaos 200
+resist_holyword 95
+resist_blind 100
+material 256
+value 430939
+weight 3209
+identified 1
+reflect_missile 1
+reflect_spell 1
+lifesave 1
 end
 arch dungeon_magic
 x 30

@@ -11,7 +11,7 @@ msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Dec 16 20:53:13 2001
-Modified: 2020-08-28 Acer
+Modified: 2020-08-29 Acer
 endmsg
 outdoor 1
 tile_path_1 world_105_114
@@ -6797,7 +6797,7 @@ y 25
 elevation -2256
 move_block boat
 end
-arch pier_3_4
+arch pier_2_2_4
 x 16
 y 25
 end
@@ -6815,7 +6815,7 @@ y 26
 elevation -2256
 move_block boat
 end
-arch pier_2_1_1
+arch cwall_0
 x 16
 y 26
 end
@@ -6831,6 +6831,14 @@ arch cobblestones
 x 16
 y 27
 end
+arch altar_trigger
+name Mailed Fist Dock Pass Required
+slaying Dock Pass
+food 1
+x 16
+y 27
+connected 29827363
+end
 arch magic_banned
 x 16
 y 28
@@ -6839,7 +6847,7 @@ arch dungeon_magic
 x 16
 y 28
 end
-arch cobblestones2
+arch cobblestones
 x 16
 y 28
 end
@@ -7218,6 +7226,12 @@ x 17
 y 26
 elevation -2256
 end
+arch grate_closed_1
+x 17
+y 26
+connected 29827363
+activate_on_release 0
+end
 arch dungeon_magic
 x 17
 y 27
@@ -7226,6 +7240,35 @@ arch sea
 x 17
 y 27
 elevation -2256
+unique 1
+end
+arch s_ship_black
+name Flagship
+title of the Mailed Fist
+x 17
+y 27
+speed 0.5
+type 2
+container 10000000
+move_type boat
+unique 1
+passenger_limit 2
+arch door_2
+name cabin door
+face oakdoor_2.111
+type 0
+client_type 25012
+unique 1
+arch event_apply
+name event_apply
+title Python
+slaying /python/misc/flagship-cabin_permanent.py
+end
+end
+arch event_apply
+title Python
+slaying /python/misc/flagship-cabin_permanent.py
+end
 end
 arch dungeon_magic
 x 17
@@ -7235,15 +7278,15 @@ arch sea
 x 17
 y 28
 elevation -2256
+unique 1
 end
 arch dungeon_magic
 x 17
 y 29
 end
-arch sea
+arch cobbles_blue
 x 17
 y 29
-elevation -2256
 end
 arch dungeon_magic
 x 17
@@ -7600,6 +7643,12 @@ x 18
 y 26
 elevation -2256
 end
+arch grate_closed_1
+x 18
+y 26
+connected 29827363
+activate_on_release 0
+end
 arch dungeon_magic
 x 18
 y 27
@@ -7608,10 +7657,7 @@ arch sea
 x 18
 y 27
 elevation -2256
-end
-arch magic_banned
-x 18
-y 28
+unique 1
 end
 arch dungeon_magic
 x 18
@@ -7621,27 +7667,13 @@ arch sea
 x 18
 y 28
 elevation -2256
-move_block boat
-end
-arch pier_1_1
-x 18
-y 28
-end
-arch magic_banned
-x 18
-y 29
+unique 1
 end
 arch dungeon_magic
 x 18
 y 29
 end
-arch sea
-x 18
-y 29
-elevation -2256
-move_block boat
-end
-arch pier_2_2_1
+arch cobbles_blue
 x 18
 y 29
 end
@@ -8002,6 +8034,10 @@ x 19
 y 26
 elevation -2256
 end
+arch cwall_1_1
+x 19
+y 26
+end
 arch dungeon_magic
 x 19
 y 27
@@ -8010,6 +8046,10 @@ arch sea
 x 19
 y 27
 elevation -2256
+end
+arch cwall_2_1_1
+x 19
+y 27
 end
 arch dungeon_magic
 x 19
@@ -8020,21 +8060,19 @@ x 19
 y 28
 elevation -2256
 end
-arch magic_banned
+arch cwall_2_1_1
 x 19
-y 29
+y 28
 end
 arch dungeon_magic
 x 19
 y 29
 end
-arch sea
+arch cobblestones2
 x 19
 y 29
-elevation -2256
-move_block boat
 end
-arch pier_2_1_2
+arch cwall_2_1_1
 x 19
 y 29
 end
@@ -8046,7 +8084,7 @@ arch cobblestones2
 x 19
 y 30
 end
-arch cwall_2_1_2
+arch dwall_3_1
 x 19
 y 30
 end
@@ -8541,7 +8579,7 @@ y 29
 elevation -2256
 move_block boat
 end
-arch pier_3_4
+arch pier_2_1_1
 x 20
 y 29
 end

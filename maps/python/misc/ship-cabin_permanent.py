@@ -144,7 +144,7 @@ def do_cabin():
 	act.Message('You enter the ship\'s cabin.')
 	act.Teleport(dest, 0, 0)
 	
-	cabexdoor = dest.Check('tree5', (8, 4))# If you want to use a different placeholder item for the cabin exit, change all references to "tree5" to your new arch
+	cabexdoor = dest.Check('tree5', (19, 4))# If you want to use a different placeholder item for the cabin exit, change all references to "tree5" to your new arch
 	shipserial = str(cabexdoor.ReadKey('ship_serial'))
 	cabindict[shipserial] = Crossfire.WhoAmI()# Stores a pointer to the ship's (external) door's location, and associates it with the internal cabin door
 	cabexdoor.WriteKey('backup-loc_x', str(l.Env.X), 1)# Backs up the ship's location, similar to do_backup_loc()
@@ -157,7 +157,7 @@ def do_backup_loc():
 	if l.CheckInventory('cabin door').ReadKey('ship_serial') is not '':
 		shipserial = l.CheckInventory('cabin door').ReadKey('ship_serial')
 		dest = Crossfire.ReadyMap('/ship-cabins/cabin-' + shipserial)# We need to map to grab the door
-		cabexdoor = dest.Check('tree5', (8, 4))
+		cabexdoor = dest.Check('tree5', (19, 4))
 		cabexdoor.WriteKey('backup-loc_x', str(l.X), 1)
 		cabexdoor.WriteKey('backup-loc_y', str(l.Y), 1)
 		cabexdoor.WriteKey('backup-loc_map', str(l.Map.Path), 1)

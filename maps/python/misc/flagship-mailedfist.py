@@ -101,7 +101,7 @@ def do_cabin():
 		with open(str(datadir) + '/' + str(mapdir) + '/ship-cabins/ship-serial.txt', 'w') as shipfile:# Overwrite the old file with the new serial
 			shipfile.write(str(shipserial))
 		
-		template = (str(datadir) + '/' + str(mapdir) + '/ship-cabins/flagship_mailed_fist')# Template for the cabin map.  We could have this randomly picked from a list of template maps, but right now we just have the one template.
+		template = (str(datadir) + '/' + str(mapdir) + '/ship-cabins/flagship_mailedfist')# Template for the cabin map.  We could have this randomly picked from a list of template maps, but right now we just have the one template.
 		cabinfile = (str(datadir) + '/' + str(mapdir) + '/ship-cabins/cabin-' + shipserial)# Names our copy of the template map as ending in the serial number, like "cabin-7"
 		
 		if not os.path.exists(cabinfile):# If the map doesn't exist (it shouldn't), we create it.

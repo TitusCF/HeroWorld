@@ -992,31 +992,33 @@ y 5
 unique 1
 is_buildable 1
 end
+arch teleporter
+name stairs going up
+face stair_up.111
+hp 33
+sp 5
+x 5
+y 5
+connected 3828723646
+activate_on_release 0
+end
+arch button_small
+x 5
+y 5
+invisible 1
+connected 3828723646
+end
 arch woodfloor
 x 5
 y 6
-end
-arch invis_exit
-name To the Bilge
-face stair_down.111
-hp 5
-sp 21
-x 5
-y 6
-invisible 0
+unique 1
+is_buildable 1
 end
 arch woodfloor
 x 5
 y 7
-end
-arch invis_exit
-name To the Bilge
-face stair_down.111
-hp 5
-sp 22
-x 5
-y 7
-invisible 0
+unique 1
+is_buildable 1
 end
 arch woodfloor
 x 5
@@ -1029,6 +1031,22 @@ x 5
 y 9
 unique 1
 is_buildable 1
+end
+arch teleporter
+name stairs going down
+face stair_down.111
+hp 4
+sp 24
+x 5
+y 9
+connected 397237423
+activate_on_release 0
+end
+arch button_small
+x 5
+y 9
+invisible 1
+connected 397237423
 end
 arch woodfloor
 x 5
@@ -1110,29 +1128,11 @@ y 21
 unique 1
 is_buildable 1
 end
-arch invis_exit
-name To the Mid Deck
-face stair_up.111
-hp 5
-sp 6
-x 5
-y 21
-invisible 0
-end
 arch woodfloor
 x 5
 y 22
 unique 1
 is_buildable 1
-end
-arch invis_exit
-name To the Mid Deck
-face stair_up.111
-hp 5
-sp 7
-x 5
-y 22
-invisible 0
 end
 arch woodfloor
 x 5
@@ -1145,6 +1145,22 @@ x 5
 y 24
 unique 1
 is_buildable 1
+end
+arch teleporter
+name stairs going up
+face stair_up_2.111
+hp 6
+sp 9
+x 5
+y 24
+connected 349082714
+activate_on_release 0
+end
+arch button_small
+x 5
+y 24
+invisible 1
+connected 349082714
 end
 arch woodfloor
 x 5
@@ -1226,27 +1242,9 @@ arch woodfloor
 x 6
 y 6
 end
-arch invis_exit
-name To the Upper Deck
-face stair_up.111
-hp 34
-sp 6
-x 6
-y 6
-invisible 0
-end
 arch woodfloor
 x 6
 y 7
-end
-arch invis_exit
-name To the Upper Deck
-face stair_up.111
-hp 34
-sp 7
-x 6
-y 7
-invisible 0
 end
 arch woodfloor
 x 6
@@ -6630,49 +6628,34 @@ y 5
 unique 1
 is_buildable 1
 end
+arch teleporter
+name stairs going down
+face stair_down_4.111
+hp 6
+sp 5
+x 34
+y 5
+invisible 0
+connected 283646346
+activate_on_release 0
+end
+arch button_small
+x 34
+y 5
+invisible 1
+connected 283646346
+end
 arch woodfloor
 x 34
 y 6
 unique 1
 is_buildable 1
 end
-arch stair_down
-name To the Mid Deck
-hp 6
-sp 6
-x 34
-y 6
-end
-arch invis_exit
-name To the Mid Deck
-face stair_down.111
-hp 6
-sp 6
-x 34
-y 6
-invisible 0
-end
 arch woodfloor
 x 34
 y 7
 unique 1
 is_buildable 1
-end
-arch stair_down
-name To the Mid Deck
-hp 6
-sp 7
-x 34
-y 7
-end
-arch invis_exit
-name To the Mid Deck
-face stair_down.111
-hp 6
-sp 7
-x 34
-y 7
-invisible 0
 end
 arch woodfloor
 x 34

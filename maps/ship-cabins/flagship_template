@@ -2530,18 +2530,14 @@ end
 arch woodfloor
 x 26
 y 6
-unique 1
-is_buildable 1
 end
-arch woodwall_1_4
+arch woodwall_0
 x 26
 y 6
 end
 arch woodfloor
 x 26
 y 7
-unique 1
-is_buildable 1
 end
 arch check_inv
 slaying mailed_fist_master
@@ -2552,10 +2548,8 @@ end
 arch woodfloor
 x 26
 y 8
-unique 1
-is_buildable 1
 end
-arch woodwall_1_4
+arch wall_0
 x 26
 y 8
 end
@@ -2640,28 +2634,31 @@ end
 arch woodfloor
 x 27
 y 6
-unique 1
-is_buildable 1
 end
-arch woodwall_2_1_2
+arch grate_closed_1
+x 27
+y 6
+connected 2867321764
+activate_on_release 0
+end
+arch check_inv
+slaying mailed_fist
 x 27
 y 6
 end
 arch woodfloor
 x 27
 y 7
-unique 1
-is_buildable 1
 end
 arch woodfloor
 x 27
 y 8
-unique 1
-is_buildable 1
 end
-arch woodwall_2_1_2
+arch grate_closed_1
 x 27
 y 8
+connected 286732764
+activate_on_release 0
 end
 arch woodfloor
 x 27
@@ -2744,30 +2741,24 @@ end
 arch woodfloor
 x 28
 y 6
-unique 1
-is_buildable 1
 end
-arch woodwall_2_2_3
+arch wall_1_1_ruin
 x 28
 y 6
 end
 arch woodfloor
 x 28
 y 7
-unique 1
-is_buildable 1
 end
-arch woodwall_2_1_1
+arch wall_3_2
 x 28
 y 7
 end
 arch woodfloor
 x 28
 y 8
-unique 1
-is_buildable 1
 end
-arch woodwall_2_2_4
+arch wall_1_2_ruin
 x 28
 y 8
 end
@@ -2852,20 +2843,30 @@ end
 arch woodfloor
 x 29
 y 6
-unique 1
-is_buildable 1
+end
+arch button_handle
+name Toggle Guild Member Access
+x 29
+y 6
+connected 2867321764
 end
 arch woodfloor
 x 29
 y 7
-unique 1
-is_buildable 1
+end
+arch wall_1_3
+x 29
+y 7
 end
 arch woodfloor
 x 29
 y 8
-unique 1
-is_buildable 1
+end
+arch button_handle
+name Toggle Visitor Access
+x 29
+y 8
+connected 286732764
 end
 arch woodfloor
 x 29

@@ -934,10 +934,6 @@ arch afloor_blue_left
 x 3
 y 32
 end
-arch dungeon_magic
-x 3
-y 32
-end
 arch afloor_blue_left
 x 3
 y 33
@@ -1252,10 +1248,6 @@ arch afloor_blue_left
 x 4
 y 32
 end
-arch dungeon_magic
-x 4
-y 32
-end
 arch afloor_blue_left
 x 4
 y 33
@@ -1447,15 +1439,7 @@ arch afloor_blue_left
 x 5
 y 32
 end
-arch dungeon_magic
-x 5
-y 32
-end
 arch afloor_blue_left
-x 5
-y 33
-end
-arch dungeon_magic
 x 5
 y 33
 end
@@ -1722,10 +1706,6 @@ arch afloor_blue_left
 x 6
 y 33
 end
-arch dungeon_magic
-x 6
-y 33
-end
 arch afloor_blue_left
 x 6
 y 34
@@ -1914,10 +1894,6 @@ x 7
 y 32
 end
 arch afloor_blue_left
-x 7
-y 33
-end
-arch dungeon_magic
 x 7
 y 33
 end
@@ -2153,15 +2129,7 @@ arch afloor_blue_left
 x 8
 y 33
 end
-arch dungeon_magic
-x 8
-y 33
-end
 arch afloor_blue_left
-x 8
-y 34
-end
-arch dungeon_magic
 x 8
 y 34
 end
@@ -11155,9 +11123,23 @@ arch afloor_blue_left
 x 34
 y 23
 end
-arch rod_light
+arch rod_heavy
+name Rod
+hp 80
+maxhp 80
 x 34
 y 23
+level 8
+identified 1
+arch spell_create_lava
+name Create Ocean Drying Crystal
+name_pl Create Ocean Drying Crystal
+skill sorcery
+other_arch sea_drying_crystal
+sp 1
+maxsp 2
+level 1
+end
 end
 arch afloor_blue_left
 x 34

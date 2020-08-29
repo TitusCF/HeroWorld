@@ -117,7 +117,7 @@ def do_cabin():
 			# Invisible exit, it decouples the player and the ship.  Should be at x,y = 0,0, and the player should enter the map at those coords.  HP and SP are x,y of where the inex will teleport the player afterward.
 			inex = Crossfire.CreateObjectByName('invis_exit')
 			inex.Slaying = dest.Path
-			inex.HP = 8
+			inex.HP = 19
 			inex.SP = 4
 			inex.Teleport(dest, 0, 0)
 			# The cabin's exit door.
@@ -125,7 +125,7 @@ def do_cabin():
 			cabexdoor.Unique = 1
 			cabexdoor.Face = 'oakdoor_1.111'
 			cabexdoor.Name = 'oak door'
-			cabexdoor.Teleport(dest, 8, 4)
+			cabexdoor.Teleport(dest, 19, 4)
 			cabexdoor.WriteKey('cabin_exit', '1', 1)
 			cabexdoor.WriteKey('ship_serial', str(shipserial), 1)
 			cabexeva = Crossfire.CreateObjectByName('event_apply')# The script that we attach to the door, to return the player to the current boat location

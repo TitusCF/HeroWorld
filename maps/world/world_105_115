@@ -894,24 +894,34 @@ x 2
 y 17
 elevation -2256
 end
-arch dungeon_magic
+arch sea1
 x 2
 y 18
-end
-arch sea
-x 2
-y 18
-elevation -2256
 end
 arch galleon
-name sailing galleon
+name Merryweather
 x 2
 y 18
 speed 0.5
 type 2
 container 10000000
 move_type boat
+unique 1
 passenger_limit 2
+arch oakdoor_2
+name cabin door
+type 0
+unique 1
+arch event_apply
+name event_apply
+title Python
+slaying /python/misc/ship-cabin_permanent.py
+end
+end
+arch event_apply
+title Python
+slaying /python/misc/ship-cabin_permanent.py
+end
 end
 arch magic_banned
 x 2
@@ -1809,18 +1819,6 @@ end
 arch cobblestones2
 x 4
 y 24
-end
-arch magic_mouth
-msg
-Before you is a statue...
-The sea, is our mistress,
-The deep, our graves,
-To those that brave,
-The storm tossed waves. ''
-Guild of Seamen, Scorn - 26 Dec 1998
-endmsg
-x 4
-y 25
 end
 arch dungeon_magic
 x 4
@@ -5029,31 +5027,6 @@ arch sea1
 x 12
 y 18
 end
-arch galleon
-name Merryweather
-x 12
-y 18
-speed 0.5
-type 2
-container 10000000
-move_type boat
-unique 1
-passenger_limit 2
-arch oakdoor_2
-name cabin door
-type 0
-unique 1
-arch event_apply
-name event_apply
-title Python
-slaying /python/misc/ship-cabin_permanent.py
-end
-end
-arch event_apply
-title Python
-slaying /python/misc/ship-cabin_permanent.py
-end
-end
 arch dungeon_magic
 x 12
 y 19
@@ -5472,31 +5445,6 @@ end
 arch sea1
 x 13
 y 21
-end
-arch galleon
-name Hierarch
-x 13
-y 21
-speed 0.5
-type 2
-container 10000000
-move_type boat
-unique 1
-passenger_limit 2
-arch oakdoor_2
-name cabin door
-type 0
-unique 1
-arch event_apply
-name event_apply
-title Python
-slaying /python/misc/ship-cabin_permanent.py
-end
-end
-arch event_apply
-title Python
-slaying /python/misc/ship-cabin_permanent.py
-end
 end
 arch dungeon_magic
 x 13
@@ -6726,20 +6674,34 @@ arch dungeon_magic
 x 16
 y 23
 end
-arch sea
+arch sea1
 x 16
 y 23
-elevation -2256
 end
 arch galleon
-name sailing galleon
+name Hierarch
 x 16
 y 23
 speed 0.5
 type 2
 container 10000000
 move_type boat
+unique 1
 passenger_limit 2
+arch oakdoor_2
+name cabin door
+type 0
+unique 1
+arch event_apply
+name event_apply
+title Python
+slaying /python/misc/ship-cabin_permanent.py
+end
+end
+arch event_apply
+title Python
+slaying /python/misc/ship-cabin_permanent.py
+end
 end
 arch magic_banned
 x 16

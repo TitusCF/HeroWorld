@@ -3,7 +3,7 @@ name <unnamed>
 width 40
 height 40
 msg
-Modified: 2020-08-27 Acer
+Modified: 2020-08-29 Acer
 endmsg
 end
 arch afloor_blue_left
@@ -5268,11 +5268,6 @@ arch afloor_blue_left
 x 21
 y 11
 end
-arch woodcuttingaxe
-x 21
-y 11
-harvest_speed 2
-end
 arch afloor_blue_left
 x 21
 y 12
@@ -5284,11 +5279,6 @@ end
 arch afloor_blue_left
 x 21
 y 14
-end
-arch woodcuttingaxe
-x 21
-y 14
-harvest_speed 2
 end
 arch afloor_blue_left
 x 21
@@ -5350,20 +5340,6 @@ end
 arch afloor_magenta_left
 x 21
 y 27
-end
-arch bones2
-name Spiteful Skull
-msg
-This skull seems to snear at you in disgust...
-endmsg
-dam 0
-x 21
-y 27
-body_arm 0
-arch event_apply
-title Python
-slaying python/tod/replace_in_map.py
-end
 end
 arch afloor_blue_left
 x 21
@@ -5463,14 +5439,6 @@ arch afloor_blue_left
 x 22
 y 10
 end
-arch club
-x 22
-y 10
-arch event_attacks
-title Python
-slaying python/misc/swallow_whole.py
-end
-end
 arch afloor_blue_left
 x 22
 y 11
@@ -5498,15 +5466,6 @@ end
 arch afloor_blue_left
 x 22
 y 17
-end
-arch cloak
-title of swallowing
-x 22
-y 17
-arch event_attack
-title Python
-slaying python/misc/swallow_whole.py
-end
 end
 arch afloor_blue_left
 x 22
@@ -5835,12 +5794,6 @@ end
 arch afloor_blue_left
 x 24
 y 8
-end
-arch ring_occ
-x 24
-y 8
-arch occmage_ring
-end
 end
 arch afloor_blue_left
 x 24
@@ -6287,23 +6240,23 @@ arch afloor_blue_left
 x 26
 y 11
 end
-arch afloor_blue_left
+arch shallow_sea
 x 26
 y 12
 end
-arch afloor_blue_left
+arch shallow_sea
 x 26
 y 13
 end
-arch afloor_blue_left
+arch sea
 x 26
 y 14
 end
-arch afloor_blue_left
+arch shallow_sea
 x 26
 y 15
 end
-arch afloor_blue_left
+arch shallow_sea
 x 26
 y 16
 end
@@ -6453,23 +6406,23 @@ arch afloor_blue_left
 x 27
 y 11
 end
-arch afloor_blue_left
+arch shallow_sea
 x 27
 y 12
 end
-arch afloor_blue_left
+arch shallow_sea
 x 27
 y 13
 end
-arch afloor_blue_left
+arch sea
 x 27
 y 14
 end
-arch afloor_blue_left
+arch shallow_sea
 x 27
 y 15
 end
-arch afloor_blue_left
+arch shallow_sea
 x 27
 y 16
 end
@@ -6645,13 +6598,15 @@ x 28
 y 10
 end
 arch blue_key
-name sea key
+name sea drying crystal
 slaying sea_test
 msg
 The sea dries beneath you...
 endmsg
+face rescrystal7.111
 x 28
 y 10
+on_use_yield cabbage
 end
 arch afloor_blue_left
 x 28
@@ -6823,7 +6778,7 @@ arch afloor_blue_left
 x 29
 y 11
 end
-arch afloor_blue_left
+arch mountain5
 x 29
 y 12
 end
@@ -6831,7 +6786,7 @@ arch afloor_blue_left
 x 29
 y 13
 end
-arch afloor_blue_left
+arch mountain2
 x 29
 y 14
 end
@@ -6839,7 +6794,7 @@ arch afloor_blue_left
 x 29
 y 15
 end
-arch afloor_blue_left
+arch mountain
 x 29
 y 16
 end
@@ -11120,12 +11075,6 @@ y 20
 no_pick 1
 identified 1
 end
-arch random_reading
-x 34
-y 20
-no_pick 1
-identified 1
-end
 arch afloor_blue_right
 x 34
 y 21
@@ -11199,6 +11148,10 @@ x 34
 y 22
 end
 arch afloor_blue_left
+x 34
+y 23
+end
+arch rod_light
 x 34
 y 23
 end

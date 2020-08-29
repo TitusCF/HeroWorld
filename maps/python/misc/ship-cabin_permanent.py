@@ -142,7 +142,7 @@ def do_cabin():
 		
 	#Teleport the player
 	act.Message('You enter the ship\'s cabin.')
-	act.Teleport(dest, 0, 0)
+	act.Teleport(dest, 19, 4)
 	
 	cabexdoor = dest.Check('tree5', (19, 4))# If you want to use a different placeholder item for the cabin exit, change all references to "tree5" to your new arch
 	shipserial = str(cabexdoor.ReadKey('ship_serial'))

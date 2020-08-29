@@ -27,19 +27,17 @@ y 1
 move_block -all
 move_allow all
 end
-arch teleporter
-slaying /wassar/city-b2
-hp 24
-sp 24
-x 1
-y 1
-speed 1
-invisible 1
-end
 arch magic_mouth
 msg
 You are plunged through water! For a second, you feel unable to breathe. The moment passes, and you feel a different atmosphere and a different world.
 endmsg
+x 1
+y 1
+end
+arch invis_exit
+slaying /wassar/city-b2
+hp 24
+sp 24
 x 1
 y 1
 end

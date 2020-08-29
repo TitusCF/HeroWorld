@@ -11,7 +11,7 @@ msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Dec 16 20:53:13 2001
-Modified: 2020-08-25 Acer
+Modified: 2020-08-28 Acer
 endmsg
 outdoor 1
 tile_path_1 world_105_114
@@ -3777,28 +3777,21 @@ x 9
 y 16
 elevation -2256
 end
-arch sea
+arch sea1
 x 9
 y 17
-elevation -2256
 end
 arch dungeon_magic
 x 9
 y 18
 end
-arch sea
+arch sea1
 x 9
 y 18
-elevation -2256
 end
-arch dungeon_magic
+arch sea1
 x 9
 y 19
-end
-arch sea
-x 9
-y 19
-elevation -2256
 end
 arch dungeon_magic
 x 9
@@ -4176,28 +4169,17 @@ x 10
 y 16
 elevation -2256
 end
-arch sea
+arch sea1
 x 10
 y 17
-elevation -2256
 end
-arch dungeon_magic
+arch sea1
 x 10
 y 18
 end
-arch sea
-x 10
-y 18
-elevation -2256
-end
-arch dungeon_magic
+arch sea1
 x 10
 y 19
-end
-arch sea
-x 10
-y 19
-elevation -2256
 end
 arch dungeon_magic
 x 10
@@ -4581,34 +4563,68 @@ x 11
 y 16
 elevation -2256
 end
-arch sea
+arch dungeon_magic
 x 11
 y 17
-elevation -2256
+end
+arch sea1
+x 11
+y 17
+end
+arch galleon
+name Everjest
+x 11
+y 17
+speed 0.5
+type 2
+container 10000000
+move_type boat
+unique 1
+passenger_limit 2
+arch oakdoor_2
+name cabin door
+type 0
+unique 1
+arch event_apply
+name event_apply
+title Python
+slaying /python/misc/ship-cabin_permanent.py
+end
+end
+arch event_apply
+title Python
+slaying /python/misc/ship-cabin_permanent.py
+end
 end
 arch dungeon_magic
 x 11
 y 18
 end
-arch sea
+arch sea1
 x 11
 y 18
-elevation -2256
+end
+arch pier_1_1
+x 11
+y 18
 end
 arch dungeon_magic
 x 11
 y 19
 end
-arch sea
+arch sea1
 x 11
 y 19
-elevation -2256
 end
-arch dungeon_magic
+arch pier_3_2
+x 11
+y 19
+end
+arch magic_banned
 x 11
 y 20
 end
-arch magic_banned
+arch dungeon_magic
 x 11
 y 20
 end
@@ -4618,7 +4634,7 @@ y 20
 elevation -2256
 move_block boat
 end
-arch pier_1_1
+arch pier_2_1_1
 x 11
 y 20
 end
@@ -5008,44 +5024,56 @@ end
 arch sea
 x 12
 y 17
-elevation -2256
 end
-arch dungeon_magic
+arch sea1
 x 12
 y 18
-end
-arch sea
-x 12
-y 18
-elevation -2256
-end
-arch dungeon_magic
-x 12
-y 19
-end
-arch sea
-x 12
-y 19
-elevation -2256
-end
-arch dungeon_magic
-x 12
-y 20
-end
-arch sea
-x 12
-y 20
-elevation -2256
 end
 arch galleon
-name sailing galleon
+name Merryweather
 x 12
-y 20
+y 18
 speed 0.5
 type 2
 container 10000000
 move_type boat
+unique 1
 passenger_limit 2
+arch oakdoor_2
+name cabin door
+type 0
+unique 1
+arch event_apply
+name event_apply
+title Python
+slaying /python/misc/ship-cabin_permanent.py
+end
+end
+arch event_apply
+title Python
+slaying /python/misc/ship-cabin_permanent.py
+end
+end
+arch dungeon_magic
+x 12
+y 19
+end
+arch sea1
+x 12
+y 19
+end
+arch pier_1_3
+x 12
+y 19
+end
+arch dungeon_magic
+x 12
+y 20
+end
+arch sea
+x 12
+y 20
+elevation -2256
 end
 arch dungeon_magic
 x 12
@@ -5419,25 +5447,14 @@ end
 arch sea
 x 13
 y 17
-elevation -2256
 end
-arch dungeon_magic
+arch sea
 x 13
 y 18
 end
 arch sea
 x 13
-y 18
-elevation -2256
-end
-arch dungeon_magic
-x 13
 y 19
-end
-arch sea
-x 13
-y 19
-elevation -2256
 end
 arch dungeon_magic
 x 13
@@ -5452,10 +5469,34 @@ arch dungeon_magic
 x 13
 y 21
 end
-arch sea
+arch sea1
 x 13
 y 21
-elevation -2256
+end
+arch galleon
+name Hierarch
+x 13
+y 21
+speed 0.5
+type 2
+container 10000000
+move_type boat
+unique 1
+passenger_limit 2
+arch oakdoor_2
+name cabin door
+type 0
+unique 1
+arch event_apply
+name event_apply
+title Python
+slaying /python/misc/ship-cabin_permanent.py
+end
+end
+arch event_apply
+title Python
+slaying /python/misc/ship-cabin_permanent.py
+end
 end
 arch dungeon_magic
 x 13
@@ -5809,6 +5850,10 @@ x 14
 y 17
 elevation -2256
 end
+arch sea
+x 14
+y 17
+end
 arch dungeon_magic
 x 14
 y 18
@@ -5818,6 +5863,10 @@ x 14
 y 18
 elevation -2256
 end
+arch sea
+x 14
+y 18
+end
 arch dungeon_magic
 x 14
 y 19
@@ -5826,6 +5875,14 @@ arch sea
 x 14
 y 19
 elevation -2256
+end
+arch dungeon_magic
+x 14
+y 19
+end
+arch sea1
+x 14
+y 19
 end
 arch dungeon_magic
 x 14

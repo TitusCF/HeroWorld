@@ -1,11 +1,13 @@
 arch map
+name <unnamed>
+width 8
+height 8
 msg
 Creator: bt
 Email: thomas@nomad.astro.psu.edu
 Date: Tue Dec 27 17:47:25 1994
+Modified: 2020-08-28 Acer
 endmsg
-width 8
-height 8
 end
 arch woodfloor
 end
@@ -48,8 +50,6 @@ arch wwall_2_2_1
 y 6
 end
 arch blocked
-msg
-endmsg
 y 7
 end
 arch woodfloor
@@ -109,8 +109,6 @@ x 1
 y 6
 end
 arch blocked
-msg
-endmsg
 x 1
 y 7
 end
@@ -178,8 +176,6 @@ x 2
 y 6
 end
 arch blocked
-msg
-endmsg
 x 2
 y 7
 end
@@ -247,8 +243,6 @@ x 3
 y 6
 end
 arch blocked
-msg
-endmsg
 x 3
 y 7
 end
@@ -316,8 +310,6 @@ x 4
 y 6
 end
 arch blocked
-msg
-endmsg
 x 4
 y 7
 end
@@ -385,8 +377,6 @@ x 5
 y 6
 end
 arch blocked
-msg
-endmsg
 x 5
 y 7
 end
@@ -423,6 +413,11 @@ y 3
 carrying 100
 no_pick 1
 arch hands
+name Hands
+title of The Sisters
+slaying sisters_hands
+type 21
+identified 1
 end
 end
 arch woodfloor
@@ -450,8 +445,6 @@ x 6
 y 6
 end
 arch blocked
-msg
-endmsg
 x 6
 y 7
 end
@@ -510,8 +503,6 @@ x 7
 y 6
 end
 arch blocked
-msg
-endmsg
 x 7
 y 7
 end

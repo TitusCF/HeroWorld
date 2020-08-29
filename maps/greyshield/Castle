@@ -9,6 +9,7 @@ msg
 Creator: Chris Jeske
 Email:
 Date: Mon Sep 16 16:26:20 1996
+Modified: 2020-08-28 Acer
 endmsg
 end
 arch woods_3
@@ -1602,7 +1603,7 @@ Chief of Staff sent you...
 @match seal|ring|see|sent
 The Ring of Seal is kept in the
 chamber behind the throne room. You
-need the iron chalice from the 
+need the iron chalice from the
 factory to open the door.
 @match *
 I'm too busy to answer your queries.
@@ -2878,9 +2879,9 @@ x 15
 y 24
 connected 1
 end
-arch sea1
+arch grass
 name moat
-name_pl moat
+face blake_1.111
 x 15
 y 25
 end
@@ -3112,9 +3113,9 @@ arch cobblestones2
 x 16
 y 24
 end
-arch sea1
+arch grass
 name moat
-name_pl moat
+face blake_1.111
 x 16
 y 25
 end
@@ -4248,9 +4249,8 @@ sp 400
 maxsp 400
 x 22
 y 7
-attack_movement 15
 level 40
-type 0
+randomitems none
 monster 1
 unaggressive 1
 can_cast_spell 1

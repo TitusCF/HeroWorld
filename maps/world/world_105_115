@@ -450,6 +450,19 @@ x 1
 y 18
 elevation -2256
 end
+arch pier_1_1
+x 1
+y 18
+end
+arch altar
+name Ship with Liveable Cabin (25 imperial)
+slaying imperial
+food 25
+x 1
+y 18
+connected 20394852
+activate_on_release 0
+end
 arch magic_banned
 x 1
 y 19
@@ -464,7 +477,7 @@ y 19
 elevation -2256
 move_block boat
 end
-arch pier_2_2_2
+arch pier_3_2
 x 1
 y 19
 end
@@ -898,10 +911,14 @@ arch sea1
 x 2
 y 18
 end
-arch galleon
-name Merryweather
+arch creator
 x 2
 y 18
+connected 20394852
+lifesave 1
+activate_on_release 0
+arch galleon
+name Merryweather
 speed 0.5
 type 2
 container 10000000
@@ -921,6 +938,7 @@ end
 arch event_apply
 title Python
 slaying /python/misc/ship-cabin_permanent.py
+end
 end
 end
 arch magic_banned
@@ -4569,10 +4587,14 @@ arch sea1
 x 11
 y 17
 end
-arch galleon
-name Everjest
+arch creator
 x 11
 y 17
+connected 20394851
+lifesave 1
+activate_on_release 0
+arch galleon
+name Everjest
 speed 0.5
 type 2
 container 10000000
@@ -4594,6 +4616,7 @@ title Python
 slaying /python/misc/ship-cabin_permanent.py
 end
 end
+end
 arch dungeon_magic
 x 11
 y 18
@@ -4602,7 +4625,7 @@ arch sea1
 x 11
 y 18
 end
-arch pier_1_1
+arch pier_3_2
 x 11
 y 18
 end
@@ -5023,7 +5046,24 @@ arch sea
 x 12
 y 17
 end
+arch pier_1_1
+x 12
+y 17
+end
+arch altar
+name Ship with Liveable Cabin (25 imperial)
+slaying imperial
+food 25
+x 12
+y 17
+connected 20394851
+activate_on_release 0
+end
 arch sea1
+x 12
+y 18
+end
+arch pier_3_4
 x 12
 y 18
 end
@@ -5035,7 +5075,7 @@ arch sea1
 x 12
 y 19
 end
-arch pier_1_3
+arch pier_2_2_4
 x 12
 y 19
 end
@@ -6263,6 +6303,19 @@ x 15
 y 23
 elevation -2256
 end
+arch pier_1_1
+x 15
+y 23
+end
+arch altar
+name Ship with Liveable Cabin (25 imperial)
+slaying imperial
+food 25
+x 15
+y 23
+connected 2039485
+activate_on_release 0
+end
 arch dungeon_magic
 x 15
 y 24
@@ -6271,6 +6324,10 @@ arch sea
 x 15
 y 24
 elevation -2256
+end
+arch pier_3_2
+x 15
+y 24
 end
 arch dungeon_magic
 x 15
@@ -6678,10 +6735,14 @@ arch sea1
 x 16
 y 23
 end
-arch galleon
-name Hierarch
+arch creator
 x 16
 y 23
+connected 2039485
+lifesave 1
+activate_on_release 0
+arch galleon
+name Hierarch
 speed 0.5
 type 2
 container 10000000
@@ -6703,6 +6764,7 @@ title Python
 slaying /python/misc/ship-cabin_permanent.py
 end
 end
+end
 arch magic_banned
 x 16
 y 24
@@ -6717,7 +6779,7 @@ y 24
 elevation -2256
 move_block boat
 end
-arch pier_1_1
+arch pier_3_4
 x 16
 y 24
 end

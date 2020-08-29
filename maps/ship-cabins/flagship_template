@@ -995,28 +995,28 @@ end
 arch woodfloor
 x 5
 y 6
-unique 1
-is_buildable 1
 end
-arch stair_down
+arch invis_exit
 name To the Bilge
+face stair_down.111
 hp 5
 sp 21
 x 5
 y 6
+invisible 0
 end
 arch woodfloor
 x 5
 y 7
-unique 1
-is_buildable 1
 end
-arch stair_down
+arch invis_exit
 name To the Bilge
+face stair_down.111
 hp 5
 sp 22
 x 5
 y 7
+invisible 0
 end
 arch woodfloor
 x 5
@@ -1110,12 +1110,14 @@ y 21
 unique 1
 is_buildable 1
 end
-arch stair_up
+arch invis_exit
 name To the Mid Deck
+face stair_up.111
 hp 5
 sp 6
 x 5
 y 21
+invisible 0
 end
 arch woodfloor
 x 5
@@ -1123,12 +1125,14 @@ y 22
 unique 1
 is_buildable 1
 end
-arch stair_up
+arch invis_exit
 name To the Mid Deck
+face stair_up.111
 hp 5
 sp 7
 x 5
 y 22
+invisible 0
 end
 arch woodfloor
 x 5
@@ -1221,28 +1225,28 @@ end
 arch woodfloor
 x 6
 y 6
-unique 1
-is_buildable 1
 end
-arch stair_up
+arch invis_exit
 name To the Upper Deck
+face stair_up.111
 hp 34
 sp 6
 x 6
 y 6
+invisible 0
 end
 arch woodfloor
 x 6
 y 7
-unique 1
-is_buildable 1
 end
-arch stair_up
+arch invis_exit
 name To the Upper Deck
+face stair_up.111
 hp 34
 sp 7
 x 6
 y 7
+invisible 0
 end
 arch woodfloor
 x 6
@@ -6639,6 +6643,15 @@ sp 6
 x 34
 y 6
 end
+arch invis_exit
+name To the Mid Deck
+face stair_down.111
+hp 6
+sp 6
+x 34
+y 6
+invisible 0
+end
 arch woodfloor
 x 34
 y 7
@@ -6651,6 +6664,15 @@ hp 6
 sp 7
 x 34
 y 7
+end
+arch invis_exit
+name To the Mid Deck
+face stair_down.111
+hp 6
+sp 7
+x 34
+y 7
+invisible 0
 end
 arch woodfloor
 x 34

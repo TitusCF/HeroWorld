@@ -62,6 +62,6 @@ Personal Shop Upgrade </br>
 </br>
 </br>
 COMING SOON </br>
-Artificers Expansion Pack
-Apotheosis Expansion Pack
+Artificers Expansion Pack </br>
+Apotheosis Expansion Pack </br>
 

@@ -18,7 +18,7 @@ prevent accidental clashing of connection-IDs.
 
 [1] I put these under the same section because they only
 needed one connection id.
-Modified: 2020-08-29 Acer
+Modified: 2020-08-31 Acer
 endmsg
 end
 arch cyangrass
@@ -1727,7 +1727,7 @@ arch marble
 x 5
 y 30
 end
-arch cwall_3_4
+arch cwall_4
 x 5
 y 30
 end
@@ -1735,7 +1735,7 @@ arch marble
 x 5
 y 31
 end
-arch cwall_3_4
+arch cwall_4
 x 5
 y 31
 end
@@ -2050,11 +2050,19 @@ arch marble
 x 6
 y 29
 end
-arch white-green-c-marble_111
+arch marble
 x 6
 y 30
 end
-arch white-green-c-marble_112
+arch cwall_3_3
+x 6
+y 30
+end
+arch marble
+x 6
+y 31
+end
+arch cwall_3_1
 x 6
 y 31
 end
@@ -2297,11 +2305,19 @@ arch marble
 x 7
 y 29
 end
-arch white-green-c-marble_114
+arch marble
 x 7
 y 30
 end
-arch white-green-c-marble_113
+arch cwall_3_3
+x 7
+y 30
+end
+arch marble
+x 7
+y 31
+end
+arch cwall_3_1
 x 7
 y 31
 end
@@ -2620,7 +2636,7 @@ arch marble
 x 8
 y 30
 end
-arch cwall_2_2_2
+arch cwall_3_3
 x 8
 y 30
 end
@@ -2628,7 +2644,7 @@ arch marble
 x 8
 y 31
 end
-arch cwall_2_2_1
+arch cwall_3_1
 x 8
 y 31
 end
@@ -2748,23 +2764,23 @@ arch marble
 x 8
 y 47
 end
-arch cwall_2_2_1
-x 8
-y 47
-end
-arch white-beige-c-marble_111
+arch marble
 x 8
 y 48
 end
-arch white-beige-c-marble_112
+arch cwall_3_2
+x 8
+y 48
+end
+arch marble
+x 8
+y 49
+end
+arch cwall_2_2_1
 x 8
 y 49
 end
 arch marble
-x 8
-y 50
-end
-arch cwall_3_3
 x 8
 y 50
 end
@@ -3135,23 +3151,23 @@ arch marble
 x 9
 y 47
 end
-arch cwall_2_2_4
-x 9
-y 47
-end
-arch white-beige-c-marble_114
+arch marble
 x 9
 y 48
 end
-arch white-beige-c-marble_113
+arch cwall_3_4
+x 9
+y 48
+end
+arch marble
+x 9
+y 49
+end
+arch cwall_2_2_4
 x 9
 y 49
 end
 arch marble
-x 9
-y 50
-end
-arch cwall_3_3
 x 9
 y 50
 end
@@ -3775,12 +3791,6 @@ arch white-beige-c-marble_111
 x 11
 y 43
 end
-arch grand_piano_black
-slaying blocked
-food 100
-x 11
-y 43
-end
 arch white-beige-c-marble_112
 x 11
 y 44
@@ -3916,6 +3926,7 @@ end
 arch gem
 x 12
 y 13
+no_pick 1
 end
 arch marble
 x 12
@@ -4555,6 +4566,7 @@ end
 arch mithril
 x 14
 y 13
+no_pick 1
 end
 arch marble
 x 14
@@ -4748,39 +4760,6 @@ arch marble
 x 14
 y 45
 end
-arch man
-name Royal Musician
-msg
-@match harpsichord
-@cond $who->pay_amount (50000)
-@eval ext::player_env::play_music_once $who->contr, "linlem/greensleeves"
-Enjoy the music!
-
-@match piano
-@cond $who->pay_amount (50000)
-@eval ext::player_env::play_music_once $who->contr, "km/heroic_reception"
-Enjoy the music!
-
-@match harpsichord
-Sorry, you don't appear to have 5 platinum right now.
-
-@match piano
-Sorry, you don't appear to have 5 platinum right now.
-
-@match song|yes
-On the harpsichord, I can play Greensleeves.
-On the piano, I can play a majestic tune.
-
-Which instrument would you like me to play?
-You will need to pay 10 platinum for the service.
-Please note I can't take money from a bank account.
-
-@match *
-Hello! Would you like me to play a song for you?
-endmsg
-x 14
-y 45
-end
 arch marble
 x 14
 y 46
@@ -4908,6 +4887,7 @@ end
 arch t_rock
 x 15
 y 13
+no_pick 1
 end
 arch marble
 x 15
@@ -5230,6 +5210,7 @@ name crystal
 name_pl crystals
 x 16
 y 13
+no_pick 1
 end
 arch marble
 x 16
@@ -5447,12 +5428,6 @@ x 16
 y 42
 end
 arch white-beige-c-marble_111
-x 16
-y 43
-end
-arch harpsichord3
-slaying blocked
-food 100
 x 16
 y 43
 end

@@ -3,6 +3,9 @@ name <unnamed>
 region wassar
 width 32
 height 16
+msg
+Modified: 2020-08-31 Acer
+endmsg
 end
 arch flagstone
 end
@@ -78,7 +81,7 @@ end
 arch flagstone
 y 12
 end
-arch dwall_2_1_1
+arch cwall_3_2
 y 12
 end
 arch flagstone
@@ -151,6 +154,10 @@ x 1
 y 11
 end
 arch flagstone
+x 1
+y 12
+end
+arch cwall_2_1_2
 x 1
 y 12
 end
@@ -241,6 +248,10 @@ x 2
 y 11
 end
 arch flagstone
+x 2
+y 12
+end
+arch cwall_2_1_2
 x 2
 y 12
 end
@@ -358,7 +369,7 @@ arch flagstone
 x 3
 y 12
 end
-arch dwall_2_2_1
+arch cwall_3_1
 x 3
 y 12
 end
@@ -366,31 +377,9 @@ arch flagstone
 x 3
 y 13
 end
-arch evilpentagram
-face odoor_1.x11
-x 3
-y 13
-end
-arch check_inv
-slaying wassar_alchemy_lab
-x 3
-y 13
-move_block all
-end
 arch flagstone
 x 3
 y 14
-end
-arch evilpentagram
-face odoor_1.x11
-x 3
-y 14
-end
-arch check_inv
-slaying wassar_alchemy_lab
-x 3
-y 14
-move_block all
 end
 arch flagstone
 x 3
@@ -466,15 +455,6 @@ arch shop_empty
 x 4
 y 11
 end
-arch key2_brown
-name Wassar Alchemy Key
-name_pl Wassar Alchemy Keys
-slaying wassar_alchemy_lab
-x 4
-y 11
-value 165000
-unpaid 1
-end
 arch flagstone
 x 4
 y 12
@@ -833,23 +813,9 @@ arch dwall_win2
 x 8
 y 12
 end
-arch magic_mouth
-msg
-For your convenience, free alchemy materials are provided.
-endmsg
-x 8
-y 13
-end
 arch flagstone
 x 8
 y 13
-end
-arch magic_mouth
-msg
-For your convenience, free alchemy materials are provided.
-endmsg
-x 8
-y 14
 end
 arch flagstone
 x 8
@@ -1221,15 +1187,7 @@ arch flagstone
 x 13
 y 13
 end
-arch water
-x 13
-y 13
-end
 arch flagstone
-x 13
-y 14
-end
-arch water
 x 13
 y 14
 end
@@ -1303,15 +1261,11 @@ arch flagstone
 x 14
 y 13
 end
-arch sulphur
-x 14
-y 13
-end
 arch flagstone
 x 14
 y 14
 end
-arch sulphur
+arch mercury
 x 14
 y 14
 end
@@ -1385,15 +1339,7 @@ arch flagstone
 x 15
 y 13
 end
-arch salt
-x 15
-y 13
-end
 arch flagstone
-x 15
-y 14
-end
-arch salt
 x 15
 y 14
 end
@@ -1467,15 +1413,7 @@ arch flagstone
 x 16
 y 13
 end
-arch rock2
-x 16
-y 13
-end
 arch flagstone
-x 16
-y 14
-end
-arch rock2
 x 16
 y 14
 end
@@ -1549,15 +1487,7 @@ arch flagstone
 x 17
 y 13
 end
-arch river_stone
-x 17
-y 13
-end
 arch flagstone
-x 17
-y 14
-end
-arch river_stone
 x 17
 y 14
 end
@@ -1615,7 +1545,7 @@ arch shop_empty
 x 18
 y 10
 end
-arch shop_alchemy
+arch shop_empty
 x 18
 y 11
 end
@@ -1631,15 +1561,7 @@ arch flagstone
 x 18
 y 13
 end
-arch pyrite3
-x 18
-y 13
-end
 arch flagstone
-x 18
-y 14
-end
-arch pyrite3
 x 18
 y 14
 end
@@ -1713,15 +1635,7 @@ arch flagstone
 x 19
 y 13
 end
-arch pyrite2
-x 19
-y 13
-end
 arch flagstone
-x 19
-y 14
-end
-arch pyrite2
 x 19
 y 14
 end
@@ -1795,15 +1709,7 @@ arch flagstone
 x 20
 y 13
 end
-arch pyrite
-x 20
-y 13
-end
 arch flagstone
-x 20
-y 14
-end
-arch pyrite
 x 20
 y 14
 end
@@ -1877,15 +1783,7 @@ arch flagstone
 x 21
 y 13
 end
-arch phosphorus
-x 21
-y 13
-end
 arch flagstone
-x 21
-y 14
-end
-arch phosphorus
 x 21
 y 14
 end
@@ -1959,15 +1857,7 @@ arch flagstone
 x 22
 y 13
 end
-arch mountain_stone
-x 22
-y 13
-end
 arch flagstone
-x 22
-y 14
-end
-arch mountain_stone
 x 22
 y 14
 end
@@ -2041,15 +1931,7 @@ arch flagstone
 x 23
 y 13
 end
-arch min_oil
-x 23
-y 13
-end
 arch flagstone
-x 23
-y 14
-end
-arch min_oil
 x 23
 y 14
 end
@@ -2131,10 +2013,6 @@ arch flagstone
 x 24
 y 14
 end
-arch mercury
-x 24
-y 14
-end
 arch flagstone
 x 24
 y 15
@@ -2205,15 +2083,7 @@ arch flagstone
 x 25
 y 13
 end
-arch lead
-x 25
-y 13
-end
 arch flagstone
-x 25
-y 14
-end
-arch lead
 x 25
 y 14
 end
@@ -2287,15 +2157,7 @@ arch flagstone
 x 26
 y 13
 end
-arch gypsum
-x 26
-y 13
-end
 arch flagstone
-x 26
-y 14
-end
-arch gypsum
 x 26
 y 14
 end
@@ -2369,15 +2231,7 @@ arch flagstone
 x 27
 y 13
 end
-arch graphite
-x 27
-y 13
-end
 arch flagstone
-x 27
-y 14
-end
-arch graphite
 x 27
 y 14
 end
@@ -2451,15 +2305,7 @@ arch flagstone
 x 28
 y 13
 end
-arch field_stone
-x 28
-y 13
-end
 arch flagstone
-x 28
-y 14
-end
-arch field_stone
 x 28
 y 14
 end
@@ -2533,15 +2379,7 @@ arch flagstone
 x 29
 y 13
 end
-arch cinnabar
-x 29
-y 13
-end
 arch flagstone
-x 29
-y 14
-end
-arch cinnabar
 x 29
 y 14
 end
@@ -2618,14 +2456,6 @@ end
 arch flagstone
 x 30
 y 13
-end
-arch cauldron
-name large cauldron
-name_pl large cauldrons
-x 30
-y 13
-container 1000000
-no_pick 1
 end
 arch flagstone
 x 30

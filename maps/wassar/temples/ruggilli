@@ -5,6 +5,9 @@ width 16
 height 16
 enter_x 2
 enter_y 14
+msg
+Modified: 2020-08-31 Acer
+endmsg
 end
 arch lostlabfloor2
 end
@@ -277,12 +280,8 @@ arch lostlabfloor2
 x 2
 y 15
 end
-arch door_look_1
-x 2
-y 15
-end
 arch invis_exit
-slaying ../city-b2
+slaying /wassar/city-b2
 hp 13
 sp 22
 x 2
@@ -654,18 +653,17 @@ name Fred Blanchett
 title - Protector of the Faith
 x 7
 y 1
-arch key2_blue
-name Wassar City Storage Room Key
-name_pl Wassar City Storage Room Keys
-slaying wassar_ruggilliquest_storagepass
-value 10000
-end
 arch note
 name Message for Fred Blanchett
 name_pl Messages for Fred Blanchett
 msg
 You are honored, Fred Blanchett, for your incredible work on defending the true Faith. Please find this key to the Storage Room in return.
 endmsg
+end
+arch blue_key
+name Wassar City Storage Room Key
+name_pl Wassar City Storage Room Keys
+slaying wassar_ruggilliquest_storagepass
 end
 end
 arch woodfloor

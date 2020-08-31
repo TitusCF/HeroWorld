@@ -3,6 +3,9 @@ name <unnamed>
 region wassar
 width 16
 height 16
+msg
+Modified: 2020-08-31 Acer
+endmsg
 end
 arch marble
 end
@@ -776,10 +779,6 @@ y 1
 end
 arch biglake_1_3
 msg
-@match mountain
-@trigger 4
-(rzzzt)
-
 @match *
 What has roots as nobody sees,
 Is taller than trees,
@@ -910,6 +909,15 @@ arch swall_2_2_4
 x 8
 y 2
 end
+arch magic_ear
+msg
+@match mountain
+(RZZZZT)
+endmsg
+x 8
+y 2
+connected 4
+end
 arch marble
 x 8
 y 3
@@ -938,6 +946,15 @@ arch swall_2_2_2
 x 8
 y 6
 end
+arch magic_ear
+msg
+@match time
+(RZZZZT)
+endmsg
+x 8
+y 6
+connected 3
+end
 arch marble
 x 8
 y 7
@@ -961,6 +978,15 @@ end
 arch swall_2_1_1
 x 8
 y 9
+end
+arch magic_ear
+msg
+@match fish
+(RZZZZT)
+endmsg
+x 8
+y 9
+connected 2
 end
 arch marble
 x 8
@@ -1050,10 +1076,6 @@ y 7
 end
 arch biglake_1_4
 msg
-@match time
-@trigger 3
-(rzzzt)
-
 @match *
 This thing all things devours;
 Birds, beasts, trees, flowers;
@@ -1307,6 +1329,15 @@ arch marble
 x 11
 y 14
 end
+arch magic_ear
+msg
+@match teeth
+(RZZZZT)
+endmsg
+x 11
+y 14
+connected 1
+end
 arch marble
 x 11
 y 15
@@ -1505,10 +1536,6 @@ y 14
 end
 arch biglake_1_4
 msg
-@match teeth
-@trigger 1
-(rzzzt)
-
 @match *
 Thirty white horses
 On a red hill.

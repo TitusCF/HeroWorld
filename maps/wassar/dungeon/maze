@@ -783,6 +783,9 @@ end
 arch dwall_3_2
 slaying treasure_buster
 y 77
+randomitems none
+arch awall_0
+end
 end
 arch magic_banned
 y 78
@@ -793,6 +796,9 @@ end
 arch dwall_2_1_1
 slaying treasure_buster
 y 78
+randomitems none
+arch awall_0
+end
 end
 arch magic_banned
 y 79
@@ -803,6 +809,9 @@ end
 arch dwall_2_2_1
 slaying treasure_buster
 y 79
+randomitems none
+arch awall_0
+end
 end
 arch magic_banned
 x 1
@@ -1514,6 +1523,9 @@ arch dwall_2_1_2
 slaying treasure_buster
 x 1
 y 77
+randomitems none
+arch awall_0
+end
 end
 arch magic_banned
 x 1
@@ -1545,6 +1557,9 @@ arch dwall_1_3
 slaying treasure_buster
 x 1
 y 79
+randomitems none
+arch awall_0
+end
 end
 arch magic_banned
 x 2
@@ -2329,6 +2344,16 @@ arch flagstone
 x 2
 y 76
 end
+arch locked_brown_door1
+slaying treasure_buster
+x 2
+y 76
+invisible 1
+move_block none
+arch sign
+name BETTER LUCK NEXT TIME!
+end
+end
 arch magic_banned
 x 2
 y 77
@@ -2341,6 +2366,9 @@ arch dwall_2_1_2
 slaying treasure_buster
 x 2
 y 77
+randomitems none
+arch awall_0
+end
 end
 arch magic_banned
 x 2
@@ -3305,6 +3333,9 @@ arch dwall_2_2_4
 slaying treasure_buster
 x 3
 y 77
+randomitems none
+arch awall_0
+end
 end
 arch magic_banned
 x 3
@@ -3336,6 +3367,9 @@ arch dwall_1_4
 slaying treasure_buster
 x 3
 y 79
+randomitems none
+arch awall_0
+end
 end
 arch magic_banned
 x 4
@@ -3988,6 +4022,16 @@ arch flagstone
 x 4
 y 77
 end
+arch locked_brown_door1
+slaying treasure_buster
+x 4
+y 77
+invisible 1
+move_block none
+arch awall_0
+slaying none
+end
+end
 arch magic_banned
 x 4
 y 78
@@ -3995,6 +4039,16 @@ end
 arch flagstone
 x 4
 y 78
+end
+arch locked_brown_door1
+slaying treasure_buster
+x 4
+y 78
+invisible 1
+move_block none
+arch awall_0
+slaying none
+end
 end
 arch magic_banned
 x 4
@@ -4008,6 +4062,9 @@ arch dwall_2_1_2
 slaying treasure_buster
 x 4
 y 79
+randomitems none
+arch awall_0
+end
 end
 arch magic_banned
 x 5
@@ -63742,11 +63799,28 @@ x 76
 y 1
 last_heal 1
 end
+arch check_inv
+slaying treasure_buster
+x 76
+y 1
+last_heal 1
+end
 arch magic_banned
 x 76
 y 2
 end
 arch flagstone
+x 76
+y 2
+end
+arch sign
+name READ ME
+msg
+This maze uses a new prototype, 'Give Up (tm)' system.
+Simply 'apply' this containment unit when you wish to give up and 5 Maze Buster Crystals (tm) will appear.
+Walk into any wall holding these crystals and watch them melt!
+
+endmsg
 x 76
 y 2
 end
@@ -63774,7 +63848,33 @@ y 4
 randomitems none
 arch gray_key
 name Maze Buster Crystal
+name_pl Maze Buster Crystals
 slaying treasure_buster
+face arescrystal5.111
+end
+arch gray_key
+name Maze Buster Crystal
+name_pl Maze Buster Crystals
+slaying treasure_buster
+face arescrystal5.111
+end
+arch gray_key
+name Maze Buster Crystal
+name_pl Maze Buster Crystals
+slaying treasure_buster
+face arescrystal5.111
+end
+arch gray_key
+name Maze Buster Crystal
+name_pl Maze Buster Crystals
+slaying treasure_buster
+face arescrystal5.111
+end
+arch gray_key
+name Maze Buster Crystal
+name_pl Maze Buster Crystals
+slaying treasure_buster
+face arescrystal5.111
 end
 end
 arch magic_banned

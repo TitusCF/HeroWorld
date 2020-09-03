@@ -12,6 +12,7 @@ IRC: http://crossfire.real-time.com/irc/index.html
 </br>
 What's new so far? </br>
 </br>
+Economy Upgrade </br>
 Mining </br>
 Digging </br>
 Wood Chopping </br>
@@ -19,7 +20,7 @@ More spell/ability to world interactivity </br>
 Scorn and Navar Guild Flag Ships </br>
 Artifact Rings moved out of shops and into quest rewards </br>
 Water drying system is finally functional </br>
-Ship with accessible Cabins </br>
+Ship with accessible cabins </br>
 Wand augmentation scrolls! </br>
 Rednaxela's Buildable Buildings script up and running! <br>
 pup_land and other many other areas incorporated into Bigworld </br>
@@ -54,8 +55,6 @@ Ogre, Orc and Dragon outposts throughout the world </br>
 </br>
 </br>
 TODO </br>
-
-Economy Upgrade </br>
 Damage, Exp readout </br>
 Town Portal Rework </br>
 Personal Shop Upgrade </br>

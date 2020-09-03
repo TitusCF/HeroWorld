@@ -9,7 +9,7 @@ msg
 Creator: skud the great
 Email: tvangod@ecst.csuchico.edu
 Date: Sun Oct 10 17:09:35 1993
-Modified: 2019-01-28 Acer
+Modified: 2020-09-03 Acer
 endmsg
 end
 arch dungeon_magic
@@ -1188,6 +1188,14 @@ arch cobblestones2
 x 6
 y 1
 end
+arch depositbox
+x 6
+y 1
+arch event_close
+title Python
+slaying /python/items/deposit_box.py
+end
+end
 arch dungeon_magic
 x 6
 y 2
@@ -1204,6 +1212,14 @@ arch cobblestones2
 x 6
 y 3
 end
+arch depositbox
+x 6
+y 3
+arch event_close
+title Python
+slaying /python/items/deposit_box.py
+end
+end
 arch dungeon_magic
 x 6
 y 4
@@ -1219,6 +1235,14 @@ end
 arch cobblestones2
 x 6
 y 5
+end
+arch depositbox
+x 6
+y 5
+arch event_close
+title Python
+slaying /python/items/deposit_box.py
+end
 end
 arch dungeon_magic
 x 6
@@ -3035,6 +3059,12 @@ arch cobblestones2
 x 14
 y 10
 end
+arch jadecoin
+x 14
+y 10
+no_pick 1
+identified 1
+end
 arch dungeon_magic
 x 14
 y 11
@@ -3263,6 +3293,10 @@ arch cobblestones2
 x 15
 y 10
 end
+arch platinum_converter2
+x 15
+y 10
+end
 arch dungeon_magic
 x 15
 y 11
@@ -3399,12 +3433,6 @@ arch platinacoin
 x 16
 y 1
 end
-arch royalty
-x 16
-y 1
-no_pick 1
-identified 1
-end
 arch gem
 x 16
 y 1
@@ -3421,12 +3449,6 @@ arch platinacoin
 x 16
 y 2
 end
-arch royalty
-x 16
-y 2
-no_pick 1
-identified 1
-end
 arch gem
 x 16
 y 2
@@ -3442,12 +3464,6 @@ end
 arch platinacoin
 x 16
 y 3
-end
-arch royalty
-x 16
-y 3
-no_pick 1
-identified 1
 end
 arch gem
 x 16
@@ -3646,12 +3662,6 @@ arch platinacoin
 x 17
 y 1
 end
-arch royalty
-x 17
-y 1
-no_pick 1
-identified 1
-end
 arch gem
 x 17
 y 1
@@ -3668,12 +3678,6 @@ arch platinacoin
 x 17
 y 2
 end
-arch royalty
-x 17
-y 2
-no_pick 1
-identified 1
-end
 arch gem
 x 17
 y 2
@@ -3689,12 +3693,6 @@ end
 arch platinacoin
 x 17
 y 3
-end
-arch royalty
-x 17
-y 3
-no_pick 1
-identified 1
 end
 arch gem
 x 17
@@ -4327,9 +4325,7 @@ y 18
 end
 arch platinum_converter2
 name buy diamond
-slaying money
 other_arch gem
-sp 1
 food 400
 x 19
 y 18
@@ -4474,6 +4470,12 @@ end
 arch cobblestones2
 x 20
 y 10
+end
+arch jadecoin
+x 20
+y 10
+no_pick 1
+identified 1
 end
 arch dungeon_magic
 x 20
@@ -4683,6 +4685,10 @@ x 21
 y 10
 end
 arch cobblestones2
+x 21
+y 10
+end
+arch platinum_converter2
 x 21
 y 10
 end
@@ -5818,6 +5824,12 @@ arch cobblestones2
 x 26
 y 10
 end
+arch jadecoin
+x 26
+y 10
+no_pick 1
+identified 1
+end
 arch dungeon_magic
 x 26
 y 11
@@ -6035,6 +6047,10 @@ x 27
 y 10
 end
 arch cobblestones2
+x 27
+y 10
+end
+arch platinum_converter2
 x 27
 y 10
 end

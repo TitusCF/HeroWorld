@@ -1,0 +1,675 @@
+# materialtypes file.
+# name		the name of the material.  Paper, wood, iron, silver.
+# description	OPTIONAL: what appears in the item name. "wooden"
+# material	the material type this corresponds to.  see materials.h
+# saves		savingthrows for each of the 25 attacktypes
+# mods		modifications to resistances for the 25 atttypes.
+# anything left unspecified in this file will default to zero.
+#
+# NOTE
+# In the very least, name and material MUST exist.
+#
+# NOTE AGAIN
+# Do not edit the basic types.  Add any new types after these.
+#
+name paper
+material 1
+saves 15,10,17,9,5,7,13,0,20,15,0,0,0,0,0,10,0,0,0,0,0,0,0,0,0
+mods  0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+name iron
+material 2
+saves 2,12,3,12,2,10,7,0,20,15,0,0,0,0,0,10,0,0,0,0,0,0,0,0,0
+mods  0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+chance 100
+name glass
+material 4
+saves 14,11,8,3,10,5,1,0,20,15,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mods  0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+name leather
+material 8
+saves 5,10,10, 3, 3,10,10, 0,20,15, 0,0,0,0,0,12,0,0,0,0,0,0,0,0,0
+mods  0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+name pine
+material 16
+saves 10,11,13, 2, 2,10, 9, 0,20,15, 0,0,0,0,0,12,0,0,0,0,0,0,0,0,0
+mods  0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+name organics
+description organic
+material 32
+saves 3,12,9,11,3,10,9,0,20,15,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mods  0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+name granite
+material 64
+saves 2,5,2,2,2,2,1,0,20,15,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0
+mods  0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+name cloth
+description cotton
+material 128
+saves 14,11,13,4,4,5,10,0,20,15,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0
+mods  0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+name adamant
+material 256
+saves 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mods  0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+name liquid
+material 512
+saves 0,8,9,6,17,0,15,0,20,15,12,0,0,0,0,11,0,0,0,0,0,0,0,0,0
+mods  0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+name tin
+material 1024
+saves 6,12,6,14,2,10,1,0,20,15,0,0,0,0,0,10,0,0,0,0,0,0,0,0,0
+mods  0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+name bone
+material 2048
+saves 10,9,4,5,3,10,10,0,20,15,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0
+mods  0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+name ice
+material 4096
+saves 14,11,16,5,0,5,6,0,20,15,0,0,0,0,0,7,0,0,0,0,0,0,0,0,0
+mods  0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+#
+# NEW NON BASIC TYPES START HERE
+# Those are unused from 2011/06/29 on, left in case someone feels like using that.
+#
+# BEGIN iron
+name gold
+description golden
+material 2
+saves 9,10,10,4,2,10,0,0,20,15,0,0,0,0,0,10,0,0,0,0,0,0,0,0
+mods -1,0,-1,0,0,0,8
+chance 5
+diff 2
+magic 0
+damage -1
+wc 0
+ac 0
+weight 130
+value 175
+#
+name silver
+material 2
+saves 8,12, 9, 4, 2,10, 1, 0,20,15, 0,0,0,0,0,10
+mods 0,  0,  0,  0,  0,  0,  2
+chance 4
+diff 3
+magic 1
+damage -1
+wc 0
+ac 0
+weight 120
+value 150
+#
+name copper
+material 2
+saves 11,13,12, 2, 2,10, 8, 0,20,15, 0,0,0,0,0,10
+mods -1,  0, -1, -1,  0,  0, -3
+chance 20
+diff 0
+magic 0
+damage -1
+wc 0
+ac 0
+weight 110
+value 75
+#
+name platinum
+material 2
+saves 7,10, 7, 5, 2,10, 2, 0,20,15, 0,0,0,0,0, 5
+mods 0,  0,  0,  0,  0,  0,  0
+chance 5
+diff 4
+magic 1
+damage 0
+wc 0
+ac 0
+weight 90
+value 200
+#
+name lead
+material 2
+saves 15, 5,14,14, 6,10, 6, 0,20,15, 0,0,0,0,0, 2
+mods -3,  0, -5,  4,  1,  0,  5
+chance 1
+diff 0
+magic 0
+damage -2
+wc -2
+ac -1
+weight 400
+value 10
+#
+name steel
+material 2
+saves 1,13, 2,10, 2,10, 5, 0,20,15, 0,0,0,0,0,10
+mods 1,  0,  3,  0,  0,  0,  1
+chance 10
+diff 2
+magic 0
+damage 1
+wc 0
+ac 0
+weight 80
+value 110
+#
+name bronze
+material 2
+saves 9,13,10, 2, 2,10, 8, 0,20,15, 0,0,0,0,0,10
+mods  0,  0,  1,  0,  0,  0,  0
+chance 40
+diff 0
+magic 0
+damage 0
+wc 0
+ac 0
+weight 110
+value 80
+#
+name mithril
+material 2
+saves 1, 1, 2, 3, 2, 2, 2, 0,10, 7, 0,0,0,0,0, 5
+mods 2,  0,  5,  1,  1,  0,  2
+chance 3
+diff 8
+magic 2
+damage 1
+wc 1
+ac 1
+weight 50
+value 250
+# BEGIN cloth
+name silk
+material 128
+saves 17,9,13,5,4,5,11,0,19,15,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0
+mods  0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+chance 10
+diff 3
+magic 0
+damage 0
+wc 0
+ac 0
+weight 90
+value 130
+#
+name velvet
+material 128
+saves 17,9,13,4,6,5,11,0,19,15,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0
+mods  0,0,0,1,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+chance 10
+diff 3
+magic 0
+damage 0
+wc 0
+ac 0
+weight 110
+value 140
+#
+name burlap
+material 128
+saves 10,10,12,3,3,7,11,0,19,15
+mods 1,0,0,1,1
+chance 8
+diff 4
+magic 0
+damage 0
+wc 0
+ac 0
+weight 140
+value 70
+#
+name wool
+material 128
+saves 16,15,18,3,3,3,16,0,20,15
+mods -1,0,-1,0,2
+chance 8
+diff 4
+magic 0
+damage 0
+wc 0
+ac 0
+weight 110
+value 115
+#
+name kashmir
+material 128
+saves 18,18,18,10,10,10,18,0,20,15
+mods -1,0,0,0,1
+chance 5
+diff 2
+magic 0
+damage 0
+wc 0
+ac -1
+weight 70
+value 180
+#
+name astolare
+material 128
+saves 10,10,10, 4, 4, 4,7, 0,20,15
+mods 0,2,0,1,1,1,0,2
+chance 1
+diff 10
+magic 2
+damage 0
+wc 0
+ac 0
+weight 90
+value 200
+#
+name asbestos
+material 128
+saves 14,11,1,4,4,5,15,0,20,15
+mods 0,0,4,0,0,0,-4
+chance 1
+diff 10
+magic 0
+damage 0
+wc 0
+ac 0
+weight 110
+value 50
+#
+name rubber
+material 128
+saves 14,11,18,1,4,5,15,0,20,15
+mods 1,0,-4,4,0,0,-1
+chance 1
+diff 10
+magic 0
+damage 0
+wc 0
+ac 0
+weight 80
+value 150
+#
+# BEGIN wood
+name oak
+material 16
+saves 9,10,14, 2, 2,10, 8, 0,20,15, 0,0,0,0,0,12
+mods  0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+chance 10
+diff 1
+magic 0
+damage 1
+wc 0
+ac 0
+sp -1
+weight 110
+value 110
+#
+name birch
+material 16
+saves 11,11,13, 2, 2,10, 9, 0,20,15, 0,0,0,0,0,12
+mods 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+chance 10
+diff 2
+magic 0
+damage 0
+wc 0
+ac 0
+sp 1
+weight 90
+value 110
+#
+name spruce
+material 16
+saves 14,11,13, 2, 2,10, 13, 0,20,15
+mods -1,0,0,0,0,0,-1
+chance 10
+diff 2
+magic 0
+damage 0
+wc 0
+ac 0
+sp 0
+weight 80
+value 80
+#
+name balsa
+material 16
+saves 18,11,13, 2, 2,10,12, 0,20,15
+mods -2,0,-1,2
+chance 2
+diff 0
+magic 0
+damage -1
+wc -1
+ac -1
+sp -10
+weight 10
+value 30
+#
+name yew
+material 16
+saves 10,11,13, 2, 2,10, 9, 0,20,15
+mods -2,0,0
+chance 5
+diff 5
+magic 1
+damage 2
+wc 0
+ac 0
+sp 10
+weight 130
+value 150
+#
+name bamboo
+material 16
+saves 10,11,13, 2, 2,10, 9, 0,20,15
+mods 2,0,-1
+chance 3
+diff 5
+magic 0
+damage 0
+wc 2
+ac 0
+sp 1
+weight 70
+value 130
+#
+name ironwood
+material 16
+saves 7,11,10,2, 2,10, 9, 0,20,15
+mods 3,0,1
+chance 3
+diff 10
+magic 0
+damage 2
+wc 0
+ac 1
+sp -4
+weight 180
+value 115
+#
+name wyrmwood
+material 16
+saves 10,8,12, 2, 2,10, 7, 0,20,15
+mods 2,2,-2,0,0,2,0,2
+chance 2
+diff 15
+magic 1
+wc 1
+ac 1
+sp 1
+weight 80
+value 200
+#
+# BEGIN stone
+name marble
+material 64
+saves 2, 5, 2, 2, 2, 2, 1, 0,20,15, 0,0,0,0,0, 5
+mods 0,0,0
+chance 40
+diff 0
+damage 2
+wc -1
+ac 0
+weight 180
+value 80
+#
+name obsidian
+material 64
+saves 4, 6, 4, 4, 4, 4, 4, 0,20,15, 0,0,0,0,0, 7
+mods -1,0,-1
+chance 10
+diff 3
+damage 1
+wc 1
+ac 0
+weight 90
+value 130
+#
+name limestone
+material 64
+saves 8, 5, 2, 2, 2, 2, 17, 0,20,15
+mods -1,0,0,0,0,0,-5
+chance 8
+diff 3
+damage 0
+wc 0
+ac 0
+weight 80
+value 70
+#
+name runestone
+material 64
+saves 3, 0, 3, 4, 4, 4, 4, 0,20,15
+mods 2,3,0,0
+chance 1
+diff 15
+damage 1
+wc -1
+ac 0
+weight 60
+value 250
+#
+# BEGIN bone
+#
+name ivory
+material 2048
+saves 10, 10, 5, 5, 3,10,10, 0,20,15
+mods 0,0,0,0
+chance 30
+diff 3
+weight 80
+value 120
+#
+name dragonscale
+material 2048
+saves 4,4,0,5,15,1,1,0,15,15
+mods 1,1,5,0,-5
+chance 2
+diff 15
+magic 2
+ac 1
+weight 110
+value 200
+#
+# BEGIN adamant
+#
+# note that by making the chance 100, I override adamant above to never appear.
+name argonite
+material 256
+saves 3, 3, 4, 3, 2, 2, 2, 0,12,10, 0,0,0,0,0, 8
+mods  0, 0, 0, 1, -1, 0, 0
+chance 100
+diff 0
+magic 0
+damage 0
+wc 0
+ac 0
+weight 110
+value 90
+#
+name sanguinite
+material 256
+saves 8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8
+mods -1,-1,-1,-1,0,-1,0,0,0,10
+chance 2
+diff 0
+magic 0
+damage -1
+wc 0
+ac 0
+weight 115
+value 60
+#
+name abyssium
+material 256
+saves 5,5,5,5,5,5,2,5,5,5,5,5,5,5,5,5,5
+mods -3,-3,5,0,-5,5,-2,-10,5
+chance 1
+diff 15
+magic 0
+damage 0
+wc 0
+ac 0
+weight 200
+value 40
+#
+name astrium
+material 256
+saves 3, 3, 3, 3, 2, 2, 2, 0,12,10, 0,0,0,0,0, 7
+mods 0, 2, 0, 0, 0, 2, 0, 2, 0, 0, 0, 2, 2, 0, 2
+chance 20
+diff 5
+magic 0
+damage 0
+wc 0
+ac 0
+weight 100
+value 100
+#
+name celestium
+material 256
+saves 3, 2, 3, 3, 2, 2, 2, 0,12,10, 0,0,0,0,0, 1
+mods 0, 4, 0, 0, 0, 2, 0, 3, 0, 0, 0, 3, 3, 0, 4
+chance 10
+diff 10
+magic 1
+damage 0
+wc 0
+ac 0
+weight 110
+value 150
+#
+name damascus
+material 256
+saves 2, 2, 2, 2, 2, 2, 2, 0,6,6, 0,0,0,0,0, 2
+mods 2, 0, 1, 1, 1, 0, 2
+chance 5
+diff 12
+magic 2
+damage 0
+wc 0
+ac 1
+weight 150
+value 200
+#
+name adamantium
+material 256
+saves 1,1,1,1,1,1,1,0,2,2,0,0,0,0,0,1
+mods 3, 0, 5, 1, 1, 0, 2, 5
+chance 2
+diff 15
+magic 3
+damage 1
+wc 0
+ac 2
+weight 175
+value 300
+#
+name magmasium
+material 256
+saves 3,3,0,0,10,3,3,3,3,3,3,3,3,3,3
+mods 0,0,5,0,-5,0,2
+chance 1
+diff 15
+magic 3
+damage 0
+wc 0
+ac 0
+weight 140
+value 320
+#
+name electrum
+material 256
+saves 3,3,10,0,3,3,3,3,3,3,3,3,3,3,3
+mods 0,0,-5,5,0,0,2
+chance 1
+diff 15
+magic 3
+damage 0
+wc 0
+ac 0
+weight 140
+value 320
+#
+name glacium
+material 256
+saves 3,3,10,3,0,3,3,3,3,3,3,3,3,3,3
+mods 0,0,-5,0,5,0,0,2
+chance 1
+diff 15
+magic 3
+damage 0
+wc 0
+ac 0
+weight 140
+value 320
+#
+# BEGIN leather
+#
+name snakeskin
+material 8
+saves 5,11,11, 4, 3,10,9, 0,20,15
+mods 0,0,1,0,-1
+chance 30
+diff 3
+ac 1
+weight 90
+value 110
+#
+name humanskin
+material 8
+saves 10,15,15,15,15,15,15,0,20,15
+mods -1,-1,-1,-1,-1,0,-1
+chance 1
+diff 15
+magic 2
+ac -1
+weight 80
+value 40
+#
+name bearskin
+material 8
+saves 4,10,11, 3, 2,10,10, 0,20,15
+mods 0,0,0,0,1
+chance 15
+diff 5
+weight 110
+value 110
+#
+name dragonhide
+material 8
+saves 4,6,4,5,10,10,6,0,20,15
+mods 1,1,3,0,-3
+chance 2
+diff 15
+ac 1
+magic 2
+weight 70
+value 250
+#
+name wolfhide
+material 8
+saves 4,10,11, 3, 2,10,10, 0,20,15
+mods 0,0,0,0,1
+chance 15
+diff 4
+weight 115
+value 80
+#
+name deerskin
+material 8
+saves saves 8,10,11, 3, 2,10,10, 0,20,15
+mods -1,0,0,0,0
+chance 10
+diff 10
+ac 2
+sp 1
+wc 1
+weight 80
+value 140
+#
+# BEGIN specialty metals.
+# these are one offs, like mercury, etc.
+#
+name mercury
+material 1024
+saves 5, 3, 9, 6,17, 0,10, 0,20,15
+mods 0,0,0
+chance 0
+diff 0
+weight 100
+value 100
+#

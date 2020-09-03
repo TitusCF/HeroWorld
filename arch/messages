@@ -1,0 +1,757 @@
+#
+# Message file for books
+#
+# Message entries contained in this file will
+# appear randomly in readable objects like books, scrolls
+# and such (op->type==BOOK).
+#
+# File format:
+# ------------
+# MSG <identifier>: start of new message. The identifier is optional and free-form,
+#  and must be unique.
+#  If set then players will keep the message as part of their knowledge when read.
+#  Do NOT reuse identifiers if changing messages.
+# TITLE <title>: message's title, for knowledge management. Mandatory if
+#  the message has an identifier, else unused.
+# CHANCE <chance>: optional chance of the message appearing in a book, relative
+#  to the sum of all chances. 0 or no line means this message will never appear.
+# TEXT: start of the message's body
+# ENDMSG: marks the end of a message's body and message.
+# QUEST: optional quest internal code and state this message will activate.
+#  Example: "QUEST TempleOfDoom 0>10" will set the quest 'TempleOfDoom' to state 10
+#  if the player didn't yet do it.
+#
+# TEXT must be the last item in a MSG block.
+#
+# When designing messages please keep in mind:
+# -------------------------------------------
+#    1) Message length shouldn't exceed the maximum
+# buffer size for books (you'll generate a warning message
+# if you do this). Check the file include/read.h for the
+# current message size limit (BOOK_BUF).
+#    2) Only put newlines where significant. Clients will
+# automatically wrap the text.
+#
+#
+MSG G-051
+TITLE Age of Death Pt.2
+CHANCE 1
+TEXT
+ Their leader was Hagguth, the Elven High King who had been eaten by a dragon. He came back as a powerful spectre, leading a powerful army of ghosts, wraiths, skeletons and zombies in a massive attack to the Second and Third worlds. Their goal was to kill as many dwarves, gnomes, angels and demons as possible, to strenghten the number of their own undead host.
+
+And when some elven wizards tried to steal the power of the undead to their own ends, they became the first vampires, lichs and demilichs - half living, half undead, but on the side of Hagguth and his misterious masters.
+
+It was only when a group of reasonable elves, dwarves, gnomes and dragons managed to get together and talk, that it became clear who these masters could be. Till this point, everyone was blaming some (any) god other than the one they worshipped. But there was only one, obvious answer: the Banished Gods, the Forgotten Children who left ages ago because they didn't agree with he concept of death, were back, and enacting revenge by subverting death itself. In later days, these Gods would become
+collectively known as the Devourers.
+
+Knowing the enemy was not the solution to the war, but was a start. This group, slowly, was able to form a resistence against the undead armies, and gradually turn other people to their side. Finally, after 23 hundred years, they managed to break into the horrible fortress Hagguth had built in the First world and kill (again) the undead king.
+
+The chaos began to gradually settle down after that. But then the survivors were faced with a new problem: almost nobody was interested in perverting to the way things used to be.
+
+Yes. Entire villages of elves were settled in corners of the Fourth world for many generations, and dwarven guilds had business troughout the worlds.
+ENDMSG
+#
+#
+MSG G-001
+TITLE Fortress of Barad-Dur
+QUEST quests/BaradDur 0>10
+CHANCE 1
+TEXT
+"In the mountains north-west of the great city we found it at last -- the hidden fortress of Barad-Dur.
+
+What treasures could lie in it I do not know for our party never gained its way past the entryway.
+
+Skulls, pixies, and a horrible creature I hesitate to name decimated my friends and I."
+ENDMSG
+#
+#
+MSG G-002
+TITLE Fortress of Ang
+QUEST quests/FortressAng 0>10
+CHANCE 1
+TEXT
+In ancient times past the great fortress of Ang was raised on the eastern shore. Many inhabitants it has had, but the last known was the most unusual.
+
+A titan of rare power is said to live in Ang now. There he serves as guardian of an artifact of unusual might.
+
+The exact location is now lost, but rumors locate it east, north-east of Navar, near the southern shore.
+ENDMSG
+#
+#
+MSG G-003
+TITLE About the northern country
+CHANCE 1
+TEXT
+Many have ventured into the northern country. Up beyond the mountains, alone in the wastes lies a vast domain of mines that delve deep into the earth.
+
+Know that these tunnels and shafts are quite perilous; for only once in recent times have I heard of an expedition returning from them.
+ENDMSG
+#
+#
+MSG G-004
+TITLE Map of western world
+CHANCE 1
+TEXT
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~
+~~~~~~~~~
+~~~~~~~~~              ^^^^^^^^^^^^^
+~~~~~~~~X==========   ^  %%%%%%^%^^^^^
+~~~~~~~ santo	  =     %%%%%%%%%%%%%%
+~~~~~~~	dominion  =      %%%The%%%%%%%
+~~~~~~	^^        =      %%%%%%%%%%%%%
+~~~~~~	^^        =      %%Great%%%%%%
+~~~~~~^	^         =       %%%%%%%%%%%%
+~~~~~~X===============================
+~~~~~~ Scorn  ^^^  =      %%%%%%%%%%%%
+~~~~~	     ^^^^  =  %% %%Forest%%%%%
+~~~          ^^^   =    %%%%%%%%%%%%%%
+~~~           ^^^  =    %%%%%%%%%%%%%%
+~~~         ^^   ===     %%%%%%%%%%%%%
+~~~              X Brest
+~~~~           ~~~~~
+~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------Map of Western World--------
+ENDMSG
+#
+#
+MSG G-005
+TITLE Alchemy attempt
+CHANCE 1
+TEXT
+...and then did the Alchemist agree to make me my potion.
+
+First he called to his grimm servants who hauld forth a great iron cauldron. Into this black device did he deposit his ingredients and, opening his spell book for reference, then did he cast his spell of alchemy therepon the cauldron.
+
+Greatly did the tub shake and move!
+
+I thought that the Alchemist had broke his device, but he chuckled at my ignorance. Into the cauldron did he reach an brought forth a filled bottle of golden amber fluid...
+ENDMSG
+#
+#
+MSG G-006
+TITLE Alchemy basics
+CHANCE 1
+TEXT
+  Know that there are 4 principle philosophical ingredients. In order, they are:
+
+   - philosophical salt
+   - philosophical sulphur
+   - philosophical phosphorus
+   - philosophical oil
+
+  The great alchemist has often said that all living things are made of these ingredients. Proper combination of these with other base objects can often create potions of power and might.
+ENDMSG
+#
+#
+MSG G-007
+TITLE Commandeer's story
+CHANCE 1
+TEXT
+11 Tromisian 5211EK: We made a strange encounter while we were travelling down the ancient road to Lake Country. Plunderers from Jangk were attacking a caravan near the Iron Doors.
+
+We of course helped the merchants, and easily defeated the bandits, some fleeing. But merchants seemed... uneasy, once they recognized our Guard uniforms.
+
+We soon understood why: their twelve heavily sealed wagons were filled with Goblins, Orcs, and other creatures with the gift of speaking. They refused to tell us anything, so we decided to defer to the Lord's Justice. I don't know what will happen to them.
+
+From some testimonies we could gather, this traffic has been going on for years, for the benefit of the biggest domains of Lake Country.
+
+Me and my men will try to learn more about this.
+ENDMSG
+#
+#
+MSG G-008
+TITLE Port Joseph's Bottle Riots
+CHANCE 1
+TEXT
+In 5122EK, Bottle Riots, only reprimed with difficulty, in Port Joseph drove local authorities to totally forbid taverns and other drink-related places, with the sole exception of shops controlled by the Sea Princes themselves.
+
+However, Josephians rapidly found a loophole in the decree, noticing it only applied to buildings on or above the ground level. They thus refurbished to taverns caves in individual houses; they are indicated by their green frontage.
+ENDMSG
+#
+# 
+MSG G-009
+TITLE Skorn foundation
+CHANCE 1
+TEXT
+The colony of Skorn was founded in 435EK by Skud the Great, when his expedition reached the shores of the continent. It is said that he first pitched his tent on the site where the inn now stands.
+ENDMSG
+#
+#
+MSG G-010
+TITLE Scorn's war against Dragons
+CHANCE 1
+TEXT
+The war against the Dragons rages from 1064 to 1135EK. Scorn is destroyed. Most of its inhabitants flee to the south. After 1115EK, the city is progressively rebuilt on top of the now buried ruins nowadays known as the Old City.
+ENDMSG
+#
+#
+MSG G-011
+TITLE The Sea Princes
+CHANCE 1
+TEXT
+The War of the Sea Princes took place in 1177EK. The last imperial ship reaches Scorn. Contacts with Khelens are now broken. Scorn becomes an independent kingdom.
+ENDMSG
+#
+#
+MSG G-012
+TITLE About Khelens
+CHANCE 1
+TEXT
+Khelens is the name of both a city and an Empire, that once ruled the world. The cities of Scorn and Navar were initially colonies of the Empire of Khelens.
+
+The fate of Khelens is currently unknown. According to the last known historical records, a political crisis shattered the very foundations of the Empire 5000 years ago, creating a civil war that ended by the independence of Scorn and the other colonies from it. Since that time, no imperial ship ever sailed back to Scorn, and the location of Khelens is now forgotten.
+ENDMSG
+#
+#
+MSG G-013
+TITLE Skud the Great
+CHANCE 1
+TEXT
+One of the first Builders, Skud the Great created many famous places, like the Scorn’s First Inn or the Newbie Tower.
+
+The reasons of the disappearance of Skud are mostly unknown. The Codex Skudensis mentions that it could have been because of the negative influence of the Arch-Demon Neth Aq. It is thought that The Tower of Skud, although left unfinished by its creator, may contain informations about the fate of one of the most famous Builder.
+ENDMSG
+#
+#
+MSG G-014
+TITLE History of Scorn
+CHANCE 1
+TEXT
+It is said that Scorn, as we currently know it, was built on an older version of itself, now buried underground.
+
+When the colony of Skorn was founded by Skud, the whole west was infested by dragons and wyverns. The imperial armies successfully fought the monsters, pushing them back on the other side of the mountains, and kept a vigilant guard to ensure that the huge monsters wouldn’t sneak in and attack their settlements.
+
+But there are always men who think they’re smarter than everybody else. Enteranni the Red was one of those men. Trying to take control of Scorn for himself, he decided to unleash a couple dragons against the city, after which he’d banish them and be seen as a savior. But so blind and thirsty of power he had become that dragons easily tricked him. His plan failed, and the flame of the dragonbreath destroyed Scorn.
+
+When dragon were finally vainquished, Scorn was rebuilt on top of its own ruins. The Old City of Scorn is now a dark, forgotten maze of crypts and halls infested by vermin of all sorts. Rumors say that some treasures from the glorious past of the city still sleep there, waiting to be found. Who knows? Maybe it is true, after all.
+ENDMSG
+#
+#
+MSG G-015
+TITLE Navar's location
+CHANCE 1
+TEXT
+Straddling the corner of the Imperial highway as it turns North near the Eastern border of the known world, and surrounded by dangerous territory, Navar is an unlikely site for one of the world’s grandest cities. Yet there it stands, dominating the skyline for miles around and showing the same bustling activity expected of any thriving market town.
+ENDMSG
+#
+#
+MSG G-016
+TITLE Darcap's foundation
+CHANCE 1
+TEXT
+In 2264 EK, the Kingdom of the Masts founded a colony called Darcap in the north of the continent. But before this colony could become autonomous the kingdom was destroyed, in 2287 EK, leaving it totally isolated.
+
+The inhabitants endured many hardships, many died of hunger. Some tried to reach, by small boat or on foot, a better land – none of them ever came back.
+
+One of the colonists, named Andreas, succeeded in persuading many inhabitants to worship Devourers, whose followers don’t suffer hunger. The other inhabitants argued, logically, that since many did convert they would have enough food, and refused to convert.
+
+After his death, Andreas was nicknamed “Andreas the Ravenous” – because he always liked good jokes –, and the church of Devourers was named after him.
+ENDMSG
+#
+#
+MSG G-017
+TITLE Darcap's rediscovery
+CHANCE 1
+TEXT
+In 6138 EK, a famous explorer named Herghist Appelnisht set foot in Darcap, the first stranger in four millenia. He stayed 2 years, learning the history and customs of Darcap and teaching the whereabouts of the rest of the world to the inhabitants. He then travelled back to Navar with a delegation in order to establish relations between Darcap and the other towns.
+ENDMSG
+#
+#
+MSG G-018
+TITLE Julio's story
+CHANCE 1
+TEXT
+In 6795 EK, a magician named Julio, wishing to take some distance with the agitation of the world, came to live in Darcap. He was expert in the four elements and spent the rest of his life studying the interactions of those, transforming four houses in the center of the town in laboratories. He was at the origin of many incidents and many inhabitants came to hate him.
+
+It is only many years after his death, in 6813 EK, that his major contribution to the town was made public. He had advised leaders on the affairs of the world, giving advice, solving many conflicts. A status was made as a token of gratitude and his house, which was once considered for destruction, was restored to display his work.
+ENDMSG
+#
+#
+MSG G-019
+TITLE The Imperial Highway
+CHANCE 1
+TEXT
+The proverbial “Yellow Brick Road” (nicknamed because the durable yellow clay used to make the bricks) which strings its way across the Main continent of BigWorld, the Imperial Highway was created during the time of the Empire and is a lasting legacy of a more peaceful time. Travel along the Imperial Highway is still reasonable safe as the road is maintained and there are inns and shops along this road.
+ENDMSG
+#
+#
+MSG G-020
+TITLE The Sannista
+CHANCE 1
+TEXT
+Shortly summarized, the Sannista is a legendary flying boat that was powered by the reaction of a fire and a water elemental. It was built by the tenth Commander of Euthville, Farkennis, as a gift for the 18th Birthday of his daughter, Sannista. That’s the boat that was stolen by Fax when he fled from Euthville, and that he used to get to Khelens. Giusitta the Verbous then sailed it back to the Continent, and hid it “somewhere in the mountains of Euth”.
+ENDMSG
+#
+#
+MSG G-021
+TITLE Euthville's foundation
+CHANCE 1
+TEXT
+If you went there about half a millenia ago, you’d have seen something very different than the field of haunted ruins Euthville has since become. It was initially founded by a handful of industrious, clever dwarves, that had found a mystical way to locate fields of precious Karitta, the famous metal that is as transparent as a pearl of the North Sea, yet as strong as the best irons of Navar.
+
+And thus, they found at the location of Euthville a lot of that raw metal, which quickly made the city one of the richest of all. And for a long time, it stayed so. The inhabitants of Euthville weren’t interested by war, work, or anything else too tiresome - they preferred to pay somebody else to do all of this. And with the advanced technical knowledge brought by the dwarves, working was less and less an issue for them.
+ENDMSG
+#
+#
+MSG G-022
+TITLE Euthville's destruction
+CHANCE 1
+TEXT
+Finally, the Commander decided that the city couldn’t stand this anymore, and ordered that the Demons had to be attracted faraway from the city. On this fateful day, a whole fanfare left the city, hoping that the demons would follow, attracted by the music.
+
+And so, they did. One after another, they climbed out of Earth itself, and walked in the direction of the music, obviously unaware of the hundreds of buildings they were crushing by their giant footsteps, and the thousands of inhabitants that they toasted with their dark fire. Seeing that, even the bravest ones went mad, and ran for their lives, leaving pipes, clavicelles and harpsichords fall on the ground.
+
+The rest of the story is easy to understand: Demons, free from the magical music that enslaved them, crushed what remained of the city, in a bloody fest that they will forever keep in their twisted memories.
+
+The Commander went mad, of course, and it is said that his madness was so strong that his mind was unable to understand that he was dead. If you search enough in the ruins of Euthville, you’ll probably encounter his ghost, as well as those of the many who perished for having believed that mortals could enslave the hell. Some demons stayed there, obviously enjoying the area and its newborn ashes that smelled fresh blood and carnage. Euthville is now, of course, a dangerous, deserted place, and the richesses that are still sleeping below the ruins of its former palaces are now guarded by powerful entities of the 9th Circle.
+ENDMSG
+#
+#
+MSG G-023
+TITLE The Enchanted Music
+CHANCE 1
+TEXT
+Many said that, if the Enchanted Music could be found, it would open the gates of many treasures, but because none of the former Euthvillians survived, and because nobody knows where the Boy went afterwards, those gates are still closed. I’ve heard that the School of Daemonology was precisely founded to rediscover that spell. But who am I to claim this to be true? I’m only a man of the past that tells stories before a fire, and the fire is dying, and so has my tale reached the end.
+ENDMSG
+#
+#
+MSG G-024
+TITLE Euthville's power hunger
+CHANCE 1
+TEXT
+Yet they were facing a problem. All their devices, all their machineries, all their tricks to cheat with nature required energy. Lots of energy. They relied first on the strength of horses and donkeys, but it wasn’t enough. Then, they tamed the dangerous Wyverns of Kal-Durandasi, so that the hot lizards would provide them with the full force of their steamy breath. But soon, it wasn’t enough. They also used the hidden power provided by the Faeries of the Tarniska river, building a dam, so that they could put the invisible horses of water that the sylphids are rumored to breed in use.
+
+But even so, their hunger for power wasn’t satisfied, and became an increasing nuisance for them. So, the Commander of Euthville (which was, more or less, the equivalent to our King at Scorn), finally decided to send messengers across the whole Continent, calling the world for a challenge. Whoever would be able to fulfill the needs of Euthvillians of energy would become the new Commander, thus the ruler of the richest city ever built since Khelens.
+ENDMSG
+#
+#
+MSG G-025
+TITLE Euthville's salvation
+CHANCE 1
+TEXT
+And then came a boy. He wasn’t a wizard, nor pretended to be one. He was young, but the story didn’t kept the record of his name, and some now think it is because he was damned. Who knows? The Boy sat in the middle of the city, playing with his flute, laughing whenever he saw one of the demonstrations of the powerful wizards and engineers, who were failing again and again.
+
+After several days, the Commander noticed the Boy, and said: “who are you to laugh, you, who has only a flute ?” “I have only a flute for sure - but there’s more in my simple pipe than in those legions of wizards.” “Really ?” said the Commander, half-laughing, half-curious, “so you think you can solve my challenge ?”
+
+The Boy smiled. “Not only I can, but I shall - and my price will be quite acceptable to give you the energy you need.” “And that would be...?” - “A new pipe.” came the reply “That one is becoming old.” “Agreed, you have your chance.”
+
+The Boy then started to play an amused melody. It sounded like an invitation to a great feast, the opening of a meeting where everybody was invited. And then came from earth itself sounds of steps, climbing from the depth. The fountain that stood in the middle of the place crumbled, leaving a great hole from which flames emerged. But the fire seemed to dance at the rythm of the music itself.
+
+The Boy then said to the Commander: “As long as you keep playing for the Demons there, at least 23 hours each day, you’ll get them to make whatever you need.” And he gave them the score, took a brand new silver flute, and left, and never was seen again at Euthville.
+ENDMSG
+#
+#
+MSG G-026
+TITLE Euthville's destruction
+CHANCE 1
+TEXT
+At first, things seemed fine, and the Commander couldn’t believe his luck, as a pipe was a feeble price to pay for such a powerful recipe of prosperity. Who wouldn’t want to tame the Demons themselves? Quickly, though, it appeared obvious that, for enough demons to be there, that music needed to be played rather loudly. And if, at first, it sounded entertaining, joyous, and funny, it quickly grew on the nerves of many. And especially because it was played 23 hours a day.
+
+Finally, the Commander decided that the city couldn’t stand this anymore, and ordered that the Demons had to be attracted faraway from the city. On this fateful day, a whole fanfare left the city, hoping that the demons would follow, attracted by the music.
+ENDMSG
+#
+#
+MSG G-027
+TITLE Temple of Justice
+QUEST darcap/TempleJustice 0>10
+CHANCE 1
+TEXT
+And so the Temple of Justice was founded, to show Valriel's Glory to the whole world!
+
+Oh, it was magnificient, located on the north side of the Continent, west of Darcap.
+
+And for years followers of Valriel came as pilgrims, to worship His Altar.
+
+But things started to fall over, and slowly the priests started to accumulate wealth instead of giving it back, and using it for their glory instead of Valriel's.
+
+So the Temple was slowly abandonned by pilgrims, who sought other Places Of Glory.
+
+It probably still exists, but who knows what secrets it bears.
+ENDMSG
+#
+#
+MSG G-028
+TITLE The Tower of Grukk
+QUEST navar/grukk 0>10
+CHANCE 1
+TEXT
+Grukk was a rich merchant from Navar, who accumulated wealth by being the right person at the right place.
+
+Alas, all his influcence couldn't prevent him from being ostracised when Navar decided to banish all undead creatures.
+
+For some time he still stayed in his house, but then decided he couldn't bear anymore this situation.
+
+So he had a tower built, somewhere on the east shore of the continent, south of Navar, and moved all belongings here.
+
+There are rumours he still deals in some goods through intermediaries, but no one has any proof.
+ENDMSG
+#
+#
+MSG G-029
+TITLE Glowing Crystals
+CHANCE 1
+TEXT
+Glowing Crystals are the dream of every magician.
+
+They enable to store mana energy up to a certain quantity, and recover it at will.
+
+Thus a magician cast more spells without needing to rest to recover his energy.
+
+Such Crystals are unfortunately pretty rare, so magicians have to figure by themselves how to find some.
+ENDMSG
+#
+#
+MSG G-030
+TITLE The Dark Forest
+CHANCE 1
+QUEST scorn/DarkForest 0>10
+TEXT
+And thus the Glowing Crystal was stolen from Scorn's City Hall.
+
+The thieves fled to the Dark Forest, which is said to be cursed.
+
+According to rumors the Crystal was put at the heart of the Dark Temple, to be used for some religious ceremony.
+
+No one has yet to claim it.
+
+The Forest is a well-known cursed place, located on the road from Scorn to Navar, approximately 50 chains west of Hermes's Inn and 10 chains north of the road.
+
+ENDMSG
+#
+#
+MSG G-031
+TITLE Narcopin
+CHANCE 1
+QUEST quests/Narcopin 0>10
+TEXT
+Once there stood upon the desert, west of Navar, a city called Narcopin, ruled by a dynasty of kings, wise and powerful.
+In time the monarchs grew less wise but more powerful.
+
+The last of their line was Aljwaf the terrible.  His reign was bloody and he made enemies of all
+the neighbouring lands.  His troops put women and children to the sword, he consorted with evil forces.
+It is said he cared for nothing save a single concubine.
+
+He fashioned a necklace for her made of one ruby, two emeralds and three sapphires.
+
+His reign ended when he was stricken with an unknown wasting disease and died horribly after a long illness.
+Some said the illness came from his evil dealings, they were quickly impaled for treason.
+
+Narcopin was razed to the ground by the surrounding kingdoms within six months of his death.
+
+Now only ruins remain, though some say spirits guard the tomb Aljwaf made for himself...
+ENDMSG
+#
+#
+MSG G-032
+TITLE The hunt for Nilplur
+CHANCE 1
+QUEST quests/Nilplur 0>10
+TEXT
+As per your instructions, I've hunted down Nilplur the dragon to its lair.
+
+It is located in a mountain range east of the lake between Scorn and Euthville, but seems heavily guarded.
+
+The cave is richely decorated, adding some weight to the rumours Nilplur accumulated much wealth -- including powerful spells.
+
+I will try to slay the beast, but in case I don't return I thus dispatch this message so others can take over my duty.
+
+Your humble servitor
+
+Kolgar
+
+ENDMSG
+#
+#
+MSG G-033
+TITLE History of Creation, by Khalis, Volume I
+CHANCE 15
+TEXT
+In the beginning the land was barren. No life yet moved upon the large continents and islands that lay empty between the seas. In the seas, nothing moved as well. The world itself held its breath while the Creator rested. 
+Then, a spirit from outside, serving the Most High, entered the
+world, and she saw a place yet empty of life. So she began to create grass to cover the face of the earth, and trees and other plants. Other spirits from outside watched, and agreed that Gaea had wrought wonders upon the devoid place.
+Since she was by far stronger than the others, those lesser
+spirits asked her for leave to join in her work. Gaea accepted their offer, and so the spirits of the Elements of Fire, Air, Water and Earth began their work as Gaea's servants. It can be assumed, that outside the world, the Creator watched and approved.
+
+In time, the elemental spirits came before Gaea, and beseeched her to help them create beings able to move of their own free will, living among the plant world. And Gaea saw that without animals, the green world would still miss a vital element, so she in turn went before the Creator. What happened between them noone knows, but soon afterwards living beings began to populate the land. Fish swam in the seas and rivers, birds flew their
+first flights through the air, and other species moved on the land. The cycle of Nature seemed complete, and Gaea was content.
+
+Already, however, other spirits had noticed what Gaea had done. Dark were they, and they treasured still the image of the empty world. To them, a place devoid of life seemed far better, far more perfect, and so they entered the world to return the world to its past. Sicknesses and poison began to spread among the animals, that threatened to extinguish entire species - yeah, indeed several of them might have died during that time, of which we have next to no information. Bones in the ground seem to indict that there were large animals which do not exist anymore, and sadly, we may not meet them evermore. In anger, Gaea named these dark spirits the Devourers, since they were those who devoured all life, and she and her Elemental allies fought them back, and tried to heal what they could.
+
+ENDMSG
+#
+#
+MSG G-034
+TITLE History of Creation, by Khalis, Volume II
+CHANCE 1
+TEXT
+In that time it also happened, that a great many of the creatures the Fire Elementals had helped to make were betoken of great madness, and started to rampage among the other beings. In time Gaea and her allies found out the truth, that one of the greatest Elementals of Fire, Ruggili, had turned against them, perhaps on order of the Devourers. Yet, Ruggili now served neither Devourers nor Gaea, instead he sought to increase his
+own power, and spread madness and chaos upon the world, and he became mightier than any other Elemental in existence.
+
+The other Elemental beings came to Gaea, and spoke, "With both renegade Ruggili and the Dark Ones to fight, we need others to assist us. Some of the beings we created are already strong enough to do their part, such as the unicorn or the sphinx. The strongest of them, however, the dragons, have switched their support to Ruggili. We need allies, or this world will become either a place of eternal fire or one of darkness." Gaea was clearly troubled by this, and again left the world to commune with the Creator. Shortly afterwards, new, more intelligent races emerged on the world, among them the dwarves, elves, trolls, goblins, humans, halflings, lizardman, any many others, and they joined the fight on the side of Gaea and the Elementals.
+
+During this time, which we now call the Second Age, cultures grew and were destroyed, races rose to prominence and disappeared again, mighty magics were found and forgotten. Ruggili#s followers were beaten back at great cost, and the forces of Gaea could again concentrate on the fight
+against the Devourers. The fight went on for a long time, but it seemed that the Nature Goddess was able to reform the world into a place of Life. The mortal races assisting her had become weary of the fight, however, and spoke to her thus: "The fight has clearly been won, the death spirits and the Fire God are in retreat. We wish to fight no more, but to settle down in peace. Though we still respect you and always will, we can give you our
+support no longer." Gaea accepted in silence, even though she knew that this meant that the war would not have a definite ending. Neither the Devourers nor Ruggili would be defeated be her alone.
+
+The Devourers and Ruggili watched the retreat of the mortals, the Devourers planning to attack and destroy them now that Gaea was not near, and then to use their own dead spirits against the Nature Goddess. Ruggili instead bided his time, sending down dragons to burn mortal cities and Devourer strongholds both. The Elementals serving Gaea assisted the mortals still, and gave some protection to them so that the Devourers would not destroy them. During this, Third, Age, the mortals segregated according to their nature. The dwarves moved into the mountains, and with
+the help of Earth Elementals began their first kingdoms underneath the face of the earth. The elves moved into large woods, the lizardmen into swamps. Wars broke out between some of the races, none however anywhere in that measure as the Great War of the Second Age.
+ENDMSG
+#
+#
+MSG G-035
+TITLE History of Creation, by Khalis, Volume III
+CHANCE 1
+TEXT
+In the Third Age it also happened, that spirits from the outside, who had been content to watch until that time, took pity on some of those races. The goblins, orcs, trolls and giants began to serve a being called Gnarg, who had promised to raise and protect them. He helped them build up protection against the many poisons which still plagued the lands, and in
+time they began to use poison as a weapon against their enemies. Their most hated enemies were the dwarves and the elves, who each had been stronger than them before the coming of Gnarg. Now, stronger than ever before, they attacked them and sought to utterly destroy them. First they moved against the elves. They burned down forests and elven cities, until the being Lythander came to guide the elves and to oppose Gnarg. He sent confusion to the goblin races, and cursed them to utter stupidity. this
+curse is still active even now, there are fewer orcs or goblins who possess high intuition, intellect or magical affinity then in any other of the mortal races. During the time the curse was first spoken it was much worse. The orcs fell down muttering insanely, the giants and trolls clubbed each other senseless, and the goblins jumped down high cliffs to escaped the voices in their head. The goblin attack faltered, and all the goblin races and giantkind returned - after a few accidents and wrong turns - to their homes. They also immediately stopped their plans to
+attack the dwarves. 
+
+The dwarves, however, had other problems. The dragons also claimed the mountains, and the followers of Ruggili sought out the dwarven cities and the treasures they offered. The pitiful cries of the dwarves, and the many deaths among dwarvenkind, roused the spirit being Mostrai, who entered the world and came to the dwarves. He showed them how to create magical weapons which might wound even the greatest of dragons, and he also helped them to withstand the dragons' fire. As was Gnarg to the orcs and goblins, and as was Lythander to the elves, Mostrai became god to the dwarves, protected them as they worshipped him for it.
+
+The most numerous of the mortal races had no god of their own, and they despaired, seeing that others had gods of great power to call upon for assistance. In their fear of being destroyed, in their anger for being left out, and their hatred for those who left them alone, they cried out for help. And in the darkness, someone heard them. Far away, in another dimension most probably, dwelt beings of great power. Endless torment was
+their desire, hatred, fear and anger the ways to their dark hearts, and fire their most potent weapon. When the humans had cried long enough, the doorway was opened, and the demon host went through. The demon lord Gorokh led those who entered the world, and he offered the humans many riches and great power in exchange for their worship and for sacrifice. many humans fell, and began to serve the powers of darkness. Others sought redemption, and a pure spirit called Valriel came to their aid. Others again returned to the worship of Gaea, hoping that the forces of Life would protect them, a few humans even went to the goblin, elven and dwarven gods for help.
+ENDMSG
+#
+#
+MSG G-036
+TITLE History of Creation, by Khalis, Volume IV
+CHANCE 1
+TEXT
+As the human worship began to spread out among all the gods and beings of power who had entered the world, a small group of them who wished not for the blessings of Nature but the power of the elements as weapons spake to one of the Elemental Lords following Gaea. And as Ruggili long ago, Sorig left Gaea's path and accepted the mortal's worship, teaching them the way of lightning and thunder in return. Other small sects began to emerge, and then the one things noone had foreseen happened. Some humans began to worship the powers of Death, who until then never had living followers. Those poor deranged people believed that in death they would be truly free, and the Devourers gladly accepted their help. When those humans died, the most mighty of the Undead were finally created - those who joined the Devourers of their own free will: the vampires, the spectres and the liche.
+
+And so the world lies before us today, turmoil and chaos has spread among the many gods who have entered the world. The fights are numerous, but at least we can be called lucky that no single faction has power as great as during the Second Age - for another Great War would probably destroy the world itself. In the First Age only the spirit being existed, in the Second Age we mortals served the forces of Life to survive, in the Third
+Age we left them and began to worship other Gods. This then is the Fourth Age, in which we hope the ceaseless fighting and wars will finally end, and we will be allowed to live in peace. But whose peace will it be, which gods, which peoples will lead and which will follow?
+
+Khalis,
+Grand Hierophant,
+Servant of Gaea
+ENDMSG
+#
+#
+MSG G-037
+TITLE History for the Impatient
+CHANCE 1
+TEXT
+Written by Maris the Scholar, a student of Khalis whom he opposed much later in his life.
+
+Gaea created the world. However, for things to thrive, rain is needed so Sorig came along, and provided the rain and lightning. The lightning created fire, and so Ruggili was born.
+
+Gaea is the source of all nature and life, without any great need for followers, as the natural world itself gives her power. She gave life to a number of sons, all gods of their own.
+
+Her son Mostrai saw a flat and uninteresting world and created massive mountains and deep dungeons.
+
+Her other son Lythander was bored and created some animals.
+
+Gnarg saw that and created the goblins on the world for some reason we no longer know.
+
+Lythander, disgusted what the goblins where doing to the beautiful forests, created the elves and halflings to help protect the forests from uncontrolled goblin destruction.
+
+Mostrai, seeing what was happening to the forests, decided to take pre-emptive measures and created the dwarves to live deep within the mountains he created.
+
+Then Gaea created the humans, to protect and provide balance in the plains and along the coasts.
+
+With the constant battles for balance, many of these new life forms died. The gods that created them did originally see the souls that these new life forms had, but the gods Gorokh and Valriel did. They took the worst(and best) of these departing souls in order to create creatures for their own desires.
+
+The souls that neither claimed became the domain of the devourers. What the god of devourers lacked in the strength of individual souls, he gained in the sheer number of souls he controlled, and with these he created wights and vampires to give him even more souls. Some of the powerful humanoids worshipped him in hopes of eternal life. For some of these,
+they gained this eternal life in the form and lichs and demilichs.
+
+The Red Dragons were created by Rugilli because he wanted some worshipper of his own. It is believed that the other dragons eventually resulted from those by the constant in-breeding experiments Ruggili made.
+
+Nobody knows where the nearly god-like titans came from. Some scholars claim they could be descendants of some of the forgotten gods so little is known about nowadays.
+ENDMSG
+#
+#
+MSG G-038
+TITLE The Sultanate of Darcap
+CHANCE 1
+TEXT
+Isolated from the rest of the region by an extensive mountain range to the south, and possessing a massive natural harbour, Darcap is a small, but easily defensible town, dominated by a pair of powerful guilds. The town is also noted for its circus, whose reputation draws visitors from all over the world.
+ENDMSG
+#
+#
+MSG G-039
+TITLE The Artificers' Wars
+CHANCE 1
+TEXT
+A series of wars conducted between 3084 and 3154 EK by a coalition led by Navari Princes against the Artificers, a group of mages that were masters in the now banned magical field of Technomancy. The Artificers were close to obtain a complete victory, but were finally destroyed by the raw power of their own biggest creation, The Thaumic Gear. The explosion of the Gear shattered the whole east of the world, and many territories forever sank into the ocean, including Kari Kori, the Technomages' city.
+ENDMSG
+#
+#
+MSG G-040
+TITLE Age of The Small World
+CHANCE 1
+TEXT
+So Gaea created a small world and populated it with limited creatures - animals and plants of all sorts. For a few million years she was happy to watch them. But her remaining faithful children were growing restless and wanted to make their own experimentations too. Finally SHE got bored again, as her creations weren't self-aware and therefore weren't much of a company. But SHE was also curious, because her creatures had
+developed many different styles of living, and SHE desired to compare them.
+
+And Gaea destroyed the original world, breaking it in four new ones.
+ENDMSG
+#
+#
+MSG G-041
+TITLE Age of The Four Worlds
+CHANCE 1
+TEXT
+The First world was dedicated to harmony. It was populated with creatures that preferred to coexist peacefully and contemplate. Two of Her children were particularly enamoured of this world and decided to live there.
+
+The Second world was dedicated to construction. It was populated with creatures that liked to change the environment around them, especially ants, bees and beavers, and filled with wood and metal and stone usable as raw material. Two of Her children found the idea fascinating and decided to live in this world.
+
+The Third world was dedicated to war and strife. While all the three other worlds had equal shares of light and darkness, the Third world had as much light as its inhabitants desired - and it was populated with creatures that loved and hated light, in equal parts. So these creatures quickly discoreved they could influence the ambient light by battling each other. Two of Her children decided to live in this world: one because he loved light, and another because he hated his brother and therefore wished for darkness to prevail.
+
+The Fourth world, finally, was dedicated to predation and to survival of the fittest. It was populated with fierce creatures and predators. Two of Her children believed this was the best way to live and decided to live in this world.
+
+After the worlds were created, only four children of Gaea still preferred to live in the Void: two because they weren't interested in any of those worlds, and two because they liked all of them and preferred to visit them whenever they wished.
+ENDMSG
+#
+#
+MSG G-042
+TITLE Age of Awakening
+CHANCE 1
+TEXT
+And for a few million years Gaea delighted in observing the differences between the worlds. But still the creatures were not self-aware, and still SHE was lonely. So when Her children came and said they were lonely and wanted to create more interesting creatures, SHE understood them and quickly allowed them and gave them the power to do it.
+
+So on the First world, one of the Gods who lived there created a race of beings that loved peace and wildlife, and called them Elves. The other God in that world didn't choose to create followers, but she teached language to the Elves of her brother, and when the Elves larned the art of naming, they named their creator Lythander, and in exchange for his name he gifted them with luck.
+
+On the Second world, one of the Gods created a race of builders and named them Dwarves. His children, in turn, named him Mostrai. His sister, in turn, decided not to create, but teach some of the dwarves (the ones willing to learn) about magic and the powers of the gods. The other dwarves, however, didn't accept their changed siblings, so they went off to live by themselves and became known as gnomes.
+
+On the Third world, of course, none of the resident Gods wanted to cooperate with the other. Both created their own races: the God who fought for darkness created many kinds of fierce, brutal monsters he named "Demons", while the God who fought for light created many kinds of skillful, swift warriors he named "Angels". Befittingly, these Gods were named by their enemies, and not their followers: the demons gave the light god the name of "Valriel", and the angels gave their enemy god the name "Gorokh".
+
+And on the Fourth world, the patron Gods kept true to their philosophy and created not one, but innumerable races, in the hope that one of these would prove the strongest and most worth. So they created goblins, trolls, ogres, and not least, dragons. The Gods became known as Gnarg, the Patron of Assassins, Ruggilli, the Consuming Worm, and Ixalovh.
+
+The races in the four worlds lived on for millenia, and developed, and grew, and all worlds flourished. The eight patron gods believed this was proof that they were right, and the way they lived was the best one, while the two traveling gods rather believed that the success of all the worlds was instead proof of the wisdom and power of their Mother.
+ENDMSG
+#
+#
+MSG G-043
+TITLE Age of Death Pt.1
+CHANCE 1
+TEXT
+But at some point things started to go wrong. Angels and demons would start to become priests or scholars or merchants and preach against the war. Dwarves and gnomes would start go grow sedentary and admire the crafts of the past instead of building new ones. Goblinoids would suddenly develop a taste for vegetables and become farmers, while dragons would decide that developing their magics was more important than finding food. But what was wrong was a mistery that would only begin to unfold
+when the High King of the elves, one day, was devoured by a dragon.
+
+It was then that the Gods discovered that the worlds were not anymore completely isolated from one another. Someone had, somehow, teached all kinds of creatures how to follow the paths left by the traveling gods - flying creatures would ride the cross-world whirlwinds of the thunder god,and others would learn to tread the strange winding paths of the walking god. And as creatures became aware of different ways, things started to go
+wrong.
+
+Promptly, the Gods tried to close all portals - but it was too late. The art of magic was already known in the four worlds, and strong enough to travel between them. And the one peaceful elves were ignited, and declared war on the dragons, goblins and trolls.
+
+While a mighty army of elven warriors crossed over to the Fourth world, dwarves and gnomes found the First world almost deserted and full of wood and metal for the dwarves, and holy, peaceful places for the gnomes.
+
+The part of the small peoples who remained on the Second world was faced with new problems when the demons decided they were ripe for tempting (if they could get dwarven builders and gnome sorcerers on their side, the tide of the war would turn). The angels, of course, took upon themselves to protect these strange people from their eternal enemies. So as their attention slowly shifted from the Third world to the Second, soon only the weakest of their kind were in their original world, where they began to fall prey to hungry refugees from the Fourth world, who discovered how tasty angel/demon flesh can be.
+
+And while the Gods were busy trying to even understand this chaos, the dead began to come back.
+ENDMSG
+#
+#
+MSG G-044
+TITLE The Big World
+CHANCE 1
+TEXT
+So Gaea, in Her wisdom, gave the only possible solution to the
+problem. SHE took the four worlds in Her hand, and crushed them
+together. Then SHE looked at the single world she created, and at the creatures of Her children, and decided to again, after millions of years, create Her own followers. Thus SHE created the humans, a young race eager to explore and chart this young world.
+
+It took generations for the inhabitants of the resulting world to figure out its geography and for families to reunite; when this finally happened, the stories about four different worlds becoming one were already legends not everybody believed. But still, for some reason, everyone agrees to call this world - the only one they know - Bigworld.
+ENDMSG
+#
+#
+MSG G-045
+TITLE The Legend of the Builders
+CHANCE 1
+TEXT
+People of the Old Empire believed that the whole universe was made by powerful beings called Builders. Builders were not part of the world like gods were - they lived Outside. Little is known about the Builders themselves. The priests of the Empire weren't quite sure themselves about their names.
+The Builders understood very well how difficult it would be for them to manage themselves every prayer made - making the Universe work was already a time-consuming task. So they created gods to help them in their task.
+
+Most of the gods we know today were already popular in the times of the Old Empire, like Mostrai or Lythander. Others changed names as time passed. Gods provided their powers to the Faithful Ones, and helped them by providing blessings and powerful weapons. The priests of the Old Empire never believed gods made the world, as they were themselves part of it; world-building was the Builders task.
+ENDMSG
+#
+#
+MSG G-046
+TITLE The Coming of Color
+CHANCE 1
+TEXT
+It is said that centuries before the foundation of the Old Empire, the world was colorless and sad. Aware of that problem, the Builders decided to bring color in the life of the Deliantra people. They called the massive powers of Xepemes, The Source Of All Colors, on the universe. The magical burst slowly covered the world with colors, but some elements resisted for a long time. Prophets of the Old Empire announced that, although victorious, the force of Xepemes wouldn't stay forever: one
+day, it would eventually fade away against a more powerful magical force, the mysterious Pegemes (or Peengees?). This happened - but much after the fall of the Empire.
+ENDMSG
+#
+#
+MSG G-047
+TITLE The Big World
+CHANCE 1
+TEXT
+The old world was small and it consisted of many pieces. Scorn, Navar, Brittany and Santo Dominion were in one large piece. Darcap and the Hill Village were in another smaller one. Lake Country was in yet another. Pupland was still another. The world was not whole, and the builders saw that this was wrong. They began the quest to unite the world and established the Big World. As the builders united the world they saw that it was much too small and began to make it larger. They raised up the
+Great Mountains around Brest and they caused the Great Forest to grow.
+
+As the time passed, Navar grew to become a great Kingdom and the builders decided that it was a good city for players to call home and they gave the Heroes a choice to serve Scorn or Navar. Nevertheless, Pupland was still not part of this new world.
+
+This was the state for a long time, until the builders decided that the Big World was not good, and set out to change it again. Everything changed. So much changed that, in fact, the world was completely unrecognisable to its denizens after the change.
+
+Except the area around Brest, at least according to the people living there. Or maybe they were just too busy fighting monsters to notice it.
+
+This time Pupland became part of the new Big World, and can be found in the very north, past Santo Dominion.
+ENDMSG
+#
+#
+MSG G-048
+TITLE Skud the Great
+CHANCE 1
+TEXT
+One of the first Builders. Skud created many famous places, like the Scorn's First Inn or the Newbie Tower.
+
+The reasons of the disappearance of Skud are mostly unknown. The Codex Skudensis mentions that it could have been because of the negative influence of the Arch-Demon Neth Aq. It is thought that The Tower of Skud, although left unfinished by its creator, may contain informations about the fate of one of the most famous Builder.
+ENDMSG
+#
+#
+MSG G-049
+TITLE The Prison of Madness
+CHANCE 1
+TEXT
+It is said that deep in the underworld there is a vast maze that will make everybody who dares to enter die of madness.
+
+It starts in a room, with a row of mirrors to the south. pass through those, and carry on slightly further, and you are in the maze proper.
+
+Little is known about the maze, but Worus the Wanderer claimed to have been in it, seen many of its wonders and returned.
+
+He also wrote a book that details all the ways and passages, alas, nobody could decipher it yet:
+
+   gb2trg2gb2gur2rkvg:
+   2jnaqre2nebhaq2hagvy2lbh2ybpngr2n2znc2aN,
+   2vg2vf2ba2gur2obggbz2ragenapr2bs2n2znc.
+   2bapr2gung2vf2ybpngrq2tb2evtug,
+   2hc,
+   2evtug,
+   2evtug,
+   2evtug,
+   2evtug,
+   2evtug,
+   2lbh2jvyy2or2ng2gur2rkvg.
+   2gb2trg2gb2gur2inhyg:
+   2jnaqre2ebhaq2hagvy2lbh2trg2gb2znc2aN1,
+   vg2vf2gb2gur2evtug2bs2n2abezny2znc.
+   2tb2hc,
+   2yrsg,
+   2hc,
+   2yrsg,
+   2qbja,
+   2qbja,
+   2evtug,
+   2qbja,
+   2qbja,
+   2qbja.2Lbh2jvyy2or2va2gur2unyy,
+   2tb2guebhtu2naq2gb2gur2yrsg2gb2ernpu2gur2inhyg.
+ENDMSG
+#
+#
+MSG G-050
+TITLE Heaven and Hell
+CHANCE 1
+TEXT
+It is said that the church of Valriel in Scorn has direct access to Heaven. The priests of Valriel claim that you can enter Heaven freely, and even come back to the world of mortals. The priests of Gorokh claim that their church has a connection to Hell. The Valriel priests claim they were first, and, in their usual attitude, the Gorokh priests claim the priests of Valriel are useless maggots that lie to their followers.
+
+Although a number of people have travelled to both Heaven and Hell, their reports are inconclusive as to wether it was real "Hell" (or Heaven) they visited.
+
+Some people claim this Heaven and Hell business is just some magic illusion forged by some magicians of those churches, mostly because you can still die in Heaven, Hell doesn't look all that impressive (and it is so easy to come back), and why would only the churches in Scorn have access to those in the first place?
+ENDMSG

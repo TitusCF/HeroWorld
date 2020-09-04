@@ -1,17 +1,18 @@
 arch map
 name Generalshop
 region Forgotten Town
-msg
-Creator: Knut Ahlers
-Date:    7/21/2005
-endmsg
+shopitems light source:50;inorganic:20;*:0
+shopmin 500
+shopmax 60000
 width 15
 height 15
 enter_x 13
 enter_y 13
-shopitems light source:50;inorganic:20;*:0
-shopmin 500
-shopmax 60000
+msg
+Creator: Knut Ahlers
+Date:    7/21/2005
+Modified: 2020-09-04 Fauzin
+endmsg
 end
 arch stonefloor2
 end
@@ -850,24 +851,24 @@ arch wwall_2_1_2
 x 12
 end
 arch stonefloor2
-no_magic 1
-damned 1
 x 12
 y 1
+no_magic 1
+damned 1
 end
 arch merchant
 name angry merchant
-friendly 1
-stand_still 1
-sleep 1
 x 12
 y 1
+friendly 1
+sleep 1
+stand_still 1
 end
 arch stonefloor2
-no_magic 1
-damned 1
 x 12
 y 2
+no_magic 1
+damned 1
 end
 arch shop_floor
 x 12
@@ -947,21 +948,23 @@ x 13
 y 1
 end
 arch stonefloor2
-no_magic 1
-damned 1
 x 13
 y 1
+no_magic 1
+damned 1
 end
 arch stair_down_4
 slaying general2
+hp 13
+sp 1
 x 13
 y 1
 end
 arch stonefloor2
-no_magic 1
-damned 1
 x 13
 y 2
+no_magic 1
+damned 1
 end
 arch shop_empty
 x 13

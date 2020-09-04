@@ -6,7 +6,7 @@ width 20
 height 16
 msg
 Created:  1999-03-10 Cater & Wade (john_cater@yahoo.com)
-Modified: 2020-08-23 Acer
+Modified: 2020-09-04 Fauzin
 endmsg
 end
 arch pstone_1
@@ -294,7 +294,7 @@ arch pstone_1
 x 4
 y 4
 end
-arch exit
+arch invis_exit
 slaying /world/world_116_102
 hp 42
 sp 16
@@ -309,7 +309,7 @@ arch pstone_1
 x 4
 y 5
 end
-arch exit
+arch invis_exit
 slaying /world/world_116_102
 hp 42
 sp 16
@@ -629,7 +629,8 @@ y 3
 end
 arch goldfloor
 name drop 20 gold coins
-food 20
+slaying money
+food 200
 x 6
 y 3
 connected 1
@@ -644,7 +645,8 @@ y 4
 end
 arch goldfloor
 name drop 20 gold coins
-food 20
+slaying money
+food 200
 x 6
 y 4
 connected 1
@@ -659,7 +661,8 @@ y 5
 end
 arch goldfloor
 name drop 20 gold coins
-food 20
+slaying money
+food 200
 x 6
 y 5
 connected 1
@@ -674,7 +677,8 @@ y 6
 end
 arch goldfloor
 name drop 20 gold coins
-food 20
+slaying money
+food 200
 x 6
 y 6
 connected 1

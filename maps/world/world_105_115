@@ -11,7 +11,7 @@ msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Dec 16 20:53:13 2001
-Modified: 2020-08-29 Acer
+Modified: 2020-09-04 Acer
 endmsg
 outdoor 1
 tile_path_1 world_105_114
@@ -1934,21 +1934,19 @@ arch grass
 x 4
 y 34
 end
-arch rl_house_west
-name Scorn Personal Apartment
-slaying /scorn/apartment/apartments
-hp 1
-sp 1
+arch swall_2_2_2
 x 4
 y 34
-blocksview 1
-unique 1
 end
 arch dungeon_magic
 x 4
 y 35
 end
 arch grass
+x 4
+y 35
+end
+arch swall_1_2
 x 4
 y 35
 end
@@ -2358,6 +2356,10 @@ arch grass
 x 5
 y 34
 end
+arch swall_2_1_2
+x 5
+y 34
+end
 arch dungeon_magic
 x 5
 y 35
@@ -2365,6 +2367,24 @@ end
 arch grass
 x 5
 y 35
+end
+arch house_1_green
+name Scorn Personal Apartment
+slaying /scorn/apartment/apartments
+hp 1
+sp 1
+x 5
+y 35
+unique 1
+end
+arch check_inv
+slaying scorn_apartment_key
+msg
+Scorn Apartment Key Required!
+endmsg
+x 5
+y 35
+move_block all
 end
 arch dungeon_magic
 x 5
@@ -2785,7 +2805,7 @@ arch grass
 x 6
 y 34
 end
-arch lamppost
+arch swall_2_2_3
 x 6
 y 34
 end
@@ -2794,6 +2814,10 @@ x 6
 y 35
 end
 arch grass
+x 6
+y 35
+end
+arch swall_1_2
 x 6
 y 35
 end

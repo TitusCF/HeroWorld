@@ -203,14 +203,17 @@ end
 arch darcap_apart_plot
 x 1
 y 4
-arch goldfloor2
+arch food_table
 name pay 7000 diamonds
-slaying diamond
-msg
-Knock down the walls!
-endmsg
-food 7000
-connected 2
+slaying diamonds
+other_arch none
+face goldfloor2.111
+food 700
+arch red_key
+name Apartment Extender
+slaying cat_appartment_ext
+face axe_4.111
+end
 end
 end
 arch darcap_apart_plot
@@ -299,15 +302,6 @@ end
 arch darcap_apart_plot
 x 2
 y 5
-arch creator
-connected 2
-activate_on_release 0
-arch key2
-name Apartment Extender
-slaying cat_appartment_ext
-face axe_4.111
-end
-end
 end
 arch darcap_apart_plot
 x 2

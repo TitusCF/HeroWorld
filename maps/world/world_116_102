@@ -5,7 +5,7 @@ region darcap
 width 50
 height 50
 msg
-Modified: 2020-09-04 Fauzin
+Modified: 2020-09-05 Acer
 endmsg
 outdoor 1
 tile_path_1 world_116_101
@@ -5180,7 +5180,7 @@ name Spike's Weapons
 name_pl Spike's Weapons
 slaying /darcap/darcap/shop_w
 hp 10
-sp 16
+sp 17
 x 19
 y 37
 end
@@ -5225,7 +5225,7 @@ name Mirkland's Magic
 name_pl Mirkland's Magic
 slaying /darcap/darcap/shop_m
 hp 10
-sp 26
+sp 27
 x 19
 y 43
 end
@@ -6261,8 +6261,8 @@ end
 arch t_house1
 name General Shop
 slaying /darcap/darcap/gshop
-hp 18
-sp 17
+hp 15
+sp 6
 x 23
 y 25
 end
@@ -6348,6 +6348,22 @@ x 23
 y 37
 end
 arch grass
+x 23
+y 38
+end
+arch bungalow
+name Personal Apartment
+slaying /darcap/darcap/apartment
+hp 6
+sp 11
+x 23
+y 38
+end
+arch check_inv
+slaying darcap_apartment_key
+msg
+You need an Apartment Key! (Available at the General Shop)
+endmsg
 x 23
 y 38
 end
@@ -6879,8 +6895,8 @@ arch store_armour
 name Smith's Armors
 name_pl Smith's Armors
 slaying /darcap/darcap/shop_a
-hp 4
-sp 16
+hp 1
+sp 14
 x 25
 y 37
 end
@@ -7179,9 +7195,9 @@ end
 arch house_2
 name Fire House
 name_pl Fire House
-slaying /darcap/darcap/firehouse
-hp 7
-sp 7
+slaying /darcap/darcap/houses
+hp 8
+sp 1
 x 26
 y 33
 end
@@ -7226,7 +7242,7 @@ name Gaea's Garden
 name_pl Gaea's Garden
 slaying /darcap/darcap/temple
 hp 12
-sp 22
+sp 23
 x 26
 y 41
 end
@@ -7494,9 +7510,9 @@ end
 arch house_2
 name Water House
 name_pl Water House
-slaying /darcap/darcap/waterhouse
-hp 3
-sp 7
+slaying /darcap/darcap/houses
+hp 24
+sp 1
 x 27
 y 33
 end
@@ -7742,8 +7758,8 @@ y 25
 end
 arch store_alchemy
 slaying /darcap/darcap/potionshop
-hp 4
-sp 18
+hp 14
+sp 14
 x 28
 y 25
 end
@@ -7791,9 +7807,9 @@ end
 arch house_2
 name Air House
 name_pl Air House
-slaying /darcap/darcap/airhouse
-hp 6
-sp 7
+slaying /darcap/darcap/houses
+hp 8
+sp 31
 x 28
 y 33
 end
@@ -8089,9 +8105,9 @@ end
 arch house_2
 name Earth House
 name_pl Earth House
-slaying /darcap/darcap/earthhouse
-hp 2
-sp 7
+slaying /darcap/darcap/houses
+hp 24
+sp 31
 x 29
 y 33
 end
@@ -10572,7 +10588,7 @@ arch hut
 name Throwing Gallery
 slaying /darcap/darcap/circus/wurfbude
 hp 8
-sp 24
+sp 25
 x 38
 y 12
 end

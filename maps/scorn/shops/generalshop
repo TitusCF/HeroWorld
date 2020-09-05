@@ -12,7 +12,7 @@ msg
 Creator:
 Email:
 Date: Sat Oct 16 19:42:32 1993
-Modified: 2020-09-04 Acer
+Modified: 2020-09-05 Acer
 endmsg
 end
 arch shop_empty
@@ -379,14 +379,19 @@ arch shop_empty
 x 4
 y 2
 end
+arch chest_yellow
+name Scorn Apartment Key (inactive)
+face key_red.111
+x 4
+y 2
+randomitems none
+unpaid 1
 arch magenta_key
 name Scorn Apartment Key
 slaying scorn_apartment_key
-x 4
-y 2
 value 10000
-unpaid 1
 identified 1
+end
 end
 arch shop_empty
 x 4
@@ -396,14 +401,20 @@ arch shop_empty
 x 4
 y 4
 end
+arch chest_yellow
+name Scorn Apartment Builder (inactive)
+face key_red.111
+x 4
+y 4
+randomitems none
+unpaid 1
 arch red_key
 name Scorn Apartment Builder
 slaying scorn_apart_builder
-x 4
-y 4
+face key_magenta.111
 value 30000
-unpaid 1
 identified 1
+end
 end
 arch shop_empty
 x 4

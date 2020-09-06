@@ -23300,6 +23300,7 @@ y 8
 end
 arch sailing_galleon
 name DM's Mount
+name_pl DM's Mounts
 face whim.111
 animation whim
 x 39
@@ -23311,6 +23312,8 @@ move_type fly_high
 move_block none
 no_pick 0
 is_animated 1
+anim_full whim
+face_full wingedhalo.111
 passenger_limit 1
 arch magic_portal
 arch event_apply
@@ -23325,8 +23328,9 @@ end
 arch check_inv
 slaying dm_key
 msg
-This is Titus-DM's personal mount, HANDS OFF!
+This is Titus-DM's personal mount, hand's off!
 endmsg
+move_block all
 end
 end
 arch tile_shop

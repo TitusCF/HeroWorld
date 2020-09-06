@@ -11,7 +11,7 @@ msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Jun  2 20:54:49 2002
-Modified: 2019-12-26 Acer
+Modified: 2020-09-06 Acer
 endmsg
 outdoor 1
 tile_path_1 world_126_115
@@ -1967,6 +1967,14 @@ arch cobblestones2
 x 5
 y 37
 end
+arch altar_trigger
+name Sleeping Mage Dock Pass Required
+slaying Dock Pass (Sleeping Mage)
+food 1
+x 5
+y 37
+connected 29827363
+end
 arch grass
 x 5
 y 38
@@ -1976,7 +1984,7 @@ arch cobblestones2
 x 5
 y 38
 end
-arch westcwall_1_3
+arch westcwall_2_1_2
 x 5
 y 38
 end
@@ -2273,24 +2281,55 @@ x 6
 y 35
 elevation -120
 end
+arch westcwall_1_4
+x 6
+y 35
+end
 arch sea
 x 6
 y 36
 elevation -134
+end
+arch s_ship_black
+name Flagship of the Sleeping Mage
+x 6
+y 36
+speed 0.5
+type 2
+container 10000000
+move_type boat
+unique 1
+passenger_limit 2
+arch door_2
+name cabin door
+face oakdoor_2.111
+type 0
+client_type 25012
+unique 1
+arch event_apply
+name event_apply
+title Python
+slaying /python/misc/flagship_sleepingmage.py
+end
+end
+arch event_apply
+title Python
+slaying /python/misc/flagship_sleepingmage.py
+end
 end
 arch sea
 x 6
 y 37
 elevation -206
 end
-arch pier_2_1_2
-x 6
-y 37
-end
 arch sea
 x 6
 y 38
 elevation -103
+end
+arch westcwall_2_1_2
+x 6
+y 38
 end
 arch sea
 x 6
@@ -2595,6 +2634,10 @@ x 7
 y 35
 elevation -120
 end
+arch westcwall_2_1_2
+x 7
+y 35
+end
 arch sea
 x 7
 y 36
@@ -2605,14 +2648,14 @@ x 7
 y 37
 elevation -206
 end
-arch pier_1_3
-x 7
-y 37
-end
 arch sea
 x 7
 y 38
 elevation -283
+end
+arch westcwall_2_1_2
+x 7
+y 38
 end
 arch sea
 x 7
@@ -2919,20 +2962,40 @@ x 8
 y 35
 elevation -132
 end
+arch westcwall_1_3
+x 8
+y 35
+end
 arch sea
 x 8
 y 36
 elevation -250
+end
+arch grate_closed_1
+x 8
+y 36
+connected 29827363
+activate_on_release 0
 end
 arch sea
 x 8
 y 37
 elevation -359
 end
+arch grate_closed_1
+x 8
+y 37
+connected 29827363
+activate_on_release 0
+end
 arch sea
 x 8
 y 38
 elevation -462
+end
+arch westcwall_1_3
+x 8
+y 38
 end
 arch sea
 x 8

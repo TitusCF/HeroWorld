@@ -5,7 +5,7 @@ region wolfsburg
 width 50
 height 50
 msg
-Modified: 2020-08-23 Acer
+Modified: 2020-09-06 Acer
 endmsg
 outdoor 1
 tile_path_1 world_128_108
@@ -5571,10 +5571,6 @@ arch sea1
 x 22
 y 20
 end
-arch pier_1_4
-x 22
-y 20
-end
 arch sea1
 x 22
 y 21
@@ -5600,6 +5596,7 @@ x 22
 y 25
 end
 arch longship
+name Wolfsburg Longship
 x 22
 y 25
 speed 0.5
@@ -5821,10 +5818,6 @@ x 23
 y 19
 end
 arch sea1
-x 23
-y 20
-end
-arch pier_2_1_2
 x 23
 y 20
 end
@@ -6067,7 +6060,7 @@ arch sea1
 x 24
 y 20
 end
-arch pier_4
+arch pier_2_1_1
 x 24
 y 20
 end
@@ -6327,10 +6320,6 @@ arch sea1
 x 25
 y 20
 end
-arch pier_2_1_2
-x 25
-y 20
-end
 arch sea
 x 25
 y 21
@@ -6352,6 +6341,7 @@ x 25
 y 24
 end
 arch longship
+name Wolfsburg Longship
 x 25
 y 24
 speed 0.5
@@ -6577,10 +6567,6 @@ x 26
 y 19
 end
 arch sea1
-x 26
-y 20
-end
-arch pier_1_3
 x 26
 y 20
 end
@@ -6812,7 +6798,15 @@ arch pstone_1
 x 27
 y 17
 end
+arch cwall_1_1
+x 27
+y 17
+end
 arch beach
+x 27
+y 18
+end
+arch cwall_2_1_1
 x 27
 y 18
 end
@@ -6820,11 +6814,23 @@ arch shallow_sea
 x 27
 y 19
 end
+arch cwall_2_1_1
+x 27
+y 19
+end
 arch sea
 x 27
 y 20
 end
+arch cwall_2_1_1
+x 27
+y 20
+end
 arch sea
+x 27
+y 21
+end
+arch cwall_1_2
 x 27
 y 21
 end
@@ -7026,21 +7032,48 @@ arch dungeon_floor
 x 28
 y 15
 end
-arch pstone_1
+arch dungeon_floor
 x 28
 y 16
 end
-arch pstone_1
+arch dungeon_floor
 x 28
 y 17
 end
-arch pstone_1
+arch dungeon_floor
 x 28
 y 18
 end
 arch shallow_sea
 x 28
 y 19
+end
+arch s_ship_black
+name Flagship of the Mailed Fist
+x 28
+y 19
+speed 0.5
+type 2
+container 10000000
+move_type boat
+unique 1
+passenger_limit 2
+arch door_2
+name cabin door
+face oakdoor_2.111
+type 0
+client_type 25012
+unique 1
+arch event_apply
+name event_apply
+title Python
+slaying /python/misc/flagship_damnedheretics.py
+end
+end
+arch event_apply
+title Python
+slaying /python/misc/flagship_damnedheretics.py
+end
 end
 arch sea
 x 28
@@ -7049,6 +7082,12 @@ end
 arch sea
 x 28
 y 21
+end
+arch grate_closed_1
+x 28
+y 21
+connected 29827363
+activate_on_release 0
 end
 arch sea
 x 28
@@ -7257,19 +7296,27 @@ arch dungeon_floor
 x 29
 y 14
 end
-arch pstone_1
+arch dungeon_floor
 x 29
 y 15
 end
-arch pstone_1
+arch dungeon_floor
 x 29
 y 16
 end
-arch beach
+arch dungeon_floor
 x 29
 y 17
 end
-arch beach
+arch altar_trigger
+name Damned Heretics Dock Pass Required
+slaying Dock Pass (Damned Heretics)
+food 1
+x 29
+y 17
+connected 29827363
+end
+arch dungeon_floor
 x 29
 y 18
 end
@@ -7284,6 +7331,12 @@ end
 arch sea
 x 29
 y 21
+end
+arch grate_closed_1
+x 29
+y 21
+connected 29827363
+activate_on_release 0
 end
 arch sea
 x 29
@@ -7492,7 +7545,15 @@ arch beach
 x 30
 y 17
 end
+arch cwall_1_1
+x 30
+y 17
+end
 arch shallow_sea
+x 30
+y 18
+end
+arch cwall_2_1_1
 x 30
 y 18
 end
@@ -7500,11 +7561,23 @@ arch sea
 x 30
 y 19
 end
+arch cwall_2_1_1
+x 30
+y 19
+end
 arch sea
 x 30
 y 20
 end
+arch cwall_2_1_1
+x 30
+y 20
+end
 arch sea
+x 30
+y 21
+end
+arch cwall_1_2
 x 30
 y 21
 end
@@ -9039,15 +9112,6 @@ end
 arch sea1
 x 36
 y 20
-end
-arch big_galleon
-x 36
-y 20
-speed 0.5
-type 2
-container 10000000
-move_type boat
-passenger_limit 2
 end
 arch sea1
 x 36

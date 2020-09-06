@@ -5046,7 +5046,7 @@ x 14
 y 5
 elevation 102
 end
-arch westcwall_2_2_1
+arch westcwall_2_1_1
 x 14
 y 5
 end
@@ -5063,6 +5063,10 @@ arch pier_2_2_2
 x 14
 y 6
 end
+arch westcwall_2_1_1
+x 14
+y 6
+end
 arch brush
 x 14
 y 7
@@ -5073,6 +5077,10 @@ x 14
 y 7
 end
 arch pier_3_2
+x 14
+y 7
+end
+arch westcwall_2_2_1
 x 14
 y 7
 end
@@ -5371,10 +5379,6 @@ x 15
 y 5
 elevation 39
 end
-arch westcwall_1_3
-x 15
-y 5
-end
 arch sea
 x 15
 y 6
@@ -5393,6 +5397,10 @@ arch pier_3_4
 x 15
 y 7
 end
+arch westcwall_2_1_2
+x 15
+y 7
+end
 arch sea
 x 15
 y 8
@@ -5401,6 +5409,14 @@ end
 arch pier_3_4
 x 15
 y 8
+end
+arch altar_trigger
+name Dragon's Lost Dock Pass Required
+slaying Dock Pass (Dragon's Lost)
+food 1
+x 15
+y 8
+connected 29827363
 end
 arch sea
 x 15
@@ -5416,7 +5432,7 @@ x 15
 y 10
 elevation 36
 end
-arch westcwall_1_3
+arch westcwall_2_1_2
 x 15
 y 10
 end
@@ -5686,10 +5702,41 @@ x 16
 y 7
 elevation -174
 end
+arch westcwall_2_1_2
+x 16
+y 7
+end
 arch sea
 x 16
 y 8
 elevation -168
+end
+arch s_ship_black
+name Flagship of the Dragon's Lost
+x 16
+y 8
+speed 0.5
+type 2
+container 10000000
+move_type boat
+unique 1
+passenger_limit 2
+arch door_2
+name cabin door
+face oakdoor_2.111
+type 0
+client_type 25012
+unique 1
+arch event_apply
+name event_apply
+title Python
+slaying /python/misc/flagship_dragonslost.py
+end
+end
+arch event_apply
+title Python
+slaying /python/misc/flagship_dragonslost.py
+end
 end
 arch sea
 x 16
@@ -5700,6 +5747,10 @@ arch shallow_sea
 x 16
 y 10
 elevation -15
+end
+arch westcwall_2_1_2
+x 16
+y 10
 end
 arch shallow_sea
 x 16
@@ -5950,6 +6001,10 @@ x 17
 y 7
 elevation -219
 end
+arch westcwall_2_1_2
+x 17
+y 7
+end
 arch sea
 x 17
 y 8
@@ -5964,6 +6019,10 @@ arch shallow_sea
 x 17
 y 10
 elevation -59
+end
+arch westcwall_2_1_2
+x 17
+y 10
 end
 arch shallow_sea
 x 17
@@ -6215,20 +6274,40 @@ x 18
 y 7
 elevation -123
 end
+arch westcwall_1_3
+x 18
+y 7
+end
 arch sea
 x 18
 y 8
 elevation -125
+end
+arch grate_closed_1
+x 18
+y 8
+connected 29827363
+activate_on_release 0
 end
 arch sea
 x 18
 y 9
 elevation -113
 end
+arch grate_closed_1
+x 18
+y 9
+connected 29827363
+activate_on_release 0
+end
 arch shallow_sea
 x 18
 y 10
 elevation -96
+end
+arch westcwall_1_3
+x 18
+y 10
 end
 arch shallow_sea
 x 18

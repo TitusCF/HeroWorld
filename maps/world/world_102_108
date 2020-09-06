@@ -11,7 +11,7 @@ msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun May 19 17:43:59 2002
-Modified: 2020-08-21 Acer
+Modified: 2020-09-06 Acer
 endmsg
 outdoor 1
 tile_path_1 world_102_107
@@ -2374,9 +2374,42 @@ arch sea
 x 11
 y 12
 end
+arch grate_closed_1
+x 11
+y 12
+connected 29827363
+activate_on_release 0
+end
 arch sea
 x 11
 y 13
+end
+arch s_ship_black
+name Flagship of the Drunken Barbarian
+x 11
+y 13
+speed 0.5
+type 2
+container 10000000
+move_type boat
+unique 1
+passenger_limit 2
+arch door_2
+name cabin door
+face oakdoor_2.111
+type 0
+client_type 25012
+unique 1
+arch event_apply
+name event_apply
+title Python
+slaying /python/misc/flagship_drunkenbarbarian.py
+end
+end
+arch event_apply
+title Python
+slaying /python/misc/flagship_drunkenbarbarian.py
+end
 end
 arch sea
 x 11
@@ -2622,6 +2655,12 @@ arch sea
 x 12
 y 12
 end
+arch grate_closed_1
+x 12
+y 12
+connected 29827363
+activate_on_release 0
+end
 arch sea
 x 12
 y 13
@@ -2841,6 +2880,10 @@ arch sea
 x 13
 y 12
 end
+arch westcwall_0
+x 13
+y 12
+end
 arch woodfloor
 x 13
 y 13
@@ -2848,6 +2891,14 @@ end
 arch pier_2_2_2
 x 13
 y 13
+end
+arch altar_trigger
+name Drunken Barbarian Dock Pass Required
+slaying Dock Pass (Drunken Barbarian)
+food 1
+x 13
+y 13
+connected 29827363
 end
 arch woodfloor
 x 13

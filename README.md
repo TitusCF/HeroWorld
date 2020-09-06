@@ -18,7 +18,7 @@ Mining </br>
 Digging </br>
 Wood Chopping </br>
 More spell/ability to world interactivity </br>
-Scorn and Navar Guild Flag Ships </br>
+Guild Flag Ships </br>
 Artifact Rings moved out of shops and into quest rewards </br>
 Water drying system is finally functional </br>
 Ship with accessible cabins </br>

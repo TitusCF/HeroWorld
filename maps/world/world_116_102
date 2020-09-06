@@ -5,7 +5,7 @@ region darcap
 width 50
 height 50
 msg
-Modified: 2020-09-05 Acer
+Modified: 2020-09-06 Acer
 endmsg
 outdoor 1
 tile_path_1 world_116_101
@@ -8400,23 +8400,19 @@ arch cobblestones2
 x 30
 y 34
 end
-arch sea1
+arch cobblestones2
 x 30
 y 35
+end
+arch cobblestones2
+x 30
+y 36
 end
 arch pier_1_1
 x 30
-y 35
-end
-arch sea1
-x 30
 y 36
 end
-arch pier_2_1_1
-x 30
-y 36
-end
-arch sea1
+arch cobblestones2
 x 30
 y 37
 end
@@ -8424,7 +8420,7 @@ arch pier_2_1_1
 x 30
 y 37
 end
-arch sea1
+arch cobblestones2
 x 30
 y 38
 end
@@ -8432,7 +8428,7 @@ arch pier_3_2
 x 30
 y 38
 end
-arch sea1
+arch cobblestones2
 x 30
 y 39
 end
@@ -8440,7 +8436,7 @@ arch pier_2_1_1
 x 30
 y 39
 end
-arch sea1
+arch cobblestones2
 x 30
 y 40
 end
@@ -8448,7 +8444,7 @@ arch pier_2_1_1
 x 30
 y 40
 end
-arch sea1
+arch cobblestones2
 x 30
 y 41
 end
@@ -8456,7 +8452,7 @@ arch pier_2_1_1
 x 30
 y 41
 end
-arch sea1
+arch cobblestones2
 x 30
 y 42
 end
@@ -8749,6 +8745,10 @@ arch sea
 x 31
 y 35
 end
+arch cwall_1_4
+x 31
+y 35
+end
 arch sea
 x 31
 y 36
@@ -8757,7 +8757,7 @@ arch sea
 x 31
 y 37
 end
-arch sea1
+arch cobblestones2
 x 31
 y 38
 end
@@ -8777,7 +8777,7 @@ arch sea
 x 31
 y 41
 end
-arch sea1
+arch cobblestones2
 x 31
 y 42
 end
@@ -8994,9 +8994,21 @@ arch cobblestones2
 x 32
 y 32
 end
+arch cwall_1_4
+x 32
+y 32
+end
 arch cobblestones2
 x 32
 y 33
+end
+arch altar_trigger
+name Smoking Cauldron Dock Pass Required
+slaying Dock Pass (Smoking Cauldron)
+food 1
+x 32
+y 33
+connected 29827363
 end
 arch cobblestones2
 x 32
@@ -9007,6 +9019,10 @@ x 32
 y 34
 end
 arch sea
+x 32
+y 35
+end
+arch cwall_2_1_2
 x 32
 y 35
 end
@@ -9027,7 +9043,7 @@ arch sea1
 x 32
 y 37
 end
-arch sea1
+arch cobblestones2
 x 32
 y 38
 end
@@ -9056,7 +9072,7 @@ arch sea1
 x 32
 y 41
 end
-arch sea1
+arch cobblestones2
 x 32
 y 42
 end
@@ -9304,15 +9320,50 @@ arch sea
 x 33
 y 32
 end
+arch cwall_2_1_2
+x 33
+y 32
+end
 arch sea
 x 33
 y 33
+end
+arch s_ship_black
+name Flagship of the Smoking Cauldron
+x 33
+y 33
+speed 0.5
+type 2
+container 10000000
+move_type boat
+unique 1
+passenger_limit 2
+arch door_2
+name cabin door
+face oakdoor_2.111
+type 0
+client_type 25012
+unique 1
+arch event_apply
+name event_apply
+title Python
+slaying /python/misc/flagship_smokingcauldron.py
+end
+end
+arch event_apply
+title Python
+slaying /python/misc/flagship_smokingcauldron.py
+end
 end
 arch sea
 x 33
 y 34
 end
 arch sea
+x 33
+y 35
+end
+arch cwall_2_1_2
 x 33
 y 35
 end
@@ -9325,7 +9376,7 @@ arch sea1
 x 33
 y 37
 end
-arch sea1
+arch cobblestones2
 x 33
 y 38
 end
@@ -9346,7 +9397,7 @@ arch sea1
 x 33
 y 41
 end
-arch sea1
+arch cobblestones2
 x 33
 y 42
 end
@@ -9551,40 +9602,24 @@ arch grass
 x 34
 y 30
 end
-arch shallow_sea
+arch cobblestones2
 x 34
 y 31
 elevation -10
 end
 arch sea
 x 34
-y 31
-elevation -10
-end
-arch grass
-x 34
 y 32
 elevation 117
 end
-arch sea
+arch cwall_2_1_2
 x 34
 y 32
-elevation 117
-end
-arch brush
-x 34
-y 33
-elevation 373
 end
 arch sea
 x 34
 y 33
 elevation 373
-end
-arch brush
-x 34
-y 34
-elevation 418
 end
 arch sea
 x 34
@@ -9600,6 +9635,10 @@ arch sea
 x 34
 y 35
 elevation 237
+end
+arch cwall_2_1_2
+x 34
+y 35
 end
 arch shallow_sea
 x 34
@@ -9867,11 +9906,11 @@ arch cobblestones2
 x 35
 y 29
 end
-arch brush
+arch cobblestones2
 x 35
 y 30
 end
-arch sea
+arch cobblestones2
 x 35
 y 31
 elevation -158
@@ -9880,15 +9919,35 @@ arch sea
 x 35
 y 32
 end
+arch cwall_2_1_2
+x 35
+y 32
+end
 arch sea
 x 35
 y 33
+end
+arch grate_closed_1
+x 35
+y 33
+connected 29827363
+activate_on_release 0
 end
 arch sea
 x 35
 y 34
 end
+arch grate_closed_1
+x 35
+y 34
+connected 29827363
+activate_on_release 0
+end
 arch sea
+x 35
+y 35
+end
+arch cwall_1_3
 x 35
 y 35
 end
@@ -10137,14 +10196,49 @@ arch cobblestones2
 x 36
 y 28
 end
-arch brush
+arch cobblestones2
 x 36
 y 29
+end
+arch altar_trigger
+name Poisoned Dagger Dock Pass Required
+slaying Dock Pass (Poisoned Dagger)
+food 1
+x 36
+y 29
+connected 29827369
 end
 arch sea
 x 36
 y 30
 elevation -318
+end
+arch s_ship_black
+name Flagship of the Poisoned Dagger
+x 36
+y 30
+speed 0.5
+type 2
+container 10000000
+move_type boat
+unique 1
+passenger_limit 2
+arch door_2
+name cabin door
+face oakdoor_2.111
+type 0
+client_type 25012
+unique 1
+arch event_apply
+name event_apply
+title Python
+slaying /python/misc/flagship_poisoneddagger.py
+end
+end
+arch event_apply
+title Python
+slaying /python/misc/flagship_poisoneddagger.py
+end
 end
 arch sea
 x 36
@@ -10155,6 +10249,10 @@ arch sea
 x 36
 y 32
 elevation -342
+end
+arch cwall_2_1_2
+x 36
+y 32
 end
 arch sea
 x 36
@@ -10406,7 +10504,7 @@ arch brush
 x 37
 y 28
 end
-arch cwall_1_2
+arch cwall_2_1_1
 x 37
 y 28
 end
@@ -10414,6 +10512,10 @@ arch sea
 x 37
 y 29
 elevation -382
+end
+arch cwall_2_2_1
+x 37
+y 29
 end
 arch sea
 x 37
@@ -10429,6 +10531,10 @@ arch sea
 x 37
 y 32
 elevation -591
+end
+arch cwall_2_1_2
+x 37
+y 32
 end
 arch sea
 x 37
@@ -10681,15 +10787,31 @@ x 38
 y 29
 elevation -517
 end
+arch cwall_1_3
+x 38
+y 29
+end
 arch sea
 x 38
 y 30
 elevation -661
 end
+arch grate_closed_1
+x 38
+y 30
+connected 29827369
+activate_on_release 0
+end
 arch sea
 x 38
 y 31
 elevation -770
+end
+arch grate_closed_1
+x 38
+y 31
+connected 29827369
+activate_on_release 0
 end
 arch sea
 x 38
@@ -10700,6 +10822,10 @@ arch light3
 x 38
 y 32
 elevation -845
+end
+arch cwall_1_3
+x 38
+y 32
 end
 arch sea
 x 38

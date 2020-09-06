@@ -12,6 +12,7 @@ IRC: http://crossfire.real-time.com/irc/index.html
 </br>
 What's new so far? </br>
 </br>
+Damage, Exp readout </br>
 Economy Upgrade </br>
 Mining </br>
 Digging </br>
@@ -24,7 +25,7 @@ Ship with accessible cabins </br>
 Wand augmentation scrolls! </br>
 Rednaxela's Buildable Buildings script up and running! <br>
 pup_land and other many other areas incorporated into Bigworld </br>
-Bottomworld (The frontier) tiled to Bigworld hopefully becoming a globe </br>
+Bottomworld (The Frontier) tiled to Bigworld hopefully becoming a globe </br>
 Exp loss from death reduced greatly </br>
 Four stage tutorial with face selection </br>
 Mlab deloused of content unsuitable for public play and reintigrated </br>
@@ -55,7 +56,6 @@ Ogre, Orc and Dragon outposts throughout the world </br>
 </br>
 </br>
 TODO </br>
-Damage, Exp readout </br>
 Town Portal Rework </br>
 Personal Shop Upgrade </br>
 </br>

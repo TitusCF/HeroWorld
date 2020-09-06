@@ -7,7 +7,7 @@ height 50
 enter_x 1
 enter_y 1
 msg
-Modified: 2019-04-08 Acer
+Modified: 2020-09-06 Acer
 endmsg
 outdoor 1
 tile_path_1 world_121_116
@@ -13968,20 +13968,28 @@ end
 arch grass
 x 48
 end
-arch rl_house_west
-name Private apartments
-name_pl Private apartments
-slaying /navar_city/apartments/apartment
-hp 10
-sp 13
-x 48
-unique 1
-end
 arch dungeon_magic
 x 48
 y 1
 end
 arch grass
+x 48
+y 1
+end
+arch s_house1
+name Private apartments
+slaying /navar_city/apartments/apartment
+hp 10
+sp 13
+x 48
+y 1
+unique 1
+end
+arch check_inv
+slaying navar_apartment_key
+msg
+You need an Apartment Key! (Available at the Builders Shop)
+endmsg
 x 48
 y 1
 end

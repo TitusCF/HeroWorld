@@ -22998,40 +22998,6 @@ arch tile_shop
 x 38
 y 8
 end
-arch awful_rat
-name Titus-DMs Rat
-x 38
-y 8
-speed 0.5
-type 2
-weight 240
-container 10000000
-move_type walk swim
-move_allow walk
-no_pick 0
-passenger_limit 1
-arch ladder_down
-name cabin door
-face oakdoor_2.111
-type 0
-unique 1
-arch event_apply
-name event_apply
-title Python
-slaying /python/misc/ship-cabin_permanent.py
-end
-end
-arch event_apply
-title Python
-slaying /python/misc/ship-cabin_permanent.py
-end
-arch check_inv
-slaying dm_key
-msg
-This is the mount of Titus. Hands Off!
-endmsg
-end
-end
 arch tile_shop
 x 38
 y 9
@@ -23331,6 +23297,37 @@ end
 arch tile_shop
 x 39
 y 8
+end
+arch sailing_galleon
+name DM's Mount
+face whim.111
+animation whim
+x 39
+y 8
+speed 0.5
+weight 100
+container 10000000
+move_type fly_high
+move_block none
+no_pick 0
+is_animated 1
+passenger_limit 1
+arch magic_portal
+arch event_apply
+title Python
+slaying /python/misc/ship-cabin_permanent.py
+end
+end
+arch event_apply
+title Python
+slaying /python/misc/ship-cabin_permanent.py
+end
+arch check_inv
+slaying dm_key
+msg
+This is Titus-DM's personal mount, HANDS OFF!
+endmsg
+end
 end
 arch tile_shop
 x 39

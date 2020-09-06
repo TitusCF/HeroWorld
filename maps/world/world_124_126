@@ -21558,6 +21558,43 @@ arch redrugfloor1
 x 33
 y 8
 end
+arch blue_dragon
+name Titus-DMs Mount
+msg
+This is Titus-DM's personal mount, hand's off!
+endmsg
+x 33
+y 8
+speed 0.7
+type 2
+weight 40
+container 10000000
+move_type walk swim boat
+move_allow walk
+no_pick 0
+passenger_limit 4
+arch ladder_down
+name cabin door
+face magic_portal.111
+animation perm_magic_portal
+type 0
+unique 1
+anim_speed 3
+client_anim_random 1
+arch event_apply
+title Python
+slaying /python/misc/ship-cabin_permanent.py
+end
+end
+arch event_apply
+title Python
+slaying /python/misc/ship-cabin_permanent.py
+end
+arch check_inv
+slaying dm_key
+move_block all
+end
+end
 arch redrugfloor1
 x 33
 y 9
@@ -23297,41 +23334,6 @@ end
 arch tile_shop
 x 39
 y 8
-end
-arch sailing_galleon
-name DM's Mount
-name_pl DM's Mounts
-face whim.111
-animation whim
-x 39
-y 8
-speed 0.5
-weight 100
-container 10000000
-move_type fly_high
-move_block none
-no_pick 0
-is_animated 1
-anim_full whim
-face_full wingedhalo.111
-passenger_limit 1
-arch magic_portal
-arch event_apply
-title Python
-slaying /python/misc/ship-cabin_permanent.py
-end
-end
-arch event_apply
-title Python
-slaying /python/misc/ship-cabin_permanent.py
-end
-arch check_inv
-slaying dm_key
-msg
-This is Titus-DM's personal mount, hand's off!
-endmsg
-move_block all
-end
 end
 arch tile_shop
 x 39

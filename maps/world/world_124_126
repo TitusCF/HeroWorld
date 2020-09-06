@@ -3,7 +3,7 @@ name world_124_126
 width 50
 height 50
 msg
-Modified: 2020-09-04 Acer
+Modified: 2020-09-06 Acer
 endmsg
 outdoor 1
 tile_path_1 world_124_125
@@ -22708,6 +22708,12 @@ arch tile_shop
 x 37
 y 10
 end
+arch red_key
+name DM Mount Key
+slaying dm_key
+x 37
+y 10
+end
 arch tile_shop
 x 37
 y 11
@@ -22993,10 +22999,37 @@ x 38
 y 8
 end
 arch awful_rat
+name Awful ARat
 x 38
 y 8
+speed 0.5
+type 2
+container 10000000
+move_type boat
 monster 0
 sleep 0
+passenger_limit 1
+arch ladder_down
+name cabin door
+face oakdoor_2.111
+type 0
+unique 1
+arch event_apply
+name event_apply
+title Python
+slaying /python/misc/ship-cabin_permanent.py
+end
+end
+arch event_apply
+title Python
+slaying /python/misc/ship-cabin_permanent.py
+end
+arch check_inv
+slaying dm_key
+msg
+This is the mount of Titus. Hands Off!
+endmsg
+end
 end
 arch tile_shop
 x 38

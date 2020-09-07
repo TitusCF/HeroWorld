@@ -8,7 +8,7 @@ enter_x 23
 enter_y 7
 msg
 Created:  1996-02-09
-Modified: 2019-12-27 Acer
+Modified: 2020-09-07 Acer
 endmsg
 end
 arch grass
@@ -665,31 +665,24 @@ arch woodfloor
 x 7
 y 3
 end
-arch platinum_converter
-x 7
-y 3
-end
-arch woodfloor
+arch afloor_black_left
 x 7
 y 4
 end
-arch woodfloor
+arch sign
+name REALTY SERVICES
+x 7
+y 4
+end
+arch afloor_black_left
 x 7
 y 5
 end
-arch gold_converter
-x 7
-y 5
-end
-arch woodfloor
+arch afloor_black_left
 x 7
 y 6
 end
 arch woodfloor
-x 7
-y 7
-end
-arch silver_converter
 x 7
 y 7
 end
@@ -827,7 +820,7 @@ arch dungeon_magic
 x 8
 y 4
 end
-arch woodfloor
+arch afloor_black_left
 x 8
 y 4
 end
@@ -839,7 +832,7 @@ arch dungeon_magic
 x 8
 y 5
 end
-arch woodfloor
+arch afloor_black_left
 x 8
 y 5
 end
@@ -851,7 +844,7 @@ arch dungeon_magic
 x 8
 y 6
 end
-arch woodfloor
+arch afloor_black_left
 x 8
 y 6
 end
@@ -986,10 +979,6 @@ arch afloor_left
 x 9
 y 3
 end
-arch table
-x 9
-y 3
-end
 arch afloor_left
 x 9
 y 4
@@ -998,19 +987,31 @@ arch afloor_left
 x 9
 y 5
 end
-arch table
+arch chair_1.2
 x 9
 y 5
+end
+arch woman
+name bank clerk
+msg
+@match *
+I'm too busy to answer your queries.
+endmsg
+face woman.171
+hp 180
+x 9
+y 5
+friendly 1
+unaggressive 0
+arch event_say
+slaying python/misc/buildsale.py
+end
 end
 arch afloor_left
 x 9
 y 6
 end
 arch afloor_left
-x 9
-y 7
-end
-arch table
 x 9
 y 7
 end
@@ -1092,23 +1093,6 @@ arch afloor_left
 x 10
 y 3
 end
-arch chair_1.2
-x 10
-y 3
-end
-arch man
-name bank clerk
-msg
-@match *
-I'm too busy to answer your queries.
-endmsg
-face man.171
-hp 180
-x 10
-y 3
-friendly 1
-unaggressive 0
-end
 arch afloor_left
 x 10
 y 4
@@ -1117,23 +1101,6 @@ arch afloor_left
 x 10
 y 5
 end
-arch chair_1.2
-x 10
-y 5
-end
-arch woman
-name bank clerk
-msg
-@match *
-I'm too busy to answer your queries.
-endmsg
-face woman.171
-hp 180
-x 10
-y 5
-friendly 1
-unaggressive 0
-end
 arch afloor_left
 x 10
 y 6
@@ -1141,23 +1108,6 @@ end
 arch afloor_left
 x 10
 y 7
-end
-arch chair_1.2
-x 10
-y 7
-end
-arch woman
-name bank clerk
-msg
-@match *
-I'm too busy to answer your queries.
-endmsg
-face woman.171
-hp 180
-x 10
-y 7
-friendly 1
-unaggressive 0
 end
 arch afloor_left
 x 10
@@ -2364,11 +2314,23 @@ arch woodfloor
 x 19
 y 3
 end
-arch gold_converter
+arch dungeon_magic
+x 19
+y 3
+end
+arch dungeon_magic
 x 19
 y 3
 end
 arch woodfloor
+x 19
+y 4
+end
+arch sign
+name Instructions
+msg
+Just say 'hi' or 'help' to get started!
+endmsg
 x 19
 y 4
 end
@@ -2384,7 +2346,11 @@ arch woodfloor
 x 19
 y 7
 end
-arch silver_converter
+arch dungeon_magic
+x 19
+y 7
+end
+arch dungeon_magic
 x 19
 y 7
 end

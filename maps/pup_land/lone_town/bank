@@ -8,7 +8,7 @@ enter_x 9
 enter_y 18
 msg
 Created:  1996-01-29
-Modified: 2019-12-31 Acer
+Modified: 2020-09-07 Acer
 endmsg
 end
 arch afloor_right
@@ -298,21 +298,6 @@ arch dungeon_magic
 x 1
 y 18
 end
-arch depositbox
-name Deposit Box
-x 1
-y 18
-arch event_apply
-name Apply
-title Python
-slaying /python/IPO/banksay.py
-end
-arch event_close
-name Close
-title Python
-slaying /python/IPO/banksay.py
-end
-end
 arch afloor_right
 x 1
 y 19
@@ -467,14 +452,6 @@ x 2
 y 18
 end
 arch dungeon_magic
-x 2
-y 18
-end
-arch sign_w
-name ATM
-msg
-Note.  A service charge of 1% is placed on deposits and withdrawals.
-endmsg
 x 2
 y 18
 end
@@ -1687,10 +1664,10 @@ arch dungeon_magic
 x 9
 y 16
 end
-arch sign_w
-name Accounts
+arch sign
+name Instructions
 msg
-Please use the next available teller.
+Just say 'hi' or 'help' to get started!
 endmsg
 x 9
 y 16

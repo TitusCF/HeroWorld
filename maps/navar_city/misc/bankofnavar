@@ -8,7 +8,7 @@ msg
 Creator: MikeeUSA
 Email: gnu@foo.bar
 Date: Tue Jul 18 17:02:19 2006
-Modified: 2020-02-24 Acer
+Modified: 2020-09-07 Acer
 endmsg
 end
 arch dungeon_magic
@@ -412,14 +412,6 @@ end
 arch dungeon_magic
 x 2
 y 10
-end
-arch depositbox
-x 2
-y 10
-arch event_close
-title Python
-slaying /python/items/deposit_box.py
-end
 end
 arch dungeon_magic
 x 2
@@ -1470,10 +1462,10 @@ arch dungeon_floor
 x 9
 y 8
 end
-arch sign_w
+arch sign
+name Instructions
 msg
-navarian accounts
-
+Just say 'hi' or 'help' to get started!
 endmsg
 x 9
 y 8

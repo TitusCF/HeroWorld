@@ -3,7 +3,7 @@ name world_124_126
 width 50
 height 50
 msg
-Modified: 2020-09-06 Acer
+Modified: 2020-09-10 Titus
 endmsg
 outdoor 1
 tile_path_1 world_124_125
@@ -18187,6 +18187,15 @@ arch tile_shop
 x 21
 y 10
 end
+arch b_bsword_1
+title of Souls
+x 21
+y 10
+cursed 1
+arch event_apply
+slaying python/items/sword_of_souls.py
+end
+end
 arch tile_shop
 x 21
 y 11
@@ -21558,45 +21567,6 @@ arch redrugfloor1
 x 33
 y 8
 end
-arch blue_dragon
-name Titus-DMs Mount
-msg
-This is Titus-DM's personal mount, hand's off!
-endmsg
-x 33
-y 8
-speed 0.7
-type 2
-weight 40
-container 10000000
-move_type walk swim boat
-move_allow walk
-no_pick 0
-passenger_limit 4
-arch ladder_down
-name cabin door
-face magic_portal.111
-animation perm_magic_portal
-type 0
-no_pick 0
-unique 1
-anim_speed 3
-client_anim_random 1
-arch event_apply
-title Python
-slaying /python/misc/ship-cabin_permanent.py
-end
-end
-arch event_apply
-title Python
-slaying /python/misc/ship-cabin_permanent.py
-end
-arch check_inv
-slaying dm_key
-move_block all
-no_pick 0
-end
-end
 arch redrugfloor1
 x 33
 y 9
@@ -22747,12 +22717,6 @@ arch tile_shop
 x 37
 y 10
 end
-arch red_key
-name DM Mount Key
-slaying dm_key
-x 37
-y 10
-end
 arch tile_shop
 x 37
 y 11
@@ -23007,15 +22971,15 @@ arch tile_shop
 x 38
 y 2
 end
-arch ancient_chinese_dragon
-x 38
-y 2
-monster 0
-stand_still 1
-end
 arch tile_shop
 x 38
 y 3
+end
+arch armour_troll2
+x 38
+y 3
+sleep 0
+stand_still 1
 end
 arch tile_shop
 x 38
@@ -23025,6 +22989,12 @@ arch tile_shop
 x 38
 y 5
 end
+arch armour_troll2
+x 38
+y 5
+sleep 0
+stand_still 1
+end
 arch tile_shop
 x 38
 y 6
@@ -23032,6 +23002,12 @@ end
 arch tile_shop
 x 38
 y 7
+end
+arch armour_troll2
+x 38
+y 7
+sleep 0
+stand_still 1
 end
 arch tile_shop
 x 38
@@ -23318,12 +23294,6 @@ end
 arch tile_shop
 x 39
 y 5
-end
-arch bear
-x 39
-y 5
-monster 0
-stand_still 1
 end
 arch tile_shop
 x 39

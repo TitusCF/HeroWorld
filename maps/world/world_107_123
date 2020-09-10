@@ -7,7 +7,7 @@ height 50
 enter_x 1
 enter_y 1
 msg
-Modified: 2020-09-04 Acer
+Modified: 2020-09-10 Titus
 endmsg
 outdoor 1
 tile_path_1 world_107_122
@@ -10274,7 +10274,15 @@ x 38
 y 43
 elevation 1972
 end
+arch redcwall_1_1
+x 38
+y 43
+end
 arch shallow_sea
+x 38
+y 44
+end
+arch redcwall_2_1_1
 x 38
 y 44
 end
@@ -10283,7 +10291,15 @@ x 38
 y 45
 elevation -1938
 end
+arch redcwall_2_1_1
+x 38
+y 45
+end
 arch sea
+x 38
+y 46
+end
+arch redcwall_1_2
 x 38
 y 46
 end
@@ -10565,6 +10581,33 @@ x 39
 y 44
 elevation -14
 end
+arch s_ship_black
+name Flagship of the Black Shield
+x 39
+y 44
+speed 0.5
+type 2
+container 10000000
+move_type boat
+unique 1
+passenger_limit 2
+arch door_2
+name cabin door
+face oakdoor_2.111
+type 0
+client_type 25012
+unique 1
+arch event_apply
+name event_apply
+title Python
+slaying /python/misc/flagship_blackshield.py
+end
+end
+arch event_apply
+title Python
+slaying /python/misc/flagship_blackshield.py
+end
+end
 arch sea
 x 39
 y 45
@@ -10574,6 +10617,12 @@ arch sea
 x 39
 y 46
 elevation -761
+end
+arch grate_closed_1
+x 39
+y 46
+connected 29827363
+activate_on_release 0
 end
 arch sea
 x 39
@@ -10817,6 +10866,14 @@ x 40
 y 43
 elevation 2642
 end
+arch altar_trigger
+name Black Shield Dock Pass Required
+slaying Dock Pass (Black Shield)
+food 1
+x 40
+y 43
+connected 29827363
+end
 arch shallow_sea
 x 40
 y 44
@@ -10831,6 +10888,12 @@ arch sea
 x 40
 y 46
 elevation -4272
+end
+arch grate_closed_1
+x 40
+y 46
+connected 29827363
+activate_on_release 0
 end
 arch sea
 x 40
@@ -11189,7 +11252,7 @@ x 41
 y 44
 elevation 1702
 end
-arch redcwall_1_2
+arch redcwall_2_1_1
 x 41
 y 44
 end
@@ -11198,10 +11261,18 @@ x 41
 y 45
 elevation -3330
 end
+arch redcwall_2_1_1
+x 41
+y 45
+end
 arch sea
 x 41
 y 46
 elevation -3407
+end
+arch redcwall_1_2
+x 41
+y 46
 end
 arch sea
 x 41

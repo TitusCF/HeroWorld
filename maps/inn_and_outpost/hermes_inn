@@ -1,14 +1,15 @@
 arch map
 name hermes_inn
+width 22
+height 15
+enter_x 7
+enter_y 13
 msg
 Creator: Todd Mitchell
 CF Java Map Editor
 Date:    10/27/2002
+Modified: 2020-09-24 Titus
 endmsg
-width 25
-height 15
-enter_x 7
-enter_y 13
 outdoor 1
 end
 arch woodfloor2
@@ -130,9 +131,9 @@ x 1
 y 3
 end
 arch longtable_1_4
-no_pass 1
 x 1
 y 3
+no_pass 1
 end
 arch woodfloor2
 x 1
@@ -225,9 +226,9 @@ x 2
 y 3
 end
 arch longtable_2_1_2
-no_pass 1
 x 2
 y 3
+no_pass 1
 end
 arch woodfloor2
 x 2
@@ -330,20 +331,20 @@ Look. I'm getting tired of all your questions...understand me?
 @match *
 What can I gettcha?
 endmsg
+x 3
+y 2
 level 8
 attacktype 1
 stand_still 1
-x 3
-y 2
 end
 arch woodfloor2
 x 3
 y 3
 end
 arch longtable_2_1_2
-no_pass 1
 x 3
 y 3
+no_pass 1
 end
 arch woodfloor2
 x 3
@@ -423,9 +424,9 @@ x 4
 y 3
 end
 arch longtable_2_1_2
-no_pass 1
 x 4
 y 3
+no_pass 1
 end
 arch woodfloor2
 x 4
@@ -518,9 +519,9 @@ x 5
 y 3
 end
 arch longtable_2_1_2
-no_pass 1
 x 5
 y 3
+no_pass 1
 end
 arch woodfloor2
 x 5
@@ -621,9 +622,9 @@ x 6
 y 3
 end
 arch longtable_2_1_2
-no_pass 1
 x 6
 y 3
+no_pass 1
 end
 arch woodfloor2
 x 6
@@ -711,9 +712,9 @@ x 7
 y 3
 end
 arch longtable_2_1_2
-no_pass 1
 x 7
 y 3
+no_pass 1
 end
 arch woodfloor2
 x 7
@@ -736,10 +737,10 @@ x 7
 y 7
 end
 arch button_small
-invisible 1
-connected 1
 x 7
 y 8
+invisible 1
+connected 1
 end
 arch woodfloor2
 x 7
@@ -750,15 +751,15 @@ x 7
 y 9
 end
 arch mdoor_closed_1
-connected 1
 x 7
 y 9
+connected 1
 end
 arch button_small
-invisible 1
-connected 1
 x 7
 y 10
+invisible 1
+connected 1
 end
 arch flagstone
 x 7
@@ -810,9 +811,9 @@ x 8
 y 3
 end
 arch longtable_2_1_2
-no_pass 1
 x 8
 y 3
+no_pass 1
 end
 arch woodfloor2
 x 8
@@ -904,9 +905,9 @@ x 9
 y 3
 end
 arch longtable_2_1_2
-no_pass 1
 x 9
 y 3
+no_pass 1
 end
 arch woodfloor2
 x 9
@@ -994,27 +995,27 @@ x 10
 y 1
 end
 arch longtable_1_1
-no_pass 1
 x 10
 y 1
+no_pass 1
 end
 arch woodfloor2
 x 10
 y 2
 end
 arch longtable_2_1_1
-no_pass 1
 x 10
 y 2
+no_pass 1
 end
 arch woodfloor2
 x 10
 y 3
 end
 arch longtable_2_2_4
-no_pass 1
 x 10
 y 3
+no_pass 1
 end
 arch woodfloor2
 x 10
@@ -1361,9 +1362,9 @@ x 14
 y 1
 end
 arch clock
-no_pick 1
 x 14
 y 1
+no_pick 1
 end
 arch woodfloor2
 x 14
@@ -1542,10 +1543,10 @@ y 1
 end
 arch pearl_converter
 name drop 1500 platinum to buy healing potion
-face cauldron.111
 slaying platinacoin
-food 1500
 other_arch potion_heal
+face cauldron.111
+food 1500
 x 16
 y 1
 end
@@ -1606,6 +1607,37 @@ arch grass
 x 16
 y 10
 end
+arch giant
+name Billy
+msg
+@match *
+Me not speak good, you say to Hermes.
+endmsg
+exp 0
+dam 15
+x 16
+y 10
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_acid 100
+resist_drain 100
+resist_weaponmagic 100
+resist_ghosthit 100
+resist_poison 100
+resist_deplete 100
+resist_chaos 100
+resist_godpower 100
+resist_holyword 100
+randomitems none
+friendly 1
+arch key2
+name key
+slaying Hermes Key
+end
+end
 arch grass
 x 16
 y 11
@@ -1637,33 +1669,33 @@ x 17
 y 1
 end
 arch longtable_1_1
+x 17
+y 1
 no_pass 1
 no_magic 1
 damned 1
-x 17
-y 1
 end
 arch woodfloor2
 x 17
 y 2
 end
 arch longtable_2_1_1
+x 17
+y 2
 no_pass 1
 no_magic 1
 damned 1
-x 17
-y 2
 end
 arch woodfloor2
 x 17
 y 3
 end
 arch longtable_2_2_1
+x 17
+y 3
 no_pass 1
 cursed 1
 damned 1
-x 17
-y 3
 end
 arch light2
 x 17
@@ -1756,25 +1788,25 @@ y 2
 end
 arch c_sage
 name Sedrick
+title the sage
 msg
 @match *
 Finest healing potions this side of Scorn.
 endmsg
-title the sage
-stand_still 1
 x 18
 y 2
+stand_still 1
 end
 arch woodfloor2
 x 18
 y 3
 end
 arch longtable_2_1_2
+x 18
+y 3
 no_pass 1
 cursed 1
 damned 1
-x 18
-y 3
 end
 arch woodfloor2
 x 18
@@ -1860,11 +1892,11 @@ x 19
 y 3
 end
 arch longtable_2_1_2
+x 19
+y 3
 no_pass 1
 cursed 1
 damned 1
-x 19
-y 3
 end
 arch woodfloor2
 x 19
@@ -1949,11 +1981,11 @@ x 20
 y 3
 end
 arch longtable_1_3
+x 20
+y 3
 no_pass 1
 cursed 1
 damned 1
-x 20
-y 3
 end
 arch woodfloor2
 x 20
@@ -1991,23 +2023,23 @@ y 7
 end
 arch altar
 name drop 50 gold for a room
-type 31
 slaying goldcoin
 food 50
-connected 3
-last_sp 1
 x 20
 y 7
+type 31
+last_sp 1
+connected 3
 end
 arch trigger_marker
+slaying hermes_inn_pass
 msg
 You may access the inn facilities for one day.
 endmsg
-slaying hermes_inn_pass
-connected 3
 food 504
 x 20
 y 7
+connected 3
 end
 arch woodfloor2
 x 20
@@ -2022,9 +2054,9 @@ y 8
 end
 arch check_floor
 slaying hermes_inn_pass
-no_pass 1
 x 20
 y 8
+no_pass 1
 end
 arch woodfloor2
 x 20
@@ -2039,9 +2071,9 @@ x 20
 y 10
 end
 arch wagon
-type 0
 x 20
 y 10
+type 0
 end
 arch grass
 x 20
@@ -2188,94 +2220,4 @@ end
 arch woodwall_2_2_4
 x 21
 y 14
-end
-arch blocked
-x 22
-end
-arch blocked
-x 22
-y 1
-end
-arch blocked
-x 22
-y 2
-end
-arch blocked
-x 22
-y 3
-end
-arch blocked
-x 22
-y 4
-end
-arch blocked
-x 22
-y 5
-end
-arch blocked
-x 22
-y 6
-end
-arch blocked
-x 22
-y 7
-end
-arch blocked
-x 22
-y 8
-end
-arch blocked
-x 22
-y 9
-end
-arch blocked
-x 22
-y 10
-end
-arch blocked
-x 22
-y 11
-end
-arch blocked
-x 22
-y 12
-end
-arch blocked
-x 22
-y 13
-end
-arch blocked
-x 22
-y 14
-end
-arch giant
-name Billy
-msg
-@match *
-Me not speak good, you say to Hermes.
-endmsg
-randomitems none
-exp 0
-dam 15
-friendly 1
-resist_physical 100
-resist_magic 100
-resist_fire 100
-resist_electricity 100
-resist_cold 100
-resist_acid 100
-resist_drain 100
-resist_weaponmagic 100
-resist_ghosthit 100
-resist_poison 100
-resist_deplete 100
-resist_chaos 100
-resist_holyword 100
-resist_godpower 100
-x 16
-y 10
-arch key2
-name key
-slaying Hermes Key
-end
 end

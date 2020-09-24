@@ -1,13 +1,14 @@
 arch map
 name Hermes Inn Upstairs
+difficulty 4
+width 22
+height 10
 msg
 Creator: Todd Mitchell
 CF Java Map Editor
 Date:    10/27/2002
+Modified: 2020-09-24 Titus
 endmsg
-width 22
-height 10
-difficulty 4
 outdoor 1
 end
 arch woodfloor2
@@ -141,10 +142,10 @@ x 2
 y 1
 end
 arch button_small
-invisible 1
-connected 1
 x 2
 y 2
+invisible 1
+connected 1
 end
 arch woodfloor2
 x 2
@@ -155,25 +156,25 @@ x 2
 y 3
 end
 arch mdoor_closed_1
-connected 1
 x 2
 y 3
+connected 1
 end
 arch button_small
-invisible 1
-connected 1
 x 2
 y 4
+invisible 1
+connected 1
 end
 arch woodfloor2
 x 2
 y 4
 end
 arch button_small
-invisible 1
-connected 4
 x 2
 y 5
+invisible 1
+connected 4
 end
 arch woodfloor2
 x 2
@@ -184,15 +185,15 @@ x 2
 y 6
 end
 arch mdoor_closed_1
-connected 4
 x 2
 y 6
+connected 4
 end
 arch button_small
-invisible 1
-connected 4
 x 2
 y 7
+invisible 1
+connected 4
 end
 arch woodfloor2
 x 2
@@ -431,10 +432,10 @@ x 6
 y 1
 end
 arch button_small
-invisible 1
-connected 2
 x 6
 y 2
+invisible 1
+connected 2
 end
 arch woodfloor2
 x 6
@@ -445,25 +446,25 @@ x 6
 y 3
 end
 arch mdoor_closed_1
-connected 2
 x 6
 y 3
+connected 2
 end
 arch button_small
-invisible 1
-connected 2
 x 6
 y 4
+invisible 1
+connected 2
 end
 arch woodfloor2
 x 6
 y 4
 end
 arch button_small
-invisible 1
-connected 5
 x 6
 y 5
+invisible 1
+connected 5
 end
 arch woodfloor2
 x 6
@@ -474,15 +475,15 @@ x 6
 y 6
 end
 arch mdoor_closed_1
-connected 5
 x 6
 y 6
+connected 5
 end
 arch button_small
-invisible 1
-connected 5
 x 6
 y 7
+invisible 1
+connected 5
 end
 arch woodfloor2
 x 6
@@ -713,10 +714,10 @@ x 10
 y 1
 end
 arch button_small
-invisible 1
-connected 3
 x 10
 y 2
+invisible 1
+connected 3
 end
 arch woodfloor2
 x 10
@@ -727,25 +728,25 @@ x 10
 y 3
 end
 arch mdoor_closed_1
-connected 3
 x 10
 y 3
+connected 3
 end
 arch button_small
-invisible 1
-connected 3
 x 10
 y 4
+invisible 1
+connected 3
 end
 arch woodfloor2
 x 10
 y 4
 end
 arch button_small
-invisible 1
-connected 6
 x 10
 y 5
+invisible 1
+connected 6
 end
 arch woodfloor2
 x 10
@@ -756,15 +757,15 @@ x 10
 y 6
 end
 arch mdoor_closed_1
-connected 6
 x 10
 y 6
+connected 6
 end
 arch button_small
-invisible 1
-connected 6
 x 10
 y 7
+invisible 1
+connected 6
 end
 arch woodfloor2
 x 10
@@ -925,10 +926,10 @@ x 13
 y 1
 arch key2
 name greasy key
+slaying Hermes Stash Key
 msg
 This key is slightly greasy, like it has been oiled.
 endmsg
-slaying Hermes Stash Key
 end
 arch random_wealth
 end
@@ -1035,10 +1036,10 @@ x 14
 y 4
 end
 arch button_small
-invisible 1
-connected 7
 x 14
 y 5
+invisible 1
+connected 7
 end
 arch woodfloor2
 x 14
@@ -1049,15 +1050,15 @@ x 14
 y 6
 end
 arch mdoor_closed_1
-connected 7
 x 14
 y 6
+connected 7
 end
 arch button_small
-invisible 1
-connected 7
 x 14
 y 7
+invisible 1
+connected 7
 end
 arch woodfloor2
 x 14
@@ -1086,9 +1087,9 @@ x 15
 y 1
 end
 arch woodwall_2_1_1
-no_pass 0
 x 15
 y 1
+no_pass 0
 end
 arch woodfloor2
 x 15
@@ -1296,12 +1297,12 @@ arch magic_mouth
 msg
 The key opens the door.
 endmsg
-connected 10
-walk_on 0
-fly_on 0
 food 1
 x 18
 y 3
+connected 10
+walk_on 0
+fly_on 0
 end
 arch woodfloor2
 x 18
@@ -1370,9 +1371,9 @@ x 19
 y 3
 end
 arch mdoor_closed_1
-connected 10
 x 19
 y 3
+connected 10
 end
 arch woodfloor2
 x 19
@@ -1380,10 +1381,10 @@ y 4
 end
 arch check_inv
 slaying Hermes Key
-connected 10
-last_heal 1
 x 19
 y 4
+last_heal 1
+connected 10
 end
 arch woodfloor2
 x 19
@@ -1428,9 +1429,9 @@ x 20
 y 2
 end
 arch trigger
-connected 10
 x 20
 y 2
+connected 10
 end
 arch woodfloor2
 x 20
@@ -1465,9 +1466,9 @@ x 20
 y 8
 end
 arch stair_down_2
-slaying hermes_inn
-hp 20
-sp 8
+slaying /world/world_111_116
+hp 36
+sp 27
 x 20
 y 8
 end

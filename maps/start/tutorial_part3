@@ -6,7 +6,7 @@ height 30
 enter_x 1
 enter_y 6
 msg
-Modified: 2020-08-27 Acer
+Modified: 2020-09-27 Titus
 endmsg
 end
 arch woodfloor
@@ -1411,37 +1411,23 @@ arch woodfloor
 x 8
 y 15
 end
-arch wall_1_2
+arch window_win1
 x 8
 y 15
-end
-arch check_floor
-race mouse
-x 8
-y 16
-last_sp 0
-move_block all
-end
-arch mat
-name mouse barrier
-x 8
-y 16
 end
 arch woodfloor
 x 8
 y 16
 end
-arch door_1
-hp 12
+arch window_win1
 x 8
 y 16
-randomitems none
 end
 arch woodfloor
 x 8
 y 17
 end
-arch wall_1_1
+arch window_win1
 x 8
 y 17
 end
@@ -1812,9 +1798,7 @@ name Inbreeding
 msg
 Some monsters, like mice, can multiply without a generator (after all, they are mice).
 If not killed quickly, these monsters can spread to fill up a map completely.
-Run through this door and kill the mice inside before they get out of control (to be honest, we cheated
-and tried our best to keep them from spreading throughout the whole map, but once
-outside int he harsh world, you will not be as lucky).
+
 endmsg
 x 10
 y 16

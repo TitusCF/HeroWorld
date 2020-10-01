@@ -1,6 +1,7 @@
 arch map
 name world_104_115
 reset_timeout 7200
+fixed_resettime 1
 difficulty 1
 region scorn
 width 50
@@ -2996,15 +2997,7 @@ arch beach
 x 12
 y 19
 end
-arch swall_2_2_2
-x 12
-y 19
-end
 arch beach
-x 12
-y 20
-end
-arch swall_2_1_1
 x 12
 y 20
 end
@@ -3012,15 +3005,7 @@ arch beach
 x 12
 y 21
 end
-arch swall_2_1_1
-x 12
-y 21
-end
 arch beach
-x 12
-y 22
-end
-arch swall_2_1_1
 x 12
 y 22
 end
@@ -3028,23 +3013,11 @@ arch beach
 x 12
 y 23
 end
-arch swall_2_1_1
-x 12
-y 23
-end
 arch beach
 x 12
 y 24
 end
-arch swall_2_1_1
-x 12
-y 24
-end
 arch beach
-x 12
-y 25
-end
-arch swall_2_2_1
 x 12
 y 25
 end
@@ -3238,47 +3211,71 @@ arch beach
 x 13
 y 17
 end
-arch beach
+arch cobblestones2
 x 13
 y 18
 end
-arch swall_2_2_2
+arch cwall_2_2_2
 x 13
 y 18
 end
-arch beach
+arch cobblestones2
 x 13
 y 19
 end
-arch swall_2_2_4
+arch cwall_2_1_1
 x 13
 y 19
 end
-arch beach
+arch cobblestones2
 x 13
 y 20
 end
-arch brush
+arch cwall_2_1_1
+x 13
+y 20
+end
+arch cobblestones2
 x 13
 y 21
 end
-arch brush
+arch cwall_2_1_1
+x 13
+y 21
+end
+arch cobblestones2
 x 13
 y 22
 end
-arch brush
+arch cwall_2_1_1
+x 13
+y 22
+end
+arch cobblestones2
 x 13
 y 23
 end
-arch brush
+arch swall_2_2_1
+x 13
+y 23
+end
+arch cwall_2_1_1
+x 13
+y 23
+end
+arch cobblestones2
 x 13
 y 24
 end
-arch darkforest
+arch cwall_2_1_1
+x 13
+y 24
+end
+arch cobblestones2
 x 13
 y 25
 end
-arch swall_2_1_2
+arch cwall_2_2_1
 x 13
 y 25
 end
@@ -3480,43 +3477,52 @@ y 17
 friendly 1
 stand_still 1
 end
-arch beach
+arch cobblestones2
 x 14
 y 18
 end
-arch swall_2_1_2
+arch cwall_2_1_2
 x 14
 y 18
 end
-arch beach
+arch farmland
 x 14
 y 19
 end
-arch beach
+arch farmland
 x 14
 y 20
 end
-arch brush
+arch farmland
 x 14
 y 21
 end
-arch brush
+arch farmland
 x 14
 y 22
 end
-arch brush
+arch cobblestones2
 x 14
 y 23
 end
-arch brush
+arch ggate_closed
+x 14
+y 23
+connected 9999
+end
+arch goldfloor
+name Northern Farm Plot (drop 50 gold coins)
+slaying money
+food 500
 x 14
 y 24
+connected 9999
 end
-arch darkforest
+arch cobblestones2
 x 14
 y 25
 end
-arch swall_2_1_2
+arch cwall_2_1_2
 x 14
 y 25
 end
@@ -3739,43 +3745,52 @@ y 17
 friendly 1
 stand_still 1
 end
-arch beach
+arch cobblestones2
 x 15
 y 18
 end
-arch swall_2_1_2
+arch cwall_2_1_2
 x 15
 y 18
 end
-arch beach
+arch farmland
 x 15
 y 19
 end
-arch beach
+arch farmland
 x 15
 y 20
 end
-arch brush
+arch farmland
 x 15
 y 21
 end
-arch brush
+arch farmland
 x 15
 y 22
 end
-arch brush
+arch cobblestones2
 x 15
 y 23
 end
-arch brush
+arch ggate_closed
+x 15
+y 23
+connected 9999
+end
+arch cobblestones2
 x 15
 y 24
 end
-arch darkforest
+arch cobblestones2
 x 15
 y 25
 end
 arch swall_2_1_2
+x 15
+y 25
+end
+arch cwall_2_1_2
 x 15
 y 25
 end
@@ -3971,43 +3986,71 @@ arch beach
 x 16
 y 17
 end
-arch beach
+arch cobblestones2
 x 16
 y 18
 end
-arch swall_2_1_2
+arch cwall_3_3
 x 16
 y 18
 end
-arch beach
+arch cobblestones2
 x 16
 y 19
 end
-arch beach
+arch swall_2_1_1
+x 16
+y 19
+end
+arch cobblestones2
 x 16
 y 20
 end
-arch brush
+arch swall_2_1_1
+x 16
+y 20
+end
+arch cobblestones2
 x 16
 y 21
 end
-arch brush
+arch swall_2_1_1
+x 16
+y 21
+end
+arch cobblestones2
 x 16
 y 22
 end
-arch brush
+arch swall_2_1_1
+x 16
+y 22
+end
+arch cobblestones2
 x 16
 y 23
 end
-arch brush
+arch swall_3_1
+x 16
+y 23
+end
+arch lamppost
+x 16
+y 23
+end
+arch cobblestones2
 x 16
 y 24
 end
-arch darkforest
+arch cobblestones2
 x 16
 y 25
 end
 arch swall_2_1_2
+x 16
+y 25
+end
+arch cwall_2_1_2
 x 16
 y 25
 end
@@ -4371,43 +4414,56 @@ arch beach
 x 17
 y 17
 end
-arch beach
+arch cobblestones2
 x 17
 y 18
 end
-arch swall_2_1_2
+arch cwall_2_1_2
 x 17
 y 18
 end
-arch beach
+arch farmland
 x 17
 y 19
 end
-arch brush
+arch farmland
 x 17
 y 20
 end
-arch brush
+arch farmland
 x 17
 y 21
 end
-arch brush
+arch farmland
 x 17
 y 22
 end
-arch brush
+arch cobblestones2
 x 17
 y 23
 end
-arch brush
+arch ggate_closed
+x 17
+y 23
+connected 9998
+end
+arch goldfloor
+name Northern Farm Plot (drop 50 gold coins)
+slaying money
+food 500
 x 17
 y 24
+connected 9998
 end
-arch darkforest
+arch cobblestones2
 x 17
 y 25
 end
-arch swall_2_2_3
+arch swall_3_3
+x 17
+y 25
+end
+arch cwall_2_1_2
 x 17
 y 25
 end
@@ -4847,39 +4903,68 @@ arch beach
 x 18
 y 17
 end
-arch beach
+arch cobblestones2
 x 18
 y 18
 end
-arch swall_2_1_2
+arch cwall_2_1_2
 x 18
 y 18
 end
-arch beach
+arch farmland
 x 18
 y 19
 end
-arch brush
+arch farmlandoverlay
+x 18
+y 19
+end
+arch farmland
 x 18
 y 20
 end
-arch brush
+arch farmlandoverlay
+x 18
+y 20
+end
+arch farmland
 x 18
 y 21
 end
-arch brush
+arch farmlandoverlay
+x 18
+y 21
+end
+arch farmland
 x 18
 y 22
 end
-arch brush
+arch farmlandoverlay
+x 18
+y 22
+end
+arch cobblestones2
 x 18
 y 23
 end
-arch brush
+arch ggate_closed
+x 18
+y 23
+connected 9998
+end
+arch cobblestones2
 x 18
 y 24
 end
-arch brush
+arch cobblestones2
+x 18
+y 25
+end
+arch swall_2_1_2
+x 18
+y 25
+end
+arch cwall_2_1_2
 x 18
 y 25
 end
@@ -5302,71 +5387,71 @@ arch beach
 x 19
 y 17
 end
-arch beach
+arch cobblestones2
 x 19
 y 18
+end
+arch cwall_3_3
+x 19
+y 18
+end
+arch cobblestones2
+x 19
+y 19
+end
+arch swall_2_1_1
+x 19
+y 19
+end
+arch cobblestones2
+x 19
+y 20
+end
+arch swall_2_1_1
+x 19
+y 20
+end
+arch cobblestones2
+x 19
+y 21
+end
+arch swall_2_1_1
+x 19
+y 21
+end
+arch cobblestones2
+x 19
+y 22
+end
+arch swall_2_1_1
+x 19
+y 22
+end
+arch cobblestones2
+x 19
+y 23
+end
+arch swall_3_1
+x 19
+y 23
+end
+arch cobblestones2
+x 19
+y 24
+end
+arch cobblestones2
+x 19
+y 25
 end
 arch swall_3_3
 x 19
-y 18
+y 25
 end
-arch beach
-x 19
-y 19
-end
-arch swall_2_1_1
-x 19
-y 19
-end
-arch brush
-x 19
-y 20
-end
-arch swall_2_1_1
-x 19
-y 20
-end
-arch brush
-x 19
-y 21
-end
-arch swall_2_1_1
-x 19
-y 21
-end
-arch brush
-x 19
-y 22
-end
-arch swall_2_1_1
-x 19
-y 22
-end
-arch brush
-x 19
-y 23
-end
-arch swall_3_2
-x 19
-y 23
-end
-arch brush
-x 19
-y 24
-end
-arch swall_2_1_1
-x 19
-y 24
-end
-arch brush
+arch cwall_2_2_3
 x 19
 y 25
 end
-arch swall_3_2
-x 19
-y 25
-end
-arch brush
+arch cobblestones2
 x 19
 y 26
 end
@@ -5374,7 +5459,11 @@ arch swall_2_1_1
 x 19
 y 26
 end
-arch brush
+arch cwall_2_1_1
+x 19
+y 26
+end
+arch cobblestones2
 x 19
 y 27
 end
@@ -5382,7 +5471,11 @@ arch swall_2_1_1
 x 19
 y 27
 end
-arch brush
+arch cwall_2_1_1
+x 19
+y 27
+end
+arch cobblestones2
 x 19
 y 28
 end
@@ -5390,11 +5483,19 @@ arch swall_2_1_1
 x 19
 y 28
 end
-arch brush
+arch cwall_2_1_1
+x 19
+y 28
+end
+arch cobblestones2
 x 19
 y 29
 end
 arch swall_2_1_1
+x 19
+y 29
+end
+arch cwall_2_1_1
 x 19
 y 29
 end
@@ -5402,11 +5503,11 @@ arch magic_banned
 x 19
 y 30
 end
-arch grass
+arch cobblestones2
 x 19
 y 30
 end
-arch cwall_2_1_2
+arch cwall_3_1
 x 19
 y 30
 end
@@ -5745,11 +5846,11 @@ arch beach
 x 20
 y 17
 end
-arch beach
+arch cobblestones2
 x 20
 y 18
 end
-arch swall_2_1_2
+arch cwall_2_1_2
 x 20
 y 18
 end
@@ -5779,9 +5880,9 @@ y 23
 connected 999
 end
 arch goldfloor
-name Northern Farm Plot (drop 100 gold coins)
+name Northern Farm Plot (drop 50 gold coins)
 slaying money
-food 1000
+food 500
 x 20
 y 24
 connected 999
@@ -5815,11 +5916,11 @@ arch magic_banned
 x 20
 y 30
 end
-arch grass
+arch cobblestones2
 x 20
 y 30
 end
-arch cwall_2_1_2
+arch dwall_win2
 x 20
 y 30
 end
@@ -6153,11 +6254,11 @@ arch beach
 x 21
 y 17
 end
-arch beach
+arch cobblestones2
 x 21
 y 18
 end
-arch swall_2_1_2
+arch cwall_2_1_2
 x 21
 y 18
 end
@@ -6187,9 +6288,9 @@ y 23
 connected 999
 end
 arch goldfloor
-name Southern Farm Plot (drop 100 gold coins)
+name Southern Farm Plot (drop 50 gold coins)
 slaying money
-food 1000
+food 500
 x 21
 y 24
 connected 9991
@@ -6223,11 +6324,11 @@ arch magic_banned
 x 21
 y 30
 end
-arch grass
+arch cobblestones2
 x 21
 y 30
 end
-arch cwall_2_1_2
+arch dwall_win2
 x 21
 y 30
 end
@@ -6599,15 +6700,15 @@ arch beach
 x 22
 y 17
 end
-arch beach
+arch cobblestones2
 x 22
 y 18
 end
-arch swall_3_3
+arch cwall_3_3
 x 22
 y 18
 end
-arch brush
+arch cobblestones2
 x 22
 y 19
 end
@@ -6615,7 +6716,7 @@ arch swall_2_1_1
 x 22
 y 19
 end
-arch brush
+arch cobblestones2
 x 22
 y 20
 end
@@ -6623,7 +6724,7 @@ arch swall_2_1_1
 x 22
 y 20
 end
-arch brush
+arch cobblestones2
 x 22
 y 21
 end
@@ -6631,7 +6732,7 @@ arch swall_2_1_1
 x 22
 y 21
 end
-arch brush
+arch cobblestones2
 x 22
 y 22
 end
@@ -6639,7 +6740,7 @@ arch swall_2_1_1
 x 22
 y 22
 end
-arch brush
+arch cobblestones2
 x 22
 y 23
 end
@@ -6647,11 +6748,15 @@ arch swall_3_1
 x 22
 y 23
 end
+arch lamppost
+x 22
+y 23
+end
 arch cobblestones2
 x 22
 y 24
 end
-arch brush
+arch cobblestones2
 x 22
 y 25
 end
@@ -6659,7 +6764,11 @@ arch swall_3_3
 x 22
 y 25
 end
-arch brush
+arch lamppost
+x 22
+y 25
+end
+arch cobblestones2
 x 22
 y 26
 end
@@ -6667,7 +6776,7 @@ arch swall_2_1_1
 x 22
 y 26
 end
-arch brush
+arch cobblestones2
 x 22
 y 27
 end
@@ -6675,7 +6784,7 @@ arch swall_2_1_1
 x 22
 y 27
 end
-arch brush
+arch cobblestones2
 x 22
 y 28
 end
@@ -6683,7 +6792,7 @@ arch swall_2_1_1
 x 22
 y 28
 end
-arch brush
+arch cobblestones2
 x 22
 y 29
 end
@@ -6695,11 +6804,11 @@ arch magic_banned
 x 22
 y 30
 end
-arch grass
+arch cobblestones2
 x 22
 y 30
 end
-arch cwall_2_1_2
+arch cwall_3_1
 x 22
 y 30
 end
@@ -7042,11 +7151,11 @@ arch beach
 x 23
 y 17
 end
-arch beach
+arch cobblestones2
 x 23
 y 18
 end
-arch swall_2_1_2
+arch cwall_2_1_2
 x 23
 y 18
 end
@@ -7076,9 +7185,9 @@ y 23
 connected 9992
 end
 arch goldfloor
-name Northern Farm Plot (drop 100 gold coins)
+name Northern Farm Plot (drop 50 gold coins)
 slaying money
-food 1000
+food 500
 x 23
 y 24
 connected 9992
@@ -7112,11 +7221,11 @@ arch magic_banned
 x 23
 y 30
 end
-arch grass
+arch cobblestones2
 x 23
 y 30
 end
-arch cwall_2_1_2
+arch dwall_win2
 x 23
 y 30
 end
@@ -7488,11 +7597,11 @@ y 17
 friendly 1
 stand_still 1
 end
-arch beach
+arch cobblestones2
 x 24
 y 18
 end
-arch swall_2_1_2
+arch cwall_2_1_2
 x 24
 y 18
 end
@@ -7522,9 +7631,9 @@ y 23
 connected 9992
 end
 arch goldfloor
-name Southern Farm Plot (drop 100 gold coins)
+name Southern Farm Plot (drop 50 gold coins)
 slaying money
-food 1000
+food 500
 x 24
 y 24
 connected 9993
@@ -7558,11 +7667,11 @@ arch magic_banned
 x 24
 y 30
 end
-arch grass
+arch cobblestones2
 x 24
 y 30
 end
-arch cwall_2_1_2
+arch dwall_win2
 x 24
 y 30
 end
@@ -7929,15 +8038,15 @@ arch beach
 x 25
 y 17
 end
-arch beach
+arch cobblestones2
 x 25
 y 18
 end
-arch swall_3_3
+arch cwall_3_3
 x 25
 y 18
 end
-arch brush
+arch cobblestones2
 x 25
 y 19
 end
@@ -7945,7 +8054,7 @@ arch swall_2_1_1
 x 25
 y 19
 end
-arch brush
+arch cobblestones2
 x 25
 y 20
 end
@@ -7953,7 +8062,7 @@ arch swall_2_1_1
 x 25
 y 20
 end
-arch brush
+arch cobblestones2
 x 25
 y 21
 end
@@ -7961,7 +8070,7 @@ arch swall_2_1_1
 x 25
 y 21
 end
-arch brush
+arch cobblestones2
 x 25
 y 22
 end
@@ -7969,7 +8078,7 @@ arch swall_2_1_1
 x 25
 y 22
 end
-arch brush
+arch cobblestones2
 x 25
 y 23
 end
@@ -7981,7 +8090,7 @@ arch cobblestones2
 x 25
 y 24
 end
-arch brush
+arch cobblestones2
 x 25
 y 25
 end
@@ -7989,7 +8098,7 @@ arch swall_3_3
 x 25
 y 25
 end
-arch brush
+arch cobblestones2
 x 25
 y 26
 end
@@ -7997,7 +8106,7 @@ arch swall_2_1_1
 x 25
 y 26
 end
-arch brush
+arch cobblestones2
 x 25
 y 27
 end
@@ -8005,7 +8114,7 @@ arch swall_2_1_1
 x 25
 y 27
 end
-arch brush
+arch cobblestones2
 x 25
 y 28
 end
@@ -8013,7 +8122,7 @@ arch swall_2_1_1
 x 25
 y 28
 end
-arch brush
+arch cobblestones2
 x 25
 y 29
 end
@@ -8025,11 +8134,11 @@ arch magic_banned
 x 25
 y 30
 end
-arch grass
+arch cobblestones2
 x 25
 y 30
 end
-arch cwall_2_1_2
+arch cwall_3_1
 x 25
 y 30
 end
@@ -8389,11 +8498,11 @@ arch beach
 x 26
 y 17
 end
-arch beach
+arch cobblestones2
 x 26
 y 18
 end
-arch swall_2_1_2
+arch cwall_2_1_2
 x 26
 y 18
 end
@@ -8423,9 +8532,9 @@ y 23
 connected 9994
 end
 arch goldfloor
-name Northern Farm Plot (drop 100 gold coins)
+name Northern Farm Plot (drop 50 gold coins)
 slaying money
-food 1000
+food 500
 x 26
 y 24
 connected 9994
@@ -8459,11 +8568,11 @@ arch magic_banned
 x 26
 y 30
 end
-arch grass
+arch cobblestones2
 x 26
 y 30
 end
-arch cwall_2_1_2
+arch dwall_win2
 x 26
 y 30
 end
@@ -8837,11 +8946,11 @@ arch beach
 x 27
 y 17
 end
-arch beach
+arch cobblestones2
 x 27
 y 18
 end
-arch swall_2_1_2
+arch cwall_2_1_2
 x 27
 y 18
 end
@@ -8871,9 +8980,9 @@ y 23
 connected 9994
 end
 arch goldfloor
-name Southern Farm Plot (drop 100 gold coins)
+name Southern Farm Plot (drop 50 gold coins)
 slaying money
-food 1000
+food 500
 x 27
 y 24
 connected 9995
@@ -8907,11 +9016,11 @@ arch magic_banned
 x 27
 y 30
 end
-arch grass
+arch cobblestones2
 x 27
 y 30
 end
-arch cwall_2_1_2
+arch dwall_win2
 x 27
 y 30
 end
@@ -9256,15 +9365,15 @@ arch beach
 x 28
 y 17
 end
-arch beach
+arch cobblestones2
 x 28
 y 18
 end
-arch swall_3_3
+arch cwall_3_3
 x 28
 y 18
 end
-arch brush
+arch cobblestones2
 x 28
 y 19
 end
@@ -9272,7 +9381,7 @@ arch swall_2_1_1
 x 28
 y 19
 end
-arch brush
+arch cobblestones2
 x 28
 y 20
 end
@@ -9280,7 +9389,7 @@ arch swall_2_1_1
 x 28
 y 20
 end
-arch brush
+arch cobblestones2
 x 28
 y 21
 end
@@ -9288,7 +9397,7 @@ arch swall_2_1_1
 x 28
 y 21
 end
-arch brush
+arch cobblestones2
 x 28
 y 22
 end
@@ -9296,7 +9405,7 @@ arch swall_2_1_1
 x 28
 y 22
 end
-arch brush
+arch cobblestones2
 x 28
 y 23
 end
@@ -9304,11 +9413,15 @@ arch swall_3_1
 x 28
 y 23
 end
+arch lamppost
+x 28
+y 23
+end
 arch cobblestones2
 x 28
 y 24
 end
-arch brush
+arch cobblestones2
 x 28
 y 25
 end
@@ -9316,7 +9429,11 @@ arch swall_3_3
 x 28
 y 25
 end
-arch brush
+arch lamppost
+x 28
+y 25
+end
+arch cobblestones2
 x 28
 y 26
 end
@@ -9324,7 +9441,7 @@ arch swall_2_1_1
 x 28
 y 26
 end
-arch brush
+arch cobblestones2
 x 28
 y 27
 end
@@ -9332,7 +9449,7 @@ arch swall_2_1_1
 x 28
 y 27
 end
-arch brush
+arch cobblestones2
 x 28
 y 28
 end
@@ -9340,7 +9457,7 @@ arch swall_2_1_1
 x 28
 y 28
 end
-arch brush
+arch cobblestones2
 x 28
 y 29
 end
@@ -9352,11 +9469,11 @@ arch magic_banned
 x 28
 y 30
 end
-arch grass
+arch cobblestones2
 x 28
 y 30
 end
-arch cwall_2_1_2
+arch cwall_3_1
 x 28
 y 30
 end
@@ -9713,11 +9830,11 @@ arch beach
 x 29
 y 17
 end
-arch beach
+arch cobblestones2
 x 29
 y 18
 end
-arch swall_2_1_2
+arch cwall_2_1_2
 x 29
 y 18
 end
@@ -9747,9 +9864,9 @@ y 23
 connected 9996
 end
 arch goldfloor
-name Northern Farm Plot (drop 100 gold coins)
+name Northern Farm Plot (drop 50 gold coins)
 slaying money
-food 1000
+food 500
 x 29
 y 24
 connected 9996
@@ -9783,11 +9900,11 @@ arch magic_banned
 x 29
 y 30
 end
-arch grass
+arch cobblestones2
 x 29
 y 30
 end
-arch cwall_2_1_2
+arch dwall_win2
 x 29
 y 30
 end
@@ -10165,7 +10282,7 @@ arch river_se-n
 x 30
 y 18
 end
-arch swall_2_1_2
+arch cwall_2_1_2
 x 30
 y 18
 end
@@ -10199,9 +10316,9 @@ y 23
 connected 9996
 end
 arch goldfloor
-name Southern Farm Plot (drop 100 gold coins)
+name Southern Farm Plot (drop 50 gold coins)
 slaying money
-food 1000
+food 500
 x 30
 y 24
 connected 9997
@@ -10235,11 +10352,11 @@ arch magic_banned
 x 30
 y 30
 end
-arch grass
+arch cobblestones2
 x 30
 y 30
 end
-arch cwall_2_1_2
+arch dwall_win2
 x 30
 y 30
 end
@@ -10587,7 +10704,7 @@ arch river_nw-se_u
 x 31
 y 18
 end
-arch swall_2_2_3
+arch cwall_2_2_3
 x 31
 y 18
 end
@@ -10603,7 +10720,7 @@ arch swall_2_1_1
 x 31
 y 19
 end
-arch hills
+arch cobblestones2
 x 31
 y 20
 end
@@ -10615,7 +10732,7 @@ arch swall_2_1_1
 x 31
 y 20
 end
-arch brush
+arch cobblestones2
 x 31
 y 21
 end
@@ -10623,7 +10740,7 @@ arch swall_2_1_1
 x 31
 y 21
 end
-arch brush
+arch cobblestones2
 x 31
 y 22
 end
@@ -10631,7 +10748,7 @@ arch swall_2_1_1
 x 31
 y 22
 end
-arch brush
+arch cobblestones2
 x 31
 y 23
 end
@@ -10643,7 +10760,7 @@ arch cobblestones2
 x 31
 y 24
 end
-arch brush
+arch cobblestones2
 x 31
 y 25
 end
@@ -10651,7 +10768,7 @@ arch swall_2_2_3
 x 31
 y 25
 end
-arch brush
+arch cobblestones2
 x 31
 y 26
 end
@@ -10659,7 +10776,7 @@ arch swall_2_1_1
 x 31
 y 26
 end
-arch brush
+arch cobblestones2
 x 31
 y 27
 end
@@ -10667,7 +10784,7 @@ arch swall_2_1_1
 x 31
 y 27
 end
-arch brush
+arch cobblestones2
 x 31
 y 28
 end
@@ -10675,7 +10792,7 @@ arch swall_2_1_1
 x 31
 y 28
 end
-arch brush
+arch cobblestones2
 x 31
 y 29
 end
@@ -10687,11 +10804,15 @@ arch magic_banned
 x 31
 y 30
 end
-arch grass
+arch cobblestones2
 x 31
 y 30
 end
 arch swall_2_2_4
+x 31
+y 30
+end
+arch cwall_3_1
 x 31
 y 30
 end
@@ -11044,7 +11165,7 @@ arch river_nw-se
 x 32
 y 20
 end
-arch hills
+arch cobblestones2
 x 32
 y 21
 end
@@ -11052,11 +11173,11 @@ arch river_nw-se_l
 x 32
 y 21
 end
-arch brush
+arch cobblestones2
 x 32
 y 22
 end
-arch brush
+arch cobblestones2
 x 32
 y 23
 end
@@ -11089,6 +11210,17 @@ x 32
 y 30
 end
 arch cobblestones2
+x 32
+y 30
+end
+arch cityport_a
+x 32
+y 30
+end
+arch magic_mouth
+msg
+Welcome to Scorn Farms!
+endmsg
 x 32
 y 30
 end
@@ -11490,7 +11622,7 @@ arch river_se-n
 x 33
 y 22
 end
-arch hills
+arch cobblestones2
 x 33
 y 23
 end
@@ -11527,6 +11659,17 @@ x 33
 y 30
 end
 arch cobblestones2
+x 33
+y 30
+end
+arch cityport_a
+x 33
+y 30
+end
+arch magic_mouth
+msg
+Welcome to Scorn Farms!
+endmsg
 x 33
 y 30
 end
@@ -11905,7 +12048,7 @@ arch river_se-n
 x 34
 y 24
 end
-arch hills
+arch cobblestones2
 x 34
 y 25
 end
@@ -11917,7 +12060,7 @@ arch lamppost
 x 34
 y 25
 end
-arch brush
+arch cobblestones2
 x 34
 y 26
 end
@@ -11933,7 +12076,7 @@ y 26
 arch gardenhoe
 end
 end
-arch brush
+arch cobblestones2
 x 34
 y 27
 end
@@ -11949,7 +12092,7 @@ y 27
 arch gardenhoe
 end
 end
-arch brush
+arch cobblestones2
 x 34
 y 28
 end
@@ -11965,7 +12108,7 @@ y 28
 arch gardenhoe
 end
 end
-arch brush
+arch cobblestones2
 x 34
 y 29
 end
@@ -11981,7 +12124,7 @@ arch grass
 x 34
 y 30
 end
-arch cwall_1_4
+arch cwall_2_1_2
 x 34
 y 30
 end
@@ -12369,7 +12512,7 @@ arch river_nw-se
 x 35
 y 25
 end
-arch hills
+arch cobblestones2
 x 35
 y 26
 end
@@ -12377,15 +12520,31 @@ arch river_nw-se_l
 x 35
 y 26
 end
-arch brush
+arch cwall_1_1
+x 35
+y 26
+end
+arch cobblestones2
 x 35
 y 27
 end
-arch brush
+arch cwall_2_1_1
+x 35
+y 27
+end
+arch cobblestones2
 x 35
 y 28
 end
-arch brush
+arch cwall_2_1_1
+x 35
+y 28
+end
+arch cobblestones2
+x 35
+y 29
+end
+arch cwall_2_1_1
 x 35
 y 29
 end
@@ -12397,7 +12556,7 @@ arch grass
 x 35
 y 30
 end
-arch cwall_2_1_2
+arch cwall_3_1
 x 35
 y 30
 end

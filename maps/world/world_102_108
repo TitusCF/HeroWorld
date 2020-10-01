@@ -1,6 +1,7 @@
 arch map
 name world_102_108
 reset_timeout 900
+fixed_resettime 1
 difficulty 1
 region santodominion
 width 50
@@ -11,7 +12,7 @@ msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun May 19 17:43:59 2002
-Modified: 2020-09-13 Titus
+Modified: 2020-10-01 Titus
 endmsg
 outdoor 1
 tile_path_1 world_102_107
@@ -5502,7 +5503,7 @@ arch cobblestones
 x 24
 y 14
 end
-arch cobblestones
+arch cobbles_blue
 x 24
 y 15
 end
@@ -5705,7 +5706,7 @@ arch cobblestones
 x 25
 y 11
 end
-arch grass
+arch cobbles_blue
 x 25
 y 12
 end
@@ -5721,11 +5722,11 @@ arch brush
 x 25
 y 13
 end
-arch grass
+arch cobbles_blue
 x 25
 y 14
 end
-arch grass
+arch cobbles_blue
 x 25
 y 15
 end
@@ -5746,11 +5747,11 @@ arch grass_only
 x 25
 y 17
 end
-arch grass
+arch cobbles_blue
 x 25
 y 18
 end
-arch brush
+arch cobbles_blue
 x 25
 y 19
 end
@@ -5951,7 +5952,7 @@ arch cobblestones
 x 26
 y 11
 end
-arch grass
+arch cobbles_blue
 x 26
 y 12
 end
@@ -5959,11 +5960,11 @@ arch brush
 x 26
 y 13
 end
-arch grass
+arch cobbles_blue
 x 26
 y 14
 end
-arch tree
+arch cobbles_blue
 x 26
 y 15
 end
@@ -5975,11 +5976,11 @@ arch grass_only
 x 26
 y 17
 end
-arch brush
+arch cobbles_blue
 x 26
 y 18
 end
-arch tree
+arch cobbles_blue
 x 26
 y 19
 end
@@ -6166,7 +6167,7 @@ arch grass_only
 x 27
 y 10
 end
-arch cwall_2_1_1
+arch cwall_1_2
 x 27
 y 10
 end
@@ -6174,15 +6175,11 @@ arch cobblestones
 x 27
 y 11
 end
-arch cityport_b
-x 27
-y 11
-end
-arch grass
+arch cobbles_blue
 x 27
 y 12
 end
-arch dwall_2_1_1
+arch cwall_1_1
 x 27
 y 12
 end
@@ -6190,23 +6187,15 @@ arch grass
 x 27
 y 13
 end
-arch cwall_2_1_1
+arch cwall_1_2
 x 27
 y 13
 end
-arch grass
+arch cobbles_blue
 x 27
 y 14
 end
-arch cwall_2_1_1
-x 27
-y 14
-end
-arch grass
-x 27
-y 15
-end
-arch cwall_2_1_1
+arch cobbles_blue
 x 27
 y 15
 end
@@ -6214,7 +6203,7 @@ arch evergreens
 x 27
 y 16
 end
-arch cwall_2_1_1
+arch cwall_1_1
 x 27
 y 16
 end
@@ -6222,23 +6211,15 @@ arch evergreens
 x 27
 y 17
 end
-arch cwall_2_1_1
+arch cwall_1_2
 x 27
 y 17
 end
-arch grass
+arch cobbles_blue
 x 27
 y 18
 end
-arch cwall_2_1_1
-x 27
-y 18
-end
-arch grass
-x 27
-y 19
-end
-arch cwall_2_1_1
+arch cobbles_blue
 x 27
 y 19
 end
@@ -6246,7 +6227,7 @@ arch grass
 x 27
 y 20
 end
-arch cwall_2_1_1
+arch cwall_1_1
 x 27
 y 20
 end
@@ -6436,7 +6417,7 @@ arch evergreens
 x 28
 y 13
 end
-arch grass
+arch cobbles_blue
 x 28
 y 14
 end
@@ -6444,7 +6425,7 @@ arch lamppost
 x 28
 y 14
 end
-arch grass
+arch cobbles_blue
 x 28
 y 15
 end
@@ -6456,11 +6437,11 @@ arch evergreens
 x 28
 y 17
 end
-arch grass
+arch cobbles_blue
 x 28
 y 18
 end
-arch evergreens
+arch cobbles_blue
 x 28
 y 19
 end
@@ -7049,7 +7030,7 @@ arch grass
 x 31
 y 14
 end
-arch grass_only
+arch cobblestones2
 x 31
 y 15
 end
@@ -7057,7 +7038,11 @@ arch swall_2_2_2
 x 31
 y 15
 end
-arch grass_only
+arch dwall_0
+x 31
+y 15
+end
+arch cobblestones2
 x 31
 y 16
 end
@@ -7065,7 +7050,7 @@ arch swall_2_1_1
 x 31
 y 16
 end
-arch grass_only
+arch cobblestones2
 x 31
 y 17
 end
@@ -7073,11 +7058,15 @@ arch swall_2_1_1
 x 31
 y 17
 end
-arch grass_only
+arch cobblestones2
 x 31
 y 18
 end
 arch swall_2_2_1
+x 31
+y 18
+end
+arch dwall_0
 x 31
 y 18
 end
@@ -7268,7 +7257,7 @@ arch evergreens
 x 32
 y 14
 end
-arch grass_only
+arch cobblestones2
 x 32
 y 15
 end
@@ -7463,7 +7452,7 @@ arch grass
 x 33
 y 11
 end
-arch grass_only
+arch cobblestones2
 x 33
 y 12
 end
@@ -7471,7 +7460,11 @@ arch swall_2_2_2
 x 33
 y 12
 end
-arch grass_only
+arch dwall_0
+x 33
+y 12
+end
+arch cobblestones2
 x 33
 y 13
 end
@@ -7479,7 +7472,7 @@ arch swall_2_1_1
 x 33
 y 13
 end
-arch grass_only
+arch cobblestones2
 x 33
 y 14
 end
@@ -7507,6 +7500,13 @@ x 33
 y 17
 end
 arch cobblestones2
+x 33
+y 18
+end
+arch magic_mouth
+msg
+Thank you for visiting Santo Dominion Farm!
+endmsg
 x 33
 y 18
 end
@@ -7681,7 +7681,7 @@ arch brush
 x 34
 y 11
 end
-arch grass_only
+arch cobblestones2
 x 34
 y 12
 end
@@ -7729,7 +7729,14 @@ arch cobblestones2
 x 34
 y 20
 end
-arch evergreens
+arch magic_mouth
+msg
+Thank you for visiting Santo Dominion Farm!
+endmsg
+x 34
+y 20
+end
+arch cobblestones2
 x 34
 y 21
 end
@@ -7737,7 +7744,7 @@ arch swall_1_1
 x 34
 y 21
 end
-arch evergreens
+arch cobblestones2
 x 34
 y 22
 end
@@ -7745,7 +7752,7 @@ arch swall_2_1_1
 x 34
 y 22
 end
-arch evergreens
+arch cobblestones2
 x 34
 y 23
 end
@@ -7753,7 +7760,7 @@ arch swall_2_1_1
 x 34
 y 23
 end
-arch evergreens
+arch cobblestones2
 x 34
 y 24
 end
@@ -7761,11 +7768,15 @@ arch swall_2_1_1
 x 34
 y 24
 end
-arch evergreens
+arch cobblestones2
 x 34
 y 25
 end
 arch swall_2_2_1
+x 34
+y 25
+end
+arch dwall_0
 x 34
 y 25
 end
@@ -7908,7 +7919,7 @@ arch woods_2
 x 35
 y 10
 end
-arch grass_only
+arch cobblestones2
 x 35
 y 11
 end
@@ -7916,7 +7927,11 @@ arch swall_2_2_2
 x 35
 y 11
 end
-arch grass_only
+arch dwall_0
+x 35
+y 11
+end
+arch cobblestones2
 x 35
 y 12
 end
@@ -7983,7 +7998,7 @@ arch brush
 x 35
 y 24
 end
-arch brush
+arch cobblestones2
 x 35
 y 25
 end
@@ -8130,7 +8145,7 @@ arch steppe
 x 36
 y 10
 end
-arch grass_only
+arch cobblestones2
 x 36
 y 11
 end
@@ -8161,6 +8176,26 @@ end
 arch brush
 x 36
 y 17
+end
+arch magic_banned
+x 36
+y 17
+end
+arch dungeon_magic
+x 36
+y 17
+end
+arch dragon_steak_table
+name Purchase a Farming Hoe Here! (20 platinum)
+slaying money
+msg
+Enjoy your hoe!
+endmsg
+food 1000
+x 36
+y 17
+arch gardenhoe
+end
 end
 arch brush
 x 36
@@ -8194,7 +8229,7 @@ arch brush
 x 36
 y 24
 end
-arch brush
+arch cobblestones2
 x 36
 y 25
 end
@@ -8341,7 +8376,7 @@ arch steppe
 x 37
 y 10
 end
-arch grass_only
+arch cobblestones2
 x 37
 y 11
 end
@@ -8373,11 +8408,15 @@ arch brush
 x 37
 y 17
 end
+arch swall_1_1
+x 37
+y 17
+end
 arch brush
 x 37
 y 18
 end
-arch swall_2_1_2
+arch swall_3_1
 x 37
 y 18
 end
@@ -8405,7 +8444,7 @@ arch tree
 x 37
 y 24
 end
-arch tree
+arch cobblestones2
 x 37
 y 25
 end
@@ -8552,7 +8591,7 @@ arch hills
 x 38
 y 10
 end
-arch grass_only
+arch cobblestones2
 x 38
 y 11
 end
@@ -8583,6 +8622,26 @@ end
 arch brush
 x 38
 y 17
+end
+arch magic_banned
+x 38
+y 17
+end
+arch dungeon_magic
+x 38
+y 17
+end
+arch dragon_steak_table
+name Purchase a Farming Hoe Here! (20 platinum)
+slaying money
+msg
+Enjoy your hoe!
+endmsg
+food 1000
+x 38
+y 17
+arch gardenhoe
+end
 end
 arch brush
 x 38
@@ -8623,7 +8682,7 @@ arch brush
 x 38
 y 24
 end
-arch brush
+arch cobblestones2
 x 38
 y 25
 end
@@ -8770,7 +8829,7 @@ arch hills
 x 39
 y 10
 end
-arch grass_only
+arch cobblestones2
 x 39
 y 11
 end
@@ -8778,7 +8837,11 @@ arch swall_2_2_3
 x 39
 y 11
 end
-arch grass_only
+arch dwall_0
+x 39
+y 11
+end
+arch cobblestones2
 x 39
 y 12
 end
@@ -8810,7 +8873,7 @@ arch brush
 x 39
 y 18
 end
-arch swall_2_1_2
+arch swall_1_3
 x 39
 y 18
 end
@@ -8838,7 +8901,7 @@ arch brush
 x 39
 y 24
 end
-arch tree
+arch cobblestones2
 x 39
 y 25
 end
@@ -8989,7 +9052,7 @@ arch hills
 x 40
 y 11
 end
-arch grass_only
+arch cobblestones2
 x 40
 y 12
 end
@@ -9021,10 +9084,6 @@ arch brush
 x 40
 y 18
 end
-arch swall_2_1_2
-x 40
-y 18
-end
 arch brush
 x 40
 y 19
@@ -9049,7 +9108,7 @@ arch brush
 x 40
 y 24
 end
-arch tree
+arch cobblestones2
 x 40
 y 25
 end
@@ -9200,11 +9259,11 @@ arch hills
 x 41
 y 11
 end
-arch grass_only
+arch cobblestones2
 x 41
 y 12
 end
-arch swall_2_2_3
+arch swall_2_1_2
 x 41
 y 12
 end
@@ -9212,23 +9271,15 @@ arch grass_only
 x 41
 y 13
 end
-arch swall_2_1_1
-x 41
-y 13
-end
-arch grass_only
-x 41
-y 14
-end
-arch swall_2_1_1
+arch goldfloor
+name Eastern Farm Plot (drop 50 gold coins)
+slaying money
+food 500
 x 41
 y 14
+connected 9993
 end
 arch brush
-x 41
-y 15
-end
-arch swall_2_1_1
 x 41
 y 15
 end
@@ -9236,23 +9287,15 @@ arch brush
 x 41
 y 16
 end
-arch swall_2_1_1
-x 41
-y 16
-end
-arch brush
-x 41
-y 17
-end
-arch swall_2_1_1
+arch goldfloor
+name Eastern Farm Plot (drop 50 gold coins)
+slaying money
+food 500
 x 41
 y 17
+connected 9992
 end
 arch brush
-x 41
-y 18
-end
-arch swall_3_4
 x 41
 y 18
 end
@@ -9260,31 +9303,19 @@ arch brush
 x 41
 y 19
 end
-arch swall_2_1_1
-x 41
-y 19
-end
 arch brush
 x 41
 y 20
 end
-arch swall_2_1_1
-x 41
-y 20
-end
-arch brush
-x 41
-y 21
-end
-arch swall_2_1_1
+arch goldfloor
+name Eastern Farm Plot (drop 50 gold coins)
+slaying money
+food 500
 x 41
 y 21
+connected 9991
 end
 arch brush
-x 41
-y 22
-end
-arch swall_2_1_1
 x 41
 y 22
 end
@@ -9292,23 +9323,19 @@ arch brush
 x 41
 y 23
 end
-arch swall_2_1_1
-x 41
-y 23
-end
-arch brush
-x 41
-y 24
-end
-arch swall_2_1_1
+arch goldfloor
+name Eastern Farm Plot (drop 50 gold coins)
+slaying money
+food 500
 x 41
 y 24
+connected 999
 end
-arch brush
+arch cobblestones2
 x 41
 y 25
 end
-arch swall_2_2_4
+arch swall_2_1_2
 x 41
 y 25
 end
@@ -9455,59 +9482,123 @@ arch hills
 x 42
 y 11
 end
-arch hills
+arch cobblestones2
 x 42
 y 12
 end
-arch evergreens
+arch swall_2_1_2
+x 42
+y 12
+end
+arch cobblestones2
 x 42
 y 13
 end
-arch evergreens
+arch spikes_closed
+x 42
+y 13
+connected 9993
+end
+arch cobblestones2
 x 42
 y 14
 end
-arch evergreens
+arch spikes_closed
+x 42
+y 14
+connected 9993
+end
+arch cobblestones2
 x 42
 y 15
 end
-arch brush
+arch swall_1_4
+x 42
+y 15
+end
+arch cobblestones2
 x 42
 y 16
 end
-arch brush
+arch spikes_closed
+x 42
+y 16
+connected 9992
+end
+arch cobblestones2
 x 42
 y 17
 end
-arch brush
+arch spikes_closed
+x 42
+y 17
+connected 9992
+end
+arch cobblestones2
 x 42
 y 18
 end
-arch brush
+arch swall_2_2_2
+x 42
+y 18
+end
+arch cobblestones2
 x 42
 y 19
 end
-arch brush
+arch swall_2_2_1
+x 42
+y 19
+end
+arch cobblestones2
 x 42
 y 20
 end
-arch evergreens
+arch spikes_closed
+x 42
+y 20
+connected 9991
+end
+arch cobblestones2
 x 42
 y 21
 end
-arch brush
+arch spikes_closed
+x 42
+y 21
+connected 9991
+end
+arch cobblestones2
 x 42
 y 22
 end
-arch evergreens
+arch swall_1_4
+x 42
+y 22
+end
+arch cobblestones2
 x 42
 y 23
 end
-arch tree
+arch spikes_closed
+x 42
+y 23
+connected 999
+end
+arch cobblestones2
 x 42
 y 24
 end
-arch hills
+arch spikes_closed
+x 42
+y 24
+connected 999
+end
+arch cobblestones2
+x 42
+y 25
+end
+arch swall_2_1_2
 x 42
 y 25
 end
@@ -9658,59 +9749,83 @@ arch mountain
 x 43
 y 11
 end
-arch hills
+arch cobblestones2
 x 43
 y 12
 end
-arch hills
+arch swall_2_1_2
+x 43
+y 12
+end
+arch farmland
 x 43
 y 13
 end
-arch evergreens
+arch farmland
 x 43
 y 14
 end
-arch evergreens
+arch cobblestones2
 x 43
 y 15
 end
-arch evergreens
+arch swall_2_1_2
+x 43
+y 15
+end
+arch farmland
 x 43
 y 16
 end
-arch evergreens
+arch farmland
 x 43
 y 17
 end
-arch evergreens
+arch cobblestones2
 x 43
 y 18
 end
-arch evergreens
+arch swall_2_1_2
+x 43
+y 18
+end
+arch cobblestones2
 x 43
 y 19
 end
-arch evergreens
+arch swall_2_1_2
+x 43
+y 19
+end
+arch farmland
 x 43
 y 20
 end
-arch evergreens
+arch farmland
 x 43
 y 21
 end
-arch evergreens
+arch cobblestones2
 x 43
 y 22
 end
-arch evergreens
+arch swall_2_1_2
+x 43
+y 22
+end
+arch farmland
 x 43
 y 23
 end
-arch hills
+arch farmland
 x 43
 y 24
 end
-arch hills
+arch cobblestones2
+x 43
+y 25
+end
+arch swall_2_1_2
 x 43
 y 25
 end
@@ -9857,59 +9972,83 @@ arch mountain
 x 44
 y 11
 end
-arch hills
+arch cobblestones2
 x 44
 y 12
 end
-arch hills
+arch swall_2_1_2
+x 44
+y 12
+end
+arch farmland
 x 44
 y 13
 end
-arch hills
+arch farmland
 x 44
 y 14
 end
-arch hills
+arch cobblestones2
 x 44
 y 15
 end
-arch evergreens
+arch swall_2_1_2
+x 44
+y 15
+end
+arch farmland
 x 44
 y 16
 end
-arch evergreens
+arch farmland
 x 44
 y 17
 end
-arch evergreens
+arch cobblestones2
 x 44
 y 18
 end
-arch evergreens
+arch swall_2_1_2
+x 44
+y 18
+end
+arch cobblestones2
 x 44
 y 19
 end
-arch evergreens
+arch swall_2_1_2
+x 44
+y 19
+end
+arch farmland
 x 44
 y 20
 end
-arch evergreens
+arch farmland
 x 44
 y 21
 end
-arch evergreens
+arch cobblestones2
 x 44
 y 22
 end
-arch evergreens
+arch swall_2_1_2
+x 44
+y 22
+end
+arch farmland
 x 44
 y 23
 end
-arch hills
+arch farmland
 x 44
 y 24
 end
-arch hills
+arch cobblestones2
+x 44
+y 25
+end
+arch swall_2_1_2
 x 44
 y 25
 end
@@ -10056,59 +10195,83 @@ arch mountain
 x 45
 y 11
 end
-arch mountain
+arch cobblestones2
 x 45
 y 12
 end
-arch hills
+arch swall_2_1_2
+x 45
+y 12
+end
+arch farmland
 x 45
 y 13
 end
-arch hills
+arch farmland
 x 45
 y 14
 end
-arch hills
+arch cobblestones2
 x 45
 y 15
 end
-arch hills
+arch swall_2_1_2
+x 45
+y 15
+end
+arch farmland
 x 45
 y 16
 end
-arch hills
+arch farmland
 x 45
 y 17
 end
-arch evergreens
+arch cobblestones2
 x 45
 y 18
 end
-arch evergreens
+arch swall_2_1_2
+x 45
+y 18
+end
+arch cobblestones2
 x 45
 y 19
 end
-arch evergreens
+arch swall_2_1_2
+x 45
+y 19
+end
+arch farmland
 x 45
 y 20
 end
-arch evergreens
+arch farmland
 x 45
 y 21
 end
-arch evergreens
+arch cobblestones2
 x 45
 y 22
 end
-arch hills
+arch swall_2_1_2
+x 45
+y 22
+end
+arch farmland
 x 45
 y 23
 end
-arch hills
+arch farmland
 x 45
 y 24
 end
-arch hills
+arch cobblestones2
+x 45
+y 25
+end
+arch swall_2_1_2
 x 45
 y 25
 end
@@ -10255,59 +10418,87 @@ arch mountain2
 x 46
 y 11
 end
-arch mountain
+arch cobblestones2
 x 46
 y 12
 end
-arch mountain
+arch swall_2_1_2
+x 46
+y 12
+end
+arch farmland
 x 46
 y 13
 end
-arch mountain
+arch farmland
 x 46
 y 14
 end
-arch mountain
+arch cobblestones2
 x 46
 y 15
 end
-arch hills
+arch swall_2_1_2
+x 46
+y 15
+end
+arch farmland
 x 46
 y 16
 end
-arch hills
+arch farmland
 x 46
 y 17
 end
-arch hills
+arch cobblestones2
 x 46
 y 18
 end
-arch hills
+arch swall_2_1_2
+x 46
+y 18
+end
+arch cobblestones2
 x 46
 y 19
 end
-arch hills
+arch swall_2_1_2
+x 46
+y 19
+end
+arch farmland
 x 46
 y 20
 end
-arch hills
+arch farmland
 x 46
 y 21
 end
-arch hills
+arch cobblestones2
 x 46
 y 22
 end
-arch hills
+arch swall_2_1_2
+x 46
+y 22
+end
+arch swall_2_1_2
+x 46
+y 22
+end
+arch farmland
 x 46
 y 23
 end
-arch hills
+arch farmland
 x 46
 y 24
 end
-arch mountain
+arch cobblestones2
+x 46
+y 25
+end
+arch swall_2_1_2
 x 46
 y 25
 end
@@ -10454,59 +10645,87 @@ arch flagstone
 x 47
 y 11
 end
-arch mountain
+arch cobblestones2
 x 47
 y 12
 end
-arch mountain
+arch swall_2_1_2
+x 47
+y 12
+end
+arch farmland
 x 47
 y 13
 end
-arch mountain
+arch farmland
 x 47
 y 14
 end
-arch mountain
+arch cobblestones2
 x 47
 y 15
 end
-arch mountain
+arch swall_2_1_2
+x 47
+y 15
+end
+arch farmland
 x 47
 y 16
 end
-arch mountain
+arch farmland
 x 47
 y 17
 end
-arch mountain
+arch cobblestones2
 x 47
 y 18
 end
-arch mountain
+arch swall_2_1_2
+x 47
+y 18
+end
+arch cobblestones2
 x 47
 y 19
 end
-arch mountain
+arch swall_2_1_2
+x 47
+y 19
+end
+arch farmland
 x 47
 y 20
 end
-arch hills
+arch farmland
 x 47
 y 21
 end
-arch hills
+arch cobblestones2
 x 47
 y 22
 end
-arch mountain
+arch swall_2_1_2
+x 47
+y 22
+end
+arch swall_2_1_2
+x 47
+y 22
+end
+arch farmland
 x 47
 y 23
 end
-arch mountain
+arch farmland
 x 47
 y 24
 end
-arch mountain
+arch cobblestones2
+x 47
+y 25
+end
+arch swall_2_1_2
 x 47
 y 25
 end
@@ -10653,59 +10872,123 @@ arch flagstone
 x 48
 y 11
 end
-arch mountain
+arch cobblestones2
 x 48
 y 12
 end
-arch mountain
+arch swall_2_2_3
+x 48
+y 12
+end
+arch dwall_0
+x 48
+y 12
+end
+arch cobblestones2
 x 48
 y 13
 end
-arch mountain
+arch swall_2_1_1
+x 48
+y 13
+end
+arch cobblestones2
 x 48
 y 14
 end
-arch mountain
+arch swall_2_1_1
+x 48
+y 14
+end
+arch cobblestones2
 x 48
 y 15
 end
-arch mountain
+arch swall_3_4
+x 48
+y 15
+end
+arch cobblestones2
 x 48
 y 16
 end
-arch mountain
+arch swall_2_1_1
+x 48
+y 16
+end
+arch cobblestones2
 x 48
 y 17
 end
-arch mountain
+arch swall_2_1_1
+x 48
+y 17
+end
+arch cobblestones2
 x 48
 y 18
 end
-arch mountain
+arch swall_3_4
+x 48
+y 18
+end
+arch cobblestones2
 x 48
 y 19
 end
-arch mountain
+arch swall_3_4
+x 48
+y 19
+end
+arch cobblestones2
 x 48
 y 20
 end
-arch mountain
+arch swall_2_1_1
+x 48
+y 20
+end
+arch cobblestones2
 x 48
 y 21
 end
-arch mountain
+arch swall_2_1_1
+x 48
+y 21
+end
+arch cobblestones2
 x 48
 y 22
 end
-arch mountain
+arch swall_3_4
+x 48
+y 22
+end
+arch cobblestones2
 x 48
 y 23
 end
-arch mountain
+arch swall_2_1_1
+x 48
+y 23
+end
+arch cobblestones2
 x 48
 y 24
 end
-arch mountain
+arch swall_2_1_1
+x 48
+y 24
+end
+arch cobblestones2
+x 48
+y 25
+end
+arch swall_2_2_4
+x 48
+y 25
+end
+arch dwall_0
 x 48
 y 25
 end

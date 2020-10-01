@@ -1,12 +1,13 @@
 arch map
-region santodominion
 name tavern upstairs
+region santodominion
+width 33
+height 31
 msg
 Creator: Andreas Vogl
 Email: red.blaze@gmx.net
+Modified: 2020-10-01 Titus
 endmsg
-width 33
-height 31
 end
 arch grass
 end
@@ -634,9 +635,9 @@ y 6
 end
 arch creator
 other_arch furious_floor
-connected 20
 x 4
 y 7
+connected 20
 end
 arch woodfloor
 x 4
@@ -647,9 +648,9 @@ msg
 @match *
 Don't steal Bonzo's money.
 endmsg
-stand_still 0
 x 4
 y 7
+stand_still 0
 end
 arch woodfloor
 x 4
@@ -807,9 +808,9 @@ x 5
 y 10
 end
 arch mover_5
-attacktype 1
 x 5
 y 11
+attacktype 1
 end
 arch woodfloor
 x 5
@@ -824,12 +825,12 @@ x 5
 y 12
 end
 arch guard
-face guard_med.111
 msg
 @match *
 These are the private rooms of Bonzo
 the Banker. You cannot pass.
 endmsg
+face guard_med.111
 x 5
 y 12
 end
@@ -851,16 +852,16 @@ y 16
 end
 arch door_look_2
 face wooddoor_1.111
-randomitems none
-no_pass 0
 hp 0
 exp 0
 ac 0
-alive 0
-level 0
-material 0
 x 5
 y 16
+level 0
+material 0
+randomitems none
+alive 0
+no_pass 0
 end
 arch woodfloor
 x 5
@@ -959,9 +960,9 @@ y 6
 end
 arch creator
 other_arch furious_floor
-connected 20
 x 6
 y 7
+connected 20
 end
 arch woodfloor
 x 6
@@ -972,9 +973,9 @@ msg
 @match *
 Don't steal Bonzo's money.
 endmsg
-stand_still 0
 x 6
 y 7
+stand_still 0
 end
 arch woodfloor
 x 6
@@ -1030,7 +1031,6 @@ y 17
 end
 arch sage
 name Thief
-face thief.171
 msg
 @match money|bonzo|bank|guard
 I'd like to sneak in there and steal
@@ -1042,17 +1042,18 @@ opposite side of the corridor.
 I'm sure he wouldn't employ guards if
 there wasn't good money in there.
 endmsg
-randomitems thief
+face thief.171
 hp 500
 maxhp 500
+x 6
+y 17
 resist_physical 100
 resist_magic 50
 resist_fire 90
 resist_electricity 90
 resist_cold 90
+randomitems thief
 monster 0
-x 6
-y 17
 end
 arch woodfloor
 x 6
@@ -1639,10 +1640,6 @@ arch woodfloor
 x 9
 y 27
 end
-arch random_food
-x 9
-y 27
-end
 arch woodfloor
 x 9
 y 28
@@ -1870,9 +1867,9 @@ x 11
 y 6
 end
 arch pedestal
-connected 21
 x 11
 y 7
+connected 21
 end
 arch woodfloor
 x 11
@@ -1889,9 +1886,9 @@ msg
 Nooo! Don't steal my money. It's all
 mine, mine, miiiine!
 endmsg
-random_movement 0
 x 11
 y 7
+random_movement 0
 arch goldcoin
 nrof 200
 end
@@ -1942,16 +1939,16 @@ y 16
 end
 arch door_look_2
 face wooddoor_1.111
-randomitems none
-no_pass 0
 hp 0
 exp 0
 ac 0
-alive 0
-level 0
-material 0
 x 11
 y 16
+level 0
+material 0
+randomitems none
+alive 0
+no_pass 0
 end
 arch woodfloor
 x 11
@@ -2564,16 +2561,16 @@ x 14
 y 25
 end
 arch door_look_2
-randomitems none
-no_pass 0
 hp 0
 exp 0
 ac 0
-alive 0
-level 0
-material 0
 x 14
 y 25
+level 0
+material 0
+randomitems none
+alive 0
+no_pass 0
 end
 arch woodfloor
 x 14
@@ -3072,16 +3069,16 @@ x 18
 y 3
 end
 arch door_look_2
-randomitems none
-no_pass 0
 hp 0
 exp 0
 ac 0
-alive 0
-level 0
-material 0
 x 18
 y 3
+level 0
+material 0
+randomitems none
+alive 0
+no_pass 0
 end
 arch woodfloor
 x 18
@@ -3192,22 +3189,22 @@ x 18
 y 18
 end
 arch woodfloor
-type 41
 hp 30
 sp 26
-activate_on_push 1
-activate_on_release 1
-connected 14
 x 18
 y 19
+type 41
+connected 14
+activate_on_push 1
+activate_on_release 1
 end
 arch locked_door2
-face ldoor_white2.111
+slaying no_key_available
 msg
 There's a note on the door:
 I am ill. Please do not disturb.
 endmsg
-slaying no_key_available
+face ldoor_white2.111
 x 18
 y 19
 end
@@ -3256,16 +3253,16 @@ x 18
 y 25
 end
 arch door_look_2
-randomitems none
-no_pass 0
 hp 0
 exp 0
 ac 0
-alive 0
-level 0
-material 0
 x 18
 y 25
+level 0
+material 0
+randomitems none
+alive 0
+no_pass 0
 end
 arch woodfloor
 x 18
@@ -3318,9 +3315,9 @@ x 19
 y 1
 end
 arch bookshelf
-no_pick 1
 x 19
 y 1
+no_pick 1
 end
 arch woodfloor
 x 19
@@ -3443,9 +3440,9 @@ x 19
 y 23
 end
 arch bookshelf
-no_pick 1
 x 19
 y 23
+no_pick 1
 arch note
 name list of ingredients
 msg
@@ -3504,9 +3501,9 @@ x 20
 y 1
 end
 arch bookshelf
-no_pick 1
 x 20
 y 1
+no_pick 1
 arch book_clasp
 name history book
 msg
@@ -3691,9 +3688,9 @@ x 21
 y 1
 end
 arch bookshelf
-no_pick 1
 x 21
 y 1
+no_pick 1
 arch book_clasp
 name history book
 msg
@@ -3765,16 +3762,16 @@ y 12
 end
 arch door_look_2
 face wooddoor_1.111
-randomitems none
-no_pass 0
 hp 0
 exp 0
 ac 0
-alive 0
-level 0
-material 0
 x 21
 y 12
+level 0
+material 0
+randomitems none
+alive 0
+no_pass 0
 end
 arch woodfloor
 x 21
@@ -3817,18 +3814,17 @@ x 21
 y 20
 end
 arch woodfloor
-type 41
 hp 28
 sp 28
-activate_on_push 1
-activate_on_release 1
-connected 14
 x 21
 y 21
+type 41
+connected 14
+activate_on_push 1
+activate_on_release 1
 end
 arch sage
 name Gorgon the Warrior
-face corpse.111
 msg
 @match plate|mail
 You greedy... rascal... get me the cure
@@ -3843,8 +3839,11 @@ to mix a... cure... *cough*.
 If you do... I would... give you my...
 best plate mail.
 endmsg
+face corpse.111
 hp 500
 maxhp 500
+x 21
+y 21
 resist_physical 100
 resist_magic 100
 resist_fire 100
@@ -3860,12 +3859,10 @@ resist_fear 100
 resist_deplete 100
 resist_death 100
 resist_chaos 100
-resist_blind 100
-resist_holyword 100
 resist_godpower 100
+resist_holyword 100
+resist_blind 100
 monster 0
-x 21
-y 21
 end
 arch dungeon_magic
 x 21
@@ -3904,7 +3901,6 @@ y 25
 end
 arch sage
 name Warloc Druid
-face mage.131
 msg
 @match viper
 A brood of shadow vipers exists
@@ -3940,9 +3936,11 @@ Would you help me to create a cure for him?
 Do you see my friend Gorgon in the other
 room? He got poisoned. We need your help!
 endmsg
-randomitems none
+face mage.131
 hp 500
 maxhp 500
+x 21
+y 25
 resist_physical 100
 resist_magic 100
 resist_fire 100
@@ -3958,12 +3956,11 @@ resist_fear 100
 resist_deplete 100
 resist_death 100
 resist_chaos 100
-resist_blind 100
-resist_holyword 100
 resist_godpower 100
+resist_holyword 100
+resist_blind 100
+randomitems none
 stand_still 1
-x 21
-y 25
 end
 arch woodfloor
 x 21
@@ -4000,9 +3997,9 @@ x 22
 y 1
 end
 arch bookshelf
-no_pick 1
 x 22
 y 1
+no_pick 1
 end
 arch woodfloor
 x 22
@@ -4054,7 +4051,6 @@ y 8
 end
 arch c_man
 name Sorcerer
-face sorcerer.151
 msg
 @match yes|story
 North of St. Dominion there is a huge
@@ -4067,20 +4063,21 @@ had abused their power to summon demons.
 You look like you are seeking adventures.
 Care to hear a story?
 endmsg
-level 6
-exp 1000
-randomitems none
-dam 1
+face sorcerer.151
+Pow 3
 hp 200
 maxhp 200
-ac -5
 sp 100
 maxsp 100
-Pow 3
-resist_physical 50
-resist_electricity 100
+exp 1000
+dam 1
+ac -5
 x 22
 y 8
+level 6
+resist_physical 50
+resist_electricity 100
+randomitems none
 arch spell_sm_lightning
 end
 end
@@ -4217,9 +4214,9 @@ x 23
 y 1
 end
 arch bookshelf
-no_pick 1
 x 23
 y 1
+no_pick 1
 end
 arch woodfloor
 x 23
@@ -4322,16 +4319,16 @@ name old chest
 x 23
 y 17
 arch plate_mail
+title of dominion
 msg
 This plate mail is forged of high quality
 steel. It is lighter than usual but just
 as strong. It even seems to protect a
 little against fire.
 endmsg
-title of dominion
-weight 60000
-value 5000
 resist_fire 20
+value 5000
+weight 60000
 end
 end
 arch woodfloor
@@ -4378,45 +4375,45 @@ arch altar
 name 13
 slaying shadow viper's skin
 food 1
-connected 13
 x 23
 y 25
+connected 13
 end
 arch altar
 name 12
 slaying scorpion's stinger
 food 1
-connected 12
 x 23
 y 25
+connected 12
 end
 arch altar
 name 11
 slaying beholder's tongue
 food 1
-connected 11
 x 23
 y 25
+connected 11
 end
 arch permanent_lava
 name fireplace
-type 0
-wc 0
-lifesave 0
-attacktype 0
 hp 0
 dam 0
-walk_on 0
+wc 0
 x 23
 y 25
+type 0
+attacktype 0
+walk_on 0
+lifesave 0
 end
 arch boulder
 name cauldron
 face cauldron_open.111
-no_pass 0
-can_roll 0
 x 23
 y 25
+no_pass 0
+can_roll 0
 end
 arch afloor_right
 x 23
@@ -4723,10 +4720,6 @@ arch woodfloor
 x 25
 y 10
 end
-arch potato
-x 25
-y 10
-end
 arch woodfloor
 x 25
 y 11
@@ -4884,19 +4877,15 @@ msg
 Come have a bite with me.
 This food is real good.
 endmsg
-unaggressive 1
 x 26
 y 9
+unaggressive 1
 end
 arch woodfloor
 x 26
 y 10
 end
 arch woodfloor
-x 26
-y 11
-end
-arch food
 x 26
 y 11
 end
@@ -5077,16 +5066,16 @@ y 16
 end
 arch door_look_2
 face wooddoor_1.111
-randomitems none
-no_pass 0
 hp 0
 exp 0
 ac 0
-alive 0
-level 0
-material 0
 x 27
 y 16
+level 0
+material 0
+randomitems none
+alive 0
+no_pass 0
 end
 arch woodfloor
 x 27
@@ -5200,10 +5189,6 @@ x 28
 y 7
 end
 arch woodfloor
-x 28
-y 8
-end
-arch food
 x 28
 y 8
 end
@@ -5280,12 +5265,12 @@ x 28
 y 21
 end
 arch chest
-randomitems random_talisman
 x 28
 y 21
+randomitems random_talisman
 arch rune_frost
-level 6
 dam 60
+level 6
 end
 end
 arch woodfloor
@@ -5314,31 +5299,31 @@ y 26
 end
 arch button_small
 name 14
-weight 25000
-connected 14
 x 28
 y 26
+weight 25000
+connected 14
 end
 arch creator
 name 13
 other_arch ten_kilo
-connected 13
 x 28
 y 26
+connected 13
 end
 arch creator
 name 12
 other_arch ten_kilo
-connected 12
 x 28
 y 26
+connected 12
 end
 arch creator
 name 11
 other_arch ten_kilo
-connected 11
 x 28
 y 26
+connected 11
 end
 arch blocked
 x 28
@@ -5411,15 +5396,7 @@ arch woodfloor
 x 29
 y 10
 end
-arch roast_bird
-x 29
-y 10
-end
 arch woodfloor
-x 29
-y 11
-end
-arch loaf
 x 29
 y 11
 end
@@ -5518,11 +5495,11 @@ The Warlock Druid says:
 Hooray! The potion is completed. Now my
 friend Gorgon can be cured.
 endmsg
+x 29
+y 26
 connected 14
 walk_on 0
 fly_on 0
-x 29
-y 26
 end
 arch magic_mouth
 name 13
@@ -5530,11 +5507,11 @@ msg
 You put the shadow viper's skin
 into the cauldron.
 endmsg
+x 29
+y 26
 connected 13
 walk_on 0
 fly_on 0
-x 29
-y 26
 end
 arch magic_mouth
 name 12
@@ -5542,11 +5519,11 @@ msg
 You put the scorpion's stinger into
 the cauldron.
 endmsg
+x 29
+y 26
 connected 12
 walk_on 0
 fly_on 0
-x 29
-y 26
 end
 arch magic_mouth
 name 11
@@ -5554,11 +5531,11 @@ msg
 You put the beholder's tongue into
 the cauldron.
 endmsg
+x 29
+y 26
 connected 11
 walk_on 0
 fly_on 0
-x 29
-y 26
 end
 arch blocked
 x 29
@@ -5762,10 +5739,10 @@ end
 arch teleporter
 hp 21
 sp 20
-connected 14
-speed 0.0
 x 30
 y 28
+speed 0.0
+connected 14
 end
 arch fighter
 name Gorgon the Warrior
@@ -5775,13 +5752,13 @@ Thank you for saving me. You shall have
 my famous plate mail as reward.
 It's in the chest right there.
 endmsg
+x 30
+y 28
 resist_physical 100
 resist_magic 100
 resist_fire 100
 resist_electricity 100
 resist_cold 100
-x 30
-y 28
 end
 arch blocked
 x 30
@@ -5929,11 +5906,11 @@ msg
 Bonzo the Banker cries:
 Guards!! Kill this filthy thief!
 endmsg
+x 31
+y 26
 connected 20
 walk_on 0
 fly_on 0
-x 31
-y 26
 end
 arch woodfloor
 x 31
@@ -5941,17 +5918,17 @@ y 26
 end
 arch button_small
 name 20
-weight 1000
-connected 20
 x 31
 y 26
+weight 1000
+connected 20
 end
 arch creator
 name 21
 other_arch ten_kilo
-connected 21
 x 31
 y 26
+connected 21
 end
 arch blocked
 x 31

@@ -6,7 +6,7 @@ region afterlife
 width 66
 height 25
 msg
-Modified: 2020-09-06 Acer
+Modified: 2020-10-03 Titus
 endmsg
 end
 arch blackmarble
@@ -1717,6 +1717,7 @@ activate_on_release 0
 arch balm_generic
 name Stairs
 face stair2_up.111
+no_pick 1
 arch spell_word_of_recall
 name Recall
 skill sorcery
@@ -4262,6 +4263,7 @@ activate_on_release 0
 arch balm_generic
 name Stairs
 face stair2_up.111
+no_pick 1
 arch spell_word_of_recall
 name Recall
 skill sorcery
@@ -4491,7 +4493,7 @@ invisible 1
 connected 1456832
 activate_on_release 0
 end
-arch guide_melee
+arch sign
 name Handbook for the Recently Deceased
 msg
 So you've died, but is this the end?
@@ -4506,10 +4508,9 @@ The gravestone will be consumed automatically and the passage home will
 be open.
 'Apply' the stairs to start home.
 endmsg
+face book_red.111
 x 7
 y 8
-no_pick 1
-identified 1
 end
 arch dungeon_magic
 x 7
@@ -4694,6 +4695,7 @@ activate_on_push 0
 arch balm_generic
 name Stairs
 face stair2_up.111
+no_pick 1
 arch spell_word_of_penalty
 name Penalty
 skill sorcery
@@ -7024,6 +7026,7 @@ activate_on_release 0
 arch balm_generic
 name Stairs
 face stair2_up.111
+no_pick 1
 arch spell_word_of_recall
 name Recall
 skill sorcery
@@ -7452,6 +7455,7 @@ activate_on_push 0
 arch balm_generic
 name Stairs
 face stair2_up.111
+no_pick 1
 arch spell_word_of_penalty
 name Penalty
 skill sorcery
@@ -8485,26 +8489,6 @@ speed 0.0
 invisible 1
 connected 1456832
 activate_on_release 0
-end
-arch guide_melee
-name Handbook for the Recently Deceased
-msg
-So you've died, but is this the end?
-NOT AT ALL!
-
-The red path to the south is for those who have not
-had the grim and macabre foresight to carry a gravestone
-with them. For that they will loose some experience;
-(12% or one level, which ever is less).
-The white paths to the north are for those who do have a gravestone.
-The gravestone will be consumed automatically and the passage home will
-be open.
-'Apply' the stairs to start home.
-endmsg
-x 15
-y 8
-no_pick 1
-identified 1
 end
 arch dungeon_magic
 x 15
@@ -9899,6 +9883,7 @@ activate_on_release 0
 arch balm_generic
 name Stairs
 face stair2_up.111
+no_pick 1
 arch spell_word_of_recall
 name Recall
 skill sorcery
@@ -10145,6 +10130,25 @@ invisible 1
 connected 1456832
 activate_on_release 0
 end
+arch sign
+name Handbook for the Recently Deceased
+msg
+So you've died, but is this the end?
+NOT AT ALL!
+
+The red path to the south is for those who have not
+had the grim and macabre foresight to carry a gravestone
+with them. For that they will loose some experience;
+(12% or one level, which ever is less).
+The white paths to the north are for those who do have a gravestone.
+The gravestone will be consumed automatically and the passage home will
+be open.
+'Apply' the stairs to start home.
+endmsg
+face book_red.111
+x 19
+y 8
+end
 arch dungeon_magic
 x 19
 y 9
@@ -10336,6 +10340,7 @@ activate_on_push 0
 arch balm_generic
 name Stairs
 face stair2_up.111
+no_pick 1
 arch spell_word_of_penalty
 name Penalty
 skill sorcery
@@ -11592,6 +11597,7 @@ activate_on_release 0
 arch balm_generic
 name Stairs
 face stair2_up.111
+no_pick 1
 arch spell_word_of_recall
 name Recall
 skill sorcery
@@ -11821,26 +11827,6 @@ invisible 1
 connected 1456832
 activate_on_release 0
 end
-arch guide_melee
-name Handbook for the Recently Deceased
-msg
-So you've died, but is this the end?
-NOT AT ALL!
-
-The red path to the south is for those who have not
-had the grim and macabre foresight to carry a gravestone
-with them. For that they will loose some experience;
-(12% or one level, which ever is less).
-The white paths to the north are for those who do have a gravestone.
-The gravestone will be consumed automatically and the passage home will
-be open.
-'Apply' the stairs to start home.
-endmsg
-x 23
-y 8
-no_pick 1
-identified 1
-end
 arch dungeon_magic
 x 23
 y 9
@@ -12024,6 +12010,7 @@ activate_on_push 0
 arch balm_generic
 name Stairs
 face stair2_up.111
+no_pick 1
 arch spell_word_of_penalty
 name Penalty
 skill sorcery
@@ -13573,6 +13560,7 @@ activate_on_release 0
 arch balm_generic
 name Stairs
 face stair2_up.111
+no_pick 1
 arch spell_word_of_recall
 name Recall
 skill sorcery
@@ -14001,6 +13989,7 @@ activate_on_push 0
 arch balm_generic
 name Stairs
 face stair2_up.111
+no_pick 1
 arch spell_word_of_penalty
 name Penalty
 skill sorcery
@@ -17321,6 +17310,25 @@ arch Nimwall_2_1_2
 x 44
 y 4
 end
+arch sign
+name Handbook for the Recently Deceased
+msg
+So you've died, but is this the end?
+NOT AT ALL!
+
+The red path to the south is for those who have not
+had the grim and macabre foresight to carry a gravestone
+with them. For that they will loose some experience;
+(12% or one level, which ever is less).
+The white paths to the north are for those who do have a gravestone.
+The gravestone will be consumed automatically and the passage home will
+be open.
+'Apply' the stairs to start home.
+endmsg
+face book_red.111
+x 44
+y 7
+end
 arch afloor_black_left
 face blocked.111
 x 45
@@ -17461,40 +17469,30 @@ face blocked.111
 x 47
 y 1
 end
-arch scroll_new
+arch teleporter
+slaying waitingroom
+hp 3
+sp 3
 x 47
 y 1
-nrof 10
-level 100
+speed 0.0
+invisible 1
+connected 1456832
+activate_on_release 0
+end
+arch potion_generic
+x 47
+y 1
 no_pick 1
+identified 1
 arch spell_word_of_recall
 end
 end
-arch teleporter
-slaying waitingroom
-hp 3
-sp 3
-x 47
-y 1
-speed 0.0
-invisible 1
-connected 1456832
-activate_on_release 0
-end
 arch afloor_black_left
 face blocked.111
 x 47
 y 2
 end
-arch scroll_new
-x 47
-y 2
-nrof 10
-level 100
-no_pick 1
-arch spell_word_of_recall
-end
-end
 arch teleporter
 slaying waitingroom
 hp 3
@@ -17505,21 +17503,20 @@ speed 0.0
 invisible 1
 connected 1456832
 activate_on_release 0
+end
+arch potion_generic
+x 47
+y 2
+no_pick 1
+identified 1
+arch spell_word_of_recall
+end
 end
 arch afloor_black_left
 face blocked.111
 x 47
 y 3
 end
-arch scroll_new
-x 47
-y 3
-nrof 10
-level 100
-no_pick 1
-arch spell_word_of_recall
-end
-end
 arch teleporter
 slaying waitingroom
 hp 3
@@ -17530,6 +17527,14 @@ speed 0.0
 invisible 1
 connected 1456832
 activate_on_release 0
+end
+arch potion_generic
+x 47
+y 3
+no_pick 1
+identified 1
+arch spell_word_of_recall
+end
 end
 arch afloor_black_left
 face blocked.111

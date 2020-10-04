@@ -9,7 +9,7 @@ enter_x 14
 enter_y 4
 msg
 Created:  2006-05-26 Bort
-Modified: 2009-07-12 Andreas Kirschbaum
+Modified: 2020-10-03 Titus
 endmsg
 end
 arch woodfloor2
@@ -275,10 +275,6 @@ x 2
 y 11
 end
 arch woodfloor2
-x 2
-y 12
-end
-arch random_food
 x 2
 y 12
 end

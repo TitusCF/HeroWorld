@@ -9,7 +9,7 @@ enter_x 7
 enter_y 5
 msg
 Created:  2006-05-26 Bort
-Modified: 2009-07-12 Andreas Kirschbaum
+Modified: 2020-10-03 Titus
 endmsg
 end
 arch cobblestones2
@@ -124,10 +124,6 @@ arch cobblestones2
 x 1
 y 2
 end
-arch random_food
-x 1
-y 2
-end
 arch cobblestones2
 x 1
 y 3
@@ -211,10 +207,6 @@ arch flagstone_2_1_2
 x 2
 end
 arch cobblestones2
-x 2
-y 1
-end
-arch random_food
 x 2
 y 1
 end

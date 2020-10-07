@@ -1,11 +1,12 @@
 arch map
+name <unnamed>
+difficulty 1
 region azumauindo
 shopitems *:0
+shopgreed 1.20000
 shopmin 50
 shopmax 100000
 shoprace human
-shopgreed 1.2
-difficulty 1
 width 16
 height 16
 enter_x 1
@@ -14,6 +15,7 @@ msg
 Creator: MikeeUSA
 Email: gnu@foo.bar
 Date: Sat Mar 19 16:44:28 2005
+Modified: 2020-10-07 Titus
 endmsg
 end
 arch dungeon_magic
@@ -582,6 +584,7 @@ end
 arch shop_weapon
 x 3
 y 3
+randomitems oriental_weapons
 end
 arch dungeon_magic
 x 3
@@ -643,9 +646,10 @@ arch dungeon_magic
 x 3
 y 11
 end
-arch shop_throw
+arch shop_weapon
 x 3
 y 11
+randomitems oriental_weapons
 end
 arch dungeon_magic
 x 3
@@ -654,6 +658,7 @@ end
 arch shop_weapon
 x 3
 y 12
+randomitems oriental_weapons
 end
 arch dungeon_magic
 x 3
@@ -733,6 +738,7 @@ end
 arch shop_weapon
 x 4
 y 3
+randomitems oriental_weapons
 end
 arch dungeon_magic
 x 4
@@ -794,9 +800,10 @@ arch dungeon_magic
 x 4
 y 11
 end
-arch shop_throw
+arch shop_weapon
 x 4
 y 11
+randomitems oriental_weapons
 end
 arch dungeon_magic
 x 4
@@ -805,6 +812,7 @@ end
 arch shop_weapon
 x 4
 y 12
+randomitems oriental_weapons
 end
 arch dungeon_magic
 x 4
@@ -880,6 +888,7 @@ end
 arch shop_weapon
 x 5
 y 3
+randomitems oriental_weapons
 end
 arch dungeon_magic
 x 5
@@ -925,9 +934,10 @@ arch dungeon_magic
 x 5
 y 9
 end
-arch shop_throw
+arch shop_weapon
 x 5
 y 9
+randomitems oriental_weapons
 end
 arch dungeon_magic
 x 5
@@ -941,9 +951,10 @@ arch dungeon_magic
 x 5
 y 11
 end
-arch shop_throw
+arch shop_weapon
 x 5
 y 11
+randomitems oriental_weapons
 end
 arch dungeon_magic
 x 5
@@ -952,6 +963,7 @@ end
 arch shop_weapon
 x 5
 y 12
+randomitems oriental_weapons
 end
 arch dungeon_magic
 x 5
@@ -1053,6 +1065,7 @@ end
 arch shop_weapon
 x 6
 y 3
+randomitems oriental_weapons
 end
 arch dungeon_magic
 x 6
@@ -1098,9 +1111,10 @@ arch dungeon_magic
 x 6
 y 9
 end
-arch shop_throw
+arch shop_weapon
 x 6
 y 9
+randomitems oriental_weapons
 end
 arch dungeon_magic
 x 6
@@ -1114,9 +1128,10 @@ arch dungeon_magic
 x 6
 y 11
 end
-arch shop_throw
+arch shop_weapon
 x 6
 y 11
+randomitems oriental_weapons
 end
 arch dungeon_magic
 x 6
@@ -1125,6 +1140,7 @@ end
 arch shop_weapon
 x 6
 y 12
+randomitems oriental_weapons
 end
 arch dungeon_magic
 x 6
@@ -1512,7 +1528,7 @@ arch dungeon_magic
 x 9
 y 3
 end
-arch shop_food
+arch shop_empty
 x 9
 y 3
 end
@@ -1520,7 +1536,7 @@ arch dungeon_magic
 x 9
 y 4
 end
-arch shop_food
+arch shop_empty
 x 9
 y 4
 end
@@ -1536,7 +1552,7 @@ arch dungeon_magic
 x 9
 y 6
 end
-arch shop_food
+arch shop_empty
 x 9
 y 6
 end
@@ -1544,7 +1560,7 @@ arch dungeon_magic
 x 9
 y 7
 end
-arch shop_food
+arch shop_empty
 x 9
 y 7
 end
@@ -1671,7 +1687,7 @@ arch dungeon_magic
 x 10
 y 3
 end
-arch shop_food
+arch shop_empty
 x 10
 y 3
 end
@@ -1679,7 +1695,7 @@ arch dungeon_magic
 x 10
 y 4
 end
-arch shop_food
+arch shop_empty
 x 10
 y 4
 end
@@ -1695,7 +1711,7 @@ arch dungeon_magic
 x 10
 y 6
 end
-arch shop_food
+arch shop_empty
 x 10
 y 6
 end
@@ -1703,7 +1719,7 @@ arch dungeon_magic
 x 10
 y 7
 end
-arch shop_food
+arch shop_empty
 x 10
 y 7
 end
@@ -1830,7 +1846,7 @@ arch dungeon_magic
 x 11
 y 3
 end
-arch shop_food
+arch shop_empty
 x 11
 y 3
 end
@@ -1838,7 +1854,7 @@ arch dungeon_magic
 x 11
 y 4
 end
-arch shop_food
+arch shop_empty
 x 11
 y 4
 end
@@ -1854,7 +1870,7 @@ arch dungeon_magic
 x 11
 y 6
 end
-arch shop_food
+arch shop_empty
 x 11
 y 6
 end
@@ -1862,7 +1878,7 @@ arch dungeon_magic
 x 11
 y 7
 end
-arch shop_food
+arch shop_empty
 x 11
 y 7
 end
@@ -1980,7 +1996,7 @@ arch dungeon_magic
 x 12
 y 3
 end
-arch shop_food
+arch shop_empty
 x 12
 y 3
 end
@@ -1988,7 +2004,7 @@ arch dungeon_magic
 x 12
 y 4
 end
-arch shop_food
+arch shop_empty
 x 12
 y 4
 end
@@ -2004,7 +2020,7 @@ arch dungeon_magic
 x 12
 y 6
 end
-arch shop_food
+arch shop_empty
 x 12
 y 6
 end
@@ -2012,7 +2028,7 @@ arch dungeon_magic
 x 12
 y 7
 end
-arch shop_food
+arch shop_empty
 x 12
 y 7
 end
@@ -2047,6 +2063,7 @@ end
 arch shop_weapon
 x 12
 y 11
+randomitems oriental_weapon
 end
 arch dungeon_magic
 x 12

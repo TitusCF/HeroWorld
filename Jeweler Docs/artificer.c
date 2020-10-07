@@ -151,7 +151,7 @@ void attempt_do_artificer(object *caster, object *cauldron) {
                 if (base_item == NULL) { /* failure--no type found */
                     base_item = object_find_by_type(cauldron, SHIELD);
                     if (base_item == NULL) { /* failure--no type found */
-                        base_item = object_find_by_type(cauldron, SHOOTING WEAPON);
+                        base_item = object_find_by_type(cauldron, BOW);
                         if (base_item == NULL) { /* failure--no type found */
             draw_ext_info(NDI_UNIQUE, 0, caster, MSG_TYPE_SKILL, MSG_TYPE_SKILL_ERROR,
                         "You need to put in a base item to use artificer on this forge.");
@@ -166,7 +166,7 @@ void attempt_do_artificer(object *caster, object *cauldron) {
     flesh = object_find_by_type(cauldron, FLESH);
 
    
-    int j = find_skill_by_number(caster, SK_artificer)->level;
+    int j = find_skill_by_number(caster, SK_ARTIFICER)->level;
     int k = MIN(100, j); // minimum between 100 and skill 
         
     // do a string search to see what type of stat is being improved.
@@ -239,10 +239,10 @@ void attempt_do_artificer(object *caster, object *cauldron) {
                 return;
             }
         }
-        else if(base_item->type == SHOOTING WEAPON)
+        else if(base_item->type == BOW)
         {
             for (tmp = cauldron->inv; tmp; tmp = tmp->below) {
-                if (tmp->type == SHOOTING WEAPON) {
+                if (tmp->type == BOW) {
                     if(tmp != base_item) {
                         merge_item = tmp;
                         break;

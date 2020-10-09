@@ -10,8 +10,8 @@ to no cult, he is given the option to attempt a consecration of that altar to hi
 
 (attempt apotheosis?: y/n)
 
-(Chance of successful attempt could be based on the quantity of maxed, base statistics
-a character has, from 1%-95%, Failure destroys alter)
+(Chance of successful attempt could be based on the quantity of maxed base statistics
+a character has as well, an active Grace effect as extremely high grace, chance from 1%-60%,  Failure destroys alter)
 
 This has the effect of generating a 'Cult of <PLAYER NAME>' and turning that altar
 into the first altar for that religion.
@@ -57,6 +57,8 @@ Statistic modifications demi-god players recieve from gear is considered during 
 Cult members are expected to recieve feedback as their buffs increase or decrease.
 
 
+NOTE: Demigod player can speak through their altars as if the 'talk' command is being used as a new communication command.
+
 -------------------------------------------------------------------
 
 Cult Spells:
@@ -88,11 +90,64 @@ Demigod may use this process to change their cult item as many times as they wou
 
 Hardcore Mode + DemiGod:
 
-Demigods who also apply hardcore mode drop a corpse upon their death and their cult enters a
+Demigod mode WILL COME WITH hardcore mode.
+ This means that demigod player will drop a corpse upon their death and their cult enters a
 temporary suspension (no new members, cult buffs suspended, all cult items vaporized, all cult spells
 deactivated until the corpse can be raised.)
+Character will be located in a Black Map of Permadeath they cannot teleport from until raise dead is applied.
+
+NOTE:
+Dead players in Black Map of Permadeath cannot communicate in global, instead their voice will come through their altar
+as if the 'talk' command is being used.
+
+Dead players who have their mantle eusurped while in the Black Map of Permadeath or as a Shade are'reborn' and recieve a Reincarnation.
+
 If corpse is reincarnated, new PC will assume the position held by their precursor 
-but will begin as a new Demigod-PC (let's make a new skin available ONLY to reincarnated demi-gods, 
-cult items and spells remain intact. Cult activity will return to normal for all members except that 
+but will begin as a new Demigod-PC (new race, lvl 1)
+Cult activity will return to normal for all members except that 
 the buffs they recieved before reincarnated will be decreased in proportion to the new demigod PC. 
 If corpse is simply raise_dead, cult activity returns as normal.
+
+-----------------------------------------
+
+Shade/ Shade Token:
+
+A player who has become permadeath is given 3 Shade Tokens. More can be bought in game shops or found in dungeons.
+This token can be used in the Black Map of Permadeath to become an intangible shade and appear in this form at your save bed.
+Your shade form will appear to other players as a 'ghost' arch with the name Spectre of XXXX (XXXX is player name).
+
+Shade form allows you to explore the world to repossess your corpse without needing to be raise_dead. When in shade form, player recieves a small amount of
+damage with every step.
+In order to apply or pickup anything as well as heal, Shade_Player must possess a monster. Monster recieve a poison effect as long as it is being possessed. Upon Possession, if
+Shade_Player has any damage to his spectre form, half of Monster's life is sacrificed and Spade_Player is fully healed until no longer possessing anything.
+
+Shade could theoretically live in a possessed monster indefinitely through the use of healing tools. 
+(Monster does not level up but can wear new gear).
+(Shade can access his own apartments and other private areas while possessing a Monster).
+
+Shade CAN pass through walls but CAN ALSO be targetted by anything which can see_invis. Damage types: Holy power, Cancellation, Turn Undead, God Power,
+Ghost hit.
+
+If Shade_Player is killed, Shade_Player will appear in Black Map of Permadeath again and may attempt to use another token or pursue a Raise_Dead.
+
+-----------------------------------------
+
+Player_Corpse Properties:
+
+Item's that are not 'applied' (gear, bags) are lootable in corpse-container.
+Corpse cannot be destroyed or disappear from map-reset.
+Corpse CAN be picked up. (cannot be raise_dead inside a player inventory)
+Player who has raise_dead applied will appear at location of Corpse unless reincarnate, then they will be 'reborn' and go through tutorial.
+
+------------------------------------------------------------------
+
+Assume Mantle:
+
+Explorer players who find a demigod corpse, may carry corpse to that religion altar and attempt consecration.
+Assuming a mantle using the corpse of a dead demigod offers a 12% bonus chance of success.
+If success, will have option to 'Assume Mantle' of this religion. "Assume Mantle? Y/N"
+Existing members of cult will recieve a message "You religion once again has a God! You feel devine power flow down to you from above once again"
+(If logged out, the message will be there for them when they sign in)
+Bonuses are reevaluated to reflect the new deity.
+"Change Cult Name? Y/N"   If N Cult name remains the same, if Y, Cult name is changed to reflect the new Deity-Character name.
+

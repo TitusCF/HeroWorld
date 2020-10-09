@@ -1,14 +1,15 @@
 arch map
 name <untitled>
-msg
-Creator: King Zoobus
-Email: gnu@foo.bar
-Date: Wed Feb  3 08:14:16 1999
-endmsg
 width 14
 height 14
 enter_x 13
 enter_y 7
+msg
+Creator: King Zoobus
+Email: gnu@foo.bar
+Date: Wed Feb  3 08:14:16 1999
+Modified: 2020-10-09 Titus
+endmsg
 end
 arch cobblestones2
 end
@@ -111,9 +112,9 @@ x 1
 y 3
 end
 arch r_sack
-carrying 10497
 x 1
 y 3
+carrying 10497
 arch book_clasp
 msg
 Go ye into the shady groves and summon
@@ -404,7 +405,7 @@ arch cobblestones2
 x 4
 y 5
 end
-arch neko
+arch alchemy_pearl_converter
 x 4
 y 5
 end
@@ -412,7 +413,7 @@ arch cobblestones2
 x 4
 y 6
 end
-arch dust_generic
+arch alchemy_pearl_converter
 x 4
 y 6
 end
@@ -527,7 +528,15 @@ arch cobblestones2
 x 5
 y 5
 end
+arch alchemy_pearl_converter
+x 5
+y 5
+end
 arch cobblestones2
+x 5
+y 6
+end
+arch alchemy_pearl_converter
 x 5
 y 6
 end
@@ -613,16 +622,7 @@ arch cobblestones2
 x 6
 y 4
 end
-arch stair_up
-blocksview 1
-x 6
-y 4
-end
 arch cobblestones2
-x 6
-y 5
-end
-arch stair_down
 x 6
 y 5
 end
@@ -808,10 +808,10 @@ y 10
 end
 arch conjurer2
 hp 80
-carrying 19800
-unaggressive 1
 x 8
 y 10
+carrying 19800
+unaggressive 1
 arch wand
 end
 arch staff
@@ -835,10 +835,10 @@ y 12
 end
 arch conjurer2
 hp 99
-carrying 32600
-unaggressive 1
 x 8
 y 12
+carrying 32600
+unaggressive 1
 arch wand
 end
 arch staff
@@ -907,11 +907,11 @@ one of the elders about our magic lore.
 You seem a wise and honorable one. A
 stranger in a strange land.
 endmsg
+x 9
+y 3
 carrying 52420
 unaggressive 1
 reflect_spell 1
-x 9
-y 3
 arch wand
 end
 arch staff
@@ -929,8 +929,6 @@ end
 arch ring
 end
 arch wiz_hat
-end
-arch potion_invulnerability
 end
 arch potion_magic
 end
@@ -1109,10 +1107,10 @@ y 12
 end
 arch conjurer2
 hp 99
-carrying 28900
-unaggressive 1
 x 10
 y 12
+carrying 28900
+unaggressive 1
 arch potion_heal
 end
 arch amulet

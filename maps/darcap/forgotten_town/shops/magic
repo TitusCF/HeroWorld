@@ -1,17 +1,18 @@
 arch map
 name Magicshop
 region Forgotten Town
-msg
-Creator: Knut Ahlers
-Date:    7/21/2005
-endmsg
+shopitems scroll:60;ring:60;amulet:60;potion:40;wand:50;rod:50;*:-60
+shopmin 500
+shopmax 80000
 width 17
 height 15
 enter_x 13
 enter_y 13
-shopitems scroll:60;ring:60;amulet:60;potion:40;wand:50;rod:50;*:-60
-shopmin 500
-shopmax 80000
+msg
+Creator: Knut Ahlers
+Date:    7/21/2005
+Modified: 2020-10-09 Titus
+endmsg
 end
 arch stonefloor2
 end
@@ -108,35 +109,35 @@ arch wwall_2_1_2
 x 1
 end
 arch stonefloor2
-no_magic 1
-damned 1
 x 1
 y 1
+no_magic 1
+damned 1
 end
 arch altar
 slaying heavy rod of the ancient mages
 food 1
-connected 1
 x 1
 y 1
+connected 1
 end
 arch stonefloor2
-no_magic 1
-damned 1
 x 1
 y 2
-end
-arch stonefloor2
 no_magic 1
 damned 1
+end
+arch stonefloor2
 x 1
 y 3
-end
-arch stonefloor2
 no_magic 1
 damned 1
+end
+arch stonefloor2
 x 1
 y 4
+no_magic 1
+damned 1
 end
 arch shop_wands
 x 1
@@ -189,14 +190,13 @@ arch wwall_2_1_2
 x 2
 end
 arch stonefloor2
-no_magic 1
-damned 1
 x 2
 y 1
+no_magic 1
+damned 1
 end
 arch guildmaster
 name ancient mage
-face wizard_yellow.151
 msg
 @match altar|why
 The merchant in the generalshop came
@@ -217,31 +217,26 @@ to me. You will get a reward for it.
 @match *
 I'm too angry to help you.
 endmsg
-randomitems standard
+face wizard_yellow.151
 hp 100
 maxhp 100
-friendly 1
-stand_still 1
-sleep 1
-pick_up 0
 x 2
 y 1
+randomitems standard
+pick_up 0
+friendly 1
+sleep 1
+stand_still 1
 end
-arch stonefloor2
-no_magic 1
-damned 1
+arch great_ice_aura_converter
 x 2
 y 2
 end
-arch stonefloor2
-no_magic 1
-damned 1
+arch great_ice_aura_converter
 x 2
 y 3
 end
-arch stonefloor2
-no_magic 1
-damned 1
+arch great_ice_aura_converter
 x 2
 y 4
 end
@@ -296,26 +291,20 @@ arch wwall_2_1_2
 x 3
 end
 arch stonefloor2
-no_magic 1
-damned 1
 x 3
 y 1
-end
-arch stonefloor2
 no_magic 1
 damned 1
+end
+arch great_ice_aura_converter
 x 3
 y 2
 end
-arch stonefloor2
-no_magic 1
-damned 1
+arch great_ice_aura_converter
 x 3
 y 3
 end
-arch stonefloor2
-no_magic 1
-damned 1
+arch great_ice_aura_converter
 x 3
 y 4
 end
@@ -370,26 +359,20 @@ arch wwall_win2
 x 4
 end
 arch stonefloor2
-no_magic 1
-damned 1
 x 4
 y 1
-end
-arch stonefloor2
 no_magic 1
 damned 1
+end
+arch great_ice_aura_converter
 x 4
 y 2
 end
-arch stonefloor2
-no_magic 1
-damned 1
+arch great_ice_aura_converter
 x 4
 y 3
 end
-arch stonefloor2
-no_magic 1
-damned 1
+arch great_ice_aura_converter
 x 4
 y 4
 end
@@ -1216,11 +1199,11 @@ x 15
 y 6
 end
 arch pit_closed
-connected 1
 hp 1
 sp 2
 x 15
 y 7
+connected 1
 end
 arch random_gem
 x 15

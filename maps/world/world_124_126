@@ -3,7 +3,7 @@ name world_124_126
 width 50
 height 50
 msg
-Modified: 2020-10-09 Titus
+Modified: 2020-10-14 Titus
 endmsg
 outdoor 1
 tile_path_1 world_124_125
@@ -3409,26 +3409,31 @@ arch tile_shop
 x 2
 y 25
 end
-arch house_small
-name Scorn Apartment Test
-slaying /scorn/apartment/apartments_test
-hp 1
-sp 1
-x 2
-y 25
-unique 1
-end
 arch tile_shop
 x 2
 y 26
 end
-arch tile_shop
+arch magic_banned
 x 2
-y 27
+y 26
 end
-arch gray_key
-name scorn apartment key
-slaying scorn_apart_builder
+arch dungeon_magic
+x 2
+y 26
+end
+arch statue
+name strange statue
+x 2
+y 26
+arch event_apply
+title Python
+slaying /python/items/town_portal_attuner.py
+msg
+You have a strange feeling for a moment; then it passes.
+endmsg
+end
+end
+arch tile_shop
 x 2
 y 27
 end
@@ -24552,6 +24557,19 @@ end
 arch tile_shop
 x 42
 y 13
+end
+arch building_woodfloor
+name Test Buildable Material
+x 42
+y 13
+subtype 3
+arch door_2
+arch event_apply
+name event_apply
+title Python
+slaying /python/misc/basic_addition_15x15.py
+end
+end
 end
 arch tile_shop
 x 42

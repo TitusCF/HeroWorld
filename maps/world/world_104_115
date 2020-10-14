@@ -13,7 +13,7 @@ Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Dec 16 20:41:49 2001
 arch
-Modified: 2020-10-01 Titus
+Modified: 2020-10-13 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_104_114
@@ -20337,6 +20337,18 @@ end
 arch cobblestones2
 x 49
 y 35
+end
+arch statue
+name strange statue
+x 49
+y 35
+arch event_apply
+title Python
+slaying /python/items/town_portal_attuner.py
+msg
+You have a strange feeling for a moment; then it passes.
+endmsg
+end
 end
 arch magic_banned
 x 49

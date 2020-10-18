@@ -53,7 +53,7 @@ else:
     costmply = 100
     curname0 = 'Imperial'
     curname1 = 'imperial'
-    gexcrate = 10
+    gexcrate = 1000
     welcome = 'Welcome to Imperial Architectural Services, A branch of the Bank of Skud. Do you need help?'
 
 tmplcostfnt = 2 * costmply
@@ -86,7 +86,7 @@ text = string.split(Crossfire.WhatIsMessage())
 if text[0] == 'help' or text[0] == 'yes':
     message ='Commands are:\
     \n balance - shows your bank account balance \
-    \n\n house - buy build scroll of house for %s %ss \
+    \n\n house - buy build scroll of house for %d %ss \
     \n\n temple - buy build scroll of temple for %s %ss \
     \n\n shop - buy build scroll of shop for %s %ss \
     \n\n tob - buy build scroll of small tower for %s %ss \

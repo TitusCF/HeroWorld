@@ -9,7 +9,7 @@ enter_y 19
 msg
 Creator: Ryo Saeba
 Date:    1/25/2004
-Modified: 2020-09-06 Acer
+Modified: 2020-10-18 Titus
 endmsg
 end
 arch unholy_ground
@@ -9099,7 +9099,7 @@ arch shop_empty
 x 24
 y 8
 end
-arch wwall_3_3
+arch wwall_2_2_3
 x 24
 y 8
 end
@@ -9442,10 +9442,6 @@ arch shop_empty
 x 25
 y 8
 end
-arch wwall_win2
-x 25
-y 8
-end
 arch unholy_ground
 x 25
 y 9
@@ -9459,10 +9455,6 @@ x 25
 y 9
 end
 arch shop_empty
-x 25
-y 9
-end
-arch wwall_0
 x 25
 y 9
 end
@@ -9821,10 +9813,6 @@ arch shop_empty
 x 26
 y 8
 end
-arch wwall_2_2_3
-x 26
-y 8
-end
 arch unholy_ground
 x 26
 y 9
@@ -9838,10 +9826,6 @@ x 26
 y 9
 end
 arch shop_empty
-x 26
-y 9
-end
-arch wwall_1_2
 x 26
 y 9
 end
@@ -10144,6 +10128,22 @@ arch shop_empty
 x 27
 y 7
 end
+arch angry_floor_material
+msg
+This material creates a mood change tile which can be connected to a button or lever. You will need to set your 'connected' tag in the same way as you would a gate, lever or button.
+endmsg
+x 27
+y 7
+no_pick 1
+identified 1
+end
+arch magic_mouth
+msg
+This material creates a mood change tile which can be connected to a button or lever. You will need to set your 'connected' tag in the same way as you would a gate, lever or button.
+endmsg
+x 27
+y 7
+end
 arch unholy_ground
 x 27
 y 8
@@ -10173,6 +10173,22 @@ x 27
 y 9
 end
 arch shop_empty
+x 27
+y 9
+end
+arch calm_floor_material
+msg
+This material creates a mood change tile which can be connected to a button or lever. You will need to set your 'connected' tag in the same way as you would a gate, lever or button.
+endmsg
+x 27
+y 9
+no_pick 1
+identified 1
+end
+arch magic_mouth
+msg
+This material creates a mood change tile which can be connected to a button or lever. You will need to set your 'connected' tag in the same way as you would a gate, lever or button.
+endmsg
 x 27
 y 9
 end
@@ -10205,6 +10221,22 @@ x 27
 y 11
 end
 arch shop_empty
+x 27
+y 11
+end
+arch charm_floor_material
+msg
+This material creates a mood change tile which can be connected to a button or lever. You will need to set your 'connected' tag in the same way as you would a gate, lever or button.
+endmsg
+x 27
+y 11
+no_pick 1
+identified 1
+end
+arch magic_mouth
+msg
+This material creates a mood change tile which can be connected to a button or lever. You will need to set your 'connected' tag in the same way as you would a gate, lever or button.
+endmsg
 x 27
 y 11
 end
@@ -10237,6 +10269,22 @@ x 27
 y 13
 end
 arch shop_empty
+x 27
+y 13
+end
+arch sleep_floor_material
+msg
+This material creates a mood change tile which can be connected to a button or lever. You will need to set your 'connected' tag in the same way as you would a gate, lever or button.
+endmsg
+x 27
+y 13
+no_pick 1
+identified 1
+end
+arch magic_mouth
+msg
+This material creates a mood change tile which can be connected to a button or lever. You will need to set your 'connected' tag in the same way as you would a gate, lever or button.
+endmsg
 x 27
 y 13
 end
@@ -10499,6 +10547,10 @@ arch shop_empty
 x 28
 y 6
 end
+arch wwall_0
+x 28
+y 6
+end
 arch unholy_ground
 x 28
 y 7
@@ -10511,9 +10563,29 @@ arch dungeon_magic
 x 28
 y 7
 end
+arch creator
+x 28
+y 7
+connected 200
+lifesave 1
+arch angry_floor_material
+msg
+
+This material creates a mood change tile which can be connected to a button or lever. You will need to set your 'connected' tag in the same way as you would a gate, lever or button.
+endmsg
+end
+end
 arch shop_empty
 x 28
 y 7
+end
+arch button_lever
+name Workbench Material
+face teleporter.111
+animation teleporter
+x 28
+y 7
+connected 200
 end
 arch unholy_ground
 x 28
@@ -10531,6 +10603,10 @@ arch shop_empty
 x 28
 y 8
 end
+arch wwall_1_4
+x 28
+y 8
+end
 arch unholy_ground
 x 28
 y 9
@@ -10543,9 +10619,28 @@ arch dungeon_magic
 x 28
 y 9
 end
+arch creator
+x 28
+y 9
+connected 201
+lifesave 1
+arch calm_floor_material
+msg
+This material creates a mood change tile which can be connected to a button or lever. You will need to set your 'connected' tag in the same way as you would a gate, lever or button.
+endmsg
+end
+end
 arch shop_empty
 x 28
 y 9
+end
+arch button_lever
+name Workbench Material
+face teleporter.111
+animation teleporter
+x 28
+y 9
+connected 201
 end
 arch unholy_ground
 x 28
@@ -10563,6 +10658,10 @@ arch shop_empty
 x 28
 y 10
 end
+arch wwall_1_4
+x 28
+y 10
+end
 arch unholy_ground
 x 28
 y 11
@@ -10575,10 +10674,29 @@ arch dungeon_magic
 x 28
 y 11
 end
+arch creator
+x 28
+y 11
+connected 202
+lifesave 1
+arch charm_floor_material
+msg
+This material creates a mood change tile which can be connected to a button or lever. You will need to set your 'connected' tag in the same way as you would a gate, lever or button.
+endmsg
+end
+end
 arch shop_empty
 x 28
 y 11
 end
+arch button_lever
+name Workbench Material
+face teleporter.111
+animation teleporter
+x 28
+y 11
+connected 202
+end
 arch unholy_ground
 x 28
 y 12
@@ -10595,6 +10713,10 @@ arch shop_empty
 x 28
 y 12
 end
+arch wwall_1_4
+x 28
+y 12
+end
 arch unholy_ground
 x 28
 y 13
@@ -10607,9 +10729,28 @@ arch dungeon_magic
 x 28
 y 13
 end
+arch creator
+x 28
+y 13
+connected 203
+lifesave 1
+arch sleep_floor_material
+msg
+This material creates a mood change tile which can be connected to a button or lever. You will need to set your 'connected' tag in the same way as you would a gate, lever or button.
+endmsg
+end
+end
 arch shop_empty
 x 28
 y 13
+end
+arch button_lever
+name Workbench Material
+face teleporter.111
+animation teleporter
+x 28
+y 13
+connected 203
 end
 arch unholy_ground
 x 28
@@ -10624,6 +10765,10 @@ x 28
 y 14
 end
 arch shop_empty
+x 28
+y 14
+end
+arch wwall_0
 x 28
 y 14
 end
@@ -10830,6 +10975,10 @@ arch shop_empty
 x 29
 y 6
 end
+arch wwall_1_1
+x 29
+y 6
+end
 arch unholy_ground
 x 29
 y 7
@@ -10846,6 +10995,10 @@ arch shop_empty
 x 29
 y 7
 end
+arch wwall_win1
+x 29
+y 7
+end
 arch unholy_ground
 x 29
 y 8
@@ -10862,6 +11015,10 @@ arch shop_empty
 x 29
 y 8
 end
+arch wwall_3_4
+x 29
+y 8
+end
 arch unholy_ground
 x 29
 y 9
@@ -10875,6 +11032,10 @@ x 29
 y 9
 end
 arch shop_empty
+x 29
+y 9
+end
+arch wwall_win1
 x 29
 y 9
 end
@@ -10891,6 +11052,10 @@ x 29
 y 10
 end
 arch shop_empty
+x 29
+y 10
+end
+arch wwall_3_4
 x 29
 y 10
 end
@@ -10907,6 +11072,10 @@ x 29
 y 11
 end
 arch shop_empty
+x 29
+y 11
+end
+arch wwall_win1
 x 29
 y 11
 end
@@ -10923,6 +11092,10 @@ x 29
 y 12
 end
 arch shop_empty
+x 29
+y 12
+end
+arch wwall_3_4
 x 29
 y 12
 end
@@ -10939,6 +11112,10 @@ x 29
 y 13
 end
 arch shop_empty
+x 29
+y 13
+end
+arch wwall_win1
 x 29
 y 13
 end
@@ -10955,6 +11132,10 @@ x 29
 y 14
 end
 arch shop_empty
+x 29
+y 14
+end
+arch wwall_1_2
 x 29
 y 14
 end

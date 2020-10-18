@@ -50,7 +50,7 @@ or (region == 'lostwages')):
     welcome = 'Welcome to Navarian Architectural Services, A branch of the Bank of Navar. Do you need help?'
 else:
     bankdatabase = "ImperialBank_DB"
-    costmply = 100
+    costmply = 10
     curname0 = 'Imperial'
     curname1 = 'imperial'
     gexcrate = 1000
@@ -86,14 +86,14 @@ text = string.split(Crossfire.WhatIsMessage())
 if text[0] == 'help' or text[0] == 'yes':
     message ='Commands are:\
     \n balance - shows your bank account balance \
-    \n\n house - buy build scroll of house for %d %ss \
+    \n\n house - buy build scroll of house for %s %ss \
     \n\n temple - buy build scroll of temple for %s %ss \
     \n\n shop - buy build scroll of shop for %s %ss \
     \n\n tob - buy build scroll of small tower for %s %ss \
     \n\n well - buy build scroll of well for %s %ss \
     \n\n fountain - buy build scroll of fountain for %s %ss \
     \n\n farm - buy build scroll of farm for %s %ss \
-    \n\n prospect - buy build scroll of temporary prospect hole for %s0 %ss \
+    \n\n prospect - buy build scroll of temporary prospect hole for %s %ss \
     \n\n mine - buy build scroll of mine for %s %ss \
     \n\n harbor - buy build scroll of harbor for %s %ss \
     \n\n guild - buy build scroll of small guild for %s %ss \

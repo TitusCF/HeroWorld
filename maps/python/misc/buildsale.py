@@ -53,7 +53,7 @@ else:
     costmply = 100
     curname0 = 'Imperial'
     curname1 = 'imperial'
-    gexcrate = 1000
+    gexcrate = 10
     welcome = 'Welcome to Imperial Architectural Services, A branch of the Bank of Skud. Do you need help?'
 
 tmplcostfnt = 2 * costmply

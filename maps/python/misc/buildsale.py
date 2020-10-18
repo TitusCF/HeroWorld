@@ -50,7 +50,7 @@ or (region == 'lostwages')):
     welcome = 'Welcome to Navarian Architectural Services, A branch of the Bank of Navar. Do you need help?'
 else:
     bankdatabase = "ImperialBank_DB"
-    costmply = 10000
+    costmply = 100
     curname0 = 'Imperial'
     curname1 = 'imperial'
     gexcrate = 1000

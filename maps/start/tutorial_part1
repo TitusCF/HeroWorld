@@ -7,7 +7,7 @@ height 25
 enter_x 8
 enter_y 1
 msg
-Modified: 2020-02-16 Acer
+Modified: 2020-10-19 Titus
 endmsg
 end
 arch grass
@@ -2942,7 +2942,7 @@ arch woodfloor
 x 19
 y 17
 end
-arch wall_2_2_1
+arch wall_3_2
 x 19
 y 17
 end
@@ -2950,7 +2950,15 @@ arch grass
 x 19
 y 18
 end
+arch wall_2_1_1
+x 19
+y 18
+end
 arch grass
+x 19
+y 19
+end
+arch wall_2_1_1
 x 19
 y 19
 end
@@ -2958,7 +2966,15 @@ arch grass
 x 19
 y 20
 end
+arch wall_2_1_1
+x 19
+y 20
+end
 arch grass
+x 19
+y 21
+end
+arch wall_2_1_1
 x 19
 y 21
 end
@@ -2966,7 +2982,15 @@ arch grass
 x 19
 y 22
 end
+arch wall_2_1_1
+x 19
+y 22
+end
 arch grass
+x 19
+y 23
+end
+arch wall_2_2_1
 x 19
 y 23
 end
@@ -3108,31 +3132,39 @@ arch woodfloor
 x 20
 y 17
 end
-arch wall_2_1_2
+arch window_win2
 x 20
 y 17
 end
-arch grass
+arch white-green-x-marble_112
 x 20
 y 18
 end
-arch grasspond
+arch white-green-x-marble_113
 x 20
 y 19
 end
-arch grass
+arch white-green-x-marble_113
 x 20
 y 20
 end
-arch grass
+arch westcwall_1_4
+x 20
+y 20
+end
+arch white-green-x-marble_113
 x 20
 y 21
 end
-arch grass
+arch white-green-x-marble_114
 x 20
 y 22
 end
 arch grass
+x 20
+y 23
+end
+arch wall_2_1_2
 x 20
 y 23
 end
@@ -3258,27 +3290,77 @@ arch window_win2
 x 21
 y 17
 end
-arch grass
+arch white-green-x-marble_119
 x 21
 y 18
 end
-arch grass
+arch white-green-c-marble_111
 x 21
 y 19
 end
-arch grass
+arch statue
+name strange statue
+title of Town Portal Attunement
+x 21
+y 19
+move_block none
+arch event_apply
+title Python
+slaying /python/items/town_portal_attuner.py
+msg
+You have a strange feeling for a moment; then it passes.
+endmsg
+end
+end
+arch magic_mouth
+msg
+'Apply' to Attune your Town Portal Spell to this location.
+endmsg
+x 21
+y 19
+end
+arch white-green-x-marble_113
 x 21
 y 20
 end
-arch grass
+arch westcityport_a
+x 21
+y 20
+end
+arch white-green-c-marble_112
 x 21
 y 21
 end
-arch grass
+arch statue
+name strange statue
+title of Town Portal Attunement
+x 21
+y 21
+move_block none
+arch event_apply
+title Python
+slaying /python/items/town_portal_attuner.py
+msg
+You have a strange feeling for a moment; then it passes.
+endmsg
+end
+end
+arch magic_mouth
+msg
+'Apply' to Attune your Town Portal Spell to this location.
+endmsg
+x 21
+y 21
+end
+arch white-green-x-marble_115
 x 21
 y 22
 end
 arch grass
+x 21
+y 23
+end
+arch wall_2_1_2
 x 21
 y 23
 end
@@ -3358,11 +3440,25 @@ arch woodfloor
 x 22
 y 12
 end
-arch woodfloor
+arch magic_mouth
+msg
+To the south you will see the Heroworld-CF Town Portal Attunement Platform (tm).
+These are located in various town and allow for single cast use of the spell, Town Portal.
+Be on the lookout!
+endmsg
 x 22
 y 13
 end
 arch woodfloor
+x 22
+y 14
+end
+arch magic_mouth
+msg
+To the south you will see the Heroworld-CF Town Portal Attunement Platform (tm).
+These are located in various town and allow for single cast use of the spell, Town Portal.
+Be on the lookout!
+endmsg
 x 22
 y 14
 end
@@ -3374,35 +3470,66 @@ arch woodfloor
 x 22
 y 16
 end
+arch sign
+msg
+This is the new Town Portal Attunement Platform (tm).
+endmsg
+x 22
+y 16
+end
 arch woodfloor
 x 22
 y 17
 end
-arch wall_2_1_2
+arch window_win2
 x 22
 y 17
 end
-arch grass
+arch white-green-x-marble_119
 x 22
 y 18
 end
-arch grass
+arch westcwall_1_1
+x 22
+y 18
+end
+arch white-green-x-marble_119
 x 22
 y 19
 end
-arch grass
+arch westcityport_b
+x 22
+y 19
+end
+arch white-green-x-marble_111
 x 22
 y 20
 end
-arch grasspond
+arch westcwall_4
+x 22
+y 20
+end
+arch white-green-x-marble_115
 x 22
 y 21
 end
-arch grass
+arch westcityport_b
+x 22
+y 21
+end
+arch white-green-x-marble_115
+x 22
+y 22
+end
+arch westcwall_1_2
 x 22
 y 22
 end
 arch grass
+x 22
+y 23
+end
+arch wall_2_1_2
 x 22
 y 23
 end
@@ -3502,18 +3629,24 @@ arch woodfloor2
 x 23
 y 14
 end
+arch magic_mouth
+msg
+To the south you will see the Heroworld-CF Town Portal Attunement Platform (tm).
+These are located in various town and allow for single cast use of the spell, Town Portal.
+Be on the lookout!
+endmsg
+x 23
+y 14
+end
 arch woodfloor2
 x 23
 y 15
 end
-arch sign
-name Automatic Doors
+arch magic_mouth
 msg
-Some doors will open when you walk up to them,
-then close after a moment.
-Be careful with some automatic doors, they close when you
-are still in the doorway. So take care not to get crushed by them
-by standing in the doorway too long!
+To the south you will see the Heroworld-CF Town Portal Attunement Platform (tm).
+These are located in various town and allow for single cast use of the spell, Town Portal.
+Be on the lookout!
 endmsg
 x 23
 y 15
@@ -3530,27 +3663,77 @@ arch window_win2
 x 23
 y 17
 end
-arch grasspond
+arch white-green-x-marble_119
 x 23
 y 18
 end
-arch grass
+arch white-green-c-marble_114
 x 23
 y 19
 end
-arch grass
+arch statue
+name strange statue
+title of Town Portal Attunement
+x 23
+y 19
+move_block none
+arch event_apply
+title Python
+slaying /python/items/town_portal_attuner.py
+msg
+You have a strange feeling for a moment; then it passes.
+endmsg
+end
+end
+arch magic_mouth
+msg
+'Apply' to Attune your Town Portal Spell to this location.
+endmsg
+x 23
+y 19
+end
+arch white-green-x-marble_117
 x 23
 y 20
 end
-arch grass
+arch westcityport_a
+x 23
+y 20
+end
+arch white-green-c-marble_112
 x 23
 y 21
 end
-arch grass
+arch statue
+name strange statue
+title of Town Portal Attunement
+x 23
+y 21
+move_block none
+arch event_apply
+title Python
+slaying /python/items/town_portal_attuner.py
+msg
+You have a strange feeling for a moment; then it passes.
+endmsg
+end
+end
+arch magic_mouth
+msg
+'Apply' to Attune your Town Portal Spell to this location.
+endmsg
+x 23
+y 21
+end
+arch white-green-x-marble_115
 x 23
 y 22
 end
 arch grass
+x 23
+y 23
+end
+arch wall_2_1_2
 x 23
 y 23
 end
@@ -3629,7 +3812,25 @@ arch woodfloor
 x 24
 y 15
 end
+arch magic_mouth
+msg
+To the south you will see a Town Portal Attunement Platform (tm).
+These are located in various town and allow for single cast use of the spell, Town Portal.
+Be on the lookout!
+endmsg
+x 24
+y 15
+end
 arch woodfloor
+x 24
+y 16
+end
+arch magic_mouth
+msg
+To the south you will see the Heroworld-CF Town Portal Attunement Platform (tm).
+These are located in various town and allow for single cast use of the spell, Town Portal.
+Be on the lookout!
+endmsg
 x 24
 y 16
 end
@@ -3637,35 +3838,39 @@ arch woodfloor
 x 24
 y 17
 end
-arch wall_2_1_2
+arch window_win2
 x 24
 y 17
 end
-arch grass
+arch white-green-x-marble_118
 x 24
 y 18
 end
-arch grass
+arch white-green-x-marble_117
 x 24
 y 19
 end
-arch grass
+arch white-green-x-marble_117
 x 24
 y 20
 end
-arch grass
+arch westcwall_1_3
+x 24
+y 20
+end
+arch white-green-x-marble_117
 x 24
 y 21
 end
-arch bird
-x 24
-y 21
-end
-arch grass
+arch white-green-x-marble_116
 x 24
 y 22
 end
 arch grass
+x 24
+y 23
+end
+arch wall_2_1_2
 x 24
 y 23
 end
@@ -3815,7 +4020,7 @@ arch woodfloor
 x 25
 y 17
 end
-arch wall_2_2_4
+arch wall_3_4
 x 25
 y 17
 end
@@ -3823,7 +4028,15 @@ arch grass
 x 25
 y 18
 end
+arch wall_2_1_1
+x 25
+y 18
+end
 arch grass
+x 25
+y 19
+end
+arch wall_2_1_1
 x 25
 y 19
 end
@@ -3831,7 +4044,15 @@ arch grass
 x 25
 y 20
 end
+arch wall_2_1_1
+x 25
+y 20
+end
 arch grass
+x 25
+y 21
+end
+arch wall_2_1_1
 x 25
 y 21
 end
@@ -3839,7 +4060,15 @@ arch grass
 x 25
 y 22
 end
+arch wall_2_1_1
+x 25
+y 22
+end
 arch grasspond
+x 25
+y 23
+end
+arch wall_2_2_4
 x 25
 y 23
 end

@@ -3,7 +3,7 @@ name world_124_126
 width 50
 height 50
 msg
-Modified: 2020-10-18 Titus
+Modified: 2020-10-19 Titus
 endmsg
 outdoor 1
 tile_path_1 world_124_125
@@ -18596,6 +18596,15 @@ end
 arch steel_ne_1
 x 22
 y 12
+end
+arch magicdoor
+name test buildable door
+x 22
+y 12
+arch event_apply
+title Python
+slaying /python/items/magic_door.py
+end
 end
 arch steel_e_1
 x 22

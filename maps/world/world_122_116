@@ -10,7 +10,7 @@ msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Jun  2 20:54:49 2002
-Modified: 2020-09-13 Titus
+Modified: 2020-10-19 Titus
 endmsg
 outdoor 1
 tile_path_1 world_122_115
@@ -636,11 +636,7 @@ arch dungeon_magic
 x 1
 y 44
 end
-arch grass
-x 1
-y 44
-end
-arch swall_2_2_2
+arch cobblestones2
 x 1
 y 44
 end
@@ -648,11 +644,7 @@ arch dungeon_magic
 x 1
 y 45
 end
-arch grass
-x 1
-y 45
-end
-arch grate_closed_2
+arch cobblestones2
 x 1
 y 45
 end
@@ -660,11 +652,7 @@ arch dungeon_magic
 x 1
 y 46
 end
-arch grass
-x 1
-y 46
-end
-arch grate_closed_2
+arch cobblestones2
 x 1
 y 46
 end
@@ -672,11 +660,7 @@ arch dungeon_magic
 x 1
 y 47
 end
-arch grass
-x 1
-y 47
-end
-arch grate_closed_2
+arch cobblestones2
 x 1
 y 47
 end
@@ -684,11 +668,7 @@ arch dungeon_magic
 x 1
 y 48
 end
-arch grass
-x 1
-y 48
-end
-arch swall_2_2_1
+arch cobblestones2
 x 1
 y 48
 end
@@ -1003,57 +983,27 @@ arch cobblestones2
 x 2
 y 43
 end
-arch dungeon_magic
+arch white-green-x-marble_112
 x 2
 y 44
 end
-arch grass
-x 2
-y 44
-end
-arch swall_2_1_2
-x 2
-y 44
-end
-arch dungeon_magic
+arch white-green-x-marble_113
 x 2
 y 45
 end
-arch grass
-x 2
-y 45
-end
-arch palace
-name Navr City Palace
-name_pl Navr City Palace
-x 2
-y 45
-end
-arch dungeon_magic
+arch white-green-x-marble_113
 x 2
 y 46
 end
-arch grass
+arch westcwall_1_4
 x 2
 y 46
 end
-arch dungeon_magic
+arch white-green-x-marble_113
 x 2
 y 47
 end
-arch grass
-x 2
-y 47
-end
-arch dungeon_magic
-x 2
-y 48
-end
-arch grass
-x 2
-y 48
-end
-arch swall_2_1_2
+arch white-green-x-marble_114
 x 2
 y 48
 end
@@ -1331,51 +1281,69 @@ arch cobblestones2
 x 3
 y 43
 end
-arch dungeon_magic
+arch white-green-x-marble_119
 x 3
 y 44
 end
-arch grass
-x 3
-y 44
-end
-arch swall_2_1_2
-x 3
-y 44
-end
-arch dungeon_magic
+arch white-green-c-marble_112
 x 3
 y 45
 end
-arch grass
+arch statue
+name strange statue
+title of Town Portal Attunement
+x 3
+y 45
+move_block none
+arch event_apply
+title Python
+slaying /python/items/town_portal_attuner.py
+msg
+You have a strange feeling for a moment; then it passes.
+endmsg
+end
+end
+arch magic_mouth
+msg
+'Apply' to Attune your Town Portal Spell to this location.
+endmsg
 x 3
 y 45
 end
-arch dungeon_magic
+arch white-green-x-marble_113
 x 3
 y 46
 end
-arch grass
+arch westcityport_a
 x 3
 y 46
 end
-arch dungeon_magic
+arch white-green-c-marble_112
 x 3
 y 47
 end
-arch grass
+arch statue
+name strange statue
+title of Town Portal Attunement
+x 3
+y 47
+move_block none
+arch event_apply
+title Python
+slaying /python/items/town_portal_attuner.py
+msg
+You have a strange feeling for a moment; then it passes.
+endmsg
+end
+end
+arch magic_mouth
+msg
+'Apply' to Attune your Town Portal Spell to this location.
+endmsg
 x 3
 y 47
 end
-arch dungeon_magic
-x 3
-y 48
-end
-arch grass
-x 3
-y 48
-end
-arch swall_2_1_2
+arch white-green-x-marble_115
 x 3
 y 48
 end
@@ -1700,51 +1668,43 @@ arch cobblestones2
 x 4
 y 43
 end
-arch dungeon_magic
+arch white-green-x-marble_119
 x 4
 y 44
 end
-arch grass
+arch westcwall_1_1
 x 4
 y 44
 end
-arch swall_2_1_2
-x 4
-y 44
-end
-arch dungeon_magic
+arch white-green-x-marble_119
 x 4
 y 45
 end
-arch grass
+arch westcityport_b
 x 4
 y 45
 end
-arch dungeon_magic
+arch white-green-x-marble_111
 x 4
 y 46
 end
-arch grass
+arch westcwall_4
 x 4
 y 46
 end
-arch dungeon_magic
+arch white-green-x-marble_115
 x 4
 y 47
 end
-arch grass
+arch westcityport_b
 x 4
 y 47
 end
-arch dungeon_magic
+arch white-green-x-marble_115
 x 4
 y 48
 end
-arch grass
-x 4
-y 48
-end
-arch swall_2_1_2
+arch westcwall_1_2
 x 4
 y 48
 end
@@ -2094,51 +2054,65 @@ arch cobblestones2
 x 5
 y 43
 end
-arch dungeon_magic
+arch white-green-x-marble_119
 x 5
 y 44
 end
-arch grass
+arch statue
+name strange statue
+title of Town Portal Attunement
 x 5
-y 44
+y 45
+move_block none
+arch event_apply
+title Python
+slaying /python/items/town_portal_attuner.py
+msg
+You have a strange feeling for a moment; then it passes.
+endmsg
 end
-arch swall_2_1_2
-x 5
-y 44
 end
-arch dungeon_magic
+arch magic_mouth
+msg
+'Apply' to Attune your Town Portal Spell to this location.
+endmsg
 x 5
 y 45
 end
-arch grass
-x 5
-y 45
-end
-arch dungeon_magic
+arch white-green-x-marble_117
 x 5
 y 46
 end
-arch grass
+arch westcityport_a
 x 5
 y 46
 end
-arch dungeon_magic
+arch white-green-c-marble_112
 x 5
 y 47
 end
-arch grass
+arch statue
+name strange statue
+title of Town Portal Attunement
+x 5
+y 47
+move_block none
+arch event_apply
+title Python
+slaying /python/items/town_portal_attuner.py
+msg
+You have a strange feeling for a moment; then it passes.
+endmsg
+end
+end
+arch magic_mouth
+msg
+'Apply' to Attune your Town Portal Spell to this location.
+endmsg
 x 5
 y 47
 end
-arch dungeon_magic
-x 5
-y 48
-end
-arch grass
-x 5
-y 48
-end
-arch swall_2_1_2
+arch white-green-x-marble_115
 x 5
 y 48
 end
@@ -2413,63 +2387,27 @@ arch cobblestones2
 x 6
 y 43
 end
-arch dungeon_magic
+arch white-green-x-marble_118
 x 6
 y 44
 end
-arch grass
-x 6
-y 44
-end
-arch swall_2_2_3
-x 6
-y 44
-end
-arch dungeon_magic
+arch white-green-x-marble_117
 x 6
 y 45
 end
-arch grass
-x 6
-y 45
-end
-arch swall_2_1_1
-x 6
-y 45
-end
-arch dungeon_magic
+arch white-green-x-marble_117
 x 6
 y 46
 end
-arch grass
+arch westcwall_1_3
 x 6
 y 46
 end
-arch swall_2_1_1
-x 6
-y 46
-end
-arch dungeon_magic
+arch white-green-x-marble_117
 x 6
 y 47
 end
-arch grass
-x 6
-y 47
-end
-arch swall_2_1_1
-x 6
-y 47
-end
-arch dungeon_magic
-x 6
-y 48
-end
-arch grass
-x 6
-y 48
-end
-arch swall_2_2_4
+arch white-green-x-marble_116
 x 6
 y 48
 end

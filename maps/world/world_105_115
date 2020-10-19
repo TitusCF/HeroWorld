@@ -11,7 +11,7 @@ msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Dec 16 20:53:13 2001
-Modified: 2020-10-03 Titus
+Modified: 2020-10-19 Titus
 endmsg
 outdoor 1
 tile_path_1 world_105_114
@@ -287,6 +287,25 @@ arch dungeon_magic
 y 41
 end
 arch grass
+y 41
+end
+arch statue
+name strange statue
+title of Town Portal Attunement
+y 41
+move_block none
+arch event_apply
+title Python
+slaying /python/items/town_portal_attuner.py
+msg
+You have a strange feeling for a moment; then it passes.
+endmsg
+end
+end
+arch magic_mouth
+msg
+'Apply' to Attune your Town Portal Spell to this location.
+endmsg
 y 41
 end
 arch dungeon_magic
@@ -721,7 +740,7 @@ arch grass
 x 1
 y 41
 end
-arch tree4
+arch dwall_1_1
 x 1
 y 41
 end
@@ -733,7 +752,7 @@ arch grass
 x 1
 y 42
 end
-arch cwall_3_3
+arch dwall_4
 x 1
 y 42
 end

@@ -5,7 +5,7 @@ region darcap
 width 50
 height 50
 msg
-Modified: 2020-10-04 Titus
+Modified: 2020-10-19 Titus
 endmsg
 outdoor 1
 tile_path_1 world_116_101
@@ -5664,7 +5664,7 @@ arch grass
 x 19
 y 34
 end
-arch swall_2_2_1
+arch swall_3_2
 x 19
 y 34
 end
@@ -5672,7 +5672,7 @@ arch cobblestones2
 x 19
 y 35
 end
-arch market1_northwest
+arch swall_1_2
 x 19
 y 35
 end
@@ -5981,7 +5981,24 @@ arch cobblestones2
 x 20
 y 35
 end
-arch market2_northwest
+arch statue
+name strange statue
+title of Town Portal Attunement
+x 20
+y 35
+move_block none
+arch event_apply
+title Python
+slaying /python/items/town_portal_attuner.py
+msg
+You have a strange feeling for a moment; then it passes.
+endmsg
+end
+end
+arch magic_mouth
+msg
+'Apply' to Attune your Town Portal Spell to this location.
+endmsg
 x 20
 y 35
 end
@@ -6253,7 +6270,7 @@ arch grass
 x 21
 y 34
 end
-arch swall_2_1_2
+arch swall_3_3
 x 21
 y 34
 end
@@ -6261,7 +6278,7 @@ arch cobblestones2
 x 21
 y 35
 end
-arch market2_northwest
+arch swall_2_2_1
 x 21
 y 35
 end
@@ -6526,7 +6543,7 @@ arch grass
 x 22
 y 34
 end
-arch swall_2_1_2
+arch swall_3_3
 x 22
 y 34
 end
@@ -6534,7 +6551,7 @@ arch cobblestones2
 x 22
 y 35
 end
-arch market2_northwest
+arch swall_2_2_4
 x 22
 y 35
 end
@@ -6844,7 +6861,24 @@ arch cobblestones2
 x 23
 y 35
 end
-arch market2_northwest
+arch statue
+name strange statue
+title of Town Portal Attunement
+x 23
+y 35
+move_block none
+arch event_apply
+title Python
+slaying /python/items/town_portal_attuner.py
+msg
+You have a strange feeling for a moment; then it passes.
+endmsg
+end
+end
+arch magic_mouth
+msg
+'Apply' to Attune your Town Portal Spell to this location.
+endmsg
 x 23
 y 35
 end
@@ -7131,7 +7165,7 @@ arch grass
 x 24
 y 34
 end
-arch swall_2_2_4
+arch swall_3_4
 x 24
 y 34
 end
@@ -7139,7 +7173,7 @@ arch cobblestones2
 x 24
 y 35
 end
-arch market3_northwest
+arch swall_1_2
 x 24
 y 35
 end

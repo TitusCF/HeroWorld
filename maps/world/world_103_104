@@ -3,7 +3,7 @@ name world_103_104
 width 50
 height 50
 msg
-Modified: 2020-08-17 Acer
+Modified: 2020-10-19 Titus
 endmsg
 outdoor 1
 tile_path_1 world_103_103
@@ -6310,6 +6310,10 @@ arch grass
 x 12
 y 48
 end
+arch cwall_0
+x 12
+y 48
+end
 arch dungeon_magic
 x 12
 y 49
@@ -6729,6 +6733,27 @@ x 13
 y 48
 end
 arch grass
+x 13
+y 48
+end
+arch statue
+name strange statue
+title of Town Portal Attunement
+x 13
+y 48
+move_block none
+arch event_apply
+title Python
+slaying /python/items/town_portal_attuner.py
+msg
+You have a strange feeling for a moment; then it passes.
+endmsg
+end
+end
+arch magic_mouth
+msg
+'Apply' to Attune your Town Portal Spell to this location.
+endmsg
 x 13
 y 48
 end
@@ -7163,6 +7188,10 @@ arch grass
 x 14
 y 48
 end
+arch cwall_0
+x 14
+y 48
+end
 arch dungeon_magic
 x 14
 y 49
@@ -7522,7 +7551,24 @@ arch grass
 x 15
 y 48
 end
-arch cwall_0
+arch statue
+name strange statue
+title of Town Portal Attunement
+x 15
+y 48
+move_block none
+arch event_apply
+title Python
+slaying /python/items/town_portal_attuner.py
+msg
+You have a strange feeling for a moment; then it passes.
+endmsg
+end
+end
+arch magic_mouth
+msg
+'Apply' to Attune your Town Portal Spell to this location.
+endmsg
 x 15
 y 48
 end
@@ -7909,11 +7955,36 @@ arch grass
 x 16
 y 44
 end
+arch cwall_0
+x 16
+y 44
+end
 arch dungeon_magic
 x 16
 y 45
 end
 arch grass
+x 16
+y 45
+end
+arch statue
+name strange statue
+title of Town Portal Attunement
+x 16
+y 45
+move_block none
+arch event_apply
+title Python
+slaying /python/items/town_portal_attuner.py
+msg
+You have a strange feeling for a moment; then it passes.
+endmsg
+end
+end
+arch magic_mouth
+msg
+'Apply' to Attune your Town Portal Spell to this location.
+endmsg
 x 16
 y 45
 end
@@ -7924,16 +7995,37 @@ end
 arch grass
 x 16
 y 46
-end
-arch dungeon_magic
-x 16
-y 47
-end
-arch grass
-x 16
-y 47
 end
 arch cwall_0
+x 16
+y 46
+end
+arch dungeon_magic
+x 16
+y 47
+end
+arch grass
+x 16
+y 47
+end
+arch statue
+name strange statue
+title of Town Portal Attunement
+x 16
+y 47
+move_block none
+arch event_apply
+title Python
+slaying /python/items/town_portal_attuner.py
+msg
+You have a strange feeling for a moment; then it passes.
+endmsg
+end
+end
+arch magic_mouth
+msg
+'Apply' to Attune your Town Portal Spell to this location.
+endmsg
 x 16
 y 47
 end
@@ -7942,6 +8034,10 @@ x 16
 y 48
 end
 arch grass
+x 16
+y 48
+end
+arch cwall_0
 x 16
 y 48
 end

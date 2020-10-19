@@ -7,7 +7,7 @@ height 50
 enter_x 1
 enter_y 1
 msg
-Modified: 2020-10-07 Titus
+Modified: 2020-10-19 Titus
 endmsg
 outdoor 1
 tile_path_1 world_107_122
@@ -7340,35 +7340,27 @@ arch river_sw-ne
 x 24
 y 21
 end
-arch grass
-x 24
-y 22
-elevation 1251
-end
-arch river_sw-ne_l
+arch white-green-x-marble_112
 x 24
 y 22
 end
-arch grass
+arch white-green-x-marble_113
 x 24
 y 23
 end
-arch grass
+arch white-green-x-marble_113
 x 24
 y 24
-elevation 511
 end
-arch grass
+arch westcwall_1_4
+x 24
+y 24
+end
+arch white-green-x-marble_113
 x 24
 y 25
-elevation 2696
 end
-arch grass
-x 24
-y 26
-elevation 1710
-end
-arch river_nw-se_u
+arch white-green-x-marble_114
 x 24
 y 26
 end
@@ -7640,29 +7632,71 @@ arch river_sw-ne_l
 x 25
 y 21
 end
-arch grass
+arch white-green-x-marble_119
 x 25
 y 22
 end
-arch tree
+arch white-green-c-marble_111
 x 25
 y 23
-elevation 2405
 end
-arch grass
+arch statue
+name strange statue
+title of Town Portal Attunement
+x 25
+y 23
+move_block none
+arch event_apply
+title Python
+slaying /python/items/town_portal_attuner.py
+msg
+You have a strange feeling for a moment; then it passes.
+endmsg
+end
+end
+arch magic_mouth
+msg
+'Apply' to Attune your Town Portal Spell to this location.
+endmsg
+x 25
+y 23
+end
+arch white-green-x-marble_113
 x 25
 y 24
-elevation 1841
 end
-arch grass
+arch westcityport_a
+x 25
+y 24
+end
+arch white-green-c-marble_112
 x 25
 y 25
-elevation 310
 end
-arch grass
+arch statue
+name strange statue
+title of Town Portal Attunement
+x 25
+y 25
+move_block none
+arch event_apply
+title Python
+slaying /python/items/town_portal_attuner.py
+msg
+You have a strange feeling for a moment; then it passes.
+endmsg
+end
+end
+arch magic_mouth
+msg
+'Apply' to Attune your Town Portal Spell to this location.
+endmsg
+x 25
+y 25
+end
+arch white-green-x-marble_115
 x 25
 y 26
-elevation 2219
 end
 arch grass
 x 25
@@ -7906,26 +7940,43 @@ x 26
 y 21
 elevation 70
 end
-arch grass
+arch white-green-x-marble_119
 x 26
 y 22
-elevation 1902
 end
-arch grass
+arch westcwall_1_1
+x 26
+y 22
+end
+arch white-green-x-marble_119
 x 26
 y 23
-elevation 2373
 end
-arch grass
+arch westcityport_b
+x 26
+y 23
+end
+arch white-green-x-marble_111
 x 26
 y 24
-elevation 1048
 end
-arch grass
+arch westcwall_4
+x 26
+y 24
+end
+arch white-green-x-marble_115
 x 26
 y 25
 end
-arch grass
+arch westcityport_b
+x 26
+y 25
+end
+arch white-green-x-marble_115
+x 26
+y 26
+end
+arch westcwall_1_2
 x 26
 y 26
 end
@@ -8164,29 +8215,71 @@ x 27
 y 21
 elevation 2087
 end
-arch grass
+arch white-green-x-marble_119
 x 27
 y 22
-elevation 1028
 end
-arch grass
+arch white-green-c-marble_114
 x 27
 y 23
-elevation 737
 end
-arch grass
+arch statue
+name strange statue
+title of Town Portal Attunement
+x 27
+y 23
+move_block none
+arch event_apply
+title Python
+slaying /python/items/town_portal_attuner.py
+msg
+You have a strange feeling for a moment; then it passes.
+endmsg
+end
+end
+arch magic_mouth
+msg
+'Apply' to Attune your Town Portal Spell to this location.
+endmsg
+x 27
+y 23
+end
+arch white-green-x-marble_117
 x 27
 y 24
-elevation 2705
 end
-arch grass
+arch westcityport_a
+x 27
+y 24
+end
+arch white-green-c-marble_112
 x 27
 y 25
 end
-arch tree
+arch statue
+name strange statue
+title of Town Portal Attunement
+x 27
+y 25
+move_block none
+arch event_apply
+title Python
+slaying /python/items/town_portal_attuner.py
+msg
+You have a strange feeling for a moment; then it passes.
+endmsg
+end
+end
+arch magic_mouth
+msg
+'Apply' to Attune your Town Portal Spell to this location.
+endmsg
+x 27
+y 25
+end
+arch white-green-x-marble_115
 x 27
 y 26
-elevation 1423
 end
 arch grass
 x 27
@@ -8408,30 +8501,29 @@ x 28
 y 21
 elevation 1966
 end
-arch grass
+arch white-green-x-marble_118
 x 28
 y 22
-elevation 2231
 end
-arch grass
+arch white-green-x-marble_117
 x 28
 y 23
-elevation 491
 end
-arch grass
+arch white-green-x-marble_117
 x 28
 y 24
-elevation 2620
 end
-arch grass
+arch westcwall_1_3
+x 28
+y 24
+end
+arch white-green-x-marble_117
 x 28
 y 25
-elevation 549
 end
-arch grass
+arch white-green-x-marble_116
 x 28
 y 26
-elevation 2033
 end
 arch grass
 x 28

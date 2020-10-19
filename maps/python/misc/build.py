@@ -1,11 +1,24 @@
-import Crossfire
-import shutil
-import re
-import random
 #Buildable Building code by MikeeUSA (with help from Rednaxela) (C) GPL (v2 or later at your option)
 
-templatedir = '/home/titus/share/crossfire/maps/templates/buildable/'
-builtdir = '/home/titus/share/crossfire/maps/world_built/'
+import os.path
+import random
+import re
+import shutil
+import sys
+
+import Crossfire
+
+
+def get_maps_dir():
+    """Dynamically calculate the location of the maps dir
+    """
+    # sys.path[0] returns the name of the maps/python directory
+    return os.path.dirname(sys.path[0])
+
+
+mapsdir = get_maps_dir()
+templatedir = os.path.join(mapsdir, 'templates', 'buildable', '')
+builtdir = os.path.join(mapsdir, 'world_built', '')
 antarcticworld = 0 #By default we are not in the snow underworld.
 aquiferworld = 0 #By default we are not in the eastern underworld.
 interworld = 0 #By default we are not in the germanic underworld.

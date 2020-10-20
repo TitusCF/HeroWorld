@@ -183,7 +183,7 @@ class Map(object):
 # set your templates here
 
 TEMPLATES = {
-    'magicdoor': Template(8, 14, Path('/templates/buildable/additions/basic_buildable')),
+    'magicdoor': Template(7, 14, Path('/templates/buildable/additions/basic_buildable')),
 }
 
 # maximum depth that magic doors can go to

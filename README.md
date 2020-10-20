@@ -12,6 +12,9 @@ IRC: http://crossfire.real-time.com/irc/index.html
 </br>
 What's new so far? </br>
 </br>
+Buildable Mood Floors w. Animations </br>
+Buildable Additions Material </br>
+Town Portal Rework </br>
 Damage, Exp readout </br>
 Economy Upgrade </br>
 Mining </br>
@@ -56,8 +59,15 @@ Ogre, Orc and Dragon outposts throughout the world </br>
 </br>
 </br>
 TODO </br>
-Town Portal Rework </br>
+Craftable Wands/Staffs/Rods </br>
+Potion of Vivid Dreaming </br>
+Cartography </br>
+Ship Features </br>
 Personal Shop Upgrade </br>
+Player 'follow' command </br>
+Buildable Treasure Hole </br>
+Built_By tag on buildable material so player can only use destroyer on own builds </br>
+Unpaid=Cannot be destroyed </br>
 </br>
 </br>
 COMING SOON </br>

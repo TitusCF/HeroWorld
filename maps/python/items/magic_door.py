@@ -198,6 +198,8 @@ def main():
 
     door = Crossfire.WhoAmI()
     player = Crossfire.WhoIsActivator()
+    # params are used whend choosing the template
+    params = Crossfire.ScriptParameters()
 
     # Door properties
     # door.Slaying : relative path to map file
@@ -219,7 +221,7 @@ def main():
 
     # if door was never used, create map and link door to it
     if not door.Slaying:
-        map_ = generate_map(player, door)
+        map_ = generate_map(player, door, params)
         door.Slaying = map_.path.relative
         door.HP = map_.entrance_x
         door.SP = map_.entrance_y
@@ -229,16 +231,21 @@ def main():
     player.Teleport(m, door.HP, door.SP)
 
 
-def generate_map(player, door):
+def generate_map(player, door, params):
     '''Generate a new map for the magic door.'''
-    template = choose_template(player, door)
+    template = choose_template(player, door, params)
     map_ = template.instantiate(player, door)
     return map_
 
 
-def choose_template(player, door):
+def choose_template(player, door, params):
     '''Choose template that will be used for combination of player and door'''
-    return TEMPLATES['magicdoor']
+
+    # Create code that chooses the template here!
+
+    template_name = params
+
+    return TEMPLATES[template_name]
 
 
 # RUN

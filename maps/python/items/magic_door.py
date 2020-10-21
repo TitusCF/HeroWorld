@@ -183,11 +183,11 @@ class Map(object):
 # set your templates here
 
 TEMPLATES = {
-    'basic_buildable': Template(7, 14, Path('/templates/buildable/additions/basic_buildable')),
-    'farm_buildable': Template(7, 14, Path('/templates/buildable/additions/farm_buildable')),
-    'basic_hall': Template(3, 14, Path('/templates/buildable/additions/basic_hall')),
-    'basic_junction': Template(8, 15, Path('/templates/buildable/additions/basic_junction')),
-    'library_buildable': Template(7, 14, Path('/templates/buildable/additions/library_buildable')),
+    'basic': Template(7, 14, Path('/templates/buildable/additions/basic_buildable')),
+    'farm': Template(7, 14, Path('/templates/buildable/additions/farm_buildable')),
+    'hall': Template(3, 14, Path('/templates/buildable/additions/basic_hall')),
+    'junction': Template(8, 15, Path('/templates/buildable/additions/basic_junction')),
+    'library': Template(7, 14, Path('/templates/buildable/additions/library_buildable')),
 }
 
 # maximum depth that magic doors can go to

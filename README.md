@@ -24,8 +24,8 @@ Expanded Construction: </br>
 - Buildable Worktables </br>
 - Buildable Shop Tiles </br>
 - Vertical Building in The Frontier (Buildable Stairs) </br>
-- The Frontier connected to the main world (/br>
-- Rednaxela's Buildable Buildings script up and running! <br>
+- The Frontier connected to the main world </br>
+- Rednaxela's Buildable Buildings script up and running! </br>
  </br>
 Resource Gathering: </br>
 - Mining </br>

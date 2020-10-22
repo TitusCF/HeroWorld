@@ -202,7 +202,7 @@ def main():
 
     door = Crossfire.WhoAmI()
     player = Crossfire.WhoIsActivator()
-    # params are used whend choosing the template
+    # params are used when choosing the template
     params = Crossfire.ScriptParameters()
 
     # Door properties

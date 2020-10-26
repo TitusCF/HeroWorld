@@ -31,6 +31,7 @@ Resource Gathering: </br>
 - Mining </br>
 - Digging </br>
 - Wood Chopping </br>
+- Farming </br>
  </br>
 Item Making: </br>
 - Wand augmentation scrolls! </br>

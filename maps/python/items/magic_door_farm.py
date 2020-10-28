@@ -189,7 +189,7 @@ TEMPLATES = {
 # maximum depth that magic doors can go to
 # MAX_DEPTH = 1 allows only the creation of superficial doors
 # MAX_DEPTH = 0 disallows the creation of magic doors
-MAX_DEPTH = 0
+MAX_DEPTH = 8
 
 
 # Script

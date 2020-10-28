@@ -19,6 +19,7 @@ Quality of Life: </br>
 - HP bars above mobs/players </br>
  </br>
 Expanded Construction: </br>
+- Buildable Personal Shop Upgrade </br>
 - Buildable Mood Floors w. Animations </br>
 - Buildable Additions Material </br>
 - Buildable Worktables </br>
@@ -73,9 +74,8 @@ Misc: </br>
 TODO </br>
 Craftable Wands/Staffs/Rods </br>
 Potion of Vivid Dreaming </br>
-Cartography </br>
+Cartography (In production) </br>
 Ship Features </br>
-Personal Shop Upgrade </br>
 Player 'follow' command </br>
 Buildable Treasure Hole </br>
 Built_By tag on buildable material so player can only use destroyer on own builds </br>

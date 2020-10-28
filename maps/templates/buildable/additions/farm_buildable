@@ -9,7 +9,7 @@ msg
 Creator: MikeeUSA
 Email: gnu@foo.bar
 Date: Sun Mar 11 13:35:58 2007
-Modified: 2020-10-20 Titus
+Modified: 2020-10-28 Titus
 endmsg
 end
 arch tile_floor
@@ -413,16 +413,11 @@ y 14
 unique 1
 is_buildable 1
 end
-arch tile_floor
-name earth
-name_pl buildable white tiled floor
-face earth.111
+arch woodfloor
 x 2
 y 15
-unique 1
-is_buildable 1
 end
-arch dwall_1_3
+arch dwall_2_1_2
 x 2
 y 15
 end
@@ -517,25 +512,13 @@ y 14
 unique 1
 is_buildable 1
 end
-arch tile_floor
-name earth
-name_pl buildable white tiled floor
-face earth.111
+arch woodfloor
 x 3
 y 15
-unique 1
-is_buildable 1
 end
-arch button_handle
-name Left position makes area non buildable.  Right makes it buildable.
+arch dwall_2_1_2
 x 3
 y 15
-value 1
-arch event_apply
-name 1,1:13,14
-title Python
-slaying /python/pshop/Floor.py
-end
 end
 arch tile_floor
 name earth
@@ -623,16 +606,9 @@ y 15
 unique 1
 is_buildable 1
 end
-arch button_handle
-name Left position makes magic Denied.  Right makes it Allowed.
+arch dwall_2_1_2
 x 4
 y 15
-value 1
-arch event_apply
-name 1,1:13,14
-title Python
-slaying /python/pshop/Floor.py
-end
 end
 arch tile_floor
 name earth
@@ -780,7 +756,7 @@ y 15
 unique 1
 is_buildable 1
 end
-arch dwall_1_4
+arch dwall_2_1_2
 x 5
 y 15
 end

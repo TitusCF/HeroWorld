@@ -13,6 +13,7 @@ IRC: http://crossfire.real-time.com/irc/index.html
 What's new so far? </br>
 </br>
 Quality of Life: </br>
+- Speech bubbles over NPCS with Dialog </br>
 - Town Portal Rework </br>
 - Damage, Exp readout </br>
 - Economy Upgrade </br>
@@ -83,6 +84,8 @@ Unpaid=Cannot be destroyed </br>
 </br>
 </br>
 COMING SOON </br>
-Artificers Expansion Pack </br>
+Upgraded Animation sets for Player Characters </br>
+Vehicle Upgrades (WIP)</br>
+Artificers Expansion Pack (WIP, nearly complete!) </br>
 Apotheosis Expansion Pack </br>
 

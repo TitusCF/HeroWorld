@@ -1,9 +1,9 @@
-# HeroWorld
+# HeroWorld-CF
 Crossfire Fork, Hero World Server/Maps/Arch
 
 Sponsored Fork </br>
 
-Contact titus on Crossfire IRC or Discord to discuss participating in this project.
+Contact Titus on Crossfire IRC or Discord to discuss participating in this project.
 
 DISCORD: https://discord.gg/CCQqbqu
 IRC: http://crossfire.real-time.com/irc/index.html
@@ -13,6 +13,7 @@ IRC: http://crossfire.real-time.com/irc/index.html
 What's new so far? </br>
 </br>
 Quality of Life: </br>
+- Player 'follow' command </br>
 - Speech bubbles over NPCS with Dialog </br>
 - Town Portal Rework </br>
 - Damage, Exp readout </br>
@@ -20,6 +21,7 @@ Quality of Life: </br>
 - HP bars above mobs/players </br>
  </br>
 Expanded Construction: </br>
+- Built_By tag on buildable material so player can only use destroyer on own builds </br>
 - Buildable Personal Shop Upgrade </br>
 - Buildable Mood Floors w. Animations </br>
 - Buildable Additions Material </br>
@@ -76,16 +78,13 @@ TODO </br>
 Craftable Wands/Staffs/Rods </br>
 Potion of Vivid Dreaming </br>
 Cartography (In production) </br>
-Ship Features </br>
-Player 'follow' command </br>
-Buildable Treasure Hole </br>
-Built_By tag on buildable material so player can only use destroyer on own builds </br>
-Unpaid=Cannot be destroyed </br>
+Unpaid-Cannot be destroyed </br>
 </br>
 </br>
 COMING SOON </br>
-Upgraded Animation sets for Player Characters </br>
-Vehicle Upgrades (WIP)</br>
+Esoteric Architecture </br>
+Upgraded Animation sets for Player Characters (WIP) </br>
+Vehicle Upgrades/Features (WIP)</br>
 Artificers Expansion Pack (WIP, nearly complete!) </br>
 Apotheosis Expansion Pack </br>
 

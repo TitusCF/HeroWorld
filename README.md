@@ -70,7 +70,8 @@ Misc: </br>
 - More Spells in wands</br>
 - Rods Removed </br>
 - Removed procedurally generated books </br>
-- Word_of_penalty spell used for returning to life from the death dimension </br>
+- Word_of_penalty spell used for returning to life from the 
+- death dimension </br>
 - More quests/artifacts </br>
 </br>
 </br>

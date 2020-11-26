@@ -1,1 +1,12 @@
 *.pyc
+
+# ignore world_built/ files, but not its directories
+# use READMEs
+world_built/*/*
+!world_built/*/README
+!world_built/*/.gitkeep
+
+# ignore cabin found at ship-cabins/
+ship-cabins/cabin-*
+ship-cabins/ship-serial.txt
+!ship-cabins/cabin-template

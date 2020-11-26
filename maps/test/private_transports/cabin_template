@@ -1,0 +1,161 @@
+arch map
+name cabin_simpletemplate
+width 6
+height 6
+msg
+Created:  2020-11-26 Titus
+Modified: 2020-11-26 dre (lowerthansound)
+endmsg
+end
+arch woodfloor
+end
+arch woodfloor
+y 1
+end
+arch woodfloor
+y 2
+end
+arch woodfloor
+y 3
+end
+arch woodfloor
+y 4
+end
+arch woodfloor
+y 5
+end
+arch woodfloor
+x 1
+end
+arch woodfloor
+x 1
+y 1
+end
+arch woodfloor
+x 1
+y 2
+end
+arch woodfloor
+x 1
+y 3
+end
+arch woodfloor
+x 1
+y 4
+end
+arch woodfloor
+x 1
+y 5
+end
+arch woodfloor
+x 2
+end
+arch woodfloor
+x 2
+y 1
+end
+arch woodfloor
+x 2
+y 2
+end
+arch woodfloor
+x 2
+y 3
+end
+arch woodfloor
+x 2
+y 4
+end
+arch woodfloor
+x 2
+y 5
+end
+arch woodfloor
+x 3
+end
+arch woodfloor
+x 3
+y 1
+end
+arch woodfloor
+x 3
+y 2
+end
+arch woodfloor
+x 3
+y 3
+end
+arch woodfloor
+x 3
+y 4
+end
+arch woodfloor
+x 3
+y 5
+end
+arch woodfloor
+x 4
+end
+arch woodfloor
+x 4
+y 1
+end
+arch woodfloor
+x 4
+y 2
+end
+arch woodfloor
+x 4
+y 3
+end
+arch woodfloor
+x 4
+y 4
+end
+arch woodfloor
+x 4
+y 5
+end
+arch woodfloor
+x 5
+end
+arch woodfloor
+x 5
+y 1
+end
+arch woodfloor
+x 5
+y 2
+end
+arch woodfloor
+x 5
+y 3
+end
+arch woodfloor
+x 5
+y 4
+end
+arch woodfloor
+x 5
+y 5
+end
+
+arch sign
+msg
+You need to use an internal_cabin_door for the exit of a cabin
+Also, set the private_transport_cabin_exit_x and private_transport_cabin_exit_y correctly on the private transport for this to work.
+The program will locate the door with the archetype at the given coordinates.
+Cya :)
+endmsg
+x 0
+y 4
+end
+
+arch internal_cabin_door
+arch event_apply
+title Python
+slaying /python/private_ship/internal_cabin_door.py
+end
+x 1
+y 4
+end

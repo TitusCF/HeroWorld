@@ -1,0 +1,604 @@
+# This maps provides an example for the usage of personal (private) ships.
+# 
+# Personal ships are referred to a private transports in the code, because
+# that's what I started with, and transports provide a more general view,
+# however, I believe "personal" is a better word for users.
+# 
+# This map was initially created by Titus and then modified to provide an
+# example by lowerthansound (me!), who is also working on the general
+# functionality for private transports.
+#
+# Note: these comment are not comments, they will throw errors in your
+# Crossfire server, but, it's fine lol (we need a way to create comments
+# in map files)
+# 
+# Created:  2020-11-13 Titus
+# Modified: 2020-11-26 dre (lowerthansound)
+
+
+arch map
+name example_personal_ship
+width 10
+height 10
+end
+arch sea
+end
+arch sea
+y 1
+end
+arch sea
+y 2
+end
+arch sea
+y 3
+end
+arch sea
+y 4
+end
+arch sea
+y 5
+end
+arch grass
+y 6
+end
+arch grass
+y 7
+end
+arch grass
+y 8
+end
+arch grass
+y 9
+end
+arch sea
+x 1
+end
+arch sea
+x 1
+y 1
+end
+arch sea
+x 1
+y 2
+end
+arch sea
+x 1
+y 3
+end
+arch sea
+x 1
+y 4
+end
+arch sea
+x 1
+y 5
+end
+arch grass
+x 1
+y 6
+end
+arch grass
+x 1
+y 7
+end
+arch grass
+x 1
+y 8
+end
+arch grass
+x 1
+y 9
+end
+arch sea
+x 2
+end
+arch sea
+x 2
+y 1
+end
+arch sea
+x 2
+y 2
+end
+arch sea
+x 2
+y 3
+end
+arch sea
+x 2
+y 4
+end
+arch sea
+x 2
+y 5
+end
+arch grass
+x 2
+y 6
+end
+arch grass
+x 2
+y 7
+end
+arch grass
+x 2
+y 8
+end
+arch grass
+x 2
+y 9
+end
+arch sea
+x 3
+end
+arch sea
+x 3
+y 1
+end
+arch sea
+x 3
+y 2
+end
+arch sea
+x 3
+y 3
+end
+arch sea
+x 3
+y 4
+end
+arch sea
+x 3
+y 5
+end
+arch grass
+x 3
+y 6
+end
+arch grass
+x 3
+y 7
+end
+arch grass
+x 3
+y 8
+end
+arch grass
+x 3
+y 9
+end
+arch sea
+x 4
+end
+arch sea
+x 4
+y 1
+end
+arch sea
+x 4
+y 2
+end
+arch sea
+x 4
+y 3
+end
+arch sea
+x 4
+y 4
+end
+arch sea
+x 4
+y 5
+end
+arch grass
+x 4
+y 6
+end
+arch grass
+x 4
+y 7
+end
+arch grass
+x 4
+y 8
+end
+arch grass
+x 4
+y 9
+end
+arch sea
+x 5
+end
+arch sea
+x 5
+y 1
+end
+arch sea
+x 5
+y 2
+end
+arch sea
+x 5
+y 3
+end
+arch sea
+x 5
+y 4
+end
+arch sea
+x 5
+y 5
+end
+arch grass
+x 5
+y 6
+end
+arch grass
+x 5
+y 7
+end
+arch grass
+x 5
+y 8
+end
+arch grass
+x 5
+y 9
+end
+arch sea
+x 6
+end
+arch sea
+x 6
+y 1
+end
+arch sea
+x 6
+y 2
+end
+arch sea
+x 6
+y 3
+end
+arch sea
+x 6
+y 4
+end
+arch sea
+x 6
+y 5
+end
+arch grass
+x 6
+y 6
+end
+arch grass
+x 6
+y 7
+end
+arch grass
+x 6
+y 8
+end
+arch grass
+x 6
+y 9
+end
+arch sea
+x 7
+end
+arch sea
+x 7
+y 1
+end
+arch sea
+x 7
+y 2
+end
+arch sea
+x 7
+y 3
+end
+arch sea
+x 7
+y 4
+end
+arch sea
+x 7
+y 5
+end
+arch grass
+x 7
+y 6
+end
+arch grass
+x 7
+y 7
+end
+arch grass
+x 7
+y 8
+end
+arch grass
+x 7
+y 9
+end
+arch sea
+x 8
+end
+arch sea
+x 8
+y 1
+end
+arch sea
+x 8
+y 2
+end
+arch sea
+x 8
+y 3
+end
+arch sea
+x 8
+y 4
+end
+arch sea
+x 8
+y 5
+end
+arch grass
+x 8
+y 6
+end
+arch grass
+x 8
+y 7
+end
+arch grass
+x 8
+y 8
+end
+arch grass
+x 8
+y 9
+end
+arch sea
+x 9
+end
+arch sea
+x 9
+y 1
+end
+arch sea
+x 9
+y 2
+end
+arch sea
+x 9
+y 3
+end
+arch sea
+x 9
+y 4
+end
+arch sea
+unique 1
+x 9
+y 5
+end
+arch grass
+x 9
+y 6
+end
+arch grass
+x 9
+y 7
+end
+arch grass
+x 9
+y 8
+end
+arch grass
+x 9
+y 9
+end
+
+
+
+# Signs and such
+
+arch sign
+msg
+Scrolls
+endmsg
+x 3
+y 9
+end
+
+arch sign
+msg
+A personal ship.
+endmsg
+x 0
+y 6
+end
+
+arch sign
+msg
+A personal ship with owner set.
+endmsg
+x 3
+y 6
+end
+
+arch sign
+msg
+A personal ship (for easy copy-pasting).
+endmsg
+x 0
+y 0
+end
+
+arch sign
+msg
+The sea above has the unique flag set on it.
+Leave a boat here to save it between resets.
+Note: Use usual resets instead of full-resets !
+endmsg
+x 9
+y 6
+end
+
+arch scroll
+msg
+This is a map where you can test the functionality of a private ship.
+See map code for comments.
+endmsg
+x 0
+y 8
+end
+
+
+
+# Personal Ships
+
+
+# This is the archetype of a personal ship
+# Use this as a reference for the properties needed :)
+
+arch galleon
+name Personal Ship
+
+# Flag used to indicate that this is a private transport
+# Set to 1
+private_transport 1
+
+# Maximum amount of cabins on the ship
+# Set as a number from 0 to whatever you want :)
+private_transport_cabins_limit 3
+
+# Base speed of the ship
+# Used when raising an anchor to determine the speed of the ship
+# Set to the same value as 'speed'
+private_transport_base_speed 0.5
+
+# Cabin information
+# Set cabin_template to the location of the template you will use
+# Set cabin_entrance to the coordinates of the entrance of the cabin
+# Set cabin_exit to the coordinates of the exit of the cabin (the internal door)
+private_transport_cabin_template /test/private_transports/cabin_template
+private_transport_cabin_entrance_x 0
+private_transport_cabin_entrance_y 0
+private_transport_cabin_exit_x 1
+private_transport_cabin_exit_y 4
+
+speed 0.5
+type 2
+weight 100
+container 10000000
+passenger_limit 2
+move_type swim boat
+move_block swim boat
+move_allow walk
+x 0
+y 5
+end
+
+
+# This is the archetype of a personal ship without comments
+# For easy copypastas
+
+arch galleon
+name Personal Ship (for easy copy-pasta)
+private_transport 1
+private_transport_cabins_limit 3
+private_transport_base_speed 0.5
+private_transport_cabin_template /test/private_transports/cabin_template
+private_transport_cabin_entrance_x 0
+private_transport_cabin_entrance_y 0
+private_transport_cabin_exit_x 1
+private_transport_cabin_exit_y 4
+speed 0.5
+type 2
+weight 100
+container 10000000
+passenger_limit 2
+move_type swim boat
+move_block swim boat
+move_allow walk
+x 1
+y 0
+end
+
+
+# This is a personal ship with the 'owner' property set
+# Use for fast tests
+
+arch galleon
+name Personal Ship (owner - dm)
+private_transport 1
+private_transport_owner dm
+private_transport_cabins_limit 3
+private_transport_base_speed 0.5
+private_transport_cabin_template /test/private_transports/cabin_template
+private_transport_cabin_entrance_x 0
+private_transport_cabin_entrance_y 0
+private_transport_cabin_exit_x 1
+private_transport_cabin_exit_y 4
+speed 0.5
+type 2
+weight 100
+container 10000000
+passenger_limit 1
+move_type swim boat
+move_block swim boat
+move_allow walk
+x 3
+y 5
+end
+
+
+
+# Scrolls
+
+arch rename_ship_scroll
+name Rename ship
+face scroll.111
+nrof 5
+material 1
+weight 200
+arch event_apply
+title Python
+slaying /python/private_ship/rename.py
+end
+x 4
+y 9
+end
+
+arch create_cabin_scroll
+name Create cabin
+face scroll.111
+nrof 5
+material 1
+weight 200
+arch event_apply
+title Python
+slaying /python/private_ship/create_cabin.py
+end
+x 5
+y 9
+end
+
+arch add_anchor_scroll
+name Add anchor
+face scroll.111
+nrof 5
+material 1
+weight 200
+arch event_apply
+title Python
+slaying /python/private_ship/add_anchor.py
+end
+x 6
+y 9
+end

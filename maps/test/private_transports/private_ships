@@ -1,0 +1,445 @@
+arch map
+name ship_test
+width 10
+height 10
+msg
+This is the original test created by Titus.
+It is left here as a record.
+Use /test/private_transports/example_personal_ship now
+Created:  2020-11-13 Titus
+Modified: 2020-11-13 Titus
+endmsg
+end
+arch sea
+end
+arch sea
+y 1
+end
+arch sea
+y 2
+end
+arch sea
+y 3
+end
+arch sea
+y 4
+end
+arch sea
+y 5
+end
+arch grass
+y 6
+end
+arch grass
+y 7
+end
+arch grass
+y 8
+end
+arch grass
+y 9
+end
+arch sea
+x 1
+end
+arch sea
+x 1
+y 1
+end
+arch sea
+x 1
+y 2
+end
+arch sea
+x 1
+y 3
+end
+arch sea
+x 1
+y 4
+end
+arch sea
+x 1
+y 5
+end
+arch grass
+x 1
+y 6
+end
+arch grass
+x 1
+y 7
+end
+arch scroll
+name Instructions
+msg
+Table accepts 1 gold coin per generated item
+DM command to reset map: reset full-reset .   <don't forget the period at the end
+endmsg
+x 1
+y 7
+end
+arch grass
+x 1
+y 8
+end
+arch grass
+x 1
+y 9
+end
+arch sea
+x 2
+end
+arch sea
+x 2
+y 1
+end
+arch sea
+x 2
+y 2
+end
+arch sea
+x 2
+y 3
+end
+arch sea
+x 2
+y 4
+end
+arch sea
+x 2
+y 5
+end
+arch galleon
+name Test Boat (public)
+name_pl toy boats
+x 2
+y 5
+speed 0.5
+type 2
+weight 100
+container 10000000
+move_type swim boat
+move_allow 0
+passenger_limit 1
+end
+arch grass
+x 2
+y 6
+end
+arch grass
+x 2
+y 7
+end
+arch grass
+x 2
+y 8
+end
+arch grass
+x 2
+y 9
+end
+arch sea
+x 3
+end
+arch sea
+x 3
+y 1
+end
+arch sea
+x 3
+y 2
+end
+arch sea
+x 3
+y 3
+end
+arch sea
+x 3
+y 4
+end
+arch sea
+x 3
+y 5
+end
+arch grass
+x 3
+y 6
+end
+arch grass
+x 3
+y 7
+end
+arch grass
+x 3
+y 8
+end
+arch grass
+x 3
+y 9
+end
+arch sea
+x 4
+end
+arch sea
+x 4
+y 1
+end
+arch sea
+x 4
+y 2
+end
+arch sea
+x 4
+y 3
+end
+arch sea
+x 4
+y 4
+end
+arch sea
+x 4
+y 5
+end
+arch grass
+x 4
+y 6
+end
+arch grass
+x 4
+y 7
+end
+arch grass
+x 4
+y 8
+end
+arch grass
+x 4
+y 9
+end
+arch sea
+x 5
+end
+arch sea
+x 5
+y 1
+end
+arch sea
+x 5
+y 2
+end
+arch sea
+x 5
+y 3
+end
+arch sea
+x 5
+y 4
+end
+arch sea
+x 5
+y 5
+end
+arch grass
+x 5
+y 6
+end
+arch grass
+x 5
+y 7
+end
+arch grass
+x 5
+y 8
+end
+arch grass
+x 5
+y 9
+end
+arch sea
+x 6
+end
+arch sea
+x 6
+y 1
+end
+arch sea
+x 6
+y 2
+end
+arch sea
+x 6
+y 3
+end
+arch sea
+x 6
+y 4
+end
+arch sea
+x 6
+y 5
+end
+arch grass
+x 6
+y 6
+end
+arch grass
+x 6
+y 7
+end
+arch grass
+x 6
+y 8
+end
+arch grass
+x 6
+y 9
+end
+arch sea
+x 7
+end
+arch sea
+x 7
+y 1
+end
+arch sea
+x 7
+y 2
+end
+arch sea
+x 7
+y 3
+end
+arch sea
+x 7
+y 4
+end
+arch sea
+x 7
+y 5
+end
+arch galleon
+name Test Boat (personal)
+name_pl toy boats
+private_transport 1
+x 7
+y 5
+speed 0.5
+type 2
+weight 100
+container 10000000
+move_type swim boat
+move_allow 0
+passenger_limit 1
+end
+arch grass
+x 7
+y 6
+end
+arch grass
+x 7
+y 7
+end
+arch grass
+x 7
+y 8
+end
+arch grass
+x 7
+y 9
+end
+arch sea
+x 8
+end
+arch sea
+x 8
+y 1
+end
+arch sea
+x 8
+y 2
+end
+arch sea
+x 8
+y 3
+end
+arch sea
+x 8
+y 4
+end
+arch sea
+x 8
+y 5
+end
+arch grass
+x 8
+y 6
+end
+arch grass
+x 8
+y 7
+end
+arch grass
+x 8
+y 8
+end
+arch grass
+x 8
+y 9
+end
+arch sea
+x 9
+end
+arch sea
+x 9
+y 1
+end
+arch sea
+x 9
+y 2
+end
+arch sea
+x 9
+y 3
+end
+arch sea
+x 9
+y 4
+end
+arch sea
+x 9
+y 5
+end
+arch grass
+x 9
+y 6
+end
+arch grass
+x 9
+y 7
+end
+arch dragon_steak_table
+name Scroll Table
+food 1
+x 9
+y 7
+arch rename_ship_scroll
+arch event_apply
+title Python
+slaying /python/private_ship/rename.py
+end
+end
+end
+arch grass
+x 9
+y 8
+end
+arch goldcoin
+x 9
+y 8
+nrof 1
+end
+arch grass
+x 9
+y 9
+end

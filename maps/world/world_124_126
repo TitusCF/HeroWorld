@@ -3,7 +3,7 @@ name world_124_126
 width 50
 height 50
 msg
-Modified: 2020-10-19 Titus
+Modified: 2020-11-26 Titus
 endmsg
 outdoor 1
 tile_path_1 world_124_125
@@ -1839,9 +1839,27 @@ arch tile_shop
 x 1
 y 29
 end
+arch sci_container
+name Wand Maker
+x 1
+y 29
+arch event_apply
+name Python
+slaying python/items/wand_creator.py
+end
+end
 arch tile_shop
 x 1
 y 30
+end
+arch sci_container
+name Staff Maker
+x 1
+y 30
+arch event_apply
+name Python
+slaying python/items/staff_creator.py
+end
 end
 arch tile_shop
 x 1
@@ -5053,6 +5071,11 @@ arch redrugfloor1
 x 3
 y 28
 end
+arch power_crystal
+x 3
+y 28
+nrof 100
+end
 arch redrugfloor1
 x 3
 y 29
@@ -5066,6 +5089,11 @@ x 3
 y 31
 end
 arch redrugfloor1
+x 3
+y 32
+end
+arch rod_light
+name blank rod (for rod generation test)
 x 3
 y 32
 end
@@ -8388,6 +8416,11 @@ arch redrugfloor1
 x 5
 y 32
 end
+arch staff
+name blank staff (for staff generation test)
+x 5
+y 32
+end
 arch redrugfloor1
 x 5
 y 33
@@ -11693,6 +11726,11 @@ arch redrugfloor1
 x 7
 y 32
 end
+arch wand
+name blank wand (for wand generation test)
+x 7
+y 32
+end
 arch redrugfloor1
 x 7
 y 33
@@ -14973,7 +15011,15 @@ arch tile_shop
 x 9
 y 29
 end
+arch sorcerer_book
+x 9
+y 29
+end
 arch tile_shop
+x 9
+y 30
+end
+arch pyro_book
 x 9
 y 30
 end
@@ -14981,11 +15027,23 @@ arch tile_shop
 x 9
 y 31
 end
+arch evoker_book
+x 9
+y 31
+end
 arch tile_shop
 x 9
 y 32
 end
+arch cleric_book
+x 9
+y 32
+end
 arch tile_shop
+x 9
+y 33
+end
+arch summoner_book
 x 9
 y 33
 end

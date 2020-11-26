@@ -11,7 +11,7 @@ msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Dec 16 20:53:13 2001
-Modified: 2020-10-19 Titus
+Modified: 2020-11-26 Titus
 endmsg
 outdoor 1
 tile_path_1 world_105_114
@@ -457,9 +457,9 @@ x 1
 y 18
 end
 arch altar_trigger
-name Ship with Liveable Cabin (25 imperial)
+name Purchase a Ship here (2 Imperials)
 slaying imperial
-food 25
+food 2
 x 1
 y 18
 connected 20394852
@@ -592,6 +592,16 @@ x 1
 y 27
 end
 arch cobblestones2
+x 1
+y 27
+end
+arch cross_sign
+msg
+-> ACME INC. BUILDERS SHOP
+-> PORT INN
+-> SHIP SHOP
+<- DRAGON TRANSPORT
+endmsg
 x 1
 y 27
 end
@@ -927,20 +937,6 @@ container 10000000
 move_type boat
 unique 1
 passenger_limit 2
-arch oakdoor_2
-name cabin door
-type 0
-unique 1
-arch event_apply
-name event_apply
-title Python
-slaying /python/misc/ship-cabin_permanent.py
-end
-end
-arch event_apply
-title Python
-slaying /python/misc/ship-cabin_permanent.py
-end
 end
 end
 arch magic_banned
@@ -4628,20 +4624,6 @@ container 10000000
 move_type boat
 unique 1
 passenger_limit 2
-arch oakdoor_2
-name cabin door
-type 0
-unique 1
-arch event_apply
-name event_apply
-title Python
-slaying /python/misc/ship-cabin_permanent.py
-end
-end
-arch event_apply
-title Python
-slaying /python/misc/ship-cabin_permanent.py
-end
 end
 end
 arch dungeon_magic
@@ -5078,9 +5060,9 @@ x 12
 y 17
 end
 arch altar_trigger
-name Ship with Liveable Cabin (25 imperial)
+name Purchase a Ship here (2 Imperials)
 slaying imperial
-food 25
+food 2
 x 12
 y 17
 connected 20394851
@@ -6335,9 +6317,9 @@ x 15
 y 23
 end
 arch altar_trigger
-name Ship with Liveable Cabin (25 imperial)
+name Purchase a Ship here (2 Imperials)
 slaying imperial
-food 25
+food 2
 x 15
 y 23
 connected 2039485
@@ -6776,20 +6758,6 @@ container 10000000
 move_type boat
 unique 1
 passenger_limit 2
-arch oakdoor_2
-name cabin door
-type 0
-unique 1
-arch event_apply
-name event_apply
-title Python
-slaying /python/misc/ship-cabin_permanent.py
-end
-end
-arch event_apply
-title Python
-slaying /python/misc/ship-cabin_permanent.py
-end
 end
 end
 arch magic_banned

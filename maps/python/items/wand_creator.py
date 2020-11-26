@@ -30,9 +30,9 @@ def create_wand():
 	spell_ingred = None
 	
 	while tableinv != None:#Counts the number of items in the table, and tries to find each component
-		if tableinv.Name in ("wand (lvl 0)"):
+		if tableinv.Name in ("wand (lvl 0)", "staff (lvl 0)"):
 			if tableinv.Identified == 0:
-				act.Message("The wand needs to be identified first.")
+				act.Message("The wand or staff needs to be identified first.")
 			else:
 				wand_ingred = tableinv
 		if tableinv.Name == "glowing crystal":
@@ -54,7 +54,7 @@ def create_wand():
 	if invcount > 4: # Runs if there's more item than the event plus three ingredients in the table.
 		act.Message("There should only be three items in the table.")
 	elif None in (book_ingred, wand_ingred, crystal_ingred, spell_ingred):# Checks if any of the ingredients are missing, including the spell
-		act.Message("To create a wand, drop a blank wand, an identified spellbook, and a glowing crystal inside.")
+		act.Message("To create a wand, drop a blank wand or staff, an identified spellbook, and a glowing crystal inside.")
 	else:
 		if (str(book_ingred.Name).startswith("prayerbook")) ^ (str(wand_ingred.Name).startswith("staff")):#Checks if you're trying to use a staff without a prayerbook, or vice-versa.
 			act.Message("Prayers can only be placed in staves, and other spells can only be placed in wands.")

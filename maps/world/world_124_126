@@ -24245,7 +24245,7 @@ arch tile_shop
 x 40
 y 38
 end
-arch dwall_2_1_1
+arch dwall_3_2
 x 40
 y 38
 end
@@ -24511,6 +24511,10 @@ arch tile_shop
 x 41
 y 38
 end
+arch dwall_win2
+x 41
+y 38
+end
 arch tile_shop
 x 41
 y 39
@@ -24753,6 +24757,10 @@ arch tile_shop
 x 42
 y 38
 end
+arch dwall_win2
+x 42
+y 38
+end
 arch tile_shop
 x 42
 y 39
@@ -24792,30 +24800,6 @@ end
 arch tile_shop
 x 42
 y 48
-end
-arch player_changer
-name Chicken Form
-slaying /goodiesmk2
-hp 45
-sp 45
-x 42
-y 48
-arch barbarian_class
-name Chicken Form
-msg
-endmsg
-face chicken.131
-animation chicken
-Str 0
-Dex 0
-Con 0
-Wis 0
-Pow 0
-Cha 0
-Int 0
-randomitems none
-anim_suffix no_class
-end
 end
 arch tile_shop
 x 42
@@ -25014,6 +24998,10 @@ arch skull_floor_empty
 x 43
 y 38
 end
+arch dwall_win2
+x 43
+y 38
+end
 arch skull_floor_empty
 x 43
 y 39
@@ -25021,6 +25009,11 @@ end
 arch skull_floor_empty
 x 43
 y 40
+end
+arch button_lever
+x 43
+y 40
+connected 9999
 end
 arch skull_floor_empty
 x 43
@@ -25053,30 +25046,6 @@ end
 arch tile_shop
 x 43
 y 48
-end
-arch player_changer
-name Demon Form
-slaying /goodiesmk2
-hp 45
-sp 45
-x 43
-y 48
-arch barbarian_class
-name Demon Form
-msg
-endmsg
-face jessyb.x11
-animation jessyb
-Str 0
-Dex 0
-Con 0
-Wis 0
-Pow 0
-Cha 0
-Int 0
-randomitems none
-anim_suffix no_class
-end
 end
 arch tile_shop
 x 43
@@ -25265,6 +25234,10 @@ arch skull_floor_3
 x 44
 y 38
 end
+arch dwall_win2
+x 44
+y 38
+end
 arch skull_floor_empty
 x 44
 y 39
@@ -25285,17 +25258,37 @@ arch skull_floor_1
 x 44
 y 43
 end
+arch note
+x 44
+y 43
+material 2049
+end
 arch skull_floor_3
 x 44
 y 44
+end
+arch note
+x 44
+y 44
+material 4
 end
 arch skull_floor_empty
 x 44
 y 45
 end
+arch note
+x 44
+y 45
+material 8192
+end
 arch skull_floor_empty
 x 44
 y 46
+end
+arch note
+x 44
+y 46
+material 256
 end
 arch skull_floor_empty
 x 44
@@ -25304,30 +25297,6 @@ end
 arch tile_shop
 x 44
 y 48
-end
-arch player_changer
-name Necro Golem Form
-slaying /goodiesmk2
-hp 45
-sp 45
-x 44
-y 48
-arch barbarian_class
-name Necro Golem Form
-msg
-endmsg
-face gol.x11
-animation golem_necro
-Str 0
-Dex 0
-Con 0
-Wis 0
-Pow 0
-Cha 0
-Int 0
-randomitems none
-anim_suffix no_class
-end
 end
 arch tile_shop
 x 44
@@ -25545,6 +25514,10 @@ arch skull_floor_4
 x 45
 y 38
 end
+arch dwall_win2
+x 45
+y 38
+end
 arch skull_floor_empty
 x 45
 y 39
@@ -25552,6 +25525,14 @@ end
 arch skull_floor_1
 x 45
 y 40
+end
+arch lbulletwall_5
+x 45
+y 40
+speed 0.0
+connected 9999
+arch spell_large_fireball
+end
 end
 arch skull_floor_3
 x 45
@@ -25573,10 +25554,6 @@ arch skull_floor_empty
 x 45
 y 45
 end
-arch pentagram
-x 45
-y 45
-end
 arch skull_floor_empty
 x 45
 y 46
@@ -25588,31 +25565,6 @@ end
 arch tile_shop
 x 45
 y 48
-end
-arch player_changer
-name Horror Form
-slaying /goodiesmk2
-hp 45
-sp 45
-x 45
-y 48
-arch barbarian_class
-name Horror Form
-msg
-endmsg
-face dread.x11
-animation dread
-Str 0
-Dex 0
-Con 0
-Wis 0
-Pow 0
-Cha 0
-Int 0
-randomitems none
-anim_speed 3
-anim_suffix no_class
-end
 end
 arch tile_shop
 x 45
@@ -25788,6 +25740,10 @@ arch skull_floor_empty
 x 46
 y 38
 end
+arch dwall_win2
+x 46
+y 38
+end
 arch skull_floor_empty
 x 46
 y 39
@@ -25808,15 +25764,33 @@ arch skull_floor_empty
 x 46
 y 43
 end
+arch note
+x 46
+y 43
+end
 arch skull_floor_empty
 x 46
 y 44
+end
+arch note
+x 46
+y 44
+material 3
 end
 arch skull_floor_empty
 x 46
 y 45
 end
+arch note
+x 46
+y 45
+material 64
+end
 arch skull_floor_empty
+x 46
+y 46
+end
+arch note
 x 46
 y 46
 end
@@ -25827,30 +25801,6 @@ end
 arch tile_shop
 x 46
 y 48
-end
-arch player_changer
-name Griffin Form
-slaying /goodiesmk2
-hp 45
-sp 45
-x 46
-y 48
-arch barbarian_class
-name Griffin Form
-msg
-endmsg
-face gryphon.x31
-animation gryphon
-Str 0
-Dex 0
-Con 0
-Wis 0
-Pow 0
-Cha 0
-Int 0
-randomitems none
-anim_suffix no_class
-end
 end
 arch tile_shop
 x 46
@@ -26028,6 +25978,10 @@ arch skull_floor_empty
 x 47
 y 38
 end
+arch dwall_win2
+x 47
+y 38
+end
 arch skull_floor_empty
 x 47
 y 39
@@ -26067,30 +26021,6 @@ end
 arch tile_shop
 x 47
 y 48
-end
-arch player_changer
-name White Lich Form
-slaying /goodiesmk2
-hp 45
-sp 45
-x 47
-y 48
-arch barbarian_class
-name White Lich
-msg
-endmsg
-face evil_master2.111
-animation evil_master2
-Str 0
-Dex 0
-Con 0
-Wis 0
-Pow 0
-Cha 0
-Int 0
-randomitems none
-anim_suffix no_class
-end
 end
 arch tile_shop
 x 47
@@ -26302,6 +26232,10 @@ arch tile_shop
 x 48
 y 38
 end
+arch dwall_win2
+x 48
+y 38
+end
 arch tile_shop
 x 48
 y 39
@@ -26326,141 +26260,21 @@ arch tile_shop
 x 48
 y 44
 end
-arch player_changer
-name hooded form
-slaying /goodiesmk2
-hp 45
-sp 45
-x 48
-y 44
-arch barbarian_class
-name A hooded figure
-msg
-endmsg
-face sorcerer.171
-animation sorcerer_class
-Str 0
-Dex 0
-Con 0
-Wis 0
-Pow 0
-Cha 0
-Int 0
-randomitems none
-anim_suffix no_class
-end
-end
 arch tile_shop
 x 48
 y 45
-end
-arch player_changer
-name Troll Form
-slaying /goodiesmk2
-hp 45
-sp 45
-x 48
-y 45
-arch barbarian_class
-name Troll Form
-msg
-endmsg
-face gaelotroll.x31
-animation gaelotroll
-Str 0
-Dex 0
-Con 0
-Wis 0
-Pow 0
-Cha 0
-Int 0
-randomitems none
-anim_suffix no_class
-end
 end
 arch tile_shop
 x 48
 y 46
 end
-arch player_changer
-name Man Form
-slaying /goodiesmk2
-hp 45
-sp 45
-x 48
-y 46
-arch barbarian_class
-name Just a Man
-msg
-endmsg
-face man.151
-animation man
-Str 0
-Dex 0
-Con 0
-Wis 0
-Pow 0
-Cha 0
-Int 0
-randomitems none
-anim_suffix no_class
-end
-end
 arch tile_shop
 x 48
 y 47
 end
-arch player_changer
-name Skree Form
-slaying /goodiesmk2
-hp 45
-sp 45
-x 48
-y 47
-arch barbarian_class
-name Skree Form
-msg
-endmsg
-face skree.x31
-animation skree
-Str 0
-Dex 0
-Con 0
-Wis 0
-Pow 0
-Cha 0
-Int 0
-randomitems none
-anim_suffix no_class
-end
-end
 arch tile_shop
 x 48
 y 48
-end
-arch player_changer
-name Titus Form
-slaying /goodiesmk2
-hp 45
-sp 45
-x 48
-y 48
-arch barbarian_class
-name Titus Form
-msg
-endmsg
-face demon_lord.x11
-animation demon_lord
-Str 0
-Dex 0
-Con 0
-Wis 0
-Pow 0
-Cha 0
-Int 0
-randomitems none
-anim_suffix no_class
-end
 end
 arch tile_shop
 x 48
@@ -26798,7 +26612,7 @@ arch tile_shop
 x 49
 y 38
 end
-arch dwall_2_1_1
+arch dwall_3_4
 x 49
 y 38
 end

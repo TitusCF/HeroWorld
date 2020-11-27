@@ -4,7 +4,7 @@ region stoneville
 width 50
 height 50
 msg
-Modified: 2020-09-16 Titus
+Modified: 2020-11-26 Titus
 endmsg
 outdoor 1
 tile_path_1 world_102_126
@@ -10733,40 +10733,6 @@ arch sea1
 x 43
 y 13
 end
-arch dungeon_magic
-x 43
-y 13
-end
-arch creator
-x 43
-y 13
-connected 203994851
-lifesave 1
-activate_on_release 0
-arch galleon
-name Wavelap
-speed 0.5
-type 2
-container 10000000
-move_type boat
-unique 1
-passenger_limit 2
-arch oakdoor_2
-name cabin door
-type 0
-unique 1
-arch event_apply
-name event_apply
-title Python
-slaying /python/misc/ship-cabin_permanent.py
-end
-end
-arch event_apply
-title Python
-slaying /python/misc/ship-cabin_permanent.py
-end
-end
-end
 arch sea
 x 43
 y 14
@@ -11023,15 +10989,6 @@ end
 arch pier_1_2
 x 44
 y 13
-end
-arch altar_trigger
-name Ship with Liveable Cabin (25 imperial)
-slaying imperial
-food 25
-x 44
-y 13
-connected 20994851
-activate_on_release 0
 end
 arch grass
 x 44

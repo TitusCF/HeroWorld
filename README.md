@@ -21,6 +21,7 @@ Quality of Life: </br>
 - HP bars above mobs/players </br>
  </br>
 Expanded Construction: </br>
+- Vehicle Upgrades/Features </br>
 - Built_By tag on buildable material so player can only use destroyer on own builds </br>
 - Buildable Personal Shop Upgrade </br>
 - Buildable Mood Floors w. Animations </br>
@@ -57,7 +58,6 @@ Maps: </br>
 - Guilds upgraded to a more digestable form </br>
 - Death dimension </br>
 - Arena </br>
-- Ship with accessible cabins </br>
 - Ogre, Orc and Dragon outposts throughout the world </br>
 - More transport options </br>
 </br>
@@ -85,7 +85,6 @@ Unpaid-Cannot be destroyed </br>
 COMING SOON </br>
 Esoteric Architecture </br>
 Upgraded Animation sets for Player Characters (WIP) </br>
-Vehicle Upgrades/Features (WIP)</br>
 Artificers Expansion Pack (WIP, nearly complete!) </br>
 Apotheosis Expansion Pack </br>
 

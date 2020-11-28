@@ -39,6 +39,7 @@ Resource Gathering: </br>
 - Farming </br>
  </br>
 Item Making: </br>
+- Craftable Wands/Staffs/Rods </br>
 - Wand augmentation scrolls! </br>
 - Statue Maker in Navar </br>
 - Figurine Maker in Brest </br>
@@ -76,7 +77,6 @@ Misc: </br>
 </br>
 </br>
 TODO </br>
-Craftable Wands/Staffs/Rods </br>
 Potion of Vivid Dreaming </br>
 Cartography (In production) </br>
 Unpaid-Cannot be destroyed </br>

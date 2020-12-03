@@ -13,6 +13,7 @@ IRC: http://crossfire.real-time.com/irc/index.html
 What's new so far? </br>
 </br>
 Quality of Life: </br>
+- Unpaid-Cannot be destroyed </br>
 - Player 'follow' command </br>
 - Speech bubbles over NPCS with Dialog </br>
 - Town Portal Rework </br>
@@ -79,7 +80,6 @@ Misc: </br>
 TODO </br>
 Potion of Vivid Dreaming </br>
 Cartography (In production) </br>
-Unpaid-Cannot be destroyed </br>
 </br>
 </br>
 COMING SOON </br>

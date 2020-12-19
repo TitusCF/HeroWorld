@@ -60,11 +60,8 @@ elif targetrank >= 10:
 
 player.Message("Herein are recorded those who have obtained the rank of " + rankname + " in the Kingdom of Scorn:")
 playercount = 0
-print nobledata.get_keys()
 for noble in nobledata.get_keys():
-    print noble
     record = nobledata.get_record(noble)
-    print record
     if int(record['rank']) == targetrank:
         player.Message(prefix+noble+" "+record['title']+suffix)
         playercount +=1

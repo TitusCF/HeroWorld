@@ -80,7 +80,7 @@ lampamount = 5 * costmply
 
 bank = CFBank.CFBank(bankdatabase)
 
-text = string.split(Crossfire.WhatIsMessage())
+text = Crossfire.WhatIsMessage().split()
 
 
 if text[0] == 'help' or text[0] == 'yes':

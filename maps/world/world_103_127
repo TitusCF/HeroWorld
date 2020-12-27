@@ -4,7 +4,7 @@ region stoneville
 width 50
 height 50
 msg
-Modified: 2020-12-26 Titus
+Modified: 2020-12-27 Titus
 endmsg
 outdoor 1
 tile_path_1 world_103_126
@@ -6281,9 +6281,12 @@ arch cobblestones2
 x 25
 y 3
 end
-arch blue_dragon
+arch creator
 x 25
 y 3
+connected 993847850
+activate_on_release 0
+arch blue_dragon
 speed 0.7
 type 2
 container 10000000
@@ -6299,6 +6302,7 @@ private_transport_cabin_exit_x 19
 private_transport_cabin_exit_y 4
 private_transport_cabin_template /test/private_transports/cabin_template
 private_transport_cabins_limit 3
+end
 end
 arch magic_banned
 x 25
@@ -6584,7 +6588,7 @@ x 26
 y 6
 end
 arch goldgrass
-name Personal Dragon Mount (200 plat.)
+name Personal Blue Dragon Mount (200 plat.)
 slaying money
 food 10000
 x 26
@@ -7375,9 +7379,12 @@ arch cobblestones2
 x 29
 y 3
 end
-arch dragon_exit
+arch creator
 x 29
 y 3
+connected 99384785
+activate_on_release 0
+arch dragon_exit
 speed 0.7
 type 2
 container 10000000
@@ -7393,6 +7400,7 @@ private_transport_cabin_exit_x 19
 private_transport_cabin_exit_y 4
 private_transport_cabin_template /test/private_transports/cabin_template
 private_transport_cabins_limit 3
+end
 end
 arch magic_banned
 x 29
@@ -7702,7 +7710,7 @@ x 30
 y 6
 end
 arch goldgrass
-name Personal Dragon Mount (200 plat.)
+name Personal Red Dragon Mount (200 plat.)
 slaying money
 food 10000
 x 30
@@ -8525,9 +8533,12 @@ arch cobblestones2
 x 33
 y 3
 end
-arch baslic
+arch creator
 x 33
 y 3
+connected 993847856
+activate_on_release 0
+arch baslic
 speed 0.2
 type 2
 container 10000000
@@ -8543,6 +8554,7 @@ private_transport_cabin_exit_x 19
 private_transport_cabin_exit_y 4
 private_transport_cabin_template /test/private_transports/cabin_template
 private_transport_cabins_limit 3
+end
 end
 arch magic_banned
 x 33
@@ -8855,7 +8867,7 @@ x 34
 y 6
 end
 arch goldgrass
-name drop 400 platinum for personal mount
+name Personal Basilisk Mount (400 plat.)
 slaying money
 food 20000
 x 34

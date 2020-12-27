@@ -405,16 +405,25 @@ arch woodfloor2
 x 5
 y 6
 end
-arch pit_open
+arch teleporter
 name to hold
 msg
-you enter the ship's cabin
+You enter the ship cabin
 endmsg
 face stair_down_2.111
 hp 26
 sp 6
 x 5
 y 6
+speed 0.0
+connected 563456
+activate_on_release 0
+end
+arch button_small
+x 5
+y 6
+invisible 1
+connected 563456
 end
 arch dungeon_magic
 x 5

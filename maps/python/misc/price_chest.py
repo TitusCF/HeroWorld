@@ -8,7 +8,6 @@ import CFBank
 scob = Crossfire.WhoAmI()
 act = Crossfire.WhoIsActivator()
 eve = Crossfire.WhatIsEvent()
-bank = CFBank.CFBank("ImperialBank_DB")
 
 def set_price():
 	invcount = 0
@@ -52,7 +51,8 @@ def set_price():
 def do_buy():
 	player_seller = str(scob.ReadKey('player_seller'))
 	named_value = int(scob.ReadKey('named_value')) * 2 #Because 1 CF "value" is 2 silver, we need to deposit 2x the value into the player's account.
-	bank.deposit(player_seller, named_value)
+	with CFBank.CFBank("ImperialBank_DB") as bank:
+		bank.deposit(player_seller, named_value)
 	act.Message((str(int(named_value) / 10)) + " gold from the sale went to " + player_seller + ".")
 	strip_item(scob)
 	

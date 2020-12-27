@@ -1,24 +1,8 @@
-# CFBank.py - CFBank class
-#
-# Copyright (C) 2002 Joris Bontje
-#
-# This program is free software; you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation; either version 2 of the License, or
-# (at your option) any later version.
-#
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
-#
-# You should have received a copy of the GNU General Public License
-# along with this program; if not, write to the Free Software
-# Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-#
-# The author can be reached via e-mail at jbontje@suespammers.org
-#
-#Updated to use new path functions in CFPython -Todd Mitchell
+"""
+Created by: Joris Bontje <jbontje@suespammers.org>
+
+This module stores bank account information.
+"""
 
 import os.path
 import shelve
@@ -26,40 +10,70 @@ import shelve
 import Crossfire
 
 class CFBank:
-	bankdb = {}
+    def __init__(self, bankfile):
+        self.bankdb_file = os.path.join(Crossfire.LocalDirectory(), bankfile)
+        self.bankdb = shelve.open(self.bankdb_file)
 
-	def __init__(self, bankfile):
-		self.bankdb_file = os.path.join(Crossfire.LocalDirectory(), bankfile)
-		self.bankdb = shelve.open(self.bankdb_file, writeback=True)
+    def __enter__(self):
+        return self
 
-	def deposit(self, user, amount):
-		if not user in self.bankdb:
-			self.bankdb[user]=amount
-		else:
-			temp=self.bankdb[user]
-			self.bankdb[user]=temp+amount
-		self.bankdb.sync()
+    def __exit__(self, exc_type, exc_value, traceback):
+        self.close()
 
-	def withdraw(self, user, amount):
-		if user in self.bankdb:
-			if (self.bankdb[user] >= amount):
-				temp=self.bankdb[user]
-				self.bankdb[user]=temp-amount
-				self.bankdb.sync()
-				return 1
-		return 0
+    def deposit(self, user, amount):
+        if not user in self.bankdb:
+            self.bankdb[user] = amount
+        else:
+            balance = self.bankdb[user]
+            self.bankdb[user] = balance + amount
 
-	def getbalance(self,user):
-		if user in self.bankdb:
-				return self.bankdb[user]
-		else:
-				return 0
+    def withdraw(self, user, amount):
+        if user in self.bankdb:
+            balance = self.getbalance(user)
+            if balance >= amount:
+                self.bankdb[user] = balance - amount
+                return 1
+        return 0
 
-	def remove_account(self,user):
-		if user in self.bankdb:
-			del self.bankdb[user]
-			Crossfire.Log(Crossfire.LogDebug, "%s's bank account removed." %user)
-			self.bankdb.sync()
-			return 1
-		else:
-			return 0
+    def getbalance(self, user):
+        self._convert(user)
+        if user in self.bankdb:
+            return self.bankdb[user]
+        else:
+            return 0
+
+    def remove_account(self, user):
+        if user in self.bankdb:
+            del self.bankdb[user]
+            Crossfire.Log(Crossfire.LogDebug,
+                          "%s's bank account removed." % user)
+            return 1
+        else:
+            return 0
+
+    def close(self):
+        self.bankdb.close()
+
+    def _convert(self, name):
+        """Move a player's balance from the player file to the bank."""
+        player = Crossfire.FindPlayer(name)
+        if player is None:
+            return 0
+        old_balance = _balance_legacy(player)
+        if old_balance > 0:
+            Crossfire.Log(Crossfire.LogInfo,
+                    "Converting bank account for %s with %d silver" \
+                            % (name, old_balance))
+            self.deposit(name, old_balance)
+            player.WriteKey("balance", "moved-to-bank-file", 1)
+
+def open():
+    return CFBank('ImperialBank_DB')
+
+def _balance_legacy(player):
+    """Return the balance of the given player's bank account."""
+    try:
+        balance_str = player.ReadKey("balance")
+        return int(balance_str)
+    except ValueError:
+        return 0

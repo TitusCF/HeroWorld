@@ -212,7 +212,7 @@ class Dialog:
 
         key = self.uniqueKey()
         replies = None
-        if Crossfire.GetPrivateDictionary().has_key(key):
+        if key in Crossfire.GetPrivateDictionary():
           replies = Crossfire.GetPrivateDictionary()[key]
           Crossfire.GetPrivateDictionary()[key] = None
 

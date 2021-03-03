@@ -7,7 +7,7 @@ height 50
 enter_x 1
 enter_y 1
 msg
-Modified: 2020-10-19 Titus
+Modified: 2021-03-03 Titus
 endmsg
 outdoor 1
 tile_path_1 world_107_122
@@ -10054,20 +10054,19 @@ x 34
 y 26
 elevation 1753
 end
-arch swall_1_1
+arch rl_house3
+name Brest Personal Apartment
+slaying /brest/apartments/brest_town_house
+hp 8
+sp 32
 x 34
 y 26
-move_block 0
+unique 1
 end
 arch grass
 x 34
 y 27
 elevation 519
-end
-arch swall_2_2_1
-x 34
-y 27
-move_block 0
 end
 arch tree
 x 34
@@ -10338,33 +10337,10 @@ x 35
 y 26
 elevation 1509
 end
-arch house_2
-name Brest Personal Apartment
-slaying /brest/apartments/brest_town_house
-hp 8
-sp 32
-x 35
-y 26
-unique 1
-end
-arch check_inv
-slaying brest_apartment_key
-msg
-You need an Apartment Key! (Available at The Builders Shop)
-endmsg
-x 35
-y 26
-move_block all
-end
 arch grass
 x 35
 y 27
 elevation 1509
-end
-arch swall_2_1_2
-x 35
-y 27
-move_block 0
 end
 arch grass
 x 35
@@ -10607,20 +10583,10 @@ arch grass
 x 36
 y 26
 end
-arch swall_1_1
-x 36
-y 26
-move_block 0
-end
 arch grass
 x 36
 y 27
 elevation 816
-end
-arch swall_2_2_4
-x 36
-y 27
-move_block 0
 end
 arch grass
 x 36

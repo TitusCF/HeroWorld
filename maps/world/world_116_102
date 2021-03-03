@@ -5,7 +5,7 @@ region darcap
 width 50
 height 50
 msg
-Modified: 2020-11-30 Titus
+Modified: 2021-03-03 Titus
 endmsg
 outdoor 1
 tile_path_1 world_116_101
@@ -6544,14 +6544,18 @@ arch grass
 x 22
 y 37
 end
+arch rl_house3
+name Personal Apartment
+slaying /darcap/darcap/apartment
+hp 6
+sp 11
+x 22
+y 37
+unique 1
+end
 arch grass
 x 22
 y 38
-end
-arch fountain
-x 22
-y 38
-speed_left -38.599998
 end
 arch cobblestones2
 x 22
@@ -6852,31 +6856,9 @@ arch brush
 x 23
 y 37
 end
-arch lamppost
-x 23
-y 37
-end
 arch grass
 x 23
 y 38
-end
-arch bungalow
-name Personal Apartment
-slaying /darcap/darcap/apartment
-hp 6
-sp 11
-x 23
-y 38
-unique 1
-end
-arch check_inv
-slaying darcap_apartment_key
-msg
-You need an apartment key! (Available at the General Shop)
-endmsg
-x 23
-y 38
-move_block all
 end
 arch cobblestones2
 x 23

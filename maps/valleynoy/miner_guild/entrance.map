@@ -1,0 +1,2009 @@
+arch map
+name Miners Guild Entrance
+difficulty 28
+region valleynoy
+width 18
+height 18
+enter_x 9
+enter_y 16
+end
+arch key2
+name entrance security key
+name_pl entrance security keys
+slaying minersecurity1
+nrof 10
+end
+arch button_small
+y 8
+connected 2
+end
+arch boulder_steel
+y 8
+end
+arch mapscript
+msg
+unless ($self->{inhibit}) {
+   $self->map->trigger (1);
+}
+timer $self, 1;
+endmsg
+y 9
+connected 2
+end
+arch dungeon_floor
+y 12
+end
+arch awall_2_2_2
+y 12
+end
+arch dungeon_floor
+y 13
+end
+arch awall_2_1_1
+y 13
+end
+arch dungeon_floor
+y 14
+end
+arch awall_3_2
+y 14
+end
+arch dungeon_floor
+y 15
+end
+arch awall_2_1_1
+y 15
+end
+arch dungeon_floor
+y 16
+end
+arch awall_2_1_1
+y 16
+end
+arch dungeon_floor
+y 17
+end
+arch awall_2_2_1
+y 17
+end
+arch mapscript
+msg
+($self->map->at ($self->x - 1, $self->y))[-1]->{inhibit} = $state != 0;
+endmsg
+x 1
+y 9
+connected 3
+end
+arch dungeon_floor
+x 1
+y 12
+end
+arch awall_2_1_2
+x 1
+y 12
+end
+arch dungeon_floor
+x 1
+y 13
+end
+arch button_lever
+x 1
+y 13
+connected 3
+end
+arch dungeon_floor
+x 1
+y 14
+end
+arch awall_2_1_2
+x 1
+y 14
+end
+arch dungeon_floor
+x 1
+y 15
+end
+arch dungeon_floor
+x 1
+y 16
+end
+arch dungeon_floor
+x 1
+y 17
+end
+arch awall_2_1_2
+x 1
+y 17
+end
+arch dungeon_floor
+x 2
+y 1
+end
+arch awall_2_2_2
+x 2
+y 1
+end
+arch dungeon_floor
+x 2
+y 2
+end
+arch awall_2_1_1
+x 2
+y 2
+end
+arch dungeon_floor
+x 2
+y 3
+end
+arch awall_2_1_1
+x 2
+y 3
+end
+arch dungeon_floor
+x 2
+y 4
+end
+arch awall_2_1_1
+x 2
+y 4
+end
+arch dungeon_floor
+x 2
+y 5
+end
+arch awall_2_1_1
+x 2
+y 5
+end
+arch dungeon_floor
+x 2
+y 6
+end
+arch awall_2_1_1
+x 2
+y 6
+end
+arch dungeon_floor
+x 2
+y 7
+end
+arch awall_2_1_1
+x 2
+y 7
+end
+arch dungeon_floor
+x 2
+y 8
+end
+arch awall_3_2
+x 2
+y 8
+end
+arch dungeon_floor
+x 2
+y 9
+end
+arch awall_2_1_1
+x 2
+y 9
+end
+arch dungeon_floor
+x 2
+y 10
+end
+arch awall_2_1_1
+x 2
+y 10
+end
+arch dungeon_floor
+x 2
+y 11
+end
+arch awall_3_2
+x 2
+y 11
+end
+arch dungeon_floor
+x 2
+y 12
+end
+arch awall_2_2_4
+x 2
+y 12
+end
+arch dungeon_floor
+x 2
+y 13
+end
+arch locked_door2
+slaying minersecurity1
+x 2
+y 13
+end
+arch dungeon_floor
+x 2
+y 14
+end
+arch awall_1_3
+x 2
+y 14
+end
+arch dungeon_floor
+x 2
+y 15
+end
+arch chair_2.1
+x 2
+y 15
+end
+arch man2
+name miner
+msg
+@match forget
+@cond $who->flag (cf::FLAG_WIZ)
+@setflag finished_miner_guild_quest
+@setstate got_key
+@setstate sold_axe
+@setstate sold_book
+@setstate has_taught
+Oh, who are you???
+H<This is a special response to wizards. To test the dialog.>
+
+
+@match buy spellbook
+@ifflag finished_miner_guild_quest
+@ifstate sold_book
+I'm sorry, I have no further spellbooks.
+
+@match buy spellbook
+@ifflag finished_miner_guild_quest
+@ifstate sold_book 
+@cond $who->pay_amount (100 * 100 * 30)
+@setstate sold_book 1
+@trigger 6
+Ok, you can have my last spellbook.
+H<He put the spellbook on the table in front of him.>
+
+@match buy spellbook
+@ifflag finished_miner_guild_quest
+@ifstate sold_book 
+Sorry, you don't have 30 platinum with you. I won't give
+away the spellbook for less.
+
+
+@match buy pickaxe
+@ifflag finished_miner_guild_quest
+@ifstate sold_axe
+Sorry, I already sold my pickaxe.
+
+@match buy pickaxe
+@ifflag finished_miner_guild_quest
+@ifstate sold_axe 
+@cond $who->pay_amount (100 * 100 * 40)
+@setstate sold_axe 1
+@trigger 5
+Ok, here is the pickaxe.
+H<He put the pickaxe on the table in front of him.>
+
+@match buy pickaxe
+@ifflag finished_miner_guild_quest
+@ifstate sold_axe 
+Sorry, you don't have 40 platinum with you. I won't
+give away the pickaxe for less.
+
+
+@match teach
+@ifstate has_taught
+I taught you the mining skill. Make sure you don't go
+off without all the utilities you still need.
+
+@match teach
+@ifflag finished_miner_guild_quest
+@eval $who->give_skill ("mining", 1)
+@setstate has_taught 1
+For your help I teach you the mining skill now. But for a real
+start you will need a pickaxe and the "detect mineral" spell! Luckily
+I have those with me and I can sell you the pickaxe for 40 platinum
+and a spellbook for 30 platinum.
+
+
+@match key
+@ifstate got_key
+As I have the key now I will use it to deactivate the mechanism when
+reinforcements have arrived.
+
+@match key
+@ifstate got_key 
+@find type=SPECIAL_KEY and name="entrance security key" and slaying="minersecurity1" in inv of source
+@cond @$find
+@eval $find->[-1]->decrease (1)
+@setstate got_key 1
+@setflag finished_miner_guild_quest 1
+@addtopic buy pickaxe|buy spellbook
+Thanks a lot! You were a big help. For your help I'm willing to teach
+you the mining skill!
+I have a skill scroll of mining that I can give for your help.
+On top of that, if you want to start mining right away you might want
+the "detect mineral" spell and a pickaxe. You can buy the pickaxe for
+30 platinum and buy the spellbook for 40 platinum.
+
+@match key
+@ifstate got_key 
+Yes, I need the key named "entrance security key". It can be used to get to the
+level to disable the security mechanism. But I need you to give it to me
+directly. So I can let the reinforcements when they arrive. Otherwise the
+monsters might escape!
+H<Ask him about the key again when you have it in your inventory.>
+
+
+@match help
+@ifstate got_key
+Luckily there are really helpful people around here.
+
+@match help
+@ifstate got_key 
+It would be great if you can find a way to get the security key
+from the lower level of the guild. Then I can let in the reinforcements
+when they arrive. Just ask me about the key again when you got it.
+
+
+@match mechanism
+There is a security mechanism in this building, that prevents monsters to come
+in. I just forgot to enable it and then they came in... They stepped on the
+buttons and activated the firewalls when they followed me out again.
+
+Be careful with the firewalls, they are very very strong.
+They were built to kill on the first hit.
+
+
+@match *
+@ifstate got_key
+Hi! I'm hiding here and wait for the master miner or anyone else who can help.
+The security mechanism was triggered when some monsters overran the miner guild
+building. As I have the key for the mechanism now no further assistance is required.
+
+@match *
+Hi there! Nice to see someone around here.
+I'm hiding here and wait for the master miner or anyone else who can help.  The
+security mechanism was triggered when some monsters overran the miner guild
+building. I ran away and lost the key on my way out. Maybe you can help me?  I
+might have a reward for you.
+endmsg
+x 2
+y 15
+friendly 1
+stand_still 1
+end
+arch dungeon_floor
+x 2
+y 16
+end
+arch table_2
+x 2
+y 16
+end
+arch creator
+x 2
+y 16
+connected 5
+arch pickaxe
+identified 1
+end
+end
+arch creator
+x 2
+y 16
+connected 6
+arch miners_book
+randomitems 
+arch spell_detect_mineral
+end
+end
+end
+arch dungeon_floor
+x 2
+y 17
+end
+arch awall_2_1_2
+x 2
+y 17
+end
+arch dungeon_floor
+x 3
+y 1
+end
+arch awall_2_1_2
+x 3
+y 1
+end
+arch dungeon_floor
+x 3
+y 2
+end
+arch dungeon_floor
+x 3
+y 3
+end
+arch dungeon_floor
+x 3
+y 4
+end
+arch dungeon_floor
+x 3
+y 5
+end
+arch dungeon_floor
+x 3
+y 6
+end
+arch dungeon_floor
+x 3
+y 7
+end
+arch dungeon_floor
+x 3
+y 8
+end
+arch awall_1_3
+x 3
+y 8
+end
+arch dungeon_floor
+x 3
+y 9
+connected 1
+end
+arch bulletwall_3
+x 3
+y 9
+speed 0
+level 100
+connected 1
+arch spell_firebolt
+dam 1000
+level 100
+end
+end
+arch dungeon_floor
+x 3
+y 10
+end
+arch bulletwall_3
+x 3
+y 10
+speed 0
+level 100
+connected 1
+arch spell_large_lightning
+dam 1000
+level 100
+end
+end
+arch dungeon_floor
+x 3
+y 11
+end
+arch awall_1_3
+x 3
+y 11
+end
+arch dungeon_floor
+x 3
+y 12
+end
+arch dungeon_floor
+x 3
+y 13
+end
+arch dungeon_floor
+x 3
+y 14
+end
+arch barrel
+x 3
+y 14
+end
+arch dungeon_floor
+x 3
+y 15
+end
+arch barrel
+x 3
+y 15
+end
+arch dungeon_floor
+x 3
+y 16
+end
+arch barrel
+x 3
+y 16
+end
+arch dungeon_floor
+x 3
+y 17
+end
+arch awall_2_1_2
+x 3
+y 17
+end
+arch dungeon_floor
+x 4
+y 1
+end
+arch awall_2_1_2
+x 4
+y 1
+end
+arch dungeon_floor
+x 4
+y 2
+end
+arch dungeon_floor
+x 4
+y 3
+end
+arch dungeon_floor
+x 4
+y 4
+end
+arch dungeon_floor
+x 4
+y 5
+end
+arch dungeon_floor
+x 4
+y 6
+end
+arch dungeon_floor
+x 4
+y 7
+end
+arch dungeon_floor
+x 4
+y 8
+end
+arch dungeon_floor
+x 4
+y 9
+end
+arch dungeon_magic
+x 4
+y 9
+end
+arch dungeon_floor
+x 4
+y 10
+end
+arch dungeon_magic
+x 4
+y 10
+end
+arch dungeon_floor
+x 4
+y 11
+end
+arch dungeon_floor
+x 4
+y 12
+end
+arch dungeon_floor
+x 4
+y 13
+end
+arch dungeon_floor
+x 4
+y 14
+end
+arch dungeon_floor
+x 4
+y 15
+end
+arch dungeon_floor
+x 4
+y 16
+end
+arch dungeon_floor
+x 4
+y 17
+end
+arch awall_2_1_2
+x 4
+y 17
+end
+arch dungeon_floor
+x 5
+y 1
+end
+arch awall_2_1_2
+x 5
+y 1
+end
+arch dungeon_floor
+x 5
+y 2
+end
+arch dungeon_floor
+x 5
+y 3
+end
+arch dungeon_floor
+x 5
+y 4
+end
+arch awall_1_1
+x 5
+y 4
+end
+arch dungeon_floor
+x 5
+y 5
+end
+arch awall_2_1_1
+x 5
+y 5
+end
+arch dungeon_floor
+x 5
+y 6
+end
+arch awall_2_2_1
+x 5
+y 6
+end
+arch dungeon_floor
+x 5
+y 7
+end
+arch dungeon_floor
+x 5
+y 8
+end
+arch dungeon_floor
+x 5
+y 9
+end
+arch dungeon_magic
+x 5
+y 9
+end
+arch dungeon_floor
+x 5
+y 10
+end
+arch dungeon_magic
+x 5
+y 10
+end
+arch dungeon_floor
+x 5
+y 11
+end
+arch dungeon_floor
+x 5
+y 12
+end
+arch dungeon_floor
+x 5
+y 13
+end
+arch dungeon_floor
+x 5
+y 14
+end
+arch dungeon_floor
+x 5
+y 15
+end
+arch dungeon_floor
+x 5
+y 16
+end
+arch dungeon_floor
+x 5
+y 17
+end
+arch awall_2_1_2
+x 5
+y 17
+end
+arch dungeon_floor
+x 6
+y 1
+end
+arch awall_2_1_2
+x 6
+y 1
+end
+arch dungeon_floor
+x 6
+y 2
+end
+arch dungeon_floor
+x 6
+y 3
+end
+arch dungeon_floor
+x 6
+y 4
+end
+arch dungeon_floor
+x 6
+y 5
+end
+arch stair_3_down
+slaying lower_1
+hp 6
+sp 5
+x 6
+y 5
+end
+arch dungeon_floor
+x 6
+y 6
+end
+arch awall_2_1_2
+x 6
+y 6
+end
+arch dungeon_floor
+x 6
+y 7
+end
+arch button_small
+x 6
+y 7
+connected 3
+end
+arch dungeon_floor
+x 6
+y 8
+end
+arch dungeon_floor
+x 6
+y 9
+end
+arch dungeon_magic
+x 6
+y 9
+end
+arch dungeon_floor
+x 6
+y 10
+end
+arch dungeon_magic
+x 6
+y 10
+end
+arch dungeon_floor
+x 6
+y 11
+end
+arch dungeon_floor
+x 6
+y 12
+end
+arch dungeon_floor
+x 6
+y 13
+end
+arch dungeon_floor
+x 6
+y 14
+end
+arch dungeon_floor
+x 6
+y 15
+end
+arch dungeon_floor
+x 6
+y 16
+end
+arch dungeon_floor
+x 6
+y 17
+end
+arch awall_2_1_2
+x 6
+y 17
+end
+arch dungeon_floor
+x 7
+end
+arch awall_2_2_2
+x 7
+end
+arch dungeon_floor
+x 7
+y 1
+end
+arch awall_3_4
+x 7
+y 1
+end
+arch dungeon_floor
+x 7
+y 2
+end
+arch awall_2_1_1
+x 7
+y 2
+end
+arch dungeon_floor
+x 7
+y 3
+end
+arch awall_1_2
+x 7
+y 3
+end
+arch dungeon_floor
+x 7
+y 4
+end
+arch dungeon_floor
+x 7
+y 5
+end
+arch small_troll
+x 7
+y 5
+end
+arch dungeon_floor
+x 7
+y 6
+end
+arch awall_2_1_2
+x 7
+y 6
+end
+arch dungeon_floor
+x 7
+y 7
+end
+arch dungeon_floor
+x 7
+y 8
+end
+arch dungeon_floor
+x 7
+y 9
+end
+arch dungeon_magic
+x 7
+y 9
+end
+arch dungeon_floor
+x 7
+y 10
+end
+arch dungeon_magic
+x 7
+y 10
+end
+arch dungeon_floor
+x 7
+y 11
+end
+arch dungeon_floor
+x 7
+y 12
+end
+arch dungeon_floor
+x 7
+y 13
+end
+arch dungeon_floor
+x 7
+y 14
+end
+arch dungeon_floor
+x 7
+y 15
+end
+arch dungeon_floor
+x 7
+y 16
+end
+arch awall_1_1
+x 7
+y 16
+end
+arch dungeon_floor
+x 7
+y 17
+end
+arch awall_2_2_4
+x 7
+y 17
+end
+arch dungeon_floor
+x 8
+end
+arch awall_2_1_2
+x 8
+end
+arch dungeon_floor
+x 8
+y 1
+end
+arch chest
+x 8
+y 1
+end
+arch dungeon_floor
+x 8
+y 2
+end
+arch dungeon_floor
+x 8
+y 3
+end
+arch door_2
+x 8
+y 3
+end
+arch dungeon_floor
+x 8
+y 4
+end
+arch dungeon_floor
+x 8
+y 5
+end
+arch dungeon_floor
+x 8
+y 6
+end
+arch awall_2_1_2
+x 8
+y 6
+end
+arch dungeon_floor
+x 8
+y 7
+end
+arch dungeon_floor
+x 8
+y 8
+end
+arch dungeon_floor
+x 8
+y 9
+end
+arch dungeon_magic
+x 8
+y 9
+end
+arch dungeon_floor
+x 8
+y 10
+end
+arch dungeon_magic
+x 8
+y 10
+end
+arch dungeon_floor
+x 8
+y 11
+end
+arch dungeon_floor
+x 8
+y 12
+end
+arch dungeon_floor
+x 8
+y 13
+end
+arch dungeon_floor
+x 8
+y 14
+end
+arch dungeon_floor
+x 8
+y 15
+end
+arch dungeon_floor
+x 8
+y 16
+end
+arch dungeon_floor
+x 8
+y 17
+end
+arch oakdoor
+slaying /world/world_119_125
+hp 32
+sp 30
+x 8
+y 17
+end
+arch dungeon_floor
+x 9
+end
+arch awall_2_1_2
+x 9
+end
+arch dungeon_floor
+x 9
+y 1
+end
+arch chest
+x 9
+y 1
+end
+arch dungeon_floor
+x 9
+y 2
+end
+arch small_troll
+x 9
+y 2
+end
+arch dungeon_floor
+x 9
+y 3
+end
+arch awall_1_4
+x 9
+y 3
+end
+arch dungeon_floor
+x 9
+y 4
+end
+arch dungeon_floor
+x 9
+y 5
+end
+arch dungeon_floor
+x 9
+y 6
+end
+arch awall_2_1_2
+x 9
+y 6
+end
+arch dungeon_floor
+x 9
+y 7
+end
+arch dungeon_floor
+x 9
+y 8
+end
+arch dungeon_floor
+x 9
+y 9
+end
+arch dungeon_magic
+x 9
+y 9
+end
+arch dungeon_floor
+x 9
+y 10
+end
+arch dungeon_magic
+x 9
+y 10
+end
+arch dungeon_floor
+x 9
+y 11
+end
+arch dungeon_floor
+x 9
+y 12
+end
+arch dungeon_floor
+x 9
+y 13
+end
+arch dungeon_floor
+x 9
+y 14
+end
+arch dungeon_floor
+x 9
+y 15
+end
+arch dungeon_floor
+x 9
+y 16
+end
+arch dungeon_floor
+x 9
+y 17
+end
+arch oakdoor
+slaying /world/world_119_125
+hp 32
+sp 30
+x 9
+y 17
+end
+arch dungeon_floor
+x 10
+end
+arch awall_2_1_2
+x 10
+end
+arch dungeon_floor
+x 10
+y 1
+end
+arch chest
+x 10
+y 1
+end
+arch dungeon_floor
+x 10
+y 2
+end
+arch dungeon_floor
+x 10
+y 3
+end
+arch awall_1_3
+x 10
+y 3
+end
+arch dungeon_floor
+x 10
+y 4
+end
+arch dungeon_floor
+x 10
+y 5
+end
+arch dungeon_floor
+x 10
+y 6
+end
+arch awall_2_1_2
+x 10
+y 6
+end
+arch dungeon_floor
+x 10
+y 7
+end
+arch dungeon_floor
+x 10
+y 8
+end
+arch dungeon_floor
+x 10
+y 9
+end
+arch dungeon_magic
+x 10
+y 9
+end
+arch dungeon_floor
+x 10
+y 10
+end
+arch dungeon_magic
+x 10
+y 10
+end
+arch dungeon_floor
+x 10
+y 11
+end
+arch dungeon_floor
+x 10
+y 12
+end
+arch dungeon_floor
+x 10
+y 13
+end
+arch dungeon_floor
+x 10
+y 14
+end
+arch dungeon_floor
+x 10
+y 15
+end
+arch dungeon_floor
+x 10
+y 16
+end
+arch dungeon_floor
+x 10
+y 17
+end
+arch oakdoor
+slaying /world/world_119_125
+hp 32
+sp 30
+x 10
+y 17
+end
+arch dungeon_floor
+x 11
+end
+arch awall_2_1_2
+x 11
+end
+arch dungeon_floor
+x 11
+y 1
+end
+arch chest
+x 11
+y 1
+end
+arch dungeon_floor
+x 11
+y 2
+end
+arch dungeon_floor
+x 11
+y 3
+end
+arch door_2
+x 11
+y 3
+end
+arch dungeon_floor
+x 11
+y 4
+end
+arch dungeon_floor
+x 11
+y 5
+end
+arch dungeon_floor
+x 11
+y 6
+end
+arch awall_2_1_2
+x 11
+y 6
+end
+arch dungeon_floor
+x 11
+y 7
+end
+arch dungeon_floor
+x 11
+y 8
+end
+arch dungeon_floor
+x 11
+y 9
+end
+arch dungeon_magic
+x 11
+y 9
+end
+arch dungeon_floor
+x 11
+y 10
+end
+arch dungeon_magic
+x 11
+y 10
+end
+arch dungeon_floor
+x 11
+y 11
+end
+arch dungeon_floor
+x 11
+y 12
+end
+arch dungeon_floor
+x 11
+y 13
+end
+arch dungeon_floor
+x 11
+y 14
+end
+arch dungeon_floor
+x 11
+y 15
+end
+arch dungeon_floor
+x 11
+y 16
+end
+arch awall_1_1
+x 11
+y 16
+end
+arch dungeon_floor
+x 11
+y 17
+end
+arch awall_2_2_1
+x 11
+y 17
+end
+arch dungeon_floor
+x 12
+end
+arch awall_2_2_3
+x 12
+end
+arch dungeon_floor
+x 12
+y 1
+end
+arch awall_3_2
+x 12
+y 1
+end
+arch dungeon_floor
+x 12
+y 2
+end
+arch awall_2_1_1
+x 12
+y 2
+end
+arch dungeon_floor
+x 12
+y 3
+end
+arch awall_1_2
+x 12
+y 3
+end
+arch dungeon_floor
+x 12
+y 4
+end
+arch dungeon_floor
+x 12
+y 5
+end
+arch small_troll
+x 12
+y 5
+end
+arch dungeon_floor
+x 12
+y 6
+end
+arch awall_2_1_2
+x 12
+y 6
+end
+arch dungeon_floor
+x 12
+y 7
+end
+arch dungeon_floor
+x 12
+y 8
+end
+arch dungeon_floor
+x 12
+y 9
+end
+arch dungeon_magic
+x 12
+y 9
+end
+arch dungeon_floor
+x 12
+y 10
+end
+arch dungeon_magic
+x 12
+y 10
+end
+arch dungeon_floor
+x 12
+y 11
+end
+arch dungeon_floor
+x 12
+y 12
+end
+arch dungeon_floor
+x 12
+y 13
+end
+arch dungeon_floor
+x 12
+y 14
+end
+arch dungeon_floor
+x 12
+y 15
+end
+arch dungeon_floor
+x 12
+y 16
+end
+arch dungeon_floor
+x 12
+y 17
+end
+arch awall_2_1_2
+x 12
+y 17
+end
+arch dungeon_floor
+x 13
+y 1
+end
+arch awall_2_1_2
+x 13
+y 1
+end
+arch dungeon_floor
+x 13
+y 2
+end
+arch dungeon_floor
+x 13
+y 3
+end
+arch dungeon_floor
+x 13
+y 4
+end
+arch dungeon_floor
+x 13
+y 5
+end
+arch stair_3_down
+slaying lower_1
+hp 13
+sp 5
+x 13
+y 5
+end
+arch dungeon_floor
+x 13
+y 6
+end
+arch awall_2_1_2
+x 13
+y 6
+end
+arch dungeon_floor
+x 13
+y 7
+end
+arch button_small
+x 13
+y 7
+connected 3
+end
+arch dungeon_floor
+x 13
+y 8
+end
+arch dungeon_floor
+x 13
+y 9
+end
+arch dungeon_magic
+x 13
+y 9
+end
+arch dungeon_floor
+x 13
+y 10
+end
+arch dungeon_magic
+x 13
+y 10
+end
+arch dungeon_floor
+x 13
+y 11
+end
+arch dungeon_floor
+x 13
+y 12
+end
+arch dungeon_floor
+x 13
+y 13
+end
+arch awall_1_4
+x 13
+y 13
+end
+arch dungeon_floor
+x 13
+y 14
+end
+arch barrel
+x 13
+y 14
+end
+arch dungeon_floor
+x 13
+y 15
+end
+arch barrel
+x 13
+y 15
+end
+arch dungeon_floor
+x 13
+y 16
+end
+arch dungeon_floor
+x 13
+y 17
+end
+arch awall_2_1_2
+x 13
+y 17
+end
+arch dungeon_floor
+x 14
+y 1
+end
+arch awall_2_1_2
+x 14
+y 1
+end
+arch dungeon_floor
+x 14
+y 2
+end
+arch dungeon_floor
+x 14
+y 3
+end
+arch dungeon_floor
+x 14
+y 4
+end
+arch awall_1_1
+x 14
+y 4
+end
+arch dungeon_floor
+x 14
+y 5
+end
+arch awall_2_1_1
+x 14
+y 5
+end
+arch dungeon_floor
+x 14
+y 6
+end
+arch awall_2_2_4
+x 14
+y 6
+end
+arch dungeon_floor
+x 14
+y 7
+end
+arch dungeon_floor
+x 14
+y 8
+end
+arch dungeon_floor
+x 14
+y 9
+end
+arch dungeon_magic
+x 14
+y 9
+end
+arch dungeon_floor
+x 14
+y 10
+end
+arch dungeon_magic
+x 14
+y 10
+end
+arch dungeon_floor
+x 14
+y 11
+end
+arch dungeon_floor
+x 14
+y 12
+end
+arch dungeon_floor
+x 14
+y 13
+end
+arch awall_2_1_2
+x 14
+y 13
+end
+arch dungeon_floor
+x 14
+y 14
+end
+arch barrel
+x 14
+y 14
+end
+arch dungeon_floor
+x 14
+y 15
+end
+arch dungeon_floor
+x 14
+y 16
+end
+arch dungeon_floor
+x 14
+y 17
+end
+arch awall_2_1_2
+x 14
+y 17
+end
+arch dungeon_floor
+x 15
+y 1
+end
+arch awall_2_1_2
+x 15
+y 1
+end
+arch dungeon_floor
+x 15
+y 2
+end
+arch dungeon_floor
+x 15
+y 3
+end
+arch dungeon_floor
+x 15
+y 4
+end
+arch dungeon_floor
+x 15
+y 5
+end
+arch dungeon_floor
+x 15
+y 6
+end
+arch dungeon_floor
+x 15
+y 7
+end
+arch dungeon_floor
+x 15
+y 8
+end
+arch dungeon_floor
+x 15
+y 9
+end
+arch dungeon_magic
+x 15
+y 9
+end
+arch dungeon_floor
+x 15
+y 10
+end
+arch dungeon_magic
+x 15
+y 10
+end
+arch dungeon_floor
+x 15
+y 11
+end
+arch dungeon_floor
+x 15
+y 12
+end
+arch dungeon_floor
+x 15
+y 13
+end
+arch awall_2_1_2
+x 15
+y 13
+end
+arch dungeon_floor
+x 15
+y 14
+end
+arch barrel
+x 15
+y 14
+end
+arch dungeon_floor
+x 15
+y 15
+end
+arch logs2
+x 15
+y 15
+end
+arch dungeon_floor
+x 15
+y 16
+end
+arch logs2
+x 15
+y 16
+end
+arch dungeon_floor
+x 15
+y 17
+end
+arch awall_2_1_2
+x 15
+y 17
+end
+arch dungeon_floor
+x 16
+y 1
+end
+arch awall_2_1_2
+x 16
+y 1
+end
+arch dungeon_floor
+x 16
+y 2
+end
+arch dungeon_floor
+x 16
+y 3
+end
+arch dungeon_floor
+x 16
+y 4
+end
+arch dungeon_floor
+x 16
+y 5
+end
+arch dungeon_floor
+x 16
+y 6
+end
+arch dungeon_floor
+x 16
+y 7
+end
+arch dungeon_floor
+x 16
+y 8
+end
+arch awall_1_4
+x 16
+y 8
+end
+arch dungeon_floor
+x 16
+y 9
+connected 1
+end
+arch bulletwall_7
+x 16
+y 9
+speed 0
+level 100
+connected 1
+arch spell_frostbolt
+dam 1000
+level 100
+end
+end
+arch dungeon_floor
+x 16
+y 10
+end
+arch bulletwall_7
+x 16
+y 10
+speed 0
+level 100
+connected 1
+arch spell_manabolt
+dam 1000
+level 100
+end
+end
+arch dungeon_floor
+x 16
+y 11
+end
+arch awall_1_4
+x 16
+y 11
+end
+arch dungeon_floor
+x 16
+y 12
+end
+arch dungeon_floor
+x 16
+y 13
+end
+arch awall_2_1_2
+x 16
+y 13
+end
+arch dungeon_floor
+x 16
+y 14
+end
+arch logs1
+x 16
+y 14
+end
+arch dungeon_floor
+x 16
+y 15
+end
+arch logs1
+x 16
+y 15
+end
+arch dungeon_floor
+x 16
+y 16
+end
+arch logs1
+x 16
+y 16
+end
+arch dungeon_floor
+x 16
+y 17
+end
+arch awall_2_1_2
+x 16
+y 17
+end
+arch dungeon_floor
+x 17
+y 1
+end
+arch awall_2_2_3
+x 17
+y 1
+end
+arch dungeon_floor
+x 17
+y 2
+end
+arch awall_2_1_1
+x 17
+y 2
+end
+arch dungeon_floor
+x 17
+y 3
+end
+arch awall_2_1_1
+x 17
+y 3
+end
+arch dungeon_floor
+x 17
+y 4
+end
+arch awall_2_1_1
+x 17
+y 4
+end
+arch dungeon_floor
+x 17
+y 5
+end
+arch awall_2_1_1
+x 17
+y 5
+end
+arch dungeon_floor
+x 17
+y 6
+end
+arch awall_2_1_1
+x 17
+y 6
+end
+arch dungeon_floor
+x 17
+y 7
+end
+arch awall_2_1_1
+x 17
+y 7
+end
+arch dungeon_floor
+x 17
+y 8
+end
+arch awall_3_4
+x 17
+y 8
+end
+arch dungeon_floor
+x 17
+y 9
+end
+arch awall_2_1_1
+x 17
+y 9
+end
+arch dungeon_floor
+x 17
+y 10
+end
+arch awall_2_1_1
+x 17
+y 10
+end
+arch dungeon_floor
+x 17
+y 11
+end
+arch awall_3_4
+x 17
+y 11
+end
+arch dungeon_floor
+x 17
+y 12
+end
+arch awall_2_1_1
+x 17
+y 12
+end
+arch dungeon_floor
+x 17
+y 13
+end
+arch awall_3_4
+x 17
+y 13
+end
+arch dungeon_floor
+x 17
+y 14
+end
+arch awall_2_1_1
+x 17
+y 14
+end
+arch dungeon_floor
+x 17
+y 15
+end
+arch awall_2_1_1
+x 17
+y 15
+end
+arch dungeon_floor
+x 17
+y 16
+end
+arch awall_2_1_1
+x 17
+y 16
+end
+arch dungeon_floor
+x 17
+y 17
+end
+arch awall_2_2_4
+x 17
+y 17
+end

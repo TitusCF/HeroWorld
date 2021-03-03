@@ -8,180 +8,128 @@ enter_x 6
 enter_y 12
 msg
 Created:  2000-11-19 Andreas Vogl (red.blaze@gmx.net)
-Modified: 2020-09-05 Acer
+Modified: 2021-03-03 Titus
 endmsg
 end
-arch darcap_apart_plot
+arch woodfloor2
+unique 1
+end
 arch woodwall_2_2_2
 end
-end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
-end
-arch darcap_apart_plot
+arch woodfloor2
 y 1
+unique 1
+end
 arch woodwall_2_1_1
-end
-end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
 y 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 y 2
+unique 1
+end
 arch woodwall_2_1_1
-end
-end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
 y 2
 end
+arch woodfloor2
+y 3
+unique 1
+end
 arch woodwall_2_1_1
 y 3
 end
-arch darcap_apart_plot
+arch locked_door1
+name wall
+slaying cat_appartment_ext
+msg
+Buy an apartment extender to remove this wall.
+endmsg
+face woodwall_7.111
 y 3
 end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
-y 3
-end
-arch darcap_apart_plot
+arch woodfloor2
 y 4
+unique 1
+end
 arch woodwall_2_1_1
-end
-end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
 y 4
 end
-arch darcap_apart_plot
+arch woodfloor2
 y 5
+unique 1
+end
 arch woodwall_2_1_1
-end
-end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
 y 5
 end
-arch darcap_apart_plot
+arch woodfloor2
 y 6
+unique 1
+end
 arch woodwall_2_1_1
-end
-end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
 y 6
 end
-arch darcap_apart_plot
+arch woodfloor2
 y 7
+unique 1
+end
 arch woodwall_2_1_1
-end
-end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
 y 7
 end
-arch darcap_apart_plot
+arch woodfloor2
 y 8
+unique 1
+end
 arch woodwall_2_1_1
-end
-end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
 y 8
 end
-arch darcap_apart_plot
+arch woodfloor2
 y 9
+unique 1
+end
 arch woodwall_2_1_1
-end
-end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
 y 9
 end
-arch darcap_apart_plot
+arch woodfloor2
 y 10
+unique 1
+end
 arch woodwall_2_1_1
-end
-end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
 y 10
 end
-arch darcap_apart_plot
+arch woodfloor2
 y 11
+unique 1
+end
 arch woodwall_2_2_1
-end
-end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
 y 11
 end
-arch grassmedium
+arch blocked
 y 12
 end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
-y 12
-end
-arch grassmedium
+arch blocked
 y 13
 end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
-y 13
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 1
+unique 1
+end
 arch woodwall_2_1_2
-end
-end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
 x 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 1
 y 1
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 1
 y 2
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 1
 y 3
+unique 1
+end
 arch locked_door1
 name wall
 slaying cat_appartment_ext
@@ -189,94 +137,94 @@ msg
 Buy an apartment extender to remove this wall.
 endmsg
 face woodwall_A.111
+x 1
+y 3
 blocksview 1
 end
-end
-arch darcap_apart_plot
-x 1
-y 4
-arch food_table
+arch goldfloor2
 name pay 7000 diamonds
-slaying gem
-other_arch none
-face goldfloor2.111
-food 700
-arch red_key
-name Apartment Extender
-slaying cat_appartment_ext
-face axe_4.111
+slaying diamond
+msg
+Knock down the walls!
+endmsg
+food 7000
+x 1
+y 4
+connected 2
 end
-end
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 1
 y 5
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 1
 y 6
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 1
 y 7
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 1
 y 8
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 1
 y 9
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 1
 y 10
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 1
 y 11
+unique 1
+end
 arch woodwall_2_1_2
+x 1
+y 11
 end
-end
-arch grassmedium
+arch blocked
 x 1
 y 12
 end
-arch grassmedium
+arch blocked
 x 1
 y 13
 end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
-x 1
-y 13
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 2
+unique 1
+end
 arch woodwall_2_2_3
-end
-end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
 x 2
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 2
 y 1
+unique 1
+end
 arch woodwall_2_2_1
+x 2
+y 1
 end
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 2
 y 2
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 2
 y 3
+unique 1
+end
 arch locked_door1
 name wall
 slaying cat_appartment_ext
@@ -284,80 +232,84 @@ msg
 Buy an apartment extender to remove this wall.
 endmsg
 face woodwall_A.111
+x 2
+y 3
 blocksview 1
 end
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 2
 y 4
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 2
 y 5
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 2
 y 6
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 2
 y 7
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 2
 y 8
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 2
 y 9
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 2
 y 10
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 2
 y 11
+unique 1
+end
 arch woodwall_2_1_2
+x 2
+y 11
 end
-end
-arch grassmedium
+arch blocked
 x 2
 y 12
 end
-arch grassmedium
+arch blocked
 x 2
 y 13
 end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
-x 2
-y 13
-end
-arch grassmedium
+arch blocked
 x 3
 end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
-x 3
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 3
 y 1
+unique 1
+end
 arch woodwall_2_1_2
+x 3
+y 1
 end
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 3
 y 2
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 3
 y 3
+unique 1
+end
 arch locked_door1
 name wall
 slaying cat_appartment_ext
@@ -365,80 +317,84 @@ msg
 Buy an apartment extender to remove this wall.
 endmsg
 face woodwall_A.111
+x 3
+y 3
 blocksview 1
 end
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 3
 y 4
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 3
 y 5
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 3
 y 6
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 3
 y 7
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 3
 y 8
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 3
 y 9
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 3
 y 10
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 3
 y 11
+unique 1
+end
 arch woodwall_2_1_2
+x 3
+y 11
 end
-end
-arch grassmedium
+arch blocked
 x 3
 y 12
 end
-arch grassmedium
+arch blocked
 x 3
 y 13
 end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
-x 3
-y 13
-end
-arch grassmedium
+arch blocked
 x 4
 end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
-x 4
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 4
 y 1
+unique 1
+end
 arch woodwall_2_1_2
+x 4
+y 1
 end
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 4
 y 2
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 4
 y 3
+unique 1
+end
 arch locked_door1
 name wall
 slaying cat_appartment_ext
@@ -446,86 +402,96 @@ msg
 Buy an apartment extender to remove this wall.
 endmsg
 face woodwall_A.111
+x 4
+y 3
 blocksview 1
 end
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 4
 y 4
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 4
 y 5
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 4
 y 6
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 4
 y 7
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 4
 y 8
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 4
 y 9
+unique 1
+end
 arch woodwall_2_2_2
+x 4
+y 9
 end
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 4
 y 10
+unique 1
+end
 arch woodwall_2_1_1
+x 4
+y 10
 end
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 4
 y 11
+unique 1
+end
 arch woodwall_3_1
+x 4
+y 11
 end
-end
-arch grassmedium
+arch blocked
 x 4
 y 12
 end
-arch grassmedium
+arch blocked
 x 4
 y 13
 end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
-x 4
-y 13
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 5
+unique 1
+end
 arch woodwall_2_2_2
-end
-end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
 x 5
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 5
 y 1
+unique 1
+end
 arch woodwall_2_2_4
+x 5
+y 1
 end
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 5
 y 2
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 5
 y 3
+unique 1
+end
 arch locked_door1
 name wall
 slaying cat_appartment_ext
@@ -533,99 +499,115 @@ msg
 Buy an apartment extender to remove this wall.
 endmsg
 face woodwall_A.111
+x 5
+y 3
 blocksview 1
 end
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 5
 y 4
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 5
 y 5
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 5
 y 6
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 5
 y 7
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 5
 y 8
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 5
 y 9
+unique 1
+end
 arch woodwall_1_3
+x 5
+y 9
 end
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 5
 y 10
+unique 1
+end
 arch torch_1
 food 0
+x 5
+y 10
 material 0
 no_pick 1
 changing 0
 end
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 5
 y 11
+unique 1
+end
 arch woodwall_2_2_3
+x 5
+y 11
 end
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 5
 y 12
+unique 1
+end
 arch woodwall_2_1_1
+x 5
+y 12
 end
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 5
 y 13
+unique 1
+end
 arch woodwall_1_2
-end
-end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
 x 5
 y 13
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 6
+unique 1
+end
 arch woodwall_2_1_2
-end
-end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
 x 6
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 6
 y 1
+unique 1
+end
 arch oakdoor
 name Navar City
 slaying /world/world_121_116
 face stalkergen.111
 hp 48
 sp 46
+x 6
+y 1
 end
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 6
 y 2
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 6
 y 3
+unique 1
+end
 arch locked_door1
 name wall
 slaying cat_appartment_ext
@@ -633,92 +615,102 @@ msg
 Buy an apartment extender to remove this wall.
 endmsg
 face woodwall_A.111
+x 6
+y 3
 blocksview 1
 end
-end
-arch grassmedium
+arch woodfloor2
 x 6
 y 4
+unique 1
 end
-arch darcap_apart_plot
-name Darcap Personal Apartment Pillar
-face pillars.111
-x 6
-y 4
-move_block all
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 6
 y 5
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 6
 y 6
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 6
 y 7
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 6
 y 8
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 6
 y 9
+unique 1
 end
-arch darcap_apart_plot
+arch igate_closed_1
+x 6
+y 9
+speed 0.500000
+connected 1
+end
+arch goldfloor2
+name apartment costs 200 pearls
+slaying pearl
+food 200
 x 6
 y 10
+connected 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 6
 y 11
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 6
 y 12
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 6
 y 13
+unique 1
+end
 arch oakdoor_2
 slaying /world/world_116_102
-hp 24
-sp 38
-end
-end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
+hp 23
 sp 38
 x 6
 y 13
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 7
+unique 1
+end
 arch woodwall_2_2_3
-end
-end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
 x 7
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 7
 y 1
+unique 1
+end
 arch woodwall_2_2_1
+x 7
+y 1
 end
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 7
 y 2
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 7
 y 3
+unique 1
+end
 arch locked_door1
 name wall
 slaying cat_appartment_ext
@@ -726,92 +718,106 @@ msg
 Buy an apartment extender to remove this wall.
 endmsg
 face woodwall_A.111
+x 7
+y 3
 blocksview 1
 end
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 7
 y 4
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 7
 y 5
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 7
 y 6
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 7
 y 7
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 7
 y 8
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 7
 y 9
+unique 1
+end
 arch woodwall_1_4
+x 7
+y 9
 end
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 7
 y 10
+unique 1
+end
 arch torch_1
 food 0
+x 7
+y 10
 material 0
 no_pick 1
 changing 0
 end
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 7
 y 11
+unique 1
+end
 arch woodwall_2_2_2
+x 7
+y 11
 end
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 7
 y 12
+unique 1
+end
 arch woodwall_2_1_1
+x 7
+y 12
 end
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 7
 y 13
+unique 1
+end
 arch woodwall_1_2
-end
-end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
 x 7
 y 13
 end
-arch grassmedium
+arch blocked
 x 8
 end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
-x 8
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 8
 y 1
+unique 1
+end
 arch woodwall_2_1_2
+x 8
+y 1
 end
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 8
 y 2
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 8
 y 3
+unique 1
+end
 arch locked_door1
 name wall
 slaying cat_appartment_ext
@@ -819,84 +825,92 @@ msg
 Buy an apartment extender to remove this wall.
 endmsg
 face woodwall_A.111
+x 8
+y 3
 blocksview 1
 end
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 8
 y 4
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 8
 y 5
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 8
 y 6
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 8
 y 7
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 8
 y 8
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 8
 y 9
+unique 1
+end
 arch woodwall_2_2_3
+x 8
+y 9
 end
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 8
 y 10
+unique 1
+end
 arch woodwall_2_1_1
+x 8
+y 10
 end
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 8
 y 11
+unique 1
+end
 arch woodwall_3_1
+x 8
+y 11
 end
-end
-arch grassmedium
+arch blocked
 x 8
 y 12
 end
-arch grassmedium
+arch blocked
 x 8
 y 13
 end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
-x 8
-y 13
-end
-arch grassmedium
+arch blocked
 x 9
 end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
-x 9
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 9
 y 1
+unique 1
+end
 arch woodwall_2_1_2
+x 9
+y 1
 end
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 9
 y 2
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 9
 y 3
+unique 1
+end
 arch locked_door1
 name wall
 slaying cat_appartment_ext
@@ -904,84 +918,92 @@ msg
 Buy an apartment extender to remove this wall.
 endmsg
 face woodwall_A.111
+x 9
+y 3
 blocksview 1
 end
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 9
 y 4
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 9
 y 5
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 9
 y 6
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 9
 y 7
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 9
 y 8
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 9
 y 9
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 9
 y 10
+unique 1
+end
 arch flowers_permanent
+x 9
+y 10
 end
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 9
 y 11
+unique 1
+end
 arch woodwall_2_1_2
+x 9
+y 11
 end
-end
-arch grassmedium
+arch blocked
 x 9
 y 12
 end
-arch grassmedium
+arch blocked
 x 9
 y 13
 end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
-x 9
-y 13
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 10
+unique 1
+end
 arch woodwall_2_2_2
-end
-end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
 x 10
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 10
 y 1
+unique 1
+end
 arch woodwall_2_2_4
+x 10
+y 1
 end
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 10
 y 2
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 10
 y 3
+unique 1
+end
 arch locked_door1
 name wall
 slaying cat_appartment_ext
@@ -989,87 +1011,93 @@ msg
 Buy an apartment extender to remove this wall.
 endmsg
 face woodwall_A.111
+x 10
+y 3
 blocksview 1
 end
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 10
 y 4
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 10
 y 5
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 10
 y 6
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 10
 y 7
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 10
 y 8
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 10
 y 9
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 10
 y 10
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 10
 y 11
+unique 1
+end
 arch woodwall_2_1_2
+x 10
+y 11
 end
-end
-arch grassmedium
+arch blocked
 x 10
 y 12
 end
-arch grassmedium
+arch blocked
 x 10
 y 13
 end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
-x 10
-y 13
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 11
+unique 1
+end
 arch woodwall_2_1_2
-end
-end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
 x 11
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 11
 y 1
+unique 1
+end
 arch oakdoor
 name Mountain Village
 slaying /world/world_116_104
 face stalkergen.111
 hp 16
 sp 22
+x 11
+y 1
 end
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 11
 y 2
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 11
 y 3
+unique 1
+end
 arch locked_door1
 name wall
 slaying cat_appartment_ext
@@ -1077,237 +1105,208 @@ msg
 Buy an apartment extender to remove this wall.
 endmsg
 face woodwall_A.111
+x 11
+y 3
 blocksview 1
 end
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 11
 y 4
+unique 1
+end
 arch clock
+x 11
+y 4
 end
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 11
 y 5
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 11
 y 6
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 11
 y 7
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 11
 y 8
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 11
 y 9
+unique 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 11
 y 10
+unique 1
+end
 arch bed_save
+x 11
+y 10
 end
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 11
 y 11
+unique 1
+end
 arch woodwall_2_1_2
+x 11
+y 11
 end
-end
-arch grassmedium
+arch blocked
 x 11
 y 12
 end
-arch grassmedium
+arch woodfloor2
+x 11
+y 13
+unique 1
+end
+arch teleporter
+name 2
+hp 2
+sp 4
+x 11
+y 13
+speed 0.000000
+connected 2
+end
+arch key2
+name Apartment Extender
+slaying cat_appartment_ext
+face axe_4.111
 x 11
 y 13
 end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
-x 11
-y 13
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 12
+unique 1
+end
 arch woodwall_2_2_3
-end
-end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
 x 12
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 12
 y 1
+unique 1
+end
 arch woodwall_2_1_1
-end
-end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
 x 12
 y 1
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 12
 y 2
+unique 1
+end
 arch woodwall_2_1_1
-end
-end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
 x 12
 y 2
 end
+arch woodfloor2
+x 12
+y 3
+unique 1
+end
 arch woodwall_2_1_1
 x 12
 y 3
 end
-arch darcap_apart_plot
+arch locked_door1
+name wall
+slaying cat_appartment_ext
+msg
+Buy an apartment extender to remove this wall.
+endmsg
+face woodwall_D.111
 x 12
 y 3
 end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
-x 12
-y 3
-end
-arch darcap_apart_plot
+arch woodfloor2
 x 12
 y 4
+unique 1
+end
 arch woodwall_2_1_1
-end
-end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
 x 12
 y 4
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 12
 y 5
+unique 1
+end
 arch woodwall_2_1_1
-end
-end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
 x 12
 y 5
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 12
 y 6
+unique 1
+end
 arch woodwall_2_1_1
-end
-end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
 x 12
 y 6
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 12
 y 7
+unique 1
+end
 arch woodwall_2_1_1
-end
-end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
 x 12
 y 7
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 12
 y 8
+unique 1
+end
 arch woodwall_2_1_1
-end
-end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
 x 12
 y 8
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 12
 y 9
+unique 1
+end
 arch woodwall_2_1_1
-end
-end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
 x 12
 y 9
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 12
 y 10
+unique 1
+end
 arch woodwall_2_1_1
-end
-end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
 x 12
 y 10
 end
-arch darcap_apart_plot
+arch woodfloor2
 x 12
 y 11
+unique 1
+end
 arch woodwall_2_2_4
-end
-end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
 x 12
 y 11
 end
-arch grassmedium
+arch blocked
 x 12
 y 12
 end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
-x 12
-y 12
-end
-arch grassmedium
-x 12
-y 13
-end
-arch invis_exit
-slaying /world/world_116_102
-hp 24
-sp 38
+arch blocked
 x 12
 y 13
 end

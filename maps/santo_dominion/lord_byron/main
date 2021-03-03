@@ -1,8 +1,12 @@
 arch map
+name <unnamed>
 region santodominion
+shopitems *:0
 width 50
 height 60
-shopitems *:0
+msg
+Modified: 2021-03-03 Titus
+endmsg
 end
 arch sea
 end
@@ -6749,6 +6753,8 @@ y 25
 end
 arch stair2_down
 slaying dungeon
+hp 5
+sp 5
 x 23
 y 25
 end
@@ -7252,15 +7258,12 @@ y 9
 end
 arch stair2_up
 slaying 1st_floor
+hp 20
+sp 5
 x 25
 y 9
 end
 arch woodfloor
-x 25
-y 10
-end
-arch stair2_down
-slaying dungeon
 x 25
 y 10
 end
@@ -7940,6 +7943,8 @@ y 25
 end
 arch stair2_down
 slaying dungeon
+hp 5
+sp 5
 x 27
 y 25
 end

@@ -867,11 +867,6 @@ arch pstone_1
 x 5
 y 26
 end
-arch evilpentagramred
-name ring of fire resistancy +1
-x 5
-y 26
-end
 arch cobblestones2
 x 5
 y 27
@@ -1003,7 +998,7 @@ x 6
 y 12
 end
 arch ladder_up
-slaying jeweler_dungeon
+slaying jeweler_dungeon.map
 hp 1
 sp 10
 x 6
@@ -1097,7 +1092,7 @@ arch pstone_1
 x 6
 y 29
 end
-arch cobblestones2
+arch pstone_1
 x 6
 y 30
 end
@@ -1105,11 +1100,11 @@ arch pstone_1
 x 6
 y 31
 end
-arch cobbles_blue
+arch pstone_1
 x 6
 y 32
 end
-arch cobbles_blue
+arch pstone_1
 x 6
 y 33
 end
@@ -1287,20 +1282,15 @@ arch pstone_1
 x 7
 y 30
 end
-arch cobblestones2
+arch pstone_1
 x 7
 y 31
 end
-arch cobblestones2
+arch pstone_1
 x 7
 y 32
 end
-arch button_handle
-x 7
-y 32
-connected 10
-end
-arch cobbles_blue
+arch pstone_1
 x 7
 y 33
 end
@@ -1498,15 +1488,11 @@ arch pstone_1
 x 8
 y 31
 end
-arch dread
-x 8
-y 31
-end
-arch cobbles_blue
+arch pstone_1
 x 8
 y 32
 end
-arch cobbles_blue
+arch pstone_1
 x 8
 y 33
 end
@@ -3974,13 +3960,14 @@ arch cave4
 x 22
 y 21
 end
-arch pstone_1
+arch cobblestones2
 x 22
 y 22
 end
-arch jeweler_bench
+arch button_handle
 x 22
 y 22
+connected 10
 end
 arch pstone_1
 x 22
@@ -5198,41 +5185,57 @@ arch pstone_1
 x 28
 y 20
 end
-arch evilpentagramred
+arch altar_trigger
 name ring of fire resistancy
+slaying resist_fire
+face evilpenta.111
+food 1
 x 28
 y 20
-attach [["check_ring_drop_on",{"connection":"1","resist_fire":"","state":"1"}]]
+last_sp 1
+connected 4
 end
 arch pstone_1
 x 28
 y 21
 end
-arch evilpentagramgrey
+arch altar_trigger
 name ring of cold resistancy
+slaying resist_cold
+face evilpenta.111
+food 1
 x 28
 y 21
-attach [["check_ring_drop_on",{"connection":"2","resist_cold":"","state":"1"}]]
+last_sp 1
+connected 3
 end
 arch pstone_1
 x 28
 y 22
 end
-arch evilpentagramdarkgrey
+arch altar_trigger
 name ring of electricity resistancy
+slaying resist_electricity
+face evilpenta.111
+food 1
 x 28
 y 22
-attach [["check_ring_drop_on",{"connection":"3","resist_electricity":"","state":"1"}]]
+last_sp 1
+connected 2
 end
 arch pstone_1
 x 28
 y 23
 end
-arch evilpentagram
+arch altar_trigger
 name ring of paralyzation resistancy
+slaying resist_paralyze
+face evilpenta.111
+food 1
 x 28
 y 23
-attach [["check_ring_drop_on",{"connection":"4","resist_paralyze":"","state":"1"}]]
+last_sp 1
+connected 1
 end
 arch pstone_1
 x 28

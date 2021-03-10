@@ -7,7 +7,7 @@ height 25
 enter_x 8
 enter_y 1
 msg
-Modified: 2020-11-21 Titus
+Modified: 2021-03-09 Titus
 endmsg
 end
 arch grass
@@ -1797,6 +1797,27 @@ x 12
 y 7
 end
 arch woodfloor2
+x 12
+y 8
+end
+arch monument
+name Record of Heroes
+msg
+List of Heroes who began their journey here:
+
+endmsg
+face sign.111
+x 12
+y 8
+arch event_apply
+title Python
+slaying python/misc/hall_of_fame.py
+end
+end
+arch magic_mouth
+msg
+ Apply (press a) to add your name to the recent player list
+endmsg
 x 12
 y 8
 end

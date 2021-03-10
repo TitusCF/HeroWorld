@@ -1801,7 +1801,7 @@ x 12
 y 8
 end
 arch monument
-name Record of Heroes
+name Record of Heroes (press a to apply and be added to the list)
 msg
 List of Heroes who began their journey here:
 
@@ -1813,13 +1813,6 @@ arch event_apply
 title Python
 slaying python/misc/hall_of_fame.py
 end
-end
-arch magic_mouth
-msg
- Apply (press a) to add your name to the recent player list
-endmsg
-x 12
-y 8
 end
 arch woodfloor
 x 12

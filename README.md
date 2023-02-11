@@ -3,10 +3,7 @@ Crossfire Fork, Hero World Server/Maps/Arch
 
 Sponsored Fork </br>
 
-Contact Titus on Crossfire IRC or Discord to discuss participating in this project.
-
-DISCORD: https://discord.gg/CCQqbqu
-IRC: http://crossfire.real-time.com/irc/index.html
+Contact Girl-Titus #8604 on Discord to discuss participating in this project.
 
 </BR>
 </br>

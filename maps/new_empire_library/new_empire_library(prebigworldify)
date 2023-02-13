@@ -7,13 +7,6 @@ Created:  2023-02-13 Titus
 Modified: 2023-02-13 Titus
 endmsg
 end
-arch creator
-y 7
-connected 2
-activate_on_release 0
-arch mover_7
-end
-end
 arch woodfloor
 y 9
 end
@@ -363,6 +356,14 @@ x 1
 y 33
 end
 arch well
+name Strange Well
+x 1
+y 33
+end
+arch magic_mouth
+msg
+In place of a sound of running water you hear faint chittering though it is far too dark to see what might be making those noises
+endmsg
 x 1
 y 33
 end
@@ -539,6 +540,7 @@ x 2
 y 26
 end
 arch stair2_down
+name New Empire's Library, Level 2
 x 2
 y 26
 end
@@ -628,7 +630,58 @@ arch table_1x2
 x 3
 y 9
 end
+arch book_red
+name History of Creation, by Khalis, Volume I
+msg
+In the beginning the land was barren. No life yet moved upon the large continents and islands that lay empty between the seas. In the seas, nothing moved as well. The world itself held its breath while the Creator rested.
+Then, a spirit from outside, serving the Most High, entered the
+world, and she saw a place yet empty of life. So she began to create grass to cover the face of the earth, and trees and other plants. Other spirits from outside watched, and agreed that Gaea had wrought wonders upon the devoid place.
+Since she was by far stronger than the others, those lesser
+spirits asked her for leave to join in her work. Gaea accepted their offer, and so the spirits of the Elements of Fire, Air, Water and Earth began their work as Gaea's servants. It can be assumed, that outside the world, the Creator watched and approved.
+
+In time, the elemental spirits came before Gaea, and beseeched her to help them create beings able to move of their own free will, living among the plant world. And Gaea saw that without animals, the green world would still miss a vital element, so she in turn went before the Creator. What happened between them noone knows, but soon afterwards living beings began to populate the land. Fish swam in the seas and rivers, birds flew their
+first flights through the air, and other species moved on the land. The cycle of Nature seemed complete, and Gaea was content.
+
+Already, however, other spirits had noticed what Gaea had done. Dark were they, and they treasured still the image of the empty world. To them, a place devoid of life seemed far better, far more perfect, and so they entered the world to return the world to its past. Sicknesses and poison began to spread among the animals, that threatened to extinguish entire species - yeah, indeed several of them might have died during that time, of which we have next to no information. Bones in the ground seem to indict that there were large animals which do not exist anymore, and sadly, we may not meet them evermore. In anger, Gaea named these dark spirits the Devourers, since they were those who devoured all life, and she and her Elemental allies fought them back, and tried to heal what they could.
+endmsg
+x 3
+y 9
+no_pick 1
+end
 arch redrugfloor1
+x 3
+y 10
+end
+arch note
+name History for the Impatient
+msg
+(Written by Maris the Scholar, a student of Khalis whom he opposed much later in his life.)
+
+Gaea created the world. However, for things to thrive, rain is needed so Sorig came along, and provided the rain and lightning. The lightning created fire, and so Ruggili was born.
+
+Gaea is the source of all nature and life, without any great need for followers, as the natural world itself gives her power. She gave life to a number of sons, all gods of their own.
+
+Her son Mostrai saw a flat and uninteresting world and created massive mountains and deep dungeons.
+
+Her other son Lythander was bored and created some animals.
+
+Gnarg saw that and created the goblins on the world for some reason we no longer know.
+
+Lythander, disgusted what the goblins where doing to the beautiful forests, created the elves and halflings to help protect the forests from uncontrolled goblin destruction.
+
+Mostrai, seeing what was happening to the forests, decided to take pre-emptive measures and created the dwarves to live deep within the mountains he created.
+
+Then Gaea created the humans, to protect and provide balance in the plains and along the coasts.
+
+With the constant battles for balance, many of these new life forms died. The gods that created them did originally see the souls that these new life forms had, but the gods Gorokh and Valriel did. They took the worst(and best) of these departing souls in order to create creatures for their own desires.
+
+The souls that neither claimed became the domain of the devourers. What the god of devourers lacked in the strength of individual souls, he gained in the sheer number of souls he controlled, and with these he created wights and vampires to give him even more souls. Some of the powerful humanoids worshipped him in hopes of eternal life. For some of these,
+they gained this eternal life in the form and lichs and demilichs.
+
+The Red Dragons were created by Rugilli because he wanted some worshipper of his own. It is believed that the other dragons eventually resulted from those by the constant in-breeding experiments Ruggili made.
+
+Nobody knows where the nearly god-like titans came from. Some scholars claim they could be descendants of some of the forgotten gods so little is known about nowadays.
+endmsg
 x 3
 y 10
 end
@@ -1199,15 +1252,16 @@ x 6
 y 12
 end
 arch guildmaster
+name Marchald, Keeper of the Entry
 msg
 @match hi
-Welcome to the New Empire's Library! How can I [help] you?
+Welcome to the New Empire's Library! How can I Help you?
 @match help
-I can tell you a little about the [history] of this library or perhaps you'd like to [answer] the [riddle]?
+I can tell you a little about the History of this library or perhaps you'd like to Answer the Riddle?
 @match history
 Certainly! The New Empire's Library has become known as the infallable repository for all knowledge of both the modern, ancient (and in some cases future) world. Some of our oldest sections hark from the era of the Builders, many of which have become forgotten with time.
 @match riddle
-We have found it neccessary to limit access to the older sections of this library to those who have proven themselves dilligent student. I will ask you answer a riddle and if you answer correctly I will open access to the deeper levels. would you like to [answer] the [riddle]?
+We have found it neccessary to limit access to the older sections of this library to those who have proven themselves dilligent student. I will ask you answer a riddle and if you answer correctly I will open access to the deeper levels. would you like to Answer the Riddle?
 @match answer
 "Along the shore the cloud waves break,
 The twin suns sink behind the lake,
@@ -1386,7 +1440,15 @@ arch redrugfloor1
 x 7
 y 9
 end
+arch wizdesk
+x 7
+y 9
+end
 arch redrugfloor1
+x 7
+y 10
+end
+arch chair_2.3
 x 7
 y 10
 end
@@ -1967,7 +2029,7 @@ arch woodfloor
 x 10
 y 13
 end
-arch woodfloor
+arch redrugfloor1
 x 10
 y 14
 end
@@ -2125,15 +2187,15 @@ arch woodfloor
 x 11
 y 12
 end
-arch woodfloor
+arch redrugfloor1
 x 11
 y 13
 end
-arch woodfloor
+arch redrugfloor1
 x 11
 y 14
 end
-arch woodfloor
+arch redrugfloor1
 x 11
 y 15
 end
@@ -2283,15 +2345,15 @@ arch woodfloor
 x 12
 y 11
 end
-arch woodfloor
+arch redrugfloor1
 x 12
 y 12
 end
-arch woodfloor
+arch redrugfloor1
 x 12
 y 13
 end
-arch woodfloor
+arch redrugfloor1
 x 12
 y 14
 end
@@ -2445,7 +2507,7 @@ arch woodfloor
 x 13
 y 12
 end
-arch woodfloor
+arch redrugfloor1
 x 13
 y 13
 end
@@ -2564,6 +2626,7 @@ x 14
 y 1
 end
 arch statue2
+name Statue of Skud the Great
 x 14
 y 1
 end
@@ -2572,6 +2635,11 @@ x 14
 y 2
 end
 arch magic_mouth
+msg
+One of the first Builders, Skud the Great created many famous places, like the Scorn?s First Inn or the Newbie Tower.
+
+The reasons of the disappearance of Skud are mostly unknown. The Codex Skudensis mentions that it could have been because of the negative influence of the Arch-Demon Neth Aq. It is thought that The Tower of Skud, although left unfinished by its creator, may contain informations about the fate of one of the most famous Builder.
+endmsg
 x 14
 y 2
 end
@@ -3277,7 +3345,7 @@ arch stwallblue_2_1_2
 x 17
 y 34
 end
-arch woodfloor
+arch redrugfloor1
 x 18
 end
 arch stwallblue_2_1_2
@@ -3288,6 +3356,7 @@ x 18
 y 1
 end
 arch statue2
+name Statue of Herghist Appelnisht
 x 18
 y 1
 end
@@ -3296,6 +3365,9 @@ x 18
 y 2
 end
 arch magic_mouth
+msg
+In 6138 EK, a famous explorer named Herghist Appelnisht set foot in Darcap, the first stranger in four millenia. He stayed 2 years, learning the history and customs of Darcap and teaching the whereabouts of the rest of the world to the inhabitants. He then travelled back to Navar with a delegation in order to establish relations between Darcap and the other towns.
+endmsg
 x 18
 y 2
 end
@@ -3392,6 +3464,7 @@ x 18
 y 21
 end
 arch statue2
+name Statue to Skud the Great
 x 18
 y 21
 end
@@ -4990,6 +5063,7 @@ x 27
 y 10
 end
 arch sign_e
+name The Tempest
 x 27
 y 10
 end
@@ -5696,6 +5770,7 @@ x 31
 y 10
 end
 arch big_galleon
+name The Tempest
 x 31
 y 10
 end

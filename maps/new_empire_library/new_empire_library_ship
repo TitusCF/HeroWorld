@@ -126,6 +126,24 @@ end
 arch sea
 y 31
 end
+arch whiterugfloor1
+y 32
+end
+arch altar_trigger
+name Load Cannon Ball Here
+slaying Cannon Ball
+msg
+> Cannon Ball Loaded -
+> Firing in 3..2..1 -
+> Cannon Ball Rematerialization Activated
+endmsg
+face b-king-draughts.111
+exp 1
+food 1
+y 32
+invisible 1
+connected 123
+end
 arch sea
 x 1
 end
@@ -1826,6 +1844,20 @@ slaying Cannon Ball
 msg
 > Cannon Ball Loaded -
 > Firing in 3..2..1 -
+
+endmsg
+face b-king-draughts.111
+exp 1
+food 1
+x 9
+y 25
+invisible 1
+connected 123
+end
+arch altar_trigger
+name Load Cannon Ball Here
+slaying Cannon Ball
+msg
 > Cannon Ball Rematerialization Activated
 endmsg
 face b-king-draughts.111
@@ -1833,6 +1865,7 @@ exp 1
 food 1
 x 9
 y 25
+invisible 1
 connected 12345
 end
 arch woodfloor
@@ -1840,11 +1873,9 @@ x 9
 y 26
 end
 arch cannon_5
-msg
-BOOM!!!!
-endmsg
 x 9
 y 26
+speed 0.0
 connected 12345
 blocksview 0
 no_damage 1

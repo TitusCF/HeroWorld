@@ -126,23 +126,8 @@ end
 arch sea
 y 31
 end
-arch whiterugfloor1
+arch sea
 y 32
-end
-arch altar_trigger
-name Load Cannon Ball Here
-slaying Cannon Ball
-msg
-> Cannon Ball Loaded -
-> Firing in 3..2..1 -
-> Cannon Ball Rematerialization Activated
-endmsg
-face b-king-draughts.111
-exp 1
-food 1
-y 32
-invisible 1
-connected 123
 end
 arch sea
 x 1
@@ -163,19 +148,35 @@ arch sea
 x 1
 y 4
 end
-arch sea
+arch woodfloor
 x 1
 y 5
 end
-arch sea
+arch wall_1_1
+x 1
+y 5
+end
+arch woodfloor
 x 1
 y 6
 end
-arch sea
+arch wall_2_1_1
+x 1
+y 6
+end
+arch woodfloor
 x 1
 y 7
 end
-arch sea
+arch wall_2_1_1
+x 1
+y 7
+end
+arch woodfloor
+x 1
+y 8
+end
+arch wall_2_1_1
 x 1
 y 8
 end
@@ -183,7 +184,7 @@ arch woodfloor
 x 1
 y 9
 end
-arch wall_2_2_2
+arch wall_2_1_1
 x 1
 y 9
 end
@@ -326,31 +327,43 @@ arch sea
 x 2
 y 3
 end
+arch altar_trigger
+slaying anchor
+msg
+anchor test
+endmsg
+food 1
+x 2
+y 3
+invisible 1
+last_sp 1
+end
 arch sea
 x 2
 y 4
 end
-arch sea
+arch director_1
+x 2
+y 4
+invisible 1
+end
+arch woodfloor
 x 2
 y 5
 end
-arch sea
+arch woodfloor
 x 2
 y 6
 end
-arch sea
+arch woodfloor
 x 2
 y 7
 end
-arch sea
+arch woodfloor
 x 2
 y 8
 end
 arch woodfloor
-x 2
-y 9
-end
-arch wall_2_1_2
 x 2
 y 9
 end
@@ -471,7 +484,7 @@ name Proximity Detector
 slaying Cannon Ball
 msg
 > Proximity Detector Activated
->Cannon Ball Relocation in 3...2...1
+> Cannon Ball Relocation in 3...2...1
 endmsg
 face woodfloor.111
 exp 1
@@ -540,43 +553,47 @@ arch sea
 x 3
 y 3
 end
+arch altar_trigger
+slaying anchor
+msg
+anchor test
+endmsg
+food 1
+x 3
+y 3
+invisible 1
+last_sp 1
+end
 arch sea
 x 3
 y 4
 end
-arch sea
+arch director_1
+x 3
+y 4
+invisible 1
+end
+arch woodfloorvert
 x 3
 y 5
 end
-arch sea
+arch woodfloorvert
 x 3
 y 6
 end
-arch woodfloor
+arch woodfloorvert
 x 3
 y 7
 end
-arch wall_2_2_2
-x 3
-y 7
-end
-arch woodfloor
+arch woodfloorvert
 x 3
 y 8
 end
-arch wall_2_1_1
-x 3
-y 8
-end
-arch woodfloor
+arch woodfloorvert
 x 3
 y 9
 end
-arch wall_2_2_4
-x 3
-y 9
-end
-arch woodfloor
+arch woodfloorvert
 x 3
 y 10
 end
@@ -734,35 +751,47 @@ arch sea
 x 4
 y 3
 end
+arch altar_trigger
+slaying anchor
+msg
+anchor test
+endmsg
+food 1
+x 4
+y 3
+invisible 1
+last_sp 1
+end
 arch sea
 x 4
 y 4
 end
-arch sea
+arch director_1
+x 4
+y 4
+invisible 1
+end
+arch woodfloorvert
 x 4
 y 5
 end
-arch sea
+arch woodfloorvert
 x 4
 y 6
 end
-arch woodfloor
+arch woodfloorvert
 x 4
 y 7
 end
-arch wall_2_1_2
-x 4
-y 7
-end
-arch woodfloor
+arch woodfloorvert
 x 4
 y 8
 end
-arch woodfloor
+arch woodfloorvert
 x 4
 y 9
 end
-arch woodfloor
+arch woodfloorvert
 x 4
 y 10
 end
@@ -946,15 +975,31 @@ arch sea
 x 5
 y 3
 end
+arch altar_trigger
+slaying anchor
+msg
+anchor test
+endmsg
+food 1
+x 5
+y 3
+invisible 1
+last_sp 1
+end
 arch sea
 x 5
 y 4
 end
-arch sea
+arch director_1
+x 5
+y 4
+invisible 1
+end
+arch woodfloor
 x 5
 y 5
 end
-arch sea
+arch woodfloor
 x 5
 y 6
 end
@@ -962,23 +1007,21 @@ arch woodfloor
 x 5
 y 7
 end
-arch wall_2_1_2
-x 5
-y 7
-end
-arch woodfloor
+arch woodfloorvert
 x 5
 y 8
 end
-arch woodfloor
+arch woodfloorvert
 x 5
 y 9
 end
 arch anchor_1
 x 5
 y 9
+weight 1000000
+move_block all
 end
-arch woodfloor
+arch woodfloorvert
 x 5
 y 10
 end
@@ -1144,7 +1187,7 @@ arch woodfloor
 x 6
 y 5
 end
-arch wall_2_1_1
+arch wall_1_2
 x 6
 y 5
 end
@@ -1152,27 +1195,19 @@ arch woodfloor
 x 6
 y 6
 end
-arch wall_2_1_1
-x 6
-y 6
-end
 arch woodfloor
 x 6
 y 7
 end
-arch wall_2_2_4
-x 6
-y 7
-end
-arch woodfloor
+arch woodfloorvert
 x 6
 y 8
 end
-arch woodfloor
+arch woodfloorvert
 x 6
 y 9
 end
-arch woodfloor
+arch woodfloorvert
 x 6
 y 10
 end
@@ -1342,6 +1377,10 @@ arch woodfloor
 x 7
 y 5
 end
+arch table_2x1
+x 7
+y 5
+end
 arch woodfloor
 x 7
 y 6
@@ -1350,15 +1389,15 @@ arch woodfloor
 x 7
 y 7
 end
-arch woodfloor
+arch woodfloorvert
 x 7
 y 8
 end
-arch woodfloor
+arch woodfloorvert
 x 7
 y 9
 end
-arch woodfloor
+arch woodfloorvert
 x 7
 y 10
 end
@@ -1552,6 +1591,17 @@ arch woodfloor
 x 8
 y 11
 end
+arch tech_button
+name Anchor Room Access
+msg
+> Anchor Room Door Activation Requested
+> Approved
+> Gates Opening in 3...2...1
+endmsg
+x 8
+y 11
+connected 4441
+end
 arch woodfloor
 x 8
 y 12
@@ -1703,7 +1753,7 @@ arch woodfloor
 x 9
 y 4
 end
-arch wall_2_1_2
+arch wall_3_3
 x 9
 y 4
 end
@@ -1711,7 +1761,15 @@ arch woodfloor
 x 9
 y 5
 end
+arch wall_2_1_1
+x 9
+y 5
+end
 arch woodfloor
+x 9
+y 6
+end
+arch wall_2_2_1
 x 9
 y 6
 end
@@ -1719,15 +1777,37 @@ arch woodfloor
 x 9
 y 7
 end
+arch spikes_closed
+x 9
+y 7
+connected 4441
+activate_on_release 0
+end
 arch woodfloor
 x 9
 y 8
+end
+arch spikes_closed
+x 9
+y 8
+connected 4441
+activate_on_release 0
 end
 arch woodfloor
 x 9
 y 9
 end
+arch spikes_closed
+x 9
+y 9
+connected 4441
+activate_on_release 0
+end
 arch woodfloor
+x 9
+y 10
+end
+arch wall_1_1
 x 9
 y 10
 end
@@ -1735,11 +1815,15 @@ arch woodfloor
 x 9
 y 11
 end
+arch wall_2_1_1
+x 9
+y 11
+end
 arch woodfloor
 x 9
 y 12
 end
-arch wall_2_1_2
+arch wall_3_1
 x 9
 y 12
 end
@@ -1928,7 +2012,7 @@ arch woodfloor
 x 10
 y 4
 end
-arch wall_2_1_2
+arch wall_3_3
 x 10
 y 4
 end
@@ -1936,7 +2020,15 @@ arch woodfloor
 x 10
 y 5
 end
+arch wall_2_1_1
+x 10
+y 5
+end
 arch woodfloor
+x 10
+y 6
+end
+arch wall_2_2_4
 x 10
 y 6
 end
@@ -2156,10 +2248,26 @@ end
 arch woodfloor
 x 11
 y 5
+move_block all
+end
+arch hangingfirepot
+x 11
+y 5
 end
 arch woodfloor
 x 11
 y 6
+end
+arch tech_button
+name Anchor Room Access
+msg
+> Anchor Room Access Requested
+> Approved
+> Gates Opening in 3...2...1
+endmsg
+x 11
+y 6
+connected 4441
 end
 arch woodfloor
 x 11
@@ -2313,7 +2421,7 @@ arch woodfloor
 x 12
 y 4
 end
-arch wall_2_1_2
+arch wall_3_3
 x 12
 y 4
 end
@@ -2321,7 +2429,15 @@ arch woodfloor
 x 12
 y 5
 end
+arch wall_2_1_1
+x 12
+y 5
+end
 arch woodfloor
+x 12
+y 6
+end
+arch wall_2_2_1
 x 12
 y 6
 end
@@ -2488,7 +2604,7 @@ arch woodfloor
 x 13
 y 4
 end
-arch wall_2_1_2
+arch wall_3_3
 x 13
 y 4
 end
@@ -2496,7 +2612,15 @@ arch woodfloor
 x 13
 y 5
 end
+arch wall_2_1_1
+x 13
+y 5
+end
 arch woodfloor
+x 13
+y 6
+end
+arch wall_2_2_4
 x 13
 y 6
 end
@@ -4305,6 +4429,7 @@ x 22
 y 21
 end
 arch steel_1
+face woodfloor.111
 x 22
 y 22
 end

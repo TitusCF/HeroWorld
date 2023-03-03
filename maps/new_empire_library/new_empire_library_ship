@@ -1621,25 +1621,7 @@ arch woodfloor
 x 8
 y 22
 end
-arch steel_1
-x 8
-y 23
-end
-arch creator
-face sci_chest_2.111
-x 8
-y 23
-connected 123
-lifesave 1
-activate_on_release 0
-arch boulder
-name Cannon Ball
-face bullet.112
-end
-end
-arch boulder
-name Cannon Ball
-face bullet.112
+arch woodfloor
 x 8
 y 23
 end
@@ -1886,6 +1868,9 @@ end
 end
 arch altar_trigger
 slaying cannon ball ticket
+msg
+> Cannon Ball Replenishment in 3...2...1
+endmsg
 exp 1
 food 1
 x 9
@@ -1896,6 +1881,13 @@ end
 arch woodfloor
 x 9
 y 27
+end
+arch black_draught
+name window
+face window_1.111
+x 9
+y 27
+no_pick 1
 end
 arch sea
 x 9
@@ -2045,13 +2037,78 @@ arch whiterugfloor1
 x 10
 y 24
 end
+arch whiterugfloor1
+x 10
+y 25
+end
+arch altar_trigger
+name Load Cannon Ball Here
+slaying Cannon Ball
+msg
+> Cannon Ball Loaded -
+> Firing in 3..2..1 -
+
+endmsg
+face b-king-draughts.111
+exp 1
+food 1
+x 10
+y 25
+invisible 1
+connected 123451
+end
+arch woodfloor
+x 10
+y 26
+end
+arch cannon_5
+x 10
+y 26
+speed 0.0
+connected 123451
+blocksview 0
+no_damage 1
+activate_on_release 0
+arch spell_lg_magic_bullet
+end
+end
+arch creator
+x 10
+y 26
+connected 123451
+lifesave 1
+activate_on_release 0
+arch card
+name cannon ball ticket
+msg
+This is a map makers item, how did you even get one of these anyway?
+endmsg
+invisible 1
+identified 1
+end
+end
+arch altar_trigger
+slaying cannon ball ticket
+msg
+> Cannon Ball Replenishment in 3...2...1
+endmsg
+exp 1
+food 1
+x 10
+y 26
+invisible 1
+connected 123
+end
 arch woodfloor
 x 10
 y 27
 end
-arch window_win2
+arch black_draught
+name window
+face window_1.111
 x 10
 y 27
+no_pick 1
 end
 arch sea
 x 10
@@ -2547,13 +2604,78 @@ arch whiterugfloor1
 x 13
 y 24
 end
+arch whiterugfloor1
+x 13
+y 25
+end
+arch altar_trigger
+name Load Cannon Ball Here
+slaying Cannon Ball
+msg
+> Cannon Ball Loaded -
+> Firing in 3..2..1 -
+
+endmsg
+face b-king-draughts.111
+exp 1
+food 1
+x 13
+y 25
+invisible 1
+connected 123452
+end
+arch woodfloor
+x 13
+y 26
+end
+arch cannon_5
+x 13
+y 26
+speed 0.0
+connected 123452
+blocksview 0
+no_damage 1
+activate_on_release 0
+arch spell_lg_magic_bullet
+end
+end
+arch creator
+x 13
+y 26
+connected 123452
+lifesave 1
+activate_on_release 0
+arch card
+name cannon ball ticket
+msg
+This is a map makers item, how did you even get one of these anyway?
+endmsg
+invisible 1
+identified 1
+end
+end
+arch altar_trigger
+slaying cannon ball ticket
+msg
+> Cannon Ball Replenishment in 3...2...1
+endmsg
+exp 1
+food 1
+x 13
+y 26
+invisible 1
+connected 123
+end
 arch woodfloor
 x 13
 y 27
 end
-arch window_win2
+arch black_draught
+name window
+face window_1.111
 x 13
 y 27
+no_pick 1
 end
 arch sea
 x 13
@@ -2706,13 +2828,78 @@ arch whiterugfloor1
 x 14
 y 24
 end
+arch whiterugfloor1
+x 14
+y 25
+end
+arch altar_trigger
+name Load Cannon Ball Here
+slaying Cannon Ball
+msg
+> Cannon Ball Loaded -
+> Firing in 3..2..1 -
+
+endmsg
+face b-king-draughts.111
+exp 1
+food 1
+x 14
+y 25
+invisible 1
+connected 123453
+end
+arch woodfloor
+x 14
+y 26
+end
+arch cannon_5
+x 14
+y 26
+speed 0.0
+connected 123453
+blocksview 0
+no_damage 1
+activate_on_release 0
+arch spell_lg_magic_bullet
+end
+end
+arch creator
+x 14
+y 26
+connected 123453
+lifesave 1
+activate_on_release 0
+arch card
+name cannon ball ticket
+msg
+This is a map makers item, how did you even get one of these anyway?
+endmsg
+invisible 1
+identified 1
+end
+end
+arch altar_trigger
+slaying cannon ball ticket
+msg
+> Cannon Ball Replenishment in 3...2...1
+endmsg
+exp 1
+food 1
+x 14
+y 26
+invisible 1
+connected 123
+end
 arch woodfloor
 x 14
 y 27
 end
-arch window_win2
+arch black_draught
+name window
+face window_1.111
 x 14
 y 27
+no_pick 1
 end
 arch sea
 x 14
@@ -3191,13 +3378,78 @@ arch whiterugfloor1
 x 17
 y 24
 end
+arch whiterugfloor1
+x 17
+y 25
+end
+arch altar_trigger
+name Load Cannon Ball Here
+slaying Cannon Ball
+msg
+> Cannon Ball Loaded -
+> Firing in 3..2..1 -
+
+endmsg
+face b-king-draughts.111
+exp 1
+food 1
+x 17
+y 25
+invisible 1
+connected 123454
+end
+arch woodfloor
+x 17
+y 26
+end
+arch cannon_5
+x 17
+y 26
+speed 0.0
+connected 123454
+blocksview 0
+no_damage 1
+activate_on_release 0
+arch spell_lg_magic_bullet
+end
+end
+arch creator
+x 17
+y 26
+connected 123454
+lifesave 1
+activate_on_release 0
+arch card
+name cannon ball ticket
+msg
+This is a map makers item, how did you even get one of these anyway?
+endmsg
+invisible 1
+identified 1
+end
+end
+arch altar_trigger
+slaying cannon ball ticket
+msg
+> Cannon Ball Replenishment in 3...2...1
+endmsg
+exp 1
+food 1
+x 17
+y 26
+invisible 1
+connected 123
+end
 arch woodfloor
 x 17
 y 27
 end
-arch window_win2
+arch black_draught
+name window
+face window_1.111
 x 17
 y 27
+no_pick 1
 end
 arch sea
 x 17
@@ -3350,13 +3602,78 @@ arch whiterugfloor1
 x 18
 y 24
 end
+arch whiterugfloor1
+x 18
+y 25
+end
+arch altar_trigger
+name Load Cannon Ball Here
+slaying Cannon Ball
+msg
+> Cannon Ball Loaded -
+> Firing in 3..2..1 -
+
+endmsg
+face b-king-draughts.111
+exp 1
+food 1
+x 18
+y 25
+invisible 1
+connected 123455
+end
+arch woodfloor
+x 18
+y 26
+end
+arch cannon_5
+x 18
+y 26
+speed 0.0
+connected 123455
+blocksview 0
+no_damage 1
+activate_on_release 0
+arch spell_lg_magic_bullet
+end
+end
+arch creator
+x 18
+y 26
+connected 123455
+lifesave 1
+activate_on_release 0
+arch card
+name cannon ball ticket
+msg
+This is a map makers item, how did you even get one of these anyway?
+endmsg
+invisible 1
+identified 1
+end
+end
+arch altar_trigger
+slaying cannon ball ticket
+msg
+> Cannon Ball Replenishment in 3...2...1
+endmsg
+exp 1
+food 1
+x 18
+y 26
+invisible 1
+connected 123
+end
 arch woodfloor
 x 18
 y 27
 end
-arch window_win2
+arch black_draught
+name window
+face window_1.111
 x 18
 y 27
+no_pick 1
 end
 arch sea
 x 18
@@ -3791,13 +4108,78 @@ arch whiterugfloor1
 x 21
 y 24
 end
+arch whiterugfloor1
+x 21
+y 25
+end
+arch altar_trigger
+name Load Cannon Ball Here
+slaying Cannon Ball
+msg
+> Cannon Ball Loaded -
+> Firing in 3..2..1 -
+
+endmsg
+face b-king-draughts.111
+exp 1
+food 1
+x 21
+y 25
+invisible 1
+connected 123456
+end
+arch woodfloor
+x 21
+y 26
+end
+arch cannon_5
+x 21
+y 26
+speed 0.0
+connected 123456
+blocksview 0
+no_damage 1
+activate_on_release 0
+arch spell_lg_magic_bullet
+end
+end
+arch creator
+x 21
+y 26
+connected 123456
+lifesave 1
+activate_on_release 0
+arch card
+name cannon ball ticket
+msg
+This is a map makers item, how did you even get one of these anyway?
+endmsg
+invisible 1
+identified 1
+end
+end
+arch altar_trigger
+slaying cannon ball ticket
+msg
+> Cannon Ball Replenishment in 3...2...1
+endmsg
+exp 1
+food 1
+x 21
+y 26
+invisible 1
+connected 123
+end
 arch woodfloor
 x 21
 y 27
 end
-arch window_win2
+arch black_draught
+name window
+face window_1.111
 x 21
 y 27
+no_pick 1
 end
 arch sea
 x 21
@@ -3922,7 +4304,28 @@ arch woodfloor
 x 22
 y 21
 end
-arch woodfloor
+arch steel_1
+x 22
+y 22
+end
+arch creator
+msg
+> Cannon Ball Replenishment in 3...2...1
+endmsg
+face sci_chest_2.111
+x 22
+y 22
+connected 123
+lifesave 1
+activate_on_release 0
+arch boulder
+name Cannon Ball
+face bullet.112
+end
+end
+arch boulder
+name Cannon Ball
+face bullet.112
 x 22
 y 22
 end
@@ -3934,13 +4337,78 @@ arch whiterugfloor1
 x 22
 y 24
 end
+arch whiterugfloor1
+x 22
+y 25
+end
+arch altar_trigger
+name Load Cannon Ball Here
+slaying Cannon Ball
+msg
+> Cannon Ball Loaded -
+> Firing in 3..2..1 -
+
+endmsg
+face b-king-draughts.111
+exp 1
+food 1
+x 22
+y 25
+invisible 1
+connected 123457
+end
+arch woodfloor
+x 22
+y 26
+end
+arch cannon_5
+x 22
+y 26
+speed 0.0
+connected 123457
+blocksview 0
+no_damage 1
+activate_on_release 0
+arch spell_lg_magic_bullet
+end
+end
+arch creator
+x 22
+y 26
+connected 123457
+lifesave 1
+activate_on_release 0
+arch card
+name cannon ball ticket
+msg
+This is a map makers item, how did you even get one of these anyway?
+endmsg
+invisible 1
+identified 1
+end
+end
+arch altar_trigger
+slaying cannon ball ticket
+msg
+> Cannon Ball Replenishment in 3...2...1
+endmsg
+exp 1
+food 1
+x 22
+y 26
+invisible 1
+connected 123
+end
 arch woodfloor
 x 22
 y 27
 end
-arch window_win2
+arch black_draught
+name window
+face window_1.111
 x 22
 y 27
+no_pick 1
 end
 arch sea
 x 22
@@ -4387,13 +4855,78 @@ arch whiterugfloor1
 x 25
 y 24
 end
+arch whiterugfloor1
+x 25
+y 25
+end
+arch altar_trigger
+name Load Cannon Ball Here
+slaying Cannon Ball
+msg
+> Cannon Ball Loaded -
+> Firing in 3..2..1 -
+
+endmsg
+face b-king-draughts.111
+exp 1
+food 1
+x 25
+y 25
+invisible 1
+connected 123458
+end
+arch woodfloor
+x 25
+y 26
+end
+arch cannon_5
+x 25
+y 26
+speed 0.0
+connected 123458
+blocksview 0
+no_damage 1
+activate_on_release 0
+arch spell_lg_magic_bullet
+end
+end
+arch creator
+x 25
+y 26
+connected 123458
+lifesave 1
+activate_on_release 0
+arch card
+name cannon ball ticket
+msg
+This is a map makers item, how did you even get one of these anyway?
+endmsg
+invisible 1
+identified 1
+end
+end
+arch altar_trigger
+slaying cannon ball ticket
+msg
+> Cannon Ball Replenishment in 3...2...1
+endmsg
+exp 1
+food 1
+x 25
+y 26
+invisible 1
+connected 123
+end
 arch woodfloor
 x 25
 y 27
 end
-arch window_win2
+arch black_draught
+name window
+face window_1.111
 x 25
 y 27
+no_pick 1
 end
 arch sea
 x 25
@@ -4554,13 +5087,78 @@ arch whiterugfloor1
 x 26
 y 24
 end
+arch whiterugfloor1
+x 26
+y 25
+end
+arch altar_trigger
+name Load Cannon Ball Here
+slaying Cannon Ball
+msg
+> Cannon Ball Loaded -
+> Firing in 3..2..1 -
+
+endmsg
+face b-king-draughts.111
+exp 1
+food 1
+x 26
+y 25
+invisible 1
+connected 123459
+end
+arch woodfloor
+x 26
+y 26
+end
+arch cannon_5
+x 26
+y 26
+speed 0.0
+connected 123459
+blocksview 0
+no_damage 1
+activate_on_release 0
+arch spell_lg_magic_bullet
+end
+end
+arch creator
+x 26
+y 26
+connected 123459
+lifesave 1
+activate_on_release 0
+arch card
+name cannon ball ticket
+msg
+This is a map makers item, how did you even get one of these anyway?
+endmsg
+invisible 1
+identified 1
+end
+end
+arch altar_trigger
+slaying cannon ball ticket
+msg
+> Cannon Ball Replenishment in 3...2...1
+endmsg
+exp 1
+food 1
+x 26
+y 26
+invisible 1
+connected 123
+end
 arch woodfloor
 x 26
 y 27
 end
-arch window_win2
+arch black_draught
+name window
+face window_1.111
 x 26
 y 27
+no_pick 1
 end
 arch sea
 x 26
@@ -5023,13 +5621,78 @@ arch whiterugfloor1
 x 29
 y 24
 end
+arch whiterugfloor1
+x 29
+y 25
+end
+arch altar_trigger
+name Load Cannon Ball Here
+slaying Cannon Ball
+msg
+> Cannon Ball Loaded -
+> Firing in 3..2..1 -
+
+endmsg
+face b-king-draughts.111
+exp 1
+food 1
+x 29
+y 25
+invisible 1
+connected 1234510
+end
+arch woodfloor
+x 29
+y 26
+end
+arch cannon_5
+x 29
+y 26
+speed 0.0
+connected 1234510
+blocksview 0
+no_damage 1
+activate_on_release 0
+arch spell_lg_magic_bullet
+end
+end
+arch creator
+x 29
+y 26
+connected 1234510
+lifesave 1
+activate_on_release 0
+arch card
+name cannon ball ticket
+msg
+This is a map makers item, how did you even get one of these anyway?
+endmsg
+invisible 1
+identified 1
+end
+end
+arch altar_trigger
+slaying cannon ball ticket
+msg
+> Cannon Ball Replenishment in 3...2...1
+endmsg
+exp 1
+food 1
+x 29
+y 26
+invisible 1
+connected 123
+end
 arch woodfloor
 x 29
 y 27
 end
-arch window_win2
+arch black_draught
+name window
+face window_1.111
 x 29
 y 27
+no_pick 1
 end
 arch sea
 x 29
@@ -5166,13 +5829,78 @@ arch whiterugfloor1
 x 30
 y 24
 end
+arch whiterugfloor1
+x 30
+y 25
+end
+arch altar_trigger
+name Load Cannon Ball Here
+slaying Cannon Ball
+msg
+> Cannon Ball Loaded -
+> Firing in 3..2..1 -
+
+endmsg
+face b-king-draughts.111
+exp 1
+food 1
+x 30
+y 25
+invisible 1
+connected 1234511
+end
+arch woodfloor
+x 30
+y 26
+end
+arch cannon_5
+x 30
+y 26
+speed 0.0
+connected 1234511
+blocksview 0
+no_damage 1
+activate_on_release 0
+arch spell_lg_magic_bullet
+end
+end
+arch creator
+x 30
+y 26
+connected 1234511
+lifesave 1
+activate_on_release 0
+arch card
+name cannon ball ticket
+msg
+This is a map makers item, how did you even get one of these anyway?
+endmsg
+invisible 1
+identified 1
+end
+end
+arch altar_trigger
+slaying cannon ball ticket
+msg
+> Cannon Ball Replenishment in 3...2...1
+endmsg
+exp 1
+food 1
+x 30
+y 26
+invisible 1
+connected 123
+end
 arch woodfloor
 x 30
 y 27
 end
-arch window_win2
+arch black_draught
+name window
+face window_1.111
 x 30
 y 27
+no_pick 1
 end
 arch sea
 x 30
@@ -5619,13 +6347,78 @@ arch whiterugfloor1
 x 33
 y 24
 end
+arch whiterugfloor1
+x 33
+y 25
+end
+arch altar_trigger
+name Load Cannon Ball Here
+slaying Cannon Ball
+msg
+> Cannon Ball Loaded -
+> Firing in 3..2..1 -
+
+endmsg
+face b-king-draughts.111
+exp 1
+food 1
+x 33
+y 25
+invisible 1
+connected 1234512
+end
+arch woodfloor
+x 33
+y 26
+end
+arch cannon_5
+x 33
+y 26
+speed 0.0
+connected 1234512
+blocksview 0
+no_damage 1
+activate_on_release 0
+arch spell_lg_magic_bullet
+end
+end
+arch creator
+x 33
+y 26
+connected 1234512
+lifesave 1
+activate_on_release 0
+arch card
+name cannon ball ticket
+msg
+This is a map makers item, how did you even get one of these anyway?
+endmsg
+invisible 1
+identified 1
+end
+end
+arch altar_trigger
+slaying cannon ball ticket
+msg
+> Cannon Ball Replenishment in 3...2...1
+endmsg
+exp 1
+food 1
+x 33
+y 26
+invisible 1
+connected 123
+end
 arch woodfloor
 x 33
 y 27
 end
-arch window_win2
+arch black_draught
+name window
+face window_1.111
 x 33
 y 27
+no_pick 1
 end
 arch sea
 x 33
@@ -5762,13 +6555,78 @@ arch whiterugfloor1
 x 34
 y 24
 end
+arch whiterugfloor1
+x 34
+y 25
+end
+arch altar_trigger
+name Load Cannon Ball Here
+slaying Cannon Ball
+msg
+> Cannon Ball Loaded -
+> Firing in 3..2..1 -
+
+endmsg
+face b-king-draughts.111
+exp 1
+food 1
+x 34
+y 25
+invisible 1
+connected 1234513
+end
+arch woodfloor
+x 34
+y 26
+end
+arch cannon_5
+x 34
+y 26
+speed 0.0
+connected 1234513
+blocksview 0
+no_damage 1
+activate_on_release 0
+arch spell_lg_magic_bullet
+end
+end
+arch creator
+x 34
+y 26
+connected 1234513
+lifesave 1
+activate_on_release 0
+arch card
+name cannon ball ticket
+msg
+This is a map makers item, how did you even get one of these anyway?
+endmsg
+invisible 1
+identified 1
+end
+end
+arch altar_trigger
+slaying cannon ball ticket
+msg
+> Cannon Ball Replenishment in 3...2...1
+endmsg
+exp 1
+food 1
+x 34
+y 26
+invisible 1
+connected 123
+end
 arch woodfloor
 x 34
 y 27
 end
-arch window_win2
+arch black_draught
+name window
+face window_1.111
 x 34
 y 27
+no_pick 1
 end
 arch sea
 x 34
@@ -6215,13 +7073,78 @@ arch whiterugfloor1
 x 37
 y 24
 end
+arch whiterugfloor1
+x 37
+y 25
+end
+arch altar_trigger
+name Load Cannon Ball Here
+slaying Cannon Ball
+msg
+> Cannon Ball Loaded -
+> Firing in 3..2..1 -
+
+endmsg
+face b-king-draughts.111
+exp 1
+food 1
+x 37
+y 25
+invisible 1
+connected 1234514
+end
+arch woodfloor
+x 37
+y 26
+end
+arch cannon_5
+x 37
+y 26
+speed 0.0
+connected 1234514
+blocksview 0
+no_damage 1
+activate_on_release 0
+arch spell_lg_magic_bullet
+end
+end
+arch creator
+x 37
+y 26
+connected 1234514
+lifesave 1
+activate_on_release 0
+arch card
+name cannon ball ticket
+msg
+This is a map makers item, how did you even get one of these anyway?
+endmsg
+invisible 1
+identified 1
+end
+end
+arch altar_trigger
+slaying cannon ball ticket
+msg
+> Cannon Ball Replenishment in 3...2...1
+endmsg
+exp 1
+food 1
+x 37
+y 26
+invisible 1
+connected 123
+end
 arch woodfloor
 x 37
 y 27
 end
-arch window_win2
+arch black_draught
+name window
+face window_1.111
 x 37
 y 27
+no_pick 1
 end
 arch sea
 x 37
@@ -6358,13 +7281,78 @@ arch whiterugfloor1
 x 38
 y 24
 end
+arch whiterugfloor1
+x 38
+y 25
+end
+arch altar_trigger
+name Load Cannon Ball Here
+slaying Cannon Ball
+msg
+> Cannon Ball Loaded -
+> Firing in 3..2..1 -
+
+endmsg
+face b-king-draughts.111
+exp 1
+food 1
+x 38
+y 25
+invisible 1
+connected 1234515
+end
+arch woodfloor
+x 38
+y 26
+end
+arch cannon_5
+x 38
+y 26
+speed 0.0
+connected 1234515
+blocksview 0
+no_damage 1
+activate_on_release 0
+arch spell_lg_magic_bullet
+end
+end
+arch creator
+x 38
+y 26
+connected 1234515
+lifesave 1
+activate_on_release 0
+arch card
+name cannon ball ticket
+msg
+This is a map makers item, how did you even get one of these anyway?
+endmsg
+invisible 1
+identified 1
+end
+end
+arch altar_trigger
+slaying cannon ball ticket
+msg
+> Cannon Ball Replenishment in 3...2...1
+endmsg
+exp 1
+food 1
+x 38
+y 26
+invisible 1
+connected 123
+end
 arch woodfloor
 x 38
 y 27
 end
-arch window_win2
+arch black_draught
+name window
+face window_1.111
 x 38
 y 27
+no_pick 1
 end
 arch sea
 x 38
@@ -6803,13 +7791,78 @@ arch whiterugfloor1
 x 41
 y 24
 end
+arch whiterugfloor1
+x 41
+y 25
+end
+arch altar_trigger
+name Load Cannon Ball Here
+slaying Cannon Ball
+msg
+> Cannon Ball Loaded -
+> Firing in 3..2..1 -
+
+endmsg
+face b-king-draughts.111
+exp 1
+food 1
+x 41
+y 25
+invisible 1
+connected 1234516
+end
+arch woodfloor
+x 41
+y 26
+end
+arch cannon_5
+x 41
+y 26
+speed 0.0
+connected 1234516
+blocksview 0
+no_damage 1
+activate_on_release 0
+arch spell_lg_magic_bullet
+end
+end
+arch creator
+x 41
+y 26
+connected 1234516
+lifesave 1
+activate_on_release 0
+arch card
+name cannon ball ticket
+msg
+This is a map makers item, how did you even get one of these anyway?
+endmsg
+invisible 1
+identified 1
+end
+end
+arch altar_trigger
+slaying cannon ball ticket
+msg
+> Cannon Ball Replenishment in 3...2...1
+endmsg
+exp 1
+food 1
+x 41
+y 26
+invisible 1
+connected 123
+end
 arch woodfloor
 x 41
 y 27
 end
-arch window_win2
+arch black_draught
+name window
+face window_1.111
 x 41
 y 27
+no_pick 1
 end
 arch sea
 x 41
@@ -6938,13 +7991,78 @@ arch whiterugfloor1
 x 42
 y 24
 end
+arch whiterugfloor1
+x 42
+y 25
+end
+arch altar_trigger
+name Load Cannon Ball Here
+slaying Cannon Ball
+msg
+> Cannon Ball Loaded -
+> Firing in 3..2..1 -
+
+endmsg
+face b-king-draughts.111
+exp 1
+food 1
+x 42
+y 25
+invisible 1
+connected 1234517
+end
+arch woodfloor
+x 42
+y 26
+end
+arch cannon_5
+x 42
+y 26
+speed 0.0
+connected 1234517
+blocksview 0
+no_damage 1
+activate_on_release 0
+arch spell_lg_magic_bullet
+end
+end
+arch creator
+x 42
+y 26
+connected 1234517
+lifesave 1
+activate_on_release 0
+arch card
+name cannon ball ticket
+msg
+This is a map makers item, how did you even get one of these anyway?
+endmsg
+invisible 1
+identified 1
+end
+end
+arch altar_trigger
+slaying cannon ball ticket
+msg
+> Cannon Ball Replenishment in 3...2...1
+endmsg
+exp 1
+food 1
+x 42
+y 26
+invisible 1
+connected 123
+end
 arch woodfloor
 x 42
 y 27
 end
-arch window_win2
+arch black_draught
+name window
+face window_1.111
 x 42
 y 27
+no_pick 1
 end
 arch sea
 x 42
@@ -7387,13 +8505,78 @@ arch whiterugfloor1
 x 45
 y 24
 end
+arch whiterugfloor1
+x 45
+y 25
+end
+arch altar_trigger
+name Load Cannon Ball Here
+slaying Cannon Ball
+msg
+> Cannon Ball Loaded -
+> Firing in 3..2..1 -
+
+endmsg
+face b-king-draughts.111
+exp 1
+food 1
+x 45
+y 25
+invisible 1
+connected 1234518
+end
+arch woodfloor
+x 45
+y 26
+end
+arch cannon_5
+x 45
+y 26
+speed 0.0
+connected 1234518
+blocksview 0
+no_damage 1
+activate_on_release 0
+arch spell_lg_magic_bullet
+end
+end
+arch creator
+x 45
+y 26
+connected 1234518
+lifesave 1
+activate_on_release 0
+arch card
+name cannon ball ticket
+msg
+This is a map makers item, how did you even get one of these anyway?
+endmsg
+invisible 1
+identified 1
+end
+end
+arch altar_trigger
+slaying cannon ball ticket
+msg
+> Cannon Ball Replenishment in 3...2...1
+endmsg
+exp 1
+food 1
+x 45
+y 26
+invisible 1
+connected 123
+end
 arch woodfloor
 x 45
 y 27
 end
-arch window_win2
+arch black_draught
+name window
+face window_1.111
 x 45
 y 27
+no_pick 1
 end
 arch sea
 x 45
@@ -7554,13 +8737,78 @@ arch whiterugfloor1
 x 46
 y 24
 end
+arch whiterugfloor1
+x 46
+y 25
+end
+arch altar_trigger
+name Load Cannon Ball Here
+slaying Cannon Ball
+msg
+> Cannon Ball Loaded -
+> Firing in 3..2..1 -
+
+endmsg
+face b-king-draughts.111
+exp 1
+food 1
+x 46
+y 25
+invisible 1
+connected 1234519
+end
+arch woodfloor
+x 46
+y 26
+end
+arch cannon_5
+x 46
+y 26
+speed 0.0
+connected 1234519
+blocksview 0
+no_damage 1
+activate_on_release 0
+arch spell_lg_magic_bullet
+end
+end
+arch creator
+x 46
+y 26
+connected 1234519
+lifesave 1
+activate_on_release 0
+arch card
+name cannon ball ticket
+msg
+This is a map makers item, how did you even get one of these anyway?
+endmsg
+invisible 1
+identified 1
+end
+end
+arch altar_trigger
+slaying cannon ball ticket
+msg
+> Cannon Ball Replenishment in 3...2...1
+endmsg
+exp 1
+food 1
+x 46
+y 26
+invisible 1
+connected 123
+end
 arch woodfloor
 x 46
 y 27
 end
-arch window_win2
+arch black_draught
+name window
+face window_1.111
 x 46
 y 27
+no_pick 1
 end
 arch sea
 x 46

@@ -127,9 +127,6 @@ arch sea
 y 31
 end
 arch sea
-y 32
-end
-arch sea
 x 1
 end
 arch sea
@@ -411,6 +408,63 @@ y 19
 end
 arch woodfloor
 x 2
+y 20
+end
+arch altar_trigger
+name Proximity Detector
+slaying Cannon Ball
+msg
+> Proximity Detector Activated
+>Cannon Ball Relocation in 3...2...1
+endmsg
+face woodfloor.111
+exp 1
+food 1
+x 2
+y 20
+invisible 1
+connected 123
+end
+arch woodfloor
+x 2
+y 21
+end
+arch altar_trigger
+name Proximity Detector
+slaying Cannon Ball
+msg
+> Proximity Detector Activated
+>Cannon Ball Relocation in 3...2...1
+endmsg
+face woodfloor.111
+exp 1
+food 1
+x 2
+y 21
+invisible 1
+connected 123
+end
+arch woodfloor
+x 2
+y 22
+end
+arch altar_trigger
+name Proximity Detector
+slaying Cannon Ball
+msg
+> Proximity Detector Activated
+>Cannon Ball Relocation in 3...2...1
+endmsg
+face woodfloor.111
+exp 1
+food 1
+x 2
+y 22
+invisible 1
+connected 123
+end
+arch woodfloor
+x 2
 y 23
 end
 arch wall_2_1_2
@@ -575,6 +629,25 @@ end
 arch woodfloor
 x 3
 y 21
+end
+arch woodfloor
+x 3
+y 22
+end
+arch altar_trigger
+name Proximity Detector
+slaying Cannon Ball
+msg
+> Proximity Detector Activated
+>Cannon Ball Relocation in 3...2...1
+endmsg
+face woodfloor.111
+exp 1
+food 1
+x 3
+y 22
+invisible 1
+connected 123
 end
 arch woodfloor
 x 3
@@ -755,7 +828,8 @@ arch altar_trigger
 name Proximity Detector
 slaying Cannon Ball
 msg
-Proximity Detector Activated - Cannon Ball Relocation in 3...2...1
+> Proximity Detector Activated
+>Cannon Ball Relocation in 3...2...1
 endmsg
 face woodfloor.111
 exp 1
@@ -769,21 +843,39 @@ arch woodfloor
 x 4
 y 23
 end
-arch altar
+arch altar_trigger
 name Proximity Detector
 slaying Cannon Ball
 msg
-Proximity Detector Activated - Cannon Ball Relocation in 3...2...1
+> Proximity Detector Activated
+>Cannon Ball Relocation in 3...2...1
 endmsg
 face woodfloor.111
-exp 2
+exp 1
 food 1
 x 4
 y 23
 invisible 1
-last_heal 1
 connected 123
-activate_on_release 0
+end
+arch woodfloor
+x 4
+y 24
+end
+arch altar_trigger
+name Proximity Detector
+slaying Cannon Ball
+msg
+> Proximity Detector Activated
+>Cannon Ball Relocation in 3...2...1
+endmsg
+face woodfloor.111
+exp 1
+food 1
+x 4
+y 24
+invisible 1
+connected 123
 end
 arch woodfloor
 x 4
@@ -951,6 +1043,25 @@ end
 arch woodfloor
 x 5
 y 23
+end
+arch woodfloor
+x 5
+y 24
+end
+arch altar_trigger
+name Proximity Detector
+slaying Cannon Ball
+msg
+> Proximity Detector Activated
+>Cannon Ball Relocation in 3...2...1
+endmsg
+face woodfloor.111
+exp 1
+food 1
+x 5
+y 24
+invisible 1
+connected 123
 end
 arch woodfloor
 x 5
@@ -1122,6 +1233,25 @@ end
 arch woodfloor
 x 6
 y 23
+end
+arch woodfloor
+x 6
+y 24
+end
+arch altar_trigger
+name Proximity Detector
+slaying Cannon Ball
+msg
+> Proximity Detector Activated
+>Cannon Ball Relocation in 3...2...1
+endmsg
+face woodfloor.111
+exp 1
+food 1
+x 6
+y 24
+invisible 1
+connected 123
 end
 arch woodfloor
 x 6
@@ -1300,6 +1430,25 @@ y 24
 end
 arch woodfloor
 x 7
+y 25
+end
+arch altar_trigger
+name Proximity Detector
+slaying Cannon Ball
+msg
+> Proximity Detector Activated
+>Cannon Ball Relocation in 3...2...1
+endmsg
+face woodfloor.111
+exp 1
+food 1
+x 7
+y 25
+invisible 1
+connected 123
+end
+arch woodfloor
+x 7
 y 26
 end
 arch wall_3_3
@@ -1463,6 +1612,7 @@ face sci_chest_2.111
 x 8
 y 23
 connected 123
+lifesave 1
 activate_on_release 0
 arch boulder
 name Cannon Ball
@@ -1478,6 +1628,25 @@ end
 arch woodfloor
 x 8
 y 24
+end
+arch woodfloor
+x 8
+y 25
+end
+arch altar_trigger
+name Proximity Detector
+slaying Cannon Ball
+msg
+> Proximity Detector Activated
+>Cannon Ball Relocation in 3...2...1
+endmsg
+face woodfloor.111
+exp 1
+food 1
+x 8
+y 25
+invisible 1
+connected 123
 end
 arch woodfloor
 x 8
@@ -1651,13 +1820,45 @@ arch whiterugfloor1
 x 9
 y 25
 end
+arch altar_trigger
+name Load Cannon Ball Here
+slaying Cannon Ball
+msg
+> Cannon Ball Loaded -
+> Firing in 3..2..1 -
+> Cannon Ball Rematerialization Activated
+endmsg
+face b-king-draughts.111
+exp 1
+food 1
+x 9
+y 25
+connected 123
+end
+arch altar_trigger
+slaying Cannon Ball
+exp 1
+x 9
+y 25
+invisible 1
+connected 12345
+end
 arch woodfloor
 x 9
 y 26
 end
 arch cannon_5
+msg
+BOOM!!!!
+endmsg
 x 9
 y 26
+connected 12345
+blocksview 0
+no_damage 1
+activate_on_release 0
+arch spell_lg_magic_bullet
+end
 end
 arch woodfloor
 x 9
@@ -1814,18 +2015,6 @@ end
 arch whiterugfloor1
 x 10
 y 24
-end
-arch whiterugfloor1
-x 10
-y 25
-end
-arch woodfloor
-x 10
-y 26
-end
-arch cannon_5
-x 10
-y 26
 end
 arch woodfloor
 x 10
@@ -2329,18 +2518,6 @@ arch whiterugfloor1
 x 13
 y 24
 end
-arch whiterugfloor1
-x 13
-y 25
-end
-arch woodfloor
-x 13
-y 26
-end
-arch cannon_5
-x 13
-y 26
-end
 arch woodfloor
 x 13
 y 27
@@ -2499,18 +2676,6 @@ end
 arch whiterugfloor1
 x 14
 y 24
-end
-arch whiterugfloor1
-x 14
-y 25
-end
-arch woodfloor
-x 14
-y 26
-end
-arch cannon_5
-x 14
-y 26
 end
 arch woodfloor
 x 14
@@ -2996,18 +3161,6 @@ end
 arch whiterugfloor1
 x 17
 y 24
-end
-arch whiterugfloor1
-x 17
-y 25
-end
-arch woodfloor
-x 17
-y 26
-end
-arch cannon_5
-x 17
-y 26
 end
 arch woodfloor
 x 17
@@ -3168,18 +3321,6 @@ arch whiterugfloor1
 x 18
 y 24
 end
-arch whiterugfloor1
-x 18
-y 25
-end
-arch woodfloor
-x 18
-y 26
-end
-arch cannon_5
-x 18
-y 26
-end
 arch woodfloor
 x 18
 y 27
@@ -3620,18 +3761,6 @@ end
 arch whiterugfloor1
 x 21
 y 24
-end
-arch whiterugfloor1
-x 21
-y 25
-end
-arch woodfloor
-x 21
-y 26
-end
-arch cannon_5
-x 21
-y 26
 end
 arch woodfloor
 x 21
@@ -3776,18 +3905,6 @@ arch whiterugfloor1
 x 22
 y 24
 end
-arch whiterugfloor1
-x 22
-y 25
-end
-arch woodfloor
-x 22
-y 26
-end
-arch cannon_5
-x 22
-y 26
-end
 arch woodfloor
 x 22
 y 27
@@ -4240,18 +4357,6 @@ end
 arch whiterugfloor1
 x 25
 y 24
-end
-arch whiterugfloor1
-x 25
-y 25
-end
-arch woodfloor
-x 25
-y 26
-end
-arch cannon_5
-x 25
-y 26
 end
 arch woodfloor
 x 25
@@ -4420,18 +4525,6 @@ arch whiterugfloor1
 x 26
 y 24
 end
-arch whiterugfloor1
-x 26
-y 25
-end
-arch woodfloor
-x 26
-y 26
-end
-arch cannon_5
-x 26
-y 26
-end
 arch woodfloor
 x 26
 y 27
@@ -4901,18 +4994,6 @@ arch whiterugfloor1
 x 29
 y 24
 end
-arch whiterugfloor1
-x 29
-y 25
-end
-arch woodfloor
-x 29
-y 26
-end
-arch cannon_5
-x 29
-y 26
-end
 arch woodfloor
 x 29
 y 27
@@ -5055,18 +5136,6 @@ end
 arch whiterugfloor1
 x 30
 y 24
-end
-arch whiterugfloor1
-x 30
-y 25
-end
-arch woodfloor
-x 30
-y 26
-end
-arch cannon_5
-x 30
-y 26
 end
 arch woodfloor
 x 30
@@ -5521,18 +5590,6 @@ arch whiterugfloor1
 x 33
 y 24
 end
-arch whiterugfloor1
-x 33
-y 25
-end
-arch woodfloor
-x 33
-y 26
-end
-arch cannon_5
-x 33
-y 26
-end
 arch woodfloor
 x 33
 y 27
@@ -5675,18 +5732,6 @@ end
 arch whiterugfloor1
 x 34
 y 24
-end
-arch whiterugfloor1
-x 34
-y 25
-end
-arch woodfloor
-x 34
-y 26
-end
-arch cannon_5
-x 34
-y 26
 end
 arch woodfloor
 x 34
@@ -6141,18 +6186,6 @@ arch whiterugfloor1
 x 37
 y 24
 end
-arch whiterugfloor1
-x 37
-y 25
-end
-arch woodfloor
-x 37
-y 26
-end
-arch cannon_5
-x 37
-y 26
-end
 arch woodfloor
 x 37
 y 27
@@ -6295,18 +6328,6 @@ end
 arch whiterugfloor1
 x 38
 y 24
-end
-arch whiterugfloor1
-x 38
-y 25
-end
-arch woodfloor
-x 38
-y 26
-end
-arch cannon_5
-x 38
-y 26
 end
 arch woodfloor
 x 38
@@ -6753,18 +6774,6 @@ arch whiterugfloor1
 x 41
 y 24
 end
-arch whiterugfloor1
-x 41
-y 25
-end
-arch woodfloor
-x 41
-y 26
-end
-arch cannon_5
-x 41
-y 26
-end
 arch woodfloor
 x 41
 y 27
@@ -6899,18 +6908,6 @@ end
 arch whiterugfloor1
 x 42
 y 24
-end
-arch whiterugfloor1
-x 42
-y 25
-end
-arch woodfloor
-x 42
-y 26
-end
-arch cannon_5
-x 42
-y 26
 end
 arch woodfloor
 x 42
@@ -7361,18 +7358,6 @@ arch whiterugfloor1
 x 45
 y 24
 end
-arch whiterugfloor1
-x 45
-y 25
-end
-arch woodfloor
-x 45
-y 26
-end
-arch cannon_5
-x 45
-y 26
-end
 arch woodfloor
 x 45
 y 27
@@ -7539,18 +7524,6 @@ end
 arch whiterugfloor1
 x 46
 y 24
-end
-arch whiterugfloor1
-x 46
-y 25
-end
-arch woodfloor
-x 46
-y 26
-end
-arch cannon_5
-x 46
-y 26
 end
 arch woodfloor
 x 46

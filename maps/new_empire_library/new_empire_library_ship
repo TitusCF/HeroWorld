@@ -413,13 +413,52 @@ arch woodfloor
 x 2
 y 20
 end
+arch altar
+name Proximity Detector
+slaying Cannon Ball
+msg
+Proximity Detector Activated - Cannon Ball Relocation in 3...2...1
+endmsg
+face woodfloor.111
+food 1
+x 2
+y 20
+connected 123
+activate_on_release 0
+end
 arch woodfloor
 x 2
 y 21
 end
+arch altar
+name Proximity Detector
+slaying Cannon Ball
+msg
+Proximity Detector Activated - Cannon Ball Relocation in 3...2...1
+endmsg
+face woodfloor.111
+food 1
+x 2
+y 21
+connected 123
+activate_on_release 0
+end
 arch woodfloor
 x 2
 y 22
+end
+arch altar
+name Proximity Detector
+slaying Cannon Ball
+msg
+Proximity Detector Activated - Cannon Ball Relocation in 3...2...1
+endmsg
+face woodfloor.111
+food 1
+x 2
+y 22
+connected 123
+activate_on_release 0
 end
 arch woodfloor
 x 2
@@ -591,6 +630,19 @@ end
 arch woodfloor
 x 3
 y 22
+end
+arch altar
+name Proximity Detector
+slaying Cannon Ball
+msg
+Proximity Detector Activated - Cannon Ball Relocation in 3...2...1
+endmsg
+face woodfloor.111
+food 1
+x 3
+y 22
+connected 123
+activate_on_release 0
 end
 arch woodfloor
 x 3
@@ -771,25 +823,35 @@ arch woodfloor
 x 4
 y 23
 end
-arch check_inv
+arch altar
+name Proximity Detector
 slaying Cannon Ball
 msg
 Proximity Detector Activated - Cannon Ball Relocation in 3...2...1
 endmsg
-face altar.111
-animation altar
+face woodfloor.111
 food 1
 x 4
 y 23
-type 18
-last_heal 1
-connected cannon_ball_gen
-activate_on_push 1
+connected 123
 activate_on_release 0
 end
 arch woodfloor
 x 4
 y 24
+end
+arch altar
+name Proximity Detector
+slaying Cannon Ball
+msg
+Proximity Detector Activated - Cannon Ball Relocation in 3...2...1
+endmsg
+face woodfloor.111
+food 1
+x 4
+y 24
+connected 123
+activate_on_release 0
 end
 arch woodfloor
 x 4
@@ -961,6 +1023,19 @@ end
 arch woodfloor
 x 5
 y 24
+end
+arch altar
+name Proximity Detector
+slaying Cannon Ball
+msg
+Proximity Detector Activated - Cannon Ball Relocation in 3...2...1
+endmsg
+face woodfloor.111
+food 1
+x 5
+y 24
+connected 123
+activate_on_release 0
 end
 arch woodfloor
 x 5
@@ -1136,6 +1211,19 @@ end
 arch woodfloor
 x 6
 y 24
+end
+arch altar
+name Proximity Detector
+slaying Cannon Ball
+msg
+Proximity Detector Activated - Cannon Ball Relocation in 3...2...1
+endmsg
+face woodfloor.111
+food 1
+x 6
+y 24
+connected 123
+activate_on_release 0
 end
 arch woodfloor
 x 6
@@ -1316,6 +1404,19 @@ arch woodfloor
 x 7
 y 25
 end
+arch altar
+name Proximity Detector
+slaying Cannon Ball
+msg
+Proximity Detector Activated - Cannon Ball Relocation in 3...2...1
+endmsg
+face woodfloor.111
+food 1
+x 7
+y 25
+connected 123
+activate_on_release 0
+end
 arch woodfloor
 x 7
 y 26
@@ -1480,7 +1581,7 @@ arch creator
 face sci_chest_2.111
 x 8
 y 23
-connected cannon_ball_gen
+connected 123
 activate_on_release 0
 arch boulder
 name Cannon Ball
@@ -1500,6 +1601,19 @@ end
 arch woodfloor
 x 8
 y 25
+end
+arch altar
+name Proximity Detector
+slaying Cannon Ball
+msg
+Proximity Detector Activated - Cannon Ball Relocation in 3...2...1
+endmsg
+face woodfloor.111
+food 1
+x 8
+y 25
+connected 123
+activate_on_release 0
 end
 arch woodfloor
 x 8

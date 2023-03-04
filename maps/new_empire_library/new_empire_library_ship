@@ -4,7 +4,7 @@ width 62
 height 33
 msg
 Created:  2023-02-24 Titus
-Modified: 2023-03-03 Titus
+Modified: 2023-03-04 Titus
 endmsg
 end
 arch sea
@@ -330,7 +330,13 @@ end
 arch altar_trigger
 slaying anchor
 msg
-anchor test
+> Anchor Malfunction Detected!
+> Stand Clear!
+> Anchor Released in 3...2...1
+**WARNING**
+SHIP ANCHOR CANNOT BE DETECTED
+INSTALL NEW ANCHOR BEFORE ATTEMPTING TO LEAVE PORT
+
 endmsg
 food 1
 x 2
@@ -346,6 +352,7 @@ arch director_1
 x 2
 y 4
 invisible 1
+move_on swim
 end
 arch woodfloor
 x 2
@@ -556,7 +563,13 @@ end
 arch altar_trigger
 slaying anchor
 msg
-anchor test
+> Anchor Malfunction Detected!
+> Stand Clear!
+> Anchor Released in 3...2...1
+**WARNING**
+SHIP ANCHOR CANNOT BE DETECTED
+INSTALL NEW ANCHOR BEFORE ATTEMPTING TO LEAVE PORT
+
 endmsg
 food 1
 x 3
@@ -572,6 +585,7 @@ arch director_1
 x 3
 y 4
 invisible 1
+move_on swim
 end
 arch woodfloorvert
 x 3
@@ -754,7 +768,13 @@ end
 arch altar_trigger
 slaying anchor
 msg
-anchor test
+> Anchor Malfunction Detected!
+> Stand Clear!
+> Anchor Released in 3...2...1
+**WARNING**
+SHIP ANCHOR CANNOT BE DETECTED
+INSTALL NEW ANCHOR BEFORE ATTEMPTING TO LEAVE PORT
+
 endmsg
 food 1
 x 4
@@ -770,6 +790,7 @@ arch director_1
 x 4
 y 4
 invisible 1
+move_on swim
 end
 arch woodfloorvert
 x 4
@@ -978,7 +999,13 @@ end
 arch altar_trigger
 slaying anchor
 msg
-anchor test
+> Anchor Malfunction Detected!
+> Stand Clear!
+> Anchor Released in 3...2...1
+**WARNING**
+SHIP ANCHOR CANNOT BE DETECTED
+INSTALL NEW ANCHOR BEFORE ATTEMPTING TO LEAVE PORT
+
 endmsg
 food 1
 x 5
@@ -994,6 +1021,7 @@ arch director_1
 x 5
 y 4
 invisible 1
+move_on swim
 end
 arch woodfloor
 x 5
@@ -1591,17 +1619,6 @@ end
 arch woodfloor
 x 8
 y 11
-end
-arch tech_button
-name Anchor Room Access
-msg
-> Anchor Room Door Activation Requested
-> Approved
-> Gates Opening in 3...2...1
-endmsg
-x 8
-y 11
-connected 4441
 end
 arch woodfloor
 x 8
@@ -5696,6 +5713,9 @@ x 29
 y 15
 end
 arch stair2_up
+slaying /new_empire_library/new_empire_library(prebigworldify)
+hp 31
+sp 11
 x 29
 y 15
 end
@@ -5704,6 +5724,9 @@ x 29
 y 16
 end
 arch stair2_up
+slaying /new_empire_library/new_empire_library(prebigworldify)
+hp 31
+sp 11
 x 29
 y 16
 end
@@ -9064,6 +9087,14 @@ x 47
 y 17
 end
 arch woodfloor
+name To Captain's Upper Cabin
+x 47
+y 18
+end
+arch stair_3_up
+msg
+The steps creak beneath your weight, they feel like they could give out at an moment...
+endmsg
 x 47
 y 18
 end

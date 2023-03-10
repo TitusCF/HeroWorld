@@ -9,7 +9,7 @@ msg
 Creator: b.t.
 Email: thomas@astro.psu.edu
 Date: Sun Apr 28 04:45:42 1996
-Modified: 2020-08-23 Acer
+Modified: 2023-03-09 Titus
 endmsg
 end
 arch woodfloor
@@ -831,14 +831,13 @@ arch woodfloor
 x 9
 y 2
 end
-arch random_reading
-name mon_reading
-slaying library
-sp 1
+arch bench_2_2_2
 x 9
 y 2
-level 5
-no_pick 1
+end
+arch book_read
+x 9
+y 2
 end
 arch dungeon_magic
 x 9
@@ -848,14 +847,9 @@ arch woodfloor
 x 9
 y 3
 end
-arch random_reading
-name mon_reading
-slaying library
-sp 1
+arch bench_2_1_1
 x 9
 y 3
-level 5
-no_pick 1
 end
 arch dungeon_magic
 x 9
@@ -865,14 +859,21 @@ arch woodfloor
 x 9
 y 4
 end
-arch random_reading
-name mon_reading
-slaying library
-sp 1
+arch bench_2_2_1
 x 9
 y 4
-level 5
-no_pick 1
+end
+arch tome
+name A Drop of Wasser
+msg
+According to the myth of Wasser,
+The city was founded by the first drops of water to become alive when the world was first created. As the first living water beings, they wandered the newly formed world, seeking a place to call home. They eventually found a hidden spring deep in the wilderness and settled there, building their city of Wasser.
+However, there is a secret myth among the water elementals of Wasser that suggests that their city was not originally from this world. It is said that the demigod Titus, who had the power to create and manipulate entire dimensions, brought Wasser from another world called Deliantra.
+The myth goes that Titus saw the potential of the sentient water droplets and decided to give them a new home in her own world. She created a portal between Deliantra and Heroworld, and brought Wasser through to its new home.
+While this secret myth is not widely known among outsiders, the water elementals of Wasser hold it in high regard and believe that their city has a special connection to the divine power of Titus. Regardless of its true origins, Wasser remains a mysterious and hidden city in Heroworld, known only to those who seek it out and are worthy enough to enter its watery depths.
+endmsg
+x 9
+y 4
 end
 arch woodfloor
 x 9
@@ -889,19 +890,6 @@ end
 arch woodfloor
 x 9
 y 6
-end
-arch book_red
-name interesting red book
-msg
-The two chalaces... Unlocking the path
-to Heaven.... One under the old dead tree...
-The other...
-In a Sch....
-endmsg
-x 9
-y 6
-no_pick 1
-identified 1
 end
 arch dungeon_magic
 x 9
@@ -971,12 +959,9 @@ arch woodfloor
 x 9
 y 13
 end
-arch random_reading
-slaying library
+arch bench_1_1
 x 9
 y 13
-level 6
-no_pick 1
 end
 arch dungeon_magic
 x 9
@@ -986,12 +971,21 @@ arch woodfloor
 x 9
 y 14
 end
-arch random_reading
-slaying library
+arch bench_2_1_1
 x 9
 y 14
-level 6
-no_pick 1
+end
+arch book_clasp
+name The Guild of Sea Men
+msg
+The Guild of Seamen
+in Heroworld is a shadowy institution, shrouded in the mists of time and mystery. Its origins are lost in the depths of history, and its true purpose remains unknown to all but a select few.
+Led by a council of enigmatic captains and navigators, the Guild possesses an arcane knowledge of the sea and its ways that few can fathom. Its network of ships, ports, and trade routes spans the known world and beyond, reaching into the very heart of the unknown.
+The members of the Guild are masters of their craft, skilled sailors and craftsmen who have spent years mastering the arcane lore of the sea. To them, the ocean is more than just a body of water, it is a living entity, with its own desires and secrets. They believe that by unlocking the mysteries of the sea, they can unlock new realms of power and knowledge, and gain access to secrets that have been lost to the ages.
+To outsiders, the Guild is a formidable presence, with its strict codes of conduct and unwavering loyalty to its members. But to those who earn its trust and respect, it can be a source of untold riches and adventure, offering the chance to explore new lands, trade with exotic cultures, and discover the secrets of the deep. But beware, for the Guild is a dark and mysterious organization, and those who delve too deeply into its secrets may find themselves lost forever in the unfathomable depths of the sea.
+endmsg
+x 9
+y 14
 end
 arch dungeon_magic
 x 9
@@ -1001,12 +995,9 @@ arch woodfloor
 x 9
 y 15
 end
-arch random_reading
-slaying library
+arch bench_2_2_1
 x 9
 y 15
-level 6
-no_pick 1
 end
 arch woodfloor
 x 9
@@ -1039,14 +1030,9 @@ arch woodfloor
 x 10
 y 2
 end
-arch random_reading
-name mon_reading
-slaying library
-sp 1
+arch bench_2_1_2
 x 10
 y 2
-level 5
-no_pick 1
 end
 arch dungeon_magic
 x 10
@@ -1064,14 +1050,9 @@ arch woodfloor
 x 10
 y 4
 end
-arch random_reading
-name mon_reading
-slaying library
-sp 1
+arch bench_1_3
 x 10
 y 4
-level 5
-no_pick 1
 end
 arch woodfloor
 x 10
@@ -1156,13 +1137,6 @@ arch woodfloor
 x 10
 y 14
 end
-arch random_reading
-slaying library
-x 10
-y 14
-level 6
-no_pick 1
-end
 arch dungeon_magic
 x 10
 y 15
@@ -1171,12 +1145,9 @@ arch woodfloor
 x 10
 y 15
 end
-arch random_reading
-slaying library
+arch bench_1_3
 x 10
 y 15
-level 6
-no_pick 1
 end
 arch woodfloor
 x 10
@@ -1209,14 +1180,13 @@ arch woodfloor
 x 11
 y 2
 end
-arch random_reading
-name mon_reading
-slaying library
-sp 1
+arch bench_2_1_2
 x 11
 y 2
-level 5
-no_pick 1
+end
+arch book_read
+x 11
+y 2
 end
 arch dungeon_magic
 x 11
@@ -1380,14 +1350,9 @@ arch woodfloor
 x 12
 y 2
 end
-arch random_reading
-name mon_reading
-slaying library
-sp 1
+arch bench_2_2_3
 x 12
 y 2
-level 5
-no_pick 1
 end
 arch dungeon_magic
 x 12
@@ -1397,14 +1362,9 @@ arch woodfloor
 x 12
 y 3
 end
-arch random_reading
-name mon_reading
-slaying library
-sp 1
+arch bench_2_1_1
 x 12
 y 3
-level 5
-no_pick 1
 end
 arch dungeon_magic
 x 12
@@ -1414,14 +1374,26 @@ arch woodfloor
 x 12
 y 4
 end
-arch random_reading
-name mon_reading
-slaying library
-sp 1
+arch bench_1_2
 x 12
 y 4
-level 5
+end
+arch book_red
+name Two Cups
+msg
+Listen carefully,
+for I am about to reveal a tale that has been passed down through the ages. A tale of two chalices that hold the key to unlocking the path to Heaven itself. These chalices are not mere trinkets, but rather powerful artifacts of untold magic, coveted by all who seek power and enlightenment.
+
+One of the chalices is hidden beneath the old dead tree, its roots twisted and gnarled with age, and its branches reaching out like the fingers of a skeletal hand. The tree guards the chalice with a fierce and unyielding power, daring any who would dare to take it to face its wrath.
+
+The other chalice is rumored to be hidden within the walls of a school, a place where knowledge and power are revered above all else. But be warned, for this is not just any school. This is a school shrouded in mystery and secrets, where the halls echo with whispers of magic and forbidden knowledge. Only the bravest and most skilled adventurers dare to venture into the depths of this place, for the dangers that lurk within are many and varied.
+
+So heed my words, brave adventurers, and set forth on your quest to find these chalices. For those who succeed, the path to Heaven will be unlocked, and the power of the chalices will be yours to wield. But be warned, for the path is treacherous, and the dangers are many. Only those with the courage and skill to face them will emerge victorious.
+endmsg
+x 12
+y 4
 no_pick 1
+identified 1
 end
 arch woodfloor
 x 12
@@ -1514,14 +1486,26 @@ arch woodfloor
 x 12
 y 15
 end
-arch random_reading
-name gods_reading
-slaying library
-sp 5
+arch bench_1_4
 x 12
 y 15
-level 5
-no_pick 1
+end
+arch note
+name A Legend in Scorn
+msg
+In the city of Scorn,
+there was a legend that spoke of an Arch Lich who resided in an old mansion deep within the city. The Arch Lich possessed a pair of magical gloves known as the Arch Liches Gloves of Magic, which gave him great power and mastery over the spells he cast. Many brave heroes had attempted to defeat the Arch Lich over the years, but none had succeeded.
+
+One hero, named Jaxon, decided to take up the challenge and ventured into the mansion to face the Arch Lich. As Jaxon made his way through the mansion's dark and twisting corridors, he encountered a host of undead creatures and dark spells that tested his resolve to the limit.
+
+Eventually, Jaxon came face to face with the Arch Lich himself, who was seated on a throne, wearing the magical gloves that gave him his immense power. Jaxon drew his sword and charged towards the Arch Lich, hoping to strike him down and claim victory.
+
+But the Arch Lich was too powerful, and his spells proved too much for Jaxon to handle. The hero was quickly overpowered and defeated, his body turned to dust by the Arch Lich's dark magic.
+
+From that day on, the legend of the Arch Lich and his magical gloves grew even stronger, and no hero dared to venture into the mansion to face him. The old mansion remained shrouded in mystery and darkness, its secrets locked away forever.
+endmsg
+x 12
+y 15
 end
 arch woodfloor
 x 12
@@ -1650,14 +1634,13 @@ arch woodfloor
 x 13
 y 13
 end
-arch random_reading
-name gods_reading
-slaying library
-sp 5
+arch bench_1_1
 x 13
 y 13
-level 5
-no_pick 1
+end
+arch quarto
+x 13
+y 13
 end
 arch dungeon_magic
 x 13
@@ -1667,14 +1650,9 @@ arch woodfloor
 x 13
 y 14
 end
-arch random_reading
-name gods_reading
-slaying library
-sp 5
+arch bench_2_1_1
 x 13
 y 14
-level 5
-no_pick 1
 end
 arch dungeon_magic
 x 13
@@ -1684,14 +1662,9 @@ arch woodfloor
 x 13
 y 15
 end
-arch random_reading
-name gods_reading
-slaying library
-sp 5
+arch bench_2_2_4
 x 13
 y 15
-level 5
-no_pick 1
 end
 arch woodfloor
 x 13
@@ -1724,14 +1697,13 @@ arch woodfloor
 x 14
 y 2
 end
-arch random_reading
-name spell_reading
-slaying library
-sp 3
+arch bench_1_4
 x 14
 y 2
-level 5
-no_pick 1
+end
+arch book_read
+x 14
+y 2
 end
 arch woodfloor
 x 14
@@ -1777,18 +1749,6 @@ x 14
 y 8
 end
 arch woodfloor
-x 14
-y 8
-end
-arch sign
-msg
-NOTICE: no library books are to pass
-beyond these doors. Thieves will be
-punished to the full extent of the
-law! For your convenience, we have
-chained all books to the shelves.
-Have a nice day.
-endmsg
 x 14
 y 8
 end
@@ -1885,14 +1845,9 @@ arch woodfloor
 x 15
 y 2
 end
-arch random_reading
-name spell_reading
-slaying library
-sp 3
+arch bench_2_2_3
 x 15
 y 2
-level 5
-no_pick 1
 end
 arch dungeon_magic
 x 15
@@ -1902,14 +1857,9 @@ arch woodfloor
 x 15
 y 3
 end
-arch random_reading
-name spell_reading
-slaying library
-sp 3
+arch bench_2_1_1
 x 15
 y 3
-level 5
-no_pick 1
 end
 arch dungeon_magic
 x 15
@@ -1919,14 +1869,9 @@ arch woodfloor
 x 15
 y 4
 end
-arch random_reading
-name spell_reading
-slaying library
-sp 3
+arch bench_1_2
 x 15
 y 4
-level 5
-no_pick 1
 end
 arch woodfloor
 x 15
@@ -2048,13 +1993,14 @@ y 14
 end
 arch sign
 msg
-NOTICE: Take advantage of our
-Public Book Repository!
-If you encounter a bit of knowledge that
-you would like to leave for future heroes
-you may leave a copy in the Public Book
-Repo.
+Step into the wondrous world of Scorn Library,
+where knowledge knows no bounds! Are you ready to embark on a literary journey that will take you to uncharted territories of the mind? Then look no further and purchase your library card to your right.
 
+But wait! That's not all. At Scorn Library, we don't just want to offer you access to our incredible selection of literature. We want you to be a part of it! That's why we've created the Public Book Repository, a magical place where you can leave a bit of your own knowledge for future heroes to discover. Imagine being the inspiration for the next great hero on their quest to save the world!
+
+And if you're feeling truly adventurous, why not create your own masterpiece? That's right, with blank scrolls and books available for purchase, you have the power to write your own story and add to the legacy of Scorn Library. Who knows, maybe one day your book will be among the greats in our collection!
+
+So come on in and immerse yourself in the wonder and magic of Scorn Library. There's always something new to discover and experience. Don't miss out on this incredible opportunity to expand your mind and be a part of something truly special. See you soon!
 endmsg
 x 15
 y 14
@@ -2258,14 +2204,9 @@ arch woodfloor
 x 17
 y 2
 end
-arch random_reading
-name spell_reading
-slaying library
-sp 3
+arch bench_1_4
 x 17
 y 2
-level 5
-no_pick 1
 end
 arch dungeon_magic
 x 17
@@ -2416,14 +2357,9 @@ arch woodfloor
 x 18
 y 2
 end
-arch random_reading
-name spell_reading
-slaying library
-sp 3
+arch bench_2_2_3
 x 18
 y 2
-level 5
-no_pick 1
 end
 arch dungeon_magic
 x 18
@@ -2433,14 +2369,9 @@ arch woodfloor
 x 18
 y 3
 end
-arch random_reading
-name spell_reading
-slaying library
-sp 3
+arch bench_2_1_1
 x 18
 y 3
-level 5
-no_pick 1
 end
 arch dungeon_magic
 x 18
@@ -2450,14 +2381,9 @@ arch woodfloor
 x 18
 y 4
 end
-arch random_reading
-name spell_reading
-slaying library
-sp 3
+arch bench_1_2
 x 18
 y 4
-level 5
-no_pick 1
 end
 arch woodfloor
 x 18
@@ -2621,13 +2547,6 @@ arch woodfloor
 x 19
 y 7
 end
-arch random_reading
-slaying library
-x 19
-y 7
-level 10
-no_pick 1
-end
 arch dungeon_magic
 x 19
 y 8
@@ -2635,13 +2554,6 @@ end
 arch woodfloor
 x 19
 y 8
-end
-arch random_reading
-slaying library
-x 19
-y 8
-level 10
-no_pick 1
 end
 arch woodfloor
 x 19
@@ -2737,16 +2649,13 @@ arch woodfloor
 x 20
 y 1
 end
-arch dungeon_magic
+arch bench_2_2_2
 x 20
 y 1
 end
-arch random_reading
-slaying library
+arch book_red
 x 20
 y 1
-level 30
-no_pick 1
 end
 arch dungeon_magic
 x 20
@@ -2756,12 +2665,9 @@ arch woodfloor
 x 20
 y 2
 end
-arch random_reading
-slaying library
+arch bench_2_1_1
 x 20
 y 2
-level 30
-no_pick 1
 end
 arch dungeon_magic
 x 20
@@ -2771,12 +2677,9 @@ arch woodfloor
 x 20
 y 3
 end
-arch random_reading
-slaying library
+arch bench_1_2
 x 20
 y 3
-level 30
-no_pick 1
 end
 arch dungeon_magic
 x 20
@@ -2821,13 +2724,6 @@ end
 arch woodfloor
 x 20
 y 8
-end
-arch random_reading
-slaying library
-x 20
-y 8
-level 10
-no_pick 1
 end
 arch woodfloor
 x 20
@@ -2890,12 +2786,14 @@ end
 arch sign
 name INSTRUCTIONS
 msg
-Many stores in Scorn have been updated
-with zero-point storage.
-Simply stand on the pad and activate as
-many times as you would like in order to
-produce your desired quantity of the available
-items.
+Attention all shoppers of Scorn!
+We are thrilled to announce that many of our stores have undergone a fantastic update! We have introduced zero-point storage, a revolutionary way to shop that will change the way you think about shopping forever.
+
+With zero-point storage, you can now simply step onto the pad and activate it as many times as you like to produce your desired quantity of the available items. No more lugging around heavy shopping bags or worrying about running out of space! This cutting-edge technology allows you to effortlessly shop for everything you need without any hassle or stress.
+
+So, whether you're stocking up on supplies for your next quest, or just grabbing a few essentials for your day-to-day adventures, zero-point storage is the way to go. Simply step onto the pad, activate it, and watch as your items appear before your very eyes!
+
+Come and experience the future of shopping at Scorn. Our updated stores with zero-point storage are waiting for you, so don't miss out on this incredible opportunity to shop smarter, not harder. See you soon!
 endmsg
 x 20
 y 15
@@ -2930,12 +2828,9 @@ arch dungeon_magic
 x 21
 y 1
 end
-arch random_reading
-slaying library
+arch bench_2_1_2
 x 21
 y 1
-level 30
-no_pick 1
 end
 arch dungeon_magic
 x 21
@@ -3091,12 +2986,9 @@ arch dungeon_magic
 x 22
 y 1
 end
-arch random_reading
-slaying library
+arch bench_2_1_2
 x 22
 y 1
-level 30
-no_pick 1
 end
 arch dungeon_magic
 x 22
@@ -3118,12 +3010,9 @@ arch dungeon_magic
 x 22
 y 3
 end
-arch random_reading
-slaying library
+arch bench_1_4
 x 22
 y 3
-level 30
-no_pick 1
 end
 arch woodfloor
 x 22
@@ -3149,13 +3038,6 @@ arch woodfloor
 x 22
 y 6
 end
-arch random_reading
-slaying library
-x 22
-y 6
-level 10
-no_pick 1
-end
 arch dungeon_magic
 x 22
 y 7
@@ -3164,13 +3046,6 @@ arch woodfloor
 x 22
 y 7
 end
-arch random_reading
-slaying library
-x 22
-y 7
-level 10
-no_pick 1
-end
 arch dungeon_magic
 x 22
 y 8
@@ -3178,13 +3053,6 @@ end
 arch woodfloor
 x 22
 y 8
-end
-arch random_reading
-slaying library
-x 22
-y 8
-level 10
-no_pick 1
 end
 arch woodfloor
 x 22
@@ -3320,12 +3188,9 @@ arch dungeon_magic
 x 23
 y 1
 end
-arch random_reading
-slaying library
+arch bench_2_1_2
 x 23
 y 1
-level 30
-no_pick 1
 end
 arch woodfloor
 x 23
@@ -3339,12 +3204,13 @@ arch dungeon_magic
 x 23
 y 3
 end
-arch random_reading
-slaying library
+arch bench_2_1_2
 x 23
 y 3
-level 30
-no_pick 1
+end
+arch book_read
+x 23
+y 3
 end
 arch woodfloor
 x 23
@@ -3509,12 +3375,9 @@ arch dungeon_magic
 x 24
 y 1
 end
-arch random_reading
-slaying library
+arch bench_2_1_2
 x 24
 y 1
-level 30
-no_pick 1
 end
 arch woodfloor
 x 24
@@ -3528,12 +3391,9 @@ arch dungeon_magic
 x 24
 y 3
 end
-arch random_reading
-slaying library
+arch bench_2_1_2
 x 24
 y 3
-level 30
-no_pick 1
 end
 arch woodfloor
 x 24
@@ -3642,11 +3502,23 @@ arch woodfloor
 x 25
 y 1
 end
+arch bench_2_1_2
+x 25
+y 1
+end
+arch book_read
+x 25
+y 1
+end
 arch woodfloor
 x 25
 y 2
 end
 arch woodfloor
+x 25
+y 3
+end
+arch bench_2_1_2
 x 25
 y 3
 end
@@ -3720,12 +3592,9 @@ arch dungeon_magic
 x 26
 y 1
 end
-arch random_reading
-slaying library
+arch bench_2_2_3
 x 26
 y 1
-level 30
-no_pick 1
 end
 arch woodfloor
 x 26
@@ -3735,12 +3604,9 @@ arch dungeon_magic
 x 26
 y 2
 end
-arch random_reading
-slaying library
+arch bench_2_1_1
 x 26
 y 2
-level 30
-no_pick 1
 end
 arch woodfloor
 x 26
@@ -3750,12 +3616,9 @@ arch dungeon_magic
 x 26
 y 3
 end
-arch random_reading
-slaying library
+arch bench_2_2_4
 x 26
 y 3
-level 30
-no_pick 1
 end
 arch woodfloor
 x 26

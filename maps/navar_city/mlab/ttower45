@@ -1,6 +1,7 @@
 arch map
-region navar
+name <unnamed>
 difficulty 85
+region navar
 width 26
 height 26
 enter_x 1
@@ -9,6 +10,7 @@ msg
 Creator: mikeeusa
 Email: gnu@foo.bar
 Date: Sun Aug 25 13:14:56 2002
+Modified: 2023-03-10 Titus
 endmsg
 end
 arch blocked
@@ -5512,6 +5514,23 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 13
+y 13
+end
+arch dungeon_magic
+x 13
+y 13
+end
+arch stair_up_1
+name bed of slumber
+name_pl bed of slumber
+slaying dream
+msg
+You fall asleep...
+endmsg
+face bed_save.111
+hp 2
+sp 2
 x 13
 y 13
 end

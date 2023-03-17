@@ -2,8 +2,17 @@
 Crossfire Fork, Hero World Server/Maps/Arch
 
 Sponsored Fork </br>
+</br>
 
-Contact Girl-Titus #8604 on Discord to discuss participating in this project.
+HeroWorld (HW)</br> 
+Sponsored Fork of Crossfire Multiplayer RPG</br> 
+Contact Girl-Titus #8604 on Discord to discuss participating in this project!</br> 
+What is Heroworld (HW)?</br> 
+Welcome to HeroWorld (HW) - a thrilling graphical multiplayer open-world RPG rogue-like that will take you on an unforgettable journey through a high fantasy world filled with hidden secrets and quests that will keep you coming back for more. But that's not all, HW is not just any ordinary RPG game, it offers a unique player-directed world building experience, where you get to shape the world around you.</br> 
+Craft your own artifacts, build your own buildings, and even found your own cities complete with shops and temples to religions you have created. The possibilities are endless! And the best part? The world is constantly evolving and changing based on your actions and decisions.</br> 
+HW is a sponsored fork of the iconic Crossfire Multiplayer RPG with roots going all the way back to the 1980s. It's currently in beta, but don't worry, you can still be a part of this exciting adventure. Contact Girl-Titus #8604 on Discord to get involved.</br> 
+We need as many contributors as possible to make sure our players are always finding something new and interesting in this vast world. And the best part? HW is not a PVP optimized server, which means we can pursue potentially 'unbalancable' features to make the game even more thrilling.</br> 
+So what are you waiting for? Join us in HeroWorld and become a part of this epic fantasy adventure that will keep you on the edge of your seat!</br> 
 
 </BR>
 </br>

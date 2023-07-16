@@ -90,43 +90,48 @@ end
 arch wall_2_2_1
 y 19
 end
-arch sea
+arch sea1
 y 20
 end
-arch sea
+arch sea1
 y 21
 end
-arch sea
+arch sea1
 y 22
 end
-arch sea
+arch sea1
 y 23
 end
-arch sea
+arch sea1
 y 24
 end
 arch sea
+slaying sea_library
 y 25
 end
 arch sea
+slaying sea_library
 y 26
 end
 arch sea
+slaying sea_library
 y 27
 end
 arch sea
+slaying sea_library
 y 28
 end
-arch sea
+arch sea1
 y 29
 end
-arch sea
+arch sea1
 y 30
 end
 arch sea
+slaying sea_library
 y 31
 end
-arch sea
+arch sea1
 y 32
 end
 arch sea
@@ -272,43 +277,61 @@ arch woodfloor
 x 1
 y 23
 end
-arch wall_2_2_1
+arch wall_2_1_1
 x 1
 y 23
 end
-arch sea
+arch woodfloor
 x 1
 y 24
 end
-arch sea
+arch wall_2_1_1
+x 1
+y 24
+end
+arch woodfloor
 x 1
 y 25
 end
-arch sea
+arch wall_3_2
+x 1
+y 25
+end
+arch woodfloor
 x 1
 y 26
 end
-arch sea
+arch wall_3_2
+x 1
+y 26
+end
+arch woodfloor
 x 1
 y 27
 end
-arch sea
+arch wall_2_2_1
+x 1
+y 27
+end
+arch sea1
 x 1
 y 28
 end
 arch sea
+slaying sea_library
 x 1
 y 29
 end
-arch sea
+arch sea1
 x 1
 y 30
 end
-arch sea
+arch sea1
 x 1
 y 31
 end
 arch sea
+slaying sea_library
 x 1
 y 32
 end
@@ -486,62 +509,67 @@ arch woodfloor
 x 2
 y 22
 end
-arch altar_trigger
-name Proximity Detector
-slaying Cannon Ball
-msg
-> Proximity Detector Activated
-> Cannon Ball Relocation in 3...2...1
-endmsg
-face woodfloor.111
-exp 1
-food 1
+arch table_2x2
 x 2
 y 22
-invisible 1
-connected 123
+end
+arch sea_drying_crystal
+slaying sea_library
+x 2
+y 22
 end
 arch woodfloor
 x 2
 y 23
 end
-arch wall_2_1_2
-x 2
-y 23
-end
-arch sea
+arch woodfloor
 x 2
 y 24
 end
-arch sea
+arch woodfloor
 x 2
 y 25
 end
-arch sea
+arch wall_2_2_3
+x 2
+y 25
+end
+arch woodfloor
 x 2
 y 26
 end
-arch sea
+arch wall_3_4
+x 2
+y 26
+end
+arch woodfloor
+x 2
+y 27
+end
+arch wall_2_2_4
 x 2
 y 27
 end
 arch sea
+slaying sea_library
 x 2
 y 28
 end
-arch sea
+arch sea1
 x 2
 y 29
 end
 arch sea
+slaying sea_library
 x 2
 y 30
 end
 arch sea
+slaying sea_library
 x 2
 y 31
 end
-arch sea
+arch sea1
 x 2
 y 32
 end
@@ -683,26 +711,7 @@ arch woodfloor
 x 3
 y 22
 end
-arch altar_trigger
-name Proximity Detector
-slaying Cannon Ball
-msg
-> Proximity Detector Activated
->Cannon Ball Relocation in 3...2...1
-endmsg
-face woodfloor.111
-exp 1
-food 1
-x 3
-y 22
-invisible 1
-connected 123
-end
 arch woodfloor
-x 3
-y 23
-end
-arch wall_2_2_3
 x 3
 y 23
 end
@@ -710,43 +719,39 @@ arch woodfloor
 x 3
 y 24
 end
-arch wall_2_1_1
-x 3
-y 24
-end
 arch woodfloor
-x 3
-y 25
-end
-arch wall_2_2_1
 x 3
 y 25
 end
 arch sea
+slaying sea_library
 x 3
 y 26
 end
-arch sea
+arch sea1
 x 3
 y 27
 end
 arch sea
+slaying sea_library
 x 3
 y 28
 end
-arch sea
+arch sea1
 x 3
 y 29
 end
 arch sea
+slaying sea_library
 x 3
 y 30
 end
 arch sea
+slaying sea_library
 x 3
 y 31
 end
-arch sea
+arch sea1
 x 3
 y 32
 end
@@ -949,35 +954,35 @@ arch woodfloor
 x 4
 y 25
 end
-arch wall_2_1_2
-x 4
-y 25
-end
 arch sea
+slaying sea_library
 x 4
 y 26
 end
-arch sea
+arch sea1
 x 4
 y 27
 end
 arch sea
+slaying sea_library
 x 4
 y 28
 end
 arch sea
+slaying sea_library
 x 4
 y 29
 end
-arch sea
+arch sea1
 x 4
 y 30
 end
 arch sea
+slaying sea_library
 x 4
 y 31
 end
-arch sea
+arch sea1
 x 4
 y 32
 end
@@ -1157,35 +1162,35 @@ arch woodfloor
 x 5
 y 25
 end
-arch wall_2_1_2
-x 5
-y 25
-end
 arch sea
+slaying sea_library
 x 5
 y 26
 end
 arch sea
+slaying sea_library
 x 5
 y 27
 end
-arch sea
+arch sea1
 x 5
 y 28
 end
 arch sea
+slaying sea_library
 x 5
 y 29
 end
-arch sea
+arch sea1
 x 5
 y 30
 end
-arch sea
+arch sea1
 x 5
 y 31
 end
 arch sea
+slaying sea_library
 x 5
 y 32
 end
@@ -1339,7 +1344,7 @@ arch woodfloor
 x 6
 y 25
 end
-arch wall_2_2_3
+arch wall_2_2_2
 x 6
 y 25
 end
@@ -1359,23 +1364,25 @@ arch wall_2_2_1
 x 6
 y 27
 end
-arch sea
+arch sea1
 x 6
 y 28
 end
 arch sea
+slaying sea_library
 x 6
 y 29
 end
-arch sea
+arch sea1
 x 6
 y 30
 end
 arch sea
+slaying sea_library
 x 6
 y 31
 end
-arch sea
+arch sea1
 x 6
 y 32
 end
@@ -1501,7 +1508,7 @@ end
 arch gate_closed_2
 x 7
 y 20
-connected 8
+connected 8888
 activate_on_release 0
 end
 arch woodfloor
@@ -1513,10 +1520,6 @@ x 7
 y 21
 connected 8888
 activate_on_release 0
-arch event_death
-name 8888
-slaying python/misc/connect.py
-end
 end
 arch woodfloor
 x 7
@@ -1527,37 +1530,24 @@ x 7
 y 22
 connected 8888
 activate_on_release 0
-arch event_death
-title 8888
-slaying python/misc/connect.py
-end
 end
 arch woodfloor
 x 7
 y 23
 end
-arch bird
+arch gate_closed_2
 x 7
 y 23
-stand_still 1
-arch event_death
-title 8888
-slaying python/misc/connect.py
-end
+connected 8888
+activate_on_release 0
 end
 arch woodfloor
 x 7
 y 24
 end
-arch bird
+arch wall_1_1
 x 7
 y 24
-stand_still 1
-arch event_death
-name 8
-title Python
-slaying python/misc/connect.py
-end
 end
 arch woodfloor
 x 7
@@ -1578,6 +1568,10 @@ y 25
 invisible 1
 connected 123
 end
+arch wall_3_4
+x 7
+y 25
+end
 arch woodfloor
 x 7
 y 26
@@ -1595,42 +1589,51 @@ x 7
 y 27
 end
 arch sea
+slaying sea_library
 x 7
 y 28
 end
-arch sea
+arch sea1
 x 7
 y 29
-end
-arch sea
-x 7
-y 30
 end
 arch director_3
 x 7
 y 30
+move_on fly_low
 end
 arch sea
+slaying sea_library
 x 7
-y 31
+y 30
 end
-arch director_1
+arch sea
+slaying sea_library
 x 7
 y 31
 end
 arch bird
 x 7
 y 31
+move_type fly_low
 arch event_death
-title 8888
+name 8888
+title Python
 slaying python/misc/connect.py
 end
 end
-arch sea
+arch director_1
 x 7
-y 32
+y 31
+move_on fly_low
 end
 arch director_1
+x 7
+y 32
+move_on fly_low
+end
+arch sea
+slaying sea_library
 x 7
 y 32
 end
@@ -1797,31 +1800,37 @@ arch wall_3_1
 x 8
 y 27
 end
-arch sea
+arch sea1
 x 8
 y 28
 end
 arch sea
+slaying sea_library
 x 8
 y 29
-end
-arch sea
-x 8
-y 30
 end
 arch director_3
 x 8
 y 30
+move_on fly_low
 end
 arch sea
+slaying sea_library
+x 8
+y 30
+end
+arch sea
+slaying sea_library
 x 8
 y 31
 end
-arch sea
+arch director_7
 x 8
 y 32
+move_on fly_low
 end
-arch director_7
+arch sea
+slaying sea_library
 x 8
 y 32
 end
@@ -2065,30 +2074,36 @@ y 27
 no_pick 1
 end
 arch sea
+slaying sea_library
 x 9
 y 28
 end
-arch sea
+arch sea1
 x 9
 y 29
-end
-arch sea
-x 9
-y 30
 end
 arch director_3
 x 9
 y 30
+move_on fly_low
 end
 arch sea
+slaying sea_library
+x 9
+y 30
+end
+arch sea
+slaying sea_library
 x 9
 y 31
 end
-arch sea
+arch director_7
 x 9
 y 32
+move_on fly_low
 end
-arch director_7
+arch sea
+slaying sea_library
 x 9
 y 32
 end
@@ -2301,31 +2316,37 @@ x 10
 y 27
 no_pick 1
 end
-arch sea
+arch sea1
 x 10
 y 28
 end
 arch sea
+slaying sea_library
 x 10
 y 29
-end
-arch sea
-x 10
-y 30
 end
 arch director_3
 x 10
 y 30
+move_on fly_low
 end
 arch sea
+slaying sea_library
+x 10
+y 30
+end
+arch sea
+slaying sea_library
 x 10
 y 31
 end
-arch sea
+arch director_7
 x 10
 y 32
+move_on fly_low
 end
-arch director_7
+arch sea
+slaying sea_library
 x 10
 y 32
 end
@@ -2489,31 +2510,36 @@ arch wall_3_1
 x 11
 y 27
 end
-arch sea
+arch sea1
 x 11
 y 28
 end
-arch sea
+arch sea1
 x 11
 y 29
-end
-arch sea
-x 11
-y 30
 end
 arch director_3
 x 11
 y 30
+move_on fly_low
 end
 arch sea
+slaying sea_library
+x 11
+y 30
+end
+arch sea
+slaying sea_library
 x 11
 y 31
 end
-arch sea
+arch director_7
 x 11
 y 32
+move_on fly_low
 end
-arch director_7
+arch sea
+slaying sea_library
 x 11
 y 32
 end
@@ -2680,31 +2706,36 @@ arch wall_3_1
 x 12
 y 27
 end
-arch sea
+arch sea1
 x 12
 y 28
 end
-arch sea
+arch sea1
 x 12
 y 29
-end
-arch sea
-x 12
-y 30
 end
 arch director_3
 x 12
 y 30
+move_on fly_low
 end
 arch sea
+slaying sea_library
+x 12
+y 30
+end
+arch sea
+slaying sea_library
 x 12
 y 31
 end
-arch sea
+arch director_7
 x 12
 y 32
+move_on fly_low
 end
-arch director_7
+arch sea
+slaying sea_library
 x 12
 y 32
 end
@@ -2924,31 +2955,36 @@ x 13
 y 27
 no_pick 1
 end
-arch sea
+arch sea1
 x 13
 y 28
 end
-arch sea
+arch sea1
 x 13
 y 29
-end
-arch sea
-x 13
-y 30
 end
 arch director_3
 x 13
 y 30
+move_on fly_low
 end
 arch sea
+slaying sea_library
+x 13
+y 30
+end
+arch sea
+slaying sea_library
 x 13
 y 31
 end
-arch sea
+arch director_7
 x 13
 y 32
+move_on fly_low
 end
-arch director_7
+arch sea
+slaying sea_library
 x 13
 y 32
 end
@@ -3156,31 +3192,36 @@ x 14
 y 27
 no_pick 1
 end
-arch sea
+arch sea1
 x 14
 y 28
 end
-arch sea
+arch sea1
 x 14
 y 29
-end
-arch sea
-x 14
-y 30
 end
 arch director_3
 x 14
 y 30
+move_on fly_low
 end
 arch sea
+slaying sea_library
+x 14
+y 30
+end
+arch sea
+slaying sea_library
 x 14
 y 31
 end
-arch sea
+arch director_7
 x 14
 y 32
+move_on fly_low
 end
-arch director_7
+arch sea
+slaying sea_library
 x 14
 y 32
 end
@@ -3331,31 +3372,36 @@ arch wall_3_1
 x 15
 y 27
 end
-arch sea
+arch sea1
 x 15
 y 28
 end
-arch sea
+arch sea1
 x 15
 y 29
-end
-arch sea
-x 15
-y 30
 end
 arch director_3
 x 15
 y 30
+move_on fly_low
 end
 arch sea
+slaying sea_library
+x 15
+y 30
+end
+arch sea
+slaying sea_library
 x 15
 y 31
 end
-arch sea
+arch director_7
 x 15
 y 32
+move_on fly_low
 end
-arch director_7
+arch sea
+slaying sea_library
 x 15
 y 32
 end
@@ -3506,31 +3552,36 @@ arch wall_3_1
 x 16
 y 27
 end
-arch sea
+arch sea1
 x 16
 y 28
 end
-arch sea
+arch sea1
 x 16
 y 29
-end
-arch sea
-x 16
-y 30
 end
 arch director_3
 x 16
 y 30
+move_on fly_low
 end
 arch sea
+slaying sea_library
+x 16
+y 30
+end
+arch sea
+slaying sea_library
 x 16
 y 31
 end
-arch sea
+arch director_7
 x 16
 y 32
+move_on fly_low
 end
-arch director_7
+arch sea
+slaying sea_library
 x 16
 y 32
 end
@@ -3730,31 +3781,36 @@ x 17
 y 27
 no_pick 1
 end
-arch sea
+arch sea1
 x 17
 y 28
 end
-arch sea
+arch sea1
 x 17
 y 29
-end
-arch sea
-x 17
-y 30
 end
 arch director_3
 x 17
 y 30
+move_on fly_low
 end
 arch sea
+slaying sea_library
+x 17
+y 30
+end
+arch sea
+slaying sea_library
 x 17
 y 31
 end
-arch sea
+arch director_7
 x 17
 y 32
+move_on fly_low
 end
-arch director_7
+arch sea
+slaying sea_library
 x 17
 y 32
 end
@@ -3963,30 +4019,37 @@ y 27
 no_pick 1
 end
 arch sea
+slaying sea_library
 x 18
 y 28
 end
 arch sea
+slaying sea_library
 x 18
 y 29
-end
-arch sea
-x 18
-y 30
 end
 arch director_3
 x 18
 y 30
+move_on fly_low
 end
 arch sea
+slaying sea_library
+x 18
+y 30
+end
+arch sea
+slaying sea_library
 x 18
 y 31
 end
-arch sea
+arch director_7
 x 18
 y 32
+move_on fly_low
 end
-arch director_7
+arch sea
+slaying sea_library
 x 18
 y 32
 end
@@ -4121,31 +4184,36 @@ arch wall_3_1
 x 19
 y 27
 end
-arch sea
+arch sea1
 x 19
 y 28
 end
-arch sea
+arch sea1
 x 19
 y 29
-end
-arch sea
-x 19
-y 30
 end
 arch director_3
 x 19
 y 30
+move_on fly_low
 end
 arch sea
+slaying sea_library
+x 19
+y 30
+end
+arch sea
+slaying sea_library
 x 19
 y 31
 end
-arch sea
+arch director_7
 x 19
 y 32
+move_on fly_low
 end
-arch director_7
+arch sea
+slaying sea_library
 x 19
 y 32
 end
@@ -4280,31 +4348,37 @@ arch wall_3_1
 x 20
 y 27
 end
-arch sea
+arch sea1
 x 20
 y 28
 end
 arch sea
+slaying sea_library
 x 20
 y 29
-end
-arch sea
-x 20
-y 30
 end
 arch director_3
 x 20
 y 30
+move_on fly_low
 end
 arch sea
+slaying sea_library
+x 20
+y 30
+end
+arch sea
+slaying sea_library
 x 20
 y 31
 end
-arch sea
+arch director_7
 x 20
 y 32
+move_on fly_low
 end
-arch director_7
+arch sea
+slaying sea_library
 x 20
 y 32
 end
@@ -4492,31 +4566,36 @@ x 21
 y 27
 no_pick 1
 end
-arch sea
+arch sea1
 x 21
 y 28
 end
-arch sea
+arch sea1
 x 21
 y 29
-end
-arch sea
-x 21
-y 30
 end
 arch director_3
 x 21
 y 30
+move_on fly_low
 end
 arch sea
+slaying sea_library
+x 21
+y 30
+end
+arch sea
+slaying sea_library
 x 21
 y 31
 end
-arch sea
+arch director_7
 x 21
 y 32
+move_on fly_low
 end
-arch director_7
+arch sea
+slaying sea_library
 x 21
 y 32
 end
@@ -4730,31 +4809,36 @@ x 22
 y 27
 no_pick 1
 end
-arch sea
+arch sea1
 x 22
 y 28
 end
-arch sea
+arch sea1
 x 22
 y 29
-end
-arch sea
-x 22
-y 30
 end
 arch director_3
 x 22
 y 30
+move_on fly_low
 end
 arch sea
+slaying sea_library
+x 22
+y 30
+end
+arch sea
+slaying sea_library
 x 22
 y 31
 end
-arch sea
+arch director_7
 x 22
 y 32
+move_on fly_low
 end
-arch director_7
+arch sea
+slaying sea_library
 x 22
 y 32
 end
@@ -4893,31 +4977,36 @@ arch wall_3_1
 x 23
 y 27
 end
-arch sea
+arch sea1
 x 23
 y 28
 end
-arch sea
+arch sea1
 x 23
 y 29
-end
-arch sea
-x 23
-y 30
 end
 arch director_3
 x 23
 y 30
+move_on fly_low
 end
 arch sea
+slaying sea_library
+x 23
+y 30
+end
+arch sea
+slaying sea_library
 x 23
 y 31
 end
-arch sea
+arch director_7
 x 23
 y 32
+move_on fly_low
 end
-arch director_7
+arch sea
+slaying sea_library
 x 23
 y 32
 end
@@ -5056,31 +5145,37 @@ arch wall_3_1
 x 24
 y 27
 end
-arch sea
+arch sea1
 x 24
 y 28
 end
 arch sea
+slaying sea_library
 x 24
 y 29
-end
-arch sea
-x 24
-y 30
 end
 arch director_3
 x 24
 y 30
+move_on fly_low
 end
 arch sea
+slaying sea_library
+x 24
+y 30
+end
+arch sea
+slaying sea_library
 x 24
 y 31
 end
-arch sea
+arch director_7
 x 24
 y 32
+move_on fly_low
 end
-arch director_7
+arch sea
+slaying sea_library
 x 24
 y 32
 end
@@ -5272,31 +5367,36 @@ x 25
 y 27
 no_pick 1
 end
-arch sea
+arch sea1
 x 25
 y 28
 end
-arch sea
+arch sea1
 x 25
 y 29
-end
-arch sea
-x 25
-y 30
 end
 arch director_3
 x 25
 y 30
+move_on fly_low
 end
 arch sea
+slaying sea_library
+x 25
+y 30
+end
+arch sea
+slaying sea_library
 x 25
 y 31
 end
-arch sea
+arch director_7
 x 25
 y 32
+move_on fly_low
 end
-arch director_7
+arch sea
+slaying sea_library
 x 25
 y 32
 end
@@ -5512,31 +5612,36 @@ x 26
 y 27
 no_pick 1
 end
-arch sea
+arch sea1
 x 26
 y 28
 end
-arch sea
+arch sea1
 x 26
 y 29
-end
-arch sea
-x 26
-y 30
 end
 arch director_3
 x 26
 y 30
+move_on fly_low
 end
 arch sea
+slaying sea_library
+x 26
+y 30
+end
+arch sea
+slaying sea_library
 x 26
 y 31
 end
-arch sea
+arch director_7
 x 26
 y 32
+move_on fly_low
 end
-arch director_7
+arch sea
+slaying sea_library
 x 26
 y 32
 end
@@ -5675,31 +5780,36 @@ arch wall_3_1
 x 27
 y 27
 end
-arch sea
+arch sea1
 x 27
 y 28
 end
-arch sea
+arch sea1
 x 27
 y 29
-end
-arch sea
-x 27
-y 30
 end
 arch director_3
 x 27
 y 30
+move_on fly_low
 end
 arch sea
+slaying sea_library
+x 27
+y 30
+end
+arch sea
+slaying sea_library
 x 27
 y 31
 end
-arch sea
+arch director_7
 x 27
 y 32
+move_on fly_low
 end
-arch director_7
+arch sea
+slaying sea_library
 x 27
 y 32
 end
@@ -5846,31 +5956,36 @@ arch wall_3_1
 x 28
 y 27
 end
-arch sea
+arch sea1
 x 28
 y 28
 end
-arch sea
+arch sea1
 x 28
 y 29
-end
-arch sea
-x 28
-y 30
 end
 arch director_3
 x 28
 y 30
+move_on fly_low
 end
 arch sea
+slaying sea_library
+x 28
+y 30
+end
+arch sea
+slaying sea_library
 x 28
 y 31
 end
-arch sea
+arch director_7
 x 28
 y 32
+move_on fly_low
 end
-arch director_7
+arch sea
+slaying sea_library
 x 28
 y 32
 end
@@ -6076,31 +6191,36 @@ x 29
 y 27
 no_pick 1
 end
-arch sea
+arch sea1
 x 29
 y 28
 end
-arch sea
+arch sea1
 x 29
 y 29
-end
-arch sea
-x 29
-y 30
 end
 arch director_3
 x 29
 y 30
+move_on fly_low
 end
 arch sea
+slaying sea_library
+x 29
+y 30
+end
+arch sea
+slaying sea_library
 x 29
 y 31
 end
-arch sea
+arch director_7
 x 29
 y 32
+move_on fly_low
 end
-arch director_7
+arch sea
+slaying sea_library
 x 29
 y 32
 end
@@ -6292,31 +6412,37 @@ x 30
 y 27
 no_pick 1
 end
-arch sea
+arch sea1
 x 30
 y 28
 end
 arch sea
+slaying sea_library
 x 30
 y 29
-end
-arch sea
-x 30
-y 30
 end
 arch director_3
 x 30
 y 30
+move_on fly_low
 end
 arch sea
+slaying sea_library
+x 30
+y 30
+end
+arch sea
+slaying sea_library
 x 30
 y 31
 end
-arch sea
+arch director_7
 x 30
 y 32
+move_on fly_low
 end
-arch director_7
+arch sea
+slaying sea_library
 x 30
 y 32
 end
@@ -6456,30 +6582,37 @@ x 31
 y 27
 end
 arch sea
+slaying sea_library
 x 31
 y 28
 end
 arch sea
+slaying sea_library
 x 31
 y 29
-end
-arch sea
-x 31
-y 30
 end
 arch director_3
 x 31
 y 30
+move_on fly_low
 end
 arch sea
+slaying sea_library
+x 31
+y 30
+end
+arch sea
+slaying sea_library
 x 31
 y 31
 end
-arch sea
+arch director_7
 x 31
 y 32
+move_on fly_low
 end
-arch director_7
+arch sea
+slaying sea_library
 x 31
 y 32
 end
@@ -6618,31 +6751,36 @@ arch wall_3_1
 x 32
 y 27
 end
-arch sea
+arch sea1
 x 32
 y 28
 end
-arch sea
+arch sea1
 x 32
 y 29
-end
-arch sea
-x 32
-y 30
 end
 arch director_3
 x 32
 y 30
+move_on fly_low
 end
 arch sea
+slaying sea_library
+x 32
+y 30
+end
+arch sea
+slaying sea_library
 x 32
 y 31
 end
-arch sea
+arch director_7
 x 32
 y 32
+move_on fly_low
 end
-arch director_7
+arch sea
+slaying sea_library
 x 32
 y 32
 end
@@ -6834,31 +6972,36 @@ x 33
 y 27
 no_pick 1
 end
-arch sea
+arch sea1
 x 33
 y 28
 end
-arch sea
+arch sea1
 x 33
 y 29
-end
-arch sea
-x 33
-y 30
 end
 arch director_3
 x 33
 y 30
+move_on fly_low
 end
 arch sea
+slaying sea_library
+x 33
+y 30
+end
+arch sea
+slaying sea_library
 x 33
 y 31
 end
-arch sea
+arch director_7
 x 33
 y 32
+move_on fly_low
 end
-arch director_7
+arch sea
+slaying sea_library
 x 33
 y 32
 end
@@ -7050,31 +7193,36 @@ x 34
 y 27
 no_pick 1
 end
-arch sea
+arch sea1
 x 34
 y 28
 end
-arch sea
+arch sea1
 x 34
 y 29
-end
-arch sea
-x 34
-y 30
 end
 arch director_3
 x 34
 y 30
+move_on fly_low
 end
 arch sea
+slaying sea_library
+x 34
+y 30
+end
+arch sea
+slaying sea_library
 x 34
 y 31
 end
-arch sea
+arch director_7
 x 34
 y 32
+move_on fly_low
 end
-arch director_7
+arch sea
+slaying sea_library
 x 34
 y 32
 end
@@ -7213,31 +7361,36 @@ arch wall_3_1
 x 35
 y 27
 end
-arch sea
+arch sea1
 x 35
 y 28
 end
-arch sea
+arch sea1
 x 35
 y 29
-end
-arch sea
-x 35
-y 30
 end
 arch director_3
 x 35
 y 30
+move_on fly_low
 end
 arch sea
+slaying sea_library
+x 35
+y 30
+end
+arch sea
+slaying sea_library
 x 35
 y 31
 end
-arch sea
+arch director_7
 x 35
 y 32
+move_on fly_low
 end
-arch director_7
+arch sea
+slaying sea_library
 x 35
 y 32
 end
@@ -7376,31 +7529,36 @@ arch wall_3_1
 x 36
 y 27
 end
-arch sea
+arch sea1
 x 36
 y 28
 end
-arch sea
+arch sea1
 x 36
 y 29
-end
-arch sea
-x 36
-y 30
 end
 arch director_3
 x 36
 y 30
+move_on fly_low
 end
 arch sea
+slaying sea_library
+x 36
+y 30
+end
+arch sea
+slaying sea_library
 x 36
 y 31
 end
-arch sea
+arch director_7
 x 36
 y 32
+move_on fly_low
 end
-arch director_7
+arch sea
+slaying sea_library
 x 36
 y 32
 end
@@ -7592,31 +7750,36 @@ x 37
 y 27
 no_pick 1
 end
-arch sea
+arch sea1
 x 37
 y 28
 end
-arch sea
+arch sea1
 x 37
 y 29
-end
-arch sea
-x 37
-y 30
 end
 arch director_3
 x 37
 y 30
+move_on fly_low
 end
 arch sea
+slaying sea_library
+x 37
+y 30
+end
+arch sea
+slaying sea_library
 x 37
 y 31
 end
-arch sea
+arch director_7
 x 37
 y 32
+move_on fly_low
 end
-arch director_7
+arch sea
+slaying sea_library
 x 37
 y 32
 end
@@ -7808,31 +7971,37 @@ x 38
 y 27
 no_pick 1
 end
-arch sea
+arch sea1
 x 38
 y 28
 end
 arch sea
+slaying sea_library
 x 38
 y 29
-end
-arch sea
-x 38
-y 30
 end
 arch director_3
 x 38
 y 30
+move_on fly_low
 end
 arch sea
+slaying sea_library
+x 38
+y 30
+end
+arch sea
+slaying sea_library
 x 38
 y 31
 end
-arch sea
+arch director_7
 x 38
 y 32
+move_on fly_low
 end
-arch director_7
+arch sea
+slaying sea_library
 x 38
 y 32
 end
@@ -7967,31 +8136,37 @@ arch wall_3_1
 x 39
 y 27
 end
-arch sea
+arch sea1
 x 39
 y 28
 end
 arch sea
+slaying sea_library
 x 39
 y 29
-end
-arch sea
-x 39
-y 30
 end
 arch director_3
 x 39
 y 30
+move_on fly_low
 end
 arch sea
+slaying sea_library
+x 39
+y 30
+end
+arch sea
+slaying sea_library
 x 39
 y 31
 end
-arch sea
+arch director_7
 x 39
 y 32
+move_on fly_low
 end
-arch director_7
+arch sea
+slaying sea_library
 x 39
 y 32
 end
@@ -8126,31 +8301,36 @@ arch wall_3_1
 x 40
 y 27
 end
-arch sea
+arch sea1
 x 40
 y 28
 end
-arch sea
+arch sea1
 x 40
 y 29
-end
-arch sea
-x 40
-y 30
 end
 arch director_3
 x 40
 y 30
+move_on fly_low
 end
 arch sea
+slaying sea_library
+x 40
+y 30
+end
+arch sea
+slaying sea_library
 x 40
 y 31
 end
-arch sea
+arch director_7
 x 40
 y 32
+move_on fly_low
 end
-arch director_7
+arch sea
+slaying sea_library
 x 40
 y 32
 end
@@ -8342,31 +8522,36 @@ x 41
 y 27
 no_pick 1
 end
-arch sea
+arch sea1
 x 41
 y 28
 end
-arch sea
+arch sea1
 x 41
 y 29
-end
-arch sea
-x 41
-y 30
 end
 arch director_3
 x 41
 y 30
+move_on fly_low
 end
 arch sea
+slaying sea_library
+x 41
+y 30
+end
+arch sea
+slaying sea_library
 x 41
 y 31
 end
-arch sea
+arch director_7
 x 41
 y 32
+move_on fly_low
 end
-arch director_7
+arch sea
+slaying sea_library
 x 41
 y 32
 end
@@ -8550,31 +8735,36 @@ x 42
 y 27
 no_pick 1
 end
-arch sea
+arch sea1
 x 42
 y 28
 end
-arch sea
+arch sea1
 x 42
 y 29
-end
-arch sea
-x 42
-y 30
 end
 arch director_3
 x 42
 y 30
+move_on fly_low
 end
 arch sea
+slaying sea_library
+x 42
+y 30
+end
+arch sea
+slaying sea_library
 x 42
 y 31
 end
-arch sea
+arch director_7
 x 42
 y 32
+move_on fly_low
 end
-arch director_7
+arch sea
+slaying sea_library
 x 42
 y 32
 end
@@ -8709,31 +8899,36 @@ arch wall_3_1
 x 43
 y 27
 end
-arch sea
+arch sea1
 x 43
 y 28
 end
-arch sea
+arch sea1
 x 43
 y 29
-end
-arch sea
-x 43
-y 30
 end
 arch director_3
 x 43
 y 30
+move_on fly_low
 end
 arch sea
+slaying sea_library
+x 43
+y 30
+end
+arch sea
+slaying sea_library
 x 43
 y 31
 end
-arch sea
+arch director_7
 x 43
 y 32
+move_on fly_low
 end
-arch director_7
+arch sea
+slaying sea_library
 x 43
 y 32
 end
@@ -8872,31 +9067,36 @@ arch wall_3_1
 x 44
 y 27
 end
-arch sea
+arch sea1
 x 44
 y 28
 end
-arch sea
+arch sea1
 x 44
 y 29
-end
-arch sea
-x 44
-y 30
 end
 arch director_3
 x 44
 y 30
+move_on fly_low
 end
 arch sea
+slaying sea_library
+x 44
+y 30
+end
+arch sea
+slaying sea_library
 x 44
 y 31
 end
-arch sea
+arch director_7
 x 44
 y 32
+move_on fly_low
 end
-arch director_7
+arch sea
+slaying sea_library
 x 44
 y 32
 end
@@ -9089,30 +9289,36 @@ y 27
 no_pick 1
 end
 arch sea
+slaying sea_library
 x 45
 y 28
 end
-arch sea
+arch sea1
 x 45
 y 29
-end
-arch sea
-x 45
-y 30
 end
 arch director_3
 x 45
 y 30
+move_on fly_low
 end
 arch sea
+slaying sea_library
+x 45
+y 30
+end
+arch sea
+slaying sea_library
 x 45
 y 31
 end
-arch sea
+arch director_7
 x 45
 y 32
+move_on fly_low
 end
-arch director_7
+arch sea
+slaying sea_library
 x 45
 y 32
 end
@@ -9328,31 +9534,37 @@ x 46
 y 27
 no_pick 1
 end
-arch sea
+arch sea1
 x 46
 y 28
 end
 arch sea
+slaying sea_library
 x 46
 y 29
-end
-arch sea
-x 46
-y 30
 end
 arch director_3
 x 46
 y 30
+move_on fly_low
 end
 arch sea
+slaying sea_library
+x 46
+y 30
+end
+arch sea
+slaying sea_library
 x 46
 y 31
 end
-arch sea
+arch director_7
 x 46
 y 32
+move_on fly_low
 end
-arch director_7
+arch sea
+slaying sea_library
 x 46
 y 32
 end
@@ -9547,31 +9759,36 @@ arch wall_2_2_4
 x 47
 y 27
 end
-arch sea
+arch sea1
 x 47
 y 28
 end
-arch sea
+arch sea1
 x 47
 y 29
-end
-arch sea
-x 47
-y 30
 end
 arch director_3
 x 47
 y 30
+move_on fly_low
 end
 arch sea
+slaying sea_library
+x 47
+y 30
+end
+arch sea
+slaying sea_library
 x 47
 y 31
 end
-arch sea
+arch director_7
 x 47
 y 32
+move_on fly_low
 end
-arch director_7
+arch sea
+slaying sea_library
 x 47
 y 32
 end
@@ -9694,39 +9911,44 @@ arch wall_2_1_2
 x 48
 y 25
 end
-arch sea
+arch sea1
 x 48
 y 26
 end
-arch sea
+arch sea1
 x 48
 y 27
 end
-arch sea
+arch sea1
 x 48
 y 28
 end
-arch sea
+arch sea1
 x 48
 y 29
-end
-arch sea
-x 48
-y 30
 end
 arch director_3
 x 48
 y 30
+move_on fly_low
 end
 arch sea
+slaying sea_library
+x 48
+y 30
+end
+arch sea
+slaying sea_library
 x 48
 y 31
 end
-arch sea
+arch director_7
 x 48
 y 32
+move_on fly_low
 end
-arch director_7
+arch sea
+slaying sea_library
 x 48
 y 32
 end
@@ -9869,43 +10091,48 @@ arch wall_2_2_4
 x 49
 y 25
 end
-arch sea
+arch sea1
 x 49
 y 26
 end
-arch sea
+arch sea1
 x 49
 y 27
 end
-arch sea
+arch sea1
 x 49
 y 28
 end
-arch sea
+arch sea1
 x 49
 y 29
 end
+arch director_5
+x 49
+y 30
+move_on fly_low
+end
 arch sea
+slaying sea_library
 x 49
 y 30
 end
 arch director_5
 x 49
-y 30
+y 31
+move_on fly_low
 end
 arch sea
+slaying sea_library
 x 49
 y 31
 end
-arch director_5
-x 49
-y 31
-end
-arch sea
+arch director_7
 x 49
 y 32
 end
-arch director_7
+arch sea
+slaying sea_library
 x 49
 y 32
 end
@@ -10036,39 +10263,42 @@ arch wall_2_1_2
 x 50
 y 23
 end
-arch sea
+arch sea1
 x 50
 y 24
 end
-arch sea
+arch sea1
 x 50
 y 25
 end
-arch sea
+arch sea1
 x 50
 y 26
 end
-arch sea
+arch sea1
 x 50
 y 27
 end
 arch sea
+slaying sea_library
 x 50
 y 28
 end
-arch sea
+arch sea1
 x 50
 y 29
 end
-arch sea
+arch sea1
 x 50
 y 30
 end
 arch sea
+slaying sea_library
 x 50
 y 31
 end
 arch sea
+slaying sea_library
 x 50
 y 32
 end
@@ -10211,39 +10441,43 @@ arch wall_2_2_4
 x 51
 y 23
 end
-arch sea
+arch sea1
 x 51
 y 24
 end
-arch sea
+arch sea1
 x 51
 y 25
 end
-arch sea
+arch sea1
 x 51
 y 26
 end
 arch sea
+slaying sea_library
 x 51
 y 27
 end
-arch sea
+arch sea1
 x 51
 y 28
 end
 arch sea
+slaying sea_library
 x 51
 y 29
 end
-arch sea
+arch sea1
 x 51
 y 30
 end
 arch sea
+slaying sea_library
 x 51
 y 31
 end
 arch sea
+slaying sea_library
 x 51
 y 32
 end
@@ -10354,47 +10588,49 @@ arch wall_2_1_2
 x 52
 y 21
 end
-arch sea
+arch sea1
 x 52
 y 22
 end
-arch sea
+arch sea1
 x 52
 y 23
 end
-arch sea
+arch sea1
 x 52
 y 24
 end
-arch sea
+arch sea1
 x 52
 y 25
 end
-arch sea
+arch sea1
 x 52
 y 26
 end
-arch sea
+arch sea1
 x 52
 y 27
 end
-arch sea
+arch sea1
 x 52
 y 28
 end
-arch sea
+arch sea1
 x 52
 y 29
 end
 arch sea
+slaying sea_library
 x 52
 y 30
 end
-arch sea
+arch sea1
 x 52
 y 31
 end
 arch sea
+slaying sea_library
 x 52
 y 32
 end
@@ -10509,47 +10745,48 @@ arch wall_2_2_4
 x 53
 y 21
 end
-arch sea
+arch sea1
 x 53
 y 22
 end
-arch sea
+arch sea1
 x 53
 y 23
 end
-arch sea
+arch sea1
 x 53
 y 24
 end
-arch sea
+arch sea1
 x 53
 y 25
 end
-arch sea
+arch sea1
 x 53
 y 26
 end
-arch sea
+arch sea1
 x 53
 y 27
 end
-arch sea
+arch sea1
 x 53
 y 28
 end
 arch sea
+slaying sea_library
 x 53
 y 29
 end
-arch sea
+arch sea1
 x 53
 y 30
 end
-arch sea
+arch sea1
 x 53
 y 31
 end
-arch sea
+arch sea1
 x 53
 y 32
 end
@@ -10648,55 +10885,57 @@ arch wall_2_1_2
 x 54
 y 19
 end
-arch sea
+arch sea1
 x 54
 y 20
 end
-arch sea
+arch sea1
 x 54
 y 21
 end
-arch sea
+arch sea1
 x 54
 y 22
 end
-arch sea
+arch sea1
 x 54
 y 23
 end
-arch sea
+arch sea1
 x 54
 y 24
 end
-arch sea
+arch sea1
 x 54
 y 25
 end
-arch sea
+arch sea1
 x 54
 y 26
 end
-arch sea
+arch sea1
 x 54
 y 27
 end
 arch sea
+slaying sea_library
 x 54
 y 28
 end
-arch sea
+arch sea1
 x 54
 y 29
 end
 arch sea
+slaying sea_library
 x 54
 y 30
 end
-arch sea
+arch sea1
 x 54
 y 31
 end
-arch sea
+arch sea1
 x 54
 y 32
 end
@@ -10811,55 +11050,57 @@ arch wall_2_2_4
 x 55
 y 19
 end
-arch sea
+arch sea1
 x 55
 y 20
 end
-arch sea
+arch sea1
 x 55
 y 21
 end
-arch sea
+arch sea1
 x 55
 y 22
 end
-arch sea
+arch sea1
 x 55
 y 23
 end
-arch sea
+arch sea1
 x 55
 y 24
 end
-arch sea
+arch sea1
 x 55
 y 25
 end
-arch sea
+arch sea1
 x 55
 y 26
 end
 arch sea
+slaying sea_library
 x 55
 y 27
 end
 arch sea
+slaying sea_library
 x 55
 y 28
 end
-arch sea
+arch sea1
 x 55
 y 29
 end
-arch sea
+arch sea1
 x 55
 y 30
 end
-arch sea
+arch sea1
 x 55
 y 31
 end
-arch sea
+arch sea1
 x 55
 y 32
 end
@@ -10942,63 +11183,63 @@ arch wall_2_1_2
 x 56
 y 17
 end
-arch sea
+arch sea1
 x 56
 y 18
 end
-arch sea
+arch sea1
 x 56
 y 19
 end
-arch sea
+arch sea1
 x 56
 y 20
 end
-arch sea
+arch sea1
 x 56
 y 21
 end
-arch sea
+arch sea1
 x 56
 y 22
 end
-arch sea
+arch sea1
 x 56
 y 23
 end
-arch sea
+arch sea1
 x 56
 y 24
 end
-arch sea
+arch sea1
 x 56
 y 25
 end
-arch sea
+arch sea1
 x 56
 y 26
 end
-arch sea
+arch sea1
 x 56
 y 27
 end
-arch sea
+arch sea1
 x 56
 y 28
 end
-arch sea
+arch sea1
 x 56
 y 29
 end
-arch sea
+arch sea1
 x 56
 y 30
 end
-arch sea
+arch sea1
 x 56
 y 31
 end
-arch sea
+arch sea1
 x 56
 y 32
 end
@@ -11089,63 +11330,63 @@ arch wall_1_3
 x 57
 y 17
 end
-arch sea
+arch sea1
 x 57
 y 18
 end
-arch sea
+arch sea1
 x 57
 y 19
 end
-arch sea
+arch sea1
 x 57
 y 20
 end
-arch sea
+arch sea1
 x 57
 y 21
 end
-arch sea
+arch sea1
 x 57
 y 22
 end
-arch sea
+arch sea1
 x 57
 y 23
 end
-arch sea
+arch sea1
 x 57
 y 24
 end
-arch sea
+arch sea1
 x 57
 y 25
 end
-arch sea
+arch sea1
 x 57
 y 26
 end
-arch sea
+arch sea1
 x 57
 y 27
 end
-arch sea
+arch sea1
 x 57
 y 28
 end
-arch sea
+arch sea1
 x 57
 y 29
 end
-arch sea
+arch sea1
 x 57
 y 30
 end
-arch sea
+arch sea1
 x 57
 y 31
 end
-arch sea
+arch sea1
 x 57
 y 32
 end
@@ -11216,67 +11457,67 @@ arch woodfloor
 x 58
 y 16
 end
-arch sea
+arch sea1
 x 58
 y 17
 end
-arch sea
+arch sea1
 x 58
 y 18
 end
-arch sea
+arch sea1
 x 58
 y 19
 end
-arch sea
+arch sea1
 x 58
 y 20
 end
-arch sea
+arch sea1
 x 58
 y 21
 end
-arch sea
+arch sea1
 x 58
 y 22
 end
-arch sea
+arch sea1
 x 58
 y 23
 end
-arch sea
+arch sea1
 x 58
 y 24
 end
-arch sea
+arch sea1
 x 58
 y 25
 end
-arch sea
+arch sea1
 x 58
 y 26
 end
-arch sea
+arch sea1
 x 58
 y 27
 end
-arch sea
+arch sea1
 x 58
 y 28
 end
-arch sea
+arch sea1
 x 58
 y 29
 end
-arch sea
+arch sea1
 x 58
 y 30
 end
-arch sea
+arch sea1
 x 58
 y 31
 end
-arch sea
+arch sea1
 x 58
 y 32
 end
@@ -11347,67 +11588,67 @@ arch woodfloor
 x 59
 y 16
 end
-arch sea
+arch sea1
 x 59
 y 17
 end
-arch sea
+arch sea1
 x 59
 y 18
 end
-arch sea
+arch sea1
 x 59
 y 19
 end
-arch sea
+arch sea1
 x 59
 y 20
 end
-arch sea
+arch sea1
 x 59
 y 21
 end
-arch sea
+arch sea1
 x 59
 y 22
 end
-arch sea
+arch sea1
 x 59
 y 23
 end
-arch sea
+arch sea1
 x 59
 y 24
 end
-arch sea
+arch sea1
 x 59
 y 25
 end
-arch sea
+arch sea1
 x 59
 y 26
 end
-arch sea
+arch sea1
 x 59
 y 27
 end
-arch sea
+arch sea1
 x 59
 y 28
 end
-arch sea
+arch sea1
 x 59
 y 29
 end
-arch sea
+arch sea1
 x 59
 y 30
 end
-arch sea
+arch sea1
 x 59
 y 31
 end
-arch sea
+arch sea1
 x 59
 y 32
 end
@@ -11478,67 +11719,67 @@ arch woodfloor
 x 60
 y 16
 end
-arch sea
+arch sea1
 x 60
 y 17
 end
-arch sea
+arch sea1
 x 60
 y 18
 end
-arch sea
+arch sea1
 x 60
 y 19
 end
-arch sea
+arch sea1
 x 60
 y 20
 end
-arch sea
+arch sea1
 x 60
 y 21
 end
-arch sea
+arch sea1
 x 60
 y 22
 end
-arch sea
+arch sea1
 x 60
 y 23
 end
-arch sea
+arch sea1
 x 60
 y 24
 end
-arch sea
+arch sea1
 x 60
 y 25
 end
-arch sea
+arch sea1
 x 60
 y 26
 end
-arch sea
+arch sea1
 x 60
 y 27
 end
-arch sea
+arch sea1
 x 60
 y 28
 end
-arch sea
+arch sea1
 x 60
 y 29
 end
-arch sea
+arch sea1
 x 60
 y 30
 end
-arch sea
+arch sea1
 x 60
 y 31
 end
-arch sea
+arch sea1
 x 60
 y 32
 end
@@ -11609,67 +11850,67 @@ arch woodfloor
 x 61
 y 16
 end
-arch sea
+arch sea1
 x 61
 y 17
 end
-arch sea
+arch sea1
 x 61
 y 18
 end
-arch sea
+arch sea1
 x 61
 y 19
 end
-arch sea
+arch sea1
 x 61
 y 20
 end
-arch sea
+arch sea1
 x 61
 y 21
 end
-arch sea
+arch sea1
 x 61
 y 22
 end
-arch sea
+arch sea1
 x 61
 y 23
 end
-arch sea
+arch sea1
 x 61
 y 24
 end
-arch sea
+arch sea1
 x 61
 y 25
 end
-arch sea
+arch sea1
 x 61
 y 26
 end
-arch sea
+arch sea1
 x 61
 y 27
 end
-arch sea
+arch sea1
 x 61
 y 28
 end
-arch sea
+arch sea1
 x 61
 y 29
 end
-arch sea
+arch sea1
 x 61
 y 30
 end
-arch sea
+arch sea1
 x 61
 y 31
 end
-arch sea
+arch sea1
 x 61
 y 32
 end

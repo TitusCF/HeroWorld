@@ -4,7 +4,7 @@ width 62
 height 33
 msg
 Created:  2023-02-24 Titus
-Modified: 2023-03-04 Titus
+Modified: 2023-07-16 Titus
 endmsg
 end
 arch sea
@@ -1506,9 +1506,24 @@ arch woodfloor
 x 7
 y 22
 end
+arch gate_closed_2
+x 7
+y 22
+connected 8888
+activate_on_release 0
+end
 arch woodfloor
 x 7
 y 23
+end
+arch bird
+x 7
+y 23
+stand_still 1
+arch event_death
+slaying python/misc/connect.py
+connected 8888
+end
 end
 arch woodfloor
 x 7
@@ -1561,11 +1576,31 @@ arch sea
 x 7
 y 30
 end
+arch director_3
+x 7
+y 30
+end
 arch sea
 x 7
 y 31
 end
+arch director_1
+x 7
+y 31
+end
+arch bird
+x 7
+y 31
+arch event_death
+slaying python/misc/connect.py
+connected 8888
+end
+end
 arch sea
+x 7
+y 32
+end
+arch director_1
 x 7
 y 32
 end
@@ -1744,11 +1779,19 @@ arch sea
 x 8
 y 30
 end
+arch director_3
+x 8
+y 30
+end
 arch sea
 x 8
 y 31
 end
 arch sea
+x 8
+y 32
+end
+arch director_7
 x 8
 y 32
 end
@@ -2003,11 +2046,19 @@ arch sea
 x 9
 y 30
 end
+arch director_3
+x 9
+y 30
+end
 arch sea
 x 9
 y 31
 end
 arch sea
+x 9
+y 32
+end
+arch director_7
 x 9
 y 32
 end
@@ -2232,11 +2283,19 @@ arch sea
 x 10
 y 30
 end
+arch director_3
+x 10
+y 30
+end
 arch sea
 x 10
 y 31
 end
 arch sea
+x 10
+y 32
+end
+arch director_7
 x 10
 y 32
 end
@@ -2412,11 +2471,19 @@ arch sea
 x 11
 y 30
 end
+arch director_3
+x 11
+y 30
+end
 arch sea
 x 11
 y 31
 end
 arch sea
+x 11
+y 32
+end
+arch director_7
 x 11
 y 32
 end
@@ -2595,11 +2662,19 @@ arch sea
 x 12
 y 30
 end
+arch director_3
+x 12
+y 30
+end
 arch sea
 x 12
 y 31
 end
 arch sea
+x 12
+y 32
+end
+arch director_7
 x 12
 y 32
 end
@@ -2831,11 +2906,19 @@ arch sea
 x 13
 y 30
 end
+arch director_3
+x 13
+y 30
+end
 arch sea
 x 13
 y 31
 end
 arch sea
+x 13
+y 32
+end
+arch director_7
 x 13
 y 32
 end
@@ -3055,11 +3138,19 @@ arch sea
 x 14
 y 30
 end
+arch director_3
+x 14
+y 30
+end
 arch sea
 x 14
 y 31
 end
 arch sea
+x 14
+y 32
+end
+arch director_7
 x 14
 y 32
 end
@@ -3222,11 +3313,19 @@ arch sea
 x 15
 y 30
 end
+arch director_3
+x 15
+y 30
+end
 arch sea
 x 15
 y 31
 end
 arch sea
+x 15
+y 32
+end
+arch director_7
 x 15
 y 32
 end
@@ -3389,11 +3488,19 @@ arch sea
 x 16
 y 30
 end
+arch director_3
+x 16
+y 30
+end
 arch sea
 x 16
 y 31
 end
 arch sea
+x 16
+y 32
+end
+arch director_7
 x 16
 y 32
 end
@@ -3605,11 +3712,19 @@ arch sea
 x 17
 y 30
 end
+arch director_3
+x 17
+y 30
+end
 arch sea
 x 17
 y 31
 end
 arch sea
+x 17
+y 32
+end
+arch director_7
 x 17
 y 32
 end
@@ -3829,11 +3944,19 @@ arch sea
 x 18
 y 30
 end
+arch director_3
+x 18
+y 30
+end
 arch sea
 x 18
 y 31
 end
 arch sea
+x 18
+y 32
+end
+arch director_7
 x 18
 y 32
 end
@@ -3980,11 +4103,19 @@ arch sea
 x 19
 y 30
 end
+arch director_3
+x 19
+y 30
+end
 arch sea
 x 19
 y 31
 end
 arch sea
+x 19
+y 32
+end
+arch director_7
 x 19
 y 32
 end
@@ -4131,11 +4262,19 @@ arch sea
 x 20
 y 30
 end
+arch director_3
+x 20
+y 30
+end
 arch sea
 x 20
 y 31
 end
 arch sea
+x 20
+y 32
+end
+arch director_7
 x 20
 y 32
 end
@@ -4335,11 +4474,19 @@ arch sea
 x 21
 y 30
 end
+arch director_3
+x 21
+y 30
+end
 arch sea
 x 21
 y 31
 end
 arch sea
+x 21
+y 32
+end
+arch director_7
 x 21
 y 32
 end
@@ -4565,11 +4712,19 @@ arch sea
 x 22
 y 30
 end
+arch director_3
+x 22
+y 30
+end
 arch sea
 x 22
 y 31
 end
 arch sea
+x 22
+y 32
+end
+arch director_7
 x 22
 y 32
 end
@@ -4720,11 +4875,19 @@ arch sea
 x 23
 y 30
 end
+arch director_3
+x 23
+y 30
+end
 arch sea
 x 23
 y 31
 end
 arch sea
+x 23
+y 32
+end
+arch director_7
 x 23
 y 32
 end
@@ -4875,11 +5038,19 @@ arch sea
 x 24
 y 30
 end
+arch director_3
+x 24
+y 30
+end
 arch sea
 x 24
 y 31
 end
 arch sea
+x 24
+y 32
+end
+arch director_7
 x 24
 y 32
 end
@@ -5083,11 +5254,19 @@ arch sea
 x 25
 y 30
 end
+arch director_3
+x 25
+y 30
+end
 arch sea
 x 25
 y 31
 end
 arch sea
+x 25
+y 32
+end
+arch director_7
 x 25
 y 32
 end
@@ -5315,11 +5494,19 @@ arch sea
 x 26
 y 30
 end
+arch director_3
+x 26
+y 30
+end
 arch sea
 x 26
 y 31
 end
 arch sea
+x 26
+y 32
+end
+arch director_7
 x 26
 y 32
 end
@@ -5470,11 +5657,19 @@ arch sea
 x 27
 y 30
 end
+arch director_3
+x 27
+y 30
+end
 arch sea
 x 27
 y 31
 end
 arch sea
+x 27
+y 32
+end
+arch director_7
 x 27
 y 32
 end
@@ -5633,11 +5828,19 @@ arch sea
 x 28
 y 30
 end
+arch director_3
+x 28
+y 30
+end
 arch sea
 x 28
 y 31
 end
 arch sea
+x 28
+y 32
+end
+arch director_7
 x 28
 y 32
 end
@@ -5855,11 +6058,19 @@ arch sea
 x 29
 y 30
 end
+arch director_3
+x 29
+y 30
+end
 arch sea
 x 29
 y 31
 end
 arch sea
+x 29
+y 32
+end
+arch director_7
 x 29
 y 32
 end
@@ -6063,11 +6274,19 @@ arch sea
 x 30
 y 30
 end
+arch director_3
+x 30
+y 30
+end
 arch sea
 x 30
 y 31
 end
 arch sea
+x 30
+y 32
+end
+arch director_7
 x 30
 y 32
 end
@@ -6218,11 +6437,19 @@ arch sea
 x 31
 y 30
 end
+arch director_3
+x 31
+y 30
+end
 arch sea
 x 31
 y 31
 end
 arch sea
+x 31
+y 32
+end
+arch director_7
 x 31
 y 32
 end
@@ -6373,11 +6600,19 @@ arch sea
 x 32
 y 30
 end
+arch director_3
+x 32
+y 30
+end
 arch sea
 x 32
 y 31
 end
 arch sea
+x 32
+y 32
+end
+arch director_7
 x 32
 y 32
 end
@@ -6581,11 +6816,19 @@ arch sea
 x 33
 y 30
 end
+arch director_3
+x 33
+y 30
+end
 arch sea
 x 33
 y 31
 end
 arch sea
+x 33
+y 32
+end
+arch director_7
 x 33
 y 32
 end
@@ -6789,11 +7032,19 @@ arch sea
 x 34
 y 30
 end
+arch director_3
+x 34
+y 30
+end
 arch sea
 x 34
 y 31
 end
 arch sea
+x 34
+y 32
+end
+arch director_7
 x 34
 y 32
 end
@@ -6944,11 +7195,19 @@ arch sea
 x 35
 y 30
 end
+arch director_3
+x 35
+y 30
+end
 arch sea
 x 35
 y 31
 end
 arch sea
+x 35
+y 32
+end
+arch director_7
 x 35
 y 32
 end
@@ -7099,11 +7358,19 @@ arch sea
 x 36
 y 30
 end
+arch director_3
+x 36
+y 30
+end
 arch sea
 x 36
 y 31
 end
 arch sea
+x 36
+y 32
+end
+arch director_7
 x 36
 y 32
 end
@@ -7307,11 +7574,19 @@ arch sea
 x 37
 y 30
 end
+arch director_3
+x 37
+y 30
+end
 arch sea
 x 37
 y 31
 end
 arch sea
+x 37
+y 32
+end
+arch director_7
 x 37
 y 32
 end
@@ -7515,11 +7790,19 @@ arch sea
 x 38
 y 30
 end
+arch director_3
+x 38
+y 30
+end
 arch sea
 x 38
 y 31
 end
 arch sea
+x 38
+y 32
+end
+arch director_7
 x 38
 y 32
 end
@@ -7666,11 +7949,19 @@ arch sea
 x 39
 y 30
 end
+arch director_3
+x 39
+y 30
+end
 arch sea
 x 39
 y 31
 end
 arch sea
+x 39
+y 32
+end
+arch director_7
 x 39
 y 32
 end
@@ -7817,11 +8108,19 @@ arch sea
 x 40
 y 30
 end
+arch director_3
+x 40
+y 30
+end
 arch sea
 x 40
 y 31
 end
 arch sea
+x 40
+y 32
+end
+arch director_7
 x 40
 y 32
 end
@@ -8025,11 +8324,19 @@ arch sea
 x 41
 y 30
 end
+arch director_3
+x 41
+y 30
+end
 arch sea
 x 41
 y 31
 end
 arch sea
+x 41
+y 32
+end
+arch director_7
 x 41
 y 32
 end
@@ -8225,11 +8532,19 @@ arch sea
 x 42
 y 30
 end
+arch director_3
+x 42
+y 30
+end
 arch sea
 x 42
 y 31
 end
 arch sea
+x 42
+y 32
+end
+arch director_7
 x 42
 y 32
 end
@@ -8376,11 +8691,19 @@ arch sea
 x 43
 y 30
 end
+arch director_3
+x 43
+y 30
+end
 arch sea
 x 43
 y 31
 end
 arch sea
+x 43
+y 32
+end
+arch director_7
 x 43
 y 32
 end
@@ -8531,11 +8854,19 @@ arch sea
 x 44
 y 30
 end
+arch director_3
+x 44
+y 30
+end
 arch sea
 x 44
 y 31
 end
 arch sea
+x 44
+y 32
+end
+arch director_7
 x 44
 y 32
 end
@@ -8739,11 +9070,19 @@ arch sea
 x 45
 y 30
 end
+arch director_3
+x 45
+y 30
+end
 arch sea
 x 45
 y 31
 end
 arch sea
+x 45
+y 32
+end
+arch director_7
 x 45
 y 32
 end
@@ -8971,11 +9310,19 @@ arch sea
 x 46
 y 30
 end
+arch director_3
+x 46
+y 30
+end
 arch sea
 x 46
 y 31
 end
 arch sea
+x 46
+y 32
+end
+arch director_7
 x 46
 y 32
 end
@@ -9093,7 +9440,7 @@ y 18
 end
 arch stair_3_up
 msg
-The steps creak beneath your weight, they feel like they could give out at an moment...
+The steps creak beneath your weight, they feel like they could give out at any moment...
 endmsg
 x 47
 y 18
@@ -9182,11 +9529,19 @@ arch sea
 x 47
 y 30
 end
+arch director_3
+x 47
+y 30
+end
 arch sea
 x 47
 y 31
 end
 arch sea
+x 47
+y 32
+end
+arch director_7
 x 47
 y 32
 end
@@ -9329,11 +9684,19 @@ arch sea
 x 48
 y 30
 end
+arch director_3
+x 48
+y 30
+end
 arch sea
 x 48
 y 31
 end
 arch sea
+x 48
+y 32
+end
+arch director_7
 x 48
 y 32
 end
@@ -9496,11 +9859,23 @@ arch sea
 x 49
 y 30
 end
+arch director_5
+x 49
+y 30
+end
 arch sea
 x 49
 y 31
 end
+arch director_5
+x 49
+y 31
+end
 arch sea
+x 49
+y 32
+end
+arch director_7
 x 49
 y 32
 end

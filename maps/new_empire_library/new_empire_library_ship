@@ -1521,13 +1521,22 @@ x 7
 y 23
 stand_still 1
 arch event_death
+title 8888
 slaying python/misc/connect.py
-connected 8888
 end
 end
 arch woodfloor
 x 7
 y 24
+end
+arch bird
+x 7
+y 24
+stand_still 1
+arch event_death
+name 8888
+slaying python/misc/connect.py
+end
 end
 arch woodfloor
 x 7
@@ -1592,8 +1601,8 @@ arch bird
 x 7
 y 31
 arch event_death
+title 8888
 slaying python/misc/connect.py
-connected 8888
 end
 end
 arch sea

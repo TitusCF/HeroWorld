@@ -1498,6 +1498,12 @@ arch woodfloor
 x 7
 y 20
 end
+arch gate_closed_2
+x 7
+y 20
+connected 8888
+activate_on_release 0
+end
 arch woodfloor
 x 7
 y 21
@@ -1548,7 +1554,7 @@ x 7
 y 24
 stand_still 1
 arch event_death
-title 8888
+name 8888
 slaying python/misc/connect.py
 end
 end

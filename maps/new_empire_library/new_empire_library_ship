@@ -26,6 +26,7 @@ y 5
 end
 arch sea
 y 6
+move_block none
 end
 arch sea
 y 7
@@ -165,7 +166,7 @@ arch woodfloor
 x 1
 y 5
 end
-arch wall_1_1
+arch wall_1_short
 x 1
 y 5
 end
@@ -173,15 +174,26 @@ arch woodfloor
 x 1
 y 6
 end
-arch wall_2_1_1
+arch grate_closed_2
 x 1
 y 6
+connected 99985
+activate_on_release 0
+end
+arch creator
+x 1
+y 6
+connected 99985
+activate_on_release 0
+arch mover_7
+speed 0.5
+end
 end
 arch woodfloor
 x 1
 y 7
 end
-arch wall_2_1_1
+arch wall_1_1
 x 1
 y 7
 end
@@ -408,9 +420,10 @@ end
 arch creator
 x 2
 y 6
-connected 9993
+connected 99985
 activate_on_release 0
-arch wall_1_short
+arch mover_7
+speed 0.5
 end
 end
 arch steel_ne_1
@@ -432,7 +445,7 @@ end
 arch button_handle
 x 2
 y 10
-connected 99981
+connected 99985
 activate_on_release 0
 end
 arch spikes_closed
@@ -670,18 +683,17 @@ activate_on_release 0
 arch wall_1_short
 end
 end
-arch woodfloorvert
+arch woodfloor
 x 3
 y 6
 end
 arch creator
 x 3
 y 6
-connected 9993
+connected 99985
 activate_on_release 0
-arch pit_closed
-connected 99981
-activate_on_release 0
+arch mover_7
+speed 0.5
 end
 end
 arch woodfloorvert
@@ -874,18 +886,17 @@ activate_on_release 0
 arch wall_1_short
 end
 end
-arch woodfloorvert
+arch woodfloor
 x 4
 y 6
 end
 arch creator
 x 4
 y 6
-connected 9993
+connected 99985
 activate_on_release 0
-arch pit_closed
-connected 99981
-activate_on_release 0
+arch mover_7
+speed 0.5
 end
 end
 arch woodfloorvert

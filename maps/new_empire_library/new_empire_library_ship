@@ -377,6 +377,7 @@ x 2
 y 3
 invisible 1
 last_sp 1
+connected 99983
 end
 arch sea
 x 2
@@ -392,27 +393,49 @@ arch woodfloor
 x 2
 y 5
 end
+arch creator
+x 2
+y 5
+connected 9993
+activate_on_release 0
+arch wall_1_short
+end
+end
 arch woodfloor
 x 2
 y 6
 end
-arch woodfloor
+arch creator
+x 2
+y 6
+connected 9993
+activate_on_release 0
+arch wall_1_short
+end
+end
+arch steel_ne_1
 x 2
 y 7
 end
-arch woodfloor
+arch steel_e_1
 x 2
 y 8
 end
-arch woodfloor
+arch steel_e_1
 x 2
 y 9
 end
-arch woodfloor
+arch steel_e_1
 x 2
 y 10
 end
-arch woodfloor
+arch button_handle
+x 2
+y 10
+connected 9993
+activate_on_release 0
+end
+arch steel_1
 x 2
 y 11
 end
@@ -617,6 +640,7 @@ x 3
 y 3
 invisible 1
 last_sp 1
+connected 99983
 end
 arch sea
 x 3
@@ -628,13 +652,31 @@ y 4
 invisible 1
 move_on swim
 end
-arch woodfloorvert
+arch woodfloor
 x 3
 y 5
+end
+arch creator
+x 3
+y 5
+connected 9993
+activate_on_release 0
+arch wall_1_short
+end
 end
 arch woodfloorvert
 x 3
 y 6
+end
+arch creator
+x 3
+y 6
+connected 9993
+activate_on_release 0
+arch pit_closed
+connected 99981
+activate_on_release 0
+end
 end
 arch woodfloorvert
 x 3
@@ -652,7 +694,7 @@ arch woodfloorvert
 x 3
 y 10
 end
-arch woodfloor
+arch steel_n_1
 x 3
 y 11
 end
@@ -802,6 +844,7 @@ x 4
 y 3
 invisible 1
 last_sp 1
+connected 99983
 end
 arch sea
 x 4
@@ -813,13 +856,31 @@ y 4
 invisible 1
 move_on swim
 end
-arch woodfloorvert
+arch woodfloor
 x 4
 y 5
+end
+arch creator
+x 4
+y 5
+connected 9993
+activate_on_release 0
+arch wall_1_short
+end
 end
 arch woodfloorvert
 x 4
 y 6
+end
+arch creator
+x 4
+y 6
+connected 9993
+activate_on_release 0
+arch pit_closed
+connected 99981
+activate_on_release 0
+end
 end
 arch woodfloorvert
 x 4
@@ -837,7 +898,7 @@ arch woodfloorvert
 x 4
 y 10
 end
-arch woodfloor
+arch steel_n_1
 x 4
 y 11
 end
@@ -1036,6 +1097,7 @@ x 5
 y 3
 invisible 1
 last_sp 1
+connected 99983
 end
 arch sea
 x 5
@@ -1051,9 +1113,25 @@ arch woodfloor
 x 5
 y 5
 end
+arch creator
+x 5
+y 5
+connected 9993
+activate_on_release 0
+arch wall_1_short
+end
+end
 arch woodfloor
 x 5
 y 6
+end
+arch creator
+x 5
+y 6
+connected 9993
+activate_on_release 0
+arch wall_1_short
+end
 end
 arch woodfloor
 x 5
@@ -1078,7 +1156,7 @@ arch woodfloorvert
 x 5
 y 10
 end
-arch woodfloor
+arch steel_n_1
 x 5
 y 11
 end
@@ -1267,7 +1345,7 @@ arch woodfloorvert
 x 6
 y 10
 end
-arch woodfloor
+arch steel_n_1
 x 6
 y 11
 end
@@ -1462,7 +1540,7 @@ arch woodfloorvert
 x 7
 y 10
 end
-arch woodfloor
+arch steel_n_1
 x 7
 y 11
 end
@@ -1731,7 +1809,7 @@ arch woodfloor
 x 8
 y 10
 end
-arch woodfloor
+arch steel_ne_1
 x 8
 y 11
 end
@@ -4321,9 +4399,21 @@ arch woodfloor
 x 18
 y 15
 end
+arch mvwdoor_closed_1
+x 18
+y 15
+connected 99982
+activate_on_release 0
+end
 arch woodfloor
 x 18
 y 16
+end
+arch mvwdoor_closed_1
+x 18
+y 16
+connected 99982
+activate_on_release 0
 end
 arch woodfloor
 x 18
@@ -4570,6 +4660,16 @@ arch woodfloor
 x 19
 y 12
 end
+arch creator
+x 19
+y 12
+connected 99983
+activate_on_release 0
+arch igateTrg1
+connected 99982
+activate_on_release 0
+end
+end
 arch woodfloor
 x 19
 y 13
@@ -4769,6 +4869,16 @@ arch woodfloor
 x 20
 y 12
 end
+arch creator
+x 20
+y 12
+connected 99983
+activate_on_release 0
+arch igateTrg1
+connected 99982
+activate_on_release 0
+end
+end
 arch woodfloor
 x 20
 y 13
@@ -4962,6 +5072,16 @@ end
 arch woodfloor
 x 21
 y 12
+end
+arch creator
+x 21
+y 12
+connected 99983
+activate_on_release 0
+arch igateTrg1
+connected 99982
+activate_on_release 0
+end
 end
 arch woodfloor
 x 21
@@ -12254,17 +12374,15 @@ arch sea
 x 55
 y 2
 end
-arch sea
+arch tile_shop
 x 55
 y 3
 end
-arch sea
+arch detector
+slaying anchor
 x 55
-y 4
-end
-arch sea
-x 55
-y 5
+y 3
+connected 99982
 end
 arch sea
 x 55
@@ -12422,17 +12540,9 @@ arch sea
 x 56
 y 2
 end
-arch sea
+arch tile_shop
 x 56
 y 3
-end
-arch sea
-x 56
-y 4
-end
-arch sea
-x 56
-y 5
 end
 arch sea
 x 56
@@ -12563,18 +12673,6 @@ end
 arch sea
 x 57
 y 2
-end
-arch sea
-x 57
-y 3
-end
-arch sea
-x 57
-y 4
-end
-arch sea
-x 57
-y 5
 end
 arch sea
 x 57

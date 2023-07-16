@@ -31,7 +31,24 @@ y 5
 end
 arch sea
 y 6
-move_block none
+end
+arch altar_trigger
+slaying anchor
+msg
+> New Anchor Detected!
+> Stand Clear!
+> Anchor Recalibration in 3...2...1
+>Recalibration Successful!
+>Anchor Status: Ready
+>Alert Status: Passive
+
+
+endmsg
+food 1
+y 6
+invisible 1
+last_sp 1
+connected 99982
 end
 arch sea
 y 7
@@ -184,15 +201,6 @@ x 1
 y 6
 connected 99985
 activate_on_release 0
-end
-arch creator
-x 1
-y 6
-connected 99985
-activate_on_release 0
-arch director_7
-speed 0.6
-end
 end
 arch woodfloor
 x 1
@@ -384,6 +392,7 @@ msg
 > Anchor Malfunction Detected!
 > Stand Clear!
 > Anchor Released in 3...2...1
+>Alert Status : Red <Emergency Airlocks are Active>
 **WARNING**
 SHIP ANCHOR CANNOT BE DETECTED
 INSTALL NEW ANCHOR BEFORE ATTEMPTING TO LEAVE PORT
@@ -654,6 +663,7 @@ msg
 > Anchor Malfunction Detected!
 > Stand Clear!
 > Anchor Released in 3...2...1
+>Alert Status : Red <Emergency Airlocks are Active>
 **WARNING**
 SHIP ANCHOR CANNOT BE DETECTED
 INSTALL NEW ANCHOR BEFORE ATTEMPTING TO LEAVE PORT
@@ -857,6 +867,7 @@ msg
 > Anchor Malfunction Detected!
 > Stand Clear!
 > Anchor Released in 3...2...1
+>Alert Status : Red <Emergency Airlocks are Active>
 **WARNING**
 SHIP ANCHOR CANNOT BE DETECTED
 INSTALL NEW ANCHOR BEFORE ATTEMPTING TO LEAVE PORT
@@ -1109,6 +1120,7 @@ msg
 > Anchor Malfunction Detected!
 > Stand Clear!
 > Anchor Released in 3...2...1
+>Alert Status : Red <Emergency Airlocks are Active>
 **WARNING**
 SHIP ANCHOR CANNOT BE DETECTED
 INSTALL NEW ANCHOR BEFORE ATTEMPTING TO LEAVE PORT
@@ -1147,14 +1159,6 @@ arch woodfloor
 x 5
 y 6
 end
-arch creator
-x 5
-y 6
-connected 9993
-activate_on_release 0
-arch wall_1_short
-end
-end
 arch woodfloor
 x 5
 y 7
@@ -1171,7 +1175,7 @@ arch anchor_1
 x 5
 y 9
 weight 1000000
-move_type walk swim
+move_type walk
 move_block all
 end
 arch woodfloorvert
@@ -2891,6 +2895,12 @@ arch woodfloor
 x 12
 y 10
 end
+arch spikes_closed
+x 12
+y 10
+connected 99983
+activate_on_release 0
+end
 arch woodfloor
 x 12
 y 11
@@ -3109,6 +3119,12 @@ end
 arch steel_nw_1
 x 13
 y 10
+end
+arch spikes_closed
+x 13
+y 10
+connected 99983
+activate_on_release 0
 end
 arch steel_sw_1
 x 13
@@ -3404,9 +3420,15 @@ lifesave 1
 activate_on_release 0
 arch anchor_1
 weight 1000000
-move_type walk swim
+move_type walk
 move_block all
 end
+end
+arch spikes_closed
+x 14
+y 10
+connected 99983
+activate_on_release 0
 end
 arch steel_s_1
 x 14
@@ -3684,6 +3706,12 @@ arch steel_n_1
 x 15
 y 10
 end
+arch spikes_closed
+x 15
+y 10
+connected 99983
+activate_on_release 0
+end
 arch steel_s_1
 x 15
 y 11
@@ -3902,6 +3930,12 @@ end
 arch steel_ne_1
 x 16
 y 10
+end
+arch spikes_closed
+x 16
+y 10
+connected 99983
+activate_on_release 0
 end
 arch steel_se_1
 x 16
@@ -4124,6 +4158,12 @@ end
 arch woodfloor
 x 17
 y 10
+end
+arch spikes_closed
+x 17
+y 10
+connected 99983
+activate_on_release 0
 end
 arch woodfloor
 x 17

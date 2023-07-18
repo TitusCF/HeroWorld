@@ -46,6 +46,11 @@ arch afloor_black_left
 x 1
 y 1
 end
+arch Nimdoorop2
+name Mouse Soul
+x 1
+y 1
+end
 arch afloor_black_left
 x 1
 y 2
@@ -58,13 +63,6 @@ arch afloor_black_left
 x 1
 y 4
 end
-arch detector
-slaying mouse body
-x 1
-y 4
-speed 1.0
-connected 99
-end
 arch afloor_black_left
 x 1
 y 5
@@ -76,13 +74,6 @@ end
 arch afloor_black_left
 x 1
 y 6
-end
-arch detector
-slaying mouse body
-x 1
-y 6
-speed 1.0
-connected 99
 end
 arch afloor_black_left
 x 1
@@ -107,16 +98,16 @@ arch afloor_black_left
 x 2
 y 2
 end
-arch sailing_galleon
-name mouse body
-race mouse
-face mouse.111
-animation mouse
+arch mouse_stoned
 x 2
 y 2
-move_type walk
-no_pick 0
-passenger_limit 1
+arch magenta_key
+name Mouse soul
+slaying mouse_soul
+face Nimdoorop2.111
+no_pick 1
+startequip 1
+end
 end
 arch afloor_black_left
 x 2
@@ -125,42 +116,22 @@ end
 arch afloor_black_left
 x 2
 y 4
-end
-arch detector
-slaying mouse body
-x 2
-y 4
-speed 1.0
-connected 99
 end
 arch afloor_black_left
 x 2
 y 5
 end
 arch check_inv
-race mouse
+slaying mouse_soul
 face awall_A.111
 x 2
 y 5
+invisible 0
 move_block all
-end
-arch ggate_closed
-x 2
-y 5
-invisible 1
-connected 99
-activate_on_release 0
 end
 arch afloor_black_left
 x 2
 y 6
-end
-arch detector
-slaying mouse body
-x 2
-y 6
-speed 1.0
-connected 99
 end
 arch afloor_black_left
 x 2
@@ -193,13 +164,6 @@ arch afloor_black_left
 x 3
 y 4
 end
-arch detector
-slaying mouse body
-x 3
-y 4
-speed 1.0
-connected 99
-end
 arch afloor_black_left
 x 3
 y 5
@@ -211,13 +175,6 @@ end
 arch afloor_black_left
 x 3
 y 6
-end
-arch detector
-slaying mouse body
-x 3
-y 6
-speed 1.0
-connected 99
 end
 arch afloor_black_left
 x 3

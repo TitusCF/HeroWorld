@@ -3596,10 +3596,9 @@ arch altar_trigger
 name Statue of Bork the Mouse
 slaying Mouse soul
 msg
-You watch as the mouse soul you've placed on the statue floats peacefully into the stone.
-The stone begins to crack and lift away into an inpenetrable cloud of grey dust, waving your arms exposes the grey body of a mouse exactly the same size and shame except now
-there seems the be the slightest rise and fall on its still granite belly,
-Could it really be breathing? You want to touch it....
+There is a burst as your are blinded by an inpenetrable cloud of grey dust! Bork can be found laying nearby unharmed though there seems the be the slightest rise and fall on its still granite belly,
+Could it really be breathing?
+You want to touch it, what could happen?
 endmsg
 face mouse_stoned.111
 animation explosion
@@ -7425,10 +7424,11 @@ activate_on_release 0
 end
 arch note
 name Bork the Mouse (pilotable test)
+other_arch mouse_stoned
 face mouse_stoned.111
 x 35
 y 9
-speed .5
+speed 0.5
 type 2
 weight 1000
 container 8000000
@@ -7437,6 +7437,7 @@ move_type walk
 move_block boat
 move_allow walk
 no_pick 1
+changing 1
 passenger_limit 2
 arch red_key
 name Mouse soul

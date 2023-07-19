@@ -27,31 +27,6 @@ end
 arch afloor_black_left
 y 1
 end
-arch creator
-other_arch rubble
-face mouse_stoned.111
-y 1
-level 10
-connected 999
-changing 1
-lifesave 1
-activate_on_release 0
-arch horse
-name Bork the Mouse (pilotable test)
-face biggalleon.x11
-speed 1.5
-container 10000000
-move_type boat
-passenger_limit 6
-arch gray_key
-name Mouse soul
-name_pl Mouse souls
-slaying mouse_soul
-face Nimdoorop2.111
-no_pick 1
-end
-end
-end
 arch afloor_black_left
 y 2
 end
@@ -133,6 +108,17 @@ y 9
 end
 arch afloor_black_left
 x 2
+end
+arch afloor_black_left
+x 2
+y 1
+end
+arch afloor_black_left
+x 2
+y 2
+end
+arch afloor_black_left
+x 2
 y 3
 end
 arch afloor_black_left
@@ -170,14 +156,18 @@ end
 arch afloor_black_left
 x 3
 end
-arch sailing_big_galleon
+arch awall_2_1_1
 x 3
 end
 arch afloor_black_left
 x 3
 y 1
 end
-arch personal_galleon
+arch awall_2_2_1
+x 3
+y 1
+end
+arch afloor_black_left
 x 3
 y 2
 end
@@ -216,7 +206,38 @@ end
 arch afloor_black_left
 x 4
 end
+arch pit_closed
+x 4
+connected 999
+activate_on_release 0
+end
+arch note
+name Bork the Mouse (pilotable test)
+face mouse_stoned.111
+x 4
+speed .5
+type 2
+weight 1000
+container 8000000
+client_type 25012
+move_type walk
+move_block boat
+move_allow walk
+no_pick 1
+passenger_limit 2
+arch red_key
+name Mouse soul
+name_pl Mouse souls
+slaying mouse_soul
+face Nimdoorop2.111
+no_pick 1
+end
+end
 arch afloor_black_left
+x 4
+y 1
+end
+arch awall_2_1_2
 x 4
 y 1
 end

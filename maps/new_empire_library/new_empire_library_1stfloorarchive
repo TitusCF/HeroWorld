@@ -4,7 +4,7 @@ width 67
 height 42
 msg
 Created:  2023-03-05 Titus
-Modified: 2023-07-18 Titus
+Modified: 2023-07-19 Titus
 endmsg
 end
 arch mountain5
@@ -3094,15 +3094,6 @@ arch woodfloor
 x 14
 y 9
 end
-arch magenta_key
-name Mouse soul
-slaying mouse_soula
-face Nimdoorop2.111
-x 14
-y 9
-weight 10
-no_pick 0
-end
 arch woodfloor
 x 14
 y 10
@@ -3114,6 +3105,17 @@ end
 arch woodfloor
 x 14
 y 12
+end
+arch chest_2
+x 14
+y 12
+arch red_key
+name Mouse soul
+slaying mouse_soula
+face Nimdoorop2.111
+weight 10
+no_pick 0
+end
 end
 arch woodfloor
 x 14
@@ -3571,11 +3573,11 @@ msg
 Legend of the Enchanted Mouse and the Shadowy Rodent of Darcap
 In the quaint seaside town of Darcap, nestled amidst the shores of Heroworld, a curious legend began to take root, weaving a tale of magic and mystery. The protagonist of this myth was none other than Bork the Mouse, a humble pet under the care of the esteemed curator at The New Empire Library.
 One fateful night, as the moon cast its silvery glow upon the town, a stray burst of magic found its way into the library. Drawn to the ancient tomes and mystical artifacts, the whimsical magic sought a vessel, and Bork became the unsuspecting recipient of this enchantment. As dawn broke, the librarian discovered Bork missing, setting forth rumors of an enchanted mouse among the townsfolk.
-As weeks passed, strange occurrences began to unfold in Darcap. Whispers of an enormous shadowy rodent lurking within a nearby dungeon surfaced, captivating the imagination of the townspeople. Some claimed to have glimpsed its eerie form moving with spectral grace, while others swore they felt its spectral presence brush against their skin.
+As weeks passed, strange occurrences began to unfold in Darcap. Whispers of a shadowy rodent lurking within a nearby dungeon surfaced, captivating the imagination of the townspeople. Some claimed to have glimpsed its eerie form moving with spectral grace, while others swore they felt its spectral presence brush against their skin.
 The legends intertwined, and it was said that Bork the Mouse had transformed into this mysterious shadowy rodent, now imbued with stray magic beyond mortal comprehension. Tales spread like wildfire through the town, painting both creatures as creatures of wonder and fear.
 Rumors spoke of the enchanted mouse's ethereal presence, its tiny form evading capture, as it darted between shadows like a ghostly apparition. Meanwhile, the immense shadowy rodent's elusive nature left none daring to venture into the haunted dungeon it called home.
 As time passed, the legend of Bork the Mouse and the shadowy rodent of Darcap became woven into the tapestry of Heroworld's folklore. To this day, the townsfolk share these stories around bonfires and during moonlit nights, preserving the memory of the curious events that once unfolded in their seaside town.
-Amidst the enchantment and mystery, the truth behind Bork's disappearance and the elusive rodent remains veiled in secrecy, leaving only the whispers of legend to carry on their extraordinary tale. The legend of Bork and the shadowy rodent continues to captivate the hearts and minds of the townspeople, forever etched into the history of Heroworld.
+Amidst the enchantment and mystery, the truth behind Bork's disappearance and the elusive rodent remains veiled in secrecy, leaving only the whispers of legend to carry on their extraordinary tale. The legend of Bork the shadowy rodent continues to captivate the hearts and minds of the townspeople, forever etched into the history of Heroworld.
 endmsg
 face monument.111
 x 16
@@ -3591,7 +3593,7 @@ arch altar_trigger
 name Statue of Bork the Mouse
 slaying Mouse soul
 msg
-There is a burst as your are blinded by an inpenetrable cloud of grey dust! Bork can be found laying nearby unharmed though there seems the be the slightest rise and fall on its still granite belly,
+There is a burst as you are blinded by an inpenetrable cloud of grey dust! Bork can be found laying nearby unharmed though there seems the be the slightest rise and fall on its still granite belly,
 Could it really be breathing?
 You want to touch it, what could happen?
 endmsg
@@ -7431,6 +7433,12 @@ move_type walk
 move_block boat
 move_allow walk
 passenger_limit 2
+arch red_key
+name Mouse soul
+slaying mouse_soula
+face Nimdoorop2.111
+no_pick 1
+end
 end
 arch mountain5
 x 35
@@ -9744,15 +9752,11 @@ arch grass
 x 50
 y 22
 end
-arch stwallblue_2_2_3
+arch stwallblue_2_2_1
 x 50
 y 22
 end
-arch grass
-x 50
-y 23
-end
-arch stwallblue_2_2_1
+arch mountain5
 x 50
 y 23
 end
@@ -9900,15 +9904,15 @@ arch grass
 x 51
 y 21
 end
-arch flagstone
+arch grass
 x 51
 y 22
 end
-arch grass
-x 51
-y 23
-end
 arch stwallblue_2_1_2
+x 51
+y 22
+end
+arch mountain5
 x 51
 y 23
 end
@@ -10052,15 +10056,15 @@ arch grass
 x 52
 y 21
 end
-arch flagstone
+arch grass
 x 52
 y 22
 end
-arch grass
-x 52
-y 23
-end
 arch stwallblue_2_1_2
+x 52
+y 22
+end
+arch mountain5
 x 52
 y 23
 end
@@ -10216,15 +10220,15 @@ arch grass
 x 53
 y 21
 end
-arch flagstone
+arch grass
 x 53
 y 22
 end
-arch grass
-x 53
-y 23
-end
 arch stwallblue_2_1_2
+x 53
+y 22
+end
+arch mountain5
 x 53
 y 23
 end
@@ -10380,15 +10384,15 @@ arch grass
 x 54
 y 21
 end
-arch flagstone
+arch grass
 x 54
 y 22
 end
-arch grass
-x 54
-y 23
-end
 arch stwallblue_2_1_2
+x 54
+y 22
+end
+arch mountain5
 x 54
 y 23
 end
@@ -10532,16 +10536,20 @@ arch grass
 x 55
 y 21
 end
-arch flagstone
-x 55
-y 22
-end
 arch woodfloor2
 x 55
-y 23
+y 22
 end
 arch stwallblue_4
 x 55
+y 22
+end
+arch mountain5
+x 55
+y 23
+end
+arch stwallblue_2_1_1
+x 55
 y 23
 end
 arch mountain5
@@ -10712,15 +10720,15 @@ arch grass
 x 56
 y 21
 end
-arch flagstone
+arch grass
 x 56
 y 22
 end
-arch grass
-x 56
-y 23
-end
 arch stwallblue_2_1_2
+x 56
+y 22
+end
+arch woodfloor2
 x 56
 y 23
 end
@@ -10844,7 +10852,7 @@ arch flagstone
 x 57
 y 16
 end
-arch flagstone
+arch grass
 x 57
 y 17
 end
@@ -10868,15 +10876,15 @@ arch grass_br_gr
 x 57
 y 21
 end
-arch flagstone
+arch grass
 x 57
 y 22
 end
-arch grass
-x 57
-y 23
-end
 arch stwallblue_2_1_2
+x 57
+y 22
+end
+arch woodfloor2
 x 57
 y 23
 end
@@ -11004,7 +11012,7 @@ arch flagstone
 x 58
 y 16
 end
-arch flagstone
+arch grass
 x 58
 y 17
 end
@@ -11026,7 +11034,7 @@ y 21
 end
 arch grass_br_gr
 x 58
-y 22
+y 21
 end
 arch magic_mouth
 msg
@@ -11038,23 +11046,27 @@ You make a mental note to keep an eye out for any clues or hints that might lead
 The crack may be small, but it holds the promise of ancient and forgotten knowledge, and you won't rest until you've uncovered all its secrets.
 endmsg
 x 58
-y 22
+y 21
 end
 arch grass
 x 58
-y 23
+y 22
 end
 arch check_inv
 name wall
 slaying mouse_soul
 face stwallblue_A.111
 x 58
-y 23
+y 22
 invisible 0
 move_block all
 end
 arch woodfloor2
 x 58
+y 23
+end
+arch woodfloor2
+x 58
 y 24
 end
 arch woodfloor2
@@ -11173,7 +11185,7 @@ arch flagstone
 x 59
 y 16
 end
-arch flagstone
+arch grass
 x 59
 y 17
 end
@@ -11193,15 +11205,15 @@ arch grass
 x 59
 y 21
 end
-arch flagstone
+arch grass
 x 59
 y 22
 end
-arch grass
-x 59
-y 23
-end
 arch stwallblue_2_1_2
+x 59
+y 22
+end
+arch woodfloor
 x 59
 y 23
 end
@@ -11325,11 +11337,15 @@ arch flagstone
 x 60
 y 15
 end
+arch statue_ruined
+x 60
+y 15
+end
 arch flagstone
 x 60
 y 16
 end
-arch flagstone
+arch grass
 x 60
 y 17
 end
@@ -11349,15 +11365,15 @@ arch grass
 x 60
 y 21
 end
-arch flagstone
+arch grass
 x 60
 y 22
 end
-arch grass
-x 60
-y 23
-end
 arch stwallblue_2_1_2
+x 60
+y 22
+end
+arch woodfloor2
 x 60
 y 23
 end
@@ -11485,7 +11501,7 @@ arch flagstone
 x 61
 y 16
 end
-arch flagstone
+arch grass
 x 61
 y 17
 end
@@ -11505,16 +11521,20 @@ arch grass
 x 61
 y 21
 end
-arch flagstone
-x 61
-y 22
-end
 arch woodfloor2
 x 61
-y 23
+y 22
 end
 arch stwallblue_4
 x 61
+y 22
+end
+arch mountain5
+x 61
+y 23
+end
+arch stwallblue_2_1_1
+x 61
 y 23
 end
 arch mountain5
@@ -11693,15 +11713,15 @@ arch grass
 x 62
 y 21
 end
-arch flagstone
+arch grass
 x 62
 y 22
 end
-arch grass
-x 62
-y 23
-end
 arch stwallblue_2_1_2
+x 62
+y 22
+end
+arch mountain5
 x 62
 y 23
 end
@@ -11841,15 +11861,15 @@ arch grass
 x 63
 y 21
 end
-arch flagstone
+arch grass
 x 63
 y 22
 end
-arch grass
-x 63
-y 23
-end
 arch stwallblue_2_1_2
+x 63
+y 22
+end
+arch mountain5
 x 63
 y 23
 end
@@ -11993,15 +12013,11 @@ arch grass
 x 64
 y 22
 end
-arch stwallblue_2_2_2
+arch stwallblue_2_2_4
 x 64
 y 22
 end
-arch grass
-x 64
-y 23
-end
-arch stwallblue_2_2_4
+arch mountain5
 x 64
 y 23
 end

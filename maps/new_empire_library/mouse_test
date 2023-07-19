@@ -14,7 +14,7 @@ name Bork the Mouse
 slaying Mouse soul
 msg
 You watch as the mouse soul you've placed on the statue floats peacefully into the stone.
-The stone begins to crack exposing the grey body of a mouse exactly the same size and shame except now
+The stone begins to crack and lift away into an inpenetrable cloud of grey dust, waving your arms exposes the grey body of a mouse exactly the same size and shame except now
 there seems the be the slightest rise and fall on its still granite belly,
 Could it really be breathing? You want to touch it....
 endmsg
@@ -31,11 +31,9 @@ face mouse_stoned.111
 connected 999
 lifesave 1
 activate_on_release 0
-arch sailing_galleon
+arch horse
 name Bork the Mouse
 face mouse_stoned.111
-move_type walk
-move_block none
 passenger_limit 1
 arch gray_key
 name Mouse soul
@@ -137,42 +135,6 @@ y 1
 end
 arch afloor_black_left
 x 2
-y 2
-end
-arch chest
-name Bork the Mouse
-face mouse_stoned.111
-x 2
-y 2
-speed 2
-type 2
-material 64
-move_type walk
-move_allow walk
-passenger_limit 1
-arch mouse_stoned
-name Mouse soul
-name_pl strange keys
-race keys
-slaying mouse_soul
-msg
-Your body shifts to take the form of a grey, stone mouse
-endmsg
-face Nimdoorop2.111
-type 21
-value 100
-weight 100
-client_type 810
-startequip 1
-end
-arch check_inv
-slaying mouse_soula
-last_heal 1
-move_block all
-end
-end
-arch afloor_black_left
-x 2
 y 3
 end
 arch afloor_black_left
@@ -213,47 +175,6 @@ end
 arch afloor_black_left
 x 3
 y 1
-end
-arch altar_trigger
-name Bork the Mouse
-slaying Mouse soul
-msg
-You watch as the mouse soul you've placed on the statue floats peacefully into the stone.
-The stone begins to crack exposing the grey body of a mouse exactly the same size and shame except now
-there seems the be the slightest rise and fall on its still granite belly,
-Could it really be breathing? You want to touch it....
-endmsg
-other_arch rubble
-face mouse_stoned.111
-animation explosion
-food 1
-x 3
-y 2
-last_sp 1
-connected 999
-changing 1
-end
-arch creator
-face mouse_stoned.111
-x 3
-y 2
-connected 999
-lifesave 1
-activate_on_release 0
-arch sailing_galleon
-name Bork the Mouse
-face mouse_stoned.111
-move_type walk
-move_block none
-passenger_limit 1
-arch gray_key
-name Mouse soul
-name_pl Mouse souls
-slaying mouse_soul
-face Nimdoorop2.111
-no_pick 1
-end
-end
 end
 arch afloor_black_left
 x 3

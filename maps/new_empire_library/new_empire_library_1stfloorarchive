@@ -1793,11 +1793,6 @@ arch woodfloor
 x 8
 y 10
 end
-arch chest_2
-slaying mouse_soul
-x 8
-y 10
-end
 arch woodfloor
 x 8
 y 11
@@ -7422,30 +7417,20 @@ y 9
 connected 999
 activate_on_release 0
 end
-arch note
-name Bork the Mouse (pilotable test)
-other_arch mouse_stoned
-face mouse_stoned.111
+arch mouse_stoned
+name Bork the Mouse (Is it breathing?)
 x 35
 y 9
 speed 0.5
 type 2
+material 2304
 weight 1000
 container 8000000
 client_type 25012
 move_type walk
 move_block boat
 move_allow walk
-no_pick 1
-changing 1
 passenger_limit 2
-arch red_key
-name Mouse soul
-name_pl Mouse souls
-slaying mouse_soul
-face Nimdoorop2.111
-no_pick 1
-end
 end
 arch mountain5
 x 35

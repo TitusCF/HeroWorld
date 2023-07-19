@@ -105,34 +105,35 @@ x 2
 y 2
 end
 arch chest
-name Statue of Bork the Mouse
-slaying mouse_soula
-other_arch explosion
+name Bork the Mouse
 face mouse_stoned.111
 x 2
 y 2
-randomitems none
-no_pick 1
-changing 1
+speed 2
+type 2
+material 64
+move_type walk
+move_allow walk
+passenger_limit 1
 arch mouse_stoned
-name Bork the Mouse
+name Mouse soul
+name_pl strange keys
+race keys
+slaying mouse_soul
 msg
 Your body shifts to take the form of a grey, stone mouse
 endmsg
-speed 2
-type 2
-container 5000000
-move_type walk
-move_allow walk
-no_pick 0
-passenger_limit 1
-arch magenta_key
-name Mouse soul
-slaying mouse_soul
 face Nimdoorop2.111
-no_pick 1
+type 21
+value 100
+weight 100
+client_type 810
 startequip 1
 end
+arch check_inv
+slaying mouse_soula
+last_heal 1
+move_block all
 end
 end
 arch afloor_black_left

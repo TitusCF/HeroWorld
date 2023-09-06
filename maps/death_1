@@ -108,7 +108,7 @@ x 1
 y 1
 move_block swim boat
 no_magic 1
-damned 1
+damned 0
 is_wooded 0
 end
 arch creator
@@ -116,12 +116,11 @@ x 1
 y 1
 connected 1
 activate_on_release 0
-arch scroll_new
-other_arch rose_red
+arch balm_generic
 level 100
+attacktype 65536
 no_pick 1
-identified 1
-changing 1
+on_use_yield rose_red
 arch spell_word_of_recall
 end
 end

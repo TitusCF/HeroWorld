@@ -107,6 +107,7 @@ end
 arch creator
 x 1
 y 1
+connected 1
 activate_on_release 0
 arch scroll_new
 other_arch rose_red
@@ -122,6 +123,7 @@ end
 arch spikes_closed
 x 1
 y 1
+connected 1
 activate_on_release 0
 end
 arch bosgrass15
@@ -151,6 +153,14 @@ x 1
 y 3
 connected 1
 activate_on_release 0
+end
+arch mover_2
+hp 1
+x 1
+y 3
+level 1
+attacktype 1
+lifesave 1
 end
 arch bosgrass15
 x 1
@@ -344,6 +354,17 @@ end
 arch bosgrass10
 x 3
 y 4
+end
+arch creator
+x 3
+y 4
+connected 1
+activate_on_release 0
+arch titus_flower
+no_pick 1
+identified 1
+startequip 1
+end
 end
 arch bosgrass15
 x 3

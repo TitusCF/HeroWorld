@@ -9,7 +9,7 @@ msg
 Creator: b.t.
 Email: thomas@astro.psu.edu
 Date: Sun Apr 28 04:45:42 1996
-Modified: 2023-03-10 Titus
+Modified: 2023-09-08 Titus
 endmsg
 end
 arch woodfloor
@@ -1993,17 +1993,27 @@ end
 arch sage
 name Holtsapple the Sage
 msg
-@match Hi|hi|hello
-Err... well welcome (*harumph*). Please
-try to keep quiet in the library.
-@match door|gate|enter|entrance|help
-Whats the matter, want to get in, eh?
-Either get a library card or pay a
-fair one-time entrance fee (drop the
-$$$ on the floor behind me).
+@match hello,hi
+Librarian: Ah, greetings! Welcome to the Classic Scorn Library, adventurer. We're proud to be an extension of the legendary New Empire Library, where history and knowledge converge.
+By the way, I'd recommend purchasing a library card if you plan to visit often. It'll grant you access to our entire collection and save you from having to purchase each scroll or book individually.
+
+@match library
+Indeed, you've found yourself in the heart of knowledge. Our library holds the secrets of Heroworld's history, just like its predecessor in the New Empire.
+
+@match zero-point
+You've heard of our new zero-point storage system, I see. It's a revolutionary way to catalog and store books, making our collection more accessible than ever. You can even purchase as many blank scrolls, books, or implements of writing as you like right here in our shop.
+
+@match communal
+Our communal section is where adventurers like yourself can contribute their discoveries. If you find any rare tomes or ancient scrolls, please consider adding them to our collection to honor the spirit of the New Empire Library.
+
+@match contribute
+Excellent! Your contributions will help preserve knowledge for generations to come. You can leave your findings with our staff, and we'll ensure they're properly cataloged, much like they did in the New Empire Library.
+
+@match books
+Ah, books are the windows to the past, aren't they? Feel free to explore our shelves and lose yourself in the tales of Heroworld, as so many have done in the New Empire Library before.
+
 @match *
-I'm too busy with my research to
-answer your queries.
+Should you need any assistance or have questions, don't hesitate to ask. Enjoy your time in our library, dear adventurer, and remember the legacy of the New Empire Library.
 endmsg
 x 15
 y 12
@@ -2687,25 +2697,17 @@ x 20
 y 1
 end
 arch book_red
-name Scorn's Temple of Gorokh
+name The Enigmatic Disappearance of the Temple of Gorokh
 msg
-In the city of Scorn,
-whispers of the temple to the DemiGod Gorokh echoed through the streets like the chill of the winter wind. Tales of the temple's secret entrance and the treacherous caves that lay beyond sent shivers down the spines of even the bravest warriors.
-
-It was said that those who ventured into the depths of the temple would face a hundred trials, each more perilous than the last. And at the end of the hundredth cave, Gorokh's avatar awaited, a being of immense power and darkness.
-
-But it was not Gorokh's avatar alone that struck fear into the hearts of the people. Rumors swirled of a secret room, hidden deep within the temple's caverns, where Gorokh kept his most powerful artifacts. And to enter this room, one needed the cloak of the DemiGod himself.
-
-Many had tried to find the cloak, but none had returned. Some said they had been consumed by the darkness that permeated the temple's halls, while others claimed that Gorokh himself had struck them down.
-
-Despite the dangers, a select few continued to seek out the cloak, driven by the promise of untold power and riches. But as the years passed, the number of those who dared to enter the temple dwindled, and eventually, the whispers faded away.
-
-But in the stillness of the night, when the moon was hidden behind the clouds, some still claimed to hear the whispers of the temple, beckoning them to venture forth and uncover its secrets. And though they knew the dangers that awaited them, they could not resist the call of the darkness that lurked within.
+The Enigmatic Disappearance of the Temple of Gorokh -
+In the context of Heroworld's historical records, the legend surrounding the Temple of Gorokh's disappearance from the City of Scorn is regarded as a manifestation of the Builders' influence. Within the scholarly domain of the Department of Interdimensional Studies, an exhaustive examination of this phenomenon has been conducted, culminating in a comprehensive narrative that has captivated the scholarly and adventurous communities alike.
+Titus, the esteemed architect of Heroworld, was notably conscious of the potential hazards concealed beneath the surface of her creation. The City of Scorn, a prominent bastion of civilization within Heroworld, concealed an obscured peril that weighed upon her ethical conscience. Below the resplendent Temple of Gorokh, a network of crypts and subterranean passages harbored malevolent entities and time-honored secrets. This subterranean labyrinth held the potential to ensnare those who ventured within, potentially instigating perilous consequences within Heroworld.
+Demonstrating her unparalleled sagacity, Titus recognized the necessity for decisive action. Leveraging her omnipotent abilities as a Builder?a being with the capacity to manipulate realities?she committed herself to rectifying this looming peril. Channeling her mastery over Heroworld's fundamental fabric, she embarked on a momentous undertaking. Guided by her unique vision and sense of purpose, Titus harnessed her creative prowess to orchestrate a transformative feat.
+Her exceptional aptitude was showcased through her relocation of the Temple of Gorokh, along with its labyrinthine catacombs, from its previously conspicuous position at the core of Scorn. Executing a multidimensional shift of unprecedented magnitude, she transposed the temple and its concealed depths to an entirely distinct realm, utterly detached from the realm of the living. This newly designated realm, recognized as the Cemetery of the Death dimension, subsequently became the secluded haven for the Temple of Gorokh.
+This legend, revered and oftentimes communicated in hushed tones among scholars and seekers of arcane wisdom, serves as an exemplification of the intricate relationship between Builders and the dimensions they command. The fate of the Temple of Gorokh remains a poignant reminder of the profound ramifications that Builders can invoke. As the Department of Interdimensional Studies persistently pursues its endeavor to fathom the enigmas concealed within Heroworld, this legend endures as a wellspring of inspiration and reverence?a testament to the enduring authority vested in the Builders.
 endmsg
 x 20
 y 1
-no_pick 1
-identified 1
 end
 arch dungeon_magic
 x 20
@@ -3589,12 +3591,6 @@ end
 arch bench_2_1_2
 x 25
 y 1
-end
-arch book_read
-x 25
-y 1
-no_pick 1
-identified 1
 end
 arch woodfloor
 x 25

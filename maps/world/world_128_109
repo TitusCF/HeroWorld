@@ -5,7 +5,7 @@ region wolfsburg
 width 50
 height 50
 msg
-Modified: 2020-11-30 Titus
+Modified: 2026-01-12 yardc
 endmsg
 outdoor 1
 tile_path_1 world_128_108
@@ -5583,10 +5583,6 @@ arch sea1
 x 22
 y 23
 end
-arch pier_1_4
-x 22
-y 23
-end
 arch sea
 x 22
 y 24
@@ -5594,16 +5590,6 @@ end
 arch sea1
 x 22
 y 25
-end
-arch longship
-name Wolfsburg Longship
-x 22
-y 25
-speed 0.5
-type 2
-container 10000000
-move_type boat
-passenger_limit 2
 end
 arch sea1
 x 22
@@ -5833,25 +5819,47 @@ arch sea1
 x 23
 y 23
 end
-arch pier_2_1_2
-x 23
-y 23
-end
 arch sea
 x 23
 y 24
 end
-arch sea1
+arch dungeon_magic
 x 23
 y 25
 end
 arch sea1
 x 23
+y 25
+end
+arch creator
+x 23
+y 25
+connected 20394851
+lifesave 1
+activate_on_release 0
+arch personal_galleon
+no_pick 1
+private_transport_cabin_entrance_x 18
+private_transport_cabin_entrance_y 4
+private_transport_cabin_exit_x 19
+end
+end
+arch sea1
+x 23
 y 26
 end
 arch pier_2_1_2
 x 23
 y 26
+end
+arch altar_trigger
+name Purchase a Ship here (2 Imperials)
+slaying imperial
+food 2
+x 23
+y 26
+connected 20394851
+activate_on_release 0
 end
 arch sea
 x 23
@@ -6090,7 +6098,7 @@ arch sea1
 x 24
 y 23
 end
-arch pier_4
+arch pier_2_1_1
 x 24
 y 23
 end
@@ -6344,28 +6352,23 @@ arch sea1
 x 25
 y 23
 end
-arch pier_2_1_2
-x 25
-y 23
-end
 arch sea1
 x 25
 y 24
-end
-arch longship
-name Wolfsburg Longship
-x 25
-y 24
-speed 0.5
-type 2
-container 10000000
-move_type boat
-passenger_limit 2
 end
 arch sea
 x 25
 y 25
 end
+arch creator
+x 25
+y 25
+connected 20394852
+lifesave 1
+activate_on_release 0
+arch personal_galleon
+end
+end
 arch sea1
 x 25
 y 26
@@ -6373,6 +6376,19 @@ end
 arch pier_2_1_2
 x 25
 y 26
+end
+arch dungeon_magic
+x 25
+y 26
+end
+arch altar_trigger
+name Purchase a Ship here (2 Imperials)
+slaying imperial
+food 2
+x 25
+y 26
+connected 20394852
+activate_on_release 0
 end
 arch sea
 x 25
@@ -6597,10 +6613,6 @@ x 26
 y 22
 end
 arch sea1
-x 26
-y 23
-end
-arch pier_1_3
 x 26
 y 23
 end

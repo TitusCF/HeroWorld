@@ -1,13 +1,14 @@
 arch map
 name Weapons department
+fixed_resettime 1
 region Wolfsburg
+width 17
+height 13
 msg
 Creator: CF Java Map Editor
 Date:    9/18/2005
+Modified: 2026-01-11 yardc
 endmsg
-width 17
-height 13
-fixed_resettime 1
 tile_path_3 dept_store_misc
 tile_path_4 dept_store_armour
 end
@@ -160,27 +161,27 @@ end
 arch awall_2_1_2
 x 2
 end
-arch shop_weapon
+arch shop_empty
 x 2
 y 1
 end
-arch shop_weapon
+arch shop_empty
 x 2
 y 2
 end
-arch shop_weapon
+arch shop_empty
 x 2
 y 3
 end
-arch shop_weapon
+arch shop_empty
 x 2
 y 4
 end
-arch shop_weapon
+arch shop_empty
 x 2
 y 5
 end
-arch shop_weapon
+arch shop_empty
 x 2
 y 6
 end
@@ -197,6 +198,14 @@ x 2
 y 8
 end
 arch woodfloor
+x 2
+y 9
+end
+arch shop_empty
+x 2
+y 9
+end
+arch menu
 x 2
 y 9
 end
@@ -222,27 +231,27 @@ end
 arch awall_2_1_2
 x 3
 end
-arch shop_weapon
+arch shop_empty
 x 3
 y 1
 end
-arch shop_weapon
+arch shop_empty
 x 3
 y 2
 end
-arch shop_weapon
+arch shop_empty
 x 3
 y 3
 end
-arch shop_weapon
+arch shop_empty
 x 3
 y 4
 end
-arch shop_weapon
+arch shop_empty
 x 3
 y 5
 end
-arch shop_weapon
+arch shop_empty
 x 3
 y 6
 end
@@ -292,27 +301,43 @@ end
 arch awall_2_1_2
 x 4
 end
-arch shop_weapon
+arch shop_empty
 x 4
 y 1
 end
-arch shop_weapon
+arch shop_empty
 x 4
 y 2
 end
-arch shop_weapon
+arch swall_1_1
+x 4
+y 2
+end
+arch shop_empty
 x 4
 y 3
 end
-arch shop_weapon
+arch swall_2_1_1
+x 4
+y 3
+end
+arch shop_empty
 x 4
 y 4
 end
-arch shop_weapon
+arch swall_2_1_1
+x 4
+y 4
+end
+arch shop_empty
 x 4
 y 5
 end
-arch shop_weapon
+arch swall_1_2
+x 4
+y 5
+end
+arch shop_empty
 x 4
 y 6
 end
@@ -348,10 +373,6 @@ arch shop_empty
 x 4
 y 11
 end
-arch shop_mat
-x 4
-y 11
-end
 arch woodfloor
 x 4
 y 12
@@ -366,27 +387,27 @@ end
 arch awall_2_1_2
 x 5
 end
-arch shop_weapon
+arch shop_empty
 x 5
 y 1
 end
-arch shop_weapon
+arch shop_empty
 x 5
 y 2
 end
-arch shop_weapon
+arch shop_empty
 x 5
 y 3
 end
-arch shop_weapon
+arch shop_empty
 x 5
 y 4
 end
-arch shop_weapon
+arch shop_empty
 x 5
 y 5
 end
-arch shop_weapon
+arch shop_empty
 x 5
 y 6
 end
@@ -402,11 +423,11 @@ arch awall_2_2_3
 x 5
 y 8
 end
-arch woodfloor
+arch shop_empty
 x 5
 y 9
 end
-arch awall_2_1_1
+arch awall_3_2
 x 5
 y 9
 end
@@ -422,10 +443,6 @@ arch shop_empty
 x 5
 y 11
 end
-arch menu
-x 5
-y 11
-end
 arch woodfloor
 x 5
 y 12
@@ -440,27 +457,31 @@ end
 arch awall_2_1_2
 x 6
 end
-arch shop_weapon
+arch shop_empty
 x 6
 y 1
 end
-arch shop_weapon
+arch shop_empty
+face redrugfloor1.111
 x 6
 y 2
 end
-arch shop_weapon
+arch shop_empty
+face redrugfloor1.111
 x 6
 y 3
 end
-arch shop_weapon
+arch shop_empty
+face redrugfloor1.111
 x 6
 y 4
 end
-arch shop_weapon
+arch shop_empty
+face redrugfloor1.111
 x 6
 y 5
 end
-arch shop_weapon
+arch shop_empty
 x 6
 y 6
 end
@@ -472,7 +493,15 @@ arch shop_empty
 x 6
 y 8
 end
+arch shop_mat
+x 6
+y 8
+end
 arch shop_empty
+x 6
+y 9
+end
+arch awall_2_1_2
 x 6
 y 9
 end
@@ -480,7 +509,7 @@ arch shop_empty
 x 6
 y 10
 end
-arch shop_empty
+arch redrugfloor1
 x 6
 y 11
 end
@@ -498,47 +527,51 @@ end
 arch awall_2_1_2
 x 7
 end
-arch shop_weapon
+arch shop_empty
 x 7
 y 1
 end
-arch shop_weapon
+arch shop_empty
 x 7
 y 2
 end
-arch shop_weapon
+arch shop_empty
 x 7
 y 3
 end
-arch shop_weapon
+arch shop_empty
 x 7
 y 4
 end
-arch shop_weapon
+arch shop_empty
 x 7
 y 5
 end
-arch shop_weapon
+arch shop_empty
 x 7
 y 6
 end
-arch shop_weapon
+arch shop_empty
 x 7
 y 7
 end
-arch shop_weapon
+arch shop_empty
 x 7
 y 8
 end
-arch shop_weapon
+arch shop_empty
 x 7
 y 9
 end
-arch shop_weapon
+arch awall_2_1_2
+x 7
+y 9
+end
+arch shop_empty
 x 7
 y 10
 end
-arch shop_weapon
+arch shop_empty
 x 7
 y 11
 end
@@ -556,47 +589,67 @@ end
 arch awall_2_1_2
 x 8
 end
-arch shop_weapon
+arch shop_empty
 x 8
 y 1
 end
-arch shop_weapon
+arch shop_empty
 x 8
 y 2
 end
-arch shop_weapon
+arch swall_1_1
+x 8
+y 2
+end
+arch shop_empty
 x 8
 y 3
 end
-arch shop_weapon
+arch swall_2_1_1
+x 8
+y 3
+end
+arch shop_empty
 x 8
 y 4
 end
-arch shop_weapon
+arch swall_2_1_1
+x 8
+y 4
+end
+arch shop_empty
 x 8
 y 5
 end
-arch shop_weapon
+arch swall_1_2
+x 8
+y 5
+end
+arch shop_empty
 x 8
 y 6
 end
-arch shop_weapon
+arch shop_empty
 x 8
 y 7
 end
-arch shop_weapon
+arch shop_empty
 x 8
 y 8
 end
-arch shop_weapon
+arch shop_empty
 x 8
 y 9
 end
-arch shop_weapon
+arch awall_2_1_2
+x 8
+y 9
+end
+arch shop_empty
 x 8
 y 10
 end
-arch shop_weapon
+arch shop_empty
 x 8
 y 11
 end
@@ -614,47 +667,51 @@ end
 arch awall_2_1_2
 x 9
 end
-arch shop_weapon
+arch shop_empty
 x 9
 y 1
 end
-arch shop_weapon
+arch shop_empty
 x 9
 y 2
 end
-arch shop_weapon
+arch shop_empty
 x 9
 y 3
 end
-arch shop_weapon
+arch shop_empty
 x 9
 y 4
 end
-arch shop_weapon
+arch shop_empty
 x 9
 y 5
 end
-arch shop_weapon
+arch shop_empty
 x 9
 y 6
 end
-arch shop_weapon
+arch shop_empty
 x 9
 y 7
 end
-arch shop_weapon
+arch shop_empty
 x 9
 y 8
 end
-arch shop_weapon
+arch shop_empty
 x 9
 y 9
 end
-arch shop_weapon
+arch awall_2_1_2
+x 9
+y 9
+end
+arch shop_empty
 x 9
 y 10
 end
-arch shop_weapon
+arch shop_empty
 x 9
 y 11
 end
@@ -672,47 +729,56 @@ end
 arch awall_2_1_2
 x 10
 end
-arch shop_weapon
+arch shop_empty
 x 10
 y 1
 end
-arch shop_weapon
+arch shop_empty
+face redrugfloor1.111
 x 10
 y 2
 end
-arch shop_weapon
+arch shop_empty
+face redrugfloor1.111
 x 10
 y 3
 end
-arch shop_weapon
+arch shop_empty
+face redrugfloor1.111
 x 10
 y 4
 end
-arch shop_weapon
+arch shop_empty
+face redrugfloor1.111
 x 10
 y 5
 end
-arch shop_weapon
+arch shop_empty
+face redrugfloor1.111
 x 10
 y 6
 end
-arch shop_weapon
+arch shop_empty
 x 10
 y 7
 end
-arch shop_weapon
+arch shop_empty
 x 10
 y 8
 end
-arch shop_weapon
+arch shop_empty
 x 10
 y 9
 end
-arch shop_weapon
+arch awall_2_1_2
+x 10
+y 9
+end
+arch shop_empty
 x 10
 y 10
 end
-arch shop_weapon
+arch shop_empty
 x 10
 y 11
 end
@@ -730,47 +796,51 @@ end
 arch awall_2_1_2
 x 11
 end
-arch shop_weapon
+arch shop_empty
 x 11
 y 1
 end
-arch shop_weapon
+arch shop_empty
 x 11
 y 2
 end
-arch shop_weapon
+arch shop_empty
 x 11
 y 3
 end
-arch shop_weapon
+arch shop_empty
 x 11
 y 4
 end
-arch shop_weapon
+arch shop_empty
 x 11
 y 5
 end
-arch shop_weapon
+arch shop_empty
 x 11
 y 6
 end
-arch shop_weapon
+arch shop_empty
 x 11
 y 7
 end
-arch shop_weapon
+arch shop_empty
 x 11
 y 8
 end
-arch shop_weapon
+arch shop_empty
 x 11
 y 9
 end
-arch shop_weapon
+arch awall_2_1_2
+x 11
+y 9
+end
+arch shop_empty
 x 11
 y 10
 end
-arch shop_weapon
+arch shop_empty
 x 11
 y 11
 end
@@ -788,47 +858,75 @@ end
 arch awall_2_1_2
 x 12
 end
-arch shop_weapon
+arch shop_empty
 x 12
 y 1
 end
-arch shop_weapon
+arch shop_empty
 x 12
 y 2
 end
-arch shop_weapon
+arch swall_1_1
+x 12
+y 2
+end
+arch shop_empty
 x 12
 y 3
 end
-arch shop_weapon
+arch swall_2_1_1
+x 12
+y 3
+end
+arch shop_empty
 x 12
 y 4
 end
-arch shop_weapon
+arch swall_2_1_1
+x 12
+y 4
+end
+arch shop_empty
 x 12
 y 5
 end
-arch shop_weapon
+arch swall_2_1_1
+x 12
+y 5
+end
+arch shop_empty
 x 12
 y 6
 end
-arch shop_weapon
+arch swall_2_1_1
+x 12
+y 6
+end
+arch shop_empty
 x 12
 y 7
 end
-arch shop_weapon
+arch swall_1_2
+x 12
+y 7
+end
+arch shop_empty
 x 12
 y 8
 end
-arch shop_weapon
+arch shop_empty
 x 12
 y 9
 end
-arch shop_weapon
+arch awall_2_1_2
+x 12
+y 9
+end
+arch shop_empty
 x 12
 y 10
 end
-arch shop_weapon
+arch shop_empty
 x 12
 y 11
 end
@@ -846,47 +944,51 @@ end
 arch awall_2_1_2
 x 13
 end
-arch shop_weapon
+arch shop_empty
 x 13
 y 1
 end
-arch shop_weapon
+arch shop_empty
 x 13
 y 2
 end
-arch shop_weapon
+arch shop_empty
 x 13
 y 3
 end
-arch shop_weapon
+arch shop_empty
 x 13
 y 4
 end
-arch shop_weapon
+arch shop_empty
 x 13
 y 5
 end
-arch shop_weapon
+arch shop_empty
 x 13
 y 6
 end
-arch shop_weapon
+arch shop_empty
 x 13
 y 7
 end
-arch shop_weapon
+arch shop_empty
 x 13
 y 8
 end
-arch shop_weapon
+arch shop_empty
 x 13
 y 9
 end
-arch shop_weapon
+arch awall_2_1_2
+x 13
+y 9
+end
+arch shop_empty
 x 13
 y 10
 end
-arch shop_weapon
+arch shop_empty
 x 13
 y 11
 end
@@ -904,47 +1006,56 @@ end
 arch awall_2_1_2
 x 14
 end
-arch shop_weapon
+arch shop_empty
 x 14
 y 1
 end
-arch shop_weapon
+arch shop_empty
+face redrugfloor1.111
 x 14
 y 2
 end
-arch shop_weapon
+arch shop_empty
+face redrugfloor1.111
 x 14
 y 3
 end
-arch shop_weapon
+arch shop_empty
+face redrugfloor1.111
 x 14
 y 4
 end
-arch shop_weapon
+arch shop_empty
+face redrugfloor1.111
 x 14
 y 5
 end
-arch shop_weapon
+arch shop_empty
+face redrugfloor1.111
 x 14
 y 6
 end
-arch shop_weapon
+arch shop_empty
 x 14
 y 7
 end
-arch shop_weapon
+arch shop_empty
 x 14
 y 8
 end
-arch shop_weapon
+arch shop_empty
 x 14
 y 9
 end
-arch shop_weapon
+arch awall_2_1_2
+x 14
+y 9
+end
+arch shop_empty
 x 14
 y 10
 end
-arch shop_weapon
+arch shop_empty
 x 14
 y 11
 end
@@ -962,47 +1073,51 @@ end
 arch awall_2_1_2
 x 15
 end
-arch shop_weapon
+arch shop_empty
 x 15
 y 1
 end
-arch shop_weapon
+arch shop_empty
 x 15
 y 2
 end
-arch shop_weapon
+arch shop_empty
 x 15
 y 3
 end
-arch shop_weapon
+arch shop_empty
 x 15
 y 4
 end
-arch shop_weapon
+arch shop_empty
 x 15
 y 5
 end
-arch shop_weapon
+arch shop_empty
 x 15
 y 6
 end
-arch shop_weapon
+arch shop_empty
 x 15
 y 7
 end
-arch shop_weapon
+arch shop_empty
 x 15
 y 8
 end
-arch shop_weapon
+arch shop_empty
 x 15
 y 9
 end
-arch shop_weapon
+arch awall_2_1_2
+x 15
+y 9
+end
+arch shop_empty
 x 15
 y 10
 end
-arch shop_weapon
+arch shop_empty
 x 15
 y 11
 end
@@ -1088,7 +1203,7 @@ arch shop_empty
 x 16
 y 9
 end
-arch awall_2_1_1
+arch awall_3_4
 x 16
 y 9
 end

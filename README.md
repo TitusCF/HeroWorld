@@ -20,6 +20,7 @@ So what are you waiting for? Join us in HeroWorld and become a part of this epic
 </br>
 What's new so far? </br>
 </br>
+Artificers Expansion Pack is HERE! Join Heroworld today!</br>
 Quality of Life: </br>
 - Unpaid-Cannot be destroyed </br>
 - Player 'follow' command </br>
@@ -93,6 +94,5 @@ Cartography (In production) </br>
 COMING SOON </br>
 Esoteric Architecture </br>
 Upgraded Animation sets for Player Characters (WIP) </br>
-Artificers Expansion Pack (WIP, nearly complete!) </br>
 Apotheosis Expansion Pack </br>
 

@@ -443,11 +443,43 @@ x 1
 y 17
 elevation -2256
 end
-arch sea1
+arch dungeon_magic
 x 1
 y 18
 end
-arch sea1
+arch sea
+x 1
+y 18
+elevation -2256
+end
+arch pier_1_1
+x 1
+y 18
+end
+arch altar_trigger
+name Purchase a Ship here (2 Imperials)
+slaying imperial
+food 2
+x 1
+y 18
+connected 20394852
+activate_on_release 0
+end
+arch magic_banned
+x 1
+y 19
+end
+arch dungeon_magic
+x 1
+y 19
+end
+arch sea
+x 1
+y 19
+elevation -2256
+move_block boat
+end
+arch pier_3_2
 x 1
 y 19
 end
@@ -455,15 +487,25 @@ arch dungeon_magic
 x 1
 y 20
 end
-arch sea1
+arch magic_banned
 x 1
 y 20
 end
-arch magic_banned
+arch sea
+x 1
+y 20
+elevation -2256
+move_block boat
+end
+arch pier_2_1_1
+x 1
+y 20
+end
+arch dungeon_magic
 x 1
 y 21
 end
-arch dungeon_magic
+arch magic_banned
 x 1
 y 21
 end
@@ -473,7 +515,7 @@ y 21
 elevation -2256
 move_block boat
 end
-arch pier_2_2_3
+arch pier_3_4
 x 1
 y 21
 end
@@ -881,7 +923,34 @@ arch sea1
 x 2
 y 18
 end
-arch sea1
+arch creator
+x 2
+y 18
+connected 20394852
+lifesave 1
+activate_on_release 0
+arch personal_galleon
+no_pick 1
+private_transport_cabin_entrance_x 18
+private_transport_cabin_entrance_y 4
+private_transport_cabin_exit_x 19
+end
+end
+arch magic_banned
+x 2
+y 19
+end
+arch dungeon_magic
+x 2
+y 19
+end
+arch sea
+x 2
+y 19
+elevation -2256
+move_block boat
+end
+arch pier_1_3
 x 2
 y 19
 end
@@ -889,13 +958,19 @@ arch dungeon_magic
 x 2
 y 20
 end
-arch sea1
+arch sea
 x 2
 y 20
+elevation -2256
 end
-arch sea1
+arch dungeon_magic
 x 2
 y 21
+end
+arch sea
+x 2
+y 21
+elevation -2256
 end
 arch dungeon_magic
 x 2
@@ -4109,21 +4184,50 @@ arch sea1
 x 10
 y 19
 end
-arch sea1
+arch dungeon_magic
 x 10
 y 20
 end
-arch sea1
+arch sea
+x 10
+y 20
+elevation -2256
+end
+arch dungeon_magic
 x 10
 y 21
 end
-arch sea1
+arch sea
+x 10
+y 21
+elevation -2256
+end
+arch dungeon_magic
 x 10
 y 22
 end
-arch sea1
+arch magic_banned
+x 10
+y 22
+end
+arch sea
+x 10
+y 22
+elevation -2256
+move_block boat
+end
+arch pier_1_4
+x 10
+y 22
+end
+arch dungeon_magic
 x 10
 y 23
+end
+arch sea
+x 10
+y 23
+elevation -2256
 end
 arch magic_banned
 x 10
@@ -4462,31 +4566,120 @@ x 11
 y 16
 elevation -2256
 end
-arch sea1
+arch dungeon_magic
 x 11
 y 17
 end
 arch sea1
 x 11
+y 17
+end
+arch creator
+x 11
+y 17
+connected 20394851
+lifesave 1
+activate_on_release 0
+arch personal_galleon
+no_pick 1
+private_transport_cabin_entrance_x 18
+private_transport_cabin_entrance_y 4
+private_transport_cabin_exit_x 19
+end
+end
+arch dungeon_magic
+x 11
 y 18
 end
 arch sea1
+x 11
+y 18
+end
+arch pier_2_2_2
+x 11
+y 18
+end
+arch dungeon_magic
 x 11
 y 19
 end
 arch sea1
 x 11
+y 19
+end
+arch pier_3_2
+x 11
+y 19
+end
+arch magic_banned
+x 11
 y 20
 end
-arch sea1
+arch dungeon_magic
+x 11
+y 20
+end
+arch sea
+x 11
+y 20
+elevation -2256
+move_block boat
+end
+arch pier_2_1_1
+x 11
+y 20
+end
+arch dungeon_magic
 x 11
 y 21
 end
-arch sea1
+arch magic_banned
+x 11
+y 21
+end
+arch sea
+x 11
+y 21
+elevation -2256
+move_block boat
+end
+arch pier_3_2
+x 11
+y 21
+end
+arch dungeon_magic
 x 11
 y 22
 end
-arch sea1
+arch magic_banned
+x 11
+y 22
+end
+arch sea
+x 11
+y 22
+elevation -2256
+move_block boat
+end
+arch pier_3_4
+x 11
+y 22
+end
+arch magic_banned
+x 11
+y 23
+end
+arch dungeon_magic
+x 11
+y 23
+end
+arch sea
+x 11
+y 23
+elevation -2256
+move_block boat
+end
+arch pier_2_1_1
 x 11
 y 23
 end
@@ -4498,7 +4691,7 @@ arch dungeon_magic
 x 11
 y 24
 end
-arch cobblestones2
+arch cobblestones
 x 11
 y 24
 end
@@ -4819,33 +5012,87 @@ x 12
 y 16
 elevation -2256
 end
-arch sea1
+arch sea
 x 12
 y 17
+end
+arch pier_1_1
+x 12
+y 17
+end
+arch altar_trigger
+name Purchase a Ship here (2 Imperials)
+slaying imperial
+food 2
+x 12
+y 17
+connected 20394851
+activate_on_release 0
 end
 arch sea1
 x 12
 y 18
 end
-arch sea1
+arch pier_3_4
+x 12
+y 18
+end
+arch dungeon_magic
 x 12
 y 19
 end
 arch sea1
 x 12
+y 19
+end
+arch pier_2_2_4
+x 12
+y 19
+end
+arch dungeon_magic
+x 12
 y 20
 end
-arch sea1
+arch sea
+x 12
+y 20
+elevation -2256
+end
+arch dungeon_magic
 x 12
 y 21
 end
-arch sea1
+arch magic_banned
+x 12
+y 21
+end
+arch sea
+x 12
+y 21
+elevation -2256
+move_block boat
+end
+arch pier_1_3
+x 12
+y 21
+end
+arch dungeon_magic
 x 12
 y 22
 end
-arch sea1
+arch sea
+x 12
+y 22
+elevation -2256
+end
+arch dungeon_magic
 x 12
 y 23
+end
+arch sea
+x 12
+y 23
+elevation -2256
 end
 arch magic_banned
 x 12
@@ -4963,14 +5210,6 @@ arch grass
 x 12
 y 34
 end
-arch fort
-name dragon guild
-slaying /scorn/misc/dragon_guild
-hp 7
-sp 15
-x 12
-y 34
-end
 arch dungeon_magic
 x 12
 y 35
@@ -4979,6 +5218,15 @@ arch grass
 x 12
 y 35
 tag scorn_dragon_guild_exit
+end
+arch sign
+msg
+The Dragon Guild has relocated to Dragon Island.
+
+Down with the Scornian Empire!
+endmsg
+x 12
+y 35
 end
 arch dungeon_magic
 x 12

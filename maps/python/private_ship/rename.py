@@ -175,7 +175,7 @@ def get_scroll_custom_name(scroll):
 
     custom_name is set with the rename command
     """
-    return scroll.CustomName
+    return scroll.ReadKey("custom_name")
 
 
 def get_transport_name(scroll_name, player_name):

@@ -161,8 +161,8 @@ def use_scroll(player, scroll):
     # Remove the player and put him back on the transport so that the
     # added cabin becomes visible
     transport = get_player_transport(player)
-    transport.Apply(player, 0)
-    transport.Apply(player, 0)
+    transport.Apply(player, 19)
+    transport.Apply(player, 4)
 
     # Create keys and add them to player inventory
     create_cabin_keys(player, scroll, id_)

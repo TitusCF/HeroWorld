@@ -75,14 +75,14 @@ def use_door(player, door):
 
     # get cabin map and entrance
     cabin_map = door.Slaying
-    cabin_x = door.HP
-    cabin_y = door.SP
     # prepare map
     map_ = Crossfire.ReadyMap(cabin_map)
 
     # start tracking transport and save tracking ID to internal cabin door
     transport_tracking_id = tracking_system.add_tracker(transport)
     internal_cabin_door = find_internal_cabin_door(transport, map_)
+    if internal_cabin_door is None:
+        return
     internal_cabin_door.WriteKey(
         INTERNAL_CABIN_DOOR_ATTR_TRACKING_ID,
         transport_tracking_id,
@@ -90,7 +90,7 @@ def use_door(player, door):
     )
 
     # teleport player
-    player.Teleport(map_, cabin_x, cabin_y)
+    player.Teleport(map_, internal_cabin_door.X, internal_cabin_door.Y)
 
 def find_internal_cabin_door(transport, cabin_map):
     """Find internal cabin door located at cabin_map
@@ -107,6 +107,7 @@ def find_internal_cabin_door(transport, cabin_map):
         if obj.Archetype.Name == INTERNAL_CABIN_DOOR_ARCHETYPE:
             return obj
     # Return None if not found
+    transport.Say("could not find internal cabin door on %s at (%d, %d)" % (cabin_map.Path, door_x, door_y))
     return None
 
 

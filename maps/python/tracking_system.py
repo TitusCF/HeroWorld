@@ -210,14 +210,7 @@ def _is_object_valid(object_):
     if object_ is None:
         return False
 
-    # object is invalid if it has been freed
-    try:
-        object_.Removed
-    except ReferenceError:
-        return False
-
-    # object is valid if it has not been removed
-    return not object_.Removed
+    return object_.Exists
 
 
 def _get_tracking_id(object_):

@@ -79,8 +79,6 @@ def use_door(player, door):
     cabin_y = door.SP
     # prepare map
     map_ = Crossfire.ReadyMap(cabin_map)
-    # teleport player
-    player.Teleport(map_, cabin_x, cabin_y)
 
     # start tracking transport and save tracking ID to internal cabin door
     transport_tracking_id = tracking_system.add_tracker(transport)
@@ -91,6 +89,8 @@ def use_door(player, door):
         1,
     )
 
+    # teleport player
+    player.Teleport(map_, cabin_x, cabin_y)
 
 def find_internal_cabin_door(transport, cabin_map):
     """Find internal cabin door located at cabin_map

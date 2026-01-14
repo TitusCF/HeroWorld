@@ -37,16 +37,16 @@ def main():
     player = Crossfire.WhoIsActivator()
     door = Crossfire.WhoAmI()
 
-    id_ = get_tracking_id(door)
-    transport = tracking_system.get_object(id_)
-    if transport is None:
+    try:
+        id_ = get_tracking_id(door)
+        transport = tracking_system.get_object(id_)
+        teleport_player_to_transport(player, transport)
+        transport.Apply(player, 0)
+    except:
         log_error('Lost private transport with tracking id %s' % id_)
         log_error('Player affected: %s' % player.Name)
         send_info_to_player(PLAYER_MESSAGES['lost_track_of_transport'], player)
         teleport_player_to_bed(player)
-    else:
-        teleport_player_to_transport(player, transport)
-        transport.Apply(player, 0)
 
 
 def get_tracking_id(door):

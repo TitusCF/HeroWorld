@@ -3,9 +3,11 @@ name new_death
 region death
 width 23
 height 10
+enter_x 17
+enter_y 4
 msg
 Created:  2023-09-06 Titus
-Modified: 2026-01-12 yardc
+Modified: 2026-01-18 Kevin Zheng
 endmsg
 end
 arch battleground
@@ -2048,13 +2050,13 @@ sp 1
 x 15
 y 9
 end
-arch fogexit
-slaying /afterlife/death_1_5
-hp 6
+arch unholy_ground
 x 15
 y 9
 end
-arch unholy_ground
+arch fogexit
+slaying /@/afterlife/death_template!/afterlife/death
+hp 6
 x 15
 y 9
 end
@@ -2150,24 +2152,6 @@ end
 arch unholy_ground
 x 16
 y 8
-end
-arch battleground
-name death
-face blocked.111
-hp 1
-sp 1
-x 16
-y 9
-end
-arch fogexit
-slaying /afterlife/death_1_5
-hp 6
-x 16
-y 9
-end
-arch unholy_ground
-x 16
-y 9
 end
 arch battleground
 name death
@@ -2296,24 +2280,6 @@ name death
 face blocked.111
 hp 1
 sp 1
-x 17
-y 9
-end
-arch fogexit
-slaying /afterlife/death_1_5
-hp 6
-x 17
-y 9
-end
-arch unholy_ground
-x 17
-y 9
-end
-arch battleground
-name death
-face blocked.111
-hp 1
-sp 1
 x 18
 end
 arch Nimwall_2_1_2
@@ -2401,24 +2367,6 @@ end
 arch unholy_ground
 x 18
 y 8
-end
-arch battleground
-name death
-face blocked.111
-hp 1
-sp 1
-x 18
-y 9
-end
-arch fogexit
-slaying /afterlife/death_1_5
-hp 6
-x 18
-y 9
-end
-arch unholy_ground
-x 18
-y 9
 end
 arch battleground
 name death
@@ -2516,24 +2464,6 @@ end
 arch unholy_ground
 x 19
 y 8
-end
-arch battleground
-name death
-face blocked.111
-hp 1
-sp 1
-x 19
-y 9
-end
-arch fogexit
-slaying /afterlife/death_1_5
-hp 6
-x 19
-y 9
-end
-arch unholy_ground
-x 19
-y 9
 end
 arch battleground
 name death
@@ -2653,24 +2583,6 @@ name death
 face blocked.111
 hp 1
 sp 1
-x 20
-y 9
-end
-arch fogexit
-slaying /afterlife/death_1_5
-hp 6
-x 20
-y 9
-end
-arch unholy_ground
-x 20
-y 9
-end
-arch battleground
-name death
-face blocked.111
-hp 1
-sp 1
 x 21
 end
 arch Nimwall_2_1_2
@@ -2774,24 +2686,6 @@ end
 arch unholy_ground
 x 21
 y 8
-end
-arch battleground
-name death
-face blocked.111
-hp 1
-sp 1
-x 21
-y 9
-end
-arch fogexit
-slaying /afterlife/death_1_5
-hp 6
-x 21
-y 9
-end
-arch unholy_ground
-x 21
-y 9
 end
 arch battleground
 name death

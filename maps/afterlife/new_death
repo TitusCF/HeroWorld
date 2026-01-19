@@ -71,13 +71,15 @@ end
 arch unique_woodfloor2
 y 7
 end
-arch wall_2_1_1
+arch wall_2_2_1
 y 7
 end
-arch unique_woodfloor2
-y 8
-end
-arch wall_2_2_1
+arch westcwall_0
+name grass
+msg
+How did you even get here?
+endmsg
+face bosgrass15.111
 y 8
 end
 arch westcwall_0
@@ -180,26 +182,20 @@ material 256
 arch spell_word_of_recall
 end
 end
-arch battleground
-name Ship Deck
-face woodfloor2.111
-hp 17
-sp 4
-x 1
-y 7
-end
-arch recall_bench
-x 1
-y 7
-material 256
-arch spell_word_of_recall
-end
-end
 arch unique_woodfloor2
 x 1
-y 8
+y 7
 end
 arch wall_2_1_2
+x 1
+y 7
+end
+arch westcwall_0
+name grass
+msg
+How did you even get here?
+endmsg
+face bosgrass15.111
 x 1
 y 8
 end
@@ -276,19 +272,20 @@ sp 4
 x 2
 y 6
 end
-arch battleground
-name Ship Deck
-face woodfloor2.111
-hp 17
-sp 4
+arch unique_woodfloor2
 x 2
 y 7
 end
-arch unique_woodfloor2
-x 2
-y 8
-end
 arch wall_2_1_2
+x 2
+y 7
+end
+arch westcwall_0
+name grass
+msg
+How did you even get here?
+endmsg
+face bosgrass15.111
 x 2
 y 8
 end
@@ -393,26 +390,20 @@ material 256
 arch spell_word_of_recall
 end
 end
-arch battleground
-name Ship Deck
-face woodfloor2.111
-hp 17
-sp 4
-x 3
-y 7
-end
-arch recall_bench
-x 3
-y 7
-material 256
-arch spell_word_of_recall
-end
-end
 arch unique_woodfloor2
 x 3
-y 8
+y 7
 end
 arch wall_2_1_2
+x 3
+y 7
+end
+arch westcwall_0
+name grass
+msg
+How did you even get here?
+endmsg
+face bosgrass15.111
 x 3
 y 8
 end
@@ -497,15 +488,16 @@ arch unique_woodfloor2
 x 4
 y 7
 end
-arch wall_2_1_1
+arch wall_2_2_4
 x 4
 y 7
 end
-arch unique_woodfloor2
-x 4
-y 8
-end
-arch wall_2_2_4
+arch westcwall_0
+name grass
+msg
+
+endmsg
+face bosgrass15.111
 x 4
 y 8
 end
@@ -674,7 +666,7 @@ y 8
 end
 arch battleground
 name death
-face blocked.111
+face dung_floor.111
 hp 1
 sp 1
 x 5
@@ -707,8 +699,109 @@ end
 arch biglake_sn
 x 6
 end
-arch Nimwall_2_2_2
+arch battleground
+name death
+face blocked.111
+hp 1
+sp 1
 x 6
+y 1
+end
+arch unholy_ground
+x 6
+y 1
+end
+arch biglake_sn
+x 6
+y 1
+end
+arch battleground
+name death
+face blocked.111
+hp 1
+sp 1
+x 6
+y 2
+end
+arch unholy_ground
+x 6
+y 2
+end
+arch biglake_sn
+x 6
+y 2
+end
+arch battleground
+name death
+face blocked.111
+hp 1
+sp 1
+x 6
+y 3
+end
+arch fog_wall
+x 6
+y 3
+end
+arch unholy_ground
+x 6
+y 3
+end
+arch biglake_sn
+x 6
+y 3
+end
+arch battleground
+name death
+face blocked.111
+hp 1
+sp 1
+x 6
+y 4
+end
+arch fog_wall
+x 6
+y 4
+end
+arch unholy_ground
+x 6
+y 4
+end
+arch biglake_sn
+x 6
+y 4
+end
+arch battleground
+name death
+face blocked.111
+hp 1
+sp 1
+x 6
+y 5
+end
+arch unholy_ground
+x 6
+y 5
+end
+arch biglake_sn
+x 6
+y 5
+end
+arch battleground
+name death
+face blocked.111
+hp 1
+sp 1
+x 6
+y 6
+end
+arch unholy_ground
+x 6
+y 6
+end
+arch biglake_sn
+x 6
+y 6
 end
 arch westcwall_0
 name grass
@@ -730,7 +823,7 @@ y 8
 end
 arch battleground
 name death
-face blocked.111
+face dung_floor.111
 hp 1
 sp 1
 x 6
@@ -754,11 +847,40 @@ hp 1
 sp 1
 x 7
 end
-arch Nimwall_2_1_2
+arch unholy_ground
 x 7
+end
+arch battleground
+name death
+face blocked.111
+hp 1
+sp 1
+x 7
+y 1
 end
 arch unholy_ground
 x 7
+y 1
+end
+arch biglake_sn
+x 7
+y 1
+end
+arch battleground
+name death
+face blocked.111
+hp 1
+sp 1
+x 7
+y 2
+end
+arch unholy_ground
+x 7
+y 2
+end
+arch biglake_sn
+x 7
+y 2
 end
 arch Nimwall_2_2_2
 x 7
@@ -833,6 +955,10 @@ face dung_floor.111
 x 7
 y 7
 end
+arch Nimwall_2_2_1
+x 7
+y 7
+end
 arch westcwall_0
 name grass
 msg
@@ -844,7 +970,7 @@ y 8
 end
 arch battleground
 name death
-face blocked.111
+face dung_floor.111
 hp 1
 sp 1
 x 7
@@ -868,10 +994,10 @@ hp 1
 sp 1
 x 8
 end
-arch Nimwall_2_1_2
+arch unholy_ground
 x 8
 end
-arch unholy_ground
+arch Nimwall_2_2_2
 x 8
 end
 arch battleground
@@ -970,7 +1096,7 @@ arch biglake_sn
 x 8
 y 7
 end
-arch Nimwall_2_1_1
+arch Nimwall_2_1_2
 x 8
 y 7
 end
@@ -986,11 +1112,12 @@ arch unholy_ground
 x 8
 y 8
 end
-arch biglake_sn
-x 8
-y 8
-end
-arch Nimwall_2_1_1
+arch westcwall_0
+name grass
+msg
+How did you even get here?
+endmsg
+face bosgrass15.111
 x 8
 y 8
 end
@@ -1116,6 +1243,10 @@ arch unholy_ground
 x 9
 y 7
 end
+arch Nimwall_2_2_3
+x 9
+y 7
+end
 arch battleground
 name death
 face blocked.111
@@ -1125,6 +1256,10 @@ x 9
 y 8
 end
 arch unholy_ground
+x 9
+y 8
+end
+arch Nimwall_2_2_1
 x 9
 y 8
 end
@@ -1243,6 +1378,10 @@ x 10
 y 8
 end
 arch unholy_ground
+x 10
+y 8
+end
+arch Nimwall_2_1_2
 x 10
 y 8
 end
@@ -1380,6 +1519,10 @@ arch unholy_ground
 x 11
 y 8
 end
+arch Nimwall_2_1_2
+x 11
+y 8
+end
 arch westcwall_0
 name grass
 msg
@@ -1498,6 +1641,10 @@ arch unholy_ground
 x 12
 y 8
 end
+arch Nimwall_2_1_2
+x 12
+y 8
+end
 arch westcwall_0
 name grass
 msg
@@ -1616,6 +1763,10 @@ arch unholy_ground
 x 13
 y 8
 end
+arch Nimwall_2_1_2
+x 13
+y 8
+end
 arch westcwall_0
 name grass
 msg
@@ -1727,6 +1878,14 @@ x 14
 y 8
 end
 arch unholy_ground
+x 14
+y 8
+end
+arch Nimwall_2_2_3
+x 14
+y 8
+end
+arch Nimwall_2_2_3
 x 14
 y 8
 end

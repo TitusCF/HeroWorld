@@ -17,14 +17,8 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch bosgrass15
-y 1
-move_block swim boat
-no_magic 1
-damned 1
-is_wooded 0
-end
-arch swall_2_2_2
+arch earth
+name Grave Plot
 y 1
 end
 arch bosgrass15
@@ -34,17 +28,8 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch swall_2_1_1
-y 2
-end
-arch bosgrass15
-y 3
-move_block swim boat
-no_magic 1
-damned 1
-is_wooded 0
-end
-arch swall_2_2_1
+arch earth
+name Grave Plot
 y 3
 end
 arch bosgrass15
@@ -76,14 +61,8 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch bosgrass15
-y 9
-move_block swim boat
-no_magic 1
-damned 1
-is_wooded 0
-end
-arch swall_2_2_2
+arch earth
+name Grave Plot
 y 9
 end
 arch bosgrass15
@@ -93,17 +72,8 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch swall_2_1_1
-y 10
-end
-arch bosgrass15
-y 11
-move_block swim boat
-no_magic 1
-damned 1
-is_wooded 0
-end
-arch swall_2_2_1
+arch earth
+name Grave Plot
 y 11
 end
 arch bosgrass15
@@ -120,9 +90,6 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch swall_2_2_2
-x 1
-end
 arch bosgrass15
 x 1
 y 1
@@ -130,10 +97,6 @@ move_block swim boat
 no_magic 1
 damned 1
 is_wooded 0
-end
-arch swall_2_2_4
-x 1
-y 1
 end
 arch bosgrass15
 x 1
@@ -143,13 +106,6 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch check_inv
-race gravestone
-x 1
-y 2
-last_sp 0
-move_block all
-end
 arch bosgrass15
 x 1
 y 3
@@ -158,10 +114,6 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch swall_2_2_3
-x 1
-y 3
-end
 arch bosgrass15
 x 1
 y 4
@@ -169,10 +121,6 @@ move_block swim boat
 no_magic 1
 damned 1
 is_wooded 0
-end
-arch swall_2_2_1
-x 1
-y 4
 end
 arch dungeon_floor
 x 1
@@ -200,10 +148,6 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch swall_2_2_2
-x 1
-y 8
-end
 arch bosgrass15
 x 1
 y 9
@@ -211,10 +155,6 @@ move_block swim boat
 no_magic 1
 damned 1
 is_wooded 0
-end
-arch swall_2_2_4
-x 1
-y 9
 end
 arch bosgrass15
 x 1
@@ -224,13 +164,6 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch check_inv
-race gravestone
-x 1
-y 10
-last_sp 0
-move_block all
-end
 arch bosgrass15
 x 1
 y 11
@@ -238,10 +171,6 @@ move_block swim boat
 no_magic 1
 damned 1
 is_wooded 0
-end
-arch swall_2_2_3
-x 1
-y 11
 end
 arch bosgrass15
 x 1
@@ -251,10 +180,6 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch swall_2_2_1
-x 1
-y 12
-end
 arch bosgrass15
 x 2
 move_block swim boat
@@ -262,45 +187,10 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch swall_2_1_2
-x 2
-end
-arch bosgrass15
+arch earth
+name Grave Plot
 x 2
 y 1
-move_block swim boat
-no_magic 1
-damned 0
-is_wooded 0
-end
-arch creator
-x 2
-y 1
-connected 1
-activate_on_release 0
-arch scroll_new
-other_arch rose_red
-level 100
-no_pick 1
-identified 1
-changing 1
-startequip 1
-arch spell_word_of_recall
-end
-end
-end
-arch spikes_closed
-x 2
-y 1
-connected 1
-activate_on_release 0
-end
-arch check_inv
-race gravestone
-x 2
-y 1
-last_sp 0
-move_block all
 end
 arch bosgrass15
 x 2
@@ -310,23 +200,10 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch swall_0
-x 2
-y 2
-end
-arch bosgrass15
+arch earth
+name Grave Plot
 x 2
 y 3
-move_block swim boat
-no_magic 1
-damned 1
-is_wooded 0
-end
-arch detector
-slaying gravestone
-x 2
-y 3
-connected 1
 end
 arch bosgrass15
 x 2
@@ -335,10 +212,6 @@ move_block swim boat
 no_magic 1
 damned 1
 is_wooded 0
-end
-arch swall_2_1_2
-x 2
-y 4
 end
 arch dungeon_floor
 x 2
@@ -366,23 +239,10 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch swall_2_1_2
-x 2
-y 8
-end
-arch bosgrass15
+arch earth
+name Grave Plot
 x 2
 y 9
-move_block swim boat
-no_magic 1
-damned 1
-is_wooded 0
-end
-arch detector
-slaying gravestone
-x 2
-y 9
-connected 13
 end
 arch bosgrass15
 x 2
@@ -392,46 +252,10 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch swall_0
-x 2
-y 10
-end
-arch bosgrass15
+arch earth
+name Grave Plot
 x 2
 y 11
-move_block swim boat
-no_magic 1
-damned 0
-is_wooded 0
-end
-arch creator
-x 2
-y 11
-connected 13
-activate_on_release 0
-arch scroll_new
-other_arch rose_red
-level 100
-no_pick 1
-identified 1
-changing 1
-startequip 1
-arch spell_word_of_recall
-end
-end
-end
-arch spikes_closed
-x 2
-y 11
-connected 13
-activate_on_release 0
-end
-arch check_inv
-race gravestone
-x 2
-y 11
-last_sp 0
-move_block all
 end
 arch bosgrass15
 x 2
@@ -441,19 +265,12 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch swall_2_1_2
-x 2
-y 12
-end
 arch bosgrass15
 x 3
 move_block swim boat
 no_magic 1
 damned 1
 is_wooded 0
-end
-arch swall_2_2_3
-x 3
 end
 arch bosgrass15
 x 3
@@ -463,10 +280,6 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch swall_2_2_1
-x 3
-y 1
-end
 arch bosgrass15
 x 3
 y 2
@@ -474,12 +287,6 @@ move_block swim boat
 no_magic 1
 damned 1
 is_wooded 0
-end
-arch check_inv
-race gravestone
-x 3
-y 2
-move_block all
 end
 arch bosgrass15
 x 3
@@ -489,10 +296,6 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch swall_2_2_2
-x 3
-y 3
-end
 arch bosgrass15
 x 3
 y 4
@@ -500,10 +303,6 @@ move_block swim boat
 no_magic 1
 damned 1
 is_wooded 0
-end
-arch swall_2_2_4
-x 3
-y 4
 end
 arch dungeon_floor
 x 3
@@ -531,10 +330,6 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch swall_2_2_3
-x 3
-y 8
-end
 arch bosgrass15
 x 3
 y 9
@@ -542,10 +337,6 @@ move_block swim boat
 no_magic 1
 damned 1
 is_wooded 0
-end
-arch swall_2_2_1
-x 3
-y 9
 end
 arch bosgrass15
 x 3
@@ -555,12 +346,6 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch check_inv
-race gravestone
-x 3
-y 10
-move_block all
-end
 arch bosgrass15
 x 3
 y 11
@@ -568,10 +353,6 @@ move_block swim boat
 no_magic 1
 damned 1
 is_wooded 0
-end
-arch swall_2_2_2
-x 3
-y 11
 end
 arch bosgrass15
 x 3
@@ -581,10 +362,6 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch swall_2_2_4
-x 3
-y 12
-end
 arch bosgrass15
 x 4
 move_block swim boat
@@ -592,15 +369,8 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch bosgrass15
-x 4
-y 1
-move_block swim boat
-no_magic 1
-damned 1
-is_wooded 0
-end
-arch swall_2_2_3
+arch earth
+name Grave Plot
 x 4
 y 1
 end
@@ -612,21 +382,8 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch spikes_open
-x 4
-y 2
-connected 1
-activate_on_release 0
-end
-arch bosgrass15
-x 4
-y 3
-move_block swim boat
-no_magic 1
-damned 1
-is_wooded 0
-end
-arch swall_2_2_4
+arch earth
+name Grave Plot
 x 4
 y 3
 end
@@ -637,17 +394,6 @@ move_block swim boat
 no_magic 1
 damned 1
 is_wooded 0
-end
-arch creator
-x 4
-y 4
-connected 1
-activate_on_release 0
-arch titus_flower
-no_pick 1
-identified 1
-startequip 1
-end
 end
 arch dungeon_floor
 x 4
@@ -675,26 +421,8 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch creator
-x 4
-y 8
-connected 13
-activate_on_release 0
-arch titus_flower
-no_pick 1
-identified 1
-startequip 1
-end
-end
-arch bosgrass15
-x 4
-y 9
-move_block swim boat
-no_magic 1
-damned 1
-is_wooded 0
-end
-arch swall_2_2_3
+arch earth
+name Grave Plot
 x 4
 y 9
 end
@@ -706,21 +434,8 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch spikes_open
-x 4
-y 10
-connected 13
-activate_on_release 0
-end
-arch bosgrass15
-x 4
-y 11
-move_block swim boat
-no_magic 1
-damned 1
-is_wooded 0
-end
-arch swall_2_2_4
+arch earth
+name Grave Plot
 x 4
 y 11
 end
@@ -850,6 +565,18 @@ y 6
 no_magic 1
 damned 1
 end
+arch cross_sign
+msg
+    N   <---to return to the afterlife area
+W    E
+    S
+
+Apply a gravestone atop these plots to have it preserved forever.
+(Only applies to stones dropped upon the death of a hero)
+endmsg
+x 6
+y 6
+end
 arch dungeon_floor
 x 6
 y 7
@@ -970,15 +697,8 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch bosgrass15
-x 8
-y 1
-move_block swim boat
-no_magic 1
-damned 1
-is_wooded 0
-end
-arch swall_2_2_2
+arch earth
+name Grave Plot
 x 8
 y 1
 end
@@ -990,21 +710,8 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch spikes_open
-x 8
-y 2
-connected 11
-activate_on_release 0
-end
-arch bosgrass15
-x 8
-y 3
-move_block swim boat
-no_magic 1
-damned 1
-is_wooded 0
-end
-arch swall_2_2_1
+arch earth
+name Grave Plot
 x 8
 y 3
 end
@@ -1015,17 +722,6 @@ move_block swim boat
 no_magic 1
 damned 1
 is_wooded 0
-end
-arch creator
-x 8
-y 4
-connected 11
-activate_on_release 0
-arch titus_flower
-no_pick 1
-identified 1
-startequip 1
-end
 end
 arch dungeon_floor
 x 8
@@ -1053,26 +749,8 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch creator
-x 8
-y 8
-connected 12
-activate_on_release 0
-arch titus_flower
-no_pick 1
-identified 1
-startequip 1
-end
-end
-arch bosgrass15
-x 8
-y 9
-move_block swim boat
-no_magic 1
-damned 1
-is_wooded 0
-end
-arch swall_2_2_2
+arch earth
+name Grave Plot
 x 8
 y 9
 end
@@ -1084,21 +762,8 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch spikes_open
-x 8
-y 10
-connected 12
-activate_on_release 0
-end
-arch bosgrass15
-x 8
-y 11
-move_block swim boat
-no_magic 1
-damned 1
-is_wooded 0
-end
-arch swall_2_2_1
+arch earth
+name Grave Plot
 x 8
 y 11
 end
@@ -1117,9 +782,6 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch swall_2_2_2
-x 9
-end
 arch bosgrass15
 x 9
 y 1
@@ -1127,10 +789,6 @@ move_block swim boat
 no_magic 1
 damned 1
 is_wooded 0
-end
-arch swall_2_2_4
-x 9
-y 1
 end
 arch bosgrass15
 x 9
@@ -1140,12 +798,6 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch check_inv
-race gravestone
-x 9
-y 2
-move_block all
-end
 arch bosgrass15
 x 9
 y 3
@@ -1154,10 +806,6 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch swall_2_2_3
-x 9
-y 3
-end
 arch bosgrass15
 x 9
 y 4
@@ -1165,10 +813,6 @@ move_block swim boat
 no_magic 1
 damned 1
 is_wooded 0
-end
-arch swall_2_2_1
-x 9
-y 4
 end
 arch dungeon_floor
 x 9
@@ -1196,10 +840,6 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch swall_2_2_2
-x 9
-y 8
-end
 arch bosgrass15
 x 9
 y 9
@@ -1207,10 +847,6 @@ move_block swim boat
 no_magic 1
 damned 1
 is_wooded 0
-end
-arch swall_2_2_4
-x 9
-y 9
 end
 arch bosgrass15
 x 9
@@ -1220,12 +856,6 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch check_inv
-race gravestone
-x 9
-y 10
-move_block all
-end
 arch bosgrass15
 x 9
 y 11
@@ -1233,10 +863,6 @@ move_block swim boat
 no_magic 1
 damned 1
 is_wooded 0
-end
-arch swall_2_2_3
-x 9
-y 11
 end
 arch bosgrass15
 x 9
@@ -1246,10 +872,6 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch swall_2_2_1
-x 9
-y 12
-end
 arch bosgrass15
 x 10
 move_block swim boat
@@ -1257,45 +879,10 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch swall_2_1_2
-x 10
-end
-arch bosgrass15
+arch earth
+name Grave Plot
 x 10
 y 1
-move_block swim boat
-no_magic 1
-damned 0
-is_wooded 0
-end
-arch creator
-x 10
-y 1
-connected 11
-activate_on_release 0
-arch scroll_new
-other_arch rose_red
-level 100
-no_pick 1
-identified 1
-changing 1
-startequip 1
-arch spell_word_of_recall
-end
-end
-end
-arch spikes_closed
-x 10
-y 1
-connected 11
-activate_on_release 0
-end
-arch check_inv
-race gravestone
-x 10
-y 1
-last_sp 0
-move_block all
 end
 arch bosgrass15
 x 10
@@ -1305,23 +892,10 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch swall_0
-x 10
-y 2
-end
-arch bosgrass15
+arch earth
+name Grave Plot
 x 10
 y 3
-move_block swim boat
-no_magic 1
-damned 1
-is_wooded 0
-end
-arch detector
-slaying gravestone
-x 10
-y 3
-connected 11
 end
 arch bosgrass15
 x 10
@@ -1330,10 +904,6 @@ move_block swim boat
 no_magic 1
 damned 1
 is_wooded 0
-end
-arch swall_2_1_2
-x 10
-y 4
 end
 arch dungeon_floor
 x 10
@@ -1361,23 +931,10 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch swall_2_1_2
-x 10
-y 8
-end
-arch bosgrass15
+arch earth
+name Grave Plot
 x 10
 y 9
-move_block swim boat
-no_magic 1
-damned 1
-is_wooded 0
-end
-arch detector
-slaying gravestone
-x 10
-y 9
-connected 12
 end
 arch bosgrass15
 x 10
@@ -1387,46 +944,10 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch swall_0
-x 10
-y 10
-end
-arch bosgrass15
+arch earth
+name Grave Plot
 x 10
 y 11
-move_block swim boat
-no_magic 1
-damned 0
-is_wooded 0
-end
-arch creator
-x 10
-y 11
-connected 12
-activate_on_release 0
-arch scroll_new
-other_arch rose_red
-level 100
-no_pick 1
-identified 1
-changing 1
-startequip 1
-arch spell_word_of_recall
-end
-end
-end
-arch spikes_closed
-x 10
-y 11
-connected 12
-activate_on_release 0
-end
-arch check_inv
-race gravestone
-x 10
-y 11
-last_sp 0
-move_block all
 end
 arch bosgrass15
 x 10
@@ -1436,19 +957,12 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch swall_2_1_2
-x 10
-y 12
-end
 arch bosgrass15
 x 11
 move_block swim boat
 no_magic 1
 damned 1
 is_wooded 0
-end
-arch swall_2_2_3
-x 11
 end
 arch bosgrass15
 x 11
@@ -1458,10 +972,6 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch swall_2_2_1
-x 11
-y 1
-end
 arch bosgrass15
 x 11
 y 2
@@ -1469,13 +979,6 @@ move_block swim boat
 no_magic 1
 damned 1
 is_wooded 0
-end
-arch check_inv
-race gravestone
-x 11
-y 2
-last_sp 0
-move_block all
 end
 arch bosgrass15
 x 11
@@ -1485,10 +988,6 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch swall_2_2_2
-x 11
-y 3
-end
 arch bosgrass15
 x 11
 y 4
@@ -1496,10 +995,6 @@ move_block swim boat
 no_magic 1
 damned 1
 is_wooded 0
-end
-arch swall_2_2_4
-x 11
-y 4
 end
 arch dungeon_floor
 x 11
@@ -1527,10 +1022,6 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch swall_2_2_3
-x 11
-y 8
-end
 arch bosgrass15
 x 11
 y 9
@@ -1538,10 +1029,6 @@ move_block swim boat
 no_magic 1
 damned 1
 is_wooded 0
-end
-arch swall_2_2_1
-x 11
-y 9
 end
 arch bosgrass15
 x 11
@@ -1551,13 +1038,6 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch check_inv
-race gravestone
-x 11
-y 10
-last_sp 0
-move_block all
-end
 arch bosgrass15
 x 11
 y 11
@@ -1565,10 +1045,6 @@ move_block swim boat
 no_magic 1
 damned 1
 is_wooded 0
-end
-arch swall_2_2_2
-x 11
-y 11
 end
 arch bosgrass15
 x 11
@@ -1578,10 +1054,6 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch swall_2_2_4
-x 11
-y 12
-end
 arch bosgrass15
 x 12
 move_block swim boat
@@ -1589,15 +1061,8 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch bosgrass15
-x 12
-y 1
-move_block swim boat
-no_magic 1
-damned 1
-is_wooded 0
-end
-arch swall_2_2_3
+arch earth
+name Grave Plot
 x 12
 y 1
 end
@@ -1609,19 +1074,8 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch swall_2_1_1
-x 12
-y 2
-end
-arch bosgrass15
-x 12
-y 3
-move_block swim boat
-no_magic 1
-damned 1
-is_wooded 0
-end
-arch swall_2_2_4
+arch earth
+name Grave Plot
 x 12
 y 3
 end
@@ -1659,15 +1113,8 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch bosgrass15
-x 12
-y 9
-move_block swim boat
-no_magic 1
-damned 1
-is_wooded 0
-end
-arch swall_2_2_3
+arch earth
+name Grave Plot
 x 12
 y 9
 end
@@ -1679,19 +1126,8 @@ no_magic 1
 damned 1
 is_wooded 0
 end
-arch swall_2_1_1
-x 12
-y 10
-end
-arch bosgrass15
-x 12
-y 11
-move_block swim boat
-no_magic 1
-damned 1
-is_wooded 0
-end
-arch swall_2_2_4
+arch earth
+name Grave Plot
 x 12
 y 11
 end

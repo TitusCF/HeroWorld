@@ -16,32 +16,22 @@ face blocked.111
 hp 1
 sp 1
 end
-arch Nimwall_2_2_2
-end
-arch unholy_ground
-end
-arch biglake_sn
-end
-arch battleground
-name death
-face blocked.111
-hp 1
-sp 1
-y 1
-end
 arch Nimwall_2_1_1
-y 1
 end
 arch unholy_ground
-y 1
 end
 arch biglake_sn
+end
+arch unique_woodfloor2
+y 1
+end
+arch wall_2_2_2
 y 1
 end
 arch unique_woodfloor2
 y 2
 end
-arch wall_2_2_2
+arch wall_2_1_1
 y 2
 end
 arch unique_woodfloor2
@@ -91,37 +81,34 @@ endmsg
 face bosgrass15.111
 y 9
 end
-arch battleground
-name death
-face blocked.111
-hp 1
-sp 1
-x 1
-end
-arch Nimwall_2_1_2
-x 1
-end
-arch unholy_ground
-x 1
-end
-arch biglake_sn
-x 1
-end
 arch unique_woodfloor2
 x 1
-y 1
 end
 arch wall_2_2_2
 x 1
-y 1
 end
 arch unique_woodfloor2
 x 1
-y 2
+y 1
 end
 arch wall_2_2_4
 x 1
+y 1
+end
+arch battleground
+name Ship Deck
+face woodfloor2.111
+hp 17
+sp 4
+x 1
 y 2
+end
+arch recall_bench
+x 1
+y 2
+material 256
+arch spell_word_of_recall
+end
 end
 arch battleground
 name Ship Deck
@@ -209,27 +196,17 @@ face bosgrass15.111
 x 1
 y 9
 end
-arch battleground
-name death
-face blocked.111
-hp 1
-sp 1
-x 2
-end
-arch Nimwall_2_1_2
-x 2
-end
-arch unholy_ground
-x 2
-end
-arch biglake_sn
-x 2
-end
 arch unique_woodfloor2
 x 2
-y 1
 end
 arch wall_2_1_2
+x 2
+end
+arch battleground
+name Ship Deck
+face woodfloor2.111
+hp 17
+sp 4
 x 2
 y 1
 end
@@ -299,37 +276,34 @@ face bosgrass15.111
 x 2
 y 9
 end
-arch battleground
-name death
-face blocked.111
-hp 1
-sp 1
-x 3
-end
-arch Nimwall_2_1_2
-x 3
-end
-arch unholy_ground
-x 3
-end
-arch biglake_sn
-x 3
-end
 arch unique_woodfloor2
 x 3
-y 1
 end
 arch wall_2_2_3
 x 3
-y 1
 end
 arch unique_woodfloor2
 x 3
-y 2
+y 1
 end
 arch wall_2_2_1
 x 3
+y 1
+end
+arch battleground
+name Ship Deck
+face woodfloor2.111
+hp 17
+sp 4
+x 3
 y 2
+end
+arch recall_bench
+x 3
+y 2
+material 256
+arch spell_word_of_recall
+end
 end
 arch battleground
 name Ship Deck
@@ -424,24 +398,14 @@ hp 1
 sp 1
 x 4
 end
-arch Nimwall_2_1_2
-x 4
-end
-arch unholy_ground
-x 4
-end
 arch biglake_sn
 x 4
 end
-arch battleground
-name death
-face blocked.111
-hp 1
-sp 1
+arch unique_woodfloor2
 x 4
 y 1
 end
-arch biglake_sn
+arch wall_2_2_3
 x 4
 y 1
 end
@@ -449,7 +413,7 @@ arch unique_woodfloor2
 x 4
 y 2
 end
-arch wall_2_2_3
+arch wall_2_1_1
 x 4
 y 2
 end
@@ -1195,7 +1159,7 @@ end
 arch rowboat
 slaying new_death
 hp 2
-sp 6
+sp 4
 x 9
 y 4
 move_on all
@@ -1878,11 +1842,7 @@ arch unholy_ground
 x 14
 y 8
 end
-arch Nimwall_2_2_3
-x 14
-y 8
-end
-arch Nimwall_2_2_3
+arch Nimwall_2_1_2
 x 14
 y 8
 end
@@ -1988,25 +1948,16 @@ sp 1
 x 15
 y 8
 end
-arch unholy_ground
+arch Nimwall_1_3
 x 15
 y 8
 end
-arch battleground
-name death
-face blocked.111
-hp 1
-sp 1
-x 15
-y 9
-end
-arch unholy_ground
-x 15
-y 9
-end
-arch fogexit
-slaying $/afterlife/death_template!/afterlife/death
-hp 6
+arch westcwall_0
+name grass
+msg
+
+endmsg
+face bosgrass15.111
 x 15
 y 9
 end
@@ -2103,21 +2054,18 @@ arch unholy_ground
 x 16
 y 8
 end
-arch battleground
-name death
-face blocked.111
-hp 1
-sp 1
-x 16
-y 9
-end
-arch unholy_ground
-x 16
-y 9
-end
 arch fogexit
 slaying $/afterlife/death_template!/afterlife/death
 hp 6
+x 16
+y 8
+end
+arch westcwall_0
+name grass
+msg
+
+endmsg
+face bosgrass15.111
 x 16
 y 9
 end
@@ -2243,21 +2191,18 @@ arch unholy_ground
 x 17
 y 8
 end
-arch battleground
-name death
-face blocked.111
-hp 1
-sp 1
-x 17
-y 9
-end
-arch unholy_ground
-x 17
-y 9
-end
 arch fogexit
 slaying $/afterlife/death_template!/afterlife/death
 hp 6
+x 17
+y 8
+end
+arch westcwall_0
+name grass
+msg
+
+endmsg
+face bosgrass15.111
 x 17
 y 9
 end
@@ -2354,21 +2299,18 @@ arch unholy_ground
 x 18
 y 8
 end
-arch battleground
-name death
-face blocked.111
-hp 1
-sp 1
-x 18
-y 9
-end
-arch unholy_ground
-x 18
-y 9
-end
 arch fogexit
 slaying $/afterlife/death_template!/afterlife/death
 hp 6
+x 18
+y 8
+end
+arch westcwall_0
+name grass
+msg
+
+endmsg
+face bosgrass15.111
 x 18
 y 9
 end
@@ -2469,21 +2411,18 @@ arch unholy_ground
 x 19
 y 8
 end
-arch battleground
-name death
-face blocked.111
-hp 1
-sp 1
-x 19
-y 9
-end
-arch unholy_ground
-x 19
-y 9
-end
 arch fogexit
 slaying $/afterlife/death_template!/afterlife/death
 hp 6
+x 19
+y 8
+end
+arch westcwall_0
+name grass
+msg
+
+endmsg
+face bosgrass15.111
 x 19
 y 9
 end
@@ -2600,21 +2539,18 @@ arch unholy_ground
 x 20
 y 8
 end
-arch battleground
-name death
-face blocked.111
-hp 1
-sp 1
-x 20
-y 9
-end
-arch unholy_ground
-x 20
-y 9
-end
 arch fogexit
 slaying $/afterlife/death_template!/afterlife/death
 hp 6
+x 20
+y 8
+end
+arch westcwall_0
+name grass
+msg
+
+endmsg
+face bosgrass15.111
 x 20
 y 9
 end
@@ -2727,21 +2663,18 @@ arch unholy_ground
 x 21
 y 8
 end
-arch battleground
-name death
-face blocked.111
-hp 1
-sp 1
-x 21
-y 9
-end
-arch unholy_ground
-x 21
-y 9
-end
 arch fogexit
 slaying $/afterlife/death_template!/afterlife/death
 hp 6
+x 21
+y 8
+end
+arch westcwall_0
+name grass
+msg
+
+endmsg
+face bosgrass15.111
 x 21
 y 9
 end
@@ -2878,27 +2811,20 @@ sp 1
 x 22
 y 8
 end
-arch Nimwall_2_1_1
-x 22
-y 8
-end
 arch unholy_ground
 x 22
 y 8
 end
-arch battleground
-name death
-face blocked.111
-hp 1
-sp 1
+arch Nimwall_1_2
 x 22
-y 9
+y 8
 end
-arch Nimwall_2_1_1
-x 22
-y 9
-end
-arch unholy_ground
+arch westcwall_0
+name grass
+msg
+
+endmsg
+face bosgrass15.111
 x 22
 y 9
 end

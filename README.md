@@ -9,12 +9,23 @@ Contact Titus_22600 on Discord to discuss participating in this project!</br>
 HeroWorld (HW)</br> 
 Sponsored Fork of Crossfire Multiplayer RPG</br> 
 
-What is Heroworld (HW)?</br> 
-Welcome to HeroWorld (HW) - a thrilling graphical multiplayer open-world RPG rogue-like that will take you on an unforgettable journey through a high fantasy world filled with hidden secrets and quests that will keep you coming back for more. But that's not all, HW is not just any ordinary RPG game, it offers a unique player-directed world building experience, where you get to shape the world around you.</br> 
-Craft your own artifacts, build your own buildings, and even found your own cities complete with shops and temples to religions you have created. The possibilities are endless! And the best part? The world is constantly evolving and changing based on your actions and decisions.</br> 
-HW is a sponsored fork of the iconic Crossfire Multiplayer RPG with roots going all the way back to the 1980s. It's currently in beta, but don't worry, you can still be a part of this exciting adventure. Contact Girl-Titus #8604 on Discord to get involved.</br> 
-We need as many contributors as possible to make sure our players are always finding something new and interesting in this vast world. And the best part? HW is not a PVP optimized server, which means we can pursue potentially 'unbalancable' features to make the game even more thrilling.</br> 
-So what are you waiting for? Join us in HeroWorld and become a part of this epic fantasy adventure that will keep you on the edge of your seat!</br> 
+Heroworld is a graphical rogue-like MUD wrapped around a content heavy sandbox. </br>
+</br>
+There's roughly 7000 individual maps to explore and thousands of unique artifacts to find, and if you can't find it go ahead and make it! </br>
+A player can explore this game for years and find something new every day, all in support of YOUR story.</br>
+
+Heroworld is a fork of the classic roguelike, Crossfire. Crossfire began its life as a Gauntlet clone back in the early 90s and has maintained an persistent community of players and enthusiasts. Rarely does a game encompass so many years of unhinged development and storytelling! Heroworld itself began development in 2018 with the specific goal of maximizing players opportunity for choice while still preserving Crossfire's core charm. </br>
+
+With the new crafting and construction systems players are able to evolve the world around them. Our goal at Heroworld is to allow players the freedom to leave their own mark!</br>
+
+Become a master artificer and craft ultra high power artifacts, start your own chain of successful shops built and designed by you or even build an entire city in The Frontier.</br>
+</br>
+Heroworld is being updated almost daily and grows entirely from contributed content. </br>
+Join the game, chat with our DMs and claim your stake in Heroworld!</br>
+</br>
+Heroworld is part of the Crossfire project that now has a Discord channel (gasp!) you can connect to here: https://discord.gg/CCQqbqu </br>
+
+For more information on Heroworld and Crossfire: http://roguebasin.com/index.php?title=Crossfire / http://crossfire.real-time.com/</br> 
 
 </BR>
 </br>

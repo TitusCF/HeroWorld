@@ -391,9 +391,8 @@ end
 arch renegade_wizard
 name Caelith Ash-Note, assistant to Veyrix
 msg
-@match *
+@match hi,hello
 Greetings, traveler. You stand within the Hall of Preserved Wings. If you seek a QUEST, ask, and I will answer.
-
 @match quest
 There is a task tied to OLD SCORN and the remnants of a forgotten war.
 
@@ -433,7 +432,7 @@ endmsg
 x 5
 y 1
 monster 0
-friendly 1
+unaggressive 1
 stand_still 1
 no_damage 1
 end

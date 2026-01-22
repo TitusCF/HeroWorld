@@ -1,12 +1,13 @@
 arch map
 name dungeon
 region tindervale
+width 20
+height 10
 msg
 Creator: art
 Date:    4/30/2006
+Modified: 2026-01-22 yardc
 endmsg
-width 20
-height 10
 end
 arch stonefloor2
 end
@@ -95,17 +96,14 @@ arch bed_save
 x 1
 y 1
 end
-arch magic_banned
-x 1
-y 2
-end
-arch unholy_ground
-x 1
-y 2
-end
 arch stonefloor2
 x 1
 y 2
+end
+arch trigger
+x 1
+y 2
+connected 1
 end
 arch stonefloor2
 x 1
@@ -185,19 +183,19 @@ x 2
 y 3
 end
 arch igate_closed_1
-blocksview 0
-connected 1
 x 2
 y 3
+connected 1
+blocksview 0
 end
 arch stonefloor2
 x 2
 y 4
 end
 arch trigger
-connected 1
 x 2
 y 4
+connected 1
 end
 arch stonefloor2
 x 2
@@ -324,19 +322,19 @@ x 4
 y 3
 end
 arch igate_closed_1
-blocksview 0
-connected 2
 x 4
 y 3
+connected 2
+blocksview 0
 end
 arch stonefloor2
 x 4
 y 4
 end
 arch trigger
-connected 2
 x 4
 y 4
+connected 2
 end
 arch stonefloor2
 x 4
@@ -376,17 +374,14 @@ arch stonefloor2
 x 5
 y 1
 end
-arch magic_banned
-x 5
-y 2
-end
-arch unholy_ground
-x 5
-y 2
-end
 arch stonefloor2
 x 5
 y 2
+end
+arch trigger
+x 5
+y 2
+connected 2
 end
 arch stonefloor2
 x 5
@@ -570,36 +565,33 @@ arch stonefloor2
 x 8
 y 1
 end
-arch magic_banned
-x 8
-y 2
-end
-arch unholy_ground
-x 8
-y 2
-end
 arch stonefloor2
 x 8
 y 2
+end
+arch trigger
+x 8
+y 2
+connected 3
 end
 arch stonefloor2
 x 8
 y 3
 end
 arch igate_closed_1
-blocksview 0
-connected 3
 x 8
 y 3
+connected 3
+blocksview 0
 end
 arch stonefloor2
 x 8
 y 4
 end
 arch trigger
-connected 3
 x 8
 y 4
+connected 3
 end
 arch stonefloor2
 x 8
@@ -718,28 +710,28 @@ x 10
 y 2
 end
 arch grimreaper
-type 0
 x 10
 y 2
+type 0
 end
 arch stonefloor2
 x 10
 y 3
 end
 arch igate_closed_1
-blocksview 0
-connected 4
 x 10
 y 3
+connected 4
+blocksview 0
 end
 arch stonefloor2
 x 10
 y 4
 end
 arch trigger
-connected 4
 x 10
 y 4
+connected 4
 end
 arch stonefloor2
 x 10
@@ -779,17 +771,14 @@ arch stonefloor2
 x 11
 y 1
 end
-arch magic_banned
-x 11
-y 2
-end
-arch unholy_ground
-x 11
-y 2
-end
 arch stonefloor2
 x 11
 y 2
+end
+arch trigger
+x 11
+y 2
+connected 4
 end
 arch stonefloor2
 x 11
@@ -907,17 +896,18 @@ arch bed_save
 x 13
 y 1
 end
-arch magic_banned
-x 13
-y 2
-end
-arch unholy_ground
+arch trigger
 x 13
 y 2
 end
 arch stonefloor2
 x 13
 y 2
+end
+arch button_handle
+x 13
+y 2
+connected 5
 end
 arch stonefloor2
 x 13
@@ -982,20 +972,20 @@ x 14
 y 2
 end
 arch neko
-monster 0
-unaggressive 1
 x 14
 y 2
+monster 0
+unaggressive 1
 end
 arch stonefloor2
 x 14
 y 3
 end
 arch igate_closed_1
-blocksview 0
-connected 5
 x 14
 y 3
+connected 5
+blocksview 0
 end
 arch trigger
 x 14
@@ -1006,9 +996,9 @@ x 14
 y 4
 end
 arch button_handle
-connected 5
 x 14
 y 4
+connected 5
 end
 arch stonefloor2
 x 14
@@ -1110,32 +1100,33 @@ arch bed_save
 x 16
 y 1
 end
-arch unholy_ground
-x 16
-y 2
-end
 arch stonefloor2
 x 16
 y 2
+end
+arch trigger
+x 16
+y 2
+connected 6
 end
 arch stonefloor2
 x 16
 y 3
 end
 arch igate_closed_1
-blocksview 0
-connected 6
 x 16
 y 3
+connected 6
+blocksview 0
 end
 arch stonefloor2
 x 16
 y 4
 end
 arch trigger
-connected 6
 x 16
 y 4
+connected 6
 end
 arch stonefloor2
 x 16
@@ -1355,4 +1346,3 @@ arch dun_2_2_4
 x 19
 y 9
 end
-

@@ -881,16 +881,32 @@ arch mat
 x 10
 y 2
 end
+arch creator
+x 10
+y 2
+connected 4
 arch green_dragon2
 name Archivist Veyrix Scale-Eyed
 msg
+@match hi,hello
+Greetings, I am Veyrix.
 
+@match dragon
+The dragons are nearly extinct, at least those of us possessed of any real
+intellegence. Scorn has waged a war against up, first a war of iron, then of disease
+and subterfuge. You have not made friends among the leaders of your people,
+but you have made friends among mine.
+
+@match dagger
+
+Keep the dagger. It may yet open doors for you that might remain closed
+for others.
+I have no more time for chatter.
 endmsg
-x 10
-y 2
 monster 0
 friendly 1
 stand_still 1
+end
 end
 arch lostlabfloor11
 x 10
@@ -998,28 +1014,6 @@ x 11
 end
 arch stwallred_2_2_3
 x 11
-end
-arch creator
-x 11
-connected 4
-arch magic_ear
-msg
-@match hi,hello
-Greetings, I am Veyrix.
-
-@match dragon
-The dragons are nearly extinct, at least those of us possessed of any real
-intellegence. Scorn has waged a war against up, first a war of iron, then of disease
-and subterfuge. You have not made friends among the leaders of your people,
-but you have made friends among mine.
-
-@match dagger
-
-Keep the dagger. It may yet open doors for you that might remain closed
-for others.
-I have no more time for chatter.
-endmsg
-end
 end
 arch lostlabfloor11
 x 11

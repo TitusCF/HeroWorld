@@ -89,7 +89,7 @@ y 1
 end
 arch altar_trigger
 slaying dragon_tooth
-food 1
+food 2
 x 1
 y 1
 connected 1
@@ -429,6 +429,14 @@ Prepare yourself. Return when you have succeeded.
 @match no
 ...Really, after all that lead up you're just going to say no?
    Get out of my face you're wasting my time.
+
+@match dagger
+
+We have made for you a dagger from the teeth of long dead dragons.
+Recognize that for us you have done a great thing. Few are the allies
+of dragon in the world of Men. My master hopes you will continue to
+be a friend to the dragon and think of us in your travels.
+You might visit our locaion in Navar if you ever find yourself in the East.
 endmsg
 x 5
 y 1
@@ -452,8 +460,28 @@ x 5
 y 2
 connected 4
 arch dragonclaw_dagger
+name Dragonclaw Dagger
+title of Reparations
+slaying humanoid
+msg
+This dagger has been crafted from the fossilized teeth on long dead
+dragons. It is truly a unique piece. You had better not loose it.
+endmsg
+Str 1
+Cha 1
+dam 8
+luck 2
+resist_fire 10
+resist_fear 10
+material 2048
+value 600
+weapontype 5
+reflect_spell 1
 arch brest_apartment_key
+name dragonfrienshiptoken
+slaying dragon_friend
 face dragon_sca.111
+material 2048
 end
 end
 end

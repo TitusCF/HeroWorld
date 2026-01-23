@@ -749,6 +749,12 @@ y 2
 no_pick 1
 identified 1
 end
+arch check_inv
+race dragonclaw_dagger
+x 9
+y 2
+connected 6
+end
 arch lostlabfloor11
 x 9
 y 3
@@ -883,6 +889,9 @@ y 2
 end
 arch green_dragon2
 name Archivist Veyrix Scale-Eyed
+msg
+
+endmsg
 x 10
 y 2
 monster 0
@@ -995,6 +1004,27 @@ x 11
 end
 arch stwallred_2_2_3
 x 11
+end
+arch creator
+x 11
+arch magic_ear
+msg
+@match hi,hello
+Greetings, I am Veyrix.
+
+@match dragon
+The dragons are nearly extinct, at least those of us possessed of any real
+intellegence. Scorn has waged a war against up, first a war of iron, then of disease
+and subterfuge. You have not made friends among the leaders of your people,
+but you have made friends among mine.
+
+@match dagger
+
+Keep the dagger. It may yet open doors for you that might remain closed
+for others.
+I have no more time for chatter.
+endmsg
+end
 end
 arch lostlabfloor11
 x 11

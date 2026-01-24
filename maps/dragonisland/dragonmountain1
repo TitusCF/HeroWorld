@@ -8,7 +8,7 @@ enter_x 38
 enter_y 11
 msg
 Created:  1997-09-02 Viola Krings (krings@informatik)
-Modified: 2008-10-21 Rick Tanner
+Modified: 2026-01-23 yardc
 endmsg
 end
 arch small_stones
@@ -267,27 +267,47 @@ arch small_stones
 x 1
 y 10
 end
-arch small_stones
+arch t_rock
+x 1
+y 10
+end
+arch fog
+x 1
+y 10
+end
+arch bosgrass6
 x 1
 y 11
 end
-arch small_stones
+arch bosgrass10
 x 1
 y 12
 end
-arch small_stones
+arch bones5
+x 1
+y 12
+end
+arch fog
+x 1
+y 12
+end
+arch bosgrass13
 x 1
 y 13
 end
-arch small_stones
+arch bosgrass14
 x 1
 y 14
 end
-arch small_stones
+arch bones3
+x 1
+y 14
+end
+arch bosgrass6
 x 1
 y 15
 end
-arch small_stones
+arch bosgrass8
 x 1
 y 16
 end
@@ -295,11 +315,11 @@ arch small_stones
 x 1
 y 17
 end
-arch small_stones
+arch t_rock
 x 1
-y 18
+y 17
 end
-arch angel
+arch small_stones
 x 1
 y 18
 end
@@ -307,15 +327,7 @@ arch small_stones
 x 1
 y 19
 end
-arch angel
-x 1
-y 19
-end
 arch small_stones
-x 1
-y 20
-end
-arch angel
 x 1
 y 20
 end
@@ -323,23 +335,11 @@ arch small_stones
 x 1
 y 21
 end
-arch angel
-x 1
-y 21
-end
 arch small_stones
 x 1
 y 22
 end
-arch angel
-x 1
-y 22
-end
 arch small_stones
-x 1
-y 23
-end
-arch angel
 x 1
 y 23
 end
@@ -449,31 +449,39 @@ arch small_stones
 x 2
 y 9
 end
-arch small_stones
+arch bosgrass12
 x 2
 y 10
 end
-arch small_stones
+arch bosgrass8
 x 2
 y 11
 end
-arch small_stones
+arch bosgrass12
 x 2
 y 12
 end
-arch small_stones
+arch grass
+name Old Dragon Nest
+face earth.111
 x 2
 y 13
+move_block swim boat
+harvest_exhaust_replacement earth2
 end
-arch small_stones
+arch bosgrass12
 x 2
 y 14
 end
-arch small_stones
+arch bosgrass16
 x 2
 y 15
 end
-arch small_stones
+arch bones2
+x 2
+y 15
+end
+arch bosgrass12
 x 2
 y 16
 end
@@ -481,11 +489,11 @@ arch small_stones
 x 2
 y 17
 end
-arch small_stones
+arch fog
 x 2
-y 18
+y 17
 end
-arch angel
+arch small_stones
 x 2
 y 18
 end
@@ -493,15 +501,7 @@ arch small_stones
 x 2
 y 19
 end
-arch angel
-x 2
-y 19
-end
 arch small_stones
-x 2
-y 20
-end
-arch angel
 x 2
 y 20
 end
@@ -509,23 +509,11 @@ arch small_stones
 x 2
 y 21
 end
-arch angel
-x 2
-y 21
-end
 arch small_stones
 x 2
 y 22
 end
-arch angel
-x 2
-y 22
-end
 arch small_stones
-x 2
-y 23
-end
-arch angel
 x 2
 y 23
 end
@@ -635,23 +623,39 @@ arch small_stones
 x 3
 y 10
 end
-arch small_stones
+arch fog
+x 3
+y 10
+end
+arch bosgrass10
 x 3
 y 11
 end
-arch small_stones
+arch bosgrass8
 x 3
 y 12
 end
-arch small_stones
+arch bones4
+x 3
+y 12
+end
+arch bosgrass12
 x 3
 y 13
 end
-arch small_stones
+arch bosgrass4
 x 3
 y 14
 end
-arch small_stones
+arch bosgrass7
+x 3
+y 15
+end
+arch rubble
+x 3
+y 15
+end
+arch fog
 x 3
 y 15
 end
@@ -667,15 +671,7 @@ arch small_stones
 x 3
 y 18
 end
-arch angel
-x 3
-y 18
-end
 arch small_stones
-x 3
-y 19
-end
-arch angel
 x 3
 y 19
 end
@@ -683,15 +679,7 @@ arch small_stones
 x 3
 y 20
 end
-arch angel
-x 3
-y 20
-end
 arch small_stones
-x 3
-y 21
-end
-arch angel
 x 3
 y 21
 end
@@ -699,15 +687,7 @@ arch small_stones
 x 3
 y 22
 end
-arch angel
-x 3
-y 22
-end
 arch small_stones
-x 3
-y 23
-end
-arch angel
 x 3
 y 23
 end
@@ -809,11 +789,15 @@ arch small_stones
 x 4
 y 9
 end
+arch t_rock
+x 4
+y 9
+end
 arch small_stones
 x 4
 y 10
 end
-arch small_stones
+arch bosgrass4
 x 4
 y 11
 end
@@ -822,6 +806,10 @@ x 4
 y 12
 end
 arch small_stones
+x 4
+y 13
+end
+arch fog
 x 4
 y 13
 end
@@ -841,11 +829,11 @@ arch small_stones
 x 4
 y 17
 end
-arch small_stones
+arch rubble
 x 4
-y 18
+y 17
 end
-arch angel
+arch small_stones
 x 4
 y 18
 end
@@ -853,15 +841,7 @@ arch small_stones
 x 4
 y 19
 end
-arch angel
-x 4
-y 19
-end
 arch small_stones
-x 4
-y 20
-end
-arch angel
 x 4
 y 20
 end
@@ -869,23 +849,11 @@ arch small_stones
 x 4
 y 21
 end
-arch angel
-x 4
-y 21
-end
 arch small_stones
 x 4
 y 22
 end
-arch angel
-x 4
-y 22
-end
 arch small_stones
-x 4
-y 23
-end
-arch angel
 x 4
 y 23
 end
@@ -1043,6 +1011,10 @@ arch small_stones
 x 5
 y 15
 end
+arch t_rock
+x 5
+y 15
+end
 arch small_stones
 x 5
 y 16
@@ -1055,15 +1027,7 @@ arch small_stones
 x 5
 y 18
 end
-arch angel
-x 5
-y 18
-end
 arch small_stones
-x 5
-y 19
-end
-arch angel
 x 5
 y 19
 end
@@ -1071,15 +1035,7 @@ arch small_stones
 x 5
 y 20
 end
-arch angel
-x 5
-y 20
-end
 arch small_stones
-x 5
-y 21
-end
-arch angel
 x 5
 y 21
 end
@@ -1087,15 +1043,7 @@ arch small_stones
 x 5
 y 22
 end
-arch angel
-x 5
-y 22
-end
 arch small_stones
-x 5
-y 23
-end
-arch angel
 x 5
 y 23
 end
@@ -1269,15 +1217,7 @@ arch small_stones
 x 6
 y 18
 end
-arch angel
-x 6
-y 18
-end
 arch small_stones
-x 6
-y 19
-end
-arch angel
 x 6
 y 19
 end
@@ -1285,15 +1225,7 @@ arch small_stones
 x 6
 y 20
 end
-arch angel
-x 6
-y 20
-end
 arch small_stones
-x 6
-y 21
-end
-arch angel
 x 6
 y 21
 end
@@ -1301,15 +1233,7 @@ arch small_stones
 x 6
 y 22
 end
-arch angel
-x 6
-y 22
-end
 arch small_stones
-x 6
-y 23
-end
-arch angel
 x 6
 y 23
 end
@@ -1467,15 +1391,7 @@ arch small_stones
 x 7
 y 18
 end
-arch angel
-x 7
-y 18
-end
 arch small_stones
-x 7
-y 19
-end
-arch angel
 x 7
 y 19
 end
@@ -1483,15 +1399,7 @@ arch small_stones
 x 7
 y 20
 end
-arch angel
-x 7
-y 20
-end
 arch small_stones
-x 7
-y 21
-end
-arch angel
 x 7
 y 21
 end
@@ -1499,15 +1407,7 @@ arch small_stones
 x 7
 y 22
 end
-arch angel
-x 7
-y 22
-end
 arch small_stones
-x 7
-y 23
-end
-arch angel
 x 7
 y 23
 end
@@ -1640,8 +1540,6 @@ x 8
 y 10
 carrying 30000
 can_cast_spell 0
-arch kobold
-end
 end
 arch small_stones
 x 8

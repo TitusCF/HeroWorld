@@ -556,6 +556,10 @@ y 20
 invisible 1
 connected 123
 end
+arch barrel
+x 2
+y 20
+end
 arch woodfloor
 x 2
 y 21
@@ -575,11 +579,15 @@ y 21
 invisible 1
 connected 123
 end
+arch barrel
+x 2
+y 21
+end
 arch woodfloor
 x 2
 y 22
 end
-arch table_2x2
+arch barrel
 x 2
 y 22
 end
@@ -588,6 +596,10 @@ x 2
 y 23
 end
 arch woodfloor
+x 2
+y 24
+end
+arch brazier
 x 2
 y 24
 end
@@ -791,7 +803,15 @@ arch woodfloor
 x 3
 y 20
 end
+arch barrel
+x 3
+y 20
+end
 arch woodfloor
+x 3
+y 21
+end
+arch barrel
 x 3
 y 21
 end
@@ -799,15 +819,15 @@ arch woodfloor
 x 3
 y 22
 end
-arch woodfloor
+arch woodfloor2
 x 3
 y 23
 end
-arch woodfloor
+arch woodfloor2
 x 3
 y 24
 end
-arch woodfloor
+arch woodfloor2
 x 3
 y 25
 end
@@ -1016,6 +1036,10 @@ y 20
 invisible 1
 connected 123
 end
+arch barrel
+x 4
+y 20
+end
 arch woodfloor
 x 4
 y 21
@@ -1054,10 +1078,6 @@ y 22
 invisible 1
 connected 123
 end
-arch woodfloor
-x 4
-y 23
-end
 arch altar_trigger
 name Proximity Detector
 slaying Cannon Ball
@@ -1073,9 +1093,9 @@ y 23
 invisible 1
 connected 123
 end
-arch woodfloor
+arch woodfloor2
 x 4
-y 24
+y 23
 end
 arch altar_trigger
 name Proximity Detector
@@ -1092,7 +1112,11 @@ y 24
 invisible 1
 connected 123
 end
-arch woodfloor
+arch woodfloor2
+x 4
+y 24
+end
+arch woodfloor2
 x 4
 y 25
 end
@@ -1297,13 +1321,9 @@ arch woodfloor
 x 5
 y 22
 end
-arch woodfloor
+arch woodfloor2
 x 5
 y 23
-end
-arch woodfloor
-x 5
-y 24
 end
 arch altar_trigger
 name Proximity Detector
@@ -1320,7 +1340,11 @@ y 24
 invisible 1
 connected 123
 end
-arch woodfloor
+arch woodfloor2
+x 5
+y 24
+end
+arch woodfloor2
 x 5
 y 25
 end
@@ -1504,6 +1528,10 @@ x 6
 y 24
 invisible 1
 connected 123
+end
+arch brazier
+x 6
+y 24
 end
 arch woodfloor
 x 6
@@ -1766,14 +1794,9 @@ slaying sea_library
 x 7
 y 29
 end
-arch sea
-slaying sea_library
-x 7
-y 30
-end
 arch mover_3
 x 7
-y 30
+y 29
 speed .5
 move_type fly_low
 move_on fly_low
@@ -1781,18 +1804,18 @@ end
 arch sea
 slaying sea_library
 x 7
-y 31
+y 30
 end
 arch mover_1
 x 7
-y 31
+y 30
 speed .5
 move_type fly_low
 move_on fly_low
 end
 arch bird
 x 7
-y 31
+y 30
 move_type fly_low
 monster 0
 sleep 0
@@ -1818,14 +1841,19 @@ end
 arch sea
 slaying sea_library
 x 7
-y 32
+y 31
 end
 arch mover_1
 x 7
-y 32
+y 31
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea
+slaying sea_library
+x 7
+y 32
 end
 arch sea
 x 8
@@ -2075,34 +2103,34 @@ slaying sea_library
 x 8
 y 29
 end
+arch mover_3
+x 8
+y 29
+speed .5
+move_type fly_low
+move_on fly_low
+end
 arch sea
 slaying sea_library
 x 8
 y 30
-end
-arch mover_3
-x 8
-y 30
-speed .5
-move_type fly_low
-move_on fly_low
 end
 arch sea
 slaying sea_library
 x 8
 y 31
 end
+arch mover_7
+x 8
+y 31
+speed .5
+move_type fly_low
+move_on fly_low
+end
 arch sea
 slaying sea_library
 x 8
 y 32
-end
-arch mover_7
-x 8
-y 32
-speed .5
-move_type fly_low
-move_on fly_low
 end
 arch sea
 x 9
@@ -2368,34 +2396,34 @@ slaying sea_library
 x 9
 y 29
 end
+arch mover_3
+x 9
+y 29
+speed .5
+move_type fly_low
+move_on fly_low
+end
 arch sea
 slaying sea_library
 x 9
 y 30
-end
-arch mover_3
-x 9
-y 30
-speed .5
-move_type fly_low
-move_on fly_low
 end
 arch sea
 slaying sea_library
 x 9
 y 31
 end
+arch mover_7
+x 9
+y 31
+speed .5
+move_type fly_low
+move_on fly_low
+end
 arch sea
 slaying sea_library
 x 9
 y 32
-end
-arch mover_7
-x 9
-y 32
-speed .5
-move_type fly_low
-move_on fly_low
 end
 arch sea
 x 10
@@ -2630,34 +2658,33 @@ slaying sea_library
 x 10
 y 29
 end
+arch mover_3
+x 10
+y 29
+speed .5
+move_type fly_low
+move_on fly_low
+end
 arch sea
 slaying sea_library
 x 10
 y 30
-end
-arch mover_3
-x 10
-y 30
-speed .5
-move_type fly_low
-move_on fly_low
 end
 arch sea
 slaying sea_library
 x 10
 y 31
 end
-arch sea
-slaying sea_library
-x 10
-y 32
-end
 arch mover_7
 x 10
-y 32
+y 31
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea1
+x 10
+y 32
 end
 arch sea
 x 11
@@ -2838,6 +2865,21 @@ arch woodfloor
 x 11
 y 26
 end
+arch altar_trigger
+name Proximity Detector
+slaying Cannon Ball
+msg
+> Proximity Detector Activated
+>Cannon Ball Relocation in 3...2...1
+endmsg
+face woodfloor.111
+exp 1
+food 1
+x 11
+y 26
+invisible 1
+connected 123
+end
 arch woodfloor
 x 11
 y 27
@@ -2852,38 +2894,38 @@ arch sea1
 x 11
 y 28
 end
-arch sea1
+arch sea
+slaying sea_library
 x 11
 y 29
+end
+arch mover_3
+x 11
+y 29
+speed .5
+move_type fly_low
+move_on fly_low
 end
 arch sea
 slaying sea_library
 x 11
 y 30
-end
-arch mover_3
-x 11
-y 30
-speed .5
-move_type fly_low
-move_on fly_low
 end
 arch sea
 slaying sea_library
 x 11
 y 31
 end
-arch sea
-slaying sea_library
-x 11
-y 32
-end
 arch mover_7
 x 11
-y 32
+y 31
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea1
+x 11
+y 32
 end
 arch sea
 x 12
@@ -3061,6 +3103,21 @@ arch woodfloor
 x 12
 y 26
 end
+arch altar_trigger
+name Proximity Detector
+slaying Cannon Ball
+msg
+> Proximity Detector Activated
+>Cannon Ball Relocation in 3...2...1
+endmsg
+face woodfloor.111
+exp 1
+food 1
+x 12
+y 26
+invisible 1
+connected 123
+end
 arch woodfloor
 x 12
 y 27
@@ -3075,38 +3132,38 @@ arch sea1
 x 12
 y 28
 end
-arch sea1
+arch sea
+slaying sea_library
 x 12
 y 29
+end
+arch mover_3
+x 12
+y 29
+speed .5
+move_type fly_low
+move_on fly_low
 end
 arch sea
 slaying sea_library
 x 12
 y 30
-end
-arch mover_3
-x 12
-y 30
-speed .5
-move_type fly_low
-move_on fly_low
 end
 arch sea
 slaying sea_library
 x 12
 y 31
 end
-arch sea
-slaying sea_library
-x 12
-y 32
-end
 arch mover_7
 x 12
-y 32
+y 31
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea1
+x 12
+y 32
 end
 arch sea
 x 13
@@ -3357,38 +3414,38 @@ arch sea1
 x 13
 y 28
 end
-arch sea1
+arch sea
+slaying sea_library
 x 13
 y 29
+end
+arch mover_3
+x 13
+y 29
+speed .5
+move_type fly_low
+move_on fly_low
 end
 arch sea
 slaying sea_library
 x 13
 y 30
-end
-arch mover_3
-x 13
-y 30
-speed .5
-move_type fly_low
-move_on fly_low
 end
 arch sea
 slaying sea_library
 x 13
 y 31
 end
-arch sea
-slaying sea_library
-x 13
-y 32
-end
 arch mover_7
 x 13
-y 32
+y 31
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea1
+x 13
+y 32
 end
 arch sea
 x 14
@@ -3654,44 +3711,38 @@ arch sea1
 x 14
 y 28
 end
-arch director_3
-x 14
-y 29
-move_on fly_low
-end
 arch sea
 slaying sea_library
 x 14
 y 29
-end
-arch sea
-slaying sea_library
-x 14
-y 30
 end
 arch mover_3
 x 14
-y 30
+y 29
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea
+slaying sea_library
+x 14
+y 30
 end
 arch sea
 slaying sea_library
 x 14
 y 31
 end
-arch sea
-slaying sea_library
-x 14
-y 32
-end
 arch mover_7
 x 14
-y 32
+y 31
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea1
+x 14
+y 32
 end
 arch sea
 x 15
@@ -3863,6 +3914,21 @@ arch woodfloor
 x 15
 y 26
 end
+arch altar_trigger
+name Proximity Detector
+slaying Cannon Ball
+msg
+> Proximity Detector Activated
+>Cannon Ball Relocation in 3...2...1
+endmsg
+face woodfloor.111
+exp 1
+food 1
+x 15
+y 26
+invisible 1
+connected 123
+end
 arch woodfloor
 x 15
 y 27
@@ -3877,44 +3943,38 @@ arch sea1
 x 15
 y 28
 end
-arch director_3
-x 15
-y 29
-move_on fly_low
-end
 arch sea
 slaying sea_library
 x 15
 y 29
-end
-arch sea
-slaying sea_library
-x 15
-y 30
 end
 arch mover_3
 x 15
-y 30
+y 29
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea
+slaying sea_library
+x 15
+y 30
 end
 arch sea
 slaying sea_library
 x 15
 y 31
 end
-arch sea
-slaying sea_library
-x 15
-y 32
-end
 arch mover_7
 x 15
-y 32
+y 31
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea1
+x 15
+y 32
 end
 arch sea
 x 16
@@ -4090,6 +4150,21 @@ arch woodfloor
 x 16
 y 26
 end
+arch altar_trigger
+name Proximity Detector
+slaying Cannon Ball
+msg
+> Proximity Detector Activated
+>Cannon Ball Relocation in 3...2...1
+endmsg
+face woodfloor.111
+exp 1
+food 1
+x 16
+y 26
+invisible 1
+connected 123
+end
 arch woodfloor
 x 16
 y 27
@@ -4104,44 +4179,38 @@ arch sea1
 x 16
 y 28
 end
-arch director_3
-x 16
-y 29
-move_on fly_low
-end
 arch sea
 slaying sea_library
 x 16
 y 29
-end
-arch sea
-slaying sea_library
-x 16
-y 30
 end
 arch mover_3
 x 16
-y 30
+y 29
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea
+slaying sea_library
+x 16
+y 30
 end
 arch sea
 slaying sea_library
 x 16
 y 31
 end
-arch sea
-slaying sea_library
-x 16
-y 32
-end
 arch mover_7
 x 16
-y 32
+y 31
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea1
+x 16
+y 32
 end
 arch sea
 x 17
@@ -4378,44 +4447,38 @@ arch sea1
 x 17
 y 28
 end
-arch director_3
-x 17
-y 29
-move_on fly_low
-end
 arch sea
 slaying sea_library
 x 17
 y 29
-end
-arch sea
-slaying sea_library
-x 17
-y 30
 end
 arch mover_3
 x 17
-y 30
+y 29
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea
+slaying sea_library
+x 17
+y 30
 end
 arch sea
 slaying sea_library
 x 17
 y 31
 end
-arch sea
-slaying sea_library
-x 17
-y 32
-end
 arch mover_7
 x 17
-y 32
+y 31
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea1
+x 17
+y 32
 end
 arch sea
 x 18
@@ -4663,44 +4726,39 @@ slaying sea_library
 x 18
 y 28
 end
-arch director_3
-x 18
-y 29
-move_on fly_low
-end
 arch sea
 slaying sea_library
 x 18
 y 29
-end
-arch sea
-slaying sea_library
-x 18
-y 30
 end
 arch mover_3
 x 18
-y 30
+y 29
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea
+slaying sea_library
+x 18
+y 30
 end
 arch sea
 slaying sea_library
 x 18
 y 31
 end
+arch mover_7
+x 18
+y 31
+speed .5
+move_type fly_low
+move_on fly_low
+end
 arch sea
 slaying sea_library
 x 18
 y 32
-end
-arch mover_7
-x 18
-y 32
-speed .5
-move_type fly_low
-move_on fly_low
 end
 arch sea
 x 19
@@ -4852,6 +4910,21 @@ arch woodfloor
 x 19
 y 26
 end
+arch altar_trigger
+name Proximity Detector
+slaying Cannon Ball
+msg
+> Proximity Detector Activated
+>Cannon Ball Relocation in 3...2...1
+endmsg
+face woodfloor.111
+exp 1
+food 1
+x 19
+y 26
+invisible 1
+connected 123
+end
 arch woodfloor
 x 19
 y 27
@@ -4866,44 +4939,38 @@ arch sea1
 x 19
 y 28
 end
-arch director_3
-x 19
-y 29
-move_on fly_low
-end
 arch sea
 slaying sea_library
 x 19
 y 29
-end
-arch sea
-slaying sea_library
-x 19
-y 30
 end
 arch mover_3
 x 19
-y 30
+y 29
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea
+slaying sea_library
+x 19
+y 30
 end
 arch sea
 slaying sea_library
 x 19
 y 31
 end
-arch sea
-slaying sea_library
-x 19
-y 32
-end
 arch mover_7
 x 19
-y 32
+y 31
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea1
+x 19
+y 32
 end
 arch sea
 x 20
@@ -5055,6 +5122,21 @@ arch woodfloor
 x 20
 y 26
 end
+arch altar_trigger
+name Proximity Detector
+slaying Cannon Ball
+msg
+> Proximity Detector Activated
+>Cannon Ball Relocation in 3...2...1
+endmsg
+face woodfloor.111
+exp 1
+food 1
+x 20
+y 26
+invisible 1
+connected 123
+end
 arch woodfloor
 x 20
 y 27
@@ -5074,34 +5156,33 @@ slaying sea_library
 x 20
 y 29
 end
+arch mover_3
+x 20
+y 29
+speed .5
+move_type fly_low
+move_on fly_low
+end
 arch sea
 slaying sea_library
 x 20
 y 30
-end
-arch mover_3
-x 20
-y 30
-speed .5
-move_type fly_low
-move_on fly_low
 end
 arch sea
 slaying sea_library
 x 20
 y 31
 end
-arch sea
-slaying sea_library
-x 20
-y 32
-end
 arch mover_7
 x 20
-y 32
+y 31
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea1
+x 20
+y 32
 end
 arch sea
 x 21
@@ -5322,38 +5403,38 @@ arch sea1
 x 21
 y 28
 end
-arch sea1
+arch sea
+slaying sea_library
 x 21
 y 29
+end
+arch mover_3
+x 21
+y 29
+speed .5
+move_type fly_low
+move_on fly_low
 end
 arch sea
 slaying sea_library
 x 21
 y 30
-end
-arch mover_3
-x 21
-y 30
-speed .5
-move_type fly_low
-move_on fly_low
 end
 arch sea
 slaying sea_library
 x 21
 y 31
 end
-arch sea
-slaying sea_library
-x 21
-y 32
-end
 arch mover_7
 x 21
-y 32
+y 31
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea1
+x 21
+y 32
 end
 arch sea
 x 22
@@ -5594,38 +5675,38 @@ arch sea1
 x 22
 y 28
 end
-arch sea1
+arch sea
+slaying sea_library
 x 22
 y 29
+end
+arch mover_3
+x 22
+y 29
+speed .5
+move_type fly_low
+move_on fly_low
 end
 arch sea
 slaying sea_library
 x 22
 y 30
-end
-arch mover_3
-x 22
-y 30
-speed .5
-move_type fly_low
-move_on fly_low
 end
 arch sea
 slaying sea_library
 x 22
 y 31
 end
-arch sea
-slaying sea_library
-x 22
-y 32
-end
 arch mover_7
 x 22
-y 32
+y 31
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea1
+x 22
+y 32
 end
 arch sea
 x 23
@@ -5784,6 +5865,21 @@ arch woodfloor
 x 23
 y 26
 end
+arch altar_trigger
+name Proximity Detector
+slaying Cannon Ball
+msg
+> Proximity Detector Activated
+>Cannon Ball Relocation in 3...2...1
+endmsg
+face woodfloor.111
+exp 1
+food 1
+x 23
+y 26
+invisible 1
+connected 123
+end
 arch woodfloor
 x 23
 y 27
@@ -5798,38 +5894,38 @@ arch sea1
 x 23
 y 28
 end
-arch sea1
+arch sea
+slaying sea_library
 x 23
 y 29
+end
+arch mover_3
+x 23
+y 29
+speed .5
+move_type fly_low
+move_on fly_low
 end
 arch sea
 slaying sea_library
 x 23
 y 30
-end
-arch mover_3
-x 23
-y 30
-speed .5
-move_type fly_low
-move_on fly_low
 end
 arch sea
 slaying sea_library
 x 23
 y 31
 end
-arch sea
-slaying sea_library
-x 23
-y 32
-end
 arch mover_7
 x 23
-y 32
+y 31
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea1
+x 23
+y 32
 end
 arch sea
 x 24
@@ -5993,6 +6089,21 @@ arch woodfloor
 x 24
 y 26
 end
+arch altar_trigger
+name Proximity Detector
+slaying Cannon Ball
+msg
+> Proximity Detector Activated
+>Cannon Ball Relocation in 3...2...1
+endmsg
+face woodfloor.111
+exp 1
+food 1
+x 24
+y 26
+invisible 1
+connected 123
+end
 arch woodfloor
 x 24
 y 27
@@ -6012,34 +6123,33 @@ slaying sea_library
 x 24
 y 29
 end
+arch mover_3
+x 24
+y 29
+speed .5
+move_type fly_low
+move_on fly_low
+end
 arch sea
 slaying sea_library
 x 24
 y 30
-end
-arch mover_3
-x 24
-y 30
-speed .5
-move_type fly_low
-move_on fly_low
 end
 arch sea
 slaying sea_library
 x 24
 y 31
 end
-arch sea
-slaying sea_library
-x 24
-y 32
-end
 arch mover_7
 x 24
-y 32
+y 31
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea1
+x 24
+y 32
 end
 arch sea
 x 25
@@ -6252,38 +6362,38 @@ arch sea1
 x 25
 y 28
 end
-arch sea1
+arch sea
+slaying sea_library
 x 25
 y 29
+end
+arch mover_3
+x 25
+y 29
+speed .5
+move_type fly_low
+move_on fly_low
 end
 arch sea
 slaying sea_library
 x 25
 y 30
-end
-arch mover_3
-x 25
-y 30
-speed .5
-move_type fly_low
-move_on fly_low
 end
 arch sea
 slaying sea_library
 x 25
 y 31
 end
-arch sea
-slaying sea_library
-x 25
-y 32
-end
 arch mover_7
 x 25
-y 32
+y 31
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea1
+x 25
+y 32
 end
 arch sea
 x 26
@@ -6540,38 +6650,38 @@ arch sea1
 x 26
 y 28
 end
-arch sea1
+arch sea
+slaying sea_library
 x 26
 y 29
+end
+arch mover_3
+x 26
+y 29
+speed .5
+move_type fly_low
+move_on fly_low
 end
 arch sea
 slaying sea_library
 x 26
 y 30
-end
-arch mover_3
-x 26
-y 30
-speed .5
-move_type fly_low
-move_on fly_low
 end
 arch sea
 slaying sea_library
 x 26
 y 31
 end
-arch sea
-slaying sea_library
-x 26
-y 32
-end
 arch mover_7
 x 26
-y 32
+y 31
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea1
+x 26
+y 32
 end
 arch sea
 x 27
@@ -6747,6 +6857,21 @@ arch woodfloor
 x 27
 y 26
 end
+arch altar_trigger
+name Proximity Detector
+slaying Cannon Ball
+msg
+> Proximity Detector Activated
+>Cannon Ball Relocation in 3...2...1
+endmsg
+face woodfloor.111
+exp 1
+food 1
+x 27
+y 26
+invisible 1
+connected 123
+end
 arch woodfloor
 x 27
 y 27
@@ -6761,38 +6886,38 @@ arch sea1
 x 27
 y 28
 end
-arch sea1
+arch sea
+slaying sea_library
 x 27
 y 29
+end
+arch mover_3
+x 27
+y 29
+speed .5
+move_type fly_low
+move_on fly_low
 end
 arch sea
 slaying sea_library
 x 27
 y 30
-end
-arch mover_3
-x 27
-y 30
-speed .5
-move_type fly_low
-move_on fly_low
 end
 arch sea
 slaying sea_library
 x 27
 y 31
 end
-arch sea
-slaying sea_library
-x 27
-y 32
-end
 arch mover_7
 x 27
-y 32
+y 31
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea1
+x 27
+y 32
 end
 arch sea
 x 28
@@ -6988,6 +7113,21 @@ arch woodfloor
 x 28
 y 26
 end
+arch altar_trigger
+name Proximity Detector
+slaying Cannon Ball
+msg
+> Proximity Detector Activated
+>Cannon Ball Relocation in 3...2...1
+endmsg
+face woodfloor.111
+exp 1
+food 1
+x 28
+y 26
+invisible 1
+connected 123
+end
 arch woodfloor
 x 28
 y 27
@@ -7002,38 +7142,38 @@ arch sea1
 x 28
 y 28
 end
-arch sea1
+arch sea
+slaying sea_library
 x 28
 y 29
+end
+arch mover_3
+x 28
+y 29
+speed .5
+move_type fly_low
+move_on fly_low
 end
 arch sea
 slaying sea_library
 x 28
 y 30
-end
-arch mover_3
-x 28
-y 30
-speed .5
-move_type fly_low
-move_on fly_low
 end
 arch sea
 slaying sea_library
 x 28
 y 31
 end
-arch sea
-slaying sea_library
-x 28
-y 32
-end
 arch mover_7
 x 28
-y 32
+y 31
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea1
+x 28
+y 32
 end
 arch sea
 x 29
@@ -7300,38 +7440,38 @@ arch sea1
 x 29
 y 28
 end
-arch sea1
+arch sea
+slaying sea_library
 x 29
 y 29
+end
+arch mover_3
+x 29
+y 29
+speed .5
+move_type fly_low
+move_on fly_low
 end
 arch sea
 slaying sea_library
 x 29
 y 30
-end
-arch mover_3
-x 29
-y 30
-speed .5
-move_type fly_low
-move_on fly_low
 end
 arch sea
 slaying sea_library
 x 29
 y 31
 end
-arch sea
-slaying sea_library
-x 29
-y 32
-end
 arch mover_7
 x 29
-y 32
+y 31
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea1
+x 29
+y 32
 end
 arch sea
 x 30
@@ -7592,44 +7732,38 @@ arch sea1
 x 30
 y 28
 end
-arch director_3
-x 30
-y 29
-move_on fly_low
-end
 arch sea
 slaying sea_library
 x 30
 y 29
-end
-arch sea
-slaying sea_library
-x 30
-y 30
 end
 arch mover_3
 x 30
-y 30
+y 29
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea
+slaying sea_library
+x 30
+y 30
 end
 arch sea
 slaying sea_library
 x 30
 y 31
 end
-arch sea
-slaying sea_library
-x 30
-y 32
-end
 arch mover_7
 x 30
-y 32
+y 31
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea1
+x 30
+y 32
 end
 arch sea
 x 31
@@ -7797,6 +7931,21 @@ arch woodfloor
 x 31
 y 26
 end
+arch altar_trigger
+name Proximity Detector
+slaying Cannon Ball
+msg
+> Proximity Detector Activated
+>Cannon Ball Relocation in 3...2...1
+endmsg
+face woodfloor.111
+exp 1
+food 1
+x 31
+y 26
+invisible 1
+connected 123
+end
 arch woodfloor
 x 31
 y 27
@@ -7812,44 +7961,39 @@ slaying sea_library
 x 31
 y 28
 end
-arch director_3
-x 31
-y 29
-move_on fly_low
-end
 arch sea
 slaying sea_library
 x 31
 y 29
-end
-arch sea
-slaying sea_library
-x 31
-y 30
 end
 arch mover_3
 x 31
-y 30
+y 29
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea
+slaying sea_library
+x 31
+y 30
 end
 arch sea
 slaying sea_library
 x 31
 y 31
 end
+arch mover_7
+x 31
+y 31
+speed .5
+move_type fly_low
+move_on fly_low
+end
 arch sea
 slaying sea_library
 x 31
 y 32
-end
-arch mover_7
-x 31
-y 32
-speed .5
-move_type fly_low
-move_on fly_low
 end
 arch sea
 x 32
@@ -8049,6 +8193,21 @@ arch woodfloor
 x 32
 y 26
 end
+arch altar_trigger
+name Proximity Detector
+slaying Cannon Ball
+msg
+> Proximity Detector Activated
+>Cannon Ball Relocation in 3...2...1
+endmsg
+face woodfloor.111
+exp 1
+food 1
+x 32
+y 26
+invisible 1
+connected 123
+end
 arch woodfloor
 x 32
 y 27
@@ -8063,44 +8222,38 @@ arch sea1
 x 32
 y 28
 end
-arch director_3
-x 32
-y 29
-move_on fly_low
-end
 arch sea
 slaying sea_library
 x 32
 y 29
-end
-arch sea
-slaying sea_library
-x 32
-y 30
 end
 arch mover_3
 x 32
-y 30
+y 29
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea
+slaying sea_library
+x 32
+y 30
 end
 arch sea
 slaying sea_library
 x 32
 y 31
 end
-arch sea
-slaying sea_library
-x 32
-y 32
-end
 arch mover_7
 x 32
-y 32
+y 31
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea1
+x 32
+y 32
 end
 arch sea
 x 33
@@ -8337,44 +8490,38 @@ arch sea1
 x 33
 y 28
 end
-arch director_3
-x 33
-y 29
-move_on fly_low
-end
 arch sea
 slaying sea_library
 x 33
 y 29
-end
-arch sea
-slaying sea_library
-x 33
-y 30
 end
 arch mover_3
 x 33
-y 30
+y 29
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea
+slaying sea_library
+x 33
+y 30
 end
 arch sea
 slaying sea_library
 x 33
 y 31
 end
-arch sea
-slaying sea_library
-x 33
-y 32
-end
 arch mover_7
 x 33
-y 32
+y 31
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea1
+x 33
+y 32
 end
 arch sea
 x 34
@@ -8631,38 +8778,38 @@ arch sea1
 x 34
 y 28
 end
-arch sea1
+arch sea
+slaying sea_library
 x 34
 y 29
+end
+arch mover_3
+x 34
+y 29
+speed .5
+move_type fly_low
+move_on fly_low
 end
 arch sea
 slaying sea_library
 x 34
 y 30
-end
-arch mover_3
-x 34
-y 30
-speed .5
-move_type fly_low
-move_on fly_low
 end
 arch sea
 slaying sea_library
 x 34
 y 31
 end
-arch sea
-slaying sea_library
-x 34
-y 32
-end
 arch mover_7
 x 34
-y 32
+y 31
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea1
+x 34
+y 32
 end
 arch sea
 x 35
@@ -8838,6 +8985,21 @@ arch woodfloor
 x 35
 y 26
 end
+arch altar_trigger
+name Proximity Detector
+slaying Cannon Ball
+msg
+> Proximity Detector Activated
+>Cannon Ball Relocation in 3...2...1
+endmsg
+face woodfloor.111
+exp 1
+food 1
+x 35
+y 26
+invisible 1
+connected 123
+end
 arch woodfloor
 x 35
 y 27
@@ -8852,38 +9014,38 @@ arch sea1
 x 35
 y 28
 end
-arch sea1
+arch sea
+slaying sea_library
 x 35
 y 29
+end
+arch mover_3
+x 35
+y 29
+speed .5
+move_type fly_low
+move_on fly_low
 end
 arch sea
 slaying sea_library
 x 35
 y 30
-end
-arch mover_3
-x 35
-y 30
-speed .5
-move_type fly_low
-move_on fly_low
 end
 arch sea
 slaying sea_library
 x 35
 y 31
 end
-arch sea
-slaying sea_library
-x 35
-y 32
-end
 arch mover_7
 x 35
-y 32
+y 31
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea1
+x 35
+y 32
 end
 arch sea
 x 36
@@ -9071,6 +9233,21 @@ arch woodfloor
 x 36
 y 26
 end
+arch altar_trigger
+name Proximity Detector
+slaying Cannon Ball
+msg
+> Proximity Detector Activated
+>Cannon Ball Relocation in 3...2...1
+endmsg
+face woodfloor.111
+exp 1
+food 1
+x 36
+y 26
+invisible 1
+connected 123
+end
 arch woodfloor
 x 36
 y 27
@@ -9085,38 +9262,38 @@ arch sea1
 x 36
 y 28
 end
-arch sea1
+arch sea
+slaying sea_library
 x 36
 y 29
+end
+arch mover_3
+x 36
+y 29
+speed .5
+move_type fly_low
+move_on fly_low
 end
 arch sea
 slaying sea_library
 x 36
 y 30
-end
-arch mover_3
-x 36
-y 30
-speed .5
-move_type fly_low
-move_on fly_low
 end
 arch sea
 slaying sea_library
 x 36
 y 31
 end
-arch sea
-slaying sea_library
-x 36
-y 32
-end
 arch mover_7
 x 36
-y 32
+y 31
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea1
+x 36
+y 32
 end
 arch sea
 x 37
@@ -9353,38 +9530,38 @@ arch sea1
 x 37
 y 28
 end
-arch sea1
+arch sea
+slaying sea_library
 x 37
 y 29
+end
+arch mover_3
+x 37
+y 29
+speed .5
+move_type fly_low
+move_on fly_low
 end
 arch sea
 slaying sea_library
 x 37
 y 30
-end
-arch mover_3
-x 37
-y 30
-speed .5
-move_type fly_low
-move_on fly_low
 end
 arch sea
 slaying sea_library
 x 37
 y 31
 end
-arch sea
-slaying sea_library
-x 37
-y 32
-end
 arch mover_7
 x 37
-y 32
+y 31
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea1
+x 37
+y 32
 end
 arch sea
 x 38
@@ -9666,34 +9843,33 @@ slaying sea_library
 x 38
 y 29
 end
+arch mover_3
+x 38
+y 29
+speed .5
+move_type fly_low
+move_on fly_low
+end
 arch sea
 slaying sea_library
 x 38
 y 30
-end
-arch mover_3
-x 38
-y 30
-speed .5
-move_type fly_low
-move_on fly_low
 end
 arch sea
 slaying sea_library
 x 38
 y 31
 end
-arch sea
-slaying sea_library
-x 38
-y 32
-end
 arch mover_7
 x 38
-y 32
+y 31
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea1
+x 38
+y 32
 end
 arch sea
 x 39
@@ -9861,6 +10037,21 @@ arch woodfloor
 x 39
 y 26
 end
+arch altar_trigger
+name Proximity Detector
+slaying Cannon Ball
+msg
+> Proximity Detector Activated
+>Cannon Ball Relocation in 3...2...1
+endmsg
+face woodfloor.111
+exp 1
+food 1
+x 39
+y 26
+invisible 1
+connected 123
+end
 arch woodfloor
 x 39
 y 27
@@ -9880,34 +10071,33 @@ slaying sea_library
 x 39
 y 29
 end
+arch mover_3
+x 39
+y 29
+speed .5
+move_type fly_low
+move_on fly_low
+end
 arch sea
 slaying sea_library
 x 39
 y 30
-end
-arch mover_3
-x 39
-y 30
-speed .5
-move_type fly_low
-move_on fly_low
 end
 arch sea
 slaying sea_library
 x 39
 y 31
 end
-arch sea
-slaying sea_library
-x 39
-y 32
-end
 arch mover_7
 x 39
-y 32
+y 31
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea1
+x 39
+y 32
 end
 arch sea
 x 40
@@ -10091,6 +10281,21 @@ arch woodfloor
 x 40
 y 26
 end
+arch altar_trigger
+name Proximity Detector
+slaying Cannon Ball
+msg
+> Proximity Detector Activated
+>Cannon Ball Relocation in 3...2...1
+endmsg
+face woodfloor.111
+exp 1
+food 1
+x 40
+y 26
+invisible 1
+connected 123
+end
 arch woodfloor
 x 40
 y 27
@@ -10105,38 +10310,38 @@ arch sea1
 x 40
 y 28
 end
-arch sea1
+arch sea
+slaying sea_library
 x 40
 y 29
+end
+arch mover_3
+x 40
+y 29
+speed .5
+move_type fly_low
+move_on fly_low
 end
 arch sea
 slaying sea_library
 x 40
 y 30
-end
-arch mover_3
-x 40
-y 30
-speed .5
-move_type fly_low
-move_on fly_low
 end
 arch sea
 slaying sea_library
 x 40
 y 31
 end
-arch sea
-slaying sea_library
-x 40
-y 32
-end
 arch mover_7
 x 40
-y 32
+y 31
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea1
+x 40
+y 32
 end
 arch sea
 x 41
@@ -10373,38 +10578,38 @@ arch sea1
 x 41
 y 28
 end
-arch sea1
+arch sea
+slaying sea_library
 x 41
 y 29
+end
+arch mover_3
+x 41
+y 29
+speed .5
+move_type fly_low
+move_on fly_low
 end
 arch sea
 slaying sea_library
 x 41
 y 30
-end
-arch mover_3
-x 41
-y 30
-speed .5
-move_type fly_low
-move_on fly_low
 end
 arch sea
 slaying sea_library
 x 41
 y 31
 end
-arch sea
-slaying sea_library
-x 41
-y 32
-end
 arch mover_7
 x 41
-y 32
+y 31
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea1
+x 41
+y 32
 end
 arch sea
 x 42
@@ -10639,38 +10844,38 @@ arch sea1
 x 42
 y 28
 end
-arch sea1
+arch sea
+slaying sea_library
 x 42
 y 29
+end
+arch mover_3
+x 42
+y 29
+speed .5
+move_type fly_low
+move_on fly_low
 end
 arch sea
 slaying sea_library
 x 42
 y 30
-end
-arch mover_3
-x 42
-y 30
-speed .5
-move_type fly_low
-move_on fly_low
 end
 arch sea
 slaying sea_library
 x 42
 y 31
 end
-arch sea
-slaying sea_library
-x 42
-y 32
-end
 arch mover_7
 x 42
-y 32
+y 31
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea1
+x 42
+y 32
 end
 arch sea
 x 43
@@ -10830,6 +11035,21 @@ arch woodfloor
 x 43
 y 26
 end
+arch altar_trigger
+name Proximity Detector
+slaying Cannon Ball
+msg
+> Proximity Detector Activated
+>Cannon Ball Relocation in 3...2...1
+endmsg
+face woodfloor.111
+exp 1
+food 1
+x 43
+y 26
+invisible 1
+connected 123
+end
 arch woodfloor
 x 43
 y 27
@@ -10844,38 +11064,38 @@ arch sea1
 x 43
 y 28
 end
-arch sea1
+arch sea
+slaying sea_library
 x 43
 y 29
+end
+arch mover_3
+x 43
+y 29
+speed .5
+move_type fly_low
+move_on fly_low
 end
 arch sea
 slaying sea_library
 x 43
 y 30
-end
-arch mover_3
-x 43
-y 30
-speed .5
-move_type fly_low
-move_on fly_low
 end
 arch sea
 slaying sea_library
 x 43
 y 31
 end
-arch sea
-slaying sea_library
-x 43
-y 32
-end
 arch mover_7
 x 43
-y 32
+y 31
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea1
+x 43
+y 32
 end
 arch sea
 x 44
@@ -11053,6 +11273,21 @@ arch woodfloor
 x 44
 y 26
 end
+arch altar_trigger
+name Proximity Detector
+slaying Cannon Ball
+msg
+> Proximity Detector Activated
+>Cannon Ball Relocation in 3...2...1
+endmsg
+face woodfloor.111
+exp 1
+food 1
+x 44
+y 26
+invisible 1
+connected 123
+end
 arch woodfloor
 x 44
 y 27
@@ -11067,38 +11302,38 @@ arch sea1
 x 44
 y 28
 end
-arch sea1
+arch sea
+slaying sea_library
 x 44
 y 29
+end
+arch mover_3
+x 44
+y 29
+speed .5
+move_type fly_low
+move_on fly_low
 end
 arch sea
 slaying sea_library
 x 44
 y 30
-end
-arch mover_3
-x 44
-y 30
-speed .5
-move_type fly_low
-move_on fly_low
 end
 arch sea
 slaying sea_library
 x 44
 y 31
 end
-arch sea
-slaying sea_library
-x 44
-y 32
-end
 arch mover_7
 x 44
-y 32
+y 31
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea1
+x 44
+y 32
 end
 arch sea
 x 45
@@ -11336,38 +11571,39 @@ slaying sea_library
 x 45
 y 28
 end
-arch sea1
+arch sea
+slaying sea_library
 x 45
 y 29
+end
+arch mover_3
+x 45
+y 29
+speed .5
+move_type fly_low
+move_on fly_low
 end
 arch sea
 slaying sea_library
 x 45
 y 30
-end
-arch mover_3
-x 45
-y 30
-speed .5
-move_type fly_low
-move_on fly_low
 end
 arch sea
 slaying sea_library
 x 45
 y 31
 end
+arch mover_7
+x 45
+y 31
+speed .5
+move_type fly_low
+move_on fly_low
+end
 arch sea
 slaying sea_library
 x 45
 y 32
-end
-arch mover_7
-x 45
-y 32
-speed .5
-move_type fly_low
-move_on fly_low
 end
 arch sea
 x 46
@@ -11649,34 +11885,33 @@ slaying sea_library
 x 46
 y 29
 end
+arch mover_3
+x 46
+y 29
+speed .5
+move_type fly_low
+move_on fly_low
+end
 arch sea
 slaying sea_library
 x 46
 y 30
-end
-arch mover_3
-x 46
-y 30
-speed .5
-move_type fly_low
-move_on fly_low
 end
 arch sea
 slaying sea_library
 x 46
 y 31
 end
-arch sea
-slaying sea_library
-x 46
-y 32
-end
 arch mover_7
 x 46
-y 32
+y 31
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea1
+x 46
+y 32
 end
 arch sea
 x 47
@@ -11873,10 +12108,18 @@ arch sea1
 x 47
 y 28
 end
-arch sea1
+arch sea
+slaying sea_library
 x 47
 y 29
 end
+arch mover_5
+x 47
+y 29
+speed .5
+move_type fly_low
+move_on fly_low
+end
 arch sea
 slaying sea_library
 x 47
@@ -11893,25 +12136,17 @@ arch sea
 slaying sea_library
 x 47
 y 31
-end
-arch mover_5
-x 47
-y 31
-speed .5
-move_type fly_low
-move_on fly_low
-end
-arch sea
-slaying sea_library
-x 47
-y 32
 end
 arch mover_7
 x 47
-y 32
+y 31
 speed .5
 move_type fly_low
 move_on fly_low
+end
+arch sea1
+x 47
+y 32
 end
 arch sea
 x 48

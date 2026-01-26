@@ -3,11 +3,12 @@ name Scorn School
 fixed_resettime 1
 difficulty 3
 region scorn
+reset_group scornschool
 width 20
 height 20
 enter_x 9
 msg
-Modified: 2020-10-04 Titus
+Modified: 2026-01-25 yardc
 endmsg
 end
 arch cobblestones
@@ -2205,11 +2206,19 @@ x 13
 y 13
 move_block walk flying swim
 end
-arch grass
+arch cobblestones
 x 13
 y 14
 end
-arch grass
+arch oakdoor
+name emergency exit
+slaying /elmex/school
+hp 11
+sp 17
+x 13
+y 14
+end
+arch cobblestones
 x 13
 y 15
 end
@@ -2217,29 +2226,19 @@ arch giant
 x 13
 y 15
 end
-arch grass
+arch cobblestones
 x 13
 y 16
 end
-arch grass
+arch cobblestones
 x 13
 y 17
 end
-arch creator
-x 13
-y 17
-connected 39485
-arch hole
-slaying /elmex/school
-hp 11
-sp 17
-end
-end
-arch grass
+arch cobblestones
 x 13
 y 18
 end
-arch grass
+arch cobblestones
 x 13
 y 19
 end
@@ -3155,12 +3154,6 @@ exit_on_final_map no
 endmsg
 x 19
 y 16
-end
-arch check_inv
-slaying elmex2
-x 19
-y 16
-connected 39485
 end
 arch grassbrown
 x 19

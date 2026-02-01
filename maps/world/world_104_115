@@ -13,7 +13,7 @@ Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Dec 16 20:41:49 2001
 arch
-Modified: 2026-01-18 yardc
+Modified: 2026-02-01 yardc
 endmsg
 outdoor 1
 tile_path_1 world_104_114
@@ -16859,6 +16859,19 @@ arch grass
 x 42
 y 31
 end
+arch library
+name Scornian Library
+slaying /scorn/misc/library
+msg
+Welcome to the Scornian Library, We are a proud
+sister of The Great New-Empire Library!
+endmsg
+hp 17
+sp 15
+x 42
+y 31
+move_block swim boat
+end
 arch magic_banned
 x 42
 y 32
@@ -16868,14 +16881,6 @@ x 42
 y 32
 end
 arch grass
-x 42
-y 32
-end
-arch market1_east
-name Library
-slaying /scorn/misc/library
-hp 16
-sp 15
 x 42
 y 32
 end
@@ -17315,14 +17320,6 @@ arch grass
 x 43
 y 32
 tag scorn_library_exit
-end
-arch market3_east
-name Library
-slaying /scorn/misc/library
-hp 17
-sp 15
-x 43
-y 32
 end
 arch magic_banned
 x 43

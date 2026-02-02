@@ -7,7 +7,7 @@ enter_x 18
 enter_y 9
 msg
 Created:  2010-03-07 Nicolas Weeger
-Modified: 2012-01-29 Nicolas Weeger
+Modified: 2026-02-02 yardc
 endmsg
 outdoor 1
 end
@@ -125,7 +125,7 @@ arch marble
 x 1
 y 7
 end
-arch white_wall_2_1_1
+arch white_wall_3_2
 x 1
 y 7
 end
@@ -157,7 +157,7 @@ arch marble
 x 1
 y 11
 end
-arch white_wall_2_1_1
+arch white_wall_3_2
 x 1
 y 11
 end
@@ -232,23 +232,27 @@ arch white_wall_2_1_2
 x 2
 y 1
 end
-arch marble
+arch skull_floor_empty
 x 2
 y 2
 end
-arch marble
+arch skull_floor_empty
 x 2
 y 3
 end
-arch marble
+arch skull_floor_empty
 x 2
 y 4
 end
-arch marble
+arch skull_floor_empty
 x 2
 y 5
 end
-arch marble
+arch skull_floor_empty
+x 2
+y 6
+end
+arch brazier
 x 2
 y 6
 end
@@ -256,15 +260,124 @@ arch marble
 x 2
 y 7
 end
-arch marble
+arch white_wall_1_3
+x 2
+y 7
+end
+arch skull_floor_empty
 x 2
 y 8
 end
-arch marble
+arch chandelier_2_copper
+x 2
+y 8
+end
+arch skull_floor_1
 x 2
 y 9
 end
-arch marble
+arch table_2
+x 2
+y 9
+no_pick 1
+end
+arch letter
+name Municipal Order of Darcap
+msg
+Municipal Order of Darcap
+Sealed by Authority of the Dual Guilds
+Filed in the Black Ledger, Volume IX
+
+Regarding the Catastrophe at Valleynoy, the Dissolution of Its Charter, and the Prohibition of Recovery Efforts
+
+Issued in the Year 6942 EK
+Ratified jointly by
+The Guild of the Poisoned Dagger
+and
+The Guild of the Smoking Cauldron
+
+Let it be recorded, without embellishment and without omission, that the settlement known as Valleynoy, founded as a distant outpost of Darcap in cooperation with the City of Navar, has suffered a terminal event resulting in the total loss of population, infrastructure, and civic continuity.
+
+Valleynoy was established for a singular purpose: the development, instruction, and refinement of the Artificer discipline, a sanctioned craft permitting the application of complex magical recipes to armor, weapons, and jewelry. Its students were selected from Darcap and Navar alike. Its laboratories were regulated, though not constrained. Its success was considerable. Its failure was absolute.
+
+On the final day of contact, no distress signal was received. No warning preceded the event. When scheduled transmissions ceased, an inquiry was authorized under standard isolation protocols. That inquiry returned no survivors, no recoverable remains, and no stable arcane signatures consistent with life, death, or undeath.
+
+Valleynoy is not ruined. It is absent.
+
+In response, the following orders are enacted and are to be enforced without exception.
+
+I. Dissolution of Charter
+
+The municipal charter of Valleynoy is hereby revoked. The settlement is declared legally nonexistent. All trade agreements, training accreditations, and intercity obligations tied to Valleynoy are nullified retroactively to the date of its founding.
+
+Artificer certifications issued exclusively through Valleynoy are to be considered incomplete but not invalid. Holders will not be punished. However, no further credentials may be issued under its authority.
+
+II. Destruction and Sealing of Records
+
+All maps, star-charts, ley notations, travel journals, and navigational instructions that indicate the location of Valleynoy are to be surrendered to the Guild of the Poisoned Dagger within fourteen days of this order?s circulation.
+
+Unauthorized possession thereafter will be treated as intent to trespass into a prohibited zone.
+
+Records deemed essential to the continuity of Artificer knowledge will be redacted, rewritten, or recontextualized so that no spatial inference may be reconstructed. What can be preserved will be preserved. What cannot will be destroyed.
+
+Memory is not a neutral act.
+
+III. Prohibition of Recovery Expeditions
+
+No sanctioned expedition?civilian, guild, academic, or military?is permitted to seek Valleynoy.
+
+This includes attempts motivated by rescue, recovery of artifacts, reclamation of research, or confirmation of rumors. The absence observed is not stable. Preliminary divinations suggest recursive displacement, conceptual overlap, and phenomena consistent with catastrophic misapplication of Artificer synthesis.
+
+To enter such a space without preparation would be to compound the loss.
+
+To enter it with preparation would be to risk repetition.
+
+IV. On the Navarian Tower
+
+It is acknowledged that multiple witnesses, independent and uncoordinated, report the sighting of the Navarian Tower to the north of where Valleynoy is believed to have existed. The tower is described as extending beyond visual termination, as though descending from the sky and tethered to the ground.
+
+This observation is neither confirmed nor denied.
+
+No attempt is to be made to triangulate Valleynoy?s former location using the tower as reference. The tower predates Valleynoy. It will outlast this order. Correlation is not causation, and speculation is not policy.
+
+V. Artificer Discipline Status
+
+The Artificer skill is not banned.
+
+However, its instruction is suspended pending review. Recipes exceeding the Third Layer of Complexity are to be sealed. Experimental synthesis involving recursive enchantment, self-modifying matrices, or cross-category binding (notably jewelry-to-weapon or armor-to-memory interfaces) is forbidden until further notice.
+
+Valleynoy was not reckless. It was thorough. That is what makes this necessary.
+
+VI. Final Declaration
+
+The people of Valleynoy are declared dead, though no bodies were recovered. Their work is declared incomplete, though much of it endures. Their city is declared gone, though its consequences remain.
+
+Darcap acknowledges its role in Valleynoy?s creation and accepts responsibility for its erasure?not as penance, but as containment.
+
+Let this order stand as both memorial and boundary.
+
+Some knowledge advances civilization.
+Some knowledge advances only itself.
+
+By the will of the Guilds,
+and under seal,
+
+Master Auditor Kesh Valmor
+Guild of the Smoking Cauldron
+
+Silent Warden Rhael
+Guild of the Poisoned Dagger
+
+Order sealed. Copies restricted. Further inquiry discouraged.
+endmsg
+x 2
+y 9
+end
+arch skull_floor_3
+x 2
+y 10
+end
+arch chandelier_2_copper
 x 2
 y 10
 end
@@ -272,27 +385,31 @@ arch marble
 x 2
 y 11
 end
-arch marble
+arch white_wall_1_3
+x 2
+y 11
+end
+arch skull_floor_empty
 x 2
 y 12
 end
-arch marble
+arch skull_floor_empty
 x 2
 y 13
 end
-arch marble
+arch skull_floor_empty
 x 2
 y 14
 end
-arch marble
+arch skull_floor_empty
 x 2
 y 15
 end
-arch marble
+arch skull_floor_empty
 x 2
 y 16
 end
-arch marble
+arch skull_floor_empty
 x 2
 y 17
 end
@@ -319,67 +436,121 @@ arch white_wall_2_1_2
 x 3
 y 1
 end
-arch marble
+arch skull_floor_empty
 x 3
 y 2
 end
-arch marble
+arch table_burl_3
+x 3
+y 2
+no_pick 1
+end
+arch scroll
+name Recovered Field Journal ? Darcap Expedition Record
+msg
+Recovered Field Journal ? Darcap Expedition Record
+Archivist: Selne Irix, Guild of the Smoking Cauldron (Detached Observer Status)
+Location Designation: Afterlife, Peripheral Zone Beyond Return Vector
+
+Entry begins after first successful non-terminal traversal.
+
+Death, as experienced by the common hero, is mercifully instructional.
+
+The blackened antechamber is consistent across entries: a room without corners, walls absorbing rather than reflecting light. At its center, a single table. Upon it, the instructional volume commonly titled The Handbook for the Recently Deceased. Its language is calm, almost bureaucratic, as if reassurance itself were a function. There is no threat here, only guidance.
+
+Also present: the boat.
+
+It waits without impatience. No oars, yet capable of return. This is the sanctioned exit, the agreed-upon exception to finality. The fog-bound path nearby is not mentioned in the book, which I find significant. What is not explained is often more important than what is.
+
+I chose the fog.
+
+Transition was not immediate. The fog resisted measurement, consuming distance unevenly. Then, without ceremony, I stood in the Infinite Graveyard.
+
+The name is insufficient. The graveyard is not merely large; it refuses containment. Headstones extend beyond sight, beyond horizon, repeating yet never duplicating. Names appear in languages no longer spoken, scripts half-erased by conceptual erosion rather than weather. Some stones are warm. Others radiate faint hostility. A few whisper, though I cannot yet determine whether this is memory or echo.
+
+Each stone marks a hero who died. Not all were great. Not all were remembered. The graveyard does not discriminate. It records.
+
+Movement here is unreliable. Cardinal directions exist only by convention. I tested pacing: ten steps north does not equal ten steps south. Paths bend around absence rather than terrain. Certain landmarks recur?the lamp, the bell-post, the broken arch?yet revisiting them does not guarantee proximity.
+
+One particularly troubling account, corroborated by two separate explorers, describes a method of displacement: passing the lamp south five times, then turning right. No compass is used. ?South? is defined by the lamp?s shadow, which should not exist. Upon completion, the explorer found the Lost Temple of Gorokh standing behind them, intact, as if it had always been there.
+
+I attempted the sequence. On the fourth pass, I felt observed?not by entities, but by the graveyard itself, as though it were checking my syntax.
+
+I did not complete the fifth.
+
+I am increasingly convinced that the Infinite Graveyard is not merely a repository of the dead, but a routing system. It stores not just remains, but paths, and some of those paths lead elsewhere?perhaps back into the world, perhaps into places erased or deferred.
+
+Why Darcap is interested in this should be obvious. Artifacts do not always originate in life. Some may be retrieved from death, provided one knows how to walk incorrectly.
+
+I will return while the boat still answers me. Further excursions will require better rules, or the abandonment of rules altogether.
+
+End entry.
+endmsg
+x 3
+y 2
+end
+arch skull_floor_empty
 x 3
 y 3
 end
-arch marble
+arch chair_gv_1.3
+x 3
+y 3
+no_pick 1
+end
+arch skull_floor_empty
 x 3
 y 4
 end
-arch marble
+arch skull_floor_empty
 x 3
 y 5
 end
-arch marble
+arch skull_floor_empty
 x 3
 y 6
 end
-arch marble
+arch skull_floor_empty
 x 3
 y 7
 end
-arch marble
+arch skull_floor_empty
 x 3
 y 8
 end
-arch marble
+arch skull_floor_2
 x 3
 y 9
 end
-arch marble
+arch skull_floor_4
 x 3
 y 10
 end
-arch marble
+arch skull_floor_empty
 x 3
 y 11
 end
-arch marble
+arch skull_floor_empty
 x 3
 y 12
 end
-arch marble
+arch skull_floor_empty
 x 3
 y 13
 end
-arch marble
+arch skull_floor_empty
 x 3
 y 14
 end
-arch marble
+arch skull_floor_empty
 x 3
 y 15
 end
-arch marble
+arch skull_floor_empty
 x 3
 y 16
 end
-arch marble
+arch skull_floor_empty
 x 3
 y 17
 end
@@ -406,67 +577,67 @@ arch white_wall_2_1_2
 x 4
 y 1
 end
-arch marble
+arch skull_floor_empty
 x 4
 y 2
 end
-arch marble
+arch skull_floor_empty
 x 4
 y 3
 end
-arch marble
+arch skull_floor_empty
 x 4
 y 4
 end
-arch marble
+arch skull_floor_empty
 x 4
 y 5
 end
-arch marble
+arch skull_floor_empty
 x 4
 y 6
 end
-arch marble
+arch skull_floor_empty
 x 4
 y 7
 end
-arch marble
+arch skull_floor_1
 x 4
 y 8
 end
-arch marble
+arch skull_floor_3
 x 4
 y 9
 end
-arch marble
+arch skull_floor_empty
 x 4
 y 10
 end
-arch marble
+arch skull_floor_empty
 x 4
 y 11
 end
-arch marble
+arch skull_floor_empty
 x 4
 y 12
 end
-arch marble
+arch skull_floor_empty
 x 4
 y 13
 end
-arch marble
+arch skull_floor_empty
 x 4
 y 14
 end
-arch marble
+arch skull_floor_empty
 x 4
 y 15
 end
-arch marble
+arch skull_floor_empty
 x 4
 y 16
 end
-arch marble
+arch skull_floor_empty
 x 4
 y 17
 end
@@ -493,67 +664,133 @@ arch white_wall_2_1_2
 x 5
 y 1
 end
-arch marble
+arch skull_floor_empty
 x 5
 y 2
 end
-arch marble
+arch table_burl_3
+x 5
+y 2
+no_pick 1
+end
+arch scroll_2
+name Field Research Log of Istram Voln
+msg
+Field Research Log of Istram Voln,
+Licensed Adventurer of Darcap, Guild-Independent
+
+Southern Ice Expanse, Uncharted Reach
+Seventeenth Day Beyond the Last Marked Route
+
+I write this with fingers stiff and uncooperative, ink thickening as if it, too, resents the cold. If this entry survives, let it be known my intent was observation, not heroics. Darcap values results, but it also values the living return of those it sends forth.
+
+The southern ice is not empty. That is the first correction I must make to the maps. It is occupied?by pressure, by patience, by an intelligence that does not announce itself. Even silence here has mass.
+
+I came to study dragons as phenomena rather than legends. Our guilds traffic in artifacts attributed to them, in alchemical residues scraped from old wars, in bones and scales bought at great cost and greater uncertainty. None of that prepares one for proximity.
+
+I saw the dragon as a bending of snowfall, a flaw in the idea of distance. When it emerged, sound ceased to function correctly. My wards flared in confusion rather than defense, and I understood?too late?that this creature did not contest space. It authored it.
+
+I raised my hammer by instinct.
+
+Frostbound Conviction has been my constant for years. Forged in Darcap, layered with cold bound to obedience, it answers readily to force and purpose. Stone yields to it. Heat retreats. Even hostile magic slows, crystallizes, waits. I trusted it as one trusts gravity.
+
+The dragon did not strike me. It struck the ground, and the world broke its sentence mid-word. Ice shattered, folded, re-formed. I was thrown clear, breath ripped from me, wards collapsing like poorly argued theories.
+
+I ran.
+
+I do not embellish that. I ran because to remain was to be edited out of the landscape.
+
+The hammer tore from my grip as I fell, skidding across the ice, its enchantments flaring reflexively. I scrambled upright and fled, boots slipping, lungs burning, every step negotiated. Only once did I look back, and that was enough to mark me.
+
+The dragon stood over the hammer. It did not hurry. The artifact?s cold answered the greater cold present, radiating outward in familiar geometry?sigils I knew by heart, patterns I had trusted. Then the ice changed its mind.
+
+The hammer did not shatter. It did not resist. It was taken into context.
+
+Ice climbed it smoothly, silently, layer upon layer, not trapping but incorporating. The glow faded. The sigils vanished. What remained was a perfect block of blue-white ice, clear enough that I could still see the outline of the weapon inside, suspended as if awaiting instruction.
+
+The dragon turned away.
+
+I do not know whether it claimed the hammer, neutralized it, or merely set it aside as one might set aside a thought not yet required. I marked the location as best I could, though landmarks here shift with mood and weather.
+
+If someone finds this log and seeks the hammer, understand this: it is not broken, only waiting. The ice around it is not hostile. It is patient. It does not radiate warding, nor curse, nor hunger. It simply holds.
+
+I suspect?though I lack the instruments now?that the enchantment remains intact beneath the ice, accessible through the simplest means, provided one approaches without arrogance or excessive ritual. Cold here respects plain intent.
+
+I will return to Darcap with fewer tools and more certainty than I prefer. The guilds will ask for conclusions. This is mine:
+
+Artifacts do not always fall when lost. Sometimes they are set down by the world itself.
+
+If you stand before the ice and see the hammer within, do not overthink the problem. Heat is not always an enemy of cold. Sometimes it is only a question.
+
+I end this entry now, as my ink is freezing and the wind has begun to circle in a way I no longer find coincidental. If I do not survive the return, let this stand as both warning and invitation?
+
+? Istram Voln
+endmsg
+x 5
+y 2
+end
+arch skull_floor_empty
 x 5
 y 3
 end
-arch marble
+arch chair_gv_1.3
+x 5
+y 3
+no_pick 1
+end
+arch skull_floor_empty
 x 5
 y 4
 end
-arch marble
+arch skull_floor_empty
 x 5
 y 5
 end
-arch marble
+arch skull_floor_empty
 x 5
 y 6
 end
-arch marble
+arch skull_floor_empty
 x 5
 y 7
 end
-arch marble
+arch skull_floor_2
 x 5
 y 8
 end
-arch marble
+arch skull_floor_4
 x 5
 y 9
 end
-arch marble
+arch skull_floor_empty
 x 5
 y 10
 end
-arch marble
+arch skull_floor_empty
 x 5
 y 11
 end
-arch marble
+arch skull_floor_empty
 x 5
 y 12
 end
-arch marble
+arch skull_floor_empty
 x 5
 y 13
 end
-arch marble
+arch skull_floor_empty
 x 5
 y 14
 end
-arch marble
+arch skull_floor_empty
 x 5
 y 15
 end
-arch marble
+arch skull_floor_empty
 x 5
 y 16
 end
-arch marble
+arch skull_floor_empty
 x 5
 y 17
 end
@@ -580,23 +817,27 @@ arch white_wall_2_1_2
 x 6
 y 1
 end
-arch marble
+arch skull_floor_empty
 x 6
 y 2
 end
-arch marble
+arch skull_floor_empty
 x 6
 y 3
 end
-arch marble
+arch skull_floor_empty
 x 6
 y 4
 end
-arch marble
+arch skull_floor_empty
 x 6
 y 5
 end
-arch marble
+arch skull_floor_empty
+x 6
+y 6
+end
+arch brazier
 x 6
 y 6
 end
@@ -604,15 +845,23 @@ arch marble
 x 6
 y 7
 end
-arch marble
+arch white_wall_1_4
+x 6
+y 7
+end
+arch skull_floor_empty
 x 6
 y 8
 end
-arch marble
+arch statue2
+x 6
+y 8
+end
+arch skull_floor_1
 x 6
 y 9
 end
-arch marble
+arch skull_floor_3
 x 6
 y 10
 end
@@ -620,27 +869,31 @@ arch marble
 x 6
 y 11
 end
-arch marble
+arch white_wall_1_4
+x 6
+y 11
+end
+arch skull_floor_empty
 x 6
 y 12
 end
-arch marble
+arch skull_floor_empty
 x 6
 y 13
 end
-arch marble
+arch skull_floor_empty
 x 6
 y 14
 end
-arch marble
+arch skull_floor_empty
 x 6
 y 15
 end
-arch marble
+arch skull_floor_empty
 x 6
 y 16
 end
-arch marble
+arch skull_floor_empty
 x 6
 y 17
 end
@@ -663,7 +916,7 @@ arch marble
 x 7
 y 1
 end
-arch white_wall_2_1_2
+arch white_wall_3_3
 x 7
 y 1
 end
@@ -671,15 +924,19 @@ arch marble
 x 7
 y 2
 end
-arch marble
+arch white_wall_1_2
+x 7
+y 2
+end
+arch skull_floor_empty
 x 7
 y 3
 end
-arch marble
+arch skull_floor_empty
 x 7
 y 4
 end
-arch marble
+arch skull_floor_empty
 x 7
 y 5
 end
@@ -687,19 +944,31 @@ arch marble
 x 7
 y 6
 end
+arch white_wall_1_1
+x 7
+y 6
+end
 arch marble
 x 7
 y 7
 end
-arch marble
+arch white_wall_3_1
+x 7
+y 7
+end
+arch skull_floor_empty
 x 7
 y 8
 end
-arch marble
+arch statue2
+x 7
+y 8
+end
+arch skull_floor_2
 x 7
 y 9
 end
-arch marble
+arch skull_floor_4
 x 7
 y 10
 end
@@ -707,27 +976,31 @@ arch marble
 x 7
 y 11
 end
-arch marble
+arch white_wall_2_1_2
+x 7
+y 11
+end
+arch skull_floor_empty
 x 7
 y 12
 end
-arch marble
+arch skull_floor_empty
 x 7
 y 13
 end
-arch marble
+arch skull_floor_empty
 x 7
 y 14
 end
-arch marble
+arch skull_floor_empty
 x 7
 y 15
 end
-arch marble
+arch skull_floor_empty
 x 7
 y 16
 end
-arch marble
+arch skull_floor_empty
 x 7
 y 17
 end
@@ -758,15 +1031,19 @@ arch marble
 x 8
 y 2
 end
-arch marble
+arch bench_1_4
+x 8
+y 2
+end
+arch skull_floor_empty
 x 8
 y 3
 end
-arch marble
+arch skull_floor_empty
 x 8
 y 4
 end
-arch marble
+arch skull_floor_empty
 x 8
 y 5
 end
@@ -774,19 +1051,31 @@ arch marble
 x 8
 y 6
 end
+arch bench_1_4
+x 8
+y 6
+end
 arch marble
 x 8
 y 7
 end
-arch marble
+arch white_wall_2_1_2
+x 8
+y 7
+end
+arch skull_floor_1
 x 8
 y 8
 end
-arch marble
+arch skull_floor_3
 x 8
 y 9
 end
-arch marble
+arch skull_floor_empty
+x 8
+y 10
+end
+arch statue2
 x 8
 y 10
 end
@@ -794,27 +1083,31 @@ arch marble
 x 8
 y 11
 end
-arch marble
+arch white_wall_2_1_2
+x 8
+y 11
+end
+arch skull_floor_empty
 x 8
 y 12
 end
-arch marble
+arch skull_floor_empty
 x 8
 y 13
 end
-arch marble
+arch skull_floor_empty
 x 8
 y 14
 end
-arch marble
+arch skull_floor_empty
 x 8
 y 15
 end
-arch marble
+arch skull_floor_empty
 x 8
 y 16
 end
-arch marble
+arch skull_floor_empty
 x 8
 y 17
 end
@@ -845,15 +1138,43 @@ arch marble
 x 9
 y 2
 end
-arch marble
+arch bench_2_1_2
+x 9
+y 2
+end
+arch book_read
+name Julio and the Fourfold Silence
+msg
+In 6795 EK, Darcap received a visitor who wished to be left alone.
+
+Julio was a magician of the four elements and he chose Darcap precisely because it lay far from the world's noise. The city did not welcome him warmly. His experiments were disruptive. Fires behaved strangely. Stone softened without heat. Winds carried whispers that unsettled sleep. Four houses near the city's heart became laboratories, and accidents followed.
+
+The people came to resent him.
+
+What they did not know was that Julio was listening.
+
+For decades, he observed Darcap's tensions: devotion and resistance, hunger and endurance, death and persistence. He studied not only elements, but how belief shaped them. His notes, long sealed, suggest he believed Darcap itself was an alchemical vessel; a place where opposing forces could coexist without collapse.
+
+After his death, the city moved to destroy his house. It was only years later, in 6813 EK, that his private correspondence was uncovered. Julio had quietly advised leaders across the world, resolving conflicts, stabilizing regions, and preventing catastrophes that never became public knowledge. His withdrawal had not been abandonment, but repositioning.
+
+The house was restored. A statue was raised. The laboratories became historical sites rather than hazards.
+
+Adventurers visiting Darcap should understand Julio's lesson. This city appears hostile, secretive, even cruel. Yet beneath that surface lies a discipline forged by isolation and refined by necessity. Darcap does not seek domination. It seeks equilibrium.
+
+And like all balanced mixtures, it can become volatile if disturbed without understanding.
+endmsg
+x 9
+y 2
+end
+arch skull_floor_empty
 x 9
 y 3
 end
-arch marble
+arch skull_floor_empty
 x 9
 y 4
 end
-arch marble
+arch skull_floor_empty
 x 9
 y 5
 end
@@ -861,19 +1182,31 @@ arch marble
 x 9
 y 6
 end
+arch bench_2_1_2
+x 9
+y 6
+end
 arch marble
 x 9
 y 7
 end
-arch marble
+arch white_wall_2_1_2
+x 9
+y 7
+end
+arch skull_floor_2
 x 9
 y 8
 end
-arch marble
+arch skull_floor_4
 x 9
 y 9
 end
-arch marble
+arch skull_floor_empty
+x 9
+y 10
+end
+arch statue2
 x 9
 y 10
 end
@@ -881,27 +1214,31 @@ arch marble
 x 9
 y 11
 end
-arch marble
+arch white_wall_2_1_2
+x 9
+y 11
+end
+arch skull_floor_empty
 x 9
 y 12
 end
-arch marble
+arch skull_floor_empty
 x 9
 y 13
 end
-arch marble
+arch skull_floor_empty
 x 9
 y 14
 end
-arch marble
+arch skull_floor_empty
 x 9
 y 15
 end
-arch marble
+arch skull_floor_empty
 x 9
 y 16
 end
-arch marble
+arch skull_floor_empty
 x 9
 y 17
 end
@@ -932,15 +1269,19 @@ arch marble
 x 10
 y 2
 end
-arch marble
+arch bench_2_1_2
+x 10
+y 2
+end
+arch skull_floor_empty
 x 10
 y 3
 end
-arch marble
+arch skull_floor_empty
 x 10
 y 4
 end
-arch marble
+arch skull_floor_empty
 x 10
 y 5
 end
@@ -948,19 +1289,87 @@ arch marble
 x 10
 y 6
 end
+arch bench_2_1_2
+x 10
+y 6
+end
+arch book_red
+name The City That Refused to Starve
+msg
+Many cities boast of their founding. Darcap speaks instead of its endurance.
+
+In the year 2264 EK, when the Kingdom of the Masts still believed the sea could bind distant lands together, they founded Darcap at the northern edge of the continent. It was intended as a colony, a place of trade and future autonomy. It never reached that future. In 2287 EK, the Kingdom fell, and Darcap was left behind like a forgotten outpost at the end of a broken sentence.
+
+The sea became an enemy. The land was unforgiving. Crops failed. Game vanished. Hunger arrived quietly, then stayed.
+
+Those early centuries defined Darcap more than any banner or ruler. Many died. Some fled by foot or fragile boat, chasing rumors of better lands. None returned. Whether they perished, were taken, or simply chose never to look back remains unknown. Darcap learned early that survival would not come from rescue.
+
+It came instead from belief.
+
+A colonist named Andreas, sharp-tongued, endlessly hungry, and possessed of a grim sense of humor, began preaching devotion to the Devourers. Their followers, he claimed, would never know hunger again. This was not metaphor. Those who converted endured famine with uncanny resilience.
+
+The city split along a terrible logic. If many converted, food would last longer for those who did not. Thus, both belief and disbelief became survival strategies. Darcap did not become wholly devout, nor wholly resistant. It became divided, negotiated, pragmatic.
+
+After Andreas' death, he was called Andreas the Ravenous. The title was affectionate, if bleak. The church that formed around his teachings bore his name, and with it a truth Darcap has never denied: that the Devourers are real, and that their gifts are costly, but effective.
+
+Today, Darcap is governed not by priests, but by guilds. Yet the hunger that birthed the faith still shapes the city?s bones. Adventurers should understand this before judging what they see. Darcap does not revere death. It remembers starvation?and chose never to kneel before it again.Many cities boast of their founding. Darcap speaks instead of its endurance.
+
+In the year 2264 EK, when the Kingdom of the Masts still believed the sea could bind distant lands together, they founded Darcap at the northern edge of the continent. It was intended as a colony, a place of trade and future autonomy. It never reached that future. In 2287 EK, the Kingdom fell, and Darcap was left behind like a forgotten outpost at the end of a broken sentence.
+
+The sea became an enemy. The land was unforgiving. Crops failed. Game vanished. Hunger arrived quietly, then stayed.
+
+Those early centuries defined Darcap more than any banner or ruler. Many died. Some fled by foot or fragile boat, chasing rumors of better lands. None returned. Whether they perished, were taken, or simply chose never to look back remains unknown. Darcap learned early that survival would not come from rescue.
+
+It came instead from belief.
+
+A colonist named Andreas?sharp-tongued, endlessly hungry, and possessed of a grim sense of humor?began preaching devotion to the Devourers. Their followers, he claimed, would never know hunger again. This was not metaphor. Those who converted endured famine with uncanny resilience.
+
+The city split along a terrible logic. If many converted, food would last longer for those who did not. Thus, both belief and disbelief became survival strategies. Darcap did not become wholly devout, nor wholly resistant. It became divided, negotiated, pragmatic.
+
+After Andreas? death, he was called Andreas the Ravenous. The title was affectionate, if bleak. The church that formed around his teachings bore his name, and with it a truth Darcap has never denied: that the Devourers are real, and that their gifts are costly, but effective.
+
+Today, Darcap is governed not by priests, but by guilds. Yet the hunger that birthed the faith still shapes the city?s bones. Adventurers should understand this before judging what they see. Darcap does not revere death. It remembers starvation?and chose never to kneel before it again.Many cities boast of their founding. Darcap speaks instead of its endurance.
+
+In the year 2264 EK, when the Kingdom of the Masts still believed the sea could bind distant lands together, they founded Darcap at the northern edge of the continent. It was intended as a colony, a place of trade and future autonomy. It never reached that future. In 2287 EK, the Kingdom fell, and Darcap was left behind like a forgotten outpost at the end of a broken sentence.
+
+The sea became an enemy. The land was unforgiving. Crops failed. Game vanished. Hunger arrived quietly, then stayed.
+
+Those early centuries defined Darcap more than any banner or ruler. Many died. Some fled by foot or fragile boat, chasing rumors of better lands. None returned. Whether they perished, were taken, or simply chose never to look back remains unknown. Darcap learned early that survival would not come from rescue.
+
+It came instead from belief.
+
+A colonist named Andreas?sharp-tongued, endlessly hungry, and possessed of a grim sense of humor?began preaching devotion to the Devourers. Their followers, he claimed, would never know hunger again. This was not metaphor. Those who converted endured famine with uncanny resilience.
+
+The city split along a terrible logic. If many converted, food would last longer for those who did not. Thus, both belief and disbelief became survival strategies. Darcap did not become wholly devout, nor wholly resistant. It became divided, negotiated, pragmatic.
+
+After Andreas? death, he was called Andreas the Ravenous. The title was affectionate, if bleak. The church that formed around his teachings bore his name, and with it a truth Darcap has never denied: that the Devourers are real, and that their gifts are costly, but effective.
+
+Today, Darcap is governed not by priests, but by guilds. Yet the hunger that birthed the faith still shapes the city?s bones. Adventurers should understand this before judging what they see. Darcap does not revere death. It remembers starvation?and chose never to kneel before it again.
+endmsg
+x 10
+y 6
+end
 arch marble
 x 10
 y 7
 end
-arch marble
+arch white_wall_2_1_2
+x 10
+y 7
+end
+arch skull_floor_empty
 x 10
 y 8
 end
-arch marble
+arch statue2
+x 10
+y 8
+end
+arch skull_floor_1
 x 10
 y 9
 end
-arch marble
+arch skull_floor_3
 x 10
 y 10
 end
@@ -968,27 +1377,31 @@ arch marble
 x 10
 y 11
 end
-arch marble
+arch white_wall_2_1_2
+x 10
+y 11
+end
+arch skull_floor_empty
 x 10
 y 12
 end
-arch marble
+arch skull_floor_empty
 x 10
 y 13
 end
-arch marble
+arch skull_floor_empty
 x 10
 y 14
 end
-arch marble
+arch skull_floor_empty
 x 10
 y 15
 end
-arch marble
+arch skull_floor_empty
 x 10
 y 16
 end
-arch marble
+arch skull_floor_empty
 x 10
 y 17
 end
@@ -1019,15 +1432,19 @@ arch marble
 x 11
 y 2
 end
-arch marble
+arch bench_2_1_2
+x 11
+y 2
+end
+arch skull_floor_empty
 x 11
 y 3
 end
-arch marble
+arch skull_floor_empty
 x 11
 y 4
 end
-arch marble
+arch skull_floor_empty
 x 11
 y 5
 end
@@ -1035,19 +1452,31 @@ arch marble
 x 11
 y 6
 end
+arch bench_2_1_2
+x 11
+y 6
+end
 arch marble
 x 11
 y 7
 end
-arch marble
+arch white_wall_2_1_2
+x 11
+y 7
+end
+arch skull_floor_empty
 x 11
 y 8
 end
-arch marble
+arch statue2
+x 11
+y 8
+end
+arch skull_floor_2
 x 11
 y 9
 end
-arch marble
+arch skull_floor_4
 x 11
 y 10
 end
@@ -1055,27 +1484,31 @@ arch marble
 x 11
 y 11
 end
-arch marble
+arch white_wall_2_1_2
+x 11
+y 11
+end
+arch skull_floor_empty
 x 11
 y 12
 end
-arch marble
+arch skull_floor_empty
 x 11
 y 13
 end
-arch marble
+arch skull_floor_empty
 x 11
 y 14
 end
-arch marble
+arch skull_floor_empty
 x 11
 y 15
 end
-arch marble
+arch skull_floor_empty
 x 11
 y 16
 end
-arch marble
+arch skull_floor_empty
 x 11
 y 17
 end
@@ -1106,15 +1539,19 @@ arch marble
 x 12
 y 2
 end
-arch marble
+arch bench_2_1_2
+x 12
+y 2
+end
+arch skull_floor_empty
 x 12
 y 3
 end
-arch marble
+arch skull_floor_empty
 x 12
 y 4
 end
-arch marble
+arch skull_floor_empty
 x 12
 y 5
 end
@@ -1122,19 +1559,53 @@ arch marble
 x 12
 y 6
 end
+arch bench_2_1_2
+x 12
+y 6
+end
+arch book_clasp
+name Of Guilds, Shadows, and Cauldrons
+msg
+Darcap does not crown kings. It sharpens knives and stirs pots.
+
+The city is ruled by two guilds whose power is neither ceremonial nor hidden: The Guild of the Poisoned Dagger and The Guild of the Smoking Cauldron. Together, they govern trade, law, and the careful violence that keeps Darcap intact.
+
+The Poisoned Dagger concerns itself with endings. Assassination, espionage, artifact recovery, and the quiet removal of threats?internal or external?fall under its purview. Membership is selective, contracts precise, and betrayals exceedingly rare. Outsiders mistake the guild for criminals. This is incorrect. Criminals act for themselves. The Dagger acts for the city.
+
+The Smoking Cauldron concerns itself with continuance. Alchemy, poisons and antidotes, preservation, transmutation, and experimental craft all pass through its hands. Their laboratories are regulated but not restrained. Darcap?s most infamous exports?potions that twist fate, salves that defy decay, substances that blur the line between life and unlife?originate here.
+
+It is no accident that Darcap is known as the birthplace of many artifacts scattered across Heroworld. The guilds learned early that isolation breeds innovation. Without trade, they made substitutes. Without teachers, they experimented. Without limits, they documented failure and repeated it more carefully.
+
+Adventurers should know this: Darcap does not sell trinkets. Everything here has lineage, consequence, and often a footnote in some sealed ledger.
+
+The Devourers linger in the background, acknowledged but not obeyed by the guilds. Their avatar, said to exist in hidden void-spaces accessible through architectural impossibilities, is not denied?but neither is it worshipped openly. Darcap prefers contracts to prayers.
+
+Walk carefully. Speak precisely. In Darcap, words are weighed like reagents, and mistakes have long half-lives.
+endmsg
+x 12
+y 6
+end
 arch marble
 x 12
 y 7
 end
-arch marble
+arch white_wall_2_1_2
+x 12
+y 7
+end
+arch skull_floor_1
 x 12
 y 8
 end
-arch marble
+arch skull_floor_3
 x 12
 y 9
 end
-arch marble
+arch skull_floor_empty
+x 12
+y 10
+end
+arch statue2
 x 12
 y 10
 end
@@ -1142,27 +1613,31 @@ arch marble
 x 12
 y 11
 end
-arch marble
+arch white_wall_2_1_2
+x 12
+y 11
+end
+arch skull_floor_empty
 x 12
 y 12
 end
-arch marble
+arch skull_floor_empty
 x 12
 y 13
 end
-arch marble
+arch skull_floor_empty
 x 12
 y 14
 end
-arch marble
+arch skull_floor_empty
 x 12
 y 15
 end
-arch marble
+arch skull_floor_empty
 x 12
 y 16
 end
-arch marble
+arch skull_floor_empty
 x 12
 y 17
 end
@@ -1193,15 +1668,19 @@ arch marble
 x 13
 y 2
 end
-arch marble
+arch bench_1_3
+x 13
+y 2
+end
+arch skull_floor_empty
 x 13
 y 3
 end
-arch marble
+arch skull_floor_empty
 x 13
 y 4
 end
-arch marble
+arch skull_floor_empty
 x 13
 y 5
 end
@@ -1209,19 +1688,31 @@ arch marble
 x 13
 y 6
 end
+arch bench_1_3
+x 13
+y 6
+end
 arch marble
 x 13
 y 7
 end
-arch marble
+arch white_wall_2_1_2
+x 13
+y 7
+end
+arch skull_floor_2
 x 13
 y 8
 end
-arch marble
+arch skull_floor_4
 x 13
 y 9
 end
-arch marble
+arch skull_floor_empty
+x 13
+y 10
+end
+arch statue2
 x 13
 y 10
 end
@@ -1229,27 +1720,31 @@ arch marble
 x 13
 y 11
 end
-arch marble
+arch white_wall_2_1_2
+x 13
+y 11
+end
+arch skull_floor_empty
 x 13
 y 12
 end
-arch marble
+arch skull_floor_empty
 x 13
 y 13
 end
-arch marble
+arch skull_floor_empty
 x 13
 y 14
 end
-arch marble
+arch skull_floor_empty
 x 13
 y 15
 end
-arch marble
+arch skull_floor_empty
 x 13
 y 16
 end
-arch marble
+arch skull_floor_empty
 x 13
 y 17
 end
@@ -1292,19 +1787,11 @@ arch white_wall_1_2
 x 14
 y 3
 end
-arch marble
+arch skull_floor_empty
 x 14
 y 4
 end
-arch igate_closed_2
-x 14
-y 4
-end
-arch marble
-x 14
-y 5
-end
-arch igate_closed_2
+arch skull_floor_empty
 x 14
 y 5
 end
@@ -1320,7 +1807,7 @@ arch marble
 x 14
 y 7
 end
-arch white_wall_2_1_1
+arch white_wall_3_4
 x 14
 y 7
 end
@@ -1352,31 +1839,31 @@ arch marble
 x 14
 y 11
 end
-arch white_wall_2_2_1
+arch white_wall_3_1
 x 14
 y 11
 end
-arch marble
+arch skull_floor_empty
 x 14
 y 12
 end
-arch marble
+arch skull_floor_empty
 x 14
 y 13
 end
-arch marble
+arch skull_floor_empty
 x 14
 y 14
 end
-arch marble
+arch skull_floor_empty
 x 14
 y 15
 end
-arch marble
+arch skull_floor_empty
 x 14
 y 16
 end
-arch marble
+arch skull_floor_empty
 x 14
 y 17
 end
@@ -1403,27 +1890,27 @@ arch white_wall_2_1_2
 x 15
 y 1
 end
-arch marble
+arch skull_floor_empty
 x 15
 y 2
 end
-arch marble
+arch skull_floor_empty
 x 15
 y 3
 end
-arch marble
+arch skull_floor_empty
 x 15
 y 4
 end
-arch marble
+arch skull_floor_empty
 x 15
 y 5
 end
-arch marble
+arch skull_floor_empty
 x 15
 y 6
 end
-arch marble
+arch skull_floor_empty
 x 15
 y 7
 end
@@ -1433,11 +1920,11 @@ y 7
 type 0
 move_block all
 end
-arch marble
+arch skull_floor_empty
 x 15
 y 8
 end
-arch marble
+arch skull_floor_empty
 x 15
 y 9
 end
@@ -1469,7 +1956,7 @@ y 9
 type 0
 random_movement 1
 end
-arch marble
+arch skull_floor_empty
 x 15
 y 10
 end
@@ -1481,27 +1968,27 @@ arch white_wall_2_1_2
 x 15
 y 11
 end
-arch marble
+arch skull_floor_empty
 x 15
 y 12
 end
-arch marble
+arch skull_floor_empty
 x 15
 y 13
 end
-arch marble
+arch skull_floor_empty
 x 15
 y 14
 end
-arch marble
+arch skull_floor_empty
 x 15
 y 15
 end
-arch marble
+arch skull_floor_empty
 x 15
 y 16
 end
-arch marble
+arch skull_floor_empty
 x 15
 y 17
 end
@@ -1528,11 +2015,11 @@ arch white_wall_2_1_2
 x 16
 y 1
 end
-arch marble
+arch skull_floor_empty
 x 16
 y 2
 end
-arch marble
+arch skull_floor_empty
 x 16
 y 3
 end
@@ -1540,19 +2027,19 @@ arch light4
 x 16
 y 3
 end
-arch marble
+arch skull_floor_empty
 x 16
 y 4
 end
-arch marble
+arch skull_floor_empty
 x 16
 y 5
 end
-arch marble
+arch skull_floor_empty
 x 16
 y 6
 end
-arch marble
+arch skull_floor_empty
 x 16
 y 7
 end
@@ -1562,7 +2049,7 @@ y 7
 type 0
 move_block all
 end
-arch marble
+arch skull_floor_empty
 x 16
 y 8
 end
@@ -1572,7 +2059,7 @@ y 8
 type 0
 move_block all
 end
-arch marble
+arch skull_floor_empty
 x 16
 y 9
 end
@@ -1582,7 +2069,7 @@ y 9
 type 0
 move_block all
 end
-arch marble
+arch skull_floor_empty
 x 16
 y 10
 end
@@ -1600,27 +2087,27 @@ arch white_wall_2_1_2
 x 16
 y 11
 end
-arch marble
+arch skull_floor_empty
 x 16
 y 12
 end
-arch marble
+arch skull_floor_empty
 x 16
 y 13
 end
-arch marble
+arch skull_floor_empty
 x 16
 y 14
 end
-arch marble
+arch skull_floor_empty
 x 16
 y 15
 end
-arch marble
+arch skull_floor_empty
 x 16
 y 16
 end
-arch marble
+arch skull_floor_empty
 x 16
 y 17
 end
@@ -1654,7 +2141,7 @@ endmsg
 x 17
 y 2
 end
-arch marble
+arch skull_floor_empty
 x 17
 y 2
 end
@@ -1665,27 +2152,27 @@ sp 2
 x 17
 y 2
 end
-arch marble
+arch skull_floor_empty
 x 17
 y 3
 end
-arch marble
+arch skull_floor_empty
 x 17
 y 4
 end
-arch marble
+arch skull_floor_empty
 x 17
 y 5
 end
-arch marble
+arch skull_floor_empty
 x 17
 y 6
 end
-arch marble
+arch skull_floor_empty
 x 17
 y 7
 end
-arch marble
+arch skull_floor_empty
 x 17
 y 8
 end
@@ -1693,11 +2180,11 @@ arch light4
 x 17
 y 8
 end
-arch marble
+arch skull_floor_empty
 x 17
 y 9
 end
-arch marble
+arch skull_floor_empty
 x 17
 y 10
 end
@@ -1709,27 +2196,27 @@ arch white_wall_2_1_2
 x 17
 y 11
 end
-arch marble
+arch skull_floor_empty
 x 17
 y 12
 end
-arch marble
+arch skull_floor_empty
 x 17
 y 13
 end
-arch marble
+arch skull_floor_empty
 x 17
 y 14
 end
-arch marble
+arch skull_floor_empty
 x 17
 y 15
 end
-arch marble
+arch skull_floor_empty
 x 17
 y 16
 end
-arch marble
+arch skull_floor_empty
 x 17
 y 17
 end
@@ -1812,27 +2299,27 @@ arch white_wall_1_2
 x 18
 y 8
 end
-arch marble
+arch skull_floor_empty
 x 18
 y 9
 end
 arch oakdoor_1
 name exit
 slaying /world/world_116_102
-hp 29
-sp 31
+hp 26
+sp 35
 x 18
 y 9
 end
-arch marble
+arch skull_floor_empty
 x 18
 y 10
 end
 arch oakdoor_1
 name exit
 slaying /world/world_116_102
-hp 29
-sp 31
+hp 26
+sp 35
 x 18
 y 10
 end

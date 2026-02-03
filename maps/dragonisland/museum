@@ -1,10 +1,10 @@
 arch map
 name museum
-width 15
+width 26
 height 12
 msg
 Created:  2026-01-21 yardc
-Modified: 2026-01-23 yardc
+Modified: 2026-02-03 yardc
 endmsg
 end
 arch lostlabfloor11
@@ -769,15 +769,7 @@ arch lostlabfloor11
 x 9
 y 6
 end
-arch mat
-x 9
-y 6
-end
 arch lostlabfloor11
-x 9
-y 7
-end
-arch table_2x1
 x 9
 y 7
 end
@@ -969,10 +961,6 @@ arch lostlabfloor11
 x 10
 y 6
 end
-arch mat
-x 10
-y 6
-end
 arch lostlabfloor11
 x 10
 y 7
@@ -1043,7 +1031,7 @@ arch lostlabfloor11
 x 11
 y 4
 end
-arch stwallred_3_4
+arch stwallred_3_1
 x 11
 y 4
 end
@@ -1051,23 +1039,11 @@ arch lostlabfloor11
 x 11
 y 5
 end
-arch stwallred_2_1_1
-x 11
-y 5
-end
 arch lostlabfloor11
 x 11
 y 6
 end
-arch stwallred_2_1_1
-x 11
-y 6
-end
 arch lostlabfloor11
-x 11
-y 7
-end
-arch stwallred_2_1_1
 x 11
 y 7
 end
@@ -1075,7 +1051,7 @@ arch lostlabfloor11
 x 11
 y 8
 end
-arch stwallred_2_1_1
+arch stwallred_2_2_2
 x 11
 y 8
 end
@@ -1122,52 +1098,70 @@ y 1
 connected 2
 activate_on_release 0
 end
-arch afloor_black_left
-x 12
-y 2
-end
-arch flagstone
-x 12
-y 3
-unique 1
-end
 arch ggate_closed
 x 12
-y 3
+y 1
 connected 1
 activate_on_release 0
 end
-arch afloor_black_left
-x 12
-y 4
-end
-arch flagstone
-x 12
-y 5
-unique 1
-end
 arch ggate_closed
 x 12
-y 5
+y 1
 connected 3
 activate_on_release 0
 end
 arch afloor_black_left
 x 12
-y 6
-end
-arch afloor_black_left
-x 12
-y 7
+y 2
 end
 arch detector
 slaying bullet
 x 12
-y 7
+y 2
 connected 4
 end
 arch afloor_black_left
 x 12
+y 3
+end
+arch afloor_black_left
+x 12
+y 4
+end
+arch stwallred_2_1_2
+x 12
+y 4
+end
+arch redrugfloor1
+x 12
+y 5
+end
+arch lostlabrug6
+x 12
+y 5
+end
+arch redrugfloor1
+x 12
+y 6
+end
+arch lostlabrug6
+x 12
+y 6
+end
+arch redrugfloor1
+x 12
+y 7
+end
+arch lostlabrug6
+x 12
+y 7
+end
+arch afloor_black_left
+x 12
+y 8
+end
+arch stwallred_2_1_2
+x 12
 y 8
 end
 arch afloor_black_left
@@ -1185,7 +1179,14 @@ end
 arch afloor_black_left
 x 13
 end
+arch stwallred_2_2_2
+x 13
+end
 arch afloor_black_left
+x 13
+y 1
+end
+arch stwallred_2_1_1
 x 13
 y 1
 end
@@ -1193,7 +1194,15 @@ arch afloor_black_left
 x 13
 y 2
 end
+arch stwallred_2_1_1
+x 13
+y 2
+end
 arch afloor_black_left
+x 13
+y 3
+end
+arch stwallred_2_1_1
 x 13
 y 3
 end
@@ -1201,19 +1210,27 @@ arch afloor_black_left
 x 13
 y 4
 end
-arch afloor_black_left
+arch stwallred_2_2_4
+x 13
+y 4
+end
+arch redrugfloor1
 x 13
 y 5
 end
-arch afloor_black_left
+arch redrugfloor1
 x 13
 y 6
 end
-arch afloor_black_left
+arch redrugfloor1
 x 13
 y 7
 end
 arch afloor_black_left
+x 13
+y 8
+end
+arch stwallred_2_1_2
 x 13
 y 8
 end
@@ -1232,35 +1249,46 @@ end
 arch afloor_black_left
 x 14
 end
-arch afloor_black_left
+arch stwallred_2_1_2
+x 14
+end
+arch redrugfloor1
 x 14
 y 1
 end
-arch afloor_black_left
+arch lostlabrug2
+x 14
+y 1
+end
+arch redrugfloor1
 x 14
 y 2
 end
-arch afloor_black_left
+arch redrugfloor1
 x 14
 y 3
 end
-arch afloor_black_left
+arch redrugfloor1
 x 14
 y 4
 end
-arch afloor_black_left
+arch redrugfloor1
 x 14
 y 5
 end
-arch afloor_black_left
+arch redrugfloor1
 x 14
 y 6
 end
-arch afloor_black_left
+arch redrugfloor1
 x 14
 y 7
 end
 arch afloor_black_left
+x 14
+y 8
+end
+arch stwallred_2_1_2
 x 14
 y 8
 end
@@ -1274,5 +1302,964 @@ y 10
 end
 arch afloor_black_left
 x 14
+y 11
+end
+arch afloor_black_left
+x 15
+end
+arch stwallred_2_1_2
+x 15
+end
+arch redrugfloor1
+x 15
+y 1
+end
+arch lostlabrug2
+x 15
+y 1
+end
+arch redrugfloor1
+x 15
+y 2
+end
+arch redrugfloor1
+x 15
+y 3
+end
+arch redrugfloor1
+x 15
+y 4
+end
+arch redrugfloor1
+x 15
+y 5
+end
+arch redrugfloor1
+x 15
+y 6
+end
+arch redrugfloor1
+x 15
+y 7
+end
+arch afloor_black_left
+x 15
+y 8
+end
+arch stwallred_2_1_2
+x 15
+y 8
+end
+arch afloor_black_left
+x 15
+y 9
+end
+arch afloor_left
+x 15
+y 10
+end
+arch afloor_left
+x 15
+y 11
+end
+arch afloor_black_left
+x 16
+end
+arch stwallred_2_2_3
+x 16
+end
+arch afloor_black_left
+x 16
+y 1
+end
+arch stwallred_3_2
+x 16
+y 1
+end
+arch afloor_black_left
+x 16
+y 2
+end
+arch stwallred_1_2
+x 16
+y 2
+end
+arch redrugfloor1
+x 16
+y 3
+end
+arch check_inv
+race egg_shell
+x 16
+y 3
+connected 19
+end
+arch redrugfloor1
+x 16
+y 4
+end
+arch check_inv
+race egg_shell
+x 16
+y 4
+connected 19
+end
+arch afloor_black_left
+x 16
+y 5
+end
+arch stwallred_1_1
+x 16
+y 5
+end
+arch afloor_black_left
+x 16
+y 6
+end
+arch stwallred_2_1_1
+x 16
+y 6
+end
+arch afloor_black_left
+x 16
+y 7
+end
+arch stwallred_3_2
+x 16
+y 7
+end
+arch afloor_black_left
+x 16
+y 8
+end
+arch stwallred_2_2_4
+x 16
+y 8
+end
+arch afloor_black_left
+x 16
+y 9
+end
+arch afloor_left
+x 16
+y 10
+end
+arch afloor_left
+x 16
+y 11
+end
+arch afloor_black_left
+x 17
+end
+arch creator
+x 17
+connected 19
+activate_on_release 0
+arch red_dragon2
+end
+end
+arch director_3
+x 17
+invisible 1
+connected 19
+activate_on_release 0
+end
+arch afloor_black_left
+x 17
+y 1
+end
+arch stwallred_3_1
+x 17
+y 1
+end
+arch afloor_black_left
+x 17
+y 2
+end
+arch redrugfloor1
+x 17
+y 3
+end
+arch redrugfloor1
+x 17
+y 4
+end
+arch afloor_black_left
+x 17
+y 5
+end
+arch lostlabrug6
+x 17
+y 5
+end
+arch afloor_black_left
+x 17
+y 6
+end
+arch afloor_black_left
+x 17
+y 7
+end
+arch stwallred_2_1_2
+x 17
+y 7
+end
+arch afloor_black_left
+x 17
+y 8
+end
+arch stwallred_1_1
+x 17
+y 8
+end
+arch afloor_black_left
+x 17
+y 9
+end
+arch stwallred_2_2_1
+x 17
+y 9
+end
+arch afloor_left
+x 17
+y 10
+end
+arch afloor_left
+x 17
+y 11
+end
+arch afloor_black_left
+x 18
+end
+arch director_3
+x 18
+invisible 1
+connected 19
+activate_on_release 0
+end
+arch afloor_black_left
+x 18
+y 1
+end
+arch stwallred_3_1
+x 18
+y 1
+end
+arch afloor_black_left
+x 18
+y 2
+end
+arch lostlabrug2
+x 18
+y 2
+end
+arch redrugfloor1
+x 18
+y 3
+end
+arch redrugfloor1
+x 18
+y 4
+end
+arch redrugfloor1
+x 18
+y 5
+end
+arch afloor_black_left
+x 18
+y 6
+end
+arch lostlabrug3
+x 18
+y 6
+end
+arch afloor_black_left
+x 18
+y 7
+end
+arch stwallred_2_2_3
+x 18
+y 7
+end
+arch afloor_black_left
+x 18
+y 8
+end
+arch stwallred_2_1_1
+x 18
+y 8
+end
+arch afloor_left
+x 18
+y 9
+end
+arch stwallred_3_4
+x 18
+y 9
+end
+arch afloor_left
+x 18
+y 10
+end
+arch stwallred_2_2_1
+x 18
+y 10
+end
+arch afloor_left
+x 18
+y 11
+end
+arch afloor_black_left
+x 19
+end
+arch director_3
+x 19
+invisible 1
+connected 19
+activate_on_release 0
+end
+arch afloor_black_left
+x 19
+y 1
+end
+arch stwindowred_win2
+x 19
+y 1
+end
+arch afloor_black_left
+x 19
+y 2
+end
+arch lostlabrug2
+x 19
+y 2
+end
+arch redrugfloor1
+x 19
+y 3
+end
+arch redrugfloor1
+x 19
+y 4
+end
+arch redrugfloor1
+x 19
+y 5
+end
+arch wizdesk
+x 19
+y 5
+end
+arch afloor_black_left
+x 19
+y 6
+end
+arch lostlabrug3
+x 19
+y 6
+end
+arch chair_bc_2.3
+x 19
+y 6
+end
+arch afloor_black_left
+x 19
+y 7
+end
+arch director_1
+x 19
+y 7
+invisible 1
+connected 19
+activate_on_release 0
+end
+arch afloor_black_left
+x 19
+y 8
+end
+arch director_1
+x 19
+y 8
+invisible 1
+connected 19
+activate_on_release 0
+end
+arch afloor_black_left
+x 19
+y 9
+end
+arch brazier
+x 19
+y 9
+end
+arch afloor_left
+x 19
+y 10
+end
+arch stwallred_3_1
+x 19
+y 10
+end
+arch afloor_left
+x 19
+y 11
+end
+arch afloor_black_left
+x 20
+end
+arch director_3
+x 20
+invisible 1
+connected 19
+activate_on_release 0
+end
+arch afloor_black_left
+x 20
+y 1
+end
+arch stwallred_2_1_2
+x 20
+y 1
+end
+arch afloor_black_left
+x 20
+y 2
+end
+arch lostlabrug2
+x 20
+y 2
+end
+arch redrugfloor1
+x 20
+y 3
+end
+arch redrugfloor1
+x 20
+y 4
+end
+arch redrugfloor1
+x 20
+y 5
+end
+arch afloor_black_left
+x 20
+y 6
+end
+arch lostlabrug3
+x 20
+y 6
+end
+arch afloor_black_left
+x 20
+y 7
+end
+arch stwallred_1_4
+x 20
+y 7
+end
+arch afloor_black_left
+x 20
+y 8
+end
+arch director_7
+x 20
+y 8
+invisible 1
+connected 19
+activate_on_release 0
+end
+arch afloor_black_left
+x 20
+y 9
+end
+arch stwallred_1_1
+x 20
+y 9
+end
+arch afloor_left
+x 20
+y 10
+end
+arch stwallred_3_1
+x 20
+y 10
+end
+arch afloor_left
+x 20
+y 11
+end
+arch afloor_black_left
+x 21
+end
+arch director_3
+x 21
+invisible 1
+connected 19
+activate_on_release 0
+end
+arch afloor_black_left
+x 21
+y 1
+end
+arch stwindowred_win2
+x 21
+y 1
+end
+arch afloor_black_left
+x 21
+y 2
+end
+arch afloor_black_left
+x 21
+y 3
+end
+arch lostlabrug5
+x 21
+y 3
+end
+arch afloor_black_left
+x 21
+y 4
+end
+arch lostlabrug5
+x 21
+y 4
+end
+arch afloor_black_left
+x 21
+y 5
+end
+arch lostlabrug5
+x 21
+y 5
+end
+arch afloor_black_left
+x 21
+y 6
+end
+arch afloor_black_left
+x 21
+y 7
+end
+arch stwindowred_win2
+x 21
+y 7
+end
+arch afloor_black_left
+x 21
+y 8
+end
+arch director_7
+x 21
+y 8
+invisible 1
+connected 19
+activate_on_release 0
+end
+arch afloor_black_left
+x 21
+y 9
+end
+arch brazier
+x 21
+y 9
+end
+arch afloor_left
+x 21
+y 10
+end
+arch stwallred_3_1
+x 21
+y 10
+end
+arch afloor_left
+x 21
+y 11
+end
+arch afloor_black_left
+x 22
+end
+arch director_3
+x 22
+invisible 1
+connected 19
+activate_on_release 0
+end
+arch afloor_black_left
+x 22
+y 1
+end
+arch stwallred_2_2_3
+x 22
+y 1
+end
+arch afloor_black_left
+x 22
+y 2
+end
+arch stwindowred_win1
+x 22
+y 2
+end
+arch afloor_black_left
+x 22
+y 3
+end
+arch stwallred_2_1_1
+x 22
+y 3
+end
+arch afloor_black_left
+x 22
+y 4
+end
+arch stwindowred_win1
+x 22
+y 4
+end
+arch afloor_black_left
+x 22
+y 5
+end
+arch stwallred_2_1_1
+x 22
+y 5
+end
+arch afloor_black_left
+x 22
+y 6
+end
+arch stwindowred_win1
+x 22
+y 6
+end
+arch afloor_black_left
+x 22
+y 7
+end
+arch stwallred_2_2_4
+x 22
+y 7
+end
+arch afloor_black_left
+x 22
+y 8
+end
+arch director_7
+x 22
+y 8
+invisible 1
+connected 19
+activate_on_release 0
+end
+arch afloor_black_left
+x 22
+y 9
+end
+arch stwallred_2_2_2
+x 22
+y 9
+end
+arch afloor_left
+x 22
+y 10
+end
+arch stwallred_3_1
+x 22
+y 10
+end
+arch afloor_left
+x 22
+y 11
+end
+arch afloor_black_left
+x 23
+end
+arch director_5
+x 23
+invisible 1
+connected 19
+activate_on_release 0
+end
+arch afloor_black_left
+x 23
+y 1
+end
+arch director_5
+x 23
+y 1
+invisible 1
+connected 19
+activate_on_release 0
+end
+arch afloor_black_left
+x 23
+y 2
+end
+arch director_5
+x 23
+y 2
+invisible 1
+connected 19
+activate_on_release 0
+end
+arch afloor_black_left
+x 23
+y 3
+end
+arch director_5
+x 23
+y 3
+invisible 1
+connected 19
+activate_on_release 0
+end
+arch afloor_black_left
+x 23
+y 4
+end
+arch director_5
+x 23
+y 4
+invisible 1
+connected 19
+activate_on_release 0
+end
+arch afloor_black_left
+x 23
+y 5
+end
+arch director_5
+x 23
+y 5
+invisible 1
+connected 19
+activate_on_release 0
+end
+arch afloor_black_left
+x 23
+y 6
+end
+arch director_5
+x 23
+y 6
+invisible 1
+connected 19
+activate_on_release 0
+end
+arch afloor_black_left
+x 23
+y 7
+end
+arch director_5
+x 23
+y 7
+invisible 1
+connected 19
+activate_on_release 0
+end
+arch afloor_black_left
+x 23
+y 8
+end
+arch director_7
+x 23
+y 8
+invisible 1
+connected 19
+activate_on_release 0
+end
+arch afloor_black_left
+x 23
+y 9
+end
+arch stwallred_2_1_2
+x 23
+y 9
+end
+arch afloor_left
+x 23
+y 10
+end
+arch stwallred_3_1
+x 23
+y 10
+end
+arch afloor_left
+x 23
+y 11
+end
+arch afloor_black_left
+x 24
+end
+arch afloor_black_left
+x 24
+y 1
+end
+arch stwallred_1_4
+x 24
+y 1
+end
+arch afloor_black_left
+x 24
+y 2
+end
+arch brazier
+x 24
+y 2
+end
+arch afloor_black_left
+x 24
+y 3
+end
+arch stwallred_1_4
+x 24
+y 3
+end
+arch afloor_black_left
+x 24
+y 4
+end
+arch brazier
+x 24
+y 4
+end
+arch afloor_black_left
+x 24
+y 5
+end
+arch stwallred_1_4
+x 24
+y 5
+end
+arch afloor_black_left
+x 24
+y 6
+end
+arch brazier
+x 24
+y 6
+end
+arch afloor_black_left
+x 24
+y 7
+end
+arch stwallred_2_2_2
+x 24
+y 7
+end
+arch afloor_black_left
+x 24
+y 8
+end
+arch stwallred_2_1_1
+x 24
+y 8
+end
+arch afloor_black_left
+x 24
+y 9
+end
+arch stwallred_2_2_4
+x 24
+y 9
+end
+arch afloor_left
+x 24
+y 10
+end
+arch stwallred_3_1
+x 24
+y 10
+end
+arch afloor_left
+x 24
+y 11
+end
+arch afloor_left
+x 25
+end
+arch afloor_left
+x 25
+y 1
+end
+arch stwallred_2_2_3
+x 25
+y 1
+end
+arch afloor_left
+x 25
+y 2
+end
+arch stwallred_2_1_1
+x 25
+y 2
+end
+arch afloor_left
+x 25
+y 3
+end
+arch stwallred_3_4
+x 25
+y 3
+end
+arch afloor_left
+x 25
+y 4
+end
+arch stwallred_2_1_1
+x 25
+y 4
+end
+arch afloor_left
+x 25
+y 5
+end
+arch stwallred_3_4
+x 25
+y 5
+end
+arch afloor_left
+x 25
+y 6
+end
+arch stwallred_2_1_1
+x 25
+y 6
+end
+arch afloor_left
+x 25
+y 7
+end
+arch stwallred_3_4
+x 25
+y 7
+end
+arch afloor_left
+x 25
+y 8
+end
+arch stwallred_2_1_1
+x 25
+y 8
+end
+arch afloor_left
+x 25
+y 9
+end
+arch stwallred_2_1_1
+x 25
+y 9
+end
+arch afloor_left
+x 25
+y 10
+end
+arch stwallred_2_2_4
+x 25
+y 10
+end
+arch afloor_left
+x 25
 y 11
 end

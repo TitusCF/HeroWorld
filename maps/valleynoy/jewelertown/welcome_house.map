@@ -4,7 +4,7 @@ region valleynoy
 width 15
 height 15
 msg
-Modified: 2026-02-07 yardc
+Modified: 2021-03-03 Titus
 endmsg
 end
 arch lostlabfloor12
@@ -312,6 +312,25 @@ end
 arch lostlabfloor12
 x 3
 y 5
+end
+arch angel
+name angry summoned angel
+hp 250
+maxhp 250
+maxsp 100
+exp 1500
+dam 20
+wc 0
+x 3
+y 5
+attack_movement 0
+level 14
+resist_physical 20
+run_away 5
+arch spell_bullet_swarm
+end
+arch spell_large_manaball
+end
 end
 arch lostlabfloor12
 x 3
@@ -955,6 +974,13 @@ arch table_cw_3
 x 10
 y 2
 end
+arch key2
+name key to the jeweler dungeon
+name_pl keys to the jeweler dungeon
+slaying elmex_jeweler_dungeon
+x 10
+y 2
+end
 arch lostlabfloor12
 x 10
 y 3
@@ -1089,45 +1115,40 @@ end
 arch c_sage
 name Old jeweler
 msg
-@match VALLEYNOY
-I would not call it a town anymore, friend. Not truly.
-I found VALLEYNOY by accident, wandering south of Navar where the maps grow uncertain. There were no roads leading in, only broken stone half-swallowed by the land. Towers lay collapsed as if pressed flat by an unseen hand, and the air felt? thin, as though something had been taken from it.
-Whatever HAPPENED here was not war. No siege leaves ruins like these.
+@match become a jeweler
+You have to know that there are a lot of dangers
+to overcome on your way to the arts of
+creating jewellery!
 
-@match HAPPENED
-If I knew, I would not sleep so poorly.
-There are scorch marks without fire, melted metal without heat. Tools fused into walls. Armor lying empty, as if the people simply stepped out of it. I believe VALLEYNOY was a place of ARTIFICERS, folk who bent magic into steel and stone.
-Something went wrong. Something very wrong.
+When you are ready:
+Take the key to the dungeon below the fountain.
+You will find the key in the room behind me.
+But be careful! A summoner was here before you
+and had an accident.
 
-@match ARTIFICERS
-Yes. Their work is everywhere, even now.
-You can still find fragments of enchanted gear buried in the rubble, humming softly when the wind is right. I think they were reaching for something beyond their skill?trying to bind forces that should not be tethered.
-The TOWERS were not just buildings. They were instruments.
+@match about this town
+Hundreds of years ago on Valleynoy powerful alchemists
+gathered to mine all the gold. They formed an alliance with
+the local dwarves and started mining. They planted boxes with
+potions in the mines, to be able to fight the monsters that
+kept invading the mines.
 
-@match TOWERS
-I saw its remains from a distance before I dared enter.
-A foundation so deep it vanishes into darkness, and above it? nothing. As if the sky itself tore the rest away. Some say they were attempting to recreate the NAVARIAN TOWER to be like a chain fixed between worlds.
-Standing near it made my teeth ache.
-And then there's talk of the old LIBRARY...
+Later, when some gold was mined,
+the alchemists became greedy, and didn't want to
+share with the dwarves. The dwarves, stronger than the alchemists,
+fighted them until they left the mines. Today the dwarves still mine
+the gold and sell potions.
 
-@match LIBRARY
-Ah. The LIBRARY is the reason I lingered as long as I did.
-On the northern edge of the ruins sits the ruined foundation of a lost structure,
-I have often seen examples wherecases are crushed, but not destroyed, and
-ARTIFICERS records were not kept lightly.
-
-@match RECORDS
-I am certain there are sealed vaults beneath the rubble. The ground sounds hollow when struck. I lacked the tools, and perhaps the courage, to go further.
-If you intend to DIG there, be warned: wards may still linger, confused and hungry.
-
-@match DIG
-You have the right idea.
-Where the soil is loose,  That is where I would start were I a braver soul. Knowledge buried in VALLEYNOY may yet be intact? or cursed.
-Either way, it is not meant to stay forgotten forever.
+You can still find all
+the mines in the valley around this town, but be careful, because the
+dwarves don't like intruders...
 
 @match *
-You look like someone chasing answers.
-Like myself, you seem to have found VALLEYNOY.
+Welcome to the town of jewelers!
+What is your business here? Do you want to
+become a jeweler? Or do you want to know something
+about this town?
+
 endmsg
 x 11
 y 5

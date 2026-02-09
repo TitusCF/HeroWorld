@@ -4,7 +4,7 @@ region valleynoy
 width 40
 height 20
 msg
-Modified: 2021-03-03 Titus
+Modified: 2026-02-07 yardc
 endmsg
 end
 arch lostlabfloor12
@@ -149,45 +149,6 @@ arch lostlabfloor12
 x 1
 y 7
 move_block all
-end
-arch c_man
-msg
-@match rent a room
-@eval rent::rent $who->contr,  'jewelor'
-
-@match stop renting
-@eval rent::stop $who->contr,  'jewelor'
-
-@match apartments
-@eval rent::overview $who->contr, 1
-@eval rent::status $who->contr
-
-@match rent
-@addtopic rent a room|apartments|stop renting
-We are a member of the world wide apartment rental organisation.
-You may find apartment shops in other cities, like Scorn, that will
-rent you a room here. I can only
-offer you the room here, you may want to ask in the other shops
-for apartments elsewhere.
-Do you want to rent a room or stop renting your room? Or do you
-want to know which apartments you are renting?
-
-@match *
-@addtopic rent
-Hello! Welcome to the Inn of "The Jewelers Rest"!
-You will find the rooms to the right of me and the
-music room to the left.
-
-The public rooms got a workbench in there and can be closed
-for more privacy. Please make sure to leave the room open
-if you plan to stay away for long.
-
-If you want a more permanent room, you can rent a permanent room upstairs.
-
-Enjoy your stay!
-endmsg
-x 1
-y 7
 end
 arch lostlabfloor12
 x 1
